@@ -4,10 +4,14 @@ TTS quality benchmark for Ghanaian languages, scored by **CTC forced-alignment**
 
 ## How it works
 
-1. **Text source**: 1000 sentences per language from [ghanaopenai/ghana-sentences](https://huggingface.co/datasets/ghanaopenai/ghana-sentences)
+1. **Text source**: 200 sentences per language from [ghanaopenai/ghana-sentences](https://huggingface.co/datasets/ghanaopenai/ghana-sentences) (default; bump via `NSANKU_TTS_NUM_SAMPLES`)
 2. **TTS generation**: Each model synthesises every sentence to audio
 3. **Alignment scoring**: [MMS-300M](https://huggingface.co/MahmoudAshraf/mms-300m-1130-forced-aligner) CTC forced-alignment computes per-frame log-probability of the Viterbi path
 4. **Ranking**: Mean alignment score (closer to 0 = better TTS quality)
+
+Samples are keyed by their row index in the ghana-sentences subset, so runs are
+**incremental**: raising the sample count only scores the *new* sentences and
+reuses previously scored ones.
 
 ## Languages (12, from ghana-sentences)
 
@@ -33,10 +37,16 @@ All 43 nsanku-ASR language codes are pre-registered for easy expansion.
 | Model | Architecture | Languages |
 |-------|-------------|-----------|
 | `ghananlpcommunity/ghana-tts-72k` | VoxCPM v1 (0.7B) | 44 langs |
+| `ghananlpcommunity/ghana-tts-36k` | VoxCPM v1 (0.7B) | 41 langs |
+| `techolise/akan-twi-speaker17-tts-v2` | VoxCPM v1 + LoRA | Asante Twi |
+| `FarmerlineML/voxcpm2-akan-sft` | VoxCPM2 (2B) | Akan |
+| `FarmerlineML/voxcpm2-dagbani-sft` | VoxCPM2 (2B) | Dagbani |
+| `FarmerlineML/voxcpm2-ewe-sft` | VoxCPM2 (2B) | Ewe |
 | `ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante` | F5-TTS | Asante Twi |
 | `ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem` | F5-TTS | Akuapem Twi |
 | `ghananlpcommunity/F5-TTS-OpenBible-Ewe` | F5-TTS | Ewe |
 | `ghananlpcommunity/nano-twi` | Matcha-TTS + Vocos | Asante Twi |
+| `KhayaAI/khaya-tts-v2` | Khaya AI TTS v2 API (hosted) | 32 langs/dialects |
 
 Models requiring IPA input (VoxCPM2-Ghana, stable-twi-tts) are excluded.
 
@@ -45,7 +55,7 @@ Models requiring IPA input (VoxCPM2-Ghana, stable-twi-tts) are excluded.
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r scripts/requirements.txt
-cp .env.example .env   # set HF_TOKEN for gated models
+cp .env.example .env   # set HF_TOKEN (gated models) and KHAYA_API_KEY
 ```
 
 ## Usage
@@ -55,13 +65,30 @@ cp .env.example .env   # set HF_TOKEN for gated models
 python pipeline.py
 
 # Specific languages
-python pipeline.py --langs twi_asante ewe dag
+python pipeline.py --langs twi-asa ewe dag
 
 # Specific model
-python run_benchmark.py --langs twi_asante --model "ghananlpcommunity/nano-twi"
+python run_benchmark.py --langs twi-asa --model "KhayaAI/khaya-tts-v2"
+
+# Bump samples (only new ones are scored — incremental)
+NSANKU_TTS_NUM_SAMPLES=500 python pipeline.py
 
 # Dry run (list work without GPU)
 python pipeline.py --dry-run
+```
+
+## Running on Modal
+
+The benchmark runs on Modal GPUs (workspace `ghana-nlp3`). Results persist on a
+shared Volume so re-runs are incremental:
+
+```bash
+modal profile use ghana-nlp3                  # or MODAL_ENVIRONMENT=ghana-nlp3
+modal secret create nsanku-khaya HF_TOKEN=... KHAYA_API_KEY=...   # once
+modal run modal_app.py                        # all languages
+modal run modal_app.py --langs dag ewe        # specific languages
+modal run modal_app.py --samples 500          # incremental sample bump
+modal volume get nsanku-tts-results / --local-dir benchmarks/   # pull YAMLs
 ```
 
 ## Leaderboard

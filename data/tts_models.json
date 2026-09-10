@@ -4,15 +4,69 @@
     "architecture": "VoxCPM v1 (0.7B)",
     "languages": ["twi_akuapem", "twi_asante", "ewe", "dag", "gaa", "fat", "ada", "dga", "gjn", "gur", "nzi", "xsm"],
     "input_type": "orthographic",
+    "sample_rate": 16000,
     "license": "MIT",
     "url": "https://huggingface.co/ghananlpcommunity/ghana-tts-72k",
-    "notes": "44 Ghanaian languages, gated access"
+    "notes": "44 Ghanaian languages, gated access, 72k steps"
+  },
+  {
+    "name": "ghananlpcommunity/ghana-tts-36k",
+    "architecture": "VoxCPM v1 (0.7B)",
+    "languages": ["twi_akuapem", "twi_asante", "ewe", "dag", "gaa", "fat", "ada", "dga", "gjn", "gur", "nzi", "xsm"],
+    "input_type": "orthographic",
+    "sample_rate": 16000,
+    "license": "MIT",
+    "url": "https://huggingface.co/ghananlpcommunity/ghana-tts-36k",
+    "notes": "41 languages, 36k steps"
+  },
+  {
+    "name": "techolise/akan-twi-speaker17-tts-v2",
+    "architecture": "VoxCPM v1 (0.7B) + LoRA",
+    "languages": ["twi_asante"],
+    "input_type": "orthographic",
+    "sample_rate": 16000,
+    "license": "apache-2.0",
+    "url": "https://huggingface.co/techolise/akan-twi-speaker17-tts-v2",
+    "reference_audio": "speaker_17_dataset/speaker17_golden_anchor.wav",
+    "reference_text": "Atoyerɛnkyɛm asi wɔ bea a wɔgu fangoo ɛgu ɛhyɛn mu.",
+    "notes": "VoxCPM v1 LoRA on ghana-tts-36k, speaker 17, Asante Twi"
+  },
+  {
+    "name": "FarmerlineML/voxcpm2-akan-sft",
+    "architecture": "VoxCPM2 (2B)",
+    "languages": ["twi_asante", "twi_akuapem"],
+    "input_type": "orthographic",
+    "sample_rate": 48000,
+    "license": "apache-2.0",
+    "url": "https://huggingface.co/FarmerlineML/voxcpm2-akan-sft",
+    "notes": "Full SFT on openbmb/VoxCPM2, Akan (Asante Twi orthography)"
+  },
+  {
+    "name": "FarmerlineML/voxcpm2-dagbani-sft",
+    "architecture": "VoxCPM2 (2B)",
+    "languages": ["dag"],
+    "input_type": "orthographic",
+    "sample_rate": 48000,
+    "license": "apache-2.0",
+    "url": "https://huggingface.co/FarmerlineML/voxcpm2-dagbani-sft",
+    "notes": "Full SFT on openbmb/VoxCPM2, Dagbani"
+  },
+  {
+    "name": "FarmerlineML/voxcpm2-ewe-sft",
+    "architecture": "VoxCPM2 (2B)",
+    "languages": ["ewe"],
+    "input_type": "orthographic",
+    "sample_rate": 48000,
+    "license": "apache-2.0",
+    "url": "https://huggingface.co/FarmerlineML/voxcpm2-ewe-sft",
+    "notes": "Full SFT on openbmb/VoxCPM2, Ewe"
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante",
     "architecture": "F5-TTS (DiT + Vocos)",
     "languages": ["twi_asante"],
     "input_type": "orthographic",
+    "sample_rate": 24000,
     "license": "CC-BY-SA-4.0",
     "url": "https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante",
     "notes": "Zero-shot TTS, ~30k utterances from Open Bible corpus"
@@ -22,6 +76,7 @@
     "architecture": "F5-TTS (DiT + Vocos)",
     "languages": ["twi_akuapem"],
     "input_type": "orthographic",
+    "sample_rate": 24000,
     "license": "CC-BY-SA-4.0",
     "url": "https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem",
     "notes": "Zero-shot TTS, ~30k utterances from Open Bible corpus"
@@ -31,6 +86,7 @@
     "architecture": "F5-TTS (DiT + Vocos)",
     "languages": ["ewe"],
     "input_type": "orthographic",
+    "sample_rate": 24000,
     "license": "CC-BY-SA-4.0",
     "url": "https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Ewe",
     "notes": "Zero-shot TTS, ~30k utterances from Open Bible corpus"
@@ -40,8 +96,19 @@
     "architecture": "Matcha-TTS + Vocos ONNX",
     "languages": ["twi_asante"],
     "input_type": "orthographic",
+    "sample_rate": 24000,
     "license": "MIT",
     "url": "https://huggingface.co/ghananlpcommunity/nano-twi",
     "notes": "Ultra-lightweight offline TTS for CPU"
+  },
+  {
+    "name": "KhayaAI/khaya-tts-v2",
+    "architecture": "Khaya AI TTS v2 API",
+    "languages": ["ada", "dag", "dga", "ewe", "fat", "gaa", "gjn", "gur", "nzi", "twi_akuapem", "twi_asante", "xsm"],
+    "input_type": "orthographic",
+    "sample_rate": 24000,
+    "license": "proprietary",
+    "url": "https://translation.ghananlp.org",
+    "notes": "Hosted API — 32 languages/dialects, 3 voices (male_low, male_high, female)"
   }
 ]

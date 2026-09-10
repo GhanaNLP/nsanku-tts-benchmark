@@ -14,7 +14,9 @@ if _env.exists():
 
 # Dataset: sentence-level text corpus for Ghanaian languages
 GHANA_SENTENCES = "ghanaopenai/ghana-sentences"
-NUM_SAMPLES = int(os.environ.get("NSANKU_TTS_NUM_SAMPLES", "1000"))
+# Default samples per language. Bumping this re-uses already-scored samples and
+# only scores the *new* ones (incremental, keyed by subset row index).
+NUM_SAMPLES = int(os.environ.get("NSANKU_TTS_NUM_SAMPLES", "200"))
 
 # Alignment model: MMS-300M CTC (1130 languages) via transformers
 ALIGNMENT_MODEL = "MahmoudAshraf/mms-300m-1130-forced-aligner"
@@ -24,7 +26,8 @@ HF_TOKEN = os.environ.get("HF_TOKEN", "")
 
 # Paths
 ROOT = Path(__file__).parent.parent
-BENCHMARK_DIR = ROOT / "benchmarks"
+# Results dir overridable so Modal can persist it on a shared Volume.
+BENCHMARK_DIR = Path(os.environ.get("NSANKU_TTS_RESULTS_DIR", str(ROOT / "benchmarks")))
 AUDIO_DIR = ROOT / "audio"
 DATA_DIR = ROOT / "data"
 LANG_CONFIG = ROOT / "languages" / "ghana_languages.yaml"
@@ -78,5 +81,22 @@ ALIGNMENT_LANG_MAP = {
     "nzi": "nzi",
     "twi_akuapem": "aka",
     "twi_asante": "aka",
+    "xsm": "xsm",
+}
+
+# Language codes accepted by TTS models / hosted APIs (ISO 639-3).
+# Khaya TTS v2 expects e.g. Asante Twi = "twi", Akuapem Twi = "atw".
+TTS_LANG_MAP = {
+    "ada": "ada",
+    "dag": "dag",
+    "dga": "dga",
+    "ewe": "ewe",
+    "fat": "fat",
+    "gaa": "gaa",
+    "gjn": "gjn",
+    "gur": "gur",
+    "nzi": "nzi",
+    "twi_akuapem": "atw",
+    "twi_asante": "twi",
     "xsm": "xsm",
 }
