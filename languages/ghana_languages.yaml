@@ -1,0 +1,289 @@
+# nsanku-TTS benchmark languages
+#
+# All language codes from nsanku-ASR are pre-registered here for easy expansion.
+# Languages present in ghana-sentences are marked with in_sentences: true.
+# To add a new language: add its entry below and add sentences to ghana-sentences.
+
+languages:
+  - name: Akuapem_Twi
+    iso_639_3: twi_akuapem
+    iso_639_1: tw
+    family: Kwa
+    in_sentences: true
+    subset: twi-aku
+    alignment_lang: aka
+
+  - name: Asante_Twi
+    iso_639_3: twi_asante
+    iso_639_1: tw
+    family: Kwa
+    in_sentences: true
+    subset: twi-asa
+    alignment_lang: aka
+
+  - name: Dangme
+    iso_639_3: ada
+    family: Kwa
+    in_sentences: true
+    subset: ada
+    alignment_lang: ada
+
+  - name: Dagbani
+    iso_639_3: dag
+    family: Gur
+    in_sentences: true
+    subset: dag
+    alignment_lang: dag
+
+  - name: Dagaare
+    iso_639_3: dga
+    family: Gur
+    in_sentences: true
+    subset: dga
+    alignment_lang: dga
+
+  - name: Ewe
+    iso_639_3: ewe
+    iso_639_1: ee
+    family: Gbe
+    in_sentences: true
+    subset: ewe
+    alignment_lang: ewe
+
+  - name: Fante
+    iso_639_3: fat
+    family: Kwa
+    in_sentences: true
+    subset: fat
+    alignment_lang: fat
+
+  - name: Ga
+    iso_639_3: gaa
+    family: Kwa
+    in_sentences: true
+    subset: gaa
+    alignment_lang: gaa
+
+  - name: Gonja
+    iso_639_3: gjn
+    family: Kwa
+    in_sentences: true
+    subset: gjn
+    alignment_lang: gjn
+
+  - name: Gurene
+    iso_639_3: gur
+    family: Gur
+    in_sentences: true
+    subset: gur
+    alignment_lang: nhi
+
+  - name: Nzema
+    iso_639_3: nzi
+    family: Kwa
+    in_sentences: true
+    subset: nzi
+    alignment_lang: nzi
+
+  - name: Kasem
+    iso_639_3: xsm
+    family: Gur
+    in_sentences: true
+    subset: xsm
+    alignment_lang: xsm
+
+  # --- Languages from nsanku-ASR (not yet in ghana-sentences) ---
+  # These are pre-registered so adding sentences automatically enables them.
+
+  - name: Anyin
+    iso_639_3: any
+    family: Kwa
+    in_sentences: false
+    alignment_lang: any
+
+  - name: Avatime
+    iso_639_3: avn
+    family: Kwa
+    in_sentences: false
+    alignment_lang: avn
+
+  - name: Bassar_Ntcham
+    iso_639_3: bud
+    family: Gur
+    in_sentences: false
+    alignment_lang: bud
+
+  - name: Bimoba
+    iso_639_3: bim
+    family: Gur
+    in_sentences: false
+    alignment_lang: bim
+
+  - name: Birifor_Southern
+    iso_639_3: biv
+    family: Gur
+    in_sentences: false
+    alignment_lang: biv
+
+  - name: Bissa
+    iso_639_3: bib
+    family: Mande
+    in_sentences: false
+    alignment_lang: bib
+
+  - name: Buli
+    iso_639_3: bwu
+    family: Gur
+    in_sentences: false
+    alignment_lang: bwu
+
+  - name: Chumburung
+    iso_639_3: ncu
+    family: Kwa
+    in_sentences: false
+    alignment_lang: ncu
+
+  - name: Deg
+    iso_639_3: mzw
+    family: Gur
+    in_sentences: false
+    alignment_lang: mzw
+
+  - name: Fulfulde_Maasina
+    iso_639_3: ffm
+    family: Atlantic
+    in_sentences: false
+    alignment_lang: ffm
+
+  - name: Gikyode
+    iso_639_3: acd
+    family: Kwa
+    in_sentences: false
+    alignment_lang: acd
+
+  - name: Hausa
+    iso_639_3: hau
+    iso_639_1: ha
+    family: Chadic
+    in_sentences: false
+    alignment_lang: hau
+
+  - name: Kabiye
+    iso_639_3: kbp
+    family: Gur
+    in_sentences: false
+    alignment_lang: kbp
+
+  - name: Konkomba
+    iso_639_3: xon
+    family: Gur
+    in_sentences: false
+    alignment_lang: xon
+
+  - name: Konni
+    iso_639_3: kma
+    family: Gur
+    in_sentences: false
+    alignment_lang: kma
+
+  - name: Kusaal
+    iso_639_3: kus
+    family: Gur
+    in_sentences: false
+    alignment_lang: kus
+
+  - name: Lelemi
+    iso_639_3: lef
+    family: Kwa
+    in_sentences: false
+    alignment_lang: lef
+
+  - name: Mampruli
+    iso_639_3: maw
+    family: Gur
+    in_sentences: false
+    alignment_lang: maw
+
+  - name: Nawuri
+    iso_639_3: naw
+    family: Kwa
+    in_sentences: false
+    alignment_lang: naw
+
+  - name: Ninkare
+    iso_639_3: gur
+    family: Gur
+    in_sentences: false
+    alignment_lang: gur
+
+  - name: Nkonya
+    iso_639_3: nko
+    family: Kwa
+    in_sentences: false
+    alignment_lang: nko
+
+  - name: Ntrubo
+    iso_639_3: ntr
+    family: Gur
+    in_sentences: false
+    alignment_lang: ntr
+
+  - name: Paasaal
+    iso_639_3: sig
+    family: Gur
+    in_sentences: false
+    alignment_lang: sig
+
+  - name: Sehwi
+    iso_639_3: sfw
+    family: Kwa
+    in_sentences: false
+    alignment_lang: sfw
+
+  - name: Sekpele
+    iso_639_3: lip
+    family: Kwa
+    in_sentences: false
+    alignment_lang: lip
+
+  - name: Selee
+    iso_639_3: snw
+    family: Kwa
+    in_sentences: false
+    alignment_lang: snw
+
+  - name: Sisaala_Tumulung
+    iso_639_3: sil
+    family: Gur
+    in_sentences: false
+    alignment_lang: sil
+
+  - name: Siwu
+    iso_639_3: akp
+    family: Kwa
+    in_sentences: false
+    alignment_lang: akp
+
+  - name: Tampulma
+    iso_639_3: tpm
+    family: Gur
+    in_sentences: false
+    alignment_lang: tpm
+
+  - name: Tem
+    iso_639_3: kdh
+    family: Gur
+    in_sentences: false
+    alignment_lang: kdh
+
+  - name: Tuwuli
+    iso_639_3: bov
+    family: Kwa
+    in_sentences: false
+    alignment_lang: bov
+
+  - name: Vagla
+    iso_639_3: vag
+    family: Gur
+    in_sentences: false
+    alignment_lang: vag

@@ -1,0 +1,47 @@
+[
+  {
+    "name": "ghananlpcommunity/ghana-tts-72k",
+    "architecture": "VoxCPM v1 (0.7B)",
+    "languages": ["twi_akuapem", "twi_asante", "ewe", "dag", "gaa", "fat", "ada", "dga", "gjn", "gur", "nzi", "xsm"],
+    "input_type": "orthographic",
+    "license": "MIT",
+    "url": "https://huggingface.co/ghananlpcommunity/ghana-tts-72k",
+    "notes": "44 Ghanaian languages, gated access"
+  },
+  {
+    "name": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante",
+    "architecture": "F5-TTS (DiT + Vocos)",
+    "languages": ["twi_asante"],
+    "input_type": "orthographic",
+    "license": "CC-BY-SA-4.0",
+    "url": "https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante",
+    "notes": "Zero-shot TTS, ~30k utterances from Open Bible corpus"
+  },
+  {
+    "name": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem",
+    "architecture": "F5-TTS (DiT + Vocos)",
+    "languages": ["twi_akuapem"],
+    "input_type": "orthographic",
+    "license": "CC-BY-SA-4.0",
+    "url": "https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem",
+    "notes": "Zero-shot TTS, ~30k utterances from Open Bible corpus"
+  },
+  {
+    "name": "ghananlpcommunity/F5-TTS-OpenBible-Ewe",
+    "architecture": "F5-TTS (DiT + Vocos)",
+    "languages": ["ewe"],
+    "input_type": "orthographic",
+    "license": "CC-BY-SA-4.0",
+    "url": "https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Ewe",
+    "notes": "Zero-shot TTS, ~30k utterances from Open Bible corpus"
+  },
+  {
+    "name": "ghananlpcommunity/nano-twi",
+    "architecture": "Matcha-TTS + Vocos ONNX",
+    "languages": ["twi_asante"],
+    "input_type": "orthographic",
+    "license": "MIT",
+    "url": "https://huggingface.co/ghananlpcommunity/nano-twi",
+    "notes": "Ultra-lightweight offline TTS for CPU"
+  }
+]

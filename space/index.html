@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Text-to-Speech benchmark for Ghanaian languages, scored by CTC forced-alignment.">
+<title>nsanku TTS Benchmark</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--accent:#8CD0FF;--accent-soft:#DDF1FF;--accent-hi:#EEF8FF;--link:#0066cc;--bg:#fff;--surface:#fff;--surface-2:#f8fafc;--neutral-50:#f9fafb;--neutral-100:#f3f4f6;--border:#e5e7eb;--border-strong:#d1d5db;--text:#1f2937;--text-strong:#111827;--text-muted:#6b7280;--success:#15803d;--success-bg:#dcfce7;--danger:#b91c1c;--danger-bg:#fee2e2;--radius:8px;--shadow:0 1px 2px rgba(16,24,40,.04),0 1px 3px rgba(16,24,40,.06)}
+html{font-size:15px}
+body{font-family:"Segoe UI",system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;min-height:100vh;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.container{max-width:1180px;margin:0 auto;padding:0 20px 72px}
+.site-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:18px 0 12px;margin-bottom:20px;border-bottom:1px solid var(--border)}
+.site-head h1{font-size:1.35rem;font-weight:700;color:var(--text-strong);letter-spacing:-.01em}
+.site-head .tagline{color:var(--text-muted);font-size:0.88rem}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:26px}
+.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
+.stat-card .label{color:var(--text-muted);font-size:0.78rem;font-weight:500;margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em}
+.stat-card .value{font-size:1.5rem;font-weight:700;color:var(--text-strong)}
+.table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow-x:auto;box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;font-size:0.9rem}
+th,td{text-align:left;padding:10px 16px;white-space:nowrap}
+th{background:var(--surface-2);color:var(--text-strong);font-weight:600;font-size:0.8rem;letter-spacing:.02em;border-bottom:1px solid var(--border);position:sticky;top:0;cursor:pointer;user-select:none}
+th:hover{color:var(--link)}
+tbody tr{border-bottom:1px solid var(--border)}
+tbody tr:nth-child(even){background:var(--neutral-50)}
+tbody tr:hover{background:rgba(140,208,255,.16)}
+td.lang-cell{background:var(--accent-hi);font-weight:600;color:var(--text-strong)}
+.rank{font-weight:700;color:var(--text-muted)}
+.rank.r1{color:#b8860b}.rank.r2{color:#7d7d7d}.rank.r3{color:#a0522d}
+.badge{display:inline-block;padding:2px 9px;border-radius:999px;font-size:0.72rem;font-weight:600}
+.badge-pass{background:var(--success-bg);color:var(--success)}
+.badge-fail{background:var(--danger-bg);color:var(--danger)}
+.section-note{font-size:0.85rem;color:var(--text-muted);padding:10px 14px;background:var(--surface-2);border-left:3px solid var(--accent);border-radius:4px;margin-bottom:16px}
+.loading{text-align:center;padding:90px 0;color:var(--text-muted)}
+.loading .spinner{width:38px;height:38px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 16px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.footer{margin-top:44px;text-align:center;color:var(--text-muted);font-size:0.82rem;padding-top:22px;border-top:1px solid var(--border)}
+.footer a{color:var(--text-strong);font-weight:600;font-size:0.85rem}
+@media(max-width:600px){.site-head{flex-direction:column;align-items:flex-start;gap:2px}th,td{padding:8px 10px;font-size:0.82rem}}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="site-head">
+    <h1>nsanku TTS Benchmark</h1>
+    <span class="tagline">Text-to-Speech for Ghanaian languages &middot; scored by CTC forced-alignment</span>
+  </div>
+
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+    <p>Loading benchmark data from GitHub&hellip;</p>
+  </div>
+
+  <div id="app" style="display:none">
+    <div class="stats-grid" id="stats"></div>
+    <div class="section-note">
+      Score = mean per-frame log-probability of CTC forced-alignment (MMS-300M).
+      Closer to 0 = better. Models are ranked by score within each language.
+    </div>
+    <div class="table-wrap">
+      <table id="leaderboard">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Language</th>
+            <th>Family</th>
+            <th>Model</th>
+            <th>Architecture</th>
+            <th>Score</th>
+            <th>Samples</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="lb-body"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p><a href="https://huggingface.co/ghananlpcommunity">Ghana NLP Community</a> &middot; nsanku-TTS benchmark</p>
+  </div>
+</div>
+
+<script>
+const GITHUB_RAW = "https://raw.githubusercontent.com/ghananlpcommunity/nsanku-tts-benchmark/main";
+const LANG_URL = GITHUB_RAW + "/languages/ghana_languages.yaml";
+const BENCH_PREFIX = GITHUB_RAW + "/benchmarks/";
+
+async function fetchText(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`${r.status} ${r.statusText}`);
+  return r.text();
+}
+
+function parseSimpleYaml(text) {
+  const lines = text.split("\n");
+  const result = [];
+  let current = null;
+  for (const line of lines) {
+    if (line.startsWith("  - ")) {
+      if (current) result.push(current);
+      current = {};
+    } else if (current && line.includes(":")) {
+      const [k, ...rest] = line.trim().split(":");
+      current[k.trim()] = rest.join(":").trim();
+    }
+  }
+  if (current) result.push(current);
+  return result;
+}
+
+function parseBenchYaml(text) {
+  const lines = text.split("\n");
+  const meta = {};
+  const benchmarks = [];
+  let inBench = false;
+  let current = null;
+
+  for (const line of lines) {
+    if (line.startsWith("benchmarks:")) { inBench = true; continue; }
+    if (!inBench && line.includes(":") && !line.startsWith(" ")) {
+      const [k, ...rest] = line.split(":");
+      meta[k.trim()] = rest.join(":").trim();
+    } else if (inBench && line.trimStart().startsWith("- model:")) {
+      if (current) benchmarks.push(current);
+      current = { model: line.split(":").slice(1).join(":").trim() };
+    } else if (inBench && current && line.includes(":") && line.startsWith("      ")) {
+      const [k, ...rest] = line.trim().split(":");
+      const v = rest.join(":").trim();
+      if (k === "score" || k === "samples" || k === "valid") current[k] = parseFloat(v) || v;
+      else current[k] = v;
+    }
+  }
+  if (current) benchmarks.push(current);
+  return { ...meta, benchmarks };
+}
+
+async function main() {
+  try {
+    const langText = await fetchText(LANG_URL);
+    const languages = parseSimpleYaml(langText);
+
+    const activeLangs = languages.filter(l => l.in_sentences === "true");
+    const allRows = [];
+
+    for (const lang of activeLangs) {
+      const iso = lang.iso_639_3;
+      try {
+        const benchText = await fetchText(BENCH_PREFIX + iso + ".yaml");
+        const bench = parseBenchYaml(benchText);
+        for (const b of (bench.benchmarks || [])) {
+          allRows.push({
+            iso,
+            language: lang.name.replace("_", " "),
+            family: lang.family || "",
+            model: b.model || "",
+            architecture: b.architecture || "",
+            score: typeof b.score === "number" ? b.score : null,
+            samples: b.samples || 0,
+            error: b.error || null,
+          });
+        }
+      } catch (e) {
+        // no benchmark file yet
+      }
+    }
+
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("app").style.display = "block";
+
+    // Stats
+    const scored = allRows.filter(r => r.score !== null);
+    const uniqueModels = new Set(allRows.map(r => r.model));
+    const statsEl = document.getElementById("stats");
+    statsEl.innerHTML = `
+      <div class="stat-card"><div class="label">Languages</div><div class="value">${activeLangs.length}</div></div>
+      <div class="stat-card"><div class="label">Models</div><div class="value">${uniqueModels.size}</div></div>
+      <div class="stat-card"><div class="label">Scored</div><div class="value">${scored.length}</div></div>
+    `;
+
+    // Global leaderboard: best score per language
+    const bestByLang = {};
+    for (const r of allRows) {
+      if (r.score === null) continue;
+      if (!bestByLang[r.iso] || r.score > bestByLang[r.iso].score) {
+        bestByLang[r.iso] = r;
+      }
+    }
+    const globalRows = Object.values(bestByLang).sort((a, b) => b.score - a.score);
+
+    const tbody = document.getElementById("lb-body");
+    if (globalRows.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;color:var(--text-muted);padding:28px">No benchmark results yet. Run <code>python pipeline.py</code> to generate them.</td></tr>';
+      return;
+    }
+
+    tbody.innerHTML = globalRows.map((r, i) => {
+      const rankClass = i < 3 ? ` r${i + 1}` : "";
+      const scoreClass = r.score > -0.5 ? "badge-pass" : "badge-fail";
+      return `<tr>
+        <td class="rank${rankClass}">${i + 1}</td>
+        <td class="lang-cell">${r.language}</td>
+        <td>${r.family}</td>
+        <td><a href="https://huggingface.co/${r.model}" target="_blank">${r.model}</a></td>
+        <td>${r.architecture}</td>
+        <td><span class="badge ${scoreClass}">${r.score.toFixed(4)}</span></td>
+        <td>${r.samples}</td>
+        <td>${r.error ? '<span class="badge badge-fail">' + r.error + '</span>' : '<span class="badge badge-pass">ok</span>'}</td>
+      </tr>`;
+    }).join("");
+  } catch (err) {
+    document.getElementById("loading").innerHTML = `<p style="color:var(--danger)">Failed to load: ${err.message}</p>`;
+  }
+}
+
+main();
+</script>
+</body>
+</html>

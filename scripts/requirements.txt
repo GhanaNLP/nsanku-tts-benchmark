@@ -1,0 +1,9 @@
+torch>=2.4.0
+torchaudio>=2.4.0
+transformers>=4.40.0
+datasets>=3.0.0
+pyyaml>=6.0
+numpy
+requests
+huggingface_hub>=0.26.0
+soundfile>=0.12.0
