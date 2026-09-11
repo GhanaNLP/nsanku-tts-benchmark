@@ -19,6 +19,8 @@ from pathlib import Path
 
 import numpy as np
 
+from .recipes import recipe_get
+
 logger = logging.getLogger(__name__)
 
 
@@ -44,18 +46,40 @@ def _cache_root():
     )
 
 
-def load_tts_model(model_id, device="cuda", subset=None, **kwargs):
+def _recipe_for(model_id, iso):
+    """The (model, language) recipe module, or None."""
+    if not iso:
+        return None
+    from .recipes import load_lang_recipe
+
+    return load_lang_recipe(model_id, iso)
+
+
+def _knob(meta, name, default=None):
+    """A recipe's value for *name*, falling back to the built-in default."""
+    return recipe_get(meta.get("recipe"), name, default)
+
+
+def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
     """Auto-detect and load a TTS model wrapper.
 
     Args:
         model_id: huggingface model id
         device: torch device string
-        subset: ghana-sentences subset name (for reference-audio lookup)
+        subset: ghana-sentences subset name
+        iso: language being synthesised, used to find the (model, language)
+            recipe whose knobs override the built-in defaults
 
     Returns an instance of BaseTTSModel.
     """
     lower = model_id.lower()
     meta = kwargs.pop("meta", None) or _model_meta(model_id)
+    meta = {**meta, "recipe": _recipe_for(model_id, iso)}
+
+    # A recipe may take over loading entirely.
+    builder = recipe_get(meta["recipe"], "build_wrapper")
+    if builder is not None:
+        return builder(model_id, device, meta)
 
     if meta.get("input_type") == "ipa":
         raise UnsupportedModel(f"{model_id}: requires IPA input, skipping")
@@ -179,9 +203,11 @@ class VoxCPMWrapper(BaseTTSModel):
     def _generate(self, text, lang):
         """Call model.generate handling the optional lang kwarg."""
         kwargs = dict(
-            cfg_value=2.4 if self.ref_wav else 2.0,
-            inference_timesteps=26 if self.ref_wav else 10,
-            retry_badcase=True,
+            cfg_value=_knob(self.meta, "CFG_VALUE", 2.4 if self.ref_wav else 2.0),
+            inference_timesteps=_knob(
+                self.meta, "INFERENCE_TIMESTEPS", 26 if self.ref_wav else 10
+            ),
+            retry_badcase=_knob(self.meta, "RETRY_BADCASE", True),
         )
         if self.ref_wav:
             kwargs["prompt_wav_path"] = self.ref_wav
@@ -234,10 +260,10 @@ class VoxCPM2Wrapper(BaseTTSModel):
     def _generate(self, text):
         kwargs = dict(
             text=text,
-            cfg_value=2.0,
-            inference_timesteps=15,
-            retry_badcase=False,
-            max_len=max(50, len(text) * 4),
+            cfg_value=_knob(self.meta, "CFG_VALUE", 2.0),
+            inference_timesteps=_knob(self.meta, "INFERENCE_TIMESTEPS", 15),
+            retry_badcase=_knob(self.meta, "RETRY_BADCASE", False),
+            max_len=_knob(self.meta, "MAX_LEN") or max(50, len(text) * 4),
         )
         if self.ref_wav:
             kwargs["reference_wav_path"] = self.ref_wav
@@ -306,9 +332,9 @@ class F5TTSWrapper(BaseTTSModel):
         if self.ref_wav:
             return self.ref_wav, self.ref_text
 
-        ref_text = self.meta.get("reference_text")
+        ref_text = _knob(self.meta, "REFERENCE_TEXT") or self.meta.get("reference_text")
         if not ref_text:
-            raise ValueError(f"{self.model_id}: no reference_text in data/tts_models.json")
+            raise ValueError(f"{self.model_id}: no REFERENCE_TEXT in its recipe")
 
         cache_dir = Path(_cache_root()) / "nsanku-refs"
         cache_dir.mkdir(parents=True, exist_ok=True)
@@ -330,6 +356,8 @@ class F5TTSWrapper(BaseTTSModel):
             ref_file=ref_audio,
             ref_text=ref_text,
             gen_text=text,
+            speed=_knob(self.meta, "SPEED", 1.0),
+            nfe_step=_knob(self.meta, "NFE_STEP", 32),
             show_info=lambda *a, **k: None,
         )
         return _wav_bytes(wav, sample_rate=sr or self.SAMPLE_RATE)
@@ -396,13 +424,17 @@ class CosyVoice2Wrapper(BaseTTSModel):
         logger.info("Loaded CosyVoice2: %s", self.model_id)
 
     def _ensure_reference(self, lang):
-        """Return (waveform, ref_text), minting the clip with Khaya once."""
+        """Return (wav_path, ref_text), minting the clip with Khaya once.
+
+        CosyVoice loads the prompt itself (torchaudio.load, resampling as
+        needed), so this hands over a path rather than a waveform.
+        """
         if self.ref_wav is not None:
             return self.ref_wav, self.ref_text
 
-        ref_text = self.meta.get("reference_text")
+        ref_text = _knob(self.meta, "REFERENCE_TEXT") or self.meta.get("reference_text")
         if not ref_text:
-            raise ValueError(f"{self.model_id}: no reference_text in data/tts_models.json")
+            raise ValueError(f"{self.model_id}: no REFERENCE_TEXT in its recipe")
 
         cache_dir = Path(_cache_root()) / "nsanku-refs"
         cache_dir.mkdir(parents=True, exist_ok=True)
@@ -411,14 +443,7 @@ class CosyVoice2Wrapper(BaseTTSModel):
             logger.info("Minting CosyVoice reference for %s via Khaya (%s)", self.model_id, lang)
             path.write_bytes(KhayaTTSWrapper().synthesize(ref_text, lang=lang))
 
-        import torch
-        import torchaudio
-
-        wav, sr = torchaudio.load(str(path))
-        if sr != 16000:
-            wav = torchaudio.functional.resample(wav, sr, 16000)
-        self.ref_wav = wav.mean(dim=0, keepdim=True) if wav.shape[0] > 1 else wav
-        self.ref_text = ref_text
+        self.ref_wav, self.ref_text = str(path), ref_text
         return self.ref_wav, self.ref_text
 
     def synthesize(self, text, lang="twi"):
@@ -433,6 +458,7 @@ class CosyVoice2Wrapper(BaseTTSModel):
                 # Upstream renamed this from prompt_speech_16k; the model
                 # card's example predates the change.
                 prompt_wav=prompt_wav,
+                speed=_knob(self.meta, "SPEED", 1.0),
                 stream=False,
             )
         ]
@@ -486,6 +512,8 @@ class NanoTwiWrapper(BaseTTSModel):
             vocoder=os.path.join(base, self.VOCODER),
             tokens=os.path.join(base, "tokens.txt"),
             data_dir=data_dir,
+            noise_scale=_knob(self.meta, "NOISE_SCALE", 1.0),
+            length_scale=_knob(self.meta, "LENGTH_SCALE", 1.0),
         )
         self.model = sherpa_onnx.OfflineTts(
             sherpa_onnx.OfflineTtsConfig(
@@ -497,7 +525,9 @@ class NanoTwiWrapper(BaseTTSModel):
 
     def synthesize(self, text, lang="eng"):
         self._ensure_loaded()
-        audio = self.model.generate(text, sid=0, speed=1.0)
+        audio = self.model.generate(
+            text, sid=_knob(self.meta, "SPEAKER_ID", 0) or 0, speed=1.0
+        )
         return _wav_bytes(audio.samples, sample_rate=audio.sample_rate or self.SAMPLE_RATE)
 
 
@@ -534,9 +564,10 @@ class KhayaTTSWrapper(BaseTTSModel):
         session = self._ensure_session()
         body = {
             "text": text,
-            "language": lang,
+            "language": _knob(self.meta, "LANGUAGE_CODE", lang) or lang,
             "format": output_format,
         }
+        speaker_id = speaker_id or _knob(self.meta, "SPEAKER_ID")
         if speaker_id:
             body["speaker_id"] = speaker_id
         resp = session.post(self.API_URL, json=body, timeout=60)

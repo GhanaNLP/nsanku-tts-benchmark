@@ -1,0 +1,201 @@
+sample_id,reference,hypothesis,wer,cer
+5,"Akpa sia ƒo nu tso nu si nukɔkɔ nye, nukɔkɔ ƒe tutuɖo kple gbeɖɔɖɔ ŋu.",akpa sia ƒo nu tso nu si nukɔkɔ nya nukɔkɔ ƒe tutudo kple gbedodo ŋu,0.2,0.1111
+9,Àgasrɔ̃ nu tso gbeɖɔɖɔ hã ŋu le akpa sia.,àgasrɔ̃ nu tso gbedodo hã ŋu le akpa sia,0.3333,0.1935
+15,Nukɔkɔ nye nya ƒe akpa si woate ŋu ayɔ le nukeke ɖeka me.,nukɔkɔ nye nya ƒe akpa si woate ŋu ayɔ le nukeke ɖeka me,0.0,0.0
+16,Xaxagbeɖiɖi aɖewo tea ŋu nɔa wo ɖokuiwo si nyea nukɔkɔ.,axa gbeɖiɖi aɖewo ta ŋu nɔa wò ɖokuiwo si nyaa nukɔkɔ,0.5,0.0889
+22,"Nusrɔ̃la, nukɔkɔ nenie le nya agbelimɔ me?",nusrɔ̃la nukɔkɔ nenie le nya agbelimɔ me,0.0,0.0
+24,Wonɔa wo ɖokuiwo si wɔa nukɔkɔ.,wonɔa woɖokuiwo si wa nu kɔkɔ,0.8333,0.04
+42,Nukɔkɔwo to vovo tso gbegbɔgblɔ ɖeka gbɔ yi bubu gbɔ.,nukɔkɔwo to vɔvɔ̃ tso gbegbɔgblɔ ɖeka gbɔ yi bubu gbɔ,0.1,0.0465
+45,Nukɔkɔ nɔnuvo nye nukɔkɔ si wu enu kple ablɔɖegbeɖiɖi.,nukɔkɔ nɔ nu vɔ̃ nye nukɔkɔ si wu enu kple ablɔɖegbeɖiɖi,0.3333,0.0222
+48,"Le kpɔɖeŋu siwo va yi me la, míede dzesii be ablɔɖegbeɖiɖiwoe wu nyawo nu.",le kpɔɖeŋu siwo va yi me la míeɖe dze sii be ablɔɖegbeɖiɖiwoe wu nyawo nu,0.2143,0.0169
+50,Nukɔkɔ manɔnuvo nye nukɔkɔ si wua enu kple xaxagbeɖiɖi.,nukɔkɔ manɔnu vɔ̃ nye nukɔkɔ si wɔa enu kple xaxagbeɖiɖi,0.3333,0.0435
+57,Miƒo nu tso nu si nukɔkɔ nye la ŋu le miaƒe gɔmesese nu.,míeƒo nu tso nu si nukɔkɔ nye la ŋu le míaƒe gɔmesese nu,0.1538,0.0698
+59,Miɖe nukɔkɔ ƒe ha siwo le Eʋegbe me la me.,miɖe nukɔkɔ ƒe hã siwo le evegbe me la me,0.2,0.0625
+60,Miɖe nukɔkɔ ƒe tutuɖo ƒe vevinyenye le nyatutuɖo me la me.,miɖe nukɔkɔ ƒe tutudo ƒe vevinyenye le nyatutudo me la me,0.1818,0.0426
+61,Nukɔkɔ ƒe tutuɖo to vovo tso gbegbɔgblɔ ɖeka gbɔ yi bubu gbɔ.,nukɔkɔ ƒe tutuɖo to vɔvɔ̃ tso gbegbɔgblɔ ɖeka gbɔ yi bubu gbɔ,0.0833,0.0408
+64,Ablɔɖegbeɖiɖiwo nye nukɔkɔ ƒe akpa vevitɔ.,ablɔɖegbeɖiɖiwo nye nukɔkɔ ƒe akpa vevitɔ,0.0,0.0
+65,Woawoe nye nukɔkɔ la ƒe dzi.,woawɔe nye nukɔkɔ la ƒe dzi,0.1667,0.0455
+66,"Ghana gbegbɔgblɔ geɖewo me la, gbeɖɔɖɔ le vevie le dzesidede nukɔkɔ la me.",ɣanagbegbɔgblɔ geɖewo me la gbedodo le vevie le dzesiɖeɖenukɔkɔ la me,0.3846,0.1333
+73,Na míalé ŋku ɖe wo ŋu ɖekaɖeka.,na mialé ŋku ɖe wò ŋu ɖekaɖeka,0.2857,0.0833
+78,AG - Nukɔkɔ ƒe ha sia nye esi ablɔɖegbeɖiɖi ɖeka si xɔ gbeɖɔɖɔ la tuna ɖo la.,agra la nukɔkɔƒeha sia nye esi ablɔɖegbeɖiɖi ɖeka si xɔ gbedoɖo la tuna ɖo la,0.3125,0.1186
+82,"Ɣe aɖewo ɣi la, nukɔkɔ siawo tea ŋu nyea nukɔkɔ ɖeka nyawo hã.",ge aɖewoɣi la nukɔkɔ siawo ta ŋu nya nukɔkɔ ɖeka nyawo hã,0.4615,0.0833
+97,XG – Nukɔkɔ ƒe ha bubue nye esi xaxagbeɖiɖi si xɔ gbeɖɔɖɔ ɖeɖe tuna ɖo la.,nukɔkɔƒe hã bubue nye esi xaxagbeɖiɖi si xɔ gbedodo ɖeɖe tuna ɖo la,0.3333,0.1228
+102,Midzro nukɔkɔ ƒe tutuɖo si le Eʋegbe me la me.,midzro nukɔkɔ ƒe tutuɖo si le evegbe me la me,0.1,0.0278
+109,Hatsotso ɖe sia ɖe negblɔ woƒe ŋuɖoɖo la na klase la.,atsotso ɖe sia ɖe negblɔ woƒe ŋudodo la na klase la,0.1818,0.0714
+110,Abɔ kple anyidi aɖe nye xɔlɔ̃ veviwo.,abɔ kple anyiɖi aɖe nye xɔlɔ̃ veviwo,0.1429,0.0345
+122,Gbeɖɔɖɔ nye ale si míaƒe gbe nɔa dzi yim ganɔa ɖiɖim le nuƒo me.,gbedodo nye ale si míaƒe gbe nɔa dzi yim ganɔa didim le nuƒome,0.2857,0.12
+123,Gbegbɔgblɔ aɖewo li siwo me gbeɖɔɖɔ dea vovototo nyawo ƒe gɔmesese me le.,gbegbɔgblɔ aɖewo li siwo me gbedodoɖa vovototɔ nyawo ƒe gɔmesese me le,0.2308,0.1167
+126,Gbeɖɔɖɔ to vovo tso gbegbɔgblɔ ɖeka gbɔ yi bubu gbɔ.,gbedoɖo to vɔvɔ̃ tso gbegbɔgblɔ ɖeka gbɔ yi bubu gbɔ,0.2,0.119
+133,Gbekɔkɔ-bɔbɔ kple gbebɔbɔ-kɔkɔ hã le Ghana gbegbɔgblɔ aɖewo hã me.,gbekɔkɔbɔbɔ kple gbebɔbɔ kɔkɔ hã le ehã na gbegbɔgblɔ aɖewo hã me,0.6,0.0741
+136,"Nzemagbe, Gɛ̃gbe, Kasemgbe, Eʋegbe kple bubuawo.",ŋuzemagbe gegbe kasẽmgbe evegbe kple bubuawo,0.6667,0.1316
+143,Wɔƒe etɔ̃ koŋue le gbeɖɔɖɔ si le gbegbɔgblɔ siawo me.,woƒe etɔ̃ kɔ ŋue le gbedodo si le gbegbɔgblɔ siawo me,0.4,0.1429
+156,Esia fia be gbeɖɔɖɔ tea ŋu trɔa nya aɖe ƒe nyaha si me wòle la wòzua nyaha bubu.,esia fia be gbedodo tea ŋu trɔ nya aɖe ƒe nya hã si me wole la wozua nya hã bubu,0.3333,0.1129
+157,"Zi geɖe la, esia kuna ɖe gbeɖɔɖɔ si ƒomevi le nya la dzi la ŋu.",ɣeyiɣi geɖe la esia kuna ɖe gbedodo si ƒomevi le nya la dzi la ŋu,0.1333,0.1915
+161,Gbeɖɔɖɔ tea ŋu hea vovototo dea gbetagbewo dome.,gbedodo ta ŋu ha vɔvɔ̃tɔtɔ ɖe agbetagbewo dome,0.75,0.275
+168,Miƒo nu tso nu si gbeɖɔɖɔ nye la ŋu le miaƒe gɔmesese nu.,míƒo nu tso nu si gbedodo nye la ŋu le míaƒe gɔmesese nu,0.2308,0.1364
+170,Miɖe gbeɖɔɖɔ ƒe ha siwo le Eʋegbe me la me eye miana woƒe kpɔɖeŋuwo.,mide gbedodo ƒe ha siwo le evegbe me la me eye miana woƒe kpɔɖeŋuwo,0.2143,0.1111
+171,Midzro gbeɖɔɖɔ ƒe vevinyenyewo me le hatsotsowo me.,míedzro gbedoɖo ƒe vevinyenyewo me le hatsɔtsɔwo me,0.375,0.1628
+173,Mide dzesi gbeɖɔɖɔ ƒe ha siwo le nya siwo gbɔna la me la.,míeɖe dzesi gbedodo ƒe ha siwo le nya siwo gbɔna la me la,0.1538,0.1591
+176,Migblɔ miaƒe ŋuɖoɖo la na klase la.,míegblɔ míaƒe ŋuɖoɖo la na klãse la,0.4286,0.1429
+183,Miɖe gbeɖɔɖɔ ƒe wɔƒewo me eye miana kpɔɖeŋu etɔ̃ aɖewo.,mide gbedodo ƒe woƒewo me eye miana kpɔɖeŋu etɔ aɖewo,0.3,0.1364
+185,Akpa sia ku ɖe dzesidede nyati vevi siwo le nuŋlɔɖi kple dzeɖoɖo me la ŋu.,akpa sia ku ɖe dzesiɖeɖe nyati vevi siwo le nuŋlɔɖi kple dzedodo me la ŋu,0.1333,0.0678
+190,Iŋlisigbe kple nusɔsrɔ̃ tso hadomegbenɔnɔ ŋu ene la dome.,eŋlisigbe kple nusɔsrɔ̃ tso hadomegbenɔnɔ ŋu ene la dome,0.1111,0.0213
+191,Nyati vevi si le nuŋlɔɖi aɖe me la nye nu si ŋu nuŋlɔɖi la ku ɖo la.,nyati vevi si le nuŋlɔɖi aɖe me la nye nu si ŋu nuŋlɔɖila ku ɖo la,0.1176,0.0
+200,Tsɔ nu si ŋu nèke ɖo la sɔ kple wò hatsotsometɔwo tɔ.,tso nu si ŋu neke ɖo la sɔ kple wò hatsotsometɔwo to,0.25,0.0732
+203,Nyati vevi la ƒoa nu tso nu si ŋu nuŋlɔɖi alo dzeɖoɖo aɖe ku ɖo.,nyati vevi la ƒoa nu tso nu si ŋu nuŋlɔɖi alo dzeɖoɖo aɖe ku ɖo,0.0,0.0
+210,"Di nyatinyagbe la – Zi geɖe la, nyatinyagbe la nɔa boɖeɖea ƒe gɔmedzeƒe.",ði nyatinyagbe la zi geɖe la nyatinyagbe la nyɔa bɔɖeɖea ƒe gɔmedzeƒe,0.25,0.0526
+215,Enye nuxexlẽ ƒe ha si lɔ taɖodzinu eve ɖe eme.,enye nuxexlẽƒe hã si lɔ̃ taɖodzinu eve ɖe eme,0.3,0.0556
+233,Nuxexlẽ tsitotsito lɔ nu geɖewo ɖe eme.,nuxexlẽtsitɔtsitɔ lɔ̃ nu geɖewo ɖe eme,0.2857,0.0938
+243,Míewɔa esia nenye be míele biabia aɖe ƒe ŋuɖoɖo dim.,míewɔa esia nenye be míele biabia aɖe ƒe ŋuɖoɖo ɖim,0.1,0.0238
+245,Xlẽ nuŋlɔɖi si gbɔna la.,le nuŋlɔɖi si gbɔna la,0.2,0.0526
+246,De dzesi nyati vevi si le nuŋlɔɖi si gbɔna la me.,ðe dze si nyati vevi si le nuŋlɔɖi si gbɔna la me,0.2727,0.0263
+248,"Esi mexɔ ƒe ene ko la, danye trɔ megbe eye nyemenya naneke tso fofonye ŋu o.",esi mexɔ ƒe ene ko la ɖanye trɔ̃megbe eye nyemenya naneke tso fofonye ŋu o,0.1875,0.0169
+249,Naneke meli mawɔ tsɔ wu be manɔ ƒonyemetɔwo gbɔ o.,naneke meli mawo tso wu be manɔ fonye me tɔwo gbɔ o,0.5,0.075
+256,Nenema ke nyemenɔ suku ɖeka hã wòde ƒe ɖeka kpɔ o.,nenema ke nyemenɔ suku ɖeka hã wò de ƒe ɖeka kpɔ o,0.2727,0.0513
+261,Memliɖagbe kple Kɔsiɖagbewo atsɔ anɔ ɖokuinye dzi kpɔm.,mamlidagbe kple kwasiɖagbewo atsɔ anɔ ɖokuinye dzi kpɔm,0.25,0.0851
+264,Mewɔ apaɖidɔ sia ƒe ewo sɔŋ.,mewɔ apaɖido sia ƒe ewo sɔŋ,0.1667,0.0455
+271,Migblɔ nyati vevi si miede dzesii la na klase la.,migblɔ nyati vevi si míeɖe dze sii la na klase la,0.3,0.0513
+275,Toɖoɖo menye sedziwɔwɔ ɖeɖe ko o.,toɖoɖo menye sedziwɔwɔ ɖeɖe ko o,0.0,0.0
+278,Ɖeko nèle gbɔgblɔm na wo be yeka ɖe woƒe aɖaŋuɖoɖo dzi.,ekɔ nèle gbɔgblɔm na wo be yeka ɖe woƒe aɖaŋuɖoɖo dzi,0.1818,0.0682
+284,"Ke hã la, toɖoɖo wɔnɛ be míewɔa nu ɖe ɖoɖo nu eye wònana be míenɔa dedie.",ke hã la toɖoɖowo nɛ be míewɔa nu ɖe ɖoɖo nu eye wònana be míenɔa ɖeɖie,0.3125,0.0893
+288,Enana be wokana ɖe ame dzi eye wòhea ŋgɔyiyi vɛ.,enana be wokana ɖe ame dzi eye wohea ŋgɔ yi vɛ,0.2,0.0526
+290,Madze agbagba aɖo to amewo.,madze agbagba aɖo to amewo,0.0,0.0
+293,Mitsɔ dzeɖoɖo la wɔ fefee.,míetsɔ dzeɖoɖolawo ƒe ƒee,1.0,0.2381
+297,Xlẽ nuŋlɔɖi si gbɔna la eye nàɖo biabia siwo kplɔe ɖo la ŋu.,le nuŋlɔɖi si gbɔna la eye nàɖo biabia si wokplɔe ɖo la ŋu,0.3077,0.0426
+367,Aleke nuŋlɔla la tu eƒe nuŋlɔɖi la ɖoe?,aleke nuŋlɔla la tu eƒe nuŋlɔɖila ɖoe,0.25,0.0
+377,"Amebubu menye nu si wozina ɖe ame dzi o, ke boŋ enye nu si wodzena na.",ame bubu menye nu si wozina ɖe ame dzi o ke boŋ enye nu si wòdzena na,0.1875,0.0189
+391,Nu ka tanya la gblɔ tso nyati vevi si le nuŋlɔɖi la me la ŋu?,nu ka tanya la gblɔ tso nyati vevi si le nuŋlɔɖila me la ŋu,0.1333,0.0
+392,De dzesi nyati vevi si le nyabo gbãtɔ kple enelia me la eye nàŋlɔ wo ada ɖi.,ðe dzesi nyati vevi si le nyabɔ gbãtɔ kple enelia me la eye nàŋlɔ wò aɖa ɖi,0.3529,0.1017
+393,To nuŋlɔɖi la ɖe eme le nyagbe ene me.,to nuŋlɔɖila ɖe eme le nyagbe ene me,0.2222,0.0
+397,Vovototo kae le nuxexlẽ memie kple nyametsotso dome?,ovɔtɔtɔ kae le nuxexlẽmemie kple nyametsotso dome,0.375,0.1136
+398,Ɖe nu siwo nuxexlẽ gbadzaa lɔ ɖe eme la dometɔ etɔ̃ me.,ðe nu siwo nuxexlẽ gbadzaa lɔ̃ ɖe eme la dometɔ etɔ̃ me,0.1667,0.0476
+418,Míezãa nyaŋunyakpewo tsɔ tua nya yeyewo ɖo.,míezãa nya ŋu nyakpewo tso tua nya yeyewo ɖo,0.7143,0.0556
+438,Trɔ ɖe wò nusrɔ̃hati aɖe ŋu eye nàɖe nu si nyaŋunyakpewo nye la me nɛ.,trɔ ɖe wò nusrɔ̃hati aɖe ŋu eye nàɖe nu si nyaŋunyakpewo nye la me nɛ,0.1333,0.037
+441,Nyaŋunyakpe siawo nye esiwo tua nya yeye siwo si gɔmesese bubu nɔna la ɖo.,nyaŋunyakpe siawo nye esiwo tua nya yeye siwo si gɔmesese bubu nɔna la ɖo,0.0,0.0
+453,Nyaŋunyakpe wɔƒefiatɔwo metrɔa nyawo ƒe gɔmesese bliboe o.,nyaŋunya kple woƒe fiatɔwo metrɔa nyawo ƒe gɔmesese bliboe o,0.5,0.04
+459,"Efia be ne míekpe nyaŋunyakpe wɔƒefiatɔ ɖe ŋkɔnya ŋu la, eɖea gbɔsɔsɔ fiana.",efia be ne miekpe nyaŋunyakpe woƒe fiatɔ ɖe ŋkɔnya ŋu la eɖea gbosɔsɔ fiana,0.3077,0.0484
+467,Nyaŋunyakpewo zazã to vovo tso gbegbɔgblɔ ɖeka gbɔ yi ɖe bubu gbɔ.,nyaŋunyakpewo zazã to vɔvɔ̃ tso gbegbɔgblɔ ɖeka gbɔ yi ɖe bubu gbɔ,0.1667,0.0556
+470,Wonana be nyawo trɔna tso nyaha ɖeka me yi ɖe nyaha bubu me.,wonana be nyawo trɔna tso nya hã ɖeka me yi ɖe nya hã bubu me,0.3077,0.0426
+472,Nyaŋunyakpewo nana be ɣeyiɣi si me nuwɔnawo yi edzi le la trɔna.,nyaŋunyakpewo nana be ɣeyiɣi si me nuwɔnawo yi edzi le la trɔna,0.0,0.0
+485,Mizã nyaŋunyakpe ƒe ha siwo miesrɔ̃ la miatsɔ atu nya yeye enene ɖo.,míezea nya ŋu nyakpeƒe hã siwo míesrɔ̃ la miatsɔ atu nya yeye nene ɖo,0.5385,0.1111
+486,"Emegbe la, migblɔ miaƒe ŋuɖoɖoawo na klase la eye miaɖe wo me.",emegbe la migblɔ miaƒe ŋuɖoɖoawo na klasela eye miaɖe wo me,0.1667,0.0
+490,Esia ɖea nyagbe kpuikpuikpui geɖewo ŋɔŋlɔ dzi kpɔtɔna.,esia ɖea nyagbe kpuikpuikpui geɖewo ŋɔŋlɔ dzi kpɔtɔna,0.0,0.0
+491,Eƒe wɔƒe vevitɔe nye be wòate nyagbe ƒe akpa vovovowo ƒo ƒu.,eƒe woƒe vevitɔe nye be woate nyagbe ƒe akpa vɔvɔvɔ̃wo ƒo ƒu,0.1667,0.0833
+493,Esrɔ̃a agbalẽ eya ta ekpɔ dzidzedze le dodokpɔ la me.,esrɔ̃ agbalẽ eya ta ekpɔ dzidzedze le ɖoɖokpɔla me,0.4,0.0952
+494,Meyina gake matrɔ agbɔ kaba.,meyina gake matrɔ agbɔ kaba,0.0,0.0
+498,Nyablanya ƒe ha vovovowo le gbegbɔgblɔwo me.,nyablanyaƒe hã vɔvɔvɔwo le gbegbɔgblɔwo me,0.5714,0.1081
+514,Adzotɔ kpɔ Kofi gake mebia nya aɖekee o.,adzotɔwo kpɔ kɔfi gake mebia nya aɖekee o,0.25,0.0938
+521,"Esime wodzi Yesu la, nunyalawo tso ɣedzeƒe va.",esime wodi yesu la nunyalawo tso ɣedzeƒe va,0.125,0.027
+522,Mele tsi hafi danye gbɔ.,mele tsi hafi ɖanye gbɔ,0.2,0.0526
+525,Xlẽ wò nyagbeawo na klase la eye nàɖe wo me.,le wo nyagbeawo naklã se la eye nàɖe wo me,0.4,0.0882
+528,Wohea susu alo taɖodzinu si ta wowɔ nane ɖo la ɖe go.,wohea susu alo taɖodzinu si ta wowɔ nane ɖo la ɖe go,0.0,0.0
+530,Wozãa wo tsɔna hea kadodo dea susu siwo ɖe nugbegbe fia la dome.,wozãa wòtsɔna hea kaɖoɖo ɖea susu siwo ɖe nu gbegbe fia la dome,0.5385,0.098
+531,Wonana be míeɖea susu siwo tsi tsitre ɖe wo nɔewo ŋu la fiana.,wonana be míeda susu siwo tsi tsitre ɖe wò nɔewo ŋu la fiana,0.1538,0.0612
+532,Wonana be míetea ŋu kpea susu si meɖe nugbegbe fia o la ɖe susu bubu ŋuti.,wonana be míetea ŋu kpea susu si mede nu gbegbe fia o la ɖe susu bubu ŋuti,0.1875,0.0172
+533,Wozãa wo tsɔna ɖea nuwɔna alo nudzɔdzɔ aɖe ƒe metsonu fiana.,wozãa wòtsɔna ɖea nuwɔna alo nudzɔdzɔ aɖe ƒe metsɔnu fiana,0.3636,0.0612
+535,Se vevi aɖewo ku ɖe nyablanyawo zazã le nyagbewo tutu ɖo me ŋu.,se vevi aɖewo ku ɖe nyablanyawo zazã le nyagbewo tutu ɖo me ŋu,0.0769,0.02
+538,Nyablanyawo hea kadodo dea susuwo kple nuwɔnawo me.,nyablanyawo hakaɖoɖo ɖea susuwo kple nuwɔnawo me,0.375,0.093
+541,Nyablanyawo le vevie le nu siwo tu wo nɔewo ɖe nu la yɔyɔ ɖekaɖeka me.,nyablanyawo le vevie le nu siwo tu wo nɔewo ɖe nu la yɔyɔ ɖekaɖeka me,0.0,0.0
+544,Nyatutuɖomɔnu nye mɔ si dzi wotona tua nya yeyewo ɖo le gbegbɔgblɔ aɖe me la.,nyatutudomɔnu nye mɔ si dzi wotɔna tua nya yeyewo ɖo le gbegbɔgblɔ aɖe me la,0.1333,0.0323
+545,Nyatutuɖomɔnu vovovowo li siwo dzi wotona tua nya yeyewo ɖo le Eʋegbe me.,nyatutuɖomɔnu vɔvɔvɔ̃wo ɣli siwo dzi wotɔna tua nya yeyewo ɖo le evegbe me,0.3077,0.1
+546,"Esiawo lɔ nyateƒoƒu, gbugbɔyɔ, nyakpedenyaŋu, nyaɣeɣe kple bubuawo ɖe eme.",esiawo lɔ̃ nyateƒo ƒu gbugbɔ yɔ nyakpeɖenya ŋu nya gege kple bubuawo ɖe eme,0.8,0.0492
+551,Ame kae tsɔa ŋkɔ na nu mawo?,ame kae tsoa ŋkɔ na nu mawò,0.2857,0.0952
+557,Eʋegbe ƒe nyateƒoƒuwo ŋu lae nye be wo dometɔ geɖewo nyea ŋkɔnyawo.,evegbe ƒe nyateƒofuwo ŋu lae nye be wò dometɔ geɖewo nyea ŋkɔnyawo,0.25,0.0545
+562,Di nya vovovo siwo tu nya siawo ɖo la eye nàyɔ wo na klase la.,ði nya vɔvɔvɔ̃ siwo tu nya siawo do la eye nàyɔ wò na klas la,0.4,0.1702
+567,"Le Eʋegbe me la, nyake lae vana evelia.",le evegbe me la nyakelae va na evelia,0.5,0.0333
+571,Míalé ŋku ɖe kpɔɖeŋu aɖewo ŋu.,míalé ŋku ɖe kpɔɖeŋu aɖewo ŋu,0.0,0.0
+585,Enana be gbegbɔgblɔ la tsina elabena edzia nyawo ɖe edzi.,enana be gbegbɔgblɔ la tsina elabena edzea nyawo ɖe edzi,0.1,0.0213
+586,Enana be wosea nyawo gɔme nyuie le gbegbɔgblɔ aɖe me.,enana be wosea nyawo gɔme nyuie le gbegbɔgblɔ aɖe me,0.0,0.0
+587,Enana be wotua nya yeye siwo woatsɔ aɖe ŋkɔ na susu alo nu yeyewo la ɖo.,enana be wotua nya yeye siwo woatsɔ aɖe ŋkɔ na susu alo nu yeyewo la ɖo,0.0,0.0
+588,Ekpena ɖe ame ŋu le gbesɔsrɔ̃ me.,ekpena ɖe ame ŋu le gbesɔsrɔ̃ me,0.0,0.0
+589,Enana be wokena ɖe nyawo ƒe dzɔtsoƒe alo agunu ŋu.,enana be wokena ɖe nyawo ƒe dzotsoƒe alo agunu ŋu,0.1,0.025
+593,Eʋe ƒe gbeɖiɖiwo kple wo ŋuti sewo.,eva ƒe gbeɖiɖiwo kple wò ŋuti sewo,0.2857,0.1071
+594,Ŋlɔ nyaŋunyakpe ƒe ha siwo le Eʋegbe me la da ɖi.,ŋlɔnyaŋunyakpeƒe hã siwo le evegbe me la ɖa ɖi,0.5455,0.0789
+595,De dzesi nyaŋunyakpe ƒe kpɔɖeŋu ene aɖewo.,ðe dzesi nya ŋu nyakpe ƒe kpɔɖeŋu ene aɖewo,0.5714,0.0286
+596,Dzro nyaŋunyakpewo ƒe vevinyenyewo dometɔ etɔ̃ teti me.,dzro nyaŋunyakpewo ƒe vevinyenyewo dometɔ etɔ̃ tetime,0.25,0.0
+599,De dzesi nyablanya ƒe ha siwo le Eʋegbe me la.,ðe dze si nyablanya ƒe ha siwo le evegbe me la,0.4,0.0556
+600,De vovototo nyablanya ƒe ha siwo nède dzesii la dome.,ðe vovotɔtɔ nyablanyaƒe hã siwo nèɖe dze sii la dome,0.8,0.1395
+602,Te fli ɖe nyablanyawo te le nyagbe siwo gbɔna la me.,te fli ɖe nyablanyawo te le nyagbe siwo gbɔna la me,0.0,0.0
+603,Elikplim le agbalẽ xlẽm eye Seƒenya le nu ŋlɔm.,eli kplim le agbalẽ xlẽm eye se ƒe nya le nu ŋlɔm,0.7778,0.0526
+605,Dɔ wui eya ta eɖu nu.,ɖɔ wui eya ta eɖu nu,0.1667,0.0667
+606,Mayi gake menye egbe o.,mayi gake menye egbe o,0.0,0.0
+607,Fufu alo tekɔ dzɔa dzi nɛ.,fufu alo tekɔ dzɔa dzi nɛ,0.0,0.0
+608,De dzesi nyatutuɖomɔnu etɔ̃ aɖewo le Eʋegbe me.,ðe dze si nyatutudomɔnu etɔ̃ aɖewo le evegbe me,0.625,0.0789
+609,Ɖe nyatutuɖomɔnu siwo le Eʋegbe me la dometɔ etɔ̃ me.,ðe nyatutudomɔnu siwo le evegbe me la dometɔ etɔ̃ me,0.3,0.0714
+610,Ɖe nyatutuɖomɔnu ƒe wɔƒe veviwo dometɔ etɔ̃ teti me le Eʋegbe me.,ðe nyatutudomɔnu ƒe woƒe veviwo dometɔ etɔ̃ tetime le evegbe me,0.5,0.0769
+617,Biabiae nye be nu kae woagawɔ emegbe?,biabiae nye be nu kae wɔa gã wò emegbe,0.4286,0.1
+629,Nyakɔsɔkɔsɔ nye nya alo nyawo ƒe ƒuƒoƒo si si wɔƒe le le nyagbe me la.,nyakɔsɔkɔsɔ nye nya alo nyawo ƒe ƒuƒoƒo sisi woƒe le le nyagbe me la,0.2,0.0182
+631,Nyagbekɔsɔkɔsɔ nye nyawo ƒe ƒuƒoƒo si tua nyagbe ɖo la.,nyagbe kɔsɔkɔsɔ nye nyawo ƒe ƒuƒoƒo si tua nyagbe ɖo la,0.2,0.0
+639,Tsɔ wò ŋuɖoɖo la sɔ kple wò hatsotso me tɔwo tɔ.,tsɔ wò ŋuɖoɖo la sɔ kple wò hatsɔtsɔme toto,0.5455,0.1892
+647,Míalé ŋku ɖe nyakɔsɔkɔsɔ ƒe ha ene aɖewo ŋu.,míalé ŋku ɖe nyakɔsɔkɔsɔ ƒe hã ene aɖewo ŋu,0.1111,0.0286
+649,Ŋkɔnyakɔsɔkɔsɔ nye nyakɔsɔkɔsɔ si ƒe ta nye ŋkɔnya alo ŋkɔteƒenɔnya la.,ŋkɔnya kɔsɔkɔsɔ nye nyakɔsɔkɔsɔ si ƒe ta nye ŋkɔnya alo ŋkɔ teƒe nɔnya la,0.4545,0.0
+650,Ŋkɔnyakɔskɔsɔ ƒe tutuɖowo to vovo tso wo nɔewo gbɔ.,ŋkɔnya kɔskɔsɔ ƒe tutudowo to vɔvɔ̃ tso wò nɔewo gbɔ,0.5556,0.0952
+652,Ŋkɔnyakɔsɔkɔsɔ tea ŋu nyea ŋkɔnya alo ŋkɔteƒenɔnya ɖeka.,ŋkɔnya kɔsɔkɔsɔ tea ŋu nyaa ŋkɔnya alo ŋkɔteƒenɔnya ɖeka,0.375,0.0208
+658,Ŋkɔnyaɖɔnya alo asifianya alo asitɔnudzinya aɖeke mekpe ɖe wo ŋu o.,ŋkɔnyaɖonya alo asifianya alo asitɔnudzinya aɖeke mekpe ɖe wò ŋu o,0.1818,0.0357
+661,"Míate ŋu atsɔ ŋkɔnyaɖɔnya, asifianya kple ŋkɔnya bubu akpe ɖe wo ŋu.",míate ŋu atsɔ ŋkɔnya ɖo nya asifianya kple ŋkɔnya bubu akpe ɖe wo ŋu,0.25,0.0182
+671,Minɔ hatsotsowo me miatu ŋkɔnyakɔsɔkɔsɔ etɔ̃ ɖo.,mínɔ hatsɔtsɔwo me míatu ŋkɔ nya kɔsɔkɔsɔ etɔ̃ ɖo,0.8571,0.1
+674,Dɔwɔnyakɔsɔkɔsɔ nye nyakɔsɔkɔsɔ si ƒe tae nye dɔwɔnya.,dowonya kɔsɔkɔsɔ nye nya kɔsɔkɔsɔ si ƒe tae nye dowonya,0.625,0.087
+695,Minɔ hatsotsowo me miatu dɔwɔnyakɔsɔkɔsɔ etɔ̃ ɖo.,mínɔ hatsɔtsɔwo me mía tudɔwo nya kɔsɔkɔsɔ etɔ̃ ɖo,0.8571,0.122
+698,Enye nyakɔsɔkɔsɔ si ƒe ta nye dɔwɔnyaɖɔnya la.,enye nya kɔsɔkɔsɔ si ƒe ta nye dɔwònyaɖonya la,0.375,0.0526
+706,Dɔwɔnyaɖɔnyakɔsɔkɔsɔ ɖɔa dɔwɔnya alo kɔa eŋuti.,dɔwonya ɖonya kɔsɔkɔsɔ doa dɔwonya alo koa ŋuti,1.1667,0.1707
+711,Mitu dɔwɔnyaɖɔnyakɔsɔkɔsɔ etɔ̃ ɖo le miaƒe hatsotsowo me.,mítu dɔwonyaɖonya kɔsɔkɔsɔ etɔ ɖo le miaƒe hatsotsowo me,0.375,0.0625
+712,Enye nyakɔsɔkɔsɔ si ƒe ta nyea ŋkɔnyaɖɔnya la.,enye nyakɔsɔkɔsɔ si ƒe tanyaa ŋkɔnyaɖonya la,0.375,0.0526
+716,Ŋkɔnyaɖɔnya si le ŋkɔnyaɖɔnyakɔsɔkɔsɔ me la nɔa eɖokui si le nyagbe me.,ŋkɔnyaɖonya si le ŋkɔnyaɖonya kɔsɔkɔsɔ me la nɔa eɖokui si le nyagbe me,0.25,0.0339
+721,Mitu ŋkɔnyaɖɔnyakɔsɔkɔsɔ si me ŋkɔnya ɖeka le la ɖo le miaƒe hatsotsowo me.,míetu ŋkɔnyaɖonya kɔsɔkɔsɔ si me ŋkɔnya ɖeka le la ɖo le míaƒe hatsɔtsɔwo me,0.3846,0.0968
+722,Nyakɔsɔkɔsɔ ƒe kee nye nu vevitɔ le nyakɔsɔkɔsɔ aɖe me.,nyakɔsɔkɔsɔ ƒe kee nye nu vevitɔ le nyakɔsɔkɔsɔ aɖe me,0.0,0.0
+724,Nyakɔsɔkɔsɔ vovovowoe ƒoa ƒu wɔa nyagbe.,nyakɔsɔkɔsɔ vɔvɔvɔwoe ƒo aƒu wɔa nya gbe,0.8333,0.0882
+725,"Le kpɔɖeŋu sia me la, nya si wode ama lae nye ŋkɔnyakɔsɔkɔsɔ.",le kpɔɖeŋu sia me la nya si wòɖe ama lae nye ŋkɔnya kɔsɔkɔsɔ,0.25,0.0417
+730,Wozãa nyakɔsɔkɔsɔwo tsɔna ɖea susuwo gblɔna.,wozãa nya kɔsɔkɔsɔwo tsona ɖa susuwo gblɔna,0.8333,0.0789
+731,Wonye nu siwo wozãna vevie le nuƒoƒo kple nuŋɔŋlɔ me.,wonye nu siwo wòzãna vevie le nufofo kple nuŋɔŋlɔ me,0.2,0.093
+732,Wozãa wo tsɔ naa gbedeasi siwo si gɔmesese le la.,wozãa wotsɔ naa gbedeasi siwo si gɔmesese le la,0.3,0.0256
+733,Wonana be gbedeasiwo alo nyawo me kɔna nyuie.,wonana be gbedeasiwo alo nyawo me kɔna nyuie,0.0,0.0
+737,Mite fli ɖe nyakɔsɔkɔsɔ siwo miede dzesi la ƒe tawo te.,míete fli ɖe nyakɔsɔkɔsɔ siwo míeɖe dzesi la ƒe tawo te,0.1818,0.0909
+739,"Le kɔsiɖa si va yi ƒe nuwuwu la, nye kple xɔ̃nyewo míeɖoe be míayi ɖe ƒuta.",le kwasiɖa si va yi ƒe nuwuwu la mía kple xɔ̃nyewo míeɖoe be míayi ɖe futa,0.1875,0.1053
+740,Ŋdɔ vi aɖe ʋu ŋdi ma eye yame kɔ nyuie hena fefefefe.,ŋdɔvi aɖe ʋu ŋdi ma eye yame ko nyuie hena ƒeƒeƒe,0.3333,0.1463
+743,Ya fafɛ si nɔ ƒoƒom le ƒua ta la na be míaƒe dzi dze eme nyuie.,yafa ƒe si nɔ fofom le fua ta la na be míaƒe dzi dze eme nyuie,0.25,0.1064
+744,"Esime míeɖo teti ko la, míenɔ anyi ɖe neti aɖe si ɖo vɔvɔli nyuie la te.",esime mieɖu teti ko la míenɔ anyi ɖe neti aɖe si do vɔvɔ̃li nyui la te,0.1875,0.0727
+750,Ƒutsotsoewo ƒe kɔkɔ ɖe kpeawo ŋu ƒe ɖiɖi nya le sesem ŋutɔ.,futsotsoewo ƒe kɔkɔɖekpeawo ŋu ƒe didinya le sese ŋutɔ,0.5833,0.0851
+752,Mida nyakɔsɔkɔsɔ ƒe ha vovovo siwo miede dzesii va yi (i.,míedea nya kɔsɔkɔsɔ ƒe hã vɔvɔvɔ̃ siwo míeɖe dze sii va yi ĩ,0.8182,0.2222
+755,Migblɔ miaƒe ŋuɖoɖo la na klase la ne miadzro wo me.,migblɔ miaƒe ŋudodo la na klase la ne miadzro wo me,0.0909,0.0488
+758,"Emegbe la, migblɔ miaƒe ŋuɖoɖoawo na klase la.",emegbe la míegblɔ míaƒe ŋudodoawo na klase la,0.375,0.1351
+761,Nyagbekɔsɔkɔsɔ nye nyawo ƒe ƒuƒoƒo si me nuwɔƒe kple dɔwɔƒe le la.,nyagbe kɔsɔkɔsɔ nye nyawo ƒe fufofo si me nuwo ƒe kple dɔwo ƒe le la,0.5833,0.0926
+765,Fofonye kua ʋu yia asi me.,fofonye ku avu yia asi me,0.3333,0.05
+769,Nyagbekɔsɔkɔsɔ ƒe ha gã evee li.,nyagbe kɔsɔkɔsɔ ƒe hã gã evee li,0.6667,0.0769
+772,"Ŋkɔnya kple dɔwɔnya nɔa eme, eye gɔmesese nɔa esi le eɖokui si.",ŋkɔnya kple dɔwonya nɔa eme eye gɔmesese nɔa esi le eɖokui si,0.0833,0.02
+775,Susu sia tae woyɔa nyagbekɔsɔkɔsɔ ƒe ha sia be nyagbekɔsɔkɔsɔ ɖokuisinɔtɔ ɖo.,susu sia tae wòyɔa nyagbekɔsɔkɔsɔ ƒe hã sia be nyagbekɔsɔkɔsɔ ɖokuisinɔtɔ ɖo,0.1667,0.0308
+777,"Woawoe nye nyatakatɔ, nyabiatɔ, gbeɖetɔ kple seselelãmefiatɔ.",woawoe nye nyatakatɔ nyabiatɔ gbeɖetɔ kple seselelãmefiatɔ,0.1429,0.0192
+780,Yi ɖe intanɛti dzi nàxlẽ nu tso nyagbekɔsɔkɔsɔ ɖokuisinɔtɔ ƒe hawo ŋu.,yi ɖe internet dzi naxlẽ nu tso nyagbe kɔsɔkɔsɔ ɖokuisinɔtɔ ƒe hawo ŋu,0.3333,0.0862
+783,Nyagbekɔsɔkɔsɔ ɖokuisinɔtɔ ƒe ha enee li ku ɖe dɔ si wɔm wole la ŋu.,nyagbe kɔsɔkɔsɔ ɖokuisinɔtɔƒe hã enee li ku ɖe ɖo si wɔm wòle la ŋu,0.4286,0.0741
+791,Akpa medzia vi wòɖia adeɣe o.,akpa medzia vi wodzi aɖe ge o,0.5,0.2174
+795,Nyagbekɔsɔkɔsɔ gbeɖetɔ mehiã na nuwɔla o.,nyagbe kɔsɔkɔsɔ gbeɖetɔ mehiã na nuwɔla o,0.5,0.0286
+798,"Le ŋɔŋlɔ me la, nyagbekɔsɔkɔsɔ gbeɖetɔ wua enu kple ɣlidodzesi.",le ŋɔŋlɔ me la nyagbe kɔsɔkɔsɔ gbeɖetɔ wɔa enu kple ɣlidodzesi,0.3,0.0192
+800,Àte ŋu ayɔ nyabianya siwo le Eʋegbe me la dometɔ aɖewoa?,àte ŋu ayɔ nyabianya siwo le evegbe me la dometɔ aɖewoa,0.1818,0.0444
+806,Ame kae nye wò nufiala?,ame kae nye wò nufiala,0.2,0.0556
+816,"Nenye be míeyi la, aƒle aŋuti la na mi.",nenye be míeyi la aƒle aŋuti la na mí,0.1111,0.0345
+818,Nyagbekɔsɔkɔsɔ siwo te fli le la woe nye nyagbekɔsɔkɔsɔ ɖokuisimanɔtɔwo.,nyagbe kɔsɔkɔsɔ siwo te fli le la woe nye nyagbe kɔsɔkɔsɔ ɖokuisimanɔtɔwo,0.4,0.0
+823,Nyagbekɔsɔkɔsɔ ɖokuisimanɔtɔ ƒe ha etɔ̃e li ku ɖe woƒe wɔƒewo ŋu.,nyagbekɔsɔkɔsɔ ɖokuisimanɔtɔƒe hã etɔe li ku ɖe woƒe woƒe wo ŋu,0.4545,0.0377
+826,Edzea egɔme kple ‘si’ hewɔa dɔ abe ŋkɔnyaɖɔnya ene le nyagbea me.,edzea egɔme kple si hewɔa ɖo abe ŋkɔnyaɖonya ene le nyagbea me,0.1667,0.0588
+828,Menya ŋutsu si va afi sia.,meanya ŋutsu si va afisia,0.5,0.05
+837,Sukuvi si wɔ dɔ nyuie wu le dodokpɔ me la xɔ nunana.,sukuvi si woɖo nyuie wu le ɖoɖokpɔme la kɔ nunana,0.4167,0.15
+838,Nufiala si gbɔ nyemelɔ̃a nu le o la meva suku egbe o.,nufiala si gbɔ nyemelɔ̃a nu le o la meva suku egbe o,0.0,0.0
+840,Danye ɖa nuɖuɖu si doa dzidzɔ nam vevie la.,ðanye ɖa nuɖuɖu si doa dzidzɔ nam vevie la,0.1111,0.0294
+848,Eɖo ŋku edzi le ɣeyiɣi si me wòdzo le dɔwɔƒe la.,eɖo ŋku edzi le ɣeyiɣi si me wòdzɔ le dɔwɔƒe la,0.0909,0.0541
+849,"Ne míeɖu nu vɔ la, madzo.",ne mieɖu nu vɔ̃ la madzɔ,0.3333,0.1111
+850,Nyagbekɔsɔkɔsɔ siwo te fli le va yi la katã nye nyagbekɔsɔkɔsɔ ɖokuisimanɔtɔwo.,nyagbekɔsɔkɔsɔ siwo te fli le va yi la katã nye nyagbekɔsɔkɔsɔ ɖokuisimanɔtɔwo,0.0833,0.0149
+858,Midzro miaƒe ŋuɖoɖowo me kple miaƒe nusrɔ̃hati bubu siwo le klase la.,míedzro míaƒe ŋudodowo me kple míaƒe nusrɔ̃hati bubu siwo le klase la,0.3333,0.1071
+863,"Esime dɔ nɔ wuyem ta la, nye hã meƒle mɔlu la.",esi meɖo nɔ wu yem ta la nye hã meƒle mɔlu la,0.4545,0.0882
+875,Wozãa tɔtɔdzesi tsɔna wua nyagbe nu.,wozãa tɔtɔdze si tsona wɔa nyagbe nu,0.8333,0.1
+876,Wozãnɛ tsɔna dea mama nyagbewo dome.,wozãnɛ tsona ɖea mamanyagbewo dome,0.8333,0.1
+877,Wozãnɛ tsɔna dea dzesi nya aɖe si woto ɖe eme la.,wozãnɛ tso nàɖea dzesi nya aɖe si wotɔ ɖe eme la,0.3636,0.1316
+878,Wozãnɛ tsɔna dea dzesi numegbe ƒe nuwuƒe.,wozãnɛ tsona dea dzesi nu megbe ƒe nuwuƒe,0.5714,0.0588
+883,"Meyi asi me ɖaƒle atadi, dze, hɛ, kple aŋuti.",meyi asi me ɖaƒle ataɖi dze hehe kple aŋuti,0.2222,0.1212
+884,"Aƒe, ʋu, gasɔ kple anyigba le Afiwɔ si.",aƒe vu gasɔ kple anyigba le afiwo si,0.25,0.069
+885,Wozãnɛ tsɔna dea mama ɣletiŋkekewo kple ƒe dome.,wozãnɛ tsona dea mamaa le tiŋkekewo kple eƒe dome,0.75,0.1
+891,Wozãnɛ tsɔna maa nyagbekɔsɔkɔsɔ ɖokuisinɔtɔwo dome.,wozãnɛ tsona maa nyagbe kɔsɔkɔsɔ ɖokuisinɔtɔwo dome,0.6667,0.0444
+892,Mexlẽ agbalẽ geɖewo; Ku le xɔ mee do dzidzɔ nam wu.,mexlẽ agbalẽ geɖewo ku le xɔ mee ɖo dzidzɔ nam wu,0.2727,0.0769
+893,Meyi aƒe me; meyi ɖaɖu nu.,meyi aƒe me meyi ɖaɖu nu,0.0,0.0
+894,Edea mama nu siwo yɔm wole ɖekaɖeka la dome.,eɖea mamaa nu siwo yom wòle ɖekaɖeka la dome,0.4444,0.1143
+897,Nyaŋutidzesi sia nɔa ŋɔŋlɔdzesi aɖe si(wo) bu le nya aɖe me la teƒe.,nyaŋutidzesi sia nɔa ŋɔŋlɔdzesi aɖe si wòbu le nya aɖe me la teƒe,0.1538,0.0189
+898,Ɖeviwo ƒ’ amebeble menyo o.,ðeviwo fã amebleble menyo o,0.6,0.1905
+902,Wozãnɛ tsɔna dea dzesi agbalẽwo ƒe tanya le nuŋɔŋlɔ me.,wozãnɛ tsona ɖea dzesi agbalẽwo ƒe tanya le nuŋɔŋlɔ me,0.4,0.0889
+904,Míezãa fli kpui le xexlẽmedzesi siwo tso blaeve-vɔ-ɖekɛ dzi tsɔ yii la ŋɔŋlɔ me.,míezãa flikpui le xexlẽmedzesi siwo tso 20 vɔ̃ ɖeke dzi tso yi la ŋɔŋɔ me,0.7143,0.1875

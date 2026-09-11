@@ -1,0 +1,201 @@
+sample_id,reference,hypothesis,wer,cer
+3,"A wɛlemɛ ŋa wulo la kͻkͻtɛgɛ, kͻkͻtɛgɛ meɛroŋ ane kͻkͻgaale parebammo.","A wɛlɛ mɛ ŋa wullo la ketɛgɛ, ki kitɛgɛ meɛroŋ ane ki kigaali pare ba moɔ.",1.0,0.2069
+10,Fo na zanne la yelbipaala meɛbo gͻͻloŋ.,Fo na zaŋ de la yelbipaala meebo guloŋ.,0.5714,0.1562
+24,Aŋa na baŋ e la ka sɛgebinyaŋene ba wa tu a sɛgebidaa puori taŋtaŋ lɛ.,Ba ŋa na baŋ e la ka sɛge binyaŋenne ba wa tu a sɛge bidaa puori tantaŋ lɛ.,0.4667,0.0545
+25,Yeldemannewulli mine la ama naŋ tu a puliŋ.,Yeldenmanoo liimine la a ma naŋ tu Apoliŋ.”,0.75,0.2
+31,O men maŋ soŋ la zannezanna ka o baŋ yelbie tɛgɛ bee pare.,Pɔge meŋ maŋ soŋ la a zanne zanna ka a o baŋyelbie tɛgɛɛ be pare.,0.7692,0.2
+33,"A sazu yeldemannewulli ama poͻ , a yelbi-ŋmaa kaŋa zaa boͻloo are ko la kͻkͻtɛgɛ.","A sazu yeldɛma neolii a ma poŋ ta lɛ ne wa gyi gyi, a yelbi-ŋmaa kaŋ zaa boluu are ko la ka tɛgɛ.",1.0714,0.4219
+34,A yelbiri kaŋ zaa wɛle eŋe la kͻkͻtɛgere.,A yelbiri kanzaa wɛle eŋɛ la ka te gɛrɛ.,0.75,0.2424
+37,A ama maŋ baare ne la sεgebinyaŋaa.,"A maŋ maa baare ne la, sege be nyɛ ŋa.",0.8571,0.25
+45,Yeldemannewulli mine la tu a puliŋ.,Yaldɛmanoo le mine la tu a poliŋ.,0.5,0.3103
+48,De fo meŋa yelbie manne wuli ne kͻkͻtɛgɛ muni.,de fo meŋa yelbie manne wuli Nikitɛgɛ muni.,0.2222,0.1081
+50,Manne bigri kͻkͻtɛgɛ zagere Dagaare poͻ.,manna begre keketɛgɛ zagere dagare poɔ.,0.8333,0.2059
+51,Manne wuli kͻkͻtɛgɛ meɛroŋ tͻna kyaare yelbie meɛbo.,Mɛ na wuli te te gɛmeɛroŋ kyɛ na kyaare yelbie meɛ boŋ.,1.125,0.2727
+55,Kͻkͻtɛgɛ sɛgebidaare meŋ taa la kͻkͻgaale aŋa sɛgebinyaŋene naŋ taa lɛ.,Tɛgɛ sɛgebi daare meŋ taa la kiki gaale aŋa sɛgebi nyaŋnee naŋ taa lɛ.,0.6364,0.1333
+57,"Aseŋ, ka yelbiriŋ wa taa sɛgebinyaŋene ayi , o naŋ taa la kͻkͻtɛgɛ ayi bee a gaŋ lɛ.","A seŋ, ka a yelbiriŋ wa, taa sɛge be-nyaŋene ayi dinyanoo eŋ harbi-ena moɔ ayi eŋ waala taa, a za o naŋ taa la kiki-tege ayi bee a gaŋ lɛ.",0.9412,0.6719
+62,Di dɛmɛ kyaare ne kͻkͻtɛgɛ Dagaare poͻ.,de dɛmɛ kyaare ne kaketɛgɛ da gaare po.,0.7143,0.125
+66,E ka fo ne fo tͻ di dɛmɛ kyaare yelbiri kaŋa zaa kͻkͻtɛgɛ semmo.,"e ka fo na fo ti, didɛmɛ kyaare yelbiri kaŋ zaa kyɛ keɛ kɛsemmo.",0.5714,0.16
+67,Vɛŋ ka fo ne fo tͻ di dɛmɛ kyaare ne a yelbiri kaŋa zaa kͻkͻtɛgɛ meɛroŋ.,Vɛŋ ka fo ne fo tene kyɛ dendɛmɛ kyaare ne a yelbiri kaŋ zaa kyɛ tɛgɛ meeroŋ.,0.4375,0.2321
+68,A yɛ gbuli na manne la a yɛlɛ a karendie poͻ.,A yɛ gbuli na manne la a yɛlɛ a karendie poɔ.,0.0909,0.0294
+69,Dɛmɛ diibu ane peɛroo na be la be.,Dɛmɛ diibu ane peɛroo na be la be.,0.0,0.0
+70,Soori ane Nyeraa da waa la zͻmenne.,Soori ane a yaa da waa la zemenne.,0.4286,0.1429
+71,"Ama, ba yel-erre da waa la tɛɛtɛɛ.",A maa ba yel-erre da waa la tɛɛtɛɛ.,0.2857,0.04
+79,Yɛ di dɛmɛ kyaare ne a nͻ-iri.,Yɛ didemɛ kyaare ne a miri.,0.4286,0.1364
+89,Ghana kͻkͻɛ mine yeldemannewulli la a ama naŋ tu a puliŋ.,"Garake kɛgɛ, mine yɛdɛɛ mɛ ne wuli la, aa ma naŋ tu a puliŋ.",0.7273,0.2609
+96,Kͻkͻgaale e la yelnimizeɛ kͻkͻre poͻ yi onaŋ taa tontɛɛtɛɛ kyaare pare bammo.,"ka a di le kateɛ̃ taŋ kɔge. Afeɛ ko o kpɔŋ maŋ neɛnɛ o wɔŋ, o bɔmɔ ta waa seŋkpoŋ. Aŋa na yɔɔ yuo waŋ seŋ ka kɔkɔzo ba faa eŋ bɛnnoo, mɔɛ te ne o tambo wɔŋ. A nobo kaŋ wɔɔŋ wa la daa wɔkɔŋ ba pɔge o. Kɔɔ te ka a moɔbo kɔŋ wɔɔ o meŋ nɔ a tɔn wɔɔ faa tamoɔ a maa gyanama kpɔŋkɔŋ ka kpɔŋkɔŋ o ŋɔ a taa o kpɔŋ.",5.7692,2.9688
+98,"Ama la yelbie bammo, kͻkͻre merɛ ane kͻkͻkpɛlɛ.","A maa la yelbie bammo, ki kɛrɛ miraa ne kɛkpɛlɛ.",0.875,0.2368
+100,Te maŋ de la yelbie kɔkɔgaale wɛle ne yelbie pare tɛɛtɛɛ.,Tɛ meŋ de la yelbie kɔkɔgaale wɛle ne yelbie pare tɛɛtɛɛ.,0.1818,0.0435
+103,Kaa a ama naŋ tu.,,1.0,1.0
+106,Kɔkɔre merɛ kɔkɔgaale la maŋ wa ne tɛɛtɛɛ a kɔkɔre yelibu poɔ.,"Kɔkɔre merɛ kɔkɔgaale la, maŋ wa ne tɛɛtɛɛ a kɔkɔre yelbu poɔ.",0.0833,0.02
+110,Kɔkɔgaale meŋ na baŋ wuli la tɛɛtɛɛloŋ kɔkɔkpɛlɛ naŋ be kɔkɔyeni poɔ.,Kɔkɔgaale meŋ na baŋ wuli la tɛtɛloŋ kɔkɔkpɛlɛ naŋ be kɔkɔyeni poɔ.,0.0833,0.0351
+111,Kɔkɔgaale na baŋ wɛle la Dagaare ane Birfor yelbie mine.,Pɔkɔgaalɛɛ na baŋ wɛle la dagaare ane berefɔɔ yelbie mine.,0.2,0.1522
+115,De fo meŋa yelbie manne wuli ne kͻkͻgaale pare bammo.,De fo meŋɛ yelbie manne wuli ne ki gaale parebama.,0.4,0.1395
+118,Yɛ di dɛmɛ kyaare kͻkͻgaale a yɛ gbulo poͻ.,Yɛ de dɛme kyaare ka kagaalee a yɛ buluu poɔ.,0.6667,0.2647
+119,Yɛ wuli yɛ karembitaaba yɛ nͻiraa.,Yɛ wulii yɛ karembitaaba yɛ e nyiraa.,0.5,0.1071
+120,"A yɛ gbulo poͻ, kyɛlle yelbie mine boͻloo Dagaare poͻ kyɛ e a ama naŋ tu.","Ka yɛ gbulo po, kyɛlle yelbie mine buluu da gaare po kyɛ e a ama naŋ to.",0.4375,0.1429
+122,Wuli a yelbie na yɛ naŋ kaa-iri kͻkͻtɛgɛ.,Wule a yelbie na yɛ naŋ ka a iri kiki tɛgɛ.,0.75,0.0938
+130,A foͻlaa yeli la yɛlɛ kyaare ne yelbulo kaa-iribu yelyagesɛgeraa bee dɛmɛ diibu poͻ.,Felaa yeli la yɛlɛ kyaare ne yelbuluu ka a erebu yeli a gye sɛgaraa bee dɛmɛɛ diibu poɔ.,0.8571,0.1739
+131,Fo na zanne la maa-eŋɛ ane kanne gaa tͻͻre kannoo.,Fo na zaŋ de la maa eŋɛ ane kanne gaa tere kannoo.,0.5,0.1026
+136,Yelbuli la a yelyagesɛgeraa yelnyͻgeraa.,Gloŋ bulo wa a yelgaa yelŋaraa.,1.0,0.5429
+138,Kannoo na baŋ waa la maa-eŋɛ bee kanne gaa tͻͻre.,O baŋ dɔga da baŋ waa la ŋmaa ŋɛ bɛ kanna gaa tere.,0.9,0.3947
+163,O meŋ la kyaare la kannoo te naŋ de yɛmbulo eŋ.,O meŋ la kyaare la kanoo te naŋ de yɛmbulo eŋ.,0.0909,0.0278
+166,A maŋ soŋ la ka yeli pare bammo kyaane.,Ba maŋ soŋ la ka yeli parebammo kyaane.,0.3333,0.0333
+171,Yɛ zanne la yɛlɛ kyaare werewere kannoo ane va-funnoo a yuoni yeni poͻ.,Yɛ zaŋ de la yɛlɛ kyaare wɛrewɛre kannoo ane va-fonnoo a yuoni yeni poɔ.,0.3846,0.1053
+177,O e la kannoo naŋ wulo yelbulo boͻbo yelyagesɛgeraa poͻ.,O e la ka nɔɔ naŋ wullo o yelbulo bobo yɛ leɛ gyisɛgraa poɔ.,0.9,0.2826
+182,"A kyɛ,fo maŋ kaa la a sɛgere fileu ana kyo-iri yelbi-bulo.",Kyɛ fo maŋ kaa la a sɛgɛre feluu a na kyɛ o iri yelbibuluŋ.,0.9091,0.1591
+185,Kanne a yelyagesɛgeraa ŋa naŋ tu a puliŋ.,"Gaa ne a yelgyɛgyɛɛ ŋa naŋ tu a poli,",0.5,0.3636
+186,Kaa iri a yelbulo a yelyagesɛgeraa ŋa naŋ tu a puliŋ poͻ.,"Kaa-seɛ, a yelbulo a yiele kaŋa naŋ tu a puliŋ poɔ.",0.4167,0.3111
+187,De a yelbulo na fo naŋ nyɛ wuli fo karembitaa.,Dɛ a yelbuuro na fo naŋ nyɛ wuli fo karembetaa.,0.3,0.1111
+188,N da nyɛ la yuomo anaare kyɛ ka n ma kpi.,"N da nyɛ la, yuomo anaare kyɛ ka N ma kpi.",0.0,0.0
+191,N baabo yɛlɛ da be la n dͻgereba nuuriŋ.,Aŋ baa boɔ-yɛlɛ da be la N dugro ba nuuriŋ.,0.5556,0.1935
+202,N da binne la libie fẽẽfẽẽ a tõͻ gaa sakuuri.,N da binne la libie fenfèè a toŋ gaa sakuori.,0.3,0.2
+208,A yɛ gbulo poͻ yɛ di dɛmɛ a kaairi a yelbulo a dɛmmo ŋa naŋ tu a puliŋ.,"A yɛ gbulo po, yɛ di dɛmɛ a kaare, a yɛ buluu a dɛmo ŋa naŋ tu a puliŋ,",0.2778,0.1509
+209,De a yelbulo fo naŋ kaairi wuli karendie biiri zaa.,Dɛ a yɛre bulo fo naŋ kaare wuli karendie biiri zaa.,0.4,0.1463
+218,"Ama, gbɛɛ yaga noͻre sagebo maŋ soŋ la ka nyͻvore yɛlɛ tori.","Ama, bɛɛ yaga a nore sagebo mansoŋ la kannyɛvore yɛlɛ tori.",0.5833,0.1277
+221,O maŋ soŋ la ka sagediibu baa.,Oma soŋ la ka sage diibu baare.,0.7143,0.1304
+223,"Yɛ zeŋ gbulo a kuri dɛmmo dẽɛ wuli kyaare vũũ yɛlɛ, nansaalaa soͻloŋ bee zimaale tͻna ka o yine a sazu deme ŋa.",Yɛ zeŋ gbulo a kuri dɛmmo deɛ wuli kyaare vũũ yɛlɛ naŋ saa la a soloŋ bee zimaale tena ka o yi ne a sazu deme ŋa.”,0.3913,0.046
+224,Vɛŋ ka a karembiiri di dɛmɛ wuli a yelzu.,Vɛŋ ka a karembiiri di dɛmɛ wuli a yeli zu.,0.2222,0.0312
+226,Kanne a yelyagesɛgeraa ŋa velaa kyɛ iri a soorebie naŋ tu nͻɛ.,"ka nenee, a yele gyekyɛ gaŋ na velaa kyɛ iri a Sɔrebi naŋ tuŋ neɛ.",0.75,0.32
+228,De bone na fo naŋ nyɛ a dɛmmo poͻ wuli a gbulo mine.,"Dɛ bonne na fo naŋ nyɛ a dɛmmo pɔwuli a su na a gbulo, aa gbulo mine.",0.6154,0.4103
+229,De va-funnoo gͻͻloŋ wuli yelsoŋ kaŋa a sɛgerɛ naŋ teɛre ka a karemazuzeɛ taa.,“Bɛ va funnoo guloŋ wuli yelsoŋ kaŋ a sɛgrɛ naŋ teɛre ka a karema zu zeɛ taa.,0.6429,0.0968
+230,A karemazuzeε la a sakuuri faŋa zaa.,A Karema zu seɛ la a sakuuri faŋ zaa.,0.5714,0.1034
+256,A sɛgesɛgrɛ maŋ de la duoro eŋ a sɛgre poɔ.,A Sɛgetesɛ gerɛŋ maŋ de la duoro eŋ a sɛgre poɔ.,0.2,0.1212
+260,O e la sobiri karembiiri naŋ maŋ nyore bamenne eŋ kannoo a naŋ baŋ o pare.,"Puui la, sobiri karembiiri naŋ maŋ nyɔge bamenne eŋ kannoo a naŋ baŋ o pare,",0.1875,0.1034
+269,"A kannekanna maŋ wuli la o teɛroŋ, tere o nͻ-iraa a kannoo ne kanne baaroo puoriŋ.","A ka nɛkanna maŋ wuli la O teɛroŋ, tɛrɛ O neeraa a kannoo ne ka nɛ baaroo puoriŋ.",0.375,0.125
+271,Nensaalaa lããfeeloŋ ane gyeremɛ yɛlɛ do are la zie maale ka o e forfori.,"Nensaala, lããfeeloŋ ane gyeremɛ yɛlɛ do are la zie maale ka o e fofore.",0.1429,0.0517
+278,A baaloŋ ama koora la noba yaga.,Baaloŋ a ma koɔrɔ la noba yaga.,0.5714,0.12
+284,Pãã wuli fo teɛroŋ kyaare ne lɛ anaŋ seŋ ka a sɛgebo wuobu yɛlɛ da tu.,paalee a naŋ sɛŋ ka a sɛgbo-wobu yɛlɛ da toɔ̃.,0.75,0.463
+288,Gyeremɛ ba waa bone fo naŋ na fere nyɛ.,Yɛre meŋ ba waa bone fo naŋ na fereŋ nyɛ!,0.3333,0.1667
+291,Teɛre ka fo be la karendie poͻ ka neɛzaa puoro o tͻ ne nimimaaroŋ ane neeloŋ.,"Teɛre ka fo be la karendie po, ka neɛzaa puoro o te ne nimimaaroŋ ane neɛloŋ.",0.1875,0.0492
+298,Boŋ yeli la ka a yelzu yeli kyaare ne dɛmmo?,Oŋ yeli la ka a Yeezu yeli kyaare ne dɛmo.,0.3,0.0882
+299,Sɛge a yɛlɛ yelzu naŋ be dabegere boŋyeni ane anaare.,segedɛ yɛlɛ yɛ zu naŋ be dabeɡere boŋyeni ane anaare.,0.5,0.1395
+300,Kyoͻre a sazu dɛmmo ŋa eŋ yɛlɛ anaare poͻ.,Saazudamo ŋa e yɛlɛ anaare poɔ.,0.6667,0.3333
+304,Boŋ tɛɛtɛɛloŋ la be kanne welweli ane peɛroo kpakyagaŋ?,Bondɛtɛloŋ la be kanne wɛlwɛl ane peeroo kpakyagaŋ.,0.4444,0.1739
+306,De fomeŋɛ yelbie wɛle ne maa-eŋɛ kannoo ane kanne gaa tͻͻre kannoo tɛɛtɛɛloŋ.,"di fo meŋɛ yelbie wɛle, ne maa eŋɛ kannoo ane kannee gaa teree kannoo tɛɛtɛɛloŋ.",0.5385,0.0794
+314,Yelbipeelaa la yelbiriŋmaa te naŋ de eŋ yelbiri niŋe bee puori bee sͻga.,Yɛlbi-peelɛ la yelbir-ŋmaa te naŋ de eŋ yelbiri niŋe bee puori bee sega.,0.2308,0.0847
+316,Tagemarre la ka te maŋ de tage yelbie lantaa yεlε poͻ ka o taa tɛgɛ.,Karaha nɔɔ Haloma tage emeɛ a kyɛ na toŋ la kɛrɛ yelbie lantaa yɛlɛ pae. Boɔ naŋ kaa nɔɔ pɛge a yɛɛlɛ gyili hɔnɔɔ daŋ fe ka o taa tɛgɛ.,1.6,1.283
+317,Te maŋ tu la a yelbipeelε zie kyε maale yelbipaala.,Te maŋ tu la a yelbi-peele zie kyɛ maale yelbipaala.,0.2,0.0488
+323,A yelbipeelε ama la puori yelbipeelaa ane niŋe yelbipeelaa.,Ka yelbopeele amaala puori yelbipelaa ane niŋeyelbipelaa.,0.7778,0.12
+326,Puori yelbipeelaa maŋ wa la kyε ko a yelbiri meŋa.,Pɔgrɔ yelbepeelaa maŋ wa la kyɛ ko a yelbiri meŋaa.,0.4,0.15
+328,Niŋe yelbipeelaa la ona naŋ tu yelbiri.,Neŋke yɛlbi-pelaa la ona naŋ tu yelbiri.,0.2857,0.125
+329,"Niŋe –puori yelbipeelaa; a ŋaa,yelbipeelε ayi maŋ gyilli la a yelbinyaga.","Puori yelbipelaa, aŋa yelbipelaa ayi maŋ gyili la a yelbinyaga.",0.4545,0.1695
+331,Ghana kͻkͻɛ yaga zaa ba taa a niŋe-puori yelbipeelaa ŋa.,Ganakekege yaga zaa ba taa a niŋe puori yelbi-pelaa ŋa.,0.5,0.1333
+336,Yelbimaale kpɛglɛ; a kpɛglɛ ama la maŋ maale yelbipaalaa ka o pare e paalaa meŋ.,"Yelbi-maale kpɛge lɛ, a kpɛge lɛ, a ma la, maŋ maale yelbi-paalaa ka o pare e paalaa meŋ.",0.4,0.0312
+339,A kpɛglɛ ŋa maŋ ŋmaa la yelbipaalaa yi ne a yelbinyaga poɔ.,A kpɛglɛ ŋa maŋ ŋmaa la yelbipaalaa yi ne a yelbinyaga poɔ.,0.0,0.0
+342,"A ŋaa eŋ o maŋ kyilli la a yelbiri tontonne yoŋ, kyɛ o ba kyille a yelbiri zage.","Õŋa eŋ, o maŋ kyilli la a yelbii tontonne yoŋ, kyɛ o ba kyilli a yelbii zage.",0.2778,0.082
+343,"Yelbileɛmaale kpɛglɛ ba maŋ kyilli a yelbiri pare zaa, azuiŋ o ba ŋmaara yelbipaala.","Yelbirɛ maale kɛkile ba maŋ kyili a yelbiri pareza, azuiŋ o ba ŋmaara yelbipaala.",0.4286,0.1159
+348,"A yelbiri Saa, pare ba kyilli.","a yelbiri saa, parebakyilli,",0.5,0.0
+349,Saamine e la saa yaga.,"Sami, e la saa yaga!”",0.2,0.1765
+350,Yε zeŋ bayiri a di dεmε kyaareyelbipeelε parεε zaa yε naŋ baŋ.,"Yɛ zeŋ ba yiri a di dɛmɛ kyaare yelbi-peele, parɛɛ zaa yɛ naŋ baŋ.",0.6667,0.14
+353,Kͻkͻre zaa taa la lεnεε yelbipeelε naŋ tona.,Kakere zaa taa laa lɛnɛɛ yelbi-peele naŋ tona.,0.5,0.1944
+354,A yelbipeelε tontonne mine la ama naŋ tu.,A yelbipiili tontonne mine la a ma naŋ toŋ.,0.5,0.1515
+355,A maŋ maale la yelbipaala yi yelbinyaga poͻ.,A maŋ maale la yelbipaala yi yelbinyaga poɔ.,0.125,0.0278
+357,A maŋ kyilli la yelbiri zagre; aseŋ.,"N maa kyilli la yelbiri zagere, a seŋ.",0.7143,0.1071
+359,Yelbipeelε maŋ leεre eroŋ wagre kaŋa eŋ wagre yuo poͻ.,Yelbipeele maŋ leere eroŋ wagere kaŋa eŋ wagere yuo poɔ.,0.5,0.1136
+361,A maŋ kyilli la yelbiri eŋ yageroŋ.,N naŋ kirli la yelbiiri eŋyagroŋ.,0.8571,0.2143
+374,Wuli yelbipeelε a yelbie ama poͻ kyε wuli yelbipeelɛ parεε na a naŋ e.,Wuli yelbi-peele a yelbie ama pokyɛɛ wuli yelbi-peele parɛɛ na a naŋ.,0.4286,0.1429
+375,De yelbipeelε eŋ a yelbie ama poͻ ka leε yuori yelbie bee bigiruu yelbie.,De yelbi-peelɛ eŋ a yelbie a ma po ka lɛ yuori yelbie bee bigiruu yelbie.,0.3571,0.0678
+376,"Gbulo poͻ, de a sazu yelbipeelε parεε ama n maale ne yelbipaala.","Gɛbulopo, de a sazu yelbi-peele pareɛɛ a maŋ maale ne yelbi-paala,",0.5,0.1373
+380,Te maŋ de la tagemarre sεge ne yelkparema bee yellerema.,Te maŋ di la tage mare sɛge ne yeli kparre ma bee yelre ma.,0.9,0.1522
+381,A ŋaa maŋ soŋ la ka te ta puuli yεlɛ.,Anaanaŋ soŋ la ka te ta puuli yɛllɛ.,0.4,0.1481
+384,A yelbie ama be la te bebiri zaa dεmε diibu poͻ.,Ka yelbie a ma be la te bebiri zaa deme diibu poɔ.,0.4545,0.1081
+385,O zanne la azuiŋ o baŋ la boma.,"Ba zɛŋ ne la azim, o baŋ la boma.",0.5,0.2609
+387,Te taa tagemarre parεε yaga Dagaare poͻ.,Te ta a taage maare paalɛɛ yaga dagare poɔ.,1.0,0.2424
+389,"Teseŋ, yuori ne yoe yelbie ane yelgbͻge ane yelgbͻgere.",Te seŋ yuori ne yuori yelbie ane yelgbige ane yelgbigiri.,0.5556,0.1556
+390,Sentaa Sentaa tagemarre naŋ maŋ tͻnne yelbie ane yelŋmaara.,Sɛntaa taage naŋ maŋ tenne yelbie ane yelmaara.,0.5556,0.26
+395,Sentaa tagemarre naŋ maŋ tͻnne Yelgbͻge yeme ane yelgbͻge sommeŋa taa.,Santaaɛ naŋ maŋ teŋ ne yelbɛge yeme ane yelbɛge sommɛ ŋa taa.,0.7273,0.2881
+397,"Ka teneŋ di baare, te na gbiri la.","Ka teneŋ di baare, te na gbiri la.",0.0,0.0
+398,"Ka anaŋ na toͻ, taa emmaaroŋ ne neε zaa.","ka a naŋ na to, taa emmaaroŋ ne neɛzaa.”",0.5556,0.0667
+401,A yuori wulo la a ayi zaa la maŋ tage yelbie bee yεlε lantaa.,"Yɛ yuori wullo la, a ayi zaa la maŋ tage yelbie bee yɛlɛ lantaa.",0.2143,0.1064
+404,"A naa naŋ kpi, n nyε la Naaŋmene.","Ba naa naŋ kpi, N nyɛ la Naaŋmen.",0.375,0.125
+405,A tagemarre ama la maŋ tͻnne yelgbͻge sommeŋa ane yelgbͻge yieme.,A tage Mareyama la maŋ tenne yelgbege somme ŋa ane yelgbege yie meŋ.,0.8182,0.1111
+410,A maŋ soŋ la ka te de yelgbͻgre bee yelŋmaara lantaa.,O maŋ soŋ la ka te de yelgbɛgre bee yelmaara lantaa.,0.2727,0.0714
+415,Begε fẽẽ la be be kyaare tagemarre yεlε maaloo poͻ.,Bɛge fēē la bebe kyaare tage marɛɛ yɛlɛ maaloo poɔ.,0.8,0.2195
+416,"Tagemarre tona la yεmbulo, yel-erre, ane teεroŋ.","E. “Yuin la yɛmbulu, yel-ɛɛre ane tiiroŋ.”",0.7143,0.4474
+417,Te maŋ de la tagemarre pore ne boma (yoe).,kyɛ maŋ dire a tage maare pɔre ne boma gaŋ.,0.7778,0.3548
+418,Yelbie maaloo sobie la lεnεε te naŋ maŋ tu a maale yelbipaala a kͻkͻre poͻ.,"Yelbie maaloo soti yɛ nɛnɛɛ te naŋ maŋ tu a maale yelbipaala, a kekere poɔ.",0.3333,0.1833
+419,Yelbie maaloo sobie e la yaga.,Yelbimaaloo sobie e la yaga.,0.3333,0.0417
+420,Kͻkͻre na baŋ tu la sobie ayi bee ata a maale ne yelbie.,"Koose na ba na lere yɛ, o naŋ kyɛnɛ gbɛre, ba de gyɛnɛ ne kyɛŋ kaŋa naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ na�",11.3077,10.0233
+421,"A sobie mine la fͻͻmaroo, yelbikparema, kyεŋmaabo, pεmmo, puuluu, leεroo, amk.","A sobiimine la femero, yelbikparema, kyɛ maabo, pɛɛmo, puluu, leero, am.",0.8182,0.2131
+424,Wola ka te maŋ pore bompaaba yoe?,Yɔ la ka te maŋ pere bompaaba yoe.,0.4286,0.1154
+426,Aŋ maŋ pore a yoe?,a ŋmaŋ pore a yuo e.,0.8,0.0769
+428,A yelbie naŋ kpare taa na baŋ yi la yelbie zagere tεεtεε poͻ.,A yelbie naŋ kparre taana baŋ yi la yelbie zagere teɛteɛ poɔ.,0.3846,0.125
+431,Yuori+eroŋ na baŋ kpare la taa.,Yuori Terɔn na baŋ kpare la taa.,0.3333,0.125
+436,Bͻ a yelbie na naŋ be a yelbikpara poͻ a wuli a karendie zaa.,Yelbie na naŋ be a yelbi-kparapu a wuli a karendie zaa.,0.2857,0.1064
+441,Te naŋ baŋ yeli ka yelbi-ŋmaara.,tɛ naŋ baŋ yeli ka yelbi-ŋmaara.,0.1667,0.04
+454,O maŋ soŋ la ka te pore yelpaala bee bompaala yoe.,Oma ansoŋ la ka te pɔre yelpaala be bompaala yoe.,0.4545,0.1026
+455,O maŋ soŋ la ka te baŋ yelbie yiziiri.,O maa soŋ la ka te baŋ yelbie yi seteere.,0.3333,0.2414
+459,Wola ka te maŋ e a maale yelbipaala Dagaare poͻ?,Koɔ la koɔ ata naale kara dagare.,1.0,0.5526
+460,Pore yelbipeelε parεε naŋ be Dagaare poͻ.,pore-yelbipɛllɛ parɛɛ naŋ be dagarre poɔ.,0.7143,0.2059
+461,Wuli yelbipeelε anaare Dagaare poͻ.,Wuli yelbipelaa naare da gaare poɔ.,1.0,0.1
+462,Di dεmε kyaare yelbipeelε anaare Dagaare poͻ.,Svɛtu dɛmɛ kyaare yelbipeelɛ anaare dagare.,0.7143,0.3158
+463,Wuli yelbipeelε a yelbie ama poͻ kyε wuli a yelbipeelε parεε na a naŋ e.,Wuli yɛrbipiile a yelbie ama po kyɛ wuli a yɛrbipiile pare na a naŋ e.,0.3333,0.2456
+465,Wuli tagemarre parεε Dagaare poͻ.,puuli tagamare pare dagarre poɔ.,1.0,0.2857
+466,Wɛle a tagemarre parεε na fo naŋ wuli.,Poɔ ne a tagmɛre parɛɛ na fo naŋ wuli.,0.5,0.3
+467,Toͻ soͻmaa eŋ a tagemarre puliŋ a yεlε ama naŋ tu a puliŋ.,Soŋ maa eŋ a tage marɛɛ puliŋ a yɛlle a ma naŋ tu a puliŋ.,0.5385,0.2
+471,Wuli yelbie maaloo sobie parεε ata Dagaare poͻ.,Kuoli yelbie maaloo sobie pareɛ a ta dagaare poɔ.,0.625,0.1282
+473,Bͻ yelbie maaloo sobie parεε na be a sεgere ŋa naŋ tu poͻ.,Yelbie maaloo sobie pare na be a segere ŋa naŋ tu poɔ.,0.3077,0.1333
+474,"Zenε, mansumo e la nimizeε te zannoo poͻ.","Zɛnɛɛ, maŋ somo e la nimizete zannoo poɔ.",0.75,0.2188
+479,"Te pãã maŋ soore la, boŋ kyεre?","Nista ba maŋ soore la, ‘Boŋ kyɛre?’",0.4286,0.3478
+486,Yelŋmaa la yelbiri bee yelbie naŋ kyͻŋ tutaa a taa teɛroŋ yeni kͻkͻre merε poͻ.,Yelŋmaa la yelbiri bee yelbie naŋ kyɛŋ tutaa a taa teɛroŋ yeni kikeremere poɔ.,0.2667,0.0781
+488,Yelgbͻge la yelbie naŋ kyͻŋ tu taa a waa yεlε.,yelgbee naŋ kyɛŋ tutaa a waa yɛlɛ.,0.7,0.3333
+493,De fo peɛrenyɛre pɛre ne fo gbuli deni.,di fo peɛne yɛrepɛre ne fo gbilii deni.,0.5,0.1613
+494,Yelŋmaa la yebiri bee yelbie naŋ kyͻŋ tutaa soŋ a kͻkͻre merε poͻ.,"Yɛnema la, yɛ bebe yelbie naŋ kyɛŋ tu taa soŋ a kɛkere mirɛ poɔ.",0.6923,0.283
+496,A yelbirizu maŋ wuli a yelŋmaa yuori.,a yelbiri zu maa wuli a yelŋmaa yuori.,0.4286,0.0333
+499,Yelŋmaa parɛɛ waa la anuu.,"Yɛre maa parɛɛ waala, anoo.",1.0,0.2381
+503,Bigiruu yelŋmaa ne bigiruu yelbie yelŋmaa waa la tɛɛtɛɛ.,"Bigruu yelmaane, bigruu yelbie yelmaa waa la tɛtɛɛtɛɛ!",0.6667,0.1277
+505,Aseŋ ‘a gane na naŋ dͻgele a tabol zu’.,a seŋ a ganne na naŋ digle a tabol zu.,0.4444,0.1071
+508,Yuori yelŋmaa maŋ taa la yuori yelbiri bee yoleɛrɛ yelbie ka o e a yelbirizu.,"Yuori yelmaa maŋ taa la, yuori yelbiri bee yolɛre yelbie ka o e a yelbiri zu.",0.2667,0.0484
+510,Yelŋmaara mine la tu a puliŋ.,Yɛ maara mine la tu a polloŋ.,0.5,0.2609
+515,Fo na baŋ nyɛ la yebiri yeme ka a are ko yuori yelŋmaa.,"Sona baŋ nyɛ la yɛbiri yɛmɛ kaa, a are ko yuori yelmaa.",0.4615,0.1429
+522,Pegeraa la yelbie bee yelŋmaa naŋ maŋ tere duori kpɛlɛ kyaare yuori yelbiri zu.,We gyɛraa la yelbie bee yelŋmaa naŋ maŋ tere duori kpɛlɛ kyaare yuori yelbiri zu.,0.1429,0.0462
+523,Pegeraa na naŋ maŋ wa kyɛ ko a yelbiri zu la ka te boͻla puori pegeraa.,Pegyiraa naa naŋ maŋ wa kyɛ ko o. A yelbiri zu la ka te bo la puori pigyiraa.,0.375,0.1455
+528,Eroŋ yelŋmaa la yelŋmaa naŋ taa eroŋ yelbiri ka o e a yelbiri zu.,Yɛ male a yelmaa naŋ taa erɛŋ yelbiri ka o e a yelbiri zu.,0.3571,0.2157
+531,Eroŋ yelŋmaa naŋ taa eroŋ yoŋ yelbiri meŋ waa la eroŋ yelŋmaa.,Yɛroŋ yelŋmaa naŋ taa Eroŋ yoŋ yelbiri meŋ waa la Eroŋ yelŋmaa.,0.0833,0.04
+534,Eroŋ meɛroŋ yeldemanne mine naŋ kyaare a sazu eroŋ yelŋmaara ama la VP-VP.,"Aroŋ, mɛroŋ, yeldemane mine naŋ kyaare a sazu Aroŋ yelmaara ama la vi pvp.",0.5385,0.1
+535,"Eroŋ yelŋmaa naŋ taa eroŋ kpɛgelaa, eroŋ ane a parepegeraa.","Yɛrɔŋ yɛlmaa naŋ taa a Yɛrɔŋ pɛge la, Yɛrɔŋ ane a parepegra.",0.8,0.3125
+546,Yelŋmaa eronwuluu yelbiri naŋ waa a yelbiri zu la eronwuluu yelŋmaa.,Yelŋmaa erɛŋ wuli yelbiri naŋ waa a yelbiri zu la erɛŋ wuli yelŋmaa.,0.3636,0.1404
+555,Bigruu yelŋmaa maŋ taa la bigruu yelbiri ka o e a yelbiri zu.,"Bɛruu yelmaa, maŋ taa la bigruu yelbiri ka a yelbiri zu.",0.3077,0.1042
+556,O maŋ pege la yoe yelbie.,"Oŋ maa pɛgɛ la, yoe yelbieri.",0.6667,0.3158
+557,Bigruu yelŋmaa na baŋ taa la bigruu yelbiri yoŋ bee bigruu ne yelbie mine naŋ pege o.,bigru-yelmaa na baŋ kaala bigru-yelbiri yoŋ bee bigru ne yelbie mine naŋ pɛge o.,0.4706,0.0882
+559,O maŋ taa la aroozie yelbiri naŋ waa a yelbiri zu.,o maŋ taa la aroozeɛ yelbiri naŋ waa a yelbiri zu.,0.0909,0.0513
+565,A yelnimizeɛ la a yelbi-zu.,A yɛlponni vie la a yelpoŋ zu.,0.8,0.4762
+568,A sazu yeldemannaa a yuori yelŋmaa la a yelbiri na naŋ soͻ.,"A sazu yaldemanna, a yuori yelŋmaa la a yelbiri na naŋ so,",0.1667,0.0638
+570,A yelbiri-zu a eroŋ yelŋmaa poͻ la gaa.,A yelbiri zu a Eeroŋ yelŋmaa po la gaa.,0.5,0.0667
+576,A maŋ soŋ manne la yεlε pare ka o kyaane velaa.,A maa soŋ manne la yele pare ka o kyaane vela.,0.2727,0.1111
+584,"Te naŋ wa ta,te gaa zeŋ la bɛ-teɛ kaŋa naŋ taa maaroŋ soŋ zaa puliŋ.","Te naŋ wa ta, te gaa zeŋ la bɛteɛ kaŋ naŋ taa maaroŋ soŋ zaa puliŋ.",0.2,0.0196
+588,Ŋmenaa naŋ wa posentaa te da gaa zeŋ la a pɛnne.,Ŋmenaa naŋ wa posentaa te da gaa zẽẽ la a pɛne.,0.1818,0.0811
+590,"A yɛ gbulo poͻ, yɛ wɛle a yelŋmaara parɛɛ eŋ a zagere ama (a.","Yɛ gbulopo, yɛ wɛle a yelmaara parɛɛ eŋ a zagere a makya.”",0.4286,0.1111
+596,A saseɛ poͻ duoro ŋa kyaare la yegbͻgere.,"A saseɛ pɔŋ duoro ŋa kyaare la yɛgbigeri,",0.25,0.1515
+599,Yelgbͻge la yelbie naŋ kyͻŋ tutaa a taa teɛroŋ yeni kyɛ taa erɛ ane eroŋ.,Yɛre ki yelgie naŋ kyɛŋ tutaa a taa teɛroŋ yeni kyɛ taa erɛ ane eroŋ.,0.2667,0.1724
+605,"A sazu yeldemanne ama poͻ, a yɛlɛ kaŋa zaa maŋ taa la erɛ ane eroŋ.",A sazu yeldemanne ama poti. A yɛlɛ kaŋ zaa maŋ taa la erɛ ane eroŋ.,0.1333,0.0588
+608,Yelgbͻgere parɛɛ ayi la be be.,Yɛlbagree parɛɛ ayi la bebe.,0.5,0.2083
+620,Kpɛ entanɛt poͻ a bͻ yelgbͻge-sommeŋa parɛɛ anaare.,"Bentanetpoŋ, a be yeldigre sommi ŋa pareanaare.",1.0,0.3095
+621,De fo yelnyɛre wuli fo tͻ.,Fo yelnyɛrɛ wuli fo te.,0.5,0.2
+622,De manne ne ama naŋ tu a puliŋ .,Dɛ manne ne a maŋ naŋ tu a puliŋ.,0.375,0.087
+623,Yelgbͻge-sommeŋa taa la zagere anaare a yi parebammo eŋɛ.,Yɛre gbie soma ŋa taa la zagere anaare ayi parebamu eŋɛ.,0.7778,0.1915
+628,N saaŋkoma gbiri la zaameŋ tensoŋa.,Nensaŋkoma gbiri la zaa meŋ tensoŋ ŋa.,1.0,0.1379
+630,Dakoraa maŋ gaa la weɛ Yͻdaare zaa.,Dakoraa maŋ gaa la wɛɛyi daare zaa.,0.2857,0.0714
+634,Fo naŋ baŋ pore la sooroo yelbie mine Dagaare poͻ?,Fo naŋ baŋ pore la soro yelbeɛ mine da gaare poɔ.,0.5,0.125
+645,N na gaa la Loho sɛre kyɛ wa.,N na gaala noho sɛrekyɛwaa.,0.75,0.0952
+647,Yelgbͻge-yieme taa la tontonne yaga anaŋ tona yɛlɛ poͻ.,"Yɛl-gɛge-yieme taa la, tontonne yaga a naŋ tona yɛlɛ po.",0.4444,0.0889
+655,Ayͻͻ kanne ne la a gane onaŋ o saa naŋ ko o.,A Eba kaa nene la a gaane onaŋ o saa naŋ ko.,0.5,0.1875
+664,Yuori yelgbͻge naŋ are ko erɛ.,Yiruu yelyeregi naŋ arɛɛ ko-ɛrɛ.,0.8333,0.5
+665,Yuori yelgbͻge naŋ tona erɛ toma ( eterɛ bee ekyaara) aseŋ.,"Yuori yelge naŋ tona erɛ toma, ɛ tere bee ɛ kyaare a seŋ.",0.7,0.1522
+676,De fo nͻ-iraa wuli fo karembi-tͻ.,De fo ne iraa wuli fo karembe te.,0.6667,0.12
+678,"A yɛ gbulo poͻ,manne wuli yelgbͻgere ayi parɛɛ.",ayɛlgbulopo manne wuli yelgbigɛrɛ ayi parɛɛ.,0.625,0.1316
+680,Yɛ zeŋ ayiri a kanne a dɛmmo ŋa naŋ tu a puliŋ.,"Yɛ zeŋ a yiri, a kannee adɛmmɔɔ ŋaa naŋ tu a puliŋ.",0.4167,0.1143
+683,Yɛ di dɛmɛ kyaare ne a yɛ nͻ-irri.,Yɛ di dɛmɛ kyaare ne a yɛ eŋgyiri.,0.125,0.2
+687,"Kͻŋ naŋ da kpɛ ma gaali zuiŋ, N meŋ da la a mui mine ͻͻ.",naŋ da kpɛ ma gaale zuiŋ. N meŋ daare la a mui mine.,0.2667,0.225
+693,Kaa iri a yelgbͻgere zagere fo taaba yeldemannewulli poͻ.,Nɛ Aria yelgbɛgre zagere fo taa ba yeldemannuuri poɔ.,0.8889,0.2083
+697,A karembie kanne la a gane.,Sakarembie kanne la a gane.,0.3333,0.0476
+698,A dͻͻ gbiri la velaa.,Lɛ deŋgbi la velaa.,0.6,0.375
+699,O maŋ wuli yelbie kyɛŋmaabo baare la.,Pɔge maa wuli yelbie kyɛ ŋmaa bu baare la.,0.7143,0.2
+701,O maŋ be la ogibu yelŋmaa bee yɛlɛ baaraa.,Koma bee la ɔgibu-yelŋmaa bee yɛlɛ baaraa.”,0.5556,0.1212
+704,O maŋ wɛle la boma yoe.,Boma wɛle la boma yuo.,0.5,0.2353
+705,"A yoe na baŋ waa la yelbie, yelŋmaara bee yegbͻgere.","A yiri na baŋ waa la yelbie, yelmaara bee yɛ gbegɛrɛ.",0.4,0.1951
+711,"A gan-paale, sͻgelaa na bͻrɛɛ la.","Aganpaale, Sigilɛnabɛrɛɛ la.",0.8333,0.2
+712,"N da la yi-kore, kpoŋ, doͻre kaŋa.","N da la yi kore, kpomm, dori kaŋ.",0.7143,0.2083
+713,"Te maŋ de o la piili ne boma yoe porebo, yeldemanne bee yɛlɛ mannoo.",Te maŋ di o la piili ne boma yoe porobo. Yeldemanne bee yɛlɛ mannoo.,0.1429,0.0377
+717,N taa la gyenno bieu; n na kanne la ka zie te nyaa.,"N taa la Gyanobio, N na kaŋ de la ka zie te nyɛ.",0.3846,0.2162
+718,O maŋ wɛle la boma yoe naŋ kyͻŋ tu taa.,O maa wɛle la boma yoe naŋ kyɛŋ tutaa.,0.4,0.069

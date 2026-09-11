@@ -1,0 +1,201 @@
+sample_id,reference,hypothesis,wer,cer
+13,Vo’osum de la yelebire bɔberԑ n ta’am yi’ira.,osum de la yelebire bɔbere n tari an yiire,0.625,0.2059
+14,Kɔnya’aŋa vo’osum de la kɔnya’ansԑka n ani wuu kaŋa n tari vo’osum la.,onya ŋa vo osum de la kɔnya anseka n nani wuu kaŋa n tare vo osum la,0.7692,0.1132
+17,Kɔnya’aŋa vo’osum me ta’am dԑna vo’osum.,o nyaaŋa voo sum mɛ ta'am de hona voo sum,1.5,0.2
+20,Yelebire ta’am tara vo’osum buyima bii buyi bii vo’osum duma zo’e zo’e.,yelebele taam tara vo'osum buyima bii buyi bii vo'osum duma zo'e zo'e,0.0833,0.037
+36,"Yelesi’a n boi zuon la, yelebire woo de la vo’osum yiŋɔ.",yɛleseya n bo i zoone la yɛlebere woo de la vo'osum yiŋɔ,0.4545,0.1667
+40,Vo’osum buuri buuri duma la ta’am bɔna yima yima basԑba tɔgum puan.,busum buuri buuri duma la ta am bɔna yima yima basegeba tɔgem puan,0.4167,0.1321
+53,Dikԑ fumiŋa yelebԑa gãresԑ pa’alԑ vo’osum n de sԑla.,fumiŋa yelebia garesi yu paa lee vɔ'ɔsum n de siela,0.8889,0.3659
+56,Gãresԑ pa’alԑ Gurenԑ vo’osum buuri buuri duma la.,ŋaa lese gura ni fu bundaboore luma la,0.875,0.6154
+57,Gãresԑ pa’alԑ vo’osum naanԑ la nimmu’urԑ yԑla n de si’a yelebԑa naaŋɔ puan.,naresi paalinsi vuusum naani la ni mu'urisi yila n de si'a yelebia naaŋa poan,0.7692,0.3103
+58,Dikԑ fu lebesego la sɔ̃sԑ pa’alԑ fu tadaana.,fu lebesogo la sɔsɩ̃ɛ paalɩ fu ta daana,0.75,0.2353
+69,Sɔ̃sԑ pa’alԑ vo’osum naanԑ Gurenԑ puan.,bali linforce sum naani gorani puan,0.8333,0.5333
+77,Asunwa’atԑ la Asanvuuŋa yuum de la zɔduma.,a sum wa'a tu bile a sanvoŋa yoom de la zɔduma,1.1429,0.2647
+82,Gee ti Asunwa’atԑ me vibera la kom a yire.,yeti asua ti mumvumbire la kum a yire,0.6667,0.4062
+119,Aduŋɔ pire la báŋá gee Adumbila n ku bàŋà la.,a duŋɔ pirɛ la baŋa gee a dum bila n ku baŋa la,0.6,0.0286
+120,Lɔgerɔ la zo’e gáŋԑ́ mԑ gee Ataŋa gàŋԑ̀ la kuyina loe.,lɔgerɔ la zo'e gaaŋɛ si mɛ him ge a taŋa gaaŋɛ him la ku yina loi,1.0909,0.375
+121,Adumbiire nyԑ́ la buŋa zɔta ti Asakebɔba la ta nyԑ̀ bino lirum amiŋa.,a dumbieri nyi la buŋa zɔta ti a sakɛ bɔba la ta nyii bino lerum a miŋa,0.7692,0.1296
+142,La wan pa’alԑ ya nimmu’urԑ kãalegɔ la akãalԑ zo’e n de sԑla.,la wan paa len ya ni mu wuu le kaalegɔɔ la a kaalen zoe n de seke la,0.9167,0.3111
+159,Yɛla asi’a n ni tε’εla ti la niira sↄsega la puan.,yela a sia n ni teela ti la niira sisega la puan,0.4545,0.1081
+175,Fu me ni kelum ԑԑra la yelebizura kãalegɔ la puan.,fuume ni kelum iridaa la yelebizura kaalegɔ la puan,0.4,0.175
+179,Mina n kãali la ni bɔta ti a bɔkε sεla woo mε suŋa suŋa.,minan kãale la ni bɔta ti a bɔke sɛla woo mɛ suŋa suŋa,0.4286,0.0952
+194,Agabε tole kãalegɔ puan bɔkerε yele ni ka pakε.,a ga bi tole ka a le go pɔ an bɔkarɛ yele ni ka pakɛ,1.2222,0.1842
+200,Kãalԑ sɔsega wa n boi tilum wa.,san a ka wa ombɔti la wa,0.8571,0.625
+201,Pa’alԑ putԑ̃daa la n boi wa n gã tilum wa puan.,bɔ'ɔra la dedaarɛ la m bo yen wa n gani ti lum wa puan,0.8182,0.5294
+228,Dikԑ putԑ̃daa la ti ya pa’alԑ la sɔ̃sԑ pa’alԑ zamesegɔ deo la zã’a.,punaala ti ya pa alinshoo la sɔnsi pa ali zamesigɔ deo la za'a,0.7692,0.3673
+236,Gee kpԑ’ԑnduma yԑla san dagena ma’a?,ti kwinsi n duma yele la san dagum na ma,1.5,0.5
+237,Fua siregemiŋa ka tari vuurԑ.,fu wa sirɛ gee minŋa ka tari vuuri,1.2,0.2083
+245,N wan mɔ ti n tԑ̃ra siregemiŋa yele n vom puan.,n wan mɔti n teŋera sirege meŋa yele n vom poan,0.5455,0.1429
+252,Kãalԑ yelesum wa n boi tilum wa gee lebese sokere duma la n boi bini la.,nyɛ le sum wa n boi tilum wa gee le be see sɔkɛre duma la n boi bini la,0.4375,0.1607
+258,Sukuu zuo daana la de la sukuu la kpe’eŋo dãalum.,sukuu su'o daana la de la sukuu la kpeeŋo daana lo,0.3,0.1579
+288,La kɔ’ɔm dεna la fu san kɔ’ɔm bɔna tiŋa.,la kɔ'ɔm dɛna la fu san kɔ'ɔm bɔna tiŋa,0.1111,0.0345
+293,Kɔrenkɔrum maalegɔ de la nԑresaala imma’asum la girema yele yia daana.,ɔ dunkɔ rumaalego de la nu yuri saala i maa sum la geree ma yele yia daana,1.0,0.2069
+305,Nyaa pa’alԑ se’em ti fum tĩ’isԑ ti yelesum wa wan ta’am nyԑ maalegɔ.,nya'a pa'ali seem ti fum tiisi ti yelesum wa wan ta'am nyii maalegɔ,0.2308,0.098
+308,Dikԑ fumiŋa yelebԑa gãresԑ pa’alԑ ‘putԑ̃daa’ n de sԑla.,fu meŋa yelebia gãana sẽe paale yã putẽe daan dee sẽe la,1.3333,0.4524
+315,Gilema n ani se’em n bala.,gelema ẽ ani siambala,0.8333,0.2632
+322,Dikԑ yelesum duma bunaasi kilese sɔsega la n boi zuon la.,yelihaabu ni ilisibum doma bunaasi kilese sɔsega la ni n boe zoone la,0.6364,0.4348
+324,Pa’alԑ nimmu’urԑ kãalegɔ aŋa buyi ti ya zamesԑ yenkuna wa puan la.,hale n ɛna wʋn nɩ mum hale kɔ'ɔlegɔ ãŋa buyiti ya zamsɛ yen kɔna wa pʋam la,1.1667,0.4423
+327,Beni n basε ti nuurԑ zakerԑ kãalegɔ la zimesegɔ bɔna tɔka tɔka?,bɛni n basɛ ti nuur zakar kaaligo la zimesego bɔna tɔka tɔka,0.5,0.1765
+329,Pa’alԑ nimmu’urԑ kãalegɔ la akãalԑ zo’e n boi yima yima se’em.,pulenɛ leni muuri yinɛ la kɔa len goo la a kan le su'e n boi yima yima se'em,1.0909,0.4894
+348,Tabelesi tuunԑ tɔgum puan de la ba ta’am naam yelebipaala.,tabelɛsi tuun tɔgum puan dela ba taam naam yelebi-paala,0.4,0.0426
+359,Tabelega wan dԑna pooren tabelega yԑsera la ka san bɔna yelebire la tile pɔsega bɔba.,tabelega wan dina pooren tabelega yisera la ka san bɔna yelebire la tile pɔsega bɔba,0.1333,0.0286
+360,Tabelega wan dԑna tiŋasuka tabelega yԑsera la ka san bɔna yelebԑa tila ayi tiŋasuka.,tabelɛ ga wan dina tiŋasum ka tabelɛ ga yisera la ka san bɔna yele bia ti la ayi tiŋasum ka,1.0,0.1
+371,Ŋmԑregԑ fu tadaana zi’an gãresԑ pa’alԑ tabelesi n de sԑla.,mam le yelegefo ta daana zia ŋgaresi yuupaali ta belesi n de siela,1.1,0.3913
+379,Vũurԑ teere tabelesi la maali la yelebipaala yԑsera yelebire tile la puan.,yeri pebelerisi la maali la yelebi-paala yisera yelebiri tirela puan,0.5833,0.2419
+392,Ya pugum diŋε pu se’em la.,yapugum diŋɛ puseem la,0.8333,0.0526
+396,Ba suŋeri la yelebisãasi naaŋɔ yԑsera yelebikԑgesi puan.,ba suŋeri la yelebisaasi naaŋo ye se'era yelebiki yele jese puan,0.875,0.2292
+397,Ba suŋeri tԑԑra la yelebire zԑ’ԑta deo kuyima lɔŋera deo kuyima.,basuŋere ti kuraa la yelebere zii yife ta di yoko yima lɔŋera di yoko yima,1.1818,0.3462
+398,Tabelesi suŋeri la itegɔ yelebisãasi naaŋɔ.,bala le fu see fu san dɛna la,1.3333,0.7568
+399,Tabelesi suŋeri tԑԑra la yelebԑa zԑ’ԑta deo kuyima yԑ’ԑsa kuyima puan.,tabelɛsi suŋɛ de ti wura la yelebuya a ze wuu ista deo ku yima yi we yesa ku yima puan,1.5455,0.3684
+401,Suŋeri tԑԑra la yelebire n de zugeyiŋa yԑ’ԑsa zo’ore yu’urԑ puan.,vra la yele bire n de zuge yiŋa yee yeti yesa zoore yele wuuri yepɔa,1.0909,0.5098
+402,Tabelesi mi’ilum suŋeri mԑ yelebԑa gulesegɔ puan.,tabelɛsi mi ilum suŋeri miŋɛ yelebi ya gulesegɔ puan,0.8571,0.1463
+403,La teeseni la yupa’alesi yelebԑa kina itegɔ yelebԑa puan.,lɛti seni la yuu pa'alesi yelebiya kena itegɔ yelebiya puan,0.7778,0.1915
+425,N wan kiŋԑ gee lebe na.,gee lebe n na,0.6667,0.5294
+428,Naaresi la zo’e mԑ bɔna tɔgum la puan.,nareesi la zoe me bɔna tɔgum la puan,0.25,0.1034
+436,"Kã’asegɔ naarega dikeri yelebԑa la yelebinaaresi lagena taaba dεna (la, bii).",hã sɛgɔ narega dikere yelebi yala yelebi naresi lagena taaba dɛna sɛla bii,0.9091,0.1774
+439,Kã’asegɔ naaresi n dikeri yelebԑa la kulɔɔsi lagena de la (ti).,kãasegɔ naarɛ sɩ n de keere yelebisi ya'a la kulɔɔsi la gana de la tɩ,0.8182,0.2449
+440,Na’ayinԑ la ti mam sakԑ bɔ la.,lati mam sake bɔla,0.8571,0.3636
+441,Kã’asegɔ naaresesi n dikeri itegɔ yelesumbɔka la ita yelesumbɔka lagena taaba.,taansɛgɔ naarɛ sesi n di keri itegɔ yelesum bɔka la ita yelesum bɔka la gena taa o ba,1.2727,0.0909
+442,"Ŋwana wa iŋa, naarega la nyaa ni pa’asԑ la itegɔ yelesumbɔka la puan.",ŋɔna wa ɩŋa naarɩga la nyaa nɩ paasii la ɩ tɩgɔ yelesum bɔka la pɔi,0.7692,0.2222
+445,Atampɔka dugeri mԑ gee ti Akolepɔka me pԑԑra laasi.,a tampɔka du geri ŋisti akɔlɛ pɔka mi pe ira laasi,1.1111,0.2381
+449,Vom dagi naana gee tu wan tiregԑ.,olumba dagena na gee tu wan terege,0.5714,0.3462
+451,Gulesԑ naaresi buuri buuri duma paԑ batã biŋe gee dikԑ ba gulesԑ yelesum duma.,gulesesi naaresi buuri buuri duma pali ba tambiŋe gee de ki ba gulese yelesum duma,0.5,0.1562
+455,Ba gãreseri pa’ala la sԑla sɔi bii lilegera sԑla n ta’asԑ la.,ba garesere pa'ala la sinhi la sɔi bii lelegera sinhi la n ta a see la,0.75,0.2766
+456,Ba suŋeri dikera la kulɔɔsi bii yelesum naarԑ pa’asera buyima puan.,ba suŋeri dikera la kulosi bii yelesum naari pa asera buyima puan,0.3636,0.0545
+458,Ba suŋeri pa’ala la sԑla n boi yima yima.,ba seŋarɛ paa la la sɛsɛ la n boe yima yima,0.6667,0.2258
+462,Nimmu’urԑ wara duma fĩi wa n boi naaresi gulesegɔ puan.,yemuurebi wara duma fiin wa n boe naari si gulesegɔ puan,0.5,0.2273
+465,Naaresi dikeri la putĩ’ira la itegɔ bii tuuma lagena taaba.,nari si dikɛ la puti ti hira la i tegɔ bii tuuma la ge na taaba,1.1,0.1875
+467,Tu tari naaresi gulesera la yԑla kãalegɔ puan.,tu tari naarisi gulesera la yigela kãalegɔ poan,0.375,0.1316
+468,"Naaresi gulesegɔ puan, mɔ gee basԑ ti yelesum la luga la zã’a sakԑ bɔ taaba.",nari si pulum sɛge fu puan mɔ gee basi ti yelesum la luga la zaa sake bɔtaa ba,0.6667,0.2034
+471,Yelebԑa naaŋɔ sɔa buuri buuri la zo’e mԑ ti tɔgum dɔla bini naana yelebipaala.,ya lɛb yaa naa ŋɔ sɔb buuri buuri la zoe mɛ ti tɔgum dɔla bini naa na yele bipaala,0.7857,0.0952
+477,Beni yu’ura ti yamam tara bɔ’ɔra sԑla n de paalega ya sɔ’ɔlum la puan (m.w.,ba ni yuura de ya mantara bɔɔra see la n de paalega ya sɔɔlem la puan,0.6,0.1636
+478,Ani n sigeri bumbama la yu’ura?,a ninsigere bunbama la yuura,0.6667,0.0833
+490,Ee yelebԑa n ze a ma’a yelebita’ama puan gee dikԑ a sɔ̃sԑ pa’alԑ zamesegɔ deo la.,yelebiha n zi'a maa yelebitaama puan gee diki a sɔsi n paa lee zamesegɔ deo la,0.5625,0.1639
+498,Yelebise’ere ti ba peŋe la yu’urԑ de la yelebipeŋere.,yelebisɛ'ɛre ti ba peŋe la yuure dela yelebipeŋere,0.4444,0.0714
+500,"Magesԑ wuu lati, bɔlepi, geti, fooni.",mulati bɔlipi geti fooni,0.6667,0.2857
+507,La suŋeri la tɔgum la ti bu nyԑta maalegɔ yԑsera bu yelebԑa pa’asegɔ puan.,la suŋeri la tɔgum la ti bu nyita malegɔ yesera bu yelebia paasegɔ pɔiŋ,0.3571,0.1186
+508,La suŋeri la tɔgum la ti bu paara zi’an woo.,la suŋeri la togum la ti bu paara zian woo,0.1,0.0303
+510,La suŋeri la tɔgum zamesegɔ.,la tɔgum zamesegɔ,0.4,0.3478
+511,La suŋeri mԑ ti tu wan ta’am tũ yelebԑa nama baŋԑ a ze’ele zi’an na.,tetewantaam tu yelebia nama baŋee a zeele zaana,0.7333,0.36
+516,Pa’alԑ tabelesi n de sԑla.,tabelɛ sɩ decee la,1.0,0.55
+517,Gulesԑ tabelesi buuri buuri la n boi Gurenԑ tɔgum puan la biŋe.,gulesesi tabelesi buuri buuri la n boi guurani tɔgum poan la beŋɛ,0.3333,0.1765
+519,Sɔ̃sԑ pa’alԑ tabelesi tuuma n de si’a anaasi.,fa alitabilisi tuuma n de si anaasi,0.5,0.2647
+521,Sɔ̃sԑ pa’alԑ tabelesi tuuma anaasi.,ba'ali ta bilesi tuuma anaasi,0.6,0.25
+522,Gãresԑ pa’alԑ naaresi n de sԑla.,hu,1.0,1.0
+523,Pa’alԑ Gurenԑ naaresi buuri buuri la.,gurɛ anten naaresi buuri buuri la,0.3333,0.3
+524,Pa’alԑ naaresi buuri buuri la ti ya gulesԑ la n boi yima yima se’em.,mam we yim m naari si buuribuuri la ti ya gu le si la m bɔ yima yima sie,0.9286,0.2885
+527,Ataŋa boi bini kãala mԑ gee ti Aduŋɔ dugera.,a taŋa ŋwana bo de bini kaala a nyɔ gɛɛ ti a duŋɔ du gera,1.4444,0.4
+528,Sɔ’ɔŋa n zoi doose kalam ti tumam ku bɔna bini vũula.,sɔ'ɔŋa n zoi doose kalam ti tumam ku bɔna bini vuum la,0.1818,0.0488
+529,Ania la Atiŋa de la zɔtɔ.,ani a la a siŋa de la a za tɔ,1.1667,0.1579
+531,Mam wan kule gee dagi zina.,mam wan kule gee dagi zina,0.0,0.0
+532,Fu boti la sagebɔ bii mui?,boti la sagebɔ bii mui,0.1667,0.1
+533,Gãresԑ pa’alԑ yelebire naaŋɔ sɔa.,ba paga yeleboebire naaŋo so,1.0,0.5556
+534,Pa’alԑ yelebire naaŋɔ sɔa atã Gurenԑ puan.,amam zan tak go ani,1.0,0.8529
+535,Gãresԑ pa’alԑ yelebire naaŋɔ sɔa buuri buuri atã Gurenԑ puan.,ŋari si pa alisi yelebere naa ŋɔ sɔa buuri buuri a taa gora ni puan,1.1,0.26
+536,Gãresԑ pa’alԑ yelebire naaŋɔ sɔa yelesuma n paԑ atã bii gaŋε bala Gurenԑ puan.,ŋaresum paalisi yelebire naaŋɔ sɔa yelesuma n paa a taambi gaŋɛ bala goren puan,0.5,0.2381
+539,"Zina, tԑkenɔlegi ba’am dԑna la nimmu’urԑ gɔŋɔ zamesegɔ yԑla puan.",ti o ke nɔlege ba am duuna la nimmu urunsi gɔŋɔ zamesegɔ yinɛ la puan,1.1,0.2885
+544,"Sokere la de la, beni n nyaa tagelԑ?",sɔnkre la dela beni nyaa taalɛ,0.625,0.2593
+551,Ya me wan kelum sɔ̃sԑ pa’alԑ du’usi n de sԑla.,yen mi wan kelum sɔsi paaliŋ du'usi n de segela,0.5,0.2727
+555,Yelebinaarega de la yelebԑa n tigese taaba tuna tuunԑ diyima tɔgum puan.,yelebinary ga dela yelebuya n tige si taaba tuna tuun de yima tɔgum puan,0.75,0.1167
+559,"Magesԑ wuu lɔgerɔ, budaa, yelesunԑ, bia la.",lɔgerɔ buda yelesuyin bia la,0.5714,0.3939
+560,Kulɔɔsi de la yelebεa n tigese naε taaba dεna yelesum.,kulu wasi dela yele bia n tige se na yetaaba den na yele sum,1.3,0.1818
+566,Yelebinaarԑ de la yelebԑa tigere n tuni tuunԑ n tari vũurԑ diyima yelesum puan.,yelebinaarɛ de la yelebuse ya ti gere n tuni tuun n tari vuuri diyima yelesumpɔan,0.6429,0.1385
+568,Yelebizuo la n pa’ali yelebinaarԑ la buuri n de sԑka.,yelebizuo la m paali yelebinaari la buuri n de sika,0.3,0.0714
+573,Yu’urԑ yelebinaarԑ de la yelebinaarԑ n tari yu’urԑ bii yusɔɔseŋa ti la dԑna di yelebizuo.,yele binaari di la la yele binaariki n tari yuuri bii yuusɔsi ŋa ti la de'ena di yele bizo,0.8,0.2639
+574,Yu’urԑ yelebinaaresi naanԑ la boi la yima yima.,yelebinaarɛ sinaa le la boi la yima yima,0.375,0.2105
+575,Yu’urԑ yelebinaarԑ ta’am dԑna yu’urԑ diyima bii yusɔɔseŋa kayima.,yelebinaarɛ see ta am de na yuuri zi' de yima bii yuusɔɔse na ka yima,1.5556,0.3019
+580,Yusɔɔseŋa me ta’am tuna yu’urԑ yelebinaarԑ tuunԑ.,yusɔsi ŋa me ta am tuna yuuri liyele binaari tuun,1.1429,0.175
+581,Yu’urԑ yelebinaarԑ ta’am le maam gulesԑ yalegԑ yu’urԑ yelebinaarԑ.,yelebinaarɛ se taam le maam gulesi yalege yuuri zi yelebinaarɛ,0.7778,0.2593
+590,Tu yi’iri sina wa la nԑŋa pa’alesi.,ti wuu yi'iri si na waa la n nyiŋa paalɛ si,1.2857,0.3077
+591,Magesε wuu pooren pa’alesi wa.,ma gyese wuu pooren paalese wa,0.6,0.125
+594,Yelebinaarԑ la zã’a de la yu’urԑ yelebinaarԑ.,yelebinaale waa zaande la yuuri yelebinaare,0.8571,0.2222
+595,Bɔlega sɔ’ɔlum sukuu kɔma la mi la gɔŋɔ paa.,bɔlega sɔɔlum soku kɔma la mi la gɔŋɔ paa,0.1111,0.0588
+604,Pugela la kom n duni.,wulela la kum dunia,0.8,0.3125
+613,"Tigera puan, gulesԑ ya yu’urԑ yelebinaaresi sitã.",pigera puan gu lesi yeyi yuuri yelebinaarisi sitaan,1.0,0.25
+620,Itegɔ yelebinaarԑ ta’am tara itegɔ yelebizuo la miŋa n de itegɔ yelebinaarԑ yɔŋa la.,n ti gɔ yɛlebinaari taam taara i ti gɔ yɛlebizuo la miŋa n dɛna i ti gɔ yɛlebinaari yɔŋa la,1.0,0.1884
+622,Itegɔ yelebinaarԑ naanԑ la n boi zuon la de la IYN-IYN.,n ti gɔ yelebinaarɛ naani la n boi zuon la de la iin iin,0.6364,0.1395
+623,"Itegɔ yelebinaarԑ tari la itegɔ suŋereba, itegɔ la miŋa la a kɔmpulemnti duma.",a ti gɔ yele binaarɛ tare la i ti gɔ suŋerɛ ba i ti gɔ la miŋa la a kɔm pulem ti duma,1.3077,0.125
+631,"Pu yamisi iŋε tigera puan, la ya gulesԑ itegɔ yelebinaaresi sitã.",puu ya'am mi si iŋɛ ti ge ra pɔan la ya'a gulesi i tegɔɔ yele binaarɛ si sita,1.5455,0.1887
+635,Yelebinaarε kana tari la itegɔ pa’alega ti ka dԑna yelebizuo.,yelebinaare kana tare la iti gɔ paa lega ti ka dio na yelebizuo,0.8,0.1
+647,Yelebinaarԑ buuri n tari yupa’alega ti ka dԑna yelebizuo.,yele yuunari gba buuri n tari yupaaligɛ ti ka diina na yele di zoo,1.0,0.3404
+650,Gurenԑ puan yupa’alesi la ni lagum la yelebizuo la.,kɔ'ɔm sum ba tim na bea pii de nɛntɔ wan tam paa na na o de nɔ kɔ'ɔm ama bɔna ba mam ama bɛɛ ba ko de nɔ yɛ doko puan ya mpɔ de na mpɔ mum o tumi a ni tete,4.5556,2.2683
+654,"Yelebinaarԑ n tari nԑŋa dɔlesi, nԑŋa dɔlesega la namesa la pa’alesi.",yelebinaali n tari niŋa dɔlesi niŋa dɔlesi ga la namesa la paalesi,0.4545,0.0909
+664,A kiŋԑ la tiŋa puan.,kelum ɛ la teŋa pʋam,0.8,0.6
+665,"Yelesum wa boi zuon la, yu’urԑ yelebinaarԑ la sobe mԑ.",yelesum wa boi zuon la yuuri sɛ̃ɛ yele binaari la sobe mi,0.5,0.1429
+666,Kiŋԑ n de itegɔ la yelebizuo itegɔ yelebinaarԑ la puan.,m de itegɔ la yele bizoo itegɔ yele binaarɛ la puan,0.6,0.1556
+669,Yelebinaaresi tari bɔ’ɔra la putĩ’ira.,yɛlebinaarisi tari bɔ'ɔra la potin yira,0.6,0.1935
+670,Ba kelum dԑna la lɔgeseko n suŋeri sɔ̃sega la gulesegɔ suŋa suŋa.,ba kɛ̃ lum deena la lɔgesego n suŋɛ risɔ̃ɔsega la kulesego suŋa suŋa,0.5833,0.1538
+671,Ba tari ba gulesera la sɔ̃sega n tari vũurԑ.,ba tari ba gulezera la sɔsega n tari vuuri,0.2222,0.0882
+672,Ba tuni la nimmu’urԑ tuunԑ n baseri ti yԑla gã’ata pԑsega peelemi.,ba tuni la nimu'urɛ si tune wi n baseri ti yuun la gaata piusegɔ peele mi,0.8333,0.2885
+676,Buԑ beene pa’alԑ yelebinaarԑ woo yelebizuo ti ya sɔ̃sԑ pa’alԑ la puan.,beni pa'ali yele binaari woo yelebiso ti yasuasi pa'ali la puan,0.6667,0.2364
+697,"Tigera puan, tari ya yelebinaaresi buuri buuri yima yima la (a.",tigera poan tari ya yelebinaarɛ si buuri buuri ayima ayima la,0.5455,0.1
+700,Dikԑ ya lebesego duma la sɔ̃sԑ pa’alԑ zamesegɔ deo la ti ya sɔ̃sԑ a yele.,yele yesegum duma la sɔsɛ n paale yu zãmsegɔ deo la ti ya sɔsɛ n a yele,0.6667,0.3091
+704,Kãalԑ kulɔɔsi duma linki wa puan gee sɔ̃sԑ pa’alԑ taaba kulɔɔsi n de sԑla.,kalebrance demalinki wa puan gee sɔsen pa'alen ta'am ba pulɔsi n de siila,0.7143,0.3276
+705,Kulɔɔsi de la yelebεa n tigese naε taaba tuna tara ita la itegɔ yelebԑa.,gloside la yelebia n tige see naa e taaba tun na tara ita la itegɔ yelebia,0.7143,0.1724
+715,Ania boi la va’ami kɔɔra.,ania boi la vam me kɔɔra,0.4,0.1053
+716,Yelesum duma la boi zuon la woo tari la ita la itegɔ yelebinaarԑ.,yelesum duma la boi zuun la wuu tari la ita la ita gɔ yelebinaarɛ,0.3846,0.0962
+719,Tu tari la kulɔɔsi buuri bayi mɔpi.,tu tari la ko lɔ'ɔsi buuri ba yi mɔpi,0.5714,0.0357
+733,Ee intanԑti puan bisԑ kulɔɔsi buuri buuri banaasi la.,internet ti puan bisɛ see kulɔsi buuri buuri banaasi la,0.5556,0.25
+736,Kulɔɔsi duma la tari la buuri buuri bunaasi yԑsera ba vɔ̃a gãresegɔ puan.,kɔlɔsi duri malatari la buuri buuri bunaasi yɛsera ba vɔa gani segɔpɔa,0.5385,0.1695
+741,Zaam yu’uŋɔ Atiama zaam gĩse ya.,zaam yu'uŋɔ a tiama zaam gise ya,0.5,0.04
+742,Mam ma dugeri saŋa woo mԑ.,mam mam dugeri saŋa woo mi,0.3333,0.1
+745,Pεregerε yelesum ka tari ita yelebire.,tɛregere yele sum ka tari ita yelebree,0.6667,0.1562
+747,Yamam wan ta’am gulesԑ sokere yelebԑa asi’a Gurenԑ puan?,yaama muan taam gulesɔ kere yelebiya a se ya gurani puan,1.0,0.2444
+749,Ani lagefɔ n de buna?,a nyi lagefɔ n de buna,0.4,0.0625
+750,Beni n sɔi ti ba kiŋԑ?,beni swayiti baakiŋ,0.8333,0.375
+751,Saŋa la de la ŋwani?,saŋa la de la ŋwani,0.0,0.0
+761,"Ataŋa n kiŋԑ ni bini la, a kiŋε la va’ami.",a taŋa kiŋɛ bɛ ki teele ta ya na kee la baa mɛ,1.2,0.6
+762,Adolilalesa kulɔɔsi duma la n bala buԑ bɔna yelesum duma la puan la.,a doli la yisa kulɔsi duma la n bala buŋɛ bɔna yele sum duma la puan la,0.6154,0.0909
+765,Basԑ ti tu nyaa sɔ̃sԑ buuri buuri duma la yele.,tu nyaa sɔsi buuri buuri duma la yele,0.3,0.1944
+776,Pɔge-sԑka n koosi kaam la wa’am na.,tɔgesɩ ka n koosi kaam la waam na,0.2857,0.0769
+784,Tu nyaa nyԑ tagepigesi la bɔregԑ la.,tɩ cewa ta ge de tɩ la bɔ'ɔra kɩ la,1.1429,0.5517
+785,Itegɔ pa’alega kulɔɔsi (An adverbial clause) de la yelebɔka n tuni itegɔ tuunԑ.,a tɛkɔ paa a le ga kuluasi a naaduarɛbia kola de la yelebɔka n tuni e tɛgɔ toone,1.0,0.3175
+799,"Mam n di mui la ba’asԑ la, mam iŋԑ la ŋwana kalam lebe miitin la puan.",mama n tara le lebe mitim la puan,0.75,0.5962
+800,Miitin la yue paԑ gogo muna ayi.,meeting la yue paa googo mum na ayi,0.7143,0.24
+811,Dãalega n boi yelesum ki’ileŋa pa’ala bu ba’asegɔ.,naaligam bo yelesum kii leŋa paala bu baasɛ gɔ,0.875,0.1538
+813,Ateke ze’ele gu’usega pa’ali la yelesum ba’asegɔ.,ateke zɛɛ le gusiga pa'ali la yelesum ba'asegɔ,0.4286,0.1053
+814,Sukuu bia la kãalԑ la gɔŋɔ.,sukuubia la kaalɛ la gɔŋɔ,0.5,0.0952
+815,Puleŋa la gĩse la ŋwana suŋa suŋa.,kuleŋa la gisi la ŋwana suŋa suŋa,0.2857,0.1111
+816,La me kelum pa’ala la yelebigito gulesegɔ.,lamikelum pa a la la yelebigi to gulesegɔ,0.8571,0.0294
+817,Ba ni dikԑ e iŋε la yelesum ti fu tɔgesԑ gulesԑ ki’ileŋan.,ni de kolum du yee iŋɛ la yelesum ti fu tɔgesi gulesi ki yileŋan,0.8333,0.3333
+819,"Tu tari ina yԑlesera la yԑla n de wuu yelebԑa, yelebinaaresi, bii kulɔɔsi duma.",tu tari ina yele sera la yela n de wuu yelebia yelebinaarɛ si bii ku lɔgesi duma,0.5714,0.0952
+820,"Mam kiŋԑ lɔgerɔ koosego zi’an la ti n ta da la ki’ibɔ, soosoo, bɔgetԑ, la papa’aha.",mam keŋe sɔɔ keso go zɛan la ti n ta da la kii bɔ soosoo bɔgeti ee la papaaha,0.5625,0.2131
+821,Tu tari yԑlesera la dabesa.,tu tari yegele sera la dabisa,0.6,0.1818
+823,Tu tari yԑlesera la yupa’alesi n gãreseri yu’urԑ.,tu tari yegelesera la yupa alesi n gareseri yuuri,0.625,0.1282
+824,"Gɔmpaalega la, n de pԑԑlega la bɔregԑ mԑ.",gumpaalega la n de pi o si'ele yaa la bɔrege mɛ,0.875,0.3125
+825,Kɔlɔm dãalega ni pa’ala la yԑla ti fu yeti fu kãalԑ.,fu fu lɔm daalega ni pa'ala la yele wula ti fu yeti fu kaalen,0.6364,0.325
+828,Seemi kɔlɔm tari yԑlesera la kulɔɔsi bayi n wan ta’am ze’ele ba ma’a.,simikɔlɔm tari yɛ lesera la kulɔsi bayi n wan ta'am zeele bam a,0.5385,0.0943
+829,"Mam tari la tԑԑsi beere, mam yeti n kãalԑ la bala yilegԑ beere.",mam tari la teewisi beere mam yeti n kaani la bala yilege beere,0.2308,0.1633
+837,Koteesi dãalesi pa’alԑ ti nԑra n yele sԑla ti fu me tɔgesa yԑta eŋa n yele se’em la nuu.,ku tee si daan le si paalesi ti nira n yele si wuu la ti fu me tɔgɛ sa yeta e ŋa n yele see mɛ la nuu,0.9474,0.209
+838,"Sukuu zuudaana la yeti, “A ka wa’am kalam ka boi sukuu wa”.",suku zudaana la yeti a ka wa'am kalam ka boi suku wa,0.25,0.0698
+839,"Tumam dɔgereba ka’am tumam yeti, “da gã’arԑ kom”.",tʋma dɔgrɩ ba kãam tʋma yeti,1.0,0.4722
+840,Koteesi dãalesi me kelum tara pa’ala la zuto bii zubɔgesi.,ko teesi daan le si mɛ kelum tara paala la zu to bii zu bɔgesi,1.0,0.0638
+841,"Mam kãalԑ la gɔŋɔ n de, “la dagi Yaabeduma yele”.",bankangera gɔŋɔ n de la dagi ya'a biduma yele,0.5,0.2222
+842,Gɔŋɔ la “alakpigera daaŋɔ yԑla” wan yese peelemi na.,gɔŋɔ la a la kpegera daaŋɔ yela wan yele see peele mi na,0.8889,0.122
+848,Wambɔgesi ni suŋԑ pa’ala la sԑla ti fu pugum yele yia la.,wan bɔgɛ siini suŋa pa ala la siirɔ la ti fu pugum yele yia la,0.6667,0.1818
+849,"Aduŋɔ ugeri la dũsi (nuusi, buusi, piisi, kiini, nii, kurekuri).",a duŋɔ ugere la dusi nuusi boosi fige nin hini nii kurekuri,0.8,0.2128
+851,De’eŋo la de la beere (dagi zina).,le eŋo la dela beereesh da ge zina,0.8571,0.2083
+853,Pa’ala la yu’urԑ n de Baaba (Sɔyaaba) la wa’am ni kalam zina.,ara la a yuure nebeleon de baa basɛ sɔ yaa bana la waam ni kalam zina,0.75,0.3409
+854,Liiba la (Apana la Apambila) yeti ba wa’am la kalam zina.,yee bala a panala a pam bela yeti ba wa am la kalam zena,0.9091,0.1163
+856,Dãali kana ta’am ze’ele bɔ du’usi siyi bii du’usega la girego yelesum puan.,naalɛ kana ta amɛ ze'ele gbɔ du'usi siyi bii du'usi ga gerɛgo yelesum poan,0.6154,0.1897
+860,Yelebԑa ŋwɔsum bԑ̃gelega de la dibega n delege zԑ’ԑta bɔ’ɔra naarega n de ‘bii’.,yele biya ŋwɔ som bingelega de la de bega n de la ge zii yiita bɔ'ɔra nari ga n de bii n,1.0714,0.2459
+862,A ze’eti bɔ’ɔra la naarega.,gazeti bɔrala nari ga,1.0,0.25
+864,La tari yԑlesera la yelesi’a n wan ta’am ze’ele bɔ taaba.,la tari yegelesera la yele se yaa n wan ta amose zeele bɔtaa ba,0.7273,0.2093
+866,Tu tari la gulesera la deti duma.,tu tari la gulezera la de ti duma,0.4286,0.0385
+868,Dãalekana ni ki’ilena la yelesum n de pakerԑ bii n iŋԑ fu ligebi.,naalɛ kana ni ke yele na la yelesum n de pakɛ de bii n iŋɛ foo le gɛ,0.8462,0.3137
+871,Sokere gu’usega ni ki’ilena la yelesum n de sokere yelesum.,sokeri gusiga ni kiilena la yelesum n de sokeri yelesum,0.3,0.0851
+873,Sukuu kɔma balԑ n wa’am?,sukuu kɔ'ɔm man bala n wa,0.8,0.3333
+885,La suŋeri ti tu ta’am yi’ira la yelebԑa suŋa suŋa.,la suŋeri ti tu ta'am yi'ira la yelebe ya suŋa suŋa,0.2,0.0526
+887,Dikԑ ya lebesego la makԑ la basԑba lebesego.,yaa lebesogo la makee la ba suu ba lebesogo,1.0,0.3056
+898,Pa’alԑ ya sԑla n ta’asԑ ti yamam loe du’usi dãalesisi la.,ya'a se'em la n ta'ase mam n ta se'em ti yamam loe duusi daalɛ sesela,0.9091,0.4651
+908,Dikԑ fumiŋa yelebԑa gãresԑ pa’alԑ yelebinaarԑ n de sԑla.,fu miŋa yele bia gaani si paa li yele binaari n de siiu la,1.3333,0.3261
+912,Dikԑ fumiŋa yelebԑa gãresԑ pa’alԑ kulɔɔsi n de sԑla.,fumiŋa yelebia gaani see paale ko lɔgesi n de see la,1.0,0.4048
+913,Gulesԑ kulɔɔsi buuri buuri bayi la biŋe gee gãresԑ pa’alԑ ba ŋwana gi’i.,wunsi buribuuri ba yilebiŋe gee garesi paale ba ŋwana gee,0.7692,0.2982
+918,Pa’alԑ itegɔ pa’alega kulɔɔsi duma yelesum la puan gee gulesԑ ba biŋe.,itegopaalega kulɔsi duma yelesum la puan gee gulesi ba biŋɛ,0.5,0.1607
+926,Gulesԑ du’usi dãalesi sinuu Gurenԑ puan biŋe.,gu lesai doose dãalesisinu gɔ rɛi puan biŋe,0.8571,0.2703
+932,Yenkuna wa pa’ali zamesera la putĩ’irԑ gɔŋɔ gulesegɔ la leregere n de sԑla.,yuunkuna wa paale zamesera la putii'irɛ gɔŋɔ gulesegɔ la lɛregere n de si'ira,0.3846,0.1667
+948,Asɔsε bo gɔŋɔ de la guleseseko ti fu bɔ’ɔra fu putĩ’irԑ bii yelesum dɔla gulesegɔ puan.,a sɔ si bogɔ ŋɔ de la gulesese ko ti fu bɔ'ɔra fu putiiri bii yelesum dɔ la gulesegɔ puan,0.625,0.0435
+949,Leregere de la fu dikeri vuurԑ zԑ’ԑta tɔgum busebo puan yԑ’ԑsa busebo puan.,le begere de la fu de kɛrevuuru ziisi ta tɔgum busebo bo pɔaani yɛɛ isa busebo bo pɔaani,0.9231,0.3667
+953,Gɔnsuŋɔ gulesegɔ ni tara la putεsuma zo’e zo’e gulesa.,gɔnsuŋɔ gulesegɔ ni tara la putɛsuma zoe zoe gulesa,0.1111,0.0233
+954,Gɔnguleseto buuri buuri tunaasi n boi.,gɔnguleseto buuri buuri tuna sinbo,0.5,0.0625
+961,Mam buuri kĩ’iri la yipika puan.,mam buuri kinkiiri la yipikapɔa,0.5,0.24

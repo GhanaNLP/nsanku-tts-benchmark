@@ -1,0 +1,125 @@
+{
+  "_comment": "Text domains each language is benchmarked on. A domain is the kind of text the TTS models are asked to read; scores are reported per domain and averaged, so a model good at one register is not credited for another. 'education' is the textbook/prose in ghanaopenai/ghana-sentences. More domains will be added.",
+  "languages": {
+    "ada": {
+      "language": "Dangme",
+      "categories": [
+        {
+          "category": "education",
+          "source": "ghanaopenai/ghana-sentences",
+          "subset": "ada"
+        }
+      ]
+    },
+    "dag": {
+      "language": "Dagbani",
+      "categories": [
+        {
+          "category": "education",
+          "source": "ghanaopenai/ghana-sentences",
+          "subset": "dag"
+        }
+      ]
+    },
+    "dga": {
+      "language": "Dagaare",
+      "categories": [
+        {
+          "category": "education",
+          "source": "ghanaopenai/ghana-sentences",
+          "subset": "dga"
+        }
+      ]
+    },
+    "ewe": {
+      "language": "Ewe",
+      "categories": [
+        {
+          "category": "education",
+          "source": "ghanaopenai/ghana-sentences",
+          "subset": "ewe"
+        }
+      ]
+    },
+    "fat": {
+      "language": "Fante",
+      "categories": [
+        {
+          "category": "education",
+          "source": "ghanaopenai/ghana-sentences",
+          "subset": "fat"
+        }
+      ]
+    },
+    "gaa": {
+      "language": "Ga",
+      "categories": [
+        {
+          "category": "education",
+          "source": "ghanaopenai/ghana-sentences",
+          "subset": "gaa"
+        }
+      ]
+    },
+    "gjn": {
+      "language": "Gonja",
+      "categories": [
+        {
+          "category": "education",
+          "source": "ghanaopenai/ghana-sentences",
+          "subset": "gjn"
+        }
+      ]
+    },
+    "gur": {
+      "language": "Gurene",
+      "categories": [
+        {
+          "category": "education",
+          "source": "ghanaopenai/ghana-sentences",
+          "subset": "gur"
+        }
+      ]
+    },
+    "nzi": {
+      "language": "Nzema",
+      "categories": [
+        {
+          "category": "education",
+          "source": "ghanaopenai/ghana-sentences",
+          "subset": "nzi"
+        }
+      ]
+    },
+    "twi_akuapem": {
+      "language": "Akuapem Twi",
+      "categories": [
+        {
+          "category": "education",
+          "source": "ghanaopenai/ghana-sentences",
+          "subset": "twi-aku"
+        }
+      ]
+    },
+    "twi_asante": {
+      "language": "Asante Twi",
+      "categories": [
+        {
+          "category": "education",
+          "source": "ghanaopenai/ghana-sentences",
+          "subset": "twi-asa"
+        }
+      ]
+    },
+    "xsm": {
+      "language": "Kasem",
+      "categories": [
+        {
+          "category": "education",
+          "source": "ghanaopenai/ghana-sentences",
+          "subset": "xsm"
+        }
+      ]
+    }
+  }
+}

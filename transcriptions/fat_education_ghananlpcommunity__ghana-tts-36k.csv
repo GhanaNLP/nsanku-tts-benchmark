@@ -1,0 +1,201 @@
+sample_id,reference,hypothesis,wer,cer
+13,Tum pɛnsapɛnsa abosoomdzin ne mfaso mu.,"Tom pansapansa, abosoom gye ne mfaso mu.",0.6667,0.2121
+14,Tum pɛnsapɛnsa bragor ne mfaso na no bo a ɔsom mu.,Ɔtom pɛnsapɛnsa brago ne mfaso na no bɔ a ɔsom mu.,0.2727,0.1026
+15,Tum da abadzinto ho nyimdzee edzi.,Ɔsow me no po abɛgye tse hɔ nye medze edze.,1.6667,0.75
+16,Tum da bragor ho nyimdzee edzi.,Tonton! Tabragor ho nyimdzee dzi.,0.6667,0.28
+19,Ɔbosom yɛ sunsum mu etumfo no bi.,Ɔbosom yɛ sunsum mu etumfo no bi.,0.0,0.0
+25,"Ghanaman mu so, kasa biara wɔ n’abosom.",Ka ne man mu so kasa biara wɔ n’abosom.,0.4286,0.1
+29,Akyerɛkyerɛfo nhyɛ no nsew dɛ wɔbɔhwehwɛ Mfantsefo abosom edzin no bi aka ho.,"Akyerɛkyɛ fa nsia no, nsɛw dɛ wɔbɔhwɛe, mfantsefo abosom edze no bi akɛ ho.",0.5385,0.2188
+30,Abosondzin yɛ abosom edzin a nkorɔfo gyina Ebibir mu som (abosonsom) do dze to nyimpa.,Abosɔngye no yɛ abosɔm edzin a nkorɔfo gyina ebiber mo sɔm abosɔm do dedzetɔ nyimpa.,0.6,0.2174
+31,Abosondzin bi na ɔka do yi.,Ɔbosɔndzen bi na ɔka do yi.,0.1667,0.1429
+33,Akyerɛkyerɛfo nhyɛ no nsew dɛ wɔbɔhwehwɛ Mfantsefo abosondzin no bi aka ho.,Akyerɛkerɛfo nhyɛ no nsɛw dɛ wɔbɔhwehwɛ mfantsefo abosondze no bi aka ho.,0.25,0.0635
+34,Ɔma yehu beebi a nyimpa bi fi anaa fie a ofi mu.,Ɔma yehu bɛbi anyimpa bi fi anaafe a ɔfee mu.,0.5,0.1667
+35,Ɔkyerɛ nkitahodzi a ɔda nyimpa no na bosom no ntamu.,Okyerɛnketa ahodzi a ɔda nyimpa no na bosoom no ntam mu.,0.5,0.119
+37,Abosondzin san bɔ kusum amandze ho ban.,Abosɔndze nsɛmbɔ kosom amandze ho ban.,0.5714,0.1875
+38,Abosondzin no to ka kusum abadzinto nhyehyɛɛ no ho.,Abosondze no to kakosum abadze nto nhyehyia noho.,0.7778,0.1429
+39,Mpɛn dodow a nkorɔfo roto abosondzin no nna yerutu mfaso a ɔwɔ abadzinto ho no mpon.,Mpɛn dodow annkorɔfo roto abosondzen no na yer to mfaso a ɔwɔ abɛdzento ho no mpo.,0.5,0.1176
+44,Siantsir kor a ɔma nkorɔfo to abosondzin nye no.,Syanta kɔr a ɔma nkorfo to abosondze nye no,0.4444,0.2051
+45,Kyerɛkyerɛ abosondzin mu na ma Mfantsefo abosondzin mfatoho ebiasa.,Abɔnsen mu na mma mfantsefo abɔnsen mfato ebiasa.,0.5556,0.431
+46,Kyerɛ abosondzin ho mfaso ebiasa.,"Ana ɔbɔfasu no hom mfa so ebiasa,",1.2,0.5
+49,Fa woara wo nkasafua kyerɛkyerɛ abosondzin ho mfaso ebiasa mu.,Fa woara wo nkasafo akyerɛkyerɛ abosondze ho mfa so ebiasa mu.,0.5,0.0577
+51,Kwan bɛn do na egye dɛm asɛm yi “Ɔwɔ dɛ nkorɔfo kɔ do to abosondzin.” to mu.,"Kwamban do na egye dɛm asɛm yi, ɔwɔ dɛ nkorɔfo kɔ do to abosondze no, to mu.",0.2353,0.0714
+53,Nye afofor dzi nkɔmbɔ fa kwan a Mfantsefo fa do gor bra ho.,"Nye afofɔdzee nkɔmbɔ, fa kwan afantefo fa do gor bra ho.",0.3077,0.1304
+56,Dze kwan a Mfantsefo fa do gor bra toto afofor dze ho.,"Dze kwan a mfantsefo fa do gor bra, toto afofor dze ho.",0.0,0.0
+61,"Dɛm mfe yi, ɔtɔfabi a, ɔsesa.","Dɛm mfe yi, ɔtɔfabea a, ɔsesa.",0.1667,0.0952
+64,N’ayeradze na n’ambɔtoadze nhwi hyɛ ase fuw.,N’ayɛdze na n’ambɔtoadze ho hyɛ asefo.,0.5714,0.2286
+67,Ne banyin no yɛ kɛse.,Ne banyin no yɛ kɛse.,0.0,0.0
+69,No mu twe ma ɔyɛ tsentsen.,Nom dure ma ɔyɛ kyentsen.,0.6667,0.25
+73,"Ɔsan so kyerɛ ahotsew, ahoɔfɛw na enyimnyamhyɛ.","Ɔsan so kyerɛɛ ahotsew, ahoɔfɛw na inyimnyam hyɛ.",0.4286,0.0513
+77,Wɔtɔ dadze ma no na dza ɔkeka ho.,Wɔtɔɔ dadze m’anomu na dza ɔkeka hɔn.,0.5,0.2
+80,Wo kuromfo frɛ bragor dɛn?,"Wo kɔmfo frɛ Bragor dɛ,",0.4,0.1905
+81,Bea biara na kwan a wɔfa do gor bra dɛm ntsi kwan a Mfantsefo fa do gor bra na ohia wɔ ha.,Biara na kwan awɔfa do gor bra dɛm ntsi kwan a mfantsefo fa do gor bra na ohia wɔ ha.,0.1364,0.0441
+84,Enye mbofra no nkasa mfa ndzɛmba ahorow a wɔyɛ ana bra no ngoree ankasa ahyɛ ase ho.,"Ne nye mbofra no nnkasa fa ndzɛmba ahorow, awɔyɛ anabra no ngorei ankasa ahyɛ ase hɔn.",0.5882,0.0896
+85,Ɔwɔ dɛ nsesa bi da edzi wɔ nyimpa no ne nyimpadua mu.,Ɔwɔ dɛ nsesɛ bi dɛ edzi wɔ nyimpa no ne nyimpa dua mu.,0.3333,0.0488
+86,Wɔfrɛ no nye no kasa fa nsesa a aba ne nyimpadua mu ho ma ohu dɛ nsesa no ka abrabɔ ho.,Wɔfrɛ no nye no kasafa nsesa aba ne nyimpa dua mo ho ma ohu dɛ nsesa no ka abrɛ bɔ ho.,0.381,0.0455
+87,Wɔsan ma no abrabɔ mu nkyerɛkyerɛ bi.,Wɔ saman no abrabɔ mu nkyerɛkyerɛ bi.,0.2857,0.0667
+89,Wɔsan so kɔ abosom enyim kebisa hɔn nkyɛn mboa.,Bɔsan so kɔ abosom enyim kebisa hɔn kyɛn mbowa.,0.3333,0.0789
+91,Wosusuaw ɔbranyi no ne tsinhwi na wobubu n’awerɛw.,Wo susu ɔbrɛnyi no ne tsinhwi na wobubu no awerɛw.,0.625,0.0976
+92,Wɔdze no kɔ esutsen mu koguar no.,Wɔdze no kɔr Esutsen mu kokwar no.,0.2857,0.1154
+93,"Eguar no mu no, wɔdze no ho nhwi a woyii no nye ndzɛmba afofor bi hyɛ esutsen no ano.","Egua ano mu no, wɔdze noho nwi awoyii no nye ndzɛmba afofo bi hyɛ esutsen ano.",0.4737,0.0769
+94,Wɔdze kyirefuwa ma no ma ɔmokomoko.,"Wɔdze kyirefuw ama no, ma ɔmokomoko.",0.3333,0.0
+95,Wɔdze ɔtɔ ma no ma odzi.,Wɔdze ɔtɔma nnoma odzi.,0.6667,0.0556
+96,Wɔdze no tsena asɛsɛgua do.,Wɔdze no tsenaa asasɛgua do.,0.4,0.0909
+97,Wɔdze nkunuma kɛsɛɛ na son no nwoma to n’enyim na n’ekyir ber a ɔtse asɛsɛgua no do no.,"Wɔgye nkunoma kɛsɛɛ, naaso no nwomato n’enyim, na n’ekyir bɛɛn a ɔtɛ asɛsɛgoa no do no.",0.5,0.1642
+100,Nkorɔfo kyɛ ɔbranyi no adze.,Nkorɔfo kyɛ ɔbranyino adze.,0.4,0.0
+101,"Ɔkyerɛ dɛ afei dze, oedu ne mpanyinyɛ mu.","Ɔkyerɛ dɛ afei dze, oedu ne mpanyinnyɛ mu.",0.125,0.0312
+103,Ɔkyerɛ dɛ onyia no aso awar.,Ɔkyerɛ dɛ onyia no asow awar.,0.1667,0.0455
+104,Ɔhyɛ afofor nkuran ma wɔbɔ ɔbra pa a ɔbɛma wɔaagor hɔn so bra.,Ɔhyɛ afofo nkura ma wɔbɔ ɔbrapa a wɔbɛma wɔagow hɔn so bra.,0.4615,0.102
+105,Ɔyɛ enyimnyamhyɛ ma awofo na ebusuafo no so.,Ɔyɛ enyimnyam hyɛ ma awofo na ebusuafo no so.,0.25,0.0
+106,Ɔma ɔbranyi no nya foto dze hyɛ abrabɔ ase.,Ɔma obiranyi afotoo dze hyɛ abrabɔ ase.,0.4444,0.2059
+108,Hyɛ no nsew dɛ esuafo no nyinara hɔn ntsease nnyɛ pɛr ntsi ma nkyerɛmu a ɔbɔboa obiara ne ntseasee.,Yɛ no nsɛw dɛ esuafo no nyinara hɔn ntseaseenyi pɛ ntsi mannkyer mu a ɔbɔboa obiara ne ntseasee.,0.3684,0.0875
+109,Ma bragor ho mfaso ebiasa?,Mabrɛ gor ho mfa so ebiasa.,0.8,0.0476
+110,Yi bragor ho mfaso ebien na kyerɛ siantsir a no ho hia papaapa.,Mbra go hɔn fasu ebien na kyerɛ siantsɛ anohɔ hia papaapa.,0.6154,0.18
+111,Bragor mu dwumadzi wɔ nkyekyɛmu ebiasa.,Ɔragɔ wo ho dwumadzii wɔ nkyekyɛmu ebiasa.,0.6667,0.2121
+115,Kyerɛ ndzɛmba ebiasa a wɔyɛ ana wɔaagor obi bra.,Ndzɛmba ebiasa awɔyɛ anaa ɔagor obi bra.,0.5556,0.1795
+117,Kyerɛkyerɛ dwumadzi ebiasa a wodzi no bragor mu ankasa mu.,Eti na domadze ebiasa a wɔdze no dragon wɔannkasa mu.,0.7,0.3958
+118,Kyerɛkyerɛ dwumadzi ebiasa a wodzi no bragor ekyir.,Kor ekeka ekyidɛ demdze abadze a wɔdze no ɔbrɛ agor ekyir.,1.0,0.5116
+120,"Pɛnsɛmpɛnsɛm mfaso ebiasa a ndɛ mber yi wo mamfoe nya fi bragor mu, mu.",Rɛnsɛmpɛnsɛm mfaso ebiasa a nndɛ mber yi wo mamfoe nyafe bra gor mu.,0.4286,0.0893
+121,"Ndzɛmba na ndzeyɛɛ bi wɔ hɔ a wodzi nsɛ, bi so nndzi nsɛ.","Ngyamba na ndzeyɛɛ bi wɔ hɔ awodzi nsɛ, bi so nndzi nsɛ.",0.2308,0.0698
+123,Beebiara wɔdze ndzɛmba bi dzi dwuma wɔ bragor mu mbom ndzɛmba no na otum sesa.,Diaw a wodzi ndzɛmba bigye dwuma wɔ Bragor mu mbom ndzɛmba no na Otum sesɛb.,0.4,0.1905
+124,Kasa biara wɔ da pɔtsee bi a wɔdze esi hɔ a wɔdze gor bra.,Kasa do ara da pɔtsee bi a wɔdze esi hɔ a wɔdze gɔ bra.,0.2143,0.1364
+125,Wɔyɛ ma obi a oedu ne mpanyinyɛ mu.,Wɔyɛmma obi a oedu ne mpanyinya mu.,0.375,0.0741
+126,Wɔdze ɔbranyi no to dan mu ma no abrabɔ mu nkyerɛkyerɛ.,Wodze ɔberɛnyi no to dɛm mmaa no abrɛbɔ mu nkyerɛkyerɛ.,0.5455,0.1818
+127,Kasa biara yɛ biribi wɔ branyi ne tsinhwi ho.,Kasa biara yɛ biribi wɔ berɛnyi no tsi ho hɔn.,0.4444,0.2222
+128,"Kasa biara mu no, wɔyɛ sunsum mu ahoboa.","Kasa biara mu no, wɔyɛ sunsum mu ahoboa.",0.0,0.0
+129,Kaa dɛ edze bi bɛka ho.,Kaa dɛ edze bi bɛka ho,0.0,0.0
+131,Ɔsor ndzɛmba a beebiara wɔdze gor bra.,Ɔsor ndzɛmba aba biara a wɔdze gor bra,0.4286,0.0968
+132,Kasa biara wɔ da pɔtsee a wɔdze gor bra.,Kasa biara wɔ da pɔtsee awɔdze gor bra.,0.2222,0.0
+133,"Ɔsor kasa biara na edziban a wɔdze ma nkorɔfo, dze som hɔn ahɔho.",Ɔsor kasa biara na edziban awɔdze ma nkorɔfo dze som hɔn ahɔho.,0.1538,0.0
+134,Kasa biara wɔ kwan a wɔfa do yɛ sunsum mu na ndzɛmba afa mu ahoboa.,Asa biara wɔ kwan awɔfa do yɛ sunsum mu na nsɛmba afa mo ahoboa.,0.3333,0.0769
+135,Hyɛ no nsew dɛ esuafo no nyinara hɔn ntsease nnyɛ pɛr ntsi gye obiara ne nteasee to mu.,Yenum nsɛw dɛ esuafo no nyina hɔn ntseasee nye ɔfɛr ntsi gye obiara ne ntseasee to mu.,0.4444,0.1739
+140,"Dagbani, Gonja, Ga, Kasem, Dangme, Nzema, Ashante, Akwapim, Ewe, etc.).","Dagbani, Gonja, Ga, Karsem, Dangme, Nzima, Ashanti, Akwapam, Ewe, Eserae.",0.5,0.18
+141,Pɛnsapɛnsa Mfantsefo bragor na afofor bi hɔn dze mu.,Ɔpɛnsapɛ nsamfantse fow Brago na afofo bi hɔn dze mu.,0.5556,0.093
+145,Akanfoɔ amammerɛ ne Akan kasadwin.,Aka mfowa ama merɛ ne akan kasa do no.,1.4,0.2414
+156,Wotum mpo dzi nsɛ wɔ kwan bi do.,Wotu mpo dze nsa wɔ kwan bi do.,0.375,0.125
+162,Dɛm efiefi yi na yɛtɔ dɛ yɛfrɛ hɔn fiebobow no.,Dɛm efiefi yi na yɛtɔ dɛ yɛfrɛ hɔn fie bobow no.,0.2,0.0
+163,Dɛm nkorɔfo yi taa yɛ ebusua tsentsen mu mba.,Dɛm nkorɔfo yi taayɛ ebusua tsentsen mmba.,0.4444,0.0278
+164,Panyin a fiebobow biara yi no dɛ ɔnda dɛm dɔm no ano no wɔfrɛ no fiebobow mu panyin.,Ɔpanyin a fie bobɔɔ biara yi no dɛ ɔnnda dɛm dɔm no anan wɔfrɛ no fie bobɔɔ mu panyin.,0.4444,0.1212
+167,Egya no dwumadzin nye dɛ ɔhwɛ ma ɔnye yer na mba nya dza wohia wɔ abrabɔ mu.,Egya no dwuma dze nye dɛ ɔhwɛ ma ɔnye yer na mba nya dza wo hia wɔ abrabɔ mu.,0.2353,0.0339
+171,Ɔno na onyim ebusua no n’abakɔsɛm yie na ɔhwɛ bɔ ho ban.,Ɔno na onyim ebusua no n’abakɔsɛm yie na ɔhwɛbɔw ho ba.,0.25,0.0465
+172,Ɔbɔ ebusua no ne ndzeyɛɛ na ne nhyehyɛɛ ho ban.,Ɔbɔɔ ebusuanonee ndzeyɛɛ na ne nhyehyɛɛ ho ba.,0.5,0.0811
+173,Ɔbɔ ebusua nsaase na n’egyapadze nkaa ho ban.,"Ɔbɔ ebusua asaase no a, n’egyapadze nnkaa ho ba.",0.625,0.1111
+174,Ɔhwɛ dɛ ebusua no mu mba bɛtsetse nkyirmba wɔ kwan pa do.,Ɔhwɛ dɛ ebusua no mu mbaabɛsetsie nkyirmba wɔ kwampa do.,0.3333,0.0889
+175,Ɔbɔ fiebobow no mu ma no ban fi ɔhaw ahorow ho.,Ɔbo fiebobow no mu m’ano bammfi ɔhaw ahorohu.,0.6364,0.1389
+176,Ɔhwɛ ma no dɔm no nya asetsena pa.,Ɔhwɛ mma no dɔm no nnya ase tse n’apa.,0.625,0.0769
+177,Ɔhwɛ ma asomdwee ba no dɔm no mu.,Ɔhwɛ m’asomdwee ba no dɔm no mu.,0.25,0.04
+178,Ɔhyɛ mbra na ɔhwɛ dɛ yer na mba no dzi.,Ɔhyɛ mbrana ɔhɛ dɛyir na mba no gye.,0.6,0.1724
+179,Ɔhwɛ ma no dɔm no nya beebi da na ɔbɔ hɔn ho ban so.,Ɔhɛman no dɔm no nya beebi da na ɔbɔ hɔnho bansɔn.,0.4286,0.1053
+180,Ɔhwɛ dɛ oibara benya apɔwmudzen dze enyin yie.,Ɔhɛɛ dɛ oi bra benya apɔwmudzen dze enyinyi.,0.625,0.0789
+181,Ɔkyerɛ abrabɔ mu kwan pa a wɔfa do a obesi hɔn yie.,Wɔkyerɛ abrabow mu kwampaa wɔ fado a obesi hɔn yie.,0.5833,0.1026
+182,Ɔhwɛ ma no dɔn no nya edziban dzi.,Ɔhwɛ m’ano dɔn no nya edziban dze.,0.375,0.0385
+183,Ɔbɔ bra a ɔbɛyɛ nhwɛdo pa ama afofor.,Ɔbo bra ɔwo bɛyɛ nhwɛdo pa ama afofɔr.,0.5,0.1724
+184,Akyerɛkyerɛfo mma esuafo nnhu dɛ nanom so wɔ hɔn asɛdze a wɔyɛ dze boa.,Ɔkyerɛkyerɛfo mma esuafo nnhu dɛ nanom so wɔ hɔn asɛdze awɔyɛ dzeboa.,0.3571,0.0175
+185,Kyerɛ ebusuabɔ mu mpanyimfo no hɔn nhyehyɛɛ ndzidzido.,Hyerɛ ebusuabɔ mu mpanyimfo no hɔn nhyehyɛɛ ndzedze do.,0.375,0.0652
+186,Kyerɛkyerɛ ebusuapanyin no dwumadzi ahorow ebiasa mu.,Amenko ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum ndakum.,7.4286,6.3696
+187,Pɛnsapɛnsa egya no dwumadzi mu.,Ɔpɛnsapɛnsa egya na ɔdwoma dzi mu.,0.8,0.1538
+190,Kyerɛkyerɛ ebusuabɔ mu mpanyimfo no mu.,Kirker ebusuabo mu mpanyimfo no mu.,0.3333,0.1818
+191,Kyerɛ mbrɛ ebusuabɔ mu mpanyimfo no hɔn nhyehyɛɛ no tse .,"Kyɛr ɛ, mbrɛ ebuhwiabɔ mu mpanyimfo no hɔn nhyehyɛɛ no te.",0.4,0.1087
+193,Hwehwɛ ebusuabɔ mu mpanyimfo no hɔn nhyehyɛɛ na hɔn dwumadzi no ho mfaso.,"Kohwɛ ɔebusuabɔ mu mpanyimfo no hɔn nhyehyɛɛ n’ahoɔn, dwumadzi no ho mfaso.",0.3077,0.0833
+205,Hyɛ no nsew dɛ ɔsor beebiara na mbrɛ wosi si hɔn manhen.,Ehi fen dɛ ɔsɔr beebiara na mbrɛ wosisi hɔn ma hɛn.,0.6667,0.25
+207,Amanhen ahorow bi hɔn mfonyin wɔ ha a ɔbɔboa wo.,Ama hɛn ahor behɔnho no wɔ ha a ɔbɔbo awɔn.,0.7,0.3158
+208,Hwehwɛ mfonyin afofor so ka ma ɔmboa wo ntsease.,Wohwɛ mo ne afofo so kɛma ɔmmboa wo ntse ase.,1.0,0.2308
+209,Ɔno na ɔman mu no nyinara hyɛ ne nsa.,Ɔno na ɔmma mo no nyinara hyerɛ ne nsa.,0.3333,0.1786
+210,Ɔhwɛ yɛ n’asɛdze wɔ guabɔ biara ase dɛ mbrɛ ɔfata.,Ɔhɔɛ n’asɛdze wɔ guabɔ biara ase dɛ mbrɛ ɔfata.,0.2,0.0769
+211,Ɔno na bea no do nsaase nyina hyɛ ne nsa.,Ɔnat bea no do nsaase nyina hyɛ ne nsa.,0.2,0.0968
+212,Ɔbɔ amandze na amambra ho ban.,"Ɔbɔ amandze, na ɔma mbarimba ho ban.",0.3333,0.2083
+213,Ɔhwɛ ma no nkorɔfo nya mpontu.,Ɔhɛman okwafo nyɛ mponto.,1.0,0.2917
+214,Odzi amanyɛsɛm na sikasɛm ntotoe a ɔwɔ ne man no mu ho nsɛm.,"Wɔgyee amanyɛsɛm, na sika asɛm ntotoe a ɔwɔ ne man no mu ho nsɛm.",0.2308,0.1489
+215,Ɔyɛ egua no ho amandze.,Ɔyɛ egua no ho amandze.,0.0,0.0
+216,Ɔhyɛ mbra ma ahemfo nkaa no dzi do.,Ɔhyɛ mbra ma ahemfo nkaa no gyido.,0.25,0.0741
+217,Dɛm ahemfo yi mu bi yɛ ahemfo a wɔyɛ ahemfo nkakraba a hɔn nyinara hyehyɛ ɔmanhen no ase.,Dɛm ahemfo yi mu bi yɛ ahemfo a wɔyɛ ahemfo nkakraba ahɔn nyinara hyehyɛ ɔmahen no ase.,0.1667,0.0141
+219,Wotum si ɔmanhen no anan mu ber a ɔmanhen no nnyi hɔ.,"Botum si ɔmanhen no anan mu bɛr, a ɔmanhen no nnyi hɔ.",0.1667,0.0488
+220,Wɔhwɛ dɛ ewurkadze nnkɔkɔ do wɔ ɔman no mu.,Wɔhyɛ dɛ ewurkadze nnkɔkɔ do wɔ ɔman no mu.,0.1111,0.0294
+221,Wodzi asɛm ma pɛrpɛr yɛ edwuma.,Wodze yɛsɛm ma pɛpɛɛyɛ edwuma.,0.6667,0.2
+224,Wɔyɛ egua no ho atɔrmuadze na wodzi enyim ma wɔpa mbusu.,Wɔyɛ eguaa no ho atɔr mu adze na wodzii enyim m’awɔpa mbo so.,0.7273,0.0889
+225,Esihemfo yɛ mpanyimfo bi a wɔwɔ tum kɛse wɔ ɔhen ne nsii mu wɔ ebusuadehye no mu.,Nasimfo yɛ mpanyimfo bi awɔ tum kɛse wɔ ɔhen ne nsii mu wɔ ebusuadzehyɛ no mu.,0.2353,0.125
+227,Wohyia fa adwen kyerɛ nyia ahendzi no edu no do ber a egua no atɔ pan.,"Ohyia fa adwenkyer nyaa ahendzi no edu no do ber a eguano atɔ pan,",0.375,0.0556
+228,Bea biara na mbrɛ wosi paw hɔn ahemfo.,Biara na mbrɛ wosi pɔw hɔn ahemfo.,0.25,0.1333
+229,"Ɔhen wu a, hɔn na wɔyɛ amandze.",Ɔhembu a hɔn a wɔyɛ amandze.,0.4286,0.1304
+230,Wɔda ɔhen fofor no edzi kyerɛ apamfo no na ɔman mu no nyinara.,Wɔda ɔhen fofoo no egyekyerɛ apamfo no na ɔmamon no nyinara.,0.3846,0.1429
+232,Hwɛ esuafo ma wondzi asɛm a ɔda ha yi ho anokɔnkɔn.,Hwɛ esuafo ma wondzi asɛm a ɔda haeyi ho ano kɔnkɔn.,0.3636,0.025
+233,Adwen bi wɔ hɔ dɛ kusum amambu etwa mu a no ho nnyi mfaso bio.,Ɔdɛmbu a hɔ dɛ kusum ama mbowa etuamo a no ho nnyim faso bio.,0.5333,0.2553
+234,Aso egye iyi to mu a?,Aso igye iyi tɔ mu a?,0.3333,0.1333
+238,Kyerɛ mbrɛ wosi si ɔhen.,Kyɛr mbrɛ wosi si ɔhen,0.2,0.1053
+239,Kyerɛw mbrɛ kusum amambu nhyehyɛɛ tse wɔ wo kurom.,Derɛko so ma mbɛmbɔ hyɛ hyɛ etse wɔ wo krɔn.,0.8889,0.439
+240,Ana egye to mu dɛ ɔwɔ dɛ wɔma kusum amambu kɔ do tsena hɔ?,Anaa egyetum mu dɛ ɔwɔ dɛ wɔ m’akosom ama mo bo kɔ do tsena hɔ?,0.5714,0.1591
+242,Dzi nhyehyɛɛ a ɔfata do dze yi mpaa.,Dze si hyia a ɔfata do dze yii mpa.,0.625,0.3214
+243,Gyina akyerɛwtsen ne nhyehyɛɛ do dze kyerɛ dɛ akyerɛwtsen bi dzi mu ana onndzi mu.,Ɔgeina akyerɛtsen ne hehyia do dze kyerɛ dɛ akyerɛtsen bedzi mu anaa onndzi mu.,0.4667,0.1493
+244,Da nsagu na eyiadze osu ho nyimdze edzi.,Da nsogu na eyia dze osu ho nyimdze edzi.,0.375,0.0312
+245,Da akyerɛwtsen ho nyimdzee edzi.,Da akyerɛw tsen hɔ nyimdzee edze.,0.8,0.0741
+253,"Nsagu ne nhyehyɛɛ nye Ɔfrɛ, asɛm no ankasa na ewiei dɛ mbrɛ ɔwɔ ase ha yi.","Nsago ne hyehyɛɛ nye Ofra, asɛm no ankasa na ewiei dɛ mbrɛ ɔwɔ asɛ ha yi.",0.25,0.0877
+255,Nyia orugu nsa no dzi kan frɛ Twerampɔn Kwame a ɔyɛ Bɔadze no.,"Yɛ a orugu nsa no gye, ka mfrɛ kyerɛmpɔn kwame a ɔyɛ bɔadze no.",0.4615,0.1837
+257,"Asaase Efuwa, abosom mpempem a wɔwɔ asaase no do na ɔdze ewuakɔr sɔw do.",Na asaase efo a abosom mpempem awɔwɔ asaase no do na ɔdze ewɔ kɔr sɔw do.,0.5,0.1053
+265,Mfonyin a yehu no wɔ ase ha yi kyerɛ nsagu bi a ɔkɔ do wɔ mbeambea bi wɔ Ghana ha.,Mɛn ɔyɛ hu no wɔ Asihai kyerɛ nsago bi a ɔkɔ do wɔ mbeambea bi wɔ Ghana ha.,0.35,0.1613
+269,"Ndzɛmba a wɔdze gu nsa no tse dɛ nsa, tɔmbɛr anaa gyeraase.","Ngyamba a wɔdze guu nsa no tse dɛ nsa, tɔmbɛr anaa gyer ase.",0.3333,0.1087
+270,Nyia orugu nsa no kwaha ne tam.,Yɛ adwe go nsaano kwaa ne tam.,0.7143,0.3333
+271,Nyia orugu nsa no yi ne nanadze mpaboa na otsia do.,Yɛ a ɔrugu nsianoo yi ne n’adze mpaboa na otsia do.,0.4545,0.175
+272,Ɔdze n’enyi kyerɛ bea pɔtsee bi.,Wɔdze n’enyikyirebea pɔtsee bi,0.6667,0.12
+273,Ogyina hɔ dze ne nan kor kɔ enyim.,Wo yina hɔ dze ne nankor kɔ enyim.,0.5,0.0769
+274,Ɔdze nsa no gu famu nkakrankakra.,Ɔdze nsa no gu fa mu nkakra nkakra.,0.6667,0.0
+275,"Ɔhyɛ ase frɛfrɛ Nyankopɔ, asaase Efuwa na esunsum nkaa no.","Ɔhwɛ ase frɛfrɛ Nyankopɔn, asaase fowaa na esunsum nkaa no.",0.3,0.1064
+277,"Afei, ɔdze nsagu no ba ewiei.","Efe ɔdze nsa gu no ba ewiei,",0.5,0.0909
+281,Yɛda hɛn enyisɔ edzi kyerɛ esunsum ahorow no wɔ dza wɔyɛ ma hɛn ntsi.,Yɛdɛ hɛn enyi sɔ edze kyerɛɛ esunsum ahoron no wɔ dza wɔyɛ ma hɛn ntsi.,0.4286,0.0727
+282,Nsagu ka etsiefo bɔ mu ber a wohu wohu beebi a wofi.,Nsago ka etsie fɔbɔ mu bɛ a wohu wohu beebi awofi.,0.5,0.1
+283,Ɔda kusum amambra na abakɔsɛm edzi.,Wɔdakosum amambra na abakɔsɛm edzi.,0.3333,0.069
+284,Yɛdze nsagu kyerɛ obu na enyidzi ma ebusuafo bi a wɔkɔ hɔn nsamankyir.,Yedze nsa gu kyerɛ obu na enyidzi mma ebusumafo bi a wɔkɔ hɔn nsamankyir.,0.3846,0.0526
+285,Ɔyɛ ber a binom sua nkafua na nsɛm afofor a ɔboa kasasua.,"Ɔyɛ ber mpi, ber soankafo na nsɛm afofor a ɔboa kasa soa.",0.5,0.2
+286,Ɔma nyimpa n’ano tsew wɔ bagua mu kasa ho.,Ɔma nyimpa n’anoo tsie wo wɔ bagua mu kasa ho.,0.3333,0.0938
+288,Ɔsor beebiara na ndzɛma a wɔdze gu nsa.,Ɔsoɛr beebiara na ndzɛmba a wɔdze gu nsa.,0.25,0.0645
+292,Hwɛ ma esuafo nkyerɛw ndzɛmba a ɔwɔ sor ha yi edzin.,Kwema esuafo nkyerɛ ndzɛmba awɔsɔr haye edzi.,0.8182,0.1707
+294,Kyerɛkyerɛ nsagu ne nhyehyɛɛ no mu ebien mu.,Kirikiree nsagunii hyehyɛɛ no mu ebien mu,0.5,0.25
+295,Kyerɛ w’adwen wɔ dɛm asɛm yi ho.,Ɔhyɛr w’adwen wɔ dam asɛm yi ho.,0.2857,0.2083
+297,Iyi yɛ osu a yɛtse no ber a obi ewu.,Hyi ɔsu haayɛ tu no ber a obi ewu.,0.5,0.3077
+298,Yɛdze dɛm osu yi da nkitaho a ɔda yɛnye owufo no ntamu edzi.,Yɛdze dɛm osu yi da nkita ho a ɔdayɛ nye owufo no ntamu edzi.,0.3077,0.0
+299,Ɔyɛ osu a ɔtaa forafora ndwom ntsi beebi wɔfrɛ no kwadwom.,Ɔyɛ osu a ɔtɛ aforafora ndwom ntsi beebi yi wɔfrɛ no nkwadwom.,0.3636,0.0851
+301,Wɔdze su owufo no wɔ amambra kwan do.,Wɔdze so owufo no wɔ amambra kwan do.,0.125,0.0345
+302,Ɔkyerɛ nkitahodzi a ɔda ewuakɔr na atseasefo ntamu.,Ɔtwerɛ nketahodzi a ɔda ewuakɔr na atseasefo ntam.,0.375,0.093
+303,Wɔdze to nkra wɔ samanadze.,Wɔdze to nkra wɔ samanadze.,0.0,0.0
+304,Atseasefo fa osu do nye ewufo dzi nkra.,"Atsesefo fa osu do nya ewufo gyinkra,",0.5,0.129
+305,Ɔda nkitahodzi a ɔmmbɔ adze da a ɔwɔ atseasefo na ewufo hɔn ntamu edzi.,"Ɔda ngyita hɔ dzi a ɔmmbɔ adze, da a ɔwɔ atseasefo na ewufo hɔn ntamu edzi.",0.2143,0.0526
+307,Kyerɛ eyiadze osu ho mfaso enum.,Atsia sɛ eyiedzi osu ho fa so annyi,1.0,0.5
+309,Kwan bɛn na nkorɔfo fa do su wɔ eyiadze wɔ wo kurom.,Ɔkwambɛn na nkorɔfo fa do suw wɔ eyiadze wɔ wo kurow mu?,0.4167,0.125
+310,Ebɛnadze nye eyiadze osu (Kwadwom)?,Ebɛnadze nye eyia dze osu kɔdɔ me?,0.8,0.1786
+312,Osu ka amandze a yɛyɛ dze gya owufo kwan no ho.,osuka amandze ayɛyɛ dze gya owufo kwan no ho.,0.3636,0.0
+313,Kyerɛ mbrɛ wo kuromfo su hɔn ewufo.,"Tien so ɔfokɔmpɔ na adze me kɔpaaba, ntsɛm ma w’adanambaa atseetaa noara a asetaa no wɔ bɛrɛ me kyɛn da yɛ.",3.0,2.6429
+314,Ihu eyiadze osu ne mfaso dɛn?,"Ehu eyɛdze osu n’enfaso dɛ,",0.8333,0.2174
+317,Akyerɛwtsen yɛ akyerɛw kasadwin ahorow no mu kor.,Ɔkyerɛtsen yɛ akyerɛ kasaben ahorow no mu kor.,0.375,0.1463
+330,Agofomba ho hia papaapa tsitsir noara nye etsiban no.,Akofomba hohia papaapa setsi no ara nye Etiban.,0.8889,0.1591
+333,"Ɔhaw anaa ndzepa bi si a, hɔn na ɔtaa kɔ ma hɔn.","Ɔhaw anaa ndzepa bi si a, hɔ na ɔtaakɔma hɔn.",0.3333,0.0286
+341,"Mpɛn pii no, iyi gyina agofomba no hɔn nkitahodzi anaa hɔn ndzeyɛɛ ahorow do.","Mpɛn pii no iyi gyina agofomba no hɔn nkita hɔ dze, anaa hɔn ndzeyɛɛ horow do.",0.2857,0.0484
+342,Akyerɛw bi wɔ nsɛntsitsir nkumaa a wɔboa ma asintsitsir da edzi.,Ɔkyerɛw bi wɔ nsɛntsitsir nkuma awɔboa m’asentsitsir da edzi.,0.5455,0.0755
+348,"Mantɔw mu, Oguaa aban mu, skuul, fie, akwantu mu na ne nkekaho.","Matwe mu oguaa aban mu, skuul, fie, akɔntow mu no ne nkeka ho.",0.4167,0.1702
+356,"Obotum ayɛ awerɛhow, enyigye, enyidado na dza ɔkeka ho.",Ɔbɔtom ayɛ Awerɛhow enyigye enyida do na dza ɔkeka ho.,0.3333,0.0682
+359,Kwan bɛn do na agofomba ho hia wɔ kodzi bi mu?,Kwambɛn do na Agofo mba ho hia wɔ kɔdzi bi mu?,0.4545,0.0571
+360,Kwan bɛn do na ber na bea (sibeaber) ho hia wɔ kodzi bi mu?,Kwambɛn do na ber na bea siber berɛn hɔ hi a wɔ kɔdze bi mu?,0.5714,0.1628
+361,Ebɛnadze na ɔma akyerɛwtsen bi ne nhyehyɛɛ dzi mu?,Ebɛnadze na ɔmma akyerɛ osin bi ne nhyehyɛ edzi mu?,0.5556,0.122
+364,Bobɔ akyerɛwtsen mu ndzɛmba etsitsir no do.,Obobɔ akyerɛsen mu ndzɛmba etsitsir no do.,0.2857,0.0833
+368,Akyerɛwtsen mu nhwehwɛmu nye dɛ obi rekenkan na ɔatse dza ɔaatse ase.,Akyerɛso mu nho hwɛ ho nye dɛ obi rekenkae na ɔatse dza ɔatse ase.,0.5,0.1754
+374,Ebɛnadze na kodzi no fa ho ankasa?,Ebɛnadze na kodzi no fa hɔn ankasa,0.1429,0.0741
+375,Nsɛntsitsir bɛn na ɔwɔ mu?,Ɔsatatser bɛn na ɔwɔ mu,0.2,0.2857
+379,Woananom nye etsiefo no ?,W’ananom nye etsiafo kupɔbolo fow dze aro.,1.5,0.9
+382,Hwehwɛ ngyinado a ɔfata taa dza aka no ekyir.,"Wohwɛ ngyinado ahofata taa dza aka no ekyir,",0.3333,0.1111
+386,Nkasafua bɛn na ɔdze dzi dwuma.,Nkasafo abɛn na ɔdze gye dwuma?,0.5,0.16
+389,Aso nkɔmbɔdzi wɔ mu a?,Aso nkɔ mbɔgye wɔ Moab?,0.8,0.2941
+391,Mfonyintwa bɛn na ɔwɔ kodzi no mu?,Mentwa bɛn na ɔwɔ kodze no mu?,0.2857,0.2222
+394,Kyerɛw ndzɛmba a yegyina do hwehwɛ akyerɛwtsen mu.,Kawdadze ama ayɛgyinado huehwe akyerɛ asɛm mu.,0.875,0.381
+397,Kyerɛw na kyerɛ ndzɛmba a yegyina do hwehwɛ akyerɛwtsen mu no mu.,Kyerɛw na kyerɛ ndzɛmba ayɛgyina do hwehwɛ akyersɔm no no.,0.4167,0.1698
+412,"Akyerɛw mu no, ndze ngyegyee ahen na Mfantsefo dze dzi dwuma?","Akyerɛmu no, ndze ngyegye ahen na fantsefo dzegye dwuma.",0.5455,0.1224
+414,Woana kyerɛɛw buukuu 'Twer Nyame'?,"Woana kyerɛ bow kotwer nyame,",0.6,0.2222
+415,Akyerɛw kasadwin gu mu ahorow ahen?,"Akyerɛ kasadwingu mu ahorow ahɛn,",0.6667,0.069
+416,"Sɛ ᴐbaatan bi pɛ dɛ ᴐdeda ne ba ma ogyaa su a, ᴐtow kusum ndwom a ↄwↄ ase ha yi mu kor ma no.","Embatan bi pɛ dɛ ededa ne bɛma Ogya Asowa, ɛtow kusum dwɔm awee ase ha yi mu kor ma no.",0.5,0.2059
+417,Asɛnkyerɛdze yi (') dzin dze dɛn?,Asɛnkyerɛdze yi dzin dze dɛn?,0.0,0.0
+418,Vawol ngyegyee ahen na yεwͻ wͻ Mfantse kasa mu?,Ma wo ngyegye ahɛna ye wo mfantsekasa mu.,0.8889,0.2368
+419,Adze tsitsir a Akanfo dzi kan hwε ana woesi obi ↄhen nye?,Adze tsitsir a akɛmfa odzi kan no wɔyɛ ana oesie wo bi hɛn yi?,0.75,0.3333
+424,Kasafua ɔhen no dodow kabea nye ….,Kasafo a ɔhen no dodow kabea nya,0.5,0.0769
+425,Woana na ɔdze no nkwa bɔɔ afɔr dze gyee Mfantsefo fii yardɔm na ahohiahia mu no?,Woana na ɔdze no nkwa mbɔ afɔr dze gye mfa ntafɔ fii yardɔm na ahohiahia mu no?,0.25,0.0938
+428,Mfantsenyi biara…………ne nkyia ngyedo na wɔdze gye no.,Mbefantsenyi biara atsena nkyea nngyee do na wɔdze gyee no.,0.875,0.275
+429,Nnyɛ akenkan nyinara na otwar dɛ yenya mu ntseasee.,Ɔnye akenkan nyinara na otwa dɛ yenya mo ntseasee.,0.3333,0.0952
+430,Amandze a odzi ewiei wͻ awargu mu no nye……….,Amandze a odzi ewiei wɔ fawar gu mu no nye.,0.3333,0.0625
+431,Woananom na wɔyɛ abaguafo wɔ asɛndzi mu?,W’ananom na wɔyɛ abagoafo wɔ asɛndzi mu.,0.2857,0.0606
+438,"Akanfo gyedzi mu no, esunsum a ᴐka do yi mu mmuana na osuar?","Akamfo gyagye mu no, esunsum a eka dɔ yi mu moana na osuap.",0.4615,0.2174
+439,Adzesua a ͻfa nkasafua su ho no wͻfrɛ no dɛn?,"Na Josua aefa a nkasafo asiw hɔw no wofrɛ no dɛn,",0.8,0.3429

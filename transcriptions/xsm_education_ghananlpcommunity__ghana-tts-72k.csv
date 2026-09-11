@@ -1,0 +1,201 @@
+sample_id,reference,hypothesis,wer,cer
+3,"Popwara kanto tε selabole, selabole yedaa de kwori na ye kolo to taane mo.","Pogara kanto tei, se la bwoli, se la bwoli yé da de kwori na ye kolo to taane nmo.",0.7857,0.1864
+14,Selabole ye botarebu wom na pɔɔre tei o bwoi to mo.,"Teilabos, ye botare bo wom na pɔɔre tei o bwei to mo.",0.3636,0.15
+15,Kɔnsonante delo na wae de kweeli selabole to ke ne de ye selabole mo tei.,Konsonanti delo na wae de kweeli selo bwoli to ke-ne de ye selo bwoli mo tei.,0.4667,0.1379
+16,Kwori ye kwor-taŋa kam na leiri tei ye ko wae ko pae botarebia kura leiri to mo.,Wori ye kuri taŋa kam na leiri tei ye ko wae ko pae botare-bia kora leiri to mo.,0.2353,0.0806
+22,"Konto ŋwaane to, tega jege selabola yalei mo.","Konto ŋwaane to, tega jege se la bwola yalei nmo.",0.5,0.0556
+41,Ka woli zenzamesa se ba mᴐ botarebu-doora se ba da chwoŋa.,Ka woli zem zem sa se ba mɛ bu-taare bu-dwoora se ba da chwoŋa.,0.5455,0.1522
+42,Ka woli zenzamesa se ba maane botarebia balo na wo taana wone to.,Ka woli zenzem saseba ma ne Botarebia balo na wo taana wone to.,0.3077,0.0577
+43,Ka woli zenzamesa se ba ni botarebia kuri.,Ka woli zenzemsa se ba ni botare bia kuri.,0.375,0.0588
+56,Ma n tetere botarebia n maŋe selabole na ye kolo to.,Bam teteere bɔ-tare-bia maŋe se na bole na ye kolo to.,0.6364,0.1463
+58,Maŋe selabole dwoa yam na wo Kasem ne to seina.,Menye selo bolet ra yam na wo kasɛm ne to sɛ na?,0.7,0.2703
+59,Maŋe selabole yedaa kam na ye tei botarebia mᴐᴐnem maŋa ne to memaŋe.,Meŋe Selaboli yé da kam na ye tei Botarebia men-nyemi maŋa ne to me maŋe.,0.5385,0.1429
+65,"Nenεεne botarebu ná jege vawola yalei, o wó taa ye selabola yalei botarebu mo.","Nɛɛne botare bu ná jege va wola yalei, o wó taa ye se la bola yalei botare bu mo.",0.7143,0.0635
+67,Bwɛ selabole yedaa kam na ye tei Kasem ne to.,Wɛ selbwolo yi dáa kam na ye tei Kasem ne to.,0.4,0.1714
+73,Bwɛ na daane selabola yagera na wo botarebia balo á na le to ne dedoa dedoa.,"Wɛ, ná daane ye sela bwola yagera, na wó botare-bɛa balo á na le to ne dedoa dedoa.",0.4375,0.1167
+77,Manchᴐŋᴐ de memena deém mo ye badwon-chɛɛro.,Ban-cheiŋa de memena déem ma mo ye ba jwoŋi chɛɛro.,0.8571,0.2778
+80,Ko daare ye manchᴐŋᴐ yeini ko kare ko charege mo ko di ko ywoani.,Ko daare ye mancheŋa yeini ko kare ko charege mo ko di ko ywoni.,0.1429,0.0588
+96,Ghana taana yam maama ye kwoar-taŋa taana mo.,Gana ta ná yam maama ye kwa taŋa taana mo.,0.625,0.1389
+98,Taana dedɛ jege kwori dwi dwi mo.,"Tɛtana dibɛ, jei ke gwoori dwei dwi mo.”",0.8571,0.3462
+102,Babam nam ta jege tetare kwori ba woli yalei yam wone.,Ba bam nam ta ni jege tetare kwori ba woli yalei yam wone.,0.2727,0.0465
+107,Kasem taane dem nam jege kwori dwoa yana mo.,Seim taane dem nam jege kwori doa yeini amo.,0.4444,0.2
+112,Maana mo tento kuri ne na bere kwori na toŋe to tei.,Ba nɔɔno tento kuri ne na bere kore na toŋe to tei.,0.25,0.175
+114,Kwori ke totoŋa yatɔ mo taane wone.,Kwoori ke totoŋa yatɔ mo taane wone.,0.1429,0.0357
+115,"Yanto mo ye botarebu poponem, botarebu kuri de botarebu beeri.","Yanto mo ye bu-taare bu popone mo, bu-saare bu kuri de bu-bia.”",0.8,0.3137
+119,De yeini de bere maŋa kalo keim dem na ke to mo.,De yeini de bere maŋa kalo keim déem na ke to mo.,0.0833,0.0278
+123,Kawea wó (keim na lage de ke) di wodiu kom.,"Kawea, wo cheim na lage de ke di wodiu kom,",0.2,0.0968
+124,Kawea wo (keim na ke de kɛ) di wodiu kom.,Krena ke de keim de wodiu kom.,0.6,0.4483
+125,Anuga déem (keim na ke de kɛ ye de ke de twoŋi daane to) vare gaao ne mo.,"Anuga déem keim ná ke de kɛ ye, de ke de toone daane toone vare gaao ne mo.",0.1667,0.1321
+127,Á wo (keim na ke de kɛ ye keira bam daga) vei sikuuli zem.,"Ano wɛ chemm ná ke de kɛ yikeera bam daga vei se kuu li zei,",0.7143,0.2857
+128,A wo (keim na ke de kɛ ye keiru wom ye dedoa to) vei sikuuli zem.,A wo keim na ke de-ka yi-keeru wom ye dedoa to vei sekuli zem.,0.3125,0.1064
+129,Kwori wae de bere taane dedoa botarebia beeri na sere daane tei.,Wɛe de bere da ni dedoa botare bia beeri na sere da ni tei.,0.6667,0.2115
+132,Ma n tetere botarebia n maŋe kwori na ye kolo to.,"Maane tete tere, bu tere bia maŋe kwori na ye kolo to.",0.5455,0.1842
+134,Ma maana yalo na maŋe to n ma-n maŋe kwori dwoa yalo na wo Kasem ne to.,"N maama yalo na maŋe to, n ma maŋe kwor-dɔa yalo na wo kasɛm ne to.",0.3529,0.1509
+135,Jeini na gurupa ne se á maŋe kwori totoŋa yam memaŋa.,Jeini ni na guri pa-ne se á maŋe kwori totoŋa yam memaŋa.,0.2727,0.0714
+139,Popone na kwori dwoa yalo botarebia banto na jege to.,Pofone na kwori dua yalo botare bia banto na jege to.,0.4,0.0698
+141,Popone botarebia bana dé na bere kwori ba yuu ne poponem maŋa ne to.,"Popone Botarebia, ba ná dɛ ná bere kwori ba yuu ne popone maŋa ne to,",0.3571,0.0741
+147,Ma maana yatᴐ n maŋe kwori totoŋa na ye tei Kasem taane dem wone to.,"Ba ná ya tɛ n maŋe kwori totoŋa na ye tei kasem taane dem wone to,",0.2667,0.1132
+156,Boboŋ-kuri ye woyuu kolo chekke tapane dem na tε ko taane to mo.,Boboŋ-kuri yei wo yuu kolo chekke tapane dem na tei ko taane to mo.,0.3077,0.06
+183,Ma n tetere botarebia n popone tapane dem kukuanu.,"Ma n tete de botare-bia, n popone ta pa-ne dem ko kwano.",0.6667,0.0976
+204,Ka-ga ka-maŋe yiga jege nyenyero dedɛ mo.,"Kaga, ka maŋe yiga jege nyenyero dedɛ mo.",0.2857,0.0
+211,Garem dento dwi maŋe de sensɔle selo na tɛ chega to mo.,Garam dento dwi maŋe de sensɔle selo na tɛ chega to mo.,0.0833,0.0233
+213,Garem dento dwi ye se n dole n yia mo lela lela tapane dem wone.,N daarem dento dwi yei se n doole n yei n wo lela lela ta pa-ne dem wonnu.,0.6667,0.2041
+217,Ga tapane dem kuri ne to.,Yoga ta pa-ne dem kuri ne to.,0.5,0.1053
+218,Popone boboŋ-kuri delo na wo tapane dem na wo kuri ne to wone.,O pwoni boboŋ-kuri delo na wó ta pa-ne dem na wó kuri-ne to wone.,0.6154,0.1042
+252,"Ko jege woŋo se ko ke de chega pam, negero de chega dim mo.","Ko jege woŋo se ko ke de chega pam, negro de chega de nmo.",0.2143,0.0682
+256,Ka taa sɛ nɔɔna nia yɔɔ yerane de nam ba jege kuri.,Ka taa sɛ nɔɔna nia yɔɔ yerane de nam ba jege kuri.,0.0,0.0
+257,Dé jege se dé bwei bwia mo se wonnu veere jase ne ko na maŋe.,"Dé jege se dé bwei bwei amo se, wonnu veero jase ne ko ná maŋe.",0.2667,0.0652
+266,A wó kwaane se a taa ke zɔ-niiri a ŋwea ne.,A wó kwaane se a ta a ke tɔge nieri a ŋwea ne.,0.3636,0.129
+273,Ga tapane dem na wo kuri ne to se n daare n leiri bwia yam na saŋe to.,"Ga ta pa-ne dem ná wó kuri ne to, se n daare n leiri bwia yam na saŋe to.",0.2222,0.0385
+276,Laam ta na á leira yam á bere gurupa yadwonna yam.,"Laam ta ná a leera yam a bere guru-pa yadwonna yam,",0.3636,0.1026
+280,Sikuuli yuu tu wom mo ye dam-diru na ye paŋwa to sikuuli dem ne.,Wu-yuu tu wom mo ye dam-diiru na ye paŋa ŋwa to se kuli déem ne.,0.5714,0.2449
+319,Zura yera n ga tapane dem na wo kuri ne to.,Zura yera n ga ta pa-ne dem na wo kuri ne to.,0.1818,0.0
+320,Kwɛɛm ye wo-cheɔ kolo na woli nabiinu yezura ye ko zeiŋi o yuu to mo.,Kwɛm ye wo chɛ kolo na woli nabiinu yezura ye ko zeiŋi o yuu to mo.,0.2,0.0566
+336,Ma n tetere boboŋa n maŋe ‘boboŋ –kuri’ na ye kolo to se ko veere.,Nmo maa n tete de boboŋa maŋe boboŋ-kuri na ye kolo. To se ko veere.,0.4667,0.125
+338,Negero dae woŋo kolo n na wó fe nɔɔna se ba pa-m to amaa ko ye nmo tetere totoŋnaga mo wó pa se nɔɔna taa nege-m.,"Neguru dae woŋo kolo. Nmo ná wo fe nɔɔna se ba pa-m to, a maa ko ye nmo tete de totoŋ-naga. Mo wó pa se nɔɔna taa nege-m.",0.3077,0.0824
+339,Konto nam mo pa se nɔɔna yedaane nua.,Kwonto nam mo pa se nɔɔna ye daane noa.,0.5,0.069
+342,Nii ko na lamma tei n ná zo kelase pa se nɔɔno maama ware o dwoŋi de wopwolo.,"Nii-ko, nam lamma tei n na zo ke-la se pa se nɔɔno maama ware o dwoŋi de wopwolo.",0.3333,0.0339
+345,Negero jege se te taa ye tento mo.,Ko nɛ ko jege se te ta yei tento mo.”,0.625,0.2692
+350,Tayuu kom tɛ bɛ mo ko tɔge de boboŋ-kuri delo na wo tapane dem wone to?,Ta-yuu kom tɛ bɛ nmo kotɔge de boboŋ-kuri delo na wó ta pa-ne dem wonnu to.,0.4375,0.0741
+352,Ma tapuna yana n ma-n popone tapane dem na wo baŋa ne to kukuanu.,Ba ta puna yana a maŋa popone ta pa-ne dem na wo baŋa ne to kukwaane.,0.5714,0.14
+357,Ka-ga lanyerane de zanem sere daane tɛ mo?,Kaga lanyerane de zaŋe ne m seri daane tɛ mo.,0.5,0.0909
+358,Maŋe se ko veere ka-ga ka-gaale yiga nyenyero tetɔ.,Mɛŋa se ko veere kagaale yiga nyenyero tetɔ.,0.2222,0.15
+359,Maŋe kolo na pae ka-ga ka-maŋe yiga de ka-ga ka-gaale yiga dae bedwe to.,"Meiŋi kolo ná pae kaga ka maŋe, yiga de kaga ka gaale yiga dae bedwi to.",0.5,0.0926
+376,Afegesa totoŋe taane wone ye se ko ma ko mɔ botarebu-doora mo.,Pubwɛgɛ saŋe totoŋe taane wone yei se ko ma. Ko mo botane bu-dɔra mo.,0.5,0.2653
+382,Afegese zege ko pae sɔfegesa naa perefegesa mo kuni dedɛ.,"Safegisigi Kopɛ Sɔfizesa, naa Pɛfisi samo kuni dedɛ.",0.7,0.3404
+387,Perefegese bere we afegese dem tu botarebu wom boboa ne mo.,Perfijijis berɛ wafijijis dem tu botare bu wom. Boboa ne mo,0.5455,0.3125
+388,Nfegese ye afegese delo na tui botarebu tetare ne to mo.,N fe geese ye a fe geese delo naa twe bu-teare bu-tei taare ne to mo.,1.0,0.2
+389,Sɔfegese ye afegese delo na tui botarebu kweila ne to mo.,Sofagis ye Afagis delo na twe botare bukweela ne to mo.,0.4545,0.2174
+390,Sakumfegese de ye afegese dwi mo.,This is,1.0,0.9259
+401,Gwaane de n dwoŋi se á maŋe se ko veere jase afegesa na ye kolo to.,"Mwane dentwoŋi se, á maŋe se ko veere ja se a fa jesa na ye kolo to.",0.5625,0.098
+424,Banto maama nuŋi yere diga kam ne mo.,Banto maama nwoŋi yeri diga kam ne mo.,0.25,0.1034
+431,Afegesa totoŋa ye dwi dwi mo.,"Po Jesa, dɔ-teŋa ye dwi dwi mo.",0.5,0.3043
+432,Ya woli pae dé mɔɔne botarebu-doora.,Ya woli pae de mɔɔne botare-bu dwoora.,0.5,0.069
+434,Ya woli pae botarebia leiri ba di.,Yɔwoli pae Botarebia leiri ba di.,0.2857,0.037
+436,Ya woli pae dé mɔɔne keimbotarebia na vei de maŋa berem.,"Ya woli pae de mɔɔne keim-botarebia ná vei de maŋa berem,",0.1818,0.0444
+437,Ya zeini pae botarebu wae o bere dedoa de kɔgɔ daane.,Ya zeeni pa ye botare bu wae o bere dedoa de kɔgɔ daane.,0.4545,0.0476
+439,Ya woli pae botarebia poponem tɔge chwei ye ba kuri ta ye mwale.,Ya woli pae botare bia popo ne tɔge chwei ye ba kuri ta ye mɔle.,0.3846,0.0588
+447,Á jeini na gurupa ne se á ma afegesa dwoa yam dedoa dedoa á ma á mɔ botarebudoora se ko yé muri botarebia bana bana.,Anjiene de nagurupa ne se a maa fegesa dua yam dedoa dedoa. A ma a mɔ botare-budwora se ko ye muri botare-bia banna banna.,0.56,0.1758
+458,Buseseŋa kam laam dɔ mo kolo ŋwaane ka puga sua.,Bu-siseiŋa kam laam dɔ mo kolo ŋwaane kapuga swa.,0.4,0.0789
+459,"Sia ywoo swoona ywoo, te maama wae te fɔge pɛɛla.","Sea ywo-o, so-o na ywo-o, te maama wae te fɔge pɛɛla.",0.3,0.0526
+460,O seene yia mo o toŋe pa se ko ke lanyerane.,Seene yia nmo wo toŋe pa se ko ke lanyerane.,0.2727,0.0909
+464,Taleirina jege dwoa dwi dwi mo taane wone.,Pa Larry na jei gedoa dwi dwi mo taane wone.,0.625,0.1765
+469,Dé wó bwɛ ya dedoa dedoa kuri ne.,De wó bwɛ ya dedoa dedoa kuri ne.,0.125,0.04
+478,Sana mo ywoo namwale balɔrɔ mo ywoo te maama ye wo balwaaro mo.,Sana mo yei-o na mwaale balɔrɔ mo yei-o tei maama ye wo-balwaaro mo.,0.5385,0.12
+479,Wɔ mo leena se á bwoŋi-o?,O mo leiri-na se á bwoŋi.,0.5,0.3333
+496,Ko na tu konto to ŋwaane mo o daa wo di gole dem maama.,Ko na tu konto to ŋwaane mo o daa wó di gole de maama.,0.1429,0.0488
+497,Wεdam ná tu ywo seise o kwɛɛre chekke.,Wɛ dam ná tu ywo se se o kwɛɛre chekke.,0.5,0.0667
+498,Ba na duri to ba luga.,"Ba na duri to, ba lo ga.",0.3333,0.0625
+505,Wodiu wo ti kolo ŋwaane mini dem ba jaane mo konto to á baa di leile.,Wodiu wó ti kolo ŋwaane meni dem ba jaane mo konto to. Á ba á dii leilei.,0.375,0.0943
+506,Akwo duri mo bɛŋwaane o ba lage taane ye bia bam ta chene.,Ako duri mo baŋwaane o ba lage taane ye bia bam ta cheini.,0.2308,0.0889
+519,Ya woli mo pae dé wae dé gwaane takukua dedoa naa tacheiŋi de dedwoŋi daane.,"Ja woli mo pae dé wae dé gwaane ta kokwa dedoa, naa ta cheiŋi de dedwoŋi daane.",0.3333,0.0492
+520,Dé mae ya dé gwaane boboŋa na bere veo to mo daane.,"Dere maa ya de gwaane, boboŋa na bere vio to mo daane.",0.3333,0.1538
+521,Ya woli pae dé wae dé kwei boboŋa na bere sεεm to mo dé gwaane daane.,"Ya Yezu, de kwei boboŋa ná bere sem to, mo de gwaane daane.",0.5,0.3019
+522,A wó vu yaga kolo ŋwaane a lage wodiu mo.,A wó vo yaga kolo ŋwaane a lage wodiu mo.,0.1,0.0323
+523,Dé mae ya dé gwaane boboŋa na bere veo to de yalo na bere sεεm to mo daane.,Dé maa ya dé gwaane boboŋa ná bere vi-o to de yalo ná bere sem to mo daane.,0.2778,0.1053
+527,Wadɛ fenfee mo wora na bere dé na jege se dé taa mae taleirina dé toŋe tei to.,Ware fenfee mo wora na bere de na jege se de taa mae talerina de toŋe tei to.,0.2778,0.1
+529,"Taleirina lei boboŋa, kikia de wonnu mo daane.",Ta-leeri-na le boboŋa. Kikia de wonnu mo daane.,0.25,0.0541
+532,Taleirina mae ya pɔɔre botarebia na popone ya tɔge da kwaga to mo daane.,Twɛleerim na ma ya pɔɔre Botarebia na popone ya tɔge da-kwaga to mo daane.,0.3571,0.0862
+544,Wɔ mo pae wonnu tem tento yera yam?,O mo pae wonnu tem tento yera yam.,0.125,0.0741
+566,"Gwonim dem wae de gwoni botarebu wom boboa ne, tetare ne, naa kwola ne.","Gwonim déem wae de gwoni botare bu wom boboa ne, tetare ne, nakola ne.",0.3571,0.0545
+590,Popone afegesa dwoa yam na ye yalo Kasem ne to.,Popoa na fɔge se a duri a yam na? Ye Yalukasem ne to.,0.9,0.2162
+591,Bere afegesa yana Kasem ne.,"Mɛre a fa jesa, yena a kasam ne.",1.4,0.3182
+592,Bwɛ kwata kwata afegesa totoŋa yana.,"Wɛ kwa ta, a fa jei-sa totoŋa ya na?",1.3333,0.2667
+594,Mɔ botarebia banu banu n pa afegesa dwoa yam Kasem ne.,Mo botare-bia banu-banu n pa Afijesa dua yam kasem ne.,0.4545,0.1163
+595,Maŋe taleirina na ye kolo to chekke Kasem ne.,Meiŋa itale dem nam ná ye kolo to chɛ ke kasem ne.,0.7778,0.3056
+596,Popone taleirina dwoa yalo na wo Kasem ne to n tiŋi.,N dɛ leiri na dwoi yalo na wo Kasem ne to n teiŋi.,0.5455,0.2195
+597,Maŋe taleirina dwoa yalo n na popone to na sere daane tei to.,Meŋe ta leeri-na dwɛ yalo o na popone to na sere daane tei to.,0.3846,0.1042
+598,Ma dwoa yam dedoa dedoa n na popone to maana n mɔ tapuna.,Amo ma dwoori yam dedoa. Dedoa na popone to ma na mɔ ta pwona.,0.5385,0.25
+599,Lɔ bibeiri taleirina yalo na wo tapuna yam wone to kuri ne.,Solobi beere taale yere na yalo na wo ta puna yam wone to kuri ne.,0.5833,0.1915
+600,Anutua di amaa o wo su wodiu kom.,A nu-twea di a maa o wosu wodiu kom.,0.75,0.08
+601,Kukura kam wei mo pa se ŋweena bam duri.,Kokora kam wɛ mo pa se ŋweena bam duri.,0.2222,0.129
+602,Sikuuli bia yuu tu ŋɔɔne de bia bam konto ŋwaane mo ba ye seei to.,"Tuli bia, Juu jeini de bia bam konto ŋwaane amo ba ye sɛ to.”",0.4,0.2941
+603,Nɔɔno wom nɛ bia bam mo ye ba duri kolo ŋwaane ba fona mo.,Nɔɔno wom nabia bam mo ye ba duri kolo ŋwaane ba fona mo.,0.1429,0.0227
+604,Maŋe se ko veere botarebia mɔɔnem chwodɛ na ye kolo to.,Meŋi se ko veere botare bia mɔɔnem chwoi dɛ na ye kolo to.,0.4545,0.0682
+605,Popone botarebia mɔɔnem chwodɛ sem wone setɔ Kasem ne n tiŋi.,Popone Boterebia mɔɔne Mchudasem ŋweni setɔ Kasem ne diini.,0.6364,0.2
+606,Maŋe se ko veere botarebia mɔɔnem chwodɛ sem dwoa yatɔ memaŋa.,me ŋe se ko veeri Botarebia mɔɔnem chwoeda sem dwɛ ya tɔge me maŋa.,0.8182,0.1569
+611,"Zem tento, wonnu jirim ye kolo na jege ŋwaane to mo tɔnɔ zamesem ne.","Zem tento, wonnu jirim, ye kolo na jege ŋwaane to mo tɔnɔ zamsem ne.",0.0714,0.0189
+618,Dé wó ma wurobɔɔta dé leiri berena yuu ne dɛ dedoa?,"ye bu ma wori bɔɔta, de leiri bere-na yuu ne dɛ dedoa.",0.4545,0.175
+622,Dé wó ke bobwea poponem wadɛ baŋa ne.,Dɛ wó ke bobwea popone mo wa de baŋa ne.,0.625,0.1034
+630,Takukua ye botarebia mo tu daane ba mɔ tapuni.,"Tɔn-kokwa ye Botarebia mo tu daane, ba mo ta puni.",0.4444,0.1351
+659,Yere tacheiŋi (YrT) ye tacheiŋi dwi delo botarebu-yuu kom na ye yere to mo.,yeeri ta-cheiŋe ta-cheiŋi ga-cheiŋi dwi delo botare bu-yuu kom na yeyere tomo.,0.7857,0.1897
+661,Nii maana mo tento kuri ne.,Ni ima na nmo tento kuri ne.”,0.6667,0.0952
+662,Yere tacheiŋi (YrT) wae de ye yere (Yr) naa yereleirinu (YrL) yerane.,"Yere ta cheiŋa, wae de yi yiri naa yeiri leeri nwoŋi yerane.",0.6667,0.3137
+667,Kolo kolo wo seini botarebu-yuu kom.,Kolo wo sene botare-bu yuu kɔm.,0.8333,0.2414
+668,Botarebia na dwoi dedoa to wae ba wo yere tacheiŋi ne.,"Bo da yina na jwei dedwea to, wae ba wo yere ta cheiŋi ne.",0.6364,0.2093
+670,Teibole dem na wo kuri ne to jege maana yanto dwi mo.,"Tui, bwoli dem na wo kuri ne to jege maana yanto dwi nmo.",0.25,0.0976
+686,Bu balaŋa ba fɔe vwa.,Ba laŋa ba fɔe vwa.,0.4,0.125
+692,Boŋo kom zo diga kam?,Kɔm zo diga kam.,0.4,0.3125
+699,"Maana yalo na twoŋi to ne, botarebuyuu kom ye ‘daa’ mo ye botarebu wolo na seini ‘daa’ to ye ‘-memena’ mo.","Bana yalo na toŋe to ne, botare bu-yuu kom ye daane mo ye botare bu wolo na seene daa to ye memena amo.",0.4286,0.1169
+701,"Dé ta wó maane we, botarebia balo maama na seini botarebuyum tem to wae ba tui botarebu-yuu daa kalo maama de.","Dé ta wom maane we, botare bia balo maama ná seeni, botare bu-yum tem to wae. Ba tui botare bu-yuu daa kalo maama de.",0.4286,0.046
+703,"Jeini na gurupa ne, laam mɔ na yere tacheiŋa yatɔ yatɔ.",Jeini ni naguru-pa ne laam mɔna yere tacheeŋa yatɔ yatɔ.,0.4545,0.0698
+713,"Maana yalo na wo baŋa ne to, keimbotarebu tacheiŋi yedaa kam ye KbT - Kb.","Maŋa yalo na wo baŋa ne to, keim-bu Teiru bu ta cheiŋi ye daa kam ye bwei-tia Ɛkwa.",0.7143,0.2679
+721,Maana yadwonna mo tento kuri ne.,Maana ya dwonna amo tento kuri ne.,0.5,0.0385
+723,Bereno ta maa wo tu ywo!,Bɛren o ta ma wo tui.,0.8333,0.2778
+729,"Jeini na gurupa ne, mɔ na keimbotarebu tacheiŋa yatɔ.","Jei-ni nagurupa ne. Nmo ná ke n botare bu ta cheeŋa ya to,",1.3333,0.1628
+739,Teibole dem na wo kuri ne to bere keinseini tacheiŋa maana mo de ya yedaa dwoa.,Tea booli dedam na wo kuri ne to bere keese ne ta-cheiŋa maana mo de ya ye da-doa.,0.4375,0.1746
+748,"Jeini na gurupa ne, laam mɔ na tapuna fuga na jege keinseini tacheiŋa to ya wone.",yeini na guri pa-ne laam mɔ na ta pona fuga na jege kenseim ta-cheŋa to ya wone.,0.4375,0.1094
+749,Kwaane na se á ma keinseini yedaa kam á ma-á toŋe.,"Kwaane ná se, á maa kesei-ne ye daa kam á maa teiŋi.",0.6364,0.2368
+752,Yereseini tacheiŋi (YsT) ye tacheiŋi delo dem botarebu-yuu na ye yereseini to mo.,"Yere seeni ta cheiŋi setia ni, ye ta cheiŋi delo dem botare-buyuu na ye yere seeni to mo.",0.7692,0.1231
+753,Yereseini tacheiŋi dem seini yere naa yereleirinu mo.,Yere seene ta cheiŋi dem seeni yere na yere leeri ne mo.,1.125,0.1333
+758,Tiobu wom ye kukwolo mo.,Nadwoobwom ye kukolo nmo.,0.8,0.4211
+759,Bu wom dae dedɔrɔ chekke na?,Bo wom dae dedɔro chekke na?,0.3333,0.0909
+760,O zo gɔrɔ nasoŋo chɔe mo!,O zure gɔrɔ na soŋe wó chwoi nmo.,1.0,0.5263
+762,Ayaga yeigi pupu nadoŋo wam.,Á ya ka yage pupu na dwoŋi o wane.,1.6,0.3913
+765,Konto ye tacheiŋi mo na bere woŋo.,Konto ye ta jeiŋi mo na bere woŋo.,0.2857,0.0741
+782,"Maana yam na wo baŋa ne to, yere tacheiŋi dem poponem mo tiini de zwori to.","Maana yam na wo baŋa ne to, yere ta cheiŋi de n popone mo tiini de zoore to.",0.375,0.069
+783,Botarebia balo maama na daare ye ba wo zwori to ye keimbotarebu tacheiŋi mo.,Botaria balo maama na daare ye ba wo zwori to ye ke mo taare bu ta cheiŋi mo.,0.5,0.0806
+784,Botarebu-yuu kolo na wo keimbotarebu tacheiŋi dem wone to ye di mo.,Ba tare bu yuu kolo na wo ke nmo tare bu ta cheiŋi dem wone to ye di nmo.,0.9167,0.0741
+790,Ba mae tacheiŋi ba bere boboŋa.,Ba ma ta cheiŋi ba bere boboŋa.,0.5,0.04
+802,Dé na yɔɔre dé yi da to mo dé vei dé beeri jei-ŋoŋa konkwara kuri ne.,"De ná yɔɔre de ye da to mo, de vei de beeri jei ŋwaŋa konkɔra kuri ne.",0.5625,0.1923
+808,"Jeini na gurupa ne, laam tigisi tacheiŋi dwoa maana yam (a.",Jeini ne na guri pa-ne. Laam tigisi ta cheiŋi doa maana yamaŋa.,0.7273,0.1304
+812,Ta n leira yam n bere kelase dem se á bwε ya wone.,Ta-á n leera yam n Beirakula se dem se á bwɛ ya wone.,0.3846,0.1622
+820,Takukua ye taane mɔɔnem wo woŋo mo.,Tazukwa ye taane mɔɔna wo woŋo mo.,0.2857,0.1429
+828,Bia bam tigi diga ne mo.,Bia bam tege dega ne mo.,0.3333,0.1667
+830,Takukwi dwoa yalei mo wora.,Tɛ kokwe doa yalei nmo wora.,0.8,0.2273
+835,Maana yam dedoa dedoa na wo baŋa ne to wae ya zege ya yerane ye ya jege kuri.,Samaana yam dedoa dedoa na wo baŋa ne to wae ya zege yayera ne ya jege kuri.,0.2222,0.0678
+839,Beeri na takuku-dεεra dwoa yana ntanεεte baŋa ne.,"Beeri na tage kukodɛra doa, ya nam ta nye tei baŋa ne.",1.0,0.25
+841,Takuku-dεεra dwoa yana mo wora ko tɔge de ya na lage ya bere naa ya ta kolo to.,Ta-á kodweera doa yaana mo wora ko tɔge de ya na lage ya bere naa yata kolo to.,0.3333,0.1333
+842,"Yanto mo ye; taane, fefeo, bwia de ŋwana.","Yanto nmo ye taane, fefeo, bwia de ŋwa na?",0.375,0.0333
+846,Dé wó bobo tɛɛsa yam zem.,Dɛ wó bobo tɛsa yam zek.,0.5,0.1579
+849,Fefeo takukwi sem wae se ba jege taankugu.,Fekil ta kukwe sem wae se ba jege tei tango gubi.,0.75,0.3235
+852,N wó wane n pa botarebia na mae ba bwei bwia Kasem ne to maana na?,Amo wo wane n pa botare-bia na maa ye ba bwei bwia kasem ne to maana na.,0.25,0.12
+857,Wɔ mo ye n bereno?,Wo mo go ye n bɛ-ne nu?”,0.8,0.4615
+860,Ka yeini ka sale de takukudɛɛre mo se ka kuri nuŋi jase.,Ka yeini ka sale de ta ko kedɛ dem mo se ka kuri nwoŋi jase.,0.4167,0.1591
+861,Konto ŋwaane mo ba bwoi ka we takukunabwonu to.,Konto ŋwaane nmo ba bwoi ka Wɛ tako kuni na bwoonu to.,0.6667,0.1579
+866,"Alɔɔ na vei kara to, o vage mo.","Kolam na vei kara to, o vage mo.",0.125,0.1818
+867,O saŋe kolo ŋwaane o kana mo wae.,O saŋe kolo ŋwaane o kaane amo wae.,0.25,0.08
+868,Kwara wó yeigi o zola yam se o laam ba sɔŋɔ.,Kwaara wó yeigi o zola yam se o laam ba sɔŋɔ.,0.0909,0.0303
+869,Bibeiri mo lɔge takuku-nabwona bam kuri ne tapuna yam na wo baŋa ne to wone.,De beeri mo loge tako ko nabwona bam kuri ne tapona yam na wo baŋa ne to wone.,0.4667,0.1167
+878,A yei baaro wolo na tu ywo to.,Ya yei baaro wolo na twe-o to.,0.375,0.1818
+879,Jeiga kam mɛ ba kwɛ to lamma.,Jega kam mɛ ba kwɛ to lamma.,0.1429,0.0455
+880,Kwei tɔnɔ kolo n na popone to n pa ne.,Kwei tɔnɔ kolo en na popone to n pa-ne.,0.3,0.0357
+881,Dé nɛ tiabu napwoŋo kom na jei to.,"De nɛ tɛa bu, napoŋo kom ná jei toone.",0.75,0.2692
+890,Yere takukua taankugu zega jei ne.,Yere. Ta-á kokwa. Ta-n kugu zega jei ne.,0.6667,0.1429
+891,Bu wolo na di yiga tɛɛsa yam ne to jwoŋi pɛɛra.,Buwolo na di yiga-tɛsa yam ne to jwoŋi pɛɛra.,0.3636,0.0278
+892,Kaane wolo na yeigi natera yam to kε diim mo.,"Kaane wolo ná yeigi natera yam to ke di nmo,",0.4,0.1143
+895,A jeeri tɔɔno wolo na go gweeru wom to.,Jei dé tɔgeno wolo na gɔ gweero wom to.,0.5556,0.2667
+899,Keinseini takukua ye takukua kalo na ke keinseini totoŋa tapuni wone to mo.,Teeni zeini ta ko kwa ye ta ko kwa kalo ná ke teeni zeini totoŋa ta puna wonnu tomo.,1.1538,0.2581
+904,O guli maŋa kalo o na yage sɔŋɔ to.,o giuli maŋa kalo o na yage sɔŋɔ to.,0.1111,0.0385
+905,Takukwi selo maama bibeiri sem na lɔge se kura ne to ye (keinseini takukua) takukunabwona mo.,"Ta-á ko kwei, Saloma ma be biiri sem ná lɔge se kora ne to ye keim seni ta-ko kwoa mo. Ta-ko ko nabwona mo",1.0625,0.24
+928,Ko ye makke na mae de kweeli tapuni se ko bere we de guri to mo.,Ko ye ma kɛ ná mae de kweeli ta puna se ko bere we de guri to mo.,0.3125,0.0833
+929,Taane paare mae de guri tapuni mo.,Zaane Paare ma de guri ta puni nmo.,0.7143,0.1111
+930,Ba mae de ba pɔɔre tapuna daane.,"Ba a pɔɔre, fatwa puna daane.",0.7143,0.36
+931,A vei se a yeigi wonnu mo.,O vei se á yeigi wonnu mo.,0.2857,0.1053
+932,De yeini de wo botarebu na gwoni o popone to gurim ne mo.,Ba yeini de wo Bu Taarebu na gwoni o popone to gurim ne mo.,0.2308,0.0909
+933,De mae de bere ni-yeila taane gurim.,Deiŋi n mi ne a taa ye ne n kuri.,1.4286,0.6429
+936,"A vei yaga mo a yeigi nanjua, yɛ, seo, de leimuni.","A vei yaga mo. A yeigi nam joa, ya sɛ-o, delei mo ni.",0.6364,0.1389
+937,"Awɛtua jege sane, lɔɔra de tega.","Ao Wɛ toa jege sane, lɔa de tega.",0.6667,0.16
+938,"Ka mae ka pɔɔre chana da, kateira de teene daane.","Ka mae ka pɔɔre chana da, ka tera de teene daane.",0.2,0.0263
+940,Ka mae ka pɔɔre yereseina yalo na mae ya seini yere dedoa to mo daane.,"Ka mae ka pɔɔre yere sena yalo na mae, ya seene yere dedoa to mo daane.",0.2,0.0545
+947,Kɔlɔn-kukua mae ka pɔɔre takuku-dɛɛra yalei mo daane.,Kolongu kukua mae ka-pɔɔre de ko kodɛɛra yalei mo daane.,0.75,0.186
+948,A gage twanno dedɛ; ‘Asuba’ mo a swoi te maama wuu wone.,"A ga ja twaane o dedɛ, a suba mo a swe tei maama wo wonnu.",0.8333,0.2683
+950,Ka mae ka pɔɔre wonnu yera na bwoŋi ya twoŋi da kwaga to mo daane.,Ka mae ka pɔɔre wone yera na bwoŋi ya toŋe da-kwaga to mo daane.,0.2667,0.0784
+958,Ya mae ya bere botarebia balo na ye ni-yeila taane to mo tapane wone.,Ja maa ya bɛɛre botare-dɛa balo na ye ni-yela taane to mo ta pa-ne wone.,0.5,0.1296
+962,Hafene mae de bere pwola kalo na tigi wonnu laŋa ne to mo.,A funda ma ye de bere-pɔla kalo ná tege wonnu laŋa ne tomo.,0.7692,0.2222
+965,De ta mae de bere wonnu telei yedaane mo.,De ta mae de bere wonnu telei ye daane mo.,0.2222,0.0
+967,De mae de lei botarebia na dwoi dedoa to mo daane se ba ji botarebu-doa.,Jemai de lei botare bia na dwei dedoa to mo daane se ba jei botare bedoa.,0.5333,0.0893
+968,A-gwoni-dakwoala-a-che -waaro boboŋe dem bere swa.,O gwoni da ko lage che waaro boboŋa dem bere swa.,1.1667,0.1538
+969,Sikuuli bia bam ke ka-seigi se ka-lware mo ba kwɛɛra.,Kuli-bia bam ke ka seigi se ka lɔre nmo ba kwɛɛra.,0.7,0.1463
+976,A yuywa bam (Adoa de Kadoa) ti sεkɔndere sikuuli.,A yua bam taa dɔa. Te sɛ kɔ nere se kooli.,1.0,0.3947
+978,De wae de leiri kɔma naa kɔlɔm yuu ne de toŋa.,"De wei de leiri, naa kolo mo yuu ne de toŋa.",0.3636,0.2571

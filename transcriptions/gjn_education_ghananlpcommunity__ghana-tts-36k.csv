@@ -1,0 +1,201 @@
+sample_id,reference,hypothesis,wer,cer
+16,Kamalgakul la kamalgaba be kaba tereso nna.,Athika Kɔɛla Kamagaba bɛ ka ba tre so na.,1.2857,0.3056
+17,Kamalgakul nɔtowor ela kɔnɔtowor nɛ ku bee shuŋ fanɛ kamalgakul.,Kemalga kul nɔ tuwɔr e la kɔnɔ tuwɔr nɛ k bee shuŋ fanɛ k malga kul.,1.2,0.1296
+25,Loŋso Koji kɔ mmalgakul anyɔ nna.,Kulumso koji ko malgakɔl anyɔ na,0.6667,0.2963
+30,Le bee tiŋ a wɔrɔ nna nɛ eboltowor baaŋ maŋ chɔwɔ nnɔtowor ere so.,Nɛ bee tiŋ a wora nna nɛ ebɔlto wɔr baa maŋ chɔɔ nɔtɔ wɔr ere so.,0.5714,0.2115
+38,Ku bee chɛ bebiipo to nna nɛ baa tiŋ a nyɛ mmalgaba pupɔr monɛ a niŋi.,ku beeche bebiipo to nna nɛ baa tiŋ anya malga ba popɔr mo nɛ a niŋi.,0.5,0.0741
+39,Ku bee chɛ bebiipo na to nɛ baa tiŋ a pin ngbar na be mmalgaba.,Kubeeche be biipo na to nɛ baa tiŋ a piŋgbare na bee malga ba.,0.6,0.1042
+40,Ku naa chɛ bebiipo to nɛ baa pin ngbar na be mmalgaba be afiito.,Kunachɛbi biipo to nɛ baa pin gbare na bɛ malga ba bɛ a fiɛ to.,0.8571,0.16
+43,"Ashi esoso be akeniso ere to, kukul kama la kamalgakul nna.","Anshe sosobi Akeniso era to, kukul kamalaaka malgakulɔ na.",0.7273,0.1277
+44,Ghana be ngbarana be mmalgakul be ntuŋso kɔr abarto.,ganabe ŋgbarana bee malgakɔl bee n tuŋ sokɔr a bar to.,1.2222,0.1163
+47,Kamalgakul buwitoso la kamalgakul nɛ ku bee luweto nɛ eboltowor nna.,"Kama alɛ ga kɔl bui to so la, kama alɛ ga kɔl nɛ k bee luwe to nɛ ebɔl to wora na.",1.6364,0.1754
+50,Kede ela kamalgakul monɛ ku bee luweto nɛ kɔnɔtowor.,Kede e laa kamalga kule mo nɛ k bee luwe to nɛ kɔnɔ to wɔ.,1.3333,0.1163
+53,Ta fo gbagba be mmalgaba n delgeso kusɔnɛ ku la kamalgakul.,Kepuwudad barɛ kaŋɛ baa ta dalgasɛ kusɔ nɛ k la kamɛlga ko la.,1.0909,0.5208
+55,Ŋinito mmalgakul be ntuŋso to ashi Ngbanyato.,Nɛnɛ to malga kɔlbi ntuŋ so to ashi ŋgbanya to,1.1429,0.1842
+56,Ŋinito kamalgakul be kapɔr be tunɔ ashi mmalgaba pupɔr be kenyɛ to.,Nɛnɛ to kamalga kɔlbi ka pɔrbi tɔnɔ ashi maalga ba popɔrbi kenya to?,0.9167,0.2
+58,Ngbar kama nɛ kumobe mmalgakul be kapɔr.,gbir kama nɛ kumo be malgɔkɔlbi kopɔr,0.7143,0.2121
+69,Buwito kamalgakul be kapɔr ashi Ngbanyato.,Bubi to kamalga kɔlbia kapɔr ashi ŋgbanya to,1.0,0.1389
+73,Fo nɛ fo barkasa e keni mmalgakul monɛ a wɔ mmalgaba na to.,Fo nɛ fo barkasa e keni malgakɔl mo nɛ a wɔ malgaba na to.,0.3077,0.0652
+74,Fo nɛ fo barkasa e keni mmalgaba na be kekama be mmalgakul be kapɔr.,"Fo nɛ fo ba kasa e keni malga ba na bi, k ka maa bee malga kɔlbi kapɔr.",0.7857,0.1481
+78,"Kechali so, chanase bee pre kenishi nna n chala ajibi mobe kapro to.","Kachali so, chanase bee prea kenishina, nchala ajibi mo bee kpra b to.",0.6923,0.1296
+86,Menye e ta menyebe atuwebi n nase bebiipo kikɛ be anishito.,Men yɛ e ta menyi be atuwa bee nase bebiipo kikɛ be anishito.,0.5455,0.1042
+87,Ngbar kikɛ bee ta ebolbenchɛrga nna a kpaŋsi nko a lara kamalga be kefiito efuli.,Bɛr kikɛ bee ta ebɔlbɛn chɛrga nna akpansiŋ ko a lara kamalga be kefiyo to efuli,0.5333,0.1364
+93,Ngbar pɔtɛana kɔ ebolbenchɛrga be ntuŋ pɔtɛana nna.,Baa pɔtɛana ko eboli beeŋ chɛrgabi ntuŋ pɔtɛana nna.,0.625,0.186
+97,Ade la amobe ako nna.,Dɛla amobi ako nna.,0.6,0.1875
+104,Ashuŋ kpakpaso asa nɛ ku bee shuŋ ashi ngbar to.,Kushuŋ kpakpaso asa nɛ k bee shuŋ asheŋ gbar to,0.4,0.1316
+113,Ebolbenchɛrga bee tiŋ a laŋɛ mmalgaba ashi katuŋ ko to a yɔ katuŋ pɔtɛ to.,Pɛr banteŋ ga bee tiŋ a laŋɛ malga ba shi katoŋ ko to a yɔ katoŋ pɔtɛ to.,0.5333,0.2203
+117,Ebolbenchɛrga bee chɛrga mmalgaba be afiito nna.,Goana nɛnseŋ a yɛ kade malɛ gba baa fɛtoŋ na.,1.4286,0.5854
+121,Ebolbenchɛrga e naaŋ shinɛ esa e pin amobe afiito nɛnɛ.,bɔl maŋ chɛr ga e naaŋ shɛa desnaa e sa e pin amɔbi a fito nɛnɛ.,1.1,0.3333
+123,Ta fo gbagba be mmalgaba n delgeso ebolbenchɛrga be asheŋ so.,"Kpɔpo nɛ bɔ e nyi, nnte, delge deya wɔ nɛlto. Kusɔ na meŋi, ŋeŋde an nya n wɛa diŋ inikpa tagpa nɛ. Nɛnɛmikɛ reŋde keni, ŋɛnso na nɛ e ti mo ba nɛ so mo keni, keni.",3.1818,2.02
+125,Ta akeniso monɛ adaga n ŋinito Ngbanyato be ebolbenchɛrga be ntuŋso.,"Ta a keni so mo nɛ a daga, ŋini to ŋgbenya to be bɔl be chɛr ga beeŋ tuŋ so.",1.5455,0.1404
+126,"Nɛ ntuŋso to, menye e buwito ebolbenchɛrga be ashuŋ to.","Nantuŋso to, menyi ebuwi to, ebɔl beŋ chɛrɛ kabɛa shuŋ to.",1.0,0.1591
+131,Pin ebolbenchɛrga be katuŋ monɛ a wɔ mmalgaba nɛ bu sa na to.,peŋ ebolɛŋ chɛr ga bee katuŋ mɔnɛ a wɔ malɛ gba nɛ Bosa na to.,0.7692,0.2292
+134,Pin mmalgakul monɛ a kata mmalgaba monɛ bu sa na be ebolbenchɛrga.,nɛ mɛlga kuwɔl mo nɛ a ka ta mɛlga bumo nɛ b saŋɛ naa bɛ ebɔl beeŋ chɛr ga.,1.5,0.3148
+141,Ta akeniso asa n ŋinito ebolbenchɛrga be ashuŋ ashi Ngbanyato.,Pamu sa ŋ ŋini to ebɔl ben chɛrga be ashuŋ ashi ŋgbenya to.,1.0,0.25
+143,Kaba ere bee buwito alakalkpra be kepin ashi kebɔaya nko kelijima to nna.,Kaba ere bee buu to alekalkpra bɛ kepeŋ ashi kebwayaŋ ko keelijima to nna.,0.6154,0.15
+148,Kebɔaya to be lakal kpra ela kebɔaya na be kesheŋtirso tenini.,Kebɔya to be lakale kpra e la kebɔya na be keshentirso to nini.,0.7273,0.098
+160,Abɔaya ko bee kaa wɔtɔ nna a chɛ lakal kpra to ashi kelijima to.,Abɔya ko bee ka wɔtɔ nna achɛ lakal kpra to ashi kelijima to.,0.2857,0.04
+184,Ta atuwebi na n karga amo nɛ a wɔ kaseto ere so.,Ta atuobi naŋ karga amo nɛ a wɔ kaseto ere so.,0.25,0.0833
+186,Amo ela kekraŋ manaŋmanaŋ nɛ kechuleto n kraŋ.,"Amo, elaki kraŋ manaŋ ŋmanaŋ nɛ kechule to ŋ kraŋ.",0.875,0.0789
+195,Kraŋ kaseto be kebɔaya ere.,"Kran, kasetoobi kebɔya ere.",0.8,0.1818
+225,Chigeto lakal kpra monɛ fo pin na n sa bebiipo kikɛ.,Chigeto la kalkbra mo nɛ fo piya na nsaba bee pɔ kikɛ.,0.7273,0.1707
+234,Ama nɛ bejunkparpo be mbii ka maŋ niŋi malɛ?,Amaŋ nɛ bejuŋkparpo be mbia kamaŋ niŋi malɛ.,0.5556,0.0857
+244,Ku bee pɔr yɛrda n naa bra nkilgi nna.,Kubee Pɔɔyɛda na braŋ kilgi na,1.0,0.2069
+246,Meeŋ pre kenishi a de kenunsa so mabe kabawɔtɔ to.,Meeŋ prea kenishi adekɛ nuŋsaso ma bɛ kabawɔtɔ to.,0.6,0.1
+252,Kraŋ kaseto be kebɔaya ere n shin tuwe mbishi monɛ a bɛso na.,Kraŋ kasetoobi kebuaya ere n shi tuwembi Shimoni abɛ so na.,0.6923,0.1042
+257,Sukuru be enimu ela kejunkpar be nŋini ashi sukuru to.,Sɔrubi enimu e la kajuŋkparbi ŋini ashi sukuru to.,0.6,0.1818
+278,Kede ela kananɛ esibɛpo bee nase mobe mfɛra nɛ abɔaya kasibɛ to.,Kee dii ela kananɛ esibɛpo bee nase mo bee nfɛra nɛ abɔya kasɛbi to.,0.5833,0.1538
+283,Kede ela kekeni fo gbagba be kakraŋ be enite saŋɛ na so feeŋ nu kebɔaya na m pe.,Kede la kikɛ nɛ fo gbagba bɛ kakrambɛ enite saŋɛ na so fee nu keboya naŋ pe.,0.5556,0.1774
+284,Kede bee ŋini fanɛ feeŋ tiŋ pin fanɛ kusɔnɛ fee kraŋ na fee pinto nko fo maa pinto.,Tɛri bee ŋini fanɛ fee n tiŋ n pin fanɛ kusɔ nɛ fee kraŋ na fee pin to ŋ kɔ fo maa pin to.,0.6667,0.1231
+290,Kekpal kama nɛ fee wɔrɔ na bee shi fobe kenyi dra monɛ fo chɛr a kɔ na to nna.,"Kekpal kaman nɛ fee wɔrɔ na bee shi fobi kenyi dra mo nɛ fo chɛr, akɔnɔtɔr na.",0.4211,0.0847
+295,Farfarbi ela bomin be alemfia nɛ eyilikpa be kaba junkparso.,"Kpatabiya la, walɛ Yuli Limitia nɛ Eyilikpabi ka ba juŋkpa so",1.0,0.42
+321,Bunyaŋ maŋ la kusɔnɛ ku beeŋ tiŋ bishi n sɔ nna ama kusɔnɛ ku bee fin a nase nna.,"Bunyaŋ maŋ la kesɔnɛ o mtimbi shi n sɔ nna, ama kesɔnɛ k bee fin a nase nna.",0.3684,0.1613
+322,"Kumo ela abaranyɔ kama be gbeltulase, kushuŋ to nko kachinato.",Kumo e la abrɛnyɔ kama begbalto la ase. Kushuŋ toŋ ko kachɛ na to.,1.1,0.1373
+333,Manɛ nɛ kumu na bee kaŋɛ fo kebɔaya na be lakal kpra la?,manɛ nɛ kumo na bee kaŋɛ fo kibɔya na bee la kalkrala?,0.4615,0.1163
+334,Pin n shin sibɛ kato junkparso nɛ kato nasepo na be mmalgafolmu na n nase.,Nshɛ sibɛ ka to juŋkparso nɛ ka to nasepo nɛ bɛ malkafɔl mo na n nase.,0.8,0.2034
+335,Duwɔ esoso be kebɔaya na so n kii mmalgafol ana.,doyeso so be kebaanaana so ŋ ki malga fɔlana.,0.8,0.2632
+336,Pin kekraŋ n lurito be adabi anyɔ monɛ fo bii kaba ere to nna.,Pinke kraŋ aluri to be adabi anyɔ monefobi ka ba ere to nna.,0.5714,0.0625
+338,Manɛ ela kekraŋ nɛnɛ(fluency) nɛ ketiseto(evaluation) be mbarga?,"Bɔnɛ Ɛɛla Fɛkbanɛ, Nɛ, Basamuriayɛ, b jeŋ to the  Israɛmbɛa in Zaga,",1.5,0.7115
+339,Ŋinito kakraŋ damta be adabi asa.,ŋini to kakraŋ damta bɛ adabi asa.,0.5,0.037
+340,Ŋini kekraŋ n lurito nɛ kakraŋ damta be mbarga.,nɛ k kraŋ luri to nɛ k kraŋ damta be mbarga.,0.7778,0.1579
+357,Atiisobi be kushuŋ ngbar to ela mmalgaba pupɔr be kenyɛ.,Hatisɔbi bee kushuŋ bara to e la malgaba popɔr bee kenya.,0.9,0.2391
+364,Atiisobi la ketere nɛ anye kɔ a sa kɔranishito nɛ kɔrmmanto kikɛ nna.,tisobi la ketre nɛ anyi kɔ asa kɔr anishito nɛ kɔrmaŋ to kikɛ na.,0.6923,0.125
+368,Ketiisobi baaŋ mata kamalgabanio be anishito nɛ anyee tere kɔranishito.,Katisobi baa mata kamalga baniobi anishito nɛ anyee tere kɔr anishito.,0.6,0.0656
+370,Ketiisobi baaŋ mata kamalgabanio be kaman nɛ anyee tere kɔrmmanto.,Ketisobi baa mata Kamalgabaniobi kaman nɛ anyee tre kɔrmaŋ to.,0.7,0.1071
+376,Ngbanyato etuto beeŋ kii betuto.,Ŋgbanya tuto beeŋ ki betuto.,0.6,0.1852
+380,Kilgi fo barkasa kutɔ n ŋinito asɔ monɛ a la atiisobi.,Kese fo bar kasakutɔ ŋ ŋini to asɔ mɔnɛ a la a ti sob.,0.9091,0.186
+414,Atiisobi be ashuŋ kɔr ashi ngarana to.,Etisobi be ashuŋkɔr ashi granato.,0.7143,0.129
+415,A bee chɛto nɛ mmalgaba pupɔr be kenyɛ ashi kamalgabanio na to.,Kabee cheto nɛ malgaba pɔpɔrbi kenya ashi kamalgabanio na to.,0.5833,0.1176
+416,A bee chɛto a chɛrga mmalgaba ashi amobe katuŋ to a yɔ katuŋ pɔtɛ to.,bee chɛto a chɛrga malga ba ashi amobi katɔŋto a yɔ katɔmpotɛto.,0.6,0.1296
+417,A bee chɛto a kuu ashuŋso be saŋɛ be apupu pupɔr.,a bee chɛto a kuwa ashuŋsobi saŋɛ be apopo popɔ.,0.4545,0.1842
+418,Atiisobi bee chɛto a chɛrga mmalgaba ashi saŋɛ be apupu ko to a yɔ kepɔtɛ to.,Atɛsobi bee chɛ to a chɛrga malga ba ashi saŋɛbi apopo to a yɔ kɛ pɔtɛ to.,0.6875,0.1311
+420,Atiisobi bee chɛto a chɛrga mmalgaba ashi akokoto a yɔ adamtato.,Etisobi bee chɛ to a chɛrga malgaba ashi a kɔ kutɔ a yɔ Adamta to.,0.8182,0.1132
+422,Atiisobi be kenyi bee chɛto nɛ ngbar be kabii nɛnɛ nɛ mmalgaba be kesibɛ n niŋi.,Atisobi be kenyi bee chato nɛ ŋgbare bee kabia nɛnɛ nɛ Mɛlgaba bee kesibe nniŋi.,0.625,0.1562
+434,Pin atiisobi monɛ a wɔ mmalgaba ere to n shin pin atiisobi be ntuŋ mo to nɛ a wɔ.,Bɛpidusobi mo nɛ awɔ malga ba ere to n shipin atilsobi bee ntuŋ mo to nɛ awɔ.,0.6316,0.1774
+436,"Ntuŋso to, menye e ta atiisobi be katuŋ kama na n kuu mmalgaba beeŋ wɔrɔ ana.","Ntuŋso to, menyi e ta atisobi bee katuŋ kama na ŋku malga ba beeŋ wora ana.",0.4375,0.1333
+437,Blase n chigeto n naŋ ŋini fobe lakal to ebiikpa.,belasi n chige to nnaŋ ŋini foebi lakal to ebi kpaŋ.,0.7,0.1538
+445,M Meeŋ yɔ ama meeŋ bɛta m ba.,Men yɔ ama menyeeŋ bɛtaŋ ba.,0.625,0.3333
+447,"Ta fobe ebiikpa be lakal n chɛ fobe kumu to, n ŋinito asɔ monɛ a la achɛsobi.",Tɔ fobi ebi kpa bee lakal n chɛ fobi kumo to ŋ ŋ nito asɔ mo nɛ a la achɛsobi.,0.7059,0.1356
+448,Achɛsobi damta e wɔ ngbarana to.,Kachasobi damta e waŋgbarana to.,0.5,0.1538
+449,Ama amobe asa be asheŋ nɛ anyeeŋ ji mfa.,Ma amɔ bɛ asa bɛ asheŋ nɛ anyeeŋ ji n faŋ.,0.6667,0.1935
+458,Achɛsobi monɛ a bee baa mmalgaba nɛ mmalgafolshiŋ.,Kachɛsobi mo nɛ a bee baa mɛlga ba nɛ mɛlga fɔshɛŋ,0.875,0.1905
+460,Ebɔrɛ monɛ n yɛrda na.,Ebɔrɛ mo nɛ n yirda na.,0.6,0.0588
+461,Kusɔ monɛ e kaŋɛ na daa wale.,"kusɔ mo nɛ e kaŋɛ na daa walɛ,",0.4286,0.0455
+467,"Nɛ anye kaŋ ji n luwe, anyeeŋ di.","nɛ anyi kaŋ ji n luwe, anyi nɛ di?",0.375,0.1667
+468,"Nɛ feeŋ tiŋ, baa wɔtɔ nɛ kayerwushi nɛ baasa kikɛ.","Nɛ fee n tiŋ, baa wɔtɔ nɛ kayɔ wushi nɛ basa kikɛ.",0.5,0.1026
+469,"Pɔɛ nɛ kubeedibi na e tor, ku shi afuu gboŋ na be eleŋ to nna.",Hɔɔ nɛ kubidibi na etɔr kushi afugboŋ na bɛ eleŋ to nna.,0.6,0.1522
+478,Kebawɔtɔ maŋ bɔ ama anyeeŋ wɔrɔ n keni.,Kepa wɔtɔ maaŋ bɔ ama n nyi wɔrɔ ŋkeni.,0.875,0.2258
+480,Kebawɔtɔ maŋ du putɔputɔ ama anye kra kɔ tama.,Kɛbarpo maaŋ du putɔ putɔ ama n yɔ kraa kɔtɔ ma.,1.0,0.2703
+482,Sibɛ achɛsobi be akeniso asa kama n shin ta amo n shuŋ mmalgafol to.,Nsoro Atesobi Bitsimiso Asakama Nshita Ammɔn shuŋ Magba Fulto,0.9286,0.3519
+489,Bu kɔ amo nna a ta alakal gbɛ to a daŋɛ alakal gbɛ to monɛ a daŋ chɛr a wɔtɔ so.,Bukɔ amɔ na a ta alaka gbɛ to a daŋɛ alaka gbɛ to mo nɛ a daŋ chɛr a wɔtɔ so.,0.381,0.0678
+490,A bee ŋini asɔ monɛ a chikpar abar nna.,bee ŋini asɔ mo nɛ a chɛkpar abar na.,0.5556,0.1
+491,A bee chɛto nna a lara asheŋ ŋiniso pupɔr monɛ a daŋ chɛr wɔtɔ so.,Ebeecha to na a lara asheŋ ŋiniso popɔr mo nɛ a daŋ chɛr wɔtɔsɔ.,0.6,0.098
+492,A bee sa alakal monɛ a chikpar abar nna a tii amo nɛ a daŋ chɛr a wɔtɔ so.,E bee sa alakale mo nɛ achɛkpar abar nna a ti amo nɛ a daŋ chɛrɛ wɔtɔsɔ.,0.5263,0.1091
+493,A bee ŋini kesheŋ nna nko kesheŋ ko be edɛnyɔso.,E bee ŋini kesheŋ nna ŋko kesheŋ kubi edɛ nyɔsɔ.,0.5,0.1316
+495,Mbra kpra gberɛbi ko wɔtɔ nɛ a bee shuŋ achɛsobi be kabaso.,Bragbraagberbi ko wɔtɔ nɛ a bee shuŋ achɛsobi bee kabaa so.,0.5,0.1489
+498,"Achɛsobi bee baa afɛso, asheŋwɔrɔso nɛ mfɛra abarso nna.","Nachɛsobi bee baa afɛso, asheŋ wora so nɛ n fɛra abar so nna.",0.8889,0.087
+501,Achɛsobi kɔ tɔnɔ nɛ asɔ be kekarga n nase be kabaso.,Achesobi kɔtɔnɔ nɛ asɔbi kekarga nasebi kaba so.,0.8182,0.0976
+506,"Amobe ako ela kepalato, kepaŋ, ketiiso, kebirabarso nɛ adamta.","Amo bia akoŋ e la kepalato, kepaŋ ketiiso, kebrabarso nɛ adamta.",0.6667,0.08
+510,Wanɛ e naa sa amo atere?,Wanɛ e naa sa a mɔ a tre?,0.6667,0.1111
+522,"Anye beeŋ tiŋ kuu kamalgaba na be sososo, mfrinto nko lalaluwe to.",Enyi beeŋ tiŋ ku kamalga ba nna bɛ susɔ so n flinto ŋko lalaloge to.,1.0,0.2264
+532,Mbɔŋ be mmalgaba ere kikɛ bu paŋ amo nna ashi Mbronito.,"Bombi malga ba ere kikɛ b paŋ, amɔ na shi mbroni to.",0.8182,0.2045
+537,Ku bee sa nɛ ngbar bee nyɛ eyilikpa lɛla.,Hubesa nɛ gbare bee nya yilikbaa lela.,0.7778,0.2812
+539,A chɛto nɛ anyee bii ngbar.,acheto nɛ anyee bee gba.,0.6667,0.2381
+548,Delgeso atiisobi be ashuŋ ana kama.,Dajɛso Atisobi be ashoŋ anakama.,0.8333,0.2069
+550,Ji atiisobi be ashuŋ ana kama be asheŋ.,Jɛ atisobi bɛ a shuŋ a na kamaa bɛ a shɛŋ.,1.375,0.1935
+551,Ŋinito asɔ monɛ a la achɛsobi.,Nito asa mo nɛ a la achɛsobi.,0.6667,0.125
+552,Pin achɛsobi be ntuŋso ashi Ngbanyato.,Piyachɛ sobɛ beeŋ tuŋ so ashi ŋgbanyɛto.,1.0,0.1875
+553,Ŋini mbarga monɛ a wɔ achɛsobi be ntuŋ monɛ fo pin na to.,Niniŋ barga mo nɛ a wɔ achɛso bee bɛ ntuŋ mo nɛ fo pin na to.,0.6923,0.1136
+554,Chaŋ achɛsobi monɛ a wɔ mmalgafol ere be nseto.,Taniɛ chisobi mɔnɛ a wɔ malga fo erebi n seto.,0.8889,0.2632
+555,Enana Dari bee kraŋ nɛ Amaabaŋɛ malɛ bee sibɛ.,Anadabi bee kraŋ nɛ a maa baŋɛ malɛ bee sibɛ.,0.5556,0.0811
+557,"Nɛ fo kaŋ bii, feeŋ pinto.",nɛ fo kaŋ bia.,0.5,0.5263
+559,Meeŋ yɔ ama manɛ kabre.,Meeŋ yɔ ama manɛ kabreŋ,0.2,0.0556
+560,Mee sha busa nko amalo nna.,Menyee sha bu saŋko a malɛ wɔ nna.,1.0,0.3333
+561,Ŋinito mmalgaba pupɔr be kenyɛ be ekpaana.,Nini to malga ba popɔr bɛ kenya be ekpaana.,1.0,0.1429
+562,Pin mmalgaba pupɔr be kenyɛ be ekpaana asa kama ashi Ngbanyato.,nɛ belgedarpo Pɔɔl be kenyabi ekpaana a sa kama ashi ŋgbanya to.,0.8182,0.2692
+563,Ŋinito mmalgaba pupɔr be kenyɛ be ekpaana be ntuŋ sa ashi Ngbanyato.,Ŋili to maga ba popɔr ba kenyɛbi ekpaana be ntuŋ sa ashi mbanya to.,0.75,0.1429
+566,"Kabre, durnyaŋ be nchɛrga kɔ kechɛto ga n sa sukuru be kabla.","Karɛ, durnyaŋ beeŋ chɛrga kɔ kechɛto ga nsasɔ kurbe kaba.",0.6667,0.1458
+571,"Mbishi na ela fanɛ, manɛ e bɛso?",Bishi na e la fanɛ mannɛ ebi so.,0.8571,0.125
+575,"Kaba ere to, menye beeŋ bii ngbarbembra fanɛ mmalgafolshiŋ, afɛlto nɛ akurso.",Kaba ere to menyi beeŋ bia ŋbar ma bra fanɛ malga fɔlsheŋ afalto nɛ akɔlso.,0.75,0.2063
+585,Kefɛlto ela mmalgaba ka chuwɔ abarso n kii kamalgafol.,Kefalto e la m malga ba ka chɔwa abar so ŋ ki kamalga fɔr.,1.4444,0.1556
+591,Ta fobe atuwebi na n karga fobe katuŋ peya so.,,1.0,1.0
+593,Kamalgaba be kumu na e na kii kumobe ketere.,Kemalga ba bɛ kumo na e naa ki kumo be ketre.,1.0,0.1714
+599,"Aterefolshiŋ, Ashuŋsofolshiŋ, Adelgesofolshiŋ, Adulwisofolshiŋ nɛ Achuwɔsofolshiŋ.","Matrefolshin, ashunsofolshin, adelgɛsofolshin, adelgɔsofolshin nɛ achuwasofolshin.",0.8333,0.1781
+600,Ghana be ngbar damta maŋ kɔ achuwɔsofolshiŋ ama adulwisofolshiŋ bre shi nna.,gaana beeŋ gbar damta maŋ kɔ a chɔ asɔ fɔrshin ama adɔlso fɔrshin bre shi na.,0.8333,0.2656
+602,Ketere be kamalgafolshiŋ be kapɔr kɔr abarto.,ketrebi kamalga fɔrshimbi ka pɔr kɔr a ba to.,1.1429,0.1842
+603,Keterefolshiŋ beeŋ tiŋ a la ketere nko katilemu koŋwule.,Kite fɔlshin beeŋ tiŋ a la Kiterɛn ko kaa ta ma kuwɔlɛ.,0.8889,0.3404
+609,"Ashi keterefolshiŋ to, feeŋ tiŋ wu achɔ kamalgaba koŋwule.",Chito pɔshɔŋ to. Pintin wa chɔ Kamagaba koŋwule.,0.7778,0.375
+624,"Ntuŋso to, menye e kuu aterefolshiŋ asa.","Ntuŋ so to, menyi e ku atre fo shɛŋ a sa.",1.2857,0.1562
+638,"Ashuŋsofolshiŋ monɛ a kɔ ashuŋso chɛtopo, ashuŋso gbagba nɛ amobe adelgeso.",Nɔ shufɔl shi mo nɛ a kɔ ashuŋso chetopo ashuŋso gbagba nɛ a mɔ bee edɛlgeso.,0.9091,0.1905
+644,Akeniso e wɔ kaseto ere na.,Akeniso e wɔ kaseto ere na.,0.0,0.0
+648,"Ntuŋso to, menye e kuu ashuŋsofolshiŋ asa.",Ntuŋ so to menyi e ku ashuŋ so fɔlshiŋ asa.,1.0,0.0882
+652,Kamalgafolshiŋ nɛ kumobe kamalgabamu la kedelgeso nɛ baa tere kedelgesofolshiŋ.,Kemalga fɔlshɛŋ nɛ kumɔbi kemalga ba mɔla kadɛl jisa nɛ baa tre kadɛl jisa fɔlshɛŋ.,1.2,0.2899
+653,"Kedelgesofolshiŋ bee delgeso kushuŋso, kedulwiso nko kedelgeso ko so nna.",Kedirjiso fɔɔshin bee dirjiso kushunso kedɔrwiso ŋko kedirjiso kusɔ na,1.0,0.3548
+654,"Kedelgesofolshiŋ bee tuwe mbishi nna fanɛ manɛso, manɛ, nɛ saŋɛ mo.",The diligence of Ɔlshin bee tuwe m bishi nna fanɛ manɛ so? Manɛ nɛ saŋɛ mo?”,0.7273,0.1667
+659,"Ntuŋso to, menye e tol kedelgesofolshiŋ nɛ ku kɔ mmalgaba asa nko a chɔ loŋ.",Ntuŋso to menyee Etɔɔl kɛ deliasɔ fɔrshin nɛ k kɔ malga ba asa ŋko a chɔ loŋ.,0.6,0.2167
+660,Kedulwisofolshiŋ be kamalgabamu ti baa la kedulwiso nna.,Keduli so fɔlshin bee kamalga ba mo to baa la keduli so nna.,1.25,0.1458
+676,"Ashi esoso be kekeniso ere to, keterefolshiŋ na e birito na.",Ma fanɛ esoso metɛnɛ to Getre Fɔrshɛŋ na ebre to na,0.8182,0.4792
+679,Kushuŋsofolshiŋ na be kumu ela yɔ.,Kushuŋ so fɔrishin nabi kumo Elaiyɔɔ.,1.0,0.2857
+683,Bu kɔ mmalgafolshiŋ nna a lara alakal efuli.,be kɔ malga fɔlisheŋ na alara alakal e fɔlis,0.875,0.2222
+685,"Nɛ asheŋ be kebuwito be kabaso, mmalgafolshiŋ bee shuŋ kushuŋ kpra ga.",Nɛ asheŋgbɛ kebuwito be kaba so marga fo shiŋgbɛ shuŋ kushuŋ kpra ga.,0.5833,0.1404
+689,Chaŋ mmalgafolshiŋ nɛ fo pin na be kekama be kamalgabamu be kaseto.,"Men bee kɛ kama, kikamal be kakama, kikamal ga ba mo be kasɛto.",1.0,0.5273
+697,Anye ka fo nɛ anye fin kaboŋ lɛla ko ashi kube be keyia be kefiito.,Kɔŋ loka fo nɛ anyi fin kaboŋ lela ko ashi kubi be yuu a bɛ kefiato.,0.6,0.2692
+704,Kananɛ nchu na bee shile ajembu so na daa wushi to.,Kanaana nchu na bee shile ajembu so nɛ daa wɔ shito,0.3636,0.1
+708,Ta fobe atuwebi n nase bebiipo kikɛ be anishito nɛ bu tiseto.,ta fobi atobi n nase bebiipo kikɛ be anishito nɛ Bɔtiste.,0.3333,0.1429
+716,Kefɛlto la ngbarbembra be kaba chochobi nna.,"Kefɛ to la, mbarbimbrabi kaba chɔchɔbi na.",0.8571,0.2162
+723,Amaabaŋɛ wul kudoe pɔɛ n shin choŋ sukuru.,a maa baŋɛ wɔl kuduipɔɛ n shi choŋ sukuru.,0.75,0.1176
+724,Senyo ɖa akplĕ hafi yi suku.,Seŋnyɔda akpele hapiyi suku.,0.8333,0.2727
+733,Afɛlto be ntuŋ nyɔ e wɔtɔ.,Hato bɛntuŋnyɔay wɔtɔ,0.8333,0.35
+736,"Ku kɔ ewɔrɔpo nɛ kushuŋso, n naa yili kumobe kumu so a kɔ kefiito.",Ku kɔ eworapo nɛ kushuŋ so naa yili kumo be kumu so a kɔ kefito.,0.4286,0.0784
+737,Samaakuse nuu nchu na kikɛ.,Hama kusoe nuŋchu na kikɛ.,0.6,0.2273
+738,Makafui ate ŋu ade tɔme gbe sia gbea?,Maaka fuyi ateŋu adetɔmɛ gbɛsia gbɛa.,1.0,0.1724
+745,Anyeeŋ tiŋ keni afɛltomu be ashuŋ so m barga amo to.,Eŋ niŋ tiŋ keni a fɛl tumbi eshuŋso m barga amo to.,0.5455,0.2195
+751,Afɛltomu be ntuŋ ana e wɔtɔ nkpal amobe afii monɛ a bee ler efuli so.,"Faltowum bee ntuŋ ana, Ewɔtɔ ŋkpal amɔbi a fiɛ mɔnɛ a bee lɛr efuli so.",0.6,0.2037
+758,Epeŋi bee ŋmiɛ kabre ga.,peŋi bee ŋmɛa kabre gba.,0.6,0.2105
+759,Nana bee fɛŋ atebi saŋɛ kama.,Nɛ na bee feŋ a tebi saŋɛ kama?,0.8333,0.087
+762,Danye ɖaa nu ɣe sia ƒe.,Denu daa nuu Isiɛfɛl.,1.0,0.5882
+764,Fuseni chani puuni Asibiri dali.,Fuseni Cheniponi Asibiri Dalit.,0.6,0.1481
+769,Manɛ jimanɛ kikɛ nɛ le be afɛltomu kɔ ewɔrɔpo.,Jemanɛ jimaŋ na kikɛ nɛ lebe a fɛl to mo kɔ awɔrɔpo.,1.0,0.1622
+772,Tee shi oya ‘Koso manaŋ’.,"Kee shi Oya, kusɔ mannaŋkapo nɛ a mɛa eduŋ dɔ Libia a fuli moŋ Tɛbi Taŋka.",2.8,2.3333
+774,Feeŋ tiŋ sa mbishi be akeniso ashi Ngbanyato aa?,Fo eŋ tiŋ nsambɛ shibi a keni so ashi ŋgbanya to a?,1.1111,0.1538
+781,"Afɛltomu be bushi, afɛltobi gba kraa wɔtɔ nna.","Afɛto mbebushi, afɛto bɛ gba kraa wɔtɔŋ na.",0.75,0.1351
+792,"Esi dɔ nɔ ewum vevie la, eɖa nu.","esido nɛ ewun be viɛla, e daŋ nu",0.875,0.3043
+796,Kofi nim no afiri sε ɔyε.,Kofi nimno afrɛtsaɔya.,0.8333,0.2632
+800,Afɛltobi na be akeniso be nseto nɛ bu chaŋ esoso ere na.,Faltobi nɛ b a kenisobi n sa to nɛ b chaŋ esoso ere na.,0.75,0.1591
+802,Anye e buwi ntuŋ na to.,geŋge ebuwi ntuŋ na to.,0.5,0.2353
+807,Ku bee fara nɛ kedulwiso be katilemu (wanɛ?,Kɔ bee fara nɛ kadɔlwiso bee katal maŋ wɔnɛ.,0.75,0.2647
+812,Kafui xlĕ agbalĕ si fofoa nε la nyuie.,Kafuya sulɔ agbala sa fofoana la nyɔya.,0.875,0.3667
+814,Nyɔnu si ƒle avɔ etsɔ la dzo.,Sipila Voetolado.,1.0,0.5455
+816,Baa nyi fanɛ mmalgaba nɛ amobe kaseto chaŋ na la adulwiso be afɛlto nna.,Baa nyi fanɛ mmalga ba nɛ emo be kasetochaŋɛ na la adɔlgu so be afɛlto nna.,0.5,0.0862
+818,Ku beeŋ tiŋ n shuŋ fanɛ ewɔrɔpo nko esɔpo (tanyuso nɛ tangelge).,kub beeŋ tiŋi shuŋ fanɛ ewɔrpoŋ ko esopo ta nyɔso nɛ taŋgelgeŋ.,0.75,0.16
+849,"Akoŋ ka kɔ ma so, nɛ malɛgba tɔ amalo.","Kaa kɔ ma so, nɛ malɛ gba tɔ amalo.",0.4444,0.1429
+854,"Nԑ tuŋso, menye a sa afɛlto be ntuŋ nɛ menye bii na be kekama be akeniso.",Menyee asa afɛltobi ntuŋ nɛ menyeebia na be kekama be akeni so.,0.6875,0.1964
+855,Chigeto n sa bebiipo kikɛ nɛ bu pin afɛlto be katuŋ monɛ a wɔ akeniso na to.,Chigeto nsaba bee pɔɔ kikɛ nɛ bu pin afɛlto be katuŋ mo nɛ a wɔ a keniso na to.,0.4118,0.0847
+859,Ade la akurso ko nna nɛ a bee luwe mmalgafol nko kamalga to.,Adela akɔrso ko nna nɛ a bee luwe malgafɔl ŋ kɔ kamalga to.,0.4615,0.1064
+861,Keyili be kurso bee luwe kamalgafol to nna.,Kilibe kurso bee luwe kamalga fɔlto nna.,0.5,0.0857
+862,Ku bee ŋini kekute be kamalgafolshiŋ nko kamalgafol be lalaluwe nna.,Kubeeŋini kekutebi kamalga fɔlshin ŋko kamalga fɔlbi lalalo weena.,1.0,0.1404
+863,"Ntuwe yɛ, “Mee sha kakraŋ”.","Ntuaya, mee sha kakraŋ.",0.4,0.1579
+864,"Awodima kaŋɛ, “Ebɔrɛ beeŋ tiŋ”.","Aboe di ma kaŋɛ, “Ebɔrɛ beeŋ tiŋ.”",0.6,0.087
+869,"N yɔ kibɛ n ya tɔ jintere, mfol, kasaŋɛ nɛ dorobi.",nyɔki bɛ n ya tɔɔ jin teri n fɔl kasaŋɛ nɛ dorobi.,0.7273,0.1081
+870,"Ndefoso kɔ alaŋ, ekuloŋ nɛ kadͻsawule.",Ndifuso kɔ alaŋ ekuloŋ nɛ kadesawule.,0.3333,0.0968
+871,"Ku bee barga nchɛ, nde nɛ efuliana to nna.",Hubee Bargain chɛ nde nɛ Efuliana to nna.,0.4444,0.0625
+873,A bee barga adulwiso monɛ a bee delge ketere koŋwule so nna.,E bee barga adɔ loge so mɔnɛ a bee delika tre koŋwule so na.,0.6667,0.2292
+874,"Kebinyɛnbi tenteŋ, lembir, lɛla na bee di nna.","Kebia nyambɛ tenteŋ, lembir, lela na bee dii na.",0.625,0.1667
+875,"Kaboe danto, shimbi na bee tɔrɔ ga.","Kaboe daŋ tɔ, shumbi na bee tɔrɔ ga.",0.4286,0.1111
+880,A bee barga afɛltomu anyɔ to nna.,a bee barka a fɛlto mo anyɔ to nna.,0.5714,0.0769
+881,N kraŋ nwol damta; Ndefoso be kawol na nɛ mee sha ga.,"ŋkraŋ wɔl damta, ndefoso be kawɔ na nɛ mee sha ga.",0.3333,0.125
+883,Ku bee barga asɔ kargaso nna a yili.,K bee barga asɔ kargaso nna a yili.,0.125,0.0357
+884,"N yɔ kibɛ n ya tɔ asɔrso fanɛ; kodu, lemu, mangu nɛ dorobi.","Niyɔ Kibɛn ya tɔ a sɔ so fanɛ kodu, le mo, maaŋ gɔ nɛ dɔrɔbi.",0.9231,0.186
+886,Akuteso be kurso bee ŋini kekute esa be kamalga gbagba to nna.,"Hadbɛ Kiyoso bee kurso bee ŋini kapute, Esa bee ka maaŋ ga gbagba to nna.",0.6667,0.26
+887,"Awaaba kaŋɛ, “Ebɔrɛ be saŋɛ e walɛ”.","Hawaba kaŋɛ, “Ebɔrɛbi saŋɛ e walɛ.”",0.4286,0.1154
+888,"Mobaasha kaŋɛ ma fanɛ, “Ntuto ela Awundre”.",Mo baa sha kaŋɛ ma fanɛ ntuto e la awɔndreŋ.,0.8571,0.0606
+889,A beeŋ naŋ tiŋ fara nwol be amu nko nwol tenteŋ be mba.,E beeŋ naŋ tiŋ faraŋ wɔl bɛa maŋ koŋ wɔl tɛntɛŋ bɛ mba.,0.6923,0.2619
+890,N kraŋ kawol nɛ baa tere “Bɛ Ebɔrɛ so”.,"Ŋ kraŋ kawɔl nɛ baa tre, b ebɔrɛso.",0.6667,0.1429
+891,Amama yɛ e kraŋ baru be kawol nɛ baa tere “Ŋana Ebɔrɛ”.,amama ya e kraŋ baru be kawɔl nɛ baa tre ŋana Ebɔrɛ.,0.25,0.0732
+895,Nsukurubia bee yͻ sukuru Atania-Alijima.,Nsugurobia bee yɛ Suguro Atania alɛ jima.,1.2,0.1765
+899,Anyee ta abɔaya be daŋɛso nna a wɔtɔ amo to.,Enta Aboya be daŋɛ so na awɔtɔ amo to.,0.7,0.2059
+903,Eŋinipo monɛ baa tere Nyɛfianɔto na (enio lɛla) ba mfa ndre.,ŋinipo nɛ baa tre nyɛfɛanɔ to na eniɔlɛladi baaŋ fa ndre.,0.8182,0.2128
+904,Mborobi na (Asana nɛ Alasan) beeŋ bɔ anye so kabre.,"Mburopi, Nasana nɛ Alasaan beembo anyi so kabre.",0.7,0.1795
+905,Ku bee tiŋ a yili ewushi nko keŋini be kurso be ayato nna.,Ku bee tiŋ a yili ewushiŋ ko keŋini be kursobi aya to na.,0.4615,0.0667
+906,E nyagbo n tuwe mbishi na–Ayai!,Enyagboŋ to embishi na ayai.,1.0,0.125
+908,Ku bee ŋini kananɛ mmalgaba anyɔ bee liɛ abar nko bee chikpar abar nna.,Kubreŋini kananɛ malga ba anyɔ bee le abareŋ ko bee chikpar abare na,0.7143,0.1228

@@ -1,0 +1,201 @@
+sample_id,reference,hypothesis,wer,cer
+2,"Mlijaa nɛɛ gbeleɔ blawa he nilee, jebɔ kɛ gbee ni yɔɔ blawai amli hiɛ etsɔɔ.",melee ajaa nɛɛ beliɔ blawai heneleee jɛ bɔɔ kɛgbee ni yɔɔ blawai amlihiɛ etsɔɔ,0.7333,0.1833
+13,Blawa ji wiemɔkuli mlijaa ko ni abaanyɛ atsɛ ni shishinumɔ fioo ko kɛ yɛ mli.,naa wa ji wuemɔ kuli lijaa ko ni abaanyɛ atsɛ ni shishinumɔ fioo kokɛ yɛ li,0.5333,0.0806
+14,Kɔnsonanti blawa ji kɔnsonanti ni nyɛɔ damɔɔ shi ekome akɛ blawa.,kɔsonantei blawa di konsonante ni nyiɛɔrda mɔ shi kome akɛ blawa,0.5455,0.1667
+20,Hewɔ lɛ Kofi hiɛ blawai enyɔ.,le kofi ye blawoe eny,0.8333,0.4783
+36,Eyeɔ ebuaa kaselɔi kɛsɔɔ wiemɔ hee.,e abuaa kaselɔi kɛ sɔwimɔ hei,0.8333,0.2414
+37,Eyeɔ ebuaa kaselɔi kɛyɔseɔ blawakulibii ni yɔɔ wiemɔkuli ko mli.,yia bua kasilae ke yɔɔ siɔ blawakulibii ni yeɔ wuiemɔ kuli ko mli,0.9,0.2407
+38,Eyeɔ ebuaa wiemɔi ashishinumɔ yɛ wiemɔ pɔtɛɛ ko mli.,eyɔɔ ebuawiemɔi ashishinumɔ yɛ wiemɔ ɔpɔtɛɛ ko li,0.5556,0.093
+39,Nibii ni baa nɛɛ tsɔɔ bɔ ni ajara wiemɔkulibii amli awo amɛblawai amli aha.,nebiini ba anɛ tsɔ bɔ ni ajara yo mɔ kulibii amle awu ameblawai amle aha,0.8571,0.1639
+41,"Yɛ nɔkwɛmɔ nibii nɛɛ amli lɛ, eko fɛɛ eko yeɔ emuu akɛ blawa.",yɛ nɔkwɛmɔ nibii nɛɛ amle lɛ ekoo fɛɛ ekw yɔɔ emuoŋ akɛ blaa,0.4615,0.1489
+44,Ghana wiemɔi srɔtoi lɛ yɛ amɛblawa henɔi srɔtoi.,ghana wimɔ srɔtoi lɛ yɛ amɛblawa henɔi srɔtoi,0.125,0.05
+53,Kɔnsonanti naagbee ji blawai ni kɔnsonanti gbeɔ naa.,konsonanti naagbee ji blawai ni konsonante gbeɔ naa,0.25,0.0682
+57,Atsɛɔ amɛ akɛ gugɔjiaŋ kɔnsonantii hu.,woe k o ma nkɔntonante yi ho,1.1667,0.6562
+67,"Yɛ bo diɛŋtsɛ owiemɔi amli lɛ, tsɔɔmɔ nɔ ni ji blawa.",yɛbo diɛŋtsɛ owiemɔi amle lɛ sɔɔmɔ nɔ ni je blawa,0.4545,0.0732
+69,Gbalamɔ blawa henɔi ni yɔɔ owiemɔ lɛ mli lɛ otsɔɔ.,naemɔbiawaahi nɔi ni yɔɔ owiemɔ lɛŋ nlii lɛ otsɔɔ,0.5,0.25
+70,Gbalamɔ sɛɛnamɔi ni yɔɔ blawa jebɔi kɛ wiemɔtsɛrɛmɔ mli otsɔɔ.,balamɔ sɛɛnamɔi ni yɔɔ blawa jebɔi kɛwiɔmɔtsɛremɔ mli otsɔ,0.4,0.0769
+71,Srɔtoi yɛ blawa jebɔi amli yɛ wiemɔi srɔtoi lɛ mli.,oseade yɛ blawa jebɔi amli yɛ wiemɔe srɔtɛi lem li,0.5,0.2195
+74,Vaolii ji hiamɔ nibii ni yɔɔ blawai amli.,your y yorbla w,1.0,0.8182
+87,Kɛji l kɛ r nyiɛ kɔnsonanti ko sɛɛ tuntu.,kɛji lɛ kɛɛ renyiɛ konsonante kosɛɛ tuntum,0.8889,0.1875
+90,Nyɛsusua blawa jebɔi yɛ Ga wiemɔ lɛ mli ahe.,yesu su abla wadze bɔai yeda wie mɔ le eli ahe,1.1111,0.2571
+91,Okɛ klasi lɛ agba ohetoo lɛ he sane.,okɛ klasi le agbaohetoo lɛ he sane,0.375,0.0357
+97,Okɛ onaanyo lɛ asusu blawa jebɔi ni yɔɔ wiemɔkulibii ni nyɛfee lɛ ahe.,okɛ onanyo lɛ asus blawayebɔi ni yɔɔ wuemɔ kulibii ni nyfee lɛahe,0.6923,0.0877
+98,"Ku lɛ agba nɔ ni amɛfee lɛ amɛtsɔɔ klasi lɛ, koni klasi lɛ asusu he ni amɛma nɔ mi.",kolɛ agba nɔ ni amɛfee le ametsɔɔ klasi lɛ koni klasi le asusu he ni amɛma nɔ mi,0.2632,0.0635
+99,Nanemɛi kpakpai ji aga kɛ tsatsu.,na ne me apakwan gyi agakathra so,1.1667,0.4444
+100,"Fɛɛ sɛɛ lɛ, soro amɛ fɛɛ amɛshihilɛ kɛ jeŋba.",hwɛɛ sɛɛ lɛ sorɔɔ amɛfeɛ amɛshihilɛ kɛjeŋba,0.6667,0.1429
+108,Kɛ ohetoo lɛ aha klasi lɛ koni amɛsusu he.,kɛ ohetɔ lɛ ah klase lɛ koni amɛssɛ,0.5556,0.2424
+109,Adesai awiemɔi fɛɛ kɛ gbee tsuɔ nii kɛmaa nɔ ko nɔ mi yɛ wiemɔ mli.,adesai awiemɔi fɛɛ kɛigbee tsuɔnii kɛmaa nɔ konɔ mi yɛ wiemɔ li,0.4667,0.0385
+116,Ghana wiemɔi lɛ fɛɛ lɛ gbee kamɔ nɔ.,jana wiemɔi lɛ fɛɛ lɛ gbee kmɔ nɔ,0.25,0.1071
+119,Wiemɔi srɔtoi hiɛ gbee henɔi srɔtoi.,wiemɔ y srɔto higbee henɔ isrotoy,1.0,0.1667
+128,Nibii ni baa nɛɛ ji nɔkwɛmɔ nibii ni yɔɔ Ghana wiemɔi lɛ ekomɛi amli.,ni nɔkwɛmɔ nbii ni yɔɔ ghana wiemɔi lɛ ekome amli,0.4286,0.2909
+152,Nɔkwɛmɔ nibii komɛi baa nɛɛ.,a nebii kume baa nɛɛ,0.6,0.4783
+154,Yɛ bo diɛŋtsɛ owiemɔi amli lɛ tsɔɔmɔ nɔ ni ji gbee.,yɛ bo diɛŋtsɛ owiɛmɔi amli lɛ tsɔɔmɔ nɔ ni ji gbee,0.0909,0.025
+155,Okɛ klasi lɛ asusu ohetoo lɛ he.,okeklase lɛ asusu ohetoo lɛ he,0.2857,0.08
+156,Okɛ nɔkwɛmɔ nibii ni sa agbala gbee henɔi srɔtoi lɛ amli otsɔɔ yɛ Ga mli.,okɛ nɔkwɛmɔ nibii ni saa agbalagbeehenɔi srɔkoi lɛ amlikpɔ yɛ ga n niɛ,0.6,0.1552
+157,"Yɛ kui amli lɛ, nyɛtsɔa gbee nitsumɔi.",yɛ kui amli lɛ nyɛtsɔa gbee nitsumɔi,0.0,0.0
+158,Nyɛkɛ klasi lɛ agbaa nyɛhetoo lɛ he sane.,nyɛkɛklasi lɛ agbaa nyɛhetoo lɛ he sane,0.25,0.0
+161,Taomɔ gbee henɔi ni yɔɔ wiemɔ ni aha lɛ mli.,toomɔ gee henɔi ni yɔɔ wiemɔ ni ahale mli,0.4,0.0882
+162,Taomɔ blawa ni tere wiemɔ ni aha lɛ gbee okadi lɛ.,saɣiomɔ blawa nii 9trɛ yiboi wɔhi nyesupiia hale kei okadi lɛ,0.7273,0.6154
+170,Mlijaa nɛɛ wieɔ sanemuu otii ni yɔɔ niŋmaa loo sanegbaa ko mli taomɔ he.,milijane wie o senemuu oti ni yoo ni ŋmaa loo sane gbaakom lee tao mɔhe,0.9286,0.1897
+176,Susumɔ oti ni yɔɔ sane ko mli ji yitso ni hiɛ sane lɛ.,suizumɔoti ni yɔɔ sane kom li ji jito ni hiɛ sane leb,0.4615,0.1463
+179,Nikanemɔ lɛ nyɛɔ feɔ nikanemɔ vii loo gbajaa.,nkpianemɔ le nyɛɔ fiɔ nikanemɔ vii loo gbajaa,0.375,0.1351
+184,Nyɛku lɛ kɛ nyɛsusumɔi lɛ atoa he koni nyɛkanea nɔ ni yɔɔ shishi lɛ.,nyɛkuleke nyɛsusumɔi lɛ atua hi koni nyɛkanea nɔ ni yeɔ shishi lɛ,0.4286,0.0926
+187,"Enɛ tsɔɔ nɔ hewɔ ni nakai yitso, niŋmaa loo sanegbaa lɛ ba.",ennɛ sao nɔ hewa ni naka yitso ni ŋmaa loo sane gba lɛ ba,0.6667,0.1522
+216,Enɛ tsɔɔ susumɔ oti ni yɔɔ sane lɛ mli lɛ taomɔ.,ene too susumoo tii ne yosane le nliletam,1.0,0.3784
+219,Enɛ hi ha anɔkwa saji.,enɛ hiha anɔkwasa ji,0.8,0.0
+220,Enɛ lɛ akɛtaoɔ wiemɔkulibii pɔtɛɛ komɛi yɛ sane ko mli.,enɛɛ lɛ akɛtɔoɔ wiɛmɔ kulibii pɔtɛ kɔmɛ yɛ sane ko ml,0.7,0.1556
+223,Afeɔ enɛ kɛtaoɔ sanebimɔi komɛi ahetoo.,efeɔ enɛ kɛtawɔɔ sane bi mɔi kome ahetoo,1.0,0.1515
+225,Kanemɔ sane ni yɔɔ shishi lɛ.,fufɔ sanii niɔɔɔ shishi lɛ,0.6667,0.3478
+226,Taomɔ susumɔ oti ni yɔɔ sane ni yɔɔ shishi lɛ mli.,to mosusumɔ otinu yɔɔ sane ni yɔɔ shishi le mli,0.4545,0.1026
+227,Okɛ oklasibii lɛ asusu susumɔ oti ni ona lɛ he.,okɛo klazibii lɛ susususumɔo ti ni hɔnaa lɛ he,0.6,0.1351
+248,Migbe naa kɛ mɔdɛŋbɔɔ ni teke nɔ.,mikɛnaakɛ mɔdɛn bɔɔ ne teke no,0.8571,0.2308
+252,Nyɛkɛ klasi lɛ agbaa susumɔ ni nyɛna yɛ sane lɛ mli lɛ he sane.,nyɛakɛ klasi lɛ agbaa susumɔ ni nyɛnaa yɛ sane lɛ nli lɛ he sane,0.2143,0.0612
+260,Shi kɛji nɔ ni hiɛnyiɛlɔi wieɔ lɛ ejaaa hu?,yi kɛji nɔ ni hiɛnyɛlɔi wia lɛ eyaa hu,0.4444,0.2059
+261,"Toiboo ni ejaa lɛ, musu ni.",a,1.0,0.95
+271,Mamia mihiɛ kɛfee toiboo yɛ miwalashihilɛ mli.,meremia mihia ke fee tobo ye miwala shihile li,1.2857,0.2564
+278,Kanemɔ sane ni yɔɔ shishi lɛ koni oha sanebimɔi ni nyiɛ sɛɛ lɛ ahetoo.,kani mɛn sane ni yɔɔ shishilɛ ko ni oha sanebemɔi ni nyiɛ sɛɛ lɛ ahetoo,0.4286,0.0714
+283,Tsɔɔlɔnukpa lɛ ji mɔ ni anaa lɛ akɛ ehiɛ hewalɛ yɛ sukuu lɛ mli.,tsoolɔ nukpa le ji mɔ ni anaa lɛ akɛɛ ehiɛ hewale yɛ sukuu lɛ mli,0.3571,0.1
+304,Enɛ tsɔɔ bɔ ni niŋmalɔ lɛ bua ehe eha ni eto enilee kɛ susumɔi lɛ anaa.,enɛ tsoɔ bɔ ni niŋmalɔ lɛ bua eheee eh ni etoo enileekɛɛ susumɔi lɛ anaa,0.375,0.1091
+308,Enɛ tsɔɔ akɛ onu nɔ ni okane lɛ shishi.,nisɛ ɛ onu nokane lɛ shishi,0.6667,0.3333
+331,"No sɛɛ lɛ, tsɔɔmɔ gbɛi anɔ ni osusuɔ akɛ abaatsɔ ni asaa niŋmaa nɛɛ.",no sɛɛ lɛ sɔɔmɔ gbɛ anɔ ni osusuɔ akɛ abaatsɔ ni asa ne ŋmaa nɛɛ,0.3571,0.0755
+333,Mɛɛ otii sa akɛ ekɛwo niŋmaa lɛ mli?,me oltis kɛkɛ onuŋmaa lɛ mli,0.75,0.3214
+341,Yɛ bo diɛŋtsɛ owiemɔi amli lɛ gbalamɔ “susumɔ oti” mli otsɔɔ.,susumɔ oti ile otsɔɔ,0.7273,0.6875
+344,Bulɛ jeee nɔ ko ni mɔ ko baanyɛ ahe shi moŋ nɔ ko ni akɛhaa.,bele jeee nɔ ko ni mɔ kobaŋnyɛ ahe shi moŋ nɔ ko ni akɛhaa,0.2,0.0667
+355,Be mli ni onyiɛ hai sukuu ko kpeehei lɛ kaimɔ akɛ anaa bulɛ yɛ gbɛi enyɔ nɔ.,bi mli ni ohiɛ hai sukuu kokpe hee lɛ kaimɔ akɛ anaa bulɛ yɛ gbɛi enyɔ nɔ,0.2353,0.0847
+357,Mɛni yitso lɛ kɛɔ yɛ susumɔ oti ni yɔɔ sane nɛɛ mli lɛ he?,mɛi ni yitso lɛ yehoa tɛ sumɔ oti ni yɔɔ sane nɛɛ enele lɛ,0.5,0.3182
+358,Taomɔ koni oŋma sanemuu oti ni yɔɔ kuku kome kɛ ejwɛ lɛ mli lɛ.,tomɔ ko ni oŋma sanemɔ otiniyɔɔ kukukome kɛ ejwɛlɛ nli lɛ,0.8571,0.0816
+359,Doomɔ sane lɛ nɔ owo sanemuji ejwɛ mli.,do mɔ fanlɛ nɔ owo sane muji ejwɛŋm li,0.875,0.129
+360,Taomɔ jebɔi enyɔ ni nikanemɔ vii ni okase yɛ mlijaa nɛɛ mli lɛ hiɛ.,tɔmɔ je bɔi enyɔ ni nikanimɔ vii ni okase ya mli jaa nɛɛ mi li lɛ hiɛ,0.6429,0.0943
+362,Mɛɛ srɔtoi yɔɔ naatselɛ kɛ mlishaa mli?,mɛiɛ soroto yɔɔ natelekɛɛ mlishaaŋli,0.8571,0.2812
+363,Gbalamɔ sui loo jebɔi etɛ ni yɔɔ nikanemɔ gbajaa mli.,balamɔ suiloo ze gbɔi etɛ ni yɔɔ ni kanemɔ gbaja nli,0.8,0.1163
+364,Tsɔɔmɔ srɔtoi ni yɔɔ nikanemɔ vii kɛ nikanemɔ gbajaa mli.,suomɔ soro tee ni yɔɔ ni kanemɔ vii kɛɛ ni kanemɔɔ gbajaa ili,0.9,0.2128
+372,Afisi ji mɔɔfim henɔ ni akɛtsaa wiemɔkulibii ni shishinumɔ yɛ mli.,fasi ji mofim hiɛno ni akɛtsɛa weye mɔkulebii ne sheshɛmuɔ yɛnui,0.8182,0.3273
+374,Ayɛ afisi henɔi etɛ yɛ Ga mli.,aye afisihinɔi ɛte yɛ gamli,0.8571,0.1739
+386,Afisii ni ale titri ji hiɛ kɛ sɛɛ afisi.,faa sɛɛ ne ale titiri ji hiɛ kɛsɛɛ afisi,0.6667,0.2258
+392,"Afisi komɛi baa dani wiemɔ shishifa lɛ baa, ni nomɛi ji Hiɛtsalɔ afisi.",fi si komeeba dani wiemɔ shishifa lɛ baa ni nome ji heɛ sala afisi,0.4615,0.1579
+393,Afisi komɛi baa yɛ wiemɔi ateŋ ni nomɛi ji teŋ afisi lɛ.,afisi kome baayɛ wiemɔi ateŋ ni nome ji teŋ afisi lɛ,0.3333,0.0909
+395,Awoteŋ ji afisi henɔ ko.,awotengye afesi he nɔkɔ,1.0,0.3158
+398,"Na ole ake, wiemɔi fioo yɛ je lɛ mli ni yɔɔ awoteŋ afisi.",onaa akɛ wiemɔi fioo yɛ je lɛ mli ni yɔɔ awo teŋ afisi,0.3846,0.1163
+405,Tsɔ ohiɛ oha onaanyo lɛ koni ogbala afisi mli otsɔɔ lɛ.,lo ka shu o maŋ kae wui nya ma yi,1.0,0.8182
+437,Ewaa ni anaa wiemɔkulibii hee kɛjɛɔ wiemɔ shishifa lɛ mli.,ehoa ni anaa wiemɔ kulebii hei kɛjɛɔ wieamɔ shishifa lɛ mli,0.5,0.1042
+438,Ewaa kɛtsakeɔ wiemɔweku ko kɛyaa wiemɔweku krokro mli.,ewaa kɛ tsakaɔ wiemɔ wekuku kɛyaa wiemɔ weku krokom li,1.0,0.0652
+439,Afisii haa anaa feemɔwiemɔ be srɔtoi.,fisiha anaa fiemɔ wiemɔ be srɔtɔi,0.8333,0.1613
+441,Afisi haa anyɛɔ atsakeɔ wiemɔkuli ko be kɛyaa be krokro mli.,thepaseanyɔ aakoyomoui krokrom li,1.0,0.6122
+442,Afisi haa afeɔ wiemɔkuli pii.,abɛse ha afeawiamɔ kuli pii,0.8,0.25
+444,Afisi he nilee yeɔ buaa wiemɔtsɛrɛmɔ kɛ wiemɔkasemɔ.,asisehenelee yiɔ boaa wiemɔ tsɛremɔ kɛɛ wiemɔ kasemɔ,1.0,0.1591
+446,Afisi haa atsakeɔ sutsɔɔlɔ kɛyaa gbɛiwiemɔ mli.,esie ha atsa ko osusɔɔlɔ kɛyaa gbe wiemɔ inlik,1.1429,0.325
+456,"Yɛ kui amli lɛ, kɛ afisi henɔi lɛ eko fɛɛ eko asɔ wiemɔkulibii hee aaafee ejwɛ.",yɛ kui amli lɛ kɛ afisihenɔi lɛ ɛkoo fɛɛ eko asɔr wiemɔ kulibiŋ hee aafee ejwɛ,0.4375,0.0806
+457,Feemɔ klalo akɛ obaagbala mli otsɔɔ klasi lɛ.,fimo teiloo akɛ obaagbala li otsɔɔ ksi lɛ,0.5,0.2703
+459,Tsalɔi haa afeɔ sanemuji haŋtsiŋŋ bɔ ni afee ni akafee sanemuji ganei babaoo.,she lɔe ha afiɔ sane mu dzi haŋtseŋ gbɔ ni afie ni akafi ni sane mu dzi ganii babawo,1.3077,0.2812
+460,Amɛnitsumɔ ji akɛ amɛbaatsa wiemɔkulibii ni yɔɔ wiemɔ ko mli.,omin,1.0,0.9412
+462,Nomɛi ji tsalɔi ni wɔkɛtsuɔ nii yɛ wɔdaadaa sanegbaa mli.,nɔ mli ji tsalɔi nu wɔkɛtsuɔ nii yɛ wɔdadaasane gbaa nli,0.6,0.1064
+464,Ekaseɔ nii hewɔ lɛ ele nii.,ekasi whɔ ni hewɔ lɛ ele nii,0.5,0.1905
+478,Tsalɔ ni tsaa wiemɔkulibii kɛ sanefafai.,shɛlɔ ni taa wiemɔ kulibii kɛɛ sane fafai,1.1667,0.1471
+479,"Akɛ omashi alɔgɔ (,) emaaa tsalɔ sɛɛ.",a yetopa tetyɛlɔ s,1.0,0.7407
+480,Nyɔŋmɔ ni mihe lɛ miye.,nyɛ mɔ ni mewɛɛ lɛ me yɛ,1.0,0.4444
+481,Sane lɛ ekaiɔ lɛ jogbaŋŋ..,zŋlɛ ekaiɔ lɛ jogbaŋ,0.6,0.25
+486,"Kɛji aaaho lɛ, nyɛkɛ gbɔmɛi ateiaŋ afea toiŋjɔlɛ.",kɛji aaku lɛ nyekɛ gbɔmɛ atitia ha fia toiŋjzɔlɛ,0.875,0.25
+487,"Dani bɛlɛo baama eyi shi lɛ, bɛ ele nɔ ni shikpɔŋ ekɛɛ lɛ.",dali beleo baama eyi shi lɛ bɛ ele nɔ ni shikpɔŋ ekɛɛ lɛ,0.1538,0.0682
+490,"Kɛji nugbɔ miinɛ lɛ, wɔbaasɔɔ eko.",kɛji nugbɔ miinɛ lɛ wɔbaa saul eko,0.3333,0.1111
+491,"Be ni maŋtsɛ lɛ gbo lɛ, mina Nyɔŋmɔ.",bi ni maŋtsɛ lɛ gbo lɛ mina nyɔŋmɔ,0.125,0.037
+497,Jeŋshihilɛ ewa shi fɛɛ sɛɛ lɛ wɔbaabɔ wɔhe mɔdɛŋ.,jɛŋshihi lɛ ewashie fɛɛsɛɛ lɛ wɔbaabɔ wɔhemɔdɛŋ,0.7778,0.05
+498,Eyatao lɛ shi enaaa lɛ.,ɛye naayalɛk,1.0,0.6667
+499,Mile lɛ hewɔ lɛ mikɛ shɛɛ lɛ ha lɛ.,meile hewɔ lɛ mɛkɛ shee lɛ ha lɛ,0.4444,0.2308
+501,Ŋmalamɔ tsalɔi srɔtoi etɛ koni okɛ eko fɛɛ eko afee sanemuji.,moramɔ tolo timfio toi teko ne wo kar koo fɛ ɛko afee sane mu jo,1.2727,0.4
+504,Amɛgbalaa yiŋtoo yɛ sane ko mli.,amarka amimutɔɔ yɛ sane komli,0.6667,0.3846
+505,Amɛwaa ni akɛ sanekuku loo sanefa fataa sanemuu he.,amɛwania kɛ sanekuku loo sane fafata asane mu he,0.7778,0.0476
+506,Amɛwaa kɛtsaa yiŋtoo gbohii enyɔ.,amɛawo kɛtsayiŋtoo gbohii enyɔ,0.6,0.1429
+507,Amɛwaa kɛtsaa yiŋtoo kpakpai enyɔ.,am kɛsɛni joai eyp,1.0,0.6207
+509,Mlai fioo ni he hiaa ni sɛɛnamɔi yɔɔ he he miihia yɛ tsalɔi kɛnitsumɔ mli.,mhaifioni hihia ni sarami yɔu yihi mihia yɛtalɔikanitumo n-di,0.9333,0.322
+512,"Tsalɔi waa akɛ yiŋtoo, nifeemɔi kɛ susumɔi tsaa.",shɛlɔi yewaa akɛ yinto ni feemɔye kɛɛ susumɔi ita,0.875,0.3333
+513,Tsalɔi waa kɛji aatsɛtsɛi nibii.,ched atms,1.0,0.8889
+514,"Kɛji okɛ tsalɔi miitsu nii lɛ, kwɛmɔ akɛ sanemuji lɛ kɛ amɛhe nyiɛ ŋɛlɛ kome nɔ.",kɛji okɛtsalɔi misunii lɛ kwɛmɔ akɛ sanemuji lɛ kɛ amɛhe nyiɛ ŋɛ lɛ kome nɔ,0.375,0.0317
+516,Ayɛ wiemɔkulibii asɔɔ gbɛjianɔtoo henɔi babaoo.,ayewiemɔ koli bi asaul gbejinɔtoo henɔ babao,1.1667,0.2439
+524,Namɔ woɔ nibii nɛɛ agbɛi?,amumolom woo nibii nɛɛ agbee,0.6,0.5
+526,Wiemɔkulibii hee lɛ aaanyɛ ajɛ wiemɔ weku kroko mli.,wiemɔ kulubii he lɛ anyiaadze wie maweko kroko li,0.8889,0.2791
+531,Tsɔɔmɔ ankro ankro wiemɔkulibii ni yɔɔ wiemɔntai ni baa nɛɛ amli.,sauomɔ aŋkuro ankurowiemɔ kulibii ni yɔɔ wiemontai ni bal neh amli,0.6364,0.2037
+535,"Maŋkpa, Tsɛ onukpa feɔ Tsɛŋkpa.",see onukpa feɔ tsɛŋkpa,0.4,0.36
+536,Wiemɔi komɛi maa wiemɔkulibii kɛjɛɔ wiemɔi krokomɛi amli.,wiimɔi kome maa wiemɔ kulibii kɛjɛɔ wiemɔi krokome amli,0.625,0.102
+543,"Faneshiŋ (foundation), tɛlivishɛŋ (television), sɛmɛnti (cement), kɔmpiuta, knkn.",funnaction tdicin televisian television cementy temp computer h hesanea,1.0,0.5873
+544,Ama Ga wiemɔkulibii nɛɛ fɛɛ kɛjɛ Blɔfo wiemɔ lɛ mli.,amgawiemɔ kulibii nɛɛ fie kɛjɛ blɔfu wiemɔ lɛ mli,0.5,0.0952
+552,Ehaa anaa he ni wiemɔkulibii pɔtɛɛ komɛi jɛ.,eha anaahi ni wiemɔ kulibii pɔtɛɛ kome jɛ,0.75,0.1111
+557,Tsɔɔmɔ afisii ni yɔɔ wiemɔkulibii ni baa nɛɛ amli ni otsɔɔ afisi henɔ ni ji.,saomo afesii ne yɔɔ wiemɔ kuluibiinii baaneɛ amle ne otɔɔ afesii he no niji,0.9333,0.2459
+559,Gbalamɔ nɔ ni ji tsalɔi amli.,pɔamɔ nɔ ni ji tsalɔi amli,0.1667,0.1739
+560,Ŋmalamɔ tsalɔ henɔi ni ayɔɔ yɛ Ga mli.,gbalamɔ tsɛlɔhenu tiayɔɔɔ yɛ gaa amli,0.875,0.3
+561,Tsɔɔmɔ srɔto ni yɔɔ henɔi ni otsi ta lɛ mli.,sɔɔmɔ sroto ni yɔo henɔi ni otita lɛ mli,0.5,0.1176
+562,Ha nɔkwɛmɔnii yɛ henɔi lɛ eko fɛɛ eko shishi ni okɛfee sanemuji.,h nɔkwɛ mɔ ni yɛ henɔi lɛ eko fɛɛ eko shi shi ni okɛfee sane muji,0.6667,0.0385
+563,Folɔmɔ tsalɔi ni yɔɔ sanemuji nɛɛ amli lɛ shishi.,pollomotsaalɔi ni yɔɔsa ne mu ji nɛɛ amni le shishiɛ,1.0,0.2
+564,Miyahe niyenii ni mibaye yɛ shia.,miahee niyenii ni mibaye ya shia,0.3333,0.1111
+565,Enyɛɛɛ eya sukuu ejaakɛ enaaa hewalɛ.,enyɛ eyasu koo ejaakɛ enaa hewalɛ,0.6667,0.1613
+566,Masumɔ akɛ maya gbefaa lɛ eko shi mibɛ shika.,sumɔ akɛ maya npakpe bɛfaa lɛ ɛƒo she mɛbɛ shika,0.6667,0.3611
+568,Emli efu enyɛ awo no hewɔ ni eyaaa tsumɔ lɛ.,mli efu enyɛ awo nu hewɔ ni eyaa diaŋ dɔm si wɔ leɛ,0.8,0.3235
+569,"Ebuuu saa, tsɛbelɛ, ekaa saa nɔ.",ibuu saa se lɛ,0.8333,0.5833
+570,Gbalamɔ wiemɔkulibii asɔɔ gbɛjianɔtoo mli.,mipɔmaba asɔ gbejanɔtonmlasɔ gbedanɔtɔ huyie,1.0,0.7568
+571,Ŋmalamɔ wiemɔkulibii asɔɔ gbɛjianɔtoi etɛ yɛ Ga wiemɔ lɛ mli.,ŋalamɔwie mɔ kolibii asɔ gbedzianɔtoi etɛ yɛ gawiemɔ le li,0.9,0.1569
+572,Gbalamɔ wiemɔkulibii asɔɔ gbɛjianɔtoi lɛ ateŋ etɛ mli.,balemon wiemɔ kulibe a sau buano le i think its,1.25,0.5435
+574,Ga wiemɔ lɛ mli .,gawimɔ lɛ li,0.75,0.1667
+577,"Ŋmɛnɛ lɛ, tɛkinɔlɔji he hiaa jogbaŋŋ yɛ sukuuyaa mli.",ŋmɛnɛ lɛ teckinoloji hia jogbaŋ ye sukuyaa mli,0.6667,0.2326
+581,"Sanebimɔ lɛ ji akɛ, mɛni tsa sɛɛ?",sane bimɔ lɛ ji akɛ mɛi ni tsasɛɛ,0.7143,0.04
+582,Ani wɔkɛ robotu baaye tsɔɔlɔi anajiaŋ gbi ko?,ani wokɛ robot baa hetsɔɔlɔi anajiaŋ gbi ko,0.5,0.0811
+587,Abaagba sanemli gbalamɔ okadii hu ahe sane kɛ bɔ ni akɛbaatsu nii hu he sane.,abaa gba sanim li gbala mɔ o kadii ku ahe sane kɛ bɔ ni akɛbaasuhu nii hu he sanik,0.7333,0.1129
+596,Sanefa ji wiemɔkulibii ni abua amɛnaa ni nyɛɔ feɔ sanemuu.,sa nefa ji wiemɔ kulibii ni abua amɛnaa ni nyɛɔfeɔ sane muu,0.7,0.0
+609,No ji oti ni he hiaa yɛ sanekuku lɛ he.,nu ji otini hehia yɛ sane kukuu lɛ he,0.7,0.1034
+614,Nɔkwɛmɔ nibii komɛi ni baa yɛ shishi lɛ.,nɔkwɛmɔ nibii kɔmɛi ne baaye shishi lɛ,0.5,0.0938
+622,Enɛ ji sanekuku ni hiɛ gbɛiwiemɔ loo najiaŋgbɛi akɛ sanekuku lɛ yitso.,enɛ ji sanekuku ni hiɛ gbee wiemɔ loo nɛjɛŋgbee akɛ sane kuku lɛ yitsu,0.5,0.1379
+624,Gbɛiwiemɔ nyɛɔ efeɔ wiemɔkuli kɛji najiaŋgbɛi ni loo gbɛiwiemɔ.,bee wiemɔ nyiɛɔ efeɔ wiemɔ kulikɛji najiaŋgbe ni loo gbe wiɛmɔ,0.8889,0.1667
+629,Sanekuku lɛ yitso lɛ bɛ kadilɔ.,ɛmfɛ ɛ itro lɛ bɛ kadilɔ,0.5,0.44
+630,Anyɛɔ anaa wiemɔi ni fa fe ekome yɛ gbɛiwiemɔ sanekuku mli.,yaanaa wiemɔi ni fafe ekome yegbee wiemɔ sane kuku nli,0.8182,0.1667
+647,Yitso lɛ nyɛɔ ekɛ kadilɔi ni baa mra kɛ mɛi kpeɔ sɛɛ lɛ fɛɛ nyiɛ kɛbaa.,yitro lɛ nyiɛɔ ekɛ kadelɔi ni baa mra kɛɛ mɛi kpiɔ sɛɛ lɛ fɛɛ nyiɛ kɛba,0.375,0.1091
+653,Feemɔwiemɔ sanekuku ji sanekuku ni feemɔwiemɔ oti ji sanekuku lɛ yitso.,hwɛ mewa same kokuji sane koko ni fam wai saa wichi nyɛnaa wee lɛ sane koko le ith,1.4545,0.6667
+659,Feemɔwiemɔ sanekukuji ni hiɛ feemɔwiemɔ oti kɛ walɔi.,fimo wiemɔ sane ku kuji ne hiɛ fimɔ wiemɔ otikɛ waloi,1.25,0.1556
+671,Sanekuku ni hiɛ mligbalalɔ akɛ sanekuku lɛ yitso lɛ atsɛɔ lɛ mligbalalɔ sanekuku.,srane kuku ni hiɛ migbalalɔ akɛ sane koko lɛ yitso lɛ atseɔ lɛ megbalalɔ sane koko,0.6923,0.1324
+682,Nyɛsusua he taakɛ owiemɔ ni okaseɔ lɛ tsɔɔ lɛ.,nyɛsusua het akɛ wowiemɔ ni okaseɔ lɛ tsɔɔ lɛ,0.3333,0.0541
+690,Enɛ ji sanekuku ni hiɛ gbɛhegbɛi akɛ sanekuku lɛ yitso.,etnɛ ji sane kuku ni heɛ gbɛ he gbɛi akɛ sane kuku lɛ yitso,0.9,0.0444
+698,Akɛ sanekukuji babaoo woɔ sanemuji amli.,ake sanekuku dzi babawo wɔ sanemu ji amli,1.1667,0.1471
+700,Yɛ nɔ ni yɔɔ ŋwɛi lɛ mli lɛ adiki gbɛiwiemɔ sanekuku lɛ mli.,yɛ nɔ ni yɔɔ ŋwɛi lɛ le lɛ adike gbee wiemɔɔ sane kuku lɛ nili,0.5385,0.1702
+703,Feemɔwiemɔ sanekuku lɛ yitso lɛ ji tee.,pime wiamɔ saleikuku la yitso lɛ dji tee,0.7143,0.2812
+708,"Akɛ sanekukuji woɔ niŋmaa, adafitswaa kɛ wiemɔi amli.",acksen wani',1.0,0.8409
+709,Koni sharamɔi kɛ wiemɔi afee faŋŋ lɛ sanekukuji yeɔ he eko yɛ nakai gbɛi anɔ.,koni sharamɔi kɛ wiemɔi afee faŋɛ lɛ sane kuku je yɔɔ he ekoo yɛ nakaigbee anɔ,0.5333,0.0968
+712,Foo sanekuku yitso lɛ shishi yɛ eko fɛɛ eko mli.,foosa nu kuku yitoo lɛ shishi yɛ eko fɛɛ eko mli,0.4,0.0526
+716,"Eji leebi ni jeŋ etse heŋŋ, gbi lɛ baafee fɛo aha tsuŋ shwɛmɔi.",eji leebi ni jeŋ eje hɛŋ gbi lɛbaafee feɔ ahatsuŋ shɛ,0.6154,0.2041
+734,"Yɛ kui amli lɛ, nyɛtoa sanekukuji srɔtoi lɛ anaa (a.",yɛ kui amli lɛ miɛtoa sane kuku ji srotoi lɛ anaa,0.6,0.1
+737,Okɛ ohetoi lɛ aha klasi lɛ koni asusu he.,oke oheto lɛ ah klase lɛ konia susu he,0.6667,0.125
+741,Nyɛ kɛ klasi lɛ asusua nɔ ni nyɛna lɛ he.,ya kɛ klase lɛ asusua nɔ ni nyɛna lɛ him,0.3,0.1613
+742,Sanefa ji wiemɔkulibii ni abua naa ni miitsu nii kome ni hiɛ feelɔ kɛ feemɔwiemɔ.,sanefa gyi wiemɔ kolibii ne aboanaa ne metunii kome ne hiefeelob kɛfeemoyɛmɔ,0.8667,0.2576
+743,Sanefa ji wiemɔ ko shishijee mlai.,a,1.0,0.9643
+750,Saki tsi akpele dani etee sukuu.,sakiti akpele dani etee sukuu,0.3333,0.0385
+758,Ehiɛ feelɔ kɛ nifeemɔ loo nifeemɔ sanekuku.,eyɛ feelɔ kɛɛ nifeemɔ loo nifeemɔ sane kooku,0.5714,0.1389
+759,Saamua tsi akple dani etee sukuu.,saŋua ti akpele dni etee sukuu,0.6667,0.1852
+760,Ani Makafui baanyɛ efo nu daa?,ani mmakafii banyɛ afunu daa,0.6667,0.2083
+762,Nɔkwɛmɔ nibii ni aha lɛ fɛɛ eko nyɛɔ edamɔɔ shi ni ekpasaaa nɔ ko.,nɔkwɛmɔɔ nibii ni ah lɛ fɛɛ ɛkunyɛɔ edaamɔ shii ni ɛkpasaaa nɔ ko,0.5,0.1538
+763,Ehaa shishinumɔ faŋŋ ni eshwɛɛɛ lɛ nɔ ko.,ehaa shishinumɔ fa ŋli nii eshwɛɛ lɛ nɔ ko,0.5,0.1212
+766,Kpaa intanɛti lɛ nɔ kɛtao sanefa henɔi otii ejwɛ lɛ.,paai internity lɛ nɔ kɛtao sanefahenɔ i oti ejwle,0.7,0.2143
+773,Feni yaa kosɛɛ daa hɔɔ.,fe ni hya akosɛɛ daa hɔɔ,0.8,0.0556
+776,Sanefa henɔ nɛɛ nyɛɔ jeɔ kpo ni ehaa feelɔ.,sanefa hiɛnɔ nɛɛ nyiɛɔ jɔɔ kpo ni ehaafielɔ,0.5556,0.1471
+778,Ani obaanyɛ oha wiemɔkulibii ni tsɔɔ sanebimɔi?,ani ɔbaanyɛ oha wiemɔ kulibii ni tsɔɔ sanebimɔi,0.4286,0.025
+779,Sanefa ni miitsɔɔ sanebimɔ gbeɔ naa kɛ sanebimɔ okadi.,sɛnifa ne mii tɔɔ sane bi ma biɔnaa kɛ sane bi mɔ okadim,1.3333,0.1778
+788,Akɛni hɔmɔ miiye lɛ hewɔ lɛ ehoo nii.,ɛkɛ nɔhɔmɔ miye lɛ hewɔ lɛ ehoo nii,0.375,0.1034
+791,"Kεji mitee Ga lε, mahe baagi maha bo.",ke yi mi tsee galɛ mahe baage mahbok,1.0,0.25
+792,Yɛ nɔkwɛmɔ nibii lɛ amli lɛ afolɔ kpasalɔ sanefafai lɛ ashishi.,yɛ nokwɛmɔ nibii lɛ amli lɛ afolɔ kpasalɔ sanefafailia shishi,0.3636,0.0385
+800,Kadimɔ akɛ wiemɔkulibii ni afolɔ amɛshishi lɛ fɛɛ lɛ “ni sanefa” ni.,akɛ wiemɔ kulebii ne afolɔɔ amɛshishi lɛ fɛ lɛ ni sanefane,0.6667,0.2037
+802,Ebaanyɛ etsu nii akɛ feelɔ loo nɔnalɔ.,eba nyɛ etsu nii akɛfeelɔ loo nɔnalo,0.7143,0.0645
+809,Gbɛiwiemɔ sanefa akɛ helɔ n.k.n.,bewiemɔ sanefa akɛ hilɔ nkɛn,0.6,0.2
+810,Minaanyo lɛ kpoo nɔ ni mihe kɛbaha lɛ lɛ .,ninaanyo lɛ kpoonɔ ni mihe kɛbaha lɛ lɛ,0.3333,0.0312
+821,Afolɔ mligbalamɔ sanefa lɛ ashishi yɛ sanemuji ni yɔɔ yiteŋ lɛ amli.,afolɔɔ mligbalamɔ sanefa lɛ ashi shi yɛ sane muji ni yɔɔ yiteŋ lɛ amli,0.4167,0.0179
+833,Jɛ niyeli lɛ sɛɛ lɛ miye mihe oyai kɛtee ŋmɛlɛtswaa enyɔ kpee ko.,jɛ niyeli lɛ sɛɛ lɛ miye mihee oyai kɛtee ŋmɛlɛ tswaa enyɔ kpee ko,0.2308,0.0192
+837,Yɛ kui amli lɛ nyɛhaa nɔkwɛmɔ nibii yɛ sanefa henɔi ni okase lɛ ahe.,nyɛkui amli lɛ nyɛha nɔkwɛmɔ nibii yɛ sanefa henɔi ni okase lɛ ahe,0.2143,0.037
+844,Okadi ni akɛmaa sanemuu naagbee kɛtsɔɔ akɛ ogbe sanemuu lɛ naa.,okade ni akɛma sane mu naagbee kɛtɔɔ akɛ ogbe sane muu lɛ naa,0.6364,0.0769
+845,Kaselɔ lɛ kane wolo ko.,chale,1.0,0.8889
+847,Akɛtsɔɔ akɛ sanenɔfoo lɛ eba naagbee.,akɛtsɛɔ akɛ sane nɔfoo lɛ eba nagbie,0.6667,0.0968
+848,Kɛji ato nibii anaa yɛ sane ko mli lɛ akɛtserɛɔ nakai nibii lɛ ateŋ yɛ sane lɛ mli.,kɛji atɔnibii anaa yɛ sane ko li lɛ akɛtreɔ nakai nibii lɛ ateŋ yɛ sane lɛ mli,0.2222,0.0769
+849,"Nibii ni ato naa lɛ nyɛɔ feɔ wiemɔkulibii, sanekukuji, sanefafai loo sanemuji.",sanekukuji sane fafai loo sane moji,1.0,0.5469
+850,"Mitee shwapo lɛ mli ni miyahe samla, kotsa, goga kɛ papam.",misiaƒo le nlinii miahe sam la kota gogake papam,0.9091,0.2667
+851,"Minako wolo, okpɔlɔ kɛ sɛi lɛ.",ma koolo okpɔlɔ kɛsɛi lɛ,0.6667,0.1304
+854,Akɛtserɛɔ kadilɔi ni miikadi gbɛiwiemɔ ko mli.,akɛ tr dilɔi ni mikadi bewiemɔ ko m li,1.0,0.2564
+855,"Wolo hee, baaŋmɔŋ lɛ elaaje.",wolohe baamon lɛ laaje,0.8,0.2273
+856,"Mihe shia momo, agbo, wuɔfɔ lɛ.",luhe shia mɔmo agbo wɔ fɔ le,0.8333,0.2174
+857,Niŋmaa mli okadii ni jieɔ nibii anaatoo kpo yɛ niŋmaa mli lɛ ji omashiomashi.,nle okadi ni jieɔ nibi anatoo kpo yɛ nuŋmaa mli lɛ ji omai shoma shi,0.6429,0.2063
+861,Miyɛ kaa wɔ; Makane nii nyɔŋnyɔŋ lɛ fɛɛ.,mikɔ aneininyɔnyɔŋ le fea,1.0,0.4516
+862,Miitao mafa gbɛ kɛya Ga; Nugbɔ miinɛ.,ni tao mafa gbɛ kɛyaga no gbɔ mi ne,1.0,0.1724
+863,Akɛtserɛɔ nibii amli yɛ naatoo ko mli.,aketere nibii amli yɛ ntoo ko mli,0.2857,0.1935
+864,"Amɛke gbekɛbii lɛ nibii tamɔ; mamai, tsobii, aduawai kɛ tokotai.",make gbe keb le nibi tamɔ mamai tsɔ bii aɖoɔ wai ke tsokotai,1.1,0.2549

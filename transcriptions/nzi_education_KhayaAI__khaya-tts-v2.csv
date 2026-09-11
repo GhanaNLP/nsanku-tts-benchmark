@@ -1,0 +1,201 @@
+sample_id,reference,hypothesis,wer,cer
+7,"Ngyɛnu ɛhye buke ɛnelɛkpɔkɛ, ɛnelɛkpɔkɛ ngyehyɛleɛ nee ɛnelɛ ɛzukoalɛdeɛ ne anye.",ngyɛnu ɛhye buke ɛnee kpokɛ ɛnee kpokɛ ngyehyɛleɛ nee ezukoalɛdeɛ ne anye,0.5455,0.1594
+16,Ɛnelɛkpɔkɛ a le edwɛkɛkpɔkɛ foa ne mɔɔ yɛbɔ a ɔyɛ boɛ la.,ɛnee kpɔkɛ a le edwɛkɛkpɔkɛ foa ne mɔɔ yeboa ɔyeboɛ la,0.5,0.1111
+17,Kɔnsɔnante ɛnelɛkpɔkɛ a le kɔnsɔnante mɔɔ ɔda ye subane ali kɛ ɛnelɛkpɔkɛ la.,kɔnsonante ɛnee kpɔkɛ a le kɔnsonante mɔɔ ɔda ye subane ali kɛ ɛnee kpɔkɛ la,0.4615,0.0938
+20,Ɛnelɛkpɔkɛ a le ɛdendɛlɛ foa ne bie mɔɔ lɛ vawolo la.,menginginginging,1.0,0.9048
+27,"Yemɔti, duma Kofi lɛ ɛnelɛkpɔkɛ nwiɔ.",yemɔti duma kofili ɛnee kpɔkɛ nwyɔnwo,0.6667,0.2333
+30,Ɛhye kile kɛ ɔlɛ ɛnelɛkpɔkɛ ko.,ɛhye kile kɛ ɔleɛ ne kpɔkɛ ko,0.5,0.12
+40,"Edwɛkɛkpɔkɛ kola nyia ɛnelɛkpɔkɛ ko, nwiɔ anzɛɛ dɔɔnwo.",edwɛkɛ kpɔkɛ kolaa nyia ɛnle kpɔkɛ ko nwiɔ anzɛɛ dɔɔnwo,0.625,0.0652
+46,Ɔboa ɔmaa sukoavoma nyia edwɛkɛmgbɔkɛ fofolɛ mɔɔ le fɔɔnwo la.,ɔboa ɔmaa sukuavoma nyia edwɛkɛ mgboke fofolɛ mɔɔ le foɔnwo la,0.4,0.0769
+47,Ɔboa ɔmaa sukoavoma ne nwu aneɛ ne anu edwɛkɛmgbɔkɛ ne mɔ.,ɔboa ɔma sukua voma ne nwu aneɛ ne anu edwɛkɛ mgbokɛ ne mmɔ,0.5455,0.0851
+55,Gana aneɛ ko biala lɛ ɛnelɛmgbɔkɛ ngakyile.,ghana ane ko biala le ɛnee mgbɔkɛ ngakyile,0.7143,0.1389
+58,Ɛnelɛkpɔkɛ mɔɔ ɔbuke la a le mɔɔ vawolo dwula ye la.,ɛnee kpokɛ mɔɔ buke la a le mɔɔ vawolo dwula ye la ɛnee kpokɛ mɔɔ buke la a le mɔɔ vawolo dwula ye la,1.3636,0.9756
+63,Ɛhye a le ɛnelɛkpɔkɛ mɔɔ kɔnsɔnante a dwula ye la.,ɛhye a le ɛnelekpɔkɛ mɔɔ kosonantea dwula ye la,0.3,0.1
+68,"Gurune, Likpankpaani, Dagare, nee mɔɔ ɛha la.",guu nee le kpamkpɛ nee dagare ne mɔɔ ɛha la,0.8571,0.2571
+74,Fa ɛ ti anwo edwɛkɛmgbɔkɛ kilehile edwɛkɛkpɔkɛ ɛnelɛkpɔkɛ anu.,fa eti anwo edwɛkɛmgbɔkɛ kilehile edwɛkɛkpɔkɛ ɛnee kpɔkɛ anu,0.4444,0.0566
+76,Kilehile ɛnelɛkpɔkɛ ngakyile mɔɔ Nzema lɛ la anu.,kilehile ɛnee kpokɛ ngakyile mɔɔ nzɛma le la anu,0.5,0.122
+79,Fa wɔ nyelebɛnloa ne to gua kile ɛ gɔnwo mɔ.,fa wɔ nyɛlebɛnla ne to gua kile yɛ gɔnwo mɔ wɔkɛlɛ mmmmm,0.4,0.4118
+80,Ɛnelɛkpɔkɛ ngyehyɛleɛ ne noko kola kakyi wɔ aneɛ ko biala anu.,ɛnee kpokɛ ngyehyɛlɛ ne noko kola kakyi wɔ ane ɔko biala anu,0.4545,0.098
+82,Vawolo ne a le ɛnelɛkpɔkɛ ne ngyɛnu ne mɔɔ anwo hyia kpalɛ a.,awolɛ ne a le ɛnekpokɛ ne ngyinli ne mɔɔ anwo hyia kpalɛ a,0.2308,0.1667
+100,Ɛnee abɛbɛ nee ngyigyilira le agɔnwolɛ kpalɛ.,menginginginging,1.0,0.7895
+101,"Emomu, bɛ ɛbɛlabɔlɛ ɛnee le ngakyile.",ɛmɔ mu bɛ bɛlabɔlɛ ɛnenle ngekyile,1.0,0.1667
+102,"Wɔ ewia mekɛ ne anu, ngyigyilira yɛle gyima ɛsesebɛ kpondɛle aleɛ ziele.",wɔ ewia mekɛ ne anu ngyigyilera yɛle gyimaa ɛsesebɛ kpondɛle aleɛ ziele,0.1667,0.0339
+117,Aneɛ ngakyile ne mɔ biala lɛ ɛnelɛ ngakyile.,anee ngakyile ne mɔ biala le ɛnelɛ ngakyile,0.25,0.0556
+121,Bie mɔ noko lɛ avinli ɛnelɛ ne boka nwiɔ ne anwo.,bie mɔ noko le avinli ɛnlelɛ ne boka nwiɔ ne anwo boka nwiɔ ne anyeee,0.5455,0.4737
+125,"Kasem, Ewe nee mɔɔ ɛha la.",kasamu awie ne mɔɔ ɛhala babi mɔɔ wo ɔgyinli nu nuu,1.6667,1.3684
+132,Ɛnelɛ di gyima titili ngakyile nsa wɔ ɛnelɛ aneɛ nu.,ɛnele di gyima titili ngakyile nsa wɔ ɛnele aneɛ nu,0.2,0.0476
+146,Aneɛ ko ne ala ngakyilehilelɛƐnelɛ eza kola kile ngakyile wɔ aneɛ ko ne ala anu.,ane ko ne ala ngakyilehile ne le eza kola kile ngakyile wɔ ane ko ne ala anu,0.3333,0.0923
+147,Ɛhye finde wɔ menli ekpunli ngakyile mɔɔ ka aneɛ ko ne ala la ɛdendɛlɛ nu.,ɛhye findeɛ wɔ mmenli kpunli ngakyile mɔɔ kaane ɔko ne ala la ɛdendɛlɛ nu,0.4,0.0678
+155,Fa ɛ ti anwo edwɛkɛmgbɔkɛ kile ɛnelɛkpɔkɛ anu.,fa ye ti anwo edwɛkɛ mgboko kile ɛnɛkpokɛ anu,0.5,0.1842
+158,Dua ndonwo mɔɔ fɛta la azo na kilehile ɛnelɛ ngakyile ne mɔ anu.,dua dɔɔnwo mɔɔ fɛta la azo na kilehile ɛnelɛ ngakyile ne mɔ anu,0.0769,0.0588
+159,"Wɔ bɛ ekpunli ne mɔ anu, bɛwowɔ adwenle bɛhile gyima mɔɔ ɛnelɛ di la.",wɔ bɛ kpunli ne mɔ anu bɛwɔwɔ adwenle bɛhile gyima mɔɔ ɛnle di la,0.2143,0.0741
+161,Ɛ nee ɛ gɔnwo ɛdie edwɛkɛmgbɔkɛ ne mɔ na bɛgyinla zo bɛyɛ mɔɔ wɔ aze ɛke la.,ɛ nee ɛ gɔnwo ɛdie edwɛkɛmgbɔkɛ ne mɔ na bɛgyinla zo bɛyɛ mɔɔ wɔ aze ɛkɛ la,0.0588,0.0169
+162,Bɛhile ɛnelɛkpɔkɛ holɛ mɔɔ wɔ edwɛkɛmgbɔkɛ ne mɔ anu la.,behile ɛnee kpokɛ hɔle mɔɔ wɔ edwɛkɛmgbokɛ ne mmɔ anu la,0.6,0.1739
+163,Bɛhile ɛnelɛmgbɔkɛ ne mɔɔ lɛ ɛnelɛ ne wɔ edwɛkɛmgbɔkɛ ne mɔ anu la.,bɛhile ɛnemgbokɛ ne mɔɔ le ɛnelɛ ne wɔ edwɛkɛmgbokɛ ne mɔ anu la,0.2308,0.0926
+165,Kile ɛnelɛkpɔkɛ ngakyile ne mɔ na maa ko biala anwo ndonwo nsa.,kili ɛnee kpɔkɛ ngakyile ne mɔ ɔ na maa ko biala anwo dɔɔnwo nsa,0.4167,0.1373
+168,Kɛlɛ ɛnelɛ ngakyile ne mɔ na fa ndonwo nsa kilehile ko biala mɔɔ wɔhɛlɛ la anu.,kɛle ɛnenle ngakyile ne mɔ na fane dɔɔnwo nsa kilehile ko biala mɔɔ wɔhɛlɛ la anu,0.25,0.0952
+169,Dua ndonwo nsa azo kilehile gyima mɔɔ ɛnelɛ di wɔ Nzema aneɛ ne anu la.,dua dɔɔnwo nsa azo kilehile gyima mɔɔ ɛnele di wɔ nzɛma aneɛ ne anu la,0.2,0.0893
+180,Ɛgengalɛ kola yɛ mɔɔ anu-mia anzɛɛ ndɛlɛnu.,ɛgɛngalɛ kola ye mɔɔ anumia anzɛnyee ndele nu,0.7143,0.2286
+200,Kenga tidwɛkɛ ne yɛɛ mukenye ne.,kɛnga ti edwɛkɛ ne yɛ amuka nyɛne yɛ amuka nyɛne,1.5,0.6154
+203,Kpondɛ ɛdendɛmunli titili ne – Ɔta ɔfinde ɛdendɛkpunli ne mɔlebɛbo.,kpondɛ ɛdendɛ munli titili ne ɔta ofindɛ ɛdendɛ kpunli ne mɔɔ ɛlɛba bɔ,0.8889,0.125
+205,Kpondɛ adwenle ngakyile mɔɔ boa adwenle titili ne la.,kpondɛ adwenle ngakyile mɔɔ boa adwenle titili ne la kpondɛ nu mmm,0.3333,0.25
+216,Ɔwɔ kɛ ɛkpondɛ edwɛkɛmgbɔkɛ titili ne mɔ.,ɔwɔ kɛ ɛkpondɛ ye dwɛkɛmgbɔkɛ titili ne mɔ ɔwɔ kɛ,0.5714,0.1765
+229,Yɛfa ɛhye yɛkpondɛ adwenle kpɔkyee anzɛɛ titili ne mɔɔ wɔ ɛgengadeɛ bie anu la.,menginginginging,1.0,0.8462
+231,Ɛhye di gyima kpalɛ wɔ adawu mɔɔ le nɔhalɛ la anu.,ɛhye di gyima kpalɛ wɔ adawu mɔɔ le nɔhalɛ la anu,0.0,0.0
+233,Bɛyɛ ɛhye bɛkpondɛ nyelebɛnloa bɛmaa edwɛkɛmiza kpɔkyee bie mɔ.,bɛyɛ ɛhye bɛkpondɛ ye nyɛlɛbɛnwaa bɛmaa edwɛkɛ mezia kpokye bie mɔ,0.5556,0.1852
+235,Kenga adawu ne mɔɔ wɔ aze ɛke la.,kɛngɛ adawunle mɔɔ wɔ azekɛla nwɔngyele nu ɔwɔ ɔzekɛla nwɔngyele nu ɔwɔ ɔzekɛla,1.5,1.76
+236,Kile adwenle titili ne mɔɔ wɔ ɛgengadeɛ ne mɔɔ wɔ aze ɛke anu la.,kile adwenle titili ne mɔɔ wɔ ɛgengadeɛ ne mɔɔ wɔ aze ɛkɛ nu la,0.1429,0.0392
+241,Menli ɛhye mɔ bie wɔ ɛkɛ a ɛnee menze bɛ.,menli ɛhye mɔɔ bie wɔ ɛkɛ a ɛnee menze bɛ,0.1,0.0323
+266,Bɛva adwenle titili ne mɔɔ bɛhile la bɛdo gua bɛhile sukoavoma ne kɔsɔɔti.,bɛva adwenle titili ne mɔɔ bɛhile la bɛdo gua bɛhile sukoavoma ne kɔsɔɔti,0.0,0.0
+271,"Ɔkile diedi, ɛbulɛ nee nɔhalɛlilɛ.",okili diedi egulu ne nohalili,0.8,0.3571
+274,Na saa menli mɔɔ lɛ dibelɛ la fo ɛ?,na saa menli mɔɔ le ye dibele la fowɛ na saa menli mɔɔ le ye dibele la fowɛ ɛpɛ boo,1.6667,1.5
+276,Tieyɛ mɔɔ ɛnva adenle zo la anwo ɛngyia.,tia yɛ mɔɔ ɛnva adenle zo la a ŋwɔ ngyia,0.625,0.125
+285,Mebanlea na meayɛ tieyɛ wɔ me ɛbɛlabɔlɛ nu.,mebanlea na maa yɛ ti ɛyɛ wɔ me ɛbɛlabɔlɛ nu,0.5,0.0571
+292,Kenga adawu ne mɔɔ wɔ aze ɛke la na yeye nwolɛ kpuyia ne mɔ anloa.,kɛnga adawu ne mɔɔ wɔ aze ɛkɛ la na yɛyɛ nwolɛ kpuya ne mɔ anloa,0.2667,0.098
+299,Kilehilevolɛ kpanyinli ne gyi ɛkɛ ne maa tumililɛ wɔ sukulu ne anu.,kilehilevolɛ kpanyinli ne gyi ɛkɛ ne maa tumililɛ wɔ sukulu ne anu,0.0,0.0
+332,Ɛhye kola maa ɛkile kɛ ɛte mɔɔ ɛlɛkenga la abo anzɛɛ ɛnde ɔ bo.,ɛhye kola maa ɛkile kɛ ɛte mɔɔ ɛlɛkenga la abo anzɛɛ ɛnde ɔ bo,0.0,0.0
+344,Bɛ nwo bɔkɔbɔkɔyɛlɛ le debie mɔɔ sonla kpɔkɛdelɛ nee ye ayunlunyia gyi zo a.,bɛ nwo bɔkɔbɔkɔyɛlɛle debie mɔɔ sonla kpɔkɛdelɛ ne yɛ anyunlunyia igyi zo a,0.4286,0.0645
+361,"Akee, kile kɛ ɛkpondɛ kɛ bɛsi bɛkɛlɛ ɛgengadeɛ ne la.",akee kile kɛ ɛkpondɛ kɛ bɛsi bɛkɛlɛ ye genga deɛ ne la,0.3,0.0476
+363,Duzu agbɔkɛ a ɔbobɔle a?,yuzu huuu yuzu agbɔkɛ a ɔbɔbɔle a,0.8,0.5263
+374,Fa ɛ ti anwo edwɛkɛmgbɔkɛ kilehile “adwenle titili” anu.,fa ye ti anwo odwɛkɛmgbɔkɛ kilehile adwenle titili ye anu,0.3333,0.1111
+375,Tumi mɔɔ ɛbulɛ lɛ la.,tumi mɔɔ ɛbulolɛ la ɛmenle ti tumi mɔɔ ɛbulolɛ la,1.4,1.5
+376,"Ɛbulɛ ɛnle debie mɔɔ bɛkola bɛsɛlɛ a, na emomu ɔle debie mɔɔ bɛnyia ye a.",ɛbule ɛnle debie mɔɔ bɛkola bɛsɛlɛ ye a na emomu ɔle debie mɔɔ bɛnyia ye a,0.1333,0.0526
+388,"Ɛlɛkpɔsa sukunwiɔ ne mɔ anu la, kakye kɛ ɛbulɛ le awɔdenle mɔɔ anye le nwiɔ a.",ɛlɛkposa sukunwiɔ ne mɔ anu la kakye kɛ ɛbulolɛ awɔdenle mɔɔ anye le nwiɔ,0.25,0.0656
+394,Fa ɛdendɛmunli nna pɛ adawu ne sikalɛ.,fa ɛdendɛ munli na pɛ adawu ne sikalɛ,0.4286,0.0323
+399,Kile ɛweɛne mɔɔ la aneɛ ne fɔɔnwo ɛgengalɛ nee nwo mgbondabulɛ ne avinli la.,kile awiene mɔɔ la aneɛ ne fɔɔnwo ɛgengalɛ ne nwo mgbundabulɛ ne avinli la,0.2143,0.0806
+400,Kilehile subane mɔɔ ɛgengalɛ ndɛlɛnu lɛ la nsa anu.,kilehile subane mɔɔ ɛgengale ndilenunle la nsa anu,0.3333,0.119
+411,Yɛlɛ mgbɔkye mɔfeme titili ngakyile nsa.,yɛle mgbɔkyi mofome titili ngakyile nsa,0.5,0.1176
+426,Mgbɔkye mɔfeme mɔɔ yɛta yɛnwu bɛ la a le nzizo nee nzɔzo mɔfeme.,mgbɔkyi mmɔfeme mɔɔ yɛta yenwu bɛ la a lɛ nzi zo nee nzo zo mmɔfeme,0.6923,0.1176
+428,Ɔkola ɔmaa yɛnyia edwɛkɛmgbɔkɛ mɔɔ wɔ aneɛmɛla ekpunli gyɛne nu la.,ɔkola ɔmaa yɛnyia edwɛkɛmgbɔkɛ mɔɔ wɔ anembɛla kpunli gyɛne nu la,0.1818,0.0536
+432,Nzizo-nzɔzo mɔfeme a le mgbɔkye mɔfeme mɔɔ lɛ nzizo nee nzɔzo la.,nzuzo nzozo mɔɔ feme a le mgbɔkye mɔɔ feme mɔɔ le nzuzo nee nzozo la,0.75,0.1346
+441,Ɛhye maa edwɛkɛkpɔkɛ ne kakyi fi baholɛ kɔyɛ dɔɔnwo.,ɛhye maa dwɛkpokɛ ne kɛkyi fi bahɔle kɔyɛ dɔɔnwo,0.3333,0.1628
+444,Bɔ mɔdenle kɛ ɛbahilehile nu mɔɔ ɛnrɛnlea mɔɔ wɔ anwuma la azo a.,bɔ mɔdenle kɛ ebahilehile nu mɔɔ ɛnrɛnea mɔɔ wɔ wɔ anwuma la azo a,0.2308,0.0769
+481,Ɔmaa yɛnyia edwɛkɛmgbɔkɛ fofolɛ yɛfi ndinli anzɛɛ ninli mɔfeme ne anu.,ɔma yenyia odwɛkɛmgbokɛ fofolɛ yefi ndinli anzɛnyɛ nninli mɔfemɛ ne anu,0.6364,0.1525
+482,Ɔmaa yɛnyia edwɛkɛmgbɔkɛ mɔɔ wɔ aneɛmɛla ekpunli fofolɛ nu la.,ɔmaa yenyia edwɛkɛmgbokɛ mɔɔ wɔ anembɛlɛ ye kpunli fofolɛ nu la,0.5,0.1154
+483,Ɔmaa yɛnyia yɛkpɔkɛ ndɛlɛnu fofolɛ.,ɔmaa yɛnyia yɛkpɔkɛndele nu fofolɛ nwona muuuu,0.8,0.4
+485,Ɔmaa yɛkakyi edwɛmgbɔkɛ baholɛ yɛyɛ bɛ dɔɔnwo.,ɔmaa ye kakyi yedwomgboke bahɔle ye yɛbɛ dɔɔnwo ɔmaa ye kakyi yedwomgboke bahɔle ye yɛbɛ dɔɔnwo,2.0,1.2051
+487,Ɔboa ɔmaa yɛkɛlɛhɛlɛ edwɛkɛmgbɔkɛ fɔɔnwo na yɛsukoa aneɛ ne.,ɔboa maa yɛkɛlɛhɛlɛ edwɛkɛmgbɔkɛ fɔɔnwo na ye sukoa aneɛ ne,0.3333,0.0392
+496,Bɛziezie bɛ nwo kɛ bɛbado ye gua na bɛahilehile nu.,bɛziezie bɛ nwo kɛ bɛbado ye gua na bɛahilehila nu,0.1,0.0244
+504,Edwɛkɛmgbɔkɛ ɛhye mɔ ta finde yɛ adwelielilɛ nu.,odwokɔ mgbɔkɔ ɛhye mɔɔ ɔta findeɛ ye adwolieli nu,0.875,0.275
+511,"Mɔnukpɔkɛ titili ndonwo bie mɔ a le yɛɛ, eza, na, noko, nee, anzɛɛ.",mɔɔ nu pokɛ titili ne dɔɔnwo bie mɔ a le yɛ ezia na noko nee anzɛɛ,0.5385,0.1633
+513,Mɔnukpɔkɛ titili mɔɔ ka edwɛkɛmgbɔkɛ nee ɛdendɛsinli bɔ nu la.,monupɔkɛ titili mɔɔ monupɔkɛ titili mɔɔ ka edwɛkɛmgbɔkɛ ne ɛdendɛ,0.8,0.5577
+515,Mɔnukpɔkɛ titili mɔɔ ka edwɛkɛmgbɔkɛ nee ɛdendɛfoa bɔ nu la.,monukpɔkɛ titili mɔɔ kã edwɛkɛmgbokɛ nee ɛdendafo bo nu la,0.5,0.12
+516,Nyamenle nee me lua anzondwolɛ nu.,nyamenle nee me luwa anzonudwolɛ nu ɔbɔ vo ɔva ɔva ɔnyɔne ɔnyɔne ɔnyɔne,1.5,1.1071
+517,Koasi eza hɔle nyevile ne anu bieko.,kuasi eza hɔle nyivile ne anu ebieko,0.4286,0.1034
+518,Mɔnukpɔkɛ mɔɔ ka ɛdendɛfoa titili nwiɔ bɔ nu la.,mɔɔ nu kpɔkɛ mɔɔ ka ɛdendɛfoɔ titile nwiɔ bo nu la,0.6667,0.1026
+520,Manza dwule ɔ ra ne na ɔmaanle ye nyɛfonlɛ.,manza idwuli ɔ ɣa ne na ɔmanle ye nyɛfonle manza idwuli ɔ ɣa ne na ɔmanle ye nyɛfonle,1.4444,1.0882
+521,Yera ɛke anzɛɛ ɔkɔ Aluku?,ɛgakɛ anzɛ ɔkɔn lukumu lukumu ɔɔɔ,1.2,0.9
+522,Ɔnlonle nzule yɛɛ ɔlile aleɛ.,ɔnɔne nzule yɛɛ ɔlile aleɛ ɔngum su huhunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu,4.6,4.6667
+524,"Wɔ adenle ɛhye azo, mɔnukpɔkɛ ne a bɔ ɛdendɛfoa ekyi ne abo a.",wɔ adenle ɛhye azo munlu kpoke ne a bo ɛdendɛfoɔ ye kyi ne abo a,0.4615,0.1458
+526,Ɛbɛlabɔlɛ ɛnla aze noko akee yɛbabɔ yɛ nwo mɔdenle.,ɛbɛlabɔlɛ ɛnlɛ aze noko akee bɛabɔ yɛ nwo mɔnwɔdenle,0.3333,0.1429
+527,Ɔkpondɛle ye amaa yeanwu ye.,ɔpondɛle ye amra yeanwu ye ɔpondɛle ye amra yeanwu ye,1.4,1.0
+528,Meze Koame yemɔti fa ezukoa ne maa ye.,mezekwame yemɔti fa ezukwame ne maa ye,0.375,0.1333
+529,Ɛbɛlabɔlɛ le konle noko akee yɛlɛ anyelazo.,menginginginging,1.0,0.8889
+536,Ɔkilehile deɛmɔti anzɛɛ bɛda bodane ali.,okilehile deɛmɔti anzɛnyee bɛda bɔda ne ali,0.6667,0.1765
+537,Ɔkeha ɛdendɛfoa anzɛɛ ɛdendɛsinli mɔɔ bɔ atipɛne la ɔbobɔ nu.,ɔkɛhã ɛdendɛfoɔ anzɛnyee ɛdendɛhyinli mɔɔ bɔ atipɛne la ɔbɔbɔ nu,0.5,0.1961
+538,Ɔka adwenle mɔɔ kile kyɛkyɛhanlɛ la ɔbɔ nu.,ɔka adwenle mɔɔ kile ye kyekye hanle la ɔbɔ nu,0.375,0.1429
+539,Yɛfa yɛkile adwenle mɔɔ ko tia bɛ nwo la.,yɛfa yekile adwenle mɔɔ ɔko tiyia bɛ nwo la yɛdɛdɛ nwuuuu,0.5556,0.5
+540,Yɛfa yɛkile nzidwɛkɛ bie guabelɛ.,yɛfa yekile yezi odwɛkɛ bie gua ɛbɛlɛ,1.0,0.2143
+542,Mɛla ngyikyi beta kɛ yɛsi yɛfa mɔnukpɔkɛ yɛdi gyima la anwo.,mɛla ngyikyi bɛta kɛ yɛsi yɛfa mɔɔ nu kpɔkɛ yɛdi gyima la anwo,0.3636,0.0408
+545,Yɛdua mɔnukpɔkɛ zo yɛkeha yɛ nyɛleɛ nee adwenle mɔɔ yɛlɛ bɛ la yɛbobɔ nu.,yedua monukpɔkɛ zo yɛkɛhã yeee nee adwenle mɔɔ yɛle bɛ la yebɔbɔ nu,0.5,0.2203
+547,Mɔnukpɔkɛ boa wɔ ninyɛne ɛbobɔlɛ nu.,mɔɔ nu kpɔkɛ boa wɔ nninyɛne ɛbɔbɔlɛ nu ɔlumuu,1.0,0.3
+551,Yɛlɛ ndenle ngakyile mɔɔ yɛdua zo yɛnyia edwɛkɛmgbɔkɛ fofolɛ wɔ aneɛ nu a.,yɛlɛ ndenle ngakyile mɔɔ yedua zo yenyia edwɛkɛmgbokɛ fofolɛ wɔ aneɛ nu a,0.2308,0.0492
+554,Bɛhilehile ɛhye mɔ bie anu wɔ aze ɛke.,bɛhilehile ɛhye mɔɔ bie anu wɔ azekɛ,0.375,0.1
+556,Kɛ ɛsi ɛtoto ninyɛne mɔɔ le fofolɛ la aluma wɔ wɔ suazo ɛ?,kɛ ɛsi ɛtoto ninyɛne mɔɔ le fofolɛ la alima wɔ wɔ sua zo ɛ,0.2308,0.0222
+558,Nwane a toto ninyɛne zɔhane mɔ aluma a?,nwane a toto ninyɛne zɔhane mɔɔ aluma a aluma ne yɛ wɔwɔwɔ wɔ maa,0.875,0.6774
+564,"Duma, Yɛkpɔkɛ nee Yɛkpɔkɛ, Duma nee mɔɔ ɛha la.",duma yɛ kpɔkɛ ne yɛ kpɔkɛ duma ne mɔɔ ɛha la,0.6667,0.0556
+579,Nzema ta nyia nyɛvolɛ aneɛ fi Nrelenza nee Akane aneɛ nu.,nzɛme ata inyia anyɛvolɛ anee fi nɣɛlɛnza nee akane anee nu,0.6364,0.1957
+588,Ɔboa ɔmaa bɛnyia ngyinlazo na bɛdie aneɛ ne bɛto nu kɛ ɔle fɔɔnwo.,ɔboa ɔmaa bɛnyia ngyinla zo na bɛdie aneɛ ne bɛto nu kɛ ɔlɛ fɔɔnwo,0.2308,0.0189
+589,Ɔboa ɔmaa yɛnyia edwɛkɛmgbɔkɛ fofolɛ yɛmaa ninyɛne nee adwenle fofolɛ bie mɔ.,ɔboa ɔmaa yenyia edwɛkɛmgbokɛ fofolɛ yemaa ninyɛne ne ye adwenle fofolɛ bie mɔ,0.4167,0.0615
+590,Ɔboa wɔ aneɛ ne ɛzukoalɛ nu.,ɔboa wɔ aneɛ ne izukuale nu ɔboa wɔ aneɛ ne izukuale nu,1.1667,1.0909
+591,Ɔboa ɔmaa yɛkola yɛkile ɛleka mɔɔ aneɛ ne edwɛkɛmgbɔkɛ ne mɔ abo vi la.,ɔboa ma yɛkola yekile ɛleka mɔɔ aneɛ ne edwɛkɛmgbokɛ ne mɔ abo vi la,0.2143,0.0702
+595,Kile mgbɔkye mɔfeme ngakyile mɔɔ yɛlɛ bɛ la.,kile mgbakye mɔɔ fɛmɛ ngakyile mɔɔ yɛle bɛ la,0.5,0.1389
+596,Kile mgbɔkye mɔfeme ndonwo ne mɔ mɔɔ wɔ aneɛ ne anu la.,kile mgbɔkyi mɔɔ feme ndɔɔnwo ne mɔ mɔɔ wɔ aneɛ ne anu la,0.3333,0.093
+597,Wowɔ adwenle wɔ gyima mɔɔ mgbɔkye mɔfeme di la nna anwo.,wɔwɔ adwenle wɔ gyima mɔɔ mgbakyi mofomedi la ne anwo,0.4545,0.1556
+600,Wowɔ adwenle wɔ gyima nna mɔɔ mgbɔkye mɔfeme di la anwo.,wɔwɔ adwenle wɔ gyima na mɔɔ mgbokyi mofomedi la anwo,0.4545,0.1333
+602,Kile mɔnukpɔkɛ ngakyile ne mɔ mɔɔ wɔ aneɛ ne anu la.,kile mɔɔ nu kpɔkɛ ngakyile ne mɔ mɔɔ wɔ aneɛ ne anu la,0.2727,0.0244
+603,Kilehile ɛweɛne mɔɔ la mɔnukpɔkɛ ngakyile ne mɔ avinli la.,kilehile awie ne mɔ la mɔɔ ɛnlu kpoke ngakyile ne mɔ avinli la,0.6,0.1875
+606,Ɔmɔ Adwoba ɛlɛkenga yɛɛ Koame ɛlɛkɛlɛ.,ɔmɔ gyoo ba ɛlekenga yɛ kwame ɛlekele,1.0,0.2812
+607,Saa ɔwɔ ɛke a anrɛɛ ɔbaye ɔ nloa.,saa wowɔ kɛ a anrɛɛ wobayɛ wo nu a,0.75,0.44
+608,"Saa ɛsukoa a, ɛbanwu ye.",saa esukua ebɛnwe yɛ bonyuu bonyuu,1.0,0.9444
+609,Ɛhɔne hunle ye yemɔti ɔlile aleɛ ne.,ahɔne hunlii yemɔti ɔlili aleɛ ne,0.5714,0.1724
+610,Mebahɔ na tɛ ɛnɛ ɔ.,me baho nansile wooo,1.0,0.7143
+612,Kilehile ndenle mɔɔ yɛdua zo yɛnyia edwɛkɛmgbɔkɛ fofolɛ la anu.,kilehile ndenle mɔɔ yeduwa zo yenyia edwɛkɛmgbɔkɛ fofolɛ la anu,0.2,0.0566
+613,Kile ndenle nsa mɔɔ bɛdua zo bɛnyia edwɛkɛmgbɔkɛ fofolɛ wɔ aneɛ ne anu la.,kile ndenle nsa mɔɔ bɛdua zo bɛnyia edwɛkɛ mgbɔkɛ fofolɛ wɔ aneɛ ne anu la,0.1429,0.0
+614,Kilehile ndenle mɔɔ bɛdua zo bɛnyia edwɛkɛmgbɔkɛ wɔ aneɛ ne anu la nsa anu.,kilehile ndenle mɔɔ boduwa zo benyia edwɛkɛmgbokɛ wɔ aneɛ ne anu la ansa nu,0.3571,0.0984
+619,"Ɛnɛ, tɛkenɔlɔgyi le debie mɔɔ anwo hyia kpalɛ wɔ nwomazukoalɛ nu a.",ɛnee tɛkenɔ gyile debie mɔɔ anwo hyia kpalɛ wɔ nwomazukoalɛ nu a,0.25,0.0741
+626,"Edwɛkɛmiza ne a le kɛ, duzu bieko a doa ye a?",edwɛkɛ mizia ne aa le kɛ duzu bieko a doa ye a,0.2727,0.0606
+635,Ɛhye eza bamaa wɔade ɛzukoalɛdeɛ ngakyile mɔɔ le kɛ Nrelenza la abo.,ɛhye eza bamaa wɔade ezukoalɛdeɛ ngakyile mɔɔ le kɛ nrenza la abo,0.1667,0.0536
+663,Ngyehyɛleɛ mɔɔ duma ɛdendɛsinli (Dm ɛds) lɛ la kakyihakyi.,ngyehyɛleɛ mɔɔ dwuma ɛdende senle dwumazile la kakyihakyi,0.5556,0.2128
+664,Duma ɛdendɛsinli kola yɛ edwɛkɛkpɔkɛ ko kye mɔɔ le duma anzɛɛ dumagya la.,duma ɛdendɛ sinli kolaa ye edwɛkɛ kpɔkɛ ko kye mɔɔ le duma anzɛɛ dumagya la,0.4615,0.0333
+665,Ɛdendɛsinli ɛhye da duma ko anzɛɛ dumagya ko ala ali.,ɛdenle desinli ɛhye da duma ko anzɛɛ dumagya ko ala ali,0.2,0.0698
+670,Edwɛkɛkpɔkɛ titili ne ɛnlɛ ngilenu biala.,edwɛkɛ kpɔkɛ titili ne ɛnle ngilenu biala molɛ mo nuu,1.0,0.2857
+671,Duma ɛdendɛsinli kola yɛ edwɛkɛmgbɔkɛ mɔɔ bo ko la.,duma ɛdendɛ sinli kolaa yeee bɛpɛ mbɔkɛ mɔɔ bɔ ko la,0.7778,0.1667
+693,Nzizo ngilenu ndonwo bie mɔ a wɔ ɛke la.,nzuzu ngole nu ndomo bie mɔ a wɔ ɛkɛla wɔ ɛkɛla,0.7778,0.4194
+698,Bɛmɛ a le Tete nee Awiane mɔɔ ba kolaa na belemgbunli ne ara la.,bɛmɛ a aletɛte nee awia ne mɔɔ ba kolaa na belemgbunli ne ara la belemgbunli ne ara la,0.5714,0.4
+701,Tɛladeɛ fufule tendenle ne ɛminli.,tɛladeɛ fufulo yɛ tendɛne eminli ye ne nuu,1.2,0.4828
+702,Meze nrenyia kɔkɔlɛ ne mɔɔ vi Ngɛnla la.,meze nrenya kɔkɔlɛ ne mɔɔ vi ngɛnla la nwɔnloo,0.25,0.25
+708,Edwɛkɛkpɔkɛ titili ne kola fea nzizo nee nzɔzo ngilenu ne avinli.,edwɛkɛ kpɔkɛ titili ne kola fea nzi zo nee nzo zo ngule nu ne avinli,0.7273,0.037
+710,Gana arane gyimayɛvoma mgbanyinli nnu bie ɛra ɛke.,ghana arane gyima yɛvomaa mgbanyinli nu bie ɛrɛkɛ nwonloonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonw,0.75,3.0952
+712,Yɛ sukulu sukoavoma nnu ne mɔɔ gyigyi nehane la anye liele.,ye sukulu sukuavoma nu ne mɔɔ gyigyi ne hanle la anye iliyɛle,0.5455,0.1458
+714,"Wɔ bɛ ekpunli ne mɔ anu, bɛhɛlɛhɛlɛ duma ɛdendɛsinli nsa.",wɔ bɛ kunli ne mɔ anu bɛhɛlɛhɛlɛ duma ɛdende sinli nsa,0.3,0.0652
+724,"Yɛkpɔkɛ ɛdendɛsinli mɔɔ lɛ yɛkpɔkɛ ekyi, yɛkpɔkɛ titili yɛɛ ye boavo la.",yɛkpɔ kɛɛ ɛdendɛ sunli mɔɔ le ye kpɔkɛ ekyi ye kpɔkɛ titili yɛ ye boavolɛ a,1.0,0.1186
+728,Kilehilevolɛ ne sɔ sukoavoma ne nea Yalɛ biala).,kilehilevolɛ ne so sukuavoma ne nnea yale biyala,0.625,0.1282
+739,"Wɔ bɛ ekpunli ne mɔ anu, bɛhɛlɛ yɛkpɔkɛ ɛdendɛsinli nsa.",wɔ bɛ kpunli ne mɔ anu bɛhɛle ye kpɔkɛ ɛdendɛ sinli nsa,0.6,0.0667
+759,Ɛhye le ɛdendɛsinli mɔɔ ye edwɛkɛkpɔkɛ titili ne le ɛlekakpɔkɛ la.,ɛhyelɛ ɛdendɛ sinli mɔɔ ye odwoko kpɔkɛ titili ne le ɛleka kpɔkɛ la,0.6364,0.0727
+761,Ndonwo bie mɔ a wɔ aze ɛke la.,ndomo bie moa wɔ azekɛla nwondemo,0.75,0.5909
+767,Edwɛkɛkpɔkɛ titili ne a anwo hyia kpalɛ a.,edwɛkɛ kpokɛ titili ne a anwo hyia kpale a wɔlooo,0.5,0.2353
+770,Yɛta yɛnyia ɛdendɛsinli mɔɔ bo ko la wɔ ɛdendɛmunli nu.,yɛta yenyia ɛdendɛ sinli mɔɔ bɔkʋ̃ la wɔ ɛdendɛ munli nu,0.7,0.0667
+777,Yɛfa ɛdendɛsinli yɛda adwenle ali.,yɛfa dendɛ sinli yɛfa dendɛ sinli yɛda adwenle eli,1.2,0.4828
+778,Ɔboa ɔmaa yɛdi ngitanwo fɔɔnwo wɔ ɛdendɛlɛ nee ɛhɛlɛlɛ nu.,ɔboa ma yɛdi ngitan fonwo wɔ ɛdendɛlɛ ne ɛherɛle nu,0.5,0.2083
+779,Ɔboa ɔmaa yɛto nrɛlaleɛ mɔɔ ndelebɛbo wɔ nu la.,ɔboa maa yeto nrɛlaleɛ mɔɔ ndele bɛbɔ wɔ nu la,0.4444,0.0789
+792,"Mekɛ mɔɔ yɛdwule la, yɛkpondɛle anwodɔlɛ ɛleka wɔ arɛlɛ baka bie abo.",mekɛ mɔɔ yedwuli la ye kpondɛlɛ anwodolɛ ɛlɛka wɔ arelebaka ebie abo,0.6667,0.1607
+815,Ɛdendɛfoa le edwɛkɛmgbɔkɛ ekpunli mɔɔ bɔ nu yɛ gyima na ɔlɛ yɛvo nee yɛkpɔkɛ la.,ɛdendɛ foa le odwɛkɛ mboke kpunli mɔɔ bo nu yi gyima na ɔlɔyɛvo nee yɛ kpɔkɛ la,0.7333,0.1077
+816,Ɛdendɛfoa le aneɛmɛla nvɛyebanvɛyeba ne mɔ ko.,ɛdendɛ fowale ye anee menla mvɛyeba mvɛyeba ne mɔ ko,1.0,0.2051
+823,Aya donle aleɛ kolaa na yeahɔ sukulu.,aye adenle aleɛ kolaa na yeahɔ sukulu,0.2857,0.0667
+824,Agyalu hɔle gua ne anu.,ɛgyale hɔle gua ne anu ɔdwo nwumonwomo,0.6,0.8889
+843,Fa mɔɔ ɛnwunle ye la to gua kile ɛ gɔnwo.,menginginginging,1.0,0.7742
+845,Yɛlɛ ɛdendɛfoa ngakyile nna ɔlua ngilenu mɔɔ bɛmaa la ati.,yɛle ɛdendɛfoa ngakyile na ɔlua ngile nu mɔɔ bɛmaa la ati,0.4,0.0417
+850,Me nli to aleɛ dahuu.,menli to wɔ aleɛ dahuu,0.6,0.125
+853,Ɛmianlɛ ɛdendɛmunli ɛngyia yɛvo biala.,ye meanle ye ɛdendɛ munli ngyia ye ɛvo biala,1.6,0.2424
+858,Ɛbahola wɔamaa edwɛkɛmgbɔkɛ mɔɔ bɛfa bɛbiza kpuyia la anwo ndonwo ɔ?,bɛbahola wɔamaa edwɛkɛ mgbɔkɛ mɔɔ bɛfa bebizia kpuyia la anwo dɔɔnwo,0.5455,0.1228
+859,Yɛfa edwɛkɛmiza sɛkɛlɛneɛ a yɛdwula edwɛkɛmiza ɛdendɛfoa a.,yɛfa edwɛkɛ mizia sɛkɛlɛ ne a yedwula edwɛkɛ mizia ɛdendɛ fowaa,1.125,0.098
+861,Nwane ezukoa a le ɛhye?,nwane yezukoale ɛhye nwane yezukoale ɛhye,0.8,1.0
+862,Duzu aleɛ a ɛbali ye ɛnɛ a?,usu usu usu,1.0,0.9
+863,Nienwu a ɛhɔle a ?,nee nwo a ɛhɔle ye aho ɛvome ye nu,1.75,1.1538
+864,"Saa ɛye ɛdendɛfoa titili ne ɛfi ɛkɛ a, eza yɛlɛ ɛdendɛfoa ekyi.",saa ɛyɛ ɛdendɛfowɔ titili ne ye fi ɛkɛ a eza yɛle ɛdendɛfowɔ ekyi,0.5,0.16
+868,Ɔdi ngilenu gyima ɔmaa ɛdendɛfoa titili ne.,ɔdi ngile nu gyima ɔmaa ɛdendɛfo atitili ne ɔdi ngile nu gyima ɔmaa ɛdendɛfo atitili ne,1.7143,1.0
+870,Mɔnukpɔkɛ a boa ɛdendɛfoa ekyi maa ɔfa ɔ nwo ɔbeta ɛdendɛfoa titili ne a.,monu kpɔkɛ a boa ɛdendɛfo akyi maa ɔfa wo nwo ɔbɛta ɛdendɛfo atitili ne a,0.5714,0.0847
+873,Ɛdendɛfoa ekyi ne di gyima ngakyile dɔɔnwo ɔti yɛgua bɛ ekpunli ngakyile.,ɛdendafo ɛ kyi ne di gyima ngakyile dɔɔnwo ɔ tee ye gɔ bɛkpunli ngakyile,0.6667,0.1475
+883,Ɔkola ɔdi gyima kɛ yɛvo anzɛɛ nyiavo anzɛɛ dievo.,ɔkola ɔdi gyima kɛɛ yevo anzɛɛ nyiavo anzɛɛ dievo,0.2222,0.05
+885,Duma ɛdendɛfoa mɔɔ di yɛvo gyima.,yuma ɛdendafo a mɔɔ di yɛvu gyima ɛnavo ooo,1.0,0.4074
+886,Raalɛ ne mɔɔ dɔle ndanlɛ ne anoma la ɛhɔ.,wolale ne mɔɔ dole ndanle ne anoma la ɛhɔ ɔbɔto nwɔnwɔnwɔnwɔnwɔnwɔ,0.5556,0.9062
+887,Duma ɛdendɛfoa mɔɔ di gyima kɛ nyiavo anzɛɛ dievo la.,lumua ɛdendɛ fowaa mɔɔ di gyima kɛɛ nyavo anzɛnyee deɛvo la,0.7,0.2791
+888,Me gɔnwo ne kpole mɔɔ mendɔle memaanle ye la.,me gɔnwo ne kpele mɔɔ me ndule me maane yela yɛlɛ bee wɔ wo wo wo wo me nunu nunu mɔɔ,1.8889,0.9167
+889,Menwunle awenade ne mɔɔ bɔvolɛ ne hunle ye la.,menwunle anweade ne mɔɔ bɔvolɛ ne hunle ye la yɛte nwuuuu,0.3333,0.3243
+890,Ɛdendɛmunli (i) ne mɔɔ wɔ anwuma la le duma ɛdendɛfoa mɔɔ ɛlɛdi yɛvo gyima a.,ɛdendɛmunli ne mɔɔ wɔ anwuma la le duma ɛdendɛfoa mɔɔ ɛlɛdi ye ɛvɔ gyimaa,0.2667,0.05
+896,"Saa medwu suanu a, ɛbahɔ.",saa me gyi sua nu a ɛbahɔ,0.8,0.1579
+897,Yɛbayia ɛleka mɔɔ baka tendenle ne gyi la.,ebɛyea aleka mɔɔ bakatendɛle ne gyi la mmmm,0.625,0.3235
+898,Yɛkpɔkɛngilenu ɛdendɛfoa ne mɔ a bɛpepɛ bɛ bo wɔ anwuma ɛdendɛmunli ne mɔ anu la.,ɛkpo kemgbele nu ɛdendɛfonwa ne mɔ a bɛpɛpɛ bɛbɔ wɔ wɔ onwuma ɛdendɛ munli ne mɔ anu la,0.6667,0.197
+924,Ɔle sɛkɛlɛneɛ mɔɔ yɛfa yɛsie ɛdendɛmunli adwulaleɛ yɛkile ye awieleɛ a.,ɔle sɛkɛlɛ ne mɔɔ yɛfa yɛsie ɛdendɛmunlɛ dwulaleɛ yɛkile ye awieleɛ a,0.3636,0.05
+927,Kpolisi kpanyinli ne lale kɛlɛma.,polisi kpanyinli ne lale kɛnlɛma wɔnviso wɔ mɔɔ,1.0,0.5
+929,Yɛfa yɛdwula nzonlɛyɛ ɛdendɛsinli anzɛɛ ɛdendɛmunli.,yɛfa yedwula nzʋnlɛ yɛ ɛdɩndɛ sinli ye anzɛnyɩɩ ɛdɩndɛ munli ye,1.6667,0.2609
+930,"Dɔketa ne zele kɛ, “Ɛlɛte kpɔkɛ”.",bɛkɛtane zɛbɛre kɛ bɛlɛte pɔkɛ bɛlɛte pɔkɛ,1.1667,0.7083
+931,"Kilehilevolɛ ne hanle kɛ, “Ɛnɛ sɔnea ɛnle ɛkɛ”.",kilehilevolɛ ne hanle kɛɛ ɛnee sɔnea ɛnle ye kɛ,0.5,0.1389
+933,Yɛfa ɛzinzelɛ sɛkɛlɛneɛ yɛtete ninyɛne mɔɔ yɛbobɔ bɛ la avinli.,yɛfa yizinzale sɛkɛlɛ ne yɛtɛte nninyɛne mɔɔ yɛbɔbɔ bɛ la avinli,0.6,0.1509
+934,"Mengɔle efiade ne mengɔndɔle saminla, emiane, bokiti yɛɛ tohulu.",mongole efiade ne mongondole sɛmenla emiane bokiti yɛ tohulu,0.4444,0.1509
+935,"Metɛnwunle buluku ne, ɛkponle ne, yɛɛ ebia ne.",meti onwunlu buluku ne kponle ne yɛɛ ebia ne,0.375,0.1111
+937,Yɛfa yɛtete dumangilenu mɔɔ kilehile duma ko ne ala anu la avinli.,yɛfa yɛtɛte duma ngule nu mɔɔ kilehile duma ko ne ala anu la avinli,0.3333,0.037
+938,"Buluku fofolɛ, bile ne ɛminli.",buluku fufurɛ bile ne ye menli ɛne nu,1.0,0.4583
+939,"Mendɔle sua dɛba, akɔlɛnlome, koatee bie.",mendole sua dɛba akolɛnlome koate bie,0.5,0.0909
+945,Yɛfa yɛtete ɛdendɛfoa titili nwiɔ avinli.,yɛ faa yɛta te ɛdendafoa titire nyɔɔ,1.1667,0.3714
+946,Melɛ sɔnea ɛhyema; menwɔgenga nɔe kɔsɔɔti.,melesonea ɛhyema menwɔ genganu kɔsɔɔti,0.6667,0.1143
+947,Ɛnee mekpondɛ kɛ metu adenle mekɔ Ngɛnla; ɛnee maanle nu ɛmunla.,ɛnee mokpondɛ kɛɛ mutu adenle me ɔko ngɛnlaa ɛnee manle nu emunla a,0.8182,0.1731
+948,Yɛfa yɛtete ninyɛne mɔɔ yɛbobɔ bɛ aluma la avinli.,ɛfa ye ɛtɛɛte nninyɛne mɔɔ yɛbɔbɔ bɛ aluma la avinli,0.5556,0.1463
+952,Yɛfa nzonlɛyɛlɛ sɛkɛlɛneɛ yɛyɛ edwɛkɛ mɔɔ awie ɛha la anzɛɛ adwelie bie nzonlɛ.,yɛfa nzʋnlɛ ɛyɛlɩ sɛkɛlɛ ne yɛyɛ odwɛkɛ mɔɔ awie ɛha la anzɛnyɩɩ adwolie bie nzʋnlɛ,0.6154,0.1667
+954,"Yɛ awovolɛ ne mɔ zele yɛ kɛ, “Bɛmmafa ɛhɔne bɛda”.",yɛɛ awovolɛ ne mmɔ zeli ye kɛɛ bɛmmafa ahɔne bɛda,0.6,0.1622
+955,Eza yɛkola yɛfa nzonlɛyɛlɛ sɛkɛlɛneɛ yɛda tidwɛkɛ anzɛɛ tidwɛkɛ ngane bie ali.,eza yɛkola yɛfa nzonle ɛyɛlɛ sɛkɛlɛnee yɛda ti edwɛkɛ anzɛnyee ti edwɛkɛ ngane ebie ali,0.75,0.1364
+959,Yɛfa yɛkile ninyɛne mɔɔ bɔ ɔ bo fi ɛleka ko ɔkɔdwu ɛleka fofolɛ zo la.,yɛfa yekile nninyɛne mɔɔ bɔ ɔbɔ fi ɛleka ɔko okodwu ɛleka fofolɛ zo la,0.4,0.1091
+960,"Sukoavoma kɔ sukulu vi Kenlenzile-Yalɛ, Siane Gyɛne-Siane Bulu.",sukuavoma ɔko sukuluvi kenlenzile yale siane gyenle siane buluu,1.0,0.1346
+962,Yɛfa yɛkile ninyɛne nwiɔ mɔɔ ngitanwolilɛ la bɛ avinli la.,yɛfa yɛkile ninyɛne nwiɔ mɔɔ ngitanwule la bɛ avinli la,0.1,0.0833
+964,Yɛfa yɛkile edwɛkɛmgbɔkɛ anzɛɛ aluma nwiɔ mɔɔ zia zo la.,ɛfa ye kinli edwɛkɛ mgboke anzɛɛ aluma nwiɔ mɔɔ zia zo la,0.5,0.1304

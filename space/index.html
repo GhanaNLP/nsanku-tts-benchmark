@@ -3,43 +3,184 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Text-to-Speech benchmark for Ghanaian languages, scored by ASR character error rate.">
+<meta name="description" content="Text-to-Speech benchmark for Ghanaian languages. Every clip is transcribed by the best ASR model for its language and scored by character error rate, per text domain.">
 <title>nsanku TTS Benchmark</title>
 <style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--accent:#8CD0FF;--accent-soft:#DDF1FF;--accent-hi:#EEF8FF;--link:#0066cc;--bg:#fff;--surface:#fff;--surface-2:#f8fafc;--neutral-50:#f9fafb;--neutral-100:#f3f4f6;--border:#e5e7eb;--border-strong:#d1d5db;--text:#1f2937;--text-strong:#111827;--text-muted:#6b7280;--success:#15803d;--success-bg:#dcfce7;--danger:#b91c1c;--danger-bg:#fee2e2;--radius:8px;--shadow:0 1px 2px rgba(16,24,40,.04),0 1px 3px rgba(16,24,40,.06)}
-html{font-size:15px}
-body{font-family:"Segoe UI",system-ui,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55;min-height:100vh;-webkit-font-smoothing:antialiased}
-a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
-.container{max-width:1180px;margin:0 auto;padding:0 20px 72px}
-.site-head{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:18px 0 12px;margin-bottom:20px;border-bottom:1px solid var(--border)}
-.site-head h1{font-size:1.35rem;font-weight:700;color:var(--text-strong);letter-spacing:-.01em}
-.site-head .tagline{color:var(--text-muted);font-size:0.88rem}
-.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:26px}
-.stat-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;box-shadow:var(--shadow)}
-.stat-card .label{color:var(--text-muted);font-size:0.78rem;font-weight:500;margin-bottom:4px;text-transform:uppercase;letter-spacing:.04em}
-.stat-card .value{font-size:1.5rem;font-weight:700;color:var(--text-strong)}
-.table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow-x:auto;box-shadow:var(--shadow)}
-table{width:100%;border-collapse:collapse;font-size:0.9rem}
-th,td{text-align:left;padding:10px 16px;white-space:nowrap}
-th{background:var(--surface-2);color:var(--text-strong);font-weight:600;font-size:0.8rem;letter-spacing:.02em;border-bottom:1px solid var(--border);position:sticky;top:0;cursor:pointer;user-select:none}
-th:hover{color:var(--link)}
-tbody tr{border-bottom:1px solid var(--border)}
-tbody tr:nth-child(even){background:var(--neutral-50)}
-tbody tr:hover{background:rgba(140,208,255,.16)}
-td.lang-cell{background:var(--accent-hi);font-weight:600;color:var(--text-strong)}
-.rank{font-weight:700;color:var(--text-muted)}
-.rank.r1{color:#b8860b}.rank.r2{color:#7d7d7d}.rank.r3{color:#a0522d}
-.badge{display:inline-block;padding:2px 9px;border-radius:999px;font-size:0.72rem;font-weight:600}
-.badge-pass{background:var(--success-bg);color:var(--success)}
-.badge-fail{background:var(--danger-bg);color:var(--danger)}
-.section-note{font-size:0.85rem;color:var(--text-muted);padding:10px 14px;background:var(--surface-2);border-left:3px solid var(--accent);border-radius:4px;margin-bottom:16px}
-.loading{text-align:center;padding:90px 0;color:var(--text-muted)}
-.loading .spinner{width:38px;height:38px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 16px}
-@keyframes spin{to{transform:rotate(360deg)}}
-.footer{margin-top:44px;text-align:center;color:var(--text-muted);font-size:0.82rem;padding-top:22px;border-top:1px solid var(--border)}
-.footer a{color:var(--text-strong);font-weight:600;font-size:0.85rem}
-@media(max-width:600px){.site-head{flex-direction:column;align-items:flex-start;gap:2px}th,td{padding:8px 10px;font-size:0.82rem}}
+/* ====== Reset & Base ====== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --accent: #8CD0FF;
+  --accent-soft: #DDF1FF;
+  --accent-hi: #EEF8FF;
+  --accent-hover: #6bc0f5;
+  --link: #0066cc;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f8fafc;
+  --neutral-50: #f9fafb;
+  --neutral-100: #f3f4f6;
+  --border: #e5e7eb;
+  --border-strong: #d1d5db;
+  --text: #1f2937;
+  --text-strong: #111827;
+  --text-muted: #6b7280;
+  --success: #15803d;
+  --success-bg: #dcfce7;
+  --warning: #b45309;
+  --warning-bg: #fef3c7;
+  --danger: #b91c1c;
+  --danger-bg: #fee2e2;
+  --radius: 8px;
+  --shadow: 0 1px 2px rgba(16,24,40,.04), 0 1px 3px rgba(16,24,40,.06);
+}
+html { font-size: 15px; }
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ====== Layout ====== */
+.container { max-width: 1180px; margin: 0 auto; padding: 0 20px 72px; }
+
+/* ====== Header ====== */
+.site-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  flex-wrap: wrap; gap: 8px; padding: 18px 0 12px; margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.site-head h1 { font-size: 1.35rem; font-weight: 700; color: var(--text-strong); letter-spacing: -.01em; }
+.site-head .tagline { color: var(--text-muted); font-size: 0.88rem; }
+
+/* ====== Stat cards ====== */
+.stats-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px; margin-bottom: 26px;
+}
+.stat-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px 18px; box-shadow: var(--shadow);
+}
+.stat-card .label { color: var(--text-muted); font-size: 0.78rem; font-weight: 500; margin-bottom: 4px; text-transform: uppercase; letter-spacing: .04em; }
+.stat-card .value { font-size: 1.5rem; font-weight: 700; color: var(--text-strong); }
+
+/* ====== Tabs ====== */
+.tabs { display: flex; gap: 6px; margin-bottom: 22px; flex-wrap: wrap; border-bottom: 1px solid var(--border); padding-bottom: 0; }
+.tab {
+  padding: 9px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none;
+  background: transparent; color: var(--text-muted); font-weight: 600; font-size: 0.92rem;
+  border-radius: var(--radius) var(--radius) 0 0; transition: all .12s; margin-bottom: -1px;
+}
+.tab:hover { color: var(--text-strong); background: var(--accent-hi); }
+.tab.active {
+  background: var(--surface); color: var(--text-strong);
+  border-color: var(--border); border-bottom: 2px solid var(--accent);
+}
+.tab-pane { display: none; }
+.tab-pane.active { display: block; }
+
+/* ====== Filters ====== */
+.filters { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
+.filters label { color: var(--text-muted); font-size: 0.85rem; font-weight: 600; align-self: center; }
+.filters select, .filters input {
+  background: var(--surface); border: 1px solid var(--border-strong);
+  color: var(--text); padding: 7px 11px; border-radius: 6px; font-size: 0.9rem; min-width: 130px;
+  font-family: inherit;
+}
+.filters input[type="text"] { min-width: 240px; }
+select:focus, input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(140,208,255,.35); }
+
+/* ====== Table ====== */
+.table-wrap {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow-x: auto; box-shadow: var(--shadow);
+}
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+th, td { text-align: left; padding: 10px 16px; white-space: nowrap; }
+th {
+  background: var(--surface-2); color: var(--text-strong);
+  font-weight: 600; font-size: 0.8rem; letter-spacing: .02em;
+  border-bottom: 1px solid var(--border); position: sticky; top: 0; cursor: pointer; user-select: none;
+}
+th:hover { color: var(--link); }
+tbody tr { border-bottom: 1px solid var(--border); }
+tbody tr:nth-child(even) { background: var(--neutral-50); }
+tbody tr:hover { background: rgba(140,208,255,.16); }
+td.lang-cell { background: var(--accent-hi); font-weight: 600; color: var(--text-strong); }
+tbody tr:hover td.lang-cell { background: var(--accent-soft); }
+.empty-row td { text-align: center; color: var(--text-muted); padding: 28px; background: var(--surface) !important; }
+
+/* rank medals */
+.rank { font-weight: 700; color: var(--text-muted); }
+.rank.r1 { color: #b8860b; } .rank.r2 { color: #7d7d7d; } .rank.r3 { color: #a0522d; }
+
+/* ====== Badges ====== */
+.badge { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 0.72rem; font-weight: 600; }
+.badge-pass { background: var(--success-bg); color: var(--success); }
+.badge-fail { background: var(--danger-bg); color: var(--danger); }
+.badge-arch { background: #e0e7ff; color: #4338ca; }
+.badge-gated { background: var(--warning-bg); color: var(--warning); }
+.badge-cudnn { background: #fce7f3; color: #be185d; }
+.badge-outdated { background: #cffafe; color: #0e7490; }
+.badge-llm { background: #f3e8ff; color: #7e22ce; }
+.badge-nonllm { background: var(--accent-hi); color: #1668a8; }
+.badge-api { background: #fff1e6; color: #9a5b1f; }
+
+.mtype { display: inline-block; padding: 1px 8px; border-radius: 4px; font-size: 0.75rem; background: var(--neutral-100); color: var(--text-muted); }
+.fam { color: var(--text-muted); font-weight: 400; white-space: nowrap; }
+.code { color: var(--text-muted); font-weight: 400; font-variant-numeric: tabular-nums; }
+.lic { color: var(--text-muted); font-weight: 400; white-space: nowrap; }
+.switch { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text); font-weight: 500; }
+.switch input { cursor: pointer; }
+.tr-link { color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor; }
+.tr-link:hover { text-decoration: none; border-bottom-style: solid; }
+.lic.na { opacity: .55; }
+.asof { color: var(--text-muted); font-weight: 400; font-size: 0.8rem; font-variant-numeric: tabular-nums; margin-left: 6px; }
+.recipe-link {
+  display: inline-block; margin-left: 7px; font-size: 0.7rem; font-weight: 600;
+  color: var(--link); border: 1px solid var(--border-strong); border-radius: 4px;
+  padding: 0 5px; vertical-align: 1px; line-height: 1.5;
+}
+.recipe-link:hover { background: var(--accent-hi); text-decoration: none; }
+
+/* ====== Scrollbar ====== */
+::-webkit-scrollbar { width: 9px; height: 9px; }
+::-webkit-scrollbar-track { background: var(--neutral-50); }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+/* ====== Misc ====== */
+.section-note {
+  font-size: 0.85rem; color: var(--text-muted); padding: 10px 14px;
+  background: var(--surface-2); border-left: 3px solid var(--accent); border-radius: 4px; margin-bottom: 16px;
+}
+.info-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; color: var(--text-muted); font-size: 0.85rem; }
+.loading { text-align: center; padding: 90px 0; color: var(--text-muted); }
+.loading .spinner {
+  width: 38px; height: 38px; border: 3px solid var(--border);
+  border-top-color: var(--accent); border-radius: 50%;
+  animation: spin .8s linear infinite; margin: 0 auto 16px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-strong); margin-bottom: 10px; }
+.footer {
+  margin-top: 44px; text-align: center; color: var(--text-muted);
+  font-size: 0.82rem; padding-top: 22px; border-top: 1px solid var(--border);
+}
+.footer .footer-links { margin-bottom: 8px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+.footer .footer-links a { color: var(--text-strong); font-weight: 600; font-size: 0.85rem; }
+
+@media (max-width: 600px) {
+  .site-head { flex-direction: column; align-items: flex-start; gap: 2px; }
+  .filters { flex-direction: column; align-items: stretch; gap: 8px; }
+  .filters select, .filters input { min-width: 100%; }
+  th, td { padding: 8px 10px; font-size: 0.82rem; }
+}
 </style>
 </head>
 <body>
@@ -54,44 +195,106 @@ td.lang-cell{background:var(--accent-hi);font-weight:600;color:var(--text-strong
     <p>Loading benchmark data from GitHub&hellip;</p>
   </div>
 
-  <div id="app" style="display:none">
-    <div class="stats-grid" id="stats"></div>
-    <div class="section-note">
-      Every clip is transcribed by the lowest-CER ASR model for that language
-      (from the <a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-asr-benchmark">nsanku ASR benchmark</a>)
-      and compared to the sentence the model was asked to read. Score = mean
-      character error rate, <strong>lower is better</strong>, ranked within each language.
-      A judge has its own error rate on real speech (shown per row): a TTS model
-      cannot meaningfully score below it.
+  <div id="main" style="display:none;">
+    <div class="stats-grid" id="stats-grid"></div>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="global">Global Leaderboard</div>
+      <div class="tab" data-tab="per-lang">Per-Language</div>
+      <div class="tab" data-tab="all">All Results</div>
     </div>
-    <div class="table-wrap">
-      <table id="leaderboard">
-        <thead>
-          <tr>
-            <th>#</th>
-            <th>Language</th>
-            <th>Model</th>
-            <th>Architecture</th>
-            <th>CER</th>
-            <th>WER</th>
-            <th>Samples</th>
-            <th>ASR judge</th>
-          </tr>
-        </thead>
-        <tbody id="lb-body"></tbody>
-      </table>
+
+    <!-- ====== Tab: Global Leaderboard ====== -->
+    <div class="tab-pane active" id="pane-global">
+      <div class="filters">
+        <label>Track:</label>
+        <select id="global-track-select">
+          <option value="open" selected>Open models</option>
+          <option value="api">Hosted APIs</option>
+          <option value="All">All</option>
+        </select>
+      </div>
+      <p style="color:var(--text-muted); margin-bottom:8px;">Best model per language &mdash; ranked by CER, lower is better. Open models are the core of the benchmark: their weights can be downloaded and the scores re-run by anyone.</p>
+      <p class="section-note" style="margin-bottom:14px;">
+        Each clip is transcribed by the lowest-CER ASR model for that language, taken from the
+        <a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-asr-benchmark">nsanku ASR benchmark</a>,
+        and compared to the sentence the model was asked to read. A judge has its own error rate on
+        real speech (shown per row): a TTS model cannot meaningfully score below it.
+      </p>
+      <div class="table-wrap">
+        <table id="global-table">
+          <thead id="global-thead"></thead>
+          <tbody id="global-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ====== Tab: Per-Language ====== -->
+    <div class="tab-pane" id="pane-per-lang">
+      <div class="filters">
+        <label>Language:</label>
+        <select id="per-lang-select"></select>
+        <label>Track:</label>
+        <select id="per-track-select">
+          <option value="All" selected>All</option>
+          <option value="open">Open models</option>
+          <option value="api">Hosted APIs</option>
+        </select>
+      </div>
+      <p id="per-lang-judge" class="section-note" style="margin-bottom:14px;"></p>
+      <div class="table-wrap" style="margin-bottom:24px;">
+        <table id="per-lang-table">
+          <thead id="per-lang-thead"></thead>
+          <tbody id="per-lang-body"></tbody>
+        </table>
+      </div>
+      <h3 style="font-size:0.95rem; margin-bottom:8px;">Not scored</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Model</th><th>Architecture</th><th>Reason</th></tr></thead>
+          <tbody id="per-lang-fail-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ====== Tab: All Results ====== -->
+    <div class="tab-pane" id="pane-all">
+      <div class="filters">
+        <input type="text" id="all-search" placeholder="model or language, e.g. khaya, Ewe&hellip;">
+        <span id="all-count">0 rows</span>
+      </div>
+      <div class="table-wrap">
+        <table id="all-table">
+          <thead id="all-thead"></thead>
+          <tbody id="all-body"></tbody>
+        </table>
+      </div>
     </div>
   </div>
 
   <div class="footer">
-    <p><a href="https://huggingface.co/ghananlpcommunity">Ghana NLP Community</a> &middot; nsanku-TTS benchmark</p>
+    <p>
+      <a href="https://huggingface.co/ghananlpcommunity">Ghana NLP Community</a> &middot;
+      <a href="https://github.com/GhanaNLP/nsanku-tts-benchmark" target="_blank">GitHub</a> &middot;
+      <a href="https://github.com/GhanaNLP/nsanku-tts-benchmark/tree/main/recipes" target="_blank">Synthesis recipes</a> &middot;
+      <a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-asr-benchmark" target="_blank">ASR benchmark</a>
+    </p>
+    <p style="margin-top:8px">Each model links to its <strong>code</strong> badge &rarr; the exact synthesis settings used for that model on that language. Model authors can correct how their model is benchmarked via a <a href="https://github.com/GhanaNLP/nsanku-tts-benchmark/tree/main/recipes" target="_blank">recipe pull request</a>.</p>
   </div>
 </div>
-
 <script>
-const GITHUB_RAW = "https://raw.githubusercontent.com/GhanaNLP/nsanku-tts-benchmark/main";
-const LANG_URL = GITHUB_RAW + "/languages/ghana_languages.yaml";
-const BENCH_PREFIX = GITHUB_RAW + "/benchmarks/";
+const REPO = 'GhanaNLP/nsanku-tts-benchmark';
+const BRANCH = 'main';
+const RAW = `https://raw.githubusercontent.com/${REPO}/${BRANCH}`;
+const LANG_URL = `${RAW}/languages/ghana_languages.yaml`;
+const BENCH_PREFIX = `${RAW}/benchmarks/`;
+
+// A domain is the kind of text a model was asked to read. Scores are reported
+// per domain and averaged, so a model good at one register is not credited for
+// another.
+const CATEGORY_LABELS = { education: 'Education' };
+let ALL_ROWS = [];
+let ALL_CATEGORIES = [];
 
 async function fetchText(url) {
   const r = await fetch(url);
@@ -120,142 +323,292 @@ function parseSimpleYaml(text) {
   return result;
 }
 
+const NUMERIC = ["cer", "wer", "score", "samples", "valid", "avg_seconds_per_sample",
+                 "cer_on_real_speech", "num_samples_per_category"];
+
+function coerce(key, value) {
+  if (!NUMERIC.includes(key)) return value;
+  const n = parseFloat(value);
+  return Number.isFinite(n) ? n : null;
+}
+
+// yaml.dump(default_flow_style=False) writes list items at column 0, their
+// fields at two spaces, and nests judge/per_category deeper.
 function parseBenchYaml(text) {
-  // yaml.dump(default_flow_style=False) writes list items at column 0 and
-  // their fields at two spaces; `entries` and `judge` nest deeper and are
-  // skipped here.
-  const meta = {};
+  const meta = { categories: [] };
   const benchmarks = [];
-  let section = "meta";
-  let current = null;
+  let section = "meta";      // "meta" until the benchmarks: key is reached
+  let current = null, block = null, sub = null;
 
   for (const raw of text.split("\n")) {
-    if (!raw.trim()) continue;
+    if (!raw.trim() || raw.trimStart().startsWith("#")) continue;
     const line = raw.replace(/\s+$/, "");
+    const indent = line.length - line.trimStart().length;
+    const body = line.trim();
 
-    if (/^benchmarks:/.test(line)) { section = "bench"; continue; }
-    if (/^judge:/.test(line)) { section = "judge"; continue; }
-    // A list item also starts at column 0, so it must be tested before the
-    // top-level key branch or it would be read as one.
-    if (!/^- /.test(line) && /^\S/.test(line) && line.includes(":")) {
-      section = "meta";
-      const [k, ...rest] = line.split(":");
-      meta[k.trim()] = rest.join(":").trim();
+    if (indent === 0 && !/^- /.test(line)) {          // a top-level key
+      const [k, ...rest] = body.split(":");
+      const key = k.trim(), v = rest.join(":").trim();
+      if (key === "benchmarks") { section = "benchmarks"; current = null; block = null; continue; }
+      block = key;
+      if (v !== "") meta[key] = coerce(key, v);
       continue;
     }
 
-    if (section === "judge" && /^ {2}\S/.test(line)) {
-      const [k, ...rest] = line.trim().split(":");
-      meta["judge_" + k.trim()] = rest.join(":").trim();
-      continue;
-    }
-
-    if (section !== "bench") continue;
+    // A list item at column 0 belongs to whichever key opened last: the
+    // categories list before benchmarks:, a model after it.
     if (/^- /.test(line)) {
+      if (section !== "benchmarks") {
+        if (block === "categories") meta.categories.push(body.slice(2).trim());
+        continue;
+      }
       if (current) benchmarks.push(current);
-      const [k, ...rest] = line.slice(2).split(":");
-      current = { [k.trim()]: rest.join(":").trim() };
-    } else if (current && /^ {2}\S/.test(line) && line.includes(":")) {
-      const [k, ...rest] = line.trim().split(":");
-      const key = k.trim();
-      const v = rest.join(":").trim();
-      // `entries:` and `judge:` open nested blocks whose children are
-      // indented deeper and therefore ignored.
-      if (v === "") { current[key] = ""; continue; }
-      current[key] = ["cer", "wer", "score", "samples", "valid"].includes(key)
-        ? parseFloat(v)
-        : v;
+      current = { per_category: {} };
+      sub = null;
+      const [k, ...rest] = body.slice(2).split(":");
+      current[k.trim()] = rest.join(":").trim();
+      continue;
+    }
+
+    if (section !== "benchmarks") {                   // nested meta, e.g. judge:
+      if (block === "judge" && indent === 2) {
+        const [k, ...rest] = body.split(":");
+        meta["judge_" + k.trim()] = coerce(k.trim(), rest.join(":").trim());
+      }
+      continue;
+    }
+    if (!current) continue;
+
+    if (indent === 2) {                               // model field
+      const [k, ...rest] = body.split(":");
+      const key = k.trim(), v = rest.join(":").trim();
+      sub = (v === "") ? key : null;
+      if (v !== "") current[key] = coerce(key, v);
+      continue;
+    }
+    if (indent === 4 && sub === "per_category") {     // a domain's block opens
+      const [k, ...rest] = body.split(":");
+      if (rest.join(":").trim() === "") current.per_category[k.trim()] = {};
+      continue;
+    }
+    if (indent === 4 && sub === "judge") {
+      const [k, ...rest] = body.split(":");
+      current["judge_" + k.trim()] = coerce(k.trim(), rest.join(":").trim());
+      continue;
+    }
+    if (indent === 6 && sub === "per_category") {     // that domain's stats
+      const cats = Object.keys(current.per_category);
+      const cat = cats[cats.length - 1];
+      const [k, ...rest] = body.split(":");
+      if (cat) current.per_category[cat][k.trim()] = coerce(k.trim(), rest.join(":").trim());
     }
   }
   if (current) benchmarks.push(current);
   return { ...meta, benchmarks };
 }
 
+function trackOf(row) {
+  return /khaya/i.test(row.model) ? "api" : "open";
+}
+
 function cerClass(cer) {
+  if (cer == null) return "";
   if (cer <= 0.15) return "badge-pass";
   if (cer <= 0.35) return "";
   return "badge-fail";
 }
 
+function fmt(v, digits = 4) {
+  return (v == null || !Number.isFinite(v)) ? "—" : v.toFixed(digits);
+}
+
+function recipeLink(model, iso) {
+  const safe = model.replace(/\//g, "_").replace(/:/g, "_");
+  return `<a class="recipe-link" href="https://github.com/${REPO}/blob/${BRANCH}/recipes/${safe}__${iso}.py"`
+       + ` target="_blank" title="Synthesis settings used for this model on this language — edit and open a PR">code</a>`;
+}
+
+function transcriptLink(iso, category, model, pc) {
+  const safe = model.replace(/\//g, "__");
+  const url = `https://github.com/${REPO}/blob/${BRANCH}/transcriptions/${iso}_${category}_${safe}.csv`;
+  const label = fmt(pc && pc.cer);
+  if (!pc || pc.cer == null) return label;
+  return `<a class="tr-link" href="${url}" target="_blank" title="What the judge heard, sentence by sentence (${pc.valid}/${pc.samples} clips)">${label}</a>`;
+}
+
+function modelCell(row) {
+  const badge = trackOf(row) === "api"
+    ? '<span class="badge badge-api">API</span>'
+    : '<span class="badge badge-nonllm">open</span>';
+  return `<a href="${row.model_url}" target="_blank">${row.model}</a> ${badge}${recipeLink(row.model, row.iso)}`;
+}
+
+function categoryHeaders() {
+  return ALL_CATEGORIES.map(c => `<th>${CATEGORY_LABELS[c] || c} CER</th>`).join("");
+}
+
+function categoryCells(row) {
+  return ALL_CATEGORIES.map(c =>
+    `<td>${transcriptLink(row.iso, c, row.model, row.per_category[c])}</td>`).join("");
+}
+
+function renderGlobal() {
+  const track = document.getElementById("global-track-select").value;
+  const rows = ALL_ROWS.filter(r => r.cer != null && (track === "All" || trackOf(r) === track));
+  const best = {};
+  for (const r of rows) if (!best[r.iso] || r.cer < best[r.iso].cer) best[r.iso] = r;
+  const ordered = Object.values(best).sort((a, b) => a.cer - b.cer);
+
+  document.getElementById("global-thead").innerHTML =
+    `<tr><th>#</th><th>Language</th><th>Model</th><th>Architecture</th><th>CER</th><th>WER</th>`
+    + categoryHeaders() + `<th>Samples</th><th>ASR judge</th></tr>`;
+  document.getElementById("global-body").innerHTML = ordered.length
+    ? ordered.map((r, i) => `<tr>
+        <td class="rank${i < 3 ? " r" + (i + 1) : ""}">${i + 1}</td>
+        <td class="lang-cell">${r.language}</td>
+        <td>${modelCell(r)}</td>
+        <td>${r.architecture}</td>
+        <td><span class="badge ${cerClass(r.cer)}">${fmt(r.cer)}</span></td>
+        <td>${fmt(r.wer)}</td>
+        ${categoryCells(r)}
+        <td>${r.valid}</td>
+        <td style="font-size:0.82rem">${r.judge} <span style="color:var(--text-muted)">(${fmt(r.judge_cer, 3)})</span></td>
+      </tr>`).join("")
+    : '<tr><td colspan="12" class="empty-row">No results for this track yet.</td></tr>';
+}
+
+function renderPerLang() {
+  const iso = document.getElementById("per-lang-select").value;
+  const track = document.getElementById("per-track-select").value;
+  const rows = ALL_ROWS
+    .filter(r => r.iso === iso && (track === "All" || trackOf(r) === track))
+    .sort((a, b) => (a.cer == null) - (b.cer == null) || a.cer - b.cer);
+  const scored = rows.filter(r => r.cer != null);
+  const failed = rows.filter(r => r.cer == null);
+  const first = rows[0];
+
+  document.getElementById("per-lang-judge").innerHTML = first
+    ? `Judged by <strong>${first.judge}</strong>, whose own CER on real speech in this language is
+       <strong>${fmt(first.judge_cer, 3)}</strong> — the floor a TTS model is measured against.
+       ${first.num_samples_per_category} sentences per domain.`
+    : "";
+  document.getElementById("per-lang-thead").innerHTML =
+    `<tr><th>#</th><th>Model</th><th>Architecture</th><th>CER</th><th>WER</th>`
+    + categoryHeaders() + `<th>Samples</th></tr>`;
+  document.getElementById("per-lang-body").innerHTML = scored.length
+    ? scored.map((r, i) => `<tr>
+        <td class="rank${i < 3 ? " r" + (i + 1) : ""}">${i + 1}</td>
+        <td>${modelCell(r)}</td>
+        <td>${r.architecture}</td>
+        <td><span class="badge ${cerClass(r.cer)}">${fmt(r.cer)}</span></td>
+        <td>${fmt(r.wer)}</td>
+        ${categoryCells(r)}
+        <td>${r.valid}</td>
+      </tr>`).join("")
+    : '<tr><td colspan="9" class="empty-row">Nothing scored for this language yet.</td></tr>';
+  document.getElementById("per-lang-fail-body").innerHTML = failed.length
+    ? failed.map(r => `<tr><td>${modelCell(r)}</td><td>${r.architecture}</td>
+        <td><span class="badge badge-fail">no valid output</span></td></tr>`).join("")
+    : '<tr><td colspan="3" class="empty-row">Every model for this language produced audio.</td></tr>';
+}
+
+function renderAll() {
+  const q = document.getElementById("all-search").value.trim().toLowerCase();
+  const rows = ALL_ROWS
+    .filter(r => !q || r.model.toLowerCase().includes(q) || r.language.toLowerCase().includes(q))
+    .sort((a, b) => a.language.localeCompare(b.language) || (a.cer == null) - (b.cer == null) || a.cer - b.cer);
+
+  document.getElementById("all-thead").innerHTML =
+    `<tr><th>Language</th><th>Model</th><th>Architecture</th><th>CER</th><th>WER</th>`
+    + categoryHeaders() + `<th>Samples</th><th>ASR judge</th></tr>`;
+  document.getElementById("all-body").innerHTML = rows.length
+    ? rows.map(r => `<tr>
+        <td class="lang-cell">${r.language}</td>
+        <td>${modelCell(r)}</td>
+        <td>${r.architecture}</td>
+        <td><span class="badge ${cerClass(r.cer)}">${fmt(r.cer)}</span></td>
+        <td>${fmt(r.wer)}</td>
+        ${categoryCells(r)}
+        <td>${r.valid}</td>
+        <td style="font-size:0.82rem">${r.judge}</td>
+      </tr>`).join("")
+    : '<tr><td colspan="10" class="empty-row">Nothing matches.</td></tr>';
+  document.getElementById("all-count").textContent = `${rows.length} rows`;
+}
+
+function wireTabs() {
+  document.querySelectorAll(".tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+      document.querySelectorAll(".tab-pane").forEach(p => p.classList.remove("active"));
+      tab.classList.add("active");
+      document.getElementById("pane-" + tab.dataset.tab).classList.add("active");
+    });
+  });
+}
+
 async function main() {
   try {
-    const langText = await fetchText(LANG_URL);
-    const languages = parseSimpleYaml(langText);
-    const activeLangs = languages.filter(l => l.in_sentences === "true");
-    const allRows = [];
+    const languages = parseSimpleYaml(await fetchText(LANG_URL));
+    const active = languages.filter(l => l.in_sentences === "true");
+    const categories = new Set();
 
-    for (const lang of activeLangs) {
+    for (const lang of active) {
       const iso = lang.iso_639_3;
+      let bench;
       try {
-        const bench = parseBenchYaml(await fetchText(BENCH_PREFIX + iso + ".yaml"));
-        for (const b of (bench.benchmarks || [])) {
-          allRows.push({
-            iso,
-            language: (lang.name || lang.iso_639_3 || "").replace(/_/g, " "),
-            model: b.model || "",
-            architecture: b.architecture || "",
-            cer: Number.isFinite(b.cer) ? b.cer : null,
-            wer: Number.isFinite(b.wer) ? b.wer : null,
-            samples: b.samples || 0,
-            valid: b.valid || 0,
-            judge: bench.judge_model || "",
-            judgeCer: parseFloat(bench.judge_cer_on_real_speech),
-            error: b.error || null,
-          });
-        }
+        bench = parseBenchYaml(await fetchText(BENCH_PREFIX + iso + ".yaml"));
       } catch (e) {
-        // no benchmark file for this language yet
+        continue;   // no results for this language yet
+      }
+      (bench.categories || []).forEach(c => categories.add(c));
+      for (const b of (bench.benchmarks || [])) {
+        ALL_ROWS.push({
+          iso,
+          language: (lang.name || iso).replace(/_/g, " "),
+          family: lang.family || "",
+          model: b.model || "",
+          model_url: b.model_url || `https://huggingface.co/${b.model}`,
+          architecture: b.architecture || "",
+          cer: b.cer, wer: b.wer,
+          samples: b.samples || 0,
+          valid: b.valid || 0,
+          per_category: b.per_category || {},
+          judge: bench.judge_model || "",
+          judge_cer: bench.judge_cer_on_real_speech,
+          num_samples_per_category: bench.num_samples_per_category || 0,
+        });
       }
     }
+    ALL_CATEGORIES = [...categories].sort();
 
-    document.getElementById("loading").style.display = "none";
-    document.getElementById("app").style.display = "block";
-
-    const scored = allRows.filter(r => r.cer !== null);
-    const uniqueModels = new Set(allRows.map(r => r.model));
-    const langsWithResults = new Set(scored.map(r => r.iso));
-    const bestCer = scored.length
-      ? Math.min(...scored.map(r => r.cer)).toFixed(3)
-      : "—";
-    document.getElementById("stats").innerHTML = `
-      <div class="stat-card"><div class="label">Languages</div><div class="value">${langsWithResults.size}/${activeLangs.length}</div></div>
-      <div class="stat-card"><div class="label">Models</div><div class="value">${uniqueModels.size}</div></div>
-      <div class="stat-card"><div class="label">Scored</div><div class="value">${scored.length}</div></div>
-      <div class="stat-card"><div class="label">Best CER</div><div class="value">${bestCer}</div></div>
+    const scored = ALL_ROWS.filter(r => r.cer != null);
+    const isos = new Set(scored.map(r => r.iso));
+    document.getElementById("stats-grid").innerHTML = `
+      <div class="stat-card"><div class="label">Languages</div><div class="value">${isos.size}/${active.length}</div></div>
+      <div class="stat-card"><div class="label">Models</div><div class="value">${new Set(ALL_ROWS.map(r => r.model)).size}</div></div>
+      <div class="stat-card"><div class="label">Evaluations</div><div class="value">${scored.length}</div></div>
+      <div class="stat-card"><div class="label">Domains</div><div class="value">${ALL_CATEGORIES.length}</div></div>
+      <div class="stat-card"><div class="label">Best CER</div><div class="value">${scored.length ? fmt(Math.min(...scored.map(r => r.cer)), 3) : "—"}</div></div>
     `;
 
-    // Every model, grouped by language, best CER first within each.
-    scored.sort((a, b) =>
-      a.language.localeCompare(b.language) || a.cer - b.cer);
+    const sel = document.getElementById("per-lang-select");
+    sel.innerHTML = [...new Set(ALL_ROWS.map(r => r.iso))]
+      .map(iso => ({ iso, name: ALL_ROWS.find(r => r.iso === iso).language }))
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .map(l => `<option value="${l.iso}">${l.name}</option>`).join("");
 
-    const tbody = document.getElementById("lb-body");
-    if (!scored.length) {
-      tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;color:var(--text-muted);padding:28px">No benchmark results yet.</td></tr>';
-      return;
-    }
-
-    let lastLang = null;
-    let rankInLang = 0;
-    tbody.innerHTML = scored.map(r => {
-      if (r.language !== lastLang) { lastLang = r.language; rankInLang = 0; }
-      rankInLang += 1;
-      const rankClass = rankInLang <= 3 ? ` r${rankInLang}` : "";
-      const judgeCell = Number.isFinite(r.judgeCer)
-        ? `${r.judge} <span style="color:var(--text-muted)">(${r.judgeCer.toFixed(3)})</span>`
-        : r.judge;
-      return `<tr>
-        <td class="rank${rankClass}">${rankInLang}</td>
-        <td class="lang-cell">${r.language}</td>
-        <td><a href="https://huggingface.co/${r.model}" target="_blank">${r.model}</a></td>
-        <td>${r.architecture}</td>
-        <td><span class="badge ${cerClass(r.cer)}">${r.cer.toFixed(4)}</span></td>
-        <td>${r.wer !== null ? r.wer.toFixed(4) : "—"}</td>
-        <td>${r.valid || r.samples}</td>
-        <td style="font-size:0.82rem">${judgeCell}</td>
-      </tr>`;
-    }).join("");
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("main").style.display = "block";
+    wireTabs();
+    document.getElementById("global-track-select").addEventListener("change", renderGlobal);
+    document.getElementById("per-lang-select").addEventListener("change", renderPerLang);
+    document.getElementById("per-track-select").addEventListener("change", renderPerLang);
+    document.getElementById("all-search").addEventListener("input", renderAll);
+    renderGlobal(); renderPerLang(); renderAll();
   } catch (err) {
-    document.getElementById("loading").innerHTML = `<p style="color:var(--danger)">Failed to load: ${err.message}</p>`;
+    document.getElementById("loading").innerHTML =
+      `<p style="color:var(--danger)">Failed to load: ${err.message}</p>`;
   }
 }
 

@@ -11,6 +11,21 @@ TTS intelligibility benchmark for Ghanaian languages, scored by **ASR character 
    (see `data/asr_judges.json`), and compared to the sentence it was asked to read
 4. **Ranking**: mean character error rate — **lower is better**
 
+Scores are reported **per text domain** and averaged with equal weight, so a model
+that handles one register well is not credited for another. The first domain is
+`education` (textbook prose); more will be added. Domains are registered in
+`data/eval_configs.json`.
+
+Every (model, language) evaluation has its own **recipe** under `recipes/`, holding
+the settings used to synthesise that language with that model — guidance scale, step
+counts, the reference clip's transcript, the API language code. Editing one language
+cannot disturb another, and the leaderboard links each row to its recipe. Regenerate
+missing ones with `python3 generate_recipes.py`.
+
+Per-sample references and what the judge heard are written to
+`transcriptions/{iso}_{category}_{model}.csv`, so every score can be checked line by
+line rather than taken on trust.
+
 CER is computed with the same normalisation as the ASR benchmark, so a TTS score and
 an ASR score for a language are directly comparable. Each judge's own CER on real
 speech is recorded alongside the results: a TTS model cannot meaningfully score below
@@ -135,7 +150,9 @@ If the model needs a custom wrapper, add a class in `benchmark/models.py`.
 
 ```
 nsanku-tts-benchmark/
-├── benchmark/          Core library (config, dataset, models, asr, metrics, evaluate)
+├── benchmark/          Core library (config, dataset, models, asr, metrics, recipes, evaluate)
+├── recipes/            One synthesis recipe per (model, language)
+├── transcriptions/     Per-sample judge output behind every score
 ├── benchmarks/         Per-language YAML results
 ├── languages/          Language metadata (ghana_languages.yaml)
 ├── data/               Model registry (tts_models.json)

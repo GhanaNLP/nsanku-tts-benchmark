@@ -1,0 +1,201 @@
+sample_id,reference,hypothesis,wer,cer
+3,"Saa ɔfa yi kasa fa asɛnsini, asɛnsini nhyehyɛeɛ ne toonu ho.",sɛa mperɛfoɔ  asa fast hinsi ni afei ssti ne no tu no o,1.0909,0.625
+17,Asɛnsini yɛ asɛmfua fa bi a yɛte wɔ ɔkasa mu.,asi hrumɔ ɛɛ yee fir yɛ sɛɛ mi,1.0,0.7429
+18,Anom nnyegyeeɛ asɛnsini yɛ anom nnyegyeeɛ a ɛtumi gyina sɛ asɛnsini.,ano menyɛ gyeɛ aseinin ɛn nyɛyeyɛɛ n sɛ ɛtumi kyiraɛ a sisi,1.0,0.4386
+19,Toonu yɛ ɛnne mu nsakraeɛ a ɛtumi de nsakraeɛ ba asɛmfua bi nteaseɛ mu.,tu no yɛɛ e krɛtratni ui de rɛ ye nase mfeɛ ebi nte sɛ sɛmi,1.0714,0.5965
+48,Wɔakyekyɛ asɛmfua biara mu kɔ nsɛnsini ahodoɔ a ɛwɔ mu mu.,ni,1.0,0.9574
+52,Asɛnsini a emu abue yɛ asɛnsini a ɛnne nnyegyeeɛ twa toɔ.,asesisi mma no ɛtmeɛ,1.0,0.7609
+57,Asɛnsini a emu to yɛ asɛnsini a anom nnyegyeeɛ twa toɔ.,ase nsiwum aa s kenaeɛ ne yɛ too hunua,1.0,0.7045
+63,Fa w’ankasa nsɛmfua kyerɛkyerɛ asɛnsini ase.,fa wantasa ne sg woerɛ kyerɛfo no  sini aste,1.3333,0.3784
+66,Kyerɛkyerɛ nsɛnsini ahodoɔ a ɛwɔ Asante Twi kasa mu no mu.,teerɛsɛ moa,1.0,0.8298
+67,Kyerɛkyerɛ mfasoɔ a ɛwɔ asɛnsini nhyehyɛeɛ so wɔ nsɛmfuayɛ mu no.,gerɛ a na hefuni sihen fsosoo herɛa,0.9091,0.7407
+69,Ɔkasa biara wɔ ne nsɛnsini nhyehyɛeɛ.,eea,1.0,0.9355
+84,Yɛ mpɛnsɛmpɛnsɛmu fa Asante Twi nsɛnsini nhyehyɛeɛ no ho.,de sɛe frkyɛno o,1.0,0.8333
+88,Ɛne w’afɛfoɔ nhwehwɛ nsɛnsini dodoɔ a ɛwɔ asɛmfua no mu biara mu.,ni fɛfoɔ ho femehuhurukoha ofo nme,1.0,0.7692
+89,Ɛne w’afɛdoɔ nkyɛ adwene mfa asɛnsini no mu biara nhyehyɛeɛ ho.,ywafoa nnehu adwire fa so israil he meyie amɔ,1.0,0.6667
+93,"Ɔpɛ berɛ mu no, ntɛtea yeree ne ho yɛɛ adwuma pɛɛ aduane bebree guu hɔ.",pɛ wo no nti yɛteɛyɛ ne ho yɛ adwuma pɛaduane bebree w hɔ me popurɛ,0.7333,0.4727
+101,Monka mo mmuaeɛ no nkyerɛ adesuafoɔ nkaeɛ no nyinaa.,monka mo mma na me de so poatam,0.7778,0.5814
+107,Ghana ha kasa ahodoɔ no nyinaa mu nsɛmfua nteaseɛ gyina toonu so.,hɛ na ha kasa ahodɔenane ninm  fe ntayi natuo no soo,0.9167,0.434
+109,Ɔkasa biara wɔ toonu ahodoɔ.,hano na ato no hom a,1.2,0.6522
+121,"Kasem, Ewe, ne deɛ ɛkeka ho.",kasɛm e ne deɛ ɛyɛɛ akyareka ketaa,0.8333,0.75
+123,"Dagbani, ne deɛ ɛkeka ho.",dabeni ne de keko,0.8,0.3158
+138,Hwɛ nhwɛsoɔ a ɛdidi soɔ yi.,a ne ɛ sɛ amdiɛ,1.0,0.7143
+143,Ɛho nhwɛsoɔ no bi na ɛdidi soɔ yi.,moma werɛ  fiɛ,1.0,0.8462
+148,Yɛtumi de Toonu di dwuma de kyerɛ nsonsonoeɛ a ɛda Akan kasa nkorabata ntam.,gyɛyɛ ɛtumi de tuo no gye dwuma de kyerɛnɛ yɛ nsonson ne a ɛma ne a kankasa nkoraabatan nta,1.0714,0.3387
+151,Fa w’ankasa nsɛmfua kyerɛkyerɛ toonu ase.,fa w ankasa ne st efa akyerɛkyerɛ bɛkyerɛ ho tono ast,1.6667,0.4412
+153,Fa nhwɛsoɔ a ɛfata kyerɛkyerɛ toonu ahodoɔ mu wɔ Asante Twi mu.,aɛao toho oɛ hotaetrit,1.0,0.7647
+154,Ekuo biara ntoatoa adwen mfa toonu dwumadie ho.,akuo biara ntɔto adwene mfatoɔ no dwumadie,0.75,0.2308
+161,Kyerɛ asɛnsini a toonu ahyɛnsodeɛ no da soɔ ɛwɔ asɛmfua no mu.,tere  npa,1.0,0.9
+174,Asɛntitire a ɛwɔ abasɛm bi mu no na yɛfrɛ no adwempɔ.,afeɛne anɔɛ ɔoɔneɛ,1.0,0.7857
+220,Fa deɛ woatwerɛ no toto deɛ wɔatwerɛ wɔ aseɛ hɔ no ho.,a na we o,1.0,0.8571
+223,Yei yɛ akenkan a yɛde hwehwɛ asɛntitire a ɛwɔ abasɛm bi mu.,woyeɛ ni ka ne enaa atabemile,1.0,0.7447
+228,Yɛde saa akenkan yi hwehwɛ mmuaeɛ ma nsɛmmisa pɔtee bi.,yɛage m ase kahomna hene heon atiibiri,1.0,0.7333
+229,Kenkan abasɛm a ɛwɔ aseɛ hɔ no.,ahama kori sɛ kɔ hosere sofoɔ no,0.8571,0.7917
+230,Kyerɛ adwempɔ a ɛwɔ abasɛm a ɛwɔ aseɛ hɔ no mu.,aer,1.0,0.9444
+231,Ka adwempɔ a wohunuiɛ no kyerɛ adesuafoɔ nkaeɛ no na fa toto wɔn deɛ ho.,karo abuohnam ho odhitnenyaafe ahɔ ɔmo kokoreha,1.0,0.7544
+254,Na meka wɔn a wɔbɔɔ wɔn ho mmɔden pa ara wɔ sɔhwɛ a ɛtwa toɔ no mu no ho.,nam agoane wɔ ho kɔainuhwe nnkama n  akomfohuhuhunum,0.9474,0.7222
+257,Ka w’adwempɔ no kyerɛ adesuafoɔ nkaeɛ no.,kaa kroma ne hwe bofofuhufunu no,0.8571,0.697
+265,Na sɛ mpanimfoɔ nso yɛ mfomsoɔ ɛ?,na sowee ho asosɔhehoie,0.8571,0.7308
+270,"Nanso, ne nyinaa mu no, setie boa ma yɛnya asomdwoeɛ ne ahobammɔ.",nanso ne nyinaa hono sikyireboa m   na bamoboo,0.75,0.5098
+282,Kenkan abasɛm a ɛwɔ fam hɔ no na bua nsɛmmisa ahodoɔ a ɛtoa soɔ no.,nkafoao so so,1.0,0.8077
+287,Sukuupanin no gyina hɔ ma tumidie wɔ sukuu no mu.,sukopanin no gyina no no ne tene diɛ kunotokonu o,0.8,0.5641
+301,"Afei, fa toto asekyerɛ a ɛwɔ fam hɔ no ho.",afefatoa ni fes h re nao,1.0,0.6452
+313,Yei yɛ ɛkwan a wofa so kenkan abasɛm bi sɛdeɛ ɛbɛyɛ a wobɛnya emu nteaseɛ.,yɛi a yɛn kwan a wofa so kekan aha nkapiioa afagya,0.8667,0.5763
+323,Yei yɛ ɛberɛ a ɔkenkanfoɔ no si gyinaeɛ wɔ abasɛm no akenkan akyi.,yɛ ɔhene ye ho hofrɛ aɛiniy ae yɛa adehe ti,0.9231,0.7547
+326,Ahonnidie yɛ ade titire ɛho hia pa ara wɔ nnipa apɔmuden ne animuonyam mu.,ahonide yɛkyene kte yɛ hapom mfa pɛpɛm mu de ne nimuonyamo,0.9286,0.5
+348,Fa w’ankasa nsɛmfua kyerɛkyerɛ ‘adwempɔ’ ase.,fa wo ka naa nesimo eso,0.8333,0.7222
+349,Kenkan abasɛm a ɛwɔ fa hɔ no na bua ɛho nsɛmmisa a ɛtoa so no.,keka ahafone shnufo onaha sooo,1.0,0.6596
+351,"Obuo nyɛ biribi a yɛhyɛ obi ma no de ma yɛn na mmom, ɛyɛ adeɛ a yɛnya.",ɔbuo nie  obi ma no di anku neyɛneer,0.8235,0.6538
+356,Fa no sɛ woawura sukuu dan bi mu a obiara de enidie kyea ne yɔnko fɛfɛɛfɛ.,fa no asewɔwerɛ sukudeɛ bi mu aobiara dindigyen yɛn nkɔmfɛm f,0.75,0.3966
+359,Sei na obuo si teɛ.,se na ɔbuu si tiriteoɔ a,0.8,0.7143
+363,"Sɛ wowɔ ntoasoɔ sukuu mu yi, kae sɛ, obuo yɛ sekan- nufanu.",ɛsoakososo ɛ yɛsɛ o  ɛ o,1.0,0.75
+366,Ɛdeɛn na atifiasɛm no ka fa adwempɔ a ɛwɔ abasɛm no mu ho?,yenhitene kanfoɔ ka ni bafoyi tao akwakafa di nno ko,0.9231,0.7778
+368,Fa ɔkasamu nnan bɔ abasɛm yi nyinaa tɔfa.,fonn mofa,1.0,0.8182
+369,Twerɛ akenkan a emu dɔ su mmienu bi a woasua wɔ saa ɔfa yi mu.,twa anee ɛno sofo a fɔ,0.9333,0.766
+371,Nsonsonoeɛ bɛn na ɛda anoteɛ ne mmɔakyire agyinasie ntam?,nsonso ne mfɛm wi na ne ne no tɛe ma me kyerɛkyerɛ agyirisiyɛ me ntaa,1.5556,0.5625
+372,Kyerɛkyerɛ akenkan ntrɛmu su mmiɛnsa mu?,kyerɛ yɛten yɛ ko kase mosu mehini nsɛm a,1.5,0.5882
+373,Kyerɛkyerɛ nsonsonoeɛ ɛda akenkan a emu dɔ ne akenkan ntrɛmu mu.,tisnsutnane ɛɛkrankapɔ ne ka neksimu a,0.9091,0.6604
+392,Yɛde mmataho di dwuma wɔ ɔkasa no mu de yɛ nsɛmfua foforɔ.,yɛde kato ne foa wɔ ahoe nimho fofo firim o,0.8333,0.6522
+399,Mmataho a yɛtaa de di dwuma pa ara ne nsianimu ne nsiakyire.,matawa ya ayan sɛgyidi dwuma pa ara ne nsuani mu ne nsiakyiki,0.6667,0.3125
+403,Nsianim yɛ mmataho a yɛde si asennua bi anim.,mesia nim yi a ɛmaa matawa de e asinnua biar nke,1.1111,0.4444
+404,Nsim nso yɛ mmataho a yɛde si asennua bi ntam.,nsɛm so yɛ yɛ maa matamanta yere nsɛnnua bu nta,0.9,0.5
+405,Nsiakyire yɛ mmataho a yɛde si asennua bi akyiri pɛɛ.,nsyira kyerɛɛ yɛn mmaa mata ho nnyɛ yere esn yɛ akyiri pɛwɛ,1.1,0.5116
+409,Yɛnnim Ghana kasa bi a saa berɛ yi ɛde nsim di dwuma?,yɛyɛni nkanakasabea fa beyɛ yi sesimdi b,0.9167,0.4146
+416,Dane w’ani kyerɛ wo yɔnko na kyerɛkyerɛ mmataho ho ase kyerɛ no.,nɛnem kyerɛ num na kasaɛn nto,0.8333,0.7255
+424,Nyafirim mmataho no ma yɛnya nsɛmfua foforɔ firi asennua no mu.,nesterem mmata ho no nya nesifoɔ fofoɔ ɛiri sɛnuanu mu no,0.9091,0.4231
+434,"Nhwɛsoɔ, wode nsianim m- si asennua barima ho a, ɛbɛdane mmarima.",ɛha ho asɛsa ɔkɔyi wɔdi nsia ni ys sɛnnua barima ho a mamado na ne mmarimpɛ,1.1818,0.5098
+443,Mmataho dwumadie no da nso wɔ ɔkasa ahodoɔ mu.,mata ho dwomadie no ey ne atorɔpɔpa ana aweho,1.0,0.4865
+444,Ɛboa ma yɛtumi yɛ nsɛmfua foforɔ firi asennua anaa asɛmfua dada bi mu.,boa ma yɛ neteɛ foff ɛnaase befo dape,0.8462,0.6842
+445,Ɛtumi sesa asɛmfua bi asɛmfuakuo firi baako mu kɔ foforɔ mu.,ti mi sesa se defadse fakooto akɔkoho fofopoo,1.0,0.5918
+446,Ɛtumi sesa adeyɛ bi kabea.,timi sesa adeɛ no adan yi be kabea,1.2,0.5238
+448,Ɛtumi sesa asɛmfua bi kabea firi kabea baako mu kɔ foforɔ mu.,ɛtumi sesa asɛmmfoɔ bi tami firi kabea ba ko ka koo pofompoo,0.5833,0.3469
+449,Mmataho tumi sesa asɛmfua (edin) firi baakofoɔ mu kɔ dodoɔ kabea mu.,nata ho tumi e ate di firi akɔfopu mu kɔ noteduu abarea biara mu,0.75,0.5556
+450,Mmataho ho nimdeɛ boa ma yɛtumi sopɛ nsɛmfua sane sua yɛn kasa no yie.,mata hohoninyee wɔ ama yɛ ani time sepii tiso sani so yɛɛhene ankasani,1.0,0.5714
+453,Ɛtumi sesa edin ma no dane edin nkyerɛkyerɛmu.,triis sɛ sɛme di ma no ene di ntɛneɛto,0.875,0.5526
+454,Ɛtumi sesa edin a yɛhunu ma no dane edin a yɛnhunu.,tumi sɛ sɛ deɛ yɛyɛ yɛ noano nni deɛ yɛayane yhuo,1.0,0.6
+455,Ɛtumi sesa edin nkyerɛkyerɛmu ma no dane edin.,tumi sɛ sɛ dyene kyerɛkyehɛ kyɛkimo woma no dane di,1.0,0.4737
+456,Ɛtumi sesa adeyɛ ma no dane edin nkyerɛkyerɛmu.,tumi sesa ɛdeɛ ma ne dini di nkyerɛnkyerɛɛ kyerɛkyeryɛ no,1.0,0.5385
+457,Ɛtumi sesa adeyɛ ma no dane edin.,ɛtumi sɛ sa adeɛ monedandeɛ,0.8571,0.3077
+476,Kofi ne Amma kɔ afuom.,kofini amaka no po ahuu,1.0,0.5882
+477,Mekɔɔ bi nanso manni bi.,mekɔɔ bi nanso mani bi,0.2,0.0526
+478,"Ɔnni sika nti, obiara mpɛ no yɔnkoɔ.",ne si kɛ ne e o,1.0,0.75
+479,"Barima kyei bɛba oo, ɔmma oo, yɛbɛsua adeɛ.",bari muhɛ ima wɔoeaɛ,1.0,0.6667
+480,Linda bɛdi banku anaa abeteɛ?,di nna baabimdi benko a nara me tem tɛɛ,1.8,0.5833
+494,"Yɛmfa nsanhɔ (,) mma nkabomdeɛ no akyi.",yɛyɛ asamo ne merahakyi,1.0,0.5517
+496,Menim Nyame a magye no adi.,menim nyame a magye no adi,0.0,0.0
+497,Ɔkyerɛkyerɛni a ɔboo me no aba.,kyerɛ meyi wo hwa no akɔ,0.8333,0.56
+498,Kasamufa titire nkabomdeɛ a ɛka kasamufa kumaa ne kasamufa titire bom.,kasa mufa titiri nkabode ɛkasa mu fa kumaa ne kasɛm firi titire opɔn,0.9091,0.2542
+505,"Berɛ a mereto dwom no, mehunuu me nana.",berɛ a a mereto dwom no mehunuu me naa,0.25,0.0667
+506,"Ansa sa mmrɛnkɛnsono bɛsi ne tiri ase no, na ɔnim deɛ asaase aka akyerɛ no.",ansasa ɛmeme ne ka soaolisi di tire asɛn ne t aasa akakyera ne o,1.0,0.4746
+507,"Barima Kyei amma ntɛm nti, obiara kɔ.",berɛ makyi maem nti obi aka nnapa,1.0,0.4828
+510,Wɔtaa frɛ Ntotoho kabomdeɛ yi sɛ mmɔho nkabomdeɛ.,nake ji hufan hu kii el ataage ahu awindie,1.125,0.8293
+511,"Yɛde saa edin yi frɛ no ɛfiri sɛ, wɔn nyinaa yɛ adwuma bom.",tegypriii ne sesyɛ yi na da mfe i ho dwina wɔ poro,0.9231,0.8444
+517,"Ɔbra no bɔ yɛ den ɛfiri sɛ, sika nni me ho.",awurane  wɔ yii ne se fii  shika ne me a,0.9091,0.5484
+518,"Berɛ a yɛrekɔ sukuu no, ɔfrɛɛ me.",ormonehef,1.0,0.88
+519,Menni gye sɛ woapa me kyɛw.,mennigyee ne se wɔpɛ me twete a,1.0,0.619
+520,"Sɛ menyini a, mɛtu kwan.",ɛse mennyinua ntoo kwan,0.8,0.4444
+526,Nkabomdeɛ ho mfasoɔ da nso wɔ kasa ahodoɔ mu.,kabodefo a  akohodamo,1.0,0.6111
+528,Ɛkyerɛkyerɛ botaeɛ mu anaa ɛda sɛnti bi adi.,se ne nkye oaedii tibie,1.0,0.6667
+529,Ɛboa de kasamufa anaa asɛnsini bi ka ɔfoforɔ no ho.,moade ka sɛ mu a haska si ne de  pon ohohoɔ ponom po,1.3,0.5854
+530,Yɛnam so tumi de asɛm bi a ɛnyɛ nokorɛ ka asɛm dada bi a ɛno nso nyɛ nokorɛ ho.,yahena mso tumi de ase mene nkɔmɔ kwan ɛdɛe amen enkuho pɛ,0.8947,0.5833
+531,Ɛboa da nsonsonoeɛ a ɛda biribi ntam adi.,boatan nso so ne ɛwɔ y bebiribi ntamebi,1.0,0.3636
+532,Yɛnam so tumi de asɛm bi a ɛyɛ nokorɛ ka asɛm dada bi a ɛno nso yɛ nokorɛ ho.,naye nam nso tumi a ha ɛne heotɛymenesofohunu,0.9474,0.7069
+533,Yɛde yɛ ntotoeɛ fa adwempɔ bi ne asɛm bi ho.,ɛwone na ira,1.0,0.8235
+535,Mmara kakra bi a ɛho hia pa ara da nkabomdeɛ dwumadie ho.,mmera kakrabi yura a ho hia pa a a nkabɔ deɛ ɔnyɛ dwuma die ɔka,1.0,0.3778
+538,"Nkabomdeɛ ka adwene, dwumadie ne nimdeɛ bom.",nkabode yɛ ka adwene dwumadie ne ndine ne nemopo,0.7143,0.3056
+541,Nkabomdeɛ boa ma yɛtumi twerɛ nneɛma ahodoɔ bi din mmaako mmaako.,nkabɔdeawɔne werea no ne me wo mmakoma paa,1.0,0.6296
+548,Emu bi na yɛapɛnsɛmpɛnsɛm mu wɔ aseɛ ha yi.,byɛ ɛne asi ne hunuoɛ,1.0,0.7647
+552,Hwan na ɔtoto saa nneɛma ahodoɔ no din?,hona hɔ ne ne nematubo poll bi,1.0,0.7097
+577,Ɛma ɔkasa tu mpɔn ɛfiri sɛ ɛma yɛnya nsɛmfua foforɔ ka dada no ho.,maso kuɔ soa w  a  no  so,0.9286,0.7692
+578,Ɛma yɛtumi ka ɔkasa bi wɔ aman ahodoɔ so.,ba ne defirini kyiri nonkwafoɔ mfonu no so,0.8889,0.9062
+579,Ɛma yɛtumi nya nsɛmfua toto nneɛma foforɔ edin.,mayat o ato de no mmfo podi,1.0,0.641
+580,Ɛma yɛhunu nsɛmfua bi abɔseɛ.,mayɛnne ene a,1.0,0.7083
+583,Twerɛ mmataho nkyekyɛmu ahodoɔ a ɛwɔ Asante Twi mu.,tra nato o a,0.8889,0.8095
+584,Twerɛ mmataho nnan a ɛwɔ Asante Twi mu.,twe matami ne w ntataa titwitwɛ,1.0,0.5484
+585,Pɛnsɛmpɛnsɛm mmataho dwumadie nnan anaa deɛ ɛboro saa mu.,paɛtɔwmno,1.0,0.8542
+587,Kyerɛ nkabomdeɛ ahodoɔ a ɛwɔ Asante Twi mu.,hyeɛ rɛ nkɔ  n hopo do  ayma,1.0,0.7143
+588,Kyerɛ nsonsonoeɛ a ɛwɔ nkabomdeɛ ahodoɔ a woatwerɛ no ntam.,enti so rode ne gye ho wɔ waɔ ahemantaa,1.0,0.6939
+591,Sensan nkabomdeɛ a ɛwɔ ɔkasamu a ɛdidi soɔ yi mu ase.,sɛsa na ahohbɛ mu a ɛ kyerɛ ho ha so,0.9091,0.6905
+592,Maame Amma rekenkan ɛnna Kwame nso retwerɛ.,ma me amareeka nyeke na kwame nsɔre twea firia,1.1429,0.3889
+595,Ɔkɔm de no nti na ɔdidiiɛ.,wosene so nti deyie,0.8333,0.65
+598,Barima Kyei bɛdi abeteɛ anaa banku.,barima chiɛ  bɛ kuli de abɛtele ara ana banko,1.3333,0.5517
+599,Kyerɛ nsɛmfuayɛ ahodoɔ mmiɛnsa wɔ Asante Twi mu.,kaa ne sisn,1.0,0.85
+600,Kyerɛkyerɛ nsɛmfuayɛ ahodoɔ mmiɛnsa mu wɔ Asante Twi mu.,se lee a ma e  oowa e ite,1.0,0.7872
+601,Kyerɛkyerɛ nsɛmfuayɛ so mfasoɔ mmiɛnsa anaa deɛ ɛboro saa wɔ Asante Twi.,yesesɛme su kofo hhen e ofaho a,1.0,0.7667
+602,Twerɛ nsɛmfuayɛ ahodoɔ a ɛwɔ abasɛm a ɛwɔ fam hɔ no mu.,twersɛ haf koho pɔ ho wɔkɔe amou o,1.0,0.6279
+603,"Ɛnnɛ, abɛɛfo mfididwuma ho hia wɔ nwomasua mu pa ara.",ɛnna ɛnyane abeɛfoɔ mfirini dwuma ho hia wɔ mpii yɛn masuɔm bo pa a,1.0,0.5476
+609,"Asɛmmisa no ne sɛ, ɛdeɛn na ɛdi hɔ bio?",asɛka ho ɔeserɛ ɛyi,1.0,0.6552
+616,Asante Twi kasa mu no adi akyerɛ wo.,asantetwe kasamadikyinaseɔ,1.0,0.3929
+621,Borɔfo kasa nso ase yie.,wɔ mpafoɔ asa nso ase yie,0.6,0.3158
+622,Kasasin yɛ asɛmfua anaa nsɛmfuakuo bi a ɛka bom di dwuma korɔ wɔ ɔkasa mu.,kasas sosorfoo gu ɔpɛn ume kɔ komerea ɛ o afeɔ,1.0,0.7458
+624,Ɔkasamufa yɛ nsɛmfuakuo bi a ɛda adi wɔ ɔkasamu mu.,kasɛm febi ani  nakompo adeɛ mɛtu tim  pɛ,1.0,0.7317
+627,"Atwerɛ mu no, yɛde ahyɛnsodeɛ ahodoɔ bi hyehyɛ mu ma nteaseɛ ba mu.",atweno ɛno yɛde tiri ne so kide na mu yɛnhi amanta sɛ yɛ pɛnpa,1.0,0.6415
+639,Etire no na yɛgyina so de hunu kasasin korɔ.,ɛkyire ne ygye na so dihunu kasasko akum pa,0.8889,0.4571
+643,"Kasasin ahodoɔ mmiɛnsa nonom ne edin kasasin, adeyɛ kasasin ne ɔkyerɛfoɔ kasasin.",kasasa ahorono mehfon san anim ne edin kasa se ayɛtesɛ sa tota ɛ,0.9167,0.5294
+644,Yei yɛ kasasin a etire no yɛ edin anaa dinnsiananmu.,ɛyi yɛ kasasɛ ɛtire no yɛteɛ yɛdin anaa din sanem yɛ,0.9,0.381
+646,Edin kasasin tumi nya asɛmfua koro pɛ a ɛyɛ edin anaa dinnsiananmu.,ɛdi nkasa sɛ tumi nya ɛyɛe mfo akorɔpe yɛ ua,0.9167,0.5455
+654,Yɛtumi nya nsɛmfua a ɛboro baako wɔ Edin kasasin mu.,sɛ e tu me yɛ opo akɔosi pɛ,1.0,0.7143
+667,Kofi papa yere no awo.,kofi papa yere no awomɔ,0.2,0.1176
+697,Adeyɛ Kasasin yɛ kasasin a etire no yɛ adeyɛ.,adeɛ yɛre tesɛseɛ yie kasa seɛ ɛkyirɛ i kyɛn adeyareɛ ɛ,1.2222,0.6389
+700,"Adeyɛ kasasin a ɛyɛ adeyɛ titire baako pɛ no, yɛfrɛ no Adeyɛ Kasasin Tiawa.",adeɛ yi kaa sɛ ene kitire bapoyɛ ɔɔkɛsa sɛtɛ,1.0,0.5833
+705,"Adeyɛ Kasasin a ɛwɔ adeyɛ mmataho, adeyɛ titire ne adeyɛ boafoɔ.",ayɛfitin siyɛ ɔpa so sɛ ɛe ne omfo nopo,0.9091,0.7115
+718,"Kasasin a etire asɛmfua no yɛ ɔkyerɛfoɔ no, yɛfrɛ no Ɔkyerɛfoɔ Kasasin.",kakra fzi  bɔ ne firwf  fef,1.0,0.8103
+721,Ɛpono ɛnan a ɛwɔ fam hɔ no ma yɛhunu ɔkyerɛfoɔ kasasin ne wɔn nhyehyɛeɛ ahodoɔ.,meo,1.0,0.9531
+729,Yɛtumi nya kasasin bebree wɔ ɔkasamu bi mu.,yɛnahyɛteme aka sɛ mu bir wɔ pa w ɔto pemu bi mpɛ,1.25,0.7429
+730,Fosu kɔɔ kuro no mu.,fusuka okuro nom mu,0.8,0.2667
+736,Wɔde kasasin da adwempɔ bi adi.,matidihe modem akyirema di,1.0,0.76
+737,Kasasin di akoten wɔ ɔkasa ne atwerɛ nkitahodie mu.,kasa sɛ tee akota mpo nata na agyatrɛftite hodie po,1.1111,0.5
+741,Monsensan asɛmfua a ɛyɛ kasasin a moahunu no ti no mu biara ase.,monse nsan seɛ firhe kasɛ sɛ yɛfɔhunu ne kyi no mu biara aster,0.7692,0.4118
+771,Montena baanu baanu na monkenkan biribi mfa ɔkasamufa asekyerɛ ho.,montena baɛnu baanu na nkinka biribi mfa mfirɛw kasa mu fa asekyaae ahampo,0.8,0.3214
+784,Tiawa ne Ɔkasamufa Titire ntam wɔ ɛpono a ɛwɔ aseɛ hɔ no so.,sɛ atane yira ho ahoa  apɔsnso,1.0,0.7021
+795,"Kojo nom nsuo a, ɔbɛfe.",kulomoa humuyɛ sɛ,1.0,0.7059
+796,"Mɛhwehwɛ no, sɛ mekɔ a.",anam,1.0,0.8824
+798,"Yɛreba no, yɛhyiaa Kɔnɔngo Tiwaa.",yorakore kaasa,1.0,0.7407
+803,"Mpɛn pii no, ɛka biribi fa ɔkasamufa titire no.",fe ne ntii no ee ii reo,1.0,0.7568
+811,"Berɛ a worekɔ no, mefrɛɛ wo.",me mo,1.0,0.8571
+813,Mɛka sɛ wo papa ba a.,anosa yo wo papa ba a,0.3333,0.4
+814,"Sɛ yɛanhwɛ a, yɛrenhunu no yie.",asi ahe yɛhehuhunu e,1.0,0.5833
+852,Ɔman bɛn mu na Kumase wɔ?,mama hun noo,1.0,0.7368
+853,Wo papa atu kwan anaa?,wo papa atu kwan anaa,0.0,0.0
+865,Akwadaa yi ho yɛ fɛ!,akwade a yihua yɛ afufi,0.8,0.4667
+866,Adeɛ a emu yɛ duru ni!,adeɛmhinhwene duruni,1.0,0.5625
+872,Wobɛtumi ama asɛmmisa nsɛmfua ho nhwɛsoɔ wɔ Asante Twi mu?,wɔ prɛ bɛ tumi afɔ ayohoram  atat o,1.0,0.7083
+876,Worehwehwɛ wo mpaboa no anaa?,worehwehwe wo mpaboa no arana,0.4,0.125
+885,Ampɔnsaa kenkanee nwoma a ne papa tɔ maa no no.,ampata nsakenka eɛ wɔ ma mɛabotam pono ano,1.0,0.4865
+886,Ɔbaa no a ɔtɔɔ mpaboa nnora no kɔ.,aaɛ no n ɔpampa ho abɔno aka naɔ,0.875,0.5385
+894,"Ɛtumi di dwuma sɛ ɔyɛfoɔ, ɔyɛtia anaa ɔgyefoɔ.",de ɛ kore msuoa no afɔtomfunhohoyidie,1.0,0.8378
+903,Mehyiaa ɔbɔfoɔ no a ɔkumm gyata no.,meef ma nkoa bo makɔn woo,1.0,0.75
+912,Fa w’ankasa nsɛmfua kyerɛkyerɛ ɔkasamufa mu.,fa wɔ nkasa ne  kyeɛee o f,1.0,0.5946
+913,Ka wo mmuaeɛ no kyerɛ w’afɛfoɔ.,mede reahonem hohoroho o,1.0,0.875
+924,Mekɔhunuu m’adamfo bi a na ɔredi ɛmo wɔ hɔ.,mefɛkohenko kwa u mɛ  aahoo,1.0,0.7879
+932,Ekuo biara mma ɔkasamufa ahodoɔ a moasua no mu biara ho nhwɛsoɔ baako.,ɛkuo bi a mma dakakra mho pomma monsura no mub ɛkɔ ha aa ne hɔ no paa,1.1538,0.5088
+933,Ekuo biara nka ne mmuaeɛ nkyerɛ adesuafoɔ nkaeɛ no.,ɛkɔ bia a anyanefoɔ were ahɔhoaeepo,1.0,0.5952
+938,Barima Kyei di fufuo daa.,varima chende foforɔ ya,1.0,0.5
+939,Yɛde tete ɔkasamu ahodoɔ mu.,nadade su ta ho,1.0,0.7391
+940,Yɛde twa nsɛmfua binom tiawa.,gya  a ɛde twa ne siemfoɔ binom ntua pa,1.4,0.4583
+941,Yɛde si anodisɛm kasasin anaa kasamu bi awieeɛ.,yɛs ɛno de sesɛ nkasa se a na kasa mu bi awi awie,1.5,0.3846
+942,"Linda kaa sɛ, “Mepɛ akenkan”.",yi naka estar sɛ mepɔ de kanne ao,1.4,0.619
+945,"Owusuaa kɔɔ kurom kɔtɔɔ mako, nkyene, sekan ne ankaa.",obusua ka ɔkuro nkwa ɔpɔtɔ wɔ mako nkyɛne sikan ne ahokan,1.0,0.3333
+946,"Afua wɔ adan, kaa, mfuo ne nsase.",ɛfoɔ wɔ danafoɔ nni aɛ,0.8571,0.5417
+947,"Yɛde tete deeti, nkuro ne aman ahodoɔ ntam.",gatititit nkuro ne mma no ho mpa w ntem,1.125,0.5
+949,"Menim Kumase, Sunyane, Takyiman ne Akyerɛnsua.",meni nkomase sua ne ntakyima na terɛ yare nsupɛ,1.5,0.3421
+950,Yɛde tete edin nkyerɛkyerɛmu ahodoɔ a ɛrekyerɛkyerɛ edin baako mu ntam.,hometaa,1.0,0.9167
+951,"Papa tuntum, tenten, kɛseɛ no ada.",papa tuntum tɛntenkaye tɛstea no a a,0.6667,0.3077
+952,"Dua kɛseɛ, tiatia, tuntum no abu.",deɛ aka ɛyɛɛ se eyi tiatia tuntumno pɔ,1.3333,0.48
+956,Yɛde osisan si ɔkasamufa titire mmienu ntam.,yɛ osesɛ sɛ ɛkasɛmfo titire mmienu nta,0.7143,0.2973
+957,"Makenkan nwoma ahodoɔ; Ehia Wo A, Nwu na m’ani gye ho pa ara.",makenkan mo ma ahodɔ pɛ ɛhia wo a mona manigyeɛ hɔ pa aka,0.8462,0.2667
+959,Yɛde tete nneɛma ahodoɔ a yɛrebobɔ edin ntam.,mi kɛje yɛ ni wofa amnɔ woɔ kɛferɛ yeetaa,1.125,0.7297
+961,Yɛde ogya sɛnkyerɛnneɛ da ɔdedeɛ bi ada.,mefiri sesɛ ehne ne no dehode duro,1.0,0.7879
+962,"Yɛde hyɛ asɛmfua bi mu de kyerɛ sɛ, atwerɛdeɛ bi ayera afiri beaeɛ pɔtee ba.",yɛyɛbne htwafiri nene nser pet hifte,1.0,0.7333
+963,N’agyapadeɛ no afiri ne nsa.,nagyapade  no firi nenska,0.8,0.1364
+964,Yɛnam nkatomdeɛ so de da obi anom asɛm pɔtee bi ada.,yɛn na ɛne adidepɔn eidi,1.0,0.6585
+967,Yɛtumi sane nso de da abasɛm bi atifiasɛm ada.,yɛ yɛeisane o a bi tta,0.8889,0.6486
+969,Yɛsane de da anomsɛm pɔtee bi adi firi atwerɛ nkaeɛ no ho.,yɛsotɛne ne de o woe pro bi ea nhɔ,0.9167,0.7174
+972,Yɛde nsɛmfua-ntam-abaa kyerɛ twaka anaa ayɔnkofa a ɛda nneɛma mmienu bi ntam.,yareɛmfontabo aka tikwaha ko no ahony me me u nikara,1.0,0.619
+973,Yɛnam so de nkyerɛkyerɛmu foforɔ bi ka deɛ ɛda dwa dada no ho.,yɛa raaoo,1.0,0.8367
+975,Yɛtumi de si nsanhɔ anaa osiprenu ananmu.,yɛne yɛ tumi te sɛnsa epɔn anaa ɔsupiri no ana,1.2857,0.5
+977,Ɛkyerɛ ayɔnkofa anaa nsonsonoeɛ a ɛda nsɛmfua binom ntam.,se e aee ne ɛn,1.0,0.875
+979,Yɛde si nteamu kasamu anaa ɔhyɛ kasamu akyi de da nkatedeɛ a ɛwɔ soro ada.,yɛne easyn nti mo kasɛ mo ne mankohidakyiri kafiri ed a po ho ata,0.9333,0.6271
+980,Yɛde si asɛmmisa kasamu bi akya.,yɛaɛyeyi s se mmisa kasɛ mo bi a akyɛ,1.3333,0.3846
+1000,Momfa mo mmuaeɛ no ntoto afoforɔ baanu bi deɛ ho.,momfa mo mma yɛn no ntotɔ ahokopɔ ne ne me timi akwa,0.9,0.5128
+1004,Meduruu ɛhyɛngyinabea hɔ no na ɛhyɛn no atu dada.,meduru gye haeheo nkoa,1.0,0.625

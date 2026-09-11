@@ -86,3 +86,24 @@ TTS_LANG_MAP = {
     "twi_asante": "twi",
     "xsm": "xsm",
 }
+
+# ── Text domains ─────────────────────────────────────────────────────────────
+# A domain ("category", to match the ASR benchmark's vocabulary) is the kind of
+# text a model is asked to read. Scores are reported per domain and averaged, so
+# a model that handles one register well is not credited for another.
+EVAL_CONFIGS = DATA_DIR / "eval_configs.json"
+DEFAULT_CATEGORY = "education"
+
+
+def language_categories(iso):
+    """Return the domain configs for *iso*, or the default if unregistered."""
+    import json
+
+    try:
+        with open(EVAL_CONFIGS, encoding="utf-8") as f:
+            entry = json.load(f)["languages"].get(iso)
+    except (OSError, json.JSONDecodeError, KeyError):
+        entry = None
+    if not entry:
+        return [{"category": DEFAULT_CATEGORY, "source": GHANA_SENTENCES, "subset": iso}]
+    return entry["categories"]

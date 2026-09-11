@@ -1,0 +1,201 @@
+sample_id,reference,hypothesis,wer,cer
+13,Pɛlɔku pɛmingu ji pɛlɔku nɛ tsuɔ ni kaa pɛmingu (Enɛ ɔ eko be Dangme mi).,Pɛ loku pe mi ngu ji pe loku nɛ tsuo ní kaa pe mi ngu. Enɛ ɔ eko be da nguɛ mi.,0.9333,0.1607
+20,Pɛlɔ pɛ hu ma nyɛ da si kaa pɛmingu.,Pɛɛ lɔ pe hu ma nyɛ da si kaa pe mi ngu.,0.6667,0.1111
+33,Pɛlɔ pɛ ma nyɛ da si kaa pɛmingu nɛ pɛlɔku kɛ pɛlɔ ma nyɛ da si kaa pɛmingu.,Pɛɛ lɔ pe ma nyɛ da si kaa pe mi ngu nɛ pe loku kɛ pɛ lo ma nyɛ da si kaa wii.,0.6111,0.2069
+44,E yeɔ buaa ni kaseli nɛ a nyɛɔ peeɔ munyunguhi nɛ da ngɛ a dɛhe.,E yeɔ buaa ni kaseli nɛ a nyɛɔ peeɔ munyunguhi nɛ da ngɛ a de he.,0.1333,0.0204
+45,E yeɔ buaa ni kaseli nɛ a leɔ gbi ɔ si fɔfɔɛ kɛ e lomi bɔ.,E yeɔ buaa ni kaseli nɛ a lɛɔ gbe ɔ si fɔfɔɛi kɛ e lomi bo.,0.25,0.0952
+46,E yeɔ buaa ni kaseli nɛ a nuɔ munyunguhi a sisi.,E yeɔ buaa ni kaseli nɛ a nuɔ munyunguhi a sisi.,0.0,0.0
+50,"Ngɛ nɔhyɛ munyungu nɛ ɔmɛ a tsɛmi mi ɔ, pɛminguhi jeɔ a he kpo.","Ngɛ nɔ hyɛ munyumu nɛ ɔmɛ a tsɛ mi mi ɔ, pe mi nguhi jeɔ a he kpo.",0.5714,0.0625
+58,"Ngɛ nɔhyɛ ni nɛ wa ha amɛ a mi ɔ, o ma yo kaa pɛmingu ɔmɛ hɛɛ pɛlɔkuhi ngɛ a nyagbe.","Ngɛ nɔ hyɛ ni nɛ wa haa mɛ a mi ɔ, o ma yo kaa pe mi nguɛ ɔmɛ hɛɛ pe lokuhi ngɛ a nyagbe.",0.4286,0.0645
+60,Ngɔɔ mo nitsɛ o munyuhi kɛ kale nɔ nɛ pɛmingu ji.,"Ngɔɔ muɔ nitsɛ ɔ, munyuhi kɛ kale nɔ́ nɛ pɛmi ngu ji.",0.3636,0.0789
+61,Moo tsɔɔ pɛmingu slɔɔtohi nɛ ngɛ Dangme mi.,Mɔ tsɔɔ pemi ngu slɔɔtohi nɛ ngɛ da ngmɛ mi.,0.625,0.1143
+62,Moo tsɔɔ pɛmingu si fɔfɔɛ he se nami ngɛ munyungu peemi mi.,Mɔɔ tsɔɔ pemi ngɔ si fɔfɔehi se nami ngɛ munyungu peemi mi.,0.4167,0.1277
+79,Moo sɛsɛ pɛmingu si fɔfɔɛ ngɛ Dangme mi ɔ he.,mɔɔ sese pemi ngɔ si fɔfɔe da nguɛ mi ɔ he.,0.7,0.3429
+85,Tukpɛtukpɛ kɛ Tatu ji huɛmɛ.,Tukpetukukukɛ kɛ ta tu ji hwɔɛmɛ.,0.8,0.3043
+91,Tatu sɛɔ e tsu nɛ e bua niye ni nya wo mi ɔ mi nɛ e kɛ e bimɛ yeɔ bɔɔbɔɔbɔɔ.,"Tatu seɔ e tsu nɛ e bua niye ní nya womi ɔ mi, nɛ e kɛ e bimɛ yeɔ bɔbɔbɔ.”",0.2381,0.0909
+107,Gana gbihi tsuo tsuɔ gbimikɔmi he ni.,Gana gbihi tsuo tsuo gbi mi komɛ he ní.,0.7143,0.1333
+117,"Dangme, Dagbaani kɛ gbi kpa komɛ lɛɛ a ngɛ sisi, kpɛti kɛ hiɔwe gbimikɔmi.","Dangmɛ i dagba ní, kɛ gbi kpa komɛ lɛɛ a ngɛ sisi, kpɛti kɛ hiɔwe gbi mi komɛ.",0.5,0.1034
+118,Kane munyuza nɛ nyɛɛ se nɛ ɔmɛ nɛ e maa ye bua mo kɛ ha sisi numi.,kane munyu za nɛ nyɛɛ se nɛ ɔmɛ nɛ e maa ye bua mo kɛ ha sisi numi.,0.1176,0.0
+119,Moo tsɔɔ gbimikɔmi nɛ munyungu ‘ma’ hɛɛ ngɛ munyuza etɛ ɔmɛ a mi.,mɔɔ tsɔɔ gbi mi komi nɛ munyu nguma a hɛɛ ngɛ munyu za etɛ ɔmɛ a mi.,0.6923,0.08
+130,Enɛ ɔ tsɔɔ fami kɛ amlɔbe ngɛ animosa glɛ nɔ.,Enɛ ɔ tsɔɔ fa mi ke amlɔ be ngɛ a nyɛmusa gle nɔ.,0.8,0.1429
+132,Enɛ ɔ jeɔ benɛbe juɛmi kpo ngɛ animosa glɛ nɔ.,Enɛ ɔ jeɔ benɛ be juɛmi kpo ngɛ a ni Mosa gle nɔ.,0.6,0.0278
+134,Ngɔɔ mo nitsɛ o munyuhi kɛ kale nɔ nɛ gbimikɔmi ji.,Ngɔɔ mɔ nitsɛ ɔ munyuhi kɛ kale nɔ́ nɛ gbi mi ko mi ji.,0.5455,0.075
+136,Ngɔɔ nɔhyɛ ni nɛ da kɛ tsɔɔ Dangme gbimikɔmi ɔ nya.,Ngɔɔ nɔ hyɛ nihi nɛ da kɛ tsɔɔ da ngmɛ gbimi komɛ ɔ nya.,0.6364,0.125
+137,"Ngɛ kuuhi a mi ɔ, nyɛɛ sɛsɛ gbimikɔmi ni tsumi he.","Ngɛ kuu hia mi ɔ, nyɛɛ sese gbimi komɛ ní tsumi he.",0.5455,0.1316
+141,Nyɛɛ nuu nyɛ he enyɔɔnyɔ nɛ nyɛɛ bu munyungu nɛ ɔmɛ tue.,Nyɛɛ nuu nyɛ he enyɔɔnyɔ nɛ nyɛɛ bu munyungu nɛ ɔmɛ tue.,0.0,0.0
+145,De o heto ɔ ngɔ ha nyɛ tsu mi bi ɔmɛ.,"De ɔ heto ɔ, wɔ ha nyɛ tsumi bi ɔmɛ.",0.3636,0.1154
+146,Moo ngma pɛmingu slɔɔtohi ngɛ Dangme mi nɛ o ha nɔhyɛ ni etɛɛtɛ.,Mɔ hua pɛmi ngɔ slɔɔtohi ngɛ da ngmɛ mi nɛ ɔ ha nɔ hyɛ ní etɛ.,0.8462,0.2353
+150,Moo ngɔ nɔhyɛ ni etɛ kɛ tsɔɔ gbimikɔmi ni tsumi ngɛ Dangme mi ɔ nya.,Mɔɔ ngɔ nɔ hyɛ ni etɛ kɛ tsɔɔ gbi mi komɛ ní tsumi ngɛ da nguɛ mi ɔ nya.,0.6,0.1321
+153,Oti pɔtɛɛ ngɛ demiyo ko mi ɔ ji nɔ he nɛ demiyo ɔ kɔɔ.,Oti pɔ tee ngɛ dɛmiyo ko mi ɔ ji nɔ he nɛ dɛmiyo ɔ kɔɔ.”,0.2857,0.1
+166,A deɔ nihi babauu kɛ kɔɔ munyutso oti ɔ he.,A deɔ nihi babauu kɛ kɔɔ munyu tso oti ɔ he.,0.2,0.0
+186,E sa nɛ o hla munyungu oti ɔmɛ.,E sanɛ ɔ hla munyu nguu oti ɔmɛ.,0.625,0.087
+191,O ma nyɛ maa to tsui si kɛ kane demiyo ɔ mi ekohu nɛ o nu sisi saminya.,"O ma nyɛ maa tɔ tsui si kɛɛ kane demi yo ɔ mi, ekohu nɛ ɔ nu sisi saminya.",0.2778,0.0566
+212,Ngɔɔ ni kanemi vii he nile nɛ o na a kɛ kane demiyo nɛ nyɛɛ se nɛ ɔ.,Ngɔɔ ní kane mi vii he nile nɛ ɔ naa kɛ kane dɛmiyɔ nɛ nyɛɛ se nɛ ɔ.,0.3889,0.08
+213,Jije oslɔɔke ngua nɛ ɔ je?,Jije o slɔɔ kɛ nguaa nɛ o je.,0.8333,0.15
+214,Mɛnɔ nɛ ha e ku pue kpo kikɛ nɛ ɔ?,Mɛ nɔ nɛ ha e ku po e kpo kikɛ nɛ ɔ?”,0.4,0.0417
+215,Obo we tso ngua a ku.,O bɔ we tso nguaa ku.,0.6667,0.0667
+224,"Benɛ Yaa Kɔɔyo je jua kɛ ma a, ambulansi ko ba be e he kɛ fo.","Benɛ Yarkoyo je jua kɛ ma a, ambulansi ko ba be e he kɛ fɔ.",0.1875,0.0909
+229,"E nɔ jena a, a pue nɔ kɛ ya mɔtsle ɔ ekohu ya to e dlami he blɔ nya.","E nɔ jena a, a pue nɔ́ kɛ ya mɔtsle ɔ, ekohu ya to e dlami he blɔ nya.",0.0,0.0
+232,Ma a tsuo wo yana.,Ma a tsuo wo yana.,0.0,0.0
+240,Munyu nɛ ɔ he wa ha Mangoasetsɛmɛ se e he nɔ ko be nɛ a ma nyɛ pee.,"Munyu nɛ ɔ he wa ha ma nguaa se tsɛmɛ, se e he nɔ ko be nɛ a ma nyɛ pee.",0.2222,0.0408
+246,Okpɔtɛsa gbenɔ nɛ ɔ ye ma a tsuo awi.,O kpɔte sagbe nɔ nɛ ɔ ye ma a tsuo ɔ awi.,0.5556,0.0714
+248,Okpɔtɛsa ni tsumi kpakpa nyɛɛ e se niinɛ.,O kpɔtɛ sa ní tsumi kpakpa nyɛɛ e se níine.,0.625,0.0909
+249,Mo yo munyutso oti ngɛ demiyo ɔ mi.,Moyo munyu tso o ti ngɛ dimi yo ɔ mi.,0.875,0.037
+250,Sɛsɛ munyutso oti ɔ he.,Sɛse munyu tso ɔ o ti ɔ he.,1.2,0.1111
+252,Moo kane demiyo nɛ nyɛɛ se nɛ ɔ.,Mɔɔ kane dɛmiyo nɛ nyɛɛ se nɛ ɔ.,0.25,0.125
+253,Mo yo munyutso oti ngɛ demiyo ɔ mi nɛ o ngma.,Mo yo munyu tso o ti ngɛ dɛmi yo ɔ mi nɛ o ngma.,0.5455,0.0294
+268,Ye huɛmɛ a ngɔ nɛ i naa buajɔ bɔɔ ngɛ ke i ya sukuu.,Ye huɛmɛ a ngɔ nɛ i naa bua jo bɔɔ ngɛ kɛ i ya sukuu.,0.2143,0.0526
+278,"Sukuu ɔ, a wo mi kaa sukuubi ɔmɛ tsuo a nya dalɔ nɛ a deɔ ke sukuu plifɛti ɔ.","Sukuu ɔ, a wo mi kaa Sukuu bi ɔmɛ tsuo a nya daloo nɛ a deɔ kɛ sukuu pli feti ɔ.",0.3158,0.0702
+283,Nyɛɛ kɛ nyɛ tsu mi bi ɔmɛ nɛ sɛsɛ nyɛ munyutso oti ɔ he.,Nyɛɛ kɛ nyɛ tsumi bi ɔmɛ nɛ sɛse nyɛ munyu tso oti ɔ he.,0.3571,0.0238
+286,Pi mlaa nɔ yemi pɛ ji tue bumi.,Pi mlaa nɔ yemi pe ji tue bumi.,0.125,0.0435
+288,"Ke o bu o fɔli tue ɔ, o ngɛ tsɔe kaa o ngɛ hɛ kɛ nɔ fɔmi ngɛ a tsɔsemi kɛ a blɔ tsɔɔmi mi.","Ke o buɔ ɔ, fɔli tue ɔ, o ngɛ tsoe kaa o ngɛ he kɛ nɔ fɔmi ngɛ a tsɔsemi kɛ a blɔ tsɔɔmi mi.",0.16,0.0625
+303,Nyɛɛ nuu nyɛ he enyɔɔnyɔ nɛ nyɛɛ ngma ni sɛɛmi kaa nɔ nɛ wa na nɛ ɔ.,Nyɛɛ nuu nyɛ he enyɔ nyɔ nɛ nyɛɛ ngma ní sɛmi kaa nɔ nɛ wa na nɛ ɔ.,0.2353,0.0588
+309,Nyɛɛ kane demiyo nɛ nyɛɛ se nɛ ɔ nɛ nyɛ ha sane bimihi nɛ nyɛɛ se ɔmɛ a heto.,Nyɛɛ kane dɛ mi yo nɛ nyɛɛ se nɛ ɔ nɛ nyɛ ha sane bimihi nɛ nyɛɛ se ɔmɛ a heto.,0.1579,0.0172
+315,Sukuu nɔ hyɛlɔ ji nɔ yemi nɔhyɛ nɔ ngɛ sukuu ɔ.,"Suku nɔ hyɛlɔ ji nɔ yemi, nɔ hyɛ nɔ ngɛ su kuu ɔ.",0.4545,0.0278
+328,E sa nɛ e pee nihi nɛ maa ku nɔ buimi nya pɛsɛpɛsɛ.,E sa nɛ e pee nihi nɛ maa ku nɔ bui mi nya pɛsɛpɛse.,0.2308,0.0263
+335,Ni kanemi kɛ mi kuɔmi he su komɛ nɛ nyɛɛ se nɛ ɔ nɛ.,Nika nɛ mi kɛ mi kuɔmi Yesu komɛ nɛ nyɛɛ se nɛ ɔ nɛ.,0.3571,0.0526
+338,A kɛ kaleɔ nɔ lemi kanemi.,A kɛ kali ɔ nɔ lɛ mi kanemi.,0.6667,0.1
+354,Falefale peemi ji nɔmlɔ adesa he wami nami sisi poku.,Falefale peemi ji nɔmlɔ adesa he wami nami sisipoku.,0.2,0.0
+364,Mo kai ni kanemi kɛ mi kuɔmi he su nɛ wa kase kɛ be ɔ.,Mɔkai nika nɛ mi kɛ mi komɛ Yesu nɛ wa kase kɛ be ɔ.,0.4667,0.1538
+368,"Jehanɛ ɔ, tsɔɔ bɔ nɛ o susu kaa a ma nyɛ ma blɛke demiyo nɛ ɔ mi ha.","Jehanɛ ɔ, tsɔɔ bɔ nɛ ɔ susu kaa ma nyɛ ma ble kɛ dimi yo nɛ ɔ mi ha.",0.3333,0.102
+370,Moo hyɛ vidio nɛ ɔ nɛ o kɛ na bɔ nɛ ni kanemi vii kɛ ni kanemi kɛ mi kuɔmi ngɛ ha.,"Mɔɔ hyɛ videɔ nɛ ɔ kɛ na bɔ nɛ ní kanemi viii, kɛ ní kanemi kɛ mi kuomi ngɛ ha.",0.3636,0.1833
+371,Yo a he blɔ nɔ tomi kɛ a he se nami kɛ ha sisi numi nɛ mi kuɔ nami.,Yɔ ɔ a he blɔ nɔ tomi ke a he sɛ nami kɛ ha sisi numi nɛ mi kuɔ nami.,0.2105,0.0833
+376,Munyutso oti yomi ngɛ demiyo ko mi.,Munyu tso oti yomi ngɛ dɛmi yo ko mi.,0.5714,0.0357
+377,Ngɔɔ mo nitsɛ o munyunguhi kɛ tsɔɔ munyutso oti sisi.,Ngɔɔ mo nitsɛ ɔ munyu nguhi kɛ tsɔɔ munyu tso ɔ ti sisi.,0.7,0.0465
+378,Moo kane demiyo nɛ nyɛɛ se nɛ ɔ nɛ o ha sane bimi ɔmɛ a heto.,"Mɔɔ kane dɛmiyo nɛ nyɛɛ se nɛ ɔ, nɛ ɔ ha sane bimɛ ɔmɛ a hetɔ.",0.3125,0.1333
+381,Bu ji adesahi a bɔmi sisi kla aloo sisi poku.,"Bu ji adesahi a bɔmi sisi klaa, aloo sisipoku.",0.3,0.0286
+382,"Ngɛ si himi mi jio, ni tsumi he jio ɔ, bu he hia wawɛɛ nitsɛ.","Ngɛ si himi mi jiɔ ní tsumi he ji ɔ, bu he hia wawɛɛ nitsɛ.",0.2,0.0682
+385,Ngɔɔ lɛ kaa o sɛ sukuu tsu ko mi nɛ nɔ fɛɛ nɔ ngaa e sibi kɛ bu kɛ he numi.,Ngɔɔ lɛ kaa o se suku tsu ko mi nɛ nɔ fɛɛ nɔ ngaa e sibi kɛ bu kɛ he nu mi.,0.1905,0.037
+396,Mɛni ji demiyo ɔ munyutso oti ɔ?,"Mɛni ji dɛmi yo ɔ, munyu tsooti ɔ?",0.5714,0.04
+397,Mo yo munyuza otihi ngɛ kekle kuku kɛ kuku eywiɛne ɔmɛ mi nɛ o ngma.,Moyo munyu za otihi ngɛ kekle kuku kɛ kuku eywiɛ nɛ ɔmɛ mi nɛ ɔ ngua.,0.4667,0.0566
+398,Moo do demiyo ɔ nɔ kɛ munyuza eywiɛ pɛ.,Mɔdo dɛmiyo ɔ nɔ ke munyu za e ywiɛpe.,0.8889,0.1667
+399,Moo ngma ni kanemi vii he su enyɔ nɛ nyɛ kase ngɛ mi gbami nɛ ɔ mi ɔ.,Mɔɔ nguaa nika nɛ mi vii Yesu enyɔ nɛ nyɛ kase ngɛ mi gbami nɛ ɔ mi ɔ.”,0.3889,0.1176
+400,Moo tsɔɔ su enyɔ nɛ o ngma amɛ a sisi kɛ mo nitsɛ o munyunguhi.,Mɔɔ tsɔɔ su enyɔ nɛ ɔ ngma amɛ a sisi kɛ mɔ nitsɛ ɔ munyu nguhi.,0.4,0.1042
+403,Moo tsɔɔ ni kanemi kɛ mi kuɔmi he su etɛ sisi.,Mɔɔ tsɔɔ ní kanemi kɛ mi kuɔmi he so etɛ sisi.,0.2727,0.1143
+410,He kplali slɔɔto enyɔ nɛ ngɛ Dangme mi.,he kplaali sloto enyɔ nɛ ngɛ da ngmɛ mi.,0.5,0.129
+416,He kplali a he ni tsumi ngɛ gbi ko mi ɔ haa nɛ a naa munyungu ehehi.,he kplalia he ní tsumi ngɛ gbi ko mi ɔ haa munyu ngɔe hehi.,0.4706,0.1569
+424,He kplali pɔtɛɛ nɛ ngɛ ji hɛ kpɛ he kplali kɛ se he kplali.,"he kplali pɔtɛɛ, kplali kɛ se he kplali.",0.4286,0.3111
+430,He kplalɔ peeɔ se he kplalɔ ke a ngɔ kɛ piɛɛ munyungu ɔ he ngɛ e se.,He kplalo peeɔ se he kplalo kɛ̃ a ngɔ kɛ piɛ munyungu ɔ he ngɛ e se.,0.2353,0.0784
+432,He kplalɔ peeɔ kpɛti kplalɔ ke a ngɔ kɛ piɛɛ munyungu ɔ he ngɛ kpɛti.,He kplalo peeɔ kpɛti kplalo kɛ a ngɔ kɛ piɛ munyungu ɔ he ngɛ kpɛti.,0.2667,0.0741
+435,He kplalɔ peeɔ hɛ kpɛ he kplalɔ ke a ngɔ kɛ piɛɛ munyungu ɔ he ngɛ e hɛ kpɛ.,He kplalo peeɔ he kpe he kplalo kɛ a ngɔ kɛ piɛ munyumu ɔ he ngɛ e he kpe.,0.4737,0.1754
+437,He kplali nɛ kplaa munyungu kake e se kɛ hɛ kpɛ ngɛ be kake mi.,He kplali nɛ kplaa munyu ngu kake e si kɛ he kpe ngɛ be kake mi.,0.3333,0.0625
+444,O le Gana gbi ko nɛ tsuɔ enɛ ɔmɛ tsuo a he ni lo?,O lɛ gana gbi ko nɛ tsuo enɛ ɔmɛ tsuo a he ní lo?,0.2143,0.0857
+451,Plɛ kɛ kpee o nyɛmi ɔ nɛ o tsɔɔ nɔ nɛ ji he kplali a nya.,"Ple ke kpe ɔ, nyɛ mi ɔ nɛ o tsɔɔ nɔ nɛ ji he kplali a nya.",0.375,0.0976
+458,"Ngɛ hiɛ ɔ, munyungu ɔ kɛ he kplalɔ ɔ ma nyɛ hɛɛ sisi numi ekpaakpa.","Ngɛ hyɛ ɔ, munyungu ɔ kɛ he kplalɔ ɔ ma nyɛ hɛ sisi numi ekpaakpa.",0.1333,0.0392
+485,A yeɔ bua nɛ wa naa munyungu ehehi kɛ jeɔ munyungu poku ɔ mi.,A yeɔ bua nɛ wa naa munyungu e hehi kɛ jeɔ munyungu poku ɔ mi.,0.1429,0.0
+486,A tsakeɔ munyungu kɛ jeɔ munyungukuu ko mi kɛ yaa munyungukuu kpa mi.,A tsakeɔ munyumu kɛ jeɔ munyumu kuu komɛ kɛ yaa munyumu kuu kpa mi.,0.4615,0.125
+488,A tsakeɔ munyungu ɔ kɛ jeɔ be pɔtɛɛ ko mi kɛ yaa be ekpa mi ngɛ animosa glɛ nɔ.,A tsake ɔ munyu ngɔ ɔ kɛ jeɔ be pɔ tee ko mi kɛ yaa be ekpami ngɛ animosa glɛ nɔ.,0.4211,0.05
+489,A tsakeɔ munyungu ɔ kɛ jeɔ kake mi kɛ yaa hiɛhiɛɛ mi ngɛ animosa glɛ nɔ.,A tsake ɔ munyu ngɔ ɔ kɛ jeɔ kake mi kɛ yaa hie hiɛmɛ ngɛ animosa glɛnɔ.,0.5,0.0714
+490,A tsakeɔ peemimunyu kɛ peeɔ biɛ.,A tsakeɔ peemi munyu kɛ peeɔ biɛ.,0.3333,0.0
+492,A tsakeɔ biɛ kɛ peeɔ kalelɔ.,Atsakeo biɛ kɛ peeɔ Kaleeloo.,0.5,0.1818
+493,A tsakeɔ kalelɔ kɛ peeɔ biɛ.,A tsake okale lo kɛ peeɔ biee!”,0.6667,0.1818
+494,A waa kɛ haa gbi ɔ kasemi kɛ e ngmami.,A wa kɛ ha gbi ɔ kasemi ke i ngmami.,0.4,0.1429
+500,Tsake munyunguhi nɛ nyɛɛ se ɔmɛ kɛ pee biɛhi aloo kaleli.,tsake munyu nguhi nɛ nyɛɛ si ɔmɛ kɛ pee biɛhi aloo kaleli.,0.2727,0.0217
+514,Kofi kɛ Amaki ye ni ɔ.,Kɔfi ke a maa ki ye ní ɔ.,1.0,0.25
+516,Nyɛɛ ngɔ nya tsɔɔmi nɛ nyɛ ha ngɛ sukuu tsu ɔ mi ɔ kɛ kudɔ nyɛ he.,Nyɛɛ ngɔ nya tsɔɔmi nɛ nyɛ ha ngɛ sukuu tsu ɔ mi ɔ kɛ kudo nyɛ he.,0.0588,0.0204
+519,Wa maa sɛsɛ etɛ pɛ he.,Wa maa sese etɛ pe hee.,0.5,0.25
+526,Majua tsali nɛ tsaa munyunguhi kɛ munyukpafahi.,"Ma jua tsali nɛ tsaaauu, kɛ munyu kpafahi.",0.8571,0.2
+529,Majua tsali nɛ tsaa dɛhe munyukpɔ kɛ akplahe munyukpɔ kɛ blaa.,Ma jua tsali nɛ tsaa dɛ he munyu kpo kɛ akplaa he munyu kpo kɛ blaauu.,1.0,0.098
+548,E be subai lɔ ɔ he ɔ e nɛ gba kpakpa.,"E be subae, lɔ ɔ he ɔ, e nɛ gba kpakpa.",0.0909,0.0385
+551,Moo kane o heto ɔ kɛ ha nyɛ tsu mi bi ɔmɛ konɛ o tsɔɔ o heto ɔmɛ a nya.,"Mɔɔ kane ɔ heto ɔ kɛ ha nyɛ tsumi bi ɔmɛ, konɛ o tsɔɔ ɔ heto ɔmɛ a nya.",0.25,0.0784
+557,A yeɔ buaa nɛ a ngɔɔ yi mi tomi ko kɛ pataa yi mi tomi ekpa he.,A yeɔ buaa nɛ a ngɔɔ yi mi tomi ko kɛ pataa yi mi tomi ekpa he.,0.0,0.0
+558,A yeɔ buaa kɛ ha nɔ kɛ nɔ he tomi.,A yeɔ buaa kɛ ha nɔ kɛ nɔ he tomi.,0.0,0.0
+559,A yeɔ buaa kɛ tsɔɔ nɔ ko nɛ ya nɔ.,A yeɔ buaa kɛ tsu nɔ ko nɛ ya nɔ.,0.1,0.0833
+561,Mlaa komɛ ngɛ nɛ kudɔɔ wɔ kɛ ha tsali a he ni tsumi.,Mlaa komɛ ngɛ nɛ kudoo wɔ kɛ ha tsali a he ní tsumi.,0.1538,0.0769
+564,"Tsali blaa susumi, nɔ peemi kɛ yi mi tomi.","tsali blaa susumi, nɔ peemi kɛ yi mi tomi.",0.0,0.0
+567,Tsali a he hia kɛ ha nihi a he so tomi.,tsali a he hia kɛ ha nihi a he sɔpɔmi.,0.1818,0.1071
+571,Blɔ slɔɔtohi a nɔ ngɛ nɛ a guɔ kɛ peeɔ munyungu ehehi.,Blɔ slɔɔtohi a nɔ ngɛ nɛ a guɔ kɛ peeɔ munyu ngɔ e hehi.,0.3333,0.0238
+576,Kɛ nyɛ woɔ ni ehehi nɛ ngɛ bae ngɛ nyɛ ma a mi biɛ kɛɛ?,ke nyɛ wo nihehi nɛ ngɛ bae ngɛ nyɛ ma a mi biɛ kɛɛ?,0.2667,0.075
+579,Mɛnɔ nɛ woɔ ni ɔmɛ a biɛ?,Mɛnɔ nɛ wo ni ɔmɛ a biɛ?,0.1429,0.0556
+610,"Munyungu babɛɛ nɛ ba sɛ Dangme mi ɔ ekomɛ ji hledio-radio, ɛlopleeaeroplane, sɛmɛti-cement, kasiɔkɔ kɛ ekpa komɛ.","Munyumu ba bee nɛ ba se da ngmɛ mi ɔ, ekomɛ ji Hlede ɔ, e lo plɛ Eroplane Sematisement kasiɔ ko kɛ ekpa komɛ ɔ.",0.9412,0.2418
+615,E yeɔ buaa kɛ haa gbi ɔ wami.,E yeɔ buaa kɛ haa gbi ɔ wami.,0.0,0.0
+616,E yeɔ buaa nɛ gbihi sɛɔ a sibi a mi.,E yeɔ buaa nɛ gbihi seɔ a sibi a mi.,0.1,0.0385
+617,E yeɔ buaa kɛ haa munyungu ehe nami kɛ e he juɛmi ehe nami.,E yeɔ buaa kɛ haa munyungu he nami kɛ he juɛmi he nami.,0.2143,0.0667
+618,E yeɔ buaa kɛ haa gbi ɔ kasemi.,E yeɔ buaa kɛ haa gbi ɔ kasemi.,0.0,0.0
+619,E yeɔ buaa nɛ a kɛ yoɔ he nɛ munyungu ehe ɔ puɛ kɛ je.,"E yeɔ buaa nɛ a kɛ yeɔ he, nɛ munyu ngue he ɔ pue kɛ je.",0.3333,0.0513
+624,Tsɔɔ he kplali a nya.,Tsɔɔ he kplali a nya.,0.0,0.0
+625,Ngmaa he kplali slɔɔto nɛ ngɛ Dangme mi.,Ma he kplali slɔɔto nɛ ngɛ da ngmɛ mi.,0.375,0.125
+626,Yɔse he kplali eywiɛ ngɛ Dangme mi nɛ o ngma mɛ.,Yose he kplali eywiɛe ngɛ da ngmɛ mi nɛ ɔ ngmamɛ.,0.6364,0.1081
+627,Sɛsɛ he kplali ni tsumi eywiɛ he.,Sɛse he kplali ní tsumi eywiɛ he.,0.2857,0.0769
+628,Yɔse he kplali ngɛ munyunguhi nɛ nyɛɛ se ɔmɛ a mi konɛ o tsɔɔ he kplali nɛ a ji.,"Yose he kplali ngɛ munyunguhi nɛ nyɛɛ si ɔmɛ a mi, konɛ o tsɔɔ he kplali nɛ a ji.",0.1053,0.0328
+629,Sɛsɛ he kplali a he ni tsumi eywiɛ he.,Sese he kplali a hɛ ní tsumi ywiɛ he.,0.4444,0.1724
+630,Tsɔɔ nɔ nɛ tsali ji.,"Tsɔɔ nɔ nɛ tsali ji,",0.0,0.0
+632,Moo tsɔɔ tsali slɔɔto ɔmɛ nɛ o ngma a nya.,Mwɔ tsɔɔ tsali slɔɔto ɔmɛ nɛ o ngma a nya.,0.1,0.0625
+635,Moo po tsali nɛ ngɛ munyuzahi nɛ nyɛɛ se ɔmɛ a mi ɔ sisi.,mɔɔ po tsali nɛ ngɛ munyu zahi nɛ nyɛɛ se ɔmɛ a mi ɔ sisi.,0.2143,0.0465
+636,Baake ngɛ ni kanee nɛ Nuɛte ngɛ ni ngmae.,Baa kɛ ngɛ ni kanee nɛ nu e ti ngɛ ní ngmaii.,0.7778,0.1875
+639,O suɔ joma aloo otimi.,O suɔ joma aloo o ti mi.”,0.6,0.0
+640,Moo tsɔɔ munyungu ehe peemi blɔ nya tomi ɔ nya.,Mɔɔ tsɔɔ munyu ngɔ e he peemi blɔ nya tomi ɔ nya.,0.5,0.0811
+641,Mo yɔse munyungu ehe peemi blɔ nya tomi etɛ ngɛ Dangme mi.,Muyose munyu ngɔ e he peemi blɔ nya tomi etɛ ngɛ da ngmɛ mi.,0.5833,0.087
+642,Sɛsɛ munyungu ehe peemi blɔ nya tomi etɛ ngɛ Dangme mi ɔ he.,"Sese munyu ngɔ e he peemi blɔ nya tomi, etɛ ngɛ da ngmɛ mi ɔ he.",0.5385,0.0851
+643,Sɛsɛ se nami etɛ nɛ ngɛ munyungu ehe peemi blɔ nɔ tomi ɔ he ngɛ Dangme mi.,Sese se na mi etɛ nɛ ngɛ munyu ngɔ e he peemi blɔ nɔ tomi ɔ he ngɛ da nguɛ mi.,0.5294,0.0877
+644,Yɔse munyungu ehe peemi blɔ nɔ tomi nɔhyɛ ni ngɛ demiyo nɛ nyɛɛ se ɔ mi.,Yo se munyu ngɔ e he peemi blɔ nɔ tomi nɔ hyɛ ní ngɛ demi yo nɛ nyɛɛ se ɔ mi.,0.6875,0.0536
+645,"Mwɔnɛmwɔnɛ ɔ, juɛmi klami he hia wawɛɛ ngɛ wa sukuu tsɔsemi mi.","Mɔ nɛ mwɔnɛ ɔ, juɛmi klami he hia wawɛɛ ngɛ wa sukuu.",0.4167,0.2
+653,Munyukpɔfa ji munyungu aloo munyunguhi nɛ a tsuɔ ni pɔtɛɛ ngɛ gbi ko mi.,"Munyu kpɔfa ji munyu ngu, aloo munyu nguhi nɛ a tsuo ní pɔtɛɛ ngɛ gbi ko mi?",0.5714,0.0345
+656,Munyukpɔ ji munyunguhi nɛ a bla mɛ kɛ pee munyuza.,Munyu kpo ji munyu nguhi nɛ a bla mɛ kɛ pee munyu za.,0.6,0.025
+657,E hɛɛ peelɔ kɛ peemi.,E hɛɛ pee lɔ kɛ pee mi.,0.8,0.0
+658,"Ngɛ ni ngmami mi ɔ, a tsuɔ okadihi a he ni konɛ sisi numi nɛ je kpo.","Ngɛ ní nguami mi ɔ, a tsuo okadihi a he ní, konɛ sisi numi nɛ je kpo.",0.2353,0.08
+666,E sa nɛ munyukpɔfa a nɛ hɛɛ munyukpɔfa yi.,"E sane munyu kpɔfa a, nɛ hɛɛ munyu kpɔfa yi.",0.5556,0.0303
+675,Enɛ ɔ ji munyukpɔfa nɛ biɛ aloo biɛnanemidalɔ peeɔ munyukpɔfa a yi.,"Enɛ ɔ ji munyu kpɔfa nɛ biɛ, aloo biɛ nane mi daloo peeɔ munyu kpɔfa a yi.",0.6667,0.0364
+682,Heninegbɔlɔ piɛɛ we munyukpɔfa a he.,He nine gbolɔ piɛ we munyu kpɔfa a he.,1.0,0.0667
+683,Wa ma nyɛ na munyungu pe kake ngɛ biɛ munyukpɔfa mi.,Wa ma nyɛ na munyu ngɔ pe kake ngɛ biɛ munyu kpɔ fa mi.,0.4545,0.0244
+685,Nɔhyɛ ni komɛ ngɛ daka nɛ nyɛɛ se ɔ mi.,Nɔ hyɛ ni komɛ ngɛ daka a nɛ nyɛɛ si ɔ mi.,0.4,0.069
+690,Kaleli nɛ ɔmɛ ji munyunguhi aloo munukpɔfahi nɛ tuɔ biɛ yi ɔ he munyu.,"Kaleli nɛ ɔmɛ ji munyu nguhi, aloo munu kpɔfahi nɛ tuɔ biɛ yeɔ he munyu.",0.4286,0.0179
+697,"Ngɛ kekle nɔhyɛ nɔ ɔ mi ɔ, se heninegbɔlɔ kalelɔ ɔ ji jamɛ a.","Ngɛ kɛklɛ nɔ hyɛ nɔ ɔ mi ɔ, se hɛ nine gbolo kalelɔ ɔ ji jamɛ a.",0.4286,0.1087
+710,Biɛ yi ma nyɛ hɛɛ hɛ kpɛ heninegbɔlɔ kalelɔ kɛ se heninegbɔlɔ kaleli.,biɛ yi manyɛ hɛɛ he kpe he nine gbulo kalelo kɛ se he nine gbulo kaleli.,0.8462,0.125
+717,"Ngɛ nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma biɛ munyukpɔfa etɛɛtɛ.","Ngɛ nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma biɛ munyu kpɔfa etɛete.",0.25,0.0465
+720,Peemimunyu munyukpɔfa ji munyukpɔfa nɛ dɛhe peemimunyu ɔ ji munyukpɔfa a yi.,"Pɛmi munyu munyu kɔfa ji munyu kɔfa a, nɛ dɛɛ pɛmi munyu ɔ ji munyu kɔfa a yi.",1.0,0.1562
+735,"Ngɛ nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma peemimunyu munyukpɔfa etɛɛtɛ.","Ngɛ nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma pe mimi munyu munyu kpɔfa etɛ.",0.5,0.1
+738,E ji munyukpɔfa nɛ hɛɛ miblɛkelɔ kaa munyukpɔfa a yi.,E ji munyu kpɔfa nɛ hɛɛɛ mi blɛ kɛlɔ kaa munyu kpɔfa a yi.,0.8,0.0465
+748,E ji munyukpɔ nɛ hɛɛ kalelɔ kaa munyukpɔfa a yi.,E ji munyu kpo nɛ hɛɛ Kalelo kaa munyu kpo faa yi.,0.6,0.0789
+754,Enɛ ɔ ji munyukpɔfa nɛ ngwɔhe biɛ peeɔ munyukpɔfa a yi.,Enɛ ɔ ji munyu kpɔfa nɛ ngɔ he biɛ peeɔ munyu kpɔfa a yi.,0.5455,0.0227
+761,Munyukpɔfa yi ɔ ji munyungu oti ngɛ munyukpɔfa a mi.,Munyu kpɔfa yeɔ ji munyungu ɔ ti ngɛ munyu kpɔfa a mi.,0.7,0.0476
+764,A blaa munyukpɔfa slɔɔtohi kɛ peeɔ munyuza mi.,"Ablaa a, munyu kpo fa slɔɔtohi kɛ peeɔ munyu zami.",0.75,0.0526
+765,"Ngɛ nɔhyɛ nɔ nɛ ɔ mi ɔ, biɛ munyukpɔfa a ji nɔ nɛ a diki mi ɔ nɛ.","Ngɛ nɔ hyɛ nɔ nɛ ɔ mi ɔ, biɛ munyu kpɔfa a ji nɔ nɛ a diki mi ɔ nɛ.",0.2222,0.0
+767,Peemimunyu munyukpɔfa yi ɔ ji ho.,Piemi munyu munyu kpɔfaii ɔ ji hɔ.,0.8333,0.1111
+771,A kɛ jeɔ juɛmi kpo.,A kɛ jeɔ juɛmi kpo.,0.0,0.0
+772,A yeɔ kɛ buaa munyu tumi kɛ e ngmami.,A yeɔ kɛ buaa munyu tumi kɛ e ngmami.,0.0,0.0
+773,A kɛ jeɔ demihi nɛ sisi numi ngɛ a he ɔ kpo se sisi numi ɔ nya pi si.,"A kɛ jeɔ dɛ mi hi nɛ sisi numi ngɛ a he ɔ kpo, se sisi numi ɔ nya pi si.",0.1579,0.02
+774,A haa nɛ munyuza kpa ko mi tsɔɔ.,A haa nɛ munyu za kpa ko mi tsɔii.,0.375,0.0833
+778,Nyɛɛ po munyukpɔfa yihi nɛ nyɛ yɔse ɔmɛ a sisi.,Nyɛɛ po munyu kpɔfa yihi nɛ nyɛ yo si ɔmɛ a sisi.,0.4,0.0541
+785,Wo kɔɔhiɔ nɛ ngɛ fiae blɛuu ɔ wo blɔ hiami ɔ mi buajɔ.,Wɔ koo hiɔ nɛ ngɛ fiae blɛɔ ɔ wo blɔ hiami ɔ mi bua jo.,0.4615,0.1463
+793,Agbaikle wayoo ɔmɛ nɛ ngɛ tɛ ɔmɛ fiae blɛuu ɔ je gbeye ngɛ wa mi.,Agbaekle wayo ɔmɛ nɛ ngɛ ti ɔmɛ fiae blɛɔ ɔ ji gbeyi ngɛ wami.,0.5333,0.14
+801,Nyɛ de nyɛ heto ɔ ngɔ ha nyɛ tsu mi bi ɔmɛ.,Nyɛ de nyɛ he to ɔ ngɔ ha nyɛ tsumi bi ɔmɛ.,0.3333,0.0
+807,Nyɛ de nyɛ heto ɔmɛ kɛ ha nyɛ tsu mi bi ɔmɛ.,Nyɛ de nyɛ heto ɔmɛ kɛ ha nyɛ tsumi bi ɔmɛ.,0.1667,0.0
+808,E hɛɛ peelɔ kɛ peemimunyu.,E hɛɛ pii lo kɛ pi mimi munyu.,1.0,0.2857
+809,"Be komɛ ɔ, e hɛɛɔ peemi.","Be komɛ ɔ, e heɔ pɛmi.",0.3333,0.2353
+810,Munyukpɔ he blɔ nɔ tomi ji kaa e hi animosa glɛ nɔ.,Munyu kpo he blɔ nɔ tomi ji kaa e hi animosa gle nɔ.,0.25,0.0513
+812,Daale tsi kokote ku loko e je kɛ ho sukuu ya.,Daa lɛ tsi kɔkɔte kuu loko e je kɛ ho su kuu ya.,0.5455,0.1176
+813,Kɔɔyo ho jua mi ya.,Koo yo ho juami ya.,0.8,0.1429
+815,Munyukpɔ slɔɔto enyɔ nɛ ngɛ.,Munyu kpo slɔɔto enyɔ nɛ ngɛ.,0.4,0.0435
+816,Mɛ ji dɛhe munyukpɔ kɛ akplahe munyukpɔ.,Mɛ ji de he munyu kpo kɛ a kpla he munyu kpo.,1.2857,0.0909
+819,Tɛɛ ma nyɛ yɛ nyu ɔ daa ligbi lo?,Te manye ye nyu ɔ daa ligbi lo?,0.4444,0.1667
+821,Munyuza amɛ daa si ngɛ a dɛhe nɛ a je sisi numi nɛ nya ma si kpo.,Munyu za amɛ daa si ngɛ a de hee nɛ a je sisi numi nɛ nya ma si kpɔ.,0.2941,0.0625
+825,Nyɛɛ ya itanɛti aloo kpa a nɔ nɛ nyɛ ya hla dɛhe munyukpɔ mi gbami eywiɛ ɔmɛ.,"Nyɛɛ ya i tanɛ ti, aloo kpa a nɔ nɛ nyɛ ya hla de he munyu kpomi gbami i yi ɔmɛ.",0.5294,0.0833
+827,Dɛhe munyukpɔ mi gbami eywiɛ nɛ ngɛ.,de he munyu kpomi gbami eywiɛe nɛ ngɛ.,0.7143,0.1034
+828,"Mɛ ji demi, fami, bimi kɛ ngmlaa.","Mɛ ji dɛ mi fami, bi mi kɛ ngmlaaa!”",0.7143,0.0833
+831,E ye ni hiɛ gbɔkuɛ.,E ye nɛ hyɛ gbokue.,0.6,0.2857
+835,O ma nyɛ ha nɔhyɛ nɔ ngɛ bimi munyukpɔ nɔ lo?,O wo ma nyɛ ha nɔ hyɛ nɔ ngɛ bi mi munyu kponɔ lo?,0.6364,0.0882
+837,Mɛnɔ sika ji nɛ ɔ?,Mɛnɔ sika ji nɛ ɔ?,0.0,0.0
+842,Akplahe munyukpɔ woɔ tsali konɛ a kɛ tsa dɛhe munyukpɔ ɔ.,"A kpla he munyu kpo wo ɔ tsali, konɛ a kɛ tsa de he munyu kpo ɔ.”",1.0,0.0652
+845,"Benɛ Kofi su lejɛ ɔ, a ho ngmɔ ɔ mi ya momo.","Benɛ kɔfi su lejɛ ɔ, a ho ngɔ ɔ mi ya momo.",0.1667,0.0645
+849,Wa ngɛ akplahe munyukpɔ slɔɔtohi etɛ.,Wa ngɛ a kpla he munyu kpo slɔɔtohi etɛ.,0.8333,0.0323
+857,Biɛ akplahe munyukpɔ nɔhyɛ ni nɛ nyɛɛ se ɔ nɛ.,biɛ a kpla he munyu kpo nɔ hyɛ ni nɛ nyɛɛ se ɔ.,0.8,0.0833
+858,Jokuɛ ɔ nɛ ye ngwɔ ngɛ ka a mi ɔ na yi jemi womi.,Jokuɛ ɔ nɛ ye nguɔ ngɛ kã a mi ɔ nɛ a yi jemi womi.,0.2857,0.0857
+859,Wa na tokota wayoo nɛ laa a.,Wa na tukuta wayoo nɛ laa a.,0.1429,0.0952
+864,E tsuɔ ni kaa kalelɔ.,E tsuo ní kaa kale lo.,0.8,0.1875
+868,Yɔse kaa munyungu ɔmɛ nɛ a po a sisi ɔ ji kalelɔ akplahe munyukpɔ ɔ nɛ.,Yo se kaa munyu ɔmɛ nɛ a po a sisi ɔ ji kalelo a kpla a he munyu kpo ɔ nɛ.,0.625,0.1273
+872,Munyukpɔhi nɛ a po a sisi ɔmɛ tsuo peeɔ miblɛkelɔ akplahe munyukpɔhi.,Munyu kpohi nɛ a pɔ a sisi ɔmɛ tsuo peeɔmi blɛ kɛlɔ ɔ a kpla he munyu kpohi.,1.0,0.0877
+902,A kɛ gbeɔ munyuza nya kɛ tsɔɔ kaa munyuza a ba nyagbe.,A kɛ gbeɔ munyu zanya kɛ tsɔɔ kaa munyu zaa ba nyagbe.,0.3333,0.0
+904,A kɛ gbaa munyuzahi a mi ngɛ demiyo aloo saneyo ko mi.,"A kɛ gbaa munyu zahi a mi ngɛ dɛmi yo, aloo sane yo ko mi.",0.5,0.0238
+909,A ma ha tsɔɔli ɔmɛ hulɔ.,A ma ha tsɔɔli ɔmɛ hulɔ.,0.0,0.0
+910,Sukuu nɔ hyɛlɔ ɔ hu ma na eko.,Suku nɔ hyɛlɔ ɔ hu ma na eko.,0.125,0.0455
+912,A kɛ gbeɔ ayaade adeta munyuhi a nya.,A kɛ gbo ɔ a ya de adeta munyuhi a nya.,0.625,0.069
+916,A ngɔɔ akɔnya kɛ gbaa nihi nɛ a to a nya ngɛ munyuza mi ɔmɛ a mi.,A ngɔɔ akonya kɛ gbaa nihi nɛ a tó a nya ngɛ munyu zami ɔmɛ a mi.,0.2353,0.0417
+919,"A ke wɔ womihi, sɛhi, okplɔɔhi, ningmatsohi kɛ tsopahi.","A kɛ wo wo mi mi sehi, okplɔɔhi, nɔngma tsohi kɛ tsopahi.",0.8889,0.1163
+920,"Ni yemi, mahɛ hwɔmi kɛ nɔ he munyu tumi pɛ a le.",Ni yemi ma hɛ hwomi kɛ nɔ he munyu tumi pe a lɛ.,0.4167,0.0857
+921,"Ke nyɛ sume ɔ, wa maa kpale kɛ ho.","Ke nyɛ su ngɔ ɔ, wa maa kpale kɛ ho.",0.2222,0.125
+922,A kɛ gbaa adlɛɛsi mi.,A kɛ gbaa a dle si mi.,0.6,0.125
+924,A tsuɔ kaa he ni ke a yaa to nihi a nya kɛ tsɔɔ nɔ ko nɛ a de kɛ sɛ hlami.,A tsuo kaa he ni ke a yaa to nihi a nya kɛ tsɔɔ nɔ ko nɛ a de kɛ se hlami.,0.0909,0.0385
+929,A kɛ blaa dɛhe munyukpɔ nɛ hɛɛ juɛmi kake.,A kɛ blaa de he munyu kpɔ nɛ hɛɛ juɛmi kake.,0.4444,0.0303
+930,Ni komɛ tɛni ni; ni komɛ hu ngma ni.,"Ni komɛ tɛ nini, ni komɛ hu nguani.",0.4444,0.0385
+931,I ya Ablotsi; Kɔɔtemɛ ya Naijilia; Amatemɛ ya Akplabanya.,"E ya ablɔ tsi koo tɛmɛ ya na Egilia, amatɛmɛ ya akplaba nya.",1.1111,0.1739

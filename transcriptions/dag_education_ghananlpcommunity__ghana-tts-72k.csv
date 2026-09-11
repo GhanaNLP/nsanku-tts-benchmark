@@ -1,0 +1,201 @@
+sample_id,reference,hypothesis,wer,cer
+2,"Yaɣili ŋɔ piini wuhiri bachjilli, bachijilli biɛhigu ni yee baŋsim.","N yaa bi lee ŋɔ n ni bɔri baka jimli, baka chi jimli piɛɣigu ni, ye bansim!",1.5,0.3929
+7,A ni mali baŋsim zaŋ jɛndi yee zaŋ nam Dagbani bachi pala.,Bɛ ni mali bansim zaŋ jɛndi yee zaŋ nam Dagba ni bachi pa la.,0.5,0.0652
+10,Bachijilli nyɛla bachi yaɣili di ni ni tooi boli shɛli.,Bachijɛli nyɛla bachiyɛli dini ni tooi boli shɛli.,0.5,0.1111
+11,Bachijilli konsɔnanti nyɛla konsɔnanti shɛli din nahiŋgban ŋmani bachijilli.,Bachijili konsonanti nyɛla konsonanti shɛli din naai gbani ŋmani bachijili.,0.6667,0.1045
+12,Yee nyɛla kukoli taɣiri shɛli din ni tooi tahi bachi gbunni taɣibu na.,Di yi nyɛla kukoli taari’ shɛli din ni tooi tahi bachi gbunni taabu na.”,0.3077,0.1404
+14,Di ni tooi lahi nyɛ yaɣ’ shɛli ti vuhim ni lura bachi bolibu.,di ni tooi lahi nya yaa shɛli ti vuhim ni luri abachi bolibu.,0.3077,0.0638
+16,"Dinzuɣu, duni malila bachijila ayi.",Woo! Du ni malilila bachijila ayi!,0.8,0.3103
+20,Dimbɔŋɔ tooi niŋdimi di yi niŋ ka vaawuli bi doli konsɔnantinima maa.,Dimbɔŋɔ ti o niŋdi mi di yi niŋ ka a vaawuli bidoli kun sonantinima maa.,0.6667,0.0877
+23,Ŋa shɛhira shɛŋa n-do gbunni ŋɔ.,Nashɛhira shɛŋa n-du gbunni ŋɔ.,0.5,0.08
+29,Di lahi sɔŋdi ban bɔhindi ka bɛ baŋdi yɛltɔɣa bachinima gbunni.,"Di lahi sɔŋdi bambɔhindi, ka be bandi yɛltɔɣa bachinima gbunni.",0.3636,0.0577
+35,Bachi yini kam pirimi n-doli ŋa bachijil’ shɛŋa ŋa ni mali.,Baachi yi ni kam pirimi n-do li ŋa baachi jiri shɛŋa ŋa ni mali.,0.6364,0.087
+36,Gahana zuliyanima bachijila balibu waliya.,"Gaahana, suliya nima bachijila balibu waliya",0.6,0.0541
+40,Bachijil’ shɛli din ka nyaaŋa nyɛla bachijil’ shɛli din naai ni vaawuli.,Bachigir’ shɛli din ka nyaaŋa nyɛla bachigir’ shɛli din naai ni vaawuli.,0.1667,0.069
+44,Bachijil’ shɛli din mali nyaaŋa nyɛla bachi shɛli din naari ni konsɔnanti.,Bachi yiri shɛli din mali nyaaŋa nyɛla bachi shɛli din naari ni konsonanti.,0.25,0.0656
+47,"Guruni, Kpunkpaansili, Dagaari, ni ŋan pahi.","Guruuni, biŋkpansili, dagari ni ŋampahi.",0.8333,0.2286
+48,Shɛhira shɛŋa n-do gbunni ŋɔ.,Sihira shɛŋa n-do gbinni ŋɔ.,0.4,0.1304
+49,Zaŋmi a maŋmaŋa bachinima m-buɣisi binshɛli din nyɛ bachijilli.,Zaŋmi amaŋmaŋa bachinima m-bukisi binshɛli din nyɛ bachijilli.,0.3333,0.0189
+51,Wuhimi bachijila bal’ shɛŋa ŋan be Dagbani ni.,Wuhimi bachijila baari shɛŋa ŋan be daagbani ni.,0.25,0.1081
+72,A mini a kpee kahigimi bachijila biɛhigu ŋan bachi’ shɛŋa di ni nam maa.,A kpee ka higi mini bachechi la biɛhigu ŋani bachi shɛŋa di ni nam maa.,0.5,0.193
+74,Sakanooŋa mini salinsaa n-da nyɛ zonima viɛnyɛliŋga.,Saka ni o ŋa mi ni salinsa n-daa nyɛ zɔniima viɛnyɛliŋga.,1.2857,0.1136
+93,Yee taɣirimi yɛltɔɣili zaa puuni.,Yi taɣirimi yɛlitaɣili zaa puuni.,0.4,0.1429
+94,Zuliya balbu mali yee bal’ kɔŋkɔba.,"Duliya balibu, mali yee baal' kɔŋkoba.",0.6667,0.1429
+101,"Zimbasili, Aŋkarinsili, Kasina, Dagbani, Ayigbesili, ŋan pahi.","Zimba sɛlee Ankari sɛlee, kasiina, dagbani, ayibu sɛli, nyam paya.",1.2857,0.34
+112,Yee ka di mali waligiri bachi shɛŋa ŋan ŋmɛbu ni gbunninyɛ yim zuliya yɛltɔɣa.,Yi ka di mali waligiri bachee shɛŋa ŋan ŋmɛbu ni gbuni n-nyɛ yim zuliya yɛlitɔɣa.,0.3571,0.1094
+126,"Bɔŋbɔŋ puuni, kahigimiya yee tuma.","Bɔmbɔŋ puuni, kaigimiya yee tuma.",0.4,0.0714
+130,Baŋmi yee bal’ shɛŋa ŋan be bachi shɛŋa di ni ti ŋɔ.,Bani ŋun yi bal' shɛŋa ŋan be baachi shɛŋa di ni ti ŋɔ.,0.3333,0.1795
+132,Baŋmi bachijil’ shɛŋa ŋan ʒiri yee bachi shɛŋa di ni ti maa puuni.,Ban gbi bachijiri shɛŋa ŋan ʒiri yee bachishɛŋa dii ni tia maa puuni.,0.5385,0.1346
+133,Zaŋmi a labisibu n-wuhi karindu maa zaa.,Zaŋmi alabisibu n-wuhi karindu maa zaa.,0.2857,0.0
+139,Zaŋmi shɛhira dibaata n-kahigi yee tuma Dagbani.,"Zaŋmi shɛhira di ba ata n-ka Higi, Yee Duma Dagbaani.",1.0,0.05
+142,"Yaɣili ŋɔ kahigirila yɛltɔɣikpana baŋbu lahabali, bee lahabali puuni.",Yɛlili ŋɔ ka yi giri la yɛltɔɣa yi kpana bambu lahabali bee lahabali puuni.,1.0,0.1017
+149,Yɛlkpan’ shɛli din be lahabali puuni n-nyɛ di ni ʒiri yɛltɔɣikpan’ shɛli lahabali ni ʒira.,Yɛlikpan’ shɛli din be lahabali puuni n-nyɛ din ni ʒiri yɛlitɔi kpan’ shɛli lahabali ni ʒira.,0.2667,0.0556
+150,Dimbɔŋɔ ni tooi be yɛltɔɣ’ shɛli din ʒiri yɛltɔɣikpani ka mali yɛltɔɣ’ shɛŋa ŋan kahigira.,"Dimbɔŋɔ ni tooi be yɛritɔɣ’ shɛli din ʒiri yɛritɔɣ’ kpa ni, ka mali yɛritɔɣ’ shɛŋa ŋan kahigira.",0.3333,0.0959
+151,Karimbu ni tooi nyɛ din ziligi bee din yɛligi.,Kaliŋ' puuni ni tooi nya din ziligi bee din yɛligi.,0.3333,0.1892
+159,"Dimbɔŋɔ yɛrila baŋsim yaɣili, lahabali bee alizama maa daliri.","Dimbɔŋɔ yɛrila baŋsim yaɣili, lahabali bee alizama maa daliri.",0.0,0.0
+184,Zaŋmi a tɛha m-maɣisi ŋan sabi do gbunni ŋɔ.,Zaŋmi a tɛha m-marisi nansabi dɔbu ni ŋɔ.,0.5556,0.1471
+187,Dimbɔŋɔ nyɛla n-vihi bo yɛltɔɣikpan’ shɛli din be lahabali maa puuni.,Dimbɔŋɔ nyɛla n vihibu yɛltɔɣikpan’ shɛli din be lahabali maa puuni.,0.1818,0.0179
+190,Dimbɔŋɔ m-mali a nina yuuni yomyom m-bɔri bachi shɛŋa shee lahabali ni.,Dimbɔŋɔ m-maliya nina yuuni yomyom m-bɔri bachi shɛŋa shee lahabali ni.,0.1667,0.0175
+192,Karimmi lahabali din do gbunni ŋɔ.,Ka di yi mi lahabali dindogbu nini ŋɔ.,1.1667,0.1429
+193,Baŋmi yɛltɔɣikpani lahabal’ shɛli di ni ti gbunni ŋɔ.,Bɛ ŋmi yɛl’ tɔri kpa ni lahabali shɛli di ni ti gbunni ŋɔ.,0.7778,0.0698
+194,Zaŋmi di ni baŋ yɛltɔɣikpan’ shɛli maa n-wuhi ka maɣisi a karimbi’ taba.,Zalimmi dii ni baŋ yɛl' tɔgban' shɛli maa n-wuhi ka maasi a karimbitaba.,0.5385,0.1786
+215,N daa naaya ni shɛhira gbaŋ shɛli din daa viɛli pam.,Bɛn daa naa nya ni shɛhira gbaŋ’ shɛli din daa viɛli pam.,0.2727,0.0732
+218,Zaŋmi yɛltɔɣikpana maa n-wuhi karimduu maa zaa.,Zaŋmi yɛl’ tɔɣ’ kpana maa n-wuhi karim duu maa zaa.,0.7143,0.0256
+226,Amaa ka di yi niŋ ka fukumsinima ka yɛlmaŋli?,"Ka a di yi niŋ ka fukumsi nima, ka a yɛlimaŋli.",0.6667,0.1667
+227,N kuli tiri jilin’ shɛli a ni mi bi viɛla.,kuli tiri jilin’ shɛli a ni mi bia viya la.,0.4,0.129
+242,Karimmi lahabal’ shɛli din do gbunni maa ka labisi bɔhisi ŋan doli li na.,Ka di mi lahabali shɛli din do gbunni maa ka labisi bɔhisi ŋan dolili na.,0.4286,0.0517
+247,Karimbakpema maa n-nyɛ ŋun mali shikuru maa fukumsi.,Karimbaakuma maa n-nyɛ ŋun mali shikuru maa fukumsi.,0.125,0.0698
+260,Ka naan yi zaŋ li maɣisi di ni nyɛ shɛli gbunni ŋɔ.,ka n naanyi zaŋ li Maasi di ni nyɛ shɛli yi gbunni ŋɔ.,0.3333,0.1282
+272,So’ shɛŋa di ni doli n- a maŋmaŋa karimbu soli n-karimgbaai.,So Isha ŋa di ni doli ni a maŋmaŋa karimbu soli n-karimbaai.,0.3636,0.087
+283,Sabita nyɛla daadam daalafee mini jilima nyɛbili.,Sabilita nyɛla daalafee mini jilima nyɛbili.,0.2857,0.1905
+296,"Ka naan yi, zaŋ a ni tɛhi ni lahabali ŋɔ ni tooi yɛligi.",ka naanyi zaŋa ni tɛhi ni lahabali ŋɔ ni tooi yɛligi.,0.3077,0.0
+305,Zaŋmi a maŋmaŋa bachinima n-wuhi binshɛli din nyɛ ‘yɛltɔɣikpani’.,"Daaŋnima, a niŋ maa ŋa bachinima n-wuhi binshɛli din nyɛ yɛlitɔri kpa ni.",0.7778,0.1887
+307,Jilima pa la binshɛli di ni ni tooi deei amaa di nyɛla binshɛli di ni bɔra.,"Jilima pala binshɛli di ni ni tooi deei, amaa di nyɛla binshɛli di ni bɔra.",0.125,0.0
+314,Dimbɔŋɔ n-nyɛ jilima ni ŋmani shɛli.,Dimbɔŋɔ n-nyɛ jilima ni ŋmani shɛli.,0.0,0.0
+318,"A yi kpɛri ka yiri haai shikuru, teemi ni jilima nyɛla yaɣa-yi soli.",Ka yi kpɛri ka yi liha ayi shikuru n-deemi ni jiɛma nyɛla yaa yi soli.,0.6154,0.1509
+321,Bɔ ka lahabali maa yuli yɛli zaŋ kpa lahabali maa yɛltɔɣikpani?,Ka lahabali maa yuli yɛli zaŋ kpa lahabali maa yɛlitɔri pa ni,0.3636,0.0962
+323,Zaŋmi yɛltɔɣa anahi n-kolivaai lahabal’ shɛli din do zuɣusaa ŋɔ.,Zaŋmi yɛtɔɣa anahi n-kuli vaai lahabali shɛli din do zoosaa ŋɔ!”,0.5,0.1154
+324,Baŋmi karimbu din ziligi nahiŋgbana ayi shɛŋa a ni bɔhim yaɣili ŋɔ ni.,Bɛ mi karimbu din ziligi nayingbana a yi shɛŋa a ni bɔhim yaɣili ŋɔ ni.,0.3846,0.0702
+327,Kahigimi karimbu din yɛligi nahiŋgbana ata?,ka Higi mi karimbu din yɛligi nahingbana ata.,0.6667,0.027
+329,Kahigimi ni a maŋmaŋa bachinima.,ka yi yɛlimi ni a ma maŋmaŋa bachinima,0.8,0.2222
+346,Biɛlimpahira tuma zuliya ni nyɛla di sɔŋ n-nam bachipala.,Biɛlimpahira tuma zuliya ni nyɛla di sɔŋ n-nam bachipala.,0.0,0.0
+357,Biɛlimpahirili nyɛla tooni biɛlimpahirili di yi do nyaɣili maa tooni.,Biɛlimpahirili nyɛla tooni biɛlimpahirili di yi do nyaayili maa tooni.,0.1,0.0339
+358,Biɛlimpahirili nyɛla sunsuuni biɛlimpahirili di yi be nyaɣili maa sunsuuni.,Biɛlimpahirili nyɛla sunsuuni biɛlimpahirili di yi be nyaɣilima maa sunsuuni.,0.1,0.0308
+359,Biɛlimpahirili nyɛla nyaaŋa biɛlimpahirili di yi ti kana bachi nyaaŋa.,Biɛlimpahirili nyɛla nyaaŋa biɛlimpahirili di yi ti ka na bachi nyaaŋa.,0.2,0.0
+367,Ŋmaligi n-kpa a kpee n-kahigi biɛlimpahira ni nyɛ shɛli.,Maligi n-kpaai akpe n-kahigi biɛlim pahira ni nyɛ shɛli.,0.6667,0.0889
+382,Nyaya ka bachi maa nyabili din nyɛ bachiniŋdili ŋɔ pubu taɣi n-lɛbi bachinamdili.,N-aya ka bachi maa nyabili din nyɛ bachinim’ di li ŋɔ pibbu taai n-lɛbi bachinim’ di li.,0.6923,0.0896
+389,"Shɛhira, n-zaŋ biɛlmpahirili -si m-pahi nooŋ-a zuɣu di ni titi noon-si.","Shɛhira, n-zaŋ biɛla pahiri li si m-pahi nooŋa zooi di ni ti ti noonsi.",0.5455,0.0741
+392,"Bɔŋbɔŋ ni, zammiya ka kahigi biɛlimpahira balibu yi yaa tariga Dagbani ni.","Kpɛmaŋɔ ŋɔ bɔŋmi, “Zamiya ka kahigi, biɛlimpahira balibu yi, yaa tariga, daa gba ni ni.”",0.5833,0.1639
+393,Wula ka di lee taɣiri bachi nyaɣa maa gbunni?,Wula ka di lee taɣiri bachi nyaaŋa maa gbinni?,0.2222,0.0833
+398,Biɛlimpahira tuma waliya zuliya kɔŋkɔba puuni.,O tɔŋga a naangbinliya yahim kɔŋ ni.,1.1667,0.7
+400,Ŋa sɔŋdi bachi pala nambu ni.,"Ŋa sɔmdi, bachi pala nambuni!",0.5,0.0435
+401,Ŋa sɔŋdi taɣiri bachinima pubu.,Ŋa sɔŋ dii taari bachinima pubu.,0.6,0.1154
+402,Biɛlimpahira sɔŋdi namdi bachiniŋda niŋsim saha.,Bɛ yɛrili m-paɣira ka nan’ saamɔti ni yi nam deei bɛ yɛnana 99 tim saha.,2.3333,0.7381
+404,Biɛlimpahira taɣiri bachinima zaɣ’ gansi n-lɛbiri zaɣ’ bɔbigu.,Biɛlimpahira taari bachinima zaɣ’ gaansi n-libiri zaɣ’ bɔbigu.,0.375,0.0784
+405,Biɛlimpahira baŋsim sɔŋdi bachinima yiɣisibu viɛnyɛla mini balli bɔhimbu.,Bɛrimpahira baŋsim sɔŋdi bachinima yiɣisibu viɛnyɛla mini balibɔhimbu,0.3333,0.0469
+409,Baŋmi biɛlimpahira ŋan be bachinima ŋɔ ni ka wuhi ŋa balibu ni nyɛ shɛŋa.,Bɛ mi biɛlimpahira ŋan be bachinima ŋɔ ni ka wuhi ŋa balibu ni nyɛ shɛŋa.,0.1429,0.0339
+412,Niŋmi shili ni a ni zaŋ li n-wuhi a karimbitaba ka kahigi li.,Neemi shili ni a ni zani li n-wuhi a karimba taba ka kahigi li.,0.3077,0.1064
+417,Di tuuli tuma kuli nyɛla di zaŋdila yɛltɔɣa yaɣa tuɣiri taba.,Di tuuli tuma kuli nyɛla di zaŋdila yɛltɔɣa yaɣi toori taba.,0.1818,0.08
+421,O karinda dinzuɣu o mali baŋsim.,O karinda din zooi o mali baŋsim.,0.3333,0.1154
+422,N ni chaŋ amaa n ni labina.,"n ni chaŋ, amaa n ni labina.",0.0,0.0
+425,Bachituɣira balibuBachituɣira balibu pam m-beni.,"Di tuɣiriya, paɣidɔbo acha, paɣidɔbo pam m-beni.",1.0,0.5
+438,Naawuni so n ni ti yɛda.,Naawuni so ni yi ti yɛda.,0.3333,0.1111
+445,"Pɔi ka ka kpukpalivari pɔri, di dolila dunia tiŋgbani ni yɛli li shɛli.",Ka ka kpikpali veeri pɔri di dolila dunia tiŋ’ gba ni ni yɛli li shɛli.,0.4615,0.1053
+447,"Saa yi mi, nyin toomi kom.","Saa yi mi, nyin' tooi mi kom",0.3333,0.0526
+448,"Naa maa ni daa labi o yaannima sanmi, n daa nyala suhudoo.",dama n ni daa labi o yaannima sani. N daa nyɛla suhudoo.,0.3333,0.1111
+450,Amii o bela yiŋa bee yɔɣu.,Amii! O bila yiŋa bee yɔɣu.,0.1667,0.05
+456,Biɛhigu to amaa ti ni kpaŋ ti maŋa pam.,Bihi o ni tooi amaa ti nii kpaŋ ti maŋa pam,0.5556,0.2333
+457,O yuuni bɔri o shee amaa o bi nya o.,For you ni bɔri o shihi amaa o binyɔf.,0.7,0.3077
+459,Sabimi bachituɣira balibu shɛhira diba ata ka zaŋ ŋa n-nam yɛltɔɣa.,"Sabimi bachituuda balibu shɛhira di ba ata, ka zaŋ ŋa n-nam yɛlitɔɣa.",0.3636,0.0727
+461,"Bachituɣira tuma balibu ni tooi wali bala ni, amaa di shɛŋa ni tooi nyɛ yim.","Mashee tubira tuma balibu ni tooi ya wali bala ni, amaa di shɛŋa ni tooi yɛn nya yim.",0.3333,0.1833
+464,Di sɔŋdi n-laɣindi yɛltɔɣiŋmahi bee yɛltɔɣiŋmasɔri mini ŋa taba.,Biɣ’ sɔndi n-laɣindi yɛl’ tɔŋmahi bee yɛl’ tɔŋma sɔri mini ŋa taba.,0.7778,0.1296
+465,Di sɔŋdi n-tahiri waliginsim na.,ka han’ shɛli n-yɛn tahi fali gazinsim na.,1.4,0.6154
+467,Bachituɣira mali zalisi biɛla zaŋ chaŋ ŋa zaŋ tum tuma polo.,Baituri daa mali zalisi biɛlas zaŋ chaŋ ŋaa zaŋ tum tuma polo.,0.3636,0.1429
+470,Bachituɣira kuli nyɛla ŋan gbundi tɛha ni niŋsim.,Machituli daa kuli nyɛla ŋan gbindi tɛha ni ninsim.,0.5,0.1463
+472,Bachituɣira mali sɔŋsim pam zaŋ chaŋ binyɛra kalibu.,Bashi tuhir’ a mali sɔŋsim pam zaŋ chaŋ binyɛra ka li bo.,0.75,0.0682
+473,"Di yi mali bachituɣira tumdi tuma, che ka a yɛltɔɣa yaɣa zaa saɣi doli taba.","Di yi mali bachitoora tumdi tuma, chɛ ka a yilitɔɣa yaɣa zaa saɣi doli taba.",0.2,0.1
+482,Ŋuni n-tiri lala binyɛra maa yuya?,Ŋuni n-tiri lala binyɛra maa yuya.,0.0,0.0
+501,Lala soli ŋɔ zaŋ nam bachi pala dii bi yoli Dagbani ni ni.,laɣila suhili ŋɔ zani nam bachiparila dii bɛ yoli Dagbani nini.,0.6154,0.2222
+505,Zuliyanima pam paŋ bachinima zuliya shɛŋa ni.,Jilija nima pampaŋ bachinima zuliya shɛŋa ni.,0.4286,0.0789
+510,Sabimi kamani bachi pia din nyɛ bachi paŋda Dagbani ni.,Kamani bachi pia din nyɛ bachi paŋda Dagbani ni.,0.1,0.1333
+512,Di sɔŋdi zoori zuliya yɛltɔɣa dama zuliya maa yɛltɔɣa bachinima ni yɛligi.,"Di yi sɔŋ di zoori zuliya yɛlitɔɣa, dama zuliya maa yɛlitɔɣa bachinima ni yɛligi.",0.4167,0.0645
+513,Di sɔŋdi che ka zuliya yɛltɔɣa wuligiri gindi dunia zaa.,"Ŋaa, bɛ paɣi kpalim o nukɔri niŋ bɛ yi daa yɛr’ tɔwuligiri gindi dunia zaa.",1.2,0.6304
+514,Di sɔŋdi namdi bachi pala m-mali booni bin’ pala.,Sondee nam deei Kpachee pala m-ma lee booni bin'pala.,0.8889,0.3684
+515,Di sɔŋdi zuliya yɛltɔɣa bɔhimbu ni.,Amaa!,1.0,0.931
+516,Di sɔŋdi ti ka ti tooi biɛhiri ti yuuni bachinima pilli ni.,"Di sɔndi, ti kaati tooi biɛhiri, ti yuuni bachinima pilli ni.",0.25,0.0426
+520,Wuhimi biɛlimpahira balibu din be Dagbani ni.,Wuhimi bia lim pahira balibu din be Dagbani ni.,0.4286,0.0263
+521,Yihimi biɛlimpahira diba Anahi Dagbani n-sɔŋ.,n yili mi biɛlim pahira di ba anahi dagba ni n-sɔŋ.,1.5,0.0526
+522,Wuhimi biɛlimpahira tuma diba anahi Dagbani ni.,Wulimi yi biɛlim’ pahira tuma di ba anahi Dagba nini.,1.1429,0.075
+523,Baŋmi biɛlimpahira ŋan be bachinima ŋɔ ni ka wuhi ŋa balibu ni nyɛ shɛli.,"Balim’ biɛlim pahiri la ŋan be bachinima ŋɔ ni, ka wuhi ŋa balibu ni nya shɛli.",0.3571,0.1017
+524,Kahigi n-wuhi bachituɣira ni nyɛ shɛli.,ka Higi n-wuhi bachituura ni nyɛ shɛli.,0.5,0.0625
+525,Baŋmi bachituɣira balibu ni nyɛ shɛli Dagbani ni.,Daŋmi bachituura balibu ni nyaa shɛli Dagbani ni.,0.375,0.122
+526,Wuhimi waliginsim shɛli din be bachituɣira bali shɛŋa a ni yihi maa ni.,Wuhimi yi wali jinsim shɛli din be bachitoora bali shɛŋa a ni yihi maa ni.,0.3077,0.1034
+528,Boomi bschituɣira gbunni yɛltɔɣa ŋan doli ŋɔ na ni.,boomi bɛ chituura gbinni yɛltɔɣa ŋan’ doli ŋɔ na ni.,0.3333,0.0952
+529,O diya amaa o bi tiɣi.,O di ya amaa o bi tigi.,0.5,0.0625
+530,N ni chaŋ amaa pa zuŋɔ.,"N ni chaŋ, amaa pa zuŋɔ.",0.0,0.0
+531,Kahigimi binshɛli din nyɛ bachi nambu soya.,Ka ayi yi mi bin' ʒɛli yi tu n-nyɛ ba Chi nambu siya.,1.7143,0.25
+532,Baŋmi bachi nambu soya dibaata shɛŋa a ni mi Dagbani ni.,Gbaŋ ni bachi nambu so ya di baata shɛŋa animi dagbani ni.,0.7273,0.0444
+533,Kahigimi Dagbani bachi nambu balibu dibaata.,Ka yi gimi Dagbani ba chɛ Nambu balibu dibata.,1.0,0.0789
+534,Kahigimi Dagbani bachi nambu daanfaani yini bee garibu.,Ka ayi mi Dagbani bachi nambu daanfaani yini bee garibu,0.375,0.0638
+536,"Zuŋɔ, tabibi baŋsim nyɛla din kpa talahi baŋsim bɔhimbu ni.","Zuŋɔ, sabiibi bansim nyɛla din kpa talahi bɔhimbu ni.",0.3,0.1875
+542,Ti ni zaŋ rɔbɔtinima n-zali karimbanima zaa ni?,ti ni zaŋ gɔbɔtinima n-sani zani ka di gbanima zaa ni.,0.75,0.2105
+558,Yɛltɔɣiŋmaa nyɛla bachinima din laɣim m-pe taba n-nam yɛltɔɣili.,Yɛltɔɣili maa nyɛla bachinima din laŋa m-pe taba n-nam yɛltɔɣili.,0.3333,0.0943
+565,Zaŋmi a ni bɔhim shɛli maa m-maɣisi a bɔŋ maa ni.,Zaŋmi a ni bɔhim shɛli maammaa chɛfeya bom’ maa ni.,0.3636,0.2432
+574,Yɔltɔɣiŋmasɔri shɛhira shɛŋa n-do gbunni ŋɔ.,yɔri tɔhi ma sɔri shɛhira shɛŋa n-du gu ni ŋɔ.,1.1667,0.1892
+585,Dimbɔŋɔ nyɛla yɛltɔɣiŋmasɔɣu din zuɣu nyɛ bachinamdili bee bachizaanili.,Din bɔŋɔ nyɛla yɛltɔɣiŋma so din zooi nyɛ bachinamdili bee bachizanili,0.6667,0.127
+588,Dimbɔŋɔ wuhirimi ni di nyɛla din nyɛ bachi yini kɔŋko.,Dimbɔŋɔ wuhirimi ni di nyɛla din nyɛ bachi yini kɔŋko.,0.0,0.0
+596,Bachinima din galisi nyɛla din ni tooi nyɛ bachinamdili yɛltɔɣiŋmasɔɣu.,Bahiyinima din galisi nyɛla din ni tooi nyɛ bachinandili yɛltɔɣa ŋma sɔɣu.,0.5,0.082
+622,Bachi zuɣu maa ni tooi lan ʒiri nyaaŋa bachikahigira mini tooni bachikahigira.,Machi zuu maa ni tooi lan ʒiri nyaaŋa bachikahigira mini tooni bachikahigira.,0.1667,0.0303
+626,"Bɔna puuni, nammiya bachinamdili yɛltɔɣiŋmasɔri diba atata.","Bɔŋda puuni, nam mi a bachinam di yi yɛli to yima sɔri dibaa ata ata.",2.0,0.1961
+649,"Bɔna puuni, nammiya bachiniŋdili yɛltɔɣiŋmasɔri.","Bɔŋɔ na puuni, nimiya bachi niŋdi li yɛl' tɔiyin ma sɔri.",2.0,0.1667
+665,Bachibuɣisirili ɛltɔɣiŋmasɔɣu malila bachibuɣisirili ka di nyɛ di bachi zuɣu.,"Miti buɣisiri li ɛltɔŋ ŋmasɔgu mali la bachi buɣisiri li, ka di nyɛ di bachi zuɣu.",1.0,0.1045
+670,Dimbɔŋɔ nyɛla yɛltɔɣiŋmasɔɣu din bachi zuɣu nyɛ zaashee bachi.,Dimbɔŋɔ nyɛla yɛl' tɔi ŋma sɔu din bachi zuu nyɛ zaashee bachi,0.5556,0.0566
+680,O chaŋ tiŋa maa puuni.,O chaŋ ti ŋa maa puuni.,0.4,0.0
+682,Din kpalim ka bi sabigi pam maa mi nyɛla bachiniŋdili yɛltɔɣiŋmasɔɣu.,Daŋ kpalim ka bisabigi pam maa mi nyɛla bachinim’ di li yɛltɔɣinima sɔɣ’,0.7273,0.1034
+688,Di mali yɛltɔɣiŋmasɔri n-kahigiri tɛha.,Yuɣ’ kalinli na ni bɛ yɛn dɔɣiri ma sari ka yi vi di piɛha.,2.8,0.7273
+690,"Din yɛn che ka yɛltɔɣa ne, yɛltɔɣiŋmasɔri tumdi tuun’ kara pam.","Di ni yɛn chɛ ka yɛl’ tɔɣa ni yɛl’ tɔɣa ma, “Sɔri tum di tuun’ kara pam.”",1.0909,0.1
+695,"Dakulo din gari la, m mini n zo daa gbaami ni ti di ti dabisili maa teeku duli.",Dakolo din gari la m mini n zo daa gbaami ni ti di ti dabisili maa teeku duli.,0.0556,0.0167
+701,"Ti ni daa kuli paai, ti daa yulimi m-bo luɣ’ viɛlli shee kpukpalitia gbunni.","Ti ni daa kuli paai, ti daa yulimi m-bo luɣ' viɛlli shee kpukpalitia gbunni.",0.0,0.0
+711,"Bɔna puuni, piɛmiya yɛltɔɣiŋmasɔri balibu maa ka di doli taba (a.",Bɔna puuni? Peemiya! Yɛl' tɔli ŋma sɔri balibu maa ka di doli taba.,0.5455,0.0769
+714,Zaŋmiya yi labisibu maa n-wuhi karinduu maa zaa ka yi zamzam li.,Zaŋmiya yi labisigu maa n-wuhi karindoo maa zaa ka yi zamzamli.,0.3333,0.0588
+728,Senyo ɖa akplĕ hafi yi suku.,Sanyi Juda Akpil Afi Sukul,1.0,0.5
+736,Yɛltɔɣiŋmaa din ku tooi zani di gama zuɣu.,yɛltɔɔin ŋmaa n-ti kuli sɛtɛɛn ti gam ma zuɣu.,1.0,0.4412
+742,Makafui ate ŋu ade tɔme gbe sia gbea?,"Makaafi, a ti ŋɔ? A di tom mi gbisi a guya.",1.375,0.3793
+759,Di kahigibu n-do gbunni ŋɔ.,de kahigibu n-do gbunni ŋɔ.,0.2,0.0476
+765,Yɛltɔɣiŋmaa din nyɛ zaligu ni tooi bi bɔri zuɣu.,Yɛltoonaa din nyɛ zaligu ni tooi bia bɔri zuɣu!,0.2222,0.1538
+769,Yi ni tooi ti shɛhira shɛŋa zaŋ kpa bɔhigu bachinima din Dagbani polo.,Yi ni tooi ti shihirila shɛŋa zaŋ kpa bɔhigu bachinima din dagba ni polo.,0.2308,0.0526
+770,Yɛltɔɣiŋmaa din nyɛ bɔhigu naarimi ni bɔhigu bia.,"Yɛtɔriŋ maa dii nyɛ bɔhuga, naa di mi ni bɔhigu ya.",1.0,0.1951
+787,Kofi nim no afiri sε ɔyε.,Kofi ni mini o afilisi o yɛn.,1.0,0.3684
+791,Chɛliya ka zamzam di balibu maa.,Chɛliya ka zamzam di balibu maa.,0.0,0.0
+802,Kafui xlĕ agbalĕ si fofoa nε la nyuie.,Kaŋsig mi yɛŋga alisi fo foon ni la nyuya.,1.0,0.5
+804,Nyɔnu si ƒle avɔ etsɔ la dzo.,Nyɔnɔsi Flee Avor et Sola Duu.,1.0,0.3636
+827,Bachinima din pe taba m-buɣisiri maa gbunni m-booibooi yɛltɔɣa maa ni maa.,Bashinima din pe taba m-buɣisiri maa gbinni m-bo booi yɛltɔɣa maa ni maa.,0.3333,0.0667
+852,Sabbu bibahira mini di tuma.,Ka di ti ni la.,1.0,0.7391
+853,Ŋmahin’ shɛli di ni mali sɔŋdi yɛltɔɣili bahigu din wuhiri yɛltɔɣili maa naabu.,Ŋman’ shɛli di ni mali sɔŋ di yɛltɔɣili bahigu din wuhiri yɛltɔɣili maa naabu.,0.2308,0.0308
+857,Di zaŋdimi wuhiri bachinima din ŋmaai filim naabu.,Daa zaŋdi mi wuhiri bachinima din ŋmaai Filip Naabo.,0.625,0.0952
+858,Di mali li sɔŋdi so yɛligu bee yɛltɔɣili bahigu.,Di mali li sɔŋdi so yɛligu bee yɛbu tɔɣi li bahigu.,0.3333,0.0513
+859,"Dɔɣite maa yɛliya, “A nyɛla ŋun nyari alaafee”.","Doo yi teem’ a yiliya, a nyɛla ŋun nyari alaafee.",0.625,0.1667
+860,Karimba maa yɛlimi ni “Zahimbu kani zuŋɔ”.,"Karimba maa yɛlimi ni, Zahimbu ka ni zuŋɔ.",0.2857,0.0
+861,Di zaŋ li woligiri binyɛra taba kalibu ni.,da zaŋ li wɔligiri binyɛr' ata ba kalibu ni.,0.625,0.0588
+863,"N kpɛla shitɔɣu maa ni ni n ti da chibo, sɔɣiso, bɔɣati ni bɔdua.","N kpɛla shitɔɣu maa neenii n ti daachi bɔ? Soi so, bɔhi ti nii bɔdi la.",0.7857,0.2449
+866,Di zaŋdi li pirigiri bachibuɣisira din buɣisiri bachinamdili.,,1.0,1.0
+867,"Di zaŋ li n-wuhi binyɛra kalibu piligu, shɛhira bee kahigibu.",dɔzaŋli n-wuhi binyɛra kalibu piligu shɛhi daa be kahigibu.,0.6,0.0816
+870,Di zaŋdi li pirigiri yɛltɔɣiŋmahi diba ayi din ni tooi zani di gama zuɣu taba.,"dadaŋ’ di. Li piligiri, yɛb’ tɔɣ’ yi ŋmahi di ba ayi din ni tooi zani di gama zuu taba",0.6667,0.0952
+871,M malila zahimbu biɛɣuni; n karindimi yuŋ zaa.,M malila zahimbu biɛwu ni n-karim di mi yuŋ zaa.,0.625,0.0541
+872,M bɔrimi ni n chaŋ Aŋkara; saa n-daa mira.,N bɔ mi ni n chaŋ Ankara? Saa n-daa mira,0.4444,0.129
+873,Di zaŋdi woligiri binyɛra taba kalibu ni.,Defezondi Wuligiri binyara taba Kalibu ni.,0.5714,0.2059
+874,"Bɛ tila bihi maa pina kamani; nɛma, diɛma binyɛra, tiwala ni namdanima.","Kpe tila bihi maa pina kama ni nɛma, deema binyara, tiwala ni namda ni maa.",0.6667,0.125
+875,Di zaŋ li wuhiri bachi yaɣ’ shɛli ni ŋmaai bahi shɛm.,do’ zani li wuhiri bachi yaɣ’ shɛli yi ni ŋmaai bahi shɛm.,0.2727,0.122
+876,Paɣ’ jia maa gari kpe.,Jia maa gari kpe.,0.2,0.1875
+877,Ti’ titali ka bɛ ŋmaai sɔŋ.,Duu taɣim ka bɛ maai sɔŋ.,0.5,0.35
+880,"Karimba maa yɛlimi ni, “Shikuru kandina leeti kani”.","Ma yɛlimi ni, Shikuru kandina leei ti kani.",0.5,0.2195
+882,Soyɛligu bia ni tooi lan zaŋ tum tuma lahibali yuli sabbu ni.,So yɛligu bia ni tooi lan zaŋ tum tuma alahibali yuli sabbu ni.,0.25,0.0204
+885,Haaifin wuhirila binyɛra ayi waɣilim.,Viyɛla o pa m bɛn.,1.0,0.8438
+887,Bɛ mali pɛrɛntɛsinima n-goori lahabal’ shɛli din pahi n-kahigira.,Bɛ mali pɛrɛntɛsinima n-goori lahabali shɛli din pahi n-kahigira.,0.1111,0.0189
+889,N laamba kookoo puu (din be Togo la) tiri ba liɣiri pam.,Lamba koko Wudimbe Togo lam tiri baligiri pam.,0.75,0.2143
+890,Bɛ gbaala chuɣu maa zali biɛɣuni (pa zuŋɔ).,Bɛ gbaa la chugu maa zali kpia ni kpa.,0.75,0.3333
+893,Karimba so ŋun yuli booni Josɛfin (Ma suŋ) la sa kana kpe sɔhila.,"Karimba, so ŋun yuli booni Jɔsefinduma saa kana kpe Sohila.",0.4615,0.18
+894,Jabihi maa (Alaasani mini Fusheni) kanila kpɛna zuŋɔ.,Jabihi maa laasani mini fushee neei ka nirila kpɛnaazuŋɔ,0.75,0.1628
+895,Di ni tooi zaŋ daashi zali vuhimbia bee kolɔn zaani.,di ni tooi zani daashi zali Vuhim Bia bee kolɔn zaani.,0.3,0.0476
+896,Di daa bi maai – wuntaŋa daa yiya pam.,"Di daa bi Maai, wuntaŋa daa yiya pam.",0.0,0.0
+897,Silaashi nyɛla booli din puli zaya ka bɛ mali li zaani bachituɣirili ‘bee’ zaani.,Salashi nyɛla boligin puli zaya ka be Malili zaa ni bachituurili be zaa ni.,0.7857,0.1231
+904,Di naarila yɛltɔɣili din nyɛ yekpeeni.,Di naarila yɛltɔɣili din nyɛ yɛkpeeni.,0.1667,0.0312
+905,Di naarila yɛltɔɣili din nyɛ bɔhigu.,Daɣiri maa yi yɛltɔɣili din nyɛ bɔhiya bɔ?,0.8333,0.4
+908,"Di wuhirila bachinima, yɛltɔɣiŋmasɔri bee yɛltɔɣa ni ŋmaai bahi shɛm.","Yi wuhiri li la bachinima, yɛl’ to yi ma sɔri, bɛ yi yɛl’ to a ni yi ŋmaai bahi shɛm.”",1.5,0.2241
+909,O daa boli ʒɛkuri maa.,O daa boli Zɛkuri maa,0.2,0.0588
+915,N-woligiri bachi diba ayi din sabbu nyɛ yim amaa ka di gbunni lee woligi taba.,"Wuligiri bachi dibaa ayi dinsabu n-nyɛ yim, amaa ka di gbunni leei wuligi taba.",0.4667,0.1129
+919,Zaŋmiya yi labisibu maa maɣisi yi taba dini.,Zaŋmiya yi labisibu maa maasi yi taba dini.,0.125,0.0556
+927,N laamba yili bela tiŋkpaŋa.,n laɣim ba yili bɛ la tiŋkpaŋa.,0.8,0.1304
+930,Timya daliri shɛli din che ka yi pii lala sabbu bibahira maa.,Tim ya daliri shɛli din chɛ ka yi pii lala sabbu bibahira maa.,0.25,0.0204
+941,Zaŋmi a maŋmaŋa bachinima n-kahigi wuhi yɛltɔɣiŋmasɔɣu ni nyɛ shɛli.,Zaŋmi amaŋmaŋ’ abachinima n-kahigi wuhi yɛl’ tɔŋma sɔɣ’ o ni nyɛ shɛli.,0.7,0.0526
+946,Zaŋmi a maŋmaŋa bachinima n-kahigi yɛltɔɣiŋmaa ni nyɛ shɛli.,"Zaŋmi, amaa maŋa bachinima n-kahigi yɛli tɔɣiya maa ni nyɛ shɛli.",0.5556,0.08
+947,Sabimi yɛltɔɣiŋmahi balibu diba ayi maa ka kahigi li biɛla.,"sabimi yaaritɔi ŋmahi balibu dibayi, maa ka kahi ge li biɛla.",0.6,0.1429
+951,Baŋmi bachibuɣisirili yɛltɔɣiŋmahi din be lahibali maa ni ka sabi li sɔŋ.,Ban mi bachibuɣisiri li yɛltɔɣi ŋmahidin bee lahibali maa ni ka sabili sɔŋ,0.75,0.0328
+959,Sabimi sabbu bibahira balibu diba anu din be zuliya shɛli a ni bɔhindi ni.,Sabimi sabbu bibahira balibu dibaa anu di yi m-be zuliya shɛli anii Bɔhindi ni.,0.4286,0.0833
+961,"A maŋmaŋa bachinima puuni, kahigim daakiritinima ni nyɛ shɛŋa.",damaŋmaŋ’ bachinima puuni ka Higimdaakiritinima ni nyɛ shɛŋa,0.4444,0.0385
+966,Yaɣili ŋɔ yɛn zaŋla karimbihi n-yuli binshɛli din nyɛ lahibali nambu mini lɛbigibu.,Biɣfiili ŋɔ yɛn zaŋla karimbihi ni wei shiri din nyɛ lahibali nambua mini dibigibu.,0.4615,0.2174
+977,Tumaduu gbaŋ nyɛla gban’ shɛli din sabiri tiri kpamba.,tumo duu gbaŋ nyɛla gban’ shɛli din sabiri tiri kpimba.,0.3333,0.0455
+978,"Dɔɣim gbana sabirimi tiri dɔɣiriba, zonima bee ninvuɣ’ so ŋun nyɛ a saawaralana.",Doom gbana sabirimi tiri doɣiriba zonima bee ninvuɣu so ŋun nyɛ asaa waara lana,0.4615,0.0923
+979,Lahibali nambu nyɛla sasabira maa pe lahibali shɛli o ni sabiri maa n-sɔŋ shɛm.,"Hahibali, nambu nyɛla, sasabira maa pe lahibali, shɛli o ni sabiri maa n-sɔŋ shɛm.",0.0714,0.0156
+980,Lahibali sabbu nyɛla tɛh’ shɛli bee lahibali shɛli din ti sabbu puuni.,"Lahibali, sabbu nyɛla tɛ’ shɛli bee lahibali shɛli din teei sabbu puuni.",0.1667,0.0526
+981,Lahibali lɛbigibu nyɛla lahibali gbunni zaŋ ti n-yi zuliya shɛli ni n-kpɛhi zuliya shɛli ni.,Hallɛn la di dɔbo nyɛla laasibali dinni zaŋ ti n yi juliya shɛli ni n kpaliti juliya shɛli ni,0.8,0.3067

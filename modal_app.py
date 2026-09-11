@@ -31,8 +31,13 @@ RESULTS_DIR = "/results"
 HF_HOME = "/hf-cache"
 # Synthesised clips live on the results Volume, keyed by language and model.
 AUDIO_SUBDIR = "/results/audio"
+# Per-sample ASR output, kept next to the results it explains.
+TRANSCRIPTIONS_SUBDIR = "/results/transcriptions"
 
 _IGNORED = {".env", ".git", "benchmarks", "__pycache__", ".venv", "space", "audio"}
+
+# FunAudioLLM/CosyVoice @ 2026-05-25 — see cosy_image below.
+COSYVOICE_COMMIT = "074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc"
 
 
 def _with_repo(image):
@@ -101,9 +106,13 @@ asr_image = _with_repo(
 cosy_image = _with_repo(
     modal.Image.debian_slim(python_version="3.10")
     .apt_install("git", "sox", "libsox-dev", "ffmpeg", "build-essential")
+    # Pinned: upstream renamed inference_zero_shot's prompt_speech_16k to
+    # prompt_wav under main, silently breaking every clip. A benchmark has to
+    # keep producing the same numbers months from now.
     .run_commands(
-        "git clone --recursive --depth 1 "
-        "https://github.com/FunAudioLLM/CosyVoice.git /opt/CosyVoice"
+        "git clone --recursive https://github.com/FunAudioLLM/CosyVoice.git /opt/CosyVoice",
+        f"cd /opt/CosyVoice && git checkout {COSYVOICE_COMMIT} && "
+        "git submodule update --init --recursive",
     )
     .pip_install(
         "torch==2.3.1", "torchaudio==2.3.1",
@@ -154,6 +163,7 @@ def _prepare_env(samples):
     os.environ["HF_HOME"] = HF_HOME
     os.environ["NSANKU_TTS_RESULTS_DIR"] = RESULTS_DIR
     os.environ["NSANKU_TTS_AUDIO_DIR"] = AUDIO_SUBDIR
+    os.environ["NSANKU_TTS_TRANSCRIPTIONS_DIR"] = TRANSCRIPTIONS_SUBDIR
     if samples:
         os.environ["NSANKU_TTS_NUM_SAMPLES"] = str(samples)
 
@@ -312,6 +322,38 @@ def _fan_out(tasks, samples=None, force=False, max_workers=16):
                 print(f"  FAILED {label}: {str(e)[:200]}", flush=True)
                 report.append((label, str(e)[:200]))
     return report
+
+
+
+@app.function(image=asr_image, timeout=60 * 30, volumes=VOLUMES)
+def migrate_audio_layout(category="education", dry_run=True):
+    """Move /audio/{iso}/{model}/ under /audio/{iso}/{category}/{model}/.
+
+    Clips predate the per-domain layout; re-synthesising 8k of them to gain a
+    path segment would be hours of GPU for nothing.
+    """
+    import shutil
+    from pathlib import Path
+
+    root = Path(AUDIO_SUBDIR)
+    moved = []
+    for lang_dir in sorted(p for p in root.iterdir() if p.is_dir()):
+        cat_dir = lang_dir / category
+        for model_dir in sorted(p for p in lang_dir.iterdir() if p.is_dir()):
+            if model_dir.name == category:
+                continue
+            dest = cat_dir / model_dir.name
+            moved.append(f"{model_dir} -> {dest}")
+            if not dry_run:
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.move(str(model_dir), str(dest))
+        index = lang_dir / "TEXTS.txt"
+        if index.exists() and not dry_run:
+            cat_dir.mkdir(parents=True, exist_ok=True)
+            shutil.move(str(index), str(cat_dir / "TEXTS.txt"))
+    if not dry_run:
+        results_volume.commit()
+    return moved
 
 
 @app.local_entrypoint()
