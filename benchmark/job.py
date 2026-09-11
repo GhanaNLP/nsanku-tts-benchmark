@@ -24,7 +24,7 @@ import sys
 from pathlib import Path
 
 WORK = Path(os.environ.get("NSANKU_TTS_WORK_DIR", "/data"))
-AUDIO_REPO = os.environ.get("NSANKU_TTS_AUDIO_REPO", "ghananlpcommunity/nsanku-tts-audio")
+AUDIO_REPO = os.environ.get("NSANKU_TTS_AUDIO_REPO", "ghananlpcommunity/nsanku-tts-benchmark-audio")
 RESULTS_PREFIX = "results"
 
 

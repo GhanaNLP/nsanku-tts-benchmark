@@ -363,11 +363,15 @@ def migrate_audio_layout(category="education", dry_run=True):
     volumes=VOLUMES,
     secrets=SECRETS,
 )
-def publish_audio(repo_id="ghananlpcommunity/nsanku-tts-audio", private=False):
+def publish_audio(repo_id="ghananlpcommunity/nsanku-tts-benchmark-audio", private=False):
     """Push the clips and transcriptions to a HF dataset repo.
 
     Uploading from the container rather than a laptop: the volume is already
     here, and 1.7 GB over a home connection is the slow way round.
+
+    upload_large_folder, not upload_folder: 9000 small files committed one at
+    a time is throttled into hours, and a dropped connection loses the lot.
+    This uploads in parallel and resumes where it left off.
     """
     import os
 
@@ -375,18 +379,19 @@ def publish_audio(repo_id="ghananlpcommunity/nsanku-tts-audio", private=False):
 
     api = HfApi(token=os.environ["HF_TOKEN"])
     api.create_repo(repo_id=repo_id, repo_type="dataset", exist_ok=True)
-    for folder, prefix in ((AUDIO_SUBDIR, "audio"), (TRANSCRIPTIONS_SUBDIR, "transcriptions")):
-        if not os.path.isdir(folder):
-            continue
-        api.upload_folder(
-            folder_path=folder,
-            path_in_repo=prefix,
-            repo_id=repo_id,
-            repo_type="dataset",
-            commit_message=f"Publish {prefix} from the nsanku-TTS benchmark",
-        )
+    api.upload_large_folder(
+        repo_id=repo_id,
+        folder_path=RESULTS_DIR,
+        repo_type="dataset",
+        # The YAMLs live in git, and shards/ is dead weight from an earlier
+        # layout; only the clips and transcriptions belong here.
+        allow_patterns=["audio/**", "transcriptions/**"],
+        num_workers=16,
+        print_report=False,
+    )
     info = api.repo_info(repo_id=repo_id, repo_type="dataset")
-    return {"repo": repo_id, "files": len(info.siblings or [])}
+    wavs = [s.rfilename for s in (info.siblings or []) if s.rfilename.endswith(".wav")]
+    return {"repo": repo_id, "files": len(info.siblings or []), "clips": len(wavs)}
 
 
 @app.local_entrypoint()

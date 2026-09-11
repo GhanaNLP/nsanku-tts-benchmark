@@ -6,7 +6,7 @@ committing to git, so a job needs only an HF token. This pulls those results
 together into the YAMLs the leaderboard reads, which are then committed here.
 
 Run:  python3 scripts/assemble_benchmarks.py
-      python3 scripts/assemble_benchmarks.py --repo ghananlpcommunity/nsanku-tts-audio
+      python3 scripts/assemble_benchmarks.py --repo ghananlpcommunity/nsanku-tts-benchmark-audio
 """
 
 import argparse
@@ -22,7 +22,7 @@ sys.path.insert(0, str(ROOT))
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--repo", default=os.environ.get(
-        "NSANKU_TTS_AUDIO_REPO", "ghananlpcommunity/nsanku-tts-audio"))
+        "NSANKU_TTS_AUDIO_REPO", "ghananlpcommunity/nsanku-tts-benchmark-audio"))
     args = ap.parse_args()
 
     from huggingface_hub import snapshot_download
