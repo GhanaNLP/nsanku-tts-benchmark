@@ -14,6 +14,7 @@ synthesised with this model on the next benchmark run.
 """
 
 
+LANG_TAG = '<|lang:twi-akuapem|> '
 CFG_VALUE = 2.0
 INFERENCE_TIMESTEPS = 10
 RETRY_BADCASE = True

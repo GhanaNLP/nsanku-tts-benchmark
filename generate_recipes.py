@@ -35,6 +35,20 @@ synthesised with this model on the next benchmark run.
 """
 '''
 
+# ghana-tts was trained on text prefixed with a language tag; the codes come
+# from its training script (training/ghana-tts-training/precompute_voxcpm_latents.py
+# in michsethowusu/VoxCPM), where the two Twi dialects are spelled out and every
+# other language is its ISO code.
+GHANA_TTS_TAG_CODES = {"twi_akuapem": "twi-akuapem", "twi_asante": "twi-asante"}
+
+
+def lang_tag_for(meta, iso):
+    """The language tag this model expects in front of the text, if any."""
+    if meta.get("lang_tag") != "ghana-tts":
+        return None
+    return f"<|lang:{GHANA_TTS_TAG_CODES.get(iso, iso)}|> "
+
+
 HOOK = '''
 
 # def build_wrapper(model_id, device, meta):
@@ -140,11 +154,14 @@ def main():
             if path.exists() and not args.force:
                 skipped += 1
                 continue
+            tag = lang_tag_for(meta, iso)
             body = BODIES[kind].format(
                 lang_code=TTS_LANG_MAP.get(iso, iso),
                 reference_text=meta.get("reference_text", ""),
                 g2p_language=language,
             )
+            if tag:
+                body = f"LANG_TAG = {tag!r}\n" + body
             path.write_text(
                 HEADER.format(
                     model=model_id,

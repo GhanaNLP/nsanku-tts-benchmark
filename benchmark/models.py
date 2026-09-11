@@ -176,10 +176,19 @@ class BaseTTSModel(abc.ABC):
         self.device = device
 
     def prepare_text(self, text, iso):
-        """Text as this model expects it — IPA for phoneme models."""
+        """Text as this model expects it.
+
+        Two transforms, both taken from how the model was trained: phoneme
+        models are given IPA, and a model trained on language-tagged text is
+        given its tag. Feeding a tagged model untagged text asks it to guess
+        the language from the orthography alone.
+        """
         meta = getattr(self, "meta", {}) or {}
         if meta.get("input_type") == "ipa":
-            return phonemize(text, iso, meta)
+            text = phonemize(text, iso, meta)
+        tag = _knob(meta, "LANG_TAG")
+        if tag:
+            text = f"{tag}{text}"
         return text
 
     @abc.abstractmethod
