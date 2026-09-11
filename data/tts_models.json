@@ -93,18 +93,6 @@
     "notes": "Ultra-lightweight offline TTS for CPU"
   },
   {
-    "name": "prince4332/CosyVoice2-0.5B-Akan-Bible",
-    "architecture": "CosyVoice2 (0.5B)",
-    "languages": ["twi_asante"],
-    "input_type": "orthographic",
-    "sample_rate": 24000,
-    "license": "apache-2.0",
-    "url": "https://huggingface.co/prince4332/CosyVoice2-0.5B-Akan-Bible",
-    "runner": "cosyvoice",
-    "reference_text": "Atoyerɛnkyɛm asi wɔ bea a wɔgu fangoo ɛgu ɛhyɛn mu.",
-    "notes": "LLM+flow fine-tune of FunAudioLLM/CosyVoice2-0.5B on 34.2k Asante Twi Bible utterances; zero-shot, ref clip minted via Khaya"
-  },
-  {
     "name": "KhayaAI/khaya-tts-v2",
     "architecture": "Khaya AI TTS v2 API",
     "languages": ["ada", "dag", "dga", "ewe", "fat", "gaa", "gjn", "gur", "nzi", "twi_akuapem", "twi_asante", "xsm"],

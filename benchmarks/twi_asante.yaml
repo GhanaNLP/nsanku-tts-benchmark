@@ -127,23 +127,3 @@ benchmarks:
       samples: 200
       valid: 200
       avg_seconds_per_sample: 0.0
-- model: prince4332/CosyVoice2-0.5B-Akan-Bible
-  model_url: https://huggingface.co/prince4332/CosyVoice2-0.5B-Akan-Bible
-  owner: prince4332
-  architecture: CosyVoice2 (0.5B)
-  cer: null
-  wer: null
-  score: null
-  samples: 200
-  valid: 0
-  judge:
-    model: Qlerqly/griot-nano-1
-    cer_on_real_speech: 0.2212
-  source: evaluated
-  per_category:
-    education:
-      wer: null
-      cer: null
-      samples: 200
-      valid: 0
-      avg_seconds_per_sample: 0.0

@@ -21,6 +21,16 @@ NUM_SAMPLES = int(os.environ.get("NSANKU_TTS_NUM_SAMPLES", "200"))
 # HuggingFace authentication
 HF_TOKEN = os.environ.get("HF_TOKEN", "")
 
+# Only benchmark models published by organizations (drop personal accounts).
+# A leaderboard is a claim about what is available to build on, and a personal
+# checkpoint is not the same kind of artefact as an org release.
+ORG_ONLY = True
+
+# Namespaces to treat as organizations even though HuggingFace classifies them
+# as personal accounts. Mirrors the ASR benchmark's list so the two agree on
+# who counts as a publisher.
+ORG_OVERRIDES = {"FarmerlineML", "Qlerqly", "katrintomanek"}
+
 # Paths
 ROOT = Path(__file__).parent.parent
 # Results dir overridable so Modal can persist it on a shared Volume.
