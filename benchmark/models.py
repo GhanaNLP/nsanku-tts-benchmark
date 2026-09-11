@@ -237,7 +237,12 @@ class VoxCPMWrapper(BaseTTSModel):
         from .config import HF_TOKEN
 
         self.model = VoxCPM.from_pretrained(
-            _local_snapshot(self.model_id, HF_TOKEN), device=self.device
+            _local_snapshot(self.model_id, HF_TOKEN),
+            device=self.device,
+            # torch.compile needs a C toolchain and buys little on a
+            # benchmark that loads a model once; the model cards' own
+            # inference scripts disable it too.
+            optimize=_knob(self.meta, "OPTIMIZE", False),
         )
 
         if self.meta.get("reference_audio"):
@@ -298,6 +303,7 @@ class VoxCPM2Wrapper(BaseTTSModel):
             _local_snapshot(self.model_id, HF_TOKEN),
             load_denoiser=False,
             device=self.device,
+            optimize=_knob(self.meta, "OPTIMIZE", False),
         )
         if self.meta.get("reference_audio"):
             from huggingface_hub import hf_hub_download
