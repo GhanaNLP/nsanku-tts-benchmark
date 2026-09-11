@@ -87,15 +87,13 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
     if "ghana-tts" in lower:
         return VoxCPMWrapper(model_id, device=device, subset=subset, meta=meta,
                              iso=iso, **kwargs)
-    if "f5-tts" in lower or meta.get("runner") == "cosyvoice":
-        # Zero-shot models synthesise by imitating a reference clip; there is
-        # nothing to run without one.
+    if "f5-tts" in lower:
         if not USE_REFERENCE_AUDIO:
             raise UnsupportedModel(
-                f"{model_id}: needs a reference clip to synthesise, and the "
-                "benchmark does not give models one"
+                f"{model_id}: its recommended inference setting uses a reference "
+                "clip, which this run has disabled"
             )
-        return F5TTSWrapper(model_id, device=device, meta=meta, **kwargs)
+        return F5TTSWrapper(model_id, device=device, meta=meta, iso=iso, **kwargs)
     if meta.get("runner") == "coqui-vits":
         return CoquiVITSWrapper(model_id, device=device, meta=meta, **kwargs)
     if meta.get("runner") == "stable-twi-tts" or "stable-twi-tts" in lower:
@@ -166,6 +164,41 @@ def _local_snapshot(model_id, token=None):
         ignore_patterns=["optimizer.pth", "optimizer*.pt", "*.ckpt", "samples/*"],
         token=token or None,
     )
+
+
+REFERENCE_REPO = os.environ.get(
+    "NSANKU_TTS_AUDIO_REPO", "ghananlpcommunity/nsanku-tts-benchmark-audio"
+)
+
+
+def reference_clip(iso, meta, token=None):
+    """The reference clip and transcript for a language.
+
+    Real recorded speech from ghana-speech-eval, in the language being read
+    and from a different corpus than the benchmark sentences. A recipe can
+    override either half with REFERENCE_CLIP / REFERENCE_TEXT.
+    """
+    import json
+
+    from huggingface_hub import hf_hub_download
+
+    override_clip = _knob(meta, "REFERENCE_CLIP")
+    override_text = _knob(meta, "REFERENCE_TEXT")
+    if override_clip and override_text:
+        return override_clip, override_text, "recipe override"
+
+    manifest_path = hf_hub_download(
+        REFERENCE_REPO, "references/manifest.json", repo_type="dataset", token=token or None
+    )
+    manifest = json.loads(Path(manifest_path).read_text(encoding="utf-8"))
+    entry = manifest.get(iso)
+    if not entry:
+        raise UnsupportedModel(f"no reference clip published for {iso}")
+
+    wav = hf_hub_download(
+        REFERENCE_REPO, f"references/{entry['audio']}", repo_type="dataset", token=token or None
+    )
+    return override_clip or wav, override_text or entry["text"], entry["source"]
 
 
 class BaseTTSModel(abc.ABC):
@@ -337,7 +370,7 @@ class VoxCPM2Wrapper(BaseTTSModel):
 
 
 class F5TTSWrapper(BaseTTSModel):
-    """F5-TTS OpenBible fine-tunes — zero-shot TTS, needs a reference clip.
+    """F5-TTS OpenBible fine-tunes — reads in the voice of a reference clip.
 
     The repos ship only ``model_last.pt`` + ``vocab.txt`` (no reference
     audio), so we mint one per model by synthesising ``reference_text``
@@ -348,13 +381,15 @@ class F5TTSWrapper(BaseTTSModel):
     SAMPLE_RATE = 24000
     BASE_CONFIG = "F5TTS_v1_Base"
 
-    def __init__(self, model_id, device="cuda", meta=None, **kwargs):
+    def __init__(self, model_id, device="cuda", meta=None, iso=None, **kwargs):
         super().__init__(model_id, device)
         self.model = None
         self._loaded = False
         self.meta = meta or {}
+        self.iso = iso
         self.ref_wav = None
         self.ref_text = None
+        self.ref_source = None
 
     def _ensure_loaded(self):
         if self._loaded:
@@ -386,31 +421,20 @@ class F5TTSWrapper(BaseTTSModel):
         self._loaded = True
         logger.info("Loaded F5-TTS: %s (ckpt=%s)", self.model_id, os.path.basename(ckpt))
 
-    def _ensure_reference(self, lang):
-        """Return (wav_path, ref_text), minting the clip with Khaya once."""
-        if self.ref_wav:
-            return self.ref_wav, self.ref_text
+    def _ensure_reference(self):
+        """Return (wav_path, transcript) for this language."""
+        if self.ref_wav is None:
+            from .config import HF_TOKEN
 
-        ref_text = _knob(self.meta, "REFERENCE_TEXT") or self.meta.get("reference_text")
-        if not ref_text:
-            raise ValueError(f"{self.model_id}: no REFERENCE_TEXT in its recipe")
-
-        cache_dir = Path(_cache_root()) / "nsanku-refs"
-        cache_dir.mkdir(parents=True, exist_ok=True)
-        wav_path = cache_dir / f"{self.model_id.replace('/', '__')}.wav"
-
-        if not wav_path.exists():
-            logger.info("Minting F5 reference clip for %s via Khaya (%s)", self.model_id, lang)
-            khaya = KhayaTTSWrapper()
-            wav_path.write_bytes(khaya.synthesize(ref_text, lang=lang))
-
-        self.ref_wav, self.ref_text = str(wav_path), ref_text
+            self.ref_wav, self.ref_text, self.ref_source = reference_clip(
+                self.iso, self.meta, HF_TOKEN
+            )
         return self.ref_wav, self.ref_text
 
     def synthesize(self, text, lang="eng", ref_audio=None, ref_text=None):
         self._ensure_loaded()
         if ref_audio is None:
-            ref_audio, ref_text = self._ensure_reference(lang)
+            ref_audio, ref_text = self._ensure_reference()
         wav, sr, _spec = self.model.infer(
             ref_file=ref_audio,
             ref_text=ref_text,

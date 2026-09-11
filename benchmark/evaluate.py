@@ -323,6 +323,23 @@ def _save_errors(model_dir, errors):
 # ── Stage 2: ASR scoring ─────────────────────────────────────────────────────
 
 
+def _reference_source(iso):
+    """Where this language's reference clip came from, for the record."""
+    import json
+
+    from huggingface_hub import hf_hub_download
+
+    from .config import HF_TOKEN
+    from .models import REFERENCE_REPO
+
+    try:
+        path = hf_hub_download(REFERENCE_REPO, "references/manifest.json",
+                               repo_type="dataset", token=HF_TOKEN or None)
+        return json.loads(Path(path).read_text(encoding="utf-8"))[iso]["source"]
+    except Exception:
+        return None
+
+
 def score_language(subset, device="cuda", force=False, samples=None):
     """Transcribe every synthesised clip and score it against its text."""
     from .asr import judge_for, load_judge
@@ -347,6 +364,7 @@ def score_language(subset, device="cuda", force=False, samples=None):
 
     categories = language_categories(iso)
     judge_meta = {"model": spec["model"], "cer_on_real_speech": spec["judge_cer"]}
+    prompt_source = _reference_source(iso)
     judge = load_judge(iso, device=device)
 
     # model -> category -> stats
@@ -447,7 +465,8 @@ def score_language(subset, device="cuda", force=False, samples=None):
         by_cat = {c: v for c, v in per_model[model_id].items() if v}
         if not by_cat:
             continue
-        results.append(_model_result(model_info, by_cat, sample_clips.get(model_id)))
+        results.append(_model_result(model_info, by_cat, sample_clips.get(model_id),
+                                     prompt_source))
 
     save_benchmark(
         iso, language, results,
@@ -458,7 +477,7 @@ def score_language(subset, device="cuda", force=False, samples=None):
     return results
 
 
-def _model_result(model_info, by_category, sample_clip=None):
+def _model_result(model_info, by_category, sample_clip=None, prompt_source=None):
     """Average a model's per-domain scores into one row.
 
     Domains are weighted equally: a model is not credited for a register it
@@ -485,6 +504,9 @@ def _model_result(model_info, by_category, sample_clip=None):
         "per_category": by_category,
         "source": "evaluated",
     }
+    if model_info.get("uses_reference"):
+        result["prompted"] = True
+        result["prompt_source"] = prompt_source or "ghana-speech-eval"
     if sample_clip:
         category, index = sample_clip
         result["sample_category"] = category

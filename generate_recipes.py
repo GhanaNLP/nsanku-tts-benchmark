@@ -6,7 +6,7 @@ file under recipes/, holding the knobs that decide how that model reads that
 language. Editing one language cannot disturb another.
 
 The knobs differ by architecture — a hosted API takes a language code, a
-zero-shot model takes the transcript of its reference clip, a diffusion model
+voice-cloning model takes the transcript of its reference clip, a diffusion model
 takes guidance and step counts — so each architecture has its own template.
 
 Run:  python3 generate_recipes.py            # write missing recipes
@@ -83,12 +83,13 @@ BLURBS = {
     "voxcpm2": "CFG_VALUE is the guidance scale and INFERENCE_TIMESTEPS the number of\n"
                "flow-matching steps. MAX_LEN caps generated tokens; too low truncates\n"
                "long sentences.",
-    "f5": "F5-TTS is zero-shot: it copies the voice of a reference clip. REFERENCE_TEXT\n"
-          "is that clip's transcript and MUST be in this language — the clip is\n"
-          "synthesised once from this text and cached. SPEED scales the speaking rate.",
-    "cosyvoice": "CosyVoice2 is zero-shot: it copies the voice of a reference clip.\n"
-                 "REFERENCE_TEXT is that clip's transcript and MUST be in this language —\n"
-                 "the clip is synthesised once from this text and cached.",
+    "f5": "F5-TTS reads in the voice of a reference clip, which is its recommended\n"
+          "inference setting. The clip is real recorded speech in this language from\n"
+          "ghana-speech-eval; REFERENCE_TEXT and REFERENCE_CLIP override it if a\n"
+          "better one exists. SPEED and NFE_STEP are the usual F5 knobs.",
+    "cosyvoice": "CosyVoice2 reads in the voice of a reference clip: real recorded\n"
+                 "speech in this language from ghana-speech-eval. REFERENCE_TEXT and\n"
+                 "REFERENCE_CLIP override it if a better one exists.",
     "nanotwi": "NOISE_SCALE and LENGTH_SCALE are the Matcha-TTS sampling knobs:\n"
                "LENGTH_SCALE above 1.0 slows the speech down. SPEAKER_ID picks the voice.",
 }
@@ -104,8 +105,8 @@ BODIES = {
     "khaya": "LANGUAGE_CODE = {lang_code!r}\nSPEAKER_ID = None\n",
     "voxcpm": "CFG_VALUE = 2.0\nINFERENCE_TIMESTEPS = 10\nRETRY_BADCASE = True\n",
     "voxcpm2": "CFG_VALUE = 2.0\nINFERENCE_TIMESTEPS = 15\nRETRY_BADCASE = False\nMAX_LEN = None\n",
-    "f5": "REFERENCE_TEXT = {reference_text!r}\nSPEED = 1.0\nNFE_STEP = 32\n",
-    "cosyvoice": "REFERENCE_TEXT = {reference_text!r}\nSPEED = 1.0\n",
+    "f5": "REFERENCE_TEXT = None\nREFERENCE_CLIP = None\nSPEED = 1.0\nNFE_STEP = 32\n",
+    "cosyvoice": "REFERENCE_TEXT = None\nREFERENCE_CLIP = None\nSPEED = 1.0\n",
     "nanotwi": "NOISE_SCALE = 1.0\nLENGTH_SCALE = 1.0\nSPEAKER_ID = 0\n",
 }
 

@@ -10,7 +10,7 @@ leaderboard.
 Models evaluated on several languages additionally get a recipe PER LANGUAGE:
 `recipes/{owner}_{model}__{iso}.py`. That is where the per-language knobs live
 — the API language code for hosted models, and the reference clip's transcript
-for zero-shot models, which must be in the language being read. A contributor
+for voice-cloning models, which must be in the language being read. A contributor
 can change one language without touching the others. Use
 `load_lang_recipe(model_id, iso)` and `recipe_get(mod, "NAME", default)`.
 

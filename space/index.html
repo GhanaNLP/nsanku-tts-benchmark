@@ -154,6 +154,11 @@ tbody tr:hover td.lang-cell { background: var(--accent-soft); }
 }
 .play-btn:hover { background: var(--accent-hi); }
 .play-btn.playing { background: var(--accent); color: var(--text-strong); border-color: var(--accent); }
+.prompted {
+  display: inline-block; margin-left: 6px; font-size: 0.68rem; font-weight: 700;
+  color: #92400e; background: #fef3c7; border: 1px solid #fcd34d; border-radius: 4px;
+  padding: 0 4px; vertical-align: 1px; cursor: help;
+}
 
 /* ====== Scrollbar ====== */
 ::-webkit-scrollbar { width: 9px; height: 9px; }
@@ -533,9 +538,16 @@ function transcriptLink(iso, category, model, pc) {
   return `<a class="tr-link" href="${url}" target="_blank" title="What the judge heard, sentence by sentence (${pc.valid}/${pc.samples} clips)">${label}</a>`;
 }
 
+function promptedBadge(row) {
+  if (!row.prompted) return "";
+  const src = row.prompt_source ? ` Clip: ${row.prompt_source}.` : "";
+  return `<span class="prompted" title="Evaluated with a reference clip, which is the `
+       + `recommended inference setting for this model.${src}">ref audio</span>`;
+}
+
 function modelCell(row) {
   return `<a href="${row.model_url}" target="_blank">${row.model}</a> `
-       + `${trackBadge(row)}${recipeLink(row.model, row.iso)}`;
+       + `${trackBadge(row)}${promptedBadge(row)}${recipeLink(row.model, row.iso)}`;
 }
 
 function selectedCategories() {
@@ -717,6 +729,8 @@ async function main() {
           samples: b.samples || 0,
           valid: b.valid || 0,
           per_category: b.per_category || {},
+          prompted: String(b.prompted).toLowerCase() === "true",
+          prompt_source: b.prompt_source || "",
           sample_clip: b.sample_clip || "",
           sample_category: b.sample_category || "",
           judge: bench.judge_model || "",

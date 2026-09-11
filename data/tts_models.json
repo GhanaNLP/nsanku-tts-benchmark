@@ -63,7 +63,7 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante",
-    "skipped": "zero-shot: needs a reference clip, which the benchmark does not provide",
+    "uses_reference": true,
     "model_class": "non-llm",
     "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",
@@ -77,7 +77,7 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem",
-    "skipped": "zero-shot: needs a reference clip, which the benchmark does not provide",
+    "uses_reference": true,
     "model_class": "non-llm",
     "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",
@@ -91,7 +91,7 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Ewe",
-    "skipped": "zero-shot: needs a reference clip, which the benchmark does not provide",
+    "uses_reference": true,
     "model_class": "non-llm",
     "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",

@@ -21,11 +21,11 @@ NUM_SAMPLES = int(os.environ.get("NSANKU_TTS_NUM_SAMPLES", "200"))
 # HuggingFace authentication
 HF_TOKEN = os.environ.get("HF_TOKEN", "")
 
-# No model is given a reference clip to imitate. A voice prompt changes what
-# is being measured — partly the model, partly whoever recorded the prompt —
-# and a model that cannot read a sentence without being shown one first is not
-# being asked the same question as the rest.
-USE_REFERENCE_AUDIO = False
+# Models whose recommended inference setting includes a reference clip are
+# given one: real recorded speech in the same language, from ghana-speech-eval
+# (a different corpus than the benchmark sentences, so nothing leaks). Results
+# record that a clip was used, since it is part of how the number was produced.
+USE_REFERENCE_AUDIO = True
 
 # Only benchmark models published by organizations (drop personal accounts).
 # A leaderboard is a claim about what is available to build on, and a personal

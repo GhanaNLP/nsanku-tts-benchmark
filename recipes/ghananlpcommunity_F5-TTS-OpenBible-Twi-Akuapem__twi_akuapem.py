@@ -4,9 +4,10 @@ Architecture: F5-TTS (DiT + Vocos)
 Scope: THIS MODEL, THIS LANGUAGE. Every (model, language) pair has its own
 recipe file, so changing this one does not affect any other.
 
-F5-TTS is zero-shot: it copies the voice of a reference clip. REFERENCE_TEXT
-is that clip's transcript and MUST be in this language — the clip is
-synthesised once from this text and cached. SPEED scales the speaking rate.
+F5-TTS reads in the voice of a reference clip, which is its recommended
+inference setting. The clip is real recorded speech in this language from
+ghana-speech-eval; REFERENCE_TEXT and REFERENCE_CLIP override it if a
+better one exists. SPEED and NFE_STEP are the usual F5 knobs.
 
 Edit this file and open a pull request at
 https://github.com/GhanaNLP/nsanku-tts-benchmark to change how Akuapem Twi is
@@ -14,7 +15,8 @@ synthesised with this model on the next benchmark run.
 """
 
 
-REFERENCE_TEXT = 'Onyankopɔn dɔ nnipa nyinaa na ɔhwɛ wɔn so daa.'
+REFERENCE_TEXT = None
+REFERENCE_CLIP = None
 SPEED = 1.0
 NFE_STEP = 32
 

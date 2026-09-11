@@ -6,11 +6,12 @@ TTS intelligibility benchmark for Ghanaian languages, scored by **ASR character 
 
 1. **Text source**: 200 sentences per language from [ghanaopenai/ghana-sentences](https://huggingface.co/datasets/ghanaopenai/ghana-sentences) (default; bump via `NSANKU_TTS_NUM_SAMPLES`)
 2. **Synthesis** (stage 1): each model synthesises every sentence; the clips are kept.
-   No model is given a reference clip to imitate: a voice prompt changes what is being
-   measured — partly the model, partly whoever recorded the prompt — and a model that
-   cannot read a sentence without being shown one first is not being asked the same
-   question as the rest. Models that only work zero-shot are recorded as not scored,
-   with that reason.
+   Models whose recommended inference setting includes a reference clip are given one:
+   real recorded speech in the same language from
+   [ghana-speech-eval](https://huggingface.co/datasets/ghananlpcommunity/ghana-speech-eval),
+   a different corpus than the benchmark sentences, so nothing leaks between prompt and
+   test material. Those rows are marked on the leaderboard, since the clip is part of how
+   the number was produced.
 3. **ASR scoring** (stage 2): each clip is transcribed by the lowest-CER ASR model for
    that language, taken from the [nsanku ASR benchmark](https://github.com/GhanaNLP/nsanku-asr-benchmark)
    (see `data/asr_judges.json`), and compared to the sentence it was asked to read
