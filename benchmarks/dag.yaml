@@ -27,6 +27,8 @@ benchmarks:
       samples: 200
       valid: 200
       avg_seconds_per_sample: 1.38
+  sample_category: education
+  sample_clip: '00002'
 - model: ghananlpcommunity/ghana-tts-36k
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   owner: ghananlpcommunity
@@ -47,6 +49,8 @@ benchmarks:
       samples: 200
       valid: 200
       avg_seconds_per_sample: 2.38
+  sample_category: education
+  sample_clip: '00002'
 - model: FarmerlineML/voxcpm2-dagbani-sft
   model_url: https://huggingface.co/FarmerlineML/voxcpm2-dagbani-sft
   owner: FarmerlineML
@@ -67,6 +71,8 @@ benchmarks:
       samples: 200
       valid: 200
       avg_seconds_per_sample: 2.44
+  sample_category: education
+  sample_clip: '00002'
 - model: ghananlpcommunity/ghana-tts-72k
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   owner: ghananlpcommunity
@@ -87,3 +93,5 @@ benchmarks:
       samples: 200
       valid: 200
       avg_seconds_per_sample: 2.29
+  sample_category: education
+  sample_clip: '00002'

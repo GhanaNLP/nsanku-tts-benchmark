@@ -337,6 +337,7 @@ def score_language(subset, device="cuda", force=False, samples=None):
 
     # model -> category -> stats
     per_model = {m["name"]: {} for m in models}
+    sample_clips = {}
     sample_counts = []
 
     try:
@@ -397,6 +398,13 @@ def score_language(subset, device="cuda", force=False, samples=None):
                 elapsed = time.time() - t0
 
                 save_transcriptions(iso, category, model_id, entries)
+                scored_ids = sorted(
+                    (int(k) for k, e in entries.items() if e.get("cer") is not None)
+                )
+                if scored_ids and model_id not in sample_clips:
+                    # A clip the judge could actually read, so the demo on the
+                    # dashboard is representative rather than a failure case.
+                    sample_clips[model_id] = (category, scored_ids[0])
                 cers = [e["cer"] for e in entries.values() if e.get("cer") is not None]
                 wers = [e["wer"] for e in entries.values() if e.get("wer") is not None]
                 per_model[model_id][category] = {
@@ -423,7 +431,8 @@ def score_language(subset, device="cuda", force=False, samples=None):
         by_cat = {c: v for c, v in per_model[model_id].items() if v}
         if not by_cat:
             continue
-        results.append(_model_result(model_info, by_cat, judge_meta))
+        results.append(_model_result(model_info, by_cat, judge_meta,
+                                     sample_clips.get(model_id)))
 
     save_benchmark(
         iso, language, results,
@@ -434,7 +443,7 @@ def score_language(subset, device="cuda", force=False, samples=None):
     return results
 
 
-def _model_result(model_info, by_category, judge_meta):
+def _model_result(model_info, by_category, judge_meta, sample_clip=None):
     """Average a model's per-domain scores into one row.
 
     Domains are weighted equally: a model is not credited for a register it
@@ -445,7 +454,7 @@ def _model_result(model_info, by_category, judge_meta):
     wers = [v["wer"] for v in by_category.values() if v["wer"] is not None]
     mean_cer = round(sum(cers) / len(cers), 4) if cers else None
     mean_wer = round(sum(wers) / len(wers), 4) if wers else None
-    return {
+    result = {
         "model": model_id,
         "model_url": model_info.get("url", f"https://huggingface.co/{model_id}"),
         "owner": model_id.split("/")[0],
@@ -459,3 +468,8 @@ def _model_result(model_info, by_category, judge_meta):
         "per_category": by_category,
         "source": "evaluated",
     }
+    if sample_clip:
+        category, index = sample_clip
+        result["sample_category"] = category
+        result["sample_clip"] = f"{index:05d}"
+    return result

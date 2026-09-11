@@ -147,6 +147,13 @@ tbody tr:hover td.lang-cell { background: var(--accent-soft); }
   padding: 0 5px; vertical-align: 1px; line-height: 1.5;
 }
 .recipe-link:hover { background: var(--accent-hi); text-decoration: none; }
+.play-btn {
+  cursor: pointer; font-size: 0.72rem; line-height: 1; padding: 4px 7px;
+  color: var(--link); background: var(--surface); border: 1px solid var(--border-strong);
+  border-radius: 4px;
+}
+.play-btn:hover { background: var(--accent-hi); }
+.play-btn.playing { background: var(--accent); color: var(--text-strong); border-color: var(--accent); }
 
 /* ====== Scrollbar ====== */
 ::-webkit-scrollbar { width: 9px; height: 9px; }
@@ -284,6 +291,8 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
 </div>
 <script>
 const REPO = 'GhanaNLP/nsanku-tts-benchmark';
+const AUDIO_DS = 'ghananlpcommunity/nsanku-tts-audio';
+const AUDIO_BASE = `https://huggingface.co/datasets/${AUDIO_DS}/resolve/main/audio`;
 const BRANCH = 'main';
 const RAW = `https://raw.githubusercontent.com/${REPO}/${BRANCH}`;
 const LANG_URL = `${RAW}/languages/ghana_languages.yaml`;
@@ -327,9 +336,20 @@ const NUMERIC = ["cer", "wer", "score", "samples", "valid", "avg_seconds_per_sam
                  "cer_on_real_speech", "num_samples_per_category"];
 
 function coerce(key, value) {
-  if (!NUMERIC.includes(key)) return value;
+  if (!NUMERIC.includes(key)) return unquote(value);
   const n = parseFloat(value);
   return Number.isFinite(n) ? n : null;
+}
+
+// yaml.dump quotes a string that would otherwise read as a number, so
+// "00002" comes back as ' 00002 ' complete with quotes.
+function unquote(v) {
+  if (typeof v !== "string") return v;
+  const t = v.trim();
+  if (t.length > 1 && ((t[0] === "'" && t.endsWith("'")) || (t[0] === '"' && t.endsWith('"')))) {
+    return t.slice(1, -1);
+  }
+  return t;
 }
 
 // yaml.dump(default_flow_style=False) writes list items at column 0, their
@@ -366,7 +386,7 @@ function parseBenchYaml(text) {
       current = { per_category: {} };
       sub = null;
       const [k, ...rest] = body.slice(2).split(":");
-      current[k.trim()] = rest.join(":").trim();
+      current[k.trim()] = unquote(rest.join(":").trim());
       continue;
     }
 
@@ -405,6 +425,49 @@ function parseBenchYaml(text) {
   }
   if (current) benchmarks.push(current);
   return { ...meta, benchmarks };
+}
+
+let PLAYER = null;
+let PLAYING = null;
+
+function clipUrl(row) {
+  if (!row.sample_clip) return null;
+  const safe = row.model.replace(/\//g, "__");
+  const cat = row.sample_category || "education";
+  return `${AUDIO_BASE}/${row.iso}/${cat}/${safe}/${row.sample_clip}.wav`;
+}
+
+function playCell(row) {
+  const url = clipUrl(row);
+  if (!url) return "";
+  const id = `${row.iso}|${row.model}`;
+  return `<button class="play-btn" data-url="${url}" data-id="${id}"`
+       + ` title="Hear this model read one of the benchmark sentences">&#9654;</button>`;
+}
+
+function wirePlayers(scope) {
+  scope.querySelectorAll(".play-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      if (!PLAYER) {
+        PLAYER = new Audio();
+        PLAYER.addEventListener("ended", () => setPlaying(null));
+        PLAYER.addEventListener("error", () => setPlaying(null));
+      }
+      const id = btn.dataset.id;
+      if (PLAYING === id) { PLAYER.pause(); setPlaying(null); return; }
+      PLAYER.src = btn.dataset.url;
+      PLAYER.play().then(() => setPlaying(id)).catch(() => setPlaying(null));
+    });
+  });
+}
+
+function setPlaying(id) {
+  PLAYING = id;
+  document.querySelectorAll(".play-btn").forEach(b => {
+    const on = b.dataset.id === id;
+    b.classList.toggle("playing", on);
+    b.innerHTML = on ? "&#9632;" : "&#9654;";
+  });
 }
 
 function trackOf(row) {
@@ -460,13 +523,14 @@ function renderGlobal() {
   const ordered = Object.values(best).sort((a, b) => a.cer - b.cer);
 
   document.getElementById("global-thead").innerHTML =
-    `<tr><th>#</th><th>Language</th><th>Model</th><th>Architecture</th><th>CER</th><th>WER</th>`
+    `<tr><th>#</th><th>Language</th><th>Model</th><th>Listen</th><th>Architecture</th><th>CER</th><th>WER</th>`
     + categoryHeaders() + `<th>Samples</th><th>ASR judge</th></tr>`;
   document.getElementById("global-body").innerHTML = ordered.length
     ? ordered.map((r, i) => `<tr>
         <td class="rank${i < 3 ? " r" + (i + 1) : ""}">${i + 1}</td>
         <td class="lang-cell">${r.language}</td>
         <td>${modelCell(r)}</td>
+        <td>${playCell(r)}</td>
         <td>${r.architecture}</td>
         <td><span class="badge ${cerClass(r.cer)}">${fmt(r.cer)}</span></td>
         <td>${fmt(r.wer)}</td>
@@ -474,7 +538,8 @@ function renderGlobal() {
         <td>${r.valid}</td>
         <td style="font-size:0.82rem">${r.judge} <span style="color:var(--text-muted)">(${fmt(r.judge_cer, 3)})</span></td>
       </tr>`).join("")
-    : '<tr><td colspan="12" class="empty-row">No results for this track yet.</td></tr>';
+    : '<tr><td colspan="13" class="empty-row">No results for this track yet.</td></tr>';
+  wirePlayers(document.getElementById("global-body"));
 }
 
 function renderPerLang() {
@@ -493,23 +558,25 @@ function renderPerLang() {
        ${first.num_samples_per_category} sentences per domain.`
     : "";
   document.getElementById("per-lang-thead").innerHTML =
-    `<tr><th>#</th><th>Model</th><th>Architecture</th><th>CER</th><th>WER</th>`
+    `<tr><th>#</th><th>Model</th><th>Listen</th><th>Architecture</th><th>CER</th><th>WER</th>`
     + categoryHeaders() + `<th>Samples</th></tr>`;
   document.getElementById("per-lang-body").innerHTML = scored.length
     ? scored.map((r, i) => `<tr>
         <td class="rank${i < 3 ? " r" + (i + 1) : ""}">${i + 1}</td>
         <td>${modelCell(r)}</td>
+        <td>${playCell(r)}</td>
         <td>${r.architecture}</td>
         <td><span class="badge ${cerClass(r.cer)}">${fmt(r.cer)}</span></td>
         <td>${fmt(r.wer)}</td>
         ${categoryCells(r)}
         <td>${r.valid}</td>
       </tr>`).join("")
-    : '<tr><td colspan="9" class="empty-row">Nothing scored for this language yet.</td></tr>';
+    : '<tr><td colspan="10" class="empty-row">Nothing scored for this language yet.</td></tr>';
   document.getElementById("per-lang-fail-body").innerHTML = failed.length
     ? failed.map(r => `<tr><td>${modelCell(r)}</td><td>${r.architecture}</td>
         <td><span class="badge badge-fail">no valid output</span></td></tr>`).join("")
     : '<tr><td colspan="3" class="empty-row">Every model for this language produced audio.</td></tr>';
+  wirePlayers(document.getElementById("per-lang-body"));
 }
 
 function renderAll() {
@@ -519,12 +586,13 @@ function renderAll() {
     .sort((a, b) => a.language.localeCompare(b.language) || (a.cer == null) - (b.cer == null) || a.cer - b.cer);
 
   document.getElementById("all-thead").innerHTML =
-    `<tr><th>Language</th><th>Model</th><th>Architecture</th><th>CER</th><th>WER</th>`
+    `<tr><th>Language</th><th>Model</th><th>Listen</th><th>Architecture</th><th>CER</th><th>WER</th>`
     + categoryHeaders() + `<th>Samples</th><th>ASR judge</th></tr>`;
   document.getElementById("all-body").innerHTML = rows.length
     ? rows.map(r => `<tr>
         <td class="lang-cell">${r.language}</td>
         <td>${modelCell(r)}</td>
+        <td>${playCell(r)}</td>
         <td>${r.architecture}</td>
         <td><span class="badge ${cerClass(r.cer)}">${fmt(r.cer)}</span></td>
         <td>${fmt(r.wer)}</td>
@@ -534,6 +602,7 @@ function renderAll() {
       </tr>`).join("")
     : '<tr><td colspan="10" class="empty-row">Nothing matches.</td></tr>';
   document.getElementById("all-count").textContent = `${rows.length} rows`;
+  wirePlayers(document.getElementById("all-body"));
 }
 
 function wireTabs() {
@@ -574,6 +643,8 @@ async function main() {
           samples: b.samples || 0,
           valid: b.valid || 0,
           per_category: b.per_category || {},
+          sample_clip: b.sample_clip || "",
+          sample_category: b.sample_category || "",
           judge: bench.judge_model || "",
           judge_cer: bench.judge_cer_on_real_speech,
           num_samples_per_category: bench.num_samples_per_category || 0,

@@ -27,6 +27,8 @@ benchmarks:
       samples: 200
       valid: 200
       avg_seconds_per_sample: 2.3
+  sample_category: education
+  sample_clip: '00003'
 - model: ghananlpcommunity/ghana-tts-36k
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   owner: ghananlpcommunity
@@ -47,6 +49,8 @@ benchmarks:
       samples: 200
       valid: 200
       avg_seconds_per_sample: 2.42
+  sample_category: education
+  sample_clip: '00003'
 - model: ghananlpcommunity/ghana-tts-72k
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   owner: ghananlpcommunity
@@ -67,3 +71,5 @@ benchmarks:
       samples: 200
       valid: 200
       avg_seconds_per_sample: 2.31
+  sample_category: education
+  sample_clip: '00003'

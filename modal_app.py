@@ -356,6 +356,39 @@ def migrate_audio_layout(category="education", dry_run=True):
     return moved
 
 
+
+@app.function(
+    image=asr_image,
+    timeout=60 * 60 * 3,
+    volumes=VOLUMES,
+    secrets=SECRETS,
+)
+def publish_audio(repo_id="ghananlpcommunity/nsanku-tts-audio", private=False):
+    """Push the clips and transcriptions to a HF dataset repo.
+
+    Uploading from the container rather than a laptop: the volume is already
+    here, and 1.7 GB over a home connection is the slow way round.
+    """
+    import os
+
+    from huggingface_hub import HfApi
+
+    api = HfApi(token=os.environ["HF_TOKEN"])
+    api.create_repo(repo_id=repo_id, repo_type="dataset", exist_ok=True)
+    for folder, prefix in ((AUDIO_SUBDIR, "audio"), (TRANSCRIPTIONS_SUBDIR, "transcriptions")):
+        if not os.path.isdir(folder):
+            continue
+        api.upload_folder(
+            folder_path=folder,
+            path_in_repo=prefix,
+            repo_id=repo_id,
+            repo_type="dataset",
+            commit_message=f"Publish {prefix} from the nsanku-TTS benchmark",
+        )
+    info = api.repo_info(repo_id=repo_id, repo_type="dataset")
+    return {"repo": repo_id, "files": len(info.siblings or [])}
+
+
 @app.local_entrypoint()
 def main(
     langs: str = "",
