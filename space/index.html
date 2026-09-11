@@ -205,6 +205,14 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
   <div id="main" style="display:none;">
     <div class="stats-grid" id="stats-grid"></div>
 
+    <div class="filters" id="domain-filters" style="margin-bottom:14px;">
+      <label>Text domains:</label>
+      <span id="domain-boxes"></span>
+      <span style="color:var(--text-muted); font-size:0.82rem;">
+        scores are the mean over the selected domains
+      </span>
+    </div>
+
     <div class="tabs">
       <div class="tab active" data-tab="global">Global Leaderboard</div>
       <div class="tab" data-tab="per-lang">Per-Language</div>
@@ -216,8 +224,10 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
       <div class="filters">
         <label>Track:</label>
         <select id="global-track-select">
-          <option value="open" selected>Open models</option>
+          <option value="non-llm" selected>Open models</option>
+          <option value="cpu">CPU models (&le;0.3B)</option>
           <option value="api">Hosted APIs</option>
+          <option value="llm">LLM-based</option>
           <option value="All">All</option>
         </select>
       </div>
@@ -244,8 +254,10 @@ h3.section-title { font-size: 0.98rem; font-weight: 600; color: var(--text-stron
         <label>Track:</label>
         <select id="per-track-select">
           <option value="All" selected>All</option>
-          <option value="open">Open models</option>
+          <option value="non-llm">Open models</option>
+          <option value="cpu">CPU models (&le;0.3B)</option>
           <option value="api">Hosted APIs</option>
+          <option value="llm">LLM-based</option>
         </select>
       </div>
       <p id="per-lang-judge" class="section-note" style="margin-bottom:14px;"></p>
@@ -470,15 +482,37 @@ function setPlaying(id) {
   });
 }
 
-function trackOf(row) {
-  return /khaya/i.test(row.model) ? "api" : "open";
+// Classes come from the data, not the model name: non-llm / api / llm, as in
+// the ASR benchmark. "cpu" is a derived view over the open track.
+const CPU_MAX_BN = 0.3;
+
+function parseParamsBn(str) {
+  if (!str) return NaN;
+  const m = String(str).trim().match(/^([\d.]+)\s*([BM])$/i);
+  if (!m) return NaN;
+  return m[2].toUpperCase() === "M" ? parseFloat(m[1]) / 1000 : parseFloat(m[1]);
 }
 
-function cerClass(cer) {
-  if (cer == null) return "";
-  if (cer <= 0.15) return "badge-pass";
-  if (cer <= 0.35) return "";
-  return "badge-fail";
+function matchesTrack(row, track) {
+  if (!track || track === "All") return true;
+  if (track === "cpu") {
+    const bn = parseParamsBn(row.params);
+    return row.model_class === "non-llm" && !isNaN(bn) && bn <= CPU_MAX_BN;
+  }
+  return row.model_class === track;
+}
+
+function trackBadge(row) {
+  if (row.model_class === "api") return '<span class="badge badge-api">API</span>';
+  if (row.model_class === "llm") return '<span class="badge badge-llm">LLM</span>';
+  return '<span class="badge badge-nonllm">open</span>';
+}
+
+// CER is a continuous measure with no natural pass mark, and a threshold
+// would invent one — a 0.20 is not "good" or "bad" without knowing the
+// judge's own error rate for that language, which is shown alongside it.
+function cerCell(cer) {
+  return `<span class="cer">${fmt(cer)}</span>`;
 }
 
 function fmt(v, digits = 4) {
@@ -500,42 +534,75 @@ function transcriptLink(iso, category, model, pc) {
 }
 
 function modelCell(row) {
-  const badge = trackOf(row) === "api"
-    ? '<span class="badge badge-api">API</span>'
-    : '<span class="badge badge-nonllm">open</span>';
-  return `<a href="${row.model_url}" target="_blank">${row.model}</a> ${badge}${recipeLink(row.model, row.iso)}`;
+  return `<a href="${row.model_url}" target="_blank">${row.model}</a> `
+       + `${trackBadge(row)}${recipeLink(row.model, row.iso)}`;
+}
+
+function selectedCategories() {
+  const boxes = [...document.querySelectorAll(".cat-filter:checked")].map(b => b.value);
+  return boxes.length ? boxes : ALL_CATEGORIES;
 }
 
 function categoryHeaders() {
-  return ALL_CATEGORIES.map(c => `<th>${CATEGORY_LABELS[c] || c} CER</th>`).join("");
+  // Only worth a column per domain once there is more than one to compare.
+  const cats = selectedCategories();
+  if (cats.length < 2) return "";
+  return cats.map(c => `<th>CER (${CATEGORY_LABELS[c] || c})</th>`).join("");
 }
 
 function categoryCells(row) {
-  return ALL_CATEGORIES.map(c =>
+  const cats = selectedCategories();
+  if (cats.length < 2) return "";
+  return cats.map(c =>
     `<td>${transcriptLink(row.iso, c, row.model, row.per_category[c])}</td>`).join("");
+}
+
+// A row's score is the mean over the domains currently selected, so
+// unticking a domain actually changes the ranking rather than just hiding a
+// column.
+function effective(row) {
+  const cats = selectedCategories();
+  const cers = [], wers = [];
+  for (const c of cats) {
+    const pc = row.per_category[c];
+    if (!pc) continue;
+    if (Number.isFinite(pc.cer)) cers.push(pc.cer);
+    if (Number.isFinite(pc.wer)) wers.push(pc.wer);
+  }
+  if (!cers.length) return { cer: null, wer: null, samples: 0 };
+  const mean = a => a.reduce((x, y) => x + y, 0) / a.length;
+  return {
+    cer: mean(cers),
+    wer: wers.length ? mean(wers) : null,
+    samples: cats.reduce((n, c) => n + ((row.per_category[c] || {}).valid || 0), 0),
+  };
 }
 
 function renderGlobal() {
   const track = document.getElementById("global-track-select").value;
-  const rows = ALL_ROWS.filter(r => r.cer != null && (track === "All" || trackOf(r) === track));
+  const rows = ALL_ROWS
+    .filter(r => matchesTrack(r, track))
+    .map(r => ({ r, e: effective(r) }))
+    .filter(x => x.e.cer != null);
   const best = {};
-  for (const r of rows) if (!best[r.iso] || r.cer < best[r.iso].cer) best[r.iso] = r;
-  const ordered = Object.values(best).sort((a, b) => a.cer - b.cer);
+  for (const x of rows) if (!best[x.r.iso] || x.e.cer < best[x.r.iso].e.cer) best[x.r.iso] = x;
+  const ordered = Object.values(best).sort((a, b) => a.e.cer - b.e.cer);
 
   document.getElementById("global-thead").innerHTML =
-    `<tr><th>#</th><th>Language</th><th>Model</th><th>Listen</th><th>Architecture</th><th>CER</th><th>WER</th>`
+    `<tr><th>#</th><th>Language</th><th>Model</th><th>Listen</th><th>Architecture</th><th>Params</th><th>CER</th><th>WER</th>`
     + categoryHeaders() + `<th>Samples</th><th>ASR judge</th></tr>`;
   document.getElementById("global-body").innerHTML = ordered.length
-    ? ordered.map((r, i) => `<tr>
+    ? ordered.map(({ r, e }, i) => `<tr>
         <td class="rank${i < 3 ? " r" + (i + 1) : ""}">${i + 1}</td>
         <td class="lang-cell">${r.language}</td>
         <td>${modelCell(r)}</td>
         <td>${playCell(r)}</td>
         <td>${r.architecture}</td>
-        <td><span class="badge ${cerClass(r.cer)}">${fmt(r.cer)}</span></td>
-        <td>${fmt(r.wer)}</td>
+        <td>${r.params}</td>
+        <td>${cerCell(e.cer)}</td>
+        <td>${fmt(e.wer)}</td>
         ${categoryCells(r)}
-        <td>${r.valid}</td>
+        <td>${e.samples}</td>
         <td style="font-size:0.82rem">${r.judge} <span style="color:var(--text-muted)">(${fmt(r.judge_cer, 3)})</span></td>
       </tr>`).join("")
     : '<tr><td colspan="13" class="empty-row">No results for this track yet.</td></tr>';
@@ -546,11 +613,12 @@ function renderPerLang() {
   const iso = document.getElementById("per-lang-select").value;
   const track = document.getElementById("per-track-select").value;
   const rows = ALL_ROWS
-    .filter(r => r.iso === iso && (track === "All" || trackOf(r) === track))
-    .sort((a, b) => (a.cer == null) - (b.cer == null) || a.cer - b.cer);
-  const scored = rows.filter(r => r.cer != null);
-  const failed = rows.filter(r => r.cer == null);
-  const first = rows[0];
+    .filter(r => r.iso === iso && matchesTrack(r, track))
+    .map(r => ({ r, e: effective(r) }))
+    .sort((a, b) => (a.e.cer == null) - (b.e.cer == null) || a.e.cer - b.e.cer);
+  const scored = rows.filter(x => x.e.cer != null);
+  const failed = rows.filter(x => x.e.cer == null);
+  const first = rows.length ? rows[0].r : null;
 
   document.getElementById("per-lang-judge").innerHTML = first
     ? `Judged by <strong>${first.judge}</strong>, whose own CER on real speech in this language is
@@ -558,22 +626,23 @@ function renderPerLang() {
        ${first.num_samples_per_category} sentences per domain.`
     : "";
   document.getElementById("per-lang-thead").innerHTML =
-    `<tr><th>#</th><th>Model</th><th>Listen</th><th>Architecture</th><th>CER</th><th>WER</th>`
+    `<tr><th>#</th><th>Model</th><th>Listen</th><th>Architecture</th><th>Params</th><th>CER</th><th>WER</th>`
     + categoryHeaders() + `<th>Samples</th></tr>`;
   document.getElementById("per-lang-body").innerHTML = scored.length
-    ? scored.map((r, i) => `<tr>
+    ? scored.map(({ r, e }, i) => `<tr>
         <td class="rank${i < 3 ? " r" + (i + 1) : ""}">${i + 1}</td>
         <td>${modelCell(r)}</td>
         <td>${playCell(r)}</td>
         <td>${r.architecture}</td>
-        <td><span class="badge ${cerClass(r.cer)}">${fmt(r.cer)}</span></td>
-        <td>${fmt(r.wer)}</td>
+        <td>${r.params}</td>
+        <td>${cerCell(e.cer)}</td>
+        <td>${fmt(e.wer)}</td>
         ${categoryCells(r)}
-        <td>${r.valid}</td>
+        <td>${e.samples}</td>
       </tr>`).join("")
     : '<tr><td colspan="10" class="empty-row">Nothing scored for this language yet.</td></tr>';
   document.getElementById("per-lang-fail-body").innerHTML = failed.length
-    ? failed.map(r => `<tr><td>${modelCell(r)}</td><td>${r.architecture}</td>
+    ? failed.map(({ r }) => `<tr><td>${modelCell(r)}</td><td>${r.architecture}</td>
         <td><span class="badge badge-fail">no valid output</span></td></tr>`).join("")
     : '<tr><td colspan="3" class="empty-row">Every model for this language produced audio.</td></tr>';
   wirePlayers(document.getElementById("per-lang-body"));
@@ -583,21 +652,24 @@ function renderAll() {
   const q = document.getElementById("all-search").value.trim().toLowerCase();
   const rows = ALL_ROWS
     .filter(r => !q || r.model.toLowerCase().includes(q) || r.language.toLowerCase().includes(q))
-    .sort((a, b) => a.language.localeCompare(b.language) || (a.cer == null) - (b.cer == null) || a.cer - b.cer);
+    .map(r => ({ r, e: effective(r) }))
+    .sort((a, b) => a.r.language.localeCompare(b.r.language)
+                 || (a.e.cer == null) - (b.e.cer == null) || a.e.cer - b.e.cer);
 
   document.getElementById("all-thead").innerHTML =
-    `<tr><th>Language</th><th>Model</th><th>Listen</th><th>Architecture</th><th>CER</th><th>WER</th>`
+    `<tr><th>Language</th><th>Model</th><th>Listen</th><th>Architecture</th><th>Params</th><th>CER</th><th>WER</th>`
     + categoryHeaders() + `<th>Samples</th><th>ASR judge</th></tr>`;
   document.getElementById("all-body").innerHTML = rows.length
-    ? rows.map(r => `<tr>
+    ? rows.map(({ r, e }) => `<tr>
         <td class="lang-cell">${r.language}</td>
         <td>${modelCell(r)}</td>
         <td>${playCell(r)}</td>
         <td>${r.architecture}</td>
-        <td><span class="badge ${cerClass(r.cer)}">${fmt(r.cer)}</span></td>
-        <td>${fmt(r.wer)}</td>
+        <td>${r.params}</td>
+        <td>${cerCell(e.cer)}</td>
+        <td>${fmt(e.wer)}</td>
         ${categoryCells(r)}
-        <td>${r.valid}</td>
+        <td>${e.samples}</td>
         <td style="font-size:0.82rem">${r.judge}</td>
       </tr>`).join("")
     : '<tr><td colspan="10" class="empty-row">Nothing matches.</td></tr>';
@@ -639,6 +711,8 @@ async function main() {
           model: b.model || "",
           model_url: b.model_url || `https://huggingface.co/${b.model}`,
           architecture: b.architecture || "",
+          model_class: b.model_class || "non-llm",
+          params: b.params || "?",
           cer: b.cer, wer: b.wer,
           samples: b.samples || 0,
           valid: b.valid || 0,
@@ -662,6 +736,18 @@ async function main() {
       <div class="stat-card"><div class="label">Domains</div><div class="value">${ALL_CATEGORIES.length}</div></div>
       <div class="stat-card"><div class="label">Best CER</div><div class="value">${scored.length ? fmt(Math.min(...scored.map(r => r.cer)), 3) : "—"}</div></div>
     `;
+
+    const boxes = document.getElementById("domain-boxes");
+    boxes.innerHTML = ALL_CATEGORIES.map(c =>
+      `<label class="switch" style="margin-right:10px;">
+         <input type="checkbox" class="cat-filter" value="${c}" checked> ${CATEGORY_LABELS[c] || c}
+       </label>`).join("");
+    boxes.querySelectorAll(".cat-filter").forEach(b =>
+      b.addEventListener("change", () => { renderGlobal(); renderPerLang(); renderAll(); }));
+    // With a single domain there is nothing to compare, so the filter would
+    // only be a box that must stay ticked.
+    document.getElementById("domain-filters").style.display =
+      ALL_CATEGORIES.length > 1 ? "" : "none";
 
     const sel = document.getElementById("per-lang-select");
     sel.innerHTML = [...new Set(ALL_ROWS.map(r => r.iso))]

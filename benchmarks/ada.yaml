@@ -4,7 +4,7 @@ num_samples_per_category: 200
 categories:
 - education
 scoring: cer
-judge: &id001
+judge:
   model: KhayaAI/khaya-asr-v3
   cer_on_real_speech: 0.083
 updated: '2026-09-11'
@@ -13,13 +13,13 @@ benchmarks:
   model_url: https://translation.ghananlp.org
   owner: KhayaAI
   architecture: Khaya AI TTS v2 API
+  model_class: api
+  params: API
   cer: 0.0836
   wer: 0.4413
   score: 0.0836
   samples: 200
   valid: 200
-  judge: *id001
-  source: evaluated
   per_category:
     education:
       wer: 0.4413
@@ -29,19 +29,18 @@ benchmarks:
       avg_seconds_per_sample: 2.35
   sample_category: education
   sample_clip: '00013'
+  source: evaluated
 - model: ghananlpcommunity/ghana-tts-36k
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   owner: ghananlpcommunity
   architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
   cer: 0.1548
   wer: 0.597
   score: 0.1548
   samples: 200
   valid: 200
-  judge:
-    model: KhayaAI/khaya-asr-v3
-    cer_on_real_speech: 0.083
-  source: evaluated
   per_category:
     education:
       wer: 0.597
@@ -51,19 +50,18 @@ benchmarks:
       avg_seconds_per_sample: 2.45
   sample_category: education
   sample_clip: '00013'
+  source: evaluated
 - model: ghananlpcommunity/ghana-tts-72k
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   owner: ghananlpcommunity
   architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
   cer: 0.4622
   wer: 0.6673
   score: 0.4622
   samples: 200
   valid: 200
-  judge:
-    model: KhayaAI/khaya-asr-v3
-    cer_on_real_speech: 0.083
-  source: evaluated
   per_category:
     education:
       wer: 0.6673
@@ -73,3 +71,4 @@ benchmarks:
       avg_seconds_per_sample: 2.29
   sample_category: education
   sample_clip: '00013'
+  source: evaluated

@@ -1,6 +1,8 @@
 [
   {
     "name": "ghananlpcommunity/ghana-tts-72k",
+    "model_class": "non-llm",
+    "params": "0.7B",
     "architecture": "VoxCPM v1 (0.7B)",
     "languages": ["twi_akuapem", "twi_asante", "ewe", "dag", "gaa", "fat", "ada", "dga", "gjn", "gur", "nzi", "xsm"],
     "input_type": "orthographic",
@@ -11,6 +13,8 @@
   },
   {
     "name": "ghananlpcommunity/ghana-tts-36k",
+    "model_class": "non-llm",
+    "params": "0.7B",
     "architecture": "VoxCPM v1 (0.7B)",
     "languages": ["twi_akuapem", "twi_asante", "ewe", "dag", "gaa", "fat", "ada", "dga", "gjn", "gur", "nzi", "xsm"],
     "input_type": "orthographic",
@@ -21,6 +25,8 @@
   },
   {
     "name": "FarmerlineML/voxcpm2-akan-sft",
+    "model_class": "non-llm",
+    "params": "2B",
     "architecture": "VoxCPM2 (2B)",
     "languages": ["twi_asante", "twi_akuapem"],
     "input_type": "orthographic",
@@ -31,6 +37,8 @@
   },
   {
     "name": "FarmerlineML/voxcpm2-dagbani-sft",
+    "model_class": "non-llm",
+    "params": "2B",
     "architecture": "VoxCPM2 (2B)",
     "languages": ["dag"],
     "input_type": "orthographic",
@@ -41,6 +49,8 @@
   },
   {
     "name": "FarmerlineML/voxcpm2-ewe-sft",
+    "model_class": "non-llm",
+    "params": "2B",
     "architecture": "VoxCPM2 (2B)",
     "languages": ["ewe"],
     "input_type": "orthographic",
@@ -51,6 +61,8 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante",
+    "model_class": "non-llm",
+    "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",
     "languages": ["twi_asante"],
     "input_type": "orthographic",
@@ -62,6 +74,8 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem",
+    "model_class": "non-llm",
+    "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",
     "languages": ["twi_akuapem"],
     "input_type": "orthographic",
@@ -73,6 +87,8 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Ewe",
+    "model_class": "non-llm",
+    "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",
     "languages": ["ewe"],
     "input_type": "orthographic",
@@ -84,6 +100,8 @@
   },
   {
     "name": "ghananlpcommunity/nano-twi",
+    "model_class": "non-llm",
+    "params": "0.03B",
     "architecture": "Matcha-TTS + Vocos ONNX",
     "languages": ["twi_asante"],
     "input_type": "orthographic",
@@ -94,6 +112,8 @@
   },
   {
     "name": "KhayaAI/khaya-tts-v2",
+    "model_class": "api",
+    "params": "API",
     "architecture": "Khaya AI TTS v2 API",
     "languages": ["ada", "dag", "dga", "ewe", "fat", "gaa", "gjn", "gur", "nzi", "twi_akuapem", "twi_asante", "xsm"],
     "input_type": "orthographic",

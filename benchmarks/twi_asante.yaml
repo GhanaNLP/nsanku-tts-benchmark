@@ -4,7 +4,7 @@ num_samples_per_category: 200
 categories:
 - education
 scoring: cer
-judge: &id001
+judge:
   model: Qlerqly/griot-nano-1
   cer_on_real_speech: 0.2212
 updated: '2026-09-11'
@@ -13,13 +13,13 @@ benchmarks:
   model_url: https://translation.ghananlp.org
   owner: KhayaAI
   architecture: Khaya AI TTS v2 API
+  model_class: api
+  params: API
   cer: 0.0953
   wer: 0.4076
   score: 0.0953
   samples: 200
   valid: 200
-  judge: *id001
-  source: evaluated
   per_category:
     education:
       wer: 0.4076
@@ -29,19 +29,18 @@ benchmarks:
       avg_seconds_per_sample: 0.0
   sample_category: education
   sample_clip: '00003'
+  source: evaluated
 - model: ghananlpcommunity/ghana-tts-36k
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   owner: ghananlpcommunity
   architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
   cer: 0.1422
   wer: 0.51
   score: 0.1422
   samples: 200
   valid: 200
-  judge:
-    model: Qlerqly/griot-nano-1
-    cer_on_real_speech: 0.2212
-  source: evaluated
   per_category:
     education:
       wer: 0.51
@@ -51,19 +50,18 @@ benchmarks:
       avg_seconds_per_sample: 0.0
   sample_category: education
   sample_clip: '00003'
+  source: evaluated
 - model: FarmerlineML/voxcpm2-akan-sft
   model_url: https://huggingface.co/FarmerlineML/voxcpm2-akan-sft
   owner: FarmerlineML
   architecture: VoxCPM2 (2B)
+  model_class: non-llm
+  params: 2B
   cer: 0.173
   wer: 0.6288
   score: 0.173
   samples: 200
   valid: 200
-  judge:
-    model: Qlerqly/griot-nano-1
-    cer_on_real_speech: 0.2212
-  source: evaluated
   per_category:
     education:
       wer: 0.6288
@@ -73,19 +71,18 @@ benchmarks:
       avg_seconds_per_sample: 0.0
   sample_category: education
   sample_clip: '00003'
+  source: evaluated
 - model: ghananlpcommunity/ghana-tts-72k
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   owner: ghananlpcommunity
   architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
   cer: 0.1969
   wer: 0.5691
   score: 0.1969
   samples: 200
   valid: 200
-  judge:
-    model: Qlerqly/griot-nano-1
-    cer_on_real_speech: 0.2212
-  source: evaluated
   per_category:
     education:
       wer: 0.5691
@@ -95,19 +92,18 @@ benchmarks:
       avg_seconds_per_sample: 0.0
   sample_category: education
   sample_clip: '00003'
+  source: evaluated
 - model: ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante
   model_url: https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante
   owner: ghananlpcommunity
   architecture: F5-TTS (DiT + Vocos)
+  model_class: non-llm
+  params: 0.3B
   cer: 0.3482
   wer: 0.6835
   score: 0.3482
   samples: 200
   valid: 200
-  judge:
-    model: Qlerqly/griot-nano-1
-    cer_on_real_speech: 0.2212
-  source: evaluated
   per_category:
     education:
       wer: 0.6835
@@ -117,19 +113,18 @@ benchmarks:
       avg_seconds_per_sample: 0.0
   sample_category: education
   sample_clip: '00003'
+  source: evaluated
 - model: ghananlpcommunity/nano-twi
   model_url: https://huggingface.co/ghananlpcommunity/nano-twi
   owner: ghananlpcommunity
   architecture: Matcha-TTS + Vocos ONNX
+  model_class: non-llm
+  params: 0.03B
   cer: 0.6019
   wer: 0.9622
   score: 0.6019
   samples: 200
   valid: 200
-  judge:
-    model: Qlerqly/griot-nano-1
-    cer_on_real_speech: 0.2212
-  source: evaluated
   per_category:
     education:
       wer: 0.9622
@@ -139,3 +134,4 @@ benchmarks:
       avg_seconds_per_sample: 0.0
   sample_category: education
   sample_clip: '00003'
+  source: evaluated

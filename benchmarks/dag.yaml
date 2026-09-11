@@ -4,7 +4,7 @@ num_samples_per_category: 200
 categories:
 - education
 scoring: cer
-judge: &id001
+judge:
   model: KhayaAI/khaya-asr-v3
   cer_on_real_speech: 0.1526
 updated: '2026-09-11'
@@ -13,13 +13,13 @@ benchmarks:
   model_url: https://translation.ghananlp.org
   owner: KhayaAI
   architecture: Khaya AI TTS v2 API
+  model_class: api
+  params: API
   cer: 0.0551
   wer: 0.3215
   score: 0.0551
   samples: 200
   valid: 200
-  judge: *id001
-  source: evaluated
   per_category:
     education:
       wer: 0.3215
@@ -29,19 +29,18 @@ benchmarks:
       avg_seconds_per_sample: 1.38
   sample_category: education
   sample_clip: '00002'
+  source: evaluated
 - model: ghananlpcommunity/ghana-tts-36k
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   owner: ghananlpcommunity
   architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
   cer: 0.1266
   wer: 0.5424
   score: 0.1266
   samples: 200
   valid: 200
-  judge:
-    model: KhayaAI/khaya-asr-v3
-    cer_on_real_speech: 0.1526
-  source: evaluated
   per_category:
     education:
       wer: 0.5424
@@ -51,19 +50,18 @@ benchmarks:
       avg_seconds_per_sample: 2.38
   sample_category: education
   sample_clip: '00002'
+  source: evaluated
 - model: FarmerlineML/voxcpm2-dagbani-sft
   model_url: https://huggingface.co/FarmerlineML/voxcpm2-dagbani-sft
   owner: FarmerlineML
   architecture: VoxCPM2 (2B)
+  model_class: non-llm
+  params: 2B
   cer: 0.1304
   wer: 0.4729
   score: 0.1304
   samples: 200
   valid: 200
-  judge:
-    model: KhayaAI/khaya-asr-v3
-    cer_on_real_speech: 0.1526
-  source: evaluated
   per_category:
     education:
       wer: 0.4729
@@ -73,19 +71,18 @@ benchmarks:
       avg_seconds_per_sample: 2.44
   sample_category: education
   sample_clip: '00002'
+  source: evaluated
 - model: ghananlpcommunity/ghana-tts-72k
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   owner: ghananlpcommunity
   architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
   cer: 0.1478
   wer: 0.5607
   score: 0.1478
   samples: 200
   valid: 200
-  judge:
-    model: KhayaAI/khaya-asr-v3
-    cer_on_real_speech: 0.1526
-  source: evaluated
   per_category:
     education:
       wer: 0.5607
@@ -95,3 +92,4 @@ benchmarks:
       avg_seconds_per_sample: 2.29
   sample_category: education
   sample_clip: '00002'
+  source: evaluated

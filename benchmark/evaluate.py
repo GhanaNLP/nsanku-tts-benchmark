@@ -54,6 +54,18 @@ from .dataset import load_text_samples, subset_to_iso
 
 logger = logging.getLogger(__name__)
 
+
+class _NoAliasDumper(yaml.SafeDumper):
+    """Never emit YAML anchors.
+
+    A shared dict (the judge, repeated per model) would otherwise be written
+    once as &id001 and referenced as *id001, which is valid YAML but not
+    something a small hand-rolled reader can follow.
+    """
+
+    def ignore_aliases(self, data):
+        return True
+
 # Written by stage 1 next to a model's clips, read by stage 2.
 ERRORS_FILE = "synth_errors.json"
 
@@ -174,7 +186,8 @@ def save_benchmark(iso_code, language, results, categories=None,
         "benchmarks": ranked,
     }
     with open(path, "w", encoding="utf-8") as f:
-        yaml.dump(out, f, default_flow_style=False, allow_unicode=True, sort_keys=False)
+        yaml.dump(out, f, Dumper=_NoAliasDumper, default_flow_style=False,
+                  allow_unicode=True, sort_keys=False)
     print(f"  Saved: {path}")
 
 
@@ -431,8 +444,7 @@ def score_language(subset, device="cuda", force=False, samples=None):
         by_cat = {c: v for c, v in per_model[model_id].items() if v}
         if not by_cat:
             continue
-        results.append(_model_result(model_info, by_cat, judge_meta,
-                                     sample_clips.get(model_id)))
+        results.append(_model_result(model_info, by_cat, sample_clips.get(model_id)))
 
     save_benchmark(
         iso, language, results,
@@ -443,7 +455,7 @@ def score_language(subset, device="cuda", force=False, samples=None):
     return results
 
 
-def _model_result(model_info, by_category, judge_meta, sample_clip=None):
+def _model_result(model_info, by_category, sample_clip=None):
     """Average a model's per-domain scores into one row.
 
     Domains are weighted equally: a model is not credited for a register it
@@ -459,12 +471,14 @@ def _model_result(model_info, by_category, judge_meta, sample_clip=None):
         "model_url": model_info.get("url", f"https://huggingface.co/{model_id}"),
         "owner": model_id.split("/")[0],
         "architecture": model_info.get("architecture", "unknown"),
+        # Mirrors the ASR benchmark's tracks: non-llm / api / llm.
+        "model_class": model_info.get("model_class", "non-llm"),
+        "params": model_info.get("params", "?"),
         "cer": mean_cer,
         "wer": mean_wer,
         "score": mean_cer,
         "samples": sum(v["samples"] for v in by_category.values()),
         "valid": sum(v["valid"] for v in by_category.values()),
-        "judge": judge_meta,
         "per_category": by_category,
         "source": "evaluated",
     }
