@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Text-to-Speech benchmark for Ghanaian languages, scored by CTC forced-alignment.">
+<meta name="description" content="Text-to-Speech benchmark for Ghanaian languages, scored by ASR character error rate.">
 <title>nsanku TTS Benchmark</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -46,7 +46,7 @@ td.lang-cell{background:var(--accent-hi);font-weight:600;color:var(--text-strong
 <div class="container">
   <div class="site-head">
     <h1>nsanku TTS Benchmark</h1>
-    <span class="tagline">Text-to-Speech for Ghanaian languages &middot; scored by CTC forced-alignment</span>
+    <span class="tagline">Text-to-Speech for Ghanaian languages &middot; scored by ASR character error rate</span>
   </div>
 
   <div id="loading" class="loading">
@@ -57,8 +57,12 @@ td.lang-cell{background:var(--accent-hi);font-weight:600;color:var(--text-strong
   <div id="app" style="display:none">
     <div class="stats-grid" id="stats"></div>
     <div class="section-note">
-      Score = mean per-frame log-probability of CTC forced-alignment (MMS-300M).
-      Closer to 0 = better. Models are ranked by score within each language.
+      Every clip is transcribed by the lowest-CER ASR model for that language
+      (from the <a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-asr-benchmark">nsanku ASR benchmark</a>)
+      and compared to the sentence the model was asked to read. Score = mean
+      character error rate, <strong>lower is better</strong>, ranked within each language.
+      A judge has its own error rate on real speech (shown per row): a TTS model
+      cannot meaningfully score below it.
     </div>
     <div class="table-wrap">
       <table id="leaderboard">
@@ -66,12 +70,12 @@ td.lang-cell{background:var(--accent-hi);font-weight:600;color:var(--text-strong
           <tr>
             <th>#</th>
             <th>Language</th>
-            <th>Family</th>
             <th>Model</th>
             <th>Architecture</th>
-            <th>Score</th>
+            <th>CER</th>
+            <th>WER</th>
             <th>Samples</th>
-            <th>Status</th>
+            <th>ASR judge</th>
           </tr>
         </thead>
         <tbody id="lb-body"></tbody>
@@ -85,7 +89,7 @@ td.lang-cell{background:var(--accent-hi);font-weight:600;color:var(--text-strong
 </div>
 
 <script>
-const GITHUB_RAW = "https://raw.githubusercontent.com/michsethowusu/nsanku-tts-benchmark/main";
+const GITHUB_RAW = "https://raw.githubusercontent.com/GhanaNLP/nsanku-TTS/main";
 const LANG_URL = GITHUB_RAW + "/languages/ghana_languages.yaml";
 const BENCH_PREFIX = GITHUB_RAW + "/benchmarks/";
 
@@ -113,102 +117,137 @@ function parseSimpleYaml(text) {
 }
 
 function parseBenchYaml(text) {
-  const lines = text.split("\n");
+  // yaml.dump(default_flow_style=False) writes list items at column 0 and
+  // their fields at two spaces; `entries` and `judge` nest deeper and are
+  // skipped here.
   const meta = {};
   const benchmarks = [];
-  let inBench = false;
+  let section = "meta";
   let current = null;
 
-  for (const line of lines) {
-    if (line.startsWith("benchmarks:")) { inBench = true; continue; }
-    if (!inBench && line.includes(":") && !line.startsWith(" ")) {
+  for (const raw of text.split("\n")) {
+    if (!raw.trim()) continue;
+    const line = raw.replace(/\s+$/, "");
+
+    if (/^benchmarks:/.test(line)) { section = "bench"; continue; }
+    if (/^judge:/.test(line)) { section = "judge"; continue; }
+    // A list item also starts at column 0, so it must be tested before the
+    // top-level key branch or it would be read as one.
+    if (!/^- /.test(line) && /^\S/.test(line) && line.includes(":")) {
+      section = "meta";
       const [k, ...rest] = line.split(":");
       meta[k.trim()] = rest.join(":").trim();
-    } else if (inBench && line.trimStart().startsWith("- model:")) {
-      if (current) benchmarks.push(current);
-      current = { model: line.split(":").slice(1).join(":").trim() };
-    } else if (inBench && current && line.includes(":") && line.startsWith("      ")) {
+      continue;
+    }
+
+    if (section === "judge" && /^ {2}\S/.test(line)) {
       const [k, ...rest] = line.trim().split(":");
+      meta["judge_" + k.trim()] = rest.join(":").trim();
+      continue;
+    }
+
+    if (section !== "bench") continue;
+    if (/^- /.test(line)) {
+      if (current) benchmarks.push(current);
+      const [k, ...rest] = line.slice(2).split(":");
+      current = { [k.trim()]: rest.join(":").trim() };
+    } else if (current && /^ {2}\S/.test(line) && line.includes(":")) {
+      const [k, ...rest] = line.trim().split(":");
+      const key = k.trim();
       const v = rest.join(":").trim();
-      if (k === "score" || k === "samples" || k === "valid") current[k] = parseFloat(v) || v;
-      else current[k] = v;
+      // `entries:` and `judge:` open nested blocks whose children are
+      // indented deeper and therefore ignored.
+      if (v === "") { current[key] = ""; continue; }
+      current[key] = ["cer", "wer", "score", "samples", "valid"].includes(key)
+        ? parseFloat(v)
+        : v;
     }
   }
   if (current) benchmarks.push(current);
   return { ...meta, benchmarks };
 }
 
+function cerClass(cer) {
+  if (cer <= 0.15) return "badge-pass";
+  if (cer <= 0.35) return "";
+  return "badge-fail";
+}
+
 async function main() {
   try {
     const langText = await fetchText(LANG_URL);
     const languages = parseSimpleYaml(langText);
-
     const activeLangs = languages.filter(l => l.in_sentences === "true");
     const allRows = [];
 
     for (const lang of activeLangs) {
       const iso = lang.iso_639_3;
       try {
-        const benchText = await fetchText(BENCH_PREFIX + iso + ".yaml");
-        const bench = parseBenchYaml(benchText);
+        const bench = parseBenchYaml(await fetchText(BENCH_PREFIX + iso + ".yaml"));
         for (const b of (bench.benchmarks || [])) {
           allRows.push({
             iso,
             language: lang.name.replace("_", " "),
-            family: lang.family || "",
             model: b.model || "",
             architecture: b.architecture || "",
-            score: typeof b.score === "number" ? b.score : null,
+            cer: Number.isFinite(b.cer) ? b.cer : null,
+            wer: Number.isFinite(b.wer) ? b.wer : null,
             samples: b.samples || 0,
+            valid: b.valid || 0,
+            judge: bench.judge_model || "",
+            judgeCer: parseFloat(bench.judge_cer_on_real_speech),
             error: b.error || null,
           });
         }
       } catch (e) {
-        // no benchmark file yet
+        // no benchmark file for this language yet
       }
     }
 
     document.getElementById("loading").style.display = "none";
     document.getElementById("app").style.display = "block";
 
-    // Stats
-    const scored = allRows.filter(r => r.score !== null);
+    const scored = allRows.filter(r => r.cer !== null);
     const uniqueModels = new Set(allRows.map(r => r.model));
-    const statsEl = document.getElementById("stats");
-    statsEl.innerHTML = `
-      <div class="stat-card"><div class="label">Languages</div><div class="value">${activeLangs.length}</div></div>
+    const langsWithResults = new Set(scored.map(r => r.iso));
+    const bestCer = scored.length
+      ? Math.min(...scored.map(r => r.cer)).toFixed(3)
+      : "—";
+    document.getElementById("stats").innerHTML = `
+      <div class="stat-card"><div class="label">Languages</div><div class="value">${langsWithResults.size}/${activeLangs.length}</div></div>
       <div class="stat-card"><div class="label">Models</div><div class="value">${uniqueModels.size}</div></div>
       <div class="stat-card"><div class="label">Scored</div><div class="value">${scored.length}</div></div>
+      <div class="stat-card"><div class="label">Best CER</div><div class="value">${bestCer}</div></div>
     `;
 
-    // Global leaderboard: best score per language
-    const bestByLang = {};
-    for (const r of allRows) {
-      if (r.score === null) continue;
-      if (!bestByLang[r.iso] || r.score > bestByLang[r.iso].score) {
-        bestByLang[r.iso] = r;
-      }
-    }
-    const globalRows = Object.values(bestByLang).sort((a, b) => b.score - a.score);
+    // Every model, grouped by language, best CER first within each.
+    scored.sort((a, b) =>
+      a.language.localeCompare(b.language) || a.cer - b.cer);
 
     const tbody = document.getElementById("lb-body");
-    if (globalRows.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;color:var(--text-muted);padding:28px">No benchmark results yet. Run <code>python pipeline.py</code> to generate them.</td></tr>';
+    if (!scored.length) {
+      tbody.innerHTML = '<tr><td colspan="8" style="text-align:center;color:var(--text-muted);padding:28px">No benchmark results yet.</td></tr>';
       return;
     }
 
-    tbody.innerHTML = globalRows.map((r, i) => {
-      const rankClass = i < 3 ? ` r${i + 1}` : "";
-      const scoreClass = r.score > -0.5 ? "badge-pass" : "badge-fail";
+    let lastLang = null;
+    let rankInLang = 0;
+    tbody.innerHTML = scored.map(r => {
+      if (r.language !== lastLang) { lastLang = r.language; rankInLang = 0; }
+      rankInLang += 1;
+      const rankClass = rankInLang <= 3 ? ` r${rankInLang}` : "";
+      const judgeCell = Number.isFinite(r.judgeCer)
+        ? `${r.judge} <span style="color:var(--text-muted)">(${r.judgeCer.toFixed(3)})</span>`
+        : r.judge;
       return `<tr>
-        <td class="rank${rankClass}">${i + 1}</td>
+        <td class="rank${rankClass}">${rankInLang}</td>
         <td class="lang-cell">${r.language}</td>
-        <td>${r.family}</td>
         <td><a href="https://huggingface.co/${r.model}" target="_blank">${r.model}</a></td>
         <td>${r.architecture}</td>
-        <td><span class="badge ${scoreClass}">${r.score.toFixed(4)}</span></td>
-        <td>${r.samples}</td>
-        <td>${r.error ? '<span class="badge badge-fail">' + r.error + '</span>' : '<span class="badge badge-pass">ok</span>'}</td>
+        <td><span class="badge ${cerClass(r.cer)}">${r.cer.toFixed(4)}</span></td>
+        <td>${r.wer !== null ? r.wer.toFixed(4) : "—"}</td>
+        <td>${r.valid || r.samples}</td>
+        <td style="font-size:0.82rem">${judgeCell}</td>
       </tr>`;
     }).join("");
   } catch (err) {

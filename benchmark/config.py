@@ -5,7 +5,7 @@ from pathlib import Path
 
 _env = Path(__file__).parent.parent / ".env"
 if _env.exists():
-    with open(_env) as _f:
+    with open(_env, encoding="utf-8") as _f:
         for _line in _f:
             _line = _line.strip()
             if _line and not _line.startswith("#") and "=" in _line:
@@ -18,9 +18,6 @@ GHANA_SENTENCES = "ghanaopenai/ghana-sentences"
 # only scores the *new* ones (incremental, keyed by subset row index).
 NUM_SAMPLES = int(os.environ.get("NSANKU_TTS_NUM_SAMPLES", "200"))
 
-# Alignment model: MMS-300M CTC (1130 languages) via transformers
-ALIGNMENT_MODEL = "MahmoudAshraf/mms-300m-1130-forced-aligner"
-
 # HuggingFace authentication
 HF_TOKEN = os.environ.get("HF_TOKEN", "")
 
@@ -28,7 +25,10 @@ HF_TOKEN = os.environ.get("HF_TOKEN", "")
 ROOT = Path(__file__).parent.parent
 # Results dir overridable so Modal can persist it on a shared Volume.
 BENCHMARK_DIR = Path(os.environ.get("NSANKU_TTS_RESULTS_DIR", str(ROOT / "benchmarks")))
-AUDIO_DIR = ROOT / "audio"
+# Every synthesised clip is kept: stage 2 reads them back to score, and
+# they are the only way to actually listen to what a model produced.
+# On Modal this points at the shared results Volume.
+AUDIO_DIR = Path(os.environ.get("NSANKU_TTS_AUDIO_DIR", str(ROOT / "audio")))
 DATA_DIR = ROOT / "data"
 LANG_CONFIG = ROOT / "languages" / "ghana_languages.yaml"
 
@@ -69,20 +69,6 @@ ISO_TO_NAME = {
 
 # Alignment ISO codes accepted by MMS-300M (ISO 639-3)
 # Maps our internal ISO to the code the alignment model expects
-ALIGNMENT_LANG_MAP = {
-    "ada": "ada",
-    "dag": "dag",
-    "dga": "dga",
-    "ewe": "ewe",
-    "fat": "fat",
-    "gaa": "gaa",
-    "gjn": "gjn",
-    "gur": "nhi",
-    "nzi": "nzi",
-    "twi_akuapem": "aka",
-    "twi_asante": "aka",
-    "xsm": "xsm",
-}
 
 # Language codes accepted by TTS models / hosted APIs (ISO 639-3).
 # Khaya TTS v2 expects e.g. Asante Twi = "twi", Akuapem Twi = "atw".

@@ -1,0 +1,3185 @@
+iso_639_3: nzi
+language: Nzema
+num_samples: 200
+scoring: cer
+judge: &id001
+  model: facebook/omniASR-LLM-7B-v2
+  cer_on_real_speech: 0.1417
+updated: '2026-09-11'
+benchmarks:
+- model: ghananlpcommunity/ghana-tts-36k
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  cer: 0.1325
+  wer: 0.6504
+  score: 0.1325
+  samples: 200
+  valid: 200
+  avg_seconds: 0.75
+  judge:
+    model: facebook/omniASR-LLM-7B-v2
+    cer_on_real_speech: 0.1417
+  entries:
+    '7':
+      text: Ngyɛnu ɛhye buke ɛnelɛkpɔkɛ, ɛnelɛkpɔkɛ ngyehyɛleɛ nee ɛnelɛ ɛzukoalɛdeɛ
+        ne anye.
+      hyp: ngyɛ nu ɛshe buke ɛne lɛ kpɔkɛ ɛne lɛ kpɔkɛ ngyeshɛle ɛnee ɛne lɛ ezukualɛdi
+        ɛnee anye
+      cer: 0.1159
+      wer: 1.3636
+    '16':
+      text: Ɛnelɛkpɔkɛ a le edwɛkɛkpɔkɛ foa ne mɔɔ yɛbɔ a ɔyɛ boɛ la.
+      hyp: ɛnelɛ kpɔkɛ aleɛ edwɛkɛ kpɔkɛ foane mɔɔ yɛbɔ a ɔyɛ boɛ la
+      cer: 0.0222
+      wer: 0.5
+    '17':
+      text: Kɔnsɔnante ɛnelɛkpɔkɛ a le kɔnsɔnante mɔɔ ɔda ye subane ali kɛ ɛnelɛkpɔkɛ
+        la.
+      hyp: kɔnsɔnante ɛnle lɛkpɔkɛ ale kɔnsɔnante mɔɔ ɔdaye subane alikɛ ɛnle lɛkpɔkɛ
+        la
+      cer: 0.0312
+      wer: 0.6154
+    '20':
+      text: Ɛnelɛkpɔkɛ a le ɛdendɛlɛ foa ne bie mɔɔ lɛ vawolo la.
+      hyp: ne lɛ kpɔkɛ ale ɛdendɛlɛ foa ne bie mɔɔ lɛ va wolo la
+      cer: 0.0238
+      wer: 0.5455
+    '27':
+      text: Yemɔti, duma Kofi lɛ ɛnelɛkpɔkɛ nwiɔ.
+      hyp: yemɔti duma kofilɛ ɛne lɛ kpɔkɛ nwiɔ
+      cer: 0.0
+      wer: 0.5
+    '30':
+      text: Ɛhye kile kɛ ɔlɛ ɛnelɛkpɔkɛ ko.
+      hyp: ɛshekelekɛ ɔlɛ ɛnelɛkpɔkɛ ko
+      cer: 0.12
+      wer: 0.5
+    '40':
+      text: Edwɛkɛkpɔkɛ kola nyia ɛnelɛkpɔkɛ ko, nwiɔ anzɛɛ dɔɔnwo.
+      hyp: 2 ɛdwɛ kɛ kpɔkɛ kola nyia ɛne le kpɔkɛ ko nwiɔ anzɛɛ dɔɔnwɔ
+      cer: 0.087
+      wer: 1.0
+    '46':
+      text: Ɔboa ɔmaa sukoavoma nyia edwɛkɛmgbɔkɛ fofolɛ mɔɔ le fɔɔnwo la.
+      hyp: ɔboa ɔmaa sukuavoma nyia egywɛ kɛngbɔkɛ fofolɛ mɔɔ lee fɔɔnwola
+      cer: 0.0962
+      wer: 0.6
+    '47':
+      text: Ɔboa ɔmaa sukoavoma ne nwu aneɛ ne anu edwɛkɛmgbɔkɛ ne mɔ.
+      hyp: ɔboa ɔmaa sukoa voma ne nwo anie ne anu egywɛkɛ ngbɔ kɛne mɔ
+      cer: 0.1277
+      wer: 0.6364
+    '55':
+      text: Gana aneɛ ko biala lɛ ɛnelɛmgbɔkɛ ngakyile.
+      hyp: gane anieko biala lɛ ɛne lɛ mgbɔkɛ ngakyele
+      cer: 0.1111
+      wer: 1.0
+    '58':
+      text: Ɛnelɛkpɔkɛ mɔɔ ɔbuke la a le mɔɔ vawolo dwula ye la.
+      hyp: ɛnee ɛlɛkpɔ kɛ mɔɔ bukee la ale mɔɔ va wolo dula ye la
+      cer: 0.122
+      wer: 0.8182
+    '63':
+      text: Ɛhye a le ɛnelɛkpɔkɛ mɔɔ kɔnsɔnante a dwula ye la.
+      hyp: ɛhye ale ɛnelɛ kpɔkɛ mɛmɛ gyapɔne sɔnante agyula yela
+      cer: 0.25
+      wer: 0.9
+    '68':
+      text: Gurune, Likpankpaani, Dagare, nee mɔɔ ɛha la.
+      hyp: gurinli le kpankpane dagare nee mɔɔ ɛhala
+      cer: 0.1714
+      wer: 0.7143
+    '74':
+      text: Fa ɛ ti anwo edwɛkɛmgbɔkɛ kilehile edwɛkɛkpɔkɛ ɛnelɛkpɔkɛ anu.
+      hyp: ɛyɛ ati a nwo edwɔkɛ ngbɔkɛ hilehile edwɔkɛ kpɔkɛ ɛnle ɛkpɔkɛ anu
+      cer: 0.1698
+      wer: 1.2222
+    '76':
+      text: Kilehile ɛnelɛkpɔkɛ ngakyile mɔɔ Nzema lɛ la anu.
+      hyp: kiri hele ɛne lɛ kpɔkɛ ngatile mɔɔ nzema lɛla anɔ
+      cer: 0.1463
+      wer: 1.125
+    '79':
+      text: Fa wɔ nyelebɛnloa ne to gua kile ɛ gɔnwo mɔ.
+      hyp: fa wɔ nyelebɛnloa ne to gua kele ɛgɔnwo mɔ
+      cer: 0.0294
+      wer: 0.3
+    '80':
+      text: Ɛnelɛkpɔkɛ ngyehyɛleɛ ne noko kola kakyi wɔ aneɛ ko biala anu.
+      hyp: ena le kpɔka english aleɛne noko kola ka ti wɔ anyia ko biala anu
+      cer: 0.2941
+      wer: 0.7273
+    '82':
+      text: Vawolo ne a le ɛnelɛkpɔkɛ ne ngyɛnu ne mɔɔ anwo hyia kpalɛ a.
+      hyp: bawolo ne ale ɛne le kpɔkɛ nengyenu ne mɔɔ anwosia kpalɛ a
+      cer: 0.1042
+      wer: 0.6154
+    '100':
+      text: Ɛnee abɛbɛ nee ngyigyilira le agɔnwolɛ kpalɛ.
+      hyp: ɛnee abɛbɛ ne gyigyilerale agɔnwolɛ palɛ
+      cer: 0.1053
+      wer: 0.5714
+    '101':
+      text: Emomu, bɛ ɛbɛlabɔlɛ ɛnee le ngakyile.
+      hyp: ɛmom bɛɛbɛla bɔlɛ ɛnee le ngatiele
+      cer: 0.1667
+      wer: 0.6667
+    '102':
+      text: Wɔ ewia mekɛ ne anu, ngyigyilira yɛle gyima ɛsesebɛ kpondɛle aleɛ ziele.
+      hyp: wɔ ewia mekɛ ne anu ngyigyilɛ la yɛ le gyima ɛsesebɛ kponde le aleɛzielɛ
+      cer: 0.0678
+      wer: 0.5833
+    '117':
+      text: Aneɛ ngakyile ne mɔ biala lɛ ɛnelɛ ngakyile.
+      hyp: ɛnea ngakyile ne mɔ biala lɛ ɛne lɛ ngakyile
+      cer: 0.0556
+      wer: 0.375
+    '121':
+      text: Bie mɔ noko lɛ avinli ɛnelɛ ne boka nwiɔ ne anwo.
+      hyp: bie mɔ nuku lɛ avileɛ ne lɛne boka nwiɔ ne awo
+      cer: 0.1316
+      wer: 0.4545
+    '125':
+      text: Kasem, Ewe nee mɔɔ ɛha la.
+      hyp: saw two ɛnee mɔɔ yɛha la
+      cer: 0.4211
+      wer: 0.6667
+    '132':
+      text: Ɛnelɛ di gyima titili ngakyile nsa wɔ ɛnelɛ aneɛ nu.
+      hyp: ɛne lɛ de gyima titilinga kyile sa wɔ ɛne lɛ aneɛ nu
+      cer: 0.0476
+      wer: 0.8
+    '146':
+      text: Aneɛ ko ne ala ngakyilehilelɛƐnelɛ eza kola kile ngakyile wɔ aneɛ ko ne
+        ala anu.
+      hyp: aniako ne ala ngatile hilelɛnɛlɛ eza kolakile ngatile wɔ aniako ne ala
+        anu
+      cer: 0.1538
+      wer: 0.6
+    '147':
+      text: Ɛhye finde wɔ menli ekpunli ngakyile mɔɔ ka aneɛ ko ne ala la ɛdendɛlɛ
+        nu.
+      hyp: ɛhyɛ finde wɔ menle ɛkpunli ngakyile mɔɔ ka aneɛ ko ne alala ɛdendɛlɛ nu
+      cer: 0.0508
+      wer: 0.3333
+    '155':
+      text: Fa ɛ ti anwo edwɛkɛmgbɔkɛ kile ɛnelɛkpɔkɛ anu.
+      hyp: ɛti a nwo edwɛkɛ ngbɔkɛ kele ɛnelɛkpɔkɛ anu
+      cer: 0.1053
+      wer: 0.75
+    '158':
+      text: Dua ndonwo mɔɔ fɛta la azo na kilehile ɛnelɛ ngakyile ne mɔ anu.
+      hyp: bɔnwo fɛta la azo na kilehilɛ ɛnee lɛ ngakyilɛ ne mɔ anu
+      cer: 0.2353
+      wer: 0.5385
+    '159':
+      text: Wɔ bɛ ekpunli ne mɔ anu, bɛwowɔ adwenle bɛhile gyima mɔɔ ɛnelɛ di la.
+      hyp: wɔ bɛ ekunli ne mɔ anu bɛwowɔ adwenle bɛhile gyima mɔɔ ɛnle la adi la
+      cer: 0.0741
+      wer: 0.2857
+    '161':
+      text: Ɛ nee ɛ gɔnwo ɛdie edwɛkɛmgbɔkɛ ne mɔ na bɛgyinla zo bɛyɛ mɔɔ wɔ aze ɛke
+        la.
+      hyp: ɛnee ɛgɔnwo ɛdie ɛgyɔga ngbɔkɛ ne mɔ na bɛgyinla zo bɛyɛ mɔɔ wɔ aze ɛkela
+      cer: 0.1186
+      wer: 0.4706
+    '162':
+      text: Bɛhile ɛnelɛkpɔkɛ holɛ mɔɔ wɔ edwɛkɛmgbɔkɛ ne mɔ anu la.
+      hyp: bɛhele ɛnee lɛ kpɔkɛ hole mɔɔ wɔ igyɔ kɛ mgbɔkɛ ne mɔɔ anu la
+      cer: 0.1739
+      wer: 0.9
+    '163':
+      text: Bɛhile ɛnelɛmgbɔkɛ ne mɔɔ lɛ ɛnelɛ ne wɔ edwɛkɛmgbɔkɛ ne mɔ anu la.
+      hyp: bɛhile ɛnee lɛ ngbɔkɛ ne mɔɔ lɛ ɛnee lɛ nee wɔ ɛgyɔkɛ ngbɔkɛ ne mɔɔ anu
+        la
+      cer: 0.1852
+      wer: 0.6923
+    '165':
+      text: Kile ɛnelɛkpɔkɛ ngakyile ne mɔ na maa ko biala anwo ndonwo nsa.
+      hyp: kile ɛnɛlɛ kpɔkɛ ngatile ne mɔ namaako biala anwɔ ndo nwonsa
+      cer: 0.0784
+      wer: 0.75
+    '168':
+      text: Kɛlɛ ɛnelɛ ngakyile ne mɔ na fa ndonwo nsa kilehile ko biala mɔɔ wɔhɛlɛ
+        la anu.
+      hyp: kɛlɛ ɛnee lɛ ngakyile ne mɔ na fando nwo nsa kilehile ko biala mɔɔ wɔhɛlɛla
+        anu
+      cer: 0.0159
+      wer: 0.375
+    '169':
+      text: Dua ndonwo nsa azo kilehile gyima mɔɔ ɛnelɛ di wɔ Nzema aneɛ ne anu la.
+      hyp: doa n donwonsa a zɔ kile hile gyima mɔɔ ɛnlɛlɛdi wɔ nzɛma aniane anu la
+      cer: 0.125
+      wer: 0.8
+    '180':
+      text: Ɛgengalɛ kola yɛ mɔɔ anu-mia anzɛɛ ndɛlɛnu.
+      hyp: ɛgengalɛ kola yɛ mɔɔ anumia anzɛɛ ndɛlɛnɔ
+      cer: 0.0286
+      wer: 0.1429
+    '200':
+      text: Kenga tidwɛkɛ ne yɛɛ mukenye ne.
+      hyp: kengati role kɛ ne yɛɛ mu kenye ne
+      cer: 0.1538
+      wer: 0.8333
+    '203':
+      text: Kpondɛ ɛdendɛmunli titili ne – Ɔta ɔfinde ɛdendɛkpunli ne mɔlebɛbo.
+      hyp: fondɛ edendɛ mu le tetele ne ɔtɔ ɔfendɛ edendɛ kpole ne mɔ le bɛbo
+      cer: 0.2679
+      wer: 1.3333
+    '205':
+      text: Kpondɛ adwenle ngakyile mɔɔ boa adwenle titili ne la.
+      hyp: pondɛ adwonle ngakyile mɔɔ bo adwonle titili ne la
+      cer: 0.0909
+      wer: 0.4444
+    '216':
+      text: Ɔwɔ kɛ ɛkpondɛ edwɛkɛmgbɔkɛ titili ne mɔ.
+      hyp: ɔwɔ kɛ ɛkponde edwɛkɛ ngbɔkɛ titili ne mɔ
+      cer: 0.0588
+      wer: 0.4286
+    '229':
+      text: Yɛfa ɛhye yɛkpondɛ adwenle kpɔkyee anzɛɛ titili ne mɔɔ wɔ ɛgengadeɛ bie
+        anu la.
+      hyp: yɛfa ɛhye yɛkɔndɛ adwenle kpɔkye anzɛɛ titili ne mɔɔ wɔ ɛgenga deɛ bie
+        anu la
+      cer: 0.0462
+      wer: 0.2857
+    '231':
+      text: Ɛhye di gyima kpalɛ wɔ adawu mɔɔ le nɔhalɛ la anu.
+      hyp: ɛsie de gyima kpalɛ wɔ adawu mɔɔ le nɔ halɛlanu
+      cer: 0.1026
+      wer: 0.4545
+    '233':
+      text: Bɛyɛ ɛhye bɛkpondɛ nyelebɛnloa bɛmaa edwɛkɛmiza kpɔkyee bie mɔ.
+      hyp: bɛyɛ ɛshi bɛ kpondɛ nyele bɛ nloa bɛ maa ɛdwɔkɛ meza kpɔtyɛ bie mɔ
+      cer: 0.1667
+      wer: 1.2222
+    '235':
+      text: Kenga adawu ne mɔɔ wɔ aze ɛke la.
+      hyp: kɛnga adawu ne mɔɔ wɔ aze ɛkela
+      cer: 0.04
+      wer: 0.375
+    '236':
+      text: Kile adwenle titili ne mɔɔ wɔ ɛgengadeɛ ne mɔɔ wɔ aze ɛke anu la.
+      hyp: kele adwenle titili ne mɔɔ wɔ ɛgengadeɛ ne mɔɔ wɔ aze ɛke anu la
+      cer: 0.0196
+      wer: 0.0714
+    '241':
+      text: Menli ɛhye mɔ bie wɔ ɛkɛ a ɛnee menze bɛ.
+      hyp: bɛnle ɛhye mɔ bie wɔ ɛkɛ a ɛnee menze bɛ
+      cer: 0.0968
+      wer: 0.1
+    '266':
+      text: Bɛva adwenle titili ne mɔɔ bɛhile la bɛdo gua bɛhile sukoavoma ne kɔsɔɔti.
+      hyp: bɛva agyinli titili ne mɔɔ bɛhilela bɛdo gua bɛhile sukua voma ne kosɔɔti
+      cer: 0.0984
+      wer: 0.4615
+    '271':
+      text: Ɔkile diedi, ɛbulɛ nee nɔhalɛlilɛ.
+      hyp: ɔkile die di ɛbulɛ nee nɔ halɛ lelɛ
+      cer: 0.0357
+      wer: 1.0
+    '274':
+      text: Na saa menli mɔɔ lɛ dibelɛ la fo ɛ?
+      hyp: na saa menle mɔɔ lɛ debilɛ la foɛ
+      cer: 0.1154
+      wer: 0.4444
+    '276':
+      text: Tieyɛ mɔɔ ɛnva adenle zo la anwo ɛngyia.
+      hyp: sieyɛ mɔɔ ɛnva a rele ne zo la a nwo ɛngyia
+      cer: 0.1562
+      wer: 0.75
+    '285':
+      text: Mebanlea na meayɛ tieyɛ wɔ me ɛbɛlabɔlɛ nu.
+      hyp: me balɛ ɛnamea yɛ tie yɛwɔ me ɛbɛlabɔlɛ nu
+      cer: 0.0857
+      wer: 0.75
+    '292':
+      text: Kenga adawu ne mɔɔ wɔ aze ɛke la na yeye nwolɛ kpuyia ne mɔ anloa.
+      hyp: kenga adawo ne mɔɔ wɔ aze ɛke la na yɛyɛ nwolɛ kpuyia ne mɔ anloa
+      cer: 0.0588
+      wer: 0.1333
+    '299':
+      text: Kilehilevolɛ kpanyinli ne gyi ɛkɛ ne maa tumililɛ wɔ sukulu ne anu.
+      hyp: kilehilevolɛ kpanyinli ne gyi ɛkɛ nee maatumililɛ wɔ sukulu ne anu
+      cer: 0.0182
+      wer: 0.25
+    '332':
+      text: Ɛhye kola maa ɛkile kɛ ɛte mɔɔ ɛlɛkenga la abo anzɛɛ ɛnde ɔ bo.
+      hyp: ashekola maa ekile kɛ ɛte mɔɔ ɛlɛke ngala a bo anzɛɛ ɛnde ɔ bɔ
+      cer: 0.102
+      wer: 0.5714
+    '344':
+      text: Bɛ nwo bɔkɔbɔkɔyɛlɛ le debie mɔɔ sonla kpɔkɛdelɛ nee ye ayunlunyia gyi
+        zo a.
+      hyp: bɛnwu bɔkɔbɔkɔ yɛlɛ le debie mɔɔ sonlakpɔ kɛdelɛ nee ye ayunlunyia gyi
+        zo a
+      cer: 0.0161
+      wer: 0.3571
+    '361':
+      text: Akee, kile kɛ ɛkpondɛ kɛ bɛsi bɛkɛlɛ ɛgengadeɛ ne la.
+      hyp: akie ke le kɛ ɛkpom donle kɛ bɛ se bɛkɛlɛ ɛgengadeɛ ne la
+      cer: 0.1905
+      wer: 0.7
+    '363':
+      text: Duzu agbɔkɛ a ɔbobɔle a?
+      hyp: duzu a gbɔkɛ awobobɔle a
+      cer: 0.1053
+      wer: 0.6
+    '374':
+      text: Fa ɛ ti anwo edwɛkɛmgbɔkɛ kilehile “adwenle titili” anu.
+      hyp: anyia twamo edwɛkɛ mgbɔkɛ hilehile adwenle titili anu
+      cer: 0.1556
+      wer: 0.6667
+    '375':
+      text: Tumi mɔɔ ɛbulɛ lɛ la.
+      hyp: tumi a bɛlɛlɛla
+      cer: 0.3125
+      wer: 0.8
+    '376':
+      text: Ɛbulɛ ɛnle debie mɔɔ bɛkola bɛsɛlɛ a, na emomu ɔle debie mɔɔ bɛnyia ye
+        a.
+      hyp: ɛbolɛ ɛle debie mɔɔ bɛkola bɛsɛlɛ a na emomu ɔle debie mɔɔ bɛnya yea
+      cer: 0.0526
+      wer: 0.3333
+    '388':
+      text: Ɛlɛkpɔsa sukunwiɔ ne mɔ anu la, kakye kɛ ɛbulɛ le awɔdenle mɔɔ anye le
+        nwiɔ a.
+      hyp: ɛlɛkpɔsa sukunwiɔ ne mɔ anu la ka kye kɛ ɛbole le awɔdenle mɔɔ anye le
+        nwiɔ a
+      cer: 0.0328
+      wer: 0.1875
+    '394':
+      text: Fa ɛdendɛmunli nna pɛ adawu ne sikalɛ.
+      hyp: deendemoli napɛ adawo ne sikalɛ
+      cer: 0.2903
+      wer: 0.7143
+    '399':
+      text: Kile ɛweɛne mɔɔ la aneɛ ne fɔɔnwo ɛgengalɛ nee nwo mgbondabulɛ ne avinli
+        la.
+      hyp: kele ɛwie ne mɔɔ la aniene fɔɔ wo ɛgengalɛ nee nwo ngbondabulɛ ne avinle
+        la
+      cer: 0.129
+      wer: 0.5714
+    '400':
+      text: Kilehile subane mɔɔ ɛgengalɛ ndɛlɛnu lɛ la nsa anu.
+      hyp: kelehele suba ne mɔɔ ɛgengalɛ ndɛlɛnulɛ la nsa anu
+      cer: 0.0476
+      wer: 0.5556
+    '411':
+      text: Yɛlɛ mgbɔkye mɔfeme titili ngakyile nsa.
+      hyp: dwo yɛlɛ mgbɔkye mɔ fime titile ngakyile nsa
+      cer: 0.1471
+      wer: 0.6667
+    '426':
+      text: Mgbɔkye mɔfeme mɔɔ yɛta yɛnwu bɛ la a le nzizo nee nzɔzo mɔfeme.
+      hyp: ngɔ akyi mɔfo me mɔɔ yɛta yɛnwubɛla ale nzizo ne nzɔzo mɔfo me
+      cer: 0.1373
+      wer: 0.9231
+    '428':
+      text: Ɔkola ɔmaa yɛnyia edwɛkɛmgbɔkɛ mɔɔ wɔ aneɛmɛla ekpunli gyɛne nu la.
+      hyp: ɔkola ɔ maa yɛnyaa edwɛkɛ ngbɔkɛ mɔɔ wɔ aniɛ mela ekpenle gyɛne nu la
+      cer: 0.1071
+      wer: 0.7273
+    '432':
+      text: Nzizo-nzɔzo mɔfeme a le mgbɔkye mɔfeme mɔɔ lɛ nzizo nee nzɔzo la.
+      hyp: nzizo nzɔzo mɔɔ me ale ngbɔkye mɔɔ me mɔɔ lɛ nzizo nee nzɔzo la
+      cer: 0.0962
+      wer: 0.6667
+    '441':
+      text: Ɛhye maa edwɛkɛkpɔkɛ ne kakyi fi baholɛ kɔyɛ dɔɔnwo.
+      hyp: ashe maa ɛdwɛkɛ kpɔkɛ nɛ katifi baholɛ kɔyɛ dɔɔnwo
+      cer: 0.1628
+      wer: 0.5556
+    '444':
+      text: Bɔ mɔdenle kɛ ɛbahilehile nu mɔɔ ɛnrɛnlea mɔɔ wɔ anwuma la azo a.
+      hyp: bomɔdenle kɛ ɛbahele hele nu mɔɔ ɛngranlea mɔɔ wɔ anwuma la azua
+      cer: 0.1154
+      wer: 0.5385
+    '481':
+      text: Ɔmaa yɛnyia edwɛkɛmgbɔkɛ fofolɛ yɛfi ndinli anzɛɛ ninli mɔfeme ne anu.
+      hyp: ɔmaa ye nyia ɛdwɛkɛ ngbɔkɛ fofolɛ yɛfe ndinli anzɛɛ ninli mɔfeme ne anu
+      cer: 0.0678
+      wer: 0.4545
+    '482':
+      text: Ɔmaa yɛnyia edwɛkɛmgbɔkɛ mɔɔ wɔ aneɛmɛla ekpunli fofolɛ nu la.
+      hyp: ɔmaa yɛnyia edwɛkɛ me gbɔ kɛ mɔɔ wɔ anyɛmela ekpenle fofo le nu la
+      cer: 0.1154
+      wer: 0.8
+    '483':
+      text: Ɔmaa yɛnyia yɛkpɔkɛ ndɛlɛnu fofolɛ.
+      hyp: ɔmaa yɛ nyia yɛ kpɔkɛ ndɛlɛ nufufulɛ
+      cer: 0.0667
+      wer: 1.2
+    '485':
+      text: Ɔmaa yɛkakyi edwɛmgbɔkɛ baholɛ yɛyɛ bɛ dɔɔnwo.
+      hyp: ɔmaa yɛ ka kye edwɛngbɔ kɛ bahole yɛyɛ bɛdɔɔn
+      cer: 0.1282
+      wer: 1.1429
+    '487':
+      text: Ɔboa ɔmaa yɛkɛlɛhɛlɛ edwɛkɛmgbɔkɛ fɔɔnwo na yɛsukoa aneɛ ne.
+      hyp: ɔboa ɔmaa yɛ kɛlɛhɛlɛ edwɛkɛ ngbɔkɛ fɔ ɔ nwo na yɛ sukua aneɛne
+      cer: 0.0392
+      wer: 1.1111
+    '496':
+      text: Bɛziezie bɛ nwo kɛ bɛbado ye gua na bɛahilehile nu.
+      hyp: bɛziezie bɛ nwo kɛ bɛbado yi gua na bahelɛ helɛ nu
+      cer: 0.1463
+      wer: 0.3
+    '504':
+      text: Edwɛkɛmgbɔkɛ ɛhye mɔ ta finde yɛ adwelielilɛ nu.
+      hyp: idwokɛ ngbokɛ ɛshemɔ tafindeɛ yɛɛ adwelili le nu
+      cer: 0.25
+      wer: 0.875
+    '511':
+      text: Mɔnukpɔkɛ titili ndonwo bie mɔ a le yɛɛ, eza, na, noko, nee, anzɛɛ.
+      hyp: mɔnekpɔkɛ tetele ndomoa bie mɔ ale yɛɛ eza na noko nee anzɛɛ
+      cer: 0.1429
+      wer: 0.3846
+    '513':
+      text: Mɔnukpɔkɛ titili mɔɔ ka edwɛkɛmgbɔkɛ nee ɛdendɛsinli bɔ nu la.
+      hyp: mɔnekpɔ kɛ titili mɔɔ ka egyɔkɛ ngbɔkɛ nee ɛdendɛsele bɔno la
+      cer: 0.1731
+      wer: 0.7
+    '515':
+      text: Mɔnukpɔkɛ titili mɔɔ ka edwɛkɛmgbɔkɛ nee ɛdendɛfoa bɔ nu la.
+      hyp: mɔnukpɔ kɛtetele mɔɔ ka ɛdwɛkɛ ngbɔ kɛnee ɛde ndɛfo a bɔnu la
+      cer: 0.1
+      wer: 0.9
+    '516':
+      text: Nyamenle nee me lua anzondwolɛ nu.
+      hyp: nyɛmenle nee me lua anzongyole nu
+      cer: 0.1429
+      wer: 0.3333
+    '517':
+      text: Koasi eza hɔle nyevile ne anu bieko.
+      hyp: so kɛ ateda kɔlengɛmenle ne anubienle ko
+      cer: 0.5172
+      wer: 0.8571
+    '518':
+      text: Mɔnukpɔkɛ mɔɔ ka ɛdendɛfoa titili nwiɔ bɔ nu la.
+      hyp: mɔnekpɔkɛ mɔɔ ka ɛbendɛfo adetele nwiɔ bɔnɔ la
+      cer: 0.1795
+      wer: 0.5556
+    '520':
+      text: Manza dwule ɔ ra ne na ɔmaanle ye nyɛfonlɛ.
+      hyp: maanza dule ɔra nee na ɔmaa anle ye nyɛfonlɛ
+      cer: 0.1176
+      wer: 0.7778
+    '521':
+      text: Yera ɛke anzɛɛ ɔkɔ Aluku?
+      hyp: geral ɛkɛ anzɛ ɔkɔ aluku
+      cer: 0.2
+      wer: 0.6
+    '522':
+      text: Ɔnlonle nzule yɛɛ ɔlile aleɛ.
+      hyp: ɔlɔnle nzule yɛɛ ɔlili aliɛ
+      cer: 0.1667
+      wer: 0.6
+    '524':
+      text: Wɔ adenle ɛhye azo, mɔnukpɔkɛ ne a bɔ ɛdendɛfoa ekyi ne abo a.
+      hyp: wɔadenle le ɛhyeazo mɔɔ nee kpɔkɛ nee a bɔ ɛdendɛfoa ekyi nee aboa
+      cer: 0.1458
+      wer: 0.7692
+    '526':
+      text: Ɛbɛlabɔlɛ ɛnla aze noko akee yɛbabɔ yɛ nwo mɔdenle.
+      hyp: ɛbɛlabɔlɛ ɛnla aze noko akee yɛba bɔ yɛ wonwɔ denle
+      cer: 0.0714
+      wer: 0.4444
+    '527':
+      text: Ɔkpondɛle ye amaa yeanwu ye.
+      hyp: ɔkpondɛle yɛ amaa yɛnwo yɛ
+      cer: 0.2174
+      wer: 0.6
+    '528':
+      text: Meze Koame yemɔti fa ezukoa ne maa ye.
+      hyp: mezɛkoa me yɛmɔti fa ezukoa ne maa yɛ
+      cer: 0.1
+      wer: 0.5
+    '529':
+      text: Ɛbɛlabɔlɛ le konle noko akee yɛlɛ anyelazo.
+      hyp: ɛbɛla bɔlɛ le konle noko a kee yɛlɛ anyelazo
+      cer: 0.0
+      wer: 0.5714
+    '536':
+      text: Ɔkilehile deɛmɔti anzɛɛ bɛda bodane ali.
+      hyp: ɔkele hele deɛ mɔte anzɛɛ bɛda boda ne ale
+      cer: 0.1176
+      wer: 1.1667
+    '537':
+      text: Ɔkeha ɛdendɛfoa anzɛɛ ɛdendɛsinli mɔɔ bɔ atipɛne la ɔbobɔ nu.
+      hyp: ɔkɛya ɛdendɛfoa anzɛɛ ɛdendɛsenle mɔɔ bɔ atipɛne la ɔbobɔ nu
+      cer: 0.0784
+      wer: 0.2
+    '538':
+      text: Ɔka adwenle mɔɔ kile kyɛkyɛhanlɛ la ɔbɔ nu.
+      hyp: ɔka agyinle mɔɔ kile cha chahanlɛla o bɔnu
+      cer: 0.2857
+      wer: 0.625
+    '539':
+      text: Yɛfa yɛkile adwenle mɔɔ ko tia bɛ nwo la.
+      hyp: yɛfa yɛkile adwenle mɔɔ kɔtia bɛ nwo la
+      cer: 0.0312
+      wer: 0.2222
+    '540':
+      text: Yɛfa yɛkile nzidwɛkɛ bie guabelɛ.
+      hyp: yɛfa yɛke le nzedwɛkɛ bie ɛgwabelɛ
+      cer: 0.1429
+      wer: 0.8
+    '542':
+      text: Mɛla ngyikyi beta kɛ yɛsi yɛfa mɔnukpɔkɛ yɛdi gyima la anwo.
+      hyp: me la ngyikyi beta kɛ yɛse yɛfa monekpɔ kɛ yɛde gyima la anwo
+      cer: 0.102
+      wer: 0.5455
+    '545':
+      text: Yɛdua mɔnukpɔkɛ zo yɛkeha yɛ nyɛleɛ nee adwenle mɔɔ yɛlɛ bɛ la yɛbobɔ
+        nu.
+      hyp: yɛdula mɔnekpɔkɛ zo yɛkeha yɛ nyɛleɛ nee adwenle mɔɔ yɛlɛ bɛ la yɛ bobɔ
+        nu
+      cer: 0.0339
+      wer: 0.2857
+    '547':
+      text: Mɔnukpɔkɛ boa wɔ ninyɛne ɛbobɔlɛ nu.
+      hyp: mɔnkpɔ kɛ bua awɔ ninyɛne ɛbobo ɛlɛnu
+      cer: 0.1667
+      wer: 1.0
+    '551':
+      text: Yɛlɛ ndenle ngakyile mɔɔ yɛdua zo yɛnyia edwɛkɛmgbɔkɛ fofolɛ wɔ aneɛ nu
+        a.
+      hyp: yɛlɛ ndenle ngakyile mɔɔ yɛdua zo yɛnyia ɛdɔkɛ ngbɔkɛ fofolɛ wɔ aneɛnua
+      cer: 0.0656
+      wer: 0.3846
+    '554':
+      text: Bɛhilehile ɛhye mɔ bie anu wɔ aze ɛke.
+      hyp: bɛhelehele ɛshemɔ bie anu wɔ azɛɛ kɛ
+      cer: 0.2
+      wer: 0.625
+    '556':
+      text: Kɛ ɛsi ɛtoto ninyɛne mɔɔ le fofolɛ la aluma wɔ wɔ suazo ɛ?
+      hyp: kɛ ɛsi ɛtoto ninyɛne mɔɔ le fofolɛ la aluma wɔ —osua 21:5 22:7.
+      cer: 0.1778
+      wer: 0.2308
+    '558':
+      text: Nwane a toto ninyɛne zɔhane mɔ aluma a?
+      hyp: wane atoto ninyɛne zɔhane mɔ alumaha
+      cer: 0.0645
+      wer: 0.625
+    '564':
+      text: Duma, Yɛkpɔkɛ nee Yɛkpɔkɛ, Duma nee mɔɔ ɛha la.
+      hyp: ndoma yɛ kpɔkɛ nee yɛ kpɔkɛ ndoma neemɔ ɛ hala
+      cer: 0.1389
+      wer: 1.0
+    '579':
+      text: Nzema ta nyia nyɛvolɛ aneɛ fi Nrelenza nee Akane aneɛ nu.
+      hyp: zɛmata nyia nyɛvolɛ aniɛ fiin ne rɛlɛnza nee akane aniɛ nu
+      cer: 0.1957
+      wer: 0.6364
+    '588':
+      text: Ɔboa ɔmaa bɛnyia ngyinlazo na bɛdie aneɛ ne bɛto nu kɛ ɔle fɔɔnwo.
+      hyp: ɔboa ɔmaa bɛnyangyilazo na bɛdie anie ne bɛtunu kɛ ɔlefɔ nwo
+      cer: 0.1132
+      wer: 0.5385
+    '589':
+      text: Ɔboa ɔmaa yɛnyia edwɛkɛmgbɔkɛ fofolɛ yɛmaa ninyɛne nee adwenle fofolɛ
+        bie mɔ.
+      hyp: ɔ boa ɔ maa yɛ nyia ɛgyɔkɛ ngbɔkɛ fofolɛ yɛma nenyɛne ne a gyole fofolɛ
+        bie mɔ
+      cer: 0.1846
+      wer: 1.0833
+    '590':
+      text: Ɔboa wɔ aneɛ ne ɛzukoalɛ nu.
+      hyp: boa wɔ aneɛ ne azukoalɛ nu
+      cer: 0.0909
+      wer: 0.3333
+    '591':
+      text: Ɔboa ɔmaa yɛkola yɛkile ɛleka mɔɔ aneɛ ne edwɛkɛmgbɔkɛ ne mɔ abo vi la.
+      hyp: ɔboa ɔmaa yɛkola yɛkile ɛlɛka mɔɔ aniɛ ne edwɛkɛ ne mɔɔ abovi la
+      cer: 0.1579
+      wer: 0.4286
+    '595':
+      text: Kile mgbɔkye mɔfeme ngakyile mɔɔ yɛlɛ bɛ la.
+      hyp: sele e mgbɔ cee mɔ femɛ nga cele e mɔ yɛlɛbɛla
+      cer: 0.3056
+      wer: 1.375
+    '596':
+      text: Kile mgbɔkye mɔfeme ndonwo ne mɔ mɔɔ wɔ aneɛ ne anu la.
+      hyp: kile ngbɔkye mɔ fime ndomo nwo ne mɔmɔɔ wɔ anyie ne anu la
+      cer: 0.1628
+      wer: 0.6667
+    '597':
+      text: Wowɔ adwenle wɔ gyima mɔɔ mgbɔkye mɔfeme di la nna anwo.
+      hyp: wɔ waha gyunle wɔ gyima mɔɔ ngbɔkye mɔ femɛ de la naanwo
+      cer: 0.2222
+      wer: 0.8182
+    '600':
+      text: Wowɔ adwenle wɔ gyima nna mɔɔ mgbɔkye mɔfeme di la anwo.
+      hyp: wɔ ba gyonle wɔ gyima na mɔɔ mgbɔkye mɔɔ femɛ dela amokɛ
+      cer: 0.3111
+      wer: 0.7273
+    '602':
+      text: Kile mɔnukpɔkɛ ngakyile ne mɔ mɔɔ wɔ aneɛ ne anu la.
+      hyp: kele mɔnukpɔkɛ ngatile ne mɔmɔ wɔ aniɛnea nu la
+      cer: 0.122
+      wer: 0.6364
+    '603':
+      text: Kilehile ɛweɛne mɔɔ la mɔnukpɔkɛ ngakyile ne mɔ avinli la.
+      hyp: dilehele ɛweɛ ne mɔɔ la mɔnukpɔkɛ ngatile ne mɔɔ avenle la
+      cer: 0.1458
+      wer: 0.6
+    '606':
+      text: Ɔmɔ Adwoba ɛlɛkenga yɛɛ Koame ɛlɛkɛlɛ.
+      hyp: ɔmɔ adoba ɛlɛkenga yɛɛ kɔ amɛ ɛlɛkɛlɛ
+      cer: 0.0938
+      wer: 0.5
+    '607':
+      text: Saa ɔwɔ ɛke a anrɛɛ ɔbaye ɔ nloa.
+      hyp: saa ɔwɔ ɛke a anrɛɛ ɔbaye ɔnloa
+      cer: 0.0
+      wer: 0.25
+    '608':
+      text: Saa ɛsukoa a, ɛbanwu ye.
+      hyp: saa asukoa a ɛba nwo yɛ
+      cer: 0.1667
+      wer: 0.8
+    '609':
+      text: Ɛhɔne hunle ye yemɔti ɔlile aleɛ ne.
+      hyp: ɛhɔne hunle yeyemɔ ti ɔlele aleɛ ne
+      cer: 0.0345
+      wer: 0.4286
+    '610':
+      text: Mebahɔ na tɛ ɛnɛ ɔ.
+      hyp: nebɔhɔna tɛɛnɔ
+      cer: 0.2143
+      wer: 1.0
+    '612':
+      text: Kilehile ndenle mɔɔ yɛdua zo yɛnyia edwɛkɛmgbɔkɛ fofolɛ la anu.
+      hyp: kelehele andɛnle mɔɔ yɛdua zo yɛnyia ɛgyɔkɛ ngbɔkɛ fofolɛ la anu
+      cer: 0.1698
+      wer: 0.4
+    '613':
+      text: Kile ndenle nsa mɔɔ bɛdua zo bɛnyia edwɛkɛmgbɔkɛ fofolɛ wɔ aneɛ ne anu
+        la.
+      hyp: kili ndenle nsa mɔɔ bɛdua zo bɛnyia edwɛkɛmgbɔkɛ fofole wɔ aneɛ ne anu
+        la
+      cer: 0.0333
+      wer: 0.1429
+    '614':
+      text: Kilehile ndenle mɔɔ bɛdua zo bɛnyia edwɛkɛmgbɔkɛ wɔ aneɛ ne anu la nsa
+        anu.
+      hyp: kilehile andele mɔɔ bɛdoa zo bɛnyɛ a edwɛkɛ mgbɔkɛ wɔ aneɛ ne anu la ansanu
+      cer: 0.0984
+      wer: 0.5714
+    '619':
+      text: Ɛnɛ, tɛkenɔlɔgyi le debie mɔɔ anwo hyia kpalɛ wɔ nwomazukoalɛ nu a.
+      hyp: ɛnɛ tɛkenɔlɔgy lede bi mɔ awoshi ya kpalɛ wɔ awo mazukpa alɛnoa
+      cer: 0.2037
+      wer: 0.75
+    '626':
+      text: Edwɛkɛmiza ne a le kɛ, duzu bieko a doa ye a?
+      hyp: ne gyɔkɛ mizane alekɛ duzu bieko adoa yea
+      cer: 0.1212
+      wer: 0.7273
+    '635':
+      text: Ɛhye eza bamaa wɔade ɛzukoalɛdeɛ ngakyile mɔɔ le kɛ Nrelenza la abo.
+      hyp: ɛhye eza bamaa wade ezukwa lɛdeɛ ngakyile mɔɔ le kɛ nlɛlɛ nzalabo
+      cer: 0.125
+      wer: 0.5
+    '663':
+      text: Ngyehyɛleɛ mɔɔ duma ɛdendɛsinli (Dm ɛds) lɛ la kakyihakyi.
+      hyp: ngye hyɛleɛ mɔɔ doma ɛden dɛsenle dɛm ɛsrɛ nlɛla kakyehakye
+      cer: 0.2128
+      wer: 1.0
+    '664':
+      text: Duma ɛdendɛsinli kola yɛ edwɛkɛkpɔkɛ ko kye mɔɔ le duma anzɛɛ dumagya
+        la.
+      hyp: duma ɛdin dɛsenli ko la yɛ edwɛkɛ kpɔkɛ ko kye mɔɔ le duma anzɛɛ duma gya
+        la
+      cer: 0.0333
+      wer: 0.6154
+    '665':
+      text: Ɛdendɛsinli ɛhye da duma ko anzɛɛ dumagya ko ala ali.
+      hyp: ɛdende sinli ɛsheda duma ko anzɛɛ duma gyako ala ali
+      cer: 0.0698
+      wer: 0.5
+    '670':
+      text: Edwɛkɛkpɔkɛ titili ne ɛnlɛ ngilenu biala.
+      hyp: ɛdua ɛkpokpo kɛ titili ne ɛnɛ ngile nu biala
+      cer: 0.2
+      wer: 1.0
+    '671':
+      text: Duma ɛdendɛsinli kola yɛ edwɛkɛmgbɔkɛ mɔɔ bo ko la.
+      hyp: duma ɛdendɛsinli kola yɛ ɛgyɔkɛ ngbɔkɛ mɔɔ bo kola
+      cer: 0.119
+      wer: 0.4444
+    '693':
+      text: Nzizo ngilenu ndonwo bie mɔ a wɔ ɛke la.
+      hyp: nzizo ngile nu ndonwo bie mɔ awɔ ɛke la
+      cer: 0.0
+      wer: 0.4444
+    '698':
+      text: Bɛmɛ a le Tete nee Awiane mɔɔ ba kolaa na belemgbunli ne ara la.
+      hyp: bɛmaa le tete nee ayoane mɔɔ bakola ana bilengbulenle dee arala
+      cer: 0.2
+      wer: 0.7143
+    '701':
+      text: Tɛladeɛ fufule tendenle ne ɛminli.
+      hyp: tɛladeɛ fufule tendele ne ɛmenle
+      cer: 0.1034
+      wer: 0.4
+    '702':
+      text: Meze nrenyia kɔkɔlɛ ne mɔɔ vi Ngɛnla la.
+      hyp: mezɛɛ nunnyia kɔkɔlɛ ne mɔɔ vi ngɛnlala
+      cer: 0.125
+      wer: 0.5
+    '708':
+      text: Edwɛkɛkpɔkɛ titili ne kola fea nzizo nee nzɔzo ngilenu ne avinli.
+      hyp: adule kɛ kpɔkɛ titili ne ko laafea n zi zo ne n zɔ zo n gile nu ne a vinli
+      cer: 0.1111
+      wer: 1.5455
+    '710':
+      text: Gana arane gyimayɛvoma mgbanyinli nnu bie ɛra ɛke.
+      hyp: ghana arɛne gyima yɛ voma mgbanyinli nnubie ɛla ɛke
+      cer: 0.0714
+      wer: 1.0
+    '712':
+      text: Yɛ sukulu sukoavoma nnu ne mɔɔ gyigyi nehane la anye liele.
+      hyp: gyɛ sukulu sukuavo maa nune mɔɔ gyigyi nee hane la anye liele
+      cer: 0.0833
+      wer: 0.5455
+    '714':
+      text: Wɔ bɛ ekpunli ne mɔ anu, bɛhɛlɛhɛlɛ duma ɛdendɛsinli nsa.
+      hyp: wɔbɛ ɛkpole ne mɔ anu bɛhɛlɛ hɛlɛ doma ɛdendɛsene sa
+      cer: 0.1957
+      wer: 0.8
+    '724':
+      text: Yɛkpɔkɛ ɛdendɛsinli mɔɔ lɛ yɛkpɔkɛ ekyi, yɛkpɔkɛ titili yɛɛ ye boavo la.
+      hyp: yɛkpɔkɛ ɛdenda senle mɔɔ lɛ yɛkpɔkɛ ɛkyi yɛkpɔkɛ titili yɛ yɛbula vola
+      cer: 0.1356
+      wer: 0.5833
+    '728':
+      text: Kilehilevolɛ ne sɔ sukoavoma ne nea Yalɛ biala).
+      hyp: kilehile bolɛ ne sɔ sukoavo ma ne nea ya lɛ bia lare
+      cer: 0.0769
+      wer: 1.0
+    '739':
+      text: Wɔ bɛ ekpunli ne mɔ anu, bɛhɛlɛ yɛkpɔkɛ ɛdendɛsinli nsa.
+      hyp: wɔbɛ ɛpulu ne mɔ nu bɛhɛlɛ yɛ pokɛ ɛde ndɛ selelesa
+      cer: 0.2667
+      wer: 0.9
+    '759':
+      text: Ɛhye le ɛdendɛsinli mɔɔ ye edwɛkɛkpɔkɛ titili ne le ɛlekakpɔkɛ la.
+      hyp: ashele ede ne senle mɔɔ ye egyɔkɛ kpɔkɛ tetele ne le ɛleka kpɔkɛ la
+      cer: 0.2545
+      wer: 0.8182
+    '761':
+      text: Ndonwo bie mɔ a wɔ aze ɛke la.
+      hyp: ndo bie mɔ awɔ azɛ akela
+      cer: 0.2273
+      wer: 0.75
+    '767':
+      text: Edwɛkɛkpɔkɛ titili ne a anwo hyia kpalɛ a.
+      hyp: 20 ɛdwɛkɛ kpɔkɛ tetele ne a anwo hyia kpalɛ a
+      cer: 0.1765
+      wer: 0.5
+    '770':
+      text: Yɛta yɛnyia ɛdendɛsinli mɔɔ bo ko la wɔ ɛdendɛmunli nu.
+      hyp: ye ta ye nyia ɛde nde sinlimɔ bokɔ la wɔ ɛde nde munli nu
+      cer: 0.1333
+      wer: 1.1
+    '777':
+      text: Yɛfa ɛdendɛsinli yɛda adwenle ali.
+      hyp: yɛfa a ɛdendɛsenle yɛda adwenle ali
+      cer: 0.1034
+      wer: 0.4
+    '778':
+      text: Ɔboa ɔmaa yɛdi ngitanwo fɔɔnwo wɔ ɛdendɛlɛ nee ɛhɛlɛlɛ nu.
+      hyp: ɔ boa ɔmaa yɛ dinkita nwo fɔnwo wɔ ɛdendɛlɛ ne ɛhɛlɛlɛ nu
+      cer: 0.0625
+      wer: 0.7
+    '779':
+      text: Ɔboa ɔmaa yɛto nrɛlaleɛ mɔɔ ndelebɛbo wɔ nu la.
+      hyp: ɔ boɔ ɔmaa yɛ tunlidwɛ laleɛ mɔɔ ndele bɛ bowɔnu la
+      cer: 0.1579
+      wer: 0.8889
+    '792':
+      text: Mekɛ mɔɔ yɛdwule la, yɛkpondɛle anwodɔlɛ ɛleka wɔ arɛlɛ baka bie abo.
+      hyp: mekɛ mɔɔ yɛ gyule la yɛkpondɛle anwodɔlɛ ɛleka wɔ arɛlɛ bakabie abɔ
+      cer: 0.0536
+      wer: 0.4167
+    '815':
+      text: Ɛdendɛfoa le edwɛkɛmgbɔkɛ ekpunli mɔɔ bɔ nu yɛ gyima na ɔlɛ yɛvo nee yɛkpɔkɛ
+        la.
+      hyp: ɛdendɛfo a le edwɛkɛ mgbɔkɛ ekpunli mɔɔ bɔ nu yɛ gyima na ɔlɛ yɛ vo nee
+        yɛ kpɔkɛ la
+      cer: 0.0
+      wer: 0.5333
+    '816':
+      text: Ɛdendɛfoa le aneɛmɛla nvɛyebanvɛyeba ne mɔ ko.
+      hyp: ɛdendɛfo ale aneɛmɛ la mvɛyeba mvɛyeba ne mɔko
+      cer: 0.0513
+      wer: 1.1429
+    '823':
+      text: Aya donle aleɛ kolaa na yeahɔ sukulu.
+      hyp: a yɛadɔnle alie kola na yɛahɔ sukulu
+      cer: 0.2
+      wer: 0.7143
+    '824':
+      text: Agyalu hɔle gua ne anu.
+      hyp: ɔ dialo hɔle kuya ne anu
+      cer: 0.3333
+      wer: 0.6
+    '843':
+      text: Fa mɔɔ ɛnwunle ye la to gua kile ɛ gɔnwo.
+      hyp: samɔ ɛ wone yela to gba kele ɛ gɔ mɔ
+      cer: 0.3226
+      wer: 0.9
+    '845':
+      text: Yɛlɛ ɛdendɛfoa ngakyile nna ɔlua ngilenu mɔɔ bɛmaa la ati.
+      hyp: yɛlɛ ɛdendafoa ngakyile nna olua ngele nu mɔɔ bɛmaa la ati
+      cer: 0.0625
+      wer: 0.4
+    '850':
+      text: Me nli to aleɛ dahuu.
+      hyp: me nle too aleɛ dahuu
+      cer: 0.125
+      wer: 0.4
+    '853':
+      text: Ɛmianlɛ ɛdendɛmunli ɛngyia yɛvo biala.
+      hyp: emiale ɛdenda munli engyia yɛvo biala
+      cer: 0.1515
+      wer: 0.8
+    '858':
+      text: Ɛbahola wɔamaa edwɛkɛmgbɔkɛ mɔɔ bɛfa bɛbiza kpuyia la anwo ndonwo ɔ?
+      hyp: ɛbwahola wa maa ɛgyɔkɛ ngbɔkɛ mɔɔ bɛfa bɛbiza kuyiala anwondonwɔ
+      cer: 0.1579
+      wer: 0.9091
+    '859':
+      text: Yɛfa edwɛkɛmiza sɛkɛlɛneɛ a yɛdwula edwɛkɛmiza ɛdendɛfoa a.
+      hyp: yɛfa igyekɛmenleza sɛkɛlɛ neɛ ayɛgula igyekɛmenleza dindɛfo a
+      cer: 0.4118
+      wer: 0.75
+    '861':
+      text: Nwane ezukoa a le ɛhye?
+      hyp: wane ezukuala ɛsha
+      cer: 0.3889
+      wer: 1.0
+    '862':
+      text: Duzu aleɛ a ɛbali ye ɛnɛ a?
+      hyp: dozo aleɛ a ɛbale ye ɛna
+      cer: 0.2
+      wer: 0.5714
+    '863':
+      text: Nienwu a ɛhɔle a ?
+      hyp: neɛnwo a ɛhɔle a ye
+      cer: 0.3846
+      wer: 0.5
+    '864':
+      text: Saa ɛye ɛdendɛfoa titili ne ɛfi ɛkɛ a, eza yɛlɛ ɛdendɛfoa ekyi.
+      hyp: saa ɛye ɛdendɛfo atitile nee ɛfe ɛka a eza yɛlɛ ɛdendɛfo akyi
+      cer: 0.1
+      wer: 0.5833
+    '868':
+      text: Ɔdi ngilenu gyima ɔmaa ɛdendɛfoa titili ne.
+      hyp: ɔdenlu nu gyima ɔmaa ɛdendɛfo atitili ne
+      cer: 0.1111
+      wer: 0.5714
+    '870':
+      text: Mɔnukpɔkɛ a boa ɛdendɛfoa ekyi maa ɔfa ɔ nwo ɔbeta ɛdendɛfoa titili ne
+        a.
+      hyp: mɔne kpɔ kɛ aboa ɛdendɛfoa ekyi maa ɔfa ɔ nwo ɔbɛta ɛdendɛfoa titili ne
+        a
+      cer: 0.0339
+      wer: 0.3571
+    '873':
+      text: Ɛdendɛfoa ekyi ne di gyima ngakyile dɔɔnwo ɔti yɛgua bɛ ekpunli ngakyile.
+      hyp: ɛdendɛfoa ekyi ne de gyima ngakyile dɔɔnwo ɔ ti yɛɛ gua bɛ ekpunli ngakyile
+      cer: 0.0328
+      wer: 0.4167
+    '883':
+      text: Ɔkola ɔdi gyima kɛ yɛvo anzɛɛ nyiavo anzɛɛ dievo.
+      hyp: ɔkola ɔdigyima kɛ yɛvo anzɛɛ nyɛvo anzɛɛ dievo
+      cer: 0.05
+      wer: 0.3333
+    '885':
+      text: Duma ɛdendɛfoa mɔɔ di yɛvo gyima.
+      hyp: doma ɛdendɛfoa mɔɔ di yɛvɔ gyima
+      cer: 0.0741
+      wer: 0.3333
+    '886':
+      text: Raalɛ ne mɔɔ dɔle ndanlɛ ne anoma la ɛhɔ.
+      hyp: braalɛ ne mɔɔ dɔle ndanlɛ ne anomala ɛhɔ
+      cer: 0.0312
+      wer: 0.3333
+    '887':
+      text: Duma ɛdendɛfoa mɔɔ di gyima kɛ nyiavo anzɛɛ dievo la.
+      hyp: doma ɛdendɛfoa mɔɔ de gyima kɛ nyiavo anzɛɛ die vola
+      cer: 0.0465
+      wer: 0.4
+    '888':
+      text: Me gɔnwo ne kpole mɔɔ mendɔle memaanle ye la.
+      hyp: me gɔn wo ne kpole mɔɔ me ndɔleme maa le ye la
+      cer: 0.0278
+      wer: 0.6667
+    '889':
+      text: Menwunle awenade ne mɔɔ bɔvolɛ ne hunle ye la.
+      hyp: me nwo awonade ni mɔɔ bɔvolɛ niholi yela
+      cer: 0.2703
+      wer: 0.8889
+    '890':
+      text: Ɛdendɛmunli (i) ne mɔɔ wɔ anwuma la le duma ɛdendɛfoa mɔɔ ɛlɛdi yɛvo gyima
+        a.
+      hyp: ɛdendɛ mɔɔ nle se ne mɔɔ wɔ anwoma la le duma ɛdendɛfoa mɔɔ ɛlɛdi yɛvo
+        gyima
+      cer: 0.1167
+      wer: 0.4
+    '896':
+      text: Saa medwu suanu a, ɛbahɔ.
+      hyp: saa medwusua nu a ɛba hɔ
+      cer: 0.0
+      wer: 0.8
+    '897':
+      text: Yɛbayia ɛleka mɔɔ baka tendenle ne gyi la.
+      hyp: yɛ ba yɛ ɛle ka mɔɔ baka tendele ne gyi la
+      cer: 0.0882
+      wer: 0.75
+    '898':
+      text: Yɛkpɔkɛngilenu ɛdendɛfoa ne mɔ a bɛpepɛ bɛ bo wɔ anwuma ɛdendɛmunli ne
+        mɔ anu la.
+      hyp: yɛkpɔkɛ ngele nu ɛdendɛfoa ne mɔ a bɛpepɛ bɛbo wɔ anwoma ɛdendɛmuli ne
+        mɔ anu la
+      cer: 0.0455
+      wer: 0.4667
+    '924':
+      text: Ɔle sɛkɛlɛneɛ mɔɔ yɛfa yɛsie ɛdendɛmunli adwulaleɛ yɛkile ye awieleɛ a.
+      hyp: ɔle sɛkɛlɛ neɛ mɔɔ yɛfa yɛsie ɛdendɛ mu le agyula leɛ yɛkile yɛ awie leɛ
+        a
+      cer: 0.0833
+      wer: 0.9091
+    '927':
+      text: Kpolisi kpanyinli ne lale kɛlɛma.
+      hyp: gulese payinli ne la le kɛlɛma
+      cer: 0.25
+      wer: 0.8
+    '929':
+      text: Yɛfa yɛdwula nzonlɛyɛ ɛdendɛsinli anzɛɛ ɛdendɛmunli.
+      hyp: yɛfa yɛdola nzonle yɛ ɛdendɛsenle anzɛɛ ɛdendɛmone
+      cer: 0.1739
+      wer: 0.8333
+    '930':
+      text: Dɔketa ne zele kɛ, “Ɛlɛte kpɔkɛ”.
+      hyp: toketa nizile kɛ ɛlɛti kpɔ kɛ
+      cer: 0.2083
+      wer: 1.0
+    '931':
+      text: Kilehilevolɛ ne hanle kɛ, “Ɛnɛ sɔnea ɛnle ɛkɛ”.
+      hyp: tielɛ helɛbolɛ ne hanle kɛ ɛne sɔnea lɛ kɛ
+      cer: 0.2778
+      wer: 0.625
+    '933':
+      text: Yɛfa ɛzinzelɛ sɛkɛlɛneɛ yɛtete ninyɛne mɔɔ yɛbobɔ bɛ la avinli.
+      hyp: yɛfa ɛzenzɛlɛ sɛkɛlɛneɛ yɛ tete ninyɛne mɔɔ yɛbobɔ bɛla avenle
+      cer: 0.0755
+      wer: 0.6
+    '934':
+      text: Mengɔle efiade ne mengɔndɔle saminla, emiane, bokiti yɛɛ tohulu.
+      hyp: me ngole efiade ne me nwɔndɔle saminla emane bokiti yɛɛ tohulu
+      cer: 0.0566
+      wer: 0.5556
+    '935':
+      text: Metɛnwunle buluku ne, ɛkponle ne, yɛɛ ebia ne.
+      hyp: metenwolɛ buluku ne ɛkponle ne yɛɛ ebia ne
+      cer: 0.1111
+      wer: 0.125
+    '937':
+      text: Yɛfa yɛtete dumangilenu mɔɔ kilehile duma ko ne ala anu la avinli.
+      hyp: kɛfa ɛtete domangele nu mɔɔ kelehile domako ne ala anu la avenle
+      cer: 0.1481
+      wer: 0.6667
+    '938':
+      text: Buluku fofolɛ, bile ne ɛminli.
+      hyp: buluku fofolɛ bile ne ɛmea nli
+      cer: 0.0833
+      wer: 0.4
+    '939':
+      text: Mendɔle sua dɛba, akɔlɛnlome, koatee bie.
+      hyp: bɛndɔlɔ ye sua dɛba akɔlɛ lomɛ ko ateebie
+      cer: 0.1818
+      wer: 1.0
+    '945':
+      text: Yɛfa yɛtete ɛdendɛfoa titili nwiɔ avinli.
+      hyp: yɛfa yɛ tetedenle dɛfoa tetele mui avenle
+      cer: 0.3143
+      wer: 1.0
+    '946':
+      text: Melɛ sɔnea ɛhyema; menwɔgenga nɔe kɔsɔɔti.
+      hyp: mɛlɛsɔnea ɛshema me nwɔ genga nɔ ɛkɔ sɔti
+      cer: 0.1429
+      wer: 1.3333
+    '947':
+      text: Ɛnee mekpondɛ kɛ metu adenle mekɔ Ngɛnla; ɛnee maanle nu ɛmunla.
+      hyp: ɛnee mekpendɛ kɛ metu adenle mekɔ ngɛnla ɛnee memaa nle nu ɛmonla
+      cer: 0.0769
+      wer: 0.3636
+    '948':
+      text: Yɛfa yɛtete ninyɛne mɔɔ yɛbobɔ bɛ aluma la avinli.
+      hyp: yɛ fa yɛtetenli nyɛ ne mɔɔ yɛbo bɔ bɛ alumala amenle
+      cer: 0.0976
+      wer: 1.1111
+    '952':
+      text: Yɛfa nzonlɛyɛlɛ sɛkɛlɛneɛ yɛyɛ edwɛkɛ mɔɔ awie ɛha la anzɛɛ adwelie bie
+        nzonlɛ.
+      hyp: yɛfa nzonleɛ le sɛkɛlɛneɛ yɛyɛ edwɛkɛ mɔɔ awie ɛha la anzɛɛ aduelie bie
+        nzonleɛ ɛ
+      cer: 0.0909
+      wer: 0.3846
+    '954':
+      text: Yɛ awovolɛ ne mɔ zele yɛ kɛ, “Bɛmmafa ɛhɔne bɛda”.
+      hyp: yɛɛ awohule ne mɔɔ zɛlɛ yɛkɛɛ bɛma fa ɛhɔne bɛ da
+      cer: 0.2432
+      wer: 0.9
+    '955':
+      text: Eza yɛkola yɛfa nzonlɛyɛlɛ sɛkɛlɛneɛ yɛda tidwɛkɛ anzɛɛ tidwɛkɛ ngane
+        bie ali.
+      hyp: iza yɛko la yɛfa nzo lɛlɛ sɛkɛlɛ neɛ yɛda tedwɛkɛ anzɛ tedwɛkɛ ngane bie
+        ale
+      cer: 0.1212
+      wer: 0.9167
+    '959':
+      text: Yɛfa yɛkile ninyɛne mɔɔ bɔ ɔ bo fi ɛleka ko ɔkɔdwu ɛleka fofolɛ zo la.
+      hyp: yɛfa yɛkile ne nyɛne mɔɔ bɔ ɔ bo fi ɛleka ko ɔ ko gyu ɛleka fofolɛ zo la
+      cer: 0.0727
+      wer: 0.3333
+    '960':
+      text: Sukoavoma kɔ sukulu vi Kenlenzile-Yalɛ, Siane Gyɛne-Siane Bulu.
+      hyp: suko ɔvomɔ kɔ sukulu vi kɛ nlenzɛle yɛlɛ sane ɛjɛne sane ɛbulu
+      cer: 0.1923
+      wer: 1.125
+    '962':
+      text: Yɛfa yɛkile ninyɛne nwiɔ mɔɔ ngitanwolilɛ la bɛ avinli la.
+      hyp: yɛfa yɛ kele ninyɛne yɔɔ mɔɔ ngɛtam wɔlɛlala bɛ avenla
+      cer: 0.25
+      wer: 0.7
+    '964':
+      text: Yɛfa yɛkile edwɛkɛmgbɔkɛ anzɛɛ aluma nwiɔ mɔɔ zia zo la.
+      hyp: yɛfa yɛkele egyo kɛngbɔkɛ anzɛɛ aluma nwiɔ mɔɔ zia zo la
+      cer: 0.1087
+      wer: 0.3
+  source: evaluated
+- model: ghananlpcommunity/ghana-tts-72k
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  cer: 0.1381
+  wer: 0.6555
+  score: 0.1381
+  samples: 200
+  valid: 200
+  avg_seconds: 0.0
+  judge:
+    model: facebook/omniASR-LLM-7B-v2
+    cer_on_real_speech: 0.1417
+  entries:
+    '7':
+      text: Ngyɛnu ɛhye buke ɛnelɛkpɔkɛ, ɛnelɛkpɔkɛ ngyehyɛleɛ nee ɛnelɛ ɛzukoalɛdeɛ
+        ne anye.
+      hyp: ngyɛ nu ɛse boke ɛnelɛ kpɔkɛ ɛnelɛ kpɔkɛ ngyesɛleɛ ne ɛnelɛ ezukɔ alɛdeɛ
+        ne anye
+      cer: 0.1159
+      wer: 1.0909
+    '16':
+      text: Ɛnelɛkpɔkɛ a le edwɛkɛkpɔkɛ foa ne mɔɔ yɛbɔ a ɔyɛ boɛ la.
+      hyp: ɛnɛlɛ kpɔkɛ aleedi ka kpɔkɛ foa ne mɔɔ yɛbɔ a ɔyɛboɛla
+      cer: 0.0889
+      wer: 0.6667
+    '17':
+      text: Kɔnsɔnante ɛnelɛkpɔkɛ a le kɔnsɔnante mɔɔ ɔda ye subane ali kɛ ɛnelɛkpɔkɛ
+        la.
+      hyp: kɔnsɔnante ɛnle lɛkpɔ kɛ ale kɔnsɔnante mɔɔ ɔda yesu bane ali kɛ ɛnle lɛkpɔ
+        kɛla
+      cer: 0.0312
+      wer: 0.6923
+    '20':
+      text: Ɛnelɛkpɔkɛ a le ɛdendɛlɛ foa ne bie mɔɔ lɛ vawolo la.
+      hyp: ɛnɛ ɛlɛkpɔkɛ ale ɛdendɛlɛ foa nibie mɔɔ lɛ vawolo la
+      cer: 0.0714
+      wer: 0.4545
+    '27':
+      text: Yemɔti, duma Kofi lɛ ɛnelɛkpɔkɛ nwiɔ.
+      hyp: yemɔti mmako file ɛnɛlɛ kpɔkɛ nwiɔ
+      cer: 0.1333
+      wer: 0.6667
+    '30':
+      text: Ɛhye kile kɛ ɔlɛ ɛnelɛkpɔkɛ ko.
+      hyp: ɛshekele kɛ ɔlɛ ɛnelɛkpɔkɛ kɔ
+      cer: 0.16
+      wer: 0.5
+    '40':
+      text: Edwɛkɛkpɔkɛ kola nyia ɛnelɛkpɔkɛ ko, nwiɔ anzɛɛ dɔɔnwo.
+      hyp: edwɛ kɛ kpɔkɛ kola nyia ene lɛ kpɔkɛ ko nyɔ anzɛɛ dɔɔnwo
+      cer: 0.0652
+      wer: 0.875
+    '46':
+      text: Ɔboa ɔmaa sukoavoma nyia edwɛkɛmgbɔkɛ fofolɛ mɔɔ le fɔɔnwo la.
+      hyp: ɔbɔ ɔmaa seko avoma nyia ɛjɔkɛ mgbɔka fɔfɔle mɔɔ le fɔ ɔnwola
+      cer: 0.2115
+      wer: 0.8
+    '47':
+      text: Ɔboa ɔmaa sukoavoma ne nwu aneɛ ne anu edwɛkɛmgbɔkɛ ne mɔ.
+      hyp: ɔboa ɔmaa sukoavoma nee nwu aneɛ ne anu edwɛkɛ mgbɔkɛ ne mɔ
+      cer: 0.0213
+      wer: 0.2727
+    '55':
+      text: Gana aneɛ ko biala lɛ ɛnelɛmgbɔkɛ ngakyile.
+      hyp: ana anie kobia lalɛ ɛne la ngbɔkɛ ngatile
+      cer: 0.1944
+      wer: 1.1429
+    '58':
+      text: Ɛnelɛkpɔkɛ mɔɔ ɔbuke la a le mɔɔ vawolo dwula ye la.
+      hyp: ne lɛ gbɔkɛ mɔ o bo ke la ale mɔ va wolo dwula ye la
+      cer: 0.1707
+      wer: 1.0
+    '63':
+      text: Ɛhye a le ɛnelɛkpɔkɛ mɔɔ kɔnsɔnante a dwula ye la.
+      hyp: ɛshe ale ɛnelɛpɔkɛ mɔ kɔnsɔnante a dwulaye la
+      cer: 0.1
+      wer: 0.7
+    '68':
+      text: Gurune, Likpankpaani, Dagare, nee mɔɔ ɛha la.
+      hyp: dolon le pankpam me dagare da dabata na nazen ma dagare ne mɔ ɛhala
+      cer: 0.9429
+      wer: 1.8571
+    '74':
+      text: Fa ɛ ti anwo edwɛkɛmgbɔkɛ kilehile edwɛkɛkpɔkɛ ɛnelɛkpɔkɛ anu.
+      hyp: ati anwo edwɛkɛ ngbɔkɛ kilehile edwɛkɛ kpɔkɛ ɛnelɛ kpɔkɛ ano
+      cer: 0.0755
+      wer: 1.1111
+    '76':
+      text: Kilehile ɛnelɛkpɔkɛ ngakyile mɔɔ Nzema lɛ la anu.
+      hyp: kelehele ene lɛ kpɔkɛ ngatsile mɔɔ nzema lɛla anu
+      cer: 0.122
+      wer: 0.875
+    '79':
+      text: Fa wɔ nyelebɛnloa ne to gua kile ɛ gɔnwo mɔ.
+      hyp: wɔ nyɛlɛbanloa ane to gua kile ɛgɔnwo mɔ
+      cer: 0.1765
+      wer: 0.5
+    '80':
+      text: Ɛnelɛkpɔkɛ ngyehyɛleɛ ne noko kola kakyi wɔ aneɛ ko biala anu.
+      hyp: enele kpɔkɛ engyeshɛleɛ ne noko kola ka kyi wɔ aniɛ kubiala nu
+      cer: 0.1569
+      wer: 0.8182
+    '82':
+      text: Vawolo ne a le ɛnelɛkpɔkɛ ne ngyɛnu ne mɔɔ anwo hyia kpalɛ a.
+      hyp: va wolo nee ale ɛnelɛkpɔ kɛ nee ngyɛne ne mɔɔ anwosia kpala
+      cer: 0.125
+      wer: 0.9231
+    '100':
+      text: Ɛnee abɛbɛ nee ngyigyilira le agɔnwolɛ kpalɛ.
+      hyp: ɛnee a bɛbɛ nee ndidilɛ ra le agɔnwolɛ kpalɛ
+      cer: 0.1316
+      wer: 0.5714
+    '101':
+      text: Emomu, bɛ ɛbɛlabɔlɛ ɛnee le ngakyile.
+      hyp: emomuka bɛ ɛbɛla bɔlɛ ɛnee le ngatsele
+      cer: 0.1667
+      wer: 0.6667
+    '102':
+      text: Wɔ ewia mekɛ ne anu, ngyigyilira yɛle gyima ɛsesebɛ kpondɛle aleɛ ziele.
+      hyp: wɔ ɛwie amɛkɛ ne anu ngyigyilara yɛlɛ gyima ɛsesebɛ kpondɛlɛ aleɛ ziele
+      cer: 0.1017
+      wer: 0.4167
+    '117':
+      text: Aneɛ ngakyile ne mɔ biala lɛ ɛnelɛ ngakyile.
+      hyp: ngɔ akyile ne mɔɔ biala lɛ ɛnɛ lɛ ngɔ akyile
+      cer: 0.2222
+      wer: 0.875
+    '121':
+      text: Bie mɔ noko lɛ avinli ɛnelɛ ne boka nwiɔ ne anwo.
+      hyp: bie mɔ noko lɛ avili ɛnɛlɛnɛ bo kamiɔne anwo
+      cer: 0.1316
+      wer: 0.5455
+    '125':
+      text: Kasem, Ewe nee mɔɔ ɛha la.
+      hyp: fem bie wɔ nie ɛmɔ ɛhala
+      cer: 0.4737
+      wer: 1.0
+    '132':
+      text: Ɛnelɛ di gyima titili ngakyile nsa wɔ ɛnelɛ aneɛ nu.
+      hyp: ɛnɛlɛ de gyima titili nga kyile nsa wɔ ɛnɛlɛ anienu
+      cer: 0.119
+      wer: 0.7
+    '146':
+      text: Aneɛ ko ne ala ngakyilehilelɛƐnelɛ eza kola kile ngakyile wɔ aneɛ ko ne
+        ala anu.
+      hyp: anie konea la ngakyile hile ɛne lɛ ɛza kola kile ngakyile wɔ anie konea
+        la anu
+      cer: 0.1077
+      wer: 0.8
+    '147':
+      text: Ɛhye finde wɔ menli ekpunli ngakyile mɔɔ ka aneɛ ko ne ala la ɛdendɛlɛ
+        nu.
+      hyp: ɛshifinde wɔ menli ekunli nga kyile mɔɔ ka aniɛkonɛ alala ɛdendɛlɛ nu
+      cer: 0.1017
+      wer: 0.6667
+    '155':
+      text: Fa ɛ ti anwo edwɛkɛmgbɔkɛ kile ɛnelɛkpɔkɛ anu.
+      hyp: ɛti anwo edwɛ kɛngbɔ kɛ kile ɛne lɛkpɔkɛ anu
+      cer: 0.0789
+      wer: 0.875
+    '158':
+      text: Dua ndonwo mɔɔ fɛta la azo na kilehile ɛnelɛ ngakyile ne mɔ anu.
+      hyp: dua n donwo mɔɔ fɛtala azo naa kile hele ɛnelɛ n ga kyile ne mɔ anu
+      cer: 0.0392
+      wer: 0.7692
+    '159':
+      text: Wɔ bɛ ekpunli ne mɔ anu, bɛwowɔ adwenle bɛhile gyima mɔɔ ɛnelɛ di la.
+      hyp: wɔ bɛ ekpunli ne mɔ anu bɛwowɔ adwenle bɛhile gyima mɔɔ ɛnɛ la adi la
+      cer: 0.0556
+      wer: 0.2143
+    '161':
+      text: Ɛ nee ɛ gɔnwo ɛdie edwɛkɛmgbɔkɛ ne mɔ na bɛgyinla zo bɛyɛ mɔɔ wɔ aze ɛke
+        la.
+      hyp: ɛnee ɛko wɔ ɛdie ɛgyɔ kɛ ngbɔ kɛ ne mɔ na bɛgyela so bɛɛ mɔ waaze ɛkɛla
+      cer: 0.2712
+      wer: 0.9412
+    '162':
+      text: Bɛhile ɛnelɛkpɔkɛ holɛ mɔɔ wɔ edwɛkɛmgbɔkɛ ne mɔ anu la.
+      hyp: bɛhele ɛnɛlɛkpɔ kɛ holɛ mɔɔ wɔ ɛdwɛkɛ ngbɔ kɛ ne mɔɔ anu la
+      cer: 0.1087
+      wer: 0.7
+    '163':
+      text: Bɛhile ɛnelɛmgbɔkɛ ne mɔɔ lɛ ɛnelɛ ne wɔ edwɛkɛmgbɔkɛ ne mɔ anu la.
+      hyp: bɛɛ helɛ ɛnelɛ ngbɔkɛ ne mɔɔ dɛ ɛnelɛ ne wɔ ɛgyɔkɛ ngbɔkɛ ne mɔɔ anu la
+      cer: 0.2037
+      wer: 0.6154
+    '165':
+      text: Kile ɛnelɛkpɔkɛ ngakyile ne mɔ na maa ko biala anwo ndonwo nsa.
+      hyp: kee le nu le kpɔ kɛ mu gakyile ne mɔ na maako biala anwo ndomonsa
+      cer: 0.1765
+      wer: 1.0
+    '168':
+      text: Kɛlɛ ɛnelɛ ngakyile ne mɔ na fa ndonwo nsa kilehile ko biala mɔɔ wɔhɛlɛ
+        la anu.
+      hyp: kɛlɛ ɛnɛlɛ ngakyile ne mɔ naa fa ndonwo nsa kilehile kobiala mɔɔ wɔhɛlɛla
+        anu
+      cer: 0.0317
+      wer: 0.375
+    '169':
+      text: Dua ndonwo nsa azo kilehile gyima mɔɔ ɛnelɛ di wɔ Nzema aneɛ ne anu la.
+      hyp: duandonwo nsa azokilehile gyima mɔɔ ɛne la di wɔ nzema aneɛne anu la
+      cer: 0.0179
+      wer: 0.5333
+    '180':
+      text: Ɛgengalɛ kola yɛ mɔɔ anu-mia anzɛɛ ndɛlɛnu.
+      hyp: ɛgengale kola yɛ mɔɔ anumia anzɛɛ ndɛlɛnu
+      cer: 0.0286
+      wer: 0.1429
+    '200':
+      text: Kenga tidwɛkɛ ne yɛɛ mukenye ne.
+      hyp: kɛ ngati dwɛkɛ ne yɛmuke nye ne
+      cer: 0.0769
+      wer: 0.8333
+    '203':
+      text: Kpondɛ ɛdendɛmunli titili ne – Ɔta ɔfinde ɛdendɛkpunli ne mɔlebɛbo.
+      hyp: bondɛ ɛdende mulititili ne ɔta ɔfinde ɛdende kpuli ne mɔle bɛbo
+      cer: 0.1071
+      wer: 0.7778
+    '205':
+      text: Kpondɛ adwenle ngakyile mɔɔ boa adwenle titili ne la.
+      hyp: pɔnda a gyonle ngakyile mɔɔ boa a gyonle titili ne la
+      cer: 0.2045
+      wer: 0.5556
+    '216':
+      text: Ɔwɔ kɛ ɛkpondɛ edwɛkɛmgbɔkɛ titili ne mɔ.
+      hyp: ɔwɔ kɛ ɛkpondɛ ɛgyɔ kɛngbɔ kɛ titili ne mɔ
+      cer: 0.1471
+      wer: 0.4286
+    '229':
+      text: Yɛfa ɛhye yɛkpondɛ adwenle kpɔkyee anzɛɛ titili ne mɔɔ wɔ ɛgengadeɛ bie
+        anu la.
+      hyp: yɛfa a ɛhye gɛkpandɛ adwenle kpɔkye anzɛɛ tetele ne mɔɔ wɔ ɛgengadeɛ bie
+        anu la
+      cer: 0.1077
+      wer: 0.2857
+    '231':
+      text: Ɛhye di gyima kpalɛ wɔ adawu mɔɔ le nɔhalɛ la anu.
+      hyp: ɛ shili gyima kpalɛ wɔ a ndawomɔ le nɔ halɛla a nu
+      cer: 0.1795
+      wer: 0.7273
+    '233':
+      text: Bɛyɛ ɛhye bɛkpondɛ nyelebɛnloa bɛmaa edwɛkɛmiza kpɔkyee bie mɔ.
+      hyp: bɛɛ yɛ ɛshe bɛkpondɛ nyelebɛnloa bɛ maa ɛjɔkɛmeza kpɔkye bie mɔ
+      cer: 0.1667
+      wer: 0.7778
+    '235':
+      text: Kenga adawu ne mɔɔ wɔ aze ɛke la.
+      hyp: kenga adawo ne mɔɔ wɔ aze ɛkela
+      cer: 0.04
+      wer: 0.375
+    '236':
+      text: Kile adwenle titili ne mɔɔ wɔ ɛgengadeɛ ne mɔɔ wɔ aze ɛke anu la.
+      hyp: kilesika dwole titili nɛ mɔɔwɔ ɛgingadiyɛ nɛ mɔɔwaa se ɛkɛ anula
+      cer: 0.2549
+      wer: 0.9286
+    '241':
+      text: Menli ɛhye mɔ bie wɔ ɛkɛ a ɛnee menze bɛ.
+      hyp: mɔle ɛhye mɔ bie wɔ ɛkɛ a ɛnee menze bɛ
+      cer: 0.0968
+      wer: 0.1
+    '266':
+      text: Bɛva adwenle titili ne mɔɔ bɛhile la bɛdo gua bɛhile sukoavoma ne kɔsɔɔti.
+      hyp: bɛva agyunle titili ne mɔɔ bɛhilela bɛdo gɔa bɛhile sukuavo ma ne kɔsɔɔti
+      cer: 0.082
+      wer: 0.4615
+    '271':
+      text: Ɔkile diedi, ɛbulɛ nee nɔhalɛlilɛ.
+      hyp: ɔkelɛ diedi ɛbolɛ nee nɔhalɛlelɛ
+      cer: 0.1429
+      wer: 0.6
+    '274':
+      text: Na saa menli mɔɔ lɛ dibelɛ la fo ɛ?
+      hyp: na saa mele mɔɔ lɛ de bɛlɛla foɛ
+      cer: 0.1538
+      wer: 0.5556
+    '276':
+      text: Tieyɛ mɔɔ ɛnva adenle zo la anwo ɛngyia.
+      hyp: tieyɛ mɔɔ ɛnva adenlizo la a nwo ɛngie
+      cer: 0.0938
+      wer: 0.625
+    '285':
+      text: Mebanlea na meayɛ tieyɛ wɔ me ɛbɛlabɔlɛ nu.
+      hyp: kpɛbanlea na mayɛ tieyɛ wɔ mɛ ɛbɛla bɔlene
+      cer: 0.2
+      wer: 0.625
+    '292':
+      text: Kenga adawu ne mɔɔ wɔ aze ɛke la na yeye nwolɛ kpuyia ne mɔ anloa.
+      hyp: kenga adao ne mɔ wɔ aze ɛkela na yeaye nwolɛ kuya ne mɔ anloa
+      cer: 0.1176
+      wer: 0.4
+    '299':
+      text: Kilehilevolɛ kpanyinli ne gyi ɛkɛ ne maa tumililɛ wɔ sukulu ne anu.
+      hyp: kile yilavo lɛ kpanyili ne gyi ɛkɛ ne maa tumililɛ wɔ sukulu ne ano
+      cer: 0.0727
+      wer: 0.4167
+    '332':
+      text: Ɛhye kola maa ɛkile kɛ ɛte mɔɔ ɛlɛkenga la abo anzɛɛ ɛnde ɔ bo.
+      hyp: ashe kola maa ɛkele kɛ ɛte mɔ ɛlɛkenga la abo anzɛɛ nde ɔbo
+      cer: 0.1224
+      wer: 0.4286
+    '344':
+      text: Bɛ nwo bɔkɔbɔkɔyɛlɛ le debie mɔɔ sonla kpɔkɛdelɛ nee ye ayunlunyia gyi
+        zo a.
+      hyp: bɛ nwo bɔkɔbɔkɔyɛlɛ le edebie mɔɔ sonla kpɔkadelɛ na eye ayulunyia gyizo
+        a
+      cer: 0.0645
+      wer: 0.5
+    '361':
+      text: Akee, kile kɛ ɛkpondɛ kɛ bɛsi bɛkɛlɛ ɛgengadeɛ ne la.
+      hyp: akee ɛ kelɛ kɛ ɛkpɔndɛkɛ bɛsebɛkɛlɛ ɛgengadi yɛne la
+      cer: 0.1667
+      wer: 0.7
+    '363':
+      text: Duzu agbɔkɛ a ɔbobɔle a?
+      hyp: bizi ɔkpɔkɛ a ɔbobɔle a
+      cer: 0.3158
+      wer: 0.4
+    '374':
+      text: Fa ɛ ti anwo edwɛkɛmgbɔkɛ kilehile “adwenle titili” anu.
+      hyp: ɛte a nwo edwɛkɛ ngbɔkɛ kilihili adwenle tetele anu
+      cer: 0.2
+      wer: 0.7778
+    '375':
+      text: Tumi mɔɔ ɛbulɛ lɛ la.
+      hyp: tunyi mɔɔ ɛbulɛlɛ la
+      cer: 0.125
+      wer: 0.6
+    '376':
+      text: Ɛbulɛ ɛnle debie mɔɔ bɛkola bɛsɛlɛ a, na emomu ɔle debie mɔɔ bɛnyia ye
+        a.
+      hyp: edule ɛ nle debie mɔɔ bɛkola bɛsɛla na ɛmomo ɔle debie mɔɔ bɛnyia yea
+      cer: 0.1053
+      wer: 0.5333
+    '388':
+      text: Ɛlɛkpɔsa sukunwiɔ ne mɔ anu la, kakye kɛ ɛbulɛ le awɔdenle mɔɔ anye le
+        nwiɔ a.
+      hyp: ɛlɛkpasa sukunlu yɔ ne mɔ anu la kakyekɛ ɛbolɛ le awɔdenle mɔɔ anyele nwia
+      cer: 0.0984
+      wer: 0.625
+    '394':
+      text: Fa ɛdendɛmunli nna pɛ adawu ne sikalɛ.
+      hyp: adendɛ munli nnapɛ adao nesikalɛ
+      cer: 0.129
+      wer: 1.0
+    '399':
+      text: Kile ɛweɛne mɔɔ la aneɛ ne fɔɔnwo ɛgengalɛ nee nwo mgbondabulɛ ne avinli
+        la.
+      hyp: kile ɛweenyi mɔɔ la aneɛ ne fɔɔ wogengale nee nwo mendabulɛ ne avinli la
+      cer: 0.1452
+      wer: 0.2857
+    '400':
+      text: Kilehile subane mɔɔ ɛgengalɛ ndɛlɛnu lɛ la nsa anu.
+      hyp: kile hile suba nee mɔɔ ɛgengalɛ ndɛlɛnu lɛla nsa anu
+      cer: 0.0238
+      wer: 0.6667
+    '411':
+      text: Yɛlɛ mgbɔkye mɔfeme titili ngakyile nsa.
+      hyp: yɛlɛ nyɛtie mɔ femɛ titili ngatile nsa
+      cer: 0.2647
+      wer: 0.6667
+    '426':
+      text: Mgbɔkye mɔfeme mɔɔ yɛta yɛnwu bɛ la a le nzizo nee nzɔzo mɔfeme.
+      hyp: mgbakye mɔfeme mɔɔ yɛta yɛ nwo bɛ la ale nzizo nee nzɔzo mɔfeme
+      cer: 0.0392
+      wer: 0.3846
+    '428':
+      text: Ɔkola ɔmaa yɛnyia edwɛkɛmgbɔkɛ mɔɔ wɔ aneɛmɛla ekpunli gyɛne nu la.
+      hyp: ɔ kola ɔmaa yɛnyia ɛdwɛkɛ ngbɔkɛ mɔɔ wɔ anyɛmɛla ɛkpunli gyɛnɛ nu la
+      cer: 0.0893
+      wer: 0.6364
+    '432':
+      text: Nzizo-nzɔzo mɔfeme a le mgbɔkye mɔfeme mɔɔ lɛ nzizo nee nzɔzo la.
+      hyp: nzizo nzɔzo me ɔfi me lalia me ɔmoabanyi mgbɔkye me ɔfi me ya mɔlɛ nzizo
+        ne nzɔzo la
+      cer: 0.4038
+      wer: 1.1667
+    '441':
+      text: Ɛhye maa edwɛkɛkpɔkɛ ne kakyi fi baholɛ kɔyɛ dɔɔnwo.
+      hyp: ahyim a edwɛkɛ kɔkɛ ne kakyi fi baholɛ kɔyɛ dɔnwo
+      cer: 0.1163
+      wer: 0.5556
+    '444':
+      text: Bɔ mɔdenle kɛ ɛbahilehile nu mɔɔ ɛnrɛnlea mɔɔ wɔ anwuma la azo a.
+      hyp: bɔ mɔdɛnle kɛ ɛbahelehele nu mɔɔ ɛnrɛlea mɔɔ wɔ anwoma la azɔ a
+      cer: 0.1154
+      wer: 0.3846
+    '481':
+      text: Ɔmaa yɛnyia edwɛkɛmgbɔkɛ fofolɛ yɛfi ndinli anzɛɛ ninli mɔfeme ne anu.
+      hyp: ɔmaa yɛnya ɛgyɔ kɛngbɔ kɛ fofolɛ yɛ fi ndenle anzɛ nenle mɔ feme neanu
+      cer: 0.1864
+      wer: 1.0909
+    '482':
+      text: Ɔmaa yɛnyia edwɛkɛmgbɔkɛ mɔɔ wɔ aneɛmɛla ekpunli fofolɛ nu la.
+      hyp: ɔmaa yɛnyia edwɛkɛ mgbɔkɛ mɔɔ wɔ aneɛmɛla ekpunli fofolɛ nu la
+      cer: 0.0
+      wer: 0.2
+    '483':
+      text: Ɔmaa yɛnyia yɛkpɔkɛ ndɛlɛnu fofolɛ.
+      hyp: ɔmaa yɛnyia yɛkpɔkɛ ndɛlanu fofolɛ
+      cer: 0.0333
+      wer: 0.2
+    '485':
+      text: Ɔmaa yɛkakyi edwɛmgbɔkɛ baholɛ yɛyɛ bɛ dɔɔnwo.
+      hyp: ɔ maa yɛka kyi edwɛm gbɔkɛ baholɛ yɛyɛ bɛ dɔɔnwo
+      cer: 0.0
+      wer: 0.8571
+    '487':
+      text: Ɔboa ɔmaa yɛkɛlɛhɛlɛ edwɛkɛmgbɔkɛ fɔɔnwo na yɛsukoa aneɛ ne.
+      hyp: ɔboa ɔmaa yɛkɛlɛ ɛhɛlɛ ɛdwɛkɛ mgbɔkɛ fɔɔn na yɛasukoa aneɛ ne
+      cer: 0.098
+      wer: 0.6667
+    '496':
+      text: Bɛziezie bɛ nwo kɛ bɛbado ye gua na bɛahilehile nu.
+      hyp: bɛzeeze bɛ nwo kɛ bɛbado ye guana ba hile hile nu
+      cer: 0.0732
+      wer: 0.5
+    '504':
+      text: Edwɛkɛmgbɔkɛ ɛhye mɔ ta finde yɛ adwelielilɛ nu.
+      hyp: edwɔ tukɛ mgbɔkɛ ɛshe mɔta finde yɛ adweli lele nu
+      cer: 0.2
+      wer: 0.875
+    '511':
+      text: Mɔnukpɔkɛ titili ndonwo bie mɔ a le yɛɛ, eza, na, noko, nee, anzɛɛ.
+      hyp: mɔnekpɔkɛ titili ndomo bie mɔ ale yɛɛ eza nanoko nee anzɛɛ
+      cer: 0.0612
+      wer: 0.4615
+    '513':
+      text: Mɔnukpɔkɛ titili mɔɔ ka edwɛkɛmgbɔkɛ nee ɛdendɛsinli bɔ nu la.
+      hyp: mɔnekpɔkɛ titile mɔɔ ka ɛgyɛkɛngbɔkɛ ne ɛdendɛsinli bɔɔ nu la
+      cer: 0.1538
+      wer: 0.5
+    '515':
+      text: Mɔnukpɔkɛ titili mɔɔ ka edwɛkɛmgbɔkɛ nee ɛdendɛfoa bɔ nu la.
+      hyp: mɔnekpɔ kɛ titili mɔɔ ka ɛdwɛ kɛ mgbɔ kɛ nee ɛdendɛfo abɔnu la
+      cer: 0.04
+      wer: 0.9
+    '516':
+      text: Nyamenle nee me lua anzondwolɛ nu.
+      hyp: nyamenle nee me lua anzongyule nu
+      cer: 0.1429
+      wer: 0.1667
+    '517':
+      text: Koasi eza hɔle nyevile ne anu bieko.
+      hyp: koase ezahɔle nyɛvilee ne anubie ko
+      cer: 0.1034
+      wer: 0.8571
+    '518':
+      text: Mɔnukpɔkɛ mɔɔ ka ɛdendɛfoa titili nwiɔ bɔ nu la.
+      hyp: mono kpɔkɛ mɔɔ ka ɛdendɛfoa titili nwiɔ bɔ nu la
+      cer: 0.0513
+      wer: 0.2222
+    '520':
+      text: Manza dwule ɔ ra ne na ɔmaanle ye nyɛfonlɛ.
+      hyp: maa ne sɔ adule yɛ ɔrane na ɔmaa le yɛ nyɛfo nlɛ
+      cer: 0.2647
+      wer: 1.2222
+    '521':
+      text: Yera ɛke anzɛɛ ɔkɔ Aluku?
+      hyp: ye ra ɛkɛ anzɛɛ ɔkɔ aloko
+      cer: 0.15
+      wer: 0.8
+    '522':
+      text: Ɔnlonle nzule yɛɛ ɔlile aleɛ.
+      hyp: ɔnɔ lizule yɛ ɔlile ali
+      cer: 0.3333
+      wer: 0.8
+    '524':
+      text: Wɔ adenle ɛhye azo, mɔnukpɔkɛ ne a bɔ ɛdendɛfoa ekyi ne abo a.
+      hyp: ɔ adenle ɛshe azo mɔnukpɔ kɛ ne abɔ ɛdindeɛ foa ekyi ne abɔ
+      cer: 0.1458
+      wer: 0.6923
+    '526':
+      text: Ɛbɛlabɔlɛ ɛnla aze noko akee yɛbabɔ yɛ nwo mɔdenle.
+      hyp: ɛbɛlabɔlɛ ɛnla aze noko akee yɛbabɔ yɛ nwo mɔndenle
+      cer: 0.0238
+      wer: 0.1111
+    '527':
+      text: Ɔkpondɛle ye amaa yeanwu ye.
+      hyp: akondɛle ye amaa yaa anwo ye
+      cer: 0.2174
+      wer: 0.6
+    '528':
+      text: Meze Koame yemɔti fa ezukoa ne maa ye.
+      hyp: meze kɔme ye mɔti faezu ko ane maa ye
+      cer: 0.0667
+      wer: 0.75
+    '529':
+      text: Ɛbɛlabɔlɛ le konle noko akee yɛlɛ anyelazo.
+      hyp: ɛbɛlabɔlɛ le kole ne ko akee yɛlɛ anyelazo
+      cer: 0.0556
+      wer: 0.4286
+    '536':
+      text: Ɔkilehile deɛmɔti anzɛɛ bɛda bodane ali.
+      hyp: ɔkile hile deɛmɔti anzɛɛ bɛdabɔda ne ali
+      cer: 0.0294
+      wer: 0.6667
+    '537':
+      text: Ɔkeha ɛdendɛfoa anzɛɛ ɛdendɛsinli mɔɔ bɔ atipɛne la ɔbobɔ nu.
+      hyp: mu kɛha ɛdendafoa anzɛ ɛdendasinli mɔɔ bɔ atepɛne la ɔbɔbɔno
+      cer: 0.1765
+      wer: 0.8
+    '538':
+      text: Ɔka adwenle mɔɔ kile kyɛkyɛhanlɛ la ɔbɔ nu.
+      hyp: ɔka a dwole mɔɔ kele cheche ha lɛla ɔbɔne
+      cer: 0.3143
+      wer: 0.875
+    '539':
+      text: Yɛfa yɛkile adwenle mɔɔ ko tia bɛ nwo la.
+      hyp: yɛfa yɛ kile a gywele mɔɔ kotia bɛ nwola
+      cer: 0.0938
+      wer: 0.8889
+    '540':
+      text: Yɛfa yɛkile nzidwɛkɛ bie guabelɛ.
+      hyp: yɛfa yɛkile nzidwɛkɛ bie gu ɛbɛla
+      cer: 0.1071
+      wer: 0.4
+    '542':
+      text: Mɛla ngyikyi beta kɛ yɛsi yɛfa mɔnukpɔkɛ yɛdi gyima la anwo.
+      hyp: mɛla ngyi kyi beta kɛ yɛse yɛfa mɔnukpɔ kɛ yedi gyima la anwo
+      cer: 0.0408
+      wer: 0.5455
+    '545':
+      text: Yɛdua mɔnukpɔkɛ zo yɛkeha yɛ nyɛleɛ nee adwenle mɔɔ yɛlɛ bɛ la yɛbobɔ
+        nu.
+      hyp: yɛdua mɔnukpɔkɛ zo yɛkeha yɛnyɛleɛ ne adwenle mɔɔ yɛlɛ bɛ la yɛbobo nu
+      cer: 0.0339
+      wer: 0.2857
+    '547':
+      text: Mɔnukpɔkɛ boa wɔ ninyɛne ɛbobɔlɛ nu.
+      hyp: mɔnekpɔ kɛ boa wɔne nyɛne ɛbobɔlɛ nu
+      cer: 0.0667
+      wer: 0.6667
+    '551':
+      text: Yɛlɛ ndenle ngakyile mɔɔ yɛdua zo yɛnyia edwɛkɛmgbɔkɛ fofolɛ wɔ aneɛ nu
+        a.
+      hyp: yɛlɛ ndele nga kyile mɔɔ yɛduazo yɛnyia ɛdwɛkɛ ngbɔkɛ fofolɛ wɔ aneɛnua
+      cer: 0.0492
+      wer: 0.7692
+    '554':
+      text: Bɛhilehile ɛhye mɔ bie anu wɔ aze ɛke.
+      hyp: bɛhili hae ɛhyemɔ bie anu wɔ aze ɛkɛ
+      cer: 0.1333
+      wer: 0.5
+    '556':
+      text: Kɛ ɛsi ɛtoto ninyɛne mɔɔ le fofolɛ la aluma wɔ wɔ suazo ɛ?
+      hyp: kɛ ɛse ɛtoto ninyɛne mɔɔ le fofolɛ la aluma wɔ wɔ soazo ɛ
+      cer: 0.0444
+      wer: 0.1538
+    '558':
+      text: Nwane a toto ninyɛne zɔhane mɔ aluma a?
+      hyp: wɔ anea toto ninyɛne zɔhane mɔɔ aluma
+      cer: 0.129
+      wer: 0.5
+    '564':
+      text: Duma, Yɛkpɔkɛ nee Yɛkpɔkɛ, Duma nee mɔɔ ɛha la.
+      hyp: duma yɛkpɔkɛ ni yɛkpɔkɛ duma ni mɔ ɛhala
+      cer: 0.1389
+      wer: 0.5556
+    '579':
+      text: Nzema ta nyia nyɛvolɛ aneɛ fi Nrelenza nee Akane aneɛ nu.
+      hyp: nzɛmata nyia anyevolɛ anea fi ne lɛnza nee akanea ne anu
+      cer: 0.1522
+      wer: 0.8182
+    '588':
+      text: Ɔboa ɔmaa bɛnyia ngyinlazo na bɛdie aneɛ ne bɛto nu kɛ ɔle fɔɔnwo.
+      hyp: ɔboa ɔmaa bɛnya ngyinlazo na bɛdeɛ aneɛ ne bɛtɔ nu kɛ ɔle fɔɔ wɔ
+      cer: 0.1132
+      wer: 0.3846
+    '589':
+      text: Ɔboa ɔmaa yɛnyia edwɛkɛmgbɔkɛ fofolɛ yɛmaa ninyɛne nee adwenle fofolɛ
+        bie mɔ.
+      hyp: ɔbɔ maa yɛnyia ɛdwɛkɛ ngbɔkɛ fofole yɛma ninyɛne ne adwenle fofole yɛm
+      cer: 0.1846
+      wer: 0.8333
+    '590':
+      text: Ɔboa wɔ aneɛ ne ɛzukoalɛ nu.
+      hyp: boa wɔ aneɛ ne ezukoalɛ nu
+      cer: 0.0909
+      wer: 0.3333
+    '591':
+      text: Ɔboa ɔmaa yɛkola yɛkile ɛleka mɔɔ aneɛ ne edwɛkɛmgbɔkɛ ne mɔ abo vi la.
+      hyp: ɔboa ɔmaa yɛkola yɛkile ɛlɛka mɔɔ aniene ɛgyɔkɛngbɔkɛ ne mɔɔ abovila
+      cer: 0.1579
+      wer: 0.5714
+    '595':
+      text: Kile mgbɔkye mɔfeme ngakyile mɔɔ yɛlɛ bɛ la.
+      hyp: tulo me tyire mɔ fimi ngatyire mɔ yɛlɛbɛla
+      cer: 0.3611
+      wer: 1.0
+    '596':
+      text: Kile mgbɔkye mɔfeme ndonwo ne mɔ mɔɔ wɔ aneɛ ne anu la.
+      hyp: kele mɔ kpakye mɔ fo mendonwo ne mɔ mɔɔ wɔ aneɛ ne anu la
+      cer: 0.1395
+      wer: 0.5
+    '597':
+      text: Wowɔ adwenle wɔ gyima mɔɔ mgbɔkye mɔfeme di la nna anwo.
+      hyp: wɔ wɔ adwene wɔ gyima mɔɔ mgbɔkye mɔ femɛ di la nna anwɔ
+      cer: 0.0889
+      wer: 0.5455
+    '600':
+      text: Wowɔ adwenle wɔ gyima nna mɔɔ mgbɔkye mɔfeme di la anwo.
+      hyp: wɔ a dwɛne wɔ dima nna mɔ ngbɔ cee mɔ fime dwi la a nwo
+      cer: 0.2667
+      wer: 1.0909
+    '602':
+      text: Kile mɔnukpɔkɛ ngakyile ne mɔ mɔɔ wɔ aneɛ ne anu la.
+      hyp: kile mɔ nukpɔkɛ ngɛkyile ne mɔ mɔɔ wɔ aniɛ ne anu la
+      cer: 0.0488
+      wer: 0.3636
+    '603':
+      text: Kilehile ɛweɛne mɔɔ la mɔnukpɔkɛ ngakyile ne mɔ avinli la.
+      hyp: kile hile wɛne mɔɔ la mɔnekpɔkɛ nga kyile ne mɔɔ avinli la
+      cer: 0.0833
+      wer: 0.7
+    '606':
+      text: Ɔmɔ Adwoba ɛlɛkenga yɛɛ Koame ɛlɛkɛlɛ.
+      hyp: ɔmɔ adwɔba ɛlɛkenga yɛɛ koame ɛlɛkɛlɛ
+      cer: 0.0312
+      wer: 0.1667
+    '607':
+      text: Saa ɔwɔ ɛke a anrɛɛ ɔbaye ɔ nloa.
+      hyp: saa ɔwɔ ɛke a arɛɛ ɔ baye ɔnla
+      cer: 0.08
+      wer: 0.5
+    '608':
+      text: Saa ɛsukoa a, ɛbanwu ye.
+      hyp: saa asukua ɛba nwo ye
+      cer: 0.2222
+      wer: 0.6
+    '609':
+      text: Ɛhɔne hunle ye yemɔti ɔlile aleɛ ne.
+      hyp: ɔhɔne hunlee ye ye mɔti ɔlele aleɛne
+      cer: 0.1034
+      wer: 0.8571
+    '610':
+      text: Mebahɔ na tɛ ɛnɛ ɔ.
+      hyp: guma bahɔna tɛ ɛnɛ ɔ
+      cer: 0.2143
+      wer: 0.4
+    '612':
+      text: Kilehile ndenle mɔɔ yɛdua zo yɛnyia edwɛkɛmgbɔkɛ fofolɛ la anu.
+      hyp: kele hela ndɛnlɛ mɔɔ yɛdua zo yɛ nyia ɛdwɛkɛ ngbɔkɛ fofolɛ la anu
+      cer: 0.1321
+      wer: 0.7
+    '613':
+      text: Kile ndenle nsa mɔɔ bɛdua zo bɛnyia edwɛkɛmgbɔkɛ fofolɛ wɔ aneɛ ne anu
+        la.
+      hyp: kelɛ ndɛnlɛ nsa mɔɔ bɛdua zo bɛnyaa edwɛkɛ ngbɔkɛ fofolɛ wɔ aneɛ ne anu
+        la
+      cer: 0.1
+      wer: 0.3571
+    '614':
+      text: Kilehile ndenle mɔɔ bɛdua zo bɛnyia edwɛkɛmgbɔkɛ wɔ aneɛ ne anu la nsa
+        anu.
+      hyp: hilehile ndɛnle mɔɔ bɛdua zo bɛnyia edwɛkɛmgbɔkɛ wɔ anyeanyia nu la nsa
+        anu
+      cer: 0.0984
+      wer: 0.3571
+    '619':
+      text: Ɛnɛ, tɛkenɔlɔgyi le debie mɔɔ anwo hyia kpalɛ wɔ nwomazukoalɛ nu a.
+      hyp: ɛnɛ tɛkenɔlogyi le debie mɔɔ anwo sia akpalɛ wɔ womazu koale nu a
+      cer: 0.1111
+      wer: 0.4167
+    '626':
+      text: Edwɛkɛmiza ne a le kɛ, duzu bieko a doa ye a?
+      hyp: gyɔkɛ mezane yale kɛ dusu bieko adoa ya
+      cer: 0.2424
+      wer: 0.8182
+    '635':
+      text: Ɛhye eza bamaa wɔade ɛzukoalɛdeɛ ngakyile mɔɔ le kɛ Nrelenza la abo.
+      hyp: ɛshe eza ba maa wɔde ezukoalelɛ deɛ nga kyile mɔɔ le kɛ ngerelɛ nzala abo
+      cer: 0.1607
+      wer: 0.8333
+    '663':
+      text: Ngyehyɛleɛ mɔɔ duma ɛdendɛsinli (Dm ɛds) lɛ la kakyihakyi.
+      hyp: ngyuhyɛleɛ mɔɔ duma ɛdendɛzelidem ɛde prɛnle la kakyihakyi
+      cer: 0.234
+      wer: 0.5556
+    '664':
+      text: Duma ɛdendɛsinli kola yɛ edwɛkɛkpɔkɛ ko kye mɔɔ le duma anzɛɛ dumagya
+        la.
+      hyp: duma ɛ dendɛzinli kola yɛ ɛjɔkɛ kpɔkɛ ko kyemɔ le duma anzɛɛ dumadiala
+      cer: 0.1333
+      wer: 0.6154
+    '665':
+      text: Ɛdendɛsinli ɛhye da duma ko anzɛɛ dumagya ko ala ali.
+      hyp: ɛdendɛsinli ɛshe la dumako anzɛɛ dumagya ko ala ali
+      cer: 0.0698
+      wer: 0.4
+    '670':
+      text: Edwɛkɛkpɔkɛ titili ne ɛnlɛ ngilenu biala.
+      hyp: ɛdwokota kpɔkɛ titili ne ɛne ngile nu biala
+      cer: 0.2
+      wer: 0.8333
+    '671':
+      text: Duma ɛdendɛsinli kola yɛ edwɛkɛmgbɔkɛ mɔɔ bo ko la.
+      hyp: duma ɛdendasili kola yɛ edwɛkɛ mgbɔkɛ mɔɔ bo kola
+      cer: 0.0476
+      wer: 0.5556
+    '693':
+      text: Nzizo ngilenu ndonwo bie mɔ a wɔ ɛke la.
+      hyp: nzizo ngelɛnum doo wɔ bie mɔ awɔ ɛke la
+      cer: 0.1613
+      wer: 0.5556
+    '698':
+      text: Bɛmɛ a le Tete nee Awiane mɔɔ ba kolaa na belemgbunli ne ara la.
+      hyp: bɛmɛ aletete ne awia ne mɔɔ bakola na belengbili ne arala
+      cer: 0.1
+      wer: 0.7143
+    '701':
+      text: Tɛladeɛ fufule tendenle ne ɛminli.
+      hyp: dalalɛ wo folɛtɛndalɛ na ɛmeli
+      cer: 0.5172
+      wer: 1.0
+    '702':
+      text: Meze nrenyia kɔkɔlɛ ne mɔɔ vi Ngɛnla la.
+      hyp: mezɛ ne nyia kɔkɔlɛ ne mɔɔ vi ngɛnlala
+      cer: 0.0625
+      wer: 0.625
+    '708':
+      text: Edwɛkɛkpɔkɛ titili ne kola fea nzizo nee nzɔzo ngilenu ne avinli.
+      hyp: ezwɔkɛ pɔkɛ titili ne kola a fia nzizo ne nzɔzo ngelenu ne avinle
+      cer: 0.1481
+      wer: 0.6364
+    '710':
+      text: Gana arane gyimayɛvoma mgbanyinli nnu bie ɛra ɛke.
+      hyp: ghana ara ne gyima yɛ voma ngbanyile nnubie ɛra ɛke
+      cer: 0.0952
+      wer: 1.0
+    '712':
+      text: Yɛ sukulu sukoavoma nnu ne mɔɔ gyigyi nehane la anye liele.
+      hyp: yɛ sukulu suku avoma nnone mɔ gyigyi ne hane la anye liele
+      cer: 0.0625
+      wer: 0.5455
+    '714':
+      text: Wɔ bɛ ekpunli ne mɔ anu, bɛhɛlɛhɛlɛ duma ɛdendɛsinli nsa.
+      hyp: ɔwɔ bɛ ɛkpuli ne mɔ anu bɛhɛlɛhɛlɛ duma ɛdendesilinsa
+      cer: 0.1087
+      wer: 0.4
+    '724':
+      text: Yɛkpɔkɛ ɛdendɛsinli mɔɔ lɛ yɛkpɔkɛ ekyi, yɛkpɔkɛ titili yɛɛ ye boavo la.
+      hyp: yɛ kpɔkɛ dendɛzenle mɔɔ lɛ yɛ kpɔkɛ ekyi yɛ kpɔkɛ titili yɛɛ yɛ boavo la
+      cer: 0.0847
+      wer: 0.6667
+    '728':
+      text: Kilehilevolɛ ne sɔ sukoavoma ne nea Yalɛ biala).
+      hyp: kili hile volɛ ne sɔ suku avoma ne nia yalɛ biala nwo
+      cer: 0.1538
+      wer: 0.875
+    '739':
+      text: Wɔ bɛ ekpunli ne mɔ anu, bɛhɛlɛ yɛkpɔkɛ ɛdendɛsinli nsa.
+      hyp: ɔbɛ kunli nee mɔɔ anu bɛhɛlɛ yɛ fɔkɛ ɛdindɛse nyɛnsa
+      cer: 0.2444
+      wer: 0.9
+    '759':
+      text: Ɛhye le ɛdendɛsinli mɔɔ ye edwɛkɛkpɔkɛ titili ne le ɛlekakpɔkɛ la.
+      hyp: ɛhyele ɛdendɛzili mɔɔ ye edwɛkɛ kpɔkɛ titili ne le ɛleka kpɔkɛ la
+      cer: 0.0364
+      wer: 0.6364
+    '761':
+      text: Ndonwo bie mɔ a wɔ aze ɛke la.
+      hyp: ndomobie mɔ awɔ aze yɛkɛla
+      cer: 0.1818
+      wer: 0.75
+    '767':
+      text: Edwɛkɛkpɔkɛ titili ne a anwo hyia kpalɛ a.
+      hyp: ɔyɔke kpɔkɛ titele ne a a nwosia kpala
+      cer: 0.2941
+      wer: 0.875
+    '770':
+      text: Yɛta yɛnyia ɛdendɛsinli mɔɔ bo ko la wɔ ɛdendɛmunli nu.
+      hyp: yɛta yɛnyia ɛdendɛsilimɔ bokola wɔ ɛdendɛmunli nu
+      cer: 0.0444
+      wer: 0.5
+    '777':
+      text: Yɛfa ɛdendɛsinli yɛda adwenle ali.
+      hyp: yɛfa ɛdendɛsele yɛda adwenlɛ ali
+      cer: 0.1379
+      wer: 0.4
+    '778':
+      text: Ɔboa ɔmaa yɛdi ngitanwo fɔɔnwo wɔ ɛdendɛlɛ nee ɛhɛlɛlɛ nu.
+      hyp: ɔboa ɔmaa yɛde ngita ho fɔnwo wɔ ɛdendɛlɛ nee ɛhɛlɛlɛ nu
+      cer: 0.0833
+      wer: 0.4
+    '779':
+      text: Ɔboa ɔmaa yɛto nrɛlaleɛ mɔɔ ndelebɛbo wɔ nu la.
+      hyp: ɔboa ɔ maa yɛto nrɛlaleɛ mɔɔ ndelebebo wɔ nu la
+      cer: 0.0263
+      wer: 0.3333
+    '792':
+      text: Mekɛ mɔɔ yɛdwule la, yɛkpondɛle anwodɔlɛ ɛleka wɔ arɛlɛ baka bie abo.
+      hyp: mekɛ mɔɔ yɛ gyule la yɛkpondɛlɛ a nwodɔlɛ ɛleka wɔ arɛle baka bie abo
+      cer: 0.0714
+      wer: 0.5
+    '815':
+      text: Ɛdendɛfoa le edwɛkɛmgbɔkɛ ekpunli mɔɔ bɔ nu yɛ gyima na ɔlɛ yɛvo nee yɛkpɔkɛ
+        la.
+      hyp: adinledɛfoa le edwɛkɛ ngbɔkɛ ekpunli mɔɔ bɔ nu yɛ gyima na ɔlɛ yɛvo nee
+        yɛkpɔkɛ la
+      cer: 0.0769
+      wer: 0.2
+    '816':
+      text: Ɛdendɛfoa le aneɛmɛla nvɛyebanvɛyeba ne mɔ ko.
+      hyp: ɛdendɛfo a le a niemɛ la nvɛyeba nvɛyeba ne mɔ ko
+      cer: 0.0513
+      wer: 1.0
+    '823':
+      text: Aya donle aleɛ kolaa na yeahɔ sukulu.
+      hyp: donlea leakola ana yahɔ sukulu
+      cer: 0.1667
+      wer: 0.8571
+    '824':
+      text: Agyalu hɔle gua ne anu.
+      hyp: eziolu hɔle gwane anu
+      cer: 0.2778
+      wer: 0.6
+    '843':
+      text: Fa mɔɔ ɛnwunle ye la to gua kile ɛ gɔnwo.
+      hyp: 11 me wonle yɛla to goa kile ɛgɔnwo
+      cer: 0.2903
+      wer: 0.8
+    '845':
+      text: Yɛlɛ ɛdendɛfoa ngakyile nna ɔlua ngilenu mɔɔ bɛmaa la ati.
+      hyp: yɛlɛ ɛdendɛfoa ngakyilenle na oluhangilenu mɔɔ bɛmaa la ati
+      cer: 0.0833
+      wer: 0.4
+    '850':
+      text: Me nli to aleɛ dahuu.
+      hyp: me enli to aleɛ dahuu
+      cer: 0.0625
+      wer: 0.2
+    '853':
+      text: Ɛmianlɛ ɛdendɛmunli ɛngyia yɛvo biala.
+      hyp: emyɛle lɛ ɛdɛndɛmuli ɛngyia yɛvo byala
+      cer: 0.2424
+      wer: 0.8
+    '858':
+      text: Ɛbahola wɔamaa edwɛkɛmgbɔkɛ mɔɔ bɛfa bɛbiza kpuyia la anwo ndonwo ɔ?
+      hyp: ɛbahola wɔamma ɛgyɔkɛ ngbɔkɛ mɔɔ bɛfa bɛbizaku yiala a nwo ndo nwo
+      cer: 0.1404
+      wer: 0.8182
+    '859':
+      text: Yɛfa edwɛkɛmiza sɛkɛlɛneɛ a yɛdwula edwɛkɛmiza ɛdendɛfoa a.
+      hyp: yɛfa edwɛkɛ meza sɛ kɛlɛ nea ayedwula edwɛkɛ meza ayidendɛfo a
+      cer: 0.1569
+      wer: 1.125
+    '861':
+      text: Nwane ezukoa a le ɛhye?
+      hyp: wone ezukoa ɛle kɛhye
+      cer: 0.2222
+      wer: 0.8
+    '862':
+      text: Duzu aleɛ a ɛbali ye ɛnɛ a?
+      hyp: dogyu aleɛ a ɛbale ye ɛna
+      cer: 0.25
+      wer: 0.5714
+    '863':
+      text: Nienwu a ɛhɔle a ?
+      hyp: nyɛnwo a ɛhɔlɛ a
+      cer: 0.3077
+      wer: 0.5
+    '864':
+      text: Saa ɛye ɛdendɛfoa titili ne ɛfi ɛkɛ a, eza yɛlɛ ɛdendɛfoa ekyi.
+      hyp: saa ɛye ɛdendɛfoa titili ne afi ɛkɛ a eza yɛlɛ ɛdendɛfoa ekyi
+      cer: 0.02
+      wer: 0.0833
+    '868':
+      text: Ɔdi ngilenu gyima ɔmaa ɛdendɛfoa titili ne.
+      hyp: ɔdingile no gyima ɔmaa ɛdendɛfo atitili ne
+      cer: 0.0278
+      wer: 0.5714
+    '870':
+      text: Mɔnukpɔkɛ a boa ɛdendɛfoa ekyi maa ɔfa ɔ nwo ɔbeta ɛdendɛfoa titili ne
+        a.
+      hyp: monokpɔkɛ aboa ɛdendafoa ekyi maa ɔfa ɔ nwo ɔ bɛta ɛdendafoa kikili ne
+        a
+      cer: 0.1186
+      wer: 0.5714
+    '873':
+      text: Ɛdendɛfoa ekyi ne di gyima ngakyile dɔɔnwo ɔti yɛgua bɛ ekpunli ngakyile.
+      hyp: ɛdemdɛ foa ɛ kyi ne di gyima ŋakyile dɔɔnwo ɔ ti yɛgwɔ bɛ ɛkpule ŋakyile
+      cer: 0.1803
+      wer: 0.8333
+    '883':
+      text: Ɔkola ɔdi gyima kɛ yɛvo anzɛɛ nyiavo anzɛɛ dievo.
+      hyp: kola ɔ de gyima kɛ yɛ vo anzɛɛ nyia vo anzɛɛ deɛvo
+      cer: 0.1
+      wer: 0.8889
+    '885':
+      text: Duma ɛdendɛfoa mɔɔ di yɛvo gyima.
+      hyp: duma ɛdendɛfua mɔɔ de yɛvogyima
+      cer: 0.0741
+      wer: 0.6667
+    '886':
+      text: Raalɛ ne mɔɔ dɔle ndanlɛ ne anoma la ɛhɔ.
+      hyp: biralɛ ne mɔdɔlendanlɛ ne anoma la ɛhɔ
+      cer: 0.125
+      wer: 0.4444
+    '887':
+      text: Duma ɛdendɛfoa mɔɔ di gyima kɛ nyiavo anzɛɛ dievo la.
+      hyp: duma ɛde ndɛfoa mɔɔ digima kɛ nyia wo a nzɛɛ die wola
+      cer: 0.0698
+      wer: 1.0
+    '888':
+      text: Me gɔnwo ne kpole mɔɔ mendɔle memaanle ye la.
+      hyp: me gɔnwo ne kpele mɔɔ me ndɔle me maa le yela
+      cer: 0.0556
+      wer: 0.7778
+    '889':
+      text: Menwunle awenade ne mɔɔ bɔvolɛ ne hunle ye la.
+      hyp: ne abelɛne mɔɔ bɔvolɛ ne honle yela
+      cer: 0.3243
+      wer: 0.6667
+    '890':
+      text: Ɛdendɛmunli (i) ne mɔɔ wɔ anwuma la le duma ɛdendɛfoa mɔɔ ɛlɛdi yɛvo gyima
+        a.
+      hyp: ɛdendɛ munli ne mɔɔ wɔ anwoma la le duma ɛdendɛfua mɔɔ ɛlɛdi yɛvo gyima
+        a
+      cer: 0.05
+      wer: 0.2667
+    '896':
+      text: Saa medwu suanu a, ɛbahɔ.
+      hyp: saa me gyu so ano a ɛba hɔ
+      cer: 0.2105
+      wer: 1.2
+    '897':
+      text: Yɛbayia ɛleka mɔɔ baka tendenle ne gyi la.
+      hyp: yɛ ba yɛa ɛlɛka mɔɔ ba ka tendenle ne gyila
+      cer: 0.0588
+      wer: 1.0
+    '898':
+      text: Yɛkpɔkɛngilenu ɛdendɛfoa ne mɔ a bɛpepɛ bɛ bo wɔ anwuma ɛdendɛmunli ne
+        mɔ anu la.
+      hyp: yɛ kpɔkɛngelenu ɛdendɛfoa ne mɔ abɛ pɛpɛ bɛbo wɔ anwoma ɛdendɛ muli ne
+        mɔ anu la
+      cer: 0.0606
+      wer: 0.6
+    '924':
+      text: Ɔle sɛkɛlɛneɛ mɔɔ yɛfa yɛsie ɛdendɛmunli adwulaleɛ yɛkile ye awieleɛ a.
+      hyp: ɔle sɛkɛlɛ ne yɛmɔ yɛ fa yɛsie ɛdendɛ munli agyulalɛ yɛkele yɛ awielea
+      cer: 0.1333
+      wer: 1.0
+    '927':
+      text: Kpolisi kpanyinli ne lale kɛlɛma.
+      hyp: pour lise pinli ne la nekɛ dama
+      cer: 0.3929
+      wer: 1.2
+    '929':
+      text: Yɛfa yɛdwula nzonlɛyɛ ɛdendɛsinli anzɛɛ ɛdendɛmunli.
+      hyp: ye fa ye ɛjula nzolɛ yɛ ɛdendɛsenle anzɛ ɛdendɛmunli
+      cer: 0.1739
+      wer: 1.3333
+    '930':
+      text: Dɔketa ne zele kɛ, “Ɛlɛte kpɔkɛ”.
+      hyp: dɔketa ne zele kɛ ɛlɛte kpɔ kɛ
+      cer: 0.0
+      wer: 0.3333
+    '931':
+      text: Kilehilevolɛ ne hanle kɛ, “Ɛnɛ sɔnea ɛnle ɛkɛ”.
+      hyp: kelehilevolɛ ne hanle kɛ ɛnɛ sɔne a ɛnle ɛkɛ a
+      cer: 0.0556
+      wer: 0.5
+    '933':
+      text: Yɛfa ɛzinzelɛ sɛkɛlɛneɛ yɛtete ninyɛne mɔɔ yɛbobɔ bɛ la avinli.
+      hyp: yɛfa ɛzenzɛlɛ sɛ kɛlen yɛyɛ tetɛ ninyɛne mɔɔ yɛbobɔ bɛ la avenle
+      cer: 0.1321
+      wer: 0.6
+    '934':
+      text: Mengɔle efiade ne mengɔndɔle saminla, emiane, bokiti yɛɛ tohulu.
+      hyp: mengɔle ɛfiade ne mengɔndɔle ɛsamenla ɛmiane bɔkɛti yɛɛ dɔhulu
+      cer: 0.1509
+      wer: 0.5556
+    '935':
+      text: Metɛnwunle buluku ne, ɛkponle ne, yɛɛ ebia ne.
+      hyp: metɛwunle buluku ne ɛkponle ne yɛ ebia ne
+      cer: 0.0556
+      wer: 0.25
+    '937':
+      text: Yɛfa yɛtete dumangilenu mɔɔ kilehile duma ko ne ala anu la avinli.
+      hyp: yɛfa yɛtete domangilenumɔ kelehile domako ne ala anula avinli
+      cer: 0.0741
+      wer: 0.5833
+    '938':
+      text: Buluku fofolɛ, bile ne ɛminli.
+      hyp: buluku fofolɛ bile ne ɛmeanlɛ
+      cer: 0.125
+      wer: 0.2
+    '939':
+      text: Mendɔle sua dɛba, akɔlɛnlome, koatee bie.
+      hyp: sua dɛba a kɔla nlome kɔ atee bie
+      cer: 0.2727
+      wer: 1.0
+    '945':
+      text: Yɛfa yɛtete ɛdendɛfoa titili nwiɔ avinli.
+      hyp: gyifayɛte tɛ ɛdindɛfo a titilenie ɛvenle
+      cer: 0.2857
+      wer: 1.0
+    '946':
+      text: Melɛ sɔnea ɛhyema; menwɔgenga nɔe kɔsɔɔti.
+      hyp: melɛ sɔnea ɛhye maa me nwo genga nɔe kɔ sɔɔti
+      cer: 0.0571
+      wer: 1.1667
+    '947':
+      text: Ɛnee mekpondɛ kɛ metu adenle mekɔ Ngɛnla; ɛnee maanle nu ɛmunla.
+      hyp: ɛnee mɔ kpondɛkɛ me toa denle mɔ kɔnle nla ɛnee maa le nu ɛmoo la
+      cer: 0.1538
+      wer: 1.0909
+    '948':
+      text: Yɛfa yɛtete ninyɛne mɔɔ yɛbobɔ bɛ aluma la avinli.
+      hyp: yɛfa yɛ teteninli yɛne mɔɔ yɛbobɔ bɛ alumala avinli
+      cer: 0.0488
+      wer: 0.5556
+    '952':
+      text: Yɛfa nzonlɛyɛlɛ sɛkɛlɛneɛ yɛyɛ edwɛkɛ mɔɔ awie ɛha la anzɛɛ adwelie bie
+        nzonlɛ.
+      hyp: yɛ fa nzonlɛ yɛlɛ sɛkɛlɛ neɛ yɛyɛ ɛ gyɛkɛ mɔɔ a wi ɛhala anzɛ agyɛlie bie
+        nzonlɛ
+      cer: 0.1212
+      wer: 1.0
+    '954':
+      text: Yɛ awovolɛ ne mɔ zele yɛ kɛ, “Bɛmmafa ɛhɔne bɛda”.
+      hyp: yɛɛ ahuovolɛ ne mɔ zelɛ yɛ kɛ bɛmaa fa hɔne bɛ da
+      cer: 0.1622
+      wer: 0.8
+    '955':
+      text: Eza yɛkola yɛfa nzonlɛyɛlɛ sɛkɛlɛneɛ yɛda tidwɛkɛ anzɛɛ tidwɛkɛ ngane
+        bie ali.
+      hyp: eza yɛkola yɛfa nzonle yɛlɛ sɛkɛlɛneɛ yɛda tedwɛkɛ anzɛ tedwɛkɛ ngane bie
+        ale
+      cer: 0.0758
+      wer: 0.5
+    '959':
+      text: Yɛfa yɛkile ninyɛne mɔɔ bɔ ɔ bo fi ɛleka ko ɔkɔdwu ɛleka fofolɛ zo la.
+      hyp: yɛfa yɛkelɛ ninyɛne mɔɔ bɔ ɔbɔ fi ɛlɛka ko ɔkɔdwo ɛlɛka fofɔlɛ zo la
+      cer: 0.1273
+      wer: 0.4667
+    '960':
+      text: Sukoavoma kɔ sukulu vi Kenlenzile-Yalɛ, Siane Gyɛne-Siane Bulu.
+      hyp: supee fɔbe ka ba kɔ sukulu vi kɛlɛzilɛ yalɛ sane gyane sane buluku
+      cer: 0.3846
+      wer: 1.25
+    '962':
+      text: Yɛfa yɛkile ninyɛne nwiɔ mɔɔ ngitanwolilɛ la bɛ avinli la.
+      hyp: yɛfa yɛ kile ninyene muyɔ mɔɔ ngyita nwelile la bɛ avi nlila
+      cer: 0.1458
+      wer: 0.8
+    '964':
+      text: Yɛfa yɛkile edwɛkɛmgbɔkɛ anzɛɛ aluma nwiɔ mɔɔ zia zo la.
+      hyp: yɛfa yɛkile ɛgyɔkɛ ngbɔkɛ anzɛ aloma nwiɔ mɔɔ zia zola
+      cer: 0.1522
+      wer: 0.6
+  source: evaluated
+- model: KhayaAI/khaya-tts-v2
+  model_url: https://translation.ghananlp.org
+  owner: KhayaAI
+  architecture: Khaya AI TTS v2 API
+  cer: 0.3097
+  wer: 0.6436
+  score: 0.3097
+  samples: 200
+  valid: 200
+  avg_seconds: 0.97
+  judge: *id001
+  entries:
+    '7':
+      text: Ngyɛnu ɛhye buke ɛnelɛkpɔkɛ, ɛnelɛkpɔkɛ ngyehyɛleɛ nee ɛnelɛ ɛzukoalɛdeɛ
+        ne anye.
+      hyp: ngyɛnu ɛhye buke ɛnee kpokɛ ɛnee kpokɛ ngyehyɛleɛ nee ezukoalɛdeɛ ne anye
+      cer: 0.1594
+      wer: 0.5455
+    '16':
+      text: Ɛnelɛkpɔkɛ a le edwɛkɛkpɔkɛ foa ne mɔɔ yɛbɔ a ɔyɛ boɛ la.
+      hyp: ɛnee kpɔkɛ a le edwɛkɛkpɔkɛ foa ne mɔɔ yeboa ɔyeboɛ la
+      cer: 0.1111
+      wer: 0.5
+    '17':
+      text: Kɔnsɔnante ɛnelɛkpɔkɛ a le kɔnsɔnante mɔɔ ɔda ye subane ali kɛ ɛnelɛkpɔkɛ
+        la.
+      hyp: kɔnsonante ɛnee kpɔkɛ a le kɔnsonante mɔɔ ɔda ye subane ali kɛ ɛnee kpɔkɛ
+        la
+      cer: 0.0938
+      wer: 0.4615
+    '20':
+      text: Ɛnelɛkpɔkɛ a le ɛdendɛlɛ foa ne bie mɔɔ lɛ vawolo la.
+      hyp: menginginginging
+      cer: 0.9048
+      wer: 1.0
+    '27':
+      text: Yemɔti, duma Kofi lɛ ɛnelɛkpɔkɛ nwiɔ.
+      hyp: yemɔti duma kofili ɛnee kpɔkɛ nwyɔnwo
+      cer: 0.2333
+      wer: 0.6667
+    '30':
+      text: Ɛhye kile kɛ ɔlɛ ɛnelɛkpɔkɛ ko.
+      hyp: ɛhye kile kɛ ɔleɛ ne kpɔkɛ ko
+      cer: 0.12
+      wer: 0.5
+    '40':
+      text: Edwɛkɛkpɔkɛ kola nyia ɛnelɛkpɔkɛ ko, nwiɔ anzɛɛ dɔɔnwo.
+      hyp: edwɛkɛ kpɔkɛ kolaa nyia ɛnle kpɔkɛ ko nwiɔ anzɛɛ dɔɔnwo
+      cer: 0.0652
+      wer: 0.625
+    '46':
+      text: Ɔboa ɔmaa sukoavoma nyia edwɛkɛmgbɔkɛ fofolɛ mɔɔ le fɔɔnwo la.
+      hyp: ɔboa ɔmaa sukuavoma nyia edwɛkɛ mgboke fofolɛ mɔɔ le foɔnwo la
+      cer: 0.0769
+      wer: 0.4
+    '47':
+      text: Ɔboa ɔmaa sukoavoma ne nwu aneɛ ne anu edwɛkɛmgbɔkɛ ne mɔ.
+      hyp: ɔboa ɔma sukua voma ne nwu aneɛ ne anu edwɛkɛ mgbokɛ ne mmɔ
+      cer: 0.0851
+      wer: 0.5455
+    '55':
+      text: Gana aneɛ ko biala lɛ ɛnelɛmgbɔkɛ ngakyile.
+      hyp: ghana ane ko biala le ɛnee mgbɔkɛ ngakyile
+      cer: 0.1389
+      wer: 0.7143
+    '58':
+      text: Ɛnelɛkpɔkɛ mɔɔ ɔbuke la a le mɔɔ vawolo dwula ye la.
+      hyp: ɛnee kpokɛ mɔɔ buke la a le mɔɔ vawolo dwula ye la ɛnee kpokɛ mɔɔ buke
+        la a le mɔɔ vawolo dwula ye la
+      cer: 0.9756
+      wer: 1.3636
+    '63':
+      text: Ɛhye a le ɛnelɛkpɔkɛ mɔɔ kɔnsɔnante a dwula ye la.
+      hyp: ɛhye a le ɛnelekpɔkɛ mɔɔ kosonantea dwula ye la
+      cer: 0.1
+      wer: 0.3
+    '68':
+      text: Gurune, Likpankpaani, Dagare, nee mɔɔ ɛha la.
+      hyp: guu nee le kpamkpɛ nee dagare ne mɔɔ ɛha la
+      cer: 0.2571
+      wer: 0.8571
+    '74':
+      text: Fa ɛ ti anwo edwɛkɛmgbɔkɛ kilehile edwɛkɛkpɔkɛ ɛnelɛkpɔkɛ anu.
+      hyp: fa eti anwo edwɛkɛmgbɔkɛ kilehile edwɛkɛkpɔkɛ ɛnee kpɔkɛ anu
+      cer: 0.0566
+      wer: 0.4444
+    '76':
+      text: Kilehile ɛnelɛkpɔkɛ ngakyile mɔɔ Nzema lɛ la anu.
+      hyp: kilehile ɛnee kpokɛ ngakyile mɔɔ nzɛma le la anu
+      cer: 0.122
+      wer: 0.5
+    '79':
+      text: Fa wɔ nyelebɛnloa ne to gua kile ɛ gɔnwo mɔ.
+      hyp: fa wɔ nyɛlebɛnla ne to gua kile yɛ gɔnwo mɔ wɔkɛlɛ mmmmm
+      cer: 0.4118
+      wer: 0.4
+    '80':
+      text: Ɛnelɛkpɔkɛ ngyehyɛleɛ ne noko kola kakyi wɔ aneɛ ko biala anu.
+      hyp: ɛnee kpokɛ ngyehyɛlɛ ne noko kola kakyi wɔ ane ɔko biala anu
+      cer: 0.098
+      wer: 0.4545
+    '82':
+      text: Vawolo ne a le ɛnelɛkpɔkɛ ne ngyɛnu ne mɔɔ anwo hyia kpalɛ a.
+      hyp: awolɛ ne a le ɛnekpokɛ ne ngyinli ne mɔɔ anwo hyia kpalɛ a
+      cer: 0.1667
+      wer: 0.2308
+    '100':
+      text: Ɛnee abɛbɛ nee ngyigyilira le agɔnwolɛ kpalɛ.
+      hyp: menginginginging
+      cer: 0.7895
+      wer: 1.0
+    '101':
+      text: Emomu, bɛ ɛbɛlabɔlɛ ɛnee le ngakyile.
+      hyp: ɛmɔ mu bɛ bɛlabɔlɛ ɛnenle ngekyile
+      cer: 0.1667
+      wer: 1.0
+    '102':
+      text: Wɔ ewia mekɛ ne anu, ngyigyilira yɛle gyima ɛsesebɛ kpondɛle aleɛ ziele.
+      hyp: wɔ ewia mekɛ ne anu ngyigyilera yɛle gyimaa ɛsesebɛ kpondɛle aleɛ ziele
+      cer: 0.0339
+      wer: 0.1667
+    '117':
+      text: Aneɛ ngakyile ne mɔ biala lɛ ɛnelɛ ngakyile.
+      hyp: anee ngakyile ne mɔ biala le ɛnelɛ ngakyile
+      cer: 0.0556
+      wer: 0.25
+    '121':
+      text: Bie mɔ noko lɛ avinli ɛnelɛ ne boka nwiɔ ne anwo.
+      hyp: bie mɔ noko le avinli ɛnlelɛ ne boka nwiɔ ne anwo boka nwiɔ ne anyeee
+      cer: 0.4737
+      wer: 0.5455
+    '125':
+      text: Kasem, Ewe nee mɔɔ ɛha la.
+      hyp: kasamu awie ne mɔɔ ɛhala babi mɔɔ wo ɔgyinli nu nuu
+      cer: 1.3684
+      wer: 1.6667
+    '132':
+      text: Ɛnelɛ di gyima titili ngakyile nsa wɔ ɛnelɛ aneɛ nu.
+      hyp: ɛnele di gyima titili ngakyile nsa wɔ ɛnele aneɛ nu
+      cer: 0.0476
+      wer: 0.2
+    '146':
+      text: Aneɛ ko ne ala ngakyilehilelɛƐnelɛ eza kola kile ngakyile wɔ aneɛ ko ne
+        ala anu.
+      hyp: ane ko ne ala ngakyilehile ne le eza kola kile ngakyile wɔ ane ko ne ala
+        anu
+      cer: 0.0923
+      wer: 0.3333
+    '147':
+      text: Ɛhye finde wɔ menli ekpunli ngakyile mɔɔ ka aneɛ ko ne ala la ɛdendɛlɛ
+        nu.
+      hyp: ɛhye findeɛ wɔ mmenli kpunli ngakyile mɔɔ kaane ɔko ne ala la ɛdendɛlɛ
+        nu
+      cer: 0.0678
+      wer: 0.4
+    '155':
+      text: Fa ɛ ti anwo edwɛkɛmgbɔkɛ kile ɛnelɛkpɔkɛ anu.
+      hyp: fa ye ti anwo edwɛkɛ mgboko kile ɛnɛkpokɛ anu
+      cer: 0.1842
+      wer: 0.5
+    '158':
+      text: Dua ndonwo mɔɔ fɛta la azo na kilehile ɛnelɛ ngakyile ne mɔ anu.
+      hyp: dua dɔɔnwo mɔɔ fɛta la azo na kilehile ɛnelɛ ngakyile ne mɔ anu
+      cer: 0.0588
+      wer: 0.0769
+    '159':
+      text: Wɔ bɛ ekpunli ne mɔ anu, bɛwowɔ adwenle bɛhile gyima mɔɔ ɛnelɛ di la.
+      hyp: wɔ bɛ kpunli ne mɔ anu bɛwɔwɔ adwenle bɛhile gyima mɔɔ ɛnle di la
+      cer: 0.0741
+      wer: 0.2143
+    '161':
+      text: Ɛ nee ɛ gɔnwo ɛdie edwɛkɛmgbɔkɛ ne mɔ na bɛgyinla zo bɛyɛ mɔɔ wɔ aze ɛke
+        la.
+      hyp: ɛ nee ɛ gɔnwo ɛdie edwɛkɛmgbɔkɛ ne mɔ na bɛgyinla zo bɛyɛ mɔɔ wɔ aze ɛkɛ
+        la
+      cer: 0.0169
+      wer: 0.0588
+    '162':
+      text: Bɛhile ɛnelɛkpɔkɛ holɛ mɔɔ wɔ edwɛkɛmgbɔkɛ ne mɔ anu la.
+      hyp: behile ɛnee kpokɛ hɔle mɔɔ wɔ edwɛkɛmgbokɛ ne mmɔ anu la
+      cer: 0.1739
+      wer: 0.6
+    '163':
+      text: Bɛhile ɛnelɛmgbɔkɛ ne mɔɔ lɛ ɛnelɛ ne wɔ edwɛkɛmgbɔkɛ ne mɔ anu la.
+      hyp: bɛhile ɛnemgbokɛ ne mɔɔ le ɛnelɛ ne wɔ edwɛkɛmgbokɛ ne mɔ anu la
+      cer: 0.0926
+      wer: 0.2308
+    '165':
+      text: Kile ɛnelɛkpɔkɛ ngakyile ne mɔ na maa ko biala anwo ndonwo nsa.
+      hyp: kili ɛnee kpɔkɛ ngakyile ne mɔ ɔ na maa ko biala anwo dɔɔnwo nsa
+      cer: 0.1373
+      wer: 0.4167
+    '168':
+      text: Kɛlɛ ɛnelɛ ngakyile ne mɔ na fa ndonwo nsa kilehile ko biala mɔɔ wɔhɛlɛ
+        la anu.
+      hyp: kɛle ɛnenle ngakyile ne mɔ na fane dɔɔnwo nsa kilehile ko biala mɔɔ wɔhɛlɛ
+        la anu
+      cer: 0.0952
+      wer: 0.25
+    '169':
+      text: Dua ndonwo nsa azo kilehile gyima mɔɔ ɛnelɛ di wɔ Nzema aneɛ ne anu la.
+      hyp: dua dɔɔnwo nsa azo kilehile gyima mɔɔ ɛnele di wɔ nzɛma aneɛ ne anu la
+      cer: 0.0893
+      wer: 0.2
+    '180':
+      text: Ɛgengalɛ kola yɛ mɔɔ anu-mia anzɛɛ ndɛlɛnu.
+      hyp: ɛgɛngalɛ kola ye mɔɔ anumia anzɛnyee ndele nu
+      cer: 0.2286
+      wer: 0.7143
+    '200':
+      text: Kenga tidwɛkɛ ne yɛɛ mukenye ne.
+      hyp: kɛnga ti edwɛkɛ ne yɛ amuka nyɛne yɛ amuka nyɛne
+      cer: 0.6154
+      wer: 1.5
+    '203':
+      text: Kpondɛ ɛdendɛmunli titili ne – Ɔta ɔfinde ɛdendɛkpunli ne mɔlebɛbo.
+      hyp: kpondɛ ɛdendɛ munli titili ne ɔta ofindɛ ɛdendɛ kpunli ne mɔɔ ɛlɛba bɔ
+      cer: 0.125
+      wer: 0.8889
+    '205':
+      text: Kpondɛ adwenle ngakyile mɔɔ boa adwenle titili ne la.
+      hyp: kpondɛ adwenle ngakyile mɔɔ boa adwenle titili ne la kpondɛ nu mmm
+      cer: 0.25
+      wer: 0.3333
+    '216':
+      text: Ɔwɔ kɛ ɛkpondɛ edwɛkɛmgbɔkɛ titili ne mɔ.
+      hyp: ɔwɔ kɛ ɛkpondɛ ye dwɛkɛmgbɔkɛ titili ne mɔ ɔwɔ kɛ
+      cer: 0.1765
+      wer: 0.5714
+    '229':
+      text: Yɛfa ɛhye yɛkpondɛ adwenle kpɔkyee anzɛɛ titili ne mɔɔ wɔ ɛgengadeɛ bie
+        anu la.
+      hyp: menginginginging
+      cer: 0.8462
+      wer: 1.0
+    '231':
+      text: Ɛhye di gyima kpalɛ wɔ adawu mɔɔ le nɔhalɛ la anu.
+      hyp: ɛhye di gyima kpalɛ wɔ adawu mɔɔ le nɔhalɛ la anu
+      cer: 0.0
+      wer: 0.0
+    '233':
+      text: Bɛyɛ ɛhye bɛkpondɛ nyelebɛnloa bɛmaa edwɛkɛmiza kpɔkyee bie mɔ.
+      hyp: bɛyɛ ɛhye bɛkpondɛ ye nyɛlɛbɛnwaa bɛmaa edwɛkɛ mezia kpokye bie mɔ
+      cer: 0.1852
+      wer: 0.5556
+    '235':
+      text: Kenga adawu ne mɔɔ wɔ aze ɛke la.
+      hyp: kɛngɛ adawunle mɔɔ wɔ azekɛla nwɔngyele nu ɔwɔ ɔzekɛla nwɔngyele nu ɔwɔ
+        ɔzekɛla
+      cer: 1.76
+      wer: 1.5
+    '236':
+      text: Kile adwenle titili ne mɔɔ wɔ ɛgengadeɛ ne mɔɔ wɔ aze ɛke anu la.
+      hyp: kile adwenle titili ne mɔɔ wɔ ɛgengadeɛ ne mɔɔ wɔ aze ɛkɛ nu la
+      cer: 0.0392
+      wer: 0.1429
+    '241':
+      text: Menli ɛhye mɔ bie wɔ ɛkɛ a ɛnee menze bɛ.
+      hyp: menli ɛhye mɔɔ bie wɔ ɛkɛ a ɛnee menze bɛ
+      cer: 0.0323
+      wer: 0.1
+    '266':
+      text: Bɛva adwenle titili ne mɔɔ bɛhile la bɛdo gua bɛhile sukoavoma ne kɔsɔɔti.
+      hyp: bɛva adwenle titili ne mɔɔ bɛhile la bɛdo gua bɛhile sukoavoma ne kɔsɔɔti
+      cer: 0.0
+      wer: 0.0
+    '271':
+      text: Ɔkile diedi, ɛbulɛ nee nɔhalɛlilɛ.
+      hyp: okili diedi egulu ne nohalili
+      cer: 0.3571
+      wer: 0.8
+    '274':
+      text: Na saa menli mɔɔ lɛ dibelɛ la fo ɛ?
+      hyp: na saa menli mɔɔ le ye dibele la fowɛ na saa menli mɔɔ le ye dibele la
+        fowɛ ɛpɛ boo
+      cer: 1.5
+      wer: 1.6667
+    '276':
+      text: Tieyɛ mɔɔ ɛnva adenle zo la anwo ɛngyia.
+      hyp: tia yɛ mɔɔ ɛnva adenle zo la a ŋwɔ ngyia
+      cer: 0.125
+      wer: 0.625
+    '285':
+      text: Mebanlea na meayɛ tieyɛ wɔ me ɛbɛlabɔlɛ nu.
+      hyp: mebanlea na maa yɛ ti ɛyɛ wɔ me ɛbɛlabɔlɛ nu
+      cer: 0.0571
+      wer: 0.5
+    '292':
+      text: Kenga adawu ne mɔɔ wɔ aze ɛke la na yeye nwolɛ kpuyia ne mɔ anloa.
+      hyp: kɛnga adawu ne mɔɔ wɔ aze ɛkɛ la na yɛyɛ nwolɛ kpuya ne mɔ anloa
+      cer: 0.098
+      wer: 0.2667
+    '299':
+      text: Kilehilevolɛ kpanyinli ne gyi ɛkɛ ne maa tumililɛ wɔ sukulu ne anu.
+      hyp: kilehilevolɛ kpanyinli ne gyi ɛkɛ ne maa tumililɛ wɔ sukulu ne anu
+      cer: 0.0
+      wer: 0.0
+    '332':
+      text: Ɛhye kola maa ɛkile kɛ ɛte mɔɔ ɛlɛkenga la abo anzɛɛ ɛnde ɔ bo.
+      hyp: ɛhye kola maa ɛkile kɛ ɛte mɔɔ ɛlɛkenga la abo anzɛɛ ɛnde ɔ bo
+      cer: 0.0
+      wer: 0.0
+    '344':
+      text: Bɛ nwo bɔkɔbɔkɔyɛlɛ le debie mɔɔ sonla kpɔkɛdelɛ nee ye ayunlunyia gyi
+        zo a.
+      hyp: bɛ nwo bɔkɔbɔkɔyɛlɛle debie mɔɔ sonla kpɔkɛdelɛ ne yɛ anyunlunyia igyi
+        zo a
+      cer: 0.0645
+      wer: 0.4286
+    '361':
+      text: Akee, kile kɛ ɛkpondɛ kɛ bɛsi bɛkɛlɛ ɛgengadeɛ ne la.
+      hyp: akee kile kɛ ɛkpondɛ kɛ bɛsi bɛkɛlɛ ye genga deɛ ne la
+      cer: 0.0476
+      wer: 0.3
+    '363':
+      text: Duzu agbɔkɛ a ɔbobɔle a?
+      hyp: yuzu huuu yuzu agbɔkɛ a ɔbɔbɔle a
+      cer: 0.5263
+      wer: 0.8
+    '374':
+      text: Fa ɛ ti anwo edwɛkɛmgbɔkɛ kilehile “adwenle titili” anu.
+      hyp: fa ye ti anwo odwɛkɛmgbɔkɛ kilehile adwenle titili ye anu
+      cer: 0.1111
+      wer: 0.3333
+    '375':
+      text: Tumi mɔɔ ɛbulɛ lɛ la.
+      hyp: tumi mɔɔ ɛbulolɛ la ɛmenle ti tumi mɔɔ ɛbulolɛ la
+      cer: 1.5
+      wer: 1.4
+    '376':
+      text: Ɛbulɛ ɛnle debie mɔɔ bɛkola bɛsɛlɛ a, na emomu ɔle debie mɔɔ bɛnyia ye
+        a.
+      hyp: ɛbule ɛnle debie mɔɔ bɛkola bɛsɛlɛ ye a na emomu ɔle debie mɔɔ bɛnyia ye
+        a
+      cer: 0.0526
+      wer: 0.1333
+    '388':
+      text: Ɛlɛkpɔsa sukunwiɔ ne mɔ anu la, kakye kɛ ɛbulɛ le awɔdenle mɔɔ anye le
+        nwiɔ a.
+      hyp: ɛlɛkposa sukunwiɔ ne mɔ anu la kakye kɛ ɛbulolɛ awɔdenle mɔɔ anye le nwiɔ
+      cer: 0.0656
+      wer: 0.25
+    '394':
+      text: Fa ɛdendɛmunli nna pɛ adawu ne sikalɛ.
+      hyp: fa ɛdendɛ munli na pɛ adawu ne sikalɛ
+      cer: 0.0323
+      wer: 0.4286
+    '399':
+      text: Kile ɛweɛne mɔɔ la aneɛ ne fɔɔnwo ɛgengalɛ nee nwo mgbondabulɛ ne avinli
+        la.
+      hyp: kile awiene mɔɔ la aneɛ ne fɔɔnwo ɛgengalɛ ne nwo mgbundabulɛ ne avinli
+        la
+      cer: 0.0806
+      wer: 0.2143
+    '400':
+      text: Kilehile subane mɔɔ ɛgengalɛ ndɛlɛnu lɛ la nsa anu.
+      hyp: kilehile subane mɔɔ ɛgengale ndilenunle la nsa anu
+      cer: 0.119
+      wer: 0.3333
+    '411':
+      text: Yɛlɛ mgbɔkye mɔfeme titili ngakyile nsa.
+      hyp: yɛle mgbɔkyi mofome titili ngakyile nsa
+      cer: 0.1176
+      wer: 0.5
+    '426':
+      text: Mgbɔkye mɔfeme mɔɔ yɛta yɛnwu bɛ la a le nzizo nee nzɔzo mɔfeme.
+      hyp: mgbɔkyi mmɔfeme mɔɔ yɛta yenwu bɛ la a lɛ nzi zo nee nzo zo mmɔfeme
+      cer: 0.1176
+      wer: 0.6923
+    '428':
+      text: Ɔkola ɔmaa yɛnyia edwɛkɛmgbɔkɛ mɔɔ wɔ aneɛmɛla ekpunli gyɛne nu la.
+      hyp: ɔkola ɔmaa yɛnyia edwɛkɛmgbɔkɛ mɔɔ wɔ anembɛla kpunli gyɛne nu la
+      cer: 0.0536
+      wer: 0.1818
+    '432':
+      text: Nzizo-nzɔzo mɔfeme a le mgbɔkye mɔfeme mɔɔ lɛ nzizo nee nzɔzo la.
+      hyp: nzuzo nzozo mɔɔ feme a le mgbɔkye mɔɔ feme mɔɔ le nzuzo nee nzozo la
+      cer: 0.1346
+      wer: 0.75
+    '441':
+      text: Ɛhye maa edwɛkɛkpɔkɛ ne kakyi fi baholɛ kɔyɛ dɔɔnwo.
+      hyp: ɛhye maa dwɛkpokɛ ne kɛkyi fi bahɔle kɔyɛ dɔɔnwo
+      cer: 0.1628
+      wer: 0.3333
+    '444':
+      text: Bɔ mɔdenle kɛ ɛbahilehile nu mɔɔ ɛnrɛnlea mɔɔ wɔ anwuma la azo a.
+      hyp: bɔ mɔdenle kɛ ebahilehile nu mɔɔ ɛnrɛnea mɔɔ wɔ wɔ anwuma la azo a
+      cer: 0.0769
+      wer: 0.2308
+    '481':
+      text: Ɔmaa yɛnyia edwɛkɛmgbɔkɛ fofolɛ yɛfi ndinli anzɛɛ ninli mɔfeme ne anu.
+      hyp: ɔma yenyia odwɛkɛmgbokɛ fofolɛ yefi ndinli anzɛnyɛ nninli mɔfemɛ ne anu
+      cer: 0.1525
+      wer: 0.6364
+    '482':
+      text: Ɔmaa yɛnyia edwɛkɛmgbɔkɛ mɔɔ wɔ aneɛmɛla ekpunli fofolɛ nu la.
+      hyp: ɔmaa yenyia edwɛkɛmgbokɛ mɔɔ wɔ anembɛlɛ ye kpunli fofolɛ nu la
+      cer: 0.1154
+      wer: 0.5
+    '483':
+      text: Ɔmaa yɛnyia yɛkpɔkɛ ndɛlɛnu fofolɛ.
+      hyp: ɔmaa yɛnyia yɛkpɔkɛndele nu fofolɛ nwona muuuu
+      cer: 0.4
+      wer: 0.8
+    '485':
+      text: Ɔmaa yɛkakyi edwɛmgbɔkɛ baholɛ yɛyɛ bɛ dɔɔnwo.
+      hyp: ɔmaa ye kakyi yedwomgboke bahɔle ye yɛbɛ dɔɔnwo ɔmaa ye kakyi yedwomgboke
+        bahɔle ye yɛbɛ dɔɔnwo
+      cer: 1.2051
+      wer: 2.0
+    '487':
+      text: Ɔboa ɔmaa yɛkɛlɛhɛlɛ edwɛkɛmgbɔkɛ fɔɔnwo na yɛsukoa aneɛ ne.
+      hyp: ɔboa maa yɛkɛlɛhɛlɛ edwɛkɛmgbɔkɛ fɔɔnwo na ye sukoa aneɛ ne
+      cer: 0.0392
+      wer: 0.3333
+    '496':
+      text: Bɛziezie bɛ nwo kɛ bɛbado ye gua na bɛahilehile nu.
+      hyp: bɛziezie bɛ nwo kɛ bɛbado ye gua na bɛahilehila nu
+      cer: 0.0244
+      wer: 0.1
+    '504':
+      text: Edwɛkɛmgbɔkɛ ɛhye mɔ ta finde yɛ adwelielilɛ nu.
+      hyp: odwokɔ mgbɔkɔ ɛhye mɔɔ ɔta findeɛ ye adwolieli nu
+      cer: 0.275
+      wer: 0.875
+    '511':
+      text: Mɔnukpɔkɛ titili ndonwo bie mɔ a le yɛɛ, eza, na, noko, nee, anzɛɛ.
+      hyp: mɔɔ nu pokɛ titili ne dɔɔnwo bie mɔ a le yɛ ezia na noko nee anzɛɛ
+      cer: 0.1633
+      wer: 0.5385
+    '513':
+      text: Mɔnukpɔkɛ titili mɔɔ ka edwɛkɛmgbɔkɛ nee ɛdendɛsinli bɔ nu la.
+      hyp: monupɔkɛ titili mɔɔ monupɔkɛ titili mɔɔ ka edwɛkɛmgbɔkɛ ne ɛdendɛ
+      cer: 0.5577
+      wer: 0.8
+    '515':
+      text: Mɔnukpɔkɛ titili mɔɔ ka edwɛkɛmgbɔkɛ nee ɛdendɛfoa bɔ nu la.
+      hyp: monukpɔkɛ titili mɔɔ kã edwɛkɛmgbokɛ nee ɛdendafo bo nu la
+      cer: 0.12
+      wer: 0.5
+    '516':
+      text: Nyamenle nee me lua anzondwolɛ nu.
+      hyp: nyamenle nee me luwa anzonudwolɛ nu ɔbɔ vo ɔva ɔva ɔnyɔne ɔnyɔne ɔnyɔne
+      cer: 1.1071
+      wer: 1.5
+    '517':
+      text: Koasi eza hɔle nyevile ne anu bieko.
+      hyp: kuasi eza hɔle nyivile ne anu ebieko
+      cer: 0.1034
+      wer: 0.4286
+    '518':
+      text: Mɔnukpɔkɛ mɔɔ ka ɛdendɛfoa titili nwiɔ bɔ nu la.
+      hyp: mɔɔ nu kpɔkɛ mɔɔ ka ɛdendɛfoɔ titile nwiɔ bo nu la
+      cer: 0.1026
+      wer: 0.6667
+    '520':
+      text: Manza dwule ɔ ra ne na ɔmaanle ye nyɛfonlɛ.
+      hyp: manza idwuli ɔ ɣa ne na ɔmanle ye nyɛfonle manza idwuli ɔ ɣa ne na ɔmanle
+        ye nyɛfonle
+      cer: 1.0882
+      wer: 1.4444
+    '521':
+      text: Yera ɛke anzɛɛ ɔkɔ Aluku?
+      hyp: ɛgakɛ anzɛ ɔkɔn lukumu lukumu ɔɔɔ
+      cer: 0.9
+      wer: 1.2
+    '522':
+      text: Ɔnlonle nzule yɛɛ ɔlile aleɛ.
+      hyp: ɔnɔne nzule yɛɛ ɔlile aleɛ ɔngum su huhunlu hunlu hunlu hunlu hunlu hunlu
+        hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu hunlu
+        hunlu
+      cer: 4.6667
+      wer: 4.6
+    '524':
+      text: Wɔ adenle ɛhye azo, mɔnukpɔkɛ ne a bɔ ɛdendɛfoa ekyi ne abo a.
+      hyp: wɔ adenle ɛhye azo munlu kpoke ne a bo ɛdendɛfoɔ ye kyi ne abo a
+      cer: 0.1458
+      wer: 0.4615
+    '526':
+      text: Ɛbɛlabɔlɛ ɛnla aze noko akee yɛbabɔ yɛ nwo mɔdenle.
+      hyp: ɛbɛlabɔlɛ ɛnlɛ aze noko akee bɛabɔ yɛ nwo mɔnwɔdenle
+      cer: 0.1429
+      wer: 0.3333
+    '527':
+      text: Ɔkpondɛle ye amaa yeanwu ye.
+      hyp: ɔpondɛle ye amra yeanwu ye ɔpondɛle ye amra yeanwu ye
+      cer: 1.0
+      wer: 1.4
+    '528':
+      text: Meze Koame yemɔti fa ezukoa ne maa ye.
+      hyp: mezekwame yemɔti fa ezukwame ne maa ye
+      cer: 0.1333
+      wer: 0.375
+    '529':
+      text: Ɛbɛlabɔlɛ le konle noko akee yɛlɛ anyelazo.
+      hyp: menginginginging
+      cer: 0.8889
+      wer: 1.0
+    '536':
+      text: Ɔkilehile deɛmɔti anzɛɛ bɛda bodane ali.
+      hyp: okilehile deɛmɔti anzɛnyee bɛda bɔda ne ali
+      cer: 0.1765
+      wer: 0.6667
+    '537':
+      text: Ɔkeha ɛdendɛfoa anzɛɛ ɛdendɛsinli mɔɔ bɔ atipɛne la ɔbobɔ nu.
+      hyp: ɔkɛhã ɛdendɛfoɔ anzɛnyee ɛdendɛhyinli mɔɔ bɔ atipɛne la ɔbɔbɔ nu
+      cer: 0.1961
+      wer: 0.5
+    '538':
+      text: Ɔka adwenle mɔɔ kile kyɛkyɛhanlɛ la ɔbɔ nu.
+      hyp: ɔka adwenle mɔɔ kile ye kyekye hanle la ɔbɔ nu
+      cer: 0.1429
+      wer: 0.375
+    '539':
+      text: Yɛfa yɛkile adwenle mɔɔ ko tia bɛ nwo la.
+      hyp: yɛfa yekile adwenle mɔɔ ɔko tiyia bɛ nwo la yɛdɛdɛ nwuuuu
+      cer: 0.5
+      wer: 0.5556
+    '540':
+      text: Yɛfa yɛkile nzidwɛkɛ bie guabelɛ.
+      hyp: yɛfa yekile yezi odwɛkɛ bie gua ɛbɛlɛ
+      cer: 0.2143
+      wer: 1.0
+    '542':
+      text: Mɛla ngyikyi beta kɛ yɛsi yɛfa mɔnukpɔkɛ yɛdi gyima la anwo.
+      hyp: mɛla ngyikyi bɛta kɛ yɛsi yɛfa mɔɔ nu kpɔkɛ yɛdi gyima la anwo
+      cer: 0.0408
+      wer: 0.3636
+    '545':
+      text: Yɛdua mɔnukpɔkɛ zo yɛkeha yɛ nyɛleɛ nee adwenle mɔɔ yɛlɛ bɛ la yɛbobɔ
+        nu.
+      hyp: yedua monukpɔkɛ zo yɛkɛhã yeee nee adwenle mɔɔ yɛle bɛ la yebɔbɔ nu
+      cer: 0.2203
+      wer: 0.5
+    '547':
+      text: Mɔnukpɔkɛ boa wɔ ninyɛne ɛbobɔlɛ nu.
+      hyp: mɔɔ nu kpɔkɛ boa wɔ nninyɛne ɛbɔbɔlɛ nu ɔlumuu
+      cer: 0.3
+      wer: 1.0
+    '551':
+      text: Yɛlɛ ndenle ngakyile mɔɔ yɛdua zo yɛnyia edwɛkɛmgbɔkɛ fofolɛ wɔ aneɛ nu
+        a.
+      hyp: yɛlɛ ndenle ngakyile mɔɔ yedua zo yenyia edwɛkɛmgbokɛ fofolɛ wɔ aneɛ nu
+        a
+      cer: 0.0492
+      wer: 0.2308
+    '554':
+      text: Bɛhilehile ɛhye mɔ bie anu wɔ aze ɛke.
+      hyp: bɛhilehile ɛhye mɔɔ bie anu wɔ azekɛ
+      cer: 0.1
+      wer: 0.375
+    '556':
+      text: Kɛ ɛsi ɛtoto ninyɛne mɔɔ le fofolɛ la aluma wɔ wɔ suazo ɛ?
+      hyp: kɛ ɛsi ɛtoto ninyɛne mɔɔ le fofolɛ la alima wɔ wɔ sua zo ɛ
+      cer: 0.0222
+      wer: 0.2308
+    '558':
+      text: Nwane a toto ninyɛne zɔhane mɔ aluma a?
+      hyp: nwane a toto ninyɛne zɔhane mɔɔ aluma a aluma ne yɛ wɔwɔwɔ wɔ maa
+      cer: 0.6774
+      wer: 0.875
+    '564':
+      text: Duma, Yɛkpɔkɛ nee Yɛkpɔkɛ, Duma nee mɔɔ ɛha la.
+      hyp: duma yɛ kpɔkɛ ne yɛ kpɔkɛ duma ne mɔɔ ɛha la
+      cer: 0.0556
+      wer: 0.6667
+    '579':
+      text: Nzema ta nyia nyɛvolɛ aneɛ fi Nrelenza nee Akane aneɛ nu.
+      hyp: nzɛme ata inyia anyɛvolɛ anee fi nɣɛlɛnza nee akane anee nu
+      cer: 0.1957
+      wer: 0.6364
+    '588':
+      text: Ɔboa ɔmaa bɛnyia ngyinlazo na bɛdie aneɛ ne bɛto nu kɛ ɔle fɔɔnwo.
+      hyp: ɔboa ɔmaa bɛnyia ngyinla zo na bɛdie aneɛ ne bɛto nu kɛ ɔlɛ fɔɔnwo
+      cer: 0.0189
+      wer: 0.2308
+    '589':
+      text: Ɔboa ɔmaa yɛnyia edwɛkɛmgbɔkɛ fofolɛ yɛmaa ninyɛne nee adwenle fofolɛ
+        bie mɔ.
+      hyp: ɔboa ɔmaa yenyia edwɛkɛmgbokɛ fofolɛ yemaa ninyɛne ne ye adwenle fofolɛ
+        bie mɔ
+      cer: 0.0615
+      wer: 0.4167
+    '590':
+      text: Ɔboa wɔ aneɛ ne ɛzukoalɛ nu.
+      hyp: ɔboa wɔ aneɛ ne izukuale nu ɔboa wɔ aneɛ ne izukuale nu
+      cer: 1.0909
+      wer: 1.1667
+    '591':
+      text: Ɔboa ɔmaa yɛkola yɛkile ɛleka mɔɔ aneɛ ne edwɛkɛmgbɔkɛ ne mɔ abo vi la.
+      hyp: ɔboa ma yɛkola yekile ɛleka mɔɔ aneɛ ne edwɛkɛmgbokɛ ne mɔ abo vi la
+      cer: 0.0702
+      wer: 0.2143
+    '595':
+      text: Kile mgbɔkye mɔfeme ngakyile mɔɔ yɛlɛ bɛ la.
+      hyp: kile mgbakye mɔɔ fɛmɛ ngakyile mɔɔ yɛle bɛ la
+      cer: 0.1389
+      wer: 0.5
+    '596':
+      text: Kile mgbɔkye mɔfeme ndonwo ne mɔ mɔɔ wɔ aneɛ ne anu la.
+      hyp: kile mgbɔkyi mɔɔ feme ndɔɔnwo ne mɔ mɔɔ wɔ aneɛ ne anu la
+      cer: 0.093
+      wer: 0.3333
+    '597':
+      text: Wowɔ adwenle wɔ gyima mɔɔ mgbɔkye mɔfeme di la nna anwo.
+      hyp: wɔwɔ adwenle wɔ gyima mɔɔ mgbakyi mofomedi la ne anwo
+      cer: 0.1556
+      wer: 0.4545
+    '600':
+      text: Wowɔ adwenle wɔ gyima nna mɔɔ mgbɔkye mɔfeme di la anwo.
+      hyp: wɔwɔ adwenle wɔ gyima na mɔɔ mgbokyi mofomedi la anwo
+      cer: 0.1333
+      wer: 0.4545
+    '602':
+      text: Kile mɔnukpɔkɛ ngakyile ne mɔ mɔɔ wɔ aneɛ ne anu la.
+      hyp: kile mɔɔ nu kpɔkɛ ngakyile ne mɔ mɔɔ wɔ aneɛ ne anu la
+      cer: 0.0244
+      wer: 0.2727
+    '603':
+      text: Kilehile ɛweɛne mɔɔ la mɔnukpɔkɛ ngakyile ne mɔ avinli la.
+      hyp: kilehile awie ne mɔ la mɔɔ ɛnlu kpoke ngakyile ne mɔ avinli la
+      cer: 0.1875
+      wer: 0.6
+    '606':
+      text: Ɔmɔ Adwoba ɛlɛkenga yɛɛ Koame ɛlɛkɛlɛ.
+      hyp: ɔmɔ gyoo ba ɛlekenga yɛ kwame ɛlekele
+      cer: 0.2812
+      wer: 1.0
+    '607':
+      text: Saa ɔwɔ ɛke a anrɛɛ ɔbaye ɔ nloa.
+      hyp: saa wowɔ kɛ a anrɛɛ wobayɛ wo nu a
+      cer: 0.44
+      wer: 0.75
+    '608':
+      text: Saa ɛsukoa a, ɛbanwu ye.
+      hyp: saa esukua ebɛnwe yɛ bonyuu bonyuu
+      cer: 0.9444
+      wer: 1.0
+    '609':
+      text: Ɛhɔne hunle ye yemɔti ɔlile aleɛ ne.
+      hyp: ahɔne hunlii yemɔti ɔlili aleɛ ne
+      cer: 0.1724
+      wer: 0.5714
+    '610':
+      text: Mebahɔ na tɛ ɛnɛ ɔ.
+      hyp: me baho nansile wooo
+      cer: 0.7143
+      wer: 1.0
+    '612':
+      text: Kilehile ndenle mɔɔ yɛdua zo yɛnyia edwɛkɛmgbɔkɛ fofolɛ la anu.
+      hyp: kilehile ndenle mɔɔ yeduwa zo yenyia edwɛkɛmgbɔkɛ fofolɛ la anu
+      cer: 0.0566
+      wer: 0.2
+    '613':
+      text: Kile ndenle nsa mɔɔ bɛdua zo bɛnyia edwɛkɛmgbɔkɛ fofolɛ wɔ aneɛ ne anu
+        la.
+      hyp: kile ndenle nsa mɔɔ bɛdua zo bɛnyia edwɛkɛ mgbɔkɛ fofolɛ wɔ aneɛ ne anu
+        la
+      cer: 0.0
+      wer: 0.1429
+    '614':
+      text: Kilehile ndenle mɔɔ bɛdua zo bɛnyia edwɛkɛmgbɔkɛ wɔ aneɛ ne anu la nsa
+        anu.
+      hyp: kilehile ndenle mɔɔ boduwa zo benyia edwɛkɛmgbokɛ wɔ aneɛ ne anu la ansa
+        nu
+      cer: 0.0984
+      wer: 0.3571
+    '619':
+      text: Ɛnɛ, tɛkenɔlɔgyi le debie mɔɔ anwo hyia kpalɛ wɔ nwomazukoalɛ nu a.
+      hyp: ɛnee tɛkenɔ gyile debie mɔɔ anwo hyia kpalɛ wɔ nwomazukoalɛ nu a
+      cer: 0.0741
+      wer: 0.25
+    '626':
+      text: Edwɛkɛmiza ne a le kɛ, duzu bieko a doa ye a?
+      hyp: edwɛkɛ mizia ne aa le kɛ duzu bieko a doa ye a
+      cer: 0.0606
+      wer: 0.2727
+    '635':
+      text: Ɛhye eza bamaa wɔade ɛzukoalɛdeɛ ngakyile mɔɔ le kɛ Nrelenza la abo.
+      hyp: ɛhye eza bamaa wɔade ezukoalɛdeɛ ngakyile mɔɔ le kɛ nrenza la abo
+      cer: 0.0536
+      wer: 0.1667
+    '663':
+      text: Ngyehyɛleɛ mɔɔ duma ɛdendɛsinli (Dm ɛds) lɛ la kakyihakyi.
+      hyp: ngyehyɛleɛ mɔɔ dwuma ɛdende senle dwumazile la kakyihakyi
+      cer: 0.2128
+      wer: 0.5556
+    '664':
+      text: Duma ɛdendɛsinli kola yɛ edwɛkɛkpɔkɛ ko kye mɔɔ le duma anzɛɛ dumagya
+        la.
+      hyp: duma ɛdendɛ sinli kolaa ye edwɛkɛ kpɔkɛ ko kye mɔɔ le duma anzɛɛ dumagya
+        la
+      cer: 0.0333
+      wer: 0.4615
+    '665':
+      text: Ɛdendɛsinli ɛhye da duma ko anzɛɛ dumagya ko ala ali.
+      hyp: ɛdenle desinli ɛhye da duma ko anzɛɛ dumagya ko ala ali
+      cer: 0.0698
+      wer: 0.2
+    '670':
+      text: Edwɛkɛkpɔkɛ titili ne ɛnlɛ ngilenu biala.
+      hyp: edwɛkɛ kpɔkɛ titili ne ɛnle ngilenu biala molɛ mo nuu
+      cer: 0.2857
+      wer: 1.0
+    '671':
+      text: Duma ɛdendɛsinli kola yɛ edwɛkɛmgbɔkɛ mɔɔ bo ko la.
+      hyp: duma ɛdendɛ sinli kolaa yeee bɛpɛ mbɔkɛ mɔɔ bɔ ko la
+      cer: 0.1667
+      wer: 0.7778
+    '693':
+      text: Nzizo ngilenu ndonwo bie mɔ a wɔ ɛke la.
+      hyp: nzuzu ngole nu ndomo bie mɔ a wɔ ɛkɛla wɔ ɛkɛla
+      cer: 0.4194
+      wer: 0.7778
+    '698':
+      text: Bɛmɛ a le Tete nee Awiane mɔɔ ba kolaa na belemgbunli ne ara la.
+      hyp: bɛmɛ a aletɛte nee awia ne mɔɔ ba kolaa na belemgbunli ne ara la belemgbunli
+        ne ara la
+      cer: 0.4
+      wer: 0.5714
+    '701':
+      text: Tɛladeɛ fufule tendenle ne ɛminli.
+      hyp: tɛladeɛ fufulo yɛ tendɛne eminli ye ne nuu
+      cer: 0.4828
+      wer: 1.2
+    '702':
+      text: Meze nrenyia kɔkɔlɛ ne mɔɔ vi Ngɛnla la.
+      hyp: meze nrenya kɔkɔlɛ ne mɔɔ vi ngɛnla la nwɔnloo
+      cer: 0.25
+      wer: 0.25
+    '708':
+      text: Edwɛkɛkpɔkɛ titili ne kola fea nzizo nee nzɔzo ngilenu ne avinli.
+      hyp: edwɛkɛ kpɔkɛ titili ne kola fea nzi zo nee nzo zo ngule nu ne avinli
+      cer: 0.037
+      wer: 0.7273
+    '710':
+      text: Gana arane gyimayɛvoma mgbanyinli nnu bie ɛra ɛke.
+      hyp: ghana arane gyima yɛvomaa mgbanyinli nu bie ɛrɛkɛ nwonloonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonwoonw
+      cer: 3.0952
+      wer: 0.75
+    '712':
+      text: Yɛ sukulu sukoavoma nnu ne mɔɔ gyigyi nehane la anye liele.
+      hyp: ye sukulu sukuavoma nu ne mɔɔ gyigyi ne hanle la anye iliyɛle
+      cer: 0.1458
+      wer: 0.5455
+    '714':
+      text: Wɔ bɛ ekpunli ne mɔ anu, bɛhɛlɛhɛlɛ duma ɛdendɛsinli nsa.
+      hyp: wɔ bɛ kunli ne mɔ anu bɛhɛlɛhɛlɛ duma ɛdende sinli nsa
+      cer: 0.0652
+      wer: 0.3
+    '724':
+      text: Yɛkpɔkɛ ɛdendɛsinli mɔɔ lɛ yɛkpɔkɛ ekyi, yɛkpɔkɛ titili yɛɛ ye boavo la.
+      hyp: yɛkpɔ kɛɛ ɛdendɛ sunli mɔɔ le ye kpɔkɛ ekyi ye kpɔkɛ titili yɛ ye boavolɛ
+        a
+      cer: 0.1186
+      wer: 1.0
+    '728':
+      text: Kilehilevolɛ ne sɔ sukoavoma ne nea Yalɛ biala).
+      hyp: kilehilevolɛ ne so sukuavoma ne nnea yale biyala
+      cer: 0.1282
+      wer: 0.625
+    '739':
+      text: Wɔ bɛ ekpunli ne mɔ anu, bɛhɛlɛ yɛkpɔkɛ ɛdendɛsinli nsa.
+      hyp: wɔ bɛ kpunli ne mɔ anu bɛhɛle ye kpɔkɛ ɛdendɛ sinli nsa
+      cer: 0.0667
+      wer: 0.6
+    '759':
+      text: Ɛhye le ɛdendɛsinli mɔɔ ye edwɛkɛkpɔkɛ titili ne le ɛlekakpɔkɛ la.
+      hyp: ɛhyelɛ ɛdendɛ sinli mɔɔ ye odwoko kpɔkɛ titili ne le ɛleka kpɔkɛ la
+      cer: 0.0727
+      wer: 0.6364
+    '761':
+      text: Ndonwo bie mɔ a wɔ aze ɛke la.
+      hyp: ndomo bie moa wɔ azekɛla nwondemo
+      cer: 0.5909
+      wer: 0.75
+    '767':
+      text: Edwɛkɛkpɔkɛ titili ne a anwo hyia kpalɛ a.
+      hyp: edwɛkɛ kpokɛ titili ne a anwo hyia kpale a wɔlooo
+      cer: 0.2353
+      wer: 0.5
+    '770':
+      text: Yɛta yɛnyia ɛdendɛsinli mɔɔ bo ko la wɔ ɛdendɛmunli nu.
+      hyp: yɛta yenyia ɛdendɛ sinli mɔɔ bɔkʋ̃ la wɔ ɛdendɛ munli nu
+      cer: 0.0667
+      wer: 0.7
+    '777':
+      text: Yɛfa ɛdendɛsinli yɛda adwenle ali.
+      hyp: yɛfa dendɛ sinli yɛfa dendɛ sinli yɛda adwenle eli
+      cer: 0.4828
+      wer: 1.2
+    '778':
+      text: Ɔboa ɔmaa yɛdi ngitanwo fɔɔnwo wɔ ɛdendɛlɛ nee ɛhɛlɛlɛ nu.
+      hyp: ɔboa ma yɛdi ngitan fonwo wɔ ɛdendɛlɛ ne ɛherɛle nu
+      cer: 0.2083
+      wer: 0.5
+    '779':
+      text: Ɔboa ɔmaa yɛto nrɛlaleɛ mɔɔ ndelebɛbo wɔ nu la.
+      hyp: ɔboa maa yeto nrɛlaleɛ mɔɔ ndele bɛbɔ wɔ nu la
+      cer: 0.0789
+      wer: 0.4444
+    '792':
+      text: Mekɛ mɔɔ yɛdwule la, yɛkpondɛle anwodɔlɛ ɛleka wɔ arɛlɛ baka bie abo.
+      hyp: mekɛ mɔɔ yedwuli la ye kpondɛlɛ anwodolɛ ɛlɛka wɔ arelebaka ebie abo
+      cer: 0.1607
+      wer: 0.6667
+    '815':
+      text: Ɛdendɛfoa le edwɛkɛmgbɔkɛ ekpunli mɔɔ bɔ nu yɛ gyima na ɔlɛ yɛvo nee yɛkpɔkɛ
+        la.
+      hyp: ɛdendɛ foa le odwɛkɛ mboke kpunli mɔɔ bo nu yi gyima na ɔlɔyɛvo nee yɛ
+        kpɔkɛ la
+      cer: 0.1077
+      wer: 0.7333
+    '816':
+      text: Ɛdendɛfoa le aneɛmɛla nvɛyebanvɛyeba ne mɔ ko.
+      hyp: ɛdendɛ fowale ye anee menla mvɛyeba mvɛyeba ne mɔ ko
+      cer: 0.2051
+      wer: 1.0
+    '823':
+      text: Aya donle aleɛ kolaa na yeahɔ sukulu.
+      hyp: aye adenle aleɛ kolaa na yeahɔ sukulu
+      cer: 0.0667
+      wer: 0.2857
+    '824':
+      text: Agyalu hɔle gua ne anu.
+      hyp: ɛgyale hɔle gua ne anu ɔdwo nwumonwomo
+      cer: 0.8889
+      wer: 0.6
+    '843':
+      text: Fa mɔɔ ɛnwunle ye la to gua kile ɛ gɔnwo.
+      hyp: menginginginging
+      cer: 0.7742
+      wer: 1.0
+    '845':
+      text: Yɛlɛ ɛdendɛfoa ngakyile nna ɔlua ngilenu mɔɔ bɛmaa la ati.
+      hyp: yɛle ɛdendɛfoa ngakyile na ɔlua ngile nu mɔɔ bɛmaa la ati
+      cer: 0.0417
+      wer: 0.4
+    '850':
+      text: Me nli to aleɛ dahuu.
+      hyp: menli to wɔ aleɛ dahuu
+      cer: 0.125
+      wer: 0.6
+    '853':
+      text: Ɛmianlɛ ɛdendɛmunli ɛngyia yɛvo biala.
+      hyp: ye meanle ye ɛdendɛ munli ngyia ye ɛvo biala
+      cer: 0.2424
+      wer: 1.6
+    '858':
+      text: Ɛbahola wɔamaa edwɛkɛmgbɔkɛ mɔɔ bɛfa bɛbiza kpuyia la anwo ndonwo ɔ?
+      hyp: bɛbahola wɔamaa edwɛkɛ mgbɔkɛ mɔɔ bɛfa bebizia kpuyia la anwo dɔɔnwo
+      cer: 0.1228
+      wer: 0.5455
+    '859':
+      text: Yɛfa edwɛkɛmiza sɛkɛlɛneɛ a yɛdwula edwɛkɛmiza ɛdendɛfoa a.
+      hyp: yɛfa edwɛkɛ mizia sɛkɛlɛ ne a yedwula edwɛkɛ mizia ɛdendɛ fowaa
+      cer: 0.098
+      wer: 1.125
+    '861':
+      text: Nwane ezukoa a le ɛhye?
+      hyp: nwane yezukoale ɛhye nwane yezukoale ɛhye
+      cer: 1.0
+      wer: 0.8
+    '862':
+      text: Duzu aleɛ a ɛbali ye ɛnɛ a?
+      hyp: usu usu usu
+      cer: 0.9
+      wer: 1.0
+    '863':
+      text: Nienwu a ɛhɔle a ?
+      hyp: nee nwo a ɛhɔle ye aho ɛvome ye nu
+      cer: 1.1538
+      wer: 1.75
+    '864':
+      text: Saa ɛye ɛdendɛfoa titili ne ɛfi ɛkɛ a, eza yɛlɛ ɛdendɛfoa ekyi.
+      hyp: saa ɛyɛ ɛdendɛfowɔ titili ne ye fi ɛkɛ a eza yɛle ɛdendɛfowɔ ekyi
+      cer: 0.16
+      wer: 0.5
+    '868':
+      text: Ɔdi ngilenu gyima ɔmaa ɛdendɛfoa titili ne.
+      hyp: ɔdi ngile nu gyima ɔmaa ɛdendɛfo atitili ne ɔdi ngile nu gyima ɔmaa ɛdendɛfo
+        atitili ne
+      cer: 1.0
+      wer: 1.7143
+    '870':
+      text: Mɔnukpɔkɛ a boa ɛdendɛfoa ekyi maa ɔfa ɔ nwo ɔbeta ɛdendɛfoa titili ne
+        a.
+      hyp: monu kpɔkɛ a boa ɛdendɛfo akyi maa ɔfa wo nwo ɔbɛta ɛdendɛfo atitili ne
+        a
+      cer: 0.0847
+      wer: 0.5714
+    '873':
+      text: Ɛdendɛfoa ekyi ne di gyima ngakyile dɔɔnwo ɔti yɛgua bɛ ekpunli ngakyile.
+      hyp: ɛdendafo ɛ kyi ne di gyima ngakyile dɔɔnwo ɔ tee ye gɔ bɛkpunli ngakyile
+      cer: 0.1475
+      wer: 0.6667
+    '883':
+      text: Ɔkola ɔdi gyima kɛ yɛvo anzɛɛ nyiavo anzɛɛ dievo.
+      hyp: ɔkola ɔdi gyima kɛɛ yevo anzɛɛ nyiavo anzɛɛ dievo
+      cer: 0.05
+      wer: 0.2222
+    '885':
+      text: Duma ɛdendɛfoa mɔɔ di yɛvo gyima.
+      hyp: yuma ɛdendafo a mɔɔ di yɛvu gyima ɛnavo ooo
+      cer: 0.4074
+      wer: 1.0
+    '886':
+      text: Raalɛ ne mɔɔ dɔle ndanlɛ ne anoma la ɛhɔ.
+      hyp: wolale ne mɔɔ dole ndanle ne anoma la ɛhɔ ɔbɔto nwɔnwɔnwɔnwɔnwɔnwɔ
+      cer: 0.9062
+      wer: 0.5556
+    '887':
+      text: Duma ɛdendɛfoa mɔɔ di gyima kɛ nyiavo anzɛɛ dievo la.
+      hyp: lumua ɛdendɛ fowaa mɔɔ di gyima kɛɛ nyavo anzɛnyee deɛvo la
+      cer: 0.2791
+      wer: 0.7
+    '888':
+      text: Me gɔnwo ne kpole mɔɔ mendɔle memaanle ye la.
+      hyp: me gɔnwo ne kpele mɔɔ me ndule me maane yela yɛlɛ bee wɔ wo wo wo wo me
+        nunu nunu mɔɔ
+      cer: 0.9167
+      wer: 1.8889
+    '889':
+      text: Menwunle awenade ne mɔɔ bɔvolɛ ne hunle ye la.
+      hyp: menwunle anweade ne mɔɔ bɔvolɛ ne hunle ye la yɛte nwuuuu
+      cer: 0.3243
+      wer: 0.3333
+    '890':
+      text: Ɛdendɛmunli (i) ne mɔɔ wɔ anwuma la le duma ɛdendɛfoa mɔɔ ɛlɛdi yɛvo gyima
+        a.
+      hyp: ɛdendɛmunli ne mɔɔ wɔ anwuma la le duma ɛdendɛfoa mɔɔ ɛlɛdi ye ɛvɔ gyimaa
+      cer: 0.05
+      wer: 0.2667
+    '896':
+      text: Saa medwu suanu a, ɛbahɔ.
+      hyp: saa me gyi sua nu a ɛbahɔ
+      cer: 0.1579
+      wer: 0.8
+    '897':
+      text: Yɛbayia ɛleka mɔɔ baka tendenle ne gyi la.
+      hyp: ebɛyea aleka mɔɔ bakatendɛle ne gyi la mmmm
+      cer: 0.3235
+      wer: 0.625
+    '898':
+      text: Yɛkpɔkɛngilenu ɛdendɛfoa ne mɔ a bɛpepɛ bɛ bo wɔ anwuma ɛdendɛmunli ne
+        mɔ anu la.
+      hyp: ɛkpo kemgbele nu ɛdendɛfonwa ne mɔ a bɛpɛpɛ bɛbɔ wɔ wɔ onwuma ɛdendɛ munli
+        ne mɔ anu la
+      cer: 0.197
+      wer: 0.6667
+    '924':
+      text: Ɔle sɛkɛlɛneɛ mɔɔ yɛfa yɛsie ɛdendɛmunli adwulaleɛ yɛkile ye awieleɛ a.
+      hyp: ɔle sɛkɛlɛ ne mɔɔ yɛfa yɛsie ɛdendɛmunlɛ dwulaleɛ yɛkile ye awieleɛ a
+      cer: 0.05
+      wer: 0.3636
+    '927':
+      text: Kpolisi kpanyinli ne lale kɛlɛma.
+      hyp: polisi kpanyinli ne lale kɛnlɛma wɔnviso wɔ mɔɔ
+      cer: 0.5
+      wer: 1.0
+    '929':
+      text: Yɛfa yɛdwula nzonlɛyɛ ɛdendɛsinli anzɛɛ ɛdendɛmunli.
+      hyp: yɛfa yedwula nzʋnlɛ yɛ ɛdɩndɛ sinli ye anzɛnyɩɩ ɛdɩndɛ munli ye
+      cer: 0.2609
+      wer: 1.6667
+    '930':
+      text: Dɔketa ne zele kɛ, “Ɛlɛte kpɔkɛ”.
+      hyp: bɛkɛtane zɛbɛre kɛ bɛlɛte pɔkɛ bɛlɛte pɔkɛ
+      cer: 0.7083
+      wer: 1.1667
+    '931':
+      text: Kilehilevolɛ ne hanle kɛ, “Ɛnɛ sɔnea ɛnle ɛkɛ”.
+      hyp: kilehilevolɛ ne hanle kɛɛ ɛnee sɔnea ɛnle ye kɛ
+      cer: 0.1389
+      wer: 0.5
+    '933':
+      text: Yɛfa ɛzinzelɛ sɛkɛlɛneɛ yɛtete ninyɛne mɔɔ yɛbobɔ bɛ la avinli.
+      hyp: yɛfa yizinzale sɛkɛlɛ ne yɛtɛte nninyɛne mɔɔ yɛbɔbɔ bɛ la avinli
+      cer: 0.1509
+      wer: 0.6
+    '934':
+      text: Mengɔle efiade ne mengɔndɔle saminla, emiane, bokiti yɛɛ tohulu.
+      hyp: mongole efiade ne mongondole sɛmenla emiane bokiti yɛ tohulu
+      cer: 0.1509
+      wer: 0.4444
+    '935':
+      text: Metɛnwunle buluku ne, ɛkponle ne, yɛɛ ebia ne.
+      hyp: meti onwunlu buluku ne kponle ne yɛɛ ebia ne
+      cer: 0.1111
+      wer: 0.375
+    '937':
+      text: Yɛfa yɛtete dumangilenu mɔɔ kilehile duma ko ne ala anu la avinli.
+      hyp: yɛfa yɛtɛte duma ngule nu mɔɔ kilehile duma ko ne ala anu la avinli
+      cer: 0.037
+      wer: 0.3333
+    '938':
+      text: Buluku fofolɛ, bile ne ɛminli.
+      hyp: buluku fufurɛ bile ne ye menli ɛne nu
+      cer: 0.4583
+      wer: 1.0
+    '939':
+      text: Mendɔle sua dɛba, akɔlɛnlome, koatee bie.
+      hyp: mendole sua dɛba akolɛnlome koate bie
+      cer: 0.0909
+      wer: 0.5
+    '945':
+      text: Yɛfa yɛtete ɛdendɛfoa titili nwiɔ avinli.
+      hyp: yɛ faa yɛta te ɛdendafoa titire nyɔɔ
+      cer: 0.3714
+      wer: 1.1667
+    '946':
+      text: Melɛ sɔnea ɛhyema; menwɔgenga nɔe kɔsɔɔti.
+      hyp: melesonea ɛhyema menwɔ genganu kɔsɔɔti
+      cer: 0.1143
+      wer: 0.6667
+    '947':
+      text: Ɛnee mekpondɛ kɛ metu adenle mekɔ Ngɛnla; ɛnee maanle nu ɛmunla.
+      hyp: ɛnee mokpondɛ kɛɛ mutu adenle me ɔko ngɛnlaa ɛnee manle nu emunla a
+      cer: 0.1731
+      wer: 0.8182
+    '948':
+      text: Yɛfa yɛtete ninyɛne mɔɔ yɛbobɔ bɛ aluma la avinli.
+      hyp: ɛfa ye ɛtɛɛte nninyɛne mɔɔ yɛbɔbɔ bɛ aluma la avinli
+      cer: 0.1463
+      wer: 0.5556
+    '952':
+      text: Yɛfa nzonlɛyɛlɛ sɛkɛlɛneɛ yɛyɛ edwɛkɛ mɔɔ awie ɛha la anzɛɛ adwelie bie
+        nzonlɛ.
+      hyp: yɛfa nzʋnlɛ ɛyɛlɩ sɛkɛlɛ ne yɛyɛ odwɛkɛ mɔɔ awie ɛha la anzɛnyɩɩ adwolie
+        bie nzʋnlɛ
+      cer: 0.1667
+      wer: 0.6154
+    '954':
+      text: Yɛ awovolɛ ne mɔ zele yɛ kɛ, “Bɛmmafa ɛhɔne bɛda”.
+      hyp: yɛɛ awovolɛ ne mmɔ zeli ye kɛɛ bɛmmafa ahɔne bɛda
+      cer: 0.1622
+      wer: 0.6
+    '955':
+      text: Eza yɛkola yɛfa nzonlɛyɛlɛ sɛkɛlɛneɛ yɛda tidwɛkɛ anzɛɛ tidwɛkɛ ngane
+        bie ali.
+      hyp: eza yɛkola yɛfa nzonle ɛyɛlɛ sɛkɛlɛnee yɛda ti edwɛkɛ anzɛnyee ti edwɛkɛ
+        ngane ebie ali
+      cer: 0.1364
+      wer: 0.75
+    '959':
+      text: Yɛfa yɛkile ninyɛne mɔɔ bɔ ɔ bo fi ɛleka ko ɔkɔdwu ɛleka fofolɛ zo la.
+      hyp: yɛfa yekile nninyɛne mɔɔ bɔ ɔbɔ fi ɛleka ɔko okodwu ɛleka fofolɛ zo la
+      cer: 0.1091
+      wer: 0.4
+    '960':
+      text: Sukoavoma kɔ sukulu vi Kenlenzile-Yalɛ, Siane Gyɛne-Siane Bulu.
+      hyp: sukuavoma ɔko sukuluvi kenlenzile yale siane gyenle siane buluu
+      cer: 0.1346
+      wer: 1.0
+    '962':
+      text: Yɛfa yɛkile ninyɛne nwiɔ mɔɔ ngitanwolilɛ la bɛ avinli la.
+      hyp: yɛfa yɛkile ninyɛne nwiɔ mɔɔ ngitanwule la bɛ avinli la
+      cer: 0.0833
+      wer: 0.1
+    '964':
+      text: Yɛfa yɛkile edwɛkɛmgbɔkɛ anzɛɛ aluma nwiɔ mɔɔ zia zo la.
+      hyp: ɛfa ye kinli edwɛkɛ mgboke anzɛɛ aluma nwiɔ mɔɔ zia zo la
+      cer: 0.1304
+      wer: 0.5
+  source: evaluated

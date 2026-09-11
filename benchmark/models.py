@@ -13,6 +13,7 @@ import abc
 import io
 import logging
 import os
+import sys
 import wave
 from pathlib import Path
 
@@ -36,6 +37,13 @@ def _wav_bytes(samples, sample_rate=24000):
     return buf.getvalue()
 
 
+def _cache_root():
+    """Root for downloaded/derived assets — the HF cache volume on Modal."""
+    return os.environ.get("HF_HOME") or os.path.join(
+        os.path.expanduser("~"), ".cache", "nsanku-tts"
+    )
+
+
 def load_tts_model(model_id, device="cuda", subset=None, **kwargs):
     """Auto-detect and load a TTS model wrapper.
 
@@ -47,23 +55,23 @@ def load_tts_model(model_id, device="cuda", subset=None, **kwargs):
     Returns an instance of BaseTTSModel.
     """
     lower = model_id.lower()
-    meta = _model_meta(model_id)
+    meta = kwargs.pop("meta", None) or _model_meta(model_id)
 
     if meta.get("input_type") == "ipa":
         raise UnsupportedModel(f"{model_id}: requires IPA input, skipping")
 
-    vendor = model_id.split("/")[0].lower()
-
     if "voxcpm2" in lower or meta.get("architecture", "").startswith("VoxCPM2"):
         return VoxCPM2Wrapper(model_id, device=device, subset=subset, meta=meta, **kwargs)
-    if "ghana-tts" in lower or vendor in ("techolise",):
+    if "ghana-tts" in lower:
         return VoxCPMWrapper(model_id, device=device, subset=subset, meta=meta, **kwargs)
+    if meta.get("runner") == "cosyvoice" or "cosyvoice" in lower:
+        return CosyVoice2Wrapper(model_id, device=device, meta=meta, **kwargs)
     if "f5-tts" in lower and "openbible" in lower:
-        return F5TTSWrapper(model_id, device=device, **kwargs)
+        return F5TTSWrapper(model_id, device=device, meta=meta, **kwargs)
     if "nano-twi" in lower:
-        return NanoTwiWrapper(model_id, device=device, **kwargs)
+        return NanoTwiWrapper(model_id, device=device, meta=meta, **kwargs)
     if lower.startswith("khaya") or "khaya" in lower:
-        return KhayaTTSWrapper(model_id, device="cpu", **kwargs)
+        return KhayaTTSWrapper(model_id, device="cpu", meta=meta, **kwargs)
 
     if "kokoro" in lower or "sherpa" in lower:
         raise UnsupportedModel(f"{model_id}: Kokoro/sherpa models not yet supported")
@@ -77,7 +85,7 @@ def _model_meta(model_id):
 
     path = Path(__file__).parent.parent / "data" / "tts_models.json"
     try:
-        with open(path) as f:
+        with open(path, encoding="utf-8") as f:
             for m in json.load(f):
                 if m.get("name") == model_id:
                     return m
@@ -132,16 +140,17 @@ def _reference_audio(meta, model_id):
         return None, None
     from huggingface_hub import hf_hub_download
 
-    cache_dir = os.path.join(os.path.expanduser("~"), ".cache", "nsanku-tts", "refs")
+    cache_dir = os.path.join(_cache_root(), "refs")
     wav_path = hf_hub_download(model_id, ref_path, cache_dir=cache_dir)
     return wav_path, meta.get("reference_text")
 
 
 class VoxCPMWrapper(BaseTTSModel):
-    """VoxCPM v1 (0.7B) — ghana-tts-72k / ghana-tts-36k and LoRA adapters.
+    """VoxCPM v1 (0.7B) — ghana-tts-72k / ghana-tts-36k.
 
-    Orthographic input, 16 kHz output.  LoRA adapters (techolise speaker17)
-    are voice-anchored: they require a reference clip + its transcript.
+    Orthographic input, 16 kHz output.  A model may pin a voice by shipping
+    a reference clip + its transcript (``reference_audio``/``reference_text``
+    in the registry), which is then used as the generation prompt.
     """
 
     SAMPLE_RATE = 16000
@@ -178,11 +187,9 @@ class VoxCPMWrapper(BaseTTSModel):
             kwargs["prompt_wav_path"] = self.ref_wav
             if self.ref_text:
                 kwargs["prompt_text"] = self.ref_text
-        # Some forks accept language=, the upstream one does not.
-        try:
-            return self.model.generate(text, **{**kwargs, "language": lang})
-        except TypeError:
-            return self.model.generate(text, **kwargs)
+        # voxcpm's generate() has no language kwarg — the model is
+        # language-conditioned through the text/prompt only.
+        return self.model.generate(text, **kwargs)
 
     def synthesize(self, text, lang="eng"):
         self._ensure_loaded()
@@ -213,7 +220,9 @@ class VoxCPM2Wrapper(BaseTTSModel):
             return
         from voxcpm import VoxCPM
 
-        self.model = VoxCPM.from_pretrained(self.model_id, load_denoiser=False)
+        self.model = VoxCPM.from_pretrained(
+            self.model_id, load_denoiser=False, device=self.device
+        )
         if self.meta.get("reference_audio"):
             from huggingface_hub import hf_hub_download
 
@@ -243,74 +252,251 @@ class VoxCPM2Wrapper(BaseTTSModel):
 
 
 class F5TTSWrapper(BaseTTSModel):
-    """F5-TTS OpenBible fine-tunes — zero-shot TTS with reference audio."""
+    """F5-TTS OpenBible fine-tunes — zero-shot TTS, needs a reference clip.
+
+    The repos ship only ``model_last.pt`` + ``vocab.txt`` (no reference
+    audio), so we mint one per model by synthesising ``reference_text``
+    (from data/tts_models.json) with Khaya and caching the wav under
+    ``$HF_HOME/nsanku-refs``.
+    """
 
     SAMPLE_RATE = 24000
+    BASE_CONFIG = "F5TTS_v1_Base"
 
-    def __init__(self, model_id, device="cuda", **kwargs):
+    def __init__(self, model_id, device="cuda", meta=None, **kwargs):
         super().__init__(model_id, device)
         self.model = None
         self._loaded = False
-
-    def _ensure_loaded(self):
-        if self._loaded:
-            return
-        from f5_tts.api import F5TTS
-
-        self.model = F5TTS(ckpt_file=self.model_id, device=self.device)
-        self._loaded = True
-        logger.info("Loaded F5-TTS: %s", self.model_id)
-
-    def synthesize(self, text, lang="eng", ref_audio=None, ref_text=None):
-        self._ensure_loaded()
-        out = self.model.infer(text=text, ref_file=ref_audio, ref_text=ref_text)
-        audio = out.get("audio") if isinstance(out, dict) else out
-        return _wav_bytes(audio, sample_rate=self.SAMPLE_RATE)
-
-
-class NanoTwiWrapper(BaseTTSModel):
-    """ghananlpcommunity/nano-twi — Matcha-TTS + Vocos ONNX (CPU)."""
-
-    SAMPLE_RATE = 24000
-
-    def __init__(self, model_id, device="cuda", **kwargs):
-        super().__init__(model_id, "cpu")  # runs on CPU
-        self.model = None
-        self._loaded = False
+        self.meta = meta or {}
+        self.ref_wav = None
+        self.ref_text = None
 
     def _ensure_loaded(self):
         if self._loaded:
             return
         from huggingface_hub import snapshot_download
+        from f5_tts.api import F5TTS
 
         from .config import HF_TOKEN
 
-        cache_dir = os.path.join(os.path.expanduser("~"), ".cache", "nsanku-tts", "nano-twi")
-        model_path = snapshot_download(self.model_id, cache_dir=cache_dir, token=HF_TOKEN or None)
+        repo_dir = snapshot_download(
+            self.model_id,
+            allow_patterns=["*.pt", "vocab.txt", "*.yaml"],
+            token=HF_TOKEN or None,
+        )
+        ckpt = os.path.join(repo_dir, "model_last.pt")
+        if not os.path.exists(ckpt):
+            pts = sorted(Path(repo_dir).glob("*.pt"))
+            if not pts:
+                raise FileNotFoundError(f"{self.model_id}: no .pt checkpoint in {repo_dir}")
+            ckpt = str(pts[0])
+        vocab = os.path.join(repo_dir, "vocab.txt")
 
-        try:
-            import sherpa_onnx
-
-            self.model = sherpa_onnx.OfflineTts(
-                sherpa_onnx.OfflineTtsConfig(
-                    model=sherpa_onnx.OfflineTtsModelConfig(
-                        matcha=sherpa_onnx.OfflineTtsMatchaModelConfig(
-                            model=os.path.join(model_path, "model.onnx"),
-                        ),
-                    ),
-                    tokens=os.path.join(model_path, "tokens.txt"),
-                    num_threads=4,
-                )
-            )
-        except ImportError:
-            raise ImportError("sherpa-onnx not installed. pip install sherpa-onnx")
+        self.model = F5TTS(
+            model=self.BASE_CONFIG,
+            ckpt_file=ckpt,
+            vocab_file=vocab if os.path.exists(vocab) else "",
+            device=self.device,
+        )
         self._loaded = True
-        logger.info("Loaded nano-twi from %s", model_path)
+        logger.info("Loaded F5-TTS: %s (ckpt=%s)", self.model_id, os.path.basename(ckpt))
+
+    def _ensure_reference(self, lang):
+        """Return (wav_path, ref_text), minting the clip with Khaya once."""
+        if self.ref_wav:
+            return self.ref_wav, self.ref_text
+
+        ref_text = self.meta.get("reference_text")
+        if not ref_text:
+            raise ValueError(f"{self.model_id}: no reference_text in data/tts_models.json")
+
+        cache_dir = Path(_cache_root()) / "nsanku-refs"
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        wav_path = cache_dir / f"{self.model_id.replace('/', '__')}.wav"
+
+        if not wav_path.exists():
+            logger.info("Minting F5 reference clip for %s via Khaya (%s)", self.model_id, lang)
+            khaya = KhayaTTSWrapper()
+            wav_path.write_bytes(khaya.synthesize(ref_text, lang=lang))
+
+        self.ref_wav, self.ref_text = str(wav_path), ref_text
+        return self.ref_wav, self.ref_text
+
+    def synthesize(self, text, lang="eng", ref_audio=None, ref_text=None):
+        self._ensure_loaded()
+        if ref_audio is None:
+            ref_audio, ref_text = self._ensure_reference(lang)
+        wav, sr, _spec = self.model.infer(
+            ref_file=ref_audio,
+            ref_text=ref_text,
+            gen_text=text,
+            show_info=lambda *a, **k: None,
+        )
+        return _wav_bytes(wav, sample_rate=sr or self.SAMPLE_RATE)
+
+
+def _merged_espeak_data(model_data_dir):
+    """Overlay a model's slimmed espeak-ng-data on the system one.
+
+    nano-twi ships only the handful of lfn voice files it needs, but
+    espeak-ng always loads the English dictionary at startup and aborts the
+    process when ``en_dict`` is missing.  Merge the two so both are present.
+    """
+    import glob
+    import shutil
+
+    # Debian puts it under /usr/lib/<triplet>/, other distros under /usr/share.
+    candidates = ["/usr/share/espeak-ng-data", *glob.glob("/usr/lib/*/espeak-ng-data")]
+    system_dir = next((d for d in candidates if os.path.isdir(d)), None)
+    if system_dir is None:
+        logger.warning("No system espeak-ng-data found; using the model's slimmed copy")
+        return model_data_dir
+
+    merged = Path(_cache_root()) / "espeak-ng-data"
+    if not (merged / "en_dict").exists():
+        merged.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copytree(system_dir, merged, dirs_exist_ok=True)
+    shutil.copytree(model_data_dir, merged, dirs_exist_ok=True)
+    return str(merged)
+
+
+class CosyVoice2Wrapper(BaseTTSModel):
+    """CosyVoice2 0.5B fine-tunes — zero-shot, needs a reference clip.
+
+    The package is not on PyPI: the image clones FunAudioLLM/CosyVoice and
+    puts it (plus its vendored Matcha-TTS) on the path.
+    """
+
+    SAMPLE_RATE = 24000
+    REPO_PATH = "/opt/CosyVoice"
+
+    def __init__(self, model_id, device="cuda", meta=None, **kwargs):
+        super().__init__(model_id, device)
+        self.model = None
+        self._loaded = False
+        self.meta = meta or {}
+        self.ref_wav = None
+        self.ref_text = None
+
+    def _ensure_loaded(self):
+        if self._loaded:
+            return
+        for path in (self.REPO_PATH, os.path.join(self.REPO_PATH, "third_party", "Matcha-TTS")):
+            if path not in sys.path:
+                sys.path.insert(0, path)
+        from cosyvoice.cli.cosyvoice import CosyVoice2
+        from huggingface_hub import snapshot_download
+
+        from .config import HF_TOKEN
+
+        model_dir = snapshot_download(self.model_id, token=HF_TOKEN or None)
+        self.model = CosyVoice2(model_dir, load_jit=False, load_trt=False, fp16=True)
+        self.SAMPLE_RATE = getattr(self.model, "sample_rate", self.SAMPLE_RATE)
+        self._loaded = True
+        logger.info("Loaded CosyVoice2: %s", self.model_id)
+
+    def _ensure_reference(self, lang):
+        """Return (waveform, ref_text), minting the clip with Khaya once."""
+        if self.ref_wav is not None:
+            return self.ref_wav, self.ref_text
+
+        ref_text = self.meta.get("reference_text")
+        if not ref_text:
+            raise ValueError(f"{self.model_id}: no reference_text in data/tts_models.json")
+
+        cache_dir = Path(_cache_root()) / "nsanku-refs"
+        cache_dir.mkdir(parents=True, exist_ok=True)
+        path = cache_dir / f"{self.model_id.replace('/', '__')}.wav"
+        if not path.exists():
+            logger.info("Minting CosyVoice reference for %s via Khaya (%s)", self.model_id, lang)
+            path.write_bytes(KhayaTTSWrapper().synthesize(ref_text, lang=lang))
+
+        import torch
+        import torchaudio
+
+        wav, sr = torchaudio.load(str(path))
+        if sr != 16000:
+            wav = torchaudio.functional.resample(wav, sr, 16000)
+        self.ref_wav = wav.mean(dim=0, keepdim=True) if wav.shape[0] > 1 else wav
+        self.ref_text = ref_text
+        return self.ref_wav, self.ref_text
+
+    def synthesize(self, text, lang="twi"):
+        self._ensure_loaded()
+        prompt_wav, prompt_text = self._ensure_reference(lang)
+
+        chunks = [
+            out["tts_speech"]
+            for out in self.model.inference_zero_shot(
+                tts_text=text,
+                prompt_text=prompt_text,
+                prompt_speech_16k=prompt_wav,
+                stream=False,
+            )
+        ]
+        if not chunks:
+            raise RuntimeError("CosyVoice2 returned no audio")
+
+        import torch
+
+        audio = torch.cat(chunks, dim=-1).squeeze().cpu().numpy()
+        return _wav_bytes(audio, sample_rate=self.SAMPLE_RATE)
+
+
+class NanoTwiWrapper(BaseTTSModel):
+    """ghananlpcommunity/nano-twi — Matcha-TTS + Vocos ONNX (CPU).
+
+    Repo layout (``sherpa-onnx/`` subdir): ``twi_ep045_steps4.onnx``
+    (acoustic), ``vocos-22khz-univ.onnx`` (vocoder), ``tokens.txt``,
+    ``espeak-ng-data/``.
+    """
+
+    SAMPLE_RATE = 22050
+    ACOUSTIC = "twi_ep045_steps4.onnx"
+    VOCODER = "vocos-22khz-univ.onnx"
+
+    def __init__(self, model_id, device="cuda", meta=None, **kwargs):
+        super().__init__(model_id, "cpu")  # runs on CPU
+        self.model = None
+        self._loaded = False
+        self.meta = meta or {}
+
+    def _ensure_loaded(self):
+        if self._loaded:
+            return
+        import sherpa_onnx
+        from huggingface_hub import snapshot_download
+
+        from .config import HF_TOKEN
+
+        repo_dir = snapshot_download(
+            self.model_id,
+            allow_patterns=["sherpa-onnx/*"],
+            token=HF_TOKEN or None,
+        )
+        base = os.path.join(repo_dir, "sherpa-onnx")
+        data_dir = _merged_espeak_data(os.path.join(base, "espeak-ng-data"))
+
+        # sherpa-onnx >=1.13: field is `acoustic_model`, and the vocoder,
+        # tokens and espeak data live inside the Matcha config itself.
+        matcha = sherpa_onnx.OfflineTtsMatchaModelConfig(
+            acoustic_model=os.path.join(base, self.ACOUSTIC),
+            vocoder=os.path.join(base, self.VOCODER),
+            tokens=os.path.join(base, "tokens.txt"),
+            data_dir=data_dir,
+        )
+        self.model = sherpa_onnx.OfflineTts(
+            sherpa_onnx.OfflineTtsConfig(
+                model=sherpa_onnx.OfflineTtsModelConfig(matcha=matcha, num_threads=4),
+            )
+        )
+        self._loaded = True
+        logger.info("Loaded nano-twi from %s", base)
 
     def synthesize(self, text, lang="eng"):
         self._ensure_loaded()
-        audio = self.model.generate(text)
-        return _wav_bytes(audio.sample, sample_rate=audio.sample_rate)
+        audio = self.model.generate(text, sid=0, speed=1.0)
+        return _wav_bytes(audio.samples, sample_rate=audio.sample_rate or self.SAMPLE_RATE)
 
 
 class KhayaTTSWrapper(BaseTTSModel):
@@ -323,8 +509,9 @@ class KhayaTTSWrapper(BaseTTSModel):
 
     API_URL = "https://translation-api.ghananlp.org/tts/v2/synthesize"
 
-    def __init__(self, model_id="KhayaAI/khaya-tts", device="cpu", **kwargs):
+    def __init__(self, model_id="KhayaAI/khaya-tts", device="cpu", meta=None, **kwargs):
         super().__init__(model_id, "cpu")
+        self.meta = meta or {}
         self.api_key = os.environ.get("KHAYA_API_KEY", "")
         if not self.api_key:
             raise ValueError("KHAYA_API_KEY not set — required for Khaya TTS")

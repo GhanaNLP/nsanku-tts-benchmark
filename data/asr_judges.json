@@ -1,0 +1,17 @@
+{
+  "_comment": "Per-language ASR judge for TTS intelligibility scoring. Each is the lowest-CER model for that language on the GhanaNLP ASR leaderboard (https://huggingface.co/spaces/ghananlpcommunity/nsanku-asr-benchmark, source github.com/GhanaNLP/nsanku-ASR). judge_cer is that model's own CER on real speech — the floor below which a TTS score cannot meaningfully go.",
+  "judges": {
+    "ada":         {"model": "KhayaAI/khaya-asr-v3",         "kind": "khaya",   "code": "ada",      "judge_cer": 0.0830},
+    "dag":         {"model": "KhayaAI/khaya-asr-v3",         "kind": "khaya",   "code": "dag",      "judge_cer": 0.1526},
+    "dga":         {"model": "KhayaAI/khaya-asr-v3",         "kind": "khaya",   "code": "dga",      "judge_cer": 0.1461},
+    "fat":         {"model": "KhayaAI/khaya-asr-v3",         "kind": "khaya",   "code": "fat",      "judge_cer": 0.2646},
+    "gjn":         {"model": "KhayaAI/khaya-asr-v3",         "kind": "khaya",   "code": "gjn",      "judge_cer": 0.0425},
+    "xsm":         {"model": "KhayaAI/khaya-asr-v3",         "kind": "khaya",   "code": "xsm",      "judge_cer": 0.1201},
+    "ewe":         {"model": "facebook/omniASR-LLM-7B-v2",   "kind": "omniasr", "code": "ewe_Latn", "judge_cer": 0.1065},
+    "gur":         {"model": "facebook/omniASR-LLM-7B-v2",   "kind": "omniasr", "code": "gur_Latn", "judge_cer": 0.4026},
+    "nzi":         {"model": "facebook/omniASR-LLM-7B-v2",   "kind": "omniasr", "code": "nzi_Latn", "judge_cer": 0.1417},
+    "gaa":         {"model": "Qlerqly/griot-nano-1",         "kind": "griot",   "code": null,       "judge_cer": 0.2158},
+    "twi_akuapem": {"model": "Qlerqly/griot-nano-1",         "kind": "griot",   "code": null,       "judge_cer": 0.2193},
+    "twi_asante":  {"model": "Qlerqly/griot-nano-1",         "kind": "griot",   "code": null,       "judge_cer": 0.2212}
+  }
+}

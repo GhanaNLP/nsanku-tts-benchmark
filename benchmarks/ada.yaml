@@ -1,0 +1,3166 @@
+iso_639_3: ada
+language: Dangme
+num_samples: 200
+scoring: cer
+judge: &id001
+  model: KhayaAI/khaya-asr-v3
+  cer_on_real_speech: 0.083
+updated: '2026-09-11'
+benchmarks:
+- model: KhayaAI/khaya-tts-v2
+  model_url: https://translation.ghananlp.org
+  owner: KhayaAI
+  architecture: Khaya AI TTS v2 API
+  cer: 0.0836
+  wer: 0.4413
+  score: 0.0836
+  samples: 200
+  valid: 200
+  avg_seconds: 2.35
+  judge: *id001
+  entries:
+    '13':
+      text: Pɛlɔku pɛmingu ji pɛlɔku nɛ tsuɔ ni kaa pɛmingu (Enɛ ɔ eko be Dangme mi).
+      hyp: Pɛ loku pe mi ngu ji pe loku nɛ tsuo ní kaa pe mi ngu. Enɛ ɔ eko be da
+        nguɛ mi.
+      cer: 0.1607
+      wer: 0.9333
+    '20':
+      text: Pɛlɔ pɛ hu ma nyɛ da si kaa pɛmingu.
+      hyp: Pɛɛ lɔ pe hu ma nyɛ da si kaa pe mi ngu.
+      cer: 0.1111
+      wer: 0.6667
+    '33':
+      text: Pɛlɔ pɛ ma nyɛ da si kaa pɛmingu nɛ pɛlɔku kɛ pɛlɔ ma nyɛ da si kaa pɛmingu.
+      hyp: Pɛɛ lɔ pe ma nyɛ da si kaa pe mi ngu nɛ pe loku kɛ pɛ lo ma nyɛ da si kaa
+        wii.
+      cer: 0.2069
+      wer: 0.6111
+    '44':
+      text: E yeɔ buaa ni kaseli nɛ a nyɛɔ peeɔ munyunguhi nɛ da ngɛ a dɛhe.
+      hyp: E yeɔ buaa ni kaseli nɛ a nyɛɔ peeɔ munyunguhi nɛ da ngɛ a de he.
+      cer: 0.0204
+      wer: 0.1333
+    '45':
+      text: E yeɔ buaa ni kaseli nɛ a leɔ gbi ɔ si fɔfɔɛ kɛ e lomi bɔ.
+      hyp: E yeɔ buaa ni kaseli nɛ a lɛɔ gbe ɔ si fɔfɔɛi kɛ e lomi bo.
+      cer: 0.0952
+      wer: 0.25
+    '46':
+      text: E yeɔ buaa ni kaseli nɛ a nuɔ munyunguhi a sisi.
+      hyp: E yeɔ buaa ni kaseli nɛ a nuɔ munyunguhi a sisi.
+      cer: 0.0
+      wer: 0.0
+    '50':
+      text: Ngɛ nɔhyɛ munyungu nɛ ɔmɛ a tsɛmi mi ɔ, pɛminguhi jeɔ a he kpo.
+      hyp: Ngɛ nɔ hyɛ munyumu nɛ ɔmɛ a tsɛ mi mi ɔ, pe mi nguhi jeɔ a he kpo.
+      cer: 0.0625
+      wer: 0.5714
+    '58':
+      text: Ngɛ nɔhyɛ ni nɛ wa ha amɛ a mi ɔ, o ma yo kaa pɛmingu ɔmɛ hɛɛ pɛlɔkuhi
+        ngɛ a nyagbe.
+      hyp: Ngɛ nɔ hyɛ ni nɛ wa haa mɛ a mi ɔ, o ma yo kaa pe mi nguɛ ɔmɛ hɛɛ pe lokuhi
+        ngɛ a nyagbe.
+      cer: 0.0645
+      wer: 0.4286
+    '60':
+      text: Ngɔɔ mo nitsɛ o munyuhi kɛ kale nɔ nɛ pɛmingu ji.
+      hyp: Ngɔɔ muɔ nitsɛ ɔ, munyuhi kɛ kale nɔ́ nɛ pɛmi ngu ji.
+      cer: 0.0789
+      wer: 0.3636
+    '61':
+      text: Moo tsɔɔ pɛmingu slɔɔtohi nɛ ngɛ Dangme mi.
+      hyp: Mɔ tsɔɔ pemi ngu slɔɔtohi nɛ ngɛ da ngmɛ mi.
+      cer: 0.1143
+      wer: 0.625
+    '62':
+      text: Moo tsɔɔ pɛmingu si fɔfɔɛ he se nami ngɛ munyungu peemi mi.
+      hyp: Mɔɔ tsɔɔ pemi ngɔ si fɔfɔehi se nami ngɛ munyungu peemi mi.
+      cer: 0.1277
+      wer: 0.4167
+    '79':
+      text: Moo sɛsɛ pɛmingu si fɔfɔɛ ngɛ Dangme mi ɔ he.
+      hyp: mɔɔ sese pemi ngɔ si fɔfɔe da nguɛ mi ɔ he.
+      cer: 0.3429
+      wer: 0.7
+    '85':
+      text: Tukpɛtukpɛ kɛ Tatu ji huɛmɛ.
+      hyp: Tukpetukukukɛ kɛ ta tu ji hwɔɛmɛ.
+      cer: 0.3043
+      wer: 0.8
+    '91':
+      text: Tatu sɛɔ e tsu nɛ e bua niye ni nya wo mi ɔ mi nɛ e kɛ e bimɛ yeɔ bɔɔbɔɔbɔɔ.
+      hyp: Tatu seɔ e tsu nɛ e bua niye ní nya womi ɔ mi, nɛ e kɛ e bimɛ yeɔ bɔbɔbɔ.”
+      cer: 0.0909
+      wer: 0.2381
+    '107':
+      text: Gana gbihi tsuo tsuɔ gbimikɔmi he ni.
+      hyp: Gana gbihi tsuo tsuo gbi mi komɛ he ní.
+      cer: 0.1333
+      wer: 0.7143
+    '117':
+      text: Dangme, Dagbaani kɛ gbi kpa komɛ lɛɛ a ngɛ sisi, kpɛti kɛ hiɔwe gbimikɔmi.
+      hyp: Dangmɛ i dagba ní, kɛ gbi kpa komɛ lɛɛ a ngɛ sisi, kpɛti kɛ hiɔwe gbi mi
+        komɛ.
+      cer: 0.1034
+      wer: 0.5
+    '118':
+      text: Kane munyuza nɛ nyɛɛ se nɛ ɔmɛ nɛ e maa ye bua mo kɛ ha sisi numi.
+      hyp: kane munyu za nɛ nyɛɛ se nɛ ɔmɛ nɛ e maa ye bua mo kɛ ha sisi numi.
+      cer: 0.0
+      wer: 0.1176
+    '119':
+      text: Moo tsɔɔ gbimikɔmi nɛ munyungu ‘ma’ hɛɛ ngɛ munyuza etɛ ɔmɛ a mi.
+      hyp: mɔɔ tsɔɔ gbi mi komi nɛ munyu nguma a hɛɛ ngɛ munyu za etɛ ɔmɛ a mi.
+      cer: 0.08
+      wer: 0.6923
+    '130':
+      text: Enɛ ɔ tsɔɔ fami kɛ amlɔbe ngɛ animosa glɛ nɔ.
+      hyp: Enɛ ɔ tsɔɔ fa mi ke amlɔ be ngɛ a nyɛmusa gle nɔ.
+      cer: 0.1429
+      wer: 0.8
+    '132':
+      text: Enɛ ɔ jeɔ benɛbe juɛmi kpo ngɛ animosa glɛ nɔ.
+      hyp: Enɛ ɔ jeɔ benɛ be juɛmi kpo ngɛ a ni Mosa gle nɔ.
+      cer: 0.0278
+      wer: 0.6
+    '134':
+      text: Ngɔɔ mo nitsɛ o munyuhi kɛ kale nɔ nɛ gbimikɔmi ji.
+      hyp: Ngɔɔ mɔ nitsɛ ɔ munyuhi kɛ kale nɔ́ nɛ gbi mi ko mi ji.
+      cer: 0.075
+      wer: 0.5455
+    '136':
+      text: Ngɔɔ nɔhyɛ ni nɛ da kɛ tsɔɔ Dangme gbimikɔmi ɔ nya.
+      hyp: Ngɔɔ nɔ hyɛ nihi nɛ da kɛ tsɔɔ da ngmɛ gbimi komɛ ɔ nya.
+      cer: 0.125
+      wer: 0.6364
+    '137':
+      text: Ngɛ kuuhi a mi ɔ, nyɛɛ sɛsɛ gbimikɔmi ni tsumi he.
+      hyp: Ngɛ kuu hia mi ɔ, nyɛɛ sese gbimi komɛ ní tsumi he.
+      cer: 0.1316
+      wer: 0.5455
+    '141':
+      text: Nyɛɛ nuu nyɛ he enyɔɔnyɔ nɛ nyɛɛ bu munyungu nɛ ɔmɛ tue.
+      hyp: Nyɛɛ nuu nyɛ he enyɔɔnyɔ nɛ nyɛɛ bu munyungu nɛ ɔmɛ tue.
+      cer: 0.0
+      wer: 0.0
+    '145':
+      text: De o heto ɔ ngɔ ha nyɛ tsu mi bi ɔmɛ.
+      hyp: De ɔ heto ɔ, wɔ ha nyɛ tsumi bi ɔmɛ.
+      cer: 0.1154
+      wer: 0.3636
+    '146':
+      text: Moo ngma pɛmingu slɔɔtohi ngɛ Dangme mi nɛ o ha nɔhyɛ ni etɛɛtɛ.
+      hyp: Mɔ hua pɛmi ngɔ slɔɔtohi ngɛ da ngmɛ mi nɛ ɔ ha nɔ hyɛ ní etɛ.
+      cer: 0.2353
+      wer: 0.8462
+    '150':
+      text: Moo ngɔ nɔhyɛ ni etɛ kɛ tsɔɔ gbimikɔmi ni tsumi ngɛ Dangme mi ɔ nya.
+      hyp: Mɔɔ ngɔ nɔ hyɛ ni etɛ kɛ tsɔɔ gbi mi komɛ ní tsumi ngɛ da nguɛ mi ɔ nya.
+      cer: 0.1321
+      wer: 0.6
+    '153':
+      text: Oti pɔtɛɛ ngɛ demiyo ko mi ɔ ji nɔ he nɛ demiyo ɔ kɔɔ.
+      hyp: Oti pɔ tee ngɛ dɛmiyo ko mi ɔ ji nɔ he nɛ dɛmiyo ɔ kɔɔ.”
+      cer: 0.1
+      wer: 0.2857
+    '166':
+      text: A deɔ nihi babauu kɛ kɔɔ munyutso oti ɔ he.
+      hyp: A deɔ nihi babauu kɛ kɔɔ munyu tso oti ɔ he.
+      cer: 0.0
+      wer: 0.2
+    '186':
+      text: E sa nɛ o hla munyungu oti ɔmɛ.
+      hyp: E sanɛ ɔ hla munyu nguu oti ɔmɛ.
+      cer: 0.087
+      wer: 0.625
+    '191':
+      text: O ma nyɛ maa to tsui si kɛ kane demiyo ɔ mi ekohu nɛ o nu sisi saminya.
+      hyp: O ma nyɛ maa tɔ tsui si kɛɛ kane demi yo ɔ mi, ekohu nɛ ɔ nu sisi saminya.
+      cer: 0.0566
+      wer: 0.2778
+    '212':
+      text: Ngɔɔ ni kanemi vii he nile nɛ o na a kɛ kane demiyo nɛ nyɛɛ se nɛ ɔ.
+      hyp: Ngɔɔ ní kane mi vii he nile nɛ ɔ naa kɛ kane dɛmiyɔ nɛ nyɛɛ se nɛ ɔ.
+      cer: 0.08
+      wer: 0.3889
+    '213':
+      text: Jije oslɔɔke ngua nɛ ɔ je?
+      hyp: Jije o slɔɔ kɛ nguaa nɛ o je.
+      cer: 0.15
+      wer: 0.8333
+    '214':
+      text: Mɛnɔ nɛ ha e ku pue kpo kikɛ nɛ ɔ?
+      hyp: Mɛ nɔ nɛ ha e ku po e kpo kikɛ nɛ ɔ?”
+      cer: 0.0417
+      wer: 0.4
+    '215':
+      text: Obo we tso ngua a ku.
+      hyp: O bɔ we tso nguaa ku.
+      cer: 0.0667
+      wer: 0.6667
+    '224':
+      text: Benɛ Yaa Kɔɔyo je jua kɛ ma a, ambulansi ko ba be e he kɛ fo.
+      hyp: Benɛ Yarkoyo je jua kɛ ma a, ambulansi ko ba be e he kɛ fɔ.
+      cer: 0.0909
+      wer: 0.1875
+    '229':
+      text: E nɔ jena a, a pue nɔ kɛ ya mɔtsle ɔ ekohu ya to e dlami he blɔ nya.
+      hyp: E nɔ jena a, a pue nɔ́ kɛ ya mɔtsle ɔ, ekohu ya to e dlami he blɔ nya.
+      cer: 0.0
+      wer: 0.0
+    '232':
+      text: Ma a tsuo wo yana.
+      hyp: Ma a tsuo wo yana.
+      cer: 0.0
+      wer: 0.0
+    '240':
+      text: Munyu nɛ ɔ he wa ha Mangoasetsɛmɛ se e he nɔ ko be nɛ a ma nyɛ pee.
+      hyp: Munyu nɛ ɔ he wa ha ma nguaa se tsɛmɛ, se e he nɔ ko be nɛ a ma nyɛ pee.
+      cer: 0.0408
+      wer: 0.2222
+    '246':
+      text: Okpɔtɛsa gbenɔ nɛ ɔ ye ma a tsuo awi.
+      hyp: O kpɔte sagbe nɔ nɛ ɔ ye ma a tsuo ɔ awi.
+      cer: 0.0714
+      wer: 0.5556
+    '248':
+      text: Okpɔtɛsa ni tsumi kpakpa nyɛɛ e se niinɛ.
+      hyp: O kpɔtɛ sa ní tsumi kpakpa nyɛɛ e se níine.
+      cer: 0.0909
+      wer: 0.625
+    '249':
+      text: Mo yo munyutso oti ngɛ demiyo ɔ mi.
+      hyp: Moyo munyu tso o ti ngɛ dimi yo ɔ mi.
+      cer: 0.037
+      wer: 0.875
+    '250':
+      text: Sɛsɛ munyutso oti ɔ he.
+      hyp: Sɛse munyu tso ɔ o ti ɔ he.
+      cer: 0.1111
+      wer: 1.2
+    '252':
+      text: Moo kane demiyo nɛ nyɛɛ se nɛ ɔ.
+      hyp: Mɔɔ kane dɛmiyo nɛ nyɛɛ se nɛ ɔ.
+      cer: 0.125
+      wer: 0.25
+    '253':
+      text: Mo yo munyutso oti ngɛ demiyo ɔ mi nɛ o ngma.
+      hyp: Mo yo munyu tso o ti ngɛ dɛmi yo ɔ mi nɛ o ngma.
+      cer: 0.0294
+      wer: 0.5455
+    '268':
+      text: Ye huɛmɛ a ngɔ nɛ i naa buajɔ bɔɔ ngɛ ke i ya sukuu.
+      hyp: Ye huɛmɛ a ngɔ nɛ i naa bua jo bɔɔ ngɛ kɛ i ya sukuu.
+      cer: 0.0526
+      wer: 0.2143
+    '278':
+      text: Sukuu ɔ, a wo mi kaa sukuubi ɔmɛ tsuo a nya dalɔ nɛ a deɔ ke sukuu plifɛti
+        ɔ.
+      hyp: Sukuu ɔ, a wo mi kaa Sukuu bi ɔmɛ tsuo a nya daloo nɛ a deɔ kɛ sukuu pli
+        feti ɔ.
+      cer: 0.0702
+      wer: 0.3158
+    '283':
+      text: Nyɛɛ kɛ nyɛ tsu mi bi ɔmɛ nɛ sɛsɛ nyɛ munyutso oti ɔ he.
+      hyp: Nyɛɛ kɛ nyɛ tsumi bi ɔmɛ nɛ sɛse nyɛ munyu tso oti ɔ he.
+      cer: 0.0238
+      wer: 0.3571
+    '286':
+      text: Pi mlaa nɔ yemi pɛ ji tue bumi.
+      hyp: Pi mlaa nɔ yemi pe ji tue bumi.
+      cer: 0.0435
+      wer: 0.125
+    '288':
+      text: Ke o bu o fɔli tue ɔ, o ngɛ tsɔe kaa o ngɛ hɛ kɛ nɔ fɔmi ngɛ a tsɔsemi
+        kɛ a blɔ tsɔɔmi mi.
+      hyp: Ke o buɔ ɔ, fɔli tue ɔ, o ngɛ tsoe kaa o ngɛ he kɛ nɔ fɔmi ngɛ a tsɔsemi
+        kɛ a blɔ tsɔɔmi mi.
+      cer: 0.0625
+      wer: 0.16
+    '303':
+      text: Nyɛɛ nuu nyɛ he enyɔɔnyɔ nɛ nyɛɛ ngma ni sɛɛmi kaa nɔ nɛ wa na nɛ ɔ.
+      hyp: Nyɛɛ nuu nyɛ he enyɔ nyɔ nɛ nyɛɛ ngma ní sɛmi kaa nɔ nɛ wa na nɛ ɔ.
+      cer: 0.0588
+      wer: 0.2353
+    '309':
+      text: Nyɛɛ kane demiyo nɛ nyɛɛ se nɛ ɔ nɛ nyɛ ha sane bimihi nɛ nyɛɛ se ɔmɛ
+        a heto.
+      hyp: Nyɛɛ kane dɛ mi yo nɛ nyɛɛ se nɛ ɔ nɛ nyɛ ha sane bimihi nɛ nyɛɛ se ɔmɛ
+        a heto.
+      cer: 0.0172
+      wer: 0.1579
+    '315':
+      text: Sukuu nɔ hyɛlɔ ji nɔ yemi nɔhyɛ nɔ ngɛ sukuu ɔ.
+      hyp: Suku nɔ hyɛlɔ ji nɔ yemi, nɔ hyɛ nɔ ngɛ su kuu ɔ.
+      cer: 0.0278
+      wer: 0.4545
+    '328':
+      text: E sa nɛ e pee nihi nɛ maa ku nɔ buimi nya pɛsɛpɛsɛ.
+      hyp: E sa nɛ e pee nihi nɛ maa ku nɔ bui mi nya pɛsɛpɛse.
+      cer: 0.0263
+      wer: 0.2308
+    '335':
+      text: Ni kanemi kɛ mi kuɔmi he su komɛ nɛ nyɛɛ se nɛ ɔ nɛ.
+      hyp: Nika nɛ mi kɛ mi kuɔmi Yesu komɛ nɛ nyɛɛ se nɛ ɔ nɛ.
+      cer: 0.0526
+      wer: 0.3571
+    '338':
+      text: A kɛ kaleɔ nɔ lemi kanemi.
+      hyp: A kɛ kali ɔ nɔ lɛ mi kanemi.
+      cer: 0.1
+      wer: 0.6667
+    '354':
+      text: Falefale peemi ji nɔmlɔ adesa he wami nami sisi poku.
+      hyp: Falefale peemi ji nɔmlɔ adesa he wami nami sisipoku.
+      cer: 0.0
+      wer: 0.2
+    '364':
+      text: Mo kai ni kanemi kɛ mi kuɔmi he su nɛ wa kase kɛ be ɔ.
+      hyp: Mɔkai nika nɛ mi kɛ mi komɛ Yesu nɛ wa kase kɛ be ɔ.
+      cer: 0.1538
+      wer: 0.4667
+    '368':
+      text: Jehanɛ ɔ, tsɔɔ bɔ nɛ o susu kaa a ma nyɛ ma blɛke demiyo nɛ ɔ mi ha.
+      hyp: Jehanɛ ɔ, tsɔɔ bɔ nɛ ɔ susu kaa ma nyɛ ma ble kɛ dimi yo nɛ ɔ mi ha.
+      cer: 0.102
+      wer: 0.3333
+    '370':
+      text: Moo hyɛ vidio nɛ ɔ nɛ o kɛ na bɔ nɛ ni kanemi vii kɛ ni kanemi kɛ mi kuɔmi
+        ngɛ ha.
+      hyp: Mɔɔ hyɛ videɔ nɛ ɔ kɛ na bɔ nɛ ní kanemi viii, kɛ ní kanemi kɛ mi kuomi
+        ngɛ ha.
+      cer: 0.1833
+      wer: 0.3636
+    '371':
+      text: Yo a he blɔ nɔ tomi kɛ a he se nami kɛ ha sisi numi nɛ mi kuɔ nami.
+      hyp: Yɔ ɔ a he blɔ nɔ tomi ke a he sɛ nami kɛ ha sisi numi nɛ mi kuɔ nami.
+      cer: 0.0833
+      wer: 0.2105
+    '376':
+      text: Munyutso oti yomi ngɛ demiyo ko mi.
+      hyp: Munyu tso oti yomi ngɛ dɛmi yo ko mi.
+      cer: 0.0357
+      wer: 0.5714
+    '377':
+      text: Ngɔɔ mo nitsɛ o munyunguhi kɛ tsɔɔ munyutso oti sisi.
+      hyp: Ngɔɔ mo nitsɛ ɔ munyu nguhi kɛ tsɔɔ munyu tso ɔ ti sisi.
+      cer: 0.0465
+      wer: 0.7
+    '378':
+      text: Moo kane demiyo nɛ nyɛɛ se nɛ ɔ nɛ o ha sane bimi ɔmɛ a heto.
+      hyp: Mɔɔ kane dɛmiyo nɛ nyɛɛ se nɛ ɔ, nɛ ɔ ha sane bimɛ ɔmɛ a hetɔ.
+      cer: 0.1333
+      wer: 0.3125
+    '381':
+      text: Bu ji adesahi a bɔmi sisi kla aloo sisi poku.
+      hyp: Bu ji adesahi a bɔmi sisi klaa, aloo sisipoku.
+      cer: 0.0286
+      wer: 0.3
+    '382':
+      text: Ngɛ si himi mi jio, ni tsumi he jio ɔ, bu he hia wawɛɛ nitsɛ.
+      hyp: Ngɛ si himi mi jiɔ ní tsumi he ji ɔ, bu he hia wawɛɛ nitsɛ.
+      cer: 0.0682
+      wer: 0.2
+    '385':
+      text: Ngɔɔ lɛ kaa o sɛ sukuu tsu ko mi nɛ nɔ fɛɛ nɔ ngaa e sibi kɛ bu kɛ he
+        numi.
+      hyp: Ngɔɔ lɛ kaa o se suku tsu ko mi nɛ nɔ fɛɛ nɔ ngaa e sibi kɛ bu kɛ he nu
+        mi.
+      cer: 0.037
+      wer: 0.1905
+    '396':
+      text: Mɛni ji demiyo ɔ munyutso oti ɔ?
+      hyp: Mɛni ji dɛmi yo ɔ, munyu tsooti ɔ?
+      cer: 0.04
+      wer: 0.5714
+    '397':
+      text: Mo yo munyuza otihi ngɛ kekle kuku kɛ kuku eywiɛne ɔmɛ mi nɛ o ngma.
+      hyp: Moyo munyu za otihi ngɛ kekle kuku kɛ kuku eywiɛ nɛ ɔmɛ mi nɛ ɔ ngua.
+      cer: 0.0566
+      wer: 0.4667
+    '398':
+      text: Moo do demiyo ɔ nɔ kɛ munyuza eywiɛ pɛ.
+      hyp: Mɔdo dɛmiyo ɔ nɔ ke munyu za e ywiɛpe.
+      cer: 0.1667
+      wer: 0.8889
+    '399':
+      text: Moo ngma ni kanemi vii he su enyɔ nɛ nyɛ kase ngɛ mi gbami nɛ ɔ mi ɔ.
+      hyp: Mɔɔ nguaa nika nɛ mi vii Yesu enyɔ nɛ nyɛ kase ngɛ mi gbami nɛ ɔ mi ɔ.”
+      cer: 0.1176
+      wer: 0.3889
+    '400':
+      text: Moo tsɔɔ su enyɔ nɛ o ngma amɛ a sisi kɛ mo nitsɛ o munyunguhi.
+      hyp: Mɔɔ tsɔɔ su enyɔ nɛ ɔ ngma amɛ a sisi kɛ mɔ nitsɛ ɔ munyu nguhi.
+      cer: 0.1042
+      wer: 0.4
+    '403':
+      text: Moo tsɔɔ ni kanemi kɛ mi kuɔmi he su etɛ sisi.
+      hyp: Mɔɔ tsɔɔ ní kanemi kɛ mi kuɔmi he so etɛ sisi.
+      cer: 0.1143
+      wer: 0.2727
+    '410':
+      text: He kplali slɔɔto enyɔ nɛ ngɛ Dangme mi.
+      hyp: he kplaali sloto enyɔ nɛ ngɛ da ngmɛ mi.
+      cer: 0.129
+      wer: 0.5
+    '416':
+      text: He kplali a he ni tsumi ngɛ gbi ko mi ɔ haa nɛ a naa munyungu ehehi.
+      hyp: he kplalia he ní tsumi ngɛ gbi ko mi ɔ haa munyu ngɔe hehi.
+      cer: 0.1569
+      wer: 0.4706
+    '424':
+      text: He kplali pɔtɛɛ nɛ ngɛ ji hɛ kpɛ he kplali kɛ se he kplali.
+      hyp: he kplali pɔtɛɛ, kplali kɛ se he kplali.
+      cer: 0.3111
+      wer: 0.4286
+    '430':
+      text: He kplalɔ peeɔ se he kplalɔ ke a ngɔ kɛ piɛɛ munyungu ɔ he ngɛ e se.
+      hyp: He kplalo peeɔ se he kplalo kɛ̃ a ngɔ kɛ piɛ munyungu ɔ he ngɛ e se.
+      cer: 0.0784
+      wer: 0.2353
+    '432':
+      text: He kplalɔ peeɔ kpɛti kplalɔ ke a ngɔ kɛ piɛɛ munyungu ɔ he ngɛ kpɛti.
+      hyp: He kplalo peeɔ kpɛti kplalo kɛ a ngɔ kɛ piɛ munyungu ɔ he ngɛ kpɛti.
+      cer: 0.0741
+      wer: 0.2667
+    '435':
+      text: He kplalɔ peeɔ hɛ kpɛ he kplalɔ ke a ngɔ kɛ piɛɛ munyungu ɔ he ngɛ e hɛ
+        kpɛ.
+      hyp: He kplalo peeɔ he kpe he kplalo kɛ a ngɔ kɛ piɛ munyumu ɔ he ngɛ e he kpe.
+      cer: 0.1754
+      wer: 0.4737
+    '437':
+      text: He kplali nɛ kplaa munyungu kake e se kɛ hɛ kpɛ ngɛ be kake mi.
+      hyp: He kplali nɛ kplaa munyu ngu kake e si kɛ he kpe ngɛ be kake mi.
+      cer: 0.0625
+      wer: 0.3333
+    '444':
+      text: O le Gana gbi ko nɛ tsuɔ enɛ ɔmɛ tsuo a he ni lo?
+      hyp: O lɛ gana gbi ko nɛ tsuo enɛ ɔmɛ tsuo a he ní lo?
+      cer: 0.0857
+      wer: 0.2143
+    '451':
+      text: Plɛ kɛ kpee o nyɛmi ɔ nɛ o tsɔɔ nɔ nɛ ji he kplali a nya.
+      hyp: Ple ke kpe ɔ, nyɛ mi ɔ nɛ o tsɔɔ nɔ nɛ ji he kplali a nya.
+      cer: 0.0976
+      wer: 0.375
+    '458':
+      text: Ngɛ hiɛ ɔ, munyungu ɔ kɛ he kplalɔ ɔ ma nyɛ hɛɛ sisi numi ekpaakpa.
+      hyp: Ngɛ hyɛ ɔ, munyungu ɔ kɛ he kplalɔ ɔ ma nyɛ hɛ sisi numi ekpaakpa.
+      cer: 0.0392
+      wer: 0.1333
+    '485':
+      text: A yeɔ bua nɛ wa naa munyungu ehehi kɛ jeɔ munyungu poku ɔ mi.
+      hyp: A yeɔ bua nɛ wa naa munyungu e hehi kɛ jeɔ munyungu poku ɔ mi.
+      cer: 0.0
+      wer: 0.1429
+    '486':
+      text: A tsakeɔ munyungu kɛ jeɔ munyungukuu ko mi kɛ yaa munyungukuu kpa mi.
+      hyp: A tsakeɔ munyumu kɛ jeɔ munyumu kuu komɛ kɛ yaa munyumu kuu kpa mi.
+      cer: 0.125
+      wer: 0.4615
+    '488':
+      text: A tsakeɔ munyungu ɔ kɛ jeɔ be pɔtɛɛ ko mi kɛ yaa be ekpa mi ngɛ animosa
+        glɛ nɔ.
+      hyp: A tsake ɔ munyu ngɔ ɔ kɛ jeɔ be pɔ tee ko mi kɛ yaa be ekpami ngɛ animosa
+        glɛ nɔ.
+      cer: 0.05
+      wer: 0.4211
+    '489':
+      text: A tsakeɔ munyungu ɔ kɛ jeɔ kake mi kɛ yaa hiɛhiɛɛ mi ngɛ animosa glɛ nɔ.
+      hyp: A tsake ɔ munyu ngɔ ɔ kɛ jeɔ kake mi kɛ yaa hie hiɛmɛ ngɛ animosa glɛnɔ.
+      cer: 0.0714
+      wer: 0.5
+    '490':
+      text: A tsakeɔ peemimunyu kɛ peeɔ biɛ.
+      hyp: A tsakeɔ peemi munyu kɛ peeɔ biɛ.
+      cer: 0.0
+      wer: 0.3333
+    '492':
+      text: A tsakeɔ biɛ kɛ peeɔ kalelɔ.
+      hyp: Atsakeo biɛ kɛ peeɔ Kaleeloo.
+      cer: 0.1818
+      wer: 0.5
+    '493':
+      text: A tsakeɔ kalelɔ kɛ peeɔ biɛ.
+      hyp: A tsake okale lo kɛ peeɔ biee!”
+      cer: 0.1818
+      wer: 0.6667
+    '494':
+      text: A waa kɛ haa gbi ɔ kasemi kɛ e ngmami.
+      hyp: A wa kɛ ha gbi ɔ kasemi ke i ngmami.
+      cer: 0.1429
+      wer: 0.4
+    '500':
+      text: Tsake munyunguhi nɛ nyɛɛ se ɔmɛ kɛ pee biɛhi aloo kaleli.
+      hyp: tsake munyu nguhi nɛ nyɛɛ si ɔmɛ kɛ pee biɛhi aloo kaleli.
+      cer: 0.0217
+      wer: 0.2727
+    '514':
+      text: Kofi kɛ Amaki ye ni ɔ.
+      hyp: Kɔfi ke a maa ki ye ní ɔ.
+      cer: 0.25
+      wer: 1.0
+    '516':
+      text: Nyɛɛ ngɔ nya tsɔɔmi nɛ nyɛ ha ngɛ sukuu tsu ɔ mi ɔ kɛ kudɔ nyɛ he.
+      hyp: Nyɛɛ ngɔ nya tsɔɔmi nɛ nyɛ ha ngɛ sukuu tsu ɔ mi ɔ kɛ kudo nyɛ he.
+      cer: 0.0204
+      wer: 0.0588
+    '519':
+      text: Wa maa sɛsɛ etɛ pɛ he.
+      hyp: Wa maa sese etɛ pe hee.
+      cer: 0.25
+      wer: 0.5
+    '526':
+      text: Majua tsali nɛ tsaa munyunguhi kɛ munyukpafahi.
+      hyp: Ma jua tsali nɛ tsaaauu, kɛ munyu kpafahi.
+      cer: 0.2
+      wer: 0.8571
+    '529':
+      text: Majua tsali nɛ tsaa dɛhe munyukpɔ kɛ akplahe munyukpɔ kɛ blaa.
+      hyp: Ma jua tsali nɛ tsaa dɛ he munyu kpo kɛ akplaa he munyu kpo kɛ blaauu.
+      cer: 0.098
+      wer: 1.0
+    '548':
+      text: E be subai lɔ ɔ he ɔ e nɛ gba kpakpa.
+      hyp: E be subae, lɔ ɔ he ɔ, e nɛ gba kpakpa.
+      cer: 0.0385
+      wer: 0.0909
+    '551':
+      text: Moo kane o heto ɔ kɛ ha nyɛ tsu mi bi ɔmɛ konɛ o tsɔɔ o heto ɔmɛ a nya.
+      hyp: Mɔɔ kane ɔ heto ɔ kɛ ha nyɛ tsumi bi ɔmɛ, konɛ o tsɔɔ ɔ heto ɔmɛ a nya.
+      cer: 0.0784
+      wer: 0.25
+    '557':
+      text: A yeɔ buaa nɛ a ngɔɔ yi mi tomi ko kɛ pataa yi mi tomi ekpa he.
+      hyp: A yeɔ buaa nɛ a ngɔɔ yi mi tomi ko kɛ pataa yi mi tomi ekpa he.
+      cer: 0.0
+      wer: 0.0
+    '558':
+      text: A yeɔ buaa kɛ ha nɔ kɛ nɔ he tomi.
+      hyp: A yeɔ buaa kɛ ha nɔ kɛ nɔ he tomi.
+      cer: 0.0
+      wer: 0.0
+    '559':
+      text: A yeɔ buaa kɛ tsɔɔ nɔ ko nɛ ya nɔ.
+      hyp: A yeɔ buaa kɛ tsu nɔ ko nɛ ya nɔ.
+      cer: 0.0833
+      wer: 0.1
+    '561':
+      text: Mlaa komɛ ngɛ nɛ kudɔɔ wɔ kɛ ha tsali a he ni tsumi.
+      hyp: Mlaa komɛ ngɛ nɛ kudoo wɔ kɛ ha tsali a he ní tsumi.
+      cer: 0.0769
+      wer: 0.1538
+    '564':
+      text: Tsali blaa susumi, nɔ peemi kɛ yi mi tomi.
+      hyp: tsali blaa susumi, nɔ peemi kɛ yi mi tomi.
+      cer: 0.0
+      wer: 0.0
+    '567':
+      text: Tsali a he hia kɛ ha nihi a he so tomi.
+      hyp: tsali a he hia kɛ ha nihi a he sɔpɔmi.
+      cer: 0.1071
+      wer: 0.1818
+    '571':
+      text: Blɔ slɔɔtohi a nɔ ngɛ nɛ a guɔ kɛ peeɔ munyungu ehehi.
+      hyp: Blɔ slɔɔtohi a nɔ ngɛ nɛ a guɔ kɛ peeɔ munyu ngɔ e hehi.
+      cer: 0.0238
+      wer: 0.3333
+    '576':
+      text: Kɛ nyɛ woɔ ni ehehi nɛ ngɛ bae ngɛ nyɛ ma a mi biɛ kɛɛ?
+      hyp: ke nyɛ wo nihehi nɛ ngɛ bae ngɛ nyɛ ma a mi biɛ kɛɛ?
+      cer: 0.075
+      wer: 0.2667
+    '579':
+      text: Mɛnɔ nɛ woɔ ni ɔmɛ a biɛ?
+      hyp: Mɛnɔ nɛ wo ni ɔmɛ a biɛ?
+      cer: 0.0556
+      wer: 0.1429
+    '610':
+      text: Munyungu babɛɛ nɛ ba sɛ Dangme mi ɔ ekomɛ ji hledio-radio, ɛlopleeaeroplane,
+        sɛmɛti-cement, kasiɔkɔ kɛ ekpa komɛ.
+      hyp: Munyumu ba bee nɛ ba se da ngmɛ mi ɔ, ekomɛ ji Hlede ɔ, e lo plɛ Eroplane
+        Sematisement kasiɔ ko kɛ ekpa komɛ ɔ.
+      cer: 0.2418
+      wer: 0.9412
+    '615':
+      text: E yeɔ buaa kɛ haa gbi ɔ wami.
+      hyp: E yeɔ buaa kɛ haa gbi ɔ wami.
+      cer: 0.0
+      wer: 0.0
+    '616':
+      text: E yeɔ buaa nɛ gbihi sɛɔ a sibi a mi.
+      hyp: E yeɔ buaa nɛ gbihi seɔ a sibi a mi.
+      cer: 0.0385
+      wer: 0.1
+    '617':
+      text: E yeɔ buaa kɛ haa munyungu ehe nami kɛ e he juɛmi ehe nami.
+      hyp: E yeɔ buaa kɛ haa munyungu he nami kɛ he juɛmi he nami.
+      cer: 0.0667
+      wer: 0.2143
+    '618':
+      text: E yeɔ buaa kɛ haa gbi ɔ kasemi.
+      hyp: E yeɔ buaa kɛ haa gbi ɔ kasemi.
+      cer: 0.0
+      wer: 0.0
+    '619':
+      text: E yeɔ buaa nɛ a kɛ yoɔ he nɛ munyungu ehe ɔ puɛ kɛ je.
+      hyp: E yeɔ buaa nɛ a kɛ yeɔ he, nɛ munyu ngue he ɔ pue kɛ je.
+      cer: 0.0513
+      wer: 0.3333
+    '624':
+      text: Tsɔɔ he kplali a nya.
+      hyp: Tsɔɔ he kplali a nya.
+      cer: 0.0
+      wer: 0.0
+    '625':
+      text: Ngmaa he kplali slɔɔto nɛ ngɛ Dangme mi.
+      hyp: Ma he kplali slɔɔto nɛ ngɛ da ngmɛ mi.
+      cer: 0.125
+      wer: 0.375
+    '626':
+      text: Yɔse he kplali eywiɛ ngɛ Dangme mi nɛ o ngma mɛ.
+      hyp: Yose he kplali eywiɛe ngɛ da ngmɛ mi nɛ ɔ ngmamɛ.
+      cer: 0.1081
+      wer: 0.6364
+    '627':
+      text: Sɛsɛ he kplali ni tsumi eywiɛ he.
+      hyp: Sɛse he kplali ní tsumi eywiɛ he.
+      cer: 0.0769
+      wer: 0.2857
+    '628':
+      text: Yɔse he kplali ngɛ munyunguhi nɛ nyɛɛ se ɔmɛ a mi konɛ o tsɔɔ he kplali
+        nɛ a ji.
+      hyp: Yose he kplali ngɛ munyunguhi nɛ nyɛɛ si ɔmɛ a mi, konɛ o tsɔɔ he kplali
+        nɛ a ji.
+      cer: 0.0328
+      wer: 0.1053
+    '629':
+      text: Sɛsɛ he kplali a he ni tsumi eywiɛ he.
+      hyp: Sese he kplali a hɛ ní tsumi ywiɛ he.
+      cer: 0.1724
+      wer: 0.4444
+    '630':
+      text: Tsɔɔ nɔ nɛ tsali ji.
+      hyp: Tsɔɔ nɔ nɛ tsali ji,
+      cer: 0.0
+      wer: 0.0
+    '632':
+      text: Moo tsɔɔ tsali slɔɔto ɔmɛ nɛ o ngma a nya.
+      hyp: Mwɔ tsɔɔ tsali slɔɔto ɔmɛ nɛ o ngma a nya.
+      cer: 0.0625
+      wer: 0.1
+    '635':
+      text: Moo po tsali nɛ ngɛ munyuzahi nɛ nyɛɛ se ɔmɛ a mi ɔ sisi.
+      hyp: mɔɔ po tsali nɛ ngɛ munyu zahi nɛ nyɛɛ se ɔmɛ a mi ɔ sisi.
+      cer: 0.0465
+      wer: 0.2143
+    '636':
+      text: Baake ngɛ ni kanee nɛ Nuɛte ngɛ ni ngmae.
+      hyp: Baa kɛ ngɛ ni kanee nɛ nu e ti ngɛ ní ngmaii.
+      cer: 0.1875
+      wer: 0.7778
+    '639':
+      text: O suɔ joma aloo otimi.
+      hyp: O suɔ joma aloo o ti mi.”
+      cer: 0.0
+      wer: 0.6
+    '640':
+      text: Moo tsɔɔ munyungu ehe peemi blɔ nya tomi ɔ nya.
+      hyp: Mɔɔ tsɔɔ munyu ngɔ e he peemi blɔ nya tomi ɔ nya.
+      cer: 0.0811
+      wer: 0.5
+    '641':
+      text: Mo yɔse munyungu ehe peemi blɔ nya tomi etɛ ngɛ Dangme mi.
+      hyp: Muyose munyu ngɔ e he peemi blɔ nya tomi etɛ ngɛ da ngmɛ mi.
+      cer: 0.087
+      wer: 0.5833
+    '642':
+      text: Sɛsɛ munyungu ehe peemi blɔ nya tomi etɛ ngɛ Dangme mi ɔ he.
+      hyp: Sese munyu ngɔ e he peemi blɔ nya tomi, etɛ ngɛ da ngmɛ mi ɔ he.
+      cer: 0.0851
+      wer: 0.5385
+    '643':
+      text: Sɛsɛ se nami etɛ nɛ ngɛ munyungu ehe peemi blɔ nɔ tomi ɔ he ngɛ Dangme
+        mi.
+      hyp: Sese se na mi etɛ nɛ ngɛ munyu ngɔ e he peemi blɔ nɔ tomi ɔ he ngɛ da nguɛ
+        mi.
+      cer: 0.0877
+      wer: 0.5294
+    '644':
+      text: Yɔse munyungu ehe peemi blɔ nɔ tomi nɔhyɛ ni ngɛ demiyo nɛ nyɛɛ se ɔ mi.
+      hyp: Yo se munyu ngɔ e he peemi blɔ nɔ tomi nɔ hyɛ ní ngɛ demi yo nɛ nyɛɛ se
+        ɔ mi.
+      cer: 0.0536
+      wer: 0.6875
+    '645':
+      text: Mwɔnɛmwɔnɛ ɔ, juɛmi klami he hia wawɛɛ ngɛ wa sukuu tsɔsemi mi.
+      hyp: Mɔ nɛ mwɔnɛ ɔ, juɛmi klami he hia wawɛɛ ngɛ wa sukuu.
+      cer: 0.2
+      wer: 0.4167
+    '653':
+      text: Munyukpɔfa ji munyungu aloo munyunguhi nɛ a tsuɔ ni pɔtɛɛ ngɛ gbi ko mi.
+      hyp: Munyu kpɔfa ji munyu ngu, aloo munyu nguhi nɛ a tsuo ní pɔtɛɛ ngɛ gbi ko
+        mi?
+      cer: 0.0345
+      wer: 0.5714
+    '656':
+      text: Munyukpɔ ji munyunguhi nɛ a bla mɛ kɛ pee munyuza.
+      hyp: Munyu kpo ji munyu nguhi nɛ a bla mɛ kɛ pee munyu za.
+      cer: 0.025
+      wer: 0.6
+    '657':
+      text: E hɛɛ peelɔ kɛ peemi.
+      hyp: E hɛɛ pee lɔ kɛ pee mi.
+      cer: 0.0
+      wer: 0.8
+    '658':
+      text: Ngɛ ni ngmami mi ɔ, a tsuɔ okadihi a he ni konɛ sisi numi nɛ je kpo.
+      hyp: Ngɛ ní nguami mi ɔ, a tsuo okadihi a he ní, konɛ sisi numi nɛ je kpo.
+      cer: 0.08
+      wer: 0.2353
+    '666':
+      text: E sa nɛ munyukpɔfa a nɛ hɛɛ munyukpɔfa yi.
+      hyp: E sane munyu kpɔfa a, nɛ hɛɛ munyu kpɔfa yi.
+      cer: 0.0303
+      wer: 0.5556
+    '675':
+      text: Enɛ ɔ ji munyukpɔfa nɛ biɛ aloo biɛnanemidalɔ peeɔ munyukpɔfa a yi.
+      hyp: Enɛ ɔ ji munyu kpɔfa nɛ biɛ, aloo biɛ nane mi daloo peeɔ munyu kpɔfa a
+        yi.
+      cer: 0.0364
+      wer: 0.6667
+    '682':
+      text: Heninegbɔlɔ piɛɛ we munyukpɔfa a he.
+      hyp: He nine gbolɔ piɛ we munyu kpɔfa a he.
+      cer: 0.0667
+      wer: 1.0
+    '683':
+      text: Wa ma nyɛ na munyungu pe kake ngɛ biɛ munyukpɔfa mi.
+      hyp: Wa ma nyɛ na munyu ngɔ pe kake ngɛ biɛ munyu kpɔ fa mi.
+      cer: 0.0244
+      wer: 0.4545
+    '685':
+      text: Nɔhyɛ ni komɛ ngɛ daka nɛ nyɛɛ se ɔ mi.
+      hyp: Nɔ hyɛ ni komɛ ngɛ daka a nɛ nyɛɛ si ɔ mi.
+      cer: 0.069
+      wer: 0.4
+    '690':
+      text: Kaleli nɛ ɔmɛ ji munyunguhi aloo munukpɔfahi nɛ tuɔ biɛ yi ɔ he munyu.
+      hyp: Kaleli nɛ ɔmɛ ji munyu nguhi, aloo munu kpɔfahi nɛ tuɔ biɛ yeɔ he munyu.
+      cer: 0.0179
+      wer: 0.4286
+    '697':
+      text: Ngɛ kekle nɔhyɛ nɔ ɔ mi ɔ, se heninegbɔlɔ kalelɔ ɔ ji jamɛ a.
+      hyp: Ngɛ kɛklɛ nɔ hyɛ nɔ ɔ mi ɔ, se hɛ nine gbolo kalelɔ ɔ ji jamɛ a.
+      cer: 0.1087
+      wer: 0.4286
+    '710':
+      text: Biɛ yi ma nyɛ hɛɛ hɛ kpɛ heninegbɔlɔ kalelɔ kɛ se heninegbɔlɔ kaleli.
+      hyp: biɛ yi manyɛ hɛɛ he kpe he nine gbulo kalelo kɛ se he nine gbulo kaleli.
+      cer: 0.125
+      wer: 0.8462
+    '717':
+      text: Ngɛ nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma biɛ munyukpɔfa etɛɛtɛ.
+      hyp: Ngɛ nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma biɛ munyu kpɔfa etɛete.
+      cer: 0.0465
+      wer: 0.25
+    '720':
+      text: Peemimunyu munyukpɔfa ji munyukpɔfa nɛ dɛhe peemimunyu ɔ ji munyukpɔfa
+        a yi.
+      hyp: Pɛmi munyu munyu kɔfa ji munyu kɔfa a, nɛ dɛɛ pɛmi munyu ɔ ji munyu kɔfa
+        a yi.
+      cer: 0.1562
+      wer: 1.0
+    '735':
+      text: Ngɛ nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma peemimunyu munyukpɔfa etɛɛtɛ.
+      hyp: Ngɛ nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma pe mimi munyu munyu kpɔfa etɛ.
+      cer: 0.1
+      wer: 0.5
+    '738':
+      text: E ji munyukpɔfa nɛ hɛɛ miblɛkelɔ kaa munyukpɔfa a yi.
+      hyp: E ji munyu kpɔfa nɛ hɛɛɛ mi blɛ kɛlɔ kaa munyu kpɔfa a yi.
+      cer: 0.0465
+      wer: 0.8
+    '748':
+      text: E ji munyukpɔ nɛ hɛɛ kalelɔ kaa munyukpɔfa a yi.
+      hyp: E ji munyu kpo nɛ hɛɛ Kalelo kaa munyu kpo faa yi.
+      cer: 0.0789
+      wer: 0.6
+    '754':
+      text: Enɛ ɔ ji munyukpɔfa nɛ ngwɔhe biɛ peeɔ munyukpɔfa a yi.
+      hyp: Enɛ ɔ ji munyu kpɔfa nɛ ngɔ he biɛ peeɔ munyu kpɔfa a yi.
+      cer: 0.0227
+      wer: 0.5455
+    '761':
+      text: Munyukpɔfa yi ɔ ji munyungu oti ngɛ munyukpɔfa a mi.
+      hyp: Munyu kpɔfa yeɔ ji munyungu ɔ ti ngɛ munyu kpɔfa a mi.
+      cer: 0.0476
+      wer: 0.7
+    '764':
+      text: A blaa munyukpɔfa slɔɔtohi kɛ peeɔ munyuza mi.
+      hyp: Ablaa a, munyu kpo fa slɔɔtohi kɛ peeɔ munyu zami.
+      cer: 0.0526
+      wer: 0.75
+    '765':
+      text: Ngɛ nɔhyɛ nɔ nɛ ɔ mi ɔ, biɛ munyukpɔfa a ji nɔ nɛ a diki mi ɔ nɛ.
+      hyp: Ngɛ nɔ hyɛ nɔ nɛ ɔ mi ɔ, biɛ munyu kpɔfa a ji nɔ nɛ a diki mi ɔ nɛ.
+      cer: 0.0
+      wer: 0.2222
+    '767':
+      text: Peemimunyu munyukpɔfa yi ɔ ji ho.
+      hyp: Piemi munyu munyu kpɔfaii ɔ ji hɔ.
+      cer: 0.1111
+      wer: 0.8333
+    '771':
+      text: A kɛ jeɔ juɛmi kpo.
+      hyp: A kɛ jeɔ juɛmi kpo.
+      cer: 0.0
+      wer: 0.0
+    '772':
+      text: A yeɔ kɛ buaa munyu tumi kɛ e ngmami.
+      hyp: A yeɔ kɛ buaa munyu tumi kɛ e ngmami.
+      cer: 0.0
+      wer: 0.0
+    '773':
+      text: A kɛ jeɔ demihi nɛ sisi numi ngɛ a he ɔ kpo se sisi numi ɔ nya pi si.
+      hyp: A kɛ jeɔ dɛ mi hi nɛ sisi numi ngɛ a he ɔ kpo, se sisi numi ɔ nya pi si.
+      cer: 0.02
+      wer: 0.1579
+    '774':
+      text: A haa nɛ munyuza kpa ko mi tsɔɔ.
+      hyp: A haa nɛ munyu za kpa ko mi tsɔii.
+      cer: 0.0833
+      wer: 0.375
+    '778':
+      text: Nyɛɛ po munyukpɔfa yihi nɛ nyɛ yɔse ɔmɛ a sisi.
+      hyp: Nyɛɛ po munyu kpɔfa yihi nɛ nyɛ yo si ɔmɛ a sisi.
+      cer: 0.0541
+      wer: 0.4
+    '785':
+      text: Wo kɔɔhiɔ nɛ ngɛ fiae blɛuu ɔ wo blɔ hiami ɔ mi buajɔ.
+      hyp: Wɔ koo hiɔ nɛ ngɛ fiae blɛɔ ɔ wo blɔ hiami ɔ mi bua jo.
+      cer: 0.1463
+      wer: 0.4615
+    '793':
+      text: Agbaikle wayoo ɔmɛ nɛ ngɛ tɛ ɔmɛ fiae blɛuu ɔ je gbeye ngɛ wa mi.
+      hyp: Agbaekle wayo ɔmɛ nɛ ngɛ ti ɔmɛ fiae blɛɔ ɔ ji gbeyi ngɛ wami.
+      cer: 0.14
+      wer: 0.5333
+    '801':
+      text: Nyɛ de nyɛ heto ɔ ngɔ ha nyɛ tsu mi bi ɔmɛ.
+      hyp: Nyɛ de nyɛ he to ɔ ngɔ ha nyɛ tsumi bi ɔmɛ.
+      cer: 0.0
+      wer: 0.3333
+    '807':
+      text: Nyɛ de nyɛ heto ɔmɛ kɛ ha nyɛ tsu mi bi ɔmɛ.
+      hyp: Nyɛ de nyɛ heto ɔmɛ kɛ ha nyɛ tsumi bi ɔmɛ.
+      cer: 0.0
+      wer: 0.1667
+    '808':
+      text: E hɛɛ peelɔ kɛ peemimunyu.
+      hyp: E hɛɛ pii lo kɛ pi mimi munyu.
+      cer: 0.2857
+      wer: 1.0
+    '809':
+      text: Be komɛ ɔ, e hɛɛɔ peemi.
+      hyp: Be komɛ ɔ, e heɔ pɛmi.
+      cer: 0.2353
+      wer: 0.3333
+    '810':
+      text: Munyukpɔ he blɔ nɔ tomi ji kaa e hi animosa glɛ nɔ.
+      hyp: Munyu kpo he blɔ nɔ tomi ji kaa e hi animosa gle nɔ.
+      cer: 0.0513
+      wer: 0.25
+    '812':
+      text: Daale tsi kokote ku loko e je kɛ ho sukuu ya.
+      hyp: Daa lɛ tsi kɔkɔte kuu loko e je kɛ ho su kuu ya.
+      cer: 0.1176
+      wer: 0.5455
+    '813':
+      text: Kɔɔyo ho jua mi ya.
+      hyp: Koo yo ho juami ya.
+      cer: 0.1429
+      wer: 0.8
+    '815':
+      text: Munyukpɔ slɔɔto enyɔ nɛ ngɛ.
+      hyp: Munyu kpo slɔɔto enyɔ nɛ ngɛ.
+      cer: 0.0435
+      wer: 0.4
+    '816':
+      text: Mɛ ji dɛhe munyukpɔ kɛ akplahe munyukpɔ.
+      hyp: Mɛ ji de he munyu kpo kɛ a kpla he munyu kpo.
+      cer: 0.0909
+      wer: 1.2857
+    '819':
+      text: Tɛɛ ma nyɛ yɛ nyu ɔ daa ligbi lo?
+      hyp: Te manye ye nyu ɔ daa ligbi lo?
+      cer: 0.1667
+      wer: 0.4444
+    '821':
+      text: Munyuza amɛ daa si ngɛ a dɛhe nɛ a je sisi numi nɛ nya ma si kpo.
+      hyp: Munyu za amɛ daa si ngɛ a de hee nɛ a je sisi numi nɛ nya ma si kpɔ.
+      cer: 0.0625
+      wer: 0.2941
+    '825':
+      text: Nyɛɛ ya itanɛti aloo kpa a nɔ nɛ nyɛ ya hla dɛhe munyukpɔ mi gbami eywiɛ
+        ɔmɛ.
+      hyp: Nyɛɛ ya i tanɛ ti, aloo kpa a nɔ nɛ nyɛ ya hla de he munyu kpomi gbami
+        i yi ɔmɛ.
+      cer: 0.0833
+      wer: 0.5294
+    '827':
+      text: Dɛhe munyukpɔ mi gbami eywiɛ nɛ ngɛ.
+      hyp: de he munyu kpomi gbami eywiɛe nɛ ngɛ.
+      cer: 0.1034
+      wer: 0.7143
+    '828':
+      text: Mɛ ji demi, fami, bimi kɛ ngmlaa.
+      hyp: Mɛ ji dɛ mi fami, bi mi kɛ ngmlaaa!”
+      cer: 0.0833
+      wer: 0.7143
+    '831':
+      text: E ye ni hiɛ gbɔkuɛ.
+      hyp: E ye nɛ hyɛ gbokue.
+      cer: 0.2857
+      wer: 0.6
+    '835':
+      text: O ma nyɛ ha nɔhyɛ nɔ ngɛ bimi munyukpɔ nɔ lo?
+      hyp: O wo ma nyɛ ha nɔ hyɛ nɔ ngɛ bi mi munyu kponɔ lo?
+      cer: 0.0882
+      wer: 0.6364
+    '837':
+      text: Mɛnɔ sika ji nɛ ɔ?
+      hyp: Mɛnɔ sika ji nɛ ɔ?
+      cer: 0.0
+      wer: 0.0
+    '842':
+      text: Akplahe munyukpɔ woɔ tsali konɛ a kɛ tsa dɛhe munyukpɔ ɔ.
+      hyp: A kpla he munyu kpo wo ɔ tsali, konɛ a kɛ tsa de he munyu kpo ɔ.”
+      cer: 0.0652
+      wer: 1.0
+    '845':
+      text: Benɛ Kofi su lejɛ ɔ, a ho ngmɔ ɔ mi ya momo.
+      hyp: Benɛ kɔfi su lejɛ ɔ, a ho ngɔ ɔ mi ya momo.
+      cer: 0.0645
+      wer: 0.1667
+    '849':
+      text: Wa ngɛ akplahe munyukpɔ slɔɔtohi etɛ.
+      hyp: Wa ngɛ a kpla he munyu kpo slɔɔtohi etɛ.
+      cer: 0.0323
+      wer: 0.8333
+    '857':
+      text: Biɛ akplahe munyukpɔ nɔhyɛ ni nɛ nyɛɛ se ɔ nɛ.
+      hyp: biɛ a kpla he munyu kpo nɔ hyɛ ni nɛ nyɛɛ se ɔ.
+      cer: 0.0833
+      wer: 0.8
+    '858':
+      text: Jokuɛ ɔ nɛ ye ngwɔ ngɛ ka a mi ɔ na yi jemi womi.
+      hyp: Jokuɛ ɔ nɛ ye nguɔ ngɛ kã a mi ɔ nɛ a yi jemi womi.
+      cer: 0.0857
+      wer: 0.2857
+    '859':
+      text: Wa na tokota wayoo nɛ laa a.
+      hyp: Wa na tukuta wayoo nɛ laa a.
+      cer: 0.0952
+      wer: 0.1429
+    '864':
+      text: E tsuɔ ni kaa kalelɔ.
+      hyp: E tsuo ní kaa kale lo.
+      cer: 0.1875
+      wer: 0.8
+    '868':
+      text: Yɔse kaa munyungu ɔmɛ nɛ a po a sisi ɔ ji kalelɔ akplahe munyukpɔ ɔ nɛ.
+      hyp: Yo se kaa munyu ɔmɛ nɛ a po a sisi ɔ ji kalelo a kpla a he munyu kpo ɔ
+        nɛ.
+      cer: 0.1273
+      wer: 0.625
+    '872':
+      text: Munyukpɔhi nɛ a po a sisi ɔmɛ tsuo peeɔ miblɛkelɔ akplahe munyukpɔhi.
+      hyp: Munyu kpohi nɛ a pɔ a sisi ɔmɛ tsuo peeɔmi blɛ kɛlɔ ɔ a kpla he munyu kpohi.
+      cer: 0.0877
+      wer: 1.0
+    '902':
+      text: A kɛ gbeɔ munyuza nya kɛ tsɔɔ kaa munyuza a ba nyagbe.
+      hyp: A kɛ gbeɔ munyu zanya kɛ tsɔɔ kaa munyu zaa ba nyagbe.
+      cer: 0.0
+      wer: 0.3333
+    '904':
+      text: A kɛ gbaa munyuzahi a mi ngɛ demiyo aloo saneyo ko mi.
+      hyp: A kɛ gbaa munyu zahi a mi ngɛ dɛmi yo, aloo sane yo ko mi.
+      cer: 0.0238
+      wer: 0.5
+    '909':
+      text: A ma ha tsɔɔli ɔmɛ hulɔ.
+      hyp: A ma ha tsɔɔli ɔmɛ hulɔ.
+      cer: 0.0
+      wer: 0.0
+    '910':
+      text: Sukuu nɔ hyɛlɔ ɔ hu ma na eko.
+      hyp: Suku nɔ hyɛlɔ ɔ hu ma na eko.
+      cer: 0.0455
+      wer: 0.125
+    '912':
+      text: A kɛ gbeɔ ayaade adeta munyuhi a nya.
+      hyp: A kɛ gbo ɔ a ya de adeta munyuhi a nya.
+      cer: 0.069
+      wer: 0.625
+    '916':
+      text: A ngɔɔ akɔnya kɛ gbaa nihi nɛ a to a nya ngɛ munyuza mi ɔmɛ a mi.
+      hyp: A ngɔɔ akonya kɛ gbaa nihi nɛ a tó a nya ngɛ munyu zami ɔmɛ a mi.
+      cer: 0.0417
+      wer: 0.2353
+    '919':
+      text: A ke wɔ womihi, sɛhi, okplɔɔhi, ningmatsohi kɛ tsopahi.
+      hyp: A kɛ wo wo mi mi sehi, okplɔɔhi, nɔngma tsohi kɛ tsopahi.
+      cer: 0.1163
+      wer: 0.8889
+    '920':
+      text: Ni yemi, mahɛ hwɔmi kɛ nɔ he munyu tumi pɛ a le.
+      hyp: Ni yemi ma hɛ hwomi kɛ nɔ he munyu tumi pe a lɛ.
+      cer: 0.0857
+      wer: 0.4167
+    '921':
+      text: Ke nyɛ sume ɔ, wa maa kpale kɛ ho.
+      hyp: Ke nyɛ su ngɔ ɔ, wa maa kpale kɛ ho.
+      cer: 0.125
+      wer: 0.2222
+    '922':
+      text: A kɛ gbaa adlɛɛsi mi.
+      hyp: A kɛ gbaa a dle si mi.
+      cer: 0.125
+      wer: 0.6
+    '924':
+      text: A tsuɔ kaa he ni ke a yaa to nihi a nya kɛ tsɔɔ nɔ ko nɛ a de kɛ sɛ hlami.
+      hyp: A tsuo kaa he ni ke a yaa to nihi a nya kɛ tsɔɔ nɔ ko nɛ a de kɛ se hlami.
+      cer: 0.0385
+      wer: 0.0909
+    '929':
+      text: A kɛ blaa dɛhe munyukpɔ nɛ hɛɛ juɛmi kake.
+      hyp: A kɛ blaa de he munyu kpɔ nɛ hɛɛ juɛmi kake.
+      cer: 0.0303
+      wer: 0.4444
+    '930':
+      text: Ni komɛ tɛni ni; ni komɛ hu ngma ni.
+      hyp: Ni komɛ tɛ nini, ni komɛ hu nguani.
+      cer: 0.0385
+      wer: 0.4444
+    '931':
+      text: I ya Ablotsi; Kɔɔtemɛ ya Naijilia; Amatemɛ ya Akplabanya.
+      hyp: E ya ablɔ tsi koo tɛmɛ ya na Egilia, amatɛmɛ ya akplaba nya.
+      cer: 0.1739
+      wer: 1.1111
+  source: evaluated
+- model: ghananlpcommunity/ghana-tts-36k
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  cer: 0.1548
+  wer: 0.597
+  score: 0.1548
+  samples: 200
+  valid: 200
+  avg_seconds: 2.45
+  judge:
+    model: KhayaAI/khaya-asr-v3
+    cer_on_real_speech: 0.083
+  entries:
+    '13':
+      text: Pɛlɔku pɛmingu ji pɛlɔku nɛ tsuɔ ni kaa pɛmingu (Enɛ ɔ eko be Dangme mi).
+      hyp: pɛlɔ ko pɛmi ngu ji pɛlɔ ko nɛ tsuo a nɛ ka pɛmi ngu. Hɛnɛ ɔ e ko be da
+        ngmimɛ,
+      cer: 0.1786
+      wer: 1.1333
+    '20':
+      text: Pɛlɔ pɛ hu ma nyɛ da si kaa pɛmingu.
+      hyp: Pɛlɔ pɛɛ ho ma nyɛ da sika a pɛmi ngu.”
+      cer: 0.0741
+      wer: 0.6667
+    '33':
+      text: Pɛlɔ pɛ ma nyɛ da si kaa pɛmingu nɛ pɛlɔku kɛ pɛlɔ ma nyɛ da si kaa pɛmingu.
+      hyp: Pɛlɔ pɛ, ma nyɛ da sika pɛmi ngu, nɛ pɛlɔ ko kɛ pɛlɔ, ma nyɛ da sika pɛmi
+        ngu.”
+      cer: 0.0517
+      wer: 0.4444
+    '44':
+      text: E yeɔ buaa ni kaseli nɛ a nyɛɔ peeɔ munyunguhi nɛ da ngɛ a dɛhe.
+      hyp: Ni yo bua a, ní kaseli nɛ a nyɛɔ piɔ munyungu hyi nɛ da ngɛ a dɛ he.”
+      cer: 0.1633
+      wer: 0.6667
+    '45':
+      text: E yeɔ buaa ni kaseli nɛ a leɔ gbi ɔ si fɔfɔɛ kɛ e lomi bɔ.
+      hyp: I yeɔ bua a ni kaseli nɛ a leɔ gbi ɔ si fɔfɔɛ ke i lo mi bɔ.
+      cer: 0.0714
+      wer: 0.4375
+    '46':
+      text: E yeɔ buaa ni kaseli nɛ a nuɔ munyunguhi a sisi.
+      hyp: I hyɛɔ buaa ni kaseli nɛ a nuɔ munyunguhi a sisi.
+      cer: 0.0811
+      wer: 0.1818
+    '50':
+      text: Ngɛ nɔhyɛ munyungu nɛ ɔmɛ a tsɛmi mi ɔ, pɛminguhi jeɔ a he kpo.
+      hyp: Lɛ nɔ́ sɛ munyu nɛ ɔ nɛ a tsɛ mi mi ɔ, pɛmi nguhi je ɔ a he kpɔɔ.
+      cer: 0.2083
+      wer: 0.9286
+    '58':
+      text: Ngɛ nɔhyɛ ni nɛ wa ha amɛ a mi ɔ, o ma yo kaa pɛmingu ɔmɛ hɛɛ pɛlɔkuhi
+        ngɛ a nyagbe.
+      hyp: Lɔ ɔ she ní nɛ wa ha amɛ a mi ɔ, o ma yo kaa pɛmi ngu ɔmɛ hɛɛ pɛlɔ kohi
+        ngɛ a nyagbɛ.
+      cer: 0.1613
+      wer: 0.4286
+    '60':
+      text: Ngɔɔ mo nitsɛ o munyuhi kɛ kale nɔ nɛ pɛmingu ji.
+      hyp: Wɔɔ mu nitsɛ o munyuhi kɛ kale nɔ́ nɛ pɛ mingu ji.
+      cer: 0.0789
+      wer: 0.3636
+    '61':
+      text: Moo tsɔɔ pɛmingu slɔɔtohi nɛ ngɛ Dangme mi.
+      hyp: Mo tsɔɔ pee mwɔngu slɔɔtohi nɛ ngɛ dã ngɛ mi
+      cer: 0.2286
+      wer: 0.625
+    '62':
+      text: Moo tsɔɔ pɛmingu si fɔfɔɛ he se nami ngɛ munyungu peemi mi.
+      hyp: Mwɔtsɛ ɔ pɛmi gu si fɔfɔɛ, he se nami ngɛ munyu gu peemi mi.
+      cer: 0.1064
+      wer: 0.5
+    '79':
+      text: Moo sɛsɛ pɛmingu si fɔfɔɛ ngɛ Dangme mi ɔ he.
+      hyp: Mohu sɛsɛ pɛ mi gu si fɔfɔɛ ngɛ dangmi mi ɔ he.
+      cer: 0.1143
+      wer: 0.5
+    '85':
+      text: Tukpɛtukpɛ kɛ Tatu ji huɛmɛ.
+      hyp: Hui hui kpekɛ ta tsu yi we ɔmɛ.
+      cer: 0.5217
+      wer: 1.6
+    '91':
+      text: Tatu sɛɔ e tsu nɛ e bua niye ni nya wo mi ɔ mi nɛ e kɛ e bimɛ yeɔ bɔɔbɔɔbɔɔ.
+      hyp: Se ɔ, e tsu nɛ e bua niye ní. Nyawomi ɔ mi, nɛ e ke e bi mɛye ɔ bɔbɔɔbɔɔ.
+      cer: 0.1455
+      wer: 0.5238
+    '107':
+      text: Gana gbihi tsuo tsuɔ gbimikɔmi he ni.
+      hyp: kɛ na gbihi tsuo tsuo gbimi kɔmi he ní.
+      cer: 0.1333
+      wer: 0.8571
+    '117':
+      text: Dangme, Dagbaani kɛ gbi kpa komɛ lɛɛ a ngɛ sisi, kpɛti kɛ hiɔwe gbimikɔmi.
+      hyp: Mɛɛ mi mɛ dagba nɛ kɛ gbi kpa komɛ lɛɛ a ngɛ sisi, gbɛti kɛ hiɔwe gbimi
+        kɔmi.
+      cer: 0.1724
+      wer: 0.5714
+    '118':
+      text: Kane munyuza nɛ nyɛɛ se nɛ ɔmɛ nɛ e maa ye bua mo kɛ ha sisi numi.
+      hyp: kane munyu sa nɛ nyɛɛ se, nɛ ɔmɛ nɛ e maa ye bua mo kɛ ha sisi numi.
+      cer: 0.0204
+      wer: 0.1176
+    '119':
+      text: Moo tsɔɔ gbimikɔmi nɛ munyungu ‘ma’ hɛɛ ngɛ munyuza etɛ ɔmɛ a mi.
+      hyp: Muhu tso ɔ gbumi kɔmihi nɛ munyu ngu, ma hɛɛ ngɛ munyu za etɛ ɔmɛ a mi.
+      cer: 0.14
+      wer: 0.6923
+    '130':
+      text: Enɛ ɔ tsɔɔ fami kɛ amlɔbe ngɛ animosa glɛ nɔ.
+      hyp: enɛ o tso ɔ fa mi, kɛ amlɔ bɛ ngɛ e ni muza gleɔ nɔ.
+      cer: 0.2286
+      wer: 1.0
+    '132':
+      text: Enɛ ɔ jeɔ benɛbe juɛmi kpo ngɛ animosa glɛ nɔ.
+      hyp: Enɛ ɔ je ɔ be nɛ be juɛmi kpo ngɛ hɛ nɛ mo sa glɛ nɔ ɔ.
+      cer: 0.1111
+      wer: 1.0
+    '134':
+      text: Ngɔɔ mo nitsɛ o munyuhi kɛ kale nɔ nɛ gbimikɔmi ji.
+      hyp: Gɔɔmu nitsɛ o munyuhi kɛ kale nɔ nɛ gbemi kɔmi ji.
+      cer: 0.075
+      wer: 0.3636
+    '136':
+      text: Ngɔɔ nɔhyɛ ni nɛ da kɛ tsɔɔ Dangme gbimikɔmi ɔ nya.
+      hyp: Bɔɔ nɔ si ní nɛ daa, kɛ tsɔɔ da ngmɛ gbi mi komɛ ɔ nya.
+      cer: 0.25
+      wer: 0.9091
+    '137':
+      text: Ngɛ kuuhi a mi ɔ, nyɛɛ sɛsɛ gbimikɔmi ni tsumi he.
+      hyp: Lɔmi ɔ, yɛ sɛsɛ gbɛmi komɛ nɛ tumi he ɔ.
+      cer: 0.4474
+      wer: 0.9091
+    '141':
+      text: Nyɛɛ nuu nyɛ he enyɔɔnyɔ nɛ nyɛɛ bu munyungu nɛ ɔmɛ tue.
+      hyp: “Yɛɛ nu nyɛ he e nyɛɔnyɛɔ nɛ nyɛɛ bo munyu gu nɛ ɔmɛ tue ɔ.
+      cer: 0.1591
+      wer: 0.6667
+    '145':
+      text: De o heto ɔ ngɔ ha nyɛ tsu mi bi ɔmɛ.
+      hyp: Je ɔ hyi tó ɔ ngɔ ha nyɛ tsumi bi ɔmɛ.
+      cer: 0.1923
+      wer: 0.5455
+    '146':
+      text: Moo ngma pɛmingu slɔɔtohi ngɛ Dangme mi nɛ o ha nɔhyɛ ni etɛɛtɛ.
+      hyp: Mohu ngma pɛmi ngu slɔɔ tɔɔhi ngɛ da ngmemi nɛ o ha nɔ shɛne i tɛtɛ.
+      cer: 0.1765
+      wer: 0.8462
+    '150':
+      text: Moo ngɔ nɔhyɛ ni etɛ kɛ tsɔɔ gbimikɔmi ni tsumi ngɛ Dangme mi ɔ nya.
+      hyp: Muhu ngmɔ nɔ́ shɛ ni, e tɛ kɛ tsɔ gbemi kuɔmi ni, tsumi ngɛ da ngmɛ mi
+        ɔ nya.
+      cer: 0.1887
+      wer: 0.7333
+    '153':
+      text: Oti pɔtɛɛ ngɛ demiyo ko mi ɔ ji nɔ he nɛ demiyo ɔ kɔɔ.
+      hyp: Mudipɔtɛ ɔ ngɛ Demio komɛ ɔ ji nɔ he nɛ. Demio ɔ kɔɔ.
+      cer: 0.175
+      wer: 0.4286
+    '166':
+      text: A deɔ nihi babauu kɛ kɔɔ munyutso oti ɔ he.
+      hyp: Lɛ deɔ ní babauu kɛ kɔɔ munyu tso oti ɔ hɛɛ.
+      cer: 0.2121
+      wer: 0.5
+    '186':
+      text: E sa nɛ o hla munyungu oti ɔmɛ.
+      hyp: Isa nɛ o hla munyungu oti ɔmɛ.
+      cer: 0.0435
+      wer: 0.25
+    '191':
+      text: O ma nyɛ maa to tsui si kɛ kane demiyo ɔ mi ekohu nɛ o nu sisi saminya.
+      hyp: O manyɛmɛ a tó tui si kɛɛ kane demi yo o mi ekohu nɛ o nu sisi sami nya.
+      cer: 0.0943
+      wer: 0.6111
+    '212':
+      text: Ngɔɔ ni kanemi vii he nile nɛ o na a kɛ kane demiyo nɛ nyɛɛ se nɛ ɔ.
+      hyp: Mawu na kɛ ma vi he nile nɛ o na a kɛ kane demi ɔ nɛ nyɛɛ sinɛ ɔ.
+      cer: 0.26
+      wer: 0.5
+    '213':
+      text: Jije oslɔɔke ngua nɛ ɔ je?
+      hyp: Jije o su lɔ kɛ̃ nguaa nɛ ɔ je.
+      cer: 0.2
+      wer: 0.8333
+    '214':
+      text: Mɛnɔ nɛ ha e ku pue kpo kikɛ nɛ ɔ?
+      hyp: Mɛnɔ nɛ ha e ku pue kpo kɛkɛ nɛ ɔ?”
+      cer: 0.0417
+      wer: 0.1
+    '215':
+      text: Obo we tso ngua a ku.
+      hyp: “Logbo weto nguaa a kua.
+      cer: 0.3333
+      wer: 0.8333
+    '224':
+      text: Benɛ Yaa Kɔɔyo je jua kɛ ma a, ambulansi ko ba be e he kɛ fo.
+      hyp: Benɛ yaa kɔ yaa je jua a kɛ ma a, ambulansi kuba bee he kɛ fɔ.
+      cer: 0.1364
+      wer: 0.5
+    '229':
+      text: E nɔ jena a, a pue nɔ kɛ ya mɔtsle ɔ ekohu ya to e dlami he blɔ nya.
+      hyp: I nɔ jena a, e pue enɛ ɔ kɛ ya mɔtlɔɔ ɔ e ko hu ya tó e dlami he blɔ nya.
+      cer: 0.1667
+      wer: 0.4737
+    '232':
+      text: Ma a tsuo wo yana.
+      hyp: A tsuo we yana.
+      cer: 0.2308
+      wer: 0.4
+    '240':
+      text: Munyu nɛ ɔ he wa ha Mangoasetsɛmɛ se e he nɔ ko be nɛ a ma nyɛ pee.
+      hyp: Muyu nɛ ɔ he wa ha ma guaa sɛsɛmɛ se e hɛ nɔ ko be nɛ a ma nyɛ pe.
+      cer: 0.1633
+      wer: 0.3333
+    '246':
+      text: Okpɔtɛsa gbenɔ nɛ ɔ ye ma a tsuo awi.
+      hyp: Okpɛlɔ sagbe nɔ́ nɛɛ ɔ ye maa a tsua we.
+      cer: 0.25
+      wer: 0.7778
+    '248':
+      text: Okpɔtɛsa ni tsumi kpakpa nyɛɛ e se niinɛ.
+      hyp: O kpɔ tɛ sa, ni tsu mi, kpakpa. Nyɛɛ, e se nihi nɛ.
+      cer: 0.0303
+      wer: 1.0
+    '249':
+      text: Mo yo munyutso oti ngɛ demiyo ɔ mi.
+      hyp: Moyo munyu tso niooti ngɛ demi yo ɔ mi.
+      cer: 0.1111
+      wer: 0.75
+    '250':
+      text: Sɛsɛ munyutso oti ɔ he.
+      hyp: Sɛsɛ munyu to oti ɔ he.
+      cer: 0.0556
+      wer: 0.4
+    '252':
+      text: Moo kane demiyo nɛ nyɛɛ se nɛ ɔ.
+      hyp: Moo kane dɛmi ɔ nɛ nyɛɛ se nɛ ɔ.
+      cer: 0.125
+      wer: 0.25
+    '253':
+      text: Mo yo munyutso oti ngɛ demiyo ɔ mi nɛ o ngma.
+      hyp: Moyo munyu tso otii ngɛ Demio ɔ mɛnɔ o ngma?
+      cer: 0.1176
+      wer: 0.6364
+    '268':
+      text: Ye huɛmɛ a ngɔ nɛ i naa buajɔ bɔɔ ngɛ ke i ya sukuu.
+      hyp: Yohuɛmɛ a ngɔ nɛ, i na bua yɔbɔ ngɛ ke i ya su ku.
+      cer: 0.1316
+      wer: 0.5
+    '278':
+      text: Sukuu ɔ, a wo mi kaa sukuubi ɔmɛ tsuo a nya dalɔ nɛ a deɔ ke sukuu plifɛti
+        ɔ.
+      hyp: Suku ɔ, a womi kaa su ku bi ɔmɛ tsuo, a nya dalɔ nɛ a deɔ ke su ku pli
+        fɛti ɔ.
+      cer: 0.0526
+      wer: 0.5263
+    '283':
+      text: Nyɛɛ kɛ nyɛ tsu mi bi ɔmɛ nɛ sɛsɛ nyɛ munyutso oti ɔ he.
+      hyp: Yɛɛ kɛ nyɛ, sumi bi ɔmɛ, nɛ sɛsɛ nyɛ munyu tso oti ɔ he.
+      cer: 0.0476
+      wer: 0.3571
+    '286':
+      text: Pi mlaa nɔ yemi pɛ ji tue bumi.
+      hyp: Dama la yemi peji tue bumi.
+      cer: 0.3043
+      wer: 0.625
+    '288':
+      text: Ke o bu o fɔli tue ɔ, o ngɛ tsɔe kaa o ngɛ hɛ kɛ nɔ fɔmi ngɛ a tsɔsemi
+        kɛ a blɔ tsɔɔmi mi.
+      hyp: Skobu o fɔli tue ɔ, o ngɛ tsɔɔ ka o ngɛ hɛ kɛ nɔ́ fɔmi ngɛ a tsɔ simi,
+        kɛ a blɔ tsɔmi mi.
+      cer: 0.0938
+      wer: 0.32
+    '303':
+      text: Nyɛɛ nuu nyɛ he enyɔɔnyɔ nɛ nyɛɛ ngma ni sɛɛmi kaa nɔ nɛ wa na nɛ ɔ.
+      hyp: Nyɛɛ nu nyɛɛ ye enyɔnyɔ nɛ nyɛɛ ngmɛni sɛumi kaa nɔ nɛ wa na nɛ ɔ.
+      cer: 0.1176
+      wer: 0.4118
+    '309':
+      text: Nyɛɛ kane demiyo nɛ nyɛɛ se nɛ ɔ nɛ nyɛ ha sane bimihi nɛ nyɛɛ se ɔmɛ
+        a heto.
+      hyp: Ye kane dɛ mi ɔ nɛ nyɛɛ se, nɛ ɔ nɛ nyɛ ha sane bimihi nɛ nyɛɛ se ɔmɛ a
+        he to.
+      cer: 0.1034
+      wer: 0.3158
+    '315':
+      text: Sukuu nɔ hyɛlɔ ji nɔ yemi nɔhyɛ nɔ ngɛ sukuu ɔ.
+      hyp: Suku nɔ́ shɛlɔ ji, nɔ yemi nɔ́ shɛ nɔ́ nɛ kɛ suku ɔ.”
+      cer: 0.2222
+      wer: 0.6364
+    '328':
+      text: E sa nɛ e pee nihi nɛ maa ku nɔ buimi nya pɛsɛpɛsɛ.
+      hyp: Sisa nɛ i pee níhi nɛ maa kunɔ buimi nya pɛsɛpɛsɛ.
+      cer: 0.1053
+      wer: 0.4615
+    '335':
+      text: Ni kanemi kɛ mi kuɔmi he su komɛ nɛ nyɛɛ se nɛ ɔ nɛ.
+      hyp: Ni ka nɛ mi kɛ mi kuɔ mi hyi su komɛ nɛ nyɛɛ se nɛ o nɛ.
+      cer: 0.1053
+      wer: 0.5
+    '338':
+      text: A kɛ kaleɔ nɔ lemi kanemi.
+      hyp: ɛ kɛ kale nɛ ɔ lemi ka nɛ mi.
+      cer: 0.2
+      wer: 1.1667
+    '354':
+      text: Falefale peemi ji nɔmlɔ adesa he wami nami sisi poku.
+      hyp: Falifali peemi ji nɔmlɔ adesa, he wami nami sisi poku.
+      cer: 0.0465
+      wer: 0.1
+    '364':
+      text: Mo kai ni kanemi kɛ mi kuɔmi he su nɛ wa kase kɛ be ɔ.
+      hyp: Mo kai mi ka nɛ mi ke mi kuomi hi su nɛ wa kase kɛ be ɔ.
+      cer: 0.1282
+      wer: 0.4667
+    '368':
+      text: Jehanɛ ɔ, tsɔɔ bɔ nɛ o susu kaa a ma nyɛ ma blɛke demiyo nɛ ɔ mi ha.
+      hyp: Jehanɛ ɔ, suɔ bɔ nɛ o susuka a, a ma nya ma blɛ kɛ dɛmiyo nɛ o mɛ ha.
+      cer: 0.1429
+      wer: 0.5
+    '370':
+      text: Moo hyɛ vidio nɛ ɔ nɛ o kɛ na bɔ nɛ ni kanemi vii kɛ ni kanemi kɛ mi kuɔmi
+        ngɛ ha.
+      hyp: Mohu shɛ video nɛ ɔ nɛ o kɛ ná bɔ nɛ nika nɛ mi vii kɛ nika nɛ mi kɛ mi
+        kuɔmi ngɛ ha.
+      cer: 0.1333
+      wer: 0.4545
+    '371':
+      text: Yo a he blɔ nɔ tomi kɛ a he se nami kɛ ha sisi numi nɛ mi kuɔ nami.
+      hyp: I wa he blɔ nɔ tó mi, kɛ a he se nami kɛ ha sisi numi, nɛ mi kuɔ nami.
+      cer: 0.0625
+      wer: 0.2105
+    '376':
+      text: Munyutso oti yomi ngɛ demiyo ko mi.
+      hyp: Munu tsɔ oti yomi ngɛ Demio komɛ.
+      cer: 0.1429
+      wer: 0.7143
+    '377':
+      text: Ngɔɔ mo nitsɛ o munyunguhi kɛ tsɔɔ munyutso oti sisi.
+      hyp: Bɔmɔtɔsuo! Emoinyɔguin! Tɛtsɔ! Emoinyɔ! Emoinyɔ! Emoinyɔ! Emoinyɔ! Emoinyɔ!
+        Emoinyɔ! Emoinyɔ! Emoinyɔ! Emoinyɔ! Emoinyɔ! Emoinyɔ! Emoinyɔ! Emoinyɔ! Emoinyɔ!
+        Emoinyɔ! Emoinyɔ! Emoinyɔ! Emoinyɔ! Emoinyɔ! Emoinyɔ! Emoinyɔ! Emoinyɔ!
+      cer: 3.6047
+      wer: 2.5
+    '378':
+      text: Moo kane demiyo nɛ nyɛɛ se nɛ ɔ nɛ o ha sane bimi ɔmɛ a heto.
+      hyp: Mwɔ kane dɛ mi yo nɛ nyɛɛ se, nɛ ɔ nɛ o ha sane bimi ɔmɛ a heto.”
+      cer: 0.0667
+      wer: 0.25
+    '381':
+      text: Bu ji adesahi a bɔmi sisi kla aloo sisi poku.
+      hyp: Wu je adesahia a bɔmi sisi kula aloo sisi poku.
+      cer: 0.1143
+      wer: 0.4
+    '382':
+      text: Ngɛ si himi mi jio, ni tsumi he jio ɔ, bu he hia wawɛɛ nitsɛ.
+      hyp: E je si himimi jio, ní tsumi he ji ɔ, bu hi hia wawɛɛ ni tsɛ̃.
+      cer: 0.1364
+      wer: 0.6
+    '385':
+      text: Ngɔɔ lɛ kaa o sɛ sukuu tsu ko mi nɛ nɔ fɛɛ nɔ ngaa e sibi kɛ bu kɛ he
+        numi.
+      hyp: Wɔɔ lɛ kaa osɛ su ko tsu komɛ nɔ́ fiɛ nɔ́ nga a he sibi kɛ bu kɛ he numi.
+      cer: 0.1481
+      wer: 0.5238
+    '396':
+      text: Mɛni ji demiyo ɔ munyutso oti ɔ?
+      hyp: mɛ nɛ ji Demio o munyu tso ɔti ɔ.
+      cer: 0.16
+      wer: 1.0
+    '397':
+      text: Mo yo munyuza otihi ngɛ kekle kuku kɛ kuku eywiɛne ɔmɛ mi nɛ o ngma.
+      hyp: Moo yo munyu zla otihi ngɛ kekle kuku kɛ kuku eywiɛ nɛ ɔmɛ mi nɛ o ngma.
+      cer: 0.0566
+      wer: 0.3333
+    '398':
+      text: Moo do demiyo ɔ nɔ kɛ munyuza eywiɛ pɛ.
+      hyp: Modo Demio ɔ nɔ kɛɛ munyu za eywiɛ pɛ.
+      cer: 0.1
+      wer: 0.6667
+    '399':
+      text: Moo ngma ni kanemi vii he su enyɔ nɛ nyɛ kase ngɛ mi gbami nɛ ɔ mi ɔ.
+      hyp: Mohu ngma ní kɛ nɛ mi vii hyi su e nyɔ nɛ nyɛ kase ngɛ mi gbami nɛ ɔ mi
+        ɔ.
+      cer: 0.1373
+      wer: 0.4444
+    '400':
+      text: Moo tsɔɔ su enyɔ nɛ o ngma amɛ a sisi kɛ mo nitsɛ o munyunguhi.
+      hyp: Moo tsɔ su e nyu nɛ o ngma amɛ a sisi kɛ mo nitsɛ o munyu go he.
+      cer: 0.1042
+      wer: 0.4
+    '403':
+      text: Moo tsɔɔ ni kanemi kɛ mi kuɔmi he su etɛ sisi.
+      hyp: Mohu tɛ ɔ nɛ kanemi kɛ mi kuami Yesu e ta sisi.
+      cer: 0.2286
+      wer: 0.7273
+    '410':
+      text: He kplali slɔɔto enyɔ nɛ ngɛ Dangme mi.
+      hyp: Ii kplali slɔɔtu enyɔ nɛ ngɛ daa ngmɛ mi.
+      cer: 0.1613
+      wer: 0.5
+    '416':
+      text: He kplali a he ni tsumi ngɛ gbi ko mi ɔ haa nɛ a naa munyungu ehehi.
+      hyp: Hi kpali a he ní, tsumi ngɛ gbi, komɛ ɔ haa nɛ a naa munyu gu e he he.
+      cer: 0.1176
+      wer: 0.5882
+    '424':
+      text: He kplali pɔtɛɛ nɛ ngɛ ji hɛ kpɛ he kplali kɛ se he kplali.
+      hyp: he kpali pɔtɛ nɛ ngɛ ji hɛ kpɛ he kpali kɛ se he kpali.
+      cer: 0.0889
+      wer: 0.2857
+    '430':
+      text: He kplalɔ peeɔ se he kplalɔ ke a ngɔ kɛ piɛɛ munyungu ɔ he ngɛ e se.
+      hyp: E kpalɔ piɔ, se e kpalɔ ke a ngɔ kɛ piɛ munyu nggo ɔ he ngɛ e se.
+      cer: 0.1765
+      wer: 0.4706
+    '432':
+      text: He kplalɔ peeɔ kpɛti kplalɔ ke a ngɔ kɛ piɛɛ munyungu ɔ he ngɛ kpɛti.
+      hyp: He kpalɔ piɔ kpɛti kpɛlɔ ke a ngɔ kɛ piɛ munyu ngu ɔ he ngɛ kpɛti.
+      cer: 0.1111
+      wer: 0.4
+    '435':
+      text: He kplalɔ peeɔ hɛ kpɛ he kplalɔ ke a ngɔ kɛ piɛɛ munyungu ɔ he ngɛ e hɛ
+        kpɛ.
+      hyp: I kpala piɔ hɛ kpɛ he kpala ke a ngɔ kɛ piɛ munyu ngo ɔ hɛ ngɛ e hɛ kpɛ.
+      cer: 0.193
+      wer: 0.4211
+    '437':
+      text: He kplali nɛ kplaa munyungu kake e se kɛ hɛ kpɛ ngɛ be kake mi.
+      hyp: Hi kplɛli nɛ kpaa munyu gu kake se kɛ hɛ kpɛe ngɛ be kakemi.
+      cer: 0.125
+      wer: 0.6
+    '444':
+      text: O le Gana gbi ko nɛ tsuɔ enɛ ɔmɛ tsuo a he ni lo?
+      hyp: Olegana gbi ko nɛ tsuɔ enɛ ɔmɛ tsuo a hyi ní lo?
+      cer: 0.0857
+      wer: 0.3571
+    '451':
+      text: Plɛ kɛ kpee o nyɛmi ɔ nɛ o tsɔɔ nɔ nɛ ji he kplali a nya.
+      hyp: Lɛ kɛ kue o nyɛmi ɔ nɛ o tsɔɔ nɔ́ nɛ ji he kplali a nya.
+      cer: 0.0732
+      wer: 0.125
+    '458':
+      text: Ngɛ hiɛ ɔ, munyungu ɔ kɛ he kplalɔ ɔ ma nyɛ hɛɛ sisi numi ekpaakpa.
+      hyp: ngɛ hyɛ ɔ. Munyu ngu ɔ ke, ‘He kpalɔ ɔ ma nyɛ hɛɛ sisi numi ekpaakpa.’
+      cer: 0.0588
+      wer: 0.3333
+    '485':
+      text: A yeɔ bua nɛ wa naa munyungu ehehi kɛ jeɔ munyungu poku ɔ mi.
+      hyp: A yi o bua nɛ wa na munyungu e hɛɛhi kɛ je ɔ munyungu poku ɔ mi.
+      cer: 0.1064
+      wer: 0.5
+    '486':
+      text: A tsakeɔ munyungu kɛ jeɔ munyungukuu ko mi kɛ yaa munyungukuu kpa mi.
+      hyp: Lɛsa ke hɔ munyu ngu kɛ jeɔ munyu nguuu komɛ kɛ yaa munyu nguuu kpa mi.
+      cer: 0.1071
+      wer: 0.7692
+    '488':
+      text: A tsakeɔ munyungu ɔ kɛ jeɔ be pɔtɛɛ ko mi kɛ yaa be ekpa mi ngɛ animosa
+        glɛ nɔ.
+      hyp: A tsɛ ke ho munyu go ɔ kɛ je ɔ be pɔtɛɛ komɛ kɛ yaa be e kpami ngɛ animosa
+        glɛɛ nɔ́.
+      cer: 0.1167
+      wer: 0.6316
+    '489':
+      text: A tsakeɔ munyungu ɔ kɛ jeɔ kake mi kɛ yaa hiɛhiɛɛ mi ngɛ animosa glɛ nɔ.
+      hyp: A sake ɔ, munyu ngu ɔ kɛ jeɔ kakemi kɛ yaa hiɛhiɛɛ? Mɛni ngɛ e nimu sa
+        glɛ nɔ?”
+      cer: 0.0893
+      wer: 0.625
+    '490':
+      text: A tsakeɔ peemimunyu kɛ peeɔ biɛ.
+      hyp: A tsake ɔ pee mumu nyu kɛ peeɔ biɛ.
+      cer: 0.0385
+      wer: 0.8333
+    '492':
+      text: A tsakeɔ biɛ kɛ peeɔ kalelɔ.
+      hyp: E tsɛ kiɔ biɛ kɛ peeɔ kale lɔ.
+      cer: 0.1364
+      wer: 0.8333
+    '493':
+      text: A tsakeɔ kalelɔ kɛ peeɔ biɛ.
+      hyp: A tsɛ kiɔ kalelɔ kɛ peeɔ biɛ.
+      cer: 0.0909
+      wer: 0.3333
+    '494':
+      text: A waa kɛ haa gbi ɔ kasemi kɛ e ngmami.
+      hyp: Wa kɛ haa gbe ɔ kasemi kɛ e ngmami.”
+      cer: 0.1071
+      wer: 0.3
+    '500':
+      text: Tsake munyunguhi nɛ nyɛɛ se ɔmɛ kɛ pee biɛhi aloo kaleli.
+      hyp: Sakee munyu gu he nɛ nyɛɛ se o mɛ kɛ pee biɛ he aloo kaleli.
+      cer: 0.1304
+      wer: 0.7273
+    '514':
+      text: Kofi kɛ Amaki ye ni ɔ.
+      hyp: ko fi kɛ amake ye ni ɔ.
+      cer: 0.0625
+      wer: 0.5
+    '516':
+      text: Nyɛɛ ngɔ nya tsɔɔmi nɛ nyɛ ha ngɛ sukuu tsu ɔ mi ɔ kɛ kudɔ nyɛ he.
+      hyp: Hyɛ, e ngɔ nya tsɔɔmi nɛ nyɛ ha e ngɛ suku su ɔ mi ɔ kɛ kudɔ nyɛ he.
+      cer: 0.102
+      wer: 0.2941
+    '519':
+      text: Wa maa sɛsɛ etɛ pɛ he.
+      hyp: Ma a sɛsɛɛ tɛ pɛ he.
+      cer: 0.1875
+      wer: 0.6667
+    '526':
+      text: Majua tsali nɛ tsaa munyunguhi kɛ munyukpafahi.
+      hyp: Mari tsuaa tsale nɛ tsa munyu gu he kɛ munyu kpa pa he.
+      cer: 0.275
+      wer: 1.5714
+    '529':
+      text: Majua tsali nɛ tsaa dɛhe munyukpɔ kɛ akplahe munyukpɔ kɛ blaa.
+      hyp: Emma jua Talin tsa dɛ he munyu kpɔ kɛ a kpla he, munyu kpɔ kɛ blaa.
+      cer: 0.098
+      wer: 1.1818
+    '548':
+      text: E be subai lɔ ɔ he ɔ e nɛ gba kpakpa.
+      hyp: I be subae lɔ ɔ he ɔ e nɛ kpa kpakpa.
+      cer: 0.1538
+      wer: 0.2727
+    '551':
+      text: Moo kane o heto ɔ kɛ ha nyɛ tsu mi bi ɔmɛ konɛ o tsɔɔ o heto ɔmɛ a nya.
+      hyp: Moo kane o he to ɔ kɛ ha nyɛ tsu mi bi ɔmɛ ko nɛ o tsɔ o he to ɔmɛ a nya.
+      cer: 0.0196
+      wer: 0.35
+    '557':
+      text: A yeɔ buaa nɛ a ngɔɔ yi mi tomi ko kɛ pataa yi mi tomi ekpa he.
+      hyp: A yeɔ buaa nɛ a ngɔɔ yi mi tomi ko kɛ pata a yi mi tomi e kpa he.
+      cer: 0.0
+      wer: 0.2353
+    '558':
+      text: A yeɔ buaa kɛ ha nɔ kɛ nɔ he tomi.
+      hyp: Ayɛ wu a kɛ ha nɔ́ kɛ nɔ́ he tomi.
+      cer: 0.1667
+      wer: 0.3
+    '559':
+      text: A yeɔ buaa kɛ tsɔɔ nɔ ko nɛ ya nɔ.
+      hyp: Yiho buaa kɛ tsɔɔ nɔ kɔ nɛ e ya nɔ.”
+      cer: 0.25
+      wer: 0.4
+    '561':
+      text: Mlaa komɛ ngɛ nɛ kudɔɔ wɔ kɛ ha tsali a he ni tsumi.
+      hyp: Mlaa komɛ ngɛ nɛ kudɔ ɔ wɔ kɛ ha tsali ya he ní tsumi.
+      cer: 0.0513
+      wer: 0.3077
+    '564':
+      text: Tsali blaa susumi, nɔ peemi kɛ yi mi tomi.
+      hyp: Salebla a susumi nɔ́ peemi kɛ yimi tomi.
+      cer: 0.0625
+      wer: 0.4444
+    '567':
+      text: Tsali a he hia kɛ ha nihi a he so tomi.
+      hyp: Sale a he hia kɛ ha nihi a he su tomi.
+      cer: 0.1071
+      wer: 0.1818
+    '571':
+      text: Blɔ slɔɔtohi a nɔ ngɛ nɛ a guɔ kɛ peeɔ munyungu ehehi.
+      hyp: Gblɔ slɔ ɔ tohi a nɔ́ genɛ a guɔ kɛ piɛ ɔ munyungui hehi.
+      cer: 0.1429
+      wer: 0.8333
+    '576':
+      text: Kɛ nyɛ woɔ ni ehehi nɛ ngɛ bae ngɛ nyɛ ma a mi biɛ kɛɛ?
+      hyp: kɛ nyɛ woɔ nɛ e híhi nɛ i ngɛ bae ngɛ nyɛ ma a mi biɛ kɛɛ?”
+      cer: 0.075
+      wer: 0.2667
+    '579':
+      text: Mɛnɔ nɛ woɔ ni ɔmɛ a biɛ?
+      hyp: Mɛ nɔuu ni hwɔ ní ɔmɛ a biɛ.
+      cer: 0.3333
+      wer: 0.7143
+    '610':
+      text: Munyungu babɛɛ nɛ ba sɛ Dangme mi ɔ ekomɛ ji hledio-radio, ɛlopleeaeroplane,
+        sɛmɛti-cement, kasiɔkɔ kɛ ekpa komɛ.
+      hyp: Munyu gu babɛ nɛ ba sɛ dã ngmwemi ɔ ekomɛ ji hledoredio. E lɛ plɛ Yeruplɛ
+        nɛ. Sɛmɛ titsɛmɛ kase ɔ kɔɔ kɛ̃ e kpa komɛ.
+      cer: 0.2418
+      wer: 1.0588
+    '615':
+      text: E yeɔ buaa kɛ haa gbi ɔ wami.
+      hyp: Ye bua kɛ haa gbi ɔ wami.
+      cer: 0.1429
+      wer: 0.375
+    '616':
+      text: E yeɔ buaa nɛ gbihi sɛɔ a sibi a mi.
+      hyp: I yeɔ buaa nɛ gbihi siɔ a sibi a mi.
+      cer: 0.0769
+      wer: 0.2
+    '617':
+      text: E yeɔ buaa kɛ haa munyungu ehe nami kɛ e he juɛmi ehe nami.
+      hyp: I yo wa kɛ ha munyu nguaa he nami, kɛ he juɛmi he nami.
+      cer: 0.2444
+      wer: 0.6429
+    '618':
+      text: E yeɔ buaa kɛ haa gbi ɔ kasemi.
+      hyp: I he o bua kɛ ha gbi ɔ kasemi ɔ.
+      cer: 0.2609
+      wer: 0.75
+    '619':
+      text: E yeɔ buaa nɛ a kɛ yoɔ he nɛ munyungu ehe ɔ puɛ kɛ je.
+      hyp: I yeɔ bua nɛ. A kɛ yo ɔ he nɛ. Munyu gu e he ɔ puɛ kɛ je.”
+      cer: 0.0769
+      wer: 0.5333
+    '624':
+      text: Tsɔɔ he kplali a nya.
+      hyp: Sɔɔ he kplale a nya.
+      cer: 0.125
+      wer: 0.4
+    '625':
+      text: Ngmaa he kplali slɔɔto nɛ ngɛ Dangme mi.
+      hyp: Ngmɔɛ a he kplɛli slɔɔto nɛ ngɛ dã ngɛ mi.
+      cer: 0.1875
+      wer: 0.625
+    '626':
+      text: Yɔse he kplali eywiɛ ngɛ Dangme mi nɛ o ngma mɛ.
+      hyp: Yo se hí kplali eywiɛ ngɛ dã gbimi nɛ o ngma mɛ.
+      cer: 0.1622
+      wer: 0.4545
+    '627':
+      text: Sɛsɛ he kplali ni tsumi eywiɛ he.
+      hyp: Tɛsa he kpali ní tsumi e ywiɛ he.
+      cer: 0.1538
+      wer: 0.7143
+    '628':
+      text: Yɔse he kplali ngɛ munyunguhi nɛ nyɛɛ se ɔmɛ a mi konɛ o tsɔɔ he kplali
+        nɛ a ji.
+      hyp: Hiɔ si he kpɛli ngɛ munyunguhi nɛ nyɛɛ, se o mɛ a mi ko nɛ o tsɔɔ he kpɛli
+        nɛ a je.
+      cer: 0.1475
+      wer: 0.4737
+    '629':
+      text: Sɛsɛ he kplali a he ni tsumi eywiɛ he.
+      hyp: Sɛsɛ, he kplale a hɛ ní tsumi eywiɛ he.
+      cer: 0.1034
+      wer: 0.3333
+    '630':
+      text: Tsɔɔ nɔ nɛ tsali ji.
+      hyp: So ɔ nɔ́ nɛ tsa le je.
+      cer: 0.2667
+      wer: 1.0
+    '632':
+      text: Moo tsɔɔ tsali slɔɔto ɔmɛ nɛ o ngma a nya.
+      hyp: Mɔtsɛ ɔ tali slɔɔto ɔmɛ nɛ o ngma a nya.
+      cer: 0.125
+      wer: 0.3
+    '635':
+      text: Moo po tsali nɛ ngɛ munyuzahi nɛ nyɛɛ se ɔmɛ a mi ɔ sisi.
+      hyp: Mawu po tsali, nɛ ngɛ munyu zahe nɛ nyɛɛ se ɔmɛ. A mi ɔ sisi.
+      cer: 0.093
+      wer: 0.2143
+    '636':
+      text: Baake ngɛ ni kanee nɛ Nuɛte ngɛ ni ngmae.
+      hyp: baa kihi ngɛ ní kanee nɛ nyɛɛte ngɛ nɛ ngmɛ.
+      cer: 0.2812
+      wer: 0.6667
+    '639':
+      text: O suɔ joma aloo otimi.
+      hyp: O su he jɔma, aloo o tɛ mɛ?”
+      cer: 0.2941
+      wer: 1.2
+    '640':
+      text: Moo tsɔɔ munyungu ehe peemi blɔ nya tomi ɔ nya.
+      hyp: Mɔ ɔ tsɔ ɔ, munyu ngu e he peemi blɔ nya tomi ɔ nya.
+      cer: 0.0541
+      wer: 0.8
+    '641':
+      text: Mo yɔse munyungu ehe peemi blɔ nya tomi etɛ ngɛ Dangme mi.
+      hyp: Moyo se munyu gu e he peemi blɔ nya tomi itɛ ngɛ daa ngmɛ mi.”
+      cer: 0.1087
+      wer: 0.75
+    '642':
+      text: Sɛsɛ munyungu ehe peemi blɔ nya tomi etɛ ngɛ Dangme mi ɔ he.
+      hyp: Sɛse munyu go e he pee mi blɔ nya tomi e tɛ ngɛ da ngmɛmi ɔ he.
+      cer: 0.0851
+      wer: 0.8462
+    '643':
+      text: Sɛsɛ se nami etɛ nɛ ngɛ munyungu ehe peemi blɔ nɔ tomi ɔ he ngɛ Dangme
+        mi.
+      hyp: Se sose na mi etɛ, nɛ ngɛ munyu gu e he peemi blɔ nɔ́ tomi ɔ hɛ ngɛ dã
+        ngɛ mi.
+      cer: 0.1228
+      wer: 0.6471
+    '644':
+      text: Yɔse munyungu ehe peemi blɔ nɔ tomi nɔhyɛ ni ngɛ demiyo nɛ nyɛɛ se ɔ mi.
+      hyp: Yosimu nyu gu e he peemi blɔ nɔ tumi nɔ́ tsɛ nɛ ngɛ dɛ miyo nɛ nyɛ e seɔ
+        mi.
+      cer: 0.1607
+      wer: 0.875
+    '645':
+      text: Mwɔnɛmwɔnɛ ɔ, juɛmi klami he hia wawɛɛ ngɛ wa sukuu tsɔsemi mi.
+      hyp: Wɔ nɛ mwɔnɛ ɔ, jomi klaami híhia wawɛɛ ngɛ wa su ku sɔsemi mi ɔ.
+      cer: 0.16
+      wer: 0.9167
+    '653':
+      text: Munyukpɔfa ji munyungu aloo munyunguhi nɛ a tsuɔ ni pɔtɛɛ ngɛ gbi ko mi.
+      hyp: Mwɔfɔɔ va ji munyunggu, aloo munyunguhi nɛ a tsuaa nɛ pɔtɛɛ ngɛ gbi kɔmi.
+      cer: 0.2069
+      wer: 0.5
+    '656':
+      text: Munyukpɔ ji munyunguhi nɛ a bla mɛ kɛ pee munyuza.
+      hyp: Munyu kpɔ ji munyumuhi nɛ a bla mɛ kɛ pee munyu za.
+      cer: 0.05
+      wer: 0.5
+    '657':
+      text: E hɛɛ peelɔ kɛ peemi.
+      hyp: I hɛ piɛlɔ kɛ pee mi.
+      cer: 0.25
+      wer: 1.0
+    '658':
+      text: Ngɛ ni ngmami mi ɔ, a tsuɔ okadihi a he ni konɛ sisi numi nɛ je kpo.
+      hyp: Yɛ nɛ ngmami mi ɔ, a tsuɔ okadi hi a he ni konɛ sisi nɔ́ mɛ, nɛ je kpo.
+      cer: 0.1
+      wer: 0.3529
+    '666':
+      text: E sa nɛ munyukpɔfa a nɛ hɛɛ munyukpɔfa yi.
+      hyp: Isa nɛ munyu kpɔfa a nɛ hɛɛ munyu kpɔfa yi.
+      cer: 0.0303
+      wer: 0.6667
+    '675':
+      text: Enɛ ɔ ji munyukpɔfa nɛ biɛ aloo biɛnanemidalɔ peeɔ munyukpɔfa a yi.
+      hyp: Enɛ ɔ ji munyu kpɔfa nɛ biɛ aloo biɛ na nɛ mi daloo peeɔ, munyu kpɔfa a
+        yi.”
+      cer: 0.0545
+      wer: 0.75
+    '682':
+      text: Heninegbɔlɔ piɛɛ we munyukpɔfa a he.
+      hyp: Senɛ gbɔlɔ piɛɛ we minyu kpɔfa a he.
+      cer: 0.1667
+      wer: 0.6667
+    '683':
+      text: Wa ma nyɛ na munyungu pe kake ngɛ biɛ munyukpɔfa mi.
+      hyp: Wa ma nyɛ na munyu ngu pe kake ngɛ biɛ munyu kpɔ fami.
+      cer: 0.0
+      wer: 0.4545
+    '685':
+      text: Nɔhyɛ ni komɛ ngɛ daka nɛ nyɛɛ se ɔ mi.
+      hyp: Nɔ ɔsɛɛ ni komɛ ngɛ daka nɛ nyɛɛ se ɔ mi.
+      cer: 0.1034
+      wer: 0.2
+    '690':
+      text: Kaleli nɛ ɔmɛ ji munyunguhi aloo munukpɔfahi nɛ tuɔ biɛ yi ɔ he munyu.
+      hyp: ne alɛlɔ ɔmɛ je munyu nguoe, aloo munu kpɔfa he, nɛ tue ɔ biɛ yeɔ he munyu.
+      cer: 0.2143
+      wer: 0.8571
+    '697':
+      text: Ngɛ kekle nɔhyɛ nɔ ɔ mi ɔ, se heninegbɔlɔ kalelɔ ɔ ji jamɛ a.
+      hyp: Ye kekle nɔ́ shɛ nɔ́ ɔ mi ɔ, se he ní ngbɔlɔ kalelɔ ɔ, o ji jamɛ a.
+      cer: 0.1739
+      wer: 0.5
+    '710':
+      text: Biɛ yi ma nyɛ hɛɛ hɛ kpɛ heninegbɔlɔ kalelɔ kɛ se heninegbɔlɔ kaleli.
+      hyp: Biei manyɛ hɛɛ hɛ kpɛ he ní gbɔlɔ kalelɔ kɛ sɛɛ he ní gbɔlɔ ka leli.
+      cer: 0.1786
+      wer: 1.0
+    '717':
+      text: Ngɛ nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma biɛ munyukpɔfa etɛɛtɛ.
+      hyp: Nyɛɛ nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma biɛ munyu kpɔfa etɛetɛ.
+      cer: 0.0698
+      wer: 0.3333
+    '720':
+      text: Peemimunyu munyukpɔfa ji munyukpɔfa nɛ dɛhe peemimunyu ɔ ji munyukpɔfa
+        a yi.
+      hyp: Pii minyu kpɔfa ji munyu kpɔfa nɛ dɛ he peemi nyu ɔ ji munyu kpɔfa a yi.
+      cer: 0.1719
+      wer: 0.9167
+    '735':
+      text: Ngɛ nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma peemimunyu munyukpɔfa etɛɛtɛ.
+      hyp: Ni ge nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma pee mumyu munyu kpɔfa etɛtɛ.
+      cer: 0.12
+      wer: 0.5833
+    '738':
+      text: E ji munyukpɔfa nɛ hɛɛ miblɛkelɔ kaa munyukpɔfa a yi.
+      hyp: E ji munyu kpɔfa nɛ hɛɛ mɛ blɛ kɛlɔ kaa munyu kpɔfa a yi.
+      cer: 0.0465
+      wer: 0.7
+    '748':
+      text: E ji munyukpɔ nɛ hɛɛ kalelɔ kaa munyukpɔfa a yi.
+      hyp: I ji munyu kpɔ nɛ hɛɛ kale lɔ kaa munyu kpɔfa a yi.
+      cer: 0.0263
+      wer: 0.7
+    '754':
+      text: Enɛ ɔ ji munyukpɔfa nɛ ngwɔhe biɛ peeɔ munyukpɔfa a yi.
+      hyp: Hɛnɛ o ji munyu kpɔfa nɛ ngɔ hɛ biɛ piɛɔ munyu kpɔfa a yi.
+      cer: 0.1591
+      wer: 0.8182
+    '761':
+      text: Munyukpɔfa yi ɔ ji munyungu oti ngɛ munyukpɔfa a mi.
+      hyp: Munyu kpɔfa yi ɔ ji munyu ngu oti. Ngɛ ngɛ munyu kpɔfa amɛ.
+      cer: 0.0952
+      wer: 0.8
+    '764':
+      text: A blaa munyukpɔfa slɔɔtohi kɛ peeɔ munyuza mi.
+      hyp: A blaa munyu kpa fa slɔɔ tóhi kɛ piɔ munyu zami.
+      cer: 0.1053
+      wer: 1.0
+    '765':
+      text: Ngɛ nɔhyɛ nɔ nɛ ɔ mi ɔ, biɛ munyukpɔfa a ji nɔ nɛ a diki mi ɔ nɛ.
+      hyp: E ngɛ nɔ́ shɛ nɔ́ nɛ ɔ mi ɔ, biɛ munyu kpɔfa a ji nɔ́ nɛ a dikimi ɔ nɛ.
+      cer: 0.0652
+      wer: 0.3889
+    '767':
+      text: Peemimunyu munyukpɔfa yi ɔ ji ho.
+      hyp: Pi munyu nyu pɔfɛii ɔ ji hɔɔ.
+      cer: 0.3704
+      wer: 0.8333
+    '771':
+      text: A kɛ jeɔ juɛmi kpo.
+      hyp: Kɛ kɛ jeo juɛmi kpɔɛ?
+      cer: 0.3571
+      wer: 0.6
+    '772':
+      text: A yeɔ kɛ buaa munyu tumi kɛ e ngmami.
+      hyp: A hyɛɔ kɛ bua munyu tumi kɛ e ngmami.
+      cer: 0.1071
+      wer: 0.2222
+    '773':
+      text: A kɛ jeɔ demihi nɛ sisi numi ngɛ a he ɔ kpo se sisi numi ɔ nya pi si.
+      hyp: E kɛ je ɔ demihi nɛ sisi numi ngɛɛ? A heɔ kpo, se sisi numi ɔ nya pii si.”
+      cer: 0.06
+      wer: 0.3684
+    '774':
+      text: A haa nɛ munyuza kpa ko mi tsɔɔ.
+      hyp: Lɛ ha nɛ munyu zakpa komɛ tɔɔ?
+      cer: 0.2083
+      wer: 0.875
+    '778':
+      text: Nyɛɛ po munyukpɔfa yihi nɛ nyɛ yɔse ɔmɛ a sisi.
+      hyp: E po munyu kpo fɔ yihi nɛ nyɛ, yɔ si ɔ mɛɛ a sisi.
+      cer: 0.2162
+      wer: 0.8
+    '785':
+      text: Wo kɔɔhiɔ nɛ ngɛ fiae blɛuu ɔ wo blɔ hiami ɔ mi buajɔ.
+      hyp: Wukɔ ɔ hiɔ nɛ ngɛ fiae bleu ɔ wo blɔ hiami ɔ mi bua jɔɔ.
+      cer: 0.0976
+      wer: 0.4615
+    '793':
+      text: Agbaikle wayoo ɔmɛ nɛ ngɛ tɛ ɔmɛ fiae blɛuu ɔ je gbeye ngɛ wa mi.
+      hyp: A gbaiklii wɔyo o mɛ nɛ ngɛ tɛ o mɛ fiae blao ɔ je gbeye ngɛ wami
+      cer: 0.16
+      wer: 0.6667
+    '801':
+      text: Nyɛ de nyɛ heto ɔ ngɔ ha nyɛ tsu mi bi ɔmɛ.
+      hyp: Hyɛ de nyɛ hito ɔ ngɔ ha nyɛ tsumi bi ɔmɛ.
+      cer: 0.0645
+      wer: 0.3333
+    '807':
+      text: Nyɛ de nyɛ heto ɔmɛ kɛ ha nyɛ tsu mi bi ɔmɛ.
+      hyp: Je de nyɛ hito ɔmɛ kɛ ha nyɛ tsu ní biɔ mɛ.
+      cer: 0.1875
+      wer: 0.4167
+    '808':
+      text: E hɛɛ peelɔ kɛ peemimunyu.
+      hyp: I hɛɛ piɛ lɔ kɛ pee mi munyu ɔ.
+      cer: 0.1905
+      wer: 1.4
+    '809':
+      text: Be komɛ ɔ, e hɛɛɔ peemi.
+      hyp: Be komɛ ɔ, e hɛɔ peemi.
+      cer: 0.0588
+      wer: 0.1667
+    '810':
+      text: Munyukpɔ he blɔ nɔ tomi ji kaa e hi animosa glɛ nɔ.
+      hyp: Mi kpɔ he blɔ nɔ́ tomi ji kaa e hi animosa glɛ nɔ.
+      cer: 0.1026
+      wer: 0.1667
+    '812':
+      text: Daale tsi kokote ku loko e je kɛ ho sukuu ya.
+      hyp: Dali tsi kokote ku loko e je kɛ hu su ku hyɛ.
+      cer: 0.1471
+      wer: 0.4545
+    '813':
+      text: Kɔɔyo ho jua mi ya.
+      hyp: “Nɛ ɔ yo ho jua mi ya!”
+      cer: 0.1429
+      wer: 0.6
+    '815':
+      text: Munyukpɔ slɔɔto enyɔ nɛ ngɛ.
+      hyp: Nyukpɔ slɔɔ to e nyɔ nɛ ngɛ.
+      cer: 0.087
+      wer: 1.0
+    '816':
+      text: Mɛ ji dɛhe munyukpɔ kɛ akplahe munyukpɔ.
+      hyp: Mɛ ji dɛ he munyu kpɔ kɛ a kpla he munyu kpɔ.
+      cer: 0.0
+      wer: 1.2857
+    '819':
+      text: Tɛɛ ma nyɛ yɛ nyu ɔ daa ligbi lo?
+      hyp: Tɛɛ ma nyɛɛ ye nyu o daa ligbi lo?
+      cer: 0.125
+      wer: 0.3333
+    '821':
+      text: Munyuza amɛ daa si ngɛ a dɛhe nɛ a je sisi numi nɛ nya ma si kpo.
+      hyp: Munyu za amɛ daa si ngɛ a dɛ he nɛ a je sisi numi nɛ nya ma si kpɔ.
+      cer: 0.0208
+      wer: 0.2941
+    '825':
+      text: Nyɛɛ ya itanɛti aloo kpa a nɔ nɛ nyɛ ya hla dɛhe munyukpɔ mi gbami eywiɛ
+        ɔmɛ.
+      hyp: Jee ya i tane ti aloo kpaa a nɔ́ nɛ nyɛ ya yala dɛ he munyu kpɔmi gbami
+        e yiɛ ɔmɛ.”
+      cer: 0.15
+      wer: 0.7059
+    '827':
+      text: Dɛhe munyukpɔ mi gbami eywiɛ nɛ ngɛ.
+      hyp: dɛ nɛ munyu kpɔmi gbami eywiɛ nɛ ngɛ.
+      cer: 0.069
+      wer: 0.5714
+    '828':
+      text: Mɛ ji demi, fami, bimi kɛ ngmlaa.
+      hyp: Mɛ ji demi? Flaami be mi kɛ ngmlaa a!
+      cer: 0.1667
+      wer: 0.5714
+    '831':
+      text: E ye ni hiɛ gbɔkuɛ.
+      hyp: I ye nihiɛ gbɔkuɛ.
+      cer: 0.0714
+      wer: 0.6
+    '835':
+      text: O ma nyɛ ha nɔhyɛ nɔ ngɛ bimi munyukpɔ nɔ lo?
+      hyp: O mahiɛ ha nɔ́ sɛ nɔ́ ngɛ bimi munyu kpɔ nɔ́ lo?”
+      cer: 0.1176
+      wer: 0.5455
+    '837':
+      text: Mɛnɔ sika ji nɛ ɔ?
+      hyp: Mɛnɔ sika ji nɛ?
+      cer: 0.0769
+      wer: 0.2
+    '842':
+      text: Akplahe munyukpɔ woɔ tsali konɛ a kɛ tsa dɛhe munyukpɔ ɔ.
+      hyp: A klaa he munyu kpɔ woɔ tsali ko nɛ. A kɛ tsa dɛ he munyu kpɔ ɔ.
+      cer: 0.0435
+      wer: 1.0
+    '845':
+      text: Benɛ Kofi su lejɛ ɔ, a ho ngmɔ ɔ mi ya momo.
+      hyp: Benɛ ko fi su lɛ jɛ ɔ, a hu ngmɔɔ ɔ mi ya momo.
+      cer: 0.0968
+      wer: 0.5
+    '849':
+      text: Wa ngɛ akplahe munyukpɔ slɔɔtohi etɛ.
+      hyp: Mwɔɛ ngɛ akplahe munyu kpɛ ɔ slɔɔtohi itɛ.
+      cer: 0.1613
+      wer: 0.8333
+    '857':
+      text: Biɛ akplahe munyukpɔ nɔhyɛ ni nɛ nyɛɛ se ɔ nɛ.
+      hyp: Bia akplahu munyu kpɔ nɔ shɛ niinɛ, nyɛɛ se ɔ nɛ.”
+      cer: 0.1389
+      wer: 0.7
+    '858':
+      text: Jokuɛ ɔ nɛ ye ngwɔ ngɛ ka a mi ɔ na yi jemi womi.
+      hyp: Jokuɛ ɔ nɛ ye nguɔ ngɛ kaa a mi ɔ nɛ yi je mi wó mi.
+      cer: 0.1143
+      wer: 0.5
+    '859':
+      text: Wa na tokota wayoo nɛ laa a.
+      hyp: Wa na tokota wɛ yo nɛ la a.
+      cer: 0.1429
+      wer: 0.4286
+    '864':
+      text: E tsuɔ ni kaa kalelɔ.
+      hyp: I tsɛɔ ní kaa kalelɔ.
+      cer: 0.1875
+      wer: 0.6
+    '868':
+      text: Yɔse kaa munyungu ɔmɛ nɛ a po a sisi ɔ ji kalelɔ akplahe munyukpɔ ɔ nɛ.
+      hyp: Yo se kaa munyu ngu ɔmɛ nɛ a po a sisi o ji kalelɔ a kpla he munyu kpɔ
+        ɔ nɛ.
+      cer: 0.0364
+      wer: 0.625
+    '872':
+      text: Munyukpɔhi nɛ a po a sisi ɔmɛ tsuo peeɔ miblɛkelɔ akplahe munyukpɔhi.
+      hyp: munyu kpɔ he nɛ a po. A sisi ɔmɛ tsuo piɛ ɔ mi blɛkelɔ ɔ, a kpala he munyu
+        kpɔ he.
+      cer: 0.1053
+      wer: 1.1667
+    '902':
+      text: A kɛ gbeɔ munyuza nya kɛ tsɔɔ kaa munyuza a ba nyagbe.
+      hyp: E kɛ gbi ɔ munyu za nya kɛ tsɔɔ ka a, munyu za a ba nyagbe.
+      cer: 0.0476
+      wer: 0.75
+    '904':
+      text: A kɛ gbaa munyuzahi a mi ngɛ demiyo aloo saneyo ko mi.
+      hyp: E kɛ gba a munyu zahe, amɛ ngɛ Demio aloo sane yo ko mi.
+      cer: 0.0952
+      wer: 0.75
+    '909':
+      text: A ma ha tsɔɔli ɔmɛ hulɔ.
+      hyp: kɛ ma ha tsɔli ɔmɛ hulɔ.
+      cer: 0.1667
+      wer: 0.3333
+    '910':
+      text: Sukuu nɔ hyɛlɔ ɔ hu ma na eko.
+      hyp: Suku nɔ́ shɛlɔ ɔ hu ma na ekohɛ.
+      cer: 0.2273
+      wer: 0.375
+    '912':
+      text: A kɛ gbeɔ ayaade adeta munyuhi a nya.
+      hyp: Lɛ kɛ gbiɔ a ya de adeta munyu he a nya.
+      cer: 0.1724
+      wer: 0.875
+    '916':
+      text: A ngɔɔ akɔnya kɛ gbaa nihi nɛ a to a nya ngɛ munyuza mi ɔmɛ a mi.
+      hyp: Nɔuu wɔɔ akpanya kɛ gba ní nɛ ató a nya, mɛɛ ngɛ munyu zami ɔmɛ a mi.
+      cer: 0.3125
+      wer: 0.5882
+    '919':
+      text: A ke wɔ womihi, sɛhi, okplɔɔhi, ningmatsohi kɛ tsopahi.
+      hyp: E ke wɔ womihi, sɛhi, okplɔɔhi, ningma tsohi kɛ tsuo pahi
+      cer: 0.0465
+      wer: 0.5556
+    '920':
+      text: Ni yemi, mahɛ hwɔmi kɛ nɔ he munyu tumi pɛ a le.
+      hyp: Yemi! Maa hɛ hwɔmi kɛ nɔ he munyu tumi pɛ a lɛ.
+      cer: 0.1143
+      wer: 0.3333
+    '921':
+      text: Ke nyɛ sume ɔ, wa maa kpale kɛ ho.
+      hyp: Ke nyɛ su mɔɔ, wɔ ma kpalɛ kɛ ho.”
+      cer: 0.1667
+      wer: 0.5556
+    '922':
+      text: A kɛ gbaa adlɛɛsi mi.
+      hyp: e kɛ gbaa lɛɛ si mi.
+      cer: 0.1875
+      wer: 0.6
+    '924':
+      text: A tsuɔ kaa he ni ke a yaa to nihi a nya kɛ tsɔɔ nɔ ko nɛ a de kɛ sɛ hlami.
+      hyp: I tso ɔ kaa he nike a ya tó níhi a nya kɛ tsɔɔ nɔ ko nɛ a de kɛ sɛ hlɛ
+        mi.
+      cer: 0.1154
+      wer: 0.4545
+    '929':
+      text: A kɛ blaa dɛhe munyukpɔ nɛ hɛɛ juɛmi kake.
+      hyp: Kɛ kɛ bla a dehi munyu kpɔ nɛ hɛɛ juɛmi kake.
+      cer: 0.1212
+      wer: 0.6667
+    '930':
+      text: Ni komɛ tɛni ni; ni komɛ hu ngma ni.
+      hyp: Ni komɛ tɛ ní ni, ni komɛ hu ngma ní.
+      cer: 0.0769
+      wer: 0.3333
+    '931':
+      text: I ya Ablotsi; Kɔɔtemɛ ya Naijilia; Amatemɛ ya Akplabanya.
+      hyp: A ya ablɔti. Kɔtmi ya Nejilia. Amɛnɛmɛ ya a kplaba nya.
+      cer: 0.2391
+      wer: 0.8889
+  source: evaluated
+- model: ghananlpcommunity/ghana-tts-72k
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  cer: 0.4622
+  wer: 0.6673
+  score: 0.4622
+  samples: 200
+  valid: 200
+  avg_seconds: 2.29
+  judge:
+    model: KhayaAI/khaya-asr-v3
+    cer_on_real_speech: 0.083
+  entries:
+    '13':
+      text: Pɛlɔku pɛmingu ji pɛlɔku nɛ tsuɔ ni kaa pɛmingu (Enɛ ɔ eko be Dangme mi).
+      hyp: pe loku pe mi ngo ji pe loku nɛ tsɔɔ ni kaa pe mi ngo. E nɛ ɔ e ko be da
+        ngmɛ mi.”
+      cer: 0.1786
+      wer: 1.1333
+    '20':
+      text: Pɛlɔ pɛ hu ma nyɛ da si kaa pɛmingu.
+      hyp: Pɛlɔpe hu ma nyɛnda a sika a pɛmi gu.”
+      cer: 0.1481
+      wer: 0.8889
+    '33':
+      text: Pɛlɔ pɛ ma nyɛ da si kaa pɛmingu nɛ pɛlɔku kɛ pɛlɔ ma nyɛ da si kaa pɛmingu.
+      hyp: Pɛlɔ pɛɛ manyɛ, da sika a pɛmi mo, nɛ pɛlɔ ko kɛ pɛlɔ manyɛ, da sika a
+        pɛmi mo.
+      cer: 0.1379
+      wer: 0.8333
+    '44':
+      text: E yeɔ buaa ni kaseli nɛ a nyɛɔ peeɔ munyunguhi nɛ da ngɛ a dɛhe.
+      hyp: Libateria nɛ a di kaseli nɛ a nyɛɛ ɔ pee ɔ mo yungo he, nɛ da ngɛ a dɛe.
+      cer: 0.3469
+      wer: 0.8
+    '45':
+      text: E yeɔ buaa ni kaseli nɛ a leɔ gbi ɔ si fɔfɔɛ kɛ e lomi bɔ.
+      hyp: I yeɔ buaa ni kaseli nɛ a leɔ gbi ɔ si fɔfɔɛkɛ. E lo mi bɔ.
+      cer: 0.0238
+      wer: 0.3125
+    '46':
+      text: E yeɔ buaa ni kaseli nɛ a nuɔ munyunguhi a sisi.
+      hyp: I hiɔ buá ní, kaseli nɛ a nuɔ munyunguhi a sisi.”
+      cer: 0.1622
+      wer: 0.3636
+    '50':
+      text: Ngɛ nɔhyɛ munyungu nɛ ɔmɛ a tsɛmi mi ɔ, pɛminguhi jeɔ a he kpo.
+      hyp: Nɔ ɔ si munyu ngu nɛ ɔmɛ a tsɛ mi mi ɔ, pɛ ngɔ nguhi je ɔ a he kpo.
+      cer: 0.1875
+      wer: 0.8571
+    '58':
+      text: Ngɛ nɔhyɛ ni nɛ wa ha amɛ a mi ɔ, o ma yo kaa pɛmingu ɔmɛ hɛɛ pɛlɔkuhi
+        ngɛ a nyagbe.
+      hyp: Nɔ sɛ ní nɛ wa ha amɛ a mi ɔ, o maa yoka a pɛmɛ ngu ɔmɛ hɛɛ pɛlɔkuahi ngɛ
+        a nyagbe.
+      cer: 0.1452
+      wer: 0.4286
+    '60':
+      text: Ngɔɔ mo nitsɛ o munyuhi kɛ kale nɔ nɛ pɛmingu ji.
+      hyp: Ngɔmu mitsɛ o munyuhi kɛ kali nɔ́ nɛ pɛ mi gu ji.
+      cer: 0.1316
+      wer: 0.6364
+    '61':
+      text: Moo tsɔɔ pɛmingu slɔɔtohi nɛ ngɛ Dangme mi.
+      hyp: Mo tsɔ pɛɛ mgu slɔɔ to he nɛ ngɛ dã gbi mi.
+      cer: 0.2857
+      wer: 1.125
+    '62':
+      text: Moo tsɔɔ pɛmingu si fɔfɔɛ he se nami ngɛ munyungu peemi mi.
+      hyp: Moo tsɔ pɛmgu si fɔfɔɛ, he se nami ngɛ munyu ngu peemimi.
+      cer: 0.0638
+      wer: 0.4167
+    '79':
+      text: Moo sɛsɛ pɛmingu si fɔfɔɛ ngɛ Dangme mi ɔ he.
+      hyp: Mo sɛse pɛmi gu si fɔfɔɛ ngɛ da ngmɛ mi ɔ he.
+      cer: 0.1143
+      wer: 0.6
+    '85':
+      text: Tukpɛtukpɛ kɛ Tatu ji huɛmɛ.
+      hyp: ''
+      cer: 1.0
+      wer: 1.0
+      empty_hyp: true
+    '91':
+      text: Tatu sɛɔ e tsu nɛ e bua niye ni nya wo mi ɔ mi nɛ e kɛ e bimɛ yeɔ bɔɔbɔɔbɔɔ.
+      hyp: Tɔti si ɔ, e tsui, nɛ e buɛ niye ní. Nyawumi ɔ mi nɛ e kɛ e bimɛ yeɔ bɔbɔɔbɔ.
+      cer: 0.1636
+      wer: 0.4762
+    '107':
+      text: Gana gbihi tsuo tsuɔ gbimikɔmi he ni.
+      hyp: Gana gbi hi tsuo, sɛɔ, gbiimi kɔmi he ní.
+      cer: 0.1333
+      wer: 0.8571
+    '117':
+      text: Dangme, Dagbaani kɛ gbi kpa komɛ lɛɛ a ngɛ sisi, kpɛti kɛ hiɔwe gbimikɔmi.
+      hyp: Dangmɛ! Dagbaa ni kɛ gbi kpa komɛ lɛɛ a ngɛ sisi. Kpɛti kɛ hiɔ we gbi mi
+        kɔmi.
+      cer: 0.0172
+      wer: 0.5714
+    '118':
+      text: Kane munyuza nɛ nyɛɛ se nɛ ɔmɛ nɛ e maa ye bua mo kɛ ha sisi numi.
+      hyp: kane munyu za nɛ nyɛɛ se nɛ ɔmɛ, nɛ e ma a ye bua mɔkɛɛ ha sisi numi.
+      cer: 0.0408
+      wer: 0.3529
+    '119':
+      text: Moo tsɔɔ gbimikɔmi nɛ munyungu ‘ma’ hɛɛ ngɛ munyuza etɛ ɔmɛ a mi.
+      hyp: Mo tsɔɔ gbimi kɔmi nɛ munyu ngu. Ma hɛɛ ngɛ munyu za e tɛ ɔmɛ a mi.”
+      cer: 0.02
+      wer: 0.6923
+    '130':
+      text: Enɛ ɔ tsɔɔ fami kɛ amlɔbe ngɛ animosa glɛ nɔ.
+      hyp: Enɛ ɔ tsɔ fa mi kɛɛ amlɔ be ngɛ e nimosa glɛ nɔ.
+      cer: 0.0857
+      wer: 0.8
+    '132':
+      text: Enɛ ɔ jeɔ benɛbe juɛmi kpo ngɛ animosa glɛ nɔ.
+      hyp: Enɛ ɔ je ɔ be nɛ be je ngɛ mo kpo ngɛ anɛ Mosa glɛ nɔ.
+      cer: 0.1389
+      wer: 1.0
+    '134':
+      text: Ngɔɔ mo nitsɛ o munyuhi kɛ kale nɔ nɛ gbimikɔmi ji.
+      hyp: Ngmɔɔ mɔnitsɛ o munyuhi kɛ kale nɔ́ nɛ gbi mi kɔmi ji.
+      cer: 0.05
+      wer: 0.5455
+    '136':
+      text: Ngɔɔ nɔhyɛ ni nɛ da kɛ tsɔɔ Dangme gbimikɔmi ɔ nya.
+      hyp: Ngɔ Dante Antal. “Hiam be sumuɔ sɛ pa lɛ kpa a kpe tsɛ tindam a sumu si
+        ma na o kaa ngɛ litsɛ na. Sama o wo ma tsɛ tsɛ a tsa a pa lɛ kaokɔtɛ na kpamam.
+        Yɛ tsu kɔ nya o hiam bɛ tsɛ kakpam a tsa a pa mɛ pɔmɛ pɔmɛ pɔmɛ. Kɛ nɛ o wɛ
+        nyɛ!
+      cer: 3.55
+      wer: 5.3636
+    '137':
+      text: Ngɛ kuuhi a mi ɔ, nyɛɛ sɛsɛ gbimikɔmi ni tsumi he.
+      hyp: Nyɛɛ kuu hyi a mi ɔ, nyɛɛ sɛsɛ gbe mɛ kɔmi ní tsumi he.
+      cer: 0.1579
+      wer: 0.6364
+    '141':
+      text: Nyɛɛ nuu nyɛ he enyɔɔnyɔ nɛ nyɛɛ bu munyungu nɛ ɔmɛ tue.
+      hyp: Nyɛɛ nu nyɛ he nyɛ ɔ nyɔ nɛ nyɛ bo munyu ngu nɛ ɔmɛ tue.
+      cer: 0.1136
+      wer: 0.6667
+    '145':
+      text: De o heto ɔ ngɔ ha nyɛ tsu mi bi ɔmɛ.
+      hyp: de o heto ɔ ngɔ ha nyɛ tsu mi bi ɔmɛ.
+      cer: 0.0
+      wer: 0.0
+    '146':
+      text: Moo ngma pɛmingu slɔɔtohi ngɛ Dangme mi nɛ o ha nɔhyɛ ni etɛɛtɛ.
+      hyp: Mohu ngma, pɛmi gu slɔɔtohi ngɛ da ngmɛ mi, nɛ o ha nɔ́ sɛ ní etɛ.
+      cer: 0.1961
+      wer: 0.6923
+    '150':
+      text: Moo ngɔ nɔhyɛ ni etɛ kɛ tsɔɔ gbimikɔmi ni tsumi ngɛ Dangme mi ɔ nya.
+      hyp: Mohu ngɔ nɔ́ se ní etɛ kɛ tsɔ ɔ gbemi kɔmi ní, tsumi ngɛ da ngmɛmi ɔ nyapaa.
+      cer: 0.2264
+      wer: 0.8
+    '153':
+      text: Oti pɔtɛɛ ngɛ demiyo ko mi ɔ ji nɔ he nɛ demiyo ɔ kɔɔ.
+      hyp: Sputi pɔtɛɛ i ngɛ Demio komɛ o ji nɔ he nɛ Demio ɔ kɔɔ.
+      cer: 0.2
+      wer: 0.5
+    '166':
+      text: A deɔ nihi babauu kɛ kɔɔ munyutso oti ɔ he.
+      hyp: deɔ níhi babauu kɛ kɔɔ munyu tso oti ɔ he.
+      cer: 0.0606
+      wer: 0.4
+    '186':
+      text: E sa nɛ o hla munyungu oti ɔmɛ.
+      hyp: Isa nɔuu Halamu nyu nggo ɔti ɔmɛ.
+      cer: 0.3043
+      wer: 0.875
+    '191':
+      text: O ma nyɛ maa to tsui si kɛ kane demiyo ɔ mi ekohu nɛ o nu sisi saminya.
+      hyp: O ma hyɛ maa tu tsisi kɛ kane demi yo ɔ mi e ko hu, nɛ o nu sisi saminya.
+      cer: 0.0566
+      wer: 0.5
+    '212':
+      text: Ngɔɔ ni kanemi vii he nile nɛ o na a kɛ kane demiyo nɛ nyɛɛ se nɛ ɔ.
+      hyp: Ngɔɔ ní kanemivi, he nile, nɛ o na a kɛ kane demi ɔ nɛ nyɛɛ se nɛ ɔ.
+      cer: 0.08
+      wer: 0.2778
+    '213':
+      text: Jije oslɔɔke ngua nɛ ɔ je?
+      hyp: Ki je osɔ kɛ umguaa nɛ ɔ je nɛ.
+      cer: 0.45
+      wer: 1.0
+    '214':
+      text: Mɛnɔ nɛ ha e ku pue kpo kikɛ nɛ ɔ?
+      hyp: Mɛnɔ nɛ ha i ku pue kpokikɛ nɛ ɔ?
+      cer: 0.0417
+      wer: 0.3
+    '215':
+      text: Obo we tso ngua a ku.
+      hyp: “Lɔbo wui tso ngguaa ku.
+      cer: 0.3333
+      wer: 0.6667
+    '224':
+      text: Benɛ Yaa Kɔɔyo je jua kɛ ma a, ambulansi ko ba be e he kɛ fo.
+      hyp: Benɛ yaa poyo je nyuaa kɛ ma a, amulansi kó ba pee i he kɛ fɔ.”
+      cer: 0.25
+      wer: 0.4375
+    '229':
+      text: E nɔ jena a, a pue nɔ kɛ ya mɔtsle ɔ ekohu ya to e dlami he blɔ nya.
+      hyp: I nɔ jena a, a pue nɔ́ kɛ e paa. Ya wɔ se lɛ ɔ, e ko hu ya to e dami he
+        blɔ nya.”
+      cer: 0.2083
+      wer: 0.5263
+    '232':
+      text: Ma a tsuo wo yana.
+      hyp: “Maa a tsuo wo ya nɛ a.
+      cer: 0.1538
+      wer: 0.8
+    '240':
+      text: Munyu nɛ ɔ he wa ha Mangoasetsɛmɛ se e he nɔ ko be nɛ a ma nyɛ pee.
+      hyp: Maiyo nɛ ɔ he wa ha, mango a sɛ tɛ mɛ se he nɔ ko be nɛ. A maa nyɛ pee
+      cer: 0.1429
+      wer: 0.4444
+    '246':
+      text: Okpɔtɛsa gbenɔ nɛ ɔ ye ma a tsuo awi.
+      hyp: O kpɛtɛ sa gbenɔ nɛ ɔ yi ma a tsuo eywi.”
+      cer: 0.1429
+      wer: 0.5556
+    '248':
+      text: Okpɔtɛsa ni tsumi kpakpa nyɛɛ e se niinɛ.
+      hyp: Ba fɔtɛ sa ni tsumi kpakpa nyɛɛɛ e se nihi nɛ.
+      cer: 0.1515
+      wer: 0.75
+    '249':
+      text: Mo yo munyutso oti ngɛ demiyo ɔ mi.
+      hyp: Mɔyo munyu tso oti ngɛ dɛmiyo ɔ miɛ!”
+      cer: 0.1111
+      wer: 0.625
+    '250':
+      text: Sɛsɛ munyutso oti ɔ he.
+      hyp: Sɛse munyu tso oti ɔ he.
+      cer: 0.0556
+      wer: 0.6
+    '252':
+      text: Moo kane demiyo nɛ nyɛɛ se nɛ ɔ.
+      hyp: Mwɔɔ kaneɛ dɛmi ɔ ho, nɛ nyɛɛɛ se nɛ ɔ.
+      cer: 0.3333
+      wer: 0.75
+    '253':
+      text: Mo yo munyutso oti ngɛ demiyo ɔ mi nɛ o ngma.
+      hyp: Moyo munyu tso oti ngɛ dimio o mi nɛ o ngma.
+      cer: 0.0882
+      wer: 0.4545
+    '268':
+      text: Ye huɛmɛ a ngɔ nɛ i naa buajɔ bɔɔ ngɛ ke i ya sukuu.
+      hyp: Ye huɛmɛ a ngɔ nɛ i na bua jɔbɔ ɔ ngɛ ke i ya su ku.
+      cer: 0.0526
+      wer: 0.4286
+    '278':
+      text: Sukuu ɔ, a wo mi kaa sukuubi ɔmɛ tsuo a nya dalɔ nɛ a deɔ ke sukuu plifɛti
+        ɔ.
+      hyp: Suhu ɔ, a wumi kaa su ku bi ɔmɛ tsuo a nya dalɔ, nɛ a deɔ ke su ku pli
+        fɛti ɔ.
+      cer: 0.0877
+      wer: 0.5263
+    '283':
+      text: Nyɛɛ kɛ nyɛ tsu mi bi ɔmɛ nɛ sɛsɛ nyɛ munyutso oti ɔ he.
+      hyp: Nyɛɛ kɛ nyɛ tsu mibi ɔmɛ nɛ sɛsɛ nyɛ munyu tso oti ɔ he.
+      cer: 0.0
+      wer: 0.2857
+    '286':
+      text: Pi mlaa nɔ yemi pɛ ji tue bumi.
+      hyp: Be mlaa nɔ yemi pɛɛ ji tsue bumi.
+      cer: 0.1739
+      wer: 0.375
+    '288':
+      text: Ke o bu o fɔli tue ɔ, o ngɛ tsɔe kaa o ngɛ hɛ kɛ nɔ fɔmi ngɛ a tsɔsemi
+        kɛ a blɔ tsɔɔmi mi.
+      hyp: Noo bu o fɔli tue ɔ! O ngɛ tsɔe ka a, o ngɛ hɛ kɛ nɔ́ fɔmi, nga a tsɔsemi
+        kɛ ablɔ tsɔmi mi.
+      cer: 0.0625
+      wer: 0.32
+    '303':
+      text: Nyɛɛ nuu nyɛ he enyɔɔnyɔ nɛ nyɛɛ ngma ni sɛɛmi kaa nɔ nɛ wa na nɛ ɔ.
+      hyp: Nyɛɛ nɔuu nyɛ he e nyɔ nyɔ nɛ nyɛɛ ngma ní, sɛmi kaa a nɔ nɛ waa na nɛ
+        ɔ.
+      cer: 0.1176
+      wer: 0.4706
+    '309':
+      text: Nyɛɛ kane demiyo nɛ nyɛɛ se nɛ ɔ nɛ nyɛ ha sane bimihi nɛ nyɛɛ se ɔmɛ
+        a heto.
+      hyp: Yɛɛ kane dɛmi ɔ nɛ nyɛɛ si nɛ ɔ nɛ nyɛ ha sã ni bimihi nɛ nyɛɛ si ɔmɛ a
+        heto.
+      cer: 0.1379
+      wer: 0.3684
+    '315':
+      text: Sukuu nɔ hyɛlɔ ji nɔ yemi nɔhyɛ nɔ ngɛ sukuu ɔ.
+      hyp: Suku nɔ́ shɛlɔ ji nɔ yemi nɔ shɛ nɛ ɔ ngɛ suku ɔ.
+      cer: 0.1944
+      wer: 0.6364
+    '328':
+      text: E sa nɛ e pee nihi nɛ maa ku nɔ buimi nya pɛsɛpɛsɛ.
+      hyp: I sa nɛ e pee nihi nɛ. Ma a kunɔ bui mi, nya pɛsɛpɛsɛ.”
+      cer: 0.0263
+      wer: 0.4615
+    '335':
+      text: Ni kanemi kɛ mi kuɔmi he su komɛ nɛ nyɛɛ se nɛ ɔ nɛ.
+      hyp: Nɛɛ kane mi kɛ, mi ko ɔ mi he su komɛ nɛ nyɛɛ se nɛ wɔ nɛ.
+      cer: 0.1053
+      wer: 0.5
+    '338':
+      text: A kɛ kaleɔ nɔ lemi kanemi.
+      hyp: Kɛkɛ kali ɔ nɔlemi kane mi.
+      cer: 0.15
+      wer: 1.0
+    '354':
+      text: Falefale peemi ji nɔmlɔ adesa he wami nami sisi poku.
+      hyp: Fɛlifɛli peemi ji nɔmlɔ adesa he wɔmi nami sisi poku.
+      cer: 0.1163
+      wer: 0.2
+    '364':
+      text: Mo kai ni kanemi kɛ mi kuɔmi he su nɛ wa kase kɛ be ɔ.
+      hyp: Muhu kai i ní kane mi! E je ní womi i su nɛ wa kɛ si Kebro!”
+      cer: 0.4872
+      wer: 0.8
+    '368':
+      text: Jehanɛ ɔ, tsɔɔ bɔ nɛ o susu kaa a ma nyɛ ma blɛke demiyo nɛ ɔ mi ha.
+      hyp: Jehanɛ ɔ, tsu ɔ bɔ nɛ o susu kaa a ma nyɛ ma blɛ ki dɛ mio nɛ ɔ mi ha.
+      cer: 0.0816
+      wer: 0.3333
+    '370':
+      text: Moo hyɛ vidio nɛ ɔ nɛ o kɛ na bɔ nɛ ni kanemi vii kɛ ni kanemi kɛ mi kuɔmi
+        ngɛ ha.
+      hyp: Mohu shɛ video nɛ ɔ nɛ ɔ kɛɛ na bɔ nɛ ní kanemi vi nɛ kanemi kɛ mi kuɔmi
+        ngɛ hae.
+      cer: 0.2167
+      wer: 0.4545
+    '371':
+      text: Yo a he blɔ nɔ tomi kɛ a he se nami kɛ ha sisi numi nɛ mi kuɔ nami.
+      hyp: Yo a he blɔ nɔ tomi, kɛ a he sɛ nami kɛ ha sisi numi nɛ mi kuɔ nami.
+      cer: 0.0208
+      wer: 0.0526
+    '376':
+      text: Munyutso oti yomi ngɛ demiyo ko mi.
+      hyp: Muhu tsu oti! Yomi ngɛ dɛ mi yo komɛ!”
+      cer: 0.1786
+      wer: 0.8571
+    '377':
+      text: Ngɔɔ mo nitsɛ o munyunguhi kɛ tsɔɔ munyutso oti sisi.
+      hyp: Ngɔɔ mɔnitsɛ o munyu guhi kɛ tsɔɔ munyu tso o ti sisi.
+      cer: 0.0465
+      wer: 0.8
+    '378':
+      text: Moo kane demiyo nɛ nyɛɛ se nɛ ɔ nɛ o ha sane bimi ɔmɛ a heto.
+      hyp: Mwɔ kane dɛ mio nɛ nyɛɛ se nɛ ɔ nɛ o ha sane bimihi ɔmɛ a heto.”
+      cer: 0.1333
+      wer: 0.25
+    '381':
+      text: Bu ji adesahi a bɔmi sisi kla aloo sisi poku.
+      hyp: A bu ji adesa e ya bɔmi, sisi klaa, aloo sisi poku.
+      cer: 0.1143
+      wer: 0.5
+    '382':
+      text: Ngɛ si himi mi jio, ni tsumi he jio ɔ, bu he hia wawɛɛ nitsɛ.
+      hyp: Dɛsi himi mi jio, ní tsumi he jio ɔ, bu he hia wawɛɛ nitsɛ!
+      cer: 0.0682
+      wer: 0.2
+    '385':
+      text: Ngɔɔ lɛ kaa o sɛ sukuu tsu ko mi nɛ nɔ fɛɛ nɔ ngaa e sibi kɛ bu kɛ he
+        numi.
+      hyp: Ngmɔ nɛ kaa o, sɛ sukuu tsukumi nɛ nɔ́ fiɛ nɔ́ ngaa e sibi kɛ bo kɛ he
+        numi.
+      cer: 0.0926
+      wer: 0.3333
+    '396':
+      text: Mɛni ji demiyo ɔ munyutso oti ɔ?
+      hyp: Mɛni ji Demio ɔ munyu tso ɔ ti ɔ?”
+      cer: 0.08
+      wer: 0.7143
+    '397':
+      text: Mo yo munyuza otihi ngɛ kekle kuku kɛ kuku eywiɛne ɔmɛ mi nɛ o ngma.
+      hyp: Mwɔyo munyu za otihi ngɛ kekle kuku kɛ kuku. E ywiɛne ɔmɛ mɛnɛ o ngma?”
+      cer: 0.0566
+      wer: 0.4667
+    '398':
+      text: Moo do demiyo ɔ nɔ kɛ munyuza eywiɛ pɛ.
+      hyp: Muɔdo dɛ mio ɔ nɔ́ kɛ munyu sa eywiɛ pɛɛ.
+      cer: 0.2
+      wer: 0.6667
+    '399':
+      text: Moo ngma ni kanemi vii he su enyɔ nɛ nyɛ kase ngɛ mi gbami nɛ ɔ mi ɔ.
+      hyp: Mohu ngma nika nimivii, e su enyɔ nɛ nyɛ kase ngɛ mi gbami nɛ o mi ɔ.
+      cer: 0.098
+      wer: 0.3333
+    '400':
+      text: Moo tsɔɔ su enyɔ nɛ o ngma amɛ a sisi kɛ mo nitsɛ o munyunguhi.
+      hyp: Mo tsɔ su enyɔ nɛ o ngma amɛ! A sisi kɛ mohu nitsɛ o munyu ngguhi.”
+      cer: 0.1042
+      wer: 0.3333
+    '403':
+      text: Moo tsɔɔ ni kanemi kɛ mi kuɔmi he su etɛ sisi.
+      hyp: Moo tsɔ ni kanemi kɛɛ, ‘Mikuɔmi Yesu e tɛ sisi.’
+      cer: 0.0857
+      wer: 0.6364
+    '410':
+      text: He kplali slɔɔto enyɔ nɛ ngɛ Dangme mi.
+      hyp: Higplali slɔɔtu e nyɔ nɛ ngɛ dangli mi.
+      cer: 0.1613
+      wer: 0.625
+    '416':
+      text: He kplali a he ni tsumi ngɛ gbi ko mi ɔ haa nɛ a naa munyungu ehehi.
+      hyp: He kplali a he nɛ sumi ngɛ gbi kumi ɔ haa nɛ a naa munyu ngu e he he.
+      cer: 0.0784
+      wer: 0.5294
+    '424':
+      text: He kplali pɔtɛɛ nɛ ngɛ ji hɛ kpɛ he kplali kɛ se he kplali.
+      hyp: Hi kplali, po tɛɛ nɛ ngɛ ji hɛ kpɛ, hi kplali ke, si hi kplali.
+      cer: 0.1333
+      wer: 0.5
+    '430':
+      text: He kplalɔ peeɔ se he kplalɔ ke a ngɔ kɛ piɛɛ munyungu ɔ he ngɛ e se.
+      hyp: Hi kplɛlɔ ɔ peeɔ se. Hi kplɛlɔ ɔ ke, ‘A ngɔ kɛ piɛ munyu ngo ɔ hi ngɛ e
+        se.’
+      cer: 0.1765
+      wer: 0.5882
+    '432':
+      text: He kplalɔ peeɔ kpɛti kplalɔ ke a ngɔ kɛ piɛɛ munyungu ɔ he ngɛ kpɛti.
+      hyp: I kpɛti kpɛlɔ kɛ ngɛ ní ɔ womi a, a ngɔ kɛ piɛ munyungu ɔ he ngɛ kpɛti.
+      cer: 0.3889
+      wer: 0.6667
+    '435':
+      text: He kplalɔ peeɔ hɛ kpɛ he kplalɔ ke a ngɔ kɛ piɛɛ munyungu ɔ he ngɛ e hɛ
+        kpɛ.
+      hyp: He kplalɔ ɔ peeɔ hɛ kpɛ, he kplalɔ ɔ ke a ngɔ kɛ piɛ munyu gu ɔ he ngɛ
+        e hɛ kpɛ.
+      cer: 0.0702
+      wer: 0.2632
+    '437':
+      text: He kplali nɛ kplaa munyungu kake e se kɛ hɛ kpɛ ngɛ be kake mi.
+      hyp: I kpɛli nihi tsɛmɛ kisikpɛ nɛ ti. Lejɛ fɔu ko to ngɔ a yete sa kɛ hɛ tsɛ
+        ngɛ be katsimi.
+      cer: 0.8125
+      wer: 1.1333
+    '444':
+      text: O le Gana gbi ko nɛ tsuɔ enɛ ɔmɛ tsuo a he ni lo?
+      hyp: O lɛ kaa ngli kuu ni tsuo enɛ ɔmɛ tsuo se ɔ hɛ hyɛ ni lo?
+      cer: 0.4571
+      wer: 0.7143
+    '451':
+      text: Plɛ kɛ kpee o nyɛmi ɔ nɛ o tsɔɔ nɔ nɛ ji he kplali a nya.
+      hyp: lɔɛ kɛ kpee o nyɛmi ɔ nɛ o tso ɔ nɔ nɛ ji he kplɛli a nya.
+      cer: 0.0976
+      wer: 0.25
+    '458':
+      text: Ngɛ hiɛ ɔ, munyungu ɔ kɛ he kplalɔ ɔ ma nyɛ hɛɛ sisi numi ekpaakpa.
+      hyp: Nyɛ hɛɛ ɔ, munyu nguɔ kɛ he kplalɔ ɔ, ɔ ma nyɛ hɛɛ sisi numi e kpaakpa.
+      cer: 0.0588
+      wer: 0.4667
+    '485':
+      text: A yeɔ bua nɛ wa naa munyungu ehehi kɛ jeɔ munyungu poku ɔ mi.
+      hyp: A yo bua nɛ wa naa munyungu e hehi kɛ je ɔ munyungu poku ɔ mi.
+      cer: 0.0426
+      wer: 0.3571
+    '486':
+      text: A tsakeɔ munyungu kɛ jeɔ munyungukuu ko mi kɛ yaa munyungukuu kpa mi.
+      hyp: Tikeo munyu ngu kɛɛ je o munyu ngu ko kumi kɛ yaa munyu ngu ko kpami?”
+      cer: 0.1964
+      wer: 1.0
+    '488':
+      text: A tsakeɔ munyungu ɔ kɛ jeɔ be pɔtɛɛ ko mi kɛ yaa be ekpa mi ngɛ animosa
+        glɛ nɔ.
+      hyp: Etsike ɔ, munyungu ɔ kɛ je ɔ be pɔtɛɛ komɛ kɛ a be e kpami ngɛ animosa
+        glɛ nɔ.
+      cer: 0.0833
+      wer: 0.4737
+    '489':
+      text: A tsakeɔ munyungu ɔ kɛ jeɔ kake mi kɛ yaa hiɛhiɛɛ mi ngɛ animosa glɛ nɔ.
+      hyp: Etsikeo munyu gu ɔ kɛ je ɔ kakemi kɛ ya hiɛhiɛmi ngɛ e nimu sa glɛ nɔ.
+      cer: 0.1429
+      wer: 0.75
+    '490':
+      text: A tsakeɔ peemimunyu kɛ peeɔ biɛ.
+      hyp: Aitake ɔ pee momunyu kɛ pee ɔ biɛ.
+      cer: 0.1154
+      wer: 1.0
+    '492':
+      text: A tsakeɔ biɛ kɛ peeɔ kalelɔ.
+      hyp: Metsike ɔ biɛ kɛ peeɔ kali lɔ.
+      cer: 0.1818
+      wer: 0.6667
+    '493':
+      text: A tsakeɔ kalelɔ kɛ peeɔ biɛ.
+      hyp: Tse kiɔka lelɔ kɛ piɛɔ biɛ.
+      cer: 0.2273
+      wer: 0.6667
+    '494':
+      text: A waa kɛ haa gbi ɔ kasemi kɛ e ngmami.
+      hyp: la waa kɛ haa gbi ɔ kasimi kɛ e ngma mi.
+      cer: 0.0714
+      wer: 0.4
+    '500':
+      text: Tsake munyunguhi nɛ nyɛɛ se ɔmɛ kɛ pee biɛhi aloo kaleli.
+      hyp: sa ke mo nyunguhi nɛ nyɛɛ se ɔmɛ kɛ pee biɛ hia, loo kaleli.
+      cer: 0.0435
+      wer: 0.6364
+    '514':
+      text: Kofi kɛ Amaki ye ni ɔ.
+      hyp: A yamaki he ní ɔ,
+      cer: 0.5
+      wer: 0.8333
+    '516':
+      text: Nyɛɛ ngɔ nya tsɔɔmi nɛ nyɛ ha ngɛ sukuu tsu ɔ mi ɔ kɛ kudɔ nyɛ he.
+      hyp: Nyɛɛ ngɔ nya tso ɔ mi nɛ nyɛ ha nge su ku tsu ɔ mi ɔ kɛ kudɔ nyɛ he.
+      cer: 0.0612
+      wer: 0.3529
+    '519':
+      text: Wa maa sɛsɛ etɛ pɛ he.
+      hyp: Wa ma sɛse etɛ pɛ hiɛ.
+      cer: 0.25
+      wer: 0.5
+    '526':
+      text: Majua tsali nɛ tsaa munyunguhi kɛ munyukpafahi.
+      hyp: Wɔ tsɔɔ a tsali nɛ tsa munyu muɛ kɛ munyu kpafa he.
+      cer: 0.3
+      wer: 1.2857
+    '529':
+      text: Majua tsali nɛ tsaa dɛhe munyukpɔ kɛ akplahe munyukpɔ kɛ blaa.
+      hyp: Maru sɛli nɛ tsa dɛ hɛɛ munyu kpɔ kɛ akpla he munyu kpɔ kɛ bla.
+      cer: 0.1569
+      wer: 1.0909
+    '548':
+      text: E be subai lɔ ɔ he ɔ e nɛ gba kpakpa.
+      hyp: E be subaielɔ ɔ heɔ e nɛɛ, gba kpakpa.
+      cer: 0.0769
+      wer: 0.4545
+    '551':
+      text: Moo kane o heto ɔ kɛ ha nyɛ tsu mi bi ɔmɛ konɛ o tsɔɔ o heto ɔmɛ a nya.
+      hyp: Mɔɔ ka nɛ o heto ɔ kɛ ha nyɛ tsumi bi ɔmɛ ko nɛ. O tsɔɔ o heto ɔmɛ a nya.
+      cer: 0.0588
+      wer: 0.35
+    '557':
+      text: A yeɔ buaa nɛ a ngɔɔ yi mi tomi ko kɛ pataa yi mi tomi ekpa he.
+      hyp: E yo bua nɛ a ngɔɔ yi mi tomi ko kɛ pata yi mi tomi kɛ kpa he.
+      cer: 0.1522
+      wer: 0.3529
+    '558':
+      text: A yeɔ buaa kɛ ha nɔ kɛ nɔ he tomi.
+      hyp: A yeɔ bua kɛ ha nɔ́ kɛ nɔ he tomi.
+      cer: 0.0417
+      wer: 0.1
+    '559':
+      text: A yeɔ buaa kɛ tsɔɔ nɔ ko nɛ ya nɔ.
+      hyp: A ye o bua kɛ sɔ nɔ konɛ ya nɔ.
+      cer: 0.1667
+      wer: 0.6
+    '561':
+      text: Mlaa komɛ ngɛ nɛ kudɔɔ wɔ kɛ ha tsali a he ni tsumi.
+      hyp: Mlaa komɛ gɛ nɛ ko dɔɔ wɔ kɛ ha tale a he ní tsumi.
+      cer: 0.1282
+      wer: 0.3846
+    '564':
+      text: Tsali blaa susumi, nɔ peemi kɛ yi mi tomi.
+      hyp: Zali bla a susumi, nɔ́ peemi, kɛ yumi tomi.
+      cer: 0.0938
+      wer: 0.5556
+    '567':
+      text: Tsali a he hia kɛ ha nihi a he so tomi.
+      hyp: Sale a he he hia kɛ ha nihi a he sotomi.
+      cer: 0.1429
+      wer: 0.3636
+    '571':
+      text: Blɔ slɔɔtohi a nɔ ngɛ nɛ a guɔ kɛ peeɔ munyungu ehehi.
+      hyp: Glaa slɔɔtehi, a nɔ́ inge nɛ agboɔ kɛ peeɔ munyu mu ehehi.”
+      cer: 0.2381
+      wer: 0.5833
+    '576':
+      text: Kɛ nyɛ woɔ ni ehehi nɛ ngɛ bae ngɛ nyɛ ma a mi biɛ kɛɛ?
+      hyp: Ke nyɛ woɔ nɛ e he hi, nɛ ngɛ bae ngɛ nyɛ ma a mi biɛ kɛɛ?”
+      cer: 0.05
+      wer: 0.3333
+    '579':
+      text: Mɛnɔ nɛ woɔ ni ɔmɛ a biɛ?
+      hyp: Mɛnɔ nɛ woɔ ní ɔmɛ a biɛ?
+      cer: 0.0556
+      wer: 0.1429
+    '610':
+      text: Munyungu babɛɛ nɛ ba sɛ Dangme mi ɔ ekomɛ ji hledio-radio, ɛlopleeaeroplane,
+        sɛmɛti-cement, kasiɔkɔ kɛ ekpa komɛ.
+      hyp: Mohi yungu babɛ nɛ ba sɛ dã ngmɛmi ɔ ekɔmɛ ji Hledioridio. E lɛ pu lɛɛ
+        fu panɛ, sɛmɛti tsɛmɛ ɔ, kasiɔ kɔ kɛ e kpa komɛ.
+      cer: 0.2747
+      wer: 1.1765
+    '615':
+      text: E yeɔ buaa kɛ haa gbi ɔ wami.
+      hyp: e heɔ buaa kɛ haa gbi ɔ wami.
+      cer: 0.0476
+      wer: 0.125
+    '616':
+      text: E yeɔ buaa nɛ gbihi sɛɔ a sibi a mi.
+      hyp: Hiɛɛ ɔ bua nɛ gbihi seɔ a sibi a mi.
+      cer: 0.2308
+      wer: 0.4
+    '617':
+      text: E yeɔ buaa kɛ haa munyungu ehe nami kɛ e he juɛmi ehe nami.
+      hyp: I bi ɔ bua ke, ‘Haa munyu ngu e he nami kɛ, i hi juɛmi e he nami.’
+      cer: 0.1556
+      wer: 0.9286
+    '618':
+      text: E yeɔ buaa kɛ haa gbi ɔ kasemi.
+      hyp: Iyo ɔ buaa kɛ haa gbi, o ka se mi.
+      cer: 0.1304
+      wer: 0.75
+    '619':
+      text: E yeɔ buaa nɛ a kɛ yoɔ he nɛ munyungu ehe ɔ puɛ kɛ je.
+      hyp: Je he bu a nɛ a kɛ yo ɔ, i nɛ munyu ngɔ e he ɔ puɛ kɛ je.
+      cer: 0.1795
+      wer: 0.7333
+    '624':
+      text: Tsɔɔ he kplali a nya.
+      hyp: Sɛ ɔ he kplali a nya.
+      cer: 0.125
+      wer: 0.4
+    '625':
+      text: Ngmaa he kplali slɔɔto nɛ ngɛ Dangme mi.
+      hyp: Ngma a he kpɛli slɔɔto nɛ ngɛ da ngmɛ mi
+      cer: 0.0938
+      wer: 0.625
+    '626':
+      text: Yɔse he kplali eywiɛ ngɛ Dangme mi nɛ o ngma mɛ.
+      hyp: Loo se ekpɛli eywiɛ ngɛ dã ngmimɛ nɛ o ngmamɛ ɔ.”
+      cer: 0.2703
+      wer: 0.6364
+    '627':
+      text: Sɛsɛ he kplali ni tsumi eywiɛ he.
+      hyp: Sɛɛ, e kplaali nitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsitsits
+      cer: 49.8846
+      wer: 1.0
+    '628':
+      text: Yɔse he kplali ngɛ munyunguhi nɛ nyɛɛ se ɔmɛ a mi konɛ o tsɔɔ he kplali
+        nɛ a ji.
+      hyp: Hiɔse he kplɛli ngɛ munyu guhi nɛ nyɛɛ se ɔmɛ, a mi konɛ o tsɔɔ he kplɛli
+        nɛ a je.
+      cer: 0.0984
+      wer: 0.3158
+    '629':
+      text: Sɛsɛ he kplali a he ni tsumi eywiɛ he.
+      hyp: Sɛsɛ, hi kplali a hi ní tsumi, e ywiɛ he.
+      cer: 0.1034
+      wer: 0.5556
+    '630':
+      text: Tsɔɔ nɔ nɛ tsali ji.
+      hyp: O nɔ́ nɛ tsali ji?
+      cer: 0.2667
+      wer: 0.2
+    '632':
+      text: Moo tsɔɔ tsali slɔɔto ɔmɛ nɛ o ngma a nya.
+      hyp: Mohu tsɔɔ tsɛli slɔɔto ɔmɛ nɛ o ngma a nya.
+      cer: 0.0938
+      wer: 0.2
+    '635':
+      text: Moo po tsali nɛ ngɛ munyuzahi nɛ nyɛɛ se ɔmɛ a mi ɔ sisi.
+      hyp: Nɛ ngɛ munyu sa hi nɛ nyɛɛ si ɔmɛ a mi ɔ sisi.
+      cer: 0.2791
+      wer: 0.5
+    '636':
+      text: Baake ngɛ ni kanee nɛ Nuɛte ngɛ ni ngmae.
+      hyp: Ma a ke, ‘Ngɛ nika nɛ nɛ nɔete ngɛ ní ngma.’
+      cer: 0.2188
+      wer: 0.8889
+    '639':
+      text: O suɔ joma aloo otimi.
+      hyp: “Busu ɔ, Joma, aloo o ti mi?”
+      cer: 0.1176
+      wer: 1.0
+    '640':
+      text: Moo tsɔɔ munyungu ehe peemi blɔ nya tomi ɔ nya.
+      hyp: Mo tsɔ munyungu ehe! Pee mi blɔ nya tomi ɔ nya!”
+      cer: 0.0541
+      wer: 0.4
+    '641':
+      text: Mo yɔse munyungu ehe peemi blɔ nya tomi etɛ ngɛ Dangme mi.
+      hyp: Muɔ Yesu munyu ngɔ e hɛ peemi blɔ nya tumi etɛ ɔ hɛ ngɛ da ngmɛ mi.
+      cer: 0.2391
+      wer: 0.9167
+    '642':
+      text: Sɛsɛ munyungu ehe peemi blɔ nya tomi etɛ ngɛ Dangme mi ɔ he.
+      hyp: Sɛse munyu ngu ehi peemi blɔ nya tomi etɛ ngɛ da ngmɛmi ɔ he.
+      cer: 0.0638
+      wer: 0.4615
+    '643':
+      text: Sɛsɛ se nami etɛ nɛ ngɛ munyungu ehe peemi blɔ nɔ tomi ɔ he ngɛ Dangme
+        mi.
+      hyp: Sɛse si nami tɛ nɛ ngɛ munyu ngu e he peemi blɔ nɔ́ tomi ɔ he ngɛ da ngmɛ
+        mi.
+      cer: 0.0702
+      wer: 0.5294
+    '644':
+      text: Yɔse munyungu ehe peemi blɔ nɔ tomi nɔhyɛ ni ngɛ demiyo nɛ nyɛɛ se ɔ mi.
+      hyp: Heɔ se, munyu gu ehe peemi blɔ nɔ́ tomi nɔ́ shɛ ni ngɛ demio nɛ nyɛɛ se
+        ɔ mi.
+      cer: 0.1071
+      wer: 0.4375
+    '645':
+      text: Mwɔnɛmwɔnɛ ɔ, juɛmi klami he hia wawɛɛ ngɛ wa sukuu tsɔsemi mi.
+      hyp: Wɔɔ nɛ mwɔnɛ ɔ, juɛmi klami he hia wawɛɛ ngɛ wa sukuu tsɔsemimi ngɛ.
+      cer: 0.1
+      wer: 0.4167
+    '653':
+      text: Munyukpɔfa ji munyungu aloo munyunguhi nɛ a tsuɔ ni pɔtɛɛ ngɛ gbi ko mi.
+      hyp: Munyu kpafa ji munyungu, aloo munyunguhi nɛ a tsuɔ nɛ pɔtɛɛ ngɛ gbi ko
+        mi.
+      cer: 0.0345
+      wer: 0.2143
+    '656':
+      text: Munyukpɔ ji munyunguhi nɛ a bla mɛ kɛ pee munyuza.
+      hyp: Mɔ nyu kpɔ ji munyunguhi nɛ a bla mɛ kɛ pee munyu za.
+      cer: 0.025
+      wer: 0.5
+    '657':
+      text: E hɛɛ peelɔ kɛ peemi.
+      hyp: E hɛ pee lɔ kɛ peemi.
+      cer: 0.0625
+      wer: 0.6
+    '658':
+      text: Ngɛ ni ngmami mi ɔ, a tsuɔ okadihi a he ni konɛ sisi numi nɛ je kpo.
+      hyp: Nyɛɛ ni ngmami mi ɔ, a tsɔɔ okadi hy. A he ní ko nɛ sisi numi nɛ je kpo.
+      cer: 0.1
+      wer: 0.4118
+    '666':
+      text: E sa nɛ munyukpɔfa a nɛ hɛɛ munyukpɔfa yi.
+      hyp: I sa nɛ munyu kpɔfa, a nɛ he munyu kpɔfa yi.
+      cer: 0.0909
+      wer: 0.6667
+    '675':
+      text: Enɛ ɔ ji munyukpɔfa nɛ biɛ aloo biɛnanemidalɔ peeɔ munyukpɔfa a yi.
+      hyp: Enɛ ɔ ji munyu kpɔfa nɛ biɛ, aloo biya nɛ mi dalɔ piɛ ɔ, munyu kpɔfa a
+        yi.
+      cer: 0.0909
+      wer: 0.8333
+    '682':
+      text: Heninegbɔlɔ piɛɛ we munyukpɔfa a he.
+      hyp: kɛ nɛ gbalɔ piɛɛ we munyu kpɔfa a he.
+      cer: 0.2
+      wer: 0.8333
+    '683':
+      text: Wa ma nyɛ na munyungu pe kake ngɛ biɛ munyukpɔfa mi.
+      hyp: Ma e nyɛɛ nɛ munyu ngu pee, kakehi ngɛ biɛ munyu kpo fa mi.
+      cer: 0.2195
+      wer: 1.0
+    '685':
+      text: Nɔhyɛ ni komɛ ngɛ daka nɛ nyɛɛ se ɔ mi.
+      hyp: Nɛ osɛ ní komɛ i da kane nyɛ se ɔ mi.
+      cer: 0.3103
+      wer: 0.7
+    '690':
+      text: Kaleli nɛ ɔmɛ ji munyunguhi aloo munukpɔfahi nɛ tuɔ biɛ yi ɔ he munyu.
+      hyp: Sɛ leli, nɛ o mɛ! Ji munyu gu he, aloo munu kpɔfahi nɛ to ɔ biɛ yi, o he
+        munyu
+      cer: 0.125
+      wer: 0.8571
+    '697':
+      text: Ngɛ kekle nɔhyɛ nɔ ɔ mi ɔ, se heninegbɔlɔ kalelɔ ɔ ji jamɛ a.
+      hyp: Nyɛ kekle nɔ́ sɛ nɔ ɔ mi ɔ, se hɛ ni ngmɔlɔ kalelɔ ɔ ji jamɛ a.
+      cer: 0.1304
+      wer: 0.4286
+    '710':
+      text: Biɛ yi ma nyɛ hɛɛ hɛ kpɛ heninegbɔlɔ kalelɔ kɛ se heninegbɔlɔ kaleli.
+      hyp: Biheyi manyɛ hɛ hɛ kpɛɛ, hɛ ní gbalɔ, kɛ li lo? Kɛ se, hɛ ní gbalɔ, kɛ
+        lili?
+      cer: 0.3393
+      wer: 1.1538
+    '717':
+      text: Ngɛ nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma biɛ munyukpɔfa etɛɛtɛ.
+      hyp: Ngɛ nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma biɛ munyu kpɔfa etɛetɛ.
+      cer: 0.0233
+      wer: 0.25
+    '720':
+      text: Peemimunyu munyukpɔfa ji munyukpɔfa nɛ dɛhe peemimunyu ɔ ji munyukpɔfa
+        a yi.
+      hyp: Pemi ɔ munyu kpɔfa, je munyu kpɔfa nɛɛ dɛ hi peemi ɔ, o je munyu kpɔfa
+        a yi.
+      cer: 0.25
+      wer: 1.25
+    '735':
+      text: Ngɛ nyɛ kuu ɔmɛ a mi ɔ, nyɛɛ ngma peemimunyu munyukpɔfa etɛɛtɛ.
+      hyp: Ngɛ nyɛku ɔmɛ a mi ɔ, nyɛɛ ngma pee munyu munyu kpɔ fa etɛetɛ.
+      cer: 0.08
+      wer: 0.6667
+    '738':
+      text: E ji munyukpɔfa nɛ hɛɛ miblɛkelɔ kaa munyukpɔfa a yi.
+      hyp: E ji munyu kpɔfa nɛ hɛɛ mɛ blɛ klɔuka a, munyu kpɔfa e yi.”
+      cer: 0.093
+      wer: 0.8
+    '748':
+      text: E ji munyukpɔ nɛ hɛɛ kalelɔ kaa munyukpɔfa a yi.
+      hyp: I ji munyu kpɔ nɛ hɛɛ kalelɔ kaa munyu kpɔ fa a yi.
+      cer: 0.0263
+      wer: 0.6
+    '754':
+      text: Enɛ ɔ ji munyukpɔfa nɛ ngwɔhe biɛ peeɔ munyukpɔfa a yi.
+      hyp: Elɔ ɔ ji munyu kpafa nɛ ngɔ he biɛ pee ɔ, munyu kpafa a yi.
+      cer: 0.1136
+      wer: 0.8182
+    '761':
+      text: Munyukpɔfa yi ɔ ji munyungu oti ngɛ munyukpɔfa a mi.
+      hyp: Mohi kpɔfa yi o ji munyu gu, oti, ngɛ munyu kpɔfa amɛ.”
+      cer: 0.1667
+      wer: 0.8
+    '764':
+      text: A blaa munyukpɔfa slɔɔtohi kɛ peeɔ munyuza mi.
+      hyp: Ablaa a, munyu kpɔ fa slɔɔ tó he kɛ peeɔ munyu zami.
+      cer: 0.0789
+      wer: 1.125
+    '765':
+      text: Ngɛ nɔhyɛ nɔ nɛ ɔ mi ɔ, biɛ munyukpɔfa a ji nɔ nɛ a diki mi ɔ nɛ.
+      hyp: Nɛ nɔ shɛ nɔ nɛ ɔ mi ɔ, biɛ munyu kpɔfa a ji nɔ́ nɛ a diki ní ɔ nɛ.
+      cer: 0.1087
+      wer: 0.3333
+    '767':
+      text: Peemimunyu munyukpɔfa yi ɔ ji ho.
+      hyp: Piemi minyu kpɔfayi ɔ je hɔ nɛ.
+      cer: 0.4074
+      wer: 1.0
+    '771':
+      text: A kɛ jeɔ juɛmi kpo.
+      hyp: ke ji o juɛmi kpɔɔ.
+      cer: 0.4286
+      wer: 0.8
+    '772':
+      text: A yeɔ kɛ buaa munyu tumi kɛ e ngmami.
+      hyp: A yeɔ kɛ buaa munyu tumi kɛ e ngma mi.
+      cer: 0.0
+      wer: 0.2222
+    '773':
+      text: A kɛ jeɔ demihi nɛ sisi numi ngɛ a he ɔ kpo se sisi numi ɔ nya pi si.
+      hyp: A kɛ jɔɔ dɛmihi nɛ sisi numi ngɛ a he ɔ kpose sisi numi ɔ nya pi si.
+      cer: 0.04
+      wer: 0.2105
+    '774':
+      text: A haa nɛ munyuza kpa ko mi tsɔɔ.
+      hyp: Aha nɛ munyu za kpa komɛ tsɔɔ.
+      cer: 0.0833
+      wer: 0.75
+    '778':
+      text: Nyɛɛ po munyukpɔfa yihi nɛ nyɛ yɔse ɔmɛ a sisi.
+      hyp: Nyɛɛ po, unyu kpɔ fa yihi, nɛ nyɛɛ yɔse ɔmɛ a sisi.
+      cer: 0.0541
+      wer: 0.4
+    '785':
+      text: Wo kɔɔhiɔ nɛ ngɛ fiae blɛuu ɔ wo blɔ hiami ɔ mi buajɔ.
+      hyp: Wɔ kuɔ he ɔ nɛ ngɛ fiae blɛ oo hia mi, o mi bua jɔmi.”
+      cer: 0.3171
+      wer: 0.9231
+    '793':
+      text: Agbaikle wayoo ɔmɛ nɛ ngɛ tɛ ɔmɛ fiae blɛuu ɔ je gbeye ngɛ wa mi.
+      hyp: A gbae ko! Huɛyo ɔmɛ, nɛ ngɛ tɛ ɔmɛ, fiai blee wu, wɔjegbe hyɛ i ngɛ wami.
+      cer: 0.28
+      wer: 0.8
+    '801':
+      text: Nyɛ de nyɛ heto ɔ ngɔ ha nyɛ tsu mi bi ɔmɛ.
+      hyp: Nyɛ di nyɛ he too, o ngɔ ha nyɛ tsu mi bi ɔmɛ.
+      cer: 0.0968
+      wer: 0.3333
+    '807':
+      text: Nyɛ de nyɛ heto ɔmɛ kɛ ha nyɛ tsu mi bi ɔmɛ.
+      hyp: Nyɛɛ de nyɛ hito ɔmɛ kɛ ha nyɛ tsumi bi ɔmɛ.
+      cer: 0.0625
+      wer: 0.3333
+    '808':
+      text: E hɛɛ peelɔ kɛ peemimunyu.
+      hyp: Hiɛ pe lɔ kɛ be munyu.”
+      cer: 0.3333
+      wer: 1.0
+    '809':
+      text: Be komɛ ɔ, e hɛɛɔ peemi.
+      hyp: E heɔ pee mi.
+      cer: 0.5294
+      wer: 1.0
+    '810':
+      text: Munyukpɔ he blɔ nɔ tomi ji kaa e hi animosa glɛ nɔ.
+      hyp: Mohi kpɔ he blɔ nɔ́ tomi ji kaa ehli animosa glɛ nɔ.
+      cer: 0.1282
+      wer: 0.3333
+    '812':
+      text: Daale tsi kokote ku loko e je kɛ ho sukuu ya.
+      hyp: Dealiti kokote ku loko e je kɛ ho su ku ya.
+      cer: 0.1176
+      wer: 0.3636
+    '813':
+      text: Kɔɔyo ho jua mi ya.
+      hyp: “Kɛmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ
+        ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ ɔmɛ
+        ɔmɛ ɔmɛ
+      cer: 8.1429
+      wer: 7.8
+    '815':
+      text: Munyukpɔ slɔɔto enyɔ nɛ ngɛ.
+      hyp: Muhi kpa slɔɔto ɔ, e nyɔ nɛ ngɛ!
+      cer: 0.2174
+      wer: 1.0
+    '816':
+      text: Mɛ ji dɛhe munyukpɔ kɛ akplahe munyukpɔ.
+      hyp: Mɛ ji dɛɛ munyu kpɔ kɛ a kpla he munyu kpɔ?”
+      cer: 0.0606
+      wer: 1.1429
+    '819':
+      text: Tɛɛ ma nyɛ yɛ nyu ɔ daa ligbi lo?
+      hyp: Tɛɛ ma nyɛ ye nyu ɔ daa ligbi lo?
+      cer: 0.0417
+      wer: 0.1111
+    '821':
+      text: Munyuza amɛ daa si ngɛ a dɛhe nɛ a je sisi numi nɛ nya ma si kpo.
+      hyp: Mohi yu zã amɛ daa si ngɛ, a dɛ hɛ nɛ a je sisi numi nɛ nya ma si kpo.
+      cer: 0.1042
+      wer: 0.2941
+    '825':
+      text: Nyɛɛ ya itanɛti aloo kpa a nɔ nɛ nyɛ ya hla dɛhe munyukpɔ mi gbami eywiɛ
+        ɔmɛ.
+      hyp: hiɛ ya etane ti, aloo kpaa a nɔ́ nɛ nyɛ ya hla dɛ he munyu kpɔmi gbami
+        eywiɛ ɔmɛ.
+      cer: 0.1
+      wer: 0.4706
+    '827':
+      text: Dɛhe munyukpɔ mi gbami eywiɛ nɛ ngɛ.
+      hyp: dɛ hɛ munyu kpɔmi gbami eywiɛ nɛ ngɛ.
+      cer: 0.0345
+      wer: 0.5714
+    '828':
+      text: Mɛ ji demi, fami, bimi kɛ ngmlaa.
+      hyp: Pee ji temi! Kpɔmi bimi kɛ ngmlaa!
+      cer: 0.2917
+      wer: 0.4286
+    '831':
+      text: E ye ni hiɛ gbɔkuɛ.
+      hyp: I ye ní hyɛ bwɔkuɛ.
+      cer: 0.3571
+      wer: 0.8
+    '835':
+      text: O ma nyɛ ha nɔhyɛ nɔ ngɛ bimi munyukpɔ nɔ lo?
+      hyp: O ma hyɛ ha nɔ́ sɛ nɔ́ ngɛ bimɛ nyu kpɔ nɔ́ lo.
+      cer: 0.1765
+      wer: 0.5455
+    '837':
+      text: Mɛnɔ sika ji nɛ ɔ?
+      hyp: Mɛnɔ suka je nɛ ɔ.
+      cer: 0.1538
+      wer: 0.4
+    '842':
+      text: Akplahe munyukpɔ woɔ tsali konɛ a kɛ tsa dɛhe munyukpɔ ɔ.
+      hyp: A kpla he munyu kpɔ oo, ɔ tsa le konɛ. A kɛ tsia dɛ he munyu kpɔ ɔ.”
+      cer: 0.0652
+      wer: 1.2727
+    '845':
+      text: Benɛ Kofi su lejɛ ɔ, a ho ngmɔ ɔ mi ya momo.
+      hyp: Benɛ Covid su lejɛ ɔ, a hu ngɔ ɔ mia momo.
+      cer: 0.1935
+      wer: 0.4167
+    '849':
+      text: Wa ngɛ akplahe munyukpɔ slɔɔtohi etɛ.
+      hyp: ngɛ a kpla he munyu kpɔ, slɔɔtohi etɛ.
+      cer: 0.0645
+      wer: 1.0
+    '857':
+      text: Biɛ akplahe munyukpɔ nɔhyɛ ni nɛ nyɛɛ se ɔ nɛ.
+      hyp: Be akula he munyu kpɔ nɔ shɛ ni nɛ nyɛɛ se ɔ nɛ.
+      cer: 0.1389
+      wer: 0.7
+    '858':
+      text: Jokuɛ ɔ nɛ ye ngwɔ ngɛ ka a mi ɔ na yi jemi womi.
+      hyp: Yokuɛ ɔ nɛ ye hu ngɔ ngɛ kaa a mi ɔ, nɛ yi jemi womi ɔ.
+      cer: 0.2
+      wer: 0.4286
+    '859':
+      text: Wa na tokota wayoo nɛ laa a.
+      hyp: La tsɔkɔ tsa weoo nɛ laa.
+      cer: 0.4762
+      wer: 0.7143
+    '864':
+      text: E tsuɔ ni kaa kalelɔ.
+      hyp: kɛ a kale lɔ.
+      cer: 0.5
+      wer: 1.0
+    '868':
+      text: Yɔse kaa munyungu ɔmɛ nɛ a po a sisi ɔ ji kalelɔ akplahe munyukpɔ ɔ nɛ.
+      hyp: Jerse kaa munyu ngu ɔmɛ nɛ a po a sisi wo ji kalelɔ a kplaa he munyu kpɔ
+        ɔ nɛ.
+      cer: 0.1091
+      wer: 0.5625
+    '872':
+      text: Munyukpɔhi nɛ a po a sisi ɔmɛ tsuo peeɔ miblɛkelɔ akplahe munyukpɔhi.
+      hyp: Mohi yu kpɔ he nɛ a po a sisi ɔmɛ tsuo peeɔ mɛ blekelɔ a kpla he, munyu
+        kpɔ he.
+      cer: 0.1228
+      wer: 1.0
+    '902':
+      text: A kɛ gbeɔ munyuza nya kɛ tsɔɔ kaa munyuza a ba nyagbe.
+      hyp: E kɛ gbi ɔ, munyu za nya kɛɛ sɔuu kaa munyu za a ba nyagbe.
+      cer: 0.119
+      wer: 0.75
+    '904':
+      text: A kɛ gbaa munyuzahi a mi ngɛ demiyo aloo saneyo ko mi.
+      hyp: A kɛ gbaa munyu jahi a mi ngɛ dɛmiyo aloo saneyo komɛ.
+      cer: 0.0714
+      wer: 0.4167
+    '909':
+      text: A ma ha tsɔɔli ɔmɛ hulɔ.
+      hyp: kaa ma ha tsɔli ɔmɛ hulɔ.
+      cer: 0.1667
+      wer: 0.3333
+    '910':
+      text: Sukuu nɔ hyɛlɔ ɔ hu ma na eko.
+      hyp: Suku nɔ́ shɛlɔ ɔ humana eko.
+      cer: 0.1364
+      wer: 0.625
+    '912':
+      text: A kɛ gbeɔ ayaade adeta munyuhi a nya.
+      hyp: Nɛ klɛ gbi ɔ a yaa de adeta munyuhi a nya.
+      cer: 0.1379
+      wer: 0.875
+    '916':
+      text: A ngɔɔ akɔnya kɛ gbaa nihi nɛ a to a nya ngɛ munyuza mi ɔmɛ a mi.
+      hyp: A ngɔ ɔ, a kɔ nya kɛ gba a níhi nɛ a to. A nya ngɛ munyu zami ɔmɛ a mi.
+      cer: 0.0208
+      wer: 0.5882
+    '919':
+      text: A ke wɔ womihi, sɛhi, okplɔɔhi, ningmatsohi kɛ tsopahi.
+      hyp: Akei wɔ womihi, sɛhi, okplɔɔhi, ní ngma tohi kɛ topahi.
+      cer: 0.093
+      wer: 0.6667
+    '920':
+      text: Ni yemi, mahɛ hwɔmi kɛ nɔ he munyu tumi pɛ a le.
+      hyp: E hyɛ mi, maa hɛ hɔ mi kɛ nɔ́ e munyu tumi pɛ a lɛ.”
+      cer: 0.2
+      wer: 0.75
+    '921':
+      text: Ke nyɛ sume ɔ, wa maa kpale kɛ ho.
+      hyp: ke nyɛɛ sumi ɔ, wa ma a kpale kɛ hwɔɔ.
+      cer: 0.2083
+      wer: 0.5556
+    '922':
+      text: A kɛ gbaa adlɛɛsi mi.
+      hyp: mɛ kɛ gba a dlaɛ si mi.
+      cer: 0.25
+      wer: 1.0
+    '924':
+      text: A tsuɔ kaa he ni ke a yaa to nihi a nya kɛ tsɔɔ nɔ ko nɛ a de kɛ sɛ hlami.
+      hyp: E tsɔ kaa Henike, a yaa tu níhi a nya kɛ tsɔɔ nɔ ko nɛ a de kɛ sɛ hla mi.
+      cer: 0.0769
+      wer: 0.4091
+    '929':
+      text: A kɛ blaa dɛhe munyukpɔ nɛ hɛɛ juɛmi kake.
+      hyp: A kɛ blaa dɛ he munyu kpɔ nɛ hɛɛ juɛmi kake ɔ.
+      cer: 0.0303
+      wer: 0.5556
+    '930':
+      text: Ni komɛ tɛni ni; ni komɛ hu ngma ni.
+      hyp: Ni komɛ tɛ ní ni, ni komɛ hungma ní.
+      cer: 0.0769
+      wer: 0.5556
+    '931':
+      text: I ya Ablotsi; Kɔɔtemɛ ya Naijilia; Amatemɛ ya Akplabanya.
+      hyp: A ya e bloti, kɔɔtɔmɛ yaa na Egilia, amɛmɛ yaa kpla banyasi.
+      cer: 0.2609
+      wer: 1.2222
+  source: evaluated

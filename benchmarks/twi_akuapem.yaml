@@ -1,0 +1,5150 @@
+iso_639_3: twi_akuapem
+language: Akuapem Twi
+num_samples: 200
+scoring: cer
+judge: &id001
+  model: Qlerqly/griot-nano-1
+  cer_on_real_speech: 0.2193
+updated: '2026-09-11'
+benchmarks:
+- model: KhayaAI/khaya-tts-v2
+  model_url: https://translation.ghananlp.org
+  owner: KhayaAI
+  architecture: Khaya AI TTS v2 API
+  cer: 0.142
+  wer: 0.5644
+  score: 0.142
+  samples: 200
+  valid: 200
+  avg_seconds: 0.0
+  judge: *id001
+  entries:
+    '7':
+      text: Saa ɔfa yi kasa fa asɛnsin, asɛnsin nhyehyɛe ne toonu ho.
+      hyp: saa fa yi kasa fa asinsin asɛnsi nhyehyɛɛ ne too no hu
+      cer: 0.1333
+      wer: 0.6364
+    '19':
+      text: Asɛnsin yɛ asɛmfua fa bi a yɛte wɔ kasa mu.
+      hyp: asɛnsin yɛ asemfoɔ fa bi a yɛte hɔ kasa mu
+      cer: 0.1212
+      wer: 0.2
+    '20':
+      text: Anom (Kɔnsonant) nnyigyei yɛ anom nnyigyei a etumi gyina sɛ asɛnsin.
+      hyp: ɔnom consunantnyi gyeye anom nigyeeɛ a ɛtumi gyina sɛ asɛnsii
+      cer: 0.2364
+      wer: 0.6364
+    '21':
+      text: Toonu yɛ ɛnne mu nsakrae a etumi de nsakrae ba asɛmfua ntease mu.
+      hyp: tuu no yɛ anim nsakrae ɛtumi de nsakraba asemfuo ntease mu
+      cer: 0.2308
+      wer: 0.6923
+    '51':
+      text: Wɔakyekyɛ asɛmfua biara mu kɔ nsɛnsin ahorow a ɛwɔ mu mu.
+      hyp: wɔakyekye asemfoɔ biara mu konsansin ahorow a ɛwɔ mu mu
+      cer: 0.1304
+      wer: 0.3636
+    '55':
+      text: Asɛnsin a emu abue yɛ asɛnsin a ɛnne nnyigyei twa to.
+      hyp: asɛnsi na a emu abuei a asen sina a ɛne nnyigyee twa to
+      cer: 0.1667
+      wer: 0.7273
+    '60':
+      text: Asɛnsin a emu to yɛ asɛnsin a anom nnyigyei twa to.
+      hyp: asɛnsia a emu to yɛ asensinaa anom nnyigye twato
+      cer: 0.1
+      wer: 0.5455
+    '65':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ asɛnsin ase.
+      hyp: fa wɔn ankasa nsemfoɔ akyerɛkyerɛ asinsin ase
+      cer: 0.1667
+      wer: 0.8333
+    '67':
+      text: Kyerɛkyerɛ nsɛnsin ahorow a ɛwɔ Akuapem Twi kasa mu no mu.
+      hyp: kyerɛkyerɛ nsensin ahorowa a ɛwɔ akuapintwikasa mu no mu
+      cer: 0.0851
+      wer: 0.4545
+    '68':
+      text: Kyerɛkyerɛ mfaso a ɛwɔ asɛnsin nhyehyɛe ho nimdeɛ so wɔ nsɛmfuayɛ mu.
+      hyp: kyerɛkyerɛ mfasom a ɛwɔ asinsi nhyehyɛ ho nimde so wɔ wo nsamfoaeɛ mu
+      cer: 0.1754
+      wer: 0.5
+    '69':
+      text: Ɛne wo mfɛfo nkyɛ wo mmuae no.
+      hyp: a neɛ wo mfafunkyɛ wo mmuae no
+      cer: 0.1739
+      wer: 0.5714
+    '70':
+      text: Ɔkasa biara wɔ ne nsɛnsin nhyehyɛe.
+      hyp: wɔkasa biara wɔ ne nsensin nhyehyɛeɛ
+      cer: 0.1034
+      wer: 0.5
+    '73':
+      text: Asɛnsin fa a ɛho hia pa ara yɛ ɛnne nnyigyei.
+      hyp: asɛsifoɔ a ɛho hia pa ara yɛ ani nyegyeɛ yi
+      cer: 0.3143
+      wer: 0.5
+    '84':
+      text: Yɛ mpɛnsɛmpɛnsɛmu fa Akuapem Twi nsɛnsin nhyehyɛe no ho.
+      hyp: yɛmpensɛmpensiɛ mu fa akuapom twii nseensin nhyehyɛɛ no ho
+      cer: 0.1702
+      wer: 0.6667
+    '88':
+      text: Ɛne wo mfɛfo nhwehwɛ nsɛnsin dodow a ɛwɔ asɛmfua no mu biara mu.
+      hyp: na nyɛwɔ mfɛfoɔ nhwehwɛ nsiesin dodoɔ a ɛwɔ asemfo ano mu biara mu
+      cer: 0.2157
+      wer: 0.5385
+    '89':
+      text: Ɛne wo mfɛfo nkyɛ adwen mfa asɛnsin no mu biara nhyehyɛe ho.
+      hyp: nɛneɛ wo mfafo nkyɛ adwenmfa asinsi no mu biara nhyehyɛɛ hɔ
+      cer: 0.1458
+      wer: 0.5833
+    '92':
+      text: Na abɛbɛ ne ntɛtea yɛ nnamfonom amapa nanso na wɔn mu biara nko ne ne
+        suban.
+      hyp: na ɔbɛbɛ ne ntetia yɛ nnamfonom ama pa nanso na wɔmmu biara nkɔ ne ne shuban
+      cer: 0.1
+      wer: 0.5
+    '93':
+      text: Ɔpɛ bere mu no, ntɛtea yeree ne ho yɛɛ adwuma pɛɛ aduan bebree guu hɔ.
+      hyp: ɔpɛ berɛ mu no ntetea yereɛ ne ho yɛɛ adwuma pɛɛ aduan bebere guu hɔ
+      cer: 0.0926
+      wer: 0.2667
+    '99':
+      text: Monka mo mmuae nkyerɛ adesuafo nkae no nyinaa.
+      hyp: monka mo mmua nkyerɛ adesuafo nkaeɛ no nyinaa
+      cer: 0.0526
+      wer: 0.25
+    '109':
+      text: Ɔkasa biara wɔ toonu ahorow.
+      hyp: wɔkasa biara wɔ too no ahoro
+      cer: 0.1304
+      wer: 0.8
+    '134':
+      text: Hwɛ nhwɛso a edidi so yi.
+      hyp: hwɛnhwɛsoɔ a ɛdi di so yi
+      cer: 0.1053
+      wer: 0.6667
+    '139':
+      text: Ɛho nhwɛso no bi na edidi so yi.
+      hyp: naho nhwɛ so ne bi na ɛdidi siyi
+      cer: 0.2083
+      wer: 0.875
+    '148':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ toonu ase.
+      hyp: fa wɔankasa nsemfuo akyerɛkyerɛ tuunu ase
+      cer: 0.1471
+      wer: 0.6667
+    '151':
+      text: Fa nhwɛso a ɛfata kyerɛkyerɛ toonu ahorow mu wɔ Akuapem Twi mu.
+      hyp: fanhwɛsoɔ a ɛfatakyerɛkyerɛ tuo no ahoro mu wɔ akuape no twi mu
+      cer: 0.1176
+      wer: 0.6667
+    '152':
+      text: Kuw biara ntoatoa adwen mfa toonu dwumadi ho.
+      hyp: kuu biara anteatea adwene mfa too no dwumadi hɔ
+      cer: 0.1892
+      wer: 0.75
+    '159':
+      text: Kyerɛ asɛnsin a toonu ahyɛnsode no da so wɔ asɛmfua no mu.
+      hyp: kyerɛ asensina tuonu ahyensode no da so wɔ asemfoɔ no mu
+      cer: 0.1304
+      wer: 0.4167
+    '160':
+      text: Monka mo mmuae no nkyerɛ adesuafo nkae no nyinaa.
+      hyp: monka mo mmuaɛ no nkyerɛ adesuafo nkaen no nyinaa
+      cer: 0.05
+      wer: 0.2222
+    '172':
+      text: Asɛntitiriw a ɛwɔ abasɛm bi mu no na yɛfrɛ no adwempɔw.
+      hyp: asɛntitiriw a ɛwɔ abasɛm bi mu no na yɛfrɛ no adwempɔn
+      cer: 0.0227
+      wer: 0.0909
+    '215':
+      text: Fa nea woakyerɛw no toto nea wɔakyerɛw wɔ ase hɔ no ho.
+      hyp: fa nea wɔakyerɛ no toto nea wɔakyerɛ wɔ asoho no ho
+      cer: 0.1163
+      wer: 0.3333
+    '218':
+      text: Eyi yɛ akenkan a yɛde hwehwɛ asɛntitiriw a ɛwɔ abasɛm bi mu.
+      hyp: eyi yɛ akenkaŋ a yɛde hwehwɛ asentitiriwa a ɛwɔ abasɛm bi mu
+      cer: 0.0625
+      wer: 0.1667
+    '223':
+      text: Yɛde saa akenkan yi hwehwɛ mmuae ma nsɛmmisa pɔtee bi.
+      hyp: mɛde saa kenkan yi hwehwɛ mmua ma nsɛmmisa poteɛ bi
+      cer: 0.1136
+      wer: 0.4
+    '224':
+      text: Kenkan abasɛm a ɛwɔ ase hɔ no.
+      hyp: kenkaŋ abasam a ɛwɔ ase hu no
+      cer: 0.1304
+      wer: 0.4286
+    '225':
+      text: Kyerɛ adwempɔw a ɛwɔ abasɛm a ɛwɔ ase hɔ no mu.
+      hyp: kyerɛ dwompo a ɛwɔ abasam a ɛwɔ ase ho no mu
+      cer: 0.1667
+      wer: 0.2727
+    '226':
+      text: Ka adwempɔw a wuhui no kyerɛ adesuafo nkae no na fa toto wɔn de ho.
+      hyp: kaa adwompo a wohunui no kyerɛ adesuafo nkan no na fa toto wɔn de ho
+      cer: 0.1538
+      wer: 0.2667
+    '251':
+      text: Ka w’adwempɔw no kyerɛ adesuafo nkae no.
+      hyp: kawoadwompɔn no kyerɛ adehsiafo nkan no
+      cer: 0.1875
+      wer: 0.5714
+    '255':
+      text: Ɛyɛ gyidi, obuo ne nokwaredi.
+      hyp: ɛyɛ gyi di obuo ne nokware dii
+      cer: 0.0435
+      wer: 0.8
+    '257':
+      text: Abeawa; Eyi yɛ nokwasɛm na sɛ mpanyimfo nso yɛ mfomso ɛ?
+      hyp: abeawa eyi yɛ no kwasɛm na sɛ mpanimfoɔ nso yɛ mfomuso yi
+      cer: 0.1136
+      wer: 0.4545
+    '261':
+      text: Ɛsɛ sɛ yebisa nsɛm pɛ mu nkyerɛkyerɛmu wɔ bere a ɛsɛ mu.
+      hyp: te sɛ yɛbisa nsɛm pa mu nkyerɛkyerɛ mu wɔ berɛ a ɛhyɛ mu
+      cer: 0.1818
+      wer: 0.5833
+    '262':
+      text: Nanso, ne nyinaa mu no, setie boa ma yenya asomdwoe ne ahobammɔ.
+      hyp: nanso ne nyinaa mu no setee boa ma yɛnya asomdwoeɛ nea ahobammɔ
+      cer: 0.08
+      wer: 0.3333
+    '274':
+      text: Kenkan abasɛm a ɛwɔ fam hɔ no na bua nsɛmmisa ahorow a ɛtoa so no.
+      hyp: kenka habasɛm a ɛwɔ fam ho no na buaa nsɛmmisa ahorowa atua so no
+      cer: 0.098
+      wer: 0.4667
+    '280':
+      text: Sukuupanyin no gyina hɔ ma tumidi wɔ sukuu no mu.
+      hyp: shikuupa yi no gyina ho ma tumi di wɔ sukuu no mu
+      cer: 0.1282
+      wer: 0.5
+    '300':
+      text: Eyi yɛ kwan a wofa so kenkan abasɛm bi sɛnea ɛbɛyɛ a wubenya emu ntease.
+      hyp: eyi yɛ kwan a wɔfa so kenkan n abasɛm bi sɛnea ɛbɛyɛ a wobɛnya mu ntiase
+      cer: 0.1053
+      wer: 0.3333
+    '310':
+      text: Eyi yɛ bere a ɔkenkanfo no si gyinae wɔ abasɛm no akenkan akyi.
+      hyp: eyi yɛ berɛ a ɔkenkanfo no si gyinae wɔ abasɛm no akenkanakyi
+      cer: 0.02
+      wer: 0.2308
+    '313':
+      text: Ahonnidi yɛ ade titiriw a ɛho hia pa ara wɔ nnipa apɔwmuden ne anuonyam
+        mu.
+      hyp: ahonidi yɛ ade titiriw a ɛho hia pa ara wɔ nipa apɔmuden y anunya mu
+      cer: 0.1167
+      wer: 0.3333
+    '335':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ ‘adwempɔw’ ase.
+      hyp: fa wankasa nsimfuo akyerɛkyerɛ adwompɔnw ase
+      cer: 0.1081
+      wer: 0.5
+    '338':
+      text: Obuo nyɛ biribi a yɛhyɛ obi ma no de ma yɛn na mmom, ɛyɛ ade a yenya.
+      hyp: wɔbuo nyɛ biribi a yehyɛ obi ma no de ma yɛnna mom ɛyɛ adeɛ a yɛnya
+      cer: 0.1176
+      wer: 0.4118
+    '342':
+      text: Fa no sɛ woawura sukuu dan bi mu a obiara de nnidi kyia ne yɔnko fɛfɛɛfɛ.
+      hyp: fa no sɛ woawura sukuudan bi mu a obiara de nnidikyiaa ne yɔnkɔ fɛfɛɛfɛ
+      cer: 0.0351
+      wer: 0.3125
+    '347':
+      text: Sɛ wowɔ ntoaso sukuu mu yi, kae sɛ, obuo yɛ sekan- nufanu.
+      hyp: sɛ wowɔntwoa so sukuu mu yi kan si obuo yɛ sikan nufa nu
+      cer: 0.093
+      wer: 0.5833
+    '350':
+      text: Dɛn na atifi asɛm no ka fa adwempɔw a ɛwɔ abasɛm no mu ho?
+      hyp: deɛn na atifi asɛm no ka fa adwempo a ɛwɔ abasɛm no mu ho
+      cer: 0.0682
+      wer: 0.1429
+    '352':
+      text: Fa ɔkasamu nnan bɔ abasɛm yi nyinaa tɔfa.
+      hyp: fa ɔkasa mu nam bɔ abasɛm yi nyinaaf
+      cer: 0.1515
+      wer: 0.625
+    '353':
+      text: Kyerɛw akenkan a emu dɔ su abien bi a woasua wɔ saa ɔfa yi mu.
+      hyp: kyerɛw akenkaŋ a emu dusua bie bi a woasia wɔ saa wfa yi mu
+      cer: 0.1064
+      wer: 0.4
+    '355':
+      text: Nsonsonoe bɛn na ɛda anotew ne mmɔakyi agyinaesi ntam?
+      hyp: n sosono bɛn na ɛda no too ne mu akyi gyina si ntam
+      cer: 0.2
+      wer: 0.8889
+    '356':
+      text: Kyerɛkyerɛ akenkan ntrɛwmu su abiɛsa mu?
+      hyp: kyerɛkyerɛ akenka nterɛ mmusuo abiesa mu
+      cer: 0.1471
+      wer: 0.6667
+    '357':
+      text: Kyerɛkyerɛ nsonsonoe a ɛda akenkan a emu dɔ ne akenkan ntrɛwmu mu.
+      hyp: kyerɛkyerɛ sunsunyaa edaakinkaŋa emu donia kinkan turi ŋumu
+      cer: 0.2963
+      wer: 0.8333
+    '375':
+      text: Yɛde mmataho di dwuma wɔ kasa no mu de yɛ nsɛmfua foforo.
+      hyp: yɛde mata ho di dwuma wɔ kasa no mu de yɛn nhyɛmfuoɔ foforɔ
+      cer: 0.1556
+      wer: 0.4167
+    '382':
+      text: Mmataho a yɛtaa de di dwuma pa ara ne nsianim ne nsiakyi.
+      hyp: mata ho a yɛtaa dedi dwuma pa ara ne nsiannim ni sie akyi
+      cer: 0.1111
+      wer: 0.6667
+    '387':
+      text: Nsianim yɛ mmataho a yɛde si asennua bi anim.
+      hyp: ne sɛnim yɛ mmata ho a yɛde siase nnua bi anim
+      cer: 0.0833
+      wer: 0.6667
+    '388':
+      text: Nsim nso yɛ mmataho a yɛde si asennua bi ntam.
+      hyp: nensim nso yɛ mmata ho a yɛde sii asennia bi ntam
+      cer: 0.1111
+      wer: 0.5
+    '389':
+      text: Nsiakyi yɛ mmataho a yɛde si asennua bi akyi pɛɛ.
+      hyp: me si akyi yɛn mmata ho a yɛdi si asɛnnua bi akyi pɛɛ
+      cer: 0.1282
+      wer: 0.8
+    '393':
+      text: Yennim Ghana kasa bi a saa bere yi ɛde nsim di dwuma.
+      hyp: yɛn ni mu ghana kasɛ bia saa berɛ yi ɛden nsim di dwuma
+      cer: 0.122
+      wer: 0.6667
+    '400':
+      text: Dan w’ani kyerɛ wo yɔnko na kyerɛkyerɛ mmataho ho ase kyerɛ no.
+      hyp: dan wu ani kyerɛ wo nyɔnko nakyerɛkyerɛ matahohu asekyerɛ no
+      cer: 0.08
+      wer: 0.75
+    '407':
+      text: Nyafirim mmataho no ma yenya nsɛmfua foforo fi asennua no mu.
+      hyp: nya firi mmatahonu ma yɛnya nsemfoa foforɔ fi asɛnnua no mu
+      cer: 0.14
+      wer: 0.6364
+    '427':
+      text: Mmataho dwumadi no da nso wɔ kasa ahorow mu.
+      hyp: mataho dwumadino da so wɔ kasahoro mu
+      cer: 0.1143
+      wer: 0.6667
+    '428':
+      text: Ɛboa ma yetumi yɛ nsɛmfua foforo fi asennua anaa asɛmfua dedaw bi mu.
+      hyp: ɛboa ma yɛtumi yɛ nsɛmfoɔ foforɔ fi asɛnnua anaaa asemfo dedaw bi mu
+      cer: 0.1607
+      wer: 0.4615
+    '429':
+      text: Etumi sesa asɛmfua bi asɛmfuakuw fi biako mu kɔ foforo mu.
+      hyp: yɛtumi sesa asemfoɔ bi asemfo akuwu fi bi akomu kɔ foforɔ mu
+      cer: 0.1915
+      wer: 0.6364
+    '430':
+      text: Etumi sesa adeyɛ bi kabea.
+      hyp: ɛtumi sesaa adeyɛ bi kabea
+      cer: 0.0952
+      wer: 0.4
+    '432':
+      text: Etumi sesa asɛmfua bi kabea fi kabea biako mu kɔ foforo mu.
+      hyp: yɛtumi sesa asemfoɔ bi kabea fikabea bi akɔ mu kɔ foforɔ mu
+      cer: 0.1489
+      wer: 0.5
+    '433':
+      text: Mmataho tumi sesa asɛmfua (edin) fi biakofo mu kɔ dodow kabea mu.
+      hyp: mata ho tumi sisa asemfo a ɛdin mfi bi a akɔfo mu kɔ nodoɔ kabea mu
+      cer: 0.1961
+      wer: 0.9167
+    '434':
+      text: Mmataho ho nimdeɛ boa ma yetumi sopɛ nsɛmfua san sua yɛn kasa no yiye.
+      hyp: mata hohu nimedee boaa ma yɛtumi supɛnhsyɛmfuo asansua yɛnkasa no yiyi
+      cer: 0.1964
+      wer: 0.8571
+    '437':
+      text: Etumi sesa edin ma no dan edin nkyerɛkyerɛmu.
+      hyp: mɛtumi sesaa din ma no dan edin kyerɛkyerɛ mu
+      cer: 0.1081
+      wer: 0.625
+    '438':
+      text: Etumi sesa edin a yehu ma no dan edin a yenhu.
+      hyp: yɛtumi sesa edin a yehu ma nɔ dan edin a yɛnhu
+      cer: 0.1143
+      wer: 0.2727
+    '439':
+      text: Etumi sesa edin nkyerɛkyerɛmu ma no dan edin.
+      hyp: yɛtumi sesa edin nkyerɛkyerɛ mu mma no dan din
+      cer: 0.1081
+      wer: 0.625
+    '440':
+      text: Etumi sesa adeyɛ ma no dan edin nkyerɛkyerɛmu.
+      hyp: yɛtumi sesa adeyɛ ma no dan din kyerɛkyerɛ mu
+      cer: 0.1053
+      wer: 0.5
+    '441':
+      text: Etumi sesa adeyɛ ma no dan edin.
+      hyp: yɛtumi sesa adeyɛ ma no daneɛ din
+      cer: 0.12
+      wer: 0.4286
+    '457':
+      text: Wɔn dwumadi titiriw pa ara ne sɛ wɔbɛka ɔkasa afa ahorow abobom.
+      hyp: wo dwumadi kyitiriw pa araunne sɛ wɔbɛka wɔkasa fa ahorɔ abobɔ mu
+      cer: 0.2308
+      wer: 0.75
+    '461':
+      text: Kofi ne Ama kɔ afum.
+      hyp: kofi ne amako afum
+      cer: 0.0667
+      wer: 0.4
+    '462':
+      text: Mekɔɔ bi nanso manni bi.
+      hyp: mekɔɔ bi nanso mani bi
+      cer: 0.0526
+      wer: 0.2
+    '463':
+      text: Onni sika nti, obiara mpɛ no yɔnko.
+      hyp: oni sika nti obiara mpɛ no yɔnkɔ
+      cer: 0.0741
+      wer: 0.2857
+    '464':
+      text: Kofi Boadi bɛba oo, ɔmma oo, yebesua ade.
+      hyp: kufi buadi bɛba wɔ ɔma wɔ yɛbɛsua de
+      cer: 0.3226
+      wer: 0.875
+    '465':
+      text: Linda bedi banku anaa abeteɛ?
+      hyp: linda bɛdi beŋku anaa h abɛtie
+      cer: 0.2917
+      wer: 0.8
+    '478':
+      text: Yɛmfa nsanhɔ (,) mma nkabomde no akyi.
+      hyp: ɛmfa nsan ho mmaŋkabɔmu din no akyi
+      cer: 0.25
+      wer: 0.8333
+    '480':
+      text: Minim Nyame a magye no adi.
+      hyp: meni mi nyame a magye noadi
+      cer: 0.0952
+      wer: 0.6667
+    '481':
+      text: Ɔkyerɛkyerɛni a ɔboo me no aba.
+      hyp: ɔkyerɛkyerɛ ni a ɔbɔɔ me no aba
+      cer: 0.08
+      wer: 0.5
+    '482':
+      text: Kasamufa titiriw nkabomde a ɛka kasamufa kumaa ne kasamufa titiriw bom.
+      hyp: kasamufoa titirio nkabomdeɛ a ɛkakasammu faa kumaa ne kasamu faa titiribom
+      cer: 0.1167
+      wer: 0.7273
+    '488':
+      text: Bere a mereto dwom no, mihuu me nana.
+      hyp: berɛ a mere tu dwom no mehuu minana
+      cer: 0.1429
+      wer: 0.75
+    '489':
+      text: Ansa sa mmrɛnkɛnsono besi ne ti ase no, na onim nea asaase aka akyerɛ
+        no.
+      hyp: ansa sa mmerɛnke nso no bɛsi ne tii aso no na ɔnim nea asase aka akyerɛ
+        no
+      cer: 0.1228
+      wer: 0.5333
+    '490':
+      text: Yaw Annor amma ntɛm nti, obiara kɔ.
+      hyp: yaw annor amantɛm nti obiara kɔ
+      cer: 0.037
+      wer: 0.2857
+    '492':
+      text: Wɔtaa frɛ Ntotoho kabomde yi sɛ mmɔho nkabomde.
+      hyp: wɔtaa frɛ ntoto ho kabomdin kyɛ mɔ ho nkabomude
+      cer: 0.1538
+      wer: 0.875
+    '499':
+      text: Ɔbra no bɔ yɛ den ɛfisɛ, sika nni me ho.
+      hyp: ɔbrɛ no bɔ yɛɛ den ɛfiri sɛ sika nni me hu
+      cer: 0.1724
+      wer: 0.5
+    '500':
+      text: Berɛ a yɛrekɔ sukuu no, ɔfrɛɛ me.
+      hyp: berɛ a yereko sukuu no ɔfrɛɛ me
+      cer: 0.08
+      wer: 0.1429
+    '501':
+      text: Minni gye sɛ woapa me kyɛw.
+      hyp: mennigyee sɛ woapa me kyɛ wo
+      cer: 0.1429
+      wer: 0.6667
+    '502':
+      text: Sɛ minyini a, metu kwan.
+      hyp: sɛ menyini a metu kwan
+      cer: 0.0556
+      wer: 0.2
+    '508':
+      text: Nkabomde ho mfaso da nso wɔ kasa ahorow mu.
+      hyp: nkabomude ho mfa sodan so wɔ kasa horo mu
+      cer: 0.0882
+      wer: 0.5556
+    '510':
+      text: Ɛkyerɛkyerɛ botae mu anaa ɛda nea enti bi adi.
+      hyp: ɛkyerɛkyerɛ bota mu anaa daneɛ ntibi adi
+      cer: 0.1081
+      wer: 0.5556
+    '511':
+      text: Ɛboa de kasamufa anaa asɛnsin bi ka ɔfoforo no ho.
+      hyp: ɛboa dekasa mu fa anaa asinsim bi ka ɔfoforɔ no ho
+      cer: 0.075
+      wer: 0.5
+    '513':
+      text: Ɛboa da nsonsonoe a ɛda biribi ntam adi.
+      hyp: ɛboa dansonsonoeɛ a da biribi ntam adi
+      cer: 0.0625
+      wer: 0.375
+    '515':
+      text: Yɛde yɛ ntotoe fa adwempɔw bi ne asɛm bi ho.
+      hyp: yɛde yɛn totɔe fa adwompoɔ bi nne asɛm bi hɔ
+      cer: 0.1765
+      wer: 0.5
+    '517':
+      text: Mmara kakra bi a ɛho hia pa ara da nkabomde dwumadi ho.
+      hyp: mmara kakrɛ bi a ɛho hia pa arada nkabomdi dwuma di hɔ
+      cer: 0.0698
+      wer: 0.5
+    '520':
+      text: Nkabomde ka adwen, dwumadi ne nimdeɛ bom.
+      hyp: tabomdek adwen madi ne nimdeɛ bo mu
+      cer: 0.2121
+      wer: 0.7143
+    '523':
+      text: Nkabomde boa ma yetumi kyerɛw nneɛma ahorow bi din mmiako mmiako.
+      hyp: kabomdeboa maa yɛtumi kyerɛ wo nneɛma ahoro bi din mmiakommia ko
+      cer: 0.0926
+      wer: 0.7273
+    '534':
+      text: Hena na ɔtoto saa nneɛma ahorow no din?
+      hyp: hene na ɔtoto saa nneɛma ahoroɔ no din
+      cer: 0.0645
+      wer: 0.25
+    '552':
+      text: Ɔkasa bebree fɛm wɔn nsɛmfua fi kasa afoforo mu.
+      hyp: wɔkasa bebree famu wɔn nsemfo afikasaa afoforɔ mu
+      cer: 0.1795
+      wer: 0.6667
+    '559':
+      text: Ɛma ɔkasa tu mpɔn efisɛ ɛma yenya nsɛmfua foforo ka dedaw no ho.
+      hyp: mɛma ɔkasa tumpɔn ɛfiri sɛ ɛma yɛn nyansenfoɔ foforɔ kadedaw no ho
+      cer: 0.2157
+      wer: 0.6923
+    '560':
+      text: Ɛma yetumi ka kasa bi wɔ aman ahorow so.
+      hyp: mɛma yɛtumi kakasɛ bi wɔ amaŋahoro so
+      cer: 0.1613
+      wer: 0.6667
+    '561':
+      text: Ɛma yetumi nya nsɛmfua toto nneɛma foforo din.
+      hyp: ɛma yɛtumi nnya nsomfo atoto nneɛma foforɔ din
+      cer: 0.1316
+      wer: 0.625
+    '562':
+      text: Ɛma yehu nsɛmfua bi abɔse.
+      hyp: mɛma yɛhunsemfoɔ bi abose
+      cer: 0.2857
+      wer: 0.8
+    '565':
+      text: Kyerɛw mmataho nkyekyɛmu ahorow a ɛwɔ Akuapem Twi mu.
+      hyp: tyerɛ mataho kyekyɛmu ahorow a ɛwɔ akua pimtwimu
+      cer: 0.1136
+      wer: 0.6667
+    '566':
+      text: Kyerɛw mmataho anan a ɛwɔ Akuapem Twi mu.
+      hyp: twerɛ mata ho anaŋ a ɛwɔ akuapumtsumu
+      cer: 0.2424
+      wer: 0.875
+    '567':
+      text: Pɛnsɛmpɛnsɛm mmataho dwumadi anan anaa nea ɛboro saa mu.
+      hyp: pɛsɛmpensɛm mata ho dwumadi anan anaane aborosɛe mu
+      cer: 0.1277
+      wer: 0.7778
+    '569':
+      text: Kyerɛ nkabomde ahorow a ɛwɔ Akuapem Twi mu.
+      hyp: kyerɛ nkabomdi ahorowa a ɛwɔ akura pumu twimu
+      cer: 0.1429
+      wer: 0.625
+    '570':
+      text: Kyerɛ nsonsonoe a ɛwɔ nkabomde ahorow a woakyerɛw no ntam.
+      hyp: kyerɛ sonsonn a ɛwɔ nkabomde ahoro a wɔakyerɛ w no ntam
+      cer: 0.1042
+      wer: 0.4
+    '573':
+      text: Sensan nkabomde a ɛwɔ ɔkasamu a edidi so yi mu ase.
+      hyp: sɛnsankabomdeɛ a ɛwɔ ɔkasa mu a didi so yi mu ase
+      cer: 0.1
+      wer: 0.4545
+    '574':
+      text: Maame Amma rekenkan ɛnna Kwame nso rekyerɛw.
+      hyp: mame a marikinkan ɛna kwame nso rekyerɛ wo
+      cer: 0.1622
+      wer: 0.8571
+    '577':
+      text: Ɔkɔm de no nti na odidii.
+      hyp: ɔkɔm de no nti na ɔdidii
+      cer: 0.0526
+      wer: 0.1667
+    '579':
+      text: Fufuu o, ampesi o, mepɛ.
+      hyp: fufu wɔ ampesi wɔ me pɛ
+      cer: 0.2353
+      wer: 1.0
+    '580':
+      text: Dansoaa bedi abeteɛ anaa banku.
+      hyp: ansoa bi di abɛtee anaa banku
+      cer: 0.1923
+      wer: 0.8
+    '581':
+      text: Kyerɛ nsɛmfuayɛ ahorow abiɛsa wɔ Akuapem Twi mu.
+      hyp: kyerɛnsenfo ayɛ ahorowa bi a ɛsa wɔ akuapuntwimu
+      cer: 0.15
+      wer: 1.0
+    '582':
+      text: Kyerɛkyerɛ nsɛmfuayɛ ahorow abiɛsa mu wɔ Akuapem Twi mu.
+      hyp: kyerɛkyerɛ nsemfo ayɛahorow biehyɛ mu wɔ akuapuntwimu
+      cer: 0.1915
+      wer: 0.6667
+    '583':
+      text: Kyerɛkyerɛ nsɛmfuayɛ so mfaso abiɛsa anaa nea ɛboro saa wɔ Akuapem Twi.
+      hyp: kyerɛkyerɛ nsɛmfo a yɛ so mfasoɔ biesa ananea ɛboro saa wɔ akuapentwi
+      cer: 0.0847
+      wer: 0.75
+    '584':
+      text: Kyerɛw nsɛmfuayɛ ahorow a ɛwɔ abasɛm a ɛwɔ fam hɔ no mu.
+      hyp: kyerɛ w nsanfoayɛ ahorow a ɛwɔ abasam a ɛwɔ fam ho no mu
+      cer: 0.1136
+      wer: 0.4167
+    '585':
+      text: Ɛnnɛ, abɛɛfo mfididwuma ho hia wɔ nhomasua mu pa ara.
+      hyp: ɛnnɛ abeɛfoɔ mfiri dwuma ho hia wɔ homahyiamu pa ara
+      cer: 0.1667
+      wer: 0.5
+    '591':
+      text: Asɛmmisa no ne sɛ, dɛn na edi hɔ bio?
+      hyp: asɛmmisa no ne se den na ɛdi ho bio
+      cer: 0.1481
+      wer: 0.4444
+    '598':
+      text: Wubesua ade afa akyerɛw mu agyiraehyɛde nso ho.
+      hyp: wobɛhsua ade afa akyerɛ mu agyirahyɛde nso hɔ
+      cer: 0.1538
+      wer: 0.5
+    '600':
+      text: Eyi bɛsan aboa wo ama woatumi asua asan ate Borɔfo kasa no yiye.
+      hyp: eyi bɛsanh abua wɔ ama woatumi asua asan ati borɔfo kasa no yii
+      cer: 0.1176
+      wer: 0.3846
+    '604':
+      text: Kasamufa yɛ nsɛmkuw bi a ɛda adi wɔ ɔkasamu mu.
+      hyp: kasa mu fa yɛn nhsɛmkuo bi a da di wɔ ɔkasa mu mu
+      cer: 0.1351
+      wer: 0.9
+    '617':
+      text: Eti no na yegyina so de hu kasasin koro.
+      hyp: eti no na yɛgyina so de hun kɛsasinkoro
+      cer: 0.0968
+      wer: 0.4444
+    '621':
+      text: Kasain ahorow abiɛsa nonom ne edin kasasin, adeyɛ kasasin ne ɔkyerɛfo
+        kasasin.
+      hyp: kasɛn ahoro abiasa no no na din kasasi adeɛ kasa si ne ɔkyerɛfo kasasyi
+      cer: 0.1846
+      wer: 1.0
+    '622':
+      text: Eyi yɛ kasasin a eti no yɛ edin anaa dinnsiananmu.
+      hyp: yeyi yɛ kasa sinaiti ni yɛ edin anaa din sia nam mu
+      cer: 0.125
+      wer: 0.9
+    '624':
+      text: Edin kasasin tumi yɛ asɛmfua koro pɛ a ɛyɛ edin anaa edinnsiananmu .
+      hyp: nedi kasasintumi yɛ asimfoa koro pɛ a ɛyɛ diŋa naa h edin sianam mu
+      cer: 0.1636
+      wer: 0.75
+    '631':
+      text: Yetumi nya asɛmfua a ɛboro biako wɔ Edin kasasin mu.
+      hyp: ɛtumi nya asemfo a aburu bi ako wɔ edin kɛsɛsɛ mu
+      cer: 0.2619
+      wer: 0.6
+    '643':
+      text: Afua papa yere no awo.
+      hyp: afuo papa yere no a wo
+      cer: 0.0588
+      wer: 0.6
+    '670':
+      text: Adeyɛ kasasin yɛ kasasin a eti no yɛ adeyɛ.
+      hyp: adeɛyɛ kɛsɛ se yɛ kɛsasina a ɛtini yɛ adeyɛ
+      cer: 0.2647
+      wer: 0.6667
+    '673':
+      text: Adeyɛ kasasin a ɛyɛ adeyɛ titiriw biako pɛ no, yɛfrɛ no Adeyɛ Kasasin
+        Tiawa.
+      hyp: adeyɛ kasa sin a ɛyɛ adeɛ titiri bi akopɛ no yɛfrɛ no adeɛ kɛsɛsɛ tiawa
+      cer: 0.1148
+      wer: 0.5714
+    '678':
+      text: Adeyɛ kasasin a ɛwɔ adeyɛ mmataho, adeyɛ titiriw ne adeyɛ boafo.
+      hyp: adeɛyɛ kɛsa sina a ɛwɔ adeyɛ mata ho adeɛ titiriwu ne adeyɛ boafoɔ
+      cer: 0.1346
+      wer: 0.7273
+    '690':
+      text: Kasasin a eti asɛmfua no yɛ ɔkyerɛfo no, yɛfrɛ no Ɔkyerɛfo Kasasin.
+      hyp: kasa sina tii asemfoɔ no yɛ ɔkyerɛfo no yɛfrɛ no ɔkyerɛfo kɛsasin
+      cer: 0.1111
+      wer: 0.4167
+    '693':
+      text: Ɔpon anan a ɛwɔ fam hɔ no ma yehu ɔkyerɛfo kasasin ne wɔn nhyehyɛe ahorow.
+      hyp: ɔpɔn anan a ɛwɔ fam ho no maa yehu ɔkyerɛfo kɛsesi ne wɔn nhyehyɛɛ ahoro
+      cer: 0.1356
+      wer: 0.4
+    '700':
+      text: Yetumi nya kasasin bebree wɔ ɔkasamu bi mu.
+      hyp: wɛtumi nnya kasasem bebree wɔ ɔkasa mu bi mu
+      cer: 0.1429
+      wer: 0.625
+    '701':
+      text: Boadu kɔɔ kurow no mu.
+      hyp: woedu kɔɔ kuro no mu
+      cer: 0.1765
+      wer: 0.4
+    '707':
+      text: Wɔde kasasin da adwempɔw bi adi.
+      hyp: wɔde kasa sin da adwomfoɔ bi adi
+      cer: 0.1538
+      wer: 0.5
+    '708':
+      text: Kasasin di akoten wɔ kasa ne akyerɛw nkitahodi mu.
+      hyp: ka sasi dii akotiŋ wɔ kasania tserɛ wo kitahodimu
+      cer: 0.1951
+      wer: 1.0
+    '712':
+      text: Monsensan asɛmfua a ɛyɛ kasasin a moahu no ti no mu biara ase.
+      hyp: monsensa asɛmfo a ɛyɛ kasa sina a woahu no tii no mu biara ase
+      cer: 0.1224
+      wer: 0.4615
+    '741':
+      text: Wo ne wo mfɛfo nkyɛ wo mmuae no.
+      hyp: wo na wo mfafo nkyɛ wo mmuaeɛ no
+      cer: 0.125
+      wer: 0.375
+    '753':
+      text: Ɔkasamu Tiawa ne Ɔkasamufa Titiriw ntam wɔ pon a ɛwɔ ase hɔ no so.
+      hyp: ɔkasɛ mu tiawa ara ne ɔkasamufoɔ titiriw ntam wɔ pɔn a ɛwɔ ase ho no so
+      cer: 0.1538
+      wer: 0.4286
+    '764':
+      text: Kojo nom nsu a, ɔbɛfe.
+      hyp: kojonum nhyia a ɔbɛfe
+      cer: 0.3125
+      wer: 0.6
+    '765':
+      text: Mɛhwehwɛ no, sɛ mekɔ a.
+      hyp: mehwehwɛ no sɛ mekɔ a
+      cer: 0.0588
+      wer: 0.2
+    '767':
+      text: Yɛreba no, yehyiaa Kɔnɔngo Tiwaa.
+      hyp: yereba no yehyia ko no wo kyi waa
+      cer: 0.2963
+      wer: 1.4
+    '772':
+      text: Mpɛn pii no, ɛka biribi fa ɔkasamufa titiriw no.
+      hyp: mpɛn pii no ɛka biribi fa ɔkasamufoɔ atitiriw no
+      cer: 0.0526
+      wer: 0.2222
+    '780':
+      text: Berɛ a worekɔ no, mefrɛɛ wo.
+      hyp: berɛ a wɔrekɔ no me frɛɛ wok
+      cer: 0.0952
+      wer: 0.6667
+    '782':
+      text: Mɛka sɛ wo papa ba a.
+      hyp: meka sɛ wo papa pa a na no wu
+      cer: 0.5333
+      wer: 0.8333
+    '783':
+      text: Sɛ yɛanhwɛ a, yɛrenhu no yie.
+      hyp: sɛ yɛnhwɛ a yɛrenhunu yie
+      cer: 0.0909
+      wer: 0.5
+    '820':
+      text: Ɔman bɛn mu na Kumase wɔ?
+      hyp: wɔman be mu na kumase wɔ
+      cer: 0.1579
+      wer: 0.3333
+    '833':
+      text: Abofra yi ho yɛ fɛ!
+      hyp: abɔfra yi ho yɛ fe
+      cer: 0.1429
+      wer: 0.4
+    '837':
+      text: Biribiara nni eyi mu a ɛkyerɛ sɛ ɔkasafo no rehyɛ n’atiefo no ama wɔayɛ
+        biribi.
+      hyp: biribiara nni eyimu a ɛkyerɛ sɛ ɔkasafo no rehyɛ atiefo no ama wayɛ biribi
+      cer: 0.0317
+      wer: 0.2667
+    '839':
+      text: Wobetumi ama asɛmmisa nsɛmfua ho nhwɛso wɔ Akuapem Twi mu?
+      hyp: wɔbɛtumi ama asɛmmisansonfo ho nhwɛso wɔ akuapentwimu
+      cer: 0.1458
+      wer: 0.6
+    '841':
+      text: Ɔkasamufa Titiriw a edi dwuma sɛ Asɛmmisa.
+      hyp: ɔkasa mufoɔ akyitiriwɔ a ɛdi dwuma sɛ asɛmmisa
+      cer: 0.1714
+      wer: 0.5714
+    '843':
+      text: Worehwehwɛ wo mpaboa no ana?
+      hyp: wɔrehwehwɛ wo mpaboa no ana
+      cer: 0.0435
+      wer: 0.2
+    '852':
+      text: Lartebea kenkanee nhoma a ne papa tɔ maa no no.
+      hyp: late bi akenkane nhum a ne papatu maa no no
+      cer: 0.1622
+      wer: 0.6
+    '853':
+      text: Ɔbea no a ɔtɔɔ mpaboa nnɛra no kɔ.
+      hyp: ɔbea no a ɔtoo mpaboa nnera no kɔ
+      cer: 0.1154
+      wer: 0.25
+    '861':
+      text: Etumi di dwuma sɛ ɔyɛfo, ɔyɛtia anaa ogyefo.
+      hyp: ɛtumi de dwuma sɛ ɔyɛfo oye tia anaagyefo
+      cer: 0.1429
+      wer: 0.625
+    '878':
+      text: Ɔkyerɛfo kasamufa kumaa na yɛasensan ase wɔ ɔkasamu a ɛwɔ soro hɔ no mu
+        no.
+      hyp: wɔkyerɛfo kasa mufa kumaa a yɛasensan ase wɔ kasamu a ɛwɔ soroho no mu
+        no
+      cer: 0.0667
+      wer: 0.4667
+    '879':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ ɔkasamufa mu.
+      hyp: fa wɔn ankasa nsemfuo akyerɛkyerɛ ɔkasamufa mu
+      cer: 0.1081
+      wer: 0.6667
+    '880':
+      text: Ka wo mmuae no kyerɛ wo mfɛfo.
+      hyp: ka wo mmua no kyerɛ wo mfefo
+      cer: 0.087
+      wer: 0.2857
+    '891':
+      text: Mikohuu m’adamfo bi a na ɔredi ɔmo wɔ hɔ.
+      hyp: me kɔhuhum adamfo bi a na ɔrede ɔmo wɔ hɔ
+      cer: 0.129
+      wer: 0.4444
+    '899':
+      text: Ekuw biara mma ɔkasamufa ahorow a moasua no mu biara ho nhwɛso biako.
+      hyp: ekuo biara mma ɔkasamu fa ahorow a woasua no mu biara ho nhwɛsobea ako
+      cer: 0.0714
+      wer: 0.4615
+    '900':
+      text: Ekuw biara nka ne mmuae nkyerɛ adesuafo nkae no.
+      hyp: ekuo biara nka ne mmua nkyerɛ adesuafo nkan no
+      cer: 0.0769
+      wer: 0.3333
+    '905':
+      text: Barima Boadu di fufuu daa.
+      hyp: mmarima boa didi fofuu daa
+      cer: 0.1905
+      wer: 0.8
+    '906':
+      text: Yɛde tete ɔkasamu ahorow mu.
+      hyp: yɛde tetee ɔkasɛ mu ahoro mu
+      cer: 0.1304
+      wer: 0.8
+    '907':
+      text: Yɛde twa nsɛmfua binom tiawa.
+      hyp: yɛde twa nsemfoɔ binom tiawa
+      cer: 0.125
+      wer: 0.2
+    '908':
+      text: Yɛde si anodisɛm kasasin anaa kasamu bi awiei.
+      hyp: yɛde si anodisɛm kasa si anaa kasa mu bi awieyi
+      cer: 0.0526
+      wer: 0.625
+    '909':
+      text: Alice kaa sɛ, “Mepɛ akenkan”.
+      hyp: yelikye ka si me pɛ akenkanu
+      cer: 0.3333
+      wer: 1.2
+    '912':
+      text: Owusuaa kɔɔ kurom kɔtɔɔ mako, nkyene, sekan ne akutu.
+      hyp: wobusua kɔɔ kurom kɔtoo mmako nkyene sekane kutu
+      cer: 0.1905
+      wer: 0.6667
+    '913':
+      text: Afua wɔ adan, kaa, mfuw ne nsase.
+      hyp: afuo wɔ adanka a mfuuni nsa asi
+      cer: 0.2083
+      wer: 0.8571
+    '914':
+      text: Yɛde tete deeti, nkurow ne aman ahorow ntam.
+      hyp: yɛde titidie ti nkuronia mmaŋ ahuro ntam
+      cer: 0.2571
+      wer: 0.75
+    '916':
+      text: Minim Kumase, Sunyane, Takyiman ne Akyerɛnsua.
+      hyp: menim kumase sunyaane techimanin akyerɛ sua
+      cer: 0.2105
+      wer: 0.8333
+    '917':
+      text: Yɛde tete edin nkyerɛkyerɛmu ahorow a ɛrekyerɛkyerɛ edin biako mu ntam.
+      hyp: yɛde tetee din nkyerɛkyerɛ mu ahorow a ɛrekyerɛkyerɛɛ din biako mu ntam
+      cer: 0.0167
+      wer: 0.5455
+    '918':
+      text: Papa tuntum, tenten, kɛse no ada.
+      hyp: papa tuntum tenten kɛse no ada
+      cer: 0.0
+      wer: 0.0
+    '919':
+      text: Dua kɛse, tiatia, tuntum no abu.
+      hyp: dua akɛsekyiakia tuntum no abu
+      cer: 0.1667
+      wer: 0.3333
+    '923':
+      text: Yɛde osisan si ɔkasamufa titiriw abien ntam.
+      hyp: nɛ deɛ ɔsisansii ɔkasa mu faa titiriwa bie ntam
+      cer: 0.1622
+      wer: 1.1429
+    '924':
+      text: Makenkan nhoma ahorow; Ehia Wo A, Nwu na m’ani gye ho pa ara.
+      hyp: makenkaŋ humahoro ehia waa ŋuname ni je hu para
+      cer: 0.2889
+      wer: 0.9231
+    '926':
+      text: Yɛde tete nneɛma ahorow a yɛrebobɔ edin ntam.
+      hyp: yɛde tete nneɛma ahoro a yɛre bɔboyɛ din ntam
+      cer: 0.1351
+      wer: 0.5
+    '928':
+      text: Yɛde ogyawnsɛnkyerɛnne da ɔdede bi adi.
+      hyp: yɛde o jaŋ sankyerɛ nɛ da ɔdidi bee di
+      cer: 0.3333
+      wer: 1.1667
+    '929':
+      text: Yɛde hyɛ asɛmfua bi mu de kyerɛ sɛ, akyerɛwde bi ayera afi beae pɔtee
+        bi.
+      hyp: yɛde hyɛ aseɛmfoɔ bi mu ne kyerɛ si akyerɛdibea ayera afi biara repɔteɛ
+        bi
+      cer: 0.2456
+      wer: 0.4667
+    '930':
+      text: Yɛnam nkatomde so de da obi anom asɛm pɔtee bi adi.
+      hyp: nɛnam nkatumude so deda obiarannom asɛmpo teɛ bi adi
+      cer: 0.2
+      wer: 0.7273
+    '933':
+      text: Yetumi san nso de da abasɛm bi atifi asɛm adi.
+      hyp: yɛtumi san nso deda abasɛm bi atifie asɛm adi
+      cer: 0.0556
+      wer: 0.4
+    '935':
+      text: Yɛsan de da anomsɛm pɔtee bi adi fi akyerɛw nkae no ho.
+      hyp: yɛsan de da anomsɛm mpo teɛ bi a di fi akyerɛ wo kan no ho
+      cer: 0.1163
+      wer: 0.5833
+    '938':
+      text: Yɛde nsɛmfua-ntam-abaa kyerɛ twaka anaa ayɔnkofa a ɛda nneɛma abien bi
+        ntam.
+      hyp: ɛdesifo ntam abaakyere twaka anaa ayɔnkofoɔ a ɛda nneɛma bien bi ntam
+      cer: 0.1613
+      wer: 0.4167
+    '939':
+      text: Yɛnam so de nkyerɛkyerɛmu foforo bi ka nea ɛda gua dedaw no ho.
+      hyp: yɛnam so de nkyerɛkyerɛ mu foforɔ bi ka nea ɛdaguadedaɔ no ho
+      cer: 0.04
+      wer: 0.4615
+    '940':
+      text: Nhwɛso Amma tɔɔ nnuaba (akutu, kwadu ne aborɔbɛ) wɔ kurom hɔ.
+      hyp: tosɔmatoo nuaba akutuu kwadu niaborobe w kurom hu
+      cer: 0.3404
+      wer: 0.8182
+    '941':
+      text: Yetumi de si nsanhɔ anaa osiprenu ananmu.
+      hyp: yɛtumi de si nsaŋ hu anaa osipirenuu ananmu
+      cer: 0.1471
+      wer: 0.5714
+    '943':
+      text: Ɛkyerɛ ayɔnkofa anaa nsonsonoe a ɛda nsɛmfua binom ntam.
+      hyp: ɛkyirɛ yɔnkofa anaansonson a ada nsemfo binom ntam
+      cer: 0.1702
+      wer: 0.6667
+    '945':
+      text: Yɛde si nteamu kasamu anaa ɔhyɛ kasamu akyi de da nkatede a ɛwɔ soro adi.
+      hyp: ɛde sintie mu kɛsa mu anaa ɔhyɛ kasɛ mu akyi ne dankate di a ɛwɔ soro adi
+      cer: 0.1207
+      wer: 0.6667
+    '946':
+      text: Yɛde si asɛmmisa kasamu bi akyi.
+      hyp: na di sii asɛmmisakasa mu bi akyi
+      cer: 0.1538
+      wer: 0.8333
+    '966':
+      text: Momfa mo mmuae no ntoto afoforo baanu bi de ho.
+      hyp: momfa mo mmua no ntotoo afoforɔ baanu bi de hɔ
+      cer: 0.1081
+      wer: 0.4
+    '970':
+      text: Meduu ɛhyɛngyinabea hɔ no na ɛhyɛn no atu dedaw.
+      hyp: meduu hyegyinabea ho no na ɛhyɛn no atudidawo
+      cer: 0.1538
+      wer: 0.4444
+    '971':
+      text: Me nnamfonom Oforiwaa,, Boatemaa, Gyamfuaa ne Kuma bɛba abɛsra yɛn.
+      hyp: menamfonom ɔfɔrewa boatemaa jamfuo a ni kuma bɛba abɛsra yɛn
+      cer: 0.1667
+      wer: 0.6
+    '976':
+      text: Kyerɛ nea nti a wode saa akyerɛw mu agyiraehyɛde no dii dwuma.
+      hyp: kyerɛneaɛ nte a wɔde saa akyerɛ mu agyirahyɛde no dii dwuma
+      cer: 0.1
+      wer: 0.5
+    '986':
+      text: Hwɛ sini a wɔde ato hɔ yi na watumi akenkan pii afa ɔkasasin ahorow no
+        ho.
+      hyp: hwɛ sinia a wɔde ato ho yi na wɔatumi akenkɛn pii afɔrkasa sia horo no
+        ho
+      cer: 0.1379
+      wer: 0.4375
+    '988':
+      text: Kenkan linke a ɛwɔ ase hɔ no na nya nimdeɛ pii fa ɔkasasin ahorow no ho.
+      hyp: kenkalinki a ɛwɔ ase hɔ no na nya nnwimdie pii fa ɔkasa sinahoro no ho
+      cer: 0.125
+      wer: 0.3125
+    '989':
+      text: Kenkan linke a ɛwɔ ase hɔ a ɛfa kasamufa ne ne ahorow ho no.
+      hyp: tenkalinki a ɛwɔase ho a ɛfa kasamu faa ne ne ahorohoɔhɔ no
+      cer: 0.1957
+      wer: 0.6429
+    '990':
+      text: Kenkan linke a ɛwɔ ase hɔ no na nya nimdeɛ a ɛkɔ nkan.
+      hyp: kenkalinkia a wɔ aso hɔ no na nyɛ nimdeɛ a ɛkonkan
+      cer: 0.1463
+      wer: 0.5385
+  source: evaluated
+- model: ghananlpcommunity/ghana-tts-36k
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  cer: 0.1743
+  wer: 0.6081
+  score: 0.1743
+  samples: 200
+  valid: 200
+  avg_seconds: 0.0
+  judge:
+    model: Qlerqly/griot-nano-1
+    cer_on_real_speech: 0.2193
+  entries:
+    '7':
+      text: Saa ɔfa yi kasa fa asɛnsin, asɛnsin nhyehyɛe ne toonu ho.
+      hyp: saa ɔfa yikasa fa asɛnsin asɛnse nhyehyɛɛ ne too no ho
+      cer: 0.0889
+      wer: 0.5455
+    '19':
+      text: Asɛnsin yɛ asɛmfua fa bi a yɛte wɔ kasa mu.
+      hyp: asɛsi yɛ asɛmfoɔ afabea yɛte wɔ kasa m
+      cer: 0.1818
+      wer: 0.6
+    '20':
+      text: Anom (Kɔnsonant) nnyigyei yɛ anom nnyigyei a etumi gyina sɛ asɛnsin.
+      hyp: non forms yɛgyigyidi yɛbee anom ani gye a ɛtumi gyina sɛ asɛnse
+      cer: 0.4
+      wer: 0.7273
+    '21':
+      text: Toonu yɛ ɛnne mu nsakrae a etumi de nsakrae ba asɛmfua ntease mu.
+      hyp: konu yɛ ne mo nsa krae ayitomi de nsakraeba sɛmfoɔ nteasem ma
+      cer: 0.25
+      wer: 0.8462
+    '51':
+      text: Wɔakyekyɛ asɛmfua biara mu kɔ nsɛnsin ahorow a ɛwɔ mu mu.
+      hyp: wɔakyekyɛɛ asɛmfoɔ biara mu kɔ nsɛnsen ahoro a ɛwɔ mo mu
+      cer: 0.1304
+      wer: 0.4545
+    '55':
+      text: Asɛnsin a emu abue yɛ asɛnsin a ɛnne nnyigyei twa to.
+      hyp: asɛnson a ɛmu abue yɛ asɛnsen a ɛne nnyegyeetwa to
+      cer: 0.1429
+      wer: 0.5455
+    '60':
+      text: Asɛnsin a emu to yɛ asɛnsin a anom nnyigyei twa to.
+      hyp: asɛnsin a emutu yɛ asɛnsera anom nyegyetwato
+      cer: 0.15
+      wer: 0.6364
+    '65':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ asɛnsin ase.
+      hyp: fa woankasa nsɛmfoɔ akyerɛkyerɛ asɛnse nasem
+      cer: 0.1389
+      wer: 0.8333
+    '67':
+      text: Kyerɛkyerɛ nsɛnsin ahorow a ɛwɔ Akuapem Twi kasa mu no mu.
+      hyp: serekyire asezen tohora ɛwɔ akoapem toi kɛsa monom
+      cer: 0.4043
+      wer: 0.9091
+    '68':
+      text: Kyerɛkyerɛ mfaso a ɛwɔ asɛnsin nhyehyɛe ho nimdeɛ so wɔ nsɛmfuayɛ mu.
+      hyp: tɛkare mfa so awa asensen nhyehyɛ ho nimdeɛ so wɔ nsɛmfoɔayam
+      cer: 0.2807
+      wer: 0.6667
+    '69':
+      text: Ɛne wo mfɛfo nkyɛ wo mmuae no.
+      hyp: ɛne wo mfefoɔ nkyɛ wɔ muaeɛ no
+      cer: 0.2174
+      wer: 0.4286
+    '70':
+      text: Ɔkasa biara wɔ ne nsɛnsin nhyehyɛe.
+      hyp: ɔkasa biara wɔ ne nsansenhyehyɛeɛ
+      cer: 0.1379
+      wer: 0.3333
+    '73':
+      text: Asɛnsin fa a ɛho hia pa ara yɛ ɛnne nnyigyei.
+      hyp: asɛnseon fa a aɛhohia pa ara yɛ ne nnyegyee
+      cer: 0.2
+      wer: 0.5
+    '84':
+      text: Yɛ mpɛnsɛmpɛnsɛmu fa Akuapem Twi nsɛnsin nhyehyɛe no ho.
+      hyp: yɛ mpɛnsɛmpɛnsɛm mu fa akoba pemetwi nsɛnsɛ nhyehyɛeɛ no ho
+      cer: 0.1489
+      wer: 0.6667
+    '88':
+      text: Ɛne wo mfɛfo nhwehwɛ nsɛnsin dodow a ɛwɔ asɛmfua no mu biara mu.
+      hyp: ɛne ho mfafoɔ nhwehwɛ nsɛnsendodoɔ a ɛwɔ asɛmfoɔ anom mu biara mu
+      cer: 0.1569
+      wer: 0.4615
+    '89':
+      text: Ɛne wo mfɛfo nkyɛ adwen mfa asɛnsin no mu biara nhyehyɛe ho.
+      hyp: ane wo mfɛfoɔ nkyɛ adwene fa asansie no mu biara nhyehyɛeɛ hɔ
+      cer: 0.1458
+      wer: 0.5833
+    '92':
+      text: Na abɛbɛ ne ntɛtea yɛ nnamfonom amapa nanso na wɔn mu biara nko ne ne
+        suban.
+      hyp: na abɛbe ne ntatiayɛ nnamfonom ama pa nanso na wɔn mu biara nko ne ne subank
+      cer: 0.0667
+      wer: 0.375
+    '93':
+      text: Ɔpɛ bere mu no, ntɛtea yeree ne ho yɛɛ adwuma pɛɛ aduan bebree guu hɔ.
+      hyp: ɔpɛberɛ mo no ntatea yere ne ho yɛɛ adwoma pɛɛ aduane bebree guu hɔ
+      cer: 0.1111
+      wer: 0.4667
+    '99':
+      text: Monka mo mmuae nkyerɛ adesuafo nkae no nyinaa.
+      hyp: wɔnka mo mmua nkyerɛ adesoafo nkae no nyinaa
+      cer: 0.1053
+      wer: 0.375
+    '109':
+      text: Ɔkasa biara wɔ toonu ahorow.
+      hyp: okasa biara wɔ too no ahoro
+      cer: 0.1304
+      wer: 0.8
+    '134':
+      text: Hwɛ nhwɛso a edidi so yi.
+      hyp: sa dadi soyi
+      cer: 0.5263
+      wer: 1.0
+    '139':
+      text: Ɛho nhwɛso no bi na edidi so yi.
+      hyp: ahohnhwɛsono bii na ɛdidii so yi
+      cer: 0.2083
+      wer: 0.625
+    '148':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ toonu ase.
+      hyp: fa wɔankasa nsɛmfoɔ akyerɛkyerɛto no ase
+      cer: 0.1471
+      wer: 0.6667
+    '151':
+      text: Fa nhwɛso a ɛfata kyerɛkyerɛ toonu ahorow mu wɔ Akuapem Twi mu.
+      hyp: pa nhwɛso a ɛfatakyerɛkyerɛ too no ahoromo wɔ akɔ apam twime
+      cer: 0.1373
+      wer: 0.75
+    '152':
+      text: Kuw biara ntoatoa adwen mfa toonu dwumadi ho.
+      hyp: wo bibiara ntoato a adwen fato no dwuma di ho
+      cer: 0.1892
+      wer: 1.0
+    '159':
+      text: Kyerɛ asɛnsin a toonu ahyɛnsode no da so wɔ asɛmfua no mu.
+      hyp: kelɛ asɛnsen atono ahyɛnsode no da so wɔ asɛmfoɔ ano mu
+      cer: 0.1522
+      wer: 0.5
+    '160':
+      text: Monka mo mmuae no nkyerɛ adesuafo nkae no nyinaa.
+      hyp: wɔnka mommuɛ no nkyerɛɛ adesuafoɔ nkaeɛ no nyinaa
+      cer: 0.175
+      wer: 0.6667
+    '172':
+      text: Asɛntitiriw a ɛwɔ abasɛm bi mu no na yɛfrɛ no adwempɔw.
+      hyp: asantitire a ɛwɔ abasɛm bi mu no na yɛfrɛ no adwenmpɔ
+      cer: 0.1136
+      wer: 0.1818
+    '215':
+      text: Fa nea woakyerɛw no toto nea wɔakyerɛw wɔ ase hɔ no ho.
+      hyp: fa ni a wɔakyerɛ no toto nea wakyera wɔ asehɔ no ho
+      cer: 0.1395
+      wer: 0.5
+    '218':
+      text: Eyi yɛ akenkan a yɛde hwehwɛ asɛntitiriw a ɛwɔ abasɛm bi mu.
+      hyp: yii yɛ akɛgn ayɛtɛ kohwɛ asentiti no a ɛwɔ abasɛm bi mu
+      cer: 0.3125
+      wer: 0.5
+    '223':
+      text: Yɛde saa akenkan yi hwehwɛ mmuae ma nsɛmmisa pɔtee bi.
+      hyp: yɛdi saa akenkan yii hwehwɛ mmuae mansɛmmisa pɔta bi
+      cer: 0.0909
+      wer: 0.5
+    '224':
+      text: Kenkan abasɛm a ɛwɔ ase hɔ no.
+      hyp: kankan abasam a ɛwɔ ase hɔ no
+      cer: 0.087
+      wer: 0.2857
+    '225':
+      text: Kyerɛ adwempɔw a ɛwɔ abasɛm a ɛwɔ ase hɔ no mu.
+      hyp: keradio mpaulo a ɛwɔ abasɛm a ɛwɔ asehɔ no mu
+      cer: 0.2222
+      wer: 0.3636
+    '226':
+      text: Ka adwempɔw a wuhui no kyerɛ adesuafo nkae no na fa toto wɔn de ho.
+      hyp: kaadu mpɔ awohuni no kyerɛ adesuafoɔ nkaeɛ no na fa totoo wɔn de ho
+      cer: 0.1538
+      wer: 0.4667
+    '251':
+      text: Ka w’adwempɔw no kyerɛ adesuafo nkae no.
+      hyp: chela adwenmpɔ no kyerɛɛ adisuoafo nkaeɛ no
+      cer: 0.3438
+      wer: 0.7143
+    '255':
+      text: Ɛyɛ gyidi, obuo ne nokwaredi.
+      hyp: ɛyɛ gyi di obuo ne nokwarede
+      cer: 0.0435
+      wer: 0.6
+    '257':
+      text: Abeawa; Eyi yɛ nokwasɛm na sɛ mpanyimfo nso yɛ mfomso ɛ?
+      hyp: abeawa eyiiɛ no kwasam na sɛ mpanimfoɔ nso ayɛ mfonsoɔ ɛ
+      cer: 0.1591
+      wer: 0.5455
+    '261':
+      text: Ɛsɛ sɛ yebisa nsɛm pɛ mu nkyerɛkyerɛmu wɔ bere a ɛsɛ mu.
+      hyp: ɛsɛ sɛ yɛrbisa nsɛm pa m nkyerɛkyerɛ mo wɔ berɛ a sɛm
+      cer: 0.1818
+      wer: 0.6667
+    '262':
+      text: Nanso, ne nyinaa mu no, setie boa ma yenya asomdwoe ne ahobammɔ.
+      hyp: nanso ne nyinaa mono sɛtieboa mma yɛnya asomdwoeɛ ne ahobammɔ
+      cer: 0.1
+      wer: 0.5833
+    '274':
+      text: Kenkan abasɛm a ɛwɔ fam hɔ no na bua nsɛmmisa ahorow a ɛtoa so no.
+      hyp: kɛnkanabasam a ɛwɔ fam hɔ no na boa nsɛmmisa ahoro a ɛtoa so no
+      cer: 0.0784
+      wer: 0.2667
+    '280':
+      text: Sukuupanyin no gyina hɔ ma tumidi wɔ sukuu no mu.
+      hyp: sokuu panyinu gyina hɔ matumidi wɔ sukuu no mu
+      cer: 0.0769
+      wer: 0.4
+    '300':
+      text: Eyi yɛ kwan a wofa so kenkan abasɛm bi sɛnea ɛbɛyɛ a wubenya emu ntease.
+      hyp: yiɛ kwan a wɔfa so kenkanabasɛm bi sɛnea ɛbɛyɛ awobɛnya emu ntiase
+      cer: 0.1053
+      wer: 0.5333
+    '310':
+      text: Eyi yɛ bere a ɔkenkanfo no si gyinae wɔ abasɛm no akenkan akyi.
+      hyp: yiyiɛ bere a ɔkenkamfoɔ no si gyinae wɔ abasɛm no akenkan akyi
+      cer: 0.08
+      wer: 0.2308
+    '313':
+      text: Ahonnidi yɛ ade titiriw a ɛho hia pa ara wɔ nnipa apɔwmuden ne anuonyam
+        mu.
+      hyp: amonere yɛ adetitiri a ahenhia paa ara wɔ nipa apɔmmuden ne anonyam m
+      cer: 0.2333
+      wer: 0.6667
+    '335':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ ‘adwempɔw’ ase.
+      hyp: fa wɔn ankasa nsɛmfoɔ akyerɛkyerɛ adwompɔ w ase
+      cer: 0.1351
+      wer: 1.0
+    '338':
+      text: Obuo nyɛ biribi a yɛhyɛ obi ma no de ma yɛn na mmom, ɛyɛ ade a yenya.
+      hyp: ɔbuo nnyɛ biribi ayehyɛ obi ma no de ma yɛn na mmom ɛyɛ adeɛ ayɛnya
+      cer: 0.098
+      wer: 0.4118
+    '342':
+      text: Fa no sɛ woawura sukuu dan bi mu a obiara de nnidi kyia ne yɔnko fɛfɛɛfɛ.
+      hyp: fa no sɛ woawura so kuu dam bi mu aobiara de ne de kyia ne yɔnko fɛfɛɛfɛ
+      cer: 0.0877
+      wer: 0.4375
+    '347':
+      text: Sɛ wowɔ ntoaso sukuu mu yi, kae sɛ, obuo yɛ sekan- nufanu.
+      hyp: sɛ wɔwɔntoa so sukuu mu yi kae sɛ ɔbɔ yesueka no fa no
+      cer: 0.2093
+      wer: 0.5833
+    '350':
+      text: Dɛn na atifi asɛm no ka fa adwempɔw a ɛwɔ abasɛm no mu ho?
+      hyp: dai natifieasɛm no ka fa adwempɔ a ɛwɔ abasɛm no mu ho
+      cer: 0.1136
+      wer: 0.3571
+    '352':
+      text: Fa ɔkasamu nnan bɔ abasɛm yi nyinaa tɔfa.
+      hyp: ɔkasamunam bɔ abasɛm yi nyinaa atɔfa
+      cer: 0.1515
+      wer: 0.5
+    '353':
+      text: Kyerɛw akenkan a emu dɔ su abien bi a woasua wɔ saa ɔfa yi mu.
+      hyp: kerea akenka aemmu dɔso abeem bi awɔsoa wɔsaa ɔfa yi mu
+      cer: 0.234
+      wer: 0.7333
+    '355':
+      text: Nsonsonoe bɛn na ɛda anotew ne mmɔakyi agyinaesi ntam?
+      hyp: nsosono bɛn na ɛda anotoo ne mɔkyi agjenan sintam
+      cer: 0.2
+      wer: 0.5556
+    '356':
+      text: Kyerɛkyerɛ akenkan ntrɛwmu su abiɛsa mu?
+      hyp: yɛekerika  kɛn ka nterɛmusuu abesam
+      cer: 0.4412
+      wer: 1.0
+    '357':
+      text: Kyerɛkyerɛ nsonsonoe a ɛda akenkan a emu dɔ ne akenkan ntrɛwmu mu.
+      hyp: ra dɛ akinkan aemu dɔ ni akinkan his remomo
+      cer: 0.5556
+      wer: 0.9167
+    '375':
+      text: Yɛde mmataho di dwuma wɔ kasa no mu de yɛ nsɛmfua foforo.
+      hyp: yɛde matahodiduma wɔ kasa no mu de yɛɛ nsɛmfo foforo
+      cer: 0.1111
+      wer: 0.4167
+    '382':
+      text: Mmataho a yɛtaa de di dwuma pa ara ne nsianim ne nsiakyi.
+      hyp: mmata wo ayɛtada didwuma pa ara ne nsianim ne nsiakyi
+      cer: 0.0667
+      wer: 0.5
+    '387':
+      text: Nsianim yɛ mmataho a yɛde si asennua bi anim.
+      hyp: esia ne meyɛ maka hoe ayɛ de see asennoa bi anim
+      cer: 0.25
+      wer: 1.0
+    '388':
+      text: Nsim nso yɛ mmataho a yɛde si asennua bi ntam.
+      hyp: nsɛm nsuo yɛ mmata ho ayɛ de sii asɛnnua bi ntam
+      cer: 0.1111
+      wer: 0.8
+    '389':
+      text: Nsiakyi yɛ mmataho a yɛde si asennua bi akyi pɛɛ.
+      hyp: nsiakyii yɛ mataho ayɛ de siasɛnnua bii akyi pɛɛ
+      cer: 0.1026
+      wer: 0.7
+    '393':
+      text: Yennim Ghana kasa bi a saa bere yi ɛde nsim di dwuma.
+      hyp: yɛnnim ghana nkasa bia a nsa berɛ yi ɛde nsimdi dwuma
+      cer: 0.1463
+      wer: 0.5833
+    '400':
+      text: Dan w’ani kyerɛ wo yɔnko na kyerɛkyerɛ mmataho ho ase kyerɛ no.
+      hyp: dana wɔane kyerɛ wo yɔnko na kyerɛkyerɛ mmata hoho asekyerɛ no
+      cer: 0.06
+      wer: 0.5
+    '407':
+      text: Nyafirim mmataho no ma yenya nsɛmfua foforo fi asennua no mu.
+      hyp: ne afen mata mo ne ma yɛn nyansenfoɔ foforo firi ase nnoanom
+      cer: 0.36
+      wer: 1.0
+    '427':
+      text: Mmataho dwumadi no da nso wɔ kasa ahorow mu.
+      hyp: mattaho jumadi nota so wɔ kasa aholow
+      cer: 0.2571
+      wer: 0.7778
+    '428':
+      text: Ɛboa ma yetumi yɛ nsɛmfua foforo fi asennua anaa asɛmfua dedaw bi mu.
+      hyp: ɛboa ma yɛtumi yɛ nsɛmfoɔ foforɔ fii asɛnnoa anaa asɛmfoɔ deda ɔbi mu
+      cer: 0.1786
+      wer: 0.6154
+    '429':
+      text: Etumi sesa asɛmfua bi asɛmfuakuw fi biako mu kɔ foforo mu.
+      hyp: ɛtumi sesa asɛmfoɔ abi asɛmfo akuo fɛbeako mu kɔɔ foforɔ muo
+      cer: 0.2128
+      wer: 0.8182
+    '430':
+      text: Etumi sesa adeyɛ bi kabea.
+      hyp: ɛtumi sesa adeyɛ bi kabea
+      cer: 0.0476
+      wer: 0.2
+    '432':
+      text: Etumi sesa asɛmfua bi kabea fi kabea biako mu kɔ foforo mu.
+      hyp: ɛtumi sesa asɛmfoɔ bi rekabea firi kabeabia akɔ mu kɔ foforɔ mu
+      cer: 0.2128
+      wer: 0.5833
+    '433':
+      text: Mmataho tumi sesa asɛmfua (edin) fi biakofo mu kɔ dodow kabea mu.
+      hyp: meda ha ho tumi sesa asɛmfoɔ adansomfirbi akɔfo mu kɔ dodo kabea mo
+      cer: 0.2745
+      wer: 0.75
+    '434':
+      text: Mmataho ho nimdeɛ boa ma yetumi sopɛ nsɛmfua san sua yɛn kasa no yiye.
+      hyp: mmatahohoo nimdeɛ boa ma yɛtumi so pɛ nsɛmfo asa nsoa yɛnkasa no yii
+      cer: 0.1071
+      wer: 0.7143
+    '437':
+      text: Etumi sesa edin ma no dan edin nkyerɛkyerɛmu.
+      hyp: mte epe sa aema no dan di kyerɛkyerɛ mo
+      cer: 0.3514
+      wer: 0.875
+    '438':
+      text: Etumi sesa edin a yehu ma no dan edin a yenhu.
+      hyp: ɛtumi susaa ede na yehoma no dan ɛdi nayɛ ho
+      cer: 0.2571
+      wer: 0.8182
+    '439':
+      text: Etumi sesa edin nkyerɛkyerɛmu ma no dan edin.
+      hyp: din nkyerekerɛ mu mma no dan ɛdin
+      cer: 0.3784
+      wer: 0.75
+    '440':
+      text: Etumi sesa adeyɛ ma no dan edin nkyerɛkyerɛmu.
+      hyp: ɔtumi sesa adeyɛ mma no dan din kyerɛkyerɛ mo
+      cer: 0.1316
+      wer: 0.625
+    '441':
+      text: Etumi sesa adeyɛ ma no dan edin.
+      hyp: ɛtumi sesa adeyɛ mma no dan eden
+      cer: 0.12
+      wer: 0.4286
+    '457':
+      text: Wɔn dwumadi titiriw pa ara ne sɛ wɔbɛka ɔkasa afa ahorow abobom.
+      hyp: wɔn dwuma di titiri pa ara ne sɛ wɔbɛka ɔkasa afa ahoro abobom
+      cer: 0.0385
+      wer: 0.3333
+    '461':
+      text: Kofi ne Ama kɔ afum.
+      hyp: kofene ama kɔ a foo
+      cer: 0.2
+      wer: 0.8
+    '462':
+      text: Mekɔɔ bi nanso manni bi.
+      hyp: mekɔ bi nanso ma ne bi
+      cer: 0.1579
+      wer: 0.6
+    '463':
+      text: Onni sika nti, obiara mpɛ no yɔnko.
+      hyp: one sika nti obiara mpɛ no yɔnko
+      cer: 0.0741
+      wer: 0.1429
+    '464':
+      text: Kofi Boadi bɛba oo, ɔmma oo, yebesua ade.
+      hyp: kofi boad beba o ɔma o yɛbe sua aɖe
+      cer: 0.2258
+      wer: 1.0
+    '465':
+      text: Linda bedi banku anaa abeteɛ?
+      hyp: linabedi bankuu anaa abɛtie
+      cer: 0.2083
+      wer: 0.8
+    '478':
+      text: Yɛmfa nsanhɔ (,) mma nkabomde no akyi.
+      hyp: yɛefa saa mma nkabomde no akyi
+      cer: 0.1786
+      wer: 0.3333
+    '480':
+      text: Minim Nyame a magye no adi.
+      hyp: mennim nyame amagye no ade
+      cer: 0.1429
+      wer: 0.6667
+    '481':
+      text: Ɔkyerɛkyerɛni a ɔboo me no aba.
+      hyp: ɔkyerɛkyerɛne awɔboo me no aba
+      cer: 0.08
+      wer: 0.5
+    '482':
+      text: Kasamufa titiriw nkabomde a ɛka kasamufa kumaa ne kasamufa titiriw bom.
+      hyp: sɛ mofa titirim kabomu de a ɛka kasa mu fakumaa ne kasa mu fa titiri bɔ
+      cer: 0.1667
+      wer: 1.1818
+    '488':
+      text: Bere a mereto dwom no, mihuu me nana.
+      hyp: berɛ mmeri ti dwom no me huu me nana
+      cer: 0.1786
+      wer: 0.625
+    '489':
+      text: Ansa sa mmrɛnkɛnsono besi ne ti ase no, na onim nea asaase aka akyerɛ
+        no.
+      hyp: ansa sa mmerikeso no berɛsi ne ti ase no na ɔnim nea asase aka akyerɛ no
+      cer: 0.1579
+      wer: 0.3333
+    '490':
+      text: Yaw Annor amma ntɛm nti, obiara kɔ.
+      hyp: yɛw anor
+      cer: 0.7778
+      wer: 1.0
+    '492':
+      text: Wɔtaa frɛ Ntotoho kabomde yi sɛ mmɔho nkabomde.
+      hyp: wɔta frɛ ntotohoo kabom dayi sɛ mmaho ntabom de
+      cer: 0.1282
+      wer: 0.875
+    '499':
+      text: Ɔbra no bɔ yɛ den ɛfisɛ, sika nni me ho.
+      hyp: ɔbra no bɔ yɛ den efi sɛ sika nne me hu
+      cer: 0.1034
+      wer: 0.4
+    '500':
+      text: Berɛ a yɛrekɔ sukuu no, ɔfrɛɛ me.
+      hyp: berɛ yɛrekɔ sukuu no ɔfrɛ me
+      cer: 0.08
+      wer: 0.2857
+    '501':
+      text: Minni gye sɛ woapa me kyɛw.
+      hyp: mnegye sɛ wɔapa meyɛw
+      cer: 0.2381
+      wer: 0.8333
+    '502':
+      text: Sɛ minyini a, metu kwan.
+      hyp: sɛ menyini a metu kwan a
+      cer: 0.1111
+      wer: 0.4
+    '508':
+      text: Nkabomde ho mfaso da nso wɔ kasa ahorow mu.
+      hyp: nkabomde hu mfasodan so wɔ kasa ahoroɔ mu
+      cer: 0.0588
+      wer: 0.5556
+    '510':
+      text: Ɛkyerɛkyerɛ botae mu anaa ɛda nea enti bi adi.
+      hyp: kyerɛkyerɛ botai moe anaa ɛda nea ntibia de
+      cer: 0.1622
+      wer: 0.6667
+    '511':
+      text: Ɛboa de kasamufa anaa asɛnsin bi ka ɔfoforo no ho.
+      hyp: ɛbua de kɛsa mu fa anaa asansin bi ka foforɔ no ho
+      cer: 0.125
+      wer: 0.6
+    '513':
+      text: Ɛboa da nsonsonoe a ɛda biribi ntam adi.
+      hyp: ɛboada nsunso ne a ɛda biribi ntam ade
+      cer: 0.0938
+      wer: 0.5
+    '515':
+      text: Yɛde yɛ ntotoe fa adwempɔw bi ne asɛm bi ho.
+      hyp: yɛde yɛɛ ntotoe fa adwempɔ bi ne asɛm bi hɔ
+      cer: 0.0882
+      wer: 0.3
+    '517':
+      text: Mmara kakra bi a ɛho hia pa ara da nkabomde dwumadi ho.
+      hyp: mmara kakrabi a ɛho hia pa ara arada nkabom de dwuma di hu
+      cer: 0.093
+      wer: 0.6667
+    '520':
+      text: Nkabomde ka adwen, dwumadi ne nimdeɛ bom.
+      hyp: nkabon de ka adwene dwumadi ne nimdeɛ bom
+      cer: 0.0606
+      wer: 0.4286
+    '523':
+      text: Nkabomde boa ma yetumi kyerɛw nneɛma ahorow bi din mmiako mmiako.
+      hyp: nkabom de boa ma yɛtumi kyerɛ wo nneɛma ahoro medime akomiako
+      cer: 0.1667
+      wer: 0.9091
+    '534':
+      text: Hena na ɔtoto saa nneɛma ahorow no din?
+      hyp: hena na wototo saa nneɛma ahoro no din
+      cer: 0.0968
+      wer: 0.25
+    '552':
+      text: Ɔkasa bebree fɛm wɔn nsɛmfua fi kasa afoforo mu.
+      hyp: ɔkasa bebree fa m wɔ nsamfoɔ afekasa afoforɔ mu
+      cer: 0.1795
+      wer: 0.6667
+    '559':
+      text: Ɛma ɔkasa tu mpɔn efisɛ ɛma yenya nsɛmfua foforo ka dedaw no ho.
+      hyp: ɛma ɔkasa tu mpɔn ɛfiri sɛ ɛma yɛnya nsafo foforɔ ka nedawo no ho
+      cer: 0.2157
+      wer: 0.4615
+    '560':
+      text: Ɛma yetumi ka kasa bi wɔ aman ahorow so.
+      hyp: ɛma yɛtumi kakasa bi wɔ aman ahoro so
+      cer: 0.0645
+      wer: 0.4444
+    '561':
+      text: Ɛma yetumi nya nsɛmfua toto nneɛma foforo din.
+      hyp: ɛmma yɛtumi nya nsɛmfoɔ toto anniɛma foforɔ den
+      cer: 0.2105
+      wer: 0.75
+    '562':
+      text: Ɛma yehu nsɛmfua bi abɔse.
+      hyp: ɛmma yɛhu nsɛmfoɔ bi abɔs
+      cer: 0.2381
+      wer: 0.8
+    '565':
+      text: Kyerɛw mmataho nkyekyɛmu ahorow a ɛwɔ Akuapem Twi mu.
+      hyp: yɛrimntekyɛ mu ahoro awɔ akɔpam tumu
+      cer: 0.4318
+      wer: 1.0
+    '566':
+      text: Kyerɛw mmataho anan a ɛwɔ Akuapem Twi mu.
+      hyp: yera matahɔ anan a wɔ ako apam tuai mu
+      cer: 0.303
+      wer: 0.75
+    '567':
+      text: Pɛnsɛmpɛnsɛm mmataho dwumadi anan anaa nea ɛboro saa mu.
+      hyp: kpɛnsɛm mpɛnsɛn mmataho dwumadi anan ananea ɛboro samo
+      cer: 0.1277
+      wer: 0.6667
+    '569':
+      text: Kyerɛ nkabomde ahorow a ɛwɔ Akuapem Twi mu.
+      hyp: tyi bringabom ahorow a ɛwɔ akuapem tea m
+      cer: 0.2857
+      wer: 0.5
+    '570':
+      text: Kyerɛ nsonsonoe a ɛwɔ nkabomde ahorow a woakyerɛw no ntam.
+      hyp: sua so nsomaa wɔ nkabom de ahoro awakyerɛ wo no ntam
+      cer: 0.2708
+      wer: 0.9
+    '573':
+      text: Sensan nkabomde a ɛwɔ ɔkasamu a edidi so yi mu ase.
+      hyp: sɛnsiane kabomde a ɛwɔ ɔkasa mu a ɛdidi so yi mu ase
+      cer: 0.1
+      wer: 0.4545
+    '574':
+      text: Maame Amma rekenkan ɛnna Kwame nso rekyerɛw.
+      hyp: maa me ama rekenkan na kwa me nso rekyerɛwo
+      cer: 0.1081
+      wer: 1.0
+    '577':
+      text: Ɔkɔm de no nti na odidii.
+      hyp: ɔkɔm de no nti na ɔdidii
+      cer: 0.0526
+      wer: 0.1667
+    '579':
+      text: Fufuu o, ampesi o, mepɛ.
+      hyp: fufuuo ampesio me pɛ
+      cer: 0.0
+      wer: 1.0
+    '580':
+      text: Dansoaa bedi abeteɛ anaa banku.
+      hyp: danso abɛdi abeteɛ anaa bankom
+      cer: 0.1538
+      wer: 0.6
+    '581':
+      text: Kyerɛ nsɛmfuayɛ ahorow abiɛsa wɔ Akuapem Twi mu.
+      hyp: kyerɛkyerɛ nsafoɔ yɛ ahoro abiesa wɔ akɔpamtuim
+      cer: 0.4
+      wer: 1.0
+    '582':
+      text: Kyerɛkyerɛ nsɛmfuayɛ ahorow abiɛsa mu wɔ Akuapem Twi mu.
+      hyp: kyeakyerɛ ntinlankenaa ahodowa biasa mu wɔ akwatampimu
+      cer: 0.4255
+      wer: 0.7778
+    '583':
+      text: Kyerɛkyerɛ nsɛmfuayɛ so mfaso abiɛsa anaa nea ɛboro saa wɔ Akuapem Twi.
+      hyp: kyerek nsɛm faɛ so mfa so wɔ abiasa anaa ne a ɛborosa wɔ ako apɛm toee
+      cer: 0.2712
+      wer: 1.0833
+    '584':
+      text: Kyerɛw nsɛmfuayɛ ahorow a ɛwɔ abasɛm a ɛwɔ fam hɔ no mu.
+      hyp: keronsɛmfoɔ yɛ ahorow a ɛwɔ abasɛm a ɛwɔ fam hɔnom
+      cer: 0.1364
+      wer: 0.4167
+    '585':
+      text: Ɛnnɛ, abɛɛfo mfididwuma ho hia wɔ nhomasua mu pa ara.
+      hyp: ɛnnɛ abɛfoɔ mfididwuma ho hia wɔ homa soa mo pa ara
+      cer: 0.119
+      wer: 0.4
+    '591':
+      text: Asɛmmisa no ne sɛ, dɛn na edi hɔ bio?
+      hyp: ɔsr misaloo ne sɛ da na ɛdi hɔ biok
+      cer: 0.3333
+      wer: 0.5556
+    '598':
+      text: Wubesua ade afa akyerɛw mu agyiraehyɛde nso ho.
+      hyp: wubsua ade afa akyerɛ wo mo agyirahyɛ de nso ho
+      cer: 0.1026
+      wer: 0.75
+    '600':
+      text: Eyi bɛsan aboa wo ama woatumi asua asan ate Borɔfo kasa no yiye.
+      hyp: eyi bɛsan aboawo ama woatumi asoa asan ateborɔfo kasa no yie
+      cer: 0.0392
+      wer: 0.4615
+    '604':
+      text: Kasamufa yɛ nsɛmkuw bi a ɛda adi wɔ ɔkasamu mu.
+      hyp: kasa mufa yɛɛ nsɛmku bi a ɛda ade wɔ ɔkasa mo mo
+      cer: 0.1351
+      wer: 0.8
+    '617':
+      text: Eti no na yegyina so de hu kasasin koro.
+      hyp: eti no na yɛgyina so de hu kasasen kuro
+      cer: 0.0968
+      wer: 0.3333
+    '621':
+      text: Kasain ahorow abiɛsa nonom ne edin kasasin, adeyɛ kasasin ne ɔkyerɛfo
+        kasasin.
+      hyp: fa sene ahoroɔ abiasa nonom ne edin nkasasi ade yɛ kasase ne ɔkyerɛfoɔ
+        kasasɛ
+      cer: 0.2
+      wer: 0.8333
+    '622':
+      text: Eyi yɛ kasasin a eti no yɛ edin anaa dinnsiananmu.
+      hyp: yi yɛɛ kasasen aati no yɛ ɛdin anaa densia na mo
+      cer: 0.225
+      wer: 0.9
+    '624':
+      text: Edin kasasin tumi yɛ asɛmfua koro pɛ a ɛyɛ edin anaa edinnsiananmu .
+      hyp: eden nkasasɛ ntumi yɛ asɛmfo akoro pɛ a ɛyɛ ɛdin anaa edi nsanam no
+      cer: 0.1818
+      wer: 0.75
+    '631':
+      text: Yetumi nya asɛmfua a ɛboro biako wɔ Edin kasasin mu.
+      hyp: yɛtumi nyaa asɛmfoɔ a ɛborɔ biara kɔwɔ eden kasasɛm mu
+      cer: 0.2619
+      wer: 0.8
+    '643':
+      text: Afua papa yere no awo.
+      hyp: afoa papa yere no awo
+      cer: 0.0588
+      wer: 0.2
+    '670':
+      text: Adeyɛ kasasin yɛ kasasin a eti no yɛ adeyɛ.
+      hyp: adeɛ kasase yɛkasase aeti no yɛ adeɛ
+      cer: 0.1765
+      wer: 0.7778
+    '673':
+      text: Adeyɛ kasasin a ɛyɛ adeyɛ titiriw biako pɛ no, yɛfrɛ no Adeyɛ Kasasin
+        Tiawa.
+      hyp: ɛdeɛ kasa sɛ ayɛɛ adeɛ titire bi ako pɛ no yɛfrɛ no adeɛ kasasɛ ntiawa
+      cer: 0.1803
+      wer: 0.7857
+    '678':
+      text: Adeyɛ kasasin a ɛwɔ adeyɛ mmataho, adeyɛ titiriw ne adeyɛ boafo.
+      hyp: ɛdeyɛ kasasen ayɛwoɔ adeyɛ mmataho adeyɛ titire nee adeyɛ boafo
+      cer: 0.1346
+      wer: 0.5455
+    '690':
+      text: Kasasin a eti asɛmfua no yɛ ɔkyerɛfo no, yɛfrɛ no Ɔkyerɛfo Kasasin.
+      hyp: asa nya ayete asɛmfoa no yɛ ɔkyerɛfoɔ no yɛfrɛ no ɔkyerɛfo kasashion
+      cer: 0.1852
+      wer: 0.5
+    '693':
+      text: Ɔpon anan a ɛwɔ fam hɔ no ma yehu ɔkyerɛfo kasasin ne wɔn nhyehyɛe ahorow.
+      hyp: ɔpo ananayewɔ fam hɔ no ma yeho ɔkyerɛfo kasasɛm ni wɔnhyehyɛeɛ ahorop
+      cer: 0.1695
+      wer: 0.6667
+    '700':
+      text: Yetumi nya kasasin bebree wɔ ɔkasamu bi mu.
+      hyp: yɛtumi nya kasasɛm bebree wɔ ɔkasamu bi mu
+      cer: 0.0857
+      wer: 0.25
+    '701':
+      text: Boadu kɔɔ kurow no mu.
+      hyp: wɔ nu kaɔ kuro no mu
+      cer: 0.3529
+      wer: 0.8
+    '707':
+      text: Wɔde kasasin da adwempɔw bi adi.
+      hyp: wɔde kasa sɛn da adwenpɔɔ be adi
+      cer: 0.1538
+      wer: 0.6667
+    '708':
+      text: Kasasin di akoten wɔ kasa ne akyerɛw nkitahodi mu.
+      hyp: hasesindii akotin wɔ kasa ne akyerɛ nkitahɔdimu
+      cer: 0.1463
+      wer: 0.6667
+    '712':
+      text: Monsensan asɛmfua a ɛyɛ kasasin a moahu no ti no mu biara ase.
+      hyp: mosesa nasɛmfoɔ a ɛyɛ kasasɛn amoahono te no mu biara ase
+      cer: 0.1429
+      wer: 0.5385
+    '741':
+      text: Wo ne wo mfɛfo nkyɛ wo mmuae no.
+      hyp: wo ne wo mfɛfoɔ tkyɛ wɔ mmuaeɛno
+      cer: 0.1667
+      wer: 0.625
+    '753':
+      text: Ɔkasamu Tiawa ne Ɔkasamufa Titiriw ntam wɔ pon a ɛwɔ ase hɔ no so.
+      hyp: ɔkasa mo tiawa ne ɔkasa mufa tetero ntam wɔ po na ɛwɔ ase hɔ no so
+      cer: 0.0962
+      wer: 0.5
+    '764':
+      text: Kojo nom nsu a, ɔbɛfe.
+      hyp: kodwonom nso ara ɔbɛfe
+      cer: 0.3125
+      wer: 0.8
+    '765':
+      text: Mɛhwehwɛ no, sɛ mekɔ a.
+      hyp: mehehwɛ no sɛ mekɔ
+      cer: 0.1765
+      wer: 0.4
+    '767':
+      text: Yɛreba no, yehyiaa Kɔnɔngo Tiwaa.
+      hyp: yɛri ba ni yɛshiaa koniŋgo tiwa
+      cer: 0.3333
+      wer: 1.2
+    '772':
+      text: Mpɛn pii no, ɛka biribi fa ɔkasamufa titiriw no.
+      hyp: mpɛn pii no ɛka berɛbi fa ɔkasa mu fa titire no
+      cer: 0.1053
+      wer: 0.5556
+    '780':
+      text: Berɛ a worekɔ no, mefrɛɛ wo.
+      hyp: berɛ wokɔ no mefrɛ wo
+      cer: 0.1905
+      wer: 0.5
+    '782':
+      text: Mɛka sɛ wo papa ba a.
+      hyp: mɛka sɛ wo papa ba
+      cer: 0.0667
+      wer: 0.1667
+    '783':
+      text: Sɛ yɛanhwɛ a, yɛrenhu no yie.
+      hyp: sɛ yɛanhwɛ a yɛ hu no yie
+      cer: 0.1364
+      wer: 0.3333
+    '820':
+      text: Ɔman bɛn mu na Kumase wɔ?
+      hyp: ɔman bɛn mu na kumase wɔ
+      cer: 0.0
+      wer: 0.0
+    '833':
+      text: Abofra yi ho yɛ fɛ!
+      hyp: aborotoi feefɛ
+      cer: 0.5714
+      wer: 1.0
+    '837':
+      text: Biribiara nni eyi mu a ɛkyerɛ sɛ ɔkasafo no rehyɛ n’atiefo no ama wɔayɛ
+        biribi.
+      hyp: biribiara ne eyi mu a ɛkyerɛ sɛ ɔkasafo no rehyɛ na tiefo no ama wɔayɛ
+        biribi
+      cer: 0.0317
+      wer: 0.2
+    '839':
+      text: Wobetumi ama asɛmmisa nsɛmfua ho nhwɛso wɔ Akuapem Twi mu?
+      hyp: wobɛtumi ama asɛmmisa nsɛmfo ho nhwɛso wɔ akoapam twem
+      cer: 0.1458
+      wer: 0.5
+    '841':
+      text: Ɔkasamufa Titiriw a edi dwuma sɛ Asɛmmisa.
+      hyp: ɔkɛsa mofa teteru a edi dwuma sɛ asɛ mesa
+      cer: 0.2286
+      wer: 0.7143
+    '843':
+      text: Worehwehwɛ wo mpaboa no ana?
+      hyp: worehwɛɛ ɛwuo mpaboa no ana
+      cer: 0.1739
+      wer: 0.4
+    '852':
+      text: Lartebea kenkanee nhoma a ne papa tɔ maa no no.
+      hyp: la tebea kenkane homa ne papatɔ maa nuu no
+      cer: 0.1622
+      wer: 0.7
+    '853':
+      text: Ɔbea no a ɔtɔɔ mpaboa nnɛra no kɔ.
+      hyp: ɔbea no a ɔtɔɔ mpaboa nnada no kɔ
+      cer: 0.0769
+      wer: 0.125
+    '861':
+      text: Etumi di dwuma sɛ ɔyɛfo, ɔyɛtia anaa ogyefo.
+      hyp: ɛtumi de duma sɛ ɔyɛfo ɔyɛ tia anaa ogyefoɔ
+      cer: 0.1143
+      wer: 0.75
+    '878':
+      text: Ɔkyerɛfo kasamufa kumaa na yɛasensan ase wɔ ɔkasamu a ɛwɔ soro hɔ no mu
+        no.
+      hyp: ɔkyerɛfo kasa mu fa komaa na yɛasensan ase wɔrekasa mu a ɛwɔ soro hɔ no
+        mu no
+      cer: 0.05
+      wer: 0.4
+    '879':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ ɔkasamufa mu.
+      hyp: fa wa ankasa nsɛmfoɔ kyerɛkyerɛ ɔkasa mofa muo
+      cer: 0.1351
+      wer: 1.0
+    '880':
+      text: Ka wo mmuae no kyerɛ wo mfɛfo.
+      hyp: kawo mmuaeɛ no kyerɛɛ wo mfɛfo
+      cer: 0.087
+      wer: 0.5714
+    '891':
+      text: Mikohuu m’adamfo bi a na ɔredi ɔmo wɔ hɔ.
+      hyp: me kɔhuu madamfoɔ bi ana ɔredi ɔmo wɔ ho
+      cer: 0.129
+      wer: 0.6667
+    '899':
+      text: Ekuw biara mma ɔkasamufa ahorow a moasua no mu biara ho nhwɛso biako.
+      hyp: eku biara mma ɔkasa mu fa ahoro amoasoa no mu biara ho nhwɛsoɔbeako
+      cer: 0.0893
+      wer: 0.6154
+    '900':
+      text: Ekuw biara nka ne mmuae nkyerɛ adesuafo nkae no.
+      hyp: eku biara nka ne mmua nkyerɛ adesoafoɔ nkaeɛ no
+      cer: 0.1282
+      wer: 0.4444
+    '905':
+      text: Barima Boadu di fufuu daa.
+      hyp: barima bɔ dudi fufuo daa
+      cer: 0.1429
+      wer: 0.6
+    '906':
+      text: Yɛde tete ɔkasamu ahorow mu.
+      hyp: yɛrde tete ɔkasa m ahorom
+      cer: 0.1739
+      wer: 0.8
+    '907':
+      text: Yɛde twa nsɛmfua binom tiawa.
+      hyp: yɛntitwa nsɛmfoɔ binom teawa
+      cer: 0.25
+      wer: 0.8
+    '908':
+      text: Yɛde si anodisɛm kasasin anaa kasamu bi awiei.
+      hyp: yɛde si anodisɛm kasasin anaa kasa mobi awieeɛ
+      cer: 0.0789
+      wer: 0.375
+    '909':
+      text: Alice kaa sɛ, “Mepɛ akenkan”.
+      hyp: asee kaa sɛ mepɛ akenkan
+      cer: 0.1429
+      wer: 0.2
+    '912':
+      text: Owusuaa kɔɔ kurom kɔtɔɔ mako, nkyene, sekan ne akutu.
+      hyp: ohosua kɔɔ kurom kɔtɔɔ ma ko nkyene seka ne akoto
+      cer: 0.1429
+      wer: 0.5556
+    '913':
+      text: Afua wɔ adan, kaa, mfuw ne nsase.
+      hyp: a carfni
+      cer: 0.8333
+      wer: 1.0
+    '914':
+      text: Yɛde tete deeti, nkurow ne aman ahorow ntam.
+      hyp: yɛde tetedete nkuroo ne aman ahoroo ntam
+      cer: 0.1143
+      wer: 0.5
+    '916':
+      text: Minim Kumase, Sunyane, Takyiman ne Akyerɛnsua.
+      hyp: minim kumase sunyane takiman ne akyerɛnsoɔ
+      cer: 0.0789
+      wer: 0.3333
+    '917':
+      text: Yɛde tete edin nkyerɛkyerɛmu ahorow a ɛrekyerɛkyerɛ edin biako mu ntam.
+      hyp: yɛre tete e din kyerɛkyerɛ mo ahoro a ɛrekyerɛkyerɛɛ din bi akɔ mo ntam
+      cer: 0.1167
+      wer: 1.0
+    '918':
+      text: Papa tuntum, tenten, kɛse no ada.
+      hyp: papa tuntum tenten kɛseno ada
+      cer: 0.0
+      wer: 0.3333
+    '919':
+      text: Dua kɛse, tiatia, tuntum no abu.
+      hyp: dua kɛse tiatea tuntum no abo
+      cer: 0.0833
+      wer: 0.3333
+    '923':
+      text: Yɛde osisan si ɔkasamufa titiriw abien ntam.
+      hyp: yɛle osisan si ɔkasa mu faa titiri abee ntam
+      cer: 0.1351
+      wer: 0.8571
+    '924':
+      text: Makenkan nhoma ahorow; Ehia Wo A, Nwu na m’ani gye ho pa ara.
+      hyp: makenkan nhoma ahoro ehiawa wu namani gye ho pa ara
+      cer: 0.0667
+      wer: 0.5385
+    '926':
+      text: Yɛde tete nneɛma ahorow a yɛrebobɔ edin ntam.
+      hyp: yɛde tete nneɛma ahoro ayerebobɔ adin ntam
+      cer: 0.0811
+      wer: 0.5
+    '928':
+      text: Yɛde ogyawnsɛnkyerɛnne da ɔdede bi adi.
+      hyp: hear
+      cer: 0.9091
+      wer: 1.0
+    '929':
+      text: Yɛde hyɛ asɛmfua bi mu de kyerɛ sɛ, akyerɛwde bi ayera afi beae pɔtee
+        bi.
+      hyp: yɛde hyɛ asɛmfoɔ bi mo dekyerɛ sɛ akyerɛ wode bi ayera afe deae epɔtebi
+      cer: 0.1404
+      wer: 0.6667
+    '930':
+      text: Yɛnam nkatomde so de da obi anom asɛm pɔtee bi adi.
+      hyp: yɛnam katomde so deda obi anom asɛmpɔte bi ade
+      cer: 0.075
+      wer: 0.5455
+    '933':
+      text: Yetumi san nso de da abasɛm bi atifi asɛm adi.
+      hyp: yɛpu mmisa nso deda abasɛm bi atifi asɛm adie
+      cer: 0.1389
+      wer: 0.5
+    '935':
+      text: Yɛsan de da anomsɛm pɔtee bi adi fi akyerɛw nkae no ho.
+      hyp: yɛsan deda anomsɛmpɔteɛ bi ade fi akyerɛ w nkaeɛ no ho
+      cer: 0.0698
+      wer: 0.6667
+    '938':
+      text: Yɛde nsɛmfua-ntam-abaa kyerɛ twaka anaa ayɔnkofa a ɛda nneɛma abien bi
+        ntam.
+      hyp: nadze belmboa ntamaba akyerɛ twaka anaa yɔnkɔfa ada nneɛma adean bi ntam
+      cer: 0.2258
+      wer: 0.6667
+    '939':
+      text: Yɛnam so de nkyerɛkyerɛmu foforo bi ka nea ɛda gua dedaw no ho.
+      hyp: yɛnam so de nkyerɛkyerɛ mu foforɔ bi kaa nea ɛdagua deda wo no ho
+      cer: 0.06
+      wer: 0.5385
+    '940':
+      text: Nhwɛso Amma tɔɔ nnuaba (akutu, kwadu ne aborɔbɛ) wɔ kurom hɔ.
+      hyp: nhwɛsoɔ ama tɔɔ nuabaakotu kwado ne aborobanwɔ kurom ho
+      cer: 0.1915
+      wer: 0.7273
+    '941':
+      text: Yetumi de si nsanhɔ anaa osiprenu ananmu.
+      hyp: yɛatumi dasinsahɔ anaa ɔsiprenu anammuo
+      cer: 0.2059
+      wer: 0.8571
+    '943':
+      text: Ɛkyerɛ ayɔnkofa anaa nsonsonoe a ɛda nsɛmfua binom ntam.
+      hyp: ɛkyerɛɛ ayɔnkofa anansonsuo no yɛ ayɛda nsɛmfoɔ binom ntam
+      cer: 0.1702
+      wer: 0.6667
+    '945':
+      text: Yɛde si nteamu kasamu anaa ɔhyɛ kasamu akyi de da nkatede a ɛwɔ soro adi.
+      hyp: yɛde si tiemu kasa mu anaa ɔhyɛɛ kasam akyi dedankatere a ɛwɔ soro ade
+      cer: 0.1207
+      wer: 0.6
+    '946':
+      text: Yɛde si asɛmmisa kasamu bi akyi.
+      hyp: yɛde sɛ asɛmisakasa mobiathe
+      cer: 0.2308
+      wer: 0.8333
+    '966':
+      text: Momfa mo mmuae no ntoto afoforo baanu bi de ho.
+      hyp: momfa mmo mmoa no ntotoo afoforo baa nu bi de hɔ
+      cer: 0.1351
+      wer: 0.6
+    '970':
+      text: Meduu ɛhyɛngyinabea hɔ no na ɛhyɛn no atu dedaw.
+      hyp: meduu ehyɛn gyinabea hɔ no na ɛhyɛɛ no ato deda w
+      cer: 0.0769
+      wer: 0.6667
+    '971':
+      text: Me nnamfonom Oforiwaa,, Boatemaa, Gyamfuaa ne Kuma bɛba abɛsra yɛn.
+      hyp: mennamfonom oforiwaa boatemaa jamfoa ne kuma bɛba abesra yɛn
+      cer: 0.0926
+      wer: 0.4
+    '976':
+      text: Kyerɛ nea nti a wode saa akyerɛw mu agyiraehyɛde no dii dwuma.
+      hyp: kerenia nti awodesaa akyerɛ wo mo agyirɛhyɛde no diyi duma
+      cer: 0.18
+      wer: 0.8333
+    '986':
+      text: Hwɛ sini a wɔde ato hɔ yi na watumi akenkan pii afa ɔkasasin ahorow no
+        ho.
+      hyp: kwasini a wɔde ato hɔ yi na watumi akenkanpee afa ɔkasa sɛ ahoro no ho
+      cer: 0.1207
+      wer: 0.4375
+    '988':
+      text: Kenkan linke a ɛwɔ ase hɔ no na nya nimdeɛ pii fa ɔkasasin ahorow no ho.
+      hyp: kankan link a ɛwɔ ase hɔ no na nya nimdeɛ pii fa ɔkasasin ahoro no ho
+      cer: 0.0536
+      wer: 0.1875
+    '989':
+      text: Kenkan linke a ɛwɔ ase hɔ a ɛfa kasamufa ne ne ahorow ho no.
+      hyp: kankanlane kaaewa asi hɔ aaefakasa mu fa neni ahoro ho no
+      cer: 0.2391
+      wer: 0.7857
+    '990':
+      text: Kenkan linke a ɛwɔ ase hɔ no na nya nimdeɛ a ɛkɔ nkan.
+      hyp: kenkan link a ɛwɔ ase hɔ no nanya nimdeɛ a ɛkɔ nkan
+      cer: 0.0244
+      wer: 0.2308
+  source: evaluated
+- model: FarmerlineML/voxcpm2-akan-sft
+  model_url: https://huggingface.co/FarmerlineML/voxcpm2-akan-sft
+  owner: FarmerlineML
+  architecture: VoxCPM2 (2B)
+  cer: 0.2065
+  wer: 0.6892
+  score: 0.2065
+  samples: 200
+  valid: 200
+  avg_seconds: 0.0
+  judge:
+    model: Qlerqly/griot-nano-1
+    cer_on_real_speech: 0.2193
+  entries:
+    '7':
+      text: Saa ɔfa yi kasa fa asɛnsin, asɛnsin nhyehyɛe ne toonu ho.
+      hyp: saulfa yi kasafas nsin asansin nhyehyɛeɛ ne tu nu ho
+      cer: 0.1778
+      wer: 0.8182
+    '19':
+      text: Asɛnsin yɛ asɛmfua fa bi a yɛte wɔ kasa mu.
+      hyp: fa asen s yese fo fa bia a yɛtee wɔ kasam mu
+      cer: 0.4242
+      wer: 0.8
+    '20':
+      text: Anom (Kɔnsonant) nnyigyei yɛ anom nnyigyei a etumi gyina sɛ asɛnsin.
+      hyp: pa nyigye yɛ ɛnom nyi gye yɛɛ tumi gyina sɛ asens
+      cer: 0.4
+      wer: 0.8182
+    '21':
+      text: Toonu yɛ ɛnne mu nsakrae a etumi de nsakrae ba asɛmfua ntease mu.
+      hyp: to ne y ɛne mu saku de sakrba asɛfo ntease mu mo
+      cer: 0.4038
+      wer: 0.8462
+    '51':
+      text: Wɔakyekyɛ asɛmfua biara mu kɔ nsɛnsin ahorow a ɛwɔ mu mu.
+      hyp: awɔakyekyɛɛ asɛmfoa biara a mukɔ sensen ahora ɛwɔ mu mu
+      cer: 0.1957
+      wer: 0.6364
+    '55':
+      text: Asɛnsin a emu abue yɛ asɛnsin a ɛnne nnyigyei twa to.
+      hyp: asɛnsiahe mu abue yɛ asɛnsia ne nygyeɛ twatoo
+      cer: 0.2143
+      wer: 0.8182
+    '60':
+      text: Asɛnsin a emu to yɛ asɛnsin a anom nnyigyei twa to.
+      hyp: asensi a moto yɛ asensi a anomenyigyee twa ka
+      cer: 0.25
+      wer: 0.6364
+    '65':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ asɛnsin ase.
+      hyp: fa wankasa esemfo akyirɛkyerɛ asensi ase
+      cer: 0.1667
+      wer: 0.5
+    '67':
+      text: Kyerɛkyerɛ nsɛnsin ahorow a ɛwɔ Akuapem Twi kasa mu no mu.
+      hyp: kyerɛkyerɛ nsɛnsi ahorow a wɔakɔ apem twi kasa mu no mo
+      cer: 0.0851
+      wer: 0.3636
+    '68':
+      text: Kyerɛkyerɛ mfaso a ɛwɔ asɛnsin nhyehyɛe ho nimdeɛ so wɔ nsɛmfuayɛ mu.
+      hyp: kyerekyerɛ mfasoɔ a ɛwɔ asensinhyɛɛ ho nimdeɛ so wɔ nsɛmfoae mu s
+      cer: 0.2105
+      wer: 0.5
+    '69':
+      text: Ɛne wo mfɛfo nkyɛ wo mmuae no.
+      hyp: ɛno fwɛfoɔ kyɛw muaeɛ no
+      cer: 0.3478
+      wer: 0.8571
+    '70':
+      text: Ɔkasa biara wɔ ne nsɛnsin nhyehyɛe.
+      hyp: ɔkasaa beara a wɔ ne nsansin nhyehyɛeɛ
+      cer: 0.1724
+      wer: 0.8333
+    '73':
+      text: Asɛnsin fa a ɛho hia pa ara yɛ ɛnne nnyigyei.
+      hyp: asɛsi fa ɛhohia
+      cer: 0.6286
+      wer: 0.9
+    '84':
+      text: Yɛ mpɛnsɛmpɛnsɛmu fa Akuapem Twi nsɛnsin nhyehyɛe no ho.
+      hyp: yi mpensɛmpensi mu fa kurapem twee nsɛnsinhyehyɛɛ no ho
+      cer: 0.2128
+      wer: 0.7778
+    '88':
+      text: Ɛne wo mfɛfo nhwehwɛ nsɛnsin dodow a ɛwɔ asɛmfua no mu biara mu.
+      hyp: nɛne wo mfɛfoɔ nhwehwɛnsɛnsin dodoa ɛw asɛmfoɔ nomu biara mu
+      cer: 0.1176
+      wer: 0.7692
+    '89':
+      text: Ɛne wo mfɛfo nkyɛ adwen mfa asɛnsin no mu biara nhyehyɛe ho.
+      hyp: ɛ ne wo mfɛfoɔ nkyɛ adwon fasɛns no mu biara nhyehyɛeɛ ho
+      cer: 0.1458
+      wer: 0.5833
+    '92':
+      text: Na abɛbɛ ne ntɛtea yɛ nnamfonom amapa nanso na wɔn mu biara nko ne ne
+        suban.
+      hyp: na bɛbɛne ntɛtia yɛ namfonom ama panna nso na wɔm mu biara ko ne ne suba
+      cer: 0.1167
+      wer: 0.625
+    '93':
+      text: Ɔpɛ bere mu no, ntɛtea yeree ne ho yɛɛ adwuma pɛɛ aduan bebree guu hɔ.
+      hyp: wɔpɛ berɛ mu no ntɛtea yeree ne ho yɛ adwuma pɛeɛ dwan bebree gu w hɔ
+      cer: 0.1296
+      wer: 0.4667
+    '99':
+      text: Monka mo mmuae nkyerɛ adesuafo nkae no nyinaa.
+      hyp: monka mo mu a nkyerɛ adesuafo nkan no nyinaa
+      cer: 0.0789
+      wer: 0.375
+    '109':
+      text: Ɔkasa biara wɔ toonu ahorow.
+      hyp: wɔkasa biara wɔ too no ahoro
+      cer: 0.1304
+      wer: 0.8
+    '134':
+      text: Hwɛ nhwɛso a edidi so yi.
+      hyp: hyɛnhwɛsoɔ a yɛdidi soyi
+      cer: 0.2105
+      wer: 0.8333
+    '139':
+      text: Ɛho nhwɛso no bi na edidi so yi.
+      hyp: ɛho hwɛ so no bi na edidi suyi
+      cer: 0.0833
+      wer: 0.5
+    '148':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ toonu ase.
+      hyp: fa wankasa nsɛmfoɔ akyerɛkyerɛ too no a so o
+      cer: 0.1471
+      wer: 1.1667
+    '151':
+      text: Fa nhwɛso a ɛfata kyerɛkyerɛ toonu ahorow mu wɔ Akuapem Twi mu.
+      hyp: fanhwɛso a ɛfatakyerɛkyerɛto no ahorɔmu wɔ aku apemtwe mu
+      cer: 0.098
+      wer: 0.75
+    '152':
+      text: Kuw biara ntoatoa adwen mfa toonu dwumadi ho.
+      hyp: ku bia ntɔato a adweemfa tuni dwuma dihu
+      cer: 0.2432
+      wer: 1.0
+    '159':
+      text: Kyerɛ asɛnsin a toonu ahyɛnsode no da so wɔ asɛmfua no mu.
+      hyp: kyerɛ asɛnsin a tu no ahyɛ nso de no da so asɛmfuo ano mu
+      cer: 0.1304
+      wer: 0.6667
+    '160':
+      text: Monka mo mmuae no nkyerɛ adesuafo nkae no nyinaa.
+      hyp: monka hommoaeɛ no nkyɛɛ adesuafo nkan no nyinaa
+      cer: 0.15
+      wer: 0.4444
+    '172':
+      text: Asɛntitiriw a ɛwɔ abasɛm bi mu no na yɛfrɛ no adwempɔw.
+      hyp: asɛntitiri a ɛwɔ abasɛm bi mu no na ɛyɛfrɛ no adwempɔ
+      cer: 0.0682
+      wer: 0.2727
+    '215':
+      text: Fa nea woakyerɛw no toto nea wɔakyerɛw wɔ ase hɔ no ho.
+      hyp: fa nea wɔakyere no toto nea wɔakyerɛ wo ase o no ho
+      cer: 0.1628
+      wer: 0.3333
+    '218':
+      text: Eyi yɛ akenkan a yɛde hwehwɛ asɛntitiriw a ɛwɔ abasɛm bi mu.
+      hyp: ɛ
+      cer: 0.9792
+      wer: 1.0
+    '223':
+      text: Yɛde saa akenkan yi hwehwɛ mmuae ma nsɛmmisa pɔtee bi.
+      hyp: yɛde saa akenkan hwehwɛ mmoanma nsɛmmisapɔteɛ bi
+      cer: 0.1136
+      wer: 0.5
+    '224':
+      text: Kenkan abasɛm a ɛwɔ ase hɔ no.
+      hyp: kɛnkan na basem a yɛwɔ ase hɔ no
+      cer: 0.1739
+      wer: 0.5714
+    '225':
+      text: Kyerɛ adwempɔw a ɛwɔ abasɛm a ɛwɔ ase hɔ no mu.
+      hyp: kyerɛ adwempɔ a wɔ abasɛm a wasehonom so
+      cer: 0.1944
+      wer: 0.6364
+    '226':
+      text: Ka adwempɔw a wuhui no kyerɛ adesuafo nkae no na fa toto wɔn de ho.
+      hyp: kadwenempo a wɔhunu o kyerɛɛ adesuafoɔ nkaeɛ no na fa toto wɔn de fou
+      cer: 0.25
+      wer: 0.5333
+    '251':
+      text: Ka w’adwempɔw no kyerɛ adesuafo nkae no.
+      hyp: ka wadwempɔ no kyerɛdesuafoɔ nkaeɛ no
+      cer: 0.125
+      wer: 0.5714
+    '255':
+      text: Ɛyɛ gyidi, obuo ne nokwaredi.
+      hyp: ayi gyedii obu ne nokorɛdim
+      cer: 0.3913
+      wer: 0.8
+    '257':
+      text: Abeawa; Eyi yɛ nokwasɛm na sɛ mpanyimfo nso yɛ mfomso ɛ?
+      hyp: abeawa eyiɛ no kwasɛm na sɛ mpanimfoɔ nso yɛn mfom so
+      cer: 0.1136
+      wer: 0.6364
+    '261':
+      text: Ɛsɛ sɛ yebisa nsɛm pɛ mu nkyerɛkyerɛmu wɔ bere a ɛsɛ mu.
+      hyp: ɛsɛ sɛbisa nsɛmpe mu nkyerɛkyerɛ mu wɔ berɛ a ɛsɛ m o
+      cer: 0.1136
+      wer: 0.6667
+    '262':
+      text: Nanso, ne nyinaa mu no, setie boa ma yenya asomdwoe ne ahobammɔ.
+      hyp: nnansom ne nyinaa mu no setee gua ama yɛ nyasomdwoeɛ ne hɔbamo o
+      cer: 0.26
+      wer: 0.6667
+    '274':
+      text: Kenkan abasɛm a ɛwɔ fam hɔ no na bua nsɛmmisa ahorow a ɛtoa so no.
+      hyp: kenkan abasɛm a ɛwɔ fam hɔ no na bu nsɛm misa horoɔ a ɛtoa so no
+      cer: 0.0588
+      wer: 0.2667
+    '280':
+      text: Sukuupanyin no gyina hɔ ma tumidi wɔ sukuu no mu.
+      hyp: su kuu panyino gyina ho ma tumi de wɔ sukuu no mu
+      cer: 0.0769
+      wer: 0.6
+    '300':
+      text: Eyi yɛ kwan a wofa so kenkan abasɛm bi sɛnea ɛbɛyɛ a wubenya emu ntease.
+      hyp: yei ɛ kwan a wofa so kenkan abasɛm bi sɛnea ɛbɛyɛ a wobɛnya mu nteasɛm
+      cer: 0.1404
+      wer: 0.3333
+    '310':
+      text: Eyi yɛ bere a ɔkenkanfo no si gyinae wɔ abasɛm no akenkan akyi.
+      hyp: eyi yɛ berɛ a ɔkenkamfo no si gyinae wɔabasɛm no a kenkan
+      cer: 0.12
+      wer: 0.4615
+    '313':
+      text: Ahonnidi yɛ ade titiriw a ɛho hia pa ara wɔ nnipa apɔwmuden ne anuonyam
+        mu.
+      hyp: ahonidie ade titiri ahohia pa ara wo nipa po mu den ni wonyamu no
+      cer: 0.2833
+      wer: 0.9333
+    '335':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ ‘adwempɔw’ ase.
+      hyp: fa wankasa nsɛmfoɔ akyerɛkyerɛ adwempo ase
+      cer: 0.1081
+      wer: 0.5
+    '338':
+      text: Obuo nyɛ biribi a yɛhyɛ obi ma no de ma yɛn na mmom, ɛyɛ ade a yenya.
+      hyp: ɔguu nyɛ biribi a yɛhyɛue obi ma no de mma yɛn nna mmom ɛyɛ ade ayɛny
+      cer: 0.1765
+      wer: 0.3529
+    '342':
+      text: Fa no sɛ woawura sukuu dan bi mu a obiara de nnidi kyia ne yɔnko fɛfɛɛfɛ.
+      hyp: fa no sɛ woawura sukuudan bi mu a wobiare de nnidi kyea ne yɔnko fɛfɛɛfɛ
+      cer: 0.0526
+      wer: 0.25
+    '347':
+      text: Sɛ wowɔ ntoaso sukuu mu yi, kae sɛ, obuo yɛ sekan- nufanu.
+      hyp: sɛ wo wɔntoa so sukuu mu yi kae sɛ oboo yɛ sekan no fɛnoo
+      cer: 0.1163
+      wer: 0.5
+    '350':
+      text: Dɛn na atifi asɛm no ka fa adwempɔw a ɛwɔ abasɛm no mu ho?
+      hyp: ɛdɛn na atifi asɛm no ka fa dwempo a ɛwɔ abasɛm no mu ho
+      cer: 0.0909
+      wer: 0.1429
+    '352':
+      text: Fa ɔkasamu nnan bɔ abasɛm yi nyinaa tɔfa.
+      hyp: fau kas mu an bɔbas mi nyinaa tɔ
+      cer: 0.2727
+      wer: 0.875
+    '353':
+      text: Kyerɛw akenkan a emu dɔ su abien bi a woasua wɔ saa ɔfa yi mu.
+      hyp: kyera kenkaɛ mu dɔso abim bi wɔ sua wɔ saa ɔfa yi mu
+      cer: 0.234
+      wer: 0.6
+    '355':
+      text: Nsonsonoe bɛn na ɛda anotew ne mmɔakyi agyinaesi ntam?
+      hyp: e b
+      cer: 0.9556
+      wer: 1.0
+    '356':
+      text: Kyerɛkyerɛ akenkan ntrɛwmu su abiɛsa mu?
+      hyp: kyerɛkyerɛ kenkan nkyerɛ musu
+      cer: 0.3824
+      wer: 0.8333
+    '357':
+      text: Kyerɛkyerɛ nsonsonoe a ɛda akenkan a emu dɔ ne akenkan ntrɛwmu mu.
+      hyp: kyerɛkyerɛ nsonsone a ɛda akenkan mu dɔ ne akenkan nterɛmu
+      cer: 0.1296
+      wer: 0.4167
+    '375':
+      text: Yɛde mmataho di dwuma wɔ kasa no mu de yɛ nsɛmfua foforo.
+      hyp: yɛde mmata hodi dwuma wɔ kasa no mu de yɛnsɛfo
+      cer: 0.1778
+      wer: 0.4167
+    '382':
+      text: Mmataho a yɛtaa de di dwuma pa ara ne nsianim ne nsiakyi.
+      hyp: mpata ho a yɛ tadididwuma paa ne nsianim ne nsiakyi
+      cer: 0.1111
+      wer: 0.6667
+    '387':
+      text: Nsianim yɛ mmataho a yɛde si asennua bi anim.
+      hyp: nsia animyɛ mmataho a yɛdi si asɛnnua bi animɔ
+      cer: 0.1111
+      wer: 0.5556
+    '388':
+      text: Nsim nso yɛ mmataho a yɛde si asennua bi ntam.
+      hyp: nsim so yɛ mmatahɔ a yɛde si asɛnnua bi ntam
+      cer: 0.0833
+      wer: 0.3
+    '389':
+      text: Nsiakyi yɛ mmataho a yɛde si asennua bi akyi pɛɛ.
+      hyp: nsia akyiyɛ mmata hɔ a yɛde se asɛnnea bi akyi pɛɛ
+      cer: 0.1282
+      wer: 0.6
+    '393':
+      text: Yennim Ghana kasa bi a saa bere yi ɛde nsim di dwuma.
+      hyp: yeinim ghana kasabia saa berɛ yi yɛdi nsim di dwuma
+      cer: 0.0976
+      wer: 0.5
+    '400':
+      text: Dan w’ani kyerɛ wo yɔnko na kyerɛkyerɛ mmataho ho ase kyerɛ no.
+      hyp: dana w ani kyerɛɛ wo yɔnko na kyerɛkyerɛ mata hohom asekyerɛ no
+      cer: 0.08
+      wer: 0.6667
+    '407':
+      text: Nyafirim mmataho no ma yenya nsɛmfua foforo fi asennua no mu.
+      hyp: nyɛfirimu mmata honoma yɛ nya nsɛnfo afoforɔ fiase nnua no mu
+      cer: 0.12
+      wer: 0.8182
+    '427':
+      text: Mmataho dwumadi no da nso wɔ kasa ahorow mu.
+      hyp: mpaakoɔ dwumadi no dansoɔ kasa horo mu
+      cer: 0.2
+      wer: 0.5556
+    '428':
+      text: Ɛboa ma yetumi yɛ nsɛmfua foforo fi asennua anaa asɛmfua dedaw bi mu.
+      hyp: yɛboa ma yɛtumi yɛ nsɛmfoa foforɔ fi asɛnnia naaa asefoɔ deda w bi mu
+      cer: 0.2143
+      wer: 0.6923
+    '429':
+      text: Etumi sesa asɛmfua bi asɛmfuakuw fi biako mu kɔ foforo mu.
+      hyp: yɛtumi sesa asɛmfieɛ bi asɛmfoɔ kumfibea ko mukɔ foforɔ mu
+      cer: 0.2128
+      wer: 0.7273
+    '430':
+      text: Etumi sesa adeyɛ bi kabea.
+      hyp: ɛtumi sɛ saadeɛ bi kabi
+      cer: 0.2381
+      wer: 0.8
+    '432':
+      text: Etumi sesa asɛmfua bi kabea fi kabea biako mu kɔ foforo mu.
+      hyp: ɛtumi sɛ sasemfoɔ bi ka bea fikabie di akɔ mu kɔ foforɔ mu
+      cer: 0.234
+      wer: 0.75
+    '433':
+      text: Mmataho tumi sesa asɛmfua (edin) fi biakofo mu kɔ dodow kabea mu.
+      hyp: mita wo tumi sesa asɛmfo mifidia kofo mu kɔdodo kabie mu
+      cer: 0.2353
+      wer: 0.75
+    '434':
+      text: Mmataho ho nimdeɛ boa ma yetumi sopɛ nsɛmfua san sua yɛn kasa no yiye.
+      hyp: mata ho hindie boa ma yɛtumi sɔ pɛnsɛmfo asan soa yɛnkasa no yie
+      cer: 0.1964
+      wer: 0.7143
+    '437':
+      text: Etumi sesa edin ma no dan edin nkyerɛkyerɛmu.
+      hyp: ɛtumi sesɛ edi ma no dinne nkyerkyerɛ mu
+      cer: 0.2432
+      wer: 0.75
+    '438':
+      text: Etumi sesa edin a yehu ma no dan edin a yenhu.
+      hyp: ɛtumi sɛ sɛ yɛden a yɛ huma no dɛn ɛdin yɛo
+      cer: 0.4
+      wer: 0.9091
+    '439':
+      text: Etumi sesa edin nkyerɛkyerɛmu ma no dan edin.
+      hyp: ɛtumi sesa edin nkyerɛkyerɛ muma no ɛdedio
+      cer: 0.1351
+      wer: 0.625
+    '440':
+      text: Etumi sesa adeyɛ ma no dan edin nkyerɛkyerɛmu.
+      hyp: ɛtumi se saade yɛ mma no dahe di nkyerɛkyerɛ mo
+      cer: 0.1316
+      wer: 1.125
+    '441':
+      text: Etumi sesa adeyɛ ma no dan edin.
+      hyp: ɛtumi sɛsa adeɛ ma no dandeo
+      cer: 0.24
+      wer: 0.7143
+    '457':
+      text: Wɔn dwumadi titiriw pa ara ne sɛ wɔbɛka ɔkasa afa ahorow abobom.
+      hyp: wo dwumadi titirew pa a na sɛ wɔbɛka wo kasa farobobɔm
+      cer: 0.2885
+      wer: 0.6667
+    '461':
+      text: Kofi ne Ama kɔ afum.
+      hyp: okofi ni ama kwafuo
+      cer: 0.2667
+      wer: 0.8
+    '462':
+      text: Mekɔɔ bi nanso manni bi.
+      hyp: mekɔɔ bi nanso man ne bio
+      cer: 0.1053
+      wer: 0.6
+    '463':
+      text: Onni sika nti, obiara mpɛ no yɔnko.
+      hyp: ɔne sika nti obiara mpɛ no yɔnkoo
+      cer: 0.1481
+      wer: 0.2857
+    '464':
+      text: Kofi Boadi bɛba oo, ɔmma oo, yebesua ade.
+      hyp: kofibu adi bɛba wo ɔmma wɔ yɛbe sua de
+      cer: 0.1935
+      wer: 0.875
+    '465':
+      text: Linda bedi banku anaa abeteɛ?
+      hyp: lenda bɛdi ba kɔ anaa abɛtiɛ
+      cer: 0.25
+      wer: 1.0
+    '478':
+      text: Yɛmfa nsanhɔ (,) mma nkabomde no akyi.
+      hyp: yɛfansaŋ ho kuru ti amaŋ ka bum di nokyi
+      cer: 0.5
+      wer: 1.5
+    '480':
+      text: Minim Nyame a magye no adi.
+      hyp: minim nyamea maje nuadiyi
+      cer: 0.2381
+      wer: 0.8333
+    '481':
+      text: Ɔkyerɛkyerɛni a ɔboo me no aba.
+      hyp: ɔkyerɛkyerɛ ne ɔbome no abaso
+      cer: 0.2
+      wer: 0.8333
+    '482':
+      text: Kasamufa titiriw nkabomde a ɛka kasamufa kumaa ne kasamufa titiriw bom.
+      hyp: kasa mufoa tetirid nkabomdeɛ a ɛka kasa mu fa kumaa ne kasa mu fa titire
+        bom
+      cer: 0.1
+      wer: 1.0
+    '488':
+      text: Bere a mereto dwom no, mihuu me nana.
+      hyp: berɛ mareto dwom no mehu me naa
+      cer: 0.2143
+      wer: 0.625
+    '489':
+      text: Ansa sa mmrɛnkɛnsono besi ne ti ase no, na onim nea asaase aka akyerɛ
+        no.
+      hyp: ansa sammrɛnka nso no bɛsine tiase no na ɔnnim ne asase aka akyerɛ no
+      cer: 0.1053
+      wer: 0.6
+    '490':
+      text: Yaw Annor amma ntɛm nti, obiara kɔ.
+      hyp: yo anorama ntam nti obiara rkɔ
+      cer: 0.2222
+      wer: 0.7143
+    '492':
+      text: Wɔtaa frɛ Ntotoho kabomde yi sɛ mmɔho nkabomde.
+      hyp: wo ta frɛɛ ntotoo kabomdii sɛmo ho kabo
+      cer: 0.3077
+      wer: 1.0
+    '499':
+      text: Ɔbra no bɔ yɛ den ɛfisɛ, sika nni me ho.
+      hyp: ɔbra no bɔeɛ den ɛfiri sɛ sika ne m ho
+      cer: 0.2069
+      wer: 0.6
+    '500':
+      text: Berɛ a yɛrekɔ sukuu no, ɔfrɛɛ me.
+      hyp: berɛ a yerekɔ sukuu no ɔfrɛɛ me
+      cer: 0.04
+      wer: 0.1429
+    '501':
+      text: Minni gye sɛ woapa me kyɛw.
+      hyp: mini je sɛ wɔapame tsoŋ
+      cer: 0.381
+      wer: 0.8333
+    '502':
+      text: Sɛ minyini a, metu kwan.
+      hyp: sɛ menyinia meto kwan
+      cer: 0.1111
+      wer: 0.6
+    '508':
+      text: Nkabomde ho mfaso da nso wɔ kasa ahorow mu.
+      hyp: nkabomde ho mfasodansoɔ kasa ahorɔmu o
+      cer: 0.1176
+      wer: 0.6667
+    '510':
+      text: Ɛkyerɛkyerɛ botae mu anaa ɛda nea enti bi adi.
+      hyp: ɛkyerɛkyerɛ botae mu anaa ɛdane ntibied
+      cer: 0.1081
+      wer: 0.5556
+    '511':
+      text: Ɛboa de kasamufa anaa asɛnsin bi ka ɔfoforo no ho.
+      hyp: rboa de kasa mu fa anaasɛnsin bi ka ɔfoforɔ no ho o
+      cer: 0.1
+      wer: 0.7
+    '513':
+      text: Ɛboa da nsonsonoe a ɛda biribi ntam adi.
+      hyp: yɛ boadanson so no a yɛ dadibi ntama di
+      cer: 0.1875
+      wer: 1.0
+    '515':
+      text: Yɛde yɛ ntotoe fa adwempɔw bi ne asɛm bi ho.
+      hyp: yɛde yɛn totoe faa adwempo bi ne asɛm bi ho
+      cer: 0.0882
+      wer: 0.4
+    '517':
+      text: Mmara kakra bi a ɛho hia pa ara da nkabomde dwumadi ho.
+      hyp: a twakra bi a ɛho hia paa dada nabɔmde dwuma di ho
+      cer: 0.186
+      wer: 0.5833
+    '520':
+      text: Nkabomde ka adwen, dwumadi ne nimdeɛ bom.
+      hyp: nkabom de ka adwene dwuma di ne nimdeɛ bum
+      cer: 0.0606
+      wer: 0.8571
+    '523':
+      text: Nkabomde boa ma yetumi kyerɛw nneɛma ahorow bi din mmiako mmiako.
+      hyp: nkabom de boa ma yɛtumi kyerɛ wo nneɛma ahorobe di me akumiako
+      cer: 0.1667
+      wer: 0.9091
+    '534':
+      text: Hena na ɔtoto saa nneɛma ahorow no din?
+      hyp: hena no toto saa n ɛmahorɔno din
+      cer: 0.2258
+      wer: 0.625
+    '552':
+      text: Ɔkasa bebree fɛm wɔn nsɛmfua fi kasa afoforo mu.
+      hyp: wɔkasa bebree fam wɔ nsamfo afikasa foforɔ mu
+      cer: 0.1795
+      wer: 0.7778
+    '559':
+      text: Ɛma ɔkasa tu mpɔn efisɛ ɛma yenya nsɛmfua foforo ka dedaw no ho.
+      hyp: ɛma wo kasa tompɔn ɛfiri sɛ ɛmma yɛn nya nsimfoɔ foforɔ cardedaw no ho
+      cer: 0.2941
+      wer: 0.8462
+    '560':
+      text: Ɛma yetumi ka kasa bi wɔ aman ahorow so.
+      hyp: ɛyɛ ma yɛtumi ka kasedi wɔ aman ahorɔ so
+      cer: 0.2258
+      wer: 0.6667
+    '561':
+      text: Ɛma yetumi nya nsɛmfua toto nneɛma foforo din.
+      hyp: yɛma yɛtumi nnyansenfoɔ a toto nneɛma foforɔ din
+      cer: 0.2105
+      wer: 0.625
+    '562':
+      text: Ɛma yehu nsɛmfua bi abɔse.
+      hyp: mɛ ɛma yɛhunu nsɛmfoɔ bi a bɔse
+      cer: 0.3333
+      wer: 1.0
+    '565':
+      text: Kyerɛw mmataho nkyekyɛmu ahorow a ɛwɔ Akuapem Twi mu.
+      hyp: kyerɛ mataho nkyekyɛmu ahorowa wɔ akwa apemtwemu
+      cer: 0.1364
+      wer: 0.8889
+    '566':
+      text: Kyerɛw mmataho anan a ɛwɔ Akuapem Twi mu.
+      hyp: tyerɛw mmatahuana ɛwɔakɔ apemtwimu
+      cer: 0.1515
+      wer: 1.0
+    '567':
+      text: Pɛnsɛmpɛnsɛm mmataho dwumadi anan anaa nea ɛboro saa mu.
+      hyp: pɛnsɛm pɛnsɛm mmata ho dwumadi anan ananea ɛboro saa mo
+      cer: 0.0426
+      wer: 0.7778
+    '569':
+      text: Kyerɛ nkabomde ahorow a ɛwɔ Akuapem Twi mu.
+      hyp: kyere nkabom de ahoro a ɛwɔ akoapemtwimu
+      cer: 0.0857
+      wer: 0.875
+    '570':
+      text: Kyerɛ nsonsonoe a ɛwɔ nkabomde ahorow a woakyerɛw no ntam.
+      hyp: twerɛ nsonsone a ɛwɔ nkabomde ahorɔ a wɔatwerɛ no ntam
+      cer: 0.1875
+      wer: 0.4
+    '573':
+      text: Sensan nkabomde a ɛwɔ ɔkasamu a edidi so yi mu ase.
+      hyp: sen sane kabom de a wɔwɔkasa mu a ɛdidi so yi mu ase
+      cer: 0.1
+      wer: 0.6364
+    '574':
+      text: Maame Amma rekenkan ɛnna Kwame nso rekyerɛw.
+      hyp: maame a mma rekenkan nakwame nso richrur
+      cer: 0.2162
+      wer: 0.7143
+    '577':
+      text: Ɔkɔm de no nti na odidii.
+      hyp: nawɔ
+      cer: 0.8947
+      wer: 1.0
+    '579':
+      text: Fufuu o, ampesi o, mepɛ.
+      hyp: fufuɔ ampɛsi oa
+      cer: 0.4118
+      wer: 1.0
+    '580':
+      text: Dansoaa bedi abeteɛ anaa banku.
+      hyp: nɛsoɔ bi de abɛtie anabanku
+      cer: 0.4231
+      wer: 1.0
+    '581':
+      text: Kyerɛ nsɛmfuayɛ ahorow abiɛsa wɔ Akuapem Twi mu.
+      hyp: kyerɛɛ yɛn nsɛmfoa aeyɛ ahoradeɛ saawakɔ apemtwamu
+      cer: 0.375
+      wer: 1.0
+    '582':
+      text: Kyerɛkyerɛ nsɛmfuayɛ ahorow abiɛsa mu wɔ Akuapem Twi mu.
+      hyp: kyerɛkyerɛ nsɛmfoeɛ ahorabeasɛ m wɔ akwaapɛm twam
+      cer: 0.2979
+      wer: 0.7778
+    '583':
+      text: Kyerɛkyerɛ nsɛmfuayɛ so mfaso abiɛsa anaa nea ɛboro saa wɔ Akuapem Twi.
+      hyp: kwerɛkyerɛnsɛmfoɔyɛ so mfasoabie saa na ne borosa wɔ koapemtwe
+      cer: 0.1864
+      wer: 0.8333
+    '584':
+      text: Kyerɛw nsɛmfuayɛ ahorow a ɛwɔ abasɛm a ɛwɔ fam hɔ no mu.
+      hyp: kyerosenfo yɛ akorɛ a ɛwɔ abasam a ɛwɔ fam mu honomo
+      cer: 0.3409
+      wer: 0.5833
+    '585':
+      text: Ɛnnɛ, abɛɛfo mfididwuma ho hia wɔ nhomasua mu pa ara.
+      hyp: ɛnnɛ abɛɛfo mfididwuma ho hia wɔ masuamu paa
+      cer: 0.119
+      wer: 0.4
+    '591':
+      text: Asɛmmisa no ne sɛ, dɛn na edi hɔ bio?
+      hyp: asɛm misa no ne sɛ dan na ɛdi hɔ bio
+      cer: 0.0741
+      wer: 0.4444
+    '598':
+      text: Wubesua ade afa akyerɛw mu agyiraehyɛde nso ho.
+      hyp: wɔbusua de afa akyerɛ wo mu agyerahyɛden nso ho
+      cer: 0.1795
+      wer: 0.625
+    '600':
+      text: Eyi bɛsan aboa wo ama woatumi asua asan ate Borɔfo kasa no yiye.
+      hyp: yibesan aboawoa mu wɔtumi asua sɛn ateɛ borɔfoɔ kasa no yie
+      cer: 0.1961
+      wer: 0.7692
+    '604':
+      text: Kasamufa yɛ nsɛmkuw bi a ɛda adi wɔ ɔkasamu mu.
+      hyp: aka
+      cer: 0.9189
+      wer: 1.0
+    '617':
+      text: Eti no na yegyina so de hu kasasin koro.
+      hyp: enti no na gyina nso de ho kasa sɛ nkoro
+      cer: 0.1935
+      wer: 0.7778
+    '621':
+      text: Kasain ahorow abiɛsa nonom ne edin kasasin, adeyɛ kasasin ne ɔkyerɛfo
+        kasasin.
+      hyp: kaseɛ ahorabeasa nonom ne dikasane kyerɛfo ka
+      cer: 0.4615
+      wer: 0.8333
+    '622':
+      text: Eyi yɛ kasasin a eti no yɛ edin anaa dinnsiananmu.
+      hyp: ɛti no yɛɛ den anaade nsiana nu
+      cer: 0.45
+      wer: 1.0
+    '624':
+      text: Edin kasasin tumi yɛ asɛmfua koro pɛ a ɛyɛ edin anaa edinnsiananmu .
+      hyp: ɛdi nkasase ntumi yɛ asɛmfuy akorɔ pɛ a ɛyɛɛ den anaa edin sia anam mu
+        na
+      cer: 0.2
+      wer: 1.0
+    '631':
+      text: Yetumi nya asɛmfua a ɛboro biako wɔ Edin kasasin mu.
+      hyp: yɛtumi nnya asɛmfora a ɛborobi ako wai din kasasɛn mu
+      cer: 0.1667
+      wer: 0.8
+    '643':
+      text: Afua papa yere no awo.
+      hyp: afuo a papa yere no awo
+      cer: 0.0588
+      wer: 0.4
+    '670':
+      text: Adeyɛ kasasin yɛ kasasin a eti no yɛ adeyɛ.
+      hyp: na adeɛ yɛ ekasa se yɛ kasasea  no yɛ adeɛo
+      cer: 0.3824
+      wer: 0.7778
+    '673':
+      text: Adeyɛ kasasin a ɛyɛ adeyɛ titiriw biako pɛ no, yɛfrɛ no Adeyɛ Kasasin
+        Tiawa.
+      hyp: adeɛ kasa se a yɛadeɛ atitiri bea kopɛ no yɛfrɛ no na deɛ yɛekasa sɛntiawa
+      cer: 0.1967
+      wer: 0.8571
+    '678':
+      text: Adeyɛ kasasin a ɛwɔ adeyɛ mmataho, adeyɛ titiriw ne adeyɛ boafo.
+      hyp: ade yɛ kasasea wɔ adeyɛ mmata ho adeɛ yɛ titirewo neadeyɛ boafoɔ
+      cer: 0.1346
+      wer: 1.0
+    '690':
+      text: Kasasin a eti asɛmfua no yɛ ɔkyerɛfo no, yɛfrɛ no Ɔkyerɛfo Kasasin.
+      hyp: kasa sɛn a yete asɛmfoɔ no yɛɛ ɔkyerɛfoɔ no yɛfrɛ no ɔtwerɛfoɔ kaa
+      cer: 0.2593
+      wer: 0.6667
+    '693':
+      text: Ɔpon anan a ɛwɔ fam hɔ no ma yehu ɔkyerɛfo kasasin ne wɔn nhyehyɛe ahorow.
+      hyp: ɔpon nanaa ɛwɔ fam hɔ no ma yɛ hoɔkyerefo kasa sine wo nkyehyɛeɛ ahoroɔ
+      cer: 0.1864
+      wer: 0.6
+    '700':
+      text: Yetumi nya kasasin bebree wɔ ɔkasamu bi mu.
+      hyp: ɛtumi nya kasasɛm bebree wɔ ɔkasɛ mu bi
+      cer: 0.2
+      wer: 0.625
+    '701':
+      text: Boadu kɔɔ kurow no mu.
+      hyp: bɔɔdukoɔ kuro no mu
+      cer: 0.2353
+      wer: 0.6
+    '707':
+      text: Wɔde kasasin da adwempɔw bi adi.
+      hyp: wɔde kasasinda adwempobea no
+      cer: 0.1923
+      wer: 0.8333
+    '708':
+      text: Kasasin di akoten wɔ kasa ne akyerɛw nkitahodi mu.
+      hyp: kasa sen de kote wɔ kasaa ne atwerɛ wo nkitahodi muo
+      cer: 0.2195
+      wer: 0.8889
+    '712':
+      text: Monsensan asɛmfua a ɛyɛ kasasin a moahu no ti no mu biara ase.
+      hyp: monsensasemfoɔ a ɛyɛkasasea a wahonu ti no mu biara ase
+      cer: 0.2245
+      wer: 0.4615
+    '741':
+      text: Wo ne wo mfɛfo nkyɛ wo mmuae no.
+      hyp: bɔwfafo ntyɛw mmui ae no
+      cer: 0.4167
+      wer: 0.875
+    '753':
+      text: Ɔkasamu Tiawa ne Ɔkasamufa Titiriw ntam wɔ pon a ɛwɔ ase hɔ no so.
+      hyp: ɔkasɛ mu tiawa nea ɔkasa mu fa titiri ntam wɔ pɔn a ɛwɔ ase hɔ no so
+      cer: 0.0769
+      wer: 0.5714
+    '764':
+      text: Kojo nom nsu a, ɔbɛfe.
+      hyp: kɔjonom so a ɔ no
+      cer: 0.4375
+      wer: 1.0
+    '765':
+      text: Mɛhwehwɛ no, sɛ mekɔ a.
+      hyp: mehwehwɛ no sɛ mekɔa
+      cer: 0.0588
+      wer: 0.6
+    '767':
+      text: Yɛreba no, yehyiaa Kɔnɔngo Tiwaa.
+      hyp: yɛrebano yihia kɔnoŋ gu chuwa
+      cer: 0.3704
+      wer: 1.0
+    '772':
+      text: Mpɛn pii no, ɛka biribi fa ɔkasamufa titiriw no.
+      hyp: mpɛn pii no reka biribi fa ɔkasɛm fa titire no
+      cer: 0.1579
+      wer: 0.4444
+    '780':
+      text: Berɛ a worekɔ no, mefrɛɛ wo.
+      hyp: berɛ a wɔkɔ no mefrɛɛ wo
+      cer: 0.1429
+      wer: 0.1667
+    '782':
+      text: Mɛka sɛ wo papa ba a.
+      hyp: mɛkasɛ wo papa baa
+      cer: 0.0
+      wer: 0.6667
+    '783':
+      text: Sɛ yɛanhwɛ a, yɛrenhu no yie.
+      hyp: sɛ yɛahwɛ a yɛrehuno yie
+      cer: 0.0909
+      wer: 0.5
+    '820':
+      text: Ɔman bɛn mu na Kumase wɔ?
+      hyp: wɔman be mu ne kuma se wɔ ho
+      cer: 0.3158
+      wer: 1.0
+    '833':
+      text: Abofra yi ho yɛ fɛ!
+      hyp: abofra yi ho yɛ fɛ
+      cer: 0.0
+      wer: 0.0
+    '837':
+      text: Biribiara nni eyi mu a ɛkyerɛ sɛ ɔkasafo no rehyɛ n’atiefo no ama wɔayɛ
+        biribi.
+      hyp: biribiara ni eyi mu a ɛkyerɛ sɛ ɔkasafo no rehyɛ natiafo no ama wɔayɛ baribi
+      cer: 0.0476
+      wer: 0.2
+    '839':
+      text: Wobetumi ama asɛmmisa nsɛmfua ho nhwɛso wɔ Akuapem Twi mu?
+      hyp: wɔbɛtumi amaa asɛmmisansemfoɔ ahonhwɛ soɔ ɛkɔapentwimu
+      cer: 0.2083
+      wer: 1.0
+    '841':
+      text: Ɔkasamufa Titiriw a edi dwuma sɛ Asɛmmisa.
+      hyp: wɔkasa mo fa titire a ɛdi dwuma sɛ asɛmmisa
+      cer: 0.1429
+      wer: 0.7143
+    '843':
+      text: Worehwehwɛ wo mpaboa no ana?
+      hyp: worehehwɛ wo mpaboa no ano
+      cer: 0.087
+      wer: 0.4
+    '852':
+      text: Lartebea kenkanee nhoma a ne papa tɔ maa no no.
+      hyp: la atibea kinkanee homa ani papatɔ maanɔo
+      cer: 0.1892
+      wer: 1.0
+    '853':
+      text: Ɔbea no a ɔtɔɔ mpaboa nnɛra no kɔ.
+      hyp: ɔbea no ɔatɔ m pabɔ nnera no kɔ ɔ
+      cer: 0.2692
+      wer: 0.625
+    '861':
+      text: Etumi di dwuma sɛ ɔyɛfo, ɔyɛtia anaa ogyefo.
+      hyp: ɛtumi de dwuma sɛ ɔyɛ for ɔyɛ tia anaa ɔgyefo
+      cer: 0.1143
+      wer: 0.875
+    '878':
+      text: Ɔkyerɛfo kasamufa kumaa na yɛasensan ase wɔ ɔkasamu a ɛwɔ soro hɔ no mu
+        no.
+      hyp: ɔtwerɛokasamu fa komaa na yɛasensa se wɔ ɔkasamu a ɛwɔ sorɔ hɔno mu no
+        o
+      cer: 0.1333
+      wer: 0.6
+    '879':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ ɔkasamufa mu.
+      hyp: fa wankasa nsemfoɔ akyerɛkyerɛ ɔkasa mufa mu
+      cer: 0.0811
+      wer: 0.6667
+    '880':
+      text: Ka wo mmuae no kyerɛ wo mfɛfo.
+      hyp: ka wo mmoae no kyerɛ wo mfɛfo
+      cer: 0.0435
+      wer: 0.1429
+    '891':
+      text: Mikohuu m’adamfo bi a na ɔredi ɔmo wɔ hɔ.
+      hyp: mekɔhuadamfo bi a na ɔrede ɔmo wɔ hɔ
+      cer: 0.1613
+      wer: 0.3333
+    '899':
+      text: Ekuw biara mma ɔkasamufa ahorow a moasua no mu biara ho nhwɛso biako.
+      hyp: ɛku biara mmaa ɔkasa mfaahorɔ mmo asuo no mu biaraonhwɛso biaako
+      cer: 0.1786
+      wer: 0.7692
+    '900':
+      text: Ekuw biara nka ne mmuae nkyerɛ adesuafo nkae no.
+      hyp: ɛko biara nka ne mmoae nkyerɛ adesuafoɔ nkan no so
+      cer: 0.2051
+      wer: 0.5556
+    '905':
+      text: Barima Boadu di fufuu daa.
+      hyp: brimaboa du de fufu daa
+      cer: 0.1429
+      wer: 0.8
+    '906':
+      text: Yɛde tete ɔkasamu ahorow mu.
+      hyp: yɛde te tee ɔkasɛm ahoroo
+      cer: 0.2609
+      wer: 0.8
+    '907':
+      text: Yɛde twa nsɛmfua binom tiawa.
+      hyp: yɛde twansɛmfoɔ binom tiawa
+      cer: 0.0833
+      wer: 0.4
+    '908':
+      text: Yɛde si anodisɛm kasasin anaa kasamu bi awiei.
+      hyp: yɛde sia no desɛm kasasim anaa kasɛm mu biawuee
+      cer: 0.1579
+      wer: 0.875
+    '909':
+      text: Alice kaa sɛ, “Mepɛ akenkan”.
+      hyp: aliska sɛ mepɛ akenkan
+      cer: 0.1429
+      wer: 0.4
+    '912':
+      text: Owusuaa kɔɔ kurom kɔtɔɔ mako, nkyene, sekan ne akutu.
+      hyp: awusua kɔɔ kurom kɔtɔɔ mako nkyene sekanea kutu
+      cer: 0.0714
+      wer: 0.4444
+    '913':
+      text: Afua wɔ adan, kaa, mfuw ne nsase.
+      hyp: afooa wadan kaa mfu ne nsase
+      cer: 0.1667
+      wer: 0.5714
+    '914':
+      text: Yɛde tete deeti, nkurow ne aman ahorow ntam.
+      hyp: da yɛdi tidi ti nkuro nneɛman ahoro ntam no
+      cer: 0.3714
+      wer: 1.0
+    '916':
+      text: Minim Kumase, Sunyane, Takyiman ne Akyerɛnsua.
+      hyp: menim kumase sua ne takimanni akyerɛ nsuo
+      cer: 0.1579
+      wer: 1.0
+    '917':
+      text: Yɛde tete edin nkyerɛkyerɛmu ahorow a ɛrekyerɛkyerɛ edin biako mu ntam.
+      hyp: yɛde tetee di nkyerɛkyerɛ mu ahorow a epɛkyerɛkyeɛ kɛ yɛ din beako mu ntam
+      cer: 0.15
+      wer: 0.8182
+    '918':
+      text: Papa tuntum, tenten, kɛse no ada.
+      hyp: papa tuntum tsenten kɛse mo
+      cer: 0.2
+      wer: 0.5
+    '919':
+      text: Dua kɛse, tiatia, tuntum no abu.
+      hyp: duo kɛse tiatia tuntumno abo
+      cer: 0.0833
+      wer: 0.6667
+    '923':
+      text: Yɛde osisan si ɔkasamufa titiriw abien ntam.
+      hyp: yɛde woseesansie ɔkasa mufa titiriabia ntɛm
+      cer: 0.2162
+      wer: 0.8571
+    '924':
+      text: Makenkan nhoma ahorow; Ehia Wo A, Nwu na m’ani gye ho pa ara.
+      hyp: makenkan humahorɔ ɛhia wɔ woanwu na mani gye hu pa ara
+      cer: 0.2
+      wer: 0.5385
+    '926':
+      text: Yɛde tete nneɛma ahorow a yɛrebobɔ edin ntam.
+      hyp: yɛde tete nneɛma ahoyɛreboboy din ntamo
+      cer: 0.1892
+      wer: 0.625
+    '928':
+      text: Yɛde ogyawnsɛnkyerɛnne da ɔdede bi adi.
+      hyp: yɛdu ɔgya nsɛnkyerɛn ne da ɔdedebee dii
+      cer: 0.1818
+      wer: 1.1667
+    '929':
+      text: Yɛde hyɛ asɛmfua bi mu de kyerɛ sɛ, akyerɛwde bi ayera afi beae pɔtee
+        bi.
+      hyp: yɛde hyɛɛ asɛffoɔ bi mu de kyerɛɛ sɛ akyerɛ wo debi a yera a afibea a epɔte
+        bi
+      cer: 0.1579
+      wer: 0.8
+    '930':
+      text: Yɛnam nkatomde so de da obi anom asɛm pɔtee bi adi.
+      hyp: yɛneŋmɔ ka tumle sɔ de ɖobianom asɛmpɔtii beɛɖi
+      cer: 0.325
+      wer: 1.0
+    '933':
+      text: Yetumi san nso de da abasɛm bi atifi asɛm adi.
+      hyp: yɛtumi san so de daa ba simbe tifiasɛ me
+      cer: 0.2222
+      wer: 0.8
+    '935':
+      text: Yɛsan de da anomsɛm pɔtee bi adi fi akyerɛw nkae no ho.
+      hyp: yɛsan deda hanomnsɛm pɔteɛ bi de fie akyerɛw nkaeɛ no
+      cer: 0.2093
+      wer: 0.6667
+    '938':
+      text: Yɛde nsɛmfua-ntam-abaa kyerɛ twaka anaa ayɔnkofa a ɛda nneɛma abien bi
+        ntam.
+      hyp: yedi nsɛmfoɔ ɛntam abaakyere twa ka anaa ayɔnkofa ɛda nneɛma beɛn bi ntam
+      cer: 0.1613
+      wer: 0.6667
+    '939':
+      text: Yɛnam so de nkyerɛkyerɛmu foforo bi ka nea ɛda gua dedaw no ho.
+      hyp: yɛnam so de nkyerɛkyerɛ mu foforɔ bi kanea ɛdɛgu da no
+      cer: 0.16
+      wer: 0.6923
+    '940':
+      text: Nhwɛso Amma tɔɔ nnuaba (akutu, kwadu ne aborɔbɛ) wɔ kurom hɔ.
+      hyp: hyɛ sowa ma toonu aba wɔkrom ho
+      cer: 0.5957
+      wer: 1.0
+    '941':
+      text: Yetumi de si nsanhɔ anaa osiprenu ananmu.
+      hyp: yɛtumi de sinsa ho anaaw sipremnonamo
+      cer: 0.2647
+      wer: 0.8571
+    '943':
+      text: Ɛkyerɛ ayɔnkofa anaa nsonsonoe a ɛda nsɛmfua binom ntam.
+      hyp: ɛkyire yɔnkɔfaa anansonsone a ɛdansemfo binom ntam
+      cer: 0.2128
+      wer: 0.6667
+    '945':
+      text: Yɛde si nteamu kasamu anaa ɔhyɛ kasamu akyi de da nkatede a ɛwɔ soro adi.
+      hyp: yɛdi senteimu kasɛ mu anaa ɔhyɛ kasɛmo akyidedankate deɛ wɔ soro adio
+      cer: 0.1379
+      wer: 0.8
+    '946':
+      text: Yɛde si asɛmmisa kasamu bi akyi.
+      hyp: yɛde siase misakasa mu bi akyi
+      cer: 0.0769
+      wer: 0.5
+    '966':
+      text: Momfa mo mmuae no ntoto afoforo baanu bi de ho.
+      hyp: momfa m mmuae no ntotoa afoforɔ baa no bi de ho
+      cer: 0.1081
+      wer: 0.5
+    '970':
+      text: Meduu ɛhyɛngyinabea hɔ no na ɛhyɛn no atu dedaw.
+      hyp: a meduu ɛhyɛ nnyinabea ho no na ɛhyɛn na ɔto deda o
+      cer: 0.1795
+      wer: 0.8889
+    '971':
+      text: Me nnamfonom Oforiwaa,, Boatemaa, Gyamfuaa ne Kuma bɛba abɛsra yɛn.
+      hyp: me nnamfonom mo firi wɔ aboate maa gya mfea ne koma bɛbaa abɛsra yɛn y
+      cer: 0.1481
+      wer: 1.0
+    '976':
+      text: Kyerɛ nea nti a wode saa akyerɛw mu agyiraehyɛde no dii dwuma.
+      hyp: kyerɛ nti a wɔde saa akyerɛ mu agyira ahyɛdeɛ no de dwuma
+      cer: 0.18
+      wer: 0.5
+    '986':
+      text: Hwɛ sini a wɔde ato hɔ yi na watumi akenkan pii afa ɔkasasin ahorow no
+        ho.
+      hyp: hwɛ sini a wɔde ato hɔ yi na wɔatumi akenkan pii afɔrkasa si ahoro no ho
+      cer: 0.0862
+      wer: 0.25
+    '988':
+      text: Kenkan linke a ɛwɔ ase hɔ no na nya nimdeɛ pii fa ɔkasasin ahorow no ho.
+      hyp: twenkan link a wɔase hɔ no na nyɛ nimdie pii fa okasasiahorɔ no ho
+      cer: 0.1964
+      wer: 0.5
+    '989':
+      text: Kenkan linke a ɛwɔ ase hɔ a ɛfa kasamufa ne ne ahorow ho no.
+      hyp: kɛnkan linkan ɛwɔ ase hɔ a ɛfa kasamu fa ne neahorɔ ho noo
+      cer: 0.1304
+      wer: 0.5
+    '990':
+      text: Kenkan linke a ɛwɔ ase hɔ no na nya nimdeɛ a ɛkɔ nkan.
+      hyp: twenkelin ke a wɔase hɔ no na nyɛ nimdeɛ a ɛkonkan
+      cer: 0.1707
+      wer: 0.5385
+  source: evaluated
+- model: ghananlpcommunity/ghana-tts-72k
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  cer: 0.237
+  wer: 0.6546
+  score: 0.237
+  samples: 200
+  valid: 200
+  avg_seconds: 0.0
+  judge:
+    model: Qlerqly/griot-nano-1
+    cer_on_real_speech: 0.2193
+  entries:
+    '7':
+      text: Saa ɔfa yi kasa fa asɛnsin, asɛnsin nhyehyɛe ne toonu ho.
+      hyp: saa ɔfa yi kasa fa asɛnsin asɛnsin nhyehyɛɛ ne tono ho
+      cer: 0.0667
+      wer: 0.1818
+    '19':
+      text: Asɛnsin yɛ asɛmfua fa bi a yɛte wɔ kasa mu.
+      hyp: asɛnsi yɛ asɛmfoɔ afabi ayɛte wɔ kasa m o
+      cer: 0.1212
+      wer: 0.8
+    '20':
+      text: Anom (Kɔnsonant) nnyigyei yɛ anom nnyigyei a etumi gyina sɛ asɛnsin.
+      hyp: ɛno nkɔnsa yi gyeyɛ anom yi gye a ɛtumi gyina sɛ asɛnsi
+      cer: 0.2545
+      wer: 0.7273
+    '21':
+      text: Toonu yɛ ɛnne mu nsakrae a etumi de nsakrae ba asɛmfua ntease mu.
+      hyp: kontonyɛ animu nsakra a ɛtumi de nsakran ba asɛmfoa nteasɛ mu
+      cer: 0.2308
+      wer: 0.6923
+    '51':
+      text: Wɔakyekyɛ asɛmfua biara mu kɔ nsɛnsin ahorow a ɛwɔ mu mu.
+      hyp: wɔakyekyɛ asɛmfoɔ biara mu kɔ nsɛnsin ahoro a ɛwɔ mo mu
+      cer: 0.087
+      wer: 0.2727
+    '55':
+      text: Asɛnsin a emu abue yɛ asɛnsin a ɛnne nnyigyei twa to.
+      hyp: asɛnsenea mo aboɔ yi asansena a ɛni nnyigyae twa t
+      cer: 0.3571
+      wer: 0.8182
+    '60':
+      text: Asɛnsin a emu to yɛ asɛnsin a anom nnyigyei twa to.
+      hyp: asansi na ɛmoto yɛ asɛnse na anom nyigyee toa
+      cer: 0.225
+      wer: 0.8182
+    '65':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ asɛnsin ase.
+      hyp: wɔankasa nsɛmfoɔ akyerɛkyere asɛnsinasem
+      cer: 0.1944
+      wer: 1.0
+    '67':
+      text: Kyerɛkyerɛ nsɛnsin ahorow a ɛwɔ Akuapem Twi kasa mu no mu.
+      hyp: hɔme anyaabaanokɔmfo amsa ne kasa mu no mu
+      cer: 0.6383
+      wer: 0.6364
+    '68':
+      text: Kyerɛkyerɛ mfaso a ɛwɔ asɛnsin nhyehyɛe ho nimdeɛ so wɔ nsɛmfuayɛ mu.
+      hyp: yarekyerɛ mfasoɔ a ɛwɔ asɛnsen nhyehyɛ ho nimdeɛ so wɔ nsɛmfoyɛ mu
+      cer: 0.1404
+      wer: 0.4167
+    '69':
+      text: Ɛne wo mfɛfo nkyɛ wo mmuae no.
+      hyp: ɛne wo mfafunkyɛ wommuaeɛno
+      cer: 0.1304
+      wer: 0.7143
+    '70':
+      text: Ɔkasa biara wɔ ne nsɛnsin nhyehyɛe.
+      hyp: ɔkasa biara wɔ ne nsɛnsi nhyehyɛeɛ
+      cer: 0.069
+      wer: 0.3333
+    '73':
+      text: Asɛnsin fa a ɛho hia pa ara yɛ ɛnne nnyigyei.
+      hyp: asɛsefa a ɛhohia pa yɛ ani nye gye
+      cer: 0.3429
+      wer: 0.8
+    '84':
+      text: Yɛ mpɛnsɛmpɛnsɛmu fa Akuapem Twi nsɛnsin nhyehyɛe no ho.
+      hyp: yɛpe nsɛ pɛnsa mu fa akoapɛm toi insanse nhyehyɛɛ no ho
+      cer: 0.2553
+      wer: 0.8889
+    '88':
+      text: Ɛne wo mfɛfo nhwehwɛ nsɛnsin dodow a ɛwɔ asɛmfua no mu biara mu.
+      hyp: ɛnne wo nsra ko wo wohsia sɛsin dodo a ɛwɔ asɛmfoɔ anom mu biara u
+      cer: 0.3529
+      wer: 0.7692
+    '89':
+      text: Ɛne wo mfɛfo nkyɛ adwen mfa asɛnsin no mu biara nhyehyɛe ho.
+      hyp: ɛne mo mfɛfoɔ nkyɛ agyenfa asansi no mo biara nhyehyɛɛ ho
+      cer: 0.1875
+      wer: 0.5833
+    '92':
+      text: Na abɛbɛ ne ntɛtea yɛ nnamfonom amapa nanso na wɔn mu biara nko ne ne
+        suban.
+      hyp: na babɛne ntɛtea yɛɛ nnamfonom ammapa nanso na wɔmmɔ biara nko nene subank
+      cer: 0.1167
+      wer: 0.5625
+    '93':
+      text: Ɔpɛ bere mu no, ntɛtea yeree ne ho yɛɛ adwuma pɛɛ aduan bebree guu hɔ.
+      hyp: ɔpɛ berɛ mu no ntɛtea yeree ne ho yie adwuma pɛ adua beberee gu hɔ
+      cer: 0.1296
+      wer: 0.4
+    '99':
+      text: Monka mo mmuae nkyerɛ adesuafo nkae no nyinaa.
+      hyp: wɔnka mo mmoa nkyerɛ adesuafoɔ nkaeɛ no nyinaa
+      cer: 0.1579
+      wer: 0.5
+    '109':
+      text: Ɔkasa biara wɔ toonu ahorow.
+      hyp: ɔkasa biara wɔtoo no ahoroɔ
+      cer: 0.087
+      wer: 0.6
+    '134':
+      text: Hwɛ nhwɛso a edidi so yi.
+      hyp: yɛyfo one
+      cer: 0.8421
+      wer: 1.0
+    '139':
+      text: Ɛho nhwɛso no bi na edidi so yi.
+      hyp: ɛho nhwɛsoɔ no bi na ɛdidi sii
+      cer: 0.1667
+      wer: 0.5
+    '148':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ toonu ase.
+      hyp: wɔankasasɛfoɔ kyeɛkyeɛtoo no ase
+      cer: 0.2941
+      wer: 0.8333
+    '151':
+      text: Fa nhwɛso a ɛfata kyerɛkyerɛ toonu ahorow mu wɔ Akuapem Twi mu.
+      hyp: a ɛfata kyerɛkyerɛtoo no ahoromu wɔ akoapem twimu
+      cer: 0.2157
+      wer: 0.75
+    '152':
+      text: Kuw biara ntoatoa adwen mfa toonu dwumadi ho.
+      hyp: wwu biara ntoatoa adwene mfatoo no dwumadi ho
+      cer: 0.1351
+      wer: 0.5
+    '159':
+      text: Kyerɛ asɛnsin a toonu ahyɛnsode no da so wɔ asɛmfua no mu.
+      hyp: sɛs tohɛsdeonoaane bi wɔ asɛmfoɔ no mu
+      cer: 0.5435
+      wer: 0.75
+    '160':
+      text: Monka mo mmuae no nkyerɛ adesuafo nkae no nyinaa.
+      hyp: wonka mommoɛ no nkyerɛ adesouafoɔ nkaeɛ no nyinaa no
+      cer: 0.225
+      wer: 0.6667
+    '172':
+      text: Asɛntitiriw a ɛwɔ abasɛm bi mu no na yɛfrɛ no adwempɔw.
+      hyp: asɛntitiri a ɛwɔ abasɛm bi mu no na yɛfrɛ no adwempɔn
+      cer: 0.0455
+      wer: 0.1818
+    '215':
+      text: Fa nea woakyerɛw no toto nea wɔakyerɛw wɔ ase hɔ no ho.
+      hyp: na wra wɔakyerɛ no o totonia wɔakyerɛ wase hɔ no ho
+      cer: 0.2093
+      wer: 0.6667
+    '218':
+      text: Eyi yɛ akenkan a yɛde hwehwɛ asɛntitiriw a ɛwɔ abasɛm bi mu.
+      hyp: ɛyiiyɛ akenkan ayɛde hwehwɛ asɛntitiri a ɛwɔ abasɛm bi mu
+      cer: 0.0625
+      wer: 0.4167
+    '223':
+      text: Yɛde saa akenkan yi hwehwɛ mmuae ma nsɛmmisa pɔtee bi.
+      hyp: yɛde saa akenkan yi hwe hwɛ muɛ ma nsɛmmisa poteb
+      cer: 0.1364
+      wer: 0.5
+    '224':
+      text: Kenkan abasɛm a ɛwɔ ase hɔ no.
+      hyp: ktenkan abaasem a ɛwɔ ase hɔ no
+      cer: 0.1304
+      wer: 0.2857
+    '225':
+      text: Kyerɛ adwempɔw a ɛwɔ abasɛm a ɛwɔ ase hɔ no mu.
+      hyp: wopɛkya ka ayepa ayɛ awo abasam ayɛ wɔ ase hɔnom
+      cer: 0.5
+      wer: 1.0
+    '226':
+      text: Ka adwempɔw a wuhui no kyerɛ adesuafo nkae no na fa toto wɔn de ho.
+      hyp: ka adwenpɔ awohwii no kyerɛɛ adesuafoɔ kae no na fa totowande ho
+      cer: 0.1538
+      wer: 0.6
+    '251':
+      text: Ka w’adwempɔw no kyerɛ adesuafo nkae no.
+      hyp: ka wɔadwempɔ no kyerɛ adesoafoɔ nkae no
+      cer: 0.125
+      wer: 0.2857
+    '255':
+      text: Ɛyɛ gyidi, obuo ne nokwaredi.
+      hyp: ayagyedi oboo ne nokwaredi
+      cer: 0.1739
+      wer: 0.6
+    '257':
+      text: Abeawa; Eyi yɛ nokwasɛm na sɛ mpanyimfo nso yɛ mfomso ɛ?
+      hyp: abiaa noasɛna sɛ panimfo nso yɛ mfo sɛ
+      cer: 0.3182
+      wer: 0.7273
+    '261':
+      text: Ɛsɛ sɛ yebisa nsɛm pɛ mu nkyerɛkyerɛmu wɔ bere a ɛsɛ mu.
+      hyp: nsɛ sɛ yɛbisa nsɛm pɛ nkyerɛkyerɛ mu wɔ bere a ɛsɛmu o
+      cer: 0.1136
+      wer: 0.5
+    '262':
+      text: Nanso, ne nyinaa mu no, setie boa ma yenya asomdwoe ne ahobammɔ.
+      hyp: nanso ne nyinaa mu no setie boa ma yɛnya asomdwoeɛ ne ahobammɔ
+      cer: 0.04
+      wer: 0.1667
+    '274':
+      text: Kenkan abasɛm a ɛwɔ fam hɔ no na bua nsɛmmisa ahorow a ɛtoa so no.
+      hyp: kankanabassem a ɛwɔ fam hɔ no naboa nsɛmmissa ahorow a ɛtoa so o
+      cer: 0.1176
+      wer: 0.4
+    '280':
+      text: Sukuupanyin no gyina hɔ ma tumidi wɔ sukuu no mu.
+      hyp: wu gwafanyino jina homa tu midi wɔ sukuu no mu
+      cer: 0.2308
+      wer: 0.6
+    '300':
+      text: Eyi yɛ kwan a wofa so kenkan abasɛm bi sɛnea ɛbɛyɛ a wubenya emu ntease.
+      hyp: y yɛ kwan awufasuo kenkan abasambi sɛnea a ɛbɛyɛ awobɛnya emu ntiase
+      cer: 0.1579
+      wer: 0.6667
+    '310':
+      text: Eyi yɛ bere a ɔkenkanfo no si gyinae wɔ abasɛm no akenkan akyi.
+      hyp: yiyɛ berɛ a ɔkenkafoɔ no i gyinaa ɛwɔ abasɛm no akenka no akyi
+      cer: 0.16
+      wer: 0.6923
+    '313':
+      text: Ahonnidi yɛ ade titiriw a ɛho hia pa ara wɔ nnipa apɔwmuden ne anuonyam
+        mu.
+      hyp: wondeɛ ade tit noa ɛhɔhia paaa wɔ nipa apɔmuden ne aneonyam o
+      cer: 0.2833
+      wer: 0.8
+    '335':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ ‘adwempɔw’ ase.
+      hyp: wɔankasa nsɛmfoɔ akyerɛkyerɛ adwompo ase
+      cer: 0.2162
+      wer: 0.8333
+    '338':
+      text: Obuo nyɛ biribi a yɛhyɛ obi ma no de ma yɛn na mmom, ɛyɛ ade a yenya.
+      hyp: ɔbuɔ nyɛ biribi ayɛhyɛ obi mma no de ma yɛn na mmom ɛyɛ ade ayɛnya
+      cer: 0.0784
+      wer: 0.3529
+    '342':
+      text: Fa no sɛ woawura sukuu dan bi mu a obiara de nnidi kyia ne yɔnko fɛfɛɛfɛ.
+      hyp: sɛ wo awura so kuu dam bi mu a obiara da nnidi gyea ne yɔnkɔ fɛfɛɛfɛ
+      cer: 0.1754
+      wer: 0.5625
+    '347':
+      text: Sɛ wowɔ ntoaso sukuu mu yi, kae sɛ, obuo yɛ sekan- nufanu.
+      hyp: sɛ wowɔ ntua asoso kuu mu yi kae sɛ obuoo yɛ sekanofa no
+      cer: 0.1628
+      wer: 0.5
+    '350':
+      text: Dɛn na atifi asɛm no ka fa adwempɔw a ɛwɔ abasɛm no mu ho?
+      hyp: da na atifie asɛm no ka faadwempɔ a ɛwɔ abasɛm no mu ho
+      cer: 0.0909
+      wer: 0.2857
+    '352':
+      text: Fa ɔkasamu nnan bɔ abasɛm yi nyinaa tɔfa.
+      hyp: ɔkasa munam bɔ abasɛm yi nyinaa tɔfa
+      cer: 0.1212
+      wer: 0.375
+    '353':
+      text: Kyerɛw akenkan a emu dɔ su abien bi a woasua wɔ saa ɔfa yi mu.
+      hyp: ɛyisofamomekɔnompon na ɔfdao ki no mponakda o kaɛ na bɔ na ka na ɔkɔ na
+        ɔkɔ na kwa na ɔkɔ na ɔkɔ na ɔkɔ na kɔ na okɔna ɔkɔ
+      cer: 1.5745
+      wer: 1.9333
+    '355':
+      text: Nsonsonoe bɛn na ɛda anotew ne mmɔakyi agyinaesi ntam?
+      hyp: nsosone bɛn na ɛdaa anoto ne mmoakye agyenase ntam
+      cer: 0.2222
+      wer: 0.5556
+    '356':
+      text: Kyerɛkyerɛ akenkan ntrɛwmu su abiɛsa mu?
+      hyp: kadakla kenkantommu su abeasa m o
+      cer: 0.4412
+      wer: 1.0
+    '357':
+      text: Kyerɛkyerɛ nsonsonoe a ɛda akenkan a emu dɔ ne akenkan ntrɛwmu mu.
+      hyp: katɛ ansa na a ɛda akenkan ɛyɛ mu dɔ ne akenka ne ntrɛmu mu
+      cer: 0.3519
+      wer: 0.6667
+    '375':
+      text: Yɛde mmataho di dwuma wɔ kasa no mu de yɛ nsɛmfua foforo.
+      hyp: yɛde mmotahodi dwuma wɔ kasa no mu de yɛ nsɛmfoa foforɔ
+      cer: 0.0667
+      wer: 0.3333
+    '382':
+      text: Mmataho a yɛtaa de di dwuma pa ara ne nsianim ne nsiakyi.
+      hyp: mmaatahol ayɛtaa didi dwuma pa ara ne nsia nim ne nsiakyi
+      cer: 0.0667
+      wer: 0.5833
+    '387':
+      text: Nsianim yɛ mmataho a yɛde si asennua bi anim.
+      hyp: nsianim yɛ matahɔ ayɛde si asɛnnoa bi anim
+      cer: 0.1111
+      wer: 0.4444
+    '388':
+      text: Nsim nso yɛ mmataho a yɛde si asennua bi ntam.
+      hyp: n siŋ so yɛ ma ta ŋɔ a yɛ dee si asiŋa bi ntam
+      cer: 0.2778
+      wer: 0.9
+    '389':
+      text: Nsiakyi yɛ mmataho a yɛde si asennua bi akyi pɛɛ.
+      hyp: nsiakyi yɛ mataho ayɛda si asenoa bi akyipɛk
+      cer: 0.1282
+      wer: 0.6
+    '393':
+      text: Yennim Ghana kasa bi a saa bere yi ɛde nsim di dwuma.
+      hyp: yɛnim ghanakasabia saa berɛ yi ɛde nsim diduma
+      cer: 0.0976
+      wer: 0.6667
+    '400':
+      text: Dan w’ani kyerɛ wo yɔnko na kyerɛkyerɛ mmataho ho ase kyerɛ no.
+      hyp: danwɔ ne kyerɛ wo yɔnko na kyerɛkyerɛ mmataho ho asekyerɛ no
+      cer: 0.04
+      wer: 0.3333
+    '407':
+      text: Nyafirim mmataho no ma yenya nsɛmfua foforo fi asennua no mu.
+      hyp: nyɛ afrom mataho nɔŋ ma yɛnya nsɛmfoɔ foforɔ fi asannuanɔ mu
+      cer: 0.24
+      wer: 0.8182
+    '427':
+      text: Mmataho dwumadi no da nso wɔ kasa ahorow mu.
+      hyp: mmataho dwumadi no danso wɔ kasa ahoroɔ mu
+      cer: 0.0286
+      wer: 0.3333
+    '428':
+      text: Ɛboa ma yetumi yɛ nsɛmfua foforo fi asennua anaa asɛmfua dedaw bi mu.
+      hyp: ɛboa mma yɛtumi yɛ nsɛmfoɔ foforɔ fi asennua anaa asɛmfoɔ deda wo bi mu
+      cer: 0.1429
+      wer: 0.5385
+    '429':
+      text: Etumi sesa asɛmfua bi asɛmfuakuw fi biako mu kɔ foforo mu.
+      hyp: ɛtumi sɛ sasɛmfoɔ bi asɛmfoɔ akuofi bi ako mu ɔfoforɔ mu
+      cer: 0.2128
+      wer: 0.8182
+    '430':
+      text: Etumi sesa adeyɛ bi kabea.
+      hyp: ɛdayɛ i ayɛ pɛ a
+      cer: 0.8095
+      wer: 1.0
+    '432':
+      text: Etumi sesa asɛmfua bi kabea fi kabea biako mu kɔ foforo mu.
+      hyp: ɛtumi sisa asɛmfoɔ abi ka bi afika biabiakɔ mu kɔ foforɔ mu
+      cer: 0.1702
+      wer: 0.75
+    '433':
+      text: Mmataho tumi sesa asɛmfua (edin) fi biakofo mu kɔ dodow kabea mu.
+      hyp: matar ho tumi sesa asɛmfoɔ aden fibia kofo mu kɔdodoɔ kabia mu
+      cer: 0.1569
+      wer: 0.75
+    '434':
+      text: Mmataho ho nimdeɛ boa ma yetumi sopɛ nsɛmfua san sua yɛn kasa no yiye.
+      hyp: motahohonimde boa mayɛtumi so pɛnsɛnfoɔ asanso yɛn nkasa no yieɛ
+      cer: 0.2143
+      wer: 0.7857
+    '437':
+      text: Etumi sesa edin ma no dan edin nkyerɛkyerɛmu.
+      hyp: yɛde me sesa ɛdi mma no dan di nkyerɛkyerɛmu
+      cer: 0.2432
+      wer: 0.625
+    '438':
+      text: Etumi sesa edin a yehu ma no dan edin a yenhu.
+      hyp: itomesesa eden ayehoma no dan-edin ayɛ hu
+      cer: 0.2
+      wer: 0.9091
+    '439':
+      text: Etumi sesa edin nkyerɛkyerɛmu ma no dan edin.
+      hyp: etru mi sesa ɛdinkyerɛkerimo ma no dan edin
+      cer: 0.1622
+      wer: 0.5
+    '440':
+      text: Etumi sesa adeyɛ ma no dan edin nkyerɛkyerɛmu.
+      hyp: amsesa ade yɛ ma no dan edin kyerɛkeɛmu
+      cer: 0.1842
+      wer: 0.5
+    '441':
+      text: Etumi sesa adeyɛ ma no dan edin.
+      hyp: e
+      cer: 0.96
+      wer: 1.0
+    '457':
+      text: Wɔn dwumadi titiriw pa ara ne sɛ wɔbɛka ɔkasa afa ahorow abobom.
+      hyp: wɔn adwuma de titiri pa ara ne sɛ wɔbɛka ɔkasa afa ahorow abobom
+      cer: 0.0577
+      wer: 0.25
+    '461':
+      text: Kofi ne Ama kɔ afum.
+      hyp: kɔfe na amakɔ afom
+      cer: 0.2667
+      wer: 1.0
+    '462':
+      text: Mekɔɔ bi nanso manni bi.
+      hyp: bɛkɔbi nnanso ma ne bi
+      cer: 0.3158
+      wer: 0.8
+    '463':
+      text: Onni sika nti, obiara mpɛ no yɔnko.
+      hyp: ɔne sika nti obiara mpɛ no yɔnko
+      cer: 0.1111
+      wer: 0.1429
+    '464':
+      text: Kofi Boadi bɛba oo, ɔmma oo, yebesua ade.
+      hyp: kofiboadi bɛba o ɔmɔ o yɛbesu aɖek
+      cer: 0.2581
+      wer: 0.875
+    '465':
+      text: Linda bedi banku anaa abeteɛ?
+      hyp: linder bɛdi bankwa anaa abeti
+      cer: 0.2917
+      wer: 0.8
+    '478':
+      text: Yɛmfa nsanhɔ (,) mma nkabomde no akyi.
+      hyp: yɛfansan hɔlk mmanka bom de no akyi
+      cer: 0.1071
+      wer: 0.8333
+    '480':
+      text: Minim Nyame a magye no adi.
+      hyp: menim nyame amagye no adiɛ
+      cer: 0.0952
+      wer: 0.6667
+    '481':
+      text: Ɔkyerɛkyerɛni a ɔboo me no aba.
+      hyp: ɔkyerɛkyerɛ ne a ɔboome no aba
+      cer: 0.04
+      wer: 0.6667
+    '482':
+      text: Kasamufa titiriw nkabomde a ɛka kasamufa kumaa ne kasamufa titiriw bom.
+      hyp: asam mu fa tituruwo nŋkabom de aeka kasa mu fa kumaa ne kasa mufa titurubom
+      cer: 0.1667
+      wer: 1.1818
+    '488':
+      text: Bere a mereto dwom no, mihuu me nana.
+      hyp: bere amerit dwom no mo hu me nana
+      cer: 0.1429
+      wer: 0.5
+    '489':
+      text: Ansa sa mmrɛnkɛnsono besi ne ti ase no, na onim nea asaase aka akyerɛ
+        no.
+      hyp: ansa sa mmerɛ kɛso no bɛsi ne tiase nona ɔim neasase aka akyerɛ no
+      cer: 0.1404
+      wer: 0.6667
+    '490':
+      text: Yaw Annor amma ntɛm nti, obiara kɔ.
+      hyp: yɛ annor ama ntam nti obiara kɔ
+      cer: 0.1481
+      wer: 0.4286
+    '492':
+      text: Wɔtaa frɛ Ntotoho kabomde yi sɛ mmɔho nkabomde.
+      hyp: wɔta frɛ ntotoho kabomde yi sɛ mmɔ ho nkabomde
+      cer: 0.0256
+      wer: 0.375
+    '499':
+      text: Ɔbra no bɔ yɛ den ɛfisɛ, sika nni me ho.
+      hyp: ɔbra no bɔ yɛ den ɛfe sɛ sika nne me ho
+      cer: 0.069
+      wer: 0.3
+    '500':
+      text: Berɛ a yɛrekɔ sukuu no, ɔfrɛɛ me.
+      hyp: berded agyarefɔ sukuu no oframs
+      cer: 0.4
+      wer: 0.7143
+    '501':
+      text: Minni gye sɛ woapa me kyɛw.
+      hyp: being jeserved what anite
+      cer: 0.8571
+      wer: 1.0
+    '502':
+      text: Sɛ minyini a, metu kwan.
+      hyp: sɛ menyinia metu kwan
+      cer: 0.0556
+      wer: 0.4
+    '508':
+      text: Nkabomde ho mfaso da nso wɔ kasa ahorow mu.
+      hyp: nkabom de ho mfasodanso wɔ kasa horom
+      cer: 0.0882
+      wer: 0.7778
+    '510':
+      text: Ɛkyerɛkyerɛ botae mu anaa ɛda nea enti bi adi.
+      hyp: ɛkyerɛkyerɛ botamu anaa ɛdanea ntibiadeɛ
+      cer: 0.1081
+      wer: 0.7778
+    '511':
+      text: Ɛboa de kasamufa anaa asɛnsin bi ka ɔfoforo no ho.
+      hyp: ɛbua ade kasa mu fa anaa asɛnsem bi ka ɔfoforɔ no ho
+      cer: 0.125
+      wer: 0.7
+    '513':
+      text: Ɛboa da nsonsonoe a ɛda biribi ntam adi.
+      hyp: aboa da nsɔnson a ɛda bibi ntam adi
+      cer: 0.1875
+      wer: 0.375
+    '515':
+      text: Yɛde yɛ ntotoe fa adwempɔw bi ne asɛm bi ho.
+      hyp: yɛdi yɛn tuto fa adwempo bine asɛm bi ho
+      cer: 0.1471
+      wer: 0.6
+    '517':
+      text: Mmara kakra bi a ɛho hia pa ara da nkabomde dwumadi ho.
+      hyp: mmara kakra bi aehohia pa ara da nkabombɛ dwuma di h ho
+      cer: 0.093
+      wer: 0.5833
+    '520':
+      text: Nkabomde ka adwen, dwumadi ne nimdeɛ bom.
+      hyp: ŋka bumdi ka a dwen duma di ni nimdia buŋ
+      cer: 0.2727
+      wer: 1.2857
+    '523':
+      text: Nkabomde boa ma yetumi kyerɛw nneɛma ahorow bi din mmiako mmiako.
+      hyp: n-ka bumdi bua ma yɛtumi chɛra nneama ahorɔbi dim miɛaku miaku
+      cer: 0.3148
+      wer: 1.0
+    '534':
+      text: Hena na ɔtoto saa nneɛma ahorow no din?
+      hyp: hina na ɔtoto saa nneɛmaahorow no din
+      cer: 0.0323
+      wer: 0.375
+    '552':
+      text: Ɔkasa bebree fɛm wɔn nsɛmfua fi kasa afoforo mu.
+      hyp: ɔkasa bebree fam wɔ ne nsɛmfoɔ afekasa afoforɔ mu
+      cer: 0.1538
+      wer: 0.6667
+    '559':
+      text: Ɛma ɔkasa tu mpɔn efisɛ ɛma yenya nsɛmfua foforo ka dedaw no ho.
+      hyp: ɛma ɔkasa tuompɔn ɛfiri sɛ ɛma yɛnya nsɛmfoɔ foforɔ cardedao no ho
+      cer: 0.2157
+      wer: 0.6154
+    '560':
+      text: Ɛma yetumi ka kasa bi wɔ aman ahorow so.
+      hyp: ɛma yɛtumi kakasa bi wɔ aman ahorow su
+      cer: 0.0645
+      wer: 0.4444
+    '561':
+      text: Ɛma yetumi nya nsɛmfua toto nneɛma foforo din.
+      hyp: o
+      cer: 0.9737
+      wer: 1.0
+    '562':
+      text: Ɛma yehu nsɛmfua bi abɔse.
+      hyp: mma yɛ hu nsamfoa bi abɔse
+      cer: 0.1905
+      wer: 0.8
+    '565':
+      text: Kyerɛw mmataho nkyekyɛmu ahorow a ɛwɔ Akuapem Twi mu.
+      hyp: garomata ho nkyekyɛmu ahoroɔ a ɛwɔ akwapemtimu
+      cer: 0.2045
+      wer: 0.6667
+    '566':
+      text: Kyerɛw mmataho anan a ɛwɔ Akuapem Twi mu.
+      hyp: im anwɔ akopamu
+      cer: 0.697
+      wer: 1.0
+    '567':
+      text: Pɛnsɛmpɛnsɛm mmataho dwumadi anan anaa nea ɛboro saa mu.
+      hyp: pɛnsɛmpɛnsɛm mmataho dwumadie annan anaania aboro saamu
+      cer: 0.0851
+      wer: 0.7778
+    '569':
+      text: Kyerɛ nkabomde ahorow a ɛwɔ Akuapem Twi mu.
+      hyp: boin foot sa ksɛ gi chekal mah huitae
+      cer: 0.8571
+      wer: 1.0
+    '570':
+      text: Kyerɛ nsonsonoe a ɛwɔ nkabomde ahorow a woakyerɛw no ntam.
+      hyp: calenson se awoɔ ntabomde ahodroo a wɔakyerɛ noo nkam
+      cer: 0.3542
+      wer: 0.9
+    '573':
+      text: Sensan nkabomde a ɛwɔ ɔkasamu a edidi so yi mu ase.
+      hyp: sansaon tabona a wɔ ɔkasa mu a adidi so yi mu ase
+      cer: 0.2
+      wer: 0.5455
+    '574':
+      text: Maame Amma rekenkan ɛnna Kwame nso rekyerɛw.
+      hyp: ma mafo mpama man nan menti man ɛna kwanme nso richere
+      cer: 0.5405
+      wer: 1.4286
+    '577':
+      text: Ɔkɔm de no nti na odidii.
+      hyp: ɔkɔm de no nti na ɔdidii
+      cer: 0.0526
+      wer: 0.1667
+    '579':
+      text: Fufuu o, ampesi o, mepɛ.
+      hyp: fufu wo ampe siwo mepɛ
+      cer: 0.1176
+      wer: 0.8
+    '580':
+      text: Dansoaa bedi abeteɛ anaa banku.
+      hyp: odanso bɛdi abetiɛ anaa banku
+      cer: 0.1923
+      wer: 0.6
+    '581':
+      text: Kyerɛ nsɛmfuayɛ ahorow abiɛsa wɔ Akuapem Twi mu.
+      hyp: tofaye horo caffinsa vɔ acku afimkhin
+      cer: 0.6
+      wer: 1.0
+    '582':
+      text: Kyerɛkyerɛ nsɛmfuayɛ ahorow abiɛsa mu wɔ Akuapem Twi mu.
+      hyp: ceretelins mfaeɛ ahoro abiasa mu wɔ akoapemte mu
+      cer: 0.3191
+      wer: 0.6667
+    '583':
+      text: Kyerɛkyerɛ nsɛmfuayɛ so mfaso abiɛsa anaa nea ɛboro saa wɔ Akuapem Twi.
+      hyp: mo
+      cer: 0.9661
+      wer: 1.0
+    '584':
+      text: Kyerɛw nsɛmfuayɛ ahorow a ɛwɔ abasɛm a ɛwɔ fam hɔ no mu.
+      hyp: kredar nsɛmfoea ahoro ɔma asɛm awoɔ fam hɔno mu
+      cer: 0.3636
+      wer: 0.8333
+    '585':
+      text: Ɛnnɛ, abɛɛfo mfididwuma ho hia wɔ nhomasua mu pa ara.
+      hyp: ɛnnɛ abɛɛfo mfididumaho yia wɔ mo masua mu pa ara
+      cer: 0.0952
+      wer: 0.5
+    '591':
+      text: Asɛmmisa no ne sɛ, dɛn na edi hɔ bio?
+      hyp: asɛmmisanu ni sɛ dɛn na ɛdi hɔ biok
+      cer: 0.1481
+      wer: 0.5556
+    '598':
+      text: Wubesua ade afa akyerɛw mu agyiraehyɛde nso ho.
+      hyp: wobɔsoɔ ade afa atyea mu agyerayhyɛde nso ho
+      cer: 0.2564
+      wer: 0.375
+    '600':
+      text: Eyi bɛsan aboa wo ama woatumi asua asan ate Borɔfo kasa no yiye.
+      hyp: gi bɛsan aboawo ama wɔatumi asuasan ate borɔfo kasa no yie
+      cer: 0.098
+      wer: 0.5385
+    '604':
+      text: Kasamufa yɛ nsɛmkuw bi a ɛda adi wɔ ɔkasamu mu.
+      hyp: amofaɛ nsanku bi a ɛda ade i wɔ ɔkasa mo mu
+      cer: 0.2703
+      wer: 0.7
+    '617':
+      text: Eti no na yegyina so de hu kasasin koro.
+      hyp: enti no na yɛgyina so de ho kasa sɛnkoro
+      cer: 0.129
+      wer: 0.5556
+    '621':
+      text: Kasain ahorow abiɛsa nonom ne edin kasasin, adeyɛ kasasin ne ɔkyerɛfo
+        kasasin.
+      hyp: halan ahoro adeɛsa nonom ne edin kasasɛ ade yɛ kasa sɛ ne ɔkyerɛfoɔ kasa
+        sɛn
+      cer: 0.1846
+      wer: 0.9167
+    '622':
+      text: Eyi yɛ kasasin a eti no yɛ edin anaa dinnsiananmu.
+      hyp: yei yɛ kasa sɛn a ti no yɛ ɛdin anaa de nsina mo
+      cer: 0.25
+      wer: 0.8
+    '624':
+      text: Edin kasasin tumi yɛ asɛmfua koro pɛ a ɛyɛ edin anaa edinnsiananmu .
+      hyp: eden kasa sɛn tumi asɛmfoɔ akuro pɛ a ɛyɛ ɛden anaa ɛde nsia nam mu
+      cer: 0.2364
+      wer: 0.9167
+    '631':
+      text: Yetumi nya asɛmfua a ɛboro biako wɔ Edin kasasin mu.
+      hyp: yɛtumi nya asɛmfo a ɛborobea ko wɔ edin kasasɛm mu
+      cer: 0.1429
+      wer: 0.5
+    '643':
+      text: Afua papa yere no awo.
+      hyp: awua papa yɛre nao awo
+      cer: 0.1765
+      wer: 0.6
+    '670':
+      text: Adeyɛ kasasin yɛ kasasin a eti no yɛ adeyɛ.
+      hyp: ɛdeɛ kasa seyɛ kasase a yɛti no yɛ adeɛ
+      cer: 0.2647
+      wer: 0.6667
+    '673':
+      text: Adeyɛ kasasin a ɛyɛ adeyɛ titiriw biako pɛ no, yɛfrɛ no Adeyɛ Kasasin
+        Tiawa.
+      hyp: are t
+      cer: 0.9344
+      wer: 1.0
+    '678':
+      text: Adeyɛ kasasin a ɛwɔ adeyɛ mmataho, adeyɛ titiriw ne adeyɛ boafo.
+      hyp: adeɛ ekasasɛ a ɛwɔ adeɛ mmata ho adeɛ titiro ne adeɛ boafo
+      cer: 0.1731
+      wer: 0.7273
+    '690':
+      text: Kasasin a eti asɛmfua no yɛ ɔkyerɛfo no, yɛfrɛ no Ɔkyerɛfo Kasasin.
+      hyp: asoloa eteasɛfoɔ no yɛ akyerɛfoɔ no yɛfrɛ no akyerɛfoɔ kasa nsɛn
+      cer: 0.2778
+      wer: 0.6667
+    '693':
+      text: Ɔpon anan a ɛwɔ fam hɔ no ma yehu ɔkyerɛfo kasasin ne wɔn nhyehyɛe ahorow.
+      hyp: ɔpo anaa ho fam hɔ mayehoɔ kyerɛfo kasase ne wɔn nhyehyɛɛ ahorowo
+      cer: 0.2034
+      wer: 0.7333
+    '700':
+      text: Yetumi nya kasasin bebree wɔ ɔkasamu bi mu.
+      hyp: yɔpɔkyɛ nekontomisi ba na busi duo titonn
+      cer: 0.9143
+      wer: 1.0
+    '701':
+      text: Boadu kɔɔ kurow no mu.
+      hyp: wɔrdu kɔ kuro no mu
+      cer: 0.2941
+      wer: 0.6
+    '707':
+      text: Wɔde kasasin da adwempɔw bi adi.
+      hyp: wode kasa sinda adwempɔn bi adi
+      cer: 0.0769
+      wer: 0.6667
+    '708':
+      text: Kasasin di akoten wɔ kasa ne akyerɛw nkitahodi mu.
+      hyp: hasndi akotingo kasa ni akyerawo nkitahodimu
+      cer: 0.2439
+      wer: 0.8889
+    '712':
+      text: Monsensan asɛmfua a ɛyɛ kasasin a moahu no ti no mu biara ase.
+      hyp: mansa na asɛmfo a ayɛ kasa sɛn amoɔho no te nomobiraa
+      cer: 0.2857
+      wer: 0.9231
+    '741':
+      text: Wo ne wo mfɛfo nkyɛ wo mmuae no.
+      hyp: wo ne wo mfɛfo nkyerɛ wɔmmuae no
+      cer: 0.125
+      wer: 0.375
+    '753':
+      text: Ɔkasamu Tiawa ne Ɔkasamufa Titiriw ntam wɔ pon a ɛwɔ ase hɔ no so.
+      hyp: ɔkasa mo tiawa ne ɔkasa mu fa titireo ntam wɔ po a ɛwɔ ase hɔ no so
+      cer: 0.0769
+      wer: 0.5
+    '764':
+      text: Kojo nom nsu a, ɔbɛfe.
+      hyp: namsoaanao
+      cer: 0.75
+      wer: 1.0
+    '765':
+      text: Mɛhwehwɛ no, sɛ mekɔ a.
+      hyp: mɛhwehwɛ no sɛ mekɔa
+      cer: 0.0
+      wer: 0.4
+    '767':
+      text: Yɛreba no, yehyiaa Kɔnɔngo Tiwaa.
+      hyp: yɛri bani yisiakɔnoŋgo ti a
+      cer: 0.3704
+      wer: 1.0
+    '772':
+      text: Mpɛn pii no, ɛka biribi fa ɔkasamufa titiriw no.
+      hyp: mbɛn pie no ɛka baabi fa ɔ ekasa mo fa titire mo
+      cer: 0.2632
+      wer: 1.0
+    '780':
+      text: Berɛ a worekɔ no, mefrɛɛ wo.
+      hyp: bɛɛ wɔ ekɔ no efrɛɛ wo
+      cer: 0.2857
+      wer: 0.6667
+    '782':
+      text: Mɛka sɛ wo papa ba a.
+      hyp: meka sɛ wo papa ba
+      cer: 0.1333
+      wer: 0.3333
+    '783':
+      text: Sɛ yɛanhwɛ a, yɛrenhu no yie.
+      hyp: sɛ yɛawa yɛreh no yie
+      cer: 0.2273
+      wer: 0.5
+    '820':
+      text: Ɔman bɛn mu na Kumase wɔ?
+      hyp: ɔmambɛn mu nna kumase woɔ
+      cer: 0.1579
+      wer: 0.6667
+    '833':
+      text: Abofra yi ho yɛ fɛ!
+      hyp: apɔfarii ho yɛ fɛm
+      cer: 0.4286
+      wer: 0.6
+    '837':
+      text: Biribiara nni eyi mu a ɛkyerɛ sɛ ɔkasafo no rehyɛ n’atiefo no ama wɔayɛ
+        biribi.
+      hyp: berɛ biara nni ayi mu aɛkyerɛ sɛ ɔkasafoɔ no rehyɛ noatifoɔ no ama wɔayɛ
+        biribi
+      cer: 0.1111
+      wer: 0.4667
+    '839':
+      text: Wobetumi ama asɛmmisa nsɛmfua ho nhwɛso wɔ Akuapem Twi mu?
+      hyp: wobɛtumi ama asɛmmisansɛnfoɔ aho nhwɛso wɔ akoapentwimu
+      cer: 0.125
+      wer: 0.7
+    '841':
+      text: Ɔkasamufa Titiriw a edi dwuma sɛ Asɛmmisa.
+      hyp: ɔkasa mofa titir a ɛdi tuma sɛ asɛnisa
+      cer: 0.2286
+      wer: 0.8571
+    '843':
+      text: Worehwehwɛ wo mpaboa no ana?
+      hyp: wɔhwehwɛ wo paboa no ana
+      cer: 0.1739
+      wer: 0.4
+    '852':
+      text: Lartebea kenkanee nhoma a ne papa tɔ maa no no.
+      hyp: latebia kenkane ahoma ane papatɔ ma nona
+      cer: 0.1622
+      wer: 1.0
+    '853':
+      text: Ɔbea no a ɔtɔɔ mpaboa nnɛra no kɔ.
+      hyp: ɔbaa no a ɔtɔɔ mpaboa nnarano ko
+      cer: 0.1154
+      wer: 0.5
+    '861':
+      text: Etumi di dwuma sɛ ɔyɛfo, ɔyɛtia anaa ogyefo.
+      hyp: ekumidi dwuma sɛɛ ɔyɛfoɔyɛ tia anaa oje fo
+      cer: 0.1143
+      wer: 0.875
+    '878':
+      text: Ɔkyerɛfo kasamufa kumaa na yɛasensan ase wɔ ɔkasamu a ɛwɔ soro hɔ no mu
+        no.
+      hyp: kyerefoɔ kasa mufa komaa na yaasensan ase wɔ okasamu a ɛwɔ soro hɔno mu
+        no
+      cer: 0.1
+      wer: 0.5333
+    '879':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ ɔkasamufa mu.
+      hyp: wɔankasa nsamfoɔ a kyerɛkyerɛ ɔkasa mofa mo
+      cer: 0.2162
+      wer: 1.0
+    '880':
+      text: Ka wo mmuae no kyerɛ wo mfɛfo.
+      hyp: ka wo mmuae no kyerɛ wo mfɛɛfo
+      cer: 0.0435
+      wer: 0.1429
+    '891':
+      text: Mikohuu m’adamfo bi a na ɔredi ɔmo wɔ hɔ.
+      hyp: atefoɔ madamfo bi ana oredy ɔmo wɔ
+      cer: 0.3548
+      wer: 0.5556
+    '899':
+      text: Ekuw biara mma ɔkasamufa ahorow a moasua no mu biara ho nhwɛso biako.
+      hyp: kuo biara ma ɔkasa mu fa ahoro amoasoa no mmu biara ho nhwɛso beao
+      cer: 0.1429
+      wer: 0.6923
+    '900':
+      text: Ekuw biara nka ne mmuae nkyerɛ adesuafo nkae no.
+      hyp: ku biara nka ne mua nkyerɛ adesuafo nkaeɛ no
+      cer: 0.1282
+      wer: 0.3333
+    '905':
+      text: Barima Boadu di fufuu daa.
+      hyp: barima boduru dii fufuu daa
+      cer: 0.1905
+      wer: 0.4
+    '906':
+      text: Yɛde tete ɔkasamu ahorow mu.
+      hyp: yɛre tetee ɔkasam ahoromo
+      cer: 0.2174
+      wer: 1.0
+    '907':
+      text: Yɛde twa nsɛmfua binom tiawa.
+      hyp: yɛde ta nsɛmfoɔ binom tiawa
+      cer: 0.125
+      wer: 0.4
+    '908':
+      text: Yɛde si anodisɛm kasasin anaa kasamu bi awiei.
+      hyp: yɛde si ano desɛm kasa sɛn anaa kasa mobi awiee
+      cer: 0.1053
+      wer: 0.875
+    '909':
+      text: Alice kaa sɛ, “Mepɛ akenkan”.
+      hyp: aliskaa sɛ mmepa akenkas
+      cer: 0.2381
+      wer: 0.8
+    '912':
+      text: Owusuaa kɔɔ kurom kɔtɔɔ mako, nkyene, sekan ne akutu.
+      hyp: owo shu a kɔɔ kurom kɔtɔ mako nkyene sekan ne akotoo
+      cer: 0.1667
+      wer: 0.5556
+    '913':
+      text: Afua wɔ adan, kaa, mfuw ne nsase.
+      hyp: awoa wɔ adan kar mfu ne nsase
+      cer: 0.1667
+      wer: 0.4286
+    '914':
+      text: Yɛde tete deeti, nkurow ne aman ahorow ntam.
+      hyp: yɛde tete date nkuro ne aman ahoranta
+      cer: 0.2
+      wer: 0.5
+    '916':
+      text: Minim Kumase, Sunyane, Takyiman ne Akyerɛnsua.
+      hyp: ''
+      cer: 1.0
+      wer: 1.0
+      empty_hyp: true
+    '917':
+      text: Yɛde tete edin nkyerɛkyerɛmu ahorow a ɛrekyerɛkyerɛ edin biako mu ntam.
+      hyp: yɛde tete edin nkyerɛkyerɛm ahoro a ɛrekyerɛ edin bea ko mu ntam
+      cer: 0.1333
+      wer: 0.4545
+    '918':
+      text: Papa tuntum, tenten, kɛse no ada.
+      hyp: papa tuntum tenten kɛsi no ada
+      cer: 0.04
+      wer: 0.1667
+    '919':
+      text: Dua kɛse, tiatia, tuntum no abu.
+      hyp: dua kɛse tiatia tuntum no abo
+      cer: 0.0417
+      wer: 0.1667
+    '923':
+      text: Yɛde osisan si ɔkasamufa titiriw abien ntam.
+      hyp: yɛde ɔsesanense ɔkasa mu fa titire abee ntam
+      cer: 0.2432
+      wer: 0.8571
+    '924':
+      text: Makenkan nhoma ahorow; Ehia Wo A, Nwu na m’ani gye ho pa ara.
+      hyp: mekinkan hmɔ ahoro eiya waa nɔmei ntaatse ne keɔ ho paa
+      cer: 0.5333
+      wer: 0.9231
+    '926':
+      text: Yɛde tete nneɛma ahorow a yɛrebobɔ edin ntam.
+      hyp: yɛde teti neɛma hɔro ayɛribobɔ agin ntam
+      cer: 0.2162
+      wer: 0.75
+    '928':
+      text: Yɛde ogyawnsɛnkyerɛnne da ɔdede bi adi.
+      hyp: yede ogya nsɛnkyerɛne da ɔdedebi ade
+      cer: 0.1212
+      wer: 1.0
+    '929':
+      text: Yɛde hyɛ asɛmfua bi mu de kyerɛ sɛ, akyerɛwde bi ayera afi beae pɔtee
+        bi.
+      hyp: yɛde hyɛ asɛmfoɔ bi mmu de kyerɛ sɛ akyerɛ de bi ayerɛ afe baa kyee botaɛ
+        bi
+      cer: 0.2456
+      wer: 0.6
+    '930':
+      text: Yɛnam nkatomde so de da obi anom asɛm pɔtee bi adi.
+      hyp: yɛnam katonde so deda obi anom asɛm pɔtei bi adi
+      cer: 0.075
+      wer: 0.3636
+    '933':
+      text: Yetumi san nso de da abasɛm bi atifi asɛm adi.
+      hyp: etom anso
+      cer: 0.8056
+      wer: 1.0
+    '935':
+      text: Yɛsan de da anomsɛm pɔtee bi adi fi akyerɛw nkae no ho.
+      hyp: yesan deda anomsɛmpɔteɛ bi ade fi akyerɛ w nkaen no ho
+      cer: 0.093
+      wer: 0.75
+    '938':
+      text: Yɛde nsɛmfua-ntam-abaa kyerɛ twaka anaa ayɔnkofa a ɛda nneɛma abien bi
+        ntam.
+      hyp: yɛde nsɛmfoɔ ntam abaakyerɛ traka anaa ayɔnkofa a ɛda nneɛma abeɛm bi ntaf
+      cer: 0.1129
+      wer: 0.5
+    '939':
+      text: Yɛnam so de nkyerɛkyerɛmu foforo bi ka nea ɛda gua dedaw no ho.
+      hyp: yɛnam so de nkyerɛkyerɛ mfoforɔ bi kanea ɛda gwadedawo no ho
+      cer: 0.08
+      wer: 0.4615
+    '940':
+      text: Nhwɛso Amma tɔɔ nnuaba (akutu, kwadu ne aborɔbɛ) wɔ kurom hɔ.
+      hyp: nhwɛso ama tɔ nnoaba kotu kwadu ne aborɔbɛn wɔ kurom hɔ
+      cer: 0.1277
+      wer: 0.4545
+    '941':
+      text: Yetumi de si nsanhɔ anaa osiprenu ananmu.
+      hyp: yɛtumi de si nsa hɔ anaa osupre no anamu
+      cer: 0.1471
+      wer: 0.8571
+    '943':
+      text: Ɛkyerɛ ayɔnkofa anaa nsonsonoe a ɛda nsɛmfua binom ntam.
+      hyp: ɛkyerɛ ayɔnkofa anaa sosone a ɛda nsɛmfoa binom ntam
+      cer: 0.0851
+      wer: 0.2222
+    '945':
+      text: Yɛde si nteamu kasamu anaa ɔhyɛ kasamu akyi de da nkatede a ɛwɔ soro adi.
+      hyp: yɛde si nteamu kasa mo anaa ɔhyɛ kasa mo akye deda nkatede a ɛwɔ soro ade
+      cer: 0.069
+      wer: 0.4667
+    '946':
+      text: Yɛde si asɛmmisa kasamu bi akyi.
+      hyp: yɛde si asɛmmisa akasa mu bi akyir
+      cer: 0.0769
+      wer: 0.5
+    '966':
+      text: Momfa mo mmuae no ntoto afoforo baanu bi de ho.
+      hyp: mma ɔbɔho mmuaeɛ no ntoto afoforo baanon bi le hɔ
+      cer: 0.2973
+      wer: 0.6
+    '970':
+      text: Meduu ɛhyɛngyinabea hɔ no na ɛhyɛn no atu dedaw.
+      hyp: modziwo ahyɛ gyinabea bɔ no na hyɛ no ato dedaw
+      cer: 0.2821
+      wer: 0.6667
+    '971':
+      text: Me nnamfonom Oforiwaa,, Boatemaa, Gyamfuaa ne Kuma bɛba abɛsra yɛn.
+      hyp: minamfonom oforiwa boatima jyamfoa ne kuma bɛba abesra yɛn
+      cer: 0.1667
+      wer: 0.6
+    '976':
+      text: Kyerɛ nea nti a wode saa akyerɛw mu agyiraehyɛde no dii dwuma.
+      hyp: pataka dzeea wode saa akyerɛ lɛ nii agirɛ sɛde nɔ di dwuma
+      cer: 0.46
+      wer: 0.9167
+    '986':
+      text: Hwɛ sini a wɔde ato hɔ yi na watumi akenkan pii afa ɔkasasin ahorow no
+        ho.
+      hyp: woasine a wɔde ato hɔ yi na woatumi akenkan pii afa ɔkasasi nahoro no ho
+      cer: 0.1034
+      wer: 0.3125
+    '988':
+      text: Kenkan linke a ɛwɔ ase hɔ no na nya nimdeɛ pii fa ɔkasasin ahorow no ho.
+      hyp: kentan link a ɛwɔ ase hɔno nanyanimdie pii fa ɔkasasin ahorow no hoo
+      cer: 0.0893
+      wer: 0.5
+    '989':
+      text: Kenkan linke a ɛwɔ ase hɔ a ɛfa kasamufa ne ne ahorow ho no.
+      hyp: kankan link wɔ ase hɔ aefa kasamufa ne ne ahoro
+      cer: 0.2174
+      wer: 0.6429
+    '990':
+      text: Kenkan linke a ɛwɔ ase hɔ no na nya nimdeɛ a ɛkɔ nkan.
+      hyp: kenkarn link wɔ ase hɔ no na nyanimdeɛ a ɛkɔ nkan
+      cer: 0.0976
+      wer: 0.4615
+  source: evaluated
+- model: ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem
+  model_url: https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem
+  owner: ghananlpcommunity
+  architecture: F5-TTS (DiT + Vocos)
+  cer: 0.6659
+  wer: 0.9298
+  score: 0.6659
+  samples: 200
+  valid: 200
+  avg_seconds: 0.0
+  judge:
+    model: Qlerqly/griot-nano-1
+    cer_on_real_speech: 0.2193
+  entries:
+    '7':
+      text: Saa ɔfa yi kasa fa asɛnsin, asɛnsin nhyehyɛe ne toonu ho.
+      hyp: 2sisinsin asɛnsin nhyehyɛeɛ ne too no ho
+      cer: 0.3778
+      wer: 0.8182
+    '19':
+      text: Asɛnsin yɛ asɛmfua fa bi a yɛte wɔ kasa mu.
+      hyp: mofrafa bi ayɛte wɔ kasa mu asɔ ho
+      cer: 0.5758
+      wer: 0.8
+    '20':
+      text: Anom (Kɔnsonant) nnyigyei yɛ anom nnyigyei a etumi gyina sɛ asɛnsin.
+      hyp: nokoni yeayɛ nti tumi ina t gyina se nsi
+      cer: 0.5818
+      wer: 0.9091
+    '21':
+      text: Toonu yɛ ɛnne mu nsakrae a etumi de nsakrae ba asɛmfua ntease mu.
+      hyp: abo tumi de sakenankenne sba aso mfuo ntease mu
+      cer: 0.5385
+      wer: 0.8462
+    '51':
+      text: Wɔakyekyɛ asɛmfua biara mu kɔ nsɛnsin ahorow a ɛwɔ mu mu.
+      hyp: hu kɔwosi bizen kɔn siensia wo wɔ wo mu mu susam
+      cer: 0.7174
+      wer: 0.9091
+    '55':
+      text: Asɛnsin a emu abue yɛ asɛnsin a ɛnne nnyigyei twa to.
+      hyp: aseesinsinaa ani gyegyee twɛ to
+      cer: 0.5476
+      wer: 0.9091
+    '60':
+      text: Asɛnsin a emu to yɛ asɛnsin a anom nnyigyei twa to.
+      hyp: asansia noto
+      cer: 0.725
+      wer: 1.0
+    '65':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ asɛnsin ase.
+      hyp: anfoferɛ kyerɛ ase nsi ase nnkopɔn
+      cer: 0.6667
+      wer: 1.0
+    '67':
+      text: Kyerɛkyerɛ nsɛnsin ahorow a ɛwɔ Akuapem Twi kasa mu no mu.
+      hyp: akorɔ nsansuo koɔpempe kasa muno mukyerɛ kɔkyerɛnsɛ
+      cer: 0.8511
+      wer: 0.9091
+    '68':
+      text: Kyerɛkyerɛ mfaso a ɛwɔ asɛnsin nhyehyɛe ho nimdeɛ so wɔ nsɛmfuayɛ mu.
+      hyp: kyerɛkyerɛ mfason a wɔn hyɛhye nih feɛwɔ nsam
+      cer: 0.4211
+      wer: 0.8333
+    '69':
+      text: Ɛne wo mfɛfo nkyɛ wo mmuae no.
+      hyp: ɛfuhuyɔ so
+      cer: 0.8261
+      wer: 1.0
+    '70':
+      text: Ɔkasa biara wɔ ne nsɛnsin nhyehyɛe.
+      hyp: ɔasoɔsoɔ
+      cer: 0.8276
+      wer: 1.0
+    '73':
+      text: Asɛnsin fa a ɛho hia pa ara yɛ ɛnne nnyigyei.
+      hyp: fɔsh
+      cer: 0.9429
+      wer: 1.0
+    '84':
+      text: Yɛ mpɛnsɛmpɛnsɛmu fa Akuapem Twi nsɛnsin nhyehyɛe no ho.
+      hyp: fa ku apefamo twe  nsɛ si nhyehyɛ no o yɛn nyapokn
+      cer: 0.7234
+      wer: 1.1111
+    '88':
+      text: Ɛne wo mfɛfo nhwehwɛ nsɛnsin dodow a ɛwɔ asɛmfua no mu biara mu.
+      hyp: sosanso sisi tohɔ wɔ a wɔ femfo biara mu
+      cer: 0.6275
+      wer: 0.7692
+    '89':
+      text: Ɛne wo mfɛfo nkyɛ adwen mfa asɛnsin no mu biara nhyehyɛe ho.
+      hyp: atwee asɛmfa kansinsin no  nhyehyɛ ho
+      cer: 0.5833
+      wer: 0.8333
+    '92':
+      text: Na abɛbɛ ne ntɛtea yɛ nnamfonom amapa nanso na wɔn mu biara nko ne ne
+        suban.
+      hyp: na hoso tɛntemfo no amapa nanso wɔwo mu biara nkoso
+      cer: 0.4667
+      wer: 0.6875
+    '93':
+      text: Ɔpɛ bere mu no, ntɛtea yeree ne ho yɛɛ adwuma pɛɛ aduan bebree guu hɔ.
+      hyp: ntɛtia yɛn homa dwumakeɛ yɛpɛ bɛguu hɔ berɛ gu hɔ ɔpɛ
+      cer: 0.6852
+      wer: 1.0
+    '99':
+      text: Monka mo mmuae nkyerɛ adesuafo nkae no nyinaa.
+      hyp: adesuafo kaa no nyinaa
+      cer: 0.5263
+      wer: 0.625
+    '109':
+      text: Ɔkasa biara wɔ toonu ahorow.
+      hyp: 1 ahohorɔ wo wanhye
+      cer: 0.7826
+      wer: 1.0
+    '134':
+      text: Hwɛ nhwɛso a edidi so yi.
+      hyp: wohwɛnhwɛso
+      cer: 0.6316
+      wer: 1.0
+    '139':
+      text: Ɛho nhwɛso no bi na edidi so yi.
+      hyp: 2ahonhwɛsofa ro de su yi
+      cer: 0.5
+      wer: 0.875
+    '148':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ toonu ase.
+      hyp: m fura chirii tutoo no asi fɔs
+      cer: 0.7941
+      wer: 1.1667
+    '151':
+      text: Fa nhwɛso a ɛfata kyerɛkyerɛ toonu ahorow mu wɔ Akuapem Twi mu.
+      hyp: tɔo oto sorhoronowimu
+      cer: 0.7843
+      wer: 1.0
+    '152':
+      text: Kuw biara ntoatoa adwen mfa toonu dwumadi ho.
+      hyp: habe atɔn mfafof no dwuma di ho
+      cer: 0.5135
+      wer: 0.875
+    '159':
+      text: Kyerɛ asɛnsin a toonu ahyɛnsode no da so wɔ asɛmfua no mu.
+      hyp: atonsekyerɛ sɛ
+      cer: 0.8261
+      wer: 1.0
+    '160':
+      text: Monka mo mmuae no nkyerɛ adesuafo nkae no nyinaa.
+      hyp: monka mmua no nkyerɛ adesya fo nkaeɛ no nyinaa mfaa
+      cer: 0.225
+      wer: 0.6667
+    '172':
+      text: Asɛntitiriw a ɛwɔ abasɛm bi mu no na yɛfrɛ no adwempɔw.
+      hyp: ntitiriwa abosɛm bi mu no ayɛfirɛ adwompɔn ɔhwe
+      cer: 0.3636
+      wer: 0.7273
+    '215':
+      text: Fa nea woakyerɛw no toto nea wɔakyerɛw wɔ ase hɔ no ho.
+      hyp: wɔ wɔwɔtotokyerɛwasohɔ ona wommon
+      cer: 0.6744
+      wer: 0.9167
+    '218':
+      text: Eyi yɛ akenkan a yɛde hwehwɛ asɛntitiriw a ɛwɔ abasɛm bi mu.
+      hyp: hwehwɛ asatitiri ntitiri wɔ abasɛm bi munhworu soroz
+      cer: 0.7708
+      wer: 0.8333
+    '223':
+      text: Yɛde saa akenkan yi hwehwɛ mmuae ma nsɛmmisa pɔtee bi.
+      hyp: hwehyɔsomoni
+      cer: 0.8409
+      wer: 1.0
+    '224':
+      text: Kenkan abasɛm a ɛwɔ ase hɔ no.
+      hyp: ken kanbakanrpes
+      cer: 0.5652
+      wer: 1.0
+    '225':
+      text: Kyerɛ adwempɔw a ɛwɔ abasɛm a ɛwɔ ase hɔ no mu.
+      hyp: wksɛsekyerɛmpoa
+      cer: 0.8611
+      wer: 1.0
+    '226':
+      text: Ka adwempɔw a wuhui no kyerɛ adesuafo nkae no na fa toto wɔn de ho.
+      hyp: ma ku tsɔŋmoan fohetserewo n kani na fa tuto ŋɔ di ŋu ka a fafobu
+      cer: 0.7885
+      wer: 1.0
+    '251':
+      text: Ka w’adwempɔw no kyerɛ adesuafo nkae no.
+      hyp: kyeɛsompesuafo nkae nohohɔhwɛ
+      cer: 0.75
+      wer: 0.8571
+    '255':
+      text: Ɛyɛ gyidi, obuo ne nokwaredi.
+      hyp: obo ko dwoa
+      cer: 0.7826
+      wer: 1.0
+    '257':
+      text: Abeawa; Eyi yɛ nokwasɛm na sɛ mpanyimfo nso yɛ mfomso ɛ?
+      hyp: yihyeyo nemfasɛ po ho foso susufo mu so
+      cer: 0.6591
+      wer: 1.0
+    '261':
+      text: Ɛsɛ sɛ yebisa nsɛm pɛ mu nkyerɛkyerɛmu wɔ bere a ɛsɛ mu.
+      hyp: ɛwɔ sɛ yɛbisa nsepɛmmumo nkyerɛno so wɔ berɛ asɛ mu
+      cer: 0.3864
+      wer: 0.75
+    '262':
+      text: Nanso, ne nyinaa mu no, setie boa ma yenya asomdwoe ne ahobammɔ.
+      hyp: 2sɛ te wo aboa ma yɛ nyaa asomdwoeɛ yi ahobanmɔ
+      cer: 0.5
+      wer: 1.0
+    '274':
+      text: Kenkan abasɛm a ɛwɔ fam hɔ no na bua nsɛmmisa ahorow a ɛtoa so no.
+      hyp: kinkra bɔasamfofa hɔna sɛmiaoousoakenkan
+      cer: 0.5882
+      wer: 1.0
+    '280':
+      text: Sukuupanyin no gyina hɔ ma tumidi wɔ sukuu no mu.
+      hyp: mmotohoma tumi de wɔ sukuu no musukupomum
+      cer: 0.7179
+      wer: 0.7
+    '300':
+      text: Eyi yɛ kwan a wofa so kenkan abasɛm bi sɛnea ɛbɛyɛ a wubenya emu ntease.
+      hyp: wosum yɛ kwawofampɛsɛmbisɛnea ɛbɛyɛ a wobɛnya mo nte ase
+      cer: 0.386
+      wer: 0.8667
+    '310':
+      text: Eyi yɛ bere a ɔkenkanfo no si gyinae wɔ abasɛm no akenkan akyi.
+      hyp: ɣɛ kamfunu nu susi nigyina ŋɔn abasamna ma kenkanya akyi ao
+      cer: 0.58
+      wer: 1.0
+    '313':
+      text: Ahonnidi yɛ ade titiriw a ɛho hia pa ara wɔ nnipa apɔwmuden ne anuonyam
+        mu.
+      hyp: ihia ŋu ne titiƒe arahɔ woʋu niƒe ʋaƒewo mu din mianyonyam mo
+      cer: 0.6167
+      wer: 1.0
+    '335':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ ‘adwempɔw’ ase.
+      hyp: m fuyan kasaachiri a jumpɔɣaasi m ton kasana
+      cer: 0.7838
+      wer: 1.3333
+    '338':
+      text: Obuo nyɛ biribi a yɛhyɛ obi ma no de ma yɛn na mmom, ɛyɛ ade a yenya.
+      hyp: o ye obi hyɛ tɔdemammmom eyɛya
+      cer: 0.6275
+      wer: 0.9412
+    '342':
+      text: Fa no sɛ woawura sukuu dan bi mu a obiara de nnidi kyia ne yɔnko fɛfɛɛfɛ.
+      hyp: fa no sɛ wɔsukuu a hu no ɔne ni dekyi anehyɛ ɔnyɛ fɛfɛfɛ hoho
+      cer: 0.5088
+      wer: 0.8125
+    '347':
+      text: Sɛ wowɔ ntoaso sukuu mu yi, kae sɛ, obuo yɛ sekan- nufanu.
+      hyp: kaesi ka si wɔbuo yɔseka nnufa no wɔbu
+      cer: 0.6279
+      wer: 1.0
+    '350':
+      text: Dɛn na atifi asɛm no ka fa adwempɔw a ɛwɔ abasɛm no mu ho?
+      hyp: ha akɔfafadwompawa a wɔ abasɛm no mu ho
+      cer: 0.4091
+      wer: 0.6429
+    '352':
+      text: Fa ɔkasamu nnan bɔ abasɛm yi nyinaa tɔfa.
+      hyp: abasɛ m nyina tɔf moatom
+      cer: 0.697
+      wer: 1.0
+    '353':
+      text: Kyerɛw akenkan a emu dɔ su abien bi a woasua wɔ saa ɔfa yi mu.
+      hyp: na ketho beibie ahowɔ asua wɔ saa afa yi mu
+      cer: 0.5106
+      wer: 0.7333
+    '355':
+      text: Nsonsonoe bɛn na ɛda anotew ne mmɔakyi agyinaesi ntam?
+      hyp: maa no to mo mmɔakyi agyina si ntam
+      cer: 0.4667
+      wer: 0.8889
+    '356':
+      text: Kyerɛkyerɛ akenkan ntrɛwmu su abiɛsa mu?
+      hyp: tirewɔ mmusuobiasa mo kɔkyerɛ so
+      cer: 0.8824
+      wer: 1.0
+    '357':
+      text: Kyerɛkyerɛ nsonsonoe a ɛda akenkan a emu dɔ ne akenkan ntrɛwmu mu.
+      hyp: kentyɛkka na ohum tɔɔ ne akɛntentem mu
+      cer: 0.6481
+      wer: 0.8333
+    '375':
+      text: Yɛde mmataho di dwuma wɔ kasa no mu de yɛ nsɛmfua foforo.
+      hyp: wo dwuma wo kasa no mu ne siyɛ fua foforɔhe
+      cer: 0.4889
+      wer: 0.6667
+    '382':
+      text: Mmataho a yɛtaa de di dwuma pa ara ne nsianim ne nsiakyi.
+      hyp: mededwuma paa ara ne mesiam nsie akyi mo
+      cer: 0.5333
+      wer: 0.9167
+    '387':
+      text: Nsianim yɛ mmataho a yɛde si asennua bi anim.
+      hyp: ne sisi nnua bi anim nyɔnkopɔn ho
+      cer: 0.7778
+      wer: 1.0
+    '388':
+      text: Nsim nso yɛ mmataho a yɛde si asennua bi ntam.
+      hyp: ne su mpata hɔ a yɛde si nnua bi ntam hoo
+      cer: 0.4167
+      wer: 0.6
+    '389':
+      text: Nsiakyi yɛ mmataho a yɛde si asennua bi akyi pɛɛ.
+      hyp: adispɔhwɛ
+      cer: 0.8718
+      wer: 1.0
+    '393':
+      text: Yennim Ghana kasa bi a saa bere yi ɛde nsim di dwuma.
+      hyp: saha a bila ri yi n sim di duma
+      cer: 0.5366
+      wer: 0.75
+    '400':
+      text: Dan w’ani kyerɛ wo yɔnko na kyerɛkyerɛ mmataho ho ase kyerɛ no.
+      hyp: noha tuɔ wo ho a kyerɛkyerɛ katahohasu kyekyeri mu  daa
+      cer: 0.56
+      wer: 0.8333
+    '407':
+      text: Nyafirim mmataho no ma yenya nsɛmfua foforo fi asennua no mu.
+      hyp: sef man nkyɛ fofonnya hofea ho
+      cer: 0.74
+      wer: 1.0
+    '427':
+      text: Mmataho dwumadi no da nso wɔ kasa ahorow mu.
+      hyp: nanso wɔkasa ahoro mumo
+      cer: 0.5429
+      wer: 1.0
+    '428':
+      text: Ɛboa ma yetumi yɛ nsɛmfua foforo fi asennua anaa asɛmfua dedaw bi mu.
+      hyp: nsimi afoforɔ fiase nnua anaaa na asemfoɔ deda bi mu
+      cer: 0.4464
+      wer: 0.8462
+    '429':
+      text: Etumi sesa asɛmfua bi asɛmfuakuw fi biako mu kɔ foforo mu.
+      hyp: sɛ ebi asɛmfoɔ mfeɛ kuo fi biribi ra ko mu kɔ foforɔ mu u
+      cer: 0.5319
+      wer: 0.9091
+    '430':
+      text: Etumi sesa adeyɛ bi kabea.
+      hyp: e meso modosɔ
+      cer: 0.8095
+      wer: 1.0
+    '432':
+      text: Etumi sesa asɛmfua bi kabea fi kabea biako mu kɔ foforo mu.
+      hyp: fikaka bea bi akomu kɔ foforɔ mu
+      cer: 0.4681
+      wer: 0.75
+    '433':
+      text: Mmataho tumi sesa asɛmfua (edin) fi biakofo mu kɔ dodow kabea mu.
+      hyp: deiibi fo fii mebia kofonmu kɔnodo kabea mu
+      cer: 0.549
+      wer: 0.8333
+    '434':
+      text: Mmataho ho nimdeɛ boa ma yetumi sopɛ nsɛmfua san sua yɛn kasa no yiye.
+      hyp: ma yɛtumi supɛnyɛnsɛmfoa nsa nsua yɛnkasa no yie
+      cer: 0.4643
+      wer: 0.8571
+    '437':
+      text: Etumi sesa edin ma no dan edin nkyerɛkyerɛmu.
+      hyp: na ɔno dan din nkyerɛkyerɛ mu
+      cer: 0.4054
+      wer: 1.0
+    '438':
+      text: Etumi sesa edin a yehu ma no dan edin a yenhu.
+      hyp: sosno ia ho bohu a somoo
+      cer: 0.8
+      wer: 0.9091
+    '439':
+      text: Etumi sesa edin nkyerɛkyerɛmu ma no dan edin.
+      hyp: a sa cɛchɛri ŋɔ thi ma naaa nu paa
+      cer: 0.7838
+      wer: 1.0
+    '440':
+      text: Etumi sesa adeyɛ ma no dan edin nkyerɛkyerɛmu.
+      hyp: ti si so da dii nin chirichiri mu o timi sisisila dan
+      cer: 1.0
+      wer: 1.5
+    '441':
+      text: Etumi sesa adeyɛ ma no dan edin.
+      hyp: ɔd ahasae
+      cer: 0.84
+      wer: 1.0
+    '457':
+      text: Wɔn dwumadi titiriw pa ara ne sɛ wɔbɛka ɔkasa afa ahorow abobom.
+      hyp: hobo paa no hoso wobɛka ɔfasa afa ahorowa bobo m woho duma
+      cer: 0.6154
+      wer: 1.0
+    '461':
+      text: Kofi ne Ama kɔ afum.
+      hyp: hɔ ofi nɔɔ
+      cer: 0.7333
+      wer: 1.0
+    '462':
+      text: Mekɔɔ bi nanso manni bi.
+      hyp: no ko
+      cer: 0.8947
+      wer: 1.0
+    '463':
+      text: Onni sika nti, obiara mpɛ no yɔnko.
+      hyp: wo ho nti obiara mpɛ mo yɔnko
+      cer: 0.3333
+      wer: 0.4286
+    '464':
+      text: Kofi Boadi bɛba oo, ɔmma oo, yebesua ade.
+      hyp: 1ɔma ybesae
+      cer: 0.7097
+      wer: 1.0
+    '465':
+      text: Linda bedi banku anaa abeteɛ?
+      hyp: a lita bedi bank
+      cer: 0.5833
+      wer: 1.0
+    '478':
+      text: Yɛmfa nsanhɔ (,) mma nkabomde no akyi.
+      hyp: 1mma nkabom de no akyi
+      cer: 0.3929
+      wer: 0.6667
+    '480':
+      text: Minim Nyame a magye no adi.
+      hyp: 1 meni m nyɛn
+      cer: 0.7143
+      wer: 1.0
+    '481':
+      text: Ɔkyerɛkyerɛni a ɔboo me no aba.
+      hyp: b ɔkyerɛkyenee yɛ m
+      cer: 0.6
+      wer: 1.0
+    '482':
+      text: Kasamufa titiriw nkabomde a ɛka kasamufa kumaa ne kasamufa titiriw bom.
+      hyp: wɔka titirini a ekasafo fasamfa kasɛm tikitibo
+      cer: 0.5333
+      wer: 0.9091
+    '488':
+      text: Bere a mereto dwom no, mihuu me nana.
+      hyp: me hunu hɔna
+      cer: 0.7857
+      wer: 1.0
+    '489':
+      text: Ansa sa mmrɛnkɛnsono besi ne ti ase no, na onim nea asaase aka akyerɛ
+        no.
+      hyp: ŋun kɔŋ bɛ tinsiti asis na wun miim asaasa asia ka akyerɛ no
+      cer: 0.5263
+      wer: 0.8667
+    '490':
+      text: Yaw Annor amma ntɛm nti, obiara kɔ.
+      hyp: odiao kom
+      cer: 0.8889
+      wer: 1.0
+    '492':
+      text: Wɔtaa frɛ Ntotoho kabomde yi sɛ mmɔho nkabomde.
+      hyp: wotahwɛ
+      cer: 0.8718
+      wer: 1.0
+    '499':
+      text: Ɔbra no bɔ yɛ den ɛfisɛ, sika nni me ho.
+      hyp: ɔ sekekene me ho
+      cer: 0.7241
+      wer: 0.8
+    '500':
+      text: Berɛ a yɛrekɔ sukuu no, ɔfrɛɛ me.
+      hyp: ɔfo nso ɔfrɛ me ɔhwɛn so
+      cer: 0.88
+      wer: 1.0
+    '501':
+      text: Minni gye sɛ woapa me kyɛw.
+      hyp: emeni jeesɛ
+      cer: 0.7619
+      wer: 1.0
+    '502':
+      text: Sɛ minyini a, metu kwan.
+      hyp: noheno
+      cer: 0.8889
+      wer: 1.0
+    '508':
+      text: Nkabomde ho mfaso da nso wɔ kasa ahorow mu.
+      hyp: nnso wɔkasa ahorɔ mu abopɔfom
+      cer: 0.7353
+      wer: 1.0
+    '510':
+      text: Ɛkyerɛkyerɛ botae mu anaa ɛda nea enti bi adi.
+      hyp: anakye wɔn na
+      cer: 0.8378
+      wer: 1.0
+    '511':
+      text: Ɛboa de kasamufa anaa asɛnsin bi ka ɔfoforo no ho.
+      hyp: anaa anifanse sini bi afoforɔ no ho bɔ
+      cer: 0.525
+      wer: 0.8
+    '513':
+      text: Ɛboa da nsonsonoe a ɛda biribi ntam adi.
+      hyp: da biribi ntama di bɔnso
+      cer: 0.6875
+      wer: 0.875
+    '515':
+      text: Yɛde yɛ ntotoe fa adwempɔw bi ne asɛm bi ho.
+      hyp: adwompɔbni asɛn bi ho yɔsanhwanna
+      cer: 0.8824
+      wer: 0.9
+    '517':
+      text: Mmara kakra bi a ɛho hia pa ara da nkabomde dwumadi ho.
+      hyp: aƒa ahuhia anka bɔ mu duma di hu mmɔr
+      cer: 0.6279
+      wer: 1.0
+    '520':
+      text: Nkabomde ka adwen, dwumadi ne nimdeɛ bom.
+      hyp: 2 dwuma di ne ne dwomem
+      cer: 0.6364
+      wer: 0.8571
+    '523':
+      text: Nkabomde boa ma yetumi kyerɛw nneɛma ahorow bi din mmiako mmiako.
+      hyp: oha nneɛma ahorruahabudi
+      cer: 0.7407
+      wer: 0.9091
+    '534':
+      text: Hena na ɔtoto saa nneɛma ahorow no din?
+      hyp: osɛ sosusao have to do  mo
+      cer: 0.8065
+      wer: 1.0
+    '552':
+      text: Ɔkasa bebree fɛm wɔn nsɛmfua fi kasa afoforo mu.
+      hyp: wɔ nsa fimfoafoɔ afiri kasa afofo mu
+      cer: 0.5641
+      wer: 0.7778
+    '559':
+      text: Ɛma ɔkasa tu mpɔn efisɛ ɛma yenya nsɛmfua foforo ka dedaw no ho.
+      hyp: ɛfiri sɛ mpɔ ɔyɛ nyasenfoɔ afoforɔ kadedawɔ noho
+      cer: 0.4902
+      wer: 1.0
+    '560':
+      text: Ɛma yetumi ka kasa bi wɔ aman ahorow so.
+      hyp: owo n ahorɔso
+      cer: 0.7419
+      wer: 1.0
+    '561':
+      text: Ɛma yetumi nya nsɛmfua toto nneɛma foforo din.
+      hyp: mfuo toto nnwoɔma foforɔ din  mmonfanso
+      cer: 0.7632
+      wer: 0.875
+    '562':
+      text: Ɛma yehu nsɛmfua bi abɔse.
+      hyp: ɔsom senwumfoɔ abɔse hɔ
+      cer: 0.7143
+      wer: 1.0
+    '565':
+      text: Kyerɛw mmataho nkyekyɛmu ahorow a ɛwɔ Akuapem Twi mu.
+      hyp: mahorofoerɛd
+      cer: 0.8409
+      wer: 1.0
+    '566':
+      text: Kyerɛw mmataho anan a ɛwɔ Akuapem Twi mu.
+      hyp: na wɔapem twe mu kyerɛmo ho o
+      cer: 0.8788
+      wer: 1.0
+    '567':
+      text: Pɛnsɛmpɛnsɛm mmataho dwumadi anan anaa nea ɛboro saa mu.
+      hyp: 2hampɛ aduadum timi anaan anea aboro saamo
+      cer: 0.4894
+      wer: 1.0
+    '569':
+      text: Kyerɛ nkabomde ahorow a ɛwɔ Akuapem Twi mu.
+      hyp: awɔekɔapiŋtsu mu chɛlefa
+      cer: 0.8857
+      wer: 1.0
+    '570':
+      text: Kyerɛ nsonsonoe a ɛwɔ nkabomde ahorow a woakyerɛw no ntam.
+      hyp: n-ka bɔbu hu diahurobaawaachɛrɛ  ni ntam chɛr
+      cer: 0.7292
+      wer: 1.0
+    '573':
+      text: Sensan nkabomde a ɛwɔ ɔkasamu a edidi so yi mu ase.
+      hyp: wo honkabɔ wɔ kasoke busu medi mususoso na wɔhwɛ wo
+      cer: 0.85
+      wer: 1.0
+    '574':
+      text: Maame Amma rekenkan ɛnna Kwame nso rekyerɛw.
+      hyp: a kahan  na nam kam sari chɛl u
+      cer: 0.7027
+      wer: 1.1429
+    '577':
+      text: Ɔkɔm de no nti na odidii.
+      hyp: ɔkɔnn ti
+      cer: 0.6316
+      wer: 1.0
+    '579':
+      text: Fufuu o, ampesi o, mepɛ.
+      hyp: afu
+      cer: 0.8824
+      wer: 1.0
+    '580':
+      text: Dansoaa bedi abeteɛ anaa banku.
+      hyp: un ku o ŋadiba
+      cer: 0.7692
+      wer: 1.0
+    '581':
+      text: Kyerɛ nsɛmfuayɛ ahorow abiɛsa wɔ Akuapem Twi mu.
+      hyp: twensɛmforɔ horowa bisa two mu
+      cer: 0.5
+      wer: 0.875
+    '582':
+      text: Kyerɛkyerɛ nsɛmfuayɛ ahorow abiɛsa mu wɔ Akuapem Twi mu.
+      hyp: ɛkesɛ mo wɔ apetwemfo
+      cer: 0.7021
+      wer: 0.8889
+    '583':
+      text: Kyerɛkyerɛ nsɛmfuayɛ so mfaso abiɛsa anaa nea ɛboro saa wɔ Akuapem Twi.
+      hyp: yeɛkyerɛɛ afeɛ mfasoɔ bisasanea ne yaboroskyerɛkosam
+      cer: 0.4746
+      wer: 1.0
+    '584':
+      text: Kyerɛw nsɛmfuayɛ ahorow a ɛwɔ abasɛm a ɛwɔ fam hɔ no mu.
+      hyp: awawabasɛm a ɔrefa hommu mu mokyerɛm
+      cer: 0.8182
+      wer: 0.9167
+    '585':
+      text: Ɛnnɛ, abɛɛfo mfididwuma ho hia wɔ nhomasua mu pa ara.
+      hyp: ma homfidwohia wɔ ho asua mu paɔnaa
+      cer: 0.4524
+      wer: 0.8
+    '591':
+      text: Asɛmmisa no ne sɛ, dɛn na edi hɔ bio?
+      hyp: na ne de hɔ bio nyankopɔn
+      cer: 0.8148
+      wer: 0.7778
+    '598':
+      text: Wubesua ade afa akyerɛw mu agyiraehyɛde nso ho.
+      hyp: akyerɛwobɛsua
+      cer: 0.7692
+      wer: 1.0
+    '600':
+      text: Eyi bɛsan aboa wo ama woatumi asua asan ate Borɔfo kasa no yiye.
+      hyp: wɔyi basaaboa woatsu sua asan ate borɔfo kasa no yiyi eyi basan
+      cer: 0.4118
+      wer: 0.7692
+    '604':
+      text: Kasamufa yɛ nsɛmkuw bi a ɛda adi wɔ ɔkasamu mu.
+      hyp: nkuo bia dadi wɔkasam mu kasamu pafɛ
+      cer: 0.7027
+      wer: 1.0
+    '617':
+      text: Eti no na yegyina so de hu kasasin koro.
+      hyp: di kasa sim kuro cha
+      cer: 0.7742
+      wer: 1.0
+    '621':
+      text: Kasain ahorow abiɛsa nonom ne edin kasasin, adeyɛ kasasin ne ɔkyerɛfo
+        kasasin.
+      hyp: ŋɔn no no ne yɛ din kɛsin adiyi syɛ kasarsi anyɛ ne ɔkyerɛfo kɛsa sim
+      cer: 0.5077
+      wer: 1.0833
+    '622':
+      text: Eyi yɛ kasasin a eti no yɛ edin anaa dinnsiananmu.
+      hyp: kayie de ne anaa yɛ de nsiamu
+      cer: 0.625
+      wer: 0.9
+    '624':
+      text: Edin kasasin tumi yɛ asɛmfua koro pɛ a ɛyɛ edin anaa edinnsiananmu .
+      hyp: tye stasia komforo pɛ a ɛyɛnyankopɔn si
+      cer: 0.6364
+      wer: 0.8333
+    '631':
+      text: Yetumi nya asɛmfua a ɛboro biako wɔ Edin kasasin mu.
+      hyp: zoƒoŋ biakɔ wɔ dii kesesi m ŋu
+      cer: 0.6667
+      wer: 1.0
+    '643':
+      text: Afua papa yere no awo.
+      hyp: no fos yɛn
+      cer: 0.8824
+      wer: 1.0
+    '670':
+      text: Adeyɛ kasasin yɛ kasasin a eti no yɛ adeyɛ.
+      hyp: fkasa sigeti noya adeyɛ adeliɔson
+      cer: 0.7353
+      wer: 1.0
+    '673':
+      text: Adeyɛ kasasin a ɛyɛ adeyɛ titiriw biako pɛ no, yɛfrɛ no Adeyɛ Kasasin
+        Tiawa.
+      hyp: adesɛse yɛ titiribea kopɛ no yɛfrɛ no adegye kɛsintin tiawa ɛsoterɛ
+      cer: 0.459
+      wer: 0.7857
+    '678':
+      text: Adeyɛ kasasin a ɛwɔ adeyɛ mmataho, adeyɛ titiriw ne adeyɛ boafo.
+      hyp: akatena tese wɔdema tata hɔ na yɛ titiriw ne adeyɛ boafo
+      cer: 0.3846
+      wer: 0.6364
+    '690':
+      text: Kasasin a eti asɛmfua no yɛ ɔkyerɛfo no, yɛfrɛ no Ɔkyerɛfo Kasasin.
+      hyp: ɔsansɛtia mfoɛ ano yɛ frɛfo no yɛfrɛ no ɔkyerɛfoɔ kɛsen
+      cer: 0.3519
+      wer: 0.6667
+    '693':
+      text: Ɔpon anan a ɛwɔ fam hɔ no ma yehu ɔkyerɛfo kasasin ne wɔn nhyehyɛe ahorow.
+      hyp: po a ho kyerɛ ifo kasa i horowɔ
+      cer: 0.661
+      wer: 0.9333
+    '700':
+      text: Yetumi nya kasasin bebree wɔ ɔkasamu bi mu.
+      hyp: bɛ wɔ kasa mu bi muwaso
+      cer: 0.7429
+      wer: 0.875
+    '701':
+      text: Boadu kɔɔ kurow no mu.
+      hyp: bonukoo
+      cer: 0.6471
+      wer: 1.0
+    '707':
+      text: Wɔde kasasin da adwempɔw bi adi.
+      hyp: ne ho pɔn di kaaaso
+      cer: 0.8462
+      wer: 1.0
+    '708':
+      text: Kasasin di akoten wɔ kasa ne akyerɛw nkitahodi mu.
+      hyp: o kasin ditɛhani a chɛrɛ kuta di mu ni yin ti ni dia kɔɣasin
+      cer: 0.878
+      wer: 1.4444
+    '712':
+      text: Monsensan asɛmfua a ɛyɛ kasasin a moahu no ti no mu biara ase.
+      hyp: sososɛfia mɔyɛ kɛsɛsia hu hu tue
+      cer: 0.6327
+      wer: 1.0
+    '741':
+      text: Wo ne wo mfɛfo nkyɛ wo mmuae no.
+      hyp: huno
+      cer: 0.875
+      wer: 1.0
+    '753':
+      text: Ɔkasamu Tiawa ne Ɔkasamufa Titiriw ntam wɔ pon a ɛwɔ ase hɔ no so.
+      hyp: eho ieayere wɔpɔn  o wɔɔsoso
+      cer: 0.7308
+      wer: 1.0
+    '764':
+      text: Kojo nom nsu a, ɔbɛfe.
+      hyp: ɔkofor nsu
+      cer: 0.6875
+      wer: 0.8
+    '765':
+      text: Mɛhwehwɛ no, sɛ mekɔ a.
+      hyp: moahwehwɛ
+      cer: 0.6471
+      wer: 1.0
+    '767':
+      text: Yɛreba no, yehyiaa Kɔnɔngo Tiwaa.
+      hyp: 2yɛhia kɔn ho teia
+      cer: 0.6296
+      wer: 1.0
+    '772':
+      text: Mpɛn pii no, ɛka biribi fa ɔkasamufa titiriw no.
+      hyp: wɔaka biribi fofatifo mo fa titir no
+      cer: 0.5263
+      wer: 0.7778
+    '780':
+      text: Berɛ a worekɔ no, mefrɛɛ wo.
+      hyp: mefrɛ wo woar so
+      cer: 0.6667
+      wer: 1.0
+    '782':
+      text: Mɛka sɛ wo papa ba a.
+      hyp: 1 mepakaso 2
+      cer: 0.8
+      wer: 1.0
+    '783':
+      text: Sɛ yɛanhwɛ a, yɛrenhu no yie.
+      hyp: yɛrerahwe yɛya
+      cer: 0.7273
+      wer: 1.0
+    '820':
+      text: Ɔman bɛn mu na Kumase wɔ?
+      hyp: ɔmaabeno
+      cer: 0.7368
+      wer: 1.0
+    '833':
+      text: Abofra yi ho yɛ fɛ!
+      hyp: fo
+      cer: 0.8571
+      wer: 1.0
+    '837':
+      text: Biribiara nni eyi mu a ɛkyerɛ sɛ ɔkasafo no rehyɛ n’atiefo no ama wɔayɛ
+        biribi.
+      hyp: be biribiara li afɔkasa syorɛ no no hyɛ tiafunomfo yɛ bi beri biara
+      cer: 0.5873
+      wer: 0.9333
+    '839':
+      text: Wobetumi ama asɛmmisa nsɛmfua ho nhwɛso wɔ Akuapem Twi mu?
+      hyp: osomesukumfoɔ nsomhwɛ ho kum so wɔ motwe mu  wɔkɔ so
+      cer: 0.7292
+      wer: 1.0
+    '841':
+      text: Ɔkasamufa Titiriw a edi dwuma sɛ Asɛmmisa.
+      hyp: me di me tsumu duma asasaaa momɔfɛb
+      cer: 0.8286
+      wer: 1.0
+    '843':
+      text: Worehwehwɛ wo mpaboa no ana?
+      hyp: morohwehwɛ
+      cer: 0.6522
+      wer: 1.0
+    '852':
+      text: Lartebea kenkanee nhoma a ne papa tɔ maa no no.
+      hyp: laa soto
+      cer: 0.8378
+      wer: 1.0
+    '853':
+      text: Ɔbea no a ɔtɔɔ mpaboa nnɛra no kɔ.
+      hyp: mapaborbea ɔ
+      cer: 0.7308
+      wer: 1.0
+    '861':
+      text: Etumi di dwuma sɛ ɔyɛfo, ɔyɛtia anaa ogyefo.
+      hyp: 2nyhɔsɛfo tiawo gyefo
+      cer: 0.6286
+      wer: 1.0
+    '878':
+      text: Ɔkyerɛfo kasamufa kumaa na yɛasensan ase wɔ ɔkasamu a ɛwɔ soro hɔ no mu
+        no.
+      hyp: asoku koms asile wɔ kasase ɔwɔsɛm mu wɔ soro
+      cer: 0.6833
+      wer: 0.9333
+    '879':
+      text: Fa w’ankasa nsɛmfua kyerɛkyerɛ ɔkasamufa mu.
+      hyp: mfiimkyennipa hyɛ
+      cer: 0.8378
+      wer: 1.0
+    '880':
+      text: Ka wo mmuae no kyerɛ wo mfɛfo.
+      hyp: koho kopom
+      cer: 0.7391
+      wer: 1.0
+    '891':
+      text: Mikohuu m’adamfo bi a na ɔredi ɔmo wɔ hɔ.
+      hyp: mekopo hu
+      cer: 0.8387
+      wer: 1.0
+    '899':
+      text: Ekuw biara mma ɔkasamufa ahorow a moasua no mu biara ho nhwɛso biako.
+      hyp: koko fam a m asua nosuo mu biara ho hwɛ so bea
+      cer: 0.5
+      wer: 0.8462
+    '900':
+      text: Ekuw biara nka ne mmuae nkyerɛ adesuafo nkae no.
+      hyp: akpɔhwɛ
+      cer: 0.9231
+      wer: 1.0
+    '905':
+      text: Barima Boadu di fufuu daa.
+      hyp: ''
+      cer: 1.0
+      wer: 1.0
+      empty_hyp: true
+    '906':
+      text: Yɛde tete ɔkasamu ahorow mu.
+      hyp: ɛ ɛ de oa
+      cer: 0.8261
+      wer: 1.0
+    '907':
+      text: Yɛde twa nsɛmfua binom tiawa.
+      hyp: yɛde twansofoɔ o
+      cer: 0.5417
+      wer: 0.8
+    '908':
+      text: Yɛde si anodisɛm kasasin anaa kasamu bi awiei.
+      hyp: kasiawfon
+      cer: 0.8421
+      wer: 1.0
+    '909':
+      text: Alice kaa sɛ, “Mepɛ akenkan”.
+      hyp: mepaakyɛw ka
+      cer: 0.7143
+      wer: 1.0
+    '912':
+      text: Owusuaa kɔɔ kurom kɔtɔɔ mako, nkyene, sekan ne akutu.
+      hyp: wo sin kɔtɔnkye sikanea kutu nkye
+      cer: 0.619
+      wer: 1.0
+    '913':
+      text: Afua wɔ adan, kaa, mfuw ne nsase.
+      hyp: 1 kamfuo nesa ase
+      cer: 0.5833
+      wer: 1.0
+    '914':
+      text: Yɛde tete deeti, nkurow ne aman ahorow ntam.
+      hyp: nkuro nyɛ aman ahorontam hu
+      cer: 0.5429
+      wer: 0.875
+    '916':
+      text: Minim Kumase, Sunyane, Takyiman ne Akyerɛnsua.
+      hyp: sunyani tɛchima ni akyere nsua n
+      cer: 0.5
+      wer: 1.0
+    '917':
+      text: Yɛde tete edin nkyerɛkyerɛmu ahorow a ɛrekyerɛkyerɛ edin biako mu ntam.
+      hyp: nti ti gihi yɛchirachini ŋɔ  chɛrichiri din bia ku o muntam
+      cer: 0.6333
+      wer: 1.0
+    '918':
+      text: Papa tuntum, tenten, kɛse no ada.
+      hyp: 2 te so no hoo
+      cer: 0.8
+      wer: 0.8333
+    '919':
+      text: Dua kɛse, tiatia, tuntum no abu.
+      hyp: 1o tuntum no abu
+      cer: 0.5417
+      wer: 0.5
+    '923':
+      text: Yɛde osisan si ɔkasamufa titiriw abien ntam.
+      hyp: ɔkasamchifa titiri wa bii ntam wo hu hubi no so
+      cer: 0.7838
+      wer: 1.4286
+    '924':
+      text: Makenkan nhoma ahorow; Ehia Wo A, Nwu na m’ani gye ho pa ara.
+      hyp: 2ehiawo ehia nunɔmeni dzo hu ƒla
+      cer: 0.6444
+      wer: 0.9231
+    '926':
+      text: Yɛde tete nneɛma ahorow a yɛrebobɔ edin ntam.
+      hyp: ni o yɛrii ɛyɛ nɔ hwɛ
+      cer: 0.8378
+      wer: 1.0
+    '928':
+      text: Yɛde ogyawnsɛnkyerɛnne da ɔdede bi adi.
+      hyp: ŋɔ ni ti diboas mɔ h di
+      cer: 0.8788
+      wer: 1.1667
+    '929':
+      text: Yɛde hyɛ asɛmfua bi mu de kyerɛ sɛ, akyerɛwde bi ayera afi beae pɔtee
+        bi.
+      hyp: bi mu de kyerɛ sɛ akyerɛw de bi ayera efi beae pɔteɛ bi
+      cer: 0.2807
+      wer: 0.4667
+    '930':
+      text: Yɛnam nkatomde so de da obi anom asɛm pɔtee bi adi.
+      hyp: doobi anom sɛmɔte bi adi
+      cer: 0.5
+      wer: 0.7273
+    '933':
+      text: Yetumi san nso de da abasɛm bi atifi asɛm adi.
+      hyp: abasɛ  yɛtua so
+      cer: 0.7778
+      wer: 1.0
+    '935':
+      text: Yɛsan de da anomsɛm pɔtee bi adi fi akyerɛw nkae no ho.
+      hyp: foteebue ti mpɔ tefi kan no ho akyerɛkan no ho
+      cer: 0.5814
+      wer: 0.8333
+    '938':
+      text: Yɛde nsɛmfua-ntam-abaa kyerɛ twaka anaa ayɔnkofa a ɛda nneɛma abien bi
+        ntam.
+      hyp: notwkekaɛyɛ temfi
+      cer: 0.8226
+      wer: 1.0
+    '939':
+      text: Yɛnam so de nkyerɛkyerɛmu foforo bi ka nea ɛda gua dedaw no ho.
+      hyp: mo kɔfofofofoforɔ bi kanea degandaɔ no ho
+      cer: 0.52
+      wer: 0.7692
+    '940':
+      text: Nhwɛso Amma tɔɔ nnuaba (akutu, kwadu ne aborɔbɛ) wɔ kurom hɔ.
+      hyp: 2hu ka kutu kwaduniaborɔ be w kulom hɔ
+      cer: 0.4468
+      wer: 0.9091
+    '941':
+      text: Yetumi de si nsanhɔ anaa osiprenu ananmu.
+      hyp: nanaa ɔsipire no nam mo onyankopɔn
+      cer: 0.8235
+      wer: 1.0
+    '943':
+      text: Ɛkyerɛ ayɔnkofa anaa nsonsonoe a ɛda nsɛmfua binom ntam.
+      hyp: kyerɛnsofa sonoson a ɔdansemfo binom ntam teɛ
+      cer: 0.4255
+      wer: 0.7778
+    '945':
+      text: Yɛde si nteamu kasamu anaa ɔhyɛ kasamu akyi de da nkatede a ɛwɔ soro adi.
+      hyp: akyididankyete ne ɔwɔ soro adi
+      cer: 0.6552
+      wer: 0.8667
+    '946':
+      text: Yɛde si asɛmmisa kasamu bi akyi.
+      hyp: iyeiɛ
+      cer: 0.8846
+      wer: 1.0
+    '966':
+      text: Momfa mo mmuae no ntoto afoforo baanu bi de ho.
+      hyp: afotofrmo ho wɔ
+      cer: 0.8108
+      wer: 1.0
+    '970':
+      text: Meduu ɛhyɛngyinabea hɔ no na ɛhyɛn no atu dedaw.
+      hyp: na ɛhyɛn no atu dida wo me dumɔf
+      cer: 0.7436
+      wer: 0.8889
+    '971':
+      text: Me nnamfonom Oforiwaa,, Boatemaa, Gyamfuaa ne Kuma bɛba abɛsra yɛn.
+      hyp: bo mma boapa mfuoa ne kumkuo baba bɛsra yɛn
+      cer: 0.5185
+      wer: 0.8
+    '976':
+      text: Kyerɛ nea nti a wode saa akyerɛw mu agyiraehyɛde no dii dwuma.
+      hyp: saa chanin chɛwu mɔoi jira sha din nu dii juma chɛra n
+      cer: 0.8
+      wer: 1.0
+    '986':
+      text: Hwɛ sini a wɔde ato hɔ yi na watumi akenkan pii afa ɔkasasin ahorow no
+        ho.
+      hyp: wodzi na woatumi akenkan pii afa kasasi ahoro no ho
+      cer: 0.3448
+      wer: 0.625
+    '988':
+      text: Kenkan linke a ɛwɔ ase hɔ no na nya nimdeɛ pii fa ɔkasasin ahorow no ho.
+      hyp: nka nnwono nyaa piepiifoɔ kasa sia horo no ho
+      cer: 0.4286
+      wer: 0.875
+    '989':
+      text: Kenkan linke a ɛwɔ ase hɔ a ɛfa kasamufa ne ne ahorow ho no.
+      hyp: na wfankyemu hɔ afasakasafnhorhokɛnka
+      cer: 0.6304
+      wer: 0.9286
+    '990':
+      text: Kenkan linke a ɛwɔ ase hɔ no na nya nimdeɛ a ɛkɔ nkan.
+      hyp: no nosoakopɔn nnya ara
+      cer: 0.7317
+      wer: 0.9231
+  source: evaluated

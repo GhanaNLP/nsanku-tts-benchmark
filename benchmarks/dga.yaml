@@ -1,0 +1,3173 @@
+iso_639_3: dga
+language: Dagaare
+num_samples: 200
+scoring: cer
+judge: &id001
+  model: KhayaAI/khaya-asr-v3
+  cer_on_real_speech: 0.1461
+updated: '2026-09-11'
+benchmarks:
+- model: KhayaAI/khaya-tts-v2
+  model_url: https://translation.ghananlp.org
+  owner: KhayaAI
+  architecture: Khaya AI TTS v2 API
+  cer: 0.1038
+  wer: 0.3647
+  score: 0.1038
+  samples: 200
+  valid: 200
+  avg_seconds: 2.3
+  judge: *id001
+  entries:
+    '3':
+      text: A wɛlemɛ ŋa wulo la kͻkͻtɛgɛ, kͻkͻtɛgɛ meɛroŋ ane kͻkͻgaale parebammo.
+      hyp: A wɛlme ŋa wullo la ketege, kɛtege meɛroŋ ane kɛgaale parebammo,
+      cer: 0.2759
+      wer: 0.4545
+    '10':
+      text: Fo na zanne la yelbipaala meɛbo gͻͻloŋ.
+      hyp: Fo na zanne la yelbipaala meɛbo, beloŋ,
+      cer: 0.0938
+      wer: 0.1429
+    '24':
+      text: Aŋa na baŋ e la ka sɛgebinyaŋene ba wa tu a sɛgebidaa puori taŋtaŋ lɛ.
+      hyp: Aŋa na baŋ e la ka sɛgebi-nyaŋne ba wa tu a sɛgebi-daa puori tantaŋ lɛ,
+      cer: 0.0364
+      wer: 0.1333
+    '25':
+      text: Yeldemannewulli mine la ama naŋ tu a puliŋ.
+      hyp: yeldemanne wuli mine la ama naŋ tu a puliŋ,
+      cer: 0.0286
+      wer: 0.25
+    '31':
+      text: O men maŋ soŋ la zannezanna ka o baŋ yelbie tɛgɛ bee pare.
+      hyp: O meŋ maŋ soŋ la zanne zanna ka o baŋ yelbie tɛgɛ bee pare.
+      cer: 0.0222
+      wer: 0.2308
+    '33':
+      text: A sazu yeldemannewulli ama poͻ , a yelbi-ŋmaa kaŋa zaa boͻloo are ko la
+        kͻkͻtɛgɛ.
+      hyp: A sazu yelde-manne wuli ama po, a yelbi-ŋmaa kaŋ zaa bo? Lɔɔ are ko la
+        ketɛgɛ!
+      cer: 0.1406
+      wer: 0.5
+    '34':
+      text: A yelbiri kaŋ zaa wɛle eŋe la kͻkͻtɛgere.
+      hyp: A yelbiri kanzaa wele eŋɛ la ka tɛgrɛ,
+      cer: 0.2424
+      wer: 0.75
+    '37':
+      text: A ama maŋ baare ne la sεgebinyaŋaa.
+      hyp: A ama maŋ baare ne la sɛgebe-nyaŋaa.
+      cer: 0.0714
+      wer: 0.1429
+    '45':
+      text: Yeldemannewulli mine la tu a puliŋ.
+      hyp: Yeldemanne wuli mine la tu a puliŋ,
+      cer: 0.0345
+      wer: 0.3333
+    '48':
+      text: De fo meŋa yelbie manne wuli ne kͻkͻtɛgɛ muni.
+      hyp: de fo meŋɛ yelbie manne wuli ne ka tɛgɛ muni,
+      cer: 0.1081
+      wer: 0.3333
+    '50':
+      text: Manne bigri kͻkͻtɛgɛ zagere Dagaare poͻ.
+      hyp: manne bigri ka tɛgɛ zagrɛ da gaare po.
+      cer: 0.1765
+      wer: 1.0
+    '51':
+      text: Manne wuli kͻkͻtɛgɛ meɛroŋ tͻna kyaare yelbie meɛbo.
+      hyp: Mane wuli ka tɛgɛ meɛroŋ na kyaare yelbie meɛbo,
+      cer: 0.1364
+      wer: 0.5
+    '55':
+      text: Kͻkͻtɛgɛ sɛgebidaare meŋ taa la kͻkͻgaale aŋa sɛgebinyaŋene naŋ taa lɛ.
+      hyp: ka tɛgɛ sɛgebi-daare meŋ taa la, ka gaa lɛ aŋa sɛgebi-nyaŋne naŋ taa lɛ.
+      cer: 0.1333
+      wer: 0.5455
+    '57':
+      text: Aseŋ, ka yelbiriŋ wa taa sɛgebinyaŋene ayi , o naŋ taa la kͻkͻtɛgɛ ayi
+        bee a gaŋ lɛ.
+      hyp: A seŋ, ka yelbiri wa taa sɛge binyaŋne ayi, o naŋ taa la ketɛge ayi bee
+        a gaŋ lɛ,
+      cer: 0.0938
+      wer: 0.3529
+    '62':
+      text: Di dɛmɛ kyaare ne kͻkͻtɛgɛ Dagaare poͻ.
+      hyp: dideme kyaare ne ka tɛgɛ da gaare po.
+      cer: 0.1875
+      wer: 1.0
+    '66':
+      text: E ka fo ne fo tͻ di dɛmɛ kyaare yelbiri kaŋa zaa kͻkͻtɛgɛ semmo.
+      hyp: e ka fo ne fo dideme kyaare yelbiri kaŋ zaa ka tɛgɛ sɛmmo,
+      cer: 0.18
+      wer: 0.5
+    '67':
+      text: Vɛŋ ka fo ne fo tͻ di dɛmɛ kyaare ne a yelbiri kaŋa zaa kͻkͻtɛgɛ meɛroŋ.
+      hyp: Eŋ ka fo ne fo te di deme kyaare ne a yelbiri kaŋ zaa, kyɛ tɛgɛ meɛroŋ,
+      cer: 0.1607
+      wer: 0.375
+    '68':
+      text: A yɛ gbuli na manne la a yɛlɛ a karendie poͻ.
+      hyp: a yɛ gbuli na manne la a yɛlɛ a karendie po.
+      cer: 0.0294
+      wer: 0.0909
+    '69':
+      text: Dɛmɛ diibu ane peɛroo na be la be.
+      hyp: Demɛ diibu ane peɛrɔ na be la be?
+      cer: 0.1154
+      wer: 0.25
+    '70':
+      text: Soori ane Nyeraa da waa la zͻmenne.
+      hyp: Sori ane nyɛraa da waa la Izemenne,
+      cer: 0.1429
+      wer: 0.4286
+    '71':
+      text: Ama, ba yel-erre da waa la tɛɛtɛɛ.
+      hyp: Ama, ba yel-erre da waa la teɛ teɛ,
+      cer: 0.08
+      wer: 0.2857
+    '79':
+      text: Yɛ di dɛmɛ kyaare ne a nͻ-iri.
+      hyp: Yɛ di deme kyaare ne a n iri,
+      cer: 0.1364
+      wer: 0.4286
+    '89':
+      text: Ghana kͻkͻɛ mine yeldemannewulli la a ama naŋ tu a puliŋ.
+      hyp: Anaakyɛmine yeldemanne wuli la a ama naŋ tu a puliŋ,
+      cer: 0.1304
+      wer: 0.3636
+    '96':
+      text: Kͻkͻgaale e la yelnimizeɛ kͻkͻre poͻ yi onaŋ taa tontɛɛtɛɛ kyaare pare
+        bammo.
+      hyp: ka gaale e la yel-nimizeɛ, keripo yi o naŋ taa tonteɛ-teɛ kyaare parebammo.
+      cer: 0.1562
+      wer: 0.6923
+    '98':
+      text: Ama la yelbie bammo, kͻkͻre merɛ ane kͻkͻkpɛlɛ.
+      hyp: Ama la yelbie bammo, ka rɛ mɛrɛ ane kekpɛlɛ,
+      cer: 0.2105
+      wer: 0.5
+    '100':
+      text: Te maŋ de la yelbie kɔkɔgaale wɛle ne yelbie pare tɛɛtɛɛ.
+      hyp: Te maŋ di la yelbie kɔkɔgaale wɛlɛ ne yelbie pareteɛ-teɛ.
+      cer: 0.087
+      wer: 0.3636
+    '103':
+      text: Kaa a ama naŋ tu.
+      hyp: Kaa a ama naŋ tu.
+      cer: 0.0
+      wer: 0.0
+    '106':
+      text: Kɔkɔre merɛ kɔkɔgaale la maŋ wa ne tɛɛtɛɛ a kɔkɔre yelibu poɔ.
+      hyp: Kɔkɔremɛrɛ kɔkɔgaale la maŋ wa ne teɛteɛ a kɔkɔre yelbu poɔ,
+      cer: 0.08
+      wer: 0.3333
+    '110':
+      text: Kɔkɔgaale meŋ na baŋ wuli la tɛɛtɛɛloŋ kɔkɔkpɛlɛ naŋ be kɔkɔyeni poɔ.
+      hyp: Kɔkɔgaale meŋ na baŋ wuli la teɛ teɛloŋ kɔkɔkpɛlɛ naŋ be kɔkɔyeni poɔ,
+      cer: 0.0351
+      wer: 0.1667
+    '111':
+      text: Kɔkɔgaale na baŋ wɛle la Dagaare ane Birfor yelbie mine.
+      hyp: Kɔkɔgaare na baŋ wɛle la dagare ane bilfor-yelbie mine,
+      cer: 0.0652
+      wer: 0.4
+    '115':
+      text: De fo meŋa yelbie manne wuli ne kͻkͻgaale pare bammo.
+      hyp: de fo meŋɛ yelbie manne wuli ne ka kaare pare bammo.
+      cer: 0.1163
+      wer: 0.3
+    '118':
+      text: Yɛ di dɛmɛ kyaare kͻkͻgaale a yɛ gbulo poͻ.
+      hyp: yɛ di deme kyaare, ka gaale a yɛ gbulo po.
+      cer: 0.1765
+      wer: 0.4444
+    '119':
+      text: Yɛ wuli yɛ karembitaaba yɛ nͻiraa.
+      hyp: Yɛ wuli yɛ karembitaaba yɛ eŋ-iraa,
+      cer: 0.0714
+      wer: 0.1667
+    '120':
+      text: A yɛ gbulo poͻ, kyɛlle yelbie mine boͻloo Dagaare poͻ kyɛ e a ama naŋ
+        tu.
+      hyp: a yɛ gbulo po, kyɛllɛ yelbie mine bo lɔɔ dagare po, kyɛ e a ama naŋ tu.
+      cer: 0.125
+      wer: 0.375
+    '122':
+      text: Wuli a yelbie na yɛ naŋ kaa-iri kͻkͻtɛgɛ.
+      hyp: wuli a yelbie na yɛ naŋ kaa-iri ketɛgɛ,
+      cer: 0.0938
+      wer: 0.125
+    '130':
+      text: A foͻlaa yeli la yɛlɛ kyaare ne yelbulo kaa-iribu yelyagesɛgeraa bee dɛmɛ
+        diibu poͻ.
+      hyp: A fo la yeli la yɛlɛ kyaare ne yelbulo kaa-iribu yelyag-sɛgraa bee deme
+        diibu po.
+      cer: 0.1014
+      wer: 0.3571
+    '131':
+      text: Fo na zanne la maa-eŋɛ ane kanne gaa tͻͻre kannoo.
+      hyp: Fo na zanne la maa eŋɛ ane kanne gaa tere kannoo.
+      cer: 0.0513
+      wer: 0.3
+    '136':
+      text: Yelbuli la a yelyagesɛgeraa yelnyͻgeraa.
+      hyp: Yelbuli la a yelyage sɛgraa yeliyi gɛraa,
+      cer: 0.1143
+      wer: 0.8
+    '138':
+      text: Kannoo na baŋ waa la maa-eŋɛ bee kanne gaa tͻͻre.
+      hyp: kannoo na baŋ waa la maa eŋɛ bee kanne gaa tere,
+      cer: 0.0526
+      wer: 0.3
+    '163':
+      text: O meŋ la kyaare la kannoo te naŋ de yɛmbulo eŋ.
+      hyp: O meŋ la kyaare la kannoo te naŋ de yelbulo eŋ,
+      cer: 0.0556
+      wer: 0.0909
+    '166':
+      text: A maŋ soŋ la ka yeli pare bammo kyaane.
+      hyp: A maŋ soŋ la ka yelparebammo kyaane,
+      cer: 0.0333
+      wer: 0.3333
+    '171':
+      text: Yɛ zanne la yɛlɛ kyaare werewere kannoo ane va-funnoo a yuoni yeni poͻ.
+      hyp: Yɛ zanne la yɛlɛ kyaare wɛrewɛrɛ kan-nɔɔ ane va-fon-nɔɔ a yuoni yeni po.
+      cer: 0.1579
+      wer: 0.3077
+    '177':
+      text: O e la kannoo naŋ wulo yelbulo boͻbo yelyagesɛgeraa poͻ.
+      hyp: O e la kannɔɔ naŋ wullo yelbulo bo yeli yaga sɛgraa po.
+      cer: 0.2174
+      wer: 0.7
+    '182':
+      text: A kyɛ,fo maŋ kaa la a sɛgere fileu ana kyo-iri yelbi-bulo.
+      hyp: a kyɛ fo maŋ kaa la a sɛgrɛ filuu ana kyɔ-iri yelbi-bulo.
+      cer: 0.0909
+      wer: 0.4545
+    '185':
+      text: Kanne a yelyagesɛgeraa ŋa naŋ tu a puliŋ.
+      hyp: kanne a yeli yaga sɛgraa ŋa naŋ tu a puliŋ,
+      cer: 0.0909
+      wer: 0.375
+    '186':
+      text: Kaa iri a yelbulo a yelyagesɛgeraa ŋa naŋ tu a puliŋ poͻ.
+      hyp: ka a iri a yelbulo a yelyage sɛgraa ŋa naŋ tu a puliŋ po.
+      cer: 0.0444
+      wer: 0.4167
+    '187':
+      text: De a yelbulo na fo naŋ nyɛ wuli fo karembitaa.
+      hyp: de a yelbulo na fo naŋ nyɛ wuli fo karembitaa,
+      cer: 0.0
+      wer: 0.0
+    '188':
+      text: N da nyɛ la yuomo anaare kyɛ ka n ma kpi.
+      hyp: N da nyɛ la yuomo anaare kyɛ ka N ma kpi.
+      cer: 0.0
+      wer: 0.0
+    '191':
+      text: N baabo yɛlɛ da be la n dͻgereba nuuriŋ.
+      hyp: N baabo yɛlɛ da be la n derebɛ nuuriŋ,
+      cer: 0.0968
+      wer: 0.1111
+    '202':
+      text: N da binne la libie fẽẽfẽẽ a tõͻ gaa sakuuri.
+      hyp: N da binne la libie feɛ-feɛ̃ a tɔ gaa sakuuri.
+      cer: 0.1714
+      wer: 0.2
+    '208':
+      text: A yɛ gbulo poͻ yɛ di dɛmɛ a kaairi a yelbulo a dɛmmo ŋa naŋ tu a puliŋ.
+      hyp: a yɛ gbulopo yɛ di deme a kaare a yelbulo a dɛmmo ŋa naŋ tu a puliŋ.
+      cer: 0.0943
+      wer: 0.2222
+    '209':
+      text: De a yelbulo fo naŋ kaairi wuli karendie biiri zaa.
+      hyp: de a yelbulo fo naŋ kaayɛre wuli karendie biiri zaa.
+      cer: 0.0732
+      wer: 0.1
+    '218':
+      text: Ama, gbɛɛ yaga noͻre sagebo maŋ soŋ la ka nyͻvore yɛlɛ tori.
+      hyp: Ama, gbɛɛ yaga nɔre sagebo maŋ soŋ la ka nyɛ vore yele tori.
+      cer: 0.1064
+      wer: 0.3333
+    '221':
+      text: O maŋ soŋ la ka sagediibu baa.
+      hyp: O maŋ soŋ la ka sage diibu baa.
+      cer: 0.0
+      wer: 0.2857
+    '223':
+      text: Yɛ zeŋ gbulo a kuri dɛmmo dẽɛ wuli kyaare vũũ yɛlɛ, nansaalaa soͻloŋ bee
+        zimaale tͻna ka o yine a sazu deme ŋa.
+      hyp: Yɛ zeŋ gbulo a kuri demmo deɛ wuli kyaare vũũ yɛlɛ nansaala so lɔnbie zimaale
+        ŋa ka o yi ne a sazu deme ŋa.
+      cer: 0.1149
+      wer: 0.3478
+    '224':
+      text: Vɛŋ ka a karembiiri di dɛmɛ wuli a yelzu.
+      hyp: Eŋ ka a karembiiri di deme wuli a yeli zu,
+      cer: 0.1562
+      wer: 0.4444
+    '226':
+      text: Kanne a yelyagesɛgeraa ŋa velaa kyɛ iri a soorebie naŋ tu nͻɛ.
+      hyp: Kanne a yeli yaga sɛgraa ŋa velaa kyɛ iri a soorebie naŋ tu e.
+      cer: 0.12
+      wer: 0.3333
+    '228':
+      text: De bone na fo naŋ nyɛ a dɛmmo poͻ wuli a gbulo mine.
+      hyp: de bonne na fo naŋ nyɛ a dɛmmo po wuli a gbulo mine,
+      cer: 0.0513
+      wer: 0.1538
+    '229':
+      text: De va-funnoo gͻͻloŋ wuli yelsoŋ kaŋa a sɛgerɛ naŋ teɛre ka a karemazuzeɛ
+        taa.
+      hyp: de va-fonnoo lɔŋ wuli yelsoŋ kaŋ a sɛgrɛ naŋ teɛrɛ ka a karema zu zie taa,
+      cer: 0.1613
+      wer: 0.5714
+    '230':
+      text: A karemazuzeε la a sakuuri faŋa zaa.
+      hyp: A karema zu zie la a sakuuri faŋ zaa,
+      cer: 0.1034
+      wer: 0.5714
+    '256':
+      text: A sɛgesɛgrɛ maŋ de la duoro eŋ a sɛgre poɔ.
+      hyp: A sɛge sɛgre maŋ di la duoro eŋ a sɛgre poɔ,
+      cer: 0.0606
+      wer: 0.3
+    '260':
+      text: O e la sobiri karembiiri naŋ maŋ nyore bamenne eŋ kannoo a naŋ baŋ o pare.
+      hyp: O e la sobiri karembiiri naŋ maŋ nyɔge bamenne eŋ kannoo a naŋ baŋ O pare.
+      cer: 0.0345
+      wer: 0.0625
+    '269':
+      text: A kannekanna maŋ wuli la o teɛroŋ, tere o nͻ-iraa a kannoo ne kanne baaroo
+        puoriŋ.
+      hyp: A kanne kanna maŋ wuli la o teɛroŋ, terɛ o eŋ, iri la a kannɔne kanne baaroo
+        puoriŋ.
+      cer: 0.1094
+      wer: 0.5
+    '271':
+      text: Nensaalaa lããfeeloŋ ane gyeremɛ yɛlɛ do are la zie maale ka o e forfori.
+      hyp: Nensaala laafeɛloŋ ane gyɛremɛ yɛlɛ dɔ are la zie maale ka o e forfore.
+      cer: 0.1207
+      wer: 0.3571
+    '278':
+      text: A baaloŋ ama koora la noba yaga.
+      hyp: A baaloŋ ama koɔrɔ la noba yaga,
+      cer: 0.08
+      wer: 0.1429
+    '284':
+      text: Pãã wuli fo teɛroŋ kyaare ne lɛ anaŋ seŋ ka a sɛgebo wuobu yɛlɛ da tu.
+      hyp: Paa wuli fo teɛroŋ kyaare ne lɛ a naŋ seŋ ka a sɛgebo wuobu yɛlɛ da tu.
+      cer: 0.037
+      wer: 0.1875
+    '288':
+      text: Gyeremɛ ba waa bone fo naŋ na fere nyɛ.
+      hyp: Gyeremɛ ba waa bonne fo naŋ na fere nyɛ,
+      cer: 0.0333
+      wer: 0.1111
+    '291':
+      text: Teɛre ka fo be la karendie poͻ ka neɛzaa puoro o tͻ ne nimimaaroŋ ane
+        neeloŋ.
+      hyp: teɛre ka fo be la karendie po ka neɛzaa poɔrɔ o te ne nimimaaroŋ ane neɛloŋ,
+      cer: 0.0984
+      wer: 0.25
+    '298':
+      text: Boŋ yeli la ka a yelzu yeli kyaare ne dɛmmo?
+      hyp: Boŋ yeli la ka a Yeezu yeli kyaare ne dɛmmo,
+      cer: 0.0294
+      wer: 0.1
+    '299':
+      text: Sɛge a yɛlɛ yelzu naŋ be dabegere boŋyeni ane anaare.
+      hyp: sɛgɛ a yele yelzu naŋ be dabeɡere boŋyeni ane anaare,
+      cer: 0.093
+      wer: 0.3
+    '300':
+      text: Kyoͻre a sazu dɛmmo ŋa eŋ yɛlɛ anaare poͻ.
+      hyp: kyɔ ere a sazu demmo na eŋ yɛlɛ anaare po,
+      cer: 0.1515
+      wer: 0.5556
+    '304':
+      text: Boŋ tɛɛtɛɛloŋ la be kanne welweli ane peɛroo kpakyagaŋ?
+      hyp: bonteɛ-teɛloŋ la be kanne weliweli ane peɛrɔ kpakyaga,
+      cer: 0.1522
+      wer: 0.5556
+    '306':
+      text: De fomeŋɛ yelbie wɛle ne maa-eŋɛ kannoo ane kanne gaa tͻͻre kannoo tɛɛtɛɛloŋ.
+      hyp: de fo meŋɛ yelbie wɛlɛ ne maa eŋɛ kannoo ane kanne gaa tere kannoo teɛteɛloŋ,
+      cer: 0.0794
+      wer: 0.5385
+    '314':
+      text: Yelbipeelaa la yelbiriŋmaa te naŋ de eŋ yelbiri niŋe bee puori bee sͻga.
+      hyp: Yelbi-peɛlaa la yelbiri maa te naŋ de eŋ yelbiri niŋɛ bee puori bee sega.
+      cer: 0.0678
+      wer: 0.3846
+    '316':
+      text: Tagemarre la ka te maŋ de tage yelbie lantaa yεlε poͻ ka o taa tɛgɛ.
+      hyp: Tage mare la ka te maŋ de tage yelbie lantaa yɛlɛ po ka o taa tɛgɛ.
+      cer: 0.0755
+      wer: 0.2667
+    '317':
+      text: Te maŋ tu la a yelbipeelε zie kyε maale yelbipaala.
+      hyp: Te maŋ tu la a yelbi-peɛle zie kyɛ maale yelbi-paala,
+      cer: 0.0732
+      wer: 0.2
+    '323':
+      text: A yelbipeelε ama la puori yelbipeelaa ane niŋe yelbipeelaa.
+      hyp: A yelbi-peɛlɛ ama la puori yelbi-peɛlaa ane niŋe yelbi-peɛlaa,
+      cer: 0.08
+      wer: 0.3333
+    '326':
+      text: Puori yelbipeelaa maŋ wa la kyε ko a yelbiri meŋa.
+      hyp: Puori-yelbi-peɛlaa maŋ wa la kyɛ ko a yelbiri meŋɛ.
+      cer: 0.075
+      wer: 0.4
+    '328':
+      text: Niŋe yelbipeelaa la ona naŋ tu yelbiri.
+      hyp: Neŋɛ yelbi-peɛlaa la O na naŋ tu yelbiri,
+      cer: 0.0938
+      wer: 0.5714
+    '329':
+      text: Niŋe –puori yelbipeelaa; a ŋaa,yelbipeelε ayi maŋ gyilli la a yelbinyaga.
+      hyp: Neŋɛ puori yelbi-peɛlaa a ŋaa yelbi-peɛle ayi maŋ gyili la a yelbi-nyaga,
+      cer: 0.1017
+      wer: 0.4545
+    '331':
+      text: Ghana kͻkͻɛ yaga zaa ba taa a niŋe-puori yelbipeelaa ŋa.
+      hyp: Ana ka yaga zaa ba taa a niŋe puori yelbi-peɛlaa ŋa,
+      cer: 0.1556
+      wer: 0.5
+    '336':
+      text: Yelbimaale kpɛglɛ; a kpɛglɛ ama la maŋ maale yelbipaalaa ka o pare e paalaa
+        meŋ.
+      hyp: Yelbimaale kpɛgle! A kpɛgle ama la maŋ maale yelbipaalaa ka o pare e paalaa
+        meŋ,
+      cer: 0.0312
+      wer: 0.1333
+    '339':
+      text: A kpɛglɛ ŋa maŋ ŋmaa la yelbipaalaa yi ne a yelbinyaga poɔ.
+      hyp: A kparre ŋa maŋ ŋmaa la yelbipaalaa yi ne a yelbinyaga poɔ.
+      cer: 0.0851
+      wer: 0.0833
+    '342':
+      text: A ŋaa eŋ o maŋ kyilli la a yelbiri tontonne yoŋ, kyɛ o ba kyille a yelbiri
+        zage.
+      hyp: A ŋaa eŋ, O maŋ kyilli la a yelbiri tontonne yoŋ, kyɛ O ba kyillɛ a yelbiri
+        zage.
+      cer: 0.0164
+      wer: 0.0556
+    '343':
+      text: Yelbileɛmaale kpɛglɛ ba maŋ kyilli a yelbiri pare zaa, azuiŋ o ba ŋmaara
+        yelbipaala.
+      hyp: Yelbile maale kpɛgle ba maŋ kyilli a yelbiri pare zaa, azuiŋ o ba ŋmaara
+        yelbi-paala.
+      cer: 0.029
+      wer: 0.2143
+    '348':
+      text: A yelbiri Saa, pare ba kyilli.
+      hyp: a yelbiri saa pare ba kyilli,
+      cer: 0.0
+      wer: 0.0
+    '349':
+      text: Saamine e la saa yaga.
+      hyp: Saa mine e la Saa yaga,
+      cer: 0.0
+      wer: 0.4
+    '350':
+      text: Yε zeŋ bayiri a di dεmε kyaareyelbipeelε parεε zaa yε naŋ baŋ.
+      hyp: Yɛ zeŋ ba yiri a di deme kyaare yelbi-peɛle parɛɛ zaa yɛ naŋ baŋ,
+      cer: 0.16
+      wer: 0.6667
+    '353':
+      text: Kͻkͻre zaa taa la lεnεε yelbipeelε naŋ tona.
+      hyp: ka te zaa taa la lɛnee yelbepeɛle naŋ tonɔ.
+      cer: 0.3056
+      wer: 0.625
+    '354':
+      text: A yelbipeelε tontonne mine la ama naŋ tu.
+      hyp: A yelbi-peɛlɛ tontonne mine la ama naŋ tu,
+      cer: 0.0606
+      wer: 0.125
+    '355':
+      text: A maŋ maale la yelbipaala yi yelbinyaga poͻ.
+      hyp: A maŋ maale la yelbipaala yi yelbinyaga po.
+      cer: 0.0278
+      wer: 0.125
+    '357':
+      text: A maŋ kyilli la yelbiri zagre; aseŋ.
+      hyp: A maŋ kyilli la yelbiri zagre a seŋ,
+      cer: 0.0
+      wer: 0.2857
+    '359':
+      text: Yelbipeelε maŋ leεre eroŋ wagre kaŋa eŋ wagre yuo poͻ.
+      hyp: yelbi-peɛle maŋ leɛrɛ erɔŋ wagre kaŋ eŋ wagre yuopo,
+      cer: 0.1591
+      wer: 0.6
+    '361':
+      text: A maŋ kyilli la yelbiri eŋ yageroŋ.
+      hyp: A maŋ kyilli la yelbiri eŋyagroŋ,
+      cer: 0.0357
+      wer: 0.2857
+    '374':
+      text: Wuli yelbipeelε a yelbie ama poͻ kyε wuli yelbipeelɛ parεε na a naŋ e.
+      hyp: wuli yelbi-peɛlɛ a yelbie a ma po, kyɛ wuli yelbi-peɛlɛ parɛɛ na a naŋ
+        e.
+      cer: 0.125
+      wer: 0.5
+    '375':
+      text: De yelbipeelε eŋ a yelbie ama poͻ ka leε yuori yelbie bee bigiruu yelbie.
+      hyp: de yelbepeɛlɛ eŋ a yelbie ama po, ka leɛ yuori yelbie bee bigruu yelbie,
+      cer: 0.1017
+      wer: 0.2857
+    '376':
+      text: Gbulo poͻ, de a sazu yelbipeelε parεε ama n maale ne yelbipaala.
+      hyp: Glopo, de a sazu yelbi-peɛle parɛɛ ama, e maale ne yelbi-paala,
+      cer: 0.1569
+      wer: 0.4167
+    '380':
+      text: Te maŋ de la tagemarre sεge ne yelkparema bee yellerema.
+      hyp: Te maŋ di la tage mare sɛge ne yelkparrema bee yel-leremma,
+      cer: 0.1087
+      wer: 0.6
+    '381':
+      text: A ŋaa maŋ soŋ la ka te ta puuli yεlɛ.
+      hyp: A ŋaa maŋ soŋ la ka te ta puuli yɛlɛ.
+      cer: 0.037
+      wer: 0.1
+    '384':
+      text: A yelbie ama be la te bebiri zaa dεmε diibu poͻ.
+      hyp: A yelbie ama be la te bebiri zaa demɛ diibu po.
+      cer: 0.0811
+      wer: 0.1818
+    '385':
+      text: O zanne la azuiŋ o baŋ la boma.
+      hyp: O zanne la azuiŋ, O baŋ la boma.
+      cer: 0.0
+      wer: 0.0
+    '387':
+      text: Te taa tagemarre parεε yaga Dagaare poͻ.
+      hyp: Te taa tage mare pare yaga da gaare po.
+      cer: 0.1212
+      wer: 0.8571
+    '389':
+      text: Teseŋ, yuori ne yoe yelbie ane yelgbͻge ane yelgbͻgere.
+      hyp: te seŋ, yuori ne yɔɛ yelbie ane yelgbogɛrɛ,
+      cer: 0.3556
+      wer: 0.6667
+    '390':
+      text: Sentaa Sentaa tagemarre naŋ maŋ tͻnne yelbie ane yelŋmaara.
+      hyp: sentaa sentaa tage mare naŋ maŋ te ne yelbie ane yelŋmaara,
+      cer: 0.06
+      wer: 0.4444
+    '395':
+      text: Sentaa tagemarre naŋ maŋ tͻnne Yelgbͻge yeme ane yelgbͻge sommeŋa taa.
+      hyp: seŋ taa tage mare naŋ maŋ te ne yelgbogɛ-yɛmɛ ane yelgbogɛ-soŋ meŋɛ taa,
+      cer: 0.2034
+      wer: 0.8182
+    '397':
+      text: Ka teneŋ di baare, te na gbiri la.
+      hyp: Ka teneŋ di baare, te na gbiri la,
+      cer: 0.0
+      wer: 0.0
+    '398':
+      text: Ka anaŋ na toͻ, taa emmaaroŋ ne neε zaa.
+      hyp: ka a naŋ na to taa emmaaroŋ ne neɛzaa,
+      cer: 0.0667
+      wer: 0.5556
+    '401':
+      text: A yuori wulo la a ayi zaa la maŋ tage yelbie bee yεlε lantaa.
+      hyp: A yuori wullo la a ayi zaa la maŋ tage yelbie bee yɛlɛ lantaa,
+      cer: 0.0638
+      wer: 0.1429
+    '404':
+      text: A naa naŋ kpi, n nyε la Naaŋmene.
+      hyp: A naa naŋ kpi, N nyɛ la Naaŋmen,
+      cer: 0.0833
+      wer: 0.25
+    '405':
+      text: A tagemarre ama la maŋ tͻnne yelgbͻge sommeŋa ane yelgbͻge yieme.
+      hyp: A tage mare ama la maŋ te ne yelbo, gɛ soŋ meŋɛ ane yelbogɛ yiemɛ.
+      cer: 0.2222
+      wer: 0.9091
+    '410':
+      text: A maŋ soŋ la ka te de yelgbͻgre bee yelŋmaara lantaa.
+      hyp: a maŋ soŋ la ka te de yelgogre bee yelmaara lantaa.
+      cer: 0.0714
+      wer: 0.1818
+    '415':
+      text: Begε fẽẽ la be be kyaare tagemarre yεlε maaloo poͻ.
+      hyp: bege-feɛ la bebe kyaare tage mare yɛlɛ maaloo po.
+      cer: 0.1707
+      wer: 0.8
+    '416':
+      text: Tagemarre tona la yεmbulo, yel-erre, ane teεroŋ.
+      hyp: Tagemare tonɔ la yembulo yel-errɛ ane teɛroŋ,
+      cer: 0.1316
+      wer: 0.7143
+    '417':
+      text: Te maŋ de la tagemarre pore ne boma (yoe).
+      hyp: Te maŋ di la tage mare pɔre ne boma yoɔɛ,
+      cer: 0.1613
+      wer: 0.5556
+    '418':
+      text: Yelbie maaloo sobie la lεnεε te naŋ maŋ tu a maale yelbipaala a kͻkͻre
+        poͻ.
+      hyp: Yelbie maaloo sobie la lɛnɛɛ te naŋ maŋ tu a maale yelbi-paala a kɛrɛ po.
+      cer: 0.1333
+      wer: 0.2
+    '419':
+      text: Yelbie maaloo sobie e la yaga.
+      hyp: Yelbie maaloo sobie e la yaga,
+      cer: 0.0
+      wer: 0.0
+    '420':
+      text: Kͻkͻre na baŋ tu la sobie ayi bee ata a maale ne yelbie.
+      hyp: ka nɛ na baŋ tu la sobie ayi bee ata a maale ne yelbie,
+      cer: 0.1163
+      wer: 0.1538
+    '421':
+      text: A sobie mine la fͻͻmaroo, yelbikparema, kyεŋmaabo, pεmmo, puuluu, leεroo,
+        amk.
+      hyp: A sobie mine la fo maaroŋ yelbikparrema kyɛ ŋmaabo pɛmmo, puuluu leɛroo
+        aŋk.
+      cer: 0.1475
+      wer: 0.7273
+    '424':
+      text: Wola ka te maŋ pore bompaaba yoe?
+      hyp: Wola ka te maŋ pore bompaaba yɔɛ,
+      cer: 0.0769
+      wer: 0.1429
+    '426':
+      text: Aŋ maŋ pore a yoe?
+      hyp: Aŋ maŋ pore ayoɛ,
+      cer: 0.0769
+      wer: 0.4
+    '428':
+      text: A yelbie naŋ kpare taa na baŋ yi la yelbie zagere tεεtεε poͻ.
+      hyp: A yelbie naŋ kpar-taa na baŋ yi la yelbie zagrɛ teɛ-teɛ po.
+      cer: 0.1667
+      wer: 0.3846
+    '431':
+      text: Yuori+eroŋ na baŋ kpare la taa.
+      hyp: Yuori erɛŋ na baŋ kparre la taa,
+      cer: 0.0833
+      wer: 0.5
+    '436':
+      text: Bͻ a yelbie na naŋ be a yelbikpara poͻ a wuli a karendie zaa.
+      hyp: a yelbie na naŋ be a yelbi-kpar-po a wuli a karendie zaa.
+      cer: 0.0851
+      wer: 0.2143
+    '441':
+      text: Te naŋ baŋ yeli ka yelbi-ŋmaara.
+      hyp: Te naŋ baŋ yeli ka yelbe ŋmaara,
+      cer: 0.04
+      wer: 0.3333
+    '454':
+      text: O maŋ soŋ la ka te pore yelpaala bee bompaala yoe.
+      hyp: O maŋ soŋ la ka te pɔre yelpaala bee bompaala yɔɛ,
+      cer: 0.0769
+      wer: 0.1818
+    '455':
+      text: O maŋ soŋ la ka te baŋ yelbie yiziiri.
+      hyp: O maŋ soŋ la ka te baŋ yelbie yi ziiri,
+      cer: 0.0
+      wer: 0.2222
+    '459':
+      text: Wola ka te maŋ e a maale yelbipaala Dagaare poͻ?
+      hyp: Wola ka te maŋ e a maale yelbipaala dagarepo?
+      cer: 0.0526
+      wer: 0.2
+    '460':
+      text: Pore yelbipeelε parεε naŋ be Dagaare poͻ.
+      hyp: pɔre-yelbi-peɛle parɛɛ naŋ be dagaare po.
+      cer: 0.1765
+      wer: 0.5714
+    '461':
+      text: Wuli yelbipeelε anaare Dagaare poͻ.
+      hyp: wuli yelbi-peɛlɛ anaare dagare po.
+      cer: 0.1333
+      wer: 0.6
+    '462':
+      text: Di dεmε kyaare yelbipeelε anaare Dagaare poͻ.
+      hyp: dideme kyaare yelbe-peɛle anaare dagare po.
+      cer: 0.1842
+      wer: 0.7143
+    '463':
+      text: Wuli yelbipeelε a yelbie ama poͻ kyε wuli a yelbipeelε parεε na a naŋ
+        e.
+      hyp: wuli yelbi-peɛlɛ a yelbie ama po kyɛ wuli a yelbi-peɛle parɛɛ na a naŋ
+        e.
+      cer: 0.1404
+      wer: 0.3333
+    '465':
+      text: Wuli tagemarre parεε Dagaare poͻ.
+      hyp: Wuli tage mare parɛɛ da gaare po.
+      cer: 0.1429
+      wer: 1.2
+    '466':
+      text: Wɛle a tagemarre parεε na fo naŋ wuli.
+      hyp: Wɛ la a tage mare parɛɛ na fo naŋ wuli,
+      cer: 0.1333
+      wer: 0.625
+    '467':
+      text: Toͻ soͻmaa eŋ a tagemarre puliŋ a yεlε ama naŋ tu a puliŋ.
+      hyp: Soma eŋ a tage mare puliŋ a yɛlɛ ama naŋ tu a puliŋ,
+      cer: 0.1778
+      wer: 0.3846
+    '471':
+      text: Wuli yelbie maaloo sobie parεε ata Dagaare poͻ.
+      hyp: Wuli yelbie maaloo sobie parɛɛ ata da gaare po.
+      cer: 0.0769
+      wer: 0.5
+    '473':
+      text: Bͻ yelbie maaloo sobie parεε na be a sεgere ŋa naŋ tu poͻ.
+      hyp: Yelbie maaloo sobie pare na be a sɛgrɛ ŋa naŋ tu po.
+      cer: 0.1778
+      wer: 0.3077
+    '474':
+      text: Zenε, mansumo e la nimizeε te zannoo poͻ.
+      hyp: Zenɛ, maŋ soma e la nimizeɛ te zannɔɔ po.
+      cer: 0.25
+      wer: 0.75
+    '479':
+      text: Te pãã maŋ soore la, boŋ kyεre?
+      hyp: Te pãã maŋ soore la boŋ kyɛrɛ?
+      cer: 0.087
+      wer: 0.1429
+    '486':
+      text: Yelŋmaa la yelbiri bee yelbie naŋ kyͻŋ tutaa a taa teɛroŋ yeni kͻkͻre
+        merε poͻ.
+      hyp: yelmaala yelbiri bee yelbie naŋ kye n tu taa a taa teɛroŋ yeni ka rɛ mɛrɛ
+        po,
+      cer: 0.1562
+      wer: 0.6667
+    '488':
+      text: Yelgbͻge la yelbie naŋ kyͻŋ tu taa a waa yεlε.
+      hyp: yelgbɛ la yelbie naŋ kye N tu taa a waa yɛlɛ.
+      cer: 0.1944
+      wer: 0.4
+    '493':
+      text: De fo peɛrenyɛre pɛre ne fo gbuli deni.
+      hyp: de fo peɛleŋ yɛre pɛrɛ ne fo gbuli deni,
+      cer: 0.0968
+      wer: 0.375
+    '494':
+      text: Yelŋmaa la yebiri bee yelbie naŋ kyͻŋ tutaa soŋ a kͻkͻre merε poͻ.
+      hyp: yelmaala yebiri bee yelbie naŋ kye N tu taa soŋ a Karimɛrepo.
+      cer: 0.1887
+      wer: 0.6923
+    '496':
+      text: A yelbirizu maŋ wuli a yelŋmaa yuori.
+      hyp: A yelbiri zu maŋ wuli a yelŋmaa yuori,
+      cer: 0.0
+      wer: 0.2857
+    '499':
+      text: Yelŋmaa parɛɛ waa la anuu.
+      hyp: Yelmaa pare waa la anuu,
+      cer: 0.1429
+      wer: 0.4
+    '503':
+      text: Bigiruu yelŋmaa ne bigiruu yelbie yelŋmaa waa la tɛɛtɛɛ.
+      hyp: Bigruu-yelmanne bigruu-yelbie yelmaa waa la teɛ-teɛ.
+      cer: 0.1489
+      wer: 0.7778
+    '505':
+      text: Aseŋ ‘a gane na naŋ dͻgele a tabol zu’.
+      hyp: a seŋ a Galena naŋ di gɛllɛ a tabol zu.
+      cer: 0.1786
+      wer: 0.6667
+    '508':
+      text: Yuori yelŋmaa maŋ taa la yuori yelbiri bee yoleɛrɛ yelbie ka o e a yelbirizu.
+      hyp: Yuori yelŋmaa maŋ taa la yuori yelbiri bee yɔleɛrɛ yelbie ka o e a yelbiri
+        zu.
+      cer: 0.0161
+      wer: 0.2
+    '510':
+      text: Yelŋmaara mine la tu a puliŋ.
+      hyp: Yelmaara mine la tu a puliŋ,
+      cer: 0.0435
+      wer: 0.1667
+    '515':
+      text: Fo na baŋ nyɛ la yebiri yeme ka a are ko yuori yelŋmaa.
+      hyp: Fo na baŋ nyɛ la yɛbiri yɛmɛ ka a are ko yuori yelŋmaa.
+      cer: 0.0714
+      wer: 0.1538
+    '522':
+      text: Pegeraa la yelbie bee yelŋmaa naŋ maŋ tere duori kpɛlɛ kyaare yuori yelbiri
+        zu.
+      hyp: pɛgraa la yelbie bee yelŋmaa naŋ maŋ tere duori kpɛlɛ kyaare yuori yelbiri
+        zu,
+      cer: 0.0308
+      wer: 0.0714
+    '523':
+      text: Pegeraa na naŋ maŋ wa kyɛ ko a yelbiri zu la ka te boͻla puori pegeraa.
+      hyp: Pɛgraa na naŋ maŋ wa kyɛ ko a yelbiri zu la ka te bo la puori pɛgraa,
+      cer: 0.0909
+      wer: 0.25
+    '528':
+      text: Eroŋ yelŋmaa la yelŋmaa naŋ taa eroŋ yelbiri ka o e a yelbiri zu.
+      hyp: Eroŋ yelmaa la yelmaa naŋ taa Eroŋ yelbiri ka o e a yelbiri zu.
+      cer: 0.0392
+      wer: 0.1429
+    '531':
+      text: Eroŋ yelŋmaa naŋ taa eroŋ yoŋ yelbiri meŋ waa la eroŋ yelŋmaa.
+      hyp: Eroŋ yelmaa naŋ taa Eroŋ yelbiri meŋ waa la Eroŋ yelmaa,
+      cer: 0.1
+      wer: 0.25
+    '534':
+      text: Eroŋ meɛroŋ yeldemanne mine naŋ kyaare a sazu eroŋ yelŋmaara ama la VP-VP.
+      hyp: Erɔm meɛroŋ yeldemanne mine naŋ kyaare a sazu erɔŋ yelŋmaara ama la o popo.
+      cer: 0.1
+      wer: 0.3077
+    '535':
+      text: Eroŋ yelŋmaa naŋ taa eroŋ kpɛgelaa, eroŋ ane a parepegeraa.
+      hyp: erɔŋ yelmaa naŋ taa erɔŋ kpɛglaa, erɔŋ ane a parepɛgraa,
+      cer: 0.1458
+      wer: 0.6
+    '546':
+      text: Yelŋmaa eronwuluu yelbiri naŋ waa a yelbiri zu la eronwuluu yelŋmaa.
+      hyp: yelmaa erɔŋ wuluu yelbiri naŋ waa a yelbiri zu la erɔŋ wuluu yelmaa.
+      cer: 0.1053
+      wer: 0.5455
+    '555':
+      text: Bigruu yelŋmaa maŋ taa la bigruu yelbiri ka o e a yelbiri zu.
+      hyp: Bigruu yelŋmaa maŋ taa la bigruu yelbiri ka o e a yelbiri zu.
+      cer: 0.0
+      wer: 0.0
+    '556':
+      text: O maŋ pege la yoe yelbie.
+      hyp: O maŋ pɛge la yoɛ yelbie,
+      cer: 0.1053
+      wer: 0.3333
+    '557':
+      text: Bigruu yelŋmaa na baŋ taa la bigruu yelbiri yoŋ bee bigruu ne yelbie mine
+        naŋ pege o.
+      hyp: bigruu yelŋmaa na baŋ taa la bigruu yelbiri yoŋ bee bigruu ne yelbie mine
+        naŋ pɛgɛ o.
+      cer: 0.0294
+      wer: 0.0588
+    '559':
+      text: O maŋ taa la aroozie yelbiri naŋ waa a yelbiri zu.
+      hyp: O maŋ taa la aroozie yelbiri naŋ waa a yelbiri zu.
+      cer: 0.0
+      wer: 0.0
+    '565':
+      text: A yelnimizeɛ la a yelbi-zu.
+      hyp: A yelnimizeɛ la a yelbe zu.
+      cer: 0.0476
+      wer: 0.4
+    '568':
+      text: A sazu yeldemannaa a yuori yelŋmaa la a yelbiri na naŋ soͻ.
+      hyp: a sazu yeldemannaa a yuori yelŋmaa la a yelbiri na naŋ so.
+      cer: 0.0213
+      wer: 0.0833
+    '570':
+      text: A yelbiri-zu a eroŋ yelŋmaa poͻ la gaa.
+      hyp: A yelbiri zu a erɛŋ yelmaapo la gaa,
+      cer: 0.1
+      wer: 0.625
+    '576':
+      text: A maŋ soŋ manne la yεlε pare ka o kyaane velaa.
+      hyp: A mansoŋ manne la yele pare ka o kyaane velaa,
+      cer: 0.0833
+      wer: 0.2727
+    '584':
+      text: Te naŋ wa ta,te gaa zeŋ la bɛ-teɛ kaŋa naŋ taa maaroŋ soŋ zaa puliŋ.
+      hyp: Te naŋ wa ta te gaa zeŋ la be teɛ kaŋ naŋ taa maaroŋ soŋ zaa puliŋ.
+      cer: 0.0392
+      wer: 0.3333
+    '588':
+      text: Ŋmenaa naŋ wa posentaa te da gaa zeŋ la a pɛnne.
+      hyp: Ŋmenaa naŋ wa posentaa te da gaa zeŋ la a pɛnne,
+      cer: 0.0
+      wer: 0.0
+    '590':
+      text: A yɛ gbulo poͻ, yɛ wɛle a yelŋmaara parɛɛ eŋ a zagere ama (a.
+      hyp: a yɛ gbulo po, yɛ wele a yelŋmaara parɛɛ eŋ a zagre ama,
+      cer: 0.0889
+      wer: 0.2857
+    '596':
+      text: A saseɛ poͻ duoro ŋa kyaare la yegbͻgere.
+      hyp: A saseɛ po, duoro ŋa kyaare la yɛ gugɛrɛ,
+      cer: 0.1818
+      wer: 0.375
+    '599':
+      text: Yelgbͻge la yelbie naŋ kyͻŋ tutaa a taa teɛroŋ yeni kyɛ taa erɛ ane eroŋ.
+      hyp: yelgoɔ la yelbie naŋ kyi N tu taa a taa teɛroŋ yeni kyɛ taa erɛ ane eroŋ.
+      cer: 0.1034
+      wer: 0.3333
+    '605':
+      text: A sazu yeldemanne ama poͻ, a yɛlɛ kaŋa zaa maŋ taa la erɛ ane eroŋ.
+      hyp: a sazu yeldemanne ama po. A yɛlɛ kaŋ zaa maŋ taa la erɛ ane eroŋ.
+      cer: 0.0392
+      wer: 0.1333
+    '608':
+      text: Yelgbͻgere parɛɛ ayi la be be.
+      hyp: Yɛlkpɛgɛrɛ parɛɛ ayi la bebe,
+      cer: 0.25
+      wer: 0.5
+    '620':
+      text: Kpɛ entanɛt poͻ a bͻ yelgbͻge-sommeŋa parɛɛ anaare.
+      hyp: kpɛ-entɔnɛt po, a be yɛlɛ Grɛson meŋɛ parɛɛ anaare,
+      cer: 0.2619
+      wer: 0.875
+    '621':
+      text: De fo yelnyɛre wuli fo tͻ.
+      hyp: de fo yelnyɛrɛ wuli fo te.
+      cer: 0.1
+      wer: 0.3333
+    '622':
+      text: De manne ne ama naŋ tu a puliŋ .
+      hyp: de manne ne ama naŋ tu a puliŋ,
+      cer: 0.0
+      wer: 0.0
+    '623':
+      text: Yelgbͻge-sommeŋa taa la zagere anaare a yi parebammo eŋɛ.
+      hyp: Yelbegɛ soŋ meŋɛ taa la zagrɛ anaare a yi parebammo eŋɛ.
+      cer: 0.1489
+      wer: 0.4444
+    '628':
+      text: N saaŋkoma gbiri la zaameŋ tensoŋa.
+      hyp: N sãã ko ma gbiri la zaa meŋ tensoŋa,
+      cer: 0.1034
+      wer: 0.8333
+    '630':
+      text: Dakoraa maŋ gaa la weɛ Yͻdaare zaa.
+      hyp: Dakoraa maŋ gaa la weɛ e daare zaa,
+      cer: 0.0714
+      wer: 0.2857
+    '634':
+      text: Fo naŋ baŋ pore la sooroo yelbie mine Dagaare poͻ?
+      hyp: Fo naŋ baŋ pɔre la sooroo yelbie mine da gaare po.
+      cer: 0.05
+      wer: 0.4
+    '645':
+      text: N na gaa la Loho sɛre kyɛ wa.
+      hyp: N na gaa la lɔho serɛ kyɛ wa,
+      cer: 0.1429
+      wer: 0.25
+    '647':
+      text: Yelgbͻge-yieme taa la tontonne yaga anaŋ tona yɛlɛ poͻ.
+      hyp: Yelgbɛ-yieme taa la tontonne yaga a naŋ tonɔ yɛlɛ po.
+      cer: 0.1111
+      wer: 0.5556
+    '655':
+      text: Ayͻͻ kanne ne la a gane onaŋ o saa naŋ ko o.
+      hyp: ai, kanne ne la a gane o naŋ o sãã naŋ ko o.
+      cer: 0.1562
+      wer: 0.3333
+    '664':
+      text: Yuori yelgbͻge naŋ are ko erɛ.
+      hyp: yuori yelgbog-gɛ naŋ are ko erɛ.
+      cer: 0.125
+      wer: 0.1667
+    '665':
+      text: Yuori yelgbͻge naŋ tona erɛ toma ( eterɛ bee ekyaara) aseŋ.
+      hyp: yuori yelgo, gɛ naŋ tonɔ erɛ toma e terɛ bee e kyaara a seŋ.
+      cer: 0.087
+      wer: 0.9
+    '676':
+      text: De fo nͻ-iraa wuli fo karembi-tͻ.
+      hyp: There for a ira willful Karimbit.
+      cer: 0.52
+      wer: 1.0
+    '678':
+      text: A yɛ gbulo poͻ,manne wuli yelgbͻgere ayi parɛɛ.
+      hyp: a yɛ gbulo po, manne wuli yelgbɔ-gɛrɛ ayi parɛɛ.
+      cer: 0.1053
+      wer: 0.375
+    '680':
+      text: Yɛ zeŋ ayiri a kanne a dɛmmo ŋa naŋ tu a puliŋ.
+      hyp: Yɛ zeŋ a yiri a kanne a dɛmmo ŋa naŋ tu a puliŋ,
+      cer: 0.0
+      wer: 0.1667
+    '683':
+      text: Yɛ di dɛmɛ kyaare ne a yɛ nͻ-irri.
+      hyp: Yɛ di deme kyaare ne a yɛ n iri.
+      cer: 0.16
+      wer: 0.375
+    '687':
+      text: Kͻŋ naŋ da kpɛ ma gaali zuiŋ, N meŋ da la a mui mine ͻͻ.
+      hyp: N naŋ da kpɛ ma gaale zuiŋ, N meŋ da la a mui mine,
+      cer: 0.15
+      wer: 0.2
+    '693':
+      text: Kaa iri a yelgbͻgere zagere fo taaba yeldemannewulli poͻ.
+      hyp: ka a iri a yelgbo-gɛrɛ zagrɛ fo taaba yeldemanne wuli po.
+      cer: 0.1458
+      wer: 0.7778
+    '697':
+      text: A karembie kanne la a gane.
+      hyp: A karembie kanne la a gane,
+      cer: 0.0
+      wer: 0.0
+    '698':
+      text: A dͻͻ gbiri la velaa.
+      hyp: a di gbuli la velaa,
+      cer: 0.25
+      wer: 0.4
+    '699':
+      text: O maŋ wuli yelbie kyɛŋmaabo baare la.
+      hyp: O maŋ wuli yelbie kyɛ ŋmaabo baare la,
+      cer: 0.0
+      wer: 0.2857
+    '701':
+      text: O maŋ be la ogibu yelŋmaa bee yɛlɛ baaraa.
+      hyp: O maŋ be la O gubo yelmaa bee yɛlɛ baaraa,
+      cer: 0.0909
+      wer: 0.3333
+    '704':
+      text: O maŋ wɛle la boma yoe.
+      hyp: O maŋ willi la boma yɔɛ,
+      cer: 0.2941
+      wer: 0.3333
+    '705':
+      text: A yoe na baŋ waa la yelbie, yelŋmaara bee yegbͻgere.
+      hyp: A yɔɛ na baŋ waa la yelbie yelŋmaara bee yɛgo gɛrɛ,
+      cer: 0.1707
+      wer: 0.3
+    '711':
+      text: A gan-paale, sͻgelaa na bͻrɛɛ la.
+      hyp: A ganpaale segelaa na boree la,
+      cer: 0.16
+      wer: 0.3333
+    '712':
+      text: N da la yi-kore, kpoŋ, doͻre kaŋa.
+      hyp: N da la yi kɔre kpoŋ dɔre kaŋ,
+      cer: 0.1667
+      wer: 0.5714
+    '713':
+      text: Te maŋ de o la piili ne boma yoe porebo, yeldemanne bee yɛlɛ mannoo.
+      hyp: Te maŋ de O la piili ne boma yoɛpɔgrebɔ, yeldemanne bee yɛlɛ mannoo,
+      cer: 0.0755
+      wer: 0.1429
+    '717':
+      text: N taa la gyenno bieu; n na kanne la ka zie te nyaa.
+      hyp: N taa la gyɛnno bieu, N na kanne la ka zie te nyaa.
+      cer: 0.027
+      wer: 0.0769
+    '718':
+      text: O maŋ wɛle la boma yoe naŋ kyͻŋ tu taa.
+      hyp: O maŋ wele la boma yoɛ naŋ kyi n tu taa,
+      cer: 0.1379
+      wer: 0.4
+  source: evaluated
+- model: ghananlpcommunity/ghana-tts-36k
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  cer: 0.1794
+  wer: 0.4706
+  score: 0.1794
+  samples: 200
+  valid: 200
+  avg_seconds: 2.42
+  judge:
+    model: KhayaAI/khaya-asr-v3
+    cer_on_real_speech: 0.1461
+  entries:
+    '3':
+      text: A wɛlemɛ ŋa wulo la kͻkͻtɛgɛ, kͻkͻtɛgɛ meɛroŋ ane kͻkͻgaale parebammo.
+      hyp: E wɛlmɛ ŋa wullo la kɛkɛtɛgɛ, kɛkɛtɛgɛ meɛroŋ ane kɛkɛgaale parebammo.
+      cer: 0.1552
+      wer: 0.5455
+    '10':
+      text: Fo na zanne la yelbipaala meɛbo gͻͻloŋ.
+      hyp: Fo na za ne la yelbe paala mɛɛbo guloŋ,
+      cer: 0.1562
+      wer: 0.8571
+    '24':
+      text: Aŋa na baŋ e la ka sɛgebinyaŋene ba wa tu a sɛgebidaa puori taŋtaŋ lɛ.
+      hyp: A ŋa na baŋee la ka sɛgɛ bin-yɛŋene ba wa tuo a sɛgɛ bidaa puori tantaŋ
+        lɛ.
+      cer: 0.1091
+      wer: 0.6667
+    '25':
+      text: Yeldemannewulli mine la ama naŋ tu a puliŋ.
+      hyp: Yelde-manne wuli mine la ama naŋ tu a puliŋ.
+      cer: 0.0286
+      wer: 0.25
+    '31':
+      text: O men maŋ soŋ la zannezanna ka o baŋ yelbie tɛgɛ bee pare.
+      hyp: O meŋ maŋ soŋ la, ‘Zanne-zana’ ka o baŋ yelbie tɛgɛ bee pare.
+      cer: 0.0444
+      wer: 0.1538
+    '33':
+      text: A sazu yeldemannewulli ama poͻ , a yelbi-ŋmaa kaŋa zaa boͻloo are ko la
+        kͻkͻtɛgɛ.
+      hyp: A sazu yɔdimane wuli a ma po gandaama doɔ a yelbi-ŋmaa kaŋa zaabolo are
+        ko la keketɛgɛ.
+      cer: 0.3125
+      wer: 0.7143
+    '34':
+      text: A yelbiri kaŋ zaa wɛle eŋe la kͻkͻtɛgere.
+      hyp: Yelbiri kaŋ zaa wele eŋɛ la kɛkɛtɛgre.
+      cer: 0.1818
+      wer: 0.5
+    '37':
+      text: A ama maŋ baare ne la sεgebinyaŋaa.
+      hyp: Aa ma maŋ baare ne la, sigi binyaŋaa.
+      cer: 0.0714
+      wer: 0.5714
+    '45':
+      text: Yeldemannewulli mine la tu a puliŋ.
+      hyp: Yɛldemanewooli mine la tu a poliŋ.
+      cer: 0.1724
+      wer: 0.3333
+    '48':
+      text: De fo meŋa yelbie manne wuli ne kͻkͻtɛgɛ muni.
+      hyp: De fo meŋaa yelbie manne wuli ne, kyɛ ketɛgɛ muni.
+      cer: 0.1081
+      wer: 0.3333
+    '50':
+      text: Manne bigri kͻkͻtɛgɛ zagere Dagaare poͻ.
+      hyp: Mɛnne bigri ka ko tɛgɛ zagre da gaare po.
+      cer: 0.1471
+      wer: 1.3333
+    '51':
+      text: Manne wuli kͻkͻtɛgɛ meɛroŋ tͻna kyaare yelbie meɛbo.
+      hyp: Mɛne wuli ka kitɛgɛ meɛroŋ te naŋ kyaare yelbie meɛbo.
+      cer: 0.1364
+      wer: 0.625
+    '55':
+      text: Kͻkͻtɛgɛ sɛgebidaare meŋ taa la kͻkͻgaale aŋa sɛgebinyaŋene naŋ taa lɛ.
+      hyp: Hakutɛgɛ sɛge bidaare meŋ taa la kokogaale aŋa sɛge binyɛŋene naŋ taa lɛ.
+      cer: 0.1
+      wer: 0.5455
+    '57':
+      text: Aseŋ, ka yelbiriŋ wa taa sɛgebinyaŋene ayi , o naŋ taa la kͻkͻtɛgɛ ayi
+        bee a gaŋ lɛ.
+      hyp: Lɛ seŋ ka yelbureŋ wa taa sɛgbinyɛŋene ayi, yɛ kpɔ̃ waa taa sɛgbinyɛŋene
+        ayi bee a gaŋ lɛ.
+      cer: 0.375
+      wer: 0.5294
+    '62':
+      text: Di dɛmɛ kyaare ne kͻkͻtɛgɛ Dagaare poͻ.
+      hyp: Zidɛlɛ kyaare de ka kɛtɛgɛ dagare poɔ.
+      cer: 0.2188
+      wer: 1.0
+    '66':
+      text: E ka fo ne fo tͻ di dɛmɛ kyaare yelbiri kaŋa zaa kͻkͻtɛgɛ semmo.
+      hyp: Kyɛ ka fo ne fo te dii dɛmɛ kyaare yelbiri, kaŋa zaa ka kɛkɛ seŋ moɔ.”
+      cer: 0.22
+      wer: 0.5
+    '67':
+      text: Vɛŋ ka fo ne fo tͻ di dɛmɛ kyaare ne a yelbiri kaŋa zaa kͻkͻtɛgɛ meɛroŋ.
+      hyp: Lɛŋ ka fo ne fo te di dɛmɛ kyaare ne a yelbiri kaŋ zaa teke tɛgɛ meɛroŋ.
+      cer: 0.1071
+      wer: 0.3125
+    '68':
+      text: A yɛ gbuli na manne la a yɛlɛ a karendie poͻ.
+      hyp: A yɛ gbilii na manne la a yɛlɛ a karendie poɔ.
+      cer: 0.0882
+      wer: 0.1818
+    '69':
+      text: Dɛmɛ diibu ane peɛroo na be la be.
+      hyp: Yɛmɛ diibu ane peɛroo na be la be.
+      cer: 0.0385
+      wer: 0.125
+    '70':
+      text: Soori ane Nyeraa da waa la zͻmenne.
+      hyp: Soori ane nyeɛraa dawala zemenne.
+      cer: 0.1071
+      wer: 0.7143
+    '71':
+      text: Ama, ba yel-erre da waa la tɛɛtɛɛ.
+      hyp: Hamaa, ba yɛlɛɛre da waa la tɛɛtɛɛ.
+      cer: 0.2
+      wer: 0.2857
+    '79':
+      text: Yɛ di dɛmɛ kyaare ne a nͻ-iri.
+      hyp: Yɛ di dɛmɛ kyaare ne a neere.
+      cer: 0.1364
+      wer: 0.1429
+    '89':
+      text: Ghana kͻkͻɛ mine yeldemannewulli la a ama naŋ tu a puliŋ.
+      hyp: Gana kɛkɛ mine yeldemanne wulli la ama naŋ tuo a puliŋ.
+      cer: 0.1087
+      wer: 0.5455
+    '96':
+      text: Kͻkͻgaale e la yelnimizeɛ kͻkͻre poͻ yi onaŋ taa tontɛɛtɛɛ kyaare pare
+        bammo.
+      hyp: Hɔgaa leɛ la a yeli nimizeɛ kɔkɔre poɔ yi o naŋ taa tontɛɛtɛɛ kyaare parebaŋ.
+      cer: 0.2031
+      wer: 0.8462
+    '98':
+      text: Ama la yelbie bammo, kͻkͻre merɛ ane kͻkͻkpɛlɛ.
+      hyp: A ma la yelbie bamo, kekere merɛ ane kekekpɛlɛ.
+      cer: 0.1316
+      wer: 0.625
+    '100':
+      text: Te maŋ de la yelbie kɔkɔgaale wɛle ne yelbie pare tɛɛtɛɛ.
+      hyp: Te maŋ de la yelbie kɔkɔgaale wɛle ne yelbie pare tɛɛtɛɛ.
+      cer: 0.0
+      wer: 0.0
+    '103':
+      text: Kaa a ama naŋ tu.
+      hyp: ka ama naŋ tu
+      cer: 0.1667
+      wer: 0.4
+    '106':
+      text: Kɔkɔre merɛ kɔkɔgaale la maŋ wa ne tɛɛtɛɛ a kɔkɔre yelibu poɔ.
+      hyp: Kɔkɔremɛrɛ kɔkɔgaale la maŋ wa ne tɛɛtɛɛ a kɔkɔre yelibu poɔ.
+      cer: 0.02
+      wer: 0.1667
+    '110':
+      text: Kɔkɔgaale meŋ na baŋ wuli la tɛɛtɛɛloŋ kɔkɔkpɛlɛ naŋ be kɔkɔyeni poɔ.
+      hyp: Kɔkɔgaale meŋ na baŋ wuli la tɛɛtɛɛloŋ kɔkɔkpɛlɛ naŋ be kɔkɔyeni poɔ
+      cer: 0.0
+      wer: 0.0
+    '111':
+      text: Kɔkɔgaale na baŋ wɛle la Dagaare ane Birfor yelbie mine.
+      hyp: Pɔkɔgaale na baŋ wɛle la Dagare ane Befɔ yelbie mine.
+      cer: 0.1304
+      wer: 0.3
+    '115':
+      text: De fo meŋa yelbie manne wuli ne kͻkͻgaale pare bammo.
+      hyp: De fo meŋaa yelbie mane wuli nekikaalɛɛ pare bamo.
+      cer: 0.186
+      wer: 0.5
+    '118':
+      text: Yɛ di dɛmɛ kyaare kͻkͻgaale a yɛ gbulo poͻ.
+      hyp: Yɛ de dɛmɛ kyaare ka ko gaale a yɛ gbulo po.
+      cer: 0.1176
+      wer: 0.5556
+    '119':
+      text: Yɛ wuli yɛ karembitaaba yɛ nͻiraa.
+      hyp: Yɛ wuli yɛ karembetaaba yɛ yiiraa,
+      cer: 0.1071
+      wer: 0.3333
+    '120':
+      text: A yɛ gbulo poͻ, kyɛlle yelbie mine boͻloo Dagaare poͻ kyɛ e a ama naŋ
+        tu.
+      hyp: A yɛ gbulo poɔ kyɛlle yelbie mine buluu dagare poɔ kyɛ e a ama naŋ toŋ.
+      cer: 0.1607
+      wer: 0.3125
+    '122':
+      text: Wuli a yelbie na yɛ naŋ kaa-iri kͻkͻtɛgɛ.
+      hyp: Wuli a yɛlbie na yɛ naŋ kaa-iri keke-tɛgɛ.
+      cer: 0.0938
+      wer: 0.25
+    '130':
+      text: A foͻlaa yeli la yɛlɛ kyaare ne yelbulo kaa-iribu yelyagesɛgeraa bee dɛmɛ
+        diibu poͻ.
+      hyp: Fo la yeli la yɛlɛ kyaare ne yelbuluu kaa-erebu yelɛjyɛ sɛgraa, itaali
+        bee dɛmɛ diibu poɔ.
+      cer: 0.2754
+      wer: 0.5714
+    '131':
+      text: Fo na zanne la maa-eŋɛ ane kanne gaa tͻͻre kannoo.
+      hyp: Ko na zanne la maa eŋɛ ane kanne gaa teere kannoo.”
+      cer: 0.0769
+      wer: 0.4
+    '136':
+      text: Yelbuli la a yelyagesɛgeraa yelnyͻgeraa.
+      hyp: Yɛobuli la a yɛ meɛ gyisɛgraa yelnyegraa.
+      cer: 0.3143
+      wer: 1.0
+    '138':
+      text: Kannoo na baŋ waa la maa-eŋɛ bee kanne gaa tͻͻre.
+      hyp: Kanoo na baŋ waa la maa eŋɛ bee ka na gaa teere.
+      cer: 0.1316
+      wer: 0.6
+    '163':
+      text: O meŋ la kyaare la kannoo te naŋ de yɛmbulo eŋ.
+      hyp: O meŋ la kyaare la kannoo te naŋ de yɛmbuluu eŋ.
+      cer: 0.0556
+      wer: 0.0909
+    '166':
+      text: A maŋ soŋ la ka yeli pare bammo kyaane.
+      hyp: A maŋ soŋ la ka a yeli pagre bammo kyaane.
+      cer: 0.0667
+      wer: 0.2222
+    '171':
+      text: Yɛ zanne la yɛlɛ kyaare werewere kannoo ane va-funnoo a yuoni yeni poͻ.
+      hyp: Yɛ zaaŋ la la yɛlɛ kyaare, wɛwɛ kannoo ane bafonnoo ayoɔ ne yeni poɔ.
+      cer: 0.2807
+      wer: 0.5385
+    '177':
+      text: O e la kannoo naŋ wulo yelbulo boͻbo yelyagesɛgeraa poͻ.
+      hyp: O e la kannoo naŋ wullo o yelbuluu bubo, yeli a gyisɛgraa poɔ.
+      cer: 0.2391
+      wer: 0.8
+    '182':
+      text: A kyɛ,fo maŋ kaa la a sɛgere fileu ana kyo-iri yelbi-bulo.
+      hyp: A kyɛ, fo maŋ kaa la a sɛgre filiwɛ ana kyɔ ire yelbibulo.
+      cer: 0.1364
+      wer: 0.5455
+    '185':
+      text: Kanne a yelyagesɛgeraa ŋa naŋ tu a puliŋ.
+      hyp: ane a yeleɛ gye sɛgraa ŋaa naŋ tu a poliŋ.
+      cer: 0.2424
+      wer: 0.75
+    '186':
+      text: Kaa iri a yelbulo a yelyagesɛgeraa ŋa naŋ tu a puliŋ poͻ.
+      hyp: ka a iri a yelbuluu a yele gyisɛgraa ŋa naŋ tu a puliŋ poɔ.
+      cer: 0.1778
+      wer: 0.5
+    '187':
+      text: De a yelbulo na fo naŋ nyɛ wuli fo karembitaa.
+      hyp: di a yelbuluu na fo naŋ nyɛ wuli fo karembitaa.
+      cer: 0.0833
+      wer: 0.2
+    '188':
+      text: N da nyɛ la yuomo anaare kyɛ ka n ma kpi.
+      hyp: N da nyɛ la yuomo anaare kyɛ ka N ma kpi.
+      cer: 0.0
+      wer: 0.0
+    '191':
+      text: N baabo yɛlɛ da be la n dͻgereba nuuriŋ.
+      hyp: N baaboo yɛlɛ da be la N degre ba nuuriŋ.
+      cer: 0.0968
+      wer: 0.3333
+    '202':
+      text: N da binne la libie fẽẽfẽẽ a tõͻ gaa sakuuri.
+      hyp: N da benne la libie fẽẽ fẽẽ a toŋ gaa sakuuri.
+      cer: 0.0857
+      wer: 0.4
+    '208':
+      text: A yɛ gbulo poͻ yɛ di dɛmɛ a kaairi a yelbulo a dɛmmo ŋa naŋ tu a puliŋ.
+      hyp: A yɛ gbulpo yɛ, de dɛmɛ a kaare a yelbulo a de moŋa naŋ tu o a puliŋ.
+      cer: 0.1509
+      wer: 0.3889
+    '209':
+      text: De a yelbulo fo naŋ kaairi wuli karendie biiri zaa.
+      hyp: De a yelbulo fo naŋ kaere wuli karendie biiri zaa.
+      cer: 0.0732
+      wer: 0.1
+    '218':
+      text: Ama, gbɛɛ yaga noͻre sagebo maŋ soŋ la ka nyͻvore yɛlɛ tori.
+      hyp: Ama, gbɛɛ yaga nore sagebo maŋ soŋ la ka nyɔvore yɛlɛ tori.
+      cer: 0.0426
+      wer: 0.1667
+    '221':
+      text: O maŋ soŋ la ka sagediibu baa.
+      hyp: O maŋ soŋ la ka sage diibu ba.
+      cer: 0.0435
+      wer: 0.4286
+    '223':
+      text: Yɛ zeŋ gbulo a kuri dɛmmo dẽɛ wuli kyaare vũũ yɛlɛ, nansaalaa soͻloŋ bee
+        zimaale tͻna ka o yine a sazu deme ŋa.
+      hyp: Yɛ zeŋ gbulo a kuri dɛmmo deŋ wuli kyaare vũũ yɛlɛ. Nansaala soloŋ bee
+        zimaale te na ka o yi ne a sazu deme ŋa.
+      cer: 0.0575
+      wer: 0.3043
+    '224':
+      text: Vɛŋ ka a karembiiri di dɛmɛ wuli a yelzu.
+      hyp: Vɛŋ ka a karembiiri di dɛmɛ wuli a yeli zu.
+      cer: 0.0312
+      wer: 0.2222
+    '226':
+      text: Kanne a yelyagesɛgeraa ŋa velaa kyɛ iri a soorebie naŋ tu nͻɛ.
+      hyp: Kana a yɛlɛ gye sɛgraa, ŋa velaa kyɛ iri a sori be naŋ tuu ne yɛ.
+      cer: 0.26
+      wer: 0.75
+    '228':
+      text: De bone na fo naŋ nyɛ a dɛmmo poͻ wuli a gbulo mine.
+      hyp: Dɛ bonne na fo naŋ nyɛ a dɛmmo pouli, a gbulo mine.
+      cer: 0.1026
+      wer: 0.3077
+    '229':
+      text: De va-funnoo gͻͻloŋ wuli yelsoŋ kaŋa a sɛgerɛ naŋ teɛre ka a karemazuzeɛ
+        taa.
+      hyp: De va funnoo guluŋ wuli yelsoŋ kaŋ a sɛgrɛ naŋ teɛre ka a karema zu zie
+        ta.
+      cer: 0.129
+      wer: 0.6429
+    '230':
+      text: A karemazuzeε la a sakuuri faŋa zaa.
+      hyp: Karema zu zee la a sakuri faŋ zaa.
+      cer: 0.1379
+      wer: 0.7143
+    '256':
+      text: A sɛgesɛgrɛ maŋ de la duoro eŋ a sɛgre poɔ.
+      hyp: Sɛge sɛgrɛ maŋ de la duoro eŋ a sɛgre poɔ.
+      cer: 0.0303
+      wer: 0.2
+    '260':
+      text: O e la sobiri karembiiri naŋ maŋ nyore bamenne eŋ kannoo a naŋ baŋ o pare.
+      hyp: Oo e la, sobiri karembiiri naŋ maŋ nyore bamenne eŋ kannoo a naŋ baŋ o
+        pare.
+      cer: 0.0172
+      wer: 0.0625
+    '269':
+      text: A kannekanna maŋ wuli la o teɛroŋ, tere o nͻ-iraa a kannoo ne kanne baaroo
+        puoriŋ.
+      hyp: A kanne kanna maŋ wuli la o teɛroŋ. Tere o niiraa a kannoo ne kanne baaroo
+        puoriŋ
+      cer: 0.0156
+      wer: 0.1875
+    '271':
+      text: Nensaalaa lããfeeloŋ ane gyeremɛ yɛlɛ do are la zie maale ka o e forfori.
+      hyp: Nensaala laŋ feɛloŋ ane gyeremɛ yɛlɛ do a la zie maale ka o e fofori.
+      cer: 0.1207
+      wer: 0.3571
+    '278':
+      text: A baaloŋ ama koora la noba yaga.
+      hyp: A baaloŋ ama koɔrɔ la noba yaga.
+      cer: 0.08
+      wer: 0.1429
+    '284':
+      text: Pãã wuli fo teɛroŋ kyaare ne lɛ anaŋ seŋ ka a sɛgebo wuobu yɛlɛ da tu.
+      hyp: Pãã wuli fo teɛroŋ kyaare nedile, anaŋ seŋ ka a sɛgɛ bawuobu yɛllɛ ta to.
+      cer: 0.1481
+      wer: 0.4375
+    '288':
+      text: Gyeremɛ ba waa bone fo naŋ na fere nyɛ.
+      hyp: Hɛremaa, ba waa bonne fo naŋ na fo nyɛ.
+      cer: 0.3
+      wer: 0.3333
+    '291':
+      text: Teɛre ka fo be la karendie poͻ ka neɛzaa puoro o tͻ ne nimimaaroŋ ane
+        neeloŋ.
+      hyp: Teɛre ka fo be la karendie poŋ ka neɛzaa puoro o tenne nimimaaroŋ ane neɛloŋ.
+      cer: 0.0656
+      wer: 0.25
+    '298':
+      text: Boŋ yeli la ka a yelzu yeli kyaare ne dɛmmo?
+      hyp: Boŋ yeli la ka a Yeezu yelkyaare ne dɛmmo?
+      cer: 0.0588
+      wer: 0.3
+    '299':
+      text: Sɛge a yɛlɛ yelzu naŋ be dabegere boŋyeni ane anaare.
+      hyp: Sɛgɛ a yɛlɛ yelzu naŋ be dabagere bonyeni ane anaare.
+      cer: 0.0698
+      wer: 0.3
+    '300':
+      text: Kyoͻre a sazu dɛmmo ŋa eŋ yɛlɛ anaare poͻ.
+      hyp: Kyoore la sazu dɛmo ŋa N yɛlɛ anaare ko.
+      cer: 0.2121
+      wer: 0.5556
+    '304':
+      text: Boŋ tɛɛtɛɛloŋ la be kanne welweli ane peɛroo kpakyagaŋ?
+      hyp: Boŋ teɛteɛloŋ la be kannee wewoleɛ ane peɛroo kpakyagaŋ?
+      cer: 0.1522
+      wer: 0.3333
+    '306':
+      text: De fomeŋɛ yelbie wɛle ne maa-eŋɛ kannoo ane kanne gaa tͻͻre kannoo tɛɛtɛɛloŋ.
+      hyp: De fo meŋɛ yelbie wɛle, nemaa eŋɛ kannoo ane kanne gaa tere kannoo tɛɛtɛɛloŋ.
+      cer: 0.0317
+      wer: 0.3846
+    '314':
+      text: Yelbipeelaa la yelbiriŋmaa te naŋ de eŋ yelbiri niŋe bee puori bee sͻga.
+      hyp: Yelpeelaa la yelbiri ŋmaa te naŋ de eŋ yelbiri niŋe bee puori bee sega.”
+      cer: 0.0508
+      wer: 0.3077
+    '316':
+      text: Tagemarre la ka te maŋ de tage yelbie lantaa yεlε poͻ ka o taa tɛgɛ.
+      hyp: O na mare la ka fɛ ma de ka a yelbie lantaa yɛlɛ puu ka o taa tɛgɛ.
+      cer: 0.283
+      wer: 0.6
+    '317':
+      text: Te maŋ tu la a yelbipeelε zie kyε maale yelbipaala.
+      hyp: Te maŋ tu la a yelbe peele zie kyɛ maale yelbe paala.
+      cer: 0.0976
+      wer: 0.5
+    '323':
+      text: A yelbipeelε ama la puori yelbipeelaa ane niŋe yelbipeelaa.
+      hyp: A yelbipelaa ma la puori yelbipelaa ane niŋeyelbipelaa.
+      cer: 0.08
+      wer: 0.5556
+    '326':
+      text: Puori yelbipeelaa maŋ wa la kyε ko a yelbiri meŋa.
+      hyp: Puori yelbipelaa maŋ wa la kyɛ ko a yelbiri meŋaa.
+      cer: 0.075
+      wer: 0.3
+    '328':
+      text: Niŋe yelbipeelaa la ona naŋ tu yelbiri.
+      hyp: Biberaa la a onaŋ naŋ tu yelbiri.
+      cer: 0.375
+      wer: 0.5714
+    '329':
+      text: Niŋe –puori yelbipeelaa; a ŋaa,yelbipeelε ayi maŋ gyilli la a yelbinyaga.
+      hyp: Neŋɔmɔ puori yelbi-pie la, aŋa a yelbi-pie la ayi maŋ gyilli la a yelbinyaga.
+      cer: 0.1356
+      wer: 0.5455
+    '331':
+      text: Ghana kͻkͻɛ yaga zaa ba taa a niŋe-puori yelbipeelaa ŋa.
+      hyp: Gana kɛkɛɛ yaga zaa ba taa a niŋe puori yelbi-pie la a ŋa.
+      cer: 0.0889
+      wer: 0.7
+    '336':
+      text: Yelbimaale kpɛglɛ; a kpɛglɛ ama la maŋ maale yelbipaalaa ka o pare e paalaa
+        meŋ.
+      hyp: Yelmi-maalee kpɛɛlɛ, a kpɛɛlɛ ama la a maŋ maalee yelmi-paalaa ka a o pare
+        e paalaa meŋ.
+      cer: 0.125
+      wer: 0.4667
+    '339':
+      text: A kpɛglɛ ŋa maŋ ŋmaa la yelbipaalaa yi ne a yelbinyaga poɔ.
+      hyp: A kpɛgele ŋa maŋ ŋmaa la yelbe paalaa yi ne a yelbe nyaga poɔ.
+      cer: 0.0851
+      wer: 0.4167
+    '342':
+      text: A ŋaa eŋ o maŋ kyilli la a yelbiri tontonne yoŋ, kyɛ o ba kyille a yelbiri
+        zage.
+      hyp: Eŋaa eŋ O maŋ kyilli la a yelbiri tontonne yoŋ, kyɛ O ba kyille a yelbiri
+        zage.
+      cer: 0.0164
+      wer: 0.1111
+    '343':
+      text: Yelbileɛmaale kpɛglɛ ba maŋ kyilli a yelbiri pare zaa, azuiŋ o ba ŋmaara
+        yelbipaala.
+      hyp: Yelbiliya maale kpɛge lɛ, ba maŋ kyille a yelbiri parezaa, azuiŋ o baŋ
+        ŋmaaraa yelbi-paala.
+      cer: 0.1014
+      wer: 0.6429
+    '348':
+      text: A yelbiri Saa, pare ba kyilli.
+      hyp: A yɛlbiri saa, pare bakyilli.
+      cer: 0.0435
+      wer: 0.5
+    '349':
+      text: Saamine e la saa yaga.
+      hyp: Saa mine e la Saa yaga.
+      cer: 0.0
+      wer: 0.4
+    '350':
+      text: Yε zeŋ bayiri a di dεmε kyaareyelbipeelε parεε zaa yε naŋ baŋ.
+      hyp: Yɛ zeŋ ba yiri a de demɛ kyaare yelbi-peele paree zaa yɛ naŋ baŋ.
+      cer: 0.16
+      wer: 0.75
+    '353':
+      text: Kͻkͻre zaa taa la lεnεε yelbipeelε naŋ tona.
+      hyp: Hɔŋ ka, zaa taa la lɛ ne yelbi-peele naŋ tona.
+      cer: 0.2778
+      wer: 0.625
+    '354':
+      text: A yelbipeelε tontonne mine la ama naŋ tu.
+      hyp: A yelbi-peɛlɛ tontonne mine la a ma naŋ tu.
+      cer: 0.0606
+      wer: 0.375
+    '355':
+      text: A maŋ maale la yelbipaala yi yelbinyaga poͻ.
+      hyp: Hɛ maŋ maale la yelbi-paala yi yelbinyaga poɔ.
+      cer: 0.0833
+      wer: 0.25
+    '357':
+      text: A maŋ kyilli la yelbiri zagre; aseŋ.
+      hyp: E maŋ kyili la yelbiri zagre, a seŋ.
+      cer: 0.0714
+      wer: 0.5714
+    '359':
+      text: Yelbipeelε maŋ leεre eroŋ wagre kaŋa eŋ wagre yuo poͻ.
+      hyp: yɛlbepeɛlɛ maŋ leɛrɛ eroŋ wagre kaŋ eŋ wagre yuo poɔ.
+      cer: 0.1818
+      wer: 0.4
+    '361':
+      text: A maŋ kyilli la yelbiri eŋ yageroŋ.
+      hyp: ba maŋ kyilli la yelbiri eŋyageroŋ.
+      cer: 0.0357
+      wer: 0.4286
+    '374':
+      text: Wuli yelbipeelε a yelbie ama poͻ kyε wuli yelbipeelɛ parεε na a naŋ e.
+      hyp: Wuli yelbi-peele a yelbie ama pɔge kyɛ wuli yelbi-peele paree na a naŋ
+        e.
+      cer: 0.1429
+      wer: 0.3571
+    '375':
+      text: De yelbipeelε eŋ a yelbie ama poͻ ka leε yuori yelbie bee bigiruu yelbie.
+      hyp: Yɛ yelbi-peelɛɛ eŋ a yelbie a ma po ka leɛ yuori yelbie bee begiru yelbie.
+      cer: 0.1356
+      wer: 0.5
+    '376':
+      text: Gbulo poͻ, de a sazu yelbipeelε parεε ama n maale ne yelbipaala.
+      hyp: Bilopoŋ de Asazu yelbipille paree a maŋ e maale ne yelbipala.
+      cer: 0.2157
+      wer: 0.75
+    '380':
+      text: Te maŋ de la tagemarre sεge ne yelkparema bee yellerema.
+      hyp: Te maŋ di la tɛge mare sɛgene yelkparema bee yelrema.
+      cer: 0.1304
+      wer: 0.5
+    '381':
+      text: A ŋaa maŋ soŋ la ka te ta puuli yεlɛ.
+      hyp: A ŋaa maŋ soŋ la ka te ta puuli yɛlɛ.
+      cer: 0.037
+      wer: 0.1
+    '384':
+      text: A yelbie ama be la te bebiri zaa dεmε diibu poͻ.
+      hyp: A yelbie ma be la te bebiri, zaa deme diibu poɔ.
+      cer: 0.1081
+      wer: 0.2727
+    '385':
+      text: O zanne la azuiŋ o baŋ la boma.
+      hyp: O zanne la, a zuiŋ O baŋ la boma.
+      cer: 0.0
+      wer: 0.25
+    '387':
+      text: Te taa tagemarre parεε yaga Dagaare poͻ.
+      hyp: Te taa tagmare pare yaga da gaa e poɔ.
+      cer: 0.1818
+      wer: 0.8571
+    '389':
+      text: Teseŋ, yuori ne yoe yelbie ane yelgbͻge ane yelgbͻgere.
+      hyp: Te sayŋ, “Yuori ne yoe yelbie ane yelgbegir ane yelgbegir.”
+      cer: 0.1778
+      wer: 0.4444
+    '390':
+      text: Sentaa Sentaa tagemarre naŋ maŋ tͻnne yelbie ane yelŋmaara.
+      hyp: seŋ taa te ŋmɛre naŋ maŋ te ne yelbie ane yɛŋmaara.
+      cer: 0.32
+      wer: 0.7778
+    '395':
+      text: Sentaa tagemarre naŋ maŋ tͻnne Yelgbͻge yeme ane yelgbͻge sommeŋa taa.
+      hyp: Sentaa tagemare naŋ maŋ tenne yɛlgboe, yɛŋmɛ ane yɛlgboe sommɛ ŋa taa.
+      cer: 0.2034
+      wer: 0.6364
+    '397':
+      text: Ka teneŋ di baare, te na gbiri la.
+      hyp: ka te naŋ de baare. Te na gbiri la
+      cer: 0.08
+      wer: 0.375
+    '398':
+      text: Ka anaŋ na toͻ, taa emmaaroŋ ne neε zaa.
+      hyp: ka a naŋ na to ta e maaroŋ ne nezaa.
+      cer: 0.1333
+      wer: 0.8889
+    '401':
+      text: A yuori wulo la a ayi zaa la maŋ tage yelbie bee yεlε lantaa.
+      hyp: Yuori wullo la, a ayi zaa la maŋ taa yelbie bee yeli lantaa.
+      cer: 0.1277
+      wer: 0.2857
+    '404':
+      text: A naa naŋ kpi, n nyε la Naaŋmene.
+      hyp: A naa naŋ kpie, N nyɛ la Naaŋmen.
+      cer: 0.125
+      wer: 0.375
+    '405':
+      text: A tagemarre ama la maŋ tͻnne yelgbͻge sommeŋa ane yelgbͻge yieme.
+      hyp: a taŋ mare a ma la maŋ tenne yelgbaki sommi ŋa ane yelgbaki-yemi.
+      cer: 0.2407
+      wer: 0.9091
+    '410':
+      text: A maŋ soŋ la ka te de yelgbͻgre bee yelŋmaara lantaa.
+      hyp: Te maŋ soŋ la ka te de yelgbɛre be yelmaara lantaa.
+      cer: 0.1429
+      wer: 0.3636
+    '415':
+      text: Begε fẽẽ la be be kyaare tagemarre yεlε maaloo poͻ.
+      hyp: Bɛgɛ fẽẽ la beebe kyaare tage mare yeli maaloo poɔ.
+      cer: 0.1707
+      wer: 0.7
+    '416':
+      text: Tagemarre tona la yεmbulo, yel-erre, ane teεroŋ.
+      hyp: tonɛ la yelboloŋ, yel-erre ane teɛrɔŋ.
+      cer: 0.4211
+      wer: 0.5714
+    '417':
+      text: Te maŋ de la tagemarre pore ne boma (yoe).
+      hyp: Temãã di la tagemare pore ne boma, yoe.
+      cer: 0.129
+      wer: 0.4444
+    '418':
+      text: Yelbie maaloo sobie la lεnεε te naŋ maŋ tu a maale yelbipaala a kͻkͻre
+        poͻ.
+      hyp: Yelbie maaloo sobie la, lɛnee te naŋ maŋ tu a maala yelbi paala a yekere
+        poɔ.
+      cer: 0.1333
+      wer: 0.4
+    '419':
+      text: Yelbie maaloo sobie e la yaga.
+      hyp: Yelbie maaloo sobie e lɛ yaga.
+      cer: 0.0417
+      wer: 0.1667
+    '420':
+      text: Kͻkͻre na baŋ tu la sobie ayi bee ata a maale ne yelbie.
+      hyp: Kaŋkyero samaale ne yelibɛdeɛ anya pime faa, ba kyɛre bɛrɛ bɛrɛ bɛrɛ bɛrɛ
+        bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ
+        bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ
+        bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ
+        bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ
+        bɛrɛ bɛrɛ bɛrɛ bɛrɛ bɛrɛ b
+      cer: 7.1163
+      wer: 6.0769
+    '421':
+      text: A sobie mine la fͻͻmaroo, yelbikparema, kyεŋmaabo, pεmmo, puuluu, leεroo,
+        amk.
+      hyp: A sobiimine la femaroo, yelbikparema, kyɛŋmaabo, pɛmmo, puuluu, leeroo,
+        amka,
+      cer: 0.1148
+      wer: 0.6364
+    '424':
+      text: Wola ka te maŋ pore bompaaba yoe?
+      hyp: Wola ka te maŋ pore bompaabaa yɔɛ?
+      cer: 0.1154
+      wer: 0.2857
+    '426':
+      text: Aŋ maŋ pore a yoe?
+      hyp: A ŋmaŋpure ayoŋ.
+      cer: 0.1538
+      wer: 1.0
+    '428':
+      text: A yelbie naŋ kpare taa na baŋ yi la yelbie zagere tεεtεε poͻ.
+      hyp: A yelbie naŋ kparre taa na baŋ yi la yelbie zagre teɛteɛ poɔ.
+      cer: 0.1458
+      wer: 0.3077
+    '431':
+      text: Yuori+eroŋ na baŋ kpare la taa.
+      hyp: Yurɛtiroŋ na baŋ kparre la taa.
+      cer: 0.2083
+      wer: 0.3333
+    '436':
+      text: Bͻ a yelbie na naŋ be a yelbikpara poͻ a wuli a karendie zaa.
+      hyp: a e a bie na naŋ be a yelbikpara poɔ a wuli a karendie zaa.
+      cer: 0.1064
+      wer: 0.2857
+    '441':
+      text: Te naŋ baŋ yeli ka yelbi-ŋmaara.
+      hyp: Te naŋ baŋ yeli ka yɔɔbi ŋmaara
+      cer: 0.08
+      wer: 0.3333
+    '454':
+      text: O maŋ soŋ la ka te pore yelpaala bee bompaala yoe.
+      hyp: Koɔ maŋ soŋ la ka a te poore yelpaalaa bee bompaalaa yoɔ yɛ.
+      cer: 0.2308
+      wer: 0.6364
+    '455':
+      text: O maŋ soŋ la ka te baŋ yelbie yiziiri.
+      hyp: Oma soŋ la ka te baŋ yelbie e ziiri.
+      cer: 0.1034
+      wer: 0.4444
+    '459':
+      text: Wola ka te maŋ e a maale yelbipaala Dagaare poͻ?
+      hyp: Wola ka te maŋ e a maale yelbipaala dagare poɔ?”
+      cer: 0.0526
+      wer: 0.2
+    '460':
+      text: Pore yelbipeelε parεε naŋ be Dagaare poͻ.
+      hyp: pɔre-yelbi-peele paree naŋ be dagare poɔ.
+      cer: 0.1765
+      wer: 0.7143
+    '461':
+      text: Wuli yelbipeelε anaare Dagaare poͻ.
+      hyp: Wuri yelpeɛlɛ anaare dagare poɔ.
+      cer: 0.2333
+      wer: 0.8
+    '462':
+      text: Di dεmε kyaare yelbipeelε anaare Dagaare poͻ.
+      hyp: di dɛmɛ kyaare yelbi-peelɛ anaare dagaare po.
+      cer: 0.1053
+      wer: 0.4286
+    '463':
+      text: Wuli yelbipeelε a yelbie ama poͻ kyε wuli a yelbipeelε parεε na a naŋ
+        e.
+      hyp: “Wuli yɛrbipeli, a yelbie ama po, kyɛ wuli a yɛrbipeli palee na a naŋ e.”
+      cer: 0.2281
+      wer: 0.3333
+    '465':
+      text: Wuli tagemarre parεε Dagaare poͻ.
+      hyp: Wuli ta komare pare yɛ dagare poɔ.
+      cer: 0.2857
+      wer: 1.2
+    '466':
+      text: Wɛle a tagemarre parεε na fo naŋ wuli.
+      hyp: wɛle a tage mare pare na fo naŋ wuli.
+      cer: 0.1
+      wer: 0.375
+    '467':
+      text: Toͻ soͻmaa eŋ a tagemarre puliŋ a yεlε ama naŋ tu a puliŋ.
+      hyp: kyɛ sɔ maa a yɛ tage mare puliŋ a yele a ma naŋ tu a puliŋ.
+      cer: 0.2444
+      wer: 0.6923
+    '471':
+      text: Wuli yelbie maaloo sobie parεε ata Dagaare poͻ.
+      hyp: Nisi yelbie maaloo sobie pare ata dagare poɔ.
+      cer: 0.1795
+      wer: 0.5
+    '473':
+      text: Bͻ yelbie maaloo sobie parεε na be a sεgere ŋa naŋ tu poͻ.
+      hyp: Bii bie maaloo sobie pareɛ na be a sɛgre ŋa naŋ tu pa.
+      cer: 0.2222
+      wer: 0.3846
+    '474':
+      text: Zenε, mansumo e la nimizeε te zannoo poͻ.
+      hyp: Zɛne, mansomo e la nimizie, te zannoo poɔ.
+      cer: 0.1875
+      wer: 0.5
+    '479':
+      text: Te pãã maŋ soore la, boŋ kyεre?
+      hyp: Te pãã maŋ soore la, “Boŋ kyɛre?”
+      cer: 0.0435
+      wer: 0.1429
+    '486':
+      text: Yelŋmaa la yelbiri bee yelbie naŋ kyͻŋ tutaa a taa teɛroŋ yeni kͻkͻre
+        merε poͻ.
+      hyp: yelbiri bee yagebie naŋ kyɛŋ tutaa a taa teɛroŋ yɛ ne kikere mere poɔ.
+      cer: 0.2969
+      wer: 0.6
+    '488':
+      text: Yelgbͻge la yelbie naŋ kyͻŋ tu taa a waa yεlε.
+      hyp: Yelbege la yelbie naŋ kyɛŋ tu taa a waa yele.”
+      cer: 0.1389
+      wer: 0.3
+    '493':
+      text: De fo peɛrenyɛre pɛre ne fo gbuli deni.
+      hyp: di fo peɛre nyɛre pɛre ne fo gbili deni.
+      cer: 0.0645
+      wer: 0.5
+    '494':
+      text: Yelŋmaa la yebiri bee yelbie naŋ kyͻŋ tutaa soŋ a kͻkͻre merε poͻ.
+      hyp: Yɛlmaa la yɛbiri bee yelbie naŋ kyɛŋ tu taa soŋ a kɛkeremerepo.
+      cer: 0.1509
+      wer: 0.6154
+    '496':
+      text: A yelbirizu maŋ wuli a yelŋmaa yuori.
+      hyp: ka yɛrebiri zu maŋ wuli a yɛ ŋmaa yuori.
+      cer: 0.2
+      wer: 0.7143
+    '499':
+      text: Yelŋmaa parɛɛ waa la anuu.
+      hyp: Yelmaa parɛɛ waa la anuu.
+      cer: 0.0476
+      wer: 0.2
+    '503':
+      text: Bigiruu yelŋmaa ne bigiruu yelbie yelŋmaa waa la tɛɛtɛɛ.
+      hyp: Bigiruu yelŋmanee, bigiruu yelbie yelŋmaa waa la teɛ teɛ.
+      cer: 0.0851
+      wer: 0.4444
+    '505':
+      text: Aseŋ ‘a gane na naŋ dͻgele a tabol zu’.
+      hyp: Aseŋ, a gane na naŋ digle a tabol zu.
+      cer: 0.0714
+      wer: 0.1111
+    '508':
+      text: Yuori yelŋmaa maŋ taa la yuori yelbiri bee yoleɛrɛ yelbie ka o e a yelbirizu.
+      hyp: Yuori yelŋma maŋ taa la yuori yelbiri bee yoleɛre yelbie ka o e a yelbiri
+        zu.
+      cer: 0.0323
+      wer: 0.2667
+    '510':
+      text: Yelŋmaara mine la tu a puliŋ.
+      hyp: Yelŋmaara mine la tu a puliŋ kyɛ.
+      cer: 0.1304
+      wer: 0.1667
+    '515':
+      text: Fo na baŋ nyɛ la yebiri yeme ka a are ko yuori yelŋmaa.
+      hyp: Fo na baŋ nyɛ la yɛbiri yemi ka a are ko yuori yeli ŋma.
+      cer: 0.0952
+      wer: 0.3077
+    '522':
+      text: Pegeraa la yelbie bee yelŋmaa naŋ maŋ tere duori kpɛlɛ kyaare yuori yelbiri
+        zu.
+      hyp: Kiraa la yelbie bee yelŋmaa naŋ maŋ tere duori kpɛlɛ kyaare yuori yelbiri
+        zu.
+      cer: 0.0615
+      wer: 0.0714
+    '523':
+      text: Pegeraa na naŋ maŋ wa kyɛ ko a yelbiri zu la ka te boͻla puori pegeraa.
+      hyp: Pegaraa na naŋ maŋ wa kyɛ ko a yelbiri su la kaa te boma puori pegaraa.
+      cer: 0.1091
+      wer: 0.3125
+    '528':
+      text: Eroŋ yelŋmaa la yelŋmaa naŋ taa eroŋ yelbiri ka o e a yelbiri zu.
+      hyp: Aroon yɛŋmaa la yɛŋmaa naŋ taa Aroon yelbiri ka o e a yelbiri soŋ.
+      cer: 0.2549
+      wer: 0.3571
+    '531':
+      text: Eroŋ yelŋmaa naŋ taa eroŋ yoŋ yelbiri meŋ waa la eroŋ yelŋmaa.
+      hyp: Eroŋ yelŋmaa naŋ taa eroŋ, yoŋ yelbiri meŋ wa la eroŋ yelŋmaa.
+      cer: 0.02
+      wer: 0.0833
+    '534':
+      text: Eroŋ meɛroŋ yeldemanne mine naŋ kyaare a sazu eroŋ yelŋmaara ama la VP-VP.
+      hyp: Eruŋ ŋmeɛroŋ yaldemane mine naŋ kyaare a sazu Eruŋ yelŋmaaraa ama la vi
+        pi-vi pi.
+      cer: 0.1667
+      wer: 0.6154
+    '535':
+      text: Eroŋ yelŋmaa naŋ taa eroŋ kpɛgelaa, eroŋ ane a parepegeraa.
+      hyp: Yɛroŋ yelŋmaa naŋ taa, eroŋ kpɛgelaa, eroŋ ane a parepegeraa,
+      cer: 0.0417
+      wer: 0.1
+    '546':
+      text: Yelŋmaa eronwuluu yelbiri naŋ waa a yelbiri zu la eronwuluu yelŋmaa.
+      hyp: Yelŋmaa eroŋmulo yelbiri naŋ waa a yelbiri su la eroŋmulo yelŋmaa.
+      cer: 0.1579
+      wer: 0.2727
+    '555':
+      text: Bigruu yelŋmaa maŋ taa la bigruu yelbiri ka o e a yelbiri zu.
+      hyp: Begruu yelmaa maŋ taa la begruu yelbiri ka o e a yelbiri su.
+      cer: 0.0833
+      wer: 0.3077
+    '556':
+      text: O maŋ pege la yoe yelbie.
+      hyp: O maŋ pɛge la yoe yelbie.
+      cer: 0.0526
+      wer: 0.1667
+    '557':
+      text: Bigruu yelŋmaa na baŋ taa la bigruu yelbiri yoŋ bee bigruu ne yelbie mine
+        naŋ pege o.
+      hyp: Bigruu-yelmaa na baŋ taa la bigruu yelbiri yoŋ bee bigruu ne yelbie mine
+        naŋ pɛge o.
+      cer: 0.0294
+      wer: 0.1765
+    '559':
+      text: O maŋ taa la aroozie yelbiri naŋ waa a yelbiri zu.
+      hyp: O maŋ taa la arozeɛ yelbiri naŋ wa a yelbiri so.
+      cer: 0.1538
+      wer: 0.2727
+    '565':
+      text: A yelnimizeɛ la a yelbi-zu.
+      hyp: A yelmenye la a yelbizuŋ.
+      cer: 0.3333
+      wer: 0.4
+    '568':
+      text: A sazu yeldemannaa a yuori yelŋmaa la a yelbiri na naŋ soͻ.
+      hyp: Saazu yeldemana, a yɔɔrɛ yelmaa la, a yelbore na naŋ sɔ.”
+      cer: 0.2553
+      wer: 0.5833
+    '570':
+      text: A yelbiri-zu a eroŋ yelŋmaa poͻ la gaa.
+      hyp: A yɛlbiri zu a eroŋ yelmaa poɔ la gaa.
+      cer: 0.1
+      wer: 0.5
+    '576':
+      text: A maŋ soŋ manne la yεlε pare ka o kyaane velaa.
+      hyp: Da maŋ soŋ manne la yeli pare ka o kyaane valaa.
+      cer: 0.1111
+      wer: 0.2727
+    '584':
+      text: Te naŋ wa ta,te gaa zeŋ la bɛ-teɛ kaŋa naŋ taa maaroŋ soŋ zaa puliŋ.
+      hyp: Te naŋ wa taa, te gaa zeŋ la bɛteɛ kaŋ naŋ taa maaroŋ soŋ zaa puleŋ.
+      cer: 0.0588
+      wer: 0.2667
+    '588':
+      text: Ŋmenaa naŋ wa posentaa te da gaa zeŋ la a pɛnne.
+      hyp: Ŋmenaa naŋ wa posentaa te da gaa zeŋ la a pɛnne
+      cer: 0.0
+      wer: 0.0
+    '590':
+      text: A yɛ gbulo poͻ, yɛ wɛle a yelŋmaara parɛɛ eŋ a zagere ama (a.
+      hyp: A yɛ gbulo poŋ, yɛ wɛle a yelŋmaara parɛɛ eŋ a zagere ama saa.
+      cer: 0.0667
+      wer: 0.1429
+    '596':
+      text: A saseɛ poͻ duoro ŋa kyaare la yegbͻgere.
+      hyp: Ka saseɛ poŋ duoro ŋa kyaare la yi begirre.
+      cer: 0.2121
+      wer: 0.5
+    '599':
+      text: Yelgbͻge la yelbie naŋ kyͻŋ tutaa a taa teɛroŋ yeni kyɛ taa erɛ ane eroŋ.
+      hyp: Yɛlgi la yelbie naŋ kyɛŋ tu taa a taa teɛroŋ yeni kyɛ taa erɛ ane eroŋ.
+      cer: 0.1034
+      wer: 0.2667
+    '605':
+      text: A sazu yeldemanne ama poͻ, a yɛlɛ kaŋa zaa maŋ taa la erɛ ane eroŋ.
+      hyp: Ka sazu yeldemanne a ma po, a yɛlɛ kaŋazaa maŋ taa la erɛ ane eroŋ.
+      cer: 0.0392
+      wer: 0.4
+    '608':
+      text: Yelgbͻgere parɛɛ ayi la be be.
+      hyp: Yelbɛgre parɛɛ ayi la bebe.
+      cer: 0.125
+      wer: 0.5
+    '620':
+      text: Kpɛ entanɛt poͻ a bͻ yelgbͻge-sommeŋa parɛɛ anaare.
+      hyp: Ka pɔge a lee da a banaare yɛ te daare.
+      cer: 0.7381
+      wer: 1.125
+    '621':
+      text: De fo yelnyɛre wuli fo tͻ.
+      hyp: di fo yelnyɛre wuli fo te.
+      cer: 0.1
+      wer: 0.3333
+    '622':
+      text: De manne ne ama naŋ tu a puliŋ .
+      hyp: Dɛ manne ne ama naŋ tuo a puliŋ naane a doore.
+      cer: 0.5652
+      wer: 0.625
+    '623':
+      text: Yelgbͻge-sommeŋa taa la zagere anaare a yi parebammo eŋɛ.
+      hyp: Yɛlge so meŋɛ taa la zagre anaare a yi parebammo eŋɛ.
+      cer: 0.1489
+      wer: 0.4444
+    '628':
+      text: N saaŋkoma gbiri la zaameŋ tensoŋa.
+      hyp: Nensaakoma gbiri la zaa meŋ tensoŋ ŋa.
+      cer: 0.1379
+      wer: 1.0
+    '630':
+      text: Dakoraa maŋ gaa la weɛ Yͻdaare zaa.
+      hyp: O da maŋ gaa la weɛ yi daare zaa.
+      cer: 0.2143
+      wer: 0.5714
+    '634':
+      text: Fo naŋ baŋ pore la sooroo yelbie mine Dagaare poͻ?
+      hyp: Fo naŋ baŋ pore la sooroo yelbiɛ mine dagare poɔ.
+      cer: 0.075
+      wer: 0.3
+    '645':
+      text: N na gaa la Loho sɛre kyɛ wa.
+      hyp: Ni na gaa la, loho sɛre kyɛ wa?”
+      cer: 0.0476
+      wer: 0.125
+    '647':
+      text: Yelgbͻge-yieme taa la tontonne yaga anaŋ tona yɛlɛ poͻ.
+      hyp: Yɛlgbig-yeme taa la tontonne yaga a naŋ tonɔ yɛlɛ poɔ.
+      cer: 0.1333
+      wer: 0.5556
+    '655':
+      text: Ayͻͻ kanne ne la a gane onaŋ o saa naŋ ko o.
+      hyp: Ahistane naɛ la a gɛne ɔ na o saa naŋ ko ɔ.
+      cer: 0.3438
+      wer: 0.5833
+    '664':
+      text: Yuori yelgbͻge naŋ are ko erɛ.
+      hyp: Yoɔre yelge naŋ are ko erɛ.
+      cer: 0.25
+      wer: 0.3333
+    '665':
+      text: Yuori yelgbͻge naŋ tona erɛ toma ( eterɛ bee ekyaara) aseŋ.
+      hyp: Yuori yelgege naŋ tona erɛ toma, e terɛ bee e kyaaran a seŋ.
+      cer: 0.0652
+      wer: 0.7
+    '676':
+      text: De fo nͻ-iraa wuli fo karembi-tͻ.
+      hyp: The funira wuli fo, Karembiti.
+      cer: 0.24
+      wer: 0.6667
+    '678':
+      text: A yɛ gbulo poͻ,manne wuli yelgbͻgere ayi parɛɛ.
+      hyp: A yɛ gbulo po, mane wuli yelbigirɛ ayi parɛɛ.
+      cer: 0.1579
+      wer: 0.375
+    '680':
+      text: Yɛ zeŋ ayiri a kanne a dɛmmo ŋa naŋ tu a puliŋ.
+      hyp: Yɛ zeŋ a yiri a kanne a dɛmmo ŋa naŋ tu a puliŋ.
+      cer: 0.0
+      wer: 0.1667
+    '683':
+      text: Yɛ di dɛmɛ kyaare ne a yɛ nͻ-irri.
+      hyp: Yɛ di dɛmɛ kyaare ne a yɛ niiri.
+      cer: 0.08
+      wer: 0.125
+    '687':
+      text: Kͻŋ naŋ da kpɛ ma gaali zuiŋ, N meŋ da la a mui mine ͻͻ.
+      hyp: Noba ba nyɛ, noba ba nyɛ, noba te ka ba te dɛ ŋmaa te na, nɔŋ po te na,
+        N ɔŋ foɛŋ te te mɛ, maa mɔ te teene ne bibiiri dɛ zanta. A nɔŋ po te na boɔ
+      cer: 2.15
+      wer: 2.4667
+    '693':
+      text: Kaa iri a yelgbͻgere zagere fo taaba yeldemannewulli poͻ.
+      hyp: ka a iri a yeli gbegeri zagre fo taaba yeldemannoo wulli poɔ.
+      cer: 0.1458
+      wer: 0.8889
+    '697':
+      text: A karembie kanne la a gane.
+      hyp: Karembie kanne la a gane.
+      cer: 0.0476
+      wer: 0.1667
+    '698':
+      text: A dͻͻ gbiri la velaa.
+      hyp: A dɔŋ gbiri la velaa,
+      cer: 0.125
+      wer: 0.2
+    '699':
+      text: O maŋ wuli yelbie kyɛŋmaabo baare la.
+      hyp: O maŋ wuli yelbie kyɛ ŋmaabo baare la.
+      cer: 0.0
+      wer: 0.2857
+    '701':
+      text: O maŋ be la ogibu yelŋmaa bee yɛlɛ baaraa.
+      hyp: Fo maŋ be la Ogebu yelmaa bee yɛlɛ baara.
+      cer: 0.1212
+      wer: 0.4444
+    '704':
+      text: O maŋ wɛle la boma yoe.
+      hyp: O maŋ wɛle la boma yoe.
+      cer: 0.0
+      wer: 0.0
+    '705':
+      text: A yoe na baŋ waa la yelbie, yelŋmaara bee yegbͻgere.
+      hyp: A yoe na baŋ waa la yelbie, yɛ ŋmaara be yɛ gbegiri.
+      cer: 0.1707
+      wer: 0.5
+    '711':
+      text: A gan-paale, sͻgelaa na bͻrɛɛ la.
+      hyp: A gampaale, sɛge la a na berɛɛ la
+      cer: 0.12
+      wer: 0.8333
+    '712':
+      text: N da la yi-kore, kpoŋ, doͻre kaŋa.
+      hyp: N da la yikore kpoŋ dori kaŋ.
+      cer: 0.125
+      wer: 0.2857
+    '713':
+      text: Te maŋ de o la piili ne boma yoe porebo, yeldemanne bee yɛlɛ mannoo.
+      hyp: Te mae de o la piili ne boma yuoporebo. Yeli te manne bee yɛlɛ mannoo.
+      cer: 0.0943
+      wer: 0.3571
+    '717':
+      text: N taa la gyenno bieu; n na kanne la ka zie te nyaa.
+      hyp: N taa la gyɛnnoo bieu. N na kanne la ka zie te nyɛ a
+      cer: 0.0811
+      wer: 0.2308
+    '718':
+      text: O maŋ wɛle la boma yoe naŋ kyͻŋ tu taa.
+      hyp: O ma wɛle la boma yoe naŋ kyɛŋ tu taa.
+      cer: 0.069
+      wer: 0.2
+  source: evaluated
+- model: ghananlpcommunity/ghana-tts-72k
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  cer: 0.2383
+  wer: 0.5921
+  score: 0.2383
+  samples: 200
+  valid: 200
+  avg_seconds: 2.31
+  judge:
+    model: KhayaAI/khaya-asr-v3
+    cer_on_real_speech: 0.1461
+  entries:
+    '3':
+      text: A wɛlemɛ ŋa wulo la kͻkͻtɛgɛ, kͻkͻtɛgɛ meɛroŋ ane kͻkͻgaale parebammo.
+      hyp: A wɛlɛ mɛ ŋa wullo la ketɛgɛ, ki kitɛgɛ meɛroŋ ane ki kigaali pare ba moɔ.
+      cer: 0.2069
+      wer: 1.0
+    '10':
+      text: Fo na zanne la yelbipaala meɛbo gͻͻloŋ.
+      hyp: Fo na zaŋ de la yelbipaala meebo guloŋ.
+      cer: 0.1562
+      wer: 0.5714
+    '24':
+      text: Aŋa na baŋ e la ka sɛgebinyaŋene ba wa tu a sɛgebidaa puori taŋtaŋ lɛ.
+      hyp: Ba ŋa na baŋ e la ka sɛge binyaŋenne ba wa tu a sɛge bidaa puori tantaŋ
+        lɛ.
+      cer: 0.0545
+      wer: 0.4667
+    '25':
+      text: Yeldemannewulli mine la ama naŋ tu a puliŋ.
+      hyp: Yeldenmanoo liimine la a ma naŋ tu Apoliŋ.”
+      cer: 0.2
+      wer: 0.75
+    '31':
+      text: O men maŋ soŋ la zannezanna ka o baŋ yelbie tɛgɛ bee pare.
+      hyp: Pɔge meŋ maŋ soŋ la a zanne zanna ka a o baŋyelbie tɛgɛɛ be pare.
+      cer: 0.2
+      wer: 0.7692
+    '33':
+      text: A sazu yeldemannewulli ama poͻ , a yelbi-ŋmaa kaŋa zaa boͻloo are ko la
+        kͻkͻtɛgɛ.
+      hyp: A sazu yeldɛma neolii a ma poŋ ta lɛ ne wa gyi gyi, a yelbi-ŋmaa kaŋ zaa
+        boluu are ko la ka tɛgɛ.
+      cer: 0.4219
+      wer: 1.0714
+    '34':
+      text: A yelbiri kaŋ zaa wɛle eŋe la kͻkͻtɛgere.
+      hyp: A yelbiri kanzaa wɛle eŋɛ la ka te gɛrɛ.
+      cer: 0.2424
+      wer: 0.75
+    '37':
+      text: A ama maŋ baare ne la sεgebinyaŋaa.
+      hyp: A maŋ maa baare ne la, sege be nyɛ ŋa.
+      cer: 0.25
+      wer: 0.8571
+    '45':
+      text: Yeldemannewulli mine la tu a puliŋ.
+      hyp: Yaldɛmanoo le mine la tu a poliŋ.
+      cer: 0.3103
+      wer: 0.5
+    '48':
+      text: De fo meŋa yelbie manne wuli ne kͻkͻtɛgɛ muni.
+      hyp: de fo meŋa yelbie manne wuli Nikitɛgɛ muni.
+      cer: 0.1081
+      wer: 0.2222
+    '50':
+      text: Manne bigri kͻkͻtɛgɛ zagere Dagaare poͻ.
+      hyp: manna begre keketɛgɛ zagere dagare poɔ.
+      cer: 0.2059
+      wer: 0.8333
+    '51':
+      text: Manne wuli kͻkͻtɛgɛ meɛroŋ tͻna kyaare yelbie meɛbo.
+      hyp: Mɛ na wuli te te gɛmeɛroŋ kyɛ na kyaare yelbie meɛ boŋ.
+      cer: 0.2727
+      wer: 1.125
+    '55':
+      text: Kͻkͻtɛgɛ sɛgebidaare meŋ taa la kͻkͻgaale aŋa sɛgebinyaŋene naŋ taa lɛ.
+      hyp: Tɛgɛ sɛgebi daare meŋ taa la kiki gaale aŋa sɛgebi nyaŋnee naŋ taa lɛ.
+      cer: 0.1333
+      wer: 0.6364
+    '57':
+      text: Aseŋ, ka yelbiriŋ wa taa sɛgebinyaŋene ayi , o naŋ taa la kͻkͻtɛgɛ ayi
+        bee a gaŋ lɛ.
+      hyp: A seŋ, ka a yelbiriŋ wa, taa sɛge be-nyaŋene ayi dinyanoo eŋ harbi-ena
+        moɔ ayi eŋ waala taa, a za o naŋ taa la kiki-tege ayi bee a gaŋ lɛ.
+      cer: 0.6719
+      wer: 0.9412
+    '62':
+      text: Di dɛmɛ kyaare ne kͻkͻtɛgɛ Dagaare poͻ.
+      hyp: de dɛmɛ kyaare ne kaketɛgɛ da gaare po.
+      cer: 0.125
+      wer: 0.7143
+    '66':
+      text: E ka fo ne fo tͻ di dɛmɛ kyaare yelbiri kaŋa zaa kͻkͻtɛgɛ semmo.
+      hyp: e ka fo na fo ti, didɛmɛ kyaare yelbiri kaŋ zaa kyɛ keɛ kɛsemmo.
+      cer: 0.16
+      wer: 0.5714
+    '67':
+      text: Vɛŋ ka fo ne fo tͻ di dɛmɛ kyaare ne a yelbiri kaŋa zaa kͻkͻtɛgɛ meɛroŋ.
+      hyp: Vɛŋ ka fo ne fo tene kyɛ dendɛmɛ kyaare ne a yelbiri kaŋ zaa kyɛ tɛgɛ meeroŋ.
+      cer: 0.2321
+      wer: 0.4375
+    '68':
+      text: A yɛ gbuli na manne la a yɛlɛ a karendie poͻ.
+      hyp: A yɛ gbuli na manne la a yɛlɛ a karendie poɔ.
+      cer: 0.0294
+      wer: 0.0909
+    '69':
+      text: Dɛmɛ diibu ane peɛroo na be la be.
+      hyp: Dɛmɛ diibu ane peɛroo na be la be.
+      cer: 0.0
+      wer: 0.0
+    '70':
+      text: Soori ane Nyeraa da waa la zͻmenne.
+      hyp: Soori ane a yaa da waa la zemenne.
+      cer: 0.1429
+      wer: 0.4286
+    '71':
+      text: Ama, ba yel-erre da waa la tɛɛtɛɛ.
+      hyp: A maa ba yel-erre da waa la tɛɛtɛɛ.
+      cer: 0.04
+      wer: 0.2857
+    '79':
+      text: Yɛ di dɛmɛ kyaare ne a nͻ-iri.
+      hyp: Yɛ didemɛ kyaare ne a miri.
+      cer: 0.1364
+      wer: 0.4286
+    '89':
+      text: Ghana kͻkͻɛ mine yeldemannewulli la a ama naŋ tu a puliŋ.
+      hyp: Garake kɛgɛ, mine yɛdɛɛ mɛ ne wuli la, aa ma naŋ tu a puliŋ.
+      cer: 0.2609
+      wer: 0.7273
+    '96':
+      text: Kͻkͻgaale e la yelnimizeɛ kͻkͻre poͻ yi onaŋ taa tontɛɛtɛɛ kyaare pare
+        bammo.
+      hyp: ka a di le kateɛ̃ taŋ kɔge. Afeɛ ko o kpɔŋ maŋ neɛnɛ o wɔŋ, o bɔmɔ ta waa
+        seŋkpoŋ. Aŋa na yɔɔ yuo waŋ seŋ ka kɔkɔzo ba faa eŋ bɛnnoo, mɔɛ te ne o tambo
+        wɔŋ. A nobo kaŋ wɔɔŋ wa la daa wɔkɔŋ ba pɔge o. Kɔɔ te ka a moɔbo kɔŋ wɔɔ
+        o meŋ nɔ a tɔn wɔɔ faa tamoɔ a maa gyanama kpɔŋkɔŋ ka kpɔŋkɔŋ o ŋɔ a taa o
+        kpɔŋ.
+      cer: 2.9688
+      wer: 5.7692
+    '98':
+      text: Ama la yelbie bammo, kͻkͻre merɛ ane kͻkͻkpɛlɛ.
+      hyp: A maa la yelbie bammo, ki kɛrɛ miraa ne kɛkpɛlɛ.
+      cer: 0.2368
+      wer: 0.875
+    '100':
+      text: Te maŋ de la yelbie kɔkɔgaale wɛle ne yelbie pare tɛɛtɛɛ.
+      hyp: Tɛ meŋ de la yelbie kɔkɔgaale wɛle ne yelbie pare tɛɛtɛɛ.
+      cer: 0.0435
+      wer: 0.1818
+    '103':
+      text: Kaa a ama naŋ tu.
+      hyp: ''
+      cer: 1.0
+      wer: 1.0
+      empty_hyp: true
+    '106':
+      text: Kɔkɔre merɛ kɔkɔgaale la maŋ wa ne tɛɛtɛɛ a kɔkɔre yelibu poɔ.
+      hyp: Kɔkɔre merɛ kɔkɔgaale la, maŋ wa ne tɛɛtɛɛ a kɔkɔre yelbu poɔ.
+      cer: 0.02
+      wer: 0.0833
+    '110':
+      text: Kɔkɔgaale meŋ na baŋ wuli la tɛɛtɛɛloŋ kɔkɔkpɛlɛ naŋ be kɔkɔyeni poɔ.
+      hyp: Kɔkɔgaale meŋ na baŋ wuli la tɛtɛloŋ kɔkɔkpɛlɛ naŋ be kɔkɔyeni poɔ.
+      cer: 0.0351
+      wer: 0.0833
+    '111':
+      text: Kɔkɔgaale na baŋ wɛle la Dagaare ane Birfor yelbie mine.
+      hyp: Pɔkɔgaalɛɛ na baŋ wɛle la dagaare ane berefɔɔ yelbie mine.
+      cer: 0.1522
+      wer: 0.2
+    '115':
+      text: De fo meŋa yelbie manne wuli ne kͻkͻgaale pare bammo.
+      hyp: De fo meŋɛ yelbie manne wuli ne ki gaale parebama.
+      cer: 0.1395
+      wer: 0.4
+    '118':
+      text: Yɛ di dɛmɛ kyaare kͻkͻgaale a yɛ gbulo poͻ.
+      hyp: Yɛ de dɛme kyaare ka kagaalee a yɛ buluu poɔ.
+      cer: 0.2647
+      wer: 0.6667
+    '119':
+      text: Yɛ wuli yɛ karembitaaba yɛ nͻiraa.
+      hyp: Yɛ wulii yɛ karembitaaba yɛ e nyiraa.
+      cer: 0.1071
+      wer: 0.5
+    '120':
+      text: A yɛ gbulo poͻ, kyɛlle yelbie mine boͻloo Dagaare poͻ kyɛ e a ama naŋ
+        tu.
+      hyp: Ka yɛ gbulo po, kyɛlle yelbie mine buluu da gaare po kyɛ e a ama naŋ to.
+      cer: 0.1429
+      wer: 0.4375
+    '122':
+      text: Wuli a yelbie na yɛ naŋ kaa-iri kͻkͻtɛgɛ.
+      hyp: Wule a yelbie na yɛ naŋ ka a iri kiki tɛgɛ.
+      cer: 0.0938
+      wer: 0.75
+    '130':
+      text: A foͻlaa yeli la yɛlɛ kyaare ne yelbulo kaa-iribu yelyagesɛgeraa bee dɛmɛ
+        diibu poͻ.
+      hyp: Felaa yeli la yɛlɛ kyaare ne yelbuluu ka a erebu yeli a gye sɛgaraa bee
+        dɛmɛɛ diibu poɔ.
+      cer: 0.1739
+      wer: 0.8571
+    '131':
+      text: Fo na zanne la maa-eŋɛ ane kanne gaa tͻͻre kannoo.
+      hyp: Fo na zaŋ de la maa eŋɛ ane kanne gaa tere kannoo.
+      cer: 0.1026
+      wer: 0.5
+    '136':
+      text: Yelbuli la a yelyagesɛgeraa yelnyͻgeraa.
+      hyp: Gloŋ bulo wa a yelgaa yelŋaraa.
+      cer: 0.5429
+      wer: 1.0
+    '138':
+      text: Kannoo na baŋ waa la maa-eŋɛ bee kanne gaa tͻͻre.
+      hyp: O baŋ dɔga da baŋ waa la ŋmaa ŋɛ bɛ kanna gaa tere.
+      cer: 0.3947
+      wer: 0.9
+    '163':
+      text: O meŋ la kyaare la kannoo te naŋ de yɛmbulo eŋ.
+      hyp: O meŋ la kyaare la kanoo te naŋ de yɛmbulo eŋ.
+      cer: 0.0278
+      wer: 0.0909
+    '166':
+      text: A maŋ soŋ la ka yeli pare bammo kyaane.
+      hyp: Ba maŋ soŋ la ka yeli parebammo kyaane.
+      cer: 0.0333
+      wer: 0.3333
+    '171':
+      text: Yɛ zanne la yɛlɛ kyaare werewere kannoo ane va-funnoo a yuoni yeni poͻ.
+      hyp: Yɛ zaŋ de la yɛlɛ kyaare wɛrewɛre kannoo ane va-fonnoo a yuoni yeni poɔ.
+      cer: 0.1053
+      wer: 0.3846
+    '177':
+      text: O e la kannoo naŋ wulo yelbulo boͻbo yelyagesɛgeraa poͻ.
+      hyp: O e la ka nɔɔ naŋ wullo o yelbulo bobo yɛ leɛ gyisɛgraa poɔ.
+      cer: 0.2826
+      wer: 0.9
+    '182':
+      text: A kyɛ,fo maŋ kaa la a sɛgere fileu ana kyo-iri yelbi-bulo.
+      hyp: Kyɛ fo maŋ kaa la a sɛgɛre feluu a na kyɛ o iri yelbibuluŋ.
+      cer: 0.1591
+      wer: 0.9091
+    '185':
+      text: Kanne a yelyagesɛgeraa ŋa naŋ tu a puliŋ.
+      hyp: Gaa ne a yelgyɛgyɛɛ ŋa naŋ tu a poli,
+      cer: 0.3636
+      wer: 0.5
+    '186':
+      text: Kaa iri a yelbulo a yelyagesɛgeraa ŋa naŋ tu a puliŋ poͻ.
+      hyp: Kaa-seɛ, a yelbulo a yiele kaŋa naŋ tu a puliŋ poɔ.
+      cer: 0.3111
+      wer: 0.4167
+    '187':
+      text: De a yelbulo na fo naŋ nyɛ wuli fo karembitaa.
+      hyp: Dɛ a yelbuuro na fo naŋ nyɛ wuli fo karembetaa.
+      cer: 0.1111
+      wer: 0.3
+    '188':
+      text: N da nyɛ la yuomo anaare kyɛ ka n ma kpi.
+      hyp: N da nyɛ la, yuomo anaare kyɛ ka N ma kpi.
+      cer: 0.0
+      wer: 0.0
+    '191':
+      text: N baabo yɛlɛ da be la n dͻgereba nuuriŋ.
+      hyp: Aŋ baa boɔ-yɛlɛ da be la N dugro ba nuuriŋ.
+      cer: 0.1935
+      wer: 0.5556
+    '202':
+      text: N da binne la libie fẽẽfẽẽ a tõͻ gaa sakuuri.
+      hyp: N da binne la libie fenfèè a toŋ gaa sakuori.
+      cer: 0.2
+      wer: 0.3
+    '208':
+      text: A yɛ gbulo poͻ yɛ di dɛmɛ a kaairi a yelbulo a dɛmmo ŋa naŋ tu a puliŋ.
+      hyp: A yɛ gbulo po, yɛ di dɛmɛ a kaare, a yɛ buluu a dɛmo ŋa naŋ tu a puliŋ,
+      cer: 0.1509
+      wer: 0.2778
+    '209':
+      text: De a yelbulo fo naŋ kaairi wuli karendie biiri zaa.
+      hyp: Dɛ a yɛre bulo fo naŋ kaare wuli karendie biiri zaa.
+      cer: 0.1463
+      wer: 0.4
+    '218':
+      text: Ama, gbɛɛ yaga noͻre sagebo maŋ soŋ la ka nyͻvore yɛlɛ tori.
+      hyp: Ama, bɛɛ yaga a nore sagebo mansoŋ la kannyɛvore yɛlɛ tori.
+      cer: 0.1277
+      wer: 0.5833
+    '221':
+      text: O maŋ soŋ la ka sagediibu baa.
+      hyp: Oma soŋ la ka sage diibu baare.
+      cer: 0.1304
+      wer: 0.7143
+    '223':
+      text: Yɛ zeŋ gbulo a kuri dɛmmo dẽɛ wuli kyaare vũũ yɛlɛ, nansaalaa soͻloŋ bee
+        zimaale tͻna ka o yine a sazu deme ŋa.
+      hyp: Yɛ zeŋ gbulo a kuri dɛmmo deɛ wuli kyaare vũũ yɛlɛ naŋ saa la a soloŋ bee
+        zimaale tena ka o yi ne a sazu deme ŋa.”
+      cer: 0.046
+      wer: 0.3913
+    '224':
+      text: Vɛŋ ka a karembiiri di dɛmɛ wuli a yelzu.
+      hyp: Vɛŋ ka a karembiiri di dɛmɛ wuli a yeli zu.
+      cer: 0.0312
+      wer: 0.2222
+    '226':
+      text: Kanne a yelyagesɛgeraa ŋa velaa kyɛ iri a soorebie naŋ tu nͻɛ.
+      hyp: ka nenee, a yele gyekyɛ gaŋ na velaa kyɛ iri a Sɔrebi naŋ tuŋ neɛ.
+      cer: 0.32
+      wer: 0.75
+    '228':
+      text: De bone na fo naŋ nyɛ a dɛmmo poͻ wuli a gbulo mine.
+      hyp: Dɛ bonne na fo naŋ nyɛ a dɛmmo pɔwuli a su na a gbulo, aa gbulo mine.
+      cer: 0.4103
+      wer: 0.6154
+    '229':
+      text: De va-funnoo gͻͻloŋ wuli yelsoŋ kaŋa a sɛgerɛ naŋ teɛre ka a karemazuzeɛ
+        taa.
+      hyp: “Bɛ va funnoo guloŋ wuli yelsoŋ kaŋ a sɛgrɛ naŋ teɛre ka a karema zu zeɛ
+        taa.
+      cer: 0.0968
+      wer: 0.6429
+    '230':
+      text: A karemazuzeε la a sakuuri faŋa zaa.
+      hyp: A Karema zu seɛ la a sakuuri faŋ zaa.
+      cer: 0.1034
+      wer: 0.5714
+    '256':
+      text: A sɛgesɛgrɛ maŋ de la duoro eŋ a sɛgre poɔ.
+      hyp: A Sɛgetesɛ gerɛŋ maŋ de la duoro eŋ a sɛgre poɔ.
+      cer: 0.1212
+      wer: 0.2
+    '260':
+      text: O e la sobiri karembiiri naŋ maŋ nyore bamenne eŋ kannoo a naŋ baŋ o pare.
+      hyp: Puui la, sobiri karembiiri naŋ maŋ nyɔge bamenne eŋ kannoo a naŋ baŋ o
+        pare,
+      cer: 0.1034
+      wer: 0.1875
+    '269':
+      text: A kannekanna maŋ wuli la o teɛroŋ, tere o nͻ-iraa a kannoo ne kanne baaroo
+        puoriŋ.
+      hyp: A ka nɛkanna maŋ wuli la O teɛroŋ, tɛrɛ O neeraa a kannoo ne ka nɛ baaroo
+        puoriŋ.
+      cer: 0.125
+      wer: 0.375
+    '271':
+      text: Nensaalaa lããfeeloŋ ane gyeremɛ yɛlɛ do are la zie maale ka o e forfori.
+      hyp: Nensaala, lããfeeloŋ ane gyeremɛ yɛlɛ do are la zie maale ka o e fofore.
+      cer: 0.0517
+      wer: 0.1429
+    '278':
+      text: A baaloŋ ama koora la noba yaga.
+      hyp: Baaloŋ a ma koɔrɔ la noba yaga.
+      cer: 0.12
+      wer: 0.5714
+    '284':
+      text: Pãã wuli fo teɛroŋ kyaare ne lɛ anaŋ seŋ ka a sɛgebo wuobu yɛlɛ da tu.
+      hyp: paalee a naŋ sɛŋ ka a sɛgbo-wobu yɛlɛ da toɔ̃.
+      cer: 0.463
+      wer: 0.75
+    '288':
+      text: Gyeremɛ ba waa bone fo naŋ na fere nyɛ.
+      hyp: Yɛre meŋ ba waa bone fo naŋ na fereŋ nyɛ!
+      cer: 0.1667
+      wer: 0.3333
+    '291':
+      text: Teɛre ka fo be la karendie poͻ ka neɛzaa puoro o tͻ ne nimimaaroŋ ane
+        neeloŋ.
+      hyp: Teɛre ka fo be la karendie po, ka neɛzaa puoro o te ne nimimaaroŋ ane neɛloŋ.
+      cer: 0.0492
+      wer: 0.1875
+    '298':
+      text: Boŋ yeli la ka a yelzu yeli kyaare ne dɛmmo?
+      hyp: Oŋ yeli la ka a Yeezu yeli kyaare ne dɛmo.
+      cer: 0.0882
+      wer: 0.3
+    '299':
+      text: Sɛge a yɛlɛ yelzu naŋ be dabegere boŋyeni ane anaare.
+      hyp: segedɛ yɛlɛ yɛ zu naŋ be dabeɡere boŋyeni ane anaare.
+      cer: 0.1395
+      wer: 0.5
+    '300':
+      text: Kyoͻre a sazu dɛmmo ŋa eŋ yɛlɛ anaare poͻ.
+      hyp: Saazudamo ŋa e yɛlɛ anaare poɔ.
+      cer: 0.3333
+      wer: 0.6667
+    '304':
+      text: Boŋ tɛɛtɛɛloŋ la be kanne welweli ane peɛroo kpakyagaŋ?
+      hyp: Bondɛtɛloŋ la be kanne wɛlwɛl ane peeroo kpakyagaŋ.
+      cer: 0.1739
+      wer: 0.4444
+    '306':
+      text: De fomeŋɛ yelbie wɛle ne maa-eŋɛ kannoo ane kanne gaa tͻͻre kannoo tɛɛtɛɛloŋ.
+      hyp: di fo meŋɛ yelbie wɛle, ne maa eŋɛ kannoo ane kannee gaa teree kannoo tɛɛtɛɛloŋ.
+      cer: 0.0794
+      wer: 0.5385
+    '314':
+      text: Yelbipeelaa la yelbiriŋmaa te naŋ de eŋ yelbiri niŋe bee puori bee sͻga.
+      hyp: Yɛlbi-peelɛ la yelbir-ŋmaa te naŋ de eŋ yelbiri niŋe bee puori bee sega.
+      cer: 0.0847
+      wer: 0.2308
+    '316':
+      text: Tagemarre la ka te maŋ de tage yelbie lantaa yεlε poͻ ka o taa tɛgɛ.
+      hyp: Karaha nɔɔ Haloma tage emeɛ a kyɛ na toŋ la kɛrɛ yelbie lantaa yɛlɛ pae.
+        Boɔ naŋ kaa nɔɔ pɛge a yɛɛlɛ gyili hɔnɔɔ daŋ fe ka o taa tɛgɛ.
+      cer: 1.283
+      wer: 1.6
+    '317':
+      text: Te maŋ tu la a yelbipeelε zie kyε maale yelbipaala.
+      hyp: Te maŋ tu la a yelbi-peele zie kyɛ maale yelbipaala.
+      cer: 0.0488
+      wer: 0.2
+    '323':
+      text: A yelbipeelε ama la puori yelbipeelaa ane niŋe yelbipeelaa.
+      hyp: Ka yelbopeele amaala puori yelbipelaa ane niŋeyelbipelaa.
+      cer: 0.12
+      wer: 0.7778
+    '326':
+      text: Puori yelbipeelaa maŋ wa la kyε ko a yelbiri meŋa.
+      hyp: Pɔgrɔ yelbepeelaa maŋ wa la kyɛ ko a yelbiri meŋaa.
+      cer: 0.15
+      wer: 0.4
+    '328':
+      text: Niŋe yelbipeelaa la ona naŋ tu yelbiri.
+      hyp: Neŋke yɛlbi-pelaa la ona naŋ tu yelbiri.
+      cer: 0.125
+      wer: 0.2857
+    '329':
+      text: Niŋe –puori yelbipeelaa; a ŋaa,yelbipeelε ayi maŋ gyilli la a yelbinyaga.
+      hyp: Puori yelbipelaa, aŋa yelbipelaa ayi maŋ gyili la a yelbinyaga.
+      cer: 0.1695
+      wer: 0.4545
+    '331':
+      text: Ghana kͻkͻɛ yaga zaa ba taa a niŋe-puori yelbipeelaa ŋa.
+      hyp: Ganakekege yaga zaa ba taa a niŋe puori yelbi-pelaa ŋa.
+      cer: 0.1333
+      wer: 0.5
+    '336':
+      text: Yelbimaale kpɛglɛ; a kpɛglɛ ama la maŋ maale yelbipaalaa ka o pare e paalaa
+        meŋ.
+      hyp: Yelbi-maale kpɛge lɛ, a kpɛge lɛ, a ma la, maŋ maale yelbi-paalaa ka o
+        pare e paalaa meŋ.
+      cer: 0.0312
+      wer: 0.4
+    '339':
+      text: A kpɛglɛ ŋa maŋ ŋmaa la yelbipaalaa yi ne a yelbinyaga poɔ.
+      hyp: A kpɛglɛ ŋa maŋ ŋmaa la yelbipaalaa yi ne a yelbinyaga poɔ.
+      cer: 0.0
+      wer: 0.0
+    '342':
+      text: A ŋaa eŋ o maŋ kyilli la a yelbiri tontonne yoŋ, kyɛ o ba kyille a yelbiri
+        zage.
+      hyp: Õŋa eŋ, o maŋ kyilli la a yelbii tontonne yoŋ, kyɛ o ba kyilli a yelbii
+        zage.
+      cer: 0.082
+      wer: 0.2778
+    '343':
+      text: Yelbileɛmaale kpɛglɛ ba maŋ kyilli a yelbiri pare zaa, azuiŋ o ba ŋmaara
+        yelbipaala.
+      hyp: Yelbirɛ maale kɛkile ba maŋ kyili a yelbiri pareza, azuiŋ o ba ŋmaara yelbipaala.
+      cer: 0.1159
+      wer: 0.4286
+    '348':
+      text: A yelbiri Saa, pare ba kyilli.
+      hyp: a yelbiri saa, parebakyilli,
+      cer: 0.0
+      wer: 0.5
+    '349':
+      text: Saamine e la saa yaga.
+      hyp: Sami, e la saa yaga!”
+      cer: 0.1765
+      wer: 0.2
+    '350':
+      text: Yε zeŋ bayiri a di dεmε kyaareyelbipeelε parεε zaa yε naŋ baŋ.
+      hyp: Yɛ zeŋ ba yiri a di dɛmɛ kyaare yelbi-peele, parɛɛ zaa yɛ naŋ baŋ.
+      cer: 0.14
+      wer: 0.6667
+    '353':
+      text: Kͻkͻre zaa taa la lεnεε yelbipeelε naŋ tona.
+      hyp: Kakere zaa taa laa lɛnɛɛ yelbi-peele naŋ tona.
+      cer: 0.1944
+      wer: 0.5
+    '354':
+      text: A yelbipeelε tontonne mine la ama naŋ tu.
+      hyp: A yelbipiili tontonne mine la a ma naŋ toŋ.
+      cer: 0.1515
+      wer: 0.5
+    '355':
+      text: A maŋ maale la yelbipaala yi yelbinyaga poͻ.
+      hyp: A maŋ maale la yelbipaala yi yelbinyaga poɔ.
+      cer: 0.0278
+      wer: 0.125
+    '357':
+      text: A maŋ kyilli la yelbiri zagre; aseŋ.
+      hyp: N maa kyilli la yelbiri zagere, a seŋ.
+      cer: 0.1071
+      wer: 0.7143
+    '359':
+      text: Yelbipeelε maŋ leεre eroŋ wagre kaŋa eŋ wagre yuo poͻ.
+      hyp: Yelbipeele maŋ leere eroŋ wagere kaŋa eŋ wagere yuo poɔ.
+      cer: 0.1136
+      wer: 0.5
+    '361':
+      text: A maŋ kyilli la yelbiri eŋ yageroŋ.
+      hyp: N naŋ kirli la yelbiiri eŋyagroŋ.
+      cer: 0.2143
+      wer: 0.8571
+    '374':
+      text: Wuli yelbipeelε a yelbie ama poͻ kyε wuli yelbipeelɛ parεε na a naŋ e.
+      hyp: Wuli yelbi-peele a yelbie ama pokyɛɛ wuli yelbi-peele parɛɛ na a naŋ.
+      cer: 0.1429
+      wer: 0.4286
+    '375':
+      text: De yelbipeelε eŋ a yelbie ama poͻ ka leε yuori yelbie bee bigiruu yelbie.
+      hyp: De yelbi-peelɛ eŋ a yelbie a ma po ka lɛ yuori yelbie bee bigiruu yelbie.
+      cer: 0.0678
+      wer: 0.3571
+    '376':
+      text: Gbulo poͻ, de a sazu yelbipeelε parεε ama n maale ne yelbipaala.
+      hyp: Gɛbulopo, de a sazu yelbi-peele pareɛɛ a maŋ maale ne yelbi-paala,
+      cer: 0.1373
+      wer: 0.5
+    '380':
+      text: Te maŋ de la tagemarre sεge ne yelkparema bee yellerema.
+      hyp: Te maŋ di la tage mare sɛge ne yeli kparre ma bee yelre ma.
+      cer: 0.1522
+      wer: 0.9
+    '381':
+      text: A ŋaa maŋ soŋ la ka te ta puuli yεlɛ.
+      hyp: Anaanaŋ soŋ la ka te ta puuli yɛllɛ.
+      cer: 0.1481
+      wer: 0.4
+    '384':
+      text: A yelbie ama be la te bebiri zaa dεmε diibu poͻ.
+      hyp: Ka yelbie a ma be la te bebiri zaa deme diibu poɔ.
+      cer: 0.1081
+      wer: 0.4545
+    '385':
+      text: O zanne la azuiŋ o baŋ la boma.
+      hyp: Ba zɛŋ ne la azim, o baŋ la boma.
+      cer: 0.2609
+      wer: 0.5
+    '387':
+      text: Te taa tagemarre parεε yaga Dagaare poͻ.
+      hyp: Te ta a taage maare paalɛɛ yaga dagare poɔ.
+      cer: 0.2424
+      wer: 1.0
+    '389':
+      text: Teseŋ, yuori ne yoe yelbie ane yelgbͻge ane yelgbͻgere.
+      hyp: Te seŋ yuori ne yuori yelbie ane yelgbige ane yelgbigiri.
+      cer: 0.1556
+      wer: 0.5556
+    '390':
+      text: Sentaa Sentaa tagemarre naŋ maŋ tͻnne yelbie ane yelŋmaara.
+      hyp: Sɛntaa taage naŋ maŋ tenne yelbie ane yelmaara.
+      cer: 0.26
+      wer: 0.5556
+    '395':
+      text: Sentaa tagemarre naŋ maŋ tͻnne Yelgbͻge yeme ane yelgbͻge sommeŋa taa.
+      hyp: Santaaɛ naŋ maŋ teŋ ne yelbɛge yeme ane yelbɛge sommɛ ŋa taa.
+      cer: 0.2881
+      wer: 0.7273
+    '397':
+      text: Ka teneŋ di baare, te na gbiri la.
+      hyp: Ka teneŋ di baare, te na gbiri la.
+      cer: 0.0
+      wer: 0.0
+    '398':
+      text: Ka anaŋ na toͻ, taa emmaaroŋ ne neε zaa.
+      hyp: ka a naŋ na to, taa emmaaroŋ ne neɛzaa.”
+      cer: 0.0667
+      wer: 0.5556
+    '401':
+      text: A yuori wulo la a ayi zaa la maŋ tage yelbie bee yεlε lantaa.
+      hyp: Yɛ yuori wullo la, a ayi zaa la maŋ tage yelbie bee yɛlɛ lantaa.
+      cer: 0.1064
+      wer: 0.2143
+    '404':
+      text: A naa naŋ kpi, n nyε la Naaŋmene.
+      hyp: Ba naa naŋ kpi, N nyɛ la Naaŋmen.
+      cer: 0.125
+      wer: 0.375
+    '405':
+      text: A tagemarre ama la maŋ tͻnne yelgbͻge sommeŋa ane yelgbͻge yieme.
+      hyp: A tage Mareyama la maŋ tenne yelgbege somme ŋa ane yelgbege yie meŋ.
+      cer: 0.1111
+      wer: 0.8182
+    '410':
+      text: A maŋ soŋ la ka te de yelgbͻgre bee yelŋmaara lantaa.
+      hyp: O maŋ soŋ la ka te de yelgbɛgre bee yelmaara lantaa.
+      cer: 0.0714
+      wer: 0.2727
+    '415':
+      text: Begε fẽẽ la be be kyaare tagemarre yεlε maaloo poͻ.
+      hyp: Bɛge fēē la bebe kyaare tage marɛɛ yɛlɛ maaloo poɔ.
+      cer: 0.2195
+      wer: 0.8
+    '416':
+      text: Tagemarre tona la yεmbulo, yel-erre, ane teεroŋ.
+      hyp: E. “Yuin la yɛmbulu, yel-ɛɛre ane tiiroŋ.”
+      cer: 0.4474
+      wer: 0.7143
+    '417':
+      text: Te maŋ de la tagemarre pore ne boma (yoe).
+      hyp: kyɛ maŋ dire a tage maare pɔre ne boma gaŋ.
+      cer: 0.3548
+      wer: 0.7778
+    '418':
+      text: Yelbie maaloo sobie la lεnεε te naŋ maŋ tu a maale yelbipaala a kͻkͻre
+        poͻ.
+      hyp: Yelbie maaloo soti yɛ nɛnɛɛ te naŋ maŋ tu a maale yelbipaala, a kekere
+        poɔ.
+      cer: 0.1833
+      wer: 0.3333
+    '419':
+      text: Yelbie maaloo sobie e la yaga.
+      hyp: Yelbimaaloo sobie e la yaga.
+      cer: 0.0417
+      wer: 0.3333
+    '420':
+      text: Kͻkͻre na baŋ tu la sobie ayi bee ata a maale ne yelbie.
+      hyp: Koose na ba na lere yɛ, o naŋ kyɛnɛ gbɛre, ba de gyɛnɛ ne kyɛŋ kaŋa naŋ
+        naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ
+        naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ
+        naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ
+        naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ
+        naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ
+        naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ
+        naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ naŋ na�
+      cer: 10.0233
+      wer: 11.3077
+    '421':
+      text: A sobie mine la fͻͻmaroo, yelbikparema, kyεŋmaabo, pεmmo, puuluu, leεroo,
+        amk.
+      hyp: A sobiimine la femero, yelbikparema, kyɛ maabo, pɛɛmo, puluu, leero, am.
+      cer: 0.2131
+      wer: 0.8182
+    '424':
+      text: Wola ka te maŋ pore bompaaba yoe?
+      hyp: Yɔ la ka te maŋ pere bompaaba yoe.
+      cer: 0.1154
+      wer: 0.4286
+    '426':
+      text: Aŋ maŋ pore a yoe?
+      hyp: a ŋmaŋ pore a yuo e.
+      cer: 0.0769
+      wer: 0.8
+    '428':
+      text: A yelbie naŋ kpare taa na baŋ yi la yelbie zagere tεεtεε poͻ.
+      hyp: A yelbie naŋ kparre taana baŋ yi la yelbie zagere teɛteɛ poɔ.
+      cer: 0.125
+      wer: 0.3846
+    '431':
+      text: Yuori+eroŋ na baŋ kpare la taa.
+      hyp: Yuori Terɔn na baŋ kpare la taa.
+      cer: 0.125
+      wer: 0.3333
+    '436':
+      text: Bͻ a yelbie na naŋ be a yelbikpara poͻ a wuli a karendie zaa.
+      hyp: Yelbie na naŋ be a yelbi-kparapu a wuli a karendie zaa.
+      cer: 0.1064
+      wer: 0.2857
+    '441':
+      text: Te naŋ baŋ yeli ka yelbi-ŋmaara.
+      hyp: tɛ naŋ baŋ yeli ka yelbi-ŋmaara.
+      cer: 0.04
+      wer: 0.1667
+    '454':
+      text: O maŋ soŋ la ka te pore yelpaala bee bompaala yoe.
+      hyp: Oma ansoŋ la ka te pɔre yelpaala be bompaala yoe.
+      cer: 0.1026
+      wer: 0.4545
+    '455':
+      text: O maŋ soŋ la ka te baŋ yelbie yiziiri.
+      hyp: O maa soŋ la ka te baŋ yelbie yi seteere.
+      cer: 0.2414
+      wer: 0.3333
+    '459':
+      text: Wola ka te maŋ e a maale yelbipaala Dagaare poͻ?
+      hyp: Koɔ la koɔ ata naale kara dagare.
+      cer: 0.5526
+      wer: 1.0
+    '460':
+      text: Pore yelbipeelε parεε naŋ be Dagaare poͻ.
+      hyp: pore-yelbipɛllɛ parɛɛ naŋ be dagarre poɔ.
+      cer: 0.2059
+      wer: 0.7143
+    '461':
+      text: Wuli yelbipeelε anaare Dagaare poͻ.
+      hyp: Wuli yelbipelaa naare da gaare poɔ.
+      cer: 0.1
+      wer: 1.0
+    '462':
+      text: Di dεmε kyaare yelbipeelε anaare Dagaare poͻ.
+      hyp: Svɛtu dɛmɛ kyaare yelbipeelɛ anaare dagare.
+      cer: 0.3158
+      wer: 0.7143
+    '463':
+      text: Wuli yelbipeelε a yelbie ama poͻ kyε wuli a yelbipeelε parεε na a naŋ
+        e.
+      hyp: Wuli yɛrbipiile a yelbie ama po kyɛ wuli a yɛrbipiile pare na a naŋ e.
+      cer: 0.2456
+      wer: 0.3333
+    '465':
+      text: Wuli tagemarre parεε Dagaare poͻ.
+      hyp: puuli tagamare pare dagarre poɔ.
+      cer: 0.2857
+      wer: 1.0
+    '466':
+      text: Wɛle a tagemarre parεε na fo naŋ wuli.
+      hyp: Poɔ ne a tagmɛre parɛɛ na fo naŋ wuli.
+      cer: 0.3
+      wer: 0.5
+    '467':
+      text: Toͻ soͻmaa eŋ a tagemarre puliŋ a yεlε ama naŋ tu a puliŋ.
+      hyp: Soŋ maa eŋ a tage marɛɛ puliŋ a yɛlle a ma naŋ tu a puliŋ.
+      cer: 0.2
+      wer: 0.5385
+    '471':
+      text: Wuli yelbie maaloo sobie parεε ata Dagaare poͻ.
+      hyp: Kuoli yelbie maaloo sobie pareɛ a ta dagaare poɔ.
+      cer: 0.1282
+      wer: 0.625
+    '473':
+      text: Bͻ yelbie maaloo sobie parεε na be a sεgere ŋa naŋ tu poͻ.
+      hyp: Yelbie maaloo sobie pare na be a segere ŋa naŋ tu poɔ.
+      cer: 0.1333
+      wer: 0.3077
+    '474':
+      text: Zenε, mansumo e la nimizeε te zannoo poͻ.
+      hyp: Zɛnɛɛ, maŋ somo e la nimizete zannoo poɔ.
+      cer: 0.2188
+      wer: 0.75
+    '479':
+      text: Te pãã maŋ soore la, boŋ kyεre?
+      hyp: Nista ba maŋ soore la, ‘Boŋ kyɛre?’
+      cer: 0.3478
+      wer: 0.4286
+    '486':
+      text: Yelŋmaa la yelbiri bee yelbie naŋ kyͻŋ tutaa a taa teɛroŋ yeni kͻkͻre
+        merε poͻ.
+      hyp: Yelŋmaa la yelbiri bee yelbie naŋ kyɛŋ tutaa a taa teɛroŋ yeni kikeremere
+        poɔ.
+      cer: 0.0781
+      wer: 0.2667
+    '488':
+      text: Yelgbͻge la yelbie naŋ kyͻŋ tu taa a waa yεlε.
+      hyp: yelgbee naŋ kyɛŋ tutaa a waa yɛlɛ.
+      cer: 0.3333
+      wer: 0.7
+    '493':
+      text: De fo peɛrenyɛre pɛre ne fo gbuli deni.
+      hyp: di fo peɛne yɛrepɛre ne fo gbilii deni.
+      cer: 0.1613
+      wer: 0.5
+    '494':
+      text: Yelŋmaa la yebiri bee yelbie naŋ kyͻŋ tutaa soŋ a kͻkͻre merε poͻ.
+      hyp: Yɛnema la, yɛ bebe yelbie naŋ kyɛŋ tu taa soŋ a kɛkere mirɛ poɔ.
+      cer: 0.283
+      wer: 0.6923
+    '496':
+      text: A yelbirizu maŋ wuli a yelŋmaa yuori.
+      hyp: a yelbiri zu maa wuli a yelŋmaa yuori.
+      cer: 0.0333
+      wer: 0.4286
+    '499':
+      text: Yelŋmaa parɛɛ waa la anuu.
+      hyp: Yɛre maa parɛɛ waala, anoo.
+      cer: 0.2381
+      wer: 1.0
+    '503':
+      text: Bigiruu yelŋmaa ne bigiruu yelbie yelŋmaa waa la tɛɛtɛɛ.
+      hyp: Bigruu yelmaane, bigruu yelbie yelmaa waa la tɛtɛɛtɛɛ!
+      cer: 0.1277
+      wer: 0.6667
+    '505':
+      text: Aseŋ ‘a gane na naŋ dͻgele a tabol zu’.
+      hyp: a seŋ a ganne na naŋ digle a tabol zu.
+      cer: 0.1071
+      wer: 0.4444
+    '508':
+      text: Yuori yelŋmaa maŋ taa la yuori yelbiri bee yoleɛrɛ yelbie ka o e a yelbirizu.
+      hyp: Yuori yelmaa maŋ taa la, yuori yelbiri bee yolɛre yelbie ka o e a yelbiri
+        zu.
+      cer: 0.0484
+      wer: 0.2667
+    '510':
+      text: Yelŋmaara mine la tu a puliŋ.
+      hyp: Yɛ maara mine la tu a polloŋ.
+      cer: 0.2609
+      wer: 0.5
+    '515':
+      text: Fo na baŋ nyɛ la yebiri yeme ka a are ko yuori yelŋmaa.
+      hyp: Sona baŋ nyɛ la yɛbiri yɛmɛ kaa, a are ko yuori yelmaa.
+      cer: 0.1429
+      wer: 0.4615
+    '522':
+      text: Pegeraa la yelbie bee yelŋmaa naŋ maŋ tere duori kpɛlɛ kyaare yuori yelbiri
+        zu.
+      hyp: We gyɛraa la yelbie bee yelŋmaa naŋ maŋ tere duori kpɛlɛ kyaare yuori yelbiri
+        zu.
+      cer: 0.0462
+      wer: 0.1429
+    '523':
+      text: Pegeraa na naŋ maŋ wa kyɛ ko a yelbiri zu la ka te boͻla puori pegeraa.
+      hyp: Pegyiraa naa naŋ maŋ wa kyɛ ko o. A yelbiri zu la ka te bo la puori pigyiraa.
+      cer: 0.1455
+      wer: 0.375
+    '528':
+      text: Eroŋ yelŋmaa la yelŋmaa naŋ taa eroŋ yelbiri ka o e a yelbiri zu.
+      hyp: Yɛ male a yelmaa naŋ taa erɛŋ yelbiri ka o e a yelbiri zu.
+      cer: 0.2157
+      wer: 0.3571
+    '531':
+      text: Eroŋ yelŋmaa naŋ taa eroŋ yoŋ yelbiri meŋ waa la eroŋ yelŋmaa.
+      hyp: Yɛroŋ yelŋmaa naŋ taa Eroŋ yoŋ yelbiri meŋ waa la Eroŋ yelŋmaa.
+      cer: 0.04
+      wer: 0.0833
+    '534':
+      text: Eroŋ meɛroŋ yeldemanne mine naŋ kyaare a sazu eroŋ yelŋmaara ama la VP-VP.
+      hyp: Aroŋ, mɛroŋ, yeldemane mine naŋ kyaare a sazu Aroŋ yelmaara ama la vi pvp.
+      cer: 0.1
+      wer: 0.5385
+    '535':
+      text: Eroŋ yelŋmaa naŋ taa eroŋ kpɛgelaa, eroŋ ane a parepegeraa.
+      hyp: Yɛrɔŋ yɛlmaa naŋ taa a Yɛrɔŋ pɛge la, Yɛrɔŋ ane a parepegra.
+      cer: 0.3125
+      wer: 0.8
+    '546':
+      text: Yelŋmaa eronwuluu yelbiri naŋ waa a yelbiri zu la eronwuluu yelŋmaa.
+      hyp: Yelŋmaa erɛŋ wuli yelbiri naŋ waa a yelbiri zu la erɛŋ wuli yelŋmaa.
+      cer: 0.1404
+      wer: 0.3636
+    '555':
+      text: Bigruu yelŋmaa maŋ taa la bigruu yelbiri ka o e a yelbiri zu.
+      hyp: Bɛruu yelmaa, maŋ taa la bigruu yelbiri ka a yelbiri zu.
+      cer: 0.1042
+      wer: 0.3077
+    '556':
+      text: O maŋ pege la yoe yelbie.
+      hyp: Oŋ maa pɛgɛ la, yoe yelbieri.
+      cer: 0.3158
+      wer: 0.6667
+    '557':
+      text: Bigruu yelŋmaa na baŋ taa la bigruu yelbiri yoŋ bee bigruu ne yelbie mine
+        naŋ pege o.
+      hyp: bigru-yelmaa na baŋ kaala bigru-yelbiri yoŋ bee bigru ne yelbie mine naŋ
+        pɛge o.
+      cer: 0.0882
+      wer: 0.4706
+    '559':
+      text: O maŋ taa la aroozie yelbiri naŋ waa a yelbiri zu.
+      hyp: o maŋ taa la aroozeɛ yelbiri naŋ waa a yelbiri zu.
+      cer: 0.0513
+      wer: 0.0909
+    '565':
+      text: A yelnimizeɛ la a yelbi-zu.
+      hyp: A yɛlponni vie la a yelpoŋ zu.
+      cer: 0.4762
+      wer: 0.8
+    '568':
+      text: A sazu yeldemannaa a yuori yelŋmaa la a yelbiri na naŋ soͻ.
+      hyp: A sazu yaldemanna, a yuori yelŋmaa la a yelbiri na naŋ so,
+      cer: 0.0638
+      wer: 0.1667
+    '570':
+      text: A yelbiri-zu a eroŋ yelŋmaa poͻ la gaa.
+      hyp: A yelbiri zu a Eeroŋ yelŋmaa po la gaa.
+      cer: 0.0667
+      wer: 0.5
+    '576':
+      text: A maŋ soŋ manne la yεlε pare ka o kyaane velaa.
+      hyp: A maa soŋ manne la yele pare ka o kyaane vela.
+      cer: 0.1111
+      wer: 0.2727
+    '584':
+      text: Te naŋ wa ta,te gaa zeŋ la bɛ-teɛ kaŋa naŋ taa maaroŋ soŋ zaa puliŋ.
+      hyp: Te naŋ wa ta, te gaa zeŋ la bɛteɛ kaŋ naŋ taa maaroŋ soŋ zaa puliŋ.
+      cer: 0.0196
+      wer: 0.2
+    '588':
+      text: Ŋmenaa naŋ wa posentaa te da gaa zeŋ la a pɛnne.
+      hyp: Ŋmenaa naŋ wa posentaa te da gaa zẽẽ la a pɛne.
+      cer: 0.0811
+      wer: 0.1818
+    '590':
+      text: A yɛ gbulo poͻ, yɛ wɛle a yelŋmaara parɛɛ eŋ a zagere ama (a.
+      hyp: Yɛ gbulopo, yɛ wɛle a yelmaara parɛɛ eŋ a zagere a makya.”
+      cer: 0.1111
+      wer: 0.4286
+    '596':
+      text: A saseɛ poͻ duoro ŋa kyaare la yegbͻgere.
+      hyp: A saseɛ pɔŋ duoro ŋa kyaare la yɛgbigeri,
+      cer: 0.1515
+      wer: 0.25
+    '599':
+      text: Yelgbͻge la yelbie naŋ kyͻŋ tutaa a taa teɛroŋ yeni kyɛ taa erɛ ane eroŋ.
+      hyp: Yɛre ki yelgie naŋ kyɛŋ tutaa a taa teɛroŋ yeni kyɛ taa erɛ ane eroŋ.
+      cer: 0.1724
+      wer: 0.2667
+    '605':
+      text: A sazu yeldemanne ama poͻ, a yɛlɛ kaŋa zaa maŋ taa la erɛ ane eroŋ.
+      hyp: A sazu yeldemanne ama poti. A yɛlɛ kaŋ zaa maŋ taa la erɛ ane eroŋ.
+      cer: 0.0588
+      wer: 0.1333
+    '608':
+      text: Yelgbͻgere parɛɛ ayi la be be.
+      hyp: Yɛlbagree parɛɛ ayi la bebe.
+      cer: 0.2083
+      wer: 0.5
+    '620':
+      text: Kpɛ entanɛt poͻ a bͻ yelgbͻge-sommeŋa parɛɛ anaare.
+      hyp: Bentanetpoŋ, a be yeldigre sommi ŋa pareanaare.
+      cer: 0.3095
+      wer: 1.0
+    '621':
+      text: De fo yelnyɛre wuli fo tͻ.
+      hyp: Fo yelnyɛrɛ wuli fo te.
+      cer: 0.2
+      wer: 0.5
+    '622':
+      text: De manne ne ama naŋ tu a puliŋ .
+      hyp: Dɛ manne ne a maŋ naŋ tu a puliŋ.
+      cer: 0.087
+      wer: 0.375
+    '623':
+      text: Yelgbͻge-sommeŋa taa la zagere anaare a yi parebammo eŋɛ.
+      hyp: Yɛre gbie soma ŋa taa la zagere anaare ayi parebamu eŋɛ.
+      cer: 0.1915
+      wer: 0.7778
+    '628':
+      text: N saaŋkoma gbiri la zaameŋ tensoŋa.
+      hyp: Nensaŋkoma gbiri la zaa meŋ tensoŋ ŋa.
+      cer: 0.1379
+      wer: 1.0
+    '630':
+      text: Dakoraa maŋ gaa la weɛ Yͻdaare zaa.
+      hyp: Dakoraa maŋ gaa la wɛɛyi daare zaa.
+      cer: 0.0714
+      wer: 0.2857
+    '634':
+      text: Fo naŋ baŋ pore la sooroo yelbie mine Dagaare poͻ?
+      hyp: Fo naŋ baŋ pore la soro yelbeɛ mine da gaare poɔ.
+      cer: 0.125
+      wer: 0.5
+    '645':
+      text: N na gaa la Loho sɛre kyɛ wa.
+      hyp: N na gaala noho sɛrekyɛwaa.
+      cer: 0.0952
+      wer: 0.75
+    '647':
+      text: Yelgbͻge-yieme taa la tontonne yaga anaŋ tona yɛlɛ poͻ.
+      hyp: Yɛl-gɛge-yieme taa la, tontonne yaga a naŋ tona yɛlɛ po.
+      cer: 0.0889
+      wer: 0.4444
+    '655':
+      text: Ayͻͻ kanne ne la a gane onaŋ o saa naŋ ko o.
+      hyp: A Eba kaa nene la a gaane onaŋ o saa naŋ ko.
+      cer: 0.1875
+      wer: 0.5
+    '664':
+      text: Yuori yelgbͻge naŋ are ko erɛ.
+      hyp: Yiruu yelyeregi naŋ arɛɛ ko-ɛrɛ.
+      cer: 0.5
+      wer: 0.8333
+    '665':
+      text: Yuori yelgbͻge naŋ tona erɛ toma ( eterɛ bee ekyaara) aseŋ.
+      hyp: Yuori yelge naŋ tona erɛ toma, ɛ tere bee ɛ kyaare a seŋ.
+      cer: 0.1522
+      wer: 0.7
+    '676':
+      text: De fo nͻ-iraa wuli fo karembi-tͻ.
+      hyp: De fo ne iraa wuli fo karembe te.
+      cer: 0.12
+      wer: 0.6667
+    '678':
+      text: A yɛ gbulo poͻ,manne wuli yelgbͻgere ayi parɛɛ.
+      hyp: ayɛlgbulopo manne wuli yelgbigɛrɛ ayi parɛɛ.
+      cer: 0.1316
+      wer: 0.625
+    '680':
+      text: Yɛ zeŋ ayiri a kanne a dɛmmo ŋa naŋ tu a puliŋ.
+      hyp: Yɛ zeŋ a yiri, a kannee adɛmmɔɔ ŋaa naŋ tu a puliŋ.
+      cer: 0.1143
+      wer: 0.4167
+    '683':
+      text: Yɛ di dɛmɛ kyaare ne a yɛ nͻ-irri.
+      hyp: Yɛ di dɛmɛ kyaare ne a yɛ eŋgyiri.
+      cer: 0.2
+      wer: 0.125
+    '687':
+      text: Kͻŋ naŋ da kpɛ ma gaali zuiŋ, N meŋ da la a mui mine ͻͻ.
+      hyp: naŋ da kpɛ ma gaale zuiŋ. N meŋ daare la a mui mine.
+      cer: 0.225
+      wer: 0.2667
+    '693':
+      text: Kaa iri a yelgbͻgere zagere fo taaba yeldemannewulli poͻ.
+      hyp: Nɛ Aria yelgbɛgre zagere fo taa ba yeldemannuuri poɔ.
+      cer: 0.2083
+      wer: 0.8889
+    '697':
+      text: A karembie kanne la a gane.
+      hyp: Sakarembie kanne la a gane.
+      cer: 0.0476
+      wer: 0.3333
+    '698':
+      text: A dͻͻ gbiri la velaa.
+      hyp: Lɛ deŋgbi la velaa.
+      cer: 0.375
+      wer: 0.6
+    '699':
+      text: O maŋ wuli yelbie kyɛŋmaabo baare la.
+      hyp: Pɔge maa wuli yelbie kyɛ ŋmaa bu baare la.
+      cer: 0.2
+      wer: 0.7143
+    '701':
+      text: O maŋ be la ogibu yelŋmaa bee yɛlɛ baaraa.
+      hyp: Koma bee la ɔgibu-yelŋmaa bee yɛlɛ baaraa.”
+      cer: 0.1212
+      wer: 0.5556
+    '704':
+      text: O maŋ wɛle la boma yoe.
+      hyp: Boma wɛle la boma yuo.
+      cer: 0.2353
+      wer: 0.5
+    '705':
+      text: A yoe na baŋ waa la yelbie, yelŋmaara bee yegbͻgere.
+      hyp: A yiri na baŋ waa la yelbie, yelmaara bee yɛ gbegɛrɛ.
+      cer: 0.1951
+      wer: 0.4
+    '711':
+      text: A gan-paale, sͻgelaa na bͻrɛɛ la.
+      hyp: Aganpaale, Sigilɛnabɛrɛɛ la.
+      cer: 0.2
+      wer: 0.8333
+    '712':
+      text: N da la yi-kore, kpoŋ, doͻre kaŋa.
+      hyp: N da la yi kore, kpomm, dori kaŋ.
+      cer: 0.2083
+      wer: 0.7143
+    '713':
+      text: Te maŋ de o la piili ne boma yoe porebo, yeldemanne bee yɛlɛ mannoo.
+      hyp: Te maŋ di o la piili ne boma yoe porobo. Yeldemanne bee yɛlɛ mannoo.
+      cer: 0.0377
+      wer: 0.1429
+    '717':
+      text: N taa la gyenno bieu; n na kanne la ka zie te nyaa.
+      hyp: N taa la Gyanobio, N na kaŋ de la ka zie te nyɛ.
+      cer: 0.2162
+      wer: 0.3846
+    '718':
+      text: O maŋ wɛle la boma yoe naŋ kyͻŋ tu taa.
+      hyp: O maa wɛle la boma yoe naŋ kyɛŋ tutaa.
+      cer: 0.069
+      wer: 0.4
+  source: evaluated

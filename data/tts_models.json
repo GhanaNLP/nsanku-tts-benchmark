@@ -20,18 +20,6 @@
     "notes": "41 languages, 36k steps"
   },
   {
-    "name": "techolise/akan-twi-speaker17-tts-v2",
-    "architecture": "VoxCPM v1 (0.7B) + LoRA",
-    "languages": ["twi_asante"],
-    "input_type": "orthographic",
-    "sample_rate": 16000,
-    "license": "apache-2.0",
-    "url": "https://huggingface.co/techolise/akan-twi-speaker17-tts-v2",
-    "reference_audio": "speaker_17_dataset/speaker17_golden_anchor.wav",
-    "reference_text": "Atoyerɛnkyɛm asi wɔ bea a wɔgu fangoo ɛgu ɛhyɛn mu.",
-    "notes": "VoxCPM v1 LoRA on ghana-tts-36k, speaker 17, Asante Twi"
-  },
-  {
     "name": "FarmerlineML/voxcpm2-akan-sft",
     "architecture": "VoxCPM2 (2B)",
     "languages": ["twi_asante", "twi_akuapem"],
@@ -69,6 +57,7 @@
     "sample_rate": 24000,
     "license": "CC-BY-SA-4.0",
     "url": "https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante",
+    "reference_text": "Atoyerɛnkyɛm asi wɔ bea a wɔgu fangoo ɛgu ɛhyɛn mu.",
     "notes": "Zero-shot TTS, ~30k utterances from Open Bible corpus"
   },
   {
@@ -79,6 +68,7 @@
     "sample_rate": 24000,
     "license": "CC-BY-SA-4.0",
     "url": "https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem",
+    "reference_text": "Onyankopɔn dɔ nnipa nyinaa na ɔhwɛ wɔn so daa.",
     "notes": "Zero-shot TTS, ~30k utterances from Open Bible corpus"
   },
   {
@@ -89,6 +79,7 @@
     "sample_rate": 24000,
     "license": "CC-BY-SA-4.0",
     "url": "https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Ewe",
+    "reference_text": "Mawu lɔ̃ ame sia ame eye wòkpɔa wo dzi ɣesiaɣi.",
     "notes": "Zero-shot TTS, ~30k utterances from Open Bible corpus"
   },
   {
@@ -100,6 +91,18 @@
     "license": "MIT",
     "url": "https://huggingface.co/ghananlpcommunity/nano-twi",
     "notes": "Ultra-lightweight offline TTS for CPU"
+  },
+  {
+    "name": "prince4332/CosyVoice2-0.5B-Akan-Bible",
+    "architecture": "CosyVoice2 (0.5B)",
+    "languages": ["twi_asante"],
+    "input_type": "orthographic",
+    "sample_rate": 24000,
+    "license": "apache-2.0",
+    "url": "https://huggingface.co/prince4332/CosyVoice2-0.5B-Akan-Bible",
+    "runner": "cosyvoice",
+    "reference_text": "Atoyerɛnkyɛm asi wɔ bea a wɔgu fangoo ɛgu ɛhyɛn mu.",
+    "notes": "LLM+flow fine-tune of FunAudioLLM/CosyVoice2-0.5B on 34.2k Asante Twi Bible utterances; zero-shot, ref clip minted via Khaya"
   },
   {
     "name": "KhayaAI/khaya-tts-v2",

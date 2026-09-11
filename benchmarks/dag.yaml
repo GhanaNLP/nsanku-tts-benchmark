@@ -1,0 +1,4233 @@
+iso_639_3: dag
+language: Dagbani
+num_samples: 200
+scoring: cer
+judge: &id001
+  model: KhayaAI/khaya-asr-v3
+  cer_on_real_speech: 0.1526
+updated: '2026-09-11'
+benchmarks:
+- model: KhayaAI/khaya-tts-v2
+  model_url: https://translation.ghananlp.org
+  owner: KhayaAI
+  architecture: Khaya AI TTS v2 API
+  cer: 0.0551
+  wer: 0.3215
+  score: 0.0551
+  samples: 200
+  valid: 200
+  avg_seconds: 1.38
+  judge: *id001
+  entries:
+    '2':
+      text: Yaɣili ŋɔ piini wuhiri bachjilli, bachijilli biɛhigu ni yee baŋsim.
+      hyp: Yaɣili ŋɔ pii ni wuhiri ba jilli bachi jilli biɛhigu ni yee baŋsim.
+      cer: 0.0357
+      wer: 0.6
+    '7':
+      text: A ni mali baŋsim zaŋ jɛndi yee zaŋ nam Dagbani bachi pala.
+      hyp: a ni mali baŋsim zaŋ jɛndi yee zaŋ nam Dagbani bachi pala.
+      cer: 0.0
+      wer: 0.0
+    '10':
+      text: Bachijilli nyɛla bachi yaɣili di ni ni tooi boli shɛli.
+      hyp: Bachi jilli nyɛla bachi yaɣili di ni ni tooi boli shɛli.
+      cer: 0.0
+      wer: 0.2
+    '11':
+      text: Bachijilli konsɔnanti nyɛla konsɔnanti shɛli din nahiŋgban ŋmani bachijilli.
+      hyp: Bachijilli konsonanti nyɛla konsonanti shɛli din nahiŋgbaŋ ŋmani bachijilli.
+      cer: 0.0448
+      wer: 0.3333
+    '12':
+      text: Yee nyɛla kukoli taɣiri shɛli din ni tooi tahi bachi gbunni taɣibu na.
+      hyp: Yi yi nyɛla kukoli taɣiri shɛli din ni tooi tahi bachi gbinni taɣibu na.
+      cer: 0.0702
+      wer: 0.2308
+    '14':
+      text: Di ni tooi lahi nyɛ yaɣ’ shɛli ti vuhim ni lura bachi bolibu.
+      hyp: di ni tooi lahi nya yaɣ’ shɛli ti vuhim ni lura bachi bolibu.
+      cer: 0.0213
+      wer: 0.0769
+    '16':
+      text: Dinzuɣu, duni malila bachijila ayi.
+      hyp: Dinzuɣu di ni malila bachi jila ayi.
+      cer: 0.0345
+      wer: 0.8
+    '20':
+      text: Dimbɔŋɔ tooi niŋdimi di yi niŋ ka vaawuli bi doli konsɔnantinima maa.
+      hyp: Dimbɔŋɔ tooi niŋdimi di yi niŋ ka vaawul bi doli kɔŋsonantinima maa.
+      cer: 0.0702
+      wer: 0.1667
+    '23':
+      text: Ŋa shɛhira shɛŋa n-do gbunni ŋɔ.
+      hyp: Ŋa shɛhira shɛŋa n-do gbinni ŋɔ.
+      cer: 0.04
+      wer: 0.1667
+    '29':
+      text: Di lahi sɔŋdi ban bɔhindi ka bɛ baŋdi yɛltɔɣa bachinima gbunni.
+      hyp: Di lahi sɔŋdi bɛn bɔhindi ka bɛ baŋdi yɛltɔɣa bachinima gbinni.
+      cer: 0.0385
+      wer: 0.1818
+    '35':
+      text: Bachi yini kam pirimi n-doli ŋa bachijil’ shɛŋa ŋa ni mali.
+      hyp: Bachi yini ka m pirimi n-doli ma bachijil’ shɛŋa ŋa ni mali.
+      cer: 0.0217
+      wer: 0.2727
+    '36':
+      text: Gahana zuliyanima bachijila balibu waliya.
+      hyp: Gahana zuliyanima bachijila balibu wali ya.
+      cer: 0.0
+      wer: 0.4
+    '40':
+      text: Bachijil’ shɛli din ka nyaaŋa nyɛla bachijil’ shɛli din naai ni vaawuli.
+      hyp: Bachijil’ shɛli din ka nyaaŋa nyɛla bachijil’ shɛli din naai ni vaawuni.
+      cer: 0.0172
+      wer: 0.0833
+    '44':
+      text: Bachijil’ shɛli din mali nyaaŋa nyɛla bachi shɛli din naari ni konsɔnanti.
+      hyp: Bachijil’ shɛli din mali nyaaŋa nyɛla bachi shɛli din naari ni kɔŋsonante.
+      cer: 0.0656
+      wer: 0.0833
+    '47':
+      text: Guruni, Kpunkpaansili, Dagaari, ni ŋan pahi.
+      hyp: Guru ni kpuŋkpaansili dagaari ni ŋan pahi.
+      cer: 0.0286
+      wer: 0.5
+    '48':
+      text: Shɛhira shɛŋa n-do gbunni ŋɔ.
+      hyp: shɛhira shɛŋa n-do gbinni ŋɔ.
+      cer: 0.0435
+      wer: 0.2
+    '49':
+      text: Zaŋmi a maŋmaŋa bachinima m-buɣisi binshɛli din nyɛ bachijilli.
+      hyp: Zaŋmi amaŋmaŋ’ bachinima m-buɣisi binshɛli din nyɛ bachijilli.
+      cer: 0.0189
+      wer: 0.2222
+    '51':
+      text: Wuhimi bachijila bal’ shɛŋa ŋan be Dagbani ni.
+      hyp: Wuhimi bachijila bal’ shɛŋa ŋan be dagban’ ni.
+      cer: 0.027
+      wer: 0.125
+    '72':
+      text: A mini a kpee kahigimi bachijila biɛhigu ŋan bachi’ shɛŋa di ni nam maa.
+      hyp: A min’ achee kahigimi bachi jila biɛhigu ŋam bachi shɛŋa di ni nam maa.
+      cer: 0.0702
+      wer: 0.4286
+    '74':
+      text: Sakanooŋa mini salinsaa n-da nyɛ zonima viɛnyɛliŋga.
+      hyp: Sakano mini salinsaa n-daa nyɛ zonima viɛnyɛliŋga.
+      cer: 0.0909
+      wer: 0.2857
+    '93':
+      text: Yee taɣirimi yɛltɔɣili zaa puuni.
+      hyp: Yi yi taɣirimi yɛlitɔɣili zaa puuni.
+      cer: 0.1429
+      wer: 0.6
+    '94':
+      text: Zuliya balbu mali yee bal’ kɔŋkɔba.
+      hyp: Zuliya balibu mali yee bali kɔŋkoba.
+      cer: 0.1071
+      wer: 0.5
+    '101':
+      text: Zimbasili, Aŋkarinsili, Kasina, Dagbani, Ayigbesili, ŋan pahi.
+      hyp: Zimbaasili aŋ karinsi li ka Sina dagbaani ayi gbɛsi li ŋan’ pahi.
+      cer: 0.06
+      wer: 1.4286
+    '112':
+      text: Yee ka di mali waligiri bachi shɛŋa ŋan ŋmɛbu ni gbunninyɛ yim zuliya
+        yɛltɔɣa.
+      hyp: yee ka di mali walibiri bachi shɛŋa naan ŋmɛbu ni gbinni nyɛ yim zuliya
+        yɛlitɔɣa.
+      cer: 0.0781
+      wer: 0.3571
+    '126':
+      text: Bɔŋbɔŋ puuni, kahigimiya yee tuma.
+      hyp: Bɔmbɔŋ puuni, kahigimiya yee tuma!
+      cer: 0.0357
+      wer: 0.2
+    '130':
+      text: Baŋmi yee bal’ shɛŋa ŋan be bachi shɛŋa di ni ti ŋɔ.
+      hyp: Baŋmi yee bal’ shɛŋa ŋan be baachi shɛŋa di ni ti ŋɔ.
+      cer: 0.0256
+      wer: 0.0833
+    '132':
+      text: Baŋmi bachijil’ shɛŋa ŋan ʒiri yee bachi shɛŋa di ni ti maa puuni.
+      hyp: Baŋmi bachijil’ shɛŋa ŋan ʒiri ye bachi shɛŋa di ni ti maa puuni.
+      cer: 0.0192
+      wer: 0.0769
+    '133':
+      text: Zaŋmi a labisibu n-wuhi karindu maa zaa.
+      hyp: Zaŋm’ alabisibu n-wuhi karindo maa zaa.
+      cer: 0.0625
+      wer: 0.5714
+    '139':
+      text: Zaŋmi shɛhira dibaata n-kahigi yee tuma Dagbani.
+      hyp: Zaŋmi shɛhira dibaata n-kahigi yee tuma dagba ni.
+      cer: 0.0
+      wer: 0.2857
+    '142':
+      text: Yaɣili ŋɔ kahigirila yɛltɔɣikpana baŋbu lahabali, bee lahabali puuni.
+      hyp: Yaɣili ŋɔ kahirila yɛltɔɣikpana baŋbu lahabali bee lahabali puuni.
+      cer: 0.0339
+      wer: 0.1111
+    '149':
+      text: Yɛlkpan’ shɛli din be lahabali puuni n-nyɛ di ni ʒiri yɛltɔɣikpan’ shɛli
+        lahabali ni ʒira.
+      hyp: yɛlikpan’ shɛli din be lahabali puuni n-nya di ni ʒiri yɛltɔɣikpan’ shɛli
+        lahabali ni ʒira.
+      cer: 0.0278
+      wer: 0.1333
+    '150':
+      text: Dimbɔŋɔ ni tooi be yɛltɔɣ’ shɛli din ʒiri yɛltɔɣikpani ka mali yɛltɔɣ’
+        shɛŋa ŋan kahigira.
+      hyp: Dimbɔŋɔ ni tooi bi yɛli tɔɣ’ shɛli din ʒiri yɛltɔɣ’ kpa ni ka mali yɛltɔɣ’
+        shɛŋa ŋan kahigira.
+      cer: 0.0411
+      wer: 0.4
+    '151':
+      text: Karimbu ni tooi nyɛ din ziligi bee din yɛligi.
+      hyp: Karimbu ni tooi nyɛ din ziligi bee din yɛligi.
+      cer: 0.0
+      wer: 0.0
+    '159':
+      text: Dimbɔŋɔ yɛrila baŋsim yaɣili, lahabali bee alizama maa daliri.
+      hyp: Dimbɔŋɔ yɛrila baŋsim yaɣili lahabali bee alizama maa daliri.
+      cer: 0.0
+      wer: 0.0
+    '184':
+      text: Zaŋmi a tɛha m-maɣisi ŋan sabi do gbunni ŋɔ.
+      hyp: Zaŋmi a tɛha m-maɣisi ŋa n-sabi do’ gbinni ŋɔ.
+      cer: 0.0294
+      wer: 0.3333
+    '187':
+      text: Dimbɔŋɔ nyɛla n-vihi bo yɛltɔɣikpan’ shɛli din be lahabali maa puuni.
+      hyp: Dimbɔŋɔ nyɛla m vihibɔ yɛltɔɣikpan’ shɛli din be lahibali maa puuni.
+      cer: 0.0536
+      wer: 0.2727
+    '190':
+      text: Dimbɔŋɔ m-mali a nina yuuni yomyom m-bɔri bachi shɛŋa shee lahabali ni.
+      hyp: Dimbɔŋɔ mal’ a nina yuuni yomyom m-bɔri bachi shɛŋa shee lahibal’ ni.
+      cer: 0.0702
+      wer: 0.1667
+    '192':
+      text: Karimmi lahabali din do gbunni ŋɔ.
+      hyp: ka di mi lahabali din do gbinni ŋɔ.
+      cer: 0.1071
+      wer: 0.6667
+    '193':
+      text: Baŋmi yɛltɔɣikpani lahabal’ shɛli di ni ti gbunni ŋɔ.
+      hyp: Baŋmi yɛltɔɣikpaa ni lahibal’ shɛli di ni ti gbinniŋ
+      cer: 0.093
+      wer: 0.5556
+    '194':
+      text: Zaŋmi di ni baŋ yɛltɔɣikpan’ shɛli maa n-wuhi ka maɣisi a karimbi’ taba.
+      hyp: Zaŋmi di ni baŋ yɛltɔɣikpan’ shɛli maa n-wuhi ka maɣisi a karimba taba.
+      cer: 0.0179
+      wer: 0.0769
+    '215':
+      text: N daa naaya ni shɛhira gbaŋ shɛli din daa viɛli pam.
+      hyp: n-daa naaya ni shɛhira gbaŋ shɛli din daa viɛli pam.
+      cer: 0.0
+      wer: 0.1818
+    '218':
+      text: Zaŋmi yɛltɔɣikpana maa n-wuhi karimduu maa zaa.
+      hyp: zaŋmi yɛltɔɣikpana maa n-wuhi karimdoo maa zaa.
+      cer: 0.0513
+      wer: 0.1429
+    '226':
+      text: Amaa ka di yi niŋ ka fukumsinima ka yɛlmaŋli?
+      hyp: amaa ka di yi niŋ ka fukumsinima ka yɛlimaŋli,
+      cer: 0.0278
+      wer: 0.1111
+    '227':
+      text: N kuli tiri jilin’ shɛli a ni mi bi viɛla.
+      hyp: n kul tiri jini, shɛli a ni mi bi viɛla.
+      cer: 0.0968
+      wer: 0.2
+    '242':
+      text: Karimmi lahabal’ shɛli din do gbunni maa ka labisi bɔhisi ŋan doli li
+        na.
+      hyp: karimmi lahibal’ shɛli din do buni maa ka labisi bɔhisi ŋan dol’ li na.
+      cer: 0.069
+      wer: 0.2143
+    '247':
+      text: Karimbakpema maa n-nyɛ ŋun mali shikuru maa fukumsi.
+      hyp: karimba kpɛma maa n-nyɛ ŋun mali shikuru maa fukumsi.
+      cer: 0.0233
+      wer: 0.25
+    '260':
+      text: Ka naan yi zaŋ li maɣisi di ni nyɛ shɛli gbunni ŋɔ.
+      hyp: ka naanyi zaŋ li maɣisi di ni nyɛ shɛli gbinni ŋɔ.
+      cer: 0.0256
+      wer: 0.25
+    '272':
+      text: So’ shɛŋa di ni doli n- a maŋmaŋa karimbu soli n-karimgbaai.
+      hyp: sɔɣ’ shɛŋa di ni doli amaŋmaŋ’ karimbu soli n-karim gbaai.
+      cer: 0.087
+      wer: 0.5455
+    '283':
+      text: Sabita nyɛla daadam daalafee mini jilima nyɛbili.
+      hyp: Sabita nyɛla daadam daalafee mini jilima nyɛbili.
+      cer: 0.0
+      wer: 0.0
+    '296':
+      text: Ka naan yi, zaŋ a ni tɛhi ni lahabali ŋɔ ni tooi yɛligi.
+      hyp: ka naanyi zaŋ a ni tɛhi’ ni lahibali ŋɔ ni tooi yɛligi.
+      cer: 0.0238
+      wer: 0.2308
+    '305':
+      text: Zaŋmi a maŋmaŋa bachinima n-wuhi binshɛli din nyɛ ‘yɛltɔɣikpani’.
+      hyp: Zaŋmiya maŋmaŋ’ bachinima n-wuhi binshɛli din nyɛ yɛltɔɣ’ kpa ni.
+      cer: 0.0566
+      wer: 0.6667
+    '307':
+      text: Jilima pa la binshɛli di ni ni tooi deei amaa di nyɛla binshɛli di ni
+        bɔra.
+      hyp: Jilima pala binshɛli di ni ni tooi deei, amaa di nyɛla binshɛli di ni bɔra.
+      cer: 0.0
+      wer: 0.125
+    '314':
+      text: Dimbɔŋɔ n-nyɛ jilima ni ŋmani shɛli.
+      hyp: Dimbɔŋɔ n-nyɛ jilima ni ŋmani shɛli.
+      cer: 0.0
+      wer: 0.0
+    '318':
+      text: A yi kpɛri ka yiri haai shikuru, teemi ni jilima nyɛla yaɣa-yi soli.
+      hyp: A yi chɛri ka yiri haa shikuru, teemi ni jilima nyɛla yaɣa yi soli.
+      cer: 0.0566
+      wer: 0.3077
+    '321':
+      text: Bɔ ka lahabali maa yuli yɛli zaŋ kpa lahabali maa yɛltɔɣikpani?
+      hyp: Bɔ ka lahibali maa yuli yɛli zaŋ kpa lahibali maa yɛltɔɣa pa ni?
+      cer: 0.0769
+      wer: 0.4545
+    '323':
+      text: Zaŋmi yɛltɔɣa anahi n-kolivaai lahabal’ shɛli din do zuɣusaa ŋɔ.
+      hyp: Zaŋmi yɛlitɔɣa anahiŋkoli vaai lahibal’ shɛli din do zuɣusaa ŋɔ.
+      cer: 0.0577
+      wer: 0.4
+    '324':
+      text: Baŋmi karimbu din ziligi nahiŋgbana ayi shɛŋa a ni bɔhim yaɣili ŋɔ ni.
+      hyp: Baŋmi karimbu din ziligi nahiŋgbana ayi shɛŋa a ni bɔhim yaɣili ŋɔ ni.
+      cer: 0.0
+      wer: 0.0
+    '327':
+      text: Kahigimi karimbu din yɛligi nahiŋgbana ata?
+      hyp: Kahigiri karimbu din yɛligi nahiŋgbana ata.
+      cer: 0.027
+      wer: 0.1667
+    '329':
+      text: Kahigimi ni a maŋmaŋa bachinima.
+      hyp: Kahigimi ni amaŋmaŋ’ bachinima.
+      cer: 0.037
+      wer: 0.4
+    '346':
+      text: Biɛlimpahira tuma zuliya ni nyɛla di sɔŋ n-nam bachipala.
+      hyp: Biɛlim pahira tuma zuliya ni nyɛla di sɔŋ n-nam bachi pala.
+      cer: 0.0
+      wer: 0.4444
+    '357':
+      text: Biɛlimpahirili nyɛla tooni biɛlimpahirili di yi do nyaɣili maa tooni.
+      hyp: Biɛlimpahirili nyɛla tooni biɛlimpahirili di yi donyaɣili maa tooni.
+      cer: 0.0
+      wer: 0.2
+    '358':
+      text: Biɛlimpahirili nyɛla sunsuuni biɛlimpahirili di yi be nyaɣili maa sunsuuni.
+      hyp: Biɛlimpahirili nyɛla sunsuuni biɛlimpahirili di yi bi nyaɣiri maa sunsuuni.
+      cer: 0.0308
+      wer: 0.2
+    '359':
+      text: Biɛlimpahirili nyɛla nyaaŋa biɛlimpahirili di yi ti kana bachi nyaaŋa.
+      hyp: Biɛlimpahirili nyɛla nyaaŋa biɛlimpahirili di yi ti kana bachi nyaaŋa.
+      cer: 0.0
+      wer: 0.0
+    '367':
+      text: Ŋmaligi n-kpa a kpee n-kahigi biɛlimpahira ni nyɛ shɛli.
+      hyp: Ŋmaligi n-kpa a kpee n-kahigi biɛlim pahir’ a ni nyɛ shɛli.
+      cer: 0.0
+      wer: 0.3333
+    '382':
+      text: Nyaya ka bachi maa nyabili din nyɛ bachiniŋdili ŋɔ pubu taɣi n-lɛbi bachinamdili.
+      hyp: Nyaya ka bachi maa nyabu ni din nyɛ bachinimdili ŋɔ pu wutaɣi n-lɛbi bachinamdili.
+      cer: 0.0597
+      wer: 0.3846
+    '389':
+      text: Shɛhira, n-zaŋ biɛlmpahirili -si m-pahi nooŋ-a zuɣu di ni titi noon-si.
+      hyp: shɛhira n-zaŋ beni pahiri li simpahi noong’ a zuɣu di ni ti ti noonsi.
+      cer: 0.1111
+      wer: 0.7273
+    '392':
+      text: Bɔŋbɔŋ ni, zammiya ka kahigi biɛlimpahira balibu yi yaa tariga Dagbani
+        ni.
+      hyp: Bɔmbɔŋ ni, zaŋmiya ka kahigi biɛlim pahira balibu yaa tariga dagban’ ni.
+      cer: 0.082
+      wer: 0.5
+    '393':
+      text: Wula ka di lee taɣiri bachi nyaɣa maa gbunni?
+      hyp: Wula ka di lee taɣiri bachi nyaɣ’ maa gbinni?
+      cer: 0.0556
+      wer: 0.2222
+    '398':
+      text: Biɛlimpahira tuma waliya zuliya kɔŋkɔba puuni.
+      hyp: Biɛlim pahi daa tu maa waliya zuliya kɔŋkoba puuni.
+      cer: 0.1
+      wer: 1.0
+    '400':
+      text: Ŋa sɔŋdi bachi pala nambu ni.
+      hyp: Ŋa sɔŋdi bachi pala nambu ni.
+      cer: 0.0
+      wer: 0.0
+    '401':
+      text: Ŋa sɔŋdi taɣiri bachinima pubu.
+      hyp: Ŋa sɔŋdi taɣiri bachinima pɔbo.
+      cer: 0.0769
+      wer: 0.2
+    '402':
+      text: Biɛlimpahira sɔŋdi namdi bachiniŋda niŋsim saha.
+      hyp: Biɛlim pahira sɔŋdi nam ni bachi niŋda niŋsim saha.
+      cer: 0.0238
+      wer: 1.0
+    '404':
+      text: Biɛlimpahira taɣiri bachinima zaɣ’ gansi n-lɛbiri zaɣ’ bɔbigu.
+      hyp: Biɛlim pahirila taɣiri bachinima zaɣ’ gaansi n-lɛbiri zaɣ’ bɔbigu.
+      cer: 0.0588
+      wer: 0.375
+    '405':
+      text: Biɛlimpahira baŋsim sɔŋdi bachinima yiɣisibu viɛnyɛla mini balli bɔhimbu.
+      hyp: Biɛlim pahira baŋsim sɔŋ ni bachinima yiɣisibu viɛnyɛla mini balli bɔhimbu.
+      cer: 0.0156
+      wer: 0.4444
+    '409':
+      text: Baŋmi biɛlimpahira ŋan be bachinima ŋɔ ni ka wuhi ŋa balibu ni nyɛ shɛŋa.
+      hyp: Banmi biɛlim pahira ŋan be bachinima ŋɔ ni, ka wuhi ŋa balibu ni nyɛ shɛŋa.
+      cer: 0.0169
+      wer: 0.2143
+    '412':
+      text: Niŋmi shili ni a ni zaŋ li n-wuhi a karimbitaba ka kahigi li.
+      hyp: Niŋmi shili ni a ni zaŋ li n-wuh’ a karimba taba ka kahigi li.
+      cer: 0.0426
+      wer: 0.2308
+    '417':
+      text: Di tuuli tuma kuli nyɛla di zaŋdila yɛltɔɣa yaɣa tuɣiri taba.
+      hyp: Di tuuli tuma kul nyɛla di zaŋdila yɛltɔɣa yaɣa tuɣiri taba.
+      cer: 0.02
+      wer: 0.0909
+    '421':
+      text: O karinda dinzuɣu o mali baŋsim.
+      hyp: O kani na, dinzuɣu o mali baŋsim.
+      cer: 0.0769
+      wer: 0.3333
+    '422':
+      text: N ni chaŋ amaa n ni labina.
+      hyp: N ni chaŋ, amaa n ni labina.
+      cer: 0.0
+      wer: 0.0
+    '425':
+      text: Bachituɣira balibuBachituɣira balibu pam m-beni.
+      hyp: Bachituɣira balibu bachituɣira balibu pam m-beni.
+      cer: 0.0
+      wer: 0.4
+    '438':
+      text: Naawuni so n ni ti yɛda.
+      hyp: Naawuni soli ni ti yɛda.
+      cer: 0.1111
+      wer: 0.3333
+    '445':
+      text: Pɔi ka ka kpukpalivari pɔri, di dolila dunia tiŋgbani ni yɛli li shɛli.
+      hyp: Pooli ka kpikpali vari pɔri, di dolila dunia tiŋgbani ni yɛlli shɛli.
+      cer: 0.1053
+      wer: 0.3846
+    '447':
+      text: Saa yi mi, nyin toomi kom.
+      hyp: Saa yi mi, nyin’ tooi mi kom.
+      cer: 0.0526
+      wer: 0.3333
+    '448':
+      text: Naa maa ni daa labi o yaannima sanmi, n daa nyala suhudoo.
+      hyp: Naa maa ni daa lab’ o yaannim’ sammi n-daa nyɛla suhudoo.
+      cer: 0.0889
+      wer: 0.5
+    '450':
+      text: Amii o bela yiŋa bee yɔɣu.
+      hyp: A mi o biɛla yiŋa bee yɔɣu.
+      cer: 0.15
+      wer: 0.5
+    '456':
+      text: Biɛhigu to amaa ti ni kpaŋ ti maŋa pam.
+      hyp: Bɛhigu to o, amaa ti ni kpaŋ timaŋa pam.
+      cer: 0.0667
+      wer: 0.4444
+    '457':
+      text: O yuuni bɔri o shee amaa o bi nya o.
+      hyp: O yuuni bɔr’ o shee, amaa o bi nya o.
+      cer: 0.0385
+      wer: 0.1
+    '459':
+      text: Sabimi bachituɣira balibu shɛhira diba ata ka zaŋ ŋa n-nam yɛltɔɣa.
+      hyp: sabimi bachi tuɣira balibu shɛhira diba ata ka zaŋ maan nam yɛli tɔɣa.
+      cer: 0.0545
+      wer: 0.5455
+    '461':
+      text: Bachituɣira tuma balibu ni tooi wali bala ni, amaa di shɛŋa ni tooi nyɛ
+        yim.
+      hyp: Bachi tuɣira tuma balibu ni tooi wal’ bala ni, amaa di shɛŋa ni tooi nya
+        yim.
+      cer: 0.0333
+      wer: 0.2667
+    '464':
+      text: Di sɔŋdi n-laɣindi yɛltɔɣiŋmahi bee yɛltɔɣiŋmasɔri mini ŋa taba.
+      hyp: Di sɔŋdi ni laɣindi yɛltɔɣ’ mahi bee yɛltɔɣ’ ma sɔri mini ŋa taba.
+      cer: 0.0926
+      wer: 0.7778
+    '465':
+      text: Di sɔŋdi n-tahiri waliginsim na.
+      hyp: di sɔŋdi n-tahiri waliginsim na.
+      cer: 0.0
+      wer: 0.0
+    '467':
+      text: Bachituɣira mali zalisi biɛla zaŋ chaŋ ŋa zaŋ tum tuma polo.
+      hyp: Bachituɣira mali zalisi’ biɛla zaŋ chaŋ na zaŋ tum tuma polo.
+      cer: 0.0204
+      wer: 0.0909
+    '470':
+      text: Bachituɣira kuli nyɛla ŋan gbundi tɛha ni niŋsim.
+      hyp: Bachi tuɣira kul nyɛla ŋan gbindi tɛha ni niŋsim.
+      cer: 0.0488
+      wer: 0.5
+    '472':
+      text: Bachituɣira mali sɔŋsim pam zaŋ chaŋ binyɛra kalibu.
+      hyp: Bachituɣira mali sɔŋsim pam zaŋ chaŋ binyɛra kalibu.
+      cer: 0.0
+      wer: 0.0
+    '473':
+      text: Di yi mali bachituɣira tumdi tuma, che ka a yɛltɔɣa yaɣa zaa saɣi doli
+        taba.
+      hyp: Di yi mali bachi tuɣira tumdi tuma chɛ ka a yɛltɔɣa yaɣa zaa saɣi doli
+        taba.
+      cer: 0.0167
+      wer: 0.2
+    '482':
+      text: Ŋuni n-tiri lala binyɛra maa yuya?
+      hyp: Ŋuna n-tiri lala binyɛra maa yuya.
+      cer: 0.037
+      wer: 0.1667
+    '501':
+      text: Lala soli ŋɔ zaŋ nam bachi pala dii bi yoli Dagbani ni ni.
+      hyp: lala soli ŋɔ zaŋ nam bachi pala dii bi yoli dagban’ ni ni.
+      cer: 0.0222
+      wer: 0.0769
+    '505':
+      text: Zuliyanima pam paŋ bachinima zuliya shɛŋa ni.
+      hyp: Zulianima pam pam bachinima zuliya shɛŋa ni.
+      cer: 0.0526
+      wer: 0.2857
+    '510':
+      text: Sabimi kamani bachi pia din nyɛ bachi paŋda Dagbani ni.
+      hyp: Sabimi kaman bachipia din nyɛ bachipaŋ’ la Dagbani ni.
+      cer: 0.0444
+      wer: 0.5
+    '512':
+      text: Di sɔŋdi zoori zuliya yɛltɔɣa dama zuliya maa yɛltɔɣa bachinima ni yɛligi.
+      hyp: Di sɔŋ ni zoori zuliya yɛlitɔɣa, dama zuliya maa yɛli tɔɣa bachinima ni
+        yɛligi.
+      cer: 0.0484
+      wer: 0.4167
+    '513':
+      text: Di sɔŋdi che ka zuliya yɛltɔɣa wuligiri gindi dunia zaa.
+      hyp: Di sɔŋdi chɛ ka zuliya yɛltɔɣa wuligiri gindi dunia zaa.
+      cer: 0.0217
+      wer: 0.1
+    '514':
+      text: Di sɔŋdi namdi bachi pala m-mali booni bin’ pala.
+      hyp: Di sɔŋdi namdi bachi pala m-mali booni bɛn pala.
+      cer: 0.0263
+      wer: 0.1111
+    '515':
+      text: Di sɔŋdi zuliya yɛltɔɣa bɔhimbu ni.
+      hyp: Di saŋdi zuliya yɛltɔɣa bɔhimbu ni.
+      cer: 0.0345
+      wer: 0.1667
+    '516':
+      text: Di sɔŋdi ti ka ti tooi biɛhiri ti yuuni bachinima pilli ni.
+      hyp: Di sɔŋdi ti ka ti tooi biɛhiri ti yuuni bachinima pilli ni.
+      cer: 0.0
+      wer: 0.0
+    '520':
+      text: Wuhimi biɛlimpahira balibu din be Dagbani ni.
+      hyp: Wuhimi biɛlim pahira balibu din be dagban’ ni.
+      cer: 0.0263
+      wer: 0.4286
+    '521':
+      text: Yihimi biɛlimpahira diba Anahi Dagbani n-sɔŋ.
+      hyp: Yihimi biɛlim pahira dibaa anahi dagbani n-sɔŋ.
+      cer: 0.0263
+      wer: 0.5
+    '522':
+      text: Wuhimi biɛlimpahira tuma diba anahi Dagbani ni.
+      hyp: Wuhimi biɛlim pahira tuma dibaa anahi dagban’ ni.
+      cer: 0.05
+      wer: 0.5714
+    '523':
+      text: Baŋmi biɛlimpahira ŋan be bachinima ŋɔ ni ka wuhi ŋa balibu ni nyɛ shɛli.
+      hyp: bɛn mi biɛlim pahira ŋan be bachinima ŋɔ ni, ka wuhi ŋa balibu ni nyɛ shɛli.
+      cer: 0.0339
+      wer: 0.2857
+    '524':
+      text: Kahigi n-wuhi bachituɣira ni nyɛ shɛli.
+      hyp: kahiga n-wuhi bachi tuɣira ni nyɛ shɛli.
+      cer: 0.0312
+      wer: 0.5
+    '525':
+      text: Baŋmi bachituɣira balibu ni nyɛ shɛli Dagbani ni.
+      hyp: baŋli bachi tuɣir’ a balibu ni nyɛ shɛli daban’ ni.
+      cer: 0.0732
+      wer: 0.625
+    '526':
+      text: Wuhimi waliginsim shɛli din be bachituɣira bali shɛŋa a ni yihi maa ni.
+      hyp: Wuhimi waliginsim shɛli din be bachi tuɣira bal’ shɛŋa a ni yihi maa ni.
+      cer: 0.0172
+      wer: 0.2308
+    '528':
+      text: Boomi bschituɣira gbunni yɛltɔɣa ŋan doli ŋɔ na ni.
+      hyp: Boomi bɛ shitɔɣira gbinni yɛltɔɣa ŋan’ doli ŋɔ na ni.
+      cer: 0.0952
+      wer: 0.3333
+    '529':
+      text: O diya amaa o bi tiɣi.
+      hyp: O diya, amaa o bi taɣi.
+      cer: 0.0625
+      wer: 0.1667
+    '530':
+      text: N ni chaŋ amaa pa zuŋɔ.
+      hyp: N ni chaŋ a maa pa zuŋɔ.
+      cer: 0.0
+      wer: 0.3333
+    '531':
+      text: Kahigimi binshɛli din nyɛ bachi nambu soya.
+      hyp: Kahigimi binshɛli din nyɛ bachi nambu soya.
+      cer: 0.0
+      wer: 0.0
+    '532':
+      text: Baŋmi bachi nambu soya dibaata shɛŋa a ni mi Dagbani ni.
+      hyp: Baŋmi bachi nambu soya dibaata shɛŋa a ni mi dagban’ ni.
+      cer: 0.0222
+      wer: 0.0909
+    '533':
+      text: Kahigimi Dagbani bachi nambu balibu dibaata.
+      hyp: Kahirimi Dagbani bachi nambu balibu dibu ata.
+      cer: 0.0526
+      wer: 0.5
+    '534':
+      text: Kahigimi Dagbani bachi nambu daanfaani yini bee garibu.
+      hyp: Kahigimi Dagbani bachi nambu daanfaani yini bee garibu.
+      cer: 0.0
+      wer: 0.0
+    '536':
+      text: Zuŋɔ, tabibi baŋsim nyɛla din kpa talahi baŋsim bɔhimbu ni.
+      hyp: Zuŋɔ tabiba baŋsim nyɛla din kpa talahi baŋsim bɔhimbu ni.
+      cer: 0.0208
+      wer: 0.1
+    '542':
+      text: Ti ni zaŋ rɔbɔtinima n-zali karimbanima zaa ni?
+      hyp: Ti ni zaŋ robɔtinima n-zali karimbanim’ zaa ni.
+      cer: 0.0526
+      wer: 0.25
+    '558':
+      text: Yɛltɔɣiŋmaa nyɛla bachinima din laɣim m-pe taba n-nam yɛltɔɣili.
+      hyp: Yɛlitɔɣu maa nyɛla bachinima din laɣim piɛ taba n-nam yɛlitɔɣili.
+      cer: 0.1321
+      wer: 0.4444
+    '565':
+      text: Zaŋmi a ni bɔhim shɛli maa m-maɣisi a bɔŋ maa ni.
+      hyp: Zaŋmi a ni bɔhim shɛli maa m-maɣisi a bɔŋ maa ni.
+      cer: 0.0
+      wer: 0.0
+    '574':
+      text: Yɔltɔɣiŋmasɔri shɛhira shɛŋa n-do gbunni ŋɔ.
+      hyp: Yoli tɔɣi ma sol’ shɛhira shɛŋa n-do gbinni ŋɔ.
+      cer: 0.1892
+      wer: 0.8333
+    '585':
+      text: Dimbɔŋɔ nyɛla yɛltɔɣiŋmasɔɣu din zuɣu nyɛ bachinamdili bee bachizaanili.
+      hyp: Dimbɔŋɔ nyɛla yɛlitɔɣima sɔɣu dinzuɣu nyɛ bachinamdili bee bachi zaa nili.
+      cer: 0.0317
+      wer: 0.6667
+    '588':
+      text: Dimbɔŋɔ wuhirimi ni di nyɛla din nyɛ bachi yini kɔŋko.
+      hyp: Dimbɔŋɔ wuhirimi ni di nyɛla din nyɛ bachi yini kɔŋko.
+      cer: 0.0
+      wer: 0.0
+    '596':
+      text: Bachinima din galisi nyɛla din ni tooi nyɛ bachinamdili yɛltɔɣiŋmasɔɣu.
+      hyp: Bachinima din galisi nyɛla din ni tooi nyɛ bachinamdili yɛltɔɣa ma sɔɣi.
+      cer: 0.0492
+      wer: 0.3
+    '622':
+      text: Bachi zuɣu maa ni tooi lan ʒiri nyaaŋa bachikahigira mini tooni bachikahigira.
+      hyp: Bachi zuɣu maa ni tooi lan ʒiri nyaaŋa bachikahigira mini tooni bachikahigira.
+      cer: 0.0
+      wer: 0.0
+    '626':
+      text: Bɔna puuni, nammiya bachinamdili yɛltɔɣiŋmasɔri diba atata.
+      hyp: Bɔ na puuni nammiya bachinamdili yɛltɔɣima ma sɔri dib’ ata ata.
+      cer: 0.0784
+      wer: 1.1429
+    '649':
+      text: Bɔna puuni, nammiya bachiniŋdili yɛltɔɣiŋmasɔri.
+      hyp: Bɔna puuni nammiya bachinim’ ni di yɛli tɔɣima sɔri.
+      cer: 0.119
+      wer: 1.2
+    '665':
+      text: Bachibuɣisirili ɛltɔɣiŋmasɔɣu malila bachibuɣisirili ka di nyɛ di bachi
+        zuɣu.
+      hyp: Bachibuɣisirili ɛltɔɣa maa sɔɣir’ malila bachibuɣisirili ka di nyɛ di bachi
+        zuɣu.
+      cer: 0.0746
+      wer: 0.3
+    '670':
+      text: Dimbɔŋɔ nyɛla yɛltɔɣiŋmasɔɣu din bachi zuɣu nyɛ zaashee bachi.
+      hyp: Dimbɔŋɔ nyɛla yɛltɔɣima sɔɣir’ din bachi zuɣu nyɛ zaashee bachi.
+      cer: 0.0566
+      wer: 0.2222
+    '680':
+      text: O chaŋ tiŋa maa puuni.
+      hyp: o chaŋ tiŋ’ maa puuni.
+      cer: 0.0588
+      wer: 0.2
+    '682':
+      text: Din kpalim ka bi sabigi pam maa mi nyɛla bachiniŋdili yɛltɔɣiŋmasɔɣu.
+      hyp: Din kpalim ka bɛ sabigi pam maa mi nyɛla bachiniŋdili yɛltɔɣa ma sɔɣu.
+      cer: 0.0517
+      wer: 0.3636
+    '688':
+      text: Di mali yɛltɔɣiŋmasɔri n-kahigiri tɛha.
+      hyp: Di mali yɛltɔɣa Masɔrin kahigiri tɛha.
+      cer: 0.0606
+      wer: 0.6
+    '690':
+      text: Din yɛn che ka yɛltɔɣa ne, yɛltɔɣiŋmasɔri tumdi tuun’ kara pam.
+      hyp: Din yɛn chɛ ka yɛltɔɣa ni yɛltɔɣa ma sɔri tumdi tuun’ kara pam.
+      cer: 0.08
+      wer: 0.4545
+    '695':
+      text: Dakulo din gari la, m mini n zo daa gbaami ni ti di ti dabisili maa teeku
+        duli.
+      hyp: Dakulo din gari la m mini n zo daa gbaai mi ni ti di ti dabisili maa teeku
+        duli.
+      cer: 0.0167
+      wer: 0.1111
+    '701':
+      text: Ti ni daa kuli paai, ti daa yulimi m-bo luɣ’ viɛlli shee kpukpalitia gbunni.
+      hyp: Ti ni daa kul paai ti daa yulimi m-boluɣ’ viɛlli shee kukpa teei gbinni.
+      cer: 0.1186
+      wer: 0.4286
+    '711':
+      text: Bɔna puuni, piɛmiya yɛltɔɣiŋmasɔri balibu maa ka di doli taba (a.
+      hyp: Bɔna puuni, fɛmiya yɛli tɔɣima sɔri balibu maa ka di doli taba a.
+      cer: 0.0769
+      wer: 0.3636
+    '714':
+      text: Zaŋmiya yi labisibu maa n-wuhi karinduu maa zaa ka yi zamzam li.
+      hyp: Zaŋmiya yi labisibu maa n-wuhi karindoo maa zaa ka yi zam zam li.
+      cer: 0.0392
+      wer: 0.25
+    '728':
+      text: Senyo ɖa akplĕ hafi yi suku.
+      hyp: Sanyɔ daa kpili hafi yisiko.
+      cer: 0.3182
+      wer: 0.8333
+    '736':
+      text: Yɛltɔɣiŋmaa din ku tooi zani di gama zuɣu.
+      hyp: yɛltɔɣa maa din ku tooi zani di gama zuɣu.
+      cer: 0.0588
+      wer: 0.25
+    '742':
+      text: Makafui ate ŋu ade tɔme gbe sia gbea?
+      hyp: Maka fura tiŋ’ maa di Tomi Gbɛsiya bia.
+      cer: 0.3793
+      wer: 1.0
+    '759':
+      text: Di kahigibu n-do gbunni ŋɔ.
+      hyp: Di kahigi bindogbinni ŋɔ.
+      cer: 0.0952
+      wer: 0.6
+    '765':
+      text: Yɛltɔɣiŋmaa din nyɛ zaligu ni tooi bi bɔri zuɣu.
+      hyp: yɛltɔɣa maa din nyɛ zaligu ni tooi bi bɔri zuɣu.
+      cer: 0.0513
+      wer: 0.2222
+    '769':
+      text: Yi ni tooi ti shɛhira shɛŋa zaŋ kpa bɔhigu bachinima din Dagbani polo.
+      hyp: Yi ni tooi ti shɛhira shɛŋa zaŋ kpa bɔhigu bachinima din’ dagbani polo.
+      cer: 0.0
+      wer: 0.0
+    '770':
+      text: Yɛltɔɣiŋmaa din nyɛ bɔhigu naarimi ni bɔhigu bia.
+      hyp: Yɛltɔɣa maa din nyɛ bɔhigu naari mi ni bɔhigu bia.
+      cer: 0.0488
+      wer: 0.5
+    '787':
+      text: Kofi nim no afiri sε ɔyε.
+      hyp: Kɔfinim’ ni afirisiri o yɛli.
+      cer: 0.4737
+      wer: 1.0
+    '791':
+      text: Chɛliya ka zamzam di balibu maa.
+      hyp: Chɛliya ka zamzam di balibu maa.
+      cer: 0.0
+      wer: 0.0
+    '802':
+      text: Kafui xlĕ agbalĕ si fofoa nε la nyuie.
+      hyp: ka fushili a gbalisi fufu a ni la nyuya.
+      cer: 0.3333
+      wer: 1.0
+    '804':
+      text: Nyɔnu si ƒle avɔ etsɔ la dzo.
+      hyp: nyɔlisi filaavɔi chɔla jo.
+      cer: 0.4545
+      wer: 1.0
+    '827':
+      text: Bachinima din pe taba m-buɣisiri maa gbunni m-booibooi yɛltɔɣa maa ni
+        maa.
+      hyp: Bachinima din pe taba m-buɣisiri maa gbinni m-boobooi yɛl’ tɔɣa maa ni
+        maa.
+      cer: 0.0333
+      wer: 0.3333
+    '852':
+      text: Sabbu bibahira mini di tuma.
+      hyp: Sabbu bɛ bahira mini di tuma.
+      cer: 0.0435
+      wer: 0.4
+    '853':
+      text: Ŋmahin’ shɛli di ni mali sɔŋdi yɛltɔɣili bahigu din wuhiri yɛltɔɣili maa
+        naabu.
+      hyp: Ŋmahin shɛli di ni mali sɔŋ ni yɛltɔɣili bahigu din wuhiri yɛltɔɣili maa
+        naabu.
+      cer: 0.0154
+      wer: 0.1538
+    '857':
+      text: Di zaŋdimi wuhiri bachinima din ŋmaai filim naabu.
+      hyp: Di zaŋdim’ wuhiri bachinima din ŋmaai filim naabu.
+      cer: 0.0238
+      wer: 0.125
+    '858':
+      text: Di mali li sɔŋdi so yɛligu bee yɛltɔɣili bahigu.
+      hyp: Di mali ni sɔŋ ni so yɛligu bee yɛli tɔɣili bahigu.
+      cer: 0.0769
+      wer: 0.5556
+    '859':
+      text: Dɔɣite maa yɛliya, “A nyɛla ŋun nyari alaafee”.
+      hyp: Dɔɣ’ ti maa yɛliya, “A nyɛla ŋun nyɛla alaafee.”
+      cer: 0.1389
+      wer: 0.375
+    '860':
+      text: Karimba maa yɛlimi ni “Zahimbu kani zuŋɔ”.
+      hyp: Karimba maa yɛlimi ni zahimbu ka ni zuŋɔ.
+      cer: 0.0
+      wer: 0.2857
+    '861':
+      text: Di zaŋ li woligiri binyɛra taba kalibu ni.
+      hyp: Di zaŋ li woligiri binyɛra taba kalibu ni.
+      cer: 0.0
+      wer: 0.0
+    '863':
+      text: N kpɛla shitɔɣu maa ni ni n ti da chibo, sɔɣiso, bɔɣati ni bɔdua.
+      hyp: n-kpe la shitɔɣu maa ni ni nti dachibo sɔɣisigu bɔɣi ti ni bɔdua.
+      cer: 0.102
+      wer: 0.5714
+    '866':
+      text: Di zaŋdi li pirigiri bachibuɣisira din buɣisiri bachinamdili.
+      hyp: Di zaŋdi li pirigiri bachi buɣisira din buɣisiri bachinamdili.
+      cer: 0.0
+      wer: 0.25
+    '867':
+      text: Di zaŋ li n-wuhi binyɛra kalibu piligu, shɛhira bee kahigibu.
+      hyp: Di zaŋ li n-wuhi binyɛra kalibu piligu shɛhira bee kahigibu.
+      cer: 0.0
+      wer: 0.0
+    '870':
+      text: Di zaŋdi li pirigiri yɛltɔɣiŋmahi diba ayi din ni tooi zani di gama zuɣu
+        taba.
+      hyp: Di zaŋdi li pirigiri yɛlitɔɣimahi diba ayi din ni tooi zani di gama zuɣu
+        taba.
+      cer: 0.0317
+      wer: 0.0667
+    '871':
+      text: M malila zahimbu biɛɣuni; n karindimi yuŋ zaa.
+      hyp: M malila zahimbu biɛɣu ni n-kandim’ yuŋ zaa.
+      cer: 0.0811
+      wer: 0.375
+    '872':
+      text: M bɔrimi ni n chaŋ Aŋkara; saa n-daa mira.
+      hyp: M bɔrimi ni n chaŋ aŋ kara, saa n-daa mir’ a.
+      cer: 0.0
+      wer: 0.4444
+    '873':
+      text: Di zaŋdi woligiri binyɛra taba kalibu ni.
+      hyp: di zaŋdi woligiri binyɛra taba kalibu ni.
+      cer: 0.0
+      wer: 0.0
+    '874':
+      text: Bɛ tila bihi maa pina kamani; nɛma, diɛma binyɛra, tiwala ni namdanima.
+      hyp: Bɛ tila bihi maa pina kaman nɛma diɛma binyɛra tiwala ni namdanima.
+      cer: 0.0179
+      wer: 0.0833
+    '875':
+      text: Di zaŋ li wuhiri bachi yaɣ’ shɛli ni ŋmaai bahi shɛm.
+      hyp: Di zaŋ li wuhiri bachi yaɣ’ shɛl’ ni ŋmaai bahi shɛm.
+      cer: 0.0244
+      wer: 0.0909
+    '876':
+      text: Paɣ’ jia maa gari kpe.
+      hyp: Pa jia maa gariche.
+      cer: 0.1875
+      wer: 0.6
+    '877':
+      text: Ti’ titali ka bɛ ŋmaai sɔŋ.
+      hyp: Ti titali ka bɛ ŋmaai sɔŋ.
+      cer: 0.0
+      wer: 0.0
+    '880':
+      text: Karimba maa yɛlimi ni, “Shikuru kandina leeti kani”.
+      hyp: Karimba maa yɛlimi ni shikuru kandina lee ti kani.
+      cer: 0.0
+      wer: 0.25
+    '882':
+      text: Soyɛligu bia ni tooi lan zaŋ tum tuma lahibali yuli sabbu ni.
+      hyp: So yɛligu bia ni tooi lan zaŋ tum tuma lahibali yuli sabbu ni.
+      cer: 0.0
+      wer: 0.1667
+    '885':
+      text: Haaifin wuhirila binyɛra ayi waɣilim.
+      hyp: Halfin wuhirila binyara ayi wɔɣilim.
+      cer: 0.125
+      wer: 0.6
+    '887':
+      text: Bɛ mali pɛrɛntɛsinima n-goori lahabal’ shɛli din pahi n-kahigira.
+      hyp: Bɛ mali piɛrintɛsi nima n-goori lahibal’ shɛli din pahi n-kahigira.
+      cer: 0.0566
+      wer: 0.3333
+    '889':
+      text: N laamba kookoo puu (din be Togo la) tiri ba liɣiri pam.
+      hyp: n laamba ka o ka o puu din be tɔɣili la tiri ba laɣiri pam.
+      cer: 0.1905
+      wer: 0.5
+    '890':
+      text: Bɛ gbaala chuɣu maa zali biɛɣuni (pa zuŋɔ).
+      hyp: Bɛ gbaala chuɣu maa zali biɛɣu ni pa zuŋɔ.
+      cer: 0.0
+      wer: 0.25
+    '893':
+      text: Karimba so ŋun yuli booni Josɛfin (Ma suŋ) la sa kana kpe sɔhila.
+      hyp: karimba so ŋun yuli booni Jɔsɛfɛn maa suŋ la sakana chɛ sɔhi la.
+      cer: 0.12
+      wer: 0.4615
+    '894':
+      text: Jabihi maa (Alaasani mini Fusheni) kanila kpɛna zuŋɔ.
+      hyp: Jabihi maa alahisani mini fushɛni ka ni la kpɛna zuŋɔ.
+      cer: 0.0698
+      wer: 0.625
+    '895':
+      text: Di ni tooi zaŋ daashi zali vuhimbia bee kolɔn zaani.
+      hyp: di ni tooi zaŋ daashi zali vuhim bia bee kolon zaani.
+      cer: 0.0238
+      wer: 0.3
+    '896':
+      text: Di daa bi maai – wuntaŋa daa yiya pam.
+      hyp: Di daa bi maai wuntaŋa daa yiya pam.
+      cer: 0.0
+      wer: 0.0
+    '897':
+      text: Silaashi nyɛla booli din puli zaya ka bɛ mali li zaani bachituɣirili ‘bee’
+        zaani.
+      hyp: Silashi nyɛla booli din puli zaya ka bɛ mal’ li zaani bachitɔɣili bee zaani.
+      cer: 0.0769
+      wer: 0.2143
+    '904':
+      text: Di naarila yɛltɔɣili din nyɛ yekpeeni.
+      hyp: di naanila yɛlitɔɣili din nyɛ yɛkpeeni.
+      cer: 0.0938
+      wer: 0.5
+    '905':
+      text: Di naarila yɛltɔɣili din nyɛ bɔhigu.
+      hyp: Di naarila yɛlitɔɣili din nyɛ bɔhigu.
+      cer: 0.0333
+      wer: 0.1667
+    '908':
+      text: Di wuhirila bachinima, yɛltɔɣiŋmasɔri bee yɛltɔɣa ni ŋmaai bahi shɛm.
+      hyp: Di wuhirila bachinima yɛltɔɣa ma sɔri bee yɛltɔɣa ni ŋmaai bahi shɛm.
+      cer: 0.0345
+      wer: 0.3
+    '909':
+      text: O daa boli ʒɛkuri maa.
+      hyp: O daa boli ʒiɛkur’ maa.
+      cer: 0.1176
+      wer: 0.2
+    '915':
+      text: N-woligiri bachi diba ayi din sabbu nyɛ yim amaa ka di gbunni lee woligi
+        taba.
+      hyp: n-woligiri bachi dib’ ayi din sabbu nya yim, amaa ka di gbinni lee woligi
+        taba.
+      cer: 0.0484
+      wer: 0.2
+    '919':
+      text: Zaŋmiya yi labisibu maa maɣisi yi taba dini.
+      hyp: Zaŋmiya yi labisibu maa maɣisi yi taba dini.
+      cer: 0.0
+      wer: 0.0
+    '927':
+      text: N laamba yili bela tiŋkpaŋa.
+      hyp: n laamba yili biɛla tiŋkpaŋa.
+      cer: 0.087
+      wer: 0.2
+    '930':
+      text: Timya daliri shɛli din che ka yi pii lala sabbu bibahira maa.
+      hyp: Timiya dalir’ shɛli din chɛ ka yi pii lala sabbu bi bahira maa.
+      cer: 0.0612
+      wer: 0.4167
+    '941':
+      text: Zaŋmi a maŋmaŋa bachinima n-kahigi wuhi yɛltɔɣiŋmasɔɣu ni nyɛ shɛli.
+      hyp: Zaŋmi amaŋmaŋ’ bachinima n-kahigi wuhi yɛltɔɣa ma sɔɣa ni nyɛ shɛli.
+      cer: 0.0702
+      wer: 0.5
+    '946':
+      text: Zaŋmi a maŋmaŋa bachinima n-kahigi yɛltɔɣiŋmaa ni nyɛ shɛli.
+      hyp: Zaŋmi amaŋmaŋ’ bachinima n-kahigi yɛltɔɣa maa ni nyɛ shɛli.
+      cer: 0.06
+      wer: 0.4444
+    '947':
+      text: Sabimi yɛltɔɣiŋmahi balibu diba ayi maa ka kahigi li biɛla.
+      hyp: Sabimi yɛtɔɣ’ mahi balibu diba ayi maa ka kahigi li biɛla.
+      cer: 0.0612
+      wer: 0.2
+    '951':
+      text: Baŋmi bachibuɣisirili yɛltɔɣiŋmahi din be lahibali maa ni ka sabi li sɔŋ.
+      hyp: Baŋmi bachibuɣisirili yɛltɔɣa maha din be lahibali maa ni ka sab’ li sɔŋ.
+      cer: 0.0656
+      wer: 0.25
+    '959':
+      text: Sabimi sabbu bibahira balibu diba anu din be zuliya shɛli a ni bɔhindi
+        ni.
+      hyp: Sabimi sabbu bɛ bahira balibu dib’ anu din be zuliya shɛli a ni bɔhindi
+        ni.
+      cer: 0.0333
+      wer: 0.2143
+    '961':
+      text: A maŋmaŋa bachinima puuni, kahigim daakiritinima ni nyɛ shɛŋa.
+      hyp: amaŋmaŋ’ bachinima puuni kahigim daa kili tinim’ ni nyɛ shɛŋa.
+      cer: 0.0577
+      wer: 0.5556
+    '966':
+      text: Yaɣili ŋɔ yɛn zaŋla karimbihi n-yuli binshɛli din nyɛ lahibali nambu mini
+        lɛbigibu.
+      hyp: Laali ŋɔ yɛn zaŋla karimbihi n-yuli binshɛli din nyɛ lahibal’ nambu mini
+        labigibo.
+      cer: 0.087
+      wer: 0.2308
+    '977':
+      text: Tumaduu gbaŋ nyɛla gban’ shɛli din sabiri tiri kpamba.
+      hyp: Tuma doo gbaŋ nyɛla gban’ shɛli din sabiri tiri kpamba.
+      cer: 0.0455
+      wer: 0.2222
+    '978':
+      text: Dɔɣim gbana sabirimi tiri dɔɣiriba, zonima bee ninvuɣ’ so ŋun nyɛ a saawaralana.
+      hyp: Dɔɣim gba na sabirimi tiri dɔɣiriba zɔnima bee ninvuɣ’ so ŋun nyɛ a saawaralana.
+      cer: 0.0154
+      wer: 0.2308
+    '979':
+      text: Lahibali nambu nyɛla sasabira maa pe lahibali shɛli o ni sabiri maa n-sɔŋ
+        shɛm.
+      hyp: Lahibali nambu nyɛla sasabira maa pii lahibal’ shɛli o ni sabiri maa ni
+        sɔŋ shɛm.
+      cer: 0.0625
+      wer: 0.2857
+    '980':
+      text: Lahibali sabbu nyɛla tɛh’ shɛli bee lahibali shɛli din ti sabbu puuni.
+      hyp: Lahibal’ sabbu nyɛla tɛha, shɛli bee lahibal’ shɛli din ti sabbu puuni.
+      cer: 0.0526
+      wer: 0.25
+    '981':
+      text: Lahibali lɛbigibu nyɛla lahibali gbunni zaŋ ti n-yi zuliya shɛli ni n-kpɛhi
+        zuliya shɛli ni.
+      hyp: Lahibal’ lɛbigibu nyɛla lahibal’ gbini ni zaŋ ti n-yi zuliya shɛl’ ni n-kpɛhi
+        zuliya shɛl’ ni.
+      cer: 0.08
+      wer: 0.4
+  source: evaluated
+- model: ghananlpcommunity/ghana-tts-36k
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  cer: 0.1266
+  wer: 0.5424
+  score: 0.1266
+  samples: 200
+  valid: 200
+  avg_seconds: 2.38
+  judge:
+    model: KhayaAI/khaya-asr-v3
+    cer_on_real_speech: 0.1526
+  entries:
+    '2':
+      text: Yaɣili ŋɔ piini wuhiri bachjilli, bachijilli biɛhigu ni yee baŋsim.
+      hyp: Yɛlili ŋɔ pia ni wuhiri ba jilli, bachi jilli biɛhigu ni yɛli baŋsim.
+      cer: 0.1429
+      wer: 0.8
+    '7':
+      text: A ni mali baŋsim zaŋ jɛndi yee zaŋ nam Dagbani bachi pala.
+      hyp: ka n ni mali bansim zaŋ jɛndi yee zaŋ nam Dagba ni bachi pala.
+      cer: 0.0652
+      wer: 0.4167
+    '10':
+      text: Bachijilli nyɛla bachi yaɣili di ni ni tooi boli shɛli.
+      hyp: Baachi jinli nyɛla baachi yaagili di ni ni tooi bo li shɛli.
+      cer: 0.1111
+      wer: 0.6
+    '11':
+      text: Bachijilli konsɔnanti nyɛla konsɔnanti shɛli din nahiŋgban ŋmani bachijilli.
+      hyp: Bakijilli konsonanti nyɛla konsonanti shɛli din nahiŋgbaŋ ŋmani bachijilli.
+      cer: 0.0746
+      wer: 0.4444
+    '12':
+      text: Yee nyɛla kukoli taɣiri shɛli din ni tooi tahi bachi gbunni taɣibu na.
+      hyp: Yi yi nyɛla kukoli taɣiri shɛli dii ni tooi tahi bachi gbuni taai buna.
+      cer: 0.1053
+      wer: 0.4615
+    '14':
+      text: Di ni tooi lahi nyɛ yaɣ’ shɛli ti vuhim ni lura bachi bolibu.
+      hyp: di ni tooi lan nya yaa shɛli ti vuhim ni lura bachi bolibu.
+      cer: 0.0851
+      wer: 0.2308
+    '16':
+      text: Dinzuɣu, duni malila bachijila ayi.
+      hyp: Dinzuu, du ni mali lala bachiji la ayi.
+      cer: 0.1034
+      wer: 1.4
+    '20':
+      text: Dimbɔŋɔ tooi niŋdimi di yi niŋ ka vaawuli bi doli konsɔnantinima maa.
+      hyp: Dimbɔŋɔ ti o niŋdimi di yi niŋ ka vaawuli bi doli kun sɔna tinima maa.
+      cer: 0.0702
+      wer: 0.4167
+    '23':
+      text: Ŋa shɛhira shɛŋa n-do gbunni ŋɔ.
+      hyp: Mashɛhira shɛŋa n-du gbuni ŋɔ.
+      cer: 0.12
+      wer: 0.6667
+    '29':
+      text: Di lahi sɔŋdi ban bɔhindi ka bɛ baŋdi yɛltɔɣa bachinima gbunni.
+      hyp: Di lahi yi sɔŋdi baŋ bɔhindi ka be baŋ di yɛltɔɣa bachinima gbinni.
+      cer: 0.0962
+      wer: 0.5455
+    '35':
+      text: Bachi yini kam pirimi n-doli ŋa bachijil’ shɛŋa ŋa ni mali.
+      hyp: Bachi yi ni kam pirimi n-do li ŋa bachijiri shɛŋa ŋa ni mali.
+      cer: 0.0435
+      wer: 0.4545
+    '36':
+      text: Gahana zuliyanima bachijila balibu waliya.
+      hyp: Kahana zuliyanima bachijila balibu waliya.
+      cer: 0.027
+      wer: 0.2
+    '40':
+      text: Bachijil’ shɛli din ka nyaaŋa nyɛla bachijil’ shɛli din naai ni vaawuli.
+      hyp: Bachigib' shɛli din ka nyaaŋa nyɛla bachigib' shɛli din naai ni vaawuli.
+      cer: 0.069
+      wer: 0.1667
+    '44':
+      text: Bachijil’ shɛli din mali nyaaŋa nyɛla bachi shɛli din naari ni konsɔnanti.
+      hyp: Bachi jil’ shɛli din mali nyaaŋa nyɛla bachi shɛli din naari ni konsonanti.
+      cer: 0.0164
+      wer: 0.25
+    '47':
+      text: Guruni, Kpunkpaansili, Dagaari, ni ŋan pahi.
+      hyp: Guruni, Kpinkpaansili, Dagaari, ni ŋan pahi.
+      cer: 0.0286
+      wer: 0.1667
+    '48':
+      text: Shɛhira shɛŋa n-do gbunni ŋɔ.
+      hyp: Shahira shɛŋa n-do gbu ni ŋɔ.
+      cer: 0.087
+      wer: 0.6
+    '49':
+      text: Zaŋmi a maŋmaŋa bachinima m-buɣisi binshɛli din nyɛ bachijilli.
+      hyp: Zaŋmiy’ amaa ŋɔ a bachi ni man’ buɣisi bin’ shɛli din nyɛ bachijilli.
+      cer: 0.0943
+      wer: 1.0
+    '51':
+      text: Wuhimi bachijila bal’ shɛŋa ŋan be Dagbani ni.
+      hyp: Wuhimi bachijilaabar’ shɛŋa ŋan be Dagbani ni.
+      cer: 0.0541
+      wer: 0.25
+    '72':
+      text: A mini a kpee kahigimi bachijila biɛhigu ŋan bachi’ shɛŋa di ni nam maa.
+      hyp: L mini a kpee ka Higim bachi jila biɛhigu ŋan bachi shɛŋa di ni nam maa.
+      cer: 0.0351
+      wer: 0.3571
+    '74':
+      text: Sakanooŋa mini salinsaa n-da nyɛ zonima viɛnyɛliŋga.
+      hyp: Saka nooŋa mini salinsaa n-daa nyɛ zonima viɛnyɛliŋga.
+      cer: 0.0227
+      wer: 0.4286
+    '93':
+      text: Yee taɣirimi yɛltɔɣili zaa puuni.
+      hyp: yee taarii mini yɛltɔɣilili zaa puuni.
+      cer: 0.25
+      wer: 0.6
+    '94':
+      text: Zuliya balbu mali yee bal’ kɔŋkɔba.
+      hyp: Zuliya balibu mali yee bal' kɔŋkoba.
+      cer: 0.0714
+      wer: 0.3333
+    '101':
+      text: Zimbasili, Aŋkarinsili, Kasina, Dagbani, Ayigbesili, ŋan pahi.
+      hyp: Aŋkarinsili, kasina, Dagbani, ayi gbisili, ŋan pahi.
+      cer: 0.2
+      wer: 0.4286
+    '112':
+      text: Yee ka di mali waligiri bachi shɛŋa ŋan ŋmɛbu ni gbunninyɛ yim zuliya
+        yɛltɔɣa.
+      hyp: Yɛlka di mali waligiri bachi shɛŋa ŋan ŋme bu ni gbu ni nyɛ yim zuliya
+        yɛtɔɣa.
+      cer: 0.0781
+      wer: 0.5714
+    '126':
+      text: Bɔŋbɔŋ puuni, kahigimiya yee tuma.
+      hyp: Bɔŋ’ puni? Ka yi giimiya, yee yi ti ma?
+      cer: 0.3214
+      wer: 1.6
+    '130':
+      text: Baŋmi yee bal’ shɛŋa ŋan be bachi shɛŋa di ni ti ŋɔ.
+      hyp: Yɛlbal’ shɛŋa ŋan be bachi shɛŋa di ni ti ŋɔ.
+      cer: 0.1795
+      wer: 0.25
+    '132':
+      text: Baŋmi bachijil’ shɛŋa ŋan ʒiri yee bachi shɛŋa di ni ti maa puuni.
+      hyp: Bɛ mi bachi jil’ shɛŋa ŋan ʒiri ʒee bachi shɛŋa di ni ti maa puuni.
+      cer: 0.0577
+      wer: 0.3846
+    '133':
+      text: Zaŋmi a labisibu n-wuhi karindu maa zaa.
+      hyp: Zaŋmi alabisibu n-wuhi karindu maa zaa.
+      cer: 0.0
+      wer: 0.2857
+    '139':
+      text: Zaŋmi shɛhira dibaata n-kahigi yee tuma Dagbani.
+      hyp: Zaŋmi shɛhirira dibaa ata n-kahigi yɛli tuma dagba ni.
+      cer: 0.15
+      wer: 0.8571
+    '142':
+      text: Yaɣili ŋɔ kahigirila yɛltɔɣikpana baŋbu lahabali, bee lahabali puuni.
+      hyp: Yaayili ŋɔ ka Higiri la yɛl’ tɔb’ kpana bɛn gbubi lahabali bee lahabali
+        puuni.
+      cer: 0.1525
+      wer: 1.0
+    '149':
+      text: Yɛlkpan’ shɛli din be lahabali puuni n-nyɛ di ni ʒiri yɛltɔɣikpan’ shɛli
+        lahabali ni ʒira.
+      hyp: Yakpan’ shɛli din be lahabali puuni n-nyɛ di ni ʒiri yɛltɔɣ’ kpan’ shɛli
+        lahabali ni ʒira.
+      cer: 0.0417
+      wer: 0.2
+    '150':
+      text: Dimbɔŋɔ ni tooi be yɛltɔɣ’ shɛli din ʒiri yɛltɔɣikpani ka mali yɛltɔɣ’
+        shɛŋa ŋan kahigira.
+      hyp: Dimbɔŋɔ ni tooi bee yɛlitɔɣ’ shɛli din tiri yɛlitɔɣ’ kpani, ka mali yɛlitɔɣ’
+        shɛŋa ŋan kahigira.
+      cer: 0.0822
+      wer: 0.4
+    '151':
+      text: Karimbu ni tooi nyɛ din ziligi bee din yɛligi.
+      hyp: Karimbu ni tooi n-nyɛ din ziligi a bee din yɛligi.
+      cer: 0.0541
+      wer: 0.2222
+    '159':
+      text: Dimbɔŋɔ yɛrila baŋsim yaɣili, lahabali bee alizama maa daliri.
+      hyp: Dimbɔŋɔ yɛrila baŋsim yaali, lahabali bee alizama maa daliriya.
+      cer: 0.0769
+      wer: 0.2222
+    '184':
+      text: Zaŋmi a tɛha m-maɣisi ŋan sabi do gbunni ŋɔ.
+      hyp: Zaŋmi a tɛha m-maɣisi ŋan sabi di gbunni ŋɔ.
+      cer: 0.0294
+      wer: 0.1111
+    '187':
+      text: Dimbɔŋɔ nyɛla n-vihi bo yɛltɔɣikpan’ shɛli din be lahabali maa puuni.
+      hyp: Bimbɔŋɔ nyɛla n vihibu yɛlitɔri kpan’ shɛli din be lahabali maa puuni.
+      cer: 0.0714
+      wer: 0.4545
+    '190':
+      text: Dimbɔŋɔ m-mali a nina yuuni yomyom m-bɔri bachi shɛŋa shee lahabali ni.
+      hyp: Dimbɔŋɔ m-mɛli a nina yuuni yomyom n-bɔri bachi shɛŋa shee la Habali ni.
+      cer: 0.0351
+      wer: 0.3333
+    '192':
+      text: Karimmi lahabali din do gbunni ŋɔ.
+      hyp: ka di yi ni lahabali diin'do gbu nii ŋɔ.
+      cer: 0.2143
+      wer: 1.1667
+    '193':
+      text: Baŋmi yɛltɔɣikpani lahabal’ shɛli di ni ti gbunni ŋɔ.
+      hyp: Kpɛŋli ni yɛl’ tɔi kpa ni lahabal’ shɛli di ni ti gbuni ŋɔ.
+      cer: 0.186
+      wer: 0.7778
+    '194':
+      text: Zaŋmi di ni baŋ yɛltɔɣikpan’ shɛli maa n-wuhi ka maɣisi a karimbi’ taba.
+      hyp: Zaŋmi di ni bɛn yɛli tɔɣi kpan’ shɛli maa n-wuhi ka maɣisi a karimbitaba.
+      cer: 0.0536
+      wer: 0.4615
+    '215':
+      text: N daa naaya ni shɛhira gbaŋ shɛli din daa viɛli pam.
+      hyp: n daa naanya ni shɛhiribaŋ’ shɛli din daa viɛli pam.
+      cer: 0.0732
+      wer: 0.2727
+    '218':
+      text: Zaŋmi yɛltɔɣikpana maa n-wuhi karimduu maa zaa.
+      hyp: Zaŋmi yɛli tɔi kpana maa n-wuhi karim duu maa zaa.
+      cer: 0.0513
+      wer: 0.7143
+    '226':
+      text: Amaa ka di yi niŋ ka fukumsinima ka yɛlmaŋli?
+      hyp: Amaa ka di yi niŋ ka a fukumsi nima, ka a yɛlimaŋli.
+      cer: 0.0833
+      wer: 0.5556
+    '227':
+      text: N kuli tiri jilin’ shɛli a ni mi bi viɛla.
+      hyp: n ku li tiri jilin’ shɛli a ni mi bi viya la.
+      cer: 0.0645
+      wer: 0.4
+    '242':
+      text: Karimmi lahabal’ shɛli din do gbunni maa ka labisi bɔhisi ŋan doli li
+        na.
+      hyp: Ka di mi lahabali shɛli din do gbunni maa ka labisi bɔhisi ŋan doli li
+        na.”
+      cer: 0.0517
+      wer: 0.2857
+    '247':
+      text: Karimbakpema maa n-nyɛ ŋun mali shikuru maa fukumsi.
+      hyp: Karimba kpima maa n-nyɛ ŋun mali shikuru maa fukumsi.
+      cer: 0.0233
+      wer: 0.25
+    '260':
+      text: Ka naan yi zaŋ li maɣisi di ni nyɛ shɛli gbunni ŋɔ.
+      hyp: ka naanyi zaŋ li maɣisi di ni nya shɛli gbuni ŋɔ.
+      cer: 0.0513
+      wer: 0.3333
+    '272':
+      text: So’ shɛŋa di ni doli n- a maŋmaŋa karimbu soli n-karimgbaai.
+      hyp: So’ shɛŋa di ni doli, amaa ŋmaŋa karimbu soli n-karim gbaai
+      cer: 0.0435
+      wer: 0.4545
+    '283':
+      text: Sabita nyɛla daadam daalafee mini jilima nyɛbili.
+      hyp: Sahabita nyɛla daadam daalafee mini jilima nyɛbili.
+      cer: 0.0476
+      wer: 0.1429
+    '296':
+      text: Ka naan yi, zaŋ a ni tɛhi ni lahabali ŋɔ ni tooi yɛligi.
+      hyp: Ka naanyi zaŋ a di tɛhiya ni lahabali, ŋɔ ni tooi yɛligi.
+      cer: 0.0714
+      wer: 0.3077
+    '305':
+      text: Zaŋmi a maŋmaŋa bachinima n-wuhi binshɛli din nyɛ ‘yɛltɔɣikpani’.
+      hyp: Zaɣimi amaa ŋmaŋa bachinima n-wuhi binshɛli din nyɛ yɛlitɔɣikpani.
+      cer: 0.0755
+      wer: 0.4444
+    '307':
+      text: Jilima pa la binshɛli di ni ni tooi deei amaa di nyɛla binshɛli di ni
+        bɔra.
+      hyp: Jirima pala binshɛli di ni ni tooi deei, amaa di nyɛla binshɛli di ni bɔra.
+      cer: 0.0169
+      wer: 0.1875
+    '314':
+      text: Dimbɔŋɔ n-nyɛ jilima ni ŋmani shɛli.
+      hyp: Di bɔh’ o n-nyɛ jiluma ni ŋmani shɛli
+      cer: 0.1379
+      wer: 0.6667
+    '318':
+      text: A yi kpɛri ka yiri haai shikuru, teemi ni jilima nyɛla yaɣa-yi soli.
+      hyp: Ni yi kpiri, ka yi di hayi shikuru, teemi ni jilima nyɛla yaa yi soli.
+      cer: 0.1132
+      wer: 0.5385
+    '321':
+      text: Bɔ ka lahabali maa yuli yɛli zaŋ kpa lahabali maa yɛltɔɣikpani?
+      hyp: Bɔ ka lahabali maa yuli yɛli zaŋ kpa lahabali maa yɛli tɔhi kpa ni?
+      cer: 0.0385
+      wer: 0.3636
+    '323':
+      text: Zaŋmi yɛltɔɣa anahi n-kolivaai lahabal’ shɛli din do zuɣusaa ŋɔ.
+      hyp: Zaŋmi yɛritɔwa anahi n-kuli ba lahabali shɛli din do zuɣusaa ŋɔ.
+      cer: 0.1538
+      wer: 0.4
+    '324':
+      text: Baŋmi karimbu din ziligi nahiŋgbana ayi shɛŋa a ni bɔhim yaɣili ŋɔ ni.
+      hyp: Bɛ ŋmɛŋ karimbu din ziligi naai yi gba naai yi shɛŋa a ni bɔhim yaayili
+        ŋɔ ni.
+      cer: 0.1579
+      wer: 0.6154
+    '327':
+      text: Kahigimi karimbu din yɛligi nahiŋgbana ata?
+      hyp: ka yi yimi karimbu din yɛligi naɣingbana ata.
+      cer: 0.1081
+      wer: 0.6667
+    '329':
+      text: Kahigimi ni a maŋmaŋa bachinima.
+      hyp: Ka Aege mi ni, amaa ŋmaŋ’ a bachinima.
+      cer: 0.1481
+      wer: 1.2
+    '346':
+      text: Biɛlimpahira tuma zuliya ni nyɛla di sɔŋ n-nam bachipala.
+      hyp: Bihilin Pahira tuma zuliya ni nyɛla di sɔŋ n nambachi pala.
+      cer: 0.0638
+      wer: 0.5556
+    '357':
+      text: Biɛlimpahirili nyɛla tooni biɛlimpahirili di yi do nyaɣili maa tooni.
+      hyp: Biɛlimpahirili nyɛla tooni Biɛlimpahirili di yi doo nyaɣi li maa tooni.
+      cer: 0.0169
+      wer: 0.3
+    '358':
+      text: Biɛlimpahirili nyɛla sunsuuni biɛlimpahirili di yi be nyaɣili maa sunsuuni.
+      hyp: Biɛlimpahirili nyɛla sunsuuni, biɛlimpahirili di yi be nyaagili maa sunsuuni.
+      cer: 0.0308
+      wer: 0.1
+    '359':
+      text: Biɛlimpahirili nyɛla nyaaŋa biɛlimpahirili di yi ti kana bachi nyaaŋa.
+      hyp: Biɛlimpahirili nyɛla nyaaŋa biɛlimpahirili di yi ti kana bachi nyaaŋa.
+      cer: 0.0
+      wer: 0.0
+    '367':
+      text: Ŋmaligi n-kpa a kpee n-kahigi biɛlimpahira ni nyɛ shɛli.
+      hyp: Maligi n-kpa a kpee n kahigi mi n-nyɛ shɛli.
+      cer: 0.2667
+      wer: 0.5556
+    '382':
+      text: Nyaya ka bachi maa nyabili din nyɛ bachiniŋdili ŋɔ pubu taɣi n-lɛbi bachinamdili.
+      hyp: Yɛliya ka bachi maa nyabili din nyɛ bachi niŋdili ŋɔ pubu taai n-la be
+        bachinamdili.
+      cer: 0.1045
+      wer: 0.4615
+    '389':
+      text: Shɛhira, n-zaŋ biɛlmpahirili -si m-pahi nooŋ-a zuɣu di ni titi noon-si.
+      hyp: Shɛhira, n-zaŋ biɛl’ pahiri li, see m-pahi noo ŋa zuɣu, di ni ti ti noonsi.
+      cer: 0.0556
+      wer: 0.7273
+    '392':
+      text: Bɔŋbɔŋ ni, zammiya ka kahigi biɛlimpahira balibu yi yaa tariga Dagbani
+        ni.
+      hyp: Zaŋmiya ka kahigi biɛlim pahira balibu buyi yaa tariga Dagbaani ni.
+      cer: 0.1967
+      wer: 0.5833
+    '393':
+      text: Wula ka di lee taɣiri bachi nyaɣa maa gbunni?
+      hyp: Wula ka di lihi taari bachi nyaaŋa maa gbinni?
+      cer: 0.2222
+      wer: 0.4444
+    '398':
+      text: Biɛlimpahira tuma waliya zuliya kɔŋkɔba puuni.
+      hyp: Gbiɣilimpahihira tuma waliya zuliya konkoba puuni.
+      cer: 0.2
+      wer: 0.3333
+    '400':
+      text: Ŋa sɔŋdi bachi pala nambu ni.
+      hyp: Nasɔŋ di bachi pala nambuni.
+      cer: 0.0435
+      wer: 0.6667
+    '401':
+      text: Ŋa sɔŋdi taɣiri bachinima pubu.
+      hyp: Ŋa sɔŋ dii taɣiri bachinima pɔbu
+      cer: 0.0769
+      wer: 0.6
+    '402':
+      text: Biɛlimpahira sɔŋdi namdi bachiniŋda niŋsim saha.
+      hyp: Biɛlim pa Hira sɔŋdi nam di bachi niŋda ninsim saha.
+      cer: 0.0238
+      wer: 1.3333
+    '404':
+      text: Biɛlimpahira taɣiri bachinima zaɣ’ gansi n-lɛbiri zaɣ’ bɔbigu.
+      hyp: Gbiɛlimpahira taɣiri bachinima zaɣ’ gaansi n-libiri zaɣ’ bobigu.
+      cer: 0.0784
+      wer: 0.5
+    '405':
+      text: Biɛlimpahira baŋsim sɔŋdi bachinima yiɣisibu viɛnyɛla mini balli bɔhimbu.
+      hyp: Bɛla bahira baŋsim sɔŋ di bachinima yiɣisibu viya nyɛla mini balli bɔhimbu
+      cer: 0.0938
+      wer: 0.6667
+    '409':
+      text: Baŋmi biɛlimpahira ŋan be bachinima ŋɔ ni ka wuhi ŋa balibu ni nyɛ shɛŋa.
+      hyp: Mani ŋmee biɛlimpahira ŋan be bachinima ŋɔ ni ka wuhi ŋa balibu ni nya
+        shɛŋa.
+      cer: 0.1017
+      wer: 0.2143
+    '412':
+      text: Niŋmi shili ni a ni zaŋ li n-wuhi a karimbitaba ka kahigi li.
+      hyp: Ni ŋmi shili ni a ni zanli n-wuhi a karimbitaba ka kahigi li.
+      cer: 0.0213
+      wer: 0.3077
+    '417':
+      text: Di tuuli tuma kuli nyɛla di zaŋdila yɛltɔɣa yaɣa tuɣiri taba.
+      hyp: Liɣituuli tuma kuli nyɛla, di zaŋdila yɛltɔɣa yaa tuuri taba.
+      cer: 0.12
+      wer: 0.3636
+    '421':
+      text: O karinda dinzuɣu o mali baŋsim.
+      hyp: Ko karinda dinzuɣu o mali baŋsim.
+      cer: 0.0385
+      wer: 0.1667
+    '422':
+      text: N ni chaŋ amaa n ni labina.
+      hyp: N ni chaŋ a maa n ni labina.
+      cer: 0.0
+      wer: 0.2857
+    '425':
+      text: Bachituɣira balibuBachituɣira balibu pam m-beni.
+      hyp: bɛ nyiri ti gura bɛ bɛ nyɛdiba dalimoo pam m-be ni.
+      cer: 0.5714
+      wer: 2.0
+    '438':
+      text: Naawuni so n ni ti yɛda.
+      hyp: Naawuni so n ni ti yɛda.
+      cer: 0.0
+      wer: 0.0
+    '445':
+      text: Pɔi ka ka kpukpalivari pɔri, di dolila dunia tiŋgbani ni yɛli li shɛli.
+      hyp: kɔi n-kpaai bɛ ba ni vaari ka pɔri, yɛltɔɔɣili la dunia tiŋgbani ni yɛlli
+        shɛli.
+      cer: 0.386
+      wer: 0.8462
+    '447':
+      text: Saa yi mi, nyin toomi kom.
+      hyp: Saa yi mi n-nyin' tooi mi kom.
+      cer: 0.1053
+      wer: 0.5
+    '448':
+      text: Naa maa ni daa labi o yaannima sanmi, n daa nyala suhudoo.
+      hyp: Naa maa ni daa labi o yaannima sami n-daa nyaala suhudoo.
+      cer: 0.0444
+      wer: 0.3333
+    '450':
+      text: Amii o bela yiŋa bee yɔɣu.
+      hyp: Bɛ mi o bila yiŋa bee yɔɣu.
+      cer: 0.2
+      wer: 0.5
+    '456':
+      text: Biɛhigu to amaa ti ni kpaŋ ti maŋa pam.
+      hyp: Yɛhigu tɔ a maati ni, kpuɣim teem’ ma na pam.
+      cer: 0.3667
+      wer: 0.8889
+    '457':
+      text: O yuuni bɔri o shee amaa o bi nya o.
+      hyp: O yuu ni bɔri o shee, amaa o bi nya wɔŋ.
+      cer: 0.1154
+      wer: 0.3
+    '459':
+      text: Sabimi bachituɣira balibu shɛhira diba ata ka zaŋ ŋa n-nam yɛltɔɣa.
+      hyp: Sabimi bachitigura balibu shɛhira di ba ata, ka zaŋ ŋa n-nam yɛlitɔɣa.
+      cer: 0.0727
+      wer: 0.3636
+    '461':
+      text: Bachituɣira tuma balibu ni tooi wali bala ni, amaa di shɛŋa ni tooi nyɛ
+        yim.
+      hyp: Bachitigura tuu maa balibu ni tooi walibala la ni, amaa di shɛŋa ni tooi
+        nya yim.
+      cer: 0.1333
+      wer: 0.4
+    '464':
+      text: Di sɔŋdi n-laɣindi yɛltɔɣiŋmahi bee yɛltɔɣiŋmasɔri mini ŋa taba.
+      hyp: di yi sɔŋdi n-layindi yɛltɔɣi ŋmasi bee yɛltɔɣi ŋmasori mini ŋa taba.
+      cer: 0.0926
+      wer: 0.6667
+    '465':
+      text: Di sɔŋdi n-tahiri waliginsim na.
+      hyp: Di sɔŋdi n-taɣiri waliginsim na.
+      cer: 0.0385
+      wer: 0.2
+    '467':
+      text: Bachituɣira mali zalisi biɛla zaŋ chaŋ ŋa zaŋ tum tuma polo.
+      hyp: Bakitugira mali zalisi biɛla zaŋ chaŋ ŋa zaŋ tum tuma polo.
+      cer: 0.0612
+      wer: 0.0909
+    '470':
+      text: Bachituɣira kuli nyɛla ŋan gbundi tɛha ni niŋsim.
+      hyp: Bashi toori a kul nyɛla ŋani gbindi taha ni niŋsim.
+      cer: 0.2195
+      wer: 0.875
+    '472':
+      text: Bachituɣira mali sɔŋsim pam zaŋ chaŋ binyɛra kalibu.
+      hyp: Bachi tuhiri daa mal’ li sɔŋsim pam zaŋ chaŋ binyara kalibu.
+      cer: 0.1364
+      wer: 0.75
+    '473':
+      text: Di yi mali bachituɣira tumdi tuma, che ka a yɛltɔɣa yaɣa zaa saɣi doli
+        taba.
+      hyp: Di yi mali bachi tib’ a tum di tuma, chɛ ka a yɛltɔɣa yaa zaa sa yi doli
+        taba.
+      cer: 0.1
+      wer: 0.6
+    '482':
+      text: Ŋuni n-tiri lala binyɛra maa yuya?
+      hyp: Ŋuni n-tiri lala binyara maa yuya.
+      cer: 0.037
+      wer: 0.1667
+    '501':
+      text: Lala soli ŋɔ zaŋ nam bachi pala dii bi yoli Dagbani ni ni.
+      hyp: Lala suɣuli ŋɔ zaŋ nam bachi pala dii bɛ yuli da gba ni nini.
+      cer: 0.1111
+      wer: 0.4615
+    '505':
+      text: Zuliyanima pam paŋ bachinima zuliya shɛŋa ni.
+      hyp: Zulianima pampaŋ bachinima zuliya shɛŋa ni.
+      cer: 0.0263
+      wer: 0.4286
+    '510':
+      text: Sabimi kamani bachi pia din nyɛ bachi paŋda Dagbani ni.
+      hyp: Sabimi ka ma ni bachi pia din nyɛ bachipaŋ’ dada gba ni ni.
+      cer: 0.0
+      wer: 0.7
+    '512':
+      text: Di sɔŋdi zoori zuliya yɛltɔɣa dama zuliya maa yɛltɔɣa bachinima ni yɛligi.
+      hyp: Ti sɔŋdi Zɔri zuliya yɛlitɔɣa dama zuliya maa yɛlitɔɣa bachinima ni yɛligi.
+      cer: 0.0806
+      wer: 0.3333
+    '513':
+      text: Di sɔŋdi che ka zuliya yɛltɔɣa wuligiri gindi dunia zaa.
+      hyp: Di a sa sani karini, ka tɔɣ’ a dawun’ bi giri.
+      cer: 0.6957
+      wer: 1.0
+    '514':
+      text: Di sɔŋdi namdi bachi pala m-mali booni bin’ pala.
+      hyp: Di sɔŋdi nam di bachi pala m-mali booni bimpala.
+      cer: 0.0263
+      wer: 0.4444
+    '515':
+      text: Di sɔŋdi zuliya yɛltɔɣa bɔhimbu ni.
+      hyp: Pi va ɛlifia ka ka bɔhiŋgbu maa.
+      cer: 0.6897
+      wer: 1.1667
+    '516':
+      text: Di sɔŋdi ti ka ti tooi biɛhiri ti yuuni bachinima pilli ni.
+      hyp: The sanditee, ka ti tooi biɛhiri ti yuuni bachinima pilli ni.
+      cer: 0.1489
+      wer: 0.25
+    '520':
+      text: Wuhimi biɛlimpahira balibu din be Dagbani ni.
+      hyp: Wuɣimi biɛlim paai yiriba balibu din be Dagbani ni.
+      cer: 0.1579
+      wer: 0.5714
+    '521':
+      text: Yihimi biɛlimpahira diba Anahi Dagbani n-sɔŋ.
+      hyp: Yi simi biɛlim’ pahira dibba anahi dagba ni n-sɔŋ.
+      cer: 0.0526
+      wer: 1.1667
+    '522':
+      text: Wuhimi biɛlimpahira tuma diba anahi Dagbani ni.
+      hyp: Wuhimi biɛlim pahira tuma di ba anahi ka gba nini.
+      cer: 0.025
+      wer: 1.0
+    '523':
+      text: Baŋmi biɛlimpahira ŋan be bachinima ŋɔ ni ka wuhi ŋa balibu ni nyɛ shɛli.
+      hyp: Minyibu yɛlim’ pahira ŋan be bachinima ŋɔ ni, ka wuhi yi ŋa balibu ni nyɛ
+        shɛli.
+      cer: 0.1356
+      wer: 0.2857
+    '524':
+      text: Kahigi n-wuhi bachituɣira ni nyɛ shɛli.
+      hyp: kahigi n-wuhi bachitura ni nyɛ shɛli.
+      cer: 0.0625
+      wer: 0.1667
+    '525':
+      text: Baŋmi bachituɣira balibu ni nyɛ shɛli Dagbani ni.
+      hyp: Makpichɛri duhi n-deei, ka naa seeno, a naa deei ni o, zee ka naa teei
+        ni o, n ni mali naai naai sokoa, ka naa seeno.
+      cer: 1.6585
+      wer: 3.0
+    '526':
+      text: Wuhimi waliginsim shɛli din be bachituɣira bali shɛŋa a ni yihi maa ni.
+      hyp: Wuhimi waliginsim shɛli din be bachitigira bali shɛŋa a ni yihi maa ni.
+      cer: 0.0345
+      wer: 0.0769
+    '528':
+      text: Boomi bschituɣira gbunni yɛltɔɣa ŋan doli ŋɔ na ni.
+      hyp: Bɔ o mi buchi tuɣira gbini yɛtɔɣa yɛtɔɣa ŋan doli ŋɔ na ni
+      cer: 0.2381
+      wer: 0.8889
+    '529':
+      text: O diya amaa o bi tiɣi.
+      hyp: O diyaamaa o bi ti.
+      cer: 0.125
+      wer: 0.5
+    '530':
+      text: N ni chaŋ amaa pa zuŋɔ.
+      hyp: n-ti chaŋ amaa paɣ' zuŋɔ.
+      cer: 0.1176
+      wer: 0.5
+    '531':
+      text: Kahigimi binshɛli din nyɛ bachi nambu soya.
+      hyp: ka yi gimi binshɛli din nyɛ bachi nambu soya.
+      cer: 0.0278
+      wer: 0.4286
+    '532':
+      text: Baŋmi bachi nambu soya dibaata shɛŋa a ni mi Dagbani ni.
+      hyp: Bɛ yi mi bachi nambu so yiɛ dibaata shɛŋa anii mi Dagbani ni.
+      cer: 0.1333
+      wer: 0.6364
+    '533':
+      text: Kahigimi Dagbani bachi nambu balibu dibaata.
+      hyp: Kahigimi Dagbani Bachi Nambu balibu dibaa ata.
+      cer: 0.0263
+      wer: 0.3333
+    '534':
+      text: Kahigimi Dagbani bachi nambu daanfaani yini bee garibu.
+      hyp: Ka Higimida gbani bachi nambu daanfaani yi ni bee garibu.
+      cer: 0.0
+      wer: 0.625
+    '536':
+      text: Zuŋɔ, tabibi baŋsim nyɛla din kpa talahi baŋsim bɔhimbu ni.
+      hyp: Zuŋɔ kuɣisaa ka bibi bansim nyɛla din kpaai talahi bansim bɔhimbu ni.
+      cer: 0.25
+      wer: 0.6
+    '542':
+      text: Ti ni zaŋ rɔbɔtinima n-zali karimbanima zaa ni?
+      hyp: Ti ni zaŋ robɔtinima n-zali li ka di manima zaɣ’ ni.
+      cer: 0.1579
+      wer: 0.75
+    '558':
+      text: Yɛltɔɣiŋmaa nyɛla bachinima din laɣim m-pe taba n-nam yɛltɔɣili.
+      hyp: Yɛltɔɔŋ maa nyɛla bachinima din laɣim m-pe taba n-nam yɛltɔɣili.
+      cer: 0.0377
+      wer: 0.2222
+    '565':
+      text: Zaŋmi a ni bɔhim shɛli maa m-maɣisi a bɔŋ maa ni.
+      hyp: Zaŋmi a ni bɔhim shɛli maa maai si a bɔŋ maa ni.
+      cer: 0.0541
+      wer: 0.1818
+    '574':
+      text: Yɔltɔɣiŋmasɔri shɛhira shɛŋa n-do gbunni ŋɔ.
+      hyp: Yɛtɔɣa ŋa so di shɛhiri ya shɛŋa n-du gbunni ŋɔ.
+      cer: 0.2432
+      wer: 1.1667
+    '585':
+      text: Dimbɔŋɔ nyɛla yɛltɔɣiŋmasɔɣu din zuɣu nyɛ bachinamdili bee bachizaanili.
+      hyp: Dimbɔŋɔ nyɛla ayɛritɔɣuma sɔɣu din zugu nya bachinamdili bee bachizaanili.
+      cer: 0.1111
+      wer: 0.4444
+    '588':
+      text: Dimbɔŋɔ wuhirimi ni di nyɛla din nyɛ bachi yini kɔŋko.
+      hyp: Dimbɔŋɔ wuhirimi ni di nyɛla din nyɛ bachi yini kɔŋko.
+      cer: 0.0
+      wer: 0.0
+    '596':
+      text: Bachinima din galisi nyɛla din ni tooi nyɛ bachinamdili yɛltɔɣiŋmasɔɣu.
+      hyp: Bashini maa din galisi nyɛla din ni tooi nyɛ bachinamdili yɛl' tɔɣima sɔɣu,
+      cer: 0.0492
+      wer: 0.5
+    '622':
+      text: Bachi zuɣu maa ni tooi lan ʒiri nyaaŋa bachikahigira mini tooni bachikahigira.
+      hyp: Bachi zuɣu maa ni tooi lan ʒiri nyaaŋa bachi kahigeera mini tooni bachi
+        kahigeera.
+      cer: 0.0606
+      wer: 0.3333
+    '626':
+      text: Bɔna puuni, nammiya bachinamdili yɛltɔɣiŋmasɔri diba atata.
+      hyp: Bɔ na puuni, Namia Bachinamdili yɛltɔɔɣa ŋma sɔri dibatata.
+      cer: 0.098
+      wer: 1.0
+    '649':
+      text: Bɔna puuni, nammiya bachiniŋdili yɛltɔɣiŋmasɔri.
+      hyp: Bɔ na puuni, Namiya bachinim’ di leei yɛltɔɣa yi ma sɔri.
+      cer: 0.1667
+      wer: 2.0
+    '665':
+      text: Bachibuɣisirili ɛltɔɣiŋmasɔɣu malila bachibuɣisirili ka di nyɛ di bachi
+        zuɣu.
+      hyp: Baɣi yini di buɣisirili a tɔɣ’ ma sɔɣ’ o mali la bachi buɣisirili ka di
+        nyɛ di bachi zuɣu
+      cer: 0.1791
+      wer: 1.3
+    '670':
+      text: Dimbɔŋɔ nyɛla yɛltɔɣiŋmasɔɣu din bachi zuɣu nyɛ zaashee bachi.
+      hyp: Dimbɔŋɔ nyɛla yɛtɔɣima Saul din bachi zooi nya zaashee bachi.
+      cer: 0.1698
+      wer: 0.4444
+    '680':
+      text: O chaŋ tiŋa maa puuni.
+      hyp: O chaŋ tiŋa maa puuni.
+      cer: 0.0
+      wer: 0.0
+    '682':
+      text: Din kpalim ka bi sabigi pam maa mi nyɛla bachiniŋdili yɛltɔɣiŋmasɔɣu.
+      hyp: Bihi n-kpalim ka bɛ sabigi pam maa mi nyɛla bachinimdili yɛltɔɣa ŋma sɔɣi.
+      cer: 0.1207
+      wer: 0.6364
+    '688':
+      text: Di mali yɛltɔɣiŋmasɔri n-kahigiri tɛha.
+      hyp: Di yi mali yili tɔŋ ni n-sɔri n-ka higiri tɛhim.
+      cer: 0.3333
+      wer: 1.6
+    '690':
+      text: Din yɛn che ka yɛltɔɣa ne, yɛltɔɣiŋmasɔri tumdi tuun’ kara pam.
+      hyp: Di ni yɛn chɛ ka yɛltɔɣa ni, yɛltɔɣa ŋma so di tumdi tuun’ kara pam.
+      cer: 0.12
+      wer: 0.7273
+    '695':
+      text: Dakulo din gari la, m mini n zo daa gbaami ni ti di ti dabisili maa teeku
+        duli.
+      hyp: Di ku lo din gari la m mini n zo daa gbaai mi ni ti di ti dabisili maa
+        teeku duli.
+      cer: 0.0333
+      wer: 0.2778
+    '701':
+      text: Ti ni daa kuli paai, ti daa yulimi m-bo luɣ’ viɛlli shee kpukpalitia gbunni.
+      hyp: Ti ni daa kuli paai, ti daa yulimi m-bo lugo viɛlli shee kpukpali tia gbunni.
+      cer: 0.0339
+      wer: 0.2143
+    '711':
+      text: Bɔna puuni, piɛmiya yɛltɔɣiŋmasɔri balibu maa ka di doli taba (a.
+      hyp: Bɔna puuni, piɛmiya yɛltɔɣi ŋma sori balibu maa ka di doli taba.
+      cer: 0.0385
+      wer: 0.3636
+    '714':
+      text: Zaŋmiya yi labisibu maa n-wuhi karinduu maa zaa ka yi zamzam li.
+      hyp: Zaŋmiya yi labisibu maa n-wuhi karinduu maa zaa, ka yi zam zam li.
+      cer: 0.0
+      wer: 0.1667
+    '728':
+      text: Senyo ɖa akplĕ hafi yi suku.
+      hyp: Saniya daa akpili Haafi yi su ku.
+      cer: 0.3636
+      wer: 1.0
+    '736':
+      text: Yɛltɔɣiŋmaa din ku tooi zani di gama zuɣu.
+      hyp: jɛr’ dɔroin’ maa diin’ ku to yiza ni di gamazoo.
+      cer: 0.3235
+      wer: 1.125
+    '742':
+      text: Makafui ate ŋu ade tɔme gbe sia gbea?
+      hyp: Maka fui a ti ŋun’ a di tɔmi gbisiya gbiya.
+      cer: 0.2759
+      wer: 1.25
+    '759':
+      text: Di kahigibu n-do gbunni ŋɔ.
+      hyp: Di kahigibu n-do gbuni ŋɔ.
+      cer: 0.0476
+      wer: 0.2
+    '765':
+      text: Yɛltɔɣiŋmaa din nyɛ zaligu ni tooi bi bɔri zuɣu.
+      hyp: Yɛltɔɣi ni maa din nyɛ zaligu ni tooi bi bɔri zuɣu.
+      cer: 0.0513
+      wer: 0.3333
+    '769':
+      text: Yi ni tooi ti shɛhira shɛŋa zaŋ kpa bɔhigu bachinima din Dagbani polo.
+      hyp: di yi ni tooi ti shɛhira shɛŋa zaŋ kpa bɔhigu, bachinima din’ dagbani polo.
+      cer: 0.0351
+      wer: 0.0769
+    '770':
+      text: Yɛltɔɣiŋmaa din nyɛ bɔhigu naarimi ni bɔhigu bia.
+      hyp: Yɛritɔri maa din nyɛ bɔhigu naarimi ni bɔhigu bia.
+      cer: 0.0976
+      wer: 0.25
+    '787':
+      text: Kofi nim no afiri sε ɔyε.
+      hyp: Kofi nim ni afirisi o yina.
+      cer: 0.3158
+      wer: 0.6667
+    '791':
+      text: Chɛliya ka zamzam di balibu maa.
+      hyp: Chɛliya ka zamzam dee balibu maa.
+      cer: 0.0769
+      wer: 0.1667
+    '802':
+      text: Kafui xlĕ agbalĕ si fofoa nε la nyuie.
+      hyp: Halfway huli a gbali Sifofua ni la nyu yiŋa.
+      cer: 0.4667
+      wer: 1.0
+    '804':
+      text: Nyɔnu si ƒle avɔ etsɔ la dzo.
+      hyp: Posipili Avot Etoor la doli.
+      cer: 0.7273
+      wer: 0.8571
+    '827':
+      text: Bachinima din pe taba m-buɣisiri maa gbunni m-booibooi yɛltɔɣa maa ni
+        maa.
+      hyp: Baahinima din pɛ taba m-buɣisiri maa gbinni m-booi booi yɛlitɔɣa maa ni
+        maa.
+      cer: 0.0667
+      wer: 0.5
+    '852':
+      text: Sabbu bibahira mini di tuma.
+      hyp: Bibahira mi ni di tuma.
+      cer: 0.2174
+      wer: 0.6
+    '853':
+      text: Ŋmahin’ shɛli di ni mali sɔŋdi yɛltɔɣili bahigu din wuhiri yɛltɔɣili maa
+        naabu.
+      hyp: Ŋɔin’ shɛli di ni mali sɔŋli yɛltɔɣili bahigu ti n-wuhiri yɛltɔɣili maa
+        naai bo.
+      cer: 0.1077
+      wer: 0.4615
+    '857':
+      text: Di zaŋdimi wuhiri bachinima din ŋmaai filim naabu.
+      hyp: Di zaŋdimi wuhiri bachinimaai filim ni abu.
+      cer: 0.1667
+      wer: 0.625
+    '858':
+      text: Di mali li sɔŋdi so yɛligu bee yɛltɔɣili bahigu.
+      hyp: Di malili sɔŋdi so yɛligu bee yɛltɔɣili bahigu.
+      cer: 0.0
+      wer: 0.2222
+    '859':
+      text: Dɔɣite maa yɛliya, “A nyɛla ŋun nyari alaafee”.
+      hyp: Doo yi ti maa yɛliya, “A nyɛla ŋun nyari alaafee.”
+      cer: 0.1111
+      wer: 0.375
+    '860':
+      text: Karimba maa yɛlimi ni “Zahimbu kani zuŋɔ”.
+      hyp: Karimba maa yɛli mini, zaŋ yi buka ni zuŋɔ.
+      cer: 0.0909
+      wer: 0.8571
+    '861':
+      text: Di zaŋ li woligiri binyɛra taba kalibu ni.
+      hyp: di zaŋ li wuligiri bɛ nyara taba kalibu ni.
+      cer: 0.0882
+      wer: 0.375
+    '863':
+      text: N kpɛla shitɔɣu maa ni ni n ti da chibo, sɔɣiso, bɔɣati ni bɔdua.
+      hyp: n kpɛla shitɔgu maa ninii nti dachibo, soy’ so, bɔritinibo dua.
+      cer: 0.1633
+      wer: 0.7857
+    '866':
+      text: Di zaŋdi li pirigiri bachibuɣisira din buɣisiri bachinamdili.
+      hyp: Di zaŋdi li pirigiri bachibuɣisira din buɣisiri bachinandili.
+      cer: 0.0189
+      wer: 0.125
+    '867':
+      text: Di zaŋ li n-wuhi binyɛra kalibu piligu, shɛhira bee kahigibu.
+      hyp: Di zanli n-wuhi bɛ nyara kalibu piligu, shɛhira bee kahigi buɣim?
+      cer: 0.1224
+      wer: 0.6
+    '870':
+      text: Di zaŋdi li pirigiri yɛltɔɣiŋmahi diba ayi din ni tooi zani di gama zuɣu
+        taba.
+      hyp: di zandi li pirigiri yɛltɔɣa ŋmahi, di ba ayi din’ ni tooi yi zani diigim’
+        maa zuɣu taba.
+      cer: 0.127
+      wer: 0.5333
+    '871':
+      text: M malila zahimbu biɛɣuni; n karindimi yuŋ zaa.
+      hyp: Malila zaŋ yimbu biɛhigu ni n-karim di mi yuŋ zaa.
+      cer: 0.1892
+      wer: 1.0
+    '872':
+      text: M bɔrimi ni n chaŋ Aŋkara; saa n-daa mira.
+      hyp: Bɔrimi ni n chaŋ ankara, saa n-daa mir’ a.
+      cer: 0.0645
+      wer: 0.4444
+    '873':
+      text: Di zaŋdi woligiri binyɛra taba kalibu ni.
+      hyp: Di zaŋdi wɔligiri bɛ nyara taba kalibu ni
+      cer: 0.0882
+      wer: 0.4286
+    '874':
+      text: Bɛ tila bihi maa pina kamani; nɛma, diɛma binyɛra, tiwala ni namdanima.
+      hyp: Bɛ tila bihi maa pina kaman ni nɛma, diɛma binyɛra, tiwala ni namdanima.
+      cer: 0.0179
+      wer: 0.1667
+    '875':
+      text: Di zaŋ li wuhiri bachi yaɣ’ shɛli ni ŋmaai bahi shɛm.
+      hyp: Di zan’ li wuhiri bachi yaa’ shɛli ni ŋmaai bahi shɛm.
+      cer: 0.0488
+      wer: 0.1818
+    '876':
+      text: Paɣ’ jia maa gari kpe.
+      hyp: Jaa maa gari kpe.
+      cer: 0.25
+      wer: 0.4
+    '877':
+      text: Ti’ titali ka bɛ ŋmaai sɔŋ.
+      hyp: ti to li ka be ŋmaai sɔŋ.
+      cer: 0.2
+      wer: 0.5
+    '880':
+      text: Karimba maa yɛlimi ni, “Shikuru kandina leeti kani”.
+      hyp: Ka nimbamaa yɛlimi ni, “Shikuru kandina lee ti kani?”
+      cer: 0.0244
+      wer: 0.5
+    '882':
+      text: Soyɛligu bia ni tooi lan zaŋ tum tuma lahibali yuli sabbu ni.
+      hyp: Soyɛligu bia ni tooi lan zaŋ tum tuma lahibali yuli sabu ni.
+      cer: 0.0204
+      wer: 0.0833
+    '885':
+      text: Haaifin wuhirila binyɛra ayi waɣilim.
+      hyp: haifu n-wuhirila binyɛra ayi waayili.
+      cer: 0.1562
+      wer: 0.6
+    '887':
+      text: Bɛ mali pɛrɛntɛsinima n-goori lahabal’ shɛli din pahi n-kahigira.
+      hyp: Bɛmali Palɛntɛsinima n-goori lahabali shɛli din pahi n-ka Higira.
+      cer: 0.0566
+      wer: 0.6667
+    '889':
+      text: N laamba kookoo puu (din be Togo la) tiri ba liɣiri pam.
+      hyp: N lamba koko pooi din be tɔɣi gɔlantiri baligiri pam.
+      cer: 0.2857
+      wer: 0.6667
+    '890':
+      text: Bɛ gbaala chuɣu maa zali biɛɣuni (pa zuŋɔ).
+      hyp: Bɛ gbaala chigu maa zali, biɛɣu ni pa zuŋɔ.
+      cer: 0.0606
+      wer: 0.375
+    '893':
+      text: Karimba so ŋun yuli booni Josɛfin (Ma suŋ) la sa kana kpe sɔhila.
+      hyp: Karimbi' juri booni Josefim, “Dandi yiya mazirida na kana taasaa Yɛsuhi
+        la.”
+      cer: 0.66
+      wer: 0.9231
+    '894':
+      text: Jabihi maa (Alaasani mini Fusheni) kanila kpɛna zuŋɔ.
+      hyp: Jɛbihi maa yɛn o, alaasani mini, puu shee ni ka ni la kana zuŋɔ.
+      cer: 0.2326
+      wer: 1.25
+    '895':
+      text: Di ni tooi zaŋ daashi zali vuhimbia bee kolɔn zaani.
+      hyp: di yi bi tooi zaa n-daa ʒi zali Vuhim Bia bee ku lan zaa ni.
+      cer: 0.2143
+      wer: 1.1
+    '896':
+      text: Di daa bi maai – wuntaŋa daa yiya pam.
+      hyp: Di na bi maai. Wuntaŋa daa yiya pam.
+      cer: 0.0714
+      wer: 0.125
+    '897':
+      text: Silaashi nyɛla booli din puli zaya ka bɛ mali li zaani bachituɣirili ‘bee’
+        zaani.
+      hyp: Silaashi nyɛla booli din puli zaaya ka be malili zaani bachitigirili bee
+        zaani.
+      cer: 0.0615
+      wer: 0.3571
+    '904':
+      text: Di naarila yɛltɔɣili din nyɛ yekpeeni.
+      hyp: Kpiim, naarila yɛltɔɣili din nyɛ yi kpee ni.
+      cer: 0.1562
+      wer: 0.6667
+    '905':
+      text: Di naarila yɛltɔɣili din nyɛ bɔhigu.
+      hyp: Di naarila yɛltooli din nyɛ bɔhigu.
+      cer: 0.1
+      wer: 0.1667
+    '908':
+      text: Di wuhirila bachinima, yɛltɔɣiŋmasɔri bee yɛltɔɣa ni ŋmaai bahi shɛm.
+      hyp: Di wuhirila bachinima yɛltɔɣa yi mali sɔri bee yɛltɔɣa ha ni ŋmaai ba Hɛshɛm.
+      cer: 0.1379
+      wer: 0.7
+    '909':
+      text: O daa boli ʒɛkuri maa.
+      hyp: O daa boli zikuri maa.
+      cer: 0.1176
+      wer: 0.2
+    '915':
+      text: N-woligiri bachi diba ayi din sabbu nyɛ yim amaa ka di gbunni lee woligi
+        taba.
+      hyp: N-ŋuligiri bachi di ba ayi dii sabbu nya yim amaa, ka di gbu ni leei wuligi
+        taba.
+      cer: 0.1129
+      wer: 0.6
+    '919':
+      text: Zaŋmiya yi labisibu maa maɣisi yi taba dini.
+      hyp: Zaŋmiya yi labisibu maa maasi yi taba di ni.
+      cer: 0.0556
+      wer: 0.375
+    '927':
+      text: N laamba yili bela tiŋkpaŋa.
+      hyp: n-lamba yi li bil’ a tiŋkpaŋa.
+      cer: 0.087
+      wer: 1.0
+    '930':
+      text: Timya daliri shɛli din che ka yi pii lala sabbu bibahira maa.
+      hyp: Ti nya daliri shɛli din chɛ ka yi pii lala sabbu bi bahiya maa.
+      cer: 0.0612
+      wer: 0.4167
+    '941':
+      text: Zaŋmi a maŋmaŋa bachinima n-kahigi wuhi yɛltɔɣiŋmasɔɣu ni nyɛ shɛli.
+      hyp: Zahimmiya maŋmaŋa bachinima maa n-kahigi wuhi yɛlitɔɣuŋ ma sɔɣu ni nyɛ
+        shɛli.
+      cer: 0.1579
+      wer: 0.6
+    '946':
+      text: Zaŋmi a maŋmaŋa bachinima n-kahigi yɛltɔɣiŋmaa ni nyɛ shɛli.
+      hyp: Zaŋmi a maŋmaa bachinima kahigi yɛtɔɣa ŋmaa ni nyɛ shɛli.
+      cer: 0.08
+      wer: 0.4444
+    '947':
+      text: Sabimi yɛltɔɣiŋmahi balibu diba ayi maa ka kahigi li biɛla.
+      hyp: Sabimi yɛltɔɣ’ yima ayi balibu di ba ayi, maa ka ka higi li biɛla.
+      cer: 0.0816
+      wer: 0.7
+    '951':
+      text: Baŋmi bachibuɣisirili yɛltɔɣiŋmahi din be lahibali maa ni ka sabi li sɔŋ.
+      hyp: Me ni di ba katubiligira yɛltɔɣa ŋmahi din be lahibali maa ni ka sabiili
+        sɔŋ.
+      cer: 0.2623
+      wer: 0.75
+    '959':
+      text: Sabimi sabbu bibahira balibu diba anu din be zuliya shɛli a ni bɔhindi
+        ni.
+      hyp: Sabimi sabbu bibah’ Jɛrabali bu di ba anu din be zuliya shɛli a ni bɔhindi
+        ni.
+      cer: 0.0333
+      wer: 0.3571
+    '961':
+      text: A maŋmaŋa bachinima puuni, kahigim daakiritinima ni nyɛ shɛŋa.
+      hyp: Ka mmaŋmaŋ’ a bachinima puuni, ka Higim daa kiritinima ni nya shɛŋa.
+      cer: 0.0577
+      wer: 0.8889
+    '966':
+      text: Yaɣili ŋɔ yɛn zaŋla karimbihi n-yuli binshɛli din nyɛ lahibali nambu mini
+        lɛbigibu.
+      hyp: Yaaili ŋɔ yɛn zaŋla karim bihi n-yuli binshɛli din nyɛ lahibali nambu mini
+        dabidibu.
+      cer: 0.058
+      wer: 0.3077
+    '977':
+      text: Tumaduu gbaŋ nyɛla gban’ shɛli din sabiri tiri kpamba.
+      hyp: Ka duu gbaŋ nyɛla gbaŋ shɛli din sabiri tiri kpamba.
+      cer: 0.0909
+      wer: 0.3333
+    '978':
+      text: Dɔɣim gbana sabirimi tiri dɔɣiriba, zonima bee ninvuɣ’ so ŋun nyɛ a saawaralana.
+      hyp: Dɔɣiŋgbana sibirimi yuli dɔɣiriba zonima bee ninvuɣu so ŋun nyɛ asaawaralana.
+      cer: 0.0923
+      wer: 0.5385
+    '979':
+      text: Lahibali nambu nyɛla sasabira maa pe lahibali shɛli o ni sabiri maa n-sɔŋ
+        shɛm.
+      hyp: Lahibali nambu nyɛla saasabira maa pe lahibali shɛli o ni sabiri maa n-sɔŋ
+        shɛm.
+      cer: 0.0156
+      wer: 0.0714
+    '980':
+      text: Lahibali sabbu nyɛla tɛh’ shɛli bee lahibali shɛli din ti sabbu puuni.
+      hyp: Lahibali sabbu nyɛla tɛhi’ shɛli bee lahibali shɛli din ti sabbu puuni.
+      cer: 0.0175
+      wer: 0.0833
+    '981':
+      text: Lahibali lɛbigibu nyɛla lahibali gbunni zaŋ ti n-yi zuliya shɛli ni n-kpɛhi
+        zuliya shɛli ni.
+      hyp: Laa Bɛbrɛl labigibu n-nyɛ Laabili gbinni zaa n-ti nyɛ zuliya shɛli ni n-kpɛhi
+        yi zuliya shɛli ni.
+      cer: 0.24
+      wer: 0.6667
+  source: evaluated
+- model: FarmerlineML/voxcpm2-dagbani-sft
+  model_url: https://huggingface.co/FarmerlineML/voxcpm2-dagbani-sft
+  owner: FarmerlineML
+  architecture: VoxCPM2 (2B)
+  cer: 0.1304
+  wer: 0.4729
+  score: 0.1304
+  samples: 200
+  valid: 200
+  avg_seconds: 2.44
+  judge:
+    model: KhayaAI/khaya-asr-v3
+    cer_on_real_speech: 0.1526
+  entries:
+    '2':
+      text: Yaɣili ŋɔ piini wuhiri bachjilli, bachijilli biɛhigu ni yee baŋsim.
+      hyp: Yaɣili ŋɔ pii ni wuhiri ba jiliba chijili biɛhigu ni ye baŋsim.
+      cer: 0.0893
+      wer: 0.6
+    '7':
+      text: A ni mali baŋsim zaŋ jɛndi yee zaŋ nam Dagbani bachi pala.
+      hyp: A ni mali baŋsim zaŋ Jen di yɛli zaŋ namda gba ni bachipala.
+      cer: 0.087
+      wer: 0.5833
+    '10':
+      text: Bachijilli nyɛla bachi yaɣili di ni ni tooi boli shɛli.
+      hyp: Bashijilin nyɛla bachi yaɣili dini ni tooi boli shɛli.
+      cer: 0.0667
+      wer: 0.3
+    '11':
+      text: Bachijilli konsɔnanti nyɛla konsɔnanti shɛli din nahiŋgban ŋmani bachijilli.
+      hyp: Bachijilli konsonanti nyɛla konsonanti shɛli din nahiŋgbaŋ ma ni bachijilli.
+      cer: 0.0448
+      wer: 0.5556
+    '12':
+      text: Yee nyɛla kukoli taɣiri shɛli din ni tooi tahi bachi gbunni taɣibu na.
+      hyp: Yi yi nyɛla kukoli taɣiri shɛli din ni tooi tahi bachi gbunni taɣibu na.
+      cer: 0.0526
+      wer: 0.1538
+    '14':
+      text: Di ni tooi lahi nyɛ yaɣ’ shɛli ti vuhim ni lura bachi bolibu.
+      hyp: Di yi ni tooi lahi nya yaɣ' shɛli ti vuhim ni lura bachi bolibu.
+      cer: 0.0638
+      wer: 0.1538
+    '16':
+      text: Dinzuɣu, duni malila bachijila ayi.
+      hyp: Dinzuɣu Duni malila bachijila ayi.
+      cer: 0.0
+      wer: 0.0
+    '20':
+      text: Dimbɔŋɔ tooi niŋdimi di yi niŋ ka vaawuli bi doli konsɔnantinima maa.
+      hyp: Dimbɔŋɔ to yi niŋdimi di yili niŋ ka vaawuli bi doli konsonantinima maa.
+      cer: 0.0702
+      wer: 0.3333
+    '23':
+      text: Ŋa shɛhira shɛŋa n-do gbunni ŋɔ.
+      hyp: Ŋuna shɛhira shɛŋa n-do gbunni ŋɔ.
+      cer: 0.08
+      wer: 0.1667
+    '29':
+      text: Di lahi sɔŋdi ban bɔhindi ka bɛ baŋdi yɛltɔɣa bachinima gbunni.
+      hyp: Di lahi sɔɣinda bambɔhindi ka ba baŋdi yɛlitɔɣa bachinima gbunni.
+      cer: 0.1346
+      wer: 0.4545
+    '35':
+      text: Bachi yini kam pirimi n-doli ŋa bachijil’ shɛŋa ŋa ni mali.
+      hyp: Bachi yiini kam pirimi n-doliŋa bachijil’ shɛŋa ŋa ni mali.
+      cer: 0.0217
+      wer: 0.2727
+    '36':
+      text: Gahana zuliyanima bachijila balibu waliya.
+      hyp: Gahina zuliya nɛma bɛ chijila balibu waliya.
+      cer: 0.0811
+      wer: 1.0
+    '40':
+      text: Bachijil’ shɛli din ka nyaaŋa nyɛla bachijil’ shɛli din naai ni vaawuli.
+      hyp: Bachige shɛli din ka nyaaŋa nyɛla bachige shɛli din naai ni vaawuli.
+      cer: 0.1034
+      wer: 0.1667
+    '44':
+      text: Bachijil’ shɛli din mali nyaaŋa nyɛla bachi shɛli din naari ni konsɔnanti.
+      hyp: Bachi jil shɛli din mali nyaaŋa nyɛla bachi shɛli din naari ni konsonante.
+      cer: 0.0328
+      wer: 0.25
+    '47':
+      text: Guruni, Kpunkpaansili, Dagaari, ni ŋan pahi.
+      hyp: Guru ni kpuŋkpaansili dagaari ni ŋan pahi.
+      cer: 0.0286
+      wer: 0.5
+    '48':
+      text: Shɛhira shɛŋa n-do gbunni ŋɔ.
+      hyp: Ni bihi a shɛŋa n di gu n-niŋ a.
+      cer: 0.3478
+      wer: 1.6
+    '49':
+      text: Zaŋmi a maŋmaŋa bachinima m-buɣisi binshɛli din nyɛ bachijilli.
+      hyp: Zaŋmi amaŋmaŋa bachinima m-buɣisi binshɛli din nyɛ bachijinima.
+      cer: 0.0755
+      wer: 0.3333
+    '51':
+      text: Wuhimi bachijila bal’ shɛŋa ŋan be Dagbani ni.
+      hyp: Wuhimi bachijila bal' shɛŋa n-gam be dagbani ni.
+      cer: 0.0811
+      wer: 0.125
+    '72':
+      text: A mini a kpee kahigimi bachijila biɛhigu ŋan bachi’ shɛŋa di ni nam maa.
+      hyp: A mini a kpee ka higimi bachijila biɛhigu ŋan bachi shɛŋa di ni na maa.
+      cer: 0.0175
+      wer: 0.2143
+    '74':
+      text: Sakanooŋa mini salinsaa n-da nyɛ zonima viɛnyɛliŋga.
+      hyp: Sakano ŋɔ mini salinsaa n-daa nyɛ zonima viɛnyɛlinga.
+      cer: 0.0909
+      wer: 0.5714
+    '93':
+      text: Yee taɣirimi yɛltɔɣili zaa puuni.
+      hyp: Yi taɣirimi yɛltɔɣili zaa puuni.
+      cer: 0.0714
+      wer: 0.2
+    '94':
+      text: Zuliya balbu mali yee bal’ kɔŋkɔba.
+      hyp: Zuliya balibu mali ye bali kɔŋkoba.
+      cer: 0.1429
+      wer: 0.6667
+    '101':
+      text: Zimbasili, Aŋkarinsili, Kasina, Dagbani, Ayigbesili, ŋan pahi.
+      hyp: Zimba Sili Aŋkarinsili Kasina Dagbani Ayigbe Sili ŋa m-pahi.
+      cer: 0.02
+      wer: 0.8571
+    '112':
+      text: Yee ka di mali waligiri bachi shɛŋa ŋan ŋmɛbu ni gbunninyɛ yim zuliya
+        yɛltɔɣa.
+      hyp: Yi ka di mali waligiri bachi shɛŋa ŋmambu ni gbu neei yim zuliya yɛltɔɣa.
+      cer: 0.1719
+      wer: 0.3571
+    '126':
+      text: Bɔŋbɔŋ puuni, kahigimiya yee tuma.
+      hyp: bɔŋbɔŋ puuni, ka yimiya ye tuma.
+      cer: 0.1429
+      wer: 0.6
+    '130':
+      text: Baŋmi yee bal’ shɛŋa ŋan be bachi shɛŋa di ni ti ŋɔ.
+      hyp: M baŋmi ye baali shɛŋa ŋa mi bachi shɛŋa di ni ti ŋɔ.
+      cer: 0.1795
+      wer: 0.4167
+    '132':
+      text: Baŋmi bachijil’ shɛŋa ŋan ʒiri yee bachi shɛŋa di ni ti maa puuni.
+      hyp: gbaŋmi bachi jil’ shɛŋa ŋan ʒiri ye bachi shɛŋa di ni ti maa puuni.
+      cer: 0.0385
+      wer: 0.3077
+    '133':
+      text: Zaŋmi a labisibu n-wuhi karindu maa zaa.
+      hyp: Zaŋmiya labisibu n-wuhi karindu maa zaa.
+      cer: 0.0312
+      wer: 0.2857
+    '139':
+      text: Zaŋmi shɛhira dibaata n-kahigi yee tuma Dagbani.
+      hyp: Zaŋmi shɛhira di baati n-kahigi yɛ tuma Dagbani.
+      cer: 0.075
+      wer: 0.4286
+    '142':
+      text: Yaɣili ŋɔ kahigirila yɛltɔɣikpana baŋbu lahabali, bee lahabali puuni.
+      hyp: Yaɣili ŋɔ kahigiri li yɛltɔɣikpani baŋbu lahabali bee lahabali puuni.
+      cer: 0.0339
+      wer: 0.3333
+    '149':
+      text: Yɛlkpan’ shɛli din be lahabali puuni n-nyɛ di ni ʒiri yɛltɔɣikpan’ shɛli
+        lahabali ni ʒira.
+      hyp: Yaa kpan’ shɛli din be lahabali puuni n-nyɛ din ni ʒiri yɛlitɔɣikpan’ shɛli
+        lahabali ni ʒira.
+      cer: 0.0556
+      wer: 0.2667
+    '150':
+      text: Dimbɔŋɔ ni tooi be yɛltɔɣ’ shɛli din ʒiri yɛltɔɣikpani ka mali yɛltɔɣ’
+        shɛŋa ŋan kahigira.
+      hyp: Mɔŋɔ ni tooi be yɛltɔʼ shɛli din ʒiri yɛltɔɣikpani ka mali yɛltɔʒɛŋa n-niŋ
+        kahigira.
+      cer: 0.1507
+      wer: 0.3333
+    '151':
+      text: Karimbu ni tooi nyɛ din ziligi bee din yɛligi.
+      hyp: Karimbu ni to n-nyɛ din ziligi bee din yɛligi.
+      cer: 0.0541
+      wer: 0.2222
+    '159':
+      text: Dimbɔŋɔ yɛrila baŋsim yaɣili, lahabali bee alizama maa daliri.
+      hyp: Dimbɔŋɔ yɛrila baŋsim yaɣili, lahabali be alizama maa daliri.
+      cer: 0.0192
+      wer: 0.1111
+    '184':
+      text: Zaŋmi a tɛha m-maɣisi ŋan sabi do gbunni ŋɔ.
+      hyp: Zaŋmi la tɛhi a maɣisiŋ n-sabi dogbunni ŋɔ.
+      cer: 0.1176
+      wer: 0.7778
+    '187':
+      text: Dimbɔŋɔ nyɛla n-vihi bo yɛltɔɣikpan’ shɛli din be lahabali maa puuni.
+      hyp: Dimbɔŋɔ nyɛla m vihi bɔ yɛli tuɣikpan’ shɛli din be lahabali maa puuni.
+      cer: 0.0714
+      wer: 0.4545
+    '190':
+      text: Dimbɔŋɔ m-mali a nina yuuni yomyom m-bɔri bachi shɛŋa shee lahabali ni.
+      hyp: Dimbɔŋɔ mali a n na yuuni yomyom m-bɔri bachi shɛŋa shee lahabali ni.
+      cer: 0.0351
+      wer: 0.25
+    '192':
+      text: Karimmi lahabali din do gbunni ŋɔ.
+      hyp: Di nyɛla gbaŋpiɛla tiŋgbaŋ
+      cer: 0.75
+      wer: 1.0
+    '193':
+      text: Baŋmi yɛltɔɣikpani lahabal’ shɛli di ni ti gbunni ŋɔ.
+      hyp: Baŋmi yɛli tɔɣi pa ni lahabali shɛli di nitigo ni ŋɔ.
+      cer: 0.1395
+      wer: 0.8889
+    '194':
+      text: Zaŋmi di ni baŋ yɛltɔɣikpan’ shɛli maa n-wuhi ka maɣisi a karimbi’ taba.
+      hyp: Zaŋmi di ni baŋ yɛli tuɣikpan’ shɛli maa n-wuhi hi ka maɣisi a karimba
+        taba.
+      cer: 0.0893
+      wer: 0.3077
+    '215':
+      text: N daa naaya ni shɛhira gbaŋ shɛli din daa viɛli pam.
+      hyp: n daa naai ya ni shɛhira gbaŋ shɛli din daa viɛli pam.
+      cer: 0.0244
+      wer: 0.1818
+    '218':
+      text: Zaŋmi yɛltɔɣikpana maa n-wuhi karimduu maa zaa.
+      hyp: Zaŋmi yɛltɔɣikpana maa n-wuhi karindoo maa zaa.
+      cer: 0.0769
+      wer: 0.1429
+    '226':
+      text: Amaa ka di yi niŋ ka fukumsinima ka yɛlmaŋli?
+      hyp: Ma ka di yi niŋ ka fukumsi ni maa ka yɛlimaŋli.
+      cer: 0.1111
+      wer: 0.5556
+    '227':
+      text: N kuli tiri jilin’ shɛli a ni mi bi viɛla.
+      hyp: n kuli tiri jilin shɛli a ni mi bi' viɛla.
+      cer: 0.0
+      wer: 0.0
+    '242':
+      text: Karimmi lahabal’ shɛli din do gbunni maa ka labisi bɔhisi ŋan doli li
+        na.
+      hyp: Ka di mi lahabali shɛli din do gbuni maa ka labisi bɔhisi ŋan doli li na.
+      cer: 0.069
+      wer: 0.3571
+    '247':
+      text: Karimbakpema maa n-nyɛ ŋun mali shikuru maa fukumsi.
+      hyp: Karimba kpɛma maa n-nyɛ ŋun mali shikuru maa fukumsi.
+      cer: 0.0233
+      wer: 0.25
+    '260':
+      text: Ka naan yi zaŋ li maɣisi di ni nyɛ shɛli gbunni ŋɔ.
+      hyp: Di nyɛla gbaŋpiɛla tiŋgbaŋ
+      cer: 0.7692
+      wer: 0.9167
+    '272':
+      text: So’ shɛŋa di ni doli n- a maŋmaŋa karimbu soli n-karimgbaai.
+      hyp: So’ shɛŋa di ni doli ni amaŋmaŋ’ karimba soli n-karimbaai.
+      cer: 0.087
+      wer: 0.4545
+    '283':
+      text: Sabita nyɛla daadam daalafee mini jilima nyɛbili.
+      hyp: Sabita nyɛla daadam daalafee mini jilima nyɛbili.
+      cer: 0.0
+      wer: 0.0
+    '296':
+      text: Ka naan yi, zaŋ a ni tɛhi ni lahabali ŋɔ ni tooi yɛligi.
+      hyp: Di nyɛla gbaŋpiɛla tiŋgbaŋ
+      cer: 0.7857
+      wer: 1.0
+    '305':
+      text: Zaŋmi a maŋmaŋa bachinima n-wuhi binshɛli din nyɛ ‘yɛltɔɣikpani’.
+      hyp: Zaŋmi a maŋmaŋa bachinima n-wuhi binshɛli din nyɛ yɛltɔɣa kpa ni.
+      cer: 0.0189
+      wer: 0.3333
+    '307':
+      text: Jilima pa la binshɛli di ni ni tooi deei amaa di nyɛla binshɛli di ni
+        bɔra.
+      hyp: Jilima pala binshɛli din ni naɣ’ tuhi deei amaa di nyɛla binshɛli din ni
+        bɔra.
+      cer: 0.1017
+      wer: 0.375
+    '314':
+      text: Dimbɔŋɔ n-nyɛ jilima ni ŋmani shɛli.
+      hyp: Dimbɔŋɔ n-nyɛ jilima ni ŋmani shɛli.
+      cer: 0.0
+      wer: 0.0
+    '318':
+      text: A yi kpɛri ka yiri haai shikuru, teemi ni jilima nyɛla yaɣa-yi soli.
+      hyp: Ayikpɛri ka yira hali shikuru, teemi ni jilima nyɛla yaɣa yi soli.
+      cer: 0.0377
+      wer: 0.5385
+    '321':
+      text: Bɔ ka lahabali maa yuli yɛli zaŋ kpa lahabali maa yɛltɔɣikpani?
+      hyp: Bɔ ka lahabali maa yuli yɛli zaŋ kpa lahabali maa yɛli tɔɣikpa ni?
+      cer: 0.0192
+      wer: 0.2727
+    '323':
+      text: Zaŋmi yɛltɔɣa anahi n-kolivaai lahabal’ shɛli din do zuɣusaa ŋɔ.
+      hyp: Zaŋmi yɛltɔɣa anahi n-koli vai lahabali shɛli din do zuɣusaa ŋɔ.
+      cer: 0.0385
+      wer: 0.3
+    '324':
+      text: Baŋmi karimbu din ziligi nahiŋgbana ayi shɛŋa a ni bɔhim yaɣili ŋɔ ni.
+      hyp: Kpaŋmi karimba din ziligi nahiŋgba ni ayi shɛŋa ni bɔhim yaɣili ŋɔ ni.
+      cer: 0.0877
+      wer: 0.3846
+    '327':
+      text: Kahigimi karimbu din yɛligi nahiŋgbana ata?
+      hyp: Pahigimi karimbu din yɛligi nahingbana ata.
+      cer: 0.0541
+      wer: 0.3333
+    '329':
+      text: Kahigimi ni a maŋmaŋa bachinima.
+      hyp: Kahigimi ni amaŋmaŋa bachinima.
+      cer: 0.0
+      wer: 0.4
+    '346':
+      text: Biɛlimpahira tuma zuliya ni nyɛla di sɔŋ n-nam bachipala.
+      hyp: Bihilim pahira tuma zuliya ni nyɛla di sɔŋ n-nam bachi pala.
+      cer: 0.0426
+      wer: 0.4444
+    '357':
+      text: Biɛlimpahirili nyɛla tooni biɛlimpahirili di yi do nyaɣili maa tooni.
+      hyp: Biɣilim pahirili nyɛli tooni biɣilim pahili di yido nyaɣili maa tooni.
+      cer: 0.1186
+      wer: 0.7
+    '358':
+      text: Biɛlimpahirili nyɛla sunsuuni biɛlimpahirili di yi be nyaɣili maa sunsuuni.
+      hyp: Biɛlimpahirili nyɛla sunsuuni, biɛlimpahirili dii be nyaɣili maa sunsuuni.
+      cer: 0.0154
+      wer: 0.2
+    '359':
+      text: Biɛlimpahirili nyɛla nyaaŋa biɛlimpahirili di yi ti kana bachi nyaaŋa.
+      hyp: Piilim pahirili nyɛla nyaaŋa, biɛlim pahirili di yi ti kana bachi nyaaŋa.
+      cer: 0.0333
+      wer: 0.4
+    '367':
+      text: Ŋmaligi n-kpa a kpee n-kahigi biɛlimpahira ni nyɛ shɛli.
+      hyp: M maligi n kpuɣi a kpee n kahigi biɛla m pahiri a nia shɛli.
+      cer: 0.2
+      wer: 1.2222
+    '382':
+      text: Nyaya ka bachi maa nyabili din nyɛ bachiniŋdili ŋɔ pubu taɣi n-lɛbi bachinamdili.
+      hyp: N nya ka bachi maa nyɛvili din nyɛ bachinimdili ŋɔ pɔbu taɣinli bachinamdili.
+      cer: 0.1194
+      wer: 0.5385
+    '389':
+      text: Shɛhira, n-zaŋ biɛlmpahirili -si m-pahi nooŋ-a zuɣu di ni titi noon-si.
+      hyp: shɛhira n-zaŋ beni pahirili simpahi anuɣa zuɣu di ni ti ti nɔɣinsi.
+      cer: 0.2037
+      wer: 0.6364
+    '392':
+      text: Bɔŋbɔŋ ni, zammiya ka kahigi biɛlimpahira balibu yi yaa tariga Dagbani
+        ni.
+      hyp: Kuŋ bɔŋ ni zaŋmi ya ka kahigi biɛlim pahiri ba li bɛ yaa tariga Dagbani
+        ni.
+      cer: 0.1148
+      wer: 0.75
+    '393':
+      text: Wula ka di lee taɣiri bachi nyaɣa maa gbunni?
+      hyp: Di nyɛla tiŋgbani yaɣ'shɛli
+      cer: 0.6944
+      wer: 0.8889
+    '398':
+      text: Biɛlimpahira tuma waliya zuliya kɔŋkɔba puuni.
+      hyp: bilin’ pahira tumo waliya zuliya kɔŋkɔba puuni.
+      cer: 0.075
+      wer: 0.5
+    '400':
+      text: Ŋa sɔŋdi bachi pala nambu ni.
+      hyp: N sɔŋdi bachi pala nambuni.
+      cer: 0.087
+      wer: 0.5
+    '401':
+      text: Ŋa sɔŋdi taɣiri bachinima pubu.
+      hyp: Ŋa sɔŋ di taɣiri bachinima pɔbu.
+      cer: 0.0385
+      wer: 0.6
+    '402':
+      text: Biɛlimpahira sɔŋdi namdi bachiniŋda niŋsim saha.
+      hyp: Beeli m-pahira sɔŋdi namdi bachinim’ daa niŋsim saha.
+      cer: 0.0952
+      wer: 0.6667
+    '404':
+      text: Biɛlimpahira taɣiri bachinima zaɣ’ gansi n-lɛbiri zaɣ’ bɔbigu.
+      hyp: Biɛlim pahira n-taɣiri bachinima zaɣ' gaŋsi n-lɛbiri zaɣ' bɔbigu.
+      cer: 0.0392
+      wer: 0.5
+    '405':
+      text: Biɛlimpahira baŋsim sɔŋdi bachinima yiɣisibu viɛnyɛla mini balli bɔhimbu.
+      hyp: Biyalim pahira baŋsim n-sɔŋdi bachinima yiɣisibu viya mini balli bɔhimbu.
+      cer: 0.1094
+      wer: 0.4444
+    '409':
+      text: Baŋmi biɛlimpahira ŋan be bachinima ŋɔ ni ka wuhi ŋa balibu ni nyɛ shɛŋa.
+      hyp: Baŋmi bihi m-pahira ŋan be bachinima ŋɔ ni ka wuhi ŋa balibu ni nyɛ shɛŋa.
+      cer: 0.0339
+      wer: 0.1429
+    '412':
+      text: Niŋmi shili ni a ni zaŋ li n-wuhi a karimbitaba ka kahigi li.
+      hyp: M mini shili nia ni zaŋ li n-wuhi a ka din be taba ka ka higili.
+      cer: 0.1489
+      wer: 0.7692
+    '417':
+      text: Di tuuli tuma kuli nyɛla di zaŋdila yɛltɔɣa yaɣa tuɣiri taba.
+      hyp: Ti tuuli tuma kul nyɛla di zaŋdila yɛltɔɣa yaɣi tuɣiri taba.
+      cer: 0.06
+      wer: 0.2727
+    '421':
+      text: O karinda dinzuɣu o mali baŋsim.
+      hyp: O karinda dinzuɣu o mali baŋsim.
+      cer: 0.0
+      wer: 0.0
+    '422':
+      text: N ni chaŋ amaa n ni labina.
+      hyp: ni chaŋ a maa ni labina.
+      cer: 0.1
+      wer: 0.4286
+    '425':
+      text: Bachituɣira balibuBachituɣira balibu pam m-beni.
+      hyp: Baki tuɣiri balibu, bachu tuɣiri balibu pam m-beni.
+      cer: 0.119
+      wer: 1.0
+    '438':
+      text: Naawuni so n ni ti yɛda.
+      hyp: Naawuni sɔni ni ti yɛda.
+      cer: 0.1111
+      wer: 0.3333
+    '445':
+      text: Pɔi ka ka kpukpalivari pɔri, di dolila dunia tiŋgbani ni yɛli li shɛli.
+      hyp: Di pɔya ka kpukpa lɛbaripɔri di dola dunia tiŋgbani ni yɛli shɛli.
+      cer: 0.1754
+      wer: 0.4615
+    '447':
+      text: Saa yi mi, nyin toomi kom.
+      hyp: Nusaa yi mi, nyin' toomi kom.
+      cer: 0.1053
+      wer: 0.1667
+    '448':
+      text: Naa maa ni daa labi o yaannima sanmi, n daa nyala suhudoo.
+      hyp: Naa maa ni daalabu o yɛnnima sami n-daa nyɛla suhudo.
+      cer: 0.1333
+      wer: 0.6667
+    '450':
+      text: Amii o bela yiŋa bee yɔɣu.
+      hyp: Di nyɛla gbaŋpiɛla tiŋgbaŋ
+      cer: 1.0
+      wer: 1.0
+    '456':
+      text: Biɛhigu to amaa ti ni kpaŋ ti maŋa pam.
+      hyp: Ti yi gulti, amaa ti ni kpaŋ ti maŋa pam.
+      cer: 0.1667
+      wer: 0.3333
+    '457':
+      text: O yuuni bɔri o shee amaa o bi nya o.
+      hyp: Ka o yuɣu ni bɔri o shee amaa o bi nya o.
+      cer: 0.1154
+      wer: 0.3
+    '459':
+      text: Sabimi bachituɣira balibu shɛhira diba ata ka zaŋ ŋa n-nam yɛltɔɣa.
+      hyp: Sabim' bachi tuɣira balibu shɛhira dibaata ka zaŋ n-nam yɛltɔɣa.
+      cer: 0.0545
+      wer: 0.5455
+    '461':
+      text: Bachituɣira tuma balibu ni tooi wali bala ni, amaa di shɛŋa ni tooi nyɛ
+        yim.
+      hyp: Bɔhi tuɣira tuma balibu ni tooi wal' bala ni, amaa di shɛŋa ni tooi nya
+        yim.
+      cer: 0.0667
+      wer: 0.2667
+    '464':
+      text: Di sɔŋdi n-laɣindi yɛltɔɣiŋmahi bee yɛltɔɣiŋmasɔri mini ŋa taba.
+      hyp: Ni sɔŋdi ni laɣindi yɛltɔɣiŋmahi be yɛltɔɣiŋma sɔri mini ŋa taba.
+      cer: 0.0556
+      wer: 0.6667
+    '465':
+      text: Di sɔŋdi n-tahiri waliginsim na.
+      hyp: di sɔŋdi n-tahiri waliginsim na.
+      cer: 0.0
+      wer: 0.0
+    '467':
+      text: Bachituɣira mali zalisi biɛla zaŋ chaŋ ŋa zaŋ tum tuma polo.
+      hyp: Bashi tuɣiri mali zalisi biɛla zaŋ chaŋ a zaŋ tumtumi polo.
+      cer: 0.0816
+      wer: 0.4545
+    '470':
+      text: Bachituɣira kuli nyɛla ŋan gbundi tɛha ni niŋsim.
+      hyp: Saha tɔra kuli nyɛla gambili taha ni niŋsim.
+      cer: 0.3171
+      wer: 0.625
+    '472':
+      text: Bachituɣira mali sɔŋsim pam zaŋ chaŋ binyɛra kalibu.
+      hyp: Bakituhira mali sɔŋsim pam zaŋ chaŋ binyɛra kalibu.
+      cer: 0.0682
+      wer: 0.125
+    '473':
+      text: Di yi mali bachituɣira tumdi tuma, che ka a yɛltɔɣa yaɣa zaa saɣi doli
+        taba.
+      hyp: Di yi mali bachi suɣira tumdi tuma chɛ ka a yɛltɔɣa yaɣa zaa saa doli taba.
+      cer: 0.0667
+      wer: 0.2667
+    '482':
+      text: Ŋuni n-tiri lala binyɛra maa yuya?
+      hyp: O ni yi n-tiri lala binyɛra maa yuya.
+      cer: 0.1481
+      wer: 0.5
+    '501':
+      text: Lala soli ŋɔ zaŋ nam bachi pala dii bi yoli Dagbani ni ni.
+      hyp: Lala soli ŋɔ zaŋ nam bachi pala dii bi yoli Dagbani nini.
+      cer: 0.0
+      wer: 0.1538
+    '505':
+      text: Zuliyanima pam paŋ bachinima zuliya shɛŋa ni.
+      hyp: Zuliyanima kpaŋpaŋ bachinim’ zuliya shɛŋa ni.
+      cer: 0.0789
+      wer: 0.4286
+    '510':
+      text: Sabimi kamani bachi pia din nyɛ bachi paŋda Dagbani ni.
+      hyp: Sabimi kamani bachipiya din nyɛ bachipamda Dagbani ni.
+      cer: 0.0444
+      wer: 0.4
+    '512':
+      text: Di sɔŋdi zoori zuliya yɛltɔɣa dama zuliya maa yɛltɔɣa bachinima ni yɛligi.
+      hyp: di sɔŋdi zɔri zuliya yɛlitɔɣa dama zuliya maa yɛlitɔɣa bachinima n-yɛligi.
+      cer: 0.0806
+      wer: 0.4167
+    '513':
+      text: Di sɔŋdi che ka zuliya yɛltɔɣa wuligiri gindi dunia zaa.
+      hyp: Ti saŋdi chɛ ka zuliya yɛltɔɣa wuligiri gindi dunia zaa.
+      cer: 0.0652
+      wer: 0.3
+    '514':
+      text: Di sɔŋdi namdi bachi pala m-mali booni bin’ pala.
+      hyp: Ti sɔŋ namdi bachipala m-mali booni Bimpala.
+      cer: 0.1053
+      wer: 0.6667
+    '515':
+      text: Di sɔŋdi zuliya yɛltɔɣa bɔhimbu ni.
+      hyp: di sɔŋdi zuliya yɛltɔɣa bɔhimbu ni.
+      cer: 0.0
+      wer: 0.0
+    '516':
+      text: Di sɔŋdi ti ka ti tooi biɛhiri ti yuuni bachinima pilli ni.
+      hyp: Ti sɔŋdi ti ka tutuɣi biɛɣiri ti yuuni bachinima pilli ni.
+      cer: 0.1064
+      wer: 0.3333
+    '520':
+      text: Wuhimi biɛlimpahira balibu din be Dagbani ni.
+      hyp: Wuimi biɛlim pahiri balibu din be Dagban ni.
+      cer: 0.0789
+      wer: 0.5714
+    '521':
+      text: Yihimi biɛlimpahira diba Anahi Dagbani n-sɔŋ.
+      hyp: Yihimi biɛlim pahira diba anahi Dagbani n-sɔŋ.
+      cer: 0.0
+      wer: 0.3333
+    '522':
+      text: Wuhimi biɛlimpahira tuma diba anahi Dagbani ni.
+      hyp: Wuhimi biɛlim paɣira tuma dibaa anahi Dagbani ni.
+      cer: 0.05
+      wer: 0.4286
+    '523':
+      text: Baŋmi biɛlimpahira ŋan be bachinima ŋɔ ni ka wuhi ŋa balibu ni nyɛ shɛli.
+      hyp: Saŋm’ biɛlim pahiri a ŋan bi bachinima ŋuni ka wuhi ŋa balibu ni nya shɛli.
+      cer: 0.1017
+      wer: 0.5714
+    '524':
+      text: Kahigi n-wuhi bachituɣira ni nyɛ shɛli.
+      hyp: Pahigi n-wuhi ba ti tuɣira ni nyɛ shɛli.
+      cer: 0.0938
+      wer: 0.6667
+    '525':
+      text: Baŋmi bachituɣira balibu ni nyɛ shɛli Dagbani ni.
+      hyp: Baŋmi bachi tuɣira balibu ni nyɛ shɛli Dagbani ni.
+      cer: 0.0
+      wer: 0.25
+    '526':
+      text: Wuhimi waliginsim shɛli din be bachituɣira bali shɛŋa a ni yihi maa ni.
+      hyp: Puhimi waliginsim shɛli din ba bachi tuɣira baali shɛŋa a ni yihi maa ni.
+      cer: 0.0517
+      wer: 0.3846
+    '528':
+      text: Boomi bschituɣira gbunni yɛltɔɣa ŋan doli ŋɔ na ni.
+      hyp: Bomba shituɣiri gbuni ni yɛli tɔɣa ŋan doli o nani.
+      cer: 0.2143
+      wer: 1.0
+    '529':
+      text: O diya amaa o bi tiɣi.
+      hyp: Di nyɛla gbaŋpiɛla tiŋgbaŋ
+      cer: 1.0
+      wer: 1.0
+    '530':
+      text: N ni chaŋ amaa pa zuŋɔ.
+      hyp: Di nyɛla gbaŋpiɛla tiŋgbaŋ
+      cer: 1.0588
+      wer: 1.0
+    '531':
+      text: Kahigimi binshɛli din nyɛ bachi nambu soya.
+      hyp: Hali binshɛli din nyɛ bachinamba soya.
+      cer: 0.1944
+      wer: 0.4286
+    '532':
+      text: Baŋmi bachi nambu soya dibaata shɛŋa a ni mi Dagbani ni.
+      hyp: Gbaŋmi bɔchi nam bi soya dibaata shɛŋa a ni mi dagbani ni.
+      cer: 0.0667
+      wer: 0.3636
+    '533':
+      text: Kahigimi Dagbani bachi nambu balibu dibaata.
+      hyp: Ka mi Dagbani bachi nambu balibu di baata.
+      cer: 0.1053
+      wer: 0.6667
+    '534':
+      text: Kahigimi Dagbani bachi nambu daanfaani yini bee garibu.
+      hyp: Kaligimi Dagba ni bachi nambu daanfaani yini bee garibu.
+      cer: 0.0213
+      wer: 0.375
+    '536':
+      text: Zuŋɔ, tabibi baŋsim nyɛla din kpa talahi baŋsim bɔhimbu ni.
+      hyp: Tiŋɔ tabibi baŋsim nyɛla din kpatala baŋsim bɔhimbu ni.
+      cer: 0.0833
+      wer: 0.3
+    '542':
+      text: Ti ni zaŋ rɔbɔtinima n-zali karimbanima zaa ni?
+      hyp: N ni zaŋ robɔtinima n-zali karimbanima zaani.
+      cer: 0.0789
+      wer: 0.5
+    '558':
+      text: Yɛltɔɣiŋmaa nyɛla bachinima din laɣim m-pe taba n-nam yɛltɔɣili.
+      hyp: Yalitɔɣuŋ maa nyɛla bachinima din laɣim pe taba n-nam yalitɔɣili.
+      cer: 0.1132
+      wer: 0.4444
+    '565':
+      text: Zaŋmi a ni bɔhim shɛli maa m-maɣisi a bɔŋ maa ni.
+      hyp: zaŋmi a ni bɔhim shɛli maa maasa bɔŋ maa ni.
+      cer: 0.1081
+      wer: 0.1818
+    '574':
+      text: Yɔltɔɣiŋmasɔri shɛhira shɛŋa n-do gbunni ŋɔ.
+      hyp: Yili tɔɣi ŋma suɣuli shihi a shɛŋa nagbuni ŋ-ŋɔ.
+      cer: 0.3243
+      wer: 1.5
+    '585':
+      text: Dimbɔŋɔ nyɛla yɛltɔɣiŋmasɔɣu din zuɣu nyɛ bachinamdili bee bachizaanili.
+      hyp: Dimbɔŋɔ nyɛla yɛltɔɣiŋmi suhu din zuɣu nyɛ bachinamdili bee bachi zaa ni
+        li.
+      cer: 0.0476
+      wer: 0.6667
+    '588':
+      text: Dimbɔŋɔ wuhirimi ni di nyɛla din nyɛ bachi yini kɔŋko.
+      hyp: Dimbɔŋɔ wuhirimi di nyɛla din nyɛ bachi yini kɔŋko.
+      cer: 0.0455
+      wer: 0.1
+    '596':
+      text: Bachinima din galisi nyɛla din ni tooi nyɛ bachinamdili yɛltɔɣiŋmasɔɣu.
+      hyp: Bachilima din galisi nyɛla din ni tooi nyɛ bachinamdili yɛltɔɣaŋma suhu.
+      cer: 0.0656
+      wer: 0.3
+    '622':
+      text: Bachi zuɣu maa ni tooi lan ʒiri nyaaŋa bachikahigira mini tooni bachikahigira.
+      hyp: Bachi zuɣu maa ni toila n-ʒi di nyaaŋa bachi kahigira mini tooni bachi
+        kahigira.
+      cer: 0.0303
+      wer: 0.5833
+    '626':
+      text: Bɔna puuni, nammiya bachinamdili yɛltɔɣiŋmasɔri diba atata.
+      hyp: Bɔna puuni nam ya bachinamdili yɛli tɔɣiŋ ma sɔri dibaa tata.
+      cer: 0.0588
+      wer: 1.1429
+    '649':
+      text: Bɔna puuni, nammiya bachiniŋdili yɛltɔɣiŋmasɔri.
+      hyp: Bɔna puuni nam ya bachinim’ dili yɛltɔɣa ŋma sɔri.
+      cer: 0.0952
+      wer: 1.4
+    '665':
+      text: Bachibuɣisirili ɛltɔɣiŋmasɔɣu malila bachibuɣisirili ka di nyɛ di bachi
+        zuɣu.
+      hyp: Bachi buɣisirili a yi tɔɣi ŋma suɣu malila bachi buɣisirili ka din nyɛ
+        di bachi zuɣu.
+      cer: 0.0746
+      wer: 1.0
+    '670':
+      text: Dimbɔŋɔ nyɛla yɛltɔɣiŋmasɔɣu din bachi zuɣu nyɛ zaashee bachi.
+      hyp: Dimbɔŋɔ nyɛla yɛltɔɣimmi suhu din bachi zuɣu n-nyɛ zaɣashee bachi.
+      cer: 0.1132
+      wer: 0.4444
+    '680':
+      text: O chaŋ tiŋa maa puuni.
+      hyp: O chaŋ tiŋa maa puuni.
+      cer: 0.0
+      wer: 0.0
+    '682':
+      text: Din kpalim ka bi sabigi pam maa mi nyɛla bachiniŋdili yɛltɔɣiŋmasɔɣu.
+      hyp: Tia n-kpalim ka bɛ sabigi pam maa mi nyɛla bachinimdili yɛltɔɣa maa zuɣu.
+      cer: 0.1552
+      wer: 0.6364
+    '688':
+      text: Di mali yɛltɔɣiŋmasɔri n-kahigiri tɛha.
+      hyp: Di mali yɛltɔɣa ŋma sɔri n-kahigiri taha.
+      cer: 0.0606
+      wer: 0.8
+    '690':
+      text: Din yɛn che ka yɛltɔɣa ne, yɛltɔɣiŋmasɔri tumdi tuun’ kara pam.
+      hyp: N yɛn chɛ ka yɛltɔɣa ni yɛltɔɣa m-masuri tumdi tuun’ kara pam.
+      cer: 0.14
+      wer: 0.4545
+    '695':
+      text: Dakulo din gari la, m mini n zo daa gbaami ni ti di ti dabisili maa teeku
+        duli.
+      hyp: A kolo din gari li a mini n zo daa gbaami ni ti di ti dabisili maa teeku
+        duli.
+      cer: 0.0667
+      wer: 0.2222
+    '701':
+      text: Ti ni daa kuli paai, ti daa yulimi m-bo luɣ’ viɛlli shee kpukpalitia gbunni.
+      hyp: Tihi daa kuli paai, ti daa yulim m-bo lo viɛlli shee kpukpali tɛbigu ni.
+      cer: 0.1525
+      wer: 0.5
+    '711':
+      text: Bɔna puuni, piɛmiya yɛltɔɣiŋmasɔri balibu maa ka di doli taba (a.
+      hyp: Bɔ ni puuni, piɛmi yaa yɛltɔɣa ni Masur' balibu maa ka di doli taba.
+      cer: 0.1538
+      wer: 0.7273
+    '714':
+      text: Zaŋmiya yi labisibu maa n-wuhi karinduu maa zaa ka yi zamzam li.
+      hyp: Din ya yi labisibu maa n-wuhi karindoo maa zaa ka yi zɛm zɛm li.
+      cer: 0.1765
+      wer: 0.4167
+    '728':
+      text: Senyo ɖa akplĕ hafi yi suku.
+      hyp: Ti nyɛ o zaɣ' pili afiisigu.
+      cer: 0.5455
+      wer: 1.0
+    '736':
+      text: Yɛltɔɣiŋmaa din ku tooi zani di gama zuɣu.
+      hyp: Yɛl’ tɔɣiyini maa din ku to zani di gami zuɣu.
+      cer: 0.2059
+      wer: 0.625
+    '742':
+      text: Makafui ate ŋu ade tɔme gbe sia gbea?
+      hyp: makafui ate ŋɔ di tom gbe tia gbeya.
+      cer: 0.2414
+      wer: 0.625
+    '759':
+      text: Di kahigibu n-do gbunni ŋɔ.
+      hyp: Ti ka yi gbubi n-do gu n-niŋ ŋɔ.
+      cer: 0.3333
+      wer: 1.2
+    '765':
+      text: Yɛltɔɣiŋmaa din nyɛ zaligu ni tooi bi bɔri zuɣu.
+      hyp: Yɛltɔɣa maa din nyɛ zaligu ni tooi bi bɔri zuɣu.
+      cer: 0.0513
+      wer: 0.2222
+    '769':
+      text: Yi ni tooi ti shɛhira shɛŋa zaŋ kpa bɔhigu bachinima din Dagbani polo.
+      hyp: Yi ni to yi ti shɛhira shɛŋa zaŋ kpa bɔhigu bachinima din dagbani polo.
+      cer: 0.0175
+      wer: 0.1538
+    '770':
+      text: Yɛltɔɣiŋmaa din nyɛ bɔhigu naarimi ni bɔhigu bia.
+      hyp: Di nyɛla tiŋ' shɛli din nyɛ bɔhigu naɣirimi ni bɔhigu bia.
+      cer: 0.3171
+      wer: 0.625
+    '787':
+      text: Kofi nim no afiri sε ɔyε.
+      hyp: Kofi nim ni afiri siɣi o yina.
+      cer: 0.4211
+      wer: 0.6667
+    '791':
+      text: Chɛliya ka zamzam di balibu maa.
+      hyp: Chɛliya ka zanzam di balibu maa.
+      cer: 0.0385
+      wer: 0.1667
+    '802':
+      text: Kafui xlĕ agbalĕ si fofoa nε la nyuie.
+      hyp: Di nyɛla gbaŋpiɛla tiŋgbaŋpiɛla tiŋgbaŋ
+      cer: 0.9333
+      wer: 1.0
+    '804':
+      text: Nyɔnu si ƒle avɔ etsɔ la dzo.
+      hyp: Nyuni suhiri la avɔɣit so la do.
+      cer: 0.5
+      wer: 0.8571
+    '827':
+      text: Bachinima din pe taba m-buɣisiri maa gbunni m-booibooi yɛltɔɣa maa ni
+        maa.
+      hyp: Baashinima din pe taba m-buɣisiri maa gbunni m-booi booi yɛltɔɣa maa ni
+        maa.
+      cer: 0.0333
+      wer: 0.25
+    '852':
+      text: Sabbu bibahira mini di tuma.
+      hyp: sabbu bia bahiri mini di tuma.
+      cer: 0.087
+      wer: 0.4
+    '853':
+      text: Ŋmahin’ shɛli di ni mali sɔŋdi yɛltɔɣili bahigu din wuhiri yɛltɔɣili maa
+        naabu.
+      hyp: mahin’ shɛli din ni mali sɔŋdi yɛltɔɣili bahigu din wuhiri yɛltɔɣili maa
+        naabu.
+      cer: 0.0308
+      wer: 0.1538
+    '857':
+      text: Di zaŋdimi wuhiri bachinima din ŋmaai filim naabu.
+      hyp: Di zaŋdi mi wuhiri bachinima din maai filim naabu.
+      cer: 0.0238
+      wer: 0.375
+    '858':
+      text: Di mali li sɔŋdi so yɛligu bee yɛltɔɣili bahigu.
+      hyp: Di mali li li sɔŋ du’ so yɛligu bee yɛltɔɣili bahigu.
+      cer: 0.0769
+      wer: 0.3333
+    '859':
+      text: Dɔɣite maa yɛliya, “A nyɛla ŋun nyari alaafee”.
+      hyp: Zuɣite maa yɛliya a nyɛla ŋun nyari alaafee.
+      cer: 0.0556
+      wer: 0.125
+    '860':
+      text: Karimba maa yɛlimi ni “Zahimbu kani zuŋɔ”.
+      hyp: Karimba maa yεlimi ni zahimbu ka ni zuŋɔ.
+      cer: 0.0303
+      wer: 0.4286
+    '861':
+      text: Di zaŋ li woligiri binyɛra taba kalibu ni.
+      hyp: Zaŋ li woligiri binyɛra taba kalibu ni.
+      cer: 0.0588
+      wer: 0.125
+    '863':
+      text: N kpɛla shitɔɣu maa ni ni n ti da chibo, sɔɣiso, bɔɣati ni bɔdua.
+      hyp: n piɛla shitɔŋ maa ni ni n ti da chibo suɣusɔ bɔhati ni bɔdo.
+      cer: 0.2041
+      wer: 0.3571
+    '866':
+      text: Di zaŋdi li pirigiri bachibuɣisira din buɣisiri bachinamdili.
+      hyp: di zaŋdi li pirigiri bachiburisira din buɣisiri bachinamdili.
+      cer: 0.0189
+      wer: 0.125
+    '867':
+      text: Di zaŋ li n-wuhi binyɛra kalibu piligu, shɛhira bee kahigibu.
+      hyp: Di zaŋ li n-wuhi bɛ nyara kalibu piligu, shɛhira bee kahigibo?
+      cer: 0.0612
+      wer: 0.3
+    '870':
+      text: Di zaŋdi li pirigiri yɛltɔɣiŋmahi diba ayi din ni tooi zani di gama zuɣu
+        taba.
+      hyp: Zahimdili pirigiri yɛltɔɣa maha dibaayi din ni to yi zani di gama zuɣu
+        taba.
+      cer: 0.1429
+      wer: 0.5333
+    '871':
+      text: M malila zahimbu biɛɣuni; n karindimi yuŋ zaa.
+      hyp: Di malila zahimbu biɣu ni n-karindim yuŋ zaa.
+      cer: 0.1081
+      wer: 0.5
+    '872':
+      text: M bɔrimi ni n chaŋ Aŋkara; saa n-daa mira.
+      hyp: N bɔrimi ni n chaŋ Ankara, sani daa mira.
+      cer: 0.129
+      wer: 0.4444
+    '873':
+      text: Di zaŋdi woligiri binyɛra taba kalibu ni.
+      hyp: zaŋdi woligiri bɛ nyara taba kalibu ni.
+      cer: 0.1176
+      wer: 0.4286
+    '874':
+      text: Bɛ tila bihi maa pina kamani; nɛma, diɛma binyɛra, tiwala ni namdanima.
+      hyp: Bɛ tila bihi maa pina kamani, nama di amaa bɛ nyara tiwala ni namdanima.
+      cer: 0.0893
+      wer: 0.4167
+    '875':
+      text: Di zaŋ li wuhiri bachi yaɣ’ shɛli ni ŋmaai bahi shɛm.
+      hyp: Zaŋ li wuhiri ba chɛyaɣu shɛli niŋ maai bahi shɛm.
+      cer: 0.0976
+      wer: 0.4545
+    '876':
+      text: Paɣ’ jia maa gari kpe.
+      hyp: Paɣijia maa gari kpe.
+      cer: 0.0625
+      wer: 0.4
+    '877':
+      text: Ti’ titali ka bɛ ŋmaai sɔŋ.
+      hyp: Di nyɛla gbaŋpiɛla tiŋgbaŋ
+      cer: 0.9
+      wer: 1.0
+    '880':
+      text: Karimba maa yɛlimi ni, “Shikuru kandina leeti kani”.
+      hyp: Karimba maa yεlimi ni shikuru kandina lee ti kani.
+      cer: 0.0244
+      wer: 0.375
+    '882':
+      text: Soyɛligu bia ni tooi lan zaŋ tum tuma lahibali yuli sabbu ni.
+      hyp: Soyaligu beya ni tuye lana zaŋ tum tuma lahabali yuli sabbu ni.
+      cer: 0.1633
+      wer: 0.4167
+    '885':
+      text: Haaifin wuhirila binyɛra ayi waɣilim.
+      hyp: A afa wuhirila bɛ nyara ayi wɔɣili.
+      cer: 0.25
+      wer: 1.0
+    '887':
+      text: Bɛ mali pɛrɛntɛsinima n-goori lahabal’ shɛli din pahi n-kahigira.
+      hyp: Bɛ mali parantesinima n-gɔri lahabali shɛli din pahim kahigira.
+      cer: 0.1321
+      wer: 0.5556
+    '889':
+      text: N laamba kookoo puu (din be Togo la) tiri ba liɣiri pam.
+      hyp: Alaamba kookoo puu din be togo la tiri ba lari pam.
+      cer: 0.0952
+      wer: 0.25
+    '890':
+      text: Bɛ gbaala chuɣu maa zali biɛɣuni (pa zuŋɔ).
+      hyp: Bɛ gabi a la chuɣu maa zali biɛɣu ni pa zuŋ.
+      cer: 0.0909
+      wer: 0.75
+    '893':
+      text: Karimba so ŋun yuli booni Josɛfin (Ma suŋ) la sa kana kpe sɔhila.
+      hyp: Karimba so n-yuli booni Jɔzifin Masuun laasaa kana kpe sɔɣu la.
+      cer: 0.22
+      wer: 0.6923
+    '894':
+      text: Jabihi maa (Alaasani mini Fusheni) kanila kpɛna zuŋɔ.
+      hyp: Piɛb' yi ma alaasa ni mi fu shɛŋa ni la kpe ni zuŋɔ.
+      cer: 0.3256
+      wer: 1.5
+    '895':
+      text: Di ni tooi zaŋ daashi zali vuhimbia bee kolɔn zaani.
+      hyp: Di ni to yi zaŋ daashi zali vuhim biya bee kolon zaani.
+      cer: 0.0714
+      wer: 0.5
+    '896':
+      text: Di daa bi maai – wuntaŋa daa yiya pam.
+      hyp: Di daa bi maai wuntaŋa daa ya pam.
+      cer: 0.0714
+      wer: 0.125
+    '897':
+      text: Silaashi nyɛla booli din puli zaya ka bɛ mali li zaani bachituɣirili ‘bee’
+        zaani.
+      hyp: Silaash nyɛla buli din kuli zaya ka bɛ mali li zaani bachitɔɣirili bee
+        zaani.
+      cer: 0.0769
+      wer: 0.2857
+    '904':
+      text: Di naarila yɛltɔɣili din nyɛ yekpeeni.
+      hyp: Ti naarila yɛltɔɣili din nyɛ yɛl'peeni.
+      cer: 0.0938
+      wer: 0.3333
+    '905':
+      text: Di naarila yɛltɔɣili din nyɛ bɔhigu.
+      hyp: Nirila yɛltɔɣili din nyɛ bɔhigu.
+      cer: 0.1333
+      wer: 0.3333
+    '908':
+      text: Di wuhirila bachinima, yɛltɔɣiŋmasɔri bee yɛltɔɣa ni ŋmaai bahi shɛm.
+      hyp: Yi wuhirila bachinima yɛltɔɣa ŋma sɔribihi yɛltɔɣa niŋ maa bahi shɛm.
+      cer: 0.1034
+      wer: 0.6
+    '909':
+      text: O daa boli ʒɛkuri maa.
+      hyp: O daa boli ʒekuru maa.
+      cer: 0.1176
+      wer: 0.2
+    '915':
+      text: N-woligiri bachi diba ayi din sabbu nyɛ yim amaa ka di gbunni lee woligi
+        taba.
+      hyp: M wuligiri bachi dibaa ayi din sabi n-nyɛ yim amaa ka di guni ni lee woligi
+        taba.
+      cer: 0.1129
+      wer: 0.4667
+    '919':
+      text: Zaŋmiya yi labisibu maa maɣisi yi taba dini.
+      hyp: Zaŋmiya yi labisibu maa maɣisi yi taba dini.
+      cer: 0.0
+      wer: 0.0
+    '927':
+      text: N laamba yili bela tiŋkpaŋa.
+      hyp: Alamba, yili bela tiŋkpaŋa.
+      cer: 0.087
+      wer: 0.4
+    '930':
+      text: Timya daliri shɛli din che ka yi pii lala sabbu bibahira maa.
+      hyp: Ni maa dalil' shɛli din chɛ ka yi piɛ lala sabi bahira maa.
+      cer: 0.1837
+      wer: 0.5833
+    '941':
+      text: Zaŋmi a maŋmaŋa bachinima n-kahigi wuhi yɛltɔɣiŋmasɔɣu ni nyɛ shɛli.
+      hyp: Zaŋmi amaŋmaŋa ŋabachinima n-kahigu wuhi yɛltɔɣiŋ ma suɣu ni nyɛ shɛli.
+      cer: 0.0702
+      wer: 0.7
+    '946':
+      text: Zaŋmi a maŋmaŋa bachinima n-kahigi yɛltɔɣiŋmaa ni nyɛ shɛli.
+      hyp: Zaŋmi a maŋmaŋa bachinima n-kahigi yɛltɔɣaŋ maa ni nyɛ shɛli.
+      cer: 0.02
+      wer: 0.2222
+    '947':
+      text: Sabimi yɛltɔɣiŋmahi balibu diba ayi maa ka kahigi li biɛla.
+      hyp: Sabimi yɛltɔɣim mahi balibu dibaayi maa ka kahigi li biɛla.
+      cer: 0.0204
+      wer: 0.4
+    '951':
+      text: Baŋmi bachibuɣisirili yɛltɔɣiŋmahi din be lahibali maa ni ka sabi li sɔŋ.
+      hyp: Baŋmi bachi buɣisiri li yɛltɔɣa m-mahi din bi lahabali maa ni ka sabili
+        sɔŋ.
+      cer: 0.0656
+      wer: 0.75
+    '959':
+      text: Sabimi sabbu bibahira balibu diba anu din be zuliya shɛli a ni bɔhindi
+        ni.
+      hyp: Ka bɛ mi sabi bɛ bahira balibu dibaa anu din be zuli shɛli a ni bɔhindi
+        ni.
+      cer: 0.1333
+      wer: 0.5714
+    '961':
+      text: A maŋmaŋa bachinima puuni, kahigim daakiritinima ni nyɛ shɛŋa.
+      hyp: Amaŋmaŋa bachinima puuni, kahigim daakiritinima ni nyɛ shɛŋa.
+      cer: 0.0
+      wer: 0.2222
+    '966':
+      text: Yaɣili ŋɔ yɛn zaŋla karimbihi n-yuli binshɛli din nyɛ lahibali nambu mini
+        lɛbigibu.
+      hyp: Yaɣili ŋɔ yɛn zaŋ la karimbihi n-yuli binshɛli din nyɛ lahabali nambu mini
+        labigibu.
+      cer: 0.029
+      wer: 0.3077
+    '977':
+      text: Tumaduu gbaŋ nyɛla gban’ shɛli din sabiri tiri kpamba.
+      hyp: Tuma duu gbaŋ nyɛla gbaŋ shɛli din sabiri tiri kpamba.
+      cer: 0.0227
+      wer: 0.3333
+    '978':
+      text: Dɔɣim gbana sabirimi tiri dɔɣiriba, zonima bee ninvuɣ’ so ŋun nyɛ a saawaralana.
+      hyp: Dɔɣim gba na sabirim tiri dɔɣiriba zonima bee ninvuɣu so ŋun nyaɣi sawarilana.
+      cer: 0.1077
+      wer: 0.5385
+    '979':
+      text: Lahibali nambu nyɛla sasabira maa pe lahibali shɛli o ni sabiri maa n-sɔŋ
+        shɛm.
+      hyp: Lahabali nambu nyɛla sa sabira maa piɛ lahabali shɛli o ni sabiri maa n-sɔŋ
+        shɛm.
+      cer: 0.0625
+      wer: 0.3571
+    '980':
+      text: Lahibali sabbu nyɛla tɛh’ shɛli bee lahibali shɛli din ti sabbu puuni.
+      hyp: Lahabali sabbu ni nyɛla tɛhi shɛli bɛ lahabali shɛli din ti sabbu puuni.
+      cer: 0.1228
+      wer: 0.4167
+    '981':
+      text: Lahibali lɛbigibu nyɛla lahibali gbunni zaŋ ti n-yi zuliya shɛli ni n-kpɛhi
+        zuliya shɛli ni.
+      hyp: Kpihabali libigibu nyɛla lahabali gbuni zaŋti n-yi zuliya shɛli niŋ kpɛhi
+        zuliya shɛli ni.
+      cer: 0.1067
+      wer: 0.5333
+  source: evaluated
+- model: ghananlpcommunity/ghana-tts-72k
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  cer: 0.1478
+  wer: 0.5607
+  score: 0.1478
+  samples: 200
+  valid: 200
+  avg_seconds: 2.29
+  judge:
+    model: KhayaAI/khaya-asr-v3
+    cer_on_real_speech: 0.1526
+  entries:
+    '2':
+      text: Yaɣili ŋɔ piini wuhiri bachjilli, bachijilli biɛhigu ni yee baŋsim.
+      hyp: N yaa bi lee ŋɔ n ni bɔri baka jimli, baka chi jimli piɛɣigu ni, ye bansim!
+      cer: 0.3929
+      wer: 1.5
+    '7':
+      text: A ni mali baŋsim zaŋ jɛndi yee zaŋ nam Dagbani bachi pala.
+      hyp: Bɛ ni mali bansim zaŋ jɛndi yee zaŋ nam Dagba ni bachi pa la.
+      cer: 0.0652
+      wer: 0.5
+    '10':
+      text: Bachijilli nyɛla bachi yaɣili di ni ni tooi boli shɛli.
+      hyp: Bachijɛli nyɛla bachiyɛli dini ni tooi boli shɛli.
+      cer: 0.1111
+      wer: 0.5
+    '11':
+      text: Bachijilli konsɔnanti nyɛla konsɔnanti shɛli din nahiŋgban ŋmani bachijilli.
+      hyp: Bachijili konsonanti nyɛla konsonanti shɛli din naai gbani ŋmani bachijili.
+      cer: 0.1045
+      wer: 0.6667
+    '12':
+      text: Yee nyɛla kukoli taɣiri shɛli din ni tooi tahi bachi gbunni taɣibu na.
+      hyp: Di yi nyɛla kukoli taari’ shɛli din ni tooi tahi bachi gbunni taabu na.”
+      cer: 0.1404
+      wer: 0.3077
+    '14':
+      text: Di ni tooi lahi nyɛ yaɣ’ shɛli ti vuhim ni lura bachi bolibu.
+      hyp: di ni tooi lahi nya yaa shɛli ti vuhim ni luri abachi bolibu.
+      cer: 0.0638
+      wer: 0.3077
+    '16':
+      text: Dinzuɣu, duni malila bachijila ayi.
+      hyp: Woo! Du ni malilila bachijila ayi!
+      cer: 0.3103
+      wer: 0.8
+    '20':
+      text: Dimbɔŋɔ tooi niŋdimi di yi niŋ ka vaawuli bi doli konsɔnantinima maa.
+      hyp: Dimbɔŋɔ ti o niŋdi mi di yi niŋ ka a vaawuli bidoli kun sonantinima maa.
+      cer: 0.0877
+      wer: 0.6667
+    '23':
+      text: Ŋa shɛhira shɛŋa n-do gbunni ŋɔ.
+      hyp: Nashɛhira shɛŋa n-du gbunni ŋɔ.
+      cer: 0.08
+      wer: 0.5
+    '29':
+      text: Di lahi sɔŋdi ban bɔhindi ka bɛ baŋdi yɛltɔɣa bachinima gbunni.
+      hyp: Di lahi sɔŋdi bambɔhindi, ka be bandi yɛltɔɣa bachinima gbunni.
+      cer: 0.0577
+      wer: 0.3636
+    '35':
+      text: Bachi yini kam pirimi n-doli ŋa bachijil’ shɛŋa ŋa ni mali.
+      hyp: Baachi yi ni kam pirimi n-do li ŋa baachi jiri shɛŋa ŋa ni mali.
+      cer: 0.087
+      wer: 0.6364
+    '36':
+      text: Gahana zuliyanima bachijila balibu waliya.
+      hyp: Gaahana, suliya nima bachijila balibu waliya
+      cer: 0.0541
+      wer: 0.6
+    '40':
+      text: Bachijil’ shɛli din ka nyaaŋa nyɛla bachijil’ shɛli din naai ni vaawuli.
+      hyp: Bachigir’ shɛli din ka nyaaŋa nyɛla bachigir’ shɛli din naai ni vaawuli.
+      cer: 0.069
+      wer: 0.1667
+    '44':
+      text: Bachijil’ shɛli din mali nyaaŋa nyɛla bachi shɛli din naari ni konsɔnanti.
+      hyp: Bachi yiri shɛli din mali nyaaŋa nyɛla bachi shɛli din naari ni konsonanti.
+      cer: 0.0656
+      wer: 0.25
+    '47':
+      text: Guruni, Kpunkpaansili, Dagaari, ni ŋan pahi.
+      hyp: Guruuni, biŋkpansili, dagari ni ŋampahi.
+      cer: 0.2286
+      wer: 0.8333
+    '48':
+      text: Shɛhira shɛŋa n-do gbunni ŋɔ.
+      hyp: Sihira shɛŋa n-do gbinni ŋɔ.
+      cer: 0.1304
+      wer: 0.4
+    '49':
+      text: Zaŋmi a maŋmaŋa bachinima m-buɣisi binshɛli din nyɛ bachijilli.
+      hyp: Zaŋmi amaŋmaŋa bachinima m-bukisi binshɛli din nyɛ bachijilli.
+      cer: 0.0189
+      wer: 0.3333
+    '51':
+      text: Wuhimi bachijila bal’ shɛŋa ŋan be Dagbani ni.
+      hyp: Wuhimi bachijila baari shɛŋa ŋan be daagbani ni.
+      cer: 0.1081
+      wer: 0.25
+    '72':
+      text: A mini a kpee kahigimi bachijila biɛhigu ŋan bachi’ shɛŋa di ni nam maa.
+      hyp: A kpee ka higi mini bachechi la biɛhigu ŋani bachi shɛŋa di ni nam maa.
+      cer: 0.193
+      wer: 0.5
+    '74':
+      text: Sakanooŋa mini salinsaa n-da nyɛ zonima viɛnyɛliŋga.
+      hyp: Saka ni o ŋa mi ni salinsa n-daa nyɛ zɔniima viɛnyɛliŋga.
+      cer: 0.1136
+      wer: 1.2857
+    '93':
+      text: Yee taɣirimi yɛltɔɣili zaa puuni.
+      hyp: Yi taɣirimi yɛlitaɣili zaa puuni.
+      cer: 0.1429
+      wer: 0.4
+    '94':
+      text: Zuliya balbu mali yee bal’ kɔŋkɔba.
+      hyp: Duliya balibu, mali yee baal' kɔŋkoba.
+      cer: 0.1429
+      wer: 0.6667
+    '101':
+      text: Zimbasili, Aŋkarinsili, Kasina, Dagbani, Ayigbesili, ŋan pahi.
+      hyp: Zimba sɛlee Ankari sɛlee, kasiina, dagbani, ayibu sɛli, nyam paya.
+      cer: 0.34
+      wer: 1.2857
+    '112':
+      text: Yee ka di mali waligiri bachi shɛŋa ŋan ŋmɛbu ni gbunninyɛ yim zuliya
+        yɛltɔɣa.
+      hyp: Yi ka di mali waligiri bachee shɛŋa ŋan ŋmɛbu ni gbuni n-nyɛ yim zuliya
+        yɛlitɔɣa.
+      cer: 0.1094
+      wer: 0.3571
+    '126':
+      text: Bɔŋbɔŋ puuni, kahigimiya yee tuma.
+      hyp: Bɔmbɔŋ puuni, kaigimiya yee tuma.
+      cer: 0.0714
+      wer: 0.4
+    '130':
+      text: Baŋmi yee bal’ shɛŋa ŋan be bachi shɛŋa di ni ti ŋɔ.
+      hyp: Bani ŋun yi bal' shɛŋa ŋan be baachi shɛŋa di ni ti ŋɔ.
+      cer: 0.1795
+      wer: 0.3333
+    '132':
+      text: Baŋmi bachijil’ shɛŋa ŋan ʒiri yee bachi shɛŋa di ni ti maa puuni.
+      hyp: Ban gbi bachijiri shɛŋa ŋan ʒiri yee bachishɛŋa dii ni tia maa puuni.
+      cer: 0.1346
+      wer: 0.5385
+    '133':
+      text: Zaŋmi a labisibu n-wuhi karindu maa zaa.
+      hyp: Zaŋmi alabisibu n-wuhi karindu maa zaa.
+      cer: 0.0
+      wer: 0.2857
+    '139':
+      text: Zaŋmi shɛhira dibaata n-kahigi yee tuma Dagbani.
+      hyp: Zaŋmi shɛhira di ba ata n-ka Higi, Yee Duma Dagbaani.
+      cer: 0.05
+      wer: 1.0
+    '142':
+      text: Yaɣili ŋɔ kahigirila yɛltɔɣikpana baŋbu lahabali, bee lahabali puuni.
+      hyp: Yɛlili ŋɔ ka yi giri la yɛltɔɣa yi kpana bambu lahabali bee lahabali puuni.
+      cer: 0.1017
+      wer: 1.0
+    '149':
+      text: Yɛlkpan’ shɛli din be lahabali puuni n-nyɛ di ni ʒiri yɛltɔɣikpan’ shɛli
+        lahabali ni ʒira.
+      hyp: Yɛlikpan’ shɛli din be lahabali puuni n-nyɛ din ni ʒiri yɛlitɔi kpan’ shɛli
+        lahabali ni ʒira.
+      cer: 0.0556
+      wer: 0.2667
+    '150':
+      text: Dimbɔŋɔ ni tooi be yɛltɔɣ’ shɛli din ʒiri yɛltɔɣikpani ka mali yɛltɔɣ’
+        shɛŋa ŋan kahigira.
+      hyp: Dimbɔŋɔ ni tooi be yɛritɔɣ’ shɛli din ʒiri yɛritɔɣ’ kpa ni, ka mali yɛritɔɣ’
+        shɛŋa ŋan kahigira.
+      cer: 0.0959
+      wer: 0.3333
+    '151':
+      text: Karimbu ni tooi nyɛ din ziligi bee din yɛligi.
+      hyp: Kaliŋ' puuni ni tooi nya din ziligi bee din yɛligi.
+      cer: 0.1892
+      wer: 0.3333
+    '159':
+      text: Dimbɔŋɔ yɛrila baŋsim yaɣili, lahabali bee alizama maa daliri.
+      hyp: Dimbɔŋɔ yɛrila baŋsim yaɣili, lahabali bee alizama maa daliri.
+      cer: 0.0
+      wer: 0.0
+    '184':
+      text: Zaŋmi a tɛha m-maɣisi ŋan sabi do gbunni ŋɔ.
+      hyp: Zaŋmi a tɛha m-marisi nansabi dɔbu ni ŋɔ.
+      cer: 0.1471
+      wer: 0.5556
+    '187':
+      text: Dimbɔŋɔ nyɛla n-vihi bo yɛltɔɣikpan’ shɛli din be lahabali maa puuni.
+      hyp: Dimbɔŋɔ nyɛla n vihibu yɛltɔɣikpan’ shɛli din be lahabali maa puuni.
+      cer: 0.0179
+      wer: 0.1818
+    '190':
+      text: Dimbɔŋɔ m-mali a nina yuuni yomyom m-bɔri bachi shɛŋa shee lahabali ni.
+      hyp: Dimbɔŋɔ m-maliya nina yuuni yomyom m-bɔri bachi shɛŋa shee lahabali ni.
+      cer: 0.0175
+      wer: 0.1667
+    '192':
+      text: Karimmi lahabali din do gbunni ŋɔ.
+      hyp: Ka di yi mi lahabali dindogbu nini ŋɔ.
+      cer: 0.1429
+      wer: 1.1667
+    '193':
+      text: Baŋmi yɛltɔɣikpani lahabal’ shɛli di ni ti gbunni ŋɔ.
+      hyp: Bɛ ŋmi yɛl’ tɔri kpa ni lahabali shɛli di ni ti gbunni ŋɔ.
+      cer: 0.0698
+      wer: 0.7778
+    '194':
+      text: Zaŋmi di ni baŋ yɛltɔɣikpan’ shɛli maa n-wuhi ka maɣisi a karimbi’ taba.
+      hyp: Zalimmi dii ni baŋ yɛl' tɔgban' shɛli maa n-wuhi ka maasi a karimbitaba.
+      cer: 0.1786
+      wer: 0.5385
+    '215':
+      text: N daa naaya ni shɛhira gbaŋ shɛli din daa viɛli pam.
+      hyp: Bɛn daa naa nya ni shɛhira gbaŋ’ shɛli din daa viɛli pam.
+      cer: 0.0732
+      wer: 0.2727
+    '218':
+      text: Zaŋmi yɛltɔɣikpana maa n-wuhi karimduu maa zaa.
+      hyp: Zaŋmi yɛl’ tɔɣ’ kpana maa n-wuhi karim duu maa zaa.
+      cer: 0.0256
+      wer: 0.7143
+    '226':
+      text: Amaa ka di yi niŋ ka fukumsinima ka yɛlmaŋli?
+      hyp: Ka a di yi niŋ ka fukumsi nima, ka a yɛlimaŋli.
+      cer: 0.1667
+      wer: 0.6667
+    '227':
+      text: N kuli tiri jilin’ shɛli a ni mi bi viɛla.
+      hyp: kuli tiri jilin’ shɛli a ni mi bia viya la.
+      cer: 0.129
+      wer: 0.4
+    '242':
+      text: Karimmi lahabal’ shɛli din do gbunni maa ka labisi bɔhisi ŋan doli li
+        na.
+      hyp: Ka di mi lahabali shɛli din do gbunni maa ka labisi bɔhisi ŋan dolili na.
+      cer: 0.0517
+      wer: 0.4286
+    '247':
+      text: Karimbakpema maa n-nyɛ ŋun mali shikuru maa fukumsi.
+      hyp: Karimbaakuma maa n-nyɛ ŋun mali shikuru maa fukumsi.
+      cer: 0.0698
+      wer: 0.125
+    '260':
+      text: Ka naan yi zaŋ li maɣisi di ni nyɛ shɛli gbunni ŋɔ.
+      hyp: ka n naanyi zaŋ li Maasi di ni nyɛ shɛli yi gbunni ŋɔ.
+      cer: 0.1282
+      wer: 0.3333
+    '272':
+      text: So’ shɛŋa di ni doli n- a maŋmaŋa karimbu soli n-karimgbaai.
+      hyp: So Isha ŋa di ni doli ni a maŋmaŋa karimbu soli n-karimbaai.
+      cer: 0.087
+      wer: 0.3636
+    '283':
+      text: Sabita nyɛla daadam daalafee mini jilima nyɛbili.
+      hyp: Sabilita nyɛla daalafee mini jilima nyɛbili.
+      cer: 0.1905
+      wer: 0.2857
+    '296':
+      text: Ka naan yi, zaŋ a ni tɛhi ni lahabali ŋɔ ni tooi yɛligi.
+      hyp: ka naanyi zaŋa ni tɛhi ni lahabali ŋɔ ni tooi yɛligi.
+      cer: 0.0
+      wer: 0.3077
+    '305':
+      text: Zaŋmi a maŋmaŋa bachinima n-wuhi binshɛli din nyɛ ‘yɛltɔɣikpani’.
+      hyp: Daaŋnima, a niŋ maa ŋa bachinima n-wuhi binshɛli din nyɛ yɛlitɔri kpa ni.
+      cer: 0.1887
+      wer: 0.7778
+    '307':
+      text: Jilima pa la binshɛli di ni ni tooi deei amaa di nyɛla binshɛli di ni
+        bɔra.
+      hyp: Jilima pala binshɛli di ni ni tooi deei, amaa di nyɛla binshɛli di ni bɔra.
+      cer: 0.0
+      wer: 0.125
+    '314':
+      text: Dimbɔŋɔ n-nyɛ jilima ni ŋmani shɛli.
+      hyp: Dimbɔŋɔ n-nyɛ jilima ni ŋmani shɛli.
+      cer: 0.0
+      wer: 0.0
+    '318':
+      text: A yi kpɛri ka yiri haai shikuru, teemi ni jilima nyɛla yaɣa-yi soli.
+      hyp: Ka yi kpɛri ka yi liha ayi shikuru n-deemi ni jiɛma nyɛla yaa yi soli.
+      cer: 0.1509
+      wer: 0.6154
+    '321':
+      text: Bɔ ka lahabali maa yuli yɛli zaŋ kpa lahabali maa yɛltɔɣikpani?
+      hyp: Ka lahabali maa yuli yɛli zaŋ kpa lahabali maa yɛlitɔri pa ni
+      cer: 0.0962
+      wer: 0.3636
+    '323':
+      text: Zaŋmi yɛltɔɣa anahi n-kolivaai lahabal’ shɛli din do zuɣusaa ŋɔ.
+      hyp: Zaŋmi yɛtɔɣa anahi n-kuli vaai lahabali shɛli din do zoosaa ŋɔ!”
+      cer: 0.1154
+      wer: 0.5
+    '324':
+      text: Baŋmi karimbu din ziligi nahiŋgbana ayi shɛŋa a ni bɔhim yaɣili ŋɔ ni.
+      hyp: Bɛ mi karimbu din ziligi nayingbana a yi shɛŋa a ni bɔhim yaɣili ŋɔ ni.
+      cer: 0.0702
+      wer: 0.3846
+    '327':
+      text: Kahigimi karimbu din yɛligi nahiŋgbana ata?
+      hyp: ka Higi mi karimbu din yɛligi nahingbana ata.
+      cer: 0.027
+      wer: 0.6667
+    '329':
+      text: Kahigimi ni a maŋmaŋa bachinima.
+      hyp: ka yi yɛlimi ni a ma maŋmaŋa bachinima
+      cer: 0.2222
+      wer: 0.8
+    '346':
+      text: Biɛlimpahira tuma zuliya ni nyɛla di sɔŋ n-nam bachipala.
+      hyp: Biɛlimpahira tuma zuliya ni nyɛla di sɔŋ n-nam bachipala.
+      cer: 0.0
+      wer: 0.0
+    '357':
+      text: Biɛlimpahirili nyɛla tooni biɛlimpahirili di yi do nyaɣili maa tooni.
+      hyp: Biɛlimpahirili nyɛla tooni biɛlimpahirili di yi do nyaayili maa tooni.
+      cer: 0.0339
+      wer: 0.1
+    '358':
+      text: Biɛlimpahirili nyɛla sunsuuni biɛlimpahirili di yi be nyaɣili maa sunsuuni.
+      hyp: Biɛlimpahirili nyɛla sunsuuni biɛlimpahirili di yi be nyaɣilima maa sunsuuni.
+      cer: 0.0308
+      wer: 0.1
+    '359':
+      text: Biɛlimpahirili nyɛla nyaaŋa biɛlimpahirili di yi ti kana bachi nyaaŋa.
+      hyp: Biɛlimpahirili nyɛla nyaaŋa biɛlimpahirili di yi ti ka na bachi nyaaŋa.
+      cer: 0.0
+      wer: 0.2
+    '367':
+      text: Ŋmaligi n-kpa a kpee n-kahigi biɛlimpahira ni nyɛ shɛli.
+      hyp: Maligi n-kpaai akpe n-kahigi biɛlim pahira ni nyɛ shɛli.
+      cer: 0.0889
+      wer: 0.6667
+    '382':
+      text: Nyaya ka bachi maa nyabili din nyɛ bachiniŋdili ŋɔ pubu taɣi n-lɛbi bachinamdili.
+      hyp: N-aya ka bachi maa nyabili din nyɛ bachinim’ di li ŋɔ pibbu taai n-lɛbi
+        bachinim’ di li.
+      cer: 0.0896
+      wer: 0.6923
+    '389':
+      text: Shɛhira, n-zaŋ biɛlmpahirili -si m-pahi nooŋ-a zuɣu di ni titi noon-si.
+      hyp: Shɛhira, n-zaŋ biɛla pahiri li si m-pahi nooŋa zooi di ni ti ti noonsi.
+      cer: 0.0741
+      wer: 0.5455
+    '392':
+      text: Bɔŋbɔŋ ni, zammiya ka kahigi biɛlimpahira balibu yi yaa tariga Dagbani
+        ni.
+      hyp: Kpɛmaŋɔ ŋɔ bɔŋmi, “Zamiya ka kahigi, biɛlimpahira balibu yi, yaa tariga,
+        daa gba ni ni.”
+      cer: 0.1639
+      wer: 0.5833
+    '393':
+      text: Wula ka di lee taɣiri bachi nyaɣa maa gbunni?
+      hyp: Wula ka di lee taɣiri bachi nyaaŋa maa gbinni?
+      cer: 0.0833
+      wer: 0.2222
+    '398':
+      text: Biɛlimpahira tuma waliya zuliya kɔŋkɔba puuni.
+      hyp: O tɔŋga a naangbinliya yahim kɔŋ ni.
+      cer: 0.7
+      wer: 1.1667
+    '400':
+      text: Ŋa sɔŋdi bachi pala nambu ni.
+      hyp: Ŋa sɔmdi, bachi pala nambuni!
+      cer: 0.0435
+      wer: 0.5
+    '401':
+      text: Ŋa sɔŋdi taɣiri bachinima pubu.
+      hyp: Ŋa sɔŋ dii taari bachinima pubu.
+      cer: 0.1154
+      wer: 0.6
+    '402':
+      text: Biɛlimpahira sɔŋdi namdi bachiniŋda niŋsim saha.
+      hyp: Bɛ yɛrili m-paɣira ka nan’ saamɔti ni yi nam deei bɛ yɛnana 99 tim saha.
+      cer: 0.7381
+      wer: 2.3333
+    '404':
+      text: Biɛlimpahira taɣiri bachinima zaɣ’ gansi n-lɛbiri zaɣ’ bɔbigu.
+      hyp: Biɛlimpahira taari bachinima zaɣ’ gaansi n-libiri zaɣ’ bɔbigu.
+      cer: 0.0784
+      wer: 0.375
+    '405':
+      text: Biɛlimpahira baŋsim sɔŋdi bachinima yiɣisibu viɛnyɛla mini balli bɔhimbu.
+      hyp: Bɛrimpahira baŋsim sɔŋdi bachinima yiɣisibu viɛnyɛla mini balibɔhimbu
+      cer: 0.0469
+      wer: 0.3333
+    '409':
+      text: Baŋmi biɛlimpahira ŋan be bachinima ŋɔ ni ka wuhi ŋa balibu ni nyɛ shɛŋa.
+      hyp: Bɛ mi biɛlimpahira ŋan be bachinima ŋɔ ni ka wuhi ŋa balibu ni nyɛ shɛŋa.
+      cer: 0.0339
+      wer: 0.1429
+    '412':
+      text: Niŋmi shili ni a ni zaŋ li n-wuhi a karimbitaba ka kahigi li.
+      hyp: Neemi shili ni a ni zani li n-wuhi a karimba taba ka kahigi li.
+      cer: 0.1064
+      wer: 0.3077
+    '417':
+      text: Di tuuli tuma kuli nyɛla di zaŋdila yɛltɔɣa yaɣa tuɣiri taba.
+      hyp: Di tuuli tuma kuli nyɛla di zaŋdila yɛltɔɣa yaɣi toori taba.
+      cer: 0.08
+      wer: 0.1818
+    '421':
+      text: O karinda dinzuɣu o mali baŋsim.
+      hyp: O karinda din zooi o mali baŋsim.
+      cer: 0.1154
+      wer: 0.3333
+    '422':
+      text: N ni chaŋ amaa n ni labina.
+      hyp: n ni chaŋ, amaa n ni labina.
+      cer: 0.0
+      wer: 0.0
+    '425':
+      text: Bachituɣira balibuBachituɣira balibu pam m-beni.
+      hyp: Di tuɣiriya, paɣidɔbo acha, paɣidɔbo pam m-beni.
+      cer: 0.5
+      wer: 1.0
+    '438':
+      text: Naawuni so n ni ti yɛda.
+      hyp: Naawuni so ni yi ti yɛda.
+      cer: 0.1111
+      wer: 0.3333
+    '445':
+      text: Pɔi ka ka kpukpalivari pɔri, di dolila dunia tiŋgbani ni yɛli li shɛli.
+      hyp: Ka ka kpikpali veeri pɔri di dolila dunia tiŋ’ gba ni ni yɛli li shɛli.
+      cer: 0.1053
+      wer: 0.4615
+    '447':
+      text: Saa yi mi, nyin toomi kom.
+      hyp: Saa yi mi, nyin' tooi mi kom
+      cer: 0.0526
+      wer: 0.3333
+    '448':
+      text: Naa maa ni daa labi o yaannima sanmi, n daa nyala suhudoo.
+      hyp: dama n ni daa labi o yaannima sani. N daa nyɛla suhudoo.
+      cer: 0.1111
+      wer: 0.3333
+    '450':
+      text: Amii o bela yiŋa bee yɔɣu.
+      hyp: Amii! O bila yiŋa bee yɔɣu.
+      cer: 0.05
+      wer: 0.1667
+    '456':
+      text: Biɛhigu to amaa ti ni kpaŋ ti maŋa pam.
+      hyp: Bihi o ni tooi amaa ti nii kpaŋ ti maŋa pam
+      cer: 0.2333
+      wer: 0.5556
+    '457':
+      text: O yuuni bɔri o shee amaa o bi nya o.
+      hyp: For you ni bɔri o shihi amaa o binyɔf.
+      cer: 0.3077
+      wer: 0.7
+    '459':
+      text: Sabimi bachituɣira balibu shɛhira diba ata ka zaŋ ŋa n-nam yɛltɔɣa.
+      hyp: Sabimi bachituuda balibu shɛhira di ba ata, ka zaŋ ŋa n-nam yɛlitɔɣa.
+      cer: 0.0727
+      wer: 0.3636
+    '461':
+      text: Bachituɣira tuma balibu ni tooi wali bala ni, amaa di shɛŋa ni tooi nyɛ
+        yim.
+      hyp: Mashee tubira tuma balibu ni tooi ya wali bala ni, amaa di shɛŋa ni tooi
+        yɛn nya yim.
+      cer: 0.1833
+      wer: 0.3333
+    '464':
+      text: Di sɔŋdi n-laɣindi yɛltɔɣiŋmahi bee yɛltɔɣiŋmasɔri mini ŋa taba.
+      hyp: Biɣ’ sɔndi n-laɣindi yɛl’ tɔŋmahi bee yɛl’ tɔŋma sɔri mini ŋa taba.
+      cer: 0.1296
+      wer: 0.7778
+    '465':
+      text: Di sɔŋdi n-tahiri waliginsim na.
+      hyp: ka han’ shɛli n-yɛn tahi fali gazinsim na.
+      cer: 0.6154
+      wer: 1.4
+    '467':
+      text: Bachituɣira mali zalisi biɛla zaŋ chaŋ ŋa zaŋ tum tuma polo.
+      hyp: Baituri daa mali zalisi biɛlas zaŋ chaŋ ŋaa zaŋ tum tuma polo.
+      cer: 0.1429
+      wer: 0.3636
+    '470':
+      text: Bachituɣira kuli nyɛla ŋan gbundi tɛha ni niŋsim.
+      hyp: Machituli daa kuli nyɛla ŋan gbindi tɛha ni ninsim.
+      cer: 0.1463
+      wer: 0.5
+    '472':
+      text: Bachituɣira mali sɔŋsim pam zaŋ chaŋ binyɛra kalibu.
+      hyp: Bashi tuhir’ a mali sɔŋsim pam zaŋ chaŋ binyɛra ka li bo.
+      cer: 0.0682
+      wer: 0.75
+    '473':
+      text: Di yi mali bachituɣira tumdi tuma, che ka a yɛltɔɣa yaɣa zaa saɣi doli
+        taba.
+      hyp: Di yi mali bachitoora tumdi tuma, chɛ ka a yilitɔɣa yaɣa zaa saɣi doli
+        taba.
+      cer: 0.1
+      wer: 0.2
+    '482':
+      text: Ŋuni n-tiri lala binyɛra maa yuya?
+      hyp: Ŋuni n-tiri lala binyɛra maa yuya.
+      cer: 0.0
+      wer: 0.0
+    '501':
+      text: Lala soli ŋɔ zaŋ nam bachi pala dii bi yoli Dagbani ni ni.
+      hyp: laɣila suhili ŋɔ zani nam bachiparila dii bɛ yoli Dagbani nini.
+      cer: 0.2222
+      wer: 0.6154
+    '505':
+      text: Zuliyanima pam paŋ bachinima zuliya shɛŋa ni.
+      hyp: Jilija nima pampaŋ bachinima zuliya shɛŋa ni.
+      cer: 0.0789
+      wer: 0.4286
+    '510':
+      text: Sabimi kamani bachi pia din nyɛ bachi paŋda Dagbani ni.
+      hyp: Kamani bachi pia din nyɛ bachi paŋda Dagbani ni.
+      cer: 0.1333
+      wer: 0.1
+    '512':
+      text: Di sɔŋdi zoori zuliya yɛltɔɣa dama zuliya maa yɛltɔɣa bachinima ni yɛligi.
+      hyp: Di yi sɔŋ di zoori zuliya yɛlitɔɣa, dama zuliya maa yɛlitɔɣa bachinima
+        ni yɛligi.
+      cer: 0.0645
+      wer: 0.4167
+    '513':
+      text: Di sɔŋdi che ka zuliya yɛltɔɣa wuligiri gindi dunia zaa.
+      hyp: Ŋaa, bɛ paɣi kpalim o nukɔri niŋ bɛ yi daa yɛr’ tɔwuligiri gindi dunia
+        zaa.
+      cer: 0.6304
+      wer: 1.2
+    '514':
+      text: Di sɔŋdi namdi bachi pala m-mali booni bin’ pala.
+      hyp: Sondee nam deei Kpachee pala m-ma lee booni bin'pala.
+      cer: 0.3684
+      wer: 0.8889
+    '515':
+      text: Di sɔŋdi zuliya yɛltɔɣa bɔhimbu ni.
+      hyp: Amaa!
+      cer: 0.931
+      wer: 1.0
+    '516':
+      text: Di sɔŋdi ti ka ti tooi biɛhiri ti yuuni bachinima pilli ni.
+      hyp: Di sɔndi, ti kaati tooi biɛhiri, ti yuuni bachinima pilli ni.
+      cer: 0.0426
+      wer: 0.25
+    '520':
+      text: Wuhimi biɛlimpahira balibu din be Dagbani ni.
+      hyp: Wuhimi bia lim pahira balibu din be Dagbani ni.
+      cer: 0.0263
+      wer: 0.4286
+    '521':
+      text: Yihimi biɛlimpahira diba Anahi Dagbani n-sɔŋ.
+      hyp: n yili mi biɛlim pahira di ba anahi dagba ni n-sɔŋ.
+      cer: 0.0526
+      wer: 1.5
+    '522':
+      text: Wuhimi biɛlimpahira tuma diba anahi Dagbani ni.
+      hyp: Wulimi yi biɛlim’ pahira tuma di ba anahi Dagba nini.
+      cer: 0.075
+      wer: 1.1429
+    '523':
+      text: Baŋmi biɛlimpahira ŋan be bachinima ŋɔ ni ka wuhi ŋa balibu ni nyɛ shɛli.
+      hyp: Balim’ biɛlim pahiri la ŋan be bachinima ŋɔ ni, ka wuhi ŋa balibu ni nya
+        shɛli.
+      cer: 0.1017
+      wer: 0.3571
+    '524':
+      text: Kahigi n-wuhi bachituɣira ni nyɛ shɛli.
+      hyp: ka Higi n-wuhi bachituura ni nyɛ shɛli.
+      cer: 0.0625
+      wer: 0.5
+    '525':
+      text: Baŋmi bachituɣira balibu ni nyɛ shɛli Dagbani ni.
+      hyp: Daŋmi bachituura balibu ni nyaa shɛli Dagbani ni.
+      cer: 0.122
+      wer: 0.375
+    '526':
+      text: Wuhimi waliginsim shɛli din be bachituɣira bali shɛŋa a ni yihi maa ni.
+      hyp: Wuhimi yi wali jinsim shɛli din be bachitoora bali shɛŋa a ni yihi maa
+        ni.
+      cer: 0.1034
+      wer: 0.3077
+    '528':
+      text: Boomi bschituɣira gbunni yɛltɔɣa ŋan doli ŋɔ na ni.
+      hyp: boomi bɛ chituura gbinni yɛltɔɣa ŋan’ doli ŋɔ na ni.
+      cer: 0.0952
+      wer: 0.3333
+    '529':
+      text: O diya amaa o bi tiɣi.
+      hyp: O di ya amaa o bi tigi.
+      cer: 0.0625
+      wer: 0.5
+    '530':
+      text: N ni chaŋ amaa pa zuŋɔ.
+      hyp: N ni chaŋ, amaa pa zuŋɔ.
+      cer: 0.0
+      wer: 0.0
+    '531':
+      text: Kahigimi binshɛli din nyɛ bachi nambu soya.
+      hyp: Ka ayi yi mi bin' ʒɛli yi tu n-nyɛ ba Chi nambu siya.
+      cer: 0.25
+      wer: 1.7143
+    '532':
+      text: Baŋmi bachi nambu soya dibaata shɛŋa a ni mi Dagbani ni.
+      hyp: Gbaŋ ni bachi nambu so ya di baata shɛŋa animi dagbani ni.
+      cer: 0.0444
+      wer: 0.7273
+    '533':
+      text: Kahigimi Dagbani bachi nambu balibu dibaata.
+      hyp: Ka yi gimi Dagbani ba chɛ Nambu balibu dibata.
+      cer: 0.0789
+      wer: 1.0
+    '534':
+      text: Kahigimi Dagbani bachi nambu daanfaani yini bee garibu.
+      hyp: Ka ayi mi Dagbani bachi nambu daanfaani yini bee garibu
+      cer: 0.0638
+      wer: 0.375
+    '536':
+      text: Zuŋɔ, tabibi baŋsim nyɛla din kpa talahi baŋsim bɔhimbu ni.
+      hyp: Zuŋɔ, sabiibi bansim nyɛla din kpa talahi bɔhimbu ni.
+      cer: 0.1875
+      wer: 0.3
+    '542':
+      text: Ti ni zaŋ rɔbɔtinima n-zali karimbanima zaa ni?
+      hyp: ti ni zaŋ gɔbɔtinima n-sani zani ka di gbanima zaa ni.
+      cer: 0.2105
+      wer: 0.75
+    '558':
+      text: Yɛltɔɣiŋmaa nyɛla bachinima din laɣim m-pe taba n-nam yɛltɔɣili.
+      hyp: Yɛltɔɣili maa nyɛla bachinima din laŋa m-pe taba n-nam yɛltɔɣili.
+      cer: 0.0943
+      wer: 0.3333
+    '565':
+      text: Zaŋmi a ni bɔhim shɛli maa m-maɣisi a bɔŋ maa ni.
+      hyp: Zaŋmi a ni bɔhim shɛli maammaa chɛfeya bom’ maa ni.
+      cer: 0.2432
+      wer: 0.3636
+    '574':
+      text: Yɔltɔɣiŋmasɔri shɛhira shɛŋa n-do gbunni ŋɔ.
+      hyp: yɔri tɔhi ma sɔri shɛhira shɛŋa n-du gu ni ŋɔ.
+      cer: 0.1892
+      wer: 1.1667
+    '585':
+      text: Dimbɔŋɔ nyɛla yɛltɔɣiŋmasɔɣu din zuɣu nyɛ bachinamdili bee bachizaanili.
+      hyp: Din bɔŋɔ nyɛla yɛltɔɣiŋma so din zooi nyɛ bachinamdili bee bachizanili
+      cer: 0.127
+      wer: 0.6667
+    '588':
+      text: Dimbɔŋɔ wuhirimi ni di nyɛla din nyɛ bachi yini kɔŋko.
+      hyp: Dimbɔŋɔ wuhirimi ni di nyɛla din nyɛ bachi yini kɔŋko.
+      cer: 0.0
+      wer: 0.0
+    '596':
+      text: Bachinima din galisi nyɛla din ni tooi nyɛ bachinamdili yɛltɔɣiŋmasɔɣu.
+      hyp: Bahiyinima din galisi nyɛla din ni tooi nyɛ bachinandili yɛltɔɣa ŋma sɔɣu.
+      cer: 0.082
+      wer: 0.5
+    '622':
+      text: Bachi zuɣu maa ni tooi lan ʒiri nyaaŋa bachikahigira mini tooni bachikahigira.
+      hyp: Machi zuu maa ni tooi lan ʒiri nyaaŋa bachikahigira mini tooni bachikahigira.
+      cer: 0.0303
+      wer: 0.1667
+    '626':
+      text: Bɔna puuni, nammiya bachinamdili yɛltɔɣiŋmasɔri diba atata.
+      hyp: Bɔŋda puuni, nam mi a bachinam di yi yɛli to yima sɔri dibaa ata ata.
+      cer: 0.1961
+      wer: 2.0
+    '649':
+      text: Bɔna puuni, nammiya bachiniŋdili yɛltɔɣiŋmasɔri.
+      hyp: Bɔŋɔ na puuni, nimiya bachi niŋdi li yɛl' tɔiyin ma sɔri.
+      cer: 0.1667
+      wer: 2.0
+    '665':
+      text: Bachibuɣisirili ɛltɔɣiŋmasɔɣu malila bachibuɣisirili ka di nyɛ di bachi
+        zuɣu.
+      hyp: Miti buɣisiri li ɛltɔŋ ŋmasɔgu mali la bachi buɣisiri li, ka di nyɛ di
+        bachi zuɣu.
+      cer: 0.1045
+      wer: 1.0
+    '670':
+      text: Dimbɔŋɔ nyɛla yɛltɔɣiŋmasɔɣu din bachi zuɣu nyɛ zaashee bachi.
+      hyp: Dimbɔŋɔ nyɛla yɛl' tɔi ŋma sɔu din bachi zuu nyɛ zaashee bachi
+      cer: 0.0566
+      wer: 0.5556
+    '680':
+      text: O chaŋ tiŋa maa puuni.
+      hyp: O chaŋ ti ŋa maa puuni.
+      cer: 0.0
+      wer: 0.4
+    '682':
+      text: Din kpalim ka bi sabigi pam maa mi nyɛla bachiniŋdili yɛltɔɣiŋmasɔɣu.
+      hyp: Daŋ kpalim ka bisabigi pam maa mi nyɛla bachinim’ di li yɛltɔɣinima sɔɣ’
+      cer: 0.1034
+      wer: 0.7273
+    '688':
+      text: Di mali yɛltɔɣiŋmasɔri n-kahigiri tɛha.
+      hyp: Yuɣ’ kalinli na ni bɛ yɛn dɔɣiri ma sari ka yi vi di piɛha.
+      cer: 0.7273
+      wer: 2.8
+    '690':
+      text: Din yɛn che ka yɛltɔɣa ne, yɛltɔɣiŋmasɔri tumdi tuun’ kara pam.
+      hyp: Di ni yɛn chɛ ka yɛl’ tɔɣa ni yɛl’ tɔɣa ma, “Sɔri tum di tuun’ kara pam.”
+      cer: 0.1
+      wer: 1.0909
+    '695':
+      text: Dakulo din gari la, m mini n zo daa gbaami ni ti di ti dabisili maa teeku
+        duli.
+      hyp: Dakolo din gari la m mini n zo daa gbaami ni ti di ti dabisili maa teeku
+        duli.
+      cer: 0.0167
+      wer: 0.0556
+    '701':
+      text: Ti ni daa kuli paai, ti daa yulimi m-bo luɣ’ viɛlli shee kpukpalitia gbunni.
+      hyp: Ti ni daa kuli paai, ti daa yulimi m-bo luɣ' viɛlli shee kpukpalitia gbunni.
+      cer: 0.0
+      wer: 0.0
+    '711':
+      text: Bɔna puuni, piɛmiya yɛltɔɣiŋmasɔri balibu maa ka di doli taba (a.
+      hyp: Bɔna puuni? Peemiya! Yɛl' tɔli ŋma sɔri balibu maa ka di doli taba.
+      cer: 0.0769
+      wer: 0.5455
+    '714':
+      text: Zaŋmiya yi labisibu maa n-wuhi karinduu maa zaa ka yi zamzam li.
+      hyp: Zaŋmiya yi labisigu maa n-wuhi karindoo maa zaa ka yi zamzamli.
+      cer: 0.0588
+      wer: 0.3333
+    '728':
+      text: Senyo ɖa akplĕ hafi yi suku.
+      hyp: Sanyi Juda Akpil Afi Sukul
+      cer: 0.5
+      wer: 1.0
+    '736':
+      text: Yɛltɔɣiŋmaa din ku tooi zani di gama zuɣu.
+      hyp: yɛltɔɔin ŋmaa n-ti kuli sɛtɛɛn ti gam ma zuɣu.
+      cer: 0.4412
+      wer: 1.0
+    '742':
+      text: Makafui ate ŋu ade tɔme gbe sia gbea?
+      hyp: Makaafi, a ti ŋɔ? A di tom mi gbisi a guya.
+      cer: 0.3793
+      wer: 1.375
+    '759':
+      text: Di kahigibu n-do gbunni ŋɔ.
+      hyp: de kahigibu n-do gbunni ŋɔ.
+      cer: 0.0476
+      wer: 0.2
+    '765':
+      text: Yɛltɔɣiŋmaa din nyɛ zaligu ni tooi bi bɔri zuɣu.
+      hyp: Yɛltoonaa din nyɛ zaligu ni tooi bia bɔri zuɣu!
+      cer: 0.1538
+      wer: 0.2222
+    '769':
+      text: Yi ni tooi ti shɛhira shɛŋa zaŋ kpa bɔhigu bachinima din Dagbani polo.
+      hyp: Yi ni tooi ti shihirila shɛŋa zaŋ kpa bɔhigu bachinima din dagba ni polo.
+      cer: 0.0526
+      wer: 0.2308
+    '770':
+      text: Yɛltɔɣiŋmaa din nyɛ bɔhigu naarimi ni bɔhigu bia.
+      hyp: Yɛtɔriŋ maa dii nyɛ bɔhuga, naa di mi ni bɔhigu ya.
+      cer: 0.1951
+      wer: 1.0
+    '787':
+      text: Kofi nim no afiri sε ɔyε.
+      hyp: Kofi ni mini o afilisi o yɛn.
+      cer: 0.3684
+      wer: 1.0
+    '791':
+      text: Chɛliya ka zamzam di balibu maa.
+      hyp: Chɛliya ka zamzam di balibu maa.
+      cer: 0.0
+      wer: 0.0
+    '802':
+      text: Kafui xlĕ agbalĕ si fofoa nε la nyuie.
+      hyp: Kaŋsig mi yɛŋga alisi fo foon ni la nyuya.
+      cer: 0.5
+      wer: 1.0
+    '804':
+      text: Nyɔnu si ƒle avɔ etsɔ la dzo.
+      hyp: Nyɔnɔsi Flee Avor et Sola Duu.
+      cer: 0.3636
+      wer: 1.0
+    '827':
+      text: Bachinima din pe taba m-buɣisiri maa gbunni m-booibooi yɛltɔɣa maa ni
+        maa.
+      hyp: Bashinima din pe taba m-buɣisiri maa gbinni m-bo booi yɛltɔɣa maa ni maa.
+      cer: 0.0667
+      wer: 0.3333
+    '852':
+      text: Sabbu bibahira mini di tuma.
+      hyp: Ka di ti ni la.
+      cer: 0.7391
+      wer: 1.0
+    '853':
+      text: Ŋmahin’ shɛli di ni mali sɔŋdi yɛltɔɣili bahigu din wuhiri yɛltɔɣili maa
+        naabu.
+      hyp: Ŋman’ shɛli di ni mali sɔŋ di yɛltɔɣili bahigu din wuhiri yɛltɔɣili maa
+        naabu.
+      cer: 0.0308
+      wer: 0.2308
+    '857':
+      text: Di zaŋdimi wuhiri bachinima din ŋmaai filim naabu.
+      hyp: Daa zaŋdi mi wuhiri bachinima din ŋmaai Filip Naabo.
+      cer: 0.0952
+      wer: 0.625
+    '858':
+      text: Di mali li sɔŋdi so yɛligu bee yɛltɔɣili bahigu.
+      hyp: Di mali li sɔŋdi so yɛligu bee yɛbu tɔɣi li bahigu.
+      cer: 0.0513
+      wer: 0.3333
+    '859':
+      text: Dɔɣite maa yɛliya, “A nyɛla ŋun nyari alaafee”.
+      hyp: Doo yi teem’ a yiliya, a nyɛla ŋun nyari alaafee.
+      cer: 0.1667
+      wer: 0.625
+    '860':
+      text: Karimba maa yɛlimi ni “Zahimbu kani zuŋɔ”.
+      hyp: Karimba maa yɛlimi ni, Zahimbu ka ni zuŋɔ.
+      cer: 0.0
+      wer: 0.2857
+    '861':
+      text: Di zaŋ li woligiri binyɛra taba kalibu ni.
+      hyp: da zaŋ li wɔligiri binyɛr' ata ba kalibu ni.
+      cer: 0.0588
+      wer: 0.625
+    '863':
+      text: N kpɛla shitɔɣu maa ni ni n ti da chibo, sɔɣiso, bɔɣati ni bɔdua.
+      hyp: N kpɛla shitɔɣu maa neenii n ti daachi bɔ? Soi so, bɔhi ti nii bɔdi la.
+      cer: 0.2449
+      wer: 0.7857
+    '866':
+      text: Di zaŋdi li pirigiri bachibuɣisira din buɣisiri bachinamdili.
+      hyp: ''
+      cer: 1.0
+      wer: 1.0
+      empty_hyp: true
+    '867':
+      text: Di zaŋ li n-wuhi binyɛra kalibu piligu, shɛhira bee kahigibu.
+      hyp: dɔzaŋli n-wuhi binyɛra kalibu piligu shɛhi daa be kahigibu.
+      cer: 0.0816
+      wer: 0.6
+    '870':
+      text: Di zaŋdi li pirigiri yɛltɔɣiŋmahi diba ayi din ni tooi zani di gama zuɣu
+        taba.
+      hyp: dadaŋ’ di. Li piligiri, yɛb’ tɔɣ’ yi ŋmahi di ba ayi din ni tooi zani di
+        gama zuu taba
+      cer: 0.0952
+      wer: 0.6667
+    '871':
+      text: M malila zahimbu biɛɣuni; n karindimi yuŋ zaa.
+      hyp: M malila zahimbu biɛwu ni n-karim di mi yuŋ zaa.
+      cer: 0.0541
+      wer: 0.625
+    '872':
+      text: M bɔrimi ni n chaŋ Aŋkara; saa n-daa mira.
+      hyp: N bɔ mi ni n chaŋ Ankara? Saa n-daa mira
+      cer: 0.129
+      wer: 0.4444
+    '873':
+      text: Di zaŋdi woligiri binyɛra taba kalibu ni.
+      hyp: Defezondi Wuligiri binyara taba Kalibu ni.
+      cer: 0.2059
+      wer: 0.5714
+    '874':
+      text: Bɛ tila bihi maa pina kamani; nɛma, diɛma binyɛra, tiwala ni namdanima.
+      hyp: Kpe tila bihi maa pina kama ni nɛma, deema binyara, tiwala ni namda ni
+        maa.
+      cer: 0.125
+      wer: 0.6667
+    '875':
+      text: Di zaŋ li wuhiri bachi yaɣ’ shɛli ni ŋmaai bahi shɛm.
+      hyp: do’ zani li wuhiri bachi yaɣ’ shɛli yi ni ŋmaai bahi shɛm.
+      cer: 0.122
+      wer: 0.2727
+    '876':
+      text: Paɣ’ jia maa gari kpe.
+      hyp: Jia maa gari kpe.
+      cer: 0.1875
+      wer: 0.2
+    '877':
+      text: Ti’ titali ka bɛ ŋmaai sɔŋ.
+      hyp: Duu taɣim ka bɛ maai sɔŋ.
+      cer: 0.35
+      wer: 0.5
+    '880':
+      text: Karimba maa yɛlimi ni, “Shikuru kandina leeti kani”.
+      hyp: Ma yɛlimi ni, Shikuru kandina leei ti kani.
+      cer: 0.2195
+      wer: 0.5
+    '882':
+      text: Soyɛligu bia ni tooi lan zaŋ tum tuma lahibali yuli sabbu ni.
+      hyp: So yɛligu bia ni tooi lan zaŋ tum tuma alahibali yuli sabbu ni.
+      cer: 0.0204
+      wer: 0.25
+    '885':
+      text: Haaifin wuhirila binyɛra ayi waɣilim.
+      hyp: Viyɛla o pa m bɛn.
+      cer: 0.8438
+      wer: 1.0
+    '887':
+      text: Bɛ mali pɛrɛntɛsinima n-goori lahabal’ shɛli din pahi n-kahigira.
+      hyp: Bɛ mali pɛrɛntɛsinima n-goori lahabali shɛli din pahi n-kahigira.
+      cer: 0.0189
+      wer: 0.1111
+    '889':
+      text: N laamba kookoo puu (din be Togo la) tiri ba liɣiri pam.
+      hyp: Lamba koko Wudimbe Togo lam tiri baligiri pam.
+      cer: 0.2143
+      wer: 0.75
+    '890':
+      text: Bɛ gbaala chuɣu maa zali biɛɣuni (pa zuŋɔ).
+      hyp: Bɛ gbaa la chugu maa zali kpia ni kpa.
+      cer: 0.3333
+      wer: 0.75
+    '893':
+      text: Karimba so ŋun yuli booni Josɛfin (Ma suŋ) la sa kana kpe sɔhila.
+      hyp: Karimba, so ŋun yuli booni Jɔsefinduma saa kana kpe Sohila.
+      cer: 0.18
+      wer: 0.4615
+    '894':
+      text: Jabihi maa (Alaasani mini Fusheni) kanila kpɛna zuŋɔ.
+      hyp: Jabihi maa laasani mini fushee neei ka nirila kpɛnaazuŋɔ
+      cer: 0.1628
+      wer: 0.75
+    '895':
+      text: Di ni tooi zaŋ daashi zali vuhimbia bee kolɔn zaani.
+      hyp: di ni tooi zani daashi zali Vuhim Bia bee kolɔn zaani.
+      cer: 0.0476
+      wer: 0.3
+    '896':
+      text: Di daa bi maai – wuntaŋa daa yiya pam.
+      hyp: Di daa bi Maai, wuntaŋa daa yiya pam.
+      cer: 0.0
+      wer: 0.0
+    '897':
+      text: Silaashi nyɛla booli din puli zaya ka bɛ mali li zaani bachituɣirili ‘bee’
+        zaani.
+      hyp: Salashi nyɛla boligin puli zaya ka be Malili zaa ni bachituurili be zaa
+        ni.
+      cer: 0.1231
+      wer: 0.7857
+    '904':
+      text: Di naarila yɛltɔɣili din nyɛ yekpeeni.
+      hyp: Di naarila yɛltɔɣili din nyɛ yɛkpeeni.
+      cer: 0.0312
+      wer: 0.1667
+    '905':
+      text: Di naarila yɛltɔɣili din nyɛ bɔhigu.
+      hyp: Daɣiri maa yi yɛltɔɣili din nyɛ bɔhiya bɔ?
+      cer: 0.4
+      wer: 0.8333
+    '908':
+      text: Di wuhirila bachinima, yɛltɔɣiŋmasɔri bee yɛltɔɣa ni ŋmaai bahi shɛm.
+      hyp: Yi wuhiri li la bachinima, yɛl’ to yi ma sɔri, bɛ yi yɛl’ to a ni yi ŋmaai
+        bahi shɛm.”
+      cer: 0.2241
+      wer: 1.5
+    '909':
+      text: O daa boli ʒɛkuri maa.
+      hyp: O daa boli Zɛkuri maa
+      cer: 0.0588
+      wer: 0.2
+    '915':
+      text: N-woligiri bachi diba ayi din sabbu nyɛ yim amaa ka di gbunni lee woligi
+        taba.
+      hyp: Wuligiri bachi dibaa ayi dinsabu n-nyɛ yim, amaa ka di gbunni leei wuligi
+        taba.
+      cer: 0.1129
+      wer: 0.4667
+    '919':
+      text: Zaŋmiya yi labisibu maa maɣisi yi taba dini.
+      hyp: Zaŋmiya yi labisibu maa maasi yi taba dini.
+      cer: 0.0556
+      wer: 0.125
+    '927':
+      text: N laamba yili bela tiŋkpaŋa.
+      hyp: n laɣim ba yili bɛ la tiŋkpaŋa.
+      cer: 0.1304
+      wer: 0.8
+    '930':
+      text: Timya daliri shɛli din che ka yi pii lala sabbu bibahira maa.
+      hyp: Tim ya daliri shɛli din chɛ ka yi pii lala sabbu bibahira maa.
+      cer: 0.0204
+      wer: 0.25
+    '941':
+      text: Zaŋmi a maŋmaŋa bachinima n-kahigi wuhi yɛltɔɣiŋmasɔɣu ni nyɛ shɛli.
+      hyp: Zaŋmi amaŋmaŋ’ abachinima n-kahigi wuhi yɛl’ tɔŋma sɔɣ’ o ni nyɛ shɛli.
+      cer: 0.0526
+      wer: 0.7
+    '946':
+      text: Zaŋmi a maŋmaŋa bachinima n-kahigi yɛltɔɣiŋmaa ni nyɛ shɛli.
+      hyp: Zaŋmi, amaa maŋa bachinima n-kahigi yɛli tɔɣiya maa ni nyɛ shɛli.
+      cer: 0.08
+      wer: 0.5556
+    '947':
+      text: Sabimi yɛltɔɣiŋmahi balibu diba ayi maa ka kahigi li biɛla.
+      hyp: sabimi yaaritɔi ŋmahi balibu dibayi, maa ka kahi ge li biɛla.
+      cer: 0.1429
+      wer: 0.6
+    '951':
+      text: Baŋmi bachibuɣisirili yɛltɔɣiŋmahi din be lahibali maa ni ka sabi li sɔŋ.
+      hyp: Ban mi bachibuɣisiri li yɛltɔɣi ŋmahidin bee lahibali maa ni ka sabili
+        sɔŋ
+      cer: 0.0328
+      wer: 0.75
+    '959':
+      text: Sabimi sabbu bibahira balibu diba anu din be zuliya shɛli a ni bɔhindi
+        ni.
+      hyp: Sabimi sabbu bibahira balibu dibaa anu di yi m-be zuliya shɛli anii Bɔhindi
+        ni.
+      cer: 0.0833
+      wer: 0.4286
+    '961':
+      text: A maŋmaŋa bachinima puuni, kahigim daakiritinima ni nyɛ shɛŋa.
+      hyp: damaŋmaŋ’ bachinima puuni ka Higimdaakiritinima ni nyɛ shɛŋa
+      cer: 0.0385
+      wer: 0.4444
+    '966':
+      text: Yaɣili ŋɔ yɛn zaŋla karimbihi n-yuli binshɛli din nyɛ lahibali nambu mini
+        lɛbigibu.
+      hyp: Biɣfiili ŋɔ yɛn zaŋla karimbihi ni wei shiri din nyɛ lahibali nambua mini
+        dibigibu.
+      cer: 0.2174
+      wer: 0.4615
+    '977':
+      text: Tumaduu gbaŋ nyɛla gban’ shɛli din sabiri tiri kpamba.
+      hyp: tumo duu gbaŋ nyɛla gban’ shɛli din sabiri tiri kpimba.
+      cer: 0.0455
+      wer: 0.3333
+    '978':
+      text: Dɔɣim gbana sabirimi tiri dɔɣiriba, zonima bee ninvuɣ’ so ŋun nyɛ a saawaralana.
+      hyp: Doom gbana sabirimi tiri doɣiriba zonima bee ninvuɣu so ŋun nyɛ asaa waara
+        lana
+      cer: 0.0923
+      wer: 0.4615
+    '979':
+      text: Lahibali nambu nyɛla sasabira maa pe lahibali shɛli o ni sabiri maa n-sɔŋ
+        shɛm.
+      hyp: Hahibali, nambu nyɛla, sasabira maa pe lahibali, shɛli o ni sabiri maa
+        n-sɔŋ shɛm.
+      cer: 0.0156
+      wer: 0.0714
+    '980':
+      text: Lahibali sabbu nyɛla tɛh’ shɛli bee lahibali shɛli din ti sabbu puuni.
+      hyp: Lahibali, sabbu nyɛla tɛ’ shɛli bee lahibali shɛli din teei sabbu puuni.
+      cer: 0.0526
+      wer: 0.1667
+    '981':
+      text: Lahibali lɛbigibu nyɛla lahibali gbunni zaŋ ti n-yi zuliya shɛli ni n-kpɛhi
+        zuliya shɛli ni.
+      hyp: Hallɛn la di dɔbo nyɛla laasibali dinni zaŋ ti n yi juliya shɛli ni n kpaliti
+        juliya shɛli ni
+      cer: 0.3067
+      wer: 0.8
+  source: evaluated

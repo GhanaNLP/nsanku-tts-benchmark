@@ -1,13 +1,24 @@
 # nsanku-TTS Benchmark
 
-TTS quality benchmark for Ghanaian languages, scored by **CTC forced-alignment**.
+TTS intelligibility benchmark for Ghanaian languages, scored by **ASR character error rate**.
 
 ## How it works
 
 1. **Text source**: 200 sentences per language from [ghanaopenai/ghana-sentences](https://huggingface.co/datasets/ghanaopenai/ghana-sentences) (default; bump via `NSANKU_TTS_NUM_SAMPLES`)
-2. **TTS generation**: Each model synthesises every sentence to audio
-3. **Alignment scoring**: [MMS-300M](https://huggingface.co/MahmoudAshraf/mms-300m-1130-forced-aligner) CTC forced-alignment computes per-frame log-probability of the Viterbi path
-4. **Ranking**: Mean alignment score (closer to 0 = better TTS quality)
+2. **Synthesis** (stage 1): each model synthesises every sentence; the clips are kept
+3. **ASR scoring** (stage 2): each clip is transcribed by the lowest-CER ASR model for
+   that language, taken from the [nsanku ASR benchmark](https://github.com/GhanaNLP/nsanku-ASR)
+   (see `data/asr_judges.json`), and compared to the sentence it was asked to read
+4. **Ranking**: mean character error rate — **lower is better**
+
+CER is computed with the same normalisation as the ASR benchmark, so a TTS score and
+an ASR score for a language are directly comparable. Each judge's own CER on real
+speech is recorded alongside the results: a TTS model cannot meaningfully score below
+its judge's error rate.
+
+Synthesis and scoring are split because the judges cannot share an environment with
+the TTS models (omniASR pins torch 2.8 via fairseq2; voxcpm/f5-tts need torch 2.5),
+and because re-scoring should never mean re-synthesising.
 
 Samples are keyed by their row index in the ghana-sentences subset, so runs are
 **incremental**: raising the sample count only scores the *new* sentences and
@@ -124,7 +135,7 @@ If the model needs a custom wrapper, add a class in `benchmark/models.py`.
 
 ```
 nsanku-tts-benchmark/
-├── benchmark/          Core library (config, dataset, models, alignment, evaluate)
+├── benchmark/          Core library (config, dataset, models, asr, metrics, evaluate)
 ├── benchmarks/         Per-language YAML results
 ├── languages/          Language metadata (ghana_languages.yaml)
 ├── data/               Model registry (tts_models.json)

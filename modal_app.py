@@ -1,119 +1,355 @@
-"""Modal entrypoint for nsanku-TTS benchmark.
+"""Modal runner for the nsanku-TTS benchmark.
 
-Runs the full benchmark (all ghana-sentences subsets x all fitted TTS models)
-on Modal GPUs, persisting incremental per-language YAML results and the HF
-model cache on shared Volumes.
+Two stages, because the ASR judges cannot share an environment with the TTS
+models — omniASR pins torch 2.8 through fairseq2 while voxcpm/f5-tts run on
+torch 2.5 — and because re-scoring should never mean re-synthesising:
+
+    stage 1  synthesize   GPU, tts_image   ->  /results/audio/{iso}/{model}/
+    stage 2  score        GPU/CPU, asr_image -> /results/{iso}.yaml
 
 Usage:
-    modal run modal_app.py                        # all languages (incremental)
-    modal run modal_app.py --langs dag ewe        # specific languages
-    modal run modal_app.py --model f5             # filter models by substring
-    modal run modal_app.py --samples 500          # bump sample count (incremental)
+    modal run modal_app.py                          # all languages, both stages
+    modal run modal_app.py --langs dag ewe          # specific languages
+    modal run modal_app.py --model f5               # filter TTS models
+    modal run modal_app.py --samples 500            # bump the sample count
+    modal run modal_app.py --stage score            # re-score existing clips
 
-The workspace must be `ghana-nlp3`:
-    modal profile use ghana-nlp3   (sets MODAL_ENVIRONMENT / workspace)
-
-Secrets (Modal secret named "nsanku-khaya"):
-    HF_TOKEN       — for gated models (ghana-tts-72k)
-    KHAYA_API_KEY  — for the Khaya TTS API
+Secrets (Modal secret named "nsanku-khaya"): KHAYA_API_KEY, HF_TOKEN.
 """
 
 import os
+import sys
 
 import modal
 
 app = modal.App("nsanku-tts-benchmark")
 
-# ── Volumes ──────────────────────────────────────────────────────────────────
-# Results persist between runs so bumping sample counts is incremental.
 results_volume = modal.Volume.from_name("nsanku-tts-results", create_if_missing=True)
-# HF cache survives across runs (aligner + TTS weights reuse).
 hf_cache_volume = modal.Volume.from_name("nsanku-tts-hf-cache", create_if_missing=True)
 
 RESULTS_DIR = "/results"
 HF_HOME = "/hf-cache"
+# Synthesised clips live on the results Volume, keyed by language and model.
+AUDIO_SUBDIR = "/results/audio"
 
-# ── Image ────────────────────────────────────────────────────────────────────
-image = (
+_IGNORED = {".env", ".git", "benchmarks", "__pycache__", ".venv", "space", "audio"}
+
+
+def _with_repo(image):
+    """Bake the repo in so `benchmark` and `data/` are importable."""
+    return image.add_local_dir(
+        ".",
+        "/workspace",
+        ignore=lambda p: any(part in _IGNORED for part in p.parts),
+    )
+
+
+# ── Images ───────────────────────────────────────────────────────────────────
+# Versions are pinned and installed in separate steps so pip does not try to
+# backtrack across incompatible ranges (transformers 5.x <-> tokenizers,
+# f5-tts gradio <-> pydantic, voxcpm datasets).
+tts_image = _with_repo(
     modal.Image.debian_slim(python_version="3.11")
+    # ffmpeg: pydub, used by F5-TTS to load the reference clip.
+    # espeak-ng-data: nano-twi ships a slimmed data dir missing en_dict.
+    .apt_install("ffmpeg", "espeak-ng-data")
+    .pip_install("torch==2.5.1", "torchaudio==2.5.1")
     .pip_install(
-        "torch>=2.5,<2.6",
-        "torchaudio>=2.5,<2.6",
-    )
-    .pip_install(
-        "voxcpm",
-        "transformers>=4.40.0",
-        "datasets>=3.0.0",
-        "pyyaml>=6.0",
+        "transformers==4.57.2",
+        "datasets==3.6.0",
+        "huggingface_hub==0.36.2",
         "numpy",
+        "pyyaml",
         "requests",
-        "huggingface_hub>=0.26.0",
-        "soundfile>=0.12.0",
-        "f5-tts",
-        "sherpa-onnx",
+        "soundfile",
     )
+    .pip_install("voxcpm==2.0.3")
+    .pip_install("f5-tts==1.0.3")
+    .pip_install("sherpa-onnx")
+    # Base image locale is POSIX → Python defaults to ascii for text IO,
+    # which breaks reading the Twi/Ewe YAML results.
+    .env({"PYTHONUTF8": "1", "LANG": "C.UTF-8", "LC_ALL": "C.UTF-8"})
+)
+
+# The judge environment, following the ASR benchmark's own env recipe
+# (github.com/GhanaNLP/nsanku-ASR, run_omniasr.py): fairseq2 pins torch 2.8.
+asr_image = _with_repo(
+    modal.Image.debian_slim(python_version="3.11")
+    .apt_install("ffmpeg")
+    .pip_install("torch==2.8.0", "torchaudio==2.8.0")
+    .pip_install("fairseq2==0.6", "omnilingual-asr==0.2.0")
+    .pip_install(
+        "datasets==3.6.0",
+        "huggingface_hub",
+        "numpy",
+        "pyyaml",
+        "requests",
+        "safetensors",
+        "soundfile",
+        # griot-nano-1's in-repo conformer code imports it.
+        "tokenizers",
+    )
+    .env({"PYTHONUTF8": "1", "LANG": "C.UTF-8", "LC_ALL": "C.UTF-8"})
 )
 
 
-@app.function(
-    image=image,
-    gpu=modal.gpu.H100(memory=80),
-    timeout=60 * 60 * 4,
-    volumes={RESULTS_DIR: results_volume, HF_HOME: hf_cache_volume},
-    secrets=[modal.Secret.from_name("nsanku-khaya", required=False)],
-    mounts=[modal.Mount.from_local_dir(".", remote_path="/repo")],
-    workdir="/repo",
+# CosyVoice is not on PyPI (the PyPI "cosyvoice" is an unrelated 2024 fork
+# predating CosyVoice2), so the official repo is cloned with its vendored
+# Matcha-TTS.  Only the inference subset of its requirements is installed:
+# TensorRT is imported lazily, and deepspeed/gradio/tensorboard are training
+# and demo-only — together they would add gigabytes for nothing.
+cosy_image = _with_repo(
+    modal.Image.debian_slim(python_version="3.10")
+    .apt_install("git", "sox", "libsox-dev", "ffmpeg", "build-essential")
+    .run_commands(
+        "git clone --recursive --depth 1 "
+        "https://github.com/FunAudioLLM/CosyVoice.git /opt/CosyVoice"
+    )
+    .pip_install(
+        "torch==2.3.1", "torchaudio==2.3.1",
+        index_url="https://download.pytorch.org/whl/cu121",
+    )
+    # openai-whisper ships only an sdist whose setup.py imports
+    # pkg_resources, which the isolated build env's setuptools no longer
+    # provides — build it against the environment instead.
+    .pip_install("setuptools<81", "wheel")
+    .run_commands("pip install --no-build-isolation openai-whisper==20231117")
+    .pip_install(
+        "conformer==0.3.2",
+        "diffusers==0.29.0",
+        "gdown==5.1.0",
+        "HyperPyYAML==1.2.3",
+        "hydra-core==1.3.2",
+        "inflect==7.3.1",
+        "librosa==0.10.2",
+        "lightning==2.2.4",
+        "matplotlib==3.7.5",
+        "modelscope==1.20.0",
+        "networkx==3.1",
+        "numpy==1.26.4",
+        "omegaconf==2.3.0",
+        "onnx==1.16.0",
+        "onnxruntime-gpu==1.18.0",
+        "protobuf==4.25",
+        "pydantic==2.7.0",
+        "pyworld==0.3.4",
+        "rich==13.7.1",
+        "soundfile==0.12.1",
+        "transformers==4.51.3",
+        "wetext==0.0.4",
+        "wget==3.2",
+        "x-transformers==2.11.24",
+        extra_index_url="https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-12/pypi/simple/",
+    )
+    .pip_install("huggingface_hub", "pyyaml", "requests", "datasets==3.6.0")
+    .env({"PYTHONUTF8": "1", "LANG": "C.UTF-8", "LC_ALL": "C.UTF-8"})
 )
-def evaluate_subset(subset, model_filter=None, samples=None, force=False):
-    """Evaluate one language subset (all fitted models) on a GPU."""
+
+VOLUMES = {RESULTS_DIR: results_volume, HF_HOME: hf_cache_volume}
+SECRETS = [modal.Secret.from_name("nsanku-khaya")]
+
+
+def _prepare_env(samples):
+    sys.path.insert(0, "/workspace")
     os.environ["HF_HOME"] = HF_HOME
     os.environ["NSANKU_TTS_RESULTS_DIR"] = RESULTS_DIR
+    os.environ["NSANKU_TTS_AUDIO_DIR"] = AUDIO_SUBDIR
     if samples:
         os.environ["NSANKU_TTS_NUM_SAMPLES"] = str(samples)
 
-    from benchmark.evaluate import evaluate_language
 
-    return evaluate_language(
-        subset,
-        model_filter=model_filter,
-        device="cuda",
-        force=force,
-    )
+@app.function(
+    image=tts_image,
+    gpu="A10G",
+    # 200 samples on the slowest models needs far more than 4h.
+    timeout=60 * 60 * 12,
+    # A native crash in one model (espeak aborting the process) must not
+    # make Modal replay the work.
+    retries=0,
+    volumes=VOLUMES,
+    secrets=SECRETS,
+)
+def synthesize(subset, model_name, samples=None, force=False):
+    """Stage 1 — synthesise every sample for one model on one language."""
+    _prepare_env(samples)
+    from benchmark.evaluate import synthesize_language
+
+    out = synthesize_language(subset, model_filter=model_name, device="cuda", force=force)
+    results_volume.commit()
+    return out
+
+
+@app.function(
+    image=cosy_image,
+    gpu="A10G",
+    timeout=60 * 60 * 12,
+    retries=0,
+    volumes=VOLUMES,
+    secrets=SECRETS,
+)
+def synthesize_cosy(subset, model_name, samples=None, force=False):
+    """Stage 1 for CosyVoice models, which need their own environment."""
+    _prepare_env(samples)
+    from benchmark.evaluate import synthesize_language
+
+    out = synthesize_language(subset, model_filter=model_name, device="cuda", force=force)
+    results_volume.commit()
+    return out
+
+
+@app.function(
+    image=asr_image,
+    # omniASR-LLM-7B is ~14 GB in bf16, which fits an A10G's 24 GB at
+    # batch 1. Bigger cards need a payment method on this account.
+    gpu="A10G",
+    timeout=60 * 60 * 6,
+    retries=0,
+    volumes=VOLUMES,
+    secrets=SECRETS,
+)
+def score_gpu(subset, samples=None, force=False):
+    """Stage 2 — transcribe and score one language with a local ASR judge."""
+    _prepare_env(samples)
+    from benchmark.evaluate import score_language
+
+    out = score_language(subset, device="cuda", force=force)
+    results_volume.commit()
+    return [(r["model"], r["cer"]) for r in out]
+
+
+@app.function(
+    image=asr_image,
+    timeout=60 * 60 * 6,
+    retries=0,
+    volumes=VOLUMES,
+    secrets=SECRETS,
+)
+def score_api(subset, samples=None, force=False):
+    """Stage 2 for API judges — no GPU needed, just the network."""
+    _prepare_env(samples)
+    from benchmark.evaluate import score_language
+
+    out = score_language(subset, device="cpu", force=force)
+    results_volume.commit()
+    return [(r["model"], r["cer"]) for r in out]
+
+
+
+@app.function(
+    image=asr_image,
+    # The driver waits on every task, so it needs Modal's maximum: a 20h
+    # cap cut the first full run off partway through stage 2.
+    timeout=60 * 60 * 24 - 60,
+    volumes=VOLUMES,
+    secrets=SECRETS,
+)
+def orchestrate(subsets, model=None, samples=None, force=False, stage="all"):
+    """Fan the run out from inside Modal, one pipeline per language.
+
+    Driving this from the local machine means a laptop OOM halfway through
+    silently drops every task not yet submitted.  Languages are pipelined
+    rather than staged globally, so a language is scored as soon as its own
+    clips exist instead of waiting on the slowest model of some other
+    language — the first full run timed out with 8 languages unscored.
+    """
+    sys.path.insert(0, "/workspace")
+    from concurrent.futures import ThreadPoolExecutor
+
+    from benchmark.asr import judge_for
+    from benchmark.dataset import subset_to_iso
+    from benchmark.evaluate import load_tts_models
+
+    def run_language(subset):
+        report = []
+        if stage in ("all", "synth"):
+            tasks = []
+            for info in load_tts_models(subset):
+                if model and model.lower() not in info["name"].lower():
+                    continue
+                fn = synthesize_cosy if info.get("runner") == "cosyvoice" else synthesize
+                tasks.append((f"synth {subset} / {info['name']}", fn, (subset, info["name"])))
+            report += _fan_out(tasks, samples=samples, force=force)
+
+        if stage in ("all", "score"):
+            spec = judge_for(subset_to_iso(subset))
+            if spec is None:
+                print(f"  no judge for {subset} — skipping", flush=True)
+            else:
+                fn = score_api if spec["kind"] == "khaya" else score_gpu
+                report += _fan_out(
+                    [(f"score {subset} [{spec['model']}]", fn, (subset,))],
+                    samples=samples, force=force,
+                )
+        return report
+
+    print(f"Running {len(subsets)} language pipeline(s), stage={stage}", flush=True)
+    report = []
+    with ThreadPoolExecutor(max_workers=len(subsets)) as pool:
+        for language_report in pool.map(run_language, subsets):
+            report += language_report
+    return report
+
+
+def _fan_out(tasks, samples=None, force=False, max_workers=16):
+    """Run the tasks in parallel, reporting each as it finishes."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    if not tasks:
+        print("  nothing to run")
+        return []
+    report = []
+    with ThreadPoolExecutor(max_workers=min(len(tasks), max_workers)) as pool:
+        futs = {
+            pool.submit(fn.remote, *args, samples=samples, force=force): label
+            for label, fn, args in tasks
+        }
+        for fut, label in futs.items():
+            try:
+                fut.result()
+                print(f"  done {label}", flush=True)
+                report.append((label, "ok"))
+            except Exception as e:
+                print(f"  FAILED {label}: {str(e)[:200]}", flush=True)
+                report.append((label, str(e)[:200]))
+    return report
 
 
 @app.local_entrypoint()
 def main(
-    langs: list[str] = None,
-    model: str = None,
-    samples: int = None,
+    langs: str = "",
+    model: str = "",
+    samples: int = 0,
     force: bool = False,
+    stage: str = "all",
 ):
-    """Run the benchmark, then report results left on the shared Volume."""
+    """Kick off the run inside Modal, then report what landed on the Volume."""
     from benchmark.dataset import available_subsets
 
-    subsets = langs or available_subsets()
-    print(f"nsanku-TTS benchmark on Modal — {len(subsets)} language(s), "
+    subsets = [s.strip() for s in langs.replace(",", " ").split() if s.strip()] or available_subsets()
+    if stage not in ("all", "synth", "score"):
+        raise SystemExit(f"unknown stage {stage!r} — use all, synth or score")
+
+    print(f"nsanku-TTS benchmark — {len(subsets)} language(s), stage={stage}, "
           f"model_filter={model or 'all'}, samples={samples or 'default'}")
+    print("Driving the run from inside Modal; safe to lose this terminal.")
 
-    for subset in subsets:
-        evaluate_subset.remote(subset, model_filter=model, samples=samples, force=force)
-
-    results_volume.reload()
-    total = 0
-    print("\nResults on volume:")
-    for entry in results_volume.iterdir("/"):
-        if entry.is_dir():
-            continue
-        total += entry.size
-        print(f"  {entry.path} ({entry.size} bytes)")
-    if total == 0:
-        print("  (empty — no benchmark YAMLs produced yet)")
-    print("\nCommit them locally with:")
-    print("  modal volume get nsanku-tts-results / --local-dir benchmarks/")
-
-
-def sync_results_local():
-    """Copy volume YAMLs into ./benchmarks for git commit."""
-    modal.Volume.from_name("nsanku-tts-results").get(
-        remote_path="/", local_dir="benchmarks"
+    report = orchestrate.remote(
+        subsets, model=model or None, samples=samples or None, force=force, stage=stage,
     )
+    ok = sum(1 for _, status in report if status == "ok")
+    print(f"\n{ok} task(s) ok, {len(report) - ok} failed")
+    for label, status in report:
+        if status != "ok":
+            print(f"  FAILED {label}: {status}")
+
+    print("\nResults on volume:")
+    try:
+        for entry in results_volume.iterdir("/"):
+            if entry.type == modal.volume.FileEntryType.DIRECTORY:
+                continue
+            print(f"  {entry.path} ({entry.size} bytes)")
+    except Exception as e:
+        print(f"  error listing volume: {e}")
+    print("\nFetch them with:")
+    print("  modal volume get nsanku-tts-results / --local-dir benchmarks/")
+    print("  modal volume get nsanku-tts-results /audio audio/")
