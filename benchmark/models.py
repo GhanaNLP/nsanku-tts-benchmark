@@ -286,6 +286,8 @@ class VoxCPM2Wrapper(BaseTTSModel):
             inference_timesteps=_knob(self.meta, "INFERENCE_TIMESTEPS", 15),
             retry_badcase=_knob(self.meta, "RETRY_BADCASE", False),
             max_len=_knob(self.meta, "MAX_LEN") or max(50, len(text) * 4),
+            # The text normaliser is built for orthography and corrupts IPA.
+            normalize=self.meta.get("input_type") != "ipa",
         )
         if self.ref_wav:
             kwargs["reference_wav_path"] = self.ref_wav
