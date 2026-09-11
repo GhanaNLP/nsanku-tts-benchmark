@@ -261,7 +261,8 @@ def synthesize_language(subset, model_filter=None, device="cuda", force=False, s
             for sample in todo:
                 key = str(sample["index"])
                 try:
-                    audio = tts_model.synthesize(sample["text"], lang=tts_lang)
+                    spoken = tts_model.prepare_text(sample["text"], iso)
+                    audio = tts_model.synthesize(spoken, lang=tts_lang)
                     (out_dir / f"{sample['index']:05d}.wav").write_bytes(audio)
                     errors.pop(key, None)
                     written += 1

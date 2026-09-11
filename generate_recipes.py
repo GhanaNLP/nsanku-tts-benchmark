@@ -44,6 +44,14 @@ HOOK = '''
 '''
 
 BLURBS = {
+    "ipa_voxcpm": "This model reads IPA, not orthography, so the sentence is phonemised\n"
+                  "first. G2P_LANGUAGE is the ghana-g2p language used for that, and\n"
+                  "G2P_SEPARATOR what goes between phonemes — this model was trained on\n"
+                  "space-separated IPA. CFG_VALUE and INFERENCE_TIMESTEPS are the usual\n"
+                  "VoxCPM guidance and step knobs.",
+    "ipa": "This model reads IPA, not orthography, so the sentence is phonemised\n"
+           "first. G2P_LANGUAGE is the ghana-g2p language used for that, and\n"
+           "G2P_SEPARATOR what goes between phonemes.",
     "khaya": "LANGUAGE_CODE is the Khaya API's language parameter. SPEAKER_ID\n"
              "picks the voice (male_low, male_high, female); None uses the default.",
     "voxcpm": "CFG_VALUE is the guidance scale and INFERENCE_TIMESTEPS the number of\n"
@@ -63,6 +71,9 @@ BLURBS = {
 }
 
 BODIES = {
+    "ipa_voxcpm": "G2P_LANGUAGE = {g2p_language!r}\nG2P_SEPARATOR = ' '\n"
+                  "CFG_VALUE = 2.0\nINFERENCE_TIMESTEPS = 10\nRETRY_BADCASE = True\n",
+    "ipa": "G2P_LANGUAGE = {g2p_language!r}\nG2P_SEPARATOR = ' '\n",
     "khaya": "LANGUAGE_CODE = {lang_code!r}\nSPEAKER_ID = None\n",
     "voxcpm": "CFG_VALUE = 2.0\nINFERENCE_TIMESTEPS = 10\nRETRY_BADCASE = True\n",
     "voxcpm2": "CFG_VALUE = 2.0\nINFERENCE_TIMESTEPS = 15\nRETRY_BADCASE = False\nMAX_LEN = None\n",
@@ -74,6 +85,8 @@ BODIES = {
 
 def kind_for(model_id, meta):
     lower = model_id.lower()
+    if meta.get("input_type") == "ipa":
+        return "ipa_voxcpm" if "voxcpm" in lower else "ipa"
     if meta.get("runner") == "cosyvoice" or "cosyvoice" in lower:
         return "cosyvoice"
     if "khaya" in lower:
@@ -113,6 +126,7 @@ def main():
             body = BODIES[kind].format(
                 lang_code=TTS_LANG_MAP.get(iso, iso),
                 reference_text=meta.get("reference_text", ""),
+                g2p_language=language,
             )
             path.write_text(
                 HEADER.format(

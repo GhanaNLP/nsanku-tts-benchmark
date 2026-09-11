@@ -81,9 +81,6 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
     if builder is not None:
         return builder(model_id, device, meta)
 
-    if meta.get("input_type") == "ipa":
-        raise UnsupportedModel(f"{model_id}: requires IPA input, skipping")
-
     if "voxcpm2" in lower or meta.get("architecture", "").startswith("VoxCPM2"):
         return VoxCPM2Wrapper(model_id, device=device, subset=subset, meta=meta, **kwargs)
     if "ghana-tts" in lower:
@@ -118,6 +115,24 @@ def _model_meta(model_id):
     return {}
 
 
+def phonemize(text, iso, meta):
+    """Convert orthographic text to the IPA a phoneme model expects.
+
+    Models trained on IPA are not excluded from the benchmark: they are run
+    with the G2P they were trained with, which is how anyone would use them.
+    The G2P language can be overridden per (model, language) in the recipe.
+    """
+    from .config import ISO_TO_NAME
+    from ghana_g2p import GhanaG2P
+
+    language = _knob(meta, "G2P_LANGUAGE") or ISO_TO_NAME.get(iso, iso)
+    separator = _knob(meta, "G2P_SEPARATOR", " ")
+    cache = meta.setdefault("_g2p_cache", {})
+    if language not in cache:
+        cache[language] = GhanaG2P(language)
+    return cache[language].ipa(text, sep=separator)
+
+
 class UnsupportedModel(Exception):
     pass
 
@@ -128,6 +143,13 @@ class BaseTTSModel(abc.ABC):
     def __init__(self, model_id, device="cuda"):
         self.model_id = model_id
         self.device = device
+
+    def prepare_text(self, text, iso):
+        """Text as this model expects it — IPA for phoneme models."""
+        meta = getattr(self, "meta", {}) or {}
+        if meta.get("input_type") == "ipa":
+            return phonemize(text, iso, meta)
+        return text
 
     @abc.abstractmethod
     def synthesize(self, text, lang="eng"):
