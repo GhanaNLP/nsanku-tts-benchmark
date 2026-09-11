@@ -4,8 +4,10 @@
 # voxcpm and f5-tts need torch 2.5 — they genuinely cannot coexist.
 FROM pytorch/pytorch:2.8.0-cuda12.8-cudnn9-runtime
 
+# build-essential + cmake: omnilingual-asr pulls kenlm, which ships only an
+# sdist and needs a C++ toolchain to build.
 RUN apt-get update \
- && apt-get install -y --no-install-recommends ffmpeg git \
+ && apt-get install -y --no-install-recommends ffmpeg git build-essential cmake \
  && rm -rf /var/lib/apt/lists/*
 
 COPY requirements/asr.txt /tmp/requirements.txt
