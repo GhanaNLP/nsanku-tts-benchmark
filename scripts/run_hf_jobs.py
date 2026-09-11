@@ -25,9 +25,11 @@ sys.path.insert(0, str(ROOT))
 REPO_URL = "https://github.com/GhanaNLP/nsanku-tts-benchmark"
 NAMESPACE = os.environ.get("NSANKU_TTS_HF_NAMESPACE", "ghananlpcommunity")
 
-# Prebuilt by .github/workflows/images.yml. Installing the stack inside every
-# job meant each one spent longer on apt and pip than on the work itself.
-REGISTRY = os.environ.get("NSANKU_TTS_REGISTRY", "ghcr.io/ghananlp/nsanku-tts-benchmark")
+# Prebuilt by GhanaOpenAI/nsanku-tts-benchmark-images. Installing the stack
+# inside every job meant each one spent longer on apt and pip than on the work
+# itself. They are published from GhanaOpenAI because GhanaNLP does not permit
+# public container packages, and HuggingFace Jobs pulls anonymously.
+REGISTRY = os.environ.get("NSANKU_TTS_REGISTRY", "ghcr.io/ghanaopenai/nsanku-tts-benchmark")
 IMAGES = {"synth": f"{REGISTRY}:tts", "score": f"{REGISTRY}:asr"}
 # Hardware follows the work: a hosted model is a network call whichever stage
 # it is in, omniASR-LLM-7B needs real headroom, everything else fits an A10G.

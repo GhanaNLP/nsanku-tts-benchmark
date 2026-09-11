@@ -3,6 +3,8 @@
 # Built ahead of time and pulled by HuggingFace Jobs: installing this stack
 # inside every job meant each one spent longer on apt and pip than on
 # synthesis, which is a poor use of anyone's compute budget.
+#
+# Built and published by GhanaOpenAI/nsanku-tts-benchmark-images.
 FROM pytorch/pytorch:2.5.1-cuda12.1-cudnn9-runtime
 
 # ffmpeg: F5-TTS loads its reference clip through pydub.
