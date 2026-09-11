@@ -100,14 +100,18 @@ async function fetchText(url) {
 }
 
 function parseSimpleYaml(text) {
-  const lines = text.split("\n");
   const result = [];
   let current = null;
-  for (const line of lines) {
+  for (const line of text.split("\n")) {
+    if (line.trimStart().startsWith("#")) continue;
     if (line.startsWith("  - ")) {
       if (current) result.push(current);
       current = {};
-    } else if (current && line.includes(":")) {
+      // The first field sits on the dash line itself ("  - name: Ga"), so it
+      // has to be read here or it is lost.
+      const [k, ...rest] = line.slice(4).split(":");
+      if (rest.length) current[k.trim()] = rest.join(":").trim();
+    } else if (current && line.startsWith("    ") && line.includes(":")) {
       const [k, ...rest] = line.trim().split(":");
       current[k.trim()] = rest.join(":").trim();
     }
@@ -187,7 +191,7 @@ async function main() {
         for (const b of (bench.benchmarks || [])) {
           allRows.push({
             iso,
-            language: lang.name.replace("_", " "),
+            language: (lang.name || lang.iso_639_3 || "").replace(/_/g, " "),
             model: b.model || "",
             architecture: b.architecture || "",
             cer: Number.isFinite(b.cer) ? b.cer : null,
