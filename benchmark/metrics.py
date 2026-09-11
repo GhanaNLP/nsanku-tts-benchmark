@@ -1,9 +1,9 @@
 """WER and CER computation.
 
 Kept byte-for-byte compatible with the ASR benchmark's metrics
-(github.com/GhanaNLP/nsanku-ASR, benchmark/metrics.py) so a TTS score and an
-ASR score for the same language are computed the same way and can be read
-against each other.
+(github.com/GhanaNLP/nsanku-asr-benchmark, benchmark/metrics.py) so a TTS
+score and an ASR score for the same language are computed the same way and
+can be read against each other.
 """
 
 import re

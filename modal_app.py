@@ -72,7 +72,7 @@ tts_image = _with_repo(
 )
 
 # The judge environment, following the ASR benchmark's own env recipe
-# (github.com/GhanaNLP/nsanku-ASR, run_omniasr.py): fairseq2 pins torch 2.8.
+# (github.com/GhanaNLP/nsanku-asr-benchmark, run_omniasr.py): fairseq2 pins torch 2.8.
 asr_image = _with_repo(
     modal.Image.debian_slim(python_version="3.11")
     .apt_install("ffmpeg")

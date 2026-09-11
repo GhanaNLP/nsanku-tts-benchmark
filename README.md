@@ -7,7 +7,7 @@ TTS intelligibility benchmark for Ghanaian languages, scored by **ASR character 
 1. **Text source**: 200 sentences per language from [ghanaopenai/ghana-sentences](https://huggingface.co/datasets/ghanaopenai/ghana-sentences) (default; bump via `NSANKU_TTS_NUM_SAMPLES`)
 2. **Synthesis** (stage 1): each model synthesises every sentence; the clips are kept
 3. **ASR scoring** (stage 2): each clip is transcribed by the lowest-CER ASR model for
-   that language, taken from the [nsanku ASR benchmark](https://github.com/GhanaNLP/nsanku-ASR)
+   that language, taken from the [nsanku ASR benchmark](https://github.com/GhanaNLP/nsanku-asr-benchmark)
    (see `data/asr_judges.json`), and compared to the sentence it was asked to read
 4. **Ranking**: mean character error rate — **lower is better**
 
@@ -41,7 +41,7 @@ reuses previously scored ones.
 | twi_asante | Asante Twi | twi-asa |
 | xsm | Kasem | xsm |
 
-All 43 nsanku-ASR language codes are pre-registered for easy expansion.
+All 43 nsanku-asr-benchmark language codes are pre-registered for easy expansion.
 
 ## TTS models (orthographic input only)
 

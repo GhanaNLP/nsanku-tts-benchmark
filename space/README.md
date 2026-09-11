@@ -17,4 +17,4 @@ and scored by character error rate — lower is better.
 
 Visit the [leaderboard](https://ghananlpcommunity-nsanku-tts-benchmark.hf.space) for results.
 
-Results are read from [GhanaNLP/nsanku-TTS](https://github.com/GhanaNLP/nsanku-TTS).
+Results are read from [GhanaNLP/nsanku-tts-benchmark](https://github.com/GhanaNLP/nsanku-tts-benchmark).

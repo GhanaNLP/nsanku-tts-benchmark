@@ -1,5 +1,5 @@
 {
-  "_comment": "Per-language ASR judge for TTS intelligibility scoring. Each is the lowest-CER model for that language on the GhanaNLP ASR leaderboard (https://huggingface.co/spaces/ghananlpcommunity/nsanku-asr-benchmark, source github.com/GhanaNLP/nsanku-ASR). judge_cer is that model's own CER on real speech — the floor below which a TTS score cannot meaningfully go.",
+  "_comment": "Per-language ASR judge for TTS intelligibility scoring. Each is the lowest-CER model for that language on the GhanaNLP ASR leaderboard (https://huggingface.co/spaces/ghananlpcommunity/nsanku-asr-benchmark, source github.com/GhanaNLP/nsanku-asr-benchmark). judge_cer is that model's own CER on real speech — the floor below which a TTS score cannot meaningfully go.",
   "judges": {
     "ada":         {"model": "KhayaAI/khaya-asr-v3",         "kind": "khaya",   "code": "ada",      "judge_cer": 0.0830},
     "dag":         {"model": "KhayaAI/khaya-asr-v3",         "kind": "khaya",   "code": "dag",      "judge_cer": 0.1526},

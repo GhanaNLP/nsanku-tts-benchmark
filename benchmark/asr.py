@@ -7,7 +7,7 @@ GhanaNLP ASR leaderboard (see data/asr_judges.json).  A judge exposes:
     text = judge.transcribe(wav_bytes)
 
 The runners mirror the reference implementations in the ASR benchmark
-(github.com/GhanaNLP/nsanku-ASR, recipes/ + benchmark/) so a TTS run and an
+(github.com/GhanaNLP/nsanku-asr-benchmark, recipes/ + benchmark/) so a TTS run and an
 ASR run transcribe audio the same way.
 """
 

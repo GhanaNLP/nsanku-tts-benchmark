@@ -430,7 +430,9 @@ class CosyVoice2Wrapper(BaseTTSModel):
             for out in self.model.inference_zero_shot(
                 tts_text=text,
                 prompt_text=prompt_text,
-                prompt_speech_16k=prompt_wav,
+                # Upstream renamed this from prompt_speech_16k; the model
+                # card's example predates the change.
+                prompt_wav=prompt_wav,
                 stream=False,
             )
         ]
