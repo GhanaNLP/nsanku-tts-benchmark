@@ -372,8 +372,10 @@ def score_language(subset, device="cuda", force=False, samples=None):
                     print("      no clips — synthesise first")
                     continue
 
-                entries = {} if force else load_transcriptions(iso, category, model_id)
-                entries = {k: v for k, v in entries.items() if int(k) in text_by_index}
+                # Rows outside the current pool are kept as they are: scoring a
+                # subset must not delete a model's existing results.
+                stored = {} if force else load_transcriptions(iso, category, model_id)
+                entries = {k: v for k, v in stored.items() if int(k) in text_by_index}
                 synth_errors = _load_errors(audio_dir)
 
                 pending = []
@@ -411,7 +413,7 @@ def score_language(subset, device="cuda", force=False, samples=None):
                     entries[str(index)] = entry
                 elapsed = time.time() - t0
 
-                save_transcriptions(iso, category, model_id, entries)
+                save_transcriptions(iso, category, model_id, {**stored, **entries})
                 scored_ids = sorted(
                     (int(k) for k, e in entries.items() if e.get("cer") is not None)
                 )
