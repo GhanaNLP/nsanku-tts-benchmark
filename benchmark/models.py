@@ -83,7 +83,8 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
         return builder(model_id, device, meta)
 
     if "voxcpm2" in lower or meta.get("architecture", "").startswith("VoxCPM2"):
-        return VoxCPM2Wrapper(model_id, device=device, subset=subset, meta=meta, **kwargs)
+        return VoxCPM2Wrapper(model_id, device=device, subset=subset, meta=meta,
+                              iso=iso, **kwargs)
     if "ghana-tts" in lower:
         return VoxCPMWrapper(model_id, device=device, subset=subset, meta=meta,
                              iso=iso, **kwargs)
@@ -264,6 +265,7 @@ class VoxCPMWrapper(BaseTTSModel):
         self.iso = iso
         self.ref_wav = None
         self.ref_text = None
+        self.ref_source = None
 
     def _ensure_loaded(self):
         if self._loaded:
@@ -281,9 +283,14 @@ class VoxCPMWrapper(BaseTTSModel):
             optimize=_knob(self.meta, "OPTIMIZE", False),
         )
 
-        # No voice prompt: see USE_REFERENCE_AUDIO in config.
+        if USE_REFERENCE_AUDIO and self.meta.get("uses_reference"):
+            from .config import HF_TOKEN
+
+            self.ref_wav, self.ref_text, self.ref_source = reference_clip(
+                self.iso, self.meta, HF_TOKEN
+            )
         self._loaded = True
-        logger.info("Loaded VoxCPM v1: %s", self.model_id)
+        logger.info("Loaded VoxCPM v1: %s (ref=%s)", self.model_id, bool(self.ref_wav))
 
     def _generate(self, text, lang):
         """Call model.generate handling the optional lang kwarg."""
@@ -319,12 +326,14 @@ class VoxCPM2Wrapper(BaseTTSModel):
 
     SAMPLE_RATE = 48000
 
-    def __init__(self, model_id, device="cuda", subset=None, meta=None, **kwargs):
+    def __init__(self, model_id, device="cuda", subset=None, meta=None, iso=None, **kwargs):
         super().__init__(model_id, device)
         self.model = None
         self._loaded = False
         self.meta = meta or {}
+        self.iso = iso
         self.ref_wav = None
+        self.ref_source = None
 
     def _ensure_loaded(self):
         if self._loaded:
@@ -339,13 +348,12 @@ class VoxCPM2Wrapper(BaseTTSModel):
             device=self.device,
             optimize=_knob(self.meta, "OPTIMIZE", False),
         )
-        if self.meta.get("reference_audio"):
-            from huggingface_hub import hf_hub_download
-
-            wav_path = hf_hub_download(self.model_id, self.meta["reference_audio"])
-            self.ref_wav = wav_path
+        if USE_REFERENCE_AUDIO and self.meta.get("uses_reference"):
+            self.ref_wav, _text, self.ref_source = reference_clip(
+                self.iso, self.meta, HF_TOKEN
+            )
         self._loaded = True
-        logger.info("Loaded VoxCPM2: %s", self.model_id)
+        logger.info("Loaded VoxCPM2: %s (ref=%s)", self.model_id, bool(self.ref_wav))
 
     def _generate(self, text):
         kwargs = dict(
