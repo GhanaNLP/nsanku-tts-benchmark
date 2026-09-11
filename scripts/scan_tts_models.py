@@ -27,6 +27,23 @@ from benchmark.config import ISO_TO_NAME, ORG_OVERRIDES, SUBSET_TO_ISO  # noqa: 
 
 API = "https://huggingface.co/api"
 
+# "ga" is ISO 639-1 for Irish, but publishers routinely use it for Ga. A match
+# on it alone pulls in every multilingual giant, so it counts only when the
+# model also looks Ghanaian — another of our language tags, or a Ghana tag.
+AMBIGUOUS_TAGS = {"ga"}
+CORROBORATING_TAGS = {
+    "ghana", "ghanaian", "akan", "twi", "asante", "akuapem", "ewe", "dagbani",
+    "dangme", "adangme", "dagaare", "fante", "gonja", "kasem", "nzema",
+    "gurene", "frafra", "gaa", "aka", "tw", "ee", "dag", "dga", "fat", "gjn",
+    "xsm", "nzi", "gur", "ada",
+}
+
+
+def corroborated(model_tags):
+    """True if a model tagged `ga` also looks Ghanaian."""
+    tags = {t.lower() for t in model_tags}
+    return bool((tags & CORROBORATING_TAGS) - AMBIGUOUS_TAGS)
+
 # HF language tags to look under, per language we evaluate. ISO 639-3 is the
 # tag most models use; the aliases are what the rest actually use in practice.
 LANG_TAGS = {
@@ -37,9 +54,7 @@ LANG_TAGS = {
     "dga": ["dga", "dagaare"],
     "ewe": ["ee", "ewe"],
     "fat": ["fat", "fante"],
-    # NOT "ga": that is ISO 639-1 for Irish, and pulls in every
-    # multilingual giant tagged with it.
-    "gaa": ["gaa"],
+    "gaa": ["gaa", "ga"],   # "ga" is ambiguous — see AMBIGUOUS_TAGS
     "gjn": ["gjn", "gonja"],
     "gur": ["gur", "gurune", "frafra"],
     "nzi": ["nzi", "nzema"],
@@ -83,6 +98,8 @@ def scan():
                 mid = m.get("id", "")
                 owner = mid.split("/")[0] if "/" in mid else ""
                 if not owner or not is_org(owner, org_cache):
+                    continue
+                if tag in AMBIGUOUS_TAGS and not corroborated(m.get("tags", [])):
                     continue
                 entry = found.setdefault(mid, {
                     "name": mid,
