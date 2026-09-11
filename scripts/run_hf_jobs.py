@@ -25,17 +25,10 @@ sys.path.insert(0, str(ROOT))
 REPO_URL = "https://github.com/GhanaNLP/nsanku-tts-benchmark"
 NAMESPACE = os.environ.get("NSANKU_TTS_HF_NAMESPACE", "ghananlpcommunity")
 
-# Base images carry the CUDA runtime; the rest is pip-installed per stage.
-IMAGES = {
-    "synth": "pytorch/pytorch:2.5.1-cuda12.1-cudnn9-runtime",
-    "score": "pytorch/pytorch:2.8.0-cuda12.8-cudnn9-runtime",
-}
-APT = {
-    # ffmpeg: F5-TTS loads its reference clip through pydub.
-    # espeak-ng-data: nano-twi ships a slimmed copy missing en_dict.
-    "synth": "ffmpeg espeak-ng-data git",
-    "score": "ffmpeg git",
-}
+# Prebuilt by .github/workflows/images.yml. Installing the stack inside every
+# job meant each one spent longer on apt and pip than on the work itself.
+REGISTRY = os.environ.get("NSANKU_TTS_REGISTRY", "ghcr.io/ghananlp/nsanku-tts-benchmark")
+IMAGES = {"synth": f"{REGISTRY}:tts", "score": f"{REGISTRY}:asr"}
 # Hardware follows the work: a hosted model is a network call whichever stage
 # it is in, omniASR-LLM-7B needs real headroom, everything else fits an A10G.
 FLAVORS = {"synth": "a10g-small", "score": "l40sx1", "api": "cpu-upgrade"}
@@ -52,14 +45,12 @@ def build_command(stage, subset, model, ref, samples, force, flavor):
             + (" --force" if force else ""))
     # A CPU flavor has no CUDA; the judge decides which one it needs.
     device = "cpu" if flavor.startswith("cpu") else "cuda"
+    # The image carries the stack; the job only needs the code at this ref.
     script = (
         "set -eux; "
-        f"export NSANKU_DEVICE={device}; "
-        f"apt-get update && apt-get install -y --no-install-recommends {APT[stage]}; "
         f"git clone --depth 1 --branch {ref} {REPO_URL} /app; "
         "cd /app; "
-        f"pip install --no-cache-dir -r requirements/{'tts' if stage == 'synth' else 'asr'}.txt; "
-        f"python -m benchmark.job {unit} --device $NSANKU_DEVICE"
+        f"python -m benchmark.job {unit} --device {device}"
     )
     return ["bash", "-lc", script]
 

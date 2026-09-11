@@ -1,0 +1,15 @@
+# Judge environment for the nsanku-TTS benchmark.
+#
+# Separate from the synthesis image because fairseq2 pins torch 2.8 while
+# voxcpm and f5-tts need torch 2.5 — they genuinely cannot coexist.
+FROM pytorch/pytorch:2.8.0-cuda12.8-cudnn9-runtime
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends ffmpeg git \
+ && rm -rf /var/lib/apt/lists/*
+
+COPY requirements/asr.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+ENV PYTHONUTF8=1 LANG=C.UTF-8 LC_ALL=C.UTF-8
+WORKDIR /app

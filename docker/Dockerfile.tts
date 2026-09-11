@@ -1,0 +1,20 @@
+# Synthesis environment for the nsanku-TTS benchmark.
+#
+# Built ahead of time and pulled by HuggingFace Jobs: installing this stack
+# inside every job meant each one spent longer on apt and pip than on
+# synthesis, which is a poor use of anyone's compute budget.
+FROM pytorch/pytorch:2.5.1-cuda12.1-cudnn9-runtime
+
+# ffmpeg: F5-TTS loads its reference clip through pydub.
+# espeak-ng-data: nano-twi ships a slimmed copy missing en_dict.
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends ffmpeg espeak-ng-data git \
+ && rm -rf /var/lib/apt/lists/*
+
+COPY requirements/tts.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+# The container's locale is POSIX, which makes Python default to ascii for
+# text IO and breaks reading the Twi/Ewe results.
+ENV PYTHONUTF8=1 LANG=C.UTF-8 LC_ALL=C.UTF-8
+WORKDIR /app
