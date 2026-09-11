@@ -93,27 +93,6 @@ benchmarks:
   sample_category: education
   sample_clip: '00003'
   source: evaluated
-- model: ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante
-  model_url: https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante
-  owner: ghananlpcommunity
-  architecture: F5-TTS (DiT + Vocos)
-  model_class: non-llm
-  params: 0.3B
-  cer: 0.3482
-  wer: 0.6835
-  score: 0.3482
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.6835
-      cer: 0.3482
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
-  sample_category: education
-  sample_clip: '00003'
-  source: evaluated
 - model: ghananlpcommunity/nano-twi
   model_url: https://huggingface.co/ghananlpcommunity/nano-twi
   owner: ghananlpcommunity

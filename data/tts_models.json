@@ -1,7 +1,6 @@
 [
   {
     "name": "ghananlpcommunity/ghana-tts-72k",
-    "prompt_audio": "manifest",
     "model_class": "non-llm",
     "params": "0.7B",
     "architecture": "VoxCPM v1 (0.7B)",
@@ -14,7 +13,6 @@
   },
   {
     "name": "ghananlpcommunity/ghana-tts-36k",
-    "prompt_audio": "manifest",
     "model_class": "non-llm",
     "params": "0.7B",
     "architecture": "VoxCPM v1 (0.7B)",
@@ -63,6 +61,7 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante",
+    "skipped": "zero-shot: needs a reference clip, which the benchmark does not provide",
     "model_class": "non-llm",
     "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",
@@ -76,6 +75,7 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem",
+    "skipped": "zero-shot: needs a reference clip, which the benchmark does not provide",
     "model_class": "non-llm",
     "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",
@@ -89,6 +89,7 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Ewe",
+    "skipped": "zero-shot: needs a reference clip, which the benchmark does not provide",
     "model_class": "non-llm",
     "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",

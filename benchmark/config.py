@@ -21,6 +21,12 @@ NUM_SAMPLES = int(os.environ.get("NSANKU_TTS_NUM_SAMPLES", "200"))
 # HuggingFace authentication
 HF_TOKEN = os.environ.get("HF_TOKEN", "")
 
+# No model is given a reference clip to imitate. A voice prompt changes what
+# is being measured — partly the model, partly whoever recorded the prompt —
+# and a model that cannot read a sentence without being shown one first is not
+# being asked the same question as the rest.
+USE_REFERENCE_AUDIO = False
+
 # Only benchmark models published by organizations (drop personal accounts).
 # A leaderboard is a claim about what is available to build on, and a personal
 # checkpoint is not the same kind of artefact as an org release.

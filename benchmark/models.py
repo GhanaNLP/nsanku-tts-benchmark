@@ -19,6 +19,7 @@ from pathlib import Path
 
 import numpy as np
 
+from .config import USE_REFERENCE_AUDIO
 from .recipes import recipe_get
 
 logger = logging.getLogger(__name__)
@@ -86,9 +87,14 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
     if "ghana-tts" in lower:
         return VoxCPMWrapper(model_id, device=device, subset=subset, meta=meta,
                              iso=iso, **kwargs)
-    if meta.get("runner") == "cosyvoice" or "cosyvoice" in lower:
-        return CosyVoice2Wrapper(model_id, device=device, meta=meta, **kwargs)
-    if "f5-tts" in lower and "openbible" in lower:
+    if "f5-tts" in lower or meta.get("runner") == "cosyvoice":
+        # Zero-shot models synthesise by imitating a reference clip; there is
+        # nothing to run without one.
+        if not USE_REFERENCE_AUDIO:
+            raise UnsupportedModel(
+                f"{model_id}: needs a reference clip to synthesise, and the "
+                "benchmark does not give models one"
+            )
         return F5TTSWrapper(model_id, device=device, meta=meta, **kwargs)
     if meta.get("runner") == "coqui-vits":
         return CoquiVITSWrapper(model_id, device=device, meta=meta, **kwargs)
@@ -162,39 +168,6 @@ def _local_snapshot(model_id, token=None):
     )
 
 
-def _manifest_prompt(model_id, iso, meta, token=None):
-    """Fetch the model's own reference clip for this language.
-
-    ghana-tts ships prompt_audio/manifest.json: three clips per language with
-    their transcripts. VoxCPM v1 is voice-prompted, and the prompt is how the
-    language is conveyed — without one the model is told nothing about what it
-    is reading.
-    """
-    import json
-
-    from huggingface_hub import hf_hub_download
-
-    key = _knob(meta, "PROMPT_LANGUAGE") or meta.get("prompt_language_map", {}).get(iso, iso)
-    index = _knob(meta, "PROMPT_INDEX", 0)
-    try:
-        path = hf_hub_download(model_id, "prompt_audio/manifest.json", token=token or None)
-        manifest = json.loads(Path(path).read_text(encoding="utf-8"))
-    except Exception as e:
-        logger.warning("%s: no prompt manifest (%s)", model_id, type(e).__name__)
-        return None, None
-
-    entries = manifest.get(key) or []
-    if not entries:
-        # The model ships no reference for this language, which usually means
-        # it does not claim to speak it.
-        logger.warning("%s: no prompt audio for %s (manifest key %r)", model_id, iso, key)
-        return None, None
-
-    entry = entries[min(index, len(entries) - 1)]
-    wav = hf_hub_download(model_id, f"prompt_audio/{entry['audio']}", token=token or None)
-    return wav, entry.get("text")
-
-
 class BaseTTSModel(abc.ABC):
     """Abstract base for TTS model wrappers."""
 
@@ -229,24 +202,6 @@ class BaseTTSModel(abc.ABC):
         gc.collect()
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
-
-
-def _reference_audio(meta, model_id):
-    """Download & return (wav_path, ref_text) for a model's reference audio.
-
-    Models that anchor a specific voice (LoRA TTS, VoxCPM2 SFT) ship a
-    reference clip in their repo.  meta may carry:
-        reference_audio: path relative to the repo
-        reference_text:  gold transcript of the reference clip
-    """
-    ref_path = meta.get("reference_audio")
-    if not ref_path:
-        return None, None
-    from huggingface_hub import hf_hub_download
-
-    cache_dir = os.path.join(_cache_root(), "refs")
-    wav_path = hf_hub_download(model_id, ref_path, cache_dir=cache_dir)
-    return wav_path, meta.get("reference_text")
 
 
 class VoxCPMWrapper(BaseTTSModel):
@@ -284,15 +239,9 @@ class VoxCPMWrapper(BaseTTSModel):
             optimize=_knob(self.meta, "OPTIMIZE", False),
         )
 
-        if self.meta.get("reference_audio"):
-            self.ref_wav, self.ref_text = _reference_audio(self.meta, self.model_id)
-        elif self.meta.get("prompt_audio") == "manifest":
-            self.ref_wav, self.ref_text = _manifest_prompt(
-                self.model_id, self.iso, self.meta, HF_TOKEN
-            )
+        # No voice prompt: see USE_REFERENCE_AUDIO in config.
         self._loaded = True
-        logger.info("Loaded VoxCPM v1: %s (prompt=%s)",
-                    self.model_id, bool(self.ref_wav))
+        logger.info("Loaded VoxCPM v1: %s", self.model_id)
 
     def _generate(self, text, lang):
         """Call model.generate handling the optional lang kwarg."""
@@ -487,148 +436,6 @@ def _merged_espeak_data(model_data_dir):
         shutil.copytree(system_dir, merged, dirs_exist_ok=True)
     shutil.copytree(model_data_dir, merged, dirs_exist_ok=True)
     return str(merged)
-
-
-class CosyVoice2Wrapper(BaseTTSModel):
-    """CosyVoice2 0.5B fine-tunes — zero-shot, needs a reference clip.
-
-    The package is not on PyPI: the image clones FunAudioLLM/CosyVoice and
-    puts it (plus its vendored Matcha-TTS) on the path.
-    """
-
-    SAMPLE_RATE = 24000
-    REPO_PATH = "/opt/CosyVoice"
-
-    def __init__(self, model_id, device="cuda", meta=None, **kwargs):
-        super().__init__(model_id, device)
-        self.model = None
-        self._loaded = False
-        self.meta = meta or {}
-        self.ref_wav = None
-        self.ref_text = None
-
-    def _ensure_loaded(self):
-        if self._loaded:
-            return
-        for path in (self.REPO_PATH, os.path.join(self.REPO_PATH, "third_party", "Matcha-TTS")):
-            if path not in sys.path:
-                sys.path.insert(0, path)
-        from cosyvoice.cli.cosyvoice import CosyVoice2
-        from huggingface_hub import snapshot_download
-
-        from .config import HF_TOKEN
-
-        model_dir = snapshot_download(self.model_id, token=HF_TOKEN or None)
-        self.model = CosyVoice2(model_dir, load_jit=False, load_trt=False, fp16=True)
-        self.SAMPLE_RATE = getattr(self.model, "sample_rate", self.SAMPLE_RATE)
-        self._loaded = True
-        logger.info("Loaded CosyVoice2: %s", self.model_id)
-
-    def _ensure_reference(self, lang):
-        """Return (wav_path, ref_text), minting the clip with Khaya once.
-
-        CosyVoice loads the prompt itself (torchaudio.load, resampling as
-        needed), so this hands over a path rather than a waveform.
-        """
-        if self.ref_wav is not None:
-            return self.ref_wav, self.ref_text
-
-        ref_text = _knob(self.meta, "REFERENCE_TEXT") or self.meta.get("reference_text")
-        if not ref_text:
-            raise ValueError(f"{self.model_id}: no REFERENCE_TEXT in its recipe")
-
-        cache_dir = Path(_cache_root()) / "nsanku-refs"
-        cache_dir.mkdir(parents=True, exist_ok=True)
-        path = cache_dir / f"{self.model_id.replace('/', '__')}.wav"
-        if not path.exists():
-            logger.info("Minting CosyVoice reference for %s via Khaya (%s)", self.model_id, lang)
-            path.write_bytes(KhayaTTSWrapper().synthesize(ref_text, lang=lang))
-
-        self.ref_wav, self.ref_text = str(path), ref_text
-        return self.ref_wav, self.ref_text
-
-    def synthesize(self, text, lang="twi"):
-        self._ensure_loaded()
-        prompt_wav, prompt_text = self._ensure_reference(lang)
-
-        chunks = [
-            out["tts_speech"]
-            for out in self.model.inference_zero_shot(
-                tts_text=text,
-                prompt_text=prompt_text,
-                # Upstream renamed this from prompt_speech_16k; the model
-                # card's example predates the change.
-                prompt_wav=prompt_wav,
-                speed=_knob(self.meta, "SPEED", 1.0),
-                stream=False,
-            )
-        ]
-        if not chunks:
-            raise RuntimeError("CosyVoice2 returned no audio")
-
-        import torch
-
-        audio = torch.cat(chunks, dim=-1).squeeze().cpu().numpy()
-        return _wav_bytes(audio, sample_rate=self.SAMPLE_RATE)
-
-
-class CoquiVITSWrapper(BaseTTSModel):
-    """Coqui-TTS VITS checkpoints (multilingual-tts OpenBible voices).
-
-    The repo ships a raw training checkpoint — config.json, model_last.pth and
-    a speakers file — rather than anything loadable by name, so it is driven
-    through Coqui's Synthesizer directly.
-    """
-
-    SAMPLE_RATE = 22050
-
-    def __init__(self, model_id, device="cuda", meta=None, **kwargs):
-        super().__init__(model_id, device)
-        self.model = None
-        self._loaded = False
-        self.meta = meta or {}
-
-    def _ensure_loaded(self):
-        if self._loaded:
-            return
-        from huggingface_hub import snapshot_download
-        from TTS.utils.synthesizer import Synthesizer
-
-        from .config import HF_TOKEN
-
-        repo = Path(snapshot_download(
-            self.model_id,
-            allow_patterns=["*.json", "*.pth"],
-            token=HF_TOKEN or None,
-        ))
-        checkpoint = next(iter(sorted(repo.glob("model*.pth"))), None)
-        if checkpoint is None:
-            raise FileNotFoundError(f"{self.model_id}: no model*.pth checkpoint")
-        speakers = repo / "speakers.pth"
-
-        self.model = Synthesizer(
-            tts_checkpoint=str(checkpoint),
-            tts_config_path=str(repo / "config.json"),
-            tts_speakers_file=str(speakers) if speakers.exists() else None,
-            use_cuda=self.device.startswith("cuda"),
-        )
-        self.SAMPLE_RATE = getattr(self.model, "output_sample_rate", self.SAMPLE_RATE)
-        self._loaded = True
-        logger.info("Loaded Coqui VITS: %s", self.model_id)
-
-    def synthesize(self, text, lang="twi"):
-        self._ensure_loaded()
-        kwargs = {}
-        speaker = _knob(self.meta, "SPEAKER")
-        if speaker:
-            kwargs["speaker_name"] = speaker
-        elif getattr(self.model.tts_model, "num_speakers", 0) > 1:
-            # A multi-speaker checkpoint refuses to synthesise without one.
-            names = list(getattr(self.model.tts_model.speaker_manager, "name_to_id", {}))
-            if names:
-                kwargs["speaker_name"] = names[0]
-        wav = self.model.tts(text, **kwargs)
-        return _wav_bytes(np.asarray(wav, dtype=np.float32), sample_rate=self.SAMPLE_RATE)
 
 
 class StableTwiWrapper(BaseTTSModel):

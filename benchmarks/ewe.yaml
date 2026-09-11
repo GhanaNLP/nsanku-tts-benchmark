@@ -93,24 +93,3 @@ benchmarks:
   sample_category: education
   sample_clip: '00005'
   source: evaluated
-- model: ghananlpcommunity/F5-TTS-OpenBible-Ewe
-  model_url: https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Ewe
-  owner: ghananlpcommunity
-  architecture: F5-TTS (DiT + Vocos)
-  model_class: non-llm
-  params: 0.3B
-  cer: 0.3972
-  wer: 0.6337
-  score: 0.3972
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.6337
-      cer: 0.3972
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.69
-  sample_category: education
-  sample_clip: '00005'
-  source: evaluated
