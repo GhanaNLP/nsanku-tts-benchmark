@@ -131,10 +131,14 @@ def phonemize(text, iso, meta):
 
     language = _knob(meta, "G2P_LANGUAGE") or ISO_TO_NAME.get(iso, iso)
     separator = _knob(meta, "G2P_SEPARATOR", " ")
+    # ghana-g2p strips punctuation by default, but a model trained with
+    # punctuation kept as standalone tokens needs it: drop it and the model
+    # sees a convention it never learned, with nothing to pause on.
+    punctuation = _knob(meta, "G2P_PUNCTUATION", True)
     cache = meta.setdefault("_g2p_cache", {})
     if language not in cache:
         cache[language] = GhanaG2P(language)
-    return cache[language].ipa(text, sep=separator)
+    return cache[language].ipa(text, sep=separator, punctuation=punctuation)
 
 
 class UnsupportedModel(Exception):

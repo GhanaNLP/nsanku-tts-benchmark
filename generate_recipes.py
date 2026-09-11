@@ -55,8 +55,9 @@ BLURBS = {
     "ipa_voxcpm": "This model reads IPA, not orthography, so the sentence is phonemised\n"
                   "first. G2P_LANGUAGE is the ghana-g2p language used for that, and\n"
                   "G2P_SEPARATOR what goes between phonemes — this model was trained on\n"
-                  "space-separated IPA. CFG_VALUE and INFERENCE_TIMESTEPS are the usual\n"
-                  "VoxCPM guidance and step knobs.",
+                  "space-separated IPA with punctuation kept as standalone tokens, which is\n"
+                  "what G2P_PUNCTUATION preserves. CFG_VALUE and INFERENCE_TIMESTEPS are\n"
+                  "the usual VoxCPM guidance and step knobs.",
     "ipa": "This model reads IPA, not orthography, so the sentence is phonemised\n"
            "first. G2P_LANGUAGE is the ghana-g2p language used for that, and\n"
            "G2P_SEPARATOR what goes between phonemes.",
@@ -83,8 +84,9 @@ BODIES = {
     "piper": "VOICE = 'twi-6'\nSYNTH_LANGUAGE = 'twi'\nLENGTH_SCALE = 1.0\n"
              "NOISE_SCALE = 0.667\nNOISE_W = 0.8\n",
     "ipa_voxcpm": "G2P_LANGUAGE = {g2p_language!r}\nG2P_SEPARATOR = ' '\n"
+                  "G2P_PUNCTUATION = True\n"
                   "CFG_VALUE = 2.0\nINFERENCE_TIMESTEPS = 10\nRETRY_BADCASE = True\n",
-    "ipa": "G2P_LANGUAGE = {g2p_language!r}\nG2P_SEPARATOR = ' '\n",
+    "ipa": "G2P_LANGUAGE = {g2p_language!r}\nG2P_SEPARATOR = ' '\nG2P_PUNCTUATION = True\n",
     "khaya": "LANGUAGE_CODE = {lang_code!r}\nSPEAKER_ID = None\n",
     "voxcpm": "CFG_VALUE = 2.0\nINFERENCE_TIMESTEPS = 10\nRETRY_BADCASE = True\n",
     "voxcpm2": "CFG_VALUE = 2.0\nINFERENCE_TIMESTEPS = 15\nRETRY_BADCASE = False\nMAX_LEN = None\n",

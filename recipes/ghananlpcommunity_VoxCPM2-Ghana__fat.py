@@ -7,8 +7,9 @@ recipe file, so changing this one does not affect any other.
 This model reads IPA, not orthography, so the sentence is phonemised
 first. G2P_LANGUAGE is the ghana-g2p language used for that, and
 G2P_SEPARATOR what goes between phonemes — this model was trained on
-space-separated IPA. CFG_VALUE and INFERENCE_TIMESTEPS are the usual
-VoxCPM guidance and step knobs.
+space-separated IPA with punctuation kept as standalone tokens, which is
+what G2P_PUNCTUATION preserves. CFG_VALUE and INFERENCE_TIMESTEPS are
+the usual VoxCPM guidance and step knobs.
 
 Edit this file and open a pull request at
 https://github.com/GhanaNLP/nsanku-tts-benchmark to change how Fante is
@@ -18,6 +19,7 @@ synthesised with this model on the next benchmark run.
 
 G2P_LANGUAGE = 'Fante'
 G2P_SEPARATOR = ' '
+G2P_PUNCTUATION = True
 CFG_VALUE = 2.0
 INFERENCE_TIMESTEPS = 10
 RETRY_BADCASE = True
