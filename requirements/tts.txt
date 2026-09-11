@@ -15,3 +15,5 @@ f5-tts==1.0.3
 sherpa-onnx
 # IPA models (VoxCPM2-Ghana) are phonemised with the G2P they were trained on.
 ghana-g2p
+# Piper VITS voice with its own phonemiser and voice registry.
+stable-twi-tts[twi]

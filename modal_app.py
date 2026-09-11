@@ -73,6 +73,7 @@ tts_image = _with_repo(
     .pip_install("sherpa-onnx")
     # IPA models are phonemised with the G2P they were trained on.
     .pip_install("ghana-g2p")
+    .pip_install("stable-twi-tts[twi]")
     # Base image locale is POSIX → Python defaults to ascii for text IO,
     # which breaks reading the Twi/Ewe YAML results.
     .env({"PYTHONUTF8": "1", "LANG": "C.UTF-8", "LC_ALL": "C.UTF-8"})

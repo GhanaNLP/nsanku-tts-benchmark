@@ -89,6 +89,8 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
         return CosyVoice2Wrapper(model_id, device=device, meta=meta, **kwargs)
     if "f5-tts" in lower and "openbible" in lower:
         return F5TTSWrapper(model_id, device=device, meta=meta, **kwargs)
+    if meta.get("runner") == "stable-twi-tts" or "stable-twi-tts" in lower:
+        return StableTwiWrapper(model_id, device=device, meta=meta, **kwargs)
     if "nano-twi" in lower:
         return NanoTwiWrapper(model_id, device=device, meta=meta, **kwargs)
     if lower.startswith("khaya") or "khaya" in lower:
@@ -493,6 +495,53 @@ class CosyVoice2Wrapper(BaseTTSModel):
 
         audio = torch.cat(chunks, dim=-1).squeeze().cpu().numpy()
         return _wav_bytes(audio, sample_rate=self.SAMPLE_RATE)
+
+
+class StableTwiWrapper(BaseTTSModel):
+    """ghananlpcommunity/stable-twi-tts — Piper VITS, ONNX, CPU.
+
+    IPA-driven, but it phonemises internally, so it takes orthographic text.
+    Twelve voices are exposed and they disagree sharply about what is best:
+    the strongest code-switching voice is 21st of 30 on pure Twi, so the voice
+    is a per-language recipe knob rather than a fixed default.
+    """
+
+    SAMPLE_RATE = 22050
+
+    def __init__(self, model_id, device="cuda", meta=None, **kwargs):
+        super().__init__(model_id, "cpu")  # ONNX, CPU
+        self.model = None
+        self._loaded = False
+        self.meta = meta or {}
+
+    def _ensure_loaded(self):
+        if self._loaded:
+            return
+        from huggingface_hub import snapshot_download
+        from stable_twi_tts import StableTwiTTS
+
+        from .config import HF_TOKEN
+
+        model_dir = snapshot_download(
+            self.model_id,
+            allow_patterns=["*.onnx", "*.json", "tokens.txt"],
+            token=HF_TOKEN or None,
+        )
+        self.model = StableTwiTTS(model_dir)
+        self._loaded = True
+        logger.info("Loaded stable-twi-tts: %s", self.model_id)
+
+    def synthesize(self, text, lang="twi"):
+        self._ensure_loaded()
+        out = self.model.synthesize(
+            text,
+            voice=_knob(self.meta, "VOICE", "twi-6"),
+            language=_knob(self.meta, "SYNTH_LANGUAGE", "twi"),
+            length_scale=_knob(self.meta, "LENGTH_SCALE", 1.0),
+            noise_scale=_knob(self.meta, "NOISE_SCALE", 0.667),
+            noise_w=_knob(self.meta, "NOISE_W", 0.8),
+        )
+        return _wav_bytes(out.audio, sample_rate=out.sample_rate or self.SAMPLE_RATE)
 
 
 class NanoTwiWrapper(BaseTTSModel):

@@ -44,6 +44,11 @@ HOOK = '''
 '''
 
 BLURBS = {
+    "piper": "VOICE picks one of the 12 exposed Piper voices. The model card's own\n"
+             "measurements rank them differently for pure Twi (twi-6 best) and for\n"
+             "code-switched text (twi-1 best, but 21st of 30 on pure Twi), so the\n"
+             "right voice depends on what this language's sentences look like.\n"
+             "LENGTH_SCALE above 1.0 slows the speech down.",
     "ipa_voxcpm": "This model reads IPA, not orthography, so the sentence is phonemised\n"
                   "first. G2P_LANGUAGE is the ghana-g2p language used for that, and\n"
                   "G2P_SEPARATOR what goes between phonemes — this model was trained on\n"
@@ -71,6 +76,8 @@ BLURBS = {
 }
 
 BODIES = {
+    "piper": "VOICE = 'twi-6'\nSYNTH_LANGUAGE = 'twi'\nLENGTH_SCALE = 1.0\n"
+             "NOISE_SCALE = 0.667\nNOISE_W = 0.8\n",
     "ipa_voxcpm": "G2P_LANGUAGE = {g2p_language!r}\nG2P_SEPARATOR = ' '\n"
                   "CFG_VALUE = 2.0\nINFERENCE_TIMESTEPS = 10\nRETRY_BADCASE = True\n",
     "ipa": "G2P_LANGUAGE = {g2p_language!r}\nG2P_SEPARATOR = ' '\n",
@@ -85,6 +92,8 @@ BODIES = {
 
 def kind_for(model_id, meta):
     lower = model_id.lower()
+    if meta.get("runner") == "stable-twi-tts":
+        return "piper"
     if meta.get("input_type") == "ipa":
         return "ipa_voxcpm" if "voxcpm" in lower else "ipa"
     if meta.get("runner") == "cosyvoice" or "cosyvoice" in lower:

@@ -124,6 +124,19 @@
     "notes": "42 Ghanaian languages, trained on IPA; text is phonemised with ghana-g2p before synthesis"
   },
   {
+    "name": "ghananlpcommunity/stable-twi-tts",
+    "architecture": "Piper VITS (ONNX)",
+    "languages": ["twi_akuapem", "twi_asante"],
+    "input_type": "orthographic",
+    "runner": "stable-twi-tts",
+    "model_class": "non-llm",
+    "params": "0.03B",
+    "sample_rate": 22050,
+    "license": "cc-by-nc-4.0",
+    "url": "https://huggingface.co/ghananlpcommunity/stable-twi-tts",
+    "notes": "IPA-driven Piper voice that phonemises internally; 12 voices, picked per language in the recipe"
+  },
+  {
     "name": "KhayaAI/khaya-tts-v2",
     "model_class": "api",
     "params": "API",
