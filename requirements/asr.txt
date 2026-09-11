@@ -1,0 +1,15 @@
+# Judge environment — kept in step with modal_app.py's asr_image.
+# fairseq2 pins torch 2.8, which is why the judges cannot share the synthesis
+# environment (voxcpm/f5-tts need torch 2.5).
+torch==2.8.0
+torchaudio==2.8.0
+fairseq2==0.6
+omnilingual-asr==0.2.0
+datasets==3.6.0
+huggingface_hub
+numpy
+pyyaml
+requests
+safetensors
+soundfile
+tokenizers

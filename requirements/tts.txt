@@ -1,0 +1,17 @@
+# Synthesis environment — kept in step with modal_app.py's tts_image.
+# System packages the wrappers need: ffmpeg (F5's pydub), espeak-ng-data
+# (nano-twi ships a slimmed copy missing en_dict).
+torch==2.5.1
+torchaudio==2.5.1
+transformers==4.57.2
+datasets==3.6.0
+huggingface_hub==0.36.2
+numpy
+pyyaml
+requests
+soundfile
+voxcpm==2.0.3
+f5-tts==1.0.3
+sherpa-onnx
+# IPA models (VoxCPM2-Ghana) are phonemised with the G2P they were trained on.
+ghana-g2p
