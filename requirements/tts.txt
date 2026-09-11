@@ -17,3 +17,5 @@ sherpa-onnx
 ghana-g2p
 # Piper VITS voice with its own phonemiser and voice registry.
 stable-twi-tts[twi]
+# Coqui VITS checkpoints (multilingual-tts OpenBible voices).
+coqui-tts

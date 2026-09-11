@@ -44,6 +44,9 @@ HOOK = '''
 '''
 
 BLURBS = {
+    "coqui": "SPEAKER picks a voice from the checkpoint's speaker file; left as None\n"
+             "the first speaker is used, which is what a multi-speaker VITS needs to\n"
+             "synthesise at all.",
     "piper": "VOICE picks one of the 12 exposed Piper voices. The model card's own\n"
              "measurements rank them differently for pure Twi (twi-6 best) and for\n"
              "code-switched text (twi-1 best, but 21st of 30 on pure Twi), so the\n"
@@ -76,6 +79,7 @@ BLURBS = {
 }
 
 BODIES = {
+    "coqui": "SPEAKER = None\n",
     "piper": "VOICE = 'twi-6'\nSYNTH_LANGUAGE = 'twi'\nLENGTH_SCALE = 1.0\n"
              "NOISE_SCALE = 0.667\nNOISE_W = 0.8\n",
     "ipa_voxcpm": "G2P_LANGUAGE = {g2p_language!r}\nG2P_SEPARATOR = ' '\n"
@@ -92,6 +96,8 @@ BODIES = {
 
 def kind_for(model_id, meta):
     lower = model_id.lower()
+    if meta.get("runner") == "coqui-vits":
+        return "coqui"
     if meta.get("runner") == "stable-twi-tts":
         return "piper"
     if meta.get("input_type") == "ipa":

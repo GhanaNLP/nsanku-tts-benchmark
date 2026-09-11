@@ -137,6 +137,45 @@
     "notes": "IPA-driven Piper voice that phonemises internally; 12 voices, picked per language in the recipe"
   },
   {
+    "name": "multilingual-tts/VITS-OpenBible-Twi-Asante",
+    "architecture": "VITS (Coqui)",
+    "languages": ["twi_asante"],
+    "input_type": "orthographic",
+    "runner": "coqui-vits",
+    "model_class": "non-llm",
+    "params": "0.08B",
+    "sample_rate": 22050,
+    "license": "cc-by-sa-4.0",
+    "url": "https://huggingface.co/multilingual-tts/VITS-OpenBible-Twi-Asante",
+    "notes": "Asante Twi VITS trained on the Open Bible corpus"
+  },
+  {
+    "name": "multilingual-tts/VITS-OpenBible-Twi-Akuapem",
+    "architecture": "VITS (Coqui)",
+    "languages": ["twi_akuapem"],
+    "input_type": "orthographic",
+    "runner": "coqui-vits",
+    "model_class": "non-llm",
+    "params": "0.08B",
+    "sample_rate": 22050,
+    "license": "cc-by-sa-4.0",
+    "url": "https://huggingface.co/multilingual-tts/VITS-OpenBible-Twi-Akuapem",
+    "notes": "Akuapem Twi VITS trained on the Open Bible corpus"
+  },
+  {
+    "name": "multilingual-tts/VITS-OpenBible-Ewe",
+    "architecture": "VITS (Coqui)",
+    "languages": ["ewe"],
+    "input_type": "orthographic",
+    "runner": "coqui-vits",
+    "model_class": "non-llm",
+    "params": "0.08B",
+    "sample_rate": 22050,
+    "license": "cc-by-sa-4.0",
+    "url": "https://huggingface.co/multilingual-tts/VITS-OpenBible-Ewe",
+    "notes": "Ewe VITS trained on the Open Bible corpus"
+  },
+  {
     "name": "KhayaAI/khaya-tts-v2",
     "model_class": "api",
     "params": "API",

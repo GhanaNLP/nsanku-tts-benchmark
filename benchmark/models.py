@@ -89,6 +89,8 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
         return CosyVoice2Wrapper(model_id, device=device, meta=meta, **kwargs)
     if "f5-tts" in lower and "openbible" in lower:
         return F5TTSWrapper(model_id, device=device, meta=meta, **kwargs)
+    if meta.get("runner") == "coqui-vits":
+        return CoquiVITSWrapper(model_id, device=device, meta=meta, **kwargs)
     if meta.get("runner") == "stable-twi-tts" or "stable-twi-tts" in lower:
         return StableTwiWrapper(model_id, device=device, meta=meta, **kwargs)
     if "nano-twi" in lower:
@@ -495,6 +497,65 @@ class CosyVoice2Wrapper(BaseTTSModel):
 
         audio = torch.cat(chunks, dim=-1).squeeze().cpu().numpy()
         return _wav_bytes(audio, sample_rate=self.SAMPLE_RATE)
+
+
+class CoquiVITSWrapper(BaseTTSModel):
+    """Coqui-TTS VITS checkpoints (multilingual-tts OpenBible voices).
+
+    The repo ships a raw training checkpoint — config.json, model_last.pth and
+    a speakers file — rather than anything loadable by name, so it is driven
+    through Coqui's Synthesizer directly.
+    """
+
+    SAMPLE_RATE = 22050
+
+    def __init__(self, model_id, device="cuda", meta=None, **kwargs):
+        super().__init__(model_id, device)
+        self.model = None
+        self._loaded = False
+        self.meta = meta or {}
+
+    def _ensure_loaded(self):
+        if self._loaded:
+            return
+        from huggingface_hub import snapshot_download
+        from TTS.utils.synthesizer import Synthesizer
+
+        from .config import HF_TOKEN
+
+        repo = Path(snapshot_download(
+            self.model_id,
+            allow_patterns=["*.json", "*.pth"],
+            token=HF_TOKEN or None,
+        ))
+        checkpoint = next(iter(sorted(repo.glob("model*.pth"))), None)
+        if checkpoint is None:
+            raise FileNotFoundError(f"{self.model_id}: no model*.pth checkpoint")
+        speakers = repo / "speakers.pth"
+
+        self.model = Synthesizer(
+            tts_checkpoint=str(checkpoint),
+            tts_config_path=str(repo / "config.json"),
+            tts_speakers_file=str(speakers) if speakers.exists() else None,
+            use_cuda=self.device.startswith("cuda"),
+        )
+        self.SAMPLE_RATE = getattr(self.model, "output_sample_rate", self.SAMPLE_RATE)
+        self._loaded = True
+        logger.info("Loaded Coqui VITS: %s", self.model_id)
+
+    def synthesize(self, text, lang="twi"):
+        self._ensure_loaded()
+        kwargs = {}
+        speaker = _knob(self.meta, "SPEAKER")
+        if speaker:
+            kwargs["speaker_name"] = speaker
+        elif getattr(self.model.tts_model, "num_speakers", 0) > 1:
+            # A multi-speaker checkpoint refuses to synthesise without one.
+            names = list(getattr(self.model.tts_model.speaker_manager, "name_to_id", {}))
+            if names:
+                kwargs["speaker_name"] = names[0]
+        wav = self.model.tts(text, **kwargs)
+        return _wav_bytes(np.asarray(wav, dtype=np.float32), sample_rate=self.SAMPLE_RATE)
 
 
 class StableTwiWrapper(BaseTTSModel):
