@@ -141,6 +141,22 @@ class UnsupportedModel(Exception):
     pass
 
 
+def _local_snapshot(model_id, token=None):
+    """Download a model, skipping training-only files.
+
+    VoxCPM repos ship the optimizer state beside the weights — 18 GB of it for
+    VoxCPM2-Ghana — which inference never touches. from_pretrained would fetch
+    the whole repo, so the snapshot is taken here and the local path handed on.
+    """
+    from huggingface_hub import snapshot_download
+
+    return snapshot_download(
+        model_id,
+        ignore_patterns=["optimizer.pth", "optimizer*.pt", "*.ckpt", "samples/*"],
+        token=token or None,
+    )
+
+
 class BaseTTSModel(abc.ABC):
     """Abstract base for TTS model wrappers."""
 
@@ -218,7 +234,11 @@ class VoxCPMWrapper(BaseTTSModel):
             return
         from voxcpm import VoxCPM
 
-        self.model = VoxCPM.from_pretrained(self.model_id, device=self.device)
+        from .config import HF_TOKEN
+
+        self.model = VoxCPM.from_pretrained(
+            _local_snapshot(self.model_id, HF_TOKEN), device=self.device
+        )
 
         if self.meta.get("reference_audio"):
             ref_wav, ref_text = _reference_audio(self.meta, self.model_id)
@@ -272,8 +292,12 @@ class VoxCPM2Wrapper(BaseTTSModel):
             return
         from voxcpm import VoxCPM
 
+        from .config import HF_TOKEN
+
         self.model = VoxCPM.from_pretrained(
-            self.model_id, load_denoiser=False, device=self.device
+            _local_snapshot(self.model_id, HF_TOKEN),
+            load_denoiser=False,
+            device=self.device,
         )
         if self.meta.get("reference_audio"):
             from huggingface_hub import hf_hub_download
