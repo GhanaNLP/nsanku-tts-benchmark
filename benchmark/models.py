@@ -84,7 +84,8 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
     if "voxcpm2" in lower or meta.get("architecture", "").startswith("VoxCPM2"):
         return VoxCPM2Wrapper(model_id, device=device, subset=subset, meta=meta, **kwargs)
     if "ghana-tts" in lower:
-        return VoxCPMWrapper(model_id, device=device, subset=subset, meta=meta, **kwargs)
+        return VoxCPMWrapper(model_id, device=device, subset=subset, meta=meta,
+                             iso=iso, **kwargs)
     if meta.get("runner") == "cosyvoice" or "cosyvoice" in lower:
         return CosyVoice2Wrapper(model_id, device=device, meta=meta, **kwargs)
     if "f5-tts" in lower and "openbible" in lower:
@@ -161,6 +162,39 @@ def _local_snapshot(model_id, token=None):
     )
 
 
+def _manifest_prompt(model_id, iso, meta, token=None):
+    """Fetch the model's own reference clip for this language.
+
+    ghana-tts ships prompt_audio/manifest.json: three clips per language with
+    their transcripts. VoxCPM v1 is voice-prompted, and the prompt is how the
+    language is conveyed — without one the model is told nothing about what it
+    is reading.
+    """
+    import json
+
+    from huggingface_hub import hf_hub_download
+
+    key = _knob(meta, "PROMPT_LANGUAGE") or meta.get("prompt_language_map", {}).get(iso, iso)
+    index = _knob(meta, "PROMPT_INDEX", 0)
+    try:
+        path = hf_hub_download(model_id, "prompt_audio/manifest.json", token=token or None)
+        manifest = json.loads(Path(path).read_text(encoding="utf-8"))
+    except Exception as e:
+        logger.warning("%s: no prompt manifest (%s)", model_id, type(e).__name__)
+        return None, None
+
+    entries = manifest.get(key) or []
+    if not entries:
+        # The model ships no reference for this language, which usually means
+        # it does not claim to speak it.
+        logger.warning("%s: no prompt audio for %s (manifest key %r)", model_id, iso, key)
+        return None, None
+
+    entry = entries[min(index, len(entries) - 1)]
+    wav = hf_hub_download(model_id, f"prompt_audio/{entry['audio']}", token=token or None)
+    return wav, entry.get("text")
+
+
 class BaseTTSModel(abc.ABC):
     """Abstract base for TTS model wrappers."""
 
@@ -225,11 +259,12 @@ class VoxCPMWrapper(BaseTTSModel):
 
     SAMPLE_RATE = 16000
 
-    def __init__(self, model_id, device="cuda", subset=None, meta=None, **kwargs):
+    def __init__(self, model_id, device="cuda", subset=None, meta=None, iso=None, **kwargs):
         super().__init__(model_id, device)
         self.model = None
         self._loaded = False
         self.meta = meta or {}
+        self.iso = iso
         self.ref_wav = None
         self.ref_text = None
 
@@ -250,10 +285,14 @@ class VoxCPMWrapper(BaseTTSModel):
         )
 
         if self.meta.get("reference_audio"):
-            ref_wav, ref_text = _reference_audio(self.meta, self.model_id)
-            self.ref_wav, self.ref_text = ref_wav, ref_text
+            self.ref_wav, self.ref_text = _reference_audio(self.meta, self.model_id)
+        elif self.meta.get("prompt_audio") == "manifest":
+            self.ref_wav, self.ref_text = _manifest_prompt(
+                self.model_id, self.iso, self.meta, HF_TOKEN
+            )
         self._loaded = True
-        logger.info("Loaded VoxCPM v1: %s", self.model_id)
+        logger.info("Loaded VoxCPM v1: %s (prompt=%s)",
+                    self.model_id, bool(self.ref_wav))
 
     def _generate(self, text, lang):
         """Call model.generate handling the optional lang kwarg."""
