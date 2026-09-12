@@ -103,6 +103,8 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
         return OrpheusWrapper(model_id, device=device, meta=meta, iso=iso, **kwargs)
     if meta.get("runner") == "coqui-vits":
         return CoquiVITSWrapper(model_id, device=device, meta=meta, **kwargs)
+    if meta.get("runner") == "mms-tts" or lower.startswith("facebook/mms-tts"):
+        return MmsTTSWrapper(model_id, device=device, meta=meta, **kwargs)
     if meta.get("runner") == "stable-twi-tts" or "stable-twi-tts" in lower:
         return StableTwiWrapper(model_id, device=device, meta=meta, **kwargs)
     if "nano-twi" in lower:
@@ -674,6 +676,49 @@ class OrpheusWrapper(BaseTTSModel):
                 "(it has no language-conditioning input of its own)"
             )
         return self._synthesize(text, speaker_id)
+
+
+class MmsTTSWrapper(BaseTTSModel):
+    """facebook/mms-tts-* — Meta MMS per-language VITS checkpoints, 16 kHz.
+
+    Native to transformers (VitsModel): a char-level tokenizer and a single
+    speaker, so no recipe knobs are needed and text is read as spelled.
+    """
+
+    SAMPLE_RATE = 16000
+
+    def __init__(self, model_id, device="cuda", meta=None, **kwargs):
+        super().__init__(model_id, device)
+        self.model = None
+        self.tokenizer = None
+        self._loaded = False
+        self.meta = meta or {}
+
+    def _ensure_loaded(self):
+        if self._loaded:
+            return
+        import torch
+        from transformers import AutoTokenizer, VitsModel
+
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_id)
+        self.model = VitsModel.from_pretrained(self.model_id, torch_dtype=torch.float32)
+        self.model.to(self.device)
+        self.model.eval()
+        self._loaded = True
+        logger.info("Loaded MMS-TTS: %s", self.model_id)
+
+    def synthesize(self, text, lang="eng"):
+        self._ensure_loaded()
+        import torch
+
+        inputs = self.tokenizer(text, return_tensors="pt")
+        if self.device.startswith("cuda"):
+            inputs = {k: v.to(self.device) for k, v in inputs.items()}
+        with torch.no_grad():
+            wav = self.model(**inputs).waveform
+        wav = np.asarray(wav.detach().cpu().numpy().squeeze(), dtype=np.float32)
+        sr = getattr(self.model.config, "sampling_rate", None) or self.SAMPLE_RATE
+        return _wav_bytes(wav, sample_rate=sr)
 
 
 class CoquiVITSWrapper(BaseTTSModel):

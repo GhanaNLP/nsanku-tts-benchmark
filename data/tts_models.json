@@ -213,5 +213,33 @@
     "license": "apache-2.0",
     "url": "https://huggingface.co/Sunbird/orpheus-3b-tts-multilingual",
     "notes": "Multilingual Orpheus fine-tune on Sunbird/tts; Ewe voice slr129_ewe_0001."
+  },
+  {
+    "name": "facebook/mms-tts-aka",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": ["twi_asante", "twi_akuapem", "fat"],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": ["noref"],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-aka",
+    "notes": "Akan (macrolanguage: Twi + Fante); VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-ewe",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": ["ewe"],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": ["noref"],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-ewe",
+    "notes": "Ewe; VitsModel from transformers, single speaker."
   }
 ]
