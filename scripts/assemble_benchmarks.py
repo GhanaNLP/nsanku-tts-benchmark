@@ -58,6 +58,9 @@ def main():
             categories=[c["category"] for c in language_categories(iso)],
             num_samples_per_category=samples,
             judge={"model": spec["model"], "cer_on_real_speech": spec["judge_cer"]} if spec else None,
+            # The jobs produce a complete set for the language, so the file is
+            # rewritten rather than merged into.
+            replace=True,
         )
     print(f"\nassembled {len(files)} language file(s) into benchmarks/")
 

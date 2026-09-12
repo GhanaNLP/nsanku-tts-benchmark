@@ -9,24 +9,47 @@ judge:
   cer_on_real_speech: 0.1065
 updated: '2026-09-12'
 benchmarks:
-- model: FarmerlineML/voxcpm2-ewe-sft
+- model: FarmerlineML/voxcpm2-ewe-sft-noref
   model_url: https://huggingface.co/FarmerlineML/voxcpm2-ewe-sft
+  mode: noref
   owner: FarmerlineML
   architecture: VoxCPM2 (2B)
   model_class: non-llm
   params: 2B
-  cer: 0.0406
-  wer: 0.2975
-  score: 0.0406
+  cer: 0.0455
+  wer: 0.2929
+  score: 0.0455
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.2975
-      cer: 0.0406
+      wer: 0.2929
+      cer: 0.0455
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 0.47
+  source: evaluated
+  sample_category: education
+  sample_clip: '00005'
+- model: FarmerlineML/voxcpm2-ewe-sft-ref
+  model_url: https://huggingface.co/FarmerlineML/voxcpm2-ewe-sft
+  mode: ref
+  owner: FarmerlineML
+  architecture: VoxCPM2 (2B)
+  model_class: non-llm
+  params: 2B
+  cer: 0.0456
+  wer: 0.2989
+  score: 0.0456
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.2989
+      cer: 0.0456
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.59
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
@@ -34,110 +57,159 @@ benchmarks:
   sample_clip: '00005'
 - model: multilingual-tts/VITS-OpenBible-Ewe
   model_url: https://huggingface.co/multilingual-tts/VITS-OpenBible-Ewe
+  mode: noref
   owner: multilingual-tts
   architecture: VITS (Coqui)
   model_class: non-llm
   params: 0.08B
-  cer: 0.057
-  wer: 0.306
-  score: 0.057
+  cer: 0.0615
+  wer: 0.3224
+  score: 0.0615
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.306
-      cer: 0.057
+      wer: 0.3224
+      cer: 0.0615
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.49
+      avg_seconds_per_sample: 0.48
   source: evaluated
   sample_category: education
   sample_clip: '00005'
 - model: KhayaAI/khaya-tts-v2
   model_url: https://translation.ghananlp.org
+  mode: noref
   owner: KhayaAI
   architecture: Khaya AI TTS v2 API
   model_class: api
   params: API
-  cer: 0.067
-  wer: 0.311
-  score: 0.067
+  cer: 0.0651
+  wer: 0.323
+  score: 0.0651
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.311
-      cer: 0.067
+      wer: 0.323
+      cer: 0.0651
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 0.4
   source: evaluated
   sample_category: education
   sample_clip: '00005'
-- model: ghananlpcommunity/ghana-tts-36k
-  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
-  owner: ghananlpcommunity
-  architecture: VoxCPM v1 (0.7B)
-  model_class: non-llm
-  params: 0.7B
-  cer: 0.1598
-  wer: 0.6481
-  score: 0.1598
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.6481
-      cer: 0.1598
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  prompted: true
-  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
-  sample_category: education
-  sample_clip: '00005'
-- model: ghananlpcommunity/ghana-tts-72k
+- model: ghananlpcommunity/ghana-tts-72k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: ref
   owner: ghananlpcommunity
   architecture: VoxCPM v1 (0.7B)
   model_class: non-llm
   params: 0.7B
-  cer: 0.1843
-  wer: 0.6592
-  score: 0.1843
+  cer: 0.068
+  wer: 0.3198
+  score: 0.068
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.6592
-      cer: 0.1843
+      wer: 0.3198
+      cer: 0.068
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 0.48
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
+  sample_category: education
+  sample_clip: '00005'
+- model: ghananlpcommunity/ghana-tts-36k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: ref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.0684
+  wer: 0.3394
+  score: 0.0684
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.3394
+      cer: 0.0684
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.5
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
+  sample_category: education
+  sample_clip: '00005'
+- model: ghananlpcommunity/ghana-tts-36k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1633
+  wer: 0.6671
+  score: 0.1633
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6671
+      cer: 0.1633
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.52
+  source: evaluated
+  sample_category: education
+  sample_clip: '00005'
+- model: ghananlpcommunity/ghana-tts-72k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1811
+  wer: 0.6725
+  score: 0.1811
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6725
+      cer: 0.1811
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.58
+  source: evaluated
   sample_category: education
   sample_clip: '00005'
 - model: ghananlpcommunity/F5-TTS-OpenBible-Ewe
   model_url: https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Ewe
+  mode: ref
   owner: ghananlpcommunity
   architecture: F5-TTS (DiT + Vocos)
   model_class: non-llm
   params: 0.3B
-  cer: 0.3972
-  wer: 0.6337
-  score: 0.3972
+  cer: 0.3228
+  wer: 0.6452
+  score: 0.3228
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.6337
-      cer: 0.3972
+      wer: 0.6452
+      cer: 0.3228
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 0.42
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe

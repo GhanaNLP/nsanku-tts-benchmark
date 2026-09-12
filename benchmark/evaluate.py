@@ -166,7 +166,7 @@ def load_transcriptions(iso, category, model_id):
 
 
 def save_benchmark(iso_code, language, results, categories=None,
-                   num_samples_per_category=None, judge=None):
+                   num_samples_per_category=None, judge=None, replace=False):
     """Merge results into benchmarks/{iso}.yaml, ranked by CER (lower first).
 
     The file is a summary — per-sample references and hypotheses live in
@@ -180,7 +180,10 @@ def save_benchmark(iso_code, language, results, categories=None,
         with open(path, encoding="utf-8") as f:
             existing = yaml.safe_load(f) or {}
 
-    merged = {r["model"]: r for r in existing.get("benchmarks", [])}
+    # replace=True drops rows for models that are no longer evaluated —
+    # otherwise a renamed model (ghana-tts-36k -> -ref/-noref) leaves its old
+    # row behind, and the board shows a result nothing produced any more.
+    merged = {} if replace else {r["model"]: r for r in existing.get("benchmarks", [])}
     for r in results:
         merged[r["model"]] = r
 

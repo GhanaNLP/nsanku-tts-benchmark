@@ -11,66 +11,113 @@ updated: '2026-09-12'
 benchmarks:
 - model: KhayaAI/khaya-tts-v2
   model_url: https://translation.ghananlp.org
+  mode: noref
   owner: KhayaAI
   architecture: Khaya AI TTS v2 API
   model_class: api
   params: API
-  cer: 0.0922
-  wer: 0.3919
-  score: 0.0922
+  cer: 0.0911
+  wer: 0.384
+  score: 0.0911
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.3919
-      cer: 0.0922
+      wer: 0.384
+      cer: 0.0911
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 3.33
   source: evaluated
   sample_category: education
   sample_clip: '00003'
-- model: ghananlpcommunity/ghana-tts-36k
-  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+- model: ghananlpcommunity/ghana-tts-72k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: ref
   owner: ghananlpcommunity
   architecture: VoxCPM v1 (0.7B)
   model_class: non-llm
   params: 0.7B
-  cer: 0.1349
-  wer: 0.4906
-  score: 0.1349
+  cer: 0.097
+  wer: 0.3991
+  score: 0.097
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.4906
-      cer: 0.1349
+      wer: 0.3991
+      cer: 0.097
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 4.51
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Kasem_xsm
   sample_category: education
   sample_clip: '00003'
-- model: ghananlpcommunity/ghana-tts-72k
-  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+- model: ghananlpcommunity/ghana-tts-36k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: noref
   owner: ghananlpcommunity
   architecture: VoxCPM v1 (0.7B)
   model_class: non-llm
   params: 0.7B
-  cer: 0.1517
-  wer: 0.5007
-  score: 0.1517
+  cer: 0.1331
+  wer: 0.469
+  score: 0.1331
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.5007
-      cer: 0.1517
+      wer: 0.469
+      cer: 0.1331
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 4.55
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: ghananlpcommunity/ghana-tts-72k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1819
+  wer: 0.5409
+  score: 0.1819
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.5409
+      cer: 0.1819
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 4.53
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: ghananlpcommunity/ghana-tts-36k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: ref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.2233
+  wer: 0.4043
+  score: 0.2233
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.4043
+      cer: 0.2233
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 4.59
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Kasem_xsm

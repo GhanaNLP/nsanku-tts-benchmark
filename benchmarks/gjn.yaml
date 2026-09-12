@@ -9,70 +9,117 @@ judge:
   cer_on_real_speech: 0.0425
 updated: '2026-09-12'
 benchmarks:
-- model: ghananlpcommunity/ghana-tts-36k
-  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
-  owner: ghananlpcommunity
-  architecture: VoxCPM v1 (0.7B)
-  model_class: non-llm
-  params: 0.7B
-  cer: 0.2061
-  wer: 0.7669
-  score: 0.2061
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.7669
-      cer: 0.2061
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  prompted: true
-  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Gonja_gjn
-  sample_category: education
-  sample_clip: '00016'
-- model: ghananlpcommunity/ghana-tts-72k
-  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
-  owner: ghananlpcommunity
-  architecture: VoxCPM v1 (0.7B)
-  model_class: non-llm
-  params: 0.7B
-  cer: 0.2069
-  wer: 0.7615
-  score: 0.2069
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.7615
-      cer: 0.2069
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  prompted: true
-  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Gonja_gjn
-  sample_category: education
-  sample_clip: '00016'
 - model: KhayaAI/khaya-tts-v2
   model_url: https://translation.ghananlp.org
+  mode: noref
   owner: KhayaAI
   architecture: Khaya AI TTS v2 API
   model_class: api
   params: API
-  cer: 0.3226
-  wer: 0.5779
-  score: 0.3226
+  cer: 0.0848
+  wer: 0.5579
+  score: 0.0848
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.5779
-      cer: 0.3226
+      wer: 0.5579
+      cer: 0.0848
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 4.4
+  source: evaluated
+  sample_category: education
+  sample_clip: '00016'
+- model: ghananlpcommunity/ghana-tts-36k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: ref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1098
+  wer: 0.6606
+  score: 0.1098
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6606
+      cer: 0.1098
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 4.62
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Gonja_gjn
+  sample_category: education
+  sample_clip: '00016'
+- model: ghananlpcommunity/ghana-tts-72k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: ref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1236
+  wer: 0.6779
+  score: 0.1236
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6779
+      cer: 0.1236
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 4.15
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Gonja_gjn
+  sample_category: education
+  sample_clip: '00016'
+- model: ghananlpcommunity/ghana-tts-36k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1981
+  wer: 0.759
+  score: 0.1981
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.759
+      cer: 0.1981
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 4.69
+  source: evaluated
+  sample_category: education
+  sample_clip: '00016'
+- model: ghananlpcommunity/ghana-tts-72k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.2454
+  wer: 0.8
+  score: 0.2454
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.8
+      cer: 0.2454
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 4.67
   source: evaluated
   sample_category: education
   sample_clip: '00016'

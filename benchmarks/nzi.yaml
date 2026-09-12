@@ -9,70 +9,117 @@ judge:
   cer_on_real_speech: 0.1417
 updated: '2026-09-12'
 benchmarks:
-- model: ghananlpcommunity/ghana-tts-36k
-  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+- model: ghananlpcommunity/ghana-tts-72k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: ref
   owner: ghananlpcommunity
   architecture: VoxCPM v1 (0.7B)
   model_class: non-llm
   params: 0.7B
-  cer: 0.1325
-  wer: 0.6504
-  score: 0.1325
+  cer: 0.1048
+  wer: 0.491
+  score: 0.1048
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.6504
-      cer: 0.1325
+      wer: 0.491
+      cer: 0.1048
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 0.37
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Nzema_nzi
   sample_category: education
   sample_clip: '00007'
-- model: ghananlpcommunity/ghana-tts-72k
-  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+- model: ghananlpcommunity/ghana-tts-36k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: ref
   owner: ghananlpcommunity
   architecture: VoxCPM v1 (0.7B)
   model_class: non-llm
   params: 0.7B
-  cer: 0.1381
-  wer: 0.6555
-  score: 0.1381
+  cer: 0.1077
+  wer: 0.4742
+  score: 0.1077
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.6555
-      cer: 0.1381
+      wer: 0.4742
+      cer: 0.1077
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 0.35
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Nzema_nzi
+  sample_category: education
+  sample_clip: '00007'
+- model: ghananlpcommunity/ghana-tts-36k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.129
+  wer: 0.6409
+  score: 0.129
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6409
+      cer: 0.129
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.45
+  source: evaluated
+  sample_category: education
+  sample_clip: '00007'
+- model: ghananlpcommunity/ghana-tts-72k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1723
+  wer: 0.6662
+  score: 0.1723
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6662
+      cer: 0.1723
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.49
+  source: evaluated
   sample_category: education
   sample_clip: '00007'
 - model: KhayaAI/khaya-tts-v2
   model_url: https://translation.ghananlp.org
+  mode: noref
   owner: KhayaAI
   architecture: Khaya AI TTS v2 API
   model_class: api
   params: API
-  cer: 0.3097
-  wer: 0.6436
-  score: 0.3097
+  cer: 0.3226
+  wer: 0.6619
+  score: 0.3226
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.6436
-      cer: 0.3097
+      wer: 0.6619
+      cer: 0.3226
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 0.6
   source: evaluated
   sample_category: education
   sample_clip: '00007'

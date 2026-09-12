@@ -11,68 +11,115 @@ updated: '2026-09-12'
 benchmarks:
 - model: KhayaAI/khaya-tts-v2
   model_url: https://translation.ghananlp.org
+  mode: noref
   owner: KhayaAI
   architecture: Khaya AI TTS v2 API
   model_class: api
   params: API
-  cer: 0.0695
-  wer: 0.2901
-  score: 0.0695
+  cer: 0.0656
+  wer: 0.2656
+  score: 0.0656
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.2901
-      cer: 0.0695
+      wer: 0.2656
+      cer: 0.0656
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 4.51
   source: evaluated
   sample_category: education
   sample_clip: '00013'
-- model: ghananlpcommunity/ghana-tts-72k
-  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
-  owner: ghananlpcommunity
-  architecture: VoxCPM v1 (0.7B)
-  model_class: non-llm
-  params: 0.7B
-  cer: 0.177
-  wer: 0.4727
-  score: 0.177
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.4727
-      cer: 0.177
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  prompted: true
-  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Fante_fat
-  sample_category: education
-  sample_clip: '00013'
-- model: ghananlpcommunity/ghana-tts-36k
+- model: ghananlpcommunity/ghana-tts-36k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: ref
   owner: ghananlpcommunity
   architecture: VoxCPM v1 (0.7B)
   model_class: non-llm
   params: 0.7B
-  cer: 0.1831
-  wer: 0.5074
-  score: 0.1831
+  cer: 0.0672
+  wer: 0.3387
+  score: 0.0672
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.5074
-      cer: 0.1831
+      wer: 0.3387
+      cer: 0.0672
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 4.57
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Fante_fat
+  sample_category: education
+  sample_clip: '00013'
+- model: ghananlpcommunity/ghana-tts-72k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: ref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.0682
+  wer: 0.3203
+  score: 0.0682
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.3203
+      cer: 0.0682
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 4.29
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Fante_fat
+  sample_category: education
+  sample_clip: '00013'
+- model: ghananlpcommunity/ghana-tts-36k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1293
+  wer: 0.4198
+  score: 0.1293
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.4198
+      cer: 0.1293
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 4.42
+  source: evaluated
+  sample_category: education
+  sample_clip: '00013'
+- model: ghananlpcommunity/ghana-tts-72k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1724
+  wer: 0.4621
+  score: 0.1724
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.4621
+      cer: 0.1724
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 4.53
+  source: evaluated
   sample_category: education
   sample_clip: '00013'

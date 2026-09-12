@@ -9,111 +9,160 @@ judge:
   cer_on_real_speech: 0.2193
 updated: '2026-09-12'
 benchmarks:
+- model: ghananlpcommunity/ghana-tts-36k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: ref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1282
+  wer: 0.5688
+  score: 0.1282
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.5688
+      cer: 0.1282
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.03
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Akuapem_Twi
+  sample_category: education
+  sample_clip: '00007'
 - model: KhayaAI/khaya-tts-v2
   model_url: https://translation.ghananlp.org
+  mode: noref
   owner: KhayaAI
   architecture: Khaya AI TTS v2 API
   model_class: api
   params: API
-  cer: 0.142
-  wer: 0.5644
-  score: 0.142
+  cer: 0.1327
+  wer: 0.5438
+  score: 0.1327
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.5644
-      cer: 0.142
+      wer: 0.5438
+      cer: 0.1327
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 0.03
   source: evaluated
   sample_category: education
   sample_clip: '00007'
-- model: ghananlpcommunity/ghana-tts-36k
-  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+- model: ghananlpcommunity/ghana-tts-72k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: ref
   owner: ghananlpcommunity
   architecture: VoxCPM v1 (0.7B)
   model_class: non-llm
   params: 0.7B
-  cer: 0.1743
-  wer: 0.6081
-  score: 0.1743
+  cer: 0.1338
+  wer: 0.5855
+  score: 0.1338
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.6081
-      cer: 0.1743
+      wer: 0.5855
+      cer: 0.1338
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 0.03
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Akuapem_Twi
   sample_category: education
   sample_clip: '00007'
-- model: FarmerlineML/voxcpm2-akan-sft
+- model: FarmerlineML/voxcpm2-akan-sft-ref
   model_url: https://huggingface.co/FarmerlineML/voxcpm2-akan-sft
+  mode: ref
   owner: FarmerlineML
   architecture: VoxCPM2 (2B)
   model_class: non-llm
   params: 2B
-  cer: 0.2065
-  wer: 0.6892
-  score: 0.2065
+  cer: 0.1928
+  wer: 0.677
+  score: 0.1928
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.6892
-      cer: 0.2065
+      wer: 0.677
+      cer: 0.1928
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 0.03
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Akuapem_Twi
   sample_category: education
   sample_clip: '00007'
-- model: ghananlpcommunity/ghana-tts-72k
-  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+- model: ghananlpcommunity/ghana-tts-36k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: noref
   owner: ghananlpcommunity
   architecture: VoxCPM v1 (0.7B)
   model_class: non-llm
   params: 0.7B
-  cer: 0.237
-  wer: 0.6546
-  score: 0.237
+  cer: 0.1977
+  wer: 0.6323
+  score: 0.1977
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.6546
-      cer: 0.237
+      wer: 0.6323
+      cer: 0.1977
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 0.03
   source: evaluated
-  prompted: true
-  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Akuapem_Twi
+  sample_category: education
+  sample_clip: '00007'
+- model: FarmerlineML/voxcpm2-akan-sft-noref
+  model_url: https://huggingface.co/FarmerlineML/voxcpm2-akan-sft
+  mode: noref
+  owner: FarmerlineML
+  architecture: VoxCPM2 (2B)
+  model_class: non-llm
+  params: 2B
+  cer: 0.1994
+  wer: 0.6857
+  score: 0.1994
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6857
+      cer: 0.1994
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.03
+  source: evaluated
   sample_category: education
   sample_clip: '00007'
 - model: ghananlpcommunity/stable-twi-tts
   model_url: https://huggingface.co/ghananlpcommunity/stable-twi-tts
+  mode: noref
   owner: ghananlpcommunity
   architecture: Piper VITS (ONNX)
   model_class: non-llm
   params: 0.03B
-  cer: 0.247
-  wer: 0.7754
-  score: 0.247
+  cer: 0.2458
+  wer: 0.7487
+  score: 0.2458
   samples: 200
   valid: 119
   per_category:
     education:
-      wer: 0.7754
-      cer: 0.247
+      wer: 0.7487
+      cer: 0.2458
       samples: 200
       valid: 119
       avg_seconds_per_sample: 0.03
@@ -122,19 +171,42 @@ benchmarks:
   sample_clip: '00007'
 - model: multilingual-tts/VITS-OpenBible-Twi-Akuapem
   model_url: https://huggingface.co/multilingual-tts/VITS-OpenBible-Twi-Akuapem
+  mode: noref
   owner: multilingual-tts
   architecture: VITS (Coqui)
   model_class: non-llm
   params: 0.08B
-  cer: 0.2529
-  wer: 0.7179
-  score: 0.2529
+  cer: 0.2531
+  wer: 0.7062
+  score: 0.2531
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.7179
-      cer: 0.2529
+      wer: 0.7062
+      cer: 0.2531
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.03
+  source: evaluated
+  sample_category: education
+  sample_clip: '00007'
+- model: ghananlpcommunity/ghana-tts-72k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.2793
+  wer: 0.7076
+  score: 0.2793
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.7076
+      cer: 0.2793
       samples: 200
       valid: 200
       avg_seconds_per_sample: 0.03
@@ -143,22 +215,23 @@ benchmarks:
   sample_clip: '00007'
 - model: ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem
   model_url: https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem
+  mode: ref
   owner: ghananlpcommunity
   architecture: F5-TTS (DiT + Vocos)
   model_class: non-llm
   params: 0.3B
-  cer: 0.6659
-  wer: 0.9298
-  score: 0.6659
+  cer: 0.3212
+  wer: 0.7502
+  score: 0.3212
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.9298
-      cer: 0.6659
+      wer: 0.7502
+      cer: 0.3212
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 0.03
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Akuapem_Twi
