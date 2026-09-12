@@ -27,7 +27,7 @@ benchmarks:
       cer: 0.0656
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.51
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00013'
@@ -49,7 +49,7 @@ benchmarks:
       cer: 0.0672
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.57
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Fante_fat
@@ -73,7 +73,31 @@ benchmarks:
       cer: 0.0682
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.29
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Fante_fat
+  sample_category: education
+  sample_clip: '00013'
+- model: k2-fsa/OmniVoice-ref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: ref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning)
+  model_class: non-llm
+  params: '?'
+  cer: 0.1098
+  wer: 0.4453
+  score: 0.1098
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.4453
+      cer: 0.1098
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 1.78
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Fante_fat
@@ -97,7 +121,7 @@ benchmarks:
       cer: 0.1293
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.42
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00013'
@@ -119,7 +143,7 @@ benchmarks:
       cer: 0.1724
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.53
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00013'

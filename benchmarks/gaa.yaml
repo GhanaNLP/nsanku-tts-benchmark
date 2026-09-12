@@ -27,8 +27,32 @@ benchmarks:
       cer: 0.1127
       samples: 200
       valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00002'
+- model: k2-fsa/OmniVoice-ref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: ref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning)
+  model_class: non-llm
+  params: '?'
+  cer: 0.1736
+  wer: 0.7725
+  score: 0.1736
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.7725
+      cer: 0.1736
+      samples: 200
+      valid: 200
       avg_seconds_per_sample: 0.03
   source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/jw_ga_gaa
   sample_category: education
   sample_clip: '00002'
 - model: ghananlpcommunity/ghana-tts-72k-ref
@@ -49,7 +73,7 @@ benchmarks:
       cer: 0.1875
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/jw_ga_gaa
@@ -73,7 +97,7 @@ benchmarks:
       cer: 0.1911
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00002'
@@ -95,7 +119,7 @@ benchmarks:
       cer: 0.2056
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/jw_ga_gaa
@@ -119,7 +143,7 @@ benchmarks:
       cer: 0.2554
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00002'

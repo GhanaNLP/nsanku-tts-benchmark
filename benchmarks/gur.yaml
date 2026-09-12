@@ -9,6 +9,30 @@ judge:
   cer_on_real_speech: 0.4026
 updated: '2026-09-12'
 benchmarks:
+- model: k2-fsa/OmniVoice-ref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: ref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning)
+  model_class: non-llm
+  params: '?'
+  cer: 0.1471
+  wer: 0.6261
+  score: 0.1471
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6261
+      cer: 0.1471
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.37
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ninkare_gur
+  sample_category: education
+  sample_clip: '00013'
 - model: ghananlpcommunity/ghana-tts-72k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   mode: ref
@@ -27,7 +51,7 @@ benchmarks:
       cer: 0.1627
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.5
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ninkare_gur
@@ -51,7 +75,7 @@ benchmarks:
       cer: 0.1774
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.54
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ninkare_gur
@@ -75,7 +99,7 @@ benchmarks:
       cer: 0.2092
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.44
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00013'
@@ -97,7 +121,7 @@ benchmarks:
       cer: 0.2516
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.63
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00013'
@@ -119,7 +143,7 @@ benchmarks:
       cer: 0.3091
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.72
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00013'

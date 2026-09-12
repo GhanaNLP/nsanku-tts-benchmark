@@ -27,7 +27,7 @@ benchmarks:
       cer: 0.0455
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.47
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00005'
@@ -49,7 +49,7 @@ benchmarks:
       cer: 0.0456
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.59
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
@@ -73,7 +73,7 @@ benchmarks:
       cer: 0.0615
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.48
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00005'
@@ -95,7 +95,7 @@ benchmarks:
       cer: 0.0651
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.4
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00005'
@@ -117,7 +117,7 @@ benchmarks:
       cer: 0.068
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.48
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
@@ -141,7 +141,7 @@ benchmarks:
       cer: 0.0684
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.5
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
@@ -165,7 +165,7 @@ benchmarks:
       cer: 0.1633
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.52
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00005'
@@ -187,26 +187,26 @@ benchmarks:
       cer: 0.1811
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.58
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00005'
-- model: ghananlpcommunity/F5-TTS-OpenBible-Ewe
+- model: ghananlpcommunity/F5-TTS-OpenBible-Ewe-ref
   model_url: https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Ewe
   mode: ref
   owner: ghananlpcommunity
   architecture: F5-TTS (DiT + Vocos)
   model_class: non-llm
   params: 0.3B
-  cer: 0.3228
-  wer: 0.6452
-  score: 0.3228
+  cer: 0.3224
+  wer: 0.6424
+  score: 0.3224
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.6452
-      cer: 0.3228
+      wer: 0.6424
+      cer: 0.3224
       samples: 200
       valid: 200
       avg_seconds_per_sample: 0.42

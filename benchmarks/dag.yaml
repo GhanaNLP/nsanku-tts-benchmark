@@ -9,6 +9,30 @@ judge:
   cer_on_real_speech: 0.1526
 updated: '2026-09-12'
 benchmarks:
+- model: k2-fsa/OmniVoice-ref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: ref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning)
+  model_class: non-llm
+  params: '?'
+  cer: 0.0511
+  wer: 0.3453
+  score: 0.0511
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.3453
+      cer: 0.0511
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 1.79
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Dagbani_dag
+  sample_category: education
+  sample_clip: '00002'
 - model: ghananlpcommunity/ghana-tts-36k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: ref
@@ -27,7 +51,7 @@ benchmarks:
       cer: 0.052
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.68
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Dagbani_dag
@@ -51,7 +75,7 @@ benchmarks:
       cer: 0.0538
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.89
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00002'
@@ -73,7 +97,7 @@ benchmarks:
       cer: 0.0584
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.28
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Dagbani_dag
@@ -97,7 +121,7 @@ benchmarks:
       cer: 0.0822
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.34
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Dagbani_dag
@@ -121,7 +145,7 @@ benchmarks:
       cer: 0.124
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.52
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00002'
@@ -143,7 +167,7 @@ benchmarks:
       cer: 0.1309
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 1.04
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00002'
@@ -165,7 +189,7 @@ benchmarks:
       cer: 0.1558
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.67
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00002'

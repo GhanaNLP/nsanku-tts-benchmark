@@ -27,7 +27,7 @@ benchmarks:
       cer: 0.0935
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00003'
@@ -49,7 +49,7 @@ benchmarks:
       cer: 0.1132
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi
@@ -73,7 +73,7 @@ benchmarks:
       cer: 0.1139
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi
@@ -97,7 +97,7 @@ benchmarks:
       cer: 0.1569
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00003'
@@ -119,7 +119,7 @@ benchmarks:
       cer: 0.1616
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00003'
@@ -141,7 +141,7 @@ benchmarks:
       cer: 0.1706
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi
@@ -165,7 +165,7 @@ benchmarks:
       cer: 0.182
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00003'
@@ -187,8 +187,32 @@ benchmarks:
       cer: 0.187
       samples: 200
       valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: k2-fsa/OmniVoice-ref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: ref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning)
+  model_class: non-llm
+  params: '?'
+  cer: 0.1944
+  wer: 0.6418
+  score: 0.1944
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6418
+      cer: 0.1944
+      samples: 200
+      valid: 200
       avg_seconds_per_sample: 0.03
   source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi
   sample_category: education
   sample_clip: '00003'
 - model: ghananlpcommunity/stable-twi-tts
@@ -209,7 +233,7 @@ benchmarks:
       cer: 0.2093
       samples: 200
       valid: 117
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00003'
@@ -231,26 +255,26 @@ benchmarks:
       cer: 0.258
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00003'
-- model: ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante
+- model: ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante-ref
   model_url: https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante
   mode: ref
   owner: ghananlpcommunity
   architecture: F5-TTS (DiT + Vocos)
   model_class: non-llm
   params: 0.3B
-  cer: 0.2985
-  wer: 0.6429
-  score: 0.2985
+  cer: 0.3195
+  wer: 0.6792
+  score: 0.3195
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.6429
-      cer: 0.2985
+      wer: 0.6792
+      cer: 0.3195
       samples: 200
       valid: 200
       avg_seconds_per_sample: 0.03

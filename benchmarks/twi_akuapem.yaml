@@ -27,7 +27,7 @@ benchmarks:
       cer: 0.1282
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Akuapem_Twi
@@ -51,7 +51,7 @@ benchmarks:
       cer: 0.1327
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00007'
@@ -73,7 +73,7 @@ benchmarks:
       cer: 0.1338
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Akuapem_Twi
@@ -95,6 +95,30 @@ benchmarks:
     education:
       wer: 0.677
       cer: 0.1928
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Akuapem_Twi
+  sample_category: education
+  sample_clip: '00007'
+- model: k2-fsa/OmniVoice-ref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: ref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning)
+  model_class: non-llm
+  params: '?'
+  cer: 0.1966
+  wer: 0.6856
+  score: 0.1966
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6856
+      cer: 0.1966
       samples: 200
       valid: 200
       avg_seconds_per_sample: 0.03
@@ -121,7 +145,7 @@ benchmarks:
       cer: 0.1977
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00007'
@@ -143,7 +167,7 @@ benchmarks:
       cer: 0.1994
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00007'
@@ -165,7 +189,7 @@ benchmarks:
       cer: 0.2458
       samples: 200
       valid: 119
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00007'
@@ -187,7 +211,7 @@ benchmarks:
       cer: 0.2531
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00007'
@@ -209,26 +233,26 @@ benchmarks:
       cer: 0.2793
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00007'
-- model: ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem
+- model: ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem-ref
   model_url: https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem
   mode: ref
   owner: ghananlpcommunity
   architecture: F5-TTS (DiT + Vocos)
   model_class: non-llm
   params: 0.3B
-  cer: 0.3212
-  wer: 0.7502
-  score: 0.3212
+  cer: 0.3218
+  wer: 0.7312
+  score: 0.3218
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.7502
-      cer: 0.3212
+      wer: 0.7312
+      cer: 0.3218
       samples: 200
       valid: 200
       avg_seconds_per_sample: 0.03
