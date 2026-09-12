@@ -119,20 +119,6 @@
     "notes": "Ultra-lightweight offline TTS for CPU"
   },
   {
-    "name": "ghananlpcommunity/VoxCPM2-Ghana",
-    "uses_reference": true,
-    "architecture": "VoxCPM2 (5B, IPA)",
-    "languages": ["twi_akuapem", "twi_asante", "ada", "dag", "dga", "ewe", "fat", "gur", "nzi"],
-    "input_type": "ipa",
-    "g2p": "ghana-g2p",
-    "model_class": "non-llm",
-    "params": "5B",
-    "sample_rate": 48000,
-    "license": "cc-by-nc-4.0",
-    "url": "https://huggingface.co/ghananlpcommunity/VoxCPM2-Ghana",
-    "notes": "42 Ghanaian languages, trained on IPA; text is phonemised with ghana-g2p before synthesis"
-  },
-  {
     "name": "ghananlpcommunity/stable-twi-tts",
     "architecture": "Piper VITS (ONNX)",
     "languages": ["twi_akuapem", "twi_asante"],
