@@ -198,5 +198,20 @@
     "license": "proprietary",
     "url": "https://translation.ghananlp.org",
     "notes": "Hosted API — 32 languages/dialects, 3 voices (male_low, male_high, female)"
+  },
+  {
+    "name": "Sunbird/orpheus-3b-tts-multilingual",
+    "architecture": "Orpheus-3B (autoregressive LLM over SNAC 24 kHz)",
+    "languages": ["ewe"],
+    "input_type": "orthographic",
+    "runner": "orpheus",
+    "stack": "tts",
+    "modes": ["noref"],
+    "model_class": "llm",
+    "params": "3B",
+    "sample_rate": 24000,
+    "license": "apache-2.0",
+    "url": "https://huggingface.co/Sunbird/orpheus-3b-tts-multilingual",
+    "notes": "Multilingual Orpheus fine-tune on Sunbird/tts; Ewe voice slr129_ewe_0001."
   }
 ]

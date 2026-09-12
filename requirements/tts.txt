@@ -19,3 +19,5 @@ ghana-g2p
 stable-twi-tts[twi]
 # Coqui VITS checkpoints (multilingual-tts OpenBible voices).
 coqui-tts
+# Orpheus-3B (Sunbird) decodes audio with the SNAC codec.
+snac

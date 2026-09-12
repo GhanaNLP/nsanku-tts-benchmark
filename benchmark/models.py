@@ -99,6 +99,8 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
         return F5TTSWrapper(model_id, device=device, meta=meta, iso=iso, **kwargs)
     if meta.get("runner") == "omnivoice":
         return OmniVoiceWrapper(model_id, device=device, meta=meta, iso=iso, **kwargs)
+    if meta.get("runner") == "orpheus":
+        return OrpheusWrapper(model_id, device=device, meta=meta, iso=iso, **kwargs)
     if meta.get("runner") == "coqui-vits":
         return CoquiVITSWrapper(model_id, device=device, meta=meta, **kwargs)
     if meta.get("runner") == "stable-twi-tts" or "stable-twi-tts" in lower:
@@ -535,6 +537,143 @@ class OmniVoiceWrapper(BaseTTSModel):
                 raise RuntimeError("OmniVoice returned no audio")
             audio = audio[0]
         return _wav_bytes(np.asarray(audio, dtype=np.float32), sample_rate=self.SAMPLE_RATE)
+
+
+class OrpheusWrapper(BaseTTSModel):
+    """Sunbird/orpheus-3b-tts-multilingual — autoregressive LLM over SNAC codes.
+
+    A Llama-3.2-3B fine-tune that emits SNAC audio-codebook tokens, decoded to
+    24 kHz speech.  There is no language knob: the voice — and therefore the
+    language — travels through the ``speaker_id`` prompt tag, e.g.
+    ``slr129_ewe_0001: <text>`` for Ewe.  Which speaker a language uses is a
+    per-language recipe knob (SPEAKER_ID), since Orpheus has no other
+    language-conditioning input.
+    """
+
+    SAMPLE_RATE = 24000
+
+    # Special tokens from the model card; the tokenizer knows their ids.
+    END_OF_TEXT = 128009
+    START_OF_SPEECH = 128257
+    END_OF_SPEECH = 128258
+    START_OF_HUMAN = 128259
+    END_OF_HUMAN = 128260
+    AUDIO_TOKEN_LO = 128266
+    AUDIO_TOKEN_HI = 128266 + 7 * 4096
+
+    def __init__(self, model_id, device="cuda", meta=None, iso=None, **kwargs):
+        super().__init__(model_id, device)
+        self.model = None
+        self.tokenizer = None
+        self.snac = None
+        self._loaded = False
+        self.meta = meta or {}
+        self.iso = iso
+
+    def _ensure_loaded(self):
+        if self._loaded:
+            return
+        import torch
+        from huggingface_hub import snapshot_download
+        from snac import SNAC
+        from transformers import AutoModelForCausalLM, AutoTokenizer
+
+        from .config import HF_TOKEN
+
+        # SNAC decoding is tiny and runs fine on CPU, freeing the GPU for the LM.
+        snac_dir = snapshot_download("hubertsiuzdak/snac_24khz", token=HF_TOKEN or None)
+        self.snac = SNAC.from_pretrained(snac_dir).to("cpu")
+
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            self.model_id, token=HF_TOKEN or None
+        )
+        self.model = AutoModelForCausalLM.from_pretrained(
+            self.model_id,
+            torch_dtype=torch.bfloat16,
+            device_map=self.device if self.device.startswith("cuda") else "cpu",
+            token=HF_TOKEN or None,
+        ).eval()
+        self._loaded = True
+        logger.info("Loaded Orpheus: %s", self.model_id)
+
+    def _synthesize(self, text, speaker_id):
+        import numpy as np
+        import torch
+
+        tagged = f"{speaker_id}: {text}"
+        text_ids = self.tokenizer(tagged, return_tensors="pt").input_ids
+        soh = torch.tensor([[self.START_OF_HUMAN]], dtype=torch.int64)
+        end = torch.tensor(
+            [[self.END_OF_TEXT, self.END_OF_HUMAN]], dtype=torch.int64
+        )
+        input_ids = torch.cat([soh, text_ids, end], dim=1)
+        if self.device.startswith("cuda"):
+            input_ids = input_ids.to(self.device)
+        attention_mask = torch.ones_like(input_ids)
+
+        seed = _knob(self.meta, "SEED", 42)
+        if seed is not None:
+            torch.manual_seed(seed)
+
+        generated = self.model.generate(
+            input_ids=input_ids,
+            attention_mask=attention_mask,
+            max_new_tokens=_knob(self.meta, "MAX_NEW_TOKENS", 1200),
+            do_sample=True,
+            temperature=_knob(self.meta, "TEMPERATURE", 0.6),
+            top_p=_knob(self.meta, "TOP_P", 0.95),
+            repetition_penalty=_knob(self.meta, "REPETITION_PENALTY", 1.1),
+            eos_token_id=self.END_OF_SPEECH,
+            use_cache=True,
+        )
+
+        # Crop on the last START_OF_SPEECH, keep only audio codebook tokens.
+        generated = generated.to("cpu")
+        sos = (generated == self.START_OF_SPEECH).nonzero(as_tuple=True)
+        if len(sos[1]) > 0:
+            generated = generated[:, sos[1][-1].item() + 1:]
+        row = generated[0]
+        audio = row[(row >= self.AUDIO_TOKEN_LO) & (row < self.AUDIO_TOKEN_HI)] \
+            - self.AUDIO_TOKEN_LO
+        n = (audio.size(0) // 7) * 7
+        if n == 0:
+            return _wav_bytes(np.zeros(12000, dtype=np.float32), sample_rate=self.SAMPLE_RATE)
+
+        # Redistribute the flattened 7-code frames into SNAC's 3-layer layout.
+        l1, l2, l3 = [], [], []
+        for i in range(n // 7):
+            l1.append(audio[7 * i].item())
+            l2.append(audio[7 * i + 1].item() - 4096)
+            l3.extend([
+                audio[7 * i + 2].item() - 2 * 4096,
+                audio[7 * i + 3].item() - 3 * 4096,
+            ])
+            l2.append(audio[7 * i + 4].item() - 4 * 4096)
+            l3.extend([
+                audio[7 * i + 5].item() - 5 * 4096,
+                audio[7 * i + 6].item() - 6 * 4096,
+            ])
+        clamp = lambda vals: [max(0, min(4095, int(v))) for v in vals]
+        codes = [
+            torch.tensor(clamp(l1), dtype=torch.int32).unsqueeze(0),
+            torch.tensor(clamp(l2), dtype=torch.int32).unsqueeze(0),
+            torch.tensor(clamp(l3), dtype=torch.int32).unsqueeze(0),
+        ]
+        waveform = self.snac.decode(codes)
+        return _wav_bytes(
+            waveform.detach().squeeze().to("cpu").numpy().astype(np.float32),
+            sample_rate=self.SAMPLE_RATE,
+        )
+
+    def synthesize(self, text, lang="ewe"):
+        self._ensure_loaded()
+        speaker_id = _knob(self.meta, "SPEAKER_ID")
+        if not speaker_id:
+            raise RuntimeError(
+                "orpheus-3b needs a SPEAKER_ID recipe knob per language "
+                "(it has no language-conditioning input of its own)"
+            )
+        return self._synthesize(text, speaker_id)
 
 
 class CoquiVITSWrapper(BaseTTSModel):
