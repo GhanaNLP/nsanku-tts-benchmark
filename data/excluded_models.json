@@ -1,0 +1,18 @@
+{
+  "_comment": "Org-published TTS models the scan finds but the benchmark does not evaluate, with the reason. Kept as a record so a rescan does not keep proposing them, and so the exclusions are arguable rather than invisible.",
+  "excluded": {
+    "rifailabs/km-tts-v2": "OmniVoice copy — k2-fsa/OmniVoice is the canonical one and is benchmarked",
+    "GuidenAI/genpio_voice": "OmniVoice copy — see k2-fsa/OmniVoice",
+    "OrpheraAI/OmniVoice": "mirror of k2-fsa/OmniVoice",
+    "SwinliQ-AI-2/OmniVoice": "mirror of k2-fsa/OmniVoice",
+    "onnx-community/OmniVoice-Onnx": "ONNX export of k2-fsa/OmniVoice",
+    "OpenVoiceOS/phoonnx-neutts": "dropped by maintainer decision",
+    "OpenVoiceOS/phoonnx-coqui-vits": "a ~50-language grab-bag of Coqui voices; the Ghanaian-language tags are not backed by voices we could verify",
+    "neriqlabs/kasanoma-tts-twi-v0.3": "superseded by v0.5",
+    "neriqlabs/kasanoma-tts-twi-v0.4": "superseded by v0.5",
+    "multilingual-tts/F5-TTS-OpenBible-Twi-Asante": "same weights as the ghananlpcommunity copy already benchmarked",
+    "multilingual-tts/F5-TTS-OpenBible-Twi-Akuapem": "same weights as the ghananlpcommunity copy already benchmarked",
+    "multilingual-tts/F5-TTS-OpenBible-Ewe": "same weights as the ghananlpcommunity copy already benchmarked",
+    "ghananlpcommunity/VoxCPM2-Ghana": "evaluated and removed: 1.08-2.96 CER after correct inference"
+  }
+}

@@ -81,10 +81,19 @@ def is_org(owner, cache):
     return cache[owner]
 
 
+def _excluded():
+    """Models deliberately not benchmarked, and why."""
+    path = ROOT / "data" / "excluded_models.json"
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text())["excluded"]
+
+
 def scan():
     registered = {
         m["name"] for m in json.loads((ROOT / "data" / "tts_models.json").read_text())
     }
+    excluded = _excluded()
     org_cache = {}
     found = {}
 
@@ -109,6 +118,7 @@ def scan():
                     "likes": m.get("likes", 0),
                     "tags": m.get("tags", []),
                     "registered": mid in registered,
+                    "excluded": excluded.get(mid),
                 })
                 entry["languages"].add(iso)
     return found
@@ -120,8 +130,10 @@ def main():
     args = ap.parse_args()
 
     found = scan()
-    new = {k: v for k, v in found.items() if not v["registered"]}
+    new = {k: v for k, v in found.items()
+           if not v["registered"] and not v.get("excluded")}
     known = {k: v for k, v in found.items() if v["registered"]}
+    skipped = {k: v for k, v in found.items() if v.get("excluded")}
 
     print(f"\n{len(found)} org-published TTS model(s) tagged with our languages "
           f"({len(known)} already benchmarked, {len(new)} new)\n")
@@ -129,6 +141,10 @@ def main():
         langs = ", ".join(sorted(ISO_TO_NAME.get(i, i) for i in v["languages"]))
         print(f"  NEW  {mid}")
         print(f"       {langs}  ·  {v['downloads']} downloads, {v['likes']} likes")
+    if skipped:
+        print("\n  deliberately excluded:")
+        for mid, v in sorted(skipped.items()):
+            print(f"       {mid} — {v['excluded']}")
     if known:
         print("\n  already benchmarked:")
         for mid in sorted(known):
