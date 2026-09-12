@@ -479,6 +479,65 @@ def _merged_espeak_data(model_data_dir):
     return str(merged)
 
 
+class CoquiVITSWrapper(BaseTTSModel):
+    """Coqui-TTS VITS checkpoints (multilingual-tts OpenBible voices).
+
+    The repo ships a raw training checkpoint — config.json, model_last.pth and
+    a speakers file — rather than anything loadable by name, so it is driven
+    through Coqui's Synthesizer directly.
+    """
+
+    SAMPLE_RATE = 22050
+
+    def __init__(self, model_id, device="cuda", meta=None, **kwargs):
+        super().__init__(model_id, device)
+        self.model = None
+        self._loaded = False
+        self.meta = meta or {}
+
+    def _ensure_loaded(self):
+        if self._loaded:
+            return
+        from huggingface_hub import snapshot_download
+        from TTS.utils.synthesizer import Synthesizer
+
+        from .config import HF_TOKEN
+
+        repo = Path(snapshot_download(
+            self.model_id,
+            allow_patterns=["*.json", "*.pth"],
+            token=HF_TOKEN or None,
+        ))
+        checkpoint = next(iter(sorted(repo.glob("model*.pth"))), None)
+        if checkpoint is None:
+            raise FileNotFoundError(f"{self.model_id}: no model*.pth checkpoint")
+        speakers = repo / "speakers.pth"
+
+        self.model = Synthesizer(
+            tts_checkpoint=str(checkpoint),
+            tts_config_path=str(repo / "config.json"),
+            tts_speakers_file=str(speakers) if speakers.exists() else None,
+            use_cuda=self.device.startswith("cuda"),
+        )
+        self.SAMPLE_RATE = getattr(self.model, "output_sample_rate", self.SAMPLE_RATE)
+        self._loaded = True
+        logger.info("Loaded Coqui VITS: %s", self.model_id)
+
+    def synthesize(self, text, lang="twi"):
+        self._ensure_loaded()
+        kwargs = {}
+        speaker = _knob(self.meta, "SPEAKER")
+        if speaker:
+            kwargs["speaker_name"] = speaker
+        elif getattr(self.model.tts_model, "num_speakers", 0) > 1:
+            # A multi-speaker checkpoint refuses to synthesise without one.
+            names = list(getattr(self.model.tts_model.speaker_manager, "name_to_id", {}))
+            if names:
+                kwargs["speaker_name"] = names[0]
+        wav = self.model.tts(text, **kwargs)
+        return _wav_bytes(np.asarray(wav, dtype=np.float32), sample_rate=self.SAMPLE_RATE)
+
+
 class StableTwiWrapper(BaseTTSModel):
     """ghananlpcommunity/stable-twi-tts — Piper VITS, ONNX, CPU.
 
@@ -629,3 +688,20 @@ class KhayaTTSWrapper(BaseTTSModel):
         if resp.status_code != 200:
             raise RuntimeError(f"Khaya TTS {resp.status_code}: {resp.text[:200]}")
         return resp.content
+
+def _check_wrappers():
+    """Every wrapper the dispatcher can return must exist.
+
+    A missing one used to surface as NameError once per sample, inside a job,
+    after the model had downloaded — 200 identical failures for a typo.
+    """
+    import re
+
+    source = Path(__file__).read_text(encoding="utf-8")
+    named = set(re.findall(r"return (\w+Wrapper)\(", source))
+    missing = sorted(n for n in named if n not in globals())
+    if missing:
+        raise RuntimeError(f"models.py dispatches to undefined wrapper(s): {missing}")
+
+
+_check_wrappers()
