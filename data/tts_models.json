@@ -1,8 +1,7 @@
 [
   {
     "name": "ghananlpcommunity/ghana-tts-72k",
-    "uses_reference": true,
-    "lang_tag": "ghana-tts",
+        "lang_tag": "ghana-tts",
     "model_class": "non-llm",
     "params": "0.7B",
     "architecture": "VoxCPM v1 (0.7B)",
@@ -15,8 +14,7 @@
   },
   {
     "name": "ghananlpcommunity/ghana-tts-36k",
-    "uses_reference": true,
-    "lang_tag": "ghana-tts",
+        "lang_tag": "ghana-tts",
     "model_class": "non-llm",
     "params": "0.7B",
     "architecture": "VoxCPM v1 (0.7B)",

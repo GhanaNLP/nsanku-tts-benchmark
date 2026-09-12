@@ -250,9 +250,11 @@ class BaseTTSModel(abc.ABC):
 class VoxCPMWrapper(BaseTTSModel):
     """VoxCPM v1 (0.7B) — ghana-tts-72k / ghana-tts-36k.
 
-    Orthographic input, 16 kHz output.  A model may pin a voice by shipping
-    a reference clip + its transcript (``reference_audio``/``reference_text``
-    in the registry), which is then used as the generation prompt.
+    Orthographic input, 16 kHz output.  No reference clip: v1's only prompt
+    mechanism is continuation (``prompt_wav_path`` + ``prompt_text``), and the
+    model speaks the prompt before the sentence — the judge hears the
+    reference verse followed by the target, which is not what was asked for.
+    VoxCPM2's ``reference_wav_path`` is isolated and does not do this.
     """
 
     SAMPLE_RATE = 16000
