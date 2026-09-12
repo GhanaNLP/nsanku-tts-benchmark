@@ -58,6 +58,9 @@ HOOK = '''
 '''
 
 BLURBS = {
+    "omnivoice": "OmniVoice clones the voice of a reference clip: real recorded speech\n"
+                 "in this language from ghana-speech-eval. REFERENCE_TEXT and\n"
+                 "REFERENCE_CLIP override it if a better one exists.",
     "coqui": "SPEAKER picks a voice from the checkpoint's speaker file; left as None\n"
              "the first speaker is used, which is what a multi-speaker VITS needs to\n"
              "synthesise at all.",
@@ -95,6 +98,7 @@ BLURBS = {
 }
 
 BODIES = {
+    "omnivoice": "REFERENCE_TEXT = None\nREFERENCE_CLIP = None\n",
     "coqui": "SPEAKER = None\n",
     "piper": "VOICE = 'twi-6'\nSYNTH_LANGUAGE = 'twi'\nLENGTH_SCALE = 1.0\n"
              "NOISE_SCALE = 0.667\nNOISE_W = 0.8\n",
@@ -113,6 +117,8 @@ BODIES = {
 
 def kind_for(model_id, meta):
     lower = model_id.lower()
+    if meta.get("runner") == "omnivoice":
+        return "omnivoice"
     if meta.get("runner") == "coqui-vits":
         return "coqui"
     if meta.get("runner") == "stable-twi-tts":

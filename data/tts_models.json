@@ -173,6 +173,21 @@
     "notes": "Ewe VITS trained on the Open Bible corpus"
   },
   {
+    "name": "k2-fsa/OmniVoice",
+    "architecture": "OmniVoice (voice cloning)",
+    "languages": ["twi_akuapem", "twi_asante", "dag", "fat", "gaa", "gur"],
+    "input_type": "orthographic",
+    "runner": "omnivoice",
+    "stack": "omni",
+    "modes": ["ref"],
+    "model_class": "non-llm",
+    "params": "?",
+    "sample_rate": 24000,
+    "license": "apache-2.0",
+    "url": "https://huggingface.co/k2-fsa/OmniVoice",
+    "notes": "Multilingual voice cloning; needs transformers 5.x so it runs in its own image"
+  },
+  {
     "name": "KhayaAI/khaya-tts-v2",
     "model_class": "api",
     "params": "API",

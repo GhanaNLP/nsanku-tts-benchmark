@@ -1,4 +1,4 @@
-"""Evaluation recipe for ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem — Akuapem Twi (twi_akuapem).
+"""Evaluation recipe for ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem-ref — Akuapem Twi (twi_akuapem).
 
 Architecture: F5-TTS (DiT + Vocos)
 Scope: THIS MODEL, THIS LANGUAGE. Every (model, language) pair has its own

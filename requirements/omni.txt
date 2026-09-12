@@ -1,0 +1,12 @@
+# OmniVoice synthesis environment.
+# Separate from the main synthesis image: omnivoice needs transformers 5.x
+# while voxcpm and f5-tts are pinned to 4.57.
+torch==2.8.0
+torchaudio==2.8.0
+omnivoice==0.2.1
+datasets==3.6.0
+huggingface_hub
+numpy
+pyyaml
+requests
+soundfile

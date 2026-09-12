@@ -133,7 +133,10 @@ def load_tts_models(subset):
         modes = m.get("modes") or (["ref"] if m.get("uses_reference") else ["noref"])
         for mode in modes:
             entry = {**m, "model_id": m["name"], "mode": mode}
-            if len(modes) > 1:
+            # Any run that used a reference clip says so in its name, so the
+            # board needs no separate marker. A model that only runs without
+            # one keeps its plain name.
+            if mode == "ref" or len(modes) > 1:
                 entry["name"] = f"{m['name']}-{mode}"
             entry["uses_reference"] = mode == "ref"
             ret.append(entry)

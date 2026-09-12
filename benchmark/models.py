@@ -97,6 +97,8 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
                 "clip, which this run has disabled"
             )
         return F5TTSWrapper(model_id, device=device, meta=meta, iso=iso, **kwargs)
+    if meta.get("runner") == "omnivoice":
+        return OmniVoiceWrapper(model_id, device=device, meta=meta, iso=iso, **kwargs)
     if meta.get("runner") == "coqui-vits":
         return CoquiVITSWrapper(model_id, device=device, meta=meta, **kwargs)
     if meta.get("runner") == "stable-twi-tts" or "stable-twi-tts" in lower:
@@ -482,6 +484,57 @@ def _merged_espeak_data(model_data_dir):
         shutil.copytree(system_dir, merged, dirs_exist_ok=True)
     shutil.copytree(model_data_dir, merged, dirs_exist_ok=True)
     return str(merged)
+
+
+class OmniVoiceWrapper(BaseTTSModel):
+    """k2-fsa/OmniVoice — voice cloning from a reference clip, 24 kHz.
+
+    Needs transformers 5.x, so it runs in its own image (see the "stack"
+    field in the registry).
+    """
+
+    SAMPLE_RATE = 24000
+
+    def __init__(self, model_id, device="cuda", meta=None, iso=None, **kwargs):
+        super().__init__(model_id, device)
+        self.model = None
+        self._loaded = False
+        self.meta = meta or {}
+        self.iso = iso
+        self.ref_wav = None
+        self.ref_text = None
+        self.ref_source = None
+
+    def _ensure_loaded(self):
+        if self._loaded:
+            return
+        import torch
+        from omnivoice import OmniVoice
+
+        self.model = OmniVoice.from_pretrained(
+            self.model_id,
+            device_map=self.device,
+            dtype=torch.float16 if self.device.startswith("cuda") else torch.float32,
+        )
+        self._loaded = True
+        logger.info("Loaded OmniVoice: %s", self.model_id)
+
+    def synthesize(self, text, lang="twi"):
+        self._ensure_loaded()
+        if self.ref_wav is None:
+            from .config import HF_TOKEN
+
+            self.ref_wav, self.ref_text, self.ref_source = reference_clip(
+                self.iso, self.meta, HF_TOKEN
+            )
+        audio = self.model.generate(
+            text=text, ref_audio=self.ref_wav, ref_text=self.ref_text
+        )
+        if isinstance(audio, (list, tuple)):
+            if not audio:
+                raise RuntimeError("OmniVoice returned no audio")
+            audio = audio[0]
+        return _wav_bytes(np.asarray(audio, dtype=np.float32), sample_rate=self.SAMPLE_RATE)
 
 
 class CoquiVITSWrapper(BaseTTSModel):

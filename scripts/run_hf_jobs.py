@@ -31,6 +31,8 @@ NAMESPACE = os.environ.get("NSANKU_TTS_HF_NAMESPACE", "ghananlpcommunity")
 # public container packages, and HuggingFace Jobs pulls anonymously.
 REGISTRY = os.environ.get("NSANKU_TTS_REGISTRY", "ghcr.io/ghanaopenai/nsanku-tts-benchmark")
 IMAGES = {"synth": f"{REGISTRY}:tts", "score": f"{REGISTRY}:asr"}
+# Some models need an environment of their own; the registry says which.
+STACK_IMAGES = {"omni": f"{REGISTRY}:omni"}
 # Hardware follows the work: a hosted model is a network call whichever stage
 # it is in, omniASR-LLM-7B needs real headroom, everything else fits an A10G.
 FLAVORS = {"synth": "a10g-small", "score": "l40sx1", "api": "cpu-upgrade"}
@@ -38,6 +40,13 @@ FLAVORS = {"synth": "a10g-small", "score": "l40sx1", "api": "cpu-upgrade"}
 
 def is_api_model(meta):
     return "api" in (meta.get("architecture", "") + meta.get("license", "")).lower()
+
+
+def image_for(stage, meta=None):
+    """The image a job runs in — a model may pin its own stack."""
+    if stage == "synth" and meta and meta.get("stack") in STACK_IMAGES:
+        return STACK_IMAGES[meta["stack"]]
+    return IMAGES[stage]
 
 
 def build_command(stage, subset, model, ref, samples, force, flavor):
@@ -85,7 +94,7 @@ def main():
                 if args.model and args.model.lower() not in info["name"].lower():
                     continue
                 flavor = FLAVORS["api"] if is_api_model(info) else FLAVORS["synth"]
-                planned.append(("synth", subset, info["name"], flavor))
+                planned.append(("synth", subset, info["name"], flavor, info))
     if args.stage in ("all", "score"):
         for subset in subsets:
             spec = judge_for(subset_to_iso(subset))
@@ -93,16 +102,16 @@ def main():
                 continue
             # A hosted judge is a network call, not a GPU workload.
             flavor = FLAVORS["api"] if spec["kind"] == "khaya" else FLAVORS["score"]
-            planned.append(("score", subset, None, flavor))
+            planned.append(("score", subset, None, flavor, None))
 
     print(f"{len(planned)} job(s) to submit as {NAMESPACE}")
-    for stage, subset, model, flavor in planned:
+    for stage, subset, model, flavor, meta in planned:
         label = f"{stage} {subset}" + (f" / {model}" if model else "")
         if args.dry_run:
             print(f"  [dry-run] {label}  ({flavor})")
             continue
         job = run_job(
-            image=IMAGES[stage],
+            image=image_for(stage, meta),
             command=build_command(stage, subset, model, args.ref,
                                   args.samples, args.force, flavor),
             flavor=flavor,

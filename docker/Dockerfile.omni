@@ -1,0 +1,15 @@
+# OmniVoice synthesis environment for the nsanku-TTS benchmark.
+#
+# A third image because omnivoice requires transformers 5.x, while voxcpm and
+# f5-tts are pinned to 4.57 — they cannot share an environment.
+FROM pytorch/pytorch:2.8.0-cuda12.8-cudnn9-runtime
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends ffmpeg git build-essential \
+ && rm -rf /var/lib/apt/lists/*
+
+COPY requirements/omni.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+ENV PYTHONUTF8=1 LANG=C.UTF-8 LC_ALL=C.UTF-8
+WORKDIR /app
