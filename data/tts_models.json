@@ -1,6 +1,7 @@
 [
   {
     "name": "ghananlpcommunity/ghana-tts-72k",
+    "modes": ["ref", "noref"],
         "lang_tag": "ghana-tts",
     "model_class": "non-llm",
     "params": "0.7B",
@@ -14,6 +15,7 @@
   },
   {
     "name": "ghananlpcommunity/ghana-tts-36k",
+    "modes": ["ref", "noref"],
         "lang_tag": "ghana-tts",
     "model_class": "non-llm",
     "params": "0.7B",
@@ -27,7 +29,7 @@
   },
   {
     "name": "FarmerlineML/voxcpm2-akan-sft",
-    "uses_reference": true,
+    "modes": ["ref", "noref"],
     "model_class": "non-llm",
     "params": "2B",
     "architecture": "VoxCPM2 (2B)",
@@ -40,7 +42,7 @@
   },
   {
     "name": "FarmerlineML/voxcpm2-dagbani-sft",
-    "uses_reference": true,
+    "modes": ["ref", "noref"],
     "model_class": "non-llm",
     "params": "2B",
     "architecture": "VoxCPM2 (2B)",
@@ -53,7 +55,7 @@
   },
   {
     "name": "FarmerlineML/voxcpm2-ewe-sft",
-    "uses_reference": true,
+    "modes": ["ref", "noref"],
     "model_class": "non-llm",
     "params": "2B",
     "architecture": "VoxCPM2 (2B)",
@@ -66,7 +68,7 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante",
-    "uses_reference": true,
+    "modes": ["ref"],
     "model_class": "non-llm",
     "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",
@@ -80,7 +82,7 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem",
-    "uses_reference": true,
+    "modes": ["ref"],
     "model_class": "non-llm",
     "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",
@@ -94,7 +96,7 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Ewe",
-    "uses_reference": true,
+    "modes": ["ref"],
     "model_class": "non-llm",
     "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",

@@ -111,18 +111,32 @@ def _slug(model_id):
 
 
 def load_tts_models(subset):
-    """Load models eligible for *subset* from data/tts_models.json."""
+    """Models eligible for *subset*, expanded into their inference modes.
+
+    A model that can read both with and without a reference clip is two
+    entries — "<model>-ref" and "<model>-noref" — scored separately, because
+    the two are different systems from a user's point of view and the
+    difference is worth measuring rather than deciding.
+    """
     path = Path(__file__).parent.parent / "data" / "tts_models.json"
     if not path.exists():
         return []
     with open(path, encoding="utf-8") as f:
         all_models = json.load(f)
     iso = subset_to_iso(subset)
+
     ret = []
     for m in all_models:
         langs = m.get("languages", [])
-        if iso in langs or "all" in langs:
-            ret.append(m)
+        if iso not in langs and "all" not in langs:
+            continue
+        modes = m.get("modes") or (["ref"] if m.get("uses_reference") else ["noref"])
+        for mode in modes:
+            entry = {**m, "model_id": m["name"], "mode": mode}
+            if len(modes) > 1:
+                entry["name"] = f"{m['name']}-{mode}"
+            entry["uses_reference"] = mode == "ref"
+            ret.append(entry)
     return ret
 
 
@@ -490,7 +504,11 @@ def _model_result(model_info, by_category, sample_clip=None, prompt_source=None)
     mean_wer = round(sum(wers) / len(wers), 4) if wers else None
     result = {
         "model": model_id,
-        "model_url": model_info.get("url", f"https://huggingface.co/{model_id}"),
+        # The variant reports separately, but links to the one repo it runs.
+        "model_url": model_info.get(
+            "url", f"https://huggingface.co/{model_info.get('model_id', model_id)}"
+        ),
+        "mode": model_info.get("mode", "noref"),
         "owner": model_id.split("/")[0],
         "architecture": model_info.get("architecture", "unknown"),
         # Mirrors the ASR benchmark's tracks: non-llm / api / llm.

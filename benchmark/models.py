@@ -73,8 +73,10 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
 
     Returns an instance of BaseTTSModel.
     """
-    lower = model_id.lower()
     meta = kwargs.pop("meta", None) or _model_meta(model_id)
+    # A variant ("…-ref"/"…-noref") reports separately but loads one repo.
+    model_id = meta.get("model_id", model_id)
+    lower = model_id.lower()
     meta = {**meta, "recipe": _recipe_for(model_id, iso)}
 
     # A recipe may take over loading entirely.
@@ -250,11 +252,11 @@ class BaseTTSModel(abc.ABC):
 class VoxCPMWrapper(BaseTTSModel):
     """VoxCPM v1 (0.7B) — ghana-tts-72k / ghana-tts-36k.
 
-    Orthographic input, 16 kHz output.  No reference clip: v1's only prompt
-    mechanism is continuation (``prompt_wav_path`` + ``prompt_text``), and the
-    model speaks the prompt before the sentence — the judge hears the
-    reference verse followed by the target, which is not what was asked for.
-    VoxCPM2's ``reference_wav_path`` is isolated and does not do this.
+    Orthographic input, 16 kHz output.  Voice-prompted through
+    ``prompt_wav_path`` + ``prompt_text``: the library concatenates the two
+    texts as ``prompt_text + target_text`` with no separator, so the prompt
+    transcript is given a trailing space to keep the two from running
+    together.
     """
 
     SAMPLE_RATE = 16000
@@ -306,7 +308,8 @@ class VoxCPMWrapper(BaseTTSModel):
         if self.ref_wav:
             kwargs["prompt_wav_path"] = self.ref_wav
             if self.ref_text:
-                kwargs["prompt_text"] = self.ref_text
+                # The library joins prompt and target with no separator.
+                kwargs["prompt_text"] = self.ref_text.rstrip() + " "
         # voxcpm's generate() has no language kwarg — the model is
         # language-conditioned through the text/prompt only.
         return self.model.generate(text, **kwargs)

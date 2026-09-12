@@ -539,10 +539,11 @@ function transcriptLink(iso, category, model, pc) {
 }
 
 function promptedBadge(row) {
-  if (!row.prompted) return "";
+  if (!row.prompted && row.mode !== "ref") return "";
   const src = row.prompt_source ? ` Clip: ${row.prompt_source}.` : "";
-  return `<span class="prompted" title="Evaluated with a reference clip, which is the `
-       + `recommended inference setting for this model.${src}">ref audio</span>`;
+  return `<span class="prompted" title="Evaluated with a reference clip.${src} `
+       + `Models that can also read without one are listed separately as -noref, `
+       + `so the two modes can be compared.">ref audio</span>`;
 }
 
 function modelCell(row) {
@@ -730,6 +731,7 @@ async function main() {
           valid: b.valid || 0,
           per_category: b.per_category || {},
           prompted: String(b.prompted).toLowerCase() === "true",
+          mode: b.mode || "noref",
           prompt_source: b.prompt_source || "",
           sample_clip: b.sample_clip || "",
           sample_category: b.sample_category || "",
