@@ -97,7 +97,7 @@ benchmarks:
       cer: 0.1242
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00003'
@@ -217,7 +217,7 @@ benchmarks:
   model_url: https://huggingface.co/k2-fsa/OmniVoice
   mode: ref
   owner: k2-fsa
-  architecture: OmniVoice (voice cloning)
+  architecture: OmniVoice (voice cloning + voice design)
   model_class: non-llm
   params: '?'
   cer: 0.1944
@@ -259,6 +259,28 @@ benchmarks:
   source: evaluated
   sample_category: education
   sample_clip: '00003'
+- model: Google/gemini-3.1-flash-tts-preview
+  model_url: https://ai.google.dev/gemini-api/docs/speech-generation
+  mode: noref
+  owner: Google
+  architecture: Google Gemini 3.1 Flash TTS (API)
+  model_class: api
+  params: API
+  cer: 0.2394
+  wer: 0.6851
+  score: 0.2394
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6851
+      cer: 0.2394
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
 - model: multilingual-tts/VITS-OpenBible-Twi-Asante
   model_url: https://huggingface.co/multilingual-tts/VITS-OpenBible-Twi-Asante
   mode: noref
@@ -278,6 +300,50 @@ benchmarks:
       samples: 200
       valid: 200
       avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: k2-fsa/OmniVoice-design
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: design
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: '?'
+  cer: 0.2932
+  wer: 0.789
+  score: 0.2932
+  samples: 200
+  valid: 192
+  per_category:
+    education:
+      wer: 0.789
+      cer: 0.2932
+      samples: 200
+      valid: 192
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: k2-fsa/OmniVoice-noref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: noref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: '?'
+  cer: 0.3169
+  wer: 0.7853
+  score: 0.3169
+  samples: 200
+  valid: 191
+  per_category:
+    education:
+      wer: 0.7853
+      cer: 0.3169
+      samples: 200
+      valid: 191
+      avg_seconds_per_sample: 0.03
   source: evaluated
   sample_category: education
   sample_clip: '00003'

@@ -16,18 +16,18 @@ benchmarks:
   architecture: VoxCPM v1 (0.7B)
   model_class: non-llm
   params: 0.7B
-  cer: 0.1021
-  wer: 0.5203
-  score: 0.1021
+  cer: 0.102
+  wer: 0.5202
+  score: 0.102
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.5203
-      cer: 0.1021
+      wer: 0.5202
+      cer: 0.102
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.24
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Dangme_ada
@@ -40,18 +40,18 @@ benchmarks:
   architecture: VoxCPM v1 (0.7B)
   model_class: non-llm
   params: 0.7B
-  cer: 0.1062
-  wer: 0.5424
-  score: 0.1062
+  cer: 0.1061
+  wer: 0.542
+  score: 0.1061
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.5424
-      cer: 0.1062
+      wer: 0.542
+      cer: 0.1061
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.55
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Dangme_ada
@@ -64,19 +64,43 @@ benchmarks:
   architecture: VoxCPM v1 (0.7B)
   model_class: non-llm
   params: 0.7B
-  cer: 0.1468
+  cer: 0.1466
   wer: 0.59
-  score: 0.1468
+  score: 0.1466
   samples: 200
   valid: 200
   per_category:
     education:
       wer: 0.59
-      cer: 0.1468
+      cer: 0.1466
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.57
+      avg_seconds_per_sample: 0.0
   source: evaluated
+  sample_category: education
+  sample_clip: '00013'
+- model: k2-fsa/OmniVoice-ref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: ref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: '?'
+  cer: 0.1466
+  wer: 0.6179
+  score: 0.1466
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6179
+      cer: 0.1466
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 6.59
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Dangme_ada
   sample_category: education
   sample_clip: '00013'
 - model: KhayaAI/khaya-tts-v2
@@ -86,18 +110,62 @@ benchmarks:
   architecture: Khaya AI TTS v2 API
   model_class: api
   params: API
-  cer: 0.1694
-  wer: 0.4294
-  score: 0.1694
+  cer: 0.1696
+  wer: 0.43
+  score: 0.1696
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.4294
-      cer: 0.1694
+      wer: 0.43
+      cer: 0.1696
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.41
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00013'
+- model: Google/gemini-3.1-flash-tts-preview
+  model_url: https://ai.google.dev/gemini-api/docs/speech-generation
+  mode: noref
+  owner: Google
+  architecture: Google Gemini 3.1 Flash TTS (API)
+  model_class: api
+  params: API
+  cer: 0.1879
+  wer: 0.7411
+  score: 0.1879
+  samples: 200
+  valid: 199
+  per_category:
+    education:
+      wer: 0.7411
+      cer: 0.1879
+      samples: 200
+      valid: 199
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00013'
+- model: k2-fsa/OmniVoice-design
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: design
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: '?'
+  cer: 0.2467
+  wer: 0.6398
+  score: 0.2467
+  samples: 200
+  valid: 189
+  per_category:
+    education:
+      wer: 0.6398
+      cer: 0.2467
+      samples: 200
+      valid: 189
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00013'
@@ -108,18 +176,40 @@ benchmarks:
   architecture: VoxCPM v1 (0.7B)
   model_class: non-llm
   params: 0.7B
-  cer: 0.2599
+  cer: 0.26
   wer: 0.6623
-  score: 0.2599
+  score: 0.26
   samples: 200
   valid: 200
   per_category:
     education:
       wer: 0.6623
-      cer: 0.2599
+      cer: 0.26
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 4.6
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00013'
+- model: k2-fsa/OmniVoice-noref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: noref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: '?'
+  cer: 0.2903
+  wer: 0.6554
+  score: 0.2903
+  samples: 200
+  valid: 189
+  per_category:
+    education:
+      wer: 0.6554
+      cer: 0.2903
+      samples: 200
+      valid: 189
+      avg_seconds_per_sample: 2.67
   source: evaluated
   sample_category: education
   sample_clip: '00013'

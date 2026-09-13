@@ -27,7 +27,7 @@ benchmarks:
       cer: 0.0377
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.45
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00005'
@@ -187,8 +187,32 @@ benchmarks:
       cer: 0.0687
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.41
+      avg_seconds_per_sample: 0.0
   source: evaluated
+  sample_category: education
+  sample_clip: '00005'
+- model: k2-fsa/OmniVoice-ref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: ref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: '?'
+  cer: 0.0714
+  wer: 0.4803
+  score: 0.0714
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.4803
+      cer: 0.0714
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
   sample_category: education
   sample_clip: '00005'
 - model: ghananlpcommunity/ghana-tts-36k-noref
@@ -213,6 +237,28 @@ benchmarks:
   source: evaluated
   sample_category: education
   sample_clip: '00005'
+- model: Google/gemini-3.1-flash-tts-preview
+  model_url: https://ai.google.dev/gemini-api/docs/speech-generation
+  mode: noref
+  owner: Google
+  architecture: Google Gemini 3.1 Flash TTS (API)
+  model_class: api
+  params: API
+  cer: 0.173
+  wer: 0.7594
+  score: 0.173
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.7594
+      cer: 0.173
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00005'
 - model: ghananlpcommunity/ghana-tts-72k-noref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   mode: noref
@@ -231,6 +277,50 @@ benchmarks:
       cer: 0.1811
       samples: 200
       valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00005'
+- model: k2-fsa/OmniVoice-design
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: design
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: '?'
+  cer: 0.1983
+  wer: 0.6673
+  score: 0.1983
+  samples: 200
+  valid: 193
+  per_category:
+    education:
+      wer: 0.6673
+      cer: 0.1983
+      samples: 200
+      valid: 193
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00005'
+- model: k2-fsa/OmniVoice-noref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: noref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: '?'
+  cer: 0.2145
+  wer: 0.6924
+  score: 0.2145
+  samples: 200
+  valid: 191
+  per_category:
+    education:
+      wer: 0.6924
+      cer: 0.2145
+      samples: 200
+      valid: 191
       avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education

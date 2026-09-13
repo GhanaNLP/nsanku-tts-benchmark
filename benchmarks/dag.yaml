@@ -13,21 +13,21 @@ benchmarks:
   model_url: https://huggingface.co/k2-fsa/OmniVoice
   mode: ref
   owner: k2-fsa
-  architecture: OmniVoice (voice cloning)
+  architecture: OmniVoice (voice cloning + voice design)
   model_class: non-llm
   params: '?'
-  cer: 0.0511
-  wer: 0.3453
-  score: 0.0511
+  cer: 0.0515
+  wer: 0.3445
+  score: 0.0515
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.3453
-      cer: 0.0511
+      wer: 0.3445
+      cer: 0.0515
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 1.79
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Dagbani_dag
@@ -41,13 +41,13 @@ benchmarks:
   model_class: non-llm
   params: 0.7B
   cer: 0.052
-  wer: 0.3841
+  wer: 0.3864
   score: 0.052
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.3841
+      wer: 0.3864
       cer: 0.052
       samples: 200
       valid: 200
@@ -86,15 +86,15 @@ benchmarks:
   architecture: VoxCPM v1 (0.7B)
   model_class: non-llm
   params: 0.7B
-  cer: 0.0584
-  wer: 0.3767
-  score: 0.0584
+  cer: 0.0586
+  wer: 0.376
+  score: 0.0586
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.3767
-      cer: 0.0584
+      wer: 0.376
+      cer: 0.0586
       samples: 200
       valid: 200
       avg_seconds_per_sample: 0.0
@@ -135,16 +135,38 @@ benchmarks:
   model_class: non-llm
   params: 0.7B
   cer: 0.124
-  wer: 0.5026
+  wer: 0.5021
   score: 0.124
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.5026
+      wer: 0.5021
       cer: 0.124
       samples: 200
       valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00002'
+- model: k2-fsa/OmniVoice-design
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: design
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: '?'
+  cer: 0.1302
+  wer: 0.4195
+  score: 0.1302
+  samples: 200
+  valid: 198
+  per_category:
+    education:
+      wer: 0.4195
+      cer: 0.1302
+      samples: 200
+      valid: 198
       avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
@@ -156,18 +178,40 @@ benchmarks:
   architecture: VoxCPM2 (2B)
   model_class: non-llm
   params: 2B
-  cer: 0.1309
+  cer: 0.1316
   wer: 0.4839
-  score: 0.1309
+  score: 0.1316
   samples: 200
   valid: 200
   per_category:
     education:
       wer: 0.4839
-      cer: 0.1309
+      cer: 0.1316
       samples: 200
       valid: 200
       avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00002'
+- model: k2-fsa/OmniVoice-noref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: noref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: '?'
+  cer: 0.133
+  wer: 0.4184
+  score: 0.133
+  samples: 200
+  valid: 197
+  per_category:
+    education:
+      wer: 0.4184
+      cer: 0.133
+      samples: 200
+      valid: 197
+      avg_seconds_per_sample: 6.35
   source: evaluated
   sample_category: education
   sample_clip: '00002'
@@ -178,15 +222,37 @@ benchmarks:
   architecture: VoxCPM v1 (0.7B)
   model_class: non-llm
   params: 0.7B
-  cer: 0.1558
-  wer: 0.5157
-  score: 0.1558
+  cer: 0.156
+  wer: 0.5164
+  score: 0.156
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.5157
-      cer: 0.1558
+      wer: 0.5164
+      cer: 0.156
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00002'
+- model: Google/gemini-3.1-flash-tts-preview
+  model_url: https://ai.google.dev/gemini-api/docs/speech-generation
+  mode: noref
+  owner: Google
+  architecture: Google Gemini 3.1 Flash TTS (API)
+  model_class: api
+  params: API
+  cer: 0.16
+  wer: 0.6889
+  score: 0.16
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6889
+      cer: 0.16
       samples: 200
       valid: 200
       avg_seconds_per_sample: 0.0
