@@ -7,7 +7,7 @@ scoring: cer
 judge:
   model: Qlerqly/griot-nano-1
   cer_on_real_speech: 0.2212
-updated: '2026-09-12'
+updated: '2026-09-13'
 benchmarks:
 - model: KhayaAI/khaya-tts-v2
   model_url: https://translation.ghananlp.org
@@ -77,6 +77,28 @@ benchmarks:
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi
+  sample_category: education
+  sample_clip: '00003'
+- model: facebook/mms-tts-aka
+  model_url: https://huggingface.co/facebook/mms-tts-aka
+  mode: noref
+  owner: facebook
+  architecture: Meta MMS VITS (per-language)
+  model_class: non-llm
+  params: 0.04B
+  cer: 0.1242
+  wer: 0.4833
+  score: 0.1242
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.4833
+      cer: 0.1242
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.03
+  source: evaluated
   sample_category: education
   sample_clip: '00003'
 - model: ghananlpcommunity/ghana-tts-36k-noref
@@ -209,7 +231,7 @@ benchmarks:
       cer: 0.1944
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi
@@ -277,7 +299,7 @@ benchmarks:
       cer: 0.3195
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi

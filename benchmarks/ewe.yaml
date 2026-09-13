@@ -7,8 +7,30 @@ scoring: cer
 judge:
   model: facebook/omniASR-LLM-7B-v2
   cer_on_real_speech: 0.1065
-updated: '2026-09-12'
+updated: '2026-09-13'
 benchmarks:
+- model: facebook/mms-tts-ewe
+  model_url: https://huggingface.co/facebook/mms-tts-ewe
+  mode: noref
+  owner: facebook
+  architecture: Meta MMS VITS (per-language)
+  model_class: non-llm
+  params: 0.04B
+  cer: 0.0377
+  wer: 0.2589
+  score: 0.0377
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.2589
+      cer: 0.0377
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.45
+  source: evaluated
+  sample_category: education
+  sample_clip: '00005'
 - model: FarmerlineML/voxcpm2-ewe-sft-noref
   model_url: https://huggingface.co/FarmerlineML/voxcpm2-ewe-sft
   mode: noref
@@ -147,6 +169,28 @@ benchmarks:
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
   sample_category: education
   sample_clip: '00005'
+- model: Sunbird/orpheus-3b-tts-multilingual
+  model_url: https://huggingface.co/Sunbird/orpheus-3b-tts-multilingual
+  mode: noref
+  owner: Sunbird
+  architecture: Orpheus-3B (autoregressive LLM over SNAC 24 kHz)
+  model_class: llm
+  params: 3B
+  cer: 0.0687
+  wer: 0.3031
+  score: 0.0687
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.3031
+      cer: 0.0687
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.41
+  source: evaluated
+  sample_category: education
+  sample_clip: '00005'
 - model: ghananlpcommunity/ghana-tts-36k-noref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: noref
@@ -209,7 +253,7 @@ benchmarks:
       cer: 0.3224
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.42
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
