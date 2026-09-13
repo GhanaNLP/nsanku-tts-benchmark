@@ -1030,6 +1030,13 @@ class GeminiTTSWrapper(BaseTTSModel):
             },
         }
         resp = session.post(self.API_URL, json=body, timeout=60)
+        if resp.status_code in (429, 500, 502, 503, 504):
+            # Shared-key 429s, or a flaky preview — back off and retry. Gemini
+            # throttles globally per key at 200 rpm across every parallel
+            # language job, so one job's 429 is NOT a per-model error.
+            time.sleep(5.0)
+            return self.synthesize(text, lang=lang, speaker_id=speaker_id,
+                                   output_format=output_format)
         if resp.status_code != 200:
             raise RuntimeError(f"Gemini TTS {resp.status_code}: {resp.text[:200]}")
         data = resp.json()["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
