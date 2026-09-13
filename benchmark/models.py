@@ -494,10 +494,13 @@ def _merged_espeak_data(model_data_dir):
 
 
 class OmniVoiceWrapper(BaseTTSModel):
-    """k2-fsa/OmniVoice — voice cloning from a reference clip, 24 kHz.
+    """k2-fsa/OmniVoice — voice cloning and voice design, 24 kHz.
 
-    Needs transformers 5.x, so it runs in its own image (see the "stack"
-    field in the registry).
+    In the default (ref) mode it clones the voice of a reference clip. In
+    design mode it reads the voice from the ``VOICE_DESIGN`` instruct text
+    instead and lets OmniVoice auto-detect everything else (language, any
+    attribute the instruct doesn't mention). Needs transformers 5.x, so it
+    runs in its own image (see the "stack" field in the registry).
     """
 
     SAMPLE_RATE = 24000
@@ -528,15 +531,22 @@ class OmniVoiceWrapper(BaseTTSModel):
 
     def synthesize(self, text, lang="twi"):
         self._ensure_loaded()
-        if self.ref_wav is None:
-            from .config import HF_TOKEN
+        if self.meta.get("mode") == "design":
+            # Voice design: only text (required) and the design instruct are
+            # set; language and everything unmentioned is auto-detected by the
+            # model (instruct=None means "auto" for the whole voice too).
+            instruct = _knob(self.meta, "VOICE_DESIGN")
+            audio = self.model.generate(text=text, instruct=instruct)
+        else:
+            if self.ref_wav is None:
+                from .config import HF_TOKEN
 
-            self.ref_wav, self.ref_text, self.ref_source = reference_clip(
-                self.iso, self.meta, HF_TOKEN
+                self.ref_wav, self.ref_text, self.ref_source = reference_clip(
+                    self.iso, self.meta, HF_TOKEN
+                )
+            audio = self.model.generate(
+                text=text, ref_audio=self.ref_wav, ref_text=self.ref_text
             )
-        audio = self.model.generate(
-            text=text, ref_audio=self.ref_wav, ref_text=self.ref_text
-        )
         if isinstance(audio, (list, tuple)):
             if not audio:
                 raise RuntimeError("OmniVoice returned no audio")

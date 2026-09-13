@@ -245,7 +245,7 @@
   },
   {
     "name": "k2-fsa/OmniVoice",
-    "architecture": "OmniVoice (voice cloning)",
+    "architecture": "OmniVoice (voice cloning + voice design)",
     "languages": [
       "twi_akuapem",
       "twi_asante",
@@ -258,14 +258,15 @@
     "runner": "omnivoice",
     "stack": "omni",
     "modes": [
-      "ref"
+      "ref",
+      "design"
     ],
     "model_class": "non-llm",
     "params": "?",
     "sample_rate": 24000,
     "license": "apache-2.0",
     "url": "https://huggingface.co/k2-fsa/OmniVoice",
-    "notes": "Multilingual voice cloning; needs transformers 5.x so it runs in its own image"
+    "notes": "Multilingual voice cloning and voice design; needs transformers 5.x so it runs in its own image; design mode leaves language auto-detected"
   },
   {
     "name": "KhayaAI/khaya-tts-v2",
