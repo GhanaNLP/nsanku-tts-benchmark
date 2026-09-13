@@ -14,6 +14,7 @@ import io
 import logging
 import os
 import sys
+import threading
 import wave
 from pathlib import Path
 
@@ -111,6 +112,8 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
         return NanoTwiWrapper(model_id, device=device, meta=meta, **kwargs)
     if lower.startswith("khaya") or "khaya" in lower:
         return KhayaTTSWrapper(model_id, device="cpu", meta=meta, **kwargs)
+    if "gemini" in lower and "tts" in lower:
+        return GeminiTTSWrapper(model_id, device="cpu", meta=meta, **kwargs)
 
     if "kokoro" in lower or "sherpa" in lower:
         raise UnsupportedModel(f"{model_id}: Kokoro/sherpa models not yet supported")
@@ -930,6 +933,109 @@ class KhayaTTSWrapper(BaseTTSModel):
         if resp.status_code != 200:
             raise RuntimeError(f"Khaya TTS {resp.status_code}: {resp.text[:200]}")
         return resp.content
+
+
+class GeminiTTSWrapper(BaseTTSModel):
+    """Google Gemini 3.1 Flash TTS — hosted `generateContent` REST API.
+
+    Endpoint: POST https://generativelanguage.googleapis.com/v1beta/
+             models/gemini-3.1-flash-tts-preview:generateContent
+    Auth header: x-goog-api-key: <GEMINI_API_KEY>
+    Body: {"contents":[{"parts":[{"text": ...}],"role":"user"}],
+           "generationConfig":{
+             "responseModalities":["AUDIO"],
+             "speechConfig":{"voiceConfig":{"prebuiltVoiceConfig":
+                          {"voice_name":"Zephyr","language_code": None}}}}
+    Response: candidates[0].content.parts[0].inlineData.data is base64 PCM
+              audio (L16, 24kHz, 1ch, mono, 16-bit) — no WAV header, so we
+              build one at 24000 Hz.
+
+    Language is auto-detected by the model from the input text (BCP-47 not
+    required), which is exactly why a single wrapper covers every benchmark
+    language with no per-language recipe.
+    """
+
+    API_URL = (
+        "https://generativelanguage.googleapis.com/v1beta/models/"
+        "gemini-3.1-flash-tts-preview:generateContent"
+    )
+
+    # Token bucket: 200 requests / minute, burst 60. Whatever the job's
+    # concurrency, we never exceed the paid-plan rpm.
+    _bucket = {"tokens": 60.0, "last": 0.0, "lock": threading.Lock()}
+    RATE = 200.0 / 60.0  # tokens per second
+
+    def __init__(self, model_id="Google/gemini-3.1-flash-tts-preview",
+                 device="cpu", meta=None, **kwargs):
+        super().__init__(model_id, "cpu")
+        self.meta = meta or {}
+        self.api_key = os.environ.get("GEMINI_API_KEY", "")
+        if not self.api_key:
+            raise ValueError(
+                "GEMINI_API_KEY not set — required for Gemini TTS (export it "
+                "at job runtime; never commit the key)"
+            )
+        self._session = None
+        self._session_name = _knob(self.meta, "SESSION_NAME", "Ask a friend")
+        self._voice_name = _knob(self.meta, "VOICE_NAME", None)
+
+    def _ensure_session(self):
+        import requests
+
+        if self._session is None:
+            self._session = requests.Session()
+            self._session.headers.update({
+                "x-goog-api-key": self.api_key,
+                "Content-Type": "application/json",
+            })
+        return self._session
+
+    def _acquire(self):
+        """Block until a request token is available (200 rpm, burst 60)."""
+        import time
+
+        now = time.monotonic()
+        b = self._bucket
+        with b["lock"]:
+            if b["last"]:
+                b["tokens"] = min(60.0, b["tokens"] + (now - b["last"]) * self.RATE)
+            b["last"] = now
+            if b["tokens"] >= 1.0:
+                b["tokens"] -= 1.0
+                return
+        time.sleep(0.05)
+        self._acquire()
+
+    def synthesize(self, text, lang=None, speaker_id=None, output_format="wav"):
+        import base64
+
+        self._acquire()
+        session = self._ensure_session()
+        body = {
+            "contents": [
+                {
+                    "role": "user",
+                    "parts": [{"text": text}],
+                }
+            ],
+            "generationConfig": {
+                "responseModalities": ["AUDIO"],
+                "speechConfig": {
+                    "voiceConfig": {
+                        "prebuiltVoiceConfig": {
+                            "voice_name": self._voice_name or "Zephyr",
+                        }
+                    }
+                }
+            },
+        }
+        resp = session.post(self.API_URL, json=body, timeout=60)
+        if resp.status_code != 200:
+            raise RuntimeError(f"Gemini TTS {resp.status_code}: {resp.text[:200]}")
+        data = resp.json()["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
+        pcm = np.frombuffer(base64.b64decode(data), dtype=np.int16).astype(np.float32) / 32768.0
+        return _wav_bytes(pcm, sample_rate=24000)
+
 
 def _check_wrappers():
     """Every wrapper the dispatcher can return must exist.

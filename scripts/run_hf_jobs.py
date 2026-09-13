@@ -85,7 +85,11 @@ def main():
 
     subsets = [s for s in args.langs.replace(",", " ").split() if s] or available_subsets()
     token = os.environ.get("HF_TOKEN")
-    secrets = {"HF_TOKEN": token, "KHAYA_API_KEY": os.environ.get("KHAYA_API_KEY", "")}
+    secrets = {
+        "HF_TOKEN": token,
+        "KHAYA_API_KEY": os.environ.get("KHAYA_API_KEY", ""),
+        "GEMINI_API_KEY": os.environ.get("GEMINI_API_KEY", ""),
+    }
 
     planned = []
     if args.stage in ("all", "synth"):

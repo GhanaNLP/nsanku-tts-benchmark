@@ -1,12 +1,28 @@
 [
   {
     "name": "ghananlpcommunity/ghana-tts-72k",
-    "modes": ["ref", "noref"],
-        "lang_tag": "ghana-tts",
+    "modes": [
+      "ref",
+      "noref"
+    ],
+    "lang_tag": "ghana-tts",
     "model_class": "non-llm",
     "params": "0.7B",
     "architecture": "VoxCPM v1 (0.7B)",
-    "languages": ["twi_akuapem", "twi_asante", "ewe", "dag", "gaa", "fat", "ada", "dga", "gjn", "gur", "nzi", "xsm"],
+    "languages": [
+      "twi_akuapem",
+      "twi_asante",
+      "ewe",
+      "dag",
+      "gaa",
+      "fat",
+      "ada",
+      "dga",
+      "gjn",
+      "gur",
+      "nzi",
+      "xsm"
+    ],
     "input_type": "orthographic",
     "sample_rate": 16000,
     "license": "MIT",
@@ -15,12 +31,28 @@
   },
   {
     "name": "ghananlpcommunity/ghana-tts-36k",
-    "modes": ["ref", "noref"],
-        "lang_tag": "ghana-tts",
+    "modes": [
+      "ref",
+      "noref"
+    ],
+    "lang_tag": "ghana-tts",
     "model_class": "non-llm",
     "params": "0.7B",
     "architecture": "VoxCPM v1 (0.7B)",
-    "languages": ["twi_akuapem", "twi_asante", "ewe", "dag", "gaa", "fat", "ada", "dga", "gjn", "gur", "nzi", "xsm"],
+    "languages": [
+      "twi_akuapem",
+      "twi_asante",
+      "ewe",
+      "dag",
+      "gaa",
+      "fat",
+      "ada",
+      "dga",
+      "gjn",
+      "gur",
+      "nzi",
+      "xsm"
+    ],
     "input_type": "orthographic",
     "sample_rate": 16000,
     "license": "MIT",
@@ -29,11 +61,17 @@
   },
   {
     "name": "FarmerlineML/voxcpm2-akan-sft",
-    "modes": ["ref", "noref"],
+    "modes": [
+      "ref",
+      "noref"
+    ],
     "model_class": "non-llm",
     "params": "2B",
     "architecture": "VoxCPM2 (2B)",
-    "languages": ["twi_asante", "twi_akuapem"],
+    "languages": [
+      "twi_asante",
+      "twi_akuapem"
+    ],
     "input_type": "orthographic",
     "sample_rate": 48000,
     "license": "apache-2.0",
@@ -42,11 +80,16 @@
   },
   {
     "name": "FarmerlineML/voxcpm2-dagbani-sft",
-    "modes": ["ref", "noref"],
+    "modes": [
+      "ref",
+      "noref"
+    ],
     "model_class": "non-llm",
     "params": "2B",
     "architecture": "VoxCPM2 (2B)",
-    "languages": ["dag"],
+    "languages": [
+      "dag"
+    ],
     "input_type": "orthographic",
     "sample_rate": 48000,
     "license": "apache-2.0",
@@ -55,11 +98,16 @@
   },
   {
     "name": "FarmerlineML/voxcpm2-ewe-sft",
-    "modes": ["ref", "noref"],
+    "modes": [
+      "ref",
+      "noref"
+    ],
     "model_class": "non-llm",
     "params": "2B",
     "architecture": "VoxCPM2 (2B)",
-    "languages": ["ewe"],
+    "languages": [
+      "ewe"
+    ],
     "input_type": "orthographic",
     "sample_rate": 48000,
     "license": "apache-2.0",
@@ -68,11 +116,15 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante",
-    "modes": ["ref"],
+    "modes": [
+      "ref"
+    ],
     "model_class": "non-llm",
     "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",
-    "languages": ["twi_asante"],
+    "languages": [
+      "twi_asante"
+    ],
     "input_type": "orthographic",
     "sample_rate": 24000,
     "license": "CC-BY-SA-4.0",
@@ -82,11 +134,15 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem",
-    "modes": ["ref"],
+    "modes": [
+      "ref"
+    ],
     "model_class": "non-llm",
     "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",
-    "languages": ["twi_akuapem"],
+    "languages": [
+      "twi_akuapem"
+    ],
     "input_type": "orthographic",
     "sample_rate": 24000,
     "license": "CC-BY-SA-4.0",
@@ -96,11 +152,15 @@
   },
   {
     "name": "ghananlpcommunity/F5-TTS-OpenBible-Ewe",
-    "modes": ["ref"],
+    "modes": [
+      "ref"
+    ],
     "model_class": "non-llm",
     "params": "0.3B",
     "architecture": "F5-TTS (DiT + Vocos)",
-    "languages": ["ewe"],
+    "languages": [
+      "ewe"
+    ],
     "input_type": "orthographic",
     "sample_rate": 24000,
     "license": "CC-BY-SA-4.0",
@@ -113,7 +173,9 @@
     "model_class": "non-llm",
     "params": "0.03B",
     "architecture": "Matcha-TTS + Vocos ONNX",
-    "languages": ["twi_asante"],
+    "languages": [
+      "twi_asante"
+    ],
     "input_type": "orthographic",
     "sample_rate": 24000,
     "license": "MIT",
@@ -123,7 +185,10 @@
   {
     "name": "ghananlpcommunity/stable-twi-tts",
     "architecture": "Piper VITS (ONNX)",
-    "languages": ["twi_akuapem", "twi_asante"],
+    "languages": [
+      "twi_akuapem",
+      "twi_asante"
+    ],
     "input_type": "orthographic",
     "runner": "stable-twi-tts",
     "model_class": "non-llm",
@@ -136,7 +201,9 @@
   {
     "name": "multilingual-tts/VITS-OpenBible-Twi-Asante",
     "architecture": "VITS (Coqui)",
-    "languages": ["twi_asante"],
+    "languages": [
+      "twi_asante"
+    ],
     "input_type": "orthographic",
     "runner": "coqui-vits",
     "model_class": "non-llm",
@@ -149,7 +216,9 @@
   {
     "name": "multilingual-tts/VITS-OpenBible-Twi-Akuapem",
     "architecture": "VITS (Coqui)",
-    "languages": ["twi_akuapem"],
+    "languages": [
+      "twi_akuapem"
+    ],
     "input_type": "orthographic",
     "runner": "coqui-vits",
     "model_class": "non-llm",
@@ -162,7 +231,9 @@
   {
     "name": "multilingual-tts/VITS-OpenBible-Ewe",
     "architecture": "VITS (Coqui)",
-    "languages": ["ewe"],
+    "languages": [
+      "ewe"
+    ],
     "input_type": "orthographic",
     "runner": "coqui-vits",
     "model_class": "non-llm",
@@ -175,11 +246,20 @@
   {
     "name": "k2-fsa/OmniVoice",
     "architecture": "OmniVoice (voice cloning)",
-    "languages": ["twi_akuapem", "twi_asante", "dag", "fat", "gaa", "gur"],
+    "languages": [
+      "twi_akuapem",
+      "twi_asante",
+      "dag",
+      "fat",
+      "gaa",
+      "gur"
+    ],
     "input_type": "orthographic",
     "runner": "omnivoice",
     "stack": "omni",
-    "modes": ["ref"],
+    "modes": [
+      "ref"
+    ],
     "model_class": "non-llm",
     "params": "?",
     "sample_rate": 24000,
@@ -192,7 +272,20 @@
     "model_class": "api",
     "params": "API",
     "architecture": "Khaya AI TTS v2 API",
-    "languages": ["ada", "dag", "dga", "ewe", "fat", "gaa", "gjn", "gur", "nzi", "twi_akuapem", "twi_asante", "xsm"],
+    "languages": [
+      "ada",
+      "dag",
+      "dga",
+      "ewe",
+      "fat",
+      "gaa",
+      "gjn",
+      "gur",
+      "nzi",
+      "twi_akuapem",
+      "twi_asante",
+      "xsm"
+    ],
     "input_type": "orthographic",
     "sample_rate": 24000,
     "license": "proprietary",
@@ -202,11 +295,15 @@
   {
     "name": "Sunbird/orpheus-3b-tts-multilingual",
     "architecture": "Orpheus-3B (autoregressive LLM over SNAC 24 kHz)",
-    "languages": ["ewe"],
+    "languages": [
+      "ewe"
+    ],
     "input_type": "orthographic",
     "runner": "orpheus",
     "stack": "tts",
-    "modes": ["noref"],
+    "modes": [
+      "noref"
+    ],
     "model_class": "llm",
     "params": "3B",
     "sample_rate": 24000,
@@ -217,10 +314,16 @@
   {
     "name": "facebook/mms-tts-aka",
     "architecture": "Meta MMS VITS (per-language)",
-    "languages": ["twi_asante", "twi_akuapem", "fat"],
+    "languages": [
+      "twi_asante",
+      "twi_akuapem",
+      "fat"
+    ],
     "input_type": "orthographic",
     "runner": "mms-tts",
-    "modes": ["noref"],
+    "modes": [
+      "noref"
+    ],
     "model_class": "non-llm",
     "params": "0.04B",
     "sample_rate": 16000,
@@ -231,15 +334,44 @@
   {
     "name": "facebook/mms-tts-ewe",
     "architecture": "Meta MMS VITS (per-language)",
-    "languages": ["ewe"],
+    "languages": [
+      "ewe"
+    ],
     "input_type": "orthographic",
     "runner": "mms-tts",
-    "modes": ["noref"],
+    "modes": [
+      "noref"
+    ],
     "model_class": "non-llm",
     "params": "0.04B",
     "sample_rate": 16000,
     "license": "CC-BY-NC-4.0",
     "url": "https://huggingface.co/facebook/mms-tts-ewe",
     "notes": "Ewe; VitsModel from transformers, single speaker."
+  },
+  {
+    "architecture": "Google Gemini 3.1 Flash TTS (API)",
+    "input_type": "orthographic",
+    "languages": [
+      "ada",
+      "dag",
+      "dga",
+      "ewe",
+      "fat",
+      "gaa",
+      "gjn",
+      "gur",
+      "nzi",
+      "twi_akuapem",
+      "twi_asante",
+      "xsm"
+    ],
+    "license": "proprietary",
+    "model_class": "api",
+    "name": "Google/gemini-3.1-flash-tts-preview",
+    "notes": "Hosted Gemini API - auto-detects input language (no lang code), prebuilt voice, 24 kHz PCM->wav",
+    "params": "API",
+    "sample_rate": 24000,
+    "url": "https://ai.google.dev/gemini-api/docs/speech-generation"
   }
 ]
