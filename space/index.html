@@ -516,6 +516,11 @@ function cerCell(cer) {
   return `<span class="cer">${fmt(cer)}</span>`;
 }
 
+function licenseCell(lic) {
+  if (!lic) return '<span class="lic na">—</span>';
+  return `<span class="lic">${lic}</span>`;
+}
+
 function fmt(v, digits = 4) {
   return (v == null || !Number.isFinite(v)) ? "—" : v.toFixed(digits);
 }
@@ -590,7 +595,7 @@ function renderGlobal() {
   const ordered = Object.values(best).sort((a, b) => a.e.cer - b.e.cer);
 
   document.getElementById("global-thead").innerHTML =
-    `<tr><th>#</th><th>Language</th><th>Model</th><th>Listen</th><th>Architecture</th><th>Params</th><th>CER</th><th>WER</th>`
+    `<tr><th>#</th><th>Language</th><th>Model</th><th>Listen</th><th>Architecture</th><th>Params</th><th>License</th><th>CER</th><th>WER</th>`
     + categoryHeaders() + `<th>Samples</th><th>ASR judge</th></tr>`;
   document.getElementById("global-body").innerHTML = ordered.length
     ? ordered.map(({ r, e }, i) => `<tr>
@@ -600,13 +605,14 @@ function renderGlobal() {
         <td>${playCell(r)}</td>
         <td>${r.architecture}</td>
         <td>${r.params}</td>
+        <td>${licenseCell(r.license)}</td>
         <td>${cerCell(e.cer)}</td>
         <td>${fmt(e.wer)}</td>
         ${categoryCells(r)}
         <td>${e.samples}</td>
         <td style="font-size:0.82rem">${r.judge} <span style="color:var(--text-muted)">(${fmt(r.judge_cer, 3)})</span></td>
       </tr>`).join("")
-    : '<tr><td colspan="13" class="empty-row">No results for this track yet.</td></tr>';
+    : '<tr><td colspan="14" class="empty-row">No results for this track yet.</td></tr>';
   wirePlayers(document.getElementById("global-body"));
 }
 
@@ -627,7 +633,7 @@ function renderPerLang() {
        ${first.num_samples_per_category} sentences per domain.`
     : "";
   document.getElementById("per-lang-thead").innerHTML =
-    `<tr><th>#</th><th>Model</th><th>Listen</th><th>Architecture</th><th>Params</th><th>CER</th><th>WER</th>`
+    `<tr><th>#</th><th>Model</th><th>Listen</th><th>Architecture</th><th>Params</th><th>License</th><th>CER</th><th>WER</th>`
     + categoryHeaders() + `<th>Samples</th></tr>`;
   document.getElementById("per-lang-body").innerHTML = scored.length
     ? scored.map(({ r, e }, i) => `<tr>
@@ -636,12 +642,13 @@ function renderPerLang() {
         <td>${playCell(r)}</td>
         <td>${r.architecture}</td>
         <td>${r.params}</td>
+        <td>${licenseCell(r.license)}</td>
         <td>${cerCell(e.cer)}</td>
         <td>${fmt(e.wer)}</td>
         ${categoryCells(r)}
         <td>${e.samples}</td>
       </tr>`).join("")
-    : '<tr><td colspan="10" class="empty-row">Nothing scored for this language yet.</td></tr>';
+    : '<tr><td colspan="11" class="empty-row">Nothing scored for this language yet.</td></tr>';
   document.getElementById("per-lang-fail-body").innerHTML = failed.length
     ? failed.map(({ r }) => `<tr><td>${modelCell(r)}</td><td>${r.architecture}</td>
         <td><span class="badge badge-fail">no valid output</span></td></tr>`).join("")
@@ -658,7 +665,7 @@ function renderAll() {
                  || (a.e.cer == null) - (b.e.cer == null) || a.e.cer - b.e.cer);
 
   document.getElementById("all-thead").innerHTML =
-    `<tr><th>Language</th><th>Model</th><th>Listen</th><th>Architecture</th><th>Params</th><th>CER</th><th>WER</th>`
+    `<tr><th>Language</th><th>Model</th><th>Listen</th><th>Architecture</th><th>Params</th><th>License</th><th>CER</th><th>WER</th>`
     + categoryHeaders() + `<th>Samples</th><th>ASR judge</th></tr>`;
   document.getElementById("all-body").innerHTML = rows.length
     ? rows.map(({ r, e }) => `<tr>
@@ -667,13 +674,14 @@ function renderAll() {
         <td>${playCell(r)}</td>
         <td>${r.architecture}</td>
         <td>${r.params}</td>
+        <td>${licenseCell(r.license)}</td>
         <td>${cerCell(e.cer)}</td>
         <td>${fmt(e.wer)}</td>
         ${categoryCells(r)}
         <td>${e.samples}</td>
         <td style="font-size:0.82rem">${r.judge}</td>
       </tr>`).join("")
-    : '<tr><td colspan="10" class="empty-row">Nothing matches.</td></tr>';
+    : '<tr><td colspan="11" class="empty-row">Nothing matches.</td></tr>';
   document.getElementById("all-count").textContent = `${rows.length} rows`;
   wirePlayers(document.getElementById("all-body"));
 }
@@ -694,6 +702,12 @@ async function main() {
     const languages = parseSimpleYaml(await fetchText(LANG_URL));
     const active = languages.filter(l => l.in_sentences === "true");
     const categories = new Set();
+    let modelLicenses = {};
+    try {
+      modelLicenses = JSON.parse(await fetchText(`${RAW}/data/model_licenses.json`));
+    } catch (e) {
+      console.warn("Could not fetch model licenses", e);
+    }
 
     for (const lang of active) {
       const iso = lang.iso_639_3;
@@ -705,6 +719,8 @@ async function main() {
       }
       (bench.categories || []).forEach(c => categories.add(c));
       for (const b of (bench.benchmarks || [])) {
+        const baseModel = (b.model || "").replace(/-ref$/, "").replace(/-noref$/, "").replace(/-design$/, "");
+        const license = modelLicenses[baseModel] || "";
         ALL_ROWS.push({
           iso,
           language: (lang.name || iso).replace(/_/g, " "),
@@ -714,6 +730,7 @@ async function main() {
           architecture: b.architecture || "",
           model_class: b.model_class || "non-llm",
           params: b.params || "?",
+          license,
           cer: b.cer, wer: b.wer,
           samples: b.samples || 0,
           valid: b.valid || 0,
