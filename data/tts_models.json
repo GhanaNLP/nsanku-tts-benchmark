@@ -265,6 +265,7 @@
     "stack": "omni",
     "modes": [
       "ref",
+      "noref",
       "design"
     ],
     "model_class": "non-llm",
@@ -272,31 +273,7 @@
     "sample_rate": 24000,
     "license": "apache-2.0",
     "url": "https://huggingface.co/k2-fsa/OmniVoice",
-    "notes": "Multilingual voice cloning and voice design; runs in its own image (transformers 5.x). ref mode covers 6 langs with recorded speech; design mode auto-detects language so it runs on all 12.",
-    "mode_languages": {
-      "ref": [
-        "twi_akuapem",
-        "twi_asante",
-        "dag",
-        "fat",
-        "gaa",
-        "gur"
-      ],
-      "design": [
-        "ada",
-        "dag",
-        "dga",
-        "ewe",
-        "fat",
-        "gaa",
-        "gjn",
-        "gur",
-        "nzi",
-        "twi_akuapem",
-        "twi_asante",
-        "xsm"
-      ]
-    }
+    "notes": "Multilingual TTS; runs in its own image (transformers 5.x). ref clones a recorded reference clip for the language; noref is pure auto (model picks the voice); design reads a VOICE_DESIGN instruct. All modes auto-detect language and cover all 12."
   },
   {
     "name": "KhayaAI/khaya-tts-v2",

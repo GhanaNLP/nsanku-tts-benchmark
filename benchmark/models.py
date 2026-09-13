@@ -531,12 +531,17 @@ class OmniVoiceWrapper(BaseTTSModel):
 
     def synthesize(self, text, lang="twi"):
         self._ensure_loaded()
-        if self.meta.get("mode") == "design":
+        mode = self.meta.get("mode")
+        if mode == "design":
             # Voice design: only text (required) and the design instruct are
             # set; language and everything unmentioned is auto-detected by the
             # model (instruct=None means "auto" for the whole voice too).
             instruct = _knob(self.meta, "VOICE_DESIGN")
             audio = self.model.generate(text=text, instruct=instruct)
+        elif mode == "noref":
+            # Pure auto: the model picks the voice (and detects the language)
+            # itself — neither a reference clip nor a voice design.
+            audio = self.model.generate(text=text)
         else:
             if self.ref_wav is None:
                 from .config import HF_TOKEN

@@ -65,6 +65,8 @@ BLURBS = {
                         "VOICE_DESIGN instruct (gender, age, pitch, style, accent, comma\n"
                         "separated). Language is auto-detected; leave VOICE_DESIGN = None\n"
                         "and OmniVoice picks an automatic voice for everything.",
+    "omnivoice-noref": "OmniVoice auto mode: no reference clip, no voice design — the\n"
+                       "model picks both the voice and the language itself.",
     "coqui": "SPEAKER picks a voice from the checkpoint's speaker file; left as None\n"
              "the first speaker is used, which is what a multi-speaker VITS needs to\n"
              "synthesise at all.",
@@ -104,6 +106,7 @@ BLURBS = {
 BODIES = {
     "omnivoice": "REFERENCE_TEXT = None\nREFERENCE_CLIP = None\n",
     "omnivoice-design": "VOICE_DESIGN = None\n",
+    "omnivoice-noref": "# no knobs — pure auto (model picks voice and language)\n",
     "coqui": "SPEAKER = None\n",
     "piper": "VOICE = 'twi-6'\nSYNTH_LANGUAGE = 'twi'\nLENGTH_SCALE = 1.0\n"
              "NOISE_SCALE = 0.667\nNOISE_W = 0.8\n",
@@ -123,7 +126,11 @@ BODIES = {
 def kind_for(model_id, meta):
     lower = model_id.lower()
     if meta.get("runner") == "omnivoice":
-        return "omnivoice-design" if meta.get("mode") == "design" else "omnivoice"
+        if meta.get("mode") == "design":
+            return "omnivoice-design"
+        if meta.get("mode") == "noref":
+            return "omnivoice-noref"
+        return "omnivoice"
     if meta.get("runner") == "coqui-vits":
         return "coqui"
     if meta.get("runner") == "stable-twi-tts":
