@@ -41,11 +41,26 @@ def main():
         print("no results/*.json in the dataset repo yet")
         return
 
+    models_cfg = json.loads((ROOT / "data" / "tts_models.json").read_text(encoding="utf-8"))
+    model_map = {m["name"]: m for m in models_cfg}
+
     for path in files:
         iso = path.stem
         results = json.loads(path.read_text(encoding="utf-8"))
         if not results:
             continue
+        for r in results:
+            model_name = r.get("model", "")
+            base_model = model_name.split("-ref")[0].split("-noref")[0].split("-design")[0]
+            if base_model in model_map:
+                cfg = model_map[base_model]
+                if cfg.get("params"):
+                    r["params"] = cfg["params"]
+                if cfg.get("architecture"):
+                    r["architecture"] = cfg["architecture"]
+                if cfg.get("model_class"):
+                    r["model_class"] = cfg["model_class"]
+
         spec = judge_for(iso)
         samples = max(
             (c.get("samples", 0) for r in results for c in r.get("per_category", {}).values()),

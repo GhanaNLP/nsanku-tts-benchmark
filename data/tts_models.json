@@ -269,7 +269,7 @@
       "design"
     ],
     "model_class": "non-llm",
-    "params": "0.1B",
+    "params": "1B",
     "sample_rate": 24000,
     "license": "apache-2.0",
     "url": "https://huggingface.co/k2-fsa/OmniVoice",
