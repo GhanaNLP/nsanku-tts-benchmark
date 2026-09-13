@@ -702,12 +702,26 @@ async function main() {
     const languages = parseSimpleYaml(await fetchText(LANG_URL));
     const active = languages.filter(l => l.in_sentences === "true");
     const categories = new Set();
-    let modelLicenses = {};
-    try {
-      modelLicenses = JSON.parse(await fetchText(`${RAW}/data/model_licenses.json`));
-    } catch (e) {
-      console.warn("Could not fetch model licenses", e);
-    }
+    const modelLicenses = {
+      "FarmerlineML/voxcpm2-akan-sft": "apache-2.0",
+      "FarmerlineML/voxcpm2-dagbani-sft": "apache-2.0",
+      "FarmerlineML/voxcpm2-ewe-sft": "apache-2.0",
+      "KhayaAI/khaya-tts-v2": "proprietary",
+      "Sunbird/orpheus-3b-tts-multilingual": "apache-2.0",
+      "facebook/mms-tts-aka": "cc-by-nc-4.0",
+      "facebook/mms-tts-ewe": "cc-by-nc-4.0",
+      "ghananlpcommunity/F5-TTS-OpenBible-Ewe": "cc-by-sa-4.0",
+      "ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem": "cc-by-sa-4.0",
+      "ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante": "cc-by-sa-4.0",
+      "ghananlpcommunity/ghana-tts-36k": "mit",
+      "ghananlpcommunity/ghana-tts-72k": "mit",
+      "ghananlpcommunity/nano-twi": "mit",
+      "ghananlpcommunity/stable-twi-tts": "cc-by-nc-4.0",
+      "k2-fsa/OmniVoice": "apache-2.0",
+      "multilingual-tts/VITS-OpenBible-Ewe": "cc-by-sa-4.0",
+      "multilingual-tts/VITS-OpenBible-Twi-Akuapem": "cc-by-sa-4.0",
+      "multilingual-tts/VITS-OpenBible-Twi-Asante": "cc-by-sa-4.0"
+    };
 
     for (const lang of active) {
       const iso = lang.iso_639_3;
