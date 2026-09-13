@@ -131,7 +131,11 @@ def load_tts_models(subset):
         if iso not in langs and "all" not in langs:
             continue
         modes = m.get("modes") or (["ref"] if m.get("uses_reference") else ["noref"])
+        mode_langs = m.get("mode_languages") or {}
         for mode in modes:
+            langs = mode_langs.get(mode)
+            if langs is not None and iso not in langs and "all" not in langs:
+                continue
             entry = {**m, "model_id": m["name"], "mode": mode}
             # Any run that used a reference clip says so in its name, so the
             # board needs no separate marker. A model that only runs without
