@@ -747,13 +747,24 @@ async function main() {
     ALL_CATEGORIES = [...categories].sort();
 
     const scored = ALL_ROWS.filter(r => r.cer != null);
+    const scoredWithEffective = ALL_ROWS.map(r => ({ r, e: effective(r) })).filter(x => x.e.cer != null);
+    let bestRow = null;
+    if (scoredWithEffective.length) {
+      bestRow = scoredWithEffective.reduce((min, cur) => cur.e.cer < min.e.cer ? cur : min);
+    }
     const isos = new Set(scored.map(r => r.iso));
     document.getElementById("stats-grid").innerHTML = `
       <div class="stat-card"><div class="label">Languages</div><div class="value">${isos.size}/${active.length}</div></div>
       <div class="stat-card"><div class="label">Models</div><div class="value">${new Set(ALL_ROWS.map(r => r.model)).size}</div></div>
       <div class="stat-card"><div class="label">Evaluations</div><div class="value">${scored.length}</div></div>
       <div class="stat-card"><div class="label">Domains</div><div class="value">${ALL_CATEGORIES.length}</div></div>
-      <div class="stat-card"><div class="label">Best CER</div><div class="value">${scored.length ? fmt(Math.min(...scored.map(r => r.cer)), 3) : "—"}</div></div>
+      <div class="stat-card">
+        <div class="label">Best CER</div>
+        <div class="value">${bestRow ? fmt(bestRow.e.cer, 3) : "—"}</div>
+        <div style="font-size:0.75rem; color:var(--text-muted); margin-top:3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${bestRow ? bestRow.r.model + ' (' + bestRow.r.language + ')' : ''}">
+          ${bestRow ? `${bestRow.r.model} (${bestRow.r.language})` : ""}
+        </div>
+      </div>
     `;
 
     const boxes = document.getElementById("domain-boxes");
