@@ -83,7 +83,7 @@ benchmarks:
   owner: k2-fsa
   architecture: OmniVoice (voice cloning + voice design)
   model_class: non-llm
-  params: 1B
+  params: 0.6B
   cer: 0.1478
   wer: 0.5203
   score: 0.1478
@@ -175,7 +175,7 @@ benchmarks:
   owner: k2-fsa
   architecture: OmniVoice (voice cloning + voice design)
   model_class: non-llm
-  params: 1B
+  params: 0.6B
   cer: 0.4857
   wer: 0.7478
   score: 0.4857
@@ -197,7 +197,7 @@ benchmarks:
   owner: k2-fsa
   architecture: OmniVoice (voice cloning + voice design)
   model_class: non-llm
-  params: 1B
+  params: 0.6B
   cer: 0.4905
   wer: 0.751
   score: 0.4905
