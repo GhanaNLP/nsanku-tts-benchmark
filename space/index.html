@@ -584,7 +584,36 @@ function effective(row) {
   };
 }
 
+let activeLangCount = 0;
+
+function renderStats() {
+  const track = document.getElementById("global-track-select") ? document.getElementById("global-track-select").value : "non-llm";
+  const rows = ALL_ROWS
+    .filter(r => matchesTrack(r, track))
+    .map(r => ({ r, e: effective(r) }))
+    .filter(x => x.e.cer != null);
+  let bestRow = null;
+  if (rows.length) {
+    bestRow = rows.reduce((min, cur) => cur.e.cer < min.e.cer ? cur : min);
+  }
+  const isos = new Set(rows.map(r => r.iso));
+  document.getElementById("stats-grid").innerHTML = `
+    <div class="stat-card"><div class="label">Languages</div><div class="value">${isos.size}/${activeLangCount}</div></div>
+    <div class="stat-card"><div class="label">Models</div><div class="value">${new Set(rows.map(r => r.model)).size}</div></div>
+    <div class="stat-card"><div class="label">Evaluations</div><div class="value">${rows.length}</div></div>
+    <div class="stat-card"><div class="label">Domains</div><div class="value">${ALL_CATEGORIES.length}</div></div>
+    <div class="stat-card">
+      <div class="label">Best CER</div>
+      <div class="value">${bestRow ? fmt(bestRow.e.cer, 3) : "—"}</div>
+      <div style="font-size:0.75rem; color:var(--text-muted); margin-top:3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${bestRow ? bestRow.r.model + ' (' + bestRow.r.language + ')' : ''}">
+        ${bestRow ? `${bestRow.r.model} (${bestRow.r.language})` : ""}
+      </div>
+    </div>
+  `;
+}
+
 function renderGlobal() {
+  renderStats();
   const track = document.getElementById("global-track-select").value;
   const rows = ALL_ROWS
     .filter(r => matchesTrack(r, track))
@@ -759,27 +788,8 @@ async function main() {
       }
     }
     ALL_CATEGORIES = [...categories].sort();
-
-    const scored = ALL_ROWS.filter(r => r.cer != null);
-    const scoredWithEffective = ALL_ROWS.map(r => ({ r, e: effective(r) })).filter(x => x.e.cer != null);
-    let bestRow = null;
-    if (scoredWithEffective.length) {
-      bestRow = scoredWithEffective.reduce((min, cur) => cur.e.cer < min.e.cer ? cur : min);
-    }
-    const isos = new Set(scored.map(r => r.iso));
-    document.getElementById("stats-grid").innerHTML = `
-      <div class="stat-card"><div class="label">Languages</div><div class="value">${isos.size}/${active.length}</div></div>
-      <div class="stat-card"><div class="label">Models</div><div class="value">${new Set(ALL_ROWS.map(r => r.model)).size}</div></div>
-      <div class="stat-card"><div class="label">Evaluations</div><div class="value">${scored.length}</div></div>
-      <div class="stat-card"><div class="label">Domains</div><div class="value">${ALL_CATEGORIES.length}</div></div>
-      <div class="stat-card">
-        <div class="label">Best CER</div>
-        <div class="value">${bestRow ? fmt(bestRow.e.cer, 3) : "—"}</div>
-        <div style="font-size:0.75rem; color:var(--text-muted); margin-top:3px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;" title="${bestRow ? bestRow.r.model + ' (' + bestRow.r.language + ')' : ''}">
-          ${bestRow ? `${bestRow.r.model} (${bestRow.r.language})` : ""}
-        </div>
-      </div>
-    `;
+    activeLangCount = active.length;
+    renderStats();
 
     const boxes = document.getElementById("domain-boxes");
     boxes.innerHTML = ALL_CATEGORIES.map(c =>
@@ -787,7 +797,7 @@ async function main() {
          <input type="checkbox" class="cat-filter" value="${c}" checked> ${CATEGORY_LABELS[c] || c}
        </label>`).join("");
     boxes.querySelectorAll(".cat-filter").forEach(b =>
-      b.addEventListener("change", () => { renderGlobal(); renderPerLang(); renderAll(); }));
+      b.addEventListener("change", () => { renderGlobal(); renderPerLang(); renderAll(); renderStats(); }));
     // With a single domain there is nothing to compare, so the filter would
     // only be a box that must stay ticked.
     document.getElementById("domain-filters").style.display =
