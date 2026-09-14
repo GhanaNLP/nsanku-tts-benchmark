@@ -43,6 +43,7 @@ FLAVORS = {"synth": "a10g-small", "score": "l40sx1", "api": "cpu-upgrade"}
 # bootstrap here is cheaper than a full image rebuild.
 BOOTSTRAPS = {
     "kasanoma": "apt-get update && apt-get install -y --no-install-recommends espeak-ng",
+    "spark-tts": "pip install omegaconf safetensors soxr einops einx",
 }
 
 
