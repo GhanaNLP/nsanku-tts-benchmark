@@ -110,6 +110,8 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
         return StableTwiWrapper(model_id, device=device, meta=meta, **kwargs)
     if meta.get("runner") == "kasanoma" or "kasanoma" in lower:
         return KasanomaWrapper(model_id, device=device, meta=meta, **kwargs)
+    if meta.get("runner") == "transformers-vits" or "tekyerema" in lower:
+        return TransformersVitsWrapper(model_id, device=device, meta=meta, **kwargs)
     if "nano-twi" in lower:
         return NanoTwiWrapper(model_id, device=device, meta=meta, **kwargs)
     if lower.startswith("khaya") or "khaya" in lower:
@@ -916,6 +918,44 @@ class KasanomaWrapper(BaseTTSModel):
         }
         out = self.session.run(None, feed)[0]
         audio = np.asarray(out, dtype=np.float32).squeeze()
+        return _wav_bytes(audio, sample_rate=self.sample_rate)
+
+
+class TransformersVitsWrapper(BaseTTSModel):
+    """Hugging Face Transformers VitsModel (CPU/CUDA)."""
+
+    def __init__(self, model_id, device="cuda", meta=None, **kwargs):
+        super().__init__(model_id, device)
+        self.model = None
+        self.tokenizer = None
+        self._loaded = False
+        self.meta = meta or {}
+
+    def _ensure_loaded(self):
+        if self._loaded:
+            return
+        import torch
+        from transformers import AutoTokenizer, VitsModel
+        from .config import HF_TOKEN
+
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            self.model_id, token=HF_TOKEN or None
+        )
+        self.model = VitsModel.from_pretrained(
+            self.model_id, token=HF_TOKEN or None
+        ).to(self.device)
+        self.model.eval()
+        self.sample_rate = getattr(self.model.config, "sampling_rate", 16000)
+        self._loaded = True
+        logger.info("Loaded Transformers VitsModel: %s on %s", self.model_id, self.device)
+
+    def synthesize(self, text, lang="twi"):
+        self._ensure_loaded()
+        import torch
+        inputs = self.tokenizer(text, return_tensors="pt").to(self.device)
+        with torch.no_grad():
+            output = self.model(**inputs).waveform
+        audio = output[0].cpu().numpy()
         return _wav_bytes(audio, sample_rate=self.sample_rate)
 
 

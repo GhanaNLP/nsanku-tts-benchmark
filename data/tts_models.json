@@ -398,5 +398,38 @@
     "license": "apache-2.0",
     "url": "https://huggingface.co/ghananlpcommunity/kasanoma-twi",
     "notes": "Kasanoma Twi offline TTS model trained on Piper VITS."
+  },
+  {
+    "name": "ghananlpcommunity/tekyerema-tts-ewe",
+    "architecture": "Tekyerema Ewe VITS (0.03B)",
+    "languages": [
+      "ewe"
+    ],
+    "input_type": "orthographic",
+    "runner": "transformers-vits",
+    "stack": "standard",
+    "model_class": "non-llm",
+    "params": "0.03B",
+    "sample_rate": 16000,
+    "license": "cc-by-nc-4.0",
+    "url": "https://huggingface.co/ghananlpcommunity/tekyerema-tts-ewe",
+    "notes": "Tekyerema Ewe VITS fine-tuned from facebook/mms-tts-ewe."
+  },
+  {
+    "name": "ghananlpcommunity/tekyerema-tts-twi",
+    "architecture": "Tekyerema Twi VITS (0.03B)",
+    "languages": [
+      "twi_akuapem",
+      "twi_asante"
+    ],
+    "input_type": "orthographic",
+    "runner": "transformers-vits",
+    "stack": "standard",
+    "model_class": "non-llm",
+    "params": "0.03B",
+    "sample_rate": 16000,
+    "license": "cc-by-nc-4.0",
+    "url": "https://huggingface.co/ghananlpcommunity/tekyerema-tts-twi",
+    "notes": "Tekyerema Twi VITS fine-tuned from facebook/mms-tts-aka."
   }
 ]

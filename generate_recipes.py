@@ -131,7 +131,7 @@ def kind_for(model_id, meta):
         if meta.get("mode") == "noref":
             return "omnivoice-noref"
         return "omnivoice"
-    if meta.get("runner") == "coqui-vits":
+    if meta.get("runner") == "coqui-vits" or meta.get("runner") == "transformers-vits" or "tekyerema" in lower:
         return "coqui"
     if meta.get("runner") == "stable-twi-tts" or meta.get("runner") == "kasanoma":
         return "piper"
