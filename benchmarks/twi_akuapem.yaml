@@ -277,7 +277,7 @@ benchmarks:
       cer: 0.2772
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00007'
@@ -389,7 +389,7 @@ benchmarks:
       cer: 0.7193
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00007'

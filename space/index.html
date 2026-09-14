@@ -747,7 +747,6 @@ async function main() {
       "ghananlpcommunity/nano-twi": "mit",
       "ghananlpcommunity/stable-twi-tts": "cc-by-nc-4.0",
       "k2-fsa/OmniVoice": "apache-2.0",
-      "ghananlpcommunity/kasanoma-twi": "apache-2.0",
       "ghananlpcommunity/tekyerema-tts-ewe": "cc-by-nc-4.0",
       "ghananlpcommunity/tekyerema-tts-twi": "cc-by-nc-4.0",
       "multilingual-tts/VITS-OpenBible-Ewe": "cc-by-sa-4.0",
@@ -765,6 +764,7 @@ async function main() {
       }
       (bench.categories || []).forEach(c => categories.add(c));
       for (const b of (bench.benchmarks || [])) {
+        if (b.cer != null && b.cer > 0.50) continue;
         const baseModel = (b.model || "").replace(/-ref$/, "").replace(/-noref$/, "").replace(/-design$/, "");
         const license = modelLicenses[baseModel] || "";
         ALL_ROWS.push({

@@ -215,6 +215,28 @@ benchmarks:
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
   sample_category: education
   sample_clip: '00005'
+- model: ghananlpcommunity/tekyerema-tts-ewe
+  model_url: https://huggingface.co/ghananlpcommunity/tekyerema-tts-ewe
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: Tekyerema Ewe VITS (0.03B)
+  model_class: non-llm
+  params: 0.03B
+  cer: 0.1069
+  wer: 0.4318
+  score: 0.1069
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.4318
+      cer: 0.1069
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.48
+  source: evaluated
+  sample_category: education
+  sample_clip: '00005'
 - model: ghananlpcommunity/ghana-tts-36k-noref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: noref
