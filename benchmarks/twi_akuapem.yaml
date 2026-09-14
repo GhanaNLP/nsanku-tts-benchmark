@@ -7,7 +7,7 @@ scoring: cer
 judge:
   model: Qlerqly/griot-nano-1
   cer_on_real_speech: 0.2193
-updated: '2026-09-13'
+updated: '2026-09-14'
 benchmarks:
 - model: ghananlpcommunity/ghana-tts-36k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
@@ -259,6 +259,28 @@ benchmarks:
   source: evaluated
   sample_category: education
   sample_clip: '00007'
+- model: ghananlpcommunity/tekyerema-tts-twi
+  model_url: https://huggingface.co/ghananlpcommunity/tekyerema-tts-twi
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: Tekyerema Twi VITS (0.03B)
+  model_class: non-llm
+  params: 0.03B
+  cer: 0.2772
+  wer: 0.7408
+  score: 0.2772
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.7408
+      cer: 0.2772
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.03
+  source: evaluated
+  sample_category: education
+  sample_clip: '00007'
 - model: ghananlpcommunity/ghana-tts-72k-noref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   mode: noref
@@ -323,7 +345,7 @@ benchmarks:
       cer: 0.3408
       samples: 200
       valid: 190
-      avg_seconds_per_sample: 0.03
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00007'
@@ -346,6 +368,28 @@ benchmarks:
       samples: 200
       valid: 195
       avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00007'
+- model: ghananlpcommunity/kasanoma-twi
+  model_url: https://huggingface.co/ghananlpcommunity/kasanoma-twi
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: Kasanoma Piper VITS (0.06B)
+  model_class: non-llm
+  params: 0.06B
+  cer: 0.7193
+  wer: 0.9729
+  score: 0.7193
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.9729
+      cer: 0.7193
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.03
   source: evaluated
   sample_category: education
   sample_clip: '00007'

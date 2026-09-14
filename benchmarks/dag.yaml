@@ -7,7 +7,7 @@ scoring: cer
 judge:
   model: KhayaAI/khaya-asr-v3
   cer_on_real_speech: 0.1526
-updated: '2026-09-13'
+updated: '2026-09-14'
 benchmarks:
 - model: k2-fsa/OmniVoice-ref
   model_url: https://huggingface.co/k2-fsa/OmniVoice
