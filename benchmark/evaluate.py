@@ -282,6 +282,7 @@ def synthesize_language(subset, model_filter=None, device="cuda", force=False, s
                 results.append((model_id, category, 0, len(todo)))
                 continue
 
+            _seen = set()
             for sample in todo:
                 key = str(sample["index"])
                 try:
@@ -291,8 +292,12 @@ def synthesize_language(subset, model_filter=None, device="cuda", force=False, s
                     errors.pop(key, None)
                     written += 1
                 except Exception as e:
-                    errors[key] = str(e)[:200]
+                    msg = str(e)[:300]
+                    errors[key] = msg
                     failed += 1
+                    if msg not in _seen:
+                        _seen.add(msg)
+                        print(f"      [first error] {msg}")
 
             _save_errors(out_dir, errors)
             elapsed = time.time() - t0
