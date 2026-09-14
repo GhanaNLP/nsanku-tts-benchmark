@@ -108,6 +108,8 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
         return MmsTTSWrapper(model_id, device=device, meta=meta, **kwargs)
     if meta.get("runner") == "stable-twi-tts" or "stable-twi-tts" in lower:
         return StableTwiWrapper(model_id, device=device, meta=meta, **kwargs)
+    if meta.get("runner") == "kasanoma" or "kasanoma" in lower:
+        return KasanomaWrapper(model_id, device=device, meta=meta, **kwargs)
     if "nano-twi" in lower:
         return NanoTwiWrapper(model_id, device=device, meta=meta, **kwargs)
     if lower.startswith("khaya") or "khaya" in lower:
@@ -843,6 +845,78 @@ class StableTwiWrapper(BaseTTSModel):
             noise_w=_knob(self.meta, "NOISE_W", 0.8),
         )
         return _wav_bytes(out.audio, sample_rate=out.sample_rate or self.SAMPLE_RATE)
+
+
+class KasanomaWrapper(BaseTTSModel):
+    """AfriSpeech Kasanoma Twi — Piper VITS ONNX (CPU)."""
+
+    SAMPLE_RATE = 16000
+
+    def __init__(self, model_id, device="cuda", meta=None, **kwargs):
+        super().__init__(model_id, "cpu")  # ONNX, CPU
+        self.model = None
+        self._loaded = False
+        self.meta = meta or {}
+
+    def _ensure_loaded(self):
+        if self._loaded:
+            return
+        import json
+        import onnxruntime as ort
+        from huggingface_hub import snapshot_download
+        from .config import HF_TOKEN
+
+        model_dir = Path(snapshot_download(
+            self.model_id,
+            allow_patterns=["model.onnx", "model.onnx.json"],
+            token=HF_TOKEN or None,
+        ))
+        self.dir = model_dir
+        cfg_path = model_dir / "model.onnx.json"
+        self.config = json.loads(cfg_path.read_text(encoding="utf-8"))
+        self.id_map = self.config["phoneme_id_map"]
+        self.espeak_voice = self.config["espeak"]["voice"]
+        self.sample_rate = self.config.get("audio", {}).get("sample_rate", 16000)
+
+        opts = ort.SessionOptions()
+        opts.log_severity_level = 3
+        self.session = ort.InferenceSession(
+            str(model_dir / "model.onnx"), sess_options=opts,
+            providers=["CPUExecutionProvider"]
+        )
+        self._loaded = True
+        logger.info("Loaded Kasanoma model: %s", self.model_id)
+
+    def synthesize(self, text, lang="twi"):
+        self._ensure_loaded()
+        import subprocess
+        import numpy as np
+
+        cmd = ["espeak-ng", "-v", self.espeak_voice, "-q", "--ipa", text]
+        res = subprocess.run(cmd, capture_output=True, text=True)
+        phonemes = res.stdout.strip()
+
+        ids = []
+        for char in phonemes:
+            if char in self.id_map:
+                ids.extend(self.id_map[char])
+        if "$" in self.id_map:
+            ids = self.id_map["$"] + ids + self.id_map["$"]
+        if not ids:
+            raise ValueError(f"no pronounceable phonemes in {text!r}")
+
+        feed = {
+            "input": np.array([ids], dtype=np.int64),
+            "input_lengths": np.array([len(ids)], dtype=np.int64),
+            "scales": np.array([
+                _knob(self.meta, "NOISE_SCALE", 0.667),
+                _knob(self.meta, "LENGTH_SCALE", 1.0),
+                _knob(self.meta, "NOISE_W", 0.8),
+            ], dtype=np.float32),
+        }
+        out = self.session.run(None, feed)[0]
+        audio = np.asarray(out, dtype=np.float32).squeeze()
+        return _wav_bytes(audio, sample_rate=self.sample_rate)
 
 
 class NanoTwiWrapper(BaseTTSModel):

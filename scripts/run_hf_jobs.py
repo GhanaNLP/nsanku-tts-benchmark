@@ -37,6 +37,14 @@ STACK_IMAGES = {"omni": f"{REGISTRY}:omni"}
 # it is in, omniASR-LLM-7B needs real headroom, everything else fits an A10G.
 FLAVORS = {"synth": "a10g-small", "score": "l40sx1", "api": "cpu-upgrade"}
 
+# Extra packages a model's runtime needs that are not baked into its image.
+# The base tts image carries espeak-ng-data but not the espeak-ng binary, and
+# Kasanoma phonemises with espeak-ng (voice lfn). Jobs run as root, so an apt
+# bootstrap here is cheaper than a full image rebuild.
+BOOTSTRAPS = {
+    "kasanoma": "apt-get update && apt-get install -y --no-install-recommends espeak-ng",
+}
+
 
 def is_api_model(meta):
     return "api" in (meta.get("architecture", "") + meta.get("license", "")).lower()
@@ -49,7 +57,7 @@ def image_for(stage, meta=None):
     return IMAGES[stage]
 
 
-def build_command(stage, subset, model, ref, samples, force, flavor):
+def build_command(stage, subset, model, ref, samples, force, flavor, bootstrap=None):
     unit = (f"--stage {stage} --subset {subset}"
             + (f" --model {model}" if model else "")
             + (f" --samples {samples}" if samples else "")
@@ -61,7 +69,8 @@ def build_command(stage, subset, model, ref, samples, force, flavor):
         "set -eux; "
         f"git clone --depth 1 --branch {ref} {REPO_URL} /app; "
         "cd /app; "
-        f"python -m benchmark.job {unit} --device {device}"
+        + (bootstrap + "; " if bootstrap else "")
+        + f"python -m benchmark.job {unit} --device {device}"
     )
     return ["bash", "-lc", script]
 
@@ -98,7 +107,9 @@ def main():
                 if args.model and args.model.lower() not in info["name"].lower():
                     continue
                 flavor = FLAVORS["api"] if is_api_model(info) else FLAVORS["synth"]
-                planned.append(("synth", subset, info["name"], flavor, info))
+                bootstrap = next((v for k, v in BOOTSTRAPS.items()
+                                  if k in info["name"].lower()), None)
+                planned.append(("synth", subset, info["name"], flavor, info, bootstrap))
     if args.stage in ("all", "score"):
         for subset in subsets:
             spec = judge_for(subset_to_iso(subset))
@@ -106,10 +117,10 @@ def main():
                 continue
             # A hosted judge is a network call, not a GPU workload.
             flavor = FLAVORS["api"] if spec["kind"] == "khaya" else FLAVORS["score"]
-            planned.append(("score", subset, None, flavor, None))
+            planned.append(("score", subset, None, flavor, None, None))
 
     print(f"{len(planned)} job(s) to submit as {NAMESPACE}")
-    for stage, subset, model, flavor, meta in planned:
+    for stage, subset, model, flavor, meta, bootstrap in planned:
         label = f"{stage} {subset}" + (f" / {model}" if model else "")
         if args.dry_run:
             print(f"  [dry-run] {label}  ({flavor})")
@@ -117,7 +128,7 @@ def main():
         job = run_job(
             image=image_for(stage, meta),
             command=build_command(stage, subset, model, args.ref,
-                                  args.samples, args.force, flavor),
+                                  args.samples, args.force, flavor, bootstrap),
             flavor=flavor,
             secrets=secrets,
             namespace=NAMESPACE,

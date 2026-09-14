@@ -133,7 +133,7 @@ def kind_for(model_id, meta):
         return "omnivoice"
     if meta.get("runner") == "coqui-vits":
         return "coqui"
-    if meta.get("runner") == "stable-twi-tts":
+    if meta.get("runner") == "stable-twi-tts" or meta.get("runner") == "kasanoma":
         return "piper"
     if meta.get("input_type") == "ipa":
         return "ipa_voxcpm" if "voxcpm" in lower else "ipa"

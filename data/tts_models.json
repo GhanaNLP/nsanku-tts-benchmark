@@ -381,5 +381,22 @@
     "params": "API",
     "sample_rate": 24000,
     "url": "https://ai.google.dev/gemini-api/docs/speech-generation"
+  },
+  {
+    "name": "ghananlpcommunity/kasanoma-twi",
+    "architecture": "Kasanoma Piper VITS (0.06B)",
+    "languages": [
+      "twi_akuapem",
+      "twi_asante"
+    ],
+    "input_type": "orthographic",
+    "runner": "kasanoma",
+    "stack": "piper",
+    "model_class": "non-llm",
+    "params": "0.06B",
+    "sample_rate": 16000,
+    "license": "apache-2.0",
+    "url": "https://huggingface.co/ghananlpcommunity/kasanoma-twi",
+    "notes": "Kasanoma Twi offline TTS model trained on Piper VITS."
   }
 ]
