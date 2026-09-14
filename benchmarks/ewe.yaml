@@ -233,7 +233,7 @@ benchmarks:
       cer: 0.1069
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.48
+      avg_seconds_per_sample: 0.0
   source: evaluated
   sample_category: education
   sample_clip: '00005'
@@ -371,3 +371,45 @@ benchmarks:
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
   sample_category: education
   sample_clip: '00005'
+- model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref
+  model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
+  mode: ref
+  owner: walusungungulube
+  architecture: Spark-TTS (0.5B)
+  model_class: non-llm
+  params: 0.5B
+  cer: null
+  wer: null
+  score: null
+  samples: 200
+  valid: 0
+  per_category:
+    education:
+      wer: null
+      cer: null
+      samples: 200
+      valid: 0
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
+- model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-noref
+  model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
+  mode: noref
+  owner: walusungungulube
+  architecture: Spark-TTS (0.5B)
+  model_class: non-llm
+  params: 0.5B
+  cer: null
+  wer: null
+  score: null
+  samples: 200
+  valid: 0
+  per_category:
+    education:
+      wer: null
+      cer: null
+      samples: 200
+      valid: 0
+      avg_seconds_per_sample: 0.0
+  source: evaluated

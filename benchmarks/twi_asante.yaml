@@ -393,25 +393,45 @@ benchmarks:
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi
   sample_category: education
   sample_clip: '00003'
-- model: ghananlpcommunity/kasanoma-twi
-  model_url: https://huggingface.co/ghananlpcommunity/kasanoma-twi
-  mode: noref
-  owner: ghananlpcommunity
-  architecture: Kasanoma Piper VITS (0.06B)
+- model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref
+  model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
+  mode: ref
+  owner: walusungungulube
+  architecture: Spark-TTS (0.5B)
   model_class: non-llm
-  params: 0.06B
-  cer: 0.7101
-  wer: 0.9677
-  score: 0.7101
+  params: 0.5B
+  cer: null
+  wer: null
+  score: null
   samples: 200
-  valid: 200
+  valid: 0
   per_category:
     education:
-      wer: 0.9677
-      cer: 0.7101
+      wer: null
+      cer: null
       samples: 200
-      valid: 200
+      valid: 0
       avg_seconds_per_sample: 0.0
   source: evaluated
-  sample_category: education
-  sample_clip: '00003'
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi
+- model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-noref
+  model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
+  mode: noref
+  owner: walusungungulube
+  architecture: Spark-TTS (0.5B)
+  model_class: non-llm
+  params: 0.5B
+  cer: null
+  wer: null
+  score: null
+  samples: 200
+  valid: 0
+  per_category:
+    education:
+      wer: null
+      cer: null
+      samples: 200
+      valid: 0
+      avg_seconds_per_sample: 0.0
+  source: evaluated
