@@ -414,5 +414,24 @@
     "license": "cc-by-nc-4.0",
     "url": "https://huggingface.co/ghananlpcommunity/tekyerema-tts-twi",
     "notes": "Tekyerema Twi VITS fine-tuned from facebook/mms-tts-aka."
+  },
+  {
+    "name": "walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani",
+    "architecture": "Spark-TTS (0.5B)",
+    "languages": [
+      "dag",
+      "ewe",
+      "twi_akuapem",
+      "twi_asante"
+    ],
+    "input_type": "orthographic",
+    "runner": "spark-tts",
+    "stack": "standard",
+    "model_class": "non-llm",
+    "params": "0.5B",
+    "sample_rate": 16000,
+    "license": "cc-by-nc-sa-4.0",
+    "url": "https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani",
+    "notes": "Spark-TTS 0.5B fine-tuned for Twi, Ewe, and Dagbani."
   }
 ]

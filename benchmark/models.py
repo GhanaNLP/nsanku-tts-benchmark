@@ -112,6 +112,8 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
         return KasanomaWrapper(model_id, device=device, meta=meta, **kwargs)
     if meta.get("runner") == "transformers-vits" or "tekyerema" in lower:
         return TransformersVitsWrapper(model_id, device=device, meta=meta, **kwargs)
+    if meta.get("runner") == "spark-tts" or "spark-tts" in lower:
+        return SparkTTSWrapper(model_id, device=device, meta=meta, **kwargs)
     if "nano-twi" in lower:
         return NanoTwiWrapper(model_id, device=device, meta=meta, **kwargs)
     if lower.startswith("khaya") or "khaya" in lower:
@@ -956,6 +958,46 @@ class TransformersVitsWrapper(BaseTTSModel):
         with torch.no_grad():
             output = self.model(**inputs).waveform
         audio = output[0].cpu().numpy()
+        return _wav_bytes(audio, sample_rate=self.sample_rate)
+
+
+class SparkTTSWrapper(BaseTTSModel):
+    """walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani — Spark-TTS (CUDA/CPU)."""
+
+    def __init__(self, model_id, device="cuda", meta=None, **kwargs):
+        super().__init__(model_id, device)
+        self.model = None
+        self._loaded = False
+        self.meta = meta or {}
+
+    def _ensure_loaded(self):
+        if self._loaded:
+            return
+        import torch
+        from huggingface_hub import snapshot_download
+        from .config import HF_TOKEN
+        from .sparktts.cli.SparkTTS import SparkTTS
+
+        model_dir = snapshot_download(self.model_id, token=HF_TOKEN or None)
+        self.model_dir = model_dir
+        dev = torch.device(self.device if torch.cuda.is_available() and "cuda" in self.device else "cpu")
+        self.spark = SparkTTS(Path(model_dir), device=dev)
+        self.sample_rate = self.spark.sample_rate
+        self._loaded = True
+        logger.info("Loaded SparkTTS model: %s on %s", self.model_id, dev)
+
+    def synthesize(self, text, lang="twi"):
+        self._ensure_loaded()
+        import torch
+        wav = self.spark.inference(
+            text=text,
+            gender=_knob(self.meta, "GENDER", "female"),
+            pitch=_knob(self.meta, "PITCH", "moderate"),
+            speed=_knob(self.meta, "SPEED", "moderate"),
+        )
+        if isinstance(wav, torch.Tensor):
+            wav = wav.cpu().numpy()
+        audio = wav.squeeze()
         return _wav_bytes(audio, sample_rate=self.sample_rate)
 
 

@@ -21,3 +21,9 @@ stable-twi-tts[twi]
 coqui-tts
 # Orpheus-3B (Sunbird) decodes audio with the SNAC codec.
 snac
+# Spark-TTS dependencies
+omegaconf
+safetensors
+soxr
+einops
+einx
