@@ -427,6 +427,10 @@
     "input_type": "orthographic",
     "runner": "spark-tts",
     "stack": "standard",
+    "modes": [
+      "ref",
+      "noref"
+    ],
     "model_class": "non-llm",
     "params": "0.5B",
     "sample_rate": 16000,

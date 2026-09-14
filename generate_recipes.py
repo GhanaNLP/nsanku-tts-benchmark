@@ -101,7 +101,8 @@ BLURBS = {
                  "REFERENCE_CLIP override it if a better one exists.",
     "nanotwi": "NOISE_SCALE and LENGTH_SCALE are the Matcha-TTS sampling knobs:\n"
                "LENGTH_SCALE above 1.0 slows the speech down. SPEAKER_ID picks the voice.",
-    "sparktts": "GENDER, PITCH, and SPEED control Spark-TTS's controllable voice attributes.",
+    "sparktts": "Spark-TTS voice cloning mode using a reference clip for voice prompting.",
+    "sparktts-noref": "Spark-TTS controllable attribute mode (without reference audio).",
 }
 
 BODIES = {
@@ -121,7 +122,8 @@ BODIES = {
     "f5": "REFERENCE_TEXT = None\nREFERENCE_CLIP = None\nSPEED = 1.0\nNFE_STEP = 32\n",
     "cosyvoice": "REFERENCE_TEXT = None\nREFERENCE_CLIP = None\nSPEED = 1.0\n",
     "nanotwi": "NOISE_SCALE = 1.0\nLENGTH_SCALE = 1.0\nSPEAKER_ID = 0\n",
-    "sparktts": "GENDER = 'female'\nPITCH = 'moderate'\nSPEED = 'moderate'\n",
+    "sparktts": "REFERENCE_TEXT = None\nREFERENCE_CLIP = None\nGENDER = 'female'\nPITCH = 'moderate'\nSPEED = 'moderate'\n",
+    "sparktts-noref": "GENDER = 'female'\nPITCH = 'moderate'\nSPEED = 'moderate'\n",
 }
 
 
@@ -136,6 +138,8 @@ def kind_for(model_id, meta):
     if meta.get("runner") == "coqui-vits" or meta.get("runner") == "transformers-vits" or "tekyerema" in lower:
         return "coqui"
     if meta.get("runner") == "spark-tts" or "spark-tts" in lower:
+        if meta.get("mode") == "noref":
+            return "sparktts-noref"
         return "sparktts"
     if meta.get("runner") == "stable-twi-tts" or meta.get("runner") == "kasanoma":
         return "piper"
