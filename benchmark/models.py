@@ -999,15 +999,16 @@ class SparkTTSWrapper(BaseTTSModel):
 
         # Some (language, prompt transcript) pairs push the LLM into emitting
         # <|end_semantic_token|> immediately, producing zero semantic tokens.
-        # If the full-prompt path degrades on every retry, fall back to
-        # audio-only voice cloning (no transcript), and remember it so the
-        # rest of the language run skips the transcript too.
-        def _infer():
+        # If the full-prompt path degrades on every retry for THIS clip, fall
+        # back to audio-only voice cloning (no transcript) for that clip only.
+        # The rescue never carries across clips, so the mode stays as standard
+        # as possible for the rest of the run.
+        def _infer(pt):
             if mode == "ref" and ref_audio is not None:
                 return self.spark.inference(
                     text=text,
                     prompt_speech_path=Path(ref_audio),
-                    prompt_text=(ref_text if not getattr(self, "_drop_prompt_text", False) else None),
+                    prompt_text=pt,
                 )
             return self.spark.inference(
                 text=text,
@@ -1024,20 +1025,23 @@ class SparkTTSWrapper(BaseTTSModel):
                 raise RuntimeError("empty waveform")
             return _wav_bytes(audio, sample_rate=self.sample_rate)
 
+        pt = ref_text if (mode == "ref" and ref_audio is not None) else None
         last_err = None
         for attempt in range(retries):
             try:
-                return _to_bytes(_infer())
+                return _to_bytes(_infer(pt))
             except RuntimeError as e:
                 last_err = e
                 if attempt < retries - 1:
                     logger.warning("SparkTTS attempt %d failed (%s), retrying", attempt + 1, e)
 
-        if mode == "ref" and ref_audio is not None and not getattr(self, "_drop_prompt_text", False):
-            logger.warning("SparkTTS full-prompt exhausted retries (%s); falling back to audio-only voice cloning", last_err)
+        if mode == "ref" and ref_audio is not None:
+            n = getattr(self, "_audio_only_fallbacks", 0) + 1
+            setattr(self, "_audio_only_fallbacks", n)
+            logger.warning("SparkTTS clip %d fell back to audio-only voice cloning (transcript attempts failed: %s)",
+                           n, last_err)
             try:
-                self._drop_prompt_text = True
-                return _to_bytes(_infer())
+                return _to_bytes(_infer(None))
             except RuntimeError as e:
                 last_err = e
         raise last_err
