@@ -988,40 +988,46 @@ class SparkTTSWrapper(BaseTTSModel):
         self._loaded = True
         logger.info("Loaded SparkTTS model: %s on %s", base_model_id, dev)
 
-    def synthesize(self, text, lang="twi", ref_audio=None, ref_text=None):
+    def synthesize(self, text, lang="twi", ref_audio=None, ref_text=None, retries=3):
         self._ensure_loaded()
         import torch
 
         mode = self.meta.get("mode") or ("noref" if "-noref" in self.model_id else "ref")
 
-        if mode == "ref":
-            if ref_audio is None and self.iso:
-                ref_audio, ref_text, _ = reference_clip(self.iso, self.meta)
-            if ref_audio is not None:
-                wav = self.spark.inference(
-                    text=text,
-                    prompt_speech_path=Path(ref_audio),
-                    prompt_text=ref_text,
-                )
-            else:
-                wav = self.spark.inference(
-                    text=text,
-                    gender=_knob(self.meta, "GENDER", "female"),
-                    pitch=_knob(self.meta, "PITCH", "moderate"),
-                    speed=_knob(self.meta, "SPEED", "moderate"),
-                )
-        else:
-            wav = self.spark.inference(
+        def _infer():
+            if mode == "ref":
+                if ref_audio is None and self.iso:
+                    ref_audio_local, ref_text_local, _ = reference_clip(self.iso, self.meta)
+                else:
+                    ref_audio_local, ref_text_local = ref_audio, ref_text
+                if ref_audio_local is not None:
+                    return self.spark.inference(
+                        text=text,
+                        prompt_speech_path=Path(ref_audio_local),
+                        prompt_text=ref_text_local,
+                    )
+            return self.spark.inference(
                 text=text,
                 gender=_knob(self.meta, "GENDER", "female"),
                 pitch=_knob(self.meta, "PITCH", "moderate"),
                 speed=_knob(self.meta, "SPEED", "moderate"),
             )
 
-        if isinstance(wav, torch.Tensor):
-            wav = wav.cpu().numpy()
-        audio = wav.squeeze()
-        return _wav_bytes(audio, sample_rate=self.sample_rate)
+        last_err = None
+        for attempt in range(retries):
+            try:
+                wav = _infer()
+                if isinstance(wav, torch.Tensor):
+                    wav = wav.cpu().numpy()
+                audio = wav.squeeze()
+                if audio.size == 0:
+                    raise RuntimeError("empty waveform")
+                return _wav_bytes(audio, sample_rate=self.sample_rate)
+            except RuntimeError as e:
+                last_err = e
+                if attempt < retries - 1:
+                    logger.warning("SparkTTS attempt %d failed (%s), retrying", attempt + 1, e)
+        raise last_err
 
 
 class NanoTwiWrapper(BaseTTSModel):
