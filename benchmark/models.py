@@ -994,18 +994,21 @@ class SparkTTSWrapper(BaseTTSModel):
 
         mode = self.meta.get("mode") or ("noref" if "-noref" in self.model_id else "ref")
 
+        if mode == "ref" and ref_audio is None and self.iso:
+            ref_audio, ref_text, _ = reference_clip(self.iso, self.meta)
+
+        # Some (language, prompt transcript) pairs push the LLM into emitting
+        # <|end_semantic_token|> immediately, producing zero semantic tokens.
+        # If the full-prompt path degrades on every retry, fall back to
+        # audio-only voice cloning (no transcript), and remember it so the
+        # rest of the language run skips the transcript too.
         def _infer():
-            if mode == "ref":
-                if ref_audio is None and self.iso:
-                    ref_audio_local, ref_text_local, _ = reference_clip(self.iso, self.meta)
-                else:
-                    ref_audio_local, ref_text_local = ref_audio, ref_text
-                if ref_audio_local is not None:
-                    return self.spark.inference(
-                        text=text,
-                        prompt_speech_path=Path(ref_audio_local),
-                        prompt_text=ref_text_local,
-                    )
+            if mode == "ref" and ref_audio is not None:
+                return self.spark.inference(
+                    text=text,
+                    prompt_speech_path=Path(ref_audio),
+                    prompt_text=(ref_text if not getattr(self, "_drop_prompt_text", False) else None),
+                )
             return self.spark.inference(
                 text=text,
                 gender=_knob(self.meta, "GENDER", "female"),
@@ -1013,20 +1016,30 @@ class SparkTTSWrapper(BaseTTSModel):
                 speed=_knob(self.meta, "SPEED", "moderate"),
             )
 
+        def _to_bytes(wav):
+            if isinstance(wav, torch.Tensor):
+                wav = wav.cpu().numpy()
+            audio = wav.squeeze()
+            if audio.size == 0:
+                raise RuntimeError("empty waveform")
+            return _wav_bytes(audio, sample_rate=self.sample_rate)
+
         last_err = None
         for attempt in range(retries):
             try:
-                wav = _infer()
-                if isinstance(wav, torch.Tensor):
-                    wav = wav.cpu().numpy()
-                audio = wav.squeeze()
-                if audio.size == 0:
-                    raise RuntimeError("empty waveform")
-                return _wav_bytes(audio, sample_rate=self.sample_rate)
+                return _to_bytes(_infer())
             except RuntimeError as e:
                 last_err = e
                 if attempt < retries - 1:
                     logger.warning("SparkTTS attempt %d failed (%s), retrying", attempt + 1, e)
+
+        if mode == "ref" and ref_audio is not None and not getattr(self, "_drop_prompt_text", False):
+            logger.warning("SparkTTS full-prompt exhausted retries (%s); falling back to audio-only voice cloning", last_err)
+            try:
+                self._drop_prompt_text = True
+                return _to_bytes(_infer())
+            except RuntimeError as e:
+                last_err = e
         raise last_err
 
 
