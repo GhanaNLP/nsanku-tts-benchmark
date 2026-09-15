@@ -16,23 +16,41 @@ benchmarks:
   architecture: VoxCPM2 (2B)
   model_class: non-llm
   params: 2B
-  cer: 0.0455
-  wer: 0.2995
-  score: 0.0455
+  cer: 0.0348
+  wer: 0.2523
+  score: 0.0348
   samples: 200
-  valid: 199
+  valid: 11
   per_category:
     education:
-      wer: 0.2995
-      cer: 0.0455
+      wer: 0.2523
+      cer: 0.0348
       samples: 200
-      valid: 199
-      avg_seconds_per_sample: 0.59
+      valid: 11
+      avg_seconds_per_sample: 0.0
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
-  sample_category: education
-  sample_clip: '00005'
+- model: FarmerlineML/voxcpm2-ewe-sft
+  model_url: https://huggingface.co/FarmerlineML/voxcpm2-ewe-sft
+  mode: noref
+  owner: FarmerlineML
+  architecture: VoxCPM2 (2B)
+  model_class: non-llm
+  params: 2B
+  cer: 0.0406
+  wer: 0.2975
+  score: 0.0406
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.2975
+      cer: 0.0406
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
 - model: FarmerlineML/voxcpm2-ewe-sft-noref
   model_url: https://huggingface.co/FarmerlineML/voxcpm2-ewe-sft
   mode: noref
@@ -40,62 +58,118 @@ benchmarks:
   architecture: VoxCPM2 (2B)
   model_class: non-llm
   params: 2B
-  cer: 0.0455
-  wer: 0.2929
-  score: 0.0455
+  cer: 0.0464
+  wer: 0.2908
+  score: 0.0464
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.2929
-      cer: 0.0455
+      wer: 0.2908
+      cer: 0.0464
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.47
+      avg_seconds_per_sample: 0.0
   source: evaluated
-  sample_category: education
-  sample_clip: '00005'
 - model: KhayaAI/khaya-tts-v2
-  model_url: https://translation.ghananlp.org
+  model_url: https://huggingface.co/KhayaAI/khaya-tts-v2
   mode: noref
   owner: KhayaAI
   architecture: Khaya AI TTS v2 API
   model_class: api
   params: API
-  cer: 0.0639
-  wer: 0.3046
-  score: 0.0639
-  samples: 200
-  valid: 166
-  per_category:
-    education:
-      wer: 0.3046
-      cer: 0.0639
-      samples: 200
-      valid: 166
-      avg_seconds_per_sample: 0.39
-  source: evaluated
-  sample_category: education
-  sample_clip: '00005'
-- model: Google/gemini-3.1-flash-tts-preview
-  model_url: https://ai.google.dev/gemini-api/docs/speech-generation
-  mode: noref
-  owner: Google
-  architecture: Google Gemini 3.1 Flash TTS (API)
-  model_class: api
-  params: API
-  cer: 0.173
-  wer: 0.7594
-  score: 0.173
+  cer: 0.067
+  wer: 0.311
+  score: 0.067
   samples: 200
   valid: 200
   per_category:
     education:
-      wer: 0.7594
-      cer: 0.173
+      wer: 0.311
+      cer: 0.067
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.45
+      avg_seconds_per_sample: 0.0
   source: evaluated
-  sample_category: education
-  sample_clip: '00005'
+- model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref
+  model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
+  mode: ref
+  owner: walusungungulube
+  architecture: Spark-TTS (0.5B)
+  model_class: non-llm
+  params: 0.5B
+  cer: 0.0919
+  wer: 0.3811
+  score: 0.0919
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.3811
+      cer: 0.0919
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
+- model: ghananlpcommunity/ghana-tts-36k
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1598
+  wer: 0.6481
+  score: 0.1598
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6481
+      cer: 0.1598
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+- model: ghananlpcommunity/ghana-tts-72k
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1843
+  wer: 0.6592
+  score: 0.1843
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6592
+      cer: 0.1843
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+- model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-noref
+  model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
+  mode: noref
+  owner: walusungungulube
+  architecture: Spark-TTS (0.5B)
+  model_class: non-llm
+  params: 0.5B
+  cer: 0.422
+  wer: 0.6872
+  score: 0.422
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6872
+      cer: 0.422
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
