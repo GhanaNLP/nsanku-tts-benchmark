@@ -235,6 +235,26 @@ class BaseTTSModel(abc.ABC):
         the language from the orthography alone.
         """
         meta = getattr(self, "meta", {}) or {}
+        if meta.get("input_type") == "universal":
+            try:
+                import sys
+                from pathlib import Path
+                g2p_src = Path("/home/owusus/Documents/GitHub/africa-g2p/src")
+                if str(g2p_src) not in sys.path:
+                    sys.path.insert(0, str(g2p_src))
+                from africa_g2p import GraphemeConverter, LanguageNotFoundError
+                g2p_lang = iso
+                if iso in ("twi_akuapem", "twi_asante", "twi-aku", "twi-asa"):
+                    g2p_lang = "twi"
+                elif iso == "dga":
+                    g2p_lang = "dag"
+                try:
+                    converter = GraphemeConverter(g2p_lang, "universal")
+                    text = converter.convert(text)
+                except LanguageNotFoundError:
+                    pass
+            except Exception:
+                pass
         if meta.get("input_type") == "ipa":
             text = phonemize(text, iso, meta)
         tag = _knob(meta, "LANG_TAG")

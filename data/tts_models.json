@@ -383,6 +383,31 @@
     "url": "https://ai.google.dev/gemini-api/docs/speech-generation"
   },
   {
+    "architecture": "Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p)",
+    "input_type": "universal",
+    "languages": [
+      "ada",
+      "dag",
+      "dga",
+      "ewe",
+      "fat",
+      "gaa",
+      "gjn",
+      "gur",
+      "nzi",
+      "twi_akuapem",
+      "twi_asante",
+      "xsm"
+    ],
+    "license": "proprietary",
+    "model_class": "api",
+    "name": "Google/gemini-3.1-flash-tts-preview-universal",
+    "notes": "Hosted Gemini API with text converted to universal form using africa-g2p",
+    "params": "API",
+    "sample_rate": 24000,
+    "url": "https://ai.google.dev/gemini-api/docs/speech-generation"
+  },
+  {
     "name": "ghananlpcommunity/tekyerema-tts-ewe",
     "architecture": "Tekyerema Ewe VITS (0.03B)",
     "languages": [
