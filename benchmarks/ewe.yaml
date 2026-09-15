@@ -9,26 +9,28 @@ judge:
   cer_on_real_speech: 0.1065
 updated: '2026-09-15'
 benchmarks:
-- model: facebook/mms-tts-ewe
-  model_url: https://huggingface.co/facebook/mms-tts-ewe
-  mode: noref
-  owner: facebook
-  architecture: Meta MMS VITS (per-language)
+- model: FarmerlineML/voxcpm2-ewe-sft-ref
+  model_url: https://huggingface.co/FarmerlineML/voxcpm2-ewe-sft
+  mode: ref
+  owner: FarmerlineML
+  architecture: VoxCPM2 (2B)
   model_class: non-llm
-  params: 0.04B
-  cer: 0.0377
-  wer: 0.2589
-  score: 0.0377
+  params: 2B
+  cer: 0.0455
+  wer: 0.2995
+  score: 0.0455
   samples: 200
-  valid: 200
+  valid: 199
   per_category:
     education:
-      wer: 0.2589
-      cer: 0.0377
+      wer: 0.2995
+      cer: 0.0455
       samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
+      valid: 199
+      avg_seconds_per_sample: 0.59
   source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
   sample_category: education
   sample_clip: '00005'
 - model: FarmerlineML/voxcpm2-ewe-sft-noref
@@ -49,53 +51,7 @@ benchmarks:
       cer: 0.0455
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  sample_category: education
-  sample_clip: '00005'
-- model: FarmerlineML/voxcpm2-ewe-sft-ref
-  model_url: https://huggingface.co/FarmerlineML/voxcpm2-ewe-sft
-  mode: ref
-  owner: FarmerlineML
-  architecture: VoxCPM2 (2B)
-  model_class: non-llm
-  params: 2B
-  cer: 0.0456
-  wer: 0.2989
-  score: 0.0456
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.2989
-      cer: 0.0456
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  prompted: true
-  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
-  sample_category: education
-  sample_clip: '00005'
-- model: multilingual-tts/VITS-OpenBible-Ewe
-  model_url: https://huggingface.co/multilingual-tts/VITS-OpenBible-Ewe
-  mode: noref
-  owner: multilingual-tts
-  architecture: VITS (Coqui)
-  model_class: non-llm
-  params: 0.08B
-  cer: 0.0615
-  wer: 0.3224
-  score: 0.0615
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.3224
-      cer: 0.0615
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
+      avg_seconds_per_sample: 0.47
   source: evaluated
   sample_category: education
   sample_clip: '00005'
@@ -106,180 +62,18 @@ benchmarks:
   architecture: Khaya AI TTS v2 API
   model_class: api
   params: API
-  cer: 0.0651
-  wer: 0.323
-  score: 0.0651
+  cer: 0.0639
+  wer: 0.3046
+  score: 0.0639
   samples: 200
-  valid: 200
+  valid: 166
   per_category:
     education:
-      wer: 0.323
-      cer: 0.0651
+      wer: 0.3046
+      cer: 0.0639
       samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  sample_category: education
-  sample_clip: '00005'
-- model: ghananlpcommunity/ghana-tts-72k-ref
-  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
-  mode: ref
-  owner: ghananlpcommunity
-  architecture: VoxCPM v1 (0.7B)
-  model_class: non-llm
-  params: 0.7B
-  cer: 0.068
-  wer: 0.3198
-  score: 0.068
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.3198
-      cer: 0.068
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  prompted: true
-  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
-  sample_category: education
-  sample_clip: '00005'
-- model: ghananlpcommunity/ghana-tts-36k-ref
-  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
-  mode: ref
-  owner: ghananlpcommunity
-  architecture: VoxCPM v1 (0.7B)
-  model_class: non-llm
-  params: 0.7B
-  cer: 0.0684
-  wer: 0.3394
-  score: 0.0684
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.3394
-      cer: 0.0684
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  prompted: true
-  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
-  sample_category: education
-  sample_clip: '00005'
-- model: Sunbird/orpheus-3b-tts-multilingual
-  model_url: https://huggingface.co/Sunbird/orpheus-3b-tts-multilingual
-  mode: noref
-  owner: Sunbird
-  architecture: Orpheus-3B (autoregressive LLM over SNAC 24 kHz)
-  model_class: llm
-  params: 3B
-  cer: 0.0687
-  wer: 0.3031
-  score: 0.0687
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.3031
-      cer: 0.0687
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  sample_category: education
-  sample_clip: '00005'
-- model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref
-  model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
-  mode: ref
-  owner: walusungungulube
-  architecture: Spark-TTS (0.5B)
-  model_class: non-llm
-  params: 0.5B
-  cer: 0.0712
-  wer: 0.3656
-  score: 0.0712
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.3656
-      cer: 0.0712
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.48
-  source: evaluated
-  prompted: true
-  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
-  sample_category: education
-  sample_clip: '00005'
-- model: k2-fsa/OmniVoice-ref
-  model_url: https://huggingface.co/k2-fsa/OmniVoice
-  mode: ref
-  owner: k2-fsa
-  architecture: OmniVoice (voice cloning + voice design)
-  model_class: non-llm
-  params: 0.6B
-  cer: 0.0714
-  wer: 0.4803
-  score: 0.0714
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.4803
-      cer: 0.0714
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  prompted: true
-  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
-  sample_category: education
-  sample_clip: '00005'
-- model: ghananlpcommunity/tekyerema-tts-ewe
-  model_url: https://huggingface.co/ghananlpcommunity/tekyerema-tts-ewe
-  mode: noref
-  owner: ghananlpcommunity
-  architecture: Tekyerema Ewe VITS (0.03B)
-  model_class: non-llm
-  params: 0.03B
-  cer: 0.1069
-  wer: 0.4318
-  score: 0.1069
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.4318
-      cer: 0.1069
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  sample_category: education
-  sample_clip: '00005'
-- model: ghananlpcommunity/ghana-tts-36k-noref
-  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
-  mode: noref
-  owner: ghananlpcommunity
-  architecture: VoxCPM v1 (0.7B)
-  model_class: non-llm
-  params: 0.7B
-  cer: 0.1633
-  wer: 0.6671
-  score: 0.1633
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.6671
-      cer: 0.1633
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
+      valid: 166
+      avg_seconds_per_sample: 0.39
   source: evaluated
   sample_category: education
   sample_clip: '00005'
@@ -301,119 +95,7 @@ benchmarks:
       cer: 0.173
       samples: 200
       valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  sample_category: education
-  sample_clip: '00005'
-- model: ghananlpcommunity/ghana-tts-72k-noref
-  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
-  mode: noref
-  owner: ghananlpcommunity
-  architecture: VoxCPM v1 (0.7B)
-  model_class: non-llm
-  params: 0.7B
-  cer: 0.1811
-  wer: 0.6725
-  score: 0.1811
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.6725
-      cer: 0.1811
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  sample_category: education
-  sample_clip: '00005'
-- model: k2-fsa/OmniVoice-design
-  model_url: https://huggingface.co/k2-fsa/OmniVoice
-  mode: design
-  owner: k2-fsa
-  architecture: OmniVoice (voice cloning + voice design)
-  model_class: non-llm
-  params: 0.6B
-  cer: 0.1983
-  wer: 0.6673
-  score: 0.1983
-  samples: 200
-  valid: 193
-  per_category:
-    education:
-      wer: 0.6673
-      cer: 0.1983
-      samples: 200
-      valid: 193
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  sample_category: education
-  sample_clip: '00005'
-- model: k2-fsa/OmniVoice-noref
-  model_url: https://huggingface.co/k2-fsa/OmniVoice
-  mode: noref
-  owner: k2-fsa
-  architecture: OmniVoice (voice cloning + voice design)
-  model_class: non-llm
-  params: 0.6B
-  cer: 0.2145
-  wer: 0.6924
-  score: 0.2145
-  samples: 200
-  valid: 191
-  per_category:
-    education:
-      wer: 0.6924
-      cer: 0.2145
-      samples: 200
-      valid: 191
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  sample_category: education
-  sample_clip: '00005'
-- model: ghananlpcommunity/F5-TTS-OpenBible-Ewe-ref
-  model_url: https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Ewe
-  mode: ref
-  owner: ghananlpcommunity
-  architecture: F5-TTS (DiT + Vocos)
-  model_class: non-llm
-  params: 0.3B
-  cer: 0.3224
-  wer: 0.6424
-  score: 0.3224
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.6424
-      cer: 0.3224
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  prompted: true
-  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Ewe_ewe
-  sample_category: education
-  sample_clip: '00005'
-- model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-noref
-  model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
-  mode: noref
-  owner: walusungungulube
-  architecture: Spark-TTS (0.5B)
-  model_class: non-llm
-  params: 0.5B
-  cer: 0.4566
-  wer: 0.7064
-  score: 0.4566
-  samples: 200
-  valid: 200
-  per_category:
-    education:
-      wer: 0.7064
-      cer: 0.4566
-      samples: 200
-      valid: 200
-      avg_seconds_per_sample: 0.77
+      avg_seconds_per_sample: 0.45
   source: evaluated
   sample_category: education
   sample_clip: '00005'
