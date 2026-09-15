@@ -7,7 +7,7 @@ scoring: cer
 judge:
   model: KhayaAI/khaya-asr-v3
   cer_on_real_speech: 0.1526
-updated: '2026-09-14'
+updated: '2026-09-15'
 benchmarks:
 - model: k2-fsa/OmniVoice-ref
   model_url: https://huggingface.co/k2-fsa/OmniVoice
@@ -122,6 +122,30 @@ benchmarks:
       samples: 200
       valid: 200
       avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Dagbani_dag
+  sample_category: education
+  sample_clip: '00002'
+- model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref
+  model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
+  mode: ref
+  owner: walusungungulube
+  architecture: Spark-TTS (0.5B)
+  model_class: non-llm
+  params: 0.5B
+  cer: 0.085
+  wer: 0.4014
+  score: 0.085
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.4014
+      cer: 0.085
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 1.06
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Dagbani_dag
@@ -259,28 +283,6 @@ benchmarks:
   source: evaluated
   sample_category: education
   sample_clip: '00002'
-- model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref
-  model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
-  mode: ref
-  owner: walusungungulube
-  architecture: Spark-TTS (0.5B)
-  model_class: non-llm
-  params: 0.5B
-  cer: null
-  wer: null
-  score: null
-  samples: 200
-  valid: 0
-  per_category:
-    education:
-      wer: null
-      cer: null
-      samples: 200
-      valid: 0
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  prompted: true
-  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Dagbani_dag
 - model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-noref
   model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
   mode: noref
@@ -288,16 +290,18 @@ benchmarks:
   architecture: Spark-TTS (0.5B)
   model_class: non-llm
   params: 0.5B
-  cer: null
-  wer: null
-  score: null
+  cer: 0.6596
+  wer: 1.1779
+  score: 0.6596
   samples: 200
-  valid: 0
+  valid: 200
   per_category:
     education:
-      wer: null
-      cer: null
+      wer: 1.1779
+      cer: 0.6596
       samples: 200
-      valid: 0
-      avg_seconds_per_sample: 0.0
+      valid: 200
+      avg_seconds_per_sample: 1.28
   source: evaluated
+  sample_category: education
+  sample_clip: '00002'

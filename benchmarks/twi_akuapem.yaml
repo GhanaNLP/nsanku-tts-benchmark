@@ -7,7 +7,7 @@ scoring: cer
 judge:
   model: Qlerqly/griot-nano-1
   cer_on_real_speech: 0.2193
-updated: '2026-09-14'
+updated: '2026-09-15'
 benchmarks:
 - model: ghananlpcommunity/ghana-tts-36k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
@@ -74,6 +74,30 @@ benchmarks:
       samples: 200
       valid: 200
       avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Akuapem_Twi
+  sample_category: education
+  sample_clip: '00007'
+- model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref
+  model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
+  mode: ref
+  owner: walusungungulube
+  architecture: Spark-TTS (0.5B)
+  model_class: non-llm
+  params: 0.5B
+  cer: 0.1391
+  wer: 0.5568
+  score: 0.1391
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.5568
+      cer: 0.1391
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.03
   source: evaluated
   prompted: true
   prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Akuapem_Twi
@@ -371,28 +395,6 @@ benchmarks:
   source: evaluated
   sample_category: education
   sample_clip: '00007'
-- model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref
-  model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
-  mode: ref
-  owner: walusungungulube
-  architecture: Spark-TTS (0.5B)
-  model_class: non-llm
-  params: 0.5B
-  cer: null
-  wer: null
-  score: null
-  samples: 200
-  valid: 0
-  per_category:
-    education:
-      wer: null
-      cer: null
-      samples: 200
-      valid: 0
-      avg_seconds_per_sample: 0.0
-  source: evaluated
-  prompted: true
-  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Akuapem_Twi
 - model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-noref
   model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
   mode: noref
@@ -400,16 +402,18 @@ benchmarks:
   architecture: Spark-TTS (0.5B)
   model_class: non-llm
   params: 0.5B
-  cer: null
-  wer: null
-  score: null
+  cer: 0.798
+  wer: 1.3077
+  score: 0.798
   samples: 200
-  valid: 0
+  valid: 200
   per_category:
     education:
-      wer: null
-      cer: null
+      wer: 1.3077
+      cer: 0.798
       samples: 200
-      valid: 0
-      avg_seconds_per_sample: 0.0
+      valid: 200
+      avg_seconds_per_sample: 0.03
   source: evaluated
+  sample_category: education
+  sample_clip: '00007'

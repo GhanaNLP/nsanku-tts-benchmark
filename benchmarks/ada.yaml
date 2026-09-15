@@ -7,7 +7,7 @@ scoring: cer
 judge:
   model: KhayaAI/khaya-asr-v3
   cer_on_real_speech: 0.083
-updated: '2026-09-14'
+updated: '2026-09-15'
 benchmarks:
 - model: ghananlpcommunity/ghana-tts-72k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
