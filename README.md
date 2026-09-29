@@ -1,6 +1,11 @@
 # nsanku-TTS Benchmark
 
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Benchmark%201-CER%20Space-blue)](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Benchmark%202-Composite%20Space-green)](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark-2)
+
 TTS intelligibility benchmark for Ghanaian languages, scored by **ASR character error rate**.
+
+See also **[nsanku-tts-benchmark-2](https://github.com/GhanaNLP/nsanku-tts-benchmark-2)** and its live **[Hugging Face Space](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark-2)** for composite evaluation combining intelligibility with SpeechBERTScore acoustic naturalness.
 
 ## How it works
 
@@ -125,7 +130,8 @@ modal volume get nsanku-tts-results / --local-dir benchmarks/   # pull YAMLs
 
 ## Leaderboard
 
-The HF Space at [ghananlpcommunity/nsanku-tts-benchmark](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark) reads `benchmarks/*.yaml` from this repo and renders a per-language leaderboard.
+- **Benchmark 1 (CER Intelligibility):** The HF Space at [ghananlpcommunity/nsanku-tts-benchmark](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark) reads `benchmarks/*.yaml` from this repo and renders a per-language intelligibility leaderboard.
+- **Benchmark 2 (Composite & SpeechBERTScore):** The HF Space at [ghananlpcommunity/nsanku-tts-benchmark-2](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark-2) combines intelligibility (Character Accuracy = 1 - CER) with SpeechBERTScore acoustic naturalness against real human speech references. Repository: [GhanaNLP/nsanku-tts-benchmark-2](https://github.com/GhanaNLP/nsanku-tts-benchmark-2).
 
 ## Adding a new language
 
