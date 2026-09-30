@@ -186,7 +186,7 @@ def _local_snapshot(model_id, token=None):
 
 
 REFERENCE_REPO = os.environ.get(
-    "NSANKU2_TTS_AUDIO_REPO", "ghananlpcommunity/nsanku-tts-benchmark-audio"
+    "NSANKU_TTS_AUDIO_REPO", "ghananlpcommunity/nsanku-tts-benchmark-audio"
 )
 
 # Per-sample prompt clips. benchmark 2 scores against a real recording of the

@@ -26,7 +26,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO))
 
-from benchmark.config import ISO_TO_NAME, SPEECH_EVAL_CONFIGS
+from benchmark.config import ISO_TO_NAME, SPEECH_EVAL_SOURCES
 
 
 def run_cmd(cmd, desc=""):
@@ -91,7 +91,7 @@ def main():
     if not args.iso and not args.all_languages:
         parser.error("Specify either --iso <language> or --all-languages")
 
-    languages = sorted(SPEECH_EVAL_CONFIGS.keys()) if args.all_languages else [args.iso]
+    languages = sorted(SPEECH_EVAL_SOURCES.keys()) if args.all_languages else [args.iso]
 
     t_start = time.time()
     for i, iso in enumerate(languages, 1):

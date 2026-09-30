@@ -19,7 +19,7 @@ reads those files. (It merges the former *nsanku-tts-benchmark* CER benchmark an
 
 ## How it works
 
-1. **Samples**: 200 rows per language from
+1. **Samples**: 200 rows per language, spread across the language's text sources, from
    [ghana-speech-eval](https://huggingface.co/datasets/ghananlpcommunity/ghana-speech-eval)
    (recorded speech + transcript). Each row is a sentence *and* its reference recording.
 2. **Synthesis** (stage 1): each model synthesises every sentence; the clips are kept.
@@ -48,40 +48,94 @@ counts, the reference clip's transcript, the API language code. Editing one lang
 cannot disturb another, and the leaderboard links each row to its recipe. Regenerate
 missing ones with `python3 generate_recipes.py`.
 
-## Languages (12, from ghana-speech-eval)
+## Languages (45, from ghana-speech-eval)
 
-| Code | Language | ghana-speech-eval config |
-|------|----------|--------|
-| ada | Dangme | bible_Dangme_ada |
-| dag | Dagbani | bible_Dagbani_dag |
-| dga | Dagaare | bible_Dagaare_dga |
-| ewe | Ewe | bible_Ewe_ewe |
-| fat | Fante | bible_Fante_fat |
-| gaa | Ga | jw_ga_gaa |
-| gjn | Gonja | bible_Gonja_gjn |
-| gur | Gurene | bible_Ninkare_gur |
-| nzi | Nzema | bible_Nzema_nzi |
-| twi_akuapem | Akuapem Twi | bible_Akuapem_Twi |
-| twi_asante | Asante Twi | bible_Asante_Twi |
-| xsm | Kasem | bible_Kasem_xsm |
+Every language that has recordings in ghana-speech-eval, an ASR judge in the
+[nsanku ASR benchmark](https://github.com/GhanaNLP/nsanku-asr-benchmark) and at least one
+TTS model. The sources are the config prefixes (bible, jw, finance, lds, unicef, waxal).
+**When a language has several sources its 200 samples are split evenly across them**
+(`allocate` in `benchmark/dataset.py`; a source that runs short hands its share to the
+others), and results are also reported per source (`per_source` in each YAML row).
+Sample keys are `<source>_<row>` (for example `jw_00012`).
 
-## TTS models (orthographic input only)
+| Code | Language | Text sources (ghana-speech-eval) |
+|------|----------|-----------|
+| ada | Dangme | bible, jw |
+| dag | Dagbani | bible, unicef, waxal |
+| dga | Dagaare | bible, jw, waxal |
+| ewe | Ewe | bible, jw, unicef, waxal |
+| fat | Fante | bible, finance, jw, lds |
+| gaa | Ga | jw, finance |
+| gjn | Gonja | bible |
+| gur | Gurene | bible, jw |
+| nzi | Nzema | bible, jw |
+| twi_akuapem | Akuapem Twi | bible, finance |
+| twi_asante | Asante Twi | bible, finance, lds, unicef, waxal |
+| xsm | Kasem | bible |
+| acd | Gikyode | bible |
+| aha | Ahanta | jw |
+| akp | Siwu | bible |
+| any | Anyin | bible |
+| avn | Avatime | bible |
+| bib | Bissa | bible |
+| bim | Bimoba | bible |
+| biv | Southern Birifor | bible |
+| bov | Tuwuli | bible |
+| bud | Bassar (Ntcham) | bible |
+| bwu | Buli | bible |
+| ffm | Fulfulde (Maasina) | bible |
+| hau | Hausa | bible |
+| kbp | Kabiye | bible |
+| kdh | Tem | bible |
+| kma | Konni | bible |
+| kpo | Ikposo | waxal |
+| kus | Kusaal | bible |
+| lef | Lelemi | bible |
+| lip | Sekpele | bible |
+| maw | Mampruli | bible |
+| mzw | Deg | bible |
+| naw | Nawuri | bible |
+| ncu | Chumburung | bible |
+| nko | Nkonya | bible |
+| ntr | Ntrubo | bible |
+| sfw | Sehwi | bible, jw |
+| sig | Paasaal | bible |
+| sil | Tumulung Sisaala | bible |
+| snw | Selee | bible |
+| tpm | Tampulma | bible |
+| vag | Vagla | bible |
+| xon | Konkomba | bible |
+
+## TTS models (orthographic input unless noted)
+
+The registry is `data/tts_models.json`; each model's per-language settings are in `recipes/`.
 
 | Model | Architecture | Languages |
 |-------|-------------|-----------|
-| `ghananlpcommunity/ghana-tts-72k` | VoxCPM v1 (0.7B) | 44 langs |
-| `ghananlpcommunity/ghana-tts-36k` | VoxCPM v1 (0.7B) | 41 langs |
-| `techolise/akan-twi-speaker17-tts-v2` | VoxCPM v1 + LoRA | Asante Twi |
-| `FarmerlineML/voxcpm2-akan-sft` | VoxCPM2 (2B) | Akan |
-| `FarmerlineML/voxcpm2-dagbani-sft` | VoxCPM2 (2B) | Dagbani |
-| `FarmerlineML/voxcpm2-ewe-sft` | VoxCPM2 (2B) | Ewe |
-| `ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante` | F5-TTS | Asante Twi |
-| `ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem` | F5-TTS | Akuapem Twi |
-| `ghananlpcommunity/F5-TTS-OpenBible-Ewe` | F5-TTS | Ewe |
-| `ghananlpcommunity/nano-twi` | Matcha-TTS + Vocos | Asante Twi |
-| `KhayaAI/khaya-tts-v2` | Khaya AI TTS v2 API (hosted) | 32 langs/dialects |
+| `ghananlpcommunity/ghana-tts-72k` | VoxCPM v1 (0.7B) | 43 languages |
+| `ghananlpcommunity/ghana-tts-36k` | VoxCPM v1 (0.7B) | 43 languages |
+| `FarmerlineML/voxcpm2-akan-sft` | VoxCPM2 (2B) | 2 languages |
+| `FarmerlineML/voxcpm2-dagbani-sft` | VoxCPM2 (2B) | 1 language |
+| `FarmerlineML/voxcpm2-ewe-sft` | VoxCPM2 (2B) | 1 language |
+| `ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante` | F5-TTS (DiT + Vocos) | 1 language |
+| `ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem` | F5-TTS (DiT + Vocos) | 1 language |
+| `ghananlpcommunity/F5-TTS-OpenBible-Ewe` | F5-TTS (DiT + Vocos) | 1 language |
+| `ghananlpcommunity/nano-twi` | Matcha-TTS + Vocos ONNX | 1 language |
+| `ghananlpcommunity/stable-twi-tts` | Piper VITS (ONNX) | 2 languages |
+| `multilingual-tts/VITS-OpenBible-Twi-Asante` | VITS (Coqui) | 1 language |
+| `multilingual-tts/VITS-OpenBible-Twi-Akuapem` | VITS (Coqui) | 1 language |
+| `multilingual-tts/VITS-OpenBible-Ewe` | VITS (Coqui) | 1 language |
+| `k2-fsa/OmniVoice` | OmniVoice (voice cloning + voice design) | 45 languages |
+| `KhayaAI/khaya-tts-v2` | Khaya AI TTS v2 API | 16 languages |
+| `Sunbird/orpheus-3b-tts-multilingual` | Orpheus-3B (autoregressive LLM over SNAC 24 kHz) | 1 language |
+| `Google/gemini-3.1-flash-tts-preview` | Google Gemini 3.1 Flash TTS (API) | 45 languages |
+| `Google/gemini-3.1-flash-tts-preview-universal` | Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p) | 44 languages |
+| `ghananlpcommunity/tekyerema-tts-ewe` | Tekyerema Ewe VITS (0.03B) | 1 language |
+| `ghananlpcommunity/tekyerema-tts-twi` | Tekyerema Twi VITS (0.03B) | 2 languages |
+| `walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani` | Spark-TTS (0.5B) | 4 languages |
+| `facebook/mms-tts-<iso>` | Meta MMS VITS (per-language) | 36 checkpoints, one language each |
 
-Models requiring IPA input (VoxCPM2-Ghana, stable-twi-tts) are excluded.
+Candidates found on Hugging Face are listed by `scripts/scan_tts_models.py`; a model is added once it has a wrapper. Models requiring IPA input that we could not drive correctly are in `data/excluded_models.json`.
 
 ## Setup
 
@@ -106,6 +160,9 @@ scripts/h200_run.sh asr   python -m benchmark.evaluate score-cer  --iso ewe
 scripts/h200_run.sh score python -m benchmark.evaluate score-sbs  --iso ewe
 scripts/h200_run.sh score python -m benchmark.evaluate assemble   --iso ewe
 
+# Results from before multi-source sampling (bare row keys) -> <source>_<row>
+python3 scripts/migrate_keys.py
+
 # Cross-language leaderboard in the terminal
 PYTHONPATH=. python3 scripts/leaderboard.py
 
@@ -123,9 +180,10 @@ The HF Space [ghananlpcommunity/nsanku-tts-benchmark](https://huggingface.co/spa
 
 ## Adding a new language
 
-1. Add the language's config to `SPEECH_EVAL_CONFIGS`, `ISO_TO_NAME` and `TTS_LANG_MAP` in `benchmark/config.py`
+1. Add its `{source: config}` entry to `SPEECH_EVAL_SOURCES`, and `ISO_TO_NAME`, in `benchmark/config.py`
 2. Add an ASR judge in `data/asr_judges.json`
-3. Run `python3 scripts/run_benchmark.py --iso <code>`
+3. Add the language to the models that speak it in `data/tts_models.json`, then `python3 generate_recipes.py`
+4. Run `python3 scripts/run_benchmark.py --iso <code>`
 
 ## Adding a new TTS model
 

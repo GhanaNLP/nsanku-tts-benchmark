@@ -21,7 +21,38 @@
       "gjn",
       "gur",
       "nzi",
-      "xsm"
+      "xsm",
+      "acd",
+      "akp",
+      "any",
+      "avn",
+      "bib",
+      "bim",
+      "biv",
+      "bov",
+      "bud",
+      "bwu",
+      "ffm",
+      "hau",
+      "kbp",
+      "kdh",
+      "kma",
+      "kus",
+      "lef",
+      "lip",
+      "maw",
+      "mzw",
+      "naw",
+      "ncu",
+      "nko",
+      "ntr",
+      "sfw",
+      "sig",
+      "sil",
+      "snw",
+      "tpm",
+      "vag",
+      "xon"
     ],
     "input_type": "orthographic",
     "sample_rate": 16000,
@@ -51,7 +82,38 @@
       "gjn",
       "gur",
       "nzi",
-      "xsm"
+      "xsm",
+      "acd",
+      "akp",
+      "any",
+      "avn",
+      "bib",
+      "bim",
+      "biv",
+      "bov",
+      "bud",
+      "bwu",
+      "ffm",
+      "hau",
+      "kbp",
+      "kdh",
+      "kma",
+      "kus",
+      "lef",
+      "lip",
+      "maw",
+      "mzw",
+      "naw",
+      "ncu",
+      "nko",
+      "ntr",
+      "sfw",
+      "sig",
+      "sil",
+      "snw",
+      "tpm",
+      "vag",
+      "xon"
     ],
     "input_type": "orthographic",
     "sample_rate": 16000,
@@ -258,7 +320,40 @@
       "nzi",
       "twi_akuapem",
       "twi_asante",
-      "xsm"
+      "xsm",
+      "acd",
+      "aha",
+      "akp",
+      "any",
+      "avn",
+      "bib",
+      "bim",
+      "biv",
+      "bov",
+      "bud",
+      "bwu",
+      "ffm",
+      "hau",
+      "kbp",
+      "kdh",
+      "kma",
+      "kpo",
+      "kus",
+      "lef",
+      "lip",
+      "maw",
+      "mzw",
+      "naw",
+      "ncu",
+      "nko",
+      "ntr",
+      "sfw",
+      "sig",
+      "sil",
+      "snw",
+      "tpm",
+      "vag",
+      "xon"
     ],
     "input_type": "orthographic",
     "runner": "omnivoice",
@@ -292,7 +387,11 @@
       "nzi",
       "twi_akuapem",
       "twi_asante",
-      "xsm"
+      "xsm",
+      "hau",
+      "kus",
+      "maw",
+      "xon"
     ],
     "input_type": "orthographic",
     "sample_rate": 24000,
@@ -372,7 +471,40 @@
       "nzi",
       "twi_akuapem",
       "twi_asante",
-      "xsm"
+      "xsm",
+      "acd",
+      "aha",
+      "akp",
+      "any",
+      "avn",
+      "bib",
+      "bim",
+      "biv",
+      "bov",
+      "bud",
+      "bwu",
+      "ffm",
+      "hau",
+      "kbp",
+      "kdh",
+      "kma",
+      "kpo",
+      "kus",
+      "lef",
+      "lip",
+      "maw",
+      "mzw",
+      "naw",
+      "ncu",
+      "nko",
+      "ntr",
+      "sfw",
+      "sig",
+      "sil",
+      "snw",
+      "tpm",
+      "vag",
+      "xon"
     ],
     "license": "proprietary",
     "model_class": "api",
@@ -397,7 +529,39 @@
       "nzi",
       "twi_akuapem",
       "twi_asante",
-      "xsm"
+      "xsm",
+      "acd",
+      "aha",
+      "akp",
+      "any",
+      "avn",
+      "bib",
+      "bim",
+      "biv",
+      "bov",
+      "bud",
+      "bwu",
+      "ffm",
+      "hau",
+      "kbp",
+      "kdh",
+      "kma",
+      "kus",
+      "lef",
+      "lip",
+      "maw",
+      "mzw",
+      "naw",
+      "ncu",
+      "nko",
+      "ntr",
+      "sfw",
+      "sig",
+      "sil",
+      "snw",
+      "tpm",
+      "vag",
+      "xon"
     ],
     "license": "proprietary",
     "model_class": "api",
@@ -462,5 +626,617 @@
     "license": "cc-by-nc-sa-4.0",
     "url": "https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani",
     "notes": "Spark-TTS 0.5B fine-tuned for Twi, Ewe, and Dagbani."
+  },
+  {
+    "name": "facebook/mms-tts-dga",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "dga"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-dga",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-gjn",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "gjn"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-gjn",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-nzi",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "nzi"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-nzi",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-xsm",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "xsm"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-xsm",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-acd",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "acd"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-acd",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-aha",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "aha"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-aha",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-akp",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "akp"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-akp",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-any",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "any"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-any",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-avn",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "avn"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-avn",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-bib",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "bib"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-bib",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-bim",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "bim"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-bim",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-biv",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "biv"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-biv",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-bov",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "bov"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-bov",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-bud",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "bud"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-bud",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-bwu",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "bwu"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-bwu",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-hau",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "hau"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-hau",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-kbp",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "kbp"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-kbp",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-kdh",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "kdh"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-kdh",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-kma",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "kma"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-kma",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-kus",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "kus"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-kus",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-lef",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "lef"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-lef",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-lip",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "lip"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-lip",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-maw",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "maw"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-maw",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-mzw",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "mzw"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-mzw",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-naw",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "naw"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-naw",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-ncu",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "ncu"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-ncu",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-nko",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "nko"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-nko",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-ntr",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "ntr"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-ntr",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-sig",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "sig"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-sig",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-sil",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "sil"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-sil",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-snw",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "snw"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-snw",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-tpm",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "tpm"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-tpm",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-vag",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "vag"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-vag",
+    "notes": "VitsModel from transformers, single speaker."
+  },
+  {
+    "name": "facebook/mms-tts-xon",
+    "architecture": "Meta MMS VITS (per-language)",
+    "languages": [
+      "xon"
+    ],
+    "input_type": "orthographic",
+    "runner": "mms-tts",
+    "modes": [
+      "noref"
+    ],
+    "model_class": "non-llm",
+    "params": "0.04B",
+    "sample_rate": 16000,
+    "license": "CC-BY-NC-4.0",
+    "url": "https://huggingface.co/facebook/mms-tts-xon",
+    "notes": "VitsModel from transformers, single speaker."
   }
 ]

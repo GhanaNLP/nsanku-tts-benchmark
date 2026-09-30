@@ -24,8 +24,8 @@ because a TTS model and the encoder rarely both fit on one GPU:
     stage 2  score_sbs_language() + score_cer_language()
     stage 3  assemble_language()    ->  benchmarks/{iso}.yaml
 
-Incremental: results are keyed by sample *index* (the row index in the
-ghana-speech-eval config). Bumping NUM_SAMPLES only scores the new rows.
+Incremental: results are keyed by sample key (``<source>_<row>``, the text source
+and row in ghana-speech-eval). Bumping NUM_SAMPLES only scores the new rows.
 
 Results format (benchmarks/{iso}.yaml):
 
@@ -57,13 +57,14 @@ from .config import (
     ENCODER_LAYER,
     ENCODER_MODEL,
     HF_TOKEN,
+    MAX_JUDGE_SECONDS,
     ISO_TO_NAME,
     NUM_SAMPLES,
     SBS_VARIANT,
     TTS_LANG_MAP,
     all_isos,
 )
-from .dataset import load_samples, write_manifest
+from .dataset import load_samples, source_of, write_manifest
 
 logger = logging.getLogger(__name__)
 
@@ -388,11 +389,17 @@ def score_cer_language(iso, device="cuda", force=False, samples=None):
             pending = []
             for s in samples:
                 key = str(s.index)
-                if not force and rows.get(key, {}).get("cer") is not None:
+                if not force and (rows.get(key, {}).get("cer") is not None
+                                  or "error" in rows.get(key, {})):
                     continue
                 wav = out_dir / f"{s.key}.wav"
-                if wav.exists():
-                    pending.append((key, wav))
+                if not wav.exists():
+                    continue
+                if _clip_seconds(wav) > MAX_JUDGE_SECONDS:
+                    rows[key] = {"error": f"clip longer than the judge limit "
+                                          f"({MAX_JUDGE_SECONDS:.0f}s)"}
+                    continue
+                pending.append((key, wav))
             if pending:
                 if judge is None:
                     judge = load_judge(iso, device=device)
@@ -418,6 +425,13 @@ def score_cer_language(iso, device="cuda", force=False, samples=None):
 
     save_cer_cache(iso, cache)
     return means
+
+
+def _clip_seconds(path):
+    import soundfile as sf
+
+    info = sf.info(str(path))
+    return info.frames / info.samplerate
 
 
 # ── Stage 3: assemble the published YAML ─────────────────────────────────────
@@ -447,8 +461,9 @@ def assemble_language(iso):
             continue
 
         entries = {}
-        for key in sorted(set(s_rows) | set(c_rows), key=int):
-            row = dict(s_rows.get(key) or {})
+        for key in sorted(set(s_rows) | set(c_rows)):
+            row = {"source": source_of(key)}
+            row.update(s_rows.get(key) or {})
             c = c_rows.get(key)
             if c:
                 row.setdefault("text", sbs_rows.get(name, {}).get(key, {}).get("text"))
@@ -479,6 +494,7 @@ def assemble_language(iso):
         else:
             entry["score"] = sbs if sbs is not None else cer
             entry["partial"] = True
+        entry["per_source"] = _per_source(entries)
         entry["entries"] = entries
         benchmarks.append(entry)
 
@@ -510,6 +526,27 @@ def assemble_language(iso):
                   Dumper=_NoAliasDumper, width=100)
     tmp.replace(path)
     return path
+
+
+def _per_source(entries):
+    """Mean SBS / CER per text source, so a model's result can be read by register."""
+    acc = {}
+    for row in entries.values():
+        a = acc.setdefault(row["source"], {"sbs": [], "cer": []})
+        if "sbs" in row:
+            a["sbs"].append(row["sbs"])
+        if "cer" in row:
+            a["cer"].append(row["cer"])
+    out = {}
+    for source, a in sorted(acc.items()):
+        d = {}
+        if a["sbs"]:
+            d["sbs"] = round(sum(a["sbs"]) / len(a["sbs"]), 4)
+        if a["cer"]:
+            d["cer"] = round(sum(a["cer"]) / len(a["cer"]), 4)
+        d["n"] = max(len(a["sbs"]), len(a["cer"]))
+        out[source] = d
+    return out
 
 
 # ── Result caches ────────────────────────────────────────────────────────────

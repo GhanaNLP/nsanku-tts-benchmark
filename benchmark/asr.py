@@ -231,7 +231,9 @@ class GriotASR(BaseJudge):
 class OmniASR(BaseJudge):
     """Meta Omnilingual ASR, LLM decoder (facebook/omniASR-LLM-7B-v2).
 
-    Language-conditioned through ids like ``ewe_Latn``.
+    Language-conditioned through ids like ``ewe_Latn``. A language Meta has no
+    id for (``code: null`` in asr_judges.json) is decoded unconditioned, as the
+    ASR benchmark does.
     """
 
     BATCH_SIZE = 8
@@ -254,9 +256,12 @@ class OmniASR(BaseJudge):
         waveform = torch.as_tensor(_to_mono_16k(wav_bytes), dtype=torch.float32).flatten()
         return {"waveform": waveform, "sample_rate": JUDGE_SAMPLE_RATE}
 
+    def _langs(self, n):
+        return [self.lang_id] * n if self.lang_id else None
+
     def transcribe(self, wav_bytes):
         out = self.pipeline.transcribe(
-            [self._item(wav_bytes)], lang=[self.lang_id], batch_size=1
+            [self._item(wav_bytes)], lang=self._langs(1), batch_size=1
         )
         return (out[0] or "").strip() if out else ""
 
@@ -264,7 +269,7 @@ class OmniASR(BaseJudge):
         results = []
         for start in range(0, len(wav_bytes_list), self.BATCH_SIZE):
             chunk = [self._item(b) for b in wav_bytes_list[start:start + self.BATCH_SIZE]]
-            langs = [self.lang_id] * len(chunk)
+            langs = self._langs(len(chunk))
             try:
                 out = self.pipeline.transcribe(chunk, lang=langs, batch_size=len(chunk))
                 results.extend((t or "").strip() for t in out)
@@ -275,7 +280,7 @@ class OmniASR(BaseJudge):
                 for item in chunk:
                     try:
                         out = self.pipeline.transcribe(
-                            [item], lang=[self.lang_id], batch_size=1
+                            [item], lang=self._langs(1), batch_size=1
                         )
                         results.append((out[0] or "").strip() if out else "")
                     except Exception:

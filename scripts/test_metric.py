@@ -191,17 +191,20 @@ def test_prompt_disjointness():
 
     asked = []
 
+    def k(n):
+        return f"bible_{n:05d}"
+
     class FakePrompt:
         def __init__(self, index):
             self.index = index
             self.text = "a different sentence entirely"
-            self.reference_path = f"/tmp/fake_{index:05d}.wav"
+            self.reference_path = f"/tmp/fake_{index}.wav"
 
     real_loader = dataset.load_prompt_sample
 
-    def fake_loader(iso, index):
-        asked.append((iso, index))
-        return FakePrompt(index + 500)
+    def fake_loader(iso, key):
+        asked.append((iso, key))
+        return FakePrompt(k(dataset.split_key(key)[1] + 500))
 
     dataset.load_prompt_sample = fake_loader
     try:
@@ -210,7 +213,7 @@ def test_prompt_disjointness():
         from types import SimpleNamespace
 
         recipe = SimpleNamespace(REFERENCE_CLIP="/x.wav", REFERENCE_TEXT="hi")
-        with models.prompt_scope("twi_asante", 5):
+        with models.prompt_scope("twi_asante", k(5)):
             clip, text, source = models.reference_clip(
                 "twi_asante", {"recipe": recipe}, token=None)
         check("a recipe override wins", clip == "/x.wav" and text == "hi",
@@ -220,42 +223,42 @@ def test_prompt_disjointness():
         # ...unless it pins the very row being scored, which would grade
         # copying rather than synthesis.
         collide = SimpleNamespace(
-            REFERENCE_CLIP=str(dataset.reference_path_for("twi_asante", 5)),
+            REFERENCE_CLIP=str(dataset.reference_path_for("twi_asante", k(5))),
             REFERENCE_TEXT="hi",
         )
-        with models.prompt_scope("twi_asante", 5):
+        with models.prompt_scope("twi_asante", k(5)):
             clip, text, source = models.reference_clip(
                 "twi_asante", {"recipe": collide}, token=None)
         check("an override colliding with the scored row is refused",
-              clip != str(dataset.reference_path_for("twi_asante", 5)),
+              clip != str(dataset.reference_path_for("twi_asante", k(5))),
               f"clip={clip}")
         check("the collision fell back to an offset row",
-              asked[-1] == ("twi_asante", 5), f"asked for {asked[-1]}")
+              asked[-1] == ("twi_asante", k(5)), f"asked for {asked[-1]}")
 
         # The shipped recipes all set both knobs to None: that must mean
         # "no override", not "override with None".
         none_recipe = SimpleNamespace(REFERENCE_CLIP=None, REFERENCE_TEXT=None)
-        with models.prompt_scope("twi_asante", 7):
+        with models.prompt_scope("twi_asante", k(7)):
             clip, text, source = models.reference_clip(
                 "twi_asante", {"recipe": none_recipe}, token=None)
         check("a None override uses the row-derived prompt",
-              clip == "/tmp/fake_00507.wav", f"clip={clip}")
+              clip == "/tmp/fake_bible_00507.wav", f"clip={clip}")
 
         for row in (0, 17, 431):
-            with models.prompt_scope("twi_asante", row):
+            with models.prompt_scope("twi_asante", k(row)):
                 clip, text, source = models.reference_clip(
                     "twi_asante", {}, token=None)
             check(f"row {row}: the prompt row is not the scored row",
-                  asked[-1] == ("twi_asante", row), f"asked for {asked[-1]}")
+                  asked[-1] == ("twi_asante", k(row)), f"asked for {asked[-1]}")
             # Compare whole paths: substring-matching row 0 against
             # "fake_00500.wav" would spuriously pass.
             check(f"row {row}: the prompt is exactly {row + 500} rows away",
-                  clip == f"/tmp/fake_{row + 500:05d}.wav", f"clip={clip}")
+                  clip == f"/tmp/fake_{k(row + 500)}.wav", f"clip={clip}")
             check(f"row {row}: the prompt is not the scoring reference",
-                  clip != str(dataset.reference_path_for("twi_asante", row)),
+                  clip != str(dataset.reference_path_for("twi_asante", k(row))),
                   f"clip={clip}")
             check(f"row {row}: source records the row it used",
-                  str(row) in source, f"source={source}")
+                  k(row) in source, f"source={source}")
 
         check("the scope is torn down afterwards",
               models._PROMPT_SCOPE is None, str(models._PROMPT_SCOPE))
@@ -279,7 +282,7 @@ def test_unscoped_fallback():
     from benchmark import dataset, models
     import huggingface_hub
 
-    def boom(iso, index):
+    def boom(iso, key):
         raise AssertionError("an unscoped call must not consult the dataset")
 
     tmp = Path(tempfile.mkdtemp())

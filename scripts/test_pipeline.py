@@ -62,21 +62,37 @@ def main():
     rows = [{"text": f"Row number {i} has some words",
              "length": 5.0,
              "audio": {"bytes": b""}} for i in range(n_rows)]
-    dataset.config_rows = lambda i: rows
+    # Two text sources for the language, so multi-source sampling is exercised.
+    dataset.SPEECH_EVAL_SOURCES[iso] = {"bible": "fake_bible", "jw": "fake_jw"}
+    dataset.config_meta = lambda cfg: rows
+
+    print("\n== allocation across sources ==")
+    check("an even split", dataset.allocate(200, [1000, 1000]) == [100, 100])
+    check("the remainder goes to the earlier sources",
+          dataset.allocate(200, [1000, 1000, 1000]) == [67, 67, 66])
+    check("a short source hands its share to the others",
+          dataset.allocate(200, [30, 1000, 1000]) == [30, 85, 85])
+    check("total supply caps the result", dataset.allocate(200, [10, 20]) == [10, 20])
+    check("raising the limit only adds to each share",
+          all(b >= a for a, b in zip(dataset.allocate(150, [1000] * 4),
+                                     dataset.allocate(200, [1000] * 4))))
 
     print("\n== sample filtering ==")
     for text, dur, want in [
         ("Row number 0 has some words", 5.0, True),
         ("Row number 0 has some words", 1.0, False),      # too short to be a stable utterance
-        ("Row number 0 has some words", 40.0, False),     # too long
-        ("one two three four", 5.0, False),               # too few words
-        (" ".join(["word"] * 40), 5.0, False),            # too many words
+        ("Row number 0 has some words", 60.0, False),     # too long
+        ("one", 5.0, False),                              # one word: too noisy to score
+        ("one two three four", 5.0, True),                # short text is fine
+        ("Row number 0 has some words", 30.0, True),      # long audio is fine
+        (" ".join(["word"] * 200), 5.0, False),           # too many words
+        (" ".join(["word"] * 40), 5.0, True),             # long text is fine
         ("", 5.0, False),                                 # no text
     ]:
         check(f"is_usable({dur}s, {len(text.split())} words) == {want}",
               dataset.is_usable(text, dur) is want)
 
-    def fake_write_reference(sample, wav_bytes):
+    def fake_write_reference(sample):
         out = sample.reference_path
         out.parent.mkdir(parents=True, exist_ok=True)
         tone = rng.normal(0, 0.05, sr * 4).astype(np.float32)
@@ -171,6 +187,10 @@ def run_pipeline(config, dataset, evaluate, models, speechbertscore,
     check("the sample loader honours its limit",
           len(samples) == samples_expected,
           f"got {len(samples)} requested {samples_expected}")
+    check("samples are drawn across both sources",
+          {s.source for s in samples} == {"bible", "jw"},
+          str([s.key for s in samples]))
+    check("sample keys carry the source", all("_" in s.key for s in samples))
     check("reference audio was written for each sample",
           all(s.reference_path.exists() for s in samples))
 
@@ -213,7 +233,7 @@ def run_pipeline(config, dataset, evaluate, models, speechbertscore,
           f"prompts={sorted({Path(p).name for p in prompts_seen})}")
     check("every prompt is exactly the configured offset away (mod config length)",
           {Path(p).name for p in prompts_seen} ==
-          {f"{(s.index + config.PROMPT_ROW_OFFSET) % n_rows:05d}.wav"
+          {f"{s.source}_{(s.row + config.PROMPT_ROW_OFFSET) % n_rows:05d}.wav"
            for s in samples},
           f"prompts={sorted({Path(p).name for p in prompts_seen})}")
 

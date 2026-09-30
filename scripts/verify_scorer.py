@@ -7,7 +7,7 @@ between the pilot and the package has changed.
 
 import numpy as np
 
-from benchmark.config import SPEECH_EVAL_CONFIGS
+from benchmark.config import SPEECH_EVAL_SOURCES
 from benchmark.dataset import load_samples
 from benchmark.speechbertscore import SpeechBERTScorer, self_check, speechbertscore
 
@@ -37,7 +37,7 @@ def main():
     # are dga/gjn/xsm. Silently dropping unknown codes would quietly shrink
     # coverage, so an unexpected code is an error, not a filter.
     langs = ["twi_asante", "ewe", "dga", "gjn", "fat", "xsm"]
-    unknown = [l for l in langs if l not in SPEECH_EVAL_CONFIGS]
+    unknown = [l for l in langs if l not in SPEECH_EVAL_SOURCES]
     if unknown:
         raise SystemExit(f"unknown language codes: {unknown}")
 
