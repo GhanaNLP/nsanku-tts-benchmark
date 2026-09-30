@@ -343,7 +343,9 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
 
 <script>
 const GITHUB_REPO = 'GhanaNLP/nsanku-tts-benchmark';
-const SUMMARY_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/benchmarks/summary.json`;
+// The query string is a one-minute bucket: GitHub's raw CDN keeps each URL for ~5 minutes,
+// unevenly across edges, so without it a fresh push can take a long time to show up.
+const SUMMARY_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/benchmarks/summary.json?t=${Math.floor(Date.now() / 60000)}`;
 const AUDIO_BASE = 'https://huggingface.co/datasets/ghananlpcommunity/nsanku-tts-benchmark-audio/resolve/main';
 const RECIPES_URL = `https://github.com/${GITHUB_REPO}/blob/main/recipes/`;
 
