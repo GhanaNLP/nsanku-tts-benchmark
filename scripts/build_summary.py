@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from benchmark.config import BENCHMARK_DIR, ISO_TO_NAME, SPEECH_EVAL_SOURCES, all_isos  # noqa: E402
+from benchmark.clips import pick_sample  # noqa: E402
 from benchmark.evaluate import load_tts_models  # noqa: E402
 
 # Everything on a model row except the per-clip entries.
@@ -59,6 +60,8 @@ def build(only=None):
         if not rows:
             continue
         scored = {r["model"] for r in rows}
+        # The sentence behind the Listen buttons (see benchmark/clips.py).
+        sample = pick_sample(doc.get("benchmarks", []))
         # Text sources that actually contributed samples (a configured source
         # can end up empty), so the domain count on the board is honest.
         domains = sorted({src for r in rows for src in (r.get("per_source") or {})},
@@ -68,6 +71,7 @@ def build(only=None):
             "language": ISO_TO_NAME.get(iso, doc.get("language", iso)),
             "family": family.get(iso),
             "domains": domains,
+            "sample": sample,
             # Registered for this language but no valid output: shown as failed.
             "missing": sorted(n for n in registry if n not in scored),
             "num_samples": doc.get("num_samples"),

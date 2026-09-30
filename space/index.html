@@ -181,6 +181,13 @@ th[data-sort] { cursor: pointer; white-space: nowrap; }
 th[data-sort].asc::after { content: " \25B2"; font-size: 0.65rem; }
 th[data-sort].desc::after { content: " \25BC"; font-size: 0.65rem; }
 th.sep, td.sep { border-left: 2px solid var(--border); }
+.play-btn {
+  cursor: pointer; font-size: 0.72rem; line-height: 1; padding: 4px 7px;
+  color: var(--link); background: var(--surface); border: 1px solid var(--border-strong);
+  border-radius: 4px;
+}
+.play-btn:hover { background: var(--accent-hi); }
+.play-btn.playing { background: var(--accent); color: var(--text-strong); border-color: var(--accent); }
 </style>
 </head>
 <body>
@@ -337,6 +344,7 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
 <script>
 const GITHUB_REPO = 'GhanaNLP/nsanku-tts-benchmark';
 const SUMMARY_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/benchmarks/summary.json`;
+const AUDIO_BASE = 'https://huggingface.co/datasets/ghananlpcommunity/nsanku-tts-benchmark-audio/resolve/main';
 const RECIPES_URL = `https://github.com/${GITHUB_REPO}/blob/main/recipes/`;
 
 const ALL_LANGUAGES = [
@@ -429,6 +437,44 @@ function licenseCell(r) {
   return r.license ? `<td><span class="lic">${esc(r.license)}</span></td>` : '<td><span class="lic na">—</span></td>';
 }
 function compColor(v) { return v >= 0.8 ? 'var(--success)' : v >= 0.65 ? 'var(--accent-hover)' : 'var(--warning)'; }
+// ====== Listen buttons: one sentence per language, read by every model ======
+function clipUrl(r) {
+  const s = (DATA[r.iso] || {}).sample;
+  if (!s || !s.models.includes(r.model)) return null;
+  return `${AUDIO_BASE}/audio/${r.iso}/read_aloud/${r.model.replace(/\//g, '__')}/${s.key}.wav`;
+}
+function refUrl(iso) {
+  const s = (DATA[iso] || {}).sample;
+  return s ? `${AUDIO_BASE}/refs/${iso}/${s.key}.wav` : null;
+}
+function playBtn(url, id, title) {
+  return url ? `<button class="play-btn" data-url="${url}" data-id="${esc(id)}" title="${esc(title)}">&#9654;</button>` : '<span class="dom">\u2014</span>';
+}
+function listenCell(r) {
+  return `<td>${playBtn(clipUrl(r), r.iso + '|' + r.model, 'Hear this model read the sample sentence for this language')}</td>`;
+}
+let PLAYER = null, PLAYING = null;
+function setPlaying(id) {
+  PLAYING = id;
+  document.querySelectorAll('.play-btn').forEach(b => {
+    const on = b.dataset.id === id;
+    b.classList.toggle('playing', on);
+    b.innerHTML = on ? '&#9632;' : '&#9654;';
+  });
+}
+document.addEventListener('click', e => {
+  const btn = e.target.closest('.play-btn');
+  if (!btn) return;
+  if (!PLAYER) {
+    PLAYER = new Audio();
+    PLAYER.addEventListener('ended', () => setPlaying(null));
+    PLAYER.addEventListener('error', () => setPlaying(null));
+  }
+  if (PLAYING === btn.dataset.id) { PLAYER.pause(); setPlaying(null); return; }
+  PLAYER.src = btn.dataset.url;
+  PLAYER.play().then(() => setPlaying(btn.dataset.id)).catch(() => setPlaying(null));
+});
+
 const baseName = m => m.replace(/-(ref|noref|design)$/, '');
 
 // ====== data ======
@@ -537,7 +583,7 @@ function renderGlobal() {
 
   $('global-thead').innerHTML = `<tr>
     <th data-sort="rank">#</th><th data-sort="language">Language</th><th data-sort="iso">Code</th>
-    <th data-sort="family">Family</th><th data-sort="model">Model</th><th data-sort="type">Type</th>
+    <th data-sort="family">Family</th><th data-sort="model">Model</th><th title="Hear the model read the sample sentence">Listen</th><th data-sort="type">Type</th>
     <th data-sort="cls">Track</th><th data-sort="mode">Mode</th><th data-sort="params_bn">Params</th><th data-sort="license">License</th>
     <th data-sort="ndom">Domains</th>
     ${DOMAINS.map((d, i) => `<th data-sort="dom_${d}" ${i === 0 ? 'class="sep"' : ''}>${DOMAIN_LABELS[d]}</th>`).join('')}
@@ -549,7 +595,7 @@ function renderGlobal() {
 
   const body = $('global-body');
   if (!rows.length) {
-    body.innerHTML = `<tr class="empty-row"><td colspan="${11 + DOMAINS.length + 4}">No languages match these filters yet.</td></tr>`;
+    body.innerHTML = `<tr class="empty-row"><td colspan="${12 + DOMAINS.length + 4}">No languages match these filters yet.</td></tr>`;
     return;
   }
   body.innerHTML = rows.map(r => `<tr>
@@ -557,7 +603,7 @@ function renderGlobal() {
     <td class="lang-cell">${esc(r.language)}</td>
     <td><span class="code">${esc(r.iso)}</span></td>
     <td><span class="fam">${esc(r.family || '—')}</span></td>
-    <td>${modelCell(r)}</td>
+    <td>${modelCell(r)}</td>${listenCell(r)}
     <td><span class="mtype">${esc(r.type)}</span></td>
     <td>${trackBadge(r.cls)}</td><td>${modeBadge(r.mode)}</td>
     <td>${esc(r.params)}</td>${licenseCell(r)}
@@ -593,7 +639,8 @@ function renderPerLang() {
   $('per-lang-meta').innerHTML = `<strong>${esc(doc.language)}</strong> · ${esc(doc.family || '—')} · ` +
     `${doms.length} domain${doms.length === 1 ? '' : 's'} (${doms.map(d => DOMAIN_LABELS[d] || d).join(', ')}) · ` +
     `${doc.num_samples} sentences · ASR judge <code>${esc(doc.judge && doc.judge.model)}</code> ` +
-    `(its own CER on real speech: ${fmt(doc.judge && doc.judge.cer_on_real_speech, 3)}, a floor for any TTS CER here) · updated ${esc(doc.updated)}`;
+    `(its own CER on real speech: ${fmt(doc.judge && doc.judge.cer_on_real_speech, 3)}, a floor for any TTS CER here) · updated ${esc(doc.updated)}` +
+    (doc.sample ? `<br><strong>Listen:</strong> every model below read this ${esc(DOMAIN_LABELS[doc.sample.source] || doc.sample.source)} sentence: <em>&ldquo;${esc(doc.sample.text)}&rdquo;</em> &nbsp;${playBtn(refUrl(iso), iso + '|real', 'The real human recording of this sentence')} <span class="dom">real recording</span>` : '');
 
   let rows = ROWS.filter(r => r.iso === iso && passFilters(r, 'per') && (type === 'All' || r.type === type));
   rows.sort((a, b) => sortKey === 'cer' ? (a.cer ?? 9) - (b.cer ?? 9) : (b[sortKey] ?? -1) - (a[sortKey] ?? -1));
@@ -601,7 +648,7 @@ function renderPerLang() {
   rows = sortRows(rows, 'per-table');
 
   $('per-thead').innerHTML = `<tr>
-    <th data-sort="rank">#</th><th data-sort="model">Model</th><th data-sort="type">Type</th><th data-sort="cls">Track</th>
+    <th data-sort="rank">#</th><th data-sort="model">Model</th><th title="Hear the model read the sample sentence">Listen</th><th data-sort="type">Type</th><th data-sort="cls">Track</th>
     <th data-sort="mode">Mode</th><th data-sort="params_bn">Params</th><th data-sort="license">License</th>
     ${doms.map((d, i) => `<th data-sort="dom_${d}" ${i === 0 ? 'class="sep"' : ''}>${DOMAIN_LABELS[d] || d}</th>`).join('')}
     <th data-sort="composite" class="sep" title="(Accuracy + SBS) / 2 - higher is better">Composite</th>
@@ -612,13 +659,13 @@ function renderPerLang() {
 
   body.innerHTML = rows.length ? rows.map(r => `<tr>
     <td class="rank ${r.rank === 1 ? 'r1' : r.rank === 2 ? 'r2' : r.rank === 3 ? 'r3' : ''}">${r.rank}</td>
-    <td>${modelCell(r)}</td><td><span class="mtype">${esc(r.type)}</span></td>
+    <td>${modelCell(r)}</td>${listenCell(r)}<td><span class="mtype">${esc(r.type)}</span></td>
     <td>${trackBadge(r.cls)}</td><td>${modeBadge(r.mode)}</td><td>${esc(r.params)}</td>${licenseCell(r)}
     ${doms.map((d, i) => `<td class="score-num ${i === 0 ? 'sep' : ''}">${r.bySource[d] != null ? r.bySource[d].toFixed(3) : '—'}</td>`).join('')}
     <td class="score-num sep" style="font-weight:700;color:${compColor(r.composite)}">${fmt(r.composite)}</td>
     <td class="score-num">${fmt(r.accuracy)}</td><td class="score-num">${pct(r.cer)}</td>
     <td class="score-num">${fmt(r.sbs)}</td><td class="score-num" style="color:var(--text-muted)">${r.n}</td>
-  </tr>`).join('') : `<tr class="empty-row"><td colspan="${12 + doms.length}">No models match the selected filters.</td></tr>`;
+  </tr>`).join('') : `<tr class="empty-row"><td colspan="${13 + doms.length}">No models match the selected filters.</td></tr>`;
 
   missing.innerHTML = (doc.missing || []).length
     ? doc.missing.map(m => `<tr><td>${esc(m)}${recipeLink(m, iso)}</td><td style="color:var(--text-muted)">Registered for this language but produced no valid output (failed to load or synthesise).</td></tr>`).join('')

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Pull finished languages from the H200, rebuild the summary, commit and push.
+"""Pull finished languages from the H200, publish their Listen clips, rebuild the
+summary, commit and push.
 
 Only languages whose run has *finished* are published. A language's YAML is
 rewritten at the end of each of its runs, so a YAML found on disk mid-run (or
@@ -56,11 +57,32 @@ def finished_languages(host, remote):
     return done & set(all_isos())
 
 
+def publish_audio(host, remote, isos):
+    """Upload the Listen clips on the GPU box, before the feed that points at them.
+
+    The two helper files are copied over rather than pulled: that checkout's
+    tracked YAMLs are rewritten by the runs, so a git pull there can conflict.
+    """
+    repo = f"{remote}/nsanku-tts-benchmark"
+    for rel in ("benchmark/clips.py", "scripts/publish_audio.py"):
+        subprocess.run(["scp", "-q", str(ROOT / rel), f"{host}:{repo}/{rel}"], check=True)
+    r = subprocess.run(
+        ["ssh", host, f"cd {repo} && bash scripts/h200_run.sh score python "
+                      f"scripts/publish_audio.py --iso {' '.join(isos)}"],
+        capture_output=True, text=True)
+    lines = [l for l in r.stdout.splitlines() if l.strip() and "%|" not in l]
+    print("\n".join(lines[-len(isos) - 1:]))
+    if r.returncode != 0:
+        sys.exit(f"publishing the Listen clips failed:\n{r.stderr[-400:]}")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--host", default="h200")
     ap.add_argument("--remote", default=REMOTE)
     ap.add_argument("--no-push", action="store_true")
+    ap.add_argument("--no-audio", action="store_true",
+                    help="skip uploading the Listen clips")
     args = ap.parse_args()
 
     done = sorted(finished_languages(args.host, args.remote))
@@ -84,6 +106,9 @@ def main():
     for path in bench.glob("*.yaml"):
         if path.stem not in pulled:
             path.unlink()
+
+    if not args.no_audio:
+        publish_audio(args.host, args.remote, pulled)
 
     sh([sys.executable, "scripts/build_summary.py", *pulled])
     sh(["git", "add", "-A", "benchmarks", "space/bundled_data.json"])
