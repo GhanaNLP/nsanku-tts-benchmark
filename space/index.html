@@ -227,10 +227,10 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
         </label>
         <label>Track:</label>
         <select id="global-track">
-          <option value="non-llm" selected>Open models</option>
+          <option value="All" selected>All</option>
+          <option value="non-llm">Open models</option>
           <option value="api">Hosted APIs</option>
           <option value="llm">LLM-based</option>
-          <option value="All">All</option>
         </select>
         <label>Size:</label>
         <select id="global-size">
@@ -247,7 +247,7 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
         </select>
       </div>
       <p class="intro">Best model per language, ranked by Composite score. The domain columns show the Composite on each text source.</p>
-      <p class="intro">Open models are the core of this benchmark: their weights can be downloaded and the scores re-run by anyone. Hosted APIs and LLM-based models are shown for comparison.</p>
+      <p class="intro">All models are shown by default. Open models can be downloaded and their scores re-run by anyone; Hosted APIs are proprietary services that can change without notice. Use the Track filter to compare like with like.</p>
       <p id="global-note" class="section-note" style="display:none; margin-bottom:14px;"></p>
       <div class="table-wrap">
         <table id="global-table">
