@@ -223,7 +223,7 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
     <div class="tab-pane active" id="pane-global">
       <div class="filters">
         <label class="switch" title="Languages that have only one text source (domain) in ghana-speech-eval">
-          <input type="checkbox" id="global-single"> Include single-domain languages
+          <input type="checkbox" id="global-single" checked> Include single-domain languages
         </label>
         <label>Track:</label>
         <select id="global-track">
@@ -658,8 +658,6 @@ async function init() {
     } catch (e) { console.warn(url, e); }
   }
   buildRows();
-  // Until some multi-domain language is scored, hiding single-domain ones would show nothing.
-  if (!ROWS.some(r => r.ndom >= 2)) $('global-single').checked = true;
   populatePerLang();
   setupTabs();
   ['global-single', 'global-track', 'global-size', 'global-mode'].forEach(id => $(id).addEventListener('change', renderGlobal));
