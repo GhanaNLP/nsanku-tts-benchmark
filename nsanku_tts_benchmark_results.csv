@@ -1,0 +1,154 @@
+iso,language,model,mode,architecture,cer,wer,valid,samples
+ada,Dangme,ghananlpcommunity/ghana-tts-72k-ref,ref,VoxCPM v1 (0.7B),0.102,0.5202,200,200
+ada,Dangme,ghananlpcommunity/ghana-tts-36k-ref,ref,VoxCPM v1 (0.7B),0.1061,0.542,200,200
+ada,Dangme,ghananlpcommunity/ghana-tts-36k-noref,noref,VoxCPM v1 (0.7B),0.1466,0.59,200,200
+ada,Dangme,k2-fsa/OmniVoice-ref,ref,OmniVoice (voice cloning + voice design),0.1466,0.6179,200,200
+ada,Dangme,KhayaAI/khaya-tts-v2,noref,Khaya AI TTS v2 API,0.1696,0.43,200,200
+ada,Dangme,Google/gemini-3.1-flash-tts-preview,noref,Google Gemini 3.1 Flash TTS (API),0.1879,0.7411,199,200
+ada,Dangme,Google/gemini-3.1-flash-tts-preview-universal,noref,Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p),0.1946,0.7328,199,200
+ada,Dangme,k2-fsa/OmniVoice-design,design,OmniVoice (voice cloning + voice design),0.2467,0.6398,189,200
+ada,Dangme,ghananlpcommunity/ghana-tts-72k-noref,noref,VoxCPM v1 (0.7B),0.26,0.6623,200,200
+ada,Dangme,k2-fsa/OmniVoice-noref,noref,OmniVoice (voice cloning + voice design),0.2903,0.6554,189,200
+dag,Dagbani,k2-fsa/OmniVoice-ref,ref,OmniVoice (voice cloning + voice design),0.0515,0.3445,200,200
+dag,Dagbani,ghananlpcommunity/ghana-tts-36k-ref,ref,VoxCPM v1 (0.7B),0.052,0.3864,200,200
+dag,Dagbani,KhayaAI/khaya-tts-v2,noref,Khaya AI TTS v2 API,0.0538,0.329,200,200
+dag,Dagbani,ghananlpcommunity/ghana-tts-72k-ref,ref,VoxCPM v1 (0.7B),0.0586,0.376,200,200
+dag,Dagbani,FarmerlineML/voxcpm2-dagbani-sft-ref,ref,VoxCPM2 (2B),0.0822,0.4024,200,200
+dag,Dagbani,walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref,ref,Spark-TTS (0.5B),0.085,0.4014,200,200
+dag,Dagbani,ghananlpcommunity/ghana-tts-36k-noref,noref,VoxCPM v1 (0.7B),0.124,0.5021,200,200
+dag,Dagbani,k2-fsa/OmniVoice-design,design,OmniVoice (voice cloning + voice design),0.1302,0.4195,198,200
+dag,Dagbani,FarmerlineML/voxcpm2-dagbani-sft-noref,noref,VoxCPM2 (2B),0.1316,0.4839,200,200
+dag,Dagbani,k2-fsa/OmniVoice-noref,noref,OmniVoice (voice cloning + voice design),0.133,0.4184,197,200
+dag,Dagbani,ghananlpcommunity/ghana-tts-72k-noref,noref,VoxCPM v1 (0.7B),0.156,0.5164,200,200
+dag,Dagbani,Google/gemini-3.1-flash-tts-preview,noref,Google Gemini 3.1 Flash TTS (API),0.16,0.6889,200,200
+dag,Dagbani,Google/gemini-3.1-flash-tts-preview-universal,noref,Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p),0.1638,0.6731,200,200
+dag,Dagbani,walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-noref,noref,Spark-TTS (0.5B),0.6596,1.1779,200,200
+dga,Dagaare,ghananlpcommunity/ghana-tts-72k-ref,ref,VoxCPM v1 (0.7B),0.0972,0.3851,200,200
+dga,Dagaare,k2-fsa/OmniVoice-ref,ref,OmniVoice (voice cloning + voice design),0.0996,0.3938,200,200
+dga,Dagaare,KhayaAI/khaya-tts-v2,noref,Khaya AI TTS v2 API,0.1024,0.3599,200,200
+dga,Dagaare,ghananlpcommunity/ghana-tts-36k-ref,ref,VoxCPM v1 (0.7B),0.1044,0.391,200,200
+dga,Dagaare,ghananlpcommunity/ghana-tts-36k-noref,noref,VoxCPM v1 (0.7B),0.1487,0.465,200,200
+dga,Dagaare,ghananlpcommunity/ghana-tts-72k-noref,noref,VoxCPM v1 (0.7B),0.2077,0.545,200,200
+dga,Dagaare,Google/gemini-3.1-flash-tts-preview,noref,Google Gemini 3.1 Flash TTS (API),0.2162,0.6231,199,200
+dga,Dagaare,Google/gemini-3.1-flash-tts-preview-universal,noref,Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p),0.2208,0.6052,199,200
+dga,Dagaare,k2-fsa/OmniVoice-design,design,OmniVoice (voice cloning + voice design),0.4569,0.7085,191,200
+dga,Dagaare,k2-fsa/OmniVoice-noref,noref,OmniVoice (voice cloning + voice design),0.5024,0.7558,195,200
+ewe,Ewe,facebook/mms-tts-ewe,noref,Meta MMS VITS (per-language),0.0377,0.2589,200,200
+ewe,Ewe,FarmerlineML/voxcpm2-ewe-sft-ref,ref,VoxCPM2 (2B),0.0455,0.2996,200,200
+ewe,Ewe,FarmerlineML/voxcpm2-ewe-sft-noref,noref,VoxCPM2 (2B),0.0455,0.2929,200,200
+ewe,Ewe,multilingual-tts/VITS-OpenBible-Ewe,noref,VITS (Coqui),0.0615,0.3224,200,200
+ewe,Ewe,KhayaAI/khaya-tts-v2,noref,Khaya AI TTS v2 API,0.0651,0.3216,200,200
+ewe,Ewe,ghananlpcommunity/ghana-tts-72k-ref,ref,VoxCPM v1 (0.7B),0.068,0.3198,200,200
+ewe,Ewe,ghananlpcommunity/ghana-tts-36k-ref,ref,VoxCPM v1 (0.7B),0.0684,0.3394,200,200
+ewe,Ewe,Sunbird/orpheus-3b-tts-multilingual,noref,Orpheus-3B (autoregressive LLM over SNAC 24 kHz),0.0687,0.3031,200,200
+ewe,Ewe,walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref,ref,Spark-TTS (0.5B),0.0712,0.3656,200,200
+ewe,Ewe,k2-fsa/OmniVoice-ref,ref,OmniVoice (voice cloning + voice design),0.0714,0.4803,200,200
+ewe,Ewe,ghananlpcommunity/tekyerema-tts-ewe,noref,Tekyerema Ewe VITS (0.03B),0.1069,0.4318,200,200
+ewe,Ewe,ghananlpcommunity/ghana-tts-36k-noref,noref,VoxCPM v1 (0.7B),0.1633,0.6671,200,200
+ewe,Ewe,Google/gemini-3.1-flash-tts-preview,noref,Google Gemini 3.1 Flash TTS (API),0.173,0.7594,200,200
+ewe,Ewe,Google/gemini-3.1-flash-tts-preview-universal,noref,Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p),0.1764,0.7721,200,200
+ewe,Ewe,ghananlpcommunity/ghana-tts-72k-noref,noref,VoxCPM v1 (0.7B),0.1811,0.6725,200,200
+ewe,Ewe,k2-fsa/OmniVoice-design,design,OmniVoice (voice cloning + voice design),0.1983,0.6673,193,200
+ewe,Ewe,k2-fsa/OmniVoice-noref,noref,OmniVoice (voice cloning + voice design),0.2145,0.6924,191,200
+ewe,Ewe,ghananlpcommunity/F5-TTS-OpenBible-Ewe-ref,ref,F5-TTS (DiT + Vocos),0.3224,0.6424,200,200
+ewe,Ewe,walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-noref,noref,Spark-TTS (0.5B),0.4566,0.7064,200,200
+fat,Fante,KhayaAI/khaya-tts-v2,noref,Khaya AI TTS v2 API,0.0656,0.2654,200,200
+fat,Fante,ghananlpcommunity/ghana-tts-36k-ref,ref,VoxCPM v1 (0.7B),0.0675,0.3389,200,200
+fat,Fante,ghananlpcommunity/ghana-tts-72k-ref,ref,VoxCPM v1 (0.7B),0.0686,0.321,200,200
+fat,Fante,k2-fsa/OmniVoice-ref,ref,OmniVoice (voice cloning + voice design),0.1106,0.4456,200,200
+fat,Fante,ghananlpcommunity/ghana-tts-36k-noref,noref,VoxCPM v1 (0.7B),0.1296,0.4191,200,200
+fat,Fante,facebook/mms-tts-aka,noref,Meta MMS VITS (per-language),0.1598,0.5415,200,200
+fat,Fante,ghananlpcommunity/ghana-tts-72k-noref,noref,VoxCPM v1 (0.7B),0.1721,0.4632,200,200
+fat,Fante,Google/gemini-3.1-flash-tts-preview-universal,noref,Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p),0.1819,0.5968,200,200
+fat,Fante,Google/gemini-3.1-flash-tts-preview,noref,Google Gemini 3.1 Flash TTS (API),0.1934,0.5868,200,200
+fat,Fante,k2-fsa/OmniVoice-design,design,OmniVoice (voice cloning + voice design),0.2645,0.6318,196,200
+fat,Fante,k2-fsa/OmniVoice-noref,noref,OmniVoice (voice cloning + voice design),0.2679,0.6414,193,200
+gaa,Ga,KhayaAI/khaya-tts-v2,noref,Khaya AI TTS v2 API,0.1127,0.4833,200,200
+gaa,Ga,k2-fsa/OmniVoice-ref,ref,OmniVoice (voice cloning + voice design),0.1736,0.7725,200,200
+gaa,Ga,ghananlpcommunity/ghana-tts-72k-ref,ref,VoxCPM v1 (0.7B),0.1875,0.6789,200,200
+gaa,Ga,ghananlpcommunity/ghana-tts-36k-noref,noref,VoxCPM v1 (0.7B),0.1911,0.6594,200,200
+gaa,Ga,ghananlpcommunity/ghana-tts-36k-ref,ref,VoxCPM v1 (0.7B),0.2056,0.6762,200,200
+gaa,Ga,ghananlpcommunity/ghana-tts-72k-noref,noref,VoxCPM v1 (0.7B),0.2554,0.7383,200,200
+gaa,Ga,k2-fsa/OmniVoice-design,design,OmniVoice (voice cloning + voice design),0.3551,0.9249,185,200
+gaa,Ga,k2-fsa/OmniVoice-noref,noref,OmniVoice (voice cloning + voice design),0.3564,0.9335,190,200
+gaa,Ga,Google/gemini-3.1-flash-tts-preview-universal,noref,Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p),0.3575,0.8282,200,200
+gaa,Ga,Google/gemini-3.1-flash-tts-preview,noref,Google Gemini 3.1 Flash TTS (API),0.3713,0.8289,199,200
+gjn,Gonja,KhayaAI/khaya-tts-v2,noref,Khaya AI TTS v2 API,0.0847,0.5571,200,200
+gjn,Gonja,ghananlpcommunity/ghana-tts-36k-ref,ref,VoxCPM v1 (0.7B),0.1095,0.6607,200,200
+gjn,Gonja,ghananlpcommunity/ghana-tts-72k-ref,ref,VoxCPM v1 (0.7B),0.1232,0.6789,200,200
+gjn,Gonja,k2-fsa/OmniVoice-ref,ref,OmniVoice (voice cloning + voice design),0.1618,0.7791,200,200
+gjn,Gonja,ghananlpcommunity/ghana-tts-36k-noref,noref,VoxCPM v1 (0.7B),0.1981,0.7598,200,200
+gjn,Gonja,Google/gemini-3.1-flash-tts-preview-universal,noref,Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p),0.2125,0.8366,200,200
+gjn,Gonja,Google/gemini-3.1-flash-tts-preview,noref,Google Gemini 3.1 Flash TTS (API),0.2144,0.8489,200,200
+gjn,Gonja,ghananlpcommunity/ghana-tts-72k-noref,noref,VoxCPM v1 (0.7B),0.2464,0.798,200,200
+gjn,Gonja,k2-fsa/OmniVoice-design,design,OmniVoice (voice cloning + voice design),0.3989,0.8306,191,200
+gjn,Gonja,k2-fsa/OmniVoice-noref,noref,OmniVoice (voice cloning + voice design),0.4073,0.8316,187,200
+gur,Gurene,k2-fsa/OmniVoice-ref,ref,OmniVoice (voice cloning + voice design),0.1471,0.6261,200,200
+gur,Gurene,ghananlpcommunity/ghana-tts-72k-ref,ref,VoxCPM v1 (0.7B),0.1627,0.6281,200,200
+gur,Gurene,ghananlpcommunity/ghana-tts-36k-ref,ref,VoxCPM v1 (0.7B),0.1774,0.6898,200,200
+gur,Gurene,KhayaAI/khaya-tts-v2,noref,Khaya AI TTS v2 API,0.2092,0.6715,200,200
+gur,Gurene,Google/gemini-3.1-flash-tts-preview,noref,Google Gemini 3.1 Flash TTS (API),0.2093,0.7364,200,200
+gur,Gurene,Google/gemini-3.1-flash-tts-preview-universal,noref,Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p),0.2148,0.7695,199,200
+gur,Gurene,ghananlpcommunity/ghana-tts-36k-noref,noref,VoxCPM v1 (0.7B),0.2516,0.7237,200,200
+gur,Gurene,ghananlpcommunity/ghana-tts-72k-noref,noref,VoxCPM v1 (0.7B),0.3091,0.7962,200,200
+gur,Gurene,k2-fsa/OmniVoice-noref,noref,OmniVoice (voice cloning + voice design),0.3104,0.7068,197,200
+gur,Gurene,k2-fsa/OmniVoice-design,design,OmniVoice (voice cloning + voice design),0.3174,0.7219,195,200
+nzi,Nzema,ghananlpcommunity/ghana-tts-72k-ref,ref,VoxCPM v1 (0.7B),0.1048,0.491,200,200
+nzi,Nzema,ghananlpcommunity/ghana-tts-36k-ref,ref,VoxCPM v1 (0.7B),0.1077,0.4742,200,200
+nzi,Nzema,ghananlpcommunity/ghana-tts-36k-noref,noref,VoxCPM v1 (0.7B),0.129,0.6409,200,200
+nzi,Nzema,ghananlpcommunity/ghana-tts-72k-noref,noref,VoxCPM v1 (0.7B),0.1723,0.6662,200,200
+nzi,Nzema,k2-fsa/OmniVoice-ref,ref,OmniVoice (voice cloning + voice design),0.1881,0.6753,200,200
+nzi,Nzema,Google/gemini-3.1-flash-tts-preview-universal,noref,Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p),0.2223,0.8169,200,200
+nzi,Nzema,k2-fsa/OmniVoice-design,design,OmniVoice (voice cloning + voice design),0.226,0.8012,195,200
+nzi,Nzema,k2-fsa/OmniVoice-noref,noref,OmniVoice (voice cloning + voice design),0.2268,0.763,195,200
+nzi,Nzema,Google/gemini-3.1-flash-tts-preview,noref,Google Gemini 3.1 Flash TTS (API),0.2358,0.8142,200,200
+nzi,Nzema,KhayaAI/khaya-tts-v2,noref,Khaya AI TTS v2 API,0.3226,0.6619,200,200
+twi_akuapem,Akuapem Twi,ghananlpcommunity/ghana-tts-36k-ref,ref,VoxCPM v1 (0.7B),0.1282,0.5688,200,200
+twi_akuapem,Akuapem Twi,KhayaAI/khaya-tts-v2,noref,Khaya AI TTS v2 API,0.1327,0.5438,200,200
+twi_akuapem,Akuapem Twi,ghananlpcommunity/ghana-tts-72k-ref,ref,VoxCPM v1 (0.7B),0.1338,0.5855,200,200
+twi_akuapem,Akuapem Twi,walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref,ref,Spark-TTS (0.5B),0.1391,0.5568,200,200
+twi_akuapem,Akuapem Twi,facebook/mms-tts-aka,noref,Meta MMS VITS (per-language),0.1544,0.583,200,200
+twi_akuapem,Akuapem Twi,FarmerlineML/voxcpm2-akan-sft-ref,ref,VoxCPM2 (2B),0.1928,0.677,200,200
+twi_akuapem,Akuapem Twi,k2-fsa/OmniVoice-ref,ref,OmniVoice (voice cloning + voice design),0.1966,0.6856,200,200
+twi_akuapem,Akuapem Twi,ghananlpcommunity/ghana-tts-36k-noref,noref,VoxCPM v1 (0.7B),0.1977,0.6323,200,200
+twi_akuapem,Akuapem Twi,FarmerlineML/voxcpm2-akan-sft-noref,noref,VoxCPM2 (2B),0.1994,0.6857,200,200
+twi_akuapem,Akuapem Twi,ghananlpcommunity/stable-twi-tts,noref,Piper VITS (ONNX),0.2458,0.7487,119,200
+twi_akuapem,Akuapem Twi,multilingual-tts/VITS-OpenBible-Twi-Akuapem,noref,VITS (Coqui),0.2531,0.7062,200,200
+twi_akuapem,Akuapem Twi,Google/gemini-3.1-flash-tts-preview,noref,Google Gemini 3.1 Flash TTS (API),0.2534,0.7045,200,200
+twi_akuapem,Akuapem Twi,Google/gemini-3.1-flash-tts-preview-universal,noref,Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p),0.2579,0.7102,200,200
+twi_akuapem,Akuapem Twi,ghananlpcommunity/tekyerema-tts-twi,noref,Tekyerema Twi VITS (0.03B),0.2772,0.7408,200,200
+twi_akuapem,Akuapem Twi,ghananlpcommunity/ghana-tts-72k-noref,noref,VoxCPM v1 (0.7B),0.2793,0.7076,200,200
+twi_akuapem,Akuapem Twi,ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem-ref,ref,F5-TTS (DiT + Vocos),0.3218,0.7312,200,200
+twi_akuapem,Akuapem Twi,k2-fsa/OmniVoice-noref,noref,OmniVoice (voice cloning + voice design),0.3408,0.7956,190,200
+twi_akuapem,Akuapem Twi,k2-fsa/OmniVoice-design,design,OmniVoice (voice cloning + voice design),0.3717,0.8327,195,200
+twi_akuapem,Akuapem Twi,walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-noref,noref,Spark-TTS (0.5B),0.798,1.3077,200,200
+twi_asante,Asante Twi,KhayaAI/khaya-tts-v2,noref,Khaya AI TTS v2 API,0.0935,0.3995,200,200
+twi_asante,Asante Twi,ghananlpcommunity/ghana-tts-36k-ref,ref,VoxCPM v1 (0.7B),0.1132,0.4836,200,200
+twi_asante,Asante Twi,ghananlpcommunity/ghana-tts-72k-ref,ref,VoxCPM v1 (0.7B),0.1139,0.5002,200,200
+twi_asante,Asante Twi,facebook/mms-tts-aka,noref,Meta MMS VITS (per-language),0.1242,0.4833,200,200
+twi_asante,Asante Twi,ghananlpcommunity/ghana-tts-36k-noref,noref,VoxCPM v1 (0.7B),0.1569,0.5395,200,200
+twi_asante,Asante Twi,walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref,ref,Spark-TTS (0.5B),0.1586,0.5524,200,200
+twi_asante,Asante Twi,FarmerlineML/voxcpm2-akan-sft-noref,noref,VoxCPM2 (2B),0.1616,0.6051,200,200
+twi_asante,Asante Twi,FarmerlineML/voxcpm2-akan-sft-ref,ref,VoxCPM2 (2B),0.1706,0.6084,200,200
+twi_asante,Asante Twi,ghananlpcommunity/nano-twi,noref,Matcha-TTS + Vocos ONNX,0.182,0.598,200,200
+twi_asante,Asante Twi,ghananlpcommunity/ghana-tts-72k-noref,noref,VoxCPM v1 (0.7B),0.187,0.5629,200,200
+twi_asante,Asante Twi,k2-fsa/OmniVoice-ref,ref,OmniVoice (voice cloning + voice design),0.1944,0.6418,200,200
+twi_asante,Asante Twi,ghananlpcommunity/stable-twi-tts,noref,Piper VITS (ONNX),0.2093,0.6874,117,200
+twi_asante,Asante Twi,Google/gemini-3.1-flash-tts-preview-universal,noref,Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p),0.2242,0.6459,200,200
+twi_asante,Asante Twi,Google/gemini-3.1-flash-tts-preview,noref,Google Gemini 3.1 Flash TTS (API),0.2394,0.6851,200,200
+twi_asante,Asante Twi,ghananlpcommunity/tekyerema-tts-twi,noref,Tekyerema Twi VITS (0.03B),0.2495,0.6679,200,200
+twi_asante,Asante Twi,multilingual-tts/VITS-OpenBible-Twi-Asante,noref,VITS (Coqui),0.258,0.7015,200,200
+twi_asante,Asante Twi,k2-fsa/OmniVoice-design,design,OmniVoice (voice cloning + voice design),0.2932,0.789,192,200
+twi_asante,Asante Twi,k2-fsa/OmniVoice-noref,noref,OmniVoice (voice cloning + voice design),0.3169,0.7853,191,200
+twi_asante,Asante Twi,ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante-ref,ref,F5-TTS (DiT + Vocos),0.3195,0.6792,200,200
+twi_asante,Asante Twi,walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-noref,noref,Spark-TTS (0.5B),0.818,1.2298,200,200
+xsm,Kasem,KhayaAI/khaya-tts-v2,noref,Khaya AI TTS v2 API,0.091,0.3819,200,200
+xsm,Kasem,ghananlpcommunity/ghana-tts-72k-ref,ref,VoxCPM v1 (0.7B),0.097,0.4008,200,200
+xsm,Kasem,ghananlpcommunity/ghana-tts-36k-noref,noref,VoxCPM v1 (0.7B),0.1334,0.4683,200,200
+xsm,Kasem,k2-fsa/OmniVoice-ref,ref,OmniVoice (voice cloning + voice design),0.1478,0.5203,200,200
+xsm,Kasem,ghananlpcommunity/ghana-tts-72k-noref,noref,VoxCPM v1 (0.7B),0.1821,0.5418,200,200
+xsm,Kasem,Google/gemini-3.1-flash-tts-preview-universal,noref,Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p),0.1891,0.6758,200,200
+xsm,Kasem,Google/gemini-3.1-flash-tts-preview,noref,Google Gemini 3.1 Flash TTS (API),0.1907,0.6957,200,200
+xsm,Kasem,ghananlpcommunity/ghana-tts-36k-ref,ref,VoxCPM v1 (0.7B),0.2233,0.4043,200,200
+xsm,Kasem,k2-fsa/OmniVoice-design,design,OmniVoice (voice cloning + voice design),0.4857,0.7478,192,200
+xsm,Kasem,k2-fsa/OmniVoice-noref,noref,OmniVoice (voice cloning + voice design),0.4905,0.751,195,200
