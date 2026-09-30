@@ -276,8 +276,16 @@ def run_pipeline(config, dataset, evaluate, models, speechbertscore,
     check("the cer cache is tagged with its judge",
           evaluate.load_cer_cache(iso).get("judge") == "stub/judge")
 
+    # A row left over from an earlier run (not in the current sample set) must
+    # not leak into the published means.
+    stale = evaluate.load_score_cache(iso)
+    for model in stale["per_sample"]:
+        stale["per_sample"][model]["bible_99999"] = {"text": "old", "sbs": 0.99,
+                                                     "gen_sec": 1.0, "ref_sec": 1.0}
+    evaluate.save_score_cache(iso, stale["per_sample"], stale["encoder"])
+
     print("\n== yaml output ==")
-    path = evaluate.assemble_language(iso)
+    path = evaluate.assemble_language(iso, samples)
     doc = yaml.safe_load(path.read_text())
     check("yaml is written", path.exists(), str(path))
     check("scoring is the composite", doc["scoring"].startswith("composite"))
@@ -290,6 +298,9 @@ def run_pipeline(config, dataset, evaluate, models, speechbertscore,
           "per_sample" not in doc, str(list(doc)))
     top = doc["benchmarks"][0]
     check("every clip was scored", top["num_scored"] == samples_expected)
+    check("rows outside the current sample set are excluded",
+          all("bible_99999" not in b["entries"] for b in doc["benchmarks"])
+          and top["num_scored"] == samples_expected, str(top["num_scored"]))
     check("composite = (sbs + (1 - cer)) / 2",
           abs(top["composite"] - (top["sbs"] + top["accuracy"]) / 2) < 1e-3
           and abs(top["accuracy"] - (1 - top["cer"])) < 1e-3, str(top["composite"]))

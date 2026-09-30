@@ -443,8 +443,12 @@ def _clip_seconds(path):
 # ── Stage 3: assemble the published YAML ─────────────────────────────────────
 
 
-def assemble_language(iso):
+def assemble_language(iso, samples=None):
     """Join the SBS and CER caches into benchmarks/{iso}.yaml.
+
+    Only the current sample set is reported. The caches can hold rows from
+    earlier runs (other filters, a larger NUM_SAMPLES); averaging those in
+    would mix sample sets and let the two metrics grade different clips.
 
     Composite is (SBS + (1 - CER)) / 2 and exists only when both metrics were
     scored for the model; a model with one metric is listed with ``score`` set
@@ -458,11 +462,17 @@ def assemble_language(iso):
         else _seed_from_yaml(iso, encoder_tag)
     cer_rows = load_cer_cache(iso).get("per_sample", {})
 
+    if samples is None:
+        samples = load_samples(iso, limit=NUM_SAMPLES, extract_references=False)
+    allowed = {str(s.index) for s in samples}
+
     benchmarks = []
     for info in load_tts_models(iso):
         name = info["name"]
-        s_rows = {k: v for k, v in sbs_rows.get(name, {}).items() if "sbs" in v}
-        c_rows = {k: v for k, v in cer_rows.get(name, {}).items() if v.get("cer") is not None}
+        s_rows = {k: v for k, v in sbs_rows.get(name, {}).items()
+                  if k in allowed and "sbs" in v}
+        c_rows = {k: v for k, v in cer_rows.get(name, {}).items()
+                  if k in allowed and v.get("cer") is not None}
         if not s_rows and not c_rows:
             continue
 
@@ -512,7 +522,7 @@ def assemble_language(iso):
         "iso_639_3": iso,
         "language": ISO_TO_NAME.get(iso, iso),
         "category": DEFAULT_CATEGORY,
-        "num_samples": NUM_SAMPLES,
+        "num_samples": len(samples),
         "scoring": "composite (sbs + (1 - cer)) / 2",
         "encoder": encoder_tag,
         "judge": {"model": spec["model"], "cer_on_real_speech": spec["judge_cer"]} if spec else None,
@@ -656,10 +666,9 @@ def main():
         cmd = args.command
         # Reference audio is only needed by SBS; CER just needs the text.
         need_refs = cmd in ("score-sbs", "score", "all")
-        samples = None
-        if args.limit or cmd != "assemble":
-            samples = load_samples(iso, limit=args.limit or NUM_SAMPLES,
-                                   extract_references=need_refs)
+        # assemble needs the sample set too, to report only those rows.
+        samples = load_samples(iso, limit=args.limit or NUM_SAMPLES,
+                               extract_references=need_refs)
         if cmd in ("synthesize", "all"):
             synthesize_language(iso, model_filter=args.model, device=args.device,
                                 force=args.force, samples=samples, stack=args.stack)
@@ -668,7 +677,7 @@ def main():
         if cmd in ("score-cer", "score", "all"):
             score_cer_language(iso, device=args.device, force=args.force, samples=samples)
         if cmd in ("assemble", "score", "all"):
-            print(f"  wrote {assemble_language(iso)}")
+            print(f"  wrote {assemble_language(iso, samples)}")
 
 
 if __name__ == "__main__":
