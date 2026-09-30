@@ -10,6 +10,7 @@ auto-detected from the model's tags / config.
 """
 
 import abc
+import contextlib
 import io
 import logging
 import os
@@ -185,16 +186,43 @@ def _local_snapshot(model_id, token=None):
 
 
 REFERENCE_REPO = os.environ.get(
-    "NSANKU_TTS_AUDIO_REPO", "ghananlpcommunity/nsanku-tts-benchmark-audio"
+    "NSANKU2_TTS_AUDIO_REPO", "ghananlpcommunity/nsanku-tts-benchmark-audio"
 )
+
+# Per-sample prompt clips. benchmark 2 scores against a real recording of the
+# very sentence being synthesised, so a ref-mode model must be prompted with a
+# *different* row: prompting it with its own scoring reference would grade how
+# well it copies the clip it was handed. reference_clip() only receives
+# (iso, meta) and cannot know which row is being scored, so the synthesiser
+# publishes the row under prompt_scope() and reference_clip() reads it here.
+_PROMPT_SCOPE = None
+
+
+@contextlib.contextmanager
+def prompt_scope(iso, row_index):
+    """Publish the row being synthesised, for reference_clip() to read.
+
+    Nested scopes restore the enclosing one, so a caller can set a broad scope
+    once and a single-sample scope can still be entered inside it.
+    """
+    global _PROMPT_SCOPE
+    previous, _PROMPT_SCOPE = _PROMPT_SCOPE, (iso, row_index)
+    try:
+        yield (iso, row_index)
+    finally:
+        _PROMPT_SCOPE = previous
 
 
 def reference_clip(iso, meta, token=None):
     """The reference clip and transcript for a language.
 
-    Real recorded speech from ghana-speech-eval, in the language being read
-    and from a different corpus than the benchmark sentences. A recipe can
-    override either half with REFERENCE_CLIP / REFERENCE_TEXT.
+    Real recorded speech from ghana-speech-eval, in the language being read.
+    A recipe can override either half with REFERENCE_CLIP / REFERENCE_TEXT.
+
+    Under prompt_scope() (benchmark 2) the clip is the scored row offset by
+    PROMPT_ROW_OFFSET, so it is real speech in the same language that is never
+    the sample's own scoring reference. Without that scope -- e.g. a quick
+    manual call -- it falls back to the single published per-language clip.
     """
     import json
 
@@ -203,7 +231,41 @@ def reference_clip(iso, meta, token=None):
     override_clip = _knob(meta, "REFERENCE_CLIP")
     override_text = _knob(meta, "REFERENCE_TEXT")
     if override_clip and override_text:
-        return override_clip, override_text, "recipe override"
+        # A recipe may pin the prompt (e.g. a model that needs a specific
+        # voice). That is respected -- unless the pinned clip *is* the sample
+        # being scored, which would make the metric measure copying. The
+        # shipped recipes all set both knobs to None, so this is a guard
+        # against a future recipe, not a fix for an existing one.
+        if _PROMPT_SCOPE is not None:
+            from .dataset import reference_path_for
+
+            scope_iso, scope_index = _PROMPT_SCOPE
+            if str(override_clip) == str(reference_path_for(scope_iso, scope_index)):
+                logger.warning(
+                    "recipe pins the prompt clip to the row being scored "
+                    "(%s row %s); ignoring the override and using an "
+                    "offset row instead", scope_iso, scope_index,
+                )
+                override_clip = override_text = None
+        if override_clip and override_text:
+            return override_clip, override_text, "recipe override"
+
+    if _PROMPT_SCOPE is not None:
+        scope_iso, scope_index = _PROMPT_SCOPE
+        from .dataset import load_prompt_sample
+
+        prompt = load_prompt_sample(scope_iso, scope_index)
+        if prompt is not None:
+            return (
+                str(prompt.reference_path),
+                prompt.text,
+                f"ghana-speech-eval row {prompt.index} (scoring row {scope_index})",
+            )
+        logger.warning(
+            "no usable prompt row for %s at index %s; falling back to the "
+            "published per-language clip, which is not row-matched",
+            scope_iso, scope_index,
+        )
 
     manifest_path = hf_hub_download(
         REFERENCE_REPO, "references/manifest.json", repo_type="dataset", token=token or None
@@ -981,6 +1043,49 @@ class TransformersVitsWrapper(BaseTTSModel):
         return _wav_bytes(audio, sample_rate=self.sample_rate)
 
 
+def _apply_transformers_457_compat_shims():
+    """Work around upstream bugs in transformers 4.57.2 on torch 2.5:
+    1. CVE-2025-32434 check_torch_load_is_safe blocks loading legacy .bin weights.
+    2. tokenization_utils_base line 2419 does `_config.model_type` on a raw dict.
+    """
+    try:
+        import transformers.utils.import_utils as u
+        u.check_torch_load_is_safe = lambda: None
+    except Exception:
+        pass
+    try:
+        import transformers.modeling_utils as mu
+        mu.check_torch_load_is_safe = lambda: None
+    except Exception:
+        pass
+    try:
+        import transformers.tokenization_utils_base as tub
+        if not getattr(tub, "_compat_shim_applied", False):
+            orig_from_pretrained = tub.PreTrainedTokenizerBase._from_pretrained
+            @classmethod
+            def patched_from_pretrained(cls, pretrained_model_name_or_path, *args, **kwargs):
+                import json
+                orig_json_load = json.load
+                def safe_json_load(*a, **kw):
+                    res = orig_json_load(*a, **kw)
+                    if isinstance(res, dict) and "model_type" in res:
+                        class DictWithAttr(dict):
+                            @property
+                            def model_type(self):
+                                return self.get("model_type")
+                        res = DictWithAttr(res)
+                    return res
+                json.load = safe_json_load
+                try:
+                    return orig_from_pretrained.__func__(cls, pretrained_model_name_or_path, *args, **kwargs)
+                finally:
+                    json.load = orig_json_load
+            tub.PreTrainedTokenizerBase._from_pretrained = patched_from_pretrained
+            tub._compat_shim_applied = True
+    except Exception:
+        pass
+
+
 class SparkTTSWrapper(BaseTTSModel):
     """walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani — Spark-TTS (CUDA/CPU)."""
 
@@ -994,6 +1099,7 @@ class SparkTTSWrapper(BaseTTSModel):
     def _ensure_loaded(self):
         if self._loaded:
             return
+        _apply_transformers_457_compat_shims()
         import torch
         from huggingface_hub import snapshot_download
         from .config import HF_TOKEN
@@ -1140,7 +1246,7 @@ class KhayaTTSWrapper(BaseTTSModel):
     def __init__(self, model_id="KhayaAI/khaya-tts", device="cpu", meta=None, **kwargs):
         super().__init__(model_id, "cpu")
         self.meta = meta or {}
-        self.api_key = os.environ.get("KHAYA_API_KEY", "")
+        self.api_key = os.environ.get("KHAYA_API_KEY") or os.environ.get("KHAYA_API", "")
         if not self.api_key:
             raise ValueError("KHAYA_API_KEY not set — required for Khaya TTS")
         self._session = None
@@ -1206,7 +1312,7 @@ class GeminiTTSWrapper(BaseTTSModel):
                  device="cpu", meta=None, **kwargs):
         super().__init__(model_id, "cpu")
         self.meta = meta or {}
-        self.api_key = os.environ.get("GEMINI_API_KEY", "")
+        self.api_key = os.environ.get("GEMINI_API_KEY") or os.environ.get("GEMINI_API", "")
         if not self.api_key:
             raise ValueError(
                 "GEMINI_API_KEY not set — required for Gemini TTS (export it "

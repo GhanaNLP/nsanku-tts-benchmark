@@ -1,0 +1,35 @@
+# SpeechBERTScore scoring environment for the nsanku-TTS benchmark.
+#
+# A third image alongside the synthesis (`tts`) and ASR-judge (`asr`) images,
+# because neither of those can score. The `asr` image ships fairseq2 and no
+# transformers at all; the `tts` image pins transformers to 4.57, which
+# refuses to load WavLM's .bin checkpoint on torch < 2.6 under the
+# CVE-2025-32434 torch.load guard. This one has torch 2.8 + transformers 5.17,
+# the combination verify_scorer.py was validated against.
+#
+# transformers is pinned rather than floating: SpeechBERTScore is only
+# comparable across runs if the encoder stack is identical, so a silent
+# upgrade here would move every published score.
+FROM pytorch/pytorch:2.8.0-cuda12.8-cudnn9-runtime
+
+# ffmpeg: the generation side of scoring reads any container's audio format.
+# build-essential: a few audio dependencies ship sdist-only.
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends ffmpeg git build-essential \
+ && rm -rf /var/lib/apt/lists/*
+
+# Pinned pair, matching scripts/verify_scorer.py's MATCH result:
+#   content 0.3218, speed 0.0141, self 1.000000
+RUN pip install --no-cache-dir \
+      torch==2.8.0 \
+      torchaudio==2.8.0 \
+      --index-url https://download.pytorch.org/whl/cu128 \
+ && pip install --no-cache-dir \
+      transformers==5.17.0 \
+      datasets \
+      soundfile \
+      numpy \
+      scipy
+
+ENV PYTHONUTF8=1 LANG=C.UTF-8 LC_ALL=C.UTF-8
+WORKDIR /app

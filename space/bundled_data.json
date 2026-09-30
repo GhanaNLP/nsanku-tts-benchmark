@@ -1,0 +1,1146 @@
+{
+ "ada": {
+  "iso_639_3": "ada",
+  "language": "Dangme",
+  "scoring": "composite (sbs + (1 - cer)) / 2",
+  "encoder": {
+   "model": "microsoft/wavlm-large",
+   "layer": 6,
+   "variant": "precision"
+  },
+  "benchmarks": [
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-ref",
+    "score": 0.7955,
+    "composite": 0.7955,
+    "accuracy": 0.898,
+    "cer": 0.102,
+    "sbs": 0.693,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-ref",
+    "score": 0.7918,
+    "composite": 0.7918,
+    "accuracy": 0.8939,
+    "cer": 0.1061,
+    "sbs": 0.6897,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "k2-fsa/OmniVoice-ref",
+    "score": 0.7671,
+    "composite": 0.7671,
+    "accuracy": 0.8534,
+    "cer": 0.1466,
+    "sbs": 0.6809,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-noref",
+    "score": 0.766,
+    "composite": 0.766,
+    "accuracy": 0.8534,
+    "cer": 0.1466,
+    "sbs": 0.6786,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "KhayaAI/khaya-tts-v2",
+    "score": 0.7543,
+    "composite": 0.7543,
+    "accuracy": 0.8304,
+    "cer": 0.1696,
+    "sbs": 0.6782,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview",
+    "score": 0.7082,
+    "composite": 0.7082,
+    "accuracy": 0.8121,
+    "cer": 0.1879,
+    "sbs": 0.6042,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-noref",
+    "score": 0.7058,
+    "composite": 0.7058,
+    "accuracy": 0.74,
+    "cer": 0.26,
+    "sbs": 0.6717,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview-universal",
+    "score": 0.7048,
+    "composite": 0.7048,
+    "accuracy": 0.8054,
+    "cer": 0.1946,
+    "sbs": 0.6043,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-design",
+    "score": 0.7028,
+    "composite": 0.7028,
+    "accuracy": 0.7533,
+    "cer": 0.2467,
+    "sbs": 0.6523,
+    "num_scored": 196,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-noref",
+    "score": 0.6804,
+    "composite": 0.6804,
+    "accuracy": 0.7097,
+    "cer": 0.2903,
+    "sbs": 0.6512,
+    "num_scored": 195,
+    "uses_reference": false
+   }
+  ],
+  "updated": "2026-09-29"
+ },
+ "dag": {
+  "iso_639_3": "dag",
+  "language": "Dagbani",
+  "scoring": "composite (sbs + (1 - cer)) / 2",
+  "encoder": {
+   "model": "microsoft/wavlm-large",
+   "layer": 6,
+   "variant": "precision"
+  },
+  "benchmarks": [
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-ref",
+    "score": 0.8458,
+    "composite": 0.8458,
+    "accuracy": 0.948,
+    "cer": 0.052,
+    "sbs": 0.7437,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-ref",
+    "score": 0.8438,
+    "composite": 0.8438,
+    "accuracy": 0.9414,
+    "cer": 0.0586,
+    "sbs": 0.7463,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref",
+    "score": 0.8421,
+    "composite": 0.8421,
+    "accuracy": 0.915,
+    "cer": 0.085,
+    "sbs": 0.7693,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "k2-fsa/OmniVoice-ref",
+    "score": 0.8274,
+    "composite": 0.8274,
+    "accuracy": 0.9485,
+    "cer": 0.0515,
+    "sbs": 0.7062,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "KhayaAI/khaya-tts-v2",
+    "score": 0.7981,
+    "composite": 0.7981,
+    "accuracy": 0.9462,
+    "cer": 0.0538,
+    "sbs": 0.65,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "FarmerlineML/voxcpm2-dagbani-sft-ref",
+    "score": 0.7853,
+    "composite": 0.7853,
+    "accuracy": 0.9178,
+    "cer": 0.0822,
+    "sbs": 0.6527,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-noref",
+    "score": 0.769,
+    "composite": 0.769,
+    "accuracy": 0.876,
+    "cer": 0.124,
+    "sbs": 0.6619,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-design",
+    "score": 0.7548,
+    "composite": 0.7548,
+    "accuracy": 0.8698,
+    "cer": 0.1302,
+    "sbs": 0.6397,
+    "num_scored": 199,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-noref",
+    "score": 0.7532,
+    "composite": 0.7532,
+    "accuracy": 0.867,
+    "cer": 0.133,
+    "sbs": 0.6394,
+    "num_scored": 195,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-noref",
+    "score": 0.7467,
+    "composite": 0.7467,
+    "accuracy": 0.844,
+    "cer": 0.156,
+    "sbs": 0.6493,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "FarmerlineML/voxcpm2-dagbani-sft-noref",
+    "score": 0.7439,
+    "composite": 0.7439,
+    "accuracy": 0.8684,
+    "cer": 0.1316,
+    "sbs": 0.6194,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview",
+    "score": 0.7157,
+    "composite": 0.7157,
+    "accuracy": 0.84,
+    "cer": 0.16,
+    "sbs": 0.5914,
+    "num_scored": 199,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview-universal",
+    "score": 0.7104,
+    "composite": 0.7104,
+    "accuracy": 0.8362,
+    "cer": 0.1638,
+    "sbs": 0.5846,
+    "num_scored": 199,
+    "uses_reference": false
+   },
+   {
+    "model": "walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-noref",
+    "score": 0.5553,
+    "composite": 0.5553,
+    "accuracy": 0.3404,
+    "cer": 0.6596,
+    "sbs": 0.7701,
+    "num_scored": 200,
+    "uses_reference": false
+   }
+  ],
+  "updated": "2026-09-29"
+ },
+ "dga": {
+  "iso_639_3": "dga",
+  "language": "Dagaare",
+  "scoring": "composite (sbs + (1 - cer)) / 2",
+  "encoder": {
+   "model": "microsoft/wavlm-large",
+   "layer": 6,
+   "variant": "precision"
+  },
+  "benchmarks": [
+   {
+    "model": "KhayaAI/khaya-tts-v2",
+    "score": 0.8062,
+    "composite": 0.8062,
+    "accuracy": 0.8976,
+    "cer": 0.1024,
+    "sbs": 0.7149,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-ref",
+    "score": 0.805,
+    "composite": 0.805,
+    "accuracy": 0.9028,
+    "cer": 0.0972,
+    "sbs": 0.7071,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "k2-fsa/OmniVoice-ref",
+    "score": 0.7987,
+    "composite": 0.7987,
+    "accuracy": 0.9004,
+    "cer": 0.0996,
+    "sbs": 0.697,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-ref",
+    "score": 0.7981,
+    "composite": 0.7981,
+    "accuracy": 0.8956,
+    "cer": 0.1044,
+    "sbs": 0.7006,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-noref",
+    "score": 0.7687,
+    "composite": 0.7687,
+    "accuracy": 0.8513,
+    "cer": 0.1487,
+    "sbs": 0.6861,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-noref",
+    "score": 0.7353,
+    "composite": 0.7353,
+    "accuracy": 0.7923,
+    "cer": 0.2077,
+    "sbs": 0.6783,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview",
+    "score": 0.7042,
+    "composite": 0.7042,
+    "accuracy": 0.7838,
+    "cer": 0.2162,
+    "sbs": 0.6245,
+    "num_scored": 199,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview-universal",
+    "score": 0.693,
+    "composite": 0.693,
+    "accuracy": 0.7792,
+    "cer": 0.2208,
+    "sbs": 0.6069,
+    "num_scored": 199,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-design",
+    "score": 0.6,
+    "composite": 0.6,
+    "accuracy": 0.5431,
+    "cer": 0.4569,
+    "sbs": 0.657,
+    "num_scored": 194,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-noref",
+    "score": 0.5775,
+    "composite": 0.5775,
+    "accuracy": 0.4976,
+    "cer": 0.5024,
+    "sbs": 0.6573,
+    "num_scored": 197,
+    "uses_reference": false
+   }
+  ],
+  "updated": "2026-09-29"
+ },
+ "ewe": {
+  "iso_639_3": "ewe",
+  "language": "Ewe",
+  "scoring": "composite (sbs + (1 - cer)) / 2",
+  "encoder": {
+   "model": "microsoft/wavlm-large",
+   "layer": 6,
+   "variant": "precision"
+  },
+  "benchmarks": [
+   {
+    "model": "FarmerlineML/voxcpm2-ewe-sft-noref",
+    "score": 0.8602,
+    "composite": 0.8602,
+    "accuracy": 0.9545,
+    "cer": 0.0455,
+    "sbs": 0.766,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "multilingual-tts/VITS-OpenBible-Ewe",
+    "score": 0.8584,
+    "composite": 0.8584,
+    "accuracy": 0.9385,
+    "cer": 0.0615,
+    "sbs": 0.7784,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "FarmerlineML/voxcpm2-ewe-sft-ref",
+    "score": 0.8454,
+    "composite": 0.8454,
+    "accuracy": 0.9545,
+    "cer": 0.0455,
+    "sbs": 0.7362,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref",
+    "score": 0.8452,
+    "composite": 0.8452,
+    "accuracy": 0.9288,
+    "cer": 0.0712,
+    "sbs": 0.7616,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-ref",
+    "score": 0.8345,
+    "composite": 0.8345,
+    "accuracy": 0.932,
+    "cer": 0.068,
+    "sbs": 0.737,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/tekyerema-tts-ewe",
+    "score": 0.834,
+    "composite": 0.834,
+    "accuracy": 0.8931,
+    "cer": 0.1069,
+    "sbs": 0.7749,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-ref",
+    "score": 0.8327,
+    "composite": 0.8327,
+    "accuracy": 0.9316,
+    "cer": 0.0684,
+    "sbs": 0.7338,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "facebook/mms-tts-ewe",
+    "score": 0.8298,
+    "composite": 0.8298,
+    "accuracy": 0.9623,
+    "cer": 0.0377,
+    "sbs": 0.6974,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "Sunbird/orpheus-3b-tts-multilingual",
+    "score": 0.8272,
+    "composite": 0.8272,
+    "accuracy": 0.9313,
+    "cer": 0.0687,
+    "sbs": 0.723,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "KhayaAI/khaya-tts-v2",
+    "score": 0.8256,
+    "composite": 0.8256,
+    "accuracy": 0.9349,
+    "cer": 0.0651,
+    "sbs": 0.7163,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-ref",
+    "score": 0.8241,
+    "composite": 0.8241,
+    "accuracy": 0.9286,
+    "cer": 0.0714,
+    "sbs": 0.7196,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-noref",
+    "score": 0.7684,
+    "composite": 0.7684,
+    "accuracy": 0.8367,
+    "cer": 0.1633,
+    "sbs": 0.7001,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-noref",
+    "score": 0.7541,
+    "composite": 0.7541,
+    "accuracy": 0.8189,
+    "cer": 0.1811,
+    "sbs": 0.6893,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-design",
+    "score": 0.7345,
+    "composite": 0.7345,
+    "accuracy": 0.8017,
+    "cer": 0.1983,
+    "sbs": 0.6672,
+    "num_scored": 197,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-noref",
+    "score": 0.7276,
+    "composite": 0.7276,
+    "accuracy": 0.7855,
+    "cer": 0.2145,
+    "sbs": 0.6698,
+    "num_scored": 194,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview",
+    "score": 0.7265,
+    "composite": 0.7265,
+    "accuracy": 0.827,
+    "cer": 0.173,
+    "sbs": 0.6259,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview-universal",
+    "score": 0.7248,
+    "composite": 0.7248,
+    "accuracy": 0.8236,
+    "cer": 0.1764,
+    "sbs": 0.6259,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/F5-TTS-OpenBible-Ewe-ref",
+    "score": 0.7107,
+    "composite": 0.7107,
+    "accuracy": 0.6776,
+    "cer": 0.3224,
+    "sbs": 0.7438,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-noref",
+    "score": 0.6507,
+    "composite": 0.6507,
+    "accuracy": 0.5434,
+    "cer": 0.4566,
+    "sbs": 0.7581,
+    "num_scored": 200,
+    "uses_reference": false
+   }
+  ],
+  "updated": "2026-09-29"
+ },
+ "fat": {
+  "iso_639_3": "fat",
+  "language": "Fante",
+  "scoring": "composite (sbs + (1 - cer)) / 2",
+  "encoder": {
+   "model": "microsoft/wavlm-large",
+   "layer": 6,
+   "variant": "precision"
+  },
+  "benchmarks": [
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-ref",
+    "score": 0.8472,
+    "composite": 0.8472,
+    "accuracy": 0.9325,
+    "cer": 0.0675,
+    "sbs": 0.7619,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-ref",
+    "score": 0.8471,
+    "composite": 0.8471,
+    "accuracy": 0.9314,
+    "cer": 0.0686,
+    "sbs": 0.7627,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "KhayaAI/khaya-tts-v2",
+    "score": 0.8146,
+    "composite": 0.8146,
+    "accuracy": 0.9344,
+    "cer": 0.0656,
+    "sbs": 0.6948,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-ref",
+    "score": 0.8112,
+    "composite": 0.8112,
+    "accuracy": 0.8894,
+    "cer": 0.1106,
+    "sbs": 0.733,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-noref",
+    "score": 0.7783,
+    "composite": 0.7783,
+    "accuracy": 0.8704,
+    "cer": 0.1296,
+    "sbs": 0.6863,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "facebook/mms-tts-aka",
+    "score": 0.7728,
+    "composite": 0.7728,
+    "accuracy": 0.8402,
+    "cer": 0.1598,
+    "sbs": 0.7053,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-noref",
+    "score": 0.7511,
+    "composite": 0.7511,
+    "accuracy": 0.8279,
+    "cer": 0.1721,
+    "sbs": 0.6743,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview-universal",
+    "score": 0.7221,
+    "composite": 0.7221,
+    "accuracy": 0.8181,
+    "cer": 0.1819,
+    "sbs": 0.6261,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview",
+    "score": 0.7175,
+    "composite": 0.7175,
+    "accuracy": 0.8066,
+    "cer": 0.1934,
+    "sbs": 0.6284,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-design",
+    "score": 0.6988,
+    "composite": 0.6988,
+    "accuracy": 0.7355,
+    "cer": 0.2645,
+    "sbs": 0.6622,
+    "num_scored": 198,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-noref",
+    "score": 0.6967,
+    "composite": 0.6967,
+    "accuracy": 0.7321,
+    "cer": 0.2679,
+    "sbs": 0.6614,
+    "num_scored": 197,
+    "uses_reference": false
+   }
+  ],
+  "updated": "2026-09-29"
+ },
+ "gaa": {
+  "iso_639_3": "gaa",
+  "language": "Ga",
+  "scoring": "composite (sbs + (1 - cer)) / 2",
+  "encoder": {
+   "model": "microsoft/wavlm-large",
+   "layer": 6,
+   "variant": "precision"
+  },
+  "benchmarks": [
+   {
+    "model": "KhayaAI/khaya-tts-v2",
+    "score": 0.7948,
+    "composite": 0.7948,
+    "accuracy": 0.8873,
+    "cer": 0.1127,
+    "sbs": 0.7023,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-ref",
+    "score": 0.7701,
+    "composite": 0.7701,
+    "accuracy": 0.8264,
+    "cer": 0.1736,
+    "sbs": 0.7138,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-ref",
+    "score": 0.7629,
+    "composite": 0.7629,
+    "accuracy": 0.8125,
+    "cer": 0.1875,
+    "sbs": 0.7133,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-ref",
+    "score": 0.7574,
+    "composite": 0.7574,
+    "accuracy": 0.7944,
+    "cer": 0.2056,
+    "sbs": 0.7204,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-noref",
+    "score": 0.7414,
+    "composite": 0.7414,
+    "accuracy": 0.8089,
+    "cer": 0.1911,
+    "sbs": 0.674,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-noref",
+    "score": 0.7107,
+    "composite": 0.7107,
+    "accuracy": 0.7446,
+    "cer": 0.2554,
+    "sbs": 0.6768,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-noref",
+    "score": 0.6725,
+    "composite": 0.6725,
+    "accuracy": 0.6436,
+    "cer": 0.3564,
+    "sbs": 0.7015,
+    "num_scored": 196,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-design",
+    "score": 0.6719,
+    "composite": 0.6719,
+    "accuracy": 0.6449,
+    "cer": 0.3551,
+    "sbs": 0.6989,
+    "num_scored": 194,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview-universal",
+    "score": 0.6466,
+    "composite": 0.6466,
+    "accuracy": 0.6425,
+    "cer": 0.3575,
+    "sbs": 0.6508,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview",
+    "score": 0.6424,
+    "composite": 0.6424,
+    "accuracy": 0.6287,
+    "cer": 0.3713,
+    "sbs": 0.6562,
+    "num_scored": 200,
+    "uses_reference": false
+   }
+  ],
+  "updated": "2026-09-29"
+ },
+ "gjn": {
+  "iso_639_3": "gjn",
+  "language": "Gonja",
+  "scoring": "composite (sbs + (1 - cer)) / 2",
+  "encoder": {
+   "model": "microsoft/wavlm-large",
+   "layer": 6,
+   "variant": "precision"
+  },
+  "benchmarks": [
+   {
+    "model": "KhayaAI/khaya-tts-v2",
+    "score": 0.8379,
+    "composite": 0.8379,
+    "accuracy": 0.9153,
+    "cer": 0.0847,
+    "sbs": 0.7605,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-ref",
+    "score": 0.821,
+    "composite": 0.821,
+    "accuracy": 0.8905,
+    "cer": 0.1095,
+    "sbs": 0.7515,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-ref",
+    "score": 0.8182,
+    "composite": 0.8182,
+    "accuracy": 0.8768,
+    "cer": 0.1232,
+    "sbs": 0.7596,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "k2-fsa/OmniVoice-ref",
+    "score": 0.7869,
+    "composite": 0.7869,
+    "accuracy": 0.8382,
+    "cer": 0.1618,
+    "sbs": 0.7356,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-noref",
+    "score": 0.7464,
+    "composite": 0.7464,
+    "accuracy": 0.8019,
+    "cer": 0.1981,
+    "sbs": 0.6909,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-noref",
+    "score": 0.7184,
+    "composite": 0.7184,
+    "accuracy": 0.7536,
+    "cer": 0.2464,
+    "sbs": 0.6832,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview-universal",
+    "score": 0.7006,
+    "composite": 0.7006,
+    "accuracy": 0.7875,
+    "cer": 0.2125,
+    "sbs": 0.6137,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview",
+    "score": 0.7005,
+    "composite": 0.7005,
+    "accuracy": 0.7856,
+    "cer": 0.2144,
+    "sbs": 0.6153,
+    "num_scored": 199,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-design",
+    "score": 0.6318,
+    "composite": 0.6318,
+    "accuracy": 0.6011,
+    "cer": 0.3989,
+    "sbs": 0.6625,
+    "num_scored": 194,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-noref",
+    "score": 0.6265,
+    "composite": 0.6265,
+    "accuracy": 0.5927,
+    "cer": 0.4073,
+    "sbs": 0.6603,
+    "num_scored": 195,
+    "uses_reference": false
+   }
+  ],
+  "updated": "2026-09-30"
+ },
+ "twi_asante": {
+  "iso_639_3": "twi_asante",
+  "language": "Asante Twi",
+  "scoring": "composite (sbs + (1 - cer)) / 2",
+  "encoder": {
+   "model": "microsoft/wavlm-large",
+   "layer": 6,
+   "variant": "precision"
+  },
+  "benchmarks": [
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-ref",
+    "score": 0.8196,
+    "composite": 0.8196,
+    "accuracy": 0.8861,
+    "cer": 0.1139,
+    "sbs": 0.753,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-ref",
+    "score": 0.813,
+    "composite": 0.813,
+    "accuracy": 0.8868,
+    "cer": 0.1132,
+    "sbs": 0.7392,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "KhayaAI/khaya-tts-v2",
+    "score": 0.8002,
+    "composite": 0.8002,
+    "accuracy": 0.9065,
+    "cer": 0.0935,
+    "sbs": 0.6939,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref",
+    "score": 0.7962,
+    "composite": 0.7962,
+    "accuracy": 0.8414,
+    "cer": 0.1586,
+    "sbs": 0.751,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "facebook/mms-tts-aka",
+    "score": 0.7955,
+    "composite": 0.7955,
+    "accuracy": 0.8758,
+    "cer": 0.1242,
+    "sbs": 0.7153,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "FarmerlineML/voxcpm2-akan-sft-noref",
+    "score": 0.7688,
+    "composite": 0.7688,
+    "accuracy": 0.8384,
+    "cer": 0.1616,
+    "sbs": 0.6991,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-36k-noref",
+    "score": 0.7667,
+    "composite": 0.7667,
+    "accuracy": 0.8431,
+    "cer": 0.1569,
+    "sbs": 0.6902,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "FarmerlineML/voxcpm2-akan-sft-ref",
+    "score": 0.7658,
+    "composite": 0.7658,
+    "accuracy": 0.8294,
+    "cer": 0.1706,
+    "sbs": 0.7022,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "k2-fsa/OmniVoice-ref",
+    "score": 0.7553,
+    "composite": 0.7553,
+    "accuracy": 0.8056,
+    "cer": 0.1944,
+    "sbs": 0.705,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "ghananlpcommunity/ghana-tts-72k-noref",
+    "score": 0.7503,
+    "composite": 0.7503,
+    "accuracy": 0.813,
+    "cer": 0.187,
+    "sbs": 0.6877,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/tekyerema-tts-twi",
+    "score": 0.7483,
+    "composite": 0.7483,
+    "accuracy": 0.7505,
+    "cer": 0.2495,
+    "sbs": 0.7462,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "multilingual-tts/VITS-OpenBible-Twi-Asante",
+    "score": 0.7443,
+    "composite": 0.7443,
+    "accuracy": 0.742,
+    "cer": 0.258,
+    "sbs": 0.7465,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/stable-twi-tts",
+    "score": 0.7332,
+    "composite": 0.7332,
+    "accuracy": 0.7907,
+    "cer": 0.2093,
+    "sbs": 0.6757,
+    "num_scored": 106,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante-ref",
+    "score": 0.7123,
+    "composite": 0.7123,
+    "accuracy": 0.6805,
+    "cer": 0.3195,
+    "sbs": 0.744,
+    "num_scored": 200,
+    "uses_reference": true
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview-universal",
+    "score": 0.6995,
+    "composite": 0.6995,
+    "accuracy": 0.7758,
+    "cer": 0.2242,
+    "sbs": 0.6232,
+    "num_scored": 199,
+    "uses_reference": false
+   },
+   {
+    "model": "Google/gemini-3.1-flash-tts-preview",
+    "score": 0.6935,
+    "composite": 0.6935,
+    "accuracy": 0.7606,
+    "cer": 0.2394,
+    "sbs": 0.6265,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-design",
+    "score": 0.6869,
+    "composite": 0.6869,
+    "accuracy": 0.7068,
+    "cer": 0.2932,
+    "sbs": 0.6671,
+    "num_scored": 197,
+    "uses_reference": false
+   },
+   {
+    "model": "ghananlpcommunity/nano-twi",
+    "score": 0.6835,
+    "composite": 0.6835,
+    "accuracy": 0.818,
+    "cer": 0.182,
+    "sbs": 0.5489,
+    "num_scored": 200,
+    "uses_reference": false
+   },
+   {
+    "model": "k2-fsa/OmniVoice-noref",
+    "score": 0.6753,
+    "composite": 0.6753,
+    "accuracy": 0.6831,
+    "cer": 0.3169,
+    "sbs": 0.6675,
+    "num_scored": 197,
+    "uses_reference": false
+   },
+   {
+    "model": "walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-noref",
+    "score": 0.4633,
+    "composite": 0.4633,
+    "accuracy": 0.182,
+    "cer": 0.818,
+    "sbs": 0.7445,
+    "num_scored": 200,
+    "uses_reference": false
+   }
+  ],
+  "updated": "2026-09-29"
+ }
+}

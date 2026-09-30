@@ -164,16 +164,14 @@ def main():
     args = ap.parse_args()
 
     sys.path.insert(0, str(ROOT))
-    from benchmark.config import ISO_TO_NAME, TTS_LANG_MAP
-    from benchmark.dataset import available_subsets, subset_to_iso
+    from benchmark.config import ISO_TO_NAME, TTS_LANG_MAP, all_isos
     from benchmark.evaluate import load_tts_models
 
     RECIPES.mkdir(exist_ok=True)
     written = skipped = 0
-    for subset in available_subsets():
-        iso = subset_to_iso(subset)
+    for iso in all_isos():
         language = ISO_TO_NAME.get(iso, iso)
-        for meta in load_tts_models(subset):
+        for meta in load_tts_models(iso):
             model_id = meta["name"]
             kind = kind_for(model_id, meta)
             safe = model_id.replace("/", "_").replace(":", "_")

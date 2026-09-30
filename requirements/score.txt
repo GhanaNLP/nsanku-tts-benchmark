@@ -1,0 +1,19 @@
+# SpeechBERTScore scoring environment.
+#
+# Deliberately identical to tts.txt so one environment can synthesise and
+# score. wavlm-large is a plain masked-convolution encoder with no custom CUDA
+# kernels, so it imposes no version constraint beyond a recent transformers.
+#
+# The encoder-selection sweep ran under transformers 5.17 / torch 2.8 and
+# reproduced the same layer curve as this pin, so the two are interchangeable
+# for wavlm-large.
+torch==2.5.1
+torchaudio==2.5.1
+transformers==4.57.2
+huggingface_hub==0.36.2
+numpy
+pyyaml
+soundfile
+# transformers pulls sympy/accelerate for the tokenizer and weight loader.
+sympy
+accelerate

@@ -1,104 +1,195 @@
-"""Load evaluation text samples from ghana-sentences.
+"""Load evaluation samples from ghana-speech-eval: text *and* a real recording.
 
-Supports incremental sampling: pass ``offset`` to start at a given index.
-Scores are keyed by sample index, so bumping NUM_SAMPLES silently picks up
-only the *new* samples on re-run.
+This is what makes benchmark 2 possible. Each sample is a row of
+ghana-speech-eval, which is real recorded human speech with a transcript, so
+every sample carries its own reference utterance and SpeechBERTScore can be
+computed against genuine speech rather than against text.
+
+Rows are referenced by their index in the config, so scores are stable across
+re-runs and bumping NUM_SAMPLES only scores rows not already seen.
+
+Reference audio is materialised to ``references/{iso}/{index:05d}.wav`` once
+and reused; scoring a 200-sample run should not re-read a 15 GB parquet.
 """
 
+import io
+import json
 import os
-import re
 
-from datasets import load_dataset
+from . import config
+from .config import (
+    MAX_SECONDS,
+    MAX_WORDS,
+    MIN_SECONDS,
+    MIN_WORDS,
+    NUM_SAMPLES,
+    SPEECH_EVAL,
+    SPEECH_EVAL_CONFIGS,
+)
 
-from .config import GHANA_SENTENCES, NUM_SAMPLES, SUBSET_TO_ISO
+# Output locations are read through `config` at call time rather than imported
+# at module scope, so a caller that overrides them (the tests do, to keep
+# writes out of the repository) actually redirects the write. Importing them
+# here silently pinned them to the repo's real directories, which put test
+# output among real data.
 
-# ghana-sentences is built from documents split into lines, so a lot of rows
-# are not speakable sentences: headings, bylines, mid-sentence continuations,
-# and phonetic notation from the linguistics texts.  Reading those measures
-# the text more than the voice, so they are filtered out of the sample pool.
-MIN_WORDS = 5
-MAX_WORDS = 30
+# The parquet stores 16-bit mono WAV at 16 kHz, which is exactly the encoder's
+# native rate, so reference audio is written through untouched.
+_REF_SAMPLE_RATE = 16000
 
-# Notation, list and markup characters that no TTS model is expected to read.
-_REJECT_CHARS = re.compile(r"[\[\]{}<>|\\/=•·~^_*#@\d]")
-_SENTENCE_END = (".", "!", "?")
-_WORD_CHARS = re.compile(r"[^\W\d_]", re.UNICODE)
+_TABLE_CACHE = {}
 
 
-def is_clean_sentence(text):
-    """Is *text* a self-contained sentence worth asking a TTS model to read?"""
-    text = text.strip()
+class Sample:
+    """One evaluation sample: text to synthesise, and a real recording of it."""
+
+    __slots__ = ("index", "text", "duration", "iso", "config")
+
+    def __init__(self, index, text, duration, iso, config):
+        self.index = index
+        self.text = text
+        self.duration = duration
+        self.iso = iso
+        self.config = config
+
+    @property
+    def key(self):
+        return f"{self.index:05d}"
+
+    @property
+    def reference_path(self):
+        return config.REFERENCE_DIR / self.iso / f"{self.key}.wav"
+
+    def as_dict(self):
+        return {
+            "index": self.index,
+            "text": self.text,
+            "duration": self.duration,
+            "iso": self.iso,
+            "config": self.config,
+        }
+
+
+def is_usable(text, duration):
+    """Is this row worth scoring? Drops rows that make a shaky reference."""
+    text = (text or "").strip()
     if not text:
         return False
-
     words = text.split()
     if not (MIN_WORDS <= len(words) <= MAX_WORDS):
         return False
-
-    # Mid-sentence fragments: the corpus wraps long sentences across rows.
-    if not text.endswith(_SENTENCE_END):
+    if duration is None or not (MIN_SECONDS <= duration <= MAX_SECONDS):
         return False
-    if not text[0].isupper():
-        return False
-
-    # Headings are often fully capitalised.
-    letters = _WORD_CHARS.findall(text)
-    if letters and sum(c.isupper() for c in letters) / len(letters) > 0.5:
-        return False
-
-    if _REJECT_CHARS.search(text):
-        return False
-
-    # Colons introduce examples/notation rather than prose.
-    if ":" in text:
-        return False
-
-    # Guard against rows that are mostly punctuation.
-    return len(letters) / len(text) > 0.7
+    return True
 
 
-def load_text_samples(subset, offset=0, limit=NUM_SAMPLES, num_rows=None, clean=True):
-    """Load *limit* speakable sentences for a ghana-sentences subset.
+def config_rows(iso):
+    """Cached read of one language's parquet as a list of dicts.
+
+    The configs run to ~1 GB each, so the table is read once per process and
+    shared by the sample loader and the prompt-clip loader.
+    """
+    config = SPEECH_EVAL_CONFIGS[iso]
+    if config not in _TABLE_CACHE:
+        import pyarrow.parquet as pq
+        from huggingface_hub import hf_hub_download
+
+        path = hf_hub_download(
+            SPEECH_EVAL,
+            f"{config}/eval-00000-of-00001.parquet",
+            repo_type="dataset",
+        )
+        table = pq.ParquetFile(path).read(columns=["audio", "text", "length"])
+        _TABLE_CACHE[config] = table.to_pylist()
+    return _TABLE_CACHE[config]
+
+
+def _write_reference(sample, wav_bytes):
+    """Persist one reference recording so scoring never re-reads the parquet."""
+    import soundfile as sf
+
+    out = sample.reference_path
+    out.parent.mkdir(parents=True, exist_ok=True)
+    audio, sr = sf.read(io.BytesIO(wav_bytes), dtype="float32", always_2d=False)
+    if audio.ndim > 1:
+        audio = audio.mean(axis=1)
+    sf.write(out, audio, sr if sr else _REF_SAMPLE_RATE, subtype="PCM_16")
+    return out
+
+
+def load_samples(iso, limit=NUM_SAMPLES, offset=0, extract_references=True):
+    """Load up to *limit* scored samples for *iso*, with their reference audio.
 
     Args:
-        subset: subset name (twi-aku, dag, ...)
-        offset: skip the first *offset* accepted samples.
-        limit: maximum number of samples to return.
-        num_rows: stop after scanning this many rows of the subset.
-        clean: keep only rows passing :func:`is_clean_sentence`.
+        iso: ISO 639-3 code, e.g. "twi_asante".
+        limit: maximum samples to return.
+        offset: skip the first *offset* accepted rows (incremental sampling).
+        extract_references: write reference wavs to REFERENCE_DIR as we go.
 
     Returns:
-        list of {"text": str, "index": int} — index is the row index in the
-        subset, used to dedupe across incremental runs.  Row indices stay
-        stable as long as the filter does, so bumping *limit* later picks up
-        only sentences that have not been scored yet.
+        list of :class:`Sample`, ordered by row index.
     """
-    limit = int(os.environ.get("NSANKU_TTS_NUM_SAMPLES", NUM_SAMPLES)) if limit is None else limit
-    ds = load_dataset(GHANA_SENTENCES, subset, split="train", streaming=True)
+    limit = int(os.environ.get("NSANKU2_TTS_NUM_SAMPLES", limit))
+    config = SPEECH_EVAL_CONFIGS[iso]
     samples = []
-    accepted = 0
-    for i, row in enumerate(ds):
-        if num_rows is not None and i >= num_rows:
-            break
+    for row_index, row in enumerate(config_rows(iso)):
         text = (row.get("text") or "").strip()
-        if not text:
+        if not is_usable(text, row.get("length")):
             continue
-        if clean and not is_clean_sentence(text):
-            continue
-        accepted += 1
-        if accepted <= offset:
-            continue
-        samples.append({"text": text, "index": i})
-        if len(samples) >= limit:
+        sample = Sample(row_index, text, float(row["length"]), iso, config)
+        if extract_references and not sample.reference_path.exists():
+            _write_reference(sample, row["audio"]["bytes"])
+        samples.append(sample)
+        if len(samples) >= offset + limit:
             break
-    return samples
+    return samples[offset:offset + limit]
 
 
-def subset_to_iso(subset):
-    """Map a ghana-sentences subset name to an ISO 639-3 code."""
-    return SUBSET_TO_ISO.get(subset, subset)
+def load_prompt_sample(iso, index):
+    """A *different* real recording in the same language, for ref-mode prompting.
+
+    A ref-mode model must never be prompted with the very clip it is scored
+    against, or SpeechBERTScore would measure how well it copies the prompt
+    rather than how well it synthesises. The prompt row is a fixed distance
+    away, so re-runs prompt identically and stay comparable.
+    """
+    rows = config_rows(iso)
+    if not rows:
+        return None
+    prompt_index = (index + config.PROMPT_ROW_OFFSET) % len(rows)
+    row = rows[prompt_index]
+    text = (row.get("text") or "").strip()
+    if not is_usable(text, row.get("length")):
+        return None
+
+    sample = Sample(
+        prompt_index, text, float(row["length"]), iso, SPEECH_EVAL_CONFIGS[iso]
+    )
+    if not sample.reference_path.exists():
+        _write_reference(sample, row["audio"]["bytes"])
+    return sample
 
 
-def available_subsets():
-    """Return the list of subset names in ghana-sentences."""
-    return list(SUBSET_TO_ISO.keys())
+def reference_path_for(iso, index):
+    """Where the reference recording for a given row lives (or would live)."""
+    return config.REFERENCE_DIR / iso / f"{index:05d}.wav"
+
+
+def available_configs():
+    return dict(SPEECH_EVAL_CONFIGS)
+
+
+def write_manifest(iso, samples):
+    """Record which rows were used, so a run can be reproduced exactly."""
+    config.DATA_DIR.mkdir(parents=True, exist_ok=True)
+    path = config.DATA_DIR / f"manifest_{iso}.json"
+    payload = {
+        "iso": iso,
+        "config": SPEECH_EVAL_CONFIGS[iso],
+        "num_samples": len(samples),
+        "source": SPEECH_EVAL,
+        "prompt_row_offset": config.PROMPT_ROW_OFFSET,
+        "samples": [s.as_dict() for s in samples],
+    }
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return path

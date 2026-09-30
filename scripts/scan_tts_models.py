@@ -23,7 +23,7 @@ import requests
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from benchmark.config import ISO_TO_NAME, ORG_OVERRIDES, SUBSET_TO_ISO  # noqa: E402
+from benchmark.config import ISO_TO_NAME, ORG_OVERRIDES, all_isos  # noqa: E402
 
 API = "https://huggingface.co/api"
 
@@ -97,7 +97,7 @@ def scan():
     org_cache = {}
     found = {}
 
-    for iso in sorted(set(SUBSET_TO_ISO.values())):
+    for iso in sorted(all_isos()):
         for tag in LANG_TAGS.get(iso, [iso]):
             models = _get(
                 f"{API}/models",

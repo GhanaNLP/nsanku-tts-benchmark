@@ -1,0 +1,463 @@
+iso_639_3: twi_asante
+language: Asante Twi
+num_samples_per_category: 200
+categories:
+- education
+scoring: cer
+judge:
+  model: Qlerqly/griot-nano-1
+  cer_on_real_speech: 0.2212
+updated: '2026-09-16'
+benchmarks:
+- model: KhayaAI/khaya-tts-v2
+  model_url: https://translation.ghananlp.org
+  mode: noref
+  owner: KhayaAI
+  architecture: Khaya AI TTS v2 API
+  model_class: api
+  params: API
+  cer: 0.0935
+  wer: 0.3995
+  score: 0.0935
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.3995
+      cer: 0.0935
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: ghananlpcommunity/ghana-tts-36k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: ref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1132
+  wer: 0.4836
+  score: 0.1132
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.4836
+      cer: 0.1132
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi
+  sample_category: education
+  sample_clip: '00003'
+- model: ghananlpcommunity/ghana-tts-72k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: ref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1139
+  wer: 0.5002
+  score: 0.1139
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.5002
+      cer: 0.1139
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi
+  sample_category: education
+  sample_clip: '00003'
+- model: facebook/mms-tts-aka
+  model_url: https://huggingface.co/facebook/mms-tts-aka
+  mode: noref
+  owner: facebook
+  architecture: Meta MMS VITS (per-language)
+  model_class: non-llm
+  params: 0.04B
+  cer: 0.1242
+  wer: 0.4833
+  score: 0.1242
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.4833
+      cer: 0.1242
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: ghananlpcommunity/ghana-tts-36k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1569
+  wer: 0.5395
+  score: 0.1569
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.5395
+      cer: 0.1569
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-ref
+  model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
+  mode: ref
+  owner: walusungungulube
+  architecture: Spark-TTS (0.5B)
+  model_class: non-llm
+  params: 0.5B
+  cer: 0.1586
+  wer: 0.5524
+  score: 0.1586
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.5524
+      cer: 0.1586
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi
+  sample_category: education
+  sample_clip: '00003'
+- model: FarmerlineML/voxcpm2-akan-sft-noref
+  model_url: https://huggingface.co/FarmerlineML/voxcpm2-akan-sft
+  mode: noref
+  owner: FarmerlineML
+  architecture: VoxCPM2 (2B)
+  model_class: non-llm
+  params: 2B
+  cer: 0.1616
+  wer: 0.6051
+  score: 0.1616
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6051
+      cer: 0.1616
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: FarmerlineML/voxcpm2-akan-sft-ref
+  model_url: https://huggingface.co/FarmerlineML/voxcpm2-akan-sft
+  mode: ref
+  owner: FarmerlineML
+  architecture: VoxCPM2 (2B)
+  model_class: non-llm
+  params: 2B
+  cer: 0.1706
+  wer: 0.6084
+  score: 0.1706
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6084
+      cer: 0.1706
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi
+  sample_category: education
+  sample_clip: '00003'
+- model: ghananlpcommunity/nano-twi
+  model_url: https://huggingface.co/ghananlpcommunity/nano-twi
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: Matcha-TTS + Vocos ONNX
+  model_class: non-llm
+  params: 0.03B
+  cer: 0.182
+  wer: 0.598
+  score: 0.182
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.598
+      cer: 0.182
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: ghananlpcommunity/ghana-tts-72k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.187
+  wer: 0.5629
+  score: 0.187
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.5629
+      cer: 0.187
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: k2-fsa/OmniVoice-ref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: ref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: 0.6B
+  cer: 0.1944
+  wer: 0.6418
+  score: 0.1944
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6418
+      cer: 0.1944
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi
+  sample_category: education
+  sample_clip: '00003'
+- model: ghananlpcommunity/stable-twi-tts
+  model_url: https://huggingface.co/ghananlpcommunity/stable-twi-tts
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: Piper VITS (ONNX)
+  model_class: non-llm
+  params: 0.03B
+  cer: 0.2093
+  wer: 0.6874
+  score: 0.2093
+  samples: 200
+  valid: 117
+  per_category:
+    education:
+      wer: 0.6874
+      cer: 0.2093
+      samples: 200
+      valid: 117
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: Google/gemini-3.1-flash-tts-preview-universal
+  model_url: https://ai.google.dev/gemini-api/docs/speech-generation
+  mode: noref
+  owner: Google
+  architecture: Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p)
+  model_class: api
+  params: API
+  cer: 0.2242
+  wer: 0.6459
+  score: 0.2242
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6459
+      cer: 0.2242
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.03
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: Google/gemini-3.1-flash-tts-preview
+  model_url: https://ai.google.dev/gemini-api/docs/speech-generation
+  mode: noref
+  owner: Google
+  architecture: Google Gemini 3.1 Flash TTS (API)
+  model_class: api
+  params: API
+  cer: 0.2394
+  wer: 0.6851
+  score: 0.2394
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6851
+      cer: 0.2394
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: ghananlpcommunity/tekyerema-tts-twi
+  model_url: https://huggingface.co/ghananlpcommunity/tekyerema-tts-twi
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: Tekyerema Twi VITS (0.03B)
+  model_class: non-llm
+  params: 0.03B
+  cer: 0.2495
+  wer: 0.6679
+  score: 0.2495
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6679
+      cer: 0.2495
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: multilingual-tts/VITS-OpenBible-Twi-Asante
+  model_url: https://huggingface.co/multilingual-tts/VITS-OpenBible-Twi-Asante
+  mode: noref
+  owner: multilingual-tts
+  architecture: VITS (Coqui)
+  model_class: non-llm
+  params: 0.08B
+  cer: 0.258
+  wer: 0.7015
+  score: 0.258
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.7015
+      cer: 0.258
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: k2-fsa/OmniVoice-design
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: design
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: 0.6B
+  cer: 0.2932
+  wer: 0.789
+  score: 0.2932
+  samples: 200
+  valid: 192
+  per_category:
+    education:
+      wer: 0.789
+      cer: 0.2932
+      samples: 200
+      valid: 192
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: k2-fsa/OmniVoice-noref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: noref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: 0.6B
+  cer: 0.3169
+  wer: 0.7853
+  score: 0.3169
+  samples: 200
+  valid: 191
+  per_category:
+    education:
+      wer: 0.7853
+      cer: 0.3169
+      samples: 200
+      valid: 191
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'
+- model: ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante-ref
+  model_url: https://huggingface.co/ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante
+  mode: ref
+  owner: ghananlpcommunity
+  architecture: F5-TTS (DiT + Vocos)
+  model_class: non-llm
+  params: 0.3B
+  cer: 0.3195
+  wer: 0.6792
+  score: 0.3195
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6792
+      cer: 0.3195
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Asante_Twi
+  sample_category: education
+  sample_clip: '00003'
+- model: walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani-noref
+  model_url: https://huggingface.co/walusungungulube/Spark-TTS-0.5B-twi-ewe-dagbani
+  mode: noref
+  owner: walusungungulube
+  architecture: Spark-TTS (0.5B)
+  model_class: non-llm
+  params: 0.5B
+  cer: 0.818
+  wer: 1.2298
+  score: 0.818
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 1.2298
+      cer: 0.818
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00003'

@@ -1,8 +1,8 @@
 ---
 title: nsanku TTS Benchmark
 emoji: 🔊
-colorFrom: blue
-colorTo: green
+colorFrom: green
+colorTo: blue
 sdk: static
 pinned: false
 license: mit
@@ -10,11 +10,12 @@ license: mit
 
 # nsanku TTS Benchmark
 
-Text-to-Speech intelligibility benchmark for Ghanaian languages. Every clip is
-transcribed by the best ASR model for its language (from the
-[nsanku ASR benchmark](https://huggingface.co/spaces/ghananlpcommunity/nsanku-asr-benchmark))
-and scored by character error rate — lower is better.
+Multi-metric Text-to-Speech benchmark for Ghanaian languages. 
 
-Visit the [leaderboard](https://ghananlpcommunity-nsanku-tts-benchmark.hf.space) for results.
+Models are evaluated across two complementary dimensions:
+1. **Intelligibility (Character Accuracy = 1 - CER)**: Per-language ASR judges transcribe each clip; scored against the sentence read.
+2. **Acoustic Naturalness (SpeechBERTScore)**: Precision variant of `microsoft/wavlm-large` layer 6 scored against real recorded human speech references from `ghananlpcommunity/ghana-speech-eval`.
 
-Results are read from [GhanaNLP/nsanku-tts-benchmark](https://github.com/GhanaNLP/nsanku-tts-benchmark).
+**Overall Ranking:** Ranked by **Composite Score** = `(Accuracy + SpeechBERTScore) / 2`.
+
+- GitHub Repository: [GhanaNLP/nsanku-tts-benchmark](https://github.com/GhanaNLP/nsanku-tts-benchmark)

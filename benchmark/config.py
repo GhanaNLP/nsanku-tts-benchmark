@@ -1,4 +1,15 @@
-"""Configuration for nsanku-TTS benchmark."""
+"""Configuration for the nsanku-TTS benchmark.
+
+Every sample is drawn from ghana-speech-eval, which is *recorded human speech
+with a transcript*. So each sample ships with a real recording of its own
+sentence, and two metrics can grade the same synthesised clip:
+
+  * CER, from an ASR judge transcribing the clip (intelligibility);
+  * SpeechBERTScore (Saeki et al., 2024), generated speech against the real
+    reference utterance (acoustic similarity, speaker, prosody).
+
+The published score is the composite (SBS + (1 - CER)) / 2.
+"""
 
 import os
 from pathlib import Path
@@ -12,62 +23,100 @@ if _env.exists():
                 _k, _v = _line.split("=", 1)
                 os.environ.setdefault(_k.strip(), _v.strip())
 
-# Dataset: sentence-level text corpus for Ghanaian languages
-GHANA_SENTENCES = "ghanaopenai/ghana-sentences"
-# Default samples per language. Bumping this re-uses already-scored samples and
-# only scores the *new* ones (incremental, keyed by subset row index).
-NUM_SAMPLES = int(os.environ.get("NSANKU_TTS_NUM_SAMPLES", "200"))
+# Accept KHAYA_API / GEMINI_API as aliases for KHAYA_API_KEY / GEMINI_API_KEY
+if "KHAYA_API" in os.environ and "KHAYA_API_KEY" not in os.environ:
+    os.environ["KHAYA_API_KEY"] = os.environ["KHAYA_API"]
+if "GEMINI_API" in os.environ and "GEMINI_API_KEY" not in os.environ:
+    os.environ["GEMINI_API_KEY"] = os.environ["GEMINI_API"]
+
+# ── Sample source ────────────────────────────────────────────────────────────
+# Real recorded speech, with transcripts, in the languages being benchmarked.
+SPEECH_EVAL = "ghananlpcommunity/ghana-speech-eval"
+
+# Default samples per language. Bumping this re-uses already-scored samples
+# and only scores the new ones (incremental, keyed by config row index).
+NUM_SAMPLES = int(os.environ.get("NSANKU2_TTS_NUM_SAMPLES", "200"))
 
 # HuggingFace authentication
 HF_TOKEN = os.environ.get("HF_TOKEN", "")
 
-# Models whose recommended inference setting includes a reference clip are
-# given one: real recorded speech in the same language, from ghana-speech-eval
-# (a different corpus than the benchmark sentences, so nothing leaks). Results
-# record that a clip was used, since it is part of how the number was produced.
+# ── Sample filtering ─────────────────────────────────────────────────────────
+# ghana-speech-eval holds read-aloud scripture, so the rows are already
+# speakable sentences. These bounds only drop rows that make a reference
+# recording unreliable to score against: too short to be a stable utterance,
+# or too long to encode in one pass.
+MIN_SECONDS = float(os.environ.get("NSANKU2_TTS_MIN_SECONDS", "3.0"))
+MAX_SECONDS = float(os.environ.get("NSANKU2_TTS_MAX_SECONDS", "15.0"))
+MIN_WORDS = 5
+MAX_WORDS = 25
+
+# ── Models whose recommended inference setting includes a reference clip ─────
+# These are prompted with real recorded speech, as always. Crucially the
+# prompt clip is a *different* row from the one being scored: a ref-mode model
+# prompted with its own scoring reference would be graded on how well it copies
+# the clip it was handed, not on synthesis quality. See PROMPT_ROW_OFFSET.
 USE_REFERENCE_AUDIO = True
+# The prompt clip for a sample is drawn from this far away in the config, so it
+# is never the sample's own reference recording. The offset is fixed (not
+# random) so a re-run prompts identically and stays comparable.
+PROMPT_ROW_OFFSET = 500
 
 # Only benchmark models published by organizations (drop personal accounts).
-# A leaderboard is a claim about what is available to build on, and a personal
-# checkpoint is not the same kind of artefact as an org release.
 ORG_ONLY = True
-
-# Namespaces to treat as organizations even though HuggingFace classifies them
-# as personal accounts. Mirrors the ASR benchmark's list so the two agree on
-# who counts as a publisher.
 ORG_OVERRIDES = {"FarmerlineML", "Qlerqly", "katrintomanek"}
 
-# Paths
+# ── Paths ────────────────────────────────────────────────────────────────────
 ROOT = Path(__file__).parent.parent
-# Results dir overridable so Modal can persist it on a shared Volume.
-BENCHMARK_DIR = Path(os.environ.get("NSANKU_TTS_RESULTS_DIR", str(ROOT / "benchmarks")))
-# Every synthesised clip is kept: stage 2 reads them back to score, and
-# they are the only way to actually listen to what a model produced.
-# On Modal this points at the shared results Volume.
-AUDIO_DIR = Path(os.environ.get("NSANKU_TTS_AUDIO_DIR", str(ROOT / "audio")))
+BENCHMARK_DIR = Path(os.environ.get("NSANKU2_TTS_RESULTS_DIR", str(ROOT / "benchmarks")))
+TRANSCRIPTIONS_DIR = Path(
+    os.environ.get("NSANKU2_TTS_TRANSCRIPTIONS_DIR", str(ROOT / "transcriptions"))
+)
+# Every synthesised clip is kept: scoring reads them back, and they are the only
+# way to actually listen to what a model produced.
+AUDIO_DIR = Path(os.environ.get("NSANKU2_TTS_AUDIO_DIR", str(ROOT / "audio")))
+# Reference recordings are extracted once from the parquet configs and cached
+# here, so scoring does not re-download 15 GB per run.
+REFERENCE_DIR = Path(
+    os.environ.get("NSANKU2_TTS_REFERENCE_DIR", str(ROOT / "references"))
+)
 DATA_DIR = ROOT / "data"
-LANG_CONFIG = ROOT / "languages" / "ghana_languages.yaml"
 
-# Audio settings for TTS output
-SAMPLE_RATE = 24000
+# ── Audio settings ───────────────────────────────────────────────────────────
+# SpeechBERTScore's features are computed at 16 kHz, the encoder's native rate
+# and the rate the paper used. Synthesised clips are resampled from whatever
+# their model emits, so a 48 kHz output is scored fairly.
+SCORE_SAMPLE_RATE = 16000
 
-# Subset -> ISO 639-3 mapping for ghana-sentences
-SUBSET_TO_ISO = {
-    "ada": "ada",
-    "dag": "dag",
-    "dga": "dga",
-    "ewe": "ewe",
-    "fat": "fat",
-    "gaa": "gaa",
-    "gjn": "gjn",
-    "gur": "gur",
-    "nzi": "nzi",
-    "twi-aku": "twi_akuapem",
-    "twi-asa": "twi_asante",
-    "xsm": "xsm",
+# ── SpeechBERTScore configuration ────────────────────────────────────────────
+# Encoder and layer were chosen by measured sweep, not assumption. See
+# docs/encoder-selection.md.
+#
+# On 6 languages x 20 real samples, wavlm-large layer 6 gave the largest
+# separation between a correct utterance and a mismatched one (0.317) while
+# barely penalising speaking-rate changes (0.014). The multilingual
+# omniASR-W2V-1B was close on content (0.292) but stronger on noise (0.330).
+ENCODER_MODEL = os.environ.get("NSANKU2_TTS_ENCODER", "microsoft/wavlm-large")
+ENCODER_LAYER = int(os.environ.get("NSANKU2_TTS_ENCODER_LAYER", "6"))
+SBS_VARIANT = "precision"
+
+# ── Languages ────────────────────────────────────────────────────────────────
+# iso -> ghana-speech-eval config name. Each config holds 1000 rows of real
+# recorded speech in that language. Verified present and non-empty upstream.
+SPEECH_EVAL_CONFIGS = {
+    "ada": "bible_Dangme_ada",
+    "dag": "bible_Dagbani_dag",
+    "dga": "bible_Dagaare_dga",
+    "ewe": "bible_Ewe_ewe",
+    "fat": "bible_Fante_fat",
+    "gaa": "jw_ga_gaa",
+    "gjn": "bible_Gonja_gjn",
+    "gur": "bible_Ninkare_gur",
+    "nzi": "bible_Nzema_nzi",
+    "twi_akuapem": "bible_Akuapem_Twi",
+    "twi_asante": "bible_Asante_Twi",
+    "xsm": "bible_Kasem_xsm",
 }
 
-# ISO -> human-readable language name
 ISO_TO_NAME = {
     "ada": "Dangme",
     "dag": "Dagbani",
@@ -83,11 +132,7 @@ ISO_TO_NAME = {
     "xsm": "Kasem",
 }
 
-# Alignment ISO codes accepted by MMS-300M (ISO 639-3)
-# Maps our internal ISO to the code the alignment model expects
-
 # Language codes accepted by TTS models / hosted APIs (ISO 639-3).
-# Khaya TTS v2 expects e.g. Asante Twi = "twi", Akuapem Twi = "atw".
 TTS_LANG_MAP = {
     "ada": "ada",
     "dag": "dag",
@@ -103,23 +148,11 @@ TTS_LANG_MAP = {
     "xsm": "xsm",
 }
 
-# ── Text domains ─────────────────────────────────────────────────────────────
-# A domain ("category", to match the ASR benchmark's vocabulary) is the kind of
-# text a model is asked to read. Scores are reported per domain and averaged, so
-# a model that handles one register well is not credited for another.
-EVAL_CONFIGS = DATA_DIR / "eval_configs.json"
-DEFAULT_CATEGORY = "education"
+# The one domain: ghana-speech-eval is read-aloud scripture, so every sample is
+# the same register. A single category also keeps scores comparable across
+# languages, which a multi-register split would not.
+DEFAULT_CATEGORY = "read_aloud"
 
 
-def language_categories(iso):
-    """Return the domain configs for *iso*, or the default if unregistered."""
-    import json
-
-    try:
-        with open(EVAL_CONFIGS, encoding="utf-8") as f:
-            entry = json.load(f)["languages"].get(iso)
-    except (OSError, json.JSONDecodeError, KeyError):
-        entry = None
-    if not entry:
-        return [{"category": DEFAULT_CATEGORY, "source": GHANA_SENTENCES, "subset": iso}]
-    return entry["categories"]
+def all_isos():
+    return list(SPEECH_EVAL_CONFIGS)

@@ -1,0 +1,259 @@
+iso_639_3: fat
+language: Fante
+num_samples_per_category: 200
+categories:
+- education
+scoring: cer
+judge:
+  model: KhayaAI/khaya-asr-v3
+  cer_on_real_speech: 0.2646
+updated: '2026-09-16'
+benchmarks:
+- model: KhayaAI/khaya-tts-v2
+  model_url: https://translation.ghananlp.org
+  mode: noref
+  owner: KhayaAI
+  architecture: Khaya AI TTS v2 API
+  model_class: api
+  params: API
+  cer: 0.0656
+  wer: 0.2654
+  score: 0.0656
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.2654
+      cer: 0.0656
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00013'
+- model: ghananlpcommunity/ghana-tts-36k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: ref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.0675
+  wer: 0.3389
+  score: 0.0675
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.3389
+      cer: 0.0675
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Fante_fat
+  sample_category: education
+  sample_clip: '00013'
+- model: ghananlpcommunity/ghana-tts-72k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: ref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.0686
+  wer: 0.321
+  score: 0.0686
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.321
+      cer: 0.0686
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Fante_fat
+  sample_category: education
+  sample_clip: '00013'
+- model: k2-fsa/OmniVoice-ref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: ref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: 0.6B
+  cer: 0.1106
+  wer: 0.4456
+  score: 0.1106
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.4456
+      cer: 0.1106
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Fante_fat
+  sample_category: education
+  sample_clip: '00013'
+- model: ghananlpcommunity/ghana-tts-36k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1296
+  wer: 0.4191
+  score: 0.1296
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.4191
+      cer: 0.1296
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00013'
+- model: facebook/mms-tts-aka
+  model_url: https://huggingface.co/facebook/mms-tts-aka
+  mode: noref
+  owner: facebook
+  architecture: Meta MMS VITS (per-language)
+  model_class: non-llm
+  params: 0.04B
+  cer: 0.1598
+  wer: 0.5415
+  score: 0.1598
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.5415
+      cer: 0.1598
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00013'
+- model: ghananlpcommunity/ghana-tts-72k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1721
+  wer: 0.4632
+  score: 0.1721
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.4632
+      cer: 0.1721
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00013'
+- model: Google/gemini-3.1-flash-tts-preview-universal
+  model_url: https://ai.google.dev/gemini-api/docs/speech-generation
+  mode: noref
+  owner: Google
+  architecture: Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p)
+  model_class: api
+  params: API
+  cer: 0.1819
+  wer: 0.5968
+  score: 0.1819
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.5968
+      cer: 0.1819
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 5.59
+  source: evaluated
+  sample_category: education
+  sample_clip: '00013'
+- model: Google/gemini-3.1-flash-tts-preview
+  model_url: https://ai.google.dev/gemini-api/docs/speech-generation
+  mode: noref
+  owner: Google
+  architecture: Google Gemini 3.1 Flash TTS (API)
+  model_class: api
+  params: API
+  cer: 0.1934
+  wer: 0.5868
+  score: 0.1934
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.5868
+      cer: 0.1934
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00013'
+- model: k2-fsa/OmniVoice-design
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: design
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: 0.6B
+  cer: 0.2645
+  wer: 0.6318
+  score: 0.2645
+  samples: 200
+  valid: 196
+  per_category:
+    education:
+      wer: 0.6318
+      cer: 0.2645
+      samples: 200
+      valid: 196
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00013'
+- model: k2-fsa/OmniVoice-noref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: noref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: 0.6B
+  cer: 0.2679
+  wer: 0.6414
+  score: 0.2679
+  samples: 200
+  valid: 193
+  per_category:
+    education:
+      wer: 0.6414
+      cer: 0.2679
+      samples: 200
+      valid: 193
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00013'

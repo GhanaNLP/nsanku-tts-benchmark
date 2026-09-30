@@ -1,0 +1,237 @@
+iso_639_3: gjn
+language: Gonja
+num_samples_per_category: 200
+categories:
+- education
+scoring: cer
+judge:
+  model: KhayaAI/khaya-asr-v3
+  cer_on_real_speech: 0.0425
+updated: '2026-09-16'
+benchmarks:
+- model: KhayaAI/khaya-tts-v2
+  model_url: https://translation.ghananlp.org
+  mode: noref
+  owner: KhayaAI
+  architecture: Khaya AI TTS v2 API
+  model_class: api
+  params: API
+  cer: 0.0847
+  wer: 0.5571
+  score: 0.0847
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.5571
+      cer: 0.0847
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00016'
+- model: ghananlpcommunity/ghana-tts-36k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: ref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1095
+  wer: 0.6607
+  score: 0.1095
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6607
+      cer: 0.1095
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Gonja_gjn
+  sample_category: education
+  sample_clip: '00016'
+- model: ghananlpcommunity/ghana-tts-72k-ref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: ref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1232
+  wer: 0.6789
+  score: 0.1232
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.6789
+      cer: 0.1232
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Gonja_gjn
+  sample_category: education
+  sample_clip: '00016'
+- model: k2-fsa/OmniVoice-ref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: ref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: 0.6B
+  cer: 0.1618
+  wer: 0.7791
+  score: 0.1618
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.7791
+      cer: 0.1618
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  prompted: true
+  prompt_source: ghananlpcommunity/ghana-speech-eval/bible_Gonja_gjn
+  sample_category: education
+  sample_clip: '00016'
+- model: ghananlpcommunity/ghana-tts-36k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.1981
+  wer: 0.7598
+  score: 0.1981
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.7598
+      cer: 0.1981
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00016'
+- model: Google/gemini-3.1-flash-tts-preview-universal
+  model_url: https://ai.google.dev/gemini-api/docs/speech-generation
+  mode: noref
+  owner: Google
+  architecture: Google Gemini 3.1 Flash TTS (Universal Graphemes via africa-g2p)
+  model_class: api
+  params: API
+  cer: 0.2125
+  wer: 0.8366
+  score: 0.2125
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.8366
+      cer: 0.2125
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 5.64
+  source: evaluated
+  sample_category: education
+  sample_clip: '00016'
+- model: Google/gemini-3.1-flash-tts-preview
+  model_url: https://ai.google.dev/gemini-api/docs/speech-generation
+  mode: noref
+  owner: Google
+  architecture: Google Gemini 3.1 Flash TTS (API)
+  model_class: api
+  params: API
+  cer: 0.2144
+  wer: 0.8489
+  score: 0.2144
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.8489
+      cer: 0.2144
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00016'
+- model: ghananlpcommunity/ghana-tts-72k-noref
+  model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
+  mode: noref
+  owner: ghananlpcommunity
+  architecture: VoxCPM v1 (0.7B)
+  model_class: non-llm
+  params: 0.7B
+  cer: 0.2464
+  wer: 0.798
+  score: 0.2464
+  samples: 200
+  valid: 200
+  per_category:
+    education:
+      wer: 0.798
+      cer: 0.2464
+      samples: 200
+      valid: 200
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00016'
+- model: k2-fsa/OmniVoice-design
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: design
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: 0.6B
+  cer: 0.3989
+  wer: 0.8306
+  score: 0.3989
+  samples: 200
+  valid: 191
+  per_category:
+    education:
+      wer: 0.8306
+      cer: 0.3989
+      samples: 200
+      valid: 191
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00016'
+- model: k2-fsa/OmniVoice-noref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: noref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: 0.6B
+  cer: 0.4073
+  wer: 0.8316
+  score: 0.4073
+  samples: 200
+  valid: 187
+  per_category:
+    education:
+      wer: 0.8316
+      cer: 0.4073
+      samples: 200
+      valid: 187
+      avg_seconds_per_sample: 0.0
+  source: evaluated
+  sample_category: education
+  sample_clip: '00016'

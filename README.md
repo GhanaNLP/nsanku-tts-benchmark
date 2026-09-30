@@ -1,31 +1,46 @@
 # nsanku-TTS Benchmark
 
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Benchmark%201-CER%20Space-blue)](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Benchmark%202-Composite%20Space-green)](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark-2)
+[![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Leaderboard-HF%20Space-blue)](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark)
 
-TTS intelligibility benchmark for Ghanaian languages, scored by **ASR character error rate**.
+TTS benchmark for Ghanaian languages. Every synthesised clip is graded two ways and
+ranked by the **composite** `(SpeechBERTScore + (1 - CER)) / 2` (higher is better):
 
-See also **[nsanku-tts-benchmark-2](https://github.com/GhanaNLP/nsanku-tts-benchmark-2)** and its live **[Hugging Face Space](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark-2)** for composite evaluation combining intelligibility with SpeechBERTScore acoustic naturalness.
+- **CER** (intelligibility): an ASR judge transcribes the clip; the transcript is
+  compared with the sentence that was synthesised.
+- **SpeechBERTScore** (acoustic similarity): the clip is compared with a real human
+  recording of the same sentence in a frozen SSL encoder's feature space
+  (`microsoft/wavlm-large`, layer 6, precision variant; see `docs/encoder-selection.md`).
+
+This repository is the single source of truth: running the benchmark writes both metrics
+into `benchmarks/{iso}.yaml`, and the [leaderboard Space](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark)
+reads those files. (It merges the former *nsanku-tts-benchmark* CER benchmark and
+*nsanku-tts-benchmark-2*; the original CER-only results are archived in
+`data/legacy_benchmark1/`.)
 
 ## How it works
 
-1. **Text source**: 200 sentences per language from [ghanaopenai/ghana-sentences](https://huggingface.co/datasets/ghanaopenai/ghana-sentences) (default; bump via `NSANKU_TTS_NUM_SAMPLES`)
+1. **Samples**: 200 rows per language from
+   [ghana-speech-eval](https://huggingface.co/datasets/ghananlpcommunity/ghana-speech-eval)
+   (recorded speech + transcript). Each row is a sentence *and* its reference recording.
 2. **Synthesis** (stage 1): each model synthesises every sentence; the clips are kept.
-   Models whose recommended inference setting includes a reference clip are given one:
-   real recorded speech in the same language from
-   [ghana-speech-eval](https://huggingface.co/datasets/ghananlpcommunity/ghana-speech-eval),
-   a different corpus than the benchmark sentences, so nothing leaks between prompt and
-   test material. Those rows are marked on the leaderboard, since the clip is part of how
-   the number was produced.
-3. **ASR scoring** (stage 2): each clip is transcribed by the lowest-CER ASR model for
-   that language, taken from the [nsanku ASR benchmark](https://github.com/GhanaNLP/nsanku-asr-benchmark)
-   (see `data/asr_judges.json`), and compared to the sentence it was asked to read
-4. **Ranking**: mean character error rate — **lower is better**
+   Models whose recommended setting includes a reference clip are prompted with a
+   *different* row of the same language (`PROMPT_ROW_OFFSET`), never the recording they
+   are scored against. Those rows are marked `-ref` on the leaderboard.
+3. **CER** (stage 2a): each clip is transcribed by the lowest-CER ASR model for that
+   language (`data/asr_judges.json`, from the
+   [nsanku ASR benchmark](https://github.com/GhanaNLP/nsanku-asr-benchmark)). What the
+   judge heard is kept in `benchmarks/{iso}.cer.json`.
+4. **SpeechBERTScore** (stage 2b): the clip is scored against the row's real recording.
+5. **Assemble** (stage 3): both metrics are joined into `benchmarks/{iso}.yaml`. A model
+   with only one metric is listed with `partial: true`.
 
-Scores are reported **per text domain** and averaged with equal weight, so a model
-that handles one register well is not credited for another. The first domain is
-`education` (textbook prose); more will be added. Domains are registered in
-`data/eval_configs.json`.
+CER uses the same normalisation as the ASR benchmark, and each judge's own CER on real
+speech is recorded alongside the results: a TTS model cannot meaningfully score below its
+judge's error rate.
+
+Samples are keyed by row index, so runs are **incremental**: raising the sample count
+only scores new rows. Stages are split because the TTS models, the ASR judges and the
+encoder cannot share an environment (see `scripts/h200_run.sh`).
 
 Every (model, language) evaluation has its own **recipe** under `recipes/`, holding
 the settings used to synthesise that language with that model — guidance scale, step
@@ -33,41 +48,22 @@ counts, the reference clip's transcript, the API language code. Editing one lang
 cannot disturb another, and the leaderboard links each row to its recipe. Regenerate
 missing ones with `python3 generate_recipes.py`.
 
-Per-sample references and what the judge heard are written to
-`transcriptions/{iso}_{category}_{model}.csv`, so every score can be checked line by
-line rather than taken on trust.
+## Languages (12, from ghana-speech-eval)
 
-CER is computed with the same normalisation as the ASR benchmark, so a TTS score and
-an ASR score for a language are directly comparable. Each judge's own CER on real
-speech is recorded alongside the results: a TTS model cannot meaningfully score below
-its judge's error rate.
-
-Synthesis and scoring are split because the judges cannot share an environment with
-the TTS models (omniASR pins torch 2.8 via fairseq2; voxcpm/f5-tts need torch 2.5),
-and because re-scoring should never mean re-synthesising.
-
-Samples are keyed by their row index in the ghana-sentences subset, so runs are
-**incremental**: raising the sample count only scores the *new* sentences and
-reuses previously scored ones.
-
-## Languages (12, from ghana-sentences)
-
-| Code | Language | Subset |
+| Code | Language | ghana-speech-eval config |
 |------|----------|--------|
-| ada | Dangme | ada |
-| dag | Dagbani | dag |
-| dga | Dagaare | dga |
-| ewe | Ewe | ewe |
-| fat | Fante | fat |
-| gaa | Ga | gaa |
-| gjn | Gonja | gjn |
-| gur | Gurene | gur |
-| nzi | Nzema | nzi |
-| twi_akuapem | Akuapem Twi | twi-aku |
-| twi_asante | Asante Twi | twi-asa |
-| xsm | Kasem | xsm |
-
-All 43 nsanku-asr-benchmark language codes are pre-registered for easy expansion.
+| ada | Dangme | bible_Dangme_ada |
+| dag | Dagbani | bible_Dagbani_dag |
+| dga | Dagaare | bible_Dagaare_dga |
+| ewe | Ewe | bible_Ewe_ewe |
+| fat | Fante | bible_Fante_fat |
+| gaa | Ga | jw_ga_gaa |
+| gjn | Gonja | bible_Gonja_gjn |
+| gur | Gurene | bible_Ninkare_gur |
+| nzi | Nzema | bible_Nzema_nzi |
+| twi_akuapem | Akuapem Twi | bible_Akuapem_Twi |
+| twi_asante | Asante Twi | bible_Asante_Twi |
+| xsm | Kasem | bible_Kasem_xsm |
 
 ## TTS models (orthographic input only)
 
@@ -97,48 +93,39 @@ cp .env.example .env   # set HF_TOKEN (gated models) and KHAYA_API_KEY
 
 ## Usage
 
-```bash
-# Full benchmark (all languages, all models)
-python pipeline.py
-
-# Specific languages
-python pipeline.py --langs twi-asa ewe dag
-
-# Specific model
-python run_benchmark.py --langs twi-asa --model "KhayaAI/khaya-tts-v2"
-
-# Bump samples (only new ones are scored — incremental)
-NSANKU_TTS_NUM_SAMPLES=500 python pipeline.py
-
-# Dry run (list work without GPU)
-python pipeline.py --dry-run
-```
-
-## Running on Modal
-
-The benchmark runs on Modal GPUs (workspace `ghana-nlp3`). Results persist on a
-shared Volume so re-runs are incremental:
+Each stage runs in its own container image (`scripts/h200_run.sh`):
 
 ```bash
-modal profile use ghana-nlp3                  # or MODAL_ENVIRONMENT=ghana-nlp3
-modal secret create nsanku-khaya HF_TOKEN=... KHAYA_API_KEY=...   # once
-modal run modal_app.py                        # all languages
-modal run modal_app.py --langs dag ewe        # specific languages
-modal run modal_app.py --samples 500          # incremental sample bump
-modal volume get nsanku-tts-results / --local-dir benchmarks/   # pull YAMLs
+# One language, every stage (synth -> omni synth -> CER -> SBS -> assemble)
+python3 scripts/run_benchmark.py --iso twi_asante
+python3 scripts/run_benchmark.py --all-languages
+
+# Individual stages
+scripts/h200_run.sh synth python -m benchmark.evaluate synthesize --iso ewe --model voxcpm
+scripts/h200_run.sh asr   python -m benchmark.evaluate score-cer  --iso ewe
+scripts/h200_run.sh score python -m benchmark.evaluate score-sbs  --iso ewe
+scripts/h200_run.sh score python -m benchmark.evaluate assemble   --iso ewe
+
+# Cross-language leaderboard in the terminal
+PYTHONPATH=. python3 scripts/leaderboard.py
+
+# Tests (no GPU, no network)
+PYTHONPATH=. python3 scripts/test_pipeline.py && PYTHONPATH=. python3 scripts/test_metric.py
 ```
+
+`python -m benchmark.evaluate score` runs score-cer, score-sbs and assemble in one
+process for environments that have both stacks installed.
 
 ## Leaderboard
 
-- **Benchmark 1 (CER Intelligibility):** The HF Space at [ghananlpcommunity/nsanku-tts-benchmark](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark) reads `benchmarks/*.yaml` from this repo and renders a per-language intelligibility leaderboard.
-- **Benchmark 2 (Composite & SpeechBERTScore):** The HF Space at [ghananlpcommunity/nsanku-tts-benchmark-2](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark-2) combines intelligibility (Character Accuracy = 1 - CER) with SpeechBERTScore acoustic naturalness against real human speech references. Repository: [GhanaNLP/nsanku-tts-benchmark-2](https://github.com/GhanaNLP/nsanku-tts-benchmark-2).
+The HF Space [ghananlpcommunity/nsanku-tts-benchmark](https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark)
+(source in `space/`) reads `benchmarks/*.yaml` from this repo. Ranking is by composite score.
 
 ## Adding a new language
 
-1. Add sentences to [ghanaopenai/ghana-sentences](https://huggingface.co/datasets/ghanaopenai/ghana-sentences)
-2. Add a subset mapping in `benchmark/config.py` (`SUBSET_TO_ISO`)
-3. The language is already pre-registered in `languages/ghana_languages.yaml`
-4. Run `python pipeline.py --langs <subset>`
+1. Add the language's config to `SPEECH_EVAL_CONFIGS`, `ISO_TO_NAME` and `TTS_LANG_MAP` in `benchmark/config.py`
+2. Add an ASR judge in `data/asr_judges.json`
+3. Run `python3 scripts/run_benchmark.py --iso <code>`
 
 ## Adding a new TTS model
 
@@ -162,14 +149,13 @@ If the model needs a custom wrapper, add a class in `benchmark/models.py`.
 
 ```
 nsanku-tts-benchmark/
-├── benchmark/          Core library (config, dataset, models, asr, metrics, recipes, evaluate)
-├── recipes/            One synthesis recipe per (model, language)
-├── transcriptions/     Per-sample judge output behind every score
-├── benchmarks/         Per-language YAML results
-├── languages/          Language metadata (ghana_languages.yaml)
-├── data/               Model registry (tts_models.json)
-├── space/              HF Space leaderboard (static HTML)
-├── scripts/            Utilities (search_tts_models.py, requirements.txt)
-├── pipeline.py         Full benchmark CLI
-└── run_benchmark.py    Targeted benchmark CLI
+├── benchmark/      Core library (config, dataset, models, asr, metrics, speechbertscore, recipes, evaluate)
+├── recipes/        One synthesis recipe per (model, language)
+├── benchmarks/     Per-language results: {iso}.yaml (published), {iso}.scores.json / {iso}.cer.json (caches)
+├── data/           Model registry, ASR judges; legacy_benchmark1/ = archived CER-only results
+├── docs/           Methodology and encoder selection
+├── space/          HF Space leaderboard (static HTML)
+├── scripts/        Runner, leaderboard, tests, model search utilities
+├── docker/         Images for the score / asr / tts stages
+└── legacy/         Pre-merge runners (Modal, HF Jobs); target the old API
 ```
