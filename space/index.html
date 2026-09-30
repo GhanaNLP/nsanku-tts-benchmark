@@ -199,13 +199,19 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
     <div class="stats-grid" id="stats-grid"></div>
 
     <div class="section-note">
-      <strong>Score:</strong> <strong>Composite = (Accuracy + SpeechBERTScore) / 2</strong>, higher is better.
-      Accuracy is 1 &minus; CER: an ASR judge (the best model for each language in the
-      <a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-asr-benchmark" target="_blank">nsanku ASR benchmark</a>)
-      transcribes each clip and the transcript is compared with the sentence that was synthesised.
-      SpeechBERTScore compares the clip with a real recording of the same sentence
-      (<code>microsoft/wavlm-large</code>, layer 6). Every sample comes from <code>ghana-speech-eval</code>;
-      a language with several text sources (domains) is sampled evenly across them.
+      <strong>How the score is calculated.</strong> Each synthesised clip is graded two ways and the two are averaged:
+      <ul style="margin:6px 0 6px 18px;">
+        <li><strong>Accuracy = 1 &minus; CER</strong> (intelligibility). An ASR judge &mdash; the best model for that language in the
+          <a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-asr-benchmark" target="_blank">nsanku ASR benchmark</a> &mdash;
+          transcribes the clip, and the transcript is compared with the sentence that was synthesised.
+          <strong>CER</strong> (shown as a percentage, lower is better) is the share of characters wrong; Accuracy is its complement.</li>
+        <li><strong>SBS</strong> (SpeechBERTScore, acoustic similarity). The clip is compared with a real human recording of the same sentence
+          (<code>microsoft/wavlm-large</code>, layer 6). Higher is better.</li>
+        <li><strong>Composite = (Accuracy + SBS) / 2</strong>, higher is better. Example: CER 6.49% and SBS 0.7126 give
+          Accuracy 0.9351 and Composite (0.9351 + 0.7126) / 2 = 0.8238.</li>
+      </ul>
+      Every sample comes from <code>ghana-speech-eval</code>; a language with several text sources (domains) is sampled evenly across them.
+      The domain columns show the Composite computed on that source alone.
     </div>
 
     <div class="tabs">
@@ -536,12 +542,15 @@ function renderGlobal() {
     <th data-sort="cls">Track</th><th data-sort="mode">Mode</th><th data-sort="params_bn">Params</th><th data-sort="license">License</th>
     <th data-sort="ndom">Domains</th>
     ${DOMAINS.map((d, i) => `<th data-sort="dom_${d}" ${i === 0 ? 'class="sep"' : ''}>${DOMAIN_LABELS[d]}</th>`).join('')}
-    <th data-sort="composite" class="sep">Composite</th><th data-sort="cer">CER (%)</th><th data-sort="sbs">SBS</th></tr>`;
+    <th data-sort="composite" class="sep" title="(Accuracy + SBS) / 2 - higher is better">Composite</th>
+    <th data-sort="accuracy" title="Accuracy = 1 - CER - higher is better; this is what enters the composite">Accuracy</th>
+    <th data-sort="cer" title="Character error rate of the ASR judge's transcript, in % - lower is better">CER (%) &darr;</th>
+    <th data-sort="sbs" title="SpeechBERTScore against a real recording of the sentence - higher is better">SBS</th></tr>`;
   wireSort('global-thead', 'global-table', renderGlobal);
 
   const body = $('global-body');
   if (!rows.length) {
-    body.innerHTML = `<tr class="empty-row"><td colspan="${11 + DOMAINS.length + 3}">No languages match these filters yet.</td></tr>`;
+    body.innerHTML = `<tr class="empty-row"><td colspan="${11 + DOMAINS.length + 4}">No languages match these filters yet.</td></tr>`;
     return;
   }
   body.innerHTML = rows.map(r => `<tr>
@@ -556,7 +565,7 @@ function renderGlobal() {
     <td class="dom">${r.ndom}</td>
     ${DOMAINS.map((d, i) => `<td class="score-num ${i === 0 ? 'sep' : ''}">${r.bySource[d] != null ? r.bySource[d].toFixed(3) : '<span class="dom">—</span>'}</td>`).join('')}
     <td class="score-num sep" style="font-weight:700;color:${compColor(r.composite)}">${fmt(r.composite)}</td>
-    <td class="score-num">${pct(r.cer)}</td><td class="score-num">${fmt(r.sbs)}</td>
+    <td class="score-num">${fmt(r.accuracy)}</td><td class="score-num">${pct(r.cer)}</td><td class="score-num">${fmt(r.sbs)}</td>
   </tr>`).join('');
 }
 
@@ -596,8 +605,10 @@ function renderPerLang() {
     <th data-sort="rank">#</th><th data-sort="model">Model</th><th data-sort="type">Type</th><th data-sort="cls">Track</th>
     <th data-sort="mode">Mode</th><th data-sort="params_bn">Params</th><th data-sort="license">License</th>
     ${doms.map((d, i) => `<th data-sort="dom_${d}" ${i === 0 ? 'class="sep"' : ''}>${DOMAIN_LABELS[d] || d}</th>`).join('')}
-    <th data-sort="composite" class="sep">Composite</th><th data-sort="accuracy">Accuracy</th>
-    <th data-sort="cer">CER (%)</th><th data-sort="sbs">SBS</th><th data-sort="n">Clips</th></tr>`;
+    <th data-sort="composite" class="sep" title="(Accuracy + SBS) / 2 - higher is better">Composite</th>
+    <th data-sort="accuracy" title="Accuracy = 1 - CER - higher is better; this is what enters the composite">Accuracy</th>
+    <th data-sort="cer" title="Character error rate of the ASR judge's transcript, in % - lower is better">CER (%) &darr;</th>
+    <th data-sort="sbs" title="SpeechBERTScore against a real recording of the sentence - higher is better">SBS</th><th data-sort="n">Clips</th></tr>`;
   wireSort('per-thead', 'per-table', renderPerLang);
 
   body.innerHTML = rows.length ? rows.map(r => `<tr>
