@@ -203,9 +203,18 @@ tbody tr:hover td.lang-cell { background: var(--accent-soft); }
           <option value="noref">Zero-Reference (Text only)</option>
           <option value="ref">Voice Cloning (With ref)</option>
         </select>
+        <label>Coverage:</label>
+        <select id="global-cov-select">
+          <option value="5" selected>5+ languages</option>
+          <option value="1">Any (incl. single-language models)</option>
+          <option value="15">15+ languages</option>
+          <option value="30">30+ languages</option>
+        </select>
       </div>
       <p style="color:var(--text-muted); margin-bottom:10px; font-size:0.86rem;">
-        Models evaluated across all currently completed languages, ranked by mean Composite score (higher is better).
+        Ranked by mean Composite score over the languages each model covers (higher is better). Models cover different
+        numbers of languages, so check the Languages column before comparing two means; the Per-Language tab compares
+        models on identical sentences.
       </p>
       <div class="table-wrap">
         <table id="global-table">
@@ -301,10 +310,9 @@ tbody tr:hover td.lang-cell { background: var(--accent-soft); }
 
 <script>
 const GITHUB_REPO = 'GhanaNLP/nsanku-tts-benchmark';
-const GITHUB_RAW = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/benchmarks/`;
+const SUMMARY_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/benchmarks/summary.json`;
 
 const ALL_LANGUAGES = [
-  { iso: "twi_asante", name: "Asante Twi" },
   { iso: "ada", name: "Dangme" },
   { iso: "dag", name: "Dagbani" },
   { iso: "dga", name: "Dagaare" },
@@ -312,35 +320,66 @@ const ALL_LANGUAGES = [
   { iso: "fat", name: "Fante" },
   { iso: "gaa", name: "Ga" },
   { iso: "gjn", name: "Gonja" },
-  { iso: "gur", name: "Farefare" },
+  { iso: "gur", name: "Gurene" },
   { iso: "nzi", name: "Nzema" },
   { iso: "twi_akuapem", name: "Akuapem Twi" },
-  { iso: "xsm", name: "Kasem" }
+  { iso: "twi_asante", name: "Asante Twi" },
+  { iso: "xsm", name: "Kasem" },
+  { iso: "acd", name: "Gikyode" },
+  { iso: "aha", name: "Ahanta" },
+  { iso: "akp", name: "Siwu" },
+  { iso: "any", name: "Anyin" },
+  { iso: "avn", name: "Avatime" },
+  { iso: "bib", name: "Bissa" },
+  { iso: "bim", name: "Bimoba" },
+  { iso: "biv", name: "Southern Birifor" },
+  { iso: "bov", name: "Tuwuli" },
+  { iso: "bud", name: "Bassar (Ntcham)" },
+  { iso: "bwu", name: "Buli" },
+  { iso: "ffm", name: "Fulfulde (Maasina)" },
+  { iso: "hau", name: "Hausa" },
+  { iso: "kbp", name: "Kabiye" },
+  { iso: "kdh", name: "Tem" },
+  { iso: "kma", name: "Konni" },
+  { iso: "kpo", name: "Ikposo" },
+  { iso: "kus", name: "Kusaal" },
+  { iso: "lef", name: "Lelemi" },
+  { iso: "lip", name: "Sekpele" },
+  { iso: "maw", name: "Mampruli" },
+  { iso: "mzw", name: "Deg" },
+  { iso: "naw", name: "Nawuri" },
+  { iso: "ncu", name: "Chumburung" },
+  { iso: "nko", name: "Nkonya" },
+  { iso: "ntr", name: "Ntrubo" },
+  { iso: "sfw", name: "Sehwi" },
+  { iso: "sig", name: "Paasaal" },
+  { iso: "sil", name: "Tumulung Sisaala" },
+  { iso: "snw", name: "Selee" },
+  { iso: "tpm", name: "Tampulma" },
+  { iso: "vag", name: "Vagla" },
+  { iso: "xon", name: "Konkomba" }
 ];
 
 let BENCHMARK_DATA = {};
 let ALL_ROWS = [];
 
 async function init() {
-  try {
-    const r = await fetch('bundled_data.json');
-    if (r.ok) BENCHMARK_DATA = await r.json();
-  } catch (e) {
-    console.warn("bundled_data.json fallback:", e);
-  }
-
-  // Live fetch fresh YAMLs from GitHub
-  for (const lang of ALL_LANGUAGES) {
+  // Live summary from GitHub (updated as results are pushed); the copy bundled
+  // with the Space is the fallback if GitHub is unreachable.
+  for (const url of [SUMMARY_URL, 'bundled_data.json']) {
     try {
-      const res = await fetch(`${GITHUB_RAW}${lang.iso}.yaml`);
-      if (res.ok) {
-        const text = await res.text();
-        parseYaml(lang.iso, lang.name, text);
-      }
-    } catch (e) {}
+      const r = await fetch(url, { cache: 'no-cache' });
+      if (r.ok) { BENCHMARK_DATA = await r.json(); break; }
+    } catch (e) {
+      console.warn(url, e);
+    }
   }
 
   buildAllRows();
+  // Until a handful of languages are complete, a coverage floor would hide everything.
+  if (Object.keys(BENCHMARK_DATA).length < 5) {
+    document.getElementById("global-cov-select").value = "1";
+  }
   populateLangDropdown();
   setupTabs();
   setupFilters();
@@ -354,40 +393,10 @@ async function init() {
   renderAll();
 }
 
-function parseYaml(iso, defaultName, text) {
-  const lines = text.split('\n');
-  let current = null;
-  const benchmarks = [];
-  let langName = defaultName;
-
-  for (let line of lines) {
-    const trimmed = line.trim();
-    if (trimmed.startsWith('language:')) {
-      langName = trimmed.split(':')[1].trim();
-    }
-    if (trimmed.startsWith('- model:')) {
-      if (current) benchmarks.push(current);
-      current = { model: trimmed.split(':')[1].trim() };
-    } else if (current && trimmed.includes(':')) {
-      const parts = trimmed.split(':');
-      const key = parts[0].trim();
-      const val = parts.slice(1).join(':').trim();
-      if (['sbs', 'score', 'composite', 'accuracy', 'cer', 'num_scored'].includes(key)) {
-        current[key] = parseFloat(val);
-      } else if (key === 'uses_reference') {
-        current[key] = (val === 'true');
-      }
-    }
-  }
-  if (current) benchmarks.push(current);
-
-  if (benchmarks.length > 0) {
-    BENCHMARK_DATA[iso] = {
-      iso_639_3: iso,
-      language: langName,
-      benchmarks: benchmarks
-    };
-  }
+function trackOf(b) {
+  if (b.model_class === "api" || b.model_class === "llm") return b.model_class;
+  if (b.model_class === "non-llm") return detectTrack(b.model) === "llm" ? "llm" : "non-llm";
+  return detectTrack(b.model);
 }
 
 function detectTrack(modelName) {
@@ -411,18 +420,21 @@ function buildAllRows() {
   for (const [iso, doc] of Object.entries(BENCHMARK_DATA)) {
     const langObj = ALL_LANGUAGES.find(l => l.iso === iso) || { name: doc.language || iso };
     for (const b of doc.benchmarks) {
-      const comp = b.composite !== undefined ? b.composite : b.sbs;
+      // A model with only one metric scored has no composite; it is left out of
+      // rankings rather than compared on a different scale.
+      if (b.composite === undefined || b.composite === null) continue;
+      const comp = b.composite;
       ALL_ROWS.push({
         iso: iso,
         language: langObj.name,
         model: b.model,
-        track: detectTrack(b.model),
+        track: trackOf(b),
         uses_reference: !!b.uses_reference,
         composite: comp,
         accuracy: b.accuracy !== undefined ? b.accuracy : null,
         cer: b.cer !== undefined ? b.cer : null,
         sbs: b.sbs !== undefined ? b.sbs : null,
-        num_scored: b.num_scored || 200
+        num_scored: b.num_scored || 0
       });
     }
   }
@@ -450,6 +462,7 @@ function setupTabs() {
 function setupFilters() {
   document.getElementById("global-track-select").addEventListener("change", renderGlobal);
   document.getElementById("global-mode-select").addEventListener("change", renderGlobal);
+  document.getElementById("global-cov-select").addEventListener("change", renderGlobal);
   document.getElementById("per-lang-select").addEventListener("change", renderPerLang);
   document.getElementById("per-track-select").addEventListener("change", renderPerLang);
   document.getElementById("per-mode-select").addEventListener("change", renderPerLang);
@@ -518,7 +531,8 @@ function renderGlobal() {
     if (r.sbs !== null) models[r.model].sbss.push(r.sbs);
   }
 
-  const list = Object.values(models).map(m => {
+  const minLangs = parseInt(document.getElementById("global-cov-select").value, 10);
+  const list = Object.values(models).filter(m => m.comps.length >= minLangs).map(m => {
     const meanComp = m.comps.reduce((a, b) => a + b, 0) / m.comps.length;
     const meanAcc = m.accs.length ? m.accs.reduce((a, b) => a + b, 0) / m.accs.length : null;
     const meanSbs = m.sbss.length ? m.sbss.reduce((a, b) => a + b, 0) / m.sbss.length : null;
@@ -534,11 +548,7 @@ function renderGlobal() {
     };
   });
 
-  list.sort((a, b) => {
-    if (a.isFull && !b.isFull) return -1;
-    if (!a.isFull && b.isFull) return 1;
-    return b.meanComp - a.meanComp;
-  });
+  list.sort((a, b) => b.meanComp - a.meanComp);
 
   const tbody = document.getElementById("global-body");
   if (!list.length) {
@@ -554,7 +564,7 @@ function renderGlobal() {
         <td><strong>${m.model}</strong></td>
         <td>${trackBadge(m.track)}</td>
         <td>${modeBadge(m.uses_reference)}</td>
-        <td style="color:${m.isFull ? 'var(--text-strong)' : 'var(--text-muted)'}">${m.langs}/${completedIsos.length}</td>
+        <td style="color:var(--text-strong)">${m.langs}/${ALL_LANGUAGES.length}</td>
         <td class="score-num score-highlight">${m.meanComp.toFixed(4)}</td>
         <td class="score-num">${m.meanAcc !== null ? m.meanAcc.toFixed(4) : "—"}</td>
         <td class="score-num">${m.meanSbs !== null ? m.meanSbs.toFixed(4) : "—"}</td>
