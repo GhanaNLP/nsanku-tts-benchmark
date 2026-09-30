@@ -158,6 +158,29 @@ tbody tr:hover td.lang-cell { background: var(--accent-soft); }
   .filters select, .filters input { min-width: 100%; }
   th, td { padding: 8px 10px; font-size: 0.82rem; }
 }
+
+/* ====== Leaderboard extras ====== */
+.intro { color: var(--text-muted); margin-bottom: 8px; }
+td.lang-cell { background: var(--accent-hi); font-weight: 600; color: var(--text-strong); }
+tbody tr:hover td.lang-cell { background: var(--accent-soft); }
+.mtype { display: inline-block; padding: 1px 8px; border-radius: 4px; font-size: 0.75rem; background: var(--neutral-100); color: var(--text-muted); }
+.fam { color: var(--text-muted); font-weight: 400; white-space: nowrap; }
+.code { color: var(--text-muted); font-weight: 400; font-variant-numeric: tabular-nums; }
+.lic { color: var(--text-muted); font-weight: 400; white-space: nowrap; }
+.lic.na { opacity: .55; }
+.dom { color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.switch { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text); font-weight: 500; }
+.filters .switch input { cursor: pointer; width: auto; padding: 0; margin: 0; }
+.recipe-link {
+  display: inline-block; margin-left: 7px; font-size: 0.7rem; font-weight: 600;
+  color: var(--link); border: 1px solid var(--border-strong); border-radius: 4px;
+  padding: 0 5px; vertical-align: 1px; line-height: 1.5;
+}
+.recipe-link:hover { background: var(--accent-hi); text-decoration: none; }
+th[data-sort] { cursor: pointer; white-space: nowrap; }
+th[data-sort].asc::after { content: " \25B2"; font-size: 0.65rem; }
+th[data-sort].desc::after { content: " \25BC"; font-size: 0.65rem; }
+th.sep, td.sep { border-left: 2px solid var(--border); }
 </style>
 </head>
 <body>
@@ -176,9 +199,13 @@ tbody tr:hover td.lang-cell { background: var(--accent-soft); }
     <div class="stats-grid" id="stats-grid"></div>
 
     <div class="section-note">
-      <strong>Ranking Metric:</strong> Models are ranked by <strong>Composite Score = (Accuracy + SpeechBERTScore) / 2</strong>.
-      Accuracy (1 &minus; CER) comes from per-language ASR judge transcriptions of each clip, compared with the sentence that was synthesised (the same <code>ghana-speech-eval</code> sentences SpeechBERTScore uses).
-      SpeechBERTScore is computed with <code>microsoft/wavlm-large</code> (layer 6, precision variant) against real human speech recordings from <code>ghana-speech-eval</code>.
+      <strong>Score:</strong> <strong>Composite = (Accuracy + SpeechBERTScore) / 2</strong>, higher is better.
+      Accuracy is 1 &minus; CER: an ASR judge (the best model for each language in the
+      <a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-asr-benchmark" target="_blank">nsanku ASR benchmark</a>)
+      transcribes each clip and the transcript is compared with the sentence that was synthesised.
+      SpeechBERTScore compares the clip with a real recording of the same sentence
+      (<code>microsoft/wavlm-large</code>, layer 6). Every sample comes from <code>ghana-speech-eval</code>;
+      a language with several text sources (domains) is sampled evenly across them.
     </div>
 
     <div class="tabs">
@@ -187,93 +214,93 @@ tbody tr:hover td.lang-cell { background: var(--accent-soft); }
       <div class="tab" data-tab="all">All Results</div>
     </div>
 
-    <!-- ====== Tab: Global Leaderboard ====== -->
     <div class="tab-pane active" id="pane-global">
       <div class="filters">
+        <label class="switch" title="Languages that have only one text source (domain) in ghana-speech-eval">
+          <input type="checkbox" id="global-single"> Include single-domain languages
+        </label>
         <label>Track:</label>
-        <select id="global-track-select">
-          <option value="All" selected>All tracks</option>
-          <option value="non-llm">Open models</option>
+        <select id="global-track">
+          <option value="non-llm" selected>Open models</option>
           <option value="api">Hosted APIs</option>
           <option value="llm">LLM-based</option>
+          <option value="All">All</option>
+        </select>
+        <label>Size:</label>
+        <select id="global-size">
+          <option value="0" selected>Any size</option>
+          <option value="0.1">&le; 0.1B params</option>
+          <option value="0.3">&le; 0.3B (CPU-friendly)</option>
+          <option value="1">&le; 1B params</option>
         </select>
         <label>Mode:</label>
-        <select id="global-mode-select">
+        <select id="global-mode">
           <option value="All" selected>All modes</option>
-          <option value="noref">Zero-Reference (Text only)</option>
-          <option value="ref">Voice Cloning (With ref)</option>
-        </select>
-        <label>Coverage:</label>
-        <select id="global-cov-select">
-          <option value="5" selected>5+ languages</option>
-          <option value="1">Any (incl. single-language models)</option>
-          <option value="15">15+ languages</option>
-          <option value="30">30+ languages</option>
+          <option value="noref">Text only (no reference)</option>
+          <option value="ref">Voice cloning (with reference)</option>
         </select>
       </div>
-      <p style="color:var(--text-muted); margin-bottom:10px; font-size:0.86rem;">
-        Ranked by mean Composite score over the languages each model covers (higher is better). Models cover different
-        numbers of languages, so check the Languages column before comparing two means; the Per-Language tab compares
-        models on identical sentences.
-      </p>
+      <p class="intro">Best model per language, ranked by Composite score. The domain columns show the Composite on each text source.</p>
+      <p class="intro">Open models are the core of this benchmark: their weights can be downloaded and the scores re-run by anyone. Hosted APIs and LLM-based models are shown for comparison.</p>
+      <p id="global-note" class="section-note" style="display:none; margin-bottom:14px;"></p>
       <div class="table-wrap">
         <table id="global-table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Model</th>
-              <th>Track</th>
-              <th>Mode</th>
-              <th>Langs</th>
-              <th>Composite Score</th>
-              <th>Accuracy (1&minus;CER)</th>
-              <th>SpeechBERTScore</th>
-            </tr>
-          </thead>
+          <thead id="global-thead"></thead>
           <tbody id="global-body"></tbody>
         </table>
       </div>
     </div>
 
-    <!-- ====== Tab: Per-Language ====== -->
     <div class="tab-pane" id="pane-per-lang">
       <div class="filters">
         <label>Language:</label>
-        <select id="per-lang-select"></select>
+        <select id="per-lang"></select>
         <label>Track:</label>
-        <select id="per-track-select">
-          <option value="All" selected>All tracks</option>
+        <select id="per-track">
+          <option value="All" selected>All</option>
           <option value="non-llm">Open models</option>
           <option value="api">Hosted APIs</option>
           <option value="llm">LLM-based</option>
         </select>
+        <label>Size:</label>
+        <select id="per-size">
+          <option value="0" selected>Any size</option>
+          <option value="0.1">&le; 0.1B params</option>
+          <option value="0.3">&le; 0.3B (CPU-friendly)</option>
+          <option value="1">&le; 1B params</option>
+        </select>
         <label>Mode:</label>
-        <select id="per-mode-select">
+        <select id="per-mode">
           <option value="All" selected>All modes</option>
-          <option value="noref">Zero-Reference (Text only)</option>
-          <option value="ref">Voice Cloning (With ref)</option>
+          <option value="noref">Text only (no reference)</option>
+          <option value="ref">Voice cloning (with reference)</option>
+        </select>
+        <label>Type:</label>
+        <select id="per-type"><option value="All">All</option></select>
+        <label>Sort:</label>
+        <select id="per-sort">
+          <option value="composite" selected>Composite (best first)</option>
+          <option value="cer">CER (lowest first)</option>
+          <option value="sbs">SpeechBERTScore (best first)</option>
         </select>
       </div>
+      <p id="per-lang-meta" class="intro"></p>
+      <h3 style="margin-bottom:10px; font-size:0.95rem; color:var(--success)">&#10003; Scored</h3>
       <div class="table-wrap" style="margin-bottom:24px;">
-        <table id="per-lang-table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Model</th>
-              <th>Track</th>
-              <th>Mode</th>
-              <th>Composite Score</th>
-              <th>Accuracy (1&minus;CER)</th>
-              <th>SpeechBERTScore</th>
-              <th>Samples</th>
-            </tr>
-          </thead>
-          <tbody id="per-lang-body"></tbody>
+        <table id="per-table">
+          <thead id="per-thead"></thead>
+          <tbody id="per-body"></tbody>
+        </table>
+      </div>
+      <h3 style="margin-bottom:10px; font-size:0.95rem; color:var(--danger)">&#10007; No valid output</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Model</th><th>Reason</th></tr></thead>
+          <tbody id="per-missing"></tbody>
         </table>
       </div>
     </div>
 
-    <!-- ====== Tab: All Results ====== -->
     <div class="tab-pane" id="pane-all">
       <div class="filters">
         <input type="text" id="all-search" placeholder="Search model or language, e.g. khaya, Dagbani...">
@@ -283,14 +310,8 @@ tbody tr:hover td.lang-cell { background: var(--accent-soft); }
         <table id="all-table">
           <thead>
             <tr>
-              <th>Language</th>
-              <th>Model</th>
-              <th>Track</th>
-              <th>Mode</th>
-              <th>Composite Score</th>
-              <th>Accuracy</th>
-              <th>SBS</th>
-              <th>Samples</th>
+              <th>Language</th><th>Model</th><th>Track</th><th>Mode</th><th>Params</th>
+              <th>Composite</th><th>Accuracy</th><th>CER (%)</th><th>SBS</th><th>Clips</th>
             </tr>
           </thead>
           <tbody id="all-body"></tbody>
@@ -311,6 +332,7 @@ tbody tr:hover td.lang-cell { background: var(--accent-soft); }
 <script>
 const GITHUB_REPO = 'GhanaNLP/nsanku-tts-benchmark';
 const SUMMARY_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/benchmarks/summary.json`;
+const RECIPES_URL = `https://github.com/${GITHUB_REPO}/blob/main/recipes/`;
 
 const ALL_LANGUAGES = [
   { iso: "ada", name: "Dangme" },
@@ -360,8 +382,261 @@ const ALL_LANGUAGES = [
   { iso: "xon", name: "Konkomba" }
 ];
 
-let BENCHMARK_DATA = {};
-let ALL_ROWS = [];
+const DOMAIN_LABELS = { bible: 'Bible', jw: 'JW', finance: 'Finance', lds: 'LDS', unicef: 'UNICEF', waxal: 'WAXAL' };
+const DOMAINS = Object.keys(DOMAIN_LABELS);
+
+let DATA = {};     // iso -> language document (from summary.json)
+let ROWS = [];     // one per (language, model)
+const sortState = {};
+
+// ====== helpers ======
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt = (v, d = 4) => (v === null || v === undefined || isNaN(v)) ? '—' : Number(v).toFixed(d);
+const pct = v => (v === null || v === undefined || isNaN(v)) ? '—' : (v * 100).toFixed(2);
+const langName = iso => (ALL_LANGUAGES.find(l => l.iso === iso) || {}).name || iso;
+
+// "0.7B" / "37.8M" -> billions; NaN for "API" / "?" so size filters never match them.
+function paramsBn(str) {
+  const m = String(str || '').trim().toLowerCase().match(/^([0-9]*\.?[0-9]+)\s*(b|m)$/);
+  if (!m) return NaN;
+  return m[2] === 'b' ? parseFloat(m[1]) : parseFloat(m[1]) / 1000;
+}
+
+function trackBadge(c) {
+  if (c === 'api') return '<span class="badge badge-api">Hosted API</span>';
+  if (c === 'llm') return '<span class="badge badge-llm">LLM</span>';
+  return '<span class="badge badge-nonllm">Open</span>';
+}
+function modeBadge(mode) {
+  if (mode === 'ref') return '<span class="badge badge-ref">Ref</span>';
+  if (mode === 'design') return '<span class="badge badge-noref">Design</span>';
+  return '<span class="badge badge-noref">NoRef</span>';
+}
+function recipeLink(model, iso) {
+  const safe = model.replace(/\//g, '_').replace(/:/g, '_');
+  return `<a class="recipe-link" href="${RECIPES_URL}${safe}__${iso}.py" target="_blank" title="Recipe used to run this model on this language - edit it and open a PR">code</a>`;
+}
+function modelCell(r) {
+  return `<a href="${esc(r.url)}" target="_blank" title="${esc(r.model)}">${esc(r.model)}</a>${recipeLink(r.model, r.iso)}`;
+}
+function licenseCell(r) {
+  return r.license ? `<td><span class="lic">${esc(r.license)}</span></td>` : '<td><span class="lic na">—</span></td>';
+}
+function compColor(v) { return v >= 0.8 ? 'var(--success)' : v >= 0.65 ? 'var(--accent-hover)' : 'var(--warning)'; }
+const baseName = m => m.replace(/-(ref|noref|design)$/, '');
+
+// ====== data ======
+function buildRows() {
+  ROWS = [];
+  for (const [iso, doc] of Object.entries(DATA)) {
+    for (const b of doc.benchmarks) {
+      // A model with only one metric scored has no composite; it stays out of rankings.
+      if (b.composite === undefined || b.composite === null) continue;
+      const bySource = {};
+      for (const [src, v] of Object.entries(b.per_source || {})) {
+        if (v.sbs != null && v.cer != null) bySource[src] = (v.sbs + (1 - v.cer)) / 2;
+      }
+      ROWS.push({
+        iso, language: doc.language || langName(iso), family: doc.family || null,
+        domains: doc.domains || [], model: b.model, url: b.model_url || `https://huggingface.co/${b.model}`,
+        type: b.architecture || '—', cls: b.model_class || 'non-llm', mode: b.mode || (b.uses_reference ? 'ref' : 'noref'),
+        params: b.params || '—', params_bn: paramsBn(b.params), license: b.license || null,
+        composite: b.composite, accuracy: b.accuracy, cer: b.cer, sbs: b.sbs,
+        n: b.num_scored || 0, bySource, ndom: (doc.domains || []).length,
+      });
+    }
+  }
+}
+
+function passFilters(r, pfx) {
+  const track = $(pfx + '-track').value, size = parseFloat($(pfx + '-size').value), mode = $(pfx + '-mode').value;
+  if (track !== 'All' && r.cls !== track) return false;
+  if (size > 0 && !(r.params_bn <= size)) return false;
+  if (mode === 'ref' && r.mode !== 'ref') return false;
+  if (mode === 'noref' && r.mode === 'ref') return false;
+  return true;
+}
+
+// ====== stats ======
+function renderStats() {
+  const langs = Object.keys(DATA).length;
+  const base = new Set(ROWS.map(r => baseName(r.model)));
+  const open = new Set(ROWS.filter(r => r.cls === 'non-llm').map(r => baseName(r.model))).size;
+  const api = new Set(ROWS.filter(r => r.cls === 'api').map(r => r.model)).size;
+  const best = ROWS.slice().sort((a, b) => b.composite - a.composite)[0];
+  const cards = [
+    { label: 'Languages scored', value: `${langs}/${ALL_LANGUAGES.length}` },
+    { label: 'Models evaluated', value: base.size },
+    { label: 'Open · Hosted API', value: `${open} · ${api}` },
+    { label: 'Best composite', value: best ? best.composite.toFixed(3) : '—',
+      sub: best ? `${best.model.split('/').pop()} · ${best.language}` : '' },
+  ];
+  $('stats-grid').innerHTML = cards.map(c => `
+    <div class="stat-card"><div class="label">${c.label}</div><div class="value">${c.value}</div>
+    ${c.sub ? `<div style="font-size:0.75rem;color:var(--text-muted);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(c.sub)}</div>` : ''}</div>`).join('');
+}
+
+// ====== sorting ======
+function sortRows(rows, tableId) {
+  const st = sortState[tableId];
+  if (!st) return rows;
+  const val = r => st.key.startsWith('dom_') ? r.bySource[st.key.slice(4)] : r[st.key];
+  return rows.slice().sort((a, b) => {
+    let av = val(a), bv = val(b);
+    const miss = st.asc ? Infinity : -Infinity;
+    if (av == null || (typeof av === 'number' && isNaN(av))) av = miss;
+    if (bv == null || (typeof bv === 'number' && isNaN(bv))) bv = miss;
+    if (typeof av === 'string' || typeof bv === 'string') {
+      return st.asc ? String(av).localeCompare(String(bv)) : String(bv).localeCompare(String(av));
+    }
+    return st.asc ? av - bv : bv - av;
+  });
+}
+function wireSort(theadId, tableId, render) {
+  $(theadId).querySelectorAll('th[data-sort]').forEach(th => {
+    const st = sortState[tableId];
+    if (st && st.key === th.dataset.sort) th.classList.add(st.asc ? 'asc' : 'desc');
+    th.addEventListener('click', () => {
+      const cur = sortState[tableId];
+      sortState[tableId] = { key: th.dataset.sort, asc: cur && cur.key === th.dataset.sort ? !cur.asc : false };
+      render();
+    });
+  });
+}
+
+// ====== global: best model per language ======
+function renderGlobal() {
+  const single = $('global-single').checked;
+  let pool = ROWS.filter(r => passFilters(r, 'global'));
+  const hidden = new Set(pool.filter(r => r.ndom < 2).map(r => r.iso));
+  if (!single) pool = pool.filter(r => r.ndom >= 2);
+
+  const best = {};
+  for (const r of pool) if (!best[r.iso] || r.composite > best[r.iso].composite) best[r.iso] = r;
+  let rows = Object.values(best).sort((a, b) => b.composite - a.composite);
+  rows.forEach((r, i) => { r.rank = i + 1; });
+  rows = sortRows(rows, 'global-table');
+
+  const note = $('global-note');
+  if (hidden.size && !single) {
+    note.style.display = '';
+    note.innerHTML = `This leaderboard covers languages with <strong>more than one text source (domain)</strong>. ` +
+      `${hidden.size} language${hidden.size === 1 ? '' : 's'} with only one are hidden — tick the box above to include them.`;
+  } else if (hidden.size && single) {
+    note.style.display = '';
+    note.innerHTML = `Including <strong>${hidden.size}</strong> language${hidden.size === 1 ? '' : 's'} with only one text source.`;
+  } else {
+    note.style.display = 'none';
+  }
+
+  $('global-thead').innerHTML = `<tr>
+    <th data-sort="rank">#</th><th data-sort="language">Language</th><th data-sort="iso">Code</th>
+    <th data-sort="family">Family</th><th data-sort="model">Model</th><th data-sort="type">Type</th>
+    <th data-sort="cls">Track</th><th data-sort="mode">Mode</th><th data-sort="params_bn">Params</th><th data-sort="license">License</th>
+    <th data-sort="ndom">Domains</th>
+    ${DOMAINS.map((d, i) => `<th data-sort="dom_${d}" ${i === 0 ? 'class="sep"' : ''}>${DOMAIN_LABELS[d]}</th>`).join('')}
+    <th data-sort="composite" class="sep">Composite</th><th data-sort="cer">CER (%)</th><th data-sort="sbs">SBS</th></tr>`;
+  wireSort('global-thead', 'global-table', renderGlobal);
+
+  const body = $('global-body');
+  if (!rows.length) {
+    body.innerHTML = `<tr class="empty-row"><td colspan="${11 + DOMAINS.length + 3}">No languages match these filters yet.</td></tr>`;
+    return;
+  }
+  body.innerHTML = rows.map(r => `<tr>
+    <td class="rank ${r.rank === 1 ? 'r1' : r.rank === 2 ? 'r2' : r.rank === 3 ? 'r3' : ''}">${r.rank}</td>
+    <td class="lang-cell">${esc(r.language)}</td>
+    <td><span class="code">${esc(r.iso)}</span></td>
+    <td><span class="fam">${esc(r.family || '—')}</span></td>
+    <td>${modelCell(r)}</td>
+    <td><span class="mtype">${esc(r.type)}</span></td>
+    <td>${trackBadge(r.cls)}</td><td>${modeBadge(r.mode)}</td>
+    <td>${esc(r.params)}</td>${licenseCell(r)}
+    <td class="dom">${r.ndom}</td>
+    ${DOMAINS.map((d, i) => `<td class="score-num ${i === 0 ? 'sep' : ''}">${r.bySource[d] != null ? r.bySource[d].toFixed(3) : '<span class="dom">—</span>'}</td>`).join('')}
+    <td class="score-num sep" style="font-weight:700;color:${compColor(r.composite)}">${fmt(r.composite)}</td>
+    <td class="score-num">${pct(r.cer)}</td><td class="score-num">${fmt(r.sbs)}</td>
+  </tr>`).join('');
+}
+
+// ====== per-language ======
+function populatePerLang() {
+  $('per-lang').innerHTML = ALL_LANGUAGES.map(l =>
+    `<option value="${l.iso}">${esc(l.name)} (${l.iso})${DATA[l.iso] ? '' : ' — in progress'}</option>`).join('');
+  const first = ALL_LANGUAGES.find(l => DATA[l.iso]);
+  if (first) $('per-lang').value = first.iso;
+  const types = [...new Set(ROWS.map(r => r.type))].sort();
+  $('per-type').innerHTML = '<option value="All">All</option>' + types.map(t => `<option value="${esc(t)}">${esc(t)}</option>`).join('');
+}
+
+function renderPerLang() {
+  const iso = $('per-lang').value, type = $('per-type').value, sortKey = $('per-sort').value;
+  const doc = DATA[iso];
+  const body = $('per-body'), missing = $('per-missing');
+  if (!doc) {
+    $('per-lang-meta').textContent = '';
+    $('per-thead').innerHTML = '';
+    body.innerHTML = `<tr class="empty-row"><td colspan="8">${esc(langName(iso))} is still being evaluated. Scores appear here when its run finishes.</td></tr>`;
+    missing.innerHTML = '';
+    return;
+  }
+  const doms = doc.domains || [];
+  $('per-lang-meta').innerHTML = `<strong>${esc(doc.language)}</strong> · ${esc(doc.family || '—')} · ` +
+    `${doms.length} domain${doms.length === 1 ? '' : 's'} (${doms.map(d => DOMAIN_LABELS[d] || d).join(', ')}) · ` +
+    `${doc.num_samples} sentences · ASR judge <code>${esc(doc.judge && doc.judge.model)}</code> ` +
+    `(its own CER on real speech: ${fmt(doc.judge && doc.judge.cer_on_real_speech, 3)}, a floor for any TTS CER here) · updated ${esc(doc.updated)}`;
+
+  let rows = ROWS.filter(r => r.iso === iso && passFilters(r, 'per') && (type === 'All' || r.type === type));
+  rows.sort((a, b) => sortKey === 'cer' ? (a.cer ?? 9) - (b.cer ?? 9) : (b[sortKey] ?? -1) - (a[sortKey] ?? -1));
+  rows.forEach((r, i) => { r.rank = i + 1; });
+  rows = sortRows(rows, 'per-table');
+
+  $('per-thead').innerHTML = `<tr>
+    <th data-sort="rank">#</th><th data-sort="model">Model</th><th data-sort="type">Type</th><th data-sort="cls">Track</th>
+    <th data-sort="mode">Mode</th><th data-sort="params_bn">Params</th><th data-sort="license">License</th>
+    ${doms.map((d, i) => `<th data-sort="dom_${d}" ${i === 0 ? 'class="sep"' : ''}>${DOMAIN_LABELS[d] || d}</th>`).join('')}
+    <th data-sort="composite" class="sep">Composite</th><th data-sort="accuracy">Accuracy</th>
+    <th data-sort="cer">CER (%)</th><th data-sort="sbs">SBS</th><th data-sort="n">Clips</th></tr>`;
+  wireSort('per-thead', 'per-table', renderPerLang);
+
+  body.innerHTML = rows.length ? rows.map(r => `<tr>
+    <td class="rank ${r.rank === 1 ? 'r1' : r.rank === 2 ? 'r2' : r.rank === 3 ? 'r3' : ''}">${r.rank}</td>
+    <td>${modelCell(r)}</td><td><span class="mtype">${esc(r.type)}</span></td>
+    <td>${trackBadge(r.cls)}</td><td>${modeBadge(r.mode)}</td><td>${esc(r.params)}</td>${licenseCell(r)}
+    ${doms.map((d, i) => `<td class="score-num ${i === 0 ? 'sep' : ''}">${r.bySource[d] != null ? r.bySource[d].toFixed(3) : '—'}</td>`).join('')}
+    <td class="score-num sep" style="font-weight:700;color:${compColor(r.composite)}">${fmt(r.composite)}</td>
+    <td class="score-num">${fmt(r.accuracy)}</td><td class="score-num">${pct(r.cer)}</td>
+    <td class="score-num">${fmt(r.sbs)}</td><td class="score-num" style="color:var(--text-muted)">${r.n}</td>
+  </tr>`).join('') : `<tr class="empty-row"><td colspan="${12 + doms.length}">No models match the selected filters.</td></tr>`;
+
+  missing.innerHTML = (doc.missing || []).length
+    ? doc.missing.map(m => `<tr><td>${esc(m)}${recipeLink(m, iso)}</td><td style="color:var(--text-muted)">Registered for this language but produced no valid output (failed to load or synthesise).</td></tr>`).join('')
+    : '<tr class="empty-row"><td colspan="2">Every registered model produced output.</td></tr>';
+}
+
+// ====== all results ======
+function renderAll() {
+  const q = $('all-search').value.trim().toLowerCase();
+  const rows = ROWS.filter(r => !q || r.model.toLowerCase().includes(q) || r.language.toLowerCase().includes(q) || r.iso.includes(q))
+    .sort((a, b) => a.language.localeCompare(b.language) || b.composite - a.composite);
+  $('all-count').textContent = `${rows.length} rows`;
+  $('all-body').innerHTML = rows.map(r => `<tr>
+    <td class="lang-cell">${esc(r.language)}</td><td>${modelCell(r)}</td><td>${trackBadge(r.cls)}</td><td>${modeBadge(r.mode)}</td>
+    <td>${esc(r.params)}</td><td class="score-num score-highlight">${fmt(r.composite)}</td>
+    <td class="score-num">${fmt(r.accuracy)}</td><td class="score-num">${pct(r.cer)}</td>
+    <td class="score-num">${fmt(r.sbs)}</td><td class="score-num" style="color:var(--text-muted)">${r.n}</td></tr>`).join('');
+}
+
+// ====== wiring ======
+function setupTabs() {
+  document.querySelectorAll('.tab').forEach(tab => tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    $('pane-' + tab.dataset.tab).classList.add('active');
+  }));
+}
 
 async function init() {
   // Live summary from GitHub (updated as results are pushed); the copy bundled
@@ -369,280 +644,23 @@ async function init() {
   for (const url of [SUMMARY_URL, 'bundled_data.json']) {
     try {
       const r = await fetch(url, { cache: 'no-cache' });
-      if (r.ok) { BENCHMARK_DATA = await r.json(); break; }
-    } catch (e) {
-      console.warn(url, e);
-    }
+      if (r.ok) { DATA = await r.json(); break; }
+    } catch (e) { console.warn(url, e); }
   }
-
-  buildAllRows();
-  // Until a handful of languages are complete, a coverage floor would hide everything.
-  if (Object.keys(BENCHMARK_DATA).length < 5) {
-    document.getElementById("global-cov-select").value = "1";
-  }
-  populateLangDropdown();
+  buildRows();
+  // Until some multi-domain language is scored, hiding single-domain ones would show nothing.
+  if (!ROWS.some(r => r.ndom >= 2)) $('global-single').checked = true;
+  populatePerLang();
   setupTabs();
-  setupFilters();
+  ['global-single', 'global-track', 'global-size', 'global-mode'].forEach(id => $(id).addEventListener('change', renderGlobal));
+  ['per-lang', 'per-track', 'per-size', 'per-mode', 'per-type', 'per-sort'].forEach(id => $(id).addEventListener('change', renderPerLang));
+  $('all-search').addEventListener('input', renderAll);
 
-  document.getElementById("loading").style.display = "none";
-  document.getElementById("main").style.display = "block";
-
-  renderStats();
-  renderGlobal();
-  renderPerLang();
-  renderAll();
+  $('loading').style.display = 'none';
+  $('main').style.display = 'block';
+  renderStats(); renderGlobal(); renderPerLang(); renderAll();
 }
-
-function trackOf(b) {
-  if (b.model_class === "api" || b.model_class === "llm") return b.model_class;
-  if (b.model_class === "non-llm") return detectTrack(b.model) === "llm" ? "llm" : "non-llm";
-  return detectTrack(b.model);
-}
-
-function detectTrack(modelName) {
-  if (modelName.includes("Khaya") || modelName.includes("gemini")) return "api";
-  if (modelName.includes("OmniVoice") || modelName.includes("Spark") || modelName.includes("voxcpm")) return "llm";
-  return "non-llm";
-}
-
-function trackBadge(track) {
-  if (track === "api") return '<span class="badge badge-api">API</span>';
-  if (track === "llm") return '<span class="badge badge-llm">LLM</span>';
-  return '<span class="badge badge-nonllm">open</span>';
-}
-
-function modeBadge(usesRef) {
-  return usesRef ? '<span class="badge badge-ref">Ref</span>' : '<span class="badge badge-noref">NoRef</span>';
-}
-
-function buildAllRows() {
-  ALL_ROWS = [];
-  for (const [iso, doc] of Object.entries(BENCHMARK_DATA)) {
-    const langObj = ALL_LANGUAGES.find(l => l.iso === iso) || { name: doc.language || iso };
-    for (const b of doc.benchmarks) {
-      // A model with only one metric scored has no composite; it is left out of
-      // rankings rather than compared on a different scale.
-      if (b.composite === undefined || b.composite === null) continue;
-      const comp = b.composite;
-      ALL_ROWS.push({
-        iso: iso,
-        language: langObj.name,
-        model: b.model,
-        track: trackOf(b),
-        uses_reference: !!b.uses_reference,
-        composite: comp,
-        accuracy: b.accuracy !== undefined ? b.accuracy : null,
-        cer: b.cer !== undefined ? b.cer : null,
-        sbs: b.sbs !== undefined ? b.sbs : null,
-        num_scored: b.num_scored || 0
-      });
-    }
-  }
-}
-
-function populateLangDropdown() {
-  const sel = document.getElementById("per-lang-select");
-  sel.innerHTML = ALL_LANGUAGES.map(l => {
-    const isAvail = !!BENCHMARK_DATA[l.iso];
-    return `<option value="${l.iso}">${l.name}${isAvail ? '' : ' (in progress)'}</option>`;
-  }).join('');
-}
-
-function setupTabs() {
-  document.querySelectorAll(".tab").forEach(tab => {
-    tab.addEventListener("click", () => {
-      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-      document.querySelectorAll(".tab-pane").forEach(p => p.classList.remove("active"));
-      tab.classList.add("active");
-      document.getElementById(`pane-${tab.dataset.tab}`).classList.add("active");
-    });
-  });
-}
-
-function setupFilters() {
-  document.getElementById("global-track-select").addEventListener("change", renderGlobal);
-  document.getElementById("global-mode-select").addEventListener("change", renderGlobal);
-  document.getElementById("global-cov-select").addEventListener("change", renderGlobal);
-  document.getElementById("per-lang-select").addEventListener("change", renderPerLang);
-  document.getElementById("per-track-select").addEventListener("change", renderPerLang);
-  document.getElementById("per-mode-select").addEventListener("change", renderPerLang);
-  document.getElementById("all-search").addEventListener("input", renderAll);
-}
-
-function renderStats() {
-  const completedIsos = Object.keys(BENCHMARK_DATA);
-  const totalModels = new Set(ALL_ROWS.map(r => r.model)).size;
-  let bestComp = 0;
-  let bestModel = "";
-  for (const r of ALL_ROWS) {
-    if (r.composite > bestComp) {
-      bestComp = r.composite;
-      bestModel = `${r.model} (${r.language})`;
-    }
-  }
-
-  document.getElementById("stats-grid").innerHTML = `
-    <div class="stat-card">
-      <div class="label">Languages Evaluated</div>
-      <div class="value">${completedIsos.length}/${ALL_LANGUAGES.length}</div>
-    </div>
-    <div class="stat-card">
-      <div class="label">Models Benchmarked</div>
-      <div class="value">${totalModels}</div>
-    </div>
-    <div class="stat-card">
-      <div class="label">Total Evaluations</div>
-      <div class="value">${ALL_ROWS.length}</div>
-    </div>
-    <div class="stat-card">
-      <div class="label">Best Composite</div>
-      <div class="value">${bestComp ? bestComp.toFixed(3) : "—"}</div>
-      <div style="font-size:0.75rem; color:var(--text-muted); margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">
-        ${bestModel}
-      </div>
-    </div>
-  `;
-}
-
-function renderGlobal() {
-  const track = document.getElementById("global-track-select").value;
-  const mode = document.getElementById("global-mode-select").value;
-  const completedIsos = Object.keys(BENCHMARK_DATA);
-
-  // Group by model
-  const models = {};
-  for (const r of ALL_ROWS) {
-    if (track !== "All" && r.track !== track) continue;
-    if (mode === "ref" && !r.uses_reference) continue;
-    if (mode === "noref" && r.uses_reference) continue;
-
-    if (!models[r.model]) {
-      models[r.model] = {
-        model: r.model,
-        track: r.track,
-        uses_reference: r.uses_reference,
-        comps: [],
-        accs: [],
-        sbss: []
-      };
-    }
-    models[r.model].comps.push(r.composite);
-    if (r.accuracy !== null) models[r.model].accs.push(r.accuracy);
-    if (r.sbs !== null) models[r.model].sbss.push(r.sbs);
-  }
-
-  const minLangs = parseInt(document.getElementById("global-cov-select").value, 10);
-  const list = Object.values(models).filter(m => m.comps.length >= minLangs).map(m => {
-    const meanComp = m.comps.reduce((a, b) => a + b, 0) / m.comps.length;
-    const meanAcc = m.accs.length ? m.accs.reduce((a, b) => a + b, 0) / m.accs.length : null;
-    const meanSbs = m.sbss.length ? m.sbss.reduce((a, b) => a + b, 0) / m.sbss.length : null;
-    return {
-      model: m.model,
-      track: m.track,
-      uses_reference: m.uses_reference,
-      langs: m.comps.length,
-      meanComp: meanComp,
-      meanAcc: meanAcc,
-      meanSbs: meanSbs,
-      isFull: m.comps.length === completedIsos.length
-    };
-  });
-
-  list.sort((a, b) => b.meanComp - a.meanComp);
-
-  const tbody = document.getElementById("global-body");
-  if (!list.length) {
-    tbody.innerHTML = `<tr class="empty-row"><td colspan="8">No models match the filter criteria.</td></tr>`;
-    return;
-  }
-
-  tbody.innerHTML = list.map((m, i) => {
-    const rankClass = i === 0 ? "r1" : i === 1 ? "r2" : i === 2 ? "r3" : "";
-    return `
-      <tr>
-        <td class="rank ${rankClass}">${i + 1}</td>
-        <td><strong>${m.model}</strong></td>
-        <td>${trackBadge(m.track)}</td>
-        <td>${modeBadge(m.uses_reference)}</td>
-        <td style="color:var(--text-strong)">${m.langs}/${ALL_LANGUAGES.length}</td>
-        <td class="score-num score-highlight">${m.meanComp.toFixed(4)}</td>
-        <td class="score-num">${m.meanAcc !== null ? m.meanAcc.toFixed(4) : "—"}</td>
-        <td class="score-num">${m.meanSbs !== null ? m.meanSbs.toFixed(4) : "—"}</td>
-      </tr>
-    `;
-  }).join('');
-}
-
-function renderPerLang() {
-  const iso = document.getElementById("per-lang-select").value;
-  const track = document.getElementById("per-track-select").value;
-  const mode = document.getElementById("per-mode-select").value;
-  const tbody = document.getElementById("per-lang-body");
-
-  const doc = BENCHMARK_DATA[iso];
-  if (!doc) {
-    tbody.innerHTML = `<tr class="empty-row"><td colspan="8">Evaluation for <strong>${iso}</strong> is currently executing on H200.<br>Scores will appear here upon completion.</td></tr>`;
-    return;
-  }
-
-  let rows = ALL_ROWS.filter(r => r.iso === iso);
-  if (track !== "All") rows = rows.filter(r => r.track === track);
-  if (mode === "ref") rows = rows.filter(r => r.uses_reference);
-  if (mode === "noref") rows = rows.filter(r => !r.uses_reference);
-
-  rows.sort((a, b) => b.composite - a.composite);
-
-  if (!rows.length) {
-    tbody.innerHTML = `<tr class="empty-row"><td colspan="8">No models match the selected filter.</td></tr>`;
-    return;
-  }
-
-  tbody.innerHTML = rows.map((r, i) => {
-    const rankClass = i === 0 ? "r1" : i === 1 ? "r2" : i === 2 ? "r3" : "";
-    return `
-      <tr>
-        <td class="rank ${rankClass}">${i + 1}</td>
-        <td><strong>${r.model}</strong></td>
-        <td>${trackBadge(r.track)}</td>
-        <td>${modeBadge(r.uses_reference)}</td>
-        <td class="score-num score-highlight">${r.composite.toFixed(4)}</td>
-        <td class="score-num">${r.accuracy !== null ? r.accuracy.toFixed(4) : "—"}</td>
-        <td class="score-num">${r.sbs !== null ? r.sbs.toFixed(4) : "—"}</td>
-        <td style="color:var(--text-muted); font-size:0.85rem;">${r.num_scored}</td>
-      </tr>
-    `;
-  }).join('');
-}
-
-function renderAll() {
-  const search = document.getElementById("all-search").value.toLowerCase().trim();
-  let rows = ALL_ROWS;
-  if (search) {
-    rows = rows.filter(r => r.model.toLowerCase().includes(search) || r.language.toLowerCase().includes(search));
-  }
-
-  document.getElementById("all-count").textContent = `${rows.length} rows`;
-  const tbody = document.getElementById("all-body");
-  if (!rows.length) {
-    tbody.innerHTML = `<tr class="empty-row"><td colspan="8">No matches found.</td></tr>`;
-    return;
-  }
-
-  tbody.innerHTML = rows.map(r => `
-    <tr>
-      <td class="lang-cell">${r.language}</td>
-      <td><strong>${r.model}</strong></td>
-      <td>${trackBadge(r.track)}</td>
-      <td>${modeBadge(r.uses_reference)}</td>
-      <td class="score-num score-highlight">${r.composite.toFixed(4)}</td>
-      <td class="score-num">${r.accuracy !== null ? r.accuracy.toFixed(4) : "—"}</td>
-      <td class="score-num">${r.sbs !== null ? r.sbs.toFixed(4) : "—"}</td>
-      <td style="color:var(--text-muted); font-size:0.85rem;">${r.num_scored}</td>
-    </tr>
-  `).join('');
-}
-
-window.addEventListener("DOMContentLoaded", init);
+init();
 </script>
 </body>
 </html>

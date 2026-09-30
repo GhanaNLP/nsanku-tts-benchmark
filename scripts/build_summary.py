@@ -20,14 +20,29 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from benchmark.config import BENCHMARK_DIR, ISO_TO_NAME, all_isos  # noqa: E402
+from benchmark.config import BENCHMARK_DIR, ISO_TO_NAME, SPEECH_EVAL_SOURCES, all_isos  # noqa: E402
+from benchmark.evaluate import load_tts_models  # noqa: E402
 
 # Everything on a model row except the per-clip entries.
 DROP = {"entries"}
 
+# Languages missing from languages/ghana_languages.yaml.
+FAMILY_FALLBACK = {"aha": "Kwa", "kpo": "Kwa"}
+
+
+def families():
+    path = ROOT / "languages" / "ghana_languages.yaml"
+    out = dict(FAMILY_FALLBACK)
+    if path.exists():
+        for lang in yaml.safe_load(path.read_text(encoding="utf-8")).get("languages", []):
+            if lang.get("family"):
+                out[lang["iso_639_3"]] = lang["family"]
+    return out
+
 
 def build(only=None):
     out = {}
+    family = families()
     for iso in all_isos():
         if only is not None and iso not in only:
             continue
@@ -35,13 +50,26 @@ def build(only=None):
         if not path.exists():
             continue
         doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
-        rows = [{k: v for k, v in b.items() if k not in DROP}
-                for b in doc.get("benchmarks", [])]
+        registry = {m["name"]: m for m in load_tts_models(iso)}
+        rows = []
+        for b in doc.get("benchmarks", []):
+            row = {k: v for k, v in b.items() if k not in DROP}
+            row["license"] = registry.get(b["model"], {}).get("license")
+            rows.append(row)
         if not rows:
             continue
+        scored = {r["model"] for r in rows}
+        # Text sources that actually contributed samples (a configured source
+        # can end up empty), so the domain count on the board is honest.
+        domains = sorted({src for r in rows for src in (r.get("per_source") or {})},
+                         key=list(SPEECH_EVAL_SOURCES[iso]).index)
         out[iso] = {
             "iso_639_3": iso,
             "language": ISO_TO_NAME.get(iso, doc.get("language", iso)),
+            "family": family.get(iso),
+            "domains": domains,
+            # Registered for this language but no valid output: shown as failed.
+            "missing": sorted(n for n in registry if n not in scored),
             "num_samples": doc.get("num_samples"),
             "updated": doc.get("updated"),
             "judge": doc.get("judge"),
