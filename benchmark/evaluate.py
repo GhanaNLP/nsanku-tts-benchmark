@@ -142,7 +142,8 @@ def _save_errors(model_dir, errors):
 # ── Stage 1: synthesis ───────────────────────────────────────────────────────
 
 
-def synthesize_language(iso, model_filter=None, device="cuda", force=False, samples=None):
+def synthesize_language(iso, model_filter=None, device="cuda", force=False, samples=None,
+                        stack=None):
     """Synthesise every sample of every model for one language.
 
     Clips already on disk are left alone unless *force*, so a re-run only fills
@@ -161,6 +162,11 @@ def synthesize_language(iso, model_filter=None, device="cuda", force=False, samp
     models = load_tts_models(iso)
     if model_filter:
         models = [m for m in models if model_filter.lower() in m["name"].lower()]
+    if stack == "omni":
+        models = [m for m in models if m.get("stack") == "omni"]
+    elif stack == "tts":
+        # Everything that runs in the standard image; OmniVoice needs its own.
+        models = [m for m in models if m.get("stack") != "omni"]
     if not models:
         print(f"  No TTS models for {iso}")
         return []
@@ -639,6 +645,8 @@ def main():
              "environment); the H200 runner uses separate images per stage.")
     parser.add_argument("--iso", action="append", help="limit to these languages")
     parser.add_argument("--model", help="substring filter on model name")
+    parser.add_argument("--stack", choices=["tts", "omni"],
+                        help="synthesize only the models that run in this image")
     parser.add_argument("--limit", type=int, help="samples per language")
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--force", action="store_true")
@@ -654,7 +662,7 @@ def main():
                                    extract_references=need_refs)
         if cmd in ("synthesize", "all"):
             synthesize_language(iso, model_filter=args.model, device=args.device,
-                                force=args.force, samples=samples)
+                                force=args.force, samples=samples, stack=args.stack)
         if cmd in ("score-sbs", "score", "all"):
             score_sbs_language(iso, device=args.device, force=args.force, samples=samples)
         if cmd in ("score-cer", "score", "all"):

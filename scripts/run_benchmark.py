@@ -53,7 +53,7 @@ def benchmark_language(iso, limit=None):
     cmd_tts = [
         "bash", "scripts/h200_run.sh", "synth",
         "python", "-m", "benchmark.evaluate", "synthesize",
-        "--iso", iso
+        "--iso", iso, "--stack", "tts"
     ] + limit_args
     run_cmd(cmd_tts, f"TTS Synthesis for {iso}")
 
@@ -61,7 +61,7 @@ def benchmark_language(iso, limit=None):
     cmd_omni = [
         "bash", "scripts/h200_run.sh", "omni",
         "python", "-m", "benchmark.evaluate", "synthesize",
-        "--iso", iso, "--model", "omnivoice"
+        "--iso", iso, "--stack", "omni"
     ] + limit_args
     run_cmd(cmd_omni, f"OmniVoice Synthesis for {iso}")
 
