@@ -317,6 +317,25 @@ def run_pipeline(config, dataset, evaluate, models, speechbertscore,
           {b["model"] for b in doc["benchmarks"]} ==
           {"org/Model-ref", "org/Model-noref"})
 
+    print("\n== a stage that did not run is incomplete, not a mass failure ==")
+    cer_cache = evaluate.load_cer_cache(iso)
+    saved_cer = json.loads(json.dumps(cer_cache))
+    keep = sorted(next(iter(cer_cache["per_sample"].values())))[0]
+    for model in cer_cache["per_sample"]:
+        cer_cache["per_sample"][model] = {keep: cer_cache["per_sample"][model][keep]}
+    evaluate.save_cer_cache(iso, cer_cache)
+    doc3 = yaml.safe_load(evaluate.assemble_language(iso, samples).read_text())
+    check("with the CER stage mostly missing, rows are marked partial",
+          all(b.get("partial") for b in doc3["benchmarks"]), str([b.get("partial") for b in doc3["benchmarks"]]))
+    check("...and no clip is counted as failed",
+          all(not b.get("failed") for b in doc3["benchmarks"]), str([b.get("failed") for b in doc3["benchmarks"]]))
+    check("...and there is no composite to rank on",
+          all("composite" not in b for b in doc3["benchmarks"]))
+    evaluate.save_cer_cache(iso, saved_cer)
+    doc4 = yaml.safe_load(evaluate.assemble_language(iso, samples).read_text())
+    check("restoring the CER cache restores full results",
+          all("composite" in b and not b.get("partial") for b in doc4["benchmarks"]))
+
     print("\n== Gemini transport retries ==")
     import base64 as _b64
     import os as _os

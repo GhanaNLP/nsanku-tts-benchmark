@@ -20,6 +20,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+import yaml
+
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
@@ -55,6 +57,16 @@ def finished_languages(host, remote):
                     done.add(current)
                     current = None
     return done & set(all_isos())
+
+
+def complete(path):
+    """A language is publishable only if every model has a composite (both metrics ran)."""
+    try:
+        doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    except Exception:
+        return False
+    rows = doc.get("benchmarks") or []
+    return bool(rows) and all("composite" in b and not b.get("partial") for b in rows)
 
 
 def publish_audio(host, remote, isos):
@@ -97,10 +109,14 @@ def main():
     for iso in done:
         r = subprocess.run(["scp", "-q", f"{args.host}:{remote_dir}/{iso}.yaml",
                             str(bench / f"{iso}.yaml")])
-        if r.returncode == 0:
-            pulled.append(iso)
-        else:
+        if r.returncode != 0:
             print(f"  could not fetch {iso}.yaml")
+        elif not complete(bench / f"{iso}.yaml"):
+            # A stage can die (e.g. a CUDA OOM on the shared GPU) and the language
+            # still reach its end; publishing that would show half a result.
+            print(f"  NOT publishing {iso}: results are incomplete (a metric is missing)")
+        else:
+            pulled.append(iso)
 
     # A YAML that is not from a finished run is not a result: drop stale ones.
     for path in bench.glob("*.yaml"):

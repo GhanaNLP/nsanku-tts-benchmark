@@ -470,12 +470,28 @@ def assemble_language(iso, samples=None):
     allowed = {str(s.index) for s in samples}
     text_by_key = {str(s.index): s.text for s in samples}
 
+    def valid(name):
+        raw_s, raw_c = sbs_rows.get(name, {}), cer_rows.get(name, {})
+        return ({k for k in allowed if "sbs" in raw_s.get(k, {})},
+                {k for k in allowed if raw_c.get(k, {}).get("cer") is not None})
+
+    # Did each metric's stage actually run for this language? A stage that died
+    # (a CUDA OOM while loading the judge, say) leaves almost nothing scored, and
+    # that must read as "incomplete", not as every clip having failed. The test
+    # is language-wide: if even the best-covered model has under half its clips
+    # scored, the stage did not run. A model that fails most of its own clips
+    # while the stage ran for the others is a real failure and is still counted.
+    models_here = load_tts_models(iso)
+    sets = {m["name"]: valid(m["name"]) for m in models_here}
+    floor = 0.5 * len(allowed)
+    sbs_ran = any(len(v[0]) >= floor for v in sets.values())
+    cer_ran = any(len(v[1]) >= floor for v in sets.values())
+
     benchmarks = []
-    for info in load_tts_models(iso):
+    for info in models_here:
         name = info["name"]
         raw_s, raw_c = sbs_rows.get(name, {}), cer_rows.get(name, {})
-        ok_s = {k for k in allowed if "sbs" in raw_s.get(k, {})}
-        ok_c = {k for k in allowed if raw_c.get(k, {}).get("cer") is not None}
+        ok_s, ok_c = sets[name]
         if not ok_s and not ok_c:
             continue
 
@@ -484,7 +500,7 @@ def assemble_language(iso, samples=None):
         # model on exactly the sentences it could not read, so a model could
         # score better by failing. Only applied once both metrics have run for
         # the model; otherwise a missing metric is a missing stage, not a failure.
-        count_failures = bool(ok_s) and bool(ok_c)
+        count_failures = bool(ok_s) and bool(ok_c) and sbs_ran and cer_ran
         entries, failed = {}, 0
         for key in sorted(allowed):
             have_s, have_c = key in ok_s, key in ok_c
@@ -529,7 +545,7 @@ def assemble_language(iso, samples=None):
                          cer_num_scored=sum(1 for r in good if "cer" in r))
         if count_failures:
             entry["failed"] = failed
-        if sbs is not None and cer is not None:
+        if sbs is not None and cer is not None and sbs_ran and cer_ran:
             entry["composite"] = round((entry["accuracy"] + sbs) / 2.0, 4)
             entry["score"] = entry["composite"]
         else:

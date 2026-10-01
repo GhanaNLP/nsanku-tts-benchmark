@@ -29,56 +29,80 @@ sys.path.insert(0, str(REPO))
 from benchmark.config import ISO_TO_NAME, SPEECH_EVAL_SOURCES
 
 
-def run_cmd(cmd, desc=""):
-    print(f"\n>>> [{desc}] {' '.join(cmd)}")
-    t0 = time.time()
-    res = subprocess.run(cmd, cwd=REPO)
-    dt = time.time() - t0
-    if res.returncode != 0:
-        print(f"FAILED ({dt:.1f}s): {' '.join(cmd)} (exit {res.returncode})", file=sys.stderr)
-    else:
-        print(f"DONE ({dt:.1f}s)")
-    return res.returncode == 0
+# GPU memory (GB) a stage needs free before it starts. The GPU is shared with other
+# jobs, and a stage that loads a model onto a full card dies with CUDA OOM.
+NEED_FREE_GB = {"synth": 16, "omni": 16, "asr": 24, "score": 12}
+ATTEMPTS = 3
+RETRY_WAIT_S = 300
+
+
+def gpu_free_gb():
+    try:
+        out = subprocess.run(
+            ["nvidia-smi", "--query-gpu=memory.free", "--format=csv,noheader,nounits"],
+            capture_output=True, text=True, timeout=30).stdout.split()
+        return float(out[0]) / 1024.0
+    except Exception:
+        return None
+
+
+def wait_for_gpu(stage, patience_s=7200):
+    """Wait until the card has room for this stage; give up waiting after patience_s."""
+    need = NEED_FREE_GB.get(stage)
+    if not need:
+        return
+    waited = 0
+    while waited < patience_s:
+        free = gpu_free_gb()
+        if free is None or free >= need:
+            return
+        if waited % 600 == 0:
+            print(f"    waiting for GPU memory: {free:.0f} GB free, {stage} needs {need} GB", flush=True)
+        time.sleep(60)
+        waited += 60
+
+
+def run_cmd(cmd, desc="", stage=None):
+    """Run one stage, retrying on failure. Every stage is resumable, so a retry
+    only does the work that is still missing. Returns True on success."""
+    for attempt in range(1, ATTEMPTS + 1):
+        wait_for_gpu(stage)
+        print(f"\n>>> [{desc}] {' '.join(cmd)}" + (f"  (attempt {attempt})" if attempt > 1 else ""), flush=True)
+        t0 = time.time()
+        res = subprocess.run(cmd, cwd=REPO)
+        dt = time.time() - t0
+        if res.returncode == 0:
+            print(f"DONE ({dt:.1f}s)", flush=True)
+            return True
+        print(f"FAILED ({dt:.1f}s): {' '.join(cmd)} (exit {res.returncode})", file=sys.stderr, flush=True)
+        if attempt < ATTEMPTS:
+            time.sleep(RETRY_WAIT_S)
+    return False
 
 
 def benchmark_language(iso, limit=None):
+    """Run every stage for one language. Returns the stages that failed for good."""
     lang_name = ISO_TO_NAME.get(iso, iso)
     print(f"\n{'#' * 70}")
     print(f"  BENCHMARKING: {iso} ({lang_name})")
     print(f"{'#' * 70}")
 
     limit_args = ["--limit", str(limit)] if limit else []
-
-    # Stage 1a: Synthesise standard models in tts image
-    cmd_tts = [
-        "bash", "scripts/h200_run.sh", "synth",
-        "python", "-m", "benchmark.evaluate", "synthesize",
-        "--iso", iso, "--stack", "tts"
-    ] + limit_args
-    run_cmd(cmd_tts, f"TTS Synthesis for {iso}")
-
-    # Stage 1b: Synthesise OmniVoice in omni image
-    cmd_omni = [
-        "bash", "scripts/h200_run.sh", "omni",
-        "python", "-m", "benchmark.evaluate", "synthesize",
-        "--iso", iso, "--stack", "omni"
-    ] + limit_args
-    run_cmd(cmd_omni, f"OmniVoice Synthesis for {iso}")
-
-    # Stage 2a: CER with the language's ASR judge (asr image)
-    run_cmd(["bash", "scripts/h200_run.sh", "asr",
-             "python", "-m", "benchmark.evaluate", "score-cer", "--iso", iso] + limit_args,
-            f"CER for {iso}")
-
-    # Stage 2b: SpeechBERTScore (score image)
-    run_cmd(["bash", "scripts/h200_run.sh", "score",
-             "python", "-m", "benchmark.evaluate", "score-sbs", "--iso", iso] + limit_args,
-            f"SpeechBERTScore for {iso}")
-
-    # Stage 3: join both metrics into benchmarks/{iso}.yaml
-    run_cmd(["bash", "scripts/h200_run.sh", "score",
-             "python", "-m", "benchmark.evaluate", "assemble", "--iso", iso],
-            f"Assemble {iso}")
+    py = ["python", "-m", "benchmark.evaluate"]
+    run = ["bash", "scripts/h200_run.sh"]
+    stages = [
+        # (stage image, command, description)
+        ("synth", py + ["synthesize", "--iso", iso, "--stack", "tts"] + limit_args, f"TTS Synthesis for {iso}"),
+        ("omni", py + ["synthesize", "--iso", iso, "--stack", "omni"] + limit_args, f"OmniVoice Synthesis for {iso}"),
+        ("asr", py + ["score-cer", "--iso", iso] + limit_args, f"CER for {iso}"),
+        ("score", py + ["score-sbs", "--iso", iso] + limit_args, f"SpeechBERTScore for {iso}"),
+        ("score", py + ["assemble", "--iso", iso], f"Assemble {iso}"),
+    ]
+    failed = []
+    for image, cmd, desc in stages:
+        if not run_cmd(run + [image] + cmd, desc, stage=image):
+            failed.append(desc)
+    return failed
 
 
 def main():
@@ -94,13 +118,23 @@ def main():
     languages = sorted(SPEECH_EVAL_SOURCES.keys()) if args.all_languages else [args.iso]
 
     t_start = time.time()
+    incomplete = {}
     for i, iso in enumerate(languages, 1):
         print(f"\n[{i}/{len(languages)}] Starting {iso}...")
-        benchmark_language(iso, limit=args.limit)
+        failed = benchmark_language(iso, limit=args.limit)
+        if failed:
+            incomplete[iso] = failed
 
     total_time = time.time() - t_start
     print(f"\n{'=' * 70}")
-    print(f"All benchmarks finished in {total_time/60:.1f} minutes.")
+    if incomplete:
+        # The sync publishes a language only after "All benchmarks finished", so an
+        # incomplete one is never published; re-run it to fill the gaps.
+        for iso, failed in incomplete.items():
+            print(f"INCOMPLETE {iso}: stage(s) failed after {ATTEMPTS} attempts: {'; '.join(failed)}")
+        print(f"Ended after {total_time/60:.1f} minutes with incomplete languages.")
+    else:
+        print(f"All benchmarks finished in {total_time/60:.1f} minutes.")
     print(f"{'=' * 70}")
 
     # Show cross-language leaderboard
