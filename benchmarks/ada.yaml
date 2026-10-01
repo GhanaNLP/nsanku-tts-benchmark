@@ -13673,19 +13673,19 @@ benchmarks:
   model_class: api
   params: API
   uses_reference: false
-  sbs: 0.6239
-  num_scored: 199
-  cer: 0.2841
-  wer: 0.6614
-  accuracy: 0.7159
-  cer_num_scored: 199
-  failed: 1
-  composite: 0.6699
-  score: 0.6699
+  sbs: 0.6271
+  num_scored: 200
+  cer: 0.2809
+  wer: 0.6593
+  accuracy: 0.7191
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.6731
+  score: 0.6731
   per_source:
     bible:
-      sbs: 0.598
-      cer: 0.266
+      sbs: 0.6044
+      cer: 0.2595
       n: 100
     jw:
       sbs: 0.6497
@@ -14083,10 +14083,11 @@ benchmarks:
       source: bible
       text: Nɔ nɛ heɔ Bi ɔ yeɔ ɔ, e nine su neneene wami ɔ nɔ; se nɔ tsuaa nɔ nɛ bui Bi ɔ tue ɔ, e be
         neneene wami nae. Mawu maa gbla e tue mohu.
-      sbs: 0.0
-      cer: 1.0
-      wer: 1.0
-      failed: no usable audio
+      sbs: 0.637
+      gen_sec: 13.52
+      ref_sec: 12.54
+      cer: 0.3511
+      wer: 0.5714
     bible_00046:
       source: bible
       text: Pohu ngmami ɔ nɛ de ke e sa nɛ e te si kɛ je gbeje ɔ, a nui sisi kɛ mwɔɔ.

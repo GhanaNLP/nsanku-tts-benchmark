@@ -10381,19 +10381,19 @@ benchmarks:
   model_class: api
   params: API
   uses_reference: false
-  sbs: 0.6025
-  num_scored: 198
-  cer: 0.2111
-  wer: 0.7289
-  accuracy: 0.7889
-  cer_num_scored: 198
-  failed: 2
-  composite: 0.6957
-  score: 0.6957
+  sbs: 0.6054
+  num_scored: 199
+  cer: 0.2072
+  wer: 0.7282
+  accuracy: 0.7928
+  cer_num_scored: 199
+  failed: 1
+  composite: 0.6991
+  score: 0.6991
   per_source:
     bible:
-      sbs: 0.6025
-      cer: 0.2111
+      sbs: 0.6054
+      cer: 0.2072
       n: 200
   entries:
     bible_00000:
@@ -11645,10 +11645,11 @@ benchmarks:
       source: bible
       text: Siab sa jii sarimae, amii nabint, amii tanchincheena, ki maa fiakir maŋ paak; siab mun sa
         jii daate, amii mɔɔt, amii kakaa, ki chaan fiakir maŋ paak.
-      sbs: 0.0
-      cer: 1.0
-      wer: 1.0
-      failed: no usable audio
+      sbs: 0.5919
+      gen_sec: 13.24
+      ref_sec: 12.86
+      cer: 0.2174
+      wer: 0.8519
     bible_00147:
       source: bible
       text: Ma din beeri Yennu mɔmaan na, Masia nisiab din tuu pan li paak, ŋaan yimme bo sa turin li

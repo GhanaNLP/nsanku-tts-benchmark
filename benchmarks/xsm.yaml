@@ -6655,19 +6655,19 @@ benchmarks:
   model_class: api
   params: API
   uses_reference: false
-  sbs: 0.615
-  num_scored: 198
-  cer: 0.2202
-  wer: 0.5682
-  accuracy: 0.7798
-  cer_num_scored: 198
-  failed: 2
-  composite: 0.6974
-  score: 0.6974
+  sbs: 0.618
+  num_scored: 199
+  cer: 0.2177
+  wer: 0.5686
+  accuracy: 0.7823
+  cer_num_scored: 199
+  failed: 1
+  composite: 0.7002
+  score: 0.7002
   per_source:
     bible:
-      sbs: 0.615
-      cer: 0.2202
+      sbs: 0.618
+      cer: 0.2177
       n: 200
   entries:
     bible_00000:
@@ -8167,10 +8167,11 @@ benchmarks:
       source: bible
       text: Nan dɩ kʋ dɩ, dɩ́ Yuutu Zezi mʋ kɩ-nɩ yu-yoŋo zanzan kʋ ja gaalɩ, yɩ o daarɩ o pa a taa jɩgɩ
         wʋ-dɩdʋa dɩd-o dɩ sono, a na ŋwɩ dɩd-o tɩn ŋwaanɩ.
-      sbs: 0.0
-      cer: 1.0
-      wer: 1.0
-      failed: no usable audio
+      sbs: 0.6118
+      gen_sec: 13.44
+      ref_sec: 12.44
+      cer: 0.5
+      wer: 1.0938
     bible_00184:
       source: bible
       text: A maa wó taa zoore de Isarele tiina bam, se a taa ye ba Wɛ.

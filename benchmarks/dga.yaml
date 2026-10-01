@@ -10537,15 +10537,15 @@ benchmarks:
   model_class: api
   params: API
   uses_reference: false
-  sbs: 0.6245
-  num_scored: 199
-  cer: 0.1733
-  wer: 0.4662
-  accuracy: 0.8267
-  cer_num_scored: 199
-  failed: 1
-  composite: 0.7256
-  score: 0.7256
+  sbs: 0.6278
+  num_scored: 200
+  cer: 0.1698
+  wer: 0.4642
+  accuracy: 0.8302
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.729
+  score: 0.729
   per_source:
     bible:
       sbs: 0.625
@@ -10556,8 +10556,8 @@ benchmarks:
       cer: 0.2065
       n: 67
     waxal:
-      sbs: 0.5931
-      cer: 0.1671
+      sbs: 0.6032
+      cer: 0.1565
       n: 66
   entries:
     bible_00000:
@@ -12267,10 +12267,11 @@ benchmarks:
       text: Deɛn deɛn zeɛ kanga la a zeɛ nga bibile kanga arẽ a nimitoore be ka poɔ kanga arẽ a ɔ poɔring
         kye ka doɔ kanga meng arẽ a de bun pen a le ɔ zu pou kye ka ba menne meng arẽ ɔ poɔring kye ka
         a bibile nga a muri laare.
-      sbs: 0.0
-      cer: 1.0
-      wer: 1.0
-      failed: no usable audio
+      sbs: 0.6647
+      gen_sec: 18.0
+      ref_sec: 18.84
+      cer: 0.3006
+      wer: 0.6154
     waxal_00065:
       source: waxal
       text: Nasadɔbɔ ayi ane pɔgeba bayi la zeŋ ba biŋ la tebol ba sensɔgleŋsɔga a dɔgle gama a pare kɔpore
