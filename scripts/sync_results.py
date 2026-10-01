@@ -60,13 +60,24 @@ def finished_languages(host, remote):
 
 
 def complete(path):
-    """A language is publishable only if every model has a composite (both metrics ran)."""
+    """Is this language's YAML a finished result?
+
+    Every model needs a composite (both metrics ran). And the numbers themselves
+    must be sane: if the typical model has half its clips counted as failed, a
+    stage did not run (a CUDA OOM, a dead judge), not every model at once failing.
+    One model failing most of its own clips (a vocabulary gap, say) is real and is
+    allowed; the median across models is what is tested.
+    """
     try:
         doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     except Exception:
         return False
     rows = doc.get("benchmarks") or []
-    return bool(rows) and all("composite" in b and not b.get("partial") for b in rows)
+    if not rows or not all("composite" in b and not b.get("partial") for b in rows):
+        return False
+    total = doc.get("num_samples") or 200
+    shares = sorted((b.get("failed") or 0) / total for b in rows)
+    return shares[len(shares) // 2] < 0.5
 
 
 def publish_audio(host, remote, isos):
