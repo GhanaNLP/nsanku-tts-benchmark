@@ -33,7 +33,7 @@ def pick_sample(benchmarks):
     per_model = {}
     for b in benchmarks:
         comps = {k: c for k, r in (b.get("entries") or {}).items()
-                 if (c := clip_composite(r)) is not None}
+                 if not r.get("failed") and (c := clip_composite(r)) is not None}
         if comps:
             per_model[b["model"]] = comps
     if not per_model:

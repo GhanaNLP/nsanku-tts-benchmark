@@ -465,25 +465,42 @@ def assemble_language(iso, samples=None):
     if samples is None:
         samples = load_samples(iso, limit=NUM_SAMPLES, extract_references=False)
     allowed = {str(s.index) for s in samples}
+    text_by_key = {str(s.index): s.text for s in samples}
 
     benchmarks = []
     for info in load_tts_models(iso):
         name = info["name"]
-        s_rows = {k: v for k, v in sbs_rows.get(name, {}).items()
-                  if k in allowed and "sbs" in v}
-        c_rows = {k: v for k, v in cer_rows.get(name, {}).items()
-                  if k in allowed and v.get("cer") is not None}
-        if not s_rows and not c_rows:
+        raw_s, raw_c = sbs_rows.get(name, {}), cer_rows.get(name, {})
+        ok_s = {k for k in allowed if "sbs" in raw_s.get(k, {})}
+        ok_c = {k for k in allowed if raw_c.get(k, {}).get("cer") is not None}
+        if not ok_s and not ok_c:
             continue
 
-        entries = {}
-        for key in sorted(set(s_rows) | set(c_rows)):
-            row = {"source": source_of(key)}
-            row.update(s_rows.get(key) or {})
-            c = c_rows.get(key)
-            if c:
-                row.setdefault("text", sbs_rows.get(name, {}).get(key, {}).get("text"))
-                row["cer"], row["wer"] = c["cer"], c["wer"]
+        # A clip with no usable output (empty or runaway audio, no synthesis) is a
+        # failure: CER 1 and SBS 0 on that sentence. Dropping it would excuse the
+        # model on exactly the sentences it could not read, so a model could
+        # score better by failing. Only applied once both metrics have run for
+        # the model; otherwise a missing metric is a missing stage, not a failure.
+        count_failures = bool(ok_s) and bool(ok_c)
+        entries, failed = {}, 0
+        for key in sorted(allowed):
+            have_s, have_c = key in ok_s, key in ok_c
+            if not (have_s or have_c) and not count_failures:
+                continue
+            text = (raw_s.get(key) or {}).get("text") or text_by_key.get(key)
+            row = {"source": source_of(key), "text": text}
+            if have_s and have_c:
+                row.update({k: raw_s[key][k] for k in ("sbs", "gen_sec", "ref_sec") if k in raw_s[key]})
+                row["cer"], row["wer"] = raw_c[key]["cer"], raw_c[key]["wer"]
+            elif count_failures:
+                row.update(sbs=0.0, cer=1.0, wer=1.0,
+                           failed=_failure_reason(raw_s.get(key), raw_c.get(key)))
+                failed += 1
+            else:
+                if have_s:
+                    row.update({k: raw_s[key][k] for k in ("sbs", "gen_sec", "ref_sec") if k in raw_s[key]})
+                if have_c:
+                    row["cer"], row["wer"] = raw_c[key]["cer"], raw_c[key]["wer"]
             entries[key] = row
 
         entry = {
@@ -496,14 +513,19 @@ def assemble_language(iso, samples=None):
             "params": info.get("params", "?"),
             "uses_reference": info.get("uses_reference", False),
         }
-        sbs = round(sum(v["sbs"] for v in s_rows.values()) / len(s_rows), 4) if s_rows else None
-        cer = round(sum(v["cer"] for v in c_rows.values()) / len(c_rows), 4) if c_rows else None
-        wer = round(sum(v["wer"] for v in c_rows.values()) / len(c_rows), 4) if c_rows else None
+        s_vals = [r["sbs"] for r in entries.values() if "sbs" in r]
+        c_rows = [r for r in entries.values() if "cer" in r]
+        sbs = round(sum(s_vals) / len(s_vals), 4) if s_vals else None
+        cer = round(sum(r["cer"] for r in c_rows) / len(c_rows), 4) if c_rows else None
+        wer = round(sum(r["wer"] for r in c_rows) / len(c_rows), 4) if c_rows else None
+        good = [r for r in entries.values() if "failed" not in r]
         if sbs is not None:
-            entry["sbs"], entry["num_scored"] = sbs, len(s_rows)
+            entry["sbs"], entry["num_scored"] = sbs, sum(1 for r in good if "sbs" in r)
         if cer is not None:
             entry.update(cer=cer, wer=wer, accuracy=round(max(0.0, 1.0 - cer), 4),
-                         cer_num_scored=len(c_rows))
+                         cer_num_scored=sum(1 for r in good if "cer" in r))
+        if count_failures:
+            entry["failed"] = failed
         if sbs is not None and cer is not None:
             entry["composite"] = round((entry["accuracy"] + sbs) / 2.0, 4)
             entry["score"] = entry["composite"]
@@ -542,6 +564,17 @@ def assemble_language(iso, samples=None):
                   Dumper=_NoAliasDumper, width=100)
     tmp.replace(path)
     return path
+
+
+def _failure_reason(sbs_row, cer_row):
+    """Why a clip has no usable score, in words the Space can show."""
+    for row in (sbs_row, cer_row):
+        err = (row or {}).get("error")
+        if err:
+            if err.startswith("Calculated padded input size"):
+                return "audio too short to score"
+            return err[:80]
+    return "no usable audio"
 
 
 def _per_source(entries):

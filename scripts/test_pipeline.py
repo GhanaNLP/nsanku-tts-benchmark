@@ -317,6 +317,35 @@ def run_pipeline(config, dataset, evaluate, models, speechbertscore,
           {b["model"] for b in doc["benchmarks"]} ==
           {"org/Model-ref", "org/Model-noref"})
 
+    print("\n== failed clips ==")
+    before = {b["model"]: b for b in doc["benchmarks"]}["org/Model-ref"]
+    cache = evaluate.load_score_cache(iso)
+    victim = sorted(k for k in cache["per_sample"]["org/Model-ref"] if k != "bible_99999")[0]
+    cache["per_sample"]["org/Model-ref"][victim] = {"text": "x", "error": "empty audio"}
+    evaluate.save_score_cache(iso, cache["per_sample"], cache["encoder"])
+    doc2 = yaml.safe_load(evaluate.assemble_language(iso, samples).read_text())
+    after = {b["model"]: b for b in doc2["benchmarks"]}["org/Model-ref"]
+    row = after["entries"][victim]
+    check("a clip with no usable audio is recorded as failed",
+          row.get("failed") == "empty audio", str(row))
+    check("a failed clip scores CER 1 and SBS 0", row["cer"] == 1.0 and row["sbs"] == 0.0, str(row))
+    check("the failure is counted, and not counted as scored",
+          after["failed"] == 1 and after["num_scored"] == samples_expected - 1,
+          f"failed={after['failed']} scored={after['num_scored']}")
+    check("the mean still covers every sentence (no clip is dropped)",
+          sum(1 for r in after["entries"].values() if "sbs" in r) == samples_expected)
+    check("failing lowers the composite", after["composite"] < before["composite"],
+          f"{before['composite']} -> {after['composite']}")
+    check("a model with no failures reports zero", {b["model"]: b for b in doc2["benchmarks"]}["org/Model-noref"]["failed"] == 0)
+    check("per-source means include the failure",
+          min(v["sbs"] for v in after["per_source"].values()) < min(v["sbs"] for v in before["per_source"].values()),
+          str(after["per_source"]))
+    from benchmark.clips import pick_sample
+    pick = pick_sample(doc2["benchmarks"])
+    check("the sample sentence is never one a model failed", pick["key"] != victim or "org/Model-ref" not in pick["models"], str(pick))
+    cache["per_sample"]["org/Model-ref"][victim] = before["entries"][victim] | {"text": "x"}
+    evaluate.save_score_cache(iso, cache["per_sample"], cache["encoder"])
+
     print("\n== incremental re-score ==")
     calls = {"n": 0}
 

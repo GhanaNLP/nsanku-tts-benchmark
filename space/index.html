@@ -217,6 +217,7 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
         <li><strong>Composite = (Accuracy + SBS) / 2</strong>, higher is better. Example: CER 6.49% and SBS 0.7126 give
           Accuracy 0.9351 and Composite (0.9351 + 0.7126) / 2 = 0.8238.</li>
       </ul>
+      <strong>Failed clips are not dropped.</strong> If a model produces no usable output for a sentence (empty audio, audio past the judge's 39 s limit, or no synthesis), that sentence counts as CER 100% and SBS 0 and is shown in the <em>Failed</em> column, so a model cannot score better by failing on hard sentences. Each model gets one attempt per sentence.<br>
       Every sample comes from <code>ghana-speech-eval</code>; a language with several text sources (domains) is sampled evenly across them.
       The domain columns show the Composite computed on that source alone.
     </div>
@@ -323,7 +324,7 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
           <thead>
             <tr>
               <th>Language</th><th>Model</th><th>Track</th><th>Mode</th><th>Params</th>
-              <th>Composite</th><th>Accuracy</th><th>CER (%)</th><th>SBS</th><th>Clips</th>
+              <th>Composite</th><th>Accuracy</th><th>CER (%)</th><th>SBS</th><th>Clips</th><th>Failed</th>
             </tr>
           </thead>
           <tbody id="all-body"></tbody>
@@ -496,7 +497,7 @@ function buildRows() {
         type: b.architecture || '—', cls: b.model_class || 'non-llm', mode: b.mode || (b.uses_reference ? 'ref' : 'noref'),
         params: b.params || '—', params_bn: paramsBn(b.params), license: b.license || null,
         composite: b.composite, accuracy: b.accuracy, cer: b.cer, sbs: b.sbs,
-        n: b.num_scored || 0, bySource, ndom: (doc.domains || []).length,
+        n: b.num_scored || 0, failed: b.failed == null ? null : b.failed, bySource, ndom: (doc.domains || []).length,
       });
     }
   }
@@ -656,7 +657,8 @@ function renderPerLang() {
     <th data-sort="composite" class="sep" title="(Accuracy + SBS) / 2 - higher is better">Composite</th>
     <th data-sort="accuracy" title="Accuracy = 1 - CER - higher is better; this is what enters the composite">Accuracy</th>
     <th data-sort="cer" title="Character error rate of the ASR judge's transcript, in % - lower is better">CER (%) &darr;</th>
-    <th data-sort="sbs" title="SpeechBERTScore against a real recording of the sentence - higher is better">SBS</th><th data-sort="n">Clips</th></tr>`;
+    <th data-sort="sbs" title="SpeechBERTScore against a real recording of the sentence - higher is better">SBS</th><th data-sort="n" title="Clips scored normally">Clips</th>
+    <th data-sort="failed" title="Clips with no usable output (empty or runaway audio, or no synthesis). Each counts as CER 100% and SBS 0 on that sentence.">Failed</th></tr>`;
   wireSort('per-thead', 'per-table', renderPerLang);
 
   body.innerHTML = rows.length ? rows.map(r => `<tr>
@@ -667,7 +669,8 @@ function renderPerLang() {
     <td class="score-num sep" style="font-weight:700;color:${compColor(r.composite)}">${fmt(r.composite)}</td>
     <td class="score-num">${fmt(r.accuracy)}</td><td class="score-num">${pct(r.cer)}</td>
     <td class="score-num">${fmt(r.sbs)}</td><td class="score-num" style="color:var(--text-muted)">${r.n}</td>
-  </tr>`).join('') : `<tr class="empty-row"><td colspan="${13 + doms.length}">No models match the selected filters.</td></tr>`;
+    <td class="score-num" style="color:${r.failed ? 'var(--warning)' : 'var(--text-muted)'}">${r.failed == null ? '\u2014' : r.failed}</td>
+  </tr>`).join('') : `<tr class="empty-row"><td colspan="${14 + doms.length}">No models match the selected filters.</td></tr>`;
 
   missing.innerHTML = (doc.missing || []).length
     ? doc.missing.map(m => `<tr><td>${esc(m)}${recipeLink(m, iso)}</td><td style="color:var(--text-muted)">Registered for this language but produced no valid output (failed to load or synthesise).</td></tr>`).join('')
@@ -684,7 +687,8 @@ function renderAll() {
     <td class="lang-cell">${esc(r.language)}</td><td>${modelCell(r)}</td><td>${trackBadge(r.cls)}</td><td>${modeBadge(r.mode)}</td>
     <td>${esc(r.params)}</td><td class="score-num score-highlight">${fmt(r.composite)}</td>
     <td class="score-num">${fmt(r.accuracy)}</td><td class="score-num">${pct(r.cer)}</td>
-    <td class="score-num">${fmt(r.sbs)}</td><td class="score-num" style="color:var(--text-muted)">${r.n}</td></tr>`).join('');
+    <td class="score-num">${fmt(r.sbs)}</td><td class="score-num" style="color:var(--text-muted)">${r.n}</td>
+    <td class="score-num" style="color:${r.failed ? 'var(--warning)' : 'var(--text-muted)'}">${r.failed == null ? '\u2014' : r.failed}</td></tr>`).join('');
 }
 
 // ====== wiring ======
