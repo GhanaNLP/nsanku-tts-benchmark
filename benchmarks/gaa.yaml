@@ -25,6 +25,7 @@ benchmarks:
   wer: 0.3775
   accuracy: 0.8892
   cer_num_scored: 200
+  failed: 0
   composite: 0.7834
   score: 0.7834
   per_source:
@@ -1658,17 +1659,18 @@ benchmarks:
   model_class: non-llm
   params: 0.6B
   uses_reference: true
-  sbs: 0.6822
+  sbs: 0.6446
   num_scored: 189
   cer: 0.2483
   wer: 0.5803
   accuracy: 0.7517
-  cer_num_scored: 200
-  composite: 0.7169
-  score: 0.7169
+  cer_num_scored: 189
+  failed: 11
+  composite: 0.6982
+  score: 0.6982
   per_source:
     finance:
-      sbs: 0.6416
+      sbs: 0.571
       cer: 0.2611
       n: 100
     jw:
@@ -1679,8 +1681,10 @@ benchmarks:
     finance_00000:
       source: finance
       text: nyɔŋmɔ nɛ
+      sbs: 0.0
       cer: 1.0
       wer: 1.0
+      failed: empty audio
     finance_00001:
       source: finance
       text: Masumɔ ni makwɛ bɔni eshwɛ mi
@@ -1788,8 +1792,10 @@ benchmarks:
     finance_00025:
       source: finance
       text: nyɔŋmɔ nɛ
+      sbs: 0.0
       cer: 1.0
       wer: 1.0
+      failed: empty audio
     finance_00027:
       source: finance
       text: Kaa hani ohiepkanɔ
@@ -1817,8 +1823,10 @@ benchmarks:
     finance_00030:
       source: finance
       text: Ani nakai lo
+      sbs: 0.0
       cer: 1.0
       wer: 1.0
+      failed: empty audio
     finance_00031:
       source: finance
       text: kasemɔ nɔ ko
@@ -1838,8 +1846,10 @@ benchmarks:
     finance_00033:
       source: finance
       text: Yoo minu
+      sbs: 0.0
       cer: 1.0
       wer: 1.0
+      failed: empty audio
     finance_00034:
       source: finance
       text: ŋmaa wɔ wolo
@@ -1867,8 +1877,10 @@ benchmarks:
     finance_00039:
       source: finance
       text: Wolo yeŋ
+      sbs: 0.0
       cer: 1.0
       wer: 1.0
+      failed: empty audio
     finance_00042:
       source: finance
       text: Obaasumɔ woya ŋshɔ naa
@@ -1952,8 +1964,10 @@ benchmarks:
     finance_00054:
       source: finance
       text: Nyɛɛ ekome
+      sbs: 0.0
       cer: 1.0
       wer: 1.0
+      failed: empty audio
     finance_00057:
       source: finance
       text: Number ni i kɛ twa bo nɛɛ nɔɔ
@@ -2013,8 +2027,10 @@ benchmarks:
     finance_00064:
       source: finance
       text: Nakai nɔɔ
+      sbs: 0.0
       cer: 1.0
       wer: 1.0
+      failed: empty audio
     finance_00065:
       source: finance
       text: Ofainɛ mintawɔ ma send shika kɛ ha mo ko hu
@@ -2154,8 +2170,10 @@ benchmarks:
     finance_00086:
       source: finance
       text: Wolo yeŋ
+      sbs: 0.0
       cer: 1.0
       wer: 1.0
+      failed: empty audio
     finance_00087:
       source: finance
       text: Mahe units
@@ -2215,13 +2233,17 @@ benchmarks:
     finance_00094:
       source: finance
       text: Sane eba
+      sbs: 0.0
       cer: 1.0
       wer: 1.0
+      failed: empty audio
     finance_00095:
       source: finance
       text: Kɛya mɛɛ nɛtwork
+      sbs: 0.0
       cer: 1.0
       wer: 1.0
+      failed: empty audio
     finance_00096:
       source: finance
       text: Mi shika a, enyiɛ eshwɛ
@@ -2281,8 +2303,10 @@ benchmarks:
     finance_00103:
       source: finance
       text: Sane eba
+      sbs: 0.0
       cer: 1.0
       wer: 1.0
+      failed: empty audio
     finance_00104:
       source: finance
       text: Miikase Ga
@@ -3270,6 +3294,7 @@ benchmarks:
   wer: 0.6143
   accuracy: 0.7354
   cer_num_scored: 200
+  failed: 0
   composite: 0.6969
   score: 0.6969
   per_source:
@@ -4909,6 +4934,7 @@ benchmarks:
   wer: 0.6978
   accuracy: 0.67
   cer_num_scored: 200
+  failed: 0
   composite: 0.6596
   score: 0.6596
   per_source:
@@ -6542,19 +6568,20 @@ benchmarks:
   model_class: non-llm
   params: 0.6B
   uses_reference: false
-  sbs: 0.6714
+  sbs: 0.6547
   num_scored: 195
-  cer: 0.3809
-  wer: 0.8036
-  accuracy: 0.6191
+  cer: 0.3963
+  wer: 0.8085
+  accuracy: 0.6037
   cer_num_scored: 195
-  composite: 0.6452
-  score: 0.6452
+  failed: 5
+  composite: 0.6292
+  score: 0.6292
   per_source:
     finance:
-      sbs: 0.6452
-      cer: 0.3463
-      n: 95
+      sbs: 0.613
+      cer: 0.379
+      n: 100
     jw:
       sbs: 0.6963
       cer: 0.4137
@@ -6808,6 +6835,13 @@ benchmarks:
       ref_sec: 5.05
       cer: 0.2667
       wer: 0.4
+    finance_00049:
+      source: finance
+      text: Te oyɔɔ tɛŋŋ
+      sbs: 0.0
+      cer: 1.0
+      wer: 1.0
+      failed: no usable audio
     finance_00050:
       source: finance
       text: Nitsumɔi srotoi yɛ mli
@@ -6848,6 +6882,13 @@ benchmarks:
       ref_sec: 6.3
       cer: 0.0
       wer: 0.0
+    finance_00057:
+      source: finance
+      text: Number ni i kɛ twa bo nɛɛ nɔɔ
+      sbs: 0.0
+      cer: 1.0
+      wer: 1.0
+      failed: no usable audio
     finance_00058:
       source: finance
       text: Nɛgbɛ oyaa
@@ -7184,6 +7225,13 @@ benchmarks:
       ref_sec: 2.68
       cer: 1.0
       wer: 1.0
+    finance_00104:
+      source: finance
+      text: Miikase Ga
+      sbs: 0.0
+      cer: 1.0
+      wer: 1.0
+      failed: no usable audio
     finance_00105:
       source: finance
       text: Nyɛɛ ekome
@@ -7248,6 +7296,13 @@ benchmarks:
       ref_sec: 7.28
       cer: 0.1364
       wer: 0.4
+    finance_00115:
+      source: finance
+      text: Nyɛɛ ekome
+      sbs: 0.0
+      cer: 1.0
+      wer: 1.0
+      failed: no usable audio
     finance_00116:
       source: finance
       text: Ofainɛ mɛɛ network osmɔ ni ohe credit ɛ yɛ nɔ
@@ -7312,6 +7367,13 @@ benchmarks:
       ref_sec: 7.24
       cer: 1.0
       wer: 1.0
+    finance_00125:
+      source: finance
+      text: Adafitwaa kɛ shwɛmɔ
+      sbs: 0.0
+      cer: 1.0
+      wer: 1.0
+      failed: no usable audio
     finance_00126:
       source: finance
       text: Nɛgbɛ oyaa
@@ -8133,1605 +8195,6 @@ benchmarks:
       ref_sec: 3.96
       cer: 0.5
       wer: 0.8333
-- model: k2-fsa/OmniVoice-noref
-  model_url: https://huggingface.co/k2-fsa/OmniVoice
-  mode: noref
-  owner: k2-fsa
-  architecture: OmniVoice (voice cloning + voice design)
-  model_class: non-llm
-  params: 0.6B
-  uses_reference: false
-  sbs: 0.6749
-  num_scored: 195
-  cer: 0.4199
-  wer: 0.8498
-  accuracy: 0.5801
-  cer_num_scored: 195
-  composite: 0.6275
-  score: 0.6275
-  per_source:
-    finance:
-      sbs: 0.6483
-      cer: 0.4037
-      n: 95
-    jw:
-      sbs: 0.7001
-      cer: 0.4352
-      n: 100
-  entries:
-    finance_00000:
-      source: finance
-      text: nyɔŋmɔ nɛ
-      sbs: 0.7094
-      gen_sec: 1.04
-      ref_sec: 2.39
-      cer: 0.25
-      wer: 1.0
-    finance_00001:
-      source: finance
-      text: Masumɔ ni makwɛ bɔni eshwɛ mi
-      sbs: 0.6106
-      gen_sec: 1.58
-      ref_sec: 4.9
-      cer: 0.125
-      wer: 0.6667
-    finance_00003:
-      source: finance
-      text: kɛfee lɛ tswaa mi
-      sbs: 0.6413
-      gen_sec: 1.25
-      ref_sec: 2.36
-      cer: 0.2857
-      wer: 0.5
-    finance_00005:
-      source: finance
-      text: Ofainɛ mɛni ji o acount number?
-      sbs: 0.5871
-      gen_sec: 1.67
-      ref_sec: 8.07
-      cer: 0.28
-      wer: 0.8333
-    finance_00008:
-      source: finance
-      text: Mo wɔgbe otransfer ɛ naa
-      sbs: 0.7695
-      gen_sec: 2.0
-      ref_sec: 8.48
-      cer: 0.75
-      wer: 1.0
-    finance_00009:
-      source: finance
-      text: No ko kokro yɛ ni oosumɔ ni wɔfee wo ha bo lo
-      sbs: 0.6722
-      gen_sec: 2.09
-      ref_sec: 4.89
-      cer: 0.2647
-      wer: 0.9167
-    finance_00014:
-      source: finance
-      text: Nitsumɔi srotoi yɛ mli
-      sbs: 0.5553
-      gen_sec: 1.37
-      ref_sec: 7.46
-      cer: 0.3684
-      wer: 1.0
-    finance_00015:
-      source: finance
-      text: Miiŋa nyɛ
-      sbs: 0.6144
-      gen_sec: 0.97
-      ref_sec: 4.36
-      cer: 0.0
-      wer: 0.0
-    finance_00016:
-      source: finance
-      text: No ko kokro yɛ ni oosumɔ ni wɔfee wo ha bo lo
-      sbs: 0.6459
-      gen_sec: 2.38
-      ref_sec: 6.56
-      cer: 0.1765
-      wer: 0.5833
-    finance_00017:
-      source: finance
-      text: Ofainɛ mɛɛ network osmɔ ni ohe credit ɛ yɛ nɔ
-      sbs: 0.6218
-      gen_sec: 0.51
-      ref_sec: 5.08
-      cer: 1.0
-      wer: 1.0
-    finance_00018:
-      source: finance
-      text: Mi yɛ ojogbaŋŋ
-      sbs: 0.6793
-      gen_sec: 1.12
-      ref_sec: 5.43
-      cer: 0.25
-      wer: 0.6667
-    finance_00019:
-      source: finance
-      text: Mo wɔgbe otransfer ɛ naa
-      sbs: 0.598
-      gen_sec: 1.54
-      ref_sec: 8.34
-      cer: 0.4
-      wer: 1.0
-    finance_00020:
-      source: finance
-      text: Nfonii fɛɛfɛo
-      sbs: 0.6832
-      gen_sec: 1.18
-      ref_sec: 9.36
-      cer: 0.25
-      wer: 1.0
-    finance_00021:
-      source: finance
-      text: obaanyɛ onyiɛ wɔsɛɛ
-      sbs: 0.6326
-      gen_sec: 1.43
-      ref_sec: 6.8
-      cer: 0.2941
-      wer: 1.0
-    finance_00025:
-      source: finance
-      text: nyɔŋmɔ nɛ
-      sbs: 0.6558
-      gen_sec: 1.0
-      ref_sec: 4.15
-      cer: 0.25
-      wer: 1.0
-    finance_00027:
-      source: finance
-      text: Kaa hani ohiepkanɔ
-      sbs: 0.5863
-      gen_sec: 1.29
-      ref_sec: 6.64
-      cer: 0.4375
-      wer: 2.0
-    finance_00028:
-      source: finance
-      text: Enyiɛ i yɔɔ yɛ i account ɛ mli
-      sbs: 0.7324
-      gen_sec: 0.32
-      ref_sec: 5.52
-      cer: 0.9565
-      wer: 1.0
-    finance_00029:
-      source: finance
-      text: Mahe units
-      sbs: 0.6553
-      gen_sec: 1.56
-      ref_sec: 5.82
-      cer: 0.8889
-      wer: 1.5
-    finance_00030:
-      source: finance
-      text: Ani nakai lo
-      sbs: 0.6802
-      gen_sec: 1.6
-      ref_sec: 5.14
-      cer: 1.0
-      wer: 1.0
-    finance_00032:
-      source: finance
-      text: Ofainɛ nyɛɛ link ɛɛ ni ba  o’screen nɛɛ nɔ
-      sbs: 0.6821
-      gen_sec: 2.01
-      ref_sec: 4.87
-      cer: 0.3438
-      wer: 1.0
-    finance_00033:
-      source: finance
-      text: Yoo minu
-      sbs: 0.6764
-      gen_sec: 1.44
-      ref_sec: 5.34
-      cer: 1.0
-      wer: 1.0
-    finance_00034:
-      source: finance
-      text: ŋmaa wɔ wolo
-      sbs: 0.6999
-      gen_sec: 1.12
-      ref_sec: 5.16
-      cer: 0.0
-      wer: 0.0
-    finance_00036:
-      source: finance
-      text: Ofainɛ hɛɛ mintawɔ ma checki mi account
-      sbs: 0.5885
-      gen_sec: 2.07
-      ref_sec: 9.87
-      cer: 0.303
-      wer: 0.8571
-    finance_00037:
-      source: finance
-      text: Mi shika a, enyiɛ eshwɛ
-      sbs: 0.6532
-      gen_sec: 1.3
-      ref_sec: 6.49
-      cer: 0.1667
-      wer: 0.6
-    finance_00039:
-      source: finance
-      text: Wolo yeŋ
-      sbs: 0.6815
-      gen_sec: 1.44
-      ref_sec: 2.72
-      cer: 0.8571
-      wer: 1.0
-    finance_00042:
-      source: finance
-      text: Obaasumɔ woya ŋshɔ naa
-      sbs: 0.5869
-      gen_sec: 1.47
-      ref_sec: 7.11
-      cer: 0.5789
-      wer: 1.0
-    finance_00043:
-      source: finance
-      text: Sane agbo
-      sbs: 0.7224
-      gen_sec: 1.39
-      ref_sec: 1.71
-      cer: 0.25
-      wer: 0.5
-    finance_00044:
-      source: finance
-      text: Ofee vii tsɔ
-      sbs: 0.6313
-      gen_sec: 1.11
-      ref_sec: 7.08
-      cer: 0.4
-      wer: 1.0
-    finance_00045:
-      source: finance
-      text: kɛfee lɛ tswaa mi
-      sbs: 0.6522
-      gen_sec: 1.3
-      ref_sec: 1.54
-      cer: 0.3571
-      wer: 1.0
-    finance_00047:
-      source: finance
-      text: Bo ni otswa mi aloo?
-      sbs: 0.6259
-      gen_sec: 1.25
-      ref_sec: 5.05
-      cer: 0.2667
-      wer: 0.4
-    finance_00049:
-      source: finance
-      text: Te oyɔɔ tɛŋŋ
-      sbs: 0.6877
-      gen_sec: 0.59
-      ref_sec: 4.46
-      cer: 1.0
-      wer: 1.0
-    finance_00050:
-      source: finance
-      text: Nitsumɔi srotoi yɛ mli
-      sbs: 0.5982
-      gen_sec: 1.4
-      ref_sec: 6.53
-      cer: 0.2632
-      wer: 1.25
-    finance_00051:
-      source: finance
-      text: gbɔi pii yɛ Ga
-      sbs: 0.6976
-      gen_sec: 1.14
-      ref_sec: 5.3
-      cer: 0.3636
-      wer: 1.0
-    finance_00052:
-      source: finance
-      text: Ofainɛ nyɛɛ link ɛɛ ni ba  o’screen nɛɛ nɔ
-      sbs: 0.6104
-      gen_sec: 2.17
-      ref_sec: 7.56
-      cer: 0.125
-      wer: 0.6667
-    finance_00053:
-      source: finance
-      text: Ofainɛ mɛɛ network osmɔ ni ohe credit ɛ yɛ nɔ
-      sbs: 0.5734
-      gen_sec: 2.46
-      ref_sec: 9.68
-      cer: 0.2222
-      wer: 1.0
-    finance_00057:
-      source: finance
-      text: Number ni i kɛ twa bo nɛɛ nɔɔ
-      sbs: 0.6678
-      gen_sec: 1.51
-      ref_sec: 2.44
-      cer: 0.2727
-      wer: 0.5
-    finance_00058:
-      source: finance
-      text: Nɛgbɛ oyaa
-      sbs: 0.6365
-      gen_sec: 1.18
-      ref_sec: 3.18
-      cer: 0.0
-      wer: 0.0
-    finance_00059:
-      source: finance
-      text: Miitaɔ ni ma maje
-      sbs: 0.6094
-      gen_sec: 1.33
-      ref_sec: 7.51
-      cer: 0.1429
-      wer: 0.25
-    finance_00060:
-      source: finance
-      text: Ekpakpa feemɔ
-      sbs: 0.6703
-      gen_sec: 1.21
-      ref_sec: 3.38
-      cer: 0.0833
-      wer: 1.0
-    finance_00061:
-      source: finance
-      text: Miikase Ga
-      sbs: 0.6452
-      gen_sec: 1.23
-      ref_sec: 3.64
-      cer: 0.0
-      wer: 0.0
-    finance_00062:
-      source: finance
-      text: Ofainɛ daabi, oyiwaladɔŋŋ
-      sbs: 0.6559
-      gen_sec: 0.86
-      ref_sec: 7.08
-      cer: 0.9545
-      wer: 1.0
-    finance_00063:
-      source: finance
-      text: Yaa sɛɛ fioo
-      sbs: 0.6928
-      gen_sec: 1.2
-      ref_sec: 1.76
-      cer: 0.1
-      wer: 0.3333
-    finance_00064:
-      source: finance
-      text: Nakai nɔɔ
-      sbs: 0.6239
-      gen_sec: 0.56
-      ref_sec: 5.55
-      cer: 0.875
-      wer: 1.0
-    finance_00066:
-      source: finance
-      text: Nitsumɔi srotoi yɛ mli
-      sbs: 0.6238
-      gen_sec: 1.34
-      ref_sec: 4.79
-      cer: 0.0526
-      wer: 0.75
-    finance_00068:
-      source: finance
-      text: Ba bienɛ
-      sbs: 0.6994
-      gen_sec: 0.94
-      ref_sec: 5.72
-      cer: 0.1429
-      wer: 0.5
-    finance_00070:
-      source: finance
-      text: Ofainɛ shika enyɛ otawɔ o send
-      sbs: 0.6579
-      gen_sec: 1.55
-      ref_sec: 4.88
-      cer: 0.28
-      wer: 1.0
-    finance_00071:
-      source: finance
-      text: Nɔ fɛɛ nɔ yɛ ojogbaŋŋ
-      sbs: 0.6448
-      gen_sec: 1.34
-      ref_sec: 2.99
-      cer: 0.1765
-      wer: 0.4
-    finance_00072:
-      source: finance
-      text: Miitaɔ ni ma maje
-      sbs: 0.6347
-      gen_sec: 1.3
-      ref_sec: 7.26
-      cer: 0.1429
-      wer: 0.25
-    finance_00073:
-      source: finance
-      text: Ofainɛ hɛɛ!
-      sbs: 0.6481
-      gen_sec: 1.6
-      ref_sec: 2.56
-      cer: 0.8889
-      wer: 1.0
-    finance_00076:
-      source: finance
-      text: obaanyɛ onyiɛ wɔsɛɛ
-      sbs: 0.6373
-      gen_sec: 1.34
-      ref_sec: 5.6
-      cer: 0.1765
-      wer: 1.0
-    finance_00077:
-      source: finance
-      text: Miikase Ga
-      sbs: 0.6477
-      gen_sec: 1.14
-      ref_sec: 5.18
-      cer: 0.0
-      wer: 0.0
-    finance_00079:
-      source: finance
-      text: Ofainɛ wɔgbena
-      sbs: 0.5271
-      gen_sec: 0.44
-      ref_sec: 5.71
-      cer: 0.8462
-      wer: 1.0
-    finance_00080:
-      source: finance
-      text: Yɔsemɔ nii
-      sbs: 0.705
-      gen_sec: 1.08
-      ref_sec: 1.7
-      cer: 0.2222
-      wer: 1.0
-    finance_00081:
-      source: finance
-      text: Te oyɔɔ tɛŋŋ
-      sbs: 0.6575
-      gen_sec: 1.1
-      ref_sec: 1.68
-      cer: 0.3
-      wer: 1.0
-    finance_00082:
-      source: finance
-      text: Number ni i kɛ twa bo nɛɛ nɔɔ
-      sbs: 0.6494
-      gen_sec: 0.73
-      ref_sec: 5.29
-      cer: 0.7273
-      wer: 0.875
-    finance_00083:
-      source: finance
-      text: Nyɛɛ ekome
-      sbs: 0.6892
-      gen_sec: 1.07
-      ref_sec: 2.54
-      cer: 0.2222
-      wer: 1.0
-    finance_00084:
-      source: finance
-      text: Nɔ fɛɛ nɔ yɛ ojogbaŋŋ
-      sbs: 0.5827
-      gen_sec: 1.39
-      ref_sec: 6.73
-      cer: 0.2353
-      wer: 0.4
-    finance_00086:
-      source: finance
-      text: Wolo yeŋ
-      sbs: 0.691
-      gen_sec: 1.44
-      ref_sec: 7.07
-      cer: 0.8571
-      wer: 1.0
-    finance_00087:
-      source: finance
-      text: Mahe units
-      sbs: 0.7047
-      gen_sec: 1.56
-      ref_sec: 6.02
-      cer: 1.0
-      wer: 1.0
-    finance_00088:
-      source: finance
-      text: Ofainɛ mɛɛ network osmɔ ni ohe credit ɛ yɛ nɔ
-      sbs: 0.6341
-      gen_sec: 2.43
-      ref_sec: 5.45
-      cer: 0.1389
-      wer: 0.7
-    finance_00089:
-      source: finance
-      text: Yaa sɛɛ fioo
-      sbs: 0.7014
-      gen_sec: 1.16
-      ref_sec: 2.58
-      cer: 0.1
-      wer: 0.3333
-    finance_00090:
-      source: finance
-      text: kɛfee lɛ tswaa mi
-      sbs: 0.6795
-      gen_sec: 1.3
-      ref_sec: 3.88
-      cer: 0.1429
-      wer: 0.25
-    finance_00091:
-      source: finance
-      text: Jiemɔ ohitsirɛ kɛ lala
-      sbs: 0.6408
-      gen_sec: 1.58
-      ref_sec: 6.39
-      cer: 0.3684
-      wer: 1.0
-    finance_00092:
-      source: finance
-      text: Wɔ fee otransfer ɛ eha bo
-      sbs: 0.6005
-      gen_sec: 0.95
-      ref_sec: 6.65
-      cer: 0.8
-      wer: 0.8333
-    finance_00093:
-      source: finance
-      text: Ofainɛ oyɛ five hundred cedis yɛ oacount lɛ mli
-      sbs: 0.627
-      gen_sec: 2.43
-      ref_sec: 5.81
-      cer: 0.6154
-      wer: 0.8889
-    finance_00094:
-      source: finance
-      text: Sane eba
-      sbs: 0.6456
-      gen_sec: 1.44
-      ref_sec: 7.11
-      cer: 0.8571
-      wer: 2.0
-    finance_00095:
-      source: finance
-      text: Kɛya mɛɛ nɛtwork
-      sbs: 0.6613
-      gen_sec: 1.32
-      ref_sec: 4.84
-      cer: 0.0
-      wer: 0.0
-    finance_00096:
-      source: finance
-      text: Mi shika a, enyiɛ eshwɛ
-      sbs: 0.6127
-      gen_sec: 1.25
-      ref_sec: 6.55
-      cer: 0.1667
-      wer: 0.8
-    finance_00097:
-      source: finance
-      text: Enyiɛ ahɔɔ ɛnɛ
-      sbs: 0.6287
-      gen_sec: 1.0
-      ref_sec: 3.04
-      cer: 0.5
-      wer: 1.0
-    finance_00098:
-      source: finance
-      text: Mi yɛ ojogbaŋŋ
-      sbs: 0.7057
-      gen_sec: 1.03
-      ref_sec: 3.28
-      cer: 0.3333
-      wer: 0.6667
-    finance_00099:
-      source: finance
-      text: Mahe units
-      sbs: 0.7
-      gen_sec: 1.56
-      ref_sec: 8.01
-      cer: 1.0
-      wer: 1.0
-    finance_00100:
-      source: finance
-      text: Masumɔ ni makwɛ bɔni eshwɛ mi
-      sbs: 0.635
-      gen_sec: 1.66
-      ref_sec: 7.64
-      cer: 0.125
-      wer: 0.1667
-    finance_00101:
-      source: finance
-      text: Mɛni ofeɔ ŋmɛnɛ
-      sbs: 0.6744
-      gen_sec: 1.02
-      ref_sec: 3.12
-      cer: 0.6154
-      wer: 1.3333
-    finance_00102:
-      source: finance
-      text: Ofainɛ tsɛ number oha mi
-      sbs: 0.609
-      gen_sec: 1.54
-      ref_sec: 6.8
-      cer: 0.3
-      wer: 1.0
-    finance_00103:
-      source: finance
-      text: Sane eba
-      sbs: 0.6332
-      gen_sec: 1.44
-      ref_sec: 2.68
-      cer: 0.8571
-      wer: 1.0
-    finance_00104:
-      source: finance
-      text: Miikase Ga
-      sbs: 0.6428
-      gen_sec: 1.06
-      ref_sec: 5.24
-      cer: 0.1111
-      wer: 0.5
-    finance_00105:
-      source: finance
-      text: Nyɛɛ ekome
-      sbs: 0.671
-      gen_sec: 0.43
-      ref_sec: 4.72
-      cer: 1.0
-      wer: 1.0
-    finance_00106:
-      source: finance
-      text: Ofee vii tsɔ
-      sbs: 0.6679
-      gen_sec: 1.12
-      ref_sec: 5.36
-      cer: 0.4
-      wer: 1.0
-    finance_00107:
-      source: finance
-      text: Ofainɛ mɛni ji o acount number?
-      sbs: 0.6642
-      gen_sec: 2.12
-      ref_sec: 7.24
-      cer: 0.96
-      wer: 0.8333
-    finance_00108:
-      source: finance
-      text: Tsofa kpakpa, jara wa
-      sbs: 0.6367
-      gen_sec: 1.5
-      ref_sec: 6.46
-      cer: 0.0
-      wer: 0.0
-    finance_00110:
-      source: finance
-      text: Nitsumɔi srotoi yɛ mli
-      sbs: 0.5972
-      gen_sec: 1.55
-      ref_sec: 5.86
-      cer: 0.0526
-      wer: 1.0
-    finance_00112:
-      source: finance
-      text: ŋmaa wɔ wolo
-      sbs: 0.6746
-      gen_sec: 1.6
-      ref_sec: 5.94
-      cer: 0.9
-      wer: 1.0
-    finance_00113:
-      source: finance
-      text: Enyiɛ i yɔɔ yɛ i account ɛ mli
-      sbs: 0.6219
-      gen_sec: 1.6
-      ref_sec: 6.32
-      cer: 0.2174
-      wer: 0.875
-    finance_00114:
-      source: finance
-      text: Ofainɛ mahe yɛ airtel tigo
-      sbs: 0.6758
-      gen_sec: 1.71
-      ref_sec: 7.28
-      cer: 0.3182
-      wer: 0.8
-    finance_00115:
-      source: finance
-      text: Nyɛɛ ekome
-      sbs: 0.6255
-      gen_sec: 0.93
-      ref_sec: 8.32
-      cer: 0.1111
-      wer: 0.5
-    finance_00116:
-      source: finance
-      text: Ofainɛ mɛɛ network osmɔ ni ohe credit ɛ yɛ nɔ
-      sbs: 0.6472
-      gen_sec: 2.8
-      ref_sec: 9.65
-      cer: 1.0
-      wer: 1.0
-    finance_00118:
-      source: finance
-      text: Obaanyɛ ni ofee oha mi aloo
-      sbs: 0.7285
-      gen_sec: 2.04
-      ref_sec: 8.39
-      cer: 0.9545
-      wer: 1.0
-    finance_00119:
-      source: finance
-      text: Miiya solemɔ he lɛ
-      sbs: 0.6315
-      gen_sec: 1.24
-      ref_sec: 2.4
-      cer: 0.1333
-      wer: 0.5
-    finance_00120:
-      source: finance
-      text: Masumɔ ni makwɛ bɔni eshwɛ mi
-      sbs: 0.635
-      gen_sec: 1.61
-      ref_sec: 7.34
-      cer: 0.125
-      wer: 0.6667
-    finance_00121:
-      source: finance
-      text: Ofainɛ oyiwaladɔŋŋ
-      sbs: 0.6163
-      gen_sec: 1.39
-      ref_sec: 6.35
-      cer: 0.3529
-      wer: 1.5
-    finance_00122:
-      source: finance
-      text: Ofainɛ shika enyɛ otawɔ o send
-      sbs: 0.5339
-      gen_sec: 1.43
-      ref_sec: 7.82
-      cer: 0.36
-      wer: 0.8333
-    finance_00123:
-      source: finance
-      text: Ni o’mia o’ password owo nɔ
-      sbs: 0.5887
-      gen_sec: 1.48
-      ref_sec: 8.27
-      cer: 0.5
-      wer: 1.0
-    finance_00124:
-      source: finance
-      text: Shika enyiɛ i yɔɔ
-      sbs: 0.6888
-      gen_sec: 1.15
-      ref_sec: 7.24
-      cer: 0.2857
-      wer: 0.75
-    finance_00125:
-      source: finance
-      text: Adafitwaa kɛ shwɛmɔ
-      sbs: 0.6826
-      gen_sec: 1.5
-      ref_sec: 8.12
-      cer: 0.1176
-      wer: 0.3333
-    finance_00126:
-      source: finance
-      text: Nɛgbɛ oyaa
-      sbs: 0.6707
-      gen_sec: 1.11
-      ref_sec: 5.05
-      cer: 0.1111
-      wer: 2.0
-    jw_00000:
-      source: jw
-      text: NIBII NI BAAYE ABUA BO NI OBATSƆ KRISTOFONYO NI EDA YƐ MUMƆŊ
-      sbs: 0.7238
-      gen_sec: 2.56
-      ref_sec: 4.33
-      cer: 0.4286
-      wer: 0.8333
-    jw_00001:
-      source: jw
-      text: MIKASE NII NI MITSƆƆ NII BE NI MISƆMƆƆ AKƐ KPOKPAA NƆKWƐLƆ KƐ BE NI MISƆMƆƆ AKƐ KPOKPAA WULU
-        NƆKWƐLƆ LƐ
-      sbs: 0.7059
-      gen_sec: 5.81
-      ref_sec: 6.75
-      cer: 0.7262
-      wer: 0.8
-    jw_00002:
-      source: jw
-      text: Mɛɛ be nɛkɛ Yehowa yelikɛbuamɔ he baahia wɔ waa?
-      sbs: 0.745
-      gen_sec: 2.36
-      ref_sec: 4.84
-      cer: 0.2308
-      wer: 1.0
-    jw_00003:
-      source: jw
-      text: Mɛni hewɔ esaaa akɛ wɔnuɔ he akɛ kɛ́ wɔbatsɔmɔ Kristofoi ni edara yɛ mumɔŋ lɛ, belɛ wɔgbe
-        naa lɛ?
-      sbs: 0.6849
-      gen_sec: 4.76
-      ref_sec: 6.92
-      cer: 0.1316
-      wer: 0.5789
-    jw_00004:
-      source: jw
-      text: No hewɔ lɛ, eyɛ mli akɛ mɛi ni hi shi yɛ blema lɛ bɛ watsii, tamɔ bɔ ni wɔyɔɔ ŋmɛnɛ lɛ moŋ,
-        shi no mli lɛ amɛyɛ gbɛ ni amɛtsɔɔ nɔ amɛtsɔɔ bɔ ni atswa.
-      sbs: 0.6577
-      gen_sec: 7.35
-      ref_sec: 13.08
-      cer: 0.9375
-      wer: 0.9429
-    jw_00005:
-      source: jw
-      text: Feemɔ nibii ni nyɛmimɛi lɛ feɔ lɛ eko. Yaa asafoŋ kpeei lɛ fɛɛ, ni okɛ amɛ afee ekome kɛya
-        shiɛmɔ
-      sbs: 0.7052
-      gen_sec: 5.19
-      ref_sec: 9.49
-      cer: 0.1579
-      wer: 0.55
-    jw_00006:
-      source: jw
-      text: Winston, ani sɔɔmɔ ni oyasɔmɔ yɛ Pasifik Wuoyigbɛ Ŋshɔkpɔi lɛ anɔ lɛ eye ebua bo ni onyɛ otsu
-        onitsumɔ akɛ Australasia Nitsumɔhe Nine Ajinafoi Akuu lɛ mli nyo lɛ jogbaŋŋ?
-      sbs: 0.6866
-      gen_sec: 8.74
-      ref_sec: 11.67
-      cer: 0.1942
-      wer: 0.9
-    jw_00007:
-      source: jw
-      text: HÃ NIKASEMƆ ATSE ONAA
-      sbs: 0.6951
-      gen_sec: 1.92
-      ref_sec: 3.6
-      cer: 0.3889
-      wer: 1.25
-    jw_00008:
-      source: jw
-      text: KƐ́ WƆKƐ WƆHIƐ FƆ̃ YEHOWA NƆ LƐ WƆBAANÁ NAANƆ WALA
-      sbs: 0.7125
-      gen_sec: 2.36
-      ref_sec: 5.23
-      cer: 0.4359
-      wer: 1.0
-    jw_00009:
-      source: jw
-      text: Mɛni kɛ́ wɔfee lɛ, no baahã wɔye Yehowa anɔkwa?
-      sbs: 0.7773
-      gen_sec: 2.58
-      ref_sec: 4.33
-      cer: 0.2222
-      wer: 0.7778
-    jw_00010:
-      source: jw
-      text: Wɔbaakase bɔ ni wɔnáa mfonirifeemɔŋ paradeiso lɛ he sɛɛ kɛ nɔ ni wɔbaafee ni baagbala mɛi
-        krokomɛi kɛba mli lɛ he nii.
-      sbs: 0.7176
-      gen_sec: 6.42
-      ref_sec: 9.49
-      cer: 0.1562
-      wer: 0.6364
-    jw_00011:
-      source: jw
-      text: ESAA MƐI ATSUI KƐ AMƐJWƐŊMƆ
-      sbs: 0.6718
-      gen_sec: 1.8
-      ref_sec: 3.36
-      cer: 0.7391
-      wer: 1.2
-    jw_00012:
-      source: jw
-      text: Sanebimɔi Ni Jɛ Kanelɔi Adɛŋ
-      sbs: 0.6807
-      gen_sec: 0.54
-      ref_sec: 3.49
-      cer: 1.0
-      wer: 1.0
-    jw_00013:
-      source: jw
-      text: PAULO YE EBUA ENYƐMIMƐI LƐ KONI AMƐHEMƆKƐYELI LƐ MLI AWA
-      sbs: 0.6572
-      gen_sec: 3.22
-      ref_sec: 4.79
-      cer: 0.5957
-      wer: 1.0
-    jw_00014:
-      source: jw
-      text: NITSUMƆ KO NI HE HIAA WAA
-      sbs: 0.693
-      gen_sec: 1.85
-      ref_sec: 3.23
-      cer: 0.45
-      wer: 1.0
-    jw_00015:
-      source: jw
-      text: Pam, bo hu obale anɔkwale lɛ yɛ ogbekɛbiiashi. Te eba lɛ tɛŋŋ?
-      sbs: 0.7311
-      gen_sec: 2.82
-      ref_sec: 5.26
-      cer: 0.2917
-      wer: 1.0
-    jw_00016:
-      source: jw
-      text: MƐƐ GBƐ NƆ NIBII NI NYIƐ SƐƐ NƐƐ BAANYƐ AYE ABUA WƆ NI WƆKAYOYORO KƐ́ WƆKƐ NAAGBAI KPE?
-      sbs: 0.719
-      gen_sec: 4.18
-      ref_sec: 6.96
-      cer: 0.2941
-      wer: 0.8333
-    jw_00017:
-      source: jw
-      text: Mɛni hewɔ ehe miihia ni wɔhã yiŋtoi ahewɔ ni wɔshiɛɔ lɛ ahi wɔjwɛŋmɔ mli?
-      sbs: 0.7294
-      gen_sec: 3.57
-      ref_sec: 5.45
-      cer: 0.1525
-      wer: 0.5714
-    jw_00018:
-      source: jw
-      text: Mɛɛ gbɛ nɔ brikii ni ana yɛ he ni blema Babilon yɔɔ lɛ kɛ gbɛi ni atsɔ nɔ afee brikii nɛɛ
-        maa nɔ mi akɛ, nɔ ni awie yɛ Biblia lɛ mli lɛ ja lɛɛlɛŋ?
-      sbs: 0.697
-      gen_sec: 7.8
-      ref_sec: 11.51
-      cer: 0.3818
-      wer: 0.8571
-    jw_00019:
-      source: jw
-      text: NYƐSUƆMƆ LƐ MLI AWAA
-      sbs: 0.6717
-      gen_sec: 1.88
-      ref_sec: 3.1
-      cer: 0.7059
-      wer: 1.0
-    jw_00020:
-      source: jw
-      text: Nyɛmimɛi ni tee kpee nɛɛ eko lɛ ateŋ mɛi pii kɛɛ miishɛɛ ni amɛná yɛ kpee nɛɛ shishi lɛ nɔ
-        bɛ, ejaakɛ amɛna faŋŋ akɛ Yehowa miijɔɔ ewebii lɛ. Shi amɛmiishɛɛ lɛ sɛɛ etsɛɛɛ.
-      sbs: 0.6726
-      gen_sec: 8.9
-      ref_sec: 13.87
-      cer: 0.3185
-      wer: 0.7059
-    jw_00021:
-      source: jw
-      text: Feemɔ Nibii Ni Baahã Ohe Oye Waa Akɛ Yehowa Asafo Lɛ Nɛ
-      sbs: 0.709
-      gen_sec: 3.09
-      ref_sec: 4.79
-      cer: 0.0909
-      wer: 0.4167
-    jw_00022:
-      source: jw
-      text: YEHOWA BAAYE EBUA WƆ KƐ́ WƆMIINU HE AKƐ WƆBƐ MƆ KO
-      sbs: 0.7179
-      gen_sec: 2.54
-      ref_sec: 5.32
-      cer: 0.3077
-      wer: 0.9091
-    jw_00023:
-      source: jw
-      text: NƆ NI ABAASUSU HE a
-      sbs: 0.6626
-      gen_sec: 1.83
-      ref_sec: 3.18
-      cer: 0.6667
-      wer: 0.8
-    jw_00024:
-      source: jw
-      text: MƐNI HEWƆ ESA AKƐ WƆJIE HIƐSƆƆ KPO?
-      sbs: 0.7181
-      gen_sec: 1.59
-      ref_sec: 3.94
-      cer: 0.5
-      wer: 1.0
-    jw_00025:
-      source: jw
-      text: Mɛi Ni Sɔmɔɔ “Miishɛɛ Nyɔŋmɔ Lɛ” Yɛ Miishɛɛ
-      sbs: 0.7294
-      gen_sec: 2.33
-      ref_sec: 6.99
-      cer: 0.1471
-      wer: 0.375
-    jw_00026:
-      source: jw
-      text: ‘Nyɛkwɛa Jogbaŋŋ Ni Mɔ Ko Akaŋɔ Nyɛ Nom’!
-      sbs: 0.7409
-      gen_sec: 1.94
-      ref_sec: 6.34
-      cer: 0.3226
-      wer: 0.875
-    jw_00027:
-      source: jw
-      text: OKƐ OTII NI OBAANYƐ OSHƐ HE AMAMƆ OHIƐ
-      sbs: 0.6691
-      gen_sec: 2.39
-      ref_sec: 3.52
-      cer: 0.6452
-      wer: 1.0
-    jw_00028:
-      source: jw
-      text: BƆ NI FEE NI MIKASE YEHOWA HE NII NI MIBALE LƐ
-      sbs: 0.7297
-      gen_sec: 2.31
-      ref_sec: 3.28
-      cer: 0.25
-      wer: 0.5455
-    jw_00029:
-      source: jw
-      text: YEHOWA BOƆ SƆLEMƆI TOI
-      sbs: 0.7043
-      gen_sec: 1.96
-      ref_sec: 3.43
-      cer: 1.0
-      wer: 1.0
-    jw_00030:
-      source: jw
-      text: Nɔ Hewɔ Ni Enáaa Nyɔŋmɔ Hiɛ Dromɔ
-      sbs: 0.6336
-      gen_sec: 1.04
-      ref_sec: 4.01
-      cer: 0.963
-      wer: 1.0
-    jw_00031:
-      source: jw
-      text: BO YEHOWA TOI KONI EHI EHÃ BO WƆSƐƐ
-      sbs: 0.7301
-      gen_sec: 2.19
-      ref_sec: 4.35
-      cer: 0.6429
-      wer: 1.0
-    jw_00032:
-      source: jw
-      text: Bɔ ni wɔbaafee wɔhã hemɔkɛyeli ni wɔyɔɔ akɛ Yehowa asafo lɛ nɛ lɛ mli awa be fɛɛ be.
-      sbs: 0.6973
-      gen_sec: 3.89
-      ref_sec: 6.3
-      cer: 0.2424
-      wer: 0.6667
-    jw_00033:
-      source: jw
-      text: Wɔle akɛ nyɛyi enyɔ fɛɛ nyɛnya sɔɔmɔ ni nyɛsɔmɔ yɛ ŋshɔkpɔi lɛ anɔ lɛ he waa. Ani nyɛbaasumɔ
-        ni nyɛgba wɔ nibii ni tee nɔ yɛ jɛmɛ ni nyɛhiɛ kpaŋ nɔ kɔkɔɔkɔ lɛ ekomɛi?
-      sbs: 0.6787
-      gen_sec: 8.79
-      ref_sec: 10.11
-      cer: 0.2519
-      wer: 0.7647
-    jw_00034:
-      source: jw
-      text: Ani naagba yɛ he akɛ Yehowa Odasefoi kɛ wɛbsaitii loo apps ni akɛtaoɔ gbalashihilɛ mli hefatalɔi
-        baatsu nii?
-      sbs: 0.7006
-      gen_sec: 5.54
-      ref_sec: 9.21
-      cer: 0.2222
-      wer: 0.9444
-    jw_00035:
-      source: jw
-      text: MIBƆI SƆƆMƆ EKOŊŊ AKƐ KPOKPAA NƆKWƐLƆ
-      sbs: 0.6877
-      gen_sec: 1.93
-      ref_sec: 3.25
-      cer: 0.2812
-      wer: 1.1667
-    jw_00036:
-      source: jw
-      text: Mɛɛ gbɛ nɔ esoro Yesu baptisimɔ lɛ yɛ esɛɛnyiɛlɔi lɛ anɔ lɛ he?
-      sbs: 0.7315
-      gen_sec: 3.15
-      ref_sec: 5.39
-      cer: 0.3
-      wer: 1.0
-    jw_00037:
-      source: jw
-      text: NYƐMIMƐI LƐ TEE NƆ AMƐSHIƐ
-      sbs: 0.6677
-      gen_sec: 1.8
-      ref_sec: 3.05
-      cer: 0.6364
-      wer: 1.0
-    jw_00038:
-      source: jw
-      text: Sanebimɔi Ni Jɛ Kanelɔi Adɛŋ
-      sbs: 0.7269
-      gen_sec: 1.71
-      ref_sec: 4.27
-      cer: 0.375
-      wer: 1.4
-    jw_00039:
-      source: jw
-      text: KƐ́ WƆMLI HI LƐ, WƆBAAFEE MƐI EJURƆ
-      sbs: 0.6972
-      gen_sec: 1.87
-      ref_sec: 3.99
-      cer: 0.1481
-      wer: 0.7143
-    jw_00040:
-      source: jw
-      text: KƐ́ OOTAO OYI ANÁ WALA YƐ HARMAGEDON LƐ, MƐNI ESA AKƐ OFEE?
-      sbs: 0.6562
-      gen_sec: 3.33
-      ref_sec: 5.52
-      cer: 0.3333
-      wer: 0.9167
-    jw_00041:
-      source: jw
-      text: 'c NƆ NI WƆNAA YƐ MFONIRI LƐ MLI: Nyɛmi nuu ko kɛ shishitoo mlai ni ekase yɛ Nyɔŋmɔ Wiemɔ
-        lɛ mli lɛ miitsu nii koni ena nɔ ni ebaanyɛ ekwɛ yɛ TV lɛ nɔ.'
-      sbs: 0.6792
-      gen_sec: 7.2
-      ref_sec: 10.29
-      cer: 0.2435
-      wer: 0.7941
-    jw_00042:
-      source: jw
-      text: MƐNI ASAFOŊBII LƐ BAANYƐ AFEE KƐYE AMƐBUA?
-      sbs: 0.7129
-      gen_sec: 2.5
-      ref_sec: 4.51
-      cer: 0.5714
-      wer: 1.0
-    jw_00043:
-      source: jw
-      text: Nɔ Hewɔ Ni Ehe Miihia Ni Abaptisi Kristofoi Fɛɛ
-      sbs: 0.7218
-      gen_sec: 2.5
-      ref_sec: 7.2
-      cer: 0.1795
-      wer: 0.8889
-    jw_00044:
-      source: jw
-      text: ESA AKƐ WƆMLI AHI AHÃ MƐI NI EJE KPA LƐ
-      sbs: 0.6497
-      gen_sec: 2.23
-      ref_sec: 3.9
-      cer: 0.7
-      wer: 1.0
-    jw_00045:
-      source: jw
-      text: NAMƆ KƐ́ WƆHIƐ BA NYAM YƐ EHIƐ LƐ EHI JOGBAŊŊ?
-      sbs: 0.6993
-      gen_sec: 2.02
-      ref_sec: 4.99
-      cer: 0.3714
-      wer: 0.8
-    jw_00046:
-      source: jw
-      text: Hanania, Mishael, kɛ Azaria
-      sbs: 0.6729
-      gen_sec: 1.77
-      ref_sec: 4.25
-      cer: 0.2273
-      wer: 1.25
-    jw_00047:
-      source: jw
-      text: Mɛni kɛ́ wɔfee lɛ, no baatsɔɔ akɛ wɔkɛ heyeli ni Nyɔŋmɔ kɛdro wɔ lɛ tsuuu nii jogbaŋŋ?
-      sbs: 0.6917
-      gen_sec: 4.33
-      ref_sec: 6.89
-      cer: 0.1493
-      wer: 0.5882
-    jw_00048:
-      source: jw
-      text: KRISTO KÃ HE EETSƆƆ ASAFO LƐ GBƐ
-      sbs: 0.6737
-      gen_sec: 2.16
-      ref_sec: 3.43
-      cer: 0.2692
-      wer: 0.7143
-    jw_00049:
-      source: jw
-      text: Mɛni wɔbaanyɛ wɔfee kɛtsɔɔ akɛ wɔsusuɔ mɛi krokomɛi ahe tamɔ Epafra?
-      sbs: 0.6862
-      gen_sec: 3.37
-      ref_sec: 5.04
-      cer: 0.2632
-      wer: 0.8182
-    jw_00050:
-      source: jw
-      text: Bɔ Ni Obaafee Oná Miishɛɛ Waa Yɛ Shiɛmɔ Nitsumɔ Lɛ Mli
-      sbs: 0.7164
-      gen_sec: 2.4
-      ref_sec: 7.57
-      cer: 0.2727
-      wer: 0.8182
-    jw_00051:
-      source: jw
-      text: “NYƐJIEA EFƆŊFEELƆ LƐ”
-      sbs: 0.7243
-      gen_sec: 1.51
-      ref_sec: 3.4
-      cer: 0.5
-      wer: 1.0
-    jw_00052:
-      source: jw
-      text: JEEE ASAFOŊ ONUKPAI PƐ ESA AKƐ AMƐWO MƐI HEWALƐ
-      sbs: 0.69
-      gen_sec: 2.68
-      ref_sec: 4.92
-      cer: 0.5641
-      wer: 1.1111
-    jw_00053:
-      source: jw
-      text: Ani Ole?
-      sbs: 0.7125
-      gen_sec: 0.74
-      ref_sec: 5.5
-      cer: 0.1667
-      wer: 1.0
-    jw_00054:
-      source: jw
-      text: KƐ́ WƆFEE MƐI EJURƆ LƐ, NYƆŊMƆ BAANÁ WƆHE MIISHƐƐ
-      sbs: 0.7056
-      gen_sec: 2.31
-      ref_sec: 5.76
-      cer: 0.3333
-      wer: 0.8889
-    jw_00055:
-      source: jw
-      text: TE OBAAHÃ HETOO OHÃ TƐŊŊ?
-      sbs: 0.6815
-      gen_sec: 2.0
-      ref_sec: 3.17
-      cer: 0.8
-      wer: 1.0
-    jw_00056:
-      source: jw
-      text: Nɔ ni wɔkaseɔ yɛ bɔ ni Korinto asafo lɛ kɛ nyɛmi nuu ko ni yafee esha ko ni yɔɔ hiɛdɔɔ lɛ
-        ye ehã lɛ mli.
-      sbs: 0.712
-      gen_sec: 5.03
-      ref_sec: 7.76
-      cer: 0.2152
-      wer: 0.64
-    jw_00057:
-      source: jw
-      text: Mɔ ni gba ji Charles Molohan
-      sbs: 0.7392
-      gen_sec: 1.64
-      ref_sec: 3.22
-      cer: 0.1304
-      wer: 0.8333
-    jw_00058:
-      source: jw
-      text: Yehowa Shɛje Mimii Yɛ Mihaomɔi Fɛɛ Amli
-      sbs: 0.7139
-      gen_sec: 2.19
-      ref_sec: 4.32
-      cer: 0.2727
-      wer: 0.7143
-    jw_00059:
-      source: jw
-      text: TE OBAAHÃ HETOO OHÃ TƐŊŊ?
-      sbs: 0.6209
-      gen_sec: 2.0
-      ref_sec: 3.07
-      cer: 0.95
-      wer: 1.0
-    jw_00060:
-      source: jw
-      text: Winston, te nibii tee lɛ tɛŋŋ be ni nyɛbɔi Yehowa sɔɔmɔ lɛ?
-      sbs: 0.7147
-      gen_sec: 2.9
-      ref_sec: 4.83
-      cer: 0.2609
-      wer: 0.75
-    jw_00061:
-      source: jw
-      text: FEEMƆ NIBII NI BAAHÃ EKOMEFEEMƆ NI YƆƆ WƆTEŊ LƐ MLI AWA
-      sbs: 0.6219
-      gen_sec: 3.05
-      ref_sec: 4.66
-      cer: 0.9333
-      wer: 1.0
-    jw_00062:
-      source: jw
-      text: Mɛni mli ajɛ akɛ Kristo lɛ mla lɛ hã?
-      sbs: 0.7472
-      gen_sec: 0.65
-      ref_sec: 3.48
-      cer: 1.0
-      wer: 1.0
-    jw_00063:
-      source: jw
-      text: Tsɔsemɔ Hãa Wɔnaa Akɛ Nyɔŋmɔ Sumɔɔ Wɔ
-      sbs: 0.7269
-      gen_sec: 2.13
-      ref_sec: 7.51
-      cer: 0.1935
-      wer: 0.8571
-    jw_00064:
-      source: jw
-      text: NƆ NI TSƆƆ AKƐ WƆHIƐ SƆƆ HEYELI NI NYƆŊMƆ KƐDRO WƆ LƐ WAA
-      sbs: 0.6798
-      gen_sec: 2.78
-      ref_sec: 5.62
-      cer: 0.3333
-      wer: 0.6923
-    jw_00065:
-      source: jw
-      text: Ani Ole Ohenyɛlɔ Lɛ Jogbaŋŋ?
-      sbs: 0.704
-      gen_sec: 2.08
-      ref_sec: 3.55
-      cer: 0.8696
-      wer: 1.0
-    jw_00066:
-      source: jw
-      text: AMRƆ NƐƐ MITSƆ NIIATSƐ
-      sbs: 0.6495
-      gen_sec: 1.76
-      ref_sec: 3.46
-      cer: 0.7895
-      wer: 1.25
-    jw_00067:
-      source: jw
-      text: ELIA HAO, SHI YEHOWA YE EBUA LƐ
-      sbs: 0.6885
-      gen_sec: 2.12
-      ref_sec: 4.23
-      cer: 0.5833
-      wer: 1.0
-    jw_00068:
-      source: jw
-      text: Mɛni Biblia lɛ hãa wɔleɔ yɛ bɔ ni Yehowa nyɛɔ etsɔɔ nɔ ni baaba wɔsɛɛ lɛ he?
-      sbs: 0.7196
-      gen_sec: 3.49
-      ref_sec: 5.61
-      cer: 0.322
-      wer: 0.8824
-    jw_00069:
-      source: jw
-      text: YESU WO MƐI HEWALƐ
-      sbs: 0.7138
-      gen_sec: 1.62
-      ref_sec: 3.27
-      cer: 0.3333
-      wer: 0.75
-    jw_00070:
-      source: jw
-      text: Mɛni hewɔ ehe miihia ni wɔto wɔtsui shi?
-      sbs: 0.7214
-      gen_sec: 1.93
-      ref_sec: 3.49
-      cer: 0.2812
-      wer: 0.875
-    jw_00071:
-      source: jw
-      text: Mɛni obaanyɛ ofee koni ofai shi ni otswa akɛ obaaye Yehowa anɔkwa daa lɛ mli awa?
-      sbs: 0.687
-      gen_sec: 4.02
-      ref_sec: 6.72
-      cer: 0.2
-      wer: 0.875
-    jw_00072:
-      source: jw
-      text: Mɛni okase yɛ Gideon, Hana, Apolo, kɛ bɔfo Paulo sane lɛ mli?
-      sbs: 0.7186
-      gen_sec: 3.16
-      ref_sec: 7.57
-      cer: 0.0652
-      wer: 0.4167
-    jw_00073:
-      source: jw
-      text: Wɔkɛ Miishɛɛ Miikpa Harmagedon Ta Lɛ Gbɛ!
-      sbs: 0.7189
-      gen_sec: 2.08
-      ref_sec: 6.05
-      cer: 0.1765
-      wer: 0.8571
-    jw_00074:
-      source: jw
-      text: WƆSUMƆƆ WƆHE KƐ “SUƆMƆ NI MLI WA”
-      sbs: 0.551
-      gen_sec: 2.16
-      ref_sec: 4.13
-      cer: 1.0
-      wer: 1.0
-    jw_00075:
-      source: jw
-      text: NAAGBAI NI WƆKƐKPE YƐ MƐIDIJI NI WƆJI LƐ HEWƆ
-      sbs: 0.6905
-      gen_sec: 2.22
-      ref_sec: 4.49
-      cer: 0.4865
-      wer: 1.2222
-    jw_00076:
-      source: jw
-      text: Kɛ́ ogbele JW Library ® lɛ, klikimɔ he ni kɛɛ “Donations” lɛ
-      sbs: 0.7246
-      gen_sec: 1.95
-      ref_sec: 5.07
-      cer: 0.6818
-      wer: 1.0
-    jw_00077:
-      source: jw
-      text: YEHOWA WO EBI LƐ HIƐ NYAM
-      sbs: 0.7012
-      gen_sec: 1.86
-      ref_sec: 3.24
-      cer: 0.35
-      wer: 1.0
-    jw_00078:
-      source: jw
-      text: Mɛni hewɔ wɔbaanyɛ wɔná nɔmimaa akɛ wɔbaanyɛ wɔje Satan tsɔnei lɛ amli lɛ?
-      sbs: 0.7122
-      gen_sec: 3.49
-      ref_sec: 8.05
-      cer: 0.2787
-      wer: 0.8462
-    jw_00079:
-      source: jw
-      text: NAMƐI EHE MIIHIA NI AWO AMƐ HEWALƐ?
-      sbs: 0.7123
-      gen_sec: 2.19
-      ref_sec: 4.13
-      cer: 0.4286
-      wer: 1.0
-    jw_00080:
-      source: jw
-      text: Yɛ blema lɛ, kɛ́ mɔ ko miitao ekɛ meele afã gbɛ lɛ, mɛni efeɔ?
-      sbs: 0.6721
-      gen_sec: 2.76
-      ref_sec: 4.85
-      cer: 0.3556
-      wer: 1.0
-    jw_00081:
-      source: jw
-      text: MƐƐ BEI AMLI WƆBAANYƐ WƆFEE MƐI GBƆ?
-      sbs: 0.7045
-      gen_sec: 1.77
-      ref_sec: 3.96
-      cer: 0.5862
-      wer: 1.4286
-    jw_00082:
-      source: jw
-      text: Mɛi komɛi ahe saji ni aŋmala yɛ Biblia lɛ mli lɛ hãa wɔnaa akɛ, ŋamɔ yɛ hewalɛ waa.
-      sbs: 0.709
-      gen_sec: 4.43
-      ref_sec: 6.27
-      cer: 0.1719
-      wer: 0.6111
-    jw_00083:
-      source: jw
-      text: NIBII NI HÃA ALEƆ MƐI NI WƆJI
-      sbs: 0.7002
-      gen_sec: 2.08
-      ref_sec: 3.89
-      cer: 0.3913
-      wer: 0.8571
-    jw_00084:
-      source: jw
-      text: SUI NI HÃA WƆNÁA MIISHƐƐ
-      sbs: 0.7222
-      gen_sec: 1.77
-      ref_sec: 3.29
-      cer: 0.5
-      wer: 1.0
-    jw_00085:
-      source: jw
-      text: Mɛni hewɔ esa akɛ wɔshiɛ wɔhã mɛi srɔtoi fɛɛ ni wɔkɛkpeɔ lɛ?
-      sbs: 0.7205
-      gen_sec: 3.12
-      ref_sec: 4.9
-      cer: 0.2083
-      wer: 0.9167
-    jw_00086:
-      source: jw
-      text: Okɛ Ohiɛ Afɔ̃ Yehowa Nɔ Koni Ohi Shi Kɛya Naanɔ!
-      sbs: 0.7315
-      gen_sec: 2.44
-      ref_sec: 7.68
-      cer: 0.2432
-      wer: 0.8
-    jw_00087:
-      source: jw
-      text: Wiemɔ Anɔkwale
-      sbs: 0.7509
-      gen_sec: 1.14
-      ref_sec: 5.07
-      cer: 0.0
-      wer: 0.0
-    jw_00088:
-      source: jw
-      text: Mɛni ba Ninive maŋ lɛ nɔ yɛ Yona gbii lɛ asɛɛ?
-      sbs: 0.7774
-      gen_sec: 2.57
-      ref_sec: 3.97
-      cer: 0.9429
-      wer: 1.0
-    jw_00089:
-      source: jw
-      text: SƆLEMƆ OHÃ YEHOWA
-      sbs: 0.736
-      gen_sec: 1.8
-      ref_sec: 3.17
-      cer: 0.5333
-      wer: 1.0
-    jw_00090:
-      source: jw
-      text: Be ni miye afii kpawo tɔ̃ɔ ni mitswa mifai shi akɛ, mifeŋ nɔ ko ni Yehowa sumɔɔɔ
-      sbs: 0.7139
-      gen_sec: 3.74
-      ref_sec: 6.97
-      cer: 0.1613
-      wer: 0.4706
-    jw_00091:
-      source: jw
-      text: Yehowa Webii Sumɔɔ Ni Amɛfee Nɔ Ni Ja
-      sbs: 0.7328
-      gen_sec: 1.97
-      ref_sec: 6.68
-      cer: 0.1333
-      wer: 0.625
-    jw_00092:
-      source: jw
-      text: Mɛɛ gbɛ nɔ Hiob tsɔɔ akɛ eyɛ hemɔkɛyeli ni ehiɛ kã shi?
-      sbs: 0.7199
-      gen_sec: 2.69
-      ref_sec: 5.21
-      cer: 0.3023
-      wer: 0.8333
-    jw_00093:
-      source: jw
-      text: Mɛni Daniel fee ni tsɔɔ akɛ eyɛ ekãa?
-      sbs: 0.7504
-      gen_sec: 1.45
-      ref_sec: 4.14
-      cer: 0.9655
-      wer: 1.0
-    jw_00094:
-      source: jw
-      text: BƆ NI WƆBAAFEE WƆSAA WƆ KƐ MƐI ATEŊ
-      sbs: 0.7171
-      gen_sec: 1.49
-      ref_sec: 3.85
-      cer: 0.6429
-      wer: 1.125
-    jw_00095:
-      source: jw
-      text: 'd NƆ NI WƆNAA YƐ MFONIRI LƐ MLI: Weku ko miifee weku jamɔ, ni fɔlɔi lɛ ená nɔ ni gbekɛbii
-        lɛ ateŋ mɔ fɛɛ mɔ efee koni akɛwo Noa adeka lɛ mli lɛ he miishɛɛ.'
-      sbs: 0.6916
-      gen_sec: 8.67
-      ref_sec: 11.92
-      cer: 0.2119
-      wer: 0.7714
-    jw_00096:
-      source: jw
-      text: Mɛni hewɔ esa akɛ wɔtsɔ wɔwiemɔ kɛ wɔnifeemɔ nɔ wɔhã mɛi ana akɛ wɔhiɛ sɔɔ nii?
-      sbs: 0.7425
-      gen_sec: 3.76
-      ref_sec: 6.31
-      cer: 0.2857
-      wer: 0.9375
-    jw_00097:
-      source: jw
-      text: ANI REHOBOAM JI GBƆMƆ KPAKPA LOO GBƆMƆ GBONYO?
-      sbs: 0.514
-      gen_sec: 3.0
-      ref_sec: 4.3
-      cer: 0.8684
-      wer: 1.0
-    jw_00098:
-      source: jw
-      text: BƆ NI WƆBAAFEE WƆWU WƆSHI MUMƆI FƆJI
-      sbs: 0.5772
-      gen_sec: 2.4
-      ref_sec: 3.91
-      cer: 1.0
-      wer: 1.0
-    jw_00099:
-      source: jw
-      text: Mɔ ni gba ji Jean-Marie Bockaert
-      sbs: 0.7916
-      gen_sec: 0.82
-      ref_sec: 3.96
-      cer: 1.0
-      wer: 1.0
 - model: ghananlpcommunity/ghana-tts-36k-noref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: noref
@@ -9746,6 +8209,7 @@ benchmarks:
   wer: 0.738
   accuracy: 0.5973
   cer_num_scored: 200
+  failed: 0
   composite: 0.626
   score: 0.626
   per_source:
@@ -11371,6 +9835,1641 @@ benchmarks:
       ref_sec: 3.96
       cer: 0.2692
       wer: 0.6667
+- model: k2-fsa/OmniVoice-noref
+  model_url: https://huggingface.co/k2-fsa/OmniVoice
+  mode: noref
+  owner: k2-fsa
+  architecture: OmniVoice (voice cloning + voice design)
+  model_class: non-llm
+  params: 0.6B
+  uses_reference: false
+  sbs: 0.658
+  num_scored: 195
+  cer: 0.4344
+  wer: 0.8535
+  accuracy: 0.5656
+  cer_num_scored: 195
+  failed: 5
+  composite: 0.6118
+  score: 0.6118
+  per_source:
+    finance:
+      sbs: 0.6159
+      cer: 0.4335
+      n: 100
+    jw:
+      sbs: 0.7001
+      cer: 0.4352
+      n: 100
+  entries:
+    finance_00000:
+      source: finance
+      text: nyɔŋmɔ nɛ
+      sbs: 0.7094
+      gen_sec: 1.04
+      ref_sec: 2.39
+      cer: 0.25
+      wer: 1.0
+    finance_00001:
+      source: finance
+      text: Masumɔ ni makwɛ bɔni eshwɛ mi
+      sbs: 0.6106
+      gen_sec: 1.58
+      ref_sec: 4.9
+      cer: 0.125
+      wer: 0.6667
+    finance_00003:
+      source: finance
+      text: kɛfee lɛ tswaa mi
+      sbs: 0.6413
+      gen_sec: 1.25
+      ref_sec: 2.36
+      cer: 0.2857
+      wer: 0.5
+    finance_00005:
+      source: finance
+      text: Ofainɛ mɛni ji o acount number?
+      sbs: 0.5871
+      gen_sec: 1.67
+      ref_sec: 8.07
+      cer: 0.28
+      wer: 0.8333
+    finance_00008:
+      source: finance
+      text: Mo wɔgbe otransfer ɛ naa
+      sbs: 0.7695
+      gen_sec: 2.0
+      ref_sec: 8.48
+      cer: 0.75
+      wer: 1.0
+    finance_00009:
+      source: finance
+      text: No ko kokro yɛ ni oosumɔ ni wɔfee wo ha bo lo
+      sbs: 0.6722
+      gen_sec: 2.09
+      ref_sec: 4.89
+      cer: 0.2647
+      wer: 0.9167
+    finance_00014:
+      source: finance
+      text: Nitsumɔi srotoi yɛ mli
+      sbs: 0.5553
+      gen_sec: 1.37
+      ref_sec: 7.46
+      cer: 0.3684
+      wer: 1.0
+    finance_00015:
+      source: finance
+      text: Miiŋa nyɛ
+      sbs: 0.6144
+      gen_sec: 0.97
+      ref_sec: 4.36
+      cer: 0.0
+      wer: 0.0
+    finance_00016:
+      source: finance
+      text: No ko kokro yɛ ni oosumɔ ni wɔfee wo ha bo lo
+      sbs: 0.6459
+      gen_sec: 2.38
+      ref_sec: 6.56
+      cer: 0.1765
+      wer: 0.5833
+    finance_00017:
+      source: finance
+      text: Ofainɛ mɛɛ network osmɔ ni ohe credit ɛ yɛ nɔ
+      sbs: 0.6218
+      gen_sec: 0.51
+      ref_sec: 5.08
+      cer: 1.0
+      wer: 1.0
+    finance_00018:
+      source: finance
+      text: Mi yɛ ojogbaŋŋ
+      sbs: 0.6793
+      gen_sec: 1.12
+      ref_sec: 5.43
+      cer: 0.25
+      wer: 0.6667
+    finance_00019:
+      source: finance
+      text: Mo wɔgbe otransfer ɛ naa
+      sbs: 0.598
+      gen_sec: 1.54
+      ref_sec: 8.34
+      cer: 0.4
+      wer: 1.0
+    finance_00020:
+      source: finance
+      text: Nfonii fɛɛfɛo
+      sbs: 0.6832
+      gen_sec: 1.18
+      ref_sec: 9.36
+      cer: 0.25
+      wer: 1.0
+    finance_00021:
+      source: finance
+      text: obaanyɛ onyiɛ wɔsɛɛ
+      sbs: 0.6326
+      gen_sec: 1.43
+      ref_sec: 6.8
+      cer: 0.2941
+      wer: 1.0
+    finance_00025:
+      source: finance
+      text: nyɔŋmɔ nɛ
+      sbs: 0.6558
+      gen_sec: 1.0
+      ref_sec: 4.15
+      cer: 0.25
+      wer: 1.0
+    finance_00027:
+      source: finance
+      text: Kaa hani ohiepkanɔ
+      sbs: 0.5863
+      gen_sec: 1.29
+      ref_sec: 6.64
+      cer: 0.4375
+      wer: 2.0
+    finance_00028:
+      source: finance
+      text: Enyiɛ i yɔɔ yɛ i account ɛ mli
+      sbs: 0.7324
+      gen_sec: 0.32
+      ref_sec: 5.52
+      cer: 0.9565
+      wer: 1.0
+    finance_00029:
+      source: finance
+      text: Mahe units
+      sbs: 0.6553
+      gen_sec: 1.56
+      ref_sec: 5.82
+      cer: 0.8889
+      wer: 1.5
+    finance_00030:
+      source: finance
+      text: Ani nakai lo
+      sbs: 0.6802
+      gen_sec: 1.6
+      ref_sec: 5.14
+      cer: 1.0
+      wer: 1.0
+    finance_00031:
+      source: finance
+      text: kasemɔ nɔ ko
+      sbs: 0.0
+      cer: 1.0
+      wer: 1.0
+      failed: no usable audio
+    finance_00032:
+      source: finance
+      text: Ofainɛ nyɛɛ link ɛɛ ni ba  o’screen nɛɛ nɔ
+      sbs: 0.6821
+      gen_sec: 2.01
+      ref_sec: 4.87
+      cer: 0.3438
+      wer: 1.0
+    finance_00033:
+      source: finance
+      text: Yoo minu
+      sbs: 0.6764
+      gen_sec: 1.44
+      ref_sec: 5.34
+      cer: 1.0
+      wer: 1.0
+    finance_00034:
+      source: finance
+      text: ŋmaa wɔ wolo
+      sbs: 0.6999
+      gen_sec: 1.12
+      ref_sec: 5.16
+      cer: 0.0
+      wer: 0.0
+    finance_00036:
+      source: finance
+      text: Ofainɛ hɛɛ mintawɔ ma checki mi account
+      sbs: 0.5885
+      gen_sec: 2.07
+      ref_sec: 9.87
+      cer: 0.303
+      wer: 0.8571
+    finance_00037:
+      source: finance
+      text: Mi shika a, enyiɛ eshwɛ
+      sbs: 0.6532
+      gen_sec: 1.3
+      ref_sec: 6.49
+      cer: 0.1667
+      wer: 0.6
+    finance_00039:
+      source: finance
+      text: Wolo yeŋ
+      sbs: 0.6815
+      gen_sec: 1.44
+      ref_sec: 2.72
+      cer: 0.8571
+      wer: 1.0
+    finance_00042:
+      source: finance
+      text: Obaasumɔ woya ŋshɔ naa
+      sbs: 0.5869
+      gen_sec: 1.47
+      ref_sec: 7.11
+      cer: 0.5789
+      wer: 1.0
+    finance_00043:
+      source: finance
+      text: Sane agbo
+      sbs: 0.7224
+      gen_sec: 1.39
+      ref_sec: 1.71
+      cer: 0.25
+      wer: 0.5
+    finance_00044:
+      source: finance
+      text: Ofee vii tsɔ
+      sbs: 0.6313
+      gen_sec: 1.11
+      ref_sec: 7.08
+      cer: 0.4
+      wer: 1.0
+    finance_00045:
+      source: finance
+      text: kɛfee lɛ tswaa mi
+      sbs: 0.6522
+      gen_sec: 1.3
+      ref_sec: 1.54
+      cer: 0.3571
+      wer: 1.0
+    finance_00047:
+      source: finance
+      text: Bo ni otswa mi aloo?
+      sbs: 0.6259
+      gen_sec: 1.25
+      ref_sec: 5.05
+      cer: 0.2667
+      wer: 0.4
+    finance_00049:
+      source: finance
+      text: Te oyɔɔ tɛŋŋ
+      sbs: 0.6877
+      gen_sec: 0.59
+      ref_sec: 4.46
+      cer: 1.0
+      wer: 1.0
+    finance_00050:
+      source: finance
+      text: Nitsumɔi srotoi yɛ mli
+      sbs: 0.5982
+      gen_sec: 1.4
+      ref_sec: 6.53
+      cer: 0.2632
+      wer: 1.25
+    finance_00051:
+      source: finance
+      text: gbɔi pii yɛ Ga
+      sbs: 0.6976
+      gen_sec: 1.14
+      ref_sec: 5.3
+      cer: 0.3636
+      wer: 1.0
+    finance_00052:
+      source: finance
+      text: Ofainɛ nyɛɛ link ɛɛ ni ba  o’screen nɛɛ nɔ
+      sbs: 0.6104
+      gen_sec: 2.17
+      ref_sec: 7.56
+      cer: 0.125
+      wer: 0.6667
+    finance_00053:
+      source: finance
+      text: Ofainɛ mɛɛ network osmɔ ni ohe credit ɛ yɛ nɔ
+      sbs: 0.5734
+      gen_sec: 2.46
+      ref_sec: 9.68
+      cer: 0.2222
+      wer: 1.0
+    finance_00054:
+      source: finance
+      text: Nyɛɛ ekome
+      sbs: 0.0
+      cer: 1.0
+      wer: 1.0
+      failed: no usable audio
+    finance_00057:
+      source: finance
+      text: Number ni i kɛ twa bo nɛɛ nɔɔ
+      sbs: 0.6678
+      gen_sec: 1.51
+      ref_sec: 2.44
+      cer: 0.2727
+      wer: 0.5
+    finance_00058:
+      source: finance
+      text: Nɛgbɛ oyaa
+      sbs: 0.6365
+      gen_sec: 1.18
+      ref_sec: 3.18
+      cer: 0.0
+      wer: 0.0
+    finance_00059:
+      source: finance
+      text: Miitaɔ ni ma maje
+      sbs: 0.6094
+      gen_sec: 1.33
+      ref_sec: 7.51
+      cer: 0.1429
+      wer: 0.25
+    finance_00060:
+      source: finance
+      text: Ekpakpa feemɔ
+      sbs: 0.6703
+      gen_sec: 1.21
+      ref_sec: 3.38
+      cer: 0.0833
+      wer: 1.0
+    finance_00061:
+      source: finance
+      text: Miikase Ga
+      sbs: 0.6452
+      gen_sec: 1.23
+      ref_sec: 3.64
+      cer: 0.0
+      wer: 0.0
+    finance_00062:
+      source: finance
+      text: Ofainɛ daabi, oyiwaladɔŋŋ
+      sbs: 0.6559
+      gen_sec: 0.86
+      ref_sec: 7.08
+      cer: 0.9545
+      wer: 1.0
+    finance_00063:
+      source: finance
+      text: Yaa sɛɛ fioo
+      sbs: 0.6928
+      gen_sec: 1.2
+      ref_sec: 1.76
+      cer: 0.1
+      wer: 0.3333
+    finance_00064:
+      source: finance
+      text: Nakai nɔɔ
+      sbs: 0.6239
+      gen_sec: 0.56
+      ref_sec: 5.55
+      cer: 0.875
+      wer: 1.0
+    finance_00065:
+      source: finance
+      text: Ofainɛ mintawɔ ma send shika kɛ ha mo ko hu
+      sbs: 0.0
+      cer: 1.0
+      wer: 1.0
+      failed: no usable audio
+    finance_00066:
+      source: finance
+      text: Nitsumɔi srotoi yɛ mli
+      sbs: 0.6238
+      gen_sec: 1.34
+      ref_sec: 4.79
+      cer: 0.0526
+      wer: 0.75
+    finance_00068:
+      source: finance
+      text: Ba bienɛ
+      sbs: 0.6994
+      gen_sec: 0.94
+      ref_sec: 5.72
+      cer: 0.1429
+      wer: 0.5
+    finance_00069:
+      source: finance
+      text: Wɔ fee otransfer ɛ eha bo
+      sbs: 0.0
+      cer: 1.0
+      wer: 1.0
+      failed: no usable audio
+    finance_00070:
+      source: finance
+      text: Ofainɛ shika enyɛ otawɔ o send
+      sbs: 0.6579
+      gen_sec: 1.55
+      ref_sec: 4.88
+      cer: 0.28
+      wer: 1.0
+    finance_00071:
+      source: finance
+      text: Nɔ fɛɛ nɔ yɛ ojogbaŋŋ
+      sbs: 0.6448
+      gen_sec: 1.34
+      ref_sec: 2.99
+      cer: 0.1765
+      wer: 0.4
+    finance_00072:
+      source: finance
+      text: Miitaɔ ni ma maje
+      sbs: 0.6347
+      gen_sec: 1.3
+      ref_sec: 7.26
+      cer: 0.1429
+      wer: 0.25
+    finance_00073:
+      source: finance
+      text: Ofainɛ hɛɛ!
+      sbs: 0.6481
+      gen_sec: 1.6
+      ref_sec: 2.56
+      cer: 0.8889
+      wer: 1.0
+    finance_00076:
+      source: finance
+      text: obaanyɛ onyiɛ wɔsɛɛ
+      sbs: 0.6373
+      gen_sec: 1.34
+      ref_sec: 5.6
+      cer: 0.1765
+      wer: 1.0
+    finance_00077:
+      source: finance
+      text: Miikase Ga
+      sbs: 0.6477
+      gen_sec: 1.14
+      ref_sec: 5.18
+      cer: 0.0
+      wer: 0.0
+    finance_00078:
+      source: finance
+      text: Ofainɛ daabi, oyiwaladɔŋŋ
+      sbs: 0.0
+      cer: 1.0
+      wer: 1.0
+      failed: no usable audio
+    finance_00079:
+      source: finance
+      text: Ofainɛ wɔgbena
+      sbs: 0.5271
+      gen_sec: 0.44
+      ref_sec: 5.71
+      cer: 0.8462
+      wer: 1.0
+    finance_00080:
+      source: finance
+      text: Yɔsemɔ nii
+      sbs: 0.705
+      gen_sec: 1.08
+      ref_sec: 1.7
+      cer: 0.2222
+      wer: 1.0
+    finance_00081:
+      source: finance
+      text: Te oyɔɔ tɛŋŋ
+      sbs: 0.6575
+      gen_sec: 1.1
+      ref_sec: 1.68
+      cer: 0.3
+      wer: 1.0
+    finance_00082:
+      source: finance
+      text: Number ni i kɛ twa bo nɛɛ nɔɔ
+      sbs: 0.6494
+      gen_sec: 0.73
+      ref_sec: 5.29
+      cer: 0.7273
+      wer: 0.875
+    finance_00083:
+      source: finance
+      text: Nyɛɛ ekome
+      sbs: 0.6892
+      gen_sec: 1.07
+      ref_sec: 2.54
+      cer: 0.2222
+      wer: 1.0
+    finance_00084:
+      source: finance
+      text: Nɔ fɛɛ nɔ yɛ ojogbaŋŋ
+      sbs: 0.5827
+      gen_sec: 1.39
+      ref_sec: 6.73
+      cer: 0.2353
+      wer: 0.4
+    finance_00086:
+      source: finance
+      text: Wolo yeŋ
+      sbs: 0.691
+      gen_sec: 1.44
+      ref_sec: 7.07
+      cer: 0.8571
+      wer: 1.0
+    finance_00087:
+      source: finance
+      text: Mahe units
+      sbs: 0.7047
+      gen_sec: 1.56
+      ref_sec: 6.02
+      cer: 1.0
+      wer: 1.0
+    finance_00088:
+      source: finance
+      text: Ofainɛ mɛɛ network osmɔ ni ohe credit ɛ yɛ nɔ
+      sbs: 0.6341
+      gen_sec: 2.43
+      ref_sec: 5.45
+      cer: 0.1389
+      wer: 0.7
+    finance_00089:
+      source: finance
+      text: Yaa sɛɛ fioo
+      sbs: 0.7014
+      gen_sec: 1.16
+      ref_sec: 2.58
+      cer: 0.1
+      wer: 0.3333
+    finance_00090:
+      source: finance
+      text: kɛfee lɛ tswaa mi
+      sbs: 0.6795
+      gen_sec: 1.3
+      ref_sec: 3.88
+      cer: 0.1429
+      wer: 0.25
+    finance_00091:
+      source: finance
+      text: Jiemɔ ohitsirɛ kɛ lala
+      sbs: 0.6408
+      gen_sec: 1.58
+      ref_sec: 6.39
+      cer: 0.3684
+      wer: 1.0
+    finance_00092:
+      source: finance
+      text: Wɔ fee otransfer ɛ eha bo
+      sbs: 0.6005
+      gen_sec: 0.95
+      ref_sec: 6.65
+      cer: 0.8
+      wer: 0.8333
+    finance_00093:
+      source: finance
+      text: Ofainɛ oyɛ five hundred cedis yɛ oacount lɛ mli
+      sbs: 0.627
+      gen_sec: 2.43
+      ref_sec: 5.81
+      cer: 0.6154
+      wer: 0.8889
+    finance_00094:
+      source: finance
+      text: Sane eba
+      sbs: 0.6456
+      gen_sec: 1.44
+      ref_sec: 7.11
+      cer: 0.8571
+      wer: 2.0
+    finance_00095:
+      source: finance
+      text: Kɛya mɛɛ nɛtwork
+      sbs: 0.6613
+      gen_sec: 1.32
+      ref_sec: 4.84
+      cer: 0.0
+      wer: 0.0
+    finance_00096:
+      source: finance
+      text: Mi shika a, enyiɛ eshwɛ
+      sbs: 0.6127
+      gen_sec: 1.25
+      ref_sec: 6.55
+      cer: 0.1667
+      wer: 0.8
+    finance_00097:
+      source: finance
+      text: Enyiɛ ahɔɔ ɛnɛ
+      sbs: 0.6287
+      gen_sec: 1.0
+      ref_sec: 3.04
+      cer: 0.5
+      wer: 1.0
+    finance_00098:
+      source: finance
+      text: Mi yɛ ojogbaŋŋ
+      sbs: 0.7057
+      gen_sec: 1.03
+      ref_sec: 3.28
+      cer: 0.3333
+      wer: 0.6667
+    finance_00099:
+      source: finance
+      text: Mahe units
+      sbs: 0.7
+      gen_sec: 1.56
+      ref_sec: 8.01
+      cer: 1.0
+      wer: 1.0
+    finance_00100:
+      source: finance
+      text: Masumɔ ni makwɛ bɔni eshwɛ mi
+      sbs: 0.635
+      gen_sec: 1.66
+      ref_sec: 7.64
+      cer: 0.125
+      wer: 0.1667
+    finance_00101:
+      source: finance
+      text: Mɛni ofeɔ ŋmɛnɛ
+      sbs: 0.6744
+      gen_sec: 1.02
+      ref_sec: 3.12
+      cer: 0.6154
+      wer: 1.3333
+    finance_00102:
+      source: finance
+      text: Ofainɛ tsɛ number oha mi
+      sbs: 0.609
+      gen_sec: 1.54
+      ref_sec: 6.8
+      cer: 0.3
+      wer: 1.0
+    finance_00103:
+      source: finance
+      text: Sane eba
+      sbs: 0.6332
+      gen_sec: 1.44
+      ref_sec: 2.68
+      cer: 0.8571
+      wer: 1.0
+    finance_00104:
+      source: finance
+      text: Miikase Ga
+      sbs: 0.6428
+      gen_sec: 1.06
+      ref_sec: 5.24
+      cer: 0.1111
+      wer: 0.5
+    finance_00105:
+      source: finance
+      text: Nyɛɛ ekome
+      sbs: 0.671
+      gen_sec: 0.43
+      ref_sec: 4.72
+      cer: 1.0
+      wer: 1.0
+    finance_00106:
+      source: finance
+      text: Ofee vii tsɔ
+      sbs: 0.6679
+      gen_sec: 1.12
+      ref_sec: 5.36
+      cer: 0.4
+      wer: 1.0
+    finance_00107:
+      source: finance
+      text: Ofainɛ mɛni ji o acount number?
+      sbs: 0.6642
+      gen_sec: 2.12
+      ref_sec: 7.24
+      cer: 0.96
+      wer: 0.8333
+    finance_00108:
+      source: finance
+      text: Tsofa kpakpa, jara wa
+      sbs: 0.6367
+      gen_sec: 1.5
+      ref_sec: 6.46
+      cer: 0.0
+      wer: 0.0
+    finance_00110:
+      source: finance
+      text: Nitsumɔi srotoi yɛ mli
+      sbs: 0.5972
+      gen_sec: 1.55
+      ref_sec: 5.86
+      cer: 0.0526
+      wer: 1.0
+    finance_00112:
+      source: finance
+      text: ŋmaa wɔ wolo
+      sbs: 0.6746
+      gen_sec: 1.6
+      ref_sec: 5.94
+      cer: 0.9
+      wer: 1.0
+    finance_00113:
+      source: finance
+      text: Enyiɛ i yɔɔ yɛ i account ɛ mli
+      sbs: 0.6219
+      gen_sec: 1.6
+      ref_sec: 6.32
+      cer: 0.2174
+      wer: 0.875
+    finance_00114:
+      source: finance
+      text: Ofainɛ mahe yɛ airtel tigo
+      sbs: 0.6758
+      gen_sec: 1.71
+      ref_sec: 7.28
+      cer: 0.3182
+      wer: 0.8
+    finance_00115:
+      source: finance
+      text: Nyɛɛ ekome
+      sbs: 0.6255
+      gen_sec: 0.93
+      ref_sec: 8.32
+      cer: 0.1111
+      wer: 0.5
+    finance_00116:
+      source: finance
+      text: Ofainɛ mɛɛ network osmɔ ni ohe credit ɛ yɛ nɔ
+      sbs: 0.6472
+      gen_sec: 2.8
+      ref_sec: 9.65
+      cer: 1.0
+      wer: 1.0
+    finance_00118:
+      source: finance
+      text: Obaanyɛ ni ofee oha mi aloo
+      sbs: 0.7285
+      gen_sec: 2.04
+      ref_sec: 8.39
+      cer: 0.9545
+      wer: 1.0
+    finance_00119:
+      source: finance
+      text: Miiya solemɔ he lɛ
+      sbs: 0.6315
+      gen_sec: 1.24
+      ref_sec: 2.4
+      cer: 0.1333
+      wer: 0.5
+    finance_00120:
+      source: finance
+      text: Masumɔ ni makwɛ bɔni eshwɛ mi
+      sbs: 0.635
+      gen_sec: 1.61
+      ref_sec: 7.34
+      cer: 0.125
+      wer: 0.6667
+    finance_00121:
+      source: finance
+      text: Ofainɛ oyiwaladɔŋŋ
+      sbs: 0.6163
+      gen_sec: 1.39
+      ref_sec: 6.35
+      cer: 0.3529
+      wer: 1.5
+    finance_00122:
+      source: finance
+      text: Ofainɛ shika enyɛ otawɔ o send
+      sbs: 0.5339
+      gen_sec: 1.43
+      ref_sec: 7.82
+      cer: 0.36
+      wer: 0.8333
+    finance_00123:
+      source: finance
+      text: Ni o’mia o’ password owo nɔ
+      sbs: 0.5887
+      gen_sec: 1.48
+      ref_sec: 8.27
+      cer: 0.5
+      wer: 1.0
+    finance_00124:
+      source: finance
+      text: Shika enyiɛ i yɔɔ
+      sbs: 0.6888
+      gen_sec: 1.15
+      ref_sec: 7.24
+      cer: 0.2857
+      wer: 0.75
+    finance_00125:
+      source: finance
+      text: Adafitwaa kɛ shwɛmɔ
+      sbs: 0.6826
+      gen_sec: 1.5
+      ref_sec: 8.12
+      cer: 0.1176
+      wer: 0.3333
+    finance_00126:
+      source: finance
+      text: Nɛgbɛ oyaa
+      sbs: 0.6707
+      gen_sec: 1.11
+      ref_sec: 5.05
+      cer: 0.1111
+      wer: 2.0
+    jw_00000:
+      source: jw
+      text: NIBII NI BAAYE ABUA BO NI OBATSƆ KRISTOFONYO NI EDA YƐ MUMƆŊ
+      sbs: 0.7238
+      gen_sec: 2.56
+      ref_sec: 4.33
+      cer: 0.4286
+      wer: 0.8333
+    jw_00001:
+      source: jw
+      text: MIKASE NII NI MITSƆƆ NII BE NI MISƆMƆƆ AKƐ KPOKPAA NƆKWƐLƆ KƐ BE NI MISƆMƆƆ AKƐ KPOKPAA WULU
+        NƆKWƐLƆ LƐ
+      sbs: 0.7059
+      gen_sec: 5.81
+      ref_sec: 6.75
+      cer: 0.7262
+      wer: 0.8
+    jw_00002:
+      source: jw
+      text: Mɛɛ be nɛkɛ Yehowa yelikɛbuamɔ he baahia wɔ waa?
+      sbs: 0.745
+      gen_sec: 2.36
+      ref_sec: 4.84
+      cer: 0.2308
+      wer: 1.0
+    jw_00003:
+      source: jw
+      text: Mɛni hewɔ esaaa akɛ wɔnuɔ he akɛ kɛ́ wɔbatsɔmɔ Kristofoi ni edara yɛ mumɔŋ lɛ, belɛ wɔgbe
+        naa lɛ?
+      sbs: 0.6849
+      gen_sec: 4.76
+      ref_sec: 6.92
+      cer: 0.1316
+      wer: 0.5789
+    jw_00004:
+      source: jw
+      text: No hewɔ lɛ, eyɛ mli akɛ mɛi ni hi shi yɛ blema lɛ bɛ watsii, tamɔ bɔ ni wɔyɔɔ ŋmɛnɛ lɛ moŋ,
+        shi no mli lɛ amɛyɛ gbɛ ni amɛtsɔɔ nɔ amɛtsɔɔ bɔ ni atswa.
+      sbs: 0.6577
+      gen_sec: 7.35
+      ref_sec: 13.08
+      cer: 0.9375
+      wer: 0.9429
+    jw_00005:
+      source: jw
+      text: Feemɔ nibii ni nyɛmimɛi lɛ feɔ lɛ eko. Yaa asafoŋ kpeei lɛ fɛɛ, ni okɛ amɛ afee ekome kɛya
+        shiɛmɔ
+      sbs: 0.7052
+      gen_sec: 5.19
+      ref_sec: 9.49
+      cer: 0.1579
+      wer: 0.55
+    jw_00006:
+      source: jw
+      text: Winston, ani sɔɔmɔ ni oyasɔmɔ yɛ Pasifik Wuoyigbɛ Ŋshɔkpɔi lɛ anɔ lɛ eye ebua bo ni onyɛ otsu
+        onitsumɔ akɛ Australasia Nitsumɔhe Nine Ajinafoi Akuu lɛ mli nyo lɛ jogbaŋŋ?
+      sbs: 0.6866
+      gen_sec: 8.74
+      ref_sec: 11.67
+      cer: 0.1942
+      wer: 0.9
+    jw_00007:
+      source: jw
+      text: HÃ NIKASEMƆ ATSE ONAA
+      sbs: 0.6951
+      gen_sec: 1.92
+      ref_sec: 3.6
+      cer: 0.3889
+      wer: 1.25
+    jw_00008:
+      source: jw
+      text: KƐ́ WƆKƐ WƆHIƐ FƆ̃ YEHOWA NƆ LƐ WƆBAANÁ NAANƆ WALA
+      sbs: 0.7125
+      gen_sec: 2.36
+      ref_sec: 5.23
+      cer: 0.4359
+      wer: 1.0
+    jw_00009:
+      source: jw
+      text: Mɛni kɛ́ wɔfee lɛ, no baahã wɔye Yehowa anɔkwa?
+      sbs: 0.7773
+      gen_sec: 2.58
+      ref_sec: 4.33
+      cer: 0.2222
+      wer: 0.7778
+    jw_00010:
+      source: jw
+      text: Wɔbaakase bɔ ni wɔnáa mfonirifeemɔŋ paradeiso lɛ he sɛɛ kɛ nɔ ni wɔbaafee ni baagbala mɛi
+        krokomɛi kɛba mli lɛ he nii.
+      sbs: 0.7176
+      gen_sec: 6.42
+      ref_sec: 9.49
+      cer: 0.1562
+      wer: 0.6364
+    jw_00011:
+      source: jw
+      text: ESAA MƐI ATSUI KƐ AMƐJWƐŊMƆ
+      sbs: 0.6718
+      gen_sec: 1.8
+      ref_sec: 3.36
+      cer: 0.7391
+      wer: 1.2
+    jw_00012:
+      source: jw
+      text: Sanebimɔi Ni Jɛ Kanelɔi Adɛŋ
+      sbs: 0.6807
+      gen_sec: 0.54
+      ref_sec: 3.49
+      cer: 1.0
+      wer: 1.0
+    jw_00013:
+      source: jw
+      text: PAULO YE EBUA ENYƐMIMƐI LƐ KONI AMƐHEMƆKƐYELI LƐ MLI AWA
+      sbs: 0.6572
+      gen_sec: 3.22
+      ref_sec: 4.79
+      cer: 0.5957
+      wer: 1.0
+    jw_00014:
+      source: jw
+      text: NITSUMƆ KO NI HE HIAA WAA
+      sbs: 0.693
+      gen_sec: 1.85
+      ref_sec: 3.23
+      cer: 0.45
+      wer: 1.0
+    jw_00015:
+      source: jw
+      text: Pam, bo hu obale anɔkwale lɛ yɛ ogbekɛbiiashi. Te eba lɛ tɛŋŋ?
+      sbs: 0.7311
+      gen_sec: 2.82
+      ref_sec: 5.26
+      cer: 0.2917
+      wer: 1.0
+    jw_00016:
+      source: jw
+      text: MƐƐ GBƐ NƆ NIBII NI NYIƐ SƐƐ NƐƐ BAANYƐ AYE ABUA WƆ NI WƆKAYOYORO KƐ́ WƆKƐ NAAGBAI KPE?
+      sbs: 0.719
+      gen_sec: 4.18
+      ref_sec: 6.96
+      cer: 0.2941
+      wer: 0.8333
+    jw_00017:
+      source: jw
+      text: Mɛni hewɔ ehe miihia ni wɔhã yiŋtoi ahewɔ ni wɔshiɛɔ lɛ ahi wɔjwɛŋmɔ mli?
+      sbs: 0.7294
+      gen_sec: 3.57
+      ref_sec: 5.45
+      cer: 0.1525
+      wer: 0.5714
+    jw_00018:
+      source: jw
+      text: Mɛɛ gbɛ nɔ brikii ni ana yɛ he ni blema Babilon yɔɔ lɛ kɛ gbɛi ni atsɔ nɔ afee brikii nɛɛ
+        maa nɔ mi akɛ, nɔ ni awie yɛ Biblia lɛ mli lɛ ja lɛɛlɛŋ?
+      sbs: 0.697
+      gen_sec: 7.8
+      ref_sec: 11.51
+      cer: 0.3818
+      wer: 0.8571
+    jw_00019:
+      source: jw
+      text: NYƐSUƆMƆ LƐ MLI AWAA
+      sbs: 0.6717
+      gen_sec: 1.88
+      ref_sec: 3.1
+      cer: 0.7059
+      wer: 1.0
+    jw_00020:
+      source: jw
+      text: Nyɛmimɛi ni tee kpee nɛɛ eko lɛ ateŋ mɛi pii kɛɛ miishɛɛ ni amɛná yɛ kpee nɛɛ shishi lɛ nɔ
+        bɛ, ejaakɛ amɛna faŋŋ akɛ Yehowa miijɔɔ ewebii lɛ. Shi amɛmiishɛɛ lɛ sɛɛ etsɛɛɛ.
+      sbs: 0.6726
+      gen_sec: 8.9
+      ref_sec: 13.87
+      cer: 0.3185
+      wer: 0.7059
+    jw_00021:
+      source: jw
+      text: Feemɔ Nibii Ni Baahã Ohe Oye Waa Akɛ Yehowa Asafo Lɛ Nɛ
+      sbs: 0.709
+      gen_sec: 3.09
+      ref_sec: 4.79
+      cer: 0.0909
+      wer: 0.4167
+    jw_00022:
+      source: jw
+      text: YEHOWA BAAYE EBUA WƆ KƐ́ WƆMIINU HE AKƐ WƆBƐ MƆ KO
+      sbs: 0.7179
+      gen_sec: 2.54
+      ref_sec: 5.32
+      cer: 0.3077
+      wer: 0.9091
+    jw_00023:
+      source: jw
+      text: NƆ NI ABAASUSU HE a
+      sbs: 0.6626
+      gen_sec: 1.83
+      ref_sec: 3.18
+      cer: 0.6667
+      wer: 0.8
+    jw_00024:
+      source: jw
+      text: MƐNI HEWƆ ESA AKƐ WƆJIE HIƐSƆƆ KPO?
+      sbs: 0.7181
+      gen_sec: 1.59
+      ref_sec: 3.94
+      cer: 0.5
+      wer: 1.0
+    jw_00025:
+      source: jw
+      text: Mɛi Ni Sɔmɔɔ “Miishɛɛ Nyɔŋmɔ Lɛ” Yɛ Miishɛɛ
+      sbs: 0.7294
+      gen_sec: 2.33
+      ref_sec: 6.99
+      cer: 0.1471
+      wer: 0.375
+    jw_00026:
+      source: jw
+      text: ‘Nyɛkwɛa Jogbaŋŋ Ni Mɔ Ko Akaŋɔ Nyɛ Nom’!
+      sbs: 0.7409
+      gen_sec: 1.94
+      ref_sec: 6.34
+      cer: 0.3226
+      wer: 0.875
+    jw_00027:
+      source: jw
+      text: OKƐ OTII NI OBAANYƐ OSHƐ HE AMAMƆ OHIƐ
+      sbs: 0.6691
+      gen_sec: 2.39
+      ref_sec: 3.52
+      cer: 0.6452
+      wer: 1.0
+    jw_00028:
+      source: jw
+      text: BƆ NI FEE NI MIKASE YEHOWA HE NII NI MIBALE LƐ
+      sbs: 0.7297
+      gen_sec: 2.31
+      ref_sec: 3.28
+      cer: 0.25
+      wer: 0.5455
+    jw_00029:
+      source: jw
+      text: YEHOWA BOƆ SƆLEMƆI TOI
+      sbs: 0.7043
+      gen_sec: 1.96
+      ref_sec: 3.43
+      cer: 1.0
+      wer: 1.0
+    jw_00030:
+      source: jw
+      text: Nɔ Hewɔ Ni Enáaa Nyɔŋmɔ Hiɛ Dromɔ
+      sbs: 0.6336
+      gen_sec: 1.04
+      ref_sec: 4.01
+      cer: 0.963
+      wer: 1.0
+    jw_00031:
+      source: jw
+      text: BO YEHOWA TOI KONI EHI EHÃ BO WƆSƐƐ
+      sbs: 0.7301
+      gen_sec: 2.19
+      ref_sec: 4.35
+      cer: 0.6429
+      wer: 1.0
+    jw_00032:
+      source: jw
+      text: Bɔ ni wɔbaafee wɔhã hemɔkɛyeli ni wɔyɔɔ akɛ Yehowa asafo lɛ nɛ lɛ mli awa be fɛɛ be.
+      sbs: 0.6973
+      gen_sec: 3.89
+      ref_sec: 6.3
+      cer: 0.2424
+      wer: 0.6667
+    jw_00033:
+      source: jw
+      text: Wɔle akɛ nyɛyi enyɔ fɛɛ nyɛnya sɔɔmɔ ni nyɛsɔmɔ yɛ ŋshɔkpɔi lɛ anɔ lɛ he waa. Ani nyɛbaasumɔ
+        ni nyɛgba wɔ nibii ni tee nɔ yɛ jɛmɛ ni nyɛhiɛ kpaŋ nɔ kɔkɔɔkɔ lɛ ekomɛi?
+      sbs: 0.6787
+      gen_sec: 8.79
+      ref_sec: 10.11
+      cer: 0.2519
+      wer: 0.7647
+    jw_00034:
+      source: jw
+      text: Ani naagba yɛ he akɛ Yehowa Odasefoi kɛ wɛbsaitii loo apps ni akɛtaoɔ gbalashihilɛ mli hefatalɔi
+        baatsu nii?
+      sbs: 0.7006
+      gen_sec: 5.54
+      ref_sec: 9.21
+      cer: 0.2222
+      wer: 0.9444
+    jw_00035:
+      source: jw
+      text: MIBƆI SƆƆMƆ EKOŊŊ AKƐ KPOKPAA NƆKWƐLƆ
+      sbs: 0.6877
+      gen_sec: 1.93
+      ref_sec: 3.25
+      cer: 0.2812
+      wer: 1.1667
+    jw_00036:
+      source: jw
+      text: Mɛɛ gbɛ nɔ esoro Yesu baptisimɔ lɛ yɛ esɛɛnyiɛlɔi lɛ anɔ lɛ he?
+      sbs: 0.7315
+      gen_sec: 3.15
+      ref_sec: 5.39
+      cer: 0.3
+      wer: 1.0
+    jw_00037:
+      source: jw
+      text: NYƐMIMƐI LƐ TEE NƆ AMƐSHIƐ
+      sbs: 0.6677
+      gen_sec: 1.8
+      ref_sec: 3.05
+      cer: 0.6364
+      wer: 1.0
+    jw_00038:
+      source: jw
+      text: Sanebimɔi Ni Jɛ Kanelɔi Adɛŋ
+      sbs: 0.7269
+      gen_sec: 1.71
+      ref_sec: 4.27
+      cer: 0.375
+      wer: 1.4
+    jw_00039:
+      source: jw
+      text: KƐ́ WƆMLI HI LƐ, WƆBAAFEE MƐI EJURƆ
+      sbs: 0.6972
+      gen_sec: 1.87
+      ref_sec: 3.99
+      cer: 0.1481
+      wer: 0.7143
+    jw_00040:
+      source: jw
+      text: KƐ́ OOTAO OYI ANÁ WALA YƐ HARMAGEDON LƐ, MƐNI ESA AKƐ OFEE?
+      sbs: 0.6562
+      gen_sec: 3.33
+      ref_sec: 5.52
+      cer: 0.3333
+      wer: 0.9167
+    jw_00041:
+      source: jw
+      text: 'c NƆ NI WƆNAA YƐ MFONIRI LƐ MLI: Nyɛmi nuu ko kɛ shishitoo mlai ni ekase yɛ Nyɔŋmɔ Wiemɔ
+        lɛ mli lɛ miitsu nii koni ena nɔ ni ebaanyɛ ekwɛ yɛ TV lɛ nɔ.'
+      sbs: 0.6792
+      gen_sec: 7.2
+      ref_sec: 10.29
+      cer: 0.2435
+      wer: 0.7941
+    jw_00042:
+      source: jw
+      text: MƐNI ASAFOŊBII LƐ BAANYƐ AFEE KƐYE AMƐBUA?
+      sbs: 0.7129
+      gen_sec: 2.5
+      ref_sec: 4.51
+      cer: 0.5714
+      wer: 1.0
+    jw_00043:
+      source: jw
+      text: Nɔ Hewɔ Ni Ehe Miihia Ni Abaptisi Kristofoi Fɛɛ
+      sbs: 0.7218
+      gen_sec: 2.5
+      ref_sec: 7.2
+      cer: 0.1795
+      wer: 0.8889
+    jw_00044:
+      source: jw
+      text: ESA AKƐ WƆMLI AHI AHÃ MƐI NI EJE KPA LƐ
+      sbs: 0.6497
+      gen_sec: 2.23
+      ref_sec: 3.9
+      cer: 0.7
+      wer: 1.0
+    jw_00045:
+      source: jw
+      text: NAMƆ KƐ́ WƆHIƐ BA NYAM YƐ EHIƐ LƐ EHI JOGBAŊŊ?
+      sbs: 0.6993
+      gen_sec: 2.02
+      ref_sec: 4.99
+      cer: 0.3714
+      wer: 0.8
+    jw_00046:
+      source: jw
+      text: Hanania, Mishael, kɛ Azaria
+      sbs: 0.6729
+      gen_sec: 1.77
+      ref_sec: 4.25
+      cer: 0.2273
+      wer: 1.25
+    jw_00047:
+      source: jw
+      text: Mɛni kɛ́ wɔfee lɛ, no baatsɔɔ akɛ wɔkɛ heyeli ni Nyɔŋmɔ kɛdro wɔ lɛ tsuuu nii jogbaŋŋ?
+      sbs: 0.6917
+      gen_sec: 4.33
+      ref_sec: 6.89
+      cer: 0.1493
+      wer: 0.5882
+    jw_00048:
+      source: jw
+      text: KRISTO KÃ HE EETSƆƆ ASAFO LƐ GBƐ
+      sbs: 0.6737
+      gen_sec: 2.16
+      ref_sec: 3.43
+      cer: 0.2692
+      wer: 0.7143
+    jw_00049:
+      source: jw
+      text: Mɛni wɔbaanyɛ wɔfee kɛtsɔɔ akɛ wɔsusuɔ mɛi krokomɛi ahe tamɔ Epafra?
+      sbs: 0.6862
+      gen_sec: 3.37
+      ref_sec: 5.04
+      cer: 0.2632
+      wer: 0.8182
+    jw_00050:
+      source: jw
+      text: Bɔ Ni Obaafee Oná Miishɛɛ Waa Yɛ Shiɛmɔ Nitsumɔ Lɛ Mli
+      sbs: 0.7164
+      gen_sec: 2.4
+      ref_sec: 7.57
+      cer: 0.2727
+      wer: 0.8182
+    jw_00051:
+      source: jw
+      text: “NYƐJIEA EFƆŊFEELƆ LƐ”
+      sbs: 0.7243
+      gen_sec: 1.51
+      ref_sec: 3.4
+      cer: 0.5
+      wer: 1.0
+    jw_00052:
+      source: jw
+      text: JEEE ASAFOŊ ONUKPAI PƐ ESA AKƐ AMƐWO MƐI HEWALƐ
+      sbs: 0.69
+      gen_sec: 2.68
+      ref_sec: 4.92
+      cer: 0.5641
+      wer: 1.1111
+    jw_00053:
+      source: jw
+      text: Ani Ole?
+      sbs: 0.7125
+      gen_sec: 0.74
+      ref_sec: 5.5
+      cer: 0.1667
+      wer: 1.0
+    jw_00054:
+      source: jw
+      text: KƐ́ WƆFEE MƐI EJURƆ LƐ, NYƆŊMƆ BAANÁ WƆHE MIISHƐƐ
+      sbs: 0.7056
+      gen_sec: 2.31
+      ref_sec: 5.76
+      cer: 0.3333
+      wer: 0.8889
+    jw_00055:
+      source: jw
+      text: TE OBAAHÃ HETOO OHÃ TƐŊŊ?
+      sbs: 0.6815
+      gen_sec: 2.0
+      ref_sec: 3.17
+      cer: 0.8
+      wer: 1.0
+    jw_00056:
+      source: jw
+      text: Nɔ ni wɔkaseɔ yɛ bɔ ni Korinto asafo lɛ kɛ nyɛmi nuu ko ni yafee esha ko ni yɔɔ hiɛdɔɔ lɛ
+        ye ehã lɛ mli.
+      sbs: 0.712
+      gen_sec: 5.03
+      ref_sec: 7.76
+      cer: 0.2152
+      wer: 0.64
+    jw_00057:
+      source: jw
+      text: Mɔ ni gba ji Charles Molohan
+      sbs: 0.7392
+      gen_sec: 1.64
+      ref_sec: 3.22
+      cer: 0.1304
+      wer: 0.8333
+    jw_00058:
+      source: jw
+      text: Yehowa Shɛje Mimii Yɛ Mihaomɔi Fɛɛ Amli
+      sbs: 0.7139
+      gen_sec: 2.19
+      ref_sec: 4.32
+      cer: 0.2727
+      wer: 0.7143
+    jw_00059:
+      source: jw
+      text: TE OBAAHÃ HETOO OHÃ TƐŊŊ?
+      sbs: 0.6209
+      gen_sec: 2.0
+      ref_sec: 3.07
+      cer: 0.95
+      wer: 1.0
+    jw_00060:
+      source: jw
+      text: Winston, te nibii tee lɛ tɛŋŋ be ni nyɛbɔi Yehowa sɔɔmɔ lɛ?
+      sbs: 0.7147
+      gen_sec: 2.9
+      ref_sec: 4.83
+      cer: 0.2609
+      wer: 0.75
+    jw_00061:
+      source: jw
+      text: FEEMƆ NIBII NI BAAHÃ EKOMEFEEMƆ NI YƆƆ WƆTEŊ LƐ MLI AWA
+      sbs: 0.6219
+      gen_sec: 3.05
+      ref_sec: 4.66
+      cer: 0.9333
+      wer: 1.0
+    jw_00062:
+      source: jw
+      text: Mɛni mli ajɛ akɛ Kristo lɛ mla lɛ hã?
+      sbs: 0.7472
+      gen_sec: 0.65
+      ref_sec: 3.48
+      cer: 1.0
+      wer: 1.0
+    jw_00063:
+      source: jw
+      text: Tsɔsemɔ Hãa Wɔnaa Akɛ Nyɔŋmɔ Sumɔɔ Wɔ
+      sbs: 0.7269
+      gen_sec: 2.13
+      ref_sec: 7.51
+      cer: 0.1935
+      wer: 0.8571
+    jw_00064:
+      source: jw
+      text: NƆ NI TSƆƆ AKƐ WƆHIƐ SƆƆ HEYELI NI NYƆŊMƆ KƐDRO WƆ LƐ WAA
+      sbs: 0.6798
+      gen_sec: 2.78
+      ref_sec: 5.62
+      cer: 0.3333
+      wer: 0.6923
+    jw_00065:
+      source: jw
+      text: Ani Ole Ohenyɛlɔ Lɛ Jogbaŋŋ?
+      sbs: 0.704
+      gen_sec: 2.08
+      ref_sec: 3.55
+      cer: 0.8696
+      wer: 1.0
+    jw_00066:
+      source: jw
+      text: AMRƆ NƐƐ MITSƆ NIIATSƐ
+      sbs: 0.6495
+      gen_sec: 1.76
+      ref_sec: 3.46
+      cer: 0.7895
+      wer: 1.25
+    jw_00067:
+      source: jw
+      text: ELIA HAO, SHI YEHOWA YE EBUA LƐ
+      sbs: 0.6885
+      gen_sec: 2.12
+      ref_sec: 4.23
+      cer: 0.5833
+      wer: 1.0
+    jw_00068:
+      source: jw
+      text: Mɛni Biblia lɛ hãa wɔleɔ yɛ bɔ ni Yehowa nyɛɔ etsɔɔ nɔ ni baaba wɔsɛɛ lɛ he?
+      sbs: 0.7196
+      gen_sec: 3.49
+      ref_sec: 5.61
+      cer: 0.322
+      wer: 0.8824
+    jw_00069:
+      source: jw
+      text: YESU WO MƐI HEWALƐ
+      sbs: 0.7138
+      gen_sec: 1.62
+      ref_sec: 3.27
+      cer: 0.3333
+      wer: 0.75
+    jw_00070:
+      source: jw
+      text: Mɛni hewɔ ehe miihia ni wɔto wɔtsui shi?
+      sbs: 0.7214
+      gen_sec: 1.93
+      ref_sec: 3.49
+      cer: 0.2812
+      wer: 0.875
+    jw_00071:
+      source: jw
+      text: Mɛni obaanyɛ ofee koni ofai shi ni otswa akɛ obaaye Yehowa anɔkwa daa lɛ mli awa?
+      sbs: 0.687
+      gen_sec: 4.02
+      ref_sec: 6.72
+      cer: 0.2
+      wer: 0.875
+    jw_00072:
+      source: jw
+      text: Mɛni okase yɛ Gideon, Hana, Apolo, kɛ bɔfo Paulo sane lɛ mli?
+      sbs: 0.7186
+      gen_sec: 3.16
+      ref_sec: 7.57
+      cer: 0.0652
+      wer: 0.4167
+    jw_00073:
+      source: jw
+      text: Wɔkɛ Miishɛɛ Miikpa Harmagedon Ta Lɛ Gbɛ!
+      sbs: 0.7189
+      gen_sec: 2.08
+      ref_sec: 6.05
+      cer: 0.1765
+      wer: 0.8571
+    jw_00074:
+      source: jw
+      text: WƆSUMƆƆ WƆHE KƐ “SUƆMƆ NI MLI WA”
+      sbs: 0.551
+      gen_sec: 2.16
+      ref_sec: 4.13
+      cer: 1.0
+      wer: 1.0
+    jw_00075:
+      source: jw
+      text: NAAGBAI NI WƆKƐKPE YƐ MƐIDIJI NI WƆJI LƐ HEWƆ
+      sbs: 0.6905
+      gen_sec: 2.22
+      ref_sec: 4.49
+      cer: 0.4865
+      wer: 1.2222
+    jw_00076:
+      source: jw
+      text: Kɛ́ ogbele JW Library ® lɛ, klikimɔ he ni kɛɛ “Donations” lɛ
+      sbs: 0.7246
+      gen_sec: 1.95
+      ref_sec: 5.07
+      cer: 0.6818
+      wer: 1.0
+    jw_00077:
+      source: jw
+      text: YEHOWA WO EBI LƐ HIƐ NYAM
+      sbs: 0.7012
+      gen_sec: 1.86
+      ref_sec: 3.24
+      cer: 0.35
+      wer: 1.0
+    jw_00078:
+      source: jw
+      text: Mɛni hewɔ wɔbaanyɛ wɔná nɔmimaa akɛ wɔbaanyɛ wɔje Satan tsɔnei lɛ amli lɛ?
+      sbs: 0.7122
+      gen_sec: 3.49
+      ref_sec: 8.05
+      cer: 0.2787
+      wer: 0.8462
+    jw_00079:
+      source: jw
+      text: NAMƐI EHE MIIHIA NI AWO AMƐ HEWALƐ?
+      sbs: 0.7123
+      gen_sec: 2.19
+      ref_sec: 4.13
+      cer: 0.4286
+      wer: 1.0
+    jw_00080:
+      source: jw
+      text: Yɛ blema lɛ, kɛ́ mɔ ko miitao ekɛ meele afã gbɛ lɛ, mɛni efeɔ?
+      sbs: 0.6721
+      gen_sec: 2.76
+      ref_sec: 4.85
+      cer: 0.3556
+      wer: 1.0
+    jw_00081:
+      source: jw
+      text: MƐƐ BEI AMLI WƆBAANYƐ WƆFEE MƐI GBƆ?
+      sbs: 0.7045
+      gen_sec: 1.77
+      ref_sec: 3.96
+      cer: 0.5862
+      wer: 1.4286
+    jw_00082:
+      source: jw
+      text: Mɛi komɛi ahe saji ni aŋmala yɛ Biblia lɛ mli lɛ hãa wɔnaa akɛ, ŋamɔ yɛ hewalɛ waa.
+      sbs: 0.709
+      gen_sec: 4.43
+      ref_sec: 6.27
+      cer: 0.1719
+      wer: 0.6111
+    jw_00083:
+      source: jw
+      text: NIBII NI HÃA ALEƆ MƐI NI WƆJI
+      sbs: 0.7002
+      gen_sec: 2.08
+      ref_sec: 3.89
+      cer: 0.3913
+      wer: 0.8571
+    jw_00084:
+      source: jw
+      text: SUI NI HÃA WƆNÁA MIISHƐƐ
+      sbs: 0.7222
+      gen_sec: 1.77
+      ref_sec: 3.29
+      cer: 0.5
+      wer: 1.0
+    jw_00085:
+      source: jw
+      text: Mɛni hewɔ esa akɛ wɔshiɛ wɔhã mɛi srɔtoi fɛɛ ni wɔkɛkpeɔ lɛ?
+      sbs: 0.7205
+      gen_sec: 3.12
+      ref_sec: 4.9
+      cer: 0.2083
+      wer: 0.9167
+    jw_00086:
+      source: jw
+      text: Okɛ Ohiɛ Afɔ̃ Yehowa Nɔ Koni Ohi Shi Kɛya Naanɔ!
+      sbs: 0.7315
+      gen_sec: 2.44
+      ref_sec: 7.68
+      cer: 0.2432
+      wer: 0.8
+    jw_00087:
+      source: jw
+      text: Wiemɔ Anɔkwale
+      sbs: 0.7509
+      gen_sec: 1.14
+      ref_sec: 5.07
+      cer: 0.0
+      wer: 0.0
+    jw_00088:
+      source: jw
+      text: Mɛni ba Ninive maŋ lɛ nɔ yɛ Yona gbii lɛ asɛɛ?
+      sbs: 0.7774
+      gen_sec: 2.57
+      ref_sec: 3.97
+      cer: 0.9429
+      wer: 1.0
+    jw_00089:
+      source: jw
+      text: SƆLEMƆ OHÃ YEHOWA
+      sbs: 0.736
+      gen_sec: 1.8
+      ref_sec: 3.17
+      cer: 0.5333
+      wer: 1.0
+    jw_00090:
+      source: jw
+      text: Be ni miye afii kpawo tɔ̃ɔ ni mitswa mifai shi akɛ, mifeŋ nɔ ko ni Yehowa sumɔɔɔ
+      sbs: 0.7139
+      gen_sec: 3.74
+      ref_sec: 6.97
+      cer: 0.1613
+      wer: 0.4706
+    jw_00091:
+      source: jw
+      text: Yehowa Webii Sumɔɔ Ni Amɛfee Nɔ Ni Ja
+      sbs: 0.7328
+      gen_sec: 1.97
+      ref_sec: 6.68
+      cer: 0.1333
+      wer: 0.625
+    jw_00092:
+      source: jw
+      text: Mɛɛ gbɛ nɔ Hiob tsɔɔ akɛ eyɛ hemɔkɛyeli ni ehiɛ kã shi?
+      sbs: 0.7199
+      gen_sec: 2.69
+      ref_sec: 5.21
+      cer: 0.3023
+      wer: 0.8333
+    jw_00093:
+      source: jw
+      text: Mɛni Daniel fee ni tsɔɔ akɛ eyɛ ekãa?
+      sbs: 0.7504
+      gen_sec: 1.45
+      ref_sec: 4.14
+      cer: 0.9655
+      wer: 1.0
+    jw_00094:
+      source: jw
+      text: BƆ NI WƆBAAFEE WƆSAA WƆ KƐ MƐI ATEŊ
+      sbs: 0.7171
+      gen_sec: 1.49
+      ref_sec: 3.85
+      cer: 0.6429
+      wer: 1.125
+    jw_00095:
+      source: jw
+      text: 'd NƆ NI WƆNAA YƐ MFONIRI LƐ MLI: Weku ko miifee weku jamɔ, ni fɔlɔi lɛ ená nɔ ni gbekɛbii
+        lɛ ateŋ mɔ fɛɛ mɔ efee koni akɛwo Noa adeka lɛ mli lɛ he miishɛɛ.'
+      sbs: 0.6916
+      gen_sec: 8.67
+      ref_sec: 11.92
+      cer: 0.2119
+      wer: 0.7714
+    jw_00096:
+      source: jw
+      text: Mɛni hewɔ esa akɛ wɔtsɔ wɔwiemɔ kɛ wɔnifeemɔ nɔ wɔhã mɛi ana akɛ wɔhiɛ sɔɔ nii?
+      sbs: 0.7425
+      gen_sec: 3.76
+      ref_sec: 6.31
+      cer: 0.2857
+      wer: 0.9375
+    jw_00097:
+      source: jw
+      text: ANI REHOBOAM JI GBƆMƆ KPAKPA LOO GBƆMƆ GBONYO?
+      sbs: 0.514
+      gen_sec: 3.0
+      ref_sec: 4.3
+      cer: 0.8684
+      wer: 1.0
+    jw_00098:
+      source: jw
+      text: BƆ NI WƆBAAFEE WƆWU WƆSHI MUMƆI FƆJI
+      sbs: 0.5772
+      gen_sec: 2.4
+      ref_sec: 3.91
+      cer: 1.0
+      wer: 1.0
+    jw_00099:
+      source: jw
+      text: Mɔ ni gba ji Jean-Marie Bockaert
+      sbs: 0.7916
+      gen_sec: 0.82
+      ref_sec: 3.96
+      cer: 1.0
+      wer: 1.0
 - model: ghananlpcommunity/ghana-tts-72k-noref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   mode: noref
@@ -11385,6 +11484,7 @@ benchmarks:
   wer: 0.8532
   accuracy: 0.441
   cer_num_scored: 200
+  failed: 0
   composite: 0.5457
   score: 0.5457
   per_source:
@@ -13024,6 +13124,7 @@ benchmarks:
   wer: 1.1705
   accuracy: 0.1973
   cer_num_scored: 200
+  failed: 0
   composite: 0.4338
   score: 0.4338
   per_source:
@@ -14657,22 +14758,23 @@ benchmarks:
   model_class: non-llm
   params: 0.7B
   uses_reference: true
-  sbs: 0.6695
-  num_scored: 200
-  cer: 0.8847
-  wer: 1.314
-  accuracy: 0.1153
+  sbs: 0.6654
+  num_scored: 199
+  cer: 0.8853
+  wer: 1.3124
+  accuracy: 0.1147
   cer_num_scored: 199
-  composite: 0.3924
-  score: 0.3924
+  failed: 1
+  composite: 0.3901
+  score: 0.3901
   per_source:
     finance:
       sbs: 0.6142
       cer: 1.4504
       n: 100
     jw:
-      sbs: 0.7248
-      cer: 0.3134
+      sbs: 0.7167
+      cer: 0.3202
       n: 100
   entries:
     finance_00000:
@@ -15531,9 +15633,10 @@ benchmarks:
       source: jw
       text: Winston, ani sɔɔmɔ ni oyasɔmɔ yɛ Pasifik Wuoyigbɛ Ŋshɔkpɔi lɛ anɔ lɛ eye ebua bo ni onyɛ otsu
         onitsumɔ akɛ Australasia Nitsumɔhe Nine Ajinafoi Akuu lɛ mli nyo lɛ jogbaŋŋ?
-      sbs: 0.8077
-      gen_sec: 43.04
-      ref_sec: 11.67
+      sbs: 0.0
+      cer: 1.0
+      wer: 1.0
+      failed: clip longer than the judge limit (39s)
     jw_00007:
       source: jw
       text: HÃ NIKASEMƆ ATSE ONAA
@@ -16286,4 +16389,4 @@ benchmarks:
       ref_sec: 3.96
       cer: 0.3077
       wer: 0.5
-updated: '2026-09-30'
+updated: '2026-10-01'

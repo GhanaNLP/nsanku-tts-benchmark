@@ -25,6 +25,7 @@ benchmarks:
   wer: 0.2358
   accuracy: 0.9164
   cer_num_scored: 200
+  failed: 0
   composite: 0.8018
   score: 0.8018
   per_source:
@@ -1731,6 +1732,7 @@ benchmarks:
   wer: 0.3501
   accuracy: 0.8641
   cer_num_scored: 200
+  failed: 0
   composite: 0.7812
   score: 0.7812
   per_source:
@@ -3437,6 +3439,7 @@ benchmarks:
   wer: 0.3425
   accuracy: 0.8745
   cer_num_scored: 200
+  failed: 0
   composite: 0.7794
   score: 0.7794
   per_source:
@@ -5143,6 +5146,7 @@ benchmarks:
   wer: 0.4141
   accuracy: 0.8505
   cer_num_scored: 200
+  failed: 0
   composite: 0.7716
   score: 0.7716
   per_source:
@@ -6843,23 +6847,24 @@ benchmarks:
   model_class: api
   params: API
   uses_reference: false
-  sbs: 0.6307
+  sbs: 0.6275
   num_scored: 199
-  cer: 0.1617
-  wer: 0.4551
-  accuracy: 0.8383
+  cer: 0.1659
+  wer: 0.4578
+  accuracy: 0.8341
   cer_num_scored: 199
-  composite: 0.7345
-  score: 0.7345
+  failed: 1
+  composite: 0.7308
+  score: 0.7308
   per_source:
     bible:
       sbs: 0.6035
       cer: 0.1471
       n: 100
     jw:
-      sbs: 0.6581
-      cer: 0.1766
-      n: 99
+      sbs: 0.6515
+      cer: 0.1848
+      n: 100
   entries:
     bible_00000:
       source: bible
@@ -8117,6 +8122,13 @@ benchmarks:
       ref_sec: 4.07
       cer: 0.1778
       wer: 0.75
+    jw_00048:
+      source: jw
+      text: LÉONCE CRÉPEAULT NYA MI MUNYU
+      sbs: 0.0
+      cer: 1.0
+      wer: 1.0
+      failed: no usable audio
     jw_00049:
       source: jw
       text: MOO KASE MATSƐ YEHOSHAFAT
@@ -8547,6 +8559,7 @@ benchmarks:
   wer: 0.489
   accuracy: 0.7253
   cer_num_scored: 200
+  failed: 0
   composite: 0.7006
   score: 0.7006
   per_source:
@@ -10247,23 +10260,24 @@ benchmarks:
   model_class: non-llm
   params: 0.6B
   uses_reference: false
-  sbs: 0.6737
+  sbs: 0.6704
   num_scored: 199
-  cer: 0.2745
-  wer: 0.4805
-  accuracy: 0.7255
+  cer: 0.2781
+  wer: 0.4831
+  accuracy: 0.7219
   cer_num_scored: 199
-  composite: 0.6996
-  score: 0.6996
+  failed: 1
+  composite: 0.6962
+  score: 0.6962
   per_source:
     bible:
       sbs: 0.6494
       cer: 0.1431
       n: 100
     jw:
-      sbs: 0.6983
-      cer: 0.4072
-      n: 99
+      sbs: 0.6913
+      cer: 0.4131
+      n: 100
   entries:
     bible_00000:
       source: bible
@@ -11383,6 +11397,13 @@ benchmarks:
       ref_sec: 4.09
       cer: 0.069
       wer: 0.1818
+    jw_00031:
+      source: jw
+      text: Mɛni níhi nɛ e sa nɛ weku yi nɛ ha e weku mi bimɛ?
+      sbs: 0.0
+      cer: 1.0
+      wer: 1.0
+      failed: no usable audio
     jw_00032:
       source: jw
       text: KƐ NƆ KO MA PLƐ KƐ LE KAA A PƆ LƐ NU HA KƐƐ?
@@ -11951,6 +11972,7 @@ benchmarks:
   wer: 0.4986
   accuracy: 0.704
   cer_num_scored: 200
+  failed: 0
   composite: 0.6914
   score: 0.6914
   per_source:
@@ -13651,19 +13673,20 @@ benchmarks:
   model_class: api
   params: API
   uses_reference: false
-  sbs: 0.627
+  sbs: 0.6239
   num_scored: 199
-  cer: 0.2806
-  wer: 0.6597
-  accuracy: 0.7194
+  cer: 0.2841
+  wer: 0.6614
+  accuracy: 0.7159
   cer_num_scored: 199
-  composite: 0.6732
-  score: 0.6732
+  failed: 1
+  composite: 0.6699
+  score: 0.6699
   per_source:
     bible:
-      sbs: 0.6041
-      cer: 0.2586
-      n: 99
+      sbs: 0.598
+      cer: 0.266
+      n: 100
     jw:
       sbs: 0.6497
       cer: 0.3023
@@ -14056,6 +14079,14 @@ benchmarks:
       ref_sec: 4.34
       cer: 0.1702
       wer: 0.5385
+    bible_00045:
+      source: bible
+      text: Nɔ nɛ heɔ Bi ɔ yeɔ ɔ, e nine su neneene wami ɔ nɔ; se nɔ tsuaa nɔ nɛ bui Bi ɔ tue ɔ, e be
+        neneene wami nae. Mawu maa gbla e tue mohu.
+      sbs: 0.0
+      cer: 1.0
+      wer: 1.0
+      failed: no usable audio
     bible_00046:
       source: bible
       text: Pohu ngmami ɔ nɛ de ke e sa nɛ e te si kɛ je gbeje ɔ, a nui sisi kɛ mwɔɔ.
@@ -15354,6 +15385,7 @@ benchmarks:
   wer: 0.4669
   accuracy: 0.6199
   cer_num_scored: 200
+  failed: 0
   composite: 0.6483
   score: 0.6483
   per_source:
@@ -17046,4 +17078,4 @@ benchmarks:
       ref_sec: 4.15
       cer: 0.1111
       wer: 0.5
-updated: '2026-09-30'
+updated: '2026-10-01'

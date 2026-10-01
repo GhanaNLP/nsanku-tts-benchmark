@@ -25,6 +25,7 @@ benchmarks:
   wer: 0.037
   accuracy: 0.9907
   cer_num_scored: 200
+  failed: 0
   composite: 0.8768
   score: 0.8768
   per_source:
@@ -1714,6 +1715,7 @@ benchmarks:
   wer: 0.1258
   accuracy: 0.9708
   cer_num_scored: 200
+  failed: 0
   composite: 0.8679
   score: 0.8679
   per_source:
@@ -3403,6 +3405,7 @@ benchmarks:
   wer: 0.1304
   accuracy: 0.9707
   cer_num_scored: 200
+  failed: 0
   composite: 0.8648
   score: 0.8648
   per_source:
@@ -5092,6 +5095,7 @@ benchmarks:
   wer: 0.1026
   accuracy: 0.9692
   cer_num_scored: 200
+  failed: 0
   composite: 0.844
   score: 0.844
   per_source:
@@ -6781,6 +6785,7 @@ benchmarks:
   wer: 0.3411
   accuracy: 0.9115
   cer_num_scored: 200
+  failed: 0
   composite: 0.8249
   score: 0.8249
   per_source:
@@ -8470,6 +8475,7 @@ benchmarks:
   wer: 0.2588
   accuracy: 0.9259
   cer_num_scored: 200
+  failed: 0
   composite: 0.8085
   score: 0.8085
   per_source:
@@ -10159,6 +10165,7 @@ benchmarks:
   wer: 0.2971
   accuracy: 0.9005
   cer_num_scored: 200
+  failed: 0
   composite: 0.7932
   score: 0.7932
   per_source:
@@ -11848,6 +11855,7 @@ benchmarks:
   wer: 0.5353
   accuracy: 0.8264
   cer_num_scored: 200
+  failed: 0
   composite: 0.7214
   score: 0.7214
   per_source:
@@ -13537,6 +13545,7 @@ benchmarks:
   wer: 0.5232
   accuracy: 0.784
   cer_num_scored: 200
+  failed: 0
   composite: 0.7206
   score: 0.7206
   per_source:
@@ -15226,6 +15235,7 @@ benchmarks:
   wer: 0.5768
   accuracy: 0.8059
   cer_num_scored: 200
+  failed: 0
   composite: 0.7099
   score: 0.7099
   per_source:
@@ -16915,6 +16925,7 @@ benchmarks:
   wer: 0.5458
   accuracy: 0.726
   cer_num_scored: 200
+  failed: 0
   composite: 0.6933
   score: 0.6933
   per_source:
@@ -18590,4 +18601,4 @@ benchmarks:
       ref_sec: 4.74
       cer: 0.2273
       wer: 0.4545
-updated: '2026-09-30'
+updated: '2026-10-01'
