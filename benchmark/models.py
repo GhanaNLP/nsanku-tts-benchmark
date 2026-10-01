@@ -1349,10 +1349,38 @@ class GeminiTTSWrapper(BaseTTSModel):
         time.sleep(0.05)
         self._acquire()
 
+    MAX_ATTEMPTS = 6
+
+    def _post_with_retries(self, session, body):
+        """POST, retrying transport trouble: rate limits, 5xx, timeouts, dropped connections.
+
+        Gemini throttles per key across every parallel job, so a 429 is not a
+        property of the model. A 200 that carries no audio is the model's answer
+        and is deliberately not retried here: it is scored as a failure.
+        """
+        import time
+
+        import requests
+
+        last = None
+        for attempt in range(self.MAX_ATTEMPTS):
+            if attempt:
+                time.sleep(min(5.0 * attempt, 30.0))
+            self._acquire()
+            try:
+                resp = session.post(self.API_URL, json=body, timeout=60)
+            except (requests.Timeout, requests.ConnectionError) as e:
+                last = e
+                continue
+            if resp.status_code in (429, 500, 502, 503, 504):
+                last = RuntimeError(f"Gemini TTS {resp.status_code}: {resp.text[:120]}")
+                continue
+            return resp
+        raise RuntimeError(f"Gemini TTS gave up after {self.MAX_ATTEMPTS} attempts: {last}")
+
     def synthesize(self, text, lang=None, speaker_id=None, output_format="wav"):
         import base64
 
-        self._acquire()
         session = self._ensure_session()
         body = {
             "contents": [
@@ -1372,14 +1400,7 @@ class GeminiTTSWrapper(BaseTTSModel):
                 }
             },
         }
-        resp = session.post(self.API_URL, json=body, timeout=60)
-        if resp.status_code in (429, 500, 502, 503, 504):
-            # Shared-key 429s, or a flaky preview — back off and retry. Gemini
-            # throttles globally per key at 200 rpm across every parallel
-            # language job, so one job's 429 is NOT a per-model error.
-            time.sleep(5.0)
-            return self.synthesize(text, lang=lang, speaker_id=speaker_id,
-                                   output_format=output_format)
+        resp = self._post_with_retries(session, body)
         if resp.status_code != 200:
             raise RuntimeError(f"Gemini TTS {resp.status_code}: {resp.text[:200]}")
         data = resp.json()["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]

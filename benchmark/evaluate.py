@@ -161,7 +161,10 @@ def synthesize_language(iso, model_filter=None, device="cuda", force=False, samp
 
     models = load_tts_models(iso)
     if model_filter:
-        models = [m for m in models if model_filter.lower() in m["name"].lower()]
+        # An exact name selects just that model ("...-preview" must not also pull in
+        # "...-preview-universal"); otherwise it is a substring filter.
+        exact = [m for m in models if m["name"].lower() == model_filter.lower()]
+        models = exact or [m for m in models if model_filter.lower() in m["name"].lower()]
     if stack == "omni":
         models = [m for m in models if m.get("stack") == "omni"]
     elif stack == "tts":

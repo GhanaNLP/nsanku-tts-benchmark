@@ -317,6 +317,55 @@ def run_pipeline(config, dataset, evaluate, models, speechbertscore,
           {b["model"] for b in doc["benchmarks"]} ==
           {"org/Model-ref", "org/Model-noref"})
 
+    print("\n== Gemini transport retries ==")
+    import base64 as _b64
+    import os as _os
+    import requests as _rq
+    from benchmark import models as _m
+
+    _os.environ.setdefault("GEMINI_API_KEY", "test")
+    audio = _b64.b64encode(np.zeros(240, dtype="<i2").tobytes()).decode()
+    ok = {"candidates": [{"content": {"parts": [{"inlineData": {"data": audio}}]}}]}
+
+    class Resp:
+        def __init__(self, code, body=None):
+            self.status_code, self._body, self.text = code, body, "x"
+        def json(self):
+            return self._body
+
+    def run(sequence):
+        wrapper = _m.GeminiTTSWrapper()
+        wrapper._acquire = lambda: None
+        calls = iter(sequence)
+        class Sess:
+            def post(self, *a, **k):
+                r = next(calls)
+                if isinstance(r, Exception):
+                    raise r
+                return r
+        wrapper._session = Sess()
+        import time as _t
+        real_sleep, _t.sleep = _t.sleep, lambda s: None
+        try:
+            return wrapper.synthesize("hello")
+        finally:
+            _t.sleep = real_sleep
+
+    check("a 429 is retried, not raised (it used to raise NameError)",
+          run([Resp(429), Resp(200, ok)])[:4] == b"RIFF")
+    check("a read timeout is retried", run([_rq.ReadTimeout(), Resp(200, ok)])[:4] == b"RIFF")
+    check("a dropped connection is retried", run([_rq.ConnectionError(), Resp(503), Resp(200, ok)])[:4] == b"RIFF")
+    try:
+        run([Resp(429)] * 6)
+        check("retries are bounded", False)
+    except RuntimeError as e:
+        check("retries are bounded", "gave up" in str(e), str(e)[:60])
+    try:
+        run([Resp(200, {"candidates": [{"content": {}}]})])
+        check("a 200 with no audio is not retried (it is the model's answer)", False)
+    except KeyError:
+        check("a 200 with no audio is not retried (it is the model's answer)", True)
+
     print("\n== failed clips ==")
     before = {b["model"]: b for b in doc["benchmarks"]}["org/Model-ref"]
     cache = evaluate.load_score_cache(iso)
