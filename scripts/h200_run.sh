@@ -54,7 +54,15 @@ fi
 
 # HF_TOKEN is read from the host environment and passed through rather than
 # written into this repo. Gated checkpoints (F5-TTS, VoxCPM) need it.
-exec docker run --rm --gpus all --ipc=host --shm-size=8g \
+# Only one judge model loads at a time. The 7B ASR judge needs ~20 GB, the card is
+# shared with other people's jobs, and two judges starting together (or one beside
+# a synthesis stage) run it out of memory. The lock queues them instead.
+LOCK=()
+if [ "$STAGE" = "asr" ]; then
+  LOCK=(flock /tmp/nsanku-asr-judge.lock)
+fi
+
+exec "${LOCK[@]}" docker run --rm --gpus all --ipc=host --shm-size=8g \
   --network=host \
   "${ENV_FILE_FLAG[@]}" \
   -v "$REPO:/app" \
