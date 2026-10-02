@@ -54,11 +54,12 @@ fi
 
 # HF_TOKEN is read from the host environment and passed through rather than
 # written into this repo. Gated checkpoints (F5-TTS, VoxCPM) need it.
-# At most JUDGE_SLOTS judge models load at once. The 7B ASR judge needs ~20 GB and the
+# At most JUDGE_SLOTS judge models load at once (a cap; run_benchmark also waits for 22 GB
+# of free GPU memory before it starts one, which is what really keeps a crowded card safe). The 7B ASR judge needs ~20 GB and the
 # card is shared with other people's jobs, so unbounded judges run it out of memory;
 # one at a time is safe but serial and slow (each judge stage takes hours). Slots are
 # lock files: a judge stage takes the first free one and holds it until its container exits.
-JUDGE_SLOTS="${NSANKU_JUDGE_SLOTS:-2}"
+JUDGE_SLOTS="${NSANKU_JUDGE_SLOTS:-4}"
 if [ "$STAGE" = "asr" ]; then
   while true; do
     for i in $(seq 1 "$JUDGE_SLOTS"); do
