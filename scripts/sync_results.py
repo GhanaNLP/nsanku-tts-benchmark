@@ -29,7 +29,8 @@ from benchmark.config import all_isos  # noqa: E402
 from benchmark import yamlio  # noqa: E402
 
 REMOTE = "/mnt/volume_d2wey28/projects"
-LOGS = ["full_A.log", "full_B.log", "claim_*.log"]
+# repair_*.log: a language re-run by the repair watcher after it ended incomplete.
+LOGS = ["full_A.log", "full_B.log", "claim_*.log", "repair_[a-z]*.log"]
 
 
 def sh(cmd, **kw):
