@@ -26,6 +26,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from benchmark.config import all_isos  # noqa: E402
+from benchmark import yamlio  # noqa: E402
 
 REMOTE = "/mnt/volume_d2wey28/projects"
 LOGS = ["full_A.log", "full_B.log", "claim_*.log"]
@@ -69,7 +70,7 @@ def complete(path):
     allowed; the median across models is what is tested.
     """
     try:
-        doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        doc = yamlio.load(path.read_text(encoding="utf-8")) or {}
     except Exception:
         return False
     rows = doc.get("benchmarks") or []

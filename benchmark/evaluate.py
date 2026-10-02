@@ -65,6 +65,7 @@ from .config import (
     all_isos,
 )
 from .dataset import load_samples, source_of, write_manifest
+from . import yamlio
 
 logger = logging.getLogger(__name__)
 
@@ -626,7 +627,7 @@ def _load_existing(iso):
         return {}
     try:
         with open(path, encoding="utf-8") as f:
-            return yaml.safe_load(f) or {}
+            return yamlio.load(f) or {}
     except yaml.YAMLError:
         return {}
 

@@ -22,6 +22,7 @@ sys.path.insert(0, str(ROOT))
 
 from benchmark.config import BENCHMARK_DIR, ISO_TO_NAME, SPEECH_EVAL_SOURCES, all_isos  # noqa: E402
 from benchmark.clips import pick_sample  # noqa: E402
+from benchmark import yamlio  # noqa: E402
 from benchmark.evaluate import load_tts_models  # noqa: E402
 
 # Everything on a model row except the per-clip entries.
@@ -35,7 +36,7 @@ def families():
     path = ROOT / "languages" / "ghana_languages.yaml"
     out = dict(FAMILY_FALLBACK)
     if path.exists():
-        for lang in yaml.safe_load(path.read_text(encoding="utf-8")).get("languages", []):
+        for lang in yamlio.load(path.read_text(encoding="utf-8")).get("languages", []):
             if lang.get("family"):
                 out[lang["iso_639_3"]] = lang["family"]
     return out
@@ -50,7 +51,7 @@ def build(only=None):
         path = BENCHMARK_DIR / f"{iso}.yaml"
         if not path.exists():
             continue
-        doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        doc = yamlio.load(path.read_text(encoding="utf-8")) or {}
         registry = {m["name"]: m for m in load_tts_models(iso)}
         rows = []
         for b in doc.get("benchmarks", []):

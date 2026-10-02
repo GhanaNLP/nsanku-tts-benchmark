@@ -24,6 +24,7 @@ sys.path.insert(0, str(ROOT))
 
 from benchmark import config  # noqa: E402
 from benchmark.clips import pick_sample  # noqa: E402
+from benchmark import yamlio  # noqa: E402
 
 REPO = "ghananlpcommunity/nsanku-tts-benchmark-audio"
 
@@ -48,7 +49,7 @@ def main():
         if not path.exists():
             print(f"{iso}: no results yet")
             continue
-        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
+        doc = yamlio.load(path.read_text(encoding="utf-8"))
         sample = pick_sample(doc.get("benchmarks", []))
         if not sample:
             print(f"{iso}: nothing scored")

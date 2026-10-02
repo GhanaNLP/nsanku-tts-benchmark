@@ -21,9 +21,11 @@ import sys
 import time
 from pathlib import Path
 
-import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT))
+
+from benchmark import yamlio  # noqa: E402
 PROJECTS = ROOT.parent  # claims/ lives next to the checkout on the GPU box
 MAX_REPAIRS = 3
 
@@ -31,7 +33,7 @@ MAX_REPAIRS = 3
 def complete(path):
     """Same test as scripts/sync_results.py: composites everywhere, sane failure rate."""
     try:
-        doc = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+        doc = yamlio.load(path.read_text(encoding="utf-8")) or {}
     except Exception:
         return False
     rows = doc.get("benchmarks") or []
