@@ -81,6 +81,41 @@ def complete(path):
     return shares[len(shares) // 2] < 0.5
 
 
+def fetch_yamls(host, remote_dir, isos, dest):
+    """Copy the finished languages' YAMLs in a single tar stream. Returns those received."""
+    names = [f"{iso}.yaml" for iso in isos]
+    ssh = subprocess.Popen(["ssh", host, f"cd {remote_dir} && tar czf - {' '.join(names)}"],
+                           stdout=subprocess.PIPE)
+    tar = subprocess.run(["tar", "xzf", "-", "-C", str(dest)], stdin=ssh.stdout)
+    ssh.stdout.close()
+    ssh.wait()
+    if ssh.returncode != 0 or tar.returncode != 0:
+        print("  bulk fetch failed; falling back to one file at a time")
+        for iso in isos:
+            subprocess.run(["scp", "-q", f"{host}:{remote_dir}/{iso}.yaml", str(dest / f"{iso}.yaml")])
+    return {iso for iso in isos if (dest / f"{iso}.yaml").exists()}
+
+
+def _sample_signature(path):
+    """(sentence key, models that read it): what the published Listen clips depend on."""
+    from benchmark.clips import pick_sample
+
+    s = pick_sample((yamlio.load(path.read_text(encoding="utf-8")) or {}).get("benchmarks", []))
+    return (s["key"], tuple(s["models"])) if s else None
+
+
+def _previous_samples(summary_path):
+    """Signatures recorded in the last published feed, to skip languages already uploaded."""
+    try:
+        import json
+
+        feed = json.loads(summary_path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    return {iso: (v["sample"]["key"], tuple(v["sample"]["models"]))
+            for iso, v in feed.items() if v.get("sample")}
+
+
 def publish_audio(host, remote, isos):
     """Upload the Listen clips on the GPU box, before the feed that points at them.
 
@@ -116,12 +151,15 @@ def main():
 
     bench = ROOT / "benchmarks"
     bench.mkdir(exist_ok=True)
-    remote_dir = f"{args.remote}/nsanku-tts-benchmark/benchmarks"
+    previous = _previous_samples(bench / "summary.json")
+
+    # One compressed stream for every finished language, not one connection each
+    # (a connection costs ~3.5 s; the sync has to stay well inside its time limit
+    # as the language count grows).
+    fetched = fetch_yamls(args.host, f"{args.remote}/nsanku-tts-benchmark/benchmarks", done, bench)
     pulled = []
     for iso in done:
-        r = subprocess.run(["scp", "-q", f"{args.host}:{remote_dir}/{iso}.yaml",
-                            str(bench / f"{iso}.yaml")])
-        if r.returncode != 0:
+        if iso not in fetched:
             print(f"  could not fetch {iso}.yaml")
         elif not complete(bench / f"{iso}.yaml"):
             # A stage can die (e.g. a CUDA OOM on the shared GPU) and the language
@@ -136,7 +174,11 @@ def main():
             path.unlink()
 
     if not args.no_audio:
-        publish_audio(args.host, args.remote, pulled)
+        # Only languages that are new, or whose sample sentence or model set changed.
+        todo = [iso for iso in pulled if _sample_signature(bench / f"{iso}.yaml") != previous.get(iso)]
+        print(f"Listen clips to check: {' '.join(todo) or 'none'}")
+        if todo:
+            publish_audio(args.host, args.remote, todo)
 
     sh([sys.executable, "scripts/build_summary.py", *pulled])
     sh(["git", "add", "-A", "benchmarks", "space/bundled_data.json"])
