@@ -66,10 +66,33 @@ def wait_for_gpu(stage, patience_s=21600):
     return False
 
 
+MIN_FREE_DISK_GB = 25
+
+
+def wait_for_disk(patience_s=21600):
+    """Wait while the volume is nearly full. A stage that starts into a full disk fails
+    on its first write and burns a retry; the volume is shared and can fill quickly."""
+    import shutil
+
+    waited = 0
+    while waited < patience_s:
+        free = shutil.disk_usage(REPO).free / 1e9
+        if free >= MIN_FREE_DISK_GB:
+            return True
+        if waited % 600 == 0:
+            print(f"    waiting for disk space: {free:.0f} GB free, need {MIN_FREE_DISK_GB} GB", flush=True)
+        time.sleep(60)
+        waited += 60
+    return False
+
+
 def run_cmd(cmd, desc="", stage=None):
     """Run one stage, retrying on failure. Every stage is resumable, so a retry
     only does the work that is still missing. Returns True on success."""
     for attempt in range(1, ATTEMPTS + 1):
+        if not wait_for_disk():
+            print("    no disk space after waiting; counting as a failed attempt", flush=True)
+            continue
         if not wait_for_gpu(stage):
             print(f"    no GPU room for {stage} after waiting; counting as a failed attempt", flush=True)
             continue
