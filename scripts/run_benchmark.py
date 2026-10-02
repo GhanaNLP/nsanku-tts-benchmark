@@ -31,7 +31,9 @@ from benchmark.config import ISO_TO_NAME, SPEECH_EVAL_SOURCES
 
 # GPU memory (GB) a stage needs free before it starts. The GPU is shared with other
 # jobs, and a stage that loads a model onto a full card dies with CUDA OOM.
-NEED_FREE_GB = {"synth": 16, "omni": 16, "asr": 24, "score": 12}
+# Measured: a VoxCPM/MMS synthesis process holds ~5 GB, WavLM scoring ~3 GB, the 7B ASR
+# judge ~20 GB. A stage with nothing left to do still waits, so keep the small ones small.
+NEED_FREE_GB = {"synth": 8, "omni": 8, "asr": 22, "score": 6}
 ATTEMPTS = 3
 RETRY_WAIT_S = 300
 
@@ -46,27 +48,31 @@ def gpu_free_gb():
         return None
 
 
-def wait_for_gpu(stage, patience_s=7200):
-    """Wait until the card has room for this stage; give up waiting after patience_s."""
+def wait_for_gpu(stage, patience_s=21600):
+    """Wait until the card has room for this stage. Returns False if it never did:
+    starting anyway would just run the shared GPU out of memory."""
     need = NEED_FREE_GB.get(stage)
     if not need:
-        return
+        return True
     waited = 0
     while waited < patience_s:
         free = gpu_free_gb()
         if free is None or free >= need:
-            return
+            return True
         if waited % 600 == 0:
             print(f"    waiting for GPU memory: {free:.0f} GB free, {stage} needs {need} GB", flush=True)
         time.sleep(60)
         waited += 60
+    return False
 
 
 def run_cmd(cmd, desc="", stage=None):
     """Run one stage, retrying on failure. Every stage is resumable, so a retry
     only does the work that is still missing. Returns True on success."""
     for attempt in range(1, ATTEMPTS + 1):
-        wait_for_gpu(stage)
+        if not wait_for_gpu(stage):
+            print(f"    no GPU room for {stage} after waiting; counting as a failed attempt", flush=True)
+            continue
         print(f"\n>>> [{desc}] {' '.join(cmd)}" + (f"  (attempt {attempt})" if attempt > 1 else ""), flush=True)
         t0 = time.time()
         res = subprocess.run(cmd, cwd=REPO)

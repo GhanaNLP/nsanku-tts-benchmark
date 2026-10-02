@@ -54,15 +54,41 @@ fi
 
 # HF_TOKEN is read from the host environment and passed through rather than
 # written into this repo. Gated checkpoints (F5-TTS, VoxCPM) need it.
-# Only one judge model loads at a time. The 7B ASR judge needs ~20 GB, the card is
-# shared with other people's jobs, and two judges starting together (or one beside
-# a synthesis stage) run it out of memory. The lock queues them instead.
-LOCK=()
+# At most JUDGE_SLOTS judge models load at once. The 7B ASR judge needs ~20 GB and the
+# card is shared with other people's jobs, so unbounded judges run it out of memory;
+# one at a time is safe but serial and slow (each judge stage takes hours). Slots are
+# lock files: a judge stage takes the first free one and holds it until its container exits.
+JUDGE_SLOTS="${NSANKU_JUDGE_SLOTS:-2}"
 if [ "$STAGE" = "asr" ]; then
-  LOCK=(flock /tmp/nsanku-asr-judge.lock)
+  while true; do
+    for i in $(seq 1 "$JUDGE_SLOTS"); do
+      exec {SLOT_FD}>"/tmp/nsanku-asr-judge.$i.lock"
+      if flock -n "$SLOT_FD"; then break 2; fi
+      exec {SLOT_FD}>&-
+    done
+    sleep 20
+  done
+  # not exec'd: this shell must stay alive to keep the slot lock while the container runs
+  docker run --rm --gpus all --ipc=host --shm-size=8g \
+    --network=host \
+    "${ENV_FILE_FLAG[@]}" \
+    -v "$REPO:/app" \
+    -v "$HF_CACHE:/root/.cache/huggingface" \
+    -v "$TMP:/tmp/work" \
+    -e HF_HOME=/root/.cache/huggingface \
+    -e HF_DATASETS_CACHE=/root/.cache/huggingface/datasets \
+    -e TORCH_HOME=/root/.cache/torch \
+    -e TMPDIR=/tmp/work \
+    -e HF_TOKEN="${HF_TOKEN:-}" \
+    -e PYTHONUTF8=1 \
+    -e PYTHONPATH=/app \
+    -w /app \
+    "$IMAGE" \
+    "$@"
+  exit $?
 fi
 
-exec "${LOCK[@]}" docker run --rm --gpus all --ipc=host --shm-size=8g \
+exec docker run --rm --gpus all --ipc=host --shm-size=8g \
   --network=host \
   "${ENV_FILE_FLAG[@]}" \
   -v "$REPO:/app" \
