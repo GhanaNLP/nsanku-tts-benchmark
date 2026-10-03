@@ -326,6 +326,7 @@ def score_sbs_language(iso, device="cuda", force=False, samples=None):
         if scores:
             means[name] = sum(scores) / len(scores)
             print(f"  [{name}] SBS {means[name]:.4f} over {len(scores)} samples")
+        save_score_cache(iso, per_sample, encoder_tag)   # per model: a stop loses little
 
     if scorer is not None:
         scorer.cleanup()
@@ -426,6 +427,9 @@ def score_cer_language(iso, device="cuda", force=False, samples=None):
             if cers:
                 means[name] = sum(cers) / len(cers)
                 print(f"  [{name}] CER {means[name]:.4f} over {len(cers)} clips")
+            # Save after every model, so stopping the run (or a crash) loses at most
+            # the model being judged, not the whole stage.
+            save_cer_cache(iso, cache)
     finally:
         if judge is not None:
             try:

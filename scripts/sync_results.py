@@ -30,7 +30,7 @@ from benchmark import yamlio  # noqa: E402
 
 REMOTE = "/mnt/volume_d2wey28/projects"
 # repair_*.log: a language re-run by the repair watcher after it ended incomplete.
-LOGS = ["full_A.log", "full_B.log", "claim_*.log", "repair_[a-z]*.log"]
+LOGS = ["full_A.log", "full_B.log", "claim_*.log", "repair_[a-z]*.log", "queue.log"]
 
 
 def sh(cmd, **kw):
