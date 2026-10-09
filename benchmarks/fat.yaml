@@ -11833,6 +11833,1696 @@ benchmarks:
       ref_sec: 13.38
       cer: 0.1019
       wer: 0.3784
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.6613
+  num_scored: 200
+  cer: 0.3334
+  wer: 0.6103
+  accuracy: 0.6666
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.664
+  score: 0.664
+  per_source:
+    bible:
+      sbs: 0.7589
+      cer: 0.1177
+      n: 50
+    finance:
+      sbs: 0.6033
+      cer: 0.6703
+      n: 50
+    jw:
+      sbs: 0.6781
+      cer: 0.362
+      n: 50
+    lds:
+      sbs: 0.6048
+      cer: 0.1835
+      n: 50
+  entries:
+    bible_00000:
+      source: bible
+      text: Obiara n’enyi nnyɛ dzen dɛ ɔbɔbɔ no nkenyan; Na sɛ dɛm a, woana koraa nye nyia obotum emi
+        m’enyim gyina?
+      sbs: 0.7752
+      gen_sec: 10.41
+      ref_sec: 9.1
+      cer: 0.0875
+      wer: 0.2
+    bible_00001:
+      source: bible
+      text: Nyew, ebɛyɛ dɛ nyia ɔda epo finimfin.
+      sbs: 0.7321
+      gen_sec: 3.84
+      ref_sec: 3.66
+      cer: 0.2759
+      wer: 0.5714
+    bible_00002:
+      source: bible
+      text: Na obisaa hɔn dɛ, Afotu bɛn na hom dze ma, ma yɛdze mbuae aasan akɛma ɔman yi a wɔaka akyerɛ
+        me, dɛ, Yɛ kɔndua a w’egya dze too hɛn do no harhar no?
+      sbs: 0.8005
+      gen_sec: 14.34
+      ref_sec: 13.72
+      cer: 0.0364
+      wer: 0.1818
+    bible_00003:
+      source: bible
+      text: Na aka kakrabaabi na ebufuhyew no abɔ adze, na n’ebufuw adan ayɛ hɔn sɛɛe.
+      sbs: 0.7602
+      gen_sec: 7.68
+      ref_sec: 6.36
+      cer: 0.0345
+      wer: 0.1429
+    bible_00004:
+      source: bible
+      text: 'Judamba afamu dze no mu na Simeonmba egyapadze fi: osiandɛ Judamba kyɛpɛn no dɔɔ so dodow
+        ma hɔn: dɛm ntsi Simeonmba nyaa egyapadze wɔ hɔn egyapadze no mu.'
+      sbs: 0.7815
+      gen_sec: 15.95
+      ref_sec: 13.48
+      cer: 0.64
+      wer: 0.6786
+    bible_00005:
+      source: bible
+      text: Aso wɔbɛka w’adɔyɛ akyerɛ wɔ adakamona mu?
+      sbs: 0.7261
+      gen_sec: 4.35
+      ref_sec: 3.18
+      cer: 0.5588
+      wer: 1.1429
+    bible_00006:
+      source: bible
+      text: Obobu Bɛt-semes a ɔwɔ Egypt asaase do no n’edum no; na ɔdze gya ahyew Egypt abosom efi no
+        nyina.
+      sbs: 0.7464
+      gen_sec: 9.73
+      ref_sec: 9.12
+      cer: 0.1892
+      wer: 0.3158
+    bible_00007:
+      source: bible
+      text: 'Ɔsor so sosɔɔw wɔ Nyankopɔn enyim: Sinai noara mpo wosoow wɔ Nyankopɔn, Israel Nyankopɔn
+        no enyim.'
+      sbs: 0.7894
+      gen_sec: 10.41
+      ref_sec: 7.44
+      cer: 0.0625
+      wer: 0.125
+    bible_00008:
+      source: bible
+      text: Nna Solomon kaa dɛ, EWURADZE ase dɛ, ɔbɛtsena sum kebii mu.
+      sbs: 0.7777
+      gen_sec: 6.14
+      ref_sec: 4.88
+      cer: 0.0435
+      wer: 0.1818
+    bible_00009:
+      source: bible
+      text: Na Netania ba Ismael nye mbarimba baawɔtwe fii Karea nsa kɔr Ammonmba no nkyɛn.
+      sbs: 0.7545
+      gen_sec: 8.45
+      ref_sec: 6.16
+      cer: 0.0308
+      wer: 0.1429
+    bible_00010:
+      source: bible
+      text: Dɛm ntsi afei, meserɛ wo, bra, ma memma wo akwankyerɛ, ma edze agye wankasa woho nkwa, na
+        wo ba Solomon nkwa.
+      sbs: 0.7917
+      gen_sec: 11.09
+      ref_sec: 8.48
+      cer: 0.0361
+      wer: 0.1429
+    bible_00011:
+      source: bible
+      text: Na sɛ eka hɛn asɛm yi kyerɛ a, ɔnodze, yennkedzi so wɔ wo ntam a ama yɛaka yi ho.
+      sbs: 0.7799
+      gen_sec: 7.94
+      ref_sec: 6.68
+      cer: 0.1
+      wer: 0.3684
+    bible_00012:
+      source: bible
+      text: 'Mpo ber a Elnatan na Delaia na Gemaria totɔe serɛɛ ɔhen no dɛ nkyɛ mma ɔnnhyew nwoma mbobɔwee
+        no: oenntsie hɔn.'
+      sbs: 0.7749
+      gen_sec: 11.69
+      ref_sec: 10.5
+      cer: 0.0674
+      wer: 0.1905
+    bible_00013:
+      source: bible
+      text: Na Josua sanee, na Israel nyinara ka no ho, baa nseraban no mu wɔ Gilgal.
+      sbs: 0.8104
+      gen_sec: 7.51
+      ref_sec: 6.38
+      cer: 0.0
+      wer: 0.0
+    bible_00014:
+      source: bible
+      text: bɛnantsew hɔn bosom dzin mu nkorkor, na hɛn dze.
+      sbs: 0.7202
+      gen_sec: 5.03
+      ref_sec: 4.1
+      cer: 0.1579
+      wer: 0.5556
+    bible_00015:
+      source: bible
+      text: Kyɛfa a otsia esuon no bae maa Danmba ebusuakuw dɛ mbrɛ hɔn ebusua ebusua tsetsee.
+      sbs: 0.7491
+      gen_sec: 8.79
+      ref_sec: 6.76
+      cer: 0.0299
+      wer: 0.1333
+    bible_00016:
+      source: bible
+      text: Na ɔyɛɛ mbeambea sorɔnsorɔm do adan, na ɔhyɛɛ ɔman no mu binom a wommfi Levimba mu no asɔfo.
+      sbs: 0.7912
+      gen_sec: 9.56
+      ref_sec: 8.48
+      cer: 0.0137
+      wer: 0.1111
+    bible_00017:
+      source: bible
+      text: 'Hom ntow ndwom mma Nyankopɔn, hom ntow ayɛyindwom mma ne dzin: Hom mbɔ ɔtsempɔn kwan mma
+        nyia ɔtse adze do nam sar do no; Ne dzin nye EWURADZE; na hom ndzi n’enyim ehurusi.'
+      sbs: 0.7537
+      gen_sec: 17.74
+      ref_sec: 13.4
+      cer: 0.0746
+      wer: 0.2121
+    bible_00018:
+      source: bible
+      text: 'Nyia ɔbɛtsena kurow yi mu no, obowu afona, na ɔkɔm, na ɔyardɔm ano: na nyia obefir edzi na
+        ɔakɔtɔ Kaldeafo a woetwa hom ho mu no, ɔbɛtsena ase, na no nkwa bɛyɛ afonam ama no.'
+      sbs: 0.7636
+      gen_sec: 18.0
+      ref_sec: 14.96
+      cer: 0.0677
+      wer: 0.2571
+    bible_00019:
+      source: bible
+      text: Nyankopɔn ne tsenabea nyɛ hɛndze no.
+      sbs: 0.754
+      gen_sec: 3.84
+      ref_sec: 3.16
+      cer: 0.0667
+      wer: 0.5
+    bible_00020:
+      source: bible
+      text: Na ɔsee dɛ, Dɛ mbrɛ hom nsɛm yi tse no ara, wɔmma ɔnyɛ hɔ.
+      sbs: 0.7721
+      gen_sec: 5.63
+      ref_sec: 4.36
+      cer: 0.1667
+      wer: 0.1429
+    bible_00021:
+      source: bible
+      text: Nna Jeremia kasaa kyerɛɛ mbapɔmba nyinara na ɔman no nyinara, dɛ, EWURADZE na ɔsomaa me dɛ
+        membɛhyɛ asɛm a hom atse yi nyina ho nkɔm ntsia ofi yi na kurow yi.
+      sbs: 0.7621
+      gen_sec: 16.46
+      ref_sec: 12.98
+      cer: 0.072
+      wer: 0.2258
+    bible_00022:
+      source: bible
+      text: Mbrɛ gyata a ɔropɔw, na osisi a origyam tse no.
+      sbs: 0.7691
+      gen_sec: 4.52
+      ref_sec: 3.74
+      cer: 0.0278
+      wer: 0.2
+    bible_00023:
+      source: bible
+      text: Ana adze yi mo wura ɔhen na ɔyɛe, na annda no edzi annkyerɛ wo nkowaa nyia ɔbɛtsena mo wura
+        ɔhen n’ahengua do wɔ n’ekyir a?
+      sbs: 0.7795
+      gen_sec: 12.2
+      ref_sec: 10.44
+      cer: 0.1053
+      wer: 0.28
+    bible_00024:
+      source: bible
+      text: 'Asodzi afɔr sika, na bɔn ho afɔr sika no dze, wɔammfa ammba Ewuradzefie: ɔyɛ asɔfo no dze.'
+      sbs: 0.7568
+      gen_sec: 9.3
+      ref_sec: 8.26
+      cer: 0.0286
+      wer: 0.2353
+    bible_00025:
+      source: bible
+      text: 'Na Elija see no dɛ, Mma nnsuro; kɔ kɛyɛ dɛ mbrɛ ase no: mbom dzi kan yɛ bi tatar kakra ma
+        me, na fa brɛ me, na n’ekyir no ayɛ ɔwo na wo ba dze.'
+      sbs: 0.7979
+      gen_sec: 13.57
+      ref_sec: 12.8
+      cer: 0.1078
+      wer: 0.2857
+    bible_00026:
+      source: bible
+      text: Na Silonfo mu; abakan Asaia, na ne mba.
+      sbs: 0.7794
+      gen_sec: 4.01
+      ref_sec: 5.0
+      cer: 0.0
+      wer: 0.0
+    bible_00027:
+      source: bible
+      text: Kyɛfa a otsia esia no bae maa Naftalimba no dɛ mbrɛ hɔn ebusua ebusua tsetsee.
+      sbs: 0.7238
+      gen_sec: 8.28
+      ref_sec: 7.04
+      cer: 0.0952
+      wer: 0.2667
+    bible_00028:
+      source: bible
+      text: Levifo nkurow a ɔwɔ Israelmba hɔn enyadze mu nyinara yɛ nkurow eduanan awɔtwe nye no ho mfikyisaase.
+      sbs: 0.7992
+      gen_sec: 10.67
+      ref_sec: 9.74
+      cer: 0.012
+      wer: 0.1176
+    bible_00029:
+      source: bible
+      text: Na ɔbaa dɛ adze kyee no, Pasur tuu Jeremia fii dua mu.
+      sbs: 0.7409
+      gen_sec: 5.38
+      ref_sec: 4.34
+      cer: 0.122
+      wer: 0.5
+    bible_00030:
+      source: bible
+      text: Nna Jeremia see no dɛ, EWURADZE mmfrɛɛ wo dzin Pasur, na mbom Magor-misabib.
+      sbs: 0.7396
+      gen_sec: 8.02
+      ref_sec: 5.64
+      cer: 0.15
+      wer: 0.6154
+    bible_00031:
+      source: bible
+      text: na ɔahyɛ dɛ ɔmbra.
+      sbs: 0.6535
+      gen_sec: 1.96
+      ref_sec: 3.36
+      cer: 0.5
+      wer: 0.5
+    bible_00032:
+      source: bible
+      text: Ana ɔwo ibotum edze ntampehoma ahyɛ no hwen mu?
+      sbs: 0.7249
+      gen_sec: 5.03
+      ref_sec: 3.54
+      cer: 0.1316
+      wer: 0.5556
+    bible_00033:
+      source: bible
+      text: 'Na asɛm a osian ntsi ma ɔmaa ne nsa do tsiaa ɔhen no nye yi: Solomon sii Millo, na osisiiw
+        n’egya David kurow ho etokur.'
+      sbs: 0.777
+      gen_sec: 11.86
+      ref_sec: 11.1
+      cer: 0.0217
+      wer: 0.12
+    bible_00034:
+      source: bible
+      text: 'Mma hom nnsuro Babilɔnhen a hom suro no no; mma hom nnsuro no, EWURADZE na ɔse: na mowɔ hom
+        nkyɛn dɛ mebɛgye hom nkwa, na meyi hom efi ne nsamu.'
+      sbs: 0.7562
+      gen_sec: 14.34
+      ref_sec: 9.78
+      cer: 0.0455
+      wer: 0.1
+    bible_00035:
+      source: bible
+      text: Na wɔkɔree, na wɔkɔr ɔbaa huhunyi bi a ne dzin dze Rahab ne fie, na wɔkɔsoɛɛ hɔ.
+      sbs: 0.7804
+      gen_sec: 8.02
+      ref_sec: 7.62
+      cer: 0.0984
+      wer: 0.4118
+    bible_00036:
+      source: bible
+      text: Na nyimpa akakaben mboanofo no rohwehwɛ mo nkwa.
+      sbs: 0.7526
+      gen_sec: 5.29
+      ref_sec: 3.74
+      cer: 0.125
+      wer: 0.375
+    bible_00037:
+      source: bible
+      text: Na ɔdze kor kesii Bɛtɛl, na ɔdze kor so kesii Dan.
+      sbs: 0.7313
+      gen_sec: 5.03
+      ref_sec: 3.94
+      cer: 0.0263
+      wer: 0.0909
+    bible_00038:
+      source: bible
+      text: Iyi nye Judamba ebusuakuw no hɔn egyapadze dɛ mbrɛ hɔn ebusua ebusua tsetsee.
+      sbs: 0.7419
+      gen_sec: 8.45
+      ref_sec: 7.02
+      cer: 0.0312
+      wer: 0.1538
+    bible_00039:
+      source: bible
+      text: Na wowiee asaase no mu kyɛ.
+      sbs: 0.6453
+      gen_sec: 2.73
+      ref_sec: 3.74
+      cer: 0.1429
+      wer: 0.3333
+    bible_00040:
+      source: bible
+      text: Na aber a odur ɔhen n’enyim no, ɔbɔɔ no mu adze dze n’enyim boom famu wɔ ɔhen n’enyim.
+      sbs: 0.749
+      gen_sec: 8.28
+      ref_sec: 5.94
+      cer: 0.0938
+      wer: 0.2778
+    bible_00041:
+      source: bible
+      text: Mbrɛ Jehu sii sɛɛ Baal fii Israel nye no.
+      sbs: 0.7426
+      gen_sec: 4.1
+      ref_sec: 3.26
+      cer: 0.0938
+      wer: 0.1111
+    bible_00042:
+      source: bible
+      text: 'Ebɛka dɛ, Wɔabɔbɔ me, na annka me; Wɔabor me, naaso manntse: Ebɛn aber na mibenyan?'
+      sbs: 0.8034
+      gen_sec: 8.7
+      ref_sec: 9.28
+      cer: 0.0952
+      wer: 0.2667
+    bible_00043:
+      source: bible
+      text: 'Yɛ hɔn etsitsir dɛ Oreb na Zeeb; Nyew, hɔn mbapɔmba nyinara dɛ Zeba na Zalmunna: Hɔn a wɔsee
+        dɛ, Hom mma yɛmfa.'
+      sbs: 0.7661
+      gen_sec: 11.35
+      ref_sec: 11.2
+      cer: 0.0706
+      wer: 0.2273
+    bible_00044:
+      source: bible
+      text: na woetsiw hɔn dɛ mbepɔw do ntsɛw wɔ mframa mu.
+      sbs: 0.7617
+      gen_sec: 4.78
+      ref_sec: 4.1
+      cer: 0.0811
+      wer: 0.2
+    bible_00045:
+      source: bible
+      text: Na ɔbaa dɛ, nsɛm yi ekyir no, ɔbaa ofiwura no ne babanyin yaree; na ne yarba no mu yɛɛ dzen
+        dodoodow, ma ahom biara annka no mu.
+      sbs: 0.7888
+      gen_sec: 12.89
+      ref_sec: 11.4
+      cer: 0.0412
+      wer: 0.1481
+    bible_00046:
+      source: bible
+      text: 'Na ɔsee dɛ, Tase egyen menaba no: na ɔtasee.'
+      sbs: 0.756
+      gen_sec: 4.35
+      ref_sec: 4.26
+      cer: 0.3333
+      wer: 0.4444
+    bible_00047:
+      source: bible
+      text: Ɔwo, Nyankopɔn, maa nyankom tɔɔ berdzedzeedze.
+      sbs: 0.7477
+      gen_sec: 5.12
+      ref_sec: 3.42
+      cer: 0.3158
+      wer: 0.6667
+    bible_00048:
+      source: bible
+      text: Ne nda nyinara mu no woemmfi EWURADZE, hɔn egyanom Nyankopɔn no, n’ekyir dzi no ho emmfir.
+      sbs: 0.7698
+      gen_sec: 9.22
+      ref_sec: 9.06
+      cer: 0.0704
+      wer: 0.1875
+    bible_00049:
+      source: bible
+      text: Na ɔdze etsifi mbasu nye anaafo mbasu no maa no.
+      sbs: 0.7429
+      gen_sec: 4.86
+      ref_sec: 3.6
+      cer: 0.1053
+      wer: 0.2
+    finance_00000:
+      source: finance
+      text: Ntsi ɔtɔɔ afe fa bi
+      sbs: 0.6221
+      gen_sec: 1.88
+      ref_sec: 8.06
+      cer: 0.1333
+      wer: 0.6
+    finance_00002:
+      source: finance
+      text: Nsu kɔm dze me
+      sbs: 0.5527
+      gen_sec: 1.37
+      ref_sec: 6.3
+      cer: 0.8182
+      wer: 0.75
+    finance_00003:
+      source: finance
+      text: Boa me
+      sbs: 0.6089
+      gen_sec: 1.02
+      ref_sec: 4.28
+      cer: 1.0
+      wer: 1.0
+    finance_00004:
+      source: finance
+      text: Mber nnyi hɔ
+      sbs: 0.5952
+      gen_sec: 1.19
+      ref_sec: 4.62
+      cer: 0.2
+      wer: 0.6667
+    finance_00005:
+      source: finance
+      text: Dze susu sika no tɔɔ bɔɔl
+      sbs: 0.6232
+      gen_sec: 2.47
+      ref_sec: 5.64
+      cer: 0.3
+      wer: 0.3333
+    finance_00006:
+      source: finance
+      text: Dan mu
+      sbs: 0.6719
+      gen_sec: 1.02
+      ref_sec: 5.56
+      cer: 1.0
+      wer: 1.0
+    finance_00007:
+      source: finance
+      text: Kosɛ, Mannhyɛ daara
+      sbs: 0.6997
+      gen_sec: 2.22
+      ref_sec: 5.04
+      cer: 0.4375
+      wer: 1.0
+    finance_00008:
+      source: finance
+      text: Nokwar dze nyimpa bɛn owu ho
+      sbs: 0.6316
+      gen_sec: 2.9
+      ref_sec: 5.52
+      cer: 0.2609
+      wer: 0.5
+    finance_00009:
+      source: finance
+      text: Dɛm ara
+      sbs: 0.677
+      gen_sec: 1.02
+      ref_sec: 6.48
+      cer: 1.0
+      wer: 1.0
+    finance_00010:
+      source: finance
+      text: Enyin sen me
+      sbs: 0.5418
+      gen_sec: 1.19
+      ref_sec: 2.51
+      cer: 1.2
+      wer: 1.0
+    finance_00011:
+      source: finance
+      text: Ɔmee nye Ɔfe
+      sbs: 0.592
+      gen_sec: 1.19
+      ref_sec: 7.78
+      cer: 0.5
+      wer: 1.0
+    finance_00012:
+      source: finance
+      text: Ɔsow aba pii
+      sbs: 0.6674
+      gen_sec: 1.19
+      ref_sec: 3.25
+      cer: 0.0
+      wer: 0.0
+    finance_00013:
+      source: finance
+      text: Ngo a oguu asuafo no do
+      sbs: 0.5736
+      gen_sec: 2.39
+      ref_sec: 6.28
+      cer: 0.9444
+      wer: 1.3333
+    finance_00014:
+      source: finance
+      text: Ma me bebiree
+      sbs: 0.5008
+      gen_sec: 1.37
+      ref_sec: 5.3
+      cer: 0.2727
+      wer: 0.6667
+    finance_00015:
+      source: finance
+      text: Ɔsowee ara pɛ
+      sbs: 0.5478
+      gen_sec: 1.37
+      ref_sec: 4.24
+      cer: 1.3636
+      wer: 1.0
+    finance_00016:
+      source: finance
+      text: Dum kandzea no
+      sbs: 0.6115
+      gen_sec: 1.45
+      ref_sec: 2.86
+      cer: 0.75
+      wer: 0.6667
+    finance_00017:
+      source: finance
+      text: ɛkɔm dze me
+      sbs: 0.6254
+      gen_sec: 1.11
+      ref_sec: 6.28
+      cer: 0.3333
+      wer: 0.6667
+    finance_00018:
+      source: finance
+      text: M'ehu, m'ayɛ ewie
+      sbs: 0.6031
+      gen_sec: 1.62
+      ref_sec: 5.43
+      cer: 0.6667
+      wer: 0.6667
+    finance_00019:
+      source: finance
+      text: Yoo medaase
+      sbs: 0.6204
+      gen_sec: 1.19
+      ref_sec: 6.54
+      cer: 0.4
+      wer: 1.0
+    finance_00020:
+      source: finance
+      text: Me pɛdɛ mo tɔ credit na medze gu mtn number do
+      sbs: 0.5789
+      gen_sec: 4.52
+      ref_sec: 5.08
+      cer: 0.8611
+      wer: 1.3636
+    finance_00021:
+      source: finance
+      text: To ndwom
+      sbs: 0.5453
+      gen_sec: 1.02
+      ref_sec: 6.7
+      cer: 0.4286
+      wer: 1.0
+    finance_00022:
+      source: finance
+      text: Nye dza Osei dze yɛɛ buburo yi
+      sbs: 0.69
+      gen_sec: 2.99
+      ref_sec: 5.12
+      cer: 0.25
+      wer: 0.4286
+    finance_00023:
+      source: finance
+      text: 'Translation: By the roadside'
+      sbs: 0.487
+      gen_sec: 3.16
+      ref_sec: 1.96
+      cer: 1.0
+      wer: 1.0
+    finance_00024:
+      source: finance
+      text: Mo ho mmfa me
+      sbs: 0.5268
+      gen_sec: 1.19
+      ref_sec: 6.34
+      cer: 0.8
+      wer: 1.0
+    finance_00025:
+      source: finance
+      text: Dɛm ɔkɔr no
+      sbs: 0.5676
+      gen_sec: 1.11
+      ref_sec: 6.88
+      cer: 0.3333
+      wer: 0.6667
+    finance_00026:
+      source: finance
+      text: Kosɛ, Mannhyɛ daara
+      sbs: 0.6528
+      gen_sec: 2.22
+      ref_sec: 4.73
+      cer: 0.4375
+      wer: 1.0
+    finance_00027:
+      source: finance
+      text: Ɔbɛbuei n'enyinwa ɔkyena
+      sbs: 0.5866
+      gen_sec: 2.73
+      ref_sec: 5.06
+      cer: 0.619
+      wer: 2.3333
+    finance_00028:
+      source: finance
+      text: ɛretɔ egu ɛbɛn number do
+      sbs: 0.6054
+      gen_sec: 2.47
+      ref_sec: 6.66
+      cer: 1.0
+      wer: 1.6
+    finance_00029:
+      source: finance
+      text: W'edzi nkɔmbɔ mprɛnsa
+      sbs: 0.5441
+      gen_sec: 2.22
+      ref_sec: 6.5
+      cer: 1.2778
+      wer: 3.0
+    finance_00030:
+      source: finance
+      text: ɛretɔ egu ɛbɛn number do
+      sbs: 0.5825
+      gen_sec: 2.47
+      ref_sec: 7.52
+      cer: 1.0
+      wer: 1.6
+    finance_00032:
+      source: finance
+      text: Hello good morning, Mepawokyɛw moro tɔ credit
+      sbs: 0.5998
+      gen_sec: 4.86
+      ref_sec: 8.5
+      cer: 0.5789
+      wer: 1.1429
+    finance_00033:
+      source: finance
+      text: Ɔsowee ara pɛ
+      sbs: 0.5923
+      gen_sec: 1.37
+      ref_sec: 2.21
+      cer: 1.3636
+      wer: 1.0
+    finance_00034:
+      source: finance
+      text: Na biribiara dwoe
+      sbs: 0.6362
+      gen_sec: 1.88
+      ref_sec: 5.38
+      cer: 0.8
+      wer: 1.0
+    finance_00035:
+      source: finance
+      text: Nsu kɔm dze me
+      sbs: 0.5777
+      gen_sec: 1.37
+      ref_sec: 4.07
+      cer: 0.8182
+      wer: 0.75
+    finance_00036:
+      source: finance
+      text: Mma aboa bi twee
+      sbs: 0.5973
+      gen_sec: 1.71
+      ref_sec: 6.25
+      cer: 0.5385
+      wer: 0.75
+    finance_00037:
+      source: finance
+      text: Sɔ kandzea no
+      sbs: 0.5722
+      gen_sec: 1.37
+      ref_sec: 5.41
+      cer: 1.0909
+      wer: 1.3333
+    finance_00038:
+      source: finance
+      text: Oho, Oho, me pɛdɛ mo tɔ
+      sbs: 0.5661
+      gen_sec: 2.22
+      ref_sec: 7.58
+      cer: 0.5
+      wer: 1.0
+    finance_00039:
+      source: finance
+      text: Ne yer
+      sbs: 0.6481
+      gen_sec: 1.02
+      ref_sec: 6.26
+      cer: 1.0
+      wer: 1.0
+    finance_00040:
+      source: finance
+      text: Nokwar dze nyimpa bɛn owu ho
+      sbs: 0.6465
+      gen_sec: 2.9
+      ref_sec: 5.74
+      cer: 0.2609
+      wer: 0.5
+    finance_00041:
+      source: finance
+      text: Oho, Oho, me pɛdɛ mo tɔ
+      sbs: 0.6233
+      gen_sec: 2.22
+      ref_sec: 5.02
+      cer: 0.5
+      wer: 1.0
+    finance_00042:
+      source: finance
+      text: ɛretɔ egu ɛbɛn number do
+      sbs: 0.6075
+      gen_sec: 2.47
+      ref_sec: 2.05
+      cer: 1.0
+      wer: 1.6
+    finance_00043:
+      source: finance
+      text: Efow dua pa a na wo pia wo  push
+      sbs: 0.5968
+      gen_sec: 2.9
+      ref_sec: 6.68
+      cer: 0.6087
+      wer: 1.1111
+    finance_00044:
+      source: finance
+      text: Ko buu no
+      sbs: 0.6409
+      gen_sec: 1.02
+      ref_sec: 6.02
+      cer: 0.5714
+      wer: 1.0
+    finance_00045:
+      source: finance
+      text: Bra ha
+      sbs: 0.6559
+      gen_sec: 1.02
+      ref_sec: 6.58
+      cer: 1.0
+      wer: 1.0
+    finance_00046:
+      source: finance
+      text: To do ma me
+      sbs: 0.6361
+      gen_sec: 1.02
+      ref_sec: 5.94
+      cer: 0.25
+      wer: 1.0
+    finance_00047:
+      source: finance
+      text: Efow dua pa a na wo pia wo  push
+      sbs: 0.5913
+      gen_sec: 2.9
+      ref_sec: 6.66
+      cer: 0.6087
+      wer: 1.1111
+    finance_00048:
+      source: finance
+      text: Ko buu no
+      sbs: 0.6388
+      gen_sec: 1.02
+      ref_sec: 6.24
+      cer: 0.5714
+      wer: 1.0
+    finance_00049:
+      source: finance
+      text: Mber nnyi hɔ
+      sbs: 0.6459
+      gen_sec: 1.19
+      ref_sec: 4.4
+      cer: 0.2
+      wer: 0.6667
+    finance_00050:
+      source: finance
+      text: Eka brɔfo a?
+      sbs: 0.6448
+      gen_sec: 1.19
+      ref_sec: 7.1
+      cer: 0.6667
+      wer: 0.6667
+    finance_00051:
+      source: finance
+      text: 'Translation: By the roadside'
+      sbs: 0.5148
+      gen_sec: 3.16
+      ref_sec: 6.16
+      cer: 1.0
+      wer: 1.0
+    jw_00000:
+      source: jw
+      text: MMA MMA KWAN MA BIRIBIARA NNSƐƐ W’ENYIGYE
+      sbs: 0.6808
+      gen_sec: 4.1
+      ref_sec: 3.47
+      cer: 0.5294
+      wer: 1.0
+    jw_00001:
+      source: jw
+      text: Enuanom Beenu Abɛka Akwankyerɛ Kuw No Mufo Ho
+      sbs: 0.6844
+      gen_sec: 4.78
+      ref_sec: 4.21
+      cer: 0.2895
+      wer: 0.5
+    jw_00002:
+      source: jw
+      text: Mpaabɔ na n’Asɛm Bible no
+      sbs: 0.6255
+      gen_sec: 2.47
+      ref_sec: 3.01
+      cer: 0.8
+      wer: 1.4
+    jw_00003:
+      source: jw
+      text: Gyinae A Afofor Si Wɔ Nsa Ho
+      sbs: 0.7122
+      gen_sec: 2.65
+      ref_sec: 6.01
+      cer: 0.1364
+      wer: 0.4286
+    jw_00004:
+      source: jw
+      text: Yɛbɔhwɛ mbrɛ Job nwoma no besi aboa hɛn ma yeehu mbrɛ yebesi dze afotu a ɔbɔboa nkorɔfo ama
+        hɔn.
+      sbs: 0.7057
+      gen_sec: 10.15
+      ref_sec: 6.85
+      cer: 0.1299
+      wer: 0.4211
+    jw_00005:
+      source: jw
+      text: Yebesi dɛn aboa nkɔkora na mberwa?
+      sbs: 0.6373
+      gen_sec: 3.75
+      ref_sec: 3.95
+      cer: 0.2143
+      wer: 0.6667
+    jw_00006:
+      source: jw
+      text: Ɔto Ma Ɔyɛ Dzen A, Nya Ahotodo Dɛ Jehovah Bɔboa Wo
+      sbs: 0.6888
+      gen_sec: 5.12
+      ref_sec: 5.46
+      cer: 0.5897
+      wer: 0.7273
+    jw_00007:
+      source: jw
+      text: Fa Dza No Ho Hia Wo Paa A Epɛ Dɛ Isua No Dzi Kan
+      sbs: 0.6907
+      gen_sec: 4.52
+      ref_sec: 4.5
+      cer: 0.2286
+      wer: 0.5714
+    jw_00008:
+      source: jw
+      text: EBƐNADZE NA OBOTUM ABOA HƐN MA YAAGYE ATO MU DƐ JEHOVAH DZE HƐN BƆN AKYƐ HƐN?
+      sbs: 0.6669
+      gen_sec: 7.77
+      ref_sec: 5.58
+      cer: 0.0984
+      wer: 0.25
+    jw_00009:
+      source: jw
+      text: DZA YEBOSUA
+      sbs: 0.6375
+      gen_sec: 1.37
+      ref_sec: 12.69
+      cer: 0.7
+      wer: 1.5
+    jw_00010:
+      source: jw
+      text: si dɔ nyimpa?
+      sbs: 0.6748
+      gen_sec: 1.37
+      ref_sec: 3.54
+      cer: 1.0
+      wer: 1.0
+    jw_00011:
+      source: jw
+      text: Midzii mfe esuon no nna misii gyinae dɛ mibetsie Jehovah aber biara
+      sbs: 0.6758
+      gen_sec: 6.74
+      ref_sec: 8.68
+      cer: 0.4286
+      wer: 0.5833
+    jw_00012:
+      source: jw
+      text: MENYE ME YER DZE HƐNHO TOO JEHOVAH DO
+      sbs: 0.6269
+      gen_sec: 3.75
+      ref_sec: 3.23
+      cer: 0.6333
+      wer: 1.125
+    jw_00013:
+      source: jw
+      text: WƆTO NSA FRƐ AFOFOR BA NKAADZI NO ASE
+      sbs: 0.6972
+      gen_sec: 3.75
+      ref_sec: 3.71
+      cer: 0.2
+      wer: 0.625
+    jw_00014:
+      source: jw
+      text: Sua Dɛ Ebɛkyer Asafo Ndwom Egu Wo Tsirmu
+      sbs: 0.7122
+      gen_sec: 4.27
+      ref_sec: 3.49
+      cer: 0.1515
+      wer: 0.5
+    jw_00015:
+      source: jw
+      text: JEHOVAH MA YENYA ‘ƆPƐ NYE AHOƆDZEN A YƐDZE YƐ N’APƐDZE’
+      sbs: 0.6777
+      gen_sec: 5.38
+      ref_sec: 5.17
+      cer: 0.0698
+      wer: 0.4
+    jw_00016:
+      source: jw
+      text: Ebɛnadze ntsi na ndaansa yi yɛreka dɛ Jehovah ne dzin a no ho bɛtsew no nye asɛnhia a ɔda
+        hɔ? Hom mma yɛnhwɛ siantsir ebiasa bi ntsi a yɛreka dɛm.
+      sbs: 0.7144
+      gen_sec: 14.76
+      ref_sec: 13.16
+      cer: 0.1304
+      wer: 0.5333
+    jw_00017:
+      source: jw
+      text: The Wonders of Creation Reveal God’s Glory video no
+      sbs: 0.6136
+      gen_sec: 5.29
+      ref_sec: 4.09
+      cer: 1.0238
+      wer: 1.2222
+    jw_00018:
+      source: jw
+      text: WƆTOO NSA FRƐƐ HƐN DƐ YƐNKƆ ESTONIA, LATVIA, NA LITHUANIA A NNA YƐNNHWƐ KWAN
+      sbs: 0.7175
+      gen_sec: 7.94
+      ref_sec: 9.25
+      cer: 0.1475
+      wer: 0.5714
+    jw_00019:
+      source: jw
+      text: Ka Nokwar No Ho Asɛm Ma Ɔnyɛ Dɛw
+      sbs: 0.626
+      gen_sec: 3.16
+      ref_sec: 3.16
+      cer: 0.28
+      wer: 0.5
+    jw_00020:
+      source: jw
+      text: Hom Mma Yɛnhyehyɛ Hɛnho Nkuran Aber A Yɛakɔ Asafo Nhyiamu No
+      sbs: 0.6747
+      gen_sec: 6.66
+      ref_sec: 5.39
+      cer: 0.52
+      wer: 0.6364
+    jw_00021:
+      source: jw
+      text: Yɛbɔhwɛ akwan anan a yebotum afa do esuasua Jehovah na yɛabrɛ hɛnho adze.
+      sbs: 0.7195
+      gen_sec: 7.94
+      ref_sec: 6.9
+      cer: 0.2
+      wer: 0.5385
+    jw_00022:
+      source: jw
+      text: MBRƐ JOB N’ANYƐNKOFO BAASA NO SII TUU NO FO
+      sbs: 0.6642
+      gen_sec: 4.27
+      ref_sec: 3.54
+      cer: 0.2647
+      wer: 0.5556
+    jw_00023:
+      source: jw
+      text: EBƐNADZE NTSI NA NO HO HIA PAA DƐ YENYA ABOTAR?
+      sbs: 0.7
+      gen_sec: 4.78
+      ref_sec: 3.95
+      cer: 0.2162
+      wer: 0.8
+    jw_00024:
+      source: jw
+      text: KƆ DO ARA GYE TO MU WƆ W’AKOMA MU DƐ JEHOVAH DZE WO BƆN AKYƐ WO
+      sbs: 0.6989
+      gen_sec: 5.8
+      ref_sec: 4.84
+      cer: 0.2128
+      wer: 0.5
+    jw_00025:
+      source: jw
+      text: TSIE ‘ETUMFO A WƆKRƆN NO’
+      sbs: 0.641
+      gen_sec: 2.39
+      ref_sec: 3.04
+      cer: 0.5263
+      wer: 0.8
+    jw_00026:
+      source: jw
+      text: Zebulun, Issachar, na Dan
+      sbs: 0.6171
+      gen_sec: 2.73
+      ref_sec: 3.69
+      cer: 0.35
+      wer: 0.75
+    jw_00027:
+      source: jw
+      text: e Hwɛ video a wɔato dzin Hɔn A Wɔroko Gyedzi Ko No Yie—Christianfo Esigyafo . Ɔwɔ jw.org do.
+      sbs: 0.7171
+      gen_sec: 9.3
+      ref_sec: 11.46
+      cer: 0.2394
+      wer: 0.6471
+    jw_00028:
+      source: jw
+      text: MA JEHOVAH KWAN MA ƆNTSETSE WO
+      sbs: 0.6226
+      gen_sec: 3.16
+      ref_sec: 3.16
+      cer: 0.88
+      wer: 1.3333
+    jw_00029:
+      source: jw
+      text: GYE TO MU DƐ ASƐM NO AYƐ WO YAW
+      sbs: 0.6867
+      gen_sec: 2.73
+      ref_sec: 8.92
+      cer: 0.2174
+      wer: 0.4444
+    jw_00030:
+      source: jw
+      text: Ebɛnadze na ɔma yehu dɛ Jehovah ne dzin no ho hia Jesus n’ekyirdzifo?
+      sbs: 0.7298
+      gen_sec: 7.0
+      ref_sec: 6.78
+      cer: 0.1636
+      wer: 0.5385
+    jw_00031:
+      source: jw
+      text: NIGERIA​—YESUAA AMAMBRA FOFOR
+      sbs: 0.6372
+      gen_sec: 3.33
+      ref_sec: 3.08
+      cer: 0.96
+      wer: 2.6667
+    jw_00032:
+      source: jw
+      text: Sɛ hɔn a wɔrobɔwar no amma hɔn ayefor no annyɛ kuntann a, ebɛn mfaso na wobenya?
+      sbs: 0.7084
+      gen_sec: 8.19
+      ref_sec: 6.13
+      cer: 0.127
+      wer: 0.3125
+    jw_00033:
+      source: jw
+      text: EBƐNADZE NA ASAFO MU MPANYIMFO BOTUM AYƐ DZE AKYERƐ DƐ WOBU ENUANOM MBAA?
+      sbs: 0.7066
+      gen_sec: 7.68
+      ref_sec: 5.53
+      cer: 0.0833
+      wer: 0.0769
+    jw_00034:
+      source: jw
+      text: SUA NDZƐMBA AFOFOR A OBOTUM ABOA WO WƆ ASETSENA MU
+      sbs: 0.6912
+      gen_sec: 5.38
+      ref_sec: 3.71
+      cer: 0.4146
+      wer: 0.6
+    jw_00035:
+      source: jw
+      text: Ɔwɔ mu dɛ irunntum nnkyerɛ wo kun dza ɔnnyɛ dze, naaso ibotum ayɛ ndzɛmba ahorow bi dze atsew
+        w’adwendwen do na w’asomu so adwe wo. Susu nsɛm a odzidzi do yi ho.
+      sbs: 0.7239
+      gen_sec: 16.38
+      ref_sec: 11.12
+      cer: 0.24
+      wer: 0.5
+    jw_00036:
+      source: jw
+      text: YEBOTUM ESUA NYANKOPƆN HO ADZE PII EFI NDZƐMBA A ƆABƆ MU
+      sbs: 0.6704
+      gen_sec: 5.89
+      ref_sec: 4.57
+      cer: 0.5217
+      wer: 0.8182
+    jw_00037:
+      source: jw
+      text: Mma Wo Werɛ Mmfir Dɛ Ebɔbɔ Mpaa Ama Afofor
+      sbs: 0.6668
+      gen_sec: 4.27
+      ref_sec: 4.24
+      cer: 0.1765
+      wer: 0.3333
+    jw_00038:
+      source: jw
+      text: JEHOVAH MA HƐN AWERƐHYƐMU DƐ DZA ƆAKA NO BƐBA MU
+      sbs: 0.6683
+      gen_sec: 5.03
+      ref_sec: 4.41
+      cer: 0.3333
+      wer: 0.6
+    jw_00039:
+      source: jw
+      text: Ibesi dɛn esuasua Timothy na aakyerɛ dɛ edwen afofor ho?
+      sbs: 0.7183
+      gen_sec: 6.14
+      ref_sec: 5.75
+      cer: 0.1739
+      wer: 0.4
+    jw_00040:
+      source: jw
+      text: NYANSAHYƐ A OBOTUM ABOA WO MA EESUA ADZE
+      sbs: 0.6458
+      gen_sec: 4.52
+      ref_sec: 3.37
+      cer: 0.4848
+      wer: 1.375
+    jw_00041:
+      source: jw
+      text: Sɛ Jehovah bɔboa hɛn a, ebɛnadze na ɔsɛ dɛ yɛyɛ?
+      sbs: 0.7128
+      gen_sec: 5.03
+      ref_sec: 4.24
+      cer: 0.5946
+      wer: 1.3
+    jw_00042:
+      source: jw
+      text: Ɔdɔ a Jehovah wɔ ma wo no, ebɛka ho asɛm dɛn?
+      sbs: 0.7476
+      gen_sec: 4.35
+      ref_sec: 3.66
+      cer: 0.2727
+      wer: 0.5455
+    jw_00043:
+      source: jw
+      text: UNITED STATES​—WODZI YIE NA WƆWƆ GYEDZI
+      sbs: 0.6351
+      gen_sec: 4.01
+      ref_sec: 3.83
+      cer: 1.2188
+      wer: 1.3333
+    jw_00044:
+      source: jw
+      text: MA BIBLE MU AFOTUSƐM MBOA WO
+      sbs: 0.6661
+      gen_sec: 2.99
+      ref_sec: 3.13
+      cer: 0.3913
+      wer: 0.5
+    jw_00045:
+      source: jw
+      text: Ebɛn aber na asɛnka edwuma a yɛreyɛ no bɛba ewiei?
+      sbs: 0.6446
+      gen_sec: 5.12
+      ref_sec: 4.53
+      cer: 0.25
+      wer: 0.6
+    jw_00046:
+      source: jw
+      text: Ebɛnadze na ibotum ayɛ ama hɔn a wɔaba asafo nhyiamu fofor no hɔn ahom aka hɔnho?
+      sbs: 0.6987
+      gen_sec: 8.45
+      ref_sec: 5.77
+      cer: 0.0154
+      wer: 0.25
+    jw_00047:
+      source: jw
+      text: Sɛ yehu dɛ yehia mboa ama yɛnye Jehovah ntamu ayɛ papa a, ɔsɛ dɛ yɛkɔ asafo mu mpanyimfo no
+        nkyɛn ma wɔboa hɛn.
+      sbs: 0.6589
+      gen_sec: 11.43
+      ref_sec: 9.04
+      cer: 0.046
+      wer: 0.1739
+    jw_00048:
+      source: jw
+      text: EBƐNADZE NA AFOFOR BOTUM AYƐ DZE ABOA CHRISTIANFO A WƆNNWAREE?
+      sbs: 0.6851
+      gen_sec: 7.0
+      ref_sec: 4.38
+      cer: 0.1538
+      wer: 0.5
+    jw_00049:
+      source: jw
+      text: Ebɛnadze na yebotum esua efi mbrɛ Jesus dze Nyankopɔn n’abɔdze dzii dwuma wɔ ne nkyerɛkyerɛ
+        mu no mu?
+      sbs: 0.6817
+      gen_sec: 10.58
+      ref_sec: 7.48
+      cer: 0.0732
+      wer: 0.4444
+    lds_00000:
+      source: lds
+      text: Ma dɛm anyɛnkofo no, ebusuafo no, na binom a woritsie no, misi Asɔr baanodzifo hɔn afotu do
+        dɛ meserɛ hwehwɛ eduryɛ, adwen mu eduryɛ mboa, na sunsum mu mboa ber a edze wo werɛ rehyɛ Ewuradze
+        mu.
+      sbs: 0.5853
+      gen_sec: 20.64
+      ref_sec: 5.28
+      cer: 0.2171
+      wer: 0.4054
+    lds_00001:
+      source: lds
+      text: Tse dɛ Lehi no, nna onyim dɛ wonntsiw adɔfo a wonya nkã tse dɛ wɔayew.
+      sbs: 0.6421
+      gen_sec: 7.17
+      ref_sec: 5.44
+      cer: 0.1667
+      wer: 0.4
+    lds_00002:
+      source: lds
+      text: Yɛreyɛ esiesiefo nnkyerɛ dɛ ɔwɔ dɛ nkorɔfo hɔn adwenkyerɛ na dza wɔgye dzi no yɛpen do.
+      sbs: 0.5793
+      gen_sec: 8.96
+      ref_sec: 4.54
+      cer: 0.1127
+      wer: 0.4375
+    lds_00003:
+      source: lds
+      text: Ber a yɛka Asomdwee Hen do no, yɛbɛba abɛyɛ N’esiesiefo.
+      sbs: 0.6226
+      gen_sec: 5.8
+      ref_sec: 9.12
+      cer: 0.0909
+      wer: 0.5
+    lds_00004:
+      source: lds
+      text: Obesi dɛn bɛbɛn No mpo.
+      sbs: 0.6124
+      gen_sec: 2.39
+      ref_sec: 3.6
+      cer: 0.1111
+      wer: 0.2
+    lds_00005:
+      source: lds
+      text: Ekyir yi ehyiadzi no baa ewiei, mbom mekaa no ntsɛm ara dɛ mpanyin nhyiamu no bɛhyɛ ase dɔnhwer
+        kor ntamu.
+      sbs: 0.5722
+      gen_sec: 11.35
+      ref_sec: 7.1
+      cer: 0.0353
+      wer: 0.1
+    lds_00006:
+      source: lds
+      text: … Sɛ yennya akwankyerɛ a, ɔwɔ dɛ yedzi hɛn nsusui papa ho dwuma.’’  Ewiei na Nsatõ  Ewiei
+        no, ɔwɔ dɛ Nda a Odzi Ekyir Ahotseweefo yɛ ahyɛmudzi-sie nkorɔfo a wɔwɔ akyɛdze.
+      sbs: 0.663
+      gen_sec: 17.91
+      ref_sec: 12.94
+      cer: 0.0923
+      wer: 0.3333
+    lds_00007:
+      source: lds
+      text: Dɛ yɛyɛ Jesus Christ akadofo yi, yɛhwehwɛ som nkaafo dɛ mbrɛ Ɔno bɛyɛ osiandɛ abrabɔ rotweɔn
+        asesa.
+      sbs: 0.6099
+      gen_sec: 10.58
+      ref_sec: 9.66
+      cer: 0.0741
+      wer: 0.2353
+    lds_00008:
+      source: lds
+      text: Agyenkwa ne nkyerɛkyerɛ no twe hɛn dɛ, ahyɛmu mba no, bɛn No na ɔbɛkã ndzɛmba nyina a ɔsɛ
+        dɛ [yɛ]yɛ akyerɛ hɛn.
+      sbs: 0.6539
+      gen_sec: 11.61
+      ref_sec: 9.42
+      cer: 0.0941
+      wer: 0.4545
+    lds_00009:
+      source: lds
+      text: Ɔtɔfabi a iyi ma ahoper, awerɛhow, na enyimguase ba.
+      sbs: 0.6228
+      gen_sec: 5.55
+      ref_sec: 5.14
+      cer: 0.1463
+      wer: 0.5556
+    lds_00010:
+      source: lds
+      text: “Sunsum Krɔnkrɔn no gye nokwar ho dase, na ɔnam Sunsum Krɔnkrɔn no tum do, hom botum ehu nokwar
+        a ɔwɔ ndzɛmba nyinara mu” (“Moroni :)” (“The Holy Ghost Testifies of Truth,” Liahona, Ebɔw.
+      sbs: 0.6104
+      gen_sec: 18.85
+      ref_sec: 5.2
+      cer: 0.5071
+      wer: 0.625
+    lds_00011:
+      source: lds
+      text: Yɛkɛtsenaa sene dan mu ekyir no, nkorɔfo a woetwa hɛnho ehyia nyina bɔɔ adwenpɔw amon mu ara
+        dɛ wɔbɔsoɛr akɔtɔ popcorn.
+      sbs: 0.6382
+      gen_sec: 12.71
+      ref_sec: 9.08
+      cer: 0.1443
+      wer: 0.4762
+    lds_00012:
+      source: lds
+      text: Obotum ayɛ yie ber a yɛdze “hɛn akoma mu ahoɔdzen nyina mbɔ mpaa ma Egya no, ama ɔdze dɛm
+        ɔdɔ yi aahyɛ [hɛn] mã.” (Moroni :.
+      sbs: 0.5254
+      gen_sec: 12.37
+      ref_sec: 3.1
+      cer: 0.1333
+      wer: 0.36
+    lds_00013:
+      source: lds
+      text: Mekãe kyerɛɛ no dɛ iyi yɛ pɛpɛrdzi ho mbra no nsunsuando.
+      sbs: 0.5852
+      gen_sec: 6.14
+      ref_sec: 4.32
+      cer: 0.2609
+      wer: 0.7273
+    lds_00014:
+      source: lds
+      text: Wobotum nye nkorɔfo ‘[a]ba hɔn Ewuradze hɔn Nyankopɔn, noho nyimdzee ho’ [ Nephi :] a worimma
+        hɔn aman do” (“The Gathering of Scattered Israel,” Liahona, Ɔberɛfɛw , ).
+      sbs: 0.5351
+      gen_sec: 17.23
+      ref_sec: 5.7
+      cer: 0.4228
+      wer: 0.5833
+    lds_00015:
+      source: lds
+      text: Megye to mu dɛ, mber pii no, nna mobɔ Asɔr no ne dzin ntsɛntsɛm.
+      sbs: 0.6344
+      gen_sec: 6.31
+      ref_sec: 6.9
+      cer: 0.0
+      wer: 0.0
+    lds_00016:
+      source: lds
+      text: Mo somdwuma mu no, makɛsera ankorankor na ebusua ebusua dodow a ɔdomakoma esian ahwe hɔn.
+      sbs: 0.6238
+      gen_sec: 9.73
+      ref_sec: 10.0
+      cer: 0.0959
+      wer: 0.5333
+    lds_00017:
+      source: lds
+      text: Dwendwen mber tsĩabaa wɔ nkãtse a Jesus tsee ho ber a ahobrɛadze mu ara Ɔhohoor N’esuafo anan
+        ho, a Onyim dɛ hɔn mu kor beyi No ama dɛm anafua noara.
+      sbs: 0.646
+      gen_sec: 15.53
+      ref_sec: 13.14
+      cer: 0.1368
+      wer: 0.4
+    lds_00018:
+      source: lds
+      text: Tse dɛ binom no, Lena “gyedzi mu na owui, a [ne] nsa annkã anohoba no na ohunii na ɔyɛɛ [no]
+        etuu wɔ ekyirekyir.”  Lena tsenaa ase tse dɛ ma oedzi ahyɛmu horow yinom dada wɔ n’abrabɔ mu.
+      sbs: 0.5417
+      gen_sec: 18.68
+      ref_sec: 3.86
+      cer: 0.2101
+      wer: 0.5405
+    lds_00019:
+      source: lds
+      text: “Biribiara mma ahotɔ, mma nkamfo, anaa onnhia tsitsir mma hɛn ankorankor mpontu nnkyɛn dɛ
+        daa daa yebesi hɛn adwen pi wɔ nnuho do.
+      sbs: 0.6627
+      gen_sec: 13.48
+      ref_sec: 8.3
+      cer: 0.0865
+      wer: 0.3478
+    lds_00020:
+      source: lds
+      text: Ɔyɛ Agyenkwa no N’edwuma dɛ ɔdze hɛn adɔfo bɛsan aba.
+      sbs: 0.6249
+      gen_sec: 5.29
+      ref_sec: 3.66
+      cer: 0.2381
+      wer: 0.6
+    lds_00021:
+      source: lds
+      text: Ber kor no so wɔkã “woesuo mu” wɔ Mormon Nwoma mu no nye wɔrekasa afa nkorɔfo no a “[wo]bosuoo
+        poma no ano” ( Nephi :, ).
+      sbs: 0.5606
+      gen_sec: 11.61
+      ref_sec: 3.88
+      cer: 0.2235
+      wer: 0.4348
+    lds_00022:
+      source: lds
+      text: 'Ɔkãa dɛ: “sɛ etse nkã dɛ dza eyɛ no dodow wɔ afe yi mu anaa wɔ mfe a ɔreba no mu mma nngye
+        dzin a, nya awerɛkyekyer.'
+      sbs: 0.6504
+      gen_sec: 11.35
+      ref_sec: 10.56
+      cer: 0.1512
+      wer: 0.4444
+    lds_00023:
+      source: lds
+      text: Na obiara a ɔdze akoma a abobɔ nye sunsum a abotow bɛba mo hɔ no, ɔno na medze ogya nye Sunsum
+        Krɔnkrɔn bonuma.
+      sbs: 0.6204
+      gen_sec: 11.09
+      ref_sec: 11.52
+      cer: 0.069
+      wer: 0.2174
+    lds_00024:
+      source: lds
+      text: Pii fii hɔn efiefi, ɔkɔm dze hɔn, na nna wosuro.
+      sbs: 0.6169
+      gen_sec: 4.86
+      ref_sec: 6.86
+      cer: 0.0
+      wer: 0.0
+    lds_00025:
+      source: lds
+      text: 'Moses :  “Enyiwa nnhunii na aso nntsee, na ɔnnhɛn nyimpa akoma mu, ndzɛmba a Nyankopɔn esiesie
+        ama hɔn a wɔdɔ no”( Corinthfo :  John :  Nephi :'
+      sbs: 0.6089
+      gen_sec: 14.25
+      ref_sec: 4.52
+      cer: 0.1238
+      wer: 0.2174
+    lds_00026:
+      source: lds
+      text: Erosom  Elder Gerrit W. Gong ne Kasaa  Ɔkã Asomafo Duebien no hɔn Quorum no ho  Hom mma yɛmboa
+        na yɛnhwɛ dɛ mbrɛ hɛn Agyenkwa bɛyɛ, tsitsir ara ma hɔn a ɔnam ɔdɔ na som dwumadzi do wɔayɛ hɛn
+        adom ma yɛsom hɔn.
+      sbs: 0.5537
+      gen_sec: 21.41
+      ref_sec: 5.94
+      cer: 0.2593
+      wer: 0.5
+    lds_00027:
+      source: lds
+      text: Nna da no na mframa robɔ ma ewia epue na midzii kan tsee nsɛmfua no dɛ “Enya kokoram.’’ Ahobow
+        kãa emi na mo kun!
+      sbs: 0.6654
+      gen_sec: 11.18
+      ref_sec: 9.74
+      cer: 0.1294
+      wer: 0.375
+    lds_00028:
+      source: lds
+      text: Hwɛ tu hyɛ Nyame nsa mpaabɔ no ma Bangkok Thailand Temple, temples.ChurchofJesusChrist.org.
+      sbs: 0.6044
+      gen_sec: 10.58
+      ref_sec: 3.52
+      cer: 0.2105
+      wer: 0.5833
+    lds_00029:
+      source: lds
+      text: Ana ibotum esusu woho dɛ ewɔ hɔ, ehyɛ nkorɔfo a woehyia basabasayɛ na ɔsɛɛ dodoodow hɔn mu
+        a?
+      sbs: 0.5391
+      gen_sec: 9.81
+      ref_sec: 6.76
+      cer: 0.1216
+      wer: 0.5556
+    lds_00030:
+      source: lds
+      text: Me mbasiamba pɛ dɛ wɔwasa nsa-tseaba enum anohoba yi kyerɛ hɔn mba (me nanamba) anapa biara—Egya
+        a ɔwɔ Sor ho nkaa a krɔnkrɔn mu ara onyim ne mba hɔn mu kor biara.
+      sbs: 0.6351
+      gen_sec: 16.72
+      ref_sec: 5.6
+      cer: 0.1969
+      wer: 0.5
+    lds_00031:
+      source: lds
+      text: Ewia kɛse no yɛ tum a ɔyɛ ndam wɔ wiadze mu, mbom yenya ne nhyira fi [ne] hyerɛn mu osiandɛ
+        ɔtow ba hɛn do nhyerɛnee nketseaba mu a, ne nyina bɔ mu dze ewia ne kan hyɛ wiadze nyina mã.
+      sbs: 0.5518
+      gen_sec: 19.11
+      ref_sec: 4.98
+      cer: 0.1143
+      wer: 0.275
+    lds_00032:
+      source: lds
+      text: Yekegyinae no, mesee dɛ, Owura, meserɛ wo.
+      sbs: 0.5733
+      gen_sec: 4.35
+      ref_sec: 3.0
+      cer: 0.125
+      wer: 0.4286
+    lds_00033:
+      source: lds
+      text: 'Nsɛnsin  Hwɛ Nkyerɛkyerɛ na Ahyɛmudzi :–  Hwɛ Nkyerɛkyerɛ na Ahyɛmudzi :–, ; Preach My Gospel:
+        A Guide to Sharing the Gospel of Jesus Christ (), .'
+      sbs: 0.6444
+      gen_sec: 15.27
+      ref_sec: 8.5
+      cer: 0.4815
+      wer: 0.619
+    lds_00034:
+      source: lds
+      text: Jesus Christ Yɛ Mboa  President Camille N. Johnson ne Kasaa  Wiadze Mfɛndzanan Relief Society
+        President  Yebotum nye Agyenkwa no abɔ mu aboa dze honam mu nye sunsum mu mboa ama hɔn a wohia—na
+        wɔ kwan no mu no yeenya hɛn ankasa hɛn mboa.
+      sbs: 0.5177
+      gen_sec: 24.91
+      ref_sec: 5.42
+      cer: 0.2872
+      wer: 0.5814
+    lds_00035:
+      source: lds
+      text: Nda kakra ekyir ara, n’anyɛnkofo too nsa frɛɛ no dɛ wɔnkɔhwɛ sene bi a ɔnnyɛ.
+      sbs: 0.5155
+      gen_sec: 7.77
+      ref_sec: 4.66
+      cer: 0.1833
+      wer: 0.4667
+    lds_00036:
+      source: lds
+      text: Kaa Dza Ohia Papaapa  President M. Russell Ballard ne Kasaa  Asomafo Duebien no hɔn Quorum
+        ne President n’Ananmu-gyinanyi  Dza ohia papaapa nye hɛn nkitahodzi a yɛnye Ɔsor Egya na No Dɔba,
+        hɛn ebusua ebusua, na hɛn fipamfo wɔ, na yɛrema Ewuradze no Sunsum ama hɛn kwankyerɛ.
+      sbs: 0.5896
+      gen_sec: 28.83
+      ref_sec: 12.14
+      cer: 0.3196
+      wer: 0.7609
+    lds_00037:
+      source: lds
+      text: Mukodurii no, migyaa moho too anhwea no do a, nna maberɛ ara yie.
+      sbs: 0.6467
+      gen_sec: 6.57
+      ref_sec: 4.66
+      cer: 0.1
+      wer: 0.3846
+    lds_00038:
+      source: lds
+      text: Akomayaw na abagura ho nsɛm a onnkopue dawurbɔ nkraataa enyim anaa ɔrenntahye da ho.
+      sbs: 0.6427
+      gen_sec: 9.05
+      ref_sec: 8.06
+      cer: 0.1429
+      wer: 0.4286
+    lds_00039:
+      source: lds
+      text: Mfe pii a abɛsen no hɛn ebusua kumabaa no nna yɛrokɔ akɔhwɛ sene ayɛ hɛn ebusua ewimbir fie
+        nhyiamu.
+      sbs: 0.5994
+      gen_sec: 10.67
+      ref_sec: 4.92
+      cer: 0.1111
+      wer: 0.6316
+    lds_00040:
+      source: lds
+      text: Nna Ɔanom kuraba wenwen no ano na Ɔasɔw amandzehu nyinara ama sɛ yenu hɛnho a yennhu amandze.
+      sbs: 0.6178
+      gen_sec: 9.81
+      ref_sec: 6.82
+      cer: 0.1447
+      wer: 0.5882
+    lds_00041:
+      source: lds
+      text: Dɛm Anglo-French kasafua no fi Tsetse French kasafua relever, anaa dɛ “ma do,” nna fi Latin
+        kasafua relevare mu, anaa “ma do bio.”  Nuambanyin na nkyerɛbaa, Jesus Christ yɛ mboa.
+      sbs: 0.5117
+      gen_sec: 18.85
+      ref_sec: 5.38
+      cer: 0.1752
+      wer: 0.4667
+    lds_00042:
+      source: lds
+      text: '“Na nyia owui no firii bae: nda mu atam kyekyer ne nan nye ne nsa, na duukuu kyekyer n’enyim.'
+      sbs: 0.6158
+      gen_sec: 9.22
+      ref_sec: 6.68
+      cer: 0.1
+      wer: 0.3158
+    lds_00043:
+      source: lds
+      text: Okenyaan hɛn!
+      sbs: 0.5555
+      gen_sec: 1.45
+      ref_sec: 3.26
+      cer: 0.8182
+      wer: 1.0
+    lds_00044:
+      source: lds
+      text: Nyimpa nyina akyɛdze yi dze dza oye ho tsiboa, pɛ dɛ ebɔdɔ na wɔadɔ wo ba.
+      sbs: 0.6882
+      gen_sec: 7.51
+      ref_sec: 11.56
+      cer: 0.1579
+      wer: 0.4375
+    lds_00045:
+      source: lds
+      text: Nna ɔpɛ dɛ wonuma no ntsɛmara, naaso nna n’ebusua mu mba nkaa no nnyɛ krado.
+      sbs: 0.6171
+      gen_sec: 7.77
+      ref_sec: 5.66
+      cer: 0.1695
+      wer: 0.7333
+    lds_00046:
+      source: lds
+      text: Yɛresan akɔ hɛn ayɛdzefo a wɔwɔ akyɛdze mfatoho no ho a, ohia dɛ yɛkaa dɛ akyɛdze nko nnkyerɛ
+        dɛ ebɔwea wɔ talent no ho.
+      sbs: 0.6508
+      gen_sec: 12.2
+      ref_sec: 9.7
+      cer: 0.0737
+      wer: 0.4583
+    lds_00047:
+      source: lds
+      text: 'Hom mu binom bɔdwen dɛ: “Na yeregya mbanana ɛ?'
+      sbs: 0.6304
+      gen_sec: 4.52
+      ref_sec: 3.48
+      cer: 0.4857
+      wer: 0.6667
+    lds_00048:
+      source: lds
+      text: Na kwan kor a dɛm botum aba nye yɛbɛyɛ Jesus Christ N’Asɔr a ɔwɔ hɔ ma Nda a Odzi Ekyir Ahotseweefo
+        asɔrmba pa na ɔnam asɔfodzi krɔnkrɔn no do wɔasɔw hɛn ano wɔ temple.
+      sbs: 0.6631
+      gen_sec: 17.15
+      ref_sec: 11.2
+      cer: 0.1654
+      wer: 0.4706
+    lds_00049:
+      source: lds
+      text: Ɔwɔ mu dɛ tsetseber no nna temple wɔ hɔ, na Jesus Christ n’asɛmpa ne Nsanananmu no, temple
+        ne nsii ayɛ nkɔnhyɛfo nyina ofitsi Nkɔnhyɛnyi Joseph Smith do hɔn ehiadze a ɔkrɔn koraa no mu
+        kor ama hɔn.
+      sbs: 0.5647
+      gen_sec: 20.64
+      ref_sec: 13.38
+      cer: 0.1592
+      wer: 0.4324
 - model: k2-fsa/OmniVoice-noref
   model_url: https://huggingface.co/k2-fsa/OmniVoice
   mode: noref
@@ -18589,4 +20279,4 @@ benchmarks:
       ref_sec: 13.38
       cer: 0.1146
       wer: 0.3514
-updated: '2026-10-01'
+updated: '2026-10-09'

@@ -7595,6 +7595,1902 @@ benchmarks:
       ref_sec: 15.69
       cer: 0.0526
       wer: 0.1333
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.6484
+  num_scored: 200
+  cer: 0.1028
+  wer: 0.3558
+  accuracy: 0.8972
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.7728
+  score: 0.7728
+  per_source:
+    bible:
+      sbs: 0.7177
+      cer: 0.0842
+      n: 67
+    unicef:
+      sbs: 0.6216
+      cer: 0.0962
+      n: 67
+    waxal:
+      sbs: 0.6052
+      cer: 0.1283
+      n: 66
+  entries:
+    bible_00000:
+      source: bible
+      text: Nyini n-zali tɔrili ni o yiɣimi du zuɣusaa katiŋa.
+      sbs: 0.6729
+      gen_sec: 4.52
+      ref_sec: 3.42
+      cer: 0.075
+      wer: 0.1111
+    bible_00001:
+      source: bible
+      text: Bɛ ni daa wum Judas ni yɛli shɛm maa, ka di niŋ ba nyaɣisim pam, ka bɛ lo o alikauli ni bɛ
+        ni ti o liɣiri.
+      sbs: 0.7368
+      gen_sec: 8.62
+      ref_sec: 7.26
+      cer: 0.0641
+      wer: 0.1538
+    bible_00002:
+      source: bible
+      text: Bɛnkam tumdi dimbɔŋɔnim’ kul ku vuui bɛ zaashee.
+      sbs: 0.726
+      gen_sec: 4.27
+      ref_sec: 6.7
+      cer: 0.0256
+      wer: 0.125
+    bible_00003:
+      source: bible
+      text: Ka Naa Hɛrɔd daa wum lala maa ka yɛli, “N ni daa ŋma Jɔn Baptaizira so zuɣu la n-lan neei
+        kum ni na maa.
+      sbs: 0.7594
+      gen_sec: 8.45
+      ref_sec: 6.64
+      cer: 0.039
+      wer: 0.125
+    bible_00004:
+      source: bible
+      text: A shiri mi, dama di saha bɛ daa pun dɔɣ’ a.
+      sbs: 0.6629
+      gen_sec: 3.24
+      ref_sec: 3.54
+      cer: 0.3
+      wer: 0.4545
+    bible_00005:
+      source: bible
+      text: Ka Naawuni zaligubaŋdib’ mini Farisiinim’ daa kpahindi Yisa ni bɛ nya o ni tib’ o Vuhim Dabisili
+        dali maa bee o ku tib’ o, dama bɛ daa bɔri ni bɛ nyala o taali ka fiɣis’ o.
+      sbs: 0.7668
+      gen_sec: 13.91
+      ref_sec: 12.08
+      cer: 0.0154
+      wer: 0.0556
+    bible_00006:
+      source: bible
+      text: Bɛ ni yihi kuɣa din daa di buɣim tampuya saɣiri la ni me?
+      sbs: 0.7098
+      gen_sec: 4.86
+      ref_sec: 4.5
+      cer: 0.1364
+      wer: 0.2308
+    bible_00007:
+      source: bible
+      text: O daa zaŋ o yiko n-kari zuliya shɛb’ bɛn daa galisi ka mali kpiɔŋ gari ya, ka zaŋ ya na ti
+        zaŋ bɛ tiŋgbɔŋ tin ya, ka yi su li kaman di ni nyɛ shɛm zuŋɔ dabisili ŋɔ.
+      sbs: 0.7532
+      gen_sec: 13.65
+      ref_sec: 12.36
+      cer: 0.0164
+      wer: 0.0526
+    bible_00008:
+      source: bible
+      text: Pa nyin’ n-nyɛ ŋun su zuliya kam zaa nam fukumsi?
+      sbs: 0.6118
+      gen_sec: 3.93
+      ref_sec: 3.52
+      cer: 0.027
+      wer: 0.1
+    bible_00009:
+      source: bible
+      text: N chɛ ka baɣisi leei jɛra.
+      sbs: 0.5579
+      gen_sec: 2.39
+      ref_sec: 8.4
+      cer: 0.75
+      wer: 0.8333
+    bible_00010:
+      source: bible
+      text: Amaa ka Naawuni nira daa chaŋ naa maa sani ti yɛl’ o, “N dan’ naa, di chɛ ka Izraɛl tɔbbihi
+        ŋɔ pahi dol’ a chaŋ, dama Yawɛ ka Izraɛlnim’ bɛn nyɛ Ifriim zuliya ŋɔ zaa so sani.
+      sbs: 0.7562
+      gen_sec: 13.91
+      ref_sec: 14.1
+      cer: 0.0465
+      wer: 0.1081
+    bible_00011:
+      source: bible
+      text: Ŋuna n-simdi jilima tibu mini yiko subu hal ni saha din ka bahigu.
+      sbs: 0.6665
+      gen_sec: 5.55
+      ref_sec: 5.54
+      cer: 0.0192
+      wer: 0.0769
+    bible_00012:
+      source: bible
+      text: Ka di daa ti lu Vuhim Dabisili dali yaha ka Yisa lan kpe Yɛhudianim’ jɛmbu duu ti wuhiri niriba,
+        ka do’ so ŋun nudirigu bɔɣu kpi daa beni.
+      sbs: 0.7598
+      gen_sec: 11.35
+      ref_sec: 10.02
+      cer: 0.0187
+      wer: 0.1071
+    bible_00013:
+      source: bible
+      text: ka dabiɛm mini niŋgbuŋ sɔhibu daa paai ma din daa dam n kɔba ni zaa.
+      sbs: 0.7378
+      gen_sec: 5.55
+      ref_sec: 6.32
+      cer: 0.0566
+      wer: 0.1333
+    bible_00014:
+      source: bible
+      text: Hɔdia so mi ni Hashum ni Bɛzai ni.
+      sbs: 0.6845
+      gen_sec: 2.73
+      ref_sec: 4.88
+      cer: 0.1154
+      wer: 0.625
+    bible_00015:
+      source: bible
+      text: n yi n-zan’ a zuɣu.
+      sbs: 0.5127
+      gen_sec: 1.45
+      ref_sec: 3.66
+      cer: 0.25
+      wer: 0.6
+    bible_00016:
+      source: bible
+      text: Dinzuɣu ka bɛ daa yɛl’ taba, “Di chɛliya ka ti chee’ li, amaa chɛliya ka ti tola tɛte n-nya
+        ŋun yɛn di li.
+      sbs: 0.7635
+      gen_sec: 8.53
+      ref_sec: 7.64
+      cer: 0.0519
+      wer: 0.2609
+    bible_00017:
+      source: bible
+      text: Dama a yɛliya, ‘M biɛhigu nyɛla din be kasi.
+      sbs: 0.6905
+      gen_sec: 3.58
+      ref_sec: 3.78
+      cer: 0.0303
+      wer: 0.1111
+    bible_00018:
+      source: bible
+      text: amaa o ni kari ninvuɣ’ biɛri bɛn’ bihi bahi.
+      sbs: 0.7267
+      gen_sec: 3.58
+      ref_sec: 4.14
+      cer: 0.0303
+      wer: 0.1111
+    bible_00019:
+      source: bible
+      text: ” Yɛhudianim’ bɛn mini ba daa be m-miri taba ni daa kana, bɛ daa yɛli ti siɣimsiɣim bupia,
+        “Ti dimnim’ maa ni yi bɛ ni be luɣ’ shɛlikam zaa kana ti liri ti.
+      sbs: 0.7577
+      gen_sec: 12.37
+      ref_sec: 12.7
+      cer: 0.0174
+      wer: 0.0312
+    bible_00020:
+      source: bible
+      text: Bɛ ni daa niŋ kpam ŋmiri zim viɛl’ shɛli ni bɛ zaŋ mali chi sara daa palila bina ayi maa.
+      sbs: 0.7455
+      gen_sec: 7.17
+      ref_sec: 6.66
+      cer: 0.0147
+      wer: 0.15
+    bible_00021:
+      source: bible
+      text: O yaannim’ shɛba n-daa lan nyɛ Hazaaya mini Adaya ni Joyarib ni Zakaria so mi bɛn daa nyɛ
+        Shilo daŋ ni niriba la.
+      sbs: 0.7406
+      gen_sec: 9.47
+      ref_sec: 12.16
+      cer: 0.0341
+      wer: 0.0435
+    bible_00022:
+      source: bible
+      text: 'Yawɛ ni yɛl’ shɛm m-bɔŋɔ: Ŋuna ŋun nam zuɣusaa ŋɔ.'
+      sbs: 0.7229
+      gen_sec: 4.44
+      ref_sec: 3.24
+      cer: 0.0541
+      wer: 0.2
+    bible_00023:
+      source: bible
+      text: Di saha ka niriba maa zaa daa saɣi ni bɛ lan zaŋm’ daba ayopɔin puhi chuɣu maa yaha.
+      sbs: 0.7176
+      gen_sec: 6.91
+      ref_sec: 7.06
+      cer: 0.0769
+      wer: 0.1667
+    bible_00024:
+      source: bible
+      text: Ka ŋuni n-lee ni tooi be Ziɔn a daboli din be kasi la zuɣu?
+      sbs: 0.6975
+      gen_sec: 5.29
+      ref_sec: 5.36
+      cer: 0.1818
+      wer: 0.2857
+    bible_00025:
+      source: bible
+      text: Dama bɛ daa bi tooi puhi li di puhibu saha, maligumaaniba bɛn daa mali bɛmaŋ’ be kasi kalinli
+        ni daa bi paai, ka niriba mi daa bi laɣim Jɛrusalɛm na la zuɣu.
+      sbs: 0.7517
+      gen_sec: 13.06
+      ref_sec: 11.16
+      cer: 0.0164
+      wer: 0.0312
+    bible_00026:
+      source: bible
+      text: Ahia ni Hanan so mi ni Anan ni.
+      sbs: 0.6112
+      gen_sec: 2.47
+      ref_sec: 4.82
+      cer: 0.3913
+      wer: 0.625
+    bible_00027:
+      source: bible
+      text: Ka Ɛhab daa kɔri piɛri mini niɣi pam n-niŋ o mini bɛn daa kana saani, ka daa balim o ni o
+        chɛ ka bɛ chaŋ ti tuhi Ramɔtigiliadnima.
+      sbs: 0.7488
+      gen_sec: 10.84
+      ref_sec: 11.0
+      cer: 0.06
+      wer: 0.25
+    bible_00028:
+      source: bible
+      text: N daa nyɛla nachimbila, ka pumpɔŋɔ n kurigiya.
+      sbs: 0.7362
+      gen_sec: 3.93
+      ref_sec: 3.4
+      cer: 0.0811
+      wer: 0.375
+    bible_00029:
+      source: bible
+      text: Ka bɛ daa chaŋ ti ŋma li n-zaŋ niŋ pɔŋ ni na ti ti bipuɣiŋga maa, ka o daa zaŋ li nti ti o
+        ma.
+      sbs: 0.7353
+      gen_sec: 7.94
+      ref_sec: 6.62
+      cer: 0.0896
+      wer: 0.32
+    bible_00030:
+      source: bible
+      text: Ka ninvuɣ’ so ŋun daa piɛbiri kikaa gba daa kul baɣi ma.
+      sbs: 0.7364
+      gen_sec: 4.78
+      ref_sec: 4.42
+      cer: 0.093
+      wer: 0.3333
+    bible_00031:
+      source: bible
+      text: Nir’ yi chaŋ kumsi ni be yil’ shɛli, di so ni o chaŋ dimma ni nyubu ni be yil’ shɛli.
+      sbs: 0.7457
+      gen_sec: 6.83
+      ref_sec: 6.14
+      cer: 0.0
+      wer: 0.0
+    bible_00032:
+      source: bible
+      text: O bela nimaani lihiri bɔr’ o ni yɛn gbaai binshɛli di.
+      sbs: 0.6714
+      gen_sec: 4.44
+      ref_sec: 3.56
+      cer: 0.0714
+      wer: 0.1818
+    bible_00033:
+      source: bible
+      text: ” Ka bɛ bɔh’ o, “O be ya?
+      sbs: 0.704
+      gen_sec: 1.79
+      ref_sec: 13.76
+      cer: 0.1538
+      wer: 0.1429
+    bible_00034:
+      source: bible
+      text: ‘Bɔzuɣu ka yi kul tɔɣisiri n zaligunim’ yɛla sahakam?
+      sbs: 0.7069
+      gen_sec: 4.44
+      ref_sec: 3.54
+      cer: 0.0476
+      wer: 0.2222
+    bible_00035:
+      source: bible
+      text: Dimbɔŋɔ zaa nyaaŋa ka Yawɛ daa chɛ ka dɔr’ shɛli din ka tibbu gbaag’ o nyɔri.
+      sbs: 0.7343
+      gen_sec: 6.23
+      ref_sec: 5.3
+      cer: 0.0847
+      wer: 0.25
+    bible_00036:
+      source: bible
+      text: Dama o ni daa yi nimaani ka o mini Jɔram doli tab’ chana, ka bɛ daa chirigi Nimshi bia Jɛhu,
+        Yawɛ ni daa zali so ni o kum’ Ɛhab daŋ ni niriba zaa la.
+      sbs: 0.7526
+      gen_sec: 11.95
+      ref_sec: 13.2
+      cer: 0.045
+      wer: 0.2059
+    bible_00037:
+      source: bible
+      text: N daa ti a yiko ka a wurim bɛ ni me goma gili tin’ shɛŋa, ka di leei dabari.
+      sbs: 0.7592
+      gen_sec: 6.23
+      ref_sec: 6.08
+      cer: 0.1091
+      wer: 0.3158
+    bible_00038:
+      source: bible
+      text: ka zaŋ tiŋgban’ shɛli din ka kulim ti ba ni di nyɛ bɛ biɛhigu shee.
+      sbs: 0.7331
+      gen_sec: 5.55
+      ref_sec: 4.14
+      cer: 0.0
+      wer: 0.0
+    bible_00039:
+      source: bible
+      text: Ka Izraɛl Naa Ɛhab daa bɔhi Juda Naa Jɛhɔshafat, “A ni pahi n zuɣu ka ti chaŋ ti tuhi Ramɔtigiliadnima?
+      sbs: 0.7379
+      gen_sec: 8.45
+      ref_sec: 8.78
+      cer: 0.0741
+      wer: 0.15
+    bible_00040:
+      source: bible
+      text: “Ka yi daa vu m-mirina ti zani zoli maa gbini, ka zoli maa daa taai buɣim n-kpuɣi du sagbana
+        ni, ka sagbana daa zibigi lim li.
+      sbs: 0.7622
+      gen_sec: 10.33
+      ref_sec: 9.74
+      cer: 0.0105
+      wer: 0.0385
+    bible_00041:
+      source: bible
+      text: dama bɛn tuhiri ma maa galisiya pam.
+      sbs: 0.6338
+      gen_sec: 2.99
+      ref_sec: 3.02
+      cer: 0.2069
+      wer: 0.4286
+    bible_00042:
+      source: bible
+      text: Bɛ daa yi puhi chuɣu maa naai, Ayuba timdimi ka bɛ chaŋ ti mali ba ka bɛ niŋ kasi.
+      sbs: 0.7685
+      gen_sec: 6.66
+      ref_sec: 7.48
+      cer: 0.0161
+      wer: 0.0526
+    bible_00043:
+      source: bible
+      text: Amaa bɛ daa sɔɣ’ o, dama bɛ daa yɛlimi, “O nyɛla Jɛhɔshafat ŋun daa jɛmdi Yawɛ ni o suhu zaa
+        la yaaŋa.
+      sbs: 0.7611
+      gen_sec: 8.45
+      ref_sec: 8.6
+      cer: 0.0921
+      wer: 0.1364
+    bible_00044:
+      source: bible
+      text: Ka o nyaandoliba maa daa chaŋ fɔŋ maa ni nti shiri nya Yisa ni yɛli ba shɛm maa zaa, ka mali
+        Yaɣigari Chuɣu maa bindirigu dibu shili.
+      sbs: 0.7606
+      gen_sec: 11.26
+      ref_sec: 7.96
+      cer: 0.0286
+      wer: 0.0741
+    bible_00045:
+      source: bible
+      text: Ka bɛ daa yɛli Ɛzra ŋun daa nyɛ zaligubaŋda la ni o zaŋm’ Musa zaligu litaafi shɛli Yawɛ ni
+        daa zaŋ ti Izraɛlnim’ la na.
+      sbs: 0.6983
+      gen_sec: 9.81
+      ref_sec: 9.16
+      cer: 0.1075
+      wer: 0.2
+    bible_00046:
+      source: bible
+      text: M biɛhigu din ka buchi ŋɔ puuni, n nya binshɛɣukam zaa.
+      sbs: 0.7398
+      gen_sec: 4.69
+      ref_sec: 4.18
+      cer: 0.0465
+      wer: 0.2727
+    bible_00047:
+      source: bible
+      text: Di zaa ŋɔ shɛli bi simdi niŋbu, amaa din simdi niŋbu nyɛla wumpaɣibo.
+      sbs: 0.7513
+      gen_sec: 6.14
+      ref_sec: 5.74
+      cer: 0.0182
+      wer: 0.0769
+    bible_00048:
+      source: bible
+      text: Ka o daa mali Ɛlat me n-ti Judanima, Naa Amazia kalinsi maa nyaaŋa.
+      sbs: 0.7416
+      gen_sec: 5.72
+      ref_sec: 6.08
+      cer: 0.1154
+      wer: 0.2308
+    bible_00049:
+      source: bible
+      text: ka bɛ daa kul dɔɣi ma n-zaŋ ma ti niŋla gballi ni.
+      sbs: 0.7027
+      gen_sec: 4.18
+      ref_sec: 3.42
+      cer: 0.0811
+      wer: 0.25
+    bible_00050:
+      source: bible
+      text: Ka Jɛhɔshafat daa faai siɣ’ o yaannim’ sani, ka bɛ sɔɣ’ o o yaannim’ siliga ni Dauda tiŋ’
+        la ni; ka o bia Jɛhɔram daa di nam zan’ o zaani.
+      sbs: 0.7542
+      gen_sec: 11.01
+      ref_sec: 12.18
+      cer: 0.16
+      wer: 0.3
+    bible_00051:
+      source: bible
+      text: A pun wum Asiria naa ni niŋ tiŋgbɔn’ shɛŋa shɛm ni o ni saɣim li zaa shɛm yɛla.
+      sbs: 0.7155
+      gen_sec: 6.57
+      ref_sec: 6.02
+      cer: 0.05
+      wer: 0.1111
+    bible_00052:
+      source: bible
+      text: Ka so mi bi nyɔri firila n-zaŋdi lɔɣu pindi li, amaa o naɣ’ ni zaŋ li mi tam binshɛl’ zuɣu
+        ni di ne sokam zaa yili maa ni.
+      sbs: 0.6969
+      gen_sec: 10.15
+      ref_sec: 8.08
+      cer: 0.0556
+      wer: 0.2857
+    bible_00053:
+      source: bible
+      text: Ti ku chɛ ti Naawuni jɛmbu duu maa bahi.
+      sbs: 0.6794
+      gen_sec: 3.16
+      ref_sec: 4.34
+      cer: 0.0
+      wer: 0.0
+    bible_00054:
+      source: bible
+      text: ” Di saha ka tɔbbihi maa daa chɛ bɛ ni gbahi shɛb’ maa mini bɛ ni daa di neen shɛŋa na maa
+        zaa zali kpamba maa mini zama maa zaa tooni.
+      sbs: 0.7381
+      gen_sec: 10.75
+      ref_sec: 9.6
+      cer: 0.0098
+      wer: 0.1
+    bible_00055:
+      source: bible
+      text: Di tuhiya a sani ni a niŋ a ni zaŋ a nuhi.
+      sbs: 0.6373
+      gen_sec: 3.24
+      ref_sec: 4.24
+      cer: 0.0
+      wer: 0.0
+    bible_00056:
+      source: bible
+      text: ka bɛ zaŋ wɔɣira maa chaŋ ka di pala daadam nuu n-niŋ li.
+      sbs: 0.7442
+      gen_sec: 4.86
+      ref_sec: 3.92
+      cer: 0.1395
+      wer: 0.2308
+    bible_00057:
+      source: bible
+      text: 'Nimaani ka bɛ daa kpah’ o tabili dapulli maa zuɣu, ka daa kpahi niriba ayi gba tabili dapula
+        n-zaŋ sa m-pahi Yisa zuɣu: Yino o nudirigu polo, ŋun’ la mi o nuzaa polo, ka Yisa daa be bɛ sunsuuni.'
+      sbs: 0.7553
+      gen_sec: 16.46
+      ref_sec: 12.64
+      cer: 0.0136
+      wer: 0.0769
+    bible_00058:
+      source: bible
+      text: Bɛ ni daa niŋ kpam ŋmiri zim viɛl’ shɛli ni bɛ zaŋ mali chi sara daa palila bina ayi maa.
+      sbs: 0.7423
+      gen_sec: 7.17
+      ref_sec: 5.86
+      cer: 0.0147
+      wer: 0.15
+    bible_00059:
+      source: bible
+      text: O ni wuhi ni o yur’ a shɛm ŋmanila zana mini tɔŋ, ka o nuhi nyɛ bandi.
+      sbs: 0.7535
+      gen_sec: 5.72
+      ref_sec: 5.58
+      cer: 0.1569
+      wer: 0.4118
+    bible_00060:
+      source: bible
+      text: ” Ka o teei li, ka di dii kpaŋ zaa.
+      sbs: 0.7103
+      gen_sec: 2.82
+      ref_sec: 8.74
+      cer: 0.087
+      wer: 0.2222
+    bible_00061:
+      source: bible
+      text: Luɣ’ shɛli Yawɛ ni daa yɛli, “Di kunya bihi banima bɛ bihi taali zuɣu bee n-ku bihi bɛ banim’
+        taali zuɣu, amaa di simdi ni sokam kpila omaŋmaŋ’ taali zuɣu.
+      sbs: 0.7459
+      gen_sec: 12.97
+      ref_sec: 12.8
+      cer: 0.0424
+      wer: 0.2
+    bible_00062:
+      source: bible
+      text: “Yawɛ ni daa tɔɣisiri ya yɛtɔɣa buɣim sunsuuni Sinai Zoli gbin’ la, yi daa bi nya kɔtomsi
+        shɛli, dinzuɣu gbaamiya yimaŋ’ viɛnyɛliŋga din ni chɛ ka yi ku mali wuni ŋmahindi binshɛli n-tum
+        alahichi.
+      sbs: 0.714
+      gen_sec: 17.06
+      ref_sec: 14.5
+      cer: 0.0513
+      wer: 0.1471
+    bible_00063:
+      source: bible
+      text: O ni daa suhiri Naawuni maa, ka o niŋgbuŋ biɛhigu ti taɣi, ka o binyɛrigu mi paligi paratɛte
+        kaman gol’ la; ka bɛ daa nya niriba ayi o sani.
+      sbs: 0.7929
+      gen_sec: 11.95
+      ref_sec: 10.42
+      cer: 0.0654
+      wer: 0.1379
+    bible_00064:
+      source: bible
+      text: O sara daa nyɛla anzinfa parante yini din tibisim nyɛ kilɔgiram yini ni biɛla ni anzinfa tahi’
+        yini din tibisim nyɛ giram kɔbisinii kaman Naawuni jɛmbu duu liɣiri tibisim zahimbu ni nyɛ shɛm.
+      sbs: 0.7362
+      gen_sec: 16.8
+      ref_sec: 13.8
+      cer: 0.1529
+      wer: 0.4848
+    bible_00065:
+      source: bible
+      text: Nyini n-nyɛ ŋun lihiri tiŋgbani ka di sɔhiri ŋɔ.
+      sbs: 0.6354
+      gen_sec: 4.27
+      ref_sec: 3.68
+      cer: 0.0526
+      wer: 0.1111
+    bible_00066:
+      source: bible
+      text: Ninvuɣ’ biɛri bɛn bi ʒe Naawuni yim ʒiɛmannim’ ŋɔ bɔrila shihirili nyabu, amaa bɛ ku nya shihir’
+        shɛli m-pahila Anabi Jona shihirili la.
+      sbs: 0.7156
+      gen_sec: 11.69
+      ref_sec: 7.96
+      cer: 0.1019
+      wer: 0.3043
+    unicef_00000:
+      source: unicef
+      text: Bi zɔri mi ni be chɛŋ shukuru be konko, wula soya? M piriba?  Aayi yɛlibu be niŋ a laha di
+        yi niŋ ka sokan niŋdi din bi tu, n bɔri mi ni n lɛbi karimba, din zuɣu n bi kpɛri yɛla ni, n niŋla
+        nim mohi n bahi n biɛhigu ni
+      sbs: 0.5817
+      gen_sec: 18.17
+      ref_sec: 24.19
+      cer: 0.118
+      wer: 0.6078
+    unicef_00001:
+      source: unicef
+      text: Antire mpririba, alaafe bɛni, wumsim bɛla ni yi shikuru na maa, inn, mma yɛlima bɛla zaŋkpadipolo,
+        amaa yɛlimaŋli di chɛmi ka vi malima, n-ya nima yɛrimi ni di wuhiya ni bii yi pa birila paɣa maa,
+        amaa kalee lan yɛli ni di tu ni a sɔɣi li.
+      sbs: 0.6504
+      gen_sec: 20.47
+      ref_sec: 21.44
+      cer: 0.1685
+      wer: 0.6596
+    unicef_00003:
+      source: unicef
+      text: N yu bɔlli, amaa di yuuiya ka nŋme, n kuli bɔri ni n gba kuli bɛnimi biɛhigu ni, a tɛhiya
+        ni ni tooi taɣi, n bɔri ni n niŋ nya, n be bɔri ni n biɛhigu ti naai kamani ni nyɛri dabba shɛba
+        boori maa ni maa. Ka be yi be niŋ?
+      sbs: 0.6762
+      gen_sec: 18.34
+      ref_sec: 25.15
+      cer: 0.1104
+      wer: 0.2885
+    unicef_00004:
+      source: unicef
+      text: A yi yɛli ni be be wumdi n tiri ya, di lee nyɛla zaŋchaŋ yɛltɔɣa shɛŋa polo bee yɛltɔɣali
+        kam polo. Yɛltɔɣali kam polo, o tɛhimi ni ti n-nyɛ bipɔla ti be mi binshiɛɣʋ zaŋ chaŋ dunia ŋɔ
+        puuni bee ti ni yɛn tooi niŋ shɛm gu ti maŋa. Lala maa be niŋdi ti nyaɣisim.
+      sbs: 0.6661
+      gen_sec: 22.95
+      ref_sec: 18.62
+      cer: 0.1343
+      wer: 0.3636
+    unicef_00005:
+      source: unicef
+      text: Nsaɣiti ni taɣada nyɛla di ni niŋ dawama ti ʒinɛlipuuni, amaa di ni nyɛ taɣada maa be wuhi
+        ti ni di nyɛla di ni viɛli ti ti biɛhigu bee fukumsi zalisi saɣitili. bɔ nlee nye fukumsi zalisi?
+      sbs: 0.6606
+      gen_sec: 16.13
+      ref_sec: 20.29
+      cer: 0.0336
+      wer: 0.2703
+    unicef_00006:
+      source: unicef
+      text: Saha shɛŋa di niŋdi ba mi ka bi yihi ban labi, ka di nyɛla bin niŋ nimmɔhi tumda tuma la zuɣu.
+        Ti ni tooi wuhi ba ti ni bɔhim bin shɛŋa kpe, ka ku ŋmani bi yihi la ban nua. Ka bipuɣiŋ shɛba
+        naawuni ni dahim la mi? Saha shɛŋa bi gaŋdi ba mi. Mbɔri ni kpaŋ mmaŋa n tum n yiko tariɣa.
+      sbs: 0.613
+      gen_sec: 23.8
+      ref_sec: 36.1
+      cer: 0.0991
+      wer: 0.381
+    unicef_00007:
+      source: unicef
+      text: Punpɔŋɔ, yɛlim ma, a tiɛh'ya ni jilma bɛni zaŋ jandi paɣaba ni dabba a shukurini? Saha shɛŋa,
+        iin, amaa saha shɛŋa dabba ma tiɛh'la bɛni tooi ku yɛli bɛni bɔri shɛm n ti paɣaba, ka paɣaba
+        maa simsi ni bɛ ku dɛi li lala
+      sbs: 0.6155
+      gen_sec: 18.34
+      ref_sec: 22.27
+      cer: 0.1737
+      wer: 0.5
+    unicef_00008:
+      source: unicef
+      text: N zaɣisirila bindirigu ka chɛni kan tiŋsi n ti zaŋ di n chɛngi bihi n gmaari beti, n ni ʒini
+        n tɛhi di zugu n daa tɛhimi ni so soma ka mani mi shɛm maa a maa din koli dirima ka di diri ma
+        n gari ni dirili shɛm da baa ayi ŋɔ sunsuuni.
+      sbs: 0.6225
+      gen_sec: 18.94
+      ref_sec: 36.16
+      cer: 0.1011
+      wer: 0.537
+    unicef_00009:
+      source: unicef
+      text: Nzonima yɛliya ni di yi niŋ, ka a ka mam bee ka na ʒi n-gɔli paɣa, ni ka doo n nyaa. Amaa
+        din niŋdi ma muɣisigu nyɛla, ayi kpuɣi pushɛli ayi bi bɔra, bee ka gbaai STIs. Saha shɛŋa di niŋdi
+        ma ka n ka so n ni yɛn yɛliti ka o ni wum ni yɛli shɛm maa ka ku kari ma sariya
+      sbs: 0.6065
+      gen_sec: 22.1
+      ref_sec: 36.67
+      cer: 0.0452
+      wer: 0.2857
+    unicef_00010:
+      source: unicef
+      text: N kuli bɔri mi ni n che diɛma maa zaazaa. Inn, shɛlini yiŋa, n bɔri ni n tooi lɛbi ya bimaŋli
+        n sɔŋdi n ma, amaa shɛli ni n zo nima ni kana n ti yɛli ni ti yima n mii ni chaŋ n kpɛrila mʋɣisigu
+        ni ka ku lahi ka ni yɛn niŋ shɛm, shɛli di chɛmi ka di ŋmanila nkuli labila nyaaŋa zaazaa
+      sbs: 0.6582
+      gen_sec: 23.37
+      ref_sec: 24.38
+      cer: 0.0841
+      wer: 0.4769
+    unicef_00011:
+      source: unicef
+      text: N suhu ŋuo ri mi bɛ tiniŋ yɛli ni n zaŋmi n zaɣa niŋ paɣa ni simsi ni o niŋ binyɛri shɛŋa,
+        kaman ka a duɣ' ni salinvɔɣu ʒiɛri bɛi ka a sɔŋ ni zahama maa. A tiɛh'ya ni bɛ wumti ma? Amaa
+        saha shɛŋa di ŋmanla kaya ni taɣada maa kuɣa ka bɛ zaŋ mali li
+      sbs: 0.6001
+      gen_sec: 20.9
+      ref_sec: 24.26
+      cer: 0.1075
+      wer: 0.4035
+    unicef_00013:
+      source: unicef
+      text: Ka diyi niŋ ka manii be kana n ti shihi galli maa, kadalaa di wuhirimi kamani di kuli ŋmanila
+        duu ka a kɔlikɔli nee n guli saha shɛli dabam. Di na ku che ka vi mali ma. N be bɔri ni dabba
+        maa baŋ di yɛla, n zo yɛlima mi ni di ni tooi paai bakɔi muni, yɛlimaŋli n nyɛli?
+      sbs: 0.6488
+      gen_sec: 22.27
+      ref_sec: 25.54
+      cer: 0.0784
+      wer: 0.4
+    unicef_00014:
+      source: unicef
+      text: N yaɔɔb paɣa daa yɛli ka dabiɛm gbaa ma pam, ni tooi yɛli n yab paɣa ni n je? Binshegu kam
+        bɛla di ko ka che niri tɛhiri shɛm, koli nyɛma wula ka n yɛn niŋ. Tɔ n paɣiya mperiba.
+      sbs: 0.6291
+      gen_sec: 14.85
+      ref_sec: 28.48
+      cer: 0.1278
+      wer: 0.475
+    unicef_00015:
+      source: unicef
+      text: Kaman bɔ, man kuli tɔɣ'sirimi ni zo nima, n wumbi yɛltɔɣa amaa m bɛ zaŋ n zuɣu zaa niŋ dinni.
+        Ɛ yɛrimi ni n yi tɔɣ'sir tiri nin palli ni na kuli nya n ni tooi yɛli o n ni bɛ luɣ'shɛli bɛi
+        n ni chani shukuru luɣ'shɛli, lala maa bɛ viɛla?
+      sbs: 0.5869
+      gen_sec: 19.45
+      ref_sec: 21.18
+      cer: 0.1364
+      wer: 0.4423
+    unicef_00016:
+      source: unicef
+      text: Di chɛmi ka n tamdi binshɛɣu kam yɛla, n kuri saha gbaliŋ niŋdi nahin gbana buɣisi pa Takara
+        zuɣu, n min tiɛhi di yɛla, n zo nima larima mi di zuɣu bɛ tiɛhi mi ni bihi bɛi ban ka tuma n niŋdi
+        lala binyɛra.
+      sbs: 0.5892
+      gen_sec: 17.15
+      ref_sec: 21.76
+      cer: 0.0949
+      wer: 0.4091
+    unicef_00017:
+      source: unicef
+      text: N yi wumdi la bachi maa amaa n daa bi tɛhi ni n-ŋɔ n yɛn nyɛli. di ŋmanila n niŋbuna yi pa
+        kuli niŋdila di ni bɔri shɛm ka di pa ni mani n yɛrili ni di niŋ, shɛlini hali n min kuli ʒi class
+        n be niŋdi shɛli ka di yiɣisira
+      sbs: 0.6412
+      gen_sec: 18.08
+      ref_sec: 18.24
+      cer: 0.0838
+      wer: 0.3846
+    unicef_00018:
+      source: unicef
+      text: N nye ka so ti ma satarili n niŋ di ka di gmanla o borimi ni o laɣi ma la, o daa koli buhiri
+        mi ni o baŋ ni be shɛli polo bɛi ni chɛni shikuru shɛli polo, di daa gbaa ma dabiɛm pam ka che
+        n daa zorila dabiɛm ni yɛli n laamba be daa nai dɛy phone maa.
+      sbs: 0.599
+      gen_sec: 20.73
+      ref_sec: 30.21
+      cer: 0.1117
+      wer: 0.3833
+    unicef_00019:
+      source: unicef
+      text: N tiɛhi ya ni niriba pam ban be kpe bi mi di yɛla. A ni tooi kana ti yɛli paɣisara ni nachimba
+        laɣingu ban be cheechi ŋɔ ni?  Bi ni wum n ti a?  N bɔrimi ni n-zonima sa mali biɛhi suŋ. Ti yɛlima
+        zaŋ kpa STIs gba polo? Paɣisara ŋɔ shɛba zɔri dabiɛm ni bi bɔhi bɔhigu.
+      sbs: 0.5907
+      gen_sec: 22.35
+      ref_sec: 33.41
+      cer: 0.065
+      wer: 0.3621
+    unicef_00020:
+      source: unicef
+      text: "Be yɛromi ni o ko tooi chanŋ shikoru o siɣimi koliga ka doɣmi n tiri dun doŋ saha kam. Bi\
+        \ poɣinsi maa pam ko li bɛla lala ka be zaŋ bi dibbisi n tohi sikuruti. \tBei ka bi chaba ka chaŋ\
+        \ gmeri bɔlli, n tihiya kali maa ni ku nye sham n ba la."
+      sbs: 0.6623
+      gen_sec: 21.07
+      ref_sec: 36.99
+      cer: 0.1547
+      wer: 0.6296
+    unicef_00021:
+      source: unicef
+      text: Di ŋmanla n yi sɔɣi n muɣisugu, di so ni n yihi li palo ni, ka chɛ di chɛ ka n ŋmanla chɔɣinsi
+        daadam n nyɛma, di chɛmi ka di ŋmanla taɣibu shɛli di bɛ n niŋ gbuna mini n hankali ni ŋmanla
+        bilim, ti ya nima maa yɛrimi ni ti tibli n kpɛma, ni ti nima bi pala ni ti nyɛla nagban kpɛini
+        nima.
+      sbs: 0.5972
+      gen_sec: 23.72
+      ref_sec: 25.6
+      cer: 0.0822
+      wer: 0.5077
+    unicef_00022:
+      source: unicef
+      text: N ku tooi gbɛhi, n niŋdi ma tɔm ni ntooi zaŋ n zaɣa niŋ shukuruni, lala tooi niŋdi bi puɣin
+        shɛbi gba? Di ŋmani la n konko n nyɛma, n yi yihi o polo ni, n daŋ nyɛla ban yɛn yihi ma bɛ daŋ
+        ni? Sokam yɛn yɛli mi ni ninvuɣu biɛɣu n nyama domin n ni yɛli yɛl' tɔɣ' biɛri m pa n ŋahabi la
+        zuɣu
+      sbs: 0.5921
+      gen_sec: 24.66
+      ref_sec: 28.42
+      cer: 0.1262
+      wer: 0.4925
+    unicef_00023:
+      source: unicef
+      text: Di ŋmanla n pa bila doo, di mi lahi ŋmanla bia n na nyɛma saha shɛŋa, m paɣaya n ni mali luɣ'shɛli
+        palo n ni tooi di fiila, di chɛrimi ka n baŋ ni ka n kɔ nyɛma, M malila bɔhigu zaŋ jandi biɛhigu
+        halli, wula ka n yɛn niŋ baŋ din bɔŋɔ nyɛla n dini ka din bɔŋɔ nyɛla n laam bi dina?
+      sbs: 0.5955
+      gen_sec: 23.29
+      ref_sec: 30.91
+      cer: 0.0857
+      wer: 0.4062
+    unicef_00024:
+      source: unicef
+      text: Antirɛ, M piriba, Alaafiɛ biɛni, N tiɛh' ya, shukuru mini yiŋ tuun shɛli din pun biɛni maa
+        n ku biɛni, yɛlmaŋli yɛra n tiɛh rili alizam shɛŋa tin yi pun di dokulo din gar' la, zaŋ jandi
+        din simsi ni nyin bidibila yi zoori na din ni tu ni a bɛ shɛm
+      sbs: 0.5865
+      gen_sec: 20.3
+      ref_sec: 24.96
+      cer: 0.1436
+      wer: 0.4231
+    unicef_00025:
+      source: unicef
+      text: N tɛhiya ni n yi pa gbaara, bɛhigu dii be tu ni di dɔya pasi hali ni zʋɣʋsaa, di tuu? N yi
+        no wahu di be tu ni o che, di tirimami yaa, di ni tooi niŋ ka n ni tooi gbibi pressure viɛnyɛla
+        di yi niŋ ka n mali ŋɔ zaa n hankali ni.
+      sbs: 0.6849
+      gen_sec: 18.68
+      ref_sec: 20.93
+      cer: 0.1257
+      wer: 0.4727
+    unicef_00026:
+      source: unicef
+      text: Niraba pam tiɛh'mi ni paɣa niŋdi a ni bɔri shɛm ka wumdi a yɛltɔɣa dini n nyɛ dabilim. Di
+        ŋmanla zo karili dubu, n bɔrimi ni n yɛli n yili kpɛri lan nima ni ka bɛ taali n nyɛli ban dɛi
+        yi zaŋ bɛ maŋ kpɛhi yala ni, yɛlmaŋli n nyɛli ni bia gbaa ti doo nyɛla Zali kpana ni bɛ saɣ'ti
+        sheli? Ka Yuma a la n simsi ni bia nyɛ ka bɛ naan tooi gbaagi o ti doo?
+      sbs: 0.6024
+      gen_sec: 29.09
+      ref_sec: 36.61
+      cer: 0.1057
+      wer: 0.4125
+    unicef_00027:
+      source: unicef
+      text: Bipola koli nyun nyula dam n tam be tuma yala , n tahiri la zaba na, saha shɛŋa ka bi zaŋ
+        be kobbihi zaa niŋ dam nyubuni din di tu di be zaŋ n da bindirigu bei n yor shikuru feesi, di
+        zaŋ di vi ni moɣisigu na daŋ puu ni.
+      sbs: 0.6061
+      gen_sec: 18.94
+      ref_sec: 38.14
+      cer: 0.0723
+      wer: 0.52
+    unicef_00028:
+      source: unicef
+      text: Bɛ zaa niŋdi mi ka di ŋmanla bɛ malila kpɛŋ, a maa m bɛ tiɛh' ni lala n nyɛli bɛ suhurini,
+        m bɔrimi ni n nyɛ ninvuɣuso ŋun ni tooi taɣ' lala bin maa, hali di yi nyɛ n yiŋ kɔnkɔ, n suhu
+        pa ʒinya punpɔŋɔ
+      sbs: 0.599
+      gen_sec: 16.72
+      ref_sec: 24.32
+      cer: 0.18
+      wer: 0.587
+    unicef_00029:
+      source: unicef
+      text: N tiɛhi ya ni o ni yɛn dihi tabili ni dabba tu ni bi niŋda ingineenima tuma la, bee fitanima,
+        ka paɣaba mi tu ni bi niŋdi adeela tuma bee, viɛlim tuma. iin hi pa lala amaa sokam yɛra mi ni
+        lala ka ti niŋdi binyɛhiri ti tiŋgbani ŋɔ ni. N tiɛhi ya ni din n yɛn gbibi ti yaŋɔ.
+      sbs: 0.6043
+      gen_sec: 22.78
+      ref_sec: 27.14
+      cer: 0.0817
+      wer: 0.3
+    unicef_00030:
+      source: unicef
+      text: Dasiba Kofi, kawula ka a nyɛ dabisili maa di ku tuli la biɛla bee ka laa? Dasiba m-bapira
+        iin, wuntaŋ maa mali yaa pam zuŋɔ, di ni dii niŋ ka n chaŋ yi yaŋɔ yaɣi dimbala maa na. A gɔrim
+        ŋɔ niŋ ma nyaɣisim pam.
+      sbs: 0.6245
+      gen_sec: 17.66
+      ref_sec: 24.83
+      cer: 0.0696
+      wer: 0.4
+    unicef_00031:
+      source: unicef
+      text: N daa bɔ ri ni n yɛli ba ni bi cha la, di zaa yɔli ka bi ku li ti ri ma la satara ŋɔ. a maa
+        puŋ puŋɔ di ku li ŋmanla n sɔɣi ma. Di ku ka taa li ni di niŋ da la la. Da ma sɔɣi bu ku taɣi
+        li, a tiɛ hi a ni bɔri ni a niŋ shɛm di ŋɛn ɣa?
+      sbs: 0.6298
+      gen_sec: 18.0
+      ref_sec: 36.35
+      cer: 0.0994
+      wer: 0.4328
+    unicef_00032:
+      source: unicef
+      text: Antire m-piriba, di so. Di ku nyɛla wumsim biɛla n-ni yi shikuru maa na. iin. Mma di biɛla,
+        amaa yɛlimaŋli yɛra, di gbaai ma vi. Niriba ban be ti tiŋkpaŋ ŋɔ yɛra mi di nyɛla di lahinli di
+        yi ti niŋ ka bipuɣiŋga yɛn bi paɣa. Amaa bi lahi yɛlimi di tu ni ti sɔɣi li.
+      sbs: 0.6363
+      gen_sec: 22.27
+      ref_sec: 28.16
+      cer: 0.096
+      wer: 0.3571
+    unicef_00033:
+      source: unicef
+      text: N bɔrimi ni n sɔŋ o, amaa dabiɛm n mali ma ni ni yɛli dabba maa ni tuma ka bɔlima yuya. Bo
+        ka n ni tooi niŋ, di gmanila n nyɛla bia zaŋ chaŋ be polo, aayi mpiriba bo n lee bala, ninkura
+        konko beni n nyɛli, tangalimia n bala?
+      sbs: 0.6598
+      gen_sec: 18.85
+      ref_sec: 23.74
+      cer: 0.125
+      wer: 0.56
+    unicef_00034:
+      source: unicef
+      text: Saha shɛli kam n yi chaŋ n gari o kariŋ duu, bee n yi zaŋ tuma, o yɛri la yɛltɔɣa zaŋ chaŋ
+        n ni yuunda shɛm. O yɛri la yɛltɔɣa din yɛn che ka n niŋgbuŋ gbaŋ nyiɣiti. O yɛrimi ni mpa biri
+        la paɣa yomyom shɛm maa. Ni ka di tu ni mpa zaŋ zaɣa niŋ o ni, ka che m bukunima.
+      sbs: 0.6324
+      gen_sec: 22.95
+      ref_sec: 24.51
+      cer: 0.0201
+      wer: 0.2381
+    unicef_00035:
+      source: unicef
+      text: Di yi niŋ ka n bi tooi niŋli, ni dini tooi chɛ ka n-bi liɛbi yili yidan paɣa suŋ, ni di gurila
+        paɣa ka chɛ ka o za dede, ni do yihirila yɛli biɛri paɣa maa ni, yɛlmaŋli n nyɛ li? Maame, di
+        shiri ni chɛ ka n za dede?
+      sbs: 0.5965
+      gen_sec: 18.6
+      ref_sec: 21.38
+      cer: 0.1076
+      wer: 0.46
+    unicef_00036:
+      source: unicef
+      text: Saha shɛŋa wumsim gbaarima ka nti baŋ ni m mini mma na bɛ di alizama yuŋ zaa ha dama n dɔla
+        n telephone zuɣu, di yɛliya ni di wuhi so a ni bɛ shɛli bɛi a yiŋ dundɔŋ ni, n tiɛh'ya ni n gbaai
+        baŋsim lala yɛltɔɣa maa ni lala san' maa sani tɔ chɛ ka n nya
+      sbs: 0.6145
+      gen_sec: 20.22
+      ref_sec: 29.89
+      cer: 0.1263
+      wer: 0.3966
+    unicef_00037:
+      source: unicef
+      text: N yi lihi duniya pumpɔŋɔ, ka n yi biniyɛra ka di ahadalichi, ka man fara din be ʒilɛli ŋɔ
+        ni, ka mbɔri ni bɔ maligu tili. Di yi niŋ ka buɣisi ni n yɛli mba ba zaŋ kpa lala binɣɛra ŋɔ polo,
+        o kuli yɛn yɛlima mi ni chɛla ni ka meei gi nnina kpa bukunima ni ka che hankali kalinsi yɛltɔɣa
+        ŋɔ.
+      sbs: 0.604
+      gen_sec: 24.31
+      ref_sec: 37.95
+      cer: 0.0814
+      wer: 0.3016
+    unicef_00038:
+      source: unicef
+      text: A tiɛh'ya ni a mali lahabali zaŋ jandi a ma maŋ alaafɛi zuɣu? Bɛi taɣibu shɛŋa din taɣ'ri
+        a niŋ gbuna maa ni? N bɛ tiɛhi, ti wumdi binyɛra pala zuɣu. A wumli? Amaa ti bɛ mi dinsani n nyɛ
+        yɛlmaŋli mini din kuli nyɛ yɛltɔɣa. N nyɛ lala.
+      sbs: 0.5633
+      gen_sec: 19.54
+      ref_sec: 26.37
+      cer: 0.1469
+      wer: 0.5306
+    unicef_00039:
+      source: unicef
+      text: Di yi pa so Maame, amaa yɛlimaŋli yɛra di ŋmanila binyahiri yi pa kpela yɔɣʋ punpɔŋɔ, di mii
+        kuli yila yiŋ tumani na n ni ntizopaɣa Ama. Mba yɛrimami ni n di kpɛri duduhugu ni dɔmini bidibisi
+        be tu ni be kpɛri nimaa ni.
+      sbs: 0.6663
+      gen_sec: 18.94
+      ref_sec: 15.94
+      cer: 0.1512
+      wer: 0.5909
+    unicef_00040:
+      source: unicef
+      text: Ni ni be niŋli di yɛn chɛmi ka nti pa paɣa suŋ biɛɣu ni, ni di yɛn chɛmi ka n kuli za n tuhi
+        n yidana dama di yɛn yihila daɣiri kam, yɛlimaŋli nyɛli Maame? yɛlimaŋli nyɛli ni di shiri yɛn
+        chɛmi ka n zani tuhi n yidana?
+      sbs: 0.6671
+      gen_sec: 18.17
+      ref_sec: 20.74
+      cer: 0.0539
+      wer: 0.4167
+    unicef_00041:
+      source: unicef
+      text: N tɛhiya ni di tu ni n sɔɣi n yɛlmʋɣisira dama n be bɔri ni di gmanila n nyɛla ŋʋn ka yaa,
+        di chɛmi ka taɣibu di ni be n niŋgbunani ni n hankalini maa gabiri taba. Niriba ban be n fɔŋni
+        yɛliya ni ti kuli nyɛla biyɛrisi, be yɛliya ni nachimba ni paɣasara nyɛla ban kuli bɔri nangbankpeeni.
+      sbs: 0.6706
+      gen_sec: 24.4
+      ref_sec: 25.15
+      cer: 0.0885
+      wer: 0.4068
+    unicef_00042:
+      source: unicef
+      text: Hali n yi tooi sɔɣ'zo, n ka laɣ'fu din yɛn yo loori zuɣu zaŋ ma paai ti yaŋɔ ashibti tital
+        maa ni, biɛhigu chaŋmi ti ŋmani so n taɣ'ri ti ni ti di nyɛ sɔŋsim shɛli tini bɔra di laha ŋmanla
+        ashishɛli ninkura kɔnkɔ ni mi, ka di yi niŋ ka n tooi paa ni?
+      sbs: 0.5948
+      gen_sec: 21.41
+      ref_sec: 24.7
+      cer: 0.0899
+      wer: 0.3455
+    unicef_00043:
+      source: unicef
+      text: Bi niŋsim ŋɔ ŋmanila binyɛra ŋɔ nyɛla din chihira, ka di ka shɛli di yi niŋ ka di muɣisi a,
+        bee ka a yi a ko. Di muɣisira ma saha shɛŋa, di ni ŋmani n niŋsim nyɛla gala. Pumpɔŋɔ ka m pa
+        yuuni ka di ŋmanila muɣisigu ŋɔ paara la sokam. Ka n di bɔra ni ti yɛli di yɛltɔɣa shikuru pam.
+      sbs: 0.5912
+      gen_sec: 23.89
+      ref_sec: 24.64
+      cer: 0.0141
+      wer: 0.0806
+    unicef_00044:
+      source: unicef
+      text: Dabiɛm ma li ma mi ni di ti niŋ ka n na ʒi classi, ka daa di wuhiya ni m pa li biɣiya paɣa
+        maa? di wuhiya ni n pa ni tɔ yi n dɔɣi, wɔyi ka a sa hi dabiɛm tiɛha n ba la,n bi tiɛhi ni n na
+        sa ɣi la la ʒiɛ maa ʒi bu
+      sbs: 0.6133
+      gen_sec: 16.63
+      ref_sec: 34.82
+      cer: 0.1523
+      wer: 0.431
+    unicef_00045:
+      source: unicef
+      text: O bɔrimi ni o chaŋ S.H.S, amaa o ma yɛliya ni o zooya ka bi nni tooi kuli doo ŋʋn ni tooi
+        sɔŋ o. Achiika, o tizodoo ŋʋn dii be tɛhiri amiliya yɛla, be lee kpaŋsiri o ni hali o ni tooi
+        yi ni yʋŋ, ka kpaŋ o maŋa ka o mali yaa, ka be che ka yɛltɔɣa shɛli dini muɣisiri o yi poloni.
+      sbs: 0.6834
+      gen_sec: 25.59
+      ref_sec: 23.94
+      cer: 0.0777
+      wer: 0.3125
+    unicef_00046:
+      source: unicef
+      text: N yi ku nyula koko shɛli asiba, bee nti pahi bonku bee shinkaafa shɛli wuntaŋni, di yi niŋ
+        ka m mali liɣiri. Ka lala n dii nyɛli. Mma tumdi pam, amaa shaha shɛli ti diri la ti yaa ni nyaŋ
+        shɛli. Din nye yaa bindirigu la? Kpantekuunga?
+      sbs: 0.622
+      gen_sec: 19.88
+      ref_sec: 28.8
+      cer: 0.0833
+      wer: 0.4255
+    unicef_00047:
+      source: unicef
+      text: Di niŋ ma mi ka ʒi karili ŋɔ ka n ʒira. Ti ni tooi tɔɣisi zaŋ chaŋ, ti ni boonda biɛrisuŋ
+        yaɣili zaŋ saha shɛŋa din kani na. M-paɣi ya pam n kariŋma. Nni maai ya ni din pa n-ko n ko n
+        tiɛhiri zaŋ chaŋ yala ŋɔ zuɣu shɛm ŋɔ.
+      sbs: 0.5786
+      gen_sec: 19.71
+      ref_sec: 19.65
+      cer: 0.0727
+      wer: 0.2941
+    unicef_00048:
+      source: unicef
+      text: Ti kuli yɛn dila fiila zaŋ kpa tiŋkpansi biɛhigu polo. Shikuru ni binyɛra ni taɣiri tiri bipolla
+        ka maan nyini shɛm. Biɛhigu nyɛla din tuhi n tiɛhi ya, amaa saha shɛŋa di bi ŋmani ti mi kpamba
+        wumda ti ni yɛri shɛm. Yɛli mma zaŋ kpa di polo.
+      sbs: 0.6112
+      gen_sec: 20.3
+      ref_sec: 27.39
+      cer: 0.037
+      wer: 0.2708
+    unicef_00049:
+      source: unicef
+      text: A yɛl' la binshɛɣu zaŋ kpa kpahimbu polo. Amaa yɛlimaŋli yɛra tiŋ zini yuui gi mini adaka
+        dihibu ŋmanila yiŋ tuma. Diɛma? wula ka ti daa laafee mini din gu ti dolibu ŋmani diɛma? Ka mani
+        ti ni yaari anfoonima ti ya la?
+      sbs: 0.586
+      gen_sec: 18.85
+      ref_sec: 26.88
+      cer: 0.0824
+      wer: 0.2791
+    unicef_00050:
+      source: unicef
+      text: O na kuli kuhirimi di yi ti niŋ ka di kana gɔli puuni. O yɛliya biɛrim ŋɔ yaɣiya pam. Ka di
+        yi ti niŋ ka mbɔri ni n zali zuliya din dahin shɛli lala ka di yɛn to? Di ŋmani di bie pam. Bɔ
+        zuɣu ka bi bɔri li tiri ma? N nyɛri zuɣu biili pam.
+      sbs: 0.6134
+      gen_sec: 19.54
+      ref_sec: 24.7
+      cer: 0.0452
+      wer: 0.2143
+    unicef_00051:
+      source: unicef
+      text: Ka o yi niŋ o firimiinsi ka o kuli doo din kuli yɛn niŋ ka o yi yiŋa. Mma nyɛla ŋʋn tooi fo,
+        amaa n tɛhiya ni o bɛla Adjoa nyaaŋa ashilo ni, mma nyɛla ŋʋn tumdi tuma pam, amaa n naʒin nya
+        ka o mali sɔŋsim zaŋchaŋ yiŋ laɣiri dibu polo.
+      sbs: 0.6563
+      gen_sec: 20.99
+      ref_sec: 19.58
+      cer: 0.0506
+      wer: 0.3077
+    unicef_00052:
+      source: unicef
+      text: Mma n yɛli ni tudu polo ŋuni gba ni di gari lala,ni di tu laa pam. Di ŋmanla yeltɔɣa shɛli
+        dim bi naara dama diyi naara, diyi di cheng tiŋ gba. Bo zuɣu kadi ŋmanla n zo nim zaahaza di niŋdiba
+        mi? Njɛ nidi ti ŋmanla n maanila laazabu nti yaɣi. M paɣa mani bori ni n lɛbi nursi.
+      sbs: 0.6491
+      gen_sec: 23.46
+      ref_sec: 35.2
+      cer: 0.1374
+      wer: 0.6271
+    unicef_00054:
+      source: unicef
+      text: N na kuli maani la di shili amaa dini tooi niŋ ka m pahi pala zuɣu farila di zuɣu punpɔŋɔ,
+        ti daa pun yɛli maŋ kahigibu yɛltɔɣa ti laɣingu din garila m min nachin naa maa daa di fiila ka
+        n yɛli o ti ni ka firila nima shɛm ti pala maa zuɣu.
+      sbs: 0.5953
+      gen_sec: 19.96
+      ref_sec: 22.21
+      cer: 0.0486
+      wer: 0.3774
+    unicef_00055:
+      source: unicef
+      text: Mma kuhiri saha shɛŋa. O yɛliya ni o ku tooi birigi mba   zaligu o ni nye yili yidana la zuɣu.
+        ŋun kam be ti tiŋkpaŋ ŋɔ yɛrimi  ni n yi bi kuli doo pumpɔŋɔ ni n di dihi daŋ maa vi. Bi yɛrila
+        kaya ni ta'ada yɛltɔɣa.
+      sbs: 0.6006
+      gen_sec: 18.34
+      ref_sec: 20.35
+      cer: 0.0625
+      wer: 0.234
+    unicef_00056:
+      source: unicef
+      text: Kamani wula? n-mini n zɔ nima ndiri fiila, n wum be yɛla amaa ndii be zaŋ n zaɣa niŋ din ni,
+        n-mini ni na kuli nyɛ so maa ndiri fiila, di ni tooi niŋ ka n yɛli ba n fɔg ni n-ni ni chani skikuru
+        shɛli. Di be niŋ?
+      sbs: 0.6395
+      gen_sec: 17.82
+      ref_sec: 16.51
+      cer: 0.1299
+      wer: 0.449
+    unicef_00057:
+      source: unicef
+      text: Sokam zaa kuli lami, hali bipuɣinsi ŋɔ shɛba. Di wuhi ya ni bi saɣi ti ni n ŋɔ ka binyara
+        kuli yɛn be. Kadaɣila n ŋɔ ka binyara kuli yɛn be? N yabpaɣa yɛliya, ni dabba n nye zuɣuri, ka
+        di tu ni paɣaba fɔ bi noli.
+      sbs: 0.5867
+      gen_sec: 18.17
+      ref_sec: 23.94
+      cer: 0.0881
+      wer: 0.383
+    unicef_00058:
+      source: unicef
+      text: Shɛlini n mini n zo nima n chani diɛma ni yiɣijɛm dɔmini sarati zʋɣʋ, amaa bidibisi maa be
+        maanitila ansarisi di yi ti niŋ ka be zilisi binshiɛɣʋ, be yi di mi be naan ku niŋdi lala, n tizodoo
+        mali yee pam, vi ni kuma di yi niŋ ka o baŋ.
+      sbs: 0.6688
+      gen_sec: 20.56
+      ref_sec: 18.05
+      cer: 0.0773
+      wer: 0.4118
+    unicef_00059:
+      source: unicef
+      text: Antire mpiriba, di so n tɛhiya, shikuru nkuli nyɛli dabisa ŋɔni nni mba sɔŋbu zaŋ chaŋ o biniyara
+        maa kɔhibu shitɔɣuni, mba kuli yɛrimi ni n chɛli sabibu sabibu maa ka zaŋ n hankali labi fita
+        tali maa ni nbɔhinli viɛnyɛla.
+      sbs: 0.6541
+      gen_sec: 19.28
+      ref_sec: 22.08
+      cer: 0.1067
+      wer: 0.7073
+    unicef_00061:
+      source: unicef
+      text: N di bɔri ni n che diɛma ŋɔ zaa, iin saha shɛŋa yiŋa. Ka  kpaŋ m-maŋa niŋ talahi, ka sɔŋ mma.
+        Amaa nzonim ŋɔ boli ma ka ti yi yuŋ tusuɣu, ka n yi chaŋ ka kpe yala ni. Ka be dariɣi n tibili,
+        din ŋmani n labimina ti kpalim zaɣi yini.
+      sbs: 0.5859
+      gen_sec: 19.88
+      ref_sec: 24.0
+      cer: 0.0882
+      wer: 0.2885
+    unicef_00064:
+      source: unicef
+      text: O yɛlimi ni o ka piibu. Bɔ zuɣu ka di tu ni m mala? O tiɛhimi ni ŋɔ maa n nye so shɛli din
+        yɛn gu ka taɣima. Di ŋmanila saha lan kani n ti ma. Saha shɛŋa kam loori yi kana yiŋa, n tiɛhirimi,
+        amii so n kana ni o ti yɛli mba n yɛltɔɣa bee?  N karimba?
+      sbs: 0.6022
+      gen_sec: 20.73
+      ref_sec: 29.38
+      cer: 0.0824
+      wer: 0.3559
+    unicef_00065:
+      source: unicef
+      text: O dɔɣi la bipuɣiŋga yuuni din gari la, ka bipuɣiŋga ŋɔ daa bi tooi niŋ nyɛvuli o tuuli goli
+        ni. Bɔ zuɣu ka ŋɔ na kuli niŋda, di yi niŋ ka so kam baŋ ni di nyɛla din bie? Bipuɣiŋsi pam m-bala,
+        ka daɣila bipuɣiŋsi mini bidibisi pam na kuli biɛla yala ŋɔ ni? Bipuɣiŋsi ka tooi nahinda saha
+        shɛli kam.
+      sbs: 0.6239
+      gen_sec: 26.7
+      ref_sec: 23.81
+      cer: 0.0742
+      wer: 0.2787
+    unicef_00066:
+      source: unicef
+      text: Wula ka n yɛn niŋli, di yi niŋ ka ŋuni kam be n kɔbili ni yɛri ma ni n nyɛla yɔli? N bɔra
+        ni n dihi a tabili, m-piriba, amaa din niŋ tom pam, di yi niŋ ka di nye yɛlimaŋli. Bee n silimiinsili
+        kariŋma. O yɛla to, amaa saha shɛŋa, o yɛra ti ni ti zahim mi zahim kara. Di kpɛhiri ma la dabiɛm
+      sbs: 0.6081
+      gen_sec: 23.89
+      ref_sec: 33.73
+      cer: 0.0701
+      wer: 0.2923
+    unicef_00067:
+      source: unicef
+      text: Saha shɛŋa di niŋdimami kamani ka bii n lahi nyɛma amaa ka ninkurigu n nyɛma, di ŋmanila so
+        waɣinli pam, mba yuunimi ni saha kam n kanna ti sɔŋdi'o o tuma shee, o shitɔɣʋ maani, zaawuni
+        kam. Wumsim.
+      sbs: 0.6541
+      gen_sec: 17.4
+      ref_sec: 17.47
+      cer: 0.1299
+      wer: 0.6579
+    unicef_00068:
+      source: unicef
+      text: Zahambu du shɛli din miri ti yiŋ la, n tiɛh'ri mi n ti niŋ chaŋ ni ma ni ka be yɛli n laamba,
+        di yi zaya ni n yɛli n laamba, diŋunaa ni yi di fɔla n nɔli ka liɛ be mi n ni yɛn niŋ shɛm, di
+        nŋanli bɛ mali la biɛhigu maa ni di chɛ ka ti bɛ zimsim ni
+      sbs: 0.5628
+      gen_sec: 19.45
+      ref_sec: 19.52
+      cer: 0.1105
+      wer: 0.4839
+    unicef_00069:
+      source: unicef
+      text: N ningbungbaŋ niŋdila kamani kpam laasabu, ka n nin-ni pɔrisira, di kurila suli, n lahi kpahimmi
+        baŋ ka di ŋmanila mɔrilim kanimina n nyɔɣʋ polo, dabiɛm daa gbaai ma mi dini daa niŋ ka n pili
+        biha yibu, wula ka so daa pun be daŋ yɛlima di yɛltɔɣa.
+      sbs: 0.6511
+      gen_sec: 21.16
+      ref_sec: 20.86
+      cer: 0.057
+      wer: 0.375
+    unicef_00070:
+      source: unicef
+      text: Yi fɔŋ ni, niriba tihiya ni paɣaba ma li la din tu ni bi niŋ di bɛsha ŋa ka dabi gba ma li
+        di ni tu shɛŋa, ka maa ŋmahin li, ti yɛli mɔɣi si ri li yi be yiŋa, di sa tu mi ni ma li dundɔŋ
+        ka duɣi bɛi ka bi ko li yɛlima ni n ʒiya bɛi n yi ma
+      sbs: 0.6054
+      gen_sec: 19.11
+      ref_sec: 32.26
+      cer: 0.1098
+      wer: 0.4762
+    unicef_00071:
+      source: unicef
+      text: N bɔri mi ni n na ɣi shikuru da ma n bɔ mi ni libiɣi nursi bɛ a wuraba paɣa. Niri bi ya li
+        ya ni yun pishi a yi ka n tu ni a paɣi ka na yi ko li doo, tɔ a maa ti tiŋ kpaŋɔ ŋɔ na, ha li
+        bi zaŋ bihi pam ka bi ko li doo ka bi paɣi la la. A maa n ma ya li ni ka din tu shɛm n ba la,
+        ni yi ko niŋ la bi ni yɛn niŋ ka di gbɛba
+      sbs: 0.6294
+      gen_sec: 25.08
+      ref_sec: 30.98
+      cer: 0.1295
+      wer: 0.5543
+    unicef_00072:
+      source: unicef
+      text: A tɛhiya ni mma ni saɣi kati di fiila ŋɔ? n-suhu kuli Ʒimi di yi niŋ ka n mini a diri di fiila,
+        di ŋmanila yɛltɔɣa titali pam. Nbɔri ni ntoi chaŋ shikuru hali di yi ti niŋ ka mpaɣira.
+      sbs: 0.646
+      gen_sec: 15.36
+      ref_sec: 16.9
+      cer: 0.0432
+      wer: 0.325
+    waxal_00000:
+      source: waxal
+      text: Niribi.n ʒiya bɛ chanila demostresion ,bɛmi galisiya, ka ŋubila ye liiga yelɔw kapiri shuu,
+        ka sɔ jinjam sabinli , ka zaŋ liiga piɛli lɔ ɔ sheeni ka ŋun bala zaŋ dɔɣi tirɔ
+      sbs: 0.5546
+      gen_sec: 15.36
+      ref_sec: 16.99
+      cer: 0.2296
+      wer: 0.7742
+    waxal_00001:
+      source: waxal
+      text: paɣa mini o bihi ayi n za ayisikirim koha sani ka bɛ zaa ye chinchini nɛma ka di nyɛ yaayɛ
+        ka bihi maa nyɛ bidib bili yino ni bipuɣinbia kaa ma ŋɔ gbubi ayisikirim n tiri o bipuɣim bili
+        so ŋun be o nuuni ŋɔ
+      sbs: 0.6
+      gen_sec: 17.74
+      ref_sec: 23.85
+      cer: 0.0988
+      wer: 0.4
+    waxal_00002:
+      source: waxal
+      text: lijimanim laɣ' gim ʒɛ moɣini jarabisa nyɛla din ʒɛ bɛ nyɛŋa yino nyɛla ŋɔ ʒɛ ka zaŋ o nuu
+        patabi ʒɛya ka so ʒɛ o nyɛŋa tihi gba nyɛla di bɛ bi kuɣigani
+      sbs: 0.6105
+      gen_sec: 13.48
+      ref_sec: 16.6
+      cer: 0.1271
+      wer: 0.4848
+    waxal_00003:
+      source: waxal
+      text: Mɔɣuni n bɔŋɔ ka bini kɔbiri bɛ ni maa ni bini kɔbiri maa guurimi ka loori bɛ bini kɔbiri
+        maa sunsuuni ka niriba bɛ loori maa ni ka vobisira yuuni bini kɔbiri maa na ka tihi bɛ mɔɣu maa
+        ni.
+      sbs: 0.6491
+      gen_sec: 15.79
+      ref_sec: 16.58
+      cer: 0.047
+      wer: 0.325
+    waxal_00004:
+      source: waxal
+      text: salo ŋɔ nyɛla nivuɣibɔgu shɛbi ban galisi be laɣim mi n ʒɛya be mi yi ʒɛya maa shɛbi ʒɛmi
+        ka shɛb za zuɣ saa ka do so ʒɛ be sunisuuni ka yɛ kutu sabinli n pa liga pɛli zuɣ ka lo tayi ka
+        tayi maa nyɛ zaɣ ʒiɛ ka o tɛi o noli n yɛba yɛtoɣ'
+      sbs: 0.5682
+      gen_sec: 20.47
+      ref_sec: 23.61
+      cer: 0.2111
+      wer: 0.625
+    waxal_00005:
+      source: waxal
+      text: paɣ' baayi n ʒɛ kuɣisi zuɣ ka tɛbuya ʒɛ be tuuni be zaa yɛla nɛnpiɛlla tɛbuli maa zuɣ' tabilɛtɛ
+        paya kabukunim paya ka kpalɛɛnim paya ka so mi za be tuuni zuɣ saa ka yɛ liga bankomi ka zaŋ o
+        nu zaɣiyin pa o nyɛŋaha ka ashɛbitɛ karitɛ paya
+      sbs: 0.5979
+      gen_sec: 20.64
+      ref_sec: 24.06
+      cer: 0.1968
+      wer: 0.6122
+    waxal_00006:
+      source: waxal
+      text: Palli zuɣu n boŋo sarati nyɛla din niŋ palli ŋo zuɣu moto mini chɛchɛ nyɛla din kirashi taba
+        paɣa yino nyɛla ŋun gbubi ŋun nyɛ sarati ŋo n ʒɛya n kuhura do yino nyɛla ŋun kuriya n lihira
+        ka yino nyɛ ŋun ŋmaariba Anfooni bihi ayi nyɛla bin kpabi tabi ʒɛya
+      sbs: 0.6434
+      gen_sec: 23.12
+      ref_sec: 24.56
+      cer: 0.0686
+      wer: 0.2941
+    waxal_00007:
+      source: waxal
+      text: Niraba n nyɛ sarati ka paɣa gbubi o bia n ʒiya ka kuhura ka moto do doo tooni ka doo maa ŋmaaro
+        foto ka so kuriya ka kuhura ka shikuru bihi ayi nyaɣa bi baaji n ŋmaari foto
+      sbs: 0.6405
+      gen_sec: 15.53
+      ref_sec: 19.02
+      cer: 0.0963
+      wer: 0.5263
+    waxal_00008:
+      source: waxal
+      text: Jiranbiisa zuɣusaa n boŋo paɣa nyɛla ŋun ʒi kuɣu zuɣu ka yɛ liiga sabinli ka labtop tam o
+        tooni ka kolba tam teebuli zuɣu loori nim nyɛla din bɛ jiranbiisa maa gbuni palli zuɣu chɛna loorinima
+        ŋo nyɛla zaɣ sabinli ni zaɣ piɛlli
+      sbs: 0.5617
+      gen_sec: 21.24
+      ref_sec: 22.8
+      cer: 0.1027
+      wer: 0.3256
+    waxal_00009:
+      source: waxal
+      text: Daani n boŋo daa maa ni ka shab ʒiya ka shab mii chɛna shab ʒila anbirɛla nim gbuni ka shab
+        ʒi kpakpa gbuni ka do so chɛna ka yɛ daliya pink ka so jinjɛm ŋmaa ka gbubi foon yɛlo o nuuni
+        ka pili zipili piɛlli
+      sbs: 0.6159
+      gen_sec: 17.83
+      ref_sec: 19.76
+      cer: 0.1595
+      wer: 0.4
+    waxal_00010:
+      source: waxal
+      text: Paɣiba paɣiba so zila mɔri o zuɣu ni ka yɛ liiga sabinli ka so zi dari o zuɣu ni paɣiba maa
+        bi shɛba sola chinchina loori piɛlli kanna mi ka loori sabinli gba ziya ka taabo nim donndoya
+        ka tihi bɛ bi tooni
+      sbs: 0.603
+      gen_sec: 18.26
+      ref_sec: 18.69
+      cer: 0.1043
+      wer: 0.4186
+    waxal_00011:
+      source: waxal
+      text: duu puuni ka bin kpulli yili dikpuni teebuli ʒɛla duu maa ni jiŋlaa mini ŋmana ni kapu ka
+        di biɛni fulaawa nim biɛla fulaaawa pot ni ʒɛya ka kuɣu shɛli gba ʒɛ teebuli maa gbuni
+      sbs: 0.5364
+      gen_sec: 15.19
+      ref_sec: 16.38
+      cer: 0.1338
+      wer: 0.3714
+    waxal_00012:
+      source: waxal
+      text: do'so m-bari cheche ka loodi bɔɣisinima o m-bari cheche maa shɛli polo di nyaanga ka du'piɛlli
+        zaya ka dariga tili li ka o nu'zaa polo mii gba ka du'shɛli mii gba zaya ka di dundoli maa polo
+        nyɛ zaɣ'dozim
+      sbs: 0.6305
+      gen_sec: 17.66
+      ref_sec: 16.74
+      cer: 0.0629
+      wer: 0.5128
+    waxal_00013:
+      source: waxal
+      text: Paɣasara n kuli ʒi binyahri bi sola chinchina ka doli palli ka ku pobi pobi bi ni ʒi binshaɣu
+        maa ka loori nim bɛ bi luɣa zuɣu ka tihi bɛ bi nyaanga palli maa nyɛla pali sabinli laasabu
+      sbs: 0.6033
+      gen_sec: 15.87
+      ref_sec: 16.86
+      cer: 0.2635
+      wer: 0.6053
+    waxal_00014:
+      source: waxal
+      text: ʒijuŋ puuni n bɔŋɔ ka kuɣi waɣinli ʒa dinni ni zaɣi bihi ayi bɛ peenti laduuŋɔ tampilim kala
+        kadi takoro. nya zaɣi karili ka dimi mali kichin ka picha diba yi tabi di kpuni ka teebuli ʒa
+        di sunsuuni
+      sbs: 0.5464
+      gen_sec: 17.74
+      ref_sec: 20.85
+      cer: 0.2013
+      wer: 0.6923
+    waxal_00015:
+      source: waxal
+      text: Kom n boŋo pantuu nim n bɛ kom ŋo puuni di shɛŋa nyɛla zaɣ piɛla ka di shɛŋa nyɛ zaɣ ʒiɛhi
+        ka tihi sansa kom ŋo puuni ka yiya bɛ dinni
+      sbs: 0.5853
+      gen_sec: 11.86
+      ref_sec: 19.26
+      cer: 0.2019
+      wer: 0.5806
+    waxal_00016:
+      source: waxal
+      text: Loori nima n pɛ taba bi zooi palli maa zuɣu ka bi shɛba zuɣu ka flaki tamiya ka tooni dini
+        maa ka niriba yina ziya ka guhiri so ni o yina bi mi yiɛla kootu sabila.
+      sbs: 0.6685
+      gen_sec: 13.91
+      ref_sec: 17.47
+      cer: 0.1024
+      wer: 0.4167
+    waxal_00017:
+      source: waxal
+      text: niriba n-laɣim ʒiya m-pe n-gili teebulu teebulu ŋɔ zuɣu bukunima m-paya ka kompiutanima beni
+        ka so zaya bɛ tooni n-ye liiga din nyɛ zaɣ' nuɣiso ka wuɣi o nu-u zuɣusaa din mali agogo di puuni
+      sbs: 0.5603
+      gen_sec: 18.43
+      ref_sec: 17.12
+      cer: 0.1544
+      wer: 0.2857
+    waxal_00018:
+      source: waxal
+      text: Ninvuɣi gbaliŋ mbɔŋɔ bi shɛba zila kuɣusi zuɣu kuɣu sabila nyɛli ka shɛba mi zɛ bi yɛanga
+        ka so zɛ bi tooni na ka yiɛduhirisi bɛ o tooni ka o diri feela niŋdi yiɛduhirisi maa ni niriba
+        ŋɔ shɛba niŋla yee pɔbirisi.
+      sbs: 0.5639
+      gen_sec: 19.36
+      ref_sec: 16.82
+      cer: 0.1579
+      wer: 0.4048
+    waxal_00019:
+      source: waxal
+      text: Piibu piibu shee salo nyɛla ban laɣim piibu piibu shee gbansabila ni gbanpiɛla ka yɛ liiga
+        kɔnkɔba ka ʒi tia gbuni.
+      sbs: 0.6574
+      gen_sec: 10.15
+      ref_sec: 15.16
+      cer: 0.1064
+      wer: 0.5238
+    waxal_00020:
+      source: waxal
+      text: niraba ka bi ʒɛnʒɛya saa n mi ka kom kpɛba n di bi duri ka daai shɛŋa luhi ka bi va niɛma
+        yina n ti paɣara ka shab kpɛ n ʒɛ kom maa ni ka bia chɛna ka doo gba ʒi kom maa sunsuuni shab
+        tam duri zuɣu ka du shɛŋa na ʒɛya di bi lu
+      sbs: 0.537
+      gen_sec: 18.68
+      ref_sec: 20.72
+      cer: 0.1462
+      wer: 0.5
+    waxal_00021:
+      source: waxal
+      text: Niraba n ku piɛ n ʒiya ka bi sa tuuta nima tuuta nik maa nyɛla zaɣ ʒiɛhi ka di zuɣusaa nyɛ
+        zaɣ piɛla ka do so ʒi tooni na ka gob chinchin piɛlli ka bi sabi sabiri sabila ka so ʒi tuuta
+        nim maa puuni ka gobi chinchin ka pili zipili sabinli
+      sbs: 0.628
+      gen_sec: 20.13
+      ref_sec: 19.5
+      cer: 0.0856
+      wer: 0.3462
+    waxal_00022:
+      source: waxal
+      text: Bihi be ʒila dariga zuɣu ka kpalaŋsi be bɛ tooni ni jarikan ŋmaa zaɣ'sabinli ŋun bala maa
+        ʒi mi ka liɣiri ŋun bala maa ka ŋun bala maa mii pɔri o naba ʒiya.
+      sbs: 0.6103
+      gen_sec: 13.82
+      ref_sec: 15.48
+      cer: 0.1148
+      wer: 0.3636
+    waxal_00023:
+      source: waxal
+      text: Palli n boŋo di soŋla kootaali tihi n saya ŋo ka mori bili dinni salin boɣali ni n boŋo ka
+        doo tam di kunkun zuɣu ka shab bɛ boɣali maa puuni
+      sbs: 0.5636
+      gen_sec: 13.06
+      ref_sec: 18.08
+      cer: 0.2162
+      wer: 0.6774
+    waxal_00024:
+      source: waxal
+      text: Salo n laɣam ʒɛ boɣali ni ŋo yino nyɛla ŋun yɛ liiga sabinli ka yino yɛ liiga vakaɣali ka
+        zaɣ dozim booi dinni ka tihi bɛ bi nyaanga ka mashin ʒɛ di puuni
+      sbs: 0.62
+      gen_sec: 13.74
+      ref_sec: 17.92
+      cer: 0.1721
+      wer: 0.4545
+    waxal_00025:
+      source: waxal
+      text: Daapuuni paɣi ziya ka niŋ nyɛ pɔrigu teebulnim ʒɛya nyiŋgo korsii pa teebuli maa zuɣu tihi
+        ʒɛyana paɣ' ayi chan dolitaba ka yinɔ niŋ nyɛpɔbirigu
+      sbs: 0.5951
+      gen_sec: 13.31
+      ref_sec: 19.22
+      cer: 0.1008
+      wer: 0.76
+    waxal_00026:
+      source: waxal
+      text: Teebuli n ʒɛya ŋo laa nyɛla din tam teebuli maa zuɣu ka bindirigu bɛ laa maa puuni gala ata
+        nyɛla din bɛni n ti pahi boraadɛ din nyɛ dibanu gba bɛni laa maa ni ni zaham ŋmara ka manʒa nyɛ
+        din polli
+      sbs: 0.5839
+      gen_sec: 17.15
+      ref_sec: 15.81
+      cer: 0.1667
+      wer: 0.4286
+    waxal_00027:
+      source: waxal
+      text: Alepile paaki titali ni m-bɔŋɔ alepile ŋɔ kuli nyɛla zaɣ' titali ka niriba chani di kpiɛbu
+        silimiiŋɡa ŋun chani ŋɔ nyɛla ŋun mali zuɣ' viɛŋ ka ye liiɡa sabinli doo ŋun chani ŋɔ nyɛla ŋun
+        nyaɣi baaji sabinli ka ɡbubi shɛli o nuu ni
+      sbs: 0.5308
+      gen_sec: 20.73
+      ref_sec: 17.03
+      cer: 0.087
+      wer: 0.1818
+    waxal_00028:
+      source: waxal
+      text: paɣaba ayi nyɛla ban ʒiya n tori saɣam paɣa yino nyɛla ŋun gbubi tiligi maa tori saɣam bi
+        niraba ayi maa so bi piri namda nima binkobiri nyɛla ban bɛ nimaani binkobiri ŋo so n nyɛ buwa
+        ka o nyɛ zaɣ tankpaɣu laasabu ka noo gba bɛ nimaani ka nyɛ zaɣ sabinli
+      sbs: 0.6276
+      gen_sec: 22.44
+      ref_sec: 21.94
+      cer: 0.1225
+      wer: 0.4423
+    waxal_00029:
+      source: waxal
+      text: Bihi anahi n toori kom moɣali ni bi gbubila boɣati nima n mali toori kom bakɛti dibaayi nyɛla
+        zaɣ piɛla ka zaɣ yindi nyɛ zaɣ buluu
+      sbs: 0.6253
+      gen_sec: 11.78
+      ref_sec: 19.84
+      cer: 0.0857
+      wer: 0.5
+    waxal_00030:
+      source: waxal
+      text: Nachimbihi n ʒiri kpiimba daa daka ka kpiimba daa daka ŋɔ ka di nyɛ zaɣim nachimbihi ŋɔ shab
+        nyɛla ban ye daliya ka di nyɛ zaɣ'sabila ka so ye daliya ka di nyɛ zaɣ'dozim.
+      sbs: 0.6342
+      gen_sec: 14.42
+      ref_sec: 17.76
+      cer: 0.0522
+      wer: 0.3235
+    waxal_00031:
+      source: waxal
+      text: Namda nim n bɔŋɔ ka bi zaŋli n yili yili namda nim maa nyɛla siɣim bushɛm zaɣ piɛlli biɛni
+        zaɣ ʒiɛ biɛni zaɣ vakaɣali zaɣ ŋmari ŋmari ka bi zaŋ tana n soŋ n baɣali li zaɣ ŋmari ŋmari biɛni
+        ka zaɣ piɛlli biɛni
+      sbs: 0.5619
+      gen_sec: 18.51
+      ref_sec: 22.96
+      cer: 0.1697
+      wer: 0.5682
+    waxal_00032:
+      source: waxal
+      text: Paɣiba ayi n-duɣiri bindirigu. Yino ʒila kuɣu zuɣu yino mi bi ʒi kuɣu zuɣu. Ŋmana n-zooi nimaani
+        ka zahim pa la' shɛli zuɣu ka buɣim mi gba zaa be nimaani ka bɛ zaŋ kpaam n-tam di zuɣu.
+      sbs: 0.6388
+      gen_sec: 16.55
+      ref_sec: 18.98
+      cer: 0.0563
+      wer: 0.2432
+    waxal_00033:
+      source: waxal
+      text: Din bɛ Anfooni ŋo ni n nyɛ moɣali ka tihi piɛ n gili moɣali maa n ti pahi ŋarim dibaayi ka
+        niraba ata ʒi ŋarim shɛli din baɣa tia maa ni piɛɣu ŋarim shɛli din mii pahari ayi maa ka niraba
+        ayi bɛ di puuni n ti pahi piɛɣu
+      sbs: 0.574
+      gen_sec: 18.77
+      ref_sec: 28.08
+      cer: 0.1053
+      wer: 0.3469
+    waxal_00034:
+      source: waxal
+      text: Tɔ Kpɛŋɔ maa mee n nya ka amonkaa tam amonkaa zuɣu ka sheba gbibi amonkaa maa ka marafa nima
+        be amonkaa maa ni ni kukola ka bɛ gnibi filaaki nima balibu balibu ka sheba ʒi amonkaa maa zuɣusaa.
+      sbs: 0.6018
+      gen_sec: 17.15
+      ref_sec: 20.15
+      cer: 0.1169
+      wer: 0.4211
+    waxal_00035:
+      source: waxal
+      text: paɣba n bɛ do puuni ka yino ʒɛ kuɣ' zuɣ' kuɣ' maa nyɛla gbabili kuɣ' zaɣ sabinli ka paɣ' saribili
+        ʒɛ di zuɣ ka gbabi pɛni ka kpa nɛkpara ka yuni ban ʒɛ yaɣili maa paɣba nyɛ be gbazaa tima bɛnidirinim
+        pala paɣ maa ni ʒɛ shɛli maa
+      sbs: 0.6278
+      gen_sec: 19.54
+      ref_sec: 23.45
+      cer: 0.2159
+      wer: 0.625
+    waxal_00036:
+      source: waxal
+      text: Silimiinsi n laɣim zaya bɛ piɛla foolii n gbibi kamara nima makuro fooni nima n tamya ŋɔ ka
+        bɛ zanzaya sooja nima m biɛni doo yela puloova sabinli ka pili zipil'sabinli.
+      sbs: 0.631
+      gen_sec: 15.19
+      ref_sec: 17.88
+      cer: 0.0584
+      wer: 0.5806
+    waxal_00037:
+      source: waxal
+      text: Paɣa n ʒɛya ka ʒi tahali tahali maa puuni shuu polish nim biɛni ni zuɣu saɣarisi ka gbubi
+        piɛ bila o nuuni piɛ bili maa gba puuni birash nim biɛni ni shuu polish nima ka gbubi laɣari
+      sbs: 0.6433
+      gen_sec: 15.27
+      ref_sec: 22.02
+      cer: 0.0959
+      wer: 0.4595
+    waxal_00038:
+      source: waxal
+      text: salo n-laɣim n-zaya ka shɛba ʒiya n-ŋmɛri timpana salo ŋɔ puuni bɛ yuuni-la paɣa ka o wari
+        waa paɣa ŋɔ nyɛla ŋun bi ye liiga ka bi piri namda paɣa ŋɔ yiɣila zuɣusaa
+      sbs: 0.5983
+      gen_sec: 14.76
+      ref_sec: 16.46
+      cer: 0.0547
+      wer: 0.2121
+    waxal_00039:
+      source: waxal
+      text: Country Shelly n ƶa bɛ nyaaŋa ka do so ƶa maik gbuni ka mŋari lunsi ka ga bɛni ka yɛ liga
+        piɛli ka paɣa so gba ƶaa wara ka ƶanŋ bɛnyara lo o gbaya ni suhipiɛli ka ƶi bɛni ka maik maa mihi-waya
+        nim maa yirina.
+      sbs: 0.6034
+      gen_sec: 17.32
+      ref_sec: 18.65
+      cer: 0.2795
+      wer: 0.6522
+    waxal_00040:
+      source: waxal
+      text: Paɣaba n ku galisi ʒiya n tiɛ tiɛ bi naba ʒiya ka zaŋ pona din nyɛ tahapona n tam bi naba
+        zuɣu ka naanzuwa mini simbiɛlim bɛ di puuni ka bi gahanda la loori karili ʒɛ bi nyaanga
+      sbs: 0.555
+      gen_sec: 14.93
+      ref_sec: 25.12
+      cer: 0.2071
+      wer: 0.5526
+    waxal_00041:
+      source: waxal
+      text: N ma maa gbubila foon o nuuni ka la n doya ka teegi o nugaŋ bahi ka yɛ yɛnpa n pa o niɛma
+        maa zuɣu o dola niɛma zuɣu niɛma maa nyɛla o ni kohari shɛli o lami do niɛma maa zuɣu
+      sbs: 0.6205
+      gen_sec: 15.19
+      ref_sec: 16.36
+      cer: 0.1045
+      wer: 0.5238
+    waxal_00042:
+      source: waxal
+      text: Salin boɣali ni n boŋo doo n kuriya ka gbuni soobul n toori tankpaɣu niraba ayopoin gba n
+        pahi o zuɣu bɛ di puuni ka mashin ʒɛya n vori ko biɛɣu yiri kuligi maa puuni mashin shɛli gba
+        lahi ʒɛya n tam dalibo zuɣu ka kom maa ku nyɛla ko biɛɣu n bɛ dinni
+      sbs: 0.6203
+      gen_sec: 22.61
+      ref_sec: 24.6
+      cer: 0.1566
+      wer: 0.463
+    waxal_00043:
+      source: waxal
+      text: kootu duu puuni ka ti lihiri ŋɔ ka jaaji ʒi zuɣusaa ka o nu' dirigu zuɣu n-nya paɣaba ni pe
+        ka dabba ayi ʒi bɛ sunsuuni ka looya ŋun nyɛ paɣa ʒi be bɛ puuni.
+      sbs: 0.6537
+      gen_sec: 13.74
+      ref_sec: 20.52
+      cer: 0.0583
+      wer: 0.2
+    waxal_00044:
+      source: waxal
+      text: paɣ' mondi banku ka ka bihi ayi za o nuu diirgu lihiro ka tɛɛbuli bɛ o yaɣili ka kuriga nyɛ
+        din tam tɛɛbuli maa zuɣ' ka n ma so ʒɛ nyɛŋa maa ka gubichichini ka paɣ' so mini o gba bihi ʒɛ
+        luuƒa puuni ha
+      sbs: 0.5991
+      gen_sec: 16.98
+      ref_sec: 15.85
+      cer: 0.2403
+      wer: 0.5333
+    waxal_00045:
+      source: waxal
+      text: Nachimbi anii n bɛ boɣali puuni ka koma bɛ boɣali puuni ka mashun gba ʒɛya n bɛ boɣali maa
+        puuni ka nachimbihi shab yɛ singirɛti nima ka shab yɛ liiga yɛlo ka shab yɛ liiga piɛla ka chɛ
+        so gba biɛni n gba zaŋ soobuli toori tankpaɣu
+      sbs: 0.6209
+      gen_sec: 20.3
+      ref_sec: 20.84
+      cer: 0.2649
+      wer: 0.7872
+    waxal_00046:
+      source: waxal
+      text: Nachimba ayi yino yɛla sitir' sabilinli ka ʒi cheche sabilinli zuɣu ka yino za o nyaaŋga ka
+        ye sitir' sabilinli jinjam sabilinli. O zabiri nyɛla zab' sabila.
+      sbs: 0.6372
+      gen_sec: 13.74
+      ref_sec: 15.4
+      cer: 0.0714
+      wer: 0.1852
+    waxal_00047:
+      source: waxal
+      text: Silmiin paɣa n ʒɛya duduɣugu ni ka yɛ liiga mini jinjɛm duduɣugu shɛli ni o ni ʒɛya maa chɛriti
+        yiliyilla zuɣusaa ka o gbubi bindirigu dira o ni diri maa ka binshɛŋa bini mali duɣuri gba zaa
+        ʒɛ nimaani
+      sbs: 0.635
+      gen_sec: 17.66
+      ref_sec: 21.47
+      cer: 0.1534
+      wer: 0.4103
+    waxal_00048:
+      source: waxal
+      text: Zileli ŋɔ puuni bɛ malila ʒishee sheli n zali so ni o kana ti di fiila niriba maa kuli yela
+        niɛn gaba gaba zaɣa sabila biɛni zaɣa tankpaɣu zaɣa chichera biɛni sheba pili zipila sheba bi
+        pili zipila paɣaba mini dabba n kuli laɣim choriboi n guhini ŋun yen diba fiila maa diba fiila
+        maa.
+      sbs: 0.621
+      gen_sec: 25.17
+      ref_sec: 26.9
+      cer: 0.1261
+      wer: 0.5818
+    waxal_00049:
+      source: waxal
+      text: niriba pam m-be duu puuni niriba maa puuni bɛ shɛba dola garo nima zuɣu ka niriba ayi ʒi garo
+        nima maa zuɣu bɛ puuni shɛba n-nyɛ dokta ŋun zaŋ nema bɔbi o ni zaa ha ka o ni bi lahi nyari a
+        kom ka bɛ kpɛhiri shɛba ka kpɛhiri shɛba wɔɣisigin.
+      sbs: 0.6456
+      gen_sec: 20.64
+      ref_sec: 27.71
+      cer: 0.0588
+      wer: 0.1373
+    waxal_00050:
+      source: waxal
+      text: Dakuɣa n doya ŋɔ be nyɛla ban zaŋ taabo zaŋ pa da kuɣa ŋɔ zuɣu kom n doya ŋɔ da kuɣa maa nyɛla
+        din bɛ kom maa ni yili n zaya ŋɔ bi kpɛhila yili maa takoro galaasi liga nim nyɛla din pa mii
+        zuɣu yili maa dikpuna nyɛla din kurigi kurigi.
+      sbs: 0.6068
+      gen_sec: 20.39
+      ref_sec: 19.55
+      cer: 0.0929
+      wer: 0.4231
+    waxal_00051:
+      source: waxal
+      text: so chɛndiba n boŋo so chɛndiba ma ʒirila baaji nima ka paɣaba bɛ bi ni ka linjima nim taɣaba
+        zali linjima nim maa nyɛla yino bi puuni ka yɛ liiga buluu mini di jinjɛm
+      sbs: 0.6102
+      gen_sec: 14.17
+      ref_sec: 18.61
+      cer: 0.1729
+      wer: 0.4706
+    waxal_00052:
+      source: waxal
+      text: Duu m-bɔŋɔ ka teebuli ʒɛya ka di nyɛ zaɣ' piɛlli ka kapu tamya ka kuɣu din kom nyɛ salima
+        kom ka di zaya ka fulaawaasi za di ɡbuni
+      sbs: 0.6304
+      gen_sec: 10.92
+      ref_sec: 15.64
+      cer: 0.0495
+      wer: 0.1071
+    waxal_00053:
+      source: waxal
+      text: Dabba noli n zaya bɛ zooya bɛ yela niɛnpiɛl'waɣala ka niriba ayi pili zipiligu ban za tooni
+        maa tiritila binshaɣu wuhiriba ban kpalim bɛ sheba zaŋla bɛ nuhi labisi bɛ nyaanga ka sheba mee
+        n zaŋ bɛ nuhi m pa bɛ nyɔɣu zuɣu.
+      sbs: 0.5897
+      gen_sec: 19.36
+      ref_sec: 19.3
+      cer: 0.096
+      wer: 0.4186
+    waxal_00054:
+      source: waxal
+      text: Du'viɛli ka kuɣusi zaya ka dufeya pa kuɣusi maa zuɣu ka nyɛ dufeya anu ka teebuli zaya ka
+        kopu tam dizuɣu ka filaawaasi gba tam teebuli maa zuɣu.
+      sbs: 0.5277
+      gen_sec: 12.89
+      ref_sec: 19.02
+      cer: 0.0603
+      wer: 0.3929
+    waxal_00055:
+      source: waxal
+      text: Paɣa n ʒi tahapoŋ ʒɛya ka ka tizuɣu piɛlli ka pili zipiligu ka gbubi baskɛti o nuuni ka binyahari
+        bɛ dinni binyɛra maa n nyɛ polish nima birash nima ka gbubi laɣari o nuuni tahapoŋ maa ni binyahari
+        n bɛ dinni ka di nyɛ bin sabila polish nima
+      sbs: 0.6409
+      gen_sec: 20.64
+      ref_sec: 24.3
+      cer: 0.1804
+      wer: 0.7083
+    waxal_00056:
+      source: waxal
+      text: Doo mini o bia n ʒiya ka laa tam bi tooni ka bindira bɛ di puuni ni kapu nima ka kom bɛ di
+        puuni ka o bia zaŋ bindirigu n niŋ o nolini ka o yaagi o noli ka deegi
+      sbs: 0.5902
+      gen_sec: 13.82
+      ref_sec: 15.69
+      cer: 0.0656
+      wer: 0.25
+    waxal_00057:
+      source: waxal
+      text: Niriba n zooi zɛya ŋɔ bi mini linjima nima n daari taba bi shɛba gbubi la tuuta nima ma tuuta
+        nima maa shɛli nyɛ zaɣi zɛhi ma shɛŋa mi nyɛ zaɣi buluu linjima nima maa pilila zupiliti ka di
+        mali nini pɔbirigu daadama maa gba shɛba yiɛla liiga sabila ka bi shɛba yiɛ liiga piɛlla.
+      sbs: 0.5996
+      gen_sec: 23.12
+      ref_sec: 20.64
+      cer: 0.157
+      wer: 0.6727
+    waxal_00058:
+      source: waxal
+      text: Ashibiti puuni m bɔŋɔ ashibiti maa puuni niriba ayi n nyɛ ban bɛ ashibiti maa puuni ashibiti
+        maa puuni docta maa nyɛla ŋun yɛ liiga sabinli ka pili zipili buluu ka su nusuri piɛlla o nuuni
+        ka o chibiri bara barimaa mi nyɛla pɔlinga.
+      sbs: 0.6268
+      gen_sec: 19.71
+      ref_sec: 22.59
+      cer: 0.1277
+      wer: 0.4091
+    waxal_00059:
+      source: waxal
+      text: Ninvuɣi shɛba ye la nɛɛn piɛla piɛla n za n zaya ka shɛba mi do n do tiŋa ka ahɛba mi so n
+        do gariti zuɣu ka gariti maa nyɛ bini shɛŋa dini golim golim la bini yahari yili yili li.
+      sbs: 0.5921
+      gen_sec: 15.02
+      ref_sec: 16.86
+      cer: 0.1007
+      wer: 0.5366
+    waxal_00060:
+      source: waxal
+      text: Daani ka Silimiin paɣa ʒɛya ka biri namda piɛla ka nyaɣi baaji sabinli ka ʒɛ loori gbini ka
+        loori maa puuni niɛma biɛni niɛn piɛla biɛni ka filaawaasi nima biɛni ka loori maa mali gbali
+        piɛla ka tihi biɛni ka bɛ zaŋ baaji nima yili tihi maa.
+      sbs: 0.6098
+      gen_sec: 20.73
+      ref_sec: 24.22
+      cer: 0.0979
+      wer: 0.3404
+    waxal_00061:
+      source: waxal
+      text: Paɣa n ʒe gbambila gbuni gbambila maa luɣuli zuɣu bɛni piɛlli n ʒeya zaɣi waɣinli n nyɛli
+        ka bin sabila sabbi pa di zuɣu ni vɔt paɣa naa sola chinchini o nyɔɣu zuɣu ka yɛ liiga piɛlli
+        ka wuɣi o nuu bɔɣu m ma di kpambili maa wolini ka gbubi binchɛra o nu zaa.
+      sbs: 0.5929
+      gen_sec: 22.52
+      ref_sec: 20.03
+      cer: 0.0882
+      wer: 0.5
+    waxal_00062:
+      source: waxal
+      text: Kaya ni taada wuhubi paɣasara nyɛla ban yina n ʒi binyɛra tahapona ni ka bi zaa gobi chinchina
+        chinchina maa shɛŋa kama nyɛla zaɣ vakaɣali ka shɛŋa nyɛ zaɣ dozim ni zaɣ vakaɣali
+      sbs: 0.5953
+      gen_sec: 15.53
+      ref_sec: 23.84
+      cer: 0.1103
+      wer: 0.3636
+    waxal_00063:
+      source: waxal
+      text: Duu ŋɔ viɛli pam santa teebuli zala di sunsuuni ka filaawaasi nima tam santa teebuli maa zuɣu
+        ni pileti ka kuɣusi zanzaya ka dufeya nima pampa kuɣusi maa zuɣu ka takoriti gba be duu maa puuni.
+      sbs: 0.6118
+      gen_sec: 17.66
+      ref_sec: 20.76
+      cer: 0.0769
+      wer: 0.3333
+    waxal_00064:
+      source: waxal
+      text: Ashibiti ni n bɔŋɔ, ka barinim doya. barinim ŋɔ sɔ ʒila ɔ garɔ zuɣu ka ye liiga ʒɛɛ ka kpa
+        ninkpara, ness nimŋɔ sɔ yela liiga piɛli. ka ninkpara. bɛ kpehirila barisɔ kom. bɛ gariti ŋɔ nyɛla
+        zaɣipiɛli, glaasi du doya ka ashibitiŋɔ mala.
+      sbs: 0.6502
+      gen_sec: 20.82
+      ref_sec: 20.36
+      cer: 0.125
+      wer: 0.5227
+    waxal_00065:
+      source: waxal
+      text: Duu bɔŋɔ ka kuɣusi ata zaya ka tɛɛbuli zaɣi gaŋa zɛ di sunsuuni ka kopu tam di zuɣu ka flawaasi
+        bɛ duu maa ni ka dukpuni maa nyɛ dukpuni piɛlli
+      sbs: 0.6305
+      gen_sec: 11.95
+      ref_sec: 15.69
+      cer: 0.0965
+      wer: 0.2667
 - model: k2-fsa/OmniVoice-noref
   model_url: https://huggingface.co/k2-fsa/OmniVoice
   mode: noref
@@ -26536,4 +28432,4 @@ benchmarks:
       ref_sec: 15.69
       cer: 0.3947
       wer: 0.7333
-updated: '2026-10-01'
+updated: '2026-10-09'

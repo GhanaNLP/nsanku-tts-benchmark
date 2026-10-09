@@ -6839,6 +6839,1713 @@ benchmarks:
       ref_sec: 4.15
       cer: 0.3333
       wer: 0.9
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7003
+  num_scored: 200
+  cer: 0.1621
+  wer: 0.35
+  accuracy: 0.8379
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.7691
+  score: 0.7691
+  per_source:
+    bible:
+      sbs: 0.7424
+      cer: 0.0648
+      n: 100
+    jw:
+      sbs: 0.6582
+      cer: 0.2594
+      n: 100
+  entries:
+    bible_00000:
+      source: bible
+      text: Nɔ nɛ deɔ ke e ngɛ Mawu mi ɔ, e ba e je mi kaa bɔ nɛ Yesu Kristo ba e je mi ɔ.
+      sbs: 0.7596
+      gen_sec: 5.55
+      ref_sec: 5.58
+      cer: 0.0
+      wer: 0.1667
+    bible_00001:
+      source: bible
+      text: Nɔ ko yɛ hiɔwe gblee kaa ja Nɔmlɔ Bi ɔ, nɔ nɛ je hiɔwe kple si kɛ ba a.”
+      sbs: 0.7371
+      gen_sec: 5.38
+      ref_sec: 8.62
+      cer: 0.0196
+      wer: 0.0526
+    bible_00002:
+      source: bible
+      text: Nihi nɛ peeɔ nɔ́ nɛ da, se a be he wami nɛ a kɛ ma fa a he ɔ, nyɛ bu mɛ fɔ, nɛ nyɛ gbe mɛ.
+      sbs: 0.7436
+      gen_sec: 6.4
+      ref_sec: 6.2
+      cer: 0.0339
+      wer: 0.0741
+    bible_00003:
+      source: bible
+      text: Lɔ ɔ he ɔ, a poo osɛkɛ ɔmɛ ngɔ wo wo ɔ mi, nɛ a pɛne kpa nɛ fi kudɔɔ ɔ hulɔ. Jehanɛ a wo abalaa
+        nɛ ngɛ lɛ ɔ yi ɔ, konɛ kɔɔhiɔ ɔ nɛ ha nɛ lɛ ɔ nɛ nyɛɛ kɛ ya hɛ mi. Kɛkɛ nɛ wa ngɔ wa yi kɛ pi
+        wo kpo ɔ.
+      sbs: 0.7115
+      gen_sec: 14.76
+      ref_sec: 13.7
+      cer: 0.1314
+      wer: 0.3158
+    bible_00004:
+      source: bible
+      text: Se munyu nɛ kudɔɔtsɛ ɔ, kɛ lɛtsɛ ɔ tu ɔ mohu ya asafoatsɛ ɔ yi mi pe ga nɛ Paulo wo mɛ ɔ.
+      sbs: 0.7195
+      gen_sec: 6.83
+      ref_sec: 5.3
+      cer: 0.0615
+      wer: 0.2609
+    bible_00005:
+      source: bible
+      text: Niinɛ, sane kpakpa a nɛ i fiɛɛ ɔ, lɔ ɔ kɛkɛ ha we mi he blɔ kaa ma fĩa, ejakaa Mawu nitsɛ
+        nɛ fa mi ke ma pee jã. Kaa i fiɛ we sane kpakpa a, jinɛ musu tloo mi pɛ!
+      sbs: 0.7969
+      gen_sec: 12.63
+      ref_sec: 11.1
+      cer: 0.0431
+      wer: 0.122
+    bible_00006:
+      source: bible
+      text: Maria ya su he nɛ Yesu ngɛ ɔ, nɛ amlɔ nɔuu nɛ e na Yesu ɔ, e kpla si ngɛ Yesu nane nya, nɛ
+        e de lɛ ke, “Nyɔmtsɛ, kaa o ngɛ hiɛ ɔ jinɛ ye nyɛminyumu ɔ ko gbo we.”
+      sbs: 0.6721
+      gen_sec: 12.12
+      ref_sec: 12.32
+      cer: 0.0442
+      wer: 0.1463
+    bible_00007:
+      source: bible
+      text: Se ke a kpale kɛ ba Nyɔmtsɛ ɔ ngɔ kɛkɛ a ma je hɛ mi hami nɔ́ ɔ ha mɛ.
+      sbs: 0.6907
+      gen_sec: 5.03
+      ref_sec: 3.7
+      cer: 0.2041
+      wer: 0.25
+    bible_00008:
+      source: bible
+      text: Nɔ tsuaa nɔ nɛ ngɛ hɛ kɛ nɔ fɔmi kaa kikɛ nɛ ɔ ngɛ Kristo mi ɔ, peeɔ e he klɔuklɔu kaa bɔ
+        nɛ Kristo hu ngɛ klɔuklɔu ɔ.
+      sbs: 0.7254
+      gen_sec: 9.13
+      ref_sec: 7.5
+      cer: 0.0909
+      wer: 0.2414
+    bible_00009:
+      source: bible
+      text: Yuda bi jio, ma je li jio, Kristo nɔ lɛ wɔ tsuo wa maa gu kɛ ba Tsɛ ɔ ngɔ. Mumi Klɔuklɔu kake
+        ɔ nɔuu lɛ maa piɛ wa he.
+      sbs: 0.7749
+      gen_sec: 9.05
+      ref_sec: 7.86
+      cer: 0.0941
+      wer: 0.1333
+    bible_00010:
+      source: bible
+      text: Jokuɛ ɔ ba wa ngɛ nɔmlɔ tso mi; e le ní hulɔ, nɛ Mawu gbaa lɛ babauu.
+      sbs: 0.7855
+      gen_sec: 5.38
+      ref_sec: 4.98
+      cer: 0.04
+      wer: 0.0588
+    bible_00011:
+      source: bible
+      text: Jehanɛ ɔ, e de tsɔli ɔmɛ ke, “Nyɛɛ yɛ eko ya ha nɔ nɛ ngɛ ní tsumi ɔ nɔ hyɛe ɔ.” A yɛ nyu
+      sbs: 0.7241
+      gen_sec: 6.49
+      ref_sec: 7.22
+      cer: 0.1475
+      wer: 0.25
+    bible_00012:
+      source: bible
+      text: Jehanɛ ɔ, e plɛ e he, nɛ e na Yesu nɛ daa si, se e yo we lɛ.
+      sbs: 0.7479
+      gen_sec: 4.35
+      ref_sec: 5.12
+      cer: 0.0256
+      wer: 0.0556
+    bible_00013:
+      source: bible
+      text: Nyɛɛ hi ye mi nɛ imi hu ma hi nyɛ mi. Kaa bɔ nɛ tso kɔni be nyɛe maa wo yiblii ngɛ lɛ nitsɛ
+        e dɛ he, se ja e mɛtɛ wai tso ɔ he ɔ, jã kɛ̃ nyɛ hu ke nyɛ hi ye mi ɔ, nyɛ be yiblii woe.
+      sbs: 0.7063
+      gen_sec: 13.48
+      ref_sec: 12.94
+      cer: 0.0476
+      wer: 0.2
+    bible_00014:
+      source: bible
+      text: Lɔ ɔ he ɔ, benɛ Samaria bi ɔmɛ ba Yesu ngɔ ɔ, a kpa lɛ pɛɛ ke e hi a ngɔ. Nɛ Yesu kɛ mɛ hi
+        lejɛ ɔ ligbi enyɔ.
+      sbs: 0.7756
+      gen_sec: 8.11
+      ref_sec: 8.84
+      cer: 0.0132
+      wer: 0.0333
+    bible_00015:
+      source: bible
+      text: Nyɔmtsɛ kake, hemi kɛ yemi kake, kɛ nɔ sɔlemi kake lɛ ngɛ.
+      sbs: 0.7035
+      gen_sec: 4.78
+      ref_sec: 3.64
+      cer: 0.0455
+      wer: 0.25
+    bible_00016:
+      source: bible
+      text: Ejakaa yakayaka si himi nɛ nyɛ nɛmɛ ɔmɛ si ha nyɛ ɔ, nyɛ le hĩɔ nɛ Mawu wo loko e kɛ kpɔ nyɛ
+        kɛ je mi nɛ nyɛ ye nyɛ he. Pi nɔ́ ko nɛ puɛɔ kaa sika hiɔ, loo sika tsu nɛ Mawu ngɔ kɛ tsu kikɛmɛ
+        a ní nɛ ɔ,
+      sbs: 0.6832
+      gen_sec: 15.44
+      ref_sec: 13.82
+      cer: 0.1034
+      wer: 0.2692
+    bible_00017:
+      source: bible
+      text: Yesu de mɛ ke, “Abraham nina ji nyɛ jinɛ nyɛ maa pee níhi nɛ Abraham pee ɔ nɔuu.
+      sbs: 0.7363
+      gen_sec: 6.31
+      ref_sec: 5.32
+      cer: 0.0333
+      wer: 0.1667
+    bible_00018:
+      source: bible
+      text: Jehanɛ a kɛ lakpa odase yeli komɛ ba, nɛ a ba de ke, “Daa nɛ ɔ, kikɛmɛ a nɔmlɔ nɛ ɔ tuɔ munyu
+        kɛ siɔ wa sɔlemi we klɔuklɔu ɔ, kɛ Mose mlaa a.
+      sbs: 0.7261
+      gen_sec: 10.84
+      ref_sec: 9.5
+      cer: 0.0588
+      wer: 0.2059
+    bible_00019:
+      source: bible
+      text: “Koo pɛtɛ he, koo sa o nya, nɛ koo ta he tete po” ɔ?
+      sbs: 0.7672
+      gen_sec: 3.75
+      ref_sec: 4.02
+      cer: 0.2059
+      wer: 0.6429
+    bible_00020:
+      source: bible
+      text: Se Paulo kple si, nɛ e ya bu e nɔ, nɛ e fua lɛ. E de ni ɔmɛ ke, “Nyɛ ko jé ngmlaa; wami ngɛ
+        e mi kɛ mwɔɔ!”
+      sbs: 0.7537
+      gen_sec: 7.68
+      ref_sec: 8.26
+      cer: 0.0857
+      wer: 0.1379
+    bible_00021:
+      source: bible
+      text: Yoo, i le bɔ nɛ ma pee, kɛkɛ ɔ, ke ye ní tsumi ɔ je ye dɛ ɔ, ma na huɛmɛ nɛ ma he mi atuu
+        kɛ to we.’
+      sbs: 0.7695
+      gen_sec: 7.17
+      ref_sec: 8.34
+      cer: 0.0606
+      wer: 0.1379
+    bible_00022:
+      source: bible
+      text: Yesu de lɛ ekohu ke, “Ke o de ke o be huno ɔ, o tu anɔkuale.
+      sbs: 0.7662
+      gen_sec: 4.44
+      ref_sec: 5.54
+      cer: 0.0732
+      wer: 0.1875
+    bible_00023:
+      source: bible
+      text: Nyɛ ko sisi nyɛ he kaa nyɛ maa bu munyu ɔ tue kɛkɛ; mohu nyɛɛ pee munyu ɔ nɔ yeli.
+      sbs: 0.6898
+      gen_sec: 6.4
+      ref_sec: 5.14
+      cer: 0.0328
+      wer: 0.1
+    bible_00024:
+      source: bible
+      text: Yuda bi ɔmɛ nu kikɛmɛ a nyumu nɛ ɔ, nɛ jinɛ a
+      sbs: 0.7679
+      gen_sec: 3.41
+      ref_sec: 3.26
+      cer: 0.0303
+      wer: 0.0833
+    bible_00025:
+      source: bible
+      text: Ngɛ mlaa a blɔ fa mi ɔ, i plɛ pee nɔ gbogboe, konɛ ma hi wami mi ha Mawu mohu. I kɛ Kristo
+        a sɛu ɔ nɛ.
+      sbs: 0.7602
+      gen_sec: 7.68
+      ref_sec: 6.54
+      cer: 0.0278
+      wer: 0.037
+    bible_00026:
+      source: bible
+      text: Se kɛ̃ ɔ, bɔ nɛ pee nɛ munyu ɔ ko gbɛ fĩa fuu ko hu ngɛ ma a mi he je ɔ, nyɛ ha waa bɔ mɛ
+        kɔkɔ ke a ko ngɔ Yesu biɛ kɛ tsɔɔ ní hu.”
+      sbs: 0.7581
+      gen_sec: 9.56
+      ref_sec: 7.58
+      cer: 0.0674
+      wer: 0.1579
+    bible_00027:
+      source: bible
+      text: Wa nu nɛ e de ke, Yesu, Nazaret no ɔ, maa ku sɔlemi we nɛ ɔ, nɛ e ma tsake blɔ nyahi nɛ Mose
+        ngɔ ha wɔ ɔ.”
+      sbs: 0.7417
+      gen_sec: 7.94
+      ref_sec: 6.7
+      cer: 0.0548
+      wer: 0.2143
+    bible_00028:
+      source: bible
+      text: Lɔ ɔ he ɔ, awenyɛ nɛ i suɔ! I kpa mo pɛɛ, nyɛ ha nɛ waa suɔ wa sibi. Nɔ́ nɛ i ngɛ ngmae nɛ
+        ɔ, pi mlaa he, se mohu mlaa a nɛ a wo wɔ kɛ je sisije ɔ.
+      sbs: 0.7755
+      gen_sec: 10.75
+      ref_sec: 12.38
+      cer: 0.0303
+      wer: 0.122
+    bible_00029:
+      source: bible
+      text: Pi kaa anɔkuale ɔ nɛ nyɛ li nɛ i ngɛ nyɛ womi nɛ ɔ ngmae. Dɛbi! Akɛnɛ nyɛ le anɔkuale ɔ, lɔ
+        ɔ he mohu nɛ i ngɛ nyɛ womi ɔ ngmae ɔ nɛ; nɛ nyɛ le hu kaa anɔkuale ɔ, lakpa be mi.
+      sbs: 0.7611
+      gen_sec: 13.4
+      ref_sec: 13.44
+      cer: 0.0397
+      wer: 0.0682
+    bible_00030:
+      source: bible
+      text: Ni ɔmɛ nɛ ngɛ nyɛ hɛ mi hae ɔ, nyɛ bu kaa a suɔ nyɛ; a be nyɛ he juɛmi kpakpa. A ngɛ hlae
+        nɛ a puɛ i kɛ nyɛ wa kpɛti, konɛ nyɛ gbo mɛ mohu a he dengme.
+      sbs: 0.8023
+      gen_sec: 11.35
+      ref_sec: 9.38
+      cer: 0.028
+      wer: 0.075
+    bible_00031:
+      source: bible
+      text: Nyɛ ma de ekohu ke, ‘Waa kɛ mo lɛ ye ní, nɛ waa kɛ mo lɛ nu ní; o tsɔɔ ní ngɛ wa magbɛ ɔmɛ
+        a nɔ.’
+      sbs: 0.7894
+      gen_sec: 7.0
+      ref_sec: 6.82
+      cer: 0.0923
+      wer: 0.2222
+    bible_00032:
+      source: bible
+      text: Kristo he ɔ, wa plɛ kuasiahi, se nyɛɛ lɛɛ nyɛ ba pee ní leli! Wa gbɔjɔ, se nyɛɛ lɛɛ nyɛ he
+        mi ba wa nyɛ! Nyɛ hɛ mi ba nyami, se wɔɔ lɛɛ wa hɛ mi pue si.
+      sbs: 0.823
+      gen_sec: 11.69
+      ref_sec: 11.14
+      cer: 0.0463
+      wer: 0.1316
+    bible_00033:
+      source: bible
+      text: ejakaa Mawu Ope ɔ pee ní nguanguahi ha mi.
+      sbs: 0.6393
+      gen_sec: 3.41
+      ref_sec: 3.06
+      cer: 0.1818
+      wer: 0.5556
+    bible_00034:
+      source: bible
+      text: Se bɔ nɛ ba nɛ e ngɛ nɔ hyɛe amlɔ nɛ ɔ, lɔ ɔ lɛɛ wa li; nɛ nɔmlɔ nɛ ha nɛ e bɔni nɔ́ hyɛmi
+        ɔ hu wa li lɛ. Nyɛ bi lɛ; e wa nɛ lɛ nitsɛ e ma nyɛ je munyu nya.”
+      sbs: 0.7013
+      gen_sec: 11.26
+      ref_sec: 10.54
+      cer: 0.066
+      wer: 0.1111
+    bible_00035:
+      source: bible
+      text: A pee ja niinɛ, nɛ a ngɔ sika a kɛ mane asafo nikɔtɔma amɛ kɛ gu Barnaba kɛ Saulo a nine nɔ.
+      sbs: 0.7113
+      gen_sec: 7.17
+      ref_sec: 7.7
+      cer: 0.1159
+      wer: 0.2727
+    bible_00036:
+      source: bible
+      text: Ejakaa ngmami ɔ deɔ ke, “Osɔfo ji mo kɛ yaa neneene kaa Melkizedek pɛ.”
+      sbs: 0.6852
+      gen_sec: 5.63
+      ref_sec: 5.08
+      cer: 0.2222
+      wer: 0.7143
+    bible_00037:
+      source: bible
+      text: Yi nikɔtɔma amɛ ɔ, o kɛ mɛ nɛ hi si kaa mo nitsɛ o nyɛmɛ, nɛ o kɛ yihewi ɔmɛ nɛ hi si kaa
+        o nyɛmiyihi; se hyɛ nɛ yakayaka fiɛmi kó ba je mi.
+      sbs: 0.7776
+      gen_sec: 10.75
+      ref_sec: 9.98
+      cer: 0.0784
+      wer: 0.3714
+    bible_00038:
+      source: bible
+      text: Lɔ ɔ he ɔ, a ya to Yesu gbogboe ɔ ngɛ lejɛ ɔ, ejakaa yɔkɔ ɔ he kɛ we, nɛ jehanɛ ɔ hu, jamɛ
+        a ligbi ɔ nɛ a dlaa he kɛ haa Hejɔɔmi ligbi ɔ nɛ.
+      sbs: 0.773
+      gen_sec: 10.58
+      ref_sec: 12.04
+      cer: 0.0707
+      wer: 0.1622
+    bible_00039:
+      source: bible
+      text: Se a ti ni komɛ pue nɔ kɛ ho nɛ a ya sɛɛ níhi nɛ Yesu pee ɔ ha Farisi bi ɔmɛ.
+      sbs: 0.7394
+      gen_sec: 5.63
+      ref_sec: 5.2
+      cer: 0.0364
+      wer: 0.0909
+    bible_00040:
+      source: bible
+      text: Yuda bi komɛ nɛ yee Mawu gbeye ngɛ Yerusalem jamɛ a be ɔ mi. A je je ma amɛ tsuo a mi.
+      sbs: 0.6955
+      gen_sec: 6.57
+      ref_sec: 5.68
+      cer: 0.0159
+      wer: 0.1364
+    bible_00041:
+      source: bible
+      text: Anɛ nyɛ li kaa yayami peeli be blɔ nya ko ngɛ Mawu matsɛ yemi ɔ mi lo? Nyɛ ko sisi nyɛ he!
+        Yaholi, loo amaga jali, loo gba puɛli, loo nyumuhi kɛ yihi sɔuu nɛ kɛ a sibi peeɔ yakayaka ní,
+      sbs: 0.7999
+      gen_sec: 14.76
+      ref_sec: 13.24
+      cer: 0.036
+      wer: 0.0732
+    bible_00042:
+      source: bible
+      text: Benɛ bɔfo ɔmɛ si to hyɛli ɔmɛ, nɛ a kpale kɛ ho hiɔwe ya a, to hyɛli ɔmɛ de a he ke, “Nyɛ
+        ha nɛ waa ya Betlehem, nɛ wa ya hyɛ nɔ́ nɛ ba, nɛ Nyɔmtsɛ ɔ je tsɔɔ wɔ nɛ ɔ.”
+      sbs: 0.749
+      gen_sec: 12.37
+      ref_sec: 12.18
+      cer: 0.0431
+      wer: 0.0698
+    bible_00043:
+      source: bible
+      text: Tsɛ te nɛ ngɛ nyɛ kpɛti, nɛ ke e bi bi lɛ abolo nɛ e ma ha lɛ tɛ? Aloo ke e bi lɛ lo, nɛ e
+        maa ngɔ sinɔ ngɔ pee lo ngɔ ha lɛ?
+      sbs: 0.7794
+      gen_sec: 9.13
+      ref_sec: 9.38
+      cer: 0.0233
+      wer: 0.1111
+    bible_00044:
+      source: bible
+      text: Se Natanael bi Filipo ke, “Anɛ nɔ́ kpakpa ko maa je Nazaret lo?”
+      sbs: 0.7176
+      gen_sec: 4.95
+      ref_sec: 4.34
+      cer: 0.0426
+      wer: 0.1538
+    bible_00045:
+      source: bible
+      text: Nɔ nɛ heɔ Bi ɔ yeɔ ɔ, e nine su neneene wami ɔ nɔ; se nɔ tsuaa nɔ nɛ bui Bi ɔ tue ɔ, e be
+        neneene wami nae. Mawu maa gbla e tue mohu.
+      sbs: 0.7625
+      gen_sec: 10.07
+      ref_sec: 12.54
+      cer: 0.1489
+      wer: 0.3714
+    bible_00046:
+      source: bible
+      text: Pohu ngmami ɔ nɛ de ke e sa nɛ e te si kɛ je gbeje ɔ, a nui sisi kɛ mwɔɔ.
+      sbs: 0.7553
+      gen_sec: 5.38
+      ref_sec: 4.96
+      cer: 0.0
+      wer: 0.0
+    bible_00047:
+      source: bible
+      text: Ma ya nɔ ma fĩa kɛ̃, pohu se nami ko be he. Jehanɛ lɛɛ nɔ́ nɛ he munyu nɛ ma tu ji bɔ nɛ Nyɔmtsɛ
+        Yesu Kristo je e he kpo tsɔɔ mi, kɛ e suɔmi nya níhi nɛ e tsɔɔ ke ma pee.
+      sbs: 0.7582
+      gen_sec: 12.89
+      ref_sec: 10.36
+      cer: 0.0413
+      wer: 0.0909
+    bible_00048:
+      source: bible
+      text: Nyɛɛ ngɔ nyɛ he ngɔ mɛtɛ lɛ, nɛ nyɛɛ ngɔ nyɛ he kɛ ha lɛ kulaa. Nyɛ ha nɛ nyɛ hemi kɛ yemi
+        ɔ mi nɛ wa kaa bɔ nɛ a tsɔɔ nyɛ ɔ, nɛ nyɛɛ na Mawu si daa.
+      sbs: 0.7717
+      gen_sec: 11.18
+      ref_sec: 8.68
+      cer: 0.0283
+      wer: 0.1
+    bible_00049:
+      source: bible
+      text: Kikɛ nɛ ɔ nyɛ be yi! Nɛ nyɛ ngɔ Mumi Klɔuklɔu ɔ kɛ je sisi ɔ, jehanɛ lɛɛ nyɛɛ kɛ he lo maa
+        gbe nya.
+      sbs: 0.7422
+      gen_sec: 7.59
+      ref_sec: 5.86
+      cer: 0.0972
+      wer: 0.24
+    bible_00050:
+      source: bible
+      text: E ko pee nɔ ko nɛ tsake e tsui kɛ we. Ke pi ja a, e ma wo e he nɔ, nɛ Mawu maa gbla e tue
+        kaa bɔ nɛ e pee Abosiami ɔ.
+      sbs: 0.7898
+      gen_sec: 8.53
+      ref_sec: 7.68
+      cer: 0.0125
+      wer: 0.0294
+    bible_00051:
+      source: bible
+      text: Yesu he nɔ ke, “I tuɔ munyu paa kɛ haa nɔ tsuaa nɔ. Daa nɛ ɔ, i tsɔɔ ní ngɛ kpe he ɔmɛ, kɛ
+        sɔlemi we ɔ he nɛ Yuda bi kulaa kpee ngɛ ɔ, nɛ i de we nɔ́ ko nɔ́ ko ngɛ laami mi gblee.
+      sbs: 0.7575
+      gen_sec: 13.23
+      ref_sec: 14.32
+      cer: 0.0565
+      wer: 0.0851
+    bible_00052:
+      source: bible
+      text: Kikɛmɛ a okadi nɛ ɔ nɛ e to mɛ ɔ he nɛ ma kpekpemi ɔ ya kpee lɛ ɔ nɛ.
+      sbs: 0.7097
+      gen_sec: 5.03
+      ref_sec: 4.66
+      cer: 0.0612
+      wer: 0.2
+    bible_00053:
+      source: bible
+      text: Nɔ ko hu be dee ke, ‘O nɛ, e ngɛ hiɛ ɔ;’ aloo, ‘E ngɛ lejɛ ɔ’; ejakaa Mawu matsɛ yemi ɔ, nyɛ
+        mi lɛ e ngɛ.”
+      sbs: 0.8063
+      gen_sec: 7.59
+      ref_sec: 8.84
+      cer: 0.0
+      wer: 0.0
+    bible_00054:
+      source: bible
+      text: Jehanɛ ɔ, osɔfo nɔkɔtɔma pe kulaa a nyɔguɛ ɔmɛ a ti nɔ kake, nɔ nɛ Petro po e tue ɔ weku no
+        bi Petro ke, “Anɛ i nɛ o kɛ lɛ ngɛ abɔɔ ɔ mi lo?”
+      sbs: 0.7013
+      gen_sec: 10.58
+      ref_sec: 9.2
+      cer: 0.07
+      wer: 0.2222
+    bible_00055:
+      source: bible
+      text: Benɛ ni ɔmɛ nu munyu nɛ ɔ, e hao mɛ wawɛɛ, nɛ a bi Petro kɛ bɔfo kpa amɛ nɛ piɛ e he ɔ ke,
+        “Wa nyɛmimɛ, kɛ wa maa pee kɛɛ?”
+      sbs: 0.7735
+      gen_sec: 9.13
+      ref_sec: 9.26
+      cer: 0.0471
+      wer: 0.125
+    bible_00056:
+      source: bible
+      text: Jamɛ a be ɔ mi ɔ, Kaisare Augusto fa ke a kane nihi tsuo nɛ ngɛ Roma nɔ yemi he ɔ, nɛ a ngma
+        a biɛ.
+      sbs: 0.7833
+      gen_sec: 7.51
+      ref_sec: 8.24
+      cer: 0.0423
+      wer: 0.1538
+    bible_00057:
+      source: bible
+      text: Se imi lɛɛ i na kaa e pee we nɔ́ ko nɛ sa gbenɔ. Akɛnɛ lɛ nitsɛ e ngɔ e sane ɔ kɛ ha Roma
+        matsɛ ɔ he je ɔ, i ma nya si kaa a ngɔ lɛ kɛ ya ha Roma matsɛ ɔ.
+      sbs: 0.7306
+      gen_sec: 11.18
+      ref_sec: 10.1
+      cer: 0.0467
+      wer: 0.1364
+    bible_00058:
+      source: bible
+      text: Nyɛɛ hyɛ mɔmɔhi nɛ ngɛ puɛe ha; a tsu we ní, nɛ a kpɛ we tade hulɔ. Se i ngɛ nyɛ dee ke, Matsɛ
+        Salomo kɛ e ní babauu ɔ, lɛ tete po e be miaa we kaa mɔmɔ nɛ ɔmɛ a kpɛti kake.
+      sbs: 0.7979
+      gen_sec: 13.23
+      ref_sec: 12.88
+      cer: 0.0806
+      wer: 0.1818
+    bible_00059:
+      source: bible
+      text: Jehanɛ, nyɛ nyumu kuyo ɔmɛ, kɛ yalɔyi ɔmɛ ɔ, i ngɛ dee ke e maa hi ha nyɛ ke nyɛ maa ya nɔ
+        maa hi si kikɛ nɛ ɔ kaa bɔ nɛ imi hu i ngɛ ɔ.
+      sbs: 0.7527
+      gen_sec: 10.15
+      ref_sec: 9.86
+      cer: 0.0417
+      wer: 0.0811
+    bible_00060:
+      source: bible
+      text: Osɔfo nɔkɔtɔma pe kulaa a bi Stefano ke, “Anɛ munyu nɛ ɔmɛ ngɛ mi ja lo?”
+      sbs: 0.697
+      gen_sec: 5.63
+      ref_sec: 4.46
+      cer: 0.0926
+      wer: 0.375
+    bible_00061:
+      source: bible
+      text: Nyɛɛ lɛɛ nyɛ tsɔ kɛ ya Yohane ngɔ, nɛ e ye anɔkuale ɔ he odase.
+      sbs: 0.7497
+      gen_sec: 4.95
+      ref_sec: 4.0
+      cer: 0.0638
+      wer: 0.1333
+    bible_00062:
+      source: bible
+      text: Benɛ i kɛ nyɛ ngɛ, nɛ e fi mi tete ɔ, i hɛwi nyɛ ti nɔ ko nɔ ko; nyɛmimɛ nɛ je Makedonia kɛ
+        ba a ba ha mi nɔ́ tsuaa nɔ́ nɛ hia mi. I pee we tlomi ngɛ nyɛ kuɛ nɔ. Nɛ kɛ je mwɔnɛ ɔ kɛ yaa
+        a hu i hyɛ we nyɛ yemi kɛ buami ko blɔ.
+      sbs: 0.7421
+      gen_sec: 16.72
+      ref_sec: 14.86
+      cer: 0.0828
+      wer: 0.1475
+    bible_00063:
+      source: bible
+      text: Ejakaa Mumi ɔ bɛ a ti nɔ ko nɔ lolo; se a sɔle mɛ ngɛ Nyɔmtsɛ Yesu biɛ mi kɛkɛ.
+      sbs: 0.6899
+      gen_sec: 6.06
+      ref_sec: 4.76
+      cer: 0.0862
+      wer: 0.35
+    bible_00064:
+      source: bible
+      text: Mose nɛ ɔ nɛ e kɛ Israel ma kpekpemi ɔ nɛ ji wa nɛmɛ ɔmɛ hi nga a nɔ ɔ nɛ. Lɛ nɛ e kɛ Mawu
+        bɔfo ɔ tu munyu ngɛ Sinai yo ɔ he; nɛ lɛ nɔuu nɛ e ngɔ Mawu sɛ gbi nɛ wami ngɛ mi ɔ ba ha wɔ.
+      sbs: 0.7089
+      gen_sec: 13.48
+      ref_sec: 12.04
+      cer: 0.0154
+      wer: 0.0385
+    bible_00065:
+      source: bible
+      text: Hejɔɔmi ligbi nɛ nyɛɛ se ɔ, ma a tsuo tu kɛ ba, nɛ a ba bu Nyɔmtsɛ ɔ munyu ɔ tue.
+      sbs: 0.7123
+      gen_sec: 6.14
+      ref_sec: 5.22
+      cer: 0.0172
+      wer: 0.1429
+    bible_00066:
+      source: bible
+      text: Dloomi, mɔbɔ nami, kɛ he jɔmi nɛ je Tsɛ Mawu ɔ, kɛ Tsɛ ɔ Bi Nyɔmtsɛ Yesu Kristo dɛ mi ɔ kɛ
+        wɔ nɛ hi si ngɛ anɔkuale kɛ suɔmi mi.
+      sbs: 0.7494
+      gen_sec: 9.98
+      ref_sec: 10.66
+      cer: 0.0957
+      wer: 0.2903
+    bible_00067:
+      source: bible
+      text: Nɔ tsuaa nɔ nɛ hyɛ lɛ nitsɛ e ní peepee. Ke e hi ɔ, e ma nyɛ maa fĩa ngɔ fɔ nɔ, nɛ e be hiae
+        kaa e maa ngɔ e he ngɔ to nɔ kpa he;
+      sbs: 0.7812
+      gen_sec: 9.56
+      ref_sec: 8.2
+      cer: 0.0449
+      wer: 0.0811
+    bible_00068:
+      source: bible
+      text: Se nihi tsuo nɛ he lɛ atuu, nɛ a he lɛ ye ɔ, e ha mɛ blɔ nya kaa a ba pee Mawu bimɛ.
+      sbs: 0.7676
+      gen_sec: 6.14
+      ref_sec: 6.9
+      cer: 0.0345
+      wer: 0.0833
+    bible_00069:
+      source: bible
+      text: Amlɔ ɔ nɔuu ɔ, e bɔni nɔ́ hyɛmi, nɛ e nyɛɛ Yesu se, nɛ e ngɛ Mawu yi jee. Benɛ nimli kpekpemi
+        ɔ na nɔ́ nɛ ba a, mɛ tsuo a je Mawu yi.
+      sbs: 0.7483
+      gen_sec: 9.98
+      ref_sec: 11.84
+      cer: 0.0326
+      wer: 0.0882
+    bible_00070:
+      source: bible
+      text: Se Paulo de asafoatsɛ ɔ, kɛ ta buli ɔmɛ ke, “Ke lɛ mi ní tsuli ɔmɛ je lɛ ɔ mi lɛɛ nyɛ be je
+        mi tlɔe.”
+      sbs: 0.6997
+      gen_sec: 7.51
+      ref_sec: 6.24
+      cer: 0.0423
+      wer: 0.1154
+    bible_00071:
+      source: bible
+      text: Timoteo, hyɛ mo nitsɛ o he nɔ saminya; nɔ́ nɛ o ngɛ tsɔɔe ɔ hu hyɛ nɔ bɔ nɛ sa. Ejakaa ke
+        o pee ja a, o ma he mo nitsɛ o yi wami, kɛ nihi nɛ buɔ mo tue ɔ hulɔ.
+      sbs: 0.7909
+      gen_sec: 11.86
+      ref_sec: 13.28
+      cer: 0.0631
+      wer: 0.119
+    bible_00072:
+      source: bible
+      text: Wa mlaa a nya a, Mose fa ke, ‘Yo kaa kikɛ nɛ ɔ, a fia lɛ tɛ nɛ e gbo.’ Moo lɛɛ kɛ o ngɛ dee
+        kɛɛ?”
+      sbs: 0.6852
+      gen_sec: 6.91
+      ref_sec: 6.7
+      cer: 0.1429
+      wer: 0.2593
+    bible_00073:
+      source: bible
+      text: E fɔɔ si paa kaa nɔ nɛ nɔ kuɔ lɛ gbaa nɔ nɛ ngɛ e sisi.
+      sbs: 0.7011
+      gen_sec: 4.01
+      ref_sec: 4.4
+      cer: 0.3077
+      wer: 0.375
+    bible_00074:
+      source: bible
+      text: Yuda bi ɔmɛ nɛ ba Maria ngɔ ɔ, a ti nihi babauu na nɔ nɛ Yesu pee ɔ, nɛ a he lɛ ye.
+      sbs: 0.7658
+      gen_sec: 6.14
+      ref_sec: 6.54
+      cer: 0.0345
+      wer: 0.087
+    bible_00075:
+      source: bible
+      text: Se ke wa he nile buɔ wɔ fɔ ɔ, wa le kaa Mawu kle pe wa he nile ɔ, nɛ e le nɔ́ tsuaa nɔ́ hulɔ.
+      sbs: 0.8033
+      gen_sec: 6.66
+      ref_sec: 6.84
+      cer: 0.0635
+      wer: 0.1538
+    bible_00076:
+      source: bible
+      text: Paulo hla kaa e kɛ Timoteo nɛ ya; lɔ ɔ he ɔ, e po lɛ. E pee ja ejakaa Yuda bi tsuo nɛ ngɛ
+        lejɛ ɔ kpokpa a nɔ ɔ le kaa Timoteo tsɛ ɔ Hela no ji lɛ.
+      sbs: 0.7616
+      gen_sec: 11.01
+      ref_sec: 10.06
+      cer: 0.0577
+      wer: 0.2051
+    bible_00077:
+      source: bible
+      text: Kɛkɛ nɛ Yesu ba kɛ̃ abolo ɔ, nɛ e ngɔ ha mɛ. Nɛ e ha mɛ lo ɔ hulɔ.
+      sbs: 0.716
+      gen_sec: 4.86
+      ref_sec: 5.06
+      cer: 0.0682
+      wer: 0.2105
+    bible_00078:
+      source: bible
+      text: Mlaa tsɔɔli ɔmɛ, kɛ Farisi bi ɔmɛ ngɔ yo ko nɛ ya ngɛ ajuama bɔe nɛ a nu lɛ kɛ ba, nɛ a kɛ
+        lɛ ba da ma a tsuo hɛ mi.
+      sbs: 0.7103
+      gen_sec: 8.62
+      ref_sec: 9.3
+      cer: 0.0732
+      wer: 0.4375
+    bible_00079:
+      source: bible
+      text: Se kɛ̃ ɔ, i kpa nyɛ pɛɛ, nyɛ na tsui! Nyɛ ti nɔ ko nɔ ko be gboe. Lɛ ɔ kɛkɛ nɛ ma bɔ wɔ.
+      sbs: 0.778
+      gen_sec: 6.49
+      ref_sec: 6.84
+      cer: 0.0345
+      wer: 0.08
+    bible_00080:
+      source: bible
+      text: Ma mi bi ɔmɛ a ti nihi babauu he Yesu ye, lɔ ɔ he ɔ, a bi ke, “Anɛ Mesia a nɛ maa ba a ma
+        nyɛ to okadi pe nɔmlɔ nɛ ɔ lo?”
+      sbs: 0.7084
+      gen_sec: 8.7
+      ref_sec: 9.7
+      cer: 0.0366
+      wer: 0.0882
+    bible_00081:
+      source: bible
+      text: Yuda bi ɔmɛ bi Yesu ke, “Ke wa de ke Samaria no ji mo, nɛ mumi yayami ngɛ o mi ɔ, wa tɔ lo?”
+      sbs: 0.7495
+      gen_sec: 6.83
+      ref_sec: 7.0
+      cer: 0.0635
+      wer: 0.1667
+    bible_00082:
+      source: bible
+      text: Mɛni he je nɛ o ngɛ tsle toe? Tee si nɛ o ha a sɔle mo ngɛ Nyɔmtsɛ ɔ biɛ mi, nɛ o kpa Mawu
+        pɛɛ nɛ e ngɔ o he yayami kɛ pa mo.’
+      sbs: 0.7504
+      gen_sec: 9.22
+      ref_sec: 7.52
+      cer: 0.0455
+      wer: 0.2286
+    bible_00083:
+      source: bible
+      text: Kuasiahi! Mawu nɛ pee kpo nɔ je ɔ, pi lɛ nɔuu nɛ pee mi mi je ɔ hulɔ ɔ?
+      sbs: 0.7452
+      gen_sec: 5.38
+      ref_sec: 4.68
+      cer: 0.06
+      wer: 0.1579
+    bible_00084:
+      source: bible
+      text: Lɔ ɔ he ɔ, moo tsɔ nihi kɛ ya Yopa, nɛ o ya kpee Simon nɛ a tsɛɛ lɛ Petro hulɔ ɔ kɛ ba.
+      sbs: 0.6729
+      gen_sec: 6.49
+      ref_sec: 6.52
+      cer: 0.0984
+      wer: 0.1667
+    bible_00085:
+      source: bible
+      text: Mawu ngɔɛ blema bi ɔmɛ a he ngɔ ki mɛ, se mohu e ngɔ nyu kpekpemi kɛ kpata yayami peeli ɔmɛ
+        a hɛ mi. Noa nɛ fiɛ ke a ye dami sane ɔ, e kɛ ni kpaago kpa komɛ pɛ lɛ Mawu he a yi wami.
+      sbs: 0.6983
+      gen_sec: 13.82
+      ref_sec: 12.98
+      cer: 0.0682
+      wer: 0.2391
+    bible_00086:
+      source: bible
+      text: To kɛ na muɔ, kɛ na bi nɛ a sã a la zu ji níhi nɛ a kɛ fĩaa nihi nɛ ble a he ɔ a nɔ, nɛ a
+        kɛ tsuɔ a nɔmlɔ tso ɔ he ngɛ he lo blɔ fa mi.
+      sbs: 0.7333
+      gen_sec: 9.73
+      ref_sec: 11.66
+      cer: 0.0879
+      wer: 0.1429
+    bible_00087:
+      source: bible
+      text: Kaseli ɔmɛ de ke, “Nyɔmtsɛ, hyɛ! Klaate enyɔ ngɛ hiɛ ɔ!”
+      sbs: 0.7393
+      gen_sec: 4.44
+      ref_sec: 4.34
+      cer: 0.1
+      wer: 0.1818
+    bible_00088:
+      source: bible
+      text: lɛɛ be nɛ ɔ mi nɛ Mumi Klɔuklɔu ɔ ngɛ ní tsue ɔ, anɛ Mawu hɛ mi nyami ɔ be kpɛe kulaa pe kekle
+        ɔ lo?
+      sbs: 0.7227
+      gen_sec: 7.59
+      ref_sec: 5.64
+      cer: 0.0822
+      wer: 0.2308
+    bible_00089:
+      source: bible
+      text: Benɛ Farisi bi ɔmɛ nu nɛ ma kpekpemi ɔ ngɛ Yesu he munyu tue kusikusi ɔ, a kɛ osɔfo nikɔtɔma
+        amɛ tsɔ nihi ke a ya nu lɛ kɛ ba.
+      sbs: 0.6955
+      gen_sec: 9.81
+      ref_sec: 8.58
+      cer: 0.0316
+      wer: 0.2333
+    bible_00090:
+      source: bible
+      text: Nyɛ hlaa ngmami ɔmɛ a mi, ejakaa nyɛ susuɔ kaa a mi nyɛ ma na neneene wami ngɛ; nɛ lɔ ɔmɛ
+        nɔuu yeɔ ye he odase.
+      sbs: 0.7445
+      gen_sec: 8.7
+      ref_sec: 8.76
+      cer: 0.0241
+      wer: 0.1923
+    bible_00091:
+      source: bible
+      text: ejakaa lɛ nitsɛ e ye odase ke, “A bui gbalɔ ngɛ lɛ nitsɛ e ma mi.”
+      sbs: 0.757
+      gen_sec: 4.95
+      ref_sec: 4.72
+      cer: 0.0426
+      wer: 0.0625
+    bible_00092:
+      source: bible
+      text: Wa nɛ̃ Yakob nɛ ha wɔ kikɛmɛ a vu nɛ ɔ; nɛ lɛ nitsɛ, kɛ e bimɛ, kɛ e lohwehi tsuo nu e mi
+        nyu. Anɛ o ngɛ hlae nɛ o tsɔɔ kaa moo o pe Yakob ɔ lo?”
+      sbs: 0.7369
+      gen_sec: 10.75
+      ref_sec: 10.08
+      cer: 0.06
+      wer: 0.2308
+    bible_00093:
+      source: bible
+      text: Yesu he nɔ ke, “Tse i de nyɛ momo nɛ nyɛ he we yi! Tsaatsɛ he wami nya nɛ i tsuɔ ní nɛ ɔmɛ,
+        nɛ níhi nɛ i tsuɔ ɔ yeɔ ye he odase.
+      sbs: 0.769
+      gen_sec: 9.56
+      ref_sec: 8.66
+      cer: 0.0667
+      wer: 0.1471
+    bible_00094:
+      source: bible
+      text: Benɛ a kpale ya lejɛ ɔ si enyɔne ɔ, Yosef je e he si ngɔ ha e nyɛmimɛ ɔmɛ, nɛ Egipt matsɛ
+        ɔ hu ba le Yosef weku ɔ.
+      sbs: 0.7271
+      gen_sec: 8.7
+      ref_sec: 7.68
+      cer: 0.012
+      wer: 0.1034
+    bible_00095:
+      source: bible
+      text: kɛ ya su ligbi nɛ a ngɔ lɛ kɛ ho hiɔwe ya. Loko a ngɔ lɛ kɛ ho hiɔwe ya a, e gu Mumi Klɔuklɔu
+        ɔ nɔ nɛ e tsɔɔ bɔfohi nɛ e hla a mlaa nɛ a ye nɔ.
+      sbs: 0.7646
+      gen_sec: 10.58
+      ref_sec: 10.24
+      cer: 0.0396
+      wer: 0.1
+    bible_00096:
+      source: bible
+      text: se nɔ nɛ maa nu nyu nɛ imi ma ha lɛ ɔ, kuma be lɛ yee hu gblegbleegble. Ejakaa nyu nɛ ma ha
+        lɛ ɔ ma plɛ nyu hɛngmɛ nɛ baa nyu nɛ haa nɔ wami kɛ yaa neneene ngɛ e mi.”
+      sbs: 0.7589
+      gen_sec: 12.63
+      ref_sec: 11.5
+      cer: 0.0909
+      wer: 0.2381
+    bible_00097:
+      source: bible
+      text: Bi nɛ e kɛ yo nyɔguɛ ɔ fɔ ɔ, a fɔ lɛ kɛkɛ; se bi nɛ yo odehe ɔ fɔ ɔ, Mawu wo e he si.
+      sbs: 0.7472
+      gen_sec: 6.06
+      ref_sec: 5.98
+      cer: 0.0714
+      wer: 0.1923
+    bible_00098:
+      source: bible
+      text: Se ke Mawu dɛ mi nɛ e je ɔ, nyɛ be Mawu nɔ nyɛe maa ye. Nyɛ ko ba pee nyɛ he kaa nihi nɛ a
+        kɛ Mawu ngɛ ta hwue!”
+      sbs: 0.686
+      gen_sec: 8.19
+      ref_sec: 6.66
+      cer: 0.0897
+      wer: 0.1935
+    bible_00099:
+      source: bible
+      text: Enɛ ɔmɛ tsuo a se ɔ, nyɛ ha suɔmi nɛ pee kaa tade nɛ nyɛ wo, ejakaa suɔmi ngɛ kaa kpa nɛ fiɔ
+        níhi tsuo ngɔ peeɔ kake, nɛ lɛ tsuo peeɔ pɛ.
+      sbs: 0.7707
+      gen_sec: 10.67
+      ref_sec: 8.54
+      cer: 0.0396
+      wer: 0.1212
+    jw_00000:
+      source: jw
+      text: Suɔmi Yeɔ Bua Wɔ Nɛ Wa Daa Ninyɛ Nya
+      sbs: 0.6218
+      gen_sec: 2.82
+      ref_sec: 4.14
+      cer: 0.6071
+      wer: 1.2222
+    jw_00001:
+      source: jw
+      text: MƐNI LƐ HAA NƐ KRISTOFO NO BUA JƆƆ?
+      sbs: 0.6485
+      gen_sec: 2.82
+      ref_sec: 4.0
+      cer: 0.2593
+      wer: 0.625
+    jw_00002:
+      source: jw
+      text: Mo pia o he ngɛ o yayamihi a he, nɛ o pee tsakemi ngɛ o si himi mi
+      sbs: 0.6746
+      gen_sec: 4.95
+      ref_sec: 5.93
+      cer: 0.0625
+      wer: 0.1667
+    jw_00003:
+      source: jw
+      text: MOO KASE MATSƐ DAVID NƆ HYƐMI NƆ́ Ɔ
+      sbs: 0.6263
+      gen_sec: 2.73
+      ref_sec: 4.21
+      cer: 0.8148
+      wer: 1.125
+    jw_00004:
+      source: jw
+      text: NƆ́ NƐ E SA NƐ O PEE LOKO A BAPTISI MO
+      sbs: 0.6307
+      gen_sec: 2.73
+      ref_sec: 4.56
+      cer: 0.2593
+      wer: 0.5455
+    jw_00005:
+      source: jw
+      text: Yehowa Nɛ Ji Wa Tsɛ ɔ Suɔ Wɔ Wawɛɛ
+      sbs: 0.6538
+      gen_sec: 2.65
+      ref_sec: 4.95
+      cer: 0.2308
+      wer: 0.6667
+    jw_00006:
+      source: jw
+      text: Mɛni weku yi ko ma nyɛ maa pee kɛ tsɔɔ kaa e baa e he si?
+      sbs: 0.6794
+      gen_sec: 4.27
+      ref_sec: 4.38
+      cer: 0.0732
+      wer: 0.125
+    jw_00007:
+      source: jw
+      text: 'Marie-Line: Daa Hɔɛgbi ɔ, wa jɔɔ wa he, nɛ wa dlaa wa he kɛ haa asafo mi kpehi. Kɛ je Pɛplɛgbi
+        kɛ yaa a, wa yaa fiɛɛmi.'
+      sbs: 0.7462
+      gen_sec: 9.47
+      ref_sec: 10.03
+      cer: 0.1977
+      wer: 0.2593
+    jw_00008:
+      source: jw
+      text: A ‘FƆ MƐ EKOHU’
+      sbs: 0.5544
+      gen_sec: 1.02
+      ref_sec: 3.27
+      cer: 0.5
+      wer: 1.0
+    jw_00009:
+      source: jw
+      text: A FƆ MI NINE KAA MA SƆMƆ KAA KPƆ MI NƆ HYƐLƆ
+      sbs: 0.6638
+      gen_sec: 3.33
+      ref_sec: 4.75
+      cer: 0.1515
+      wer: 0.25
+    jw_00010:
+      source: jw
+      text: 'LOKO A MAA BAPTISI MO:'
+      sbs: 0.6955
+      gen_sec: 1.79
+      ref_sec: 4.97
+      cer: 0.2353
+      wer: 0.8
+    jw_00011:
+      source: jw
+      text: NYƐƐ “DI NÍHI NƐ NGƆƆ TUE MI JƆMI KƐ BAA” A SE
+      sbs: 0.6149
+      gen_sec: 3.33
+      ref_sec: 4.63
+      cer: 0.1515
+      wer: 0.25
+    jw_00012:
+      source: jw
+      text: Anɛ o pia o he ngɛ yayamihi nɛ o pee ɔmɛ a he, nɛ o jɔɔ o he nɔ kɛ ha Yehowa, nɛ o kplɛɛ nɔ
+        kaa Yesu Kristo nɔ nɛ Yehowa guɔ kɛ heɔ nɔ yi wami lo?
+      sbs: 0.7257
+      gen_sec: 11.01
+      ref_sec: 10.9
+      cer: 0.1238
+      wer: 0.3333
+    jw_00013:
+      source: jw
+      text: WA NÍ TSUMI EHE KƐ E MI NYAGBAHI
+      sbs: 0.5939
+      gen_sec: 2.47
+      ref_sec: 3.76
+      cer: 0.6
+      wer: 1.0
+    jw_00014:
+      source: jw
+      text: O Ma Nyɛ Maa Pee Nɔ Nɛ Woɔ Ni Kpahi ‘A Bua Wawɛɛ Nitsɛ’
+      sbs: 0.706
+      gen_sec: 4.01
+      ref_sec: 4.44
+      cer: 0.125
+      wer: 0.3571
+    jw_00015:
+      source: jw
+      text: asafo mi nɔkɔtɔma ji mo?
+      sbs: 0.6576
+      gen_sec: 1.96
+      ref_sec: 3.06
+      cer: 0.3684
+      wer: 0.8
+    jw_00016:
+      source: jw
+      text: YEHOWA HA WƆ TA BULI A HE PIƐ POMI NÍHI
+      sbs: 0.646
+      gen_sec: 2.99
+      ref_sec: 4.45
+      cer: 0.4333
+      wer: 0.8
+    jw_00017:
+      source: jw
+      text: MƐNI MA NYƐ MA HA NƐ WAA PEE YEYEEYE?
+      sbs: 0.6126
+      gen_sec: 2.9
+      ref_sec: 4.0
+      cer: 0.1786
+      wer: 0.4444
+    jw_00018:
+      source: jw
+      text: ANƐ E SA NƐ WAA HAO KAA NIHI NƐ A YEƆ ABOLO Ɔ NƐ A NUƆ WAI Ɔ A YIBƆ NGƐ HƐ MI YAE LO?
+      sbs: 0.7087
+      gen_sec: 6.14
+      ref_sec: 7.66
+      cer: 0.2667
+      wer: 0.6
+    jw_00019:
+      source: jw
+      text: Ngɛ mɛni blɔhi a nɔ nɛ Yehowa tsɔɔ kaa e susuɔ wa he, nɛ e suɔ wɔ?
+      sbs: 0.6988
+      gen_sec: 5.03
+      ref_sec: 5.5
+      cer: 0.2708
+      wer: 0.5882
+    jw_00020:
+      source: jw
+      text: Mɛni níhi ekpa nɛ wa ma nyɛ maa pee nɛ maa ye bua wɔ konɛ waa pee kpoo?
+      sbs: 0.71
+      gen_sec: 5.46
+      ref_sec: 5.94
+      cer: 0.0566
+      wer: 0.2778
+    jw_00021:
+      source: jw
+      text: KE BAIBLO KASELƆ KO BƆNI ASAFO MI KPEHI YAMI
+      sbs: 0.6606
+      gen_sec: 3.67
+      ref_sec: 5.15
+      cer: 0.1389
+      wer: 0.5556
+    jw_00022:
+      source: jw
+      text: Moo to blɔ nya ko nɛ ma kai mo. Mo set alarm ngɛ o klama a nɔ konɛ e kai mo nɛ o kane Baiblo
+        ɔ daa ligbi.
+      sbs: 0.6845
+      gen_sec: 7.94
+      ref_sec: 8.7
+      cer: 0.2368
+      wer: 0.5
+    jw_00023:
+      source: jw
+      text: Ngɛ mɛni blɔ nɔ nɛ blema níhi nɛ a tsua si nɛ a na a yeɔ he odase kaa Belshazar hi si hyɛ
+        ngɛ Babilon?
+      sbs: 0.6557
+      gen_sec: 7.94
+      ref_sec: 3.48
+      cer: 0.1169
+      wer: 0.24
+    jw_00024:
+      source: jw
+      text: Loko o sɔlemi maa nu tso ɔ, mɛni ji ní komɛ nɛ o ma nyɛ maa pee?
+      sbs: 0.7219
+      gen_sec: 4.86
+      ref_sec: 5.51
+      cer: 0.0435
+      wer: 0.1176
+    jw_00025:
+      source: jw
+      text: Sane Bimi Enyɔ Nɛ O Ma Ha Heto Ngɛ Ligbi Nɛ A Maa Baptisi Mo ɔ Nɔ
+      sbs: 0.6736
+      gen_sec: 4.95
+      ref_sec: 7.49
+      cer: 0.1429
+      wer: 0.3529
+    jw_00026:
+      source: jw
+      text: bwɔmi ha we nɛ waa pee babauu?
+      sbs: 0.6109
+      gen_sec: 2.39
+      ref_sec: 3.1
+      cer: 0.3043
+      wer: 0.4286
+    jw_00027:
+      source: jw
+      text: HE DUMI KO NƐ NGƐ SLƆƆTO
+      sbs: 0.6872
+      gen_sec: 1.88
+      ref_sec: 3.81
+      cer: 0.1053
+      wer: 0.1667
+    jw_00028:
+      source: jw
+      text: MOO SU BAIBLO KASELƆ Ɔ TSUI HE
+      sbs: 0.5364
+      gen_sec: 2.39
+      ref_sec: 3.84
+      cer: 0.5
+      wer: 1.0
+    jw_00029:
+      source: jw
+      text: Mɛni he je nɛ e he hia wawɛɛ kaa wa maa su wa Baiblo kaseli ɔmɛ a tsui he, nɛ mɛni blɔ nɔ
+        wa maa gu kɛ pee jã?
+      sbs: 0.6919
+      gen_sec: 8.45
+      ref_sec: 7.42
+      cer: 0.05
+      wer: 0.1724
+    jw_00030:
+      source: jw
+      text: Nɔ́ Nɛ O Maa Pee Konɛ O Sɔlemi Nɛ Nu Tso
+      sbs: 0.6518
+      gen_sec: 2.9
+      ref_sec: 4.09
+      cer: 0.4828
+      wer: 0.6364
+    jw_00031:
+      source: jw
+      text: Mɛni níhi nɛ e sa nɛ weku yi nɛ ha e weku mi bimɛ?
+      sbs: 0.6575
+      gen_sec: 3.75
+      ref_sec: 4.17
+      cer: 0.0833
+      wer: 0.2857
+    jw_00032:
+      source: jw
+      text: KƐ NƆ KO MA PLƐ KƐ LE KAA A PƆ LƐ NU HA KƐƐ?
+      sbs: 0.6635
+      gen_sec: 3.16
+      ref_sec: 5.02
+      cer: 0.2
+      wer: 0.3571
+    jw_00033:
+      source: jw
+      text: E MA BI NƐ O KƐ LƐ NƐ KPA NÍ KASEMI Ɔ LO?
+      sbs: 0.6747
+      gen_sec: 2.9
+      ref_sec: 4.49
+      cer: 0.1429
+      wer: 0.2308
+    jw_00034:
+      source: jw
+      text: WA HIA KƐ YA ZUGBA KPƆ KPA MI
+      sbs: 0.6102
+      gen_sec: 2.22
+      ref_sec: 3.75
+      cer: 0.5
+      wer: 0.625
+    jw_00035:
+      source: jw
+      text: WA BUA JƆƆ KE A NYƐ WƆ
+      sbs: 0.5576
+      gen_sec: 1.62
+      ref_sec: 3.78
+      cer: 0.6875
+      wer: 1.0
+    jw_00036:
+      source: jw
+      text: KEKLEEKLE BE NƐ I KUƆ YOKU
+      sbs: 0.6501
+      gen_sec: 2.13
+      ref_sec: 4.04
+      cer: 0.2857
+      wer: 1.0
+    jw_00037:
+      source: jw
+      text: MOO HƐ MO KƐ SU MAWU HE NƐ O YA NƆ NƐ O NÁ BUA JƆMI
+      sbs: 0.6292
+      gen_sec: 3.67
+      ref_sec: 5.27
+      cer: 0.1667
+      wer: 0.375
+    jw_00038:
+      source: jw
+      text: MOO BU YEHOWA TUE KƐ TSƆƆ KAA O SUƆ LƐ
+      sbs: 0.6335
+      gen_sec: 2.9
+      ref_sec: 4.32
+      cer: 0.3103
+      wer: 0.5
+    jw_00039:
+      source: jw
+      text: KE O PIƐƐ BAIBLO TSƆƆLƆ HE NƐ NYƐƐ KƐ NƆ KO NGƐ BAIBLO Ɔ KASEE
+      sbs: 0.67
+      gen_sec: 4.86
+      ref_sec: 6.01
+      cer: 0.5833
+      wer: 0.8667
+    jw_00040:
+      source: jw
+      text: Mɛni blɔ nɔ wa ma nyɛ maa gu kɛ je mi mi himi kpo mwɔnɛ ɔ?
+      sbs: 0.6585
+      gen_sec: 4.35
+      ref_sec: 4.19
+      cer: 0.0952
+      wer: 0.375
+    jw_00041:
+      source: jw
+      text: SUƆMI NƐ WA NGƐ KƐ HA YEHOWA A YEƆ BUA WƆ NƐ WA DAA NINYƐ NYA
+      sbs: 0.6822
+      gen_sec: 4.61
+      ref_sec: 6.08
+      cer: 0.1522
+      wer: 0.3125
+    jw_00042:
+      source: jw
+      text: Ke sane bimi nɛ ɔmɛ a heto ɔ ji ee ɔ, lɛɛ e sa nɛ nyɛmiyo ɔ nɛ ha e yi nɔ. Se ke heto ɔ ji
+        dɛbi ɔ, lɛɛ e he hia we nɛ e ha e yi nɔ. *
+      sbs: 0.6994
+      gen_sec: 9.47
+      ref_sec: 10.04
+      cer: 0.0909
+      wer: 0.225
+    jw_00043:
+      source: jw
+      text: ANƐ o suɔ nɛ a baptisi mo kaa Kristo kaselɔ lo? Suɔmi kɛ hɛsa kpo jemi wo nihi fuu he wami
+        nɛ a ha nɛ a baptisi mɛ. Mo susu Etiopia manyɛ ɔ sɔmɔlɔ ɔ nɔ hyɛmi nɔ́ ɔ he nɛ o hyɛ.
+      sbs: 0.6924
+      gen_sec: 13.48
+      ref_sec: 14.07
+      cer: 0.1231
+      wer: 0.4651
+    jw_00044:
+      source: jw
+      text: LOKO WA MA NYƐ MAA DA NINYƐ NYA A, MƐNI HE JE NƐ E SA NƐ . . .
+      sbs: 0.7546
+      gen_sec: 4.44
+      ref_sec: 4.43
+      cer: 0.1
+      wer: 0.3125
+    jw_00045:
+      source: jw
+      text: Asafo Kuu Ngua a Nɛ A Piɛɛ Jijɔ Kpa Amɛ A He ɔ Jeɔ Mawu Kɛ Kristo Yi
+      sbs: 0.6755
+      gen_sec: 5.12
+      ref_sec: 6.37
+      cer: 0.098
+      wer: 0.2778
+    jw_00046:
+      source: jw
+      text: Mo Ha Nɛ Suɔmi Nɛ O Ngɛ Kɛ Ha Yehowa a Nɛ Ha Nɛ A Baptisi Mo
+      sbs: 0.644
+      gen_sec: 4.44
+      ref_sec: 6.46
+      cer: 0.5682
+      wer: 0.8235
+    jw_00047:
+      source: jw
+      text: Mɛni he je nɛ tɔmi ko be he kaa wa maa pee yeyeeye be komɛ ɔ?
+      sbs: 0.6632
+      gen_sec: 4.61
+      ref_sec: 4.07
+      cer: 0.0889
+      wer: 0.1875
+    jw_00048:
+      source: jw
+      text: LÉONCE CRÉPEAULT NYA MI MUNYU
+      sbs: 0.6071
+      gen_sec: 2.73
+      ref_sec: 3.39
+      cer: 0.92
+      wer: 1.6
+    jw_00049:
+      source: jw
+      text: MOO KASE MATSƐ YEHOSHAFAT
+      sbs: 0.6622
+      gen_sec: 2.22
+      ref_sec: 3.85
+      cer: 0.2727
+      wer: 0.75
+    jw_00050:
+      source: jw
+      text: Nihewi—Mɛni Nyɛ Maa Pee Konɛ Ni Kpahi Nɛ A Ná Nyɛ Mi Hɛ Kɛ Nɔ Fɔmi?
+      sbs: 0.658
+      gen_sec: 5.29
+      ref_sec: 6.3
+      cer: 0.18
+      wer: 0.625
+    jw_00051:
+      source: jw
+      text: NƆ́ NƐ E SA NƐ O PEE NGƐ O BAPTISIMI SE
+      sbs: 0.6362
+      gen_sec: 2.82
+      ref_sec: 4.78
+      cer: 0.1071
+      wer: 0.1818
+    jw_00052:
+      source: jw
+      text: Wa Suɔ Yehowa Nɛ Ji Wa Tsɛ ɔ Wawɛɛ
+      sbs: 0.7044
+      gen_sec: 2.65
+      ref_sec: 4.32
+      cer: 0.2308
+      wer: 0.5556
+    jw_00053:
+      source: jw
+      text: Ngɛ mɛni blɔ nɔ nɛ he blɔ nɛ wekuyihi ngɛ ɔ ngɛ slɔɔto ngɛ he blɔ nɛ asafo mi nikɔtɔmahi ngɛ ɔ
+        he?
+      sbs: 0.6736
+      gen_sec: 7.68
+      ref_sec: 6.28
+      cer: 0.1067
+      wer: 0.4348
+    jw_00054:
+      source: jw
+      text: Mɛni blɔ nɔ wa maa gu kɛ ye bua wa Baiblo kaseli ɔmɛ konɛ a ya a hɛ mi?
+      sbs: 0.7061
+      gen_sec: 5.38
+      ref_sec: 4.66
+      cer: 0.0769
+      wer: 0.2105
+    jw_00055:
+      source: jw
+      text: MOO YE BUA NI KPAHI NƐ A SUƆ WA TSƐ Ɔ
+      sbs: 0.6404
+      gen_sec: 2.73
+      ref_sec: 4.23
+      cer: 0.1481
+      wer: 0.3636
+    jw_00056:
+      source: jw
+      text: Ke o pue o yi mi tɛ ngɛ sɔlemihi nɛ a ngma ngɛ Baiblo ɔ mi ɔ a he ɔ, kɛ e maa ye bua mo ha
+        kɛɛ?
+      sbs: 0.7088
+      gen_sec: 6.91
+      ref_sec: 7.53
+      cer: 0.0909
+      wer: 0.1786
+    jw_00057:
+      source: jw
+      text: NƆ́ NƐ E SA NƐ O LE NGƐ HE NƆ JƆƆMI KƐ BAPTISIMI HE
+      sbs: 0.638
+      gen_sec: 3.75
+      ref_sec: 5.38
+      cer: 0.4324
+      wer: 0.7143
+    jw_00058:
+      source: jw
+      text: Mɛni lɛ wo nyɛ he wami nɛ nyɛɛ kɛ nyɛ he wo be tsuo sɔmɔmi ní tsumi ɔ mi?
+      sbs: 0.6731
+      gen_sec: 5.55
+      ref_sec: 6.03
+      cer: 0.0741
+      wer: 0.2105
+    jw_00059:
+      source: jw
+      text: Ke waa kɛ kahi ngɛ kpee ɔ, mɛni maa ye bua wɔ nɛ waa ya nɔ nɛ wa ná bua jɔmi?
+      sbs: 0.6878
+      gen_sec: 5.8
+      ref_sec: 5.8
+      cer: 0.1091
+      wer: 0.3333
+    jw_00060:
+      source: jw
+      text: Anɛ e sa nɛ waa hao kaa nihi nɛ a yeɔ abolo ɔ nɛ a nuɔ wai ɔ ngɛ Kaimi ɔ sisi ɔ a yibɔ ngɛ
+        hɛ mi yae lo?
+      sbs: 0.7007
+      gen_sec: 7.59
+      ref_sec: 8.64
+      cer: 0.2162
+      wer: 0.5
+    jw_00061:
+      source: jw
+      text: MOO YE BUA O BAIBLO KASELƆ Ɔ KONƐ E WA NGƐ MUMI MI
+      sbs: 0.6724
+      gen_sec: 3.84
+      ref_sec: 5.33
+      cer: 0.3421
+      wer: 0.7692
+    jw_00062:
+      source: jw
+      text: NƆ́ NƐ WA MA NYƐ MAA KASE NGƐ MATSƐ DAVID HE
+      sbs: 0.5948
+      gen_sec: 3.33
+      ref_sec: 4.06
+      cer: 0.5758
+      wer: 0.5455
+    jw_00063:
+      source: jw
+      text: Kɛ wa ma plɛ kɛ suɔ Yehowa ha kɛɛ?
+      sbs: 0.6228
+      gen_sec: 2.65
+      ref_sec: 3.05
+      cer: 0.28
+      wer: 0.5556
+    jw_00064:
+      source: jw
+      text: O Kɛ Bua Jɔmi Ma Nyɛ Maa Da Kahi A Nya
+      sbs: 0.6088
+      gen_sec: 2.82
+      ref_sec: 3.85
+      cer: 0.4643
+      wer: 1.0
+    jw_00065:
+      source: jw
+      text: SUƆMI NƐ WA NGƐ KƐ HA WA NYƐMIMƐ ƆMƐ YEƆ BUA WƆ NƐ WA NYƐ DAA NINYƐ NYA
+      sbs: 0.6589
+      gen_sec: 5.46
+      ref_sec: 7.07
+      cer: 0.1667
+      wer: 0.2778
+    jw_00066:
+      source: jw
+      text: KOO YE GBEYE KAA O MAA SƆLE KƐ HA YEHOWA
+      sbs: 0.6499
+      gen_sec: 3.16
+      ref_sec: 4.72
+      cer: 0.2258
+      wer: 0.6
+    jw_00067:
+      source: jw
+      text: Mɛni nyagbahi nɛ ma nyɛ ma puɛ bua jɔmi nɛ wa ngɛ ɔ?
+      sbs: 0.6056
+      gen_sec: 4.01
+      ref_sec: 4.57
+      cer: 0.4359
+      wer: 0.6154
+    jw_00068:
+      source: jw
+      text: Mɛni e sa nɛ o pee ngɛ o baptisimi se?
+      sbs: 0.6127
+      gen_sec: 2.9
+      ref_sec: 4.39
+      cer: 0.3214
+      wer: 0.5
+    jw_00069:
+      source: jw
+      text: Ngɛ mɛni blɔ nɔ nɛ blema ningma ko maa nɔ mi kaa Baiblo ɔ mi munyuhi ji anɔkuale?
+      sbs: 0.6651
+      gen_sec: 6.49
+      ref_sec: 8.17
+      cer: 0.1587
+      wer: 0.5556
+    jw_00070:
+      source: jw
+      text: Kɛ nɔ ko ma plɛ kɛ le kaa a pɔ lɛ nu ha kɛɛ?
+      sbs: 0.673
+      gen_sec: 3.16
+      ref_sec: 4.3
+      cer: 0.2
+      wer: 0.3571
+    jw_00071:
+      source: jw
+      text: MO SƆMƆ NI KPAHI KAA BƆ NƐ MARKO PEE Ɔ
+      sbs: 0.6889
+      gen_sec: 2.9
+      ref_sec: 4.8
+      cer: 0.2069
+      wer: 0.5
+    jw_00072:
+      source: jw
+      text: YEHOWA JI TSƐ NƐ NGƐ SUƆMI NƐ SUSUƆ NƆ HE
+      sbs: 0.6374
+      gen_sec: 3.24
+      ref_sec: 4.66
+      cer: 0.6562
+      wer: 1.2
+    jw_00073:
+      source: jw
+      text: Nyɛ pɔɔ fiɛɛmi ngɛ zugba kpɔhi nɛ a tsɔ a he banee ɔ a mi. Anɛ nyɛ kai nɔ́ ko nɛ sa kadimi
+        ngɛ nyɛ blɔ hiami ɔ eko mi lo?
+      sbs: 0.7004
+      gen_sec: 9.13
+      ref_sec: 10.61
+      cer: 0.125
+      wer: 0.4194
+    jw_00074:
+      source: jw
+      text: MOO KASE HE SI BAMI NƐ O BUA NƐ JƆ NÍHI NƐ O NGƐ Ɔ HE
+      sbs: 0.6585
+      gen_sec: 3.84
+      ref_sec: 5.62
+      cer: 0.1579
+      wer: 0.25
+    jw_00075:
+      source: jw
+      text: NGƐ MƐNI BLƆ NƆ NƐ YEHOWA TSƆƆ KAA WA HE JUA WA HA LƐ KE . . .
+      sbs: 0.7601
+      gen_sec: 4.52
+      ref_sec: 4.32
+      cer: 0.0238
+      wer: 0.3333
+    jw_00076:
+      source: jw
+      text: YE HUNO Ɔ GBO
+      sbs: 0.705
+      gen_sec: 1.02
+      ref_sec: 3.08
+      cer: 0.2
+      wer: 0.75
+    jw_00077:
+      source: jw
+      text: fiɛɛlɔ ko fɔ mo nine kaa o piɛɛ e he nɛ nyɛɛ kɛ nɔ ko nɛ ya kase Baiblo ɔ?
+      sbs: 0.6758
+      gen_sec: 5.55
+      ref_sec: 5.96
+      cer: 0.1667
+      wer: 0.3
+    jw_00078:
+      source: jw
+      text: MOO SUƆ WA TSƐ Ɔ NƐ O BUA NƐ JƆ
+      sbs: 0.5351
+      gen_sec: 2.22
+      ref_sec: 4.11
+      cer: 0.4091
+      wer: 0.7
+    jw_00079:
+      source: jw
+      text: NÍ KOMƐ NƐ MAA YE BUA MO
+      sbs: 0.5324
+      gen_sec: 1.79
+      ref_sec: 3.3
+      cer: 0.5
+      wer: 1.0
+    jw_00080:
+      source: jw
+      text: ANƐ NYUMU FƐƐ NYUMU JI YI KƐ HA YIHI TSUO NƐ A NGƐ ASAFO Ɔ MI Ɔ LO?
+      sbs: 0.6641
+      gen_sec: 5.03
+      ref_sec: 5.96
+      cer: 0.102
+      wer: 0.1667
+    jw_00081:
+      source: jw
+      text: 'Tɛ sa nɔ zu: Nɔ ko kaa jã a haa nɛ nɔ nyɛmi loo si temi kɛ womi nɛ huɛmɛ loo weku li kɛ baa
+        e nɔ ɔ ha nɛ e nyɛ we nɛ e bu Yehowa tue, nɛ e kɛ je mi bami he mlaahi nɛ Yehowa wo ɔ tsu we ní.'
+      sbs: 0.6928
+      gen_sec: 14.33
+      ref_sec: 14.98
+      cer: 0.1504
+      wer: 0.3962
+    jw_00082:
+      source: jw
+      text: JACK KƐ MARIE-LINE BERGAME A NYA MI MUNYU
+      sbs: 0.5809
+      gen_sec: 3.41
+      ref_sec: 4.44
+      cer: 0.7879
+      wer: 1.25
+    jw_00083:
+      source: jw
+      text: FIAA O PƐƐ SI KAA O MAA WO NI KPAHI A BUA
+      sbs: 0.5828
+      gen_sec: 2.99
+      ref_sec: 4.23
+      cer: 0.2333
+      wer: 0.5833
+    jw_00084:
+      source: jw
+      text: NÍHI EKPA NƐ MAA YE BUA WƆ NƐ WAA PEE KPOO
+      sbs: 0.6567
+      gen_sec: 3.24
+      ref_sec: 4.41
+      cer: 0.3438
+      wer: 0.8182
+    jw_00085:
+      source: jw
+      text: WA NINE SU OTI NƐ WAA KƐ MA WA HƐ MI Ɔ NƆ
+      sbs: 0.6693
+      gen_sec: 2.9
+      ref_sec: 4.62
+      cer: 0.2414
+      wer: 0.2308
+    jw_00086:
+      source: jw
+      text: WA HE JUA WA HA YEHOWA
+      sbs: 0.6665
+      gen_sec: 1.71
+      ref_sec: 3.7
+      cer: 0.1176
+      wer: 0.5
+    jw_00087:
+      source: jw
+      text: Kane Mawu Munyu ɔ daa nɛ o pue o yi mi tɛ ngɛ he
+      sbs: 0.6148
+      gen_sec: 3.5
+      ref_sec: 4.15
+      cer: 0.0571
+      wer: 0.1429
+    jw_00088:
+      source: jw
+      text: MƐNI JI YI YEMI?
+      sbs: 0.54
+      gen_sec: 1.28
+      ref_sec: 3.16
+      cer: 0.4167
+      wer: 1.25
+    jw_00089:
+      source: jw
+      text: Mɛni níhi nɛ peeɔ ta buli a he piɛ pomi ní ɔmɛ ɔ? (Hyɛ daka nɛ ji, “ Mɛni Ji Ta Buli A He
+        Piɛ Pomi Ní Nɛ Je Mawu Ngɔ ɔ? ”)
+      sbs: 0.7367
+      gen_sec: 8.96
+      ref_sec: 10.48
+      cer: 0.0964
+      wer: 0.2581
+    jw_00090:
+      source: jw
+      text: MƐNI MA NYƐ MAA NGƆ HƐKƆ KƐ BA?
+      sbs: 0.6255
+      gen_sec: 2.39
+      ref_sec: 3.67
+      cer: 0.3478
+      wer: 0.625
+    jw_00091:
+      source: jw
+      text: Mɛni o kase ngɛ bɔ nɛ Yehowa, Yonatan kɛ David je suɔmi kpo ha a mi?
+      sbs: 0.67
+      gen_sec: 5.38
+      ref_sec: 5.65
+      cer: 0.1373
+      wer: 0.375
+    jw_00092:
+      source: jw
+      text: 'Marie-Line: E be gbɔjɔɔ kaa nɔ ko maa hia kɛ ya he ko. Se e he hia kaa o ma ná he ko nɛ o he
+        maa jɔ mo ngɛ ke ji o je fiɛɛmi kɛ ba.'
+      sbs: 0.7339
+      gen_sec: 9.64
+      ref_sec: 9.51
+      cer: 0.1648
+      wer: 0.1892
+    jw_00093:
+      source: jw
+      text: Kɛ e sa kaa nihi nɛ a pɔ mɛ nu ɔ nɛ a na a he ha kɛɛ?
+      sbs: 0.6752
+      gen_sec: 3.67
+      ref_sec: 4.75
+      cer: 0.1714
+      wer: 0.2778
+    jw_00094:
+      source: jw
+      text: Mɛni he je nɛ wa ma nyɛ ma ná nɔ mi mami kaa wa Tsɛ ɔ be wɔ kuae gblegbleegble?
+      sbs: 0.6965
+      gen_sec: 6.06
+      ref_sec: 5.21
+      cer: 0.322
+      wer: 0.45
+    jw_00095:
+      source: jw
+      text: “Nyumu Fɛɛ Nyumu Yi Ji Kristo”
+      sbs: 0.6847
+      gen_sec: 2.3
+      ref_sec: 3.25
+      cer: 0.087
+      wer: 0.1667
+    jw_00096:
+      source: jw
+      text: Nyɛɛ Pee Kpoo Nɛ Nyɛɛ Ngɔ Nyɛ Hɛ Kɛ Fɔ Yehowa Nɔ
+      sbs: 0.6742
+      gen_sec: 3.75
+      ref_sec: 3.88
+      cer: 0.6216
+      wer: 0.9167
+    jw_00097:
+      source: jw
+      text: Ke O Ji Nyumu Nɛ O Sɛ Gba Si Himi Mi Ehe ɔ, Mɛni O Ma Nyɛ Maa Pee Konɛ O Yo Nɛ Je Bumi Kpo
+        Kɛ Tsɔɔ Mo?
+      sbs: 0.7127
+      gen_sec: 7.51
+      ref_sec: 9.06
+      cer: 0.0139
+      wer: 0.1034
+    jw_00098:
+      source: jw
+      text: Kɛ mumi klɔuklɔu ɔ ma nyɛ maa ye bua wɔ ha kɛɛ konɛ wa nyɛ nɛ waa hwu kɛ si hɛkɔ?
+      sbs: 0.6961
+      gen_sec: 6.14
+      ref_sec: 6.27
+      cer: 0.1333
+      wer: 0.2857
+    jw_00099:
+      source: jw
+      text: Mɛni e sa nɛ o pee loko a baptisi mo?
+      sbs: 0.6299
+      gen_sec: 2.82
+      ref_sec: 4.15
+      cer: 0.4444
+      wer: 0.9
 - model: Google/gemini-3.1-flash-tts-preview
   model_url: https://ai.google.dev/gemini-api/docs/speech-generation
   mode: noref
@@ -17079,4 +18786,4 @@ benchmarks:
       ref_sec: 4.15
       cer: 0.1111
       wer: 0.5
-updated: '2026-10-01'
+updated: '2026-10-09'

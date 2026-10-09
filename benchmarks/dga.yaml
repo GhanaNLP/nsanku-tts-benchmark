@@ -8776,6 +8776,1759 @@ benchmarks:
       ref_sec: 22.47
       cer: 0.0308
       wer: 0.2778
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.6738
+  num_scored: 200
+  cer: 0.1474
+  wer: 0.3314
+  accuracy: 0.8526
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.7632
+  score: 0.7632
+  per_source:
+    bible:
+      sbs: 0.7194
+      cer: 0.0603
+      n: 67
+    jw:
+      sbs: 0.665
+      cer: 0.2564
+      n: 67
+    waxal:
+      sbs: 0.6365
+      cer: 0.1251
+      n: 66
+  entries:
+    bible_00000:
+      source: bible
+      text: Ka maa bare ba ne a kɔŋ ka ba kulo, ba na yĩĩe la a sobiriŋ, bonso, ba mine yi la tentɔbɔ
+        a wa.
+      sbs: 0.682
+      gen_sec: 7.51
+      ref_sec: 7.66
+      cer: 0.0882
+      wer: 0.2083
+    bible_00001:
+      source: bible
+      text: Yɛ puoro korɔ te meŋ a yɛ puoruu poɔ ka Naaŋmen yuo sori ko te ka te moɔle a Kirista yelsɔglaa
+        na eŋɛ N naŋ be a nempagdie poɔ, ka ka N na toɔ̃ manne a weliweli ka a sãã a seŋ N naŋ na manne
+        a lɛ.
+      sbs: 0.7219
+      gen_sec: 15.7
+      ref_sec: 13.16
+      cer: 0.0548
+      wer: 0.0833
+    bible_00002:
+      source: bible
+      text: A Yeezu naŋ da gɛrɛ Gyɛruzɛlɛm, O da kpɛ la a teŋkponni ane a tembilii poore a kanna a noba
+        gɛrɛ.
+      sbs: 0.7548
+      gen_sec: 7.68
+      ref_sec: 7.54
+      cer: 0.0267
+      wer: 0.0476
+    bible_00003:
+      source: bible
+      text: A Naaŋmen Bagmaale Wederebɛ Nembɛrɛ Zusoba Naŋ Soore Yeezu Soorebie.
+      sbs: 0.6223
+      gen_sec: 5.97
+      ref_sec: 8.22
+      cer: 0.0345
+      wer: 0.3
+    bible_00004:
+      source: bible
+      text: A yelderebɛ naŋ yi a be naŋ da wa woŋ a te yɛlɛ, ba da yi la Apeyo Daa Poɔ ane Teree Taavens
+        ka ba tuori te.
+      sbs: 0.7608
+      gen_sec: 8.36
+      ref_sec: 9.66
+      cer: 0.0875
+      wer: 0.2222
+    bible_00005:
+      source: bible
+      text: Azuiŋ, yɛ ta daŋ di sɛrɛɛ kyɛ ka a saŋ ba ta; kyɛ ka a Daana waabo naŋ ba ta sɛre.
+      sbs: 0.7328
+      gen_sec: 6.49
+      ref_sec: 5.84
+      cer: 0.0339
+      wer: 0.0476
+    bible_00006:
+      source: bible
+      text: O naŋ da wa pɔge te a Azɔ poɔ, o da kpɛ la a gbori ka te gaa Mitelen.
+      sbs: 0.6945
+      gen_sec: 5.12
+      ref_sec: 6.46
+      cer: 0.0408
+      wer: 0.1053
+    bible_00007:
+      source: bible
+      text: Ba da lɔɔ o la bare ka o sigi wa a teŋɛzu, a lɔɔ a o malekere meŋ poɔ o eŋɛ.
+      sbs: 0.7578
+      gen_sec: 5.8
+      ref_sec: 6.06
+      cer: 0.0
+      wer: 0.0
+    bible_00008:
+      source: bible
+      text: Ka a toŋkpeɛne ama naŋ toŋ fo poɔ, da toŋ Sodom teŋɛ poɔ, o da na kyɛnɛ bebe la wa ta zenɛ.
+      sbs: 0.7286
+      gen_sec: 7.42
+      ref_sec: 7.3
+      cer: 0.0
+      wer: 0.0
+    bible_00009:
+      source: bible
+      text: Azuiŋ, yɛ tɔglɔ Naaŋmen yɛ naŋ waa O poyɛŋ biiri, a taa nɔmmo aŋa lɛ a Kirista naŋ da nɔŋ
+        te lɛ, a de O meŋɛ tere ka ba maale ne bagre naŋ nyuuro noɔ Naaŋmen zie.
+      sbs: 0.7533
+      gen_sec: 13.48
+      ref_sec: 11.66
+      cer: 0.0164
+      wer: 0.0541
+    bible_00010:
+      source: bible
+      text: A banaŋ naŋ da zo yaare da yi yoɔrɔ la, a moɔlɔ a yelbiri.
+      sbs: 0.7355
+      gen_sec: 4.61
+      ref_sec: 5.66
+      cer: 0.1163
+      wer: 0.1429
+    bible_00011:
+      source: bible
+      text: N poyɛŋ noba, nɔpaalaa naane ka N sɛgrɛ korɔ yɛ, kyɛ a nɔkoraa na yɛ naŋ da taa yi a piiluu
+        saŋ la.
+      sbs: 0.7675
+      gen_sec: 7.85
+      ref_sec: 8.0
+      cer: 0.0135
+      wer: 0.0435
+    bible_00012:
+      source: bible
+      text: ” Ka Yeezu da yeli, “Yɛ e ka a noba zeŋ teŋɛ.
+      sbs: 0.6634
+      gen_sec: 3.33
+      ref_sec: 14.68
+      cer: 0.0
+      wer: 0.0
+    bible_00013:
+      source: bible
+      text: Wola pãã ka a weɛ soba na e a wɛkaareba ŋa?
+      sbs: 0.714
+      gen_sec: 3.5
+      ref_sec: 3.42
+      cer: 0.125
+      wer: 0.1818
+    bible_00014:
+      source: bible
+      text: Ba naŋ wa te kpeɛrɛ a die, ba da nyɛ la a bie ne O ma Mareya, ka ba da gbi dumo a puori O
+        ne emmo, kyɛ yuo ba woore a ko O kyɔɔtaare; salema, ensɛnse ane turaali.
+      sbs: 0.7688
+      gen_sec: 12.37
+      ref_sec: 14.46
+      cer: 0.0678
+      wer: 0.1282
+    bible_00015:
+      source: bible
+      text: Ona la boɔrɔ ka neɛzaa nyɛ faabo a kyɛ wa baŋ a yelmeŋɛ.
+      sbs: 0.6871
+      gen_sec: 4.52
+      ref_sec: 3.56
+      cer: 0.1395
+      wer: 0.0769
+    bible_00016:
+      source: bible
+      text: O naŋ da wono tuo, O da ba yeli yɛlɛ tɔ dabeɛ̃ eŋ neɛzaa; kyɛ O da dɛle la a soba na naŋ maŋ
+        di sɛrɛɛ ne mennoŋ.
+      sbs: 0.7343
+      gen_sec: 8.87
+      ref_sec: 9.4
+      cer: 0.0617
+      wer: 0.1429
+    bible_00017:
+      source: bible
+      text: O naŋ da wa ta a mane noɔre, O da nyɛ la nembeɛoŋ ka ba nembaaloŋ kpɛ O yaga, ka O da saŋ
+        a ba baalba.
+      sbs: 0.7027
+      gen_sec: 8.02
+      ref_sec: 7.14
+      cer: 0.0135
+      wer: 0.0385
+    bible_00018:
+      source: bible
+      text: A Yeezu pãã da leɛ soore ba la, “Yɛ buo soba la ka o bie bee o naadɛre na le bulee poɔ a pɛnnoo
+        bebiri daare ka o koŋ page iri o a bulee poɔ?
+      sbs: 0.7125
+      gen_sec: 10.75
+      ref_sec: 11.3
+      cer: 0.1154
+      wer: 0.2286
+    bible_00019:
+      source: bible
+      text: Pɔɔl Naŋ Puori A Filipae Deme Yaane.
+      sbs: 0.6355
+      gen_sec: 3.07
+      ref_sec: 5.12
+      cer: 0.0
+      wer: 0.0
+    bible_00020:
+      source: bible
+      text: Bonso, ba da ba sage de a banaŋ zaa naŋ da wa yeli a O kuuni poɔ leɛ-iruu yɛlɛ ko ba.
+      sbs: 0.7533
+      gen_sec: 6.57
+      ref_sec: 5.86
+      cer: 0.0323
+      wer: 0.0476
+    bible_00021:
+      source: bible
+      text: ” Ba da do la a sazu a zunzugri poɔ ka a ba dɔndɔnne da kaara ba.
+      sbs: 0.6892
+      gen_sec: 4.69
+      ref_sec: 4.64
+      cer: 0.0426
+      wer: 0.0625
+    bible_00022:
+      source: bible
+      text: Serɛzaa, a ba fere ka te de danseɛ gama wa ne yɛ zie, bee a de kaŋ yi yɛ zie, aŋa ba mine
+        naŋ maŋ e lɛ, bee a ferɛɛ la?
+      sbs: 0.7614
+      gen_sec: 9.22
+      ref_sec: 9.14
+      cer: 0.0119
+      wer: 0.0323
+    bible_00023:
+      source: bible
+      text: Ka maa de n boma zaa poŋ ko nembaalba, a de n eŋɛ tere ka ba nyege vũũ poɔ ka ka N na toɔ̃
+        duoro n meŋɛ, kyɛ ba taa nɔmmo, N koŋ nyɛ tɔnɔ zaa.
+      sbs: 0.7443
+      gen_sec: 11.18
+      ref_sec: 11.2
+      cer: 0.0686
+      wer: 0.1111
+    bible_00024:
+      source: bible
+      text: Kyɛ a saŋ Naaŋmen naŋ da kaa-iri ma sɛre kyɛ ka ba wa dɔge ma, O poɔ da pɛlɛɛ la ka O tu O
+        garaaseɛ zie a boɔle ma, a iri a O Bidɔɔ wuli ma, ka a lɛ e ka N moɔle O yɛlɛ a Nemboore-yobo
+        poɔ.
+      sbs: 0.7596
+      gen_sec: 14.34
+      ref_sec: 14.04
+      cer: 0.0368
+      wer: 0.0625
+    bible_00025:
+      source: bible
+      text: Kyɛ a ŋaa la ka yɛ mine da waa, kyɛ ka ba da pɛge yɛ.
+      sbs: 0.717
+      gen_sec: 3.93
+      ref_sec: 3.38
+      cer: 0.0541
+      wer: 0.0667
+    bible_00026:
+      source: bible
+      text: Ba naŋ da laŋ ũũ yɛ ne O a suobu poɔ, lɛ meŋ la ka ba e ka yɛ ne O leɛ-iri a yɛ yeldeebo yɛ
+        naŋ taa a Naaŋmen kpeɛ̃õ zuiŋ, O naŋ da e ka a Kirista leɛ-iri yi a kũũ poɔ.
+      sbs: 0.7623
+      gen_sec: 13.57
+      ref_sec: 11.32
+      cer: 0.0252
+      wer: 0.0455
+    bible_00027:
+      source: bible
+      text: Ka fõõ meŋɛ soore o, fo na nyɛ la ka a yɛlɛ zaa te naŋ yeli kyaare ne o waa la a lɛ.
+      sbs: 0.7109
+      gen_sec: 6.49
+      ref_sec: 5.82
+      cer: 0.0667
+      wer: 0.087
+    bible_00028:
+      source: bible
+      text: “Daana, a piiluu saŋ, fõõ la iri a teŋɛ.
+      sbs: 0.6764
+      gen_sec: 3.41
+      ref_sec: 3.28
+      cer: 0.1071
+      wer: 0.1111
+    bible_00029:
+      source: bible
+      text: Bebie ata puoriŋ, a Pɔɔl da boɔle la a Gyuumine nembɛrɛ naŋ da be a be lantaa.
+      sbs: 0.7188
+      gen_sec: 6.23
+      ref_sec: 5.56
+      cer: 0.0
+      wer: 0.0
+    bible_00030:
+      source: bible
+      text: A Maleke Na Naŋ Taa A Ganlee Yɛlɛ.
+      sbs: 0.6095
+      gen_sec: 2.73
+      ref_sec: 3.8
+      cer: 0.0
+      wer: 0.0
+    bible_00031:
+      source: bible
+      text: Nɔmmo maŋ taa la teɛretɔroo ne yelzaa kyɛ maŋ di kannyiri ne yelzaa.
+      sbs: 0.7241
+      gen_sec: 5.72
+      ref_sec: 3.94
+      cer: 0.0182
+      wer: 0.0769
+    bible_00032:
+      source: bible
+      text: N naŋ da wa nyɛ O, N da le vɔgle la muro O gbɛɛ puliŋ a waa ŋa neɛ naŋ kpi.
+      sbs: 0.7634
+      gen_sec: 5.8
+      ref_sec: 5.86
+      cer: 0.0943
+      wer: 0.1905
+    bible_00033:
+      source: bible
+      text: Ba da te nyɛ la a yaa noɔre kuuri ka ba billi bare, kyɛ ba naŋ da te kpɛ a yaa poɔ, ba da
+        ba nyɛ a Daana Yeezu eŋɛ.
+      sbs: 0.7626
+      gen_sec: 8.7
+      ref_sec: 7.96
+      cer: 0.012
+      wer: 0.0333
+    bible_00034:
+      source: bible
+      text: A Yeezu naŋ da wa nyɛ a dɔɔ baala ka o gaŋ a be, kyɛ ka O da baŋ ka o gaŋ la a be ka a kɔɔre,
+        O da soore la a dɔɔ, “Fo boɔrɔ la ka fo nyɛ laafeɛ be?
+      sbs: 0.7231
+      gen_sec: 10.84
+      ref_sec: 12.62
+      cer: 0.0196
+      wer: 0.0238
+    bible_00035:
+      source: bible
+      text: Ba e la a teŋɛzu noba, lɛnso ka bon ba naŋ yele waa a teŋɛzu yɛlɛ, ka a teŋɛzu noba pãã maŋ
+        kyɛllɛ wono ba yɛlɛ.
+      sbs: 0.7437
+      gen_sec: 9.3
+      ref_sec: 8.84
+      cer: 0.0714
+      wer: 0.0769
+    bible_00036:
+      source: bible
+      text: Lɛ la ka o da boɔle o a soore o, ‘Boŋ la ka N wono kyaare ne fo ya?
+      sbs: 0.7055
+      gen_sec: 4.78
+      ref_sec: 4.14
+      cer: 0.1087
+      wer: 0.1579
+    bible_00037:
+      source: bible
+      text: Yɛ kaa a Izerayɛl biiri nyɛ; a banaŋ naŋ maŋ di a Naaŋmen bagmaale boma, ba ba maŋ waa a Naaŋmen
+        bagmaalkuuri laŋne deme be?
+      sbs: 0.7408
+      gen_sec: 10.58
+      ref_sec: 7.62
+      cer: 0.0619
+      wer: 0.16
+    bible_00038:
+      source: bible
+      text: Kyɛ N na ko la a N dansediribe bayi naŋ su boɔre kparre kpeɛ̃õ ka ba yeli Ŋmen-yelmanna yelyelii
+        bebie turi dɔgle kɔɔraayi ne lezaata.
+      sbs: 0.6842
+      gen_sec: 11.18
+      ref_sec: 12.4
+      cer: 0.028
+      wer: 0.2
+    bible_00039:
+      source: bible
+      text: Te sɛgrɛ la a yɛlɛ ama ka ka a te kyelloo na paale.
+      sbs: 0.7751
+      gen_sec: 3.84
+      ref_sec: 3.98
+      cer: 0.0526
+      wer: 0.0769
+    bible_00040:
+      source: bible
+      text: ka ba da de O do ne sazu ne puubu.
+      sbs: 0.6248
+      gen_sec: 2.47
+      ref_sec: 4.84
+      cer: 0.125
+      wer: 0.2
+    bible_00041:
+      source: bible
+      text: Bonso, neɛ naŋ da waa gbaŋgbaa kyɛ ka ba boɔle o a Daana eŋɛ, so la o meŋɛ a waa a Daana soobo
+        aŋa neɛ naŋ da so o meŋɛ a saŋ ba naŋ da boɔle o ka o leɛ a Kirista gbaŋgbaa lɛ.
+      sbs: 0.7426
+      gen_sec: 14.08
+      ref_sec: 13.7
+      cer: 0.0155
+      wer: 0.0227
+    bible_00042:
+      source: bible
+      text: A pɛnnoo bebiri kaŋ daare Yeezu naŋ da kyɛnɛ te tu kyi weɛ poɔ, a O potuuribo da kɔɔ la a
+        kazuri mine a ŋmeɛnɛ ne ba nuuri ɔɔrɔ.
+      sbs: 0.7248
+      gen_sec: 10.15
+      ref_sec: 10.12
+      cer: 0.0612
+      wer: 0.2069
+    bible_00043:
+      source: bible
+      text: Yɛ gu yɛmenne yi a nensaal-baare zie, a gu yɛmenne yi a yelfa-erebɛ zie, a gu yɛmenne yi a
+        banaŋ naŋ maŋ kyerɛ noba eŋgama zie!
+      sbs: 0.7563
+      gen_sec: 10.5
+      ref_sec: 9.92
+      cer: 0.1031
+      wer: 0.1923
+    bible_00044:
+      source: bible
+      text: 'Azuiŋ la ka ba yeli: “Gɔŋgbire, iri!'
+      sbs: 0.7355
+      gen_sec: 3.07
+      ref_sec: 3.24
+      cer: 0.2308
+      wer: 0.2857
+    bible_00045:
+      source: bible
+      text: Pampana te ba de a andonɛɛ vooroŋ, kyɛ te de la a Vooroŋ na naŋ yi Naaŋmen zie, ka lɛ vɛŋ
+        ka te na toɔ̃ baŋ a kyɔɔtaare na Naaŋmen naŋ ko te.
+      sbs: 0.7361
+      gen_sec: 11.52
+      ref_sec: 9.46
+      cer: 0.019
+      wer: 0.0303
+    bible_00046:
+      source: bible
+      text: Bebie yaga ka te da mɔŋ a gbori bale bale a da di dɔgɛɛ kyɛ te ta Sinidu.
+      sbs: 0.7101
+      gen_sec: 5.63
+      ref_sec: 5.94
+      cer: 0.0909
+      wer: 0.2778
+    bible_00047:
+      source: bible
+      text: ” A daadaalɛ ka a bie saa ŋmɛ kpɛlle a yeli, “N sage deɛ la, soŋ a n yeldeebo naŋ ba seŋ bon.
+      sbs: 0.685
+      gen_sec: 7.17
+      ref_sec: 14.94
+      cer: 0.0152
+      wer: 0.0455
+    bible_00048:
+      source: bible
+      text: Kyɛ pampana ŋa, N yele korɔ yɛ la ka yɛ nyɔge yɛmenne, bonso yɛ kanzaa koŋ wɛ, ka a gbori
+        yoŋ naane.
+      sbs: 0.6942
+      gen_sec: 8.11
+      ref_sec: 6.46
+      cer: 0.04
+      wer: 0.0909
+    bible_00049:
+      source: bible
+      text: Kyɛ a Gyuumine da erɛ la nyuuri, ka zɔɔŋmareba mine naŋ da be a daa poɔ da wa poɔ ba poɔ a
+        soŋ ba ka ba da dɔ̃ɔ̃ a teŋɛ.
+      sbs: 0.7326
+      gen_sec: 9.3
+      ref_sec: 9.82
+      cer: 0.023
+      wer: 0.0333
+    bible_00050:
+      source: bible
+      text: Kyɛ o naŋ da woŋ ka Akyilɔ la leɛre o saa Hɛrɔde zu a di a Gyudiya naaloŋ, a Yuzɛb da zoro
+        la dabeɛ̃ ka o gaa a be.
+      sbs: 0.7404
+      gen_sec: 8.79
+      ref_sec: 8.9
+      cer: 0.0476
+      wer: 0.1379
+    bible_00051:
+      source: bible
+      text: Yeezu Naŋ Koŋ A Gyɛruzɛlɛm Teŋɛ Yɛlɛ.
+      sbs: 0.627
+      gen_sec: 3.24
+      ref_sec: 10.58
+      cer: 0.0
+      wer: 0.0
+    bible_00052:
+      source: bible
+      text: A Yeezu Kirista Sããkommine Yɛlɛ.
+      sbs: 0.645
+      gen_sec: 2.9
+      ref_sec: 5.8
+      cer: 0.0741
+      wer: 0.6
+    bible_00053:
+      source: bible
+      text: O da kyerɛ la ka ka a naŋ wa taa eebo, ka o ta Gyɛruzɛlɛm a Pɛnteko bebiri daare.
+      sbs: 0.729
+      gen_sec: 6.23
+      ref_sec: 6.64
+      cer: 0.0492
+      wer: 0.1579
+    bible_00054:
+      source: bible
+      text: Yɛ de fentere wa eŋ o nubiriŋ, kyɛ de nɔɔteɛ wa eŋ o gbɛɛŋ.
+      sbs: 0.7245
+      gen_sec: 4.95
+      ref_sec: 4.32
+      cer: 0.0909
+      wer: 0.2143
+    bible_00055:
+      source: bible
+      text: Yelmeŋɛ zaa, te naŋ da be yɛ zie, te da daŋ yeli ko yɛ la ka te na nyɛ la dɔgɛɛ; ka a da e
+        a lɛ seŋ yɛ naŋ da baŋ.
+      sbs: 0.7556
+      gen_sec: 8.79
+      ref_sec: 9.18
+      cer: 0.0506
+      wer: 0.0312
+    bible_00056:
+      source: bible
+      text: Yɛ ta gaa a Samareya noba meŋ teŋɛ kanzaa, kyɛ yɛ gaa a Izerayɛl peere naŋ bɔre na zie.
+      sbs: 0.7611
+      gen_sec: 7.08
+      ref_sec: 7.02
+      cer: 0.1045
+      wer: 0.1579
+    bible_00057:
+      source: bible
+      text: haali a banaŋ naŋ kyɔge O ne a kpane; kyɛ a tendaa nemboorɔ zaa na koŋ la O yɛlɛ.
+      sbs: 0.743
+      gen_sec: 6.49
+      ref_sec: 5.42
+      cer: 0.0164
+      wer: 0.0526
+    bible_00058:
+      source: bible
+      text: Moɔ nimiri kanna a gansoŋ korɔ noba, a yele yɛlɛ teɛrɛ ba, kyɛ kanna ba te ta saŋ na N naŋ
+        na wa.
+      sbs: 0.7301
+      gen_sec: 7.68
+      ref_sec: 7.12
+      cer: 0.0417
+      wer: 0.087
+    bible_00059:
+      source: bible
+      text: Tensogɔ koŋ la bebe; ba koŋ la boɔrɔ fentelɛ bee ŋmenaa veɛloŋ, bonso, a Daana Naaŋmen na
+        la a ba veɛloŋ kyɛ ka ba di naaloŋ tegitegilɛ.
+      sbs: 0.7033
+      gen_sec: 11.52
+      ref_sec: 10.54
+      cer: 0.0472
+      wer: 0.1111
+    bible_00060:
+      source: bible
+      text: Ka a soba ŋa ne o zu wa e fo faa gbɛre boyopoi bebi-yeni poɔ, kyɛ leɛ wa fo zie gbɛre boyopoi
+        a wa yeli, ‘N sããɛ la’, a ferɛɛ la ka fo di suuri ko o.
+      sbs: 0.7611
+      gen_sec: 11.26
+      ref_sec: 11.34
+      cer: 0.1226
+      wer: 0.1081
+    bible_00061:
+      source: bible
+      text: A zuyɔɔ-derebɛ ane yelbe-erebɛ zaa da tagra tara la a Yeezu zie ka ba woŋ O yɛlɛ.
+      sbs: 0.6897
+      gen_sec: 6.49
+      ref_sec: 5.42
+      cer: 0.0968
+      wer: 0.1765
+    bible_00062:
+      source: bible
+      text: A Farazii kaŋ da bebe la ka o yuori di Nikodemu.
+      sbs: 0.6835
+      gen_sec: 3.84
+      ref_sec: 3.44
+      cer: 0.2703
+      wer: 0.5455
+    bible_00063:
+      source: bible
+      text: Ka a Yeezu soore a bie saa, “O naŋ maŋ erɛ a ŋaa kɔɔre seŋ la wola?
+      sbs: 0.6896
+      gen_sec: 5.29
+      ref_sec: 4.66
+      cer: 0.1042
+      wer: 0.2353
+    bible_00064:
+      source: bible
+      text: N ba baŋ ne yeli zaa naŋ do ma, kyɛ lɛ naane so ka N ba taa saanaa.
+      sbs: 0.7331
+      gen_sec: 5.12
+      ref_sec: 4.9
+      cer: 0.0208
+      wer: 0.1111
+    bible_00065:
+      source: bible
+      text: Ka fõõ boɔle fo tɔsoba, ‘Neŋlaane ŋa’, a seŋ ka ba de fo lɔɔ eŋ dazugovũũ poɔ.
+      sbs: 0.7435
+      gen_sec: 6.74
+      ref_sec: 7.08
+      cer: 0.1579
+      wer: 0.2941
+    bible_00066:
+      source: bible
+      text: 'Lɛ la ka N da woŋ kɔkɔre kaŋ a saluoni poɔ ka o yele: “N noba, yɛ wa yi o poɔ.'
+      sbs: 0.7401
+      gen_sec: 5.8
+      ref_sec: 6.26
+      cer: 0.0741
+      wer: 0.1429
+    jw_00000:
+      source: jw
+      text: TA WA TERƐ SORI KA NEƐZAA VƐNƐ KA SAGEDIIBU HO NAŊ TAA A LAŊNOƆRE PUORUU EŊƐŊ NA SIGRE TEŊƐ
+      sbs: 0.6771
+      gen_sec: 7.68
+      ref_sec: 7.79
+      cer: 0.0548
+      wer: 0.3158
+    jw_00001:
+      source: jw
+      text: YƐLƐ TE NAŊ NA ZANNE
+      sbs: 0.6509
+      gen_sec: 1.62
+      ref_sec: 3.08
+      cer: 0.25
+      wer: 0.6
+    jw_00002:
+      source: jw
+      text: VƐŊ KA HO TEƐROŊ GAŊ KA HO NAŊ KYƐNƐ SIGRI HO MEŊƐ MEŊ
+      sbs: 0.6855
+      gen_sec: 4.69
+      ref_sec: 4.96
+      cer: 0.4524
+      wer: 0.6154
+    jw_00003:
+      source: jw
+      text: YƐLƐ TE NAŊ NA ZANNE
+      sbs: 0.6453
+      gen_sec: 1.62
+      ref_sec: 3.25
+      cer: 0.25
+      wer: 0.6
+    jw_00004:
+      source: jw
+      text: A maŋ kyɛrɛɛ fẽẽ ka N nyɛ accident, kyɛbee N maŋ de la a lɔɔre te va boma mine naŋ are?
+      sbs: 0.7138
+      gen_sec: 7.08
+      ref_sec: 8.08
+      cer: 0.2
+      wer: 0.3333
+    jw_00005:
+      source: jw
+      text: GYOOB YƐLƐ ŊA NA BAŊ SOŊ TEŊ KA TE NYƆGRƆ TE MENNE
+      sbs: 0.6273
+      gen_sec: 4.1
+      ref_sec: 5.44
+      cer: 0.0256
+      wer: 0.25
+    jw_00006:
+      source: jw
+      text: Bon nanso ka Naaŋmen tere sori teŋ dire dɔgɛɛ
+      sbs: 0.6541
+      gen_sec: 3.84
+      ref_sec: 4.74
+      cer: 0.2432
+      wer: 0.5556
+    jw_00007:
+      source: jw
+      text: Sobuoŋ ka a Baabole vɛŋ teŋ baŋ peɛlaaŋ ka ka Jehoovaŋ wa di suuri ko te, a ba la seŋ ka te
+        vɛŋ ka a dɔnnɔ te?
+      sbs: 0.7296
+      gen_sec: 9.05
+      ref_sec: 8.01
+      cer: 0.1341
+      wer: 0.2222
+    jw_00008:
+      source: jw
+      text: Hulda Da Toɔ̃ Ta La Yɛlɛ Na Oŋ Da De Biŋ O Nimitɔɔreŋ Na
+      sbs: 0.6651
+      gen_sec: 4.52
+      ref_sec: 4.72
+      cer: 0.0714
+      wer: 0.1429
+    jw_00009:
+      source: jw
+      text: Jehoova da wuli teŋ ka o sereŋ eɛ siri ka o kaa te zu. Yɛlɛ yoŋ aŋ da seŋ ka te e la ka te
+        de o Naaloŋ yɛlɛ de weɛ te zemmo poɔŋ.
+      sbs: 0.6775
+      gen_sec: 10.15
+      ref_sec: 11.08
+      cer: 0.0851
+      wer: 0.1176
+    jw_00010:
+      source: jw
+      text: Bonso aŋ e nimizeɛ ka noba naŋ waana ka ba kultaa de emmo ko Jehoova ba kultaa bebiri?
+      sbs: 0.6708
+      gen_sec: 7.0
+      ref_sec: 6.49
+      cer: 0.1471
+      wer: 0.5
+    jw_00011:
+      source: jw
+      text: WALA HOŊ NA IRI A NOƆRE?
+      sbs: 0.6771
+      gen_sec: 1.96
+      ref_sec: 3.44
+      cer: 0.3333
+      wer: 0.8333
+    jw_00012:
+      source: jw
+      text: Bonso aŋ ba fɛre ka te baŋ bieu yɛlɛ sɛre kyɛ na baŋ taa popeɛloŋ?
+      sbs: 0.698
+      gen_sec: 5.55
+      ref_sec: 6.54
+      cer: 0.0588
+      wer: 0.1333
+    jw_00013:
+      source: jw
+      text: WALA HOŊ NA IRI A NOƆRE?
+      sbs: 0.6654
+      gen_sec: 1.96
+      ref_sec: 3.18
+      cer: 0.3333
+      wer: 0.8333
+    jw_00014:
+      source: jw
+      text: Maŋ Moɔrɔ Ka Ho Manne Yɛlɛ Na Hoŋ Zanne Na Ko Ho Taaba
+      sbs: 0.7354
+      gen_sec: 4.35
+      ref_sec: 4.84
+      cer: 0.1429
+      wer: 0.4615
+    jw_00015:
+      source: jw
+      text: LƐ TEŊ NA BAŊ E TAA POPEƐLOŊ KYƐ NAŊ KYƐNLƐ
+      sbs: 0.6668
+      gen_sec: 3.75
+      ref_sec: 5.53
+      cer: 0.1471
+      wer: 0.3
+    jw_00016:
+      source: jw
+      text: Te na zanne nyɛɛ tɛɛtɛɛ naŋ be yelmeŋɛ na te naŋ zanne yi Jehoova zie, ane zirii na Setaana
+        ane te dɔndɔnne naŋ ŋmaara na kpakyagaŋ.
+      sbs: 0.7228
+      gen_sec: 11.18
+      ref_sec: 9.61
+      cer: 0.0762
+      wer: 0.0769
+    jw_00017:
+      source: jw
+      text: Ka ba naŋ yelka Jehoova de la o yuori na ko Yezu, wala ka lɛ wuli?
+      sbs: 0.6871
+      gen_sec: 5.12
+      ref_sec: 6.4
+      cer: 0.1633
+      wer: 0.5
+    jw_00018:
+      source: jw
+      text: Gyoob Gane Na Na Baŋ Soŋ Boŋ Ka Ho Terɛ Kawaŋ-Sonne
+      sbs: 0.6858
+      gen_sec: 4.35
+      ref_sec: 5.63
+      cer: 0.575
+      wer: 1.2727
+    jw_00019:
+      source: jw
+      text: NAŊ KYƐNƐ TU PUORE SƆROO EŊƐŊ A TAGRA PEƐLƐ JEHOOVA
+      sbs: 0.6707
+      gen_sec: 4.44
+      ref_sec: 5.22
+      cer: 0.5238
+      wer: 0.8
+    jw_00020:
+      source: jw
+      text: Sobuo ka Jehoova da maŋ tu kyɛ korɔ a Izerayɛl biiri sowuli?
+      sbs: 0.6217
+      gen_sec: 4.95
+      ref_sec: 6.01
+      cer: 0.1875
+      wer: 0.25
+    jw_00021:
+      source: jw
+      text: De Apoɔsori Ho Naŋ Taa Ka Ho Puoro Jehoova O Siiloŋ Ŋmenpuoredie Naŋ Tegroŋ Yaga Zaa
+      sbs: 0.6569
+      gen_sec: 7.25
+      ref_sec: 6.3
+      cer: 0.2319
+      wer: 0.625
+    jw_00022:
+      source: jw
+      text: Aneazaa ka a Kyɛrite noba, a Pɛlite noba, ane a Giti noba da ba e Izerayɛl biiri, kyɛ ba da
+        taaɛ gyeremɛ naŋ e zuluŋ a ko Jehoova a yelmeŋɛ Naaŋmen, a neŋ neɛ na Jehoova naŋ sɔ naaloŋ kãã
+        na. Deevid niŋe da paalɛɛŋ yaga zaa neŋ lɛ na a dɔbɔ ŋa naŋ da be o zieŋ a dire yelmennoŋ koroo
+        na!
+      sbs: 0.6011
+      gen_sec: 23.97
+      ref_sec: 6.44
+      cer: 0.1142
+      wer: 0.254
+    jw_00023:
+      source: jw
+      text: Sori A Daŋyelbo Naŋ Tu A Nyɛ Eebo
+      sbs: 0.6437
+      gen_sec: 2.73
+      ref_sec: 3.3
+      cer: 0.2308
+      wer: 0.25
+    jw_00024:
+      source: jw
+      text: TƆNƆ NOBA NAŊ BE A SIILOŊ POƆ PARADIISI NAŊ NYƐRƐ
+      sbs: 0.643
+      gen_sec: 4.18
+      ref_sec: 5.58
+      cer: 0.525
+      wer: 1.0
+    jw_00025:
+      source: jw
+      text: MOƆRƆ HO MOƆBO ZAA A SONNƆ HO TAABA
+      sbs: 0.6119
+      gen_sec: 2.73
+      ref_sec: 4.88
+      cer: 0.25
+      wer: 0.75
+    jw_00026:
+      source: jw
+      text: “Naaŋmen naaneŋ maale boma, boma la leɛre a menneŋ a wa bebe.”
+      sbs: 0.7251
+      gen_sec: 5.12
+      ref_sec: 5.12
+      cer: 0.0638
+      wer: 0.3333
+    jw_00027:
+      source: jw
+      text: YEZU POƆ MAŊ PƐLEŊ KA TENEEŊ WA PUGIRO JEHOOVA YUORI
+      sbs: 0.6207
+      gen_sec: 4.52
+      ref_sec: 5.05
+      cer: 0.5814
+      wer: 1.1
+    jw_00028:
+      source: jw
+      text: YƐLƐ TE NAŊ NA ZANNE
+      sbs: 0.6435
+      gen_sec: 1.62
+      ref_sec: 3.18
+      cer: 0.25
+      wer: 0.6
+    jw_00029:
+      source: jw
+      text: WALA HOŊ NA IRI A NOƆRE?
+      sbs: 0.6596
+      gen_sec: 1.96
+      ref_sec: 3.42
+      cer: 0.3333
+      wer: 0.8333
+    jw_00030:
+      source: jw
+      text: Mɔɔ kyɛ kanna gama na zaa ba naŋ maŋ iri teŋ de pono korɔ noba na, a maŋ kaa vidiori ane boma
+        na zaa ba naŋ maŋ de eŋ jw.org zuŋ na.
+      sbs: 0.7124
+      gen_sec: 10.75
+      ref_sec: 10.12
+      cer: 0.0918
+      wer: 0.25
+    jw_00031:
+      source: jw
+      text: SOŊ HO BAABOLE ZANNEZANNA KA O ZƆƆTOƆ̃ YELKPEƐNE NA OŊ TUORO NA
+      sbs: 0.6707
+      gen_sec: 5.29
+      ref_sec: 5.94
+      cer: 0.3529
+      wer: 1.0
+    jw_00032:
+      source: jw
+      text: Wala ka a ŋmenpuoredie na Soolomoŋ naŋ da mɛ na varanda da do seŋ?
+      sbs: 0.6182
+      gen_sec: 5.63
+      ref_sec: 5.92
+      cer: 0.3077
+      wer: 0.7143
+    jw_00033:
+      source: jw
+      text: Sori A Daŋyelbo Naŋ Tu A Nyɛ Eebo
+      sbs: 0.6405
+      gen_sec: 2.73
+      ref_sec: 3.06
+      cer: 0.2308
+      wer: 0.25
+    jw_00034:
+      source: jw
+      text: Naaŋmen Nɔmmo Bebeŋ Tegitegilɛ
+      sbs: 0.6925
+      gen_sec: 2.82
+      ref_sec: 3.85
+      cer: 0.0741
+      wer: 0.75
+    jw_00035:
+      source: jw
+      text: bo yɛlɛ teŋ na baŋ sagedi peɛlaaŋ?
+      sbs: 0.6117
+      gen_sec: 3.07
+      ref_sec: 4.12
+      cer: 0.3333
+      wer: 0.4286
+    jw_00036:
+      source: jw
+      text: BON NANSO AŊ SEŊ KA TE SAGEDI KA JEHOOVA NƆNƆ TEŊ
+      sbs: 0.6745
+      gen_sec: 4.1
+      ref_sec: 5.03
+      cer: 0.5128
+      wer: 1.0
+    jw_00037:
+      source: jw
+      text: yɛlɛ Jehoova naŋ erɛ pampana?
+      sbs: 0.6397
+      gen_sec: 2.56
+      ref_sec: 3.56
+      cer: 0.6667
+      wer: 1.0
+    jw_00038:
+      source: jw
+      text: Te na zanne nyɛɛ ananso te naŋ maŋ pugiro Jehoova yosoŋ na wagre zaa te naŋ wa nyɛ a vuo ka
+        te e lɛ.
+      sbs: 0.7221
+      gen_sec: 8.02
+      ref_sec: 7.36
+      cer: 0.1316
+      wer: 0.2917
+    jw_00039:
+      source: jw
+      text: WALA KA NOBA DA MAŊ E TAKOREŊ SAŊA NA, KYƐ TOƆ̃ PƐLE JEHOOVA POƆ?
+      sbs: 0.712
+      gen_sec: 5.38
+      ref_sec: 6.25
+      cer: 0.1633
+      wer: 0.5714
+    jw_00040:
+      source: jw
+      text: YƐLƐ TE NAŊ NA ZANNE a
+      sbs: 0.6908
+      gen_sec: 1.71
+      ref_sec: 3.18
+      cer: 0.0588
+      wer: 0.1667
+    jw_00041:
+      source: jw
+      text: Bo tɔnɔ teŋ nyɛrɛ yire a yɔɔdeɛbo eŋɛŋ pampana?
+      sbs: 0.6117
+      gen_sec: 4.1
+      ref_sec: 4.74
+      cer: 0.1316
+      wer: 0.2222
+    jw_00042:
+      source: jw
+      text: Azuŋ “a malekere ba naŋ kaa-iri” ka Pɔɔl yel ba yɛlɛ na eɛ malekere naŋ be sazuŋ a tonɔ toma
+        sonnɔ “Naaŋmen ane . . . Krista Yezu,” a lɛ sɛgre na boɔlɛɛ Naaŋmen ane Krista Yezu meŋ.
+      sbs: 0.6988
+      gen_sec: 14.51
+      ref_sec: 13.57
+      cer: 0.0448
+      wer: 0.1714
+    jw_00043:
+      source: jw
+      text: 'c A FOTO POƆ YƐLƐ: Te yɔɔpɔge kaŋa naŋ e woŋo la teɛrɛ a Baabole nɔ eŋnee yɛlɛ a ŋmeɛrɛ a
+        yiele vidiori na kaŋa ka a somoo ka o ŋmaa lɛ zemmo naŋ na waa a Paradiisi poɔŋ yɛlɛ foto o teɛroŋ
+        poɔŋ soŋ.'
+      sbs: 0.6621
+      gen_sec: 16.72
+      ref_sec: 14.85
+      cer: 0.1447
+      wer: 0.3556
+    jw_00044:
+      source: jw
+      text: bo yɛlɛ mine la teŋ ba baŋ?
+      sbs: 0.6265
+      gen_sec: 2.22
+      ref_sec: 3.78
+      cer: 0.4
+      wer: 0.4286
+    jw_00045:
+      source: jw
+      text: JEHOOVA “GYOGRI NA NIMIE NAŊ KOŊ BAŊ NYƐ NA KYAANƐƐŊ”
+      sbs: 0.6432
+      gen_sec: 4.44
+      ref_sec: 4.62
+      cer: 0.5952
+      wer: 1.0
+    jw_00046:
+      source: jw
+      text: YƐLƐ TE NAŊ NA ZANNE
+      sbs: 0.6504
+      gen_sec: 1.62
+      ref_sec: 3.28
+      cer: 0.25
+      wer: 0.6
+    jw_00047:
+      source: jw
+      text: YƐLƐ TE NAŊ NA ZANNE
+      sbs: 0.6715
+      gen_sec: 1.62
+      ref_sec: 3.01
+      cer: 0.25
+      wer: 0.6
+    jw_00048:
+      source: jw
+      text: LƐ HO NAŊ NA TOƆ̃ E A ZANNE BAABOLE DAŊYELBO SOŊ
+      sbs: 0.6395
+      gen_sec: 4.01
+      ref_sec: 3.69
+      cer: 0.3243
+      wer: 0.4545
+    jw_00049:
+      source: jw
+      text: Ananso Aŋ Da Waa Ŋa A Koŋ Baŋ Nyɛ Eebo
+      sbs: 0.682
+      gen_sec: 3.24
+      ref_sec: 3.25
+      cer: 0.3448
+      wer: 0.9
+    jw_00050:
+      source: jw
+      text: ASEŊ KA TE TAA SAGEDIIBU SƐRE KYƐ NA BAŊ E NEMMENNE NAAŊMEN NIMITƆƆREŊ
+      sbs: 0.7067
+      gen_sec: 6.14
+      ref_sec: 6.8
+      cer: 0.2069
+      wer: 0.5385
+    jw_00051:
+      source: jw
+      text: a Zenɛ ŋa ona la Te Kristabiiri Zemmo Ane Te Naaŋ Moɔloo Toma—Lammo Yelsɛgraa Gane na .
+      sbs: 0.6727
+      gen_sec: 7.17
+      ref_sec: 11.22
+      cer: 0.1159
+      wer: 0.5625
+    jw_00052:
+      source: jw
+      text: A LAMMORE DA VƐŊƐƐŊ BAŊ TAA NOƆREYENI
+      sbs: 0.6453
+      gen_sec: 3.33
+      ref_sec: 3.52
+      cer: 0.7419
+      wer: 1.4286
+    jw_00053:
+      source: jw
+      text: Ka hooŋ kaa te gama na poɔŋ, ho na nyɛɛ fotori yaga naŋ wulo yelnimizeere. Wala hoŋ na baŋ
+        e a nyɛ tɔnɔ yaga zaa yi a fotori ŋa poɔŋ?
+      sbs: 0.695
+      gen_sec: 10.92
+      ref_sec: 11.32
+      cer: 0.1584
+      wer: 0.4333
+    jw_00054:
+      source: jw
+      text: YƐLƐ NAŊ NA BAŊ SOŊ TE KA TE TA TEƐRƐ TE YOŊ YƐLƐ BEE A TEƐRƐ KA TE SEƐ LA TE TAABA
+      sbs: 0.6889
+      gen_sec: 6.49
+      ref_sec: 8.56
+      cer: 0.0645
+      wer: 0.1364
+    jw_00055:
+      source: jw
+      text: YEZU DA MAŊ TU LA NAAŊMEN BONMAALEE EŊƐŊ A KYƐ WULI NOBA O SAA YƐLƐ
+      sbs: 0.6294
+      gen_sec: 5.63
+      ref_sec: 5.51
+      cer: 0.3396
+      wer: 0.5333
+    jw_00056:
+      source: jw
+      text: Ka Posãã Yɛlɛ Mineŋ Wa Kyoɔre Ho Eŋɛ, Kyɛ Ho Naŋ Na Baŋ Moɔ̃ La Niŋe A Puoro Jehoova
+      sbs: 0.6478
+      gen_sec: 7.17
+      ref_sec: 7.62
+      cer: 0.1875
+      wer: 0.3158
+    jw_00057:
+      source: jw
+      text: WALA HOŊ NA IRI A NOƆRE?
+      sbs: 0.676
+      gen_sec: 1.96
+      ref_sec: 3.25
+      cer: 0.3333
+      wer: 0.8333
+    jw_00058:
+      source: jw
+      text: TE DA EƐ BOOREE NAŊ DA DE TE WAGRE ZAA TONƆ A NAAŊ MOƆLOO TOMA
+      sbs: 0.6455
+      gen_sec: 4.95
+      ref_sec: 5.87
+      cer: 0.1667
+      wer: 0.3333
+    jw_00059:
+      source: jw
+      text: MOƆ̃ NIMIRI A TAGRA PEƐLƐ JEHOOVA
+      sbs: 0.55
+      gen_sec: 2.73
+      ref_sec: 3.88
+      cer: 0.4074
+      wer: 1.1667
+    jw_00060:
+      source: jw
+      text: Ka neɛ kaŋaŋ wa te zie a wa sɔre kawane, wala aŋ seŋ ka te e?
+      sbs: 0.7125
+      gen_sec: 4.95
+      ref_sec: 5.82
+      cer: 0.0455
+      wer: 0.5
+    jw_00061:
+      source: jw
+      text: Bonso aŋ soma yaga zaa ka te sage ka Jehoova baŋ teŋ velaa zaa?
+      sbs: 0.6722
+      gen_sec: 5.21
+      ref_sec: 6.54
+      cer: 0.0816
+      wer: 0.2857
+    jw_00062:
+      source: jw
+      text: YƐLƐ TE NAŊ NA ZANNE
+      sbs: 0.6659
+      gen_sec: 1.62
+      ref_sec: 3.06
+      cer: 0.25
+      wer: 0.6
+    jw_00063:
+      source: jw
+      text: Baapaalba—Wala Yɛŋ Boɔrɔ Ka Yɛ Zemmo Waa?
+      sbs: 0.6815
+      gen_sec: 3.5
+      ref_sec: 4.24
+      cer: 0.1212
+      wer: 0.8571
+    jw_00064:
+      source: jw
+      text: BO YƐLƐ KA JEHOOVA EŊ TE NOƆRE?
+      sbs: 0.5986
+      gen_sec: 2.56
+      ref_sec: 4.12
+      cer: 0.4583
+      wer: 0.4286
+    jw_00065:
+      source: jw
+      text: Ka Hooŋ Teɛrɛ Ho Taaba Yɛlɛ, A Na Baŋ De La Maaloo Yaga Wane
+      sbs: 0.6808
+      gen_sec: 4.78
+      ref_sec: 5.2
+      cer: 0.2609
+      wer: 0.4286
+    jw_00066:
+      source: jw
+      text: VƐŊ KA NAAŊMEN YELBIRI NA EŊ BO FAŊA
+      sbs: 0.6825
+      gen_sec: 3.24
+      ref_sec: 4.55
+      cer: 0.7931
+      wer: 0.875
+    waxal_00000:
+      source: waxal
+      text: Bibiiri bayɔpoi la zeŋ, ba mine leɛ la ba nime kyaare taa, ka ba mine meŋ leɛ ba nimie a kaara
+        zie kaŋa. Ba mine seɛ la teraza, ka ba mine meŋ seɛ kurigbɛŋaara. Kaŋa seɛ la kurigbɛŋmaa naŋ
+        e bondoɔ
+      sbs: 0.6599
+      gen_sec: 16.55
+      ref_sec: 19.02
+      cer: 0.1316
+      wer: 0.2683
+    waxal_00001:
+      source: waxal
+      text: eŋfoɔne na poʊ bibile la zeŋ ka a kang a lɛ de a o bibile tɔsobo a dogle o gbɛɛ zu ka a kanga
+        kanga ba su kparo kyɛ ba kyɛlee ne suɛ kang ka kang sul o zu kyɛ ba kyɛlee nɛ kyɛ ka baa zeŋ dokɔge
+        bonyeni zu
+      sbs: 0.6701
+      gen_sec: 15.87
+      ref_sec: 18.49
+      cer: 0.1742
+      wer: 0.42
+    waxal_00002:
+      source: waxal
+      text: Dɔbɔ la a be lɔɔre zuŋ, a pɛgele malfa ane felakere. A dɔɔ kaŋa sue kparenuwogi pelaa. A malfabie
+        mine meŋ biŋ a pareŋ.
+      sbs: 0.6693
+      gen_sec: 9.98
+      ref_sec: 18.81
+      cer: 0.0978
+      wer: 0.25
+    waxal_00003:
+      source: waxal
+      text: Nobaa yaga la zeŋ ba waa pogeba naŋ zeŋ teŋɛ mine yɛrɛ kparzeere mine yɛrɛ kparpeɛle ka mine
+        meŋ yɛre kparŋmonnɔŋmonɔ kyɛ ka ba eŋ boma mine orɔbareŋ ka mine de ba nuuri eŋ a boma poɔ a boma
+        mine waa la kamaana mine waa bɛŋɛ ka mine meŋ waa simie meŋ.
+      sbs: 0.6294
+      gen_sec: 21.24
+      ref_sec: 24.56
+      cer: 0.1457
+      wer: 0.3462
+    waxal_00004:
+      source: waxal
+      text: Dɔɔba bayi ka pool dare ba ka kuri eŋ ka wire dɔre a be be ka wire ziɛ a be be ka ba vɔgle
+        kpo peɛle ayi a mare a.
+      sbs: 0.6304
+      gen_sec: 8.45
+      ref_sec: 16.32
+      cer: 0.119
+      wer: 0.3667
+    waxal_00005:
+      source: waxal
+      text: Bondimaale die poɔŋ la ka pɔɡelee kaŋa are a seɛ kurwoɡi bonzeɛ a kyɛ su kparnuwoori meŋ bonsɔɡelaa
+        kyɛ ka kɔpo ane felaawɛre a parepare tabul kaŋa nuuriŋ kyɛ ka o pɛɡele boma mine.
+      sbs: 0.6884
+      gen_sec: 15.1
+      ref_sec: 25.36
+      cer: 0.1497
+      wer: 0.4706
+    waxal_00006:
+      source: waxal
+      text: Dakogigyamaa la biŋ biŋ ka dakogro ayi zaa maŋ taa la tabol a nimitɔɔre ka teere are lɔmboe
+        ka poolo meŋ baba a lɔmboe.
+      sbs: 0.6704
+      gen_sec: 9.81
+      ref_sec: 17.32
+      cer: 0.1158
+      wer: 0.3333
+    waxal_00007:
+      source: waxal
+      text: Biiri bata la zeŋ die poɔ kogi-yenaa zu k'a bombile kaŋ zeŋ a boŋkpoŋ puoriŋ a eŋ nɔɔte doɔ
+        a su kpare kyɛkyɛrɛɛ nu-ŋmaara, k'a sonsogere soba a boŋkpoŋ k'o seɛ mɔŋkuri sɔgelaa a ba su kparoŋ
+        kyɛ de a bombile a dɔgele o gbɛɛ zu k'a bombile su kpare pelaa.
+      sbs: 0.5358
+      gen_sec: 21.33
+      ref_sec: 20.81
+      cer: 0.066
+      wer: 0.2941
+    waxal_00008:
+      source: waxal
+      text: Dɔɔ la de o soola yi biŋ ŋmenaa poɔ. A soola eɛ kpoŋ ka o la de kaŋa meŋ a lɛle. A baateɛ
+        niŋ la a soola lamboriŋ, kyɛ ka o puori sɛŋ ka noba mine meŋ gaa are yiri poɔ.
+      sbs: 0.6505
+      gen_sec: 13.57
+      ref_sec: 17.31
+      cer: 0.129
+      wer: 0.1951
+    waxal_00009:
+      source: waxal
+      text: sɛɛre la ka ba sɛɛrɛ ka pɔge naŋ de weɛ a vara kyɛ ka a onaŋ naŋ be a puoreŋ meŋ noŋnɔ eŋnɛ.
+        Naasalba ane niŋsaalsɔglɔ zaa la pullitaa.
+      sbs: 0.6876
+      gen_sec: 11.35
+      ref_sec: 19.24
+      cer: 0.1238
+      wer: 0.3793
+    waxal_00010:
+      source: waxal
+      text: Dakoge pilaa la biŋ ka kapuro dɔgle o zuiŋ kaa sɔgsɔgliŋ ka tabol dɔgle kyɛ ka dakoge kyaŋ
+        sɔglaa meŋ biŋ ka kapuro dɔgloo zu kyɛ koo lambori meŋ ka tabol bile meŋ biŋ kɔge o.
+      sbs: 0.5697
+      gen_sec: 14.76
+      ref_sec: 15.79
+      cer: 0.0647
+      wer: 0.3333
+    waxal_00011:
+      source: waxal
+      text: Lɔɔre arɛɛ lɔɔre kãã emmo zie, pɔlbili kaŋ meŋ are la a be, o deni a lɔɔre kãã ennɛ a lɔɔre
+        kaŋ poɔ, a lɔɔre mine e la bonsɔgelaa, o de la gbɛre kaŋ bare a kãã emmo dankyini.
+      sbs: 0.6686
+      gen_sec: 14.42
+      ref_sec: 21.96
+      cer: 0.1832
+      wer: 0.3846
+    waxal_00012:
+      source: waxal
+      text: Nasadɔbɔ ne nasapɔgebɔ la a are ka bamine su kpare zeere ka bamine su kpare giriin a hɔɔle
+        kpogilo naŋ e peɛle k'a mine e zeere ka yikpoŋ kaŋa naŋ e sɔgelaa a are a ba puori sɛŋ.
+      sbs: 0.6587
+      gen_sec: 14.34
+      ref_sec: 17.51
+      cer: 0.1151
+      wer: 0.2368
+    waxal_00013:
+      source: waxal
+      text: Pɔgsarre bilii seɛ la wajeri kaa wajeri pɔg ba nyaã kye ka ba en lɛɛ ba kɔkɔɛ pou ba tuo la
+        buma a gɛrɛ ni.
+      sbs: 0.6479
+      gen_sec: 8.28
+      ref_sec: 16.62
+      cer: 0.2561
+      wer: 0.64
+    waxal_00014:
+      source: waxal
+      text: Dɔɔ la su kparewoge koo pɔgoo eŋɛ zaa kyo ko vɔgle zu kpogle pelaa la yie meŋ are peɛloo ka
+        teere meŋ yɛ are are a kɔge a yie.
+      sbs: 0.6674
+      gen_sec: 9.98
+      ref_sec: 17.2
+      cer: 0.1649
+      wer: 0.4828
+    waxal_00015:
+      source: waxal
+      text: Noba yaga arɛɛ la kaŋ are la a niŋeŋ a su kpare zeɛ naŋ kyoɔne peɛle, ba taaɛ filakiri, a
+        zie waɛ sɔgelaa lɛ.
+      sbs: 0.6842
+      gen_sec: 8.87
+      ref_sec: 17.27
+      cer: 0.1687
+      wer: 0.3333
+    waxal_00016:
+      source: waxal
+      text: Nasapelaa la eŋ o nimikyaane kyɛ su o kpare pelaa ka bibiiri ŋmaa gili, a bibiiri nyɛ maale
+        la ba zu kyɛ ka dɔɔlee kaŋa naŋ leɛ gyɛŋ yi are de o nuuri lantaa kyɛ are kaara zie kaŋa.
+      sbs: 0.5453
+      gen_sec: 14.59
+      ref_sec: 19.87
+      cer: 0.078
+      wer: 0.2821
+    waxal_00017:
+      source: waxal
+      text: Naa la a zeŋ wiri zu a su dagakparoo ane kuree ka a wiri e sɔgelaa ka ba su kaaya peɛle a
+        ŋmeɛrɛ gaŋgare a tuuro o ka pɔge are o nimitɔɔreŋ a seɛ kaayɛ daga wagya kaaya peɛle ane vaare
+        ka pɔgelee a are o puoriŋ ka o pɛgle zoore ka naabo a gaŋ a be.
+      sbs: 0.6232
+      gen_sec: 19.71
+      ref_sec: 29.7
+      cer: 0.1047
+      wer: 0.2632
+    waxal_00018:
+      source: waxal
+      text: Dɔbɔ la are waa gyamaa lɛ. Ka teere are ba poore seŋ. Ka bole be a dɔbɔ mene nimisɔgoŋ. Ka
+        a dɔbɔ mene vogle zupule kyɛ ba mene meŋ ba vogle a zupule
+      sbs: 0.5841
+      gen_sec: 11.78
+      ref_sec: 17.56
+      cer: 0.3947
+      wer: 0.6667
+    waxal_00019:
+      source: waxal
+      text: Bondirii la zɛvaare zeɛre ane paɛ boma anuu ane gyɛlɛ ayi a de bɔɔdemoɔmo sɔl sɔl ata la be
+        potoyua poɔ.
+      sbs: 0.599
+      gen_sec: 8.19
+      ref_sec: 16.03
+      cer: 0.1084
+      wer: 0.381
+    waxal_00020:
+      source: waxal
+      text: Yie ayi la are ka ba pili kaŋa moɔ a pili kaŋa meŋ kyɛnse kyɛ ka bipɔgelee a tuo baagi.
+      sbs: 0.5963
+      gen_sec: 7.0
+      ref_sec: 15.69
+      cer: 0.1642
+      wer: 0.4
+    waxal_00021:
+      source: waxal
+      text: Noba la are, ka kaŋa seɛ wogyɛ ka talarɛɛ ane orabasɔglɔ ane gyɛɛreka ane orabapeɛle, a biŋ,
+        ka a pɔge kaŋa a ɔnnɔ kõɔ yire oraba kpoŋ kaŋa poɔ ennɛ bogti kaŋ poɔ.
+      sbs: 0.6165
+      gen_sec: 13.48
+      ref_sec: 20.89
+      cer: 0.1339
+      wer: 0.4242
+    waxal_00022:
+      source: waxal
+      text: Deɛmo zie la, ka dɔbɔ mine zeŋ a ŋmeɛrɛ gaŋgare, ka ba mine yiele yiele, kyɛ ka ba mine pãã
+        be ba nimisogɔŋ a seɛrɛ kyɛ kpaara ba nuuri.
+      sbs: 0.6768
+      gen_sec: 11.26
+      ref_sec: 16.13
+      cer: 0.0288
+      wer: 0.0345
+    waxal_00023:
+      source: waxal
+      text: Vūū la di ka laafiiloŋ tontuma meŋ kaare a vūū Zie a wa de ba kõɔ a kpine a vūū ba su la kaaya
+        doɔre kyɛ vɔgle zupele doɔre noba mine meŋ be la a be ba meŋ su la kaaya sɔglɔ.
+      sbs: 0.5328
+      gen_sec: 13.65
+      ref_sec: 18.48
+      cer: 0.1742
+      wer: 0.2857
+    waxal_00024:
+      source: waxal
+      text: Tome zie na, ba mine su ne bonsԑlebԑ. Dͻͻ kaŋa are la a de daa saare a peerԑ ne a teŋԑ sogͻ.
+        O seԑ kuri gbԑwori naŋ e seԑ ԑ su kpare nuŋmaarԑ naŋ e tampԑloŋ. A dendͻԑ e na kuri. Dͻͻ kaŋa
+        meŋ are la zie kaŋa, a seԑ kurigbԑwogiri naŋ e zeԑ ԑ su kpare nuŋmaarԑ meŋ naŋ e zeԑ.  Pԑmbuluu
+        yagele na a de kuree kaŋa zu.
+      sbs: 0.6619
+      gen_sec: 25.59
+      ref_sec: 29.28
+      cer: 0.1496
+      wer: 0.4
+    waxal_00025:
+      source: waxal
+      text: Bibiiri bayopoi la a zeŋ dԑre zu. A biiri mine bayi zeŋ kͻge la taa. A bie kaŋ su la kpare
+        vaare kyԑ seԑ pieto sͻgelaa. Kaa kaŋ meŋ su kpare zeԑ kyԑ meŋ seԑ kure doͻre. ba deԑ ba gbԑԑ pare
+        kaayaa zu.
+      sbs: 0.695
+      gen_sec: 16.21
+      ref_sec: 23.2
+      cer: 0.1589
+      wer: 0.4318
+    waxal_00026:
+      source: waxal
+      text: Dakogro la a biŋ ka tabol bile a be a sensogleŋ ka fotori ayi a mare dankyini ka telee a meŋ
+        a be a die poɔŋ ka ba de pili a yɛre biŋ avde a tabol a dɔgle.
+      sbs: 0.6557
+      gen_sec: 12.12
+      ref_sec: 18.64
+      cer: 0.0513
+      wer: 0.2368
+    waxal_00027:
+      source: waxal
+      text: Neɛ kaŋa tuoe peɛ ka boma be a peɛ poɔ kyɛ k,o taa kɔva ka kaŋ meŋ are a leɛ o puori k,o ka
+        pɔge kaŋ meŋ mare bie a te kyɛnɛ waana kyɛ pɛgle pɔlenten sɔglaa ka dɔɔ kaŋ meŋ su kparepelaa
+        kyɛ yɛre baage.
+      sbs: 0.6496
+      gen_sec: 16.38
+      ref_sec: 17.15
+      cer: 0.085
+      wer: 0.2391
+    waxal_00028:
+      source: waxal
+      text: Pɔgebɔ laŋɛɛ taa ba seɛrɛɛ seɛre ba su la kaaya zèère pɔge kaŋa maal loo zu ba seɛrɛ la ne
+        gbɛgbala.
+      sbs: 0.5626
+      gen_sec: 8.11
+      ref_sec: 16.01
+      cer: 0.2025
+      wer: 0.619
+    waxal_00029:
+      source: waxal
+      text: Tewɔmparɛɛ parɛɛparɛɛ kuori zie la ka pɔɡesaraa zeŋ dakoɡizeɛ zu kyɛ laara a liri o ɡbɛɛ kyɛ
+        ka o doloŋ a te pelee a tewɔŋtuo mine naŋ bebe kyɛ ka o ɡɔɔ meŋ la te a pelee a tewɔnziiri mine
+        a laara.
+      sbs: 0.6335
+      gen_sec: 16.46
+      ref_sec: 19.38
+      cer: 0.0968
+      wer: 0.381
+    waxal_00030:
+      source: waxal
+      text: Noba la kyԑnԑ a yԑre baagere, a pԑgele boŋganne, ka teere be a zie ka mõõre meŋ bebe ka yire
+        are tͻͻre lԑ.
+      sbs: 0.6441
+      gen_sec: 8.7
+      ref_sec: 17.08
+      cer: 0.2099
+      wer: 0.4348
+    waxal_00031:
+      source: waxal
+      text: Noba la laŋ taa a zeŋ gɔlle tabol ba naŋ de biŋ zie kaŋ soŋsogleŋ soga poɔ ka a noba zeŋ a
+        kyɛ a kyɔgrɔ kɔmpeeta a nyɛrɛ yɛlɛ .
+      sbs: 0.6422
+      gen_sec: 10.5
+      ref_sec: 16.32
+      cer: 0.0928
+      wer: 0.2414
+    waxal_00032:
+      source: waxal
+      text: Neŋgyamaa la, ba mine are la, ba mine meŋ zeŋ la. Pɔge kaŋ naŋ zeŋ kono la, kyɛ ka kũũ daga
+        biŋ ba nimisogɔŋ. Ba su la bonsɔglɔ. Ba mine vɔgle zupili. Ba mine ba vɔgle.
+      sbs: 0.659
+      gen_sec: 14.08
+      ref_sec: 16.48
+      cer: 0.024
+      wer: 0.0556
+    waxal_00033:
+      source: waxal
+      text: Pɔgɔ la a are a eŋ nimikyaanaaa a su kparresɔglaa ne kparrepelaa a de o nuuri a dogli tebol
+        zu ka gane a dogli a tebol ka nobɔ a zeŋ a kyɛ a kaara a pɔgɔ.
+      sbs: 0.6302
+      gen_sec: 11.95
+      ref_sec: 19.76
+      cer: 0.161
+      wer: 0.3889
+    waxal_00034:
+      source: waxal
+      text: Nɛmɛ zoma koɔrɔ zie a zie e la yɛloŋ lɛ ba kyaare la kataweere a sazuree zaa dɔba bayi a are
+        kyaarɛɛ taa kaŋ su la kparewogi zeɛ a su kparenuwogri sɔglaa.
+      sbs: 0.6667
+      gen_sec: 12.37
+      ref_sec: 20.24
+      cer: 0.1148
+      wer: 0.3125
+    waxal_00035:
+      source: waxal
+      text: Namine la a zeŋ ka o potuurobo a zeŋ gɔloo ka dɔɔ kaŋ a are a su kpare pelaa a nyɔge a naa
+        nu eŋa a puoro kataweɛ kyaare la a naa ka ba zeŋ kɔge dakyini naŋ waa boŋ pelaa.
+      sbs: 0.6623
+      gen_sec: 13.65
+      ref_sec: 21.14
+      cer: 0.1
+      wer: 0.3171
+    waxal_00036:
+      source: waxal
+      text: Tontoneba ba la are a kyɛ ba su la kaya zeere ba vɔgle kpoglo a kpoglo waa la peɛle ka mine
+        waa buluu bogi kaŋa be la ba nimisoga ba kpaare la kuree gɔgle a bogi ba kpaare la taabo eŋ a
+        bogi poɔ waya kaŋa yi la a yeŋe wa kpɛ a bogi poɔ.
+      sbs: 0.6027
+      gen_sec: 18.6
+      ref_sec: 22.28
+      cer: 0.1215
+      wer: 0.2909
+    waxal_00037:
+      source: waxal
+      text: Dɔba mine bayi la zeŋ kaŋa zeŋɛɛ la kyɛ ka kaŋa a are a teɛnɛ o nu a wullo o tɔsoba kaŋ bonkaŋ
+        naŋ be a dankyini eŋɛ kyɛ ka kyããne mine meŋ a mare mare a dankyime zaa kpɛlɛŋ a wa golli.
+      sbs: 0.6656
+      gen_sec: 15.36
+      ref_sec: 17.04
+      cer: 0.0775
+      wer: 0.2558
+    waxal_00038:
+      source: waxal
+      text: Noba arɛɛ la gyamaa kyɛ ka torata na maŋ koɔra weɛ ka o are a torata kuori nyemɛ eɛ doɔre
+        kyɛ ka a noba meŋ vɔgle zupili ka ba mine meŋ su kpare sɔglɔ.
+      sbs: 0.5927
+      gen_sec: 11.86
+      ref_sec: 16.7
+      cer: 0.0769
+      wer: 0.2059
+    waxal_00039:
+      source: waxal
+      text: Pɔgesare bilee la laŋtaa a taa karitaare ba nuuri poɔ ba taɛ karitatɛtɛ a sɛgre meŋ naŋ be
+        a karitaa poɔ sɛge tɛɛtɛɛ la kyɛ ka ba zɛge ba nuuri a eŋ saseɛ poɔ.
+      sbs: 0.6589
+      gen_sec: 12.89
+      ref_sec: 19.4
+      cer: 0.112
+      wer: 0.2647
+    waxal_00040:
+      source: waxal
+      text: Noba la be kporeŋ a kpore lɔɔre la kõɔ yaga mine poɔ ba zaa wa neŋ pɛle bibili pɔge a ne dɔɔ
+        la be a kõɔ ba mine vɔle la ba zupele a teɛ a kyɛ laa.
+      sbs: 0.6525
+      gen_sec: 11.35
+      ref_sec: 21.08
+      cer: 0.0909
+      wer: 0.3514
+    waxal_00041:
+      source: waxal
+      text: Biiri bata ne pɔge a are sori zu ka lɔɛ zoro ka teere are gɔɔ ne doloŋ zaa ka yie meŋ are
+        gyamaa lɛ a waa yipeɛle yoŋ tɛgɛ.
+      sbs: 0.594
+      gen_sec: 9.56
+      ref_sec: 16.67
+      cer: 0.0957
+      wer: 0.2759
+    waxal_00042:
+      source: waxal
+      text: Pɔɔbɔ la tuo aŋkaare a kyɔɡe fuoliŋ tuuro taa ka kaŋ mare bie a ɡɛrɛ te pɔɡe pɔɔ naŋ yɛre
+        baaɡe a leŋ zutalaa ka ba are yele yɛlɛ ka a o taa na meŋ a are kaara ba.
+      sbs: 0.579
+      gen_sec: 12.97
+      ref_sec: 19.92
+      cer: 0.1371
+      wer: 0.2821
+    waxal_00043:
+      source: waxal
+      text: Pɔgesare la laŋ taa ka ba taa gama a lere ba nuuri a are ka kaŋ leŋ o zu wogri lɛ ka ba are
+        dankyini seɛ ba mine sue bompelaa bonsɔglɔ ka kaŋ seɛ gondonsɔglaa ka ba are dankyini seɛ a laara.
+      sbs: 0.5807
+      gen_sec: 15.1
+      ref_sec: 20.56
+      cer: 0.0676
+      wer: 0.2857
+    waxal_00044:
+      source: waxal
+      text: Pɔge ne o pɔgeyaare la kaara ba felaaware ba gaadi poɔ ka a pɔge ane o pɔgeyaare bayi a zeŋ
+        kyɛ ka kaŋa meŋ gaa te seŋ o yoŋ tɛgɛ.
+      sbs: 0.6751
+      gen_sec: 10.5
+      ref_sec: 21.6
+      cer: 0.02
+      wer: 0.0667
+    waxal_00045:
+      source: waxal
+      text: Pɔgebileee la be a zie ŋa bɔli ,la ka ba ŋmeɛrɛ ba mine su la kpare zēēre ka ba mine meŋ su
+        kpare dɔre ,ba zaa be la mubilee mine poɔ ka kaŋa de o gbɛre pare a bɔli zu.
+      sbs: 0.6895
+      gen_sec: 13.14
+      ref_sec: 18.96
+      cer: 0.0794
+      wer: 0.225
+    waxal_00046:
+      source: waxal
+      text: Bondirii maaloo zie la ba marɛɛ vūū ba dogle la a daransaŋ a vūū zu ba are kɔge la a tabol
+        a pɔge seɛ la wagyɛ o de la nu a kori o zu a bie are la o su la kparoo doɔre o seɛ la monkuri
+        naŋ leni doɔre ane peɛle.
+      sbs: 0.549
+      gen_sec: 16.04
+      ref_sec: 20.07
+      cer: 0.1203
+      wer: 0.2692
+    waxal_00047:
+      source: waxal
+      text: Dɔbɔ ne pɔgebɔ la lantaa waa gyɛmaa lɛ ka bamine su bonyaayirii, bamine meŋ su bontɛɛtɛɛ kyɛ
+        ka bonwogiri mine meŋ are a e karetaare ka teere meŋ be a ba poɔŋ.
+      sbs: 0.6603
+      gen_sec: 12.97
+      ref_sec: 20.64
+      cer: 0.1429
+      wer: 0.5
+    waxal_00048:
+      source: waxal
+      text: Noba la taa gane a sɛge sɛgere eŋ bonzeere ane bonsɔgelɔ a vɛŋ ka noba kaara ka dɔɔ eŋ nimi-gele
+        ka a e bonsɔgelɔ ka kaŋa hɔgele zupili ka bondoɔre a bebe kyɛ ka ba zɛge a bone ka noba kaara
+        .
+      sbs: 0.6428
+      gen_sec: 16.04
+      ref_sec: 16.76
+      cer: 0.1745
+      wer: 0.2439
+    waxal_00049:
+      source: waxal
+      text: Bibiiri la a su kparedɛgɛ a zeŋ zidɛgre poɔ ba nyɔge la dɛre geli a lanne dankyini a do zeŋ
+        batori biŋ biŋ la ba nimitɔɔre kyɛ ka kartaare meŋ biŋ ba nimitɔɔre saga be la ba nimitɔɔre meŋ.
+      sbs: 0.6255
+      gen_sec: 15.53
+      ref_sec: 22.11
+      cer: 0.0671
+      wer: 0.1795
+    waxal_00050:
+      source: waxal
+      text: Pɔllee la vuuni, o de la o nu ti ne bonsɔglaa kaŋ. A pɔllee su la kparesɔgelaa, kyɛ a pɔllee
+        lamboriŋ batere dɔgele la bonsgelaa kaŋ zu. A pɔllee puoriŋ. Keɛos kaŋ arɛɛ la ka ba penti o buluu.
+      sbs: 0.6884
+      gen_sec: 15.95
+      ref_sec: 20.36
+      cer: 0.1351
+      wer: 0.3333
+    waxal_00051:
+      source: waxal
+      text: Ba kyɛne la a kyɛ kɔrekɔre nuuri a kyɛne die kaŋ naŋ are ka ba tɛɛ boma gyolokɔloŋ die laŋ
+        boɛ poɔ ba mine vaare la wagye pɛle a kyɛne ka kaŋ be puori a kyɛne.
+      sbs: 0.6845
+      gen_sec: 12.54
+      ref_sec: 21.09
+      cer: 0.0813
+      wer: 0.2222
+    waxal_00052:
+      source: waxal
+      text: Teelare la ka ba seɛrɛ ba zeŋɛɛ teelare la biŋ ba taa pɔge vuunee la a su kaaya ka a yitaa
+        ka o le o zutara ka a kaaya yitaa de o nu te a bie kaŋa naŋ zeŋ a o niŋe sɔgaŋ.
+      sbs: 0.6196
+      gen_sec: 13.31
+      ref_sec: 16.17
+      cer: 0.1102
+      wer: 0.3023
+    waxal_00053:
+      source: waxal
+      text: Laa pelaa la eŋ bondirii mui ane bɛŋɛ ka vaare a bebe ka ka ka zam ka zama dɔgle ka
+      sbs: 0.6486
+      gen_sec: 6.49
+      ref_sec: 17.15
+      cer: 0.0938
+      wer: 0.2
+    waxal_00054:
+      source: waxal
+      text: Kãã koͻroo zie la. Ka pͻgebͻ mine bayi ane bibiiri bata a are a niŋe poͻŋ. Lͻԑ be la a zie
+        ŋa ka noba mine meŋ a taa motori a zeŋ a zu poͻ.
+      sbs: 0.6587
+      gen_sec: 11.18
+      ref_sec: 17.4
+      cer: 0.1845
+      wer: 0.2647
+    waxal_00055:
+      source: waxal
+      text: Pɔgebɔ la a are. A pɔgebɔ nyɔgɛɛ ba nuuri a zɛge ka a do, kyɛ ka soola panal a biŋ a ba niŋe
+        sogɔ. moɔ meŋ be la a ba puriŋ.
+      sbs: 0.6676
+      gen_sec: 9.64
+      ref_sec: 17.24
+      cer: 0.1111
+      wer: 0.2903
+    waxal_00056:
+      source: waxal
+      text: Poɔ la ka noba are, ka kaŋ su kparre nu sɔglo kpare sɔglo kyɛ vɔgle zupele dɔre kyɛ seɛ treasure
+        ka pɔɔli a are ka nensaala di o nu tu kuri kaŋ naŋ zaŋlaa a waa sɔglaa.
+      sbs: 0.59
+      gen_sec: 13.48
+      ref_sec: 19.32
+      cer: 0.1154
+      wer: 0.3243
+    waxal_00057:
+      source: waxal
+      text: Boma,pooli daare ane wire dɔ ane wire ziɛ ka dɔɔba bayi a vɔgle kpo peɛle kyɛ ti a pooli daa
+        a pooli daa a daa kaŋa.
+      sbs: 0.6671
+      gen_sec: 9.05
+      ref_sec: 17.07
+      cer: 0.2022
+      wer: 0.4231
+    waxal_00058:
+      source: waxal
+      text: Pɔge kaŋa la zeŋ, a pɔge zeŋ dagle la ,o laɛ la ,wagyere meŋ ŋmaa gyile la a pɔge, a mine
+        silee la kyɛ ka a mine meŋ yagele a lɛ a wagyere meŋ waa la iri iri.
+      sbs: 0.6389
+      gen_sec: 12.37
+      ref_sec: 17.32
+      cer: 0.0517
+      wer: 0.1579
+    waxal_00059:
+      source: waxal
+      text: Neŋgyamaa la, bas u la kpare sͻgelͻ a vͻgele zupili zeere. A dͻͻ kaŋ naŋ are be vͻgele la
+        zupili sͻgelaa kyԑ kyԑ su kpare zeԑ, ka a dͻͻ kaŋa meŋ su kpare dõͻre a seԑ torͻza sͻgelaa.
+      sbs: 0.6695
+      gen_sec: 14.76
+      ref_sec: 15.68
+      cer: 0.2357
+      wer: 0.5789
+    waxal_00060:
+      source: waxal
+      text: koɔ poɔ la ka gbori a are ka noba kpɛ. be a gbori poɔ kaa kaŋa a kyɛne a pɛgeli a Zuma ane
+        a roober sɔglaa
+      sbs: 0.6841
+      gen_sec: 8.11
+      ref_sec: 16.54
+      cer: 0.15
+      wer: 0.2692
+    waxal_00061:
+      source: waxal
+      text: Dɔbɔ la laŋ taa a manna Naaŋmene yɛlɛ a korɔ taa ba baare meŋ be la ba puoriŋ kaŋ waa sɔglaa
+        ka kaŋ waa pelaa ka teɛ a bebe ka ba zeŋ kyɛ ba boŋ koɔle meŋ pãã te be la a moore poɔ zie.
+      sbs: 0.6668
+      gen_sec: 14.93
+      ref_sec: 24.84
+      cer: 0.0576
+      wer: 0.2222
+    waxal_00062:
+      source: waxal
+      text: Noba mine la a are are a ŋmaa gyili ka ba de plane bile kaŋa a biŋ.
+      sbs: 0.5489
+      gen_sec: 5.21
+      ref_sec: 15.83
+      cer: 0.04
+      wer: 0.0588
+    waxal_00063:
+      source: waxal
+      text: Laafeɛloŋ ane gyɛl nyɛ boŋyɛllɛ noba la a kaara yɛllɛ banaŋ na e kaataa sommo la. Ba zaa su
+        la kparepeɛle. Ba mine ziŋɛɛ la kyɛ ka bamine are a mɔrɔlaare.
+      sbs: 0.6904
+      gen_sec: 12.54
+      ref_sec: 24.8
+      cer: 0.0331
+      wer: 0.3548
+    waxal_00064:
+      source: waxal
+      text: Deɛn deɛn zeɛ kanga la a zeɛ nga bibile kanga arẽ a nimitoore be ka poɔ kanga arẽ a ɔ poɔring
+        kye ka doɔ kanga meng arẽ a de bun pen a le ɔ zu pou kye ka ba menne meng arẽ ɔ poɔring kye ka
+        a bibile nga a muri laare.
+      sbs: 0.6983
+      gen_sec: 16.8
+      ref_sec: 18.84
+      cer: 0.3313
+      wer: 0.6538
+    waxal_00065:
+      source: waxal
+      text: Nasadɔbɔ ayi ane pɔgeba bayi la zeŋ ba biŋ la tebol ba sensɔgleŋsɔga a dɔgle gama a pare kɔpore
+        a eŋ filaware kyɛ ka a dɔɔ ba bayi pɔge gaŋ zeŋ la dakogi kyɛrɛkyɛrɛ zu k'o waa boŋ pelaa kaŋ
+        meŋ zeŋ ba sensɔgleŋ sɔga kyɛ ka kaara a gane a dɔɔ naŋ taa.
+      sbs: 0.497
+      gen_sec: 20.82
+      ref_sec: 22.47
+      cer: 0.1026
+      wer: 0.2963
 - model: ghananlpcommunity/ghana-tts-36k-noref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: noref
@@ -19288,4 +21041,4 @@ benchmarks:
       ref_sec: 22.47
       cer: 0.2256
       wer: 0.5185
-updated: '2026-10-01'
+updated: '2026-10-09'
