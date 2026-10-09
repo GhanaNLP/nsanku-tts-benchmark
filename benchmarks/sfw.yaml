@@ -11,6 +11,1683 @@ judge:
   model: facebook/omniASR-LLM-7B-v2
   cer_on_real_speech: 0.3272
 benchmarks:
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7007
+  num_scored: 200
+  cer: 0.2203
+  wer: 0.7379
+  accuracy: 0.7797
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.7402
+  score: 0.7402
+  per_source:
+    bible:
+      sbs: 0.715
+      cer: 0.1934
+      n: 100
+    jw:
+      sbs: 0.6864
+      cer: 0.2471
+      n: 100
+  entries:
+    bible_00000:
+      source: bible
+      text: ɔse ye mmerɛ; yeɛ aborɔma, nandwinoma ne bɔlanoma.
+      sbs: 0.7615
+      gen_sec: 3.84
+      ref_sec: 4.1
+      cer: 0.225
+      wer: 0.875
+    bible_00001:
+      source: bible
+      text: Ɔkɔyɛ sɛɛ né ɛmɔahora banwati bafi amaneɛnwunɛ kuro ndɛenbualɛ ne anu?
+      sbs: 0.5919
+      gen_sec: 5.72
+      ref_sec: 4.4
+      cer: 0.2034
+      wer: 0.6364
+    bible_00002:
+      source: bible
+      text: na bebukyebukyele nwomaa nemɔ anu.
+      sbs: 0.7525
+      gen_sec: 2.82
+      ref_sec: 3.06
+      cer: 0.1724
+      wer: 1.0
+    bible_00003:
+      source: bible
+      text: Mali moa mahã mahyire ɛmɔ dada.
+      sbs: 0.6247
+      gen_sec: 2.47
+      ref_sec: 4.4
+      cer: 0.36
+      wer: 0.8333
+    bible_00004:
+      source: bible
+      text: AWURADE sele Mose kyɛ, “Fa biaa bɔ wabɔ musue ne kɔ asikyeleɛ ne asi dɔ; ná ma mmenia bɔ bɛtele
+        edwirɛ ne bɛ so anu ne amukoraa, bɛ́fa bɛ sa bégua ye ti so, ná ma maen ne amu bɛ́boro ye nyɔboɛ
+        béhu ye.
+      sbs: 0.7827
+      gen_sec: 14.25
+      ref_sec: 13.4
+      cer: 0.1933
+      wer: 0.6591
+    bible_00005:
+      source: bible
+      text: Aso bɛtete bobe wɔ mmowue so, anaakyɛ bɛtete borɔdoma wɔ ɛfone so?
+      sbs: 0.6609
+      gen_sec: 5.03
+      ref_sec: 9.32
+      cer: 0.0566
+      wer: 0.25
+    bible_00006:
+      source: bible
+      text: nzɛmmɔne yeɛ osusu ye nwo wɔ ye ti anu ɔ; na sɛ ofi me nwo berɛ kɔ a, ɔfa kotene.
+      sbs: 0.7275
+      gen_sec: 5.89
+      ref_sec: 5.2
+      cer: 0.1186
+      wer: 0.45
+    bible_00007:
+      source: bible
+      text: Afei koso, sɔ nguro nemɔ amukoraa, ɔfale akokyɛm mbiri ne pealɛɛ mbiri siesiele so, na ɔbɔle
+        bɛ nwo waen paa.
+      sbs: 0.7661
+      gen_sec: 8.36
+      ref_sec: 9.44
+      cer: 0.1512
+      wer: 0.6
+    bible_00008:
+      source: bible
+      text: Na aburoo afɔleɛ bɔ ɔboka so ne, odi kyɛ bɛfa esam paa bɔ bafa ngoo bafra ye ɔ olonka nyɔ;
+        ɔte afɔleɛ bɔ bɛbɔ bɛma see so bɛma AWURADE ná ɔbo ye fona ɔ.
+      sbs: 0.7571
+      gen_sec: 11.01
+      ref_sec: 10.96
+      cer: 0.1466
+      wer: 0.7059
+    bible_00009:
+      source: bible
+      text: “Na ebiala bɔ ɔkɔhɔ nzamangɔmhyɛlɛfoɛ ne ahɔmeɛ so, ná okoli bɛ si ne, ngotu me nye ngosie
+        sɔ sona ne aso, na ngɔpɛ ye asue ngofi ye maen nu.
+      sbs: 0.7581
+      gen_sec: 10.33
+      ref_sec: 9.02
+      cer: 0.1204
+      wer: 0.5172
+    bible_00010:
+      source: bible
+      text: nakoso nu ngyerɛmuɛ ne amukoraa ofi AWURADE.
+      sbs: 0.6833
+      gen_sec: 3.5
+      ref_sec: 4.56
+      cer: 0.1081
+      wer: 0.8571
+    bible_00011:
+      source: bible
+      text: 'Yeɛ Yesu pingyele bɛ nwo berɛ sele bɛ kyɛ: “Bafa nyameɛso ne aseɛ so tumi amukoraati bawura
+        me sa.'
+      sbs: 0.6323
+      gen_sec: 7.34
+      ref_sec: 7.92
+      cer: 0.0519
+      wer: 0.4737
+    bible_00012:
+      source: bible
+      text: Bɛ teaseɛnam mɔ ne bɛ pɔngɔhanɛfoɛ mɔ, aso né bɛnzone pee?
+      sbs: 0.7195
+      gen_sec: 4.44
+      ref_sec: 4.9
+      cer: 0.1739
+      wer: 0.7273
+    bible_00013:
+      source: bible
+      text: Na yieee, né biaa bie wɔ berɛ bɔ ye sa ko awu ɔ.
+      sbs: 0.6185
+      gen_sec: 3.33
+      ref_sec: 3.52
+      cer: 0.2353
+      wer: 0.8462
+    bible_00014:
+      source: bible
+      text: yeɛ kwahweabaa koso ye nye ngɔsɔ animnyamniɛ.
+      sbs: 0.7003
+      gen_sec: 3.58
+      ref_sec: 3.62
+      cer: 0.3684
+      wer: 1.1429
+    bible_00015:
+      source: bible
+      text: Né koɛhonɛfoɛ kɔyɛ ɛyaa nzia boka ye so.
+      sbs: 0.6924
+      gen_sec: 2.99
+      ref_sec: 3.92
+      cer: 0.3125
+      wer: 1.375
+    bible_00016:
+      source: bible
+      text: Yitiopianiɛ Sera fale koɛhonɛfoɛ apepesrala ko yeɛ teaseɛnam ɛyaa nza, na ɔfale koɛ ɔɔtoale
+        Yuda.
+      sbs: 0.7351
+      gen_sec: 7.68
+      ref_sec: 9.66
+      cer: 0.1605
+      wer: 0.7333
+    bible_00017:
+      source: bible
+      text: Afei Sunzum ne fale Yesu hɔle ɛserɛ so kyɛ abɔnzam ooso ye nea.
+      sbs: 0.6245
+      gen_sec: 4.69
+      ref_sec: 4.14
+      cer: 0.1
+      wer: 0.8462
+    bible_00018:
+      source: bible
+      text: Bɛfale ye bɛtole kuku nu maa odwuli kyɛ bɛtele bɔ AWURADE le ye ka wɔ edwirɛ ne anwo ɔ.
+      sbs: 0.746
+      gen_sec: 6.23
+      ref_sec: 5.38
+      cer: 0.2206
+      wer: 0.4737
+    bible_00019:
+      source: bible
+      text: Bɛkyekye nningyein nonɛnonɛ bɛto mmenia bati so; nakoso bɛ de, bɛmva bɛ sa mmɛseka ko po bɛnzɔ
+        nu ma bɛmma so.
+      sbs: 0.6723
+      gen_sec: 8.28
+      ref_sec: 7.6
+      cer: 0.1839
+      wer: 0.8571
+    bible_00020:
+      source: bible
+      text: Elesia yeɛ ɔsɛ kyɛ ɛmɔfa bɛ́yɔ adwuma ɔ, nakoso kyẽa bɔ ɔtɔ so nzoo ne de, ɔte nwomelelɛ kyẽa
+        bɔkɔɔ.
+      sbs: 0.7502
+      gen_sec: 7.59
+      ref_sec: 7.44
+      cer: 0.1558
+      wer: 0.55
+    bible_00021:
+      source: bible
+      text: Ɛ́mɔma bɛ munyɔ benyi bɛbɔ nu maa oodwu ye telɛ mmerɛ ne.
+      sbs: 0.6598
+      gen_sec: 4.01
+      ref_sec: 5.42
+      cer: 0.1818
+      wer: 0.75
+    bible_00022:
+      source: bible
+      text: na ɔmma bɔ nzuhɔen ku ye ɔ nnya nzue nno.
+      sbs: 0.6806
+      gen_sec: 2.9
+      ref_sec: 3.84
+      cer: 0.129
+      wer: 0.7
+    bible_00023:
+      source: bible
+      text: ɔne Lebanon sida mɔ koso fɛ, na bɛkã kyɛ.
+      sbs: 0.7548
+      gen_sec: 3.07
+      ref_sec: 3.62
+      cer: 0.129
+      wer: 0.5556
+    bible_00024:
+      source: bible
+      text: ': “Ɛ́mɔfa buralɛ ataadeɛ ne akokyɛm.'
+      sbs: 0.6918
+      gen_sec: 2.65
+      ref_sec: 4.0
+      cer: 0.037
+      wer: 0.4
+    bible_00025:
+      source: bible
+      text: asotiniwaafoɛ bɛ so kɔte dwirɛ; bubuafoɛ bekohuruhuru kyɛ dabɔɔ.
+      sbs: 0.7292
+      gen_sec: 5.03
+      ref_sec: 6.16
+      cer: 0.1852
+      wer: 1.1111
+    bible_00026:
+      source: bible
+      text: Ɔnate gyidie so yeɛ Sara bɔ né wabo aworɛ so ne hora nwonzɛle wole ɔ, ofikyɛ obuli bɔ ɔhyɛle
+        bɔ ne kyɛ odi nahorɛ.
+      sbs: 0.6767
+      gen_sec: 8.45
+      ref_sec: 10.5
+      cer: 0.1573
+      wer: 0.625
+    bible_00027:
+      source: bible
+      text: Bɛnea kyɛ esikaa kɔkorɛ kanea bakaa ne, ye kanea nemɔ kɔsɔ nɔsoa biala, ofikyɛ yɛyɔ bɔ AWURADE
+        yɛ Nyameɛ ahyɛ yɛ kyɛ yɛyɔ ɔ.
+      sbs: 0.7461
+      gen_sec: 9.3
+      ref_sec: 11.8
+      cer: 0.1531
+      wer: 0.5833
+    bible_00028:
+      source: bible
+      text: Né ɔmbena saleɛ mma ye mmango, yiti maa saleɛ ɔbɔ ye.
+      sbs: 0.7262
+      gen_sec: 3.93
+      ref_sec: 3.74
+      cer: 0.1951
+      wer: 0.6364
+    bible_00029:
+      source: bible
+      text: Afei, ɛ́mɔsuro AWURADE na ɛ́mɔbua ndɛen turoloo, ofikyɛ AWURADE yɛ Nyameɛ onguro ndɛengyea,
+        mmenia nu nyeyemuɛ anaa fea-ase-ma lelɛ.
+      sbs: 0.7288
+      gen_sec: 10.33
+      ref_sec: 12.92
+      cer: 0.0755
+      wer: 0.8421
+    bible_00030:
+      source: bible
+      text: Afei besa bɛhɔle Yerusalem.
+      sbs: 0.6871
+      gen_sec: 2.22
+      ref_sec: 4.52
+      cer: 0.2174
+      wer: 0.5
+    bible_00031:
+      source: bible
+      text: Na osele Solomon kyɛ, “Bisa bɔ ekuro ɔ maa nyɔ mma wɔ.
+      sbs: 0.7134
+      gen_sec: 3.84
+      ref_sec: 4.52
+      cer: 0.175
+      wer: 0.4167
+    bible_00032:
+      source: bible
+      text: Ofikyɛ ogyi sona bɔ ɔyɛ anwumvo ɔ ye sa famaa so.
+      sbs: 0.7375
+      gen_sec: 3.67
+      ref_sec: 3.26
+      cer: 0.0789
+      wer: 0.6364
+    bible_00033:
+      source: bible
+      text: Afei koso, nnɛmɔma bɛfrɛ ɛmɔ ‘meneɛ mɔ,’ ɔnate kyɛ ɛmɔ Mene te komapɛ, bɔ ye ole Kristo ne.
+      sbs: 0.6788
+      gen_sec: 6.66
+      ref_sec: 6.62
+      cer: 0.1471
+      wer: 0.8333
+    bible_00034:
+      source: bible
+      text: Na nneane alaa kɔpem kyɛ behuni kaka ne ɔ, bɛsɛkyele ye fuin ne, na befindini bɛtole see bɔ
+        ogye ɔ nu.
+      sbs: 0.7512
+      gen_sec: 7.59
+      ref_sec: 8.12
+      cer: 0.2405
+      wer: 0.5238
+    bible_00035:
+      source: bible
+      text: ná fa sɔ anwokyere kandinga he to wɔ nwo so.
+      sbs: 0.6855
+      gen_sec: 3.41
+      ref_sec: 3.58
+      cer: 0.2941
+      wer: 0.9
+    bible_00036:
+      source: bible
+      text: ɛmɔ amukoraa bɔ ɛmɔ nye la AWURADE so ɔ.
+      sbs: 0.6928
+      gen_sec: 2.9
+      ref_sec: 4.32
+      cer: 0.0645
+      wer: 0.4444
+    bible_00037:
+      source: bible
+      text: aburannu so safohene ne animnyamniɛ.
+      sbs: 0.6722
+      gen_sec: 2.9
+      ref_sec: 3.96
+      cer: 0.2581
+      wer: 0.4
+    bible_00038:
+      source: bible
+      text: Afɔleɛ bokyea mmɛen mɔ bɔ bɛwɔ AWURADE nyunu wɔ ɛtena sua atenaleɛ nu berɛ ne, odi kyɛ ɔfa
+        mogya ne bie ogua so.
+      sbs: 0.7639
+      gen_sec: 8.28
+      ref_sec: 6.78
+      cer: 0.1023
+      wer: 0.5217
+    bible_00039:
+      source: bible
+      text: Bɛ bɔ bɛ bra te sannwuu ne, ɔnate bɛ saleɛ so yeɛ kuro nya ngɔsoɛ ɔ.
+      sbs: 0.7248
+      gen_sec: 4.95
+      ref_sec: 4.32
+      cer: 0.2353
+      wer: 0.875
+    bible_00040:
+      source: bible
+      text: bɛkɔbɔ bɛ nwo adwaa wɔ nu.
+      sbs: 0.7237
+      gen_sec: 1.88
+      ref_sec: 3.9
+      cer: 0.55
+      wer: 0.8333
+    bible_00041:
+      source: bible
+      text: 'Ɛ́mɔfa ɛmɔ sa bégua ɛmɔ ahone so beli ɛhemɔ anwo aworabɔlɛ: ɛmɔ boo nyemenenyemene ne.'
+      sbs: 0.7494
+      gen_sec: 6.66
+      ref_sec: 7.68
+      cer: 0.1304
+      wer: 0.5333
+    bible_00042:
+      source: bible
+      text: bɛka a, bennwu bɛ noa ɔ, AWURADE noa dwirɛ ɛne.
+      sbs: 0.8011
+      gen_sec: 3.5
+      ref_sec: 3.2
+      cer: 0.1714
+      wer: 0.8
+    bible_00043:
+      source: bible
+      text: bɛte kyɛ mmosoen nemɔ ala; na ebiala bɔ ɔfa ye wora wura mmosoen nemɔ anu ne.
+      sbs: 0.7554
+      gen_sec: 5.72
+      ref_sec: 4.28
+      cer: 0.1333
+      wer: 0.5625
+    bible_00044:
+      source: bible
+      text: ” Na bebisale ye kyɛ, “Ɔyɛle sɛɛ yeɛ wɔ nye ne tele ɔ?
+      sbs: 0.6076
+      gen_sec: 3.67
+      ref_sec: 9.46
+      cer: 0.1053
+      wer: 0.5
+    bible_00045:
+      source: bible
+      text: Sɛ ɛmɔbaagyina koɛ noa a, odi kyɛ ɔsɔfo ne bagyina ɛlɔen ne nyunu dwudwo kyire bɛ.
+      sbs: 0.7322
+      gen_sec: 5.97
+      ref_sec: 5.36
+      cer: 0.1538
+      wer: 0.625
+    bible_00046:
+      source: bible
+      text: 'Ahyerɛlɛ bɔ wahyerɛ ne ɛhe: MENE, MENE, TEKEL, PARSIN.'
+      sbs: 0.7456
+      gen_sec: 4.18
+      ref_sec: 6.42
+      cer: 0.2927
+      wer: 0.4444
+    bible_00047:
+      source: bible
+      text: Sɛ brasua gyidiniɛ bie ole abusuafoɛ akunafoɛ mmrasua a, maa ɔnea bɛ; ɔnzɛ kyɛ ɔyɛ adesoa
+        da asɔre ne aso, amaa ɔnate so asɔre ne ahora anea akunafoɛ mmrasua bɔ belle bie ne.
+      sbs: 0.6946
+      gen_sec: 13.14
+      ref_sec: 14.64
+      cer: 0.1232
+      wer: 0.6061
+    bible_00048:
+      source: bible
+      text: AWURADE nye gye teneneeyɛlɛ ne ndɛenbualɛ turoloo nwo; na AWURADE ɔdɔ bɔ onni ngasi ne wayi
+        aseɛ ye aso tɛkyɛ.
+      sbs: 0.7291
+      gen_sec: 8.45
+      ref_sec: 7.52
+      cer: 0.236
+      wer: 0.7
+    bible_00049:
+      source: bible
+      text: Ɛ́mɔtie, maen maen mɔ amukoraa; ao aseɛ ne bɔ ɔwɔ so amukoraa.
+      sbs: 0.7267
+      gen_sec: 4.61
+      ref_sec: 4.52
+      cer: 0.2128
+      wer: 0.6667
+    bible_00050:
+      source: bible
+      text: Aso nna ɛmɔ yeɛ odi kyɛ ɛmɔnea kyɛ ndɛen turoloo kɔyɛ adwuma ɔ?
+      sbs: 0.7268
+      gen_sec: 4.61
+      ref_sec: 4.98
+      cer: 0.14
+      wer: 0.6923
+    bible_00051:
+      source: bible
+      text: Mbingyele bɛ bɔ begyigyi berɛ nemɔ anu ko, na mmisale ye kyɛbɔ ɛhemɔ amukoraa bɛ bo kyire
+        ɔ.
+      sbs: 0.7488
+      gen_sec: 6.91
+      ref_sec: 8.0
+      cer: 0.1644
+      wer: 0.7222
+    bible_00052:
+      source: bible
+      text: “Sona bɔ ɔyɛ mmerɛ ne, mmokalɛ bɔ afa ama ye hɔ ɛne!
+      sbs: 0.7228
+      gen_sec: 3.67
+      ref_sec: 3.06
+      cer: 0.2632
+      wer: 0.75
+    bible_00053:
+      source: bible
+      text: Wɔ bɔbɔ eliɛma nemɔ anu bie yeɛ fa ye ma oli wɔ so hene ɔ.
+      sbs: 0.7119
+      gen_sec: 4.01
+      ref_sec: 3.8
+      cer: 0.1395
+      wer: 0.5333
+    bible_00054:
+      source: bible
+      text: na ye maen ne anu mmenia bɔ bɛyɛ anwumvo ne.
+      sbs: 0.7085
+      gen_sec: 3.33
+      ref_sec: 3.5
+      cer: 0.2941
+      wer: 0.7
+    bible_00055:
+      source: bible
+      text: “Nana, me mene, laleɛ ne, ye bo hyirelɛ ɛhe.
+      sbs: 0.7611
+      gen_sec: 3.24
+      ref_sec: 4.26
+      cer: 0.1935
+      wer: 0.8889
+    bible_00056:
+      source: bible
+      text: Né koɛhonɛfoɛ nemɔ nze kyɛ Yonatan afi berɛ ahɔ ɔ.
+      sbs: 0.699
+      gen_sec: 3.75
+      ref_sec: 4.66
+      cer: 0.375
+      wer: 1.2
+    bible_00057:
+      source: bible
+      text: Nzu ati yeɛ ɛmɔbaatetɛ me noa ɔ?
+      sbs: 0.591
+      gen_sec: 2.39
+      ref_sec: 8.82
+      cer: 0.16
+      wer: 0.7143
+    bible_00058:
+      source: bible
+      text: yeɛ nduro bɔ ɛka a ennwu bɛ noa ɔ; belili b’aseɛ ne aso nyaa amukoraa.
+      sbs: 0.7475
+      gen_sec: 5.12
+      ref_sec: 4.42
+      cer: 0.1321
+      wer: 0.5333
+    bible_00059:
+      source: bible
+      text: Okosa kɔneanea nu kɔye Yisrael, na ɔkɔfa bɛ koolua bɛ bɔbɔ b’aseɛ so.
+      sbs: 0.7344
+      gen_sec: 5.12
+      ref_sec: 6.38
+      cer: 0.1296
+      wer: 0.6923
+    bible_00060:
+      source: bible
+      text: Na asomafoɛ nemɔ sa wale nen, bɛfale bɔ baayɔ amukoraa nwo amaneɛ bɛbɔle Yesu.
+      sbs: 0.6842
+      gen_sec: 6.06
+      ref_sec: 6.04
+      cer: 0.0794
+      wer: 0.5
+    bible_00061:
+      source: bible
+      text: Na ɔpete nen, bakaammaa ne bie ooguale atee noa, na nnomaa wale beesusole.
+      sbs: 0.6913
+      gen_sec: 5.72
+      ref_sec: 4.76
+      cer: 0.1186
+      wer: 0.6923
+    bible_00062:
+      source: bible
+      text: Na Yesu buale bɛ kyɛ, “Ɛmɔ nu nwa yeɛ sɛ ole boaen komapɛ ná ɔtɔ kumaa nu afofikyẽa a, ɔngɔsɔ
+        ye nu ngɔye ye ɔ?
+      sbs: 0.7016
+      gen_sec: 8.11
+      ref_sec: 8.26
+      cer: 0.253
+      wer: 0.6
+    bible_00063:
+      source: bible
+      text: Koɛ nu nzesadeɛ bɔ bɛfa bɛhɔle ne, sɔ kyẽa ne, bɛyele nu nandwie nyii ɛyaa nzoo ne mmoaen
+        apee nzoo bɛbɔle afɔleɛ bɛmane AWURADE.
+      sbs: 0.7459
+      gen_sec: 9.81
+      ref_sec: 12.24
+      cer: 0.1942
+      wer: 0.7083
+    bible_00064:
+      source: bible
+      text: na mmom, wayɛ ye adwene kyɛ okohũhũ mmenia.
+      sbs: 0.7148
+      gen_sec: 3.41
+      ref_sec: 3.42
+      cer: 0.2059
+      wer: 0.75
+    bible_00065:
+      source: bible
+      text: na mengɔyakyi wɔ maa ɛngɔfa wɔ nwo ngoli tɔtorɔtɔɔ.
+      sbs: 0.6185
+      gen_sec: 4.01
+      ref_sec: 5.02
+      cer: 0.5476
+      wer: 0.7778
+    bible_00066:
+      source: bible
+      text: ná sɛ ye asorɔkye ma mmokaa bɛwoso po a, ɛserɛ ngɔhã yɛ.
+      sbs: 0.7135
+      gen_sec: 4.18
+      ref_sec: 4.06
+      cer: 0.2326
+      wer: 0.75
+    bible_00067:
+      source: bible
+      text: ” Nakoso somvoɛ ne buale ye kyɛ, “Tie, Nyameɛ sona bie wɔ kuro he aso, na ɔte sona bɔ bebu
+        ye ɔ.
+      sbs: 0.7684
+      gen_sec: 6.74
+      ref_sec: 8.9
+      cer: 0.1739
+      wer: 0.5238
+    bible_00068:
+      source: bible
+      text: Yeɛ sɛ ɛte badwemma a, ɔte paa tra kyɛ ekonya ɛdwetɛ ɔ.
+      sbs: 0.7291
+      gen_sec: 3.84
+      ref_sec: 3.38
+      cer: 0.3333
+      wer: 0.75
+    bible_00069:
+      source: bible
+      text: Yiti m’ahone koli Moabo nwo aworabɔlɛ kyɛ atɛndɛbɛn nu dwein, na m’ahone koli Kire Heresefoɛ
+        nwo aworabɔlɛ kyɛ atɛndɛbɛn nu dwein, ofikyɛ anwonyadeɛ bɔ wanya ye ne, watu wamini.
+      sbs: 0.7555
+      gen_sec: 13.65
+      ref_sec: 13.62
+      cer: 0.2378
+      wer: 0.7241
+    bible_00070:
+      source: bible
+      text: Nakoso yɛ de, nyameɛso yeɛ ɔte yɛ maen ɔ.
+      sbs: 0.6536
+      gen_sec: 2.99
+      ref_sec: 3.18
+      cer: 0.2258
+      wer: 1.0
+    bible_00071:
+      source: bible
+      text: ɔkɔmaa Anwuro Anwuroniɛ n’anwoteefoɛ nemɔ bekoli amia.
+      sbs: 0.7288
+      gen_sec: 4.61
+      ref_sec: 3.96
+      cer: 0.1739
+      wer: 1.5714
+    bible_00072:
+      source: bible
+      text: Nakoso bɔne nwo afɔleɛ biala bɔ bafa ye mogya ne bie bawa ɛtena sua atenaleɛ nu berɛ baayɛ
+        mbata wɔ nekaa krongron ne anu ne de, onni kyɛ ebiala di ɔ; odi kyɛ bɛfa see bɛyera ye.
+      sbs: 0.7568
+      gen_sec: 13.23
+      ref_sec: 13.42
+      cer: 0.1151
+      wer: 0.3514
+    bible_00073:
+      source: bible
+      text: Na nwuni kyɛ sɔ mmɛen ne ole anyeɛ bɔ ɔte kyɛ sona deɛ ɔ, ɔne noa bɔ ɔkekã edwirɛ mbiri mbiri
+        ɔ.
+      sbs: 0.746
+      gen_sec: 7.0
+      ref_sec: 9.9
+      cer: 0.2466
+      wer: 0.7727
+    bible_00074:
+      source: bible
+      text: Sɔ kyẽa ne ala, odi kyɛ ɛmɔyia nu; ɔte nyianu krongron.
+      sbs: 0.7847
+      gen_sec: 4.18
+      ref_sec: 3.68
+      cer: 0.2381
+      wer: 0.7273
+    bible_00075:
+      source: bible
+      text: ’ a, ebiala ndɛ me so.
+      sbs: 0.6863
+      gen_sec: 1.45
+      ref_sec: 12.98
+      cer: 0.2857
+      wer: 0.6
+    bible_00076:
+      source: bible
+      text: Maen bɔ benzuro Nyameɛ yeɛ masoma ye kyɛ ɔɔhwe bɛ so ɔ.
+      sbs: 0.7371
+      gen_sec: 4.01
+      ref_sec: 5.22
+      cer: 0.186
+      wer: 0.8333
+    bible_00077:
+      source: bible
+      text: Oni dumaa ole Selomite, bɔ oni ole Dibri bɔ ofi Dan abusua kure nu ne.
+      sbs: 0.7243
+      gen_sec: 5.12
+      ref_sec: 5.34
+      cer: 0.1296
+      wer: 0.6
+    bible_00078:
+      source: bible
+      text: Baasa tele bɔ wasi ne pɛ, ɔyakyili etualɛ bɔ watua Rama kuro ne.
+      sbs: 0.7417
+      gen_sec: 4.78
+      ref_sec: 5.72
+      cer: 0.22
+      wer: 0.6923
+    bible_00079:
+      source: bible
+      text: Aso ebie alua bobe boo bɔ onnya ollili ye mma ne bie ɔ?
+      sbs: 0.691
+      gen_sec: 3.93
+      ref_sec: 3.44
+      cer: 0.2381
+      wer: 0.8462
+    bible_00080:
+      source: bible
+      text: Ɔkɔporo ye mma amui kogua kyɛbɔ bobe bakaa yɔ ne ala.
+      sbs: 0.6825
+      gen_sec: 3.93
+      ref_sec: 3.38
+      cer: 0.0476
+      wer: 0.4545
+    bible_00081:
+      source: bible
+      text: Ɔnate kyɛ Sion mma mmrasua te ahandaen.
+      sbs: 0.701
+      gen_sec: 2.99
+      ref_sec: 3.58
+      cer: 0.25
+      wer: 1.0
+    bible_00082:
+      source: bible
+      text: Na odi kyɛ ɔsɔfo ne ɔfa ye sa mmɛseka bɔ bɔne nwo afɔleɛ mogya ne anu ná ɔfa kekã naen yeralɛ
+        afɔleɛ bokyea ne mmɛen nemɔ, ná mogya ne ngaa ne, óhwie ógua afɔleɛ bokyea ne abo.
+      sbs: 0.7483
+      gen_sec: 13.14
+      ref_sec: 11.48
+      cer: 0.1387
+      wer: 0.4865
+    bible_00083:
+      source: bible
+      text: “Sɛ ɔsɔfo ne yɛ mbata ma nekaa krongron ne, ɛtena sua atenaleɛ ne, ɔne afɔleɛ bokyea ne yie
+        a, odi kyɛ ɔfa abɔngye bɔ ɔte ngoa nu ne ɔba.
+      sbs: 0.7785
+      gen_sec: 9.98
+      ref_sec: 9.24
+      cer: 0.0577
+      wer: 0.4138
+    bible_00084:
+      source: bible
+      text: nakoso bɔ ɔsɔ dwirɛ nu a ɔnyakyi ne de, ɔtete abiɛngoɛ nu.
+      sbs: 0.7416
+      gen_sec: 4.18
+      ref_sec: 3.34
+      cer: 0.1778
+      wer: 0.9167
+    bible_00085:
+      source: bible
+      text: Yeɛ ngaka ngandinga nna befili ɛpo ne anu befitele, asora kyɛbɔ ko biala osi te ɔ.
+      sbs: 0.7373
+      gen_sec: 6.14
+      ref_sec: 7.2
+      cer: 0.1538
+      wer: 0.8125
+    bible_00086:
+      source: bible
+      text: Aleɛ bɔ ɔwɔ yɛ bɔtɔ nu ne, wayie; na akyɛdeɛ biala nne berɛ bɔ yɛkonya ye yɛkɔma Nyameɛ sona
+        ne ɔ.
+      sbs: 0.7597
+      gen_sec: 7.17
+      ref_sec: 8.42
+      cer: 0.1333
+      wer: 0.5238
+    bible_00087:
+      source: bible
+      text: Sɛ ɛborɔ ne Abadɔn po bɛla berɛ too wɔ AWURADE nyunu a.
+      sbs: 0.7495
+      gen_sec: 4.01
+      ref_sec: 3.98
+      cer: 0.2558
+      wer: 0.5833
+    bible_00088:
+      source: bible
+      text: AWURADE ɛmɔ Nyameɛ ne amaa ɛmɔata pee, na kekesaala ye de, ɛmɔ somaa te kyɛ ewienu nzramaa.
+      sbs: 0.7562
+      gen_sec: 6.91
+      ref_sec: 6.34
+      cer: 0.0556
+      wer: 0.5882
+    bible_00089:
+      source: bible
+      text: AWURADE te me nyɔbotaen, m’anwoserɛ afealeɛ ne me defoɛ.
+      sbs: 0.7221
+      gen_sec: 4.44
+      ref_sec: 3.16
+      cer: 0.0889
+      wer: 0.6667
+    bible_00090:
+      source: bible
+      text: Ao me Nyameɛ, alehyeleɛ biala mesu mefrɛ wɔ, nakoso ɛndɛ me so; mesu mefrɛ wɔ kɔngɔen biala,
+        nakoso me nwo ndɔ me.
+      sbs: 0.777
+      gen_sec: 8.7
+      ref_sec: 8.68
+      cer: 0.1591
+      wer: 0.7273
+    bible_00091:
+      source: bible
+      text: Atokoɔ ne nyini ná ɔfale mmaa nen, ngyɛngyɛma ne koso yele ye ti.
+      sbs: 0.6362
+      gen_sec: 4.86
+      ref_sec: 5.1
+      cer: 0.1176
+      wer: 0.3846
+    bible_00092:
+      source: bible
+      text: ngɔpena wɔ yeeyɛlɛ.
+      sbs: 0.6277
+      gen_sec: 1.54
+      ref_sec: 3.28
+      cer: 0.625
+      wer: 1.6667
+    bible_00093:
+      source: bible
+      text: ” Yiti AWURADE lili Yitiopiafoɛ nemɔ aso ngonim mane Asa ne Yuda maen, na Yitiopiafoɛ nemɔ
+        nwatili.
+      sbs: 0.7496
+      gen_sec: 7.68
+      ref_sec: 7.88
+      cer: 0.05
+      wer: 0.75
+    bible_00094:
+      source: bible
+      text: Yeɛ Daniel buale ɛhene ne kyɛ, “Nana, w’akyɛdeɛ ne, maa ɔwɔ berɛ, ná fa w’akatuaa ne ma sona
+        foforɛ.
+      sbs: 0.7801
+      gen_sec: 7.25
+      ref_sec: 8.72
+      cer: 0.1486
+      wer: 0.7368
+    bible_00095:
+      source: bible
+      text: Ye ɛlɛbɔtwɛ ne aso yeɛ bɛpɛle me bienzua ɔ.
+      sbs: 0.675
+      gen_sec: 3.24
+      ref_sec: 3.06
+      cer: 0.2059
+      wer: 0.5556
+    bible_00096:
+      source: bible
+      text: Bangu bɛ nu biala, na mmom bɛhyele bɛ bɛhɔle.
+      sbs: 0.7147
+      gen_sec: 3.41
+      ref_sec: 3.4
+      cer: 0.2
+      wer: 0.4444
+    bible_00097:
+      source: bible
+      text: AWURADE kɔsɛkye aseɛ.
+      sbs: 0.7075
+      gen_sec: 1.71
+      ref_sec: 3.02
+      cer: 0.7222
+      wer: 2.0
+    bible_00098:
+      source: bible
+      text: Okotu komini kyɛ laleɛ, bengonwu ye ko; ye boso komini kyɛ kɔngɔen nyekyire.
+      sbs: 0.7542
+      gen_sec: 5.97
+      ref_sec: 4.66
+      cer: 0.2623
+      wer: 1.1538
+    bible_00099:
+      source: bible
+      text: 'Aporowaa biala nne ye nwo kyɛ nyamesom nu mvealeɛ nu dwirɛ ne ɔte piri: Nyameɛ lale ye nwo
+        ali anwoɔnaen nu.'
+      sbs: 0.6561
+      gen_sec: 8.28
+      ref_sec: 10.24
+      cer: 0.0814
+      wer: 0.3333
+    jw_00000:
+      source: jw
+      text: b Sɛ ɛpena suahu pee bɔ ɔfa sɔ dwirɛ he anwo a, nea Nhoma a Yehowa Adansefo De Yɛ Nhwehwɛmu
+        nanu. Ekonwu ye wɔ edwirɛti bɔ yenwa “ Abɔfo ” nabo.
+      sbs: 0.6868
+      gen_sec: 10.41
+      ref_sec: 14.58
+      cer: 0.1376
+      wer: 0.4828
+    jw_00001:
+      source: jw
+      text: Sɛ Ɛkyɛ Nikye A, Ɔkɔmaa Wɔnye Kɔgye Paa
+      sbs: 0.7312
+      gen_sec: 2.9
+      ref_sec: 5.2
+      cer: 0.1935
+      wer: 0.875
+    jw_00002:
+      source: jw
+      text: BƐBƆ BƐNEA YAREFOƐ ANAA AWOROWAA NE, BƆ ƆMAA ƆYƐ SE KYƐ BƐNYE KƆHƆSO KƆGYE Ɔ
+      sbs: 0.7123
+      gen_sec: 5.72
+      ref_sec: 7.93
+      cer: 0.1639
+      wer: 0.5333
+    jw_00003:
+      source: jw
+      text: KURO ALIEMAAMƆ DWIRƐ, NA SÕ BƐ WƆFOƐ
+      sbs: 0.6208
+      gen_sec: 2.73
+      ref_sec: 4.04
+      cer: 0.7931
+      wer: 1.7143
+    jw_00004:
+      source: jw
+      text: Nzu yeɛ ɔkɔboka yɛ maa yɛkɔɔyɛ Kristofoɛ bɔ bɛbɔ bɛnwo mmɔden ɔ?
+      sbs: 0.6915
+      gen_sec: 4.95
+      ref_sec: 4.91
+      cer: 0.1346
+      wer: 0.75
+    jw_00005:
+      source: jw
+      text: Yekonwu mmerɛ bɔ odikyɛ yɛkã Bible adesua nwo dwirɛ yekyire mmenia, ɔne mmerɛ bɔ odikyɛ yɛto
+        yɛsa yɛfrɛ bɛ maa bɛba adesua ɔ.
+      sbs: 0.6962
+      gen_sec: 9.73
+      ref_sec: 8.87
+      cer: 0.0792
+      wer: 0.2174
+    jw_00006:
+      source: jw
+      text: mmerɛ bɔ ɛpena kyɛ ɛkɔso di nahorɛ ma Yehowa ne?
+      sbs: 0.6808
+      gen_sec: 3.58
+      ref_sec: 3.78
+      cer: 0.2895
+      wer: 0.8
+    jw_00007:
+      source: jw
+      text: Fa Nyameɛ Afutue Bɔ Ɔfa Nzãa Nwo Ne Bɔ Wɔ Bra
+      sbs: 0.6472
+      gen_sec: 3.41
+      ref_sec: 4.12
+      cer: 0.2571
+      wer: 0.6364
+    jw_00008:
+      source: jw
+      text: Sɛ yɛte edwirɛ bo a, sɛɛ yeɛ ɔkɔboka yɛ mmerɛ bɔ nningyein asesã wɔ y’asetena nu ne?
+      sbs: 0.7052
+      gen_sec: 6.14
+      ref_sec: 6.21
+      cer: 0.2769
+      wer: 0.7647
+    jw_00009:
+      source: jw
+      text: Aliemaa bɔ ɔkɔyɛ kyaaman wɔ dapɛen afia adesua nabo ne, ɛyɛ a ɔfa afutue ma bɛbɔ bɛyɛ asuafoɛ
+        dwumadie ne. Yeti sɛ sona ne yɛ ye dwumadie ne a, ɔfa yenye di yesi nea kyɛ, akwangyerɛ bɔ ɔfa
+        ye dwumadie nanwo ne, ɔyɛ ye sɔ pɛpɛɛpɛ anaa.
+      sbs: 0.7327
+      gen_sec: 17.4
+      ref_sec: 14.99
+      cer: 0.1813
+      wer: 0.5745
+    jw_00010:
+      source: jw
+      text: KYƐBƆ YEHOWA SE YƐ NE, ƆBO Y’ADWENE NE YƐ NDEASEƐ SO
+      sbs: 0.7245
+      gen_sec: 3.67
+      ref_sec: 4.6
+      cer: 0.25
+      wer: 0.7273
+    jw_00011:
+      source: jw
+      text: Yehowa se aworabɔlɛ bɔ yedi ne mukoraati, yeti yekonwu kyɛbɔ ɔboka yɛ maa y’ahone tɔ ye kunu
+        ɔ.
+      sbs: 0.7332
+      gen_sec: 7.17
+      ref_sec: 7.02
+      cer: 0.16
+      wer: 1.0556
+    jw_00012:
+      source: jw
+      text: BƆ YETI YEƐ YASI GYINAYƐƐ KYƐ YƐKƆSÕ YEHOWA Ɔ
+      sbs: 0.6793
+      gen_sec: 3.5
+      ref_sec: 3.3
+      cer: 0.3784
+      wer: 1.0
+    jw_00013:
+      source: jw
+      text: Yekonwu mvasoɛ bɔ yenya yefi honhom nu paradise naso, ɔne kyɛbɔ yɛkɔboka mmenia maa bɛ koso
+        bɛkɔwa nu bie ɔ.
+      sbs: 0.7273
+      gen_sec: 8.28
+      ref_sec: 9.21
+      cer: 0.1954
+      wer: 0.9
+    jw_00014:
+      source: jw
+      text: Bible ne mma edwirɛ he anwo mmuayɛɛ. Nakoso sɛ yɛnea edwirɛ biemɔ bɔ ɔwɔ Bible nanu a, ɔmaa
+        yenwu bɔ yeti yeɛ ebia besili sɔ gyinayɛɛ ne ɔ.
+      sbs: 0.7227
+      gen_sec: 10.33
+      ref_sec: 12.42
+      cer: 0.1651
+      wer: 0.6429
+    jw_00015:
+      source: jw
+      text: SUESUA KYƐBƆ YEHOWA SI NWU ANWUMVOIN NE
+      sbs: 0.6931
+      gen_sec: 3.24
+      ref_sec: 3.9
+      cer: 0.4545
+      wer: 0.8571
+    jw_00016:
+      source: jw
+      text: Yeti kyẽa foforɛ bɔ ekosua nikyee ne, ɛyɛ a drɔ bɔ asua ne to berɛ. Sɛ ɛyɛ sɔ a, nningyein
+        bɔ ɛkɔkae ne, ɔkɔyɛ wɔ nwanwa.
+      sbs: 0.7278
+      gen_sec: 9.13
+      ref_sec: 11.12
+      cer: 0.1758
+      wer: 0.5
+    jw_00017:
+      source: jw
+      text: mmerɛ bɔ asafo ne ama yɛ akwangyerɛ bie ne?
+      sbs: 0.6469
+      gen_sec: 3.24
+      ref_sec: 3.11
+      cer: 0.2059
+      wer: 0.6667
+    jw_00018:
+      source: jw
+      text: YƐFA AKOKODURO YƐNEA KYẼABIE ATEE
+      sbs: 0.6668
+      gen_sec: 2.73
+      ref_sec: 3.73
+      cer: 0.3448
+      wer: 1.0
+    jw_00019:
+      source: jw
+      text: Bɛbɔ bayɛ mbanyi bɔ bɛwɔ y’asafo nu ne, yɛkɔyɛ sɛɛ ne yaboka bɛ?
+      sbs: 0.722
+      gen_sec: 4.69
+      ref_sec: 6.47
+      cer: 0.1633
+      wer: 0.6154
+    jw_00020:
+      source: jw
+      text: Ndeaseɛ bɔ yele ye kyɛ Yehowa kɔla anwumvoinnwunɛ ali, na wabua ndɛen turoloo mmerɛ bɔ otingye
+        bɛbɔ bɛndengyɛ ne, adesua he kɔboka yɛ maa yɛkɔte yebo yé.
+      sbs: 0.7231
+      gen_sec: 11.95
+      ref_sec: 10.31
+      cer: 0.121
+      wer: 0.4074
+    jw_00021:
+      source: jw
+      text: Edwirɛ beni yeɛ Nyameɛ ahã bɔ ɔmaa yenya gyidie kyɛ nningyein bɔ wahyɛ yenwo bɔ ne kɔwa nu
+        ɔ?
+      sbs: 0.6941
+      gen_sec: 7.0
+      ref_sec: 5.92
+      cer: 0.1892
+      wer: 0.7895
+    jw_00022:
+      source: jw
+      text: MMERƐ BƆ W’ADWENE YƐ WƆ KYƐ YEHOWA NDWENE WƆNWO NE
+      sbs: 0.7427
+      gen_sec: 3.58
+      ref_sec: 3.71
+      cer: 0.2
+      wer: 0.9
+    jw_00023:
+      source: jw
+      text: kyɛbɔ Yehowa bua ndɛen turoloo nanwo ɔ?
+      sbs: 0.6232
+      gen_sec: 3.07
+      ref_sec: 3.3
+      cer: 0.2188
+      wer: 0.8571
+    jw_00024:
+      source: jw
+      text: Yɛ ebie bɔ mmenia de wɔ di ɔ. Boka adwuma bɔ bɛyɛ ye wɔ Ahennie Asa so ne. Sɛ bɛfa adwuma
+        bie bewura wɔsa koso a, fa akwangyerɛ bɔ ɔwɔ yenwo ne yɛ adwuma pɛpɛɛpɛ.
+      sbs: 0.7367
+      gen_sec: 11.61
+      ref_sec: 13.72
+      cer: 0.121
+      wer: 0.4571
+    jw_00025:
+      source: jw
+      text: ASAFO NHYIAMU BOKALE ALIEMAAMƆ MAA BƐYƐLE KÕ
+      sbs: 0.691
+      gen_sec: 3.58
+      ref_sec: 4.41
+      cer: 0.1053
+      wer: 0.7143
+    jw_00026:
+      source: jw
+      text: YƐHYƐLE MMERƐ MUKORAATI SOEN ADWUMA NABO
+      sbs: 0.6447
+      gen_sec: 3.07
+      ref_sec: 3.21
+      cer: 0.2
+      wer: 0.5
+    jw_00027:
+      source: jw
+      text: BƆ ƐKƆHORA KƆYƐ YE KESAALAE Ɔ
+      sbs: 0.6123
+      gen_sec: 2.22
+      ref_sec: 3.28
+      cer: 0.7083
+      wer: 1.0
+    jw_00028:
+      source: jw
+      text: Sɛ Ɛdrɔ Nikyee A, Wɔ Wora Ngofi
+      sbs: 0.6588
+      gen_sec: 2.3
+      ref_sec: 3.61
+      cer: 0.375
+      wer: 1.0
+    jw_00029:
+      source: jw
+      text: 'Edwirɛ pee wɔ Bible nanu bɔ ɔkyekye yɛ wora mmerɛ bɔ yɛte moen ne, na ɔmaa yenwu kyɛ Yehowa
+        nwu bɔ yɛfa nu ne, na ɔkɔboka yɛ. Ebie yeɛ olili so ye:'
+      sbs: 0.7539
+      gen_sec: 10.84
+      ref_sec: 10.62
+      cer: 0.1429
+      wer: 0.6562
+    jw_00030:
+      source: jw
+      text: BƆ ƆKƆBOKA WƆ MAA EKOSŨA NIKYEE YÉ Ɔ
+      sbs: 0.5998
+      gen_sec: 2.73
+      ref_sec: 3.92
+      cer: 0.3448
+      wer: 0.625
+    jw_00031:
+      source: jw
+      text: Sɛ “amaneɛnwunɛ piri” ne hyɛ yebo a, nzuati yeɛ yenwo kohia paa kyɛ yɛyɛ sotie ɔ?
+      sbs: 0.6701
+      gen_sec: 6.06
+      ref_sec: 6.08
+      cer: 0.1613
+      wer: 0.625
+    jw_00032:
+      source: jw
+      text: FA BƆ ƐKƆHORA KODWU YENWO NE SIE WƆNYE SO
+      sbs: 0.6065
+      gen_sec: 2.99
+      ref_sec: 3.52
+      cer: 0.5455
+      wer: 0.7778
+    jw_00033:
+      source: jw
+      text: BƆ ƐKORA YƐ BIALA, YEHOWA NYE GYE YENWO
+      sbs: 0.7262
+      gen_sec: 2.99
+      ref_sec: 4.69
+      cer: 0.129
+      wer: 0.5
+    jw_00034:
+      source: jw
+      text: Ɛwɛnelɛ Waen bɔ ɔwale afoɛ he ne, ato wɔ boase akenga nu anaa? Sɛ ahora ayɛ sɔ a, yede sɛɛ
+        yeɛ ɛkɔye edwirɛ hemɔ noa ɔ?
+      sbs: 0.7197
+      gen_sec: 8.62
+      ref_sec: 10.21
+      cer: 0.2222
+      wer: 0.7692
+    jw_00035:
+      source: jw
+      text: Yesu Ngoa Bɔ Ɔfa Bɔle Afɔleɛ Ne, Nzu Yeɛ Ɔmaa Yenwu Ye Ɔ?
+      sbs: 0.6813
+      gen_sec: 4.18
+      ref_sec: 5.7
+      cer: 0.093
+      wer: 0.3846
+    jw_00036:
+      source: jw
+      text: KYƐBƆ YOB DWIRƐ NE BOKA YƐ MAA YEMIA YƐNYE YEGYINA YƐ HAW NOA Ɔ
+      sbs: 0.6802
+      gen_sec: 4.52
+      ref_sec: 4.62
+      cer: 0.26
+      wer: 0.8571
+    jw_00037:
+      source: jw
+      text: MMERƐ BƆ W’ADWENE YƐ WƆ KYƐ WƆNWO NHIA YEHOWA NE
+      sbs: 0.7519
+      gen_sec: 3.5
+      ref_sec: 4.0
+      cer: 0.1842
+      wer: 0.7
+    jw_00038:
+      source: jw
+      text: Kyɛbɔ Ɛkɔhora Kogyina Ndɛengyea Noa Ɔ
+      sbs: 0.6361
+      gen_sec: 2.9
+      ref_sec: 3.23
+      cer: 0.2188
+      wer: 0.8333
+    jw_00039:
+      source: jw
+      text: BƆ ƆKƆBOKA WƆ MAA EKODWU BƆ AFA ASIE WƆNYE SO NANWO Ɔ
+      sbs: 0.657
+      gen_sec: 3.84
+      ref_sec: 3.78
+      cer: 0.4048
+      wer: 0.9167
+    jw_00040:
+      source: jw
+      text: Gyidie bɔ yele ye wɔ Yehowa ahyehyɛdeɛ nanu ne, yɛkɔyɛ sɛɛ ne yahɔso yamaa nu ayɛ se?
+      sbs: 0.7272
+      gen_sec: 6.31
+      ref_sec: 6.13
+      cer: 0.1045
+      wer: 0.4118
+    jw_00041:
+      source: jw
+      text: Ngɔm Bɔ Yakob Hyɛle Kora Yeɛ Owu Ne
+      sbs: 0.6492
+      gen_sec: 2.56
+      ref_sec: 5.27
+      cer: 0.4286
+      wer: 0.875
+    jw_00042:
+      source: jw
+      text: Ɔkɔboka yɛ maa yɛkɔyere yenwo yɛkɔkenga Bible ne kyẽa biala, yɛkɔdwenedwene yenwo, na yafa
+        bɔ yasua ne yabɔ yɛ bra.
+      sbs: 0.7138
+      gen_sec: 8.96
+      ref_sec: 9.32
+      cer: 0.172
+      wer: 0.75
+    jw_00043:
+      source: jw
+      text: BƆ ƆMAA YENWU KYƐ ƐNNƐ KOSO, YEHOWA NYƐ NYEYEMUƐ Ɔ
+      sbs: 0.6857
+      gen_sec: 3.84
+      ref_sec: 5.61
+      cer: 0.25
+      wer: 0.8
+    jw_00044:
+      source: jw
+      text: BAFI AWOSII NU BAWA KANEA NU
+      sbs: 0.6856
+      gen_sec: 2.05
+      ref_sec: 3.61
+      cer: 0.1304
+      wer: 0.6667
+    jw_00045:
+      source: jw
+      text: NHYIAMU AHOROƐ HÃNE ALIEMAAMƆ BƆLE NU
+      sbs: 0.6882
+      gen_sec: 2.99
+      ref_sec: 3.73
+      cer: 0.375
+      wer: 1.0
+    jw_00046:
+      source: jw
+      text: Nzu Yeɛ Ɔkɔboka Wɔ Maa Wɔnye Kɔgye Mmerɛ Bɔ Ɛnwondɛ Yehowa Ne?
+      sbs: 0.7176
+      gen_sec: 4.78
+      ref_sec: 5.12
+      cer: 0.2
+      wer: 0.5833
+    jw_00047:
+      source: jw
+      text: YEHOWA MANE YƐ ANWOSERƐ MMERƐ PO BƆ NÉ YƐ WORA ABƆ NE
+      sbs: 0.7113
+      gen_sec: 3.93
+      ref_sec: 4.6
+      cer: 0.2381
+      wer: 0.8333
+    jw_00048:
+      source: jw
+      text: BƆ ƆHƆLESO WƆ M’ASETENA NU WƆ FINLAND Ɔ
+      sbs: 0.6688
+      gen_sec: 2.82
+      ref_sec: 3.47
+      cer: 0.1613
+      wer: 0.75
+    jw_00049:
+      source: jw
+      text: SƐ EHŨ KƆSO NEA PONOGRAFI A, NZU YEƐ ƐKƆHORA KƆYƐ Ɔ?
+      sbs: 0.6718
+      gen_sec: 3.93
+      ref_sec: 5.12
+      cer: 0.375
+      wer: 1.0909
+    jw_00050:
+      source: jw
+      text: YƐKƆYƐ SƐƐ NÉ YAYƐ KRISTONIƐ BƆ WANYI WƆ SUNZUM NU Ɔ?
+      sbs: 0.6926
+      gen_sec: 3.93
+      ref_sec: 4.41
+      cer: 0.2381
+      wer: 0.8182
+    jw_00051:
+      source: jw
+      text: Nningyein benimɔ anu yeɛ odikyɛ yɛnea yé, na yangɔ nzɔhwɛ nu ɔ?
+      sbs: 0.7094
+      gen_sec: 4.78
+      ref_sec: 4.53
+      cer: 0.26
+      wer: 0.8333
+    jw_00052:
+      source: jw
+      text: BƆ YETI YEƐ ODIKYƐ YEKYIRE OBUO YƐMA ALIEMAA MMRASUA NEMƆ Ɔ
+      sbs: 0.6936
+      gen_sec: 4.52
+      ref_sec: 4.62
+      cer: 0.1633
+      wer: 1.0909
+    jw_00053:
+      source: jw
+      text: Mvasoɛ beni yeɛ yekonya yekofi Yesu wue naso kyẽabie ɔ?
+      sbs: 0.6747
+      gen_sec: 4.35
+      ref_sec: 6.59
+      cer: 0.2889
+      wer: 0.8
+    jw_00054:
+      source: jw
+      text: BOKA ALIEMAAMƆ BƆ BAHA SUA NU NE
+      sbs: 0.6613
+      gen_sec: 2.39
+      ref_sec: 3.11
+      cer: 0.1538
+      wer: 0.8571
+    jw_00055:
+      source: jw
+      text: Anwokeka bɔ Yesu fayɛle asɛnga adwuma ne, yɛkɔnea atee nna bɔ yɛkɔfaso yekosuesua ɔ.
+      sbs: 0.7165
+      gen_sec: 6.57
+      ref_sec: 7.6
+      cer: 0.1159
+      wer: 1.0714
+    jw_00056:
+      source: jw
+      text: SƐƐ YEƐ ƐKƆYE EDWIRƐ HEMƆ NOA Ɔ?
+      sbs: 0.6388
+      gen_sec: 2.3
+      ref_sec: 3.28
+      cer: 0.56
+      wer: 1.1429
+    jw_00057:
+      source: jw
+      text: ENYA YENWO ATEE KƆ WƆ NYUNU
+      sbs: 0.6729
+      gen_sec: 2.05
+      ref_sec: 3.11
+      cer: 0.4091
+      wer: 1.1667
+    jw_00058:
+      source: jw
+      text: Yehowa Boka Ye Mmenia Maa Bɛte Bible Nabo
+      sbs: 0.6717
+      gen_sec: 3.07
+      ref_sec: 5.77
+      cer: 0.1471
+      wer: 0.625
+    jw_00059:
+      source: jw
+      text: Yɛkɔyɛ sɛɛ né yafa Yehowa yayɛ yɛ Nyɔbotaen?
+      sbs: 0.7187
+      gen_sec: 3.41
+      ref_sec: 4.17
+      cer: 0.25
+      wer: 1.0
+    jw_00060:
+      source: jw
+      text: NZU YEƐ YESUA YEFI AFUTUE BƆ ƆPƐ YEBO BƆ . . .
+      sbs: 0.7589
+      gen_sec: 3.24
+      ref_sec: 3.71
+      cer: 0.1875
+      wer: 0.8889
+    jw_00061:
+      source: jw
+      text: YERE WƆNWO KYƐ ƐKƆHƆSO KOGYINA PINDINN
+      sbs: 0.6827
+      gen_sec: 3.07
+      ref_sec: 3.97
+      cer: 0.5152
+      wer: 1.0
+    jw_00062:
+      source: jw
+      text: Nningyein beni yeɛ odikyɛ yɛyere yɛnwo kyɛ yɛkɔyɛ ɔ, na nzu yeɛ ɔnzɛkyɛ yɛmaa yɛ wora fi ye
+        llé ɔ?
+      sbs: 0.7188
+      gen_sec: 7.34
+      ref_sec: 7.5
+      cer: 0.2338
+      wer: 0.85
+    jw_00063:
+      source: jw
+      text: Nningyein beni yeɛ Yehowa nate so maa yenwu ye kyɛ, yenye gye yɛnwo ɔ?
+      sbs: 0.6842
+      gen_sec: 5.46
+      ref_sec: 4.96
+      cer: 0.1818
+      wer: 0.6429
+    jw_00064:
+      source: jw
+      text: Si Gyinayɛɛ Bɔ Yehowa Nye Kɔgye Yenwo Ɔ
+      sbs: 0.6577
+      gen_sec: 2.99
+      ref_sec: 3.71
+      cer: 0.2188
+      wer: 0.5
+    jw_00065:
+      source: jw
+      text: “MAYIE ADWUMA BƆ ƐFA MANE ME KYƐ NYƆ NE”
+      sbs: 0.6867
+      gen_sec: 2.65
+      ref_sec: 3.59
+      cer: 0.1
+      wer: 0.4444
+    jw_00066:
+      source: jw
+      text: Nzu yeɛ Bible ne kã kyɛ yekonya ye kyẽabie ɔ?
+      sbs: 0.6671
+      gen_sec: 3.5
+      ref_sec: 3.61
+      cer: 0.3429
+      wer: 0.7
+    jw_00067:
+      source: jw
+      text: BƆ ƆKƆMAA EKONWU KYƐ WƆNWO HIA YEHOWA Ɔ
+      sbs: 0.7055
+      gen_sec: 3.07
+      ref_sec: 3.08
+      cer: 0.3125
+      wer: 0.625
+    jw_00068:
+      source: jw
+      text: KƆSO NYA GYIDIE WƆ YEHOWA AHYEHYƐDEƐ NANU
+      sbs: 0.7215
+      gen_sec: 3.24
+      ref_sec: 3.33
+      cer: 0.0857
+      wer: 0.4286
+    jw_00069:
+      source: jw
+      text: BƆ ODIKYƐ YƐMAA YENWO HIA YƐ PAA Ɔ
+      sbs: 0.6356
+      gen_sec: 2.56
+      ref_sec: 3.13
+      cer: 0.2222
+      wer: 0.75
+    jw_00070:
+      source: jw
+      text: Ɔdɔ Bɔ Ɔwɔ Agyaa Nu Ne, Ɔte Kyɛ Sẽe. Nnɛmaa Onua
+      sbs: 0.7429
+      gen_sec: 3.58
+      ref_sec: 5.15
+      cer: 0.2778
+      wer: 1.0
+    jw_00071:
+      source: jw
+      text: SUESUA KYƐBƆ YEHOWA BUA NDƐEN TUROLOO, NÁ ONWU ANWUMVOIN NE
+      sbs: 0.6797
+      gen_sec: 4.78
+      ref_sec: 4.79
+      cer: 0.2449
+      wer: 0.8
+    jw_00072:
+      source: jw
+      text: ‘AWURADE ANWUMVOINNWUNƐ SONE, NA OSA LE TEMA MAA ƆBO SO’
+      sbs: 0.6914
+      gen_sec: 4.35
+      ref_sec: 4.43
+      cer: 0.1591
+      wer: 0.7
+    jw_00073:
+      source: jw
+      text: YƐNATE RADIO SO YƐHANE NZƐMBA NE
+      sbs: 0.6417
+      gen_sec: 2.47
+      ref_sec: 4.17
+      cer: 0.5185
+      wer: 1.0
+    jw_00074:
+      source: jw
+      text: BƆ YEHOWA AHYƐ BƆ KYƐ ƆKƆYƐ YE KYẼA BIE NE, ƆKYEKYE YƐ WORA
+      sbs: 0.7166
+      gen_sec: 4.44
+      ref_sec: 4.43
+      cer: 0.1957
+      wer: 0.6923
+    jw_00075:
+      source: jw
+      text: Sɛ yenwu bɔ yeti yeɛ Yehowa mane atee maa Yob nwuni amaneɛ ne a, sɛɛ yeɛ ɔkɔboka yɛ ɔ?
+      sbs: 0.6766
+      gen_sec: 6.49
+      ref_sec: 6.23
+      cer: 0.1818
+      wer: 0.6316
+    jw_00076:
+      source: jw
+      text: BƐBƆ BƐKƆHƆ ANWURO NE, SƐ BENU SONA BƆ ƆPƐ YEBO NE FI ASEƐ HE SO A,
+      sbs: 0.6839
+      gen_sec: 4.86
+      ref_sec: 5.37
+      cer: 0.08
+      wer: 0.25
+    jw_00077:
+      source: jw
+      text: YƐ NZƐMBATRƐLƐ ADWUMA BƆ OLIMOA Ɔ
+      sbs: 0.6545
+      gen_sec: 2.47
+      ref_sec: 3.08
+      cer: 0.2143
+      wer: 0.6667
+    jw_00078:
+      source: jw
+      text: YƐKƆYƐ SƐƐ NÉ YAHƆSO YASÕ YEHOWA MMERƐ BƆ . . .
+      sbs: 0.7377
+      gen_sec: 3.5
+      ref_sec: 4.12
+      cer: 0.2353
+      wer: 0.875
+    jw_00079:
+      source: jw
+      text: Nzu Yeɛ Asafo Nu Mbanyi Kɔhora Kɔyɛ Ɔ?
+      sbs: 0.6543
+      gen_sec: 2.82
+      ref_sec: 6.57
+      cer: 0.2
+      wer: 0.75
+    jw_00080:
+      source: jw
+      text: Kyɛbɔ né Yesu susu nningyein nwo ne, yɛkɔnea bɔ somafoɛ Petro sua fili nu, ɔne bɔ yɛkoso yɛkɔhora
+        yekosua yekofi nu ɔ.
+      sbs: 0.6502
+      gen_sec: 9.05
+      ref_sec: 9.71
+      cer: 0.117
+      wer: 0.8182
+    jw_00081:
+      source: jw
+      text: Ɔbaadwu sɔ mmerɛ ne mukoraati, ne Bible Asuafoɛ nemɔ falle dumaa Yehowa Adanzefoɛ ne bɛtolle
+        bɛnwo so. Nakoso ngakangaka, beenwuni kyɛ yenwo hia paa kyɛ bekoli Yehowa nwo adanzeɛ.
+      sbs: 0.7087
+      gen_sec: 14.25
+      ref_sec: 13.64
+      cer: 0.1156
+      wer: 0.7241
+    jw_00082:
+      source: jw
+      text: Ɛwɛnelɛ Waen INTANƐT SO NWOMAA AKORAEƐ ™
+      sbs: 0.7007
+      gen_sec: 3.07
+      ref_sec: 3.47
+      cer: 0.2424
+      wer: 0.6667
+    jw_00083:
+      source: jw
+      text: Ɔhene Yoase yɛle nanu ɔ?
+      sbs: 0.6852
+      gen_sec: 1.79
+      ref_sec: 3.54
+      cer: 0.5789
+      wer: 1.0
+    jw_00084:
+      source: jw
+      text: ATEE BƆ YƐKƆFA SO YƐKƆHÃ NAHORƐ NANWO DWIRƐ Ɔ
+      sbs: 0.6718
+      gen_sec: 3.5
+      ref_sec: 7.09
+      cer: 0.2162
+      wer: 0.5556
+    jw_00085:
+      source: jw
+      text: BƆ ƆKƆBOKA WƆ MAA EKOSŨA NIKYEE YÉ Ɔ
+      sbs: 0.5792
+      gen_sec: 2.73
+      ref_sec: 3.73
+      cer: 0.3448
+      wer: 0.625
+    jw_00086:
+      source: jw
+      text: BƆ ƆKƆBOKA YƐ MAA YƐKƆFA YƐNWO YƐKƆTO YEHOWA SO Ɔ
+      sbs: 0.6996
+      gen_sec: 3.75
+      ref_sec: 4.5
+      cer: 0.2
+      wer: 0.9
+    jw_00087:
+      source: jw
+      text: ɔboka mmenia maa benya ngõa ɔ?
+      sbs: 0.6677
+      gen_sec: 2.39
+      ref_sec: 3.28
+      cer: 0.5
+      wer: 1.5
+    jw_00088:
+      source: jw
+      text: Yɛkã nzɛmba ne yekyire mmenia ahoroɛ wɔ Tanzania
+      sbs: 0.671
+      gen_sec: 3.84
+      ref_sec: 7.38
+      cer: 0.1707
+      wer: 0.5
+    jw_00089:
+      source: jw
+      text: e Nikyee bɔ né sɔfo panyi ne yɛ ye wɔ Mbata Kyẽa ne, sɛ ɛpena kyɛ enwu bɔ okyire a, nea vidio
+        bɔ ɔwɔ jw.org so bɔ ye dwirɛti yeɛ ole The Tent ne .
+      sbs: 0.735
+      gen_sec: 10.41
+      ref_sec: 14.72
+      cer: 0.213
+      wer: 0.5
+    jw_00090:
+      source: jw
+      text: Y’abusuafoɛ bɔ bɛnne asafo nanu ne, nzuati yeɛ odikyɛ yenya bɛnwo aboterɛ, na yenya gyidie
+        kyɛ bɛkɔhora bɛkɔɔsõ Yehowa kyẽabie ɔ?
+      sbs: 0.688
+      gen_sec: 10.24
+      ref_sec: 8.96
+      cer: 0.2
+      wer: 0.8571
+    jw_00091:
+      source: jw
+      text: YEHOWA NE YESU TE EDWIRƐ BO
+      sbs: 0.6752
+      gen_sec: 1.88
+      ref_sec: 3.16
+      cer: 0.0455
+      wer: 0.3333
+    jw_00092:
+      source: jw
+      text: “Mangora mammɔ edwirɛ naso mangyire ebiala, yeti ɛyalɛ bɔ né mefa nu, mva nwurale menwo.”
+      sbs: 0.7229
+      gen_sec: 6.83
+      ref_sec: 8.1
+      cer: 0.2143
+      wer: 0.8667
+    jw_00093:
+      source: jw
+      text: Aso Étie Kɔkɔbɔ Ahoroɛ Ne?
+      sbs: 0.6719
+      gen_sec: 1.96
+      ref_sec: 3.52
+      cer: 0.3333
+      wer: 0.8
+    jw_00094:
+      source: jw
+      text: Yekonwu bɔ yɛkɔhora yekosua yekofi abɔfo nemɔ berɛ ɔ.
+      sbs: 0.634
+      gen_sec: 4.18
+      ref_sec: 4.5
+      cer: 0.3636
+      wer: 1.0
+    jw_00095:
+      source: jw
+      text: BƆ ƆKƆMAA GYINAYƐƐ BƆ ESI NE KƆHƆ YÉ Ɔ
+      sbs: 0.6564
+      gen_sec: 2.73
+      ref_sec: 3.61
+      cer: 0.3
+      wer: 0.6667
+    jw_00096:
+      source: jw
+      text: Tworɔ wɔ mmuayɛɛ ne wura wa
+      sbs: 0.6189
+      gen_sec: 1.96
+      ref_sec: 6.4
+      cer: 0.2727
+      wer: 0.8333
+    jw_00097:
+      source: jw
+      text: nzu yeɛ yɛkɔhora yɛkɔyɛ mmerɛ bɔ ɔyɛ se ma yɛ kyɛ yekodwu yenwo ne?
+      sbs: 0.709
+      gen_sec: 4.95
+      ref_sec: 4.48
+      cer: 0.1698
+      wer: 0.6429
+    jw_00098:
+      source: jw
+      text: Mmerɛ bɔ bɛwole Yesu ne, nzuati yeɛ Yosef ne Mary hɔleso tenane Betlehem, ná baangɔ Nasarɛte
+        ɔ?
+      sbs: 0.7058
+      gen_sec: 7.25
+      ref_sec: 9.54
+      cer: 0.1974
+      wer: 0.6471
+    jw_00099:
+      source: jw
+      text: YEHOWA KORA FA YE TUMI SI NIKYEEBIE ATEE
+      sbs: 0.6594
+      gen_sec: 2.99
+      ref_sec: 4.09
+      cer: 0.2424
+      wer: 0.875
 - model: Google/gemini-3.1-flash-tts-preview
   model_url: https://ai.google.dev/gemini-api/docs/speech-generation
   mode: noref
@@ -15104,4 +16781,4 @@ benchmarks:
       ref_sec: 4.09
       cer: 0.8182
       wer: 1.375
-updated: '2026-10-03'
+updated: '2026-10-09'

@@ -1786,6 +1786,1781 @@ benchmarks:
       ref_sec: 12.32
       cer: 0.0645
       wer: 0.1081
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7498
+  num_scored: 200
+  cer: 0.0468
+  wer: 0.1225
+  accuracy: 0.9532
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8515
+  score: 0.8515
+  per_source:
+    bible:
+      sbs: 0.7498
+      cer: 0.0468
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Yesu gyɩ sii kɩ mʋ Gyerusalɛm nɛ, a gɔllɩ tɩŋ tɔnɩ hʋ buloŋ aa we doŋ dɩɩlaŋ, a kɩ daga nala
+        Wɩɩsɩ wɩya.
+      sbs: 0.7307
+      gen_sec: 8.62
+      ref_sec: 6.14
+      cer: 0.0253
+      wer: 0.2174
+    bible_00001:
+      source: bible
+      text: Ɛɛ rɛ ʋ kpa ʋ nosi dɔbɔ ba tɩyaŋ aŋ kyʋwalɩ Wɩɩsɩ tɩya ba aŋ lɩɩ doŋ kpa mʋ.
+      sbs: 0.7618
+      gen_sec: 6.31
+      ref_sec: 5.9
+      cer: 0.193
+      wer: 0.4737
+    bible_00002:
+      source: bible
+      text: Lagɩlagɩ no, ŋ basɩ wɩya kɩ tɩya ma rɛ anɩɩ ŋ balɩya. Ma ta kpaa wɩɩ buloŋ faŋ ma. Ɛɛ hʋ á
+        aa kɩya beel-ma, ma mɛ kɩɩ gɛɛ beel-ma.
+      sbs: 0.7723
+      gen_sec: 10.75
+      ref_sec: 10.58
+      cer: 0.0106
+      wer: 0.0333
+    bible_00003:
+      source: bible
+      text: Ba aa kpaasɩ ʋ mal daagarɩɩ hʋ tɩyaŋ gɛɛ, nala hʋ aa tɩŋ doŋ kɩ baŋ kɩ tʋʋsɩ ʋ aŋ kaŋ ba nyuni
+        kɩ kyugisi
+      sbs: 0.6939
+      gen_sec: 8.87
+      ref_sec: 8.28
+      cer: 0.1125
+      wer: 0.16
+    bible_00004:
+      source: bible
+      text: Ma leŋ dɩ nala balɩya koo boto basɩ Wɩɩsɩ wɩya Wiyesi Welii hʋ dee tɩyaŋ, ka dɩ ma nɩkaalɩya
+        hʋ mɛ sʋnnɩ ba wɩbasɩɩ hʋ na weliŋ, dɩ wɩya hʋ ba aa basɩ lɩɩ Wɩɩsɩ lee rɛ koo ba lɩɩ ba tɩɩ hakɩllɩ
+        tɩyaŋ nɛ.
+      sbs: 0.7444
+      gen_sec: 16.89
+      ref_sec: 14.74
+      cer: 0.0385
+      wer: 0.0667
+    bible_00005:
+      source: bible
+      text: Kyɛɛ hʋ nala aa sɩ sii sʋʋ tɩyaŋ, baala no bapɛ tɩyaŋ, kɩbee rɛ sɩ tɩŋ haaŋ hʋ? Beewɩya ba
+        buloŋ bapɛ rɛ kpaa ʋ ko baŋ kyeme.”
+      sbs: 0.7852
+      gen_sec: 10.67
+      ref_sec: 10.46
+      cer: 0.0213
+      wer: 0.1429
+    bible_00006:
+      source: bible
+      text: Dɩ mamaa rɛ laa di anɩɩ wɩya no yaa wɩtɩɩ rɛ, ɛɛ kɛ ʋ maga dɩ ma gyɩma anɩɩ Gyɔɔŋ nɛ yaa nal
+        hʋ wɩya ba gyɩ aa basa Wɩɩsɩ teŋ tɩyaŋ anɩɩ Ilaagya sɩ mɩɩgɩ ko hʋ.
+      sbs: 0.7547
+      gen_sec: 12.46
+      ref_sec: 13.22
+      cer: 0.0165
+      wer: 0.0789
+    bible_00007:
+      source: bible
+      text: Ɛɛ rɛ Yesu basɩ tɩya tɩya hʋ a baa, “Á lɩɩ gyɩnaŋ a kaŋ kɩ mʋ, nal buloŋ bɩl bɩ sɩ na ɩ nɔŋ
+        di.” Ʋ hatɩnna hʋ nɩɩ ʋ aa basɩ gɛɛ.
+      sbs: 0.7005
+      gen_sec: 9.9
+      ref_sec: 9.54
+      cer: 0.0333
+      wer: 0.1212
+    bible_00008:
+      source: bible
+      text: Ɛɛwɩya, dɩ nal lɛ ŋmɩyɛsɩ wɩɩsʋllɩ-kɩna kogu hʋ, ʋ ŋmɩyɛsɩ kogu hʋ bee kɩŋ hʋ buloŋ aa dɔbɔ
+        ʋ a tɩyaŋ nɛ.
+      sbs: 0.7425
+      gen_sec: 9.13
+      ref_sec: 7.42
+      cer: 0.0875
+      wer: 0.2727
+    bible_00009:
+      source: bible
+      text: Sɩgballɩya sɩ kɩɩ gɛɛ anɩɩ tebine. Ka dɩ pene mɛ fɩyɛsɩ gɛɛ anɩɩ kyal. Wɩya no buloŋ sɩ yaa
+        rɛ, ka dɩ á Tɩɩna Kyɛbal hʋ yaŋ na pele.
+      sbs: 0.7531
+      gen_sec: 10.84
+      ref_sec: 10.9
+      cer: 0.02
+      wer: 0.069
+    bible_00010:
+      source: bible
+      text: Ŋ gyɩ kaŋ teŋbil lɛ, ma kpa gal laalɩ ŋ. Ŋ gyɩ aa wɩɩlɩ lɛ, ma deŋ ŋ lee weliŋ. Ba gyɩ kana
+        ŋ tɔ dɩyaŋ nɛ, ma ko na ŋ.”
+      sbs: 0.7842
+      gen_sec: 9.81
+      ref_sec: 10.02
+      cer: 0.0366
+      wer: 0.1613
+    bible_00011:
+      source: bible
+      text: Amɛ ʋ hatɩnna hʋ gyɩ bɩ gyɩŋ wɩɩ hʋ ʋ aa basa memii. Ʋ yaa wɩfaŋɩɩ rɛ ba lee. Ɛɛ rɛ tɩŋ ba
+        gyɩ bɩ wuwo gyɩŋ ʋ memii. Amɛ ba kɩ fá kambɩŋ ba aa sɩ pɩyɛsɩ ʋ wɩɩ hʋ memii.
+      sbs: 0.7571
+      gen_sec: 13.06
+      ref_sec: 11.8
+      cer: 0.0163
+      wer: 0.0238
+    bible_00012:
+      source: bible
+      text: Yesu bɩl aa lɩɩ kpa ŋmanɩɩ kɩ mʋ, nɩgyamaa sii paa tɩŋa ʋ hal. Nyɛ rɛ ʋ mɩɩgɩ basɩ tɩya ba
+        a baa,
+      sbs: 0.6739
+      gen_sec: 7.77
+      ref_sec: 5.78
+      cer: 0.0556
+      wer: 0.087
+    bible_00013:
+      source: bible
+      text: Saŋa no tɩyaŋ nɛ Yesu gyɩ piili kɩ basɩ Wɩɩsɩ wɩya a baa, “Ma bɩrɩmɩ lɩɩ ma wɩbɔmɔ tɩyaŋ,
+        beewɩya, Wɩɩsɩbee koro hʋ kpaga rɛ.”
+      sbs: 0.7517
+      gen_sec: 10.41
+      ref_sec: 9.7
+      cer: 0.0208
+      wer: 0.08
+    bible_00014:
+      source: bible
+      text: Kɩna no ma aa tɩya nyɛ, ʋ bɩ kɩɩ nɩɩ ma dɔŋtɩŋsɩ Krisitabiisi hʋ kɩkyɛɛlɩya dʋŋ nɛ ba sɩ na,
+        amɛ ɛɛ mɛ sɩ leŋ dɩ ba kyʋwalɩ Wɩɩsɩ aŋgyʋwasʋ weliŋ.
+      sbs: 0.7674
+      gen_sec: 12.37
+      ref_sec: 10.9
+      cer: 0.0708
+      wer: 0.1935
+    bible_00015:
+      source: bible
+      text: Wɩɩ hʋ ma aa kyɛ dɩ ma na a gyɩma anɩɩ Krisita tɩŋa ŋ tɩyaŋ nɛ a kɩ basɩ wɩya, ma sɩ na ʋ.
+        Ma sɩ na mɛ anɩɩ ʋ kaŋ dee rɛ ma lee, a wuwo ma wɩɩ buloŋ tɩyaŋ.
+      sbs: 0.8052
+      gen_sec: 12.29
+      ref_sec: 14.26
+      cer: 0.0541
+      wer: 0.0976
+    bible_00016:
+      source: bible
+      text: Ɛɛ rɛ Yesu basɩ tɩya ba a baa, “Wɩɩ hʋ aa kperi nihuwobiŋ, ʋ bɩ kpere Wɩɩsɩ kɛ.”
+      sbs: 0.7416
+      gen_sec: 6.31
+      ref_sec: 7.06
+      cer: 0.0172
+      wer: 0.0556
+    bible_00017:
+      source: bible
+      text: Nyɛ rɛ kyɛɛ kɩdɩgɩ tebine, Sɔɔl noŋ nala hʋ kpa ʋ we simbiye tɩyaŋ, a kaŋ ŋmaŋ vʋwa, a kpa
+        ʋ ta ʋ tuu gyee hʋ ba aa saa baarɩ bee hʋ hal sɔmmm, a sii mʋ Gyerusalɛm.
+      sbs: 0.7767
+      gen_sec: 13.31
+      ref_sec: 13.0
+      cer: 0.0984
+      wer: 0.2632
+    bible_00018:
+      source: bible
+      text: Ma kyɛ gyaagʋ tɩya Pɔɔl dɩ ʋ mɛ gyɩŋ, a kana ʋ weliŋ a kaŋ mʋ Sizaariya, a kana ʋ mʋ we Roma
+        nɩhɩyawʋ hʋ aa deŋ paalʋʋ hʋ ba kɩ yɩrɩ Fɛlisi nosi tɩyaŋ.”
+      sbs: 0.7309
+      gen_sec: 12.29
+      ref_sec: 12.84
+      cer: 0.0
+      wer: 0.0
+    bible_00019:
+      source: bible
+      text: Nyɛ rɛ ba kaŋ ba mʋ ba Roma nɩhɩyasɩ sɩya, a basɩ tɩya ba a baa, “Nala no yaa Gyuuma rɛ aŋ
+        ko kaŋ á bee buloŋ kɩ dɔŋ.
+      sbs: 0.6862
+      gen_sec: 9.39
+      ref_sec: 9.3
+      cer: 0.0471
+      wer: 0.1379
+    bible_00020:
+      source: bible
+      text: dɩ ʋ laa ɩ sɩya a mʋ a marɩ ɩ ŋmanɩɩ bin-ɩ.”’
+      sbs: 0.659
+      gen_sec: 3.33
+      ref_sec: 3.92
+      cer: 0.1333
+      wer: 0.3333
+    bible_00021:
+      source: bible
+      text: Nyɛ rɛ Piita mɩɩgɩ basɩ tɩya ʋ, “Ŋ bɩ kaŋ molbii buloŋ ŋ aa sɩ tɩya ɩ, amɛ kɩŋ hʋ ŋ aa kana,
+        ʋ rɛ ŋ sɩ kpa tɩya ɩ. Yesu Krisita aa lɩɩ Nazarɛti feŋ tɩyaŋ, ŋ baa ‘Sii kɩ vala.”’
+      sbs: 0.6686
+      gen_sec: 14.42
+      ref_sec: 13.32
+      cer: 0.024
+      wer: 0.0476
+    bible_00022:
+      source: bible
+      text: Wɩɩ buloŋ bɩ leŋ ŋ teŋ fɩyɛlɩ a maga ŋ aa nɩya anɩɩ ŋ biisi aa tɩŋ wɩtɩɩ ŋmanɩɩ hʋ rɛ.
+      sbs: 0.722
+      gen_sec: 7.59
+      ref_sec: 8.7
+      cer: 0.0462
+      wer: 0.0476
+    bible_00023:
+      source: bible
+      text: Ɛɛwɩya, ŋ aa sabɩ teŋ hʋ, ʋ bɩ kɩɩ nɩɩ nal hʋ aa yaa wɩɩ kyogi, koo nal hʋ ba aa yaa wɩɩ hʋ
+        kyogi wɩya rɛ kyɩla ŋ. Amɛ ŋ aa kyɛ dɩ Wɩɩsɩ leŋ ma gyɩŋ ɛɛ hʋ ma aa kyɩla á wɩya rɛ.
+      sbs: 0.7757
+      gen_sec: 13.99
+      ref_sec: 13.5
+      cer: 0.0236
+      wer: 0.1087
+    bible_00024:
+      source: bible
+      text: Nyɛ rɛ ba kyɛ ʋ lɔlɔ ba tɩyaŋ, aŋ mɩɩgɩ kile ʋ lugo mʋ Gyerusalɛm, a deŋ kɩ kyɛ ʋ doŋ.
+      sbs: 0.7762
+      gen_sec: 7.0
+      ref_sec: 6.66
+      cer: 0.1429
+      wer: 0.2857
+    bible_00025:
+      source: bible
+      text: Nala sɩ lɩɩ dʋnɩya logiŋ logiŋ buloŋ a gyʋʋ Wɩɩsɩ koro hʋ, a hɔŋ kɩ di kɩna aŋ kɩ gbɩyalɩ.
+      sbs: 0.7607
+      gen_sec: 7.68
+      ref_sec: 7.08
+      cer: 0.0435
+      wer: 0.1
+    bible_00026:
+      source: bible
+      text: Ma bɩ gyɩŋ wɩɩ no memii? Kɩŋ kɛ buloŋ aa tɩŋ nal nyʋwa gyʋʋ, ʋ aa tuu ʋ fuu rɛ, a tɩŋ ʋ memii
+        lɩɩ.
+      sbs: 0.7749
+      gen_sec: 7.85
+      ref_sec: 8.08
+      cer: 0.0286
+      wer: 0.12
+    bible_00027:
+      source: bible
+      text: Ʋ aa yaa wɩkperiye no pɩɩsɩ rɛ, ɛɛ rɛ tɩŋ nala na anɩɩ ʋ bɩra rɛ. Ɛɛ rɛ tɩŋ ba kpa ba nyuni
+        we ʋ wɩyaalɩya tɩyaŋ gɛɛ.
+      sbs: 0.7502
+      gen_sec: 9.47
+      ref_sec: 7.96
+      cer: 0.0115
+      wer: 0.0357
+    bible_00028:
+      source: bible
+      text: Ŋ teŋ fɩyɛlɩ rɛ weliŋ abee Sɩtɩfanasɩ, Fɔɔtunaatusɩ abee Akayikusɩ aa ko ŋ lee. Ba aa rɛ laa
+        ma nyuu daha.
+      sbs: 0.755
+      gen_sec: 9.22
+      ref_sec: 8.7
+      cer: 0.1084
+      wer: 0.2857
+    bible_00029:
+      source: bible
+      text: Ma aa sɩŋ weliŋ á Tɩɩna Yesu wɩya hʋ ma aa laa di tɩyaŋ wɩya, nyɛ kɛ á dʋnɩya tɩyaŋ weyi kaŋ
+        tɔnɔ rɛ.
+      sbs: 0.771
+      gen_sec: 8.45
+      ref_sec: 6.92
+      cer: 0.0395
+      wer: 0.125
+    bible_00030:
+      source: bible
+      text: Wɩɩsɩ koro hʋ we ma tɩyaŋ nɛ. Ɛɛwɩya, nal buloŋ bɩ sɩ wuwo baa, ‘Ma deŋ na, ʋ we daha, koo
+        ʋ we lee kɩdɩgɩ dɔŋ.”’
+      sbs: 0.7964
+      gen_sec: 9.13
+      ref_sec: 10.14
+      cer: 0.0
+      wer: 0.0
+    bible_00031:
+      source: bible
+      text: Saŋa hʋ tɩyaŋ mɩyaŋ Nihuwobiŋ Biye aa sɩ mɩɩgɩ ko, ʋ sɩ kɩɩ gɛɛ anɩɩ wɩya hʋ gyɩ aa yaa saŋa
+        hʋ Nowa gyɩ aa we ʋ mɩɩbol tɩyaŋ.
+      sbs: 0.7482
+      gen_sec: 10.41
+      ref_sec: 9.88
+      cer: 0.0
+      wer: 0.0
+    bible_00032:
+      source: bible
+      text: a baa, “Nɩhɩyawʋ, Wɩɩsɩ mɩrɩsɩ hʋ tɩyaŋ, ba kɩbee rɛ yaa ba buloŋ tɩyaŋ sɩfɩyaŋ wɩɩ?”
+      sbs: 0.7831
+      gen_sec: 7.34
+      ref_sec: 6.96
+      cer: 0.0
+      wer: 0.0
+    bible_00033:
+      source: bible
+      text: Haana hʋ gyɩ aa tɩŋ Yesu hal a lɩɩ Galili paalʋʋ ko sii tɩŋ Gyosɛfʋ hal a mʋ dɩ ba na ɛɛ ba
+        aa hogo Yesu bʋbʋwa hʋ tɩyaŋ.
+      sbs: 0.7427
+      gen_sec: 9.64
+      ref_sec: 9.58
+      cer: 0.0217
+      wer: 0.1034
+    bible_00034:
+      source: bible
+      text: Ŋ gyɩ aa ko ma lee, lɔl gyɩ gyʋʋ ŋ nɛ. Kambɩŋ mɛ gyɩ kana ŋ nɛ, ŋ kɩ kyele, ka ŋ baŋkyesi
+        kɩ kpa.
+      sbs: 0.77
+      gen_sec: 7.77
+      ref_sec: 7.04
+      cer: 0.1029
+      wer: 0.4
+    bible_00035:
+      source: bible
+      text: Gyotam mɛ sii lʋl Ahazɩ.
+      sbs: 0.6165
+      gen_sec: 1.88
+      ref_sec: 3.18
+      cer: 0.3158
+      wer: 1.0
+    bible_00036:
+      source: bible
+      text: Ɛɛ rɛ Siimɔŋ sʋla Piita bee Gyɔɔŋ dɩ ba kyʋwalɩ Wɩɩsɩ tɩya ʋ dɩ wɩya no buloŋ ba aa basa ta
+        yaa ʋ tɩyaŋ.
+      sbs: 0.7704
+      gen_sec: 8.62
+      ref_sec: 8.14
+      cer: 0.0125
+      wer: 0.0417
+    bible_00037:
+      source: bible
+      text: Ʋ hɔŋ doŋ mɛ pɩɩsɩ mʋhʋ rɛ aŋ bɩl sii tɩŋ Galetiya bee Firigyiya paalʋʋ, a basɩ wɩya kɩ tɩya
+        Krisitabiisi hʋ aa we doŋ, dɩ ba marɩ laa Yesu wɩya di weliŋ.
+      sbs: 0.7627
+      gen_sec: 12.97
+      ref_sec: 12.54
+      cer: 0.084
+      wer: 0.1818
+    bible_00038:
+      source: bible
+      text: Ɛɛ rɛ Pɔɔl dɩya toluu biibaal mɛ nɩɩ ba aa vʋʋlɩ wɩɩ hʋ. Ɛɛ rɛ ʋ sii mʋ gyʋʋ laalyuwolo dɩɩduwo
+        hʋ, a basɩ wɩɩ hʋ tɩya Pɔɔl.
+      sbs: 0.7477
+      gen_sec: 9.81
+      ref_sec: 8.2
+      cer: 0.0426
+      wer: 0.1071
+    bible_00039:
+      source: bible
+      text: Doŋ nɛ á we kyɛyɛ baŋmana, dɩ baal kɩdɩgɩ ba aa yɩrɩ Agabu mɛ lɩɩ Gyudɩya paalʋʋ ko. Ʋ mɛ
+        fa yaa Wɩɩsɩ tɩŋdaal lɛ.
+      sbs: 0.744
+      gen_sec: 9.39
+      ref_sec: 8.6
+      cer: 0.0345
+      wer: 0.08
+    bible_00040:
+      source: bible
+      text: Ɛɛ wɩya, dɩ ámaa rɛ kaŋ kɩdiiliye abee gannɩ, ʋ maga dɩ á leŋ dɩ ba maga ma rɛ.
+      sbs: 0.765
+      gen_sec: 6.4
+      ref_sec: 5.86
+      cer: 0.0172
+      wer: 0.1579
+    bible_00041:
+      source: bible
+      text: Dɩ mamaa rɛ ko mʋ tɔɔ buloŋ, dɩ tɔɔ hʋ nala bɩ tɔgɩmɔ ma, ma piisi ma naasɩ taŋha ta doŋ,
+        aŋ lɩɩ tɔɔ hʋ tɩyaŋ. Ɛɛ sɩ leŋ dɩ ba gyɩma anɩɩ ba aa vɩya ma nyɛ, Wɩɩsɩ sɩ dɔgɩsɩ ba.”
+      sbs: 0.7602
+      gen_sec: 14.34
+      ref_sec: 12.98
+      cer: 0.0775
+      wer: 0.119
+    bible_00042:
+      source: bible
+      text: Á Tɩɩna Yesu Krisita nyubaanɩŋ, ŋ aa sʋl ma, ŋ naabalɩya, ma buloŋ kaŋ nyʋʋdɩgɩ, a ta kɩ porigi
+        dɔmɔŋ. Ma kaŋ nyʋʋdɩgɩ abee tɩdɩgɩ wɩɩ buloŋ tɩyaŋ.
+      sbs: 0.7937
+      gen_sec: 13.23
+      ref_sec: 11.4
+      cer: 0.0614
+      wer: 0.1071
+    bible_00043:
+      source: bible
+      text: Ŋ basɩ kɩ tɩya ma rɛ, ma bɩl bɩ sɩ na ŋ, see saŋa hʋ tɩyaŋ ma aa sɩ lɔllɩ ŋ a baa, ‘Nyusʋŋtɩɩna
+        rɛ yaa nal hʋ aa ko Wɩɩsɩ feŋ tɩyaŋ.”’
+      sbs: 0.7728
+      gen_sec: 10.92
+      ref_sec: 13.26
+      cer: 0.0105
+      wer: 0.0303
+    bible_00044:
+      source: bible
+      text: Ba wɩbasɩɩ no ba aa basɩ hʋ nɛ gyɩ leŋ nala hʋ abee ba bee nɩhɩyasɩ buloŋ bɩ gyɩŋ wɩɩ hʋ buloŋ
+        ba aa sɩ yaa, aŋ kɩ yaa kyagɩŋsɩ dʋŋ.
+      sbs: 0.6891
+      gen_sec: 10.92
+      ref_sec: 12.3
+      cer: 0.01
+      wer: 0.0323
+    bible_00045:
+      source: bible
+      text: Amɛ baal hʋ basɩ tɩya ʋ a baa, “Ŋ nɩhɩyawʋ, ŋ bɩ maga dɩ ɩ ko gyʋʋ ŋ dɩya. Ɛɛwɩya ɩ kɛ haa
+        suri ɩ nyʋwa dʋŋ a baa dɩ ŋ tʋŋtʋnnɩ hʋ deye, ʋ sɩ deye.
+      sbs: 0.7529
+      gen_sec: 11.78
+      ref_sec: 12.2
+      cer: 0.0381
+      wer: 0.0541
+    bible_00046:
+      source: bible
+      text: Ba aa nɩɩ dɩ Pɔɔl basɩ wɩya ba tɩɩ taal tɩyaŋ gɛɛ, ba buloŋ yaa fʋɩɩ. Ɛɛ rɛ Pɔɔl basɩ tɩya
+        ba a baa,
+      sbs: 0.796
+      gen_sec: 8.11
+      ref_sec: 7.48
+      cer: 0.027
+      wer: 0.0833
+    bible_00047:
+      source: bible
+      text: Ɛɛ rɛ ka Yesu basɩ tɩya haaŋ hʋ a baa, “Ŋ kpaa ɩ wɩbɔmɔ kyɛ ɩ rɛ.”
+      sbs: 0.7327
+      gen_sec: 5.12
+      ref_sec: 4.32
+      cer: 0.0
+      wer: 0.0
+    bible_00048:
+      source: bible
+      text: Amɛ kyɛɛ bee ʋ nyʋwa buloŋ, nala aa laa Yesu wɩya di rɛ, baala abee haana buloŋ, a ko kɩ pɛ
+        nɩbɩnɩya hʋ tɩyaŋ.
+      sbs: 0.8058
+      gen_sec: 9.22
+      ref_sec: 8.78
+      cer: 0.0723
+      wer: 0.1667
+    bible_00049:
+      source: bible
+      text: Dɩ nal lɛ aa nyʋwa sɩwiilii, ʋ bɩl bɩ sɩ kɩ kyɛ dɩ ʋ nyʋwa sɩhuwo, beewɩya tɩɩna aa baa dɩ
+        sɩwiilii rɛ weliye te sɩhuwo.”
+      sbs: 0.7518
+      gen_sec: 9.73
+      ref_sec: 10.82
+      cer: 0.1196
+      wer: 0.3846
+    bible_00050:
+      source: bible
+      text: Beewɩya dɩ mamaa rɛ kaŋ gyogiweliye no kɩdɩgɩ buloŋ yʋga, ɛɛ rɛ sɩ leŋ dɩ ma marɩ gyɩŋ á Tɩɩna
+        Yesu Krisita weliŋ ka dɩ ma mɩɩbol mɛ kaŋ tɔnɔ.
+      sbs: 0.7698
+      gen_sec: 11.95
+      ref_sec: 10.68
+      cer: 0.036
+      wer: 0.1333
+    bible_00051:
+      source: bible
+      text: Ŋ biikpɩyanama, ma ta leŋ dɩ á kaŋ nyʋwa dʋŋ kɩ basɩ anɩɩ á kyo dɔmɔŋ nɛ. Ma leŋ dɩ á kɩ kyiyeli
+        dɔmɔŋ wɩtɩɩ tɩyaŋ. Ɛɛ rɛ sɩ daga anɩɩ á kɔnɩ kyo dɔmɔŋ nɛ.
+      sbs: 0.7797
+      gen_sec: 13.23
+      ref_sec: 12.78
+      cer: 0.0603
+      wer: 0.1111
+    bible_00052:
+      source: bible
+      text: Nal hʋ buloŋ ba aa kpaa kɩna we ʋ nosi tɩyaŋ, ʋ maga dɩ ʋ kɩ deŋ ba nyuu abee wɩtɩɩ rɛ.
+      sbs: 0.7592
+      gen_sec: 7.0
+      ref_sec: 6.02
+      cer: 0.0312
+      wer: 0.0455
+    bible_00053:
+      source: bible
+      text: Ɛɛ rɛ Yesu bɩl maga namaga kɩdɩgɩ tɩya nala hʋ aa pɩyɛsɩ ʋ dee wɩya,
+      sbs: 0.7395
+      gen_sec: 5.46
+      ref_sec: 4.24
+      cer: 0.0189
+      wer: 0.0667
+    bible_00054:
+      source: bible
+      text: Ɛɛ rɛ Yesu basɩ tɩya ʋ a baa, “Ŋ toluu, ɩ aa laa ŋ di rɛ tɩŋ ɩ deye. Kɩ mʋ abee laaŋfɩya.”
+      sbs: 0.6795
+      gen_sec: 7.17
+      ref_sec: 7.38
+      cer: 0.0484
+      wer: 0.087
+    bible_00055:
+      source: bible
+      text: Ba gyɩ vʋwa ʋ sɩya tɔ rɛ, aŋ aa ŋmaa ʋ, aŋ pɩyɛsɩ ʋ dɩ ʋ daga nal hʋ aa ŋmaa ʋ.
+      sbs: 0.6764
+      gen_sec: 6.23
+      ref_sec: 4.96
+      cer: 0.0182
+      wer: 0.0455
+    bible_00056:
+      source: bible
+      text: Ɛɛ rɛ Yesu pɩyɛsɩ ba a baa, “Ma ha bɩ karɩmɩ wɩɩ hʋ Kuwori Deviti gyɩ aa yaa saŋa hʋ losi
+        gyɩ aa kaŋ ʋ bee ʋ hatɩnna?
+      sbs: 0.7486
+      gen_sec: 9.13
+      ref_sec: 9.38
+      cer: 0.0
+      wer: 0.0
+    bible_00057:
+      source: bible
+      text: Kyɛwiyesii hʋ kyɛɛ kɛ buloŋ, ʋ aa mʋ ba wɩɩkyʋwaldɩya rɛ. Ʋ bee Gyuuma abee Giriki tɩmma buloŋ
+        kaŋ Wɩɩsɩ wɩya hʋ kɩ kpa dɔmɔŋ. Ʋ aa kɩ lʋga dɩ ba laa Wɩɩsɩ wɩya hʋ di.
+      sbs: 0.7693
+      gen_sec: 13.82
+      ref_sec: 12.68
+      cer: 0.0078
+      wer: 0.0278
+    bible_00058:
+      source: bible
+      text: Ba mɩɩgɩ kaŋ ba mʋ Keenaŋ paalʋʋ, a hogi ba Sɛkɛm tɩyaŋ. Bʋbʋʋbal kɩdɩgɩ rɛ Abɩraham fa yɔbɔ
+        Hamɔ nala lee. Doŋ tɩyaŋ nɛ ba hogi ba.
+      sbs: 0.7136
+      gen_sec: 11.35
+      ref_sec: 9.38
+      cer: 0.0882
+      wer: 0.1852
+    bible_00059:
+      source: bible
+      text: Ɛɛ rɛ Siimɔŋ Piita baa, “Ɩ rɛ yaa Krisita hʋ, Wɩɩsɩ hʋ aa weye biye.”
+      sbs: 0.7066
+      gen_sec: 5.46
+      ref_sec: 5.36
+      cer: 0.0
+      wer: 0.0
+    bible_00060:
+      source: bible
+      text: Gyuuma hʋ bee Giriki tɩmma hʋ abee nala hʋ buloŋ aa we Ɛfiso tɩyaŋ aa nɩɩ wɩɩ no, kambɩŋ gyɩ
+        gyʋʋ ba buloŋ nɛ. Doŋ tɩyaŋ nɛ ba marɩ kɩ kpa á Tɩɩna Yesu yohuŋ weliŋ.
+      sbs: 0.7667
+      gen_sec: 13.74
+      ref_sec: 11.32
+      cer: 0.0159
+      wer: 0.0556
+    bible_00061:
+      source: bible
+      text: Ɛɛwɩya, ma ta leŋ dɩ wɩɩ buloŋ wɩya yaa ma kambɩŋ, beewɩya Wɩɩsɩ paalɩ gyɩŋ ma nyupʋna mɛ
+        gba nyʋwa rɛ. Wɩɩsɩ lee tɩyaŋ, ma kɩdɩgɩ buloŋ kaŋ tɔnɔ te kokogyamaa rɛ.
+      sbs: 0.7779
+      gen_sec: 13.99
+      ref_sec: 13.2
+      cer: 0.0236
+      wer: 0.0938
+    bible_00062:
+      source: bible
+      text: Ɛɛ rɛ bee hʋ nala buloŋ laa taawɛɛ, nala hʋ buloŋ sii tɩŋ dɔmɔŋ a kaŋ Pɔɔl tarɩ lɩɩ Wɩɩkyʋwaldɩɩbal
+        hʋ tɩyaŋ, aŋ kaŋ dimbeye hʋ tɔ haŋ lagɩlagɩbiye hʋ.
+      sbs: 0.7045
+      gen_sec: 13.4
+      ref_sec: 10.5
+      cer: 0.042
+      wer: 0.1667
+    bible_00063:
+      source: bible
+      text: Yesu Krisita doho nala rɛ nyɛ. Ʋ naabaa rɛ gyɩ yaa Deviti, Deviti mɛ naabaa yaa Abɩraham.
+      sbs: 0.7661
+      gen_sec: 7.34
+      ref_sec: 6.24
+      cer: 0.0
+      wer: 0.0
+    bible_00064:
+      source: bible
+      text: Ŋ fa bɩ gyɩŋ ɛɛ hʋ buloŋ ŋ aa sɩ yaa, a gyɩŋ wɩɩ no naasɩ. Nyɛ rɛ ŋ pɩyɛsɩ Pɔɔl anɩɩ ʋ sɩ
+        laa nyʋwa a mʋ Gyerusalɛm dɩ ba di ʋ sarɩya doŋ tɩyaŋ?
+      sbs: 0.7332
+      gen_sec: 11.69
+      ref_sec: 10.36
+      cer: 0.0
+      wer: 0.0
+    bible_00065:
+      source: bible
+      text: Ɛɛ rɛ Yesu yɩrɩ ba, ba guu sii a leŋ ba nɩɩduworiboro hʋ abee ba kuwo buloŋ ta, aŋ tɩŋ Yesu
+        hal.
+      sbs: 0.7369
+      gen_sec: 8.11
+      ref_sec: 7.4
+      cer: 0.0278
+      wer: 0.0909
+    bible_00066:
+      source: bible
+      text: ba sɩ na kɩŋ hʋ wɩya Wɩɩsɩ aa wee nyʋwa baa ʋ sɩ kpa tɩya ba.
+      sbs: 0.73
+      gen_sec: 4.78
+      ref_sec: 3.74
+      cer: 0.0222
+      wer: 0.0625
+    bible_00067:
+      source: bible
+      text: Á bɩ ko ma lee a kɩ kyɛ dɩ ma tɩɩ koo nal kɩdɩgɩ buloŋ bigisi ma.
+      sbs: 0.7111
+      gen_sec: 5.12
+      ref_sec: 5.1
+      cer: 0.1042
+      wer: 0.2353
+    bible_00068:
+      source: bible
+      text: Ɛɛ rɛ Yesu yɩrɩ ʋ hatɩnna hʋ buloŋ ko laŋŋɩ, a basɩ tɩya ba a baa, “Na ma gyɩma anɩɩ nala
+        hʋ aa bɩ yaa Gyuuma, ba kuworo aa hɔŋ ba nyuu tɩyaŋ nɛ, ba sɩlaala mɛ kaŋ ba kɩ fɩla.
+      sbs: 0.7646
+      gen_sec: 14.08
+      ref_sec: 13.24
+      cer: 0.0155
+      wer: 0.0244
+    bible_00069:
+      source: bible
+      text: Krisitabiisi aa we Liisira abee Ikoniya buloŋ tɩyaŋ fa aa bigisi Timoti rɛ weliŋ.
+      sbs: 0.7111
+      gen_sec: 7.25
+      ref_sec: 6.86
+      cer: 0.0149
+      wer: 0.0714
+    bible_00070:
+      source: bible
+      text: Ŋ bɩl bɩ maga dɩ ɩ kana ŋ yaa ɩ biye. Kpa ŋ dɩ ŋ yaa ɩ tʋŋtʋnna hʋ kɩdɩgɩ á tʋma kɩ tɩya ɩ.’
+        Ɛɛ rɛ ka ʋ sii kpa kɩ mʋ ʋ kuwo lee.
+      sbs: 0.757
+      gen_sec: 9.98
+      ref_sec: 10.82
+      cer: 0.0222
+      wer: 0.0278
+    bible_00071:
+      source: bible
+      text: Wɩɩsɩ aa kaŋ bɔnyɛ beel-ma abee ma aa laa ʋ di wɩya rɛ tɩŋ ʋ laa ma ta, ʋ bɩ kɩɩ nɩɩ ma wɩyaalɩya
+        rɛ tɩŋ. Laatayɩ yaa Wɩɩsɩ bɔnyɛ kɩŋ nɛ ʋ kpa tɩya ma.
+      sbs: 0.762
+      gen_sec: 12.29
+      ref_sec: 12.22
+      cer: 0.0268
+      wer: 0.0833
+    bible_00072:
+      source: bible
+      text: Amɛ ma kɛ gyɩŋ wɩtɩɩ hʋ rɛ, beewɩya Krisita kpa ʋ Wiyesi Welii hʋ we ma tɩyaŋ nɛ.
+      sbs: 0.761
+      gen_sec: 6.66
+      ref_sec: 6.1
+      cer: 0.0
+      wer: 0.0
+    bible_00073:
+      source: bible
+      text: Ɛɛ rɛ Yesu basɩ tɩya ʋ a baa, “Ɩ kɛ yaa gɛɛ ŋ aa baa ɩ yaa. Nyɛ rɛ sɩ leŋ dɩ á yaa wɩya hʋ
+        buloŋ Wɩɩsɩ aa kyɛɛ.” Ɛɛ rɛ Gyɔɔŋ laa nyʋwa, a fo Yesu wɩɩkyʋwalnɩɩ.
+      sbs: 0.7696
+      gen_sec: 12.46
+      ref_sec: 11.62
+      cer: 0.0263
+      wer: 0.1026
+    bible_00074:
+      source: bible
+      text: Kyɛbee rɛ á naa ɩ dɩ ɩ yaa nɩhʋwal, á kana ɩ weliŋ, koo kyɛbee rɛ á naa ɩ dɩ ɩ kaŋ teŋbil
+        á kpa gal laalɩ ɩ?
+      sbs: 0.7629
+      gen_sec: 8.62
+      ref_sec: 9.06
+      cer: 0.1282
+      wer: 0.3929
+    bible_00075:
+      source: bible
+      text: Ɛɛ rɛ Kuwori Hɛrɔtɩ ta ba dɩ ba mʋ Bɛtɩlɛhɛm, aŋ basɩ tɩya ba a baa, “Ma mʋ kyɛ biye hʋ abee
+        sɩfɩyasɩ. Ma yaŋ ko na ʋ pɛ, ma leŋ dɩ ŋ mɛ kaŋ duwoso, dɩ ŋ mɛ mʋ kyʋwalɩ ʋ a kpa ʋ gyɩrɩma tɩya
+        ʋ.”
+      sbs: 0.7601
+      gen_sec: 15.61
+      ref_sec: 14.9
+      cer: 0.0144
+      wer: 0.0833
+    bible_00076:
+      source: bible
+      text: Ŋ ha aa we ŋ mɩɩbol tɩyaŋ nyɛ ŋ naa anɩɩ ʋ yaa wɩwelii rɛ dɩ ŋ liisi ma wɩya no dɩ ma ta yeŋŋi
+        ba,
+      sbs: 0.7208
+      gen_sec: 8.19
+      ref_sec: 8.16
+      cer: 0.0833
+      wer: 0.1538
+    bible_00077:
+      source: bible
+      text: Á bɩ sɩ wuwo kyʋwalɩ Wɩɩsɩ teŋ ma wɩya. Á aa kɩ kyʋwalɩ ʋ aŋgyʋwasʋ rɛ weliŋ akuu teŋfɩyɛlʋʋ
+        hʋ á aa kana ʋ sɩya tɩyaŋ ma wɩya.
+      sbs: 0.7634
+      gen_sec: 10.67
+      ref_sec: 8.44
+      cer: 0.0612
+      wer: 0.1786
+    bible_00078:
+      source: bible
+      text: Ʋ aa basɩ gɛɛ ko teŋ, nɩhɩyawʋ hʋ basɩ tɩya bapʋwasɩbiye hʋ baa, “Ta ko basɩ wɩɩ no ɩ aa basɩ
+        tɩya ŋ, a tɩya nal buloŋ.” Ɛɛ rɛ ka ʋ ta biye hʋ, ʋ mʋ.
+      sbs: 0.7864
+      gen_sec: 11.78
+      ref_sec: 12.28
+      cer: 0.0
+      wer: 0.0
+    bible_00079:
+      source: bible
+      text: Wɩya no rɛ aa leŋ nal kaŋ bisiŋ. Amɛ dɩ nal bɩ sɔmɔ ʋ noŋ aŋ di kɩna anɩɩ ma naabaala a daga
+        gɛɛ, ɛɛ bɩ sɩ wuwo leŋ dɩ ʋ tɩɩna kaŋ bisiŋ.”
+      sbs: 0.7645
+      gen_sec: 11.43
+      ref_sec: 12.24
+      cer: 0.0198
+      wer: 0.0588
+    bible_00080:
+      source: bible
+      text: Badɔmɔŋ mɛ tele bʋnyɩŋ tɩyaŋ, a nyʋ aŋ sʋba, beewɩya fɩyɛl gyɩ tuwo doŋ.
+      sbs: 0.7441
+      gen_sec: 6.4
+      ref_sec: 6.1
+      cer: 0.125
+      wer: 0.2143
+    bible_00081:
+      source: bible
+      text: Dɩ ɩ rɛ tɩŋ dʋnɩya no buloŋ, aŋka dɩ ɩ bɩ sɩ na mɩɩbol hʋ aa bɩ kaŋ tenii, bekiŋ tɔnɔ rɛ ɩ
+        na?
+      sbs: 0.7437
+      gen_sec: 7.77
+      ref_sec: 6.2
+      cer: 0.0735
+      wer: 0.1667
+    bible_00082:
+      source: bible
+      text: Ba aa nɩɩ wɩya no, ba bɩl bɩ wuwo basɩ wɩɩ buloŋ. Nyɛ rɛ ba dannɩ Wɩɩsɩ a baa, “Wɩɩsɩ tɩya
+        nala mɛ aa bɩ yaa Gyuuma ŋmanɩɩ rɛ dɩ ba mɛ wuwo bɩrɩmɩ lɩɩ ba wɩbɔmɔ tɩyaŋ, aŋ kaŋ mɩɩbol hʋ
+        aa bɩ kaŋ tenii.”
+      sbs: 0.7328
+      gen_sec: 16.55
+      ref_sec: 14.0
+      cer: 0.0067
+      wer: 0.0217
+    bible_00083:
+      source: bible
+      text: “Ŋ biye, ɩ sɩ yaa Wɩɩbal hʋ tɩŋdaal
+      sbs: 0.6842
+      gen_sec: 2.9
+      ref_sec: 3.46
+      cer: 0.1154
+      wer: 0.5
+    bible_00084:
+      source: bible
+      text: Krisita aa sʋba daagarɩɩ hʋ tɩyaŋ wɩya, ʋ leŋ ba dɔŋdɔŋ hʋ teŋ nɛ. Ʋ aa yaa gɛɛ, ʋ leŋ ba
+        buloŋ balɩya tɩŋa ʋ tɩyaŋ nɛ a ko yaa kɩdɩgɩ, aŋ kaŋ ba bee Wɩɩsɩ mɛ we dɔmɔŋ ba yaa sʋma.
+      sbs: 0.7682
+      gen_sec: 15.45
+      ref_sec: 13.84
+      cer: 0.0299
+      wer: 0.0476
+    bible_00085:
+      source: bible
+      text: Beewɩya ba sɩ na gɛɛ ma gyogo aa weliye abee gɛɛ ma aa fá Wɩɩsɩ.
+      sbs: 0.7407
+      gen_sec: 4.95
+      ref_sec: 5.0
+      cer: 0.0
+      wer: 0.0
+    bible_00086:
+      source: bible
+      text: Nɩɩfori kɩdɩgɩ rɛ we doŋ ba aa sɩ fo ŋ. Dɩ ba aa rɛ bɩ foo ŋ teŋ, ŋ hakɩla bɩ sɩ pɩŋ lɩdɩgɩ.
+      sbs: 0.7864
+      gen_sec: 7.68
+      ref_sec: 8.68
+      cer: 0.0303
+      wer: 0.125
+    bible_00087:
+      source: bible
+      text: Ɛɛ rɛ tɩŋ abee ma aa gyɩŋ wɩya no buloŋ a sɩŋ wɩtɩɩ hʋ ba aa daga ma tɩyaŋ weliŋ mɛ, amɛ ŋ
+        ha sɩ kɩ liisi ma wɩya no saŋa kɛ buloŋ.
+      sbs: 0.7367
+      gen_sec: 10.92
+      ref_sec: 11.38
+      cer: 0.0412
+      wer: 0.0606
+    bible_00088:
+      source: bible
+      text: Ɛɛwɩya, nal hʋ aa wuwo kɩ basɩ taakperiye Wiyesi Welii hʋ dee tɩyaŋ, ʋ tɩɩna maga dɩ ʋ sʋla
+        Wɩɩsɩ rɛ dɩ ʋ leŋ ʋ wuwo kɩ daga wɩya hʋ ʋ aa basɩ memii.
+      sbs: 0.7511
+      gen_sec: 12.03
+      ref_sec: 10.2
+      cer: 0.0265
+      wer: 0.0294
+    bible_00089:
+      source: bible
+      text: Ʋ sɩya gyɩ kɩɩ gɛɛ rɛ anɩɩ duwoŋ aa lɩgɩsa, aŋka ʋ gannɩ mɛ pʋrɩsɩ gɛɛ kpil kpil.
+      sbs: 0.7188
+      gen_sec: 6.66
+      ref_sec: 6.32
+      cer: 0.129
+      wer: 0.3889
+    bible_00090:
+      source: bible
+      text: Kyɛɛ kɩdɩgɩ wɩɩhaa anɩɩ kerifi boto saŋa, Kɔniiliyo na ʋ duwoso tɩyaŋ dɩ malɩka kɩdɩgɩ ko
+        gyʋʋ yɩrɩ ʋ, “Kɔniiliyo.”
+      sbs: 0.7601
+      gen_sec: 9.73
+      ref_sec: 8.56
+      cer: 0.1868
+      wer: 0.55
+    bible_00091:
+      source: bible
+      text: Ɛɛ rɛ ka nɩgyamaa nɩɩ á Tɩɩna Yesu wɩya haŋ paalʋʋ hʋ tɩyaŋ buloŋ.
+      sbs: 0.7221
+      gen_sec: 5.63
+      ref_sec: 5.1
+      cer: 0.0385
+      wer: 0.0714
+    bible_00092:
+      source: bible
+      text: Krisita pɛɛ á kɩdɩgɩ buloŋ tɩyaŋ nɛ a kpa ʋ bɔnyɛ kɩna tɩya ma a maga gɛɛ ʋ aa kyo.
+      sbs: 0.7532
+      gen_sec: 6.74
+      ref_sec: 5.28
+      cer: 0.0159
+      wer: 0.05
+    bible_00093:
+      source: bible
+      text: Yesu aa basɩ gɛɛ ko teŋ, Wɩɩsɩ kpa ʋ kaŋ gyɩŋ wɩɩsɩbee, ka ʋ kpambɩsɩ hʋ sɩŋ wil nyuni kɩ
+        deŋ wɩɩsɩnyuu. Nyɛ rɛ taal ko tɔ ʋ, ba bɩl bɩ na ʋ.
+      sbs: 0.7538
+      gen_sec: 11.52
+      ref_sec: 10.28
+      cer: 0.1154
+      wer: 0.3333
+    bible_00094:
+      source: bible
+      text: Ɛɛ rɛ Yesu bɩl sii doŋ a kpa tɩŋ Galili fuwo hʋ dɩɩlaŋ kɩ mʋ, a mʋ gyɩŋ hɔŋ dogimo kɩdɩgɩ
+        nyuu tɩyaŋ.
+      sbs: 0.6956
+      gen_sec: 8.62
+      ref_sec: 8.38
+      cer: 0.0649
+      wer: 0.087
+    bible_00095:
+      source: bible
+      text: Ma na, Wɩɩsɩ yaa siri abee ʋ saa rɛ dɩ ʋ ŋmaŋ tɩɩsɩ lo. Tɩya hʋ buloŋ aa bee nɔŋ nɔŋweliye,
+        ʋ sɩ ŋmana ʋ lo a paa we diŋ tɩyaŋ.
+      sbs: 0.7521
+      gen_sec: 10.75
+      ref_sec: 11.06
+      cer: 0.0323
+      wer: 0.1613
+    bible_00096:
+      source: bible
+      text: Ʋ yaa gɛɛ rɛ dɩ wɩya hʋ Wɩɩsɩ gyɩ aa tɩŋ ʋ tɩŋdaal Azaaya tɩyaŋ a basɩ ko yaa wɩtɩɩ. Ʋ gyɩ
+        baa,
+      sbs: 0.7508
+      gen_sec: 7.59
+      ref_sec: 7.88
+      cer: 0.0
+      wer: 0.0
+    bible_00097:
+      source: bible
+      text: Ɛɛwɩya, ma aa laa Yesu Krisita di a kpa ʋ ʋ yaa ma Tɩɩna nyɛ, ma leŋ dɩ ma beel-ʋ kɩŋ yaa
+        kɩdɩgɩ ma wɩyaalɩya buloŋ tɩyaŋ.
+      sbs: 0.7835
+      gen_sec: 10.24
+      ref_sec: 9.54
+      cer: 0.0217
+      wer: 0.0741
+    bible_00098:
+      source: bible
+      text: Malɩkasɩ hʋ aa mɩɩgɩ mʋ wɩɩsɩbee ko teŋ, pedaala hʋ basɩ tɩya dɔmɔŋ a baa, “Ma leŋ dɩ á mʋ
+        Bɛtɩlɛhɛm, a na wɩɩ hʋ á Tɩɩna Wɩɩsɩ aa leŋ ʋ malɩkasɩ hʋ ko basɩ tɩya ma.”
+      sbs: 0.7387
+      gen_sec: 13.48
+      ref_sec: 12.78
+      cer: 0.0161
+      wer: 0.0541
+    bible_00099:
+      source: bible
+      text: 'Saŋa hʋ Yesu gyɩ aa piili ʋ tʋma hʋ, dɩ ʋ gyɩ yaa bɩsɩ mɔlɩya abee fi rɛ. Nala gyɩ bɩɩna
+        anɩɩ Gyosɛfʋ rɛ lʋl Yesu. Nyɛ rɛ Yesu doho tɩŋa: Gyosɛfʋ kuwo feŋ nɛ yaa Heli.'
+      sbs: 0.774
+      gen_sec: 13.23
+      ref_sec: 13.28
+      cer: 0.0317
+      wer: 0.1081
+    bible_00100:
+      source: bible
+      text: Baala no balɩya tɩyaŋ, ba kɩdɩgɩ buloŋ bɩ wuwo tuŋ kyɩŋ hʋ. Ɛɛ rɛ kɩna tɩɩna hʋ kpa kyɩma
+        hʋ a kyɛ ba buloŋ balɩya. Baala no balɩya tɩyaŋ, ba kɩbee rɛ sɩ kyo kɩna tɩɩna hʋ wɩya yʋga?”
+      sbs: 0.7847
+      gen_sec: 15.36
+      ref_sec: 12.64
+      cer: 0.0
+      wer: 0.0
+    bible_00101:
+      source: bible
+      text: Ŋ aa tɩma ʋ rɛ ma lee dɩ ʋ leŋ ma gyɩŋ gɛɛ ba aa kɩya á tɩyaŋ, ka dɩ ʋ basɩ wɩya tɩya ma dɩ
+        ma tenni polli.
+      sbs: 0.7873
+      gen_sec: 8.36
+      ref_sec: 8.32
+      cer: 0.0779
+      wer: 0.1379
+    bible_00102:
+      source: bible
+      text: Amɛ wɩɩ hʋ aa we doŋ nɛ nyɛ, Wɩɩsɩ marɩ nihuwobiŋ logimo buloŋ nɛ a leŋ ba kɩdɩgɩ buloŋ we
+        lee hʋ ʋ aa kyɛ gɛɛ.
+      sbs: 0.7902
+      gen_sec: 9.3
+      ref_sec: 7.8
+      cer: 0.0
+      wer: 0.0
+    bible_00103:
+      source: bible
+      text: Ma fa kɩɩ gɛɛ rɛ anɩɩ piyese aa nyʋgɩsa, amɛ nyɛ kɛ ma mɩɩgɩ ko Pedaal hʋ lee rɛ, nal hʋ aa
+        deŋ ma mɩɩbol nyuu tɩyaŋ.
+      sbs: 0.7577
+      gen_sec: 9.47
+      ref_sec: 12.26
+      cer: 0.0795
+      wer: 0.2222
+    bible_00104:
+      source: bible
+      text: Amɛ ba gyɩ bɩ naa wɩɩ buloŋ ba aa sɩ nyɩya tɩya ʋ. Haalɩ nala yʋga gyɩ ko nyɩya wɩya tɩya
+        ʋ, amɛ ba bɩ naa wɩɩ buloŋ ʋ aa yaa kyogi a maga dɩ ba kpʋ ʋ.
+      sbs: 0.7544
+      gen_sec: 11.69
+      ref_sec: 12.18
+      cer: 0.045
+      wer: 0.2105
+    bible_00105:
+      source: bible
+      text: Alahadi kyɛɛ kɛ buloŋ, molbiye hʋ ma kɩdɩgɩ buloŋ aa tʋma a na yɔbɔ hʋ paga tɩyaŋ, nal buloŋ
+        lɩɩ maga gɛɛ ɩ aa wuwo dɩ ba kpa kɩ biŋ. Dɩ mɩyaŋ nɛ ko ko, ma bɩl bɩ sɩ kɩ kɩyɛsɩ molbiye.
+      sbs: 0.7859
+      gen_sec: 15.27
+      ref_sec: 14.7
+      cer: 0.0217
+      wer: 0.0476
+    bible_00106:
+      source: bible
+      text: Nahɔ mɛ kuwo feŋ nɛ yaa Sɛrugu. Sɛrugu mɛ kuwo feŋ nɛ yaa Ruu. Ruu mɛ kuwo feŋ nɛ yaa Pɛlɛgɩ.
+        Pɛlɛgɩ mɛ kuwo feŋ nɛ yaa Iiba. Iiba mɛ kuwo feŋ nɛ yaa Sɛla.
+      sbs: 0.7382
+      gen_sec: 12.89
+      ref_sec: 12.82
+      cer: 0.4138
+      wer: 0.6286
+    bible_00107:
+      source: bible
+      text: Amɛ ŋ basɩ kɩ tɩya ma rɛ, ma kyo ma dɔmɔ aŋ kyʋwalɩ Wɩɩsɩ kɩ tɩya nala hʋ mɛ aa dɔgɩsɩ ma.
+      sbs: 0.7529
+      gen_sec: 7.25
+      ref_sec: 5.42
+      cer: 0.0149
+      wer: 0.0455
+    bible_00108:
+      source: bible
+      text: Wɩɩsɩ dɩya bee vʋga bɩ sɩ wuwo pɛ wɩɩ buloŋ tɩyaŋ, beewɩya, ámaa rɛ yaa Wɩɩweyi hʋ dɩya. Wɩɩsɩ
+        tɩɩ basɩ ʋ teŋ tɩyaŋ nɛ a baa,
+      sbs: 0.7897
+      gen_sec: 10.5
+      ref_sec: 8.4
+      cer: 0.0421
+      wer: 0.1111
+    bible_00109:
+      source: bible
+      text: Ɛɛwɩya, á mɛ laŋŋa rɛ, a vʋʋlɩ. Á naa dɩ ʋ yaa wɩwelii rɛ a tɩya ma, dɩ á lɩɩ nala a tɩŋ ba
+        ma lee. Ba bee á kyaŋsɩ Banabaasɩ bee Pɔɔl lɛ sɩ ko.
+      sbs: 0.7916
+      gen_sec: 11.52
+      ref_sec: 12.94
+      cer: 0.0777
+      wer: 0.1667
+    bible_00110:
+      source: bible
+      text: Ɛɛ hʋ ma aa daga ma tɩɩ hʋ bɩ weliye. Ma bɩ gyɩma anɩɩ sɩbʋl mʋhʋ rɛ ba aa kpa we paanʋʋ muŋ
+        tɩyaŋ, ka ʋ sii pʋwarɩ a yʋga gɛɛ?
+      sbs: 0.7663
+      gen_sec: 9.98
+      ref_sec: 8.38
+      cer: 0.0213
+      wer: 0.0645
+    bible_00111:
+      source: bible
+      text: (Gyudasɩ gyɩ yaa wɩbɔŋ nɛ, a na molbiye doŋ a kpa yɔbɔ taŋha kɩdɩgɩ. Haŋ taŋha hʋ tɩyaŋ nɛ
+        ʋ tele pɔsɔ, ʋ nabolimo buloŋ lɩɩ gyaasɩ.
+      sbs: 0.7666
+      gen_sec: 11.26
+      ref_sec: 10.04
+      cer: 0.0792
+      wer: 0.2222
+    bible_00112:
+      source: bible
+      text: Ɛɛ rɛ ʋ ko gyʋʋ a kaŋ haaŋ hʋ noŋ tɩyaŋ a kaŋ tarɩ ʋ sii sɩŋ. Ʋ teŋnɩma hʋ pirigi nyʋgɩsɩ,
+        ka ʋ sii yaa kɩdiiliye tɩya ba.
+      sbs: 0.753
+      gen_sec: 10.24
+      ref_sec: 10.44
+      cer: 0.1538
+      wer: 0.3103
+    bible_00113:
+      source: bible
+      text: Ba aa karɩma teŋ hʋ, wɩya hʋ buloŋ ba aa saba yaa ba teŋfɩyɛlʋʋ rɛ. Ba tenni buloŋ polli.
+      sbs: 0.7444
+      gen_sec: 7.68
+      ref_sec: 7.02
+      cer: 0.0147
+      wer: 0.0526
+    bible_00114:
+      source: bible
+      text: Á gyɩma anɩɩ Wɩɩsɩ aa yaŋ kyisi á Tɩɩna Yesu sʋʋ tɩyaŋ gɛɛ, ɛɛ tɩɩ rɛ ʋ sɩ kyisi ma mɛ sʋʋ
+        tɩyaŋ, dɩ á bee Yesu buloŋ kaŋ mɩɩbol, ka dɩ ʋ kaŋ á beel-ma buloŋ mʋ Wɩɩsɩ sɩya.
+      sbs: 0.77
+      gen_sec: 14.25
+      ref_sec: 11.62
+      cer: 0.0156
+      wer: 0.05
+    bible_00115:
+      source: bible
+      text: Amɛ á kɛ kɩɩ gɛɛ rɛ anɩɩ viini, Wɩɩsɩ kpa wɩweliye no a we á tɩyaŋ. Nyɛ yaŋ daga anɩɩ debal
+        hʋ aa we á tɩyaŋ yaa Wɩɩsɩ kɩŋ nɛ; á tɩɩ dee daa.
+      sbs: 0.7705
+      gen_sec: 11.43
+      ref_sec: 10.32
+      cer: 0.0962
+      wer: 0.2941
+    bible_00116:
+      source: bible
+      text: Ma kɩ bara doo a kɩ sʋla Wɩɩsɩ aŋ kɩ pɔ dɩ Sɩtaanɩ ta wuwo mʋrɩ ma. Ma tɩɩsɩ tɩyaŋ ma kyo
+        dɩ ma tɩŋa ŋ nyʋwa rɛ, amɛ ma tɩɩ bɩ kaŋ ɛɛ dee.”
+      sbs: 0.7487
+      gen_sec: 11.18
+      ref_sec: 11.72
+      cer: 0.0594
+      wer: 0.1714
+    bible_00117:
+      source: bible
+      text: “Ŋ Kuwo, dɩ ʋ ko yaa ɩ kyɛrɩ, lɩɩ ŋ tʋwara no aa ko tɩyaŋ. Amɛ mɩyaŋ kɛ kyɛrɩ daa, leŋ dɩ
+        ɩ kyɛrɩ yaa.”
+      sbs: 0.7815
+      gen_sec: 8.36
+      ref_sec: 9.6
+      cer: 0.0833
+      wer: 0.12
+    bible_00118:
+      source: bible
+      text: Amɛ ŋ sɩ laa sɩya na tʋwara, ka dɩ ma gyɩnaŋ nala ha vɩya ŋ.
+      sbs: 0.7403
+      gen_sec: 4.86
+      ref_sec: 5.16
+      cer: 0.1136
+      wer: 0.3333
+    bible_00119:
+      source: bible
+      text: Dʋnɩya bayuwo kɩna daa á kaŋ kɩ lʋga á lʋgʋ, amɛ Wɩɩsɩ tɩɩ dee rɛ ʋ kpa tɩya ma, a wuwo kpa
+        yuwo kɩ di Sɩtaanɩ leye hʋ buloŋ ʋ aa kaŋ dee tɩyaŋ.
+      sbs: 0.7751
+      gen_sec: 11.78
+      ref_sec: 10.7
+      cer: 0.0556
+      wer: 0.1176
+    bible_00120:
+      source: bible
+      text: Koo á aa kyɛ dɩ á yaa dɩ Wɩɩsɩ baaŋ sii rɛ? Koo á bɩɩna anɩɩ ámaa rɛ kaŋ dee te Wɩɩsɩ?
+      sbs: 0.7659
+      gen_sec: 6.83
+      ref_sec: 7.14
+      cer: 0.0952
+      wer: 0.2727
+    bible_00121:
+      source: bible
+      text: Ɛɛwɩya, ma ta leŋ dɩ kɩna hʋ ma aa sɩ di abee kɩna hʋ ma aa sɩ nyʋwa wɩya dʋŋ kyɩl ma.
+      sbs: 0.7393
+      gen_sec: 6.83
+      ref_sec: 5.82
+      cer: 0.0
+      wer: 0.0
+    bible_00122:
+      source: bible
+      text: Pɔɔl baa, “Aayɩ, ŋ yaa gyuu rɛ a lɩɩ Taasu, Silisɩya paalʋʋ tɔbal hʋ. Ŋ aa sʋla ɩ rɛ dɩ ɩ
+        leŋ dɩ ŋ basɩ wɩya tɩya nala no.”
+      sbs: 0.7259
+      gen_sec: 9.81
+      ref_sec: 11.42
+      cer: 0.0455
+      wer: 0.1034
+    bible_00123:
+      source: bible
+      text: Deviti fa aa naa wɩɩ hʋ Wɩɩsɩ fa aa kyɛ dɩ ʋ yaa, ʋ wuwo basɩ Krisita sʋʋ tɩyaŋ mɩɩgɩ siiyi
+        wɩya rɛ a baa, ‘Wɩɩsɩ bɩ laa nyʋwa vɩya ʋ ta lalɩyabee tɩyaŋ. Ʋ bɩ laa nyʋwa leŋ ʋ teŋbii pɩŋ
+        bʋwa tɩyaŋ a pʋwa.’
+      sbs: 0.7337
+      gen_sec: 16.98
+      ref_sec: 14.6
+      cer: 0.039
+      wer: 0.1304
+    bible_00124:
+      source: bible
+      text: Wɩtɩɩ hʋ aa we á tɩyaŋ, ʋ rɛ tɩŋ á kyo ma gɛɛ. Wɩtɩɩ no sɩ we á tɩyaŋ a kaŋ kɩ mʋ maakyiye
+        buloŋ.
+      sbs: 0.754
+      gen_sec: 7.94
+      ref_sec: 7.64
+      cer: 0.0429
+      wer: 0.12
+    bible_00125:
+      source: bible
+      text: Ŋ sɩ kɩ yaa wɩkperiye Wɩɩsɩnyuu tɩyaŋ, aŋ kɩ yaa wɩmagɩla mɛ dʋnɩya abee taŋhanyuu tɩyaŋ daha.
+        Kyal, diŋ, abee nyʋwɔsɩ sɩ we doŋ.
+      sbs: 0.7298
+      gen_sec: 11.52
+      ref_sec: 10.64
+      cer: 0.0495
+      wer: 0.2083
+    bible_00126:
+      source: bible
+      text: Ɛɛ rɛ Yesu gyɩ bɩl sii kɩ mʋ Gyerusalɛm, a gyɩ mʋ tɩŋ Samaarɩya abee Galili paalʋʋ paga a
+        kɩ mʋ.
+      sbs: 0.7281
+      gen_sec: 7.59
+      ref_sec: 6.72
+      cer: 0.0135
+      wer: 0.0476
+    bible_00127:
+      source: bible
+      text: a lɩɩ molbiye hʋ badɔmɔŋ faŋa, ka Ananiyasɩ sii kaŋ molbikaalɩya hʋ mʋ Yesu kpambɩsɩ hʋ lee.
+      sbs: 0.7332
+      gen_sec: 8.11
+      ref_sec: 5.38
+      cer: 0.0135
+      wer: 0.1176
+    bible_00128:
+      source: bible
+      text: Ŋ naabalɩya, wɩtɩɩ hʋ á aa gʋnna rɛ á mɛ kpa kɩ daga ma. Ɛɛwɩya ma sɩŋ ʋ tɩyaŋ weliŋ, dɩ ʋ
+        yaa á wɩbasɩɩ tɩyaŋ koo dɩ wɩya hʋ á saba tɩya ma tɩyaŋ nɛ.
+      sbs: 0.7927
+      gen_sec: 12.37
+      ref_sec: 12.28
+      cer: 0.045
+      wer: 0.1111
+    bible_00129:
+      source: bible
+      text: Dɩ haaŋ mɛ rɛ vɩya ʋ bala, aŋ mɛ bɩl mʋ yal badɩma, ʋ mɛ gyʋʋ ʋ bala hʋ haakye tɩyaŋ nɛ, aŋ
+        pɛ yaa sɔŋsɔnnɩ mɛ.”
+      sbs: 0.7236
+      gen_sec: 9.13
+      ref_sec: 8.04
+      cer: 0.037
+      wer: 0.1111
+    bible_00130:
+      source: bible
+      text: Á aa kyɛ dɩ á teŋfɩyɛlʋʋ no ko yaa teŋfɩyɛl-piliŋ nɛ, ɛɛ rɛ tɩŋ ŋ sabɩ wɩya no kɩ tɩya ma.
+      sbs: 0.727
+      gen_sec: 7.68
+      ref_sec: 6.8
+      cer: 0.0149
+      wer: 0.0476
+    bible_00131:
+      source: bible
+      text: Nala no buloŋ gyɩ yaa anɩɩ baala fi abee balɩya rɛ.
+      sbs: 0.7107
+      gen_sec: 4.18
+      ref_sec: 3.58
+      cer: 0.05
+      wer: 0.2727
+    bible_00132:
+      source: bible
+      text: Nal hʋ mɛ buloŋ aa sɩ yaa nɩɩfɩyɛlɩɩ mɛ gba tɩya ŋ hatɩnna no tɩyaŋ nɩbiye akuu ʋ aa yaa ŋ
+        hatɩnnɩ wɩya, wɩtɩɩ rɛ ŋ basɩ kɩ tɩya ma Wɩɩsɩ kɔnɩ sɩ tuŋ ʋ tɩɩna.”
+      sbs: 0.7595
+      gen_sec: 13.23
+      ref_sec: 14.92
+      cer: 0.0083
+      wer: 0.0278
+    bible_00133:
+      source: bible
+      text: Ŋ fɩla ŋ tɩɩ rɛ, a kana ŋ teŋbii bɩrɩmɩ ŋ yoŋ. Ŋ yaa gɛɛ rɛ dɩ ŋ ta ko basɩ Wɩɩsɩ wɩweliye
+        hʋ tɩya nala teŋ, ka dɩ ŋ tɩɩ bɩ kaŋ tol Wɩɩsɩ koro hʋ tɩyaŋ.
+      sbs: 0.7627
+      gen_sec: 12.97
+      ref_sec: 14.5
+      cer: 0.009
+      wer: 0.0263
+    bible_00134:
+      source: bible
+      text: Beewɩya, á tɩɩ kɩɩ gɛɛ rɛ anɩɩ tʋranɩɩ sʋwala aa sʋma, Krisita kpa ma tɩya Wɩɩsɩ. Nyɛ rɛ Wɩɩsɩ
+        leŋ á pɩsa gyʋʋ nala hʋ ʋ aa laa kɩ ta, abee nala hʋ aa nyʋgɩsɩ buloŋ tɩyaŋ.
+      sbs: 0.7885
+      gen_sec: 13.99
+      ref_sec: 12.84
+      cer: 0.0462
+      wer: 0.1081
+    bible_00135:
+      source: bible
+      text: Wɩya hʋ ba aa basɩ Wɩɩsɩ Wiyesi Welii hʋ dee tɩyaŋ, ma ta kɩ kpaa ba waasʋ.
+      sbs: 0.7505
+      gen_sec: 6.14
+      ref_sec: 5.0
+      cer: 0.0526
+      wer: 0.0588
+    bible_00136:
+      source: bible
+      text: anɩɩ mɩyaŋ Nihuwobiŋ Biye aa kɩɩ gɛɛ. Ŋ bɩ ko dɩ nala tʋma kɩ tɩya ŋ, amɛ nala rɛ ŋ ko dɩ
+        ŋ tʋma tɩya, aŋ kpa ŋ mɩɩbol mɛ lenni sʋʋ a laa nala yʋga ta ba wɩbɔmɔ tɩyaŋ.”
+      sbs: 0.7704
+      gen_sec: 13.99
+      ref_sec: 14.44
+      cer: 0.0242
+      wer: 0.05
+    bible_00137:
+      source: bible
+      text: Dɩ nal kɩdɩgɩ buloŋ nɛ ko kɩ daga wɩdʋŋsɩ Wɩɩsɩ ŋmanɩɩ tɩyaŋ, dɩ ba bee wɩtɩɩ hʋ á Tɩɩna Yesu
+        Krisita aa daga ma, abee á wɩɩkyʋwal ŋmanɩɩ hʋ á aa tɩŋ bɩ yaa kɩdɩgɩ,
+      sbs: 0.7718
+      gen_sec: 13.91
+      ref_sec: 13.2
+      cer: 0.0157
+      wer: 0.0571
+    bible_00138:
+      source: bible
+      text: Ɛɛ rɛ Yesu pɩyɛsɩ nala hʋ a baa, “Ɛɛ rɛ Wɩɩsɩ koro hʋ kɩɩ? Bekiŋ nɛ ŋ sɩ kpa ʋ magɩsɩ?
+      sbs: 0.7434
+      gen_sec: 6.83
+      ref_sec: 6.28
+      cer: 0.0
+      wer: 0.0
+    bible_00139:
+      source: bible
+      text: a baa dɩ ba kaŋ Yesu mʋ kpaasɩ mal daagarɩɩ tɩyaŋ.
+      sbs: 0.6812
+      gen_sec: 4.27
+      ref_sec: 3.04
+      cer: 0.0
+      wer: 0.0
+    bible_00140:
+      source: bible
+      text: Ŋ basɩ kɩ tɩya ma rɛ, ba bɩ sɩ lɩɩ ɩ dɩya no tɩyaŋ, see dɩ ɩ tuŋ kyɩŋ hʋ ba aa kere tɩya ɩ
+        teŋ.”
+      sbs: 0.7662
+      gen_sec: 7.68
+      ref_sec: 9.72
+      cer: 0.0149
+      wer: 0.0385
+    bible_00141:
+      source: bible
+      text: Hɛrɔtɩ mɛ bɩ naa ʋ wɩkyogii buloŋ, ɛɛ rɛ tɩŋ ʋ leŋ ba bɩl mɩɩgɩ kana ʋ ko daha. Ma na, baal
+        no bɩ yaa wɩɩ buloŋ kyogi a maga dɩ ba kpʋ ʋ.
+      sbs: 0.6583
+      gen_sec: 11.01
+      ref_sec: 10.8
+      cer: 0.01
+      wer: 0.0294
+    bible_00142:
+      source: bible
+      text: Amɛ nyɛ kɛ, ʋ maga dɩ ma lɩɩ ma tɩɩ wɩya no buloŋ tɩyaŋ nɛ. Ma leŋ baaŋ nayɩ, a leŋ dɔmɔŋ
+        fene kyogii, a ta kaŋ tahaa, aŋ leŋ wɩlaama basɩɩ mɛ.
+      sbs: 0.8084
+      gen_sec: 12.29
+      ref_sec: 11.72
+      cer: 0.0667
+      wer: 0.2121
+    bible_00143:
+      source: bible
+      text: Kaŋ wɩya no buloŋ weliŋ abee tɩdɩgɩ aŋ ta kaŋ wɩkyogii buloŋ a mʋ pele kyɛɛ hʋ á Tɩɩna Yesu
+        Krisita aa sɩ mɩɩgɩ ko.
+      sbs: 0.7584
+      gen_sec: 9.9
+      ref_sec: 7.38
+      cer: 0.0667
+      wer: 0.12
+    bible_00144:
+      source: bible
+      text: Wɩtɩɩ rɛ ŋ basɩ kɩ tɩya ma, doŋ tɩyaŋ nɛ ɩ sɩ we a mʋ pele saŋa hʋ ɩ aa sɩ tuŋ kyɩŋ hʋ ba
+        aa kere tɩya ɩ buloŋ teŋ.
+      sbs: 0.718
+      gen_sec: 9.47
+      ref_sec: 7.5
+      cer: 0.0241
+      wer: 0.0323
+    bible_00145:
+      source: bible
+      text: Farasiima hʋ aa nɩya anɩɩ Yesu basɩ wɩya lo Sadusiima ba nyʋʋsɩ gyʋʋ kpʋlɩya gɛɛ, ba ko yaa
+        nyʋʋdɩgɩ a sii kpa mʋ Yesu lee.
+      sbs: 0.7558
+      gen_sec: 9.98
+      ref_sec: 11.08
+      cer: 0.0515
+      wer: 0.16
+    bible_00146:
+      source: bible
+      text: “Nala hʋ buloŋ gyɩ aa paa yʋga, ba gyɩ bɩ diye aŋ ka kɩŋ, nala hʋ mɛ gyɩ aa paa mʋhʋ, ba mɛ
+        gyɩ bɩ dii buwo.”
+      sbs: 0.7814
+      gen_sec: 8.19
+      ref_sec: 8.38
+      cer: 0.0519
+      wer: 0.0741
+    bible_00147:
+      source: bible
+      text: Ɛɛwɩya, ma wɩyaalɩya rɛ nala hʋ buloŋ aa laa Yesu wɩya di a we Masidooniya abee Akaaya paalʋʋ
+        tɩyaŋ kɩ kyesi.
+      sbs: 0.7651
+      gen_sec: 9.3
+      ref_sec: 7.8
+      cer: 0.046
+      wer: 0.1429
+    bible_00148:
+      source: bible
+      text: Mɩyaŋ Pɔɔl aa yaa Yesu Krisita Kpambɩya Wɩɩsɩ kyɛrɩ tɩyaŋ abee á nɩɩnabiye Timoti rɛ saba
+        teŋ no kɩ tɩya ma.
+      sbs: 0.7787
+      gen_sec: 9.3
+      ref_sec: 7.06
+      cer: 0.0345
+      wer: 0.0952
+    bible_00149:
+      source: bible
+      text: Mɩyaŋ Pɔɔl abee Silaasi abee Timoti rɛ sabɩ teŋ no a kɩ tɩya ma Krisitabiisi hʋ buloŋ aa we
+        Tesaloniika tɩyaŋ, a yaa á Kuwo Wɩɩsɩ abee á Tɩɩna Yesu Krisita nala. Wɩɩsɩ bɔnyɛ abee ʋ fɩyɛlʋʋ
+        sɩ we ma lee.
+      sbs: 0.7664
+      gen_sec: 17.23
+      ref_sec: 14.8
+      cer: 0.0126
+      wer: 0.0244
+    bible_00150:
+      source: bible
+      text: Nyɛ rɛ Pɔɔl yɩrɩ laalyuwolo nɩhɩyasɩ hʋ kɩdɩgɩ a basɩ tɩya ʋ a baa, “Kaŋ bapʋwasɩbiye no mʋ
+        ma nɩhɩyawʋ hʋ lee, ʋ kaŋ wɩɩ rɛ dɩ ʋ basɩ tɩya ʋ.”
+      sbs: 0.7283
+      gen_sec: 11.52
+      ref_sec: 8.48
+      cer: 0.0278
+      wer: 0.0645
+    bible_00151:
+      source: bible
+      text: Ɛɛ mɛ yaŋ daga anɩɩ á gba nyɩya wɩya kɩ tɩya Wɩɩsɩ rɛ, beewɩya á baa ʋ kyisi Krisita sʋʋ tɩyaŋ
+        nɛ. Dɩ sʋʋnɩ mɩɩgɩ sii kɔnɩ ko tuwo, ɛɛ kɛ Wɩɩsɩ bɩ kyisi Krisita mɛ sʋʋ tɩyaŋ.
+      sbs: 0.7874
+      gen_sec: 14.34
+      ref_sec: 12.48
+      cer: 0.0376
+      wer: 0.1316
+    bible_00152:
+      source: bible
+      text: Mʋhʋ sʋwaa, dɩ ʋ haaŋ hʋ mɛ ko gyʋʋ. Ʋ kɛ fa bɩ gyɩŋ wɩɩ hʋ aa yaa tɩyaŋ.
+      sbs: 0.7766
+      gen_sec: 5.72
+      ref_sec: 5.36
+      cer: 0.0192
+      wer: 0.0526
+    bible_00153:
+      source: bible
+      text: Teŋ hʋ ŋ gyɩ aa saba tɩya ma tɩyaŋ, ŋ gyɩ basɩ tɩya ma a baa dɩ ma lɩɩ ma tɩɩ nala hʋ aa yaa
+        sɔŋsɔŋ wɩya tɩyaŋ nɛ.
+      sbs: 0.749
+      gen_sec: 9.3
+      ref_sec: 7.6
+      cer: 0.0119
+      wer: 0.069
+    bible_00154:
+      source: bible
+      text: Ʋ sɩ lʋl boyoŋbiye, dɩ ɩ we ʋ feŋ Yesu. Feŋ hʋ memii rɛ yaa Laataal, beewɩya ʋ rɛ sɩ laa ʋ
+        nala ta ba wɩbɔmɔ tɩyaŋ.”
+      sbs: 0.7241
+      gen_sec: 9.47
+      ref_sec: 10.82
+      cer: 0.0588
+      wer: 0.1481
+    bible_00155:
+      source: bible
+      text: Nala hʋ aa kyɛ dɩ ba mʋrɩ ma wɩya rɛ ŋ sabɩ wɩya no kɩ tɩya ma.
+      sbs: 0.6977
+      gen_sec: 4.86
+      ref_sec: 3.72
+      cer: 0.0
+      wer: 0.0
+    bible_00156:
+      source: bible
+      text: Ba kasɩ ba a ŋmaa kɩdɩgɩ, a kpʋ kɩdɩgɩ, aŋ yaga kɩdɩgɩ hʋ mɛ abee bʋwa.
+      sbs: 0.7455
+      gen_sec: 5.89
+      ref_sec: 5.84
+      cer: 0.0
+      wer: 0.125
+    bible_00157:
+      source: bible
+      text: Wɩɩ no yaa wɩwelii rɛ a kɩ fɩyɛlɩ Wɩɩsɩ á laataal teŋ mɛ,
+      sbs: 0.7397
+      gen_sec: 4.69
+      ref_sec: 3.44
+      cer: 0.0909
+      wer: 0.3077
+    bible_00158:
+      source: bible
+      text: beewɩya ɩ kɛ paalɩ gyɩŋ Gyuuma lesiri buloŋ nɛ abee ba wɩkaŋtarɩya buloŋ. Ŋ yaŋ aa sʋla ɩ
+        rɛ dɩ ɩ di kenyiri aŋ gyegili nɩɩ ŋ nyʋwa.
+      sbs: 0.7799
+      gen_sec: 11.26
+      ref_sec: 9.28
+      cer: 0.0971
+      wer: 0.1786
+    bible_00159:
+      source: bible
+      text: Ɛɛ rɛ ma mɛ yaŋ kɩɩ anɩɩ dʋma, ma bɔmɔ rɛ weliŋ, ɛɛwɩya ma bɩ sɩ wuwo basɩ wɩwelii kɩdɩgɩ
+        buloŋ. Beewɩya, nihuwobiŋ wɩbasɩɩ tɩyaŋ nɛ ɩ aa gyɩŋ nihuwobiŋ hʋ iriŋ ʋ aa yaa.
+      sbs: 0.7857
+      gen_sec: 14.59
+      ref_sec: 14.86
+      cer: 0.0458
+      wer: 0.0857
+    bible_00160:
+      source: bible
+      text: aŋ sʋla ʋ dɩ ʋ kɛ haa leŋ dɩ nala hʋ buloŋ aa wɩɩlɩ dige ʋ gal nyʋwa. Nala hʋ buloŋ gyɩ aa
+        dige ʋ gal nyʋwa, ba buloŋ nɛ gyɩ naa laaŋfɩya.
+      sbs: 0.7165
+      gen_sec: 11.26
+      ref_sec: 14.08
+      cer: 0.0485
+      wer: 0.0909
+    bible_00161:
+      source: bible
+      text: Akuu lagɩlagɩ no taŋha hʋ aa deye wɩya, dɩ baal lɛ bɩ kpa haaŋ, ʋ rɛ kpɩya.
+      sbs: 0.7581
+      gen_sec: 6.23
+      ref_sec: 5.72
+      cer: 0.0714
+      wer: 0.1176
+    bible_00162:
+      source: bible
+      text: Wɩfaŋɩɩ buloŋ tuwo dɩ ʋ bɩ sɩ ko lɩɩ lɩgyalɩɩ. Wɩɩ buloŋ mɛ aa we bilhuu tɩyaŋ, ʋ mɛ sɩ ko
+        lɩɩ pʋlʋŋ.
+      sbs: 0.7704
+      gen_sec: 8.45
+      ref_sec: 8.4
+      cer: 0.0132
+      wer: 0.0435
+    bible_00163:
+      source: bible
+      text: Ɛɛwɩya, ŋ kyaŋweliye, ma lɩɩ ma tɩɩ vʋga marɩɩ tɩyaŋ.
+      sbs: 0.7656
+      gen_sec: 4.78
+      ref_sec: 4.6
+      cer: 0.1951
+      wer: 0.5
+    bible_00164:
+      source: bible
+      text: Amɛ ʋ gyɩ aa yaa gɛɛ rɛ Wɩɩsɩ leŋ ʋ kokumo basɩ ʋ sɩya wɩya tɩya ʋ abee nihuwobiŋ abee kokusi
+        aa bee basɩ wɩya buloŋ, ɛɛ leŋ ʋ leŋ ʋ bambugiliŋ hʋ.
+      sbs: 0.708
+      gen_sec: 12.29
+      ref_sec: 11.76
+      cer: 0.0531
+      wer: 0.0303
+    bible_00165:
+      source: bible
+      text: Amɛ Gyudɩya paalʋʋ buloŋ tɩyaŋ, Bɛtɩlɛhɛm nala rɛ yaa nɩbala,
+      sbs: 0.7139
+      gen_sec: 5.38
+      ref_sec: 4.4
+      cer: 0.02
+      wer: 0.2
+    bible_00166:
+      source: bible
+      text: Amɛ ʋ maga dɩ ba kɩ yaa wɩweliye hʋ haana aa kpaa ba tɩɩ tɩya Wɩɩsɩ aa maga dɩ ba kɩ yaa rɛ.
+      sbs: 0.7842
+      gen_sec: 7.17
+      ref_sec: 6.3
+      cer: 0.0
+      wer: 0.0
+    bible_00167:
+      source: bible
+      text: Aŋka paanʋʋ gama bapɛ hʋ mɛ ŋ gyɩ aa kaŋ lɔgɔ lɔgɔ tɩya nala tusi banaa hʋ? Simbiisi baŋmɛ
+        rɛ ma gyɩ paa ba kɩkaalɩya hʋ mɛ su?
+      sbs: 0.6967
+      gen_sec: 10.41
+      ref_sec: 10.98
+      cer: 0.102
+      wer: 0.25
+    bible_00168:
+      source: bible
+      text: Yesu ha gyɩ aa basɩ wɩya kɩ tɩya nɩgyamaa hʋ gɛɛ, dɩ ʋ naa abee ʋ naabalɩya ko sɩŋ gyaŋhal
+        tɩyaŋ a kɩ kyɛ dɩ ba na ʋ.
+      sbs: 0.7763
+      gen_sec: 9.22
+      ref_sec: 9.14
+      cer: 0.0114
+      wer: 0.0357
+    bible_00169:
+      source: bible
+      text: 'Ka ba buloŋ tɩyaŋ, wɩɩ hʋ aa yaa wɩɩ rɛ nyɛ: Wɩɩsɩ wɩweliye hʋ rɛ á buloŋ kɩ basɩ. Wɩya hʋ
+        ba aa basɩ, ba aa rɛ ŋ mɛ kɩ basɩ. Wɩya no tɩɩ rɛ ma mɛ laa di gɛɛ.'
+      sbs: 0.8082
+      gen_sec: 12.54
+      ref_sec: 12.24
+      cer: 0.0
+      wer: 0.0
+    bible_00170:
+      source: bible
+      text: Ʋ sɩya aa gballa, Roma nɩhɩyasɩ hʋ tɩŋ porisi nɩhɩyasɩ dɩ ba mʋ basɩ tɩya nal hʋ aa deŋ nɩtɔdɩya
+        hʋ dɩ ʋ lɩɩ Pɔɔl bee Silaasi ta dɩ ba kɩ mʋ.
+      sbs: 0.7451
+      gen_sec: 11.43
+      ref_sec: 11.14
+      cer: 0.1111
+      wer: 0.125
+    bible_00171:
+      source: bible
+      text: ‘I bɩ sɩ leŋ dɩ Ɩ Tɩpʋlʋŋ Tɩɩna sʋba a pʋw bʋwa tɩyaŋ.’
+      sbs: 0.7274
+      gen_sec: 4.44
+      ref_sec: 3.38
+      cer: 0.1
+      wer: 0.2308
+    bible_00172:
+      source: bible
+      text: Kyɛwiyesii hʋ kyɛɛ kɩdɩgɩ Yesu gyɩ aa daga nala Wɩɩsɩ wɩya gyuuma wɩɩkyʋwaldɩya tɩyaŋ nɛ.
+      sbs: 0.7096
+      gen_sec: 7.59
+      ref_sec: 5.74
+      cer: 0.0
+      wer: 0.0
+    bible_00173:
+      source: bible
+      text: Nyɛ rɛ á kyɛ mʋ na Krisitabiisi hʋ aa we doŋ tɩyaŋ, a gyɩ hɔŋ ba lee kyɛyɛ bapɛ. Wɩɩsɩ Wiyesi
+        Welii hʋ dee tɩyaŋ, ba gyɩ basɩ tɩya Pɔɔl lɛ dɩ ʋ ta mʋ Gyerusalɛm.
+      sbs: 0.7999
+      gen_sec: 12.97
+      ref_sec: 11.54
+      cer: 0.0082
+      wer: 0.1111
+    bible_00174:
+      source: bible
+      text: Ɛɛwɩya, ma nala hʋ aa bɩ yaa Gyuuma, ma bɩl bɩ yaa nɩhʋwala koo gyʋgyʋʋlɩya. Nyɛ kɛ, ma bee
+        Wɩɩsɩ nala buloŋ yaa bedɩgɩ nala rɛ, a yaa Wɩɩsɩ dɩya nala.
+      sbs: 0.7588
+      gen_sec: 12.2
+      ref_sec: 12.54
+      cer: 0.0174
+      wer: 0.0323
+    bible_00175:
+      source: bible
+      text: Ma sii mʋ! Ma kɩɩ gɛɛ rɛ anɩɩ pebiisi, ŋ kɩ tɩŋ ma dɩ ma mʋ guwosi gboni tɩyaŋ.
+      sbs: 0.7525
+      gen_sec: 6.49
+      ref_sec: 7.46
+      cer: 0.1207
+      wer: 0.1579
+    bible_00176:
+      source: bible
+      text: Amɛ baal hʋ aa kaŋ haaŋ, ʋ aa kpa ʋ nyuu buloŋ we dʋnɩya wɩkanɩya tɩyaŋ nɛ, beewɩya ɛɛ hʋ
+        ʋ aa sɩ yaa dɩ haaŋ hʋ teŋ fɩyɛlɩ wɩya dʋŋ nɛ aa kyɩla ʋ.
+      sbs: 0.7757
+      gen_sec: 12.29
+      ref_sec: 13.04
+      cer: 0.0
+      wer: 0.0
+    bible_00177:
+      source: bible
+      text: Nal hʋ buloŋ aa haasɩ ʋ dɔŋtɩɩna, ʋ yaa nɩkpʋʋl lɛ Wɩɩsɩ sɩya tɩyaŋ. Na ma yaŋ gyɩma anɩɩ
+        nɩkpʋʋl kɛ buloŋ bɩ kaŋ mɩɩbol aa bɩ kaŋ tenii?
+      sbs: 0.7759
+      gen_sec: 11.78
+      ref_sec: 12.24
+      cer: 0.0283
+      wer: 0.1034
+    bible_00178:
+      source: bible
+      text: Wɩɩ no ŋ aa basɩ yaa wɩtɩɩ rɛ, a maga dɩ nal buloŋ gyɩma ʋ, a laa ʋ di weliŋ.
+      sbs: 0.7689
+      gen_sec: 6.14
+      ref_sec: 5.54
+      cer: 0.0
+      wer: 0.0
+    bible_00179:
+      source: bible
+      text: Amɛ nala hʋ aa yaa nɩbala dʋnɩya sɩya tɩyaŋ, ba sɩ maakyiye ko yaa nɩbiisi, ka nala hʋ mɛ
+        aa yaa nɩbiisi dʋnɩya sɩya tɩyaŋ ba mɛ sɩ maakyiye ko yaa nɩbala.”
+      sbs: 0.7696
+      gen_sec: 12.89
+      ref_sec: 12.78
+      cer: 0.0
+      wer: 0.0
+    bible_00180:
+      source: bible
+      text: Ɛɛ rɛ biye hʋ kuwo basɩ tɩya ʋ a baa, “Ŋ biye, ɩ kɛ we dɩya tɩyaŋ nɛ saŋa buloŋ. Kɩŋ buloŋ
+        ŋ aa kana, ɩ rɛ tɩŋa ʋ.
+      sbs: 0.7754
+      gen_sec: 9.47
+      ref_sec: 9.88
+      cer: 0.0375
+      wer: 0.1034
+    bible_00181:
+      source: bible
+      text: Ɛɛ rɛ baga hʋ tɩɩna basɩ tɩya ba kɩdɩgɩ a baa, “Ŋ bagyʋwa gyegile nɩɩ daha, ŋ bɩ firimi ma.
+        Na ma laa nyʋwa rɛ anɩɩ ma sɩ tʋma dɩ wɩɩsɩ gyʋʋ, ka dɩ ma laa kyɛdɩgɩ tuno.
+      sbs: 0.7579
+      gen_sec: 13.23
+      ref_sec: 13.66
+      cer: 0.088
+      wer: 0.1579
+    bible_00182:
+      source: bible
+      text: Ma ta leŋ dɩ nal buloŋ mʋrɩ ma. Dɩ ɩ rɛ yaa nɩtɩɩ aŋ kɩ tɩŋ nɩbɔmɔ hal, ɩ mɛ aa ko ɩ yaa nɩbɔŋ
+        nɛ.
+      sbs: 0.7719
+      gen_sec: 7.94
+      ref_sec: 6.58
+      cer: 0.0857
+      wer: 0.2692
+    bible_00183:
+      source: bible
+      text: Yoŋ hʋ buloŋ aa laa á Tɩɩna Krisita wɩya di, ʋ tɩɩna tɩŋa ʋ tɩɩ rɛ Krisita lee. Ɛɛ tɩɩ rɛ
+        nal hʋ fa aa tɩŋa ʋ tɩɩ aŋ na ko laa Krisita wɩya di, ʋ bɩrɩmɩ Krisita yoŋ nɛ.
+      sbs: 0.814
+      gen_sec: 13.82
+      ref_sec: 13.48
+      cer: 0.024
+      wer: 0.05
+    bible_00184:
+      source: bible
+      text: Badɔmɔŋ mɛ gyɩ tele bʋnyɩŋ nyuu tɩyaŋ, a pesi nyʋ.
+      sbs: 0.6854
+      gen_sec: 4.35
+      ref_sec: 3.46
+      cer: 0.1026
+      wer: 0.2
+    bible_00185:
+      source: bible
+      text: Gyuuma badɔmɔŋ mɛ aa lɩɩ Esɩya paalʋʋ mɛ rɛ fa we doŋ. Dɩ ba aa rɛ fa kaŋ wɩɩ buloŋ abeel-ŋ,
+        ʋ fa maga dɩ ba tɩɩ ko basɩ rɛ daha tɩyaŋ.
+      sbs: 0.7474
+      gen_sec: 11.18
+      ref_sec: 9.28
+      cer: 0.04
+      wer: 0.125
+    bible_00186:
+      source: bible
+      text: Ŋ basɩ kɩ tɩya ma rɛ, haŋ kyɛɛ hʋ, nala balɩya sɩ pɩŋ doo gododɩgɩ tɩyaŋ tebine, dɩ ba kpa
+        kɩdɩgɩ aŋ leŋ kɩdɩgɩ ta.
+      sbs: 0.7841
+      gen_sec: 9.9
+      ref_sec: 9.52
+      cer: 0.0345
+      wer: 0.08
+    bible_00187:
+      source: bible
+      text: Ma pɔ dɩ nal buloŋ ta ko yaa wɩbɔŋ tuŋ ʋ dɔŋtɩɩna. Amɛ saŋa kɛ buloŋ, ma yaa wɩweliye kɩ tɩya
+        dɔmɔŋ abee nal buloŋ.
+      sbs: 0.7935
+      gen_sec: 10.15
+      ref_sec: 8.86
+      cer: 0.0
+      wer: 0.0
+    bible_00188:
+      source: bible
+      text: a baa, “Saŋa hʋ pele rɛ. Wɩɩsɩ koro hʋ pele rɛ. Ma bɩrɩmɩ lɩɩ ma wɩbɔmɔ tɩyaŋ aŋ laa Wɩɩsɩ
+        wɩweliye hʋ di.”
+      sbs: 0.7591
+      gen_sec: 8.79
+      ref_sec: 8.6
+      cer: 0.0633
+      wer: 0.1304
+    bible_00189:
+      source: bible
+      text: Piita ha fa hɔnɔ rɛ a kaŋ wɩɩ hʋ ʋ fa aa naa hʋ kɩ bɩɩnɩ dɩ ʋ na ʋ memii. Ɛɛ rɛ Wɩɩsɩ Wiyesi
+        Welii hʋ basɩ tɩya ʋ a baa, “Deŋ na, baala boto rɛ we daha a kɩ kyɛ ɩ.
+      sbs: 0.7489
+      gen_sec: 12.46
+      ref_sec: 13.34
+      cer: 0.069
+      wer: 0.1395
+    bible_00190:
+      source: bible
+      text: Ba kpa kyapɩya a vɩɩrɩ ʋ nyuu tɩyaŋ, a tʋ naŋtʋwɔl we ʋ tɩyaŋ, a tuu gbinni, a tɩya ʋ gyɩrɩma.
+      sbs: 0.6149
+      gen_sec: 7.77
+      ref_sec: 6.66
+      cer: 0.0429
+      wer: 0.0952
+    bible_00191:
+      source: bible
+      text: Nala badɔmɔŋ mɛ gyɩ sɩŋ doŋ a kɩ deŋ, aŋka Gyuuma nɩhɩyasɩ kɩ yaa ʋ sɩya, a baa, “Na ʋ baa
+        ʋ rɛ yaa Krisita hʋ, laataal hʋ Wɩɩsɩ aa lɩya, a laa nala kɩ ta, ma leŋ dɩ ʋ laa ʋ tɩɩ ta dɩ á
+        na.”
+      sbs: 0.7279
+      gen_sec: 15.1
+      ref_sec: 13.54
+      cer: 0.0074
+      wer: 0.0638
+    bible_00192:
+      source: bible
+      text: Akuu ba aa bɩ laa ʋ di wɩya, ʋ gyɩ bɩ yaa wɩmagɩla yʋga doŋ tɩyaŋ.
+      sbs: 0.7648
+      gen_sec: 5.29
+      ref_sec: 6.74
+      cer: 0.102
+      wer: 0.1875
+    bible_00193:
+      source: bible
+      text: 'Wɩɩ hʋ aa tɩŋ ŋ aa kaŋ namagɩsɩ basɩ wɩya kɩ tɩya ba hʋ rɛ nyɛ: Ba aa deŋ deŋ nɛ aŋ bɩ wuwo
+        kɩ na kɩŋ buloŋ, a kɩ gyegili wɩya mɛ aŋ bee nɩɩ wɩɩ buloŋ, aŋ bɩ wuwo kɩ gyɩŋ wɩya memii mɛ.'
+      sbs: 0.7515
+      gen_sec: 15.61
+      ref_sec: 13.9
+      cer: 0.0441
+      wer: 0.1522
+    bible_00194:
+      source: bible
+      text: beewɩya ma tɩɩ gyɩma rɛ weliŋ anɩɩ kyɛɛ hʋ á Tɩɩna Yesu aa sɩ mɩɩgɩ ko sɩ pirigi ma tɩyaŋ
+        gɛɛ anɩɩ gaal aa pirigi ko tebine gɛɛ.
+      sbs: 0.7681
+      gen_sec: 10.41
+      ref_sec: 9.76
+      cer: 0.06
+      wer: 0.0714
+    bible_00195:
+      source: bible
+      text: Farasiima badɔmɔŋ aa naa gɛɛ, ba pɩyɛsɩ Yesu hatɩnna hʋ a baa, “Bee rɛ tɩŋ ma nɩhɩyawʋ bee
+        lampolaala abee wɩbɔŋyaala no buloŋ hɔŋ kɩ di kɩna?”
+      sbs: 0.6823
+      gen_sec: 12.29
+      ref_sec: 10.62
+      cer: 0.0268
+      wer: 0.0741
+    bible_00196:
+      source: bible
+      text: abee Gyemsi biibaal Gyudasɩ, abee Gyudasɩ Isɩkarɔtɩ, nal hʋ aa ko yaa minaafigi tɩɩna hʋ.
+      sbs: 0.7491
+      gen_sec: 7.34
+      ref_sec: 7.64
+      cer: 0.0556
+      wer: 0.2
+    bible_00197:
+      source: bible
+      text: Ŋ aa sʋla á Tɩɩna Wɩɩsɩ rɛ dɩ ʋ leŋ dɩ ma marɩ gyɩŋ ʋ bee á Tɩɩna Yesu dɩ gɛɛ leŋ dɩ ʋ fɩyɛlʋʋ
+        abee ʋ bɔnyɛ we ma lee weliŋ.
+      sbs: 0.728
+      gen_sec: 9.9
+      ref_sec: 10.96
+      cer: 0.0326
+      wer: 0.0625
+    bible_00198:
+      source: bible
+      text: Amɛ nala hʋ badɔmɔŋ baa dɩ gyɩŋbɔmɔ kuwori hʋ ba aa yɩrɩ Bɛlizebul lɛ tɩya ʋ dee dɩ ʋ kɩ kile
+        gyɩŋbɔmɔ gɛɛ.
+      sbs: 0.6779
+      gen_sec: 8.79
+      ref_sec: 8.2
+      cer: 0.0
+      wer: 0.0
+    bible_00199:
+      source: bible
+      text: “Ŋ sɩ tɩŋ nala aa basɩ taakperiye tɩyaŋ, a basɩ wɩya tɩya ŋ nala, ŋ sɩ tɩŋ nɩhʋwala tɩyaŋ,
+        a basɩ wɩya tɩya ŋ nala, ka abee gɛɛ buloŋ mɛ, ba bɩ sɩ gyegile nɩɩ ŋ nyʋwa.”
+      sbs: 0.7944
+      gen_sec: 14.25
+      ref_sec: 12.32
+      cer: 0.0242
+      wer: 0.1351
 - model: ghananlpcommunity/ghana-tts-36k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: ref
@@ -17761,4 +19536,4 @@ benchmarks:
       ref_sec: 12.32
       cer: 0.1694
       wer: 0.7297
-updated: '2026-10-03'
+updated: '2026-10-09'

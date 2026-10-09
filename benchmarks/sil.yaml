@@ -3417,6 +3417,1709 @@ benchmarks:
       ref_sec: 4.0
       cer: 0.3684
       wer: 0.5
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7321
+  num_scored: 200
+  cer: 0.2774
+  wer: 0.7207
+  accuracy: 0.7226
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.7273
+  score: 0.7273
+  per_source:
+    bible:
+      sbs: 0.7321
+      cer: 0.2774
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: 'Sasak ma doho nɩaa nɛ: Ɩsɩpaŋ, Ɛba, Ɛlɩɛl,'
+      sbs: 0.7001
+      gen_sec: 3.5
+      ref_sec: 5.28
+      cer: 0.3548
+      wer: 1.125
+    bible_00001:
+      source: bible
+      text: Má ŋmoo niiŋ a tɩŋ girep nɛnɛɛ sɩ-falɩɩ-la wɩaa,
+      sbs: 0.7204
+      gen_sec: 4.27
+      ref_sec: 3.24
+      cer: 0.4865
+      wer: 1.2222
+    bible_00002:
+      source: bible
+      text: Nɩaa bʋɩ banɛsɛ ma jaŋ pʋpɔ Wɩa dɩɩ-bal-la boi baalaa, dɩ nɩaa bʋɩ banɛsɛ ma du kʋduulo-la
+        mɩ sɩ chɛ bil dɩ ba kaa dɩdɛnnɛ La TƖƖNA.”
+      sbs: 0.7672
+      gen_sec: 10.58
+      ref_sec: 13.02
+      cer: 0.2178
+      wer: 0.7037
+    bible_00003:
+      source: bible
+      text: Doŋ pɩnɩŋ kɩŋkɛŋ jaŋ leŋ dɩ ba laalɛ gɛrɩ-kɔsʋmɔɔ.
+      sbs: 0.7098
+      gen_sec: 4.69
+      ref_sec: 3.58
+      cer: 0.25
+      wer: 0.5556
+    bible_00004:
+      source: bible
+      text: Hamaŋ sɩ kʋ jɩŋ dɩ Modikaaya ŋaa Juu tɩɩna nɛ, ʋ beŋ dɩ ʋ nɛ kpʋ ʋ dʋndʋŋa, ŋɩɩ ha bɩ magɛ.
+        Ʋ lɛɛlɛ chɩchɛ wombiiŋ dɩ ʋ kpʋ Juu tɩŋŋaa kala sɩ hɔŋ kuoro Zɛzɛs tinteeŋ lɛ.
+      sbs: 0.6817
+      gen_sec: 14.25
+      ref_sec: 14.72
+      cer: 0.2636
+      wer: 0.7105
+    bible_00005:
+      source: bible
+      text: ŋɩɩ nɛ ŋ yaraa ma yie fɩɛlɛ dɩ ŋ nɛ nɩɩ wʋzɔmʋŋ sɩ lɩɩ
+      sbs: 0.7185
+      gen_sec: 4.44
+      ref_sec: 4.36
+      cer: 0.7073
+      wer: 1.1429
+    bible_00006:
+      source: bible
+      text: Dɩ ʋ nɛ pɩɛsɛ wɩaa bʋɩ, ŋ bɩ jaŋ wuo laa wʋbala ma a bʋl.
+      sbs: 0.7416
+      gen_sec: 4.44
+      ref_sec: 4.38
+      cer: 0.2195
+      wer: 0.5333
+    bible_00007:
+      source: bible
+      text: Pʋlʋmʋŋ tʋɔŋ nɛ nɩaa ŋɩŋaa wʋzɔŋŋɔɔ, tʋɔpʋl wɩaa arɩ wʋtɩtɩɩba.
+      sbs: 0.7495
+      gen_sec: 5.89
+      ref_sec: 4.38
+      cer: 0.4038
+      wer: 1.0
+    bible_00008:
+      source: bible
+      text: Zɛzɛs kuori kpaha fa hɛ taŋ-la ba sɩɩ yɩrɛ Susa lɛ nɛ.
+      sbs: 0.6699
+      gen_sec: 4.35
+      ref_sec: 4.08
+      cer: 0.1463
+      wer: 0.5833
+    bible_00009:
+      source: bible
+      text: dɩ mɩ kala birisi, dɩ mɩ gɛnnɩŋ ma paala bɛrɛmɛ.
+      sbs: 0.703
+      gen_sec: 3.93
+      ref_sec: 3.8
+      cer: 0.1892
+      wer: 0.7
+    bible_00010:
+      source: bible
+      text: 'Nɩarɩa ma hambolibiisiŋ ŋaa batori nɛ: Elionai, Hizikia arɩ Azirikam.'
+      sbs: 0.7084
+      gen_sec: 6.14
+      ref_sec: 8.56
+      cer: 0.1579
+      wer: 0.6
+    bible_00011:
+      source: bible
+      text: Kirisito tɩtɩa nɛ leŋe la sɩŋ, ʋ nɛ kɛŋ nɩalɩŋ sɩ ŋaa Juu tɩŋŋaa arɩ nɩalɩŋ sɩ bɩ Juu tɩŋŋaa
+        ŋaa kala hɛ dɔŋɔ lɛ ba kʋ ŋaa kʋbala. Ʋ sɩ sʋʋ daagɛsɛ nyuŋ nɛ giri dʋndɔnnɩɩ-la fa sɩ hɛ la pɛgɛ
+        ta.
+      sbs: 0.753
+      gen_sec: 16.63
+      ref_sec: 13.42
+      cer: 0.223
+      wer: 0.5814
+    bible_00012:
+      source: bible
+      text: Ʋ nɛ ŋaa baga kɩaa kala kuoro.”
+      sbs: 0.6955
+      gen_sec: 2.47
+      ref_sec: 5.2
+      cer: 0.3043
+      wer: 0.5714
+    bible_00013:
+      source: bible
+      text: Dɩ nʋʋ tʋɔŋ nɛ cheye, ʋ maga dɩ ʋ nandɔnsʋŋ nɛ chɩna gbɛrʋ,
+      sbs: 0.7216
+      gen_sec: 4.86
+      ref_sec: 3.68
+      cer: 0.4
+      wer: 0.9231
+    bible_00014:
+      source: bible
+      text: Arɔŋ doho nɩaa dɔnsʋŋ nɛ ŋaa Kohaf nyɩŋ-nɩaa, ba nɛ fa ŋaa nɩalɩŋ ba sɩ laa sɩpaaŋ joŋ tasɩŋ
+        pa.
+      sbs: 0.7758
+      gen_sec: 8.53
+      ref_sec: 9.74
+      cer: 0.2162
+      wer: 0.5
+    bible_00015:
+      source: bible
+      text: 'Ɛlɩfas hambolibiisiŋ nɛ ŋaa: Tɛmaŋ, Omaa, Zefo, Gatam, Kɛnas arɩ Amalɛk. Amalɛk naaŋ nɛ fa
+        Tɩmɩna.'
+      sbs: 0.7273
+      gen_sec: 8.62
+      ref_sec: 13.6
+      cer: 0.1184
+      wer: 0.625
+    bible_00016:
+      source: bible
+      text: bɛɛ wɩaa, mɩ dʋndʋŋa nɛ Wɩa, Wɩa dɔŋ bɩra tuo.
+      sbs: 0.7446
+      gen_sec: 3.84
+      ref_sec: 3.76
+      cer: 0.2941
+      wer: 0.7
+    bible_00017:
+      source: bible
+      text: Ma saa bɩra bɩ nʋhʋɔraa ŋaa, ma bɩ jʋjʋʋlʋ ma ŋaa. Ma dɩ Wɩa nɩaa kala ŋaa kʋbala nɛ a ŋaa
+        Wɩa dɩa nɩaa.
+      sbs: 0.7923
+      gen_sec: 8.45
+      ref_sec: 7.44
+      cer: 0.2308
+      wer: 0.5417
+    bible_00018:
+      source: bible
+      text: a bɩra nagɛ gɛrɩpɛ-yuoro sɩ chuoli gɛrɩpɛɛŋ gɛrɩpɛ-yuori sɔŋɔ lɛ.
+      sbs: 0.7112
+      gen_sec: 5.72
+      ref_sec: 4.4
+      cer: 0.3962
+      wer: 1.0
+    bible_00019:
+      source: bible
+      text: Tʋɔtɔrʋŋ bɩra tuo, nɩaa bɩra bɩ jʋɔsɛ Wɩa dɩɩ-balɩŋ lɛ.
+      sbs: 0.7183
+      gen_sec: 4.69
+      ref_sec: 4.4
+      cer: 0.3953
+      wer: 0.9
+    bible_00020:
+      source: bible
+      text: 'Sobal ma hambolibiisiŋ nɛ: Alɩvaŋ, Manahaf, Ɛbal, Sefo arɩ Onam. Zibioŋ hambolibiisiŋ nɛ:
+        Aya arɩ Ana.'
+      sbs: 0.7371
+      gen_sec: 9.05
+      ref_sec: 14.06
+      cer: 0.1125
+      wer: 0.8125
+    bible_00021:
+      source: bible
+      text: Wɩaa deemba sɩ bala, bʋa kʋbala lɛ kuoro Zɛzɛs joŋ ʋ tɩntɩnnɩ-hɩasɩŋ ma kala hɩasɩŋ a pɩ baal
+        kʋbala ba sɩɩ yɩrɛ Hamaŋ, ʋ nyɩmma nɛ Hamɛdata a ŋaa Agag doho nʋʋ.
+      sbs: 0.7238
+      gen_sec: 13.4
+      ref_sec: 14.78
+      cer: 0.2063
+      wer: 0.5938
+    bible_00022:
+      source: bible
+      text: Jesi nanʋala Devit nɛ fa ŋaa Iziral tinteeŋ kala kuoro.
+      sbs: 0.7111
+      gen_sec: 4.69
+      ref_sec: 5.36
+      cer: 0.1556
+      wer: 0.7
+    bible_00023:
+      source: bible
+      text: Naamaŋ, Ahija arɩ Gɛra. Gɛra fa ŋaa Uza arɩ Ahihud nyɩmma nɛ, ʋ nɛ fa laa ba sɩpaaŋ a kɛmba
+        mʋ.
+      sbs: 0.7331
+      gen_sec: 7.68
+      ref_sec: 12.24
+      cer: 0.1408
+      wer: 0.4762
+    bible_00024:
+      source: bible
+      text: 'Wɩa wombie-la arɩ ʋ wɩalɩŋ Mosis sɩ joŋo dagɛ Iziral tɩŋŋaa dɩ ba tuto nɛ ŋ-la:'
+      sbs: 0.7141
+      gen_sec: 6.83
+      ref_sec: 5.62
+      cer: 0.3279
+      wer: 0.9375
+    bible_00025:
+      source: bible
+      text: 'Juda arɩ ʋ bii-haala Tama ma lʋl hambolibiisiŋ balɩa nɛ. Ba yɩraa nɛ: Pɛrɛs arɩ Zɛra. Juda
+        hambolibiisiŋ kala fa ŋaa banɔŋ nɛ.'
+      sbs: 0.7639
+      gen_sec: 10.67
+      ref_sec: 13.76
+      cer: 0.4444
+      wer: 0.7391
+    bible_00026:
+      source: bible
+      text: Nɩaa fa yʋga a bɩ nii kɛnɛ a tuto ʋ harɩŋ. Ama nɩalɩŋ sɩ to harɩŋ kɔ tʋɔŋ bɩ nɩɩ-la sɩ laa
+        kuoru-la nyuŋ tɔrɔ. Wɩɩŋ deeŋ ma bɩ bʋbʋɔ kɛnɛ, ʋ nagɛ nʋʋ sɩɩ kiri peliŋ nɛ.
+      sbs: 0.7395
+      gen_sec: 13.74
+      ref_sec: 13.96
+      cer: 0.24
+      wer: 0.5789
+    bible_00027:
+      source: bible
+      text: Avad tɩŋŋaa, Zɛma tɩŋŋaa, arɩ Hama tɩŋŋaa.
+      sbs: 0.6851
+      gen_sec: 4.1
+      ref_sec: 4.82
+      cer: 0.3939
+      wer: 1.4286
+    bible_00028:
+      source: bible
+      text: Ʋ jaŋ leŋ dɩ wɩɩpɔsʋŋ daaliimiŋ mɩɩra mʋ harɩŋ naakieliŋ fii, lee-la kuoro Ahas lusuŋ-choluŋ
+        sɩ chɩna.” Ŋɩɩ nɛ daaliiŋ-la sɛnɛ mɩɩra mʋ harɩŋ naakieliŋ fii.
+      sbs: 0.7522
+      gen_sec: 14.08
+      ref_sec: 12.14
+      cer: 0.2016
+      wer: 0.8077
+    bible_00029:
+      source: bible
+      text: Ŋɩɩ nɛ La TƖƖNA bʋla pʋ, “Tɩa-la ŋ sɩ bɩ chɔnsɔ, a bɩ bene ʋ waa, ʋ wɩaa nɛ fɩɛsɛ ŋ sɩɩŋ.
+        Ʋ nyʋ chɛ-bala nɛ a sʋʋ chɛ-bala ma.
+      sbs: 0.7594
+      gen_sec: 9.9
+      ref_sec: 11.62
+      cer: 0.2841
+      wer: 0.6
+    bible_00030:
+      source: bible
+      text: Tɩntɩmɩɩ-la kala ŋ sɩɩ tɩŋ, fɩɛsɛ sɩɩŋ a faasa tɩmʋ. Ʋ bɩ jaŋ dieni ka ŋ mʋ lɛlɛɛ-jaŋ, lee-la
+        nɩaa sɩ bɩ tɩŋ, a bɩ wɩaa ka bɩɩnɛ, a bɩ wʋjɩmɩŋ kɛnɛ, a bɩ wɩaa sɩaa ma jɩŋ.
+      sbs: 0.7477
+      gen_sec: 14.17
+      ref_sec: 14.72
+      cer: 0.2903
+      wer: 0.6579
+    bible_00031:
+      source: bible
+      text: Dɔŋɔ ma nɛ Salɩma, ʋ ma nɛ suomi taŋ-la ba sɩɩ yɩrɛ Bɛtɩlɛhɛm. Dɔŋɔ ma nɛ Harɛf, ʋ ma nɛ suomi
+        taŋ-la ba sɩɩ yɩrɛ Bɛf Gada.
+      sbs: 0.6961
+      gen_sec: 9.98
+      ref_sec: 14.2
+      cer: 0.2308
+      wer: 0.5185
+    bible_00032:
+      source: bible
+      text: Ŋɩɩ nɛ Jona jʋʋ taŋ-la. Chɛ-bumbuŋ-la ʋ sɩ jʋa, ʋ heele bʋl, “Ʋ ka tapʋlaa mahɩŋ balɩa aŋ
+        ka dɩ Wɩa chei Nɩnɩvɛ kala.”
+      sbs: 0.7608
+      gen_sec: 9.73
+      ref_sec: 10.92
+      cer: 0.2791
+      wer: 0.7917
+    bible_00033:
+      source: bible
+      text: Wɩa nɩaa kala tʋɔŋ, mɩ nɛ ŋaa ba kʋbie, aŋ ka ʋ lɩɩsɛmɛ ʋ lahɔrɩmɔ lɛ dɩ mɩ bʋl ʋ wʋzɔmɔ-la
+        wɩaa a pɩ nɩalɩŋ sɩ bɩ Juu tɩŋŋaa ŋaa, dɩ ba jɩŋ Kirisito dʋa-la sɩ bɩ dɩdɛrɩ kɛnɛ wɩaa,
+      sbs: 0.7906
+      gen_sec: 14.76
+      ref_sec: 13.64
+      cer: 0.2889
+      wer: 0.7
+    bible_00034:
+      source: bible
+      text: koo a na dɩɩsɩ-la lɛ mɩ sɩ joŋ duoŋ-tabɩaa bil?
+      sbs: 0.7018
+      gen_sec: 3.93
+      ref_sec: 3.48
+      cer: 0.2571
+      wer: 0.6
+    bible_00035:
+      source: bible
+      text: Ʋ chɩŋ dundolo-la wɩɩpɔsʋŋ dɩɩrɩŋ ba sɩ dɩŋa lɛ, aŋ saa taŋ-la golli. Ka Jʋab ma beŋ ba wasa
+        bɩrɩmɛ taŋ-la kʋkaanɩŋ.
+      sbs: 0.7465
+      gen_sec: 10.33
+      ref_sec: 11.04
+      cer: 0.3596
+      wer: 0.6364
+    bible_00036:
+      source: bible
+      text: Bʋa-la lɛ ba sɩ jaŋ kɛŋ tabɩaa pɩsɛ arɩ bʋa-la lɛ ba sɩ jaŋ gbaaba hɛ dɔŋɔ.
+      sbs: 0.7023
+      gen_sec: 6.23
+      ref_sec: 4.62
+      cer: 0.1786
+      wer: 0.4706
+    bible_00037:
+      source: bible
+      text: Ŋmobuŋ ka giri
+      sbs: 0.5157
+      gen_sec: 1.37
+      ref_sec: 3.56
+      cer: 0.6667
+      wer: 1.3333
+    bible_00038:
+      source: bible
+      text: La TƖƖNA sɩ ŋaa la naabalɩma Abɩraham, Aɩzɩk, arɩ Jekɔb ba Wɩa, leŋ dɩ ŋ nɩaa kɛŋ tʋɔŋ deeŋ
+        doho, a kɛŋ wʋtɩtɩɩ arɩŋ a kaa mʋ wuu.
+      sbs: 0.7737
+      gen_sec: 11.01
+      ref_sec: 13.42
+      cer: 0.2347
+      wer: 0.6071
+    bible_00039:
+      source: bible
+      text: Chɛ wʋjɩmɩŋ a sɛɩ dɩ ba kɛnɩŋ tʋrɛ, arɩ ŋɩɩ ŋ sɩ jaŋ to
+      sbs: 0.7158
+      gen_sec: 4.61
+      ref_sec: 4.04
+      cer: 0.3171
+      wer: 0.7143
+    bible_00040:
+      source: bible
+      text: Má cho dɔŋɔ arɩ Kirisito sɩ chola ŋɩɩ a sʋʋ la wɩaa. Ʋ joŋ ʋ tɩtɩa a pɩ Wɩa nɛ, ba kpʋʋ arɩ
+        ba sɩ yie kpʋ pʋsʋŋ a nyɩga pɩ Wɩa ŋɩɩ, ʋ sʋɔra sɩŋ.
+      sbs: 0.773
+      gen_sec: 11.35
+      ref_sec: 11.0
+      cer: 0.3524
+      wer: 0.7222
+    bible_00041:
+      source: bible
+      text: Maakɩl, Ɩsɩpa arɩ Joha.
+      sbs: 0.6737
+      gen_sec: 1.96
+      ref_sec: 3.88
+      cer: 0.3333
+      wer: 1.5
+    bible_00042:
+      source: bible
+      text: Mɩ bɩra sʋlʋ dɩ ma wuo laa Kirisito wɩaa dii woruŋ, dɩ ʋ hɛ ma tʋɔŋ lɛ a leŋ dɩ ma chɩŋ kpaŋ
+        kpaŋ a cho nɩaa.
+      sbs: 0.7802
+      gen_sec: 8.79
+      ref_sec: 8.5
+      cer: 0.1852
+      wer: 0.4815
+    bible_00043:
+      source: bible
+      text: Má lɩɩsɛ ma tɩtɩa birimiŋ tʋɔŋ wɩalɩŋ nɩaa sɩɩ ŋaa lɛ. Má joŋ ba bʋbʋɔŋ ta, a leŋ dɩ nɩaa
+        jɩŋ wɩalɩŋ ba sɩɩ ŋaa bɩ zɔŋ.
+      sbs: 0.7847
+      gen_sec: 10.33
+      ref_sec: 8.36
+      cer: 0.2556
+      wer: 0.5926
+    bible_00044:
+      source: bible
+      text: Wombii-la ʋ sɩ to kɔ, ʋ tɩtɩa nɛ ʋ jaŋ bɩra to a mɩɩrɛ,
+      sbs: 0.76
+      gen_sec: 4.27
+      ref_sec: 3.78
+      cer: 0.3077
+      wer: 0.7857
+    bible_00045:
+      source: bible
+      text: La TƖƖNA bɩ jaŋ leŋ dɩ nyanyalɩɩ kala jʋʋma. Ʋ bɩ jaŋ joŋ nyanyal bɔmɔ-la ma sɩ na Ijipiti
+        tinteeŋ lɛ kʋŋkala hɛ ma lɛ. Ama La TƖƖNA jaŋ joŋ nyanyal bɔŋŋɔɔ hɛ ma dʋndɔŋŋɔɔ lɛ.
+      sbs: 0.754
+      gen_sec: 15.1
+      ref_sec: 12.64
+      cer: 0.1912
+      wer: 0.5833
+    bible_00046:
+      source: bible
+      text: Wɩaa deemba kʋŋkala bɩ mɩ tʋɔŋ tɔrɔ a tɩŋ mɩ sɩ yie na Modikaaya Juu tɩɩna-la dɩ ʋ hɔŋ kuoro
+        dɩa boiŋ niiŋ.”
+      sbs: 0.7055
+      gen_sec: 9.05
+      ref_sec: 9.94
+      cer: 0.2651
+      wer: 0.7826
+    bible_00047:
+      source: bible
+      text: Ŋɩɩ nɛ Wɩɩsʋllɩ sɩpaalaaraa arɩ Levi doho nɩaa pɩɩsɛ ba tɩtɩa ta a kɛŋ ba tɩtɩa hɛ dɔŋɔ dɩ
+        ba joŋ La TƖƖNA, Iziral tɩŋŋaa Wɩa niiriŋ daga-la.
+      sbs: 0.7488
+      gen_sec: 11.95
+      ref_sec: 12.02
+      cer: 0.2523
+      wer: 0.6429
+    bible_00048:
+      source: bible
+      text: 'Nafɩtalɩ hambolibiisiŋ nɛ ŋ-la: Jazɩɛl, Guni, Jeza arɩ Sɩlɛm. Ba fa ŋaa Nafɩtalɩ naaŋ Biliha
+        doho nɩaa nɛ.'
+      sbs: 0.7768
+      gen_sec: 9.22
+      ref_sec: 12.26
+      cer: 0.1566
+      wer: 0.5556
+    bible_00049:
+      source: bible
+      text: Ɩsaka doho wɩaa ba sɩ ŋmʋnsa bil daga arɩ ba doho fa kɛŋ laalɩyuoroo bʋɩ mahɩŋ banɛsɛ arɩ
+        balɩpɛ nɛ.
+      sbs: 0.7631
+      gen_sec: 8.28
+      ref_sec: 10.28
+      cer: 0.2125
+      wer: 0.65
+    bible_00050:
+      source: bible
+      text: 'Mɩka hambolibiisiŋ nɛ: Pɩtɔŋ, Mɛlɛk, Tarɩa arɩ Ahas.'
+      sbs: 0.7464
+      gen_sec: 4.61
+      ref_sec: 7.08
+      cer: 0.1463
+      wer: 0.75
+    bible_00051:
+      source: bible
+      text: Lɛɛlɛ, la Wɩa, laa lɔllʋŋ a dɩdɛnnɛ ŋ yɩrɩ zɔmʋŋ.
+      sbs: 0.6828
+      gen_sec: 4.27
+      ref_sec: 4.52
+      cer: 0.3784
+      wer: 0.8
+    bible_00052:
+      source: bible
+      text: Yarɩwɩɩ tɩɩna bɩ bʋa-la sɩ maga dɩ ʋ pɛrɛ lɛ ka pɛrɛ,
+      sbs: 0.7114
+      gen_sec: 4.1
+      ref_sec: 3.92
+      cer: 0.25
+      wer: 0.5833
+    bible_00053:
+      source: bible
+      text: Ŋɩɩ nɛ tɩɩ, dɩ mɩ nɩɩ chʋɔlɛ Wɩa na-kala, mɩ yie lʋlɔllʋ nɛ a tɩŋ ma wɩaa. Mɩ yie liisi ma
+        wɩaa nɛ a chʋɔlɛ Wɩa pɩpɩma.
+      sbs: 0.7717
+      gen_sec: 9.39
+      ref_sec: 9.1
+      cer: 0.3182
+      wer: 0.6667
+    bible_00054:
+      source: bible
+      text: Ŋɩɩ nɛ Devit bʋl, “La TƖƖNA Iziral tɩŋŋaa Wɩa pɩ ʋ nɩaa wiese nɛ, ʋ tɩtɩa jaŋ hɛ Jerusalɛm
+        lɛ a kaa mʋ wuu.
+      sbs: 0.7459
+      gen_sec: 8.62
+      ref_sec: 9.62
+      cer: 0.2
+      wer: 0.5
+    bible_00055:
+      source: bible
+      text: Mɩ bɩɩna mɩ tʋɔŋ lɛ, “Mɩ jaŋ kɛŋ tʋɔtɔrʋŋ ŋaa wɩaa a na sɩma-la sɩ hɛ ʋ lɛ.” Ama mɩ na dɩ
+        ŋɩɩ ma bɩ bʋbʋɔ kɛnɛ.
+      sbs: 0.7523
+      gen_sec: 8.79
+      ref_sec: 9.9
+      cer: 0.3291
+      wer: 0.6667
+    bible_00056:
+      source: bible
+      text: Sɩ́ ŋ tʋɔbɩɩnaa lɛ to a dii, to nɩɩ-la sɩ bʋla pɩŋ tʋɔbɩɩnaa lɛ a sɩ́ dii. Dɩ mɩ nɛ jɩma arɩ
+        mɩ kɛŋ wombiiŋ dɩ mɩ ŋaa wɩɩ, bɛɛ nɛ saa tɩɩ nʋʋ dɔŋ tʋɔbɩɩnaa jaŋ wuo pɔ dɩ mɩ sɩ́ wɩɩ-la ŋaa?
+      sbs: 0.7599
+      gen_sec: 14.85
+      ref_sec: 13.48
+      cer: 0.3382
+      wer: 0.6818
+    bible_00057:
+      source: bible
+      text: a gɔllɛ nɩmɛ a chɩchɛ pɩpaa-laarɩŋ dɩ ʋ dii.
+      sbs: 0.7222
+      gen_sec: 3.67
+      ref_sec: 4.08
+      cer: 0.3529
+      wer: 0.7778
+    bible_00058:
+      source: bible
+      text: ŋɩɩ nɩɩ tɔrɛ La Tɩɩna tʋɔŋ a kɩɩ nʋʋ sɩ kpʋ pʋsʋŋ a ŋaa Wɩɩsʋlʋŋ pʋ.
+      sbs: 0.7361
+      gen_sec: 5.72
+      ref_sec: 3.88
+      cer: 0.4231
+      wer: 0.75
+    bible_00059:
+      source: bible
+      text: Dɩ ŋ nɛ mʋ ʋ dɩa, ʋ naga ŋ sɩɩ mʋ lee sʋʋŋ sɩ hɛ nɛ,
+      sbs: 0.7305
+      gen_sec: 3.93
+      ref_sec: 4.92
+      cer: 0.4286
+      wer: 0.75
+    bible_00060:
+      source: bible
+      text: la tʋɔbɩɩnaa lɛlɛ nɛ, la-na bɩ wɩɩ kɛnɛ dɩ la bʋla pʋ.
+      sbs: 0.732
+      gen_sec: 4.27
+      ref_sec: 3.74
+      cer: 0.25
+      wer: 0.75
+    bible_00061:
+      source: bible
+      text: arɩ tinteye-la lɩɩŋ sɩ gollo chu nɩaa, má dɛnnʋ.
+      sbs: 0.7206
+      gen_sec: 4.01
+      ref_sec: 3.16
+      cer: 0.2973
+      wer: 0.6667
+    bible_00062:
+      source: bible
+      text: 'Uzi nanʋala nɛ Izirahia. Izirahia ma hambolibiisiŋ nɛ ŋ-la: Maakɩl, Obadaaya, Jowɛl arɩ Ɩsɩa.
+        Ba kala banɔŋ fa ŋaa kuoroo nɛ.'
+      sbs: 0.7431
+      gen_sec: 10.75
+      ref_sec: 14.88
+      cer: 0.1327
+      wer: 0.8095
+    bible_00063:
+      source: bible
+      text: Ʋ maga dɩ ŋ jɩŋ arɩ La TƖƖNA lɩɩsɩŋ nɛ dɩ ŋ saa ʋ dɩɩ-balɩŋ sɩ bɩ disiniŋ kɛnɛ. Kɛŋ tʋɔ-doluŋ
+        a tɩŋ tɩntɩmɩɩ-la.”
+      sbs: 0.7856
+      gen_sec: 9.73
+      ref_sec: 10.54
+      cer: 0.3214
+      wer: 0.8333
+    bible_00064:
+      source: bible
+      text: Ɛnɔk, Mɛtʋsɛla, Lamɛk arɩ Nowa.
+      sbs: 0.6945
+      gen_sec: 2.65
+      ref_sec: 4.72
+      cer: 0.5833
+      wer: 1.0
+    bible_00065:
+      source: bible
+      text: Mɩ bɩra na dɩ tɩntɩmɩɩ-la kala nɩaa sɩɩ tɩŋ arɩ kɩalɩŋ kala ba sɩ yie na lɩɩ ba yaraa sɩɩ
+        bieri ba dɔŋɔ nyuŋ nɛ. Wɩɩŋ deeŋ ma bɩ bʋbʋɔ kɛnɛ, ʋ nagɛ nʋʋ sɩɩ kiri peliŋ nɛ.
+      sbs: 0.7282
+      gen_sec: 13.91
+      ref_sec: 11.52
+      cer: 0.2868
+      wer: 0.6053
+    bible_00066:
+      source: bible
+      text: Ŋ jaŋ wuo leŋ dɩ taŋ lɩgɩsɛ joŋ ʋ wombiiŋ?
+      sbs: 0.7503
+      gen_sec: 3.84
+      ref_sec: 3.12
+      cer: 0.2812
+      wer: 0.5
+    bible_00067:
+      source: bible
+      text: Ʋ yaraa yie nyaasɛ nɛ ʋ chichel, a faasa fá.
+      sbs: 0.7381
+      gen_sec: 3.41
+      ref_sec: 4.4
+      cer: 0.2424
+      wer: 0.7
+    bible_00068:
+      source: bible
+      text: Ŋ jaŋ hɔŋ ŋ dɩa lɛ a bɩ wɩɩkala ka fá,
+      sbs: 0.6732
+      gen_sec: 3.16
+      ref_sec: 3.16
+      cer: 0.7778
+      wer: 1.1818
+    bible_00069:
+      source: bible
+      text: Mɩ jaŋ yallɛ ma hambolibiisiŋ arɩ ma hantolibiisiŋ a pɩ Juda nɩaa, dɩ ba ma laa yalla pɩ Sabɩa
+        nɩaa sɩ hɛ tintee-la sɩ bolie lɛ.”
+      sbs: 0.7486
+      gen_sec: 10.5
+      ref_sec: 8.84
+      cer: 0.17
+      wer: 0.5385
+    bible_00070:
+      source: bible
+      text: aa chɔl nɩaa vaasɩŋ koo aa bori nyusuŋ.
+      sbs: 0.6913
+      gen_sec: 3.33
+      ref_sec: 3.8
+      cer: 0.2258
+      wer: 0.875
+    bible_00071:
+      source: bible
+      text: Devit sɩ sʋl Wɩɩsʋlɩɩ-la a dɛrɛ, ʋ sʋl Wɩa pɩ nɩalɩŋ La TƖƖNA yɩrɩŋ lɛ,
+      sbs: 0.6736
+      gen_sec: 5.8
+      ref_sec: 6.6
+      cer: 0.3333
+      wer: 0.7333
+    bible_00072:
+      source: bible
+      text: Ma dɩ Wɩa pɛgɛ fa bolie nɛ, ama lɛɛlɛ ma dɩ Kirisito sɩ ŋaa kʋbala ŋɩɩ, ʋ joŋ ʋ chalɩŋ jaasɛ
+        ma wɩaa nɛ, a kɛŋ ma dɩ Wɩa kʋ kpagɛ dɔŋɔ.
+      sbs: 0.7737
+      gen_sec: 10.92
+      ref_sec: 9.12
+      cer: 0.2
+      wer: 0.5625
+    bible_00073:
+      source: bible
+      text: Baalaa, má cho ma haalaa, arɩ Kirisito sɩ cho nɩalɩŋ sɩ laa Wɩa wɩaa dii aa hilimi ŋɩɩ, ʋ
+        sʋʋ ba wɩaa,
+      sbs: 0.7683
+      gen_sec: 8.19
+      ref_sec: 6.4
+      cer: 0.2078
+      wer: 0.6364
+    bible_00074:
+      source: bible
+      text: La TƖƖNA doluŋ kala Tɩɩna chaasa kɛŋ ʋ tɩtɩa hɛ dɔŋɔ nɛ
+      sbs: 0.7333
+      gen_sec: 4.61
+      ref_sec: 3.5
+      cer: 0.4773
+      wer: 0.8333
+    bible_00075:
+      source: bible
+      text: Wɩa sɩ laama ta ŋɩɩ, ʋ maga dɩ ʋ nagɛ hɔɔŋ nyuŋ-chu-gbaŋkogo nɛ ma joŋo chu, aŋ joŋ Wɩa Dɩŋ-zɔmʋŋ
+        tokobiiŋ a kori. Tokobii-la nɛ ŋaa Wɩa niiŋ wɩaa.
+      sbs: 0.7689
+      gen_sec: 12.97
+      ref_sec: 11.04
+      cer: 0.2252
+      wer: 0.7241
+    bible_00076:
+      source: bible
+      text: Ŋ nɛ yie pɩ nɩaa dʋa, ŋ yie leŋ nɩaa kɛŋ yɩrɩŋ.
+      sbs: 0.722
+      gen_sec: 4.01
+      ref_sec: 4.16
+      cer: 0.2353
+      wer: 0.5
+    bible_00077:
+      source: bible
+      text: Sɩ́ nɩbɔmʋŋ nagʋ, a faa gbɛrɛ dɩ ŋ ŋaa wʋbɔŋ tʋɔpʋl tɩɩna dɩa lɛ,
+      sbs: 0.7146
+      gen_sec: 5.46
+      ref_sec: 4.12
+      cer: 0.3673
+      wer: 0.7857
+    bible_00078:
+      source: bible
+      text: arɩ Mɩkɩlɔf sɩ ŋaa Sɩmɩa nyɩmma. Ba ma hɔnɔ kpagɛ ba naambiiriŋ nɛ Jerusalɛm lɛ.
+      sbs: 0.7398
+      gen_sec: 6.74
+      ref_sec: 9.02
+      cer: 0.1719
+      wer: 0.4667
+    bible_00079:
+      source: bible
+      text: Wʋtɩtɩɩ nɛ, a chɩŋ dɩ-suomuŋ kala mɩ nɛ Wɩa.
+      sbs: 0.6787
+      gen_sec: 3.75
+      ref_sec: 3.26
+      cer: 0.303
+      wer: 0.6667
+    bible_00080:
+      source: bible
+      text: Sɩmɩrɩ nanʋala Jɛdayɛl arɩ ʋ naambie Joha, sɩ ŋaa Tis tɩɩna,
+      sbs: 0.7332
+      gen_sec: 5.03
+      ref_sec: 8.92
+      cer: 0.2917
+      wer: 1.1818
+    bible_00081:
+      source: bible
+      text: Nyilli-la nɛ ʋ jaŋ kaa gbaa tinteyee a hɛ dɔŋɔ
+      sbs: 0.7264
+      gen_sec: 3.84
+      ref_sec: 3.98
+      cer: 0.25
+      wer: 0.4
+    bible_00082:
+      source: bible
+      text: dɩ nɩɩ-la ma sɩ bɩ wʋtɩtɩɩ kɛnɛ laa nɩɩ-la wɩaa sɩ tʋʋla nyuŋ a na hɛɛŋ.
+      sbs: 0.7105
+      gen_sec: 5.8
+      ref_sec: 5.42
+      cer: 0.2778
+      wer: 0.5625
+    bible_00083:
+      source: bible
+      text: Mɩ jaŋ laa ŋ dɩ Jerusalɛm nɩaa kala ta Asiiria kuoro nɩsɩŋ lɛ. Mɩ jaŋ pɔ taŋ deeŋ woruŋ.’
+        ”
+      sbs: 0.7804
+      gen_sec: 7.59
+      ref_sec: 7.76
+      cer: 0.1471
+      wer: 0.4737
+    bible_00084:
+      source: bible
+      text: Ʋ yie pɩna gbɛrɛ nɛ a nagɛ gaara,
+      sbs: 0.6759
+      gen_sec: 2.56
+      ref_sec: 3.74
+      cer: 0.16
+      wer: 0.5
+    bible_00085:
+      source: bible
+      text: a bɩra chɩchɛ dɩ mɩ jɩŋ ŋɩɩ bɔnsʋŋ sɩ naga
+      sbs: 0.6788
+      gen_sec: 3.5
+      ref_sec: 3.1
+      cer: 0.6364
+      wer: 1.0
+    bible_00086:
+      source: bible
+      text: Daŋ, Josɛf, Bɛnjamɩŋ, Nafɩtalɩ, Gad arɩ Asa.
+      sbs: 0.64
+      gen_sec: 3.93
+      ref_sec: 6.88
+      cer: 0.303
+      wer: 0.7143
+    bible_00087:
+      source: bible
+      text: Dɩ ʋ nɩɩ jʋʋ kuoro dɩa, ʋ jaŋ wuo joŋ gɛrɩ-la kala koo kpɩɛrɛ-la kala ʋ sɩɩ chɛ haalaa dɩa-la
+        lɛ a laalɛ.
+      sbs: 0.7325
+      gen_sec: 8.45
+      ref_sec: 10.04
+      cer: 0.2051
+      wer: 0.5217
+    bible_00088:
+      source: bible
+      text: Má bʋla pɩba, “La fa ŋaa yosi nɛ Ijipiti tinteeŋ kuoro nɩsɩŋ lɛ, ŋɩɩ nɛ La TƖƖNA joŋ doluŋ
+        a yuo laala.
+      sbs: 0.7564
+      gen_sec: 8.62
+      ref_sec: 8.08
+      cer: 0.1538
+      wer: 0.3636
+    bible_00089:
+      source: bible
+      text: Ŋɩɩ nɛ La TƖƖNA bʋla pɩ Gad sɩ ŋaa Devit sɩɩ-naara,
+      sbs: 0.7225
+      gen_sec: 4.27
+      ref_sec: 4.48
+      cer: 0.3077
+      wer: 0.8182
+    bible_00090:
+      source: bible
+      text: Ŋɩɩ nɛ kuoro ŋaa ba heele pɩ Nɩnɩvɛ nɩaa a bʋl, “Kuoro arɩ ʋ nɩhɩasɩŋ sɩ nuhuobiiŋ koo pʋna
+        kala bɩ maga dɩ ʋ dii kɩaa koo a nyʋa lɩɩŋ.
+      sbs: 0.7652
+      gen_sec: 10.92
+      ref_sec: 13.52
+      cer: 0.2427
+      wer: 0.6333
+    bible_00091:
+      source: bible
+      text: ama fawʋllʋŋ yie faasa jʋʋ wʋbɔŋ ŋaaraa-na nɛ.
+      sbs: 0.6419
+      gen_sec: 4.1
+      ref_sec: 5.7
+      cer: 0.2703
+      wer: 1.0
+    bible_00092:
+      source: bible
+      text: Má lɔllɛ La TƖƖNA, bɛɛ wɩaa ʋ wɩaa zɔmɔ, ʋ chonuŋ bɩ dɛrɛ.
+      sbs: 0.75
+      gen_sec: 4.61
+      ref_sec: 5.34
+      cer: 0.3023
+      wer: 0.8462
+    bible_00093:
+      source: bible
+      text: aŋ pɔ laa nɩalɩŋ kala sɩ bɩ lee kɛnɛ dɩ ba wuo na wɩalɩŋ sɩ maga dɩ ba na.
+      sbs: 0.6819
+      gen_sec: 5.8
+      ref_sec: 4.96
+      cer: 0.2
+      wer: 0.5789
+    bible_00094:
+      source: bible
+      text: Wɩa Dɩŋ-zɔmʋŋ ʋ sɩ joŋo hɛ la lɛ nɛ sɛnɛ daga arɩ wʋtɩtɩɩ, maachie la jaŋ dii kɩalɩŋ Wɩa sɩ
+        ŋaa bil ʋ nɩaa lɛ, aŋ laa ʋ nɩaa ta. Ŋɩɩ lɛ nɛ ʋ yɩrɩŋ jaŋ yɩrɛ.
+      sbs: 0.7813
+      gen_sec: 12.89
+      ref_sec: 11.8
+      cer: 0.2174
+      wer: 0.5676
+    bible_00095:
+      source: bible
+      text: Ŋmoo babii-balɩŋ dɩ nɩɩ-la sɩ bɩ wɩaa jɩŋ woruŋ
+      sbs: 0.6801
+      gen_sec: 4.27
+      ref_sec: 3.42
+      cer: 0.4324
+      wer: 1.3333
+    bible_00096:
+      source: bible
+      text: 'Wɩɩ-la sɩ jaŋ ŋaa magɩl a pɩ ŋ-na Hezikaaya nɛ:'
+      sbs: 0.7418
+      gen_sec: 4.01
+      ref_sec: 3.44
+      cer: 0.3143
+      wer: 0.7
+    bible_00097:
+      source: bible
+      text: Má zizil ma nyɩmmaba arɩ ma naamba arɩ ba sɩ bʋl ŋɩɩ Wɩa teniŋ tʋɔŋ. Wɩalɩŋ Wɩa sɩ dagɛ nɩaa
+        dɩ ba tuto tʋɔŋ, wɩɩŋ deeŋ nɛ kɛŋ time.
+      sbs: 0.7761
+      gen_sec: 11.09
+      ref_sec: 9.76
+      cer: 0.2376
+      wer: 0.6207
+    bible_00098:
+      source: bible
+      text: Dɩ ŋ nɛ ku pʋsʋŋ ya-diiliŋ a ku dundolo nyuŋ kɩaa ma pɛ a hiese hɛ dɔŋɔ,
+      sbs: 0.719
+      gen_sec: 6.06
+      ref_sec: 4.88
+      cer: 0.2407
+      wer: 0.5882
+    bible_00099:
+      source: bible
+      text: 'Wɩɩ dɔŋ ma nɛ bɩra ŋaa dʋnɩa lɛ a bɩ bʋbʋɔ kɛnɛ: Ba yie joŋ nɩbɔŋŋɔɔ time a tiŋ tʋɔpʋl tɩŋŋaa
+        lɛ, aŋ joŋ tʋɔpʋl tɩŋŋaa time a tiŋ nɩbɔŋŋɔɔ lɛ. Mɩ sɩ, wɩɩŋ deeŋ ma bɩ bʋbʋɔ kɛnɛ.'
+      sbs: 0.7201
+      gen_sec: 15.45
+      ref_sec: 14.38
+      cer: 0.2761
+      wer: 0.4872
+    bible_00100:
+      source: bible
+      text: Má leŋ dɩ la nɩalɩŋ kala sɩ laa Yesu wɩaa dii aa hilimi to Kirisito Yesu lɛ, a leŋ dɩ ʋ yɩrɩŋ
+        yɩrɛ a lɩɩ lɛɛlɛ a kaa mʋ wuu. Amɩɩ.
+      sbs: 0.7675
+      gen_sec: 10.33
+      ref_sec: 12.38
+      cer: 0.1856
+      wer: 0.3871
+    bible_00101:
+      source: bible
+      text: Fii arɩ batorumuŋ nɛ ŋaa Sʋbɛɛl arɩ ʋ hambolibiisiŋ arɩ ʋ naambiiriŋ, ba ma fii arɩ balɩa.
+      sbs: 0.7492
+      gen_sec: 7.68
+      ref_sec: 10.86
+      cer: 0.1806
+      wer: 0.6471
+    bible_00102:
+      source: bible
+      text: a pɩɩsɛ ba disiniŋ ta, a fo ba wʋbɔŋŋɔɔ kala ma ta arɩ lɩɩŋ, a tɩŋ Wɩa niiŋ wɩalɩŋ ba sɩ nɩa
+        wɩaa.
+      sbs: 0.7573
+      gen_sec: 8.19
+      ref_sec: 6.86
+      cer: 0.2466
+      wer: 0.5217
+    bible_00103:
+      source: bible
+      text: Kʋbɛɛ nɛ ha wuo magɩsɛ Wɩa dɩ wɩɩ bɩ ʋ lɛ ŋaa?
+      sbs: 0.6755
+      gen_sec: 3.5
+      ref_sec: 3.14
+      cer: 0.3235
+      wer: 0.75
+    bible_00104:
+      source: bible
+      text: Sɩ-nyʋaraa arɩ nɩalɩŋ sɩ faasa cho kʋdiilee jaŋ nyaabɛ.
+      sbs: 0.6931
+      gen_sec: 4.86
+      ref_sec: 3.8
+      cer: 0.2222
+      wer: 0.6667
+    bible_00105:
+      source: bible
+      text: Má sɩ́ Hezikaaya teeŋ jegilu.’ Asiiria kuoro sɩ, ‘Má kɔ mɩ teeŋ dɩ la ŋaa sɩma, ŋɩɩ nɛ ma
+        kʋŋkala jaŋ wuo dii ma tɩtɩa girep nɛnɛɛ aŋ nyʋa ma vilee ma lɩɩŋ,
+      sbs: 0.7716
+      gen_sec: 12.8
+      ref_sec: 12.78
+      cer: 0.188
+      wer: 0.4848
+    bible_00106:
+      source: bible
+      text: Sɩ́ nʋʋ yɩrɩŋ chei pɩ ŋ dɔŋɔ tɩɩna dɩ ŋ nɛ jɩma ʋ bɩ wɩɩ cheye.
+      sbs: 0.7292
+      gen_sec: 5.03
+      ref_sec: 4.4
+      cer: 0.4348
+      wer: 0.9375
+    bible_00107:
+      source: bible
+      text: Ʋ dɩ la nyɩmmaba dʋndʋŋa pɛgɛ dee ʋ hɛ nii-la, ama ʋ hɛ nii-la ʋ dɩ la nɩalɩŋ kala ha sɩ hɛ
+        la mɩɩsɩŋ lɛ jɩnɩŋ pɛgɛ nɛ.
+      sbs: 0.7687
+      gen_sec: 9.47
+      ref_sec: 10.04
+      cer: 0.2386
+      wer: 0.5357
+    bible_00108:
+      source: bible
+      text: Wʋkpuŋkperisiŋ deemba Wɩa sɩ ŋaa arɩ ʋ jɩma, ŋ jɩmba nɛɛ?
+      sbs: 0.7209
+      gen_sec: 5.03
+      ref_sec: 4.4
+      cer: 0.2222
+      wer: 0.9091
+    bible_00109:
+      source: bible
+      text: Ŋɩɩ nɛ Devit bʋl, “Daha nɛ maga dɩ La TƖƖNA Wɩa dɩɩ-balɩŋ arɩ Iziral tɩŋŋaa kʋnyɩgaa Wɩɩsʋllɩ
+        koruŋ hɛ.”
+      sbs: 0.7451
+      gen_sec: 8.79
+      ref_sec: 9.82
+      cer: 0.321
+      wer: 0.7368
+    bible_00110:
+      source: bible
+      text: “Daŋ nagɛ naachigi-bie nɛ a fɩla lɩɩ Basaŋ tinteeŋ lɛ.”
+      sbs: 0.7298
+      gen_sec: 4.61
+      ref_sec: 4.4
+      cer: 0.0714
+      wer: 0.6
+    bible_00111:
+      source: bible
+      text: Ŋ ha na lɛlɛɛ-jaŋ dɩ-bine-la boi-baalaa?
+      sbs: 0.7173
+      gen_sec: 3.67
+      ref_sec: 3.2
+      cer: 0.2
+      wer: 1.0
+    bible_00112:
+      source: bible
+      text: Mali hambolibiisiŋ nɛ Elieza arɩ Kɩs. Elieza bɩ hambolibie lʋla, ama Kɩs-na lʋl hambolibie
+        nɛ baa yɩrɛ Jɛramɛɛl.
+      sbs: 0.7354
+      gen_sec: 9.47
+      ref_sec: 12.56
+      cer: 0.1429
+      wer: 0.8889
+    bible_00113:
+      source: bible
+      text: nʋʋkala bɩ ŋɩɩ lɛ jɩŋ, a lɛl a kaa mʋ wuu.
+      sbs: 0.7567
+      gen_sec: 3.33
+      ref_sec: 3.2
+      cer: 0.2667
+      wer: 0.4545
+    bible_00114:
+      source: bible
+      text: Ŋɩɩ nɛ La TƖƖNA leŋ pel-bal lu mʋgʋ-bal-la lɛ. Lɩɩ-pel-bal sii a chɩchɛ dɩ ʋ yɛrɛ lɩɩŋ daboro-la.
+      sbs: 0.763
+      gen_sec: 8.19
+      ref_sec: 10.12
+      cer: 0.25
+      wer: 0.7222
+    bible_00115:
+      source: bible
+      text: Ŋ ha maachie wuo bʋla pɩ wɩɩhɛyɛ pʋlʋmʋŋ dɩ ʋ chaana mʋ yi dʋnɩa dɩdɛrɩŋ,
+      sbs: 0.7551
+      gen_sec: 6.14
+      ref_sec: 6.0
+      cer: 0.3103
+      wer: 0.7333
+    bible_00116:
+      source: bible
+      text: Ŋɩɩ nɛ Ɛsɩta yɩrɛ bafere-la dɔŋɔ ba sɩɩ yɩrɛ Hatak kuoro sɩ leŋe ʋ bibenu dɩ ʋ lɩɩ pɩɛsɛ Modikaaya
+        na wɩɩ-la sɩɩ walɩmʋ.
+      sbs: 0.7083
+      gen_sec: 9.9
+      ref_sec: 9.64
+      cer: 0.3617
+      wer: 0.9583
+    bible_00117:
+      source: bible
+      text: Kuoro sɩ mɩɩra lɩɩ lɩga-la lɛ a kʋ jʋʋ dɩa-la lɛ ba fa sɩ hɔnɔ dii kɩaa, dɩ Hamaŋ tuu kpirimi
+        Ɛsɩta sɩpaaŋ a sʋsʋlʋ dɩ ʋ fá ʋ nenige.
+      sbs: 0.7269
+      gen_sec: 10.5
+      ref_sec: 11.26
+      cer: 0.31
+      wer: 0.7333
+    bible_00118:
+      source: bible
+      text: Nanchʋɔsʋŋ sɩ jaŋ sʋʋ hɛ tʋlaalɩ lɛ dɩ ʋ sʋɔra lɔrɛ ŋɩɩ,
+      sbs: 0.7218
+      gen_sec: 4.69
+      ref_sec: 3.8
+      cer: 0.4091
+      wer: 0.75
+    bible_00119:
+      source: bible
+      text: Ba sɩ kʋ yi baal kʋbala ba sɩɩ yɩrɛ Kɩdɔŋ taha, nɛsɩ-la gɛrɛ. Uza guu mʋ kɛŋ Wɩa niiriŋ daga-la
+        dɩ ʋ sɩ́ tel.
+      sbs: 0.7528
+      gen_sec: 8.7
+      ref_sec: 11.38
+      cer: 0.2125
+      wer: 0.7917
+    bible_00120:
+      source: bible
+      text: mɩ jaŋ pɩɛsɩŋ wɩaa, dɩ ŋ chaarɛ ba sɩaa pɩmɛ.
+      sbs: 0.7096
+      gen_sec: 3.84
+      ref_sec: 3.24
+      cer: 0.3529
+      wer: 0.9
+    bible_00121:
+      source: bible
+      text: Ʋ yie kɛnʋ dagɛ wombii-la kala ʋ sɩ cho dɩ ʋ to, a nagɛ lɩɩŋ sɩɩ to lɩɩ-libe ŋɩɩ.
+      sbs: 0.7393
+      gen_sec: 6.4
+      ref_sec: 7.26
+      cer: 0.3559
+      wer: 0.7895
+    bible_00122:
+      source: bible
+      text: Wɩa sɩ yɩrɛma dɩ ma wuo jʋʋ ʋ kuorii-la tʋɔŋ ŋɩɩ, mɩɩ sʋlʋ dɩ ʋ wuo suri ma tʋɔŋ dɩ ma wuo
+        jɩŋ kʋ-la ma sɩɩ yɩɛlʋ nagɩsɩŋ, a bɩra jɩŋ kɩalɩŋ ma dɩ Wɩa nɩaa kala sɩ jaŋ dii zɔmʋŋ.
+      sbs: 0.7691
+      gen_sec: 14.59
+      ref_sec: 12.92
+      cer: 0.3233
+      wer: 0.7805
+    bible_00123:
+      source: bible
+      text: 'Rɛwɛl hambolibiisiŋ nɛ ŋaa: Nahaf, Zɛra, Sama arɩ Mɩza.'
+      sbs: 0.7443
+      gen_sec: 4.86
+      ref_sec: 7.54
+      cer: 0.1163
+      wer: 0.8889
+    bible_00124:
+      source: bible
+      text: Má sɩ́ ma TƖƖNA Wɩa magɩsʋ arɩ ma fa sɩ ŋaa ŋɩɩ lee-la ba sɩɩ yɩrɛ Masa lɛ.
+      sbs: 0.7533
+      gen_sec: 5.8
+      ref_sec: 6.9
+      cer: 0.2545
+      wer: 0.6111
+    bible_00125:
+      source: bible
+      text: Ŋɩɩ nɛ mɩ jɩŋ dɩ nuhuobiine mɩɩsɩŋ lɛ kʋŋkala tuo a kpɩa tʋɔtɔrʋŋ arɩ wʋzɔŋŋɔɔ ŋaanɩŋ.
+      sbs: 0.7109
+      gen_sec: 7.94
+      ref_sec: 7.34
+      cer: 0.3
+      wer: 0.75
+    bible_00126:
+      source: bible
+      text: Ama dɩ ŋ nandɔŋ fɩamɩŋ nɛ chaasa bʋl wɩaa chagɩlɩŋ,
+      sbs: 0.6968
+      gen_sec: 4.52
+      ref_sec: 3.08
+      cer: 0.2683
+      wer: 0.8
+    bible_00127:
+      source: bible
+      text: Wʋbɔŋ ŋaara yie jegilee nɩɩ nɩbɔmʋŋ wʋbʋlʋŋ nɛ.
+      sbs: 0.6017
+      gen_sec: 4.35
+      ref_sec: 3.28
+      cer: 0.5128
+      wer: 0.875
+    bible_00128:
+      source: bible
+      text: Ba sɩ joŋ Jona yuo hɛ mʋgʋ-bal-la tʋɔŋ ŋɩɩ, La TƖƖNA leŋ chenfil-bal joŋ Jona liŋ, ʋ hɛ ʋ
+        tʋɔŋ tapʋlaa batori, wɩɩhɛyɛ arɩ tɩtaŋɩŋ kala.
+      sbs: 0.7727
+      gen_sec: 11.86
+      ref_sec: 14.7
+      cer: 0.2404
+      wer: 0.6538
+    bible_00129:
+      source: bible
+      text: Dɩ wɩaa nɛ jʋʋŋ, dɩ ŋɩɩ leŋ dɩ ŋ nandaasɩŋ yʋɔrɛ,
+      sbs: 0.7134
+      gen_sec: 4.35
+      ref_sec: 3.42
+      cer: 0.4324
+      wer: 1.0
+    bible_00130:
+      source: bible
+      text: mɩ na dɩ wɩalɩŋ kala mɩ sɩ ŋaa bɩ bʋbʋɔŋ kɛnɛ.
+      sbs: 0.6957
+      gen_sec: 3.84
+      ref_sec: 3.3
+      cer: 0.2857
+      wer: 0.7273
+    bible_00131:
+      source: bible
+      text: Dɩ ma nɛ kʋ hilimi a bʋl Wɩa wɩaa pɩpɩ dɔŋɔ, má yɩyɩɩ Wɩa yɩɩlaa a dɩdɛnnɛ Wɩa, a yɩɩ yɩɩla-la
+        dɔnsʋŋ ma sɩɩ dagɛ Kirisito wɩaa. Má yɩɩ Wɩa yɩɩlaa a dɩdɛnnɛ La Tɩɩna Kirisito arɩ ma tʋɔŋ kala.
+      sbs: 0.753
+      gen_sec: 15.7
+      ref_sec: 14.1
+      cer: 0.3243
+      wer: 0.675
+    bible_00132:
+      source: bible
+      text: aŋ sɩsaa ʋ dɛlɛ tɩa nyuŋ dɩ-leŋii?
+      sbs: 0.679
+      gen_sec: 3.07
+      ref_sec: 3.06
+      cer: 0.6154
+      wer: 1.2857
+    bible_00133:
+      source: bible
+      text: Ba joŋ ʋ laalɩyuori kɩalɩŋ a bil ba vesiŋ dɩa lɛ, aŋ joŋ Sɔɔl nyuŋ sagɛ ba vene-la ba sɩɩ
+        yɩrɛ Dagɔŋ dɩa lɛ.
+      sbs: 0.7708
+      gen_sec: 9.13
+      ref_sec: 10.0
+      cer: 0.1951
+      wer: 0.5
+    bible_00134:
+      source: bible
+      text: Nibi nɛ ŋaa Matanɩa arɩ ʋ hambolibiisiŋ arɩ ʋ naambiiriŋ, ba ma fii arɩ balɩa.
+      sbs: 0.7824
+      gen_sec: 6.66
+      ref_sec: 8.3
+      cer: 0.1613
+      wer: 0.7333
+    bible_00135:
+      source: bible
+      text: Ʋ maga dɩ ba laa gɛrɩ-la nʋhʋɔrʋ-la chɩmɩŋ
+      sbs: 0.6815
+      gen_sec: 3.5
+      ref_sec: 3.5
+      cer: 0.2727
+      wer: 0.875
+    bible_00136:
+      source: bible
+      text: Ama mɩ dɩ mɩ nɩaa nɛ kʋbɛɛba a magɛ dɩ la kɛŋ kɩaa kʋ ŋaa chɔgɩta pɩŋ la tɩtɩa tʋɔtɔrʋŋ lɛ.
+        Ŋ nɛ tɩɩ kʋŋkala, kɩalɩŋ ŋ sɩ pɩla, ba nɛ la bɩra joŋo pɩŋ ŋɩɩ.
+      sbs: 0.7541
+      gen_sec: 12.97
+      ref_sec: 14.28
+      cer: 0.2759
+      wer: 0.6667
+    bible_00137:
+      source: bible
+      text: Mɩ nɛ ma TƖƖNA, ma Wɩa sɩ bɩ disiniŋ kɛnɛ, mɩ nɛ ŋaa ma
+      sbs: 0.7585
+      gen_sec: 4.35
+      ref_sec: 4.12
+      cer: 0.225
+      wer: 0.5714
+    bible_00138:
+      source: bible
+      text: Má liisi wʋkpuŋkperisi-la arɩ wʋduoru-la ʋ sɩ ŋaa arɩ ŋɩɩ ʋ sɩ dii sarɩya ʋ bʋa lɛ,
+      sbs: 0.7414
+      gen_sec: 6.91
+      ref_sec: 8.38
+      cer: 0.2344
+      wer: 0.8235
+    bible_00139:
+      source: bible
+      text: Ka dɩ ʋ-na suomo ŋaa dʋnɩa, ʋ to Kirisito lɛ nɛ a lɩɩsɛla, dɩ la kɛŋ tʋɔpʋla, a sɩ́ cheeri
+        kala kɛŋ ʋ sɩpaaŋ. A tɩŋ Wɩa sɩ chola wɩaa,
+      sbs: 0.7655
+      gen_sec: 10.75
+      ref_sec: 10.22
+      cer: 0.2449
+      wer: 0.6333
+    bible_00140:
+      source: bible
+      text: Má zizil ma nyɩmmaba arɩ ma naamba, arɩ mɩ-na ma TƖƖNA Wɩa sɩ dagɛma ŋɩɩ. Dɩ mɩ leŋ dɩ ma
+        mɩɩsɩŋ duomi, dɩ wɩaa vɛŋ woruŋ a pɩma tintee-la mɩ sɩ jaŋ joŋo pɩma lɛ.
+      sbs: 0.7677
+      gen_sec: 13.4
+      ref_sec: 12.24
+      cer: 0.2131
+      wer: 0.7714
+    bible_00141:
+      source: bible
+      text: Nɩalɩŋ kala sɩ laaʋ dii, ʋ yie nagɛ tɩa-la sɩɩ pɩ mɩɩsɩŋ nɛ ba teeŋ
+      sbs: 0.7109
+      gen_sec: 5.55
+      ref_sec: 4.38
+      cer: 0.2745
+      wer: 0.7333
+    bible_00142:
+      source: bible
+      text: Wʋtɩtɩɩ nɛ La TƖƖNA, Asiiria kuoroo chei nɩ-daŋ nɛ, ka ba tinteyee pɩŋ jikpeeŋ.
+      sbs: 0.7333
+      gen_sec: 6.83
+      ref_sec: 7.12
+      cer: 0.2097
+      wer: 0.5714
+    bible_00143:
+      source: bible
+      text: Ba biiri-la yie waa gɩrɩ-la tʋɔŋ a kɛŋ doluŋ,
+      sbs: 0.7445
+      gen_sec: 3.93
+      ref_sec: 3.32
+      cer: 0.1176
+      wer: 0.2222
+    bible_00144:
+      source: bible
+      text: ŋɩɩ deeŋ deeŋ a mʋ yi bʋa-la lɛ mɩ sɩ jaŋ kɛmma mʋ lee-la sɩ nagɛ ma tɩtɩa tinteeŋ, a kɛŋ
+        mɩaa ma sɩ jaŋ kaa ŋaa kʋdiilee arɩ girep nɛnɛɛ ma sɩ jaŋ kaa chɔ sɩnɩŋ.’
+      sbs: 0.7761
+      gen_sec: 13.48
+      ref_sec: 13.9
+      cer: 0.1803
+      wer: 0.5676
+    bible_00145:
+      source: bible
+      text: Mara arɩ kʋbala nɛ ŋaa Hotii arɩ ʋ hambolibiisiŋ arɩ ʋ naambiiriŋ, ba ma fii arɩ balɩa.
+      sbs: 0.7274
+      gen_sec: 7.34
+      ref_sec: 10.0
+      cer: 0.2029
+      wer: 0.7059
+    bible_00146:
+      source: bible
+      text: Kuoro sɩ bʋl wɩɩŋ deeŋ dɩdɛrɛ, dɩ ʋ tɩntɩnnaa guu tɔ Hamaŋ sɩaa.
+      sbs: 0.7253
+      gen_sec: 5.46
+      ref_sec: 6.12
+      cer: 0.26
+      wer: 0.6923
+    bible_00147:
+      source: bible
+      text: Nasɔŋ nanʋala nɛ Salɩmɔŋ. Salɩmɔŋ ma nanʋala nɛ Bʋas.
+      sbs: 0.7236
+      gen_sec: 4.69
+      ref_sec: 6.34
+      cer: 0.2558
+      wer: 0.8889
+    bible_00148:
+      source: bible
+      text: Baalaa deemba fa ŋaa Rafa doho nɩaa nɛ a hɔŋ Gaf lɛ. Ŋɩɩ nɛ ba jʋʋ Devit arɩ ʋ nɩaa nɩsɩŋ
+        ba kpʋba.
+      sbs: 0.7503
+      gen_sec: 8.02
+      ref_sec: 12.46
+      cer: 0.1867
+      wer: 0.4783
+    bible_00149:
+      source: bible
+      text: Ʋ nɛ chagɛ dɩa-la kala bil ʋ kʋ ŋaa Wɩa dɩɩ-balɩŋ sɩ bɩ disiniŋ kɛnɛ, La Tɩɩna Yesu dɩa-la.
+      sbs: 0.7505
+      gen_sec: 7.51
+      ref_sec: 6.72
+      cer: 0.2059
+      wer: 0.5789
+    bible_00150:
+      source: bible
+      text: Ŋ jaŋ nagɛ nʋʋ sɩ pɩŋ lɩɩŋ daboro tʋɔŋ mʋgʋ-balɩŋ lɛ,
+      sbs: 0.697
+      gen_sec: 4.86
+      ref_sec: 4.4
+      cer: 0.3659
+      wer: 0.8182
+    bible_00151:
+      source: bible
+      text: peelee arɩ tɩa na-kala sɩ hɛ duuŋ lɛ má faasa yɩɩ yɩɩlaa,
+      sbs: 0.7832
+      gen_sec: 4.61
+      ref_sec: 4.5
+      cer: 0.2273
+      wer: 0.6667
+    bible_00152:
+      source: bible
+      text: Gɛdɔ, Ahio, Zɛkarɩya arɩ Mɩkɩlɔf.
+      sbs: 0.7128
+      gen_sec: 2.82
+      ref_sec: 5.34
+      cer: 0.4615
+      wer: 1.0
+    bible_00153:
+      source: bible
+      text: Samʋa, Sobab, Netaŋ arɩ Solomoŋ. Nɩaa deemba banɛsɛ naaŋ nɛ Bafɩsɛba, Amɩɛl tolo.
+      sbs: 0.7531
+      gen_sec: 7.08
+      ref_sec: 10.0
+      cer: 0.2031
+      wer: 0.9231
+    bible_00154:
+      source: bible
+      text: Má heele bʋl ʋ ballɩŋ wɩaa arɩ tɩntɩŋ-duoru-la ʋ sɩ tɩma a pɩ tinteyee nɩaa kala.
+      sbs: 0.7554
+      gen_sec: 6.74
+      ref_sec: 8.28
+      cer: 0.2381
+      wer: 0.8125
+    bible_00155:
+      source: bible
+      text: aŋ kɛŋ ma nyu-kpal duduosu-la puri ma nyusuŋ lɛ.
+      sbs: 0.717
+      gen_sec: 4.27
+      ref_sec: 3.0
+      cer: 0.0
+      wer: 0.0
+    bible_00156:
+      source: bible
+      text: Dɩ wɩaa deemba kala nɛ ŋaa ma lɛ, dɩ hɛɛŋ jʋʋma, ʋ ŋɩɩ harɩŋ ma jaŋ mɩɩra kɔ ma TƖƖNA Wɩa
+        teeŋ a sɛyʋ.
+      sbs: 0.7592
+      gen_sec: 8.45
+      ref_sec: 8.34
+      cer: 0.2368
+      wer: 0.6667
+    bible_00157:
+      source: bible
+      text: Bʋa-la lɛ, La TƖƖNA leŋe mɩ dagɛma wombie-la arɩ wɩalɩŋ ma sɩ jaŋ tuto nɛ dɩ ma nɛ chol Jɔdaŋ
+        fuo-la a jʋʋ tintee-la ʋ sɩ jaŋ joŋo pɩma dɩ ma tɩɩʋ.
+      sbs: 0.7556
+      gen_sec: 12.12
+      ref_sec: 11.22
+      cer: 0.2273
+      wer: 0.6562
+    bible_00158:
+      source: bible
+      text: Ba nɛ ŋaa nɩkaana-la mɩ-na ma TƖƖNA sɩ lɩɩsa.
+      sbs: 0.7294
+      gen_sec: 3.75
+      ref_sec: 5.06
+      cer: 0.2353
+      wer: 0.7778
+    bible_00159:
+      source: bible
+      text: Dɩ ma nɛ na baanɩŋ, má sɩ́ leŋe dɩ ma baaŋ-la leŋ dɩ ma ŋaa wʋbɔŋ. Má sɩ́ baanɩŋ na ŋɩɩ
+        dɩ wɩa tuu jʋʋ.
+      sbs: 0.7785
+      gen_sec: 8.45
+      ref_sec: 7.72
+      cer: 0.2055
+      wer: 0.56
+    bible_00160:
+      source: bible
+      text: 'Laalɩyuoro-la yɩraa nɛ ŋ-la a chɩŋ ba nɩhɩaŋ a kaa tuu kʋbie: Ɛza, Obadaaya, Ɛlɩab,'
+      sbs: 0.7209
+      gen_sec: 7.08
+      ref_sec: 10.86
+      cer: 0.1905
+      wer: 0.5333
+    bible_00161:
+      source: bible
+      text: Ŋɩɩ wɩaa, má pɔ ma tɩtɩa lɛ arɩ ma wʋŋaalaa lɛ. Má sɩ́ nɩyaaraa nagʋ. Má ŋaa wɩaa a nagɛ
+        nɩalɩŋ sɩ kɛŋ wʋjɩmɩŋ.
+      sbs: 0.7936
+      gen_sec: 9.22
+      ref_sec: 8.06
+      cer: 0.2892
+      wer: 0.625
+    bible_00162:
+      source: bible
+      text: Ŋɩɩ wɩaa, má bɩra sɩ́ wɩaa nyɩnyɩa. Má leŋ dɩ nʋʋkala bʋl wʋtɩtɩɩ a pɩ ʋ dɔŋɔ tɩɩna, bɛɛ
+        wɩaa la kala nagɛ nandaasɩŋ nɛ a kʋ mɛrɛ dɔŋɔ lɛ a ŋaa kʋbala.
+      sbs: 0.7813
+      gen_sec: 12.29
+      ref_sec: 11.64
+      cer: 0.2982
+      wer: 0.697
+    bible_00163:
+      source: bible
+      text: Nafɩtalɩ nɩaa ma fa ŋaa laalɩyuori-hɩasɩŋ bʋɩ nɛ a pɛ laalɩyuoroo bʋɩ mara arɩ fii arɩ balɩpɛ
+        sɩ kori hɔɔtaalɩŋ ba sɩ kaa kɛrɛɛ laa bayuori hɛŋŋɛɛ arɩ tiŋŋee lɛ.
+      sbs: 0.7723
+      gen_sec: 13.74
+      ref_sec: 14.96
+      cer: 0.2077
+      wer: 0.7333
+    bible_00164:
+      source: bible
+      text: Sʋbaɩl fa ŋaa Mosis nanʋala Gesom doho nʋʋ nɛ. Ʋ nɛ fa ŋaa tɩntɩnnɩ-hɩaŋ-la sɩɩ beŋ Wɩa dɩɩ-bal-la
+        dʋa.
+      sbs: 0.7795
+      gen_sec: 8.79
+      ref_sec: 10.2
+      cer: 0.3038
+      wer: 0.8947
+    bible_00165:
+      source: bible
+      text: Mɩ jaŋ wuo ŋaa wɩɩkala, ama ba kala bɩ jaŋ wuo pɛ mɩ lɛ. Ba kala bɩ jaŋ wuo ŋaa dɩ mɩ waa
+        Wɩa wɩaa lɛ.
+      sbs: 0.7628
+      gen_sec: 8.11
+      ref_sec: 6.92
+      cer: 0.1351
+      wer: 0.3846
+    bible_00166:
+      source: bible
+      text: Kʋbɛɛ nɛ jaŋ wuo tɔ lɩɩ-nɛŋ sɩaa aŋ kɛnʋ,
+      sbs: 0.7577
+      gen_sec: 3.5
+      ref_sec: 3.62
+      cer: 0.2258
+      wer: 0.8889
+    bible_00167:
+      source: bible
+      text: Huu nanʋala nɛ Uri, Uri ma nanʋala nɛ Bɛzalɛl.
+      sbs: 0.7174
+      gen_sec: 3.75
+      ref_sec: 5.4
+      cer: 0.1667
+      wer: 0.7778
+    bible_00168:
+      source: bible
+      text: Hajaaŋkuŋkumba arɩ gɩlɩŋgaamba dʋndʋŋa nɛ jaŋ hɛ tintee-la lɛ.
+      sbs: 0.7372
+      gen_sec: 5.8
+      ref_sec: 4.84
+      cer: 0.1538
+      wer: 0.6667
+    bible_00169:
+      source: bible
+      text: Mɛsɛlɛmɩa nanʋala Zɛkarɩya ma nɛ faa pɔ lɛbɩ-la lɛ La TƖƖNA sɩ yie kɔ Iziral tɩŋŋaa teeŋ boi-baalɩŋ.
+      sbs: 0.755
+      gen_sec: 8.62
+      ref_sec: 9.66
+      cer: 0.2
+      wer: 0.9444
+    bible_00170:
+      source: bible
+      text: Ʋ ŋɩɩ harɩŋ nɛ bʋa kʋbala lɛ kuoro Zɛzɛs baanɩŋ fɩɛlɛ, ka ʋ ha kɛŋ wɩɩ-la ʋ habidiire Vasiti
+        sɩ ŋaa arɩ nii-la ʋ-na kuoro sɩ bile a tɩgɛ ʋ lɛ wɩaa bɩbɩɩnɛ.
+      sbs: 0.7224
+      gen_sec: 12.71
+      ref_sec: 14.68
+      cer: 0.2288
+      wer: 0.697
+    bible_00171:
+      source: bible
+      text: Má yɩɩ yɩɩlaa a dɛnnɛ La TƖƖNA, má bʋl wʋkpuŋkperisi-la kala ʋ sɩ ŋaa a pɩ nɩaa.
+      sbs: 0.7107
+      gen_sec: 6.49
+      ref_sec: 7.56
+      cer: 0.2623
+      wer: 0.6471
+    bible_00172:
+      source: bible
+      text: 'Nowa hambolibiisiŋ nɛ ŋ-la: Sɛm, Ham arɩ Jafɛf.'
+      sbs: 0.7281
+      gen_sec: 4.1
+      ref_sec: 6.44
+      cer: 0.0556
+      wer: 0.25
+    bible_00173:
+      source: bible
+      text: Ama ŋ-na Mosis, hɛ mɩ teeŋ daha, dɩ mɩ dagɩŋ mɩ wombiee arɩ mɩ niiriŋ ŋ sɩ jaŋ kaa mʋ a dagɛba
+        dɩ ba tutoba tintee-la lɛ mɩ sɩ jaŋ joŋo pɩba dɩ ʋ ŋaa ba kʋŋ.”
+      sbs: 0.7515
+      gen_sec: 12.97
+      ref_sec: 13.7
+      cer: 0.2328
+      wer: 0.7297
+    bible_00174:
+      source: bible
+      text: 'Ŋɩɩ nɛ Azaaya ma laa bʋl, “Wɩɩ-la La TƖƖNA sɩ jaŋ joŋo dagɛ arɩ ʋ jaŋ ŋaa wɩalɩŋ ʋ sɩ bʋla
+        nɛ ŋ-la:'
+      sbs: 0.7483
+      gen_sec: 8.19
+      ref_sec: 7.0
+      cer: 0.3333
+      wer: 0.7391
+    bible_00175:
+      source: bible
+      text: ŋɩɩ wɩaa mɩ jaŋ fɩɛlɛ mɩ sɩaa mɩ mɩɩsɩŋ kala lɛ,
+      sbs: 0.7344
+      gen_sec: 4.01
+      ref_sec: 3.6
+      cer: 0.5676
+      wer: 0.9091
+    bible_00176:
+      source: bible
+      text: a chɛ saarɩ-gɔgɔ ʋ saa tɔmʋŋ ʋ joŋo bil
+      sbs: 0.6742
+      gen_sec: 3.24
+      ref_sec: 3.22
+      cer: 0.4333
+      wer: 0.8889
+    bible_00177:
+      source: bible
+      text: Ʋ nɛ jaŋ tɩɩ Galilii mʋgʋ-bal-la wɩɩpɔsʋŋ nadiiŋ dɩɩrɩŋ tinteeŋ.”
+      sbs: 0.7046
+      gen_sec: 5.89
+      ref_sec: 4.68
+      cer: 0.25
+      wer: 0.8
+    bible_00178:
+      source: bible
+      text: Kʋbɛɛ nɛ yie leŋ duonuŋ nɩɩ tinteeŋ lee-la nʋʋkala sɩ tuo,
+      sbs: 0.7154
+      gen_sec: 5.03
+      ref_sec: 4.32
+      cer: 0.2826
+      wer: 0.7273
+    bible_00179:
+      source: bible
+      text: a nɩɩ laalɩyuori-hɩasɩŋ ma sɩɩ ŋaa laalɩyuori goŋ.
+      sbs: 0.7666
+      gen_sec: 4.52
+      ref_sec: 3.58
+      cer: 0.2683
+      wer: 0.75
+    bible_00180:
+      source: bible
+      text: aŋ kɛŋ gɛrɩpɛ fʋfʋlʋŋ arɩ gɛrɩpɛ-vachalɩŋ a yɛrɛ
+      sbs: 0.6948
+      gen_sec: 4.44
+      ref_sec: 3.58
+      cer: 0.55
+      wer: 1.0
+    bible_00181:
+      source: bible
+      text: 'Wɩɩ-la mɩ sɩ nɩa nɛ ŋ-la: Ma dɔŋɔ yie bʋl dɩ ʋʋ to Pɔɔl harɩŋ nɛ, ka dɔŋɔ ma sɩ dɩ ʋʋ to
+        Apɔlɔs harɩŋ nɛ. Dɔŋɔ ma sɩ ʋʋ to Pɩɩta harɩŋ nɛ, ka dɔŋɔ ma sɩ ʋʋ to Kirisito harɩŋ nɛ.'
+      sbs: 0.6867
+      gen_sec: 14.25
+      ref_sec: 11.22
+      cer: 0.2891
+      wer: 0.5814
+    bible_00182:
+      source: bible
+      text: Mɩ bɩra bɩɩnɛ mɩ tʋɔŋ lɛ, “Wɩa ka magɩsɛ nuhuobiinee dɩ ʋ dagɛ arɩ ba ma nagɛ pʋsʋŋ nɛ.
+      sbs: 0.7125
+      gen_sec: 6.91
+      ref_sec: 7.68
+      cer: 0.2576
+      wer: 0.7368
+    bible_00183:
+      source: bible
+      text: aŋ bʋl, “Mɩ yaraa lɩma nɛ, nyiniŋ zɔmɔ.”
+      sbs: 0.7521
+      gen_sec: 3.24
+      ref_sec: 3.44
+      cer: 0.2857
+      wer: 0.75
+    bible_00184:
+      source: bible
+      text: aŋ vɩa dɩ ʋ pɩɛsɛ La TƖƖNA. Ŋɩɩ nɛ La TƖƖNA kpʋʋ aŋ joŋ ʋ kuoruŋ pɩ Jesi nanʋala Devit.
+      sbs: 0.7272
+      gen_sec: 7.25
+      ref_sec: 11.04
+      cer: 0.3333
+      wer: 0.75
+    bible_00185:
+      source: bible
+      text: Devit laalɩyuori babiibalaa arɩ Iziral tɩŋŋaa kala nɛ leŋe ʋ kuoruŋ dol dɩ ʋ wuo bibeŋ tintee-la
+        kala, arɩ La TƖƖNA sɩ bʋl ŋɩɩ.
+      sbs: 0.7658
+      gen_sec: 10.92
+      ref_sec: 14.06
+      cer: 0.3168
+      wer: 0.875
+    bible_00186:
+      source: bible
+      text: Ba kala tʋɔŋ tɔrɛ wɩɩ-la lɛ, ba sɛɩ.
+      sbs: 0.7427
+      gen_sec: 2.9
+      ref_sec: 3.7
+      cer: 0.2308
+      wer: 0.625
+    bible_00187:
+      source: bible
+      text: Dɩ losuŋ nɛ kɛŋ ma dɔŋɔ, ʋ maga dɩ ʋ dii kɩaa ʋ dɩa lɛ nɛ aŋ-na kɔ. Dɩ ma nɛ ŋaa ŋɩɩ aŋ hilimi,
+        Wɩa bɩ jaŋ joŋ cheeriŋ pɩma. Wʋkaanala-na, dɩ mɩ nɛ kɔ, mɩ jaŋ dagɛma ba wombiiŋ.
+      sbs: 0.797
+      gen_sec: 14.76
+      ref_sec: 14.94
+      cer: 0.1875
+      wer: 0.6585
+    bible_00188:
+      source: bible
+      text: Nʋʋ sɩ lɩɩ wɩɩpɔsʋŋ dɩɩrɩŋ a kɛŋ mɩ yɩrɩŋ tɩtɩŋ nɛ mɩ lɩɩsɛ.
+      sbs: 0.7511
+      gen_sec: 5.21
+      ref_sec: 4.36
+      cer: 0.4255
+      wer: 0.7692
+    bible_00189:
+      source: bible
+      text: Dɩ ŋ nɛ joŋ chɩba dɔgɩsɛ ŋ bie, ʋ bɩ jaŋ sʋʋ.
+      sbs: 0.7004
+      gen_sec: 3.75
+      ref_sec: 3.4
+      cer: 0.4375
+      wer: 0.75
+    bible_00190:
+      source: bible
+      text: Ʋ nɛ ha mʋ kɛŋ Jɔdaŋ fuo-la wɩɩpɔsʋŋ dɩɩrɩŋ a mʋ yi Mʋgʋ-sʋʋŋ a kaa mʋ Pisiga peel-la lee-la
+        sɩ chullo tuu.
+      sbs: 0.7399
+      gen_sec: 9.05
+      ref_sec: 11.04
+      cer: 0.2346
+      wer: 0.5
+    bible_00191:
+      source: bible
+      text: 'Soma ma hambolibiisiŋ nɛ: Ahi, Roga, Huba arɩ Aram.'
+      sbs: 0.738
+      gen_sec: 4.35
+      ref_sec: 7.0
+      cer: 0.1282
+      wer: 0.6667
+    bible_00192:
+      source: bible
+      text: Nɩalɩŋ sɩ jɩŋ wɩaa sɩaa, ʋ nagɛ lɩɩ-bul-sɩɩŋ sɩɩ pɩ nɩaa mɩɩsɩŋ nɛ ba teeŋ.
+      sbs: 0.7131
+      gen_sec: 6.49
+      ref_sec: 4.98
+      cer: 0.3158
+      wer: 0.7333
+    bible_00193:
+      source: bible
+      text: Ŋɩɩ wɩaa, má hɛ doluŋ aŋ to wɩalɩŋ kala ma TƖƖNA Wɩa sɩ dagɛma, má sɩ́ begilu.
+      sbs: 0.7348
+      gen_sec: 6.4
+      ref_sec: 6.3
+      cer: 0.2414
+      wer: 0.5294
+    bible_00194:
+      source: bible
+      text: a nagɛ laalɩyuori babii-balɩŋ sɩ kɛŋ ʋ tɩtɩa hɛ dɔŋɔ dɩ ʋ yuo laalɩŋ.
+      sbs: 0.7515
+      gen_sec: 5.89
+      ref_sec: 4.58
+      cer: 0.2407
+      wer: 0.8571
+    bible_00195:
+      source: bible
+      text: Kenas, Tɛmaŋ, Mibizaa,
+      sbs: 0.6677
+      gen_sec: 2.05
+      ref_sec: 3.4
+      cer: 0.2941
+      wer: 1.3333
+    bible_00196:
+      source: bible
+      text: ʋ hɛyɛ, ʋ nɛ yuŋŋie a kɩɩ yaraa kpɩɛrɩ kala yalɩŋ sɩ hɛyɛ.
+      sbs: 0.6763
+      gen_sec: 4.86
+      ref_sec: 5.3
+      cer: 0.3182
+      wer: 0.7692
+    bible_00197:
+      source: bible
+      text: La TƖƖNA, ŋ nɛ Wɩa. Ŋ hɛ niiŋ arɩ ŋ jaŋ ŋaa wʋzɔŋŋɔɔ deemba nɛ a pɩ mɩ-na ŋ tɩntɩnna.
+      sbs: 0.7316
+      gen_sec: 7.42
+      ref_sec: 9.1
+      cer: 0.2419
+      wer: 0.45
+    bible_00198:
+      source: bible
+      text: Má kɔ dɩ ma dɩ mɩ nɩhɩaŋ sɩ ŋaa Asiiria kuoro bʋla nɩɩ dɔŋɔ lɛ. Mɩ jaŋ joŋ janɩŋ bʋɩ balɩa
+        a pɩma, dɩ ma nɛ jaŋ wuo na nɩaa dɩ ba jɩlba.
+      sbs: 0.7942
+      gen_sec: 11.01
+      ref_sec: 11.22
+      cer: 0.2475
+      wer: 0.6061
+    bible_00199:
+      source: bible
+      text: Nɩɩ-la ma kala sɩ jegile nɩɩ ʋ teeŋ, ba jaŋ cheyu a
+      sbs: 0.6635
+      gen_sec: 4.1
+      ref_sec: 4.0
+      cer: 0.3947
+      wer: 0.6667
 - model: k2-fsa/OmniVoice-ref
   model_url: https://huggingface.co/k2-fsa/OmniVoice
   mode: ref
@@ -17041,4 +18744,4 @@ benchmarks:
       ref_sec: 4.0
       cer: 0.2632
       wer: 0.9167
-updated: '2026-10-03'
+updated: '2026-10-09'

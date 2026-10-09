@@ -3453,6 +3453,1727 @@ benchmarks:
       ref_sec: 9.1
       cer: 0.1667
       wer: 0.4783
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.6847
+  num_scored: 200
+  cer: 0.1207
+  wer: 0.3306
+  accuracy: 0.8793
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.782
+  score: 0.782
+  per_source:
+    bible:
+      sbs: 0.6847
+      cer: 0.1207
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Ɔ kekolosi kɛŋa taŋ nɛ, be popou tisiwɔ buŋ ba doona dɔɔ te be fanewɔ.
+      sbs: 0.6725
+      gen_sec: 4.52
+      ref_sec: 4.06
+      cer: 0.0926
+      wer: 0.2667
+    bible_00001:
+      source: bible
+      text: Ɛ seŋ keŋkeŋ ɛ kelɛɛdi man kelii ɔto na, ɛ ke nyiŋ nyeedoŋ.
+      sbs: 0.6638
+      gen_sec: 4.01
+      ref_sec: 3.48
+      cer: 0.2
+      wer: 0.7692
+    bible_00002:
+      source: bible
+      text: Walaŋ kamasɛ ŋon ɔ kala tɔne kei man nombia fa balaŋ na, ŋon na nyeebam.
+      sbs: 0.6473
+      gen_sec: 4.78
+      ref_sec: 3.42
+      cer: 0.125
+      wer: 0.3333
+    bible_00003:
+      source: bible
+      text: ” Wurubuarɛ ka lese Sɔɔl lee gyoori man nɛ, ɔ moo Defidi see gyoo.
+      sbs: 0.7076
+      gen_sec: 3.84
+      ref_sec: 3.92
+      cer: 0.28
+      wer: 0.6923
+    bible_00004:
+      source: bible
+      text: Botɔɔ te wonembukum ŋon puu loŋ lee ɔ nɔɔman ŋgba boo kakpela nɛ, na ke gyɔ alo ŋon laŋ.
+      sbs: 0.655
+      gen_sec: 5.72
+      ref_sec: 5.4
+      cer: 0.1471
+      wer: 0.3158
+    bible_00005:
+      source: bible
+      text: Na tɛɛle kei dɔɔ balaŋ pou yaa mɛɛ fane maa fa ya.
+      sbs: 0.6992
+      gen_sec: 3.07
+      ref_sec: 3.82
+      cer: 0.3421
+      wer: 0.5833
+    bible_00006:
+      source: bible
+      text: ” Te Simɔn yako wɔ nyi, “Mɛɛ waase ŋon bo ɛ fane fa de Gbeŋgyoo Wurubuarɛ fa maŋ, na ŋan pou
+        ɛ be yako nɛ man dokoloŋ gba be kɔŋ me dɔɔ ya.
+      sbs: 0.6918
+      gen_sec: 8.45
+      ref_sec: 8.2
+      cer: 0.0784
+      wer: 0.2188
+    bible_00007:
+      source: bible
+      text: Da ke kalaa dɔŋa taŋ keŋ nɛ, da moowɔ loŋ keŋ dɔɔ teeŋ te da toŋawɔ gyu Kosi donɔɔ man.
+      sbs: 0.7097
+      gen_sec: 5.72
+      ref_sec: 6.18
+      cer: 0.1515
+      wer: 0.3
+    bible_00008:
+      source: bible
+      text: Botɔɔ te Wurubuarɛ kpilala bala baŋ nyii woya ŋaale kolosiwɔ na wɔ keŋkeŋ lee adido nyiaa,
+        “Ɛ gyeŋ kɔŋ adido kɛbo.
+      sbs: 0.6625
+      gen_sec: 7.51
+      ref_sec: 8.18
+      cer: 0.1209
+      wer: 0.4762
+    bible_00009:
+      source: bible
+      text: Mɔna Wurubuarɛ wii de waraŋase te lee ɔ kegyae dinaa keŋ ɔ ne gyae de nombia nɛ dɔɔ, ɔ tɛɛwɔ
+        Kristo dɔɔ fa daa baŋ nafɔ debaŋ kenaŋ man dɔɔ yem de dukum man nɛ nyeedoŋ.
+      sbs: 0.7356
+      gen_sec: 10.58
+      ref_sec: 11.64
+      cer: 0.1679
+      wer: 0.4167
+    bible_00010:
+      source: bible
+      text: Na dɔɔ tekaa bese bia wɔlɛɛ keŋ balaŋ ka mo kawola kumɛɛ kamasɛ na ba adao gbɛɛneŋ kaa beo
+        daa, na kegyɔ daa gyu sia na wɔle ŋgba mena keŋ feliŋ ne gyɔ degbele loŋ dɔɔ nɛ ya.
+      sbs: 0.7261
+      gen_sec: 10.84
+      ref_sec: 10.76
+      cer: 0.1407
+      wer: 0.4211
+    bible_00011:
+      source: bible
+      text: Botɔɔ te Yesu tiranɔɔ fa wɔ nyiaa, “Ɛ kɛɛ ɛ wose nideli nyi ŋolo na beo ŋon ya.
+      sbs: 0.722
+      gen_sec: 4.86
+      ref_sec: 5.82
+      cer: 0.1017
+      wer: 0.2222
+    bible_00012:
+      source: bible
+      text: Ŋon yɛna Yesu Kristo ŋon ɔ gbɛɛneŋ tenɛɛ Wurubuarɛ siaman nɛ.
+      sbs: 0.6821
+      gen_sec: 4.1
+      ref_sec: 3.86
+      cer: 0.4
+      wer: 0.7273
+    bible_00013:
+      source: bible
+      text: Wurubuarɛ lese na ŋon nyi yaa yɛɛ ɔ balaŋ, mena dɔɔ te ɔ ne gyae nyi ɛmɛɛ na ɛ tebia pou yaa
+        kyaa na dɔŋa, na debaŋ kamasɛ na ɛ ne fane fa ŋon Wurubuarɛ karaŋ.
+      sbs: 0.7421
+      gen_sec: 9.9
+      ref_sec: 11.04
+      cer: 0.0413
+      wer: 0.1111
+    bible_00014:
+      source: bible
+      text: Na Arisitakuse ŋon ɔ ba lee Tesalonika donɔɔ keŋ ke kyaa Masedonia tɛɛle man nɛ doo de man.
+      sbs: 0.6992
+      gen_sec: 5.8
+      ref_sec: 7.78
+      cer: 0.0959
+      wer: 0.2222
+    bible_00015:
+      source: bible
+      text: Ma gyeŋ nyi ɔ yɛɛ Kristo walaŋ kpaakpaate e keŋ dekara be doo ɔ man ya.
+      sbs: 0.6758
+      gen_sec: 4.44
+      ref_sec: 3.88
+      cer: 0.1091
+      wer: 0.3125
+    bible_00016:
+      source: bible
+      text: Yesu yɛna keŋmaŋee fa balaŋ tɛɛle kei dɔɔ.
+      sbs: 0.6513
+      gen_sec: 2.9
+      ref_sec: 15.0
+      cer: 0.3529
+      wer: 0.625
+    bible_00017:
+      source: bible
+      text: Ba lola e bo mena na balaŋ kena gyakoloŋ nombia ŋan Wurubuarɛ waa yɛɛ ɔ man.
+      sbs: 0.6715
+      gen_sec: 4.86
+      ref_sec: 4.98
+      cer: 0.05
+      wer: 0.1875
+    bible_00018:
+      source: bible
+      text: Nyi akpaa ɔ te yɛɛ neŋ nombiikum daale, yaa ɔ dana neŋ kolo kom na mo ke nyi maŋ danaana neŋ
+        kom nɛ.
+      sbs: 0.6915
+      gen_sec: 6.31
+      ref_sec: 5.78
+      cer: 0.0658
+      wer: 0.2609
+    bible_00019:
+      source: bible
+      text: Ɔ nyii ɔ baale Aberaham dei te ɔ baake e nyi ɔ gbeŋgyoo.
+      sbs: 0.6694
+      gen_sec: 3.33
+      ref_sec: 3.62
+      cer: 0.1628
+      wer: 0.4615
+    bible_00020:
+      source: bible
+      text: Mɛɛ yako ŋon nombia kɛŋa baa ŋgba kpene keŋ doo na ke gbɛɛ nɛ, mɔna ka te yɛɛ mmaraa te mɛɛ
+        fa ŋon ya.
+      sbs: 0.6507
+      gen_sec: 6.49
+      ref_sec: 5.3
+      cer: 0.0519
+      wer: 0.125
+    bible_00021:
+      source: bible
+      text: Dana maŋ gyoŋ te mɛɛ lese de Gbeŋgyoo Yesu yele, nawolo nyi nɛnɛɛ ɛ ta bese lese wola nyi
+        me nombia ne hia ŋon.
+      sbs: 0.665
+      gen_sec: 6.91
+      ref_sec: 4.96
+      cer: 0.0
+      wer: 0.0
+    bible_00022:
+      source: bible
+      text: Nawolo nyi ɛmɛɛ gbagba ɛ gyeŋ nideli nyiaa, mena kayeyɛɛ kei yɛɛ kpene keŋ Wurubuarɛ be yako
+        see nyi gyae ke kɔŋ de dɔɔ.
+      sbs: 0.6728
+      gen_sec: 7.51
+      ref_sec: 6.0
+      cer: 0.0842
+      wer: 0.25
+    bible_00023:
+      source: bible
+      text: Keŋte Yesu bɔɔse wɔ nyiaa, “Sena te Wurubuarɛ gyoori keŋ doo?
+      sbs: 0.7208
+      gen_sec: 3.93
+      ref_sec: 4.16
+      cer: 0.0833
+      wer: 0.3636
+    bible_00024:
+      source: bible
+      text: Ɔ kɛɛ ŋmatee ŋa nɛ, ŋaale yalawɔ gbɛɛneŋbia ŋan doo wɔɔ keŋ man nɛ man, te gyebuse kaa tɔɔsee
+        ŋa di.
+      sbs: 0.703
+      gen_sec: 6.57
+      ref_sec: 7.56
+      cer: 0.2078
+      wer: 0.4762
+    bible_00025:
+      source: bible
+      text: Ɔ kekyaa botɔɔ nɛ, te alo ŋolo kɔŋawɔ ɔ gyaŋ na ɔ dana nuŋ ofoŋofoŋte keŋ ke dana koyadoŋ
+        nɛ porontia tɔɔ.
+      sbs: 0.6603
+      gen_sec: 7.08
+      ref_sec: 6.66
+      cer: 0.1928
+      wer: 0.5909
+    bible_00026:
+      source: bible
+      text: Nawolo nyi kpene keŋ de Gbeŋgyoo Yesu ba wola maŋ te ke dana tɔnɔɔ kela kpene kamasɛ nɛ, keŋ
+        yaa ma moowɔ mɛɛ wola ŋon nɛ.
+      sbs: 0.6576
+      gen_sec: 7.77
+      ref_sec: 6.04
+      cer: 0.0947
+      wer: 0.1154
+    bible_00027:
+      source: bible
+      text: Mɛɛ solo nyi waa gyuusu ɛ konɔɔse, na ɛ ke nyiŋ gyeŋ kpene keŋ dɔɔ ɔ ba lese ŋon na kpene
+        keŋ dɔɔ ɛ loo gyakaa nɛ, na ɛ ke nyiŋ gyeŋ abɔɔ ŋan Wurubuarɛ be yako see nyi waa mo fa baŋ bɔɔ
+        mo ba wose fa Kristo nɛ.
+      sbs: 0.7153
+      gen_sec: 12.8
+      ref_sec: 12.72
+      cer: 0.0759
+      wer: 0.12
+    bible_00028:
+      source: bible
+      text: Mena dɔɔ ɛ na fa walaŋ kamasɛ gbɛɛ na waa beo ŋon, na waa lese ŋon lee ɛ gbɛɛ man kɔŋ ŋon
+        wui gbɛɛ kum man nyi ɛ kaa sila e ya.
+      sbs: 0.6912
+      gen_sec: 7.77
+      ref_sec: 6.82
+      cer: 0.1596
+      wer: 0.2812
+    bible_00029:
+      source: bible
+      text: Me ka lee Gyerusalɛm donɔɔ man kulutooneŋ burum wɔle nɛ, ma besewɔ kɔŋ botɔɔ te ma moo kɔba
+        na abɔɔ kɔna me tebia Gyudatena baŋ na baa mo fa ayematena, te me faa Wurubuarɛ mɔ kedi.
+      sbs: 0.7274
+      gen_sec: 11.26
+      ref_sec: 11.56
+      cer: 0.1197
+      wer: 0.5278
+    bible_00030:
+      source: bible
+      text: Wurubuarɛ ke gyuusu Kristo lee yeŋ man nɛ, yɛɛ yaa ŋgba ɛmɛɛ na e yaa ɔ gyuusuwɔ lee yeŋ man
+        nɛ, nawolo nyi ɛmɛɛ na Kristo te yɛɛ dokoloŋ.
+      sbs: 0.7813
+      gen_sec: 8.62
+      ref_sec: 6.68
+      cer: 0.028
+      wer: 0.1379
+    bible_00031:
+      source: bible
+      text: De Gbeŋgyoo Wurubuarɛ kpilale ŋolo lee adido kaa yako Filipo nyiaa, “Koro desina n wose na
+        n ka mo ata yenaŋ gbɛɛ bene keŋ ba lee Gyerusalɛm ne gyu Gasa donɔɔ man nɛ.
+      sbs: 0.6689
+      gen_sec: 10.33
+      ref_sec: 10.58
+      cer: 0.0153
+      wer: 0.0303
+    bible_00032:
+      source: bible
+      text: Simeɔn nɔɔwoya ŋan ɔ be yako lee be bu ŋon wose man nɛ, doo bu ŋon ɔ kya na ɔ naa nɔɔ.
+      sbs: 0.6828
+      gen_sec: 5.21
+      ref_sec: 4.58
+      cer: 0.1429
+      wer: 0.3636
+    bible_00033:
+      source: bible
+      text: Dekɔŋ mena na, walaŋ ŋonaŋ dinɔɔ na bese wɔlɛɛ kela ɔ kekyaa gyaŋgba keŋ.
+      sbs: 0.72
+      gen_sec: 4.95
+      ref_sec: 5.14
+      cer: 0.1034
+      wer: 0.5
+    bible_00034:
+      source: bible
+      text: Kei yɛna kyeo keŋ ke bɛɛ wɔlɛɛ ya te kɛɛ gyoo Wurubuarɛ sia mɔ.
+      sbs: 0.648
+      gen_sec: 3.84
+      ref_sec: 3.8
+      cer: 0.1837
+      wer: 0.4286
+    bible_00035:
+      source: bible
+      text: Kɛŋa wɔle nɛ Yesu na ɔ kaseela baŋ gyuu Gyudia tɛɛle man.
+      sbs: 0.6598
+      gen_sec: 3.5
+      ref_sec: 3.62
+      cer: 0.1111
+      wer: 0.5
+    bible_00036:
+      source: bible
+      text: Mena dɔɔ ɛ na barase bu ŋolo fɔɔ pɛte de Gbeŋgyoo Yesu kekɔŋ keŋ kelii ya.
+      sbs: 0.6897
+      gen_sec: 4.78
+      ref_sec: 3.8
+      cer: 0.1897
+      wer: 0.375
+    bible_00037:
+      source: bible
+      text: ’ Kei gyae ke fa neŋ obuo balaŋ baŋ bɔɔ baake wɔ nɛ pou siaman.
+      sbs: 0.6647
+      gen_sec: 3.84
+      ref_sec: 4.0
+      cer: 0.1915
+      wer: 0.6429
+    bible_00038:
+      source: bible
+      text: Nyi maa lese nyeedoŋ bo o, yaa maa lese yeŋ bo o, mɔɔ gyeŋ ya.
+      sbs: 0.725
+      gen_sec: 3.84
+      ref_sec: 3.76
+      cer: 0.0444
+      wer: 0.3333
+    bible_00039:
+      source: bible
+      text: Wurubuarɛ te tɛɛ Kristo Yesu dɔɔ baake ŋon te ɔ gberaa ayimɛɛ lee ɛ wose man te ɔ desina ŋon
+        see fa ɔ wose.
+      sbs: 0.6981
+      gen_sec: 6.57
+      ref_sec: 6.02
+      cer: 0.0964
+      wer: 0.25
+    bible_00040:
+      source: bible
+      text: Mɔna ŋgba mena keŋ ke doo nɛ, wosenaane yenaase ŋan pou boe mɔna wosenaane keŋ pou yɛɛ dokoloŋ.
+      sbs: 0.6964
+      gen_sec: 6.4
+      ref_sec: 6.02
+      cer: 0.0658
+      wer: 0.2222
+    bible_00041:
+      source: bible
+      text: Te alo ŋolo kɔŋawɔ botɔɔ na ɔ dana nuŋ ofoŋofoŋte keŋ ke dana koyadoŋ nɛ porontia tɔɔ.
+      sbs: 0.6382
+      gen_sec: 5.89
+      ref_sec: 5.22
+      cer: 0.2319
+      wer: 0.7059
+    bible_00042:
+      source: bible
+      text: ” Ɔ kekolosi taŋ nɛ, ɔ moo ɔ nyiŋmaase na ɔ nawɔɔ wola wɔ.
+      sbs: 0.7053
+      gen_sec: 3.5
+      ref_sec: 4.12
+      cer: 0.3571
+      wer: 0.9231
+    bible_00043:
+      source: bible
+      text: Wurubuarɛ feliŋ ke kpila Banabase na Sɔɔl nɛ, be gyuu Selusia.
+      sbs: 0.6686
+      gen_sec: 4.01
+      ref_sec: 4.28
+      cer: 0.12
+      wer: 0.3636
+    bible_00044:
+      source: bible
+      text: Ba te bɛɛ de Gbeŋgyoo Yesu Kristo dokoloŋ kooŋ ŋon, ŋon waageŋ yɛna de gyoo na de Gbeŋgyoo
+        nɛ.
+      sbs: 0.6846
+      gen_sec: 6.14
+      ref_sec: 4.86
+      cer: 0.0405
+      wer: 0.1579
+    bible_00045:
+      source: bible
+      text: Mɔna akpaa dee kolosi nyeekelɛɛ nombia ŋan nyi Kristo yeŋawɔ te Wurubuarɛ gyuusu e lee yeŋ
+        man na, woŋ dɔɔ te ɛmɛɛ baale ne yako nyi kefoŋ lee yeŋ man be kyaa ya?
+      sbs: 0.6657
+      gen_sec: 10.41
+      ref_sec: 9.02
+      cer: 0.0859
+      wer: 0.2727
+    bible_00046:
+      source: bible
+      text: Ma be dana ŋolo keŋ ɔ na gyueŋ ɛ deeli dɔɔ kpu na ŋon Timoti ya.
+      sbs: 0.6613
+      gen_sec: 4.01
+      ref_sec: 3.06
+      cer: 0.1667
+      wer: 0.25
+    bible_00047:
+      source: bible
+      text: Lese maŋ n bu ŋon yele na maŋ mɔ ka lese n yele.
+      sbs: 0.6706
+      gen_sec: 2.99
+      ref_sec: 3.22
+      cer: 0.2857
+      wer: 0.6923
+    bible_00048:
+      source: bible
+      text: Akpaa ŋolo de kolosi dei wɔle kpoo daale, te ŋolo te nyii ke man ya na sena te ŋolo waa yɛɛ
+        na waa tale nyii nombia ŋan ɔ ne yako nɛ man?
+      sbs: 0.6797
+      gen_sec: 8.45
+      ref_sec: 7.44
+      cer: 0.0288
+      wer: 0.125
+    bible_00049:
+      source: bible
+      text: Nawolo nyi Wurubuarɛ te tɛɛ ɔ feliŋ ŋon dɔɔ lese ɔ nombia aweeseŋ ŋan wola daa.
+      sbs: 0.6551
+      gen_sec: 5.21
+      ref_sec: 3.4
+      cer: 0.1587
+      wer: 0.3125
+    bible_00050:
+      source: bible
+      text: Mɔna walaŋ ŋon Wurubuarɛ be gyuusu e lee yeŋ man nɛ, ŋon te dale ya.
+      sbs: 0.6562
+      gen_sec: 4.35
+      ref_sec: 3.12
+      cer: 0.0577
+      wer: 0.2
+    bible_00051:
+      source: bible
+      text: Wurubuarɛ feliŋ ŋon waa yela balaŋ kena me gyoorobiiri, nawolo nyi waa lese kpene kamasɛ keŋ
+        me dana maa yako ŋon nɛ wola ŋon.
+      sbs: 0.7081
+      gen_sec: 8.28
+      ref_sec: 8.9
+      cer: 0.0198
+      wer: 0.0833
+    bible_00052:
+      source: bible
+      text: Ɛ gyae ɛ kena fatabo na boalaŋ na nyɔɔse tuum.
+      sbs: 0.6253
+      gen_sec: 2.82
+      ref_sec: 3.64
+      cer: 0.25
+      wer: 0.4
+    bible_00053:
+      source: bible
+      text: Ɔ kɛɛ de dɔɔ nideli te de kyaawɔ ɔ dɛɛ weeya kpaakpaa atooro.
+      sbs: 0.7046
+      gen_sec: 3.75
+      ref_sec: 4.06
+      cer: 0.2083
+      wer: 0.6154
+    bible_00054:
+      source: bible
+      text: Akpaa nyi Bɛlisɛbu doŋ te mɛɛ mo gegi feliŋkumɛɛ na, amɔte doŋ yaa ɛ silala baŋ na mo gegi
+        feliŋkumɛɛ?
+      sbs: 0.6813
+      gen_sec: 6.74
+      ref_sec: 7.6
+      cer: 0.1605
+      wer: 0.6
+    bible_00055:
+      source: bible
+      text: Botɔɔ te Yesu bɔɔse wɔ nyiaa, “Woŋ afa yaa ɛ dɔŋɛɛ ɛ ne yɔɔ mena?
+      sbs: 0.7041
+      gen_sec: 4.01
+      ref_sec: 4.42
+      cer: 0.2292
+      wer: 0.4
+    bible_00056:
+      source: bible
+      text: Botɔɔ te bɔ ɔsom deni man kegyia ŋon gyeŋa baŋ nyi Yesu te kyɔ walaŋ kawee ba kefɛɛfowee,
+        mena dɔɔ ɔ kolosiwɔ fa balaŋ baŋ bɔɔ gyaŋee botɔɔ nɛ nyiaa, “Ɛ dana weeya looro keŋ ɛ na mo yɛɛ
+        tom.
+      sbs: 0.6857
+      gen_sec: 11.95
+      ref_sec: 14.38
+      cer: 0.1429
+      wer: 0.4
+    bible_00057:
+      source: bible
+      text: Akpaa de kɔŋ nyi wosenaane yenaŋ daale ne naa diyem na, akaŋ ŋan pou mɔ ne naa diyem kpu na
+        ke.
+      sbs: 0.7393
+      gen_sec: 6.06
+      ref_sec: 5.3
+      cer: 0.0548
+      wer: 0.1429
+    bible_00058:
+      source: bible
+      text: Kei dɔɔ te Kristo gyuuwɔ kekolosi Wurubuarɛ nombia ŋan fa balaŋ baŋ bɔɔ yekee nɛ.
+      sbs: 0.6165
+      gen_sec: 5.29
+      ref_sec: 4.52
+      cer: 0.0758
+      wer: 0.2
+    bible_00059:
+      source: bible
+      text: Balaŋ benaŋ yɛna balaŋ baŋ bɔɔ yoo di wonembukum ŋon na bane ŋon bɔɔ maa wonembukum ŋonaŋ
+        dinɔɔ man, te ɔ nɔmba seŋɛɛ fa ɔ yele dɔɔ nɛ.
+      sbs: 0.7001
+      gen_sec: 9.05
+      ref_sec: 9.16
+      cer: 0.1698
+      wer: 0.4643
+    bible_00060:
+      source: bible
+      text: Ɛmɛɛ ayiŋtena; Ɛ ba gyeŋ nyi Wurubuarɛ ŋon ɔ be yɛɛ kolo wɔle nɛ, ŋon yɛna ke tɔɔman mɔ yee?
+      sbs: 0.6986
+      gen_sec: 5.8
+      ref_sec: 6.1
+      cer: 0.1143
+      wer: 0.35
+    bible_00061:
+      source: bible
+      text: Botɔɔ te ba lese kasolɔse ŋan doo degbele dinaa keŋ man nɛ see.
+      sbs: 0.6835
+      gen_sec: 4.1
+      ref_sec: 3.02
+      cer: 0.14
+      wer: 0.3077
+    bible_00062:
+      source: bible
+      text: Nawolo nyi Wurubuarɛ feliŋ ŋon ne gyae la waa wola ŋon kpene kamasɛ.
+      sbs: 0.6798
+      gen_sec: 4.44
+      ref_sec: 3.48
+      cer: 0.0364
+      wer: 0.0769
+    bible_00063:
+      source: bible
+      text: Nyi akpaa de kɛɛ Gyudatena mmaraase ŋan dɔɔ kedi na maa tale yako nyi me yɛɛ Farasii baale
+        e, nawolo nyi me dii ba mmaraase ŋan pou dɔɔ nideli.
+      sbs: 0.7222
+      gen_sec: 8.96
+      ref_sec: 7.96
+      cer: 0.0796
+      wer: 0.1724
+    bible_00064:
+      source: bible
+      text: Mɔna akpaa ɛ naa diyem lee nombia kpaakpaa keyɛɛ dɔɔ na, ɛmɛɛ na nyeebam.
+      sbs: 0.7059
+      gen_sec: 4.61
+      ref_sec: 5.1
+      cer: 0.0862
+      wer: 0.2857
+    bible_00065:
+      source: bible
+      text: Nombia kpaakpaa ŋan bɔɔ yako ŋon nɛ te lɛɛ tɛɛle kei pou dɔɔ.
+      sbs: 0.6724
+      gen_sec: 3.93
+      ref_sec: 3.44
+      cer: 0.125
+      wer: 0.2308
+    bible_00066:
+      source: bible
+      text: Ɔ te gyae nyi waa gyu Gyudia tɛɛle man ya, nawolo nyi Gyudatena kegyiise baŋ be kyaa botɔɔ
+        nɛ ne gyae gbɛɛ baa ko e.
+      sbs: 0.7043
+      gen_sec: 6.66
+      ref_sec: 6.74
+      cer: 0.0444
+      wer: 0.12
+    bible_00067:
+      source: bible
+      text: Na ɔ dana kyolobiise nyetooro ɔ dunoluŋ nyiŋmaa man, te yoosila keŋ ke yɛɛ sia na wɔle te
+        kɛɛ bee nideli nɛ tosɛɛ ɔ nɔɔman.
+      sbs: 0.6517
+      gen_sec: 7.85
+      ref_sec: 6.8
+      cer: 0.2165
+      wer: 0.72
+    bible_00068:
+      source: bible
+      text: Kaboena nyi ala baa yɔkɔse ba wose na baa kyaa yididi na baa kasee Wurubuarɛ nombia.
+      sbs: 0.7271
+      gen_sec: 5.29
+      ref_sec: 5.02
+      cer: 0.0294
+      wer: 0.0625
+    bible_00069:
+      source: bible
+      text: Mɔna daa gyeŋ nombia kɛŋa pou man, nawolo nyi de dana Kristo agyueŋ.
+      sbs: 0.6766
+      gen_sec: 4.35
+      ref_sec: 5.82
+      cer: 0.0185
+      wer: 0.0769
+    bible_00070:
+      source: bible
+      text: Na mena ya wee kenaŋ de lii na, waa mo neŋ ka do nombiadiiri ŋon nyiŋmaa man, na ŋon mɔ ka
+        mo neŋ ka do kotɔtɔɔtena nyiŋmaa man, na baa mo neŋ ketɔ deni.
+      sbs: 0.6944
+      gen_sec: 9.9
+      ref_sec: 13.32
+      cer: 0.069
+      wer: 0.1765
+    bible_00071:
+      source: bible
+      text: Baa mo sila ko balaŋ baŋ baale, na baa kyaŋ baale ketɔ deni tɛɛlese wɔlɛɛ dɔɔ.
+      sbs: 0.6892
+      gen_sec: 5.03
+      ref_sec: 5.02
+      cer: 0.1311
+      wer: 0.375
+    bible_00072:
+      source: bible
+      text: Nawolo nyi baŋ be gyae baa tale yɛɛ mena tɔ neŋ kom ya, mɔna Wurubuarɛ ne gyae la waa tɔ neŋ
+        kom wee keŋ waa gyuusu balaŋ baŋ be gbɛɛneŋ tenɛɛ ɔ siaman lee yeŋ man nɛ.
+      sbs: 0.6954
+      gen_sec: 10.5
+      ref_sec: 13.06
+      cer: 0.062
+      wer: 0.1622
+    bible_00073:
+      source: bible
+      text: Nawolo nyi ɛ ne gyae akyaese kpaakpaa Gyudatena ɔsom denɛɛ man, te ɛ ne gyae mɔ nyi ɛ lii
+        balaŋ man na balaŋ dee buŋ do ŋon nɔɔ.
+      sbs: 0.7082
+      gen_sec: 7.85
+      ref_sec: 8.68
+      cer: 0.0909
+      wer: 0.2143
+    bible_00074:
+      source: bible
+      text: Keŋte Yesu yako e nyiaa, “Gyu ke baake n baale na ɛ ke kɔŋ.
+      sbs: 0.6736
+      gen_sec: 3.5
+      ref_sec: 3.5
+      cer: 0.1628
+      wer: 0.5
+    bible_00075:
+      source: bible
+      text: Mena te alo ŋon bɛɛ baake e nyi Saara nɛ mɔ yɛɛwɔ.
+      sbs: 0.6291
+      gen_sec: 3.07
+      ref_sec: 3.48
+      cer: 0.1579
+      wer: 0.5833
+    bible_00076:
+      source: bible
+      text: De ka lee ɛpo man kaa seŋ dekeŋkeŋ dɔɔ nɛ te balaŋ baŋ be kyaa botɔɔ tɛɛlebii kei keŋ loŋ
+        be kilisi ke nɛ dɔɔ yako daa nyi, bɛɛ baake botɔɔ nyi Maleta.
+      sbs: 0.6836
+      gen_sec: 9.73
+      ref_sec: 11.34
+      cer: 0.1197
+      wer: 0.2424
+    bible_00077:
+      source: bible
+      text: Nawolo nyi Wurubuarɛ te fa ŋon gbɛɛ nyi yaa lɛɛ Kristo di kaageŋ bo ya, mɔna ɔ faa ŋon gbɛɛ
+        nyi lee ŋon Kristo dɔɔ yaa naa diyem mɔ.
+      sbs: 0.728
+      gen_sec: 8.28
+      ref_sec: 6.8
+      cer: 0.1176
+      wer: 0.2759
+    bible_00078:
+      source: bible
+      text: Daa gbagba naa e na de sia fonɛɛ te da moo de nyiŋmaase tina e.
+      sbs: 0.6913
+      gen_sec: 3.84
+      ref_sec: 4.0
+      cer: 0.125
+      wer: 0.4
+    bible_00079:
+      source: bible
+      text: Wurubuarɛ dii adansɛɛ lee ɔ wose man nyiaa, “Me te nyiŋ Gyese bu Defidi ŋon mɛɛ gyae e lee
+        me konɔɔ man.
+      sbs: 0.7351
+      gen_sec: 6.31
+      ref_sec: 6.92
+      cer: 0.0875
+      wer: 0.3182
+    bible_00080:
+      source: bible
+      text: Nawolo nyi ŋon ne tale la yɛɛ abɔɔ burum kela mena keŋ dɛɛ bɔɔse yaa dɛɛ gyueŋ lee ɔ doŋ keŋ
+        ne yɛɛ tom de man nɛ dɔɔ.
+      sbs: 0.6698
+      gen_sec: 7.34
+      ref_sec: 8.22
+      cer: 0.1222
+      wer: 0.25
+    bible_00081:
+      source: bible
+      text: Deise kpookpoo burum kyaa tɛɛle kei dɔɔ, mɔna dei daale be kyaa keŋ ŋolo bee nyii ke man ya.
+      sbs: 0.6747
+      gen_sec: 5.8
+      ref_sec: 4.14
+      cer: 0.0694
+      wer: 0.1579
+    bible_00082:
+      source: bible
+      text: Wurubuarɛ nombia aŋmaraseŋ see ŋan yakowɔ yenaŋ daale nyiaa.
+      sbs: 0.6113
+      gen_sec: 4.27
+      ref_sec: 3.64
+      cer: 0.098
+      wer: 0.4444
+    bible_00083:
+      source: bible
+      text: Gyoo Pubiliyuse ŋonaŋ ɔ kya kaa wee kpaŋalaŋ, na ɔ na kyeree.
+      sbs: 0.6267
+      gen_sec: 4.1
+      ref_sec: 4.64
+      cer: 0.2292
+      wer: 0.5833
+    bible_00084:
+      source: bible
+      text: Mɔna me ka bee kei nɛ, me te tina biatɛɛ nombia ŋan pou yela.
+      sbs: 0.7327
+      gen_sec: 3.75
+      ref_sec: 3.3
+      cer: 0.087
+      wer: 0.2143
+    bible_00085:
+      source: bible
+      text: ” Ɔ kaseela baŋ ke gyu kelii donɔɔ keŋ man nɛ, be naa kpene kamasɛ keŋ Yesu be yako wɔ nɛ
+        pɛpɛɛpɛ, te be desina nyeekelɛɛ weenɛɛ ŋan see botɔɔ.
+      sbs: 0.6808
+      gen_sec: 8.96
+      ref_sec: 7.84
+      cer: 0.0818
+      wer: 0.1724
+    bible_00086:
+      source: bible
+      text: Mɔna Gyosɛfo ta kpeo ta e ya, te Wurubuarɛ feliŋ yela Mɛɛre kyaŋa fulu.
+      sbs: 0.7378
+      gen_sec: 4.52
+      ref_sec: 3.82
+      cer: 0.125
+      wer: 0.5
+    bible_00087:
+      source: bible
+      text: Nawolo nyi lee mena keŋ ɛ seŋɛɛ keŋkeŋ de Gbeŋgyoo Yesu nombia ŋan ɛ be lɛɛ di nɛ man dɔɔ,
+        de wɔe te fɛɛ daa nideli.
+      sbs: 0.7057
+      gen_sec: 7.42
+      ref_sec: 6.6
+      cer: 0.0674
+      wer: 0.2308
+    bible_00088:
+      source: bible
+      text: Mɛɛ kɛɛ ɔ gbɛɛ nyi de tebia Kristotena baale baa kpu na e na baa kɔŋ.
+      sbs: 0.6883
+      gen_sec: 4.18
+      ref_sec: 3.02
+      cer: 0.2075
+      wer: 0.625
+    bible_00089:
+      source: bible
+      text: Nawolo nyi me lɛɛ tɔna koraŋ lee be gyaŋ, ŋan bɔɔ ŋmarase fa be tebia Gyudatena baŋ be kyaa
+        Damasekuse nɛ, te me gyuuwɔ me kaa kyaŋ Kristotena baŋ be kyaa botɔɔ nɛ, na maa do wɔ akyakaase
+        kɔŋ Gyerusalɛm na baa wɔŋ ba deŋela.
+      sbs: 0.7219
+      gen_sec: 14.34
+      ref_sec: 14.52
+      cer: 0.1023
+      wer: 0.2889
+    bible_00090:
+      source: bible
+      text: Mena balaŋ kumɛɛ kɛwɔ wose man nombia te Wurubuarɛ tɛɛwɔ Enɔke ŋon ɔ gyakaa Adam dɔɔ kalola
+        kegyakaare man nyetoorote nɛ dɔɔ yako see nyiaa, “Ɛ kɛɛ de Gbeŋgyoo Wurubuarɛ ne kɔŋ.
+      sbs: 0.6568
+      gen_sec: 11.26
+      ref_sec: 14.04
+      cer: 0.0769
+      wer: 0.375
+    bible_00091:
+      source: bible
+      text: Ɛ popou ɛ yɔkɔse ɛ wose fa dɔŋa, nawolo nyi Wurubuarɛ nombia aŋmaraseŋ see ŋan yakowɔ yenaŋ
+        daale nyiaa.
+      sbs: 0.665
+      gen_sec: 7.0
+      ref_sec: 6.88
+      cer: 0.0952
+      wer: 0.2632
+    bible_00092:
+      source: bible
+      text: Gyoo Herode Antipase yɛna walaŋ ŋon ɔ seŋɛɛ gyoo dinaa nawɔɔ man Galelia tɛɛle man.
+      sbs: 0.6645
+      gen_sec: 5.38
+      ref_sec: 5.94
+      cer: 0.1029
+      wer: 0.4
+    bible_00093:
+      source: bible
+      text: Mena nombia kɛŋa te Wurubuarɛ ne gyae nyi yaa yɛɛ, nawolo nyi ɛmɛɛ na de Gbeŋgyoo Yesu Kristo
+        yɛɛ dokoloŋ.
+      sbs: 0.7359
+      gen_sec: 6.74
+      ref_sec: 5.7
+      cer: 0.0471
+      wer: 0.2
+    bible_00094:
+      source: bible
+      text: Ɔ nombia kedi kenaŋ gyae ke fiasɛɛ bo lee Kristotena dɔɔ.
+      sbs: 0.6215
+      gen_sec: 3.58
+      ref_sec: 3.28
+      cer: 0.1739
+      wer: 0.4545
+    bible_00095:
+      source: bible
+      text: Ŋon na see na be kɔba, te ɔ ne kyaa mo ŋaale desina ɔ wose.
+      sbs: 0.7196
+      gen_sec: 3.58
+      ref_sec: 3.2
+      cer: 0.186
+      wer: 0.4
+    bible_00096:
+      source: bible
+      text: Walaŋ kamasɛ ŋon ba te naa ɔ yele nyeedoŋ tɔne keŋ man ya nɛ, bee fuŋ ɔtenate bo do boalaŋ
+        degyapaa keŋ man.
+      sbs: 0.679
+      gen_sec: 7.08
+      ref_sec: 8.94
+      cer: 0.0952
+      wer: 0.2174
+    bible_00097:
+      source: bible
+      text: Feliŋ keŋ gyɔɔwɔ gyaŋee na degbele dinaa keŋ mena dɔɔ ka te tale gyu ke siaman bela ya.
+      sbs: 0.6616
+      gen_sec: 5.46
+      ref_sec: 4.96
+      cer: 0.1014
+      wer: 0.1667
+    bible_00098:
+      source: bible
+      text: Mena wonise banaara benaŋ pou dana beŋkelɛɛ looro looro.
+      sbs: 0.6451
+      gen_sec: 3.84
+      ref_sec: 3.56
+      cer: 0.2128
+      wer: 0.6667
+    bible_00099:
+      source: bible
+      text: Ɛ na ŋere balaŋ baŋ Wurubuarɛ ba mo wɔ do ɛ nyiŋmaa man nyi yaa kɛɛ be dɔɔ nɛ ya, mɔna ɛ yela
+        ɛ nombia ŋan ɛ ne yɛɛ nɛ ke gyɔ wɔ loo na baa kasee ŋa.
+      sbs: 0.6675
+      gen_sec: 9.05
+      ref_sec: 9.6
+      cer: 0.1
+      wer: 0.2895
+    bible_00100:
+      source: bible
+      text: Akpaa de Gbeŋgyoo de bu daa fɔɔ na ɔ ne wɔŋ da deŋele bo, na bɔɔ nyiŋ wɔlɛɛ daa kpu na tɛɛle
+        kei dɔɔ balaŋ akaŋ baŋ ya.
+      sbs: 0.6958
+      gen_sec: 7.51
+      ref_sec: 6.2
+      cer: 0.1778
+      wer: 0.3571
+    bible_00101:
+      source: bible
+      text: Koa, baa tisina ŋon ateta ateta kɔŋ botɔɔ keŋ ɛ kena diyem kekpaakekpaa.
+      sbs: 0.6445
+      gen_sec: 4.86
+      ref_sec: 5.28
+      cer: 0.0517
+      wer: 0.1538
+    bible_00102:
+      source: bible
+      text: Ɛ mo obuo fa wɔ nawolo nyi Wurubuarɛ na mo ɔ bɛrɛɛ keŋ boele wɔ ŋgba mena keŋ ɔ na mo boele
+        ŋon nɛ.
+      sbs: 0.6857
+      gen_sec: 6.14
+      ref_sec: 6.66
+      cer: 0.0933
+      wer: 0.3333
+    bible_00103:
+      source: bible
+      text: Mɔ baa fa gyooneŋ kufu benaŋ na wonembukum ŋon doŋ, na baa di gyoori debaŋ dokoloŋ bo.
+      sbs: 0.6741
+      gen_sec: 5.72
+      ref_sec: 4.86
+      cer: 0.1029
+      wer: 0.4118
+    bible_00104:
+      source: bible
+      text: Feliŋkum keŋ ka lee nɛ, balee ŋon kolosiwɔ te doo balaŋ dikpii keŋ be kyaa botɔɔ nɛ pou nɔɔ.
+      sbs: 0.6906
+      gen_sec: 6.06
+      ref_sec: 6.68
+      cer: 0.0694
+      wer: 0.1579
+    bible_00105:
+      source: bible
+      text: Mɔna n bu kei ŋon ɔ ba mo nya abɔɔ pou ke wɔlɛɛ futooli ala dɔɔ te ɔ ba bese kɔŋ donɔɔ nyiŋmaase
+        wolo nɛ te n koo nunkyue baale dinaa ŋon fa.
+      sbs: 0.6884
+      gen_sec: 8.7
+      ref_sec: 9.66
+      cer: 0.1667
+      wer: 0.3636
+    bible_00106:
+      source: bible
+      text: Wurubuarɛ gbagba nyansa na ɔ nombia kagyeŋ man te ɔ moowɔ yɛɛ mena.
+      sbs: 0.7235
+      gen_sec: 4.18
+      ref_sec: 3.66
+      cer: 0.0741
+      wer: 0.3846
+    bible_00107:
+      source: bible
+      text: Mɔna Gyudatena baale baŋ bɔɔ lee Esia tɛɛle dɔɔ nɛ kɔŋawɔ botɔɔ.
+      sbs: 0.658
+      gen_sec: 4.1
+      ref_sec: 4.38
+      cer: 0.2692
+      wer: 0.6667
+    bible_00108:
+      source: bible
+      text: Wurubuarɛ nombia ŋan dee kolosi nɛ, yɛɛ yaa ŋgba kolo keŋ bɔɔ duu nɛ.
+      sbs: 0.6302
+      gen_sec: 4.52
+      ref_sec: 3.96
+      cer: 0.1296
+      wer: 0.2857
+    bible_00109:
+      source: bible
+      text: De ke di weeya akalansɛɛ ŋaale botɔɔ nɛ, te Wurubuarɛ dekpeŋkpeŋgyɔɔre ŋolo ŋon bɛɛ baake
+        e nyi Agabuse nɛ, lee Gyudia tɛɛle man kɔŋ.
+      sbs: 0.6918
+      gen_sec: 8.79
+      ref_sec: 8.36
+      cer: 0.1402
+      wer: 0.3333
+    bible_00110:
+      source: bible
+      text: Keŋte be man walaŋ kamasɛ moo kewii pukaa e te be kalaa e.
+      sbs: 0.6841
+      gen_sec: 3.67
+      ref_sec: 3.42
+      cer: 0.1333
+      wer: 0.3846
+    bible_00111:
+      source: bible
+      text: Ɛmɛɛ gbagba ɛ kyaɔ na ɛ naɔ na ɛ naabia na ɛ loŋtona na ɛ gyoona ne gyae la baa lese ŋon fa,
+        na baa koe ɛ man baale.
+      sbs: 0.6908
+      gen_sec: 6.74
+      ref_sec: 10.78
+      cer: 0.0581
+      wer: 0.1379
+    bible_00112:
+      source: bible
+      text: Kpene keŋ gyae ke yela dɛɛ gyeŋ nyi daa na e dana nɔɔdokoloŋ yɛna nyi, nyaŋ ŋon n yako nyi
+        ɛmɛɛ na Wurubuarɛ dana nɔɔdokoloŋ na, kaboena nyi nya kyaa ŋgba mena keŋ Yesu be kyaa nɛ.
+      sbs: 0.6914
+      gen_sec: 11.52
+      ref_sec: 10.36
+      cer: 0.0355
+      wer: 0.0811
+    bible_00113:
+      source: bible
+      text: Mɛɛ yako ŋon ɛ ke nyii nyiaa, kɛŋa pou deŋele kewɔŋ gyae ke kɔŋ ɛmɛɛ gyɛŋ balaŋ kɛwɔ dɔɔ.
+      sbs: 0.6993
+      gen_sec: 5.8
+      ref_sec: 6.0
+      cer: 0.1014
+      wer: 0.3158
+    bible_00114:
+      source: bible
+      text: Te bɔɔ gyae baa tale gyɔ be konɔɔ na baa seŋ kolo dɔɔ wola nyi nombia ŋan bɛɛ mo gyakaa me
+        dɔɔ nɛ yɛɛ ampaŋ ya.
+      sbs: 0.6837
+      gen_sec: 6.57
+      ref_sec: 5.72
+      cer: 0.1412
+      wer: 0.2692
+    bible_00115:
+      source: bible
+      text: Walaŋ kamasɛ ŋon ɔ sila maŋ na ɔ sia gyae ke gyuusu na waa naa nyeedoŋ gbɛɛ keŋ.
+      sbs: 0.7113
+      gen_sec: 5.03
+      ref_sec: 4.8
+      cer: 0.0806
+      wer: 0.2222
+    bible_00116:
+      source: bible
+      text: Baŋ ne gyae la be kaa yako ŋon de kɛbo nombia na da kekyaabii man pou.
+      sbs: 0.703
+      gen_sec: 4.27
+      ref_sec: 3.6
+      cer: 0.037
+      wer: 0.125
+    bible_00117:
+      source: bible
+      text: Mena dɔɔ te mee kpila e ɛ gyaŋ na ɔ kaa yako ŋon da kekyaabii man nombia na waa do ŋon kakyeŋ.
+      sbs: 0.6507
+      gen_sec: 5.8
+      ref_sec: 5.26
+      cer: 0.0833
+      wer: 0.1818
+    bible_00118:
+      source: bible
+      text: Me tebia Aberaham duuluŋ man bia, na ɛmɛɛ baŋ ɛ te yɛɛ Iseraetenawɔ ya te ɛ ne yee Wurubuarɛ
+        nɛ, daa te Wurubuarɛ yela ba moo nyeedoŋ nombia kɛŋa kɔna.
+      sbs: 0.7092
+      gen_sec: 9.73
+      ref_sec: 8.92
+      cer: 0.042
+      wer: 0.1
+    bible_00119:
+      source: bible
+      text: Baale mɔ yɛna siamantena baŋ bɛɛ kɛɛ nyi nombia ŋan pou bɛɛ yɛɛ nɛ ne gyu nideli.
+      sbs: 0.7039
+      gen_sec: 5.03
+      ref_sec: 4.64
+      cer: 0.0469
+      wer: 0.1765
+    bible_00120:
+      source: bible
+      text: Be balaŋ bala moo akaralɛɛ na abɔɔ ofoŋ nyiŋan mo milii Yesu ŋgba mena keŋ Gyudatena ne desina
+        woo pɛte bee wuu e nɛ.
+      sbs: 0.5939
+      gen_sec: 7.51
+      ref_sec: 4.86
+      cer: 0.2688
+      wer: 0.5833
+    bible_00121:
+      source: bible
+      text: Doo nyi balaŋ burum ta koro seŋ tia maŋ, mɔna ma te naa nyi Wurubuarɛ ta toro gbɛɛ dinaa daale
+        fa maŋ, nyi maa yɛɛ tom keŋ ke gyae ke yɛɛ tɔnɔɔ nɛ kɛbo.
+      sbs: 0.7188
+      gen_sec: 9.47
+      ref_sec: 8.22
+      cer: 0.069
+      wer: 0.1176
+    bible_00122:
+      source: bible
+      text: Ɔ ne gyina ɔ wose adido wola ɔ wose nyi ɔ yɛɛ walaŋ dinaa ŋolo e.
+      sbs: 0.6589
+      gen_sec: 3.93
+      ref_sec: 4.26
+      cer: 0.1224
+      wer: 0.3125
+    bible_00123:
+      source: bible
+      text: Na walaŋ ŋon waa yɛɛ dukum kei dinɔɔ yaa me kpa yaa sola Wurubuarɛ fa e ya.
+      sbs: 0.6951
+      gen_sec: 4.69
+      ref_sec: 3.72
+      cer: 0.0345
+      wer: 0.0588
+    bible_00124:
+      source: bible
+      text: Ɛ yela dɛɛ lese Wurubuarɛ yele nawolo nyi ŋon danaana doŋ keŋ waa tale kyɔ daa na dɔɔ yo gbɛɛ
+        ya.
+      sbs: 0.6584
+      gen_sec: 6.14
+      ref_sec: 6.42
+      cer: 0.1053
+      wer: 0.3333
+    bible_00125:
+      source: bible
+      text: Lee ŋon Wurubuarɛ gbagba kegyae man dɔɔ te ɔ baake maŋ te ɔ lese ɔ bu Yesu wola maŋ.
+      sbs: 0.6691
+      gen_sec: 5.21
+      ref_sec: 4.74
+      cer: 0.0769
+      wer: 0.2105
+    bible_00126:
+      source: bible
+      text: Ma wola ŋon kpene kamasɛ man nyi, kaboena nyi walaŋ kamasɛ waa yɛɛ tom nideli mena, na waa
+        nyiŋ kolo kyɔ baŋ bɔɔ dana doŋ ya nɛ.
+      sbs: 0.6659
+      gen_sec: 8.19
+      ref_sec: 6.68
+      cer: 0.0404
+      wer: 0.1111
+    bible_00127:
+      source: bible
+      text: Mɔna Wurubuarɛ gyuusu e lee yeŋ man, te ɔ lese e lee yeŋ weeleŋ man, nawolo nyi yeŋ be tale
+        kyaŋ e see ɔ gyaŋ kekpaakekpaa ya.
+      sbs: 0.6734
+      gen_sec: 8.02
+      ref_sec: 7.98
+      cer: 0.0619
+      wer: 0.2222
+    bible_00128:
+      source: bible
+      text: Ba ke gyakaa bee kolosi ɔ wose nombia kɛŋa nɛ, Yesu gbagba kaa seŋawɔ be gyaŋ te ɔ yako wɔ
+        nyiaa, “Wosefɛɛreŋ dɛɛ kyaa ɛ man.
+      sbs: 0.6865
+      gen_sec: 7.77
+      ref_sec: 8.58
+      cer: 0.0521
+      wer: 0.1538
+    bible_00129:
+      source: bible
+      text: Me tebia, ɛmɛɛ dɔɔ te mɛɛ yako nombia kɛŋa te ma moo ma wose mɛɛ maa na Apolo wola ŋon, na
+        ke yela ɛ ka gyeŋ Wurubuarɛ nombia aŋmaraseŋ see ŋan man.
+      sbs: 0.7113
+      gen_sec: 9.39
+      ref_sec: 9.8
+      cer: 0.0789
+      wer: 0.1562
+    bible_00130:
+      source: bible
+      text: Wurubuarɛ bu Yesu Kristo ŋon ɔ kyaa pɛte Wurubuarɛ be yɛɛ kpene kamasɛ nɛ, ŋon yɛna Wurubuarɛ
+        ŋon walaŋ bɛɛ mo ɔ sibii naa e ya nɛ dinɔɔ.
+      sbs: 0.6797
+      gen_sec: 8.79
+      ref_sec: 6.98
+      cer: 0.1111
+      wer: 0.3214
+    bible_00131:
+      source: bible
+      text: Mberem na ŋolo mɔ ne gyae waa mo deise wɔlɛɛ kpookpoo kolosi, yaa ŋolo mɔ kyaa keŋ waa lese
+        dei wɔle kei man nɛ, kaboena nyi yaa yɛɛ kɛŋa pou na ɛ ka mo do Kristotena baŋ kakyeŋ.
+      sbs: 0.6993
+      gen_sec: 11.26
+      ref_sec: 11.1
+      cer: 0.058
+      wer: 0.2105
+    bible_00132:
+      source: bible
+      text: Ɛ yɛɛ kakyeŋ na ɛ ke gyae dɔŋa, na ɛ ke yase ɛ sia gyae Wurubuarɛ feliŋ abɔɔ anefaŋ ŋan gbɛɛ.
+      sbs: 0.7186
+      gen_sec: 5.8
+      ref_sec: 5.26
+      cer: 0.0845
+      wer: 0.1905
+    bible_00133:
+      source: bible
+      text: Ɔ ke kyaa botɔɔ nɛ Samaria alo ŋolo kɔŋawɔ botɔɔ ɔ kaa kyee loŋ, keŋte Yesu sola e nyi “Fa
+        maŋ loŋ maa nyɔɔ.
+      sbs: 0.6912
+      gen_sec: 6.91
+      ref_sec: 7.76
+      cer: 0.2073
+      wer: 0.4583
+    bible_00134:
+      source: bible
+      text: Mɔna kɛŋa bɛɛ wolo nyi debaŋ ɔtomante keŋ gyae ke kɔŋ debokenaŋ man ya.
+      sbs: 0.687
+      gen_sec: 4.78
+      ref_sec: 5.32
+      cer: 0.2807
+      wer: 0.5714
+    bible_00135:
+      source: bible
+      text: Keŋte Yesu bɔɔse wɔ nyiaa, “Ɛ dana weenɛɛ ŋaale kɛbo?
+      sbs: 0.6862
+      gen_sec: 3.41
+      ref_sec: 3.74
+      cer: 0.122
+      wer: 0.6
+    bible_00136:
+      source: bible
+      text: Weeya ŋenaŋ man nɛ, fulɛɛtena na talabose baa laako.
+      sbs: 0.7279
+      gen_sec: 3.5
+      ref_sec: 3.48
+      cer: 0.2619
+      wer: 0.8889
+    bible_00137:
+      source: bible
+      text: ” Keŋte balaŋ baŋ man ŋolo tiranɔɔ nyiaa, “De Gbeŋgyoo, ma moo me bu tobaale ŋon feliŋkum
+        doo ɔ man, te keŋ dɔɔ ɔ bɛɛ tale kolosi ya nɛ baa kɔna neŋ nyi nya kyɔ.
+      sbs: 0.6551
+      gen_sec: 10.24
+      ref_sec: 10.5
+      cer: 0.124
+      wer: 0.3529
+    bible_00138:
+      source: bible
+      text: Akpaa ɛ naa ŋgba ŋe tombia ne pɔrɔkee na, ɛ gyeŋ nyi dekpao ta benaa.
+      sbs: 0.705
+      gen_sec: 4.35
+      ref_sec: 5.04
+      cer: 0.1132
+      wer: 0.4
+    bible_00139:
+      source: bible
+      text: Keŋ koraŋ be te nyiŋ nombiikum baa seŋ ke dɔɔ bu e fɔɔ na ba ko e ya nɛ, ba sola Gyoo Pilato
+        nyi waa lese e fa wɔ na baa ko.
+      sbs: 0.6888
+      gen_sec: 7.42
+      ref_sec: 7.84
+      cer: 0.1099
+      wer: 0.3125
+    bible_00140:
+      source: bible
+      text: Yaa nyaŋ kela na de naana Gyekɔpo ŋon ɔ be wula ditiribuŋ kei fa daa nɛ?
+      sbs: 0.6748
+      gen_sec: 4.52
+      ref_sec: 5.16
+      cer: 0.1429
+      wer: 0.3125
+    bible_00141:
+      source: bible
+      text: Keŋte Yesu ɔ naa na ɔ naabia kɔŋawɔ kaa seŋ debɔɔman kpila nyi baa baake e fa wɔ.
+      sbs: 0.6544
+      gen_sec: 5.12
+      ref_sec: 4.34
+      cer: 0.127
+      wer: 0.3889
+    bible_00142:
+      source: bible
+      text: Mɔɔ ne fane nyi nya lese wɔ lee tɛɛle kei dɔɔ ya, mɔna mɛɛ fane bo nyi nya gyee wɔ nideli
+        na bɔɔ yale walaŋkum ŋon kɔta man ya.
+      sbs: 0.6837
+      gen_sec: 7.68
+      ref_sec: 9.7
+      cer: 0.1546
+      wer: 0.3793
+    bible_00143:
+      source: bible
+      text: Simeɔn kɛɛ kolosi nɛ, te ŋon Ana mɔ kɔŋawɔ.
+      sbs: 0.6747
+      gen_sec: 2.82
+      ref_sec: 3.54
+      cer: 0.1818
+      wer: 0.8889
+    bible_00144:
+      source: bible
+      text: Me dana nombia burum maa yako ŋon, mɔna debokeiman man nɛ ŋe dana yuŋ kela ŋon.
+      sbs: 0.6842
+      gen_sec: 5.21
+      ref_sec: 5.4
+      cer: 0.0484
+      wer: 0.1875
+    bible_00145:
+      source: bible
+      text: Botɔɔ te ŋɔma kaa wuu be dɔɔ, te be nyii nɔɔwoya ŋaale ŋɔma keŋ man nyiaa, “Kei yɛna me bu
+        ŋon mɛɛ gyae e.
+      sbs: 0.6878
+      gen_sec: 6.57
+      ref_sec: 7.66
+      cer: 0.1139
+      wer: 0.25
+    bible_00146:
+      source: bible
+      text: Weeya aŋmoŋ yaa ɛ ne gyae nyi maa nyiŋ konɔɔ kyaa ɛ gyaŋ, pɛna ɛ ke lɛɛ maŋ di?
+      sbs: 0.6269
+      gen_sec: 4.95
+      ref_sec: 4.46
+      cer: 0.0678
+      wer: 0.1053
+    bible_00147:
+      source: bible
+      text: Ɛ mo wose keyɔkɔse na obuo tira mena nombia ŋenaŋ nɔɔ, na ke yela ɛ konɔɔ man nombia ke doo
+        ŋon kyɛɛkyɛɛ.
+      sbs: 0.6503
+      gen_sec: 6.66
+      ref_sec: 6.64
+      cer: 0.122
+      wer: 0.2727
+    bible_00148:
+      source: bible
+      text: ” Gyoo Herode kenyii mena nɛ ɔ yakowɔ nyiaa, “Gyɔn ŋon mɔɔ kara ɔ nyee nɛ bese la foŋ nɛ!
+      sbs: 0.6967
+      gen_sec: 5.21
+      ref_sec: 6.22
+      cer: 0.2576
+      wer: 0.6842
+    bible_00149:
+      source: bible
+      text: Debaŋ keŋ me kyaa ɛ gyaŋ nɛ, ma te gyae nyi maa gyeŋ kolo kpu na Yesu Kristo na ɔ yeŋ keŋ
+        ɔ ba yem ɔpaŋdaŋ dɔɔ nɛ ya.
+      sbs: 0.7123
+      gen_sec: 7.25
+      ref_sec: 6.96
+      cer: 0.092
+      wer: 0.2414
+    bible_00150:
+      source: bible
+      text: Nombia ŋenaŋ gyae ka lese ɔ konɔɔ man nombia ŋan pou weesɛɛ nɛ debɔɔ, na waa buŋ som Wurubuarɛ
+        na waa yako nyiaa, “Ampaŋ Wurubuarɛ kpuɛ ɛ man.
+      sbs: 0.7179
+      gen_sec: 9.05
+      ref_sec: 8.64
+      cer: 0.1171
+      wer: 0.2857
+    bible_00151:
+      source: bible
+      text: Yesu ka lee botɔɔ nɛ, mmaraa wolala na Farasiitena baŋ moo nombia gyu ke tuŋ e baŋ man te
+        be bɔɔse e nombia burum, mo teese ɔ nɔɔman na baa nyiŋ kyaŋ e.
+      sbs: 0.6954
+      gen_sec: 9.56
+      ref_sec: 13.88
+      cer: 0.1453
+      wer: 0.3333
+    bible_00152:
+      source: bible
+      text: Te ɔ see daa saere na dɛɛ som de Gbeŋgyoo Wurubuarɛ ŋon ɔ yɛɛ ɔ Wurubuarɛ na ɔ kya e nɛ.
+      sbs: 0.6848
+      gen_sec: 5.29
+      ref_sec: 6.44
+      cer: 0.1194
+      wer: 0.4286
+    bible_00153:
+      source: bible
+      text: Akpaa nyi ŋolo dana kpene keŋ dɔɔ te waa tale mo ɔ wose lɔ mena abɔɔ kɛŋa dinɔɔ dɔɔ na, nafɔ
+        ŋolo be kyaa me wɔle ya.
+      sbs: 0.6755
+      gen_sec: 7.34
+      ref_sec: 5.84
+      cer: 0.1461
+      wer: 0.3333
+    bible_00154:
+      source: bible
+      text: Kei te yeli da te naa nyi n lee Wurubuarɛ gyaŋ.
+      sbs: 0.6066
+      gen_sec: 2.82
+      ref_sec: 10.4
+      cer: 0.0833
+      wer: 0.3636
+    bible_00155:
+      source: bible
+      text: Balaŋ baŋ bɔɔ di weenɛɛ ŋan nɛ, be man baala baageŋ yɛɛ balaŋ kakpoŋse banoŋ .
+      sbs: 0.5942
+      gen_sec: 5.38
+      ref_sec: 7.8
+      cer: 0.0328
+      wer: 0.0667
+    bible_00156:
+      source: bible
+      text: Te debaŋ kei keŋ me sɛɛ me kyaa tɛɛle kei dɔɔ nɛ, mɛɛ yako nombia kɛŋa baa na ke yela gyoŋ
+        keŋ doo me maŋ nɛ ke nyiŋ doo be man nideli.
+      sbs: 0.7048
+      gen_sec: 8.45
+      ref_sec: 10.22
+      cer: 0.098
+      wer: 0.1875
+    bible_00157:
+      source: bible
+      text: Baŋ be dukum be gyae ke yela baŋ na Wurubuarɛ nsana ke tira kekpaa ya nɛ baŋ yaa me dana.
+      sbs: 0.7031
+      gen_sec: 5.55
+      ref_sec: 4.4
+      cer: 0.0
+      wer: 0.0
+    bible_00158:
+      source: bible
+      text: Nombia ŋan na wola Wurubuarɛ bɛrɛɛ keŋ ɔ dana fa deniwalaŋ nɛ, ne gyae la ke kyɔ ŋon na ɛ
+        ke tale seŋ nombia ŋan ɛ be lɛɛ di nɛ man nideli.
+      sbs: 0.7243
+      gen_sec: 8.7
+      ref_sec: 7.68
+      cer: 0.1038
+      wer: 0.2812
+    bible_00159:
+      source: bible
+      text: Mɔna ɛmɛɛ dɔɔ ɛ gyeŋ anokoare keŋ Wurubuarɛ ba lese wola nɛ, nawolo nyi Kristo ta mo ɔ feliŋ
+        ŋon do ɛ man.
+      sbs: 0.7108
+      gen_sec: 6.66
+      ref_sec: 6.38
+      cer: 0.061
+      wer: 0.1739
+    bible_00160:
+      source: bible
+      text: Lee ɔ feliŋ ŋon ɔ ba mo do de man dɔɔ, da gyeŋ nyi daa na e dana nɔɔdokoloŋ.
+      sbs: 0.697
+      gen_sec: 4.69
+      ref_sec: 3.78
+      cer: 0.1786
+      wer: 0.3684
+    bible_00161:
+      source: bible
+      text: Te lee debaŋ keŋ bɔɔ kyaa Babilɔn kelii debaŋ keŋ bɔɔ lola Kristo mɔ nɛ yɛɛ kalola kegyakaare
+        kufu anaara.
+      sbs: 0.6856
+      gen_sec: 6.91
+      ref_sec: 5.76
+      cer: 0.093
+      wer: 0.35
+    bible_00162:
+      source: bible
+      text: ” Botɔɔ te Yesu bɔɔse e nyiaa, “Ŋgba n yɛɛ Gyudatena wolale kegyia e.
+      sbs: 0.6627
+      gen_sec: 4.1
+      ref_sec: 4.74
+      cer: 0.1538
+      wer: 0.3846
+    bible_00163:
+      source: bible
+      text: Mɔna Yesu gɔŋasewɔ te ɔ moo ɔ nyimbii ŋmarase kolo tɛɛle man.
+      sbs: 0.6688
+      gen_sec: 4.01
+      ref_sec: 3.9
+      cer: 0.3061
+      wer: 0.5833
+    bible_00164:
+      source: bible
+      text: Walaŋ kamasɛ ŋon ɔ lɛɛ e di na bɔɔ gyae baa bu e fɔɔ ya, te ŋon ɔ te lɛɛ e di ya na be wulaa
+        bu e fɔɔ, nawolo nyi ɔ te lɛɛ Wurubuarɛ bu dokoloŋ kooŋ ŋon di ya.
+      sbs: 0.6747
+      gen_sec: 9.56
+      ref_sec: 11.7
+      cer: 0.1638
+      wer: 0.3171
+    bible_00165:
+      source: bible
+      text: Mena ke te Sodom na Gomora na donɔɔse ŋan pou be kilisi ŋa gyaŋee nɛ man balaŋ naa diyem boalaŋ
+        man.
+      sbs: 0.6838
+      gen_sec: 6.49
+      ref_sec: 7.56
+      cer: 0.0759
+      wer: 0.1905
+    bible_00166:
+      source: bible
+      text: Me kabesena ma wose nɛ, te me naa nyeela nyetooro ŋaale.
+      sbs: 0.7214
+      gen_sec: 3.58
+      ref_sec: 3.26
+      cer: 0.1136
+      wer: 0.5455
+    bible_00167:
+      source: bible
+      text: Mena ke yaa yela baa doo de man na tɛɛle kei balaŋ pou ke nyiŋ lɛɛ di nyi nyaŋ kpila na maŋ.
+      sbs: 0.6781
+      gen_sec: 5.72
+      ref_sec: 7.4
+      cer: 0.1857
+      wer: 0.5
+    bible_00168:
+      source: bible
+      text: Lee nebo kelii balinɔɔ nɛ, ɔ kolosi Wurubuarɛ gyoori keŋ wose man nombia.
+      sbs: 0.6842
+      gen_sec: 4.69
+      ref_sec: 4.42
+      cer: 0.1186
+      wer: 0.3846
+    bible_00169:
+      source: bible
+      text: Maŋ Pɔɔl ŋon ma seŋɛɛ Yesu nawɔɔ man te nɛnɛɛ me sɛɛ me doo deni man lee ŋon dɔɔ nɛ ne waase
+        na neŋ nɛ.
+      sbs: 0.6977
+      gen_sec: 6.49
+      ref_sec: 6.04
+      cer: 0.1923
+      wer: 0.44
+    bible_00170:
+      source: bible
+      text: Me gbɛɛ kei man dɔɔ, mɔɔ ne gyae nyi maa kpase kɔŋ kaa do ŋon nɔɔ yakaa na maa bese ya, mɔna
+        akpaa Wurubuarɛ de sɛɛ na, maa kaa di weeya akalansɛɛ ŋaale ɛ gyaŋ.
+      sbs: 0.735
+      gen_sec: 9.9
+      ref_sec: 9.24
+      cer: 0.1066
+      wer: 0.2857
+    bible_00171:
+      source: bible
+      text: Wonembukum ŋon nyeeya nyetooro ŋan seŋɛɛ fa bulasebia nyetooro, te bulasebia ŋenaŋ dɔɔ te
+        alo ŋon ne kyaa.
+      sbs: 0.6801
+      gen_sec: 7.34
+      ref_sec: 7.16
+      cer: 0.0345
+      wer: 0.1667
+    bible_00172:
+      source: bible
+      text: Keŋte Yesu na ɔ kaseela baŋ gyeŋa bula daale kekyaa botɔɔ.
+      sbs: 0.6698
+      gen_sec: 3.84
+      ref_sec: 3.96
+      cer: 0.1064
+      wer: 0.3636
+    bible_00173:
+      source: bible
+      text: Kɛŋa pou wɔle nɛ, ɛ yela ɛ kelɛɛdi ke yɛɛ ŋgba nyeele pampasaŋ keŋ nɛ.
+      sbs: 0.6766
+      gen_sec: 4.61
+      ref_sec: 4.16
+      cer: 0.3333
+      wer: 0.7333
+    bible_00174:
+      source: bible
+      text: Mena dɔɔ mena keŋ ɛ be lɛɛ Yesu Kristo di nyi ŋon yɛna ɛ gbeŋgyoo nɛ, ɛ betaa kyaa na e mena.
+      sbs: 0.7383
+      gen_sec: 5.72
+      ref_sec: 5.14
+      cer: 0.0429
+      wer: 0.0909
+    bible_00175:
+      source: bible
+      text: Nombii keŋ ɔ be yako wɔ yɛna nyi, “Nombii keŋ Wurubuarɛ feliŋ be tɛɛ Wurubuarɛ dekpeŋkpeŋgyɔɔre
+        Yesaya dɔɔ yako fa ɛ naanaɔ nɛ, doo na ke gbɛɛ.
+      sbs: 0.689
+      gen_sec: 9.22
+      ref_sec: 7.86
+      cer: 0.0796
+      wer: 0.2222
+    bible_00176:
+      source: bible
+      text: Ɛmɛɛ ɛ ta gyu kedi wee dinaa keŋ, maŋ be gyae maa gyu ya nawolo nyi ma debaŋ keŋ te lii ta
+        ya.
+      sbs: 0.695
+      gen_sec: 5.63
+      ref_sec: 6.76
+      cer: 0.0429
+      wer: 0.1739
+    bible_00177:
+      source: bible
+      text: Debaŋ keŋ Apolo be yɛɛ wa agyueŋ nyi ɔ ne gyu Akaya Girikitena tɛɛle man nɛ, Kristotena baŋ
+        be kyaa Efeso nɛ doo e kakyeŋ, te be faa e be nyiŋmaa man tɔne nyi waa mo gyina Kristotena baŋ
+        be kyaa botɔɔ nɛ, nyi baa lɛɛ e nideli.
+      sbs: 0.6529
+      gen_sec: 14.08
+      ref_sec: 14.28
+      cer: 0.0914
+      wer: 0.2917
+    bible_00178:
+      source: bible
+      text: Lee dukum keyɛɛ man na, ɛ yɛɛ ɛ wose ŋgba kyokyoosebia baŋ bɔɔ gyeŋ dukum ya nɛ.
+      sbs: 0.726
+      gen_sec: 5.03
+      ref_sec: 4.22
+      cer: 0.0323
+      wer: 0.1765
+    bible_00179:
+      source: bible
+      text: Mena mɔ te abɔɔ ŋan nyeedoŋ be doo ŋe man ya ŋgba kefereese na kaberɛse nɛ, akpaa be ta wola
+        ŋa nideli ya na amɔte ne gyae la waa nyii ŋe man?
+      sbs: 0.7201
+      gen_sec: 8.96
+      ref_sec: 8.36
+      cer: 0.0917
+      wer: 0.1562
+    bible_00180:
+      source: bible
+      text: Yesu ka lese ɔ kpilala baŋ taŋ nɛ te ɔ gyuuwɔ ɔ dɛɛ.
+      sbs: 0.6829
+      gen_sec: 3.16
+      ref_sec: 3.14
+      cer: 0.2308
+      wer: 0.6923
+    bible_00181:
+      source: bible
+      text: Be te di n nombia ŋan dɔɔ, te nɛnɛɛ ba te naa nyi kpene kamasɛ keŋ me dana nɛ lee n gyaŋ.
+      sbs: 0.6795
+      gen_sec: 5.38
+      ref_sec: 6.46
+      cer: 0.0455
+      wer: 0.0909
+    bible_00182:
+      source: bible
+      text: Nɛnɛɛ Wurubuarɛ te lɛɛ ŋon do nyi ɛ gbɛɛneŋ tenɛɛ ɔ siaman lee de Gbeŋgyoo Yesu Kristo na
+        Wurubuarɛ feliŋ ŋon yele man.
+      sbs: 0.6514
+      gen_sec: 7.77
+      ref_sec: 5.22
+      cer: 0.0521
+      wer: 0.1304
+    bible_00183:
+      source: bible
+      text: Me tebia, mena keŋ walaŋ kamasɛ doo pɛte Wurubuarɛ be baake e nɛ, kaboena nyi waa kyaa mena
+        fa Wurubuarɛ.
+      sbs: 0.6952
+      gen_sec: 6.74
+      ref_sec: 5.8
+      cer: 0.0482
+      wer: 0.15
+    bible_00184:
+      source: bible
+      text: Keŋte be yako Yesu nyiaa, “De Gbeŋgyoo, da te kyaŋ alo kei ɔ ne gyae baala.
+      sbs: 0.6767
+      gen_sec: 4.61
+      ref_sec: 5.22
+      cer: 0.0179
+      wer: 0.0625
+    bible_00185:
+      source: bible
+      text: ” Yesu nɔɔ ketira keŋ yela ɔ kɔlala baŋ pou sia yeŋawɔ, te gyakoloŋ nombia ŋan ɔ be yɛɛ nɛ
+        yɛɛ balaŋ baŋ pou gyoŋ.
+      sbs: 0.716
+      gen_sec: 7.34
+      ref_sec: 7.4
+      cer: 0.1264
+      wer: 0.3333
+    bible_00186:
+      source: bible
+      text: De gyuuwɔ ka gyoo Sirakuse donɔɔ man, te de kyaawɔ botɔɔ weeya atooro.
+      sbs: 0.6969
+      gen_sec: 4.27
+      ref_sec: 4.22
+      cer: 0.2321
+      wer: 0.5385
+    bible_00187:
+      source: bible
+      text: Debaŋ keŋ ɛ sia be yɛɛ ɛ ne kɛo Wurubuarɛ feliŋ abɔɔ anefaŋ ŋan nɛ, ɛ yɛɛ kakyeŋ kɛo keŋ gyae
+        ke yela Kristotena dikpii keŋ ka bee bɔ ɔsom keŋ man nɛ.
+      sbs: 0.7186
+      gen_sec: 9.73
+      ref_sec: 8.02
+      cer: 0.0948
+      wer: 0.1818
+    bible_00188:
+      source: bible
+      text: Nawolo nyi maŋ Deniwalaŋ Bu kɔŋae me kaa kɛo na maa lɛɛ baŋ bɔɔ yoo nɛ nyee.
+      sbs: 0.6707
+      gen_sec: 4.95
+      ref_sec: 5.5
+      cer: 0.2712
+      wer: 0.5882
+    bible_00189:
+      source: bible
+      text: te n yela ba bese gyoorobia na saese na baa som Wurubuarɛ.
+      sbs: 0.6602
+      gen_sec: 3.5
+      ref_sec: 3.48
+      cer: 0.0435
+      wer: 0.25
+    bible_00190:
+      source: bible
+      text: Wurubuarɛ moo kei baa fee daa kyɔɔla na dɛɛ gyeŋ nyi, baŋ pou baa yɛɛ mena nombiakumɛɛ kɛŋa
+        dinɔɔ nɛ, baa naa diyem nideli boalaŋ keŋ ke bɛɛ yem ya nɛ man.
+      sbs: 0.7075
+      gen_sec: 9.9
+      ref_sec: 9.84
+      cer: 0.0992
+      wer: 0.2188
+    bible_00191:
+      source: bible
+      text: Nyi be lɛɛ ŋon na ɛ kyaa dekpaŋalaŋ kenaŋ man na ɛ ke di na ɛ ke nyɔɔ kpene kamasɛ keŋ baa
+        fa ŋon nɛ, nawolo nyi kaboena nyi baa tɔ tomyɛɛre kamasɛ kom.
+      sbs: 0.6914
+      gen_sec: 9.64
+      ref_sec: 12.44
+      cer: 0.0513
+      wer: 0.1176
+    bible_00192:
+      source: bible
+      text: Walaŋ ŋon ɔ yɛɛ Wurubuarɛ bu e na, ɔ be doo dukum keyɛɛ man ya nawolo nyi Wurubuarɛ dinɔɔ
+        doo ɔ man.
+      sbs: 0.6746
+      gen_sec: 6.23
+      ref_sec: 5.06
+      cer: 0.1039
+      wer: 0.3182
+    bible_00193:
+      source: bible
+      text: De Gbeŋgyoo Yesu Kristo waa mo ɔ bɛrɛɛ boele ɛ popou na waa seŋ ɛ wɔle.
+      sbs: 0.6669
+      gen_sec: 4.35
+      ref_sec: 8.92
+      cer: 0.1455
+      wer: 0.5
+    bible_00194:
+      source: bible
+      text: Ɔ yɛɛ Itali tɛɛle yoonɔɔtena dikpii siamante e.
+      sbs: 0.702
+      gen_sec: 3.07
+      ref_sec: 3.56
+      cer: 0.1795
+      wer: 0.625
+    bible_00195:
+      source: bible
+      text: Ɛ na kaŋ Gyerusalɛm donɔɔ mɔ ntam ya, nawolo nyi keŋ yɛna gyoo dinaa ŋon donɔɔ.
+      sbs: 0.6394
+      gen_sec: 4.95
+      ref_sec: 5.98
+      cer: 0.0806
+      wer: 0.1875
+    bible_00196:
+      source: bible
+      text: Gyaŋgba keŋ na ɛ wɔlɛɛ ɛ debaŋ yɛɛ abɔɔ ŋan balaŋ baŋ bɔɔ gyeŋ Wurubuarɛ ya ne yɛɛ nɛ.
+      sbs: 0.6854
+      gen_sec: 5.63
+      ref_sec: 6.4
+      cer: 0.0896
+      wer: 0.2632
+    bible_00197:
+      source: bible
+      text: ” Kei wɔle te ɔga ŋmaalewɔ agbaatee agbaatee, te ɔ faewɔ agbaatee agbaatee, te tɛɛle wosiwɔ
+        nideli.
+      sbs: 0.6611
+      gen_sec: 6.4
+      ref_sec: 7.14
+      cer: 0.1392
+      wer: 1.0
+    bible_00198:
+      source: bible
+      text: Botɔɔ te me nyii wonise banaara baŋ man ŋolo fae yeesa keŋkeŋ ŋgba ɔga fae la nɛ baake nyiaa,
+        “Kɔŋ!
+      sbs: 0.661
+      gen_sec: 6.57
+      ref_sec: 6.4
+      cer: 0.1039
+      wer: 0.25
+    bible_00199:
+      source: bible
+      text: Gyakoloŋ gyoo wɔ te ba nyeeya man mɔ yɛɛ wɔ basaa te be bɔɔse dɔŋa nyiaa, na nombia kɛŋa asɛɛ
+        yɛna sena baa?
+      sbs: 0.6843
+      gen_sec: 6.66
+      ref_sec: 9.1
+      cer: 0.0952
+      wer: 0.3043
 - model: ghananlpcommunity/ghana-tts-72k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   mode: ref
@@ -17219,4 +18940,4 @@ benchmarks:
       ref_sec: 9.1
       cer: 0.2976
       wer: 0.8261
-updated: '2026-10-02'
+updated: '2026-10-09'
