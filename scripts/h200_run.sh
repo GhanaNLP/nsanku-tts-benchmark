@@ -41,7 +41,10 @@ if [ "$STAGE" = "audiodit" ]; then
   AUDIODIT_PY="${NSANKU_AUDIODIT_PY:-$PROJECTS/longcat-audiodit-ghana/.venv/bin/python}"
   shift_args=("$@"); [ "${shift_args[0]}" = "python" ] && shift_args=("${shift_args[@]:1}")
   cd "$REPO"
-  exec env PYTHONPATH="$REPO" PYTHONUTF8=1 HF_HOME="$HF_CACHE" TMPDIR="$TMP" \
+  # As root, like the container stages: everything they wrote (manifests, clips, score caches)
+  # is root-owned, and this stage has to write next to it.
+  SUDO=(); [ "$(id -u)" != "0" ] && SUDO=(sudo -n)
+  exec "${SUDO[@]}" env PYTHONPATH="$REPO" PYTHONUTF8=1 HF_HOME="$HF_CACHE" TMPDIR="$TMP" \
     AUDIODIT_PACKAGE_DIR="${AUDIODIT_PACKAGE_DIR:-$PROJECTS/ghana-audiodit-pinned}" \
     "$AUDIODIT_PY" -u "${shift_args[@]}"
 fi
