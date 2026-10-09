@@ -10721,6 +10721,1791 @@ benchmarks:
       ref_sec: 26.15
       cer: 0.1339
       wer: 0.339
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.6594
+  num_scored: 200
+  cer: 0.1761
+  wer: 0.4858
+  accuracy: 0.8239
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.7416
+  score: 0.7416
+  per_source:
+    bible:
+      sbs: 0.7398
+      cer: 0.0841
+      n: 40
+    finance:
+      sbs: 0.621
+      cer: 0.4168
+      n: 40
+    lds:
+      sbs: 0.6412
+      cer: 0.1339
+      n: 40
+    unicef:
+      sbs: 0.6304
+      cer: 0.1286
+      n: 40
+    waxal:
+      sbs: 0.6648
+      cer: 0.1171
+      n: 40
+  entries:
+    bible_00000:
+      source: bible
+      text: Ɔbɛdii hene no, na wadi mfeɛ aduasa nnum, na ɔdii hene mfirinhyia aduonu nnum wɔ Yerusalem.
+      sbs: 0.7523
+      gen_sec: 7.51
+      ref_sec: 7.14
+      cer: 0.0959
+      wer: 0.375
+    bible_00001:
+      source: bible
+      text: 'Na Manoa ka kyerɛɛ AWURADE bɔfoɔ no sɛ: Wo din de sɛn?'
+      sbs: 0.7857
+      gen_sec: 4.18
+      ref_sec: 3.08
+      cer: 0.0732
+      wer: 0.3333
+    bible_00002:
+      source: bible
+      text: Na Konania nso ne ne nuanom Semaia, Netanel, Hasabia, Yeiel ne Yosabad, Lewifoɔ asafohene
+        no yii Twam nnwan mpemnum ne anantwie ahanum maa Lewifoɔ no.
+      sbs: 0.7282
+      gen_sec: 12.63
+      ref_sec: 14.58
+      cer: 0.0744
+      wer: 0.28
+    bible_00003:
+      source: bible
+      text: Na afoforɔ bi nso yɛɛ adwuma sɛ atwerɛfoɔ, mpanimfoɔ ne aponoanohwɛfoɔ.
+      sbs: 0.7354
+      gen_sec: 5.97
+      ref_sec: 3.82
+      cer: 0.0339
+      wer: 0.2727
+    bible_00004:
+      source: bible
+      text: 'Na wɔrefiri adie no, Yehosafat gyinae na ɔkaa sɛ: Yuda ne Yerusalemfoɔ, montie me.'
+      sbs: 0.7643
+      gen_sec: 6.66
+      ref_sec: 7.52
+      cer: 0.1077
+      wer: 0.2857
+    bible_00005:
+      source: bible
+      text: 'Ɛnna Amasia bisaa Nyankopɔn nipa no sɛ: Na ɛdeɛn na yɛnyɛ dwetikɛseɛ ɔha a mede ama Israel
+        asafo no?'
+      sbs: 0.7241
+      gen_sec: 8.02
+      ref_sec: 7.48
+      cer: 0.0625
+      wer: 0.2105
+    bible_00006:
+      source: bible
+      text: Afei, me Nyankopɔn, ma w’aniwa mmue ɛ, na yɛ aso ma ɛha yi mpaebɔ.
+      sbs: 0.7628
+      gen_sec: 5.12
+      ref_sec: 5.7
+      cer: 0.0417
+      wer: 0.3571
+    bible_00007:
+      source: bible
+      text: Na adeɛ biara a AWURADE Nyankopɔn agye de ama yɛn sɛ yɛnni soɔ no, ɛno na yɛbɛfa adi soɔ.
+      sbs: 0.7807
+      gen_sec: 6.91
+      ref_sec: 5.52
+      cer: 0.029
+      wer: 0.1053
+    bible_00008:
+      source: bible
+      text: Ɛberɛ a wɔhyɛɛ mo so no, mosu frɛɛ me na megyee mo.
+      sbs: 0.7432
+      gen_sec: 3.84
+      ref_sec: 3.04
+      cer: 0.1316
+      wer: 0.3333
+    bible_00009:
+      source: bible
+      text: Na ɔfaa bi kura kɔe, na ɔrekorɔ na ɔredi, na ɔkɔduruu n’agya ne ne na nkyɛn, na ɔmaa wɔn bi
+        dii; nanso wanka ankyerɛ wɔn sɛ gyata no yam na ɔyii ɛwoɔ no.
+      sbs: 0.7797
+      gen_sec: 11.69
+      ref_sec: 12.08
+      cer: 0.087
+      wer: 0.2121
+    bible_00010:
+      source: bible
+      text: Ntotorobɛntohyɛnfoɔ ne nnwomtofoɔ no nyinaa bɔɔ mu too dwom de kamfoo Awurade, daa no ase.
+      sbs: 0.7676
+      gen_sec: 7.42
+      ref_sec: 5.7
+      cer: 0.0541
+      wer: 0.4
+    bible_00011:
+      source: bible
+      text: Yehoram nuanom mmarima a na wɔyɛ Yehosafat mmammarima foforɔ bi no ne Asaria, Yehiel, Sakaria,
+        Asaria, Mikael ne Sefatia.
+      sbs: 0.7569
+      gen_sec: 10.15
+      ref_sec: 8.4
+      cer: 0.0714
+      wer: 0.3158
+    bible_00012:
+      source: bible
+      text: 'Na Samson frɛɛ AWURADE sɛ: AWURADE Nyankopɔn, afei kae me, na hyɛ me den prɛko pɛ yi nko
+        ara, Onyankopɔn, na mentɔ m’ani mmienu yi so were prɛko Filistifoɔ so.'
+      sbs: 0.8029
+      gen_sec: 12.71
+      ref_sec: 11.82
+      cer: 0.065
+      wer: 0.2333
+    bible_00013:
+      source: bible
+      text: Ɛnyɛ wo so na mebaa nnɛ, na mmom efie a ɛne me di ako no so na Onyankopɔn aka sɛ menyɛ ntɛm.
+      sbs: 0.7214
+      gen_sec: 7.0
+      ref_sec: 7.68
+      cer: 0.087
+      wer: 0.2273
+    bible_00014:
+      source: bible
+      text: Na ne ba Manase bɛdii n’adeɛ.
+      sbs: 0.7042
+      gen_sec: 2.22
+      ref_sec: 4.56
+      cer: 0.2273
+      wer: 1.0
+    bible_00015:
+      source: bible
+      text: 'Na AWURADE bɔfoɔ firi Gilgal baa Bokim bɛkaa sɛ: Meyii mo firii Misraim na mede mo baa asase
+        a mekaa ho ntam mekyerɛɛ mo agyanom no so, na mese: Meremmu me ne mo ntam apam no so da biara
+        da.'
+      sbs: 0.7753
+      gen_sec: 14.85
+      ref_sec: 13.1
+      cer: 0.0544
+      wer: 0.2
+    bible_00016:
+      source: bible
+      text: Ɔduruu ɔbarima no ho no, ɔbisaa no sɛ, “Wo na wokaa biribi kyerɛɛ me yere no anaa?
+      sbs: 0.7654
+      gen_sec: 6.4
+      ref_sec: 10.16
+      cer: 0.0323
+      wer: 0.1765
+    bible_00017:
+      source: bible
+      text: Enti obiara a ɔpɛ sɛ ɔyɛ wiase adamfoɔ no gyina hɔ sɛ Nyankopɔn tamfo.
+      sbs: 0.7108
+      gen_sec: 5.55
+      ref_sec: 5.34
+      cer: 0.0179
+      wer: 0.0714
+    bible_00018:
+      source: bible
+      text: Na wammrɛ ne ho ase AWURADE anim sɛdeɛ n’agya Manase brɛɛ ne ho aseɛ no, na ɔno Amon maa mfomsoɔ
+        dɔɔso.
+      sbs: 0.7025
+      gen_sec: 8.02
+      ref_sec: 6.96
+      cer: 0.1
+      wer: 0.4762
+    bible_00019:
+      source: bible
+      text: Na asɔfoɔ no antumi anhyɛne AWURADE dan no mu, ɛfiri sɛ na AWURADE animuonyam no ayɛ AWURADE
+        dan no ma.
+      sbs: 0.733
+      gen_sec: 8.28
+      ref_sec: 6.82
+      cer: 0.0122
+      wer: 0.1
+    bible_00020:
+      source: bible
+      text: Ɛne Onyankopɔn a ɔka me ho no nnni asie, na wansɛe wo.
+      sbs: 0.6273
+      gen_sec: 4.18
+      ref_sec: 3.1
+      cer: 0.2683
+      wer: 0.5833
+    bible_00021:
+      source: bible
+      text: 'Na Usia tii n’agyanom wɔ asamando, na wɔsiee no n’agyanom nkyɛn ahemfo asieeɛ asase no so,
+        na wɔkaa sɛ: Ɔyaree kwata.'
+      sbs: 0.7381
+      gen_sec: 9.13
+      ref_sec: 9.56
+      cer: 0.044
+      wer: 0.1429
+    bible_00022:
+      source: bible
+      text: Na Yudafoɔ boaboaa wɔn ano sɛ wɔrebɛhwehwɛ AWURADE hɔ mmoa.
+      sbs: 0.7512
+      gen_sec: 4.95
+      ref_sec: 4.04
+      cer: 0.0816
+      wer: 0.3
+    bible_00023:
+      source: bible
+      text: 'Na afei adɛn na moka kyerɛ me sɛ: Ɛdeɛn na ɛreyɛ woɔ, yi?'
+      sbs: 0.7977
+      gen_sec: 4.44
+      ref_sec: 4.7
+      cer: 0.0952
+      wer: 0.2308
+    bible_00024:
+      source: bible
+      text: “Ɔsɔfopanin Amaria bɛyɛ mo panin, na ɔkasa a obi nka bi bio wɔ nsɛm a ɛfa Awurade ho nyinaa.
+      sbs: 0.7408
+      gen_sec: 7.17
+      ref_sec: 5.72
+      cer: 0.0423
+      wer: 0.3158
+    bible_00025:
+      source: bible
+      text: Ne babarima Hesekia na ɔdii nʼadeɛ sɛ ɔhene.
+      sbs: 0.6998
+      gen_sec: 3.5
+      ref_sec: 4.64
+      cer: 0.2222
+      wer: 0.375
+    bible_00026:
+      source: bible
+      text: Ano korɔ no ara mu na nkamfo ne nnome firi ba.
+      sbs: 0.6797
+      gen_sec: 3.5
+      ref_sec: 3.52
+      cer: 0.2571
+      wer: 0.3636
+    bible_00027:
+      source: bible
+      text: Bosome a ɛtɔ so mmiɛnsa no mu na wɔfirii akuakuo no aseɛ, na bosome a ɛtɔ so nson no mu na
+        wɔwieeɛ.
+      sbs: 0.7431
+      gen_sec: 7.68
+      ref_sec: 7.42
+      cer: 0.1053
+      wer: 0.3182
+    bible_00028:
+      source: bible
+      text: Ɔyɛ ɔbaa bi a ɔfiri Dan mmammaa mu ba, na n’agya yɛ Tironi.
+      sbs: 0.7238
+      gen_sec: 4.44
+      ref_sec: 4.72
+      cer: 0.1591
+      wer: 0.3846
+    bible_00029:
+      source: bible
+      text: 'Ɛfiri sɛ wɔaka ntankɛseɛ agu deɛ wamma AWURADE nkyɛn Mispa no so sɛ: Kum na wɔnku no.'
+      sbs: 0.7929
+      gen_sec: 6.83
+      ref_sec: 6.06
+      cer: 0.0597
+      wer: 0.1765
+    bible_00030:
+      source: bible
+      text: Wobɛnyinsɛn na woawo ɔbabarima, na hwɛ sɛ oyiwan nka ne tire, ɛfiri sɛ, ɛsɛ sɛ ɔyɛ Nasareni
+        a wɔayi no asi hɔ ama Onyankopɔn firi awoɔ mu.
+      sbs: 0.7622
+      gen_sec: 11.09
+      ref_sec: 10.04
+      cer: 0.0556
+      wer: 0.1852
+    bible_00031:
+      source: bible
+      text: Efraimfoɔ ntuanofoɔ no buaa sɛ, “Gileadfoɔ nyɛ nnipa biara sɛ adwanefoɔ a wɔfiri Efraim ne
+        Manase.
+      sbs: 0.7365
+      gen_sec: 8.02
+      ref_sec: 6.5
+      cer: 0.075
+      wer: 0.3125
+    bible_00032:
+      source: bible
+      text: Wɔyɛɛ wɔn adwene sɛ wɔbɛgya Awurade, wɔn agyanom Onyankopɔn Asɔredan no, na wɔasom Asera afɔrebukyia
+        no ne ahoni no mmom.
+      sbs: 0.7305
+      gen_sec: 9.73
+      ref_sec: 6.22
+      cer: 0.0202
+      wer: 0.3
+    bible_00033:
+      source: bible
+      text: Na Hesekia hunuu sɛ Sanaherib aba na n’ani wɔ so sɛ ɔne Yerusalem rebɛko no, ɔne ne mmapɔmma
+        ne n’atumfoɔ tuu agyina sɛ wɔbɛsisi nsuo aniwa a ɛwowɔ kuro no ho no; na wɔboaa no.
+      sbs: 0.7229
+      gen_sec: 13.74
+      ref_sec: 13.4
+      cer: 0.0511
+      wer: 0.2
+    bible_00034:
+      source: bible
+      text: Nso asɔfoɔ no mu mpanimfoɔ nyinaa ne ɔman no maa wɔn mmarato dɔɔso pii sɛ wiase amanaman akyiwadeɛ
+        nyinaa, na wɔguu AWURADE fie a wayɛ no kronkron Yerusalem no ho fi.
+      sbs: 0.7063
+      gen_sec: 13.4
+      ref_sec: 11.68
+      cer: 0.0224
+      wer: 0.1935
+    bible_00035:
+      source: bible
+      text: Asɔfoɔ no deɛ, na Ɛpo no ankasa mu nsuo na na wɔde hohoro wɔn ho, na wɔmmfa dwaresɛn no mu
+        nsuo no bi.
+      sbs: 0.7435
+      gen_sec: 7.77
+      ref_sec: 5.62
+      cer: 0.0649
+      wer: 0.1304
+    bible_00036:
+      source: bible
+      text: 'Na ɔka kyerɛɛ ne teaseɛnamkafoɔ no sɛ: Dane w’ani na fa me firi ɛdɔm yi mu, na mapira.'
+      sbs: 0.7116
+      gen_sec: 6.66
+      ref_sec: 6.94
+      cer: 0.1077
+      wer: 0.3889
+    bible_00037:
+      source: bible
+      text: Na Ɔhene Salomo de anantwie mpemaduonu mmienu ne nnwan mpemha aduonu bɔɔ okum afɔdeɛ, na ɔhene
+        ne ɔman no nyinaa dwiraa Nyankopɔn fie no ho.
+      sbs: 0.7134
+      gen_sec: 11.43
+      ref_sec: 10.42
+      cer: 0.0526
+      wer: 0.28
+    bible_00038:
+      source: bible
+      text: 'Na ɔsɔfoɔ no kaa sɛ: Monnku no wɔ AWURADE fie.'
+      sbs: 0.7036
+      gen_sec: 3.58
+      ref_sec: 3.26
+      cer: 0.0286
+      wer: 0.1
+    bible_00039:
+      source: bible
+      text: Yefta bisaa wɔn sɛ, “Ɛnyɛ mo na motane me, pamoo me firii mʼagya fie no?
+      sbs: 0.7722
+      gen_sec: 5.38
+      ref_sec: 5.0
+      cer: 0.0926
+      wer: 0.3333
+    finance_00000:
+      source: finance
+      text: Nsu kɔm de me
+      sbs: 0.6279
+      gen_sec: 1.02
+      ref_sec: 4.79
+      cer: 0.2
+      wer: 0.5
+    finance_00001:
+      source: finance
+      text: Wo pɛsɛ wo yɛ deɛn ɛnɛ
+      sbs: 0.6143
+      gen_sec: 1.62
+      ref_sec: 2.91
+      cer: 0.2941
+      wer: 0.6667
+    finance_00002:
+      source: finance
+      text: Awi no rehwehwɛ ahu
+      sbs: 0.5678
+      gen_sec: 1.54
+      ref_sec: 2.9
+      cer: 0.75
+      wer: 1.0
+    finance_00003:
+      source: finance
+      text: Wɔ nnwomkorɔ kuo bi mu
+      sbs: 0.6232
+      gen_sec: 1.71
+      ref_sec: 5.36
+      cer: 0.1667
+      wer: 0.4
+    finance_00004:
+      source: finance
+      text: Nante yie
+      sbs: 0.6384
+      gen_sec: 1.02
+      ref_sec: 2.32
+      cer: 1.25
+      wer: 1.5
+    finance_00005:
+      source: finance
+      text: Te so ma me
+      sbs: 0.648
+      gen_sec: 1.02
+      ref_sec: 5.13
+      cer: 0.875
+      wer: 1.0
+    finance_00006:
+      source: finance
+      text: Wobɛtumi akyerɛ me hɔ
+      sbs: 0.6453
+      gen_sec: 1.71
+      ref_sec: 5.21
+      cer: 0.6667
+      wer: 1.0
+    finance_00008:
+      source: finance
+      text: Nokware di etuo
+      sbs: 0.5963
+      gen_sec: 1.28
+      ref_sec: 2.16
+      cer: 0.3077
+      wer: 1.0
+    finance_00009:
+      source: finance
+      text: Maa wɔn ho yɛɛ huam
+      sbs: 0.5469
+      gen_sec: 1.45
+      ref_sec: 3.64
+      cer: 0.8667
+      wer: 1.2
+    finance_00011:
+      source: finance
+      text: Nnipa yɛ bad (informal) / Nnipa nnyɛ (formal)
+      sbs: 0.6107
+      gen_sec: 3.75
+      ref_sec: 3.34
+      cer: 0.2424
+      wer: 0.4286
+    finance_00012:
+      source: finance
+      text: Nnipa yɛ bad (informal) / Nnipa nnyɛ (formal)
+      sbs: 0.615
+      gen_sec: 3.75
+      ref_sec: 2.3
+      cer: 0.2424
+      wer: 0.4286
+    finance_00013:
+      source: finance
+      text: Kosɛ, manhyɛ da
+      sbs: 0.6537
+      gen_sec: 1.28
+      ref_sec: 2.58
+      cer: 0.5
+      wer: 1.0
+    finance_00014:
+      source: finance
+      text: Woforo dua pa a na yɛ pia wo
+      sbs: 0.6217
+      gen_sec: 2.05
+      ref_sec: 4.02
+      cer: 0.4762
+      wer: 0.75
+    finance_00015:
+      source: finance
+      text: Wote borɔfo
+      sbs: 0.6589
+      gen_sec: 1.02
+      ref_sec: 2.41
+      cer: 0.6
+      wer: 2.0
+    finance_00016:
+      source: finance
+      text: Neho ayɛ fi  paa
+      sbs: 0.6346
+      gen_sec: 1.11
+      ref_sec: 2.55
+      cer: 0.1667
+      wer: 0.75
+    finance_00017:
+      source: finance
+      text: Me ho yɛ paa
+      sbs: 0.6476
+      gen_sec: 1.02
+      ref_sec: 2.68
+      cer: 0.5556
+      wer: 1.0
+    finance_00018:
+      source: finance
+      text: Ko buu no
+      sbs: 0.6257
+      gen_sec: 1.02
+      ref_sec: 4.67
+      cer: 1.1429
+      wer: 1.0
+    finance_00019:
+      source: finance
+      text: Mefri Ghana
+      sbs: 0.5846
+      gen_sec: 1.02
+      ref_sec: 3.72
+      cer: 0.6
+      wer: 1.0
+    finance_00020:
+      source: finance
+      text: Me ho yɛ pa ara
+      sbs: 0.6388
+      gen_sec: 1.02
+      ref_sec: 1.6
+      cer: 0.3636
+      wer: 0.4
+    finance_00021:
+      source: finance
+      text: Na biribiara dwoi
+      sbs: 0.5908
+      gen_sec: 1.37
+      ref_sec: 4.19
+      cer: 0.0
+      wer: 0.0
+    finance_00022:
+      source: finance
+      text: Ɔmee ne Ɛfeɛ
+      sbs: 0.6254
+      gen_sec: 1.02
+      ref_sec: 2.78
+      cer: 0.4
+      wer: 0.6667
+    finance_00023:
+      source: finance
+      text: Me nsa aka
+      sbs: 0.6574
+      gen_sec: 1.02
+      ref_sec: 1.74
+      cer: 0.75
+      wer: 1.0
+    finance_00027:
+      source: finance
+      text: Hello good morning. Mepaa’kyew mɛ tɔ credit (Maakye mepaa’kyew mɛ tɔ credit)
+      sbs: 0.6337
+      gen_sec: 6.23
+      ref_sec: 4.3
+      cer: 0.2833
+      wer: 0.9167
+    finance_00029:
+      source: finance
+      text: Nti ɔtɔɔ afe fa bi
+      sbs: 0.6575
+      gen_sec: 1.37
+      ref_sec: 4.08
+      cer: 0.2857
+      wer: 1.0
+    finance_00030:
+      source: finance
+      text: Akwadaa wei
+      sbs: 0.6525
+      gen_sec: 1.02
+      ref_sec: 3.8
+      cer: 0.0
+      wer: 0.0
+    finance_00031:
+      source: finance
+      text: Me sika no aka sɛn
+      sbs: 0.5974
+      gen_sec: 1.37
+      ref_sec: 4.06
+      cer: 0.1429
+      wer: 0.2
+    finance_00032:
+      source: finance
+      text: Apoobɔ nnyɛ
+      sbs: 0.6405
+      gen_sec: 1.02
+      ref_sec: 3.48
+      cer: 0.0
+      wer: 0.0
+    finance_00034:
+      source: finance
+      text: Pia no bio
+      sbs: 0.5771
+      gen_sec: 1.02
+      ref_sec: 1.66
+      cer: 0.875
+      wer: 1.3333
+    finance_00035:
+      source: finance
+      text: Me sika no aka sɛn
+      sbs: 0.5796
+      gen_sec: 1.37
+      ref_sec: 5.39
+      cer: 0.1429
+      wer: 0.2
+    finance_00036:
+      source: finance
+      text: Yɛbehyia biom
+      sbs: 0.6406
+      gen_sec: 1.11
+      ref_sec: 5.55
+      cer: 0.5833
+      wer: 2.0
+    finance_00037:
+      source: finance
+      text: Hwɛ soro
+      sbs: 0.6164
+      gen_sec: 1.02
+      ref_sec: 2.34
+      cer: 0.7143
+      wer: 0.5
+    finance_00038:
+      source: finance
+      text: Hyɛɛ n'anim teɛ
+      sbs: 0.5941
+      gen_sec: 1.11
+      ref_sec: 3.02
+      cer: 0.6667
+      wer: 1.0
+    finance_00039:
+      source: finance
+      text: Na biribiara dwoi
+      sbs: 0.636
+      gen_sec: 1.37
+      ref_sec: 1.88
+      cer: 0.0
+      wer: 0.0
+    finance_00040:
+      source: finance
+      text: Yoo medaase
+      sbs: 0.5869
+      gen_sec: 1.02
+      ref_sec: 3.43
+      cer: 0.0
+      wer: 0.0
+    finance_00041:
+      source: finance
+      text: Nnipa yɛ bad (informal) / Nnipa nnyɛ (formal)
+      sbs: 0.6266
+      gen_sec: 3.75
+      ref_sec: 2.46
+      cer: 0.2424
+      wer: 0.4286
+    finance_00042:
+      source: finance
+      text: Kɔɔ dua bi akyi
+      sbs: 0.6254
+      gen_sec: 1.11
+      ref_sec: 4.12
+      cer: 0.25
+      wer: 1.0
+    finance_00044:
+      source: finance
+      text: Anwa a aguu asuafo no ho
+      sbs: 0.6871
+      gen_sec: 1.88
+      ref_sec: 4.43
+      cer: 0.1053
+      wer: 0.3333
+    finance_00047:
+      source: finance
+      text: Kɔɔ dua bi akyi
+      sbs: 0.6195
+      gen_sec: 1.11
+      ref_sec: 1.79
+      cer: 0.25
+      wer: 1.0
+    finance_00048:
+      source: finance
+      text: Mepawokyɛw aane
+      sbs: 0.6037
+      gen_sec: 1.37
+      ref_sec: 2.89
+      cer: 0.1429
+      wer: 0.5
+    finance_00049:
+      source: finance
+      text: Esian sɛ
+      sbs: 0.5914
+      gen_sec: 1.02
+      ref_sec: 3.48
+      cer: 0.5714
+      wer: 1.5
+    lds_00000:
+      source: lds
+      text: Ɔtoo nsa frɛɛ nkorɔfoɔ no sɛ wɔmmra mma wɔmfa wɔn nsa nhyɛ Ne nkyɛn na wɔnte nnadewa a ɛwɔ
+        Ne nsa ne Ne nan mu no ntwerɛwee nka.
+      sbs: 0.6286
+      gen_sec: 10.07
+      ref_sec: 7.54
+      cer: 0.09
+      wer: 0.25
+    lds_00001:
+      source: lds
+      text: na wɔnim [Warden Duffy] pa ara ɛnam ne mmɔdemmɔ sɛ ɔboa nnipa a wɔwɔ n’afiase hɔ ma wɔnya
+        asetena pa.
+      sbs: 0.6188
+      gen_sec: 8.02
+      ref_sec: 4.3
+      cer: 0.1923
+      wer: 0.55
+    lds_00002:
+      source: lds
+      text: nneɛma a yɛyi,
+      sbs: 0.6172
+      gen_sec: 1.11
+      ref_sec: 5.06
+      cer: 0.3636
+      wer: 1.3333
+    lds_00003:
+      source: lds
+      text: na ɛtɔ da a ɔdi awerɛhoɔ nya atenka sɛ ɔyɛ ankonam a ɔnni asɛmmisa,
+      sbs: 0.6887
+      gen_sec: 5.29
+      ref_sec: 4.22
+      cer: 0.1509
+      wer: 0.2857
+    lds_00004:
+      source: lds
+      text: sɛ yɛhyɛn ɔkwan teateaa ne teateaa a ɛde yɛn bɛsan akɔ Ɔsoro Agya anim no a,
+      sbs: 0.6429
+      gen_sec: 5.89
+      ref_sec: 5.14
+      cer: 0.1333
+      wer: 0.5
+    lds_00005:
+      source: lds
+      text: ɔsom wɔ Asɔre no mu sɛ pɛɛwa agyinatukuo kɛseɛ ba.
+      sbs: 0.6616
+      gen_sec: 3.93
+      ref_sec: 4.02
+      cer: 0.1
+      wer: 0.2
+    lds_00006:
+      source: lds
+      text: M’agya nam Twerɛsɛm ne atenka hodoɔ a ɔkaa ho asɛm no so boaa me ma mede gyidie fapem a ɛyɛ
+        den sii hɔ wɔ Awurade Yesu Kristo mu.
+      sbs: 0.6289
+      gen_sec: 9.9
+      ref_sec: 8.48
+      cer: 0.03
+      wer: 0.2143
+    lds_00007:
+      source: lds
+      text: Amansan SodifoɔAduɔson a wɔdidi soɔ yi wɔbɛma wɔn agye wɔn ahome na wɔama wɔn emeritus dibea,
+      sbs: 0.69
+      gen_sec: 7.59
+      ref_sec: 6.86
+      cer: 0.026
+      wer: 0.1875
+    lds_00008:
+      source: lds
+      text: 'Nsakraeɛ a aba Mpɔtam Aduɔsonfoɔ mu Wɔgyee Mpɔtam Aduɔsonfoɔ a wɔdidi soɔ yi too mu wɔ akannifoɔ
+        nhyiamu bi a wɔyɛeɛ sɛ amansan nhyiamu fa bi:'
+      sbs: 0.6017
+      gen_sec: 11.43
+      ref_sec: 5.16
+      cer: 0.1034
+      wer: 0.5
+    lds_00009:
+      source: lds
+      text: yɛsua no pefee sɛ yɛn Soro Agya no akyerɛ saa nkyerɛkyerɛ a ɛsomboɔ yi fiti mfitiaseɛ ankasa.
+      sbs: 0.5881
+      gen_sec: 7.51
+      ref_sec: 3.34
+      cer: 0.0658
+      wer: 0.3529
+    lds_00010:
+      source: lds
+      text: na saa kuo yi hyiaa nsɛmdennden pii.
+      sbs: 0.6227
+      gen_sec: 2.9
+      ref_sec: 6.28
+      cer: 0.2759
+      wer: 0.5714
+    lds_00011:
+      source: lds
+      text: mede m’ahoɔden nyinaa pia sɛdeɛ ɛbɛyɛ a mframa rensa wɔ sankuo no mu.
+      sbs: 0.6788
+      gen_sec: 5.55
+      ref_sec: 4.84
+      cer: 0.0545
+      wer: 0.4615
+    lds_00012:
+      source: lds
+      text: a ɔhyɛ atadeɛ a ɔde da na ɔkuta Mormon Nwoma Abasɛm.
+      sbs: 0.6954
+      gen_sec: 4.1
+      ref_sec: 3.74
+      cer: 0.1707
+      wer: 0.5455
+    lds_00013:
+      source: lds
+      text: Berɛ a na ɔrekɔ sukuu wɔ asraafoɔ atenaeɛ bi wɔ Germany no,
+      sbs: 0.5796
+      gen_sec: 4.69
+      ref_sec: 3.46
+      cer: 0.0851
+      wer: 0.25
+    lds_00014:
+      source: lds
+      text: baabi a mekae yie a na mekɔ Yesu Kristo Asɔre no sakramɛmte nhyiamu berɛ a na meyɛ abɔfra
+        no.
+      sbs: 0.6369
+      gen_sec: 7.42
+      ref_sec: 6.12
+      cer: 0.0676
+      wer: 0.4211
+    lds_00015:
+      source: lds
+      text: na yɛbɔ mmɔden sɛ yɛbɛyɛ Yesu Kristo asuafoɔ mmapa a,
+      sbs: 0.5979
+      gen_sec: 4.35
+      ref_sec: 4.52
+      cer: 0.0465
+      wer: 0.2
+    lds_00016:
+      source: lds
+      text: tete ne ɛnnɛ yi deɛ no nyinaa.
+      sbs: 0.6798
+      gen_sec: 2.3
+      ref_sec: 3.64
+      cer: 0.2174
+      wer: 0.7143
+    lds_00017:
+      source: lds
+      text: na saa onuabaa yi nyaa mfeɛ  kaa ho tenaa ase sɛ okunafoɔ.
+      sbs: 0.6573
+      gen_sec: 4.52
+      ref_sec: 3.96
+      cer: 0.0444
+      wer: 0.1667
+    lds_00018:
+      source: lds
+      text: Ɔkyerɛɛ mu sɛ na ɔnnya nhyira a na ɔrehwɛ anim afiri asɔre a asane aba bio no mu.
+      sbs: 0.6965
+      gen_sec: 6.31
+      ref_sec: 5.94
+      cer: 0.0476
+      wer: 0.3333
+    lds_00019:
+      source: lds
+      text: wobɛyɛ dɛn atumi ada wɔ berɛ a ɛte sɛɛ mu?
+      sbs: 0.6581
+      gen_sec: 3.24
+      ref_sec: 3.22
+      cer: 0.0938
+      wer: 0.4
+    lds_00020:
+      source: lds
+      text: yɛrebɔ mmɔden—ɛwɔ mu sɛ yɛnwie pɛ yɛ—sɛ yɛbɛyɛ nnamfonom,
+      sbs: 0.6707
+      gen_sec: 4.78
+      ref_sec: 4.26
+      cer: 0.3696
+      wer: 1.4444
+    lds_00022:
+      source: lds
+      text: “Mese mo sɛ monyɛ baako;
+      sbs: 0.7088
+      gen_sec: 1.88
+      ref_sec: 3.0
+      cer: 0.0556
+      wer: 0.2
+    lds_00023:
+      source: lds
+      text: yɛhwehwɛ mmoa firi fibea afoforɔ sɛ ɛbɛboa yɛn.
+      sbs: 0.5999
+      gen_sec: 3.93
+      ref_sec: 3.12
+      cer: 0.2308
+      wer: 0.875
+    lds_00024:
+      source: lds
+      text: na ɛfata ahene mu Hene ne Asomdwoeɛ Hene no.
+      sbs: 0.6657
+      gen_sec: 3.41
+      ref_sec: 3.58
+      cer: 0.0571
+      wer: 0.2222
+    lds_00025:
+      source: lds
+      text: nnipa bɛtumi asua Yesu Kristo ho asɛm wɔ honhom wiase.
+      sbs: 0.5724
+      gen_sec: 4.44
+      ref_sec: 3.06
+      cer: 0.0909
+      wer: 0.3
+    lds_00026:
+      source: lds
+      text: Na wakɔsra honhom wiase no na wahyehyɛ asɛmpa no asɛnka wɔ hɔ.
+      sbs: 0.6646
+      gen_sec: 5.03
+      ref_sec: 4.26
+      cer: 0.1
+      wer: 0.25
+    lds_00027:
+      source: lds
+      text: yɛn abrabɔ bɛyɛ yɛn Gyefoɔ ne Ne din ho adanseɛ a ɛte aseɛ.
+      sbs: 0.6278
+      gen_sec: 4.52
+      ref_sec: 5.0
+      cer: 0.0217
+      wer: 0.0769
+    lds_00029:
+      source: lds
+      text: Moroni hyɛ bɔ sɛ sɛ yɛkenkan Mormon Nwoma no na afei yɛbisa Onyankopɔn Daa Agya no,
+      sbs: 0.6303
+      gen_sec: 6.57
+      ref_sec: 4.6
+      cer: 0.1642
+      wer: 0.5
+    lds_00030:
+      source: lds
+      text: Nkrasɛm biara nni hɔ a anidasoɔ ahyɛ mu ma.
+      sbs: 0.6025
+      gen_sec: 3.41
+      ref_sec: 3.72
+      cer: 0.0294
+      wer: 0.3333
+    lds_00031:
+      source: lds
+      text: ɛhia sɛ meboa bishop no.
+      sbs: 0.6804
+      gen_sec: 1.96
+      ref_sec: 4.84
+      cer: 0.0
+      wer: 0.0
+    lds_00032:
+      source: lds
+      text: Ɔmaa kwan sɛ yɛbɛgyai aweretɔ akoma no.
+      sbs: 0.6579
+      gen_sec: 3.16
+      ref_sec: 3.66
+      cer: 0.2812
+      wer: 0.5714
+    lds_00033:
+      source: lds
+      text: Yɛyɛ nea yɛahu ne nea yɛate nyinaa ho twerɛtohɔ.
+      sbs: 0.6521
+      gen_sec: 4.01
+      ref_sec: 8.44
+      cer: 0.1026
+      wer: 0.7778
+    lds_00034:
+      source: lds
+      text: Wɔ m’ankasa m’adwumayɛ suahunu ne Asɔre som adwuma mu no,
+      sbs: 0.6568
+      gen_sec: 4.35
+      ref_sec: 3.94
+      cer: 0.3778
+      wer: 0.8
+    lds_00035:
+      source: lds
+      text: Mo nsiyɛ ne honhom mu ahoɔden no yɛ me nwanwa wɔ yareɛ,
+      sbs: 0.6267
+      gen_sec: 4.35
+      ref_sec: 5.36
+      cer: 0.1395
+      wer: 0.3333
+    lds_00036:
+      source: lds
+      text: ne mmɔdemmɔ a wɔde ma honhom ne honam mu nneɛma a ɛhia ma yɛn ankasa ne abusua asetena.
+      sbs: 0.5931
+      gen_sec: 6.91
+      ref_sec: 6.4
+      cer: 0.058
+      wer: 0.3333
+    lds_00037:
+      source: lds
+      text: '– yɛkenkan sɛ:'
+      sbs: 0.5692
+      gen_sec: 1.11
+      ref_sec: 3.28
+      cer: 0.4
+      wer: 1.5
+    lds_00038:
+      source: lds
+      text: na mene wɔn ntam atenka nyɛɛ te sɛ deɛ ɛteɛ seesei da.
+      sbs: 0.6614
+      gen_sec: 4.18
+      ref_sec: 3.92
+      cer: 0.2619
+      wer: 0.6667
+    lds_00039:
+      source: lds
+      text: na ama yɛn mu biara atu anammɔn sɛnea Asuafoɔ no yɛeɛ no.
+      sbs: 0.6551
+      gen_sec: 4.52
+      ref_sec: 3.94
+      cer: 0.0222
+      wer: 0.1667
+    lds_00040:
+      source: lds
+      text: Yɛde anidie ma sɛ yɛwɔ asase so berɛ a Asɔre no renyini wɔ dodoɔyɛ mu ne nkɛntɛnsoɔ mu,
+      sbs: 0.6505
+      gen_sec: 6.91
+      ref_sec: 5.76
+      cer: 0.1594
+      wer: 0.3333
+    lds_00041:
+      source: lds
+      text: na mehunu mpoma bi a wɔde ahwehwɛ ayɛ a ɛyɛ nwanwa,
+      sbs: 0.6326
+      gen_sec: 4.01
+      ref_sec: 4.34
+      cer: 0.075
+      wer: 0.1818
+    unicef_00000:
+      source: unicef
+      text: Awia pa auntie. Ayɛ den kakra, sɛ mɛka nokware a. Mete nka sɛ biribiara reboaboa ano wɔ me
+        so ara kwa. Ɛyɛ me wofa.
+      sbs: 0.6672
+      gen_sec: 9.05
+      ref_sec: 10.82
+      cer: 0.1379
+      wer: 0.4583
+    unicef_00001:
+      source: unicef
+      text: Ampa, mmarima no bi wɔ hɔ a, wɔmmɔ nne mu, ɛreyɛ dũ wɔ wɔn ho so, ɛreyɛ den. Nanso mmaa no
+        deɛ, wɔmmɔ ayɛ dinn ase sɛ yɛde mmra ahyɛ wɔn so. Me maame ɛtaa ka sɛ me nua baa no deɛ ne ho
+        dwo, ɔtena fie, ɔboa aduane yɛ, ɔnkasa entia mpanimfoɔ.
+      sbs: 0.6523
+      gen_sec: 18.68
+      ref_sec: 26.24
+      cer: 0.1299
+      wer: 0.3962
+    unicef_00002:
+      source: unicef
+      text: Mmerɛ bi ah menante afa me sukuu dan na mefa mesukuu dwumadeɛ ɛma no, ɔka nnoɔma fa me nnipadua
+        ho. Na ɔka nnoɔma ah ɛmma meho ntɔ me. Teseɛ senea me yɛ obaa ntemtemso. N menfa madwen ɛmba ne
+        so ɛkyɛn me sukuu nkrata.
+      sbs: 0.589
+      gen_sec: 17.23
+      ref_sec: 37.18
+      cer: 0.1657
+      wer: 0.6591
+    unicef_00003:
+      source: unicef
+      text: Nanso ɔseree na ɔse aduane noa yɛ mmaa adwuma. Na me sɛe mmerɛ wɔ agyaade a, yennhu me sɛ
+        meyɛ abranteɛ a mewɔ ahoɔden anaa tumi wɔ mpɔtam ha. Menim sɛ ɛnyɛ nokorɛ. Hwɛ ahenfo akukudam
+        a ɛwɔ Nkran anaa mmaranteɛ a wɔnoa aduane ɛtɔn.
+      sbs: 0.6679
+      gen_sec: 18.6
+      ref_sec: 25.02
+      cer: 0.1038
+      wer: 0.4222
+    unicef_00004:
+      source: unicef
+      text: Yɛbɛtumi akasa afa sɛnea yɛbɛsi aka daabi? Ɛtɔ da a ɛyɛ a na ɛyɛ den esiane sɛ mmarima no,
+        ɛyɛ a na wɔmpenee. Ɛyɛ me dɛ sɛ ɛnyɛ me pɛ na meredwene saa nneɛma yi ho. Na wɔtwe a ɛreba yi
+        mɛsan aba bio.
+      sbs: 0.6492
+      gen_sec: 15.61
+      ref_sec: 21.38
+      cer: 0.0927
+      wer: 0.4091
+    unicef_00005:
+      source: unicef
+      text: Me ho ato me asiane sɛ yɛredi adeɛ yi ho nkɔmmɔ. Dɛn na ɛwɔ sɛ meka sɛ obi pɛ sɛ ɔhyɛ me so
+        ma meyɛ adeɛ a mempɛ sɛ meyɛ? Sɛ mpo wanyin sene me a. Ɛyɛ a na nkurɔfo kasa sɛ obi ka sɛ daabi
+        a, ɛmpa nkyerɛ sɛ daabi. Medaase, wɔfa. Yebetumi ahyia bio ɛbɛnada?
+      sbs: 0.6578
+      gen_sec: 19.88
+      ref_sec: 28.61
+      cer: 0.1047
+      wer: 0.2982
+    unicef_00006:
+      source: unicef
+      text: Wɔte nka sɛ wayɛ ankonam na osuro sɛ wɔbɛba sukuu mpo. Akwan bɛn na wɔbɛfaso "Aunty"? Daabi
+        a wɔbɛka no, ɛnyɛ mmerew berɛ nyinaa, berɛ a obiara reyɛ adeɛ a ɛnteɛ. Me pɛsɛ me yɛ Ɔkyerɛkyerɛfoɔ
+        dabi, nti mɛ bɔ mmɔden sɛ metwi me ho afiri ɔhaw mu, mɛ bɔ mmɔden sɛ mɛkɔso de madwene asi biribi
+        so.
+      sbs: 0.6691
+      gen_sec: 23.29
+      ref_sec: 24.32
+      cer: 0.0841
+      wer: 0.4138
+    unicef_00007:
+      source: unicef
+      text: Sɛ wɔantie ntɛm mpo a, na woreyɛ ahokokwaw a wode bɛbɔ wo ho ban no ho adwuma. Ɛno yɛ asetra
+        mu nimdeɛ a wotumi de kɔ baabi foforo. Mansusuw ho saa da.
+      sbs: 0.6477
+      gen_sec: 11.78
+      ref_sec: 12.99
+      cer: 0.1379
+      wer: 0.4375
+    unicef_00008:
+      source: unicef
+      text: Mendwene ho sɛ kuro no nyinaa bɛsesa anadwo baako mu. Nanso metumi de m'abusua hyɛ aseɛ, Mepɛ
+        sɛ mehunu sɛ wodwene sɛ metumi ayɛ ade kɛseɛ.anaa. Na ɛtɔ mmerɛ bi a, saa ɔhaw yi ayɛ sɛnea ɛso
+        sen nnipa baakofoɔ. ɛna ɛnonte ɛmma no nyɛ ankonam.
+      sbs: 0.5808
+      gen_sec: 19.19
+      ref_sec: 36.93
+      cer: 0.0904
+      wer: 0.3261
+    unicef_00009:
+      source: unicef
+      text: Ɔ susuw sɛ, sɛ mmeawa de wɔn ho dodow a, mpontam hɔ foɔ bɛ hwe ase. Me susuw sɛ wɔgyedi sɛ,
+        ɛsɛsɛ nneɛma yɛ saa efirisɛ na ɛte saa berɛ nyinaa. Wɔde atetesɛm di dwuma sɛkyerɛn de ma nkurɔfo
+        yɛ komm. Yɛde hwɛ a, yɛhwe so na afi ase.
+      sbs: 0.631
+      gen_sec: 18.17
+      ref_sec: 20.99
+      cer: 0.0857
+      wer: 0.4694
+    unicef_00010:
+      source: unicef
+      text: Sɛ me ka daabi a, ɔbɛka sɛ me mmu adeɛ. Na sɛ me ka sɛ mesuro nso ɛ? Me mpɛ sɛ me yam bɛhyɛ
+        me o. Me mpɛ sɛ mede me nkwa bɛto asiane mu. Wobetumi aboa me ma me ne no akasa anaa? Me maame
+        deɛ, ɔwɔ mfinimfini.
+      sbs: 0.6489
+      gen_sec: 15.95
+      ref_sec: 33.15
+      cer: 0.1391
+      wer: 0.5918
+    unicef_00011:
+      source: unicef
+      text: Dabi, misusuw sɛ ɛyɛ soronko ma mmeawa no. Nnipa pii susuw sɛ ɛho nhia sɛ mmeawa de wɔn ani
+        si so kɛse saa efisɛ wɔbɛware kɛkɛ na wɔafi abusua ase. Ɛnyɛ ankasa. Sɛ abeawa bi ka sɛ ɔpɛ sɛ
+        ɔyɛ mfiridwumayɛfo a, nkurɔfo hwɛ no te sɛ nea wabɔ dam.
+      sbs: 0.6241
+      gen_sec: 19.28
+      ref_sec: 16.32
+      cer: 0.0745
+      wer: 0.38
+    unicef_00012:
+      source: unicef
+      text: Ah menom kokoo anɔpa na ebiaa banku anaa emo ewi sɛ mewɔ sika ah. Nyɛ saa, me maame yɛ adwuma
+        Nanso debiaa yɛ di deɛ yetumi tɔ. Enonoso yɛ kabohadrate, na sɛ me mogya bɛkɔ fɔm.
+      sbs: 0.5996
+      gen_sec: 13.74
+      ref_sec: 25.47
+      cer: 0.1397
+      wer: 0.6667
+    unicef_00013:
+      source: unicef
+      text: Wɔnkasa da ɛmfa yɛ fahodie so anaa sɛnea yebesi ayɛ sɛ obi tiatia so a. Asɛ makaa. Mennim
+        nsɛm a mesi ayɛ ako atia mpanimfo yi. Ɛyɛ a na ɛyɛ me sɛ ɛwɔ sɛ meso mu saa esiane sɛ me sua na
+        mesan nso yɛ ɔbaa no nti.
+      sbs: 0.664
+      gen_sec: 16.38
+      ref_sec: 23.62
+      cer: 0.1187
+      wer: 0.4583
+    unicef_00014:
+      source: unicef
+      text: Me maame dabiara ɔyɛ adwuma nanso onni tumi wɔ efie no sika. Na sɛ ɔhyɛ no sɛɔnkɔ ware obi
+        senea ɛbɛyɛ ah ɔbɛfirir fie hɔ nsoeɛ.Me maame ɛntaa nkasas nanso menim sɛ ɔta Adwoa akhyi ɛwɔ
+        ahintakwan so
+      sbs: 0.58
+      gen_sec: 15.87
+      ref_sec: 23.17
+      cer: 0.1572
+      wer: 0.4737
+    unicef_00015:
+      source: unicef
+      text: So wote nka sɛ wo ho tɔ wo wɔ sɛnea yɛreyɛ nneɛma de besi nnɛ no ho? Yiw, meyɛ saa. Ɛte nka
+        sɛ ɛyɛ soronko wɔ sukuu ho. Papa. Na kae sɛ, sɛ biribi wɔ hɔ a ɛte sɛ nea ɛyɛ den dodo anaasɛ
+        mede nsɛmfua a w’ani nnye ho di dwuma a.
+      sbs: 0.6563
+      gen_sec: 17.23
+      ref_sec: 15.87
+      cer: 0.1145
+      wer: 0.4717
+    unicef_00016:
+      source: unicef
+      text: Ɛyɛ me yaw sɛ mate sɛ wo ho atɔ wo. Wopɛ sɛ woka nea ɛrekɔ so wɔ sukuu mu no ho nsɛm pii kyerɛ
+        me? Ɛhyɛɛ aseɛ dapɛn a atwam no berɛ a yɛn adwene nhyia wɔ yɛn bɔɔlbɔ akansi no mu.
+      sbs: 0.6292
+      gen_sec: 13.57
+      ref_sec: 14.27
+      cer: 0.097
+      wer: 0.2857
+    unicef_00017:
+      source: unicef
+      text: Ɛyɛ a na ɛyɛ m’ahi sɛ nneɛma yɛde ma me nua barima no gye sɛ mako ansa na manya saa nneɛma
+        no bi. Saa na ɛte wɔ baabiara. Mpo nwom a yɛtie no, ɛyɛ a na ɛka sɛ mmarima wɔ sika, ɛna mmaa
+        deɛ nea wɔyɛ ne sɛ wɔretwɛn sɛ barima bɛhwɛ ne so.
+      sbs: 0.6424
+      gen_sec: 18.08
+      ref_sec: 25.02
+      cer: 0.0852
+      wer: 0.2778
+    unicef_00018:
+      source: unicef
+      text: Obi a obu ne ho
+      sbs: 0.6742
+      gen_sec: 1.02
+      ref_sec: 3.78
+      cer: 0.5455
+      wer: 1.0
+    unicef_00019:
+      source: unicef
+      text: Menhwɛ kwan sɛ akura no nyinaa bɛ sakra anadwo baako pɛ, nanso metumi afi m'ankasa m'abusua
+        ase. Me pɛsɛ me hunu kɛkɛ sɛ wo susu sɛ metumi ama nsakraɛ aba. Ɛtɔ mmreɛ bi a ɔhaw ahorow no
+        te nka sɛ ɛyɛ kɛse dodo ma onipa baako. Ɛno ma me te nka sɛ meyɛ ankonam kɛseɛ wɔ eyi mu.
+      sbs: 0.6399
+      gen_sec: 21.41
+      ref_sec: 23.36
+      cer: 0.0664
+      wer: 0.3276
+    unicef_00020:
+      source: unicef
+      text: Mehusɛ mehwɛ mma ɛkwan sononko so.
+      sbs: 0.553
+      gen_sec: 2.82
+      ref_sec: 7.62
+      cer: 0.1786
+      wer: 1.0
+    unicef_00021:
+      source: unicef
+      text: Ɛno ma mete nka sɛ manya tumi kakra, misusuw sɛ. Nea ehia ara ne sɛ mehu nneɛma a wɔde bɛkɔ
+        no. Na sɛ mekɔ na onipa a ɔwɔ pon no so no yɛ obi a onim m’abusua nso ɛ. So ɛno bɛyɛ te sɛ nhyehyɛe
+        a eye sen saa?
+      sbs: 0.6262
+      gen_sec: 15.78
+      ref_sec: 13.63
+      cer: 0.1053
+      wer: 0.2653
+    unicef_00022:
+      source: unicef
+      text: Mepɛ sɛ meboa no. Nanso misuro sɛ sɛ meka a, mmarima no bedi m’akyi anaasɛ wɔbɛbɔ me din.
+        Dɛn na metumi ayɛ ankasa? Sɛ mede toto wɔn ho a, mete nka sɛ mesua koraa. Dabi, auntie. Dɛn ne
+        ɛno? So ɛyɛ mpanyimfo nkutoo dea? Nnɔmba a wontua hwee?
+      sbs: 0.6603
+      gen_sec: 19.19
+      ref_sec: 20.29
+      cer: 0.0939
+      wer: 0.3333
+    unicef_00023:
+      source: unicef
+      text: Na mehu no sɛ mekakyerɛ mawofoɔ ah, wɔbɛ fa me fon efiri menhyɛn koraa. Yoo meetie. Na deɛnna
+        ɛsɛsɛ mesesa ɛkwan ah me fa so ɛde me social media yɛ edwuma. Na mmom menim sɛ mayɛ saa, nanso
+        ɛtɔ mmerɛ bi ahh, nkurɔfoɔ ah mennim ɔmo daso ɛma me nkra.
+      sbs: 0.5868
+      gen_sec: 19.62
+      ref_sec: 30.34
+      cer: 0.1518
+      wer: 0.58
+    unicef_00024:
+      source: unicef
+      text: Ɔkɔɔ so gyinaa hɔ efisɛ na mmarimaa no redi fɛw sɛ ɔyɛ tomboy, sɛ ɔpɛ sɛ ɔyɛ wimhyɛnkafo.
+        Ɛma wɔn adwuma no yɛ den kɛse.
+      sbs: 0.6361
+      gen_sec: 9.3
+      ref_sec: 13.38
+      cer: 0.1398
+      wer: 0.44
+    unicef_00025:
+      source: unicef
+      text: Te sɛ, wɔkyekye mmarima maa ade biako na wɔkyekye mmea ma ade foforo. Minnye nni sɛ mete nsonsonoe
+        no ase, Auntie. So ɛnyɛ ade koro? Yoo. Enti ɛno ne me nna. Na wɔn a aka no nso ɛ?
+      sbs: 0.6749
+      gen_sec: 14.17
+      ref_sec: 16.0
+      cer: 0.1704
+      wer: 0.5
+    unicef_00026:
+      source: unicef
+      text: Maakye ante, biribiara da din. Esiane sɛ dwadie brɛ no ɛrehyɛ ase aba nti nneɛma ayɛ bututbutu
+        wɔ fie. Mayɛ ante.
+      sbs: 0.6542
+      gen_sec: 9.05
+      ref_sec: 13.12
+      cer: 0.1685
+      wer: 0.619
+    unicef_00027:
+      source: unicef
+      text: Menhwɛ kwan sɛ akuraa no nyinaa bɛsesa anadwo biako, nanso metumi afi m’ankasa m’abusua ase.
+        Mepɛ sɛ mihu kɛkɛ sɛ wususuw sɛ metumi ama nsakrae aba ankasa anaa. Ɛtɔ mmere bi a, ɔhaw no te
+        nka sɛ ɛyɛ kɛse dodo ma onipa biako. Ɛno ma mete nka sɛ meyɛ ankonam kɛse wɔ eyi mu.
+      sbs: 0.6345
+      gen_sec: 21.5
+      ref_sec: 17.22
+      cer: 0.0853
+      wer: 0.3333
+    unicef_00028:
+      source: unicef
+      text: Na ɛfa ohia, mmarima ne mmaa ntam ah ɛnyɛ pɛ, ɛne kuro nhyɛsoɔ. Na ɛnyɛ biribi ah ɛsɛ sɛ wonkoaa
+        ehyia. Na whan po na mede no bɛkasa.  Sɛ me kakyerɛ obiara kɛkɛ ah, omo bɛkase ɛsɛsɛ mebu m'awofoɔ.
+        Na yɛwɔ nnoɔma ne nnipa ah wɔbɛtumi aboa.
+      sbs: 0.6089
+      gen_sec: 19.02
+      ref_sec: 31.87
+      cer: 0.1429
+      wer: 0.4681
+    unicef_00029:
+      source: unicef
+      text: Ɛtɔ da bi a ɔhwɛ me na ɔka sɛ merebɛyɛ ababaa, na ɛsɛ sɛ misiesie me ho yiye ma bere a awiei
+        koraa no mɛware no. Ɔka hokwan a obi wɔ sɛ ɔfa mu ho asɛm.
+      sbs: 0.6277
+      gen_sec: 11.43
+      ref_sec: 12.61
+      cer: 0.0885
+      wer: 0.3056
+    unicef_00030:
+      source: unicef
+      text: Nti ɛbɛ tumi ayɛ berɛ biara mprenpren? me ho yera me sɛ ɛba berɛ a me wɔ adesua mu. So eyi
+        kyerɛ sɛ merebɛyɛ ɔbaa, so ɛkyerɛ sɛ metumi awo akokoam aprenpren, ɛno yɛ adwene a ɛyɛ me ahu,
+        Mansusu sɛ mesiesie me ho ama saa asɛdiɛ yi besi ɛnnɛ.
+      sbs: 0.5974
+      gen_sec: 19.02
+      ref_sec: 21.12
+      cer: 0.0649
+      wer: 0.26
+    unicef_00031:
+      source: unicef
+      text: Na me susuw sɛ me yare anaa sɛ m'apra wɔ me mu, m'anka nkyerɛ me maame esiane sɛ na m'ani
+        awu nti, braayɔ, ɛno na mmaewa a wɔanyinyin no frɛ no sɛ wɔn na yɛ pɛ, nanso adɛn nti na ɛba no
+        saa, sɛ ɛyɛ nsɛnkyerɛne a ɛkyerɛ sɛ biribi abubu wɔ wo mu.
+      sbs: 0.6217
+      gen_sec: 18.77
+      ref_sec: 25.34
+      cer: 0.1538
+      wer: 0.4074
+    unicef_00032:
+      source: unicef
+      text: Na medwen sɛ agorɔ kɛkɛ na me de na afie deɛ mahu sɛ na megyaegya meho kakra
+      sbs: 0.5291
+      gen_sec: 5.63
+      ref_sec: 36.29
+      cer: 0.15
+      wer: 0.4706
+    unicef_00033:
+      source: unicef
+      text: Obi a ɔwɔ asɛyɛde, ne nam yɛ, ɔwɔ ɔpɛ sɛ ɔbɛ sua ade, na obu nkurɔmfo, nanso ɔwɔ ɔno a ne
+        botaeɛ so. Me nyaeɛ anka nnipa pii a wɔwɔ me mpɔntam susu saa. Ɛtesɛ asɛyɛde kɛse, nanso me susu
+        sɛ me siesie me ho sɛ mebɔmmɔden. Me da wo ase auntie.
+      sbs: 0.6378
+      gen_sec: 19.02
+      ref_sec: 22.4
+      cer: 0.0884
+      wer: 0.3846
+    unicef_00034:
+      source: unicef
+      text: Wo susu sɛ me maame bɛpɛ sɛ yɛne no bɛka saa afa ho anaa? Me ho ahã me kakra, esiane sɛ me
+        ne wo bɔɔ ho nkɔmmɔ. Wei deɛ ayɛ sɛ asɛdeɛ kɛseɛ paa. Mepɛ sɛ me kɔ sukuu da biara mpo sɛ me bu
+        me nsa a.
+      sbs: 0.633
+      gen_sec: 14.93
+      ref_sec: 23.74
+      cer: 0.1389
+      wer: 0.5833
+    unicef_00035:
+      source: unicef
+      text: Wo bɛyɛ dɛn mpo ahyɛ saa nkɔmmɔbɔ yi ase, ɛte sɛ sɛnea ammamerɛ a ɛwɔ ham ma ɛyɛ den sɛ wobɛka
+        saa nneama ho asɛm pefee. Me pɛsɛ mɛyɛ adamfo pa, nanso mepɛsɛ me yɛ nnipa a wɔ ka asɛm kyerɛ
+        wɔn. Mɛyɛ dɛn aboa a mennyɛ te sɛ ɔkyerɛkyerɛfo?
+      sbs: 0.6539
+      gen_sec: 18.77
+      ref_sec: 20.29
+      cer: 0.1093
+      wer: 0.48
+    unicef_00036:
+      source: unicef
+      text: Meda wo ase wɔ wo akwankyerɛ ho. M’ani sɔ. Ɛboa sɛ wubenya baabi a wobɛba anhwehwɛ denam saa
+        nsusuwii ahorow yi so. Yɛbɛhyia dapɛn a ɛreba no, onua barima
+      sbs: 0.654
+      gen_sec: 12.37
+      ref_sec: 12.42
+      cer: 0.0992
+      wer: 0.4138
+    unicef_00037:
+      source: unicef
+      text: Me nana kaa no mperɛko na mesuro papa yie. Na metumi aka biribi akyerɛ me nana?ɛyɛ mesɛ mesua
+        kasa foforɔ ɛnnɛ, bibiara yɛ soronko sɛn nea yɛkyerɛ me. Na sɛ mekɔ fie ah deɛn mɛyɛ. Medaase
+        ɛna.
+      sbs: 0.5969
+      gen_sec: 15.61
+      ref_sec: 20.22
+      cer: 0.12
+      wer: 0.5946
+    unicef_00038:
+      source: unicef
+      text: Meda so ara reyɛ ho mfonini. Nanso ebia mede mmɔnten so akanea kakraa bi bɛka ho saa bere
+        yi. Esiane sɛ yɛkaa kasa a yɛbɛkasa wɔ yɛn nhyiam a etwa to no akyi nti, me ne mmabun kannifo
+        no kasa faa kanea a enni hɔ no ho. Mete nka sɛ mewɔ ahotoso kakra.
+      sbs: 0.5983
+      gen_sec: 19.88
+      ref_sec: 20.42
+      cer: 0.1088
+      wer: 0.4906
+    unicef_00039:
+      source: unicef
+      text: Sɛ meretenase bere a me maame ne me nnuaba de ahopere rekɔ nua aduane a, ɛte senea merefa
+        wɔn so mfasoɔ, sɛ me papa ka sɛ ɛyɛ ɔkwan pa mpo, ebia na ne bo befuw, ɔmpɛsɛ wo bɛ bisabisa no
+        nsɛm, titiriw me.
+      sbs: 0.6612
+      gen_sec: 16.12
+      ref_sec: 19.2
+      cer: 0.1161
+      wer: 0.5349
+    waxal_00000:
+      source: waxal
+      text: Nnipakuo bi a wɔɔyɛ adwuma ɛwɔ bɔɔhol bi ɛho. Abaayewa baako bi ɛkura dadeɛ a ɔdee twa paep
+        nem. Aberanteɛ baako ɛkoto hɔ a wasɔm. Ɔbaako nso ɛgyina hɔ a wasɔ ɛsoro hɔ. Nnipa ɛgyina hɔ a
+        wɔɔhwɛ. Lɔre fitaa bi ɛsi wɔn akyi.
+      sbs: 0.6735
+      gen_sec: 17.57
+      ref_sec: 21.66
+      cer: 0.1329
+      wer: 0.4091
+    waxal_00001:
+      source: waxal
+      text: Nnipa kotow kotow hɔ a wokita sofi ɛde tutu nwura no nkyɛn. Baako kura sofi kɔkɔɔ.
+      sbs: 0.6669
+      gen_sec: 6.57
+      ref_sec: 17.08
+      cer: 0.1385
+      wer: 0.5625
+    waxal_00002:
+      source: waxal
+      text: Papa baako ne nkwadaa bebree a wɔgyina wɔn nkyɛn. Nkwadaa no bi yɛ mma, na ɛbi nso yɛ mmarima.
+        Akwadaa baako te papa no nan so. Pap no hyɛ ɛkyɛ wɔ ne ti. Nkwadaa no nyinaa kura aduaba wɔ wɔn
+        nsam.
+      sbs: 0.6484
+      gen_sec: 15.52
+      ref_sec: 20.19
+      cer: 0.04
+      wer: 0.2195
+    waxal_00003:
+      source: waxal
+      text: Mmranteɛ mmiɛnsa na wɔgyina hɔ na baako nso kuntunu hɔ. Baako de anwea a wɔadɔn no regu dadeɛ
+        mu. Na dadeɛ bebiree nso si abranteɛ n’akyi. Baako nso kura afidie a ne kɔba yɛ baako a anwea
+        a wɔadɔn gu mu no gyina hɔ.
+      sbs: 0.6057
+      gen_sec: 16.89
+      ref_sec: 21.71
+      cer: 0.0778
+      wer: 0.3636
+    waxal_00004:
+      source: waxal
+      text: Wɔ mfoyin mu nso, ɔyɛ asɔr bi a wɔasɛw line wɔwura kyapel dam hɔ. Wɔn nyinaa wɔhyɛ atare atenten.
+        Ebinom wɔn dze no yɛ gold. Ebinom wɔn dze nso yɛ tuntum. Wɔn nyinaa wɔnam wɔrekɔ kyapel dam.
+      sbs: 0.6729
+      gen_sec: 15.19
+      ref_sec: 23.48
+      cer: 0.2635
+      wer: 0.973
+    waxal_00005:
+      source: waxal
+      text: Akwanyifoɔ bebree gyina beaɛ bi a wɔn reyɛ keteke ɛkwan. Mfidie a wɔde reyɛ kwan no bi ɛsi
+        wɔn akyi. Aboɔ nso gu akyire.
+      sbs: 0.68
+      gen_sec: 9.47
+      ref_sec: 21.68
+      cer: 0.1596
+      wer: 0.5417
+    waxal_00006:
+      source: waxal
+      text: Nneɛma bebree sisi dan bi mu. Ahwehwɛ tare dan no hi. Nhwiren nso so dan no mu hɔnom. Nkanea
+        bobɔ dan mu hɔ. Akonnwa simiiɛ fitaa da mu si dan mu hɔnom.
+      sbs: 0.6039
+      gen_sec: 11.95
+      ref_sec: 17.95
+      cer: 0.1466
+      wer: 0.5625
+    waxal_00007:
+      source: waxal
+      text: Ntama yi yɛ kente ntama ahorow a wɔahyehyɛ no fɛɛfɛɛfɛ wɔ ade so. Na ebi ara ne n’ahosuo.
+        Ebi yɛ tuntum, ebi yɛ kɔkɔɔ, ebi yɛ fitaa ebi yɛ akokɔ sradeɛ. Ebi te  yɛ ahaban mono, na ɛyɛ
+        fɛ. Ne nyinaa yɛ fɛ.
+      sbs: 0.6348
+      gen_sec: 16.04
+      ref_sec: 27.77
+      cer: 0.1053
+      wer: 0.4651
+    waxal_00008:
+      source: waxal
+      text: Ɔbarima bi hyɛ atar tuntum a ɔkuta ɔkasamu a ɔrotow ndwom dzendzeen, na ɔbaa kor nso, asɔr
+        tsentsen gyina hɔ rebɔ ne nsam resaw. Na nkurɔfoɔ pii tsetse fam hɔ wɔ ɔdan a wɔatwiw mu memen,
+        na nkanea sensɛn so.
+      sbs: 0.6234
+      gen_sec: 16.72
+      ref_sec: 15.18
+      cer: 0.135
+      wer: 0.525
+    waxal_00009:
+      source: waxal
+      text: Nkorɔfoɔ bebree egyina ha ebi mo ɛhyɛ nos mask ebi nom ekita hyafel a wɔde saa anhwia ɛkata
+        adiɛ so ndua esi ha kar ɛwɔ ha.
+      sbs: 0.6449
+      gen_sec: 9.56
+      ref_sec: 15.2
+      cer: 0.268
+      wer: 0.8462
+    waxal_00010:
+      source: waxal
+      text: Mmɔfra bi wɔ dan bi mu a laptɔpo sisi wɔn anim a wɔrehwɛ so. Mmɔfra no mu baako hyɛ atadeɛ
+        tuntum a ɔgyina pono ho a ɔrehwɛ laptɔpo baako so, ɛnna mmɔfra nkaeɛ no nso wɔ pono foforɔ mu
+        a wɔrehwɛ laptɔpo foforɔ so.
+      sbs: 0.6517
+      gen_sec: 16.89
+      ref_sec: 18.68
+      cer: 0.0898
+      wer: 0.3182
+    waxal_00011:
+      source: waxal
+      text: Nnipadɔm bi atwa ahyia wɔ beaeɛ bi a wɔredi dwa, ntaadeɛ ahodoɔ bebrebee wɔ beaeɛ hɔ, nnua
+        sisi wɔn akyi. Bebree no ara yɛ aborɔfo. Bi yɛ mmaa, bi yɛ mmarima.
+      sbs: 0.689
+      gen_sec: 12.63
+      ref_sec: 17.87
+      cer: 0.1066
+      wer: 0.3871
+    waxal_00012:
+      source: waxal
+      text: Ebinom etwa ehyia pono ho kutakuta wɔn sa. Wakatakata wɔn eni, ebinom hyehyɛ bronya kyɛ. Na
+        eduane no, esisi ɛpono no ɛso, akokɔnam esi baako enim. Eburo egu kyɛnse so esi pono ne so.
+      sbs: 0.6276
+      gen_sec: 14.93
+      ref_sec: 21.63
+      cer: 0.1049
+      wer: 0.5882
+    waxal_00013:
+      source: waxal
+      text: Nnipa bi wɔ agodie bi ase. Bi hyɛ sogya ataadeɛ a wɔretwe ahoma. Wɔn a wɔretwe ahoma ne bi
+        atete atɔ, bi nso gyina hɔ a wɔrehwɛ deɛ wɔreyɛ no. Nnipa ne bi ntaade ahyɛnsodeɛ yɛ wiem.
+      sbs: 0.6375
+      gen_sec: 14.34
+      ref_sec: 19.98
+      cer: 0.1071
+      wer: 0.2973
+    waxal_00014:
+      source: waxal
+      text: Efie nie. Maame bi a ɔgyina hɔ hyɛ atadeɛ soro tuntum, fam nson nson. Ɔfura ntoma wɔ n'ase
+        a fa yɛ memen, fa yɛ ahaban mono. Abɔfra bi yɛ atade haban mono bi gyina n'anim. Papa bi nso akutunu
+        ne mu de ne nsa ahyɛ bucket bi mu. Praseɛ da hɔ.
+      sbs: 0.6761
+      gen_sec: 18.6
+      ref_sec: 24.95
+      cer: 0.1056
+      wer: 0.4314
+    waxal_00015:
+      source: waxal
+      text: Ayaresabea a mmaatan de wɔn mma akɔ rekɔgye ayarehwɛ. Adɔkotafoɔ mmienu a baako yɛ ɔbaa na
+        baako yɛ ɔbarima te pono ho a wɔretwerɛtwerɛ. Nwoma bebree gu wɔn ani a wɔredi mu dwuma.
+      sbs: 0.7164
+      gen_sec: 14.51
+      ref_sec: 17.61
+      cer: 0.1458
+      wer: 0.4848
+    waxal_00016:
+      source: waxal
+      text: Bea a nnipa dɔm atwa ahyia na wɔreyɛ ɔyɛkyerɛ, na nnipa dɔm yi, ebi nte wɔn ho ase, nti wɔne
+        asraafoɔ de abɔ ani a wɔreko ntɔkwa. Asraafoɔ no dodoɔ no ara nso de dadeɛ ato pampim sɛ ɛbɛyɛ
+        a nnipa no ntumi ntwi mfa wɔn so. Nnipadɔm no dodoɔ no ara kutakuta nkuro ahodoɔ frankaa.
+      sbs: 0.6937
+      gen_sec: 22.35
+      ref_sec: 22.65
+      cer: 0.0833
+      wer: 0.3214
+    waxal_00017:
+      source: waxal
+      text: Ɛhyɛn kɛseɛɛɛɛ asɛe asi ɛkwan ho, na ɛkuta nneɛma bebree a ɛde rekɔ baabi a ɛrekɔ. Na mmeranteɛ
+        mmienu gyina ɛhyɛn no nkyɛn.
+      sbs: 0.6766
+      gen_sec: 9.98
+      ref_sec: 16.59
+      cer: 0.1111
+      wer: 0.3913
+    waxal_00018:
+      source: waxal
+      text: Mmarima ahoɔdenfoɔ nnan kuta ntoma kɛseɛ bi, a wɔde retwa kwan mu, na mmeranteɛ bi te kaa
+        mu, a wɔn nneɛma gu kaa no akyi a wɔretwam.
+      sbs: 0.6497
+      gen_sec: 10.75
+      ref_sec: 22.7
+      cer: 0.0583
+      wer: 0.4074
+    waxal_00019:
+      source: waxal
+      text: Ɔdan tenteenten a n'ahosuo yɛ fitaa si nsuo bi ho, na bridge ɛsi ɛda nsuo no so, na nsuo no
+        nkyɛn no, nnua bebree sisisisi hɔ.
+      sbs: 0.68
+      gen_sec: 9.9
+      ref_sec: 18.81
+      cer: 0.1042
+      wer: 0.3462
+    waxal_00020:
+      source: waxal
+      text: Mbenyifo aa wɔn ho yɛ dzen aa wɔkita piaw. Ɛkor so kita ɔyɛɛ nsebɔ ebien wɔ ne nsem. Wɔn panyin
+        tena ɔyɛ pɔnkɔ do na ɔdze ɛkyɛw kɔkɔɔ ahyɛ ne tir, na ekyim so kɔkɔɔ si ne tir do. Ndua wɔ wɔn
+        akyir, dɛmaa nso na adan ahorow wɔ hɔ. Ebi fra tam na ebi so hyɛ mpaboa.
+      sbs: 0.6815
+      gen_sec: 20.56
+      ref_sec: 25.76
+      cer: 0.1558
+      wer: 0.5862
+    waxal_00021:
+      source: waxal
+      text: Asuafoɔ mmayewa mmiɛnsa a wɔwɔ suadan mu na wɔresua adeɛ. Wɔde biribi ahyehyɛ wɔn nsa. Wɔn
+        nyinaa hyehyɛ ahwehwɛniwa. Wɔhyehyɛ ntaadeɛ mfitamfitaa. Nwoma gu pono no so, ɛna rubber nso si
+        ɛpono no so.
+      sbs: 0.7023
+      gen_sec: 16.63
+      ref_sec: 19.8
+      cer: 0.0563
+      wer: 0.2353
+    waxal_00022:
+      source: waxal
+      text: Nnipakuo a wɔnam mfutukwan so, ɛbi te apɔnkɔ so, ɛna ɛbi nam fam. Nkwadaa wɔ mu, mpanimfoɔ
+        nso wɔ mu, na mmoa ahodoɔ bi te sɛ krama ka wɔn ho.
+      sbs: 0.679
+      gen_sec: 11.18
+      ref_sec: 20.85
+      cer: 0.0841
+      wer: 0.4333
+    waxal_00023:
+      source: waxal
+      text: Ɛmaa mmɛrima ne mmɔfra ahyia mu ɛwɔ ɛdan a yɛnsi nwieyɛ ɛho, ɔbɛrima baako egyina hɔ, ɔhyɛ
+        ntama ataadeɛ egu trɔsa tuntum ɛso. Ɔkura ahoma a aboduaba ɛsɛ so.
+      sbs: 0.6959
+      gen_sec: 12.63
+      ref_sec: 20.79
+      cer: 0.128
+      wer: 0.5517
+    waxal_00024:
+      source: waxal
+      text: Nkurɔfoɔ bebree bi a wɔasa line, bi hyehyɛ nose mask, bi nso hyehyɛ kyɛ, bebree no ara hyehyɛ
+        jacket. Mmaa ne mmarima nyinaa afrafra. Wɔn nyinaa yɛ atuntumfoɔ, wɔgyina awia mu.
+      sbs: 0.6565
+      gen_sec: 14.34
+      ref_sec: 21.03
+      cer: 0.0576
+      wer: 0.4516
+    waxal_00025:
+      source: waxal
+      text: Maame baako ne nkwadaa mmienu wɔ fie bi mu. Nkwadaa no te kukuo bi so. Kukuo no bi nso si
+        wɔn nkyɛ. Nhwiren si wɔn nkyɛn. Maame no gyina hɔ a ɔrehwie nsuo agu baako so.
+      sbs: 0.6674
+      gen_sec: 13.06
+      ref_sec: 16.85
+      cer: 0.0781
+      wer: 0.3333
+    waxal_00026:
+      source: waxal
+      text: Nkwadaa nketewa gu baabi a mmaa ɔbaa a wahyɛ kyɛ a wabɔ ne ti hyɛ ataade fufuo de aduane agu
+        plate green and blue a atere hyehyɛ nkyɛn de rema nkwadaa nketewa yi. Aduane no yɛ ɛmo ne frɔeɛ.
+        Ↄde rema nkwadaa no. nkwadaa no bi tete fam.
+      sbs: 0.653
+      gen_sec: 18.68
+      ref_sec: 26.31
+      cer: 0.1366
+      wer: 0.5625
+    waxal_00027:
+      source: waxal
+      text: Ɛdan mu, ɔpono kurukuruwa bi si hɔ, glass bebree esisi pono yi so. Nkonwa a ɛho yɛ kɔkɔɔ ɛtwa
+        ɛpono yi ho ɛhyia. Nwhiren esi pono yi ɛkyi. Nfonni bɔ ban ho a gyata ɛda nfonni yi mu.
+      sbs: 0.7204
+      gen_sec: 14.25
+      ref_sec: 20.19
+      cer: 0.1449
+      wer: 0.5789
+    waxal_00028:
+      source: waxal
+      text: Nnipadɔm a wɔte afɔ mu na wɔn ani abere na wɔreka afɔ no. Dodoɔ a ɛwɔ mu no hyɛ ataadeɛ a
+        n'ahosu yɛ ahaban mono. Nnipadɔm nso atwa wɔn ho ahyia a wɔrehwɛ wɔn wɔ nsuo no so.
+      sbs: 0.6622
+      gen_sec: 13.4
+      ref_sec: 16.01
+      cer: 0.0758
+      wer: 0.2632
+    waxal_00029:
+      source: waxal
+      text: Papa bi ne maame bi koto hɔ. Nkwadaa mmienu nso so koto wɔn ntam. Saa nkwadaa mmienu yi, baako
+        yɛ barima, baako nso yɛ ɔbaa. Barima no hyɛ atadeɛ yellow, ɛna ɔbaa no hyɛ blue.
+      sbs: 0.6844
+      gen_sec: 13.91
+      ref_sec: 16.04
+      cer: 0.0448
+      wer: 0.1714
+    waxal_00030:
+      source: waxal
+      text: Mbarima pii a wogyina bea a wɔasiesie hɔ fɛfɛɛfɛw. Mbarima no mu pii no ara firafira tam fitaa,
+        na hɔn mu ebien pɛ na wɔfira tam tuntum. Mbarima no mu kor kita kyinii anaadɛ akatanmanso ahabammono
+        bi.
+      sbs: 0.6204
+      gen_sec: 16.29
+      ref_sec: 19.41
+      cer: 0.1812
+      wer: 0.5946
+    waxal_00031:
+      source: waxal
+      text: Ɛhyɛn a n'ahyɛnsodeɛ yɛ akokɔsradeɛ nam lɔɔre kwan so rekɔ. Wɔahyehyɛ ɛdan mu nneɛma bebree
+        wɔ ɛhyɛn yi mu. Mmɔfra ne mpanin tete nneɛma no a wɔahyehyɛ wɔ ɛhyɛn no so wɔ akyire. Nnua nnua
+        ahodoɔ nso wɔ ɛhyɛn no nkyɛn mu.
+      sbs: 0.6142
+      gen_sec: 17.83
+      ref_sec: 23.43
+      cer: 0.0862
+      wer: 0.3571
+    waxal_00032:
+      source: waxal
+      text: Ayarsabea, nyimpa bi wɔdeda mpa do, na nyimpa no bi wɔtsenatsena famu na wɔdeda famu. Nyimpano
+        bi nso wɔgyinagyina hɔ. Ayarsahwɛfo no wɔhyɛ ntar fufuw.
+      sbs: 0.6882
+      gen_sec: 12.37
+      ref_sec: 20.9
+      cer: 0.1148
+      wer: 0.68
+    waxal_00033:
+      source: waxal
+      text: Nkurɔfoɔ bi wɔ dan bi mu. Nkurɔfoɔ no mu bi te akonnwa so. Ɛbi te fam, Ɛna ɛbi nso gyina hɔ.
+        Ababaawa a ɔte fam no kuta nwoma bi a wabue mu. Na pono bi si wɔn anim a candle ne nnuaba ahodoɔ
+        gu so.
+      sbs: 0.6691
+      gen_sec: 15.1
+      ref_sec: 22.8
+      cer: 0.1027
+      wer: 0.2889
+    waxal_00034:
+      source: waxal
+      text: Mmaa ne mmarima a wɔgyina nsuo mu. Binom apagya wɔn nsa na binom resere. Aboɔ si nsuo no mu.
+        Nsuo no bi nso firi aboɔ no soro na ɛregu fam.
+      sbs: 0.6575
+      gen_sec: 10.67
+      ref_sec: 15.23
+      cer: 0.1038
+      wer: 0.2333
+    waxal_00035:
+      source: waxal
+      text: Maamefoɔ mmienu rebɔ akwadaa ketewa bi ti. Maamefoɔ no nyinaa te akonnwa so. Maame baako,
+        akwadaa hyɛ n'akyi, na wɔn nyinaa ani abere rebɔ tire no. maame baako no abɔ ne ti, baako mmɔɔ
+        ne ti, na akwadaa no a ɔhyɛ n'akyi no renum ne nsa.
+      sbs: 0.6014
+      gen_sec: 18.85
+      ref_sec: 21.52
+      cer: 0.0939
+      wer: 0.4565
+    waxal_00036:
+      source: waxal
+      text: Papafoɔ enum a wɔn nyinaa hyehyɛ anniversary ntoma. Na baako abɔ ball no. wɔn akyi hɔ, polisini
+        di wɔn akyi. ℇna nnuannua wɔ wɔn akyi.
+      sbs: 0.6656
+      gen_sec: 10.84
+      ref_sec: 18.16
+      cer: 0.3048
+      wer: 0.84
+    waxal_00037:
+      source: waxal
+      text: Mmarima adwa wɔn ataareɛ soro ɛna wɔde kente afura wɔn mu. Mmaa mmienu wɔn nkyɛn mu. Ↄsraani
+        baako a ɔyɛ ɔbaa nso di wɔn anim. Mmarima yi kita Ghana frankaa no ɛna wɔrehim. Wɔn a wɔaka no
+        nso kita adinkra ahyɛnsodeɛ tenten wɔ wɔn nsam.
+      sbs: 0.6792
+      gen_sec: 19.02
+      ref_sec: 22.67
+      cer: 0.0753
+      wer: 0.2889
+    waxal_00038:
+      source: waxal
+      text: Bea a wɔyɛ hyɛn ho adwuma. Na beaeɛ yi, mmaa wɔ hɔ, mmarima nso wɔ hɔ. Hyɛn sisi hɔ a wɔatutu
+        na wɔrehyehyɛ. Ɔpanin a ɔwɔ mu no yɛ barima. Ɔgyina hɔ na ɔrehwɛ wɔn. Ɔhyɛ ahwehwɛniwa.
+      sbs: 0.7483
+      gen_sec: 14.17
+      ref_sec: 18.47
+      cer: 0.1168
+      wer: 0.3514
+    waxal_00039:
+      source: waxal
+      text: Obi a ɔreto nwom kyerɛ nnipa bebree. Obi asor rebɔ ne nsam. Ɔhyɛ atar tumtum. Nkaeɛfo no nso
+        hyɛ ataade tuntum. Wɔ akyire hɔ no wɔdze ade kɔkɔɔ ɛna wɔde asiesie hɔ. Nkanea a wɔbobɔ dan ho
+        na ebinom nso wɔ n'akyiri kɔdzi anim na wɔn nyinaa ara rehwɛ nea ɔreto nwom no. Obi nso hyɛ dan
+        bi mu.
+      sbs: 0.6932
+      gen_sec: 23.03
+      ref_sec: 26.15
+      cer: 0.058
+      wer: 0.2881
 - model: Google/gemini-3.1-flash-tts-preview
   model_url: https://ai.google.dev/gemini-api/docs/speech-generation
   mode: noref
@@ -35588,4 +37373,4 @@ benchmarks:
       cer: 1.0
       wer: 1.0
       failed: no usable audio
-updated: '2026-10-01'
+updated: '2026-10-09'
