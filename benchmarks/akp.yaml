@@ -6755,6 +6755,1692 @@ benchmarks:
       ref_sec: 8.94
       cer: 0.0135
       wer: 0.0556
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7044
+  num_scored: 200
+  cer: 0.086
+  wer: 0.2504
+  accuracy: 0.914
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8092
+  score: 0.8092
+  per_source:
+    bible:
+      sbs: 0.7044
+      cer: 0.086
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Ɔluwɛ̃ ne, manɔ kulu lɛ ɔwiri nto ɔkpɛ̃ teteree kubɔrɛ i kato.
+      sbs: 0.7183
+      gen_sec: 4.86
+      ref_sec: 5.36
+      cer: 0.1489
+      wer: 0.4167
+    bible_00001:
+      source: bible
+      text: Yesu ɔre iti i sosina gu iwola ame, ɔbo maturi gu Ɣaa ɔɖuɖu anɔ.
+      sbs: 0.7528
+      gen_sec: 4.95
+      ref_sec: 7.68
+      cer: 0.0408
+      wer: 0.1429
+    bible_00002:
+      source: bible
+      text: Ne ɔso ito me ɔkã teteree sɔ loasese wũ mi kɔrɛ sɔ so aaɣɔ mi si minya wũ fiɛ mme wũ wũ nnya
+        ka miaro.
+      sbs: 0.6486
+      gen_sec: 8.02
+      ref_sec: 6.3
+      cer: 0.1169
+      wer: 0.24
+    bible_00003:
+      source: bible
+      text: Boto bopɛ Ɣaa gɔ nɖe Bosate Yesu Kristo Ɔse siba sɔ ɔtã bo siwarã ame kusɛkusɛ biara gɔ lobɔrɛ
+        i kato iki i bo mawɛ̃ ibaragu Kristo ame.
+      sbs: 0.7064
+      gen_sec: 10.67
+      ref_sec: 9.0
+      cer: 0.028
+      wer: 0.0714
+    bible_00004:
+      source: bible
+      text: Alasɔ ɔwi gɔmɔ to ɔ̃aɖe kutsue ikpadzɛ̃ ɔwi lɛ kumɛgɔ i Ɔko Sekelea Ɔɣɛ ɔsɛ awe.
+      sbs: 0.6993
+      gen_sec: 6.23
+      ref_sec: 5.82
+      cer: 0.0323
+      wer: 0.125
+    bible_00005:
+      source: bible
+      text: Mme Yohanes lotsɛrɛ ɔko gɔgbe nto lotã mi mafɔɖedze akuri akɔdzɛ wa mpia i Asia karɔ̃ iso.
+      sbs: 0.7002
+      gen_sec: 7.0
+      ref_sec: 6.38
+      cer: 0.0694
+      wer: 0.1765
+    bible_00006:
+      source: bible
+      text: Gbaã ne, itɔ̃me bielea mama kuiwɛ̃ siina, ɣɛɛ mawɛ̃ to mabie sɔ makpɔkpɔtɔra mi si mafinikira
+        Kristo Itɔ̃me Bielea.
+      sbs: 0.6752
+      gen_sec: 9.47
+      ref_sec: 7.04
+      cer: 0.0556
+      wer: 0.1579
+    bible_00007:
+      source: bible
+      text: Gɔ manya sɔ Yesu masiaidze nɣɛ mato maɣɛ abuiti ɔɖuɖu wa ame mabɔrɛ siɖe ne, ibara ma ɣii.
+      sbs: 0.7284
+      gen_sec: 7.17
+      ref_sec: 7.68
+      cer: 0.0563
+      wer: 0.1667
+    bible_00008:
+      source: bible
+      text: Ne Yesu ɔkarɛ ma sɔ, “Ɔnɔ miinɔ igbã nɛ karɔ̃?
+      sbs: 0.7161
+      gen_sec: 3.5
+      ref_sec: 4.44
+      cer: 0.0606
+      wer: 0.4
+    bible_00009:
+      source: bible
+      text: Ɔɖi bo ɔbɔrɛgu i Ɔbosam ɔle gɔ nɖe idududu ame ɔbɔ ɔ̃ Ɔbi ɖɔɛse sigarakaɖekɔ̃ ame.
+      sbs: 0.6692
+      gen_sec: 6.4
+      ref_sec: 4.9
+      cer: 0.0781
+      wer: 0.1875
+    bible_00010:
+      source: bible
+      text: Ne ɔso bo wũ bofɔ boɖe sɔ Ɣaa aafɔ bo sɔ bose bɔlɔlɔ gɔ bofɔ Kristo boɖe ɔso, iiɖe kumɛgɔ
+        bobara i mmara iso ɔso.
+      sbs: 0.7409
+      gen_sec: 8.7
+      ref_sec: 7.18
+      cer: 0.1149
+      wer: 0.32
+    bible_00011:
+      source: bible
+      text: Ikɔ biara ne, Yesu maɣese sɛ masɛ Yerusalem maaɖe iyi nɛ masɛ marɔ sɔ Kukpi Ɔtakuwara Bo Iyi.
+      sbs: 0.7119
+      gen_sec: 7.34
+      ref_sec: 7.72
+      cer: 0.1081
+      wer: 0.3889
+    bible_00012:
+      source: bible
+      text: Ɔ̃ loɖe ira biara iso fiɛ ɔto ɔbara karabara ɔkigu i ira biara ame, ɔpia i ira biara ame ana.
+      sbs: 0.7326
+      gen_sec: 7.08
+      ref_sec: 6.02
+      cer: 0.0
+      wer: 0.0
+    bible_00013:
+      source: bible
+      text: Ne ɔrɔ̃go ɔfɔ kanya sɔ, “Aĩ, sikã ɔɖuɖu mmɔ ne.
+      sbs: 0.6437
+      gen_sec: 3.67
+      ref_sec: 3.38
+      cer: 0.0606
+      wer: 0.4
+    bible_00014:
+      source: bible
+      text: Ngbɔ makpɛ̃gu Ɣaa kanyamaɖidze ma loɖe mi katɔ̃ ne.
+      sbs: 0.6889
+      gen_sec: 4.1
+      ref_sec: 4.28
+      cer: 0.15
+      wer: 0.5556
+    bible_00015:
+      source: bible
+      text: Ne ɔɣere ma sɔ, “Ɔwi ɔwɛ̃ ame ne, maturi inyɔ mawɛ̃ ɔsɛ Ɣaa isɔrɛyo sɔ maakparama kayi.
+      sbs: 0.7463
+      gen_sec: 6.83
+      ref_sec: 6.82
+      cer: 0.0769
+      wer: 0.1765
+    bible_00016:
+      source: bible
+      text: Ne Yesu ɔɣere ma sɔ, “Midzuɛ̃ so sɔ miibatã kuwɛ̃ aasɔsɔla mi.
+      sbs: 0.7167
+      gen_sec: 4.86
+      ref_sec: 5.04
+      cer: 0.1522
+      wer: 0.3333
+    bible_00017:
+      source: bible
+      text: Makpakpɛ̃dze mawɛ̃ ana ɔba maakarɛ wũ sɔ, “Bo ne, be si bobara?
+      sbs: 0.7312
+      gen_sec: 4.86
+      ref_sec: 4.8
+      cer: 0.0217
+      wer: 0.0833
+    bible_00018:
+      source: bible
+      text: Boisɛ bobie sɔ boabo maturi anɔ, ɣɛɛ Ɣaa gɔ nsɛ ɔko ɔbiara ɔtu ɔnyɔ.
+      sbs: 0.6898
+      gen_sec: 5.46
+      ref_sec: 4.44
+      cer: 0.0377
+      wer: 0.1429
+    bible_00019:
+      source: bible
+      text: Aisɛ afinikira fɔ itɔ̃me, fiɛ aisɛ anyɔ maturi i katɔ̃.
+      sbs: 0.6894
+      gen_sec: 4.35
+      ref_sec: 3.6
+      cer: 0.0952
+      wer: 0.3
+    bible_00020:
+      source: bible
+      text: Kumɛgɔ ame i Ɣaa kanyaɖidze Yona ɔɖe ikparĩ ɔtã Niniwe maturi ne, ngbɔ ame i Ɔturi Awune Ɔbi
+        ana aaɖe ikparĩ ɔta kiniɔgbe maturi ne.
+      sbs: 0.7108
+      gen_sec: 10.58
+      ref_sec: 9.92
+      cer: 0.0189
+      wer: 0.08
+    bible_00021:
+      source: bible
+      text: Ara wa i kuɖokpo ame pia fiɛ karɔ̃ iso are ana pia.
+      sbs: 0.6752
+      gen_sec: 3.75
+      ref_sec: 3.04
+      cer: 0.0789
+      wer: 0.1667
+    bible_00022:
+      source: bible
+      text: Si ara wagbe ɔnya asɔ̃ katɔ̃ ne, miledza so si mitsɛ ɔri inyɔ alasɔ mi iɖi ɔwi ɔɔbore ɔbo.
+      sbs: 0.7516
+      gen_sec: 6.74
+      ref_sec: 7.3
+      cer: 0.1029
+      wer: 0.3684
+    bible_00023:
+      source: bible
+      text: I iyi ɖeakatɔ̃ nɛ iso masɛ maɖe Boɖoboɖo Gɔ Loita Iyi ne, marasuãdze ɔba maakarɛ Yesu sɔ,
+        “Lɛ ato abie sɔ bowa Kukpi Ɔtakuwara Bo iyi aɖera botã-ɔ?
+      sbs: 0.7151
+      gen_sec: 11.43
+      ref_sec: 12.88
+      cer: 0.0965
+      wer: 0.2857
+    bible_00024:
+      source: bible
+      text: Maturi gbodzoo ɔba mmɔ gɔ kukpa kanɛkɔ̃ iisiwe i iyo nɛ kame mapia gu kayogodɔ̃.
+      sbs: 0.7172
+      gen_sec: 6.23
+      ref_sec: 6.28
+      cer: 0.0794
+      wer: 0.5333
+    bible_00025:
+      source: bible
+      text: Ne ɔso ɔmagɛ̃ ame maturi ɔɖuɖu ɔbɔrɛ maba maɣɛ i kayogodɔ̃ mato manyɔ.
+      sbs: 0.6903
+      gen_sec: 5.63
+      ref_sec: 5.16
+      cer: 0.0182
+      wer: 0.0769
+    bible_00026:
+      source: bible
+      text: Ɔ̃isɛ ɔɖe ma ika si iiɖe igbã ɔto ɔpɛ ma.
+      sbs: 0.6994
+      gen_sec: 3.16
+      ref_sec: 3.56
+      cer: 0.2333
+      wer: 0.6
+    bible_00027:
+      source: bible
+      text: Mma nto mabie sɔ maakɔ mi mayura ɔso fiɛ loto lotsɛrɛ ɔko gɔgbe losese mi.
+      sbs: 0.6745
+      gen_sec: 5.72
+      ref_sec: 4.48
+      cer: 0.0847
+      wer: 0.2
+    bible_00028:
+      source: bible
+      text: Ɣɛɛ ngɔ nsɛ ɔmɔɛ̃ ɔ̃ itɔ̃me ɔla ne, ɔ̃ kuɖɔɛ gɔ ɔba ɔtã Ɣaa ɔyi gbaã.
+      sbs: 0.7178
+      gen_sec: 5.55
+      ref_sec: 5.04
+      cer: 0.0625
+      wer: 0.125
+    bible_00029:
+      source: bible
+      text: Ɣɛɛ wũ itɔ̃me ɔte sɔ Ɣaa Siwarã ɔle pia gbaã.
+      sbs: 0.6941
+      gen_sec: 3.93
+      ref_sec: 3.46
+      cer: 0.0882
+      wer: 0.4
+    bible_00030:
+      source: bible
+      text: Gɔ manya kumɛgɔ i Petro gu Yohanes ɔɖe ika gu ɔtu fiɛ maɣe ana sɔ mma loiɣe ɔko gu mma nna
+        ɖibia kuwɛ̃ i kaɖe ame maɖe ne, ibara ma ɣii.
+      sbs: 0.7385
+      gen_sec: 10.41
+      ref_sec: 12.82
+      cer: 0.0485
+      wer: 0.129
+    bible_00031:
+      source: bible
+      text: Mmɔ i Yesu to ɔɣere wũ sɔ, “Nyɔ kukaakɔ, daaɣere kuwɛ̃ kuira, ɣɛɛ kɛlɛ aasu so te Ɣaa sɔrɛdze
+        si atã ara wa i Mose mmara ɔkarɛ si ite sɔ ka ase sekelee.
+      sbs: 0.7542
+      gen_sec: 11.86
+      ref_sec: 14.2
+      cer: 0.0614
+      wer: 0.1515
+    bible_00032:
+      source: bible
+      text: Ne ɔso kuwɛ̃ iibawo ɔɣɛ sɔ wũ iyere ame ɔfɔ Ɣaa itupie.
+      sbs: 0.6622
+      gen_sec: 4.44
+      ref_sec: 13.58
+      cer: 0.119
+      wer: 0.25
+    bible_00033:
+      source: bible
+      text: gɔ ɔse nɖe Kainan gɔ ɔse nɖe Arfaksad.
+      sbs: 0.6809
+      gen_sec: 2.9
+      ref_sec: 3.96
+      cer: 0.5
+      wer: 1.0
+    bible_00034:
+      source: bible
+      text: Ne ɔso nto losia ita lotã mi sɔ, kakɔi biara ga maaɣɛ Itɔ̃me Bielea nɛgbe ne, maasu nnɛ ɔbara
+        ɔtã me ngbe manyigi wũ ala.
+      sbs: 0.7435
+      gen_sec: 9.64
+      ref_sec: 10.02
+      cer: 0.0215
+      wer: 0.08
+    bible_00035:
+      source: bible
+      text: “Ɣɛɛ gɔ mapaase ɔnya ɔbi gɔmɔ ne, maɣere so sɔ, ‘Nya kakpɛkɔ̃ Sate mɔmɔ ɔbi nto ɔba ngbe.
+      sbs: 0.7375
+      gen_sec: 6.83
+      ref_sec: 7.92
+      cer: 0.0303
+      wer: 0.1111
+    bible_00036:
+      source: bible
+      text: Atoa sɔ maɖaa bo ngbe ana teteree ne, Bosate ɔpia bo ɔle sɔ bowo mi ɔ̃ Itɔ̃me Bielea ɔɣere.
+      sbs: 0.6787
+      gen_sec: 7.08
+      ref_sec: 5.8
+      cer: 0.058
+      wer: 0.2632
+    bible_00037:
+      source: bible
+      text: Ana ne, manyii, boto bobie sɔ mibie itɔ̃me miɣere madãdze.
+      sbs: 0.6892
+      gen_sec: 4.78
+      ref_sec: 3.06
+      cer: 0.0889
+      wer: 0.2
+    bible_00038:
+      source: bible
+      text: Midaabara kuira nɛ loatɛ̃ ma Yudase ɣee mma loiɖe ma Yudase ɣee mafɔɖedze Ɣaa kɔrɛ ɔri.
+      sbs: 0.6955
+      gen_sec: 7.08
+      ref_sec: 5.32
+      cer: 0.0571
+      wer: 0.125
+    bible_00039:
+      source: bible
+      text: Ɔsɛ ɔrɛ ɔta, iyi biara, ɔraɖui ɔre, fiɛ amɔ, fiɛ ɔ̃iɣe kumɛgɔ ibara fiɛ ara se lɛ ngbe.
+      sbs: 0.7805
+      gen_sec: 6.74
+      ref_sec: 8.9
+      cer: 0.125
+      wer: 0.2222
+    bible_00040:
+      source: bible
+      text: Be ɔso mito mibie sɔ miapia Ɣaa mafɔɖedze ikuri kunuarɛ mikuti misopara mafɔɖedze wɛrɛba?
+      sbs: 0.6883
+      gen_sec: 7.17
+      ref_sec: 5.08
+      cer: 0.0933
+      wer: 0.2857
+    bible_00041:
+      source: bible
+      text: Ne kama ne, lonya Ɣaa kpabo mama gɔ mba ɔle ɔso ɔbɔrɛ i kato.
+      sbs: 0.6963
+      gen_sec: 4.69
+      ref_sec: 5.3
+      cer: 0.087
+      wer: 0.2857
+    bible_00042:
+      source: bible
+      text: Ɔɖe bo ɔnyii gɔ nsɛ ɔbuai bo i Ɣaa karabara gu Kristo Itɔ̃me Bielea iɣɛ ame.
+      sbs: 0.7153
+      gen_sec: 5.97
+      ref_sec: 4.64
+      cer: 0.0847
+      wer: 0.25
+    bible_00043:
+      source: bible
+      text: Alasɔ mi mɔmɔ miɣe sɔ Bosate ibayi to iaba lɛ kumɛgɔ i yukukpe sɛ ɔba ku kasɛ̃ ndɛ̃ awe.
+      sbs: 0.6655
+      gen_sec: 6.74
+      ref_sec: 4.9
+      cer: 0.0746
+      wer: 0.3684
+    bible_00044:
+      source: bible
+      text: Ɔbiara gɔ loasɛ̃ me ne, ngɔ lopia me katɔ̃me ɔsɛ̃.
+      sbs: 0.7048
+      gen_sec: 3.93
+      ref_sec: 3.14
+      cer: 0.0
+      wer: 0.0
+    bible_00045:
+      source: bible
+      text: gɔ ɔse nɖe Abraham gɔ ɔse nɖe Tara.
+      sbs: 0.7059
+      gen_sec: 2.65
+      ref_sec: 3.28
+      cer: 0.1481
+      wer: 0.25
+    bible_00046:
+      source: bible
+      text: Ne ɔso wũ atɔ̃me iɣɛ se tɔrɔrɔ, alasɔ loisɛ lobara nnɛ loɖɔɛ, ɣɛɛ nnɛ i ngɔ lopia me katɔ̃me
+        ɔɖɔɛ nsɛ lobara.
+      sbs: 0.748
+      gen_sec: 8.7
+      ref_sec: 8.58
+      cer: 0.1205
+      wer: 0.2727
+    bible_00047:
+      source: bible
+      text: Yesu gu ɔ̃ marasuãdze ɔbo i ɔkolo ɔwɛ̃ ame marui.
+      sbs: 0.6377
+      gen_sec: 3.75
+      ref_sec: 12.16
+      cer: 0.2432
+      wer: 0.7
+    bible_00048:
+      source: bible
+      text: Ne Yesu ɔɣere wũ sɔ, “Iyɔ mme wũ loitã-ɔ ipɔ.
+      sbs: 0.705
+      gen_sec: 3.67
+      ref_sec: 3.32
+      cer: 0.0938
+      wer: 0.3
+    bible_00049:
+      source: bible
+      text: Miɣe kukaakɔ sɔ mma nsɛ mabara karabara i Ɣaa isɔrɛyo ne, mmɔ masɛ mafɔ ma araɖea mabɔrɛgu.
+      sbs: 0.6941
+      gen_sec: 7.34
+      ref_sec: 4.9
+      cer: 0.0274
+      wer: 0.1176
+    bible_00050:
+      source: bible
+      text: Ɣaa ɔbara nnɛgbe sɔ bo ɔɖuɖu aaba boakpese mawɛ̃ i nnɛ bofɔ boɖe ame fiɛ boatsue Ɣaa Ɔbi pelepele.
+      sbs: 0.6992
+      gen_sec: 7.85
+      ref_sec: 6.24
+      cer: 0.0897
+      wer: 0.2105
+    bible_00051:
+      source: bible
+      text: Wũ manyii, loto mi i kukpa sɔ minyɔ mmagbe igbã nsɛgbai gu mama ma lobuai mapia kube i karabara
+        ame si mitã sɔ ma igbã loakɔkɔ mi.
+      sbs: 0.7277
+      gen_sec: 10.33
+      ref_sec: 8.94
+      cer: 0.0392
+      wer: 0.1852
+    bible_00052:
+      source: bible
+      text: Ɔwi gɔ mato maɖoe Stefano ne, Saulo lola ɔ̃ɔpia ma ɔle.
+      sbs: 0.688
+      gen_sec: 4.27
+      ref_sec: 4.06
+      cer: 0.1429
+      wer: 0.3636
+    bible_00053:
+      source: bible
+      text: Gɔ kaɖe ɔsɛ̃ ne, maturi gbodzoo ma lowe i itubu ɔkpokpo gɔmɔ isɛ ɔnya sɔ ɔkolo ɔwɛ̃ pɛ lose
+        i mmɔ.
+      sbs: 0.7393
+      gen_sec: 7.34
+      ref_sec: 8.86
+      cer: 0.0135
+      wer: 0.0476
+    bible_00054:
+      source: bible
+      text: Ɣee be i ɔturi aasu ɔnyuarã fiɛ ɔ̃ana ngbã mɔmɔ?
+      sbs: 0.6785
+      gen_sec: 4.01
+      ref_sec: 14.92
+      cer: 0.0541
+      wer: 0.1
+    bible_00055:
+      source: bible
+      text: Gɔ bofe mmɔ ne, bosɛ boaki i Kilikia gu Pamfilia ɔpo kanya bobore bomatã ɔmagɛ̃ gɔ marɔ Mira
+        i Likia ibuiti ame.
+      sbs: 0.7334
+      gen_sec: 8.79
+      ref_sec: 11.36
+      cer: 0.0568
+      wer: 0.2727
+    bible_00056:
+      source: bible
+      text: Gɔ ɔto ɔkɛlɛ ɔri dzoroa ɔwɛ̃ ɔso ne, ɔsu kakpɛkɔ̃ ɔpia i mapaase nrɔɔ̃ ame sɔ manyɔ kã iso
+        matã wũ.
+      sbs: 0.7611
+      gen_sec: 7.68
+      ref_sec: 7.42
+      cer: 0.0811
+      wer: 0.1905
+    bible_00057:
+      source: bible
+      text: Gɔ Yohanes ɔɔpie maturi ɔɖuɖu ndu ɔro ne, Yesu ɔ̃ wũ mapie wũ ndu.
+      sbs: 0.7298
+      gen_sec: 5.21
+      ref_sec: 5.1
+      cer: 0.12
+      wer: 0.5
+    bible_00058:
+      source: bible
+      text: Mma loiɖe ma Yudase to maaɖe sigara ku ɔtile i Yerusalem iso isɛ iabo ɔwi gɔ i Ɣaa ɔtɔrã ɔtã
+        ma.
+      sbs: 0.7277
+      gen_sec: 7.51
+      ref_sec: 7.06
+      cer: 0.0133
+      wer: 0.0476
+    bible_00059:
+      source: bible
+      text: ” Ngbɔ ame gɔ maɖe ara maro ne, ɔsu ikɔi, ne ɔɣɛ sɔ, “Ikɔi nɛgbe nɖe nnɛ i Ɣaa ɔsu ɔto ɔnyigu
+        mi kanya ɣɛtɛ ga wũ ima nɖe ikparĩ ne.
+      sbs: 0.6968
+      gen_sec: 9.98
+      ref_sec: 11.74
+      cer: 0.0833
+      wer: 0.2667
+    bible_00060:
+      source: bible
+      text: Alasɔ mi mɔmɔ ɔɔti Bosate kayiribielea minyɔ sɔ ilɛ.
+      sbs: 0.6913
+      gen_sec: 4.18
+      ref_sec: 4.18
+      cer: 0.1628
+      wer: 0.4444
+    bible_00061:
+      source: bible
+      text: I maturi katɔ̃ mmɔ ne, maiwo wũ ɔmɔɛ̃ i itɔ̃me kuiwɛ̃ iso.
+      sbs: 0.7157
+      gen_sec: 4.52
+      ref_sec: 12.52
+      cer: 0.0244
+      wer: 0.0833
+    bible_00062:
+      source: bible
+      text: Bo ɔɖuɖu to bonɔ mato mafa Ɣaa kaɣiɖu i bo siɖe ame.
+      sbs: 0.6773
+      gen_sec: 4.1
+      ref_sec: 3.42
+      cer: 0.175
+      wer: 0.25
+    bible_00063:
+      source: bible
+      text: Manya sɔ iiɖe ma mmara kere miɖe ɔtu, ɣɛɛ ana ne, ɔsu so ɔbara Ɣaa Ɔbi gɔ ite sɔ ɔkategu Ɣaa.
+      sbs: 0.7287
+      gen_sec: 7.25
+      ref_sec: 8.48
+      cer: 0.0429
+      wer: 0.1429
+    bible_00064:
+      source: bible
+      text: Ne ɔso nyɔ sɔ aibatã ikpawaĩ nɛ mpia i fɔ ame ɔkpese idududu.
+      sbs: 0.6746
+      gen_sec: 4.86
+      ref_sec: 3.9
+      cer: 0.2083
+      wer: 0.4615
+    bible_00065:
+      source: bible
+      text: Masɔrɛdze makpakpa gu kaɖe makpakpa ɔsarɛ i Kayafa gɔ nɖe masɔrɛdze ɔkpakpa pelepele iyo.
+      sbs: 0.7028
+      gen_sec: 7.08
+      ref_sec: 6.52
+      cer: 0.12
+      wer: 0.2857
+    bible_00066:
+      source: bible
+      text: Mi nɖe bo ɔriinyɔ, bo isoɣɔ gu sigaraikoto alasɔ mi ɔso boakɔlɛ sirɔgɔgɔ̃ si Bosate Yesu ɔledza
+        iba.
+      sbs: 0.7258
+      gen_sec: 7.94
+      ref_sec: 7.36
+      cer: 0.0125
+      wer: 0.1667
+    bible_00067:
+      source: bible
+      text: Si lokpese losi ngbã ne, loabara karabara ga loabɔ kusia gbodzoo.
+      sbs: 0.6724
+      gen_sec: 5.21
+      ref_sec: 4.02
+      cer: 0.0189
+      wer: 0.1818
+    bible_00068:
+      source: bible
+      text: Asɛ aɖɔɛ ira nɛ nse bɔlɔlɔ fiɛ atsiri nwa loiya tɔrɔrɔ.
+      sbs: 0.6443
+      gen_sec: 4.27
+      ref_sec: 4.04
+      cer: 0.2955
+      wer: 0.6364
+    bible_00069:
+      source: bible
+      text: Nda ibara fiɛ ɔfɔ gɔ loiɖe ɔ Yudase ɔnɔwɛ̃ loakpese ɔba ɔ̃apɛ Ɣaa siba?
+      sbs: 0.7083
+      gen_sec: 5.63
+      ref_sec: 6.08
+      cer: 0.0
+      wer: 0.1429
+    bible_00070:
+      source: bible
+      text: Mi marɔ̃goyiridze ana ne, mitsue sɔ mi mare na ɔle makategu mi.
+      sbs: 0.738
+      gen_sec: 4.86
+      ref_sec: 4.06
+      cer: 0.0
+      wer: 0.0
+    bible_00071:
+      source: bible
+      text: Gɔ boro so ɔmala ne, bobo i ɔkolo ame bowara bokɛlɛ Kos.
+      sbs: 0.7333
+      gen_sec: 4.27
+      ref_sec: 4.72
+      cer: 0.093
+      wer: 0.25
+    bible_00072:
+      source: bible
+      text: Loito lobie sɔ ite lɛ ifɔ̃ nto lopia mi i wũ ɔko gɔ lotsɛrɛ ame.
+      sbs: 0.6442
+      gen_sec: 4.86
+      ref_sec: 3.08
+      cer: 0.0625
+      wer: 0.1333
+    bible_00073:
+      source: bible
+      text: Si iba ngbɔ.
+      sbs: 0.529
+      gen_sec: 1.02
+      ref_sec: 5.8
+      cer: 1.3333
+      wer: 1.0
+    bible_00074:
+      source: bible
+      text: Alasɔ maɔsu ngɔ nsɛ ɔɖaɛ bo manyii kanya kasɛ̃ i kakɔme ɔtã Ɣaa mafuĩdza mabɔrɛgu i kato.
+      sbs: 0.6728
+      gen_sec: 7.17
+      ref_sec: 7.08
+      cer: 0.0704
+      wer: 0.2941
+    bible_00075:
+      source: bible
+      text: Ne ɔrɔ̃go ɔtere ɔkɛlɛ fafuĩ ame ngbegɔ i Ɣaa ɔledza kasɛkɔ̃ ɔsɛ wũ sɔ maanyɔ wũ iso ayi kakpi
+        gu alafa anyɔ gu sikuɔ ne.
+      sbs: 0.722
+      gen_sec: 9.47
+      ref_sec: 10.94
+      cer: 0.0323
+      wer: 0.12
+    bible_00076:
+      source: bible
+      text: Fiɛ Kristo ɔki i ɔ̃ kayiribielea iso ɔtã bo ɔbiara karatã.
+      sbs: 0.7184
+      gen_sec: 4.78
+      ref_sec: 3.32
+      cer: 0.1522
+      wer: 0.2727
+    bible_00077:
+      source: bible
+      text: “Ɣɛɛ ne, ɔ̃ ɔse ɔkpere ɔ̃ maɖabo ɔɣere ma sɔ, ‘Mipɛ siwa si miɖi ara sɛɛ mipia wũ.
+      sbs: 0.7416
+      gen_sec: 6.31
+      ref_sec: 6.64
+      cer: 0.0172
+      wer: 0.0556
+    bible_00078:
+      source: bible
+      text: Alasɔ ɔ̃ mɔmɔ ɔnya sɔ bokote sɔ boaɣɛ ɔ̃ Itɔ̃me Bielea.
+      sbs: 0.688
+      gen_sec: 4.35
+      ref_sec: 3.1
+      cer: 0.0244
+      wer: 0.0909
+    bible_00079:
+      source: bible
+      text: Gɔ mato makɛlɛ ne, isoɣɔ lala ɔbo i ma ame, alasɔ manya sɔ Ɣaa ɔka ma ɔpia i mma lokote sɔ
+        maana kunuarɛ i Yesu iti.
+      sbs: 0.7385
+      gen_sec: 8.87
+      ref_sec: 9.68
+      cer: 0.1023
+      wer: 0.1923
+    bible_00080:
+      source: bible
+      text: Kristo to ɔɖe sigara i sile dzɛ ɔɖuɖu nto siɖe iso i kato, ɔle gɔ i maturi ba i ara iso, sile
+        agbãagbã dzɛ mpia gu sigarakuɖekɔ̃ ɔɖuɖu iso.
+      sbs: 0.7066
+      gen_sec: 10.58
+      ref_sec: 9.64
+      cer: 0.0654
+      wer: 0.2069
+    bible_00081:
+      source: bible
+      text: ” aaba i ne ame.
+      sbs: 0.6011
+      gen_sec: 1.02
+      ref_sec: 7.3
+      cer: 0.2
+      wer: 0.75
+    bible_00082:
+      source: bible
+      text: Lofɔ Mose mmara ɔɖuɖu loɖe gu ara wa matsɛrɛ mapia i Ɣaa kanyamaɖidze siko ame.
+      sbs: 0.6909
+      gen_sec: 6.23
+      ref_sec: 4.66
+      cer: 0.0312
+      wer: 0.1333
+    bible_00083:
+      source: bible
+      text: Ma mɔmɔ losɛ akparĩ wa masu mato makere so ala, fiɛ si ma mɔmɔ akparĩ masu mato makere so
+        ala ne, iyɔ iikpa ma.
+      sbs: 0.6798
+      gen_sec: 8.62
+      ref_sec: 7.34
+      cer: 0.0588
+      wer: 0.25
+    bible_00084:
+      source: bible
+      text: Si mato mabie sɔ maakarɛ irere manɔ ne, makarɛ ma marã si maɔbo iyo.
+      sbs: 0.6761
+      gen_sec: 5.29
+      ref_sec: 3.86
+      cer: 0.1132
+      wer: 0.4286
+    bible_00085:
+      source: bible
+      text: Alasɔ iki i Kristo iso ne, Ɣaa ɔɔɖi bo ɔsɛ, fiɛ ɔbara kayiiso sɔ boase sekelee, ikpi kuiwɛ̃
+        iibawe bo iso i ɔ̃ katɔ̃.
+      sbs: 0.7164
+      gen_sec: 9.05
+      ref_sec: 8.7
+      cer: 0.046
+      wer: 0.1667
+    bible_00086:
+      source: bible
+      text: Atoa sɔ bo akpi ɔso ne boɔkpi ne, ɔtã bota bobɔrɛ i makpise ame ku Kristo.
+      sbs: 0.7252
+      gen_sec: 5.72
+      ref_sec: 4.84
+      cer: 0.0351
+      wer: 0.3125
+    bible_00087:
+      source: bible
+      text: Sɔrɛdzekpakpa pelepele ɔkarɛ Stefano sɔ, “Ara wa mato maɣɛ ne gbaã iɖe?
+      sbs: 0.748
+      gen_sec: 5.72
+      ref_sec: 5.28
+      cer: 0.0702
+      wer: 0.1667
+    bible_00088:
+      source: bible
+      text: Ngbɔ ame kere i Bosate ɔtã sɔ mma nsɛ mapɛ Itɔ̃me Bielea imomo ne, itɔ̃me nɛmɔ iɣɛ ame maaɖe
+        ara maɖi.
+      sbs: 0.6965
+      gen_sec: 8.02
+      ref_sec: 6.0
+      cer: 0.0513
+      wer: 0.1429
+    bible_00089:
+      source: bible
+      text: Wũ mabi ɖɔɛse, nto lotsɛrɛ ɔko gɔgbe lotã mi sɔ si miibabara ikpi, ɣɛɛ si ɔrere ɔbara ikpi
+        ne, boba ngɔ nsɛ ɔtã Ɣaa iti i bo kanya gɔ ɔ̃ nɖe Yesu Kristo gɔ nɖe ɔturi bɔlɔlɔa.
+      sbs: 0.723
+      gen_sec: 13.65
+      ref_sec: 13.8
+      cer: 0.0752
+      wer: 0.1351
+    bible_00090:
+      source: bible
+      text: Kpakpɛ̃dzekpakpa gɔ nsɛgu bo ɔnya ɔkolo gɔ lobɔrɛ i Aleksandria fiɛ ɔsɛ Italia karɔ̃ iso.
+      sbs: 0.6923
+      gen_sec: 7.08
+      ref_sec: 7.76
+      cer: 0.0972
+      wer: 0.2
+    bible_00091:
+      source: bible
+      text: Mme ne, wũ iyi farafanava iso matu me sirɛrɛ̃, Israelse mɔmɔ loɣe me, lobɔrɛ i Benyamin kakpa
+        ame fiɛ loɖe ɔ Hebrise gɔdɛĩ.
+      sbs: 0.7067
+      gen_sec: 9.9
+      ref_sec: 8.34
+      cer: 0.1354
+      wer: 0.3043
+    bible_00092:
+      source: bible
+      text: Gɔ ɔba ɔ̃abɔrɛ i iyo ne, ɔ̃isito ɔwo ika ɔɖegu ma.
+      sbs: 0.7135
+      gen_sec: 3.75
+      ref_sec: 4.46
+      cer: 0.0556
+      wer: 0.2727
+    bible_00093:
+      source: bible
+      text: Mma ɔɖuɖu lonɔ ara wagbe ɔla maɔkarɛ so sɔ, “Mme ɔturi igbã i ɔbi gɔgbe to ɔba ɔ̃aɖe?
+      sbs: 0.7105
+      gen_sec: 6.49
+      ref_sec: 5.52
+      cer: 0.0156
+      wer: 0.1667
+    bible_00094:
+      source: bible
+      text: Ɣɛɛ ɔkarɛ ma sɔ, “Be ɔso fiɛ mikpɔkpɔtɔ mito miwararã so?
+      sbs: 0.719
+      gen_sec: 4.52
+      ref_sec: 4.74
+      cer: 0.1364
+      wer: 0.2727
+    bible_00095:
+      source: bible
+      text: Si kayiiso siturina pia ne, iyɔ siwarã ame sire ana pia.
+      sbs: 0.6995
+      gen_sec: 4.44
+      ref_sec: 3.22
+      cer: 0.1136
+      wer: 0.4545
+    bible_00096:
+      source: bible
+      text: Ɔluwɛ̃ ne, awɛ ɔtsɛ ikpɛ̃, gɔ ato apɛ ndu apia i ɔkolo ame sɔ miɔro ɔyi fiɛ ɔ̃awã.
+      sbs: 0.7067
+      gen_sec: 6.31
+      ref_sec: 8.56
+      cer: 0.0508
+      wer: 0.1667
+    bible_00097:
+      source: bible
+      text: Ɔtã ma karabara gagbe sɔ iaki ma iso ne, maaledza mafɔɖedze matã Ɣaa karabara matã Kristo
+        masiaidze katɔ̃ isɛ.
+      sbs: 0.6937
+      gen_sec: 8.87
+      ref_sec: 6.98
+      cer: 0.0225
+      wer: 0.2105
+    bible_00098:
+      source: bible
+      text: Wũ ara wa lote mi ne, ase ɖɔbɔrɔɔ lɛ inyɛdu mɛ i ɔbiɛtɛ sɛ ɔmeme, iiɖe makpakpa aɖera.
+      sbs: 0.7012
+      gen_sec: 6.66
+      ref_sec: 6.26
+      cer: 0.1667
+      wer: 0.2778
+    bible_00099:
+      source: bible
+      text: Ne ɔso loto mi i kukpa sɔ miɖe ara si miana ɔle fiɛ miibakpi.
+      sbs: 0.7178
+      gen_sec: 4.52
+      ref_sec: 4.2
+      cer: 0.1277
+      wer: 0.2143
+    bible_00100:
+      source: bible
+      text: Ma Yudase ɔɖuɖu ɔtɔrã masia sɔ nwa ɔɖuɖu i Tertulo ɔɣɛ pia i ne ame.
+      sbs: 0.6958
+      gen_sec: 5.29
+      ref_sec: 4.86
+      cer: 0.0377
+      wer: 0.1333
+    bible_00101:
+      source: bible
+      text: Ne ɔso mitã kakpɛkɔ̃ sate iti sɔ ɔsese marabaradze ɔ̃ kakpɛkɔ̃ ame.
+      sbs: 0.7019
+      gen_sec: 5.29
+      ref_sec: 4.42
+      cer: 0.0769
+      wer: 0.25
+    bible_00102:
+      source: bible
+      text: Boɣe sɔ boɔbɔrɛ i kukpi nrɔɔ̃ ame bobo i ngbã ame, boɣe ngbɔ alasɔ bosɛ boɖɔɛ bo manyii.
+      sbs: 0.728
+      gen_sec: 7.08
+      ref_sec: 6.14
+      cer: 0.1324
+      wer: 0.3333
+    bible_00103:
+      source: bible
+      text: Ne mmamɔ ɔkarɛ ma sɔ, “Be ɔso mito minyɔnyɔ gbanadze i makpise ndɛ̃?
+      sbs: 0.6914
+      gen_sec: 5.12
+      ref_sec: 4.26
+      cer: 0.0192
+      wer: 0.2308
+    bible_00104:
+      source: bible
+      text: iyɔ maɔfiniki maba wũ kɔrɛ fiɛ mme, Ɣaa, loasa ma.
+      sbs: 0.7056
+      gen_sec: 4.1
+      ref_sec: 3.08
+      cer: 0.0789
+      wer: 0.4
+    bible_00105:
+      source: bible
+      text: Ɣɛɛ ɔrɔ̃go gɔ nyiri kurã ne, ɔsɛ ɔsu ɔ̃ adzuni ɔsia i kayiiso ara iso, alasɔ ɔsɛ ɔbie sɔ ɔ̃abo
+        ɔ̃ ɔrã anɔ.
+      sbs: 0.6882
+      gen_sec: 8.19
+      ref_sec: 5.92
+      cer: 0.0649
+      wer: 0.3043
+    bible_00106:
+      source: bible
+      text: Gɔ Yesu ɔnya ma ne, ɔɣere ma sɔ, “Mikɛlɛ maisu so mite Ɣaa Masɔrɛdze si manyɔ mi kukaakɔ.
+      sbs: 0.755
+      gen_sec: 6.83
+      ref_sec: 6.88
+      cer: 0.0735
+      wer: 0.2222
+    bible_00107:
+      source: bible
+      text: Bo Ɔse Ɣaa gu Bosate Yesu Kristo si matã mi abualɛra gu isobuɛ.
+      sbs: 0.6856
+      gen_sec: 5.03
+      ref_sec: 3.66
+      cer: 0.02
+      wer: 0.0769
+    bible_00108:
+      source: bible
+      text: I ɔle gɔ i Bokɔse Yesu Kristo ɔtã me kanya ne, loto mi i kukpa teteree sɔ lɛ manyii awe ne,
+        minɔgu so ara karɔ̃ sɔ iɣɛɣɛso kuiwɛ̃ iibawe i mi ndɛ̃.
+      sbs: 0.6736
+      gen_sec: 11.35
+      ref_sec: 8.9
+      cer: 0.0455
+      wer: 0.2188
+    bible_00109:
+      source: bible
+      text: Ɔɣere ma nnɛ i Bosate ɔɣere wũ gu Itɔ̃me Bielea nɛ ɔɣɛ ku katetere i Yesu iyere ame i Damasko.
+      sbs: 0.7139
+      gen_sec: 7.51
+      ref_sec: 7.52
+      cer: 0.0685
+      wer: 0.25
+    bible_00110:
+      source: bible
+      text: Mi marɔ̃go ne, mibɔ so karɔ̃ mitã mi marã, alasɔ ngbɔ lokote itã Bosate mafɔɖedze ne.
+      sbs: 0.6859
+      gen_sec: 6.83
+      ref_sec: 5.2
+      cer: 0.0308
+      wer: 0.25
+    bible_00111:
+      source: bible
+      text: Inyɛwe akɔdzɛ wagbe nɖe atsɔra wa loaɖi Ɣaa sikpã tsɔra ate ne.
+      sbs: 0.7207
+      gen_sec: 5.03
+      ref_sec: 5.16
+      cer: 0.0784
+      wer: 0.1667
+    bible_00112:
+      source: bible
+      text: Ɔɣɛ i isɔrɛkasege ga iso ɔto ɔtsuedza kua kɔrɔ̃kɔrɔ̃a kuɖearɔ̃ iso.
+      sbs: 0.6718
+      gen_sec: 5.46
+      ref_sec: 5.1
+      cer: 0.1132
+      wer: 0.5455
+    bible_00113:
+      source: bible
+      text: Ɣɛɛ ɔsu nrɔɔ̃ ɔfu so igbegbe, ɔɣɛ sɔ, ‘Ɣaa nyɔ me gɔ nɖe kpibaradze nnya!
+      sbs: 0.7201
+      gen_sec: 5.72
+      ref_sec: 6.14
+      cer: 0.0556
+      wer: 0.2
+    bible_00114:
+      source: bible
+      text: ’ Fiɛ si boɣɛ sɔ maturi kɔrɛ ɔfɔ ɔbɔrɛ gu ne, mma loba maasakanya ngbe to maapɛ bo ata alasɔ
+        ma ɔɖuɖu ɔfɔ maɖe sɔ Ɣaa kanyaɖidze i Yohanes ɖe.
+      sbs: 0.6634
+      gen_sec: 10.75
+      ref_sec: 9.12
+      cer: 0.0364
+      wer: 0.2414
+    bible_00115:
+      source: bible
+      text: Si mato mati bo kama i amumuɣɔ ɔri iso ne, bosɛ bopia so katetere.
+      sbs: 0.6648
+      gen_sec: 5.12
+      ref_sec: 3.28
+      cer: 0.1176
+      wer: 0.2143
+    bible_00116:
+      source: bible
+      text: Yesu ɔkɛlɛgu i katɔ̃ ɔɣere ma sɔ, “Karɔ̃ to kaakpɛ̃ gu karɔ̃ fiɛ sigarakaɖekɔ̃ aka anyɔ to
+        aakpɛ̃gu so.
+      sbs: 0.7299
+      gen_sec: 8.11
+      ref_sec: 7.28
+      cer: 0.0658
+      wer: 0.3158
+    bible_00117:
+      source: bible
+      text: Miɖi kaɖo gu sikpã gu itsiri ɔɖuɖu i mi ndɛ̃.
+      sbs: 0.676
+      gen_sec: 3.5
+      ref_sec: 3.18
+      cer: 0.1765
+      wer: 0.2
+    bible_00118:
+      source: bible
+      text: ” Gɔ Anania gɔ nɖe ma Yudase sɔrɛdzekpakpa pelepele i ma ndɛ̃ ɔnɔ Paulo ikaɖe ne, ɔɣere mma
+        nɣɛ i Paulo kɔrɛ sɔ mapɛ wũ ɔrɔ̃ta i kanya.
+      sbs: 0.7328
+      gen_sec: 10.41
+      ref_sec: 11.04
+      cer: 0.0291
+      wer: 0.1111
+    bible_00119:
+      source: bible
+      text: Iyi iwɛ̃ ne, Petro gu Yohanes ɔkɛlɛ Isɔrɛyo ku kakɔme iɖɔwũ itɛ ame, ɔwi gɔ i ma Yudase sɛ
+        makparama kayi.
+      sbs: 0.7332
+      gen_sec: 8.28
+      ref_sec: 9.18
+      cer: 0.0488
+      wer: 0.1429
+    bible_00120:
+      source: bible
+      text: Mmɔ ɔto ɔɣere ma sɔ, “Mi ndɛ̃ nna ɔbi ɣee nantsuĩ loakpase ɔbo i ibu ɣee iwo ame ku Iwarãyi
+        fiɛ ɔ̃ibaɖi wũ i Iwarãyi nɛmɔ iso?
+      sbs: 0.7076
+      gen_sec: 10.15
+      ref_sec: 10.9
+      cer: 0.0316
+      wer: 0.1852
+    bible_00121:
+      source: bible
+      text: Gɔ miisisɛ misiai ma i ara lalaa kaɖukaɖu wamɔ ibara ame ne, isɛ ibara ma ɣii ne ɔso masɛ
+        matia mi ne.
+      sbs: 0.7123
+      gen_sec: 7.85
+      ref_sec: 7.94
+      cer: 0.0886
+      wer: 0.2273
+    bible_00122:
+      source: bible
+      text: Gɔ Yesu ɔbo kudziri kayirinɔ ne, ɔtui ɔya, ɔkɔlɛ anɔ kato ne ɔɣere Zakeo sɔ, “Zakeo, so ba
+        mala, alasɔ fɔ iyo loabo nɔme.
+      sbs: 0.7513
+      gen_sec: 9.22
+      ref_sec: 10.26
+      cer: 0.0549
+      wer: 0.2917
+    bible_00123:
+      source: bible
+      text: Yosef ana ɔbɔrɛ i Nasaret ɔmagɛ̃ ame i Galilea karɔ̃ iso ɔkɛlɛ Betlehem ɔmagɛ̃ ame i Yudea
+        karɔ̃ iso ngbegɔ maɣe igara David.
+      sbs: 0.7283
+      gen_sec: 9.9
+      ref_sec: 10.74
+      cer: 0.0306
+      wer: 0.087
+    bible_00124:
+      source: bible
+      text: Ɔwɛ̃ ɖe ɔ Farisise fiɛ ɔwɛ̃ ana ɖe lampofɔdze.
+      sbs: 0.7005
+      gen_sec: 3.5
+      ref_sec: 3.62
+      cer: 0.2286
+      wer: 1.1111
+    bible_00125:
+      source: bible
+      text: Ɣɛɛ bo ne, gɔ bofɔ Siwarã Bielea boɖe ɔso ne, boɣara so pɔkɔsɔɔ boto bonyɔ ɔri sɔ Ɣaa aanyɔ
+        bo sɔ bose bɔlɔlɔ.
+      sbs: 0.7128
+      gen_sec: 8.79
+      ref_sec: 7.72
+      cer: 0.0941
+      wer: 0.1739
+    bible_00126:
+      source: bible
+      text: Yesu ɔɣere ɔ̃ marasuãdze sɔ, “Ɔwi ɔwɛ̃ ame ne, ranase ɔwɛ̃ ɔwe gɔ ɔba ɔɖabo gɔ nsɛ ɔnyɔ ɔ̃
+        ara iso.
+      sbs: 0.7342
+      gen_sec: 7.51
+      ref_sec: 7.42
+      cer: 0.0141
+      wer: 0.0476
+    bible_00127:
+      source: bible
+      text: ” Bielea ɔta ɔkɛlɛ ɔri gɔmɔ iso.
+      sbs: 0.6975
+      gen_sec: 2.39
+      ref_sec: 13.82
+      cer: 0.375
+      wer: 0.6667
+    bible_00128:
+      source: bible
+      text: Nwa ɔsia ita ɔsɛ sɔ ɔ̃abara ɔwiri ɔkigu i Kristo iso.
+      sbs: 0.6708
+      gen_sec: 4.1
+      ref_sec: 3.26
+      cer: 0.0488
+      wer: 0.1818
+    bible_00129:
+      source: bible
+      text: Si bobo so ame kukaakɔ bokpa so ne, Ɣaa iibaɣɛgu bo atɔ̃me.
+      sbs: 0.7318
+      gen_sec: 4.78
+      ref_sec: 3.26
+      cer: 0.0889
+      wer: 0.25
+    bible_00130:
+      source: bible
+      text: Mmaratedze ɔwɛ̃ ɔba Yesu kɔrɛ sɔ si ɔba ɔ̃ala Yesu ɔnyɔ.
+      sbs: 0.6883
+      gen_sec: 4.27
+      ref_sec: 3.54
+      cer: 0.1395
+      wer: 0.4545
+    bible_00131:
+      source: bible
+      text: Manyii, i ɔnukuare ame ne, loiwo mi ika ɔɖe lɛ mma i Ɣaa Siwarã to siɖe iso.
+      sbs: 0.7015
+      gen_sec: 5.89
+      ref_sec: 5.04
+      cer: 0.0175
+      wer: 0.0588
+    bible_00132:
+      source: bible
+      text: Si bobara i Ɣaa mmara iso ne, ite sɔ boto boɖɔɛ wũ, fiɛ ɔ̃ mmara iso ibara na ɔle.
+      sbs: 0.724
+      gen_sec: 6.31
+      ref_sec: 6.78
+      cer: 0.0667
+      wer: 0.1579
+    bible_00133:
+      source: bible
+      text: Ɣaa Siwarã lotã bo ngbã, ne ɔso mitã bosɛ ngbã i sɛ̃ kuɖɔɛ ame.
+      sbs: 0.6859
+      gen_sec: 5.29
+      ref_sec: 3.64
+      cer: 0.0638
+      wer: 0.2857
+    bible_00134:
+      source: bible
+      text: Mi ma nɖe makɔse ana ne, mila mi maɖabo kukaakɔ si minyigi sɔ mi wũ miba Ɔkɔse i kato.
+      sbs: 0.6824
+      gen_sec: 6.57
+      ref_sec: 5.16
+      cer: 0.0152
+      wer: 0.0526
+    bible_00135:
+      source: bible
+      text: gɔ ɔse nɖe David gɔ ɔse nɖe Isai.
+      sbs: 0.7008
+      gen_sec: 2.47
+      ref_sec: 3.6
+      cer: 0.16
+      wer: 0.5
+    bible_00136:
+      source: bible
+      text: Mibuai So I Imɔrɛ̃ Ame.
+      sbs: 0.6075
+      gen_sec: 1.79
+      ref_sec: 3.26
+      cer: 0.0588
+      wer: 0.6
+    bible_00137:
+      source: bible
+      text: Alasɔ si loɣere maturi Itɔ̃me Bielea fiɛ mafiniki ne, loito lobie sɔ maaɣere me i kawirikɔ̃
+        sɔ loikote.
+      sbs: 0.6653
+      gen_sec: 8.36
+      ref_sec: 7.78
+      cer: 0.0122
+      wer: 0.0556
+    bible_00138:
+      source: bible
+      text: Itɔ̃me nɛ loto loɣɛ ne, ɔɣɛ loto sɔ si loabo maturi anɔ ɛɛbɛrɛ Ɣaa?
+      sbs: 0.6855
+      gen_sec: 5.46
+      ref_sec: 3.66
+      cer: 0.0196
+      wer: 0.0714
+    bible_00139:
+      source: bible
+      text: Ɔwi gɔ ɔ̃ɔnina ira biara nɛ ɔba ɔro kama ne, kukã siare kuwɛ̃ ɔbo i karɔ̃ gamɔ ɔɖuɖu iso gɔ
+        itã sɔ kukã ɔkpɛ̃ wũ gbaã.
+      sbs: 0.7451
+      gen_sec: 9.39
+      ref_sec: 9.5
+      cer: 0.0575
+      wer: 0.1923
+    bible_00140:
+      source: bible
+      text: Gɔ mainya wũ ɔso ne, makpese makɛlɛ Yerusalem masɛ mapia manyɔnyɔ wũ.
+      sbs: 0.7111
+      gen_sec: 5.72
+      ref_sec: 4.68
+      cer: 0.0179
+      wer: 0.0833
+    bible_00141:
+      source: bible
+      text: gɔ ɔse nɖe Regu gɔ ɔse nɖe Peleg.
+      sbs: 0.6794
+      gen_sec: 2.47
+      ref_sec: 3.46
+      cer: 0.2
+      wer: 0.375
+    bible_00142:
+      source: bible
+      text: Kosore ɔba ɔ̃atu ɔ̃ ɔse ɔɣere wũ sɔ, ‘Tete, su wũ kaɖekɔ̃ ga loaɣo me si akpi tã me kiniɔ.
+      sbs: 0.7219
+      gen_sec: 7.17
+      ref_sec: 8.06
+      cer: 0.0625
+      wer: 0.2
+    bible_00143:
+      source: bible
+      text: ’ Nto loɣere mi sɔ gbaã ne, ngbɔ ame i Ɣaa makpabo ana aana isoɣɔ i kpibaradze ɔwɛ̃ saã gɔ
+        lofiniki ɔso ne.
+      sbs: 0.7093
+      gen_sec: 8.36
+      ref_sec: 6.18
+      cer: 0.0123
+      wer: 0.0455
+    bible_00144:
+      source: bible
+      text: Loto Ewodia gu Sinteke i kukpa sɔ manɔgu so ara karɔ̃ lɛ manyiibi i Bosate ame.
+      sbs: 0.7026
+      gen_sec: 6.06
+      ref_sec: 5.34
+      cer: 0.0645
+      wer: 0.1875
+    bible_00145:
+      source: bible
+      text: Ne ɔso mi wũ mikpese Ɣaa maturi gɔ minɔ itɔ̃me gbaã, Itɔ̃me Bielea nɛ lobɔ mi iɖi.
+      sbs: 0.6949
+      gen_sec: 6.57
+      ref_sec: 5.14
+      cer: 0.0323
+      wer: 0.1176
+    bible_00146:
+      source: bible
+      text: Ɣɛɛ su me bara lɛ fɔ maɖabo ma nsɛ mabara fɔ karabara ndɛ̃ ɔwɛ̃.
+      sbs: 0.708
+      gen_sec: 4.95
+      ref_sec: 4.48
+      cer: 0.1458
+      wer: 0.4286
+    bible_00147:
+      source: bible
+      text: Ɔluwɛ̃ ne, ɔrɛrɛ̃ ɔwɛ̃ gɔ i siwarã lalaa si iso fiɛ ɔwe i kasarɛkɔ̃ mmɔ ɔsiagu kulu teteree
+        sɔ, “Yesu Nasaretse, be mpia i bo gu-ɔ ndɛ̃?
+      sbs: 0.7222
+      gen_sec: 10.5
+      ref_sec: 12.06
+      cer: 0.101
+      wer: 0.3704
+    bible_00148:
+      source: bible
+      text: Ɔbiara gɔ nsɛ ɔbara i Ɣaa mmara iso pia i Ɣaa ame fiɛ Ɣaa ɔ̃ wũ ɔpia i ɔ̃ ame.
+      sbs: 0.7195
+      gen_sec: 5.97
+      ref_sec: 5.48
+      cer: 0.0
+      wer: 0.0
+    bible_00149:
+      source: bible
+      text: Ikɔ nɛmɔ ame ne, Yohanes gɔ nɖe Zakaria ɔbi ɔfɔ silɔ ɔbɔrɛgu i Ɣaa kɔrɛ i fafuĩ ame.
+      sbs: 0.7139
+      gen_sec: 6.57
+      ref_sec: 7.04
+      cer: 0.0154
+      wer: 0.1667
+    bible_00150:
+      source: bible
+      text: Ɣɛɛ Yesu ɔɣere ma sɔ, “Midaanigã ne mme loɖe!
+      sbs: 0.7199
+      gen_sec: 3.67
+      ref_sec: 4.06
+      cer: 0.0588
+      wer: 0.2222
+    bible_00151:
+      source: bible
+      text: Nsɛ lokarɛ wũ sɔ ɔbusi mi anɔ sɔ mianya nnɛ ɔso fiɛ ɔkpere mi ɔbɔ sɔ mianyɔ ne ɔri.
+      sbs: 0.6798
+      gen_sec: 6.31
+      ref_sec: 5.62
+      cer: 0.1094
+      wer: 0.2632
+    bible_00152:
+      source: bible
+      text: Gɔ ɔnya Yesu ne, ɔpɛ agɛgɛ̃ i ɔ̃ katɔ̃.
+      sbs: 0.5949
+      gen_sec: 2.9
+      ref_sec: 3.36
+      cer: 0.1154
+      wer: 0.1111
+    bible_00153:
+      source: bible
+      text: Ne ɔso kuɖɔɛ si kuɖe nnɛ miatere misiai miɖo, ɣɛɛ mibie siwarã ame karatã mama ana titirio
+        Ɣaa itɔ̃me kanya iɖi.
+      sbs: 0.6883
+      gen_sec: 9.13
+      ref_sec: 7.4
+      cer: 0.0562
+      wer: 0.2381
+    bible_00154:
+      source: bible
+      text: Kawirikɔ̃ ne wũ manyii, mitã mi adzuni si ayi ku ara wa nɖe asɛɛ, nwa lokote atã ile, nwa
+        nɖe ɔnukuare, nwa lokote atã kuwarɛ, nwa loya, nwa iso i kuira iinina, ara wa nsɛ alɛ ɔnyɔ gu
+        nwa lokote sɔ ɔturi aabara.
+      sbs: 0.7218
+      gen_sec: 16.63
+      ref_sec: 14.52
+      cer: 0.0875
+      wer: 0.2326
+    bible_00155:
+      source: bible
+      text: Mito mipia kubɛ i awɛ̃ ame ɣɛɛ bobie sɔ boapia mi ɔtɔ i Bosate Yesu iyere ame sɔ mibara ngbɔ
+        mibua.
+      sbs: 0.7371
+      gen_sec: 7.59
+      ref_sec: 6.82
+      cer: 0.1169
+      wer: 0.3333
+    bible_00156:
+      source: bible
+      text: Ɔwi gɔ lofe ame ne, ɔrɛrɛ̃ ɔwɛ̃ gɔ marɔ sɔ Teuda ɔbara so lɛ ngɔ lobua ɔnya.
+      sbs: 0.7339
+      gen_sec: 5.72
+      ref_sec: 6.76
+      cer: 0.0357
+      wer: 0.1176
+    bible_00157:
+      source: bible
+      text: Ne ɔsu ndã ikɔi ne, gɔ ɔpɛ Ɣaa siba i ne iti ne, ɔsu ɔtã ma, ɔɣere ma sɔ, “Mifɔ minɛ.
+      sbs: 0.743
+      gen_sec: 6.49
+      ref_sec: 7.48
+      cer: 0.0678
+      wer: 0.2381
+    bible_00158:
+      source: bible
+      text: Si boto bobara i Ɣaa mmara iso ne, iyɔ ite sekelee sɔ boɣe wũ.
+      sbs: 0.7331
+      gen_sec: 4.95
+      ref_sec: 4.16
+      cer: 0.0851
+      wer: 0.2143
+    bible_00159:
+      source: bible
+      text: Ɔrɛrɛ̃ ɔwɛ̃ gɔ nrɔɔ̃ gu ngba loɣe ɔba ɔ̃ kɔrɛ.
+      sbs: 0.6648
+      gen_sec: 3.58
+      ref_sec: 3.06
+      cer: 0.0938
+      wer: 0.2
+    bible_00160:
+      source: bible
+      text: Ɔwi gɔ mapia i Betlehem mmɔ ne, Maria ɔwi ɔɣo sɔ ka ɔ̃aɣe ɔbi.
+      sbs: 0.7171
+      gen_sec: 4.86
+      ref_sec: 4.86
+      cer: 0.1087
+      wer: 0.2857
+    bible_00161:
+      source: bible
+      text: Ne ɔso si wũ isoɣɔ aayi ne, mitã mi adzuni si aɖe awɛ̃, miwe kuɖɔɛ kuwɛ̃ mitã so, si mibara
+        mawɛ̃ i mi siwarã gu kurabarara ame.
+      sbs: 0.6968
+      gen_sec: 10.15
+      ref_sec: 8.74
+      cer: 0.0316
+      wer: 0.0741
+    bible_00162:
+      source: bible
+      text: Makarɛ wũ sɔ, “Mme iwawãra aabara ate bo bonya fiɛ boafɔ-ɔ boɖe?
+      sbs: 0.744
+      gen_sec: 5.12
+      ref_sec: 4.8
+      cer: 0.0408
+      wer: 0.3333
+    bible_00163:
+      source: bible
+      text: Lofɔ loɖe sɔ ɔto ɔ̃aɖe ɔturi bielea ɔtã-ɔ lɛ ɔsande gu ɔnyii i Bosate ame ana.
+      sbs: 0.7192
+      gen_sec: 6.06
+      ref_sec: 5.66
+      cer: 0.0833
+      wer: 0.375
+    bible_00164:
+      source: bible
+      text: Bo Ɣaa sɛ ɔɣara so pɔkɔsɔɔ fiɛ ɔba nnyainyɔ.
+      sbs: 0.6728
+      gen_sec: 3.58
+      ref_sec: 4.34
+      cer: 0.4
+      wer: 1.0
+    bible_00165:
+      source: bible
+      text: Ne ɔso wũ mabi mirera so kama i iɣɔsɔrɛ kɔrɛ.
+      sbs: 0.6623
+      gen_sec: 3.58
+      ref_sec: 8.8
+      cer: 0.2
+      wer: 0.5
+    bible_00166:
+      source: bible
+      text: Makpakpɛ̃dze ɔkpakpa gu kaɖe makpakpa ɔsiai ma kama.
+      sbs: 0.7268
+      gen_sec: 4.18
+      ref_sec: 7.8
+      cer: 0.2326
+      wer: 0.75
+    bible_00167:
+      source: bible
+      text: Manyii, boto mi i kukpa sɔ misu kuwarɛ mitã mi matɔ̃ɖedze ma nto mapia kubɛ mate mi Kristo
+        masiaidze ngbã isɛ ara.
+      sbs: 0.7108
+      gen_sec: 8.87
+      ref_sec: 8.14
+      cer: 0.0556
+      wer: 0.3182
+    bible_00168:
+      source: bible
+      text: Alasɔ Ɣaa sigara iɖe na i akaɖe kunu ame, ɣɛɛ ipia i ɔle ame.
+      sbs: 0.6919
+      gen_sec: 4.78
+      ref_sec: 4.24
+      cer: 0.0217
+      wer: 0.0714
+    bible_00169:
+      source: bible
+      text: ” Ne maturi inyɔ mamɔ ana ɔɣɛ ara wa manya i ɔri gu kumɛgɔ ɔɖi so ɔte ma gɔ ɔkpɛti boɖoboɖo
+        ɔtã ma ne.
+      sbs: 0.7188
+      gen_sec: 7.59
+      ref_sec: 8.06
+      cer: 0.039
+      wer: 0.1304
+    bible_00170:
+      source: bible
+      text: Ɣɛɛ ne, ise pɔkɔsɔɔ sɔ kato gu karɔ̃ aawã iɖo sɔ maakpasera mmara kakpoi kosoi tsɔra maɖi.
+      sbs: 0.7499
+      gen_sec: 7.25
+      ref_sec: 8.64
+      cer: 0.1408
+      wer: 0.4706
+    bible_00171:
+      source: bible
+      text: Iiɖe sɔ ɔnya ko inya sɔ loana ɔturi awune ɔɖe me aɖansiɛ, ɣɛɛ loto loɣɛ ngbɔ sɔ si miana iɖi.
+      sbs: 0.7307
+      gen_sec: 7.25
+      ref_sec: 8.52
+      cer: 0.0278
+      wer: 0.2
+    bible_00172:
+      source: bible
+      text: Ɔrɛrɛ̃ ɔwɛ̃ ɔwe mmɔ gɔ marɔ sɔ Yosef ɔbɔrɛ i Levi ɔɣekparɛ ame fiɛ ɔbɔrɛ i Kipro karɔ̃ iso.
+      sbs: 0.7057
+      gen_sec: 7.08
+      ref_sec: 8.64
+      cer: 0.1159
+      wer: 0.2632
+    bible_00173:
+      source: bible
+      text: Gɔ bo ayi wa boawegu ma ɔɔsɔ̃ fiɛ ka boarui ne, mafɔɖedze gu ma mare gu mabi ɔkɔ bo makɛlɛgu
+        ɔpo katɔ̃, ne bo ɔɖuɖu ɔpɛ agɛgɛ̃ bokparama kayi ne.
+      sbs: 0.7309
+      gen_sec: 11.01
+      ref_sec: 12.24
+      cer: 0.0636
+      wer: 0.3
+    bible_00174:
+      source: bible
+      text: Ɣɛɛ mifɔ ne lɛ Ɣaa itɔ̃me fiɛ ɔ̃ itɔ̃me iɖe gbaã, ne ɔso ibɔ ikpaki siare ana i mi mafɔɖedze
+        ngbã ame.
+      sbs: 0.7018
+      gen_sec: 8.02
+      ref_sec: 6.22
+      cer: 0.0395
+      wer: 0.1364
+    bible_00175:
+      source: bible
+      text: Alasɔ ɔ̃ nsɛ ɔtã kuɣɛ̃ ɔbɔrɛ kutã maturi sɛɛ gu malalaa ɔɖuɖu fiɛ ɔsɛ ɔtã kado ɔpɛ ɔtã maturi
+        bɔlɔlɔa gu maturi nyanyarĩa.
+      sbs: 0.7294
+      gen_sec: 10.15
+      ref_sec: 11.18
+      cer: 0.0825
+      wer: 0.2174
+    bible_00176:
+      source: bible
+      text: Ɔluwɛ̃ ne, makpakpa sinyɔ-ina ma nsi i ma sigaraiyara iso i Ɣaa katɔ̃ ɔta makɔlɛ mafu i ɔ̃
+        katɔ̃ male Ɣaa.
+      sbs: 0.7382
+      gen_sec: 8.36
+      ref_sec: 10.7
+      cer: 0.0886
+      wer: 0.4286
+    bible_00177:
+      source: bible
+      text: Ɔwi gɔ i Elisabet kayiri ɔɔfɔ awa akuɔ ne, Ɣaa ɔpia ɔ̃ kpabo Gabriel sɔ ɔkɛlɛ ɔmagɛ̃ gɔ marɔ
+        Nasaret i Galilea karɔ̃ iso.
+      sbs: 0.7288
+      gen_sec: 9.47
+      ref_sec: 10.02
+      cer: 0.0323
+      wer: 0.0833
+    bible_00178:
+      source: bible
+      text: ’ ne, ɔ̃ ame i Ɣaa ɔpia sɔ ɔsɛ ɔ̃aɖi ma si ɔkpese Ɖidze gu isoɖedze iki i Ɣaa kpabo gɔ ɔnya
+        i kadzirimi ga nto katsue kɔrɛ ne.
+      sbs: 0.7133
+      gen_sec: 9.13
+      ref_sec: 10.56
+      cer: 0.0215
+      wer: 0.2143
+    bible_00179:
+      source: bible
+      text: Ma gu bo ɔnyii ɖɔɛse Onesimo gɔ bofɔ boɖe fiɛ ɔɖe mi ndɛ̃ ɔwɛ̃ to maba maaɣere mi ara wa ɔɖuɖu
+        nto akɛlɛ i katɔ̃ ngbe.
+      sbs: 0.676
+      gen_sec: 8.96
+      ref_sec: 7.1
+      cer: 0.0449
+      wer: 0.0769
+    bible_00180:
+      source: bible
+      text: Gɔ mato makɛlɛ katɔ̃ ne, ɔkolo katɔ̃ ɔsɛ iamɔrɛ̃ i iwarĩ ame sɔ ɔ̃isito ɔwo ɔsɛ.
+      sbs: 0.723
+      gen_sec: 6.31
+      ref_sec: 6.76
+      cer: 0.1186
+      wer: 0.4375
+    bible_00181:
+      source: bible
+      text: Ɣaa ɔɔsu mma ɔɖuɖu mpia i ɔkolo ame ngbã ɔpia-ɔ i nrɔɔ̃ ame, mi kuwɛ̃ iibakpi.
+      sbs: 0.6911
+      gen_sec: 6.23
+      ref_sec: 4.32
+      cer: 0.0517
+      wer: 0.125
+    bible_00182:
+      source: bible
+      text: Nnɛgbe kama ne, gɔ ma Yudase to maɖe ma iyi iwɛ̃ ne, Yesu ɔsɛ Yerusalem.
+      sbs: 0.7621
+      gen_sec: 5.55
+      ref_sec: 6.28
+      cer: 0.0741
+      wer: 0.2667
+    bible_00183:
+      source: bible
+      text: Gɔ makpere Paulo ne, Tertulo ɔtsɛ ma kanya iɖi sɔ, “Ɔbea, ɔwi dzoroo nɖe ngɔgbe gɔ bopia i
+        isobuɛ ame ala fɔ iwola nɛ asu aɖegu bo katɔ̃ ɔso.
+      sbs: 0.6989
+      gen_sec: 10.58
+      ref_sec: 13.04
+      cer: 0.0467
+      wer: 0.1724
+    bible_00184:
+      source: bible
+      text: Kokooko ne, Ɣaa iiɖi ara wɛrɛa wagbe ɔte maturi, ɣɛɛ kiniɔ ne, Ɣaa ɔɔki i ɔ̃ Siwarã iso ɔɖi
+        ɔte ɔ̃ katɔ̃memasɛdze sekelea gu ɔ̃ kanyamaɖidze.
+      sbs: 0.708
+      gen_sec: 11.26
+      ref_sec: 10.14
+      cer: 0.0741
+      wer: 0.1154
+    bible_00185:
+      source: bible
+      text: Ɣɛɛ sɔ lona i Mose mmara kayirinɔ ne, losɛ lɛ ngɔ nsɛ ɔbara i mmara iso sɔ si loawo ma ɔkpadzɛ̃
+        ɔbɔ Bosate kɔrɛ.
+      sbs: 0.6939
+      gen_sec: 8.45
+      ref_sec: 7.86
+      cer: 0.0581
+      wer: 0.2083
+    bible_00186:
+      source: bible
+      text: Si maturi mama to mana kusia gɔgbe igbã i mi iso ne, iikote sɔ bo wũ boana ngɔ losi kuɖo?
+      sbs: 0.6792
+      gen_sec: 6.83
+      ref_sec: 5.16
+      cer: 0.0441
+      wer: 0.15
+    bible_00187:
+      source: bible
+      text: Ɔwe i mmɔ ɔ̃ ɔnɔwɛ̃ ayi sina, ne Ɔbosam ɔba ɔ̃ala wũ ɔnyɔ ne.
+      sbs: 0.6836
+      gen_sec: 4.69
+      ref_sec: 5.42
+      cer: 0.0698
+      wer: 0.2143
+    bible_00188:
+      source: bible
+      text: Mi ne, maturi ara inyɔ kanya misɛ miɣɛ mi atɔ̃me, ɣɛɛ mme ne, loisɛ loɣɛgu kuwɛ̃ atɔ̃me.
+      sbs: 0.7633
+      gen_sec: 7.17
+      ref_sec: 8.06
+      cer: 0.0308
+      wer: 0.1176
+    bible_00189:
+      source: bible
+      text: Minya i wũ ara ite ame ɔɖuɖu sɔ loiɖe ɔturi gɔ nsɛ ɔɣɛ atɔ̃me siare loɖe.
+      sbs: 0.6683
+      gen_sec: 5.72
+      ref_sec: 3.8
+      cer: 0.0357
+      wer: 0.125
+    bible_00190:
+      source: bible
+      text: Bosɛ boɣɛ ana kumɛgɔ mibua misɛ mibuai maturi i kuɖɔɛ ame fiɛ misu mi ɔriinyɔ mipia i Bosate
+        Yesu Kristo ame teteree.
+      sbs: 0.6729
+      gen_sec: 9.22
+      ref_sec: 7.16
+      cer: 0.0211
+      wer: 0.0909
+    bible_00191:
+      source: bible
+      text: Ɔmagɛ̃ gɔmɔ ame ame ne, kuɛdze ɔwɛ̃ pia gɔ ɔsɛ ɔba atɔ̃meɣɛdze kɔrɛ ɔba ɔ̃atã wũ iti sɔ, ‘Buai
+        me ala wũ matsirise ɔso.
+      sbs: 0.7428
+      gen_sec: 9.22
+      ref_sec: 9.4
+      cer: 0.0795
+      wer: 0.2083
+    bible_00192:
+      source: bible
+      text: Maturi to maasɛ̃ kulele ala ifɔ̃ nɛ nto ma gɔ maiɣe nnɛ nto iaba i kayi ɔɖuɖu iso ɔso.
+      sbs: 0.7185
+      gen_sec: 6.57
+      ref_sec: 6.48
+      cer: 0.0308
+      wer: 0.1053
+    bible_00193:
+      source: bible
+      text: Ɔkidza wũ ala ara nyanyarĩa mama wa ana ɔto ɔbara ɔso.
+      sbs: 0.6766
+      gen_sec: 4.27
+      ref_sec: 3.94
+      cer: 0.0233
+      wer: 0.1818
+    bible_00194:
+      source: bible
+      text: “Ne ɔso ɔkpere mma ɔɖuɖu nto ɔ̃ ɔkɔse kuso ɔwɛ̃ ɔwɛ̃.
+      sbs: 0.6905
+      gen_sec: 4.01
+      ref_sec: 3.9
+      cer: 0.0526
+      wer: 0.0909
+    bible_00195:
+      source: bible
+      text: ” Ɣɛɛ makpakpɛ̃dze ɔkpakpa ɔfɔ ɔkolo kãse gu ɔkolo sate adzuni ɔɖo nnɛ i Paulo ɔɣɛ.
+      sbs: 0.7007
+      gen_sec: 6.49
+      ref_sec: 5.86
+      cer: 0.0462
+      wer: 0.2
+    bible_00196:
+      source: bible
+      text: Si lokpi kɔra ne, ilɛ me iɖo sɔ ɔturi aanyɔ ira nɛ iso loawo ndamu ɔɖe pupurii.
+      sbs: 0.7104
+      gen_sec: 5.97
+      ref_sec: 4.38
+      cer: 0.0328
+      wer: 0.1176
+    bible_00197:
+      source: bible
+      text: Wã nɖe sikpã, sikpã lalaa, ituritsiri, fiɛ iikote sɔ sitia, ɣee itsuɛ pɛ̃ kuiwɛ̃ aabɔrɛ mi
+        i kanya.
+      sbs: 0.7182
+      gen_sec: 8.19
+      ref_sec: 6.56
+      cer: 0.08
+      wer: 0.3889
+    bible_00198:
+      source: bible
+      text: “Ɣɛɛ loba aɖansiɛ wa mba ɔrɔrã aɖo Yohanes ɔkpɛ.
+      sbs: 0.6865
+      gen_sec: 3.93
+      ref_sec: 3.72
+      cer: 0.0526
+      wer: 0.2222
+    bible_00199:
+      source: bible
+      text: Matsɛrɛ lɛ kumɛgɔ i mma lonya Itɔ̃me Bielea karɔ̃kasɛkɔ̃ ɔɣere bo awe, fiɛ mato maya ne isã
+        ana.
+      sbs: 0.7022
+      gen_sec: 7.68
+      ref_sec: 8.94
+      cer: 0.027
+      wer: 0.1111
 - model: ghananlpcommunity/ghana-tts-36k-noref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: noref
@@ -16863,4 +18549,4 @@ benchmarks:
       ref_sec: 8.94
       cer: 0.3108
       wer: 0.6667
-updated: '2026-10-01'
+updated: '2026-10-09'

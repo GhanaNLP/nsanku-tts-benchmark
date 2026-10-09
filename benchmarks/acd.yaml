@@ -1797,6 +1797,1792 @@ benchmarks:
       ref_sec: 8.48
       cer: 0.0238
       wer: 0.05
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7348
+  num_scored: 200
+  cer: 0.053
+  wer: 0.192
+  accuracy: 0.947
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8409
+  score: 0.8409
+  per_source:
+    bible:
+      sbs: 0.7348
+      cer: 0.053
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Akon mɔ a don mɔ-abaa so mɔ, nengyene fɛɛ ɔ nyɛ akuuri mɔ ilaa gyisɛ gbaa mɔ, nkana ɔ kya
+        laarɛ kyɔde. Imɔ gɛnen mɔ, ɔko mɛŋ kya sa mɔ imɔ iko‑rɛ iko.
+      sbs: 0.7774
+      gen_sec: 11.78
+      ref_sec: 10.2
+      cer: 0.009
+      wer: 0.1818
+    bible_00001:
+      source: bible
+      text: Imɔ‑rɛ imɔ gɛnen gbaa mɔ, Wurubuaarɛ gi kii kyingi mɔ. Ɔ lɛɛ mɔ lii lɛwu anyanyan dɔ. I kya
+        nyiile yɛɛ iŋ bo no yɛɛ ɔ laa wuꞌ sii isɛ dɔ.
+      sbs: 0.7845
+      gen_sec: 10.67
+      ref_sec: 9.8
+      cer: 0.0686
+      wer: 0.1613
+    bible_00002:
+      source: bible
+      text: Gɛnen kee ne fɛye-sɛ Wurubuaarɛ dɛ ne. Iŋ gyɛ mɔ-gɛlaarɛ yɛɛ apiipii adɛ dɔ ɔko ɔꞌ fuɛ Wurubuaarɛ
+        ɔkpa mɔ de mɔ-ɔkyenaten Wurubuaarɛ asɛ ɔꞌ lii mɔ-gibaa.
+      sbs: 0.7523
+      gen_sec: 12.46
+      ref_sec: 9.64
+      cer: 0.0496
+      wer: 0.1481
+    bible_00003:
+      source: bible
+      text: Nꞌ tɔgɛ fo yɛɛ mɔ-ilaa nyɛnyɛn ibono i nyaakyɔ ne nɛ kyu kyɛɛ mɔ mɔ ne n yɛgɛ ɔ nyɛ gɛlaarɛꞌ
+        belɛ sa me faa. Isa ɔbono, mɔ, mɔ-ilaa nyɛnyɛn iŋ kyɔ ne ɔko gi kyu kyɛɛ mɔ mɔ, gɛlaarɛꞌ pi‑i
+        ne ɔ laa nyɛ sa kaasɛ kee.”
+      sbs: 0.7443
+      gen_sec: 16.63
+      ref_sec: 14.54
+      cer: 0.0316
+      wer: 0.1667
+    bible_00004:
+      source: bible
+      text: ‘Gɛŋ sa foꞌ daasɛ fo-Wura Wurubuaarɛ kerɛ yɛɛ ɔ laa wɔra fo-gɛlaarɛ sa fo.’ ”
+      sbs: 0.6471
+      gen_sec: 5.97
+      ref_sec: 3.46
+      cer: 0.1579
+      wer: 0.7857
+    bible_00005:
+      source: bible
+      text: Meŋ bo ɔkpa de nꞌ kyu me-aterenbi kyu wɔra ilaa ibono n kya laarɛ mɔ? Abɛɛ fo wu me-gidɛnsɛ
+        gibono nɛ wɔra mɔ, i kya loo fo daa?’ ”
+      sbs: 0.7065
+      gen_sec: 10.07
+      ref_sec: 7.36
+      cer: 0.0104
+      wer: 0.0357
+    bible_00006:
+      source: bible
+      text: Me-sɛana, n kya ŋmarasɛ fɛye ɔwolɛ baarɛ n kya tɔgɛ fɛye
+      sbs: 0.7162
+      gen_sec: 4.69
+      ref_sec: 3.84
+      cer: 0.0
+      wer: 0.1818
+    bible_00007:
+      source: bible
+      text: “O nu gɛnen mɔ, ɔ sɔɔ ginyadon ne o kine yɛɛ ɔ maŋ baa loo gɛten dɔ. Mɔ-sɛ gi nu yɛɛ mɔ-bi
+        belɛnsɛ mɔ gi sɔɔ ginyadon mɔ, ɔ lii kpe mɔ asɛ, ɔ kya buɛɛlɛ mɔ.
+      sbs: 0.7675
+      gen_sec: 11.95
+      ref_sec: 10.38
+      cer: 0.0179
+      wer: 0.1081
+    bible_00008:
+      source: bible
+      text: Owi ɔko dɔ mɔ Yesu kya dalaa mɔ wolɛ, ne mɔ-akasɛbo mɔ mɛ bo mɔ asɛ. Nfono mɔ ɔ taasɛ mɔmɔ
+        yɛɛ, “Sakpii mɔ asɛ mɔ, menɛ nyamesɛ ne nꞌ gyɛ?”
+      sbs: 0.7526
+      gen_sec: 10.41
+      ref_sec: 12.44
+      cer: 0.0297
+      wer: 0.0968
+    bible_00009:
+      source: bible
+      text: Gɛsintin mɔ, ɔtɛgɛsɛ mɔ gi koso, ne ɔ naa kyon kpe mɔ-gɛwi.
+      sbs: 0.6596
+      gen_sec: 4.78
+      ref_sec: 4.2
+      cer: 0.0227
+      wer: 0.25
+    bible_00010:
+      source: bible
+      text: ne mɛ taasɛ Yesu yɛɛ, “Ibono adɛ mɛ kya tɔgɛ faa, foŋ kya nu de foꞌ gya mɔmɔ?” Yesu gi lɛɛ
+        gɛnɔ sa mɔmɔ yɛɛ, “N kya nu kyɔde. Wurubuaarɛ agyɛbi ako a tɔgɛ yɛɛ,
+      sbs: 0.6916
+      gen_sec: 11.95
+      ref_sec: 11.82
+      cer: 0.0172
+      wer: 0.1714
+    bible_00011:
+      source: bible
+      text: Mɛ naa kpaa loo Anfipolisɛ de Apoloniya isowolɛ so lii kpaa fo Tɛsalonika ɔsowolɛ so. Gyuda
+        awura gikyangbon gi bo nno.
+      sbs: 0.726
+      gen_sec: 9.73
+      ref_sec: 9.7
+      cer: 0.1031
+      wer: 0.381
+    bible_00012:
+      source: bible
+      text: Nengyene mɔ-wura mɔ gi baa tu mɔ ɔ kya wɔra ibono ɔ yela sa mɔ mɔ, ɔ laa gyi ginsi.”
+      sbs: 0.7028
+      gen_sec: 6.23
+      ref_sec: 4.74
+      cer: 0.0164
+      wer: 0.05
+    bible_00013:
+      source: bible
+      text: Imɔso ibono fɛ sɔɔ Yesu gyi faa mɔ, fɛꞌ pɛɛrɛ ansi wɔra idɛnsɛ bɔla fɛye-gisɔɔgyi mɔ so. Fɛ
+        kya wɔra idɛnsɛ mɔ, fɛꞌ kasɛ ɔlaako ginyi bɔla fɛye-ilaa dɛnsɛ giwɔra so.
+      sbs: 0.7244
+      gen_sec: 13.06
+      ref_sec: 11.5
+      cer: 0.031
+      wer: 0.1935
+    bible_00014:
+      source: bible
+      text: Timoti, kyu ilaa ibonoana nɛ nyiile fo faa nyiile Yesu asonbo mɔ de foꞌ tɔgɛ wɔra ɔmɔ yɛɛ
+        mɛꞌ gyi imɔ so.
+      sbs: 0.7331
+      gen_sec: 8.02
+      ref_sec: 7.78
+      cer: 0.061
+      wer: 0.2273
+    bible_00015:
+      source: bible
+      text: “Nyisigyi ɔꞌ wɔra Wurubuaarɛ-lɛɛ Wurubuaarɛ dɔ,
+      sbs: 0.5306
+      gen_sec: 3.84
+      ref_sec: 3.72
+      cer: 0.4103
+      wer: 1.5
+    bible_00016:
+      source: bible
+      text: Gyuda awura abono mɛ kine mɛ mɛŋ sɔɔ Yesu gyi mɔ berɛ, mɛ baa nyida Yesu asonbo mɔ sa asa
+        kpɛi-kpɛi ne i nyida mɔmɔ nsana.
+      sbs: 0.7394
+      gen_sec: 9.56
+      ref_sec: 9.66
+      cer: 0.0
+      wer: 0.0769
+    bible_00017:
+      source: bible
+      text: Ne Gyuda awura asunbi alɛɛbo abelɛnsɛ de mɔmɔ-nbara aŋmarasɛbo mɔ mɛ kya laarɛ gɛnɔɔbono mɛ
+        laa nyɛ Yesu mɔɔ mɔ, mɛ kii mɛ selɛ sakpii ɔbono ɔ yelɛ Yesu gɛmara mɔ.
+      sbs: 0.7542
+      gen_sec: 13.23
+      ref_sec: 14.08
+      cer: 0.0231
+      wer: 0.0645
+    bible_00018:
+      source: bible
+      text: De fɛꞌ kpaa keda naadɛ kiirɛsɛ ɔbono ɔ laa wɔra nfɔ mɔ de fɛꞌ baa mɔɔ de fɛꞌ kyu wɔra agyudɔ
+        de aꞌ gyi de aꞌ nun de aꞌ kyaa.
+      sbs: 0.7114
+      gen_sec: 8.62
+      ref_sec: 7.6
+      cer: 0.117
+      wer: 0.2667
+    bible_00019:
+      source: bible
+      text: Iŋ gyɛ gɛnen mɔ, ne fɛɛ fo ɔko fo kya faala Wurubuaarɛ gɛdɛ pobɔrɔ dɔ lii fo-oduduu mɔ dɔ
+        mɔ, abono mɛ tɛ mɛ kya nu mɔ mɛ maŋ nu gɛsɛ de mɛꞌ faala mɔ kpaa fo. Mɛŋ nyi ilaa ibono fo kya
+        tɔgɛ mɔ.
+      sbs: 0.7388
+      gen_sec: 15.1
+      ref_sec: 13.36
+      cer: 0.0278
+      wer: 0.0667
+    bible_00020:
+      source: bible
+      text: Ɔ kyɛɛgɛ anuwanterɛ baarɛ worogɛ me-gimu so faa mɔ, o gyere me yela gyoo me-gipule ne.
+      sbs: 0.7088
+      gen_sec: 6.83
+      ref_sec: 5.06
+      cer: 0.1045
+      wer: 0.25
+    bible_00021:
+      source: bible
+      text: Nꞌ buu sa fɛye yɛɛ Ilaagya gi ti wolaa kii ba ne Gyuda awura mɛ mɛŋ bii mɔ. Mɛ wɔra mɔ gɛnɔɔbono
+        mɛ kya laarɛ mɔ. Gɛnen kee ne me, anyamesɛ pɛwu mɔmɔ-daa mɔ, nan wu awɔrɔfɔɔ mɔmɔ-abaa dɔ ne.”
+      sbs: 0.7374
+      gen_sec: 15.01
+      ref_sec: 13.36
+      cer: 0.0069
+      wer: 0.025
+    bible_00022:
+      source: bible
+      text: Nono asa mɛ kyu gɛsalaarɛ kerɛ aye so dandan. Mɛ sɔɔ aye pɛwu abaa anyɔ. Nyangbon kya da,
+        ne i bo awo. Imɔso mɛ wɔra ɔgya sa aye yɛɛ aꞌ wolɛ.
+      sbs: 0.7127
+      gen_sec: 10.84
+      ref_sec: 14.1
+      cer: 0.0472
+      wer: 0.1613
+    bible_00023:
+      source: bible
+      text: Ne Piita gi lɛɛ gɛsɛ yɛɛ, “Me-nanboana, nan tɔgɛ tigi fɛye yɛɛ aye-naana Deefidi ɔbono ɔ tɔgɛ
+        gɛnen ilaa idɛ mɔ gi wuꞌ ne mɛ pule mɔ. Mɔ-gɛkyan gɛ dɛ aye asɛ gɛrɛ kyu baa lii de ndɛ.
+      sbs: 0.7573
+      gen_sec: 14.25
+      ref_sec: 14.42
+      cer: 0.0657
+      wer: 0.2105
+    bible_00024:
+      source: bible
+      text: Mɛ baa kerɛ mɔ, ilaa iko ne n baa yɛ gyanꞌgyan mɔmɔ ɔkamaasɛ so fɛɛ ɔgya ɔbono ɔ kya dɛ mɔ.
+      sbs: 0.6975
+      gen_sec: 6.66
+      ref_sec: 7.04
+      cer: 0.0145
+      wer: 0.0476
+    bible_00025:
+      source: bible
+      text: Ɔbono ɔ kya gyi Wurubuaarɛ nbara so mɔ berɛ, gɛnen kaasɛ ɔbono kya laarɛ Wurubuaarɛ ilaa gɛsintin
+        lii mɔ-gisen dɔ kpaa lii. Nan tɔgɛ fɛye ilaa ibono i laa yɛgɛ aꞌ nyɛ bii aye-asen dɔ yɛɛ aye‑rɛ
+        Wurubuaarɛ a kya loo mɔ.
+      sbs: 0.732
+      gen_sec: 17.66
+      ref_sec: 14.12
+      cer: 0.0292
+      wer: 0.0476
+    bible_00026:
+      source: bible
+      text: Imɔso ilaa ibono n kya tɔgɛ fɛye gɛnyɛ mɔ, fɛꞌ tɔgɛ sa asa owi kenken, ne ilaa ibono n kya
+        tɔgɛ fɛye adɛɛdɛɛ dɔ aye-wolɛ mɔ, fɛꞌ liirɛ imɔ da gikpengboo.
+      sbs: 0.7483
+      gen_sec: 12.03
+      ref_sec: 11.4
+      cer: 0.0847
+      wer: 0.1613
+    bible_00027:
+      source: bible
+      text: Amudɛnsɛbo ne n gyɛ asa abono mɛ kya bara gisen yuuli asa dɔ mɔ.
+      sbs: 0.6669
+      gen_sec: 4.95
+      ref_sec: 3.2
+      cer: 0.08
+      wer: 0.1429
+    bible_00028:
+      source: bible
+      text: “Nengyene fɛ kya laarɛ asa abono mɛ kya laarɛ fɛye-ilaa mɔ wolɛ mɔ, nnɛ so ne i kaaborɛ Wurubuaarɛ
+        oꞌ yen fɛye? Ilaa nyɛnyɛn awɔrabo gbaa kee mɛ kya laarɛ asa abono mɛ kya laarɛ ɔmɔ-ilaa mɔ.
+      sbs: 0.724
+      gen_sec: 15.35
+      ref_sec: 11.68
+      cer: 0.0338
+      wer: 0.1081
+    bible_00029:
+      source: bible
+      text: Fɛŋ sa fɛꞌ wɔra ilaa ibono i laa yɛgɛ Wurubuaarɛ Oduduu mɔ maŋ nyɛ lii gya fɛye dɔ mɔ.
+      sbs: 0.7303
+      gen_sec: 6.74
+      ref_sec: 4.5
+      cer: 0.0299
+      wer: 0.1053
+    bible_00030:
+      source: bible
+      text: Mɔmɔ-aso a tii daa, ne mɛ bun mɔmɔ-ansi.
+      sbs: 0.7411
+      gen_sec: 3.24
+      ref_sec: 3.1
+      cer: 0.1034
+      wer: 0.375
+    bible_00031:
+      source: bible
+      text: Me-nanboana Yesu asonbo, nɛ ba fɛye asɛ mɔ, meŋ kyu ɔlaako anyibo atɔngɛbi baa tɔngɛ sa fɛye.
+        Nɛ lɛɛ daa Wurubuaarɛ gɛsintin tɔgɛ.
+      sbs: 0.7561
+      gen_sec: 10.84
+      ref_sec: 12.22
+      cer: 0.0583
+      wer: 0.2174
+    bible_00032:
+      source: bible
+      text: I wɔra me ɔkon gikyɔ-gikyɔ yɛɛ nɛ wu fo-biana dɔ ako mɛ buu gɛsintin ɔkpa fɛɛ gɛnɔɔbono aye-sɛ
+        Wurubuaarɛ gi ka yela sa aye mɔ.
+      sbs: 0.7285
+      gen_sec: 10.24
+      ref_sec: 9.28
+      cer: 0.0303
+      wer: 0.12
+    bible_00033:
+      source: bible
+      text: “Ɔbelɛnsɛ mɔ gi kɛɛla nfono o kpe mɔ. Ɔ ba mɔ, ɔ terɛ mɔ-adega yɛɛ mɛꞌ baa buu-buu agyan abono
+        ɔkamaasɛ gi nyɛ mɔ sa mɔ.
+      sbs: 0.7474
+      gen_sec: 9.13
+      ref_sec: 7.84
+      cer: 0.0337
+      wer: 0.1154
+    bible_00034:
+      source: bible
+      text: I dɛ gɛbii mɔ mɔ-nyi de mɔ-sɛ gɛnɔ, ne Yesu gi tɔgɛ sa mɔmɔ yɛɛ mɛ mɛŋ sa mɛꞌ tɔgɛ ilaa ibono
+        i ba faa sa ɔko‑rɛ ɔko.
+      sbs: 0.7344
+      gen_sec: 8.96
+      ref_sec: 11.7
+      cer: 0.0353
+      wer: 0.2143
+    bible_00035:
+      source: bible
+      text: O kyule yɛɛ ɔ laa wɔra ilaa ibono mɛ kya laarɛ mɔ sa ɔmɔ.
+      sbs: 0.6867
+      gen_sec: 4.35
+      ref_sec: 4.74
+      cer: 0.0233
+      wer: 0.0714
+    bible_00036:
+      source: bible
+      text: Gyuda awura Bodobodo Maadiisɛ gɛkɛ belɛ gɛbono mɛ kya terɛ yɛɛ Lɛwu Gi Seregɛ Aye So mɔ gɛ
+        kya fuude.
+      sbs: 0.7495
+      gen_sec: 8.02
+      ref_sec: 8.36
+      cer: 0.0123
+      wer: 0.25
+    bible_00037:
+      source: bible
+      text: Ibono abelɛnsɛ mɔ mɛ wu ɔnyen ɔbono Piita mɔ‑rɛ Gyɔn mɛ kyɛ mɔ mɔ yelɛ mɔmɔ asɛ nfono mɔ,
+        mɛ mɛŋ baa taalɛ tɔgɛ sɛi.
+      sbs: 0.7496
+      gen_sec: 9.13
+      ref_sec: 9.24
+      cer: 0.0562
+      wer: 0.2
+    bible_00038:
+      source: bible
+      text: Nkana ɔ laarɛ fɛɛ ɔꞌ kpaa kyɔlesɛ aye Gyuda awura Wurubuaarɛ ɔson obu mɔ, ne a keda mɔ [kyu
+        kpe aꞌ kpaa gyi mɔ-nbɛlɛ kyu naa de aye Gyuda awura nbara ɔkpa so.
+      sbs: 0.7106
+      gen_sec: 12.03
+      ref_sec: 11.02
+      cer: 0.0246
+      wer: 0.0909
+    bible_00039:
+      source: bible
+      text: Nfono ne Yesu gi tu kpe mɔmɔ asɛ, ne o yii mɔmɔ, ne ɔ tɔgɛ sa mɔmɔ yɛɛ, “Fɛꞌ koso, fɛŋ sa
+        fɛꞌ selɛ gifuu.”
+      sbs: 0.7681
+      gen_sec: 7.85
+      ref_sec: 8.76
+      cer: 0.0533
+      wer: 0.12
+    bible_00040:
+      source: bible
+      text: Wura Yesu agyɛbi mɔ a nu gyanꞌ de nsana nno pɛwu.
+      sbs: 0.7027
+      gen_sec: 3.58
+      ref_sec: 3.84
+      cer: 0.2632
+      wer: 0.5455
+    bible_00041:
+      source: bible
+      text: Nbuo! Nɛ bii ilaa ibono nan wɔra mɔ. Nan wɔra ilaa ibono i laa yɛgɛ nꞌ nyɛ akyɛmenɛ de owi
+        ɔbono me-wura mɔ gi lɛɛ me-ɔkpa mɔ, mɛꞌ nyɛ sɔɔ me kyena mɔmɔ asɛ mɔmɔ-nten-ana dɔ.’
+      sbs: 0.747
+      gen_sec: 13.65
+      ref_sec: 12.28
+      cer: 0.0382
+      wer: 0.1667
+    bible_00042:
+      source: bible
+      text: Wurubuaarɛ gɛlaarɛ ne n gyɛ yɛɛ fɛ kpɛ fɛ kya lɔrɔ fɛye-nyoro fɛ kya yela fa‑a sa mɔ. Ɔko
+        ɔŋ sa ɔꞌ laarɛ ogyibara.
+      sbs: 0.7951
+      gen_sec: 8.87
+      ref_sec: 10.08
+      cer: 0.046
+      wer: 0.2083
+    bible_00043:
+      source: bible
+      text: ne mɛ laa kuu me ilaa wɔrasɛ so ideri kee.
+      sbs: 0.6605
+      gen_sec: 3.24
+      ref_sec: 3.84
+      cer: 0.1562
+      wer: 0.5
+    bible_00044:
+      source: bible
+      text: Asafo mɛ ba fɛye-gɛwi mɔ, fɛꞌ bugi ansi de fɛꞌ sɔɔ mɔmɔ abaa anyɔ de fɛŋ sa fɛꞌ lɔgedɛ.
+      sbs: 0.7427
+      gen_sec: 6.66
+      ref_sec: 7.6
+      cer: 0.0758
+      wer: 0.3684
+    bible_00045:
+      source: bible
+      text: Hɛrodɛ adɛ mɔ mɛ tɔgɛ mɔ gɛnen mɔ, ɔ terɛ asafo mɔ lii nkan, ne ɔ taasɛ ɔmɔ de ɔꞌ bii aberɛ
+        abono mɛ wu gigyɛkpebi mɔ gi lii mɔ.
+      sbs: 0.7455
+      gen_sec: 9.64
+      ref_sec: 12.16
+      cer: 0.0312
+      wer: 0.1
+    bible_00046:
+      source: bible
+      text: Sitiifen gi tɔgɛ sa mɔmɔ gɛnen mɔ, mɛ puiidɛ mɔ so, ne mɛ kyu mɔmɔ-abaa tii mɔmɔ-aso de mɛŋꞌ
+        baa nu ilaa ibono ɔ kya tɔgɛ mɔ. Nfono mɔ, mɔmɔ pɛwu mɛ dabun mɔ so gikolon,
+      sbs: 0.7216
+      gen_sec: 13.31
+      ref_sec: 13.84
+      cer: 0.0236
+      wer: 0.1944
+    bible_00047:
+      source: bible
+      text: I lii fɛɛ owi ɔbono akon a dɛ me mɔ, fɛŋ sa me agyudɔ; bolefɔ kya mɔɔ me mɔ, fɛŋ sa me nkyu;
+      sbs: 0.7836
+      gen_sec: 7.08
+      ref_sec: 6.46
+      cer: 0.0758
+      wer: 0.3043
+    bible_00048:
+      source: bible
+      text: Dega ɔbono ɔ nyɛ sika kɔkɔɔ abi nwɛ oko mɔ kee gi baa tɔgɛ sa ɔbelɛnsɛ mɔ yɛɛ, ‘Ɔbelɛnsɛ,
+        sika kɔkɔɔ abi nwɛ oko ne fo kyu sa me; kerɛ, nɛ nyɛ amɔ-ɔnan kii bɔla.’
+      sbs: 0.7518
+      gen_sec: 12.54
+      ref_sec: 11.72
+      cer: 0.0583
+      wer: 0.2286
+    bible_00049:
+      source: bible
+      text: “To, ne fɛɛ gɛnen dega ɔbono gyɛ nyamesɛ nyɛnyɛn mɔ, foŋbii mɔ, ɔ laa tɔgɛ sa mɔ-nyoro yɛɛ,
+        ‘Ilaa iko i keda me-wura yela.’
+      sbs: 0.74
+      gen_sec: 9.64
+      ref_sec: 8.06
+      cer: 0.0111
+      wer: 0.0417
+    bible_00050:
+      source: bible
+      text: Aye-naana Deefidi berɛ, i mɛŋ diirɛ mɔ kpe Wurubuaarɛ dɔ. Deefidi gbaa-gbaa gi wu tɔgɛ yɛɛ,
+      sbs: 0.7597
+      gen_sec: 7.68
+      ref_sec: 6.72
+      cer: 0.0282
+      wer: 0.1875
+    bible_00051:
+      source: bible
+      text: Sakpii belɛ gi buu mɔ. Mɛ loo nno mɔ, ɔ kyɛ kyɛ abono mɛ kya lɔ mɔ.
+      sbs: 0.7525
+      gen_sec: 5.03
+      ref_sec: 4.6
+      cer: 0.0208
+      wer: 0.2353
+    bible_00052:
+      source: bible
+      text: Mɛ bo Tirowasɛ mɔ, gɛnyɛ gɛko mɔ, i wɔra Pɔɔlo fɛɛ oderi, ne o wu Masadoniyanyen ɔko gi ba
+        ɔ yelɛ ɔ kya kolɛ mɔ yɛɛ, “Wɔra aniya, ba Masadoniya de foꞌ baa kpaa aye.”
+      sbs: 0.7516
+      gen_sec: 12.71
+      ref_sec: 14.88
+      cer: 0.0407
+      wer: 0.1143
+    bible_00053:
+      source: bible
+      text: Asa mɛ maŋ nu yɛɛ mɔ ne n naa ɔ kya kpen de ikpa faa.
+      sbs: 0.6426
+      gen_sec: 3.93
+      ref_sec: 3.64
+      cer: 0.1316
+      wer: 0.6667
+    bible_00054:
+      source: bible
+      text: Yesu gi lɛɛ gɛnɔ sa mɔ yɛɛ, “Ɔko gi yii me. I kya nyiile yɛɛ nɛ bii me-nyoro dɔ yɛɛ me-oduduu
+        gi wɔra ilaa iko.”
+      sbs: 0.6947
+      gen_sec: 8.53
+      ref_sec: 7.68
+      cer: 0.0
+      wer: 0.0
+    bible_00055:
+      source: bible
+      text: yɛɛ mɛꞌ kpaa taasɛ mɔ yɛɛ, “Fo ne n gyɛ ɔmɔlɛgɛbo ɔbono a nu yɛɛ ɔ laa ba mɔ abɛɛ aꞌ kerɛ
+        nyamesɛ banban ɔko kpɛi ɔkpa daa?”
+      sbs: 0.736
+      gen_sec: 9.13
+      ref_sec: 9.68
+      cer: 0.043
+      wer: 0.1071
+    bible_00056:
+      source: bible
+      text: Nɛ keda Yesu gɛsun mɔ dɔ fɛɛ ikɔ ne i gyɛ. Nɛ kɔ kpaa wu imɔ-ɔkara. Nɛ wɔra gɛsun mɔ kpaa
+        logɛ fɛɛ ɔnangya ne nɛ selɛ kpaa wu mɔ-ɔkara. Gɛnɔɔbono nɛ ka gyan Yesu so mɔ, nɛ ka gyan mɔ so
+        gɛnen kpaa logɛ.
+      sbs: 0.7246
+      gen_sec: 15.61
+      ref_sec: 14.78
+      cer: 0.053
+      wer: 0.2222
+    bible_00057:
+      source: bible
+      text: Sɔɔlo gi lɛɛ gɛnɔ taasɛ yɛɛ, “Me-wura ɔmɔ ne?” Ne gigyɛbiꞌ mɔ gi tɔgɛ mɔ yɛɛ, “Me ne n gyɛ
+        Yesu, ɔbono fo kya ka ansi mɔ.
+      sbs: 0.7572
+      gen_sec: 8.87
+      ref_sec: 9.1
+      cer: 0.0116
+      wer: 0.037
+    bible_00058:
+      source: bible
+      text: Ɔ kpaa fo Yesu asɛ mɔ, ɔ kpelegɛ ŋmii mɔ-ayaa dɔ ɔ kya faala mɔ. Gɛnen okononbu baarɛ gyɛ
+        daa Samariyanyen.
+      sbs: 0.7529
+      gen_sec: 8.62
+      ref_sec: 8.98
+      cer: 0.012
+      wer: 0.1429
+    bible_00059:
+      source: bible
+      text: Nfono mɔ, abono mɔ‑rɛ ɔmɔ mɛ tɛ ogyiten mɔ mɛ san mɛ kya taasɛ abara yɛɛ, “Mɔ ne n gyɛ anɛ
+        de ɔꞌ taalɛ kyu asa ilaa nyɛnyɛn ibono mɛ wɔra Wurubuaarɛ mɔ kyɛɛ mɔmɔ?”
+      sbs: 0.7456
+      gen_sec: 12.37
+      ref_sec: 12.82
+      cer: 0.0325
+      wer: 0.0857
+    bible_00060:
+      source: bible
+      text: Farasii awura mɔ mɛ kii taasɛ Yesu yɛɛ, “Gɛnen berɛ mɔ, menɛ ne n wɔra so ne Mosisi gi yela
+        nbara yɛɛ nengyene ɔnyen laa kine mɔ-ka mɔ, ɔꞌ sa mɔ gikine ɔwolɛ de ɔꞌ lɛɛ mɔ-ɔkpa mɔ daa?”
+      sbs: 0.744
+      gen_sec: 14.17
+      ref_sec: 11.74
+      cer: 0.029
+      wer: 0.2051
+    bible_00061:
+      source: bible
+      text: Fɛꞌ kerɛ fɛye-nyoro so dandan de ilaa ibono fɛ wɔra gɛsun nyɛ mɔ i mɛŋ sa iꞌ lii fɛye-gibaa.
+        Fɛꞌ nyɛ imɔ pɛwu so ntɛɛla.
+      sbs: 0.7059
+      gen_sec: 9.39
+      ref_sec: 7.88
+      cer: 0.0435
+      wer: 0.16
+    bible_00062:
+      source: bible
+      text: Wura Fɛlisɛ gi kalɛ ɔwolɛ mɔ ta mɔ, ɔ taasɛ Pɔɔlo nfono ɔ lii mɔ. Ne Pɔɔlo gi lɛɛ gɛnɔ yɛɛ
+        Silisiya.
+      sbs: 0.7335
+      gen_sec: 7.85
+      ref_sec: 8.86
+      cer: 0.0658
+      wer: 0.1818
+    bible_00063:
+      source: bible
+      text: Fo‑rɛ Wura Yesu fɛꞌ kyena, de fo-oduduu dɔ ilaa iꞌ wɔra ɔdan sa fo. Wurubuaarɛ ɔꞌ sa fɛye
+        so gɛwɔnsa dɛnsɛ.
+      sbs: 0.7357
+      gen_sec: 8.36
+      ref_sec: 12.44
+      cer: 0.061
+      wer: 0.2857
+    bible_00064:
+      source: bible
+      text: I kya nyiile yɛɛ aye-nanboana Yesu asonbo ako mɛ ba baa tɔgɛ me gɛnɔɔbono fo kya gyi gɛsintin
+        sa Wurubuaarɛ mɔ. Ilaa mɔ i wɔra me ɔkon gikyɔ-gikyɔ. N nyi yɛɛ fo buu Wurubuaarɛ gɛsintin ɔkalan
+        mɔ.
+      sbs: 0.7121
+      gen_sec: 15.95
+      ref_sec: 14.4
+      cer: 0.026
+      wer: 0.0541
+    bible_00065:
+      source: bible
+      text: Meŋ kaaborɛ foꞌ baa terɛ me yɛɛ fo-bi. Imɔso, me-sɛ, n dɛ fo giserɛ, sɔɔ me de foꞌ kyu me
+        wɔra fɛɛ fo-adega mɔ dɔ ɔko.” ’
+      sbs: 0.7497
+      gen_sec: 9.13
+      ref_sec: 7.82
+      cer: 0.0706
+      wer: 0.3077
+    bible_00066:
+      source: bible
+      text: Imɔso nengyene i gyɛ gɛsintin yɛɛ ilaa nyɛnyɛn pɛwu gɛmu mɔ kya kosorɛ mɔ-adɛ ilaa nyɛnyɛn
+        oduduu kpɛi-kpɛi mɔ, mɛ yɛ mɔmɔ-nyoro dɔ ne. Nnɛ so ne mɔ-gɛwuragyi gɛ laa dɛ kpe?
+      sbs: 0.7549
+      gen_sec: 13.91
+      ref_sec: 12.96
+      cer: 0.037
+      wer: 0.25
+    bible_00067:
+      source: bible
+      text: Gɛnen kee ne dega ɔbono ɔ nyɛ sika kɔkɔɔ abi nwɛ oko mɔ gi kpaa fɛ sika kɔkɔɔ mɔ nyɛ aterenbi
+        kyu buɛɛdɛ. Ɔ buɛɛdɛ mɔ, o kii nyɛ sɔɔ sika kɔkɔɔ ɔbono ɔbelɛnsɛ mɔ gi kyu wɔra mɔ-abaa dɔ mɔ
+        ɔnan gikpadɔ ginyɔ.
+      sbs: 0.7244
+      gen_sec: 16.55
+      ref_sec: 12.26
+      cer: 0.0437
+      wer: 0.2273
+    bible_00068:
+      source: bible
+      text: Aye-nanboana Yesu ɔson mɔ dɔ, fɛye gbaa-gbaa fɛ wu yɛɛ ibono so a kpe fɛye asɛ mɔ, i mɛŋ wɔra
+        giyan.
+      sbs: 0.7973
+      gen_sec: 8.02
+      ref_sec: 7.02
+      cer: 0.0133
+      wer: 0.1429
+    bible_00069:
+      source: bible
+      text: Ako kee a tɔrɔ iwe dɔ. Abono a kɔrɔ mɔ, iwe mɔ i koso bun wɔra amɔ, ne a wuꞌ.
+      sbs: 0.6669
+      gen_sec: 5.63
+      ref_sec: 5.64
+      cer: 0.1667
+      wer: 0.5
+    bible_00070:
+      source: bible
+      text: Gɛbii mɔ gɛ sɛɛ, ne ɔ nyɛ oduduu dɔ ɔlon. Ɔ san kyena daa gipen dɔ kpaa fo gɛkɛ gɛbono Wurubuaarɛ
+        gi baa lɛɛ mɔ-gɛwi nyiile Isirale awura mɔ.
+      sbs: 0.7428
+      gen_sec: 11.26
+      ref_sec: 13.26
+      cer: 0.0092
+      wer: 0.069
+    bible_00071:
+      source: bible
+      text: Fɛꞌ daasɛ gɛnen asa abono kerɛ yɛɛ mɛ laa taalɛ wɔra gɛsun mɔ? Nengyene fɛŋ wu ilaa nyɛnyɛn
+        iko lii mɔmɔ so mɔ, pɛi de mɛꞌ lɔɔ wɔra abono mɛ buu de Yesu asonbo abelɛnsɛ mɔ.
+      sbs: 0.7609
+      gen_sec: 13.57
+      ref_sec: 11.12
+      cer: 0.0373
+      wer: 0.1111
+    bible_00072:
+      source: bible
+      text: A dɛ fo giserɛ, tɔgɛ aye, imɔso Rom wura belɛ ɔbono ɔ kya kerɛ aye so ne ɔŋ kya son Wurubuaarɛ
+        mɔ, i dɛ ɔkpa Wurubuaarɛ asɛ yɛɛ aꞌ sɔɔ mɔ-lɛnpoo abɛɛ a mɛŋ sa aꞌ sɔɔ?”
+      sbs: 0.7687
+      gen_sec: 12.97
+      ref_sec: 13.82
+      cer: 0.032
+      wer: 0.1081
+    bible_00073:
+      source: bible
+      text: Mɛ son Yesu nno, ne mɛ kii kpe Gyɛrusalem de ɔkon belɛ.
+      sbs: 0.7078
+      gen_sec: 4.27
+      ref_sec: 4.56
+      cer: 0.0476
+      wer: 0.1667
+    bible_00074:
+      source: bible
+      text: Gyosɛfo gi sun kpaa kyu mɔ-sɛ Gyeekɔpo mɔ‑rɛ mɔ-adɛ pɛwu yɛɛ mɛꞌ baa kyena mɔ asɛ. Mɔmɔ pɛwu
+        gɛgyɔnɔ gɛ gyɛ asa ikue-isa de saalaa asa anun.
+      sbs: 0.7386
+      gen_sec: 10.84
+      ref_sec: 10.06
+      cer: 0.0463
+      wer: 0.2222
+    bible_00075:
+      source: bible
+      text: Iŋ kaaborɛ aꞌ kerɛ Wurubuaarɛ ta. Aŋ bo lon don mɔ.
+      sbs: 0.7364
+      gen_sec: 4.18
+      ref_sec: 3.54
+      cer: 0.1538
+      wer: 0.5455
+    bible_00076:
+      source: bible
+      text: Mɛ wu Yesu mɔ, mɛ ŋmii mɔ ne mɛ yen mɔ. Mɔmɔ ako berɛ, i wɔra mɔmɔ fɛɛ i mɛŋ gyɛ Yesu gbaa-gbaa
+        ne.
+      sbs: 0.7966
+      gen_sec: 7.68
+      ref_sec: 8.12
+      cer: 0.0282
+      wer: 0.0833
+    bible_00077:
+      source: bible
+      text: “Wurubuaarɛ kya tii asa abono mɛ kya nyiile mɔmɔ-nyoro mɔ ɔkpa
+      sbs: 0.6519
+      gen_sec: 5.03
+      ref_sec: 3.06
+      cer: 0.32
+      wer: 0.4545
+    bible_00078:
+      source: bible
+      text: Asa mɛ ti taa ka aye-ansi ibono a kya son Yesu mɔ so. Wurubuaarɛ, mɔ, mɛŋ kya lɛɛ ansi yɛgɛ
+        aye. Asa mɛ kya kparɛ aye too fɛɛ asonsɔɔ, aŋ kii a kya wuꞌ.
+      sbs: 0.7707
+      gen_sec: 11.95
+      ref_sec: 11.24
+      cer: 0.0268
+      wer: 0.0882
+    bible_00079:
+      source: bible
+      text: Gɛnen nkɛ nbono Gyɔn kya gyere asa Wurubuaarɛ sagyere mɔ ne Yesu gi lii Nasarɛtɛ ɔsowolɛ Galeli
+        gɛsinkpan so ba Gyɔn asɛ. Ne Gyɔn gi gyere mɔ Wurubuaarɛ sagyere Gyɔɔdan ɔbon dɔ.
+      sbs: 0.7013
+      gen_sec: 13.74
+      ref_sec: 13.92
+      cer: 0.0347
+      wer: 0.2188
+    bible_00080:
+      source: bible
+      text: I wɔra fɛɛ n kya kɔ fɛye so gikengbeli mi‑i sa Wurubuaarɛ ne. Fɛ dɛ fɛɛ ɔkyiifɔ ɔbono me ne
+        n yɛ mɔ sa ɔnyen. Ɔnyen kolon ɔbono n darɛ mɔ ne n gyɛ Kirisito.
+      sbs: 0.758
+      gen_sec: 12.03
+      ref_sec: 11.82
+      cer: 0.0339
+      wer: 0.1714
+    bible_00081:
+      source: bible
+      text: Imɔ‑rɛ imɔ gɛnen mɔ, me-gisen dɔ i mɛŋ kyena me. I lii fɛɛ meŋ wu me-nanbo, Taatusi nno. Gɛnen
+        so mɔ, nɛ kalɛ ɔmɔ, ne nɛ kyon kpe Masadoniya gɛsinkpan so.
+      sbs: 0.7728
+      gen_sec: 12.54
+      ref_sec: 12.08
+      cer: 0.0
+      wer: 0.0
+    bible_00082:
+      source: bible
+      text: Ne Yesu gi lɛɛ gɛnɔ yɛɛ, “Yɛgɛ de iꞌ ba gɛnen aberɛ adɛ dɔ. Imɔ-ɔkpa so ne de aꞌ nyɛ wɔra
+        ilaa ibono i gyɛ Wurubuaarɛ gɛlaarɛ mɔ pɛwu.” Yesu gi tɔgɛ gɛnen mɔ, Gyɔn gi nu gɛsɛ, ne o gyere
+        mɔ Wurubuaarɛ sagyere mɔ.
+      sbs: 0.7082
+      gen_sec: 16.12
+      ref_sec: 14.86
+      cer: 0.0314
+      wer: 0.2
+    bible_00083:
+      source: bible
+      text: I ba gɛnen mɔ, i laa bugi ɔkpa sa fɛye daa de fɛꞌ nyɛ tɔgɛ me-ilaa sa mɔmɔ.
+      sbs: 0.7602
+      gen_sec: 5.63
+      ref_sec: 5.08
+      cer: 0.0364
+      wer: 0.1111
+    bible_00084:
+      source: bible
+      text: Meŋ sa ɔkyii ɔkpa de oꞌ nyiile anyen Wurubuaarɛ ilaa abɛɛ oꞌ kyu ɔlon ɔ kya gyi gɛbelɛnsɛ
+        anyen so. Akyii mɔ mɛꞌ sii kurun Wurubuaarɛ ɔson dɔ.
+      sbs: 0.769
+      gen_sec: 11.18
+      ref_sec: 12.44
+      cer: 0.0796
+      wer: 0.1786
+    bible_00085:
+      source: bible
+      text: Imɔ idɛ pɛwu gɛmara kee mɔ, Wurubuaarɛ gi yɛgɛ ɔbɔ belɛ gi dɛ aye‑rɛ fɛye nsana. Ɔbono ɔ kya
+        laarɛ ɔꞌ lii aye asɛ kpe fɛye asɛ nno mɔ, maŋ taalɛ. Ne ɔko mɔ kee maŋ taalɛ lii fɛye asɛ nno
+        ba aye asɛ gɛrɛnaa.’
+      sbs: 0.7495
+      gen_sec: 16.46
+      ref_sec: 14.32
+      cer: 0.0449
+      wer: 0.1556
+    bible_00086:
+      source: bible
+      text: Nan koso de nꞌ kpe me-sɛ asɛ de nꞌ kpaa dɛ mɔ giserɛ. Nɛ loo mɔ asɛ mɔ, nan tɔgɛ mɔ yɛɛ, “Me-sɛ,
+        nɛ wɔra fo‑rɛ Wurubuaarɛ ilaa nyɛnyɛn.
+      sbs: 0.7474
+      gen_sec: 10.33
+      ref_sec: 9.0
+      cer: 0.0612
+      wer: 0.2069
+    bible_00087:
+      source: bible
+      text: I lii fɛɛ gisɔɔgyi gibono a bo sa Yesu mɔ ne a dɛ a naa faa. I mɛŋ gyɛ ilaa ibono a kya wu
+        de ansi.
+      sbs: 0.7825
+      gen_sec: 7.25
+      ref_sec: 7.08
+      cer: 0.0
+      wer: 0.0
+    bible_00088:
+      source: bible
+      text: Ɔ tɔgɛ gɛnen mɔ, mɛ buu sa mɔ yɛɛ, “Ɔko mɛŋ baa buu ilaa nyɛnyɛn iko kyu lii fo so sa aye.
+        A mɛŋ nyɛ iwolɛ lii Gyudiya kyu lii fo so gbaa, ne aye-adɛ dɔ ɔko‑rɛ ɔko mɛŋ kii kyu ɔkalan ɔko
+        lii nno bara aye.
+      sbs: 0.7455
+      gen_sec: 16.04
+      ref_sec: 14.5
+      cer: 0.02
+      wer: 0.0851
+    bible_00089:
+      source: bible
+      text: Fɛ kya selɛ Wurubuaarɛ gɛnen mɔ, fɛꞌ kyu gɛnyi-abi akyenabi kyu kyena de abara. Fɛ tɛ de abara
+        gɛnen mɔ, fɛꞌ laarɛ Wurubuaarɛ de nyamesɛ kamaasɛ ilaa.
+      sbs: 0.7405
+      gen_sec: 12.12
+      ref_sec: 11.54
+      cer: 0.0252
+      wer: 0.1111
+    bible_00090:
+      source: bible
+      text: Mi‑i me mɔ, n kya tɔgɛ fɛye yɛɛ, ntan ne n gyɛ ntan, fɛŋ sa fɛꞌ ka. Fɛŋ sa fɛꞌ ka yɛɛ ‘a kerɛ
+        fɛɛ soso,’ i lii fɛɛ soso nno mɔ, i gyɛ Wurubuaarɛ gɛwura gɛgyapaa.
+      sbs: 0.7874
+      gen_sec: 11.95
+      ref_sec: 11.84
+      cer: 0.0435
+      wer: 0.1622
+    bible_00091:
+      source: bible
+      text: “Imɔso fɛ mɛŋ sa fɛꞌ selɛ anyamesɛ. Sɛi mɛŋ bo no i ŋara yɛɛ i maŋ lii gifuli, abɛɛ ilaa iko
+        i bo asiiri dɔ yɛɛ i maŋ lii gɛwi.
+      sbs: 0.75
+      gen_sec: 10.07
+      ref_sec: 9.1
+      cer: 0.1489
+      wer: 0.6333
+    bible_00092:
+      source: bible
+      text: Me so mɔ, ɔkamaasɛ laa kyo fɛye. Ɔbono ɔ laa yelɛ mɔ-ayaa so ka gyanꞌ me so kpaa lii mɔ, Wurubuaarɛ
+        laa mɔlɛgɛ mɔ de ɔꞌ nyɛ ɔkyenaten mɔ asɛ.
+      sbs: 0.7594
+      gen_sec: 10.84
+      ref_sec: 10.5
+      cer: 0.0374
+      wer: 0.1
+    bible_00093:
+      source: bible
+      text: Nengyene fɛ nyɛ nu aye-gɛdɛ kpaa logɛ mɔ, a baala ta de aꞌ biidɛ gisomaanu awura mɔ pɛwu giso.
+      sbs: 0.7856
+      gen_sec: 7.42
+      ref_sec: 7.82
+      cer: 0.0822
+      wer: 0.5263
+    bible_00094:
+      source: bible
+      text: Owi ɔbono ilaa kamaasɛ i laa yela ɔkara mɔ, gɛnen owi ɔbono gi fuude. Imɔso fɛꞌ yela fɛye-nwɔnsa
+        gɛten kolon de fɛꞌ bii fɛye-nyoro akedabi de fɛꞌ nyɛ taalɛ dalaa sa Wurubuaarɛ.
+      sbs: 0.7607
+      gen_sec: 14.17
+      ref_sec: 14.16
+      cer: 0.0214
+      wer: 0.1562
+    bible_00095:
+      source: bible
+      text: Idɛ kon a nu yɛɛ fɛ yelɛ fɛye-ayaa so ken-ken gisɔɔgyi gibono fɛ bo sa Wura Yesu mɔ dɔ. Imɔso
+        i yɛgɛ aye-gisen gi tɔrɔ aye.
+      sbs: 0.7714
+      gen_sec: 9.64
+      ref_sec: 9.98
+      cer: 0.0
+      wer: 0.0769
+    bible_00096:
+      source: bible
+      text: Mɛ wu gigyɛkpebi mɔ gi yelɛ gɛnen mɔ, i wɔra ɔmɔ ɔkon gikyɔ kyɔde.
+      sbs: 0.7448
+      gen_sec: 5.12
+      ref_sec: 4.54
+      cer: 0.0392
+      wer: 0.2143
+    bible_00097:
+      source: bible
+      text: Okulaabo ɔbono mɔ berɛ, ɔ kpɛ ɔ kya nu daa de ɔkon gigyi wolɛ mɔ, o wuꞌ ne, yɛgɛ ɔ tɛ de ansi.
+      sbs: 0.735
+      gen_sec: 6.91
+      ref_sec: 7.24
+      cer: 0.0735
+      wer: 0.2174
+    bible_00098:
+      source: bible
+      text: Yesu gi tɔgɛ mɔ gɛnen mɔ, asogya ɔbelɛnsɛ mɔ gi lɛɛ gɛnɔ sa Yesu yɛɛ, “Me-wura, me ɔdɛ meŋ
+        kaaborɛ ibono foꞌ kpe me-gɛten dɔ. Fo kpɛ nyɛ lɛɛ gɛnɔ mɔ, me-dega mɔ gilɔ mɔ gi laa ta.
+      sbs: 0.7578
+      gen_sec: 13.91
+      ref_sec: 13.66
+      cer: 0.0379
+      wer: 0.1579
+    bible_00099:
+      source: bible
+      text: Gɛkɛ gɛdɛ mɔ, ɔpiiasɛ mɔ gi koso kpaa tɔgɛ mɔ-sɛ yɛɛ, ‘Me-sɛ, yɛ fo-atɔ de foꞌ kyu me-lɛɛ
+        ogyiten sa me, ibono fo san fo tɛ de ansi faa.’ Gɛsintin mɔ, mɔmɔ-sɛ gi yɛ mɔ-atɔ mɔ dɔ sa mɔmɔ.
+      sbs: 0.7786
+      gen_sec: 14.34
+      ref_sec: 12.64
+      cer: 0.0451
+      wer: 0.1538
+    bible_00100:
+      source: bible
+      text: Pɛi de nꞌ lɔɔ lii gɛsinkpan so kpe Wurubuaarɛ dɔ mɔ, i tiri yɛɛ nꞌ wu ɔlaawusɛ de ndɛ nkɛ
+        ndɛ dɔ asa mɛꞌ kine me.
+      sbs: 0.754
+      gen_sec: 8.45
+      ref_sec: 6.72
+      cer: 0.1279
+      wer: 0.4231
+    bible_00101:
+      source: bible
+      text: Asogya abono mɛ kya dii Yesu mɔ mɔmɔ-ɔbelɛnsɛ gi wu ilaa ibono i ba gɛnen mɔ, ɔ yen Wurubuaarɛ
+        ne ɔ tɔgɛ yɛɛ, “Gɛsintin, ɔnyen baarɛ tansi ɔ gyɛ gɛsintin wura.”
+      sbs: 0.6888
+      gen_sec: 12.54
+      ref_sec: 12.3
+      cer: 0.0081
+      wer: 0.0968
+    bible_00102:
+      source: bible
+      text: Yesu asonbo abelɛnsɛ abono mɛ kya gyangbara sa fɛye dandan mɔ, fɛꞌ kyu buubuu belɛ kyu keda
+        mɔmɔ. Titirigu mɔ, abono mɛ kya pɛɛrɛ ansi mɛ kya tɔgɛ ne mɛ kya nyiile asa Wurubuaarɛ agyɛbi
+        mɔ.
+      sbs: 0.7703
+      gen_sec: 15.02
+      ref_sec: 13.36
+      cer: 0.0333
+      wer: 0.1111
+    bible_00103:
+      source: bible
+      text: Gɛrɛnaa mɔ ntakpenbi gi laa nyida amɔ abɛɛ a laa kuu ideri
+      sbs: 0.6346
+      gen_sec: 4.69
+      ref_sec: 4.24
+      cer: 0.234
+      wer: 0.5833
+    bible_00104:
+      source: bible
+      text: A kya faala Wurubuaarɛ yɛɛ ɔ yɛgɛ Taatusi kya sa fɛye so gɛwɔnsa yɛɛ ɔ laa kpaa fɛye fɛɛ gɛnɔɔbono
+        aye kee a kya sa fɛye so nwɔnsa mɔ.
+      sbs: 0.7696
+      gen_sec: 10.58
+      ref_sec: 11.06
+      cer: 0.019
+      wer: 0.0345
+    bible_00105:
+      source: bible
+      text: Gɛsintin, kyu baa lii de ndɛ faa mɔ, nengyene Isirale awura mɛ kya kalɛ Wurubuaarɛ nbara ɔwolɛ
+        mɔ mɔ, mɛŋ kya nu Wurubuaarɛ gɛsɛ dandan.
+      sbs: 0.7734
+      gen_sec: 11.26
+      ref_sec: 9.0
+      cer: 0.0185
+      wer: 0.08
+    bible_00106:
+      source: bible
+      text: Wurubuaarɛ ɔbono ɔ tɔgɛ fɛye yɛɛ fɛye‑rɛ mɔ fɛꞌ wɔra nyamesɛ kolon mɔ gyɛ gisen fufuli wura.
+        Imɔso fɛye kee fɛꞌ kyu gisen fufuli akyenabi kyu kyena.
+      sbs: 0.7236
+      gen_sec: 11.86
+      ref_sec: 11.92
+      cer: 0.0252
+      wer: 0.1111
+    bible_00107:
+      source: bible
+      text: Ntɛɛla nbono fɛye-gikagyan gidɛ gi kya sa fɛye mɔ ne n gyɛ yɛɛ Wurubuaarɛ kya mɔlɛgɛ fɛye,
+        ne fɛye‑rɛ mɔ nsana i kya nyɛ wɔra ɔkon.
+      sbs: 0.7354
+      gen_sec: 10.33
+      ref_sec: 10.94
+      cer: 0.0196
+      wer: 0.0769
+    bible_00108:
+      source: bible
+      text: Yesu gi lɛɛ gɛnɔ sa mɔmɔ yɛɛ, “Fɛ fuɛ. I kya nyiile yɛɛ fɛ mɛŋ nyi Wurubuaarɛ agyɛbi mɔ, ne
+        fɛ mɛŋ nyi Wurubuaarɛ ɔlon ɔbono ɔ bo mɔ kee.
+      sbs: 0.7173
+      gen_sec: 10.75
+      ref_sec: 8.94
+      cer: 0.0
+      wer: 0.0
+    bible_00109:
+      source: bible
+      text: Yesu gi lɛɛ gɛnɔ tɔgɛ sa mɔmɔ yɛɛ, “Me-nyi de me-tedɛana ne n gyɛ asa abono mɛ nu Wurubuaarɛ
+        agyɛbi mɔ ne mɛ kya wɔra amɔ so ilaa mɔ.”
+      sbs: 0.6854
+      gen_sec: 10.15
+      ref_sec: 8.3
+      cer: 0.05
+      wer: 0.2759
+    bible_00110:
+      source: bible
+      text: Yesu gi taasɛ abelɛnsɛ mɔ gɛnen mɔ, ɔ naa taa mɔmɔ yɛgɛ ne ɔ kyon kpaa dɛ Bɛtani.
+      sbs: 0.7248
+      gen_sec: 6.31
+      ref_sec: 6.48
+      cer: 0.0323
+      wer: 0.1111
+    bible_00111:
+      source: bible
+      text: Kpɛ kyu lii ndɛ kyu kyon mɔ, gɛten kolon dɔ asa anun dɔ mɔ, asaꞌ mɛ laa wɔra gɛnɔ anyɔ mɔ
+        so, ne anyɔ mɔ, mɔ, mɛ laa wɔra gɛnɔ asaꞌ mɔ so.
+      sbs: 0.773
+      gen_sec: 10.33
+      ref_sec: 9.32
+      cer: 0.04
+      wer: 0.2727
+    bible_00112:
+      source: bible
+      text: 'Ɔkalan mɔ agyɛbi abono a tansi a tiri mɔ, me kee nɛ kasɛ amɔ daa pɛi ne nɛ lɔɔ kyu kperɛ
+        fɛye. Imɔ ne n gyɛ yɛɛ:'
+      sbs: 0.7689
+      gen_sec: 8.36
+      ref_sec: 9.14
+      cer: 0.0723
+      wer: 0.2222
+    bible_00113:
+      source: bible
+      text: Mɔmɔ wolɛ-wolɛ mɛ san mɛ kya sɔɔ abara akyɔɔlɛ, ne mɛ kyon taa mɔ yɛgɛ.
+      sbs: 0.7686
+      gen_sec: 5.63
+      ref_sec: 6.36
+      cer: 0.037
+      wer: 0.2667
+    bible_00114:
+      source: bible
+      text: Wurubuaarɛ ne nan gyi asa abono mɛŋ bo aye Yesu ɔson mɔ dɔ mɔ-lɛɛ nbɛlɛ. Wurubuaarɛ agyɛbi
+        a kya nyiile yɛɛ,
+      sbs: 0.7689
+      gen_sec: 8.62
+      ref_sec: 8.52
+      cer: 0.0118
+      wer: 0.0476
+    bible_00115:
+      source: bible
+      text: Mɛ kya laarɛ mɛꞌ kii mɔ, ɔnyen ɔbono Yesu gi kosorɛ ilaa nyɛnyɛn oduduu mɔ lii mɔ so mɔ gi
+        kolɛ Yesu yɛɛ, “Yɛgɛ me nꞌ buu fo de nꞌ kpaa kyena fo asɛ.” Yesu mɔ mɛŋ kyule sa mɔ. Ɔ tɔgɛ mɔ
+        daa yɛɛ,
+      sbs: 0.7036
+      gen_sec: 14.76
+      ref_sec: 14.04
+      cer: 0.0769
+      wer: 0.2222
+    bible_00116:
+      source: bible
+      text: Nfono mɔ Yesu gi sii yelɛ ne ɔ terɛ mɔmɔ ne ɔ taasɛ mɔmɔ yɛɛ, “Menɛ ne fɛ kya laarɛ nꞌ wɔra
+        sa fɛye?”
+      sbs: 0.6706
+      gen_sec: 7.42
+      ref_sec: 7.34
+      cer: 0.0135
+      wer: 0.0417
+    bible_00117:
+      source: bible
+      text: Adega, n kya ŋmarasɛ fɛye ɔwolɛ baarɛ n kya tɔgɛ fɛye
+      sbs: 0.742
+      gen_sec: 4.35
+      ref_sec: 3.6
+      cer: 0.119
+      wer: 0.2727
+    bible_00118:
+      source: bible
+      text: Yesu gi lɛɛ gɛnɔ sa mɔ yɛɛ, “Nbono gi tiri mɔ ne n gyɛ yɛɛ, ‘Laarɛ fo-Wura Wurubuaarɛ lii
+        fo-gisen dɔ. Kyu fo-gisen pɛwu de fo-gɛwɔnsa pɛwu kyu laarɛ Wurubuaarɛ ilaa.’
+      sbs: 0.7395
+      gen_sec: 13.23
+      ref_sec: 10.72
+      cer: 0.0
+      wer: 0.0
+    bible_00119:
+      source: bible
+      text: I mɛŋ gyɛ gɛnɔɔbono aye-ginyen gi laa dii fɛye asɛ abɛɛ asa ako kpɛi asɛ mɔ ne a laarɛ.
+      sbs: 0.7605
+      gen_sec: 6.83
+      ref_sec: 6.08
+      cer: 0.0299
+      wer: 0.0526
+    bible_00120:
+      source: bible
+      text: Gɛdɛ kɛsɛ mɔ, aye‑rɛ Pɔɔlo a kpaa laa Ɔbelɛnsɛ Gyeemesi mɔ‑rɛ Yesu ɔson mɔ dɔ abelɛnsɛ sɛnsɛ
+        mɔ pɛwu mɛ bo nno mɔ.
+      sbs: 0.7134
+      gen_sec: 9.05
+      ref_sec: 9.7
+      cer: 0.0
+      wer: 0.087
+    bible_00121:
+      source: bible
+      text: Ayaa abono so mɔ, Yesu gi tɔgɛ sa ɔmɔ yɛɛ, “Fɛꞌ keda nyoro! Me Yesu ne. Fɛŋ sa fɛꞌ selɛ gifuu.”
+      sbs: 0.6848
+      gen_sec: 7.17
+      ref_sec: 6.78
+      cer: 0.0882
+      wer: 0.2381
+    bible_00122:
+      source: bible
+      text: N kya tɔgɛ mi‑i sa fɛye yɛɛ, me ɔbono n yelɛ fɛye asɛ gɛrɛnaa faa nɛ don Wurubuaarɛ ɔson obu
+        mɔ.
+      sbs: 0.7213
+      gen_sec: 7.59
+      ref_sec: 5.7
+      cer: 0.0411
+      wer: 0.0952
+    bible_00123:
+      source: bible
+      text: ɔꞌ wɔra aniya de ɔꞌ wɔra ilaa iko sa mɔmɔ. Ɔꞌ terɛ Pɔɔlo ba Gyɛrusalem nno. Mɛ ŋminde yela
+        yɛɛ mɛ laa bun ɔkpa dɔ gyoo mɔ de mɛꞌ mɔɔ mɔ ɔkpa mɔ dɔ nno.
+      sbs: 0.7626
+      gen_sec: 11.18
+      ref_sec: 13.18
+      cer: 0.0526
+      wer: 0.2286
+    bible_00124:
+      source: bible
+      text: Ibono i gyangbara mɔ ne n gyɛ yɛɛ nɛ nu yɛɛ fɛye Yesu asonbo mɔ fɛ kya gyanꞌ mɔ, gɛsabaragɛ
+        gɛ bo fɛye dɔ, ne nɛ sɔɔ gyi yɛɛ i laa wɔra gɛsintin. Gɛsabaragɛ gɛ laa nyɛ fɛye dɔ berɛ.
+      sbs: 0.7787
+      gen_sec: 13.65
+      ref_sec: 12.96
+      cer: 0.0507
+      wer: 0.075
+    bible_00125:
+      source: bible
+      text: Fo mɛŋ nyi yɛɛ i kaaborɛ foꞌ su fo-nanbo so fɛɛ gɛnɔɔbono nɛ su fo so mɔ?’
+      sbs: 0.6789
+      gen_sec: 5.63
+      ref_sec: 3.42
+      cer: 0.0545
+      wer: 0.1765
+    bible_00126:
+      source: bible
+      text: Yesu gi taasɛ gɛnen ne o kii lɛɛ gɛsɛ sa sakpii mɔ yɛɛ, “Ndɛ asa mɔ mɛ dɛ fɛɛ nbii ne n kpaa
+        gyanꞌ sansana. Mɛ gyanꞌ gɛnen mɔ, nfono mɔ, mɛ kya tɔgɛ mɛ kya sa abara yɛɛ,
+      sbs: 0.7213
+      gen_sec: 12.54
+      ref_sec: 11.2
+      cer: 0.048
+      wer: 0.2821
+    bible_00127:
+      source: bible
+      text: Imɔ nkɛ nsee gɛmara mɔ, Yesu gi kyu Piita de Gyeemesi de Gyɔn, Gyeemesi mɔ-tedɛ, ne mɛ dii
+        kpe gibii belɛ giko so mɔmɔ wolɛ.
+      sbs: 0.7437
+      gen_sec: 9.64
+      ref_sec: 9.68
+      cer: 0.0737
+      wer: 0.16
+    bible_00128:
+      source: bible
+      text: Yesu gi lɛɛ gɛnɔ sa ɔmɔ yɛɛ, “Ne fɛye mɔ de‑e? I wonɛ so ne fɛye-itiibilaa so mɔ, fɛ kya kerɛ
+        ansi taa Wurubuaarɛ nbara mɔ yɛgɛ daa?
+      sbs: 0.7395
+      gen_sec: 10.33
+      ref_sec: 9.5
+      cer: 0.0102
+      wer: 0.1071
+    bible_00129:
+      source: bible
+      text: I kpelegɛ baa yii mɔ-ansi dɔ mɔ, Piita gi nu gigyɛbiꞌ giko gi terɛ mɔ tɔgɛ yɛɛ, “Piita, koso
+        de foꞌ mɔɔ wɛ.”
+      sbs: 0.752
+      gen_sec: 8.02
+      ref_sec: 9.82
+      cer: 0.0759
+      wer: 0.1739
+    bible_00130:
+      source: bible
+      text: “Nꞌ taasɛ fɛye ilaa iko. Nengyene nyamesɛ bo isandɛ ikue-inun ne ɔkolon gi fuɛ mɔ, ɔ maŋ taa
+        asɛnsɛ mɔ yɛgɛ mɔmɔ-ogyiten de ɔꞌ kpaa laarɛ ɔbono ɔ fuɛ mɔ? Gɛsintin, ɔ laa laarɛ mɔ gɛnen‑n
+        kaaborɛ oꞌ wu mɔ.
+      sbs: 0.7499
+      gen_sec: 16.21
+      ref_sec: 13.08
+      cer: 0.0769
+      wer: 0.275
+    bible_00131:
+      source: bible
+      text: Fɛ nyi yɛɛ fɛ nyi ɔlaako mɔ, i wonɛ ne fɛ kya nu asa abono mɛ mɛŋ nyi ɔlaako mɔ asɛ?
+      sbs: 0.7533
+      gen_sec: 6.49
+      ref_sec: 6.38
+      cer: 0.0
+      wer: 0.0952
+    bible_00132:
+      source: bible
+      text: Sɔɔlo gi nyise koso ne o bugi mɔ-ansi mɔ, ɔŋ baa ɔ kya wu sɛi. Imɔso mɛ keda mɔ daa de gibaa
+        kyu loo Damasikosɛ ɔsowolɛ mɔ so.
+      sbs: 0.7491
+      gen_sec: 9.98
+      ref_sec: 10.86
+      cer: 0.0
+      wer: 0.0714
+    bible_00133:
+      source: bible
+      text: Nfono mɔ ɔbelɛnsɛ mɔ laa kii lɛɛ gɛnɔ yɛɛ, ‘Meŋ nyi fɛye. Me ne n tɔgɛ sa fɛye. Fɛ gyɛ daa
+        ilaa nyɛnyɛn awɔrabo. Fɛꞌ naa me-ansi so!’
+      sbs: 0.7652
+      gen_sec: 10.24
+      ref_sec: 8.88
+      cer: 0.0204
+      wer: 0.0714
+    bible_00134:
+      source: bible
+      text: I dɛ daa fɛɛ gɛnɔɔbono i bo Wurubuaarɛ agyɛbi dɔ gɛtɛɛko mɔ. I bo nno yɛɛ,
+      sbs: 0.7691
+      gen_sec: 5.72
+      ref_sec: 4.96
+      cer: 0.0
+      wer: 0.0
+    bible_00135:
+      source: bible
+      text: Nfono ne dega mɔ gi kpelegɛ ŋmii wura mɔ ansi dɔ kolɛ mɔ yɛɛ, ‘Nyɛ gisen sa me. I wɔra mɔ,
+        nan baa ka fo.’
+      sbs: 0.7343
+      gen_sec: 8.02
+      ref_sec: 6.76
+      cer: 0.0395
+      wer: 0.24
+    bible_00136:
+      source: bible
+      text: Kirisito ɔkalan konkonsɛ mɔ so ne nꞌ kya wɔra me-nyoro fɛɛ nyamesɛ kamaasɛ oyuduu gɛnen de
+        me kee nꞌ nyɛ ayuule abono Wurubuaarɛ kya sa asa kyu naa de gɛnen ɔkalan mɔ so mɔ.
+      sbs: 0.7344
+      gen_sec: 13.74
+      ref_sec: 11.88
+      cer: 0.029
+      wer: 0.1176
+    bible_00137:
+      source: bible
+      text: I kya nyiile yɛɛ anyamesɛ-lɛɛ nbara ne mɛ dɛ mɛ kya penɛ
+      sbs: 0.7199
+      gen_sec: 4.44
+      ref_sec: 3.86
+      cer: 0.0909
+      wer: 0.3333
+    bible_00138:
+      source: bible
+      text: Mɛ ba mɔ, ɔ tɔgɛ sa ɔmɔ yɛɛ, “Kpɛ kyu lii gɛkaabono me-ayaa a yii Esiya gɛsinkpan so mɔ, fɛye
+        gbaa-gbaa fɛ wu me-gikyenabi fɛye dɔ.
+      sbs: 0.7045
+      gen_sec: 10.41
+      ref_sec: 10.36
+      cer: 0.0
+      wer: 0.0769
+    bible_00139:
+      source: bible
+      text: Gɛnen owi ɔbono ne Wurubuaarɛ laa ka asa ilaa nyɛnyɛn ibono mɛ wɔra mɔ gikɔ. Ɔ biidɛ mɔmɔ-giso
+        gɛnen mɔ, i laa yɛgɛ ilaa kamaasɛ ibono mɛ ŋmarasɛ yela Wurubuaarɛ agyɛbi mɔ dɔ mɔ iꞌ nyɛ ba gɛsintin.
+      sbs: 0.7302
+      gen_sec: 16.04
+      ref_sec: 11.88
+      cer: 0.0385
+      wer: 0.1842
+    bible_00140:
+      source: bible
+      text: Owi ɔbono a bo fɛye asɛ nno mɔ, a wolaa tɔgɛ fɛye yela yɛɛ aye‑rɛ fɛye a laa wu ɔlaawusɛ.
+        Gɛsintin mɔ, fɛŋ wu i ba gɛnen mɔ?
+      sbs: 0.7735
+      gen_sec: 9.73
+      ref_sec: 10.26
+      cer: 0.0
+      wer: 0.0714
+    bible_00141:
+      source: bible
+      text: Mɛ gyi kaabo mɔ, mɛ lɛɛ ilaa ibono i bo gikolii mɔ dɔ mɔ too nkyu dɔ de gikolii mɔ giꞌ nyɛ
+        koso oduduu.
+      sbs: 0.7349
+      gen_sec: 7.77
+      ref_sec: 9.06
+      cer: 0.0385
+      wer: 0.0833
+    bible_00142:
+      source: bible
+      text: Imɔso fɛꞌ dalaa kolɛ Wurubuaarɛ ɔbono ɔ gyɛ Ndɔɔ Wura mɔ yɛɛ mɔ gbaa-gbaa oꞌ kyu abono mɛ
+        laa kɛbi ɔmɔlɔgɔ mɔ ba mɔ-ndɔɔ mɔ dɔ.”
+      sbs: 0.6909
+      gen_sec: 9.81
+      ref_sec: 9.38
+      cer: 0.0606
+      wer: 0.1923
+    bible_00143:
+      source: bible
+      text: Nengyene a kine yɛɛ Yesu mɛŋ gyɛ aye-Wura berɛ mɔ,
+      sbs: 0.7258
+      gen_sec: 4.1
+      ref_sec: 3.12
+      cer: 0.1538
+      wer: 0.6
+    bible_00144:
+      source: bible
+      text: Me asɛ ikyenaten mɔ berɛ, meŋ bo ɔkpa de nꞌ lɛɛ yɛɛ ɔdɛ ne ɔꞌ kyena me-gibaa gyisɛ so abɛɛ
+        ɔdɛ ne ɔꞌ kyena me-benɛ so. Gɛnen ikyenaten ibono i gyɛ sa daa abono Wurubuaarɛ gi lɔrɔ imɔ yela
+        sa mɔ.”
+      sbs: 0.6911
+      gen_sec: 15.18
+      ref_sec: 13.52
+      cer: 0.1477
+      wer: 0.5366
+    bible_00145:
+      source: bible
+      text: ‘Wurubuaarɛ laa tɔgɛ sa mɔ Wurubuaarɛ dɔ isɔɔ
+      sbs: 0.683
+      gen_sec: 3.67
+      ref_sec: 3.34
+      cer: 0.0541
+      wer: 0.125
+    bible_00146:
+      source: bible
+      text: Yesu gi kii tɔgɛ sa mɔmɔ yɛɛ, “Gɛnɔɔbono Wurubuaarɛ gɛwuragyi dɔ akyenabi mɔ a kya ba asa
+        dɔ mɔ i dɛ fɛɛ gikpalɛ gibono nan baa da faa. Dɔɔbo ɔko gi duu awayu mɔ-ndɔɔ dɔ.
+      sbs: 0.7317
+      gen_sec: 13.31
+      ref_sec: 11.76
+      cer: 0.1145
+      wer: 0.3143
+    bible_00147:
+      source: bible
+      text: Yesu gi lɛɛ gɛnɔ taasɛ mɔ-akasɛbo mɔ yɛɛ, “Imɔso fɛye kee fɛye-nwɔnsa dɔ iŋ ti bugi de fɛꞌ
+        nu ilaa gɛsɛ?
+      sbs: 0.7191
+      gen_sec: 8.28
+      ref_sec: 6.78
+      cer: 0.038
+      wer: 0.1429
+    bible_00148:
+      source: bible
+      text: Yesu gi kyon kpe Kapɛɛniyon. Ɔ loo nno mɔ, Rom awura asogya ɔbelɛnsɛ ɔko gi lii kpaa gyangara
+        mɔ ne ɔ kolɛ mɔ
+      sbs: 0.7005
+      gen_sec: 8.45
+      ref_sec: 7.88
+      cer: 0.0471
+      wer: 0.1304
+    bible_00149:
+      source: bible
+      text: Gɛnen owi ɔbono mɔ, Rom awura asogya ɔbelɛnsɛ ɔko bo ɔsowolɛ mɔ so, mɔ-dega ɔbono mɔ-ilaa
+        i bo mɔ-gisen dɔ mɔ kya lɔ, ibono i bo lon. Ɔ kya laarɛ de ɔꞌ lɛɛ gibaa.
+      sbs: 0.72
+      gen_sec: 12.63
+      ref_sec: 12.32
+      cer: 0.0165
+      wer: 0.0588
+    bible_00150:
+      source: bible
+      text: Gɛnɔɔbono nɛ yen fɛye sa Masadoniya awura mɔ, nengyene fɛɛ mɔmɔ ako mɛ buu me ba fɛye asɛ
+        ne mɛ baa wu yɛɛ fɛŋ baala mɔ, me‑rɛ fɛye kpini a laa gyi ipeeli.
+      sbs: 0.7904
+      gen_sec: 12.29
+      ref_sec: 13.56
+      cer: 0.0168
+      wer: 0.0606
+    bible_00151:
+      source: bible
+      text: I lii fɛɛ gɛnɔɔbono fɛ laa kpaa ɔmɔ faa, i laa yɛgɛ Wurubuaarɛ asonbo mɔ mɛ laa nyɛ ilaa ibono
+        i tiri mɔmɔ mɔ. Ne i laa kii yɛgɛ asa mɛ laa tansi faala Wurubuaarɛ mɛ kya kpe mɛ kya ba.
+      sbs: 0.7754
+      gen_sec: 14.34
+      ref_sec: 14.08
+      cer: 0.0071
+      wer: 0.0244
+    bible_00152:
+      source: bible
+      text: Yesu baarɛ ilaa ne mɛ ŋmarasɛ yela Wurubuaarɛ agyɛbi mɔ dɔ gɛtɛɛko mɔ. Mɛ ŋmarasɛ yɛɛ,
+      sbs: 0.769
+      gen_sec: 7.17
+      ref_sec: 6.86
+      cer: 0.1449
+      wer: 0.0625
+    bible_00153:
+      source: bible
+      text: Mɛ kine Yesu gɛsintin ɔkalan mɔ gɛnen mɔ, Wurubuaarɛ laa tɛsɛ kyu ɔlon ɔko wɔra mɔmɔ-nwɔnsa
+        dɔ de mɛꞌ san sɔɔ daa abon gyi.
+      sbs: 0.7714
+      gen_sec: 9.73
+      ref_sec: 9.52
+      cer: 0.0103
+      wer: 0.0417
+    bible_00154:
+      source: bible
+      text: Imɔ idɛ gɛmara mɔ, a kyena nno nkɛ kalɛsɛ mɔ, a baala ne a kyon kpe Gyɛrusalem.
+      sbs: 0.7397
+      gen_sec: 6.14
+      ref_sec: 6.28
+      cer: 0.05
+      wer: 0.1765
+    bible_00155:
+      source: bible
+      text: Mɛ fo ɔsowolɛ ɔbono so mɛ kya kpe mɔ, Yesu gi wɔra fɛɛ mɔ berɛ ɔ kya loo ɔ kya lii daa.
+      sbs: 0.6926
+      gen_sec: 6.57
+      ref_sec: 6.0
+      cer: 0.0312
+      wer: 0.0909
+    bible_00156:
+      source: bible
+      text: Menɛ nwɔnsa ne fɛ dɛ?” Mɛ lɛɛ gɛnɔ sa mɔ yɛɛ, “Ɔ kaaborɛ ɔꞌ wɔra ɔmɔɔsɛ.”
+      sbs: 0.7361
+      gen_sec: 5.38
+      ref_sec: 5.9
+      cer: 0.0769
+      wer: 0.25
+    bible_00157:
+      source: bible
+      text: Gɛdɛ gɛ kɛ mɔ, Yesu gi kpe nfono asa mɛŋ bo mɔ. Asa mɛ laarɛ mɔ ne mɛ laarɛ mɔ gɛnen‑n kpaa
+        wu mɔ ne mɛ buɛɛlɛ mɔ yɛɛ ɔꞌ kyena mɔmɔ asɛ, ɔŋ baa naa taa mɔmɔ yɛgɛ.
+      sbs: 0.704
+      gen_sec: 12.46
+      ref_sec: 12.68
+      cer: 0.2269
+      wer: 0.3846
+    bible_00158:
+      source: bible
+      text: Nɛ tɔgɛ Wura Yesu gɛnen mɔ, ɔ tɔgɛ me yɛɛ, ‘Fo berɛ, naa daa. Nan sun fo koo-koo asa abono
+        mɛ mɛŋ gyɛ Gyuda awura mɔ asɛ.’ ”
+      sbs: 0.7527
+      gen_sec: 9.22
+      ref_sec: 9.88
+      cer: 0.0
+      wer: 0.0
+    bible_00159:
+      source: bible
+      text: Wurubuaarɛ gi wɔra gɛnen de iꞌ nyɛ ba yɛɛ nyamesɛ nyoro gɛten kamaasɛ i kya nu abara gɛsɛ
+        ne i kya kerɛ abara so.
+      sbs: 0.7319
+      gen_sec: 8.87
+      ref_sec: 9.34
+      cer: 0.0112
+      wer: 0.0417
+    bible_00160:
+      source: bible
+      text: Mɛ tɔgɛ sa mɔ yɛɛ, “Ɔbelɛnsɛ, a kya nyingi yɛɛ nkɛ nbono gɛnen ɔbonbo mɔ tɛ de ansi mɔ, ɔ
+        tɔgɛ yɛɛ, ‘Nɛ wuꞌ mɔ, imɔ gɛkɛ sasɛ mɔ Wurubuaarɛ laa kyingi me lii ibuni dɔ.’
+      sbs: 0.7877
+      gen_sec: 12.89
+      ref_sec: 14.98
+      cer: 0.0242
+      wer: 0.1389
+    bible_00161:
+      source: bible
+      text: Yesu gi tɔgɛ sa ɔnyen mɔ yɛɛ, “Agbowugbowu gbaa mɛ bo ibɔ dɛsɛ, ne nbuii kee mɛ bo asisaa.
+        Me, anyamesɛ pɛwu mɔmɔ-daa mɔ berɛ, meŋ bo me-gimu okunten.”
+      sbs: 0.7596
+      gen_sec: 12.12
+      ref_sec: 11.86
+      cer: 0.0796
+      wer: 0.2069
+    bible_00162:
+      source: bible
+      text: Ne Yesu gi taasɛ mɔ yɛɛ, “Menɛ ne fo kya laarɛ nꞌ wɔra sa fo?” Gyaatanbo mɔ gi lɛɛ gɛnɔ yɛɛ,
+        “Ɔbelɛnsɛ, n kya laarɛ me-ansi aꞌ bugi.”
+      sbs: 0.676
+      gen_sec: 9.81
+      ref_sec: 10.92
+      cer: 0.0208
+      wer: 0.0714
+    bible_00163:
+      source: bible
+      text: Yesu gi tɔgɛ sa mɔ-akasɛbo mɔ yɛɛ, “I wɔra nnɛ mɔ, ilaa ibonoana i laa yɛgɛ asa mɛꞌ wɔra ilaa
+        nyɛnyɛn mɔ i laa ba. Imɔ mɔ, ɔbono ɔ laa yɛgɛ i ba gɛnen mɔ, kaasɛ mɔ laako!
+      sbs: 0.7549
+      gen_sec: 13.06
+      ref_sec: 12.3
+      cer: 0.016
+      wer: 0.1053
+    bible_00164:
+      source: bible
+      text: Ibono Pɔɔlo gi tɔgɛ gikyingi lii ibuni dɔ so ilaa mɔ, asa mɔ ako berɛ mɛ kyu mɔ ŋmasɛ daa.
+        Ako mɔ yɛɛ, “Gɛkɛ banban mɔ a kya laarɛ foꞌ kii baa tɔgɛ ilaa idɛ sa aye.”
+      sbs: 0.709
+      gen_sec: 12.63
+      ref_sec: 14.66
+      cer: 0.0163
+      wer: 0.1081
+    bible_00165:
+      source: bible
+      text: yɛɛ, “Fɛꞌ kpe ɔsowolɛ ɔbono ɔ bo aye-ansi dɔ faa. Fɛ kpɛ fɛ kya loo ɔsowolɛ mɔ so mɔ, fɛ laa
+        wu bee kyiisɛ kyaa de ɔfɛ, mɔ-bi yelɛ mɔ asɛ. Fɛꞌ sangɛ mɔ de fɛꞌ kyu mɔ‑rɛ mɔ-bi mɔ bara me.
+      sbs: 0.783
+      gen_sec: 14.08
+      ref_sec: 13.7
+      cer: 0.0299
+      wer: 0.1429
+    bible_00166:
+      source: bible
+      text: nan kyɛɛgɛ me-Oduduu bun mɔmɔ‑rɛ mɔmɔ-anyen de akyii so
+      sbs: 0.6973
+      gen_sec: 4.69
+      ref_sec: 3.82
+      cer: 0.25
+      wer: 0.2222
+    bible_00167:
+      source: bible
+      text: Imɔso a mɛŋ sa aꞌ dɛ tan ilaa idɛ so fɛɛ asa sɛnsɛ-lɛɛ mɔ. Aye-ansi aꞌ dɛ ilaa idɛ so de aꞌ
+        bii aye-nyoro gikedabi.
+      sbs: 0.7619
+      gen_sec: 8.87
+      ref_sec: 8.82
+      cer: 0.093
+      wer: 0.44
+    bible_00168:
+      source: bible
+      text: Imɔso fɛ mɛŋ sa fɛꞌ suiili kyu lii ɔkɛ-lɛɛ so. Ɔkɛ gɛkɛ mɔ gɛ laa bara gɛmɔ-lɛɛ. Imɔso iŋ
+        kaaborɛ fɛꞌ baa kyu ɔkɛ-lɛɛ gikpon kyu too ndɛ-lɛɛ gikpon so.
+      sbs: 0.7647
+      gen_sec: 12.12
+      ref_sec: 13.74
+      cer: 0.2348
+      wer: 0.7
+    bible_00169:
+      source: bible
+      text: I kya nyiile yɛɛ Samariya awura mɔ mɛ nyɛ daa Wurubuaarɛ sagyere mɔ wolɛ Wura Yesu ginyen
+        dɔ. Mɛŋ ti nyɛ de Wurubuaarɛ Oduduu mɔ ɔꞌ baa bun mɔmɔ ɔko‑rɛ ɔko so.
+      sbs: 0.712
+      gen_sec: 12.63
+      ref_sec: 11.68
+      cer: 0.024
+      wer: 0.0938
+    bible_00170:
+      source: bible
+      text: I bo ilaa isaꞌ ibono i kya lɛɛ Yesu gidebi mɔ nyiile aye.
+      sbs: 0.7095
+      gen_sec: 4.35
+      ref_sec: 3.76
+      cer: 0.0682
+      wer: 0.4615
+    bible_00171:
+      source: bible
+      text: Gɛnen so mɔ, o kuu ɔnangya kyon asa mɔ so ne ɔ kpaa dii ɔ gyanꞌ Siikamɔɔ oyii belɛ ɔko so
+        nfono Yesu laa kyu de mɔ. Yesu laa kyon mɔ, de ɔꞌ nyɛ wu mɔ.
+      sbs: 0.7061
+      gen_sec: 11.18
+      ref_sec: 12.98
+      cer: 0.0541
+      wer: 0.25
+    bible_00172:
+      source: bible
+      text: I lii fɛɛ me, anyamesɛ pɛwu mɔmɔ-daa mɔ gbaa, meŋ ba gɛsinkpan so yɛɛ asa mɛꞌ son me. Nɛ ba
+        daa de nꞌ baa son asa de nꞌ kyu me-nkpa kyɛɛ de iꞌ lɛɛ asa sakyɔ lii ilaa nyɛnyɛn giwɔra dɔ kiiri
+        mɔmɔ sa Wurubuaarɛ.”
+      sbs: 0.7218
+      gen_sec: 16.38
+      ref_sec: 14.82
+      cer: 0.044
+      wer: 0.2667
+    bible_00173:
+      source: bible
+      text: Asa mɛ kya mili Yesu gikyɔ so mɔ, ɔ kya kyena lii sakpii mɔ dɔ kpe nfonoana asa mɛŋ bo mɔ
+        kpaa dalaa.
+      sbs: 0.7366
+      gen_sec: 7.94
+      ref_sec: 8.0
+      cer: 0.0649
+      wer: 0.1304
+    bible_00174:
+      source: bible
+      text: Yesu san ɔ yelɛ ɔ kya tɔngɛ mɔ, ɔko gi lii Ɔbelɛnsɛ Gyarasɛ gɛten dɔ baa tɔgɛ sa Gyarasɛ yɛɛ,
+        “Fo-bi mɔ gi wuꞌ. Imɔso gɛŋ baa nyala ɔbelɛnsɛ mɔ yɛɛ ɔꞌ baa kyɛ mɔ.”
+      sbs: 0.7025
+      gen_sec: 12.37
+      ref_sec: 14.5
+      cer: 0.0328
+      wer: 0.0857
+    bible_00175:
+      source: bible
+      text: A loo Gyuda awura ɔsowolɛ belɛ Gyɛrusalem mɔ, aye-nanboana Yesu ɔson mɔ dɔ abono mɛ tɛ nno
+        mɔ mɛ da aye gya-gya ne mɛ keda aye gisafo.
+      sbs: 0.7544
+      gen_sec: 10.33
+      ref_sec: 11.04
+      cer: 0.0481
+      wer: 0.2222
+    bible_00176:
+      source: bible
+      text: Yesu gi wɔra gɛnen ilaa idɛ mɔ, i kyena de ilaa ibono Wurubuaarɛ ikalan ɔtɔgɛbo Isaya gi wolaa
+        tɔgɛ lii mɔ so mɔ. Ɔ tɔgɛ yɛɛ,
+      sbs: 0.7466
+      gen_sec: 9.98
+      ref_sec: 9.78
+      cer: 0.0
+      wer: 0.0
+    bible_00177:
+      source: bible
+      text: yɛɛ fɛ bo ɔlon, Wurubuaarɛ agyɛbi mɔ a tɛ fɛye-asen dɔ,
+      sbs: 0.7369
+      gen_sec: 4.35
+      ref_sec: 4.86
+      cer: 0.0476
+      wer: 0.0909
+    bible_00178:
+      source: bible
+      text: Imɔso asa ilaa wɔrasɛ ne fɛ laa kyu bii yɛɛ mɛ gyɛ Wurubuaarɛ ikalan atɔgɛbo gɛsintin?
+      sbs: 0.6972
+      gen_sec: 6.91
+      ref_sec: 4.78
+      cer: 0.0
+      wer: 0.125
+    bible_00179:
+      source: bible
+      text: Gɛnen nkɛ nbono dɔ mɔ Wurubuaarɛ ikalan atɔgɛbo ako mɛ lii Gyɛrusalem ba Antiyoki nno.
+      sbs: 0.7092
+      gen_sec: 7.08
+      ref_sec: 6.64
+      cer: 0.0141
+      wer: 0.0667
+    bible_00180:
+      source: bible
+      text: Aye-sɛ Wurubuaarɛ de aye-Wura Yesu Kirisito mɛꞌ sa fɛye so gɛwɔnsa dɛnsɛ de mɛꞌ sa fɛye gisen
+        yuuli.
+      sbs: 0.7524
+      gen_sec: 8.02
+      ref_sec: 6.14
+      cer: 0.05
+      wer: 0.1667
+    bible_00181:
+      source: bible
+      text: Mɛ kyu bee mɔ bara Yesu mɔ, mɛ kyu akuru too gyan mɔ so, ne Yesu gi dii gyanꞌ.
+      sbs: 0.7214
+      gen_sec: 5.63
+      ref_sec: 6.62
+      cer: 0.0702
+      wer: 0.2105
+    bible_00182:
+      source: bible
+      text: nan sun ɔko de ɔꞌ gyangbara kpaa tɔgɛ sa asa yɛɛ
+      sbs: 0.648
+      gen_sec: 3.58
+      ref_sec: 3.16
+      cer: 0.3158
+      wer: 0.7273
+    bible_00183:
+      source: bible
+      text: ‘Ɔbono ɔ laa kine mɔ-ka mɔ, i kaaborɛ ɔꞌ sa mɔ gikine ɔwolɛ.’
+      sbs: 0.7118
+      gen_sec: 4.52
+      ref_sec: 3.88
+      cer: 0.0455
+      wer: 0.4615
+    bible_00184:
+      source: bible
+      text: Fɛye abono fɛ dena ne fɛye anyɔ fɛ gyɛ Yesu asonbo mɔ, n bo nbara nan sa fɛye. Gɛnen nbara
+        mɔ giŋ lii me asɛ. Gi lii daa Wura Yesu asɛ. Imɔ ne n gyɛ yɛɛ ɔkyii ɔŋ sa ɔꞌ koso mɔ-kuli asɛ.
+      sbs: 0.7787
+      gen_sec: 14.17
+      ref_sec: 14.82
+      cer: 0.0146
+      wer: 0.1163
+    bible_00185:
+      source: bible
+      text: A mɛŋ gyi ɔko agyudɔ giyan yɛɛ a mɛŋ ka amɔ gikɔ. A pɛɛrɛ ansi wɔra gɛsun gɛnyɛ de gɛpɛ. A
+        mɛŋ laarɛ yɛɛ aꞌ wɔra gɛsola sa fɛye dɔ ɔko‑rɛ ɔko.
+      sbs: 0.7839
+      gen_sec: 11.09
+      ref_sec: 10.04
+      cer: 0.0187
+      wer: 0.0938
+    bible_00186:
+      source: bible
+      text: I kii kɛɛla ne aŋ ti kii wu fɛye mɔ, aŋ baa taalɛ kyena gɛnen. Imɔso aye asa asaꞌ a tɔgɛ kyule
+        abara yɛɛ me‑rɛ Siilasɛ a laa sii kyena Atɛnsɛ ɔsowolɛ so
+      sbs: 0.7401
+      gen_sec: 12.03
+      ref_sec: 11.16
+      cer: 0.0855
+      wer: 0.3333
+    bible_00187:
+      source: bible
+      text: Ginyɔsɛ mɔ o kii sun mɔmɔ mɔ, idɛ kon ne mɔmɔ-tedɛ Gyosɛfo mɔ gi lɔɔ lɛɛ mɔ-nyoro nyiile mɔmɔ.
+        Nfono ne Igyipiti wura mɔ gi kyu bii gɛsu gɛbono dɔ Gyosɛfo gi lii mɔ.
+      sbs: 0.7444
+      gen_sec: 12.89
+      ref_sec: 10.66
+      cer: 0.0394
+      wer: 0.1471
+    bible_00188:
+      source: bible
+      text: Fo ɔbono fo bo nŋmaŋman gɛnen owi ɔbono mɔ, selɛ. Gɛŋ sa foꞌ kii gɛmara abɛɛ foꞌ loo obu dɔ
+        yɛɛ fo laa kpaa puru ilaa iko.
+      sbs: 0.744
+      gen_sec: 9.64
+      ref_sec: 7.6
+      cer: 0.0215
+      wer: 0.0741
+    bible_00189:
+      source: bible
+      text: Nkyan nbono gi bo afolɛ dɔ mɔ gi bugi-bugi ne asa abono Wurubuaarɛ gi lɔrɔ ɔmɔ yela sa mɔ-nyoro
+        mɔ sakyɔ mɛ kyingi lii ibuni dɔ,
+      sbs: 0.7338
+      gen_sec: 10.24
+      ref_sec: 10.36
+      cer: 0.0
+      wer: 0.0769
+    bible_00190:
+      source: bible
+      text: Nfono mɔ ilaa nyɛnyɛn oduduu mɔ i yɛgɛ ɔnyen mɔ gi gbere loo asa sono mɔ dɔ. Ɔ gooli-gooli
+        ɔmɔ, ne mɛ koso selɛ lii obu ɔbono dɔ mɛ bo mɔ gibolonbukpan.
+      sbs: 0.7525
+      gen_sec: 12.03
+      ref_sec: 12.28
+      cer: 0.0427
+      wer: 0.1562
+    bible_00191:
+      source: bible
+      text: Imɔ idɛ pɛwu i ba me so faa, i kyena daa de ilaa ibono Wurubuaarɛ ikalan atɔgɛbo mɔ mɛ wolaa
+        ŋmarasɛ yela Wurubuaarɛ agyɛbi mɔ dɔ mɔ.” Nfono mɔ, mɔ-akasɛbo mɔ pɛwu mɛ selɛ taa mɔ yɛgɛ.
+      sbs: 0.7578
+      gen_sec: 14.68
+      ref_sec: 10.88
+      cer: 0.007
+      wer: 0.027
+    bible_00192:
+      source: bible
+      text: Ɔko‑rɛ ɔko mɛŋ ti taa wu Wurubuaarɛ de ansi kerɛ. Nengyene a kya laarɛ abara ilaa mɔ, i kya
+        nyiile yɛɛ Wurubuaarɛ tɛ aye dɔ, ne a nyɛ mɔ-lɛɛ gɛlaarɛꞌ ɔnan a dɛ a kya laarɛ mɔ-ilaa.
+      sbs: 0.7463
+      gen_sec: 14.34
+      ref_sec: 12.94
+      cer: 0.0657
+      wer: 0.4054
+    bible_00193:
+      source: bible
+      text: Fɛꞌ nu me-gɛdɛ de fɛꞌ kasɛ me-gidebi. Fɛ wɔra gɛnen mɔ, fɛye-asen a laa kyena fɛye gɛten kolon.
+        I kya nyiile yɛɛ n gyɛ nyamesɛ ɔbono n kya bara me-nyoro gɛsɛ, ne nꞌ pɔɔ lii me-gisen dɔ.
+      sbs: 0.7547
+      gen_sec: 14.42
+      ref_sec: 12.84
+      cer: 0.036
+      wer: 0.2162
+    bible_00194:
+      source: bible
+      text: Fɛ wɔra gɛnen mɔ, asa abono mɛ mɛŋ bo fɛye-ɔson dɔ mɔ mɛ laa nyɛ kyu buubuu sa fɛye. Ne fɛ
+        maŋ kyu fɛye-nyoro too ɔko so.
+      sbs: 0.7431
+      gen_sec: 9.64
+      ref_sec: 8.84
+      cer: 0.0444
+      wer: 0.0741
+    bible_00195:
+      source: bible
+      text: Asa sakyɔ mɛ laa koso mɛ kya kɛɛ abon yɛɛ Wurubuaarɛ ikalan atɔgɛbo ne mɛ gyɛ, de mɛꞌ penɛ
+        asa sakyɔ kee.
+      sbs: 0.7197
+      gen_sec: 8.19
+      ref_sec: 6.62
+      cer: 0.0366
+      wer: 0.0909
+    bible_00196:
+      source: bible
+      text: Mɔ-nanbo mɔ, mɔ, gi kpelegɛ ŋmii mɔ-ayaa dɔ kolɛ mɔ yɛɛ, ‘Nyɛ gisen sa me. I wɔra mɔ, nan
+        baa ka fo.’
+      sbs: 0.761
+      gen_sec: 7.85
+      ref_sec: 6.12
+      cer: 0.0286
+      wer: 0.2727
+    bible_00197:
+      source: bible
+      text: Gɛnen asa abono mɛ kya wɔra ɔmɔ-nyoro fɛɛ mɔmɔ ne n gyɛ Yesu isɔɔ gbaa-gbaa. Meŋ kii wu yɛɛ
+        mɛ don me iko dɔ.
+      sbs: 0.7562
+      gen_sec: 8.53
+      ref_sec: 8.86
+      cer: 0.0732
+      wer: 0.3333
+    bible_00198:
+      source: bible
+      text: Nan tɔgɛ ilaa inyɔ sa ɔtɛgɛsɛ baarɛ. Giko ne n gyɛ yɛɛ,
+      sbs: 0.6898
+      gen_sec: 4.27
+      ref_sec: 3.92
+      cer: 0.0
+      wer: 0.0
+    bible_00199:
+      source: bible
+      text: “Me-nanboana, Isirale awura, nɛ wu yɛɛ ilaa ibono fɛye‑rɛ fɛye-abelɛnsɛ mɔ fɛ kyu wɔra Yesu
+        mɔ, fɛ mɛŋ nyi daa.
+      sbs: 0.7626
+      gen_sec: 9.13
+      ref_sec: 8.48
+      cer: 0.0
+      wer: 0.1
 - model: ghananlpcommunity/ghana-tts-72k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   mode: ref
@@ -17871,4 +19657,4 @@ benchmarks:
       ref_sec: 8.48
       cer: 0.131
       wer: 0.65
-updated: '2026-10-01'
+updated: '2026-10-09'
