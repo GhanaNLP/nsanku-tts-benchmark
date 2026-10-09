@@ -1735,6 +1735,1730 @@ benchmarks:
       ref_sec: 11.76
       cer: 0.0242
       wer: 0.0513
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7177
+  num_scored: 200
+  cer: 0.0454
+  wer: 0.1303
+  accuracy: 0.9546
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8361
+  score: 0.8361
+  per_source:
+    bible:
+      sbs: 0.7177
+      cer: 0.0454
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Akyɩɩ anyɔ mʋ ba yɩlɛ sa ntɔwɛ‐kyula anyɔ mʋ nɩɩ Ɩbwaarɛ waa maa asa nsana mʋ.
+      sbs: 0.6974
+      gen_sec: 6.23
+      ref_sec: 6.6
+      cer: 0.0164
+      wer: 0.125
+    bible_00001:
+      source: bible
+      text: Ɩbwaarɛ maa sa anɛ mʋ Kayaayu Kyɩrɛkyɩrɛ sʋ, nɩɩ an nyi fɛɛ an bʋ mʋ tɔ nɩɩ ngbaa mʋ bʋ anɛ
+        tɔ.
+      sbs: 0.6712
+      gen_sec: 7.34
+      ref_sec: 5.26
+      cer: 0.0139
+      wer: 0.0455
+    bible_00002:
+      source: bible
+      text: Herodi ɩ daa yɛgɛ nɩɩ ba kɩtaa Gyɔn okyugyeepu, nɩɩ ba taa agbeeleebi da mʋ, nɩɩ ba taa mʋ
+        tii obu.
+      sbs: 0.7637
+      gen_sec: 7.85
+      ref_sec: 7.04
+      cer: 0.1184
+      wer: 0.2857
+    bible_00003:
+      source: bible
+      text: Amaa ɔkʋmaa mʋ nɩɩ ɔ man sʋ mʋ, halɩɩ pii kʋmaa mʋ nɩɩ ɔ sʋ mʋ gbaa mʋ, bee biti ba kɔɔlɛ
+        lɩɩ mʋ asɛ.
+      sbs: 0.7519
+      gen_sec: 7.59
+      ref_sec: 5.98
+      cer: 0.0
+      wer: 0.0
+    bible_00004:
+      source: bible
+      text: Ɩ kaapʋ nɩn fɛɛ atɔbwaaya mʋ nɩɩ ba taa lɔŋɔ sa mʋ ɩ gyɛ kʋtɔ kʋ, abɛɛ ɩdakpa mʋ ɩ gyɛ kʋtɔkʋ?
+      sbs: 0.7709
+      gen_sec: 7.34
+      ref_sec: 8.14
+      cer: 0.0
+      wer: 0.1818
+    bible_00005:
+      source: bible
+      text: Ɔ maa bʋ tʋtɔ mʋ, nɩɩ asa damantɛ ba ba mʋ asɛ, nɩɩ bɛɛ tɔwɛ yɛ, “Halɩɩ Gyɔn maa man waa asɩn
+        kyinkyinsa ɩkʋ gbaa mʋ, kʋtɔ kʋmaa mʋ nɩɩ ɔ tɔwɛ lɩɩ ɔnyɩn nɩmʋ sʋ mʋ, kpini gyɛ kesintin.
+      sbs: 0.7551
+      gen_sec: 14.25
+      ref_sec: 14.08
+      cer: 0.029
+      wer: 0.1
+    bible_00006:
+      source: bible
+      text: Tʋtɔ nɩɩ Yesu taasɛ mʋ abɩɩlapʋ mʋ yɛ, “Saŋa mʋ nɩɩ n kyɩna sun fanɛ yɛgɛ fan man sʋ afulee
+        ɔwaakpa yɛ itaakpe yɛ asɩbɩta mʋ, fan pan kʋtɔ kʋ?
+      sbs: 0.7213
+      gen_sec: 11.18
+      ref_sec: 8.4
+      cer: 0.055
+      wer: 0.1
+    bible_00007:
+      source: bible
+      text: Nɩɩ ɔkʋ kan ɛɛ fɛ nfɛɛrɛ fɛɛ ɔ sʋ ɔkpa ɔ taa mʋ n‐yɩɩ tʋʋ kayɩɩ‐wʋlɛ kɩtɩn sʋ mʋ, naafɔɔ mɛ
+        ɩ sʋ ɔkpa n kyɔ mʋ.
+      sbs: 0.7407
+      gen_sec: 8.45
+      ref_sec: 8.82
+      cer: 0.0494
+      wer: 0.1481
+    bible_00008:
+      source: bible
+      text: ’ Nɩɩ fan kan nu asɩn nɩmʋ kasɛ nɩn, naafɔɔ fen mee bun asa mʋ nɩɩ ba man waa alibi mʋ kʋpwɛ.
+      sbs: 0.6929
+      gen_sec: 7.0
+      ref_sec: 5.66
+      cer: 0.058
+      wer: 0.0952
+    bible_00009:
+      source: bible
+      text: Anɛ Gyiwu abi anɛ Ɩbwaarɛ mʋ, lɛɛ anɛ naana ana nɩɩ ɔ sa bamʋ kanyɛ saŋa mʋ nɩɩ ba bʋ Egyipiti
+        ɔsʋwʋlɛ sʋ, nɩɩ ɔ taa mʋ ɔlʋn lɛɛ bamʋ lɩɩ ɔsʋwʋlɛ maŋa tɔ.
+      sbs: 0.7527
+      gen_sec: 12.2
+      ref_sec: 12.06
+      cer: 0.0
+      wer: 0.0
+    bible_00010:
+      source: bible
+      text: Ɩmʋ sʋ fan yɛgɛ alibi kɩwaa fanɛ kakyɩna tɔ kɛ fɛn buu Ɩbwaarɛ, kɛ ɔ taa fanɛ alibi kɛɛ fanɛ.
+      sbs: 0.7341
+      gen_sec: 7.34
+      ref_sec: 6.7
+      cer: 0.0556
+      wer: 0.15
+    bible_00011:
+      source: bible
+      text: Mʋ asɩn kyinkyinsa maŋa nɩɩ ɔ sʋ ɛɛ pɩna, bamʋ nɩɩ ba sʋ kadʋnbwɛ mʋ kakyʋlɛ, nɩɩ ba bɩla
+        bee sun mʋ apɔyɩtɔ ɔdakpa mʋ.
+      sbs: 0.7294
+      gen_sec: 9.47
+      ref_sec: 8.58
+      cer: 0.0435
+      wer: 0.2
+    bible_00012:
+      source: bible
+      text: Amaa ba kɔɔlɛ gyii fɛɛ Ɩbwaarɛ mʋ nɩɩ ɔ da mʋ kɔkɔlɔ sʋ sa bamʋ fɛɛ ee biti ɔ sa bamʋ kebii
+        mʋ, gyɛ kesintin wuya.
+      sbs: 0.7485
+      gen_sec: 8.79
+      ref_sec: 8.86
+      cer: 0.0
+      wer: 0.0
+    bible_00013:
+      source: bible
+      text: fʋ awaasa kparɛ mʋ ɩ kyɔ nɩɩ ii kyinkyin.
+      sbs: 0.6776
+      gen_sec: 3.24
+      ref_sec: 3.24
+      cer: 0.0312
+      wer: 0.1111
+    bible_00014:
+      source: bible
+      text: Nɩɩ be nyi kanan mʋ nɩɩ n du mɛ gbaa‐gbaa mɛ ɔsʋwʋlɛ sʋ yɛ Gyerusalem tɔ.
+      sbs: 0.7416
+      gen_sec: 5.72
+      ref_sec: 4.84
+      cer: 0.0357
+      wer: 0.125
+    bible_00015:
+      source: bible
+      text: Fanɛ atɔ mʋ ɩ gyɔɔ muuri, kɛ atɔ wɛsa ba wɛ fanɛ atɔ bunsa kpini.
+      sbs: 0.7231
+      gen_sec: 5.03
+      ref_sec: 5.48
+      cer: 0.1224
+      wer: 0.2667
+    bible_00016:
+      source: bible
+      text: Asɩnkyan yɩlasa mʋ ɩ tɔwɛ yɛ, pɔyɩ kɛ Ɩbwaarɛ ɔ taa Enoki kpee sʋsʋ mʋ, ɔ bɔla Ɩbwaarɛ ansi.
+      sbs: 0.7696
+      gen_sec: 7.34
+      ref_sec: 8.0
+      cer: 0.0
+      wer: 0.0
+    bible_00017:
+      source: bible
+      text: Ɩmʋ sʋ ɔ kyɛɛgɛ mʋ nfɛɛrɛ bwii kamaa naa bɔla lɩɩ Masedoniya.
+      sbs: 0.723
+      gen_sec: 4.95
+      ref_sec: 4.44
+      cer: 0.0
+      wer: 0.0
+    bible_00018:
+      source: bible
+      text: Nɩɩ Yesu tɔwɛ bamʋ yɛ, “Dulinya nɩmʋ tɔ awura bɛɛ nyan bamʋ asa nɩn, amaa bamʋ asa mʋ bɛɛ
+        tɩɩ bamʋ yɛ, ‘Anɛ akyɛtɔpʋ.
+      sbs: 0.7589
+      gen_sec: 9.13
+      ref_sec: 9.46
+      cer: 0.0341
+      wer: 0.125
+    bible_00019:
+      source: bible
+      text: Kasɛ sʋ awura bɛɛ kʋʋla bamʋ n‐yɩɩ kʋsʋ yɩlɛ.
+      sbs: 0.6864
+      gen_sec: 3.67
+      ref_sec: 3.54
+      cer: 0.2571
+      wer: 0.3333
+    bible_00020:
+      source: bible
+      text: Nɩɩ Yesu bɩla tɔwɛ bamʋ yɛ, “Sʋsʋ kuwura‐gyii mʋ ki du nɩn fɛɛ ɔnyɩn kʋ maa kʋsʋ kakaakʋ nyenyenfuu,
+        ɔ naa biti asa kɛ ba sun kusun mʋ ndɔɔ tɔ.
+      sbs: 0.7288
+      gen_sec: 11.18
+      ref_sec: 10.18
+      cer: 0.0183
+      wer: 0.0333
+    bible_00021:
+      source: bible
+      text: Ɩ dan ɩ gyɛ nɩn fɛɛ, n tɔwɛ asɩn danbɩrasa mʋ.
+      sbs: 0.7321
+      gen_sec: 3.5
+      ref_sec: 3.32
+      cer: 0.0
+      wer: 0.0
+    bible_00022:
+      source: bible
+      text: Mu ansi sʋ ɩɩ ŋalɩgɛ fɛɛ kyɔwɛ, nɩɩ mʋ atɔ bunsa ɩ kyɛɛgɛ waa parɛparɛ ɩɩ ŋalɩgɛ sʋ.
+      sbs: 0.6916
+      gen_sec: 6.83
+      ref_sec: 6.26
+      cer: 0.0
+      wer: 0.0
+    bible_00023:
+      source: bible
+      text: N biti n taa mɛ Kayaayu waa mʋ tɔ.
+      sbs: 0.6844
+      gen_sec: 2.56
+      ref_sec: 3.52
+      cer: 0.16
+      wer: 0.1111
+    bible_00024:
+      source: bible
+      text: Yesu tɔwɛ yɛ, “Fan yɛgɛ nbii wuribi mʋ ba ba mɛ asɛ, fan man tii bamʋ ɔkpa, lɩɩ fɛɛ sʋsʋ kuwura‐gyii
+        mʋ kɩ gyɛ sa asa mʋ nɩɩ be du fɛɛ nbii‐wuribi mʋ lɛɛ nɩn.
+      sbs: 0.7363
+      gen_sec: 12.2
+      ref_sec: 12.04
+      cer: 0.0085
+      wer: 0.0857
+    bible_00025:
+      source: bible
+      text: Nɩɩ a man taa anɛ n‐yɩɩ tʋʋ kayɩɩ‐wʋlɛ kɩtɩn sʋ.
+      sbs: 0.7676
+      gen_sec: 3.84
+      ref_sec: 3.96
+      cer: 0.0
+      wer: 0.0
+    bible_00026:
+      source: bible
+      text: Kanɩn asɩn maŋa ɩ gyɛ asɩn danbɩrasa mʋ nɩɩ ba tɔwɛ sa fanɛ mʋ.
+      sbs: 0.6857
+      gen_sec: 5.03
+      ref_sec: 5.6
+      cer: 0.0
+      wer: 0.0
+    bible_00027:
+      source: bible
+      text: Amaa ɩmaa ɩmʋ kpini gbaa mʋ, Ɩbwaarɛ ansi ɩ man gyii bamʋ gaalaagaa sʋ, nɩɩ ba wu‐wu yaasɛ
+        ba dɛ ofuli mʋ sʋ.
+      sbs: 0.7332
+      gen_sec: 8.62
+      ref_sec: 8.58
+      cer: 0.0602
+      wer: 0.1739
+    bible_00028:
+      source: bible
+      text: “Kanɩn sʋ n biti fan bɩɩ fɛɛ, Ɩbwaarɛ taa mʋ kamɔlɩgɛ mʋ naa sa bamʋ nɩɩ ba man gyɛ Gyiwu
+        abi, nɩɩ bee biti be nu mʋ.
+      sbs: 0.7547
+      gen_sec: 8.87
+      ref_sec: 7.84
+      cer: 0.0115
+      wer: 0.037
+    bible_00029:
+      source: bible
+      text: Saŋa mʋ nɩɩ Galiyo gyɛ Akiya kadɛ ɔkɩɩsʋpʋ mʋ, Gyiwu abi akʋ ba bʋga kʋsʋ naa tii Pɔɔlɩ, taa
+        mʋ kpee asɩn ogyikpa.
+      sbs: 0.6923
+      gen_sec: 9.22
+      ref_sec: 10.48
+      cer: 0.0562
+      wer: 0.1304
+    bible_00030:
+      source: bible
+      text: Lɩɩ fɛɛ, lɩɩ bamʋ kɩkɔɔlɛ‐gyii sʋ ɔ lɔŋɔ bamʋ nkɔlɔ tɔ.
+      sbs: 0.6886
+      gen_sec: 4.52
+      ref_sec: 3.92
+      cer: 0.0238
+      wer: 0.0909
+    bible_00031:
+      source: bible
+      text: Kanan mʋ nɩɩ Yesu Krisito du ndee mʋ, kanɩn nɩɩ o du ndaga, nɩɩ kanɩn nɩɩ ee biti ɔ baa o
+        du kakpaa.
+      sbs: 0.7506
+      gen_sec: 7.68
+      ref_sec: 8.66
+      cer: 0.0267
+      wer: 0.0435
+    bible_00032:
+      source: bible
+      text: ” A man waa kakyɩɩ abɛɛ kanyɩn biti kɩgyagaa fɛɛ kanan mʋ nɩɩ bamʋ tɔ akʋ ba daa kyɩna waa
+        mʋ, nɩɩ kakɛ kʋlʋn tɔ bamʋ asa ngbɩn adʋnyɔ yɛ asa ba wu mʋ.
+      sbs: 0.7255
+      gen_sec: 11.61
+      ref_sec: 13.3
+      cer: 0.0174
+      wer: 0.0909
+    bible_00033:
+      source: bible
+      text: Tʋtɔ nɩɩ ba maa Gyɔn Maki ba barɩgɛ abaa nɩɩ Gyɔn bwii kpee Gyerusalem.
+      sbs: 0.7033
+      gen_sec: 5.72
+      ref_sec: 5.52
+      cer: 0.2456
+      wer: 0.3571
+    bible_00034:
+      source: bible
+      text: Ɩmʋ sʋ ɩ waa mɛ ɔkɔn fɛɛ fu ansi tɔ nɩɩ n biti n tɔwɛ mɛ asɩn.
+      sbs: 0.7003
+      gen_sec: 4.52
+      ref_sec: 4.48
+      cer: 0.0444
+      wer: 0.0588
+    bible_00035:
+      source: bible
+      text: Ɩmʋ sʋ fan baa fan da sʋ, kɛ fan kɩtaa fanɛ n‐yɩɩ, kɛ fan taalɛ kʋlɛ kabwaarɛ‐kʋlɛ.
+      sbs: 0.7623
+      gen_sec: 6.66
+      ref_sec: 5.22
+      cer: 0.0323
+      wer: 0.1176
+    bible_00036:
+      source: bible
+      text: ’ Ɩmʋ sʋ n maa wu awʋrʋfɔ bamʋ abaa tɔ falɛ, kanɩn nɩɩ fanɛ gbaa fanɛ fen biti fan wu awʋrʋfɔ
+        bamʋ abaa tɔ.
+      sbs: 0.7201
+      gen_sec: 8.19
+      ref_sec: 6.0
+      cer: 0.0
+      wer: 0.0
+    bible_00037:
+      source: bible
+      text: Amaa nɩɩ fʋ nyɛ ɔkpa mʋ nɩɩ fʋ taa kɔɔlɛ fʋ n‐yɩɩ bɩrɛ, waa kanɩn.
+      sbs: 0.7097
+      gen_sec: 5.12
+      ref_sec: 4.98
+      cer: 0.0
+      wer: 0.0
+    bible_00038:
+      source: bible
+      text: Ɩmʋ sʋ ɩ dagaa fɛɛ a maa wu sa anɛ bɩrɩsa ana.
+      sbs: 0.7053
+      gen_sec: 3.41
+      ref_sec: 3.08
+      cer: 0.0588
+      wer: 0.0833
+    bible_00039:
+      source: bible
+      text: Nɩɩ o sun tɩɩ Pɔɔlɩ, nɩɩ ɔ yɛgɛ nɩɩ Pɔɔlɩ tɔwɛ Yesu Krisito kɩkɔɔlɛ‐gyii mʋ tɔ asɩn sa mʋ.
+      sbs: 0.7492
+      gen_sec: 7.08
+      ref_sec: 6.78
+      cer: 0.029
+      wer: 0.0526
+    bible_00040:
+      source: bible
+      text: Nɩɩ kakɛ fʋʋtɛsa akɛ mʋ an lɩɩ kadɛ mʋ tɔ kpee ɔlɩɩkaa.
+      sbs: 0.7296
+      gen_sec: 4.35
+      ref_sec: 5.16
+      cer: 0.1395
+      wer: 0.3333
+    bible_00041:
+      source: bible
+      text: kɛ ɔ tɔwɛ asɩn kyiigisa sa ndɛndɛmandɛ kpini.
+      sbs: 0.6448
+      gen_sec: 3.75
+      ref_sec: 3.6
+      cer: 0.1081
+      wer: 0.5
+    bible_00042:
+      source: bible
+      text: Lɩɩ fɛɛ ɔkʋmaa mʋ nɩɩ ɛɛ waa kanyɩn yɛ kakyɩɩ biti kɩgyagaa, yɛ bamʋ nɩɩ bɛɛ lɩɩ mʋ‐ka ana
+        abɛɛ bamʋ‐kuli ana kamaa mʋ, Ɩbwaarɛ ii biti ɔ talɛ bamʋ.
+      sbs: 0.742
+      gen_sec: 11.78
+      ref_sec: 12.32
+      cer: 0.0175
+      wer: 0.0667
+    bible_00043:
+      source: bible
+      text: N lɛɛ fu kedubi kaapʋ bamʋ, nɩɩ n biti n kyaga sʋ lɛɛ fʋ kaapʋ bamʋ, kɛ fu kebiti mʋ nɩɩ fʋ
+        sʋ sa mɛ mʋ kɩ baa kɩ bʋ bamʋ tɔ, kɛ ngbaa mɛ n baa n bʋ bamʋ tɔ.
+      sbs: 0.7178
+      gen_sec: 11.61
+      ref_sec: 13.12
+      cer: 0.0
+      wer: 0.0976
+    bible_00044:
+      source: bible
+      text: Ba yaasɛ kasɛ sʋ kpini bun kyaabɔɔ Ɩbwaarɛ asa, yɛ kadɛ lala mʋ nɩɩ Ɩbwaarɛ ii biti mʋ.
+      sbs: 0.7169
+      gen_sec: 6.91
+      ref_sec: 5.78
+      cer: 0.0588
+      wer: 0.0556
+    bible_00045:
+      source: bible
+      text: Nɩɩ Yesu bɩla bɔ bamʋ kɩŋasan kʋ yɛ, “Sʋsʋ kuwura‐gyii mʋ ki du nɩn fɛɛ atɔ kparɛ fɛɛ suwa
+        mʋ nɩɩ ba taa baala nɩɩ ɔnyɩn kʋ naa benti kasɛ kʋ sʋ.
+      sbs: 0.7446
+      gen_sec: 11.26
+      ref_sec: 10.84
+      cer: 0.0091
+      wer: 0.0312
+    bible_00046:
+      source: bible
+      text: ’ Ɩmʋ sʋ nɩɩ Ɩbwaarɛ wʋla lɛɛ mʋ kɩyaafɔlɛ Yesu nɩɩ ɔ gyankpaa sun mʋ fanɛ asɛ, kɛ fan yɛgɛ
+        alibi kɩwaa ɔkpa kʋmaa sʋ kɛ ɔ waa fanɛ kusee.
+      sbs: 0.7198
+      gen_sec: 10.67
+      ref_sec: 11.78
+      cer: 0.0094
+      wer: 0.069
+    bible_00047:
+      source: bible
+      text: Ɔlanba mʋ kamaa mʋ, Pɔɔlɩ sun tɩɩ Krisito akɔɔlɛ‐gyipu mʋ, nɩɩ ɔ tɔwɛ waa bamʋ, kala bamʋ,
+        nɩɩ ɔ lɩɩ tʋtɔ kpee Masedoniya.
+      sbs: 0.7619
+      gen_sec: 9.9
+      ref_sec: 10.7
+      cer: 0.0213
+      wer: 0.1304
+    bible_00048:
+      source: bible
+      text: ” Amaa ɔmʋ nɩɩ ɔ taa mʋ n‐yɩɩ bʋga yɛ Ɔnyɩrɩpɛ mʋ, maa mʋ ba biliŋi kʋkʋlʋn nɩn kayaayu tɔ.
+      sbs: 0.713
+      gen_sec: 7.08
+      ref_sec: 6.78
+      cer: 0.0
+      wer: 0.0
+    bible_00049:
+      source: bible
+      text: Amaa kakaakʋ Herodi maa kyɩna ee gyii mʋ kakɛ kʋʋgɛsa akɛ kinsigyi mʋ, Herodiya mu‐bii kyɩɩsa
+        kyaa sa bamʋ, nɩɩ ɩ waa Herodi ɔkɔn naa kyʋn sʋ.
+      sbs: 0.6876
+      gen_sec: 11.52
+      ref_sec: 11.1
+      cer: 0.0089
+      wer: 0.037
+    bible_00050:
+      source: bible
+      text: Akʋ ba natɛ kanɩn ba gyaŋa anɛ Apiya Kɩgya opula, nɩɩ akʋ mɔɔ ba ba gyaŋa anɛ ɔfʋʋtɛkpa asa
+        opula mʋ tɔ.
+      sbs: 0.7341
+      gen_sec: 8.45
+      ref_sec: 10.42
+      cer: 0.0741
+      wer: 0.2727
+    bible_00051:
+      source: bible
+      text: Mɛ kyɛmɩnɛ ana danbɩrasa, man gyɛ nbara pʋpwɛ nɩɩ n kyʋrɔɔ n sʋ n bɩya fanɛ, amaa ɩ gyɛ nbara
+        dɩdaa mʋ nɩɩ fan wʋla nyɛ lɩɩ npiili asɛ saŋa mʋ nɩɩ fan kɔlɛ gyii mʋ.
+      sbs: 0.718
+      gen_sec: 12.89
+      ref_sec: 11.36
+      cer: 0.0159
+      wer: 0.0556
+    bible_00052:
+      source: bible
+      text: Ɩmʋ sʋ fan man sʋ akpaara mʋ nɩɩ fen gyii kɛ fen nu ɩmʋ sʋ nɩn?
+      sbs: 0.6856
+      gen_sec: 4.69
+      ref_sec: 4.94
+      cer: 0.0213
+      wer: 0.0625
+    bible_00053:
+      source: bible
+      text: Maa man taalɛ ka mʋ, nɩɩ mʋ owura mʋ yɛ, ba taa maa mʋ‐ka yɛ mu‐bii ana yɛ kʋtɔ kʋmaa mʋ nɩɩ
+        ɔ sʋ mʋ naa fɛ kɛ ba ba ka kʋkɔ mʋ.
+      sbs: 0.7482
+      gen_sec: 9.47
+      ref_sec: 10.44
+      cer: 0.022
+      wer: 0.1515
+    bible_00054:
+      source: bible
+      text: Nɩɩ ba sʋ ɔlʋn ba taalɛ yɛgɛ nkyu ii biliŋi nkalan, nɩɩ ba bɩla ba sʋ ɔlʋn ba tɩɩ gyerebi
+        ba tʋʋ kasɛ sʋ saŋa kʋmaa mʋ nɩɩ bee biti.
+      sbs: 0.7059
+      gen_sec: 10.41
+      ref_sec: 9.9
+      cer: 0.0297
+      wer: 0.1
+    bible_00055:
+      source: bible
+      text: Kanɩn maŋa nɩɩ ɔkʋ mɛɛ taalɛ bɩɩ Ɩbwaarɛ nfɛɛrɛ, amɔɔ mʋ gbaa‐gbaa mʋ Kayaayu mʋ nkʋn.
+      sbs: 0.7357
+      gen_sec: 7.08
+      ref_sec: 6.12
+      cer: 0.0294
+      wer: 0.0625
+    bible_00056:
+      source: bible
+      text: To, kanɩn bɩrɛ anɩmʋ ɩɩ sa fanɛ abɩɩlapʋ ɔlʋn nɩɩ bɛɛ taalɛ bɛɛ gya nbwɩɩ libi bɛɛ kʋsaa asa
+        sʋ?
+      sbs: 0.7231
+      gen_sec: 7.59
+      ref_sec: 6.96
+      cer: 0.08
+      wer: 0.2
+    bible_00057:
+      source: bible
+      text: Dɩdaa mʋ fan nyita saŋa waa atɔ mʋ nɩɩ bamʋ nɩɩ ba man nyi Ɩbwaarɛ ba waa mʋ.
+      sbs: 0.7114
+      gen_sec: 6.06
+      ref_sec: 5.14
+      cer: 0.0169
+      wer: 0.0556
+    bible_00058:
+      source: bible
+      text: Lɩɩ npiili asɛ, pɔyɩ kɛ Ɩbwaarɛ ɔ tʋʋ dulinyaa mʋ, ɔmʋ nɩɩ ɔ gyɛ Ɩbwaarɛ kɔnɔ tɔ Asɩn mʋ bʋ
+        tɔ.
+      sbs: 0.7275
+      gen_sec: 7.42
+      ref_sec: 8.98
+      cer: 0.0694
+      wer: 0.1905
+    bible_00059:
+      source: bible
+      text: Herodi sɩlɛ Gyɔn okyugyeepu, lɩɩ fɛɛ o nyi maa gyɛ nyɩmɩsa danbɩrasa yɛ nyɩmɩsa kyɩrɛkyɩrɛ,
+        ɩmʋ sʋ nɩɩ o kun mʋ.
+      sbs: 0.7042
+      gen_sec: 9.13
+      ref_sec: 8.7
+      cer: 0.0
+      wer: 0.0
+    bible_00060:
+      source: bible
+      text: Nɩɩ Ɩbwaarɛ mʋ nɩɩ o nyi nyɩmɩsa kɔkɔlɔ tɔ asɩn mʋ, waa nɩɩ ɩ kaapʋ fɛɛ ɔ kɔɔlɛ bamʋ, fɛɛ
+        ɔ maa sa bamʋ Kayaayu Kyɩrɛkyɩrɛ fɛɛ kanan mʋ nɩɩ ɔ sa anɛ gbaa anɛ mʋ.
+      sbs: 0.7137
+      gen_sec: 12.46
+      ref_sec: 9.78
+      cer: 0.0163
+      wer: 0.0278
+    bible_00061:
+      source: bible
+      text: Amaa bamʋ nɩɩ ba nu sa kɩbɩla mʋ, ɩɩ yɛgɛ nɩɩ bamʋ kakyɩna tɔ ɩkpa i kyiigi, nɩɩ ɩɩ sa bamʋ
+        kayɩɩ yuuli.
+      sbs: 0.7502
+      gen_sec: 8.11
+      ref_sec: 9.56
+      cer: 0.1013
+      wer: 0.2174
+    bible_00062:
+      source: bible
+      text: Mɛ asɛ mʋ, ɩ bʋrɔn fɛɛ bamʋ nɩɩ ba man pɩɩ kili mʋ, ba kyɩna kanɩn, lɩɩ fɛɛ nbɩɩnbɩɩ kakyɩna
+        kanɩmʋ tɔ waa ɔlʋn.
+      sbs: 0.7473
+      gen_sec: 8.79
+      ref_sec: 7.68
+      cer: 0.0235
+      wer: 0.0417
+    bible_00063:
+      source: bible
+      text: Falɛ asɩn nɩmʋ sʋ nɩɩ n tɩɩ fanɛ, kɛ n lɛɛ asɩn mʋ kasɛ sa fanɛ.
+      sbs: 0.7071
+      gen_sec: 4.86
+      ref_sec: 5.44
+      cer: 0.0426
+      wer: 0.0625
+    bible_00064:
+      source: bible
+      text: Ndaga n yɩlɛ nfɩɩ nɩɩ bɛɛ talɛ mɛ, lɩɩ fɛɛ n sʋ tamaa lɩɩ asɩn mʋ nɩɩ Ɩbwaarɛ da mʋ kɔkɔlɔ
+        sʋ sa anɛ naana ana mʋ sʋ.
+      sbs: 0.7568
+      gen_sec: 8.87
+      ref_sec: 9.1
+      cer: 0.0341
+      wer: 0.0714
+    bible_00065:
+      source: bible
+      text: Man gyɛ kʋtɔ mʋ nɩɩ kii loo nyɩmɩsa kɔnɔ tɔ mʋ ɩɩ waa mʋ ineesi, amɔɔ kʋtɔ mʋ nɩɩ kɩɩ lɩɩ
+        mʋ kɔnɔ tɔ mʋ ɩɩ waa mʋ ineesi.
+      sbs: 0.6819
+      gen_sec: 9.22
+      ref_sec: 5.72
+      cer: 0.022
+      wer: 0.069
+    bible_00066:
+      source: bible
+      text: Nɩɩ bee bugi bamʋ awura‐wʋrʋ bɛɛ yɩla kuwura‐gya mʋ asɛ nɩɩ bɛɛ tɔwɛ yɛ.
+      sbs: 0.6722
+      gen_sec: 5.8
+      ref_sec: 5.36
+      cer: 0.0357
+      wer: 0.0714
+    bible_00067:
+      source: bible
+      text: Lɩɩ fɛɛ an nu asɩn mʋ lɩɩ mʋ gbaa‐gbaa mʋ kɔnɔ tɔ.
+      sbs: 0.6391
+      gen_sec: 3.84
+      ref_sec: 14.56
+      cer: 0.0811
+      wer: 0.1667
+    bible_00068:
+      source: bible
+      text: Nɩɩ Yesu lɛɛ kɔnɔ yɛ, “Ayee, man gyɛ ɩlɩɩ isunɔ, amaa adusunɔ kanɩn ɩlɩɩ isunɔ.
+      sbs: 0.7279
+      gen_sec: 6.31
+      ref_sec: 6.64
+      cer: 0.2333
+      wer: 0.8667
+    bible_00069:
+      source: bible
+      text: Simon Pita tɔwɛ kanan mʋ nɩɩ Ɩbwaarɛ gyankpaa waa, nɩɩ ɔ lɛɛ kaapʋ fɛɛ ee biti bamʋ nɩɩ ba
+        man gyɛ Gyiwu abi gbaa, nɩɩ ɔ lɛɛ bamʋ tɔ akʋ biliŋi mʋ lɛɛ.
+      sbs: 0.7236
+      gen_sec: 11.86
+      ref_sec: 11.76
+      cer: 0.0172
+      wer: 0.0303
+    bible_00070:
+      source: bible
+      text: Lɩɩ fɛɛ fanɛ saŋa nɩmʋ tɔ n biti n waa kʋtɔ kʋ.
+      sbs: 0.7092
+      gen_sec: 3.67
+      ref_sec: 3.56
+      cer: 0.0
+      wer: 0.0
+    bible_00071:
+      source: bible
+      text: N wʋla kyʋrɔɔ ɔwʋlɛ sa fanɛ yɛ, fan man taa fanɛ n‐yɩɩ bʋga asa mʋ nɩɩ ba bʋ kakyɩɩ abɛɛ kanyɩn
+        biti kɩgyagaa mʋ tɔ.
+      sbs: 0.7517
+      gen_sec: 9.13
+      ref_sec: 7.22
+      cer: 0.0112
+      wer: 0.04
+    bible_00072:
+      source: bible
+      text: “Fan kɩɩ, n sʋ kɩbɔntɔnbʋlɔntɔ kubuu kparɛ mʋ nɩɩ n lɛɛ n yii Siyon kɩbɩɩ sʋ Gyerusalem kadɛ
+        tɔ.
+      sbs: 0.685
+      gen_sec: 7.59
+      ref_sec: 7.46
+      cer: 0.0533
+      wer: 0.2105
+    bible_00073:
+      source: bible
+      text: Fan biti asɩn danbɩrasa mʋ fɛɛ nbii pʋpwɛ mʋ nɩɩ bɛɛ kɩɩ bee biti kɩnyapʋ‐kyu mʋ, kɛ ɩ yɛgɛ
+        fan dan fanɛ kamɔlɩgɛ mʋ tɔ naa lʋwɛ.
+      sbs: 0.7106
+      gen_sec: 10.24
+      ref_sec: 8.0
+      cer: 0.02
+      wer: 0.1111
+    bible_00074:
+      source: bible
+      text: Lɩɩ mɛ kɩtɩɩ sʋ, nɩɩ bee biti ba waa fanɛ ɩnɩmʋ kpini, lɩɩ fɛɛ ba man nyi Ɔmʋ nɩɩ o sun mɛ
+        mʋ.
+      sbs: 0.7006
+      gen_sec: 7.08
+      ref_sec: 6.26
+      cer: 0.0
+      wer: 0.0
+    bible_00075:
+      source: bible
+      text: Nɩɩ mu‐nyi tɔwɛ waa mʋ yɛ ɔ naa tɔwɛ Herodi yɛ, “Sa mɛ Gyɔn Okyugyeepu kumu tangɩran tɔ nfɩɩ
+        nbɩɩnbɩɩ nɩmʋ.
+      sbs: 0.6567
+      gen_sec: 8.53
+      ref_sec: 7.88
+      cer: 0.0361
+      wer: 0.0476
+    bible_00076:
+      source: bible
+      text: Ɔnyɩn mʋ waa anɛ nsa‐nsa, nɩɩ ɔ kɔɔlɛ anɛ mʋ kɩkpaara sʋ, kɩtaa anɛ kɩfɔ nkɛ nsa.
+      sbs: 0.7688
+      gen_sec: 6.4
+      ref_sec: 6.88
+      cer: 0.0164
+      wer: 0.1176
+    bible_00077:
+      source: bible
+      text: Nɩɩ bɛɛ tɩn atɩntɩnsa bɛɛ gyaga mʋ sʋ, amaa yɛgɛ ba mɛɛ taalɛ kaapʋ ɩmʋ kasɛ.
+      sbs: 0.6959
+      gen_sec: 6.14
+      ref_sec: 5.8
+      cer: 0.0833
+      wer: 0.1875
+    bible_00078:
+      source: bible
+      text: Amaa ɔkʋmaa mʋ nɩɩ o buu mʋ asɩn tɔwɛsa mʋ, mʋ ɩ gyɛ ɔsa mʋ nɩɩ ee biti Ɩbwaarɛ kesintin tɔ
+        kyɛɛkyɛɛ.
+      sbs: 0.7104
+      gen_sec: 7.94
+      ref_sec: 6.62
+      cer: 0.0
+      wer: 0.0
+    bible_00079:
+      source: bible
+      text: Nɩɩ Yesu sun abɩɩlapʋ kudu anyɔ mʋ tɔwɛ bamʋ yɛ, “Fan man kpee bamʋ nɩɩ ba man gyɛ Gyiwu abi
+        mʋ kɩbaafʋn abɛɛ Samariya abi kadɛ kʋ tɔ.
+      sbs: 0.7349
+      gen_sec: 10.5
+      ref_sec: 9.72
+      cer: 0.0192
+      wer: 0.1071
+    bible_00080:
+      source: bible
+      text: Lɩɩ fɛɛ nyɩmɩsa kɔnɔ ɩɩ tɔwɛ kʋtɔ mʋ nɩɩ kɩ bʋ mʋ kɔkɔlɔ tɔ nɩn.
+      sbs: 0.6558
+      gen_sec: 4.95
+      ref_sec: 11.88
+      cer: 0.0816
+      wer: 0.1333
+    bible_00081:
+      source: bible
+      text: Amaa anaakɔpʋ ɔkɩɩsʋpʋ ɔbɩlɩsa Lisiya ba bɩɩtɛ kɔɔlɛ mʋ ɔlʋn sʋ lɩɩ anɛ abaa tɔ.
+      sbs: 0.7203
+      gen_sec: 6.49
+      ref_sec: 7.44
+      cer: 0.1231
+      wer: 0.1333
+    bible_00082:
+      source: bible
+      text: Kanɩn ɔkpa maŋa sʋ nɩɩ fanɛ‐Sɛ mʋ nɩɩ ɔ bʋ sʋsʋ mʋ gbaa mee biti fɛɛ apii‐pii nɩmʋ tɔ ɔkʋlʋn
+        maa fɔyɩ.
+      sbs: 0.6996
+      gen_sec: 8.11
+      ref_sec: 6.9
+      cer: 0.0897
+      wer: 0.1364
+    bible_00083:
+      source: bible
+      text: Nɩɩ mɩnɛ ii biti ɩ baa ɩ gyɛ fʋ kɩba mʋ yɛ laalaalʋwɛ mʋ sɩnkaala?
+      sbs: 0.7029
+      gen_sec: 5.12
+      ref_sec: 4.32
+      cer: 0.0196
+      wer: 0.2
+    bible_00084:
+      source: bible
+      text: Ibu damantɛ ɩ bʋ Mɛ‐Sɛ kɩkpaara sʋ.
+      sbs: 0.7053
+      gen_sec: 2.82
+      ref_sec: 3.12
+      cer: 0.3333
+      wer: 1.0
+    bible_00085:
+      source: bible
+      text: Nɩɩ asa mʋ nɩɩ ba sarɛ tʋtɔ mʋ kpini ba laatɔ bee nu Banabasi yɛ Pɔɔlɩ ba maa tɔwɛ ɩsɩnkaala
+        yɛ asɩn kyinkyinsa mʋ nɩɩ Ɩbwaarɛ bɔla bamʋ sʋ waa bamʋ nɩɩ ba man gyɛ Gyiwu abi mʋ tɔ.
+      sbs: 0.7356
+      gen_sec: 14.08
+      ref_sec: 13.72
+      cer: 0.0071
+      wer: 0.0513
+    bible_00086:
+      source: bible
+      text: fɛɛ kanan mʋ nɩɩ kɩ kyɩna nyɛ bʋnyaa nɩɩ ki gyii ɔkɔn.
+      sbs: 0.6897
+      gen_sec: 4.27
+      ref_sec: 3.58
+      cer: 0.0
+      wer: 0.0
+    bible_00087:
+      source: bible
+      text: Farasii abi mʋ yɛ nbara akaapʋpʋ mʋ bee biti kanan mʋ nɩɩ ba waa kɛ ba bun Yesu kʋpwɛ.
+      sbs: 0.6749
+      gen_sec: 6.74
+      ref_sec: 10.0
+      cer: 0.0
+      wer: 0.0
+    bible_00088:
+      source: bible
+      text: Bamʋ kɩkɔɔlɛ‐gyii kɩ yɛgɛ nɩɩ ba sʋ ba naa bɛɛ yaalɛ ifuli sʋ yɛ abɩɩ sʋ, nɩɩ bɛɛ baala afʋlɛ
+        ɩbɔ tɔ yɛ kasɛ ɩbɔ lala tɔ.
+      sbs: 0.7547
+      gen_sec: 9.39
+      ref_sec: 11.52
+      cer: 0.0326
+      wer: 0.037
+    bible_00089:
+      source: bible
+      text: Amaa fanɛɛ fanɛ bɩrɛ, Krisito obuupu ɩɩ taa mʋ bɩrɩsa Krisito obuupu asɩn ee kpee ɛɛ sa bamʋ
+        nɩɩ ba man kɔɔlɛ Yesu gyii mʋ asɛ.
+      sbs: 0.7606
+      gen_sec: 10.07
+      ref_sec: 11.04
+      cer: 0.02
+      wer: 0.0769
+    bible_00090:
+      source: bible
+      text: Anɛ bɩrɩsa Silifanu ɩ kyɛ mɛ tɔ nɩɩ n kyʋrɔɔ fanɛ ɔwʋlɛ dɛɛ nɩɩ mʋ.
+      sbs: 0.6898
+      gen_sec: 5.21
+      ref_sec: 4.42
+      cer: 0.0769
+      wer: 0.3333
+    bible_00091:
+      source: bible
+      text: Mʋ ii biti ɔ waa fanɛ ɔlʋn tɔ kanɩn naa fʋʋ ɔkaa, kɛ fanɛ n‐yɩɩ sʋ ɩ man nyɛ alibi akʋ, kakɛ
+        mʋ nɩɩ anɛ‐Nyɩrɩpɛ Yesu Krisito ii biti o bwii ba mʋ.
+      sbs: 0.7624
+      gen_sec: 11.26
+      ref_sec: 10.58
+      cer: 0.0183
+      wer: 0.0303
+    bible_00092:
+      source: bible
+      text: Nɩɩ Farasii abi yɛ Sadusi abi ba ba Yesu asɛ ba ba tʋʋ mʋ tɔ kɩɩ, ɩmʋ sʋ ba tɔwɛ mʋ yɛ ɔ waa
+        asɩn kyinkyinsa kʋ lɩɩ sʋsʋ kaapʋ bamʋ.
+      sbs: 0.7146
+      gen_sec: 10.07
+      ref_sec: 9.52
+      cer: 0.02
+      wer: 0.0968
+    bible_00093:
+      source: bible
+      text: Nɩɩ ɔ bɩla ɔ gyɛ kʋbʋ mʋ nɩɩ bɛɛ tɩɩ kɩmʋ yɛ Nasarene mʋ ɔgyankpaapʋ.
+      sbs: 0.689
+      gen_sec: 5.46
+      ref_sec: 5.3
+      cer: 0.0741
+      wer: 0.1333
+    bible_00094:
+      source: bible
+      text: Ɩbwaarɛ maa kʋsaa Sɔɔlɩ mʋ, nɩɩ ɔ taa Dawidi yii Ɩsɩrayɩ kuwura.
+      sbs: 0.7048
+      gen_sec: 5.21
+      ref_sec: 4.62
+      cer: 0.0
+      wer: 0.0
+    bible_00095:
+      source: bible
+      text: ” Maa tɔwɛ kanɩn mʋ, nɩɩ o nin lɩɩ bamʋ asɛ gbɛrɛɛ naa yɔɔ muŋa mu amulii sʋ kʋlɛ kabwaarɛ‐kʋlɛ
+        yɛ, “Nsɛ, nɩɩ ɩ gyɛ fu kebiti mʋ, yɛgɛ awʋrʋfɔ anɩmʋ ɩ kɩlɩgɛ mɛ.
+      sbs: 0.7001
+      gen_sec: 12.54
+      ref_sec: 13.1
+      cer: 0.05
+      wer: 0.1515
+    bible_00096:
+      source: bible
+      text: Yɛgɛ bee nu mʋ asɩn mʋ lɩɩ Ɩbwaarɛ atɔwɛpʋ ɔwʋlɛ tɔ mʋ kakɛ fʋʋtɛsa kʋmaa, amaa ba man nu
+        kasɛ.
+      sbs: 0.7403
+      gen_sec: 7.51
+      ref_sec: 8.94
+      cer: 0.0
+      wer: 0.0
+    bible_00097:
+      source: bible
+      text: I du nɩn fɛɛ kanan mʋ nɩɩ ba kyʋrɔɔ waa Asɩnkyan yɩlasa mʋ tɔ mʋ yɛ.
+      sbs: 0.6569
+      gen_sec: 5.21
+      ref_sec: 3.32
+      cer: 0.1346
+      wer: 0.125
+    bible_00098:
+      source: bible
+      text: Lɩɩ fan maa gyɛ Ɩbwaarɛ Mu‐Bii ana sʋ mʋ, o sun Mu‐Bii Kayaayu mʋ ɔ ba kyɩna fanɛ nkɔlɔ tɔ.
+      sbs: 0.7348
+      gen_sec: 7.08
+      ref_sec: 7.0
+      cer: 0.0
+      wer: 0.0
+    bible_00099:
+      source: bible
+      text: Nɩɩ anɛ kpini an tɩyɛ kasɛ, nɩɩ n nu ɔbʋlɛ kʋ maa tɔwɛ Hibriwu katɔwɛ tɔ yɛ, ‘Sɔɔlɩ, Sɔɔlɩ,
+        mɩnɛ ɩ waa nɩɩ fɩɩ nyanla mɛ kanɩn?
+      sbs: 0.7487
+      gen_sec: 9.9
+      ref_sec: 11.74
+      cer: 0.0526
+      wer: 0.1481
+    bible_00100:
+      source: bible
+      text: ” Amaa fan man tɔwɛ kanɩn, yɛgɛ fan man nyi ɔkɛ asɩn yɛ fanɛ.
+      sbs: 0.7454
+      gen_sec: 4.61
+      ref_sec: 4.84
+      cer: 0.0
+      wer: 0.0
+    bible_00101:
+      source: bible
+      text: Ɩmʋ sʋ nɩɩ abɩlɩsa mʋ ba lɔŋɔ da Pita maa Gyɔn amu tɔ kenken nɩɩ ba yɛgɛ bamʋ yɛ ba natɛ.
+      sbs: 0.7301
+      gen_sec: 6.91
+      ref_sec: 8.42
+      cer: 0.0735
+      wer: 0.1429
+    bible_00102:
+      source: bible
+      text: kɛ asaa‐kyɩɩsa ba kʋsʋ yɩlɛ bamʋ‐saa ana sʋ.
+      sbs: 0.6755
+      gen_sec: 3.67
+      ref_sec: 4.1
+      cer: 0.1471
+      wer: 0.625
+    bible_00103:
+      source: bible
+      text: Amaa anɛɛnɛ bɩrɛ, an payɩ ansi an sun an biti kakɛɛ mʋ nɩɩ ki mee nyita kpini‐kpini.
+      sbs: 0.7644
+      gen_sec: 6.74
+      ref_sec: 6.76
+      cer: 0.0769
+      wer: 0.2353
+    bible_00104:
+      source: bible
+      text: Nɩɩ kɩ mɛɛ yɛ kɩ baa ki du fɛɛ katɔwɛ kyula.
+      sbs: 0.6865
+      gen_sec: 3.33
+      ref_sec: 3.4
+      cer: 0.2121
+      wer: 0.3636
+    bible_00105:
+      source: bible
+      text: Mʋ ɩ gyɛ ɔmʋ nɩɩ ɔ yɛgɛ nɩɩ ɩsʋwʋlɛ sʋ asa kpini ba waa kɩgyagaa fɛɛ mʋ.
+      sbs: 0.679
+      gen_sec: 5.55
+      ref_sec: 4.14
+      cer: 0.0182
+      wer: 0.0588
+    bible_00106:
+      source: bible
+      text: Ɔkyɩɩ mʋ bun atɔ pɩpɛɛ yɛ kɩrɩman‐kyu mʋ nɩɩ ɩ sʋ ɔgyalɩn, yɛ suwa yɛ abuu mʋ nɩɩ ɩ sʋ ɔgyalɩn
+        yɛ agyibi kparɛ.
+      sbs: 0.7256
+      gen_sec: 8.7
+      ref_sec: 10.1
+      cer: 0.0471
+      wer: 0.125
+    bible_00107:
+      source: bible
+      text: Amaa ɔkyɩɩ‐kilipu bɩrɛ mʋ nfɛɛrɛ ɩ gyan dulinyaa asɩn sʋ nɩn, yɛ kanan mʋ nɩɩ ee biti ɔ waa
+        kɛ o gyii mu‐kuli ansi.
+      sbs: 0.7562
+      gen_sec: 9.13
+      ref_sec: 8.78
+      cer: 0.0114
+      wer: 0.125
+    bible_00108:
+      source: bible
+      text: Falɛ kɔnɔsa kanɩmʋ nɩɩ Mɛ‐Sɛ sa mɛ yɛ n waa.
+      sbs: 0.6967
+      gen_sec: 3.41
+      ref_sec: 3.42
+      cer: 0.1818
+      wer: 0.8
+    bible_00109:
+      source: bible
+      text: Lɩɩ fɛɛ nfɛɛrɛ nnyɔ‐nnyɔ wuya kpini asɩn a mɛɛ bɔla Ɩbwaarɛ ansi.
+      sbs: 0.6681
+      gen_sec: 5.29
+      ref_sec: 4.62
+      cer: 0.1154
+      wer: 0.5
+    bible_00110:
+      source: bible
+      text: Fen biti fɛɛ n taa kʋkyʋkyʋʋ nɩn n ba, abɛɛ n taa kebiti yɛ keyuula ba fanɛ asɛ?
+      sbs: 0.7309
+      gen_sec: 6.23
+      ref_sec: 9.34
+      cer: 0.1148
+      wer: 0.2222
+    bible_00111:
+      source: bible
+      text: Fʋ sɔɔ bamʋ lɩɩ nbunɔ kʋmaa tɔ yɛ ntɔwɛ kʋmaa tɔ.
+      sbs: 0.6948
+      gen_sec: 3.84
+      ref_sec: 4.48
+      cer: 0.0526
+      wer: 0.0909
+    bible_00112:
+      source: bible
+      text: Ɩmʋ kamaa tɔ, fɛɛ kanan mʋ nɩɩ fen nyi mʋ, saŋa mʋ nɩɩ ee biti fɛɛ mʋ‐sɛ ɔ waa mʋ kʋsee mʋ,
+        ɔ pan kɩmʋ ɔ man nyɛ kusee mʋ.
+      sbs: 0.7524
+      gen_sec: 9.3
+      ref_sec: 11.18
+      cer: 0.125
+      wer: 0.3
+    bible_00113:
+      source: bible
+      text: Agyitɔ mʋ nɩɩ ba taa lɔŋɔ sa ɩdakpa.
+      sbs: 0.6478
+      gen_sec: 2.9
+      ref_sec: 3.44
+      cer: 0.0714
+      wer: 0.25
+    bible_00114:
+      source: bible
+      text: Lɩɩ fɛɛ Ɩbwaarɛ wʋla ŋmaŋɛ bamʋ nfɛɛrɛ tɔ saŋa kʋ, nɩɩ ba daa nyɛ Ɩbwaarɛ kakɛɛ kɩɩ, nɩɩ ba
+        maa akɔɔlɛ‐gyipu mʋ ba bʋga nyɛ Kayaayu Kyɩrɛkyɩrɛ mʋ.
+      sbs: 0.7395
+      gen_sec: 12.12
+      ref_sec: 11.32
+      cer: 0.0174
+      wer: 0.0357
+    bible_00115:
+      source: bible
+      text: Falɛ atɩntɩnsa akaapʋpʋ anɩmʋ ba du nɩn fɛɛ atiribo mʋ nɩɩ ɩ man sʋ nkyu yɛ abwaarɛ‐wʋlɛ mʋ
+        nɩɩ afuu a sʋ ɩmʋ a naa.
+      sbs: 0.7089
+      gen_sec: 9.13
+      ref_sec: 8.5
+      cer: 0.0222
+      wer: 0.04
+    bible_00116:
+      source: bible
+      text: Ɩmʋ sʋ n kpan mɛ n‐yɩɩ nɩn n sɩlɛ ntintin naa lʋwɛ, kɛ n nyɛ‐nyɛ nkpa kakɛɛ mʋ nɩɩ Ɩbwaarɛ
+        bɔla Krisito Yesu sʋ tɩɩ asa mʋ.
+      sbs: 0.7433
+      gen_sec: 9.64
+      ref_sec: 10.38
+      cer: 0.0753
+      wer: 0.2222
+    bible_00117:
+      source: bible
+      text: Fan kɩɩ yɛ ɔdan lɩɩ asa mʋ nɩɩ be du fɛɛ igyoonɔ nɩɩ ba gyɛ alibi awaapʋ, nɩɩ ba yɩlɛ kayɩɩ‐wʋlɛ
+        kɩtɩn sʋ.
+      sbs: 0.7229
+      gen_sec: 8.28
+      ref_sec: 8.72
+      cer: 0.0617
+      wer: 0.2174
+    bible_00118:
+      source: bible
+      text: Maa kyɩna n bʋ bamʋ asɛ mʋ, kɩtɩɩ mʋ nɩɩ fʋ sa mɛ mʋ, kɩmʋ ɔlʋn tɔ nɩɩ n taa kɩɩ bamʋ sʋ,
+        nɩɩ n kun bamʋ.
+      sbs: 0.7365
+      gen_sec: 7.85
+      ref_sec: 7.7
+      cer: 0.04
+      wer: 0.1481
+    bible_00119:
+      source: bible
+      text: Nɩɩ abɩlɩsa adʋnyɔ yɛ ana yɛ atɔ‐kɩɩsa ana mʋ ba muŋa sun Ɩbwaarɛ mʋ nɩɩ ɔ tɛ kuwura‐gya sʋ
+        mʋ, nɩɩ ba tɔwɛ yɛ.
+      sbs: 0.6888
+      gen_sec: 8.79
+      ref_sec: 8.88
+      cer: 0.0119
+      wer: 0.125
+    bible_00120:
+      source: bible
+      text: Tʋtɔ mʋ, Pita mʋ nɩɩ Kayaayu Kyɩrɛkyɩrɛ kɩ bɔla mʋ tɔ mʋ lɛɛ bamʋ kɔnɔ yɛ, “Agyankpaapʋ yɛ
+        abɩlɩsa, fan taasɛ anɛ ndaga asɩn danbɩrasa mʋ nɩɩ an waa boobi nɩmʋ, nɩɩ kʋtɔ mʋ nɩɩ kɩ yɛgɛ
+        nɩɩ ɔ nyɛ alanfɩya.
+      sbs: 0.7287
+      gen_sec: 16.38
+      ref_sec: 14.42
+      cer: 0.0063
+      wer: 0.0244
+    bible_00121:
+      source: bible
+      text: Kadɛ lala nɩmʋ tɔ nɩɩ kasɛ sʋ awura bee dii bɛɛ kpɩlɩgɛ, fɛɛ kanan mʋ nɩɩ anyɩn bee dii bɛɛ
+        kpɩlɩgɛ ɔkyɩɩ‐kyagaa sʋ mʋ.
+      sbs: 0.663
+      gen_sec: 9.47
+      ref_sec: 7.8
+      cer: 0.1183
+      wer: 0.25
+    bible_00122:
+      source: bible
+      text: Bamʋ nɩɩ ba fwɩɩ bamʋ atɔ bunsa, kɛ ba nyɛ nkpa oyu mʋ abi gyii, kɛ ba bɩla nyɛ ɔkpa bɔla
+        kewusunɔ mʋ loo kadɛ lala mʋ tɔ mʋ, bamʋ ii gyii ɔkɔn.
+      sbs: 0.7513
+      gen_sec: 11.09
+      ref_sec: 10.96
+      cer: 0.037
+      wer: 0.0909
+    bible_00123:
+      source: bible
+      text: Kɛ fan nyiŋi bamʋ nɩɩ bee gyii awʋrʋfɔ mʋ, fɛɛ fanɛ ii gyii kanɩn awʋrʋfɔ maŋa.
+      sbs: 0.7254
+      gen_sec: 6.49
+      ref_sec: 6.58
+      cer: 0.0968
+      wer: 0.1875
+    bible_00124:
+      source: bible
+      text: Lɩɩ mʋ kɩkɔɔlɛ‐gyii nɩmʋ sʋ mʋ, halɩɩ maa wu gbaa mʋ, mʋ kɩkɔɔlɛ‐gyii mʋ kɩ san kɩɩ tɔwɛ anɛ
+        yɛ anɛ gbaa anɛ a kɔɔlɛ gyii kanɩn.
+      sbs: 0.7613
+      gen_sec: 10.07
+      ref_sec: 11.14
+      cer: 0.0309
+      wer: 0.2222
+    bible_00125:
+      source: bible
+      text: Nɩɩ Yesu bwii naa faa Gyɔdan ɔbʋn kpee kɩmʋ benben, opula mʋ nɩɩ Gyɔn kyɩna gyee asa Ɩbwaarɛ
+        kekyugyee mʋ.
+      sbs: 0.7114
+      gen_sec: 8.62
+      ref_sec: 7.58
+      cer: 0.0471
+      wer: 0.1
+    bible_00126:
+      source: bible
+      text: Nɩɩ an lɩɩ tʋtɔ kyaga sʋ natɛ kpee Filipi mʋ nɩɩ kɩ gyɛ Masedoniya kabaafʋn kʋ kadɛ lala,
+        nɩɩ tʋtɔ bʋ Roma abi kasɛ.
+      sbs: 0.7334
+      gen_sec: 9.22
+      ref_sec: 10.74
+      cer: 0.0
+      wer: 0.0833
+    bible_00127:
+      source: bible
+      text: Fan man yɛgɛ akaapʋ‐bi kʋkwɩɩ‐kʋkwɩɩ ɩkʋ ɩ lɛɛ fanɛ lɩɩ kesintin ɔkpa mʋ sʋ.
+      sbs: 0.7546
+      gen_sec: 6.23
+      ref_sec: 6.66
+      cer: 0.0833
+      wer: 0.2143
+    bible_00128:
+      source: bible
+      text: Nɩɩ ɩ gyɛ kesintin nɩn fɛɛ akʋ lɩɩ kayɩɩ basa yɛ kolu biti mʋ nɩɩ ba sʋ mɛ sʋ, nɩɩ ba sʋ bɛɛ
+        tɔwɛ asɩn lɩɩ Krisito sʋ, amaa akʋ bɩrɛ ba taa nfɛɛrɛ danbɩrasa nɩn bɛɛ tɔwɛ Krisito asɩn mʋ.
+      sbs: 0.7689
+      gen_sec: 14.51
+      ref_sec: 14.66
+      cer: 0.0559
+      wer: 0.1463
+    bible_00129:
+      source: bible
+      text: Ɔkʋmaa mʋ nɩɩ ɔ kɔɔlɛ Ɩbwaarɛ ɔtɔwɛpʋ lɩɩ maa gyɛ Ɩbwaarɛ atɔwɛpʋ sʋ mʋ, ee biti ɔ nyɛ kʋkɔka
+        mʋ nɩɩ Ɩbwaarɛ ii biti ɔ ka mʋ ɔtɔwɛpʋ mʋ.
+      sbs: 0.7232
+      gen_sec: 10.67
+      ref_sec: 9.06
+      cer: 0.0094
+      wer: 0.0345
+    bible_00130:
+      source: bible
+      text: Amaa Pɔɔlɩ man kyula fɛɛ ba taa Maki buu bamʋ n‐yɩɩ.
+      sbs: 0.6922
+      gen_sec: 4.1
+      ref_sec: 3.54
+      cer: 0.025
+      wer: 0.2727
+    bible_00131:
+      source: bible
+      text: Fu wu fɛɛ mʋ kɩkɔɔlɛ‐gyii yɛ mʋ awaasa kpini ɩ gyɛ kʋkʋlʋn nɩn.
+      sbs: 0.6546
+      gen_sec: 5.03
+      ref_sec: 3.58
+      cer: 0.0
+      wer: 0.0
+    bible_00132:
+      source: bible
+      text: Ɔkʋmaa mʋ nɩɩ ee kisi mʋ bɩrɩsa mʋ gyɛ ɔmɔɔpʋ nɩn, nɩɩ fan nyi yɛ amɔɔpʋ maa man sʋ nkpa kakpaa.
+      sbs: 0.728
+      gen_sec: 7.51
+      ref_sec: 6.9
+      cer: 0.0676
+      wer: 0.0952
+    bible_00133:
+      source: bible
+      text: O sun tɩɩ Banabasi maa Pɔɔlɩ, lɩɩ fɛɛ ee biti o nu abwaarɛsɩn lɩɩ bamʋ asɛ.
+      sbs: 0.7291
+      gen_sec: 5.89
+      ref_sec: 6.42
+      cer: 0.0
+      wer: 0.0
+    bible_00134:
+      source: bible
+      text: Amaa nɩɩ Kayaayu Kyɩrɛkyɩrɛ mʋ kan ba fanɛ sʋ mʋ, fen biti fan nyɛ ɔlʋn kɛ fan naa tɔwɛ mɛ
+        asɩn mʋ Gyerusalem tɔ yɛ Gyudeya kpini yɛ Samariya tɔ, taa naa fʋʋ dulinyaa ɔkaa.
+      sbs: 0.7023
+      gen_sec: 13.65
+      ref_sec: 12.62
+      cer: 0.0148
+      wer: 0.0286
+    bible_00135:
+      source: bible
+      text: Nɩɩ kʋtɔ mʋ nɩɩ an biti an baa an gyɛ mʋ ɩ man pɩɩta lɩɩ ifuli.
+      sbs: 0.6821
+      gen_sec: 4.69
+      ref_sec: 3.5
+      cer: 0.0426
+      wer: 0.125
+    bible_00136:
+      source: bible
+      text: Fan yɛgɛ a bɩla taa ɩkʋlɩ lala mʋ nɩɩ ɩ kyɔ gaa, nɩɩ afuu bʋlʋnsa ii nin ɩmʋ waa sɩnkaala.
+      sbs: 0.733
+      gen_sec: 7.0
+      ref_sec: 8.32
+      cer: 0.058
+      wer: 0.2
+    bible_00137:
+      source: bible
+      text: Nɩɩ bʋlayɩ abuu mʋ nɩɩ i du fɛɛ afʋlɛ‐buu, nɩɩ ɩmʋ kʋkʋlʋn oduu ɩ waa fɛɛ ayu bɔɔta oduu mʋ,
+        ɩ lɩɩ sʋsʋ ba tɩyɛ asa sʋ.
+      sbs: 0.637
+      gen_sec: 9.22
+      ref_sec: 9.14
+      cer: 0.0
+      wer: 0.1481
+    bible_00138:
+      source: bible
+      text: N bɩla n tɔwɛ fanɛ yɛ, ɩ bʋpɔɔ sa nyɔɔma fɛɛ o loo baasa ɔbɔ tɔ ɩ kyɔ atɔ wuya o loo Ɩbwaarɛ
+        kuwura‐gyii mʋ tɔ.
+      sbs: 0.7522
+      gen_sec: 8.53
+      ref_sec: 8.12
+      cer: 0.0723
+      wer: 0.1923
+    bible_00139:
+      source: bible
+      text: Nɩɩ Ɔnyɩrɩpɛ Ɩbwaarɛ kan kyula mʋ, n biti fɛɛ n gyii nkɛ gbɛrɛɛ kʋ fanɛ asɛ.
+      sbs: 0.7142
+      gen_sec: 6.06
+      ref_sec: 5.44
+      cer: 0.0169
+      wer: 0.0625
+    bible_00140:
+      source: bible
+      text: Nɩɩ fan kan buu mɛ kɔnɔsa mʋ bɩrɛ, fan gyɛ mɛ kyɛmɩnɛ ana nɩn.
+      sbs: 0.6603
+      gen_sec: 4.86
+      ref_sec: 3.24
+      cer: 0.0851
+      wer: 0.2143
+    bible_00141:
+      source: bible
+      text: Ba lɩɩ ndɛndɛmandɛ yɛ nbunɔ kʋkwɩɩ‐kʋkwɩɩ yɛ asa kʋkwɩɩ‐kʋkwɩɩ yɛ ntɔwɛ kʋkwɩɩ‐kʋkwɩɩ ba yɩlɛ
+        kuwura‐gya mʋ yɛ Kabʋlʋpʋ mu ansi tɔ.
+      sbs: 0.685
+      gen_sec: 11.01
+      ref_sec: 10.08
+      cer: 0.0
+      wer: 0.0952
+    bible_00142:
+      source: bible
+      text: Lɩɩ mɛ sʋ, bee biti ba kpiya fanɛ awura yɛ alʋlʋnpʋ ansi tɔ, kɛ fan nyɛ ɔkpa tɔwɛ asɩn danbɩrasa
+        mʋ lɩɩ mɛ sʋ sa bamʋ, yɛ bamʋ nɩɩ ba man gyɛ Gyiwu abi mʋ.
+      sbs: 0.7286
+      gen_sec: 12.03
+      ref_sec: 11.34
+      cer: 0.0
+      wer: 0.0
+    bible_00143:
+      source: bible
+      text: Amaa ba maa gyoo naa fʋʋ saŋa kʋ nɩɩ ba wu fɛɛ sɛhn man waa Pɔɔlɩ mʋ, ba kyɛɛgɛ bamʋ nfɛɛrɛ,
+        nɩɩ ba tɔwɛ yɛ, ɔ gyɛ ɔdakpa kʋ nɩn.
+      sbs: 0.7485
+      gen_sec: 9.98
+      ref_sec: 10.64
+      cer: 0.0312
+      wer: 0.0667
+    bible_00144:
+      source: bible
+      text: Lɩɩ fɛɛ asansa mʋ kpini bamʋ lɛɛ nkʋn nɩɩ bee biti, man gyɛ ɩmʋ nɩɩ ɩ gyɛ Yesu Krisito lɛɛ.
+      sbs: 0.7389
+      gen_sec: 7.08
+      ref_sec: 6.96
+      cer: 0.0286
+      wer: 0.05
+    bible_00145:
+      source: bible
+      text: Lɩɩ fɛɛ bamʋ gbaa‐gbaa bamʋ bɛɛ tɔwɛ kɩfɔ kɩtaa mʋ nɩɩ fan kɩtaa anɛ.
+      sbs: 0.7189
+      gen_sec: 5.55
+      ref_sec: 5.4
+      cer: 0.0556
+      wer: 0.1429
+    bible_00146:
+      source: bible
+      text: Fan su kɛ fan saawʋ kenken lɩɩ awʋrʋfɔ mʋ nɩɩ ii biti ɩ ba fanɛ sʋ mʋ.
+      sbs: 0.69
+      gen_sec: 5.29
+      ref_sec: 4.3
+      cer: 0.0189
+      wer: 0.0588
+    bible_00147:
+      source: bible
+      text: Lɩɩ fɛɛ nɩɩ ba kili mʋ, ɩ bʋrɔn sa bamʋ ɩ kyɔ kakyɩɩ abɛɛ kanyɩn biti kayalaga kɩ maa bʋ bamʋ
+        tɔ.
+      sbs: 0.7208
+      gen_sec: 7.51
+      ref_sec: 7.6
+      cer: 0.0135
+      wer: 0.0455
+    bible_00148:
+      source: bible
+      text: Mɛ‐daa ana yɛ mi‐supu ana, fan man tɔwɛ alibi akʋ lɩɩ fanɛ bɩrɩsa ana sʋ.
+      sbs: 0.7136
+      gen_sec: 5.8
+      ref_sec: 4.68
+      cer: 0.0
+      wer: 0.0
+    bible_00149:
+      source: bible
+      text: Kʋtɔ mʋ nɩɩ bee biti mʋ ɩ gyɛ fɛɛ, ba barɩgɛ fanɛ lɩɩ mɛ asɛ, kɛ fanɛ gbaa fanɛ fan baa fen
+        nu bamʋ asɛ.
+      sbs: 0.7426
+      gen_sec: 7.94
+      ref_sec: 7.3
+      cer: 0.0
+      wer: 0.0
+    bible_00150:
+      source: bible
+      text: Nɩɩ Yesu ɩ gyɛ ɔsa mʋ nɩɩ Ɩbwaarɛ Asɩnkyan yɩlasa mʋ ɩ tɔwɛ yɛ.
+      sbs: 0.7014
+      gen_sec: 4.95
+      ref_sec: 3.88
+      cer: 0.0
+      wer: 0.0
+    bible_00151:
+      source: bible
+      text: Amaa ba man wu ɔkʋ mɛ asɛ, nɩɩ n man waa ɩlawʋ ɩkʋ.
+      sbs: 0.7487
+      gen_sec: 3.84
+      ref_sec: 4.38
+      cer: 0.0811
+      wer: 0.1538
+    bible_00152:
+      source: bible
+      text: Mɩnɛ ɩ waa nɩɩ odunwura mʋ mee kyula yɛ mʋ asɩn ɩ man bʋrɔn?
+      sbs: 0.7039
+      gen_sec: 4.61
+      ref_sec: 4.74
+      cer: 0.087
+      wer: 0.2143
+    bible_00153:
+      source: bible
+      text: Lɩɩ alibi ɩkpa kʋkwɩɩ‐kʋkwɩɩ sʋ mʋ, fan baa fan du fɛɛ nbii, amaa fanɛ nfɛɛrɛ tɔ mʋ, fan kaapʋ
+        fɛɛ fan dan.
+      sbs: 0.7651
+      gen_sec: 8.53
+      ref_sec: 8.9
+      cer: 0.0247
+      wer: 0.0455
+    bible_00154:
+      source: bible
+      text: ” Halɩɩ ba maa tɔwɛ ɩnɩmʋ kamaa gbaa mʋ, ɩ waa ɔlʋn pɔyɩ nɩɩ ba taalɛ gya sakyɔ mʋ yɛ ba man
+        waa kɔlɔŋɔ mʋ.
+      sbs: 0.6785
+      gen_sec: 8.19
+      ref_sec: 8.96
+      cer: 0.0
+      wer: 0.0
+    bible_00155:
+      source: bible
+      text: Lɩɩ fɛɛ Ɔnyɩrɩpɛ Yesu kibwii ba saŋa mʋ ki tee tiri tɔ.
+      sbs: 0.6823
+      gen_sec: 4.44
+      ref_sec: 3.1
+      cer: 0.0698
+      wer: 0.25
+    bible_00156:
+      source: bible
+      text: Ɩ bʋlʋn sa fʋ fɛɛ fʋ maa kɔɔ yɛ mi kebiti’.
+      sbs: 0.7302
+      gen_sec: 3.16
+      ref_sec: 3.54
+      cer: 0.0968
+      wer: 0.3636
+    bible_00157:
+      source: bible
+      text: Asa ba lɩɩ Gyerusalem kadɛ tɔ yɛ Gyudeya ɩsʋwʋlɛ sʋ yɛ Gyɔdan kabaafʋn kpini ba mʋ asɛ.
+      sbs: 0.6914
+      gen_sec: 7.0
+      ref_sec: 7.0
+      cer: 0.0143
+      wer: 0.0588
+    bible_00158:
+      source: bible
+      text: Nɩɩ Gyɔn lɛɛ kɔnɔ yɛ, “Ɔkʋmaa mʋ nɩɩ ɔ sʋ ɩkaalɛ ɩnyɔ mʋ, ɔ barɩgɛ tɔ sa mʋ tɔmaa mʋ nɩɩ ɔ
+        man sʋ, nɩɩ ɔkʋmaa mʋ nɩɩ ɔ sʋ agyitɔ gbaa, ɔ waa kanɩn.
+      sbs: 0.6961
+      gen_sec: 11.09
+      ref_sec: 10.5
+      cer: 0.0093
+      wer: 0.0857
+    bible_00159:
+      source: bible
+      text: N sʋ ɔkpa fɛɛ n taa mɛ nkpa sa halɩɩ lewu tɔ, kɛ n bɩla bwii nyɛ kɩmʋ.
+      sbs: 0.7382
+      gen_sec: 5.21
+      ref_sec: 4.84
+      cer: 0.0392
+      wer: 0.1667
+    bible_00160:
+      source: bible
+      text: Mɛ ɩ yɛgɛ nɩɩ ba tɩn mu kumu, amaa o bwii ba nkpa tɔ.
+      sbs: 0.6919
+      gen_sec: 3.93
+      ref_sec: 3.92
+      cer: 0.1053
+      wer: 0.4286
+    bible_00161:
+      source: bible
+      text: Saŋa mʋ nɩɩ Gyiwu abi Pentekosi kakɛ gyisa maa fʋʋ mʋ, Krisito akɔɔlɛ‐gyipu mʋ kpini ba ba
+        sarɛ opula kʋlʋn.
+      sbs: 0.6963
+      gen_sec: 8.87
+      ref_sec: 8.56
+      cer: 0.0116
+      wer: 0.05
+    bible_00162:
+      source: bible
+      text: Fii biti fɛɛ ba bɩla kaapʋ fʋ fɛɛ kɩkɔɔlɛ‐gyii mʋ nɩɩ kɩ man sʋ awaasa mʋ kɩ man sʋ kyaarɛ?
+      sbs: 0.7281
+      gen_sec: 7.08
+      ref_sec: 5.92
+      cer: 0.0
+      wer: 0.0
+    bible_00163:
+      source: bible
+      text: Lɩɩ fɛɛ ɔkʋmaa nɩmʋ ii biti ɔ ba bɩɩ mɛ.
+      sbs: 0.6703
+      gen_sec: 3.07
+      ref_sec: 3.1
+      cer: 0.1333
+      wer: 0.3
+    bible_00164:
+      source: bible
+      text: N bʋ mɛ n‐yɩɩ nɩn, n man gyɛ ɔkʋ kɩnyɛ, amaa n waa mɛ n‐yɩɩ kɩnyɛ sa ɔkʋmaa nɩmʋ, kɛ n nyɛ‐nyɛ
+        asa kʋkyɔ ba be biliŋi Krisito lɛɛ.
+      sbs: 0.7342
+      gen_sec: 10.24
+      ref_sec: 11.74
+      cer: 0.0316
+      wer: 0.069
+    bible_00165:
+      source: bible
+      text: Nɩɩ Farasii abi mʋ akʋ ba taasɛ yɛ, “Mɩnɛ ɩ waa nɩɩ fan waa kakɛ fʋʋtɛsa akɛ ikisii?
+      sbs: 0.6952
+      gen_sec: 6.49
+      ref_sec: 6.58
+      cer: 0.0312
+      wer: 0.1111
+    bible_00166:
+      source: bible
+      text: Mʋ agyitɔ‐gyisa mɔɔ ɩ gyɛ ntuntunbi yɛ ŋmasan.
+      sbs: 0.6748
+      gen_sec: 3.93
+      ref_sec: 3.9
+      cer: 0.1351
+      wer: 0.75
+    bible_00167:
+      source: bible
+      text: Lɩɩ fɛɛ Ɩbwaarɛ kuwura‐gyii mʋ man gyɛ asɩn kɩtɔwɛ, amaa kɩ gyɛ Ɩbwaarɛ ɔlʋn mʋ tɔ atɔ waasa
+        nɩn.
+      sbs: 0.7365
+      gen_sec: 7.85
+      ref_sec: 7.38
+      cer: 0.0
+      wer: 0.0
+    bible_00168:
+      source: bible
+      text: kɛ kɩmʋ alibi mʋ nɩɩ kɩ waa mʋ, fan ka kɩmʋ kʋkɔ ɩlɩɩ ɩnyɔ sʋ.
+      sbs: 0.7093
+      gen_sec: 4.69
+      ref_sec: 5.04
+      cer: 0.0
+      wer: 0.1333
+    bible_00169:
+      source: bible
+      text: ” Tʋtɔ nɩɩ mʋ abɩɩlapʋ mʋ ba piili bɛɛ taasɛ abaa bamʋ tɔ ɔmɔɔ ii biti ɔ waa kanɩn asɩn nɩmʋ?
+      sbs: 0.7073
+      gen_sec: 7.08
+      ref_sec: 6.58
+      cer: 0.0
+      wer: 0.1
+    bible_00170:
+      source: bible
+      text: Mi‐bii ana, anɛ dulinyaa tɔ kakyɩna laalaalʋwɛ mʋ kɩ fʋʋ, fɛɛ kanan mʋ nɩɩ fan wʋla nu yɛ
+        Krisito okisipu mʋ ii biti ɔ ba mʋ.
+      sbs: 0.7117
+      gen_sec: 9.9
+      ref_sec: 8.08
+      cer: 0.0417
+      wer: 0.0385
+    bible_00171:
+      source: bible
+      text: N biti fɛɛ fɛn bɩɩ fɛɛ ba tigi anɛ bɩrɩsa Timoti mʋ nɩɩ ba daa kɩtaa tii obu mʋ.
+      sbs: 0.7477
+      gen_sec: 6.14
+      ref_sec: 6.36
+      cer: 0.082
+      wer: 0.2105
+    bible_00172:
+      source: bible
+      text: Fan man nyi yɛ Ɩbwaarɛ ɩ sa fanɛ Kayaayu maŋa, nɩɩ ɔ tɛ fanɛ tɔ?
+      sbs: 0.7321
+      gen_sec: 5.03
+      ref_sec: 4.34
+      cer: 0.0
+      wer: 0.0
+    bible_00173:
+      source: bible
+      text: Ɩ bʋrɔn sa fʋ fɛɛ fʋ maa taa kinsi kʋlʋn loo nkpa kakpaa tɔ, ɩ kyɔ fʋ maa sʋ ansi anyɔ kɛ
+        ba taa fʋ tʋʋ awʋrʋfɔ fʋlɔn yen‐yen tɔ.
+      sbs: 0.7323
+      gen_sec: 9.9
+      ref_sec: 9.2
+      cer: 0.0206
+      wer: 0.0333
+    bible_00174:
+      source: bible
+      text: Amaa Pɔɔlɩ maa Banabasi ba sii Antiyoki.
+      sbs: 0.6642
+      gen_sec: 3.33
+      ref_sec: 10.48
+      cer: 0.0909
+      wer: 0.2857
+    bible_00175:
+      source: bible
+      text: Nɩɩ Kayaayu Kyɩrɛkyɩrɛ mʋ lɛɛ kaapʋ bamʋ, nɩɩ ba tɔwɛ Pɔɔlɩ yɛ ɔ man kpee Gyerusalem.
+      sbs: 0.7511
+      gen_sec: 6.91
+      ref_sec: 6.04
+      cer: 0.0
+      wer: 0.0
+    bible_00176:
+      source: bible
+      text: Piili lɩɩ bamʋ nɩɩ ba sii kamaa ba mʋ sʋ naa fʋʋ bamʋ nɩɩ ba gyankpaa ba mʋ.
+      sbs: 0.7126
+      gen_sec: 5.8
+      ref_sec: 4.92
+      cer: 0.0
+      wer: 0.2222
+    bible_00177:
+      source: bible
+      text: Lɩɩ fɛɛ n tɔwɛ fanɛ yɛ, n man bɩla yɛ n gyii falɛ agyitɔ anɩmʋ, naa fʋʋ kʋtɔ mʋ nɩɩ agyitɔ
+        nɩmʋ kigyii kasɛ ɩɩ kaapʋ ɩ waa Ɩbwaarɛ kuwura‐gyii mʋ tɔ.
+      sbs: 0.7228
+      gen_sec: 11.69
+      ref_sec: 10.02
+      cer: 0.0351
+      wer: 0.0938
+    bible_00178:
+      source: bible
+      text: Ɩmʋ sʋ mɩnɛ ɩ waa nɩɩ fɛn mɛɛ taalɛ lɔŋɔ abaa ndaga kakyɩna nɩmʋ tɔ asɩn?
+      sbs: 0.7318
+      gen_sec: 5.8
+      ref_sec: 6.2
+      cer: 0.0
+      wer: 0.0
+    bible_00179:
+      source: bible
+      text: Nɩɩ saŋa mʋ nɩɩ n nu nɩɩ n wu ɩnɩmʋ kpini lʋwɛ mʋ, n muŋa Ɩbwaarɛ kabɔɔ mʋ nɩɩ ɔ lɛɛ ɩnɩmʋ
+        ɛɛ kaapʋ mɛ mʋ ayaa tɔ, fɛɛ n sun mʋ.
+      sbs: 0.7201
+      gen_sec: 9.81
+      ref_sec: 10.6
+      cer: 0.0106
+      wer: 0.0312
+    bible_00180:
+      source: bible
+      text: N man dagaa fɛɛ n saŋɛ mu asɩbɩta gbaa.
+      sbs: 0.6612
+      gen_sec: 3.16
+      ref_sec: 3.54
+      cer: 0.2667
+      wer: 0.4444
+    bible_00181:
+      source: bible
+      text: Fan bɩɩ kanyaasɩn lɩɩ kanan mʋ nɩɩ fan kyɩna yɛ bamʋ nɩɩ ba man gyɛ Krisito abuupu mʋ, nɩɩ
+        ɔkpa kʋ kan bugi sa fanɛ yɛ fan tɔwɛ bamʋ Krisito asɩn mʋ, fan tɔwɛ ɩmʋ sa bamʋ.
+      sbs: 0.7763
+      gen_sec: 13.4
+      ref_sec: 13.32
+      cer: 0.0152
+      wer: 0.027
+    bible_00182:
+      source: bible
+      text: Ɔkʋmaa mʋ nɩɩ ɛɛ waa alibi mʋ, gyɛ Sɩtaanɛ lɛɛ nɩn.
+      sbs: 0.7168
+      gen_sec: 4.01
+      ref_sec: 3.1
+      cer: 0.0513
+      wer: 0.0909
+    bible_00183:
+      source: bible
+      text: ” Ɩmʋ sʋ abɩɩlapʋ mʋ ba natɛ ndɛ‐bi‐ndɛ‐bi mʋ sʋ kpini bɛɛ tɔwɛ asɩn danbɩrasa mʋ, yɛgɛ bɛɛ
+        kyɛ asa katɩn kʋmaa mʋ nɩɩ bee kpee mʋ.
+      sbs: 0.7026
+      gen_sec: 10.33
+      ref_sec: 9.1
+      cer: 0.0707
+      wer: 0.1538
+    bible_00184:
+      source: bible
+      text: “Ɩbwaarɛ ii tii bamʋ nɩɩ bɛɛ kaapʋ bamʋ n‐yɩɩ mʋ ɔkpa.
+      sbs: 0.6818
+      gen_sec: 4.27
+      ref_sec: 4.08
+      cer: 0.0244
+      wer: 0.0909
+    bible_00185:
+      source: bible
+      text: Pɔɔlɩ maa gyii nkɛ nkʋ Antiyoki mʋ, ɔ lɩɩ tʋtɔ ɔ naa ɛɛ bɔɔ akɔɔlɛ‐gyipu mʋ sʋ, nɩɩ o kpee
+        Galati yɛ Firigiya yɛgɛ ɛɛ tɔwɛ ɛɛ waa bamʋ ɔlʋn tɔ.
+      sbs: 0.725
+      gen_sec: 11.18
+      ref_sec: 13.58
+      cer: 0.0183
+      wer: 0.0323
+    bible_00186:
+      source: bible
+      text: Ɔwʋlɛ nɩmʋ lɩɩ mɛ, Pɔɔlɩ mʋ nɩɩ Ɩbwaarɛ bɔla mu kebiti sʋ tɩɩ mɛ, fɛɛ n ba waa Yesu Krisito
+        osunpu, yɛ anɛ bɩrɩsa Sositini asɛ.
+      sbs: 0.7481
+      gen_sec: 10.07
+      ref_sec: 11.42
+      cer: 0.0204
+      wer: 0.0385
+    bible_00187:
+      source: bible
+      text: Akʋ ba kyʋn bamʋ ndɔɔ ana tɔ, nɩɩ akʋ mɔɔ ba kyʋn asun tɔ.
+      sbs: 0.7128
+      gen_sec: 4.44
+      ref_sec: 3.76
+      cer: 0.0465
+      wer: 0.1429
+    bible_00188:
+      source: bible
+      text: Nɩɩ Yesu kpee ndɛ‐bii mʋ nɩɩ ɩ maa mʋ kadɛ, ɛɛ kaapʋ bamʋ abwaarɛsɩn.
+      sbs: 0.7459
+      gen_sec: 5.55
+      ref_sec: 5.14
+      cer: 0.0755
+      wer: 0.2857
+    bible_00189:
+      source: bible
+      text: Ɔsa mʋ nɩɩ mʋ ɩkpa i kyiigi mʋ, mʋ kabwaarɛ‐kʋlɛ ɩ bʋgya nɩɩ i sun kusun.
+      sbs: 0.7282
+      gen_sec: 5.72
+      ref_sec: 5.7
+      cer: 0.0909
+      wer: 0.1875
+    bible_00190:
+      source: bible
+      text: ɩmʋ sʋ fʋ sa bamʋ nkalan yɛ ba nuu kanan mʋ nɩɩ ɩ dagaa bamʋ.
+      sbs: 0.666
+      gen_sec: 4.61
+      ref_sec: 5.04
+      cer: 0.0217
+      wer: 0.2
+    bible_00191:
+      source: bible
+      text: Nɩɩ Pɔɔlɩ naa loo taa mʋ abaa gyaga mʋ sʋ, kʋlɛ kabwaarɛ‐kʋlɛ, nɩɩ ɔ nyɛ alanfɩya.
+      sbs: 0.7481
+      gen_sec: 6.66
+      ref_sec: 5.98
+      cer: 0.0
+      wer: 0.0
+    bible_00192:
+      source: bible
+      text: Nbɩɩnbɩɩ asɩn nɩmʋ kpini ɩ waa nɩn kaapʋ ɩ da anɛ amu tɔ, kɛ ɩ man yɛgɛ anɛ nfɛɛrɛ ɩ gyaga
+        alibi kɩwaa sʋ, fɛɛ kanan mʋ nɩɩ adɩdaapʋ mʋ ba waa mʋ.
+      sbs: 0.7786
+      gen_sec: 11.26
+      ref_sec: 12.42
+      cer: 0.0541
+      wer: 0.0909
+    bible_00193:
+      source: bible
+      text: Maa bamʋ ba maa nsarɛ bee gyii kakaakʋ mʋ, ɔ sa bamʋ kɔnɔ yɛ, “Fan man kan waa lɩɩ Gyerusalem,
+        amaa fan gyoo fanɛ kɛkɛɛ mʋ nɩɩ n wʋla tɔwɛ fanɛ yɛ, Nsɛ da mʋ kɔkɔlɔ sʋ yɛ ee biti ɔ sa fanɛ
+        mʋ.
+      sbs: 0.7154
+      gen_sec: 14.93
+      ref_sec: 14.24
+      cer: 0.0559
+      wer: 0.1364
+    bible_00194:
+      source: bible
+      text: Saŋa mʋ nɩɩ ba fʋʋ Misiya ngyaŋɛ mʋ, ba kpan bamʋ n‐yɩɩ fɛɛ ba faa loo Bitiniya, amaa Yesu
+        Kayaayu mʋ man sa bamʋ ɔkpa.
+      sbs: 0.7363
+      gen_sec: 9.64
+      ref_sec: 10.48
+      cer: 0.0
+      wer: 0.0
+    bible_00195:
+      source: bible
+      text: Asa maŋa ba man sun kadʋnbwɛ mʋ abɛɛ mʋ apɔyɩtɔ ɔdakpa mʋ, nɩɩ ba man kɔɔlɛ mʋ kakyʋlɛ mʋ
+        bamʋ asɩkpɩɩ sʋ abɛɛ bamʋ abaa sʋ.
+      sbs: 0.7377
+      gen_sec: 9.9
+      ref_sec: 12.26
+      cer: 0.0412
+      wer: 0.1923
+    bible_00196:
+      source: bible
+      text: ” Saŋa mʋ nɩɩ Pɔɔlɩ wu ansi sʋ kɩlɛɛkaapʋ mʋ, opula maŋa tɔ nɩɩ an kʋʋla anɛ n‐yɩɩ an biti
+        a kpee Masedoniya.
+      sbs: 0.7308
+      gen_sec: 8.7
+      ref_sec: 8.1
+      cer: 0.0602
+      wer: 0.1364
+    bible_00197:
+      source: bible
+      text: Nɩɩ Herodiya mu‐bii kyɩɩsa lɩɩ ba kyaa, nɩɩ i gyii Herodi yɛ mʋ afɔ ansi gaa.
+      sbs: 0.6987
+      gen_sec: 6.14
+      ref_sec: 6.02
+      cer: 0.0508
+      wer: 0.125
+    bible_00198:
+      source: bible
+      text: Man gyɛ yɛ mɛ n‐yɩɩ ɩ kɩtaa mɛ sʋ nɩɩ n tɔwɛ kanɩn, lɩɩ fɛɛ n bɩɩla ɔkpa kʋmaa sʋ fɛɛ ɩmʋ
+        nɩɩ n sʋ mʋ ɩ kʋkwɛ mɛ.
+      sbs: 0.7385
+      gen_sec: 8.45
+      ref_sec: 9.46
+      cer: 0.0366
+      wer: 0.069
+    bible_00199:
+      source: bible
+      text: Amaa asɩn mʋ nɩɩ ba nyɛ lɩɩ mʋ sʋ ɩ gyɛ maa bamʋ kabwaarɛ‐sunkpa kamɔɔrɛ‐gyii, yɛ ɔnyɩn kʋ
+        mʋ nɩɩ bɛɛ tɩɩ yɛ Yesu nɩɩ o wu mʋ, nɩɩ Pɔɔlɩ ɩ tɔwɛ fɛɛ ɔ san ɔ tɛ nkpa tɔ.
+      sbs: 0.7141
+      gen_sec: 12.8
+      ref_sec: 11.76
+      cer: 0.0081
+      wer: 0.0769
 - model: ghananlpcommunity/ghana-tts-36k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: ref
@@ -17248,4 +18972,4 @@ benchmarks:
       ref_sec: 11.76
       cer: 0.2661
       wer: 0.8462
-updated: '2026-10-02'
+updated: '2026-10-09'

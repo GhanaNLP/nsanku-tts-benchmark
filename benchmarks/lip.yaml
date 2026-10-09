@@ -1745,6 +1745,1740 @@ benchmarks:
       ref_sec: 13.08
       cer: 0.0278
       wer: 0.12
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7284
+  num_scored: 200
+  cer: 0.1255
+  wer: 0.376
+  accuracy: 0.8745
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8014
+  score: 0.8014
+  per_source:
+    bible:
+      sbs: 0.7284
+      cer: 0.1255
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: “Beso biamfo budufǝ lǝ asa kǝmiǝ kabe lɛsɛ nǝ ele bǝ biyifo?
+      sbs: 0.7374
+      gen_sec: 5.8
+      ref_sec: 6.04
+      cer: 0.1277
+      wer: 0.3333
+    bible_00001:
+      source: bible
+      text: Nya báto kakadiɛ kpǝ bǝtsyǝ lǝ abanslo eto diyo nǝ ǝsuǝ bótsya mfó.
+      sbs: 0.7089
+      gen_sec: 6.4
+      ref_sec: 6.6
+      cer: 0.4074
+      wer: 0.5385
+    bible_00002:
+      source: bible
+      text: Itsyise Utidi Eto Ubi ǝbǝ nkǝ lǝ ofo betidi ba lénya kusu lǝ nkpǝ.
+      sbs: 0.7221
+      gen_sec: 6.31
+      ref_sec: 6.32
+      cer: 0.0577
+      wer: 0.1429
+    bible_00003:
+      source: bible
+      text: Nya lǝ utsyuǝ ásɔ fǝ lǝ kotosii, tsyi nkonse tsya ǝtǝ wǝ. Nya lǝ utidi utsyuǝ éfi fǝ awu katoo,
+        tǝ lǝ ufi nnya kalɔ tsya lǝ woala.
+      sbs: 0.812
+      gen_sec: 11.86
+      ref_sec: 13.44
+      cer: 0.0202
+      wer: 0.1071
+    bible_00004:
+      source: bible
+      text: Boanla boǝ kuutsyuǝ saa nyǝ kabua lǝ bo keyifo ǝsuǝ. Lǝ nyaso boanla boǝ boeyifo kulesa nǝ
+        luuti kuutsyuǝ saa bofokanɔ eto kusu.
+      sbs: 0.7376
+      gen_sec: 12.63
+      ref_sec: 10.48
+      cer: 0.0481
+      wer: 0.3043
+    bible_00005:
+      source: bible
+      text: Nyaso Yosef áfo ɔkɔ ǝmǝ nya úfi kafia flubia kǝtsyuǝ úmli wǝ.
+      sbs: 0.7139
+      gen_sec: 5.89
+      ref_sec: 6.22
+      cer: 0.0408
+      wer: 0.1667
+    bible_00006:
+      source: bible
+      text: Nya lǝ Awɔnisa Kɛnkɛ eto Kukue ǝsuǝǝ, Boanto Onanto átɛyi nkǝ,
+      sbs: 0.6761
+      gen_sec: 6.31
+      ref_sec: 4.3
+      cer: 0.1
+      wer: 0.3636
+    bible_00007:
+      source: bible
+      text: Nya Yesu lɛtɔ wǝ nkǝ, “Be fanlɛ bɔbɛbɛ?”
+      sbs: 0.7413
+      gen_sec: 3.75
+      ref_sec: 3.52
+      cer: 0.1034
+      wer: 0.5
+    bible_00008:
+      source: bible
+      text: Nya lǝ Ɔnwɛditsyǝyi lɔni ǝsuǝǝ, Yesu ákɛ mfó úkate asa lǝ Yudafɔ eto katsyakɔ kǝtsyuǝ.
+      sbs: 0.7307
+      gen_sec: 8.36
+      ref_sec: 8.7
+      cer: 0.1286
+      wer: 0.4
+    bible_00009:
+      source: bible
+      text: Ɔ́yɛ buɛɛ lǝ Yesu eto kama lǝ betidi nti nya útidi wǝ awu eto kotosi. Lamfolamfo kɔtɔ komǝ
+        áyɛ wǝ bokpo.
+      sbs: 0.7164
+      gen_sec: 10.07
+      ref_sec: 10.0
+      cer: 0.0741
+      wer: 0.1905
+    bible_00010:
+      source: bible
+      text: Nyaso bɛlɛ ɔkuɛnsate ǝmǝ lekpakpa lǝ otsyese beyifoyifo lǝ bǝbǝ bawunsǝ lǝ bǝlǝkǝ bɛkuɛnkǝ
+        biamǝ.”
+      sbs: 0.737
+      gen_sec: 9.9
+      ref_sec: 9.78
+      cer: 0.1463
+      wer: 0.3333
+    bible_00011:
+      source: bible
+      text: Nya biatɛyi biǝ, ‘Lǝ nnya ete busiǝ nkpǝ lǝ lefe nǝ bo banamǝ dísiǝǝ, eni bienyifo lesa nǝ
+        béyifo, balo Onanto eto bǝnyɛlǝkǝtidi.’
+      sbs: 0.7638
+      gen_sec: 12.8
+      ref_sec: 12.1
+      cer: 0.1176
+      wer: 0.3478
+    bible_00012:
+      source: bible
+      text: Bomu lesa nǝ nlɛ bubǝ mfoo, eyifo lesa nǝ Onanto eto Unyɛlǝkǝtidi Yoel lɛtɛyi utsyǝ kokooko
+        nkǝ,
+      sbs: 0.7487
+      gen_sec: 9.56
+      ref_sec: 8.84
+      cer: 0.1026
+      wer: 0.2941
+    bible_00013:
+      source: bible
+      text: Ɛnɔ ba leeninǝ étsyi kakandiɛ, fɛɛ béntsyi nnuǝbi lǝ asa ǝsuǝ báwunisǝ.
+      sbs: 0.7328
+      gen_sec: 7.0
+      ref_sec: 6.34
+      cer: 0.2759
+      wer: 0.8333
+    bible_00014:
+      source: bible
+      text: Lefe ditsyuǝ se betidi kpǝ bǝtsyuǝ dítǝkǝko Yesu, ɔ́tsyi ɔ́wuninsǝ nya ɔ́tɛyi mɛ nkǝ,
+      sbs: 0.6896
+      gen_sec: 7.94
+      ref_sec: 7.4
+      cer: 0.0896
+      wer: 0.2857
+    bible_00015:
+      source: bible
+      text: Tɛyi mǝ fǝ bekeyifo kasɛɛ nya luutǝ boofiani batabinyǝ bǝnyǝ atsyɔkpokpo lǝ nnya buuyifo ǝsuǝ.
+        Nya lǝ bǝkǝtǝ betidi asa kafo faa.
+      sbs: 0.7232
+      gen_sec: 12.97
+      ref_sec: 11.4
+      cer: 0.0755
+      wer: 0.3182
+    bible_00016:
+      source: bible
+      text: Mfó nya Petro ku batɔnkpe bamba bamǝ dílǝkǝ kɛnyɛ bátɛyi bǝ, “Etiki eto ɔnukualɛ ni bǝ Onanto
+        ni futsyǝ ele bǝ butsyue koto, inni utidi.
+      sbs: 0.7283
+      gen_sec: 13.23
+      ref_sec: 13.4
+      cer: 0.0648
+      wer: 0.32
+    bible_00017:
+      source: bible
+      text: Sitintii, mémfi Onanto eto sekakedikɔ eto kusu eto asa nkula mi.
+      sbs: 0.7037
+      gen_sec: 6.49
+      ref_sec: 5.84
+      cer: 0.0962
+      wer: 0.5455
+    bible_00018:
+      source: bible
+      text: Barnaba átɔnɔ nya óla nkǝ lǝ okpa Yohanes nwǝ tsya besi baakpo Marko ɔyɛnko.
+      sbs: 0.6873
+      gen_sec: 7.51
+      ref_sec: 6.3
+      cer: 0.3065
+      wer: 0.5
+    bible_00019:
+      source: bible
+      text: Nya Festo lɛtɛyi wǝ nkǝ, “Ɛbɔnɔ ditiki nǝmfo kusɛɛ!”
+      sbs: 0.7364
+      gen_sec: 5.03
+      ref_sec: 4.48
+      cer: 0.075
+      wer: 0.2222
+    bible_00020:
+      source: bible
+      text: Mfó ǝmǝ nya Yesu lɛtɔ mǝ nkǝ, “Be ɔkuɛnsate ǝmǝ luuyifo beyifoyifo bamǝ mfo?
+      sbs: 0.7345
+      gen_sec: 7.51
+      ref_sec: 6.9
+      cer: 0.1833
+      wer: 0.4286
+    bible_00021:
+      source: bible
+      text: Owo lo! Inni nko ini kon! Nlɛ mi bɔtɛyi minkǝ lǝ bientsyi mi akɔɛsi bɛwuninsǝ, nko ke mimblɛ
+        kenke luubǝ bikpǝ fe mǝ ke nɛ.”
+      sbs: 0.7985
+      gen_sec: 11.86
+      ref_sec: 11.66
+      cer: 0.0947
+      wer: 0.4
+    bible_00022:
+      source: bible
+      text: Nya mɔmɔɔ, O Bonamute, be sikpi sia banlɛ bo bokpe, lǝ ǝtǝ bo fǝ beyifoyifo lɛkɔɛsi nǝ luutǝ
+        boofo fǝ Ditiki Sɛɛ nǝmǝ budi.
+      sbs: 0.7493
+      gen_sec: 12.12
+      ref_sec: 12.04
+      cer: 0.125
+      wer: 0.375
+    bible_00023:
+      source: bible
+      text: “Lǝ sitintii, Onanto eto bǝnyɛlǝkǝtidi kenke idu lǝ Samuel ɛntɔɔ, ébɔtɛyi asa nnya nlɛ bubǝ
+        mfo mmi bǝtsyǝ.
+      sbs: 0.7383
+      gen_sec: 10.67
+      ref_sec: 9.4
+      cer: 0.0698
+      wer: 0.2778
+    bible_00024:
+      source: bible
+      text: lǝ Galilea eto kasɔ kaka betidi
+      sbs: 0.6488
+      gen_sec: 3.16
+      ref_sec: 3.48
+      cer: 0.4231
+      wer: 1.3333
+    bible_00025:
+      source: bible
+      text: Lǝ mi utsyuǝ ǝǝnyǝ kanyii, yenyifo bǝ uyifo uwudifɔ, uyu, obuayifo, nye nwǝ laakpe ditiki
+        nǝ dimanle wǝ kɛnyɛ eso.
+      sbs: 0.7762
+      gen_sec: 11.35
+      ref_sec: 12.08
+      cer: 0.1111
+      wer: 0.35
+    bible_00026:
+      source: bible
+      text: Yesu ǝtǝ mbuayɛ nkǝ, “Sitinti ele bǝ Elia ka bubǝ ɔtɔnsǝ bǝ lǝ ɔlɔ lesa saa utsyǝ.
+      sbs: 0.7262
+      gen_sec: 7.77
+      ref_sec: 8.46
+      cer: 0.1905
+      wer: 0.4118
+    bible_00027:
+      source: bible
+      text: Yesu átɛyi lekpa nǝmfo utǝ betidi ba leebu bǝ mǝ kakle hã ni basɛɛ nya bensi embunyǝ utidi
+        sa wǝ ntǝ fǝ mǝ.
+      sbs: 0.7496
+      gen_sec: 10.41
+      ref_sec: 11.5
+      cer: 0.1071
+      wer: 0.4348
+    bible_00028:
+      source: bible
+      text: Se lefe léyo bǝ balɛ eyibibi nyamǝǝ, ɔkuɛnsate ǝmfo ákpe wǝ ndomufɔ nkǝ besu bafo wǝ kedikɔ
+        baboko wǝ.
+      sbs: 0.7417
+      gen_sec: 10.15
+      ref_sec: 9.92
+      cer: 0.1829
+      wer: 0.4737
+    bible_00029:
+      source: bible
+      text: Nyaso lǝ utsyuǝ lǝ mi nti aala nkǝ weeyifo ututɛɛ, ele bǝ uyifo wǝ ǝsuǝ uyifoyifo utǝ bafɛfɛ
+        kenke.
+      sbs: 0.7446
+      gen_sec: 9.64
+      ref_sec: 9.38
+      cer: 0.0759
+      wer: 0.2632
+    bible_00030:
+      source: bible
+      text: Betidi bǝtsyuǝ ákpe ute utsyuǝ lǝ diyo nǝmǝ eto lekple, nya Petro tsya dísu úsiǝ lǝ mǝ nti.
+      sbs: 0.716
+      gen_sec: 8.62
+      ref_sec: 7.54
+      cer: 0.0694
+      wer: 0.1111
+    bible_00031:
+      source: bible
+      text: Mfi mɔ lelabi tinti nlɛ mimblɛ kenke butǝ lǝ Kristo Yesu eto diye ǝsuǝ. Ibǝ itǝ.
+      sbs: 0.7172
+      gen_sec: 7.85
+      ref_sec: 11.9
+      cer: 0.0317
+      wer: 0.125
+    bible_00032:
+      source: bible
+      text: “Beso biakpadi mɛ biǝ Bonamute, Bonamute, fɛ bienyifo lǝ lesa nǝ maatɛyi mi ǝsuǝ?
+      sbs: 0.7611
+      gen_sec: 8.11
+      ref_sec: 7.06
+      cer: 0.0938
+      wer: 0.2857
+    bible_00033:
+      source: bible
+      text: Nya se bófe mfóo, bɔ́yɛ lǝ Kilikia ku Pamfilia eto lekpo kɛnyɛ, nya búsu búńyǝ lǝ umǝ wǝ baakpo
+        Mira lǝ Likia eto lekpake.
+      sbs: 0.7426
+      gen_sec: 11.86
+      ref_sec: 11.56
+      cer: 0.1053
+      wer: 0.25
+    bible_00034:
+      source: bible
+      text: Nya se wǝ banamute dínyǝ bǝ mǝ kudisu étii, bǝmuǝ Paulo ku Silas nya bǝnǝ mǝ bésuko umǝ ǝmǝ
+        eto beninǝ ɔflɔ lǝ obia nti.
+      sbs: 0.6852
+      gen_sec: 11.61
+      ref_sec: 11.26
+      cer: 0.0638
+      wer: 0.32
+    bible_00035:
+      source: bible
+      text: Binyǝ kase mímbokosǝ ǝsuǝ kasɔ míntǝ Bonamute, lǝ kanyi ku binǝntu ǝsuǝ ɛyɛ lǝ Yudafɔ eto
+        kase bála bǝ balo mɛ eso.
+      sbs: 0.7178
+      gen_sec: 11.35
+      ref_sec: 11.7
+      cer: 0.1304
+      wer: 0.4545
+    bible_00036:
+      source: bible
+      text: Mfó nya ɔ́tɛyi bo nkǝ, “Beso bǝǝnlɛ nku buwi nya bɛnlɛ mɛ ani bolo mǝ? Ntɔnɔ miǝ bakle mɛ
+        lǝ Yerusalem, lǝ nsu nkpǝ lǝ Bonamute Yesu eso.”
+      sbs: 0.7485
+      gen_sec: 13.06
+      ref_sec: 12.52
+      cer: 0.0673
+      wer: 0.1429
+    bible_00037:
+      source: bible
+      text: itsyise biyi Kristo wǝ nsi nkpǝ taa kasɔ ketsyikokɔ ǝmǝ.
+      sbs: 0.6718
+      gen_sec: 5.46
+      ref_sec: 3.48
+      cer: 0.1957
+      wer: 0.6
+    bible_00038:
+      source: bible
+      text: Nko kǝ ini bǝ asasɛyifoyifo tsya ǝmbofo bɔbiɔ, nya nnya lɛbiɔ tsya ebubǝ ɛbɔɔ lekple utsyuǝ
+        saa nyǝ.
+      sbs: 0.7213
+      gen_sec: 9.64
+      ref_sec: 11.7
+      cer: 0.1358
+      wer: 0.5556
+    bible_00039:
+      source: bible
+      text: Onanto eto ǝsuǝale kplɛ nyamfo éyifo betidi bamfó kenke yanii.
+      sbs: 0.6737
+      gen_sec: 6.4
+      ref_sec: 4.98
+      cer: 0.0577
+      wer: 0.4
+    bible_00040:
+      source: bible
+      text: Itsyise bayimi, betidi bǝtsyuǝ ba dítsyi Klo eto diyo átɛyi mɛ bǝ kǝdiǝ kpe mi lenti mfó.
+      sbs: 0.7344
+      gen_sec: 8.45
+      ref_sec: 7.66
+      cer: 0.0563
+      wer: 0.4118
+    bible_00041:
+      source: bible
+      text: Se Farisifɔ bamǝ dínyǝ nyamfoo, bátɛyi Yesu bǝnkǝ, “Fǝ bakasebi éyifo lesa nǝ díńyǝ lǝ bo
+        Ɔnwɛditsyǝyi eto afi ǝsuǝ!”
+      sbs: 0.7313
+      gen_sec: 11.52
+      ref_sec: 11.76
+      cer: 0.0538
+      wer: 0.2
+    bible_00042:
+      source: bible
+      text: Bákpa ɔflimu ku ubi ǝmǝ báboko, nya béfi mǝ mfia bésensǝ bákpo lǝ mǝ ǝsuǝ nya Yesu lébe úsiǝ
+        lǝ mǝ ǝsuǝ.
+      sbs: 0.7253
+      gen_sec: 10.07
+      ref_sec: 10.76
+      cer: 0.1481
+      wer: 0.3636
+    bible_00043:
+      source: bible
+      text: Nya bésu bátɛyi wǝ ku wǝ diyo eto betidi kenke Bonamute eto ditiki nǝmǝ.
+      sbs: 0.7614
+      gen_sec: 7.08
+      ref_sec: 6.32
+      cer: 0.0517
+      wer: 0.1429
+    bible_00044:
+      source: bible
+      text: Fɛɛ nkpǝ eto kusu afɛ, nya ko bɔyɛ kesu mfó kpe ale, nya betidi esiani hã lǝǝnyǝ ko.
+      sbs: 0.7577
+      gen_sec: 8.19
+      ref_sec: 10.68
+      cer: 0.125
+      wer: 0.3333
+    bible_00045:
+      source: bible
+      text: Nya utidi ǝmǝ ǝsuǝ lɛwɔnɔ bua nǝmfo nsii, lɛblɛ mǝ! Nya báfo afabe tinti, nya bétsyetsyi bábɔ
+        lǝ diyo nǝmǝ leyaleya!
+      sbs: 0.7572
+      gen_sec: 11.35
+      ref_sec: 10.32
+      cer: 0.0543
+      wer: 0.2857
+    bible_00046:
+      source: bible
+      text: Nyaso bitǝ lǝ bikǝ ku edisa nya ntǝ bo lǝ imi bo.
+      sbs: 0.7064
+      gen_sec: 4.61
+      ref_sec: 4.3
+      cer: 0.0541
+      wer: 0.25
+    bible_00047:
+      source: bible
+      text: ‘Israelfɔ, inni mɔ bélo bebuki bítǝ kedi
+      sbs: 0.6575
+      gen_sec: 3.93
+      ref_sec: 3.56
+      cer: 0.625
+      wer: 1.1429
+    bible_00048:
+      source: bible
+      text: nya wɔɔtɔ ɔlɔ kusu utsyǝ utǝ fǝ bubǝ.’ ”
+      sbs: 0.6956
+      gen_sec: 3.5
+      ref_sec: 4.84
+      cer: 0.5172
+      wer: 0.625
+    bible_00049:
+      source: bible
+      text: Lamfolamfoo, utsyuǝ saa eto utu ǝsiǝǝ kasɔ nya mǝmblɛ dítsyiko lesa nǝmǝ budi.
+      sbs: 0.7321
+      gen_sec: 7.77
+      ref_sec: 6.44
+      cer: 0.1094
+      wer: 0.3846
+    bible_00050:
+      source: bible
+      text: “Onanto eto Lɛwɔnɔ si mɛ lǝ ǝsuǝ, bédiki mɛ nnuǝbi,
+      sbs: 0.7254
+      gen_sec: 4.95
+      ref_sec: 4.24
+      cer: 0.1026
+      wer: 0.3
+    bible_00051:
+      source: bible
+      text: Nyalɛ beso fémemfi mɔ atabi ésuko atabi kǝtsyǝkɔ bǝ lǝ mbǝǝ, lǝ nnyǝ nnya kutǝkǝ?’
+      sbs: 0.7521
+      gen_sec: 7.94
+      ref_sec: 7.58
+      cer: 0.1846
+      wer: 0.6
+    bible_00052:
+      source: bible
+      text: Mɔ balala, nnya minlɛ bɔwɔni katsyese mi enni kɔfi fɔfɔ. Bomu kɔfi koko ko nte taa kasɔ ketsyikokɔ
+        ke. Kɔfi koko komfo eyifo nko fákanɔ taa kɔ.
+      sbs: 0.7566
+      gen_sec: 13.91
+      ref_sec: 13.76
+      cer: 0.177
+      wer: 0.7037
+    bible_00053:
+      source: bible
+      text: ku Yuda Iskariot wǝ dídu Yesu útǝ.
+      sbs: 0.6866
+      gen_sec: 3.33
+      ref_sec: 3.22
+      cer: 0.1481
+      wer: 0.2857
+    bible_00054:
+      source: bible
+      text: Utsyuǝ saa kǝǝnyǝ bo fe Kristo eto beyifoyifo ba béfi Onanto eto etiki kulakula lǝ lefe nǝ
+        léfe mmǝǝ, bákpe kɔni bǝ bɔlɛ nya ola.
+      sbs: 0.7222
+      gen_sec: 12.63
+      ref_sec: 11.86
+      cer: 0.1262
+      wer: 0.32
+    bible_00055:
+      source: bible
+      text: Se Oka Herodes díkpǝ eto kamaa, Onanto eto ɔtɔnkpe utsyuǝ ǝlǝkǝ ǝsuǝ óte Yosef lǝ kola kǝmiǝ
+        lǝ Egipte.
+      sbs: 0.7183
+      gen_sec: 10.15
+      ref_sec: 8.56
+      cer: 0.1446
+      wer: 0.2632
+    bible_00056:
+      source: bible
+      text: Úsu Pilato ɔflɔ úsu ɔ́tɔ wǝ nkǝ lǝ ofo Yesu eto ɔkɔ.
+      sbs: 0.7148
+      gen_sec: 4.78
+      ref_sec: 4.66
+      cer: 0.0513
+      wer: 0.1667
+    bible_00057:
+      source: bible
+      text: Nyaso bǝnǝ wǝ babɔsǝ lǝ ɔkpɔ ǝmǝ kafo nya bálo wǝ.”
+      sbs: 0.6987
+      gen_sec: 4.78
+      ref_sec: 4.98
+      cer: 0.1538
+      wer: 0.2727
+    bible_00058:
+      source: bible
+      text: Nya Petro lɛtɛyi wǝ nkǝ, “Ekudi itǝ fǝ ku fǝ atabi kenke! Membu fǝ ebofo Onanto eto atɛsǝ
+        boya ku atabi.
+      sbs: 0.7828
+      gen_sec: 10.07
+      ref_sec: 9.26
+      cer: 0.05
+      wer: 0.1429
+    bible_00059:
+      source: bible
+      text: Nnlɛ mi etiki budi mɔmɔ fe kase ubianto leedi wǝ bebi etiki. Nya fe kase búmenkli bo akɔɛsi
+        bófo mii, mi tsya menkli mi akɔɛsi bitǝ bo lǝ befo bo nko.
+      sbs: 0.7252
+      gen_sec: 14.42
+      ref_sec: 12.48
+      cer: 0.094
+      wer: 0.2581
+    bible_00060:
+      source: bible
+      text: Nya lǝ betidi aala bǝ bǝǝnǝ nko mɛ eto etiki lǝ nyamfo ǝsuǝǝ, nyamfo muufi nlǝkǝ mɔ ǝsuǝ kɛnyɛ
+        nɛ.
+      sbs: 0.7088
+      gen_sec: 9.56
+      ref_sec: 6.9
+      cer: 0.0519
+      wer: 0.15
+    bible_00061:
+      source: bible
+      text: Nnye betidi ba nsi mfóo, yoofo budi bǝ bɔɔtɛyi asa bua nnya eto dikpi nǝ bálo mǝ lefe nǝ Yudafɔ
+        eto bakponkpo ninǝ ba lɛkɛ mfó fɛ bákponko mɛ lekpo.
+      sbs: 0.7349
+      gen_sec: 14.42
+      ref_sec: 13.2
+      cer: 0.1026
+      wer: 0.2333
+    bible_00062:
+      source: bible
+      text: Se bakasebi itsyǝ bamfo lɛnɔ ɔkɔɛ ǝmfoo, sikpi ǝmuǝ mǝ tinti nya béfi ǝnǝmi béfusǝ kasɔ.
+      sbs: 0.7313
+      gen_sec: 8.7
+      ref_sec: 8.52
+      cer: 0.0423
+      wer: 0.1875
+    bible_00063:
+      source: bible
+      text: Mfó ǝmǝ nya Yesu lɛtɔ mǝ nkǝ, “Biyi kase Onanto eto Sekadidi laayɛ kesensǝ? Nya be ele bǝ
+        bufi nnya bokatesǝ ko?
+      sbs: 0.7649
+      gen_sec: 10.92
+      ref_sec: 10.74
+      cer: 0.1034
+      wer: 0.2273
+    bible_00064:
+      source: bible
+      text: Yoofo budi bǝ Yudafɔ ba ditsyi Asia eto kasɔɔ, mǝ ele bǝ bebǝ fǝ ɔflɔ. Nya lǝ mɔ ku mǝ kpe
+        etiki ǝtsyuǝǝ, nnya boolǝkǝ batɛyi nɛ.
+      sbs: 0.7598
+      gen_sec: 12.2
+      ref_sec: 11.28
+      cer: 0.101
+      wer: 0.2963
+    bible_00065:
+      source: bible
+      text: itsyise bíofo mi disuǝyuǝ eto kayofofo lǝ kasɔ mfo!
+      sbs: 0.6765
+      gen_sec: 5.03
+      ref_sec: 4.26
+      cer: 0.1667
+      wer: 0.4444
+    bible_00066:
+      source: bible
+      text: Nya betidi bamfo ebuyifo fe betidi fosi ana ku kama.
+      sbs: 0.6892
+      gen_sec: 5.21
+      ref_sec: 4.66
+      cer: 0.1429
+      wer: 0.6
+    bible_00067:
+      source: bible
+      text: Besumunyǝ ninǝ ku umǝ eto beninǝ ábiasǝ betidi ba létsya mfo eto ato bǝnkǝ batɔ Pilato lǝ
+        oyani Baraba utǝ mǝ lǝ balo Yesu.
+      sbs: 0.7048
+      gen_sec: 11.95
+      ref_sec: 12.3
+      cer: 0.0505
+      wer: 0.2083
+    bible_00068:
+      source: bible
+      text: Nyaso nyifo mɔ nsusu minkǝ mensiembubǝ mi ɔflɔ bǝ lǝ mbǝ nló mi ani.
+      sbs: 0.6556
+      gen_sec: 6.66
+      ref_sec: 5.54
+      cer: 0.037
+      wer: 0.2857
+    bible_00069:
+      source: bible
+      text: Onanto ákpo atsyɔ betidi ba laakplatsya keklekle bǝ bǝǝsiǝ nkpǝ sɛɛ lǝ Onanto eto ǝnǝmi.
+      sbs: 0.7158
+      gen_sec: 8.7
+      ref_sec: 6.98
+      cer: 0.0822
+      wer: 0.2
+    bible_00070:
+      source: bible
+      text: Bitǝ utidi saa dibu. Bela mi bafokanɔfɔ tsyuǝ. Bete Onanto sikpi. Nya lǝ bitǝ Okankplɛ tsya
+        dibu.
+      sbs: 0.7602
+      gen_sec: 9.56
+      ref_sec: 8.56
+      cer: 0.1039
+      wer: 0.4706
+    bible_00071:
+      source: bible
+      text: Bitǝ mi nsusu lǝ butǝkǝ lǝ asa nnya nkpe kato mfó ǝsuǝ, inni lǝ asa nnya nkpe lǝ kasɔ mfo.
+      sbs: 0.7144
+      gen_sec: 8.62
+      ref_sec: 8.26
+      cer: 0.029
+      wer: 0.1
+    bible_00072:
+      source: bible
+      text: Itsyise nwǝ ke lɛni Ubi ǝmfo áni Anto ǝmǝ tsya. Nwǝ ke léfo Ubi ǝmǝ ɔ́nɔɔ, áfo Anto ǝmǝ tsya.
+      sbs: 0.7302
+      gen_sec: 8.45
+      ref_sec: 8.18
+      cer: 0.1429
+      wer: 0.55
+    bible_00073:
+      source: bible
+      text: Sikpi ǝmuǝ mba nlɛ mfó bose nya bétinkǝ tinti, nya bákpo kasɔ mfó fe bukpǝ békpe.
+      sbs: 0.7362
+      gen_sec: 7.94
+      ref_sec: 8.7
+      cer: 0.1719
+      wer: 0.5
+    bible_00074:
+      source: bible
+      text: itsyise mɔ ɔyɛtsyuǝ ɔni etsyi kusu ubǝ ɔsɔnɔ mɛ mɔmɔ. Nya didisa saa ente muutǝ wǝ!’
+      sbs: 0.7689
+      gen_sec: 7.85
+      ref_sec: 7.98
+      cer: 0.0606
+      wer: 0.1875
+    bible_00075:
+      source: bible
+      text: Nya uyifoyifo bimba ǝmfo alɛɛ, beto wǝ bekpe lǝ ketuntu ka nkpe lǝ lekple. Kaka mfóo, wuwi
+        keku unǝ wǝ animi.
+      sbs: 0.792
+      gen_sec: 10.75
+      ref_sec: 10.8
+      cer: 0.0706
+      wer: 0.1905
+    bible_00076:
+      source: bible
+      text: Se Okafɔse ǝmǝ léfe kama ku bubǝ esoo, mbitɛ bomǝ étsyiko selabe butinkǝ nya bálabe selabe.
+      sbs: 0.7476
+      gen_sec: 9.05
+      ref_sec: 7.56
+      cer: 0.2162
+      wer: 0.625
+    bible_00077:
+      source: bible
+      text: Betidi kpǝ ǝtǝkǝko wǝ nya ótsya mǝ efimbi, efimbi mfó.
+      sbs: 0.7514
+      gen_sec: 5.29
+      ref_sec: 4.82
+      cer: 0.1163
+      wer: 0.3
+    bible_00078:
+      source: bible
+      text: Fɛɛ lǝ biǝnyǝ kanyi lǝ mi bafokanɔfɔ esoo, biǝntǝ lǝ ɛlɛ mi kofani. Bomu bǝsɔ Onanto ani bǝ
+        Kristo eto diye teke fǝ lǝ ǝsuǝ.
+      sbs: 0.7523
+      gen_sec: 12.12
+      ref_sec: 13.2
+      cer: 0.134
+      wer: 0.4
+    bible_00079:
+      source: bible
+      text: “Nyasoo, nyi miǝ mimba kenke lɛnɔ mɔ asatete itsyi lǝ Onanto eto sekakedikɔ ǝsuǝǝ, ensie embotsya
+        ku mɛ bio.
+      sbs: 0.7438
+      gen_sec: 10.5
+      ref_sec: 9.44
+      cer: 0.1395
+      wer: 0.5263
+    bible_00080:
+      source: bible
+      text: Nya wuunyǝ mba diyifole saa lǝmbǝ lǝ ǝsuǝ kaminsǝ.
+      sbs: 0.6669
+      gen_sec: 5.03
+      ref_sec: 3.52
+      cer: 0.2195
+      wer: 0.4444
+    bible_00081:
+      source: bible
+      text: Lǝ nyaso se Yosef lésanklii, ókpa Maria, úyifo wǝ usiǝ fe kase Onanto eto ɔtɔnkpe ǝmǝ lɛtɛyi
+        wǝ.
+      sbs: 0.7223
+      gen_sec: 9.56
+      ref_sec: 9.18
+      cer: 0.1053
+      wer: 0.3333
+    bible_00082:
+      source: bible
+      text: Utidi ɔni tsya nkǝ, “Bonamute, muutǝkǝko fǝ. Fɛɛ tǝ mɛ kusu lǝ nsu nkla mɔ betidi fɛ.”
+      sbs: 0.6914
+      gen_sec: 8.11
+      ref_sec: 8.16
+      cer: 0.0781
+      wer: 0.2353
+    bible_00083:
+      source: bible
+      text: Lǝ eyi nyamfó ǝsuǝ, bafokanɔfɔ ba eto leklabi lídi fe kolofa awosi ǝnuǝ ákatsya kato ola.
+      sbs: 0.7239
+      gen_sec: 8.79
+      ref_sec: 9.3
+      cer: 0.0972
+      wer: 0.375
+    bible_00084:
+      source: bible
+      text: Nyamfo eto kamaa, bisu bimuǝ lenantsyuikpɔ nǝ nkpe ayinkua lǝ belo ni. Nya bitǝ lǝ budi bunye
+        disuǝyuǝ.
+      sbs: 0.7505
+      gen_sec: 10.24
+      ref_sec: 9.82
+      cer: 0.0482
+      wer: 0.2778
+    bible_00085:
+      source: bible
+      text: Lesa nǝ faala fǝ beyifo bǝtǝ fǝǝ, ni ke ele bǝ fintsya yifo ǝtǝ betidi nɛ.
+      sbs: 0.7355
+      gen_sec: 7.0
+      ref_sec: 5.46
+      cer: 0.2281
+      wer: 0.5
+    bible_00086:
+      source: bible
+      text: Yesu átɛyi mǝ nkǝ, “Inni utsyuǝ saa loofo asatete nyamfo bofo nko, enso mba Onanto dítǝ nnya
+        nko hã.
+      sbs: 0.7779
+      gen_sec: 9.81
+      ref_sec: 10.28
+      cer: 0.0897
+      wer: 0.2105
+    bible_00087:
+      source: bible
+      text: Lamfolamfo báyani mǝ asabu bǝtsyǝ nya bátaka bǝtǝkǝko wǝ.
+      sbs: 0.6456
+      gen_sec: 5.8
+      ref_sec: 4.44
+      cer: 0.25
+      wer: 0.8889
+    bible_00088:
+      source: bible
+      text: Lǝ nyamfo esoo, bɔ́tɛyi Tito wǝ dítsyǝ keyifo kamfo kasɔ lǝ mi nti boǝ, úsukosǝ lǝ ɔwunsǝko
+        mi lǝ belosǝ lelabi eto keyifo kamfo.
+      sbs: 0.7261
+      gen_sec: 12.63
+      ref_sec: 10.98
+      cer: 0.0686
+      wer: 0.25
+    bible_00089:
+      source: bible
+      text: Bélo utidi wǝ lǝǝtǝ betidi nkpǝ. Nya Onanto dísinkli ótakasǝ wǝ utsyiko ɔkɔmǝ! Nya bo kosate
+        dínyǝ wǝ ku bo ǝnǝmi!
+      sbs: 0.7698
+      gen_sec: 11.26
+      ref_sec: 9.28
+      cer: 0.0659
+      wer: 0.2857
+    bible_00090:
+      source: bible
+      text: “Nlɛ mi bɔtɛyi minkǝ, lǝ bala lɛwɔnɔ bua bǝlǝkǝ lǝ utidi ǝsuǝǝ, diesukayɛ nlebe nlebe bo lekoe
+        kabɛbɛ kasɔnɔkɔ. Nya lǝ diǝnnyǝ kedufǝkɔ saa,
+      sbs: 0.7666
+      gen_sec: 14.08
+      ref_sec: 13.74
+      cer: 0.125
+      wer: 0.375
+    bible_00091:
+      source: bible
+      text: Utidi wǝ laatɛyi bele bele bia eto kasɔ betidi laanɔɔ, wǝ ǝsuǝ ete waawunsǝko. Fɛɛ utidi wǝ
+        lǝtǝkǝ Onanto eto ditiki kɛnyɛ, waawunsǝko bafokanɔfɔ eto ditsyukpǝnǝ kenke.
+      sbs: 0.7106
+      gen_sec: 17.32
+      ref_sec: 14.18
+      cer: 0.1377
+      wer: 0.3333
+    bible_00092:
+      source: bible
+      text: Se Yesu lɛbɔ lǝ Disumuyo mfo ɔntɔɔ, wǝ bakasebi ǝbǝ wǝ ɔflɔ bǝ baaté wǝ kase báto Disumuyo
+        nǝmǝ ku ke ayo kenke.
+      sbs: 0.7493
+      gen_sec: 10.92
+      ref_sec: 11.78
+      cer: 0.1136
+      wer: 0.3043
+    bible_00093:
+      source: bible
+      text: Nyaso lefe nǝ Petro dísinkli úsu Yerusalem eto umǝǝ, Yudafɔ eto bafokanɔfɔ ba lɛkɛ mfóo, mántɔnɔ
+        ko wǝ. Nya bátɔ wǝ bǝnkǝ,
+      sbs: 0.7503
+      gen_sec: 12.2
+      ref_sec: 10.96
+      cer: 0.0309
+      wer: 0.0909
+    bible_00094:
+      source: bible
+      text: ku mba lenni Yudafɔ kenke ba mínkpadi minkǝ bedi mɔ betidi
+      sbs: 0.7109
+      gen_sec: 5.8
+      ref_sec: 5.36
+      cer: 0.5208
+      wer: 0.8182
+    bible_00095:
+      source: bible
+      text: Nya keyifo saa biuyifoo, biyifo ke ku kafo faa fe Bonamute bɛnlɛ ke buyifo kǝtǝ inni utidinini
+        saa.
+      sbs: 0.7237
+      gen_sec: 9.9
+      ref_sec: 9.28
+      cer: 0.1375
+      wer: 0.4444
+    bible_00096:
+      source: bible
+      text: Idu lǝ fǝ sikpefi lefe kee, áte Kukue Kɛnkɛ eto Awɔnisa eto etiki nya díbǝ yɛwunsǝko fǝ fafiani
+        obesibe, lǝ nyaso bofokǝtǝ ɛyɛ lǝ Kristo ǝsuǝ fánɔ.
+      sbs: 0.7399
+      gen_sec: 14.68
+      ref_sec: 13.58
+      cer: 0.1271
+      wer: 0.4074
+    bible_00097:
+      source: bible
+      text: Lǝ lefe nǝmfóo, betidi bǝtsyuǝ ákɛ mfó ba lɛtɛyi Yesu kase Pilato lélo Galileafɔ bǝtsyuǝ lǝ
+        lefe nǝ bǝkǝtǝ Onanto kedi.
+      sbs: 0.7516
+      gen_sec: 11.78
+      ref_sec: 12.04
+      cer: 0.0928
+      wer: 0.1905
+    bible_00098:
+      source: bible
+      text: Inni Beelsebul bomuu, Onanto eto Lɛwɔnɔ ni lǝǝtǝ mɛ ǝsuǝale bǝ nla awɔnɔ bua lǝ betidi ǝsuǝ.
+        Nyamfo lɛ bote bǝ Onanto eto Sekadidi ébutsyǝ kasɔ lǝ mi nti koko.
+      sbs: 0.733
+      gen_sec: 15.87
+      ref_sec: 13.82
+      cer: 0.0551
+      wer: 0.2
+    bible_00099:
+      source: bible
+      text: Nya se mínte sikpi esoo, mfi fǝ atabi nyamǝ nya mínku dibiǝ mímfi nnya mínkpe. Nyaso nyǝ fǝ
+        atabi ni nyamfo.’
+      sbs: 0.7728
+      gen_sec: 10.67
+      ref_sec: 9.56
+      cer: 0.1294
+      wer: 0.381
+    bible_00100:
+      source: bible
+      text: Eyibibi nyamǝ eto ǝtsyuǝ álo ékpo lǝ biyu nti. Nya se íkee, biyu biamǝ áto íti nnya.
+      sbs: 0.7153
+      gen_sec: 8.11
+      ref_sec: 8.6
+      cer: 0.1692
+      wer: 0.7059
+    bible_00101:
+      source: bible
+      text: Mfó Onanto eto ɔtɔnkpe utsyuǝ wǝ díńyǝ lǝ kaka ɔnlɛ elufui botonsǝ eto sediani dílǝkǝ ǝsuǝ
+        óte wǝ.
+      sbs: 0.7284
+      gen_sec: 9.64
+      ref_sec: 9.24
+      cer: 0.1625
+      wer: 0.3889
+    bible_00102:
+      source: bible
+      text: Inni bo dímansini bo akɔɛsi bútǝ mi! Mi, bomu, dímansini mi akɔɛsi bítǝ bo.
+      sbs: 0.6798
+      gen_sec: 7.51
+      ref_sec: 6.1
+      cer: 0.2241
+      wer: 0.6429
+    bible_00103:
+      source: bible
+      text: Nya lǝ bulǝkǝkate bomǝ ǝsuǝǝ, únyǝ osani utsyuǝ wǝ baakpo Ananias wǝ díbǝ úfi ani útǝkǝ wǝ
+        lǝ disi itǝ bǝ usinkli nyǝ asa.”
+      sbs: 0.7246
+      gen_sec: 11.86
+      ref_sec: 12.0
+      cer: 0.0412
+      wer: 0.0833
+    bible_00104:
+      source: bible
+      text: wǝ eto anto ni Yosua wǝ eto anto ni Elieser
+      sbs: 0.6949
+      gen_sec: 4.1
+      ref_sec: 4.52
+      cer: 0.0882
+      wer: 0.6
+    bible_00105:
+      source: bible
+      text: Disuǝyuǝ itǝ utidi wǝ dímǝnnyǝ kabua lǝ mɛ ǝsuǝ.”
+      sbs: 0.7076
+      gen_sec: 4.78
+      ref_sec: 4.34
+      cer: 0.2564
+      wer: 0.6667
+    bible_00106:
+      source: bible
+      text: Mfó ɔ́tɛyi wǝ nkǝ, “Lǝ Onanto Kosate eto Ubi fenii, sa ǝbǝ ǝńyǝ lǝ kasɔ. Itsyise Awɔnisa Kɛnkɛ
+        eto Kukue lɛ bɔtɛyi nkǝ,
+      sbs: 0.6633
+      gen_sec: 11.35
+      ref_sec: 10.02
+      cer: 0.1209
+      wer: 0.3043
+    bible_00107:
+      source: bible
+      text: Edi ásini, nya Onanto eto betidi kɛnkɛ kpǝ ba díkekpǝ létaka bǝbǝ nkpǝ.
+      sbs: 0.6971
+      gen_sec: 7.08
+      ref_sec: 7.36
+      cer: 0.2456
+      wer: 0.6154
+    bible_00108:
+      source: bible
+      text: wǝ eto anto ni Aminadab wǝ eto anto ni Admin
+      sbs: 0.7023
+      gen_sec: 4.18
+      ref_sec: 4.46
+      cer: 0.3429
+      wer: 0.5
+    bible_00109:
+      source: bible
+      text: Kase faaklá asa yeeyi kaba kakpo kǝtǝ utidii, nko ke eto okle Onanto looklá utǝ fintsya nɛ!
+      sbs: 0.7661
+      gen_sec: 8.96
+      ref_sec: 9.06
+      cer: 0.1507
+      wer: 0.4706
+    bible_00110:
+      source: bible
+      text: Fɛɛ nwǝ Onanto létakasǝ utsyiko ɔkɔmǝǝ, wǝ ǝsuǝ eto sinǝ mémbú lǝ kudi kafo.
+      sbs: 0.7076
+      gen_sec: 7.51
+      ref_sec: 6.48
+      cer: 0.1311
+      wer: 0.2857
+    bible_00111:
+      source: bible
+      text: Nkpɔ bɔkpɔ sɛɛ nya mínlosǝ mɔ keyifo fe nwǝ leetsyetsyi etsyi sɛɛ. Nya minlɛ mɔ bofokanɔ lǝ
+        Kristo ǝsuǝ isu ese lǝ kalosǝkɔ.
+      sbs: 0.7645
+      gen_sec: 11.95
+      ref_sec: 11.58
+      cer: 0.11
+      wer: 0.3913
+    bible_00112:
+      source: bible
+      text: Betidi bamfo eyifo fe etubiǝ nnya lensianyifǝ ntu, fe asɔmiloku nnya ufiebi lekpa ɔnyɛko.
+        Onanto ébu kǝsiǝkɔ utsyǝ mbamfo eto okle lǝ ketuntu tũũ kǝmiǝ.
+      sbs: 0.7334
+      gen_sec: 15.62
+      ref_sec: 13.78
+      cer: 0.112
+      wer: 0.6
+    bible_00113:
+      source: bible
+      text: Mánsɛsǝ ǝnǝmi lǝ kuutsyuǝ saa eto sika sia nye sika flubia nye bikǝlɛlɛ ǝsuǝ.
+      sbs: 0.6965
+      gen_sec: 7.59
+      ref_sec: 7.2
+      cer: 0.1905
+      wer: 0.6429
+    bible_00114:
+      source: bible
+      text: Wǝ etiki nnya ɔnlɛ ditsya bobe ni nkǝ, “Utidi wǝ ntǝkǝ mɛ kama ɔnlɛ bubǝǝ, so mɛ famfamfa
+        nya yǝńyǝ itǝ bǝ ńyǝ lǝ wǝ kɛnyɛ nyifo wǝ keyifo blɛmblɛ.
+      sbs: 0.7238
+      gen_sec: 14.08
+      ref_sec: 12.78
+      cer: 0.1404
+      wer: 0.3667
+    bible_00115:
+      source: bible
+      text: Fɛɛ se betidi kpǝ leefi kawunsiǝ kamfo eto asa kabesǝ ǝsuǝ kato esoo, bitǝ lǝ mintsya lǝ mbesǝ
+        ǝsuǝ kato sɛkɛ.
+      sbs: 0.7312
+      gen_sec: 10.75
+      ref_sec: 8.8
+      cer: 0.0455
+      wer: 0.1429
+    bible_00116:
+      source: bible
+      text: Bɔtɛyi minlɛ nyamfo nko se manla mi eso lee? Onanto kosate yi nkǝ maala mi.
+      sbs: 0.6752
+      gen_sec: 7.34
+      ref_sec: 5.96
+      cer: 0.0169
+      wer: 0.0667
+    bible_00117:
+      source: bible
+      text: Nya awu nnya Yohanes lékpee, ɔtɔmini ku lekoko eto bise béfi bédi nnya. Nya úfi kubukikue
+        eto abɔsu ókle nkɛ. Nya wǝ didisa dídi bekpǝsǝ ku bablɔ.
+      sbs: 0.7069
+      gen_sec: 14.51
+      ref_sec: 13.98
+      cer: 0.1293
+      wer: 0.4815
+    bible_00118:
+      source: bible
+      text: Nya nlɛ fǝ butǝ bote minkǝ ebɔkɛ mfó isu ese lefe nǝ fafó fǝ kotonǝnǝ eto kayo kenke falosǝ.”
+      sbs: 0.7147
+      gen_sec: 8.96
+      ref_sec: 10.28
+      cer: 0.2055
+      wer: 0.4737
+    bible_00119:
+      source: bible
+      text: Se údu ɔntɔɔ, Paulo áyɛ lǝ kǝmǝ ka nkpe lǝ lekpake nǝmfó kenke nya údi mǝ etiki kpǝ úfi ókpe
+        mǝ nkɛale fɛ úsu údufǝ Akaia.
+      sbs: 0.7423
+      gen_sec: 11.78
+      ref_sec: 12.66
+      cer: 0.1263
+      wer: 0.3846
+    bible_00120:
+      source: bible
+      text: Nya woanhiã bǝ udi kulesa itsyi lǝ betidi eto ani ɛyɛ lǝ mǝ keyifo tsya ǝsuǝ, itsyise wǝ kosate
+        ni futsyǝ lǝǝtǝ utsyuǝ saa nkpǝ ku lesa saa nǝ baahiã.
+      sbs: 0.753
+      gen_sec: 14.25
+      ref_sec: 14.18
+      cer: 0.0672
+      wer: 0.2
+    bible_00121:
+      source: bible
+      text: Bitǝ bɔsɔ Onanto ani lǝ wǝ ditǝsa nǝ boebofo bɔtɛyi nǝ úfi útǝ bo eso.
+      sbs: 0.7057
+      gen_sec: 6.74
+      ref_sec: 8.26
+      cer: 0.2182
+      wer: 0.6
+    bible_00122:
+      source: bible
+      text: Inni nte betidi bamfo díkpǝ fe kase bǝtsyuǝ díbu seka, itsyise olesiǝ eto abombo ɔwɔnɔmbǝ
+        ete ni nyamfo nɛ.
+      sbs: 0.7299
+      gen_sec: 10.5
+      ref_sec: 9.18
+      cer: 0.0345
+      wer: 0.2632
+    bible_00123:
+      source: bible
+      text: Mfó ǝmǝ nya bakasebi bamǝ lɛtɔ Yesu bǝnkǝ, “Bonamute, lǝ sie?”
+      sbs: 0.7177
+      gen_sec: 6.06
+      ref_sec: 6.24
+      cer: 0.0426
+      wer: 0.2727
+    bible_00124:
+      source: bible
+      text: Onanto ǝlǝkǝ Lot wǝ ni utidi sɛɛ, nwǝ betidi bamfó eto nkpǝ bua siǝsiǝ díkelǝ lǝ lɛkɔɛsi.
+      sbs: 0.749
+      gen_sec: 8.79
+      ref_sec: 7.94
+      cer: 0.1831
+      wer: 0.4118
+    bible_00125:
+      source: bible
+      text: Fɛɛ lǝ biemfi mi bǝtsyuǝ eto botakebu bɛtsyɛ mǝǝ, mi Anto Onanto tsya embufi mi botakebu ɔtsyɛ
+        mi.
+      sbs: 0.7714
+      gen_sec: 9.3
+      ref_sec: 9.66
+      cer: 0.0633
+      wer: 0.1667
+    bible_00126:
+      source: bible
+      text: Lǝ betidi lɛ etikii, baatɛyi bǝnkǝ bǝfiǝ kpe lǝ kato nye kasɔ mfo nya bǝfiǝ akpa akpa bamfo
+        fui ku mǝ banamute kula tsya.
+      sbs: 0.7469
+      gen_sec: 11.78
+      ref_sec: 11.26
+      cer: 0.0938
+      wer: 0.25
+    bible_00127:
+      source: bible
+      text: “Anto ǝmfo ni Bonamute wǝ diyifo kawunsiǝ, kato ku kasɔ ku asa nnya kenke nkpe lǝ ke. Nya
+        woǝnsiǝ kpoo lǝ disumuyo fe nǝ kasɔ mfo eto betidi dífi mǝ ani báto.
+      sbs: 0.6875
+      gen_sec: 15.44
+      ref_sec: 14.44
+      cer: 0.1057
+      wer: 0.2812
+    bible_00128:
+      source: bible
+      text: Mfó ǝmǝ nya osani utsyuǝ léfa ɔ́tɛyi nkǝ, “Oteasa! Nlɛ fǝ lekpakpa, be mɔ ubi ǝmfo! Wǝ ete
+        ni mɔ ubi nɛ!
+      sbs: 0.6835
+      gen_sec: 9.64
+      ref_sec: 10.1
+      cer: 0.0921
+      wer: 0.3182
+    bible_00129:
+      source: bible
+      text: Utidi saa wǝ lǝǝbǝ mɛ ɔflɔ nya wǝǝbǝ nkǝ wǝǝbǝ ɔnɔ lesa nǝ maatɛyi nya weeyifo lǝ nnya ǝsuǝǝ,
+        moote mi futsyǝ eto okle uni.
+      sbs: 0.7484
+      gen_sec: 11.86
+      ref_sec: 12.58
+      cer: 0.1031
+      wer: 0.36
+    bible_00130:
+      source: bible
+      text: Yǝntǝ mǝ kusu bǝ nkabesǝ ǝsuǝ kato bǝ maabe ditiki sɛɛ nǝmǝ letsya eso. Boanto Onanto ebunǝ
+        mɛ koto lǝ mambe Ditiki Sɛɛ nǝmǝ letsya ntǝ betidi!
+      sbs: 0.7502
+      gen_sec: 13.91
+      ref_sec: 12.56
+      cer: 0.0435
+      wer: 0.2593
+    bible_00131:
+      source: bible
+      text: Onanto ni adansiɛ lǝ mɔ ku mi nti nkǝ kaminsǝ mínyǝ mi eso mínnyɛ Korinto busu nɛ.
+      sbs: 0.6921
+      gen_sec: 7.94
+      ref_sec: 8.58
+      cer: 0.0769
+      wer: 0.1765
+    bible_00132:
+      source: bible
+      text: Itsyise Onanto aala nkǝ biti mba ini ebukitiki ete beedi eto nyɛ lǝ asa sɛɛ nya bieyifo eso.
+      sbs: 0.7292
+      gen_sec: 8.96
+      ref_sec: 9.08
+      cer: 0.0946
+      wer: 0.2222
+    bible_00133:
+      source: bible
+      text: bɔ́lɛ bo ǝsuǝ fe kase ubiambe laabe wǝ bebi ku lefonǝ.
+      sbs: 0.6698
+      gen_sec: 5.21
+      ref_sec: 4.62
+      cer: 0.2381
+      wer: 0.5455
+    bible_00134:
+      source: bible
+      text: Nya mɔmɔɔ, beso biato Onanto kabe mmǝ? Bo ku bo banamǝ mámfo bikǝ bia nkpe kalende butsyi!
+        Beso bɔnlɛ mi bufi ketsyisǝ bafokanɔfɔ mfo?
+      sbs: 0.7647
+      gen_sec: 13.23
+      ref_sec: 12.76
+      cer: 0.0935
+      wer: 0.4167
+    bible_00135:
+      source: bible
+      text: Fɛɛ Petro átɛyi wǝ nkǝ, “Taka ǝńyǝ! Mintsya utidi ǝtǝ mini.”
+      sbs: 0.7398
+      gen_sec: 5.63
+      ref_sec: 5.5
+      cer: 0.1111
+      wer: 0.3636
+    bible_00136:
+      source: bible
+      text: Nya betidi ba lǝǝsiǝ nkpǝ buaa, lǝkǝ mǝ até lǝ mǝ bǝtsyuǝ nti lǝ ǝkǝ mǝ ato lǝ bafokanɔfɔ
+        kenke eto ǝnǝmi. Nyamfo luutǝ bafɛfɛ te sikpi nɛ.
+      sbs: 0.7413
+      gen_sec: 13.4
+      ref_sec: 12.42
+      cer: 0.055
+      wer: 0.1429
+    bible_00137:
+      source: bible
+      text: Lǝ nyaso mba laase bakplako bamǝ étsyetsyi besu umǝ. Bátɛyi lesa saa nǝ díbǝ lǝ bakplako bamǝ
+        ku betidi ba awɔnɔ bua disiǝ lǝ ǝsuǝ ǝsuǝ.
+      sbs: 0.7468
+      gen_sec: 13.23
+      ref_sec: 13.08
+      cer: 0.0459
+      wer: 0.1923
+    bible_00138:
+      source: bible
+      text: Nlɛ mi bɔtɛyi minkǝ idu mɔmɔ ɛntɔɔ, mensiembunǝ ntu bo lɛbɔ itsyi lǝ wanyi eto awɔnsa ǝsuǝ
+        isu ese lefe nǝ Onanto eto sekadidi luubǝ.”
+      sbs: 0.7419
+      gen_sec: 13.06
+      ref_sec: 13.5
+      cer: 0.1215
+      wer: 0.36
+    bible_00139:
+      source: bible
+      text: Se Moses lɛ́nɔ ditiki nǝmfoo, útsyetsyi úsu ɔ́biɔ lǝ Midia eto kasɔ fe ɔfɔ. Nya mfó óle bebisaibi
+        inuǝ.
+      sbs: 0.7495
+      gen_sec: 9.81
+      ref_sec: 9.58
+      cer: 0.075
+      wer: 0.2105
+    bible_00140:
+      source: bible
+      text: Itsyise fe kase bále boo, bóanlɛ kulesa boboko kawunsiǝ. Nya lǝ bukpe tsyaa, boǝmbufi kulesa
+        busuko.
+      sbs: 0.757
+      gen_sec: 10.07
+      ref_sec: 8.82
+      cer: 0.0864
+      wer: 0.375
+    bible_00141:
+      source: bible
+      text: “Bɛnɔ bátɛyi bǝnkǝ, ‘Yanle bǝ bǝsǝ ku bǝsiǝ fe bǝtsyuǝ kama.’
+      sbs: 0.7082
+      gen_sec: 5.63
+      ref_sec: 5.44
+      cer: 0.1957
+      wer: 0.4545
+    bible_00142:
+      source: bible
+      text: Bekloma biǝ utidi wǝ laato asa sɛkɛɛ, sɛkɛ ete wuufǝsǝ. Nya nwǝ laato asa kpǝǝ, nko ke wuufǝsǝ
+        asa kpǝ tsya nɛ.
+      sbs: 0.7282
+      gen_sec: 10.75
+      ref_sec: 9.36
+      cer: 0.1512
+      wer: 0.4091
+    bible_00143:
+      source: bible
+      text: Lǝ nyaso muutǝ bǝmuǝ mi besuko kasɔ fãã lǝ Babilonia eto kama bisu bɛkɛ mfo.’
+      sbs: 0.7136
+      gen_sec: 7.77
+      ref_sec: 6.9
+      cer: 0.1148
+      wer: 0.2
+    bible_00144:
+      source: bible
+      text: Fɛɛ lǝ efe bǝ nyǝ kanyi lǝ kasɛɛ ka feyifo eto disi esoo, nyǝ disuǝyuǝ lǝ nnya ǝsuǝ. Biante
+        mǝ sikpi, nya biǝntǝ kulesa lǝ ilǝ mi.
+      sbs: 0.7387
+      gen_sec: 12.63
+      ref_sec: 13.18
+      cer: 0.08
+      wer: 0.2963
+    bible_00145:
+      source: bible
+      text: Se sitiditu siamǝ lɛnɔ asa yamfoo, íyifo mǝ yanii, lǝ wǝ asatete ǝsuǝ.
+      sbs: 0.7213
+      gen_sec: 7.0
+      ref_sec: 6.68
+      cer: 0.0727
+      wer: 0.6923
+    bible_00146:
+      source: bible
+      text: Hezron léle Aram, nya wuntsya léle Aminadab.
+      sbs: 0.6775
+      gen_sec: 4.44
+      ref_sec: 4.08
+      cer: 0.1111
+      wer: 0.8571
+    bible_00147:
+      source: bible
+      text: “Mi betidi bua, biyifo fe bawa eto bebi eto bebi! Bibu biǝ biofo butsyetsyi kedu lǝ Onanto
+        eto kotonǝnǝ lǝ ditefɛnku manlo ǝsuǝ?
+      sbs: 0.7481
+      gen_sec: 12.46
+      ref_sec: 10.64
+      cer: 0.0392
+      wer: 0.1739
+    bible_00148:
+      source: bible
+      text: Nya se biensiankɔ ani ku mǝ keyifo mǝ eyifosa kpǝ nnya lǝmbǝ kasɔnɔnɔ esoo, yeeyifo mǝ yanii
+        nya baaka mi.
+      sbs: 0.7644
+      gen_sec: 10.5
+      ref_sec: 11.16
+      cer: 0.0471
+      wer: 0.2
+    bible_00149:
+      source: bible
+      text: “Mi ditsyukpa kɛkɛ nǝ ntǝkǝko mɛ, biante sikpi. Itsyise iyifo Onanto eto lelabi bǝ utǝ mi
+        kǝsiǝkɔ lǝ wǝ sekakedikɔ.
+      sbs: 0.774
+      gen_sec: 11.26
+      ref_sec: 10.42
+      cer: 0.0652
+      wer: 0.25
+    bible_00150:
+      source: bible
+      text: Kristo eto lelabi nǝ onkpe itǝ bo eyi bo ǝsuǝ. Nya se ekpako bo boǝ utidi ɔni ete díkpǝ lǝ
+        betidi ba kenke eto disi esoo, nyamfo lɛ bote bǝ bomblɛ díkpǝ.
+      sbs: 0.765
+      gen_sec: 14.76
+      ref_sec: 12.7
+      cer: 0.0756
+      wer: 0.2188
+    bible_00151:
+      source: bible
+      text: Yakob wǝ léle Yosef wǝ dífi Maria wǝ léle Yesu wǝ baakpo Nwǝ Onanto Lékpo Ɔhile Utsyǝ.
+      sbs: 0.7395
+      gen_sec: 8.36
+      ref_sec: 9.56
+      cer: 0.087
+      wer: 0.2941
+    bible_00152:
+      source: bible
+      text: “Onanto eto sekakedikɔ te fe mmǝ. Lefe lɔnii, Oka utsyuǝ édi kusiǝkpakpa eto diyisɛɛ útǝ wǝ
+        ubisaibi.
+      sbs: 0.7833
+      gen_sec: 10.07
+      ref_sec: 9.36
+      cer: 0.1111
+      wer: 0.5882
+    bible_00153:
+      source: bible
+      text: Lǝ biyi biǝ Kristo eyifo ɔsɛɛ, ele bǝ befo bɛnɔ biǝ utsyuǝ saa wǝ leeyifo asa lǝ kusu sɛɛ
+        ǝsuǝ, eyifo Onanto eto ubi.
+      sbs: 0.738
+      gen_sec: 11.26
+      ref_sec: 11.52
+      cer: 0.0879
+      wer: 0.1667
+    bible_00154:
+      source: bible
+      text: ‘Bonamute átɛyi mɔ Onamute nkǝ,
+      sbs: 0.6654
+      gen_sec: 3.16
+      ref_sec: 3.44
+      cer: 0.92
+      wer: 2.8
+    bible_00155:
+      source: bible
+      text: Bóla boǝ lǝ busi bubǝ bunyǝ mi. Nya mɔ, Paulo, kosatee, nyɛ esu saa nya moofo bǝ lǝ mfo bubǝ.
+        Fɛɛ obuale ǝmǝ mǝntǝ kusu.
+      sbs: 0.7581
+      gen_sec: 11.61
+      ref_sec: 11.5
+      cer: 0.1333
+      wer: 0.32
+    bible_00156:
+      source: bible
+      text: Mfó nya Petro lɛtɛyi nkǝ, “Bonamute, lǝ fǝ uni sitintii, tǝ lǝ nyɛ lǝ ntu ǝsuǝ mbǝ ntu fǝ.”
+      sbs: 0.7189
+      gen_sec: 8.62
+      ref_sec: 8.18
+      cer: 0.0299
+      wer: 0.1579
+    bible_00157:
+      source: bible
+      text: Mfó Yesu dítǝ mǝ mbuayɛ ɔ́tɔ mǝ nkǝ, “Bíankla lesa nǝ Oka David díyifo lǝ lefe nǝ kukpɛnsɛ
+        lɛlɛ wǝ ku wǝ betidi?
+      sbs: 0.7221
+      gen_sec: 10.67
+      ref_sec: 9.98
+      cer: 0.0465
+      wer: 0.2609
+    bible_00158:
+      source: bible
+      text: Yesu ǝtsyǝ lefosi betidi inuǝ bamfo kusu nya ótsyese mǝ nya úkǝ mǝ ato nkǝ, “Biensu betidi
+        ba lenni Yudafɔ eto kasɔ nye bidufǝ Samariafɔ eto umǝ saa tsya kafo.
+      sbs: 0.7488
+      gen_sec: 15.44
+      ref_sec: 14.68
+      cer: 0.0709
+      wer: 0.2
+    bible_00159:
+      source: bible
+      text: Lǝ kokpa átɛyi nkǝ, “Se minni kɔni esoo, mǝmbɔkɔ ku ǝsuǝ eto sinǝ siamǝ,” nyamfo anlɛ bote
+        sitinti nkǝ kuni ǝsuǝ eto sinǝ eto lekpa ditsyuǝ.
+      sbs: 0.7502
+      gen_sec: 13.57
+      ref_sec: 13.28
+      cer: 0.0826
+      wer: 0.3077
+    bible_00160:
+      source: bible
+      text: “Ɔkuɛmfo eto beyifoyifo bamfo ǝmuǝ wǝ ndomufɔ bamfo nya báblɛ ɔni, bálo ɔni, nya bákpɔ ɔni
+        tsya aba.
+      sbs: 0.765
+      gen_sec: 9.81
+      ref_sec: 9.96
+      cer: 0.1392
+      wer: 0.4444
+    bible_00161:
+      source: bible
+      text: nya mi bakosobi luunyǝ Onanto eto asakulakula,
+      sbs: 0.7043
+      gen_sec: 4.78
+      ref_sec: 3.9
+      cer: 0.3333
+      wer: 0.8571
+    bible_00162:
+      source: bible
+      text: Kase mínyǝ fǝ kaminsǝǝ, nko ke ele bǝ eni fintsya nyǝ fǝ ɔyimitsyuǝ uyifoyifo kaminsǝ nɛ.’
+      sbs: 0.7648
+      gen_sec: 8.7
+      ref_sec: 7.34
+      cer: 0.1528
+      wer: 0.5
+    bible_00163:
+      source: bible
+      text: Itsyise mimblɛ kenke kpe lǝ diyǝnde ǝsuǝ. Nya buunte fe betidi ba leefi mǝ ǝsuǝ kakpe lǝ abua
+        ǝsuǝ keyifo asa kakula.
+      sbs: 0.7469
+      gen_sec: 11.52
+      ref_sec: 9.52
+      cer: 0.0745
+      wer: 0.2727
+    bible_00164:
+      source: bible
+      text: Se bámfo bánɔ esoo, Yesu ményifo ayanisa kpǝ lǝ mǝ nti.
+      sbs: 0.6806
+      gen_sec: 5.46
+      ref_sec: 7.2
+      cer: 0.2093
+      wer: 0.9091
+    bible_00165:
+      source: bible
+      text: Yanle bǝ bikabesǝ ǝsuǝ kato. Binyi biǝ ǝyǝnkisǝsa sɛkɛ ete laatsyakasǝ ku nnamfo bo banwɔ
+        nnya lǝǝtǝ boataka kabe kato?
+      sbs: 0.7434
+      gen_sec: 11.95
+      ref_sec: 12.2
+      cer: 0.1837
+      wer: 0.5
+    bible_00166:
+      source: bible
+      text: Yesu átɔ mǝ nkǝ, “Nya beso biani nya bienyifo lǝ Onanto eto afí ǝsuǝ fɛ biǝtǝkǝko mi batekoko,
+        banakoko eto asatete kama?
+      sbs: 0.78
+      gen_sec: 11.95
+      ref_sec: 12.56
+      cer: 0.0938
+      wer: 0.4091
+    bible_00167:
+      source: bible
+      text: Nya lǝ utidi ǝmǝ áni ditiki nǝmfoo, ele bǝ mi tsya ni wǝ.
+      sbs: 0.6771
+      gen_sec: 5.29
+      ref_sec: 4.32
+      cer: 0.1163
+      wer: 0.2308
+    bible_00168:
+      source: bible
+      text: Lamfolamfo lɛtɔntɔ eti Elima lǝ ǝnǝmi, nya wénsifo asa bunyǝ bio. Úkawunya ani kabɛbɛ utidi
+        nkǝ lǝ ɔyɛnko wǝ.
+      sbs: 0.7599
+      gen_sec: 11.01
+      ref_sec: 11.44
+      cer: 0.1023
+      wer: 0.3684
+    bible_00169:
+      source: bible
+      text: Nyaso mǝ beninǝ ku batɔnkpe bamǝ átsya fe ditsyukpa nya bédufǝ lǝ ditiki nǝmfo ǝsuǝ.
+      sbs: 0.7384
+      gen_sec: 8.19
+      ref_sec: 6.86
+      cer: 0.0725
+      wer: 0.2667
+    bible_00170:
+      source: bible
+      text: Se búdu lǝ Tiroo, búnyǝ lǝ Ptolemai. Mfo búsu búsiǝsǝ bafokanɔfɔ ba nkpe mfo, nya búsiǝ lǝ
+        mǝ ɔflɔ diyi lɔni.
+      sbs: 0.7548
+      gen_sec: 10.75
+      ref_sec: 10.62
+      cer: 0.1059
+      wer: 0.381
+    bible_00171:
+      source: bible
+      text: Bitsyǝsuǝ ku mi bǝtsyuǝ, lǝ bifi bɛtsyɛ bǝtsyuǝ lǝ utsyuǝ áta wǝ utsyuǝ ubu. Ele bǝ bifi bɛtsyɛ
+        bǝtsyuǝ fe kase Bonamute dífi ɔtsyɛ mi.
+      sbs: 0.7457
+      gen_sec: 12.37
+      ref_sec: 11.16
+      cer: 0.1019
+      wer: 0.32
+    bible_00172:
+      source: bible
+      text: Lǝ ndomunyǝ feni fɛ Bonamute lékpadi fǝǝ, eyifo Bonamute eto nwǝ nsi lǝ wǝ ǝsuǝ ǝsuǝ. Nya
+        lǝ eyifo nwǝ nsi lǝ fǝ esuǝ ǝsuǝ fɛ Bonamute lékpadi fǝǝ, afiani Bonamute ndomunyǝ.
+      sbs: 0.6717
+      gen_sec: 17.4
+      ref_sec: 14.92
+      cer: 0.1159
+      wer: 0.4062
+    bible_00173:
+      source: bible
+      text: Mɔ, Paulo, ku Silvano ku Timoteo bo lɛwɔni kukue komfo butǝ mi mba ni bo Boanto Onanto ku
+        Banamute Yesu Kristo eto bale lǝ Tesalonika.
+      sbs: 0.7408
+      gen_sec: 13.31
+      ref_sec: 11.7
+      cer: 0.1121
+      wer: 0.4
+    bible_00174:
+      source: bible
+      text: Lǝ utsyuǝ lǝ bɔtɛyi nkǝ, “Nyi wǝ,” fɛɛ woenyifo lǝ wǝ afi ǝsuǝǝ, utsyuǝ ǝmfo eyifo odia. Nya
+        ɔnukualɛ saa ǝmbǝ lǝ wǝ.
+      sbs: 0.7502
+      gen_sec: 11.01
+      ref_sec: 9.66
+      cer: 0.0455
+      wer: 0.1304
+    bible_00175:
+      source: bible
+      text: “Itǝ uyifoyifo ǝmfo áse akonki lǝ oka ǝmǝ ǝnǝmi ɔ́lɛ wǝ lekpakpa ɔ́tɛyi nkǝ, ‘Tsyǝ ǝsuǝ ko
+        mɛ, moofo fǝ kayo kamǝ kenke.’
+      sbs: 0.7581
+      gen_sec: 11.26
+      ref_sec: 11.78
+      cer: 0.0659
+      wer: 0.2609
+    bible_00176:
+      source: bible
+      text: “Mfó otabinyǝ ǝmǝ lɛtɛyi wǝ nkǝ, ‘Anto Abraham, nlɛ fǝ lekpakpa kpe Lasaro lǝ usu mɔ anto
+        eto.
+      sbs: 0.7763
+      gen_sec: 9.05
+      ref_sec: 10.14
+      cer: 0.0417
+      wer: 0.1667
+    bible_00177:
+      source: bible
+      text: Lefe nǝ Oka Herodes lɛnɔ ditiki nǝmfoo, difufu ǝmuǝ wǝ ku betidi ba kenke lɛkɛ lǝ Yerusalem
+        mfó.
+      sbs: 0.6926
+      gen_sec: 9.56
+      ref_sec: 7.42
+      cer: 0.026
+      wer: 0.1111
+    bible_00178:
+      source: bible
+      text: Nya besi báwɔni bátɛyi bǝnkǝ, “Onanto yi nkǝ babesibe eto nsusu bufi manle kulesa saa kon.”
+      sbs: 0.7024
+      gen_sec: 8.96
+      ref_sec: 8.2
+      cer: 0.0556
+      wer: 0.375
+    bible_00179:
+      source: bible
+      text: Fɛɛ lǝ ɔ́ni wǝ ǝsuǝǝ, ele bǝ wǝ mate siǝ nye wǝ ku wǝ usǝ sinkli bǝsiǝ. Nya yanle bǝ osani
+        tsya ni wǝ usiǝ.
+      sbs: 0.701
+      gen_sec: 9.81
+      ref_sec: 8.72
+      cer: 0.0886
+      wer: 0.2
+    bible_00180:
+      source: bible
+      text: Itsyise kawunsiǝ eto betidi eto asa ete baate lǝ mɔ ale eto kɛnyɛ.’ ”
+      sbs: 0.7042
+      gen_sec: 6.4
+      ref_sec: 6.1
+      cer: 0.1509
+      wer: 0.3846
+    bible_00181:
+      source: bible
+      text: “Nyamfo eto kamaa, nsinkli nsu Yerusalem. Nya lefe nǝ mínsu Disumuyo minlɛ ola botoo, íyifo
+        mɛ fe selabe minlɛ, nya mínyǝ bulǝkǝkate butsyuǝ.
+      sbs: 0.7217
+      gen_sec: 14.17
+      ref_sec: 12.34
+      cer: 0.0619
+      wer: 0.3913
+    bible_00182:
+      source: bible
+      text: Nyamfo eto kamaa, utsyuǝ ǝbǝ ɔ́tɛyi mǝ nkǝ, “Betidi ba bímuǝ békpe lǝ diyoo, bebe, nyǝ mǝ
+        ńyǝ lǝ Disumuyo nǝmǝ banlɛ betidi asa botee!”
+      sbs: 0.7577
+      gen_sec: 12.97
+      ref_sec: 11.4
+      cer: 0.1553
+      wer: 0.32
+    bible_00183:
+      source: bible
+      text: Yesu ǝtǝ mbuayɛ nkǝ, “Tutɛɛ, mɔɔtɔ mi ditiki lɔni hã. Nya lǝ bitǝ ni mbuayɛɛ, mɔɔtɛyi mi nwǝ
+        eto ǝsuǝale ǝsuǝ minlɛ asa nyamfo buyifo.
+      sbs: 0.6883
+      gen_sec: 13.31
+      ref_sec: 13.28
+      cer: 0.1154
+      wer: 0.2
+    bible_00184:
+      source: bible
+      text: Se eyibibi nyamǝ lébe itsyiko bɔnwɔɔ, sefa sia olontidi ǝme dísu úse ókpo lǝ ɔkuɛ ǝmǝ tsya
+        étsyiko ǝsuǝ bulǝkǝ kate.
+      sbs: 0.7553
+      gen_sec: 11.26
+      ref_sec: 11.1
+      cer: 0.1596
+      wer: 0.5238
+    bible_00185:
+      source: bible
+      text: Binyi biǝ lesa saa nǝ didufǝ utidi lǝ kɛnyɛ, ayɛ kedufǝ wǝ lǝ kafo, nya weesie ni kabɔsǝ fe
+        ɔflɔ kewi?
+      sbs: 0.7563
+      gen_sec: 9.9
+      ref_sec: 10.22
+      cer: 0.1392
+      wer: 0.381
+    bible_00186:
+      source: bible
+      text: Nya lǝ lelabi itǝ mi bayimitsyuǝ bafokanɔfɔɔ, yensife bǝ bɔwɔni kulesa butǝ mi lǝ nnya ǝsuǝ.
+        Itsyi Onanto ébote mi kase ele bǝ bela mi bǝtsyuǝ koko.
+      sbs: 0.7399
+      gen_sec: 14.42
+      ref_sec: 14.04
+      cer: 0.0924
+      wer: 0.3333
+    bible_00187:
+      source: bible
+      text: Mfó ǝmǝ kɔfi eto oteasa ɔni lǝ mǝ nti átɛyi wǝ nkǝ, “Oteasa, lǝ atɛyi nyamfo nkoo, áka bontsya.”
+      sbs: 0.7584
+      gen_sec: 9.05
+      ref_sec: 9.72
+      cer: 0.0417
+      wer: 0.1579
+    bible_00188:
+      source: bible
+      text: Fɛɛ utidi wǝ laala Onantoo, Onanto yi wǝ.
+      sbs: 0.6753
+      gen_sec: 4.1
+      ref_sec: 3.64
+      cer: 0.0312
+      wer: 0.125
+    bible_00189:
+      source: bible
+      text: Bakplako eto lekpa kplɛ ditsyuǝ ǝńyǝ lǝ mfó ɔflɔ békedi lesa.
+      sbs: 0.7218
+      gen_sec: 6.06
+      ref_sec: 5.76
+      cer: 0.1
+      wer: 0.3636
+    bible_00190:
+      source: bible
+      text: Nya Simon lɛtɛyi nkǝ, “Oteasa, tɛyi mɛ.”
+      sbs: 0.7497
+      gen_sec: 3.84
+      ref_sec: 3.78
+      cer: 0.0345
+      wer: 0.4286
+    bible_00191:
+      source: bible
+      text: Lǝ biyifo nkoo, biunyǝ kusu wuee bidufǝ Bonamute ku Ofomfokǝtǝ Yesu Kristo eto seka kedikɔ
+        manlo siamǝ ǝsuǝ.
+      sbs: 0.7475
+      gen_sec: 11.01
+      ref_sec: 9.28
+      cer: 0.0787
+      wer: 0.2778
+    bible_00192:
+      source: bible
+      text: Nya lǝ mi nti kulaa tsyaa, mi bǝtsyuǝ ébusinkli lǝ Ditiki Sɛɛ nǝmǝ kama bawɛ mi, bákpa betidi
+        kpǝ báyɛnko lǝ mǝ kosate eto bidiabidia eto asatete ǝsuǝ.
+      sbs: 0.7535
+      gen_sec: 14.76
+      ref_sec: 12.28
+      cer: 0.0413
+      wer: 0.1786
+    bible_00193:
+      source: bible
+      text: Wuutǝ bofokǝtǝ eto diyǝnde bǝ itǝ bo itsyi kato.
+      sbs: 0.6993
+      gen_sec: 4.69
+      ref_sec: 4.84
+      cer: 0.2564
+      wer: 0.4444
+    bible_00194:
+      source: bible
+      text: Nya utidi wǝ laatɛyi bele bele, ele bǝ ɔtɔ Onanto lǝ utǝ wǝ ǝtǝsa bǝ lǝ ofo nnya woatɛyi kɛnyɛbulǝkǝ.
+      sbs: 0.7109
+      gen_sec: 9.9
+      ref_sec: 8.18
+      cer: 0.1625
+      wer: 0.45
+    bible_00195:
+      source: bible
+      text: Bomu lǝ nyamfo esoo, binyǝ disuǝnyuǝ bǝ mi tsya lɛ kanyi bunyǝ fe Kristo ke seka, bǝ lǝ ɔbɔ
+        lǝ wǝ diyǝnde ǝsuǝǝ, mi tsya ebofo disuǝnyuǝ bunyǝ kato keyuluu.
+      sbs: 0.7161
+      gen_sec: 15.35
+      ref_sec: 14.8
+      cer: 0.1707
+      wer: 0.2667
+    bible_00196:
+      source: bible
+      text: Bafokanɔfɔ kenke ba nkpe lǝ Listra ku Ikonion, ékebu Timoteo tinti.
+      sbs: 0.7263
+      gen_sec: 6.91
+      ref_sec: 5.7
+      cer: 0.0727
+      wer: 0.4545
+    bible_00197:
+      source: bible
+      text: Se asa nyamfo kenke loobia mmǝǝ, nte betidi ba eto okle ele bǝ bidi? Ele bǝ bisiǝ nkpǝ bo
+        diyifo kɛnkɛ lǝ bifi ǝsuǝ bitǝ Onanto.
+      sbs: 0.7535
+      gen_sec: 12.46
+      ref_sec: 10.76
+      cer: 0.12
+      wer: 0.2692
+    bible_00198:
+      source: bible
+      text: nya mi tsya loofiani mɔ bebisani ku bebisio.
+      sbs: 0.6479
+      gen_sec: 4.35
+      ref_sec: 3.42
+      cer: 0.4722
+      wer: 1.0
+    bible_00199:
+      source: bible
+      text: Nya lefe nǝ batɔnkpe ba lɛkɛ lǝ Yerusalem lɛnɔ bǝ Samariafɔ ébofo Onanto eto Ditiki Sɛɛ nǝmǝ
+        banɔɔ, bákpe Petro ku Yohanes lǝ mǝ ɔflɔ.
+      sbs: 0.7104
+      gen_sec: 13.31
+      ref_sec: 13.08
+      cer: 0.037
+      wer: 0.16
 - model: ghananlpcommunity/ghana-tts-72k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   mode: ref
@@ -17299,4 +19033,4 @@ benchmarks:
       ref_sec: 13.08
       cer: 0.3241
       wer: 0.88
-updated: '2026-10-02'
+updated: '2026-10-09'

@@ -3365,6 +3365,1683 @@ benchmarks:
       ref_sec: 7.14
       cer: 0.0986
       wer: 0.3684
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.705
+  num_scored: 200
+  cer: 0.1472
+  wer: 0.4786
+  accuracy: 0.8528
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.7789
+  score: 0.7789
+  per_source:
+    bible:
+      sbs: 0.705
+      cer: 0.1472
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Ɩnʋ ɔlɛkpa amʋ́ dalɩ yɛfɩtɛ amʋ́ ɔbɛɛ, “Mɩ awie, ntɔ mbwɛ asa Bulu ɔhɔ mɩ nkpa?
+      sbs: 0.7057
+      gen_sec: 5.89
+      ref_sec: 5.38
+      cer: 0.1034
+      wer: 0.375
+    bible_00001:
+      source: bible
+      text: Ɩnʋ Yesu lɛbla amʋ́ ɔbɛɛ, “Mlɩkɩ wanklaan, mɛnɩ ɔhaa mɛ́ɛmlɛ mlɩ.
+      sbs: 0.6994
+      gen_sec: 5.03
+      ref_sec: 5.14
+      cer: 0.0816
+      wer: 0.2727
+    bible_00002:
+      source: bible
+      text: Mʋ́ sʋ bɛkɩ ansɩ lɛ ɔklʋn kusubi amʋ dɩnka ɔpʋ amʋsʋ hɩɛɛ, fɛ simpi amʋ bʋdɛpʋsian ɔklʋn amʋ
+        ɔnɔsʋ.
+      sbs: 0.698
+      gen_sec: 7.77
+      ref_sec: 8.92
+      cer: 0.141
+      wer: 0.4737
+    bible_00003:
+      source: bible
+      text: Mʋ́á bʋtowun pʋ́ mʋ́á bʋtamawun fɛ́ɛ́, ɔŋɛtɔ awie, ɔmásʋgyi tumi, atumipʋ, pʋ ɩsʋ agyipʋ
+        fɛ́ɛ́.
+      sbs: 0.7632
+      gen_sec: 7.08
+      ref_sec: 8.0
+      cer: 0.1014
+      wer: 0.4667
+    bible_00004:
+      source: bible
+      text: Ɩtswɩtswɩ ha Bulu aha ánɩ́ bʋbʋ Yerusalem asʋn amʋ ɛ a, mlɩbwɛ mʋ́ fɛ alɩ amʋʋ nɛbla ɔpasua
+        amʋʋ ɩbʋbʋ Galatia ɔmátɔ mbɛɛ, bʋbwɛ mʋ́ amʋ.
+      sbs: 0.7635
+      gen_sec: 10.58
+      ref_sec: 9.14
+      cer: 0.1132
+      wer: 0.3846
+    bible_00005:
+      source: bible
+      text: Ɩnɩá mʋa mʋ woyitɔ aha fɛ́ɛ́ bahɔ Bulu gyi sʋ a, ansɩ lɛhɩɛ gyi amʋ́.
+      sbs: 0.698
+      gen_sec: 4.86
+      ref_sec: 5.1
+      cer: 0.12
+      wer: 0.4
+    bible_00006:
+      source: bible
+      text: Ɩnʋ ɔlɛnatɩ yɔ nkpa kpalobi, ɔlɛda akpawunu pʋ ansɩtɔ bun ɔsʋlʋtɔ, kokoli Bulu ɔbɛɛ, “Mɩ Sɩ,
+        nɩ bɔ́wa alɛ a, ha nta-ɛwɛ anfɩ ɩtsʋn mɩsʋ.
+      sbs: 0.7202
+      gen_sec: 10.75
+      ref_sec: 11.22
+      cer: 0.1942
+      wer: 0.52
+    bible_00007:
+      source: bible
+      text: Kɩ, nyasubiá bayopula fʋ klu yinki lawie obu-ɔnɔ ɩnʋ a.
+      sbs: 0.6596
+      gen_sec: 4.44
+      ref_sec: 5.5
+      cer: 0.4186
+      wer: 1.0
+    bible_00008:
+      source: bible
+      text: Mlɩyin alɩá bʋtɛlɛ ɔsʋlʋsʋ pʋ́ nwʋlʋtasʋ atɔ asɩ.
+      sbs: 0.5933
+      gen_sec: 4.01
+      ref_sec: 4.42
+      cer: 0.25
+      wer: 0.5
+    bible_00009:
+      source: bible
+      text: Brɛá sumbi ayɔpʋ amʋ bɛdalɩ Yudafɔ asʋn ogyikpa ɩnʋ bɔyɔ a, ansɩ dɛ amʋ́ gyi.
+      sbs: 0.7039
+      gen_sec: 5.8
+      ref_sec: 5.28
+      cer: 0.0833
+      wer: 0.3333
+    bible_00010:
+      source: bible
+      text: Amʋ́tɔ ɔkʋkʋ megyi ohian, tsufɛ amʋ́á bʋbʋ ɔsʋlʋ pʋ́ woyi betsia fɛ mʋ́, pʋ mʋ́ ɔnɔ kɔba
+        ba sumbi ayɔpʋ amʋ, betsia ye mʋ́ ha ɔhagyiɔha alɩá ilehian mʋ.
+      sbs: 0.7269
+      gen_sec: 11.35
+      ref_sec: 10.9
+      cer: 0.1228
+      wer: 0.5862
+    bible_00011:
+      source: bible
+      text: Alatsʋn mʋ Ɔŋɛ amʋ pʋ́ anɩ Wie Yesu Kristosʋ tsu mlɩá mlɩ asʋn da ɔkpa mʋ ansɩtɔ.
+      sbs: 0.7272
+      gen_sec: 6.31
+      ref_sec: 4.64
+      cer: 0.1111
+      wer: 0.4118
+    bible_00012:
+      source: bible
+      text: Aha amʋʋ bʋbʋ ɩnʋ alɩ brɛ amʋtɔ akʋ bɛbla Yesu bɛɛ, Pilato lamɔ Galileafɔ akʋ brɛá bʋdɛ afɔdɩɛ
+        bɔ ha Bulu, Yerusalem Bulu ɔtswɛkpa ɩnʋ, ha obugya lada afɔdɩɛ amʋ.
+      sbs: 0.7348
+      gen_sec: 12.89
+      ref_sec: 12.26
+      cer: 0.0698
+      wer: 0.2667
+    bible_00013:
+      source: bible
+      text: Mlɩlagyi Bulu ɔnɔsʋ atɔɩpʋ afunupʋ amʋsʋ.
+      sbs: 0.7179
+      gen_sec: 3.41
+      ref_sec: 3.44
+      cer: 0.1429
+      wer: 0.3333
+    bible_00014:
+      source: bible
+      text: Ɩlɔpɔn ha kpɔsɔ ánɩ́ ɔbɔ́tsʋn ɔbɩn-atɔ ɔbɔtɔ, dʋn ánɩ́ ɩwɩ onyapʋ obówie Bulu iwiegyi amʋtɔ.
+      sbs: 0.6891
+      gen_sec: 7.17
+      ref_sec: 7.4
+      cer: 0.1806
+      wer: 0.7333
+    bible_00015:
+      source: bible
+      text: Alɩ kɛn anɩ Wie lɛhɩɛá mʋ asʋn wanklaan amʋ ɔkan adapʋ ɛ bʋgyi atɔ tsu aha ánɩ́ bʋdɛ labi
+        nya tsu asʋn amʋtɔ wa nɩ.
+      sbs: 0.7187
+      gen_sec: 8.7
+      ref_sec: 6.88
+      cer: 0.1348
+      wer: 0.6
+    bible_00016:
+      source: bible
+      text: Nɩ negyi asʋn o a, ɔnɔkwalɩ ɔkpasʋ negyi mʋ́ tsʋn.
+      sbs: 0.715
+      gen_sec: 3.67
+      ref_sec: 4.38
+      cer: 0.1053
+      wer: 0.5
+    bible_00017:
+      source: bible
+      text: Tamɛ Petro lɛpɛtɩ obuo amʋ́ ɔma tsutsuutsu alɩɩ bowie igyi ɔhapʋ dɛhɛn woyitɔ ɩnʋ.
+      sbs: 0.7186
+      gen_sec: 6.49
+      ref_sec: 6.18
+      cer: 0.1194
+      wer: 0.3571
+    bible_00018:
+      source: bible
+      text: Nɩ mlɩyin ánɩ́ yile ɔbwɛpʋ Yesu gyi a, mʋmʋ mlɩbɩá yile ɔbwɛpʋ Bulu mʋ bi okugyiɔkʋ gyi.
+      sbs: 0.7468
+      gen_sec: 6.57
+      ref_sec: 9.24
+      cer: 0.1014
+      wer: 0.2941
+    bible_00019:
+      source: bible
+      text: Mlɩmɛ́ɛtalɩ pʋ anɩ Wie ɛwɛ tin ɔnɔ, layɔpʋ ɔŋɛ lalahɛ ɛwɛ ɛ tin ɔnɔ.
+      sbs: 0.6786
+      gen_sec: 5.38
+      ref_sec: 4.52
+      cer: 0.1538
+      wer: 0.5
+    bible_00020:
+      source: bible
+      text: Mʋ́ sʋ ndɛ mlɩ fɛ́ɛ́ bla mbɛɛ, mlɩmápʋ mlɩ klʋn dɩnka ɔyɩ pʋ́ mʋ́tɔ atɔsʋ.
+      sbs: 0.7066
+      gen_sec: 5.38
+      ref_sec: 6.82
+      cer: 0.0943
+      wer: 0.2667
+    bible_00021:
+      source: bible
+      text: Petro lɔyɔ mʋ asʋnsʋ ɔbɛɛ, “Lɛlɛ a, asʋn anfɩ laba mʋ́tɔ.
+      sbs: 0.7442
+      gen_sec: 4.35
+      ref_sec: 5.22
+      cer: 0.0476
+      wer: 0.1818
+    bible_00022:
+      source: bible
+      text: Mlɩ fɛ́ɛ́ mlɛ́talɩ blɩ Bulu ɔnɔ asʋn amʋ ɩkʋlɛ-kʋlɛ, mɛnɩ mlɩ fɛ́ɛ́ mlósuan tɔkʋ tsu mʋ́tɔ
+        pʋwa ɩwɩ ɔwʋnlɩn.
+      sbs: 0.7134
+      gen_sec: 8.19
+      ref_sec: 5.84
+      cer: 0.0494
+      wer: 0.2105
+    bible_00023:
+      source: bible
+      text: ” Bulu ɔtswɛkpa agyopʋ ɔhandɛ mʋa Bulu igyi ahapʋ dɛhɛn amʋ bonu asʋn anfɩ a, bɔbwɛ yɔɔ, si
+        bʋdɛ asʋn ánɩ́ ɩbɛ́ba mʋ́ ɔma gywɩɩn.
+      sbs: 0.7223
+      gen_sec: 9.56
+      ref_sec: 10.36
+      cer: 0.0918
+      wer: 0.2917
+    bible_00024:
+      source: bible
+      text: Mʋgyi nwun ha mʋ nyankpʋsa-oyi, igyi ɔpasua amʋ, ɔdɛ mʋ́ nkpa ha.
+      sbs: 0.7437
+      gen_sec: 4.95
+      ref_sec: 4.54
+      cer: 0.2041
+      wer: 0.5
+    bible_00025:
+      source: bible
+      text: ” Ɔlɛfɩtɛ amʋ́ alɩ, tsufɛ olowun ánɩ́ Yesu ɩwɩ olu sʋ Bulu igyi ahapʋ dɛhɛn amʋ bakɩta mʋ
+        ba mʋ.
+      sbs: 0.7113
+      gen_sec: 7.08
+      ref_sec: 6.18
+      cer: 0.0833
+      wer: 0.3158
+    bible_00026:
+      source: bible
+      text: Alawun mɩ nwɛ, dɩnkɩ nsʋpa lɛ mɩsʋ ahatɔ.
+      sbs: 0.6663
+      gen_sec: 3.24
+      ref_sec: 3.52
+      cer: 0.1875
+      wer: 0.5
+    bible_00027:
+      source: bible
+      text: Aha bamba lɔyɔ mʋ́ ɩwɩ agyʋma, ɩlawa labi ha mlɩ.
+      sbs: 0.6869
+      gen_sec: 3.67
+      ref_sec: 3.98
+      cer: 0.1892
+      wer: 0.6
+    bible_00028:
+      source: bible
+      text: Tamɛ anɩlabɩ ɩnɩ, tsufɛ alalɛ mʋ́ suna anɩ tsʋn mʋ Ɔŋɛ Wankɩhɛ amʋsʋ.
+      sbs: 0.6876
+      gen_sec: 5.55
+      ref_sec: 4.22
+      cer: 0.1296
+      wer: 0.5385
+    bible_00029:
+      source: bible
+      text: Ɩmɔwankɩ amʋ́á mʋ Sɩ amʋʋ ɔbʋ ɔsʋsʋ amʋ ɩwɩ asʋn ɔdɛ amʋ́ bla.
+      sbs: 0.6813
+      gen_sec: 4.69
+      ref_sec: 4.58
+      cer: 0.1277
+      wer: 0.3846
+    bible_00030:
+      source: bible
+      text: Ntobi anfɩ ɩlɛba amʋ́sʋ anfɩ fɛ́ɛ́ igyi atosuanhɛ ha anɩ, mɛnɩ amʋ́ lalahɛ amʋ odu bwɛ mɛ́ɛdɩnka
+        anɩ ɔwɔlɩ, anɩmóosum ɩkpɩ ɛ fɛ amʋ́.
+      sbs: 0.722
+      gen_sec: 10.07
+      ref_sec: 10.12
+      cer: 0.1386
+      wer: 0.5417
+    bible_00031:
+      source: bible
+      text: Tsufɛ ɔha ánɩ́ ɔtɛnatɩ kɩta ɔdayi a, ɔdayi ɔnɔ otesin.
+      sbs: 0.6582
+      gen_sec: 4.27
+      ref_sec: 3.18
+      cer: 0.1667
+      wer: 0.5
+    bible_00032:
+      source: bible
+      text: Kristo ɔyʋlʋ kʋlɛ amʋ mlɩ fɛ́ɛ́ mlɩgyi.
+      sbs: 0.6768
+      gen_sec: 2.9
+      ref_sec: 13.88
+      cer: 0.1
+      wer: 0.1429
+    bible_00033:
+      source: bible
+      text: Alɩ kɛn mlɩ ayin ɛ, nɩ mlɩa mlɩ aka mlɩbʋ ɩnʋ a, mlɩbɩá bʋma awutɔ-ɔwʋnlɩn fɛ mlɩ.
+      sbs: 0.7282
+      gen_sec: 6.4
+      ref_sec: 6.8
+      cer: 0.1129
+      wer: 0.4118
+    bible_00034:
+      source: bible
+      text: Bɛyɛda Bulu asʋn amʋ ɔkan ha amʋ́, mɛnɩ amʋ́ ɔkla obénya nkpa fɛ alɩá Bulu bʋ nkpa.
+      sbs: 0.7297
+      gen_sec: 6.31
+      ref_sec: 6.98
+      cer: 0.1746
+      wer: 0.4118
+    bible_00035:
+      source: bible
+      text: Nɩ anɩdɛ mpaɩ bɔ ha mlɩ bregyibrɛ a, anɩtɛda Bulu ɩpan mlɩ fɛ́ɛ́ nwunsʋ.
+      sbs: 0.7149
+      gen_sec: 5.46
+      ref_sec: 4.48
+      cer: 0.1091
+      wer: 0.5
+    bible_00036:
+      source: bible
+      text: Anɩdɛ mʋ́ wanlɩn sɩsɩ mlɩ, mɛnɩ anɩa mlɩnyɔ ansigyi bɔ́fʋn.
+      sbs: 0.6672
+      gen_sec: 4.52
+      ref_sec: 4.04
+      cer: 0.0435
+      wer: 0.2
+    bible_00037:
+      source: bible
+      text: Mʋgyi ɔŋɛ lalahɛá ɩdɛ agyʋma yɔ aha amʋʋ bʋtamabu Bulu amʋtɔ nɩ.
+      sbs: 0.7267
+      gen_sec: 5.03
+      ref_sec: 4.12
+      cer: 0.1731
+      wer: 0.6667
+    bible_00038:
+      source: bible
+      text: Amlɩtsia nkpa ánɩ́ mʋ́ ɩwɩ lɛtɩn, ɔlala ɩma mʋ́ ɩwɩ alɩɩ yɔfʋn ɛkɛá Kristo ɔbɛ́laba.
+      sbs: 0.7143
+      gen_sec: 6.4
+      ref_sec: 5.28
+      cer: 0.1562
+      wer: 0.5333
+    bible_00039:
+      source: bible
+      text: Brɛ amʋ a, Yudafɔ bʋtɛtɩ mlɩ bɛɛ, “Aha ánɩ́ bʋmɛtɩn kete,” bʋtɛtɩ amʋ́ ɩwɩ kete atɩnpʋ.
+      sbs: 0.7376
+      gen_sec: 6.57
+      ref_sec: 5.64
+      cer: 0.1406
+      wer: 0.3125
+    bible_00040:
+      source: bible
+      text: Mlɩmáwa afunu suna aba, tsufɛ mlɩlasi mlɩ tsiatɔ dada amʋ pʋ́ mʋ́ bwɛhɛ fɛ́ɛ́.
+      sbs: 0.7162
+      gen_sec: 5.89
+      ref_sec: 4.78
+      cer: 0.1356
+      wer: 0.5
+    bible_00041:
+      source: bible
+      text: Tamɛ Yesu anfɩ Bulu lɔkʋsʋa tsu afulitɔ anfɩ mʋ́ mɔplɔ.
+      sbs: 0.6777
+      gen_sec: 4.35
+      ref_sec: 3.2
+      cer: 0.1818
+      wer: 0.6
+    bible_00042:
+      source: bible
+      text: Mʋ́ sʋ ɔhandɛ amʋ mɛbɩ ɔnɔkwalɩá ɩbʋ asʋn amʋtɔ.
+      sbs: 0.7033
+      gen_sec: 3.75
+      ref_sec: 3.12
+      cer: 0.1579
+      wer: 0.4444
+    bible_00043:
+      source: bible
+      text: Tsufɛ alɩ amʋʋ Yona lɔbwɛ osuna ha Niniwefɔ amʋ a, alɩ mɩ, Nyankpʋsa-Mʋ-Bi anfɩ ɛ nɔ́bwɛ osuna
+        ha ndɛmba-abi nɩ.
+      sbs: 0.7042
+      gen_sec: 8.96
+      ref_sec: 9.36
+      cer: 0.1395
+      wer: 0.75
+    bible_00044:
+      source: bible
+      text: Ɔhagyiɔha ánɩ́ obuo mɩ obénya wankɩá ɩbɛ́ha mʋ nkpa, oméesin okluntɔ ɛkɛkɛɛkɛ.
+      sbs: 0.6821
+      gen_sec: 6.23
+      ref_sec: 6.24
+      cer: 0.1429
+      wer: 0.75
+    bible_00045:
+      source: bible
+      text: Mʋ́ sʋ Bulu lɔpʋ mʋ nyansa blɩ ɔbɛɛ, ‘Nɔ́wa mɩ ɔnɔsʋ atɔɩpʋ pʋ́ mɩ sumbi ayɔpʋ amʋ́tɔ.
+      sbs: 0.7113
+      gen_sec: 6.31
+      ref_sec: 8.18
+      cer: 0.0952
+      wer: 0.3529
+    bible_00046:
+      source: bible
+      text: Tamɛ Paulo lɛbla aha akɩtapʋ amʋ akʋ ɔbɛɛ, “Bʋmegyi anɩ asʋn, tamɛ banwɛn anɩ atɔ ɔbʋntɔ.
+      sbs: 0.7391
+      gen_sec: 7.0
+      ref_sec: 6.8
+      cer: 0.1429
+      wer: 0.5625
+    bible_00047:
+      source: bible
+      text: Tamɛ mlɩbɩá Bulu ɔbɛ́bɩtɩ mlɩ ɩsʋ mʋ asʋn ogyikɛ dʋn Tiro mʋa Sidonfɔ.
+      sbs: 0.6759
+      gen_sec: 5.46
+      ref_sec: 6.0
+      cer: 0.2321
+      wer: 0.5385
+    bible_00048:
+      source: bible
+      text: mʋmʋ nkalɩ ibégyi ha lakpan abwɛpʋ pʋ́ aha ánɩ́ bʋtamabu Bulu ɛ?
+      sbs: 0.7517
+      gen_sec: 4.86
+      ref_sec: 4.24
+      cer: 0.1
+      wer: 0.5833
+    bible_00049:
+      source: bible
+      text: ” Akʋ ɛ bɛɛ, “O-o, lɩan ɔlɛlɩan mʋ.
+      sbs: 0.603
+      gen_sec: 2.47
+      ref_sec: 8.24
+      cer: 0.5455
+      wer: 1.0
+    bible_00050:
+      source: bible
+      text: Akʋ bʋgyi Bulu igyi ahapʋ dɛhɛn, Mose mbla asunapʋ pʋ́ Yudafɔ ahandɛ atrahɛ Ɩnʋ bɛha bɛklɩ
+        Yesu, pʋ mʋ yɛwa Pilato ɩbɩtɔ.
+      sbs: 0.7322
+      gen_sec: 9.47
+      ref_sec: 10.48
+      cer: 0.0625
+      wer: 0.2273
+    bible_00051:
+      source: bible
+      text: Megyi mlɩ sʋ ansɩ dɛ anɩ gyiá abénya ɔkpa tsu ɩwɩ anɩ Wie Yesu ansɩtɔ brɛá ɔbɛ́ba?
+      sbs: 0.7197
+      gen_sec: 6.14
+      ref_sec: 5.2
+      cer: 0.0781
+      wer: 0.4706
+    bible_00052:
+      source: bible
+      text: Nɩ mlenya brɛá mlɔ́pʋbwɛ ɩtɔ wanklaan a, mlɩmáyinta mʋ́.
+      sbs: 0.7071
+      gen_sec: 4.44
+      ref_sec: 3.1
+      cer: 0.1136
+      wer: 0.5556
+    bible_00053:
+      source: bible
+      text: Nyin ánɩ́ Bulu amʋʋ olefi agyʋma wanklaan amʋ asɩ mlɩtɔ amʋ kɛn ɔbɔ́yɔ mʋ́sʋ alɩɩ yɔfʋn Kristo
+        Yesu ɔbakɛ amʋ.
+      sbs: 0.7119
+      gen_sec: 8.45
+      ref_sec: 6.48
+      cer: 0.1149
+      wer: 0.35
+    bible_00054:
+      source: bible
+      text: Apio adwɛpʋ, mlɩmáhɔ aha fɛ́ɛ́á bɛɛ, bʋbʋ Ɔŋɛ Wankɩhɛ amʋ asʋnsʋ gyi.
+      sbs: 0.7306
+      gen_sec: 5.46
+      ref_sec: 5.78
+      cer: 0.0943
+      wer: 0.5
+    bible_00055:
+      source: bible
+      text: Olenya blɩ alɩ pɛ, aha tsɔtsɔɔtsɔ amʋtɔ leye anyɔ.
+      sbs: 0.6759
+      gen_sec: 4.1
+      ref_sec: 3.26
+      cer: 0.3
+      wer: 0.5556
+    bible_00056:
+      source: bible
+      text: Ɔsʋsʋ-atɔ bʋ ɩnʋ, ɔsʋlʋsʋ-atɔ ɛ bʋ ɩnʋ.
+      sbs: 0.6591
+      gen_sec: 3.16
+      ref_sec: 7.44
+      cer: 0.4138
+      wer: 0.8571
+    bible_00057:
+      source: bible
+      text: Ɩnʋ aha amʋʋ bonu mʋ asʋn anfɩtɔ tsɔtsɔɔtsɔ bɔhɔ mʋ gyi.
+      sbs: 0.7023
+      gen_sec: 4.35
+      ref_sec: 3.44
+      cer: 0.1111
+      wer: 0.4545
+    bible_00058:
+      source: bible
+      text: Ndɛ mlɩ bla mbɛɛ, Bulu ɔbɛ́fɩtɛ mʋ́ tsu mlɩ ndɛmba-abi anfɩ wa.
+      sbs: 0.7004
+      gen_sec: 4.86
+      ref_sec: 4.0
+      cer: 0.1489
+      wer: 0.3333
+    bible_00059:
+      source: bible
+      text: Tɔá igyi anɩ bwɛhɛ anɩlabwɛ a.
+      sbs: 0.6322
+      gen_sec: 2.3
+      ref_sec: 7.02
+      cer: 0.2083
+      wer: 0.6667
+    bible_00060:
+      source: bible
+      text: Anɩmɛba bɔwa afunu kʋkʋ ɛ suna mlɩ, pʋnya tɔkʋ tsu mlɩ wa.
+      sbs: 0.7225
+      gen_sec: 4.52
+      ref_sec: 3.64
+      cer: 0.2889
+      wer: 0.6667
+    bible_00061:
+      source: bible
+      text: Aha bɛdalɩ tsu amʋ́ woyitɔ srɩ ba bɛkɩta Paulo.
+      sbs: 0.7155
+      gen_sec: 3.67
+      ref_sec: 3.36
+      cer: 0.1622
+      wer: 0.6667
+    bible_00062:
+      source: bible
+      text: Brɛá bʋdɛ atɔ amʋ gyi a, Yesu lɛlɛ bodobodo ipin, ɔlɛda Bulu ɩpan, biabia mʋ́tɔ pʋha mʋ akasɩpʋ
+        amʋ, blɩ ɔbɛɛ, “Mlɩhɔ amlɩgyi.
+      sbs: 0.7476
+      gen_sec: 9.73
+      ref_sec: 10.16
+      cer: 0.1042
+      wer: 0.3478
+    bible_00063:
+      source: bible
+      text: Ntesen ansɩtɔ, bwɛ mɩ ɩwɩ ɔkpábi, mɛnɩ nɩ nɛda asʋn amʋ ɔkan suna aha ta a, Bulu mɛ́ɛbla
+        mɩ ɔbɛɛ, nabwɛ tsitsa.
+      sbs: 0.7632
+      gen_sec: 8.7
+      ref_sec: 11.0
+      cer: 0.1548
+      wer: 0.4091
+    bible_00064:
+      source: bible
+      text: Apioá bʋbʋ Listra pʋ́ Ikonion bɛtɩ Timoteo ɩdayile.
+      sbs: 0.6827
+      gen_sec: 4.18
+      ref_sec: 3.58
+      cer: 0.0952
+      wer: 0.375
+    bible_00065:
+      source: bible
+      text: Tamɛ nɩ nɛblɩ asʋn, nɛ́ha mlɛbɩ asʋn, ntɛ nɛblɩ asʋn lɛsunahɛ kʋ, ntɛ nɛblɩ Bulu ɔnɔ asʋn
+        kʋ, ntɛ suna mlɩ atɔ a, ɩbɔ́wa labi ha mlɩ dʋn.
+      sbs: 0.746
+      gen_sec: 10.5
+      ref_sec: 10.74
+      cer: 0.1765
+      wer: 0.5357
+    bible_00066:
+      source: bible
+      text: Brɛá Bulu igyi ahapʋ dɛhɛn pʋ́ Mose mbla asunapʋ amʋ bonu tɔá alabwɛ a, bodunka ɔkpa ánɩ́
+        bɔ́tsʋn mʋ́sʋ mɔ mʋ.
+      sbs: 0.7182
+      gen_sec: 8.28
+      ref_sec: 7.6
+      cer: 0.1071
+      wer: 0.3333
+    bible_00067:
+      source: bible
+      text: Tamɛ Paulo lɛbla ɩsa akɔpʋ pʋ́ amʋ́ ɔhandɛ ɔbɛɛ, “Nɩ ntsusʋ-yibi amʋtɔ agyʋma ayɔpʋ bʋmetsia
+        mʋ́tɔ a, mlɩméenya nkpa.
+      sbs: 0.7217
+      gen_sec: 9.13
+      ref_sec: 9.48
+      cer: 0.0989
+      wer: 0.3684
+    bible_00068:
+      source: bible
+      text: Ɩlɛ mʋ ɔwan suna mlɩ, mɛnɩ mlɛ́bɩ mʋ wanklaan.
+      sbs: 0.737
+      gen_sec: 3.58
+      ref_sec: 3.0
+      cer: 0.2
+      wer: 0.6667
+    bible_00069:
+      source: bible
+      text: Nɩ nobwii ɔnɔ a, Bulu ɔpʋ mʋ asʋn amʋ wa mɩ ɔnɔ; ɔha mɩ antalɩ wa klʋn blɩ asʋn ŋainhɛ amʋʋ
+        ɩbʋ mʋ asʋn wanklaan amʋtɔ amʋ fɛ́ɛ́.
+      sbs: 0.7504
+      gen_sec: 9.81
+      ref_sec: 9.74
+      cer: 0.1134
+      wer: 0.3214
+    bible_00070:
+      source: bible
+      text: Alɩá mlɩdɛ mbɔdɩ bɔ dwɛ aba, pʋ́ alɩá mlɩlatomi ha mlɩ ansɩ dɩn anɩ Wie Yesu Kristosʋ kinkiinkin.
+      sbs: 0.7318
+      gen_sec: 7.68
+      ref_sec: 7.24
+      cer: 0.0909
+      wer: 0.5
+    bible_00071:
+      source: bible
+      text: Mɩ abi adwɛpʋ, ndɛ ɔwʋlʋ anfɩ wanlɩn sɩsɩ mlɩ, tsufɛ mlɩlabɩ Ɔsɩ amʋ.
+      sbs: 0.7325
+      gen_sec: 5.55
+      ref_sec: 5.24
+      cer: 0.1481
+      wer: 0.4615
+    bible_00072:
+      source: bible
+      text: Ɩnɩ sʋ ɔlɛha ɔbɛɛ, bʋkpa Paulo ya ɩsa akɔpʋ amʋ otsiakpa.
+      sbs: 0.7086
+      gen_sec: 4.52
+      ref_sec: 4.36
+      cer: 0.1333
+      wer: 0.3636
+    bible_00073:
+      source: bible
+      text: Mlɩkasɩ mɩ tsiatɔ, fɛ alɩá mɩ ɛ nɛkasɩ Kristo klɛ.
+      sbs: 0.7049
+      gen_sec: 4.01
+      ref_sec: 3.0
+      cer: 0.0513
+      wer: 0.2
+    bible_00074:
+      source: bible
+      text: Atɔ-abi Owunyapʋ Ɩwɩ Yebi.
+      sbs: 0.6056
+      gen_sec: 2.22
+      ref_sec: 3.24
+      cer: 0.2857
+      wer: 1.0
+    bible_00075:
+      source: bible
+      text: '> Ndɛ mlɩ bla mbɛɛ, fialɩ onyawie ɔkpasʋ a, ɔmɔ́ɔkʋsʋ ha mʋ.'
+      sbs: 0.7198
+      gen_sec: 4.69
+      ref_sec: 4.64
+      cer: 0.1818
+      wer: 0.6364
+    bible_00076:
+      source: bible
+      text: Ɔbɛɛ, “Mlɩyɔ wulu anfɩ ɩda mlɩ ansɩtɔ anfɩtɔ.
+      sbs: 0.6562
+      gen_sec: 3.58
+      ref_sec: 3.38
+      cer: 0.2571
+      wer: 0.625
+    bible_00077:
+      source: bible
+      text: Mʋʋ Bulu igyi ɔhapʋ dɛhɛn amʋ lɔkʋsʋ lɩɩ fɩtɛ Yesu ɔbɛɛ, “Fʋma ɔnɔ lɛ?
+      sbs: 0.7172
+      gen_sec: 5.38
+      ref_sec: 5.0
+      cer: 0.0926
+      wer: 0.2143
+    bible_00078:
+      source: bible
+      text: Tamɛ aha amʋʋ bonu amʋ́ atosunahɛ amʋtɔ aha tsɔtsɔɔtsɔ bohogyi, bɛtsɩa ahogyipʋ amʋtɔ.
+      sbs: 0.7235
+      gen_sec: 6.91
+      ref_sec: 6.82
+      cer: 0.169
+      wer: 0.8462
+    bible_00079:
+      source: bible
+      text: Mʋ́ ɔyɩkɛhɛ a, afu kʋ lɔwa tsʋn bɩ tsu ayasɩ fʋn.
+      sbs: 0.6732
+      gen_sec: 3.67
+      ref_sec: 3.5
+      cer: 0.1944
+      wer: 0.8182
+    bible_00080:
+      source: bible
+      text: Nɩ mlɩtɔ ɔkʋ mʋa mʋ ba Okristoyin benya a, ntogyi sʋ mlɩtɔwa klʋn pʋya ɔmátɔfɔ asʋn ogyikpa,
+        mlɩtamapʋ ya Bulu aha abʋblɩ mʋ́?
+      sbs: 0.7411
+      gen_sec: 9.81
+      ref_sec: 8.34
+      cer: 0.06
+      wer: 0.3478
+    bible_00081:
+      source: bible
+      text: Mʋʋ Yesu lɛbla amʋ́ ɔbɛɛ “Mlɩha ayɔ awulu bambasʋ, anyɛda Bulu asʋn amʋ ɔkan ɩnʋ ɛ, tsufɛ
+        ɩnɩ sʋ nɛba nɩ.
+      sbs: 0.7036
+      gen_sec: 8.11
+      ref_sec: 7.96
+      cer: 0.075
+      wer: 0.2857
+    bible_00082:
+      source: bible
+      text: Mlɩlɛha bɔmɔ nkpa ɔhapʋ anfɩ, tamɛ Bulu lɔkʋsʋa mʋ tsu afulitɔ.
+      sbs: 0.7148
+      gen_sec: 5.12
+      ref_sec: 5.06
+      cer: 0.1765
+      wer: 0.8182
+    bible_00083:
+      source: bible
+      text: Ɩnɩ sʋ aha amʋtɔ akʋ bosusuá amʋ́ agywɩɩn amʋ ɩbɛ́kana.
+      sbs: 0.6914
+      gen_sec: 4.18
+      ref_sec: 4.32
+      cer: 0.093
+      wer: 0.4
+    bible_00084:
+      source: bible
+      text: Mɩ asɩ, ndɛ ɔwʋlʋ anfɩ wanlɩn sɩsɩ mlɩ, tsufɛ mlɩlabɩ ɔha amʋʋ ɔbʋ ɩnʋ tsu ɔyɩ nfiasɩ amʋ.
+      sbs: 0.7121
+      gen_sec: 7.08
+      ref_sec: 7.62
+      cer: 0.2
+      wer: 0.6667
+    bible_00085:
+      source: bible
+      text: Nɩ lɛlɛ mlɩlɔhɔ Mose asʋnsʋ gyi a, tɛkɩ mlɔ́hɔ mɩ asʋnsʋ gyi, tsufɛ mɩ ɩwɩ asʋn ɔlɔwanlɩn
+        tswɩ.
+      sbs: 0.7119
+      gen_sec: 7.25
+      ref_sec: 8.4
+      cer: 0.0811
+      wer: 0.3333
+    bible_00086:
+      source: bible
+      text: Tamɛ Yesu mʋ́ ŋɛlɩn sumuɛsʋ ɔklʋn amʋ ɔma ɔdɛdɩdɩ.
+      sbs: 0.6525
+      gen_sec: 4.1
+      ref_sec: 3.02
+      cer: 0.375
+      wer: 0.5556
+    bible_00087:
+      source: bible
+      text: Mʋ́ sʋ anɩ fɛ́ɛ́ anɩlabwɛ ɔyʋlʋ kʋlɛ fɛ bodobodo ipin amʋ.
+      sbs: 0.6953
+      gen_sec: 4.35
+      ref_sec: 3.1
+      cer: 0.1818
+      wer: 0.5455
+    bible_00088:
+      source: bible
+      text: Mʋlɔwa mɩ ɔbɛɛ, nha anyankpʋsa fɛ́ɛ́ abʋbɩ alɩá ɔdɛpʋ mʋ asʋn ŋainhɛ amʋ yɔ agyʋma.
+      sbs: 0.6989
+      gen_sec: 6.49
+      ref_sec: 4.92
+      cer: 0.0769
+      wer: 0.3333
+    bible_00089:
+      source: bible
+      text: Tamɛ bɔwanlɩn wa Bulu asʋn wanlɩnhɛ amʋtɔ bɛɛ, “Mlɩ mʋ́ mlɩgya lalahɛ ɔbwɛpʋ lɛ mlɩtɔ.
+      sbs: 0.7112
+      gen_sec: 6.74
+      ref_sec: 7.64
+      cer: 0.0735
+      wer: 0.2
+    bible_00090:
+      source: bible
+      text: Nɩ ɩsanki yɔ a, itowun ánɩ́ bafɛɩ mʋ́tɔ, la mʋ́tɔ wanklaan.
+      sbs: 0.6809
+      gen_sec: 4.44
+      ref_sec: 5.72
+      cer: 0.1628
+      wer: 0.4545
+    bible_00091:
+      source: bible
+      text: Mlɩyin ánɩ́ brɛá mlɩgyi ɔmátɔfɔ a, bosuna mlɩ asunakpan, ɩlɛha mlɩlɔyɔ mlɩdɛ ɩkpɩá bʋtamatɔɩ
+        sum.
+      sbs: 0.7402
+      gen_sec: 7.85
+      ref_sec: 7.64
+      cer: 0.1392
+      wer: 0.4667
+    bible_00092:
+      source: bible
+      text: Mʋ́ sʋ tɛkɩ anɩbʋ ɔkpa si ɩwɩ tswɩ mlɩsʋ, tamɛ anɩlolwii ha mlɩ, kɩ mlɩ fɛ alɩá abi-oyín
+        tɛkɩ mʋ onuto abisʋ.
+      sbs: 0.6916
+      gen_sec: 8.45
+      ref_sec: 6.74
+      cer: 0.0723
+      wer: 0.3636
+    bible_00093:
+      source: bible
+      text: Tamɛ nɩ woyi mʋ wie ɔkʋsʋ fin obu amʋ, mlɛba bɛlɩɩ klʋn ɔma, da klʋn amʋsʋ mlɩaa, ‘Owie, finki
+        ha anɩ!
+      sbs: 0.7042
+      gen_sec: 7.85
+      ref_sec: 9.06
+      cer: 0.1711
+      wer: 0.5238
+    bible_00094:
+      source: bible
+      text: Nɩ mlɩtɔ ɔkʋ dɛ mʋ ɩwɩ tɩ ɔtɩansɩpʋ ndɛ ɔyɩ anfɩtɔ a, ilehian ánɩ́ ɔbɔ́bwɛ mʋ ɩwɩ ɔha mimlahɛ,
+        mɛnɩ ɔbɔ́bwɛ ɔtɩansɩpʋ onuto.
+      sbs: 0.736
+      gen_sec: 9.64
+      ref_sec: 8.12
+      cer: 0.1354
+      wer: 0.3913
+    bible_00095:
+      source: bible
+      text: Mʋ́ ɔyɩkɛhɛ bakɛ a, oleyinki ba Bulu ɔtswɛkpa wunsɩnɛsʋ ɩnʋ.
+      sbs: 0.6868
+      gen_sec: 4.86
+      ref_sec: 3.8
+      cer: 0.125
+      wer: 0.4
+    bible_00096:
+      source: bible
+      text: Mʋʋ Petro mʋa Yohane bɛbla amʋ́ bɛɛ, “Mlɩ onuto mlɩkɩ.
+      sbs: 0.6947
+      gen_sec: 4.18
+      ref_sec: 4.44
+      cer: 0.1463
+      wer: 0.4
+    bible_00097:
+      source: bible
+      text: Mʋ́ sʋ nɩ Bulu lakʋsʋa mlɩa Kristonyɔ ba nkpa pɔpwɛtɔ a, mlɩdunka atɔá ɩbʋ ɔsʋsʋ, ɔtɩnɛ amʋʋ
+        Kristo tsie Bulu gyɔpɩsʋ amʋ.
+      sbs: 0.7511
+      gen_sec: 9.64
+      ref_sec: 7.5
+      cer: 0.0722
+      wer: 0.3636
+    bible_00098:
+      source: bible
+      text: Bɔyɔ Seleukia wulutɔ yotsu ntsusʋ-yibi fa yɔ ɔsʋlʋ kʋá ɩbʋ ntsu nsɩnɛ, bʋtɛtɩ mʋ́ Kiprosʋ.
+      sbs: 0.7015
+      gen_sec: 7.25
+      ref_sec: 7.68
+      cer: 0.1111
+      wer: 0.4667
+    bible_00099:
+      source: bible
+      text: Mɩ Sɩ amʋʋ ɔlɔwa mɩ amʋ onuto lagyi mɩ ɩwɩ adansɩɛ.
+      sbs: 0.6928
+      gen_sec: 3.84
+      ref_sec: 4.54
+      cer: 0.025
+      wer: 0.0909
+    bible_00100:
+      source: bible
+      text: Mʋʋ Paulo mʋa Silas bɛbla mʋ bɛɛ, “Hɔ Yesu gyi, mɛnɩ Bulu ɔbɔ́hɔ fʋa fʋ woyitɔ aha fɛ́ɛ́ nkpa.
+      sbs: 0.7234
+      gen_sec: 6.91
+      ref_sec: 7.12
+      cer: 0.087
+      wer: 0.2632
+    bible_00101:
+      source: bible
+      text: Mlówu wa mlɩ lakpantɔ, nɩ mlɩmohogyi ánɩ́ ‘Mɩgyi ɔha amʋʋ mbɛɛ ngyi amʋ.
+      sbs: 0.7055
+      gen_sec: 5.38
+      ref_sec: 6.24
+      cer: 0.1607
+      wer: 0.6923
+    bible_00102:
+      source: bible
+      text: Anɩyin ánɩ́ mbla amʋ bʋ alɛ, nɩ bɔpʋsuna atɔ ɔkpa wanklaansʋ.
+      sbs: 0.7381
+      gen_sec: 4.86
+      ref_sec: 3.66
+      cer: 0.125
+      wer: 0.4545
+    bible_00103:
+      source: bible
+      text: Mʋ́ sʋ ɔtsɩ amʋ lɛfɩtɛ Yesu ɔbɛɛ, “Yudayin fʋgyi, mɩ ɛ Samariayintse ngyi.
+      sbs: 0.7192
+      gen_sec: 5.63
+      ref_sec: 5.48
+      cer: 0.1579
+      wer: 0.3846
+    bible_00104:
+      source: bible
+      text: Tsufɛ mlɩtɔpʋ atɔ dwindwin sʋra aha, tamɛ mlɩtamapʋ osrebi ɔkʋlɛ kʋraa tsa amʋ́ sʋra.
+      sbs: 0.7121
+      gen_sec: 6.91
+      ref_sec: 6.5
+      cer: 0.1739
+      wer: 0.6429
+    bible_00105:
+      source: bible
+      text: Ɩnɩá mlɩa Kristonyɔ mlɩlabwɛ ɩkʋlɛ sʋ a, ɔdɛ mlɩa Yudafɔ amʋ pʋtsa abasʋ, ɔdɛ obuá Bulu
+        obétsia mʋ́tɔ ɔŋɛtɔ yi.
+      sbs: 0.76
+      gen_sec: 8.96
+      ref_sec: 9.8
+      cer: 0.125
+      wer: 0.4
+    bible_00106:
+      source: bible
+      text: Brɛá mʋ ansɩ leyinki ba mʋ ɩwɩsʋ a, ɔlɛfɩtɛ mʋ ɩwɩ ɔbɛɛ, ‘Apafɔ amɔmʋ kʋraa ma mɩ sɩ woyitɔ,
+        bʋmɛdɛ atɔ gyi sian ekekegyiɛkɛ?
+      sbs: 0.7209
+      gen_sec: 9.64
+      ref_sec: 10.78
+      cer: 0.1649
+      wer: 0.5833
+    bible_00107:
+      source: bible
+      text: Mlɩdɛ ɔkpa kɩ ha tɔá bapʋyaɩ ha mlɩ ɔsʋsʋ, fɛ alɩá mlɩyin tsu brɛá mlɩlegyankpa nu ɔnɔkwalɩ
+        asʋn amʋʋ igyi Bulu asʋn wanklaan amʋ.
+      sbs: 0.7404
+      gen_sec: 10.24
+      ref_sec: 8.56
+      cer: 0.1524
+      wer: 0.5833
+    bible_00108:
+      source: bible
+      text: Anɩyin ánɩ́ Bulu aha anɩgyi, tamɛ Ɔbʋnsam dɛ ɔyɩtɔ aha fɛ́ɛ́sʋ gyi.
+      sbs: 0.7155
+      gen_sec: 4.95
+      ref_sec: 4.78
+      cer: 0.1176
+      wer: 0.5
+    bible_00109:
+      source: bible
+      text: Yesu Kristo gyi ɔha ánɩ́ ɔlɔtsʋn ntsu mʋ́a obugyatɔ ba.
+      sbs: 0.6814
+      gen_sec: 4.1
+      ref_sec: 3.56
+      cer: 0.1163
+      wer: 0.5
+    bible_00110:
+      source: bible
+      text: Marta nkʋlɛ dɛdamli tsʋn mʋ́tɔ, alɩá ɩbɔ́bwɛ ɔbɔ́bwɛ amʋ́ afɔɔtɔ.
+      sbs: 0.7122
+      gen_sec: 5.03
+      ref_sec: 4.5
+      cer: 0.16
+      wer: 0.5
+    bible_00111:
+      source: bible
+      text: Mlɩmátepi ha Ɔbʋnsam ɔkpa ɔmlɛ mlɩ, amlɩbwɛ lakpan.
+      sbs: 0.6876
+      gen_sec: 4.27
+      ref_sec: 3.54
+      cer: 0.1905
+      wer: 0.375
+    bible_00112:
+      source: bible
+      text: Aha anfɩ botsu ofiakpa kʋá bʋtɛtɩ mʋ́ “Nkpábiá Bahɔ Ɩwɩsʋtsia.
+      sbs: 0.6908
+      gen_sec: 4.95
+      ref_sec: 4.4
+      cer: 0.36
+      wer: 1.0
+    bible_00113:
+      source: bible
+      text: Mlɩha Kristo iwilwii igyi mlɩ klʋnsʋ, tsufɛ mʋ́tɔ Bulu latɩ mlɩ bɔwa; mlɩa mʋ nyankpʋsa-oyi
+        amʋ mlɩlabwɛ kʋlɛ nɩ.
+      sbs: 0.6911
+      gen_sec: 9.05
+      ref_sec: 7.06
+      cer: 0.0667
+      wer: 0.3158
+    bible_00114:
+      source: bible
+      text: Alɩ amʋʋ ɔpasua amʋ tɛba ɩwɩasɩ ha Kristo amʋ a, alɩ kɛn ɔka ɛ ɔba ɩwɩasɩ ha mʋ klu togyitɔtɔ
+        nɩ.
+      sbs: 0.7419
+      gen_sec: 7.42
+      ref_sec: 6.08
+      cer: 0.1333
+      wer: 0.4762
+    bible_00115:
+      source: bible
+      text: Ɩnʋ ɔsʋrapʋ ohiani ɔkʋ ɛ lɔpʋ mʋ kɔba ana bɔwa mʋ́tɔ.
+      sbs: 0.679
+      gen_sec: 4.1
+      ref_sec: 3.48
+      cer: 0.1951
+      wer: 0.2727
+    bible_00116:
+      source: bible
+      text: Tɛkɩ olekle okina, tamɛ ɔma-ɔma a, ɔlɛbla mʋ ɩwɩ ɔbɛɛ, ‘Ɩbʋ mʋ́tɔá ntamanya Bulu ifu, ntamanya
+        ɔhaa ɛ pɛlɩ.
+      sbs: 0.7061
+      gen_sec: 8.45
+      ref_sec: 8.96
+      cer: 0.1728
+      wer: 0.4211
+    bible_00117:
+      source: bible
+      text: Nɩ ɔkʋ lɛha aha anfɩ bʋmɔkʋdan mɩsʋ hogyitɔ anfɩtɔ ɔkʋ lɔbwɛ lakpan a, nɩ bɛda nfuokwɛbʋ sian
+        mʋ ɔmɛtɔ, tswɩ mʋ wa ɔpʋ okluklukpa po a, ɩbʋ alɛ dʋn.
+      sbs: 0.6717
+      gen_sec: 11.61
+      ref_sec: 13.8
+      cer: 0.1466
+      wer: 0.6552
+    bible_00118:
+      source: bible
+      text: Brɛá ɔyɩ dɛkɛ a, agyʋma ayɔpʋ amʋ bowun ánɩ́ ɔpʋ amʋ bambi lowie ɔsʋlʋ kʋsʋ, tamɛ bʋmɛbɩ
+        otsubunɔ oduá igyi.
+      sbs: 0.7163
+      gen_sec: 8.36
+      ref_sec: 10.08
+      cer: 0.1176
+      wer: 0.4
+    bible_00119:
+      source: bible
+      text: “Nɩ mlɩtɔ ɔkʋ bʋ osumpʋá ɔtɔyɔ agyʋma mʋ ndɔtɔ ntɛ ɔtɛkɩ mʋ akufasʋ, otsu agyʋmatɔ ba a,
+        bla mʋ wie tɛbla mʋ ɔbɛɛ, ‘Wa ɔsa bwɛ afʋgyi atɔ?
+      sbs: 0.6965
+      gen_sec: 10.33
+      ref_sec: 11.7
+      cer: 0.1333
+      wer: 0.4286
+    bible_00120:
+      source: bible
+      text: Bɛlɛ mʋ́ ɔnɔ bɛɛ, “Ɔhaa mɔkʋtɔɩ fɛ oyin anfɩ kɩ!
+      sbs: 0.6544
+      gen_sec: 3.58
+      ref_sec: 3.54
+      cer: 0.2571
+      wer: 0.6
+    bible_00121:
+      source: bible
+      text: '> Tamɛ amʋ́ fɛ́ɛ́ bɛblɩ bɛɛ amʋ́ ɩbɩ dɛ.'
+      sbs: 0.6497
+      gen_sec: 2.73
+      ref_sec: 14.82
+      cer: 0.2692
+      wer: 0.625
+    bible_00122:
+      source: bible
+      text: Mʋ́ sʋ ɔmɛha amʋ́ ɔkpa abʋmɔ obu adɩpʋ amʋ.
+      sbs: 0.6902
+      gen_sec: 3.16
+      ref_sec: 3.3
+      cer: 0.2188
+      wer: 0.5556
+    bible_00123:
+      source: bible
+      text: Ɔhagyiɔha ɔkɩ mʋ kɔba alɩá otenya ɔnɔ, ɔlɛ kʋ yaɩ Kwasiedagyikwasieda.
+      sbs: 0.7363
+      gen_sec: 5.63
+      ref_sec: 4.64
+      cer: 0.2241
+      wer: 1.0909
+    bible_00124:
+      source: bible
+      text: Mlɩbwɛ agywɩɩn kʋlɛ, amlɩyɔ agyʋma wa abatɔ pʋha mɩ ansigyi ɩfʋn.
+      sbs: 0.7345
+      gen_sec: 5.03
+      ref_sec: 3.92
+      cer: 0.1509
+      wer: 0.3636
+    bible_00125:
+      source: bible
+      text: Mlɩtsa alɔpʋá bʋbʋ wulu amʋtɔ, amlɩbla wulu amʋtɔ aha mlɩaa, ‘Bulu iwiegyi lawie woyi ta.
+      sbs: 0.7076
+      gen_sec: 7.08
+      ref_sec: 7.54
+      cer: 0.1127
+      wer: 0.4667
+    bible_00126:
+      source: bible
+      text: Tamɛ sei anfɩ nadan a, nasi nyebitɔ bwɛhɛ amʋ fɛ́ɛ́ bwɛ.
+      sbs: 0.6699
+      gen_sec: 4.27
+      ref_sec: 3.18
+      cer: 0.1667
+      wer: 0.5455
+    bible_00127:
+      source: bible
+      text: Nyasubi, ndɛ ɔwʋlʋ anfɩ wanlɩn sɩsɩ mlɩ, tsufɛ mlɩ hogyi ɔnɔ bʋ ɔnlɩn, Bulu asʋn bʋ mlɩtɔ.
+      sbs: 0.7346
+      gen_sec: 7.08
+      ref_sec: 8.4
+      cer: 0.0429
+      wer: 0.2941
+    bible_00128:
+      source: bible
+      text: Yohane asʋn blɩhɛ lɔbwɛ fɛ ɔkandɩɛá ɩdɛwankɩ.
+      sbs: 0.6537
+      gen_sec: 3.75
+      ref_sec: 4.02
+      cer: 0.0263
+      wer: 0.8571
+    bible_00129:
+      source: bible
+      text: Lɛlɛ mʋ́ a, alalɔ sian wu, tamɛ Bulu lowun mʋ nwɛ.
+      sbs: 0.7164
+      gen_sec: 3.75
+      ref_sec: 3.48
+      cer: 0.2222
+      wer: 0.7273
+    bible_00130:
+      source: bible
+      text: Mlɩyin ánɩ́ Kristo lɛba ɔyɩtɔ bɛlɛ anɩ tsu anɩ lakpantɔ, tamɛ mʋ mʋ́ ɔmɔbwɛ lakpan kʋkʋ.
+      sbs: 0.7317
+      gen_sec: 6.91
+      ref_sec: 6.18
+      cer: 0.1594
+      wer: 0.5625
+    bible_00131:
+      source: bible
+      text: Faha fʋ pio anfɩ ɔmɔkʋdan hogyitɔ, Kristo lowu ha mʋ anfɩ lafwɩ.
+      sbs: 0.698
+      gen_sec: 5.03
+      ref_sec: 4.52
+      cer: 0.1765
+      wer: 0.6667
+    bible_00132:
+      source: bible
+      text: Yesu lɛtra tɩ ɔdɔm amʋ ba mʋ ɩwɩ wa, ɔlɛbla amʋ́ ɔbɛɛ, “Mlɩ fɛ́ɛ́ mlɩyaa asʋ amlɩnu ɩnɩ asɩ!
+      sbs: 0.6959
+      gen_sec: 6.83
+      ref_sec: 6.82
+      cer: 0.1194
+      wer: 0.3158
+    bible_00133:
+      source: bible
+      text: Ɔma-ɔma a, Bulu ɔtswɛkpa agyopʋ amʋʋ bɔwa sumbi amʋ bɛsanki ba Bulu igyi ahapʋ dɛhɛn pʋ́ Farisifɔ
+        amʋ wa.
+      sbs: 0.724
+      gen_sec: 8.19
+      ref_sec: 9.1
+      cer: 0.0964
+      wer: 0.3684
+    bible_00134:
+      source: bible
+      text: Anɩyin ánɩ́ ɔha ánɩ́ alabwɛ Bulu mʋ bi ɔkʋkʋ tamatsia bwɛ lakpan, tsufɛ Bulu mʋ Bi amʋ togyo
+        mʋ ɩwɩ.
+      sbs: 0.7175
+      gen_sec: 7.59
+      ref_sec: 6.9
+      cer: 0.1818
+      wer: 0.45
+    bible_00135:
+      source: bible
+      text: Ɩnʋ ɔlɛlɛ ɔdayi ɩya anyɔ ɔbɛɛ amʋwɔ ɩwɩ, tsufɛ ɔkɩ ɔbɛɛ obu adɩpʋ amʋ fɛ́ɛ́ badalɩ srɩ.
+      sbs: 0.6941
+      gen_sec: 6.74
+      ref_sec: 7.7
+      cer: 0.1493
+      wer: 0.4706
+    bible_00136:
+      source: bible
+      text: Mlɩtɔ ɔkʋ mʋ́ kʋraa laswɩɩ mʋ sɩ mʋ ka, ɩbʋ mlɩ ansigyi!
+      sbs: 0.7271
+      gen_sec: 4.18
+      ref_sec: 3.74
+      cer: 0.1429
+      wer: 0.3333
+    bible_00137:
+      source: bible
+      text: Ɔhagyiɔha ánɩ́ ɔlɛbla mʋ ba ɛ ɔbɛɛ, ‘Raka!
+      sbs: 0.6594
+      gen_sec: 3.07
+      ref_sec: 10.34
+      cer: 0.2258
+      wer: 0.625
+    bible_00138:
+      source: bible
+      text: Mʋʋ Yesu lɛbla mʋ ɔbɛɛ, “Mɩ anfɩ ndɛ fʋ asʋn bla anfɩ gyi Kristo amʋ nɩ.
+      sbs: 0.6769
+      gen_sec: 5.38
+      ref_sec: 5.78
+      cer: 0.0556
+      wer: 0.1875
+    bible_00139:
+      source: bible
+      text: Mlɩmɛdɛ mʋ́ asɩ nu, tsufɛ mɩ asʋn dɛ mlɩ asʋtɔ wɔ.
+      sbs: 0.712
+      gen_sec: 3.75
+      ref_sec: 6.68
+      cer: 0.2432
+      wer: 0.5455
+    bible_00140:
+      source: bible
+      text: Yesu lɛbla amʋ́ ɔbɛɛ, “Mɩ atogyihɛ gyi ánɩ́ nɔ́bwɛ tɔá ɔha amʋʋ ɔlɔwa mɩ sɩsɩ amʋ ɔbɛɛ mbwɛ,
+        ammɔ mʋ́ ɔnɔ.
+      sbs: 0.698
+      gen_sec: 7.68
+      ref_sec: 8.5
+      cer: 0.1026
+      wer: 0.3333
+    bible_00141:
+      source: bible
+      text: Ɔlɛlɛ anɩ agyankpapʋ amʋʋ anɩ ansɩ dɩn Kristosʋ amʋ ɔbɛɛ, abɛ́kanfʋ mʋ numnyam.
+      sbs: 0.749
+      gen_sec: 6.31
+      ref_sec: 5.56
+      cer: 0.0312
+      wer: 0.2308
+    bible_00142:
+      source: bible
+      text: Mbla asunapʋá bʋgyi Farisifɔ bɔkʋsʋ lɩɩ blɩ bɛɛ, “Anɩmɔkʋwun tsitsa kʋkʋ oyin anfɩ ɩwɩ.
+      sbs: 0.6811
+      gen_sec: 7.0
+      ref_sec: 5.6
+      cer: 0.1127
+      wer: 0.4286
+    bible_00143:
+      source: bible
+      text: Mlɩa mlɩ ɔpasua ahandɛ pʋ́ amʋ́ abʋapʋ fɛ́ɛ́ anɩdɛ mʋ́ wanlɩn sɩsɩ.
+      sbs: 0.707
+      gen_sec: 4.95
+      ref_sec: 3.7
+      cer: 0.02
+      wer: 0.25
+    bible_00144:
+      source: bible
+      text: ” Ɩnʋ amʋ́ fɛ́ɛ́ bɛnatɩ yɔ woyitɔ.
+      sbs: 0.6607
+      gen_sec: 2.3
+      ref_sec: 3.76
+      cer: 0.2609
+      wer: 0.5
+    bible_00145:
+      source: bible
+      text: ” Ɩnʋ Paulo lɔwʋna ɩbɩ, ɩwɔ amʋ lɛkpa wie ogya, tamɛ tɔtɔ mɔbwɛ mʋ.
+      sbs: 0.712
+      gen_sec: 5.03
+      ref_sec: 4.84
+      cer: 0.3
+      wer: 0.6923
+    bible_00146:
+      source: bible
+      text: Apio, mlɩlamli fɛ Bulu ɔpasua ánɩ́ ɩbʋbʋ Yudea ɔmátɔ, bʋgyi Kristo Yesu klɛ amʋ.
+      sbs: 0.7456
+      gen_sec: 6.31
+      ref_sec: 6.18
+      cer: 0.0794
+      wer: 0.3571
+    bible_00147:
+      source: bible
+      text: Mmɔfʋn ánɩ́ nógyonka sankɩ mʋ ntʋkʋta ɔfɛ kʋraa.
+      sbs: 0.6244
+      gen_sec: 3.75
+      ref_sec: 3.22
+      cer: 0.2308
+      wer: 0.625
+    bible_00148:
+      source: bible
+      text: Nɛ́ha mɩ adansɩfɔ abanyɔ bɛ́dɩda akpekpe, ha amʋ́ tumi bɛ́blɩ mɩ asʋn ánɩ́ nalɛ suna amʋ́
+        nkɛ amʋtɔ.
+      sbs: 0.6546
+      gen_sec: 7.51
+      ref_sec: 8.62
+      cer: 0.1467
+      wer: 0.5
+    bible_00149:
+      source: bible
+      text: ” Ɩna mɩ sʋ bɛkanfʋ Bulu.
+      sbs: 0.6747
+      gen_sec: 1.79
+      ref_sec: 3.82
+      cer: 0.0
+      wer: 0.0
+    bible_00150:
+      source: bible
+      text: Abi, mlɩbu mlɩ akwɩɩpʋ, tsufɛ mʋ́ Bulu tekle nɩ.
+      sbs: 0.7091
+      gen_sec: 3.75
+      ref_sec: 3.4
+      cer: 0.1667
+      wer: 0.5556
+    bible_00151:
+      source: bible
+      text: Mʋʋ ɔlɛbla amʋ́ ɔbɛɛ, “Mɩ apio, ɩbʋ mʋ́tɔá mmɔpʋ lalahɛ kʋkʋʋkʋ gyi mɩ ɔmátɔfɔ, mmeyinta
+        anɩ anain amandɩɛ kʋkʋ ɛ.
+      sbs: 0.748
+      gen_sec: 8.87
+      ref_sec: 9.38
+      cer: 0.1477
+      wer: 0.6
+    bible_00152:
+      source: bible
+      text: Ɔhandɛ ɔkʋ bʋ ɔsʋlʋ kʋ ɔpʋ nsɩnɛ ɩnʋ.
+      sbs: 0.6806
+      gen_sec: 2.9
+      ref_sec: 3.02
+      cer: 0.1724
+      wer: 0.5
+    bible_00153:
+      source: bible
+      text: Tsufɛ lowu mɛ́ɛtalɩ gyi mʋsʋ, osin afulitɔ.
+      sbs: 0.673
+      gen_sec: 3.41
+      ref_sec: 4.16
+      cer: 0.1471
+      wer: 0.5714
+    bible_00154:
+      source: bible
+      text: Tamɛ bɛha ɔtsɩ amʋ oyitsu kpɔnkpɔɔnkpɔntɩ abamba anyɔ, mɛnɩ ɔbɛ́talɩ fuli si bʋtɩ amʋ yɔ mʋ
+        otsiakpa ɔsʋlʋkpansʋ ɩnʋ.
+      sbs: 0.7091
+      gen_sec: 9.56
+      ref_sec: 9.14
+      cer: 0.0729
+      wer: 0.3684
+    bible_00155:
+      source: bible
+      text: Mʋ́ o a, afu amʋ lɔtsʋan ntsusʋ-yibi amʋ natɩ ɔwʋnlɩnsʋ.
+      sbs: 0.7056
+      gen_sec: 4.44
+      ref_sec: 3.86
+      cer: 0.186
+      wer: 0.9
+    bible_00156:
+      source: bible
+      text: Pʋ́ alɩá mlɩgyo brɛá Bulu mʋ Bi Yesu amʋʋ ɔlɔkʋsʋa tsu afulitɔ amʋ ɔbɛ́latsu ɔsʋsʋ ba.
+      sbs: 0.6985
+      gen_sec: 6.57
+      ref_sec: 5.54
+      cer: 0.0882
+      wer: 0.375
+    bible_00157:
+      source: bible
+      text: Mɩ Paulo, mɩa Silwano pʋ́ Timoteo dɛ ɔwʋlʋ anfɩ wanlɩn sɩsɩ ɔpasua ánɩ́ igyi anɩ Sɩ Bulu
+        mʋa anɩ Wie Yesu Kristo klɛ, ɩbʋ Tesalonika wulutɔ.
+      sbs: 0.7558
+      gen_sec: 10.92
+      ref_sec: 10.34
+      cer: 0.0909
+      wer: 0.3077
+    bible_00158:
+      source: bible
+      text: Bɛ́hɩɛ dɩnka mlɩsʋ, pʋ mlɩ ya Yudafɔ ofiakpa yegyi mlɩ asʋn, wa mlɩ obu.
+      sbs: 0.711
+      gen_sec: 5.55
+      ref_sec: 5.26
+      cer: 0.1455
+      wer: 0.5714
+    bible_00159:
+      source: bible
+      text: Tamɛ nɩ Bulu ɔlɛ atɔ suna ɔkʋá otsie ofiakpa ɩnʋ a, Bulu ɔnɔsʋ ɔtɔɩpʋ amʋ osi tɔɩ, ɔha amʋ
+        ɔblɩ tɔá alawun.
+      sbs: 0.7272
+      gen_sec: 8.36
+      ref_sec: 6.84
+      cer: 0.1325
+      wer: 0.5
+    bible_00160:
+      source: bible
+      text: Anɩtɔdwɛ Bulu pʋ́ anɩ aba, tsufɛ Bulu legyankpa dwɛ anɩ.
+      sbs: 0.732
+      gen_sec: 4.35
+      ref_sec: 3.82
+      cer: 0.1136
+      wer: 0.3
+    bible_00161:
+      source: bible
+      text: Anɩmá ɔsɩ ɔkʋkʋ tsɩa mʋtɔ.
+      sbs: 0.6195
+      gen_sec: 2.13
+      ref_sec: 9.84
+      cer: 0.3333
+      wer: 1.2
+    bible_00162:
+      source: bible
+      text: Tsufɛ mɩ mʋ́ nyin ɔtɩnɛá notsu pʋ́ ɔtɩnɛá nɔyɔ.
+      sbs: 0.638
+      gen_sec: 3.58
+      ref_sec: 3.48
+      cer: 0.1111
+      wer: 0.4444
+    bible_00163:
+      source: bible
+      text: Ɔtsɩ amʋ lɛbla mʋ ɔbɛɛ, “Anɩ sɩ, ha mɩ ntsu anfɩ kʋ, mɛnɩ ɔmɛwʋlɩ mɛ́ɛtra kɩta mɩ, mmɛ́ɛtra
+        ba nfɩ ɛ bɛsa ntsu.
+      sbs: 0.7025
+      gen_sec: 8.36
+      ref_sec: 8.62
+      cer: 0.1358
+      wer: 0.3478
+    bible_00164:
+      source: bible
+      text: Ɔhandɛ amʋ lɛfɩtɛ mʋ ɔbɛɛ, “Fʋtonu Griki ɔblɩ?
+      sbs: 0.6976
+      gen_sec: 3.67
+      ref_sec: 3.68
+      cer: 0.0556
+      wer: 0.25
+    bible_00165:
+      source: bible
+      text: Ɔhaa meyin ɔha ánɩ́ Obi amʋ gyi, nkɛtɩ Ɔsɩ amʋ nkʋlɛ.
+      sbs: 0.6991
+      gen_sec: 4.01
+      ref_sec: 4.16
+      cer: 0.325
+      wer: 0.9091
+    bible_00166:
+      source: bible
+      text: Ndekleá nówun ipian fɛ alɩá Kristo lowun ipian wu, mɛnɩ ɔkpagyiɔkpasʋ a, mɩ ɛ Bulu ɔbɔ́kʋsʋa
+        mɩ tsu afulitɔ!
+      sbs: 0.7378
+      gen_sec: 8.53
+      ref_sec: 7.4
+      cer: 0.1628
+      wer: 0.6316
+    bible_00167:
+      source: bible
+      text: Anɩ nain Mose lɛblɩ ɔbɛɛ, ‘Mlɩ Wie Bulu ɔbɛ́ha mʋ ɔnɔsʋ ɔtɔɩpʋ ɔkʋá ogyi fɛ mɩ ɔbɛ́dalɩ tsu
+        mlɩtɔ ha mlɩ.
+      sbs: 0.7289
+      gen_sec: 7.85
+      ref_sec: 8.74
+      cer: 0.1125
+      wer: 0.5238
+    bible_00168:
+      source: bible
+      text: Ansɩ igyi mlɩ, ɩwɩ ɩsankɩ mlɩ; tsufɛ mlɩ ɩkɔka tsɔ ɔsʋsʋ.
+      sbs: 0.6982
+      gen_sec: 4.44
+      ref_sec: 5.26
+      cer: 0.0227
+      wer: 0.0909
+    bible_00169:
+      source: bible
+      text: Alɩ kɛn anɩlohogyiá Bulu ɔbɛ́kpa aha amʋʋ bɔhɔ mʋ gyi asa bowu amʋ ba nɩ.
+      sbs: 0.7396
+      gen_sec: 5.46
+      ref_sec: 4.56
+      cer: 0.0702
+      wer: 0.4
+    bible_00170:
+      source: bible
+      text: Ɔha amʋʋ oletsia, ɔbʋ ɩnʋ, ɔbɛ́laba amʋ mʋa Ɔŋɛ asienɔá bʋlɩɩ mʋ owie obia ansɩtɔ pʋ́ Yesu
+        Kristo bʋgyi mlɩ bʋalɛ, abʋha mlɩ iwilwii.
+      sbs: 0.7292
+      gen_sec: 10.5
+      ref_sec: 11.66
+      cer: 0.1923
+      wer: 0.5417
+    bible_00171:
+      source: bible
+      text: Anɩlɔwanlɩn anɩaa, anɩlablɩ ánɩ́ bʋmágyi atogyihɛá bapʋha ɩkpɩ.
+      sbs: 0.7116
+      gen_sec: 5.12
+      ref_sec: 8.0
+      cer: 0.0755
+      wer: 0.375
+    bible_00172:
+      source: bible
+      text: Ɩnʋ ɔlɛnatɩ si amʋ́ yɔ dʋ wie ɔklʋntɔ, fa ɔpʋ amʋ yɔ mʋ́ ɔbɩn.
+      sbs: 0.673
+      gen_sec: 4.52
+      ref_sec: 4.14
+      cer: 0.1778
+      wer: 0.4286
+    bible_00173:
+      source: bible
+      text: Ɩnɩ sʋ bʋkɩ bɛɛ, Paulo lɔpʋ oyin amʋ ya Bulu ɔtswɛkpa ɩnʋ.
+      sbs: 0.6554
+      gen_sec: 4.52
+      ref_sec: 3.42
+      cer: 0.2
+      wer: 0.5
+    bible_00174:
+      source: bible
+      text: Mʋ́ sʋ sumbi ayɔpʋ duanyɔ amʋ bɛtɩ ahogyipʋ amʋ fɛ́ɛ́ fia, bla amʋ́ bɛɛ, “Ɩma alɛá abési
+        Bulu asʋn ɔkanda betsia ye atɔtɔ.
+      sbs: 0.7183
+      gen_sec: 9.13
+      ref_sec: 10.28
+      cer: 0.1848
+      wer: 0.6087
+    bible_00175:
+      source: bible
+      text: Ɔtsɩ amʋ lotsu ɔmɛ fʋa blɩ ɔbɛɛ, “Bulu layula opuni amʋʋ fɛdɩ mʋ́tɔ pʋ́ nyɔpʋ amʋʋ fɔnyɔpʋ
+        amʋ.
+      sbs: 0.6571
+      gen_sec: 7.25
+      ref_sec: 8.36
+      cer: 0.137
+      wer: 0.2222
+    bible_00176:
+      source: bible
+      text: ” Amʋ́ akʋ bʋgyi Yudafɔá botsu Kirene pʋ́ Aleksandria awulusʋ.
+      sbs: 0.6962
+      gen_sec: 4.78
+      ref_sec: 4.82
+      cer: 0.0612
+      wer: 0.2222
+    bible_00177:
+      source: bible
+      text: Nkɛtɩ nɩ ɔblɩ bamba ɔblɩpʋ amʋ tɛtalɩ lɛ mʋ́ asɩ, mɛnɩ ɔpasua amʋ bénya tɔkʋ tsu mʋ́tɔ.
+      sbs: 0.7426
+      gen_sec: 6.74
+      ref_sec: 6.26
+      cer: 0.0746
+      wer: 0.2353
+    bible_00178:
+      source: bible
+      text: Anɩ Sɩ Bulu onuto mʋa anɩ Wie Yesu bʋfinki ɔkpa ha anɩ aba mlɩ wa.
+      sbs: 0.7237
+      gen_sec: 5.03
+      ref_sec: 4.46
+      cer: 0.1765
+      wer: 0.4667
+    bible_00179:
+      source: bible
+      text: Ntɔ lahan fʋ sʋ fabwɛ ɩtɔá igyi alɩ?
+      sbs: 0.7199
+      gen_sec: 2.73
+      ref_sec: 3.36
+      cer: 0.1429
+      wer: 0.375
+    bible_00180:
+      source: bible
+      text: Ɔmɛtan ánɩ́ ɔlɛblɩ ɔbɛɛ, mówun anɩ anain Abraham.
+      sbs: 0.6532
+      gen_sec: 4.01
+      ref_sec: 3.26
+      cer: 0.2051
+      wer: 0.5
+    bible_00181:
+      source: bible
+      text: Griki ablɩpʋ amʋ bɛɛ, ekekegyiɛkɛ, nɩ bʋdɛ atɔ ye a, bʋtamaha Grikifɔ asʋrapʋ.
+      sbs: 0.7198
+      gen_sec: 6.31
+      ref_sec: 7.0
+      cer: 0.1452
+      wer: 0.6154
+    bible_00182:
+      source: bible
+      text: Mʋ ayabi dɛ ogya kpa fɛ kɔbrɩá bafwɩ mʋ́ lɛ ogyatɔ ɩnʋnʋ.
+      sbs: 0.6389
+      gen_sec: 4.18
+      ref_sec: 3.76
+      cer: 0.2045
+      wer: 0.5
+    bible_00183:
+      source: bible
+      text: Brɛá Paulo mʋa Barnaba bʋdɛdalɩ Yudafɔ ofiakpa ɩnʋ a, aha amʋ bɔkʋlɩ amʋ́ bɛɛ, bʋba ɔkpʋnʋ
+        ɔdakɛ amʋʋ ɩba amʋ, abʋtra bɔtɔɩ tsu asʋn amʋ ɩwɩ suna amʋ́.
+      sbs: 0.732
+      gen_sec: 11.86
+      ref_sec: 12.32
+      cer: 0.1356
+      wer: 0.3929
+    bible_00184:
+      source: bible
+      text: Mɩ apio, ndekleá mlɩbɩ tɔá Bulu lɔbwɛ ha anɩ anain amʋ fɛ́ɛ́ bɩmbɩ amʋ.
+      sbs: 0.7451
+      gen_sec: 5.46
+      ref_sec: 5.04
+      cer: 0.2593
+      wer: 0.7143
+    bible_00185:
+      source: bible
+      text: Tsufɛ Sadukifɔ bʋtɛblɩ bɛɛ, kʋsʋ tsu afulitɔ kʋkʋ ɩma ɩnʋ.
+      sbs: 0.7182
+      gen_sec: 4.78
+      ref_sec: 4.56
+      cer: 0.1064
+      wer: 0.4
+    bible_00186:
+      source: bible
+      text: Mʋʋ ɔlɛfɩtɛ amʋ́ ɔbɛɛ, “Ntogyi sʋ mlɩ ndɛmba-abi mlɩdɛ osuna dunka amlɩwun?
+      sbs: 0.7146
+      gen_sec: 5.89
+      ref_sec: 5.82
+      cer: 0.1017
+      wer: 0.5833
+    bible_00187:
+      source: bible
+      text: Yiyi kɛkɛ ɩnɩ fɛ́ɛ́ igyi ha atɔ amʋʋ ɩbɛ́ba amʋ onuto.
+      sbs: 0.7419
+      gen_sec: 3.84
+      ref_sec: 3.3
+      cer: 0.175
+      wer: 0.4545
+    bible_00188:
+      source: bible
+      text: Yesu lɛha amʋ́ yebi ɔbɛɛ, “Mlɩpʋkɩ pɔntɔ mʋ́a nyi atrahɛ.
+      sbs: 0.6957
+      gen_sec: 4.35
+      ref_sec: 4.52
+      cer: 0.1163
+      wer: 0.4
+    bible_00189:
+      source: bible
+      text: Amʋ́gyi aha ánɩ́ bʋtegyi Bulu mblasʋ, bʋdɛ Yesu ɩwɩ adansɩɛ gyi a.
+      sbs: 0.7289
+      gen_sec: 4.86
+      ref_sec: 5.24
+      cer: 0.1373
+      wer: 0.6667
+    bible_00190:
+      source: bible
+      text: Ɔha ánɩ́ olekina mɩ asʋn hɔ ɛ lakina mɩ Sɩ amʋʋ ɔlɔwa mɩ amʋ asʋn hɔ.
+      sbs: 0.6768
+      gen_sec: 5.12
+      ref_sec: 5.5
+      cer: 0.1923
+      wer: 0.3125
+    bible_00191:
+      source: bible
+      text: Ɔbɛɛ obóyula mlɩ, amlɩsi lakpan bwɛ nɩ.
+      sbs: 0.6907
+      gen_sec: 3.16
+      ref_sec: 5.7
+      cer: 0.129
+      wer: 0.5714
+    bible_00192:
+      source: bible
+      text: Brɛá ɔlɔbɔ ta a, mʋ akasɩpʋ amʋtɔ ɔkʋlɛ lɛbla mʋ ɔbɛɛ, “Mɩ Wie, suna anɩ mpaɩ bɔ, fɛ alɩá
+        Asu Ɔbɔpʋ Yohane losuna mʋ akasɩpʋ.
+      sbs: 0.7224
+      gen_sec: 9.73
+      ref_sec: 12.62
+      cer: 0.0842
+      wer: 0.28
+    bible_00193:
+      source: bible
+      text: Nɩ anɩtɔdwɛ aba alɩ a, mʋ́ abɛ́bɩá anɩbuo ɔnɔkwalɩ amʋ nɩ.
+      sbs: 0.7267
+      gen_sec: 4.44
+      ref_sec: 4.8
+      cer: 0.1364
+      wer: 0.3636
+    bible_00194:
+      source: bible
+      text: Ndɛ mʋ́ wanlɩn sɩsɩ ɔpasua ánɩ́ ɩbʋ Galatia ɔsʋlʋsʋ fɛ́ɛ́.
+      sbs: 0.6905
+      gen_sec: 4.35
+      ref_sec: 3.48
+      cer: 0.0909
+      wer: 0.3
+    bible_00195:
+      source: bible
+      text: Alɩ kɛn nɔ́wa ɩlʋ ɔŋɛtɔ, pʋ mɩ agywɩɩn wa mʋ́ brɛ kʋtɔ ɛ nɩ.
+      sbs: 0.7291
+      gen_sec: 4.35
+      ref_sec: 3.7
+      cer: 0.093
+      wer: 0.2143
+    bible_00196:
+      source: bible
+      text: Nɩ ɔkʋ ɔbwɛ agywɩɩn ánɩ́ obépilan amʋ́ a, ogya bɛ́dalɩ amʋ́ ɔnɔ, hɔ mʋ mɔ.
+      sbs: 0.6998
+      gen_sec: 5.21
+      ref_sec: 5.16
+      cer: 0.1321
+      wer: 0.3333
+    bible_00197:
+      source: bible
+      text: Ɔtsɩ amʋ lɔkwɩɩ obiyimbiá ɔbɛ́kpa ɔmá fɛ́ɛ́ owuntɔlɩnsʋ.
+      sbs: 0.6603
+      gen_sec: 4.44
+      ref_sec: 6.38
+      cer: 0.2667
+      wer: 0.875
+    bible_00198:
+      source: bible
+      text: Mlɩmátsu sika kɛntɛ, akpankogyo ntɛ ntʋkʋta kɩta.
+      sbs: 0.7018
+      gen_sec: 4.1
+      ref_sec: 3.58
+      cer: 0.2927
+      wer: 1.0
+    bible_00199:
+      source: bible
+      text: Tamɛ Yesu lɛtɩ nyebi amʋ ba mʋ ɩwɩ wa, ɔlɛbla akasɩpʋ amʋ ɔbɛɛ, “Mlɩha nyebi amʋ abʋba mɩ
+        wa.
+      sbs: 0.7262
+      gen_sec: 7.17
+      ref_sec: 7.14
+      cer: 0.0986
+      wer: 0.3684
 - model: k2-fsa/OmniVoice-ref
   model_url: https://huggingface.co/k2-fsa/OmniVoice
   mode: ref
@@ -16778,4 +18455,4 @@ benchmarks:
       ref_sec: 7.14
       cer: 0.2817
       wer: 0.6316
-updated: '2026-10-02'
+updated: '2026-10-09'

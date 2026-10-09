@@ -1812,6 +1812,1807 @@ benchmarks:
       ref_sec: 5.72
       cer: 0.0612
       wer: 0.2857
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.725
+  num_scored: 200
+  cer: 0.1125
+  wer: 0.286
+  accuracy: 0.8875
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8062
+  score: 0.8062
+  per_source:
+    bible:
+      sbs: 0.725
+      cer: 0.1125
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Mo̱ne̱ i ŋu mbo̱gya na de̱e̱kpa na e̱bɔɔre̱e̱ bwe̱e̱tɔ.
+      sbs: 0.66
+      gen_sec: 3.75
+      ref_sec: 4.72
+      cer: 0.3056
+      wer: 0.6667
+    bible_00001:
+      source: bible
+      text: Kukyure kake ko̱ be̱e̱ ne̱ Yeesuu a be̱e̱ yɔ ke̱bware̱ko̱re̱kyaŋ‑nɔ ya kaapo̱ abware̱se̱ŋ.
+        Saŋ amo̱‑ɔ ɔnyare̱ ko̱ mɔ bo̱ mfe̱ŋ na mò̱ kigyisesare̱e̱ a wu.
+      sbs: 0.7408
+      gen_sec: 11.43
+      ref_sec: 13.68
+      cer: 0.0476
+      wer: 0.16
+    bible_00002:
+      source: bible
+      text: Ne̱ Ɔbɔnsam ne̱ bo̱ be̱e̱ ba te̱e̱ mò̱ ɛ Ɔkyɔrɔpo̱‑ɔ a ba mò̱ ase̱. Ne̱ ɔ yɛ, “Fo̱ i nyi
+        fe̱yɛ Wuribware̱ mò̱ gyi‑o e̱ gye̱ fo̱ kase̱ŋtiŋ, amo̱ fe̱raa sa a abu mɔ buruwi bodobodoo sa
+        fo̱ a fo̱ gyi.”
+      sbs: 0.6757
+      gen_sec: 13.56
+      ref_sec: 13.76
+      cer: 0.1587
+      wer: 0.3415
+    bible_00003:
+      source: bible
+      text: Se̱sɛ ne̱ Wuribware̱ a kufwiiŋe‑o te mò̱ kakpo̱nɔ‑rɔ‑ɔ e̱ taare̱ a o nu atɔ mɔ pɛɛɛ kaase̱,
+        amaa ɔko̱ ne̱ mò̱ kufwiiŋe‑o mo̱ŋ te mò̱‑rɔ‑ɔ maa taare̱ a o ŋu ke̱tɔ ne̱ ke̱ bo̱ ane̱ŋ a se̱sɛ‑ɔ
+        kakpo̱nɔ‑rɔ‑ɔ.
+      sbs: 0.7489
+      gen_sec: 15.61
+      ref_sec: 12.54
+      cer: 0.1111
+      wer: 0.4474
+    bible_00004:
+      source: bible
+      text: Mo̱ e̱ tɔwe̱ mo̱ i gywii mo̱ne̱ fe̱yɛ fo̱ i di tiikpa mfe̱ŋ ane̱ŋ‑aaa bo̱ fo̱ saŋ ne̱ fo̱
+        e̱ ka fo̱ ko̱kɔ a fo̱ lo̱we̱‑ɔ, na paso̱wa gbaa mo̱ŋ saŋ‑ɔ.”
+      sbs: 0.7644
+      gen_sec: 10.33
+      ref_sec: 11.62
+      cer: 0.0978
+      wer: 0.1935
+    bible_00005:
+      source: bible
+      text: Saŋ ne̱ Yeesuu e̱ tɔwe̱ amo̱‑ɔ, ne̱ kabɔɔ ko̱ a le̱e̱ Yayerus a lɔŋ‑ɔ‑rɔ bo̱ tɔwe̱ gywii Yayerus
+        fe̱yɛ, “Fo̱ kakye̱e̱sɛɛ‑ɔ a wu, amo̱se̱‑ɔ fo̱ ma lɛɛ sa a ɔkaapo̱po̱‑ɔ kpo̱ne̱ mò̱ e̱ye̱e̱.”
+      sbs: 0.7114
+      gen_sec: 13.56
+      ref_sec: 14.06
+      cer: 0.0667
+      wer: 0.1818
+    bible_00006:
+      source: bible
+      text: Ne̱ Yeesuu yɛ, “Mo̱ne̱ ya ko̱re̱ Wuribware̱ atɔ, mo̱ne̱ e̱ nya ke̱tɔ ne̱ mo̱ne̱ e̱ kpa‑ɔ.
+        Mo̱ne̱ ya buwi kpa Wuribware̱ a e̱kpa‑ɔ, mo̱ne̱ i ŋu ke̱tɔ ne̱ mo̱ne̱ e̱ kpa‑ɔ. Mo̱ne̱ ya ye̱re̱
+        kawu te̱e̱ mò̱, ɔ taye̱ po̱ne̱‑ɔ, na mo̱nꞌ nya lweero.
+      sbs: 0.8047
+      gen_sec: 16.72
+      ref_sec: 14.48
+      cer: 0.0805
+      wer: 0.1591
+    bible_00007:
+      source: bible
+      text: Ne̱ agyase̱po̱ anyɔ amo̱ a ya waa ane̱ŋ ne̱ Yeesuu a tɔwe̱ gywii bamo̱ fe̱yɛ bo̱ waa‑ɔ.
+      sbs: 0.7178
+      gen_sec: 6.14
+      ref_sec: 6.42
+      cer: 0.0847
+      wer: 0.1176
+    bible_00008:
+      source: bible
+      text: Amaa ke̱tɔ ko̱ e̱ bo̱‑rɔ na ko̱ kyɔ ne̱ mo̱ne̱ e̱ kpa fe̱raa, amɔ mo̱nꞌ lɔŋŋɔ mfe̱ŋ ne̱ maŋ
+        agyi e̱ gyaŋŋe̱ ba waa mbraa ba sa maŋ‑ɔ.
+      sbs: 0.7185
+      gen_sec: 9.73
+      ref_sec: 9.98
+      cer: 0.0575
+      wer: 0.2143
+    bible_00009:
+      source: bible
+      text: Amo̱ fe̱raa, bamo̱ ne̱ bo̱ mo̱ŋ gye̱ Yudaa awuye‑o a nu ane̱ŋ‑ɔ, ne̱ baa kyo̱rɔ ke̱tɔ ne̱
+        Wuribware̱ a tɔwe̱‑ɔ. Ne̱ bamo̱ ne̱ Wuribware̱ a kyɔ lee fe̱yɛ bo̱ nya ŋkpa na kukyure ne̱ a mo̱ŋ
+        de kɛɛ‑ɔ a kii Yeesuu akɔɔre̱gyipo̱.
+      sbs: 0.7319
+      gen_sec: 16.72
+      ref_sec: 12.4
+      cer: 0.3576
+      wer: 0.381
+    bible_00010:
+      source: bible
+      text: Bo̱ le̱e̱ fe̱yɛ ɔke̱maa ne̱ o bu mò̱ e̱ye̱e̱ ke̱dabe̱‑ɔ, mò̱ ne̱ Wuribware̱ e̱ baa kaase̱.
+        Ne̱ ɔke̱maa mɔ ne̱ ɔ baa mò̱ e̱ye̱e̱ kaase̱‑ɔ, Wuribware̱ e̱ sa mò̱ ke̱dabe̱.”
+      sbs: 0.7765
+      gen_sec: 11.18
+      ref_sec: 11.36
+      cer: 0.0971
+      wer: 0.4667
+    bible_00011:
+      source: bible
+      text: Mo̱ne̱ a mo̱ŋ taare̱ ba kase̱ŋtiŋ bo̱ kra kaye̱‑rɔ atɔ timaa‑o, e̱me̱ne̱ ne̱ Wuribware̱ e̱
+        waa na ɔ taa so̱so̱ a atɔ timaa kase̱ŋtiŋ‑o bo̱ sa mo̱ne̱ a mo̱nꞌ kra?
+      sbs: 0.7318
+      gen_sec: 11.86
+      ref_sec: 9.82
+      cer: 0.0561
+      wer: 0.2
+    bible_00012:
+      source: bible
+      text: Amo̱se̱‑ɔ, mbe̱yɔmɔ, mo̱nꞌ nare̱ me̱naŋ me̱naŋ ya tɔwe̱ gywii mò̱ agyase̱po̱‑ɔ fe̱yɛ Wuribware̱
+        a kyiŋŋi mò̱ le̱e̱ lowi‑ro, ne̱ mbe̱yɔmɔ ɔ gye̱ bamo̱ ŋkpɛɛ o yii Galile̱ya swe̱e̱re̱ se̱. Mfe̱ŋ‑ɔ
+        ba ŋu mò̱. Mo̱ ase̱ŋ a lo̱we̱.”
+      sbs: 0.6779
+      gen_sec: 16.8
+      ref_sec: 14.02
+      cer: 0.0878
+      wer: 0.2432
+    bible_00013:
+      source: bible
+      text: Ane̱ Kristoo ayaa‑rɔ aye̱re̱po̱ fe̱raa, m be̱e̱ mo̱ e̱ tɔwe̱ fe̱yɛ ane̱ de te̱maa bwe̱e̱tɔ,
+        ne̱ ane̱ e̱ yo̱rɔwe̱ bwe̱e̱tɔ fe̱yɛ ane̱ yɔwe̱ ane̱ ŋyo̱wɔre̱ bo̱ sii swe̱e̱re̱ mɔ se̱, na ane̱
+        yɔ pe̱ ane̱ nyaŋpe̱ Yeesuu ase̱.
+      sbs: 0.7352
+      gen_sec: 15.27
+      ref_sec: 13.92
+      cer: 0.0429
+      wer: 0.1053
+    bible_00014:
+      source: bible
+      text: Bamo̱ ya waa amo̱‑ɔ, ba nya ko̱tɔko̱ a bo̱ bo̱ be̱ya sa bamo̱ e̱ye̱e̱, n gye̱ atanne̱ fe̱raa
+        ne̱e̱, amaa a gye̱ kapo̱tɛɛ ne̱ ba ye̱re̱ se̱ a bo̱ bo̱ nya ŋkpa na kukyure ne̱ a mo̱ŋ de kɛɛ‑ɔ
+        kase̱ŋtiŋ.
+      sbs: 0.723
+      gen_sec: 14.07
+      ref_sec: 13.18
+      cer: 0.0472
+      wer: 0.1
+    bible_00015:
+      source: bible
+      text: Saŋ ne̱ bo̱ maa se̱ ba saŋŋe̱ kuruma‑o, ne̱ mò̱ wuye‑ana a bise fe̱yɛ, “Nte̱tɔ se̱ ne̱ mo̱ne̱
+        e̱ saŋŋe̱ kuruma‑o?”
+      sbs: 0.7047
+      gen_sec: 8.45
+      ref_sec: 5.78
+      cer: 0.1944
+      wer: 0.3333
+    bible_00016:
+      source: bible
+      text: Amo̱se̱‑ɔ ne̱ asoogyaa‑o a te̱ŋŋe̱ ife ne̱ kako̱re̱e̱gyii de‑ro‑o, ne̱ kako̱re̱e̱gyii‑o a
+        se̱re̱ ka yii.
+      sbs: 0.7107
+      gen_sec: 7.59
+      ref_sec: 7.52
+      cer: 0.3382
+      wer: 0.6
+    bible_00017:
+      source: bible
+      text: Mfe̱ŋ ne̱ baa gyiiri bamo̱ e̱ko̱re̱e̱‑ɔ bo̱ be̱ya ke̱pare̱‑ɔ kideŋbe si, ne̱ baa yɔwe̱ ke̱tɔ
+        ke̱maa, ne̱ baa gya Yeesuu si.
+      sbs: 0.747
+      gen_sec: 8.87
+      ref_sec: 8.94
+      cer: 0.061
+      wer: 0.1429
+    bible_00018:
+      source: bible
+      text: Fe̱yɛ ane̱ŋ ne̱ fo̱ fɔŋfɔŋ a ŋu‑o, a mo̱ŋ kyɔ ŋke kudu ŋnyɔ ne̱e̱ fe̱yɛ mo̱ a yɔ Yɛro̱salɛm
+        a ŋ ya suŋ Wuribware̱ mò̱ suŋkpa mfe̱ŋ.
+      sbs: 0.742
+      gen_sec: 10.5
+      ref_sec: 8.7
+      cer: 0.0337
+      wer: 0.2222
+    bible_00019:
+      source: bible
+      text: Ne̱ Simeyɔŋ a yure bamo̱, ne̱ ɔɔ tɔwe̱ gywii Mariya fe̱yɛ,
+      sbs: 0.6759
+      gen_sec: 4.35
+      ref_sec: 3.74
+      cer: 0.2195
+      wer: 0.5455
+    bible_00020:
+      source: bible
+      text: Ne̱ Yeesuu a buruwaa tɔwe̱ gywii lamaŋ ne̱ ba nu mò̱ ase̱ŋ‑ɔ fe̱yɛ, “Mo̱ne̱ ya ŋu awo̱re̱
+        a le̱e̱ kyɔwe̱ twɛɛkpa, amɔ mo̱ne̱ yɛ bware̱ e̱ kpa a ɔ ba, na kase̱ŋtiŋ ɔ ba.
+      sbs: 0.7394
+      gen_sec: 12.29
+      ref_sec: 12.52
+      cer: 0.036
+      wer: 0.1176
+    bible_00021:
+      source: bible
+      text: Wuribware̱ so̱so̱ a ke̱laŋŋe̱rɔ‑ɔ e̱ laŋŋe̱ bamo̱ se̱, na bamo̱ aa Yeesuu e̱ tɔwe̱ ane̱ŋ ne̱
+        a ya saŋ kafwe̱e̱ fe̱yɛ o wu Yɛro̱salɛm maŋ‑nɔ ane̱ŋ ne̱ Wuribware̱ a kra fe̱yɛ o wu‑o.
+      sbs: 0.7377
+      gen_sec: 13.74
+      ref_sec: 13.04
+      cer: 0.0
+      wer: 0.0
+    bible_00022:
+      source: bible
+      text: Saŋ ne̱ ane̱ a fo̱ Roma maŋ‑nɔ‑ɔ, ne̱ baa sa Pɔɔl kpa fe̱yɛ ɔ ya kye̱na mfe̱ŋ ne̱ ɔ kpa‑ɔ,
+        amaa baa lee soogyaanyi ko̱ ne̱ ɔ de̱e̱re̱ mò̱ se̱, na ɔ ma nya se̱re̱‑ɔ.
+      sbs: 0.7739
+      gen_sec: 11.78
+      ref_sec: 10.76
+      cer: 0.0952
+      wer: 0.2286
+    bible_00023:
+      source: bible
+      text: Mò̱ duŋ maa fwii, ne̱ ɔ mo̱ŋ de ɔko̱ do̱ŋdaa.
+      sbs: 0.7195
+      gen_sec: 3.41
+      ref_sec: 3.44
+      cer: 0.1724
+      wer: 0.7
+    bible_00024:
+      source: bible
+      text: Saŋ ne̱ Feesitus a ba Kaye̱sare̱ya maŋ‑nɔ bo̱ gyi mfe̱ŋ a swe̱e̱re̱‑ɔ se̱ kigominaa‑o, ke̱mo̱
+        ŋke nsa ne̱ ɔɔ le̱e̱ mfe̱ŋ yɔ Yɛro̱salɛm maŋ‑nɔ na ɔ ya ka Yudaa awuye agye̱ŋkpɛɛpo̱‑ɔ kanɔ.
+      sbs: 0.681
+      gen_sec: 14.76
+      ref_sec: 12.44
+      cer: 0.1154
+      wer: 0.3438
+    bible_00025:
+      source: bible
+      text: Ne̱ ke̱yaafɔre̱ nyɔse̱po̱‑ɔ a ba mò̱ nyaŋpe̱‑ɔ akatɔ‑rɔ, ne̱ ɔɔ tɔwe̱ gywii mò̱ fe̱yɛ, ‘Mo̱
+        nyaŋpe̱, ke̱e̱ siidii ŋkpe̱ŋ alafa anyɔ ne̱ fo̱ a taa bo̱ sa mo̱‑ɔ. Ŋkee be̱e̱ ke̱e̱ siidii ŋkpe̱ŋ
+        alafa anyɔ ne̱ mo̱ a nya bo̱ tii si‑o.’
+      sbs: 0.7166
+      gen_sec: 17.15
+      ref_sec: 13.7
+      cer: 0.0604
+      wer: 0.1905
+    bible_00026:
+      source: bible
+      text: N gye̱ ane̱ŋ, bamo̱ akatɔ i buŋŋi a bo̱ ŋu atɔ,
+      sbs: 0.709
+      gen_sec: 3.67
+      ref_sec: 5.92
+      cer: 0.2903
+      wer: 0.5455
+    bible_00027:
+      source: bible
+      text: na bo̱ da mo̱ paara, na bo̱ mɔɔ mo̱. Amaa ke̱mo̱ ŋke nsa, mo̱ i kyiŋŋi a n le̱e̱ lowi‑ro.”
+      sbs: 0.7696
+      gen_sec: 6.57
+      ref_sec: 5.8
+      cer: 0.1786
+      wer: 0.35
+    bible_00028:
+      source: bible
+      text: Mo̱ne̱ ne̱ ako̱ŋ e̱ mɔɔ mo̱ne̱ mbe̱yɔmɔ‑ɔ, mo̱ne̱ de ŋyure,
+      sbs: 0.6873
+      gen_sec: 4.27
+      ref_sec: 4.3
+      cer: 0.1081
+      wer: 0.3
+    bible_00029:
+      source: bible
+      text: Ɔke̱maa maa taare̱ a o gyiiri amo̱‑ɔ ikii. Amo̱se̱ se̱‑ɔ mo̱nꞌ yuri e̱ye̱e̱, na mo̱ne̱ ma
+        waa ke̱bɔye̱ ko̱.
+      sbs: 0.7087
+      gen_sec: 7.34
+      ref_sec: 7.06
+      cer: 0.2899
+      wer: 0.5789
+    bible_00030:
+      source: bible
+      text: Mo̱ e̱ kpa fe̱yɛ mo̱nꞌ lee mo̱ne̱ e̱ye̱e̱ le̱e̱ ase̱ŋ‑nɔ. Mbe̱yɔmɔ ɔnyare̱ ne̱ ɔ mo̱ŋ tɛɛ
+        waare̱e̱‑ɔ, ane̱ nyaŋpe̱ a asuŋ‑o tiri mò̱, ne̱ ɔ le̱ŋ e̱ye̱e̱ fe̱yɛ ɔ waa ke̱tɔ ne̱ ki i gyi
+        ane̱ nyaŋpe̱ akatɔ‑ɔ.
+      sbs: 0.7534
+      gen_sec: 14.67
+      ref_sec: 13.52
+      cer: 0.1085
+      wer: 0.2632
+    bible_00031:
+      source: bible
+      text: Amaa sa fo̱ kakye̱na‑rɔ na ke̱tɔ ke̱maa ne̱ fo̱ e̱ kaapo̱‑ɔ se̱. De̱e̱ kya se̱ gya e̱kpa mɔ
+        se̱ keŋkeŋ, a le̱e̱ fe̱yɛ fo̱ ya waa ane̱ŋ, fo̱ e̱ mo̱rɔwe̱ fo̱ fɔŋfɔŋ e̱ye̱e̱ na bamo̱ ne̱ bo̱
+        gya fo̱ kanɔ se̱‑ɔ.
+      sbs: 0.7189
+      gen_sec: 14.33
+      ref_sec: 12.88
+      cer: 0.1094
+      wer: 0.2439
+    bible_00032:
+      source: bible
+      text: A be̱e̱ a mo̱ŋ gye̱ fe̱yɛ ɔkye̱e̱ se̱ ne̱ Wuribware̱ a twe̱e̱ ɔnyare̱. Amaa ɔnyare̱ se̱ ne̱
+        ɔɔ twe̱e̱ ɔkye̱e̱.
+      sbs: 0.7177
+      gen_sec: 7.25
+      ref_sec: 6.24
+      cer: 0.0435
+      wer: 0.2
+    bible_00033:
+      source: bible
+      text: Ane̱ se̱sɛ dimaadi, ane̱ a gye̱ kaye̱‑rɔ ase̱sɛ‑ɔ se̱‑ɔ, ane̱ du ne̱e̱ fe̱yɛ mò̱ ne̱ ɔɔ le̱e̱
+        e̱se̱‑rɔ ba‑ɔ. Bamo̱ ne̱ bo̱ gye̱ Wuribware̱ se̱ ase̱sɛ‑ɔ du ne̱e̱ fe̱yɛ mò̱ ne̱ ɔɔ le̱e̱ Wuribware̱
+        se̱‑ɔ.
+      sbs: 0.7275
+      gen_sec: 13.73
+      ref_sec: 13.28
+      cer: 0.0325
+      wer: 0.1143
+    bible_00034:
+      source: bible
+      text: Ne̱ baa taa kawo̱re̱taa ko̱ bo̱ me̱ra Yeesuu aŋu si. Gominaa‑o a kyo̱rɛɛ kamo̱ se̱ fe̱yɛ,
+        “Mo̱nꞌ ke̱e̱ Yeesuu, Yudaa awuye owure‑o.”
+      sbs: 0.6754
+      gen_sec: 9.81
+      ref_sec: 12.76
+      cer: 0.1
+      wer: 0.4091
+    bible_00035:
+      source: bible
+      text: Ne̱ ɔɔ waa kakpo̱nɔ tɔwe̱ abware̱se̱ŋ ke̱bware̱ko̱re̱kyaŋ‑ɔ‑rɔ mfe̱ŋ. Saŋ ne̱ Prisikila na
+        Akwila a nu mò̱ ase̱ŋ ne̱ ɔ tɔwe̱‑ɔ, ne̱ baa yaa mò̱ bamo̱ lɔŋ‑nɔ ya kaapo̱ mò̱ Wuribware̱
+        a e̱kpa‑ɔ‑rɔ kyɛɛkyɛɛ.
+      sbs: 0.7217
+      gen_sec: 16.21
+      ref_sec: 13.2
+      cer: 0.0355
+      wer: 0.1515
+    bible_00036:
+      source: bible
+      text: Amo̱se̱ se̱‑ɔ, ane̱ i de ateese gyisɛ na atɔ buŋsɛ, a baare sa ane̱.
+      sbs: 0.7148
+      gen_sec: 5.12
+      ref_sec: 5.16
+      cer: 0.1087
+      wer: 0.5
+    bible_00037:
+      source: bible
+      text: Amo̱se̱‑ɔ n gye̱ bamo̱ ne̱ bo̱ mo̱ŋ gye̱ e̱bɔye̱ awaapo̱‑ɔ se̱ ne̱ mo̱ a ba, amaa bamo̱ ne̱
+        bo̱ gye̱ e̱bɔye̱ awaapo̱‑ɔ se̱ ne̱ mo̱ a ba, na m bo̱ tɔwe̱ gywii bamo̱ fe̱yɛ bo̱ nu bamo̱ e̱ye̱e̱
+        kiŋŋi le̱e̱ bamo̱ e̱bɔye̱‑rɔ.”
+      sbs: 0.7392
+      gen_sec: 14.59
+      ref_sec: 14.16
+      cer: 0.0224
+      wer: 0.0714
+    bible_00038:
+      source: bible
+      text: Ane̱ŋ ne̱ ke̱kpa e̱ waa a ke̱ ba bamo̱ mbo̱ŋtɔ‑rɔ se̱, ne̱ ŋ yɛ fo̱ sa kanɔ a bo̱ yɔwe̱ ane̱ŋ
+        a atɔ‑ɔ. Na bo̱ nya mfɛɛre̱ timaa abɛɛ se̱, na bo̱ lee mme‑ro kpa abɛɛ, na bamo̱ ko̱kɔɔre̱gyi
+        nya waa ko̱kyɔ.
+      sbs: 0.71
+      gen_sec: 14.93
+      ref_sec: 10.3
+      cer: 0.0827
+      wer: 0.1429
+    bible_00039:
+      source: bible
+      text: Ne̱ mo̱ne̱ a mɔɔ mò̱ ne̱ ɔɔ kaapo̱ ane̱ kpa ne̱ ane̱ e̱ gya se̱, na ane̱ nya ŋkpa na kukyure
+        ne̱ a mo̱ŋ de kɛɛ‑ɔ. Amaa Wuribware̱ a kyiŋŋi mò̱ le̱e̱ lowi‑ro, ne̱ ane̱ pɛɛɛ a ŋu.
+      sbs: 0.7483
+      gen_sec: 12.71
+      ref_sec: 12.44
+      cer: 0.0526
+      wer: 0.0789
+    bible_00040:
+      source: bible
+      text: Ke̱tɔ ne̱ ŋ nyi mbe̱yɔmɔ‑ɔ gye̱ kafwe̱e̱ ko̱ ne̱e̱.
+      sbs: 0.7025
+      gen_sec: 3.41
+      ref_sec: 3.28
+      cer: 0.25
+      wer: 0.5556
+    bible_00041:
+      source: bible
+      text: Hare̱e̱ ba te̱ŋ fo̱ ko̱twe̱e̱tu bɛɛɛ bo̱ mo̱ŋ te̱ŋ ooo, a mo̱ŋ gye̱ atɔ ne̱ a tiri‑o. Ke̱tɔ
+        ne̱ ki tiri‑o e̱ gye̱ fe̱yɛ fo̱ gya Wuribware̱ a mbraa‑ɔ se̱.
+      sbs: 0.7698
+      gen_sec: 10.67
+      ref_sec: 8.96
+      cer: 0.0619
+      wer: 0.1333
+    bible_00042:
+      source: bible
+      text: Ne̱ Yeesuu a kya se̱ bise fe̱yɛ, “Nte̱tɔ se̱ ne̱ mo̱ne̱ e̱ te̱e̱ mo̱ ɛ ‘Mo̱ nyaŋpe̱, mo̱ nyaŋpe̱,’
+        na mo̱ne̱ mɔ mo̱ne̱ maa waa ke̱tɔ ne̱ mo̱ e̱ tɔwe̱ mo̱ i gywii mo̱ne̱‑ɔ ne̱e̱?
+      sbs: 0.7578
+      gen_sec: 11.35
+      ref_sec: 10.3
+      cer: 0.0476
+      wer: 0.1429
+    bible_00043:
+      source: bible
+      text: Mo̱ŋ kyo̱rɛɛ atɔ mɔ bo̱ waa mo̱ne̱ ipeere ne̱e̱. Amaa mo̱ a waa ne̱e̱ a m bo̱ yii mo̱ne̱ se̱
+        fe̱yɛ mo̱ gyi‑ana ne̱ mo̱ e̱ kpa bamo̱ ase̱ŋ bwe̱e̱tɔ‑ɔ.
+      sbs: 0.7316
+      gen_sec: 9.98
+      ref_sec: 8.6
+      cer: 0.0968
+      wer: 0.2667
+    bible_00044:
+      source: bible
+      text: Amo̱ kamɛɛ‑rɔ‑ɔ, ne̱ Yeesuu agyase̱po̱‑ɔ a ba mò̱ ase̱ keri si to̱ŋ ko̱ bo̱ bise mò̱ fe̱yɛ,
+        “Nte̱tɔ se̱ ne̱ ane̱ mo̱ŋ taare̱ gya ibrisi amo̱‑ɔ ne̱e̱?”
+      sbs: 0.6705
+      gen_sec: 10.41
+      ref_sec: 11.54
+      cer: 0.1789
+      wer: 0.2222
+    bible_00045:
+      source: bible
+      text: N gye̱ e̱paso̱wa adunyɔ ne̱ bo̱ de ba sɔɔ nte̱ye̱te̱ye̱ ŋnyɔ‑ɔ ɔɔɔ? Amaa mo̱ e̱ tɔwe̱ mo̱
+        i gywii mo̱ne̱ fe̱yɛ kako̱ŋko̱ gbaa maa wu na mo̱ne̱ se̱ Wuribware̱ mo̱ŋ sure.
+      sbs: 0.7218
+      gen_sec: 11.86
+      ref_sec: 9.8
+      cer: 0.1607
+      wer: 0.3871
+    bible_00046:
+      source: bible
+      text: Kaye̱ ŋke‑o, ne̱ maŋ abre̱sɛ‑ɔ na Wuribware̱ alɔŋŋɔpo̱ abre̱sɛ‑ɔ na Wuribware̱ mbraa akaapo̱po̱‑ɔ
+        a bo̱ gyaŋŋe̱, ne̱ baa baa Yeesuu bamo̱ akatɔ‑rɔ.
+      sbs: 0.785
+      gen_sec: 12.12
+      ref_sec: 12.08
+      cer: 0.1048
+      wer: 0.1818
+    bible_00047:
+      source: bible
+      text: Ne̱ ane̱ŋ ne̱ Simeyɔŋ a tɔwe̱ bo̱ le̱e̱ kayaagyi‑o si‑o a kpe̱ŋ kayaagyi‑o mò̱ se̱ na mò̱
+        nyi e̱ye̱e̱.
+      sbs: 0.7033
+      gen_sec: 7.25
+      ref_sec: 7.38
+      cer: 0.1212
+      wer: 0.2632
+    bible_00048:
+      source: bible
+      text: Ne̱ mò̱ aa mò̱ agyase̱po̱ amo̱ a kyo̱ŋ be̱e̱ yɔ kamaŋgyii ko̱ se̱.
+      sbs: 0.6877
+      gen_sec: 4.35
+      ref_sec: 4.54
+      cer: 0.0476
+      wer: 0.1538
+    bible_00049:
+      source: bible
+      text: Ne̱ baa tɔwe̱ abware̱se̱ŋ gywii mò̱ aa mò̱ lɔŋ‑nɔ awuye pɛɛɛ.
+      sbs: 0.6728
+      gen_sec: 4.69
+      ref_sec: 3.34
+      cer: 0.2093
+      wer: 0.7273
+    bible_00050:
+      source: bible
+      text: Amaa Peetroo na Yohanee a be̱ŋŋaa bamo̱ ne̱e̱ fe̱yɛ, “To, mbe̱yɔmɔ mo̱ne̱ fɔŋfɔŋ lee ke̱mo̱
+        ne̱ ki bware Wuribware̱ ase̱‑ɔ, ane̱ bu mo̱ne̱, bɛɛɛ ane̱ bu Wuribware̱?
+      sbs: 0.7684
+      gen_sec: 12.63
+      ref_sec: 11.16
+      cer: 0.0265
+      wer: 0.1111
+    bible_00051:
+      source: bible
+      text: Atɔ mɔ a gye̱ ane̱ŋ‑ɔ se̱‑ɔ, a mo̱ŋ bware fe̱yɛ mo̱nꞌ kaapo̱ mo̱ne̱ e̱ye̱e̱. Abre̱sɛ ya tɔwe̱
+        fe̱yɛ, “Yiisi kafo̱ŋfwe̱e̱ e̱ gye̱ ne̱ ɔ sa a bodobodoo pɛɛɛ tiŋ.”
+      sbs: 0.7642
+      gen_sec: 11.26
+      ref_sec: 9.58
+      cer: 0.0777
+      wer: 0.2069
+    bible_00052:
+      source: bible
+      text: O de mò̱ gyi‑ana mbregyii ana ne̱ Wuribware̱ a lee fe̱yɛ bo̱ kii mò̱ akyaamɛɛ bo̱ko̱, na
+        bo̱ de̱e̱ tɔwe̱ ase̱ŋ ne̱ o lee ɔ kaapo̱ bamo̱‑ɔ gywii ase̱sɛ‑ɔ.
+      sbs: 0.7516
+      gen_sec: 10.84
+      ref_sec: 11.58
+      cer: 0.068
+      wer: 0.2414
+    bible_00053:
+      source: bible
+      text: Ne̱ ɔɔ gye̱ bamo̱ ke̱gye̱ŋkpɛɛ yaa Kanaŋ swe̱e̱re̱ se̱, ne̱ oo kpuri nsuro nsunoo ase̱sɛ ne̱
+        bo̱ te mfe̱ŋ‑ɔ, ne̱ ɔɔ taa bamo̱ swe̱e̱re̱ bo̱ kii ane̱ ade̱daapo̱‑ɔ lee.
+      sbs: 0.7421
+      gen_sec: 11.86
+      ref_sec: 11.22
+      cer: 0.1455
+      wer: 0.4138
+    bible_00054:
+      source: bible
+      text: Ne̱ mò̱ ko̱dɔɔ a ɔde̱e̱re̱se̱po̱‑ɔ a be̱ŋŋaa mò̱ fe̱yɛ, ‘Mo̱ nyaŋpe̱, yɔwe̱ ke̱mo̱. Sa ke̱mo̱
+        kasu ko̱ŋko̱ kpeŋ. Mo̱ i kwii a m bo̱ muruwaa ke̱mo̱ na n swii e̱naate̱ igyini bo̱ waa‑rɔ.
+      sbs: 0.7552
+      gen_sec: 13.31
+      ref_sec: 14.84
+      cer: 0.1197
+      wer: 0.4545
+    bible_00055:
+      source: bible
+      text: Bo̱ le̱e̱ fe̱yɛ Wuribware̱ mo̱ŋ te̱e̱ ane̱ ne̱e̱ fe̱yɛ ane̱ bo̱ waa kakye̱e̱kpa bɛɛɛ kanyare̱kpa.
+        Amaa ɔɔ te̱e̱ ane̱ fe̱yɛ ane̱ bo̱ kii ase̱sɛ timaa ne̱ bo̱ mo̱ŋ de iyisi‑o.
+      sbs: 0.743
+      gen_sec: 12.2
+      ref_sec: 9.92
+      cer: 0.2456
+      wer: 0.3333
+    bible_00056:
+      source: bible
+      text: Ase̱sɛ mɔ, n gye̱ sa ne̱ baa bwe̱e̱ fe̱yɛ ane̱ŋ ne̱ mo̱ne̱ e̱ fa‑ɔ. Mbe̱yɔmɔ saŋ a gye̱ gye̱gyaye̱
+        ne̱e̱, kyɔwe̱ mo̱ŋ tɛɛ daŋ.
+      sbs: 0.7384
+      gen_sec: 8.62
+      ref_sec: 7.74
+      cer: 0.0127
+      wer: 0.0417
+    bible_00057:
+      source: bible
+      text: Ke̱tɔ se̱ ne̱ a mo̱ŋ waa bamo̱ kɔne̱ pɛɛɛ‑ɔ e̱ gye̱ fe̱yɛ mò̱ a tɔwe̱ fe̱yɛ bo̱ maa lɛɛ ŋu
+        mò̱‑ɔ. Ne̱ baa yaa mò̱ ya bo̱ fo̱ mò̱ ko̱re̱e̱ ase̱.
+      sbs: 0.73
+      gen_sec: 9.3
+      ref_sec: 9.36
+      cer: 0.0465
+      wer: 0.1613
+    bible_00058:
+      source: bible
+      text: Ne̱ Wuribware̱ alɔŋŋɔpo̱ abre̱sɛ‑ɔ na agyaŋŋe̱po̱‑ɔ pɛɛɛ a buwi kpa kanɔte̱ŋ ne̱ ba ye̱re̱
+        se̱ na Yeesuu gyi ke̱pɔ a bo̱ nya mɔɔ mò̱‑ɔ.
+      sbs: 0.7041
+      gen_sec: 10.33
+      ref_sec: 13.1
+      cer: 0.0638
+      wer: 0.5
+    bible_00059:
+      source: bible
+      text: Ape̱nnapo̱ amo̱ e̱ tɔwe̱ kaye̱‑rɔ ase̱ŋ wo̱re̱ ne̱e̱, a le̱e̱ fe̱yɛ bo̱ gye̱ kaye̱‑rɔ ase̱sɛ
+        ne̱e̱. Ne̱ kaye̱‑rɔ ase̱sɛ gya bamo̱ ase̱ŋ se̱.
+      sbs: 0.7691
+      gen_sec: 9.39
+      ref_sec: 8.22
+      cer: 0.0116
+      wer: 0.0435
+    bible_00060:
+      source: bible
+      text: Ke̱mo̱ kaye̱ ŋke‑o ne̱ baa fo̱ Kaye̱sare̱ya maŋ‑nɔ kyɔ ya to̱ fe̱yɛ Kooniiliyus na mò̱ ko̱we̱bɛɛ‑ana
+        na mò̱ nyare̱‑ana ne̱ ɔɔ te̱e̱‑ɔ a waa siraa bo̱ te bo̱ gywii mò̱.
+      sbs: 0.7582
+      gen_sec: 12.2
+      ref_sec: 11.52
+      cer: 0.1607
+      wer: 0.3667
+    bible_00061:
+      source: bible
+      text: Daabii, fo̱ e̱ tɔwe̱ a fo̱ gywii mò̱ ne̱e̱ fe̱yɛ, ‘Kyo̱ŋ ya de̱ŋa mo̱ ateese, na fo̱ taa
+        baa mo̱ pwɛɛ, ne̱ mo̱ ya gyi lo̱we̱, na ŋkee fo̱ dɛɛ nya kpa ya waa fo̱ fɔŋfɔŋ ateese.’
+      sbs: 0.7528
+      gen_sec: 12.46
+      ref_sec: 11.58
+      cer: 0.0885
+      wer: 0.2703
+    bible_00062:
+      source: bible
+      text: Ne̱ ako̱ŋ a ba Igyipiti na Kanaŋ e̱swe̱e̱re̱ se̱, ne̱ baa ŋu ase̱ŋ bwe̱e̱tɔ. Ne̱ ane̱ ade̱daapo̱‑ɔ
+        a kpa ateese kpo̱ne̱.
+      sbs: 0.7746
+      gen_sec: 8.79
+      ref_sec: 9.02
+      cer: 0.0253
+      wer: 0.1429
+    bible_00063:
+      source: bible
+      text: Ŋke nsi amo̱ adaŋpo̱kye̱e̱ na atrapo̱ i ŋu ase̱ŋ ne̱e̱ fɛɛ.
+      sbs: 0.687
+      gen_sec: 4.61
+      ref_sec: 5.3
+      cer: 0.175
+      wer: 0.3636
+    bible_00064:
+      source: bible
+      text: Mo̱ i gyi mo̱ne̱ kase̱ŋtiŋ fe̱yɛ mo̱ne̱ maa lɛɛ ŋu mo̱ mfaanɛɛ, amɔ saŋ a fo̱ fe̱yɛ m ba,
+        ne̱ mo̱ne̱ e̱ tɔwe̱ fe̱yɛ,
+      sbs: 0.7614
+      gen_sec: 8.19
+      ref_sec: 8.1
+      cer: 0.0405
+      wer: 0.125
+    bible_00065:
+      source: bible
+      text: fo̱ maa sa a mo̱ kayo̱wɔre̱ gyo ke̱gye̱raŋta‑rɔ.
+      sbs: 0.6944
+      gen_sec: 3.41
+      ref_sec: 3.6
+      cer: 0.1515
+      wer: 0.75
+    bible_00066:
+      source: bible
+      text: Saŋ amo̱‑ɔ, ne̱ Yeesuu agyase̱po̱‑ɔ a ba mò̱ ase̱. Ne̱ baa bise mò̱ fe̱yɛ, “Nsɛ e̱ gye̱
+        bre̱sɛ Wuribware̱ se̱ a kuwure‑o‑ro?”
+      sbs: 0.7408
+      gen_sec: 8.87
+      ref_sec: 8.68
+      cer: 0.0375
+      wer: 0.1364
+    bible_00067:
+      source: bible
+      text: Fo̱ a kaapo̱ mo̱ kpa ne̱ ɔ yaa mo̱ ŋkpa‑rɔ‑ɔ,
+      sbs: 0.7128
+      gen_sec: 3.24
+      ref_sec: 6.1
+      cer: 0.1429
+      wer: 0.5
+    bible_00068:
+      source: bible
+      text: Na Peetroo saŋ ɔ sa se̱ŋsa‑ɔ, ne̱ ko̱wo̱re̱ ko̱ kuyayu a le̱e̱ so̱so̱ bo̱ dɔŋŋɔ bamo̱ se̱.
+        Ne̱ kufu a nya Yeesuu agyase̱po̱‑ɔ saŋ ne̱ ko̱wo̱re̱ amo̱ i buŋ bamo̱ se̱‑ɔ.
+      sbs: 0.7523
+      gen_sec: 12.2
+      ref_sec: 13.92
+      cer: 0.1111
+      wer: 0.2258
+    bible_00069:
+      source: bible
+      text: Amo̱se̱‑ɔ mo̱nꞌ ŋu ase̱sɛ e̱wɛɛ fe̱yɛ ane̱ŋ ne̱ mo̱ne̱ se̱ Wuribware̱ i ŋu ase̱sɛ e̱wɛɛ‑ɔ.”
+      sbs: 0.6961
+      gen_sec: 6.57
+      ref_sec: 6.24
+      cer: 0.0678
+      wer: 0.2
+    bible_00070:
+      source: bible
+      text: Ne̱ ase̱sɛ a le̱e̱ e̱maŋ se̱ e̱maŋ se̱ ba Yeesuu ase̱. Saŋ ne̱ ase̱sɛ biribiri a bo̱ gyaŋŋe̱‑ɔ,
+        ne̱ Yeesuu a tɔwe̱ kitee mɔ gywii bamo̱ fe̱yɛ,
+      sbs: 0.7445
+      gen_sec: 10.41
+      ref_sec: 11.36
+      cer: 0.0316
+      wer: 0.1852
+    bible_00071:
+      source: bible
+      text: ane̱ e̱bɔye̱‑ɔ lee ane̱ i ke mò̱.
+      sbs: 0.6764
+      gen_sec: 2.22
+      ref_sec: 3.26
+      cer: 0.2
+      wer: 1.0
+    bible_00072:
+      source: bible
+      text: Ke̱tɔ se̱ ne̱ ane̱ e̱ kpa Wuribware̱ na ane̱ ko̱so̱bɛɛ‑ana ase̱ŋ‑ɔ e̱ gye̱ fe̱yɛ Kristoo ya
+        gye̱ ŋkpɛɛ kpa ane̱ ase̱ŋ.
+      sbs: 0.7445
+      gen_sec: 8.45
+      ref_sec: 7.8
+      cer: 0.0
+      wer: 0.0
+    bible_00073:
+      source: bible
+      text: Saŋ ne̱ oo gyi amo̱ pɛɛɛ lo̱we̱, ne̱ ɔ mo̱ŋ lɛɛ o de sɛye̱‑ɔ, ne̱ ako̱ŋ dabe̱ ko̱ a ba swe̱e̱re̱
+        amo̱ se̱.
+      sbs: 0.75
+      gen_sec: 7.17
+      ref_sec: 6.3
+      cer: 0.0781
+      wer: 0.1739
+    bible_00074:
+      source: bible
+      text: Amaa Yeesuu a kyɔ ŋu bamo̱ mfɛɛre̱‑ɔ, ne̱ ɔɔ tɔwe̱ gywii ke̱sare̱e̱ wusɛ wuye amo̱ ɛ, “Ko̱so̱
+        ba akatɔ‑rɔ mfe̱e̱.” Ne̱ ɔnyare̱‑ɔ a ko̱so̱ ye̱re̱ ba akatɔ‑rɔ mfe̱ŋ.
+      sbs: 0.6932
+      gen_sec: 11.86
+      ref_sec: 11.38
+      cer: 0.0561
+      wer: 0.1071
+    bible_00075:
+      source: bible
+      text: Ne̱ Yeesuu a tɔwe̱ gywii ɔnyare̱‑ɔ fe̱yɛ, “Sabraŋ‑nɔ igyono de idikpa, ne̱ mbo̱gyii de asaa
+        bo̱ da‑rɔ, amaa mo̱, dimaadi mò̱ gyi‑o, fe̱raa mo̱ŋ de mfe̱ŋ ne̱ mo̱ i di a n kyure‑o.”
+      sbs: 0.7271
+      gen_sec: 13.31
+      ref_sec: 13.36
+      cer: 0.1333
+      wer: 0.4545
+    bible_00076:
+      source: bible
+      text: Mo̱ ko̱so̱bɛɛ‑ana, m fe̱raa, mo̱ a bo̱ tɔwe̱ abware̱se̱ŋ gywii mo̱ne̱‑ɔ, mo̱ŋ ba ase̱ŋkpare̱gyi
+        dabe̱ dabe̱ na kanyiase̱ŋ ne̱ mo̱ a bo̱ tɔwe̱.
+      sbs: 0.7467
+      gen_sec: 10.33
+      ref_sec: 9.02
+      cer: 0.129
+      wer: 0.4783
+    bible_00077:
+      source: bible
+      text: Ne̱ oo bise mò̱ fe̱yɛ, ‘Mo̱ nyare̱, e̱me̱ne̱ ne̱ fo̱ a waa ba mfe̱e̱ na fo̱ mo̱ŋ buŋ ko̱ko̱fɔ‑rɔ
+        waagya‑ɔ ne̱e̱?’ Amaa se̱sɛ‑ɔ mo̱ŋ taare̱ lee kanɔ.
+      sbs: 0.7665
+      gen_sec: 10.33
+      ref_sec: 12.46
+      cer: 0.0326
+      wer: 0.1481
+    bible_00078:
+      source: bible
+      text: Peetroo a saŋ ɔ bo̱ ke̱kyaŋ‑ɔ so̱so̱ mfe̱ŋ ɔ fa ke̱tɔ ne̱ oo ŋu‑o mfɛɛre̱‑ɔ, ne̱ Wuribware̱
+        a kufwiiŋe‑o a tɔwe̱ gywii mò̱ fe̱yɛ, “Nu! Ase̱sɛ asa ko̱ bo̱ mfe̱e̱ ba kpa fo̱.
+      sbs: 0.7132
+      gen_sec: 12.71
+      ref_sec: 10.36
+      cer: 0.0446
+      wer: 0.1212
+    bible_00079:
+      source: bible
+      text: ‘Mo̱ e̱ gye̱ Wuribware̱, nyaŋpe̱ ne̱ fo̱ nana‑ana Abraham na Isak na Yakubu i suŋ‑o.’ Ne̱
+        kufu a nya Mosis, ne̱ ɔɔ yo̱ŋ, ŋkee ɔ maa lɛɛ taare̱ a ɔ de̱e̱re̱ kiyii ne̱ ke̱ e̱ kywɛɛ‑ɔ.
+      sbs: 0.7388
+      gen_sec: 13.31
+      ref_sec: 11.84
+      cer: 0.1261
+      wer: 0.2778
+    bible_00080:
+      source: bible
+      text: Awo̱re̱fɔɔ bwe̱e̱tɔ dɔŋ mo̱ se̱ ne̱e̱, amo̱ e̱ mo̱ŋ kyo̱ŋ, mo̱ kakpo̱nɔ maa di mo̱.
+      sbs: 0.7183
+      gen_sec: 5.8
+      ref_sec: 6.7
+      cer: 0.1765
+      wer: 0.4
+    bible_00081:
+      source: bible
+      text: Wuribware̱ a ke̱yaale̱ŋ‑ɔ sii si bo̱ yɔ nsu pɛɛɛ. Amɛye̱.
+      sbs: 0.7503
+      gen_sec: 4.44
+      ref_sec: 4.9
+      cer: 0.0
+      wer: 0.0
+    bible_00082:
+      source: bible
+      text: Saŋ ne̱ Yeesuu na Peetroo a lwee ko̱re̱e̱‑ɔ‑rɔ‑ɔ, ne̱ afwii‑o a yɔwe̱.
+      sbs: 0.6883
+      gen_sec: 5.46
+      ref_sec: 5.76
+      cer: 0.1489
+      wer: 0.1667
+    bible_00083:
+      source: bible
+      text: Ne̱ Yeesuu a tɔwe̱ bo̱ gye̱ kɛɛ fe̱yɛ, “To, abɛɛ asa mɔ‑rɔ, bamo̱ nsɛ ya kaapo̱ fe̱yɛ ɔnyare̱
+        ne̱ ayu‑o a da mò̱‑ɔ gye̱ mò̱ bɛɛko̱‑ɔ ne̱e̱?”
+      sbs: 0.7582
+      gen_sec: 9.64
+      ref_sec: 11.42
+      cer: 0.125
+      wer: 0.1852
+    bible_00084:
+      source: bible
+      text: Mo̱ a de̱ŋ kyo̱rɛɛ wo̱re̱ mɔ bo̱ kyo̱ŋwe̱ fo̱‑ɔ fe̱raa, n de te̱maa fe̱yɛ mo̱ e̱ ba a m bo̱
+        ŋu fo̱ mbe̱yɔmɔ.
+      sbs: 0.7263
+      gen_sec: 7.34
+      ref_sec: 5.84
+      cer: 0.0909
+      wer: 0.1304
+    bible_00085:
+      source: bible
+      text: Ane̱ i gyi awo̱re̱fɔɔ, amaa Wuribware̱ maa se̱re̱ a ɔ yɔwe̱ ane̱. Ba daye̱ ane̱ ba da swe̱e̱re̱,
+        amaa bo̱ maa taare̱ a bo̱ mɔɔ ane̱.
+      sbs: 0.7199
+      gen_sec: 9.13
+      ref_sec: 8.62
+      cer: 0.0698
+      wer: 0.3462
+    bible_00086:
+      source: bible
+      text: Amo̱se̱‑ɔ nu fo̱ e̱ye̱e̱ bo̱ le̱e̱ fo̱ ase̱ŋ bɔye̱ mɔ ne̱ fo̱ a fa‑ɔ se̱, na fo̱ ko̱re̱ Wuribware̱
+        fe̱yɛ ɔ taa fo̱ ase̱ŋ bɔye̱ mɔ bo̱ ke fo̱.
+      sbs: 0.7505
+      gen_sec: 9.22
+      ref_sec: 9.32
+      cer: 0.0119
+      wer: 0.0345
+    bible_00087:
+      source: bible
+      text: Ne̱ mò̱ fe̱raa a tɔwe̱ gywii Yeesuu fe̱yɛ, “Yeesuu, saŋ ne̱ fo̱ e̱ ba a fo̱ bo̱ gyi kuwure‑o,
+        fo̱ ma kaŋ taŋ mo̱ se̱.”
+      sbs: 0.7205
+      gen_sec: 8.19
+      ref_sec: 6.68
+      cer: 0.0676
+      wer: 0.16
+    bible_00088:
+      source: bible
+      text: Ne̱ bamo̱ ne̱ bo̱ bo̱ mfe̱ŋ‑ɔ pɛɛɛ mɔ e̱ye̱e̱ a kpe̱ŋ bamo̱. Ne̱ kufu a nya bamo̱, ne̱ baa
+        kyo̱rɔ Wuribware̱ na ba tɔwe̱ fe̱yɛ, “Ase̱ŋ dabe̱ ko̱ ne̱ ane̱ a ŋu ndɔɔ.”
+      sbs: 0.7276
+      gen_sec: 11.43
+      ref_sec: 12.74
+      cer: 0.0583
+      wer: 0.1515
+    bible_00089:
+      source: bible
+      text: Ne̱ ane̱ nyaŋpe̱ yɛ, ‘Nare̱, a le̱e̱ fe̱yɛ mo̱ i suŋ fo̱ ke̱fɔ a m bo̱ kyo̱ŋwe̱ nde̱ se̱ awuye‑o
+        ase̱.’ ”
+      sbs: 0.7215
+      gen_sec: 6.91
+      ref_sec: 7.16
+      cer: 0.0984
+      wer: 0.1429
+    bible_00090:
+      source: bible
+      text: mo̱ e̱ sa a bamo̱ atɔ kinyi pɛɛɛ waa kwaa.”
+      sbs: 0.6615
+      gen_sec: 3.07
+      ref_sec: 4.22
+      cer: 0.1379
+      wer: 0.6
+    bible_00091:
+      source: bible
+      text: Ɔke̱maa ne̱ o kisi mò̱ ko̱so̱bɛɛ‑ɔ gye̱ ɔmɔɔpo̱ ne̱e̱. Ne̱ mo̱ne̱ nyi dame̱naŋsɛ fe̱yɛ ɔmɔɔpo̱
+        ke̱maa mo̱ŋ de ŋkpa na kukyure ne̱ a mo̱ŋ de kɛɛ‑ɔ.
+      sbs: 0.7067
+      gen_sec: 10.75
+      ref_sec: 9.22
+      cer: 0.0714
+      wer: 0.1538
+    bible_00092:
+      source: bible
+      text: Ne̱ mbregyii ne̱ bo̱ mo̱ŋ bo̱ mfɛɛre̱‑ɔ a tɔwe̱ fe̱yɛ, ‘Oo! Oo! Oo! Ane̱ ifetiri i duŋ ooo.’
+        Ne̱ baa ko̱re̱ mbregyii anyiase̱ŋpo̱‑ɔ fe̱yɛ bo̱ sa bamo̱ mfɔ‑ɔ ŋko̱.
+      sbs: 0.7585
+      gen_sec: 11.86
+      ref_sec: 11.14
+      cer: 0.2095
+      wer: 0.3103
+    bible_00093:
+      source: bible
+      text: Amaa Yohanee a le̱ŋ e̱ye̱e̱ fe̱yɛ o kyurowi Yeesuu mfɛɛre̱. Ɔ yɛ, “Weetee a bware fe̱yɛ fo̱
+        e̱ gye̱ ne̱ fo̱ bɔ mo̱ asuu, amaa fo̱ ya ko̱ŋ ba mo̱ ase̱ fe̱yɛ m bɔ fo̱ asuu.”
+      sbs: 0.7049
+      gen_sec: 11.86
+      ref_sec: 11.7
+      cer: 0.1441
+      wer: 0.3611
+    bible_00094:
+      source: bible
+      text: Ne̱ lamaŋ‑ɔ pɛɛɛ yɛ, “Sa a ɔnyare̱ mɔ ke̱se̱bɔgyiiri ne̱ ane̱ e̱ sa mò̱‑ɔ kiŋŋi gya ane̱
+        aa ane̱ agyi si.”
+      sbs: 0.6534
+      gen_sec: 7.59
+      ref_sec: 8.18
+      cer: 0.1143
+      wer: 0.1905
+    bible_00095:
+      source: bible
+      text: Amaa fo̱ ya gyi awo̱re̱fɔɔ bo̱ le̱e̱ ane̱ŋ ne̱ fo̱ gye̱ Kristoonyi‑o si, fo̱ ma sa a ipeere
+        nya fo̱, amaa kyo̱rɔ Wuribware̱ fe̱yɛ fo̱ a de Kristoo ke̱nyare̱.
+      sbs: 0.7693
+      gen_sec: 11.26
+      ref_sec: 11.56
+      cer: 0.0561
+      wer: 0.2414
+    bible_00096:
+      source: bible
+      text: Mo̱ne̱‑rɔ bo̱ko̱ ya tɔwe̱ fe̱yɛ abware̱se̱ŋ ne̱ ane̱ e̱ tɔwe̱‑ɔ e̱ kwe̱e̱rɔ, mo̱ i lee kanɔ
+        fe̱yɛ aa kwe̱e̱rɔ bamo̱ ne̱ bo̱ maa nya ŋkpa na kukyure ne̱ a mo̱ŋ de kɛɛ‑ɔ se̱ dooo ne̱e̱.
+      sbs: 0.7686
+      gen_sec: 12.8
+      ref_sec: 11.54
+      cer: 0.453
+      wer: 0.5714
+    bible_00097:
+      source: bible
+      text: Ane̱ŋ se̱‑ɔ, mò̱ a de̱ŋ bo̱ fo̱ Roma maŋ‑nɔ‑ɔ, ne̱ oo pee akatɔ buwi bo̱ ŋu mo̱.
+      sbs: 0.7512
+      gen_sec: 6.06
+      ref_sec: 6.12
+      cer: 0.1429
+      wer: 0.2353
+    bible_00098:
+      source: bible
+      text: “Ɔ da kakpo̱nɔ se̱ o ke atiripo̱ atɔ, na a mo̱ŋ bo̱ mò̱ gya.
+      sbs: 0.6302
+      gen_sec: 4.1
+      ref_sec: 3.54
+      cer: 0.1053
+      wer: 0.4286
+    bible_00099:
+      source: bible
+      text: ‘Wuribware̱ a tɔwe̱ gywii mo̱ nyaŋpe̱ ne̱e̱ ɛ,
+      sbs: 0.6768
+      gen_sec: 3.24
+      ref_sec: 4.9
+      cer: 0.4516
+      wer: 0.625
+    bible_00100:
+      source: bible
+      text: Ne̱ Yeesuu a be̱ŋŋaa fe̱yɛ, “Nte̱tɔ se̱ ne̱ mo̱ne̱ maa kɔɔre̱ mo̱ mo̱ne̱ i gyi‑o ne̱e̱? Ntɔ
+        se̱ ne̱ kufu de mo̱ne̱?”
+      sbs: 0.64
+      gen_sec: 7.77
+      ref_sec: 5.44
+      cer: 0.1408
+      wer: 0.2727
+    bible_00101:
+      source: bible
+      text: na a taare̱ kuŋ Ɔbɔnsam, na ɔ ma taare̱ nya ane̱ se̱ ke̱yaale̱ŋ. Ane̱ nyi nɛɛnɛɛ ane̱ŋ ne̱
+        Ɔbɔnsam e̱ kpa a ɔ pe̱nna ane̱‑ɔ.
+      sbs: 0.7292
+      gen_sec: 9.3
+      ref_sec: 8.3
+      cer: 0.1071
+      wer: 0.36
+    bible_00102:
+      source: bible
+      text: Ne̱ aa tɔɔraa mò̱ gbaa, ne̱ ŋkee oo pee akatɔ ko̱re̱ ke̱bware̱ko̱re̱, na ɔ swaare̱ mbo̱gya,
+        ne̱ n le̱e̱ mò̱ kayo̱wɔre̱ se̱ n dwe̱e̱ swe̱e̱re̱.]
+      sbs: 0.7538
+      gen_sec: 9.81
+      ref_sec: 11.66
+      cer: 0.1209
+      wer: 0.32
+    bible_00103:
+      source: bible
+      text: Ne̱ bo̱ yɛ, “Yeesuu Nasarɛte̱nyi‑o e̱ gye̱ ne̱ ɔ kyo̱ŋ.”
+      sbs: 0.5971
+      gen_sec: 3.84
+      ref_sec: 4.34
+      cer: 0.0571
+      wer: 0.3
+    bible_00104:
+      source: bible
+      text: A le̱e̱ fe̱yɛ kanye ne̱ bamo̱ ne̱ ba kpa idi‑o i di idi, ne̱ bamo̱ ne̱ ba bwe̱e̱‑ɔ mɔ mɔ e̱
+        bwe̱e̱.
+      sbs: 0.7203
+      gen_sec: 6.57
+      ref_sec: 6.96
+      cer: 0.1
+      wer: 0.1818
+    bible_00105:
+      source: bible
+      text: Ɔko̱ ma kaŋ waa ke̱tɔ ne̱ ke̱ bo̱ daŋ sa mò̱ wo̱re̱‑ɔ. Ɔke̱maa le̱ŋ e̱ye̱e̱ waa ke̱tɔ ne̱
+        ke̱ e̱ kya mò̱ bɛɛko̱‑rɔ‑ɔ.
+      sbs: 0.7825
+      gen_sec: 8.11
+      ref_sec: 6.56
+      cer: 0.0986
+      wer: 0.3043
+    bible_00106:
+      source: bible
+      text: Ase̱sɛ e̱ le̱e̱ kaye̱ mɔ‑rɔ to̱ŋ ke̱maa, na bamo̱ ɔke̱maa kye̱na Wuribware̱ a lɔŋ‑ɔ‑rɔ, na
+        bamo̱ aa mò̱ gyi ateese, na bamo̱ akatɔ gyi bwe̱e̱tɔ.
+      sbs: 0.7742
+      gen_sec: 10.67
+      ref_sec: 10.06
+      cer: 0.0515
+      wer: 0.12
+    bible_00107:
+      source: bible
+      text: Ne̱ Yeesuu a kya se̱ tɔwe̱ fe̱yɛ, “Mo̱nꞌ lɔŋ e̱se̱bɔ. Mo̱ a ba a m bo̱ kywɛɛ de̱e̱kpa kaye̱
+        mɔ‑rɔ ne̱e̱. Weetee mbe̱yɔmɔ ane̱ŋ ne̱ mo̱ a kpa fe̱yɛ ɔ maa se̱ ɔ kywɛɛ‑ɔ.
+      sbs: 0.7653
+      gen_sec: 11.69
+      ref_sec: 11.5
+      cer: 0.0748
+      wer: 0.1765
+    bible_00108:
+      source: bible
+      text: na mo̱ne̱ anyaŋbre̱sɛ ku mo̱ ase̱ŋ‑ɔ idee.
+      sbs: 0.688
+      gen_sec: 3.33
+      ref_sec: 4.14
+      cer: 0.1724
+      wer: 0.5714
+    bible_00109:
+      source: bible
+      text: Bamo̱ a tɔwe̱ faanɛɛ‑ɔ, ne̱ aa tɔɔraa ase̱sɛ pɛɛɛ ne̱ baa gyaŋŋe̱ a bo̱ nu ase̱ŋ‑ɔ na maŋ‑ɔ
+        abre̱sɛ‑ɔ, ne̱ baa le̱e̱ ba waa e̱lawo̱.
+      sbs: 0.7533
+      gen_sec: 9.9
+      ref_sec: 9.46
+      cer: 0.0345
+      wer: 0.12
+    bible_00110:
+      source: bible
+      text: Ne̱ ɔ yɛ, “Fo̱, Ɔbɔnsam mò̱ gyi! Fo̱ fe̱raa, ke̱tɔ ke̱maa ne̱ ki bware‑o gye̱ fo̱ do̱ŋ ne̱e̱.
+        Fo̱ e̱ pe̱nna ase̱sɛ ne̱e̱ saŋ ke̱maa, ne̱ ŋkee fo̱ i kyurowi Wuribware̱ a kase̱ŋtiŋ‑o fo̱ i kii
+        kaye̱ba saŋ ke̱maa!
+      sbs: 0.7409
+      gen_sec: 15.35
+      ref_sec: 12.96
+      cer: 0.0815
+      wer: 0.2564
+    bible_00111:
+      source: bible
+      text: na fo̱ nya mo̱rɔwe̱ bamo̱.’
+      sbs: 0.6418
+      gen_sec: 1.79
+      ref_sec: 3.82
+      cer: 0.8824
+      wer: 1.6
+    bible_00112:
+      source: bible
+      text: Amo̱se̱‑ɔ, saŋ ne̱ oo ŋu Peetroo na Yohanee i lweero‑o, ne̱ ɔɔ ko̱re̱ bamo̱ fe̱yɛ bo̱ sa mò̱
+        ko̱tɔko̱.
+      sbs: 0.6934
+      gen_sec: 7.59
+      ref_sec: 6.44
+      cer: 0.0746
+      wer: 0.1579
+    bible_00113:
+      source: bible
+      text: “Wuribware̱ a twe̱e̱ se̱sɛ gye̱ŋkpɛɛsɛ Adam,
+      sbs: 0.6635
+      gen_sec: 3.33
+      ref_sec: 4.14
+      cer: 0.125
+      wer: 0.6667
+    bible_00114:
+      source: bible
+      text: Ne̱ Sɔɔl (ne̱ mbe̱yɔmɔ ba te̱e̱ mò̱ ɛ Pɔɔl‑ɔ) a de̱e̱re̱ kisibeŋ wuye amo̱, na Wuribware̱
+        a kufwiiŋe timaa‑o ke̱yaale̱ŋ bo̱ mò̱ ase̱.
+      sbs: 0.7252
+      gen_sec: 9.98
+      ref_sec: 6.92
+      cer: 0.1011
+      wer: 0.3913
+    bible_00115:
+      source: bible
+      text: ne̱ Abiyud mɔ a ko̱we̱ Iliyakim,
+      sbs: 0.652
+      gen_sec: 2.39
+      ref_sec: 3.4
+      cer: 0.3478
+      wer: 0.6667
+    bible_00116:
+      source: bible
+      text: Ipeere mo̱ŋ de mo̱ne̱ aaa? Mo̱ne̱ mo̱ŋ de onyiase̱ŋpo̱ ko̱ŋko̱ mo̱ne̱‑rɔ ne̱ ɔ taare̱ a ɔ
+        lɔŋŋɔ nse̱ŋgyi ne̱ m bo̱ mò̱ bɛɛko̱‑ana Kristoo awuye mbo̱ŋtɔ‑rɔ‑ɔ ɔɔɔ?
+      sbs: 0.7419
+      gen_sec: 12.46
+      ref_sec: 9.92
+      cer: 0.0917
+      wer: 0.2593
+    bible_00117:
+      source: bible
+      text: Amaa asɔre̱e̱ abre̱sɛ‑ɔ ɔko̱ e̱ maa se̱ ɔ waa e̱bɔye̱, tɛɛraa mò̱ asɔre̱e̱ agyi‑o akatɔ‑rɔ,
+        na a nya yii bamo̱ ne̱ baa saŋ‑ɔ se̱.
+      sbs: 0.7121
+      gen_sec: 9.39
+      ref_sec: 9.26
+      cer: 0.0941
+      wer: 0.3333
+    bible_00118:
+      source: bible
+      text: Amaa mo̱ e̱ tɔwe̱ mo̱ i gywii mo̱ne̱ fe̱yɛ Iliya a kyɔ ba, ne̱ ase̱sɛ mo̱ŋ pini mò̱. Ne̱
+        baa waa mò̱ ane̱ŋ ne̱ ba kpa‑ɔ. Ane̱ŋ dɛɛ ne̱ ba waa mo̱, dimaadi mò̱ gyi‑o, bo̱rɔkraa.”
+      sbs: 0.8184
+      gen_sec: 12.46
+      ref_sec: 12.14
+      cer: 0.0708
+      wer: 0.2222
+    bible_00119:
+      source: bible
+      text: Ne̱ ɔɔ tɔwe̱ ke̱tɔ ne̱ kaa waa‑ɔ gywii bamo̱, ne̱ oo suŋ bamo̱ bo̱ kyo̱ŋwe̱ Yopaa maŋ‑nɔ.
+      sbs: 0.7295
+      gen_sec: 6.66
+      ref_sec: 5.54
+      cer: 0.0847
+      wer: 0.1765
+    bible_00120:
+      source: bible
+      text: Sa bamo̱ mbraa mɔ, na fo̱ kaapo̱ ane̱ŋ a atɔ mɔ.
+      sbs: 0.6931
+      gen_sec: 3.58
+      ref_sec: 3.1
+      cer: 0.0938
+      wer: 0.2727
+    bible_00121:
+      source: bible
+      text: Mo̱ne̱ ma waa fe̱yɛ bamo̱‑ɔ, a le̱e̱ fe̱yɛ mo̱ne̱ se̱ Wuribware̱ kyɔ o nyi ke̱tɔ ne̱ mo̱ne̱
+        e̱ kpa‑ɔ pwɛɛ ne̱ mo̱ne̱ a dɛɛ ko̱re̱ mò̱.”
+      sbs: 0.7532
+      gen_sec: 8.87
+      ref_sec: 9.0
+      cer: 0.0241
+      wer: 0.1538
+    bible_00122:
+      source: bible
+      text: Mo̱ne̱ pɛɛɛ ne̱ mo̱ne̱ i nu mo̱ ase̱‑ɔ du ne̱e̱ fe̱yɛ ayii‑o. Mo̱nꞌ sa se̱, a le̱e̱ fe̱yɛ
+        Wuribware̱ a waa kakwii‑atɔ siraa, na ɔ ba bo̱ ŋe kiyii ke̱maa ne̱ ke̱ maa swɛɛ agyi timaa‑o ileŋ
+        kaase̱ a ɔ bo̱ da na ɔ twe̱e̱ waa de̱e̱kpa‑rɔ.”
+      sbs: 0.7043
+      gen_sec: 16.8
+      ref_sec: 14.82
+      cer: 0.1111
+      wer: 0.234
+    bible_00123:
+      source: bible
+      text: Bamo̱ ya ko̱we̱ se̱sɛ, ɔ mo̱ŋ de sɛye̱ o tii mò̱ e̱ye̱e̱ se̱ ɔ ba kaye̱ mɔ‑rɔ, ne̱ ane̱ŋ
+        dɛɛ ne̱, mò̱ ya wu, ɔ mo̱ŋ de sɛye̱ o tii mò̱ e̱ye̱e̱ se̱ ɔ yɔ.
+      sbs: 0.7196
+      gen_sec: 9.98
+      ref_sec: 9.54
+      cer: 0.1124
+      wer: 0.2286
+    bible_00124:
+      source: bible
+      text: Ne̱ Yudas a ya twe̱e̱ atanne̱‑ɔ bo̱ be̱ya swe̱e̱re̱ Wuribware̱ suŋkpa. Ne̱ ɔɔ le̱e̱ mfe̱ŋ
+        ya kya mò̱ e̱ye̱e̱ fe, ne̱ oo wu.
+      sbs: 0.7384
+      gen_sec: 8.62
+      ref_sec: 10.24
+      cer: 0.0641
+      wer: 0.1739
+    bible_00125:
+      source: bible
+      text: Ane̱ maa kpa a kitiri kra mo̱ne̱, na a taare̱ kya bo̱ko̱ mɔ‑rɔ, amaa ane̱ e̱ kpa fe̱yɛ ɔke̱maa
+        nya mò̱ ke̱be̱gya‑ɔ ne̱e̱.
+      sbs: 0.7474
+      gen_sec: 8.45
+      ref_sec: 7.92
+      cer: 0.0253
+      wer: 0.087
+    bible_00126:
+      source: bible
+      text: Kake nsiŋ ne̱ mo̱ a waa mfɛɛre̱ fe̱yɛ m mo̱rɔwe̱ mo̱ne̱‑ɔ,
+      sbs: 0.663
+      gen_sec: 4.18
+      ref_sec: 3.02
+      cer: 0.1842
+      wer: 0.5455
+    bible_00127:
+      source: bible
+      text: Amɔ ase̱ŋ ne̱ ane̱ a ye̱re̱ ayaa‑rɔ ane̱ e̱ tɔwe̱. Ne̱ Wuribware̱ a kufwiiŋe timaa ne̱ Wuribware̱
+        i ke bamo̱ ne̱ ba gya mò̱ kanɔ se̱‑ɔ, e̱ de̱ŋ ɔ be̱e̱ ɔ ye̱re̱ ase̱ŋ amo̱ ayaa‑rɔ.”
+      sbs: 0.7279
+      gen_sec: 12.8
+      ref_sec: 12.8
+      cer: 0.3707
+      wer: 0.4857
+    bible_00128:
+      source: bible
+      text: ne̱ mo̱ akatɔ a gyi mo̱ e̱ tɔwe̱ fo̱ kuŋu si ase̱ŋ.
+      sbs: 0.6618
+      gen_sec: 3.41
+      ref_sec: 3.72
+      cer: 0.125
+      wer: 0.25
+    bible_00129:
+      source: bible
+      text: Ne̱ Peetroo yɛ, “Ke̱e̱ ɛ, ane̱ a yɔwe̱ ke̱tɔ ke̱maa ane̱ gya fo̱ se̱‑ɔ, nte̱tɔ ne̱ ane̱ e̱
+        nya?”
+      sbs: 0.7186
+      gen_sec: 6.23
+      ref_sec: 5.7
+      cer: 0.0351
+      wer: 0.1579
+    bible_00130:
+      source: bible
+      text: Na ba gyaŋŋe̱ Wuribware̱ suŋkpa‑ɔ kabuno kake ke̱maa, na ba gyaŋŋe̱ ba gyi abɛɛ aye̱ kakatɔgyi‑ro
+        na kakpo̱nɔyuri‑ro.
+      sbs: 0.7362
+      gen_sec: 9.73
+      ref_sec: 7.18
+      cer: 0.1348
+      wer: 0.4444
+    bible_00131:
+      source: bible
+      text: Ŋkee bamo̱ ne̱ bo̱ gye̱ mò̱ ŋkpɛɛ na bamo̱ ne̱ bo̱ gya mò̱ se̱‑ɔ a le̱e̱ ba fɛɛ‑rɔ ne̱e̱
+        fe̱yɛ,
+      sbs: 0.6631
+      gen_sec: 6.23
+      ref_sec: 7.56
+      cer: 0.1379
+      wer: 0.25
+    bible_00132:
+      source: bible
+      text: Fe̱yɛ ane̱ŋ ne̱ baa kyo̱rɛɛ bo̱ le̱e̱ Yeesuu kuŋu si abware̱se̱ŋ wo̱re̱‑ɔ‑rɔ‑ɔ,
+      sbs: 0.7405
+      gen_sec: 6.14
+      ref_sec: 5.48
+      cer: 0.0755
+      wer: 0.1667
+    bible_00133:
+      source: bible
+      text: Ne̱ Yeesuu a tɔwe̱ bo̱ gye̱ kɛɛ fe̱yɛ, “To, ɔke̱maa ne̱ ɔɔ kpa atɔ timaa bo̱ dɔŋŋɔ abɛɛ se̱‑ɔ,
+        ne̱ Wuribware̱ ase̱ fe̱raa ɔ gye̱ otiripo̱ ne̱e̱‑ɔ, o du ne̱e̱ fe̱yɛ atɔ wuye amo̱ ne̱ ɔ mo̱ŋ
+        de mfɛɛre̱‑ɔ.”
+      sbs: 0.7262
+      gen_sec: 14.5
+      ref_sec: 14.08
+      cer: 0.0153
+      wer: 0.0513
+    bible_00134:
+      source: bible
+      text: Mo̱ e̱ ko̱re̱ ke̱bware̱ko̱re̱ fe̱yɛ ane̱ nyaŋpe̱ Yeesuu Kristoo yure mo̱ne̱.
+      sbs: 0.6676
+      gen_sec: 5.46
+      ref_sec: 4.44
+      cer: 0.0
+      wer: 0.0
+    bible_00135:
+      source: bible
+      text: Ne̱ oo fuwi ywe̱e̱, ne̱ ɔɔ ye̱re̱ mò̱ ayaa se̱, ne̱ ɔɔ le̱e̱ ɔ naa. Ne̱ mò̱ aa bamo̱ a lwee
+        Wuribware̱ suŋkpa kabuno, na ɔ naa na o fuwi ɔ ywe̱e̱, na ɔ kyo̱rɔ Wuribware̱.
+      sbs: 0.7147
+      gen_sec: 11.95
+      ref_sec: 9.22
+      cer: 0.1455
+      wer: 0.3333
+    bible_00136:
+      source: bible
+      text: Na mo̱nꞌ yure bamo̱ ne̱ bamo̱ fe̱raa ba da mo̱ne̱ yii‑o, na mo̱nꞌ ko̱re̱ ke̱bware̱ko̱re̱ sa
+        bamo̱ ne̱ ba waa mo̱ne̱ bo̱rɔkraa‑ɔ.
+      sbs: 0.7493
+      gen_sec: 8.79
+      ref_sec: 7.84
+      cer: 0.0714
+      wer: 0.1818
+    bible_00137:
+      source: bible
+      text: Saŋ ne̱ Yeesuu a tɔwe̱ amo̱‑ɔ pɛɛɛ lo̱we̱‑ɔ, ne̱ ɔɔ le̱e̱ Galile̱ya swe̱e̱re̱ se̱ yɔ Yude̱ya
+        swe̱e̱re̱ se̱ a ke̱be̱gya ne̱ ke̱ bo̱ Yo̱o̱daŋ bo̱ŋ nno̱ŋ a bo̱ŋbe̱‑ɔ se̱‑ɔ.
+      sbs: 0.7417
+      gen_sec: 11.78
+      ref_sec: 14.22
+      cer: 0.1238
+      wer: 0.3793
+    bible_00138:
+      source: bible
+      text: Kyɔwe̱ a lo̱we̱‑ɔ, ne̱ ko̱dɔɔ‑ɔ wuye‑o a tɔwe̱ gywii mò̱ ke̱paafo̱wɔ bre̱sɛ fe̱yɛ, ‘Te̱e̱
+        mo̱ apafo̱wɔ‑ɔ pɛɛɛ bo̱ gyaŋŋe̱ na fo̱ ka bamo̱ ko̱kɔ. Na fo̱ ka bamo̱ ne̱ baa sii kamɛɛ yɔ mo̱
+        ko̱dɔɔ‑ɔ‑rɔ ko̱kɔ pwɛɛ na fo̱ dɛɛ ka bamo̱ ne̱ baa gye̱ ŋkpɛɛ yɔ‑ɔ.’
+      sbs: 0.7608
+      gen_sec: 18.26
+      ref_sec: 14.24
+      cer: 0.1152
+      wer: 0.2766
+    bible_00139:
+      source: bible
+      text: Mò̱ ne̱ nde̱ se̱ awuye pɛɛɛ e̱ kɔɔre̱ a bo̱ gyi.”
+      sbs: 0.6577
+      gen_sec: 3.07
+      ref_sec: 3.36
+      cer: 0.2333
+      wer: 0.5455
+    bible_00140:
+      source: bible
+      text: Mo̱ e̱ kaapo̱ mo̱ne̱ ane̱ŋ ne̱ ɔko̱ ne̱ ɔ ba mo̱ ase̱ a o nu mo̱ ase̱ŋ, ne̱ o bu amo̱‑ɔ du‑o.
+      sbs: 0.7553
+      gen_sec: 6.06
+      ref_sec: 6.6
+      cer: 0.0755
+      wer: 0.1818
+    bible_00141:
+      source: bible
+      text: Ne̱ soogyaa ɔgye̱ŋkpɛɛpo̱‑ɔ yɛ, “Mo̱ a ka atanne̱ dabe̱ pwɛɛ ne̱ mo̱ a dɛɛ kii Roma maŋ kigyi.”
+      sbs: 0.7467
+      gen_sec: 6.83
+      ref_sec: 6.78
+      cer: 0.1231
+      wer: 0.2222
+    bible_00142:
+      source: bible
+      text: Ne̱ Pɔɔl na Silas a bo̱rɔ Amfipolis na Apoloniya e̱maŋ‑nɔ, ne̱ baa ba Tisalonikaa maŋ‑nɔ.
+      sbs: 0.7523
+      gen_sec: 7.42
+      ref_sec: 8.8
+      cer: 0.1343
+      wer: 0.5333
+    bible_00143:
+      source: bible
+      text: A le̱e̱ fe̱yɛ ɔko̱ ne̱ ɔ kpa a ɔ nya mò̱ e̱ye̱e̱ le̱e̱ lowi ase̱‑ɔ, lowi e̱ nya mò̱ nsu
+        pɛɛɛ. Ɔko̱ mɔ ne̱ o kperi mo̱ se̱ na o wu‑o e̱ nya ŋkpa na kukyure ne̱ a mo̱ŋ de kɛɛ‑ɔ.
+      sbs: 0.7698
+      gen_sec: 11.86
+      ref_sec: 11.24
+      cer: 0.0741
+      wer: 0.122
+    bible_00144:
+      source: bible
+      text: Ne̱ Simɔŋ yɛ, “Yooo, ɔkaapo̱po̱, tɔwe̱ gywii mo̱.”
+      sbs: 0.7111
+      gen_sec: 3.67
+      ref_sec: 4.04
+      cer: 0.2188
+      wer: 0.75
+    bible_00145:
+      source: bible
+      text: Kanye na mpase̱ pɛɛɛ ane̱ e̱ ko̱re̱ Wuribware̱ fe̱yɛ ane̱ aa mo̱ne̱ a be̱e̱ ŋu abɛɛ, na ane̱
+        nya sa mo̱ne̱ ke̱tɔ ne̱ ke̱ saŋ ki tiri fe̱yɛ mo̱nꞌ nya, na mo̱nꞌ taare̱ kɔɔre̱ Kristoo gyi lo̱we̱‑ɔ.
+      sbs: 0.71
+      gen_sec: 13.73
+      ref_sec: 14.12
+      cer: 0.0853
+      wer: 0.1892
+    bible_00146:
+      source: bible
+      text: Ke̱tɔ se̱ ne̱ n de itee na akpare̱ mo̱ e̱ tɔwe̱ ase̱ŋ mo̱ i gywii lamaŋ‑ɔ e̱ gye̱ fe̱yɛ bo̱
+        de akatɔ, amaa bo̱ mo̱ŋ ke̱e̱, ne̱ bo̱ de e̱se̱bɔ, amaa bo̱ maa nu ase̱ŋ.
+      sbs: 0.785
+      gen_sec: 11.26
+      ref_sec: 14.26
+      cer: 0.0291
+      wer: 0.0286
+    bible_00147:
+      source: bible
+      text: Ne̱ amo̱ e̱ gye̱ fe̱yɛ kaye̱ mɔ‑rɔ dooo ne̱ ane̱ i de te̱maa Kristoo si, amo̱ fe̱raa ane̱
+        ase̱ŋ e̱ waa e̱wɛɛ a a kyo̱ŋ ɔke̱maa kaye̱ mɔ‑rɔ.
+      sbs: 0.7594
+      gen_sec: 9.73
+      ref_sec: 11.18
+      cer: 0.0778
+      wer: 0.1786
+    bible_00148:
+      source: bible
+      text: Ŋ yɛ, fo̱ ya ŋu kiyii ko̱ a swɛɛ agyi timaa, a kaapo̱ ne̱e̱ fe̱yɛ kiyii‑o bo̱ daŋ. Ne̱ fo̱
+        ya ŋu kiyii suyo ko̱ mɔ a swɛɛ agyi preepreesɛ, a kaapo̱ ne̱e̱ fe̱yɛ kiyii amo̱ mo̱ŋ bo̱ daŋ.
+        Kiyii agyi ne̱ bo̱ de ba pini kiyii suyo ne̱ ke̱ gye̱‑ɔ.
+      sbs: 0.7469
+      gen_sec: 17.74
+      ref_sec: 14.72
+      cer: 0.0435
+      wer: 0.1765
+    bible_00149:
+      source: bible
+      text: Asɔre̱e̱ asɔre̱e̱ ne̱ a bo̱ Asiya swe̱e̱re̱ se̱‑ɔ awuye e̱ ka mo̱ne̱ kanɔ. Akwila na Prisikila
+        na asɔre̱e̱ agyi ne̱ ba gyaŋŋe̱ bamo̱ aye̱ ba waa asɔre̱e̱‑ɔ de ane̱ nyaŋpe̱ ba ka mo̱ne̱ kanɔ.
+      sbs: 0.6955
+      gen_sec: 13.82
+      ref_sec: 14.98
+      cer: 0.0469
+      wer: 0.1765
+    bible_00150:
+      source: bible
+      text: Ne̱ ɔɔ tɔwe̱ keŋkeŋ fe̱yɛ, “Ko̱so̱ ye̱re̱ fo̱ ayaa se̱.” Mfe̱ŋ ne̱ ke̱gyabɔɔ amo̱ a ko̱so̱
+        fuwi ywe̱e̱, ne̱ ɔɔ nare̱ mò̱ ayaa se̱ ɔ kaa.
+      sbs: 0.6815
+      gen_sec: 9.22
+      ref_sec: 7.86
+      cer: 0.0476
+      wer: 0.1538
+    bible_00151:
+      source: bible
+      text: Ne̱ Wuribware̱ kabɔɔ amo̱ a be̱ŋŋaa mò̱ ɛ, “Wuribware̱ akatɔ a gyi fo̱ ke̱bware̱ko̱re̱ na
+        ke̱dame̱naŋsɛ ne̱ fo̱ e̱ waa atiripo̱‑ɔ se̱, ne̱ ɔ kpa a ɔ be̱ŋŋaa fo̱.
+      sbs: 0.6829
+      gen_sec: 11.78
+      ref_sec: 9.0
+      cer: 0.0561
+      wer: 0.1724
+    bible_00152:
+      source: bible
+      text: Amo̱se̱‑ɔ to̱ŋ ke̱maa ne̱ fo̱ kapo̱tɛɛ da‑ɔ, fo̱ mfɛɛre̱ e̱ ya dɔŋŋɔ kamo̱ se̱ mfe̱ŋ.”
+      sbs: 0.763
+      gen_sec: 6.31
+      ref_sec: 5.68
+      cer: 0.0741
+      wer: 0.3333
+    bible_00153:
+      source: bible
+      text: Ne̱ Pɔɔl fɔŋfɔŋ e̱ kpa fe̱yɛ ɔ yɔ lamaŋ amo̱ akatɔ‑rɔ mfe̱ŋ ya sa se̱ŋsa gywii ase̱sɛ‑ɔ, amaa
+        bamo̱ ne̱ ba kɔɔre̱ Yeesuu ba gyi‑o mo̱ŋ sure.
+      sbs: 0.7051
+      gen_sec: 10.92
+      ref_sec: 9.26
+      cer: 0.0612
+      wer: 0.0741
+    bible_00154:
+      source: bible
+      text: Bo̱ le̱e̱ fe̱yɛ mo̱ne̱ bwe̱e̱tɔ a fa mfɛɛre̱ fe̱yɛ mo̱nꞌ gyiiri mò̱ ke̱se̱bɔ, ne̱ mo̱ne̱
+        a gya mò̱ le̱e̱ mo̱ne̱ asɔre̱e̱‑ɔ‑rɔ. Ne̱ mbe̱yɔmɔ mo̱ a ŋu fe̱yɛ mò̱ ke̱se̱bɔgyiiri ne̱ mo̱ne̱
+        a gyiiri mò̱‑ɔ a baare.
+      sbs: 0.7459
+      gen_sec: 13.99
+      ref_sec: 13.3
+      cer: 0.0682
+      wer: 0.3333
+    bible_00155:
+      source: bible
+      text: Ne̱ baa kaapo̱ mò̱ bamo̱ Igyipiti awuye kanyiase̱ŋ, ne̱ oo kii se̱sɛ dabe̱ mò̱ se̱ŋsa na
+        asuŋ waasɛ‑rɔ.
+      sbs: 0.7646
+      gen_sec: 7.94
+      ref_sec: 8.3
+      cer: 0.0959
+      wer: 0.2778
+    bible_00156:
+      source: bible
+      text: Ane̱ e̱ kyo̱rɛɛ amo̱‑ɔ ne̱e̱ a ane̱ kakatɔgyi‑o ma lo̱we̱ daa.
+      sbs: 0.6868
+      gen_sec: 4.27
+      ref_sec: 4.02
+      cer: 0.175
+      wer: 0.6364
+    bible_00157:
+      source: bible
+      text: Amo̱se̱ se̱‑ɔ, ke̱tɔ ne̱ mo̱ e̱ ka mo̱ne̱ ase̱ŋ ke̱mo̱ se̱‑ɔ ne̱e̱. Suŋno mo̱ne̱ ya gye̱ ŋkpɛɛ
+        tɔwe̱ fe̱yɛ mo̱ne̱ e̱ kpa a mo̱nꞌ sa atanne̱. Kase̱ŋtiŋ si mɔ ne̱ mo̱ne̱ a gye̱ ŋkpɛɛ e̱sa.
+      sbs: 0.7121
+      gen_sec: 12.88
+      ref_sec: 12.06
+      cer: 0.4783
+      wer: 0.6286
+    bible_00158:
+      source: bible
+      text: Amo̱ fe̱raa ne̱ Yeesuu a tɔwe̱ gywii mò̱ fe̱yɛ, “Ko̱so̱, nare̱ dame̱naŋsɛ. Ane̱ŋ ne̱ fo̱
+        a kɔɔre̱ mo̱ gyi‑o si ne̱ fo̱ a kpaare̱.”
+      sbs: 0.7078
+      gen_sec: 8.87
+      ref_sec: 8.56
+      cer: 0.0244
+      wer: 0.0833
+    bible_00159:
+      source: bible
+      text: Amo̱se̱ ne̱ owure‑o a te̱e̱ ane̱ŋ a ke̱yaafɔre̱ amo̱. Ne̱ ɔɔ tɔwe̱ gywii mò̱ fe̱yɛ, ‘Kuŋurole̱ŋ
+        wuye ke̱yaafɔre̱ e̱ gye̱ fo̱. Ko̱kɔ ne̱ fo̱ de mo̱‑ɔ kyɔ bwe̱e̱tɔ bɛɛɛ? Amaa fo̱ a ko̱re̱ mo̱
+        fe̱yɛ ŋ nyite fo̱‑ɔ se̱‑ɔ, mo̱ a taa fo̱ ko̱kɔ amo̱ bo̱ ke fo̱.
+      sbs: 0.7717
+      gen_sec: 17.57
+      ref_sec: 14.76
+      cer: 0.1083
+      wer: 0.2083
+    bible_00160:
+      source: bible
+      text: Hare̱e̱ gbaa fo̱ ya ko̱re̱ ke̱bware̱ko̱re̱, ne̱ fo̱ a sa aŋsɛ nɛɛnɛɛ, fo̱ se̱ŋsa‑ɔ mo̱ŋ kya
+        fo̱ bɛɛko̱‑ana asɔre̱e̱ agyi‑o‑ro.
+      sbs: 0.7516
+      gen_sec: 9.3
+      ref_sec: 10.14
+      cer: 0.061
+      wer: 0.15
+    bible_00161:
+      source: bible
+      text: Amaa Pɔɔl a yɔ swe̱e̱re̱ mfe̱ŋ, ne̱ ɔɔ ya di ke̱yaafɔre̱ amo̱ se̱, ne̱ oo powi mò̱, ne̱ ɔ
+        yɛ, “Mo̱ne̱ ma sa a a tiri mo̱ne̱ na ɔ ke̱e̱!”
+      sbs: 0.7121
+      gen_sec: 8.96
+      ref_sec: 8.56
+      cer: 0.1707
+      wer: 0.3
+    bible_00162:
+      source: bible
+      text: Amɔ leŋpoo ɔkɔɔre̱po̱ bre̱sɛ ko̱ ne̱ o de atanne̱, ne̱ ba te̱e̱ mò̱ ɛ Sakiiyus‑o bo̱ maŋ‑ɔ‑rɔ
+        mfe̱ŋ.
+      sbs: 0.6892
+      gen_sec: 7.59
+      ref_sec: 10.78
+      cer: 0.0758
+      wer: 0.3333
+    bible_00163:
+      source: bible
+      text: Ne̱ Yeesuu a tɔwe̱ gywii soogyaa amo̱ fe̱yɛ, “Nare̱ pe̱, na ke̱tɔ ne̱ fo̱ a kɔɔre̱ gyi‑o e̱
+        waa a ke̱ sa fo̱.”
+      sbs: 0.6831
+      gen_sec: 7.17
+      ref_sec: 5.38
+      cer: 0.0145
+      wer: 0.1739
+    bible_00164:
+      source: bible
+      text: Ne̱ ŋkee ɔ yɛ ɔke̱maa ma lɛɛ so̱rɔ tɔso̱rɔ bo̱ kyo̱ŋ kabuno‑o mfe̱ŋ.
+      sbs: 0.6721
+      gen_sec: 5.29
+      ref_sec: 5.66
+      cer: 0.1915
+      wer: 0.5385
+    bible_00165:
+      source: bible
+      text: Ntɔ se̱ ne̱ mo̱ne̱ mo̱ŋ nu ase̱ŋ amo̱ kaase̱‑ɔ ne̱e̱? Mo̱nꞌ nu fe̱yɛ ke̱tɔ ne̱ se̱sɛ i gyi‑o
+        i lwee mò̱ kanɔ‑rɔ ne̱e̱ na ko̱ yɔ mò̱ kame‑ro na ŋkee ɔ kɔɔ bo̱ twe̱e̱.
+      sbs: 0.7396
+      gen_sec: 11.26
+      ref_sec: 11.18
+      cer: 0.0971
+      wer: 0.3235
+    bible_00166:
+      source: bible
+      text: Saŋ amo̱‑ɔ, ne̱ Hɛrɔd ne̱ ɔ gye̱ Galile̱ya swe̱e̱re̱ se̱ owure‑o a nu Yeesuu ase̱ŋ na ane̱ŋ
+        ne̱ ɔɔ waa akpe̱ŋe̱ye̱e̱tɔ bwe̱e̱tɔ‑ɔ.
+      sbs: 0.7491
+      gen_sec: 9.64
+      ref_sec: 9.76
+      cer: 0.0698
+      wer: 0.1818
+    bible_00167:
+      source: bible
+      text: Mo̱ne̱ ma sa a mo̱ne̱ akatɔ gyi fe̱yɛ ibrisi a bu mo̱ne̱, amaa mo̱nꞌ sa a mo̱ne̱ akatɔ gyi
+        bwe̱e̱tɔ fe̱yɛ Wuribware̱ a kyo̱rɛɛ mo̱ne̱ anyare̱ bo̱ be̱ya so̱so̱.”
+      sbs: 0.723
+      gen_sec: 10.84
+      ref_sec: 8.5
+      cer: 0.028
+      wer: 0.1034
+    bible_00168:
+      source: bible
+      text: Bamo̱ ya pure se̱sɛ, kifuniŋ ne̱ ki de ayeegyi na abowii ne̱ baa pure, ne̱ mò̱ ya be̱e̱ kyiŋŋi
+        le̱e̱ lowi‑ro, amɔ se̱sɛ‑ɔ e̱ nya kayo̱wɔre̱ po̱pwɛɛ, na mò̱ kra be̱e̱ bo̱ kye̱na kamo̱‑rɔ.
+      sbs: 0.7327
+      gen_sec: 13.99
+      ref_sec: 14.12
+      cer: 0.1774
+      wer: 0.3824
+    bible_00169:
+      source: bible
+      text: Ŋke mfe̱ne̱ ko̱ kamɛɛ‑ɔ, ne̱ Yeesuu a yɔ maŋ ko̱ ne̱ ba te̱e̱ ɛ Nayiŋ‑o‑ro. Amɔ saŋ amo̱‑ɔ
+        mò̱ agyase̱po̱‑ɔ na ase̱sɛ biribiri gya mò̱ se̱.
+      sbs: 0.747
+      gen_sec: 10.33
+      ref_sec: 12.0
+      cer: 0.0989
+      wer: 0.2308
+    bible_00170:
+      source: bible
+      text: Ane̱ pɛɛɛ a ŋu Yeesuu amo̱ ne̱ mo̱ e̱ tɔwe̱ mò̱ ase̱ŋ‑ɔ mò̱ kikyiŋŋi le̱e̱ lowi‑ro kamɛɛ‑rɔ.
+      sbs: 0.7174
+      gen_sec: 7.08
+      ref_sec: 6.02
+      cer: 0.0984
+      wer: 0.2353
+    bible_00171:
+      source: bible
+      text: “Ɔko̱ mo̱ŋ tɛɛ ŋu, ɔko̱ mo̱ŋ tɛɛ nu, ɔko̱ mo̱ŋ tɛɛ pini
+      sbs: 0.6832
+      gen_sec: 4.18
+      ref_sec: 3.64
+      cer: 0.6286
+      wer: 1.0833
+    bible_00172:
+      source: bible
+      text: Mo̱ a nu fe̱yɛ fo̱ gyi‑ana‑ɔ bo̱ko̱ a gya kase̱ŋtiŋ a e̱kpa‑ɔ se̱ fe̱yɛ ane̱ŋ ne̱ ane̱ se̱
+        ne̱ ɔ bo̱ so̱so̱‑ɔ a de̱ŋ kaapo̱ fe̱yɛ ane̱ gya se̱‑ɔ, mo̱ akatɔ a gyi amo̱ se̱ fɛɛ.
+      sbs: 0.7611
+      gen_sec: 11.78
+      ref_sec: 13.2
+      cer: 0.1296
+      wer: 0.25
+    bible_00173:
+      source: bible
+      text: Ke̱mo̱ kaye̱ ŋke‑o, ne̱ Roma awuye ase̱ŋgyipo̱‑ɔ a suŋ purisii awuye ya tɔwe̱ gywii ɔde̱e̱re̱se̱po̱‑ɔ
+        ɛ, “Sa a anyare̱ amo̱ kpa a bo̱ nare̱.”
+      sbs: 0.7235
+      gen_sec: 10.33
+      ref_sec: 7.5
+      cer: 0.1064
+      wer: 0.1667
+    bible_00174:
+      source: bible
+      text: Amo̱se̱‑ɔ mbe̱yɔmɔ, mo̱ ko̱so̱bɛɛ‑ana, ane̱ e̱ kpa fe̱yɛ mo̱nꞌ ŋu ane̱ŋ ne̱ Wuribware̱ ke̱kpa
+        a suŋ kusuŋ asɔre̱e̱ awuye ne̱ bo̱ bo̱ Makedoniya swe̱e̱re̱ se̱‑ɔ ŋkpo̱nɔ‑rɔ‑ɔ.
+      sbs: 0.7624
+      gen_sec: 13.14
+      ref_sec: 12.32
+      cer: 0.0603
+      wer: 0.1923
+    bible_00175:
+      source: bible
+      text: A le̱e̱ fe̱yɛ mo̱, dimaadi mò̱ gyi‑o, de kukyure kake‑o gbaa e̱le̱ŋ.”
+      sbs: 0.7413
+      gen_sec: 5.12
+      ref_sec: 4.52
+      cer: 0.2222
+      wer: 0.6667
+    bible_00176:
+      source: bible
+      text: Amaa mbe̱yɔmɔ ane̱ a nu fe̱yɛ bo̱ko̱ bo̱ mo̱ne̱‑rɔ, ne̱ bo̱ de wo̱rɔgya. Bo̱ maa waa asuŋ
+        ke̱maa, amɔ ase̱sɛ ase̱ŋ‑nɔ ke̱nare̱ lweero dooo.
+      sbs: 0.7354
+      gen_sec: 10.24
+      ref_sec: 10.36
+      cer: 0.086
+      wer: 0.25
+    bible_00177:
+      source: bible
+      text: Mo̱ e̱ sa se̱ŋsa mo̱ i gywii mo̱ne̱ ne̱e̱ fe̱yɛ mo̱ne̱ a gye̱ mo̱ gyi‑ana‑ɔ. Ane̱ a tɛɛ buŋŋi
+        ane̱ ŋkpo̱nɔ‑rɔ kpa mo̱ne̱‑ɔ, mo̱ne̱ mɔ, mo̱nꞌ buŋŋi mo̱ne̱ ŋkpo̱nɔ‑rɔ kpa ane̱.
+      sbs: 0.7461
+      gen_sec: 12.46
+      ref_sec: 10.6
+      cer: 0.3182
+      wer: 0.4194
+    bible_00178:
+      source: bible
+      text: Mò̱ ke̱de̱ŋ tɔwe̱ ane̱ŋ‑ɔ, ne̱ Farisii awuye‑o na Sadukii awuye‑o a le̱e̱ ba kɔ, ne̱ baa
+        ke‑ro,
+      sbs: 0.7123
+      gen_sec: 7.34
+      ref_sec: 5.92
+      cer: 0.0635
+      wer: 0.1176
+    bible_00179:
+      source: bible
+      text: Ɔɔ tɔwe̱ ane̱ŋ, a le̱e̱ fe̱yɛ saŋ ke̱maa mɔ Wuribware̱-a‑kya-ane̱-yɔwe̱ a ateese kigyibe̱e̱‑ɔ,
+        Romanyi gominaa i lee bamo̱ ne̱ oo tii bamo̱ tiikpa‑ɔ ɔko̱ a ɔ sa bamo̱.]
+      sbs: 0.701
+      gen_sec: 12.89
+      ref_sec: 13.02
+      cer: 0.0783
+      wer: 0.3929
+    bible_00180:
+      source: bible
+      text: Ne̱ ɔko̱ ya yaa fo̱ iwurekpa a ɔ ya gyi ase̱ŋ bo̱ da fo̱ na ɔ bɔ fo̱ ko̱kɔ, ne̱ mò̱ e̱ kpa
+        fo̱ kaare̱ a ɔ kɔɔre̱, taa fo̱ waagya bo̱ tii mò̱ se̱ na ɔ taa nare̱.
+      sbs: 0.7899
+      gen_sec: 10.41
+      ref_sec: 10.92
+      cer: 0.07
+      wer: 0.1282
+    bible_00181:
+      source: bible
+      text: Mo̱ e̱ ko̱re̱ ke̱bware̱ko̱re̱ fe̱yɛ ane̱ nyaŋpe̱ Yeesuu Kristoo yure mo̱ne̱ pɛɛɛ.
+      sbs: 0.662
+      gen_sec: 5.89
+      ref_sec: 9.78
+      cer: 0.0536
+      wer: 0.25
+    bible_00182:
+      source: bible
+      text: “Mo̱nꞌ nu mo̱ne̱ e̱ye̱e̱ na mo̱nꞌ kiŋŋi le̱e̱ mo̱ne̱ e̱bɔye̱‑rɔ, a le̱e̱ fe̱yɛ Wuribware̱
+        se̱ a kuwure‑o a tɔ‑rɔ.”
+      sbs: 0.6873
+      gen_sec: 7.77
+      ref_sec: 5.44
+      cer: 0.0704
+      wer: 0.2632
+    bible_00183:
+      source: bible
+      text: ‘A tiri fe̱yɛ bo̱ taa mo̱, dimaadi mò̱ gyi‑o, bo̱ waa abɔye̱waapo̱ ke̱sare̱e̱‑rɔ, na bo̱
+        da mo̱ bo̱ me̱ra kiyii kpare̱-abɛɛ‑rɔ se̱, na ke̱mo̱ kake sase̱po̱‑ɔ na n kyiŋŋi le̱e̱ lowi‑ro.’
+        ”
+      sbs: 0.6534
+      gen_sec: 13.73
+      ref_sec: 12.66
+      cer: 0.15
+      wer: 0.5484
+    bible_00184:
+      source: bible
+      text: Ne̱ ase̱sɛ adusunoo na anyɔ‑ɔ a kiŋŋi ba Yeesuu ase̱, na bamo̱ akatɔ a gyi. Ne̱ baa bo̱ tɔwe̱
+        gywii mò̱ fe̱yɛ, “Ane̱ nyaŋpe̱, ane̱ a ya ba fo̱ ke̱nyare̱ bo̱ tɔwe̱ ase̱ŋ‑ɔ, ibrisi gbaa a bu
+        ane̱.”
+      sbs: 0.7389
+      gen_sec: 14.42
+      ref_sec: 14.46
+      cer: 0.0775
+      wer: 0.2632
+    bible_00185:
+      source: bible
+      text: Bɛɛɛ fo̱ sa a ase̱sɛ mɔ ne̱ bo̱ ye̱re̱ mfe̱e̱‑ɔ tɔwe̱ ke̱bɔye̱ ne̱ mo̱ a gyi ke̱mo̱ ke̱pɔ
+        saŋ ne̱ baa yaa mo̱ maŋ abre̱sɛ‑ɔ akatɔ‑rɔ.
+      sbs: 0.7288
+      gen_sec: 9.22
+      ref_sec: 8.52
+      cer: 0.0588
+      wer: 0.1538
+    bible_00186:
+      source: bible
+      text: Kayo̱wɔre̱ ke̱be̱gya ko̱ i ŋu ase̱ŋ, amɔ abe̱gya ne̱ a saŋ‑ɔ pɛɛɛ i ŋu ase̱ŋ ne̱e̱. Fe̱yɛ
+        bamo̱ ya kyo̱rɔ kayo̱wɔre̱‑ɔ ke̱be̱gya ko̱, amɔ abe̱gya ne̱ aa saŋ‑ɔ pɛɛɛ akatɔ a gyi.
+      sbs: 0.7626
+      gen_sec: 12.8
+      ref_sec: 11.98
+      cer: 0.0256
+      wer: 0.0938
+    bible_00187:
+      source: bible
+      text: Ne̱ ŋkee oo suŋ bamo̱ bo̱ kyo̱ŋwe̱ e̱maŋ se̱ fe̱yɛ bo̱ ya tɔwe̱ Wuribware̱ a kuwure‑o‑ro ase̱ŋ,
+        na bo̱ kya alɔpo̱.
+      sbs: 0.7377
+      gen_sec: 8.7
+      ref_sec: 8.34
+      cer: 0.0263
+      wer: 0.0952
+    bible_00188:
+      source: bible
+      text: Amo̱se̱ se̱‑ɔ, mo̱ e̱ tɔwe̱ mo̱ i gywii mo̱ne̱ fe̱yɛ ɔke̱maa ne̱ mò̱ e̱ ko̱re̱ Wuribware̱
+        ɔ kpa ko̱tɔko̱, ne̱ mò̱ ya kɔɔre̱ Wuribware̱ gyi mò̱ kakpo̱nɔ‑rɔ fe̱yɛ ɔɔ kyɔ nya ke̱tɔ‑ɔ, Wuribware̱
+        mɔ e̱ sa mò̱ ke̱mo̱.
+      sbs: 0.7137
+      gen_sec: 14.67
+      ref_sec: 13.38
+      cer: 0.0368
+      wer: 0.2368
+    bible_00189:
+      source: bible
+      text: Ane̱ŋ se̱‑ɔ, Wuribware̱ e̱ yɔwe̱ mo̱ne̱ ase̱ŋ a ɔ sa mo̱ne̱, na mo̱ne̱ maŋ mɔ kii ke̱taakpaŋ.
+        Mo̱ i gyi mo̱ne̱ kase̱ŋtiŋ fe̱yɛ mo̱ne̱ maa lɛɛ ŋu mo̱, amɔ saŋ a fo̱ fe̱yɛ m ba, ne̱ mo̱ne̱ e̱
+        tɔwe̱ fe̱yɛ,
+      sbs: 0.7733
+      gen_sec: 14.59
+      ref_sec: 14.66
+      cer: 0.063
+      wer: 0.2
+    bible_00190:
+      source: bible
+      text: Ne̱ purisii awuye‑o a ya tɔwe̱ gywii Roma awuye ase̱ŋgyipo̱‑ɔ. Bamo̱ a nu fe̱yɛ Pɔɔl na Silas
+        gye̱ Roma maŋ agyi ne̱e̱‑ɔ,† ne̱ kufu a nya bamo̱, a le̱e̱ fe̱yɛ baa waa bamo̱ bo̱rɔkraa.
+      sbs: 0.7477
+      gen_sec: 13.4
+      ref_sec: 12.58
+      cer: 0.0476
+      wer: 0.2353
+    bible_00191:
+      source: bible
+      text: A le̱e̱ fe̱yɛ a du ne̱e̱ fe̱yɛ mo̱ gyi mɔ a wu, ne̱ ɔɔ be̱e̱ kyiŋŋi le̱e̱ lowi‑ro‑o. Ɔɔ dɛɛ
+        fo̱, amaa mbe̱yɔmɔ, mo̱ a ŋu mò̱.’ Ne̱ baa le̱e̱ ba gyi akatɔ.
+      sbs: 0.7937
+      gen_sec: 10.5
+      ref_sec: 11.8
+      cer: 0.0851
+      wer: 0.303
+    bible_00192:
+      source: bible
+      text: Kisi Mɔlɔk suŋkpa ne̱ mo̱ne̱ a so̱rɔ,
+      sbs: 0.7066
+      gen_sec: 2.82
+      ref_sec: 6.72
+      cer: 0.1538
+      wer: 0.4286
+    bible_00193:
+      source: bible
+      text: Mfaanɛɛ ne̱ ane̱ fɔŋfɔŋ a bo̱ gyii ke̱kpa ne̱ Wuribware̱ e̱ kpa ane̱‑ɔ. Ne̱ bo̱ le̱e̱ ane̱ŋ
+        ne̱ ɔ kpa ane̱ ase̱ŋ‑ɔ se̱‑ɔ, ane̱ a taa ane̱ e̱ye̱e̱ bo̱ dɔŋŋɔ mò̱ se̱.
+      sbs: 0.7694
+      gen_sec: 11.61
+      ref_sec: 11.42
+      cer: 0.049
+      wer: 0.0938
+    bible_00194:
+      source: bible
+      text: Ne̱ baa bo̱rɔ kyo̱ŋ Firigiya na Galatiya e̱swe̱e̱re̱ se̱, a le̱e̱ fe̱yɛ Wuribware̱ a kufwiiŋe
+        timaa‑o mo̱ŋ sa bamo̱ kpa fe̱yɛ bo̱ tɔwe̱ abware̱se̱ŋ swe̱e̱re̱ amo̱ pɛɛɛ ne̱ ba te̱e̱ ɛ Asiya‑o
+        si.
+      sbs: 0.7345
+      gen_sec: 14.59
+      ref_sec: 14.66
+      cer: 0.0606
+      wer: 0.2121
+    bible_00195:
+      source: bible
+      text: Ne̱ Yeesuu a tɔwe̱ gywii mò̱ fe̱yɛ, “Tɔwe̱ ke̱tɔ ne̱ fo̱ e̱ kpa‑ɔ gywii mo̱.”
+      sbs: 0.7118
+      gen_sec: 4.95
+      ref_sec: 3.72
+      cer: 0.0417
+      wer: 0.1333
+    bible_00196:
+      source: bible
+      text: Ne̱ bo̱ yɛ Peetroo na Yohanee na ɔnyare̱‑ɔ le̱e̱ se̱ŋgyikpa a ke̱kyaŋ‑ɔ‑rɔ. Bamo̱ a le̱e̱
+        kawu‑o, ne̱ agye̱ŋkpɛɛpo̱‑ɔ na abre̱sɛ‑ɔ wo̱re̱ wo̱re̱ a le̱e̱ ba tɔwe̱ fe̱yɛ,
+      sbs: 0.76
+      gen_sec: 12.37
+      ref_sec: 10.38
+      cer: 0.0991
+      wer: 0.2593
+    bible_00197:
+      source: bible
+      text: Ane̱ e̱ fa fe̱yɛ mo̱ne̱ nyi ane̱ŋ ne̱ ane̱ a kra mo̱ne̱ fe̱yɛ ane̱ŋ ne̱ se̱sɛ e̱ kra mò̱
+        gyi‑ana‑ɔ.
+      sbs: 0.7114
+      gen_sec: 6.66
+      ref_sec: 6.12
+      cer: 0.0164
+      wer: 0.05
+    bible_00198:
+      source: bible
+      text: A saŋ a tiri fe̱yɛ ŋ yɔ mo̱ kpa‑ɔ ndɔɔ na nyaŋe̱ na kraye̱, a le̱e̱ fe̱yɛ bamo̱ e̱ kpa a bo̱
+        mɔɔ Wuribware̱ a akyaamɛɛ‑ɔ, Yɛro̱salɛm maŋ‑nɔ ne̱ ba mɔɔ bamo̱. Ne̱ mo̱ saŋ‑ɔ mo̱ŋ tɛɛ fo̱ fe̱yɛ
+        ŋ yɔ mfe̱ŋ.’ ”
+      sbs: 0.7267
+      gen_sec: 15.44
+      ref_sec: 14.86
+      cer: 0.0226
+      wer: 0.0476
+    bible_00199:
+      source: bible
+      text: Saŋ amo̱ ase̱sɛ bwe̱e̱tɔ maa se̱ ba nu abware̱se̱ŋ, na ba kɔɔre̱ ba gyi.
+      sbs: 0.7244
+      gen_sec: 5.29
+      ref_sec: 5.72
+      cer: 0.0612
+      wer: 0.2143
 - model: ghananlpcommunity/ghana-tts-36k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: ref
@@ -18004,4 +19805,4 @@ benchmarks:
       ref_sec: 5.72
       cer: 0.1633
       wer: 0.6429
-updated: '2026-10-02'
+updated: '2026-10-09'

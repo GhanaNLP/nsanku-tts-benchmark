@@ -5087,6 +5087,1698 @@ benchmarks:
       ref_sec: 6.12
       cer: 0.3
       wer: 0.7
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.722
+  num_scored: 200
+  cer: 0.2525
+  wer: 0.631
+  accuracy: 0.7475
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.7348
+  score: 0.7348
+  per_source:
+    bible:
+      sbs: 0.722
+      cer: 0.2525
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Asɛ Boas ŋɔ, “Korowii tɛɛ hɛɛra.
+      sbs: 0.6766
+      gen_sec: 2.99
+      ref_sec: 12.24
+      cer: 0.4167
+      wer: 1.5
+    bible_00001:
+      source: bible
+      text: Umee dɛ́ won jemɛ o seo habɔɔ wa ɔ?
+      sbs: 0.6922
+      gen_sec: 2.9
+      ref_sec: 4.5
+      cer: 0.6
+      wer: 1.2222
+    bible_00002:
+      source: bible
+      text: Anomanta, n ɡbaɡba laa dɛɛ ɛ a ɡɛ wechɔɡa nɔ.
+      sbs: 0.6627
+      gen_sec: 4.01
+      ref_sec: 3.46
+      cer: 0.3529
+      wer: 0.9
+    bible_00003:
+      source: bible
+      text: Dɛkalkɛ ba ɛ wechɔɡa dɛ jo n nɛ, dɛ kaa fuh daawiile voɡ Baal ta dɛɛ muɡli n baah.
+      sbs: 0.7648
+      gen_sec: 7.17
+      ref_sec: 7.38
+      cer: 0.2903
+      wer: 0.6842
+    bible_00004:
+      source: bible
+      text: Korowiirii bola.
+      sbs: 0.6584
+      gen_sec: 1.62
+      ref_sec: 3.04
+      cer: 0.9286
+      wer: 3.0
+    bible_00005:
+      source: bible
+      text: Ɔbɛd Edom ne Jehia ɡe ja dɛɛ daah Daka la.
+      sbs: 0.7246
+      gen_sec: 3.67
+      ref_sec: 5.46
+      cer: 0.3438
+      wer: 0.7
+    bible_00006:
+      source: bible
+      text: ’ Weela la taa lɔ o nɛɛ nɔ, ɡɛɛ doŋa ɡe ɛɛ ba o nɛɛ doe.
+      sbs: 0.729
+      gen_sec: 4.52
+      ref_sec: 3.82
+      cer: 0.2632
+      wer: 0.4
+    bible_00007:
+      source: bible
+      text: Anee fa ɛ wesɔɔhla saŋ la bwa la, kɛ taraken te, o cheɡɛ o keamere waa baa chwera la ta, dɛ
+        le a bwa ne baŋ.
+      sbs: 0.6305
+      gen_sec: 9.47
+      ref_sec: 9.06
+      cer: 0.2025
+      wer: 0.5385
+    bible_00008:
+      source: bible
+      text: Gɛɛ sɔfo la ɛɛ ba ɛɛ dɛ che naate baa laa doŋa dɛɛ kpɔ o nɛɛ la naa ta soŋe o wechɔɡa n sie
+        ń kpɔ kɛo.
+      sbs: 0.7348
+      gen_sec: 8.7
+      ref_sec: 8.26
+      cer: 0.2133
+      wer: 0.5556
+    bible_00009:
+      source: bible
+      text: O ɛ bechala dɛɛ ɔmɛ.
+      sbs: 0.6503
+      gen_sec: 1.79
+      ref_sec: 12.38
+      cer: 0.5333
+      wer: 1.0
+    bible_00010:
+      source: bible
+      text: He tɔnɔ haa dɔa laanee kɛŋɔ he soɡa bini aa toɡra Korowii be.
+      sbs: 0.6551
+      gen_sec: 5.55
+      ref_sec: 3.8
+      cer: 0.1667
+      wer: 0.3846
+    bible_00011:
+      source: bible
+      text: Tɔpere waa tɔ sie ta la, hé cheme dɛ́ tom mɛ dɛ́ ɡel he tomare bwa bil.
+      sbs: 0.731
+      gen_sec: 5.89
+      ref_sec: 5.1
+      cer: 0.1961
+      wer: 0.5294
+    bible_00012:
+      source: bible
+      text: Aah dɛ Korowii bwaawee baa ir nɛra nɛ aa, a te taa Yeesu Kristo aa wola won lɛ yaa aa?
+      sbs: 0.6373
+      gen_sec: 7.51
+      ref_sec: 5.08
+      cer: 0.1692
+      wer: 0.5
+    bible_00013:
+      source: bible
+      text: Nɛra baa teŋe ba pena la, Abraham biirii ba ɡe.
+      sbs: 0.6805
+      gen_sec: 4.35
+      ref_sec: 3.0
+      cer: 0.5
+      wer: 0.6
+    bible_00014:
+      source: bible
+      text: Sɔfo la berɛ ba nyiŋu, dɛ o na ŋwɛr kpelaa, ó ŋɔ o be ŋɔ o kah doŋa.
+      sbs: 0.7428
+      gen_sec: 6.23
+      ref_sec: 5.08
+      cer: 0.375
+      wer: 0.7222
+    bible_00015:
+      source: bible
+      text: Gɛɛ wɛɛ ba ɛɛ dɛ́ laa doŋa bɛlbwa kpɔ dem la ta ó berɛ do wer.
+      sbs: 0.7098
+      gen_sec: 5.21
+      ref_sec: 4.7
+      cer: 0.3111
+      wer: 0.625
+    bible_00016:
+      source: bible
+      text: N ta ban doe ŋɔ ba ɛ ɡɛ, a toole n liire ta kwaraa.
+      sbs: 0.722
+      gen_sec: 4.35
+      ref_sec: 3.96
+      cer: 0.1944
+      wer: 0.4286
+    bible_00017:
+      source: bible
+      text: Kɛ Bɛnjamen dea tena la ta ba bala Israel tena waa la mun noɛ, dɛ ɡe le ba bwɛɛre ta ba cheme
+        Gebea dɛ vɔrɔwe kɛ bá yo Israel tena.
+      sbs: 0.7771
+      gen_sec: 11.43
+      ref_sec: 11.84
+      cer: 0.24
+      wer: 0.6
+    bible_00018:
+      source: bible
+      text: Dɛ o berɔ ba na kɛŋɔ o ɛ wechɔɡa aa, a chɛ kɛ o lawɛ bombal waa wola kirihiah bɛlbwa dii ba
+        ɛ saraha.
+      sbs: 0.7482
+      gen_sec: 8.79
+      ref_sec: 7.64
+      cer: 0.2237
+      wer: 0.5
+    bible_00019:
+      source: bible
+      text: Kɛ dɛ o bwa chɔɡɔ kwaraa, o ta wobɛlbwa ɛɛ doe.
+      sbs: 0.7581
+      gen_sec: 4.1
+      ref_sec: 3.68
+      cer: 0.2857
+      wer: 0.8182
+    bible_00020:
+      source: bible
+      text: Ate, Mosis ne Arɔn jo Korowii Dea Cheremibɔr la bini.
+      sbs: 0.7412
+      gen_sec: 4.86
+      ref_sec: 3.62
+      cer: 0.119
+      wer: 0.6
+    bible_00021:
+      source: bible
+      text: Jeremia, bɛ nɛra nɔ naa ta che soŋe le n be tɛɛ ba, dɛkalkɛ ba wio yer mɛ ba sibeɡre wee ta
+        naa, maa ba bee no.
+      sbs: 0.7446
+      gen_sec: 9.64
+      ref_sec: 11.0
+      cer: 0.3457
+      wer: 0.7407
+    bible_00022:
+      source: bible
+      text: Too, baa baɡla Korowii Tɔn bini ŋɔ, “Abraham yarada taa a che asɛ o waa su Korowii siwi” nɔ,
+        a ɡɛ waa nɔ chiɡo mɔɔ Korowii ɡel Abraham teŋe o pen kɛɛ o teŋo mɔɔ nɔ?
+      sbs: 0.6762
+      gen_sec: 14.59
+      ref_sec: 13.08
+      cer: 0.0976
+      wer: 0.3611
+    bible_00023:
+      source: bible
+      text: Nɛn waa dɔ ɡɛ weebuula nɔ la chɛ kɛŋɔ wɛ́ɛ do laalajɛɡle, dɛ bɛ o nyumpona lee dɛ́ kpɔ kon
+        tɔ o nyoa ásɛ dɛɛ dooɡe lɔŋɔre ŋɔ, ‘N kah doŋa!
+      sbs: 0.7606
+      gen_sec: 12.2
+      ref_sec: 11.04
+      cer: 0.3627
+      wer: 0.7742
+    bible_00024:
+      source: bible
+      text: Kɛ he jemɔ kɛŋɔ dɛ he kpɔ he te do nomɛl nɔn ta ŋɔ on dɔ heya aa, dɛ on dɔ heyaa kenɛ?
+      sbs: 0.6386
+      gen_sec: 7.34
+      ref_sec: 6.18
+      cer: 0.3548
+      wer: 0.6957
+    bible_00025:
+      source: bible
+      text: Anomanta, Hatak leɔ dɛ ka na Mɔdekae kɛ waa soɡe bwɛɛ la cheremibɔr, waa lɔ koodem doonyoa
+        la sie.
+      sbs: 0.7323
+      gen_sec: 8.96
+      ref_sec: 8.76
+      cer: 0.2338
+      wer: 0.7895
+    bible_00026:
+      source: bible
+      text: Saŋ la Israel tena aa wola kooro dɔe mɔɔ, asɛ sitɔɔla yon dɛɛ nyiŋi bela harɛ ta la, dɛ lɔr
+        lɔ harɛ la ta.
+      sbs: 0.7304
+      gen_sec: 9.47
+      ref_sec: 8.24
+      cer: 0.2875
+      wer: 0.7083
+    bible_00027:
+      source: bible
+      text: Nyoa Korowii aa baɡɛ Abraham ne o naanar la, dɛ nɛra baa teŋɛ Mmara ta laanee wɛɛ ba ɛɛ dɛ
+        tɛ aa, ate dɛ yarada nɛwɛnyini aa dɛ yarada Korowii nɔ ta mun dɔe.
+      sbs: 0.6622
+      gen_sec: 13.99
+      ref_sec: 10.06
+      cer: 0.1736
+      wer: 0.4412
+    bible_00028:
+      source: bible
+      text: Waa maa dɛ ba ba ɛɛ laanee la, dɛkalkɛ ba vɛɛh mɛ dɛ kpɔ harɛre ane voɡare ba su bonɔ bwa.
+      sbs: 0.7851
+      gen_sec: 7.85
+      ref_sec: 7.92
+      cer: 0.2941
+      wer: 0.619
+    bible_00029:
+      source: bible
+      text: Chal la kar la, ó le dɛ́ ka fuɡa ta o mun ta n doonyoa bela.
+      sbs: 0.7039
+      gen_sec: 4.86
+      ref_sec: 4.54
+      cer: 0.2381
+      wer: 0.75
+    bible_00030:
+      source: bible
+      text: Gɛ saraha kwaa nɔ ja Ona Tɔpere saraha kwaa ne koŋkɛɛla, ne nyobaɡa chuɡra sarahare dɛ sarahare
+        aa le he bambile ta haa kpɔ baa tɛ men Korowii bwa ta.
+      sbs: 0.7636
+      gen_sec: 13.65
+      ref_sec: 11.9
+      cer: 0.1176
+      wer: 0.3333
+    bible_00031:
+      source: bible
+      text: Nomɛlbwa waa wola nyoa vɔwɛ awola tɔpere la chɛ kɛ bá pero le o nɛra bini.
+      sbs: 0.7193
+      gen_sec: 6.57
+      ref_sec: 4.86
+      cer: 0.1379
+      wer: 0.375
+    bible_00032:
+      source: bible
+      text: Ŋwɛnɛre aa chɔ le tɛ deŋnesɔɔhna saraha aa chɛ kɛ ba kpɔ tɛ mɛ laanee nɔ.
+      sbs: 0.7467
+      gen_sec: 6.66
+      ref_sec: 4.84
+      cer: 0.2982
+      wer: 0.6875
+    bible_00033:
+      source: bible
+      text: Mosis berɔ kpɔ o noyal bwa ne o pwɛ bela waa wera, ne o kporombie anɛ la dɛ a noorare bwa,
+        dɛ fuah saraha kon la ta.
+      sbs: 0.758
+      gen_sec: 10.07
+      ref_sec: 9.1
+      cer: 0.1149
+      wer: 0.3704
+    bible_00034:
+      source: bible
+      text: Kooro laa o noniseɡ waa kpɔa dɛɛ ɛɡre tɔne ta aa ɛ mmarare o faa kpɔ tɛ Heeman la foo, dɛ
+        kpɔ tɛ Mɔdekae.
+      sbs: 0.7383
+      gen_sec: 9.13
+      ref_sec: 9.9
+      cer: 0.1625
+      wer: 0.4167
+    bible_00035:
+      source: bible
+      text: Anomanta, o tao tɛ wejerema baa won waa bini baɡla, dɛ dɔ dibɔra kooloŋ ta bela.
+      sbs: 0.7343
+      gen_sec: 7.34
+      ref_sec: 7.86
+      cer: 0.2419
+      wer: 0.625
+    bible_00036:
+      source: bible
+      text: asɛ Samla waa le bwɛjen Masrɛka ba di kora.
+      sbs: 0.7402
+      gen_sec: 3.93
+      ref_sec: 5.42
+      cer: 0.1765
+      wer: 0.5556
+    bible_00037:
+      source: bible
+      text: He dɛ komɛ he koo kondikwa aa, he bɛ anɔ la aa lɔ koo nyoa tenten la komɛ.
+      sbs: 0.7342
+      gen_sec: 6.4
+      ref_sec: 5.64
+      cer: 0.1636
+      wer: 0.5
+    bible_00038:
+      source: bible
+      text: O kpɔ laala tɛɛ ba ŋɔ, bá kpɔ ka tɛo ó do, dɛ́ foo lweyal la bil, asɛ o vɛh, o ta laala la
+        lɛɛ.
+      sbs: 0.7586
+      gen_sec: 7.94
+      ref_sec: 8.56
+      cer: 0.1385
+      wer: 0.32
+    bible_00039:
+      source: bible
+      text: Kɛ he nɛra haa ba ka la te la, mɛɛ ɡeloo ɔmee chole banɛɛ kohona ba dɔma harɛre baa soɡe a
+        ta la ta, ásɛ peu ta ba no papooni kwaraa sii dɛɛ chwa.
+      sbs: 0.7452
+      gen_sec: 12.63
+      ref_sec: 10.42
+      cer: 0.2455
+      wer: 0.8529
+    bible_00040:
+      source: bible
+      text: Anomanta, waa Korowii aa dɛ bol men Jeremia be laanee nɔ.
+      sbs: 0.7251
+      gen_sec: 5.21
+      ref_sec: 3.84
+      cer: 0.0889
+      wer: 0.3636
+    bible_00041:
+      source: bible
+      text: N dɛ na Ampelatos waa ɛ n chamenate ya Dɔɔ Yeesu nɛɛ teŋa ta la.
+      sbs: 0.627
+      gen_sec: 5.72
+      ref_sec: 4.88
+      cer: 0.2041
+      wer: 0.6667
+    bible_00042:
+      source: bible
+      text: Chɔ n be bonɔ jwaana nɔ ne, ásɛ tɔɔ perɔ chɔɔ aa, ya na kɛŋɔ wɛɛ moe kɛɛ waa hen moɔ.
+      sbs: 0.7091
+      gen_sec: 7.34
+      ref_sec: 7.56
+      cer: 0.2258
+      wer: 0.619
+    bible_00043:
+      source: bible
+      text: A lole kɛ dɛ baa on kure dɛɛ ja banyoola batoro la nɛ, kɛ onee bera ba chɔ ba bwa nyoa dɛ
+        lɛ sɔn kohona.
+      sbs: 0.7378
+      gen_sec: 8.96
+      ref_sec: 9.08
+      cer: 0.1667
+      wer: 0.76
+    bible_00044:
+      source: bible
+      text: O ɡelɔ ba kpɔ ba cheɡ Ɔbɛd Edom dem, o le bwɛjen Gat.
+      sbs: 0.7929
+      gen_sec: 4.52
+      ref_sec: 5.04
+      cer: 0.1795
+      wer: 0.8462
+    bible_00045:
+      source: bible
+      text: Kooro ɡelɔ ba ɛ kondikonjena a warɛ kohona tɛ Ɛsta waa ɛo o haah la.
+      sbs: 0.6971
+      gen_sec: 6.06
+      ref_sec: 6.22
+      cer: 0.2453
+      wer: 0.6
+    bible_00046:
+      source: bible
+      text: Hé lɛo ja he nɛɛ ɡɛ aa chɛ kɛ Korowii nɛra lɛ ba dɔŋ la ya Dɔɔ Yeesu nomanta.
+      sbs: 0.6282
+      gen_sec: 6.66
+      ref_sec: 5.76
+      cer: 0.3103
+      wer: 0.6842
+    bible_00047:
+      source: bible
+      text: Anomanta, le ɡɛ saŋ, Mɔdekae dɔ ŋwɛnɛ kɛ ó jo koodem dɛɛ la kooro sie, saŋ bɛlbwa.
+      sbs: 0.723
+      gen_sec: 7.68
+      ref_sec: 8.14
+      cer: 0.1774
+      wer: 0.5882
+    bible_00048:
+      source: bible
+      text: Wɛɛ ba weela aa dɛ bu nee, kabul ne ɔɡra, dɛ́ berɛ ɡel hwel che bɔr wɔrɔbe, ásɛ he konduula
+        chɔɡ.
+      sbs: 0.7694
+      gen_sec: 8.53
+      ref_sec: 8.04
+      cer: 0.3056
+      wer: 0.9048
+    bible_00049:
+      source: bible
+      text: Kɛ o ol la kar ne o tɔn la te, ó le ane bela baa soɡa la dahara dɛ ka fuah.
+      sbs: 0.7062
+      gen_sec: 6.14
+      ref_sec: 5.58
+      cer: 0.1698
+      wer: 0.3333
+    bible_00050:
+      source: bible
+      text: Ń Naa Korowii ne ya Dɔɔ Yeesu Kristo bwa na he sum, dɛ́ cha heya, dɛ́ tɛ heyaa bosɔɔhna.
+      sbs: 0.6604
+      gen_sec: 7.59
+      ref_sec: 5.84
+      cer: 0.1385
+      wer: 0.4211
+    bible_00051:
+      source: bible
+      text: Dɛ berɛ kpɔ batakaarebora efɔd la doo, dɛ lawɛ kon baa nyarɔ kwaa do o ta kɛrɛdɛ, dɛ do batakaarebora
+        efɔd la nyoo la vɔwɛ Arɔn chara a che kɛrɛdɛ.
+      sbs: 0.754
+      gen_sec: 13.23
+      ref_sec: 11.38
+      cer: 0.2
+      wer: 0.7667
+    bible_00052:
+      source: bible
+      text: Kpɔ bwɛjen la nomonome ne sɔfore la bane ja he nɛ, ásɛ he la Jerusalam Bɛn Henɔm Fɛlembɔjen
+        waa bɛne Kaŋli Doonyoa la ta.
+      sbs: 0.7257
+      gen_sec: 11.09
+      ref_sec: 9.78
+      cer: 0.1771
+      wer: 0.7083
+    bible_00053:
+      source: bible
+      text: Kooro Devid kpɔ a ɡɛ kwaa nɔ dɛ lea cheɡ tɛ Korowii toma, ɡɛ o fa aa ɛ suuɡapoŋa ne suuɡaswɛm
+        waa paa le harɛre waa kaa yo, dɛ pɔ a nɛra nɛɛ la.
+      sbs: 0.7908
+      gen_sec: 12.54
+      ref_sec: 13.82
+      cer: 0.2315
+      wer: 0.6765
+    bible_00054:
+      source: bible
+      text: Yeesu bwadabii lɔ beŋkpoŋ, o Domadɛɛɡe ɡe lɔ beŋkpoŋ, asɛ hwɛɡa Korowii aa le yaa ya bwa dɔ
+        la ɡe ɛ beŋkpoŋ.
+      sbs: 0.6661
+      gen_sec: 10.41
+      ref_sec: 8.18
+      cer: 0.2619
+      wer: 0.7273
+    bible_00055:
+      source: bible
+      text: Men la kar ɛ sɔfo la kwa ɡɛ baa dɛ ɛ mea saraha la.
+      sbs: 0.6908
+      gen_sec: 4.27
+      ref_sec: 4.02
+      cer: 0.1351
+      wer: 0.5
+    bible_00056:
+      source: bible
+      text: Sɔfo waa kpɔ chal la ne noo la ɛ saraha laanee chɛ kɛŋɔ o dɔ o diɡ hwii la.
+      sbs: 0.7334
+      gen_sec: 6.49
+      ref_sec: 5.06
+      cer: 0.25
+      wer: 0.6316
+    bible_00057:
+      source: bible
+      text: Korowii ŋɔ, “Nɛwɛnyini bie, mɛɛ chɔɡ n Dea baa dɛ ɛ mbarafo o waa o do wer ba siwi ta, ba
+        sie ɛɛ lɛ o ta laanee.
+      sbs: 0.7444
+      gen_sec: 9.64
+      ref_sec: 8.66
+      cer: 0.2963
+      wer: 0.5185
+    bible_00058:
+      source: bible
+      text: A habɔɔ la, Kooro Devid berɔ ka yo Filisti tena dɛ pɔ ba nɛ, dɛ lɛ bwɛjen Gat ne o bwɛɛre
+        aa baro bwa le Filisti tena ba fa aa dɛ di a kpeɡri la be.
+      sbs: 0.8125
+      gen_sec: 12.63
+      ref_sec: 13.24
+      cer: 0.1273
+      wer: 0.3333
+    bible_00059:
+      source: bible
+      text: ” Anomanta, n laŋɔ dɛ ka kwi bela maa kpɔa huɡe la.
+      sbs: 0.7359
+      gen_sec: 4.44
+      ref_sec: 3.42
+      cer: 0.3514
+      wer: 0.7273
+    bible_00060:
+      source: bible
+      text: Ya jemɔ kɛŋɔ Yeesu Kristo ir seo ta waa wola sewɛ kpa bwa, seo ta kpeɡri dɔe o nɛɛ kpa.
+      sbs: 0.6597
+      gen_sec: 7.68
+      ref_sec: 5.56
+      cer: 0.1364
+      wer: 0.45
+    bible_00061:
+      source: bible
+      text: Awola bɛl, Rut ŋɔ Naomi be ŋɔ, “N poori, tɛ́ mɛ ŋwɛnɛ ń la nomɛlbwa waa na n sum koo ta dɛ́
+        ka kuuh mea.
+      sbs: 0.6987
+      gen_sec: 8.96
+      ref_sec: 9.94
+      cer: 0.2603
+      wer: 0.68
+    bible_00062:
+      source: bible
+      text: O bibaalaa, Nadab ne Abihu ne Eliasa dɛ Itama.
+      sbs: 0.7633
+      gen_sec: 4.27
+      ref_sec: 5.12
+      cer: 0.1667
+      wer: 0.6667
+    bible_00063:
+      source: bible
+      text: A chɛ kɛ á ɛ waa aa chɔ le tɛ he ne he naanar baa ka ba bobɛlbwa haa soɡa.
+      sbs: 0.7044
+      gen_sec: 6.14
+      ref_sec: 5.48
+      cer: 0.2037
+      wer: 0.55
+    bible_00064:
+      source: bible
+      text: Sɛra bibaa Jobab waa le bwɛjen Bosra baa so o buɡ ta.
+      sbs: 0.7777
+      gen_sec: 4.69
+      ref_sec: 5.2
+      cer: 0.0976
+      wer: 0.5
+    bible_00065:
+      source: bible
+      text: O mɛɛ sɔne Jɛɛ, asɛ Jɛɛ ɡe mɛɛ sɔne Simee, asɛ Simee mɛɛ sɔne Kes.
+      sbs: 0.7477
+      gen_sec: 5.8
+      ref_sec: 6.18
+      cer: 0.4082
+      wer: 1.4667
+    bible_00066:
+      source: bible
+      text: Dɛ Mɔdekae fa kah Ɛsta ŋɔ ó bɛ ɡel ba jemɛ o nɛnsoo, anomanta, o ta baɡlɛ kɛŋɔ o ɛ Juu te.
+      sbs: 0.7174
+      gen_sec: 7.94
+      ref_sec: 8.92
+      cer: 0.2727
+      wer: 0.6818
+    bible_00067:
+      source: bible
+      text: Dɛ́ kpɔ o ne mea saraha la pɛ ka fuah saraha kon la ta, dɛ́ kpɔ soŋe o wechɔɡa n be.
+      sbs: 0.7239
+      gen_sec: 7.0
+      ref_sec: 6.88
+      cer: 0.2667
+      wer: 0.5714
+    bible_00068:
+      source: bible
+      text: Lɔr chole ba nɛ, ásɛ nɛra ne kondɛɛra bwa serewe.
+      sbs: 0.7167
+      gen_sec: 4.44
+      ref_sec: 3.22
+      cer: 0.2368
+      wer: 0.7
+    bible_00069:
+      source: bible
+      text: ” Gɛɛ a do ba saɡɛ Heeman daa waa paa dɛɛ ba Mɔdekae o ta saɡa la, asɛ kooro baah sɔɔh tama.
+      sbs: 0.7422
+      gen_sec: 7.85
+      ref_sec: 10.72
+      cer: 0.1912
+      wer: 0.3333
+    bible_00070:
+      source: bible
+      text: Nomonome baa chɔ ba nyoo la kpɔ nɔɔra dawɛ nao la nyu ta n sie, ásɛ mɔɔ dɛ teŋe o baŋa bela.
+      sbs: 0.7349
+      gen_sec: 8.19
+      ref_sec: 6.76
+      cer: 0.1449
+      wer: 0.4545
+    bible_00071:
+      source: bible
+      text: Korowii ŋɔ Mosis be ja ŋɔ, “Dɛ bwadabii weebuula lɔ nɛn nɛ ba chaoh dɛ la o ne sɔfo be naa,
+        waa aa chɔ le ó laa doŋa bɛlbwa kpɔ o nɛɛ laanee nɔ.
+      sbs: 0.7413
+      gen_sec: 12.63
+      ref_sec: 10.68
+      cer: 0.2617
+      wer: 0.6176
+    bible_00072:
+      source: bible
+      text: Mɛɛ kpɔ he nɛraa ɛ n nɛra, ásɛ Korowii haa dɛ tomɔ la, ń ɡee tomɔ.
+      sbs: 0.7122
+      gen_sec: 5.72
+      ref_sec: 5.98
+      cer: 0.375
+      wer: 0.75
+    bible_00073:
+      source: bible
+      text: Mɛɛ ɡeloo hé dɔ deŋnesɔɔhna harɛ la ta, ásɛ dɛ he chɔɔɡɔ kwaraa naa, nomɛlbwa aa won ba aah
+        heya.
+      sbs: 0.7144
+      gen_sec: 8.79
+      ref_sec: 6.12
+      cer: 0.3867
+      wer: 0.65
+    bible_00074:
+      source: bible
+      text: Tɔpenuanɛ wee la telaa, sɔfo la berɛ ba nyiŋu.
+      sbs: 0.7629
+      gen_sec: 4.35
+      ref_sec: 3.24
+      cer: 0.2222
+      wer: 0.6667
+    bible_00075:
+      source: bible
+      text: Dɛ naate kpɔɔ tɛ mɛ a bena baa berɛ bɛlbwa kon dɛɛ tɛo la ta naa, a chɛ kɛ yoɡ la che ɡɛ.
+      sbs: 0.7208
+      gen_sec: 7.51
+      ref_sec: 6.88
+      cer: 0.2154
+      wer: 0.6522
+    bible_00076:
+      source: bible
+      text: Kondɛɛre bɛlbwa sɔfo la aa kpɔ fuh ɛ saraha tɛ nomɛl la, o tɔn la ɛ sɔfo la kon.
+      sbs: 0.7339
+      gen_sec: 6.91
+      ref_sec: 6.04
+      cer: 0.2167
+      wer: 0.4737
+    bible_00077:
+      source: bible
+      text: Erastos waa dɛ cheɡ bwɛɛ nɔ suuɡa la, o ne ya dɔŋ Kwaatos bwa dɛ na heya.
+      sbs: 0.6296
+      gen_sec: 6.49
+      ref_sec: 6.16
+      cer: 0.2
+      wer: 0.5882
+    bible_00078:
+      source: bible
+      text: A ɡɛ waa la baa chwera do Korowii Tɔn bini ŋɔ, “Korowii lɛo kɛ nɛndɛɛɡe o waa su o siwi” la,
+        Abraham ɡbo laa ba chwerɛ tɛ.
+      sbs: 0.675
+      gen_sec: 10.67
+      ref_sec: 7.72
+      cer: 0.2088
+      wer: 0.4444
+    bible_00079:
+      source: bible
+      text: Ate, kooro tomɛ o bonɔɔ Heeman be ŋɔ ó ba warane, ásɛ ba la o haah Ɛsta be.
+      sbs: 0.7384
+      gen_sec: 6.57
+      ref_sec: 14.12
+      cer: 0.2545
+      wer: 0.5556
+    bible_00080:
+      source: bible
+      text: Korowii taahna ɛɛ lawɛ heyaa he bii dɔe bini, ne koo kwaa ne nae dɛ peera yae ta.
+      sbs: 0.7679
+      gen_sec: 7.17
+      ref_sec: 7.72
+      cer: 0.129
+      wer: 0.5556
+    bible_00081:
+      source: bible
+      text: He bɛ anɔ la aa leera la ɡe kuuh dɛɛ ja.
+      sbs: 0.6811
+      gen_sec: 3.33
+      ref_sec: 3.9
+      cer: 0.2759
+      wer: 0.6364
+    bible_00082:
+      source: bible
+      text: Baa lawɛ he bibaala ne bihaahnaa he che dɛɛ nyiŋi bá yoɡ ba kɛŋɔ yoma, dɛ́ kpɔ ba kaa harɛfale
+        ta, ásɛ he siwi swɛɛ hɛɛ nyiŋi kɛŋɔ he bii ɛɛ bao á ɛ pɛɛpɛɛ.
+      sbs: 0.7705
+      gen_sec: 13.99
+      ref_sec: 12.28
+      cer: 0.3559
+      wer: 0.7714
+    bible_00083:
+      source: bible
+      text: Dɛ naate berɔ dɛɛ nyin kɛ ó yawɛ aa, a chɛ kɛ ó bɔ suuɡa la dɛ́ bɔne a bini bɔre anue dɛ́
+        bɔ bɔrbeŋkpoŋ ja a ta.
+      sbs: 0.7528
+      gen_sec: 9.47
+      ref_sec: 8.02
+      cer: 0.2963
+      wer: 0.6429
+    bible_00084:
+      source: bible
+      text: Hɛɛ dɔ kondikwaa bɛlbwa haa dɛ nyinii dɛ́ di, dɛ́ so deŋnesɔɔhna ta he harɛ ta.
+      sbs: 0.715
+      gen_sec: 7.0
+      ref_sec: 6.42
+      cer: 0.25
+      wer: 0.625
+    bible_00085:
+      source: bible
+      text: Le awola tɔpere laanee Kooro Devid kpɔ do Asaf ne o nɛra baa ja o nɛɛ nɔn ta ŋɔ, bá ɡo yela
+        dɛɛ kpɛɛ Korowii.
+      sbs: 0.8108
+      gen_sec: 9.64
+      ref_sec: 9.76
+      cer: 0.2771
+      wer: 0.64
+    bible_00086:
+      source: bible
+      text: N sie ɛɛ beɡre he nɛɛ, dɛ́ ɡel he dɔma pɔ he nɛ, dɛ́ɛ nyiŋi he nɛ.
+      sbs: 0.7469
+      gen_sec: 5.46
+      ref_sec: 4.86
+      cer: 0.4
+      wer: 0.8235
+    bible_00087:
+      source: bible
+      text: O merɛ noo la kera anuanɛ saraha kon la ne o koŋkwaa bwa ta, loɡa ne loɡbajen ne kon waa dɛ
+        chɔŋɛ o ta.
+      sbs: 0.7494
+      gen_sec: 9.13
+      ref_sec: 8.54
+      cer: 0.1667
+      wer: 0.4583
+    bible_00088:
+      source: bible
+      text: Kwaa Korowii aa taa la, anee baa tomɛ, dɛ ɡel Korowii ɡbaɡba.
+      sbs: 0.7029
+      gen_sec: 5.55
+      ref_sec: 4.42
+      cer: 0.2979
+      wer: 0.5
+    bible_00089:
+      source: bible
+      text: Belaa n fe ɛɛ ba harɛ maa baɡɛ ba naawa nyoa ŋɔ o ɛ harɛpare ondɛɛɡe la kpɔe tɛɛ ba ó ɛ ba
+        kon.
+      sbs: 0.7458
+      gen_sec: 8.19
+      ref_sec: 9.04
+      cer: 0.3099
+      wer: 0.625
+    bible_00090:
+      source: bible
+      text: O ɛo kɛŋɔ bá fee saɡɛ Mɔdekae waa lɛ he nyu ta la o ta.
+      sbs: 0.6869
+      gen_sec: 4.69
+      ref_sec: 5.46
+      cer: 0.35
+      wer: 0.5333
+    bible_00091:
+      source: bible
+      text: Hé ŋɔ n bwɛɛ tena Andronikus ne Junias ba fa aa do n ne ba dea ka la be ŋɔ n dɛ na ba.
+      sbs: 0.6552
+      gen_sec: 7.25
+      ref_sec: 7.86
+      cer: 0.1774
+      wer: 0.375
+    bible_00092:
+      source: bible
+      text: Korowii ŋɔ n be ŋɔ, ‘Juda koranar ne Jerusalam tena, hé bwa cheɡ deŋne no men Koranar Bwa
+        Kooro, Israel tena aa dɛ tom mɛ aa dɛ bol.
+      sbs: 0.738
+      gen_sec: 11.95
+      ref_sec: 10.44
+      cer: 0.12
+      wer: 0.3214
+    bible_00093:
+      source: bible
+      text: Ásɛ nɛn waa jemɛ waa dɛ do pwɛre aa tedomaa dɔ tɛ o ɡbaɡba nime, kɛɛ o dɔɔ kɛɛ o haah kɛɛ
+        o bii baa kaa.
+      sbs: 0.744
+      gen_sec: 8.79
+      ref_sec: 9.54
+      cer: 0.2727
+      wer: 0.6154
+    bible_00094:
+      source: bible
+      text: Ɛsta nya ne o mɛɛ aa sewa la, Mɔdekae kpɔɔ berɛ o ɡbaɡba bie dɛɛ nyiŋu.
+      sbs: 0.7191
+      gen_sec: 6.4
+      ref_sec: 5.86
+      cer: 0.2963
+      wer: 0.8125
+    bible_00095:
+      source: bible
+      text: Baa bɛlbwa kɛɛ haah ŋwɛr aa ɛ o nyu kɛɛ o taŋɡbaɡre la, a chɛ kɛŋɔ sɔfo ba nyiŋu na ɡɛ waa
+        doa.
+      sbs: 0.7437
+      gen_sec: 8.62
+      ref_sec: 8.44
+      cer: 0.3239
+      wer: 0.5652
+    bible_00096:
+      source: bible
+      text: Bá laa o pwɛ bela waa wera la ne o kporombie anɛ la laa kpɔ a pɛ dɔŋa nɛ.
+      sbs: 0.7348
+      gen_sec: 6.23
+      ref_sec: 6.18
+      cer: 0.1667
+      wer: 0.4211
+    bible_00097:
+      source: bible
+      text: Nomonome warɔ le Eliasa naanar bini ɡwaa Itama naanar.
+      sbs: 0.7521
+      gen_sec: 5.12
+      ref_sec: 4.52
+      cer: 0.2667
+      wer: 0.6667
+    bible_00098:
+      source: bible
+      text: A chɛ kɛ ń bol Yeesu Amanesoma la nɛra bwa be, nɛra baa kaa sie ne banɔ la baa ka mun, nɛra
+        ba sie aa pila ne banɔ la ba sie aa wola pile bwa be.
+      sbs: 0.6423
+      gen_sec: 12.29
+      ref_sec: 9.08
+      cer: 0.2336
+      wer: 0.5
+    bible_00099:
+      source: bible
+      text: Koojen do nɛra baa lɔ koodem bela dɛɛ ɛ toma la bwa ŋɔ, báa ɡuŋi Heeman harɛ, dɛ́ɛ duuru saŋ
+        bɛlbwa.
+      sbs: 0.7247
+      gen_sec: 9.13
+      ref_sec: 9.3
+      cer: 0.2237
+      wer: 0.8095
+    bible_00100:
+      source: bible
+      text: O ɡelɔ ya jemɛ ya liire bini waa aa lole saŋ la, ne anɔ la aa chiɡ kerekere saŋ bɛlbwa dɛɛ
+        la, kɛ yaa won no waa bwa Korowii aa ɛa le mumpar kaa a jaɡa mun.
+      sbs: 0.7477
+      gen_sec: 13.65
+      ref_sec: 12.98
+      cer: 0.1795
+      wer: 0.4324
+    bible_00101:
+      source: bible
+      text: ” Anomanta, Josua leɔ dɛ kaa yo Amalɛk tena la ɡɛ Mosis aa doo la, asɛ Mosis ne Arɔn dɛ Hur
+        kaa deŋɡare la doa.
+      sbs: 0.7504
+      gen_sec: 9.73
+      ref_sec: 10.22
+      cer: 0.1807
+      wer: 0.4167
+    bible_00102:
+      source: bible
+      text: Ba kpɔ suuɡaswɛm ne suuɡapoŋa, dɛ ɛ bobɛl o ir nyundua.
+      sbs: 0.698
+      gen_sec: 5.12
+      ref_sec: 4.22
+      cer: 0.2791
+      wer: 0.8182
+    bible_00103:
+      source: bible
+      text: Asɛ o chwerɛ Sukot nomonome fifraanuanɛ dɛ banuanɛ sɔna tɛo.
+      sbs: 0.7358
+      gen_sec: 5.72
+      ref_sec: 6.48
+      cer: 0.24
+      wer: 0.8
+    bible_00104:
+      source: bible
+      text: Sɔfo la kpɔ chal la ane ɛ kwaa aa paaɡe kon baa dɛ fuh daawiile a sɔɔh aa soma o ta la loŋkoni
+        la ta n sie, n Dea Cheremibɔr bela.
+      sbs: 0.751
+      gen_sec: 11.26
+      ref_sec: 10.1
+      cer: 0.0816
+      wer: 0.4839
+    bible_00105:
+      source: bible
+      text: Ó kpɔ o pwɛ la ne o kporombie la pɛ dɔŋa nɛ, ɡɛ tenten baa laa deŋnesɔɔhna saraha nao noo
+        dɛɛ kpɔ o ta la.
+      sbs: 0.7419
+      gen_sec: 9.39
+      ref_sec: 7.72
+      cer: 0.225
+      wer: 0.52
+    bible_00106:
+      source: bible
+      text: Korowii ɛɛ ɡeloo ɔɡra ne ŋwɛra aa ba Ijipt tena nɛɛ la dɔŋa chole he nɛ, haa wola won chah.
+      sbs: 0.7684
+      gen_sec: 8.28
+      ref_sec: 7.26
+      cer: 0.3286
+      wer: 0.65
+    bible_00107:
+      source: bible
+      text: Sɔ́fo la ŋɔ o be ŋɔ doŋa bɛlbwa toole o nɛ.
+      sbs: 0.7474
+      gen_sec: 3.93
+      ref_sec: 3.06
+      cer: 0.0645
+      wer: 0.3636
+    bible_00108:
+      source: bible
+      text: Banee dɛɛ lɔ janjela ne anɔ la baa kpɔa dɛɛ hɛlɛ bwa.
+      sbs: 0.6986
+      gen_sec: 4.69
+      ref_sec: 5.22
+      cer: 0.2439
+      wer: 0.8333
+    bible_00109:
+      source: bible
+      text: Wekpeɡa maa bol a waa nɔ bwa ɛɛ ba he nɛɛ, dɛ́ ka he nɛɛ ka tel kɛŋɔ he bwa aa serewa, dɛkalkɛŋɔ
+        he ta Korowii waa noɛ.
+      sbs: 0.7721
+      gen_sec: 10.41
+      ref_sec: 9.46
+      cer: 0.1591
+      wer: 0.4643
+    bible_00110:
+      source: bible
+      text: Dɛ́ berɛ kpɔ sen pɛrɛntoa beŋkpoŋ ne fah ɛ sen saraha ja a ta.
+      sbs: 0.7166
+      gen_sec: 5.55
+      ref_sec: 4.94
+      cer: 0.2553
+      wer: 0.7857
+    bible_00111:
+      source: bible
+      text: Sɔ́fo la berɛ kpɔ noo la ane dɛ́ fuɡe do o ɡbabir ɡal nɔmpaa ta, dɛ́ kpɔ o diɡ noni do a ta,
+        dɛ́ ɛ ane merɛ n sie bela kera anuanɛ.
+      sbs: 0.7237
+      gen_sec: 10.75
+      ref_sec: 10.44
+      cer: 0.2581
+      wer: 0.625
+    bible_00112:
+      source: bible
+      text: Dɛ yoɡaa ba yoɡ yaa kɛŋɔ yoma kwaraa naa, n fe ta waane dɔe dɛ́ bol dɛɛ hae.
+      sbs: 0.72
+      gen_sec: 6.57
+      ref_sec: 6.66
+      cer: 0.25
+      wer: 0.5556
+    bible_00113:
+      source: bible
+      text: Silɛɛ bɛlbwa aa n nɛra nɛɛ doe ba, dɛkalkɛ ba ta kaeh maa kah ba la ne n deŋnetɛra la ɔmɛ.
+      sbs: 0.7561
+      gen_sec: 7.94
+      ref_sec: 7.88
+      cer: 0.2941
+      wer: 0.619
+    bible_00114:
+      source: bible
+      text: A ɡɛ tɔpera anuanɛ nɔ bwa taa chɛ kɛ bɛ́lbwa kpɔ o saraha baa fuah bá tɛ mɛ.
+      sbs: 0.7315
+      gen_sec: 6.49
+      ref_sec: 6.48
+      cer: 0.2456
+      wer: 0.7222
+    bible_00115:
+      source: bible
+      text: A ɛ saraha baa dɛ fuh a bwa a sɔɔh ɛɛ do som n be.
+      sbs: 0.7086
+      gen_sec: 4.01
+      ref_sec: 3.98
+      cer: 0.2571
+      wer: 0.5333
+    bible_00116:
+      source: bible
+      text: Dɛ́ le ɡɛ saŋ Korowii aa ta harɛ la, o bwara waa nɛwɛnyini aa wola wone dɛɛ na siwi ne, kɛŋɔ
+        o kpeɡri aa wola jaɡa dɔe ne o dor bwa, o ɡelɔ nɛwɛnyini na a bwa.
+      sbs: 0.6811
+      gen_sec: 13.91
+      ref_sec: 11.14
+      cer: 0.1525
+      wer: 0.3243
+    bible_00117:
+      source: bible
+      text: Mɛɛ ka che bwe bɛl jwɛɛh Sinai Bwejen ta belaa dɛɛ kpa heya.
+      sbs: 0.6876
+      gen_sec: 5.38
+      ref_sec: 3.84
+      cer: 0.2553
+      wer: 0.7692
+    bible_00118:
+      source: bible
+      text: Taraken hé ɡel he dabene la ne waa he fa aa dɛ teŋɛ a ta la.
+      sbs: 0.6578
+      gen_sec: 5.12
+      ref_sec: 4.46
+      cer: 0.3409
+      wer: 0.5
+    bible_00119:
+      source: bible
+      text: Dɛ nɛnee kɛɛ kondɛɛre kɛɛ harɛɛ yoo, o do ɡoroŋ dɛ tɛ mɛ, dɛ ɛ n kon pi.
+      sbs: 0.7436
+      gen_sec: 6.23
+      ref_sec: 6.66
+      cer: 0.3654
+      wer: 0.8333
+    bible_00120:
+      source: bible
+      text: Dɛ Filisti laa tena ɡe boa ba nyoa, dɛ cheme Refaim Fɛlembɔjen bini.
+      sbs: 0.7352
+      gen_sec: 6.23
+      ref_sec: 7.24
+      cer: 0.1852
+      wer: 0.6154
+    bible_00121:
+      source: bible
+      text: Oo, n Naa Korowii, umee lole waa wola hen ɔmɔɔ?
+      sbs: 0.7015
+      gen_sec: 4.27
+      ref_sec: 3.48
+      cer: 0.3143
+      wer: 0.7
+    bible_00122:
+      source: bible
+      text: Israel tena baa soɡe Dan dea harɛ ta dɛ kpoŋe kaa Beɛseeba, dɛ banɔ la baa soɡe Gelead harɛ
+        ta bwa baa cheme Korowii sie Mispa kɛ nɛmbeŋkpoŋ.
+      sbs: 0.7571
+      gen_sec: 13.06
+      ref_sec: 13.38
+      cer: 0.3036
+      wer: 0.75
+    bible_00123:
+      source: bible
+      text: Waa maa naa laanee kɛŋɔ n dɛ nyin wedɛɛɡa ɛɛ yaa, dɛ komɛl ŋɔ n bɛ ɛ.
+      sbs: 0.6567
+      gen_sec: 6.14
+      ref_sec: 5.3
+      cer: 0.4118
+      wer: 1.0
+    bible_00124:
+      source: bible
+      text: Men Pɔɔl maa ɛ Yeesu Kristo bonɔɔ la, men chwerɛ tɔn nɔ.
+      sbs: 0.6656
+      gen_sec: 5.03
+      ref_sec: 3.28
+      cer: 0.3023
+      wer: 0.6667
+    bible_00125:
+      source: bible
+      text: Anomanta, Korowii ta ba waa tɛɛ ba, asɛ baa ɛ wedoŋa ba bambile aa lawa, dɛɛ chɔ baala ne
+        haahna aa wola Korowii ŋwɛnɛ ta ɛɛ.
+      sbs: 0.661
+      gen_sec: 11.43
+      ref_sec: 8.42
+      cer: 0.1458
+      wer: 0.3462
+    bible_00126:
+      source: bible
+      text: Mɛɛ nyiŋi he nɛɛ dɛ́ ɡel he mun ya kohona, ásɛ n ne he fɔo yaa fɔwɛ la che.
+      sbs: 0.7178
+      gen_sec: 6.4
+      ref_sec: 5.68
+      cer: 0.2778
+      wer: 0.5263
+    bible_00127:
+      source: bible
+      text: Anee n chaŋe ŋɔ, “N Naa Korowii, á ɛ ɡɛ.
+      sbs: 0.7601
+      gen_sec: 3.58
+      ref_sec: 5.92
+      cer: 0.2963
+      wer: 0.6
+    bible_00128:
+      source: bible
+      text: Bol nɛra la ɡe be ŋɔ bá cheɡ deŋne dɛ́ no waa aa lɔ fɔo nɔ ta kɛrɛdɛ dɛ́ɛ teŋɛ a ta.
+      sbs: 0.7527
+      gen_sec: 7.17
+      ref_sec: 7.62
+      cer: 0.35
+      wer: 0.6364
+    bible_00129:
+      source: bible
+      text: Anomanta, Korowii ŋɔ Anatɔt baala bane ŋɔ n bɛ Korowii waa bol o sɔn ta, ɡɛ laa aa baa kpo
+        mɛɛ.
+      sbs: 0.7606
+      gen_sec: 8.62
+      ref_sec: 9.02
+      cer: 0.1667
+      wer: 0.381
+    bible_00130:
+      source: bible
+      text: Korowii ja o nɛ, dɛ ɡel o pɔ bobɛlbwa nɛra waa laŋa ka yo bwa nɛ.
+      sbs: 0.7239
+      gen_sec: 5.72
+      ref_sec: 5.54
+      cer: 0.25
+      wer: 0.75
+    bible_00131:
+      source: bible
+      text: Ba teŋe Kooro Sɔɔl nyu, dɛ pa o dɔmkwaa ja, dɛ tomɛ toroma Filisti harɛ la ta bwa ŋɔ bá ka
+        bol amanesoma nɔ ba voɡa deene ne nɛra bwa be.
+      sbs: 0.8178
+      gen_sec: 12.2
+      ref_sec: 13.34
+      cer: 0.1827
+      wer: 0.4516
+    bible_00132:
+      source: bible
+      text: Tɔpere bɛlbwaa Mɔdekae yon le o dem dɛ́ la haahna dobɔr la sie bela, dɛ́ ka valɛ la sie dɛɛ
+        ba habɔɔ kɛŋɔ o ken ɛɛ na Ɛsta dembaah belaa ɡɛ waa doa.
+      sbs: 0.7344
+      gen_sec: 12.89
+      ref_sec: 14.22
+      cer: 0.2321
+      wer: 0.5758
+    bible_00133:
+      source: bible
+      text: Onee waa baa kpeɡ la, o ɛ banyoo dɛ do kpeɡri kohona harɛ nɔ ta la.
+      sbs: 0.7685
+      gen_sec: 5.8
+      ref_sec: 5.64
+      cer: 0.2
+      wer: 0.625
+    bible_00134:
+      source: bible
+      text: O kpala ne a nyoo aa kuuɡa chɔ bwejena ne fɛlembɔjena bwa ta.
+      sbs: 0.7338
+      gen_sec: 5.46
+      ref_sec: 4.4
+      cer: 0.1875
+      wer: 0.5385
+    bible_00135:
+      source: bible
+      text: Hɛɛ dɔ ɔleve he harɛ taa ɡa, kɛ haa a noo dɔe ba, dɛkalkɛŋɔ a nɔna dɛ ba chaara lee.
+      sbs: 0.7751
+      gen_sec: 7.34
+      ref_sec: 7.08
+      cer: 0.1935
+      wer: 0.75
+    bible_00136:
+      source: bible
+      text: Eliasa naa Sadɔk ne Itama ɡe naa Ahemɛlɛk cha Kooro Devid, asɛ o bɔne Arɔn naanar la bini
+        kuore ta, dɛ kpɔ bɛlbwa toma do o nɔn ta.
+      sbs: 0.8093
+      gen_sec: 11.61
+      ref_sec: 14.02
+      cer: 0.1485
+      wer: 0.4286
+    bible_00137:
+      source: bible
+      text: O nɛɛ Korowii che dɛ sune nomɛlbwa nɛ, dɛ cha yaa kohona a ɡwaa Adam wechɔɡa la.
+      sbs: 0.6607
+      gen_sec: 7.17
+      ref_sec: 6.0
+      cer: 0.1935
+      wer: 0.5294
+    bible_00138:
+      source: bible
+      text: Dɛ kooro dɛ nyin nɛra chao waane ta naa, o kpɔɔ dɛɛ bil wejerema baa jemɛ mmarare ne bela
+        waa bini sie, ásɛ ba yon jao.
+      sbs: 0.749
+      gen_sec: 10.5
+      ref_sec: 11.36
+      cer: 0.2088
+      wer: 0.5
+    bible_00139:
+      source: bible
+      text: Ba ŋɔ, “Ɛrɛɛ he lawɛ yaa le Ijipt harɛ ta, dɛ ɡel nyɔɡre baa kpo ya ne ya bii ne kondɛɛra
+        ya bwa serewe nɔɔ?
+      sbs: 0.7464
+      gen_sec: 9.39
+      ref_sec: 8.92
+      cer: 0.2625
+      wer: 0.6
+    bible_00140:
+      source: bible
+      text: He toma ne wobɛlbwa haa ɛ la, Korowii taahna ɛɛ lawɛ heyaa.
+      sbs: 0.7415
+      gen_sec: 5.38
+      ref_sec: 4.18
+      cer: 0.3913
+      wer: 0.75
+    bible_00141:
+      source: bible
+      text: Hé di ɡɛ tɔpejen nɔ bena bɛlbwa tɔpera anuanɛ.
+      sbs: 0.7
+      gen_sec: 4.27
+      ref_sec: 3.24
+      cer: 0.3243
+      wer: 1.0
+    bible_00142:
+      source: bible
+      text: Tɔɔ perɔ aa, baa kpɔɔ la sɛnanar denɛɛte ta, dɛ́ ka do kooro bonɔɔ Saasɡas baa fɔɡɛ o lur,
+        wɛɛ nyiŋi kooro haahna nɛɛ la nɔn ta.
+      sbs: 0.7269
+      gen_sec: 11.43
+      ref_sec: 11.86
+      cer: 0.2474
+      wer: 0.6667
+    bible_00143:
+      source: bible
+      text: A chɛ kɛ ya bɛlbwa kpɔ kpeɡri Korowii aa sune o nɛɛ dɛ tɛo la ɛ toma.
+      sbs: 0.6224
+      gen_sec: 5.89
+      ref_sec: 4.5
+      cer: 0.2115
+      wer: 0.5882
+    bible_00144:
+      source: bible
+      text: ” Asɛ n lɛ tɔnjeɡa la le o nɔn ta, dɛ kpɔ chwe, o do som n nyoa bini kɛŋɔ tooh ken.
+      sbs: 0.649
+      gen_sec: 6.91
+      ref_sec: 6.34
+      cer: 0.3103
+      wer: 0.5714
+    bible_00145:
+      source: bible
+      text: Askenas ne Rifat dɛ Toɡama.
+      sbs: 0.7178
+      gen_sec: 2.56
+      ref_sec: 3.32
+      cer: 0.1364
+      wer: 0.6
+    bible_00146:
+      source: bible
+      text: Korowii Tɔn baɡlɔ kɛŋɔ, “Naate o wa aa toɡra dɛ su Korowii siwi la, wɛɛ yaradao dɛ́ dɔ o nyu.
+      sbs: 0.6778
+      gen_sec: 8.19
+      ref_sec: 6.94
+      cer: 0.2464
+      wer: 0.8
+    bible_00147:
+      source: bible
+      text: Gɛɛ sɔfo la ɛɛ ba ɛɛ, dɛ́ soŋe naate wechɔɡa waa ɛa n be ásɛ n kpɔ kɛo.
+      sbs: 0.7263
+      gen_sec: 6.06
+      ref_sec: 8.18
+      cer: 0.4902
+      wer: 0.8889
+    bible_00148:
+      source: bible
+      text: He ta teŋɛ he deŋnekpeɡ la ta haa n waa ta teŋaa, mɛɛ berɔɔ ja he deŋnetɛra la ta bele anuanɛ.
+      sbs: 0.7423
+      gen_sec: 8.7
+      ref_sec: 6.42
+      cer: 0.25
+      wer: 0.6667
+    bible_00149:
+      source: bible
+      text: Ya Dɔɔ Yeesu Kristo nɛɛ o che dɛɛ tɛ a ɡɛ mkpa nɔ.
+      sbs: 0.722
+      gen_sec: 4.27
+      ref_sec: 5.84
+      cer: 0.2703
+      wer: 0.5385
+    bible_00150:
+      source: bible
+      text: Dɛ o haahna warɔ, anomanta, o bibaala lɔ fifraanuanɛ.
+      sbs: 0.707
+      gen_sec: 5.03
+      ref_sec: 12.04
+      cer: 0.2381
+      wer: 1.0
+    bible_00151:
+      source: bible
+      text: Sɔfo la ɡel ba dɔ nee waa dɛ palɛ do vii bini, ásɛ dɛ kpɔ jumbii la bɛl chaɡɛ vii la ta dɛ́
+        kpoo.
+      sbs: 0.7139
+      gen_sec: 8.19
+      ref_sec: 8.6
+      cer: 0.2958
+      wer: 0.5833
+    bible_00152:
+      source: bible
+      text: Dɛ sɔfo la nao kɛŋɔ weela la lɔ naate bwadabii bwa ta, le o nyundua ba ta harɛ naa, wɛɛ berɔɔ
+        nyiŋu.
+      sbs: 0.7362
+      gen_sec: 9.05
+      ref_sec: 6.88
+      cer: 0.2105
+      wer: 0.6364
+    bible_00153:
+      source: bible
+      text: Anee dɛ́ ɡel nɛra jemɛ kɛŋɔ men Korowii, n pamɛ n kere aa, maa berɛ kpɔ su o tɔɔ ta kpa.
+      sbs: 0.7429
+      gen_sec: 7.59
+      ref_sec: 6.84
+      cer: 0.2188
+      wer: 0.619
+    bible_00154:
+      source: bible
+      text: Dɛ a ɛ silɛɛ ne hɛɡra dɛ tɛ Juu tena la, baa duu ba bobɛlbwa.
+      sbs: 0.7057
+      gen_sec: 5.21
+      ref_sec: 5.72
+      cer: 0.2444
+      wer: 0.5333
+    bible_00155:
+      source: bible
+      text: On dɛ bɔ ba kem, dɛkalkɛŋɔ ba chwerɛ Korowii Tɔn bini ŋɔ, “Korowii bolɔ ŋɔ, ‘Mɛɛ tɔ a peɡee,
+        mɛɛ bɔ ba a kemee.
+      sbs: 0.6989
+      gen_sec: 9.98
+      ref_sec: 9.02
+      cer: 0.3333
+      wer: 0.7917
+    bible_00156:
+      source: bible
+      text: Dɛ waa nɛn aa wola Korowii yarada a ta la, dɛ o te dɛ yaradao.
+      sbs: 0.6673
+      gen_sec: 5.38
+      ref_sec: 3.74
+      cer: 0.1087
+      wer: 0.3333
+    bible_00157:
+      source: bible
+      text: ” Anomanta, n laŋɔ dɛ ka kpɔ do Yufretis Moo bwebɔɔ bini, ɡɛ Korowii aa ŋɔ n be la.
+      sbs: 0.7406
+      gen_sec: 7.34
+      ref_sec: 7.5
+      cer: 0.2295
+      wer: 0.5556
+    bible_00158:
+      source: bible
+      text: Hé kpɔ kwaa haa fuah ɛ saraha tɔpera anuanɛ la bwa ba tɛ mɛ, ásɛ tɔpenuatoro wee la, hé bwa
+        cheme dɛ́ tom mɛ dɛ́ fuh saraha kwaa tɛ mɛ.
+      sbs: 0.7562
+      gen_sec: 11.61
+      ref_sec: 10.5
+      cer: 0.2376
+      wer: 0.7
+    bible_00159:
+      source: bible
+      text: Midian tena la ɡelɔ Israel tena la nya komɛlbwa kwaraa, asɛ ba wi no Korowii ŋɔ ó cha ba.
+      sbs: 0.7772
+      gen_sec: 8.02
+      ref_sec: 7.8
+      cer: 0.1159
+      wer: 0.3158
+    bible_00160:
+      source: bible
+      text: Harɛ ta nɛn te bɛlbwa ɛɛ ba ɡuŋi he siee dɛ́ tomɛ.
+      sbs: 0.6674
+      gen_sec: 4.35
+      ref_sec: 3.78
+      cer: 0.2432
+      wer: 0.6667
+    bible_00161:
+      source: bible
+      text: Dɛ Abraham di bene lafa tonɛ, dɛ waa kpeɡe kpa.
+      sbs: 0.6632
+      gen_sec: 4.27
+      ref_sec: 3.0
+      cer: 0.5278
+      wer: 1.3
+    bible_00162:
+      source: bible
+      text: Dɛ ɔr ɔrɛ nomɛl dɛ ba tonɛ, asɛ o buɡ la to kɛɛ dɛ swɛɛraa, a chɛ kɛ naate kpɔ o te ka chaɡle
+        sɔfo.
+      sbs: 0.7749
+      gen_sec: 8.36
+      ref_sec: 7.68
+      cer: 0.2917
+      wer: 0.64
+    bible_00163:
+      source: bible
+      text: O cha bane ba won che o kpeɡri ta dɛ ɛ o toroma, dɛ cha bane ba won che o kpeɡri ta dɛ bol
+        o wa, dɛ cha bane ɡe baa bol o Amanesoma la.
+      sbs: 0.6726
+      gen_sec: 11.26
+      ref_sec: 10.96
+      cer: 0.1224
+      wer: 0.3143
+    bible_00164:
+      source: bible
+      text: Dɛ ba berɔ ba na kɛŋɔ ba ɛ wechɔɡa aa, bá bwa pɛ dɛ lawɛ nabal ba n Dea Cheremibɔr doonyoa
+        bɔr bela, dɛ́ kpɔ ba ɛ ba wechɔɡa kpɔe dɛ kɛ saraha.
+      sbs: 0.7645
+      gen_sec: 12.46
+      ref_sec: 10.72
+      cer: 0.1776
+      wer: 0.4848
+    bible_00165:
+      source: bible
+      text: Nomɛlbwa waa di ol baa kpɔ ba ɛ saraha dɛ fuh tɛ mɛ noo la, bá pero le o nɛra bini.
+      sbs: 0.73
+      gen_sec: 7.0
+      ref_sec: 5.78
+      cer: 0.1475
+      wer: 0.381
+    bible_00166:
+      source: bible
+      text: Gɛɛ a do baa yerɔ Kooro Devid Bwɛjen.
+      sbs: 0.8081
+      gen_sec: 3.33
+      ref_sec: 3.16
+      cer: 0.4138
+      wer: 1.0
+    bible_00167:
+      source: bible
+      text: Dɛkalkɛŋɔ ɡɛ nɛmbeŋkpoŋ deŋnekpeɡ aa ɡela nɛra bwa ɛ wechɔɡ-ɛɛra la, ɡɛɛ a che nɛmbeŋkpoŋ
+        pwɛre waa doa ta, asɛ Korowii lɛ nɛra kɛrɛdɛ kɛ nɛndɛɛɡa ba waa su o siwi.
+      sbs: 0.647
+      gen_sec: 15.7
+      ref_sec: 11.88
+      cer: 0.3308
+      wer: 0.6452
+    bible_00168:
+      source: bible
+      text: He bɛ toma bɛlbwa ɛ ásɛ dɛ kpɔ saraha kwaa baa fuah ba tɛ mɛ.
+      sbs: 0.7436
+      gen_sec: 5.21
+      ref_sec: 5.16
+      cer: 0.1957
+      wer: 0.5333
+    bible_00169:
+      source: bible
+      text: O kpɔ lampea ka yo baala lafraatoro dɛ kpoo ba.
+      sbs: 0.7733
+      gen_sec: 4.27
+      ref_sec: 3.42
+      cer: 0.1081
+      wer: 0.5
+    bible_00170:
+      source: bible
+      text: Anee o chaŋo ŋɔ, “Nomoa, dɛ Korowii ja ya nɛ aa, ɛrɛɛ anɔ bwa berɛ pu yaa nɔɔ?
+      sbs: 0.7859
+      gen_sec: 6.91
+      ref_sec: 6.8
+      cer: 0.2679
+      wer: 0.6111
+    bible_00171:
+      source: bible
+      text: Mɛɛ kpɔ naate wechɔɡa bwaa kɛo, maa an lii kpa, dɛkalkɛ o waa toɡrɔ.
+      sbs: 0.7338
+      gen_sec: 6.14
+      ref_sec: 5.12
+      cer: 0.25
+      wer: 0.7143
+    bible_00172:
+      source: bible
+      text: Boas aa di kondikwaa la dɛ nyɔ sen o sie lɛ la, o kaa chɔ mea baa boa a nyoa bil la jwɛh.
+      sbs: 0.7223
+      gen_sec: 7.51
+      ref_sec: 7.52
+      cer: 0.2154
+      wer: 0.4783
+    bible_00173:
+      source: bible
+      text: Anee Mosis ŋɔ Josua be ŋɔ, “Le ya baala nɔ bini bane, ásɛ he ka yoo ba.
+      sbs: 0.731
+      gen_sec: 6.23
+      ref_sec: 5.08
+      cer: 0.2157
+      wer: 0.6471
+    bible_00174:
+      source: bible
+      text: Ba kpoo Israel tena ɡalɡa Gelboa Bwejen ta.
+      sbs: 0.7475
+      gen_sec: 4.01
+      ref_sec: 3.14
+      cer: 0.4571
+      wer: 0.75
+    bible_00175:
+      source: bible
+      text: A chɛ kɛ naate lawɛ pebal waa wola kirihiah bɛlbwa dii o yoɡ do ɡɛ baa maɡa la ba tɛ sɔfo
+        la, ásɛ o kpɔ ba ɛ bolchɔɡe dii saraha tɛ men Korowii dɛ́ kpɔ bɔ o wechɔɡa la kem.
+      sbs: 0.7184
+      gen_sec: 14.93
+      ref_sec: 11.76
+      cer: 0.2615
+      wer: 0.725
+    bible_00176:
+      source: bible
+      text: Awola waa kpɔ o bolchɔɡe dii saraha ka tɛ sɔfo la, a chɛ kɛ o berɛ kwaa la bwa tɛ naate, dɛ́
+        bɔne anɔ la waa bera tɛ la dɔŋa bini anue, dɛ́ bɔ bɔrbeŋkpoŋ ja a ta.
+      sbs: 0.7394
+      gen_sec: 14.08
+      ref_sec: 13.6
+      cer: 0.1765
+      wer: 0.4474
+    bible_00177:
+      source: bible
+      text: Banee Sɛm ne Ham dɛ Jafɛt.
+      sbs: 0.6824
+      gen_sec: 2.3
+      ref_sec: 3.3
+      cer: 0.65
+      wer: 0.8333
+    bible_00178:
+      source: bible
+      text: ” Anomanta, banyoola batoro la kpɔ bansua jo harɛ Filisti laa tena la aa soɡe o ta la ta,
+        dɛ ka dɔ nee le kɔlɔŋ waa chɔa bɛne Bɛtlɛham doonyojen bini la ba tɛ Kooro Devid.
+      sbs: 0.7719
+      gen_sec: 15.44
+      ref_sec: 14.76
+      cer: 0.1515
+      wer: 0.5714
+    bible_00179:
+      source: bible
+      text: He bɛ toma ɛ awola tɔpere la ta, o ɛ Wechɔɡa Soŋa Korowii Be Ó Kpɔ Kɛ Tɔpejen.
+      sbs: 0.7118
+      gen_sec: 6.91
+      ref_sec: 6.0
+      cer: 0.1864
+      wer: 0.4444
+    bible_00180:
+      source: bible
+      text: N kpɔ ɡɛ waa nɔ daah ba, dɛ́ na kɛŋɔ dɛ ba ta ba liire charaa, ásɛ ɡɛ waa nɔ ba ba nɛ.
+      sbs: 0.7748
+      gen_sec: 7.17
+      ref_sec: 6.0
+      cer: 0.1833
+      wer: 0.5217
+    bible_00181:
+      source: bible
+      text: Wɛɛ do somee kɛŋɔ tooh ken he nyoa bini, dɛ́ berɛ do kpeli he tea bini o ɛɛ haŋŋ ken.
+      sbs: 0.6101
+      gen_sec: 7.59
+      ref_sec: 5.98
+      cer: 0.2857
+      wer: 0.5
+    bible_00182:
+      source: bible
+      text: ” O lawɛ bwɛɛ la nomonome dɛ lɔɔ ba sɔɔhne ne jabalnadaŋɛre ne, dɛ tɛr ba deŋne bá kpɔ hweli
+        wa.
+      sbs: 0.7658
+      gen_sec: 8.62
+      ref_sec: 9.3
+      cer: 0.2466
+      wer: 0.65
+    bible_00183:
+      source: bible
+      text: Mɔdekae no waa la, dɛ ka taa baɡle kooro haah Ɛsta.
+      sbs: 0.7121
+      gen_sec: 4.52
+      ref_sec: 4.42
+      cer: 0.2308
+      wer: 0.4545
+    bible_00184:
+      source: bible
+      text: Aminadab, o ɛ ba nyu te dɛ chɔ nɛra lafa dɛ fi dɛ banɛ nyoa.
+      sbs: 0.7137
+      gen_sec: 5.12
+      ref_sec: 6.52
+      cer: 0.1364
+      wer: 0.5333
+    bible_00185:
+      source: bible
+      text: N dɛ na Asiŋkritus, ne Fleɡɔn, ne Hɛɛmes ne Patrobas, ne Hɛɛmas, dɛ yabala baa jaa la bwa.
+      sbs: 0.6257
+      gen_sec: 8.28
+      ref_sec: 10.66
+      cer: 0.1471
+      wer: 0.5
+    bible_00186:
+      source: bible
+      text: Gel Josua no dɛkalkɛ n dɛ ba Amalɛk tena chɔɡa baa wola ba waa no harɛ nɔ ta bobɛlbwa kpa.
+      sbs: 0.7488
+      gen_sec: 7.94
+      ref_sec: 7.76
+      cer: 0.1571
+      wer: 0.5
+    bible_00187:
+      source: bible
+      text: Belaa Kooro Devid berɛ ka yo Soba Kooro Hadadesa, hale dɛ ka le Hamat, ɡɛ saŋ waa la Yufretis
+        Moo nyoa dɛ ka lɛ bela harɛ ba do o lɔɡa ja la.
+      sbs: 0.7968
+      gen_sec: 12.46
+      ref_sec: 13.8
+      cer: 0.1121
+      wer: 0.375
+    bible_00188:
+      source: bible
+      text: N keame bɛlbwa baa neɡro o bol waane la, dɛ men Korowiirii neɡro o bol.
+      sbs: 0.7585
+      gen_sec: 6.4
+      ref_sec: 6.08
+      cer: 0.1818
+      wer: 0.4
+    bible_00189:
+      source: bible
+      text: dɛɛ mam ba.
+      sbs: 0.5735
+      gen_sec: 1.02
+      ref_sec: 3.52
+      cer: 0.75
+      wer: 1.0
+    bible_00190:
+      source: bible
+      text: Anomanta, nɛwɛnyini aa won ŋɔ baa jemɛ kɛ Korowii lole.
+      sbs: 0.6263
+      gen_sec: 5.21
+      ref_sec: 3.28
+      cer: 0.1591
+      wer: 0.6
+    bible_00191:
+      source: bible
+      text: Dɛ Kooro Devid ne Israel tena la bwa dɛ lɛ ba sie.
+      sbs: 0.7802
+      gen_sec: 4.35
+      ref_sec: 3.84
+      cer: 0.1053
+      wer: 0.3333
+    bible_00192:
+      source: bible
+      text: Bwaala deŋɡare bar o nyu, o siebɔr ɛɛ chaah kɛŋɔ wee, asɛ o nakpale ɡe do kɛŋɔ nii.
+      sbs: 0.6583
+      gen_sec: 7.68
+      ref_sec: 6.52
+      cer: 0.3016
+      wer: 0.8333
+    bible_00193:
+      source: bible
+      text: N bandia ɡelɔ n dɔ bokpeɡa.
+      sbs: 0.6574
+      gen_sec: 2.39
+      ref_sec: 12.3
+      cer: 0.7619
+      wer: 1.1667
+    bible_00194:
+      source: bible
+      text: Ásɛ nɛra baa lɔ Ijipt harɛ ta bwa jemɛ kɛŋɔ menee Korowii.
+      sbs: 0.7392
+      gen_sec: 5.38
+      ref_sec: 5.14
+      cer: 0.3913
+      wer: 0.8333
+    bible_00195:
+      source: bible
+      text: Yabala, n dɛ nyin kɛ hé jemɛ kɛŋɔ saŋ bɛlbwaa n fe ɛɛ nyin kɛ ń ba he be, asɛ waa yon dɛɛ
+        tɔ mɛ ŋwɛnɛ.
+      sbs: 0.6549
+      gen_sec: 8.96
+      ref_sec: 7.2
+      cer: 0.3378
+      wer: 0.6923
+    bible_00196:
+      source: bible
+      text: O ŋɔ, “Korowii ɛɛ ba lɛ heyaa, anomanta, a chɛ kɛ hé kpɔ n chɔɔ le bonɔ harɛ nɔ ta.
+      sbs: 0.7651
+      gen_sec: 7.17
+      ref_sec: 6.6
+      cer: 0.339
+      wer: 0.85
+    bible_00197:
+      source: bible
+      text: Taraken, wɛɛ ka ja nɛra baa wola men tomɛ ne banɔ la baa kpoo ba laa ta la nɛɛ.
+      sbs: 0.7341
+      gen_sec: 6.83
+      ref_sec: 6.4
+      cer: 0.0508
+      wer: 0.3158
+    bible_00198:
+      source: bible
+      text: Ate, kooro ŋɔ o nomonome la be ŋɔ, “Vasti vɛh yera men Kooro Sɛksɛs aa tomɛ n bonɔɔna ŋɔ bá
+        yerɔ ó ba la.
+      sbs: 0.7308
+      gen_sec: 9.39
+      ref_sec: 9.2
+      cer: 0.2564
+      wer: 0.5417
+    bible_00199:
+      source: bible
+      text: Babelɔn kooro cheɡɛ ŋwɛnɛ chɛchɛre la ta, dɛ kpɔ o hɛma bil daa, dɛ́ jemɛ ŋwɛnɛ waa kpɔ o
+        ta.
+      sbs: 0.7527
+      gen_sec: 8.36
+      ref_sec: 6.12
+      cer: 0.1286
+      wer: 0.3
 - model: facebook/mms-tts-mzw
   model_url: https://huggingface.co/facebook/mms-tts-mzw
   mode: noref
@@ -16923,4 +18615,4 @@ benchmarks:
       ref_sec: 6.12
       cer: 0.3571
       wer: 0.85
-updated: '2026-10-02'
+updated: '2026-10-09'
