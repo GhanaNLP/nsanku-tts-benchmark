@@ -6771,6 +6771,1696 @@ benchmarks:
       ref_sec: 4.74
       cer: 0.0227
       wer: 0.0909
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7309
+  num_scored: 200
+  cer: 0.0623
+  wer: 0.1624
+  accuracy: 0.9377
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8343
+  score: 0.8343
+  per_source:
+    bible:
+      sbs: 0.7309
+      cer: 0.0623
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Le be ndegboŋ nɛ awurbi kikɛ e daa wɔ kasawule nɛ Dan be yiri to ebi nya fanɛ bumo be kapetɛ
+        na so.
+      sbs: 0.7245
+      gen_sec: 8.02
+      ref_sec: 7.78
+      cer: 0.0526
+      wer: 0.2609
+    bible_00001:
+      source: bible
+      text: nɛ e wɔtɔ a kɔ kenya be kebaawɔtɔ gbagba chap.
+      sbs: 0.7523
+      gen_sec: 3.75
+      ref_sec: 3.4
+      cer: 0.0
+      wer: 0.0
+    bible_00002:
+      source: bible
+      text: meeŋ shin nɛ b ti ma njɔnɔ so a keni ma mbolpɔ so gba.
+      sbs: 0.6302
+      gen_sec: 4.35
+      ref_sec: 3.66
+      cer: 0.15
+      wer: 0.2143
+    bible_00003:
+      source: bible
+      text: Ŋkpal loŋ so nɛ Enyɛnpe Ebɔrɛ nya agbo ga n wɔtɔ Israɛlebi na.
+      sbs: 0.7065
+      gen_sec: 5.38
+      ref_sec: 4.48
+      cer: 0.0816
+      wer: 0.1538
+    bible_00004:
+      source: bible
+      text: Loŋ be saŋɛ na nɛ b ta Enyɛnpe Ebɔrɛ be ŋkre be deka na ashi Kiriaf Jearim m ba yili wajɛbu
+        nɛ ewura Deevid wora ashi Jerusalɛm na to.
+      sbs: 0.7686
+      gen_sec: 11.26
+      ref_sec: 10.98
+      cer: 0.019
+      wer: 0.069
+    bible_00005:
+      source: bible
+      text: ” Kanyɛn na ka nu loŋ nɛ mbe kagbene kaa nɛ e kilgi n yɔ nɛ kagbenejija, ŋkpal manɛ so, e
+        daa kɔ asɔ ga.
+      sbs: 0.7524
+      gen_sec: 8.36
+      ref_sec: 8.64
+      cer: 0.0132
+      wer: 0.125
+    bible_00006:
+      source: bible
+      text: Saŋɛ na so kachako Ebɔrɛ beeŋ tiŋi ma alɛ gba ashi luwu to.
+      sbs: 0.7384
+      gen_sec: 5.12
+      ref_sec: 4.7
+      cer: 0.0
+      wer: 0.0
+    bible_00007:
+      source: bible
+      text: Amoso men sa maŋ kaa fɛ fanɛ menyi gbagba be eleŋ nɛ ketiŋwora so nɛ men nyalɛ nseŋ dii dama
+        na.
+      sbs: 0.7381
+      gen_sec: 8.28
+      ref_sec: 7.18
+      cer: 0.04
+      wer: 0.1905
+    bible_00008:
+      source: bible
+      text: Enimu sasopo e daa la Zikri pibinyɛn Amaziya nɛ mo alɛ daa keni benapo ŋgboŋ alfa anyɔ so.
+      sbs: 0.7347
+      gen_sec: 7.77
+      ref_sec: 7.18
+      cer: 0.0139
+      wer: 0.0556
+    bible_00009:
+      source: bible
+      text: Gbiti nɛ shuwa nɛ ntishaŋ peper nɛ kusɔ kama nɛ b ta kebɛlso n wora kikɛ la Enyɛnpe Ebɔrɛ
+        na peya nna.
+      sbs: 0.7388
+      gen_sec: 8.45
+      ref_sec: 7.46
+      cer: 0.0125
+      wer: 0.0909
+    bible_00010:
+      source: bible
+      text: fo kebaawɔtɔ kikɛ to; nseŋ shin nɛ Jerusalɛm be.
+      sbs: 0.7248
+      gen_sec: 4.18
+      ref_sec: 3.86
+      cer: 0.1053
+      wer: 0.4444
+    bible_00011:
+      source: bible
+      text: Ndibi koŋwule na be ako nɛ e beeŋ ta m puga edɛ n tɔ eblaŋ n we m moɛ.
+      sbs: 0.7398
+      gen_sec: 5.63
+      ref_sec: 6.64
+      cer: 0.1176
+      wer: 0.1053
+    bible_00012:
+      source: bible
+      text: Esa pɔtɛ kama malɛ nɛ e pɛl n sɔ Mosis ŋko Ɛɛrɔn be kushuŋ a shuŋ, b mɔ mo.
+      sbs: 0.6873
+      gen_sec: 6.14
+      ref_sec: 5.7
+      cer: 0.1273
+      wer: 0.3158
+    bible_00013:
+      source: bible
+      text: mbe nnɔ naseso na be asheŋ, nɛ e sa maŋ teŋ amo so kikɛ.
+      sbs: 0.6926
+      gen_sec: 4.69
+      ref_sec: 4.26
+      cer: 0.1707
+      wer: 0.3571
+    bible_00014:
+      source: bible
+      text: Kede be kaman nɛ ewura Abija juŋkpar bumo n ya kɔ kena na nɛ Ebɔrɛ chɛ bumo to nɛ b pɔɔ Jeroboam
+        nɛ Israɛlebi be benapo na so m mɔ bumo.
+      sbs: 0.7953
+      gen_sec: 11.09
+      ref_sec: 10.98
+      cer: 0.019
+      wer: 0.0645
+    bible_00015:
+      source: bible
+      text: Menyee yɔ abee jeŋgreŋ so nna n ya kaa lara esarga nsaa di abar keche nɛ kenyɛn ndoŋ.
+      sbs: 0.7481
+      gen_sec: 7.34
+      ref_sec: 6.54
+      cer: 0.0299
+      wer: 0.2222
+    bible_00016:
+      source: bible
+      text: Eleŋ koŋwule nɛ e beeŋ ta n ji kusɔ kikɛ so kuwura na nɛ e beeŋ ta n chɛrga anyi.
+      sbs: 0.7482
+      gen_sec: 6.83
+      ref_sec: 7.8
+      cer: 0.0328
+      wer: 0.05
+    bible_00017:
+      source: bible
+      text: nseŋ ku kananɛ teku beeŋ baa sa n sa kumo na.
+      sbs: 0.6917
+      gen_sec: 3.75
+      ref_sec: 3.38
+      cer: 0.0294
+      wer: 0.0909
+    bible_00018:
+      source: bible
+      text: 'Ade be kaman nɛ Enyɛnpe Ebɔrɛ na kaŋɛ le: “Israɛl be basa, ma e lara menyi fanɛ ma nyɛrbi.'
+      sbs: 0.7786
+      gen_sec: 7.42
+      ref_sec: 6.92
+      cer: 0.0147
+      wer: 0.0526
+    bible_00019:
+      source: bible
+      text: Bumo be kelargato be esoso be kaba so be kasawule malɛ fara kakpa nɛ Jɔɔdan be lɔr na bee
+        luri Nfɔl be Teku na to na nna.
+      sbs: 0.7219
+      gen_sec: 9.81
+      ref_sec: 9.06
+      cer: 0.1596
+      wer: 0.2593
+    bible_00020:
+      source: bible
+      text: 'Nɛ Yesu naŋ kaŋɛ: “Ma e kaŋɛ menyi kashenteŋto na fanɛ basa ko wɔ nfe a maaŋ wu she b wu
+        Ebɔrɛ be kuwura na ka ba nɛ eleŋ nna pɔɛŋ.'
+      sbs: 0.7719
+      gen_sec: 11.09
+      ref_sec: 10.38
+      cer: 0.051
+      wer: 0.1613
+    bible_00021:
+      source: bible
+      text: Mee fɛ nna fanɛ a daga fanɛ n naŋ shin nɛ Epafrodaites e bɛta n yɔ menyi kutɔ.
+      sbs: 0.7521
+      gen_sec: 6.4
+      ref_sec: 6.64
+      cer: 0.0667
+      wer: 0.2778
+    bible_00022:
+      source: bible
+      text: nɛ b wɔ lsɔɔ be abee so a pin asheŋ to na.
+      sbs: 0.7322
+      gen_sec: 3.24
+      ref_sec: 3.2
+      cer: 0.1
+      wer: 0.0833
+    bible_00023:
+      source: bible
+      text: Kumo be kaman nɛ b baa tre menyi, “Ebɔrɛ be Basa Cheembi.
+      sbs: 0.7296
+      gen_sec: 4.61
+      ref_sec: 3.64
+      cer: 0.0233
+      wer: 0.0833
+    bible_00024:
+      source: bible
+      text: mo e yili kebir abar to n chɔrɔ abar kasha so.
+      sbs: 0.6903
+      gen_sec: 3.67
+      ref_sec: 3.3
+      cer: 0.0
+      wer: 0.1818
+    bible_00025:
+      source: bible
+      text: meeŋ shuli kagbenefuliso fanɛ fo kɔ ekpa.
+      sbs: 0.7009
+      gen_sec: 3.67
+      ref_sec: 3.04
+      cer: 0.0294
+      wer: 0.4286
+    bible_00026:
+      source: bible
+      text: Bumo be ekar la kemur nna, ŋkpal manɛ so, bumo be epunana e la bumo be Ebɔrɛ nɛ bumo be kemaŋkura
+        malɛ la anishinyɔr be asɔ.
+      sbs: 0.7722
+      gen_sec: 10.41
+      ref_sec: 9.66
+      cer: 0.0521
+      wer: 0.1154
+    bible_00027:
+      source: bible
+      text: B shile nna ŋkpal bumo gbagba ka ki basa nɛ baaŋ mur so.
+      sbs: 0.667
+      gen_sec: 4.69
+      ref_sec: 3.66
+      cer: 0.093
+      wer: 0.3077
+    bible_00028:
+      source: bible
+      text: E beeŋ kpele kedibi na be ayabi m puga edɛ n wɔl gbaŋgbaŋ to nseŋ ta ako m puga edɛ n daŋɛ
+        n ji.
+      sbs: 0.7864
+      gen_sec: 8.02
+      ref_sec: 10.12
+      cer: 0.0139
+      wer: 0.1667
+    bible_00029:
+      source: bible
+      text: Saŋɛ so nɛ Jehoram daa la ewura na, Edɔm be basa na daa kini kebaanu a sa Judaebi na nna nsaa
+        lara bumo gbagba be bewura.
+      sbs: 0.7764
+      gen_sec: 9.98
+      ref_sec: 9.54
+      cer: 0.0
+      wer: 0.0
+    bible_00030:
+      source: bible
+      text: kusɔ kama nɛ baa sha, kumo nɛ baa wora ma.
+      sbs: 0.7145
+      gen_sec: 3.41
+      ref_sec: 3.18
+      cer: 0.0
+      wer: 0.0
+    bible_00031:
+      source: bible
+      text: E bee bar anyi mbe kefulto nɛ k bee sa ŋkpa na to nna.
+      sbs: 0.7354
+      gen_sec: 4.35
+      ref_sec: 4.14
+      cer: 0.0
+      wer: 0.0
+    bible_00032:
+      source: bible
+      text: Fo e shin nɛ teku peper chiŋgeliŋ na baŋɛ to.
+      sbs: 0.7334
+      gen_sec: 4.01
+      ref_sec: 3.34
+      cer: 0.3714
+      wer: 0.6
+    bible_00033:
+      source: bible
+      text: Menyee gben ga a fin agbir popɔr, ama menyi alɛ maa gben a yige to.
+      sbs: 0.7615
+      gen_sec: 5.46
+      ref_sec: 4.38
+      cer: 0.098
+      wer: 0.2
+    bible_00034:
+      source: bible
+      text: 'Kumo e la: Timnaf Sɛrah nɛ k wɔ Efrayim be abee be efuli so na.'
+      sbs: 0.7663
+      gen_sec: 5.03
+      ref_sec: 5.48
+      cer: 0.0638
+      wer: 0.1333
+    bible_00035:
+      source: bible
+      text: Mo e daŋ kuŋ anyi ashi anyi be enite kikɛ to ashi efuli kama so nɛ an bɔla n choŋ.
+      sbs: 0.7252
+      gen_sec: 6.83
+      ref_sec: 6.58
+      cer: 0.0
+      wer: 0.0
+    bible_00036:
+      source: bible
+      text: Belubiworapoana ere, men ba nfe nɛ b ji menyi demu!
+      sbs: 0.6637
+      gen_sec: 4.35
+      ref_sec: 4.76
+      cer: 0.1
+      wer: 0.4
+    bible_00037:
+      source: bible
+      text: 'Anebi Shemaya daŋ yɔ ewura Rehoboam nɛ Juda be bejuŋkparpoana nɛ b shile n ya ŋana Shishak
+        so ashi Jerusalɛm na kutɔ nna n ya kaŋɛ bumo le: “Enyɛnpe be kubɔya nɛ e kɔ a sa menyi nde.'
+      sbs: 0.787
+      gen_sec: 15.27
+      ref_sec: 14.74
+      cer: 0.007
+      wer: 0.0263
+    bible_00038:
+      source: bible
+      text: Nuso nɛ anyeeŋ wora n tiŋ m pɔr egbal na n loge kabre?
+      sbs: 0.6912
+      gen_sec: 4.52
+      ref_sec: 3.78
+      cer: 0.0
+      wer: 0.0
+    bible_00039:
+      source: bible
+      text: Gbiti be ndarbi alfa ashe nɛ b daŋ tɔ mbe gbaŋɛturko na be kekama nseŋ tɔ gbaŋɛ kama malɛ
+        gbiti be ndarbi kalfa nɛ adunu.
+      sbs: 0.7465
+      gen_sec: 10.41
+      ref_sec: 10.36
+      cer: 0.0417
+      wer: 0.12
+    bible_00040:
+      source: bible
+      text: Ndegboŋana na be alambure to nɛ mbolpɔ fɔlbi nɛ mboe fɔlbi beeŋ ta ŋ ki amo be ejikpa a ji
+        afitiri.
+      sbs: 0.7375
+      gen_sec: 8.45
+      ref_sec: 8.88
+      cer: 0.0385
+      wer: 0.3333
+    bible_00041:
+      source: bible
+      text: Ma nɛ menyi beeŋ baa wɔtɔ nɛ m baa mɔlga menyi nsaa kuŋ menyi ekpa kama so.
+      sbs: 0.6846
+      gen_sec: 6.31
+      ref_sec: 5.26
+      cer: 0.0172
+      wer: 0.0588
+    bible_00042:
+      source: bible
+      text: karechɛ kama malɛ, awurfoŋ to nɛ n wɔ.
+      sbs: 0.7391
+      gen_sec: 3.24
+      ref_sec: 3.16
+      cer: 0.5517
+      wer: 1.0
+    bible_00043:
+      source: bible
+      text: Bumo be kasawule na dese n ya luri Juda be yiri to ebi be kasawule to nna.
+      sbs: 0.7263
+      gen_sec: 5.97
+      ref_sec: 4.68
+      cer: 0.0
+      wer: 0.0
+    bible_00044:
+      source: bible
+      text: saŋɛ so nɛ n wɔ ŋkpa to ere; saŋɛ na so mbe alelasheŋ.
+      sbs: 0.7428
+      gen_sec: 4.69
+      ref_sec: 4.78
+      cer: 0.0
+      wer: 0.0
+    bible_00045:
+      source: bible
+      text: Gbiti nɛ shuwa na bre la fo kakɛ nna.
+      sbs: 0.6593
+      gen_sec: 2.99
+      ref_sec: 3.0
+      cer: 0.0357
+      wer: 0.1111
+    bible_00046:
+      source: bible
+      text: Ekpa nɛ men be kaman to ebi nɛ b maŋ naŋ nu Enyɛnpe menyi be Ebɔrɛ na be mbra be asheŋ beeŋ
+        bɔla so n nya kumo n nu nna na.
+      sbs: 0.7592
+      gen_sec: 9.98
+      ref_sec: 9.46
+      cer: 0.0
+      wer: 0.0
+    bible_00047:
+      source: bible
+      text: Baa nyiŋi fanɛ fo basa e la anyi kikɛ, amoso wu anyi kuwɔr.
+      sbs: 0.7409
+      gen_sec: 4.95
+      ref_sec: 4.92
+      cer: 0.0222
+      wer: 0.0769
+    bible_00048:
+      source: bible
+      text: nseŋ pɔr ebu jeŋgreŋ ko nɛ baaŋ baa yili so a keni kudɔ na.
+      sbs: 0.7099
+      gen_sec: 5.12
+      ref_sec: 4.82
+      cer: 0.0444
+      wer: 0.1429
+    bible_00049:
+      source: bible
+      text: B daa kɔ ndegboŋ kuduanyɔ nɛ amo be ndewurbi.
+      sbs: 0.683
+      gen_sec: 3.93
+      ref_sec: 3.66
+      cer: 0.0278
+      wer: 0.1111
+    bible_00050:
+      source: bible
+      text: Eyiriana nɛ a wɔ kelargato be esoso be kaba so na ka kini kenu n sa ewura Rehoboam be asheŋ.
+      sbs: 0.7561
+      gen_sec: 7.59
+      ref_sec: 7.22
+      cer: 0.0278
+      wer: 0.05
+    bible_00051:
+      source: bible
+      text: Men baa ta kagbene ŋana asheŋ ŋ kraa kɔ a fin men be kumɔlga kikɛ be kenya.
+      sbs: 0.7337
+      gen_sec: 6.4
+      ref_sec: 5.68
+      cer: 0.0
+      wer: 0.0
+    bible_00052:
+      source: bible
+      text: Ama ŋkpal eŋinipo na ka la enyiashempo so, e kraa ŋini basa asɔ nɛ mo ere nyi nna.
+      sbs: 0.7554
+      gen_sec: 7.0
+      ref_sec: 7.24
+      cer: 0.0794
+      wer: 0.1667
+    bible_00053:
+      source: bible
+      text: Mo alɛ beeŋ naŋ sa menyi yuku bumo be bewura so nɛ men mɔ bumo nɛ esa maaŋ naa nyiŋi bumo
+        be asheŋ gba kuraa.
+      sbs: 0.7462
+      gen_sec: 9.3
+      ref_sec: 7.98
+      cer: 0.0476
+      wer: 0.12
+    bible_00054:
+      source: bible
+      text: Enyɛnpetale Ebɔrɛ na bre bee wora kusɔ nɛ k daga nna a ŋini mbe keshi, nsaa ji mbe basa demu
+        a lara mbe kecheembiya efuli.
+      sbs: 0.7468
+      gen_sec: 10.24
+      ref_sec: 10.16
+      cer: 0.0208
+      wer: 0.08
+    bible_00055:
+      source: bible
+      text: Ma e daa kɔ asɔbɔya a chɔ esa kama nɛ e juŋkpar ma ashi Jerusalɛm be kade to.
+      sbs: 0.7471
+      gen_sec: 6.31
+      ref_sec: 6.1
+      cer: 0.0
+      wer: 0.0
+    bible_00056:
+      source: bible
+      text: Ewura Rehoboam e daŋ ta Mahalaf nɛ mo tuto daa la Jerimɔf nɛ e la ewura Deevid pibinyɛn na.
+      sbs: 0.7644
+      gen_sec: 7.59
+      ref_sec: 7.94
+      cer: 0.0
+      wer: 0.0
+    bible_00057:
+      source: bible
+      text: Ama Nadab nɛ Abihu bre daŋ wu, saŋɛ nɛ b daŋ ta edɛ nɛ a maŋ daga n chɔ sarga nɛ b lara n
+        sa Enyɛnpe Ebɔrɛ ashi Sainai be keshishɛrsawule na so nna.
+      sbs: 0.7382
+      gen_sec: 12.29
+      ref_sec: 12.04
+      cer: 0.0088
+      wer: 0.0294
+    bible_00058:
+      source: bible
+      text: B daŋ ta asɔbuuso kpɛatoso nna m buu nseŋ ta asɛbta wuso nɛ b tɛ amo n wɔtɔ.
+      sbs: 0.7792
+      gen_sec: 6.31
+      ref_sec: 6.92
+      cer: 0.0345
+      wer: 0.2778
+    bible_00059:
+      source: bible
+      text: Manɛ nna nɛ n nio ta ma n deŋi mbe aya so.
+      sbs: 0.6423
+      gen_sec: 3.24
+      ref_sec: 3.46
+      cer: 0.1
+      wer: 0.5
+    bible_00060:
+      source: bible
+      text: A daga fanɛ ebɛsopo kama nɛ e kɔ bekulpoche mbe kanaŋ to ka bee keni bumo so nsaa maŋ baŋ
+        yige bumo n sa asɔri to ebi.
+      sbs: 0.7827
+      gen_sec: 9.81
+      ref_sec: 10.16
+      cer: 0.033
+      wer: 0.0741
+    bible_00061:
+      source: bible
+      text: Jɔɔdan be epeŋilarkpa be kaba so be eyiriana be asheŋ.
+      sbs: 0.6863
+      gen_sec: 4.86
+      ref_sec: 3.38
+      cer: 0.0227
+      wer: 0.3
+    bible_00062:
+      source: bible
+      text: B daŋ nase nde nɛ b pɔr egbal ŋ kulti na atre popɔr nna.
+      sbs: 0.702
+      gen_sec: 4.61
+      ref_sec: 3.9
+      cer: 0.0714
+      wer: 0.2143
+    bible_00063:
+      source: bible
+      text: 'Kumo be kaman nɛ basa na bishi le: “Manɛ nna nɛ anyee kishi nɛ Enyɛnpe Ebɔrɛ na maa wu fanɛ
+        anyee kishi?'
+      sbs: 0.7669
+      gen_sec: 8.45
+      ref_sec: 8.36
+      cer: 0.0
+      wer: 0.0
+    bible_00064:
+      source: bible
+      text: B daŋ pɔɔ bumo so cheche nna hale Itiopiaebi na daa maŋ naŋ tiŋ nɛ b kɔ gba.
+      sbs: 0.7811
+      gen_sec: 6.49
+      ref_sec: 5.84
+      cer: 0.1379
+      wer: 0.2222
+    bible_00065:
+      source: bible
+      text: Ma bɔrɛlambu beeŋ baa la kabɔrɛkule be kakpa n sa efuli kama so be basa.
+      sbs: 0.7716
+      gen_sec: 6.06
+      ref_sec: 4.78
+      cer: 0.0
+      wer: 0.1333
+    bible_00066:
+      source: bible
+      text: 'B ka kraa wɔtɔ a bishi mo na nɛ e niŋi to n yili ŋ kaŋɛ bumo: “Menyi be ekama nɛ e maŋ kɔ
+        kulubi e fara ŋ kpa kache ere kejembu.'
+      sbs: 0.7424
+      gen_sec: 10.41
+      ref_sec: 9.78
+      cer: 0.0106
+      wer: 0.0938
+    bible_00067:
+      source: bible
+      text: Israɛl be benapo na bre daŋ bɛta nɛ alenfia nna m ba Joshuwa kutɔ ashi Makɛda be keeyi to.
+      sbs: 0.7258
+      gen_sec: 7.51
+      ref_sec: 6.66
+      cer: 0.0282
+      wer: 0.1053
+    bible_00068:
+      source: bible
+      text: Ebɔrɛ ka la mbe basa be ekumpo be asheŋ.
+      sbs: 0.7035
+      gen_sec: 3.41
+      ref_sec: 3.22
+      cer: 0.129
+      wer: 0.2222
+    bible_00069:
+      source: bible
+      text: Saŋkama nɛ men baŋ chɛrga echenakpa, Livaiebi na e naaŋ baa bɔɔ Enyɛnpe be wajɛbu na.
+      sbs: 0.713
+      gen_sec: 7.51
+      ref_sec: 5.46
+      cer: 0.0147
+      wer: 0.25
+    bible_00070:
+      source: bible
+      text: nɛ meeŋ tia kɔnɔ nɛ n nase n sa fo na.
+      sbs: 0.6932
+      gen_sec: 2.99
+      ref_sec: 3.24
+      cer: 0.1111
+      wer: 0.3636
+    bible_00071:
+      source: bible
+      text: ki kpakpa na be kaman baa teŋ mo so nna.
+      sbs: 0.7424
+      gen_sec: 3.24
+      ref_sec: 3.04
+      cer: 0.0667
+      wer: 0.1
+    bible_00072:
+      source: bible
+      text: 'Kumo be kaman nɛ beko malɛ kaŋɛ le: “An paŋ amansherbi nna pɔɛŋ nseŋ tiŋ ŋ ka anyi be adɔsawule
+        nɛ ndibi sɔrso be akɔ n sa ewura.'
+      sbs: 0.7839
+      gen_sec: 11.09
+      ref_sec: 11.34
+      cer: 0.0303
+      wer: 0.25
+    bible_00073:
+      source: bible
+      text: 'Efɔ kama nɛ e ba tu Enyɛnpe Ebɔrɛ na be basa a wɔtɔ e sa maŋ kaŋ kaŋɛ fanɛ: “Enyɛnpe Ebɔrɛ
+        na maaŋ shuli nɛ n tu mbe basa a shuŋ mo.'
+      sbs: 0.7805
+      gen_sec: 10.84
+      ref_sec: 10.26
+      cer: 0.0
+      wer: 0.0
+    bible_00074:
+      source: bible
+      text: Ebɔrɛ gbagba e la anyi be ejuŋkparpo nɛ mbe bɔrɛmatapoana malɛ wora shiriya nɛ b foŋ bumo
+        be mbel n tre anyi nɛ anyi nɛ menyi e kɔ kena.
+      sbs: 0.7769
+      gen_sec: 11.35
+      ref_sec: 10.24
+      cer: 0.0
+      wer: 0.0
+    bible_00075:
+      source: bible
+      text: Tentembiri nɛ kebagato beeŋ sɔ efuli na kikɛ so, ŋkpal manɛ so kuwɔlpa nɛ k biri to beeŋ buu
+        kefulto nɛ k wɔtɔ kabre ere kikɛ so.
+      sbs: 0.7481
+      gen_sec: 10.92
+      ref_sec: 12.88
+      cer: 0.0396
+      wer: 0.2593
+    bible_00076:
+      source: bible
+      text: daa maŋ naa kɔ shɛŋ nɛ b kaŋɛ Job na nɛ e nya agbo.
+      sbs: 0.6548
+      gen_sec: 4.18
+      ref_sec: 3.6
+      cer: 0.027
+      wer: 0.0714
+    bible_00077:
+      source: bible
+      text: Ndoŋ e daa la Juda be kelargato be kaseto be kaba so be kasawule be ekar.
+      sbs: 0.7441
+      gen_sec: 6.06
+      ref_sec: 5.22
+      cer: 0.0175
+      wer: 0.0625
+    bible_00078:
+      source: bible
+      text: Loŋ be jemanɛ nɛ ŋ kaŋɛ basa nɛ baa keni beshumpo na so na nɛ bumo be beshumpo kikɛ fanɛ baa
+        b wɔ Jerusalɛm be kadegboŋ na to kanyɛso kikɛ nsaa keni so a kuŋ kade na.
+      sbs: 0.7818
+      gen_sec: 13.99
+      ref_sec: 14.6
+      cer: 0.0078
+      wer: 0.027
+    bible_00079:
+      source: bible
+      text: Kachɛ nyɔsopo na gba kela koŋwule nɛ b daŋ nite ŋ kulti kade na pɔɛŋ nseŋ bɛta n yɔ bumo keeyi
+        to.
+      sbs: 0.7542
+      gen_sec: 8.45
+      ref_sec: 7.14
+      cer: 0.0395
+      wer: 0.1364
+    bible_00080:
+      source: bible
+      text: Nɛ b kaŋɛ ma fanɛ basa nɛ b bɛta n yɔ Jerusalɛm na wɔ tɔrɔ nɛ awurfoŋ to nna.
+      sbs: 0.7061
+      gen_sec: 6.31
+      ref_sec: 5.96
+      cer: 0.069
+      wer: 0.1053
+    bible_00081:
+      source: bible
+      text: Menyi be anya gba daga fanɛ b wushi nna fanɛ kananɛ menyee wushi na.
+      sbs: 0.7264
+      gen_sec: 5.63
+      ref_sec: 4.64
+      cer: 0.0
+      wer: 0.0
+    bible_00082:
+      source: bible
+      text: nawule be bare nɛ menyee bir; men be mmalga malɛ kikɛ la efɛ nna.
+      sbs: 0.7449
+      gen_sec: 5.38
+      ref_sec: 5.2
+      cer: 0.06
+      wer: 0.2143
+    bible_00083:
+      source: bible
+      text: nɛ men teriana e fule menyi nseŋ pɔɔ menyi so.
+      sbs: 0.6587
+      gen_sec: 3.93
+      ref_sec: 3.78
+      cer: 0.1667
+      wer: 0.3
+    bible_00084:
+      source: bible
+      text: Ebɔrɛ, shin nɛ loŋ be kachɛ na e ki tentembiri plɔ.
+      sbs: 0.6678
+      gen_sec: 4.35
+      ref_sec: 3.88
+      cer: 0.0769
+      wer: 0.1818
+    bible_00085:
+      source: bible
+      text: Fo e to anyi, amoso sa maŋ nya agbo ga n wɔtɔ anyi ŋko a nyiŋi anyi be alubi mbaanaayɔ.
+      sbs: 0.774
+      gen_sec: 7.34
+      ref_sec: 6.8
+      cer: 0.0152
+      wer: 0.05
+    bible_00086:
+      source: bible
+      text: Fo e naaŋ juŋkpar basa ere n ya sɔ kasawule nɛ Enyɛnpe Ebɔrɛ na nase kumo be kɔnɔ n sa bumo
+        nananyɛnana na n chena so.
+      sbs: 0.7334
+      gen_sec: 9.81
+      ref_sec: 8.24
+      cer: 0.0109
+      wer: 0.0385
+    bible_00087:
+      source: bible
+      text: Kumo be kaman nɛ men chɔɔ bumo be agbirana na m mur.
+      sbs: 0.6965
+      gen_sec: 4.18
+      ref_sec: 3.36
+      cer: 1.0
+      wer: 1.0
+    bible_00088:
+      source: bible
+      text: Men baŋ yige Enyɛnpe na nsaa shuŋ nnyamase na be agbir na bre, e beeŋ kilgi ŋ gberge menyi
+        kusoe.
+      sbs: 0.7424
+      gen_sec: 8.45
+      ref_sec: 6.34
+      cer: 0.0132
+      wer: 0.15
+    bible_00089:
+      source: bible
+      text: Kasawule nɛ b ta n sa Dan be yiri to ebi na be asheŋ.
+      sbs: 0.6905
+      gen_sec: 4.18
+      ref_sec: 3.94
+      cer: 0.0769
+      wer: 0.1429
+    bible_00090:
+      source: bible
+      text: Kekule n fin Ebɔrɛ be kuwɔrwu be asheŋ.
+      sbs: 0.6354
+      gen_sec: 3.41
+      ref_sec: 5.2
+      cer: 0.129
+      wer: 0.375
+    bible_00091:
+      source: bible
+      text: Fo anyii damta na beeŋ gbaŋ n tɔr nseŋ ka gbrɛbi nɛ fo maaŋ naŋ tiŋ ŋ we ajibi to nɛnɛ nɛ
+        fo anishi malɛ maaŋ naa wu nɛnɛ.
+      sbs: 0.7296
+      gen_sec: 10.58
+      ref_sec: 11.3
+      cer: 0.043
+      wer: 0.1724
+    bible_00092:
+      source: bible
+      text: Efuli na gba be ketre maaŋ naa la Eche nɛ b kini n lɛ.
+      sbs: 0.7616
+      gen_sec: 4.35
+      ref_sec: 4.1
+      cer: 0.0
+      wer: 0.0
+    bible_00093:
+      source: bible
+      text: Men baa nyi geeŋ fanɛ an ka daŋ ba menyi kutɔ na, mannɛ kafule be mmalga nɛ an daŋ bar.
+      sbs: 0.7431
+      gen_sec: 7.34
+      ref_sec: 6.06
+      cer: 0.0606
+      wer: 0.2
+    bible_00094:
+      source: bible
+      text: Amo nɛ asɔrso nɛ a walɛ ga na nɛ yabra popɔr nɛ ɔlif be ŋku.
+      sbs: 0.7269
+      gen_sec: 4.86
+      ref_sec: 5.48
+      cer: 0.0889
+      wer: 0.2667
+    bible_00095:
+      source: bible
+      text: 'Ade be kaman, nɛ Enyɛnpe Ebɔrɛ naŋ kaŋɛ le: “Ma e naa leŋ menyi to a wushi menyi kagbene.'
+      sbs: 0.7728
+      gen_sec: 7.51
+      ref_sec: 6.4
+      cer: 0.0299
+      wer: 0.1053
+    bible_00096:
+      source: bible
+      text: Jɛrikoebi daŋ ti egbal nɛ b pɔr ŋ kulti kade na be mbunagboŋana na kikɛ nna ŋkpal Israɛlebi
+        na so.
+      sbs: 0.7494
+      gen_sec: 8.53
+      ref_sec: 7.78
+      cer: 0.0
+      wer: 0.0
+    bible_00097:
+      source: bible
+      text: M maaŋ naaŋ nya agbo n wɔtɔ ma basa a wu bumo kulubi mbaanaayɔ.
+      sbs: 0.6865
+      gen_sec: 5.38
+      ref_sec: 3.94
+      cer: 0.0408
+      wer: 0.1429
+    bible_00098:
+      source: bible
+      text: Amaziya daŋ lara mbe kumu nna n yili fanɛ e beeŋ shuŋ Enyɛnpe Ebɔrɛ.
+      sbs: 0.7005
+      gen_sec: 5.97
+      ref_sec: 4.9
+      cer: 0.0
+      wer: 0.0
+    bible_00099:
+      source: bible
+      text: Le e naaŋ shin nɛ men nanabiana e sa maŋ tiŋ ŋ kaŋɛ an nanabiana fanɛ Enyɛnpe na la Israɛlebi
+        nawule be Ebɔrɛ nna.
+      sbs: 0.7204
+      gen_sec: 9.9
+      ref_sec: 8.46
+      cer: 0.0444
+      wer: 0.125
+    bible_00100:
+      source: bible
+      text: Enyɛnpe Ebɔrɛ nɛ e bee ji kuwura Israɛl so.
+      sbs: 0.6619
+      gen_sec: 3.58
+      ref_sec: 3.18
+      cer: 0.0
+      wer: 0.0
+    bible_00101:
+      source: bible
+      text: Ŋko menyee sha nna nɛ men pal kaman n sa Enyɛnpe Ebɔrɛ?
+      sbs: 0.6828
+      gen_sec: 4.61
+      ref_sec: 3.78
+      cer: 0.0233
+      wer: 0.1667
+    bible_00102:
+      source: bible
+      text: Bubuni wora shiriya nna m bela ase a jo Jerusalɛm to be bejuŋkparpoana na nɛ jimaŋ damta nɛ
+        baa cha awɔr na, fɔŋfɔŋ bumo nɛ baa puchi kadegboŋ na so na.
+      sbs: 0.7538
+      gen_sec: 13.14
+      ref_sec: 11.64
+      cer: 0.0333
+      wer: 0.129
+    bible_00103:
+      source: bible
+      text: Jemanɛ nɛ Enyɛnpe Ebɔrɛ daŋ malga Mosis kutɔ ashi kebeegboŋ nɛ baa tre Sainai na so na, Ɛɛrɔn
+        daa kɔ mbinyɛnsobi ana nna.
+      sbs: 0.7328
+      gen_sec: 10.41
+      ref_sec: 8.08
+      cer: 0.0309
+      wer: 0.087
+    bible_00104:
+      source: bible
+      text: Ekama malɛ nɛ e baŋ ta gbolu ŋko mbolpɔ ashunu m ba, fo shin nɛ e bee ki menyi be agbirana
+        nɛ a maŋ la shɛŋ na be kegbirwura nna.
+      sbs: 0.7778
+      gen_sec: 10.75
+      ref_sec: 12.88
+      cer: 0.0204
+      wer: 0.0333
+    bible_00105:
+      source: bible
+      text: N daŋ kur atirbu nɛ baaŋ baa jɔ nchu amo to a wurge ndibi na so nna.
+      sbs: 0.7048
+      gen_sec: 5.55
+      ref_sec: 5.12
+      cer: 0.0392
+      wer: 0.1176
+    bible_00106:
+      source: bible
+      text: Anyi be kenishi daŋ pere menyi so ga nɛ an yɛlga ga fanɛ an naŋ wu menyi.
+      sbs: 0.7097
+      gen_sec: 6.06
+      ref_sec: 4.7
+      cer: 0.0893
+      wer: 0.1176
+    bible_00107:
+      source: bible
+      text: basa nɛ b shuŋ ŋ gben malɛ bee nya a wushi ndoŋ nna.
+      sbs: 0.6245
+      gen_sec: 4.44
+      ref_sec: 4.44
+      cer: 0.0
+      wer: 0.0
+    bible_00108:
+      source: bible
+      text: Nseŋ yili kumo fanɛ kumuli kikɛ nɛ k wɔ ebɔrɛso nɛ kasawule so nɛ durnya nɛ k wɔ kaseto beeŋ
+        gbir m bunyaŋ Yesu be ketre na.
+      sbs: 0.7875
+      gen_sec: 10.41
+      ref_sec: 10.66
+      cer: 0.0206
+      wer: 0.0741
+    bible_00109:
+      source: bible
+      text: Gɛshɔn be kabuna ebi na beeŋ wora bumo be echenakpa ashi nshɛr be wajɛbu na be epeŋitɔrkpa
+        be kaba so na nɛ Laɛl pibinyɛn Eliazaf e baa la bumo be enimu.
+      sbs: 0.7665
+      gen_sec: 12.89
+      ref_sec: 14.1
+      cer: 0.0328
+      wer: 0.129
+    bible_00110:
+      source: bible
+      text: M pibi Timoti, mee ta asheŋ nɛ ŋ ŋini fo ere nna a bɔla mmalga nɛ anebiana na daŋ wu ŋ kaŋɛ
+        fo asheŋ na so a bɔɔ fo enɔ.
+      sbs: 0.7224
+      gen_sec: 10.15
+      ref_sec: 10.48
+      cer: 0.0225
+      wer: 0.0333
+    bible_00111:
+      source: bible
+      text: Baa wora fo kagbene be aparsheŋ kanaŋkama nɛ fee sha.
+      sbs: 0.715
+      gen_sec: 4.69
+      ref_sec: 4.34
+      cer: 0.2326
+      wer: 0.6
+    bible_00112:
+      source: bible
+      text: Jemanɛ nɛ Abija daa ji Juda be efuli so be kuwura na, Jeroboam daa maŋ naŋ nya eleŋ kikɛ.
+      sbs: 0.7502
+      gen_sec: 7.59
+      ref_sec: 6.88
+      cer: 0.0
+      wer: 0.0
+    bible_00113:
+      source: bible
+      text: Mɛrari be kabuna ebi na beeŋ wora bumo be echenakpa ashi wajɛbu na be kelargato be esoso be
+        kaba so nɛ Abihail pibinyɛn Zuriɛl e baa la kabuna na be enimu.
+      sbs: 0.7387
+      gen_sec: 13.06
+      ref_sec: 12.28
+      cer: 0.0484
+      wer: 0.0968
+    bible_00114:
+      source: bible
+      text: Ŋkpal manɛ so ajibi nɛ anyee nya a ji nɛ nchu nɛ anyee nuu nɛ tɔnɔ kama nɛ anyee nya ashi
+        anyi be ashuŋ to ere kikɛ la Ebɔrɛ be kakɛ nna.
+      sbs: 0.7716
+      gen_sec: 11.18
+      ref_sec: 11.66
+      cer: 0.019
+      wer: 0.0312
+    bible_00115:
+      source: bible
+      text: Baaŋ purge fanɛ afitiri nɛ a bee nya nchu nɛnɛ.
+      sbs: 0.6533
+      gen_sec: 4.01
+      ref_sec: 3.98
+      cer: 0.1892
+      wer: 0.3
+    bible_00116:
+      source: bible
+      text: Saŋkama anyee chɔrɔ Ebɔrɛ ga ŋkpal kananɛ men sɔ Ebɔrɛ be kubɔya nɛ an daŋ bar menyi na so.
+      sbs: 0.7029
+      gen_sec: 7.85
+      ref_sec: 7.32
+      cer: 0.0139
+      wer: 0.0526
+    bible_00117:
+      source: bible
+      text: Fo ndegboŋ cheembiana na be kekama ki fanɛ keshishɛrsawule nna.
+      sbs: 0.7643
+      gen_sec: 5.63
+      ref_sec: 4.7
+      cer: 0.1698
+      wer: 0.4
+    bible_00118:
+      source: bible
+      text: nsaa maŋ naŋ shin nɛ b karga kumo n ti nchɛ so.
+      sbs: 0.6824
+      gen_sec: 3.93
+      ref_sec: 3.22
+      cer: 0.0571
+      wer: 0.25
+    bible_00119:
+      source: bible
+      text: Meeŋ shin nɛ men ta kɔnɔ nɛ n nase nɛ k kɔ tama na.
+      sbs: 0.7183
+      gen_sec: 4.01
+      ref_sec: 5.04
+      cer: 0.1081
+      wer: 0.2143
+    bible_00120:
+      source: bible
+      text: ” Loŋ be jemanɛ na, epeŋi nɛ kufɔl nɛ achɛkpabi maaŋ naa fuli to nɛnɛ a sa fo, ŋkpal fo anishi
+        ka maa naa wu nɛnɛ so.
+      sbs: 0.7719
+      gen_sec: 9.73
+      ref_sec: 9.42
+      cer: 0.023
+      wer: 0.0385
+    bible_00121:
+      source: bible
+      text: Ŋkpal manɛ so fo maaŋ tiŋ m pin fanɛ kachipurso peya na ŋko kaaseso peya na e naaŋ wora n
+        lar tɔnɔ n sa fo.
+      sbs: 0.7584
+      gen_sec: 9.05
+      ref_sec: 8.22
+      cer: 0.0488
+      wer: 0.24
+    bible_00122:
+      source: bible
+      text: A daga fanɛ fo ku fo nɛ Israɛl be ewura Baasha be kɔnɔkoŋwule nɛ men kɔ na to, nɛ kumo be
+        loŋ e shin nɛ e lara mbe benapo ashi ma kasawule so.
+      sbs: 0.7777
+      gen_sec: 11.61
+      ref_sec: 11.6
+      cer: 0.0093
+      wer: 0.0606
+    bible_00123:
+      source: bible
+      text: Ewura Abija ka wu, kakpa nɛ baa puli bewura na nɛ b ta mo n ya puli ashi Jerusalɛm nɛ baa
+        tre ewura Deevid be kade to na.
+      sbs: 0.7758
+      gen_sec: 9.73
+      ref_sec: 8.24
+      cer: 0.0543
+      wer: 0.1429
+    bible_00124:
+      source: bible
+      text: Ta le be mmalga ere n fiɛ asɔri to ebi na so nɛ b bɛ amo so nɛ esa kikɛ e sa maŋ wu kulubi
+        bumo so.
+      sbs: 0.738
+      gen_sec: 7.59
+      ref_sec: 7.76
+      cer: 0.0556
+      wer: 0.2222
+    bible_00125:
+      source: bible
+      text: Men tama fanɛ le be ekishi beeŋ tiŋ n shin nɛ n nu menyi be kabɔrɛkule a?
+      sbs: 0.7234
+      gen_sec: 6.06
+      ref_sec: 4.7
+      cer: 0.0179
+      wer: 0.1765
+    bible_00126:
+      source: bible
+      text: Nooba e daŋ kɔ n sɔ Kenaaf nɛ ndewurbi nɛ a kulti kumo na nseŋ ta mbe ketre Nooba n nase amo.
+      sbs: 0.7561
+      gen_sec: 7.59
+      ref_sec: 10.52
+      cer: 0.0563
+      wer: 0.1364
+    bible_00127:
+      source: bible
+      text: Ajembu burtoso na shi ga n sa anyi nɛ an sulɔ n ya lɛ.
+      sbs: 0.732
+      gen_sec: 4.18
+      ref_sec: 5.8
+      cer: 0.15
+      wer: 0.4286
+    bible_00128:
+      source: bible
+      text: Ama kanyɛn nɛ baa tre Sanballat nɛ e shi kade nɛ baa tre Horɔn na nɛ Tobaya nɛ e la Ammɔn
+        be efuli so be krachigboŋ ko na ka nu fanɛ m ba na, nɛ b nya agbo ga.
+      sbs: 0.7622
+      gen_sec: 12.63
+      ref_sec: 14.14
+      cer: 0.0504
+      wer: 0.1026
+    bible_00129:
+      source: bible
+      text: Mɛɛri pibi nɛ Jeems nɛ Josɛf nɛ Judas nɛ Saimɔn bumo da nna a?
+      sbs: 0.7374
+      gen_sec: 5.03
+      ref_sec: 4.84
+      cer: 0.2083
+      wer: 0.3571
+    bible_00130:
+      source: bible
+      text: Esa pɔtɛ kama nɛ e pɛl n shuŋ bɔrɛmatapo be kushuŋ b mɔ mo.
+      sbs: 0.6695
+      gen_sec: 4.95
+      ref_sec: 5.22
+      cer: 0.0667
+      wer: 0.2857
+    bible_00131:
+      source: bible
+      text: Esa kama maŋ ka nɛ e kaŋɛ fanɛ fo daga kasogberge a?
+      sbs: 0.7111
+      gen_sec: 4.44
+      ref_sec: 4.16
+      cer: 0.025
+      wer: 0.0833
+    bible_00132:
+      source: bible
+      text: 'Le be asheŋ ere nɛ e daŋ kaŋɛ bumo: “Men ba wora men be ashuŋ nɛnɛ ashi kabɔrɛŋana nɛ kashenteŋji
+        be ekpa so.'
+      sbs: 0.755
+      gen_sec: 9.47
+      ref_sec: 7.5
+      cer: 0.0357
+      wer: 0.087
+    bible_00133:
+      source: bible
+      text: fanɛ bumo be kusɔ jiso kikɛ; befɔ malɛ maaŋ naŋ nya yabra nɛ fo gben.
+      sbs: 0.7278
+      gen_sec: 5.89
+      ref_sec: 5.76
+      cer: 0.0377
+      wer: 0.2
+    bible_00134:
+      source: bible
+      text: Anyi be alubi so, an du fanɛ afantaŋ wɔlso nɛ afu ber amo n ya lɛ nna.
+      sbs: 0.7819
+      gen_sec: 5.63
+      ref_sec: 5.82
+      cer: 0.0962
+      wer: 0.2353
+    bible_00135:
+      source: bible
+      text: 'N daŋ nu Enyɛnpetale Ebɔrɛ na ka kaŋɛ le: “Nwu gboŋgboŋi lela ere kikɛ beeŋ ki alambure nɛ
+        esa kikɛ maaŋ naa wɔ amo to.'
+      sbs: 0.7672
+      gen_sec: 10.33
+      ref_sec: 9.14
+      cer: 0.0
+      wer: 0.0
+    bible_00136:
+      source: bible
+      text: Amoso anyi kikɛ naŋ bɛta n yɔ egbal na be kelɔŋɛ m pɔr to nna.
+      sbs: 0.7132
+      gen_sec: 5.12
+      ref_sec: 4.2
+      cer: 0.0851
+      wer: 0.1333
+    bible_00137:
+      source: bible
+      text: E maŋ wu epeŋi be kefulto ŋko a nyi kusɔ nɛ baa tre ŋkpa gba, ama mo alɛ nya ewushi a chɔ
+        esa nɛ e ji nfɛ ŋgboŋ anyɔ nsaa maŋ ji durnya ere to be ebel.
+      sbs: 0.7688
+      gen_sec: 12.63
+      ref_sec: 12.76
+      cer: 0.0088
+      wer: 0.0811
+    bible_00138:
+      source: bible
+      text: Men baŋ kini kebɛ Enyɛnpe Ebɔrɛ so, e beeŋ naŋ kplaŋ mbe basa so ashi keshishɛrsawule ere
+        so nɛ bumo be alubi e baa bɛ menyi.
+      sbs: 0.7584
+      gen_sec: 10.75
+      ref_sec: 9.08
+      cer: 0.0102
+      wer: 0.0385
+    bible_00139:
+      source: bible
+      text: Joshuwa ka bee taga to Jɛriko na, epul to nɛ e wu kanyɛn ko ka yili mbe anishito a kɔ tokobi
+        to.
+      sbs: 0.7579
+      gen_sec: 7.77
+      ref_sec: 8.6
+      cer: 0.0137
+      wer: 0.0455
+    bible_00140:
+      source: bible
+      text: Jande nyiŋi kusɔ nɛ fo kaŋɛ fo kayɛrbi Mosis na, fanɛ nɛ anyi Israɛlebi maŋ ji kashenteŋ n
+        sa fo, kumo ere feeŋ pesaŋ anyi to n yɔ efuli pɔtɛana ko so.
+      sbs: 0.7299
+      gen_sec: 13.06
+      ref_sec: 12.68
+      cer: 0.0684
+      wer: 0.1875
+    bible_00141:
+      source: bible
+      text: Ŋkpal manɛ so, ŋ gbagba e naaŋ chɛ fo to nɛ fo tiŋ n juŋkpar Israɛl be basa ere n yɔ kasawule
+        nɛ n nase kumo be kɔnɔ n sa bumo na so.
+      sbs: 0.7669
+      gen_sec: 10.92
+      ref_sec: 9.9
+      cer: 0.0202
+      wer: 0.0606
+    bible_00142:
+      source: bible
+      text: nseŋ wora kusɔ nɛ e kaŋɛ kenishipere so na kasonu.
+      sbs: 0.6801
+      gen_sec: 4.44
+      ref_sec: 3.1
+      cer: 0.15
+      wer: 0.4
+    bible_00143:
+      source: bible
+      text: Kusɔ nɛ eche nɛ e kurge daga fanɛ e wora nna na.
+      sbs: 0.6346
+      gen_sec: 3.75
+      ref_sec: 3.96
+      cer: 0.0
+      wer: 0.0
+    bible_00144:
+      source: bible
+      text: Basa na be bargato bee shuŋ nna nɛ bargato malɛ e keta bumo be ekpa a yil a kuŋ.
+      sbs: 0.7443
+      gen_sec: 6.57
+      ref_sec: 6.3
+      cer: 0.0
+      wer: 0.0
+    bible_00145:
+      source: bible
+      text: basa nɛ fo mɔlga na nɛ b bɔla to n dii.
+      sbs: 0.7153
+      gen_sec: 2.99
+      ref_sec: 3.36
+      cer: 0.0357
+      wer: 0.0909
+    bible_00146:
+      source: bible
+      text: nseŋ bɛta bumo nɛ eyiriana na kikɛ m ba abar so.
+      sbs: 0.6844
+      gen_sec: 4.01
+      ref_sec: 3.36
+      cer: 0.0541
+      wer: 0.0909
+    bible_00147:
+      source: bible
+      text: 'Basa pɔtɛ beeŋ kaŋɛ le kukoko to: ‘N la Enyɛnpe Ebɔrɛ peya nna.'
+      sbs: 0.7766
+      gen_sec: 5.38
+      ref_sec: 5.62
+      cer: 0.0208
+      wer: 0.0769
+    bible_00148:
+      source: bible
+      text: Men baa bɛ amo kikɛ so, saŋɛ na so, asheŋ beeŋ nyalɛ n sa menyi nɛ men tiŋ n chena kasawule
+        nɛ Enyɛnpe, menyi be Ebɔrɛ na bee ta a sa menyi na so n chɛr.
+      sbs: 0.7691
+      gen_sec: 12.63
+      ref_sec: 14.0
+      cer: 0.0263
+      wer: 0.0556
+    bible_00149:
+      source: bible
+      text: be asheŋ lubi e dii efuli nɛ ekama e pin amo.
+      sbs: 0.6552
+      gen_sec: 3.67
+      ref_sec: 6.12
+      cer: 0.0294
+      wer: 0.1818
+    bible_00150:
+      source: bible
+      text: A beeŋ baa chicha fanɛ nchu ka bɛ edɛ so a falte na.
+      sbs: 0.7231
+      gen_sec: 4.18
+      ref_sec: 3.44
+      cer: 0.1282
+      wer: 0.3846
+    bible_00151:
+      source: bible
+      text: Meeŋ sa fo kanyiasheŋ nɛ nfɛra nseŋ naŋ ta kedamaya nɛ amansherbi n ti fo so.
+      sbs: 0.7401
+      gen_sec: 6.83
+      ref_sec: 5.3
+      cer: 0.1311
+      wer: 0.4375
+    bible_00152:
+      source: bible
+      text: E ka ba Joram kutɔ na, nɛ mo nɛ Joram ya tu Nimshi pibinyɛn Jehu nɛ Enyɛnpe Ebɔrɛ lara fanɛ
+        e mur Ahab be kuwurji na.
+      sbs: 0.7685
+      gen_sec: 9.47
+      ref_sec: 10.68
+      cer: 0.0222
+      wer: 0.1538
+    bible_00153:
+      source: bible
+      text: Le be alubi ere daa beeŋ tiŋ m bar ma kasogberge.
+      sbs: 0.6674
+      gen_sec: 4.18
+      ref_sec: 3.48
+      cer: 0.0263
+      wer: 0.0909
+    bible_00154:
+      source: bible
+      text: 'Ndoŋ nna nɛ Pita kaŋɛ Yesu: “Eŋinipo, anyi be kebaawɔ nfe ere nyalɛ ga.'
+      sbs: 0.7789
+      gen_sec: 6.14
+      ref_sec: 6.2
+      cer: 0.1481
+      wer: 0.3571
+    bible_00155:
+      source: bible
+      text: Esa nɛ e maŋ yirda Yesu Kristo na malɛ gba bɔ loŋ be esa.
+      sbs: 0.6928
+      gen_sec: 4.69
+      ref_sec: 4.08
+      cer: 0.0
+      wer: 0.0
+    bible_00156:
+      source: bible
+      text: Enyɛnpe Ebɔrɛ na; nsaa malga emamachisheŋ.
+      sbs: 0.6795
+      gen_sec: 3.93
+      ref_sec: 3.08
+      cer: 0.0
+      wer: 0.0
+    bible_00157:
+      source: bible
+      text: Amoso Eliaza nɛ Itama nawule e daa la bɔrɛmatapoana jemanɛ nɛ bumo tuto, Ɛɛrɔn daa wɔ ŋkpa
+        to na kikɛ.
+      sbs: 0.7065
+      gen_sec: 8.7
+      ref_sec: 7.14
+      cer: 0.0494
+      wer: 0.15
+    bible_00158:
+      source: bible
+      text: Enyɛnpe Ebɔrɛ, bugi awɔlpa to nseŋ gbelge m ba nɛ kufu e pɛ abee nɛ a baa chicha.
+      sbs: 0.7772
+      gen_sec: 6.74
+      ref_sec: 6.92
+      cer: 0.0484
+      wer: 0.2778
+    bible_00159:
+      source: bible
+      text: 'Ade kikɛ be kaman nɛ Elihu naŋ kaŋɛ: “Job, fo tama fanɛ fo maŋ wora kulubi kikɛ.'
+      sbs: 0.7842
+      gen_sec: 6.83
+      ref_sec: 6.44
+      cer: 0.0167
+      wer: 0.0588
+    bible_00160:
+      source: bible
+      text: Simiɔn be yiri to ebi nɛ b la yiri nyɔsopo nɛ b chige kasawule n sa na be kasawule be kananɛ
+        k dese nde.
+      sbs: 0.7898
+      gen_sec: 8.36
+      ref_sec: 8.16
+      cer: 0.0
+      wer: 0.0
+    bible_00161:
+      source: bible
+      text: nɛ kefitiri bumbuŋ be ajembu lela nɛ baa tre jaspa na.
+      sbs: 0.7487
+      gen_sec: 4.61
+      ref_sec: 3.9
+      cer: 0.1395
+      wer: 0.2727
+    bible_00162:
+      source: bible
+      text: Men sa maŋ kaa shuŋ bumo be agbirana, ŋkpal manɛ so, loŋ beeŋ tiŋ m bar menyi luwu.
+      sbs: 0.7765
+      gen_sec: 7.42
+      ref_sec: 5.84
+      cer: 0.0476
+      wer: 0.1667
+    bible_00163:
+      source: bible
+      text: Ebɔrɛ baŋ lara efute na, epul to nɛ e wu.
+      sbs: 0.7657
+      gen_sec: 3.41
+      ref_sec: 3.52
+      cer: 0.1667
+      wer: 0.3
+    bible_00164:
+      source: bible
+      text: Teku nɛ baa tre Mɛditerenia na e daa la kasawule na be epeŋitɔrkpa be ekar.
+      sbs: 0.7034
+      gen_sec: 6.4
+      ref_sec: 5.58
+      cer: 0.0667
+      wer: 0.2
+    bible_00165:
+      source: bible
+      text: Ewurkoŋnyɛn nɛ b fo kufɔl ŋko m baŋ so nɛ b daŋ sibɛ bumo be atre na kikɛ daa wɔ ŋgboŋ adunyɔ
+        nɛ anyɔ nɛ alfa anyɔ nɛ adushunu nɛ asa.
+      sbs: 0.7516
+      gen_sec: 11.35
+      ref_sec: 10.42
+      cer: 0.0097
+      wer: 0.0323
+    bible_00166:
+      source: bible
+      text: Amoso Mosis daŋ ta Giliad be kasawule na nna n sa Makiir be kabuna ebi nɛ b chena ndoŋ.
+      sbs: 0.7367
+      gen_sec: 7.34
+      ref_sec: 6.52
+      cer: 0.0147
+      wer: 0.1053
+    bible_00167:
+      source: bible
+      text: Bumo koŋwule na malɛ e naaŋ baa yuu kumo kaplɛkama nɛ men ya chena.
+      sbs: 0.6311
+      gen_sec: 5.8
+      ref_sec: 3.7
+      cer: 0.0
+      wer: 0.0
+    bible_00168:
+      source: bible
+      text: Judaebi na ka keni n wu fanɛ b kulti bumo n wɔtɔ na, nɛ b shu n tre Ebɔrɛ fanɛ e chɛ bumo
+        to.
+      sbs: 0.7712
+      gen_sec: 7.25
+      ref_sec: 7.12
+      cer: 0.0
+      wer: 0.0
+    bible_00169:
+      source: bible
+      text: Nɛ beyu ŋko besugepo daŋ ba fo to kanyɛso.
+      sbs: 0.6975
+      gen_sec: 3.67
+      ref_sec: 3.16
+      cer: 0.1515
+      wer: 0.5556
+    bible_00170:
+      source: bible
+      text: Aloŋ nɛ b daa wora kachɛ kama m bɛ abar so hale ya fo nchɛ ashe.
+      sbs: 0.7098
+      gen_sec: 5.12
+      ref_sec: 5.56
+      cer: 0.1042
+      wer: 0.4375
+    bible_00171:
+      source: bible
+      text: Baa shi kaba kama so nna m ba kaa mel ma so.
+      sbs: 0.7367
+      gen_sec: 3.41
+      ref_sec: 3.34
+      cer: 0.0312
+      wer: 0.3333
+    bible_00172:
+      source: bible
+      text: N shu nɛ ma anishi puŋi m puŋi; hale ma eyur to kikɛ bee besa ma.
+      sbs: 0.7666
+      gen_sec: 5.38
+      ref_sec: 5.86
+      cer: 0.0625
+      wer: 0.3125
+    bible_00173:
+      source: bible
+      text: Ndoŋ nna nɛ Joshuwa nɛ Israɛlebi na mɔ basa na ga, ama bumo be beko bre daŋ shile nna n ya
+        luri bumo be kade nɛ b pɔr egbal ŋ kulti na to nɛ b maŋ nya bumo m mɔ.
+      sbs: 0.7612
+      gen_sec: 13.06
+      ref_sec: 12.8
+      cer: 0.025
+      wer: 0.075
+    bible_00174:
+      source: bible
+      text: Ŋ ka maaŋ tiŋ ŋ kɔ n sa ma kumu ere gba.
+      sbs: 0.6491
+      gen_sec: 3.41
+      ref_sec: 3.1
+      cer: 0.0357
+      wer: 0.25
+    bible_00175:
+      source: bible
+      text: Nɛ mbe asɔbuuso fuli to parr a kpa edɛ.
+      sbs: 0.7678
+      gen_sec: 3.16
+      ref_sec: 3.34
+      cer: 0.0333
+      wer: 0.3333
+    bible_00176:
+      source: bible
+      text: ” Kumo be lalaloge, enyiashempo nɛ ewulpo kikɛ sasa nna.
+      sbs: 0.7524
+      gen_sec: 4.69
+      ref_sec: 4.22
+      cer: 0.0455
+      wer: 0.1111
+    bible_00177:
+      source: bible
+      text: Dimɛdi ko wɔtɔ nɛ e nu Ebɔrɛ, nɛ mo nawule la Ebɔrɛ ere, ka bɔla edɛ to m malga nseŋ ji efute
+        a?
+      sbs: 0.7764
+      gen_sec: 7.77
+      ref_sec: 8.64
+      cer: 0.0282
+      wer: 0.087
+    bible_00178:
+      source: bible
+      text: 'ase a choŋ e sa maŋ kaŋɛ le: ‘Enyɛnpe Ebɔrɛ e nɛfa menyi!'
+      sbs: 0.7192
+      gen_sec: 4.86
+      ref_sec: 4.84
+      cer: 0.0952
+      wer: 0.1538
+    bible_00179:
+      source: bible
+      text: Jehohanan e daa la enimu nyɔsopo m bɛ mo so nsaa keni benapo ŋgboŋ alfa anyɔ nɛ aduburwa so.
+      sbs: 0.7598
+      gen_sec: 7.85
+      ref_sec: 7.52
+      cer: 0.0959
+      wer: 0.2105
+    bible_00180:
+      source: bible
+      text: Kusɔ kɔnto maa tiŋ a niŋi; b maa karga shɛŋ a ti asɔ nɛ e maŋ wɔtɔ so.
+      sbs: 0.7248
+      gen_sec: 5.89
+      ref_sec: 5.76
+      cer: 0.0392
+      wer: 0.2222
+    bible_00181:
+      source: bible
+      text: be kekule nɛ fo maŋ nya kanyiti nsaa fin.
+      sbs: 0.5812
+      gen_sec: 3.5
+      ref_sec: 4.06
+      cer: 0.1562
+      wer: 0.4444
+    bible_00182:
+      source: bible
+      text: 'Ama le nɛ Israɛlebi na daŋ kaŋɛ: “Manɛ so nɛ anyi nɛ menyi bee wora kɔnɔkoŋwule be ŋkre?'
+      sbs: 0.7418
+      gen_sec: 7.59
+      ref_sec: 6.6
+      cer: 0.0147
+      wer: 0.0556
+    bible_00183:
+      source: bible
+      text: ” Ndoŋ nna nɛ b bela ase nɛ b fara kushuŋ na.
+      sbs: 0.6437
+      gen_sec: 3.58
+      ref_sec: 3.46
+      cer: 0.0312
+      wer: 0.0909
+    bible_00184:
+      source: bible
+      text: Kebia nɛ b kurge nɛ e laŋɛ maŋ kɔ tɔnɔ kikɛ; e bee shir tentembiri to nna, nɛ b teŋ mo so
+        epul to.
+      sbs: 0.7374
+      gen_sec: 8.02
+      ref_sec: 7.4
+      cer: 0.0556
+      wer: 0.0833
+    bible_00185:
+      source: bible
+      text: Kashenteŋto, ma kenaŋ n sibɛ asheŋ koŋwule ere gbagba n sa menyi maŋ tir ma, kumo be loŋ malɛ
+        e naaŋ chɛ menyi to gba.
+      sbs: 0.7808
+      gen_sec: 10.41
+      ref_sec: 8.4
+      cer: 0.044
+      wer: 0.16
+    bible_00186:
+      source: bible
+      text: Enyɛnpe Ebɔrɛ na ki mbe basa Israɛlebi be ewura.
+      sbs: 0.682
+      gen_sec: 4.1
+      ref_sec: 3.54
+      cer: 0.2308
+      wer: 0.3333
+    bible_00187:
+      source: bible
+      text: 'Mosis daa la anebi nna, amoso pɔɛŋ nɛ e wu na le nɛ e daŋ nɛfa Israɛl be eyiriana na ŋ kaŋɛ:
+        “Enyɛnpe Ebɔrɛ na daŋ shi Sainai be kebeegboŋ na so nna.'
+      sbs: 0.7801
+      gen_sec: 12.63
+      ref_sec: 11.94
+      cer: 0.0177
+      wer: 0.0303
+    bible_00188:
+      source: bible
+      text: Kusɔ nɛ fo kaŋɛ kenishipere so na nɛ baa wora kasonu.
+      sbs: 0.7061
+      gen_sec: 4.52
+      ref_sec: 3.4
+      cer: 0.0
+      wer: 0.0
+    bible_00189:
+      source: bible
+      text: Menyee fɛ fanɛ kusɔ nɛ menyee wora na daga nna, ama meeŋ shin nɛ menyi be asheŋ woraso e lar
+        efuli nɛ menyi be agbirana e chɛ menyi to ŋ gben.
+      sbs: 0.7789
+      gen_sec: 11.86
+      ref_sec: 10.58
+      cer: 0.0364
+      wer: 0.0968
+    bible_00190:
+      source: bible
+      text: nɛ mbombi nɛ a wɔlto e ki bumo.
+      sbs: 0.5968
+      gen_sec: 2.47
+      ref_sec: 3.26
+      cer: 1.0
+      wer: 1.0
+    bible_00191:
+      source: bible
+      text: ” Esa kama maa nyiŋi benyiashempo nɛ bewulpo be asheŋ.
+      sbs: 0.735
+      gen_sec: 4.69
+      ref_sec: 3.54
+      cer: 0.1163
+      wer: 0.2222
+    bible_00192:
+      source: bible
+      text: Amoso, Mosis, bɛta n yɔ n ya nu kusɔ kama nɛ Enyɛnpe, anyi be Ebɔrɛ na kaŋɛ nseŋ ba kaŋɛ anyi.
+      sbs: 0.7857
+      gen_sec: 7.94
+      ref_sec: 7.66
+      cer: 0.0
+      wer: 0.0
+    bible_00193:
+      source: bible
+      text: Nɛ Okran pibinyɛn Pagiɛl nɛ e shi Ashɛr be yiri to na bar mo peya kachɛ kudukakosopo na.
+      sbs: 0.7636
+      gen_sec: 7.34
+      ref_sec: 7.04
+      cer: 0.1
+      wer: 0.2778
+    bible_00194:
+      source: bible
+      text: An daa naa sha kenaŋ bɛta n yɔ menyi kutɔ nna, ama Setani maŋ yige anyi kikɛ.
+      sbs: 0.686
+      gen_sec: 6.49
+      ref_sec: 5.76
+      cer: 0.0508
+      wer: 0.1765
+    bible_00195:
+      source: bible
+      text: Kusɔ kama nɛ k teŋ n wora kabre nɛ kumo nɛ k beeŋ wora echefoso kikɛ teŋ wora nna ŋ ku so.
+      sbs: 0.7662
+      gen_sec: 7.51
+      ref_sec: 7.08
+      cer: 0.0588
+      wer: 0.2273
+    bible_00196:
+      source: bible
+      text: Meeŋ shin nɛ esa nɛ e nyi asheŋ nsaa kɔ enɔ to be kushuŋ be kenyi nɛnɛ nɛ baa tre mo Huram
+        na e ba fo kutɔ.
+      sbs: 0.7503
+      gen_sec: 8.7
+      ref_sec: 7.16
+      cer: 0.0
+      wer: 0.0
+    bible_00197:
+      source: bible
+      text: 'Ndoŋ nna nɛ Enyɛnpe Ebɔrɛ kaŋɛ Joshuwa le: “N ta Jɛriko be efuli so nɛ kumo be bewura nɛ
+        benapo lempoana na kikɛ a bɔɔ fo enɔ.'
+      sbs: 0.7707
+      gen_sec: 10.41
+      ref_sec: 10.24
+      cer: 0.0412
+      wer: 0.0741
+    bible_00198:
+      source: bible
+      text: fo maaŋ shuli nɛ b pɔɔ ma so; fo alɛ beeŋ shin nɛ ma, nɛ n la.
+      sbs: 0.7549
+      gen_sec: 4.95
+      ref_sec: 5.06
+      cer: 0.0465
+      wer: 0.0588
+    bible_00199:
+      source: bible
+      text: Jerusalɛm ki kelambure nna nɛ ekama maŋ naa wɔ kumo to.
+      sbs: 0.698
+      gen_sec: 4.69
+      ref_sec: 4.74
+      cer: 0.0227
+      wer: 0.0909
 - model: k2-fsa/OmniVoice-ref
   model_url: https://huggingface.co/k2-fsa/OmniVoice
   mode: ref
@@ -18601,4 +20291,4 @@ benchmarks:
       ref_sec: 4.74
       cer: 0.2273
       wer: 0.4545
-updated: '2026-10-01'
+updated: '2026-10-09'
