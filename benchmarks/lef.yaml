@@ -6699,6 +6699,1678 @@ benchmarks:
       ref_sec: 5.72
       cer: 0.0
       wer: 0.3333
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7259
+  num_scored: 200
+  cer: 0.0941
+  wer: 0.3313
+  accuracy: 0.9059
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8159
+  score: 0.8159
+  per_source:
+    bible:
+      sbs: 0.7259
+      cer: 0.0941
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Na lɛla lɛni na Unwoti ɔ́su-mi ɔnii nsu nsiku Egyipteƒuɔ bekpone lɛlɔ na bɛdubo bunu mɛni.
+      sbs: 0.7713
+      gen_sec: 8.02
+      ref_sec: 7.2
+      cer: 0.0139
+      wer: 0.0625
+    bible_00001:
+      source: bible
+      text: Na limeyi lɛmmɔ lɛlɔ ni, Yese kugyii ugyiitu ɔdubɔlɛ unye aani ngba bɔƒɔ aƒlaga ute kayawi
+        bekyuli ƒui.
+      sbs: 0.7552
+      gen_sec: 9.13
+      ref_sec: 9.18
+      cer: 0.0238
+      wer: 0.0556
+    bible_00002:
+      source: bible
+      text: Anwuɔsu Hiram ɔ́wɔlɔ Katɔti kakpakɔ kabla kani ƒui na Ɔga Salomo úte-nwu ka ɔbla.
+      sbs: 0.7564
+      gen_sec: 7.51
+      ref_sec: 6.32
+      cer: 0.0154
+      wer: 0.0714
+    bible_00003:
+      source: bible
+      text: Na si bekyuli bénu bina etemila ni, na bakɛ kɔsia.
+      sbs: 0.6701
+      gen_sec: 4.44
+      ref_sec: 3.18
+      cer: 0.0769
+      wer: 0.2
+    bible_00004:
+      source: bible
+      text: Na si bɛ́tunaku lɛlɔ ka binu Babilonƒuɔ ɔga litemi ni, bɛdubɔkɛ bina ngba bilie.
+      sbs: 0.7699
+      gen_sec: 7.17
+      ref_sec: 7.78
+      cer: 0.0625
+      wer: 0.2857
+    bible_00005:
+      source: bible
+      text: Na balakɛne pii badubɔwia ka ayɔ-ma litemi.
+      sbs: 0.7089
+      gen_sec: 4.01
+      ref_sec: 4.64
+      cer: 0.3143
+      wer: 1.0
+    bible_00006:
+      source: bible
+      text: Limeyi lɛdi ni, Samuel ɔ́su Israelƒuɔ ƒui ɔnini, “Si bɛɛyɔ́ ka binwini udu na biti lɛlɔ bite
+        Unwoti bɔdi ni, amu ɔlɛka bidie bɛtina nwaa na bina ɔbladu kemmo.
+      sbs: 0.7411
+      gen_sec: 14.17
+      ref_sec: 12.9
+      cer: 0.0325
+      wer: 0.1379
+    bible_00007:
+      source: bible
+      text: Anwuɔsu ɔ́wia adala adi úte ɔnii besienku-nwu na ɔda, na ɔɔɔdi ammɔ udu kemmo na ɔlɛka ɔkya.
+      sbs: 0.7266
+      gen_sec: 8.36
+      ref_sec: 9.42
+      cer: 0.0694
+      wer: 0.4118
+    bible_00008:
+      source: bible
+      text: ɔsika awɔ ɔsu na bana ebiti eedú taawɔlɔ.
+      sbs: 0.6919
+      gen_sec: 3.67
+      ref_sec: 3.14
+      cer: 0.0303
+      wer: 0.125
+    bible_00009:
+      source: bible
+      text: Na Unwoti ɔ́su Edomƒuɔ ɔnini, “Ndubo-mii bɔbla na bɛsɔ na kadi ƒui akɔ na balabu-mii balakya
+        lɛla lɛdi akɔ.
+      sbs: 0.7493
+      gen_sec: 9.56
+      ref_sec: 8.42
+      cer: 0.012
+      wer: 0.0526
+    bible_00010:
+      source: bible
+      text: “Limeyi lɛdubo lɛni na ami Unwoti ndubɔtɛku kadi ƒui litemi.
+      sbs: 0.6719
+      gen_sec: 5.55
+      ref_sec: 4.86
+      cer: 0.0816
+      wer: 0.4
+    bible_00011:
+      source: bible
+      text: ” Ɔmmɔ ɔsu ni, ɔ́sia ɔnamu ɔmmɔ lɛnyi ɔnii Dan, na nwuna kalɔ ndi ubo bute.
+      sbs: 0.7827
+      gen_sec: 6.4
+      ref_sec: 7.92
+      cer: 0.0182
+      wer: 0.0667
+    bible_00012:
+      source: bible
+      text: Ɔti na ndi nte Eƒraim mina kaƒɔ ubi udeedi ku nwuna badi.
+      sbs: 0.7316
+      gen_sec: 5.12
+      ref_sec: 4.34
+      cer: 0.0889
+      wer: 0.3333
+    bible_00013:
+      source: bible
+      text: Nsu uwi biala kemmo ni, ɔɔsɔ teenwini teesie Rama kesii kani ndi-nwu keliekɔ geen.
+      sbs: 0.7052
+      gen_sec: 7.68
+      ref_sec: 5.7
+      cer: 0.197
+      wer: 0.2857
+    bible_00014:
+      source: bible
+      text: ’ Nsu ni, Yerusalem, uwi ɔmu ɔkya-mii ka bɛkɛ bɔƒɔ.
+      sbs: 0.7786
+      gen_sec: 4.44
+      ref_sec: 4.38
+      cer: 0.0
+      wer: 0.0
+    bible_00015:
+      source: bible
+      text: Nsu ɔɔɔdi Blɔti litemi lɛmɛni lɛti néegyingya lɛ́si-mii kudɔ lísie Makedonia ku Akaia ƒui.
+      sbs: 0.6395
+      gen_sec: 8.02
+      ref_sec: 5.8
+      cer: 0.1081
+      wer: 0.4286
+    bible_00016:
+      source: bible
+      text: Anwuɔsu ami lɛɛɛdubo-ɔ lɛla lɛdi bɔbla.
+      sbs: 0.7157
+      gen_sec: 3.75
+      ref_sec: 3.14
+      cer: 0.25
+      wer: 0.5
+    bible_00017:
+      source: bible
+      text: Kalɔ kamɛni kadubo udu bɔyii, nsu lɛɛɛdubo-ka udu bɔyila ƒui kede kede.
+      sbs: 0.7669
+      gen_sec: 6.49
+      ref_sec: 5.28
+      cer: 0.0877
+      wer: 0.25
+    bible_00018:
+      source: bible
+      text: Bitasu etemila ani muusé lɛlɔ, mmomu bɛsu etemila ani mɔɔkya ukyuli ɔkplu kalɛ na ɔ́manku.
+      sbs: 0.651
+      gen_sec: 8.11
+      ref_sec: 6.22
+      cer: 0.0274
+      wer: 0.1333
+    bible_00019:
+      source: bible
+      text: Mɔɔyá na mina kabla bablane kenye bedie beebo taabatɛmiku-ma taasia kama uwi ndi uwi kalɛ
+        na nkisi bana ablala ani muusé lɛlɔ mmɔ.
+      sbs: 0.77
+      gen_sec: 11.69
+      ref_sec: 12.18
+      cer: 0.0566
+      wer: 0.3043
+    bible_00020:
+      source: bible
+      text: na kadi biala bekyuli akɔ na kɔlɔ kɔmmɔ kemmo!
+      sbs: 0.7421
+      gen_sec: 4.1
+      ref_sec: 3.46
+      cer: 0.1892
+      wer: 0.7778
+    bible_00021:
+      source: bible
+      text: Amu na Unwoti ɔ́su Mose ɔnini, “Die Lewiƒuɔ lɛku Israelƒuɔ bammɔ akɔ na abla-ma lɛlɔ bɔbla
+        sɛɛn ɔdi.
+      sbs: 0.7752
+      gen_sec: 8.87
+      ref_sec: 9.8
+      cer: 0.0513
+      wer: 0.0556
+    bible_00022:
+      source: bible
+      text: Ɔƒɛni Yoseƒ ɔmɛni ni, ɔdi ukyuli ɔni na Unwoti Katɔti uliku-nwu kaduɛ.
+      sbs: 0.7785
+      gen_sec: 6.57
+      ref_sec: 6.48
+      cer: 0.0179
+      wer: 0.0833
+    bible_00023:
+      source: bible
+      text: ka ɔdubɔlɔ-mi nwuna ɔgya na ɔɔɔdi Ati.
+      sbs: 0.7085
+      gen_sec: 3.41
+      ref_sec: 3.08
+      cer: 0.0667
+      wer: 0.1429
+    bible_00024:
+      source: bible
+      text: Bagya, amii lɛnɔ bɛyɔ bina beleku aani kalɛ kani na Kristo ɔ́yɔ baƒɔtaadine lɛkpa lɛmmɔ ɔsu
+        na úti lɛlɔ ɔ́kpa na bana lili.
+      sbs: 0.681
+      gen_sec: 10.67
+      ref_sec: 7.8
+      cer: 0.0412
+      wer: 0.1304
+    bible_00025:
+      source: bible
+      text: Na ƒula bekpone ni, bubuli kani na beebuli teebo bana bakpana lɛlɔ na baasu lɛlɔ banini, ‘Ta
+        nye!
+      sbs: 0.7938
+      gen_sec: 8.53
+      ref_sec: 8.38
+      cer: 0.0789
+      wer: 0.1667
+    bible_00026:
+      source: bible
+      text: Na kadi bekyuli ƒui badubo-mii buteemwi na lite-mii kusɛ kusɛ.
+      sbs: 0.7753
+      gen_sec: 5.72
+      ref_sec: 5.16
+      cer: 0.06
+      wer: 0.3
+    bible_00027:
+      source: bible
+      text: Na limeyi lɛmmɔ kani lɛlɔ ni, Noa ku nwuna bebi Sem ku Ham ku Yaƒet ku ulekudi ku nwuna bebi
+        ɛtɛ bammɔ beleku béduo ɔkɔlɔ bonwu ɔmmɔ kemmo.
+      sbs: 0.7955
+      gen_sec: 12.46
+      ref_sec: 12.22
+      cer: 0.0636
+      wer: 0.1786
+    bible_00028:
+      source: bible
+      text: Áya na bula bati bétélie mmɔ na ala átɛ éte-ma.
+      sbs: 0.6922
+      gen_sec: 4.1
+      ref_sec: 3.62
+      cer: 0.1667
+      wer: 0.6
+    bible_00029:
+      source: bible
+      text: Na limeyi lɛmmɔ ni, badubɔnwini bakya-ma.
+      sbs: 0.7776
+      gen_sec: 4.01
+      ref_sec: 3.16
+      cer: 0.1212
+      wer: 1.0
+    bible_00030:
+      source: bible
+      text: Nsu badi balásu Kristo litemi lɛmmɔ taasiku bana kayi kemmo ƒui, mmomu ama alati bana lɛkɛ
+        ɔsu.
+      sbs: 0.6449
+      gen_sec: 8.53
+      ref_sec: 5.56
+      cer: 0.026
+      wer: 0.1176
+    bible_00031:
+      source: bible
+      text: Na éti-bu éye éte bekyuli bamba ku kuye blii kani.
+      sbs: 0.6969
+      gen_sec: 4.44
+      ref_sec: 3.4
+      cer: 0.1282
+      wer: 0.5
+    bible_00032:
+      source: bible
+      text: “ ‘Na uwi ɔni na údie lɛlɔ lɛti sɛsɛɛ úse úte Unwoti mɛni ni, utalɛka ukpeyi lili.
+      sbs: 0.7799
+      gen_sec: 7.08
+      ref_sec: 9.42
+      cer: 0.0968
+      wer: 0.25
+    bible_00033:
+      source: bible
+      text: Ɔmmɔ ɔsu ni, ɔ́ya na bédi awu gyɔlɔɔ ɔdi ɔni mɔɔdia bɔnu geen béte Yoseƒ.
+      sbs: 0.7489
+      gen_sec: 6.14
+      ref_sec: 5.9
+      cer: 0.0893
+      wer: 0.2667
+    bible_00034:
+      source: bible
+      text: Na Rahel ɔ́su ɔnini, “Unwoti Katɔti úte-mi ubo.
+      sbs: 0.774
+      gen_sec: 4.18
+      ref_sec: 4.26
+      cer: 0.0857
+      wer: 0.375
+    bible_00035:
+      source: bible
+      text: Ɔƒɛ ɔdubo bɔsa ɔni na ukyuli biala ɔsɔ ulakana lɛla lɛdi biala bɔbla.
+      sbs: 0.7155
+      gen_sec: 6.14
+      ref_sec: 4.98
+      cer: 0.0536
+      wer: 0.1538
+    bible_00036:
+      source: bible
+      text: Na bɔɔtɛmiku-mii uwi biala aani kalɛ na Katɔti ɔɔwia ka bɔbla.
+      sbs: 0.6471
+      gen_sec: 5.63
+      ref_sec: 3.84
+      cer: 0.02
+      wer: 0.0909
+    bible_00037:
+      source: bible
+      text: Yeremia, aya na bati ka ndubɔya na ɔgbankpi ɔsi kalɔ kammɔ katɔ kakɛ ubo-ma lɛlɔ.
+      sbs: 0.7588
+      gen_sec: 7.25
+      ref_sec: 7.5
+      cer: 0.0
+      wer: 0.0
+    bible_00038:
+      source: bible
+      text: Ɔkpane Eleasar ɔ́su bekyuli bani nási kekpo bébo mmɔ ɔnini, “Ala ani na Unwoti ɔda bubo bɔni
+        na úte Mose bɔdanku na ɔlɛka bɛbla ndi ɔmɛni.
+      sbs: 0.7564
+      gen_sec: 12.2
+      ref_sec: 12.96
+      cer: 0.0275
+      wer: 0.1538
+    bible_00039:
+      source: bible
+      text: Na nina anumi ebi kalɔ na Bunyimi Adaka ɔmmɔ anumi.
+      sbs: 0.7457
+      gen_sec: 4.52
+      ref_sec: 3.82
+      cer: 0.0732
+      wer: 0.4
+    bible_00040:
+      source: bible
+      text: Na lɛni na ɔ́bla ala kɔsiakɔ leevu kɔmmɔ na kɔ́lɛ lɛlɔ geen na udu biala kemmo.
+      sbs: 0.7624
+      gen_sec: 6.74
+      ref_sec: 9.32
+      cer: 0.0492
+      wer: 0.1875
+    bible_00041:
+      source: bible
+      text: Na lɛ́ƒɔ mina anumi.
+      sbs: 0.6156
+      gen_sec: 1.71
+      ref_sec: 7.3
+      cer: 0.6667
+      wer: 1.5
+    bible_00042:
+      source: bible
+      text: Ɔsika anya na Unwoti Katɔti údie úte kayawi bekyuli ƒui.
+      sbs: 0.7371
+      gen_sec: 5.21
+      ref_sec: 4.14
+      cer: 0.087
+      wer: 0.8
+    bible_00043:
+      source: bible
+      text: Na ina dɛ na ɔlɛ ɔmɛni úsusu-mi ɔlɔna ɔku úbile ni, ɔlɔna ɔmɛni kemmo kani na ndubo Katɔti
+        bɔnu anumi ku anumi.
+      sbs: 0.726
+      gen_sec: 9.73
+      ref_sec: 11.2
+      cer: 0.046
+      wer: 0.1818
+    bible_00044:
+      source: bible
+      text: “Na ɔƒaani ni, bi ɔsu na binye kpakplaa bɛnii bɛsɔ biiti lɛlɔ bitákya ɔgbankpi ɔbambadi kemmo?
+      sbs: 0.7618
+      gen_sec: 8.45
+      ref_sec: 7.5
+      cer: 0.0395
+      wer: 0.1875
+    bible_00045:
+      source: bible
+      text: Unwoti uudie nwuna bekyuli bamɛni kɔlɛ kɔlɛ.
+      sbs: 0.6764
+      gen_sec: 4.35
+      ref_sec: 3.24
+      cer: 0.3243
+      wer: 0.8571
+    bible_00046:
+      source: bible
+      text: Ka ɔ́wɔlɔ ni, Isak ɔ́sɔ úye Yakob ɔnini, “Sɔsɔ na mina ubi unengudi Esau na adi?
+      sbs: 0.7592
+      gen_sec: 6.74
+      ref_sec: 7.62
+      cer: 0.0678
+      wer: 0.1875
+    bible_00047:
+      source: bible
+      text: Mmɔ na Yuda útánu Kanaanni ɔnana ɔdi baalɔ banii Sua ubidi ulekubi.
+      sbs: 0.7268
+      gen_sec: 6.06
+      ref_sec: 5.98
+      cer: 0.1091
+      wer: 0.25
+    bible_00048:
+      source: bible
+      text: Anwuɔsu mbo lɛnunsia ka ndubɔtala-nwu lɛkya-mii kɔnakunwi si lɛ́nu kalɛ na ala aavínku-mi.
+      sbs: 0.6715
+      gen_sec: 8.7
+      ref_sec: 6.54
+      cer: 0.0548
+      wer: 0.1538
+    bible_00049:
+      source: bible
+      text: edula ku egyiibi ammɔ ƒui ɔsɔ ulanu-nya uléde.
+      sbs: 0.6688
+      gen_sec: 4.1
+      ref_sec: 5.1
+      cer: 0.1351
+      wer: 0.875
+    bible_00050:
+      source: bible
+      text: Aaron bebi anyi ndi Nadab ɔni ndi Aaron ubidi udeedi ku Abihu ku Eleasar ku Itamar.
+      sbs: 0.7591
+      gen_sec: 7.34
+      ref_sec: 9.9
+      cer: 0.1493
+      wer: 0.25
+    bible_00051:
+      source: bible
+      text: Na úte-mii kuƒi ka bimwi Kristo, na ɔɔɔdi ka bɛƒɔ-nwu bɛdi ɔsu kani na ɔ́sa.
+      sbs: 0.6601
+      gen_sec: 6.74
+      ref_sec: 6.68
+      cer: 0.1228
+      wer: 0.2
+    bible_00052:
+      source: bible
+      text: Ɔkɛnku bɔƒɔtaadi lɛlɔ ɔsu na Mose úni ɔnii batalɔ-nwu banii Ɔga Ƒarao ulekubi ubidi uwi ɔni
+        na ɔ́lɛ lili.
+      sbs: 0.6848
+      gen_sec: 9.47
+      ref_sec: 8.28
+      cer: 0.0476
+      wer: 0.1579
+    bible_00053:
+      source: bible
+      text: Unwoti ɔdubo bina edula ani bɛ́va ku adila ani bɛ́nwa bise buwida.
+      sbs: 0.7584
+      gen_sec: 5.97
+      ref_sec: 5.28
+      cer: 0.0
+      wer: 0.0
+    bible_00054:
+      source: bible
+      text: Bla ɔmɛni kalɛ na kubiti kɔda-mi na mina kayi kemmo.
+      sbs: 0.6577
+      gen_sec: 4.61
+      ref_sec: 3.54
+      cer: 0.0488
+      wer: 0.2
+    bible_00055:
+      source: bible
+      text: “Egyipte, kuvo kɔdi kɔɔɔdubo-ɔ bɔkana bɔbwi, na Gilead nnɔmii bɔni mɔɔyala ɔlɔna buɛɛ mmɔ
+        muedi bɔɔɔdubo-ɔ kebunku kadi bute.
+      sbs: 0.7638
+      gen_sec: 11.43
+      ref_sec: 11.6
+      cer: 0.1287
+      wer: 0.3158
+    bible_00056:
+      source: bible
+      text: Na ɔ́su ɔnini, “Katɔti úte-mi ubi ɔbambadi na Abel ɔni na Kain ɔ́du kenye.
+      sbs: 0.7193
+      gen_sec: 6.31
+      ref_sec: 8.24
+      cer: 0.0
+      wer: 0.0
+    bible_00057:
+      source: bible
+      text: Ɔmmɔ ɔsu Yoseƒ ɔ́kpanku bebi bammɔ na báni béde ɔti na ɔ́kya-ma kɔgbu.
+      sbs: 0.6919
+      gen_sec: 6.06
+      ref_sec: 5.12
+      cer: 0.0926
+      wer: 0.3077
+    bible_00058:
+      source: bible
+      text: na badia bɔnu aani uleku ɔni na báwɛɛ-nwu.
+      sbs: 0.7139
+      gen_sec: 3.84
+      ref_sec: 3.8
+      cer: 0.0909
+      wer: 0.25
+    bible_00059:
+      source: bible
+      text: Na bílieku ebuo atuɔkplune aani akwa.
+      sbs: 0.7092
+      gen_sec: 3.41
+      ref_sec: 5.14
+      cer: 0.129
+      wer: 0.5
+    bible_00060:
+      source: bible
+      text: Ala ani ƒui na bubo ni, abu alati néti bula ɔyikun kemmo bɔ́kɛ-nya.
+      sbs: 0.6824
+      gen_sec: 5.8
+      ref_sec: 4.04
+      cer: 0.1373
+      wer: 0.3077
+    bible_00061:
+      source: bible
+      text: Beelie taadi ngba ku ebiti kalɛ na baayɔ́ asa na bekpi besie kekpine ku keyi buɛɛ.
+      sbs: 0.678
+      gen_sec: 7.17
+      ref_sec: 5.68
+      cer: 0.0923
+      wer: 0.375
+    bible_00062:
+      source: bible
+      text: Na baakali ka baya na mina lɛbibo litaakɔ katɔ teebu ɔni na ntɛ aban ɔtɔ mɛni.
+      sbs: 0.7034
+      gen_sec: 6.83
+      ref_sec: 6.02
+      cer: 0.0161
+      wer: 0.0625
+    bible_00063:
+      source: bible
+      text: Ɔɔɔdi bɔsu na Bunweni Kedee Ɔku ɔ́su ka Ukyuli Ɔƒunadi ɔmmɔ wasi Ɔga Dawid kaba kemmo na Betlehem
+        ɔma kesii kani na Dawid ɔ́si yoo?
+      sbs: 0.6832
+      gen_sec: 11.52
+      ref_sec: 9.74
+      cer: 0.0192
+      wer: 0.08
+    bible_00064:
+      source: bible
+      text: Na uwi ɔmmɔ kemmo ni, Yoseƒ banwani bákpanku bana ɔti bebuo bésienku kadikɔ na alakpi akɔ
+        na Sekem kudɔ.
+      sbs: 0.7615
+      gen_sec: 9.47
+      ref_sec: 8.0
+      cer: 0.0595
+      wer: 0.2105
+    bible_00065:
+      source: bible
+      text: Ƒarisiƒuɔ Béye Ɔnumbwɛne Ɔmmɔ Kalɛ Na Béti Bábwi-nwu.
+      sbs: 0.6435
+      gen_sec: 5.12
+      ref_sec: 4.02
+      cer: 0.1136
+      wer: 0.5
+    bible_00066:
+      source: bible
+      text: na ukyuli biala ɔni nánu-ma ɔnu ɔti.
+      sbs: 0.689
+      gen_sec: 3.24
+      ref_sec: 3.1
+      cer: 0.1071
+      wer: 0.4286
+    bible_00067:
+      source: bible
+      text: Na ka ɔ́ɔbi ɔsu ni, nwuna anumi asɔ alanu kaduɛ.
+      sbs: 0.7516
+      gen_sec: 4.18
+      ref_sec: 4.12
+      cer: 0.0278
+      wer: 0.2
+    bible_00068:
+      source: bible
+      text: Na muusé kenye ku mina kayi ƒui ka ndubo bɔya na basɔ benwini bebelie kalɔ kamɛni lɛlɔ kpi.
+      sbs: 0.7357
+      gen_sec: 8.11
+      ref_sec: 7.26
+      cer: 0.0411
+      wer: 0.1667
+    bible_00069:
+      source: bible
+      text: “Kadi kamani bekyuli nákɔ badubo mɛni lɛni aani kalɛ na Nil Ketu keeyi taavia nwuna utubili?
+      sbs: 0.7482
+      gen_sec: 8.36
+      ref_sec: 7.7
+      cer: 0.08
+      wer: 0.3125
+    bible_00070:
+      source: bible
+      text: “Amii bekyuli bani nkya Moab ɔma unengudi ɔni baalɔ Dibon, bekyuli basɔ baaadubo-mii bɔbu.
+      sbs: 0.8004
+      gen_sec: 8.28
+      ref_sec: 6.46
+      cer: 0.0411
+      wer: 0.2857
+    bible_00071:
+      source: bible
+      text: na lɛya nwuna bekyuli kedee bebo kudu ku lɛlɔyɔ.
+      sbs: 0.675
+      gen_sec: 4.44
+      ref_sec: 3.12
+      cer: 0.0513
+      wer: 0.2222
+    bible_00072:
+      source: bible
+      text: Na mina kayi kese buɛɛ na mɔɔsia ala ammɔ anu.
+      sbs: 0.7057
+      gen_sec: 4.01
+      ref_sec: 3.6
+      cer: 0.1944
+      wer: 0.5
+    bible_00073:
+      source: bible
+      text: Hiob ɔ́su Soƒar ɔnini, “Si kɔnu na anii aasia-mi bɔdi ni, amu se atu na enu lɛla lɛni na mɔɔsu-ɔ
+        awɔlɔ.
+      sbs: 0.7123
+      gen_sec: 8.79
+      ref_sec: 9.3
+      cer: 0.0526
+      wer: 0.1905
+    bible_00074:
+      source: bible
+      text: Na ɔ́su ɔnini, “Katɔti úbunku-mi na lɛ́wɔ ɔnanabi.
+      sbs: 0.764
+      gen_sec: 4.35
+      ref_sec: 4.32
+      cer: 0.0811
+      wer: 0.625
+    bible_00075:
+      source: bible
+      text: Na binye bɛgya Ubidi Yesu ɔni na ɔ́gyila ɔ́lɛku bekpine akɔ, na úbo uli ngba ku Katɔti, na
+        ɔsɔ ɔdubɔsi Katɔ Ɔga Ɔma mmɔ ubo.
+      sbs: 0.6629
+      gen_sec: 10.41
+      ref_sec: 9.36
+      cer: 0.0947
+      wer: 0.16
+    bible_00076:
+      source: bible
+      text: “Yeremia, lɛla lɛni na ásu mɛni ndi litemi geen.
+      sbs: 0.7083
+      gen_sec: 4.18
+      ref_sec: 4.6
+      cer: 0.1622
+      wer: 0.7778
+    bible_00077:
+      source: bible
+      text: béti bésela Soa ku Eglat-Selesia lɛma kakaaka ƒui.
+      sbs: 0.742
+      gen_sec: 4.61
+      ref_sec: 4.38
+      cer: 0.1707
+      wer: 0.5
+    bible_00078:
+      source: bible
+      text: Na bi na bɔdubo bɔkɛ na butaakya lili kalɔ taakpali-nwu?
+      sbs: 0.7605
+      gen_sec: 5.21
+      ref_sec: 3.5
+      cer: 0.0
+      wer: 0.2
+    bible_00079:
+      source: bible
+      text: ɔni mɔɔƒɔ́-mii ngba na ɔɔyá na bɛɛkɛ́ bɔnwuna.
+      sbs: 0.7509
+      gen_sec: 4.1
+      ref_sec: 6.34
+      cer: 0.2571
+      wer: 0.875
+    bible_00080:
+      source: bible
+      text: Na Katɔti uládu-nwu kɔtɔ na nwuna ekpidi ɔsu.
+      sbs: 0.7041
+      gen_sec: 4.35
+      ref_sec: 3.76
+      cer: 0.0833
+      wer: 0.25
+    bible_00081:
+      source: bible
+      text: Na ka únu ka Saul úbo ɔkya ɔɔwia-nwu ni, ɔ́tala batu badi ɔnii batásia anu banu kaduɛ si Saul
+        úbo ɔkya mmɔ sɔsɔ.
+      sbs: 0.7511
+      gen_sec: 9.73
+      ref_sec: 10.96
+      cer: 0.0581
+      wer: 0.3043
+    bible_00082:
+      source: bible
+      text: Na uleku unyɔdi na baalɔ Oholibama.
+      sbs: 0.718
+      gen_sec: 3.24
+      ref_sec: 3.84
+      cer: 0.1724
+      wer: 0.8333
+    bible_00083:
+      source: bible
+      text: Amu na ɔnantu ɔmmɔ ɔ́na ɔ́siaku lɛlɔ emeyi aavlene na ka ntu bɔmmɔ buumomo ɔsu ni, ɔkɔlɔ ɔmmɔ
+        ɔ́ta ɔ́sia ntu bɔmmɔ anumi.
+      sbs: 0.7792
+      gen_sec: 10.33
+      ref_sec: 10.3
+      cer: 0.0215
+      wer: 0.087
+    bible_00084:
+      source: bible
+      text: “Bekyuli bénu kɔku kɔdi na Rama ka beewulo momoomo.
+      sbs: 0.7491
+      gen_sec: 4.52
+      ref_sec: 3.8
+      cer: 0.2439
+      wer: 0.5556
+    bible_00085:
+      source: bible
+      text: Nsu si uwi ɔmmɔ úbedu ni, ndubo anu bɔsia na lɛlɛ-ma aani kugyii na balɛ lili.
+      sbs: 0.7458
+      gen_sec: 6.74
+      ref_sec: 7.8
+      cer: 0.05
+      wer: 0.5
+    bible_00086:
+      source: bible
+      text: Anwuɔsu ndubo bɔya na bekpone basi ɔgyu kakaaka babaka bamana Yerusalem ku Yuda lɛma lɛmmɔ.
+      sbs: 0.7419
+      gen_sec: 8.36
+      ref_sec: 8.06
+      cer: 0.0263
+      wer: 0.1333
+    bible_00087:
+      source: bible
+      text: Na ɔmɛni ɔsu ni, lɛla biala muusié taavi kalɔ lɛlɔ lɛ́yii udu.
+      sbs: 0.7618
+      gen_sec: 5.38
+      ref_sec: 4.98
+      cer: 0.0208
+      wer: 0.0833
+    bible_00088:
+      source: bible
+      text: Amu ka Eli únu kɔvanu kɔmmɔ ni, úye ɔnini, “Na kɔvanu kɔmɛni kalɔ ndi bi?
+      sbs: 0.7696
+      gen_sec: 6.31
+      ref_sec: 6.62
+      cer: 0.0909
+      wer: 0.4
+    bible_00089:
+      source: bible
+      text: Mmɔ na Yerusalem aani uleku ɔmmɔ kalɛ ɔdubuye ɔnini.
+      sbs: 0.7177
+      gen_sec: 4.78
+      ref_sec: 5.14
+      cer: 0.0233
+      wer: 0.1111
+    bible_00090:
+      source: bible
+      text: Mmɔ ni, Mose ɔ́kɛ kɔnyi ɔ́kya bekpone batɔnkune bani ntɔnku bekpone esu enengudi ku ebliidi
+        ammɔ ƒui bani nási kekpo bébo mmɔ.
+      sbs: 0.7589
+      gen_sec: 11.18
+      ref_sec: 10.58
+      cer: 0.0198
+      wer: 0.0909
+    bible_00091:
+      source: bible
+      text: ku balakɛne ku bawabane bina ƒui na nda.
+      sbs: 0.6852
+      gen_sec: 3.58
+      ref_sec: 3.02
+      cer: 0.2188
+      wer: 0.75
+    bible_00092:
+      source: bible
+      text: Na bana bɔdia bɔyii udu na kaƒiɔtɔ kemmo.
+      sbs: 0.6951
+      gen_sec: 3.67
+      ref_sec: 3.28
+      cer: 0.2727
+      wer: 0.5
+    bible_00093:
+      source: bible
+      text: Mmɔ ni, Unwoti ɔ́su Samuel ɔnini, “Nu!
+      sbs: 0.7484
+      gen_sec: 3.33
+      ref_sec: 3.42
+      cer: 0.0741
+      wer: 0.2857
+    bible_00094:
+      source: bible
+      text: na báni bana kɔtaminta benye bete kekpo.
+      sbs: 0.714
+      gen_sec: 3.67
+      ref_sec: 3.66
+      cer: 0.303
+      wer: 1.1429
+    bible_00095:
+      source: bible
+      text: Na Mose úti enugya etela ani ndi Unwoti kakɛ úte ɔkpane Eleasar aani kalɛ na Unwoti úbo-nwu
+        ɔda.
+      sbs: 0.7659
+      gen_sec: 8.79
+      ref_sec: 7.96
+      cer: 0.0649
+      wer: 0.2222
+    bible_00096:
+      source: bible
+      text: Na lɛlɔ lɛdubɔyɔ ukyuli ɔni mada ƒula bebi lɛgba.
+      sbs: 0.6807
+      gen_sec: 4.44
+      ref_sec: 3.14
+      cer: 0.0
+      wer: 0.0
+    bible_00097:
+      source: bible
+      text: Bebi beeebo kuƒi ka beye bana bawɔne banini.
+      sbs: 0.7762
+      gen_sec: 4.01
+      ref_sec: 3.14
+      cer: 0.25
+      wer: 0.75
+    bible_00098:
+      source: bible
+      text: Nnɔ egyii adubɔkwɛ bina kalɔ kesi kesii, nsu bɛɛɛdubo nnɔ biala bɔkɛ bɔsiku-ni kemmo.
+      sbs: 0.7588
+      gen_sec: 7.68
+      ref_sec: 6.84
+      cer: 0.058
+      wer: 0.2857
+    bible_00099:
+      source: bible
+      text: Anwuɔsu ni, mina bakpana bayɔne, aani kalɛ na bɛɛdi mina litemi lɛlɔ si nkya-mii kudɔ ni,
+        lɛni kani na ɔdi ka bɛdi-nya lɛlɔ bitulo si uwi ɔni na liiibo-mii kudɔ lɛnɔ.
+      sbs: 0.7423
+      gen_sec: 14.85
+      ref_sec: 10.64
+      cer: 0.0155
+      wer: 0.129
+    bible_00100:
+      source: bible
+      text: Na beeƒie ama alati bebi bananabi ku belekubi muedi.
+      sbs: 0.7127
+      gen_sec: 4.78
+      ref_sec: 3.12
+      cer: 0.186
+      wer: 0.4444
+    bible_00101:
+      source: bible
+      text: Na ɔ́ya na bénweni lɛku lɛmmɔ na kɔlɛkɛ kɔmmɔ ƒui adi butemi ku bunweni kemmo.
+      sbs: 0.7459
+      gen_sec: 7.08
+      ref_sec: 5.98
+      cer: 0.1452
+      wer: 0.4667
+    bible_00102:
+      source: bible
+      text: Na si báni-mu békpi báwɔlɔ lɛni ni, na bana lɛyalɛ ku lɛsɔnɔdi ala lɛɛkɔ́-ma katɔ.
+      sbs: 0.764
+      gen_sec: 7.25
+      ref_sec: 8.18
+      cer: 0.0952
+      wer: 0.2667
+    bible_00103:
+      source: bible
+      text: Hiob údie kenye ɔnini, “Bi ɔsu na biikpóku-mi na bɛɛkya-mi ɔlɛ lɛlɔ ku bina atɛ lɛni?
+      sbs: 0.7233
+      gen_sec: 7.51
+      ref_sec: 6.4
+      cer: 0.0308
+      wer: 0.125
+    bible_00104:
+      source: bible
+      text: Na ukyuli bamba biala ɔni makpɛ mede kevo kammɔ ni, ɔlɛka badu-nwu.
+      sbs: 0.7778
+      gen_sec: 6.14
+      ref_sec: 5.44
+      cer: 0.0
+      wer: 0.0
+    bible_00105:
+      source: bible
+      text: Ukyuli ɔni muuyú ni, ɔda buyu ɔya na uti nwuna enu ɔbla kabla kabuni na ɔkɛ ala na anwu lɛnɔ
+        ubunku bawabane.
+      sbs: 0.6985
+      gen_sec: 9.73
+      ref_sec: 8.52
+      cer: 0.0233
+      wer: 0.0909
+    bible_00106:
+      source: bible
+      text: Ɔƒɛni Israelƒuɔ lɛma lɛni na Ƒilistiƒuɔ báƒɔ ɔ́si Ekron útédu Gat ni, Israelƒuɔ básɔ báƒɔ-ni.
+      sbs: 0.7286
+      gen_sec: 8.45
+      ref_sec: 10.36
+      cer: 0.1333
+      wer: 0.4667
+    bible_00107:
+      source: bible
+      text: Anwuɔsu na mɔɔwia geen ka lidie-nwu ulu kalɛ na si bɛ́nu-nwu ni, na kubiti kɔsɔ kɔda-mii.
+      sbs: 0.6381
+      gen_sec: 8.28
+      ref_sec: 5.1
+      cer: 0.0147
+      wer: 0.0625
+    bible_00108:
+      source: bible
+      text: Bunye na bénye-mi lɛlɔ bákpanku-mi básiku bula Hebri kadi kalɔ lɛlɔ béboku mɛni.
+      sbs: 0.79
+      gen_sec: 7.34
+      ref_sec: 6.44
+      cer: 0.1231
+      wer: 0.3846
+    bible_00109:
+      source: bible
+      text: Na ɔ́yila kadi bamba bekyuli pii bani náƒɔ kuye.
+      sbs: 0.667
+      gen_sec: 4.18
+      ref_sec: 3.12
+      cer: 0.0263
+      wer: 0.1111
+    bible_00110:
+      source: bible
+      text: Ɔsika mmɔ na Unwoti ɔ́su úse ka wete kusɛ kusɛ ɔmmɔ.
+      sbs: 0.6763
+      gen_sec: 4.52
+      ref_sec: 3.7
+      cer: 0.2
+      wer: 0.7273
+    bible_00111:
+      source: bible
+      text: Uwi ɔni na ɔmu ɔdi Nasareni mɛni ni, utalɛka uti lɛla lɛni nási egyiibi kemmo aani ntɛ utuku
+        kenye, ina nwuna ebi iye egyiibi lɛna lɛmmɔ muedi.
+      sbs: 0.7707
+      gen_sec: 12.63
+      ref_sec: 14.58
+      cer: 0.0526
+      wer: 0.2222
+    bible_00112:
+      source: bible
+      text: Na badi béteenyimi baƒonu ku bese lɛku taavi, ɔsika beeebo lɛla lɛdi.
+      sbs: 0.6475
+      gen_sec: 6.31
+      ref_sec: 4.84
+      cer: 0.0714
+      wer: 0.4167
+    bible_00113:
+      source: bible
+      text: Nsu Timoteo anwu ni, amii alati bɛgyi kalɛ na nwuna udu buni ɔmmɔ use.
+      sbs: 0.6631
+      gen_sec: 6.31
+      ref_sec: 5.22
+      cer: 0.0545
+      wer: 0.0714
+    bible_00114:
+      source: bible
+      text: Nwuna lɛlɔ budie buse lɛti bɔmɛni bɔɔtina ka ɔ́bla lɛlɔ sɛsɛɛ kedee úte Unwoti.
+      sbs: 0.7495
+      gen_sec: 7.25
+      ref_sec: 6.86
+      cer: 0.1719
+      wer: 0.4286
+    bible_00115:
+      source: bible
+      text: Nwuna bebi ala bɔbla émo bekyuli bammɔ ƒui, nsu útakana na ɔ́bala-ma ɔsiku ɔbladu buɛ ɔmmɔ
+        kudɔ.
+      sbs: 0.7383
+      gen_sec: 8.7
+      ref_sec: 8.84
+      cer: 0.0921
+      wer: 0.2941
+    bible_00116:
+      source: bible
+      text: Na basɔ baaadubo Yerusalem bɔbwɛ lɛnɔ kudii.
+      sbs: 0.741
+      gen_sec: 4.1
+      ref_sec: 5.82
+      cer: 0.027
+      wer: 0.1429
+    bible_00117:
+      source: bible
+      text: Mmɔ na Satan údie kenye ɔnini, “Bɔkɛ kani na nkɛ mɔɔví kalɔ kammɔ lɛlɔ.
+      sbs: 0.6751
+      gen_sec: 6.14
+      ref_sec: 4.32
+      cer: 0.0909
+      wer: 0.2143
+    bible_00118:
+      source: bible
+      text: Na Gerson badi ndi Libni ku Simel adua.
+      sbs: 0.6972
+      gen_sec: 3.41
+      ref_sec: 4.18
+      cer: 0.2258
+      wer: 0.625
+    bible_00119:
+      source: bible
+      text: Amii batuɔkplune bɛ́ta bínye-mi lɛlɔ na bínwini kama bɛ́kya-mi.
+      sbs: 0.7641
+      gen_sec: 5.8
+      ref_sec: 4.72
+      cer: 0.18
+      wer: 1.1111
+    bible_00120:
+      source: bible
+      text: Anwuɔsu ni, ami ƒula Katɔti lɛ́ƒuna awɔ, Ati.
+      sbs: 0.7475
+      gen_sec: 4.1
+      ref_sec: 3.44
+      cer: 0.0294
+      wer: 0.125
+    bible_00121:
+      source: bible
+      text: Banwa, mɔɔyɔ́ ka lɛ́su-mii ka ala ani nálɛku-mi ni, ébunku na litemi buni lɛmmɔ lísie anumi
+        líbu.
+      sbs: 0.6439
+      gen_sec: 8.7
+      ref_sec: 6.22
+      cer: 0.1351
+      wer: 0.3529
+    bible_00122:
+      source: bible
+      text: Ɔsika bawabane na bánya bákya bákɛ lɛkɛ lɛmmɔ, na béƒie lɛtɔ lɛni na ɔɔɔdi ama nátu-ni báƒɔ
+        bekyuli bammɔ kudɔ.
+      sbs: 0.7245
+      gen_sec: 9.98
+      ref_sec: 9.76
+      cer: 0.0562
+      wer: 0.2
+    bible_00123:
+      source: bible
+      text: Na ɔkɛnku ɔmmɔ lɛlɔ ni, Katɔti ɔtu ɔni nébo úbadu ubi ɔnanabi udeedi biala na Egyipte mmɔ
+        ni, útetuku Israel bebi ama.
+      sbs: 0.6425
+      gen_sec: 10.41
+      ref_sec: 9.42
+      cer: 0.0745
+      wer: 0.2273
+    bible_00124:
+      source: bible
+      text: Na Katɔti ɔdubɔya na ogya ɔdi ɔsi ubakyula-ma na bana nvo kemmo ku bana akɛla ƒui.
+      sbs: 0.7271
+      gen_sec: 7.17
+      ref_sec: 6.26
+      cer: 0.0923
+      wer: 0.25
+    bible_00125:
+      source: bible
+      text: Ɔsika liƒu bonwu líƒie-ma na Yoseƒ anumi mmɔ.
+      sbs: 0.717
+      gen_sec: 4.18
+      ref_sec: 9.58
+      cer: 0.0833
+      wer: 0.25
+    bible_00126:
+      source: bible
+      text: Amu na ɔ́nwamana lɛbuala lɛdi ɔ́bla ntu kewikɔ bonwu kunu kunu lɛdi.
+      sbs: 0.7368
+      gen_sec: 6.14
+      ref_sec: 5.74
+      cer: 0.0185
+      wer: 0.25
+    bible_00127:
+      source: bible
+      text: Amii ku bekyuli bani na bana ablala akya lɛdisa kemmo ni, bitasala lɛlɔ bitabla bana ɔbladu
+        ukpidi ɔdi.
+      sbs: 0.6365
+      gen_sec: 9.3
+      ref_sec: 6.66
+      cer: 0.0476
+      wer: 0.2222
+    bible_00128:
+      source: bible
+      text: béti-nya na bávia utukwalɛ.
+      sbs: 0.7589
+      gen_sec: 2.56
+      ref_sec: 3.12
+      cer: 0.0909
+      wer: 1.0
+    bible_00129:
+      source: bible
+      text: Badi baasu banii, “Ukyuli ɔbuni na ɔdi.
+      sbs: 0.6584
+      gen_sec: 3.41
+      ref_sec: 13.66
+      cer: 0.0
+      wer: 0.0
+    bible_00130:
+      source: bible
+      text: Uwi uuubo ka lɛtɛmi lɛsiku Gideon ku Barak ku Simson ku Yeƒta ku Dawid ku Samuel ku Katɔti
+        kenye bediene lɛlɔ.
+      sbs: 0.6528
+      gen_sec: 9.73
+      ref_sec: 10.84
+      cer: 0.1685
+      wer: 0.4762
+    bible_00131:
+      source: bible
+      text: Na kakpakɔ mmɔ ni, Salomo ku Israelƒuɔ ƒui bádi edula edeedi bɔƒɛ limeyi, na bádi-ni emeyi
+        leevu-ene.
+      sbs: 0.7542
+      gen_sec: 9.22
+      ref_sec: 12.86
+      cer: 0.025
+      wer: 0.1176
+    bible_00132:
+      source: bible
+      text: Balakɛne ku bawabane, na kenye bediene ku bakpane ƒui basɔ baaadi bekyuli bani lɛlɔ na beti
+        anumi basia.
+      sbs: 0.7821
+      gen_sec: 9.47
+      ref_sec: 9.1
+      cer: 0.0118
+      wer: 0.0556
+    bible_00133:
+      source: bible
+      text: Na Esau ubidi bamba ɔni ndi Reuel bebi bananabi bani nádi lɛga ndi Nahas ku Sera ku Sama ku
+        Misa.
+      sbs: 0.7376
+      gen_sec: 8.45
+      ref_sec: 10.2
+      cer: 0.0909
+      wer: 0.25
+    bible_00134:
+      source: bible
+      text: Na bɛyila baƒiɔ bani na bɛ́vɔ bíte lɛlɔ udu.
+      sbs: 0.746
+      gen_sec: 3.75
+      ref_sec: 3.64
+      cer: 0.0294
+      wer: 0.1111
+    bible_00135:
+      source: bible
+      text: Békpo Ɔga Og ɔni ndi Amoriƒuɔ ɔga unyɔdi ɔni mɔɔdi lɛga na Basan kalɔ lɛlɔ na báƒɔ anwu kadi
+        lɛnɔ.
+      sbs: 0.7648
+      gen_sec: 8.7
+      ref_sec: 8.9
+      cer: 0.0897
+      wer: 0.25
+    bible_00136:
+      source: bible
+      text: ” Na ina ka uleku ɔmɛni ɔɔsu Yoseƒ lɛlɔ kudɔ bɔtɛ litemi lɛmɛni limeyi ndi limeyi ni, Yoseƒ
+        útenuku-nwu kalɔ iye ɔni ude-nwu muedi.
+      sbs: 0.785
+      gen_sec: 11.86
+      ref_sec: 13.6
+      cer: 0.0291
+      wer: 0.1304
+    bible_00137:
+      source: bible
+      text: Nsu bekpone bakladi ɔdi biala ɔ́kɛ lɛla lɛdi úte lɛlɔ na kekpokɔ mmɔ.
+      sbs: 0.7224
+      gen_sec: 6.06
+      ref_sec: 6.66
+      cer: 0.0727
+      wer: 0.1538
+    bible_00138:
+      source: bible
+      text: Na si ébo ni, na anwa adila abuni ani na mɔɔyɔ́ teetulo ƒui eboku-mi na lɛdi kalɛ na liti
+        mina kusɛ kusɛ lite-ɔ asa na likpi.
+      sbs: 0.7591
+      gen_sec: 10.84
+      ref_sec: 11.06
+      cer: 0.0526
+      wer: 0.3077
+    bible_00139:
+      source: bible
+      text: Na ɔ́vwi uƒiomu ɔ́kpali bani na kayawi kawɔlɔkɔ ƒui.
+      sbs: 0.71
+      gen_sec: 4.52
+      ref_sec: 5.2
+      cer: 0.1463
+      wer: 0.6667
+    bible_00140:
+      source: bible
+      text: Na báya na Yuda lɛnɔ únwini alaekpidi ɔblane, ɔsika bátu ekpo ekpo bálɛ Ben-Hinom Kɔwɛ kemmo
+        ka bataakpa Baal baƒiɔ.
+      sbs: 0.7706
+      gen_sec: 10.67
+      ref_sec: 10.16
+      cer: 0.0745
+      wer: 0.4
+    bible_00141:
+      source: bible
+      text: Na ɔmmɔ ɔ́ya na Ƒilistiƒuɔ báyia bávili bébu ɔni na use aani lɛla lɛdi nágyu-ma ku lɛgba ɔ́bɔku-ma
+        údie Israelƒuɔ anumi mmɔ.
+      sbs: 0.7668
+      gen_sec: 10.84
+      ref_sec: 12.44
+      cer: 0.0918
+      wer: 0.2727
+    bible_00142:
+      source: bible
+      text: Lɛgba lɛmmɔ ɔdi biala bɔbɛbɛ bɔdi lɛgba bɔka inyɔ ku kakɛ ɔ́si ɔvi unwi úsie ɔvi unyɔdi.
+      sbs: 0.7483
+      gen_sec: 7.77
+      ref_sec: 9.04
+      cer: 0.1143
+      wer: 0.5294
+    bible_00143:
+      source: bible
+      text: na bɛ́bɛbɛ bina kɔlɔ kuyedi bísela anumi ƒui.
+      sbs: 0.7357
+      gen_sec: 4.01
+      ref_sec: 3.56
+      cer: 0.1667
+      wer: 0.75
+    bible_00144:
+      source: bible
+      text: Na ebiti lɛnu lɛni na beedie lɛ́kunku Katɔti kakpakɔ kammɔ útéduoku kalɔ kemmo ƒui na uyɔ
+        ɔ́ƒɔ Katɔti kakpakɔ kammɔ ƒui.
+      sbs: 0.7619
+      gen_sec: 10.67
+      ref_sec: 10.98
+      cer: 0.0928
+      wer: 0.2857
+    bible_00145:
+      source: bible
+      text: Ami ndaku kekpo kammɔ bɔnu kalɛ na kaaví na báadi-mii lɛlɔ kuuku na bíkeli bɛɛtɔlɔ na kama
+        bunwini bɔnu buuubo ina kunwi.
+      sbs: 0.7699
+      gen_sec: 11.09
+      ref_sec: 11.22
+      cer: 0.1224
+      wer: 0.3636
+    bible_00146:
+      source: bible
+      text: Si muunyimo ala adi bene ni, kayi kaakpulu-mi geen.
+      sbs: 0.7209
+      gen_sec: 4.61
+      ref_sec: 3.28
+      cer: 0.2
+      wer: 0.7778
+    bible_00147:
+      source: bible
+      text: Na bátábla kakyakɔ na kesii kani baalɔ Eben-Eser.
+      sbs: 0.7637
+      gen_sec: 4.52
+      ref_sec: 4.52
+      cer: 0.175
+      wer: 0.375
+    bible_00148:
+      source: bible
+      text: ’ Ami Unwoti ndubɔsɔku mina bekyuli lɛsiku Babilon ku kalɔ kadi bekyuli ƒui akɔ liboku ɔma.
+      sbs: 0.7823
+      gen_sec: 8.28
+      ref_sec: 7.5
+      cer: 0.0
+      wer: 0.0
+    bible_00149:
+      source: bible
+      text: Katɔti, bla-mi ukyuli ɔwɔdi na linye kpakplaa uwi ndi uwi.
+      sbs: 0.699
+      gen_sec: 5.29
+      ref_sec: 3.84
+      cer: 0.0
+      wer: 0.0
+    bible_00150:
+      source: bible
+      text: Na ina ka útabla lɛla lɛdi asa na énye-mi lɛlɔ anii nte-ɔ kuƒi na ekpoku-nwu muedi ni, ɔmu
+        unye nwuna kenyekɔ na ɔɔdi mina litemi lɛlɔ.
+      sbs: 0.7331
+      gen_sec: 12.2
+      ref_sec: 10.88
+      cer: 0.0571
+      wer: 0.1538
+    bible_00151:
+      source: bible
+      text: Na biikúlo ago na lɛnwunameyi muedi lɛlɔ.
+      sbs: 0.6995
+      gen_sec: 3.84
+      ref_sec: 3.28
+      cer: 0.1471
+      wer: 0.5714
+    bible_00152:
+      source: bible
+      text: Yoseƒ ɔtɔlati ulekudi ɔkya ɔɔsia okloƒu ɔmɛni anu, ɔsika nwuna ala áda-nwu kayi.
+      sbs: 0.7595
+      gen_sec: 7.59
+      ref_sec: 9.56
+      cer: 0.0769
+      wer: 0.3077
+    bible_00153:
+      source: bible
+      text: Na lɛnɔ ni, mina Ɔti ɔlati ulatɛku ukyuli ɔdi litemi.
+      sbs: 0.7026
+      gen_sec: 4.78
+      ref_sec: 5.22
+      cer: 0.0476
+      wer: 0.1
+    bible_00154:
+      source: bible
+      text: Na ɔdi biala bune ku bɔbɛbɛ bɔdi lɛgba bɔka ɛku ɛku.
+      sbs: 0.7408
+      gen_sec: 4.52
+      ref_sec: 6.26
+      cer: 0.1707
+      wer: 0.3636
+    bible_00155:
+      source: bible
+      text: Bínye bɛ́nu uwi ɔni na kadi bamba bekyuli béduo Yerusalem na béti ala ani ƒui na baayɔ́ bátɔlɔku.
+      sbs: 0.7399
+      gen_sec: 8.45
+      ref_sec: 9.8
+      cer: 0.0519
+      wer: 0.2222
+    bible_00156:
+      source: bible
+      text: Bimwi Unwoti.
+      sbs: 0.6409
+      gen_sec: 1.37
+      ref_sec: 3.16
+      cer: 0.6364
+      wer: 1.0
+    bible_00157:
+      source: bible
+      text: Na Israel ɔ́su Yoseƒ ɔnini, “Agyi kesii kani na ƒula banwani bákpanku bebuo bésienku kadikɔ
+        na alakpi akɔ na Sekem kudɔ.
+      sbs: 0.7732
+      gen_sec: 10.67
+      ref_sec: 10.04
+      cer: 0.0521
+      wer: 0.2857
+    bible_00158:
+      source: bible
+      text: Nsu ukyuli ɔdi lɛnɔ ɔkya ɔni muudie-mi kenye, na ngyi ka lɛla lɛni na ɔɔsu libo ɔkplu.
+      sbs: 0.7063
+      gen_sec: 7.51
+      ref_sec: 9.02
+      cer: 0.0299
+      wer: 0.1176
+    bible_00159:
+      source: bible
+      text: Na uwi ɔmmɔ kemmo ni, Isak ɔ́ɔbi geen na nwuna anumi muedi asɔ alákana bɔnu.
+      sbs: 0.7709
+      gen_sec: 6.74
+      ref_sec: 6.46
+      cer: 0.0678
+      wer: 0.3333
+    bible_00160:
+      source: bible
+      text: Na Esau ubidi udeedi ɔni ndi Eliƒas bebi bananabi akɔ ni, baga bammɔ ndi Teman ku Omar ku
+        Seƒo ku Kenas ku Kora ku Gatam ku Amalek.
+      sbs: 0.7547
+      gen_sec: 11.43
+      ref_sec: 14.58
+      cer: 0.0485
+      wer: 0.1111
+    bible_00161:
+      source: bible
+      text: Na ekpidi ammɔ áya na badaku udu bɔyii ƒui.
+      sbs: 0.7426
+      gen_sec: 3.75
+      ref_sec: 3.32
+      cer: 0.0882
+      wer: 0.2222
+    bible_00162:
+      source: bible
+      text: Na badi limeyi lɛmmɔ basiaku kalɛ na líbo-ma ɔda pɛpɛɛpɛ.
+      sbs: 0.7622
+      gen_sec: 5.21
+      ref_sec: 4.22
+      cer: 0.0435
+      wer: 0.2
+    bible_00163:
+      source: bible
+      text: Nsu ka kadi bamba kégye ni, banu ka lɛtabi lɛmmɔ lɛ́sɔ lɛ́lɛ líbo, na nina anumi ebi kalɔ
+        na Bunyimi Adaka ɔmmɔ anumi aani kudeedi kalɛ kani.
+      sbs: 0.7626
+      gen_sec: 12.2
+      ref_sec: 10.36
+      cer: 0.0273
+      wer: 0.0741
+    bible_00164:
+      source: bible
+      text: Ɔmmɔ ɔsu bésie na bététi Unwoti Ɔyikune Ƒui Bunyimi Adaka ɔmmɔ.
+      sbs: 0.7061
+      gen_sec: 5.8
+      ref_sec: 4.9
+      cer: 0.0769
+      wer: 0.1818
+    bible_00165:
+      source: bible
+      text: Munuu butulo na etulo bula Nana Yakob ɔni néku libiɔ lɛmɛni?
+      sbs: 0.6432
+      gen_sec: 5.38
+      ref_sec: 3.98
+      cer: 0.1224
+      wer: 0.6364
+    bible_00166:
+      source: bible
+      text: Na Dison bebi bananabi ndi Hendan ku Esban ku Itran ku Keran.
+      sbs: 0.7114
+      gen_sec: 5.38
+      ref_sec: 6.44
+      cer: 0.102
+      wer: 0.4167
+    bible_00167:
+      source: bible
+      text: Na Noa ku bekyuli ku bebuo ku baasɛ ku bebweyi bani nkya ɔkɔlɔ bonwu ɔmmɔ kemmo kani nébu.
+      sbs: 0.7744
+      gen_sec: 8.02
+      ref_sec: 6.78
+      cer: 0.0417
+      wer: 0.1667
+    bible_00168:
+      source: bible
+      text: Katɔti Únyimiku Israel Ku Yuda Bunyimi Bɔwɔdi Bɔdi.
+      sbs: 0.7209
+      gen_sec: 4.78
+      ref_sec: 3.44
+      cer: 0.3953
+      wer: 0.75
+    bible_00169:
+      source: bible
+      text: ɔ́si kalɛ na ese siin ɔsu.
+      sbs: 0.6901
+      gen_sec: 2.13
+      ref_sec: 3.86
+      cer: 0.3158
+      wer: 0.8333
+    bible_00170:
+      source: bible
+      text: Unwoti ɔdubo bina lɛma ku bina mmo buwida.
+      sbs: 0.703
+      gen_sec: 3.84
+      ref_sec: 3.34
+      cer: 0.0882
+      wer: 1.0
+    bible_00171:
+      source: bible
+      text: Na ulete ɔgyani ɔni na ɔɔyɔ́ iye ubidi bamba lɛna lɛmmɔ lɛdi ɔnii ɔkun.
+      sbs: 0.7254
+      gen_sec: 6.06
+      ref_sec: 6.0
+      cer: 0.0714
+      wer: 0.1429
+    bible_00172:
+      source: bible
+      text: Na binyimo limeyi lɛni na bíbasiaku bina Unwoti Katɔti na Sinai kɔbi kaƒɔna.
+      sbs: 0.7889
+      gen_sec: 7.08
+      ref_sec: 6.34
+      cer: 0.0476
+      wer: 0.3077
+    bible_00173:
+      source: bible
+      text: Amu na Unwoti ɔ́su Mose ɔnini, “Ndubo Ƒarao ku Egyipteƒuɔ kɔtu kɔkladi bɔni.
+      sbs: 0.7691
+      gen_sec: 6.74
+      ref_sec: 5.8
+      cer: 0.0
+      wer: 0.0
+    bible_00174:
+      source: bible
+      text: Na liƒu muedi lɛdubo-ma bɔda ka basɔ benwini kama bakya-mi.
+      sbs: 0.7405
+      gen_sec: 5.55
+      ref_sec: 4.9
+      cer: 0.1702
+      wer: 0.6
+    bible_00175:
+      source: bible
+      text: Mmɔ na bɛdubɔlɛ kɔtɔ bɔdu biala kemmo na bɛbla sɛɛn aani Katɔti bebi bani na likpidi liiibo-ma
+        lɛlɔ.
+      sbs: 0.6527
+      gen_sec: 9.05
+      ref_sec: 6.78
+      cer: 0.0247
+      wer: 0.2222
+    bible_00176:
+      source: bible
+      text: Na tabu anii abu bani nlie-ɔ kudɔ mɛni ni, buse aani bebuo bani neeebo kasusu.
+      sbs: 0.7216
+      gen_sec: 6.91
+      ref_sec: 5.34
+      cer: 0.0984
+      wer: 0.4
+    bible_00177:
+      source: bible
+      text: Ɔsika báblaku-mi kabla na bɔ́kana na búgyingya litemi buni lɛmmɔ.
+      sbs: 0.6445
+      gen_sec: 5.72
+      ref_sec: 4.76
+      cer: 0.1132
+      wer: 0.2
+    bible_00178:
+      source: bible
+      text: na liiibo ɔma nanyuɛ bebi bamɛni?
+      sbs: 0.7173
+      gen_sec: 2.99
+      ref_sec: 3.28
+      cer: 0.2222
+      wer: 0.8333
+    bible_00179:
+      source: bible
+      text: Na badi lɛnɔ badubɔdi bekpone liti liti lɛlɔ.
+      sbs: 0.7111
+      gen_sec: 4.1
+      ref_sec: 4.74
+      cer: 0.1081
+      wer: 0.25
+    bible_00180:
+      source: bible
+      text: Ɔsika úti nwuna ngba ɔ́kpa na úbu blii suɛ nka úkpi ɔ́si Kristo kabla ɔsu.
+      sbs: 0.6447
+      gen_sec: 6.4
+      ref_sec: 5.42
+      cer: 0.0702
+      wer: 0.2667
+    bible_00181:
+      source: bible
+      text: Na ɔmmɔ kama ni, ɔ́sɔ úgye kɔna kɔdi na ɔ́sɔ ɔ́su nwuna banwani ɔnini, “Bɛsɔ binu kɔna bamba
+        kɔni na lígye.
+      sbs: 0.7676
+      gen_sec: 9.05
+      ref_sec: 9.54
+      cer: 0.0125
+      wer: 0.1429
+    bible_00182:
+      source: bible
+      text: Na ɔgbankpi ɔmɛni ɔdubɔkya-mii akɔ uti utédu ka bina ƒui bíkpi.
+      sbs: 0.6898
+      gen_sec: 5.72
+      ref_sec: 4.58
+      cer: 0.098
+      wer: 0.4545
+    bible_00183:
+      source: bible
+      text: Na buuvele Katɔti ɔni ndi bula Ɔti ku Blɔti Yesu Kristo bɔnii lɛƒɔndia ku keyi buɛɛ kasiaku-mii.
+      sbs: 0.6798
+      gen_sec: 8.7
+      ref_sec: 6.86
+      cer: 0.1026
+      wer: 0.4118
+    bible_00184:
+      source: bible
+      text: Na kana bune bɔdi lɛgba bɔka eti atɛ .
+      sbs: 0.7343
+      gen_sec: 3.24
+      ref_sec: 5.1
+      cer: 0.1724
+      wer: 0.625
+    bible_00185:
+      source: bible
+      text: Mmɔ na Hiob údie kenye ɔnini, “Bi ɔsu na aatɛmi aani uleku ɔdɔlɔdi?
+      sbs: 0.6895
+      gen_sec: 5.8
+      ref_sec: 4.22
+      cer: 0.1154
+      wer: 0.2308
+    bible_00186:
+      source: bible
+      text: Lɛkwa lɛni kemmo na Ɔga Usia úkpi na lɛ́nu Unwoti.
+      sbs: 0.73
+      gen_sec: 4.44
+      ref_sec: 4.26
+      cer: 0.0256
+      wer: 0.1
+    bible_00187:
+      source: bible
+      text: Bɔku-ma na bekeli ƒula anumi na ekpidi pii ani na baabla ɔsu.
+      sbs: 0.7126
+      gen_sec: 5.38
+      ref_sec: 4.5
+      cer: 0.0833
+      wer: 0.1667
+    bible_00188:
+      source: bible
+      text: Na bekyuli bani mewida-a ƒui ni, ewida asiaku-ma.
+      sbs: 0.7399
+      gen_sec: 4.52
+      ref_sec: 4.54
+      cer: 0.1316
+      wer: 1.125
+    bible_00189:
+      source: bible
+      text: “Bekyuli bani nse siin bánu bana kawɔlɔkɔ, na lɛlɔ lɛ́yɔ-ma na báma-ma básu banini, ‘Bula
+        bekisine báyii udu, na ogya ɔ́kyula bana ala ani na bebo ƒui.
+      sbs: 0.7636
+      gen_sec: 13.06
+      ref_sec: 12.16
+      cer: 0.0522
+      wer: 0.1852
+    bible_00190:
+      source: bible
+      text: Amu na Yesu ɔ́su-ma ɔnini, “Ndubɔsɔ lɛkya-mii kudɔ libu uwi klukui ɔdi kani na lɛtɔlɔ nteesie
+        Anwu ɔni nátala-mi kudɔ.
+      sbs: 0.671
+      gen_sec: 10.67
+      ref_sec: 9.46
+      cer: 0.0761
+      wer: 0.35
+    bible_00191:
+      source: bible
+      text: na baaní bekyuli babuni mmomu kɔtu ni, bɔbuɛ beete-ma.
+      sbs: 0.7619
+      gen_sec: 4.95
+      ref_sec: 4.4
+      cer: 0.093
+      wer: 0.3333
+    bible_00192:
+      source: bible
+      text: Na ɔdubɔya na bina ɔlɔna utaabla alɛbi na ulie ntu na utaadu-mii.
+      sbs: 0.764
+      gen_sec: 5.8
+      ref_sec: 7.34
+      cer: 0.0385
+      wer: 0.1667
+    bible_00193:
+      source: bible
+      text: Amu na Yakob lɛnɔ údie kenye ɔnini, “Ami na ɔdi.
+      sbs: 0.7019
+      gen_sec: 4.1
+      ref_sec: 3.44
+      cer: 0.1111
+      wer: 0.4
+    bible_00194:
+      source: bible
+      text: Ɔsika uwi ɔdubo ɔni na bekyuli bani nékpi ƒui badubunu-mi lɛdi.
+      sbs: 0.681
+      gen_sec: 5.72
+      ref_sec: 5.5
+      cer: 0.0588
+      wer: 0.2727
+    bible_00195:
+      source: bible
+      text: -Nsu Yoseƒ úbulo na ɔ́su-nwu ɔnini, “Ɔni na mina ɔtɔlati úti-mi únyene nwuna ala ƒui kenye
+        ni, údie lɛla biala atu.
+      sbs: 0.8032
+      gen_sec: 10.33
+      ref_sec: 10.96
+      cer: 0.0345
+      wer: 0.1429
+    bible_00196:
+      source: bible
+      text: uwi biala kemmo ɔni na beeebo lɛla lɛdi na babla.
+      sbs: 0.7464
+      gen_sec: 4.35
+      ref_sec: 3.6
+      cer: 0.1538
+      wer: 0.4
+    bible_00197:
+      source: bible
+      text: Na abu bani ƒui nésie anumi na bɔƒɔtaadi kemmo ni, ɔlɛka bɔkɛ kasusu kamɛni.
+      sbs: 0.6649
+      gen_sec: 6.83
+      ref_sec: 5.46
+      cer: 0.0328
+      wer: 0.1429
+    bible_00198:
+      source: bible
+      text: Na kɔvanu kɔɔsí Soar ɔma kemmo na beenú na Horonaim ku Eglat-Selesia.
+      sbs: 0.7544
+      gen_sec: 6.31
+      ref_sec: 7.96
+      cer: 0.1964
+      wer: 0.8333
+    bible_00199:
+      source: bible
+      text: Ɔmmɔ ɔsu ɔ́va ɔ́su nwuna bebunkune bammɔ ɔnini, “Ɔdi biala ɔvi ɔlɛ!
+      sbs: 0.7781
+      gen_sec: 5.8
+      ref_sec: 5.72
+      cer: 0.0196
+      wer: 0.0833
 - model: ghananlpcommunity/ghana-tts-72k-noref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   mode: noref
@@ -16724,4 +18396,4 @@ benchmarks:
       ref_sec: 5.72
       cer: 0.0
       wer: 0.3333
-updated: '2026-10-02'
+updated: '2026-10-09'

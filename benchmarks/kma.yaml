@@ -11,6 +11,1775 @@ judge:
   model: facebook/omniASR-LLM-7B-v2
   cer_on_real_speech: 0.0569
 benchmarks:
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7464
+  num_scored: 200
+  cer: 0.076
+  wer: 0.2043
+  accuracy: 0.924
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8352
+  score: 0.8352
+  per_source:
+    bible:
+      sbs: 0.7464
+      cer: 0.076
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Vuodieke die yine yɔmʋ ta Ŋmɩŋ dɩ keŋ vʋarɩ wa ʋ wa bɩrɩŋ wa tɩ Yɔmʋtieŋ sɩɩtɩ ta bie ʋ dʋŋŋʋ;
+        die gbaŋ vuodieke dɩ sɩna ʋ gbaŋ ta Masia dɩ keŋ vʋarɩ wa, ʋ wa bɩrɩŋ wʋnɩŋ Masia yɔmʋ.
+      sbs: 0.8072
+      gen_sec: 14.34
+      ref_sec: 14.94
+      cer: 0.0857
+      wer: 0.3
+    bible_00001:
+      source: bible
+      text: Paliti die dɩ yiŋŋi balɩ ba dɩ, “Wudieke n maagɩna wa wo tarɩgɩŋ.”
+      sbs: 0.6711
+      gen_sec: 5.03
+      ref_sec: 5.1
+      cer: 0.1
+      wer: 0.2308
+    bible_00002:
+      source: bible
+      text: Manɩŋ Jemisi, vuodieke dɩ yine Nabidie Ŋmɩŋ tʋntʋntʋ aŋaŋ tɩ Yɔmʋtieŋ Yisa Masia tʋntʋntʋ,
+        n waasa Izara buuriŋ baŋ aŋaŋ bale wo dɩ jaasɩna dʋnɩa mana ma wa mana.
+      sbs: 0.7318
+      gen_sec: 13.31
+      ref_sec: 10.1
+      cer: 0.0763
+      wer: 0.1379
+    bible_00003:
+      source: bible
+      text: Ama die dɩ ka yʋasɩya ta bʋlɔgɩsɩkpeŋkpɩɩŋ die dɩ nɩga nyɩna ŋmɩŋ pɔsɩŋ chaaŋ a keŋ sʋʋna
+        mʋgɩkpɩɩrɩ sʋŋ.
+      sbs: 0.7043
+      gen_sec: 8.79
+      ref_sec: 8.9
+      cer: 0.186
+      wer: 0.3158
+    bible_00004:
+      source: bible
+      text: Die ba wa daa dieke nine dɩ yuorine wo ka bule me a balɩ wa dɩ, “Hʋʋ Ŋmɩŋ nɩŋŋa dɩ baa fʋ
+        balɩ wa wusie. Tɩ sɩba a baarɩ Yisa yiwo tʋntʋmbɩatɩ tieŋ.”
+      sbs: 0.7549
+      gen_sec: 11.09
+      ref_sec: 9.64
+      cer: 0.0804
+      wer: 0.2424
+    bible_00005:
+      source: bible
+      text: Dɩɩ yi tɩ sɩɩ sɩba wabɩtɩ ta nɩ hagɩrɩŋ tɩ ŋaaŋ yaa sʋgɩfɩalɩŋ mɩŋ. Die wɩa tɩ Ŋmɩŋ jʋʋsɩŋ
+        yiwo dɩ nɩ yi vuovɩɩna a kpatɩ.
+      sbs: 0.7663
+      gen_sec: 9.73
+      ref_sec: 7.9
+      cer: 0.0316
+      wer: 0.0769
+    bible_00006:
+      source: bible
+      text: Die wɩa vuodieke mana dɩ benne Masia ma ka yie bɩaŋ; ama vuodieke dɩ yinene bɩaŋ ye ka sɩba
+        Yisa dɩ yine vuodieke, ta ka wɔŋ sɩba wa.
+      sbs: 0.7424
+      gen_sec: 10.07
+      ref_sec: 10.42
+      cer: 0.0
+      wer: 0.0
+    bible_00007:
+      source: bible
+      text: Saŋka mi dɩ keŋ tʋgɩ, ʋ nan yi ʋ saŋkʋ a kpatɩ ta lagɩsɩ jadieke ʋ naanna mana ta a bie ŋmɩŋsikpeŋ
+        aŋaŋ tɩŋgbaŋka gie me mana ta vaa Masia yi a sikpeŋtieŋ.
+      sbs: 0.7701
+      gen_sec: 12.46
+      ref_sec: 14.3
+      cer: 0.1157
+      wer: 0.3333
+    bible_00008:
+      source: bible
+      text: Ta daa wʋnyɩ die dɩ bie mi ba wasa wa Zakiyosi, die ʋ yiwo lampotuosiriŋ jakʋʋŋ, ta die yaa
+        nyinti pam.
+      sbs: 0.6889
+      gen_sec: 7.85
+      ref_sec: 7.1
+      cer: 0.1
+      wer: 0.2381
+    bible_00009:
+      source: bible
+      text: “Wusie maŋ bala nɩ, vuodieke nɩŋ mana dɩ tuone vuodieke nɩŋ mana n tʋnna wa tuo wo n gbaŋ,
+        ta vuodieke nɩŋ mana dɩ tuone mɩŋ, tuo wo vuodieke dɩ tʋna mɩŋ wa mɩŋ.”
+      sbs: 0.79
+      gen_sec: 12.46
+      ref_sec: 13.0
+      cer: 0.0244
+      wer: 0.0588
+    bible_00010:
+      source: bible
+      text: “Die n nagɩ fʋ wɩaha a yɩ ba mɩŋ, ta tɩŋgbaŋka gie vuosi dɩ haa ba ba kana ka yi tɩŋgbaŋka
+        gie sɩɩtɩ wa wɩa, sɩba n gbaŋ dɩ kana ka yi tɩŋgbaŋka gie sɩɩtɩ die wo.
+      sbs: 0.7485
+      gen_sec: 12.29
+      ref_sec: 10.92
+      cer: 0.0082
+      wer: 0.0811
+    bible_00011:
+      source: bible
+      text: Die wɩa Farasisi vuosisi aŋaŋ kɩkaabɩtɩba nyɩŋkʋraha aŋaŋ tɩka nyɩŋkʋraha die dɩ lagɩŋ taŋ
+        a baarɩ dɩ, “Bɩa tɩ nan yi? Nɩ ye mamachi tʋŋ dieke daa wa gie dɩ tʋnnana.
+      sbs: 0.7373
+      gen_sec: 13.23
+      ref_sec: 10.94
+      cer: 0.0611
+      wer: 0.1935
+    bible_00012:
+      source: bible
+      text: Die Paliti die dɩ yiŋŋi juu tigiri sʋŋ ta wa Yisa a pɩasɩ wa dɩ, “Fʋ yine Juu vuosi naaŋ wa?”
+      sbs: 0.7174
+      gen_sec: 6.91
+      ref_sec: 6.52
+      cer: 0.0435
+      wer: 0.1429
+    bible_00013:
+      source: bible
+      text: Yisa die dɩ kala wa die ʋ keŋ ye kpɩkpaaŋ dɩ kienene ʋ jigiŋ. Die ʋ pɩasɩ Filipi dɩ, “Sɩa
+        tɩ nan ye nyindiike a daa a yɩ vuosi gie mana?”
+      sbs: 0.691
+      gen_sec: 9.98
+      ref_sec: 11.24
+      cer: 0.0686
+      wer: 0.129
+    bible_00014:
+      source: bible
+      text: Saŋŋa kaanɩ, nɩ sʋŋanyilibɩatɩ aŋaŋ nɩ tʋmbɩatɩ die yine nɩ Ŋmɩŋ dataasɩ, ta nɩ yʋa aŋaŋ wa,
+      sbs: 0.7872
+      gen_sec: 7.85
+      ref_sec: 8.24
+      cer: 0.0411
+      wer: 0.1765
+    bible_00015:
+      source: bible
+      text: Dama jigidieke fʋ nyinti dɩ benne, mi dɩaŋ fʋ sʋŋ dɩ beri.
+      sbs: 0.768
+      gen_sec: 4.52
+      ref_sec: 3.82
+      cer: 0.1333
+      wer: 0.5
+    bible_00016:
+      source: bible
+      text: ta woliŋ yaa wa a ga Anasi jigiŋ. Anasi die yiwo Kayafasi hanɩɩŋ, Kayafasi die yine kɩkaabɩtɩba
+        jakʋʋŋ kanɩŋ bɩnɩŋ mi.
+      sbs: 0.7725
+      gen_sec: 9.56
+      ref_sec: 9.26
+      cer: 0.0421
+      wer: 0.1905
+    bible_00017:
+      source: bible
+      text: Ba kaaŋ bɩagɩ a dagɩ dɩ ŋmɩnchɩbɩsɩ dieke ba chɩbɩna a yɩ mɩŋ wa yiwo wusie.
+      sbs: 0.7382
+      gen_sec: 5.89
+      ref_sec: 4.46
+      cer: 0.0
+      wer: 0.0
+    bible_00018:
+      source: bible
+      text: Ŋmɩŋ Halɩkasɩka yi nɩ wo jabalɩmɩŋ, die wɩa nɩ kpaŋŋɩ nɩ gbaŋ aŋaŋ nɩŋŋmɩna a bemme aŋaŋ sʋgɩfɩalɩŋ
+        amʋ nɩ nan wɩarɩ yi jabalɩmɩŋ.
+      sbs: 0.7761
+      gen_sec: 11.18
+      ref_sec: 9.66
+      cer: 0.0286
+      wer: 0.125
+    bible_00019:
+      source: bible
+      text: “Die gbaŋ Mosisi dɩ baarɩ dɩ, ‘Tɩ Yɔmʋtieŋ Nabidie Ŋmɩŋ nan daansɩ yɩ nɩ naazʋa sɩba ʋ tʋnna
+        mɩŋ naa, ta ʋ nan yi nɩ gbaŋ gbaŋ nɩ vuoŋ. Nɩnɩŋ nɩ mʋ nɩ wʋmma wudieke mana ʋ balala nɩ.
+      sbs: 0.7585
+      gen_sec: 13.91
+      ref_sec: 13.9
+      cer: 0.0652
+      wer: 0.2308
+    bible_00020:
+      source: bible
+      text: Vuosi bataŋ bene a mɩa dɩ ba tarɩgɩ Masia wʋvɩɩnaha ta chɔrɩma nɩ, ama wusie wʋbalɩkɩgaaŋ
+        bɩ wori.
+      sbs: 0.7606
+      gen_sec: 7.68
+      ref_sec: 7.84
+      cer: 0.0506
+      wer: 0.2778
+    bible_00021:
+      source: bible
+      text: Ama tɩ Yɔmʋtieŋ Yisa die dɩ yiŋŋi a balɩ wa dɩ, “Maata n sɩba a baarɩ mɩa mɩŋ aŋaŋ nyinti
+        pam, a mugise fʋ ta chʋʋsa fʋ sʋŋ,
+      sbs: 0.7754
+      gen_sec: 9.47
+      ref_sec: 9.58
+      cer: 0.0968
+      wer: 0.2143
+    bible_00022:
+      source: bible
+      text: Ama nɩ yaa kalinbaani ta ka chɩga viivi ka wɩa. Nɩ tɩŋ mʋ nɩ yallɩma sʋgɩchʋʋsɩŋ ta vuodieke
+        dɩ yine die wo nɩ tɩŋ vʋarɩ wa a nyɩŋ nɩ lagɩŋkʋ ma.
+      sbs: 0.7695
+      gen_sec: 11.09
+      ref_sec: 9.44
+      cer: 0.0796
+      wer: 0.1613
+    bible_00023:
+      source: bible
+      text: Die wɩa ba balɩ dɩ, “Ʋ ka yi bʋabiŋ, nɩ pɩasɩ wa.”
+      sbs: 0.7763
+      gen_sec: 3.5
+      ref_sec: 4.0
+      cer: 0.1765
+      wer: 0.3333
+    bible_00024:
+      source: bible
+      text: Die ʋ bene sieku me a gara wa, ʋ tʋntʋntɩŋ die dɩ tuoli wo sieku mi a balɩ wa dɩ, “Fʋ bʋa
+        wa ye alaafɩa mɩŋ.”
+      sbs: 0.7675
+      gen_sec: 7.77
+      ref_sec: 8.64
+      cer: 0.1266
+      wer: 0.3462
+    bible_00025:
+      source: bible
+      text: ta vuobɩatɩ aŋaŋ gɩgaantɩba nan keŋ gʋta ba wʋbɩatɩ ta gaama vuosi ta vuosi dɩaŋ dɩ gaama
+        ba.
+      sbs: 0.7244
+      gen_sec: 7.34
+      ref_sec: 7.76
+      cer: 0.1067
+      wer: 0.2222
+    bible_00026:
+      source: bible
+      text: Die ba ka yile yaa gamma tɩŋgbaŋ dieke ba vana wa, dɩɩ yi die ba tɩŋ yile ka wɩa, ba tɩŋ nan
+        ye sieŋ a yiŋŋi ga ka ma.
+      sbs: 0.8071
+      gen_sec: 8.96
+      ref_sec: 10.36
+      cer: 0.023
+      wer: 0.1034
+    bible_00027:
+      source: bible
+      text: ta da bɩ yi vuodieke dɩ nyunene daaŋ a buge,
+      sbs: 0.7376
+      gen_sec: 3.33
+      ref_sec: 3.0
+      cer: 0.1765
+      wer: 0.2
+    bible_00028:
+      source: bible
+      text: N balɩ nɩ wɩaha gie amʋ nɩ nan dɩ yaa sʋgɩdʋagɩŋ n wɩa. Tɩŋgbaŋka gie me nɩ nan dii wahala
+        ama nɩ dii sikimiŋ dama n wɔŋ nyaŋŋɩ tɩŋgbaŋka mɩŋ.”
+      sbs: 0.77
+      gen_sec: 11.35
+      ref_sec: 13.66
+      cer: 0.0901
+      wer: 0.1667
+    bible_00029:
+      source: bible
+      text: Jɔɔn die dɩ yiŋŋi a balɩ ba dɩ, “Aayɩ, n ka yi wo.”
+      sbs: 0.7051
+      gen_sec: 3.58
+      ref_sec: 3.26
+      cer: 0.1176
+      wer: 0.3077
+    bible_00030:
+      source: bible
+      text: a daga ba dɩ Masia wa mʋ ba kʋʋ wa mɩŋ, ama ʋ nan hagɩ kuŋ me. Pɔɔli dɩ balɩ ba dɩ Yisa wa
+        yine Masia ka ʋ balala wa.
+      sbs: 0.7507
+      gen_sec: 8.28
+      ref_sec: 10.26
+      cer: 0.0824
+      wer: 0.1667
+    bible_00031:
+      source: bible
+      text: Dama tɩ lagɩsɩ tʋma mɩŋ a yɩa Ŋmɩŋ. Nɩ sɩɩ sɩba Ŋmɩŋ kʋaŋ, ta bɩ sɩɩ sɩba Ŋmɩŋ juoŋ.
+      sbs: 0.7887
+      gen_sec: 6.91
+      ref_sec: 6.42
+      cer: 0.0794
+      wer: 0.1579
+    bible_00032:
+      source: bible
+      text: Die daa wa dɩ yiŋŋi a balɩ dɩ, “N yine bʋabiŋ mana a yaa ga mʋʋna, n dɩɩ mɩraha gie mana mɩŋ.”
+      sbs: 0.7298
+      gen_sec: 6.91
+      ref_sec: 6.34
+      cer: 0.0735
+      wer: 0.1364
+    bible_00033:
+      source: bible
+      text: Mi die ka yʋa aŋaŋ tɩŋgbaŋka naaŋ Pubiluwosi kʋatɩ. Die ʋ mɩŋŋɩ tuo tɩ chaantɩ ta die tɩ yi
+        ʋ chaanɩŋ daraa ataa.
+      sbs: 0.7477
+      gen_sec: 9.13
+      ref_sec: 8.84
+      cer: 0.1236
+      wer: 0.3478
+    bible_00034:
+      source: bible
+      text: Ama manɩŋ, Ŋmɩŋ hagɩrɩŋ maŋ nagɩ vʋara jɩmbɩatɩ vuosi ma, die dagɩna sɩba Ŋmɩŋ naarɩ wɔŋ keŋ
+        nɩ jigiŋ mɩŋ.
+      sbs: 0.7558
+      gen_sec: 9.05
+      ref_sec: 7.58
+      cer: 0.0357
+      wer: 0.1
+    bible_00035:
+      source: bible
+      text: Daansɩ ye, bolikaalɩbɩŋ dɩ ŋaana bɩagɩ a dii boŋŋʋkpɩɩŋ die wo!
+      sbs: 0.6933
+      gen_sec: 5.29
+      ref_sec: 4.12
+      cer: 0.1569
+      wer: 0.5455
+    bible_00036:
+      source: bible
+      text: Die ba bale wo die dɩ nagɩ Yisa nyɩŋgbaŋka a veli ke aŋaŋ garɩhaalɩ yɩalɩŋ aŋaŋ nyɩnnyʋʋgaha,
+        sɩba die Juu vuosisi kuŋ guule chʋara dɩ dagɩna die.
+      sbs: 0.7382
+      gen_sec: 11.78
+      ref_sec: 9.52
+      cer: 0.0593
+      wer: 0.2593
+    bible_00037:
+      source: bible
+      text: Dama n nagɩ wa wudiekemba fʋ nagɩna a yɩ mɩŋ wa a yɩ ba ta ba tuohe; ba sɩba dɩ dɩ yiwo wusie
+        dɩ n nyɩŋ wa fʋ jigiŋ, ta bɩ yi yada dɩ fʋ tʋnna mɩŋ.
+      sbs: 0.7651
+      gen_sec: 10.58
+      ref_sec: 12.88
+      cer: 0.037
+      wer: 0.1081
+    bible_00038:
+      source: bible
+      text: Saŋka mi Ŋmɩŋ die dɩ yɩ Pɔɔli hagɩrɩŋ ʋ tʋma mamachi tʋnkpɩɩma.
+      sbs: 0.724
+      gen_sec: 5.12
+      ref_sec: 3.76
+      cer: 0.1176
+      wer: 0.3333
+    bible_00039:
+      source: bible
+      text: Saŋŋa mi tʋntʋntɩba die dɩ tʋma mamachi tʋnkpɩɩma pam vuosisi jigiŋ. Ta Yisa kʋaŋandɩɩsɩrɩŋ
+        mana die dɩ ŋaaŋ lagɩsɩ taŋ Ŋmɩŋ jɩamɩŋ juokpeŋkpɩɩkʋ, Solomoni lɩɩfaaka jigiŋ.
+      sbs: 0.7314
+      gen_sec: 14.68
+      ref_sec: 12.5
+      cer: 0.0629
+      wer: 0.2308
+    bible_00040:
+      source: bible
+      text: Ʋ bɩ balɩ tɩ nɩ choti yaa gamma nɩ chanchaalɩŋ ma dɩ sɩna dene Ŋmɩŋ Halɩkasɩka suŋŋiŋ wɩa.
+      sbs: 0.7557
+      gen_sec: 7.25
+      ref_sec: 5.78
+      cer: 0.0694
+      wer: 0.2778
+    bible_00041:
+      source: bible
+      text: Dɩ kaaŋ yʋasɩ tɩŋgbaŋka gie vuosi kaaŋ bɩ ye mɩŋ bɩbra, ama nɩnɩŋ nɩ nan ye mɩŋ. Dama n nan
+        dɩ beri n mɩsɩ ma; die wɩa nɩ gbaŋ nɩ nan dɩ bie nɩ mɩsɩ ma.
+      sbs: 0.7609
+      gen_sec: 11.52
+      ref_sec: 11.74
+      cer: 0.0088
+      wer: 0.0278
+    bible_00042:
+      source: bible
+      text: Nɩ ye, nɩnɩŋ vuodiekemba dɩ balala dɩ, “Jinne yaa soriŋ, tɩ nan dɩa a ga tɩŋ kaanɩ, tɩ nan
+        dɩ bie mi a ga tʋgɩ bɩŋ ta dii nyʋŋ a ye ligire pam”,
+      sbs: 0.765
+      gen_sec: 10.58
+      ref_sec: 11.32
+      cer: 0.0952
+      wer: 0.2121
+    bible_00043:
+      source: bible
+      text: Mi daa wʋnyɩ die dɩ bie kpɩkpaakʋ ma ta balɩ yɩ Yisa dɩ, “Dɩdagɩrʋ, balɩ yɩ n mɩɩ wa, dɩ ʋ
+        vaa maŋ ŋaŋ wa puo faarɩ dieke tɩ chɔɔŋ dɩ vana a zieŋ tɩ wo.”
+      sbs: 0.7499
+      gen_sec: 11.18
+      ref_sec: 11.1
+      cer: 0.1071
+      wer: 0.2222
+    bible_00044:
+      source: bible
+      text: Ama Susuŋŋiru, Ŋmɩŋ Halɩkasɩka vuodieke n Chʋa Ŋmɩŋ dɩ bala ʋ tʋŋ n saaŋ ma wa, nan dagɩ nɩ
+        jaaŋ mana ta vaa nɩ tɩɩnsɩ wudiekemba mana n bala nɩ wa.
+      sbs: 0.7686
+      gen_sec: 11.69
+      ref_sec: 11.4
+      cer: 0.0435
+      wer: 0.129
+    bible_00045:
+      source: bible
+      text: Die wɩa die ʋ wa ʋ tʋntʋntɩba mana aŋaŋ vuodieke dɩ tʋnnana ʋ tʋʋmaha chanchaaŋ a lagɩsɩ a
+        balɩ yɩ ba dɩ, “N zʋamba, nɩ sɩba a baarɩ tɩ yese tɩ nyʋarɩ a nyɩna tɩ tʋʋmaha gie mi.
+      sbs: 0.7043
+      gen_sec: 13.14
+      ref_sec: 13.06
+      cer: 0.0956
+      wer: 0.2632
+    bible_00046:
+      source: bible
+      text: ama kpihɔgʋ wa gie dɩ faasɩna daama mɩŋ wɩa, n ko baa n dii ʋ sarɩya ka a yɩ wa mɩŋ, dɩ daa
+        die ʋ nan dɩ kieŋ daaŋ mana ta vaa n gbalɩgɩ aŋaŋ wa.’ ”
+      sbs: 0.7746
+      gen_sec: 10.67
+      ref_sec: 10.76
+      cer: 0.0654
+      wer: 0.2222
+    bible_00047:
+      source: bible
+      text: ta die bie mi a ga tʋgɩ chɩɩtɩ ataa. Ka kʋaŋ chaaŋ die ʋ gɔmɩsɩ dɩ ʋ ga Siiria ta die mɩŋŋɩ
+        dɩ Juu vuosisi saŋya mɩŋ a gbarɩ wa; naa chɩaŋ mana die ʋ saŋ dɩ ʋ yiŋŋi a daagɩ Masedonia a ga.
+      sbs: 0.7492
+      gen_sec: 14.34
+      ref_sec: 14.8
+      cer: 0.0563
+      wer: 0.1818
+    bible_00048:
+      source: bible
+      text: Dɩɩ yi tɩ baarɩ dɩ tɩ wo bɩaŋ tɩ gaama tɩ gbaŋ ta ka bala wusie.
+      sbs: 0.75
+      gen_sec: 4.69
+      ref_sec: 4.34
+      cer: 0.0208
+      wer: 0.125
+    bible_00049:
+      source: bible
+      text: Womi vuoŋ wʋnyɩ die dɩ keŋ juu mi a baarɩ dɩ, “Nɩ ye, daa diekemba nɩ nagɩna a yi dansarɩka
+        ma wa zie Ŋmɩŋ jɩamɩŋ juokpeŋkpɩɩkʋ ma a daga vuosi Ŋmɩŋ wɩa.”
+      sbs: 0.7518
+      gen_sec: 11.95
+      ref_sec: 10.8
+      cer: 0.0424
+      wer: 0.125
+    bible_00050:
+      source: bible
+      text: Die wɩa, tɩ ka chɩga ŋmaamɩŋ nɩ wɩa, dama tɩ sɩba a baarɩ nɩ dine wahala sɩba tɩ dine die
+        wo, die gbaŋ gbaŋ nɩ nan dɩ yese suŋŋiŋ sɩba tɩ yesinene die wo.
+      sbs: 0.8029
+      gen_sec: 11.78
+      ref_sec: 10.8
+      cer: 0.0171
+      wer: 0.0294
+    bible_00051:
+      source: bible
+      text: Dɩɩ yi vuoŋ dɩ bie nɩ sʋnsʋŋ ta yaa wumugisikiŋ, ʋ jʋʋsɩma Ŋmɩŋ. Ta vuodieke dɩaŋ dɩ yaa sʋgɩfɩalɩŋ,
+        ʋ chɩama yɩla a bɩrɩma Ŋmɩŋ.
+      sbs: 0.7694
+      gen_sec: 10.5
+      ref_sec: 8.9
+      cer: 0.1287
+      wer: 0.32
+    bible_00052:
+      source: bible
+      text: Ama die Filipi dɩ keŋ a mʋʋlɩ Ŋmɩŋ naarɩ wʋvɩɩnaha aŋaŋ Yisa wɩa, dembisi aŋaŋ hɔɔŋ die dɩ
+        saagɩ ʋ mʋʋlɩkʋ, ta ʋ sɩɩ ba Ŋmɩŋ nyaaŋ.
+      sbs: 0.7562
+      gen_sec: 10.67
+      ref_sec: 11.22
+      cer: 0.0784
+      wer: 0.1852
+    bible_00053:
+      source: bible
+      text: Lele womi die mɩɩlɩgɩsɔbɩlɩŋ dɩ nan daa wa nine me ta ʋ dɩ dɩa a gaba a yaala vuodieke dɩ
+        baaŋ nan yigi ʋ nuuŋ me.
+      sbs: 0.7326
+      gen_sec: 8.45
+      ref_sec: 7.16
+      cer: 0.1023
+      wer: 0.1923
+    bible_00054:
+      source: bible
+      text: ta die bala dɩ, “Zɩmbʋ gie yine nʋa dieke Ŋmɩŋ dɩ yɩna nɩ dɩ nɩ dɩa dagɩtɩ.”
+      sbs: 0.705
+      gen_sec: 5.55
+      ref_sec: 5.7
+      cer: 0.0357
+      wer: 0.1176
+    bible_00055:
+      source: bible
+      text: Mi Yisa die yene chaamba dɩ vʋarɩnana vuokpɩɩma jigikasɩha, ʋ kpaaŋ ba dɩ;
+      sbs: 0.765
+      gen_sec: 5.8
+      ref_sec: 5.38
+      cer: 0.1333
+      wer: 0.3846
+    bible_00056:
+      source: bible
+      text: Die wɩa n wa jʋʋsa nɩ ko dii nyindiike, dama ka yiwo jadieke dɩ baaŋ nan yi nɩ hagɩrɩŋ. Nɩ
+        wʋnyɩ kaaŋ wɔŋ ye daŋŋa.”
+      sbs: 0.7385
+      gen_sec: 8.96
+      ref_sec: 7.4
+      cer: 0.0568
+      wer: 0.2
+    bible_00057:
+      source: bible
+      text: Wudieke dɩ yine talasɩ yiwo naa, nɩ jʋʋsɩma Ŋmɩŋ a yɩma vuoŋ mana. Ta jʋʋsɩ wa dɩ ʋ suŋŋi
+        be ta bɩ yi alibarika a yɩ ba mana, ta waasɩma wa ba mana wɩa.
+      sbs: 0.7745
+      gen_sec: 11.43
+      ref_sec: 11.8
+      cer: 0.0522
+      wer: 0.1176
+    bible_00058:
+      source: bible
+      text: Ama Mosisi die yɩna nɩ nʋaŋ dɩ nɩ gobime nɩ ballɩdembisi kɔlaha (Daa Mosisi die piiline ke,
+        ama nɩ chɔɔŋkʋʋlɩba die piiline ke), nɩ ŋaaŋ gobi be mɩŋ davʋʋsɩkɩrɩ daraaŋ.
+      sbs: 0.75
+      gen_sec: 13.4
+      ref_sec: 12.38
+      cer: 0.0522
+      wer: 0.2333
+    bible_00059:
+      source: bible
+      text: Die wɩa die ba pɩasɩ wa dɩ, “Die nɩŋ, mɩnɩa yine fʋ? Yiwo Elaja?”
+      sbs: 0.7097
+      gen_sec: 4.69
+      ref_sec: 5.34
+      cer: 0.0435
+      wer: 0.1429
+    bible_00060:
+      source: bible
+      text: Dɩɩ yi tɩ dɩa ʋ mɩraha ta yie wudieke dɩ nannana ʋ sʋŋ die bala ka vaa ʋ dɩ yɩa tɩ jadieke
+        mana tɩ jʋʋsɩnana a yaala.
+      sbs: 0.7501
+      gen_sec: 8.45
+      ref_sec: 8.9
+      cer: 0.1111
+      wer: 0.3333
+    bible_00061:
+      source: bible
+      text: Lele wo mi Ŋmɩŋ malaka die dɩ vaa yʋagɩbɩaŋ dɩ yigi wo, die ʋ nyuuti die dɩ suuli aŋaŋ gbarɩtɩ
+        a nyuo wo ʋ kpi dama die ʋ ka yi Ŋmɩŋ kanɩŋ jɩlɩma ka mi.
+      sbs: 0.7191
+      gen_sec: 11.61
+      ref_sec: 11.44
+      cer: 0.0517
+      wer: 0.2571
+    bible_00062:
+      source: bible
+      text: Ŋmɩŋ die dɩ sʋgɩrɩna wa a nyɩŋ kumbu me kʋaŋ chaaŋ wa, ʋ kʋaŋandɩɩsɩrɩba die dɩ tɩɩnsɩ dɩ
+        ʋ balɩ wɩɩrɩ gie mɩŋ, ta die yi Ŋmɩŋ gbaŋkʋ aŋaŋ Yisa die dɩ bala wudieke wo yada.
+      sbs: 0.716
+      gen_sec: 13.74
+      ref_sec: 12.1
+      cer: 0.0448
+      wer: 0.1667
+    bible_00063:
+      source: bible
+      text: Kpɩkpaakʋ die dɩ yiŋŋi balɩ dɩ, “Fʋnɩŋ yaa wa jɩmbɩaŋ fʋ ma. Mɩnɩa mɩnana ʋ kʋʋ fʋ?”
+      sbs: 0.6929
+      gen_sec: 6.49
+      ref_sec: 5.3
+      cer: 0.1111
+      wer: 0.3529
+    bible_00064:
+      source: bible
+      text: Die wɩa n zʋalɩŋ, nɩ dii sikimiŋ, dama n yi Ŋmɩŋ yada mɩŋ dɩ wudieke ʋ bala mɩŋ wa nan seŋ
+        yi.
+      sbs: 0.7199
+      gen_sec: 7.34
+      ref_sec: 6.22
+      cer: 0.0714
+      wer: 0.2273
+    bible_00065:
+      source: bible
+      text: Ama vuodieke nɩŋ mana dɩ tʋnnana wudieke dɩ mʋna kieŋ wo chaanɩŋ ma, dɩ vuoŋ mana sɩmma a
+        baarɩ Ŋmɩŋ beri ʋ tʋʋma mana ma.
+      sbs: 0.7262
+      gen_sec: 9.56
+      ref_sec: 7.5
+      cer: 0.0521
+      wer: 0.16
+    bible_00066:
+      source: bible
+      text: Yisa die dɩ mɩŋŋɩ dɩ ba yie siri dɩ ba keŋ a yigi wo aŋaŋ hagɩrɩŋ a yi wo naaŋ; die wɩa die
+        ʋ bɩ yiŋŋi jʋalɩ ga kunkogiri me a ga bie ʋ nyɩɩna ma.
+      sbs: 0.7362
+      gen_sec: 11.09
+      ref_sec: 9.12
+      cer: 0.0734
+      wer: 0.1389
+    bible_00067:
+      source: bible
+      text: Die wɩa mɩraha dɩdagɩrɩba wʋnyɩ dɩ balɩ yɩ wa dɩ, “Dɩdagɩrʋ, fʋ bala naa nɩŋ zɩa wa tɩ gbaŋ.”
+      sbs: 0.762
+      gen_sec: 6.91
+      ref_sec: 7.2
+      cer: 0.0429
+      wer: 0.1579
+    bible_00068:
+      source: bible
+      text: Nɩ sʋʋŋ nɩ gbaŋ nɩ Yɔmʋtieŋ nɩŋŋa, ta ʋ nan kɔtɩ nɩ ŋmɩŋsikpeŋ.
+      sbs: 0.6973
+      gen_sec: 5.46
+      ref_sec: 4.36
+      cer: 0.1429
+      wer: 0.5385
+    bible_00069:
+      source: bible
+      text: Vuosi gie mana ba yada wɩa Ŋmɩŋ die dɩ bɩrɩ ba ama ba wʋnyɩ mana die ka tuo wudieke Ŋmɩŋ dɩ
+        yɩna nʋaŋ dɩ ʋ nan yɩ ba wa,
+      sbs: 0.7883
+      gen_sec: 8.96
+      ref_sec: 9.9
+      cer: 0.033
+      wer: 0.1034
+    bible_00070:
+      source: bible
+      text: Die Ŋmɩŋ kɩkaabɩtɩba nyɩŋkʋraha aŋaŋ mɩraha dɩdagɩrɩba die zie mi ta faasɩ bala a chʋʋsa Yisa.
+      sbs: 0.7436
+      gen_sec: 7.77
+      ref_sec: 5.76
+      cer: 0.0385
+      wer: 0.125
+    bible_00071:
+      source: bible
+      text: N nan keŋ a kaagɩ nɩ n bʋtaa ma. Dɩɩ yi nɩ balɩ dɩ vuoŋ yiwo taalɩ sɩba dɩ maagɩna Ŋmɩŋ gbaŋkʋ
+        sʋŋ dene wo dɩ, “Sie daansɩa vuosi bale yaa bataa balɩ a chʋʋsɩ wa.”
+      sbs: 0.7575
+      gen_sec: 12.2
+      ref_sec: 11.32
+      cer: 0.0732
+      wer: 0.1944
+    bible_00072:
+      source: bible
+      text: Genke kʋaŋ chaaŋ Yisa aŋaŋ ʋ kʋaŋandɩɩsɩrɩba die dɩ ga Judia tɩŋgbaŋ ma, die ʋ yi daraa ale
+        aŋaŋ ba, ta sɩa vuosi Ŋmɩŋ nyaaŋ.
+      sbs: 0.71
+      gen_sec: 10.41
+      ref_sec: 8.78
+      cer: 0.0816
+      wer: 0.32
+    bible_00073:
+      source: bible
+      text: Die wɩa die Yisa die dɩ nagɩ paanʋkʋ a nagɩ yɩ ba, ta bɩ nagɩ zaasɩbʋ dɩaŋ a yɩ ba.
+      sbs: 0.7564
+      gen_sec: 5.97
+      ref_sec: 6.12
+      cer: 0.0484
+      wer: 0.1
+    bible_00074:
+      source: bible
+      text: Ba baarɩ dɩ, “Yisa, vuodieke dɩ nyɩnna Nazeriti wa.”
+      sbs: 0.6215
+      gen_sec: 3.84
+      ref_sec: 4.58
+      cer: 0.0513
+      wer: 0.1111
+    bible_00075:
+      source: bible
+      text: Kʋrɩŋ ma wa kɩkaabɩtɩba mi wo die kpiye mɩŋ ta ba chanchaalɩŋ dɩ tuose ba tʋʋma, die wɩa die
+        ba dala.
+      sbs: 0.7588
+      gen_sec: 7.77
+      ref_sec: 8.02
+      cer: 0.1013
+      wer: 0.1429
+    bible_00076:
+      source: bible
+      text: Die ʋ wa balɩ yɩ ba dɩ “N chanchaalɩŋ Izara vuosi, nɩ sɩmma aŋaŋ nɩ bala nɩ yi vuosi gie wudieke
+        wo.
+      sbs: 0.7374
+      gen_sec: 7.42
+      ref_sec: 7.28
+      cer: 0.0132
+      wer: 0.0455
+    bible_00077:
+      source: bible
+      text: Vuosi bale dieke die dɩ wʋnna Jɔɔn balɩkʋ ta die dɩ Yisa kʋaka wʋnyɩ die yine Andurusi, die
+        ʋ yiwo Simoni Piita nɩmbʋa.
+      sbs: 0.7359
+      gen_sec: 8.96
+      ref_sec: 9.44
+      cer: 0.0632
+      wer: 0.2609
+    bible_00078:
+      source: bible
+      text: Ta fʋ ballɩbɩsɩ mi wɔŋ sɩba Ŋmɩŋ gbaŋkʋ dɩ bɩagɩna yɩa fʋ yɩaŋ ta daga fʋ fʋ baaŋ yi Yisa
+        yada dene ta ye gbatɩtaanɩŋ.
+      sbs: 0.7803
+      gen_sec: 9.3
+      ref_sec: 9.34
+      cer: 0.0645
+      wer: 0.24
+    bible_00079:
+      source: bible
+      text: Die ʋ balɩ wa naa amʋ wudieke die ʋ bala wa nan keŋ yi wusie, die ʋ baarɩ dɩ, “N Chʋa, n ka
+        vaa vuodiekemba fʋ nagɩna a yɩ mɩŋ wʋnyɩ dɩ bɩa.”
+      sbs: 0.7127
+      gen_sec: 10.07
+      ref_sec: 11.3
+      cer: 0.068
+      wer: 0.2121
+    bible_00080:
+      source: bible
+      text: Nɩ wɔŋ wʋŋ mɩŋ die n tʋʋma dɩ sɩna die saŋŋa dieke die n dɩna Juu vuosi jɩaŋkʋ, die n mugise
+        Masia dɩdɩɩsɩrɩŋ pam, ta die mɩa dɩ n chʋʋsɩ ba ta ka chɩgɩ ba zɔɔlɩŋ.
+      sbs: 0.786
+      gen_sec: 12.54
+      ref_sec: 12.94
+      cer: 0.096
+      wer: 0.1944
+    bible_00081:
+      source: bible
+      text: Sɩba ba bala dɩ, “Dabɔtɩ bɩta vasɩnana paanʋ zɔŋ mana dɩ yire.”
+      sbs: 0.6844
+      gen_sec: 4.69
+      ref_sec: 4.68
+      cer: 0.0417
+      wer: 0.25
+    bible_00082:
+      source: bible
+      text: Masia dɩdɩɩsɩrɩ diekemba dɩ benne Asia tɩŋgbaŋ mana waasa nɩ. Akuyila aŋaŋ Pirisila Masia
+        dɩdɩɩsɩrɩba dɩ lagɩsɩnana jɩama Ŋmɩŋ ba tigiri me wo waasa nɩ vɩɩnɩŋ tɩ Yɔmʋtieŋ saaŋ ma.
+      sbs: 0.7554
+      gen_sec: 14.68
+      ref_sec: 13.04
+      cer: 0.0811
+      wer: 0.3333
+    bible_00083:
+      source: bible
+      text: Nɩ yine wo yada wa wɩa, nɩ yese gbatɩtaanɩŋ mɩŋ.
+      sbs: 0.7473
+      gen_sec: 3.75
+      ref_sec: 3.06
+      cer: 0.0
+      wer: 0.2
+    bible_00084:
+      source: bible
+      text: Die ʋ yene Piita aŋaŋ Jɔɔn dɩ balla ba juu wo, ʋ jʋʋsɩ ba ligire.
+      sbs: 0.6995
+      gen_sec: 4.86
+      ref_sec: 5.42
+      cer: 0.1224
+      wer: 0.2667
+    bible_00085:
+      source: bible
+      text: dama saŋka mi yiwo tɩbɩdatɩŋ saŋŋa. Wɩaha gie mana nan keŋ yi sɩba die dɩ maagɩna Ŋmɩŋ gbaŋkʋ
+        ma die wo.
+      sbs: 0.7663
+      gen_sec: 8.45
+      ref_sec: 7.08
+      cer: 0.061
+      wer: 0.0952
+    bible_00086:
+      source: bible
+      text: Die nyɩŋkʋraha die dɩ wʋnna naa, die ba jɩɩ sɩnyɩɩrɩŋ pam dɩ ba kʋʋ tʋntʋntɩba.
+      sbs: 0.7453
+      gen_sec: 6.14
+      ref_sec: 5.0
+      cer: 0.1111
+      wer: 0.3333
+    bible_00087:
+      source: bible
+      text: Die ba pɩasɩ wa dɩ, “Lalɩa fʋ yi ta fʋ ninehe dɩ yuori?”
+      sbs: 0.696
+      gen_sec: 3.84
+      ref_sec: 4.44
+      cer: 0.15
+      wer: 0.4615
+    bible_00088:
+      source: bible
+      text: Die wɩa, Juu vuosisi diekemba die dɩ benne aŋaŋ ba wa dɩaŋ dɩ piili a chɩga ŋmaamɩŋ, ta dɩ
+        Piita dɩ yine wudieke, ta Banabasi gbaŋ die dɩ taarɩ a dɩ ba.
+      sbs: 0.7952
+      gen_sec: 11.69
+      ref_sec: 13.4
+      cer: 0.0
+      wer: 0.0
+    bible_00089:
+      source: bible
+      text: Fʋ yie naa a yie bɩaŋ a yɩa fʋ nɩmballɩ, ta chʋʋsa ba yada dieke dɩ kana ka dala wa, ka daga
+        dɩ yie bɩaŋ yɩa Masia mɩŋ.
+      sbs: 0.7882
+      gen_sec: 8.79
+      ref_sec: 8.28
+      cer: 0.0449
+      wer: 0.1071
+    bible_00090:
+      source: bible
+      text: Yisa die dɩ balɩ a yɩ tʋntʋntɩba dɩ, “Nɩ yi nyaaŋ suuli gbiesisi.” Die wɩa die ba yi nyaaŋ
+        a suulihe pili pili.
+      sbs: 0.7256
+      gen_sec: 8.19
+      ref_sec: 7.64
+      cer: 0.119
+      wer: 0.1739
+    bible_00091:
+      source: bible
+      text: Izara vuosi yada wɩa die ba chʋnna a giliŋ Jeriko tɩka daraa ayʋpɔyɩ wa die ka gaama mana
+        die dɩ nan dene.
+      sbs: 0.7461
+      gen_sec: 7.94
+      ref_sec: 9.22
+      cer: 0.0238
+      wer: 0.0909
+    bible_00092:
+      source: bible
+      text: Die daa wʋnyɩ die benne ba wasa wa Josefu, die ʋ nyɩŋ wa Juu vuosi tɩŋ ba wasɩnana Arimatia.
+        Die ʋ yiwo vuovɩɩnɩŋ ta bɩ dɩɩ Ŋmɩŋ ta die a chɩɩsa Ŋmɩŋ naarɩ keniŋ.
+      sbs: 0.7628
+      gen_sec: 12.63
+      ref_sec: 11.82
+      cer: 0.0556
+      wer: 0.1471
+    bible_00093:
+      source: bible
+      text: Manɩŋ Pɔɔli aŋaŋ tɩ nɩmballɩ diekemba dɩ benne giena mana waasa Masia dɩdɩsɩɩrɩba dɩ benne
+        Galasia ma.
+      sbs: 0.7567
+      gen_sec: 8.19
+      ref_sec: 7.84
+      cer: 0.0471
+      wer: 0.0588
+    bible_00094:
+      source: bible
+      text: Nɩ tʋma nɩ tʋʋma aŋaŋ sʋgɩfɩalɩŋ sɩba nɩ tʋma yɩa tɩ Yɔmʋtieŋ Masia ama nɩ daa yilime dɩ nɩ
+        tʋma a yɩa vuota nyɩɩna ma,
+      sbs: 0.7357
+      gen_sec: 9.13
+      ref_sec: 8.08
+      cer: 0.0745
+      wer: 0.24
+    bible_00095:
+      source: bible
+      text: Ka sʋkʋleeliŋ Yisa die dɩ keŋ zie gbagɩrɩ nʋaŋ ama ʋ kʋaŋandɩɩsɩrɩba die ka mɩŋŋɩya dɩ dɩ
+        yiwo wʋnɩŋ.
+      sbs: 0.7151
+      gen_sec: 8.28
+      ref_sec: 5.7
+      cer: 0.0732
+      wer: 0.2632
+    bible_00096:
+      source: bible
+      text: Die wɩa Ŋmɩŋ Halɩkasɩka die dɩ balɩ yɩ mɩŋ dɩ n gamma aŋaŋ ba ta da vaa ka mugisi mɩŋ. Womi
+        Yisa dɩdɩɩsɩrɩŋ bayʋaba diekemba die dɩ benne Joopa ma die dɩ beeli mɩŋ tɩ ga Siisiria a ga Koniliawosi
+        tigiŋ,
+      sbs: 0.7552
+      gen_sec: 15.79
+      ref_sec: 14.7
+      cer: 0.0437
+      wer: 0.1463
+    bible_00097:
+      source: bible
+      text: Fʋ sʋŋ ka fɩala aŋaŋ dɔŋɩsɩ ba nagɩna a yie kaaba
+      sbs: 0.6506
+      gen_sec: 3.93
+      ref_sec: 3.4
+      cer: 0.3846
+      wer: 0.4545
+    bible_00098:
+      source: bible
+      text: Die gbɩgbarɩtʋ wa dɩ balɩ a yi Pɔɔli dɩ, “Nyɩŋkʋraha yɩ wa nʋaŋ dɩ n vaa fʋnɩŋ aŋaŋ Silasi
+        ga yɔrɩ. Die wɩa nɩ gamma aŋaŋ sʋgɩfɩalɩŋ.”
+      sbs: 0.7257
+      gen_sec: 10.5
+      ref_sec: 10.46
+      cer: 0.068
+      wer: 0.2222
+    bible_00099:
+      source: bible
+      text: Die wɩa die sojasisi die dɩ gobi gobi guuŋ dieke dɩ bɔbɩna haarɩbike a yallɩ wa ta vaa ka
+        nan nyaabʋ sʋŋ.
+      sbs: 0.7246
+      gen_sec: 7.94
+      ref_sec: 7.3
+      cer: 0.0482
+      wer: 0.1364
+    bible_00100:
+      source: bible
+      text: Die ʋ kenne a gbigi jigidieke sieku dɩ sʋʋna gara Olivi kunkogiri jigiri, ʋ kʋaŋanvuosi mana
+        die dɩ piili a bɩra Ŋmɩŋ aŋaŋ sʋgɩfɩalɩŋ, ta bɩra wa aŋaŋ lɔlɩkpɩɩma yaa gamma mamachi wʋkpɩɩma
+        dieke ba yene wo dɩ,
+      sbs: 0.6555
+      gen_sec: 16.89
+      ref_sec: 13.04
+      cer: 0.0592
+      wer: 0.2105
+    bible_00101:
+      source: bible
+      text: Ama tɩ haalɩtɩ dɩ yene suu nyɩŋgbaŋka gie me wo, tɩ ŋmuuse mɩŋ. Daa tɩ ka bɩ yaala nyɩŋgbaŋka
+        gie beriŋ, ama tɩ yaala arɩzanna nyɩŋgbaŋka mɩŋ, dɩ dɩnɩŋ daarɩ mi miivolike nan keŋ nyii kuŋ
+        aŋ a kpatɩ.
+      sbs: 0.7705
+      gen_sec: 16.21
+      ref_sec: 14.02
+      cer: 0.0577
+      wer: 0.1795
+    bible_00102:
+      source: bible
+      text: Wusie, vuodiekemba mana dɩ yine Yisa Masia sɩɩtɩ ta yaala ba bemme vɩɩnɩŋ nan ye mugisiŋ a
+        nyɩŋ vuosi jigiŋ;
+      sbs: 0.7866
+      gen_sec: 8.53
+      ref_sec: 8.06
+      cer: 0.0
+      wer: 0.0
+    bible_00103:
+      source: bible
+      text: Ta lele bɩa fʋ bɩ chɩɩsa? Hagɩ aŋ n sɩɩ fʋ Ŋmɩŋ nyaabʋ, aŋ Ŋmɩŋ vaa fʋ wʋbɩatɩ a chaa fʋ fʋ
+        jʋʋsɩna wa wɩa.’
+      sbs: 0.7586
+      gen_sec: 8.19
+      ref_sec: 7.46
+      cer: 0.1625
+      wer: 0.44
+    bible_00104:
+      source: bible
+      text: amʋ vuosi pam sʋŋanyile nan nyɩŋ yeŋ me ama wɩɩŋ nan yi ta chʋʋsɩ fʋ gbaŋ gbaŋ fʋ sʋŋ pam.”
+      sbs: 0.7073
+      gen_sec: 7.17
+      ref_sec: 7.86
+      cer: 0.1
+      wer: 0.3
+    bible_00105:
+      source: bible
+      text: Yisa die dɩ yiŋŋi a balɩ ba dɩ, “Daa wʋnɩŋ yaa ʋ chɔɔŋ aŋaŋ ʋ nuŋ bɩaŋ taasɩna ʋ yɩɩsɩsɩ.
+        Ʋ yɩɩŋya mɩŋ dɩ n vaa ʋ nine yuori amʋ vuosi ye Ŋmɩŋ tʋnkpɩɩma.
+      sbs: 0.7036
+      gen_sec: 12.12
+      ref_sec: 13.7
+      cer: 0.1121
+      wer: 0.2941
+    bible_00106:
+      source: bible
+      text: Fʋ zɩ n nan dɩ bie nɩ jigiŋ daraa ale yaa n nan wɩarɩ nɩ jigiŋ wʋyaalɩka gie mana; ta nɩ nan
+        keŋ suŋŋi mɩŋ aŋ n tɩaŋ ga jigidieke n yaala n ga.
+      sbs: 0.7587
+      gen_sec: 10.92
+      ref_sec: 10.56
+      cer: 0.0185
+      wer: 0.0588
+    bible_00107:
+      source: bible
+      text: Dɩɩ yi vuoŋ dɩ yaala ʋ yɩ Ŋmɩŋ piini, ta yɩ ʋ yalla dene, Ŋmɩŋ nan tuoke. Ŋmɩŋ ka yaala vuoŋ
+        yɩ wa piini a tɩaŋ ʋ yalla dene.
+      sbs: 0.7789
+      gen_sec: 9.81
+      ref_sec: 9.68
+      cer: 0.086
+      wer: 0.2069
+    bible_00108:
+      source: bible
+      text: Nɩnɩŋ Samaria vuosi ka sɩba vuodieke nɩ jɩanna ama tɩnɩŋ Juu vuosi nɩŋ sɩba vuodieke tɩ jɩanna
+        mɩŋ dama gbatɩtaanɩŋ wɩa nyɩŋ wa Juu vuosi jigiŋ mɩŋ.
+      sbs: 0.7673
+      gen_sec: 12.03
+      ref_sec: 10.96
+      cer: 0.0
+      wer: 0.0
+    bible_00109:
+      source: bible
+      text: Dama saŋŋa kieŋ ta vuosi kaaŋ dɩ wʋmma dagɩvɩɩnʋ, ama ba nan keŋ dɩ ba gbaŋ gbaŋ ba lɔlɩbɩatɩ,
+        ta nan dɩ wʋmma yɩa dɩdagɩrɩŋ pam diekemba dɩ dagɩnana wa wudieke ba yaalala ba wʋŋ.
+      sbs: 0.7725
+      gen_sec: 14.25
+      ref_sec: 13.42
+      cer: 0.0634
+      wer: 0.2286
+    bible_00110:
+      source: bible
+      text: Ka tʋnvʋʋsa die ba benne sieku me a gara wa a keŋ gbigi Joopa, saŋka mi Piita die dɩ ga jʋalɩ
+        kɔsʋŋ sikpeŋ agbaa saŋŋa dɩ ʋ jʋʋsɩ Ŋmɩŋ.
+      sbs: 0.7298
+      gen_sec: 10.58
+      ref_sec: 9.82
+      cer: 0.1238
+      wer: 0.3103
+    bible_00111:
+      source: bible
+      text: Ama ba vɩɩnɩŋ nyɩna ba sʋgɩtɩ ma, a nyɩna nyinti sɩba sʋʋŋ-n gbaŋ tɩŋgbaŋ aŋaŋ sɔmm beriŋ.
+        Kanɩŋ vɩɩŋkʋ wo chʋʋsɩŋ ta bɩ faasɩ vɩɩna Ŋmɩŋ nɩŋŋa.
+      sbs: 0.72
+      gen_sec: 12.29
+      ref_sec: 10.54
+      cer: 0.0789
+      wer: 0.2593
+    bible_00112:
+      source: bible
+      text: Ŋmɩŋ gbaŋ sɩba dɩ wudieke n maagɩna yiwo wusie ta ŋmɩnchɩbɩsɩ dɩ wo ka ma.
+      sbs: 0.7669
+      gen_sec: 5.89
+      ref_sec: 5.1
+      cer: 0.0
+      wer: 0.0
+    bible_00113:
+      source: bible
+      text: Ta ʋ wa keŋ giena aŋaŋ Ŋmɩŋ kɩkaabɩtʋ yiko dɩ ʋ yigi vuodieke mana dɩ wasɩnana fʋ saaŋ.”
+      sbs: 0.7406
+      gen_sec: 7.0
+      ref_sec: 8.44
+      cer: 0.0725
+      wer: 0.2778
+    bible_00114:
+      source: bible
+      text: Womi Anasi die dɩ vaa ba nagɩ Yisa a ga Kayafasi jigiŋ, vuodieke dɩ yine kɩkaabɩtɩba jakʋʋrɩ;
+        ta die ba ye bɔbɩ Yisa.
+      sbs: 0.7529
+      gen_sec: 8.87
+      ref_sec: 8.62
+      cer: 0.0652
+      wer: 0.1304
+    bible_00115:
+      source: bible
+      text: Yisa die dɩ bɩrɩma a gʋta aŋaŋ yɩaŋ ta Ŋmɩŋ aŋaŋ vuota sʋgɩtɩ dɩ fɩala ʋ ma.
+      sbs: 0.7239
+      gen_sec: 6.14
+      ref_sec: 7.6
+      cer: 0.0847
+      wer: 0.1765
+    bible_00116:
+      source: bible
+      text: Die maŋ yiŋŋi a balɩ dɩ, ‘N Yɔmʋtieŋ ba wɔŋ sɩba dɩ die n ŋaaŋ gara Ŋmɩŋ jɩamɩŋ juone me a
+        yige ta nɩga vuodiekemba dɩ tuone fʋ a dii wo.
+      sbs: 0.7274
+      gen_sec: 10.67
+      ref_sec: 8.62
+      cer: 0.0288
+      wer: 0.0968
+    bible_00117:
+      source: bible
+      text: Die ba nagɩ wa a ga Siisiria ta die nagɩ gbaŋkʋ a yɩ vuokpɩɩkʋ Felikisi ta nagɩ Pɔɔli yi ʋ
+        nuusi me.
+      sbs: 0.7592
+      gen_sec: 7.34
+      ref_sec: 8.34
+      cer: 0.0897
+      wer: 0.2273
+    bible_00118:
+      source: bible
+      text: Ama vuoŋ benne a bala vuosi yaa gamma vuodieke n yine. Wʋnɩŋ ʋ yiwo Ŋmɩŋ, ta maŋ sɩba dɩ ʋ
+        balɩkʋ yiwo wusie.
+      sbs: 0.7743
+      gen_sec: 8.45
+      ref_sec: 9.36
+      cer: 0.0476
+      wer: 0.1739
+    bible_00119:
+      source: bible
+      text: Banabasi die dɩ yaala ʋ nagɩ Jɔɔn Maki a gʋtɩ ba ma aŋ ba ga.
+      sbs: 0.6583
+      gen_sec: 4.44
+      ref_sec: 3.24
+      cer: 0.0652
+      wer: 0.1333
+    bible_00120:
+      source: bible
+      text: N bala yɩa nɩ dama nɩ yiwo yɩantieliŋ, nɩ gbaŋ nɩ yilime yaa gamma wudieke n bala naa wa.
+      sbs: 0.7459
+      gen_sec: 6.74
+      ref_sec: 7.4
+      cer: 0.029
+      wer: 0.1053
+    bible_00121:
+      source: bible
+      text: Saŋka gie dɩ tʋana wɩa, n yile dɩ dɩ vɩɩna dɩ vuoŋ bemme ʋ wone beri die wo.
+      sbs: 0.7641
+      gen_sec: 5.63
+      ref_sec: 6.36
+      cer: 0.0702
+      wer: 0.1667
+    bible_00122:
+      source: bible
+      text: Die ka yiwo ŋmɩntʋasɩ, ta die ka tʋnvʋʋsa dɩ baa dɩ yi gasɩtɩaŋkʋ dʋʋgaka daraaŋ. Paliti die
+        dɩ balɩ a yɩ Juu vuosisi dɩ, “Nɩ naaŋ wa wʋnna.”
+      sbs: 0.67
+      gen_sec: 10.67
+      ref_sec: 10.34
+      cer: 0.0926
+      wer: 0.2857
+    bible_00123:
+      source: bible
+      text: 'Yisa die wɔŋ vaa ba yaalɩ wa boniŋ die ʋ jʋalɩ a kalɩ ka ma, sɩba dɩ maagɩna die Ŋmɩŋ gbaŋkʋ
+        ma dɩ:'
+      sbs: 0.7046
+      gen_sec: 7.59
+      ref_sec: 6.76
+      cer: 0.04
+      wer: 0.1304
+    bible_00124:
+      source: bible
+      text: Die Ŋmɩŋ die dɩ naaŋ jaaŋ mana a nyɩŋ ʋ ma, ta jaaŋ die wori Ŋmɩŋ dɩ naaŋ ta ka ka nyɩŋ ʋ
+        ma.
+      sbs: 0.7896
+      gen_sec: 7.34
+      ref_sec: 6.16
+      cer: 0.0294
+      wer: 0.0833
+    bible_00125:
+      source: bible
+      text: ta tɩ nagɩ tɩnɩŋ tɩ saŋŋa a yi Ŋmɩŋ jʋʋsɩŋ mi aŋaŋ Ŋmɩŋ wɩa dagɩŋ ma.”
+      sbs: 0.7535
+      gen_sec: 5.97
+      ref_sec: 5.12
+      cer: 0.0566
+      wer: 0.1875
+    bible_00126:
+      source: bible
+      text: Die vuodiekemba dɩ kenne dɩ ba waasɩ Meri wa pam die dɩ ye wudieke Yisa dɩ yine wo ta yi wo
+        yada.
+      sbs: 0.7466
+      gen_sec: 7.0
+      ref_sec: 6.12
+      cer: 0.0
+      wer: 0.0
+    bible_00127:
+      source: bible
+      text: wʋnɩŋ ʋ yaala vuota mana ye gbatɩtaanɩŋ ta keŋ sɩmma wusieke.
+      sbs: 0.7649
+      gen_sec: 4.95
+      ref_sec: 4.4
+      cer: 0.04
+      wer: 0.1818
+    bible_00128:
+      source: bible
+      text: Ta Ŋmɩŋ dieke dɩ yɩna mɩŋ tʋʋmaha dɩ tʋŋ wa, wʋnɩŋ ʋ yine mɩŋ Masia dɩdɩɩsɩrɩba mi yɔmʋ nɩ
+        suŋŋiŋ wɩa, dɩ vuosi sɩmma Ŋmɩŋ wɩaha.
+      sbs: 0.773
+      gen_sec: 10.58
+      ref_sec: 8.26
+      cer: 0.0693
+      wer: 0.3077
+    bible_00129:
+      source: bible
+      text: Saŋka mi gbaŋ gbaŋ Farasisi vuosi bataŋ die dɩ keŋ Yisa jigiŋ a balɩ a yɩ wa dɩ, “Sie fʋ nyɩŋ
+        giena a ga jigigaaŋ, dama naaŋ Herodi yaala ʋ kʋʋ fʋ mɩŋ.”
+      sbs: 0.7396
+      gen_sec: 11.78
+      ref_sec: 9.14
+      cer: 0.0783
+      wer: 0.2121
+    bible_00130:
+      source: bible
+      text: Dama yuŋ vuosi dɩ gʋʋra ta bataŋ dɩ nyuo daaŋ a buge.
+      sbs: 0.7092
+      gen_sec: 4.1
+      ref_sec: 3.64
+      cer: 0.3171
+      wer: 0.5
+    bible_00131:
+      source: bible
+      text: Wʋvɩɩnaha gie dɩ kenne nɩ jigiri tʋga jigiŋ mana mɩŋ tɩŋgbaŋka gie me ta wʋnsa vuosi beriŋ
+        sɩba ka wʋnsɩna nɩ beriŋ a nyɩŋ daa dieke die nɩ wʋnna ta sɩba Ŋmɩŋ zɔɔlɩnchɩgɩla aŋaŋ wusieke
+        dɩ sɩna die wo.
+      sbs: 0.7691
+      gen_sec: 16.04
+      ref_sec: 14.26
+      cer: 0.037
+      wer: 0.1538
+    bible_00132:
+      source: bible
+      text: Kʋrɩŋ ma wa, ta jaaŋ die dɩ ye wone wo, ama Ŋmɩŋ Nʋawɩɩŋ, vuodieke dɩ yine Yisa Masia, die
+        wɔŋ beri mɩŋ aŋaŋ Ŋmɩŋ. Ta bɩ yi Ŋmɩŋ.
+      sbs: 0.7587
+      gen_sec: 10.58
+      ref_sec: 9.0
+      cer: 0.0208
+      wer: 0.0714
+    bible_00133:
+      source: bible
+      text: a datɩ wa nyɩŋ tɩka lʋgɩŋ a piili a taa wa tana. Die vuodiekemba die dɩ taana wa tana wa die
+        dɩ vʋarɩ ba nyinyeeke dʋaŋ dalʋakɩŋ wʋnyɩ die dɩ dine Sɔɔli dɩ ʋ daansɩma ha.
+      sbs: 0.667
+      gen_sec: 12.8
+      ref_sec: 14.04
+      cer: 0.0827
+      wer: 0.3333
+    bible_00134:
+      source: bible
+      text: Naa kʋaŋ chaaŋ yʋagɩtieliŋ die dɩ benne tɩŋgbaŋka ma die dɩ keŋ Pɔɔli jigiŋ die ʋ gbaaŋ ba
+        mana.
+      sbs: 0.7807
+      gen_sec: 7.94
+      ref_sec: 8.1
+      cer: 0.0519
+      wer: 0.1579
+    bible_00135:
+      source: bible
+      text: Dɩɩ yi nɩ suŋŋe Ŋmɩŋ vuosi a yɩa ba jadieke ba wone, naa nan vaa vuosi pam bɩrɩ Ŋmɩŋ.
+      sbs: 0.762
+      gen_sec: 6.74
+      ref_sec: 5.98
+      cer: 0.0308
+      wer: 0.1053
+    bible_00136:
+      source: bible
+      text: Die wɩa die ʋ yɩ nʋaŋ dɩ ba sɩɩ ba; die ba sɩɩ ba Ŋmɩŋ nyaaŋ Yisa Masia saaŋ ma. Die wɩa die
+        ba balɩ Piita dɩ ʋ wɩɩrɩ ba jigiŋ daraa ale.
+      sbs: 0.7642
+      gen_sec: 10.24
+      ref_sec: 12.28
+      cer: 0.049
+      wer: 0.1515
+    bible_00137:
+      source: bible
+      text: Ama nɩ yallɩ wa kalinbaani ta kuule; nɩ kuulinene die wo ka vɩɩna.
+      sbs: 0.7075
+      gen_sec: 4.95
+      ref_sec: 5.46
+      cer: 0.0769
+      wer: 0.3077
+    bible_00138:
+      source: bible
+      text: Tɩ yalla kɩkaabɩtʋ kpɩɩŋ dieke dɩ sɩna Ŋmɩŋ tigiŋ me wɩa,
+      sbs: 0.7188
+      gen_sec: 4.69
+      ref_sec: 3.48
+      cer: 0.1304
+      wer: 0.3636
+    bible_00139:
+      source: bible
+      text: Die ba yiŋŋi a baarɩ dɩ, “Aayɩ, tɩ ye ka wɔŋ wʋŋ Ŋmɩŋ Halɩkasɩka wɩa.”
+      sbs: 0.7703
+      gen_sec: 5.55
+      ref_sec: 5.14
+      cer: 0.0196
+      wer: 0.0667
+    bible_00140:
+      source: bible
+      text: Dɩɩ yi ʋ yi fʋ bɩaŋ bʋyʋpɔyɩ dabalɩmɩŋ, ama ta yiŋŋi keŋ fʋ jigiŋ bʋyʋpɔyɩ a baarɩ dɩ ʋ chʋʋsɩya,
+        fʋ nagɩ ʋ taalɩ a chaa wa.”
+      sbs: 0.762
+      gen_sec: 9.56
+      ref_sec: 8.16
+      cer: 0.1263
+      wer: 0.3333
+    bible_00141:
+      source: bible
+      text: ta nyɩŋ mi a ga Filipi me, jigidieke die dɩ yine tɩgɩkpɩɩŋ Masedonia tɩŋgbaŋ ma. Die ka yiwo
+        Romani vuosi sɩɩtɩ. Die tɩ yi daraa a ŋmɩna mi.
+      sbs: 0.7808
+      gen_sec: 10.92
+      ref_sec: 11.9
+      cer: 0.0367
+      wer: 0.0714
+    bible_00142:
+      source: bible
+      text: ‘Manɩŋ n vʋara fʋ mɩŋ dɩ fʋ yi chaanɩŋ a yi vuodiekemba dɩ kana ka yi Juu vuosisi,
+      sbs: 0.7565
+      gen_sec: 6.14
+      ref_sec: 4.48
+      cer: 0.0635
+      wer: 0.2222
+    bible_00143:
+      source: bible
+      text: Ta die ba wʋnyɩ die dɩ yiŋŋi keŋ Yisa jigiŋ dama die ʋ sɩba a baarɩ dɩ Yisa gbaanna wa, a
+        keŋ bɩrɩ Ŋmɩŋ aŋaŋ lɔlɩkpɩɩŋ.
+      sbs: 0.7579
+      gen_sec: 9.56
+      ref_sec: 8.22
+      cer: 0.0326
+      wer: 0.1154
+    bible_00144:
+      source: bible
+      text: Saŋka mi die wumugisike pam die dɩ nan yaa gamma sie dieke tɩ Yɔmʋtieŋ dɩ dagɩna wɩa.
+      sbs: 0.7359
+      gen_sec: 6.57
+      ref_sec: 5.62
+      cer: 0.1029
+      wer: 0.1176
+    bible_00145:
+      source: bible
+      text: die ʋ faasɩ a keesi ŋmɩŋsikpeŋ a baarɩ dɩ, “Ŋmɩŋ alibarika bie fʋ ma a tɩaŋ hɔgʋba mana, ta
+        bɩ bie bʋa dieke fʋ balla fʋ mɩɩrɩ wa ma!
+      sbs: 0.7402
+      gen_sec: 10.15
+      ref_sec: 10.02
+      cer: 0.0693
+      wer: 0.2414
+    bible_00146:
+      source: bible
+      text: Ama die Ŋmɩŋ Halɩkasɩka die dɩ suuli Sitiiveni, ʋ kɔtɩ ʋ sikpeŋ a daansɩ ŋmɩŋsikpeŋ a ye Ŋmɩŋ
+        chuulikpeŋkpɩɩŋ ta ye Yisa dɩ zene Ŋmɩŋ nuudiigiŋ chaaŋ.
+      sbs: 0.7495
+      gen_sec: 12.71
+      ref_sec: 10.28
+      cer: 0.041
+      wer: 0.1111
+    bible_00147:
+      source: bible
+      text: Vuoŋ wori a ye ye Ŋmɩŋ; ama ʋ gbaŋ gbaŋ Bʋadembiŋ balɩŋka vuodieke dɩ benne ʋ lʋgɩŋ wa ta
+        bɩ mʋ wa, wʋnɩŋ ʋ yuorine a dagɩ tɩ Ŋmɩŋ dɩ sɩna dene.
+      sbs: 0.771
+      gen_sec: 11.43
+      ref_sec: 10.6
+      cer: 0.0636
+      wer: 0.25
+    bible_00148:
+      source: bible
+      text: Die ba dine vaa Piita aŋaŋ Jɔɔn wa, die ba yiŋŋi ga ba chanchaalɩba jigiŋ a balɩ ba wudieke
+        Ŋmɩŋ kɩkaabɩtɩba jakʋʋrɩ aŋaŋ nyɩŋkʋraha dɩ bala ba wa.
+      sbs: 0.7692
+      gen_sec: 12.03
+      ref_sec: 9.34
+      cer: 0.0593
+      wer: 0.25
+    bible_00149:
+      source: bible
+      text: Ama tɩ Gbɩgbatɩtaantʋ Yisa Masia keniŋ yuorine a dagɩ tɩ, wʋnɩŋ Yisa Masia die chʋʋsɩna kuŋ
+        hagɩrɩŋ, ta bɩ dagɩ tɩ dɩ tɩ saagɩ ʋ wʋvɩɩnaha tɩ nan ye miivoli dieke dɩ wone kpatɩŋ.
+      sbs: 0.7764
+      gen_sec: 13.82
+      ref_sec: 14.46
+      cer: 0.0493
+      wer: 0.2059
+    bible_00150:
+      source: bible
+      text: Yisa die dɩ yiŋŋi balɩ wa dɩ, “N naa, bɩa fʋ yaala n yi? N saŋŋa ye ka tʋgɩya.”
+      sbs: 0.7181
+      gen_sec: 5.8
+      ref_sec: 6.58
+      cer: 0.0545
+      wer: 0.1579
+    bible_00151:
+      source: bible
+      text: Tɩ Yɔmʋtieŋ Yisa Masia gbaŋ gbaŋ aŋaŋ tɩ Chɔɔŋ Ŋmɩŋ vuodieke dɩ chone tɩ ta suŋŋi tɩ a yɩ
+        tɩ sʋgɩdʋagɩ dieke dɩ wone kpatɩkʋ aŋaŋ tama dieke dɩ vɩɩŋna ʋ zɔɔlɩnchɩgɩla wɩa wa,
+      sbs: 0.759
+      gen_sec: 14.25
+      ref_sec: 11.2
+      cer: 0.1786
+      wer: 0.3235
+    bible_00152:
+      source: bible
+      text: Die tʋŋ dɩ bala ka vʋŋ, dɩ Juu vuosi davʋʋsɩkɩrɩ daraaŋ wa, ta vɔrɩkʋ dɩaŋ die dɩ gbigi mi
+        wo, die wɩa die ba guu wo mi.
+      sbs: 0.7876
+      gen_sec: 9.05
+      ref_sec: 11.78
+      cer: 0.0778
+      wer: 0.1481
+    bible_00153:
+      source: bible
+      text: Ʋ nan keŋ zeti Ŋmɩŋ jɩamɩŋ aŋaŋ jɩamɩŋ mana, ta yi ʋ gbaŋ sikpeŋ tieŋ dieke dɩ tɩanna jadieke
+        mana vuota dɩ jɩanna. Ʋ nan keŋ juu Ŋmɩŋ jɩamɩŋ juoku gbaŋ ta wasa ʋ gbaŋ Ŋmɩŋ.
+      sbs: 0.8006
+      gen_sec: 14.42
+      ref_sec: 12.6
+      cer: 0.0593
+      wer: 0.1667
+    bible_00154:
+      source: bible
+      text: Womi Lazurusi die dɩ keŋ nyɩŋ, logiti die dɩ veli ʋ nuusi aŋaŋ ʋ nagɩsɩ ta garɩbɩŋ die dɩ
+        bɔbɩ ʋ nine. Yisa die dɩ balɩ a yɩ ba dɩ, “Nɩ forisi gatɩtɩ ta vaa ʋ ga.”
+      sbs: 0.7696
+      gen_sec: 12.03
+      ref_sec: 13.18
+      cer: 0.124
+      wer: 0.3243
+    bible_00155:
+      source: bible
+      text: Ka kʋaŋ chaaŋ kʋaŋandɩɩsɩrʋ wa mi die dɩ wolinne a tʋgɩ wa gbaŋ die dɩ juu vɔrɩkʋ sʋŋ a ye
+        ta yi yada.
+      sbs: 0.7216
+      gen_sec: 7.85
+      ref_sec: 5.58
+      cer: 0.1139
+      wer: 0.3043
+    bible_00156:
+      source: bible
+      text: Die wɩa die ba hagɩ mi aŋaŋ nɩnhagɩrɩŋ aŋaŋ taŋ yaa gamma wʋbalɩkaha gie. Pɔɔli die dɩ balɩ
+        dɩ, “Saŋŋa dieke Ŋmɩŋ Halɩkasɩka die dɩ vana Ŋmɩŋ naazʋa Azaya die balɩ yɩ tɩ chɔɔŋkʋʋlɩba wa,
+        die ʋ balɩ wusie mɩŋ.
+      sbs: 0.7191
+      gen_sec: 16.98
+      ref_sec: 14.82
+      cer: 0.0427
+      wer: 0.15
+    bible_00157:
+      source: bible
+      text: Hanɩŋ wʋbalɩka nɩŋ sɩɩ sɩba kʋjagɩ dieke dɩ kana ka kpiye. Hamenusi aŋaŋ Filetusi ye daga
+        die dagɩkʋ.
+      sbs: 0.7585
+      gen_sec: 8.11
+      ref_sec: 8.74
+      cer: 0.0854
+      wer: 0.2778
+    bible_00158:
+      source: bible
+      text: Die wɩa, dɩɩ yi nyindiike dieke n dinene wa dɩ vasa n nɩmbʋa dɩ yie bɩaŋ, die nɩŋ n kaaŋ bɩ
+        ŋɔbɩ nɔŋ bɩbra amʋ n kaaŋ vaa ʋ yi bɩaŋ.
+      sbs: 0.7468
+      gen_sec: 10.07
+      ref_sec: 13.86
+      cer: 0.0606
+      wer: 0.1935
+    bible_00159:
+      source: bible
+      text: Dɩɩ yi vuodieke dɩ yallɩ nyinti a mɔgɩsa ʋ gbaŋ ta tɩala, ama ta ye ʋ nɩmbʋa dɩ wo jaaŋ, ta
+        ʋ baga dɩ wo ʋ ma, Ŋmɩŋ choti wo die vuoke me.
+      sbs: 0.7815
+      gen_sec: 10.15
+      ref_sec: 11.48
+      cer: 0.0588
+      wer: 0.1818
+    bible_00160:
+      source: bible
+      text: Mi die tɩ ye Yisa dɩdɩɩsɩrɩba bataŋ, die ba balɩ tɩ dɩ tɩ wɩarɩ ba jigiŋ daraa ayʋpɔyɩ. Die
+        tɩ keŋ nyɩŋ mi a ga Romi.
+      sbs: 0.7722
+      gen_sec: 8.87
+      ref_sec: 8.56
+      cer: 0.0112
+      wer: 0.0385
+    bible_00161:
+      source: bible
+      text: Ama ta malakaka die dɩ balɩ a yɩ wa dɩ, “Zakaria, da vaa ŋmaamɩŋ yalla fʋ! Ŋmɩŋ wʋŋ fʋ jʋʋsɩkʋ
+        mɩŋ, ta fʋ hɔgʋ Elizabeti nan mɩɩrɩ bʋadembiŋ a yɩ fʋ, ta nɩ nan wa wa Jɔɔn.
+      sbs: 0.7212
+      gen_sec: 13.06
+      ref_sec: 14.04
+      cer: 0.1016
+      wer: 0.2703
+    bible_00162:
+      source: bible
+      text: Ama die ba yene daa dieke die dɩ yene gbaaŋkʋ dɩ ziene Piita aŋaŋ Jɔɔn jigiri die ba ka bɩagɩ
+        balɩ wɩɩŋ a chʋʋsɩ ba.
+      sbs: 0.765
+      gen_sec: 8.87
+      ref_sec: 8.08
+      cer: 0.033
+      wer: 0.08
+    bible_00163:
+      source: bible
+      text: ta keŋ ye Yisa dɩ chʋnnana a tɩanna, ʋ baarɩ dɩ, “Ye, Ŋmɩŋ Yiipɔlɩka wʋnna.”
+      sbs: 0.7077
+      gen_sec: 5.8
+      ref_sec: 5.62
+      cer: 0.1071
+      wer: 0.4667
+    bible_00164:
+      source: bible
+      text: Ŋmɩŋ vuosi mana dɩ benne giena wa waasa nɩ.
+      sbs: 0.733
+      gen_sec: 3.41
+      ref_sec: 3.0
+      cer: 0.5
+      wer: 0.5556
+    bible_00165:
+      source: bible
+      text: dama die Lazurusi kumbu hagɩkʋ wɩa die Juu vuosi pam dɩ zeti ba kɩkaabɩtɩba nyɩŋkʋraha ama
+        ta gara Yisa jigiŋ a yie wo yada.
+      sbs: 0.7189
+      gen_sec: 9.47
+      ref_sec: 9.2
+      cer: 0.03
+      wer: 0.125
+    bible_00166:
+      source: bible
+      text: Die Yisa dɩdɩɩsɩrɩŋ diekemba dɩ benne Jerusalemi ma wa dɩ wʋŋ wudieke dɩ yinene wo, ta die
+        tʋŋ Banabasi Antiyoku ma.
+      sbs: 0.7723
+      gen_sec: 9.13
+      ref_sec: 8.58
+      cer: 0.0213
+      wer: 0.0952
+    bible_00167:
+      source: bible
+      text: Yisa die dɩ ye wo ʋ dʋna mi ta mɩŋŋɩ dɩ ʋ yʋagɩ yʋasɩ mɩŋ, die wɩa die ʋ balɩ a yɩ wa dɩ,
+        “Yaala fʋ ye alaafɩa mɩŋ?”
+      sbs: 0.7196
+      gen_sec: 8.28
+      ref_sec: 10.18
+      cer: 0.0843
+      wer: 0.2414
+    bible_00168:
+      source: bible
+      text: Die wɩa, ka bɩ yi yɔmʋ, ama yiwo Ŋmɩŋ bʋa, fʋ yine ʋ bʋa wa wɩa ʋ nan yɩ fʋ jadieke mana ʋ
+        yallɩnana a yɩa ʋ ballɩ.
+      sbs: 0.788
+      gen_sec: 8.28
+      ref_sec: 10.44
+      cer: 0.1548
+      wer: 0.3929
+    bible_00169:
+      source: bible
+      text: Ŋmɩŋ yiwo jabalɩmɩŋ ta yi vuota mana Chɔɔŋ,
+      sbs: 0.7517
+      gen_sec: 3.67
+      ref_sec: 3.0
+      cer: 0.4857
+      wer: 0.5
+    bible_00170:
+      source: bible
+      text: Da bɩsɩma kpihɔgʋ diekemba dɩ kana ka kʋrɩŋ tɩaŋ bɩna baŋɩsɩ-yʋaba a gʋtɩma kpihɔgʋba bɩsɩkʋ
+        ma. A bɩ gʋtɩ ʋ mʋ ʋ yiwo vuodieke die dɩ yalla chʋrʋ balɩmɩŋ,
+      sbs: 0.7607
+      gen_sec: 12.12
+      ref_sec: 13.14
+      cer: 0.121
+      wer: 0.4828
+    bible_00171:
+      source: bible
+      text: Die ba kana ka bɩagɩ a nyaŋŋɩ wa wɩa, die ba ga kpalɩ dembisi bataŋ dɩ ba balɩ dɩ “Tɩnɩŋ tɩ
+        wʋŋ wa ʋ balala a chʋʋsa Mosisi aŋaŋ Ŋmɩŋ.”
+      sbs: 0.7399
+      gen_sec: 10.41
+      ref_sec: 10.32
+      cer: 0.0392
+      wer: 0.1
+    bible_00172:
+      source: bible
+      text: Ama ba bataŋ dɩ baarɩ dɩ, “Lalɩa tʋntʋmbɩatɩ tieŋ dɩ baaŋ bɩagɩ tʋŋ mamachi wʋkpɩɩka gie?”
+        Die wɩa die ba nɩga nɩnhagɩrɩŋ aŋaŋ taŋ.
+      sbs: 0.7667
+      gen_sec: 10.5
+      ref_sec: 9.02
+      cer: 0.1068
+      wer: 0.25
+    bible_00173:
+      source: bible
+      text: Wʋnɩŋ Ŋmɩŋ taasɩna tɩ aŋaŋ Yisa Masia ta ʋ yine tɩ yɩaŋ. Ʋ wɩa Ŋmɩŋ dɩ vʋarɩ tɩ a nyɩŋ bɩaŋ
+        ma, ta baarɩ tɩ yiwo vuovɩɩna ʋ jigiŋ, ta bɩ yi ʋ vuosi.
+      sbs: 0.7894
+      gen_sec: 11.61
+      ref_sec: 10.86
+      cer: 0.0541
+      wer: 0.1765
+    bible_00174:
+      source: bible
+      text: “N Chʋa, saŋka tʋgɩya mɩŋ. Vaa manɩŋ fʋ Bʋa Dembike ye bɩrɩŋ, amʋ n gbaŋ n nan vaa fʋ ye bɩrɩŋ.
+      sbs: 0.7417
+      gen_sec: 7.34
+      ref_sec: 8.42
+      cer: 0.0857
+      wer: 0.3333
+    bible_00175:
+      source: bible
+      text: Davidi beriŋ die dɩ suuli Ŋmɩŋ nine, ta die keŋ jʋʋsɩ dɩ ʋ vaa ʋ mɩɩ tigiŋ a yɩ wʋnɩŋ Ŋmɩŋ
+        vuodieke die dɩ ʋ chɔɔŋkʋʋŋ Jakobu Ŋmɩnnɩ.
+      sbs: 0.736
+      gen_sec: 10.84
+      ref_sec: 9.5
+      cer: 0.1538
+      wer: 0.3929
+    bible_00176:
+      source: bible
+      text: Ama kɩkaabɩtɩba nyɩŋkʋraha aŋaŋ Farasisi vuosisi die wɔŋ yɩ wa nʋaŋ dɩ vuodieke dɩ keŋ ye
+        jigidieke Yisa dɩ benne ʋ keŋ a yɩ ba doose amʋ ba nan yigi wo.
+      sbs: 0.72
+      gen_sec: 12.03
+      ref_sec: 11.22
+      cer: 0.1148
+      wer: 0.2581
+    bible_00177:
+      source: bible
+      text: Die wɩa mɩrɩkʋʋrɩ ka bɩ tʋma dama ka wo hagɩrɩŋ aŋaŋ nyʋarɩ.
+      sbs: 0.7273
+      gen_sec: 4.78
+      ref_sec: 4.36
+      cer: 0.125
+      wer: 0.3333
+    bible_00178:
+      source: bible
+      text: Ŋmɩŋ vʋarɩ wa vuosi ba yi Masia dɩdɩɩsɩrɩŋ “Babiloni” tɩŋgbaŋ ma gie sɩba ʋ vʋarɩna nɩ dene
+        wo. Ba mana waasa nɩ. Ta n bʋadembiŋ Maki gbaŋ dɩ waasa nɩ.
+      sbs: 0.7349
+      gen_sec: 11.69
+      ref_sec: 10.36
+      cer: 0.0427
+      wer: 0.2
+    bible_00179:
+      source: bible
+      text: Vuodiekemba mana dɩ yine Ŋmɩŋ ballɩ tuo wo ba Chɔɔŋ Ŋmɩŋ ta ka yie bɩaŋ. Ba ka bɩagɩ yie bɩaŋ
+        dama ba tuone ba Chɔɔŋ Ŋmɩŋ beriŋ wɩa.
+      sbs: 0.7845
+      gen_sec: 10.67
+      ref_sec: 10.62
+      cer: 0.0194
+      wer: 0.0714
+    bible_00180:
+      source: bible
+      text: Die wɩa tɩ wa sɩba dɩ die ba ka bɩagɩ juu kanɩŋ tɩŋgbaŋka me, dama die ba wone yada wɩa.
+      sbs: 0.7406
+      gen_sec: 6.66
+      ref_sec: 9.92
+      cer: 0.0
+      wer: 0.0
+    bible_00181:
+      source: bible
+      text: Chɩchɩgɩla mana mɩa mɩŋ ta yige ba gbaŋ dɩ ba keŋ tuo tune dieke dɩ kana ka yʋasa aŋaŋ kpatɩŋ,
+        ama tɩnɩŋ tɩ tʋma dɩ tɩ keŋ tuo tune dieke dɩ wone kpatɩŋ haahuu.
+      sbs: 0.7696
+      gen_sec: 12.54
+      ref_sec: 14.94
+      cer: 0.072
+      wer: 0.1471
+    bible_00182:
+      source: bible
+      text: Lele tɩ wa sɩba dɩ sɩba jaaŋ mana mɩŋ, ta ka bɩ mʋ dɩ vuoŋ pɩasɩ fʋ wʋpɩasɩka. Lele tɩ yi
+        yada mɩŋ dɩ seŋ nyɩŋ wa Ŋmɩŋ jigiŋ.”
+      sbs: 0.7572
+      gen_sec: 9.81
+      ref_sec: 9.66
+      cer: 0.0319
+      wer: 0.1724
+    bible_00183:
+      source: bible
+      text: Die ba nagɩ tʋntʋmbɩatɩ tieliŋ bale gbaŋ a gʋtɩ Yisa ma dɩ ba ga kʋʋ ba.
+      sbs: 0.6869
+      gen_sec: 5.46
+      ref_sec: 4.62
+      cer: 0.2143
+      wer: 0.3125
+    bible_00184:
+      source: bible
+      text: Fʋ kana ka hagɩrɩŋ saŋŋa mana wa, daa nyume nyaaŋ nyɩɩna ma, ama ŋaaŋ nyu daaŋ bɩta aŋ bʋ
+        suŋŋi fʋ nyuutiti.
+      sbs: 0.7603
+      gen_sec: 8.96
+      ref_sec: 7.92
+      cer: 0.0476
+      wer: 0.1818
+    bible_00185:
+      source: bible
+      text: Lele Ŋmɩŋ baa ʋ datɩ fʋ tɩbɩŋ ta vaa fʋ yɩɩŋ ta kaaŋ dɩ yese daraa ale.”
+      sbs: 0.7434
+      gen_sec: 5.55
+      ref_sec: 3.86
+      cer: 0.0926
+      wer: 0.2353
+    bible_00186:
+      source: bible
+      text: Ye Melikizedeki die dɩ yine vuokpɩɩŋ dene, ta tɩ chɔɔŋkʋʋŋkpɩɩŋ Abarahami die yɩ wa jadieke
+        mana die ʋ wagɩna gbatɩ a nyɩŋ tɔŋ ma baŋ sʋŋ mana kaanɩ.
+      sbs: 0.7785
+      gen_sec: 12.03
+      ref_sec: 12.32
+      cer: 0.0417
+      wer: 0.1429
+    bible_00187:
+      source: bible
+      text: Tɩ Yɔmʋtieŋ Yisa dɩ keŋ keŋ saŋŋa dieke, nɩnɩŋ nɩ bala nɩ yi tɩ tama aŋaŋ tɩ nyʋarɩ, ta nɩ
+        wɩa tɩ baa tɩ keŋ zie ʋ jigiŋ aŋaŋ sʋgɩfɩalɩŋ aŋaŋ kuuliŋ.
+      sbs: 0.7905
+      gen_sec: 12.37
+      ref_sec: 9.86
+      cer: 0.0348
+      wer: 0.125
+    bible_00188:
+      source: bible
+      text: Die dɩ sɩ aŋaŋ jiliku; ka yiwo jabɩŋ vuota nyɩŋgbanɩŋ ma, ama vuota naga ka a bala wʋkpɩɩma.
+      sbs: 0.7734
+      gen_sec: 7.34
+      ref_sec: 6.1
+      cer: 0.0278
+      wer: 0.1111
+    bible_00189:
+      source: bible
+      text: N maaga nɩ wɩaha gie yaa gamma vuodiekemba dɩ mɩnana dɩ ba gaaŋ nɩ wɩa.
+      sbs: 0.7338
+      gen_sec: 5.29
+      ref_sec: 5.54
+      cer: 0.0
+      wer: 0.0
+    bible_00190:
+      source: bible
+      text: Da galɩma daajakʋʋŋ mana, ama kpaama wa sɩba fʋ gbaŋ gbaŋ fʋ chʋa, yallɩma dalʋakaha sɩba
+        fʋ gbaŋ gbaŋ fʋ nɩmballɩ,
+      sbs: 0.7695
+      gen_sec: 9.22
+      ref_sec: 6.94
+      cer: 0.1413
+      wer: 0.4762
+    bible_00191:
+      source: bible
+      text: Yisa die dɩ pɩasɩ wa dɩ, “Fʋ yene mɩŋ wɩa fʋ yi yada? Sʋgɩfɩalɩŋ bie vuodiekemba dɩ kana ka
+        ye mɩŋ ta yi mɩŋ yada ma.”
+      sbs: 0.7826
+      gen_sec: 8.79
+      ref_sec: 9.8
+      cer: 0.0455
+      wer: 0.1538
+    bible_00192:
+      source: bible
+      text: 'Dɩ yiwo wusie dɩ Masia wudieke Ŋmɩŋ dɩ yuorine a dagɩ tɩ naa faasɩ yaa hagɩrɩŋ mɩŋ:'
+      sbs: 0.7495
+      gen_sec: 6.57
+      ref_sec: 6.8
+      cer: 0.0
+      wer: 0.0
+    bible_00193:
+      source: bible
+      text: Ama ta Ŋmɩŋ die dɩ sʋgɩrɩ wa kumbu me daraa ataa daraaŋ ta yi ʋ hagɩ ta tɩ ye wo ʋ seŋ yi
+        vuota.
+      sbs: 0.747
+      gen_sec: 7.08
+      ref_sec: 8.58
+      cer: 0.1111
+      wer: 0.2917
+    bible_00194:
+      source: bible
+      text: Nɩ kana ka bɩagɩ a yi wubike gie, bɩa nɩ mugisi nɩ gbaŋ aŋaŋ nyintialɩkaha.
+      sbs: 0.789
+      gen_sec: 5.89
+      ref_sec: 5.28
+      cer: 0.1017
+      wer: 0.2667
+    bible_00195:
+      source: bible
+      text: Die saŋka dɩ tʋgɩ dɩ Josefu aŋaŋ Meri yi Mosisi mɩraha die dɩ dagɩna die wo, dɩ ba yi kaaba
+        a wʋnsɩ ba gbaŋ Ŋmɩŋ jigiŋ. Die wɩa die ba nagɩ bʋa wa a ga Jerusalemi dɩ ba nagɩ wa a yɩ tɩ Yɔmʋtieŋ
+        Nabidie Ŋmɩŋ,
+      sbs: 0.7215
+      gen_sec: 16.12
+      ref_sec: 12.88
+      cer: 0.0377
+      wer: 0.1304
+    bible_00196:
+      source: bible
+      text: Lele n wa yiwo nɩ dataaŋ die n bala nɩ wusieke wɩa?
+      sbs: 0.7692
+      gen_sec: 3.75
+      ref_sec: 3.98
+      cer: 0.0
+      wer: 0.0
+    bible_00197:
+      source: bible
+      text: Yuku mi gbaŋ gbaŋ die gbɩgbarɩtʋ wa die dɩ nagɩ ba a ga sugiri ba kʋjagaha, ka kʋaŋ chaaŋ
+        die ba sɩɩ wʋnɩŋ aŋaŋ ʋ tigiŋ vuosi mana Ŋmɩŋ nyaaŋ.
+      sbs: 0.7808
+      gen_sec: 11.43
+      ref_sec: 9.58
+      cer: 0.0811
+      wer: 0.2
+    bible_00198:
+      source: bible
+      text: Dama nɩ kpaŋŋɩna nɩ gbaŋ ta waga aŋaŋ bɩaŋ naa, nɩ wʋnyɩ ye ka kpaŋŋɩ ʋ gbaŋ a ga tʋgɩ saŋŋa
+        dieke ba kʋna wa.
+      sbs: 0.7829
+      gen_sec: 8.96
+      ref_sec: 10.08
+      cer: 0.0476
+      wer: 0.16
+    bible_00199:
+      source: bible
+      text: Die lɔlɩkʋ dɩ bɩ balɩ yɩ wa bɩbra dɩ, “Da keŋ wa jadieke Ŋmɩŋ dɩ yine kasɩ jadɩngɩtɩŋ.”
+      sbs: 0.7189
+      gen_sec: 6.66
+      ref_sec: 5.46
+      cer: 0.0909
+      wer: 0.1667
 - model: facebook/mms-tts-kma
   model_url: https://huggingface.co/facebook/mms-tts-kma
   mode: noref
@@ -17696,4 +19465,4 @@ benchmarks:
       ref_sec: 5.46
       cer: 0.4848
       wer: 0.9444
-updated: '2026-10-02'
+updated: '2026-10-09'

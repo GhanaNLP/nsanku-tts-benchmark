@@ -5045,6 +5045,1684 @@ benchmarks:
       ref_sec: 3.34
       cer: 0.2143
       wer: 0.7143
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7299
+  num_scored: 200
+  cer: 0.1285
+  wer: 0.3401
+  accuracy: 0.8715
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8007
+  score: 0.8007
+  per_source:
+    bible:
+      sbs: 0.7299
+      cer: 0.1285
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Zugsɔb la da yɛl Josua ye, “M zaŋ Jeriko teŋ la niŋi ya nuusin, laan nɛ ba naab nɛ ba zabzabidib
+        la wʋsa.
+      sbs: 0.7567
+      gen_sec: 8.45
+      ref_sec: 9.48
+      cer: 0.1139
+      wer: 0.2174
+    bible_00001:
+      source: bible
+      text: ka kuom la kpɛnɛd o nɔɔrin nɛ kpieuŋ siem.
+      sbs: 0.7391
+      gen_sec: 3.5
+      ref_sec: 4.1
+      cer: 0.1818
+      wer: 0.1111
+    bible_00002:
+      source: bible
+      text: Ala ka fʋ na baŋ ye manɛ sid an Zugsɔb la.
+      sbs: 0.7361
+      gen_sec: 3.24
+      ref_sec: 3.96
+      cer: 0.0968
+      wer: 0.2727
+    bible_00003:
+      source: bible
+      text: Ka David nɛ o zabzabidib la wʋsa lɛb Jerusalem.
+      sbs: 0.751
+      gen_sec: 3.84
+      ref_sec: 3.34
+      cer: 0.0526
+      wer: 0.1111
+    bible_00004:
+      source: bible
+      text: Zugsɔb la da bɛ nɛ Naab Jehosafat bɔzugɔ o naam la pinilʋgʋn la o da dɔl nɛ suobanɛ ka o yaab
+        David da dɔl la.
+      sbs: 0.7566
+      gen_sec: 8.62
+      ref_sec: 8.66
+      cer: 0.1176
+      wer: 0.24
+    bible_00005:
+      source: bible
+      text: ” Moses da yɛl Zugsɔb la ye, “M Zugsɔb Winaam onɛ an ninsaal wʋsa vʋm, gaŋim sɔ ka o an nidib
+        nwa tuongat ka gati ba tuon tanpin.
+      sbs: 0.777
+      gen_sec: 10.07
+      ref_sec: 11.16
+      cer: 0.0825
+      wer: 0.2963
+    bible_00006:
+      source: bible
+      text: Hali fʋ na nyɛ yɛlkisa linɛ gaad ala.
+      sbs: 0.6853
+      gen_sec: 2.99
+      ref_sec: 3.58
+      cer: 0.1379
+      wer: 0.5
+    bible_00007:
+      source: bible
+      text: M yaa ti duoe ka nyɛɛ fʋ nindaa, lin maaa siakim.
+      sbs: 0.7354
+      gen_sec: 3.84
+      ref_sec: 5.86
+      cer: 0.0811
+      wer: 0.2727
+    bible_00008:
+      source: bible
+      text: Ba da pinil piinkaŋa tisib nɛ nwadkanɛ paas atan la ni ti paae nwadis ayɔpɔi la ni.
+      sbs: 0.7586
+      gen_sec: 6.74
+      ref_sec: 6.22
+      cer: 0.0606
+      wer: 0.1765
+    bible_00009:
+      source: bible
+      text: Amaa nidib la sʋnf da duonɛ pamm suorin la ka ba pian zɛrig Winaam nɛ Moses, n yɛt ye, “Bɔ
+        ka ya mɔri ti yi Egipt teŋin kena ye ti kpi mɔɔgin kpɛla?
+      sbs: 0.7569
+      gen_sec: 11.61
+      ref_sec: 10.08
+      cer: 0.0893
+      wer: 0.2424
+    bible_00010:
+      source: bible
+      text: Ka Winaam naam paŋ nɛ Pɛbil la nyɛɛnnɛ li ni, ka li nie nyain.
+      sbs: 0.6261
+      gen_sec: 4.95
+      ref_sec: 3.8
+      cer: 0.1702
+      wer: 0.2857
+    bible_00011:
+      source: bible
+      text: Ka m wʋm ka siel vuudi nwɛnɛ kʋkɔr linɛ yi bʋnvʋya anaasi la sʋʋgin yɛt ye, “Ki makir ligidi
+        na zem nidi na tʋm daar yinne tʋʋma yɔɔd.
+      sbs: 0.6219
+      gen_sec: 10.58
+      ref_sec: 7.08
+      cer: 0.1827
+      wer: 0.4643
+    bible_00012:
+      source: bible
+      text: Paŋ nɛ kpieuŋ bɛ nɛ fʋ nuusin, ka sɔ kae na nyaŋi zienɛ fʋ tuonnɛ.
+      sbs: 0.7303
+      gen_sec: 5.46
+      ref_sec: 5.6
+      cer: 0.16
+      wer: 0.3333
+    bible_00013:
+      source: bible
+      text: Saam la yaa zinin Israel dɔsia wʋsa teŋin, ani ka ya na tisi baa ba faar.
+      sbs: 0.7542
+      gen_sec: 5.89
+      ref_sec: 6.42
+      cer: 0.0714
+      wer: 0.1875
+    bible_00014:
+      source: bible
+      text: Saŋa kenna ka ba na tam Taya yɛla yʋma pisyɔpɔi, li na nwɛnɛ naab nyɔvʋr bɛllim saŋa nɛ.
+      sbs: 0.7384
+      gen_sec: 7.25
+      ref_sec: 8.5
+      cer: 0.2174
+      wer: 0.5556
+    bible_00015:
+      source: bible
+      text: Naab Joas da pʋ tiɛn tʋʋm sʋma banɛ ka Zakaria saam Jehoyada da tʋm tis o la ka kʋʋ o biig.
+      sbs: 0.7605
+      gen_sec: 7.08
+      ref_sec: 8.24
+      cer: 0.1
+      wer: 0.2381
+    bible_00016:
+      source: bible
+      text: Solomon mɛ da bʋlig dɔbanɛ bɛɛ agɔla la nɛ sanlima.
+      sbs: 0.7316
+      gen_sec: 4.18
+      ref_sec: 4.18
+      cer: 0.3415
+      wer: 0.5
+    bible_00017:
+      source: bible
+      text: Li na vi suokennib suor bɔzugɔ, ba na mum Gog nɛ o nidib la wʋsa anina.
+      sbs: 0.7477
+      gen_sec: 5.55
+      ref_sec: 5.44
+      cer: 0.1111
+      wer: 0.4375
+    bible_00018:
+      source: bible
+      text: Ka Josua nɛ Israel dim kpɛɛmnam la sʋʋnr sanam ka ba vanbin teŋ Zugsɔb la Nɔnaar Daka la tuon,
+        ka digin ani ti paae zaam, ka bugu ba zut nɛ uusʋg ye li paali ba sʋnsaaŋ.
+      sbs: 0.7632
+      gen_sec: 13.57
+      ref_sec: 14.36
+      cer: 0.1145
+      wer: 0.3333
+    bible_00019:
+      source: bible
+      text: O mɛ pʋm pʋ gɔsi nyɛ banɛ ye ba anɛ yaam dim laa.
+      sbs: 0.7497
+      gen_sec: 3.67
+      ref_sec: 6.96
+      cer: 0.3056
+      wer: 0.6154
+    bible_00020:
+      source: bible
+      text: Ani ka Reuben dim, nɛ Gad dim, nɛ Manase dim pʋsʋk la da lɛbisi yɛl Israel tuongatib la ye
+        “Zugsɔb la an Paŋtitaar Sɔb!
+      sbs: 0.7828
+      gen_sec: 9.56
+      ref_sec: 9.36
+      cer: 0.1087
+      wer: 0.3333
+    bible_00021:
+      source: bible
+      text: Gad dɔɔg la, banɛ ka ba da kaal da anɛ tusa pisnaasi nɛ kɔbisnu .
+      sbs: 0.7624
+      gen_sec: 5.03
+      ref_sec: 5.74
+      cer: 0.2041
+      wer: 0.5
+    bible_00022:
+      source: bible
+      text: Nuus wʋsa na kpi zɛba, ka duma wʋsa nyɔsid ka bʋk wʋʋ gungum nɛ.
+      sbs: 0.7665
+      gen_sec: 5.03
+      ref_sec: 5.38
+      cer: 0.1224
+      wer: 0.2143
+    bible_00023:
+      source: bible
+      text: Zinibanɛ ka ba na dɛligid asau na bɛɛ ani.
+      sbs: 0.693
+      gen_sec: 3.33
+      ref_sec: 4.54
+      cer: 0.2424
+      wer: 0.7778
+    bible_00024:
+      source: bible
+      text: Ka vʋm an bɔɔ tis onɛ bɛ tɔɔg pʋʋginɛ?
+      sbs: 0.6988
+      gen_sec: 2.99
+      ref_sec: 3.44
+      cer: 0.3793
+      wer: 0.6667
+    bible_00025:
+      source: bible
+      text: Ya bɔnɔsʋma la pɛɛl nɛ zaba tɛrekonam.
+      sbs: 0.7004
+      gen_sec: 3.16
+      ref_sec: 3.16
+      cer: 0.2258
+      wer: 0.5714
+    bible_00026:
+      source: bible
+      text: M na yʋʋm yʋʋm paalli tisif, O Winaam; M na nwɛ kɔnne yʋʋm yʋʋma tisif.
+      sbs: 0.7542
+      gen_sec: 5.63
+      ref_sec: 5.1
+      cer: 0.2963
+      wer: 0.8
+    bible_00027:
+      source: bible
+      text: Bɔ ka fʋ na kɛ ka Winaam sʋnf duoe nɛf ka o sanami fʋ nuug tʋʋma?
+      sbs: 0.7515
+      gen_sec: 4.95
+      ref_sec: 4.5
+      cer: 0.2449
+      wer: 0.4375
+    bible_00028:
+      source: bible
+      text: ka ba na tune sanami ba hali gaad ban sanamid zʋnzʋnr siem la!
+      sbs: 0.7288
+      gen_sec: 4.95
+      ref_sec: 5.6
+      cer: 0.2041
+      wer: 0.4615
+    bible_00029:
+      source: bible
+      text: Winaam pʋ kɛlisidi ba fabilyɛɛd la; Onɛ an Paŋtitaar sɔb la baa pʋn kae nɛ baa.
+      sbs: 0.7917
+      gen_sec: 6.49
+      ref_sec: 8.36
+      cer: 0.1452
+      wer: 0.5625
+    bible_00030:
+      source: bible
+      text: ka bugum pielim na dit o naam girima laad la wʋsa.
+      sbs: 0.7559
+      gen_sec: 3.93
+      ref_sec: 3.58
+      cer: 0.0
+      wer: 0.0
+    bible_00031:
+      source: bible
+      text: ” Amaa banɛ lɛɛ da ye ba sʋŋnɛ lug on nɛ Israel dim wʋsa.
+      sbs: 0.7456
+      gen_sec: 4.35
+      ref_sec: 7.06
+      cer: 0.0952
+      wer: 0.3077
+    bible_00032:
+      source: bible
+      text: Alazug da kɛ ka o Zugsɔb Winaam bas suor ka Aram naab kena nyaŋ o.
+      sbs: 0.7491
+      gen_sec: 5.29
+      ref_sec: 5.64
+      cer: 0.0196
+      wer: 0.2
+    bible_00033:
+      source: bible
+      text: Ka Pɛbil la lak titabir linɛ tabili paas ayɔpɔi la, ka arezana ni an baanlimm saŋa biela.
+      sbs: 0.6908
+      gen_sec: 7.34
+      ref_sec: 5.76
+      cer: 0.1408
+      wer: 0.4706
+    bible_00034:
+      source: bible
+      text: ka nɔk sanlimmɛŋir zupibigi pil o zug.
+      sbs: 0.6949
+      gen_sec: 3.24
+      ref_sec: 3.44
+      cer: 0.1613
+      wer: 0.4286
+    bible_00035:
+      source: bible
+      text: Jotam da maal kaalim ka ba mum o yaanam yaadin, David tempʋʋgin.
+      sbs: 0.7425
+      gen_sec: 5.29
+      ref_sec: 4.06
+      cer: 0.1176
+      wer: 0.4167
+    bible_00036:
+      source: bible
+      text: Kɛlisimi mam mɛ mɔr kʋkɔsia ye m lɛbis.
+      sbs: 0.6995
+      gen_sec: 3.16
+      ref_sec: 3.32
+      cer: 0.1935
+      wer: 0.5
+    bible_00037:
+      source: bible
+      text: Ba da yɛl ye, “Zugsɔb la da tisif nɔɔr ye fʋ maalim bʋgʋlʋm-bʋgʋlʋm pʋdig teŋ la tis Israel
+        dim la, ka yɛlif ye fʋ nɔkimi ti baabiig Zelofehad faar la tis o bipumis la.
+      sbs: 0.7753
+      gen_sec: 13.48
+      ref_sec: 13.08
+      cer: 0.1385
+      wer: 0.2647
+    bible_00038:
+      source: bible
+      text: Ka m gɔsi nyɛ Zugsɔb naam pipilim ka li pɛɛl Zugsɔb Pʋʋsim Dɔɔg la, ka sʋʋnnɛ m nindaa teŋin.
+      sbs: 0.7753
+      gen_sec: 7.59
+      ref_sec: 6.76
+      cer: 0.0959
+      wer: 0.1579
+    bible_00039:
+      source: bible
+      text: Moses onɛ an Winaam nid la da niŋ Israel dim albareka siem nwa ka nyaan kpi.
+      sbs: 0.776
+      gen_sec: 6.14
+      ref_sec: 5.06
+      cer: 0.05
+      wer: 0.1875
+    bible_00040:
+      source: bible
+      text: Ka daba ayɔpɔi daar la, ya na gilig teŋ la nɔɔr ayɔpɔi ka maanmaannib la piebidi ba naatana
+        la.
+      sbs: 0.7783
+      gen_sec: 7.77
+      ref_sec: 7.48
+      cer: 0.1067
+      wer: 0.2632
+    bible_00041:
+      source: bible
+      text: Ya siaki die Jezebɛl, pua kanɛ yɛl ye o anɛ Winaam nɔdies la.
+      sbs: 0.6359
+      gen_sec: 4.86
+      ref_sec: 3.42
+      cer: 0.1064
+      wer: 0.1538
+    bible_00042:
+      source: bible
+      text: Ba da keŋ yɛl o ye, “Li ka suor ka fʋn Uzia, nyuoe bʋnnyubisa tis Zugsɔb la.
+      sbs: 0.7383
+      gen_sec: 5.97
+      ref_sec: 5.86
+      cer: 0.1429
+      wer: 0.4706
+    bible_00043:
+      source: bible
+      text: O na nɔk zuobid la niŋ bugum kanɛ bɛ maan bimbimin dit o maan linɛ an taaba laasʋg maan la.
+      sbs: 0.7472
+      gen_sec: 7.25
+      ref_sec: 8.04
+      cer: 0.0141
+      wer: 0.05
+    bible_00044:
+      source: bible
+      text: Sieba bɛɛ ya ni ka dɔl Balaam onɛ da paal Balak on na niŋ siem kɛ ka Israel dim tʋm tʋʋmbɛɛd
+        la paalʋg.
+      sbs: 0.6153
+      gen_sec: 8.19
+      ref_sec: 5.94
+      cer: 0.0375
+      wer: 0.1304
+    bible_00045:
+      source: bible
+      text: Jehoram da ba nyaa sʋʋŋa o saam sʋʋlim la ni la, o da kʋʋ o pitib la wʋsa laan nɛ kpɛɛmnam
+        banɛ bɛ Israel la sieba.
+      sbs: 0.7488
+      gen_sec: 9.05
+      ref_sec: 10.7
+      cer: 0.1477
+      wer: 0.3077
+    bible_00046:
+      source: bible
+      text: Sanauŋ tansi yi paalʋ na, ka zabbɔɔdib la busid wʋʋ tutuud nɛ, ka titaalim nɔbigid wʋʋ mɔɔd
+        puum!
+      sbs: 0.7806
+      gen_sec: 8.11
+      ref_sec: 9.22
+      cer: 0.1818
+      wer: 0.6111
+    bible_00047:
+      source: bible
+      text: Zion nidiba, ya Winaam la na bɛɛ tis zʋmaana wʋsa.
+      sbs: 0.7381
+      gen_sec: 4.1
+      ref_sec: 4.48
+      cer: 0.1538
+      wer: 0.3
+    bible_00048:
+      source: bible
+      text: Ka linɛ paas awai la gaŋ Jesua, ka linɛ paas piiga la gaŋ Siekania.
+      sbs: 0.671
+      gen_sec: 5.55
+      ref_sec: 5.2
+      cer: 0.0769
+      wer: 0.2857
+    bible_00049:
+      source: bible
+      text: Amaa ba da kaasi buol Zugsɔb la bɔɔd sʋŋir, ka o kɛ ka lik kɛn ban nɛ Egipt dim la teŋsʋk
+        na.
+      sbs: 0.754
+      gen_sec: 7.34
+      ref_sec: 7.7
+      cer: 0.0571
+      wer: 0.1364
+    bible_00050:
+      source: bible
+      text: Yiiga bʋgʋlʋm-bʋgʋlʋm la da gaŋnɛ Jehoyarib, ka linɛ tiaal la gaŋ Jedaya.
+      sbs: 0.7434
+      gen_sec: 6.4
+      ref_sec: 6.46
+      cer: 0.3051
+      wer: 0.8333
+    bible_00051:
+      source: bible
+      text: Zadok onɛ an Eleazar yaaŋ la nɛ Ahimelek onɛ da an Itamar yaaŋ la da sʋŋ Naab David ka o pʋdig
+        tʋʋma la kɔnɔb kɔnɔbi tis Levi dim la ka paali ba ban na tʋm siem.
+      sbs: 0.7708
+      gen_sec: 12.89
+      ref_sec: 12.54
+      cer: 0.096
+      wer: 0.25
+    bible_00052:
+      source: bible
+      text: Nwɛnɛ ti saalibi mɔr niŋgbiŋ yinne, ka li mɔr luos bɛdegʋ, ka luos wʋsa mɔri ba tʋʋma gʋn-gʋn,
+        ala mɛn, ti anɛ yinne nɛ Kristo ka nwɛnɛ niŋgbiŋ yinne nɛ, laan nɛ tinamɛ an bɛdegʋ la.
+      sbs: 0.6673
+      gen_sec: 15.1
+      ref_sec: 13.94
+      cer: 0.1571
+      wer: 0.4444
+    bible_00053:
+      source: bible
+      text: O yʋʋr na buon ye Solomon, ka m na tis Israel suguru ka ba zin baanlimm o naam saŋa.
+      sbs: 0.7568
+      gen_sec: 6.66
+      ref_sec: 5.8
+      cer: 0.0469
+      wer: 0.1053
+    bible_00054:
+      source: bible
+      text: Naab Joas n maligim maal Pʋʋsim Yir la siem.
+      sbs: 0.7058
+      gen_sec: 3.58
+      ref_sec: 3.1
+      cer: 0.1429
+      wer: 0.4444
+    bible_00055:
+      source: bible
+      text: Ka m lɛn nyɛ bʋnsia yaas linɛ maan dunia nwa ni.
+      sbs: 0.7307
+      gen_sec: 3.75
+      ref_sec: 3.18
+      cer: 0.1622
+      wer: 0.2727
+    bible_00056:
+      source: bible
+      text: Naab sʋnf yaa duoe nɛ naayikpɛɛm, on da bas o kpɛuŋɔ.
+      sbs: 0.7496
+      gen_sec: 4.35
+      ref_sec: 4.24
+      cer: 0.1463
+      wer: 0.4545
+    bible_00057:
+      source: bible
+      text: ka wʋm Naab la sɔsʋg, ka nɔk o paŋ titaar la sʋŋ o.
+      sbs: 0.7484
+      gen_sec: 4.1
+      ref_sec: 3.66
+      cer: 0.0541
+      wer: 0.0769
+    bible_00058:
+      source: bible
+      text: Ba na zunod o ka maan maana nɛ zʋʋd piini, ba na ziel nɔɔri tis Zugsɔb la ka dɔlisi li.
+      sbs: 0.7653
+      gen_sec: 6.74
+      ref_sec: 7.26
+      cer: 0.0909
+      wer: 0.25
+    bible_00059:
+      source: bible
+      text: Manɛ tisi ya teŋ linɛ ka ya pʋ namisi li yɛllɛ nɛ tempʋʋd banɛ ka ya pʋ mɛɛ, ka ya bɛɛ ani
+        ka dit vain nɛ olif pɔɔd la nyɔɔd ka lɛɛ pʋ sɛɛ ba.
+      sbs: 0.7704
+      gen_sec: 10.92
+      ref_sec: 13.64
+      cer: 0.1887
+      wer: 0.3143
+    bible_00060:
+      source: bible
+      text: Laan nɛ wala, o sankpanas David zugɔɔ, Zugsɔb la da pʋ siak ye o sanam Juda teŋ laa.
+      sbs: 0.7731
+      gen_sec: 6.74
+      ref_sec: 6.84
+      cer: 0.0938
+      wer: 0.3889
+    bible_00061:
+      source: bible
+      text: Ya yaa maali li kasi naae, ya na nɔk naarapɔl nɛ pɛɛrabanɛ ka ya na gaŋi ba ya bʋnkɔnbid la
+        sʋʋgin ka babayi la pʋ mɔr dɛŋ la maal maan.
+      sbs: 0.7541
+      gen_sec: 10.92
+      ref_sec: 14.74
+      cer: 0.1333
+      wer: 0.4
+    bible_00062:
+      source: bible
+      text: Saŋa la paae ya, dabisir la liel ya, dabiem na bɛ zuoya la zug, ka li kʋ lɛn an sumalisim.
+      sbs: 0.7785
+      gen_sec: 7.17
+      ref_sec: 6.9
+      cer: 0.0746
+      wer: 0.25
+    bible_00063:
+      source: bible
+      text: ka o nidib mɛ kʋ an fiin nɛ.
+      sbs: 0.6081
+      gen_sec: 2.05
+      ref_sec: 11.68
+      cer: 0.2
+      wer: 0.375
+    bible_00064:
+      source: bible
+      text: Bugum titaar kaŋa na kanbi ti, ka ti yaa lɛn wʋm Zugsɔb onɛ aan ti Winaam la ti na kpi.
+      sbs: 0.7564
+      gen_sec: 6.91
+      ref_sec: 7.4
+      cer: 0.0303
+      wer: 0.2
+    bible_00065:
+      source: bible
+      text: Linɛ tiaal pii nɛ anii la da gaŋnɛ Hanani, ka on nɛ o yidim da laas pii nɛ ayi .
+      sbs: 0.7569
+      gen_sec: 6.14
+      ref_sec: 5.98
+      cer: 0.1017
+      wer: 0.4737
+    bible_00066:
+      source: bible
+      text: Saŋkan la yaa ti paae, suoratitaar na yi Egipt kennɛ Asiria.
+      sbs: 0.7355
+      gen_sec: 5.03
+      ref_sec: 5.54
+      cer: 0.1458
+      wer: 0.4545
+    bible_00067:
+      source: bible
+      text: Laan nɛ fʋn maal suguru tis bugusnam la.
+      sbs: 0.6952
+      gen_sec: 3.24
+      ref_sec: 3.58
+      cer: 0.0625
+      wer: 0.125
+    bible_00068:
+      source: bible
+      text: M da paam anzurifa nɛ sanlima bɛdegʋ ka dies arezaas tɛɛns bɛdegʋ naanam sanan tisim mɛŋ;
+        ka mɛ laas dap nɛ pua banɛ yʋʋmmi tisidim, nɛ puab bɛdegʋ banɛ na maae dau sʋnf.
+      sbs: 0.7671
+      gen_sec: 13.91
+      ref_sec: 13.68
+      cer: 0.1185
+      wer: 0.4545
+    bible_00069:
+      source: bible
+      text: Laan nɛ Aram dim la da mɔr soogianam biela kena la, Zugsɔb la da kɛ ka ba nyaŋ soogianam bɛdegʋ.
+      sbs: 0.775
+      gen_sec: 7.77
+      ref_sec: 9.6
+      cer: 0.0933
+      wer: 0.4
+    bible_00070:
+      source: bible
+      text: Ba da gaŋ nid yinne Eleazar gbinnin ka gaŋ yinne mɛn Itamar gbinnin la.
+      sbs: 0.7193
+      gen_sec: 5.97
+      ref_sec: 5.44
+      cer: 0.1228
+      wer: 0.4286
+    bible_00071:
+      source: bible
+      text: David da yɛl Levi dɔɔg tuongatib la ye ba gaŋimi ba baabiis banɛ na yʋʋmid, ka ba nwɛɛd kɔna
+        nɛ siyaaris nɛ galana ka piebid wiisi yʋʋm sumalisim yʋʋma.
+      sbs: 0.7618
+      gen_sec: 12.46
+      ref_sec: 11.92
+      cer: 0.1475
+      wer: 0.3448
+    bible_00072:
+      source: bible
+      text: Uzia da tʋm nɛ linɛ an sʋm Zugsɔb la tuon wʋʋ o saamme da tʋm siem la mɛn.
+      sbs: 0.7523
+      gen_sec: 5.63
+      ref_sec: 6.42
+      cer: 0.1071
+      wer: 0.3889
+    bible_00073:
+      source: bible
+      text: ka ya pɛɛl Teŋir Bɛuŋ la nɛ kuom.
+      sbs: 0.7739
+      gen_sec: 2.73
+      ref_sec: 3.2
+      cer: 0.04
+      wer: 0.125
+    bible_00074:
+      source: bible
+      text: Ka dau kanɛ yɛ fupiel ka zanl linɛ sɔbid o sakpidirin la lɛb na yɛt ye, “Man tʋm wʋʋ fʋn yɛlim
+        siem la naae.
+      sbs: 0.7324
+      gen_sec: 8.36
+      ref_sec: 9.4
+      cer: 0.1341
+      wer: 0.4167
+    bible_00075:
+      source: bible
+      text: Naab la na bɛɛ ba sʋʋgin, ba yaa kpɛnɛd on dɔlli kpɛn, ba yaa yit on dɔlli yi.
+      sbs: 0.7783
+      gen_sec: 6.06
+      ref_sec: 7.04
+      cer: 0.1379
+      wer: 0.2778
+    bible_00076:
+      source: bible
+      text: Ninsaal biiga, diemi m nɔɔr pianad linɛ ka m zɛrig Gog la tis o ka yɛl o ye, “Zugsɔb onɛ an
+        Paŋtitaar Sɔb la yɛl sieli nwa ye, ‘Fʋn Gog onɛ an Mesek nɛ Tubal naatitaar la, fʋ anɛ m dataa.
+      sbs: 0.7557
+      gen_sec: 14.59
+      ref_sec: 13.34
+      cer: 0.0429
+      wer: 0.1463
+    bible_00077:
+      source: bible
+      text: ye Bɛuŋ Kʋdig la kuom pʋbigi sig anina.
+      sbs: 0.6745
+      gen_sec: 3.24
+      ref_sec: 3.02
+      cer: 0.2903
+      wer: 0.75
+    bible_00078:
+      source: bible
+      text: Ka Jehosafat gaad Juda nɛ Jerusalem dap la wʋsa tuon ka ba lɛb nɛ sumalisim keŋ Jerusalem
+        tempʋʋgin, bɔzugɔ Zugsɔb la da maal suori tisi ba ka ba mɔr sumalisim ba dataas la yɛla.
+      sbs: 0.779
+      gen_sec: 14.59
+      ref_sec: 12.6
+      cer: 0.0699
+      wer: 0.2353
+    bible_00079:
+      source: bible
+      text: Ba nɛɛsid man nɛ ka pʋ bɔɔd ye ba lieli ma; ka tʋbisid nintɔɔndi mat man nindaa.
+      sbs: 0.7781
+      gen_sec: 6.4
+      ref_sec: 6.48
+      cer: 0.1774
+      wer: 0.5294
+    bible_00080:
+      source: bible
+      text: Fʋ na kʋʋ ba yaas la wʋsa dunia zug.
+      sbs: 0.7368
+      gen_sec: 2.73
+      ref_sec: 3.38
+      cer: 0.0741
+      wer: 0.1111
+    bible_00081:
+      source: bible
+      text: Ka onɛ zin naam gbauŋ zug la bɛ nɛ ba la zug, o na guri ba.
+      sbs: 0.5783
+      gen_sec: 4.44
+      ref_sec: 3.16
+      cer: 0.0238
+      wer: 0.125
+    bible_00082:
+      source: bible
+      text: ” Ka Akan lɛbis ye, “Asida, mam tʋm tʋʋmbɛɛdi pɔɔg Israel Winaam.
+      sbs: 0.7224
+      gen_sec: 5.21
+      ref_sec: 4.88
+      cer: 0.1429
+      wer: 0.3636
+    bible_00083:
+      source: bible
+      text: Ba da kaae Juda sʋʋlim tɛɛns la wʋsa ka laas Levi dim nɛ Israel dim wʋsa yidaannam la na.
+      sbs: 0.763
+      gen_sec: 7.08
+      ref_sec: 7.16
+      cer: 0.0857
+      wer: 0.2632
+    bible_00084:
+      source: bible
+      text: Ka nintaŋ linɛ nie nyain la pʋdigir la yinne pʋdigir atan la ni kilim lik.
+      sbs: 0.6146
+      gen_sec: 6.06
+      ref_sec: 4.24
+      cer: 0.2373
+      wer: 0.6
+    bible_00085:
+      source: bible
+      text: Ba mɛ yisim onɛ siis bʋnkpiilʋŋ ka li kɛ ka o ka nyainnɛ.
+      sbs: 0.7517
+      gen_sec: 4.61
+      ref_sec: 4.08
+      cer: 0.1364
+      wer: 0.3846
+    bible_00086:
+      source: bible
+      text: Zugsɔb onɛ aan ya Winaam la na niŋ ala mɛn nɛ buudbanɛ ka ya zɔti ba zina la.
+      sbs: 0.7788
+      gen_sec: 6.06
+      ref_sec: 7.0
+      cer: 0.0508
+      wer: 0.1667
+    bible_00087:
+      source: bible
+      text: Ka li waalim nɛ li yalʋŋ nɛ li waalim teŋin dʋ zugin la wʋsa zem taaba.
+      sbs: 0.6614
+      gen_sec: 5.8
+      ref_sec: 3.76
+      cer: 0.1091
+      wer: 0.5
+    bible_00088:
+      source: bible
+      text: Li anɛ bodobodo anu la dizɔris ka ba da vaae, nidib la dii naae la nyaaŋ.
+      sbs: 0.669
+      gen_sec: 5.89
+      ref_sec: 4.24
+      cer: 0.0357
+      wer: 0.125
+    bible_00089:
+      source: bible
+      text: Aser yaas da yinɛ o biis Imnah nɛ Isivi nɛ Beria ni.
+      sbs: 0.7041
+      gen_sec: 4.1
+      ref_sec: 5.16
+      cer: 0.15
+      wer: 0.6667
+    bible_00090:
+      source: bible
+      text: Juda dim na kpɛm bɛɛ ba sʋʋlimin la lɛbisid ya-dagɔbʋg baba, ka Josef yidim la mɛ na bɛɛ ba
+        sʋʋlimin la lɛbisid ya-datiuŋ.
+      sbs: 0.7921
+      gen_sec: 10.07
+      ref_sec: 10.24
+      cer: 0.1042
+      wer: 0.3043
+    bible_00091:
+      source: bible
+      text: Ba da yʋʋmnɛ ka piebid wiis ka nwɛɛd googinam nɛ siyada nɛ naatana.
+      sbs: 0.7457
+      gen_sec: 5.46
+      ref_sec: 4.3
+      cer: 0.1481
+      wer: 0.3077
+    bible_00092:
+      source: bible
+      text: Gɔsima, dau sɔ nwana kenna nɛ zaba tɛreko.
+      sbs: 0.7008
+      gen_sec: 3.5
+      ref_sec: 3.16
+      cer: 0.1818
+      wer: 0.25
+    bible_00093:
+      source: bible
+      text: Nɔɔr tisib kaŋa na kɛ ka Josua nɛ Israel dim la wʋsa yit ka lɛbid.
+      sbs: 0.7557
+      gen_sec: 5.29
+      ref_sec: 4.56
+      cer: 0.1373
+      wer: 0.2667
+    bible_00094:
+      source: bible
+      text: Ka Zugsɔb la yɛl Moses ye, “Dʋm Abarim zuor la zugʋ gɔs teŋ kanɛ ka m nɔki tis Israel dim
+        la.
+      sbs: 0.7712
+      gen_sec: 7.25
+      ref_sec: 8.42
+      cer: 0.0571
+      wer: 0.1905
+    bible_00095:
+      source: bible
+      text: Ba da naan zinig wʋsa linɛ bɛ Juda sʋʋlimin la laas na ye ba bɔ sʋŋir o sanan.
+      sbs: 0.7496
+      gen_sec: 6.14
+      ref_sec: 6.04
+      cer: 0.1
+      wer: 0.2778
+    bible_00096:
+      source: bible
+      text: Ka ba buos ye, “Ti na niŋ wala ka tʋm Winaam tʋʋma?
+      sbs: 0.6539
+      gen_sec: 3.93
+      ref_sec: 3.16
+      cer: 0.0
+      wer: 0.0
+    bible_00097:
+      source: bible
+      text: Saalib na kpi wʋʋ bʋnkɔnbidi kpiid siem la, ba wʋsa mɔri vʋm yinne.
+      sbs: 0.7346
+      gen_sec: 5.46
+      ref_sec: 4.5
+      cer: 0.1321
+      wer: 0.2308
+    bible_00098:
+      source: bible
+      text: Zera yaaŋ Akan onɛ da zanas Zugsɔb la da tis nɔɔr ye ba sanam teŋ la laad wʋsa la, Israel
+        dim wʋsa da namisi li zug.
+      sbs: 0.7571
+      gen_sec: 9.3
+      ref_sec: 11.28
+      cer: 0.0787
+      wer: 0.1923
+    bible_00099:
+      source: bible
+      text: Israel dima, ya pɔɔg Zugsɔb la ka zanas o, amaa lɛmmini o sanan.
+      sbs: 0.7763
+      gen_sec: 5.21
+      ref_sec: 4.94
+      cer: 0.1429
+      wer: 0.3846
+    bible_00100:
+      source: bible
+      text: Ba da maal fita ziesir la ka li dɔl nɛ Zugsɔb la paal Moses ye ba maal siem la.
+      sbs: 0.7727
+      gen_sec: 6.06
+      ref_sec: 5.82
+      cer: 0.0167
+      wer: 0.1053
+    bible_00101:
+      source: bible
+      text: “‘Amaa ya nidib biela bɛ Sardis ka pʋ diana ba fuudɛ.
+      sbs: 0.6707
+      gen_sec: 4.1
+      ref_sec: 3.58
+      cer: 0.1
+      wer: 0.3636
+    bible_00102:
+      source: bible
+      text: Kɛl ka Israel dim mɔr sumalisim nɛ onɛ maali ba la; kɛl ka Zion nidib mɔr sumalisim nɛ ba
+        Naab la.
+      sbs: 0.7629
+      gen_sec: 7.77
+      ref_sec: 6.66
+      cer: 0.0526
+      wer: 0.1429
+    bible_00103:
+      source: bible
+      text: Zinikanɛ ka li yuki tɔɔŋ kɔlbil linɛ bɛ Egipt teŋ titɔndigin la keŋ naae atɛukʋn la sa.
+      sbs: 0.7323
+      gen_sec: 7.34
+      ref_sec: 7.56
+      cer: 0.1571
+      wer: 0.3529
+    bible_00104:
+      source: bible
+      text: Amaa banɛ kis o la, o na yɔɔ ba nɛ sanauŋ; o na yɔ banɛ kis o la tɔɔtɔ ka ba nini nyɛ.
+      sbs: 0.7154
+      gen_sec: 6.49
+      ref_sec: 8.38
+      cer: 0.1148
+      wer: 0.3043
+    bible_00105:
+      source: bible
+      text: nɛ bimbim banɛ ka ba nyuod bʋnnyubisa li zugʋ tisid wina la.
+      sbs: 0.7321
+      gen_sec: 4.86
+      ref_sec: 4.14
+      cer: 0.2083
+      wer: 0.5833
+    bible_00106:
+      source: bible
+      text: Ka bʋnvʋya anaasi zie gilig naam gbauŋ la, ka nini pɛɛli ba tuon nɛ nyaaŋ wʋsa.
+      sbs: 0.6282
+      gen_sec: 6.57
+      ref_sec: 4.8
+      cer: 0.0645
+      wer: 0.1875
+    bible_00107:
+      source: bible
+      text: ka li anɛ tʋʋmbɛɛd dim nyɛɛsim la zug.
+      sbs: 0.7639
+      gen_sec: 3.07
+      ref_sec: 3.24
+      cer: 0.0667
+      wer: 0.125
+    bible_00108:
+      source: bible
+      text: 'Onɛ zin naam gbauŋ zug arezana ni la laadi banɛ: Zugsɔb la maannɛ banɛ siaa.'
+      sbs: 0.743
+      gen_sec: 6.31
+      ref_sec: 7.0
+      cer: 0.1167
+      wer: 0.4667
+    bible_00109:
+      source: bible
+      text: ka bas onɛ bɛndi ti la; o baŋ la sanam ya.
+      sbs: 0.7312
+      gen_sec: 3.24
+      ref_sec: 3.32
+      cer: 0.3
+      wer: 0.5455
+    bible_00110:
+      source: bible
+      text: Israel dim la da kaanb, kaanb kaŋa tis Zugsɔb la ye, “Fʋ yaa na kɛ ka ti nyaŋ nimbama, ti
+        na sanami ba teŋ la wʋsa tisif.
+      sbs: 0.7854
+      gen_sec: 9.64
+      ref_sec: 8.0
+      cer: 0.1111
+      wer: 0.2963
+    bible_00111:
+      source: bible
+      text: Onɛ tiaal da anɛ Eleazar onɛ an Dodo biig ka an Ahoohi nid la.
+      sbs: 0.7077
+      gen_sec: 4.86
+      ref_sec: 6.1
+      cer: 0.1458
+      wer: 0.5
+    bible_00112:
+      source: bible
+      text: bɛɛ gɔs ka kpanam dim gat nɔŋ dima; bɔzugɔ, onɛ maali ba wʋsa.
+      sbs: 0.7698
+      gen_sec: 5.03
+      ref_sec: 4.72
+      cer: 0.0213
+      wer: 0.0769
+    bible_00113:
+      source: bible
+      text: Manɛ an Alfa nɛ Omega, ka an siel wʋsa pinilʋg nɛ li naar.
+      sbs: 0.6637
+      gen_sec: 4.61
+      ref_sec: 4.5
+      cer: 0.1364
+      wer: 0.5385
+    bible_00114:
+      source: bible
+      text: ” Ka nimbanɛ giligi ba la wʋsa yina mɔɔd ye ba kpɛnɛs Juda dim la dabiem ka li kɛ ka ba tadig
+        ka mɛɛb la da keŋ tuonnɛ.
+      sbs: 0.7348
+      gen_sec: 9.22
+      ref_sec: 8.92
+      cer: 0.1111
+      wer: 0.3333
+    bible_00115:
+      source: bible
+      text: O da maal fubanɛ bɛŋ la nɛ fuud linɛ muoe zim-zim, nɛ bʋnzɛnis; nɛ pien piela, ka gʋl Kerubnamɛ
+        tabil.
+      sbs: 0.7706
+      gen_sec: 8.36
+      ref_sec: 9.8
+      cer: 0.1538
+      wer: 0.45
+    bible_00116:
+      source: bible
+      text: Ya yaa karim gbauŋ nwa, ya na gbane yɛlsuadir kanɛ ka mam mi Kristo yɛla la gbin.
+      sbs: 0.6487
+      gen_sec: 6.57
+      ref_sec: 4.32
+      cer: 0.1429
+      wer: 0.4706
+    bible_00117:
+      source: bible
+      text: Fʋ mɛ kʋʋ fʋ mɛŋ pitib, fʋ saam yir nidib, dap banɛ da sɔnɔf.
+      sbs: 0.7769
+      gen_sec: 4.86
+      ref_sec: 5.14
+      cer: 0.0889
+      wer: 0.2857
+    bible_00118:
+      source: bible
+      text: ka o nimbanɛ kpiisid mɔr yʋʋri gat dunia dim wʋsa la.
+      sbs: 0.7113
+      gen_sec: 4.27
+      ref_sec: 3.68
+      cer: 0.2857
+      wer: 0.2727
+    bible_00119:
+      source: bible
+      text: O da paam biribis wʋʋ Winaam da kaanbi tis o siem la ye nidib na wɔɔg o.
+      sbs: 0.7195
+      gen_sec: 5.55
+      ref_sec: 5.22
+      cer: 0.0727
+      wer: 0.1765
+    bible_00120:
+      source: bible
+      text: Linɛ tiaal anaasi la da gaŋnɛ Izri, ka on nɛ o yidim da laas pii nɛ ayi .
+      sbs: 0.7289
+      gen_sec: 5.63
+      ref_sec: 5.02
+      cer: 0.0926
+      wer: 0.4706
+    bible_00121:
+      source: bible
+      text: Onɛ nyaŋ yɛlbɛɛd wʋsa la, kum kanɛ paasid ayi la kʋ niŋ o siela.
+      sbs: 0.6141
+      gen_sec: 5.29
+      ref_sec: 3.58
+      cer: 0.1224
+      wer: 0.3571
+    bible_00122:
+      source: bible
+      text: Ka sakuga nɛ bugum gɛndig nɛ ziim kpaadi lut dunia ni na.
+      sbs: 0.6012
+      gen_sec: 4.61
+      ref_sec: 3.82
+      cer: 0.1556
+      wer: 0.3333
+    bible_00123:
+      source: bible
+      text: O da kena nɛ maliaknam banɛ an kasi la tusa-tusa.
+      sbs: 0.7257
+      gen_sec: 3.93
+      ref_sec: 3.66
+      cer: 0.1579
+      wer: 0.6
+    bible_00124:
+      source: bible
+      text: Dabiskan la daar yaa ti paae, ya yinne-yinne na zanas anzurifa nɛ sanlima bada banɛ ka ya
+        nɔki ya tʋʋmbɛɛd nuusi maal la.
+      sbs: 0.7455
+      gen_sec: 9.9
+      ref_sec: 10.66
+      cer: 0.0729
+      wer: 0.2609
+    bible_00125:
+      source: bible
+      text: Ka o yaa daa tʋmif nɛ bɛɛd bɛɛ mɔri fʋ siel, fʋn gielimi li, ka li aan m sam.
+      sbs: 0.6687
+      gen_sec: 5.89
+      ref_sec: 5.2
+      cer: 0.1071
+      wer: 0.3158
+    bible_00126:
+      source: bible
+      text: nɔkimi fʋ zaba sʋʋg la faanmi yis nimbɛɛdnam nuugin.
+      sbs: 0.6963
+      gen_sec: 4.35
+      ref_sec: 3.66
+      cer: 0.1395
+      wer: 0.6667
+    bible_00127:
+      source: bible
+      text: Gɔsim Babilon teŋ dim la, ba lɛn ka vɔɔnrɛ!
+      sbs: 0.7419
+      gen_sec: 3.58
+      ref_sec: 3.74
+      cer: 0.2424
+      wer: 0.4444
+    bible_00128:
+      source: bible
+      text: linzug ka tinam yʋʋn bɛ namisʋg pʋʋgin.
+      sbs: 0.7034
+      gen_sec: 3.24
+      ref_sec: 3.08
+      cer: 0.1875
+      wer: 0.8571
+    bible_00129:
+      source: bible
+      text: Nɛɛŋa da kɛ ka Aram dim la lieb o sʋʋlim nidib ka yɔɔd lampɔ tisid o.
+      sbs: 0.7325
+      gen_sec: 5.46
+      ref_sec: 4.34
+      cer: 0.0566
+      wer: 0.125
+    bible_00130:
+      source: bible
+      text: amaa ka lɛɛ pʋ gɔsid Israel Dim Winaam Onɛ An Kasi.
+      sbs: 0.7379
+      gen_sec: 4.1
+      ref_sec: 3.42
+      cer: 0.075
+      wer: 0.1818
+    bible_00131:
+      source: bible
+      text: Ba da maal nwadpaalig maana, nɛ dabisbanɛ ka ba maan maana tisid Zugsɔb la, ka laam maan yaamlɛog
+        maana tisid o.
+      sbs: 0.7941
+      gen_sec: 9.22
+      ref_sec: 8.34
+      cer: 0.0449
+      wer: 0.1429
+    bible_00132:
+      source: bible
+      text: kɔldaug la pʋʋgin na gaaŋi kʋdig.
+      sbs: 0.7651
+      gen_sec: 2.9
+      ref_sec: 3.04
+      cer: 0.2593
+      wer: 0.5
+    bible_00133:
+      source: bible
+      text: Hezekia nɛ o kpɛɛmnam la da kena nyɛ laad la dig dʋʋr siem la, ba da pian Winaam ka kaanb
+        bareka niŋ Israel nidib la.
+      sbs: 0.7947
+      gen_sec: 9.39
+      ref_sec: 9.32
+      cer: 0.0879
+      wer: 0.12
+    bible_00134:
+      source: bible
+      text: Ka paas bʋribig ka li na an suguru sɔsʋgʋ tisi ya.
+      sbs: 0.6702
+      gen_sec: 3.93
+      ref_sec: 4.0
+      cer: 0.1795
+      wer: 0.4545
+    bible_00135:
+      source: bible
+      text: Nɛɛŋa an tɔlʋŋ kanɛ yi onɛ mɔr Winaam siisa ayɔpɔi nɛ nwadbibis ayɔpɔi la ni na.
+      sbs: 0.5956
+      gen_sec: 6.66
+      ref_sec: 4.62
+      cer: 0.1406
+      wer: 0.3125
+    bible_00136:
+      source: bible
+      text: Reuben nɛ Gad dɔɔd dim banɛ da mɔr niigi nɛ kɔnbid bɛdegʋ la da gɔsi nyɛ Jaza nɛ Gilead tɛɛns
+        la ka li nar nɛ gʋʋl zinig.
+      sbs: 0.771
+      gen_sec: 9.47
+      ref_sec: 9.24
+      cer: 0.0851
+      wer: 0.2222
+    bible_00137:
+      source: bible
+      text: ” Ka ba vaae dizɔris la wʋsa ka li pɛɛl pɛɛd pii nɛ ayi.
+      sbs: 0.6598
+      gen_sec: 4.18
+      ref_sec: 3.62
+      cer: 0.2439
+      wer: 0.3077
+    bible_00138:
+      source: bible
+      text: M mɛ da lɛn da yamdaad nɛ yampuabi pɛɛs, ka ba sieba laan dua m yin.
+      sbs: 0.7599
+      gen_sec: 5.29
+      ref_sec: 4.9
+      cer: 0.1569
+      wer: 0.5
+    bible_00139:
+      source: bible
+      text: Yʋʋm kan la ba da laas anzurifa na nɛ mui bɛdegʋ kena tis o.
+      sbs: 0.6692
+      gen_sec: 4.69
+      ref_sec: 4.48
+      cer: 0.1304
+      wer: 0.2857
+    bible_00140:
+      source: bible
+      text: M pianad la anɛ pʋpielim pianad; li yitnɛ m sʋʋnrin na, ka faad kae.
+      sbs: 0.7645
+      gen_sec: 5.46
+      ref_sec: 4.3
+      cer: 0.0192
+      wer: 0.0714
+    bible_00141:
+      source: bible
+      text: Ka man nyɛ sɔ la lɛn yɛlim ye, “Sɔm nɛɛŋa tis maliak onɛ bɛ Laodisea karindɔɔgin la.
+      sbs: 0.653
+      gen_sec: 6.74
+      ref_sec: 7.2
+      cer: 0.2
+      wer: 0.5882
+    bible_00142:
+      source: bible
+      text: “Amaa m na tiligi ya sieba, bɔzugɔ ya sieba na nyaŋi zɔɔ pɔns, ka widigi keŋ buudi nɛ tɛɛns
+        bɛdegʋ ni.
+      sbs: 0.6974
+      gen_sec: 8.28
+      ref_sec: 8.38
+      cer: 0.0897
+      wer: 0.2381
+    bible_00143:
+      source: bible
+      text: Laan nɛ wala, Jeroboam onɛ an Nebat biig ka an Solomon onɛ an David biig la tʋmtʋmnib yinne
+        la duoe kiisid o zugdaan nɔɔr.
+      sbs: 0.7565
+      gen_sec: 9.9
+      ref_sec: 10.4
+      cer: 0.0722
+      wer: 0.3333
+    bible_00144:
+      source: bible
+      text: Ba kenna ye ba kadi ti yis faar kanɛ ka fʋ tisi ti ye ti sʋoe la zug.
+      sbs: 0.7604
+      gen_sec: 5.21
+      ref_sec: 5.3
+      cer: 0.098
+      wer: 0.1667
+    bible_00145:
+      source: bible
+      text: Amaa arezak daan pʋ gbisid baa bielaa o mɔrim la yɛla.
+      sbs: 0.7189
+      gen_sec: 4.35
+      ref_sec: 4.0
+      cer: 0.1628
+      wer: 0.5455
+    bible_00146:
+      source: bible
+      text: ka o sanami ya, ya suobɛɛd la pʋʋgin; bɔzugɔ o sʋnf tune duoe vuguri.
+      sbs: 0.7886
+      gen_sec: 5.55
+      ref_sec: 6.0
+      cer: 0.2075
+      wer: 0.3571
+    bible_00147:
+      source: bible
+      text: Tisimi Zugsɔb la naasi linɛ nar nɛ o yʋʋr la.
+      sbs: 0.7171
+      gen_sec: 3.58
+      ref_sec: 3.5
+      cer: 0.0571
+      wer: 0.1
+    bible_00148:
+      source: bible
+      text: Amaa Eleazar nɛ David n da paae pɔɔg la teŋsʋk la, ba da zienɛ zab nɛ Filistia dim la.
+      sbs: 0.7652
+      gen_sec: 6.91
+      ref_sec: 7.14
+      cer: 0.0758
+      wer: 0.2632
+    bible_00149:
+      source: bible
+      text: Asɛɛ ba paalim nidib la ka ba baŋ linɛ an kasi nɛ linɛ ka kasi la m bɛ kɔnɔkɔn siem, ka paali
+        ba linɛ an nyain nɛ linɛ ka nyainnɛ.
+      sbs: 0.7629
+      gen_sec: 10.15
+      ref_sec: 13.46
+      cer: 0.0808
+      wer: 0.2667
+    bible_00150:
+      source: bible
+      text: O da buol Aaron nɛ Levi yaas la laas na.
+      sbs: 0.7137
+      gen_sec: 3.07
+      ref_sec: 3.28
+      cer: 0.0667
+      wer: 0.1
+    bible_00151:
+      source: bible
+      text: 'Sem biribis da anɛ: Elam nɛ Asuor nɛ Arfaksad nɛ Lud nɛ Aram.'
+      sbs: 0.703
+      gen_sec: 4.86
+      ref_sec: 7.46
+      cer: 0.0851
+      wer: 0.3077
+    bible_00152:
+      source: bible
+      text: Naab Abija da kad Jeroboam hali ka faaɛn Betel nɛ Jesiana nɛ Efiron nɛ teŋkpɛmis banɛ kpie
+        ba la wʋsa.
+      sbs: 0.7234
+      gen_sec: 8.36
+      ref_sec: 10.26
+      cer: 0.1098
+      wer: 0.35
+    bible_00153:
+      source: bible
+      text: Alazug ka Winaam Pʋʋsim Yir tʋʋma Jerusalem teŋin la da pʋ lɛn keŋ tuonnɛ ti paae Pesia naab
+        Darius n da dii o naam la yʋma ayi saŋa la.
+      sbs: 0.7616
+      gen_sec: 11.09
+      ref_sec: 12.52
+      cer: 0.0374
+      wer: 0.1379
+    bible_00154:
+      source: bible
+      text: ye o sigis banɛ mɔr nyɛɛsim dʋʋsidi ba mɛŋ la.
+      sbs: 0.7042
+      gen_sec: 3.75
+      ref_sec: 3.64
+      cer: 0.2222
+      wer: 0.3
+    bible_00155:
+      source: bible
+      text: Fʋ kpɛn ʋk man nɛ lɔbigi bas ka sisiem mɔrimi keŋ sa; ka nwɛɛmi yutim-yutim sisietitaarin
+        la.
+      sbs: 0.7741
+      gen_sec: 7.77
+      ref_sec: 6.96
+      cer: 0.2162
+      wer: 0.6471
+    bible_00156:
+      source: bible
+      text: 'O anɛ bugusim sɔb hali: naakanɛ ka nidib zɔt dabiem la na sʋoe ba,”.'
+      sbs: 0.7655
+      gen_sec: 5.38
+      ref_sec: 5.4
+      cer: 0.098
+      wer: 0.2143
+    bible_00157:
+      source: bible
+      text: kʋʋr kaasig saŋa bɛ nɛ, ka sumalisim waa saŋa bɛ; Kuga laasʋg saŋa bɛ nɛ, ka li widigir saŋa
+        bɛ.
+      sbs: 0.7816
+      gen_sec: 8.11
+      ref_sec: 7.04
+      cer: 0.0959
+      wer: 0.3
+    bible_00158:
+      source: bible
+      text: “Zugsɔb la da sig Israel dim sanan Sinai zuorin la.
+      sbs: 0.6854
+      gen_sec: 4.1
+      ref_sec: 3.12
+      cer: 0.175
+      wer: 0.3
+    bible_00159:
+      source: bible
+      text: Ka ba tisi ba paŋ nwɛnɛ namisi mɔr paŋ dunia ni siem la, ka yɛli ba ye, ba da sanam sielnam
+        wʋsa linɛ nɔbigid teŋinɛɛ, amaa ba pualim nimbanɛ pʋ mɔr Winaam zanbina ba gbɛɛdin la gʋllim.
+      sbs: 0.6288
+      gen_sec: 15.19
+      ref_sec: 12.06
+      cer: 0.1172
+      wer: 0.2162
+    bible_00160:
+      source: bible
+      text: Joas da anɛ yʋma ayɔpɔi biig saŋa kanɛ ka o da di naam la, ka da zin naam gbauŋ zug Jerusalem
+        tempʋʋgin gɔs Juda sʋʋlim la yʋma pisnaasi.
+      sbs: 0.7645
+      gen_sec: 11.18
+      ref_sec: 10.86
+      cer: 0.0926
+      wer: 0.3214
+    bible_00161:
+      source: bible
+      text: 'Zugsɔb la yɛt sieli nwa tisidi ya: ‘Da kɛ ka dabiem mɔri ya bɛɛ ya sʋnf sanamnɛ soogianam
+        banɛ zuoe la yɛllɛ.'
+      sbs: 0.7542
+      gen_sec: 8.7
+      ref_sec: 9.02
+      cer: 0.1647
+      wer: 0.3636
+    bible_00162:
+      source: bible
+      text: Ba da yɛl ye, “O paa ti lɛbi kuosi ti tis Saul onɛ aan o zugdaan kʋdig la.
+      sbs: 0.663
+      gen_sec: 5.55
+      ref_sec: 5.2
+      cer: 0.0741
+      wer: 0.1667
+    bible_00163:
+      source: bible
+      text: ka na aansid kpʋkpama bɛɛ zut.
+      sbs: 0.7199
+      gen_sec: 2.47
+      ref_sec: 11.32
+      cer: 0.2083
+      wer: 0.5
+    bible_00164:
+      source: bible
+      text: da buoli ya daakan la ye ya kaasim ka kum.
+      sbs: 0.6923
+      gen_sec: 3.24
+      ref_sec: 4.76
+      cer: 0.0938
+      wer: 0.2
+    bible_00165:
+      source: bible
+      text: O yaa maali naae ka yi, ba na yɔ zaanɔɔr la.
+      sbs: 0.7066
+      gen_sec: 3.33
+      ref_sec: 3.26
+      cer: 0.0625
+      wer: 0.1818
+    bible_00166:
+      source: bible
+      text: Ala ka nidib na baŋi fʋ tʋʋma an siem.
+      sbs: 0.7232
+      gen_sec: 3.07
+      ref_sec: 3.1
+      cer: 0.0345
+      wer: 0.1111
+    bible_00167:
+      source: bible
+      text: M baabinɔŋa, kʋdim da lɛbis bɛɛd nɛ bɛɛdɛ, ka lɛɛ kɛ ka Winaam sʋnpɛɛn niŋi li.
+      sbs: 0.6733
+      gen_sec: 6.57
+      ref_sec: 5.98
+      cer: 0.1148
+      wer: 0.375
+    bible_00168:
+      source: bible
+      text: Kɛl ka banɛ mɔr nɔtɔɔd pɔ nɔɔri niŋ dabisir nwa.
+      sbs: 0.7114
+      gen_sec: 3.93
+      ref_sec: 4.28
+      cer: 0.2368
+      wer: 0.6
+    bible_00169:
+      source: bible
+      text: Naazir nid la na pʋn o zuobid kanɛ ka o pɛsigi tis Zugsɔb la Laasʋg Fuug Sʋgʋr zaanɔɔrin la.
+      sbs: 0.7538
+      gen_sec: 7.34
+      ref_sec: 6.46
+      cer: 0.0959
+      wer: 0.2632
+    bible_00170:
+      source: bible
+      text: Saŋkan la ka Egipt dim la nam bɛɛ ani mummi ba bikpɛɛmnam banɛ ka Zugsɔb da kʋ la.
+      sbs: 0.7786
+      gen_sec: 6.57
+      ref_sec: 6.02
+      cer: 0.0781
+      wer: 0.2222
+    bible_00171:
+      source: bible
+      text: Dabiskanɛ paas ayuobʋ la, nɔkimi naarapɔla anii nɛ pɛraad ayi nɛ pɛribis pii nɛ anaasi banɛ
+        an yʋʋm yinne ka ka dɛŋŋa maali maan.
+      sbs: 0.7931
+      gen_sec: 10.75
+      ref_sec: 10.62
+      cer: 0.1731
+      wer: 0.7083
+    bible_00172:
+      source: bible
+      text: Ka on mɛkama zanas nimbanɛ sʋoe teŋ la nɔɔr, o zanasnɛ linɛ ka Winaam ziel la.
+      sbs: 0.6402
+      gen_sec: 6.4
+      ref_sec: 4.9
+      cer: 0.0984
+      wer: 0.3125
+    bible_00173:
+      source: bible
+      text: Saul da yɛl onɛ ziid o zaba laad la ye, “Fuomi fʋ sʋʋg la kunsimi kʋ, yaa ka ala nimbanɛ pʋ
+        kpɛn baŋʋ nwa na kena kunsimi kʋ ka li lieb nyannɛ tisim.
+      sbs: 0.7635
+      gen_sec: 11.69
+      ref_sec: 11.1
+      cer: 0.1239
+      wer: 0.3939
+    bible_00174:
+      source: bible
+      text: ” Amazaya da buol Juda nidib la wʋsa n laas ka pʋdigi ba ka li dɔl wʋʋ ba tuŋʋ an siem n tis
+        banɛ gur nidib wʋʋ tusir-tusir bɛɛ kɔbig-kɔbig Juda nɛ Benjamin tɛɛnsin la wʋsa.
+      sbs: 0.7629
+      gen_sec: 13.82
+      ref_sec: 14.46
+      cer: 0.1119
+      wer: 0.3143
+    bible_00175:
+      source: bible
+      text: Dasam nɛ bʋnkʋd nɛ paannib nɛ zamisidib wʋsa da maal nɛ bʋgʋlʋm-bʋgʋlʋm ye ba baŋ sɔ wʋsa
+        na tʋm siem.
+      sbs: 0.7639
+      gen_sec: 8.36
+      ref_sec: 10.84
+      cer: 0.1235
+      wer: 0.3
+    bible_00176:
+      source: bible
+      text: Ya nimbanɛ kpi la, ba da pʋ zabnɛ kʋʋ ba.
+      sbs: 0.7596
+      gen_sec: 3.16
+      ref_sec: 3.26
+      cer: 0.0667
+      wer: 0.3
+    bible_00177:
+      source: bible
+      text: Man sadigim zabi nyaŋ buudbanɛ maan bada la.
+      sbs: 0.7303
+      gen_sec: 3.75
+      ref_sec: 3.86
+      cer: 0.25
+      wer: 0.75
+    bible_00178:
+      source: bible
+      text: Da nɔki fʋ tiiri niŋ tuongatib banɛ an saalib la nii; ninsaal kae na nyaŋi faaɛn fɔ.
+      sbs: 0.7459
+      gen_sec: 7.0
+      ref_sec: 5.56
+      cer: 0.1061
+      wer: 0.3529
+    bible_00179:
+      source: bible
+      text: 'Zugsɔb la da lɛn yɛl Moses ye, “Yɛlim Aaron nɛ o biis la ye, ‘Yanamɛ na sɔsid albareka tisid
+        Israel dim la siem nwa: yɛlimi ba ye.'
+      sbs: 0.7671
+      gen_sec: 10.15
+      ref_sec: 9.82
+      cer: 0.0714
+      wer: 0.1481
+    bible_00180:
+      source: bible
+      text: Li da anɛ Winaam yɛlsʋm piini zug ka o gaŋim ka tisim o paŋ la ye m lieb onɛ mɔɔnnɛ o labasʋŋ
+        la.
+      sbs: 0.6568
+      gen_sec: 7.77
+      ref_sec: 7.08
+      cer: 0.0541
+      wer: 0.087
+    bible_00181:
+      source: bible
+      text: M mi ya summɔtiri an siem, ka mi ye ya pʋ siakidi died nimbɛɛdnama, ka mak banɛ ye ba anɛ
+        Kristo tʋmtʋmnib amaa ka ka ala la gɔs ka nyɛ ka ba anɛ ziri dim.
+      sbs: 0.6211
+      gen_sec: 12.12
+      ref_sec: 9.78
+      cer: 0.0678
+      wer: 0.2571
+    bible_00182:
+      source: bible
+      text: Ka Juda nɛ Benjamin kpɛɛmnam nɛ maanmaannib nɛ Levi dim nɛ banɛ wʋsa ka Winaam siisi ba sʋnf
+        da tieb ye ba keŋ Jerusalem mɛ Zugsɔb yir la.
+      sbs: 0.7772
+      gen_sec: 11.18
+      ref_sec: 12.46
+      cer: 0.0909
+      wer: 0.2857
+    bible_00183:
+      source: bible
+      text: Tuongatib yinne-yinne da yi dɔɔg piiga la wʋsa ni dɔl Finehas nyaaŋi keŋ.
+      sbs: 0.7662
+      gen_sec: 6.31
+      ref_sec: 6.0
+      cer: 0.1186
+      wer: 0.4615
+    bible_00184:
+      source: bible
+      text: David mɛ da faaɛn kʋntzɛnug bɛdegʋ linɛ an sʋʋŋa hali, Teba nɛ Kun tɛɛnsin linɛ an Hadadeze
+        sʋʋlim la.
+      sbs: 0.7572
+      gen_sec: 8.45
+      ref_sec: 8.42
+      cer: 0.2561
+      wer: 0.6316
+    bible_00185:
+      source: bible
+      text: Abisai onɛ an Joab pitʋ ka an Zeruyia biig la da an nidib pistan la kpɛɛm.
+      sbs: 0.7542
+      gen_sec: 5.89
+      ref_sec: 5.34
+      cer: 0.2069
+      wer: 0.5625
+    bible_00186:
+      source: bible
+      text: “Ya-nyaaŋ titɔndig la na pinil Hazarenan ti paae Siefam teŋin.
+      sbs: 0.7343
+      gen_sec: 5.38
+      ref_sec: 5.5
+      cer: 0.12
+      wer: 0.5
+    bible_00187:
+      source: bible
+      text: Maalimi Ai nɛ ba naab la nwɛnɛ yanamɛ da maal Jeriko nɛ ba naab siem la.
+      sbs: 0.734
+      gen_sec: 5.63
+      ref_sec: 5.6
+      cer: 0.1607
+      wer: 0.25
+    bible_00188:
+      source: bible
+      text: Ka zɔlʋg kpɛm pianadi ken tuon, amaa sɔ zi dinɛ kennaa.
+      sbs: 0.6981
+      gen_sec: 4.44
+      ref_sec: 5.28
+      cer: 0.4419
+      wer: 0.9091
+    bible_00189:
+      source: bible
+      text: Israel dim banɛ paas la da gbane nɛ nɔɔr yinne ye ba diis David Israel naam.
+      sbs: 0.7665
+      gen_sec: 6.06
+      ref_sec: 5.62
+      cer: 0.0833
+      wer: 0.25
+    bible_00190:
+      source: bible
+      text: Ka bɛogʋ nie la ka Josua duoe laas zabzabidib la wʋsa ka on nɛ Israel kpɛɛmnam gaad tuonnɛ
+        dɔlli ba keŋ Ai.
+      sbs: 0.7607
+      gen_sec: 8.7
+      ref_sec: 8.54
+      cer: 0.1294
+      wer: 0.3182
+    bible_00191:
+      source: bible
+      text: 'Ban da maal fita ziesir la siem nwa: lin yi li gbinnin ti paae li zugin linɛ nwɛnɛ puum nɛ
+        ka ba zan sanlima maali li.'
+      sbs: 0.752
+      gen_sec: 9.3
+      ref_sec: 11.26
+      cer: 0.1209
+      wer: 0.3462
+    bible_00192:
+      source: bible
+      text: wʋʋ saad ka ba nɔɔdi kpɛnɛsid bugulimin siem la.
+      sbs: 0.7431
+      gen_sec: 3.93
+      ref_sec: 3.32
+      cer: 0.1538
+      wer: 0.3333
+    bible_00193:
+      source: bible
+      text: 'Ketura onɛ da an Abraham puabil la biribis da anɛ: Zimran nɛ Joksan nɛ Medan nɛ Midian nɛ
+        Isibak nɛ Sua.'
+      sbs: 0.7112
+      gen_sec: 8.36
+      ref_sec: 10.9
+      cer: 0.1463
+      wer: 0.381
+    bible_00194:
+      source: bible
+      text: Ka Josua nɛ o zabzabidib la niŋ asiri keŋ Ai ye ba zab nɛ ba.
+      sbs: 0.7235
+      gen_sec: 4.86
+      ref_sec: 4.48
+      cer: 0.1957
+      wer: 0.3333
+    bible_00195:
+      source: bible
+      text: Albareka bɛ nɛ ninkanɛ tʋm linɛ an sʋm, ka pʋ kʋʋs o mɛŋ bɛɛd la zug.
+      sbs: 0.6345
+      gen_sec: 5.46
+      ref_sec: 6.38
+      cer: 0.1538
+      wer: 0.4375
+    bible_00196:
+      source: bible
+      text: Li na anɛ piinkanɛ ka ba die ka li bɛɛ li kɔn ka an kasi, paalʋ la pʋʋgin.
+      sbs: 0.7187
+      gen_sec: 5.63
+      ref_sec: 6.7
+      cer: 0.1091
+      wer: 0.5556
+    bible_00197:
+      source: bible
+      text: Jobab n da kpi la, Huseam onɛ yi Teman teŋin na la da di naam la.
+      sbs: 0.7357
+      gen_sec: 5.03
+      ref_sec: 6.38
+      cer: 0.0833
+      wer: 0.125
+    bible_00198:
+      source: bible
+      text: dunia la, nɛ onɛ wʋsa bɛɛ li ni; Onɛ da ɛɛnbi li atɛukʋn.
+      sbs: 0.7421
+      gen_sec: 4.44
+      ref_sec: 5.46
+      cer: 0.1429
+      wer: 0.1538
+    bible_00199:
+      source: bible
+      text: zien Zion zuor kʋkʋn la zuginɛ zab.
+      sbs: 0.7411
+      gen_sec: 2.9
+      ref_sec: 3.34
+      cer: 0.1429
+      wer: 0.4286
 - model: KhayaAI/khaya-tts-v2
   model_url: https://translation.ghananlp.org
   mode: noref
@@ -18461,4 +20139,4 @@ benchmarks:
       ref_sec: 3.34
       cer: 0.2143
       wer: 0.5714
-updated: '2026-10-02'
+updated: '2026-10-09'

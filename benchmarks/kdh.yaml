@@ -5171,6 +5171,1726 @@ benchmarks:
       ref_sec: 4.66
       cer: 0.1842
       wer: 0.625
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7461
+  num_scored: 200
+  cer: 0.2036
+  wer: 0.5877
+  accuracy: 0.7964
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.7712
+  score: 0.7712
+  per_source:
+    bible:
+      sbs: 0.7461
+      cer: 0.2036
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Bʊrɔɔzɩ́ gɛ Ɩsɔ́ɔ waabá ɩkpáázɩ yɩ ɩsɩ́ɩ yɩ ɖɩdáarɛ ɖɩɩgɩ́lɩ adá rɩ́ŋa nɛ́, bɩka ɩfa
+        yɩ yɩ́ɖɛ ɖɩɩgɩ́lɩ yɩrá rɩ́ŋa nɛ́.
+      sbs: 0.7973
+      gen_sec: 9.81
+      ref_sec: 9.2
+      cer: 0.0814
+      wer: 0.2857
+    bible_00001:
+      source: bible
+      text: Kaɖaa-dɛ́ɛ nɛ́, bɩ́nbɔɔzɩ́ ɩbá ɩsɔ́ɔ́lɩ ɖamá, káma, sɔɔlɩ́m wɛ́njɛ́m alaháácɩ́wá tuutúúma
+        gɛ.
+      sbs: 0.8027
+      gen_sec: 7.94
+      ref_sec: 8.32
+      cer: 0.1493
+      wer: 0.5833
+    bible_00002:
+      source: bible
+      text: ” Amá, a méévé malɩ́ɩ ɩsɩɖáa-daá, mɛ́ndɛ́ɛ mɩ́ɩ nɩ́bááwʊ mobó Galilée laadɔ́ɔ-daá.
+      sbs: 0.7287
+      gen_sec: 7.0
+      ref_sec: 6.12
+      cer: 0.2373
+      wer: 0.7273
+    bible_00003:
+      source: bible
+      text: 'Bʊrɔɔzɩ́ gɛ máábá mɔ́zɔɔlɛ́ɛ mevééri mɩ́ɩ ɩtɩlɩ́ sɩsɩ naárʊ fɛ́yɩ́, a Ɩsɔ́ɔ-dɛ́ɛ Kezeŋa
+        wéngeti kʊ yɩ, wánbɩɩzɩ́ ɩŋmátɩ sɩsɩ: «Ɩsɔ́ɔ ɩ́la Yeésu láálɩ́» nɛ́.'
+      sbs: 0.7667
+      gen_sec: 13.06
+      ref_sec: 15.0
+      cer: 0.1071
+      wer: 0.3333
+    bible_00004:
+      source: bible
+      text: Weení ɩŋmaráa na ma bɩka mɔ́ɔ́ máŋmáráa na yɩ nɛ́, bʊdʊ́ʊ wánlám kífeńbi ɖabata,
+        káma, a mɛ́vɛ́yɩ́ mɩ́jɔ́, mɩ́dánbɩɩzɩ ɩlá báa nabʊ́rʊ.
+      sbs: 0.773
+      gen_sec: 11.52
+      ref_sec: 10.92
+      cer: 0.2143
+      wer: 0.5
+    bible_00005:
+      source: bible
+      text: 'Lɛlɛɛɖɔ́ nɛ́ kpɩná náádoozo wɛ ná: bɛɛ toovonúm fáa, tamɔ́ɔ, na sɔɔlɩ́m.'
+      sbs: 0.7487
+      gen_sec: 6.23
+      ref_sec: 8.38
+      cer: 0.2075
+      wer: 0.75
+    bible_00006:
+      source: bible
+      text: Bɩlɛ́ nɛ́, koobíya máábá mɔ́zɔɔlɛ́ɛ mɩ́ɩ nɛ́, sáátɩ wenkí mávʊnwɛ mɩ́jɔ́ nɛ́, mɩ́ɩ́bá
+        ɩnɩɩná ma.
+      sbs: 0.8165
+      gen_sec: 7.77
+      ref_sec: 8.48
+      cer: 0.1493
+      wer: 0.5333
+    bible_00007:
+      source: bible
+      text: 'Nuvoowú nakɩ́rɩ, Ɖádʊ́ʊ waalɩzɩ́ ɩdɩ ɩwɩ́lɩ Pɔ́ɔlɩ, ngɛ wɔɔdɔ́ yɩ sɩsɩ: «Nkanɩ́ɩ nɩdáárɛ,
+        laaná ŋmatɩrɛ, nkosú tɔ́m.'
+      sbs: 0.796
+      gen_sec: 10.07
+      ref_sec: 9.98
+      cer: 0.2941
+      wer: 0.5294
+    bible_00008:
+      source: bible
+      text: Méévééri mɩ́ɩ bɩrɩ́ŋa bɩlɛ́ gɛ na a mɩ́ŋmáráana ma, iyuú fɛɛzɩrɛ.
+      sbs: 0.7277
+      gen_sec: 5.8
+      ref_sec: 5.76
+      cer: 0.1224
+      wer: 0.5455
+    bible_00009:
+      source: bible
+      text: Ɩnáábɩ́lɛ́ Kezeŋa wenká kánwɩlɩ́ɩ wenbí bɩgɛ́ɛ toovonúm nɛ́.
+      sbs: 0.6532
+      gen_sec: 5.38
+      ref_sec: 3.62
+      cer: 0.2766
+      wer: 0.875
+    bible_00010:
+      source: bible
+      text: Ɖaanɩ́ŋa-rɔ kpátáá bɩlɛ́ gɛ Ɖádʊ́ʊ Ɩsɔ́ɔ wɔɔgɔ́nɩ wéngilím kárɔɔ́-daá.
+      sbs: 0.6903
+      gen_sec: 6.23
+      ref_sec: 4.22
+      cer: 0.1132
+      wer: 0.2222
+    bible_00011:
+      source: bible
+      text: Amá, weení ɩ́dánjaa baaganáa nɛ́ waasɩ Ɩsɔ́ɔ, káma, Ɩsɔ́ɔ kɛ́ɛ sɔɔlɩ́m gɛ.
+      sbs: 0.7573
+      gen_sec: 6.23
+      ref_sec: 6.68
+      cer: 0.1698
+      wer: 0.5
+    bible_00012:
+      source: bible
+      text: Mévééni wánnɩɩ́ mɔ́nɔ́ɔ́, mányɩ tɩ bɩka tínvúu ma; mánváa tɩ weezuú kɩ́dɛ́ndɛŋ́
+        nɛ́.
+      sbs: 0.6918
+      gen_sec: 7.08
+      ref_sec: 9.6
+      cer: 0.2787
+      wer: 0.6154
+    bible_00013:
+      source: bible
+      text: Fɛɛzɩrɛ wɩ́rɛ báa wenɖé, Pɔ́ɔlɩ wánzʊʊ́ Yahúúɖuwá-dɛ́ɛ Ɩsɔ́ɔ ɖaazɛɛɖɛ́, wánlám Yahúúɖuwá
+        na wenbá bɛdɛkɛ́ɛ Yahúúɖuwá nɛ́ faawɩ́ɩ.
+      sbs: 0.778
+      gen_sec: 11.35
+      ref_sec: 9.24
+      cer: 0.2
+      wer: 0.6471
+    bible_00014:
+      source: bible
+      text: Ɩzɔɔlɛ́ɛ gɛ sɩsɩ báa weení ɩlá túúbá ɩkɛ́ɛ cɔwʊrɛ.
+      sbs: 0.7371
+      gen_sec: 4.44
+      ref_sec: 4.28
+      cer: 0.2821
+      wer: 1.1111
+    bible_00015:
+      source: bible
+      text: Ɖánzám Ɩsɔ́ɔ Wúro Kʊ́bɔnɩ́ ɩmʊ́ weení wɔɔgbɔ́ɔ nyɛ́dɛ́ɛ ɩ́bɛrɛwá ɩɖʊ nyɛ́ńdɛ́ nɛ́.
+      sbs: 0.6996
+      gen_sec: 6.57
+      ref_sec: 4.7
+      cer: 0.2373
+      wer: 0.6667
+    bible_00016:
+      source: bible
+      text: Wenbí ɖááná bɩ bɩka ɖiwélesi bɩ nɛ́-dɛ́ɛ tɔ́m gɛ ɖénveerím mɩ́nyɔ́ɔ́ ɖʊɖɔ, na ɖána
+        mɩ́ɩ ɖiyóózi ɖɩlá kʊ́ɖʊḿ.
+      sbs: 0.7958
+      gen_sec: 9.05
+      ref_sec: 7.8
+      cer: 0.175
+      wer: 0.3333
+    bible_00017:
+      source: bible
+      text: 'Ɩ́kabɩsɩná mɩ́dɩ liideé-dɛ́ɛ yomáa, amá, ɩzɩŋná wenbí mɩ́wɛná nɛ́, káma, ɩdɩtɩŋa
+        wɔɔdɔ́ sɩsɩ: «Médénÿelí nya kɛtɛngɛrɛ, mɛ́dɛ́njɛḿ nya madálɩ kɛtɛngɛrɛ.'
+      sbs: 0.7937
+      gen_sec: 13.82
+      ref_sec: 14.78
+      cer: 0.1983
+      wer: 0.6
+    bible_00018:
+      source: bible
+      text: Bʊ́ʊ́rɛ wenɖé bónzulúu lɔkɔ kɩḿ kɩnɔɔ́-rɔ nɛ́, bʊ́ʊ́rɛ gɛ fɩ́ya ńɖɛ.
+      sbs: 0.7278
+      gen_sec: 5.55
+      ref_sec: 4.16
+      cer: 0.2917
+      wer: 0.7273
+    bible_00019:
+      source: bible
+      text: Bánváa mɩ́ɩ lɩ́m ɩsáŋ mɩ́nʊvɔ́, bɩka ceré tɛ́ɛrɛ́ nɛ́, ɩlɩ́ɩ ɩkpɔ́ɔ mɩ́nɩ́bááwʊ.
+      sbs: 0.7276
+      gen_sec: 6.57
+      ref_sec: 5.4
+      cer: 0.1636
+      wer: 0.5833
+    bible_00020:
+      source: bible
+      text: 'Ngɛ bɛlɛ́ boobúsi yɩ sɩsɩ: «Bɛtɩlɛhɛ́ɛm, Yudée laadɔ́ɔ-daá.'
+      sbs: 0.7651
+      gen_sec: 5.21
+      ref_sec: 4.84
+      cer: 0.1591
+      wer: 0.5
+    bible_00021:
+      source: bible
+      text: » Ngɛ beegízi yɩ badafa yɩ toovonúm.
+      sbs: 0.6338
+      gen_sec: 3.16
+      ref_sec: 14.5
+      cer: 0.25
+      wer: 0.8333
+    bible_00022:
+      source: bible
+      text: 'Zamɔ́ɔ kʊ́bɔńgɩ woodúúzi; ɩráa waagálɩ́ɩ́ná tɛ́ɛ́dɩwá ndɩ‑ndɩ-daá bɔkɔ́nɩ ɩjɔ́, ngɛ
+        waaŋmatɩná wɛ na tɔmgɛɛzɩrɛ sɩsɩ: «Ɩrʊ́ naárʊ woobo ná ɩvɔɔ́-daá kúɖúúdi larɩ́ɩ.'
+      sbs: 0.7244
+      gen_sec: 14.67
+      ref_sec: 13.42
+      cer: 0.1935
+      wer: 0.7273
+    bible_00023:
+      source: bible
+      text: Yeésu weevéézi alʊ́ leelú biyaalʊ́ ɩsɩɖʊ́.
+      sbs: 0.6942
+      gen_sec: 3.67
+      ref_sec: 3.78
+      cer: 0.3636
+      wer: 1.0
+    bible_00024:
+      source: bible
+      text: '» Ngɛ Yeésu woobúsi wɛ sɩsɩ: «Toovonúm, Elíya wɔ́ngɔnɩ́ ɩnyɔ́ɔ́zɩ báa wenbí naanɩ́.'
+      sbs: 0.7527
+      gen_sec: 7.0
+      ref_sec: 6.76
+      cer: 0.1148
+      wer: 0.5
+    bible_00025:
+      source: bible
+      text: Ńna gɛ baagbɩ́ɩ́rɩ yɩ ɖɩdáarɛ sɩ ɩcɔ́ɔ bɛcɛlɩ́ yɩ bɩ́ɩ́zɩ nasúdoozo na fɔɔlʊʊ́.
+      sbs: 0.7409
+      gen_sec: 6.74
+      ref_sec: 7.3
+      cer: 0.4407
+      wer: 0.8462
+    bible_00026:
+      source: bible
+      text: Káma, ɖɔ́ɔ́dɔ́ yɩ sɩsɩ ɖéndiríi yɩ mɩ́jɔ́ nɛ́ weedísi; ngɛ bɩɩbá bɩlá yɩ ɖasam boɖé.
+      sbs: 0.7283
+      gen_sec: 7.0
+      ref_sec: 9.6
+      cer: 0.2295
+      wer: 0.6
+    bible_00027:
+      source: bible
+      text: Ɖájaájaa Ibrahím ní, bɩdɛkɛ́ɛ ɩdɩmɛ́ kazɔ́ɔ ńná-rɔ gɛ Ɩsɔ́ɔ weeɖéézi yɩ sɩsɩ ɩzɩɩzɛ́ɛ
+        sáátɩ wenkí wɔɔgbɔ́ɔ ibiyaalʊ́ Ɩsaáka sɩ ɩlá Ɩsɔ́ɔ sarɔ́ɔ sarásɩ ɖaalanɖɛ́ nɛ́?
+      sbs: 0.712
+      gen_sec: 14.5
+      ref_sec: 13.94
+      cer: 0.252
+      wer: 0.52
+    bible_00028:
+      source: bible
+      text: Bɩɩga mɩ́nyɔ́ɔ́ nɛ́, Kezeŋa mííyúú kɛ Krísto-jɔ́ nɛ́ wɛ mɩ́rɔ́; bugúti bɩvɛ́yɩ́na sɩsɩ
+        báwɩlɩ mɩ́ɩ.
+      sbs: 0.7866
+      gen_sec: 8.19
+      ref_sec: 7.72
+      cer: 0.1714
+      wer: 0.4
+    bible_00029:
+      source: bible
+      text: Koobíya, na ɩbɩ́ɩ́zɩ iyuú mɩ́dɩ nɛ́-rɔ gɛ Ɩsɔ́ɔ waayáa mɩ́ɩ.
+      sbs: 0.7785
+      gen_sec: 4.86
+      ref_sec: 5.38
+      cer: 0.2143
+      wer: 0.5
+    bible_00030:
+      source: bible
+      text: Bɩjɔɔ́ɔ nɛ́, Ibrahím woogúti ɩkpɔ́ɔ alʊ́ ɖʊɖɔ ɩtásɩ.
+      sbs: 0.74
+      gen_sec: 4.44
+      ref_sec: 3.76
+      cer: 0.2564
+      wer: 0.75
+    bible_00031:
+      source: bible
+      text: Bɩɩgɔ́nɩ bɩsála kaanɩŋá tɛ́ɛ́dɩ-daá nɛ́, Pɔ́ɔlɩ waayáa wanbaaráa ɩtásɩ wɛ sɩsɩ bɔ́ɖɔ́kɩ
+        zinbirí, ngɛ wɛɛzɛ́ɛ wɛ biléceré bɩtɛ́ nɛ́, waagʊrʊ́ Efɛ́ɛzɩ tɛ́ɛ́dɩ-daá ɩɖɛ́ɛ Masedʊwáanɩ.
+      sbs: 0.7719
+      gen_sec: 15.87
+      ref_sec: 14.8
+      cer: 0.1778
+      wer: 0.5417
+    bible_00032:
+      source: bible
+      text: 'Káma, Yaayá-dɛ́ɛ tɔ́m gɛ Ɩsɔ́ɔ-dɛ́ɛ Tɔ́m Tákaraɖá waaŋmátɩ sɩsɩ: “Méndiríi mɛ́dɛ́ɛ
+        tɩndʊ́ʊ itóróbó bɩka ɩkpára nya nyánɩ́bááwʊ.'
+      sbs: 0.7427
+      gen_sec: 11.18
+      ref_sec: 9.24
+      cer: 0.1771
+      wer: 0.5294
+    bible_00033:
+      source: bible
+      text: Ngɛ mááná fanaḿ naárʊ wángalɩɩnáa tenkú-daá.
+      sbs: 0.6958
+      gen_sec: 4.27
+      ref_sec: 3.46
+      cer: 0.2703
+      wer: 0.8333
+    bible_00034:
+      source: bible
+      text: Amá, Ɩsɔ́ɔ-dɛ́ɛ Kezeŋa weevéézi yɩ ɩkábɩsɩ weezuú-daá.
+      sbs: 0.7722
+      gen_sec: 5.12
+      ref_sec: 4.52
+      cer: 0.0952
+      wer: 0.4286
+    bible_00035:
+      source: bible
+      text: Sáátɩ wenkí béngedím bʊ́ʊ nɛ́, ngɛ Yeésu waabásɩ wɛ sɩsɩ békefééri naárʊ wenbí
+        baana nɛ́, hálɩ Ɩrʊ́ Biyaalʊ́ ifé ɩlɩ́ɩ ɩsɩɖáa-daá.
+      sbs: 0.7681
+      gen_sec: 11.35
+      ref_sec: 11.16
+      cer: 0.26
+      wer: 0.7143
+    bible_00036:
+      source: bible
+      text: A ɖɔ́ɔ́ na ɖɔ́ɔ́, ɖányɩ sɩsɩ ɖáálɩ́ɩ sɩ́m-daá ɖɩsʊ́ʊ weezuú-daá, káma, ɖɔ́zɔɔlɛ́ɛ ɖógoobíya.
+      sbs: 0.7881
+      gen_sec: 7.77
+      ref_sec: 7.36
+      cer: 0.1538
+      wer: 0.3846
+    bible_00037:
+      source: bible
+      text: Ɩ́kɛkpɛɛná bíya bɛḿ badaá naárʊ, káma, ménveerím mɩ́ɩ sɩsɩ báa sáátɩ wenkí bɛdɛ́ɛ
+        malááyɩ́kawá sɩ́ŋɛ́ɛ Majaa weení ɩwɛ ɩsɔ́ɔ́dáá nɛ́ waazá-daá gɛ.
+      sbs: 0.7173
+      gen_sec: 12.8
+      ref_sec: 10.08
+      cer: 0.2054
+      wer: 0.7273
+    bible_00038:
+      source: bible
+      text: Ngɛ baajáa tɩɩwʊ́ bánÿaá kɩ sɩsɩ figíyée nɛ́-dɛ́ɛ fáádɩ balʊ́ʊ bɔtɔɔ́lɩ.
+      sbs: 0.7222
+      gen_sec: 6.23
+      ref_sec: 5.1
+      cer: 0.2727
+      wer: 0.5455
+    bible_00039:
+      source: bible
+      text: Baazɩ́ nɛ́, Sɩkɛ́ɛm gɛ bɔɔgɔ́gɔ́ná wɛ bebí bɔɔlááwʊ Ibrahím waavʊ́ńmʊ́ʊ kɩ na liidebɔná
+        Amɔ́ɔrɩ bíya-jɔ́ Sɩkɛ́ɛm ńnaamʊ́ nɛ́ kɩdaá.
+      sbs: 0.7592
+      gen_sec: 11.01
+      ref_sec: 12.0
+      cer: 0.2143
+      wer: 0.6842
+    bible_00040:
+      source: bible
+      text: Lɛlɛɛɖɔ́-dɛ́ɛ Yerusalɛ́ɛm kʊwɛ yoḿti-daá kɩ́na kibíya nɛ́-dɛ́ɛ ɩlɛɛzʊ́ʊ nbɩlɛ́.
+      sbs: 0.7698
+      gen_sec: 6.91
+      ref_sec: 5.7
+      cer: 0.1525
+      wer: 0.5556
+    bible_00041:
+      source: bible
+      text: Bɩka wentí ɖádayáa tɩ nabʊ́rʊ nɛ́, tɩlɛ́ tɩrɔ gɛ ɖáábá ɖóngunáa laakáarɩ bɩkɩ́lɩ
+        tɩɩganáa.
+      sbs: 0.7623
+      gen_sec: 7.94
+      ref_sec: 7.24
+      cer: 0.2254
+      wer: 0.4286
+    bible_00042:
+      source: bible
+      text: '» Ńna gɛ baalɩzɩ́ ɩráa nɔɔ́lɛ: Ísifu, bánÿaá yɩ sɩsɩ Barɩsabáasɩ, weedéɖíi yɩ́ɖɛ
+        sɩsɩ Yusitúusi nɛ́, na Matɩyáasɩ.'
+      sbs: 0.8039
+      gen_sec: 10.07
+      ref_sec: 9.84
+      cer: 0.1494
+      wer: 0.4706
+    bible_00043:
+      source: bible
+      text: Ɩ́dɛ́njɛḿ Ɩsɔ́ɔ-dɛ́ɛ Ɖaána kʊ́bɔńga-daá, ɩwɛ ńna gɛ nuvoowú na ɩdaawʊ́ wánlám yɩ bɔwʊtá,
+        wɛ́nzɛɛ́ yɩ bɩka wɔ́nvɔkɩ́ nɔɔ́.
+      sbs: 0.7169
+      gen_sec: 10.15
+      ref_sec: 8.36
+      cer: 0.0909
+      wer: 0.3333
+    bible_00044:
+      source: bible
+      text: Nimíni weení wánváa wɛ zááfɩ́ nɛ́-dɛ́ɛ nyɔ́ɔ́zɩ sɩ ɩkpa ɩsɔ́ɔ́dáá bɩlɛ́ gɛ bɩvɛ́yɩ́
+        bɩ́ndɛ́m kɛtɛngɛrɛ.
+      sbs: 0.7494
+      gen_sec: 8.45
+      ref_sec: 7.3
+      cer: 0.1067
+      wer: 0.5333
+    bible_00045:
+      source: bible
+      text: Zamɔ́ɔ kʊ́bɔńgɩ wɛ ńna bɩka kɩdɛ́ɛ ɩráa ɩbá bányʊʊ́ ɖamá sɩ banɩ́ɩ Ɩsɔ́ɔ-dɛ́ɛ tɔ́m.
+      sbs: 0.7375
+      gen_sec: 6.74
+      ref_sec: 6.54
+      cer: 0.15
+      wer: 0.5
+    bible_00046:
+      source: bible
+      text: Báa wenɖé ɩzá-daá na ɖɩwɔ́rɔ́, ɩzá bíya riké wɛ ná.
+      sbs: 0.7368
+      gen_sec: 4.35
+      ref_sec: 3.68
+      cer: 0.3784
+      wer: 0.9
+    bible_00047:
+      source: bible
+      text: Bɛlɛ́ bɔjɔɔ́ɔ ɖɔyɔɔyɔɔ bakɩ́lɩ Tesaloníiki ńba.
+      sbs: 0.723
+      gen_sec: 4.27
+      ref_sec: 3.22
+      cer: 0.3947
+      wer: 0.8333
+    bible_00048:
+      source: bible
+      text: mánɖʊ́ʊ mɛ́dɛ́ɛ Kezeŋa ɩrɔ.
+      sbs: 0.685
+      gen_sec: 2.39
+      ref_sec: 9.96
+      cer: 0.35
+      wer: 0.75
+    bible_00049:
+      source: bible
+      text: Faala gɛ baava mɩ́ɩ, mɩ́nyɔ́ɔ́ ɖʊɖɔ ɩva faala.
+      sbs: 0.7285
+      gen_sec: 3.84
+      ref_sec: 3.04
+      cer: 0.1212
+      wer: 0.25
+    bible_00050:
+      source: bible
+      text: 'Ngɛ wúro weedíri bakáyáa yɩ sɩsɩ: «Nbá nɖɛɛlʊ́ nbɩlɛ́; bɩɩlá nŋɩ́nɩ́ gɛ nyɔ́ndɔ́m sɩsɩ
+        nyénewú.'
+      sbs: 0.7372
+      gen_sec: 8.19
+      ref_sec: 6.6
+      cer: 0.169
+      wer: 0.4667
+    bible_00051:
+      source: bible
+      text: Waava wɛ yíko zííniwá-rɔɔzɩ́.
+      sbs: 0.6803
+      gen_sec: 2.73
+      ref_sec: 4.08
+      cer: 0.3478
+      wer: 1.25
+    bible_00052:
+      source: bible
+      text: Ngʊ́ Ɩsɔ́ɔ sarásɩ lanɖáa riké gɛ Mará waava nɩ́bááwʊ sɩsɩ bɔ́tɔɔ tɩ.
+      sbs: 0.7009
+      gen_sec: 5.8
+      ref_sec: 4.78
+      cer: 0.2308
+      wer: 0.6667
+    bible_00053:
+      source: bible
+      text: '» Ńna gɛ Pétro wɔɔgbɔ́ɔ ɩtɩ́ wɛ nŋɩ́nɩ́ bɩɩlá nɛ́, sɩsɩ: «Mɔ́wɛ Yopée tɛ́ɛ́dɩ-daá mánzʊlʊ́ʊ
+        nɛ́, ngɛ bɩɩlɩzɩ́ nabʊ́rʊ bɩwɩ́lɩ ma.'
+      sbs: 0.7929
+      gen_sec: 10.41
+      ref_sec: 11.28
+      cer: 0.0899
+      wer: 0.3
+    bible_00054:
+      source: bible
+      text: 'Ɩbɛɛŋná Ibrahím, Ɩsɔ́ɔ-dɛ́ɛ Tɔ́m Tákaraɖá wɔɔdɔ́ ɩrɔ sɩsɩ: «Ibrahím waava Ɩsɔ́ɔ toovonúm
+        nɛ́, biiyéle Ɩsɔ́ɔ ɩyáa yɩ sɩsɩ ɩrʊ́ ɩzɩɩzɛ́ɛ nɛ́.'
+      sbs: 0.7715
+      gen_sec: 11.95
+      ref_sec: 13.92
+      cer: 0.1068
+      wer: 0.381
+    bible_00055:
+      source: bible
+      text: Tɩmɛ́rɛ nyááɖʊ́ ma ɖɛ nɛ́, máálá ɖɛ ɖɩkʊ́ʊ́rɩ.
+      sbs: 0.751
+      gen_sec: 3.67
+      ref_sec: 3.2
+      cer: 0.2812
+      wer: 0.75
+    bible_00056:
+      source: bible
+      text: 'Wɔɔdɔ́ wɛ sɩsɩ: «Ɩjɔ́ɔ Yerusalɛ́ɛm cé ɩɖáŋ kʊjɔɔwʊ mááŋmátɩ mɩ́ɩ kɩdɔ́m nɛ́.'
+      sbs: 0.7774
+      gen_sec: 6.66
+      ref_sec: 7.38
+      cer: 0.1964
+      wer: 0.6667
+    bible_00057:
+      source: bible
+      text: Tɛ́ɛ́dɩ bánÿaá tɩ sɩsɩ Úuri tʊwɛ Babilɔ́ɔnɩ laadɔ́ɔ-daá lé baalʊ́rʊ Haráanɩ ɩmʊ́ nɛ́
+        tɩdaá ńna gɛ waazɩ́ ɩka ɩjaa.
+      sbs: 0.7341
+      gen_sec: 9.64
+      ref_sec: 10.16
+      cer: 0.1512
+      wer: 0.4737
+    bible_00058:
+      source: bible
+      text: 'Káma, ɖáábá ɖányɩ Ɩsɔ́ɔ, ɩmʊ́ weení waaŋmátɩ ɩyáázɩ sɩsɩ: «Mɔ́ɔ́ sɩ moyooná na
+        kʊ mɩ́nɔ́ɔ́; mɔ́ɔ́ sɩ mɛvɛrɛ ná.'
+      sbs: 0.7634
+      gen_sec: 9.22
+      ref_sec: 9.96
+      cer: 0.1795
+      wer: 0.6842
+    bible_00059:
+      source: bible
+      text: Amá, mɩ́nyɔ́ɔ́ koobíya ɖɔ́zɔɔlɛ́ɛ mɩ́ɩ nɛ́, báa ɖánŋmatɩ́ ɖɔ́ nɛ́, ɖáábá ɖiɖéézi
+        sɩsɩ mɩ́nyɔ́ɔ́ mɩ́wɛ nɩ́bááwʊ kazɔ́ɔ ńgɩ kínÿelíi iyuú lɛ́ɛ́dɩ nɛ́ kɩrɔɔzɩ́.
+      sbs: 0.7854
+      gen_sec: 12.88
+      ref_sec: 14.18
+      cer: 0.1171
+      wer: 0.3913
+    bible_00060:
+      source: bible
+      text: » Ńna gɛ malááyɩ́ka wɔɔgɔ́lɔ ɩdɛ́ɛ loozó adɛ laadɔ́ɔ-rɔ, ɩkɔrɩ́ kɛdɛ́ɛ víinyi bíya sɛ́kɩ́rá
+        ɩkpɔ́ɔ wɛ ɩbɩ́rɩ Ɩsɔ́ɔ-dɛ́ɛ baaná-dɛ́ɛ bɔɔwʊ́ kʊ́bɔńgɩ lénlé bánnyaazɩ́ víinyi bíya nɛ́
+        kɩdaá.
+      sbs: 0.7627
+      gen_sec: 15.78
+      ref_sec: 14.7
+      cer: 0.2117
+      wer: 0.5
+    bible_00061:
+      source: bible
+      text: Ńna gɛ wenbá booyuú bese bɩlɛ́ nɛ́ badaá kʊ́ɖʊḿ woobó ɩtɩ́ tɔ́m ifééri Ɩbrám Éburu
+        ńnɩ́.
+      sbs: 0.6873
+      gen_sec: 7.34
+      ref_sec: 6.46
+      cer: 0.3182
+      wer: 0.6875
+    bible_00062:
+      source: bible
+      text: Ɩlɩzɩ́ kpɔ́nɔ́ faadɩ́nɩ kɩ́bɩńdɩ mɩ́lɔ́wʊ́táá, tɩlɛ́ gɛ alaháácɩ́, bɩka ɩbɩ́sɩ nyazɩ
+        kpɔ́nɔ́ mʊ́tʊ kɩ́fatɩ.
+      sbs: 0.7781
+      gen_sec: 8.7
+      ref_sec: 10.06
+      cer: 0.1316
+      wer: 0.5714
+    bible_00063:
+      source: bible
+      text: 'A ngʊ́ bɩlɛ́ gɛ naárʊ waalá alaháácɩ́, ɖɔ́wɛná weení wánvʊʊnáa ɖɔ́nɔ́ɔ́ nɛ́ Caáwʊ-jɔ́:
+        ɩlɛ́ gɛ Yeésu Krísto, ɩrʊ́ ɩzɩɩzɛ́ɛ nɛ́.'
+      sbs: 0.7951
+      gen_sec: 10.58
+      ref_sec: 9.36
+      cer: 0.1444
+      wer: 0.55
+    bible_00064:
+      source: bible
+      text: Ńna gɛ Barɩnabáasɩ na Pɔ́ɔlɩ baabáázɩ tɩ́m maamááciwá na mááɖéwá rɩ́ŋa Ɩsɔ́ɔ waabaná
+        wɛ ɩlá wenbá bɛdɛkɛ́ɛ Yahúúɖuwá nɛ́ bɔlɔwʊtáá nɛ́ bénveerím wɛ bɩka bɛlɛ́ bénwelesí.
+      sbs: 0.7601
+      gen_sec: 15.35
+      ref_sec: 13.94
+      cer: 0.2889
+      wer: 0.5385
+    bible_00065:
+      source: bible
+      text: Bɩlɛ́ nɛ́, ɩrʊ́ ɩkátara wenbí Ɩsɔ́ɔ waadá bɩ nɛ́.
+      sbs: 0.737
+      gen_sec: 3.93
+      ref_sec: 3.52
+      cer: 0.0294
+      wer: 0.3333
+    bible_00066:
+      source: bible
+      text: 'Bʊrɔ gɛ mɛ́ɛ́yɛ́ɛ́ná sáátɩ kɩḿ kɩdɛ́ɛ ɩráa baaná; ngɛ mɔ́ɔ́dɔ́ sɩsɩ: “Bɩlɛ́ gɛ balaána
+        tɛlɛ́ŋ báa sáátɩ wenkí.'
+      sbs: 0.7639
+      gen_sec: 9.05
+      ref_sec: 9.82
+      cer: 0.1899
+      wer: 0.6667
+    bible_00067:
+      source: bible
+      text: Amá, bɔ́ngɔnɩ́ batɩ ná bɔnɔ́ɔ́zɩ wenbí baalá nɛ́ Ɩsɔ́ɔ weení ɩɖamáa sɩ ɩfʊʊná weezíni-dɩnáa
+        na ɩsɩɖáa tɔ́m nɛ́ waazá-daá.
+      sbs: 0.7887
+      gen_sec: 10.41
+      ref_sec: 10.36
+      cer: 0.1538
+      wer: 0.6842
+    bible_00068:
+      source: bible
+      text: Ngɛ malááyɩ́ka waajáŋ ɩtɛlɛ́ŋ iyéle Pétro.
+      sbs: 0.7309
+      gen_sec: 4.01
+      ref_sec: 3.46
+      cer: 0.4706
+      wer: 1.3333
+    bible_00069:
+      source: bible
+      text: Ɩvɛ́yɩ́na liideé sɩ ɩfɛ́rɛ kɩmɛ́rɛ nɛ́, ngɛ ɩdɛ́ɛ kʊ́bɔnɩ́ waava wɛ́ɖɛ sɩsɩ báya yɩ ɩ́na
+        ɩɖɛɛlʊ́, na ibíya na wenbí bɩrɩ́ŋa bɔwɛná nɛ́ bɛfɛ́rɛ ɩgɩmɛ́rɛ.
+      sbs: 0.7417
+      gen_sec: 12.46
+      ref_sec: 11.6
+      cer: 0.1455
+      wer: 0.32
+    bible_00070:
+      source: bible
+      text: Kúdóndoyúu ɖʊɖɔ, bɩka fɩtɩ́la na wɩ́sɩ-dɛ́ɛ ɖɛnyɛm tɛfɛ́yɩ́na wɛ fɔ́ɔ́zɩrɛ ɖʊɖɔ.
+      sbs: 0.7895
+      gen_sec: 6.91
+      ref_sec: 6.02
+      cer: 0.1333
+      wer: 0.1818
+    bible_00071:
+      source: bible
+      text: Mogoobíya, mɩ́rɔ́ɔ́zɩ́ gɛ mááŋmátɩ mɔgbɔ́ɔ mɛgɛɛzɩná mádɩtɩŋa na Apolɔ́ɔsɩ bɩlɛ́.
+      sbs: 0.7837
+      gen_sec: 7.34
+      ref_sec: 7.0
+      cer: 0.0794
+      wer: 0.5
+    bible_00072:
+      source: bible
+      text: Sáátɩ wenkí Apolɔ́ɔsɩ wɛ Korɩ́ntɩ nɛ́, Pɔ́ɔlɩ waabaná Azíi-dɛ́ɛ bʊ́ʊ́nɩ laadɔ́ɔ fáráńdɩ́wá
+        ɩkɔ́nɩ ɩtála Efɛ́ɛzɩ.
+      sbs: 0.7667
+      gen_sec: 9.47
+      ref_sec: 9.62
+      cer: 0.119
+      wer: 0.6
+    bible_00073:
+      source: bible
+      text: Baalʊ́rʊ Yeésu Bɛtɩlɛhɛ́ɛm, tɛɛbiiyá kɔwɛ Yudée laadɔ́ɔ-daá nɛ́-daá gɛ, sáátɩ wenkí
+        Eróodi wénɖíi kowúrɔ́ɔ nɛ́.
+      sbs: 0.7591
+      gen_sec: 9.98
+      ref_sec: 9.14
+      cer: 0.2791
+      wer: 0.7333
+    bible_00074:
+      source: bible
+      text: Báa sáátɩ wenkí gɛ mɔ́ndɔɔzɩ́ mɩ́rɔ́, mánzám mɛ́dɛ́ɛ Ɩsɔ́ɔ gɛ.
+      sbs: 0.7449
+      gen_sec: 5.03
+      ref_sec: 4.66
+      cer: 0.1591
+      wer: 0.5
+    bible_00075:
+      source: bible
+      text: Nabʊ́rʊ, ɩmʊ́ ɩ́na yɩ bɛdɛ́ɛ ɖamá náa-daá, wánmʊ́ʊ ɩmʊ́ kazɔ́ɔ.
+      sbs: 0.7761
+      gen_sec: 5.12
+      ref_sec: 4.78
+      cer: 0.1163
+      wer: 0.3
+    bible_00076:
+      source: bible
+      text: Báńgbɩɩrɩ kpenbiiyá sɩ bɛbɛlɩ́ na tɩ́ɩ́nɩ tigutolíni-dɛ nɛ́.
+      sbs: 0.68
+      gen_sec: 5.38
+      ref_sec: 4.1
+      cer: 0.2766
+      wer: 0.5
+    bible_00077:
+      source: bible
+      text: 'Mááná yɩ nɛ́, ngɛ wɔɔdɔ́ ma sɩsɩ: “Ɖasam, kpɛdɩ́ nlɩ́ɩ Yerusalɛ́ɛm, káma, bɩdɛkɛ́ɛ sɩ
+        betísi nyɛ́dɛ́ɛ seríya sɩ nlɩzɩ́ kɩ mɔ́rɔ́ nɛ́.'
+      sbs: 0.7601
+      gen_sec: 10.84
+      ref_sec: 11.32
+      cer: 0.1398
+      wer: 0.4091
+    bible_00078:
+      source: bible
+      text: Mɛ́dɛ́ɛ ɖɛ lám-daá, mééyéle bana nyɛ́dɛ́ɛ ásícé adɛ laadɔ́ɔ-rɔ.
+      sbs: 0.7671
+      gen_sec: 5.55
+      ref_sec: 5.06
+      cer: 0.2174
+      wer: 0.5556
+    bible_00079:
+      source: bible
+      text: ” Wenbá mána wɛ nɛ́, baabá bana ɖɛnyɛm kɩḿ, amá, badanɩ́ɩ weení wánŋmatɩnáa ma nɛ́
+        ilowú.
+      sbs: 0.8076
+      gen_sec: 7.77
+      ref_sec: 7.9
+      cer: 0.2424
+      wer: 0.6667
+    bible_00080:
+      source: bible
+      text: 'Waadála bɔjɔ́ nɛ́, ngɛ weedí ɩbála ifu adɛ baazá-daá ɩtɔ́ wɛ sɩsɩ: «Kʊ́bɔnáa, máávɩ́nɩ
+        mɩ́ɩ, ɩlá suúru ibó iɖóo mɛ́dɛ́ɛ.'
+      sbs: 0.7591
+      gen_sec: 10.07
+      ref_sec: 9.76
+      cer: 0.1977
+      wer: 0.5
+    bible_00081:
+      source: bible
+      text: Bɩka ɩsɔ́ɔ́lɩ sɩsɩ bánaazɩ yɩ ɩ́na Ɩsɔ́ɔ-dɛ́ɛ zamɔ́ɔ bɩkɩlɩ ná iɖi niíni alaháácɩ́ wánváa
+        kɩ kídénleeri nɛ́.
+      sbs: 0.7538
+      gen_sec: 9.3
+      ref_sec: 8.16
+      cer: 0.2439
+      wer: 0.5882
+    bible_00082:
+      source: bible
+      text: A tɔnʊʊ́-rɔ fɔɔlʊʊ́ nakɩ́rɩ wɛ́nÿɛlɛ́m, tɩɩganáa rɩ́ŋa ɖʊɖɔ wɛ́nÿɛlɛ́m gɛ.
+      sbs: 0.7503
+      gen_sec: 6.31
+      ref_sec: 4.96
+      cer: 0.3519
+      wer: 0.7
+    bible_00083:
+      source: bible
+      text: Weení wéndisí tɔ́m mááŋmátɩ tɩ ɖɔ́ nɛ́, ɩlɛ́ ítísi.
+      sbs: 0.6428
+      gen_sec: 4.35
+      ref_sec: 8.88
+      cer: 0.2703
+      wer: 0.4444
+    bible_00084:
+      source: bible
+      text: Mɔ́ɔ́ Pɔ́ɔlɩ mádɩtɩŋa mánŋmaa kʊ tɔ́m bíya bana ɖɔ́ mɛ́nzɛɛ́ mɩ́ɩ.
+      sbs: 0.6647
+      gen_sec: 5.46
+      ref_sec: 3.54
+      cer: 0.4681
+      wer: 0.7273
+    bible_00085:
+      source: bible
+      text: Mɩ́nmaazɩ́ sɩsɩ wé tɔ́m tɩna sɩ mɛgɛ́ɛ́zɩ mɩ́ɩ tɩ ɖɔ́ nɛ́ tɩrɔ.
+      sbs: 0.6791
+      gen_sec: 4.78
+      ref_sec: 3.58
+      cer: 0.1628
+      wer: 0.4167
+    bible_00086:
+      source: bible
+      text: Ńdáná sɩsɩ ɩdɛ́ɛ toovonúm fáa wánlám bɩdɩmɛ́rɛ ɩdɩmɛ́ wánlám yɛ nɛ́ adaá?
+      sbs: 0.737
+      gen_sec: 6.31
+      ref_sec: 6.82
+      cer: 0.2105
+      wer: 0.6667
+    bible_00087:
+      source: bible
+      text: '» Ńna gɛ zamɔ́ɔ-daá, naárʊ woobúsi yɩ sɩsɩ: «Kʊ́bɔnɩ́, mɔ́ɔ́gɔ́ná nya mebiyaalʊ́ gɛ,
+        káma, zííni nakɩ́rɩ wánjaarɩ́ yɩ, kɩɩbɩsɩná yɩ komóomúŋa ɩ́dánŋmatɩ.'
+      sbs: 0.7771
+      gen_sec: 13.31
+      ref_sec: 13.4
+      cer: 0.3125
+      wer: 0.5714
+    bible_00088:
+      source: bible
+      text: Ɩjáárɩ mɩ́dɩ ise bɩlɛ́, mɩ́nyɔ́ɔ́ ɖʊɖɔ iɖi.
+      sbs: 0.7227
+      gen_sec: 3.5
+      ref_sec: 3.44
+      cer: 0.1667
+      wer: 0.4286
+    bible_00089:
+      source: bible
+      text: Amá, ɖɔyɔɔyɔɔ gɛ ɖɔ́ɔ́jɔ́ɔ́ná mɩ́lɔ́wʊ́táá, ńŋɩnáa kɔɔ́wʊ wɛ́nbɛɛŋ́ ibíya nɛ́.
+      sbs: 0.7506
+      gen_sec: 6.57
+      ref_sec: 6.82
+      cer: 0.2909
+      wer: 0.8
+    bible_00090:
+      source: bible
+      text: Amá, mɩ́dɩtɩŋa mííyúú ɩna nŋɩ́nɩ́ Timotée waalá Laabáárʊ Kífeńgi-dɛ́ɛ tɩmɛ́rɛ na
+        toovonúm nɛ́.
+      sbs: 0.7957
+      gen_sec: 8.53
+      ref_sec: 8.98
+      cer: 0.1507
+      wer: 0.5385
+    bible_00091:
+      source: bible
+      text: Toovonúm Múúsá waava Ɩsɔ́ɔ nɛ́-rɔ gɛ waalɩ́ɩ Mɩ́sɩra laadɔ́ɔ ɩdatánnɩ́ɩ wúro nɩdáárɛ,
+        na bɩrɩ́ŋa ɩlɛ́ wáńbá ɩyɛ́ɛ baaná nɛ́.
+      sbs: 0.7923
+      gen_sec: 10.58
+      ref_sec: 10.84
+      cer: 0.1828
+      wer: 0.4737
+    bible_00092:
+      source: bible
+      text: Bánwɩlɩ́ɩ ɩráa sɩsɩ bófú wentíwá bɩdafa nɩ́bááwʊ sɩsɩ ɖɔ́ɔ́ Róóma ńba ɖítísi,
+        cáńfáná ɖufu tɩ nɛ́.
+      sbs: 0.7537
+      gen_sec: 8.62
+      ref_sec: 7.94
+      cer: 0.25
+      wer: 0.6875
+    bible_00093:
+      source: bible
+      text: 'Baaŋmáa sɩsɩ: «Tɛɛbɔńdɩ Babilɔ́ɔnɩ, tɩtɛ lakásɩ-dɩnáa na adɛ laadɔ́ɔ-dɛ́ɛ keniŋá tɩmɛ́
+        ɩgɔɔ.'
+      sbs: 0.7835
+      gen_sec: 8.53
+      ref_sec: 8.86
+      cer: 0.169
+      wer: 0.5
+    bible_00094:
+      source: bible
+      text: Máábá mánváa mɔ́dɔ́nʊʊ́ fúkúḿsi gɛ páá, bɩka mádanbá mava kɩ ɖáámá.
+      sbs: 0.7392
+      gen_sec: 5.89
+      ref_sec: 6.7
+      cer: 0.2692
+      wer: 1.0
+    bible_00095:
+      source: bible
+      text: Alaháácɩ́ kídónboná ɩrʊ́ sɩ́m-daá nɛ́-dɛ́ɛ tɔ́m gɛ mánŋmatɩ́.
+      sbs: 0.7629
+      gen_sec: 5.38
+      ref_sec: 4.26
+      cer: 0.2045
+      wer: 0.5
+    bible_00096:
+      source: bible
+      text: Wɛɛdɛ́ nɛ́, ngɛ wɔɔgbɔ́ɔ yɩ ikóduuzi abaalʊ́-jɔ́.
+      sbs: 0.7169
+      gen_sec: 4.1
+      ref_sec: 3.06
+      cer: 0.1429
+      wer: 0.1429
+    bible_00097:
+      source: bible
+      text: Ngɛ mááná tákaraɖá nakɩ́rɩ weení ɩjɔɔ́ɔ kowuro-gbelé-rɔ nɛ́-dɛ́ɛ nʊ́ʊ́nɩ kíɖiiwú-daá
+        boogóódi kɩ.
+      sbs: 0.7551
+      gen_sec: 8.7
+      ref_sec: 6.96
+      cer: 0.2267
+      wer: 0.6667
+    bible_00098:
+      source: bible
+      text: 'Ngɛ waaɖʊ yɛ alɩbáráka sɩsɩ: «Mɩ́ɩ lɩ́m-daá kpɩná, ɩɖʊ bɩɖɔ́ɔ isu lɩ́m-daá; mɩ́ɩ ɩsɔ́ɔ́dáá
+        kpɩná nɛ́, ɩbɩ́sɩ áɖʊ́ʊ́ráa ɩɖʊ bɩɖɔ́ɔ adɛ laadɔ́ɔ-rɔ.'
+      sbs: 0.7764
+      gen_sec: 12.03
+      ref_sec: 13.22
+      cer: 0.1569
+      wer: 0.4091
+    bible_00099:
+      source: bible
+      text: Ɩdɩtɩŋa ɩɖɔɔmɩ́nɩ na ɩdɛ́ɛ ɖóni bɩḿ ɖʊɖɔ gɛ waabaná ɩlá ɖáa kʊjɔ́ɔ́nɩ kazɔ́ɔ ńdɩ tɩɩbá
+        tɩwɛná fɔ́ɔ́zɩrɛ nɛ́.
+      sbs: 0.7728
+      gen_sec: 9.22
+      ref_sec: 9.06
+      cer: 0.1341
+      wer: 0.3889
+    bible_00100:
+      source: bible
+      text: Nŋɩ́nɩ́ ɩrʊ́ ɩ́ta ɩlá Ɖádʊ́ʊ bɔwʊtá nɛ́ waabá gɛ bʊɖɔ́ɔ, amá, Ɖádʊ́ʊ kʊ́ɖʊḿ ɩmʊ́ gɛ
+        ɖánlám bɔwʊtá ɖénjelíi.
+      sbs: 0.7696
+      gen_sec: 8.87
+      ref_sec: 8.36
+      cer: 0.2078
+      wer: 0.6111
+    bible_00101:
+      source: bible
+      text: 'Sáátɩ wenkí waajáŋ ɩna wɛ ɖɔ́ nɛ́, ngɛ sɩsɩ: «Cé gɛ Ɩsɔ́ɔ na ɩdɛ́ɛ ńba baɖaaduuziɖé.'
+      sbs: 0.7253
+      gen_sec: 7.17
+      ref_sec: 7.82
+      cer: 0.1639
+      wer: 0.4375
+    bible_00102:
+      source: bible
+      text: » Tɔ́m tɩḿ tɩɩgʊ́sɩ zamɔ́ɔ na tɔmvʊʊráa laakáarɩ hálɩ biyéle bɛbɛlɩ́ Yaazɔ́n na koobíya
+        baaganáa kɩmɛ́rɛ kʊ́bɔńɖɛ bɛfɛ́rɛ naanɩ́ bɛcɛ́ wɛ.
+      sbs: 0.7648
+      gen_sec: 11.78
+      ref_sec: 9.92
+      cer: 0.1792
+      wer: 0.65
+    bible_00103:
+      source: bible
+      text: 'Bɩka ɖʊɖɔ naárʊ fɛ́yɩ́, a Kezeŋa Ɖacɩrɩ‑cɩrɩ ńga téngeti yɩ, ɩbɩ́ɩ́zɩ ɩtɔ́ sɩsɩ: «Yeésu
+        kɛ́ɛ na Ɖádʊ́ʊ» nɛ́!'
+      sbs: 0.7455
+      gen_sec: 9.22
+      ref_sec: 8.44
+      cer: 0.1184
+      wer: 0.2778
+    bible_00104:
+      source: bible
+      text: Ísifu wɔɔgbɔ́ɔ bú na ɩgɔɔ bese bɛɖɛ́ɛ Mɩ́sɩra.
+      sbs: 0.696
+      gen_sec: 3.93
+      ref_sec: 3.2
+      cer: 0.4
+      wer: 0.875
+    bible_00105:
+      source: bible
+      text: 'Teráa ɩlɛ́ waalá bɩ́ɩ́zɩ niídoozo na saaláa nɛ́, ngɛ waalʊ́rʊ bíya noódoozo: Ɩbrám,
+        Nahɔ́ɔrɩ, na Haráanɩ.'
+      sbs: 0.7672
+      gen_sec: 9.22
+      ref_sec: 10.12
+      cer: 0.1266
+      wer: 0.5
+    bible_00106:
+      source: bible
+      text: Tɔ́m ɖáánɩ́ɩ tɩ Yeésu Krísto-jɔ́, ngɛ ɖénveerím mɩ́ɩ tɩ nɛ́ gɛ sɩsɩ Ɩsɔ́ɔ kɛ́ɛ ɖɛnyɛm
+        gɛ, bɩka nabʊ́rʊ fɛ́yɩ́ ɩrɔ bɩgɛ́ɛ temenuú nɛ́.
+      sbs: 0.7834
+      gen_sec: 10.84
+      ref_sec: 10.7
+      cer: 0.3053
+      wer: 0.3913
+    bible_00107:
+      source: bible
+      text: » Amá, Lɔ́ɔtɩ waabá ɩcáárɩ wɛ ɖɔ́, hálɩ bɛtɛ́ betísi basʊ́ʊ ɩdɛ́ɛ.
+      sbs: 0.6832
+      gen_sec: 5.46
+      ref_sec: 5.48
+      cer: 0.2391
+      wer: 0.6364
+    bible_00108:
+      source: bible
+      text: Amá, Marɩyáma ɩlɛ́ ɩzɩ́ŋɛ́ɛ asʊ bɔɔlááwʊ-jɔ́ wénwií.
+      sbs: 0.695
+      gen_sec: 4.69
+      ref_sec: 4.02
+      cer: 0.2308
+      wer: 1.0
+    bible_00109:
+      source: bible
+      text: Cɔɔ ńna hálɩ sáátɩ wenkí sɩ mɔdɔ́ nya sɩsɩ ngábɩsɩ nɛ́, káma Eróodi wɔ́ngɔnɩ́ ɩcáa
+        bú sɩ ɩkʊ yɩ.
+      sbs: 0.7226
+      gen_sec: 8.28
+      ref_sec: 8.52
+      cer: 0.1111
+      wer: 0.4211
+    bible_00110:
+      source: bible
+      text: Bánŋmatɩ́ ɖɔ́dɔ́m nɛ́, na sɔɔlɩ́m gɛ ɖónbúsináa.
+      sbs: 0.7696
+      gen_sec: 4.1
+      ref_sec: 3.76
+      cer: 0.1714
+      wer: 0.4286
+    bible_00111:
+      source: bible
+      text: Bɩlɛ́ nɛ́, ɩ́kanɩ́ɩ nɩdáárɛ, mɩ́wɛná Ɩsɔ́ɔ fɔ́ɔ́zɩrɛ bɩcɛzɩ́ cɩcɩ́sɩ birika.
+      sbs: 0.7035
+      gen_sec: 6.57
+      ref_sec: 5.36
+      cer: 0.2037
+      wer: 0.5
+    bible_00112:
+      source: bible
+      text: Wenbí Núhum-dɛ́ɛ bíya waalʊ́rʊ bɩlʊ́rʊ bisu laadásɩ ndɩ‑ndɩ nɛ́ nbɩlɛ́.
+      sbs: 0.6906
+      gen_sec: 6.23
+      ref_sec: 4.18
+      cer: 0.1481
+      wer: 0.6
+    bible_00113:
+      source: bible
+      text: Káma, baagʊ nya balá sarɔ́ɔ nɛ́.
+      sbs: 0.683
+      gen_sec: 2.73
+      ref_sec: 3.16
+      cer: 0.4783
+      wer: 0.8333
+    bible_00114:
+      source: bible
+      text: Ɖádʊ́ʊ weení ɩjɔ́ fɛɛzɩrɛ wánlɩɩnáa nɛ́, ɩdɩtɩŋa ɩ́fá mɩ́ɩ fɛɛzɩrɛ báa sáátɩ wenkí,
+        na báa wenbí-daá.
+      sbs: 0.7906
+      gen_sec: 8.96
+      ref_sec: 9.22
+      cer: 0.1299
+      wer: 0.5
+    bible_00115:
+      source: bible
+      text: Bú-rɔ, kʊ́bɔnɩ́-rɔ, barɩ́ŋa bándɩlɩ́ɩ ma.
+      sbs: 0.7935
+      gen_sec: 3.67
+      ref_sec: 3.9
+      cer: 0.3571
+      wer: 1.6
+    bible_00116:
+      source: bible
+      text: Sarɔ́ɔ kɛḿ gɛ bɔwʊtá mɩ́nlám Ɖádʊ́ʊ mɩ́ɩ́vá yɩ toovonúm nɛ́.
+      sbs: 0.7223
+      gen_sec: 4.86
+      ref_sec: 4.96
+      cer: 0.1591
+      wer: 0.6
+    bible_00117:
+      source: bible
+      text: Amá, Krísto ɩlɛ́ ɩgɛ́ɛ Biyaalʊ́ʊ Ɩsɔ́ɔ weejéle yɩ kʊ́bɔńdɩ ɩdɛ́ɛ ɖaána-rɔ nɛ́ gɛ, ngɛ
+        woovu ná yɩ na toovonúm.
+      sbs: 0.7489
+      gen_sec: 9.3
+      ref_sec: 9.88
+      cer: 0.0864
+      wer: 0.4211
+    bible_00118:
+      source: bible
+      text: Mogoobíya máábá mɔ́zɔɔlɛ́ɛ mɩ́ɩ nɛ́, a ńŋɩnáa bɩlɛ́ gɛ Ɩsɔ́ɔ wɔɔzɔ́ɔ́lɩ ɖáa, bɩɩbɔ́ɔ́zɩ
+        ɖɔ́ɔ́ ɖʊɖɔ ɖɩsɔ́ɔ́lɩ ɖamá.
+      sbs: 0.8095
+      gen_sec: 9.3
+      ref_sec: 8.16
+      cer: 0.0864
+      wer: 0.2353
+    bible_00119:
+      source: bible
+      text: Baaŋmáa gɛ sɩsɩ bɩgabaazɩya, alʊ́ na abaalʊ́ gɛ Ɩsɔ́ɔ waalá wɛ.
+      sbs: 0.7168
+      gen_sec: 5.55
+      ref_sec: 4.36
+      cer: 0.0625
+      wer: 0.2727
+    bible_00120:
+      source: bible
+      text: A tɩrɩ́ŋa tɩ́fʊ́ngɛ́ɛ fɔɔlʊʊ́ kʊ́ɖʊmʊ́ʊ, tɔnʊʊ́ ɩ́fʊ́nvɛ́yɩ́ nbɩlɛ́.
+      sbs: 0.7319
+      gen_sec: 5.38
+      ref_sec: 4.24
+      cer: 0.1957
+      wer: 0.875
+    bible_00121:
+      source: bible
+      text: Ɩrʊ́ Biyaalʊ́ wɛná na kʊ yíko Fɛɛzɩrɛ wɩ́rɛ-rɔ.
+      sbs: 0.7159
+      gen_sec: 4.01
+      ref_sec: 5.06
+      cer: 0.1429
+      wer: 0.5
+    bible_00122:
+      source: bible
+      text: Bɛlɛ́ bɔzɔɔlɛ́ɛ ma nɛ́ gɛ bénveerím ɩráa Krísto-dɛ́ɛ tɔ́m, káma, banyɩ sɩsɩ mɔ́dɔ́ɔ sáráka
+        cé sɩ moyóo Laabáárʊ Kífeńgi-dɛ́ɛ yowú gɛ.
+      sbs: 0.7281
+      gen_sec: 11.61
+      ref_sec: 12.5
+      cer: 0.17
+      wer: 0.4762
+    bible_00123:
+      source: bible
+      text: Wɛɛgɛɛ ná Yeésu wɔ́rɔ́ ɩlɛ́ ɩnʊvɔ́-jɔ́ wénwií bɩka ɩdɛ́ɛ nzʊlʊ́m wéndím Yeésu nʊvɔ́-rɔ.
+      sbs: 0.7068
+      gen_sec: 7.34
+      ref_sec: 7.04
+      cer: 0.1406
+      wer: 0.5385
+    bible_00124:
+      source: bible
+      text: 'Badaá nɛbɛ́rɛ wɔ́ndɔ́m sɩsɩ: «Ɩsɩ we gɛ ŋmatʊ‑ŋmátʊʊ́ ceení ɩ́ba wánŋmatɩ́ gɛ.'
+      sbs: 0.7681
+      gen_sec: 7.0
+      ref_sec: 4.86
+      cer: 0.1579
+      wer: 0.5833
+    bible_00125:
+      source: bible
+      text: Bánŋmatɩ́ sɩsɩ, mɩ́dáá naárʊ wɔɔgbɔ́ɔ ɩjaa ɖɛɛlʊ́.
+      sbs: 0.7401
+      gen_sec: 4.44
+      ref_sec: 4.0
+      cer: 0.1842
+      wer: 0.7143
+    bible_00126:
+      source: bible
+      text: Wenbá barɩ́ŋa bánnɩɩ́ sɩsɩ máálʊ́rʊ Ɩsaáka nɛ́, bɛlɛ́ ɖʊɖɔ sɩ basála kɔdɔ́ŋa gɛ.
+      sbs: 0.7141
+      gen_sec: 7.0
+      ref_sec: 5.36
+      cer: 0.1833
+      wer: 0.5385
+    bible_00127:
+      source: bible
+      text: Mogoobíya, wahála na suúru-dɛ́ɛ tɔ́m-daá nɛ́, ɩbɛɛŋná anɖébiwá baaŋmatɩná Ɖádʊ́ʊ
+        nɔɔ́ nɛ́.
+      sbs: 0.8019
+      gen_sec: 8.19
+      ref_sec: 7.8
+      cer: 0.1176
+      wer: 0.75
+    bible_00128:
+      source: bible
+      text: » Bɩdɛ́ɛ sáátɩ, Pétro ɩlɛ́ ɩbá ɩwɛ ɩbamáa tará kɔtɩ́.
+      sbs: 0.7001
+      gen_sec: 4.35
+      ref_sec: 4.6
+      cer: 0.5
+      wer: 0.8889
+    bible_00129:
+      source: bible
+      text: Méndiríi mɩ́ɩ ɖɔ́ nɛ́, bɩjɔɔ́ɔ gɛ nyazɩ bónbonáa fééni káwʊ‑káwʊwá lɔwʊtáá nɛ́.
+      sbs: 0.7102
+      gen_sec: 6.91
+      ref_sec: 6.28
+      cer: 0.2667
+      wer: 0.4167
+    bible_00130:
+      source: bible
+      text: Bɩɩga liideé sɩ baɖʊ boboná Ɩsɔ́ɔ-dɛ́ɛ nbá Yerusalɛ́ɛm tɛ́ɛ́dɩ-daá nɛ́-dɛ́ɛ tɔ́m nɛ́,
+        mɩ́nyɔ́ɔ́ ɖʊɖɔ ɩlá ńŋɩnáa wenbí máázɩ́ɩ́zɩ Galasíi Koduuzísi nɛ́.
+      sbs: 0.7756
+      gen_sec: 12.8
+      ref_sec: 11.56
+      cer: 0.1892
+      wer: 0.619
+    bible_00131:
+      source: bible
+      text: » Ngɛ Ɩsɔ́ɔ waalá lɩ́m-daá fanáńdɩ kʊ́bɔńdɩ na kúmuúti ndɩ‑ndɩ, na siḿsi ndɩ‑ndɩ.
+      sbs: 0.7452
+      gen_sec: 7.08
+      ref_sec: 7.32
+      cer: 0.15
+      wer: 0.6667
+    bible_00132:
+      source: bible
+      text: 'Wɔɔmɔɔná wanbaaráa nɛbɛ́rɛ ńna, ngɛ wɔɔbɔ́ɔ́zɩ wɛ sɩsɩ: «Mɩ́ɩ́mʊ́ Kezeŋa Ɖacɩrɩ‑cɩrɩ ńga
+        sáátɩ wenkí mɩ́ɩ́vá toovonúm nɛ́?'
+      sbs: 0.7955
+      gen_sec: 10.84
+      ref_sec: 9.68
+      cer: 0.163
+      wer: 0.5882
+    bible_00133:
+      source: bible
+      text: Káma, wenbí bɩ́nwɩlɩ́ɩ sɩsɩ ɖɔ́zɔɔlɛ́ɛ Ɩsɔ́ɔ nɛ́ gɛ sɩsɩ ɖánlám wenbíwá waazɩ́ɩ́zɩ ɖáa
+        bɩ nɛ́.
+      sbs: 0.7934
+      gen_sec: 7.77
+      ref_sec: 8.4
+      cer: 0.1304
+      wer: 0.4667
+    bible_00134:
+      source: bible
+      text: 'Ɩráa fuú na nɔɔ́lɛ bana gɛ Yeésu weedíri, ifééri wɛ sɩsɩ: «Íkobó wenbá bɛdɛkɛ́ɛ
+        Yahúúɖuwá nɛ́ bɔjɔ́, ngʊ́ ɩ́kasʊ́ʊ Samarɩ́ya tɛ́ɛ́dɩ báa natɩ́rɩ-daá.'
+      sbs: 0.7385
+      gen_sec: 12.54
+      ref_sec: 11.46
+      cer: 0.1727
+      wer: 0.5652
+    bible_00135:
+      source: bible
+      text: Wenbí bʊrɔ nɛ́, bɛlɛ́ barɩ́ŋa banyɩ sɩsɩ ɩjaa kɛ́ɛ Gɩrɛ́ɛkɩ ńnɩ́ gɛ.
+      sbs: 0.7687
+      gen_sec: 5.63
+      ref_sec: 4.92
+      cer: 0.0612
+      wer: 0.3333
+    bible_00136:
+      source: bible
+      text: Káma, ɖaána báa wenká wɛná kɛdɛ́ɛ maarʊ́, ngʊ́ weení waama wenbí bɩrɩ́ŋa bʊwɛ nɛ́ gɛ
+        Ɩsɔ́ɔ.
+      sbs: 0.783
+      gen_sec: 7.77
+      ref_sec: 9.94
+      cer: 0.2388
+      wer: 0.625
+    bible_00137:
+      source: bible
+      text: tɔ́ɔ, lɛlɛɛɖɔ́ gɛ nyɔ́ɔ́ nyáábá ndáa bɔ́tɩ.
+      sbs: 0.7314
+      gen_sec: 3.5
+      ref_sec: 4.22
+      cer: 0.3
+      wer: 0.8571
+    bible_00138:
+      source: bible
+      text: Ngɛ máálá yaraɖá Ɖádʊ́ʊ-rɔɔzɩ́ sɩsɩ bídénleeri, mádɩtɩŋa mónboɖé magáná mɩ́ɩ.
+      sbs: 0.7522
+      gen_sec: 7.17
+      ref_sec: 6.18
+      cer: 0.2581
+      wer: 0.8
+    bible_00139:
+      source: bible
+      text: ɖánzám nya ńŋɩnáa nyááwɩ́lɩ nyɛ́dɛ́ɛ yíko kʊ́bɔńgɩ.
+      sbs: 0.6965
+      gen_sec: 4.61
+      ref_sec: 3.92
+      cer: 0.35
+      wer: 1.2857
+    bible_00140:
+      source: bible
+      text: 'Bʊwɔ́rɔ́ gɛ Yaayá weení wénliríi ɩráa lɩ́m-daá wɔ́nzɔ́ɔ wɛ túúbá lɩ́m nɛ́ waaɖʊ
+        ɩlɩ́ɩ Yudée tɛɛwʊ́lɔ́ɔ́-daá wánlám waázu sɩsɩ: «Ɩgɛ́ɛ mɩ́lakásɩ, káma Ɩsɔ́ɔ-dɛ́ɛ kowúrɔ́ɔ
+        waajʊ́ʊ.'
+      sbs: 0.7393
+      gen_sec: 15.1
+      ref_sec: 12.92
+      cer: 0.2154
+      wer: 0.72
+    bible_00141:
+      source: bible
+      text: 'Baaŋmáa Ɩsɔ́ɔ-dɛ́ɛ Tɔ́m Tákaraɖá-daá sɩsɩ: «Kaalʊrʊya, nyɔ́ɔ́ weení ńdánlʊrʊ́ nɛ́,
+        faarɩ!'
+      sbs: 0.7724
+      gen_sec: 7.85
+      ref_sec: 7.98
+      cer: 0.1538
+      wer: 0.5455
+    bible_00142:
+      source: bible
+      text: Yeésu wénɖíi kíɖíím Simɔ́ɔnɩ Faríizi ńnɩ́-dɛ́ɛ ɖaána-daá.
+      sbs: 0.737
+      gen_sec: 5.21
+      ref_sec: 5.08
+      cer: 0.2667
+      wer: 0.8571
+    bible_00143:
+      source: bible
+      text: Wʊláázɩ sɩɩwɩ́lɩ nɛ́, bɔ́ndɔɔzɩ́ sɩ gɛ baɖʊ nimíni siɖe.
+      sbs: 0.741
+      gen_sec: 4.78
+      ref_sec: 4.3
+      cer: 0.1905
+      wer: 0.7778
+    bible_00144:
+      source: bible
+      text: Galasíi ńba-dɛ́ɛ kʊjʊʊ́ fɛ́yɩ́-dɩnáa lakásɩ-dɛ́ɛ tɔ́m.
+      sbs: 0.6804
+      gen_sec: 4.69
+      ref_sec: 3.08
+      cer: 0.2821
+      wer: 0.8333
+    bible_00145:
+      source: bible
+      text: 'Sáátɩ wenkí Yaayá-dɛ́ɛ wanbaaráa wɛɛɖɛ́ɛ nɛ́, ngɛ Yeésu wɔɔgbɔ́ɔ wánŋmatɩ́ zamɔ́ɔ
+        Yaayá-rɔ sɩsɩ: «Wé gɛ mííbó ɩkɛ́bɛ́ɛŋ tɛɛwʊ́lɔ́ɔ́-daá.'
+      sbs: 0.7632
+      gen_sec: 11.95
+      ref_sec: 11.66
+      cer: 0.1881
+      wer: 0.6667
+    bible_00146:
+      source: bible
+      text: Ɩɩ́n, ɖoo nɛ́, mɩ́ɩ́gbɔ́ɔ ɖáámá ɖabata mɩ́nlám wenbí bɩmɔɔ́ɔ wenbá baasɩ Ɩsɔ́ɔ nɛ́,
+        bɩɩmɔ́ɔ bɩlɛ́.
+      sbs: 0.799
+      gen_sec: 7.94
+      ref_sec: 8.44
+      cer: 0.1449
+      wer: 0.5333
+    bible_00147:
+      source: bible
+      text: Ɩsɔ́ɔ ɩmʊ́ gɛ kʊ́bɔńdɩ na yíko rɩ́ŋa-dʊ́ʊ báa ngbeére bɩ́dɛ́ndɛŋ́.
+      sbs: 0.7805
+      gen_sec: 5.55
+      ref_sec: 4.76
+      cer: 0.1277
+      wer: 0.4
+    bible_00148:
+      source: bible
+      text: '» Ngɛ Yeésu woobúsi wɛ sɩsɩ: «Ibó ifééri Yaayá wenbí mɩ́ɩ́nɩ́ɩ na wenbí mɩ́ɩ́ná
+        nɛ́.'
+      sbs: 0.7394
+      gen_sec: 6.74
+      ref_sec: 5.38
+      cer: 0.25
+      wer: 0.6429
+    bible_00149:
+      source: bible
+      text: Amá, a ɩdanɩɩná nya, kpɔɔ ɩrʊ́ kʊ́ɖʊḿ yáá nɔɔ́lɛ ibó ɩna yɩ.
+      sbs: 0.716
+      gen_sec: 5.03
+      ref_sec: 4.62
+      cer: 0.2326
+      wer: 0.5
+    bible_00150:
+      source: bible
+      text: 'Ńna gɛ wanbaaráa wɔɔbɔ́ɔ́zɩ Yeésu sɩsɩ: «We-rɔ gɛ Mará wɩlɩɖáa wánŋmatɩ́ sɩsɩ asée
+        Elíya wɔ́ńgɔ́nɩ́ naanɩ́.'
+      sbs: 0.7631
+      gen_sec: 9.3
+      ref_sec: 8.06
+      cer: 0.2099
+      wer: 0.6875
+    bible_00151:
+      source: bible
+      text: Krísto-dɛ́ɛ Koduuzísi sɩwɛ Azíi laadásɩ-daá nɛ́ wɛɛzɛ́ɛ mɩ́ɩ.
+      sbs: 0.7372
+      gen_sec: 5.46
+      ref_sec: 4.0
+      cer: 0.1915
+      wer: 0.875
+    bible_00152:
+      source: bible
+      text: 'Ngɛ wɔɔdɔ́ sɩsɩ: «Ɩráa bana barɩ́ŋa bɛgɛ́ɛ ɩrʊ́ kʊ́ɖʊḿ gɛ, bɩka bánŋmatɩ́ kʊnʊm kʊ́ɖʊmʊ́ʊ.'
+      sbs: 0.7609
+      gen_sec: 7.68
+      ref_sec: 6.68
+      cer: 0.1385
+      wer: 0.5
+    bible_00153:
+      source: bible
+      text: Ɩsɩɖʊ́ ɩmʊ́ nɛ́, alʊ́ leelú naárʊ biyaalʊ́ gɛ bɩgɛ́ɛ.
+      sbs: 0.7196
+      gen_sec: 4.27
+      ref_sec: 3.8
+      cer: 0.1622
+      wer: 0.6667
+    bible_00154:
+      source: bible
+      text: Bánlʊrʊ́ʊ bíya bɛḿ nɛ́, bajaa Ɩsaáka wɛná bɩ́ɩ́zɩ niídoozo .
+      sbs: 0.7234
+      gen_sec: 5.12
+      ref_sec: 4.74
+      cer: 0.2667
+      wer: 0.7778
+    bible_00155:
+      source: bible
+      text: 'Teráa kutoluú-dɛ bíya nɖɔ́: waalʊ́rʊ Ɩbrám, Nahɔ́ɔrɩ, na Haráanɩ.'
+      sbs: 0.7191
+      gen_sec: 5.89
+      ref_sec: 7.72
+      cer: 0.2653
+      wer: 0.8889
+    bible_00156:
+      source: bible
+      text: Kezeŋa Ɖacɩrɩ‑cɩrɩ ńga Yeésu sɩ ɩkává tɩndɩnáa nɛ́.
+      sbs: 0.7618
+      gen_sec: 5.03
+      ref_sec: 3.88
+      cer: 0.1707
+      wer: 0.625
+    bible_00157:
+      source: bible
+      text: 'Ńna gɛ zamɔ́ɔ wɔɔbɔ́ɔ́zɩ yɩ sɩsɩ: «Bɩlɛ́ nɛ́, wé gɛ bɩmɔɔ́na ɖɩlá ɖɔ́.'
+      sbs: 0.7392
+      gen_sec: 5.46
+      ref_sec: 4.8
+      cer: 0.0426
+      wer: 0.1538
+    bible_00158:
+      source: bible
+      text: Ngɛ sɩ́m na ɩsɩɖáa ɖaajɔɔɖɛ́ ɖʊɖɔ weejéle bɛdɛ́ɛ ɩsɩɖáa.
+      sbs: 0.7259
+      gen_sec: 4.86
+      ref_sec: 5.54
+      cer: 0.3864
+      wer: 0.4444
+    bible_00159:
+      source: bible
+      text: Káma, ɖána Ɩsɔ́ɔ ɖánlám kʊ tɩmɛ́rɛ, ngɛ mɩ́nyɔ́ɔ́ gɛ Ɩsɔ́ɔ-dɛ́ɛ fɔɔ́, mɩ́gɛ́ɛ na kʊ ɖaḿ
+        wenkí waama kɩ nɛ́.
+      sbs: 0.802
+      gen_sec: 8.53
+      ref_sec: 10.8
+      cer: 0.1233
+      wer: 0.4737
+    bible_00160:
+      source: bible
+      text: Ɩgbɔ́ɔ lomaazɛ́ weená arɩ́ŋa ánjaarɩ́ mɩ́ɩ nɛ́ ɩɖʊ ɩnʊ́ʊ́zɩ-daá, káma, wɛ́nbɛɛŋ kʊ mɩ́rɔ́.
+      sbs: 0.7816
+      gen_sec: 7.51
+      ref_sec: 6.76
+      cer: 0.1746
+      wer: 0.6923
+    bible_00161:
+      source: bible
+      text: Waana wenbí nyánzɩnáa kʊnyɔḿ-dɩnáa nɛ́, ngɛ wɔɔgɔ́dɔ́ɔzɩ nyɔ́rɔ́.
+      sbs: 0.7826
+      gen_sec: 5.8
+      ref_sec: 4.4
+      cer: 0.18
+      wer: 0.625
+    bible_00162:
+      source: bible
+      text: Bɩlɛ́ nɔ́ɔ́ gɛ Ɩsaáka ɖʊɖɔ waalá ibiyaalʊ́ Yaakúbu.
+      sbs: 0.7483
+      gen_sec: 4.35
+      ref_sec: 4.38
+      cer: 0.1538
+      wer: 0.5
+    bible_00163:
+      source: bible
+      text: Ɩ́kasɩmná Ɩsɔ́ɔ-dɛ́ɛ tɔ́m welesí riké bɩka mínÿiilím mɩ́dɩ, amá, ɩlá wenbí tɩ́nbɔɔzɩ́
+        nɛ́.
+      sbs: 0.774
+      gen_sec: 7.68
+      ref_sec: 9.6
+      cer: 0.197
+      wer: 0.6154
+    bible_00164:
+      source: bible
+      text: Mébíya, wenbí bʊrɔ mánŋmaá mɩ́ɩ nɛ́ gɛ sɩsɩ mɩ́nyɩ Caáwʊ.
+      sbs: 0.7562
+      gen_sec: 5.12
+      ref_sec: 4.64
+      cer: 0.1628
+      wer: 0.4
+    bible_00165:
+      source: bible
+      text: Ɩrʊ́ wánváa Krísto toovonúm nɛ́ wénÿelíi kʊ na iyuú lɛ́ɛ́dɩ.
+      sbs: 0.7293
+      gen_sec: 5.12
+      ref_sec: 3.66
+      cer: 0.3043
+      wer: 0.7
+    bible_00166:
+      source: bible
+      text: Mɔ́ɔ́ nɛ́, mɔ́ɔ́gɔ́nɩ gɛ sɩsɩ na ɩráa iyuú weezuú, bɩka weezuú kɩḿ kɩbá kɩtála wɛ páá.
+      sbs: 0.7403
+      gen_sec: 7.08
+      ref_sec: 6.36
+      cer: 0.1129
+      wer: 0.375
+    bible_00167:
+      source: bible
+      text: 'Ngɛ mɩ́ndɔ́m sɩsɩ: “Ɩbɛ́ɛ ceení, ɖiirú na sʊlʊ́m nyɔɔrʊ́ gɛ ɩgɛ́ɛ; tikée mʊʊráa na alaháácɩ́-dɩnáa
+        gɛ ɩɖɔndɩnáa.'
+      sbs: 0.737
+      gen_sec: 9.81
+      ref_sec: 9.8
+      cer: 0.1928
+      wer: 0.4118
+    bible_00168:
+      source: bible
+      text: Nyɔɔ́sɩ wánjaarɩ́ ɩwanbaaráa nɛ́, ngɛ baabáázɩ bilée kpɛɛ́ bɔ́ndɔwʊ́ʊ kibíya.
+      sbs: 0.7366
+      gen_sec: 6.74
+      ref_sec: 5.58
+      cer: 0.3667
+      wer: 0.8
+    bible_00169:
+      source: bible
+      text: Bɛlɛ́ baagála kɛ nɛ́, ngɛ kadaá tɔmdasɩrɛ waabá bɩlá barɩ́ŋa niíni páá.
+      sbs: 0.7818
+      gen_sec: 6.31
+      ref_sec: 5.04
+      cer: 0.1818
+      wer: 0.75
+    bible_00170:
+      source: bible
+      text: Ngʊ́ ɖééɖéézi gɛ sɩsɩ Ɖádʊ́ʊ Yeésu-dɛ́ɛ alɩbáráka-daá gɛ bɛlɛ́ booyuú lɛ́ɛ́dɩ ńŋɩnáa
+        ɖɔ́ɔ́ ɖʊɖɔ nɔ́ɔ́.
+      sbs: 0.7718
+      gen_sec: 8.62
+      ref_sec: 9.0
+      cer: 0.2133
+      wer: 0.4
+    bible_00171:
+      source: bible
+      text: A ɖádɩtɩŋa ɖáfʊnmaazɩ́ ɖɔ́jɔwʊrɛ-rɔ kazɔ́ɔ, Ɩsɔ́ɔ tángʊ́ʊ ɖɔ́dɔ́m.
+      sbs: 0.7335
+      gen_sec: 5.8
+      ref_sec: 4.38
+      cer: 0.3469
+      wer: 1.375
+    bible_00172:
+      source: bible
+      text: 'Fʊ́ńdɩ kpɩná ndɩ‑ndɩ kɔwɛ bɩsaawʊ́ kɩḿ kɩdaá: bɛɛ nʊvɔ́ nánásá-dɩnáa, na adɛ‑gaalɩɖáa,
+        na siḿsi.'
+      sbs: 0.7383
+      gen_sec: 8.7
+      ref_sec: 4.78
+      cer: 0.2466
+      wer: 0.6429
+    bible_00173:
+      source: bible
+      text: Bɩjɔɔ́ɔ gɛ nyazɩ waavʊ́ ɩgʊjʊʊ́ bɩlɛ́.
+      sbs: 0.7244
+      gen_sec: 3.16
+      ref_sec: 3.9
+      cer: 0.1786
+      wer: 0.5
+    bible_00174:
+      source: bible
+      text: Ngɛ Eróodi weeyéle bayáa tɩlɩ́ɖa túbu-dɩnáa bɛɛgbɛ́lɛŋ wɩlásɩ-dɛ́ɛ boɖé nɛ́ súmúú-daá,
+        ɩbɔ́ɔ́zɩ wɛ sáátɩ wenkí ɖéyí‑ɖéyí wɩlɔɔ́ waaɖʊ kalɩ́ɩ nɛ́.
+      sbs: 0.6939
+      gen_sec: 12.89
+      ref_sec: 9.06
+      cer: 0.2162
+      wer: 0.6
+    bible_00175:
+      source: bible
+      text: Ɖoo bɩgabaazɩya gɛ ɩvʊngɛ́ɛ wenbí Ɩsɔ́ɔ kɛ́ɛ bɩ nɛ́; amá, ɩdalʊ́ sɩsɩ ɩ́na Ɩsɔ́ɔ bɔcɔ́ɔ
+        ɖéyí‑ɖéyí bɩlɛ́.
+      sbs: 0.7805
+      gen_sec: 8.7
+      ref_sec: 11.0
+      cer: 0.1867
+      wer: 0.4706
+    bible_00176:
+      source: bible
+      text: Weení wɔɔzɔ́ɔ́lɩ ɩgɔɔ yáá ɩjaa bɩkɩ́lɩ ma nɛ́, tɛkɛ́ɛ mɛ́dɛ́ɛ ńnɩ́, weení wɔɔzɔ́ɔ́lɩ
+        ɩwɛɛlɛ́ɛ yáá ibiyaalʊ́ bɩkɩ́lɩ ma nɛ́, tɛkɛ́ɛ mɛ́dɛ́ɛ ńnɩ́.
+      sbs: 0.7561
+      gen_sec: 11.52
+      ref_sec: 9.9
+      cer: 0.1188
+      wer: 0.3636
+    bible_00177:
+      source: bible
+      text: Bʊrɔɔzɩ́ nɛ́ koobíya, ɩdásɩ ɩcáárɩ mɩ́dɩ mɩ́nwɩlɩ́ɩ sɩsɩ Ɩsɔ́ɔ waayaa ná mɩ́ɩ bɩka waada
+        ná ɩlɩzɩ́ mɩ́ɩ ɖʊɖɔ.
+      sbs: 0.7904
+      gen_sec: 9.22
+      ref_sec: 10.86
+      cer: 0.0988
+      wer: 0.3333
+    bible_00178:
+      source: bible
+      text: ” Amá, wenbá barɩ́ŋa baava Ɩsɔ́ɔ-dɛ́ɛ áséńsí toovonúm nɛ́, beeɖéézi sɩsɩ kɩzɩɩzɛ́ɛ.
+      sbs: 0.7067
+      gen_sec: 7.34
+      ref_sec: 6.34
+      cer: 0.2903
+      wer: 0.5455
+    bible_00179:
+      source: bible
+      text: Ngɛ wɩ́rɛ wenɖé Yeésu Krísto sɩ ɩkɔ́nɩ nɛ́ gɛ sɩ ɩkʊ́ʊ́rɩ ɖɛ.
+      sbs: 0.651
+      gen_sec: 4.86
+      ref_sec: 5.46
+      cer: 0.2045
+      wer: 0.5
+    bible_00180:
+      source: bible
+      text: Koobíya waazʊ́lʊ bɔrɔ, bɔkpɔ́ɔ wɛ baɖʊ Ɖádʊ́ʊ nʊ́ʊ́zɩ-daá sɩsɩ ɩ́ɖʊ́ wɛ alɩbáráka bɩtɛ́
+        nɛ́, ngɛ bɛɛɖɛ́ɛ.
+      sbs: 0.7914
+      gen_sec: 8.7
+      ref_sec: 8.1
+      cer: 0.1184
+      wer: 0.3125
+    bible_00181:
+      source: bible
+      text: Lɛlɛɛɖɔ́, Ɖádʊ́ʊ Ɩsɔ́ɔ waayáázɩ wɛ ɩsɩ́ɩ ndɩ‑ndɩ, wenbí biiyéle gɛ ɩráa woozu ɖúúlínya-daá
+        nɛ́ nbɩlɛ́.
+      sbs: 0.7358
+      gen_sec: 8.96
+      ref_sec: 7.28
+      cer: 0.1558
+      wer: 0.4667
+    bible_00182:
+      source: bible
+      text: 'Káma, baaŋmáa Ɩsɔ́ɔ-dɛ́ɛ Tɔ́m Tákaraɖá-daá sɩsɩ: «Ɩlɩzɩ́ kidaavéénúu mɩ́lɔ́wʊ́táá.'
+      sbs: 0.8058
+      gen_sec: 7.34
+      ref_sec: 9.12
+      cer: 0.2131
+      wer: 0.5556
+    bible_00183:
+      source: bible
+      text: '» Ńna gɛ Pétro waagʊrʊ́ ití ibó ɩna wɛ ifééri wɛ sɩsɩ: «Bɛɛ mɔ́ɔ́ gɛ mɩ́njáádɩ, wentí
+        wɔɔgɔ́gɔ́ná na mɩ́ɩ.'
+      sbs: 0.7123
+      gen_sec: 8.53
+      ref_sec: 12.38
+      cer: 0.16
+      wer: 0.3684
+    bible_00184:
+      source: bible
+      text: Ɩsɔ́ɔ waaŋmátɩ ɩtɔ́ sɩsɩ keɖiyá kɩ́falɔɔ́ nɛ́, bugutoluú sɩsɩ kaɖaa ńga waabɩ́sɩ kɩ́bɩńga
+        nbɩlɛ́.
+      sbs: 0.7991
+      gen_sec: 8.45
+      ref_sec: 8.7
+      cer: 0.1216
+      wer: 0.3571
+    bible_00185:
+      source: bible
+      text: Amá, Ɩsɔ́ɔ weeyele ná bɩnyɔ bɩkʊrʊ́.
+      sbs: 0.7168
+      gen_sec: 3.16
+      ref_sec: 3.82
+      cer: 0.2963
+      wer: 0.5
+    bible_00186:
+      source: bible
+      text: Mɩ́nyɔ́ɔ́ aláa ɖʊɖɔ, ɩvʊ́ʊ́zɩ mɩ́dɩ mɩ́waalɩnáa-dɛɛzɩ́, na a badaá nɛbɛ́rɛ wɛ gɛ badafa
+        Ɩsɔ́ɔ-dɛ́ɛ tɔ́m toovonúm, bɛɖɛɛlɩnáa-dɛ́ɛ cɔwʊrɛ ɩkɛ́ɛ wɛ bafa toovonúm báa ɖoo badaŋmatɩná
+        wɛ.
+      sbs: 0.7879
+      gen_sec: 16.21
+      ref_sec: 14.76
+      cer: 0.146
+      wer: 0.4615
+    bible_00187:
+      source: bible
+      text: Wɩ́rɛ ɖɛ́nɖɛɛ́ Ɩsɔ́ɔ ɖaazɛɛɖɛ́ nɛ́, ngɛ bú aléeré naárʊ ɩwɛná zííni kínÿelíi wánnáa
+        bɩɩzá-daá tɔ́m nɛ́ wɔɔgɔ́nɩ ɩsɩ́ŋ ɖáa.
+      sbs: 0.7849
+      gen_sec: 10.41
+      ref_sec: 11.1
+      cer: 0.2418
+      wer: 0.6316
+    bible_00188:
+      source: bible
+      text: Kpɔɔná sinje hálɩ míbíya-bíya-jɔ́; bú abaalʊ́ báa weení gɛ baalʊ́rʊ yɩ, ɩdɛ́ɛ wɛ́
+        lutoozo wɩ́rɛ nɛ́, asée bɛbɛlɩ́ yɩ.
+      sbs: 0.7146
+      gen_sec: 9.98
+      ref_sec: 9.4
+      cer: 0.2706
+      wer: 0.5789
+    bible_00189:
+      source: bible
+      text: A ngʊ́ mɩ́ɩ́zʊlʊ, bádánváa mɩ́ɩ, káma, wenbí bʊrɔ mɩ́nzʊlʊ́ʊ nɛ́ takazɔ́ɔ; mɩ́dɛ́ɛ kɔɖɛyɩ́wá
+        tɩtɛ ndɩ-rɔ gɛ mɩ́nzʊlʊ́ʊ.
+      sbs: 0.7906
+      gen_sec: 9.81
+      ref_sec: 10.74
+      cer: 0.1667
+      wer: 0.4706
+    bible_00190:
+      source: bible
+      text: Káma, báa sáátɩ wenkí mɩ́na kadanbʊrʊ́sɩ gɛ, bɩka mɩ́nbɩɩzɩ́ ɩlá wɛ kazɔ́ɔ ńbɩ báa
+        sáátɩ wenkí gɛ mɩ́zɔɔlɛ́ɛ.
+      sbs: 0.727
+      gen_sec: 9.3
+      ref_sec: 7.62
+      cer: 0.1463
+      wer: 0.5
+    bible_00191:
+      source: bible
+      text: Ńna gɛ Yeésu waabáázɩ tɛ́ɛ́dɩwá wentí waalá maamááciwá tɩdaá ɖabata nɛ́ yoonáa,
+        káma, tɩdɛkɛ́ɛ tɩlakásɩ tɩlá túúbá.
+      sbs: 0.7617
+      gen_sec: 10.5
+      ref_sec: 10.74
+      cer: 0.2826
+      wer: 0.7059
+    bible_00192:
+      source: bible
+      text: Bakáa mɩlá ɖamɩ́nɩ-daá tɛ́ɛ́dɩ kʊ́bɔńdɩ-daá basɩ́ɩ azíya, bɩka bɩrɩ́ŋa bʊwɛ nyɛ́ńdɛ́.
+      sbs: 0.735
+      gen_sec: 7.42
+      ref_sec: 6.84
+      cer: 0.2063
+      wer: 0.6364
+    bible_00193:
+      source: bible
+      text: » Ngɛ Ɩbrám waajáa kpɩná amʊ́ arɩ́ŋa ɩfɛ́ɛ báa wenɖé nabʊ́nbʊ́lɛ, ɩsɩ́ɩ fɔɔlʊʊ́ báa
+        wenkí kɩfaná kɩrɔwʊ́ ɩzá; amá, ɩdɛfɛ́ɛ siḿsi.
+      sbs: 0.646
+      gen_sec: 10.92
+      ref_sec: 4.2
+      cer: 0.1789
+      wer: 0.75
+    bible_00194:
+      source: bible
+      text: Wɔɔgbɔ́ɔ yɩ nɛ́, ngɛ weeyéle bɛbɛlɩ́ yɩ, káma, Yahúúɖuwá bɔwɛ fáráńdɩ́wá tɩḿ tɩdaá
+        nɛ́ bɔrɔɔzɩ́.
+      sbs: 0.8035
+      gen_sec: 8.28
+      ref_sec: 8.56
+      cer: 0.1389
+      wer: 0.4
+    bible_00195:
+      source: bible
+      text: '» Ngɛ bɛlɛ́ boobúsi yɩ sɩsɩ: «Aayɩ́, ɖánvɩnɩ́ kadɔ́ɔ-daá ɖɔ́.'
+      sbs: 0.6915
+      gen_sec: 4.86
+      ref_sec: 9.94
+      cer: 0.2927
+      wer: 0.5556
+    bible_00196:
+      source: bible
+      text: Wenbí bʊrɔ nɛ́, Ɩsɔ́ɔ weení ɩrɔ gɛ báa ngbetíi wɛ bɩka waala ná báa wé nɛ́, wɔɔzɔ́ɔ́lɩ
+        sɩsɩ ɩráa zemina ɩsʊ́ʊ ɩdɛ́ɛ ásícé-daá.
+      sbs: 0.7844
+      gen_sec: 10.75
+      ref_sec: 13.0
+      cer: 0.172
+      wer: 0.4783
+    bible_00197:
+      source: bible
+      text: » Toovonúm gɛ bɩgɛ́ɛ; amá, bɩdɛkɛ́ɛ bɩrɩ́ŋa bɩ́nvɔɔzɩ kʊ.
+      sbs: 0.7121
+      gen_sec: 4.86
+      ref_sec: 3.78
+      cer: 0.0976
+      wer: 0.375
+    bible_00198:
+      source: bible
+      text: Ɩbá ɩsɛ́ɛ ɖamá kazɔ́ɔ nyazɩ koobíya wɛ́nzɛɛ́ ɖamá nɛ́.
+      sbs: 0.7055
+      gen_sec: 4.44
+      ref_sec: 3.78
+      cer: 0.225
+      wer: 0.7778
+    bible_00199:
+      source: bible
+      text: Mɔ́ɔ́ mánwɩlɩ́ɩ mɩ́ɩ nɩ́bááwʊ wenkí kɩdaká fɛ́yɩ́ nɛ́.
+      sbs: 0.7316
+      gen_sec: 4.27
+      ref_sec: 4.66
+      cer: 0.1053
+      wer: 0.5
 - model: k2-fsa/OmniVoice-ref
   model_url: https://huggingface.co/k2-fsa/OmniVoice
   mode: ref
@@ -17196,4 +18916,4 @@ benchmarks:
       ref_sec: 4.66
       cer: 0.3947
       wer: 1.0
-updated: '2026-10-02'
+updated: '2026-10-09'

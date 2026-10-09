@@ -11,6 +11,1789 @@ judge:
   model: KhayaAI/khaya-asr-v3
   cer_on_real_speech: 0.0496
 benchmarks:
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7238
+  num_scored: 200
+  cer: 0.0515
+  wer: 0.171
+  accuracy: 0.9485
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8361
+  score: 0.8361
+  per_source:
+    bible:
+      sbs: 0.7238
+      cer: 0.0515
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Ka u yi ti nya ka n‑naai, u nin booli u zɔdima ni u kpeerintaaba ni ba la'am na, ka yɛli ba,
+        ‘Ya paasim n zugu m‑mari sufupeelli, dama n nya n la'aseaa kan da bɔrigi la!’
+      sbs: 0.762
+      gen_sec: 12.89
+      ref_sec: 11.24
+      cer: 0.065
+      wer: 0.2432
+    bible_00001:
+      source: bible
+      text: U daa gɔ n‑dɔli bɛni tinsi maa zaa n‑tɔ'asiri pam ka kpamsiri niriba, halli nti paai Griika
+        tingbaŋŋu,
+      sbs: 0.7689
+      gen_sec: 8.53
+      ref_sec: 8.94
+      cer: 0.075
+      wer: 0.2222
+    bible_00002:
+      source: bible
+      text: Ka u daa doaai yuŋŋu n‑zaŋŋi u pɔ'a ni bii maa n‑yisigi n‑kyaŋŋi Igyipti.
+      sbs: 0.7126
+      gen_sec: 6.31
+      ref_sec: 6.28
+      cer: 0.0364
+      wer: 0.0714
+    bible_00003:
+      source: bible
+      text: Tɔ, di saha maa bumburiseesi daa lu la kuga ziiya; ka an daa ti buli sahanseaa la, kuga maa
+        daa kyɛ ka a bu nyaŋŋi n‑zoaai ka a gba daa gyɛkki n‑kpi, an daa kɔŋŋi tammaasiri maa zugu.
+      sbs: 0.7314
+      gen_sec: 14.76
+      ref_sec: 12.48
+      cer: 0.0576
+      wer: 0.1316
+    bible_00004:
+      source: bible
+      text: Ka di nyɛ la Naawunni namboo zugu ka ti tumni wa, ti ku toaai n‑kyɛ tama.
+      sbs: 0.7407
+      gen_sec: 5.72
+      ref_sec: 4.4
+      cer: 0.0182
+      wer: 0.0625
+    bible_00005:
+      source: bible
+      text: Dinŋɔ daa kyɛ ka anabi Aizaaya ŋɔn daa yɛli seem la niŋi yɛlimaŋni, ni#:-
+      sbs: 0.6937
+      gen_sec: 6.31
+      ref_sec: 6.18
+      cer: 0.3393
+      wer: 0.5714
+    bible_00006:
+      source: bible
+      text: See ka bunseelikam niŋi suŋŋa ka dɔli soori deede.
+      sbs: 0.7114
+      gen_sec: 4.44
+      ref_sec: 5.7
+      cer: 0.1707
+      wer: 0.5556
+    bible_00007:
+      source: bible
+      text: Ka duniya wa paari ka naari ni, kan ni ka kɔrisi yɛla zaa. Amaa ban tumni Naawunni ŋɔn boori
+        ni ba tum seem la - lala niriba nin kpalim m‑bɛ ni halli saha kan ka naari.
+      sbs: 0.7432
+      gen_sec: 13.31
+      ref_sec: 13.68
+      cer: 0.0234
+      wer: 0.0857
+    bible_00008:
+      source: bible
+      text: Tɔ, ka bii maa yi yɛli u, ‘M ba, n tum Naawunni taalli ni nyin taalli gba, m bu laa n‑sumni
+        ni n nyɛ i biiya ...’, amaa ka u ba daa yɛli u tuntumniba, ni,
+      sbs: 0.7359
+      gen_sec: 11.61
+      ref_sec: 10.3
+      cer: 0.0566
+      wer: 0.2
+    bible_00009:
+      source: bible
+      text: Ka ba daa wum Naawunni kukɔri saazugu ni na, ni, “M bii n nyɛ i, ka n wuri i ni pam. N nini
+        n tigi i.”
+      sbs: 0.6415
+      gen_sec: 7.42
+      ref_sec: 11.64
+      cer: 0.0429
+      wer: 0.0769
+    bible_00010:
+      source: bible
+      text: Ya nin wumni tɔppu damni, bee di lahabaya; ya gɔsima! - yan di kyɛ ka yam-ŋmaa gbaai ya, dama
+        lala nin niŋi pɔi, amaa pa naari maa nla.
+      sbs: 0.7623
+      gen_sec: 10.92
+      ref_sec: 9.64
+      cer: 0.05
+      wer: 0.1852
+    bible_00011:
+      source: bible
+      text: Ba kyɛ ti tiŋŋa wa na, halli ka Gyeesɔni deaai ba n‑kpeesi u yiri ni. Ba galimni la NaaTitaari
+        zaaligu la, dama ba yɛliya, ni, Nasɔ m bɛ ni, ka u yuuri boonni Yisa.”
+      sbs: 0.6951
+      gen_sec: 13.06
+      ref_sec: 12.18
+      cer: 0.0325
+      wer: 0.0588
+    bible_00012:
+      source: bible
+      text: Ka Yisa daa yɛli ba, ni, “Ya di zɔri dabeem. Ya kyɛma nti yɛli m mabiisi la, ni, ba kyɛm Galilii
+        tingbaŋŋu ni - bɛni ka ba nin nya ma.”
+      sbs: 0.7436
+      gen_sec: 10.5
+      ref_sec: 9.02
+      cer: 0.0412
+      wer: 0.1724
+    bible_00013:
+      source: bible
+      text: ‘Tɔ! M baŋŋiya man nin niŋi seem din nin kyɛ ka niriba nin deaai ma ba yiya ni, ba yi ti kari
+        ma n kpa wa tuma wa ni m‑basi sahanseaa la!’
+      sbs: 0.7296
+      gen_sec: 10.67
+      ref_sec: 9.02
+      cer: 0.0099
+      wer: 0.1562
+    bible_00014:
+      source: bible
+      text: Amaa di yi niŋi lala, Sɔppu la ya niŋi la wula n‑niŋi yɛlimaŋni - ban daa sɔbi, ni, lala n
+        sumsi ni di niŋi la?”
+      sbs: 0.6751
+      gen_sec: 9.13
+      ref_sec: 7.36
+      cer: 0.0741
+      wer: 0.25
+    bible_00015:
+      source: bible
+      text: Dinŋɔ n wulisi, ni, Naawunni sariya karibu tuusiya zaa, ni, ya nyɛ la ban sum ni Naawunni
+        naam, halli ni ya diri wahala u naam la zugu.
+      sbs: 0.7729
+      gen_sec: 10.92
+      ref_sec: 11.46
+      cer: 0.0097
+      wer: 0.1852
+    bible_00016:
+      source: bible
+      text: Dinzugu n kpamsiri pukɔya ban na bu kurigi la, ni, ba kulima dɔppa, n‑dɔ'ai biisi, n‑gɔsiri
+        ba toori yiya. Dinŋɔ nin kyɛ ka ti dindaandima ku nya soori ni ba tuuri ti.
+      sbs: 0.7694
+      gen_sec: 13.48
+      ref_sec: 13.44
+      cer: 0.063
+      wer: 0.1875
+    bible_00017:
+      source: bible
+      text: “Ya kyɛm ti tooni nti kpɛ tinkpanseaa kan zɛ ya tooni sa la. Ya yi ti paai bɛni, ya nin nya
+        buŋŋa ka u lɔ n‑zɛya, bumbilisɔ nira ŋɔn na zi m‑ba; ya lɔrigma u m‑mari na.
+      sbs: 0.7541
+      gen_sec: 13.31
+      ref_sec: 11.64
+      cer: 0.0488
+      wer: 0.2432
+    bible_00018:
+      source: bible
+      text: N yɛli Yɛhudiyadima ni Griika dima zaa, ni, ba ŋmaligma n‑kyɛ Naawunni saani na, ka niŋi ti
+        Dugma Yisa yɛdda.
+      sbs: 0.7407
+      gen_sec: 9.13
+      ref_sec: 7.36
+      cer: 0.0235
+      wer: 0.2
+    bible_00019:
+      source: bible
+      text: Tɔ; ka din daa toaai beela, tuumudima ni kpamma maa daa la'am, ni ba ti tɔ'asi lala yɛttɔ'a
+        maa n‑nya a soori ziiya kasi.
+      sbs: 0.7633
+      gen_sec: 9.39
+      ref_sec: 11.5
+      cer: 0.0556
+      wer: 0.1667
+    bible_00020:
+      source: bible
+      text: Ka Yisa daa laa m‑boosi ba, ni, “Wula ka ya boonni ma, ni, ‘N Daana, N Daana’ ka lee m‑bu
+        tumni tunseesi man yɛtti ya, ni, ya tumma maa?
+      sbs: 0.7353
+      gen_sec: 10.41
+      ref_sec: 8.98
+      cer: 0.0211
+      wer: 0.2759
+    bible_00021:
+      source: bible
+      text: Amaa Pɔla tinzɔpɔ'a bisɔ daa wum ban gbaari seem maa, ka daa kyaŋŋi Baarikyi yiri maa ni,
+        nti kpɛ n‑yɛli Pɔla.
+      sbs: 0.7423
+      gen_sec: 8.96
+      ref_sec: 8.72
+      cer: 0.0588
+      wer: 0.1905
+    bible_00022:
+      source: bible
+      text: N zabi zabsuŋŋu n‑naai; n pun zɔ nti paai zoaa maa tɔriga; n daa mari n yɛdda niŋbu suŋŋa.
+      sbs: 0.7295
+      gen_sec: 7.59
+      ref_sec: 8.2
+      cer: 0.0441
+      wer: 0.1579
+    bible_00023:
+      source: bible
+      text: Ti kur zɛ yummu Naawunni saani, m‑mari yɛm, ni sugru, ni nirilim; ti kpalim m‑bɛ Naawunni
+        Vuusim Kasi saani, ka wuri niriba ni yɛlimaŋni.
+      sbs: 0.7641
+      gen_sec: 11.35
+      ref_sec: 10.62
+      cer: 0.0
+      wer: 0.0
+    bible_00024:
+      source: bible
+      text: Di dabsa ata daari ka ba daa nya u Naawunni Gyeeŋŋu Yiri ni, ka u zi karimbadima saani, n‑wumsiri
+        ba yɛttɔ'a, ka boosiri ba boosa.
+      sbs: 0.6876
+      gen_sec: 10.5
+      ref_sec: 11.62
+      cer: 0.01
+      wer: 0.04
+    bible_00025:
+      source: bible
+      text: Ka u daa yi ti boori la u di kurikyuu diibu maa, ka sɔ bu tiri u bunseelli.
+      sbs: 0.7189
+      gen_sec: 5.72
+      ref_sec: 4.46
+      cer: 0.0357
+      wer: 0.1667
+    bible_00026:
+      source: bible
+      text: Amaa wuntaŋŋa ŋɔn daa ti bi, a bula maa daa gyɛkki n‑kpi, dama a nya'a maa daa bu sigi wa'aligu.
+      sbs: 0.6882
+      gen_sec: 7.59
+      ref_sec: 6.5
+      cer: 0.0423
+      wer: 0.25
+    bible_00027:
+      source: bible
+      text: Ninsaala Bii maa nin bakki hoo din pun sɔbi n‑zaali u zugu seem la. Amaa ŋɔn mun figsi Ninsaala
+        Bii maa n‑kyɛ ka ba gbaai u - di ku veeli u zugu. Ba yi daa kyɛ di daama dɔ'am, di naa n‑sɔa.”
+      sbs: 0.7168
+      gen_sec: 14.68
+      ref_sec: 12.06
+      cer: 0.0504
+      wer: 0.1463
+    bible_00028:
+      source: bible
+      text: Dinsaha ka Piita daa yɛli u, “Nyama, tirima n nyɛ seeba ban kyɛ yɛlli kam m‑basi ka dɔli i!
+        Tɔ - bɔ ka ti nin mari di zugu?”
+      sbs: 0.7511
+      gen_sec: 9.39
+      ref_sec: 7.76
+      cer: 0.0562
+      wer: 0.2593
+    bible_00029:
+      source: bible
+      text: Niriba nin ti yɛli ya, ni, ‘Nnya kpa sa!’, bee, ‘Nnya kpa wa!’ - yan di kyaŋŋi, ya mun di
+        dɔli ba.
+      sbs: 0.7964
+      gen_sec: 7.42
+      ref_sec: 7.02
+      cer: 0.0156
+      wer: 0.0476
+    bible_00030:
+      source: bible
+      text: Di saha ka pɔ'asara la daa doaai m‑maali m‑maali ba firiladima maa.
+      sbs: 0.6972
+      gen_sec: 5.46
+      ref_sec: 5.04
+      cer: 0.1923
+      wer: 0.25
+    bible_00031:
+      source: bible
+      text: Zugsuŋŋu bɛ ni n‑ti ŋɔn zaŋŋi ti Dugma yuuri na!
+      sbs: 0.538
+      gen_sec: 4.35
+      ref_sec: 8.34
+      cer: 0.1622
+      wer: 0.4
+    bible_00032:
+      source: bible
+      text: Ka dinŋɔna ya dɔli wurilim sɔya, ka bɔ Sii maa piini; ka kan daŋŋi tooni la nyɛ la anabitiri
+        yɛla piini.
+      sbs: 0.73
+      gen_sec: 8.62
+      ref_sec: 7.38
+      cer: 0.0617
+      wer: 0.1905
+    bible_00033:
+      source: bible
+      text: 'Ka Sɔla daa boosi n‑yɛli, “Ŋɔni nla, n dugma?”, ka u labsi n‑yɛli. “Mani Yisa: mani ka i
+        namsiri maa.”'
+      sbs: 0.7617
+      gen_sec: 7.94
+      ref_sec: 9.96
+      cer: 0.0286
+      wer: 0.15
+    bible_00034:
+      source: bible
+      text: Tɔ, ka ba daa piili n‑kyɛnni koom maa zugu halli ka Yisa ti gbisi. Di saha ka pɛsititaari
+        daa doaai mɔ'ari maa ni n‑zeera. Ka daa zɛ ni halli ka nyariŋŋu maa ti ya paali ni koom.
+      sbs: 0.6882
+      gen_sec: 14.17
+      ref_sec: 12.64
+      cer: 0.0222
+      wer: 0.0541
+    bible_00035:
+      source: bible
+      text: ‘I ku kyɛ ka i maŋtoori ninvugsuŋŋu nin leebi bumpoosiri.’
+      sbs: 0.6623
+      gen_sec: 4.95
+      ref_sec: 3.68
+      cer: 0.0435
+      wer: 0.1
+    bible_00036:
+      source: bible
+      text: Tɔ; Pɔla daa pun yɛli, ni, u ya kyaŋŋi la nɔba m‑paai Asɔsi tiŋŋa, ka dizugu tirima mun daa
+        kpɛ nyariŋŋu n‑kyaŋŋi bɛni ni ti ti tuusi u.
+      sbs: 0.711
+      gen_sec: 11.61
+      ref_sec: 12.3
+      cer: 0.0588
+      wer: 0.1429
+    bible_00037:
+      source: bible
+      text: ni Filipi, ni Baatɔlɔmiyu, ni Tɔmaasi ni Matiyu lampoo karikyi la; ni Alifiisi Gyeemsi, ni
+        Taddiyusi,
+      sbs: 0.7238
+      gen_sec: 8.36
+      ref_sec: 9.82
+      cer: 0.0494
+      wer: 0.1875
+    bible_00038:
+      source: bible
+      text: Ba daa naam doo ka yiisi pɔ'a u saani na, ka pɔ'a mun yi laa n‑dɔ'ari doowa. Ka seelikam yi
+        la Naawunni saani.
+      sbs: 0.7326
+      gen_sec: 8.36
+      ref_sec: 8.28
+      cer: 0.0864
+      wer: 0.1739
+    bible_00039:
+      source: bible
+      text: Di nyaaŋŋa ka Yisa daa kyɛ ka u nyaandɔliba kpɛ nyariŋŋu puuni n‑daŋŋi tooni n‑lɔŋŋi mɔ'aduuri,
+        ka ŋɔn mammaŋŋa daa kpalim n‑kyeoosiri niriba maa.
+      sbs: 0.6702
+      gen_sec: 13.14
+      ref_sec: 12.56
+      cer: 0.0342
+      wer: 0.1667
+    bible_00040:
+      source: bible
+      text: Ba yi tɔ'asi ba'a ni wuna yɛla duniya wa puuni, saazugu bee tingbaŋŋu ni - halli ka ba siri
+        tɔ'asiri la wuna ni dugmadima pam yɛla -
+      sbs: 0.7356
+      gen_sec: 10.41
+      ref_sec: 9.4
+      cer: 0.02
+      wer: 0.08
+    bible_00041:
+      source: bible
+      text: Ya bu nya? - man pun daŋŋi n‑yɛli ya seelli kam zaa.
+      sbs: 0.7002
+      gen_sec: 4.27
+      ref_sec: 3.18
+      cer: 0.0811
+      wer: 0.1818
+    bible_00042:
+      source: bible
+      text: Halli ka seeba ban nyɛ naam zuliya dima maa, ba nin yiisi ba m‑basi, ni ba ti paai wa'aligu
+        ya'aseelli ban ŋɔn bɛ zibsim ni n‑kumna ka ŋɔbri ba nyina.”
+      sbs: 0.7315
+      gen_sec: 11.95
+      ref_sec: 9.12
+      cer: 0.0175
+      wer: 0.1667
+    bible_00043:
+      source: bible
+      text: Ya wumma yaa! Ti yɛtti ya ti Dugma zugu, ni, ya kyɛ ka ba karim gbaŋŋu wa n‑ti ti mabiisi
+        la zaa.
+      sbs: 0.7502
+      gen_sec: 7.68
+      ref_sec: 7.02
+      cer: 0.0
+      wer: 0.0
+    bible_00044:
+      source: bible
+      text: Ŋɔn Yisa yuuri zugu da kyɛ ka gbariga wa kpaŋŋi, u yuuri yɛdda niŋbu zugu. Ya nyari doo wa
+        ka mi u; ŋɔn niŋi Yisa yuuri yɛdda maa kyɛ ka u nya alaafɛ zaa pampaŋŋɔa, ka ya mammansi nini
+        nya.”
+      sbs: 0.7599
+      gen_sec: 15.62
+      ref_sec: 13.42
+      cer: 0.0759
+      wer: 0.2
+    bible_00045:
+      source: bible
+      text: Amaa Yisa yuuri daa maali n‑du pam n‑kyaŋŋi halli, ka daadam pam daa la'am na ni ba ti wum
+        u yɛttɔ'a, ka laa n‑kyɛ ka u tibri ba dooru balibu kam la.
+      sbs: 0.7061
+      gen_sec: 11.69
+      ref_sec: 11.46
+      cer: 0.0091
+      wer: 0.0312
+    bible_00046:
+      source: bible
+      text: M puusiri ya zaa, ni, ti Ba Naawunni, ŋɔn ni Yisa Kirisita u Bii maa zaa, nin suŋŋi ti ka
+        zɔ ti namboo, ka kyɛ ka ti nya sufudoaa. Anŋɔ zaa ka ti nin nya, ka kpalim yɛlimaŋni ni wurilim
+        puuni.
+      sbs: 0.7051
+      gen_sec: 15.78
+      ref_sec: 14.72
+      cer: 0.0833
+      wer: 0.1951
+    bible_00047:
+      source: bible
+      text: Ka ŋɔn Kirisita leebi la maaligu kan ti ti soori n‑kyɛ ka ti nya kyɛ-m‑pɛŋŋi ti tumbeeri zugu.
+        Ka di pa la tirima kɔkɔ tumbeeri, amaa sɔkam zaa dina.
+      sbs: 0.7257
+      gen_sec: 12.29
+      ref_sec: 12.14
+      cer: 0.0609
+      wer: 0.2414
+    bible_00048:
+      source: bible
+      text: Amaa zama maa daa baŋŋi ŋɔn bɛ luginseaa ka dɔlisi u nɔba. Ka Yisa daa deaai ba ka tɔ'asi
+        n‑ti ba zaŋŋi n‑kyaŋŋi Naawunni naam maa yɛla. U daa laa n‑tibi bankam zaa daa boori tippu.
+      sbs: 0.6986
+      gen_sec: 15.02
+      ref_sec: 13.86
+      cer: 0.0432
+      wer: 0.1389
+    bible_00049:
+      source: bible
+      text: Ŋɔn butti ni ŋɔn yɔ'ari koom la zaa tumni la tumni yinni, ka ti Dugma nin yɔ ba zaa hoo ban
+        tumni seem la.
+      sbs: 0.7126
+      gen_sec: 8.28
+      ref_sec: 7.36
+      cer: 0.0625
+      wer: 0.1667
+    bible_00050:
+      source: bible
+      text: Zaadaari kum yisigri saha ba ku ti laa n‑diri pɔ'aba bee n‑kunni dɔppa, ba ti ya n‑ŋmanni
+        la hoo arizana malaakadima la.
+      sbs: 0.7361
+      gen_sec: 9.81
+      ref_sec: 7.32
+      cer: 0.043
+      wer: 0.1364
+    bible_00051:
+      source: bible
+      text: Ka di daa niŋi niriba maa alahazibu zaŋŋi n‑kyaŋŋi Naawunni ŋɔn galisi seem.
+      sbs: 0.7233
+      gen_sec: 6.91
+      ref_sec: 5.58
+      cer: 0.0161
+      wer: 0.0769
+    bible_00052:
+      source: bible
+      text: Ya nyama! - dabsa yi kyɛnni na ka ba nin ti yɛli, ni, pɔ'aseeba ban na zi n‑dɔ'ai biisi la
+        mari la zugsuŋŋu, ban ni pɔ'a kundɔ'ariba ni pɔ'aseeba ban ka bileesi.
+      sbs: 0.6745
+      gen_sec: 12.54
+      ref_sec: 12.1
+      cer: 0.0678
+      wer: 0.1935
+    bible_00053:
+      source: bible
+      text: N‑daa bɔ u n‑kɔŋŋi bɛni, ka labi Gyɛrusalɛm nti boori u ziiya.
+      sbs: 0.687
+      gen_sec: 5.12
+      ref_sec: 4.62
+      cer: 0.0426
+      wer: 0.1667
+    bible_00054:
+      source: bible
+      text: Ba daa gbaai tuumudima maa n‑kpeesi sarika duu ni.
+      sbs: 0.6979
+      gen_sec: 4.1
+      ref_sec: 3.74
+      cer: 0.025
+      wer: 0.1111
+    bible_00055:
+      source: bible
+      text: Ii - tirima ban nɛ wa, ba kur zaŋŋni ti n‑niŋni kum ziiya, Yisa yɛla zugu; dama lala nin kyɛ
+        ka ŋɔn Yisa nyɔvuri beesigu ti yi paalu, halli ti ningbina an kpiiri la puuni gba.
+      sbs: 0.7596
+      gen_sec: 14.25
+      ref_sec: 13.78
+      cer: 0.1278
+      wer: 0.2286
+    bible_00056:
+      source: bible
+      text: 'Tɔ: ka n yɛtti n‑tiri seeba ban na bu di pɔ''a, bee, n‑kuli doowa, ni pukɔya gba, ni, ba
+        yi kpalim m‑bɛ hoo man bɛ seem wa, di sɔa.'
+      sbs: 0.7311
+      gen_sec: 9.98
+      ref_sec: 9.12
+      cer: 0.0889
+      wer: 0.2759
+    bible_00057:
+      source: bible
+      text: Halli u daa ya sa'am Naawunni Gyeeŋŋu Yiri maa n‑kyɛ ka ka da'ai zaa, ka dizugu ti daa gbaai
+        u. [[Ti daa yɛtti, ni, ti nin dɔli ti soori n‑kari u sariya;
+      sbs: 0.7302
+      gen_sec: 11.95
+      ref_sec: 12.68
+      cer: 0.009
+      wer: 0.0312
+    bible_00058:
+      source: bible
+      text: Tɔ, ka na'akyimbila maa ŋɔn daa ti wum lala u daa bakki ni sufusa'aŋŋu, dama u daa nyɛ la
+        bundaana ni yɛlimaŋni.
+      sbs: 0.675
+      gen_sec: 9.22
+      ref_sec: 7.52
+      cer: 0.0233
+      wer: 0.0909
+    bible_00059:
+      source: bible
+      text: Di saha ka ba daa tɔ'asi Naawunni yɛla maa n‑tisi ŋɔn ni u yiri dima maa.
+      sbs: 0.7364
+      gen_sec: 5.72
+      ref_sec: 5.86
+      cer: 0.0364
+      wer: 0.125
+    bible_00060:
+      source: bible
+      text: Ya kpaŋŋma ya maŋŋa m‑bɛ baalimm, ka kyɛ ka ya teesa bɛ ya mammaŋŋa yɛla ni, ka bɔ ya mammaŋŋa
+        nuu tuma n‑tumna, hoo tin daa pun wulisi ya seem la.
+      sbs: 0.7132
+      gen_sec: 12.37
+      ref_sec: 10.86
+      cer: 0.027
+      wer: 0.129
+    bible_00061:
+      source: bible
+      text: Dama ti nya ninvugkyɔ'aŋŋu wa, ka u nyɛ la sɔ ŋɔn daamni Yɛhudiyadima maa duniya wa ya'ari
+        kam zaa, ka ba zabra; ka u nyɛ la toondaana n‑ti Nazarɛti wɔligri soori dima wa.
+      sbs: 0.7328
+      gen_sec: 13.91
+      ref_sec: 12.66
+      cer: 0.053
+      wer: 0.1818
+    bible_00062:
+      source: bible
+      text: Dizugu n ya yɛli i, ni, ba kyɛ pɔ'a wa taalli din galisi pam m‑pɛŋŋi u, u wurilim ŋɔn galisi
+        pam zugu; amaa ninvugsɔ taalli din bu galisi ka ba kyɛ di m‑pɛŋŋi u, di daama wurilim gba bu ya
+        galisi.”
+      sbs: 0.7434
+      gen_sec: 16.04
+      ref_sec: 13.08
+      cer: 0.0272
+      wer: 0.122
+    bible_00063:
+      source: bible
+      text: “M Badima, ya wumma! M mabiisi, ya wumma! N ya tɔ'asi n‑wulisi n yɛla yɛlimaŋni ŋɔn nyɛ seem.”
+      sbs: 0.7911
+      gen_sec: 7.51
+      ref_sec: 6.74
+      cer: 0.0294
+      wer: 0.1111
+    bible_00064:
+      source: bible
+      text: Kpamma maa, ni la'aŋŋu dima zaa, daa moori la ni ba nya ziri sɛhara n‑galim Yisa ka ku u.
+      sbs: 0.7276
+      gen_sec: 7.08
+      ref_sec: 8.48
+      cer: 0.0606
+      wer: 0.1579
+    bible_00065:
+      source: bible
+      text: Ti bu sɔbri bunseelli yan ku toaai n‑karim ka baŋŋi di gbinni. Ka m mari tama, ni, ya nin
+        baŋŋi di zaa halli ni di tɔriga,
+      sbs: 0.7286
+      gen_sec: 9.98
+      ref_sec: 9.74
+      cer: 0.0217
+      wer: 0.1538
+    bible_00066:
+      source: bible
+      text: Ka Yisa daa laa n‑yɛli ba, ni, “Pa seeba ban boonni ma, ni, ‘N Dugma, n Dugma’ zaa n nin kpɛ
+        arizana naam ziiya, amaa seeba ban tumni m Ba ŋɔn bɛ arizana ni la yuubu maa nin ti kpɛa.
+      sbs: 0.7074
+      gen_sec: 13.99
+      ref_sec: 12.44
+      cer: 0.0076
+      wer: 0.075
+    bible_00067:
+      source: bible
+      text: Ya za'asim u yɛla, ka zɛ yimmu ya yɛdda maa puuni. Ya mi halli, ni, di nyɛ la lala n‑ti ya
+        nyaandɔlitaaba maa, duniya wa ni lugri kam zaa.
+      sbs: 0.7362
+      gen_sec: 10.75
+      ref_sec: 9.76
+      cer: 0.049
+      wer: 0.069
+    bible_00068:
+      source: bible
+      text: Tɔ; di sɔbi n‑dooli Naawunni Bukku ni, ni, Naawunni yɛliya, “Ya bɛ kasi dama m bɛ la kasi.”
+      sbs: 0.7325
+      gen_sec: 7.08
+      ref_sec: 6.76
+      cer: 0.1364
+      wer: 0.3333
+    bible_00069:
+      source: bible
+      text: ka u yi boosi ba, ni, “Ŋɔni makkri m bɛ la'afu maa ni wa? - ni ŋɔni yuuri n sɔbi m‑bɛ ka ni?”
+      sbs: 0.7239
+      gen_sec: 6.91
+      ref_sec: 6.38
+      cer: 0.0484
+      wer: 0.2727
+    bible_00070:
+      source: bible
+      text: Saha din gaari sa halli ni zuna, u daa kyɛ ka sɔkam zaa niŋi la u sufu yuubu ŋɔn nyɛ seem,
+      sbs: 0.735
+      gen_sec: 7.08
+      ref_sec: 6.48
+      cer: 0.0294
+      wer: 0.1905
+    bible_00071:
+      source: bible
+      text: U daa yɛli ba, ni, “Sarikattisɔ daa bɛ tinseaa. U daa bu zɔri Naawunni ka mun bu laa n‑kyɛ
+        ka u ba'a bɛ ninsaalisɔ kam yɛlli ni.
+      sbs: 0.7424
+      gen_sec: 9.9
+      ref_sec: 9.84
+      cer: 0.1368
+      wer: 0.4074
+    bible_00072:
+      source: bible
+      text: Ŋɔn daa puusi u seem maa daa gyɛri u pam, ka u birisiri di gbinni ŋɔn nyɛ seela.
+      sbs: 0.6817
+      gen_sec: 6.31
+      ref_sec: 5.56
+      cer: 0.082
+      wer: 0.1667
+    bible_00073:
+      source: bible
+      text: Ka gyeeŋŋu toondaandima ni kpambaya maa ŋɔn daa galimni u la, u daa bu yɛli seelli.
+      sbs: 0.7405
+      gen_sec: 6.91
+      ref_sec: 7.34
+      cer: 0.0606
+      wer: 0.1875
+    bible_00074:
+      source: bible
+      text: Ka Toondaandima la daa la'asi kpamma zaa na nti zinni n‑ŋmɛ taaba saawara ka gbaai gbaari.
+        Ba daa zaŋŋi la ligri pam n‑da tɔbbiisi maa noori
+      sbs: 0.7172
+      gen_sec: 11.61
+      ref_sec: 12.12
+      cer: 0.018
+      wer: 0.0385
+    bible_00075:
+      source: bible
+      text: Ban daa ti paai u na, u daa yɛli ba, ni, “Ya mi halli m beesigu ŋɔn daa bɛ seem, man daa bɛ
+        ya saani sahanseaa la; man daa piili m‑bɛ Ɛseaa tingbaŋŋu maa ni halli nti yuui.
+      sbs: 0.693
+      gen_sec: 13.57
+      ref_sec: 13.26
+      cer: 0.0157
+      wer: 0.1053
+    bible_00076:
+      source: bible
+      text: Tɔ; ka di daa ti paai asuba dima maa, ka ba daa teesi, ni, ba nin deaai ligri n‑gaari banla
+        dina, amaa ba gba daa deaai dabsimunni tuma yoori.
+      sbs: 0.7463
+      gen_sec: 11.26
+      ref_sec: 11.58
+      cer: 0.0093
+      wer: 0.1034
+    bible_00077:
+      source: bible
+      text: Dizugu ya mari ya mansi suŋŋa, ka di zaŋŋi yan pun tum tunseesi maa anfaani la m‑basi ka ka
+        yi ya nuusi ni; ay! - see ka ya nya a sanyoaa ka bu pɔsigi seela.
+      sbs: 0.7145
+      gen_sec: 12.54
+      ref_sec: 12.38
+      cer: 0.0342
+      wer: 0.1471
+    bible_00078:
+      source: bible
+      text: Vuusim Dabsiri zaa u daa kpeeri la Yɛhudiyadima la'aŋŋu duu nti diri azama n‑tiri Yɛhudiyadima
+        ni Griika dima zaa, m‑boori ni ba sakki n‑deaai yɛligu maa.
+      sbs: 0.728
+      gen_sec: 12.89
+      ref_sec: 13.34
+      cer: 0.0
+      wer: 0.0
+    bible_00079:
+      source: bible
+      text: N daa gyeemni Naawunni ni mansigsigu, ni kunkuma; halli ni Yɛhudiyadima ban daa boori ni ba
+        tum ma tumbeeri zaa.
+      sbs: 0.7399
+      gen_sec: 9.13
+      ref_sec: 7.92
+      cer: 0.0
+      wer: 0.2
+    bible_00080:
+      source: bible
+      text: 'Tɔ: ŋɔnkam mari tuba n nin wum, ŋɔn wumma!”'
+      sbs: 0.5826
+      gen_sec: 3.5
+      ref_sec: 3.3
+      cer: 0.3226
+      wer: 0.8889
+    bible_00081:
+      source: bible
+      text: U yɛligu daa bu lu tiŋŋa ka bii maa siiya pun labi na ka u daa doaai n‑zaani ya'abi; ka Yisa
+        yɛli ba, ni, ba zaŋŋma diibu na n‑ti bii maa ka u di. Ka dinŋɔ daa niŋi doo maa ni u pɔ'a alahazibu
+        pam,
+      sbs: 0.7182
+      gen_sec: 15.78
+      ref_sec: 15.0
+      cer: 0.0556
+      wer: 0.1333
+    bible_00082:
+      source: bible
+      text: Ba yi ti mugsi ya tinseaa ni, ya kur yima n‑zɔ n‑kyaŋŋi tinseaa yaasa. Dama yɛlimaŋni ka n
+        yɛtti ya wa, ni, ya na ku kyaŋŋi n‑dɔli Izraɛli tingbaŋŋu tinsi zaa n‑naai ka Ninsaala Bii ti
+        kyɛ na.
+      sbs: 0.7299
+      gen_sec: 16.21
+      ref_sec: 13.96
+      cer: 0.0274
+      wer: 0.1316
+    bible_00083:
+      source: bible
+      text: 'Ni, lala nin kyɛ ka ya bɛ beesisuŋŋu din sumsi ti Dugma niriba, ka kyɛnni tooni n‑wanni wala
+        - di nyɛ la: yan tumni tunsuma zaa ka ya Naawunni bamsim gba zoaari sahakam.'
+      sbs: 0.7633
+      gen_sec: 13.74
+      ref_sec: 14.08
+      cer: 0.0
+      wer: 0.0625
+    bible_00084:
+      source: bible
+      text: 'N yɛtti ya, ni, Ay! Faasee ka ya takki ya teesibeeri ka kyɛ ya tunkyɔ''ama maa: di yi pa
+        lala ya gba nin baasi yɔri hoo ban daa baasi seem maa.”'
+      sbs: 0.7368
+      gen_sec: 11.01
+      ref_sec: 8.94
+      cer: 0.0377
+      wer: 0.0645
+    bible_00085:
+      source: bible
+      text: ka naayi zaŋŋi ma n‑niŋi ban pa ti butiri niriba la nuu ni, ni ba maali ansarisi, ka feebi
+        ma ka ku ma. Amaa daba ata daari n nin yisigi kum ni.”
+      sbs: 0.7383
+      gen_sec: 11.52
+      ref_sec: 12.28
+      cer: 0.0
+      wer: 0.0
+    bible_00086:
+      source: bible
+      text: Ya mun yi zaani m‑puusiri Naawunni, see ka ya teaai ninvugsɔ ŋɔn tum tumbeoo zaa n‑ti ya la
+        yɛla, ka kyɛ u taalli m‑pɛŋŋi u; ka ti Ba ŋɔn bɛ arizana ni gba nin kyɛ ya mammaŋŋa tumbeeri m‑pɛŋŋi
+        ya.”
+      sbs: 0.6863
+      gen_sec: 16.55
+      ref_sec: 12.6
+      cer: 0.0336
+      wer: 0.175
+    bible_00087:
+      source: bible
+      text: Sɔkam ŋɔn wum Naawunni naam lahabaari maa ka bu baŋŋi di gbinni maa ka Yɛlibeeri Daana maa
+        kyɛ na n‑fa yɛligu maa u sufu ni, ŋɔna n ŋmanni la bumburiseesi an lu sɔkpaŋŋa.
+      sbs: 0.7105
+      gen_sec: 14.34
+      ref_sec: 12.86
+      cer: 0.0296
+      wer: 0.1212
+    bible_00088:
+      source: bible
+      text: Amaa ya zaa yi tɔ'asiri anabitiri yɛla ka lala nira ti kpɛ na, ya zaa zugu ka u nin ti baŋŋi
+        u taalli ŋɔn bɛ seem, ni, ba kari u sariya ka lusi u.
+      sbs: 0.7467
+      gen_sec: 11.35
+      ref_sec: 11.46
+      cer: 0.0185
+      wer: 0.0588
+    bible_00089:
+      source: bible
+      text: Ka ŋɔn daa deaai la'abooriga yinni la naayi kyɛ na nti yɛli, ‘M Ba, n daa mi halli, ni, putoo
+        daana n kur nyɛ i, ni, i boori ni i nya bunseelli kam zaa yɔri, ka kyeeri nyin daa bu buri seelli.
+      sbs: 0.6932
+      gen_sec: 15.1
+      ref_sec: 13.02
+      cer: 0.0142
+      wer: 0.0476
+    bible_00090:
+      source: bible
+      text: Di sumni ni ti deaai niriba wa taabu ti yiya ni, ka lala nin kyɛ ka ti zaa la'amni taaba n‑tumni
+        yɛlimaŋni maa tuma.
+      sbs: 0.7168
+      gen_sec: 9.22
+      ref_sec: 7.86
+      cer: 0.0
+      wer: 0.0
+    bible_00091:
+      source: bible
+      text: Halli ninvugsɔ ŋɔn zɔri zoaa gba ku deaai zoaa laara na'ala u dɔli la zoaa maa zaaligu soori
+        ŋɔn wulisi seem la.
+      sbs: 0.7254
+      gen_sec: 9.13
+      ref_sec: 7.82
+      cer: 0.1348
+      wer: 0.4545
+    bible_00092:
+      source: bible
+      text: Dindahinseaa ka doo wa bisaani maa daa ti yɛli u, ‘M ba, tim ma n faari tɔrli!’ Ka u ba daa
+        puri ŋɔn ni u beeri faari n‑ti ba.
+      sbs: 0.7238
+      gen_sec: 9.56
+      ref_sec: 9.04
+      cer: 0.0549
+      wer: 0.1724
+    bible_00093:
+      source: bible
+      text: Ni, lala ti kyɛ ka sɔ ku yɔmsi ya n‑labsi ya nyaaŋŋa, wahala wa nyaabu zugu. Ya mammaŋŋa mi
+        halli, ni, di nyɛ la Naawunni yuubu, ni, ti nya wahala wa tataabu.
+      sbs: 0.7574
+      gen_sec: 12.97
+      ref_sec: 13.24
+      cer: 0.0254
+      wer: 0.1562
+    bible_00094:
+      source: bible
+      text: Ya na bu mi, bee, bu laa n‑teaai boroboro anu an tɔri n‑ti niriba tusa anu la yɛla? Ka an
+        daa kpalim la peeri ala ka ya daa vaai?
+      sbs: 0.7082
+      gen_sec: 9.98
+      ref_sec: 11.74
+      cer: 0.0211
+      wer: 0.1379
+    bible_00095:
+      source: bible
+      text: Dɔli anŋɔ zaa ka zaŋŋi i maŋŋa n‑tiri a. Dina nin kyɛ ka sɔkam nya ka baŋŋi, ni, i tuma maa
+        kyɛnni tooni.
+      sbs: 0.7486
+      gen_sec: 8.87
+      ref_sec: 8.6
+      cer: 0.0385
+      wer: 0.1304
+    bible_00096:
+      source: bible
+      text: Tin kyɛnni n‑goori seem wa, sahakam ka Yisa kum yɛla kpalim m‑bɛ ti ningbina ni, ni lala ti
+        kyɛ ka Yisa nyɔvuri beesigu gba bɛ ti ningbina ni, ka niriba ti nya.
+      sbs: 0.7453
+      gen_sec: 12.8
+      ref_sec: 12.48
+      cer: 0.0407
+      wer: 0.0938
+    bible_00097:
+      source: bible
+      text: Piita daa yɛli u, “Iniyasi, Yisa Masiiya n tibi i, doaama n‑kpabi i bundoaa wa!” Tɔ, ka Iniyasi
+        di va n‑doaai.
+      sbs: 0.7631
+      gen_sec: 8.7
+      ref_sec: 9.7
+      cer: 0.1875
+      wer: 0.4286
+    bible_00098:
+      source: bible
+      text: Mariama mun daa zaŋŋi yɛla maa zaa n‑niŋi u sufu ni, n‑kur teesiri a yɛla.
+      sbs: 0.6813
+      gen_sec: 6.23
+      ref_sec: 5.9
+      cer: 0.0
+      wer: 0.0
+    bible_00099:
+      source: bible
+      text: ka yɛli yiri maa daana, ni, ya Karimba la ya m‑boosi u m‑baŋŋi dukani ka ŋɔn ni u nyaaŋŋa
+        ya n‑kpɛ n‑di ba kyuu bundirigu maa?
+      sbs: 0.7191
+      gen_sec: 10.5
+      ref_sec: 9.28
+      cer: 0.0106
+      wer: 0.2692
+    bible_00100:
+      source: bible
+      text: 'Ka ŋɔn NaaGyoosaaya biisi n daa nyɛ NaaGyɛkɔnaaya ni u tunzɔppa: lala saha ka ba daa gbaasi
+        ba n‑kyaŋŋi Babɛlɔn.'
+      sbs: 0.7267
+      gen_sec: 9.3
+      ref_sec: 10.8
+      cer: 0.0667
+      wer: 0.25
+    bible_00101:
+      source: bible
+      text: Ka ba daa zi ba n‑labi Sɛkyeem tiŋŋa na, nti sɔ'ai ba ba gbala ziseaa ni, Sɛkyeem ziseaa ka
+        ti yaaba Ibrahim ŋɔn daa zaŋŋi anzulifa n‑da Heemɔri biisi saani la.
+      sbs: 0.7178
+      gen_sec: 13.31
+      ref_sec: 14.66
+      cer: 0.0403
+      wer: 0.129
+    bible_00102:
+      source: bible
+      text: Ka ban daa doaai n‑kyɛnni maa, ba daa sɔsiri n‑yɛtti taaba, ni, “Doo wa bu tum sɛseelli din
+        sumni kum, halli din sum ni dansarika duu kparibu gba.”
+      sbs: 0.7454
+      gen_sec: 11.69
+      ref_sec: 10.6
+      cer: 0.0631
+      wer: 0.1429
+    bible_00103:
+      source: bible
+      text: Bee, ti ya kyɛ ka ti Dugma nyuuri yisigi? Ammi, ti mari yaa n‑gaari u? Ay - ti ka, walla!
+      sbs: 0.7776
+      gen_sec: 6.91
+      ref_sec: 7.02
+      cer: 0.0161
+      wer: 0.1579
+    bible_00104:
+      source: bible
+      text: Ba yi da zaŋŋi bu n‑koosi, ligri pam naa n‑yi na ka lala ligri naa n‑toaai m‑puri n‑tɔri n‑ti
+        faradima!”
+      sbs: 0.6607
+      gen_sec: 8.53
+      ref_sec: 5.26
+      cer: 0.0263
+      wer: 0.3
+    bible_00105:
+      source: bible
+      text: 'Tɔ: zaŋŋi n‑kyaŋŋi toosigu n‑ti Naawunni niriba la yɛla: man daa wulisi Galɛseaa dima maa
+        seem la, ya gba niŋma lala.'
+      sbs: 0.7277
+      gen_sec: 10.07
+      ref_sec: 8.5
+      cer: 0.033
+      wer: 0.1429
+    bible_00106:
+      source: bible
+      text: Ka Yisa yɛli u, ni, “Kyɛma sa, Sintaani! Di pun sɔbi n‑dɔya, ni#:-
+      sbs: 0.6774
+      gen_sec: 5.21
+      ref_sec: 5.38
+      cer: 0.0455
+      wer: 0.3846
+    bible_00107:
+      source: bible
+      text: Ka ba daa piili m‑boosiri taaba, ni, “Ŋɔni n lee n‑nyɛ u?”
+      sbs: 0.7177
+      gen_sec: 4.52
+      ref_sec: 4.12
+      cer: 0.05
+      wer: 0.0833
+    bible_00108:
+      source: bible
+      text: Di fabinni beoo yɛla zuna, see ka i kyɛ ka beoo maa sa ya fabli ka maŋtoori yɛla. Zuna mun
+        mari la ka toori yɛlimugsa ka a sakki.”
+      sbs: 0.7461
+      gen_sec: 10.15
+      ref_sec: 12.52
+      cer: 0.0
+      wer: 0.0
+    bible_00109:
+      source: bible
+      text: Dizugu ka ya wulisiri beesisuŋŋu ŋɔn bɛ seem n‑tiri yɛddaniŋniba zaa ban bɛ Masidoonya ni
+        Akaaya tingbana maa ni.
+      sbs: 0.7546
+      gen_sec: 9.81
+      ref_sec: 10.1
+      cer: 0.129
+      wer: 0.4211
+    bible_00110:
+      source: bible
+      text: Ammi, m ba'a bɛ la ban pa ti niriba yɛla ni, bee? - ni n ti kari ba sariya. Ay, pa lala! Yan
+        mun katti la ti toori niriba yɛla, bee m ma'ari ni?
+      sbs: 0.7492
+      gen_sec: 10.75
+      ref_sec: 10.82
+      cer: 0.03
+      wer: 0.0606
+    bible_00111:
+      source: bible
+      text: Ba mi halli, ka za'asiri di yɛlimaŋni maa, ni, sahanseaa sa la Naawunni daa yɛli la u yɛligu
+        ka arizana ni duniya daa naam; koom ka u daa zaŋŋi m‑maali lala duniya maa, ka ka yi koom ni na.
+      sbs: 0.7448
+      gen_sec: 15.19
+      ref_sec: 13.04
+      cer: 0.007
+      wer: 0.0513
+    bible_00112:
+      source: bible
+      text: Halli m bu kɔŋŋi ni m mooli Naawunni ŋɔn teesi, ni, u nin niŋi seem zaa n‑ti ya.
+      sbs: 0.7629
+      gen_sec: 6.66
+      ref_sec: 7.32
+      cer: 0.0678
+      wer: 0.1667
+    bible_00113:
+      source: bible
+      text: Ka Yisa daa yɛli kinkaŋŋa maa, ni, “Sɔ ku laa n‑di i wala yaasa, halli walli yinni gba!” Ka
+        u nyaandɔliba maa daa wum ŋɔn yɛli seem wa.
+      sbs: 0.6911
+      gen_sec: 10.75
+      ref_sec: 9.28
+      cer: 0.06
+      wer: 0.2143
+    bible_00114:
+      source: bible
+      text: Ka lala ka alahazibu, dama Sintaani mammaŋŋa gba ma'ari ziri, ni, u nyɛ la malaaka neesim
+        daana.
+      sbs: 0.6859
+      gen_sec: 8.02
+      ref_sec: 8.5
+      cer: 0.0133
+      wer: 0.0588
+    bible_00115:
+      source: bible
+      text: Ka pɔ'aseeba daa bɛ kpaŋŋa ka gɔsiri na - pɔ'aseeba ban daa dɔli u n‑yi Galilii na ni ba ti
+        suŋŋni u la n daa nyɛ ba.
+      sbs: 0.6646
+      gen_sec: 9.22
+      ref_sec: 10.14
+      cer: 0.0814
+      wer: 0.3077
+    bible_00116:
+      source: bible
+      text: Amaa ka toondaandima nini kur moaai ka ba maali n‑yɛtta. “U wulisiri niriba Izraɛli dima tinsi
+        zaa, n‑daa piili la Galilii halli nti paai kpa na, ka daamni niriba sufu pam.”
+      sbs: 0.6834
+      gen_sec: 13.99
+      ref_sec: 13.66
+      cer: 0.0
+      wer: 0.0645
+    bible_00117:
+      source: bible
+      text: Dama nira yi bu nyaŋŋi m‑mari u toori yiri maa, u ya niŋi la wula n‑toaai m‑mari Naawunni
+        niriba maa n‑gɔsiri ba yɛla?
+      sbs: 0.7175
+      gen_sec: 9.81
+      ref_sec: 7.5
+      cer: 0.0444
+      wer: 0.1304
+    bible_00118:
+      source: bible
+      text: 'amaa tirima ŋɔn moonni lahabaseaa maa nyɛ la Yisa Kirisita Masiiya yɛla: ni, ba daa kpaasi
+        u n‑tabli dɔpulli zugu. Ka Yɛhudiya dima maa yɛtti, ni, din kyisiri nla; ka Griika dima maa mun
+        yɛtti, ni, gyɛrilim n nyɛ di.'
+      sbs: 0.6948
+      gen_sec: 17.74
+      ref_sec: 13.32
+      cer: 0.0359
+      wer: 0.125
+    bible_00119:
+      source: bible
+      text: 'Ka ba yinni gba laa n‑yɛli, ni, u da la na''akoora piiya ka u ya n‑kyaŋŋi nti nya ban tumni
+        seem maa; ni, ‘Dizugu n susiri i ni: n ku toaai n‑kyɛ na.’'
+      sbs: 0.7194
+      gen_sec: 11.52
+      ref_sec: 9.84
+      cer: 0.0
+      wer: 0.1212
+    bible_00120:
+      source: bible
+      text: Ka Yisa daa laa n‑yɛli ba m‑paasi, ni, “Dɔsɔ n daa bɛ ni m‑mari u bidibsi ayi.
+      sbs: 0.7641
+      gen_sec: 6.06
+      ref_sec: 5.98
+      cer: 0.0727
+      wer: 0.1765
+    bible_00121:
+      source: bible
+      text: Tɔ; ka dabeem daa sigi sɔkam zaa zugu na, ka Naawunni daa kyɛ ka u tuumudima tumni tunkara
+        ni alahazibu yɛla.
+      sbs: 0.7334
+      gen_sec: 8.79
+      ref_sec: 9.56
+      cer: 0.0233
+      wer: 0.0952
+    bible_00122:
+      source: bible
+      text: Ka dizugu ba daa bu ba pam, ka zaŋŋi ba n‑niŋi sarika ni; ka yɛli sarikadaana maa, ni, u kparim
+        ba suŋŋa.
+      sbs: 0.7209
+      gen_sec: 8.79
+      ref_sec: 9.38
+      cer: 0.0513
+      wer: 0.1364
+    bible_00123:
+      source: bible
+      text: Ba daa zɛ la wa'aligu sa ka tasi pampam n‑yɛli u, “Ti Ba Yisa, zɔm ti namboo!”
+      sbs: 0.7227
+      gen_sec: 5.8
+      ref_sec: 5.54
+      cer: 0.0545
+      wer: 0.2353
+    bible_00124:
+      source: bible
+      text: Ka Piita mirigi u nini n‑kpa u, ni Gyɔni gba m‑paasi, ka yɛli u, “Gɔsim ti!”
+      sbs: 0.6584
+      gen_sec: 5.72
+      ref_sec: 6.94
+      cer: 0.0566
+      wer: 0.3125
+    bible_00125:
+      source: bible
+      text: Yisa mun ŋɔn daa ti baŋŋi lala maa, u sufu daa bu maai; ka u daa yɛli u nyaandɔliba maa, ni,
+        “Ya kyɛ ka bibisi maa kyɛ n saani na, yan di ta'ari ba! Dama Naawunni naam nyɛ la banŋɔ taabu
+        dinni.
+      sbs: 0.6735
+      gen_sec: 15.52
+      ref_sec: 12.52
+      cer: 0.035
+      wer: 0.1429
+    bible_00126:
+      source: bible
+      text: ay! - ba daa da ya ni. Dizugu ya zaŋŋma ya ningbina n‑tiri Naawunni gyirima.
+      sbs: 0.7472
+      gen_sec: 6.23
+      ref_sec: 7.28
+      cer: 0.0702
+      wer: 0.1429
+    bible_00127:
+      source: bible
+      text: Di saha ka daadam pam daa la'am n‑galimni Pɔla ni Sailasi, ka tiŋŋa maa sariyakattiba daa
+        zaŋŋi ba n‑toaai ba kpari n‑yeaai ka kyɛ ka ba feebi ba daari.
+      sbs: 0.7398
+      gen_sec: 12.54
+      ref_sec: 14.88
+      cer: 0.0169
+      wer: 0.1379
+    bible_00128:
+      source: bible
+      text: Ni, “Ya ninvugseeba ban zi zikara n‑gyɛ zaa, ya kyɛma n saani na, ka n nin kyɛ ka ya vuusi.
+      sbs: 0.7514
+      gen_sec: 6.91
+      ref_sec: 6.56
+      cer: 0.0
+      wer: 0.0
+    bible_00129:
+      source: bible
+      text: Yɛlimaŋni, ŋɔn daa nyɛ daabri u booligu maa saha zaa mari la yɔlisim ti Dugma saani, ka ŋɔn
+        mun daa su u maŋŋa u booligu maa saha leebi la daabri n‑ti Kirisita.
+      sbs: 0.74
+      gen_sec: 13.31
+      ref_sec: 10.94
+      cer: 0.032
+      wer: 0.1562
+    bible_00130:
+      source: bible
+      text: Ya n nyɛ ban deaai Naawunni noori la hoo u bisuma, ka di zugu yan di kyɛ ka kɔrisi su ya sufu
+        yɛla, hoo din daa niŋi yan daa na zi sɛseela sahanseaa la seem maa.
+      sbs: 0.7378
+      gen_sec: 12.54
+      ref_sec: 12.28
+      cer: 0.0325
+      wer: 0.2222
+    bible_00131:
+      source: bible
+      text: Tɔ; ka lala saha maa ka Saddusidima - ban yɛtti, ni, kum yisigri ka ni la - ba gba daa kyɛ
+        na nti boosi u boosa.
+      sbs: 0.7506
+      gen_sec: 8.62
+      ref_sec: 10.48
+      cer: 0.0494
+      wer: 0.125
+    bible_00132:
+      source: bible
+      text: Ka Naawunni nuu daa bɛ ba saani, ka niriba pam daa niŋi yɛdda ka takki ba beebu n‑deaai ti
+        Dugma maa.
+      sbs: 0.7253
+      gen_sec: 8.11
+      ref_sec: 7.26
+      cer: 0.0385
+      wer: 0.0952
+    bible_00133:
+      source: bible
+      text: ni, i dɔli soori maa ni beesikasi ka galiŋŋu ka ni, halli ka ti Dugma Yisa ti yi paalu na.
+      sbs: 0.7536
+      gen_sec: 7.17
+      ref_sec: 7.6
+      cer: 0.0294
+      wer: 0.2
+    bible_00134:
+      source: bible
+      text: Ni, “Sɔ na zi n‑zaŋŋi kyinkyimpaalli tanni n‑ligi bunyeerikurigu. Dama tampaalli maa nin yiisi
+        kan ligi seela maa ka kyeaai bunyeerigu la, ka ka maali n‑sa'am m‑paasi.
+      sbs: 0.7374
+      gen_sec: 13.99
+      ref_sec: 12.72
+      cer: 0.0229
+      wer: 0.1852
+    bible_00135:
+      source: bible
+      text: Ka u yi ti nya u, u nin zaŋŋi u m‑bugi u bɔ'ari zugu ni sufupeelli m‑mari u n‑kuli yiri ni.
+      sbs: 0.7085
+      gen_sec: 7.08
+      ref_sec: 6.08
+      cer: 0.0308
+      wer: 0.0476
+    bible_00136:
+      source: bible
+      text: Yisa daa ti ya yi Gyɔdin mɔ'ari n‑labi na la, ka Naawunni Sii Kasi pun paali u ni.
+      sbs: 0.7104
+      gen_sec: 6.23
+      ref_sec: 5.92
+      cer: 0.0492
+      wer: 0.1111
+    bible_00137:
+      source: bible
+      text: 'Ka daadam pam daa la''am n‑zɛ bɛni ni ba gɔsi din ya n‑niŋi seem: ba zaa daa nya din daa
+        baasi seem maa, ka daa labi n‑kuli ni sufusa''aŋŋu pam.'
+      sbs: 0.7495
+      gen_sec: 11.26
+      ref_sec: 11.12
+      cer: 0.0286
+      wer: 0.1333
+    bible_00138:
+      source: bible
+      text: Ka Naawunni Siiya daa yɛli Filipi, ni, “Kyɛm nti paai tarɔkku wa!”
+      sbs: 0.6981
+      gen_sec: 5.21
+      ref_sec: 5.18
+      cer: 0.12
+      wer: 0.4167
+    bible_00139:
+      source: bible
+      text: N teesiya, ni, di tuya, ni, sahanseaa man ŋɔn na kpalim m‑bɛ n nyɔvuri ni la, ka bɛ n ningbiŋŋu
+        wa puuni, n nin kpalim n‑teaari ya sahakam zaa.
+      sbs: 0.728
+      gen_sec: 11.69
+      ref_sec: 10.28
+      cer: 0.0566
+      wer: 0.2759
+    bible_00140:
+      source: bible
+      text: Ninvugseeba ban daa bɛ tooni, ni seeba gba ban daa bɛ nyaaŋŋa n‑dɔli maa daa piili n‑kpalimna
+        n‑yɛtti, ni#:-
+      sbs: 0.6826
+      gen_sec: 9.13
+      ref_sec: 9.58
+      cer: 0.0122
+      wer: 0.1579
+    bible_00141:
+      source: bible
+      text: Ya deaam taaba ya yiya ni hoo saamma, ka di fabli di zugu m‑mɔŋŋi taaba.
+      sbs: 0.7385
+      gen_sec: 5.89
+      ref_sec: 5.26
+      cer: 0.0545
+      wer: 0.2
+    bible_00142:
+      source: bible
+      text: Di saha maa ka Sɔla daa boori la nimmoaa ŋɔn nin niŋi seem n‑ku Yisa nyaandɔliba. U daa kyaŋŋi
+        Gyeeŋŋu Toondaana la saani
+      sbs: 0.7282
+      gen_sec: 10.33
+      ref_sec: 8.6
+      cer: 0.0309
+      wer: 0.1304
+    bible_00143:
+      source: bible
+      text: Ka ŋɔn daa ti paai ti Asɔsi na maa, u daa kpɛ nyariŋŋu maa na ka ti daa du n‑kyaŋŋi m‑paai
+        Mitiliini tiŋŋa.
+      sbs: 0.7249
+      gen_sec: 9.13
+      ref_sec: 10.06
+      cer: 0.0494
+      wer: 0.1739
+    bible_00144:
+      source: bible
+      text: Ni, “Dinŋɔna man yɛtti ya ni, ni, ba nin fa Naawunni naam yɛla ya saani nti zaŋŋi n‑ti tingbanseaa
+        niriba, ban tuma sumsi ni ba deaai.” [[
+      sbs: 0.7367
+      gen_sec: 11.18
+      ref_sec: 10.24
+      cer: 0.0196
+      wer: 0.1154
+    bible_00145:
+      source: bible
+      text: Bɛni ka ti daa nya nyarinseaa kan wa Fɔnisiiya, ka dinzugu ti daa kpɛ ka ni.
+      sbs: 0.7149
+      gen_sec: 6.06
+      ref_sec: 5.76
+      cer: 0.0678
+      wer: 0.1875
+    bible_00146:
+      source: bible
+      text: Tɔ; ka di saha maa kurikyuu bɔbgu gba daa bɛ la kunkunni lugri ni n‑dira, ka arizimbeeri maa
+        daa susi soori, ni, Yisa sakkma ka ba yi n‑kpɛ kurikyuudima maa ni.
+      sbs: 0.7227
+      gen_sec: 12.89
+      ref_sec: 12.58
+      cer: 0.0894
+      wer: 0.1613
+    bible_00147:
+      source: bible
+      text: Di saha ba nin ti gbaasi ya ka zaŋŋi ya n‑niŋi seeba nuusi ni, ka ba namsi ya ka ku ya. Ban
+        pa Yɛhudiya dima maa zaa nin yaai ya man yuuri zugu.
+      sbs: 0.7034
+      gen_sec: 11.35
+      ref_sec: 10.46
+      cer: 0.0185
+      wer: 0.0909
+    bible_00148:
+      source: bible
+      text: Yan di kyɛ ka ya veelim yiiri la ya sutura bɔbri ni, hoo zugu paaŋŋu bee salima bansi ni nangɔkɔrisi
+        ni kyinkyinveela soobu;
+      sbs: 0.7289
+      gen_sec: 10.33
+      ref_sec: 9.28
+      cer: 0.13
+      wer: 0.3043
+    bible_00149:
+      source: bible
+      text: Ka Yisa daa gyɛrigi n‑yɛli “Ninvugŋɔni n lee n‑nyɛ daabsɔ ŋɔn mari yɛm ni yɛdda? - ka u dugma
+        zaŋŋi u yiri maa fukumsi n‑niŋi u nuu ni, ni u basiri mɔnni n‑tiri ba, mɔnni basibu saha.
+      sbs: 0.7548
+      gen_sec: 14.85
+      ref_sec: 13.58
+      cer: 0.0657
+      wer: 0.1944
+    bible_00150:
+      source: bible
+      text: Tɔ, m mabiisi, n ya teaai ya la man ŋɔn daa mooli lahabasuŋŋu maa n‑ti ya seem. Lahabaari
+        wa ka ya daa deaai, ka lahabaari maa zugu ka ya kpalim n‑zɛ yummu.
+      sbs: 0.7313
+      gen_sec: 12.71
+      ref_sec: 14.1
+      cer: 0.0169
+      wer: 0.0625
+    bible_00151:
+      source: bible
+      text: Kirisita siri ku toaai n‑lɔ nangbanyinni ni Sintaani; bee, yɛdda daana ku toaai n‑nyɛ ŋɔn
+        za'asi yɛdda niŋbu la taraana.
+      sbs: 0.7326
+      gen_sec: 10.07
+      ref_sec: 8.72
+      cer: 0.0947
+      wer: 0.35
+    bible_00152:
+      source: bible
+      text: Ka sɔkam daa nya u kyɛnni maa ka pɛ'ari Naawunni,
+      sbs: 0.7081
+      gen_sec: 3.84
+      ref_sec: 3.76
+      cer: 0.0789
+      wer: 0.2
+    bible_00153:
+      source: bible
+      text: Dizugu n daa mɔ'asiri ya la bisim, pa dikpeema; dama ya daa bu sa'ai ditibsa diibu. Halli
+        ni zuna ya na ku toaai n‑deaai ninvugkura diibu,
+      sbs: 0.7366
+      gen_sec: 11.01
+      ref_sec: 10.74
+      cer: 0.0283
+      wer: 0.2308
+    bible_00154:
+      source: bible
+      text: Dinŋɔ nyaaŋŋa ka Yisa daa kyɛ ba m‑bakki n‑yi Gyɛrusalɛm timpuuni n‑kyaŋŋi nti paai Bɛtani
+        tinkpaŋŋa n‑gbɛa.
+      sbs: 0.7093
+      gen_sec: 9.73
+      ref_sec: 9.94
+      cer: 0.0345
+      wer: 0.1176
+    bible_00155:
+      source: bible
+      text: 'Di laa m‑boonni sɔ ya Ba, duniya wa puuni: ya Ba yinni m bɛ ni n‑ti ya, ka ŋɔn mun bɛ la
+        saazugu.'
+      sbs: 0.7553
+      gen_sec: 7.51
+      ref_sec: 7.44
+      cer: 0.029
+      wer: 0.087
+    bible_00156:
+      source: bible
+      text: dama ya yi ti bari n‑zaani ya beebu ni, ti Dugma zugu, di nin kyɛ ka ti leebi ban vu.
+      sbs: 0.7697
+      gen_sec: 6.49
+      ref_sec: 6.06
+      cer: 0.0
+      wer: 0.0
+    bible_00157:
+      source: bible
+      text: N daa zoomiya, neesim ŋɔn daa neaai pampam la zugu, ka n nyaandɔliba maa daa dari ma n‑kyaŋŋi
+        nti paai Damasikusi.
+      sbs: 0.7299
+      gen_sec: 9.56
+      ref_sec: 7.74
+      cer: 0.0667
+      wer: 0.2857
+    bible_00158:
+      source: bible
+      text: Lala ti yɛ nyɛ di duniya naari daari; malaakadima la nin gamsi ninvugbeeri la ninvugsuma la
+        puuni
+      sbs: 0.7426
+      gen_sec: 8.02
+      ref_sec: 7.02
+      cer: 0.0375
+      wer: 0.1176
+    bible_00159:
+      source: bible
+      text: Ti yi ti yɛli, ni, ti ka la tumbeeri, ti yɔmsiri la ti maŋŋa ka yɛlimaŋni ka ti ni.
+      sbs: 0.7025
+      gen_sec: 6.74
+      ref_sec: 4.94
+      cer: 0.082
+      wer: 0.1579
+    bible_00160:
+      source: bible
+      text: Ka ban daa kɔŋŋi yam la daa ti yɛli ba taaba, ni, ‘Ya ku ti ti kpaam ka ti niŋi ti firiladima
+        maa ni? - Dama ti dina n kpiira.’
+      sbs: 0.7388
+      gen_sec: 9.81
+      ref_sec: 8.14
+      cer: 0.0769
+      wer: 0.1724
+    bible_00161:
+      source: bible
+      text: M‑paasi ya gyeeŋŋu zugu, ya mari nirilim n‑tiri taaba, ka din paasi bunseelli kam zaa nyɛ
+        la wurilim.
+      sbs: 0.7512
+      gen_sec: 8.36
+      ref_sec: 6.62
+      cer: 0.038
+      wer: 0.1667
+    bible_00162:
+      source: bible
+      text: Ba pam daa niŋi Yisa yɛdda, ni Griika pɔ'akpamma m‑paasi, ka ba dɔppa gba daa bu kɔŋŋi yɛdda
+        niŋbu.
+      sbs: 0.7376
+      gen_sec: 8.28
+      ref_sec: 8.16
+      cer: 0.0526
+      wer: 0.1579
+    bible_00163:
+      source: bible
+      text: Di daa ti paai kurigu anu saha, ka u daa laa n‑yi na n‑kpɛ daa ni ka seeba kpalim n‑zɛya ka
+        ka tuma. Ka u daa yɛli ba, ni, ‘Bɔ n niŋi ka ya kpalim n‑zɛ kpa yɔriyɔri, halli ni zaanoori saha
+        wa?’
+      sbs: 0.7265
+      gen_sec: 15.01
+      ref_sec: 14.8
+      cer: 0.0432
+      wer: 0.1395
+    bible_00164:
+      source: bible
+      text: Dama ya mi wulisigu seaa tin daa zaŋŋi n‑wulisi ya, hoo ti Dugma Yisa ŋɔn zaali ti seem la.
+      sbs: 0.7566
+      gen_sec: 7.51
+      ref_sec: 6.54
+      cer: 0.0571
+      wer: 0.1579
+    bible_00165:
+      source: bible
+      text: Ka dɔsɔ daa kyɛ Yisa saani na nti yɛli u, ni, “N Karimba, tunsuŋŋu bɔ ka n nin tum ka deaai
+        nyɔvuri kan ka naari?”
+      sbs: 0.7326
+      gen_sec: 8.87
+      ref_sec: 7.46
+      cer: 0.0476
+      wer: 0.2
+    bible_00166:
+      source: bible
+      text: Halli ni zuna ti kpiiri la kɔm ni kɔnyuuri, n‑ka bunyeera, ka laa n‑nyari mugsigu ti gyiliŋŋu
+        la puuni.
+      sbs: 0.7023
+      gen_sec: 8.53
+      ref_sec: 6.38
+      cer: 0.025
+      wer: 0.1053
+    bible_00167:
+      source: bible
+      text: Ka Yisa daa labsi n‑yɛli ba, “Ka bɔ n niŋi ka yarima za'asiri Naawunni zaaligu, ya yaadima
+        kaari dɔligu zugu?
+      sbs: 0.7148
+      gen_sec: 8.79
+      ref_sec: 7.22
+      cer: 0.0476
+      wer: 0.15
+    bible_00168:
+      source: bible
+      text: Ka Piita ŋɔn daa na kur tɔ'asiri yɛttɔ'a wa, Naawunni Sii Kasi maa daa kpɛ ban wumni u yɛla
+        maa zaa sufu ni.
+      sbs: 0.6853
+      gen_sec: 8.36
+      ref_sec: 9.16
+      cer: 0.0488
+      wer: 0.1739
+    bible_00169:
+      source: bible
+      text: Ka ya yi ti nya ka pɛbsigu zeeri n‑yiiri nuzaa ya'ari na, ya nin yɛli, ni, wɔligu nin niŋi,
+        ka di siri nin niŋi.
+      sbs: 0.7172
+      gen_sec: 8.87
+      ref_sec: 7.76
+      cer: 0.0488
+      wer: 0.1667
+    bible_00170:
+      source: bible
+      text: Ii! - u siri daa pun yiisi ti zibsim yiiko ni na, ka zaŋŋi ti n‑taasi u Biwuttigu naam ni
+        na.
+      sbs: 0.7471
+      gen_sec: 7.42
+      ref_sec: 7.06
+      cer: 0.0588
+      wer: 0.1
+    bible_00171:
+      source: bible
+      text: Halli tirima kɔkɔ n ka soori ni ti di pɔ'a ŋɔn nyɛ yɛddaniŋna, ka kyɛ ka u dɔli ti ti gyiliŋŋu
+        ni, bee? - hoo tuumuseeba la ŋɔn tumni seem, ni ti Dugma tunzɔppa la, ni Siifasi gba.
+      sbs: 0.7545
+      gen_sec: 14.42
+      ref_sec: 13.44
+      cer: 0.0815
+      wer: 0.2432
+    bible_00172:
+      source: bible
+      text: Lala zugu, m mabiisi, ya kpaŋŋma ya mansi sahakam zaa n‑sakkri ti Dugma Naawunni booligu,
+        dama ŋɔna n yiisi ya. Ya kyɛ ka u yɛla zɛ suŋŋa ya saani. Ya yi niŋi lala ya ku laa n‑labi nyaaŋŋa.
+      sbs: 0.7552
+      gen_sec: 15.87
+      ref_sec: 12.98
+      cer: 0.0278
+      wer: 0.1316
+    bible_00173:
+      source: bible
+      text: Dizugu man mun bu zɔri zoaa la ni hoo ŋɔn zɔri yɔriyɔri; m bu zabri hoo ŋɔn buuri pɛsigu.
+      sbs: 0.7019
+      gen_sec: 7.17
+      ref_sec: 7.08
+      cer: 0.1594
+      wer: 0.3684
+    bible_00174:
+      source: bible
+      text: Ka u daa doaai n‑kyaŋŋi n‑ti zinni Nazarɛti tiŋŋa ni. Ka dinŋɔ daa kyɛ ka di siri daa niŋi
+        hoo anabidima ŋɔn daa tɔ'asi seem n‑zaali la, ni#:-
+      sbs: 0.6949
+      gen_sec: 11.95
+      ref_sec: 11.46
+      cer: 0.0377
+      wer: 0.1071
+    bible_00175:
+      source: bible
+      text: Tɔ; di nyaaŋŋa ka u yi daa booli u niriba maa na nti yɛli ba, ni, ‘Kyuu maa saha paaya, amaa
+        man daa zuusi seeba la bu sumsi ni ba di kyuu maa.
+      sbs: 0.7436
+      gen_sec: 11.09
+      ref_sec: 8.82
+      cer: 0.0667
+      wer: 0.1212
+    bible_00176:
+      source: bible
+      text: 'Di yi nyɛ la: ni, ti ka tama Kirisita ni, di yi pa la duniya wa ni kɔkɔa, dinŋɔna ti wahala
+        gaari sɔkam zaa dinni.'
+      sbs: 0.7846
+      gen_sec: 8.96
+      ref_sec: 8.2
+      cer: 0.0471
+      wer: 0.12
+    bible_00177:
+      source: bible
+      text: Ti sɔbi kanŋɔ ni ti zaa sufumaasim leebi bummunni zaa.
+      sbs: 0.6774
+      gen_sec: 4.52
+      ref_sec: 4.18
+      cer: 0.1364
+      wer: 0.5
+    bible_00178:
+      source: bible
+      text: Amaa Pɔla daa yɛli ti, di saha maa, ni, “Wula zugu ka ya niŋni lala? Ya kumni n‑sa'amni la
+        n sufu. Man mun niŋi siri ni n kyaŋŋi Gyɛrusalɛm ka ba ti zaŋŋi ma n‑lɔ - halli ba yi ku ma gba
+        - n Dugma Yisa yuuri zugu.”
+      sbs: 0.7378
+      gen_sec: 16.98
+      ref_sec: 14.26
+      cer: 0.026
+      wer: 0.2391
+    bible_00179:
+      source: bible
+      text: Ka u nyaandɔliba maa boosi u, “Ti dugma, yani zii nla?” Ka u yɛli ba “Bunkpiiŋŋu ŋɔn bɛ luginseaa,
+        bɛni ka zuusi la'amni taaba m‑bɛ ni.”
+      sbs: 0.7465
+      gen_sec: 10.75
+      ref_sec: 13.46
+      cer: 0.06
+      wer: 0.2308
+    bible_00180:
+      source: bible
+      text: Ba daa kur gɔsiri ni, halli ka u ti kpɛ sangbana ni. Di saha maa ka niriba ayi daa gbirigi
+        n‑zaani ba saani, niriba maa mun neema daa pɛligiya ni, nyain!
+      sbs: 0.7435
+      gen_sec: 12.2
+      ref_sec: 11.94
+      cer: 0.0085
+      wer: 0.0323
+    bible_00181:
+      source: bible
+      text: Di daa gyɛri pɔ'aba maa pam n‑ŋma ba yam; ka dizugu ba daa zɔ n‑yi gballi maa ni na. Dabeem
+        ŋɔn daa mari ba pam la zugu, ba daa bu yɛli sɔ seelli.
+      sbs: 0.7494
+      gen_sec: 11.26
+      ref_sec: 10.54
+      cer: 0.0374
+      wer: 0.1515
+    bible_00182:
+      source: bible
+      text: Ka Sintaani daa laa n‑zaŋŋi u n‑kyaŋŋi Gyɛrusalɛm timpuuni ka zaŋŋi u n‑du n‑tɔm Naawunni
+        Gyeeŋŋu Yiri saazugu sa, ka Sintaani yɛli, “I yi siri nyɛ la Naawunni biiya, i ku zaŋŋi i maŋŋa
+        m‑basi tiŋŋa?
+      sbs: 0.6842
+      gen_sec: 17.57
+      ref_sec: 14.0
+      cer: 0.0065
+      wer: 0.0278
+    bible_00183:
+      source: bible
+      text: Ya bu mi di gbinni? - ni, bunseela an kpeeri ninsaala noori, u puuri ka a kpeera, ka gatti
+        n‑yi bangyira zii la ni.
+      sbs: 0.6909
+      gen_sec: 8.96
+      ref_sec: 7.16
+      cer: 0.0235
+      wer: 0.087
+    bible_00184:
+      source: bible
+      text: Ka Ilizabɛti dɔ'am saha ŋɔn daa ti paai, u daa dɔ'ai bidibga.
+      sbs: 0.6955
+      gen_sec: 4.86
+      ref_sec: 3.96
+      cer: 0.1304
+      wer: 0.25
+    bible_00185:
+      source: bible
+      text: Ya zɔma n‑yi zina tuma ni; dama tumbeeri zaa pa la nira ningbiŋŋu puuni yɛttɔ'a, na'ala zina
+        tuma nyɛ lala; amaa ŋɔn niŋi zina tuma zaa niŋni lala tumbeeri u toori ningbiŋŋu ni.
+      sbs: 0.7517
+      gen_sec: 14.85
+      ref_sec: 14.2
+      cer: 0.058
+      wer: 0.1818
+    bible_00186:
+      source: bible
+      text: ni, ka mun bu laa n‑sum ni u gba kyɛ Yisa saani na. Amaa u kur yɛlim yɛttɔ'aseesi ŋɔn ya yɛli,
+        ka u baara maa kpaŋŋi.
+      sbs: 0.6934
+      gen_sec: 9.3
+      ref_sec: 10.54
+      cer: 0.0581
+      wer: 0.1538
+    bible_00187:
+      source: bible
+      text: Ti laa n‑ya tum la ti mabisɔ m‑paasi ba zugu; ti daa pun nya ka doo wa tumni nimmoosi sahakam,
+        ka pampaŋŋɔ u niŋi ya yɛdda pam, ka dizugu u ya tum n‑gaari lala.
+      sbs: 0.7627
+      gen_sec: 12.89
+      ref_sec: 13.48
+      cer: 0.05
+      wer: 0.0882
+    bible_00188:
+      source: bible
+      text: Ka n‑zaŋŋi m‑paasi ti mammaŋŋa kpamsigu zugu, ti mari sufupeelli Taituusi yɛla zugu, dama
+        u sufu daa maaya, yan daa ti u sufudoaa la zugu.
+      sbs: 0.7397
+      gen_sec: 11.69
+      ref_sec: 10.24
+      cer: 0.0185
+      wer: 0.16
+    bible_00189:
+      source: bible
+      text: Ammi, ya bu nya ka ba la'asiri niimbisi anu n‑koosiri la'abisi ayi? Amaa Naawunni na zi n‑tam
+        halli niimbila yinni yɛla.
+      sbs: 0.7403
+      gen_sec: 9.73
+      ref_sec: 10.1
+      cer: 0.0
+      wer: 0.0
+    bible_00190:
+      source: bible
+      text: dama Naawunni pa la ŋɔn burimna, amaa ŋɔn maanna.
+      sbs: 0.6962
+      gen_sec: 4.27
+      ref_sec: 3.84
+      cer: 0.0769
+      wer: 0.6667
+    bible_00191:
+      source: bible
+      text: Hoo din pun sɔbi n‑dooli seem zaŋŋi n‑kyaŋŋi ninvugsɔ ŋɔn tisiri la, ni#:-
+      sbs: 0.6979
+      gen_sec: 6.66
+      ref_sec: 5.36
+      cer: 0.0536
+      wer: 0.2308
+    bible_00192:
+      source: bible
+      text: Naawunni wurilim piini ni u sufudoaa bɛ ya saani, n‑kyɛ ka ya mi ti Dugma Naawunni ni ti Dugma
+        Yisa Masiiya yɛla wa, halli zaa.
+      sbs: 0.7394
+      gen_sec: 10.15
+      ref_sec: 9.42
+      cer: 0.0202
+      wer: 0.04
+    bible_00193:
+      source: bible
+      text: Tɔ; ka Naawunni daa kyɛ ka tuumudima maa daa tumni alahazibu tuma pam niriba maa saani n‑wulisiri
+        u gyirima. Ba zaa daa kur la'amni la NaaSulɛmaana Leeŋŋa maa maasim ni.
+      sbs: 0.7552
+      gen_sec: 13.91
+      ref_sec: 13.06
+      cer: 0.0222
+      wer: 0.1
+    bible_00194:
+      source: bible
+      text: Amaa ba yi ku toaai n‑gbaai ba mansi, ba dim pɔ'aba, bee, n‑kuli dɔppa. Ya yi niŋi lala di
+        veela n‑gaari ya kyɛ ka pɔ'aba bee dɔppa yɛla ti mugsi ya.
+      sbs: 0.7238
+      gen_sec: 11.69
+      ref_sec: 10.94
+      cer: 0.1101
+      wer: 0.2581
+    bible_00195:
+      source: bible
+      text: Lala daa kyɛ ka anabi la yɛligu la ti niŋi yɛlimaŋni, ni#:-
+      sbs: 0.6699
+      gen_sec: 4.95
+      ref_sec: 4.58
+      cer: 0.3409
+      wer: 0.4167
+    bible_00196:
+      source: bible
+      text: Halli ŋɔn daa paai Room na sahanseaa la, u daa bɔ n ziiya ni nimmoaa, halli nti nya ma.
+      sbs: 0.711
+      gen_sec: 6.91
+      ref_sec: 6.3
+      cer: 0.0758
+      wer: 0.2105
+    bible_00197:
+      source: bible
+      text: 'Tɔ: i sunzɔ bɛ la n saani; ŋɔn gba ka Naawunni yiisi n‑niŋi u dinni ka ŋɔna ni u biisi gba
+        puusiri i ni suŋŋasuŋŋa.'
+      sbs: 0.7411
+      gen_sec: 9.73
+      ref_sec: 13.98
+      cer: 0.0575
+      wer: 0.2
+    bible_00198:
+      source: bible
+      text: 'Ka n daa boosi n‑yɛli, ‘Ŋɔni nla, n dugma?’, ka u labsi n‑yɛli ma, ni, ‘Mani Yisa, Nazarɛti
+        nira la: mani ka i namsiri maa.’'
+      sbs: 0.7462
+      gen_sec: 9.56
+      ref_sec: 8.98
+      cer: 0.0118
+      wer: 0.12
+    bible_00199:
+      source: bible
+      text: Ka ŋɔn daa yɛli nŋɔ n‑naai la, u daa wulisi ba u nuusi ni u nɔba.
+      sbs: 0.7171
+      gen_sec: 5.12
+      ref_sec: 4.22
+      cer: 0.0638
+      wer: 0.1875
 - model: KhayaAI/khaya-tts-v2
   model_url: https://translation.ghananlp.org
   mode: noref
@@ -19622,4 +21405,4 @@ benchmarks:
       ref_sec: 4.22
       cer: 0.0638
       wer: 0.1875
-updated: '2026-10-02'
+updated: '2026-10-09'
