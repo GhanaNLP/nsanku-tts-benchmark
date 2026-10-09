@@ -1789,6 +1789,1784 @@ benchmarks:
       ref_sec: 9.62
       cer: 0.1154
       wer: 0.2424
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7487
+  num_scored: 200
+  cer: 0.1199
+  wer: 0.342
+  accuracy: 0.8801
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8144
+  score: 0.8144
+  per_source:
+    bible:
+      sbs: 0.7487
+      cer: 0.1199
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Bala, lɔ kʊ Woso a bir k'an bɩ zu Zuuba ʊ bɩ, a ba b'ʊ soamɩŋŋaʊzaa Zuuba nɔ ʊ. Bɩ, soamɩŋŋaʊzaa
+        kʊ Woso a bir sɔ bɩ, a ba b'ʊ Krista lɔ.
+      sbs: 0.8062
+      gen_sec: 10.58
+      ref_sec: 11.8
+      cer: 0.2165
+      wer: 0.3438
+    bible_00001:
+      source: bible
+      text: Gʊɔɔ gɔsɩnnɔ ta, ŋn'aa *farizɛɛnrɔ yɩ, ŋnɩ hɔ kʊ Yeezuu a ba bɩ dɩnda ŋ nɩ.
+      sbs: 0.7304
+      gen_sec: 6.14
+      ref_sec: 4.86
+      cer: 0.1091
+      wer: 0.3125
+    bible_00002:
+      source: bible
+      text: Bɩ, kʊ mɔɔ ma ŋ ʊ, zɩɩfʊrɔ wɔɔ ɩ dundom zi k'a zɛ bɩ y'a ka, mɔɔ n'a nyɔɔrɛ ɩbɩɩ zi zɔɔ-zɔɔ.
+        Mɔɔ hɩ gʊɔɔ kʊ ŋ mim ka ra rɔ wɔɔ m sɔ, kʊ ŋ nɩ bʊr ɩbɩɩ zi, ŋnɩ b'a gumə lemim hɩ.»
+      sbs: 0.7688
+      gen_sec: 13.06
+      ref_sec: 12.58
+      cer: 0.1417
+      wer: 0.4222
+    bible_00003:
+      source: bible
+      text: 'Pol n dɩga dʊdɔkənno wɔɔ ma sɩɩ…, an a hɩ, a ʊ: «M danyɩnɔ, mɔɔ mɩsɩrbaa ba kan noom fu kɩ
+        Woso mɩm ʊ, an ta, an her naa ku.»'
+      sbs: 0.6892
+      gen_sec: 9.47
+      ref_sec: 8.58
+      cer: 0.186
+      wer: 0.3667
+    bible_00004:
+      source: bible
+      text: Yeezuu n a bɔ, an bʊr Kanaa ʊ Galilee kʊ ʊ. Bɩncɛ bɩ do a hi ba ʊ dɩvɛn bɩ. *Rɔm cir zibəəzaa
+        jɩtaarɛ deem ɩ nyɩnta Kapɛrnawum ʊ, a nyɩ bɩ laafɩɩ y.
+      sbs: 0.7338
+      gen_sec: 11.61
+      ref_sec: 12.96
+      cer: 0.1284
+      wer: 0.4412
+    bible_00005:
+      source: bible
+      text: Woso mɔɔ n'a barɛ m kasɛtɩzaa, kʊ mɔɔ ga a jɩra mɔɔ m ŋʊaarbarɛ m. Kʊ mɔɔ n a ŋʊa kʊ m awɔɔ
+        heer kɔ bɩ y'a ka, mɔɔ n m ya m bʊr awɔɔ zi Korɛntɩ ʊ y.
+      sbs: 0.7836
+      gen_sec: 10.84
+      ref_sec: 10.64
+      cer: 0.0962
+      wer: 0.2821
+    bible_00006:
+      source: bible
+      text: Gɛɛ, mɔɔ kan Barnabas kɩ, wɔɔ y'ʊ ga m ʊ minto kʊ zi ba, ʊ ʊ mɩŋŋɔɔ tʊr m na?
+      sbs: 0.7803
+      gen_sec: 5.8
+      ref_sec: 5.54
+      cer: 0.2453
+      wer: 0.55
+    bible_00007:
+      source: bible
+      text: Cir bɩ do nyɩnta bʊnyaa, an zambʊ ba wɔɔ do bɩ ma. A paŋŋa ba wɔɔ zɩrɔ wɔɔ ma, an a ka ŋn'a
+        a nyɩnɔ poorero gʊr, ŋn'aa ŋ lo kʊ ŋ nɩ gɩnga.
+      sbs: 0.7838
+      gen_sec: 10.84
+      ref_sec: 9.92
+      cer: 0.102
+      wer: 0.3529
+    bible_00008:
+      source: bible
+      text: A hɩ mɔɔ nawʊrɛ awɔɔ m, heernyɔɔ nyɩntaŋ ʊ gʊta arzana ʊ, mimbʊnyaabər deem k'a a bɔ a taam
+        bɩ tɔ ma, an lɛ da gʊɔɔ tɩrgɔɔ bunɛɛhʊ a yaa nɛɛhʊ rɔ wɔɔ kʊ heerlʊrlɛ zibəə ba ŋ ma rɔ wɔɔ ra.»
+      sbs: 0.7465
+      gen_sec: 14.51
+      ref_sec: 11.16
+      cer: 0.156
+      wer: 0.5
+    bible_00009:
+      source: bible
+      text: Bɩ, gʊɔɔ gʊta sɩra ka ʊ b'ʊ.
+      sbs: 0.7142
+      gen_sec: 2.05
+      ref_sec: 3.64
+      cer: 0.2105
+      wer: 0.5714
+    bible_00010:
+      source: bible
+      text: Meerbaarɔ nɔɔn duro ba Yeezuu ʊ, k'a a zɛ zaa hɩnka.
+      sbs: 0.7018
+      gen_sec: 4.01
+      ref_sec: 3.76
+      cer: 0.1795
+      wer: 0.3636
+    bible_00011:
+      source: bible
+      text: Gʊaa nɛɛm bɩ do m bɩ, sɛ m sɔ, an ta hɔ bʊnyaa haay m, wɔɔ mɛ b'an ta ʊ, an nɩ dintim kam
+        wɔɔ mɩsɩrbaa ma jilli, an nɩ sɛ dam wɔɔ ma haay, sɛhar sɛ y'a so a mɩŋŋa ʊ.
+      sbs: 0.7179
+      gen_sec: 12.29
+      ref_sec: 11.06
+      cer: 0.0696
+      wer: 0.3095
+    bible_00012:
+      source: bible
+      text: Kʊ durnya bɩ zannɔ n'awɔɔ m, durnya bɩ hɔ k'a so ʊ bɩ ŋʊam. Bɩ durnya bɩ zannɔ bɛɛ n'awɔɔ
+        nɩ y. Mɔɔ y'awɔɔ bɔ ʊ durnya nɔ ʊ a hɔ, bɩ y'a ka, durnya n sɔ awɔɔ m.
+      sbs: 0.7236
+      gen_sec: 11.69
+      ref_sec: 10.56
+      cer: 0.0901
+      wer: 0.2564
+    bible_00013:
+      source: bible
+      text: Lemim bɩ do bɩ, hɔ kʊ Woso a nyaakʊm da biisi tee… bɩ m. Bɩ kɛɛrɛ naa, Woso a hɩnka a gʊɔɔ
+        wɔɔ m.
+      sbs: 0.806
+      gen_sec: 7.51
+      ref_sec: 7.64
+      cer: 0.0725
+      wer: 0.1667
+    bible_00014:
+      source: bible
+      text: K'awɔɔ nɩ zɛm b'a nyiro wɔɔ bʊmbɔrɛ yɩ bɩ, bɩ y'a ka Woso ʊ awɔɔ n sɩra ka.
+      sbs: 0.7457
+      gen_sec: 5.38
+      ref_sec: 4.16
+      cer: 0.0755
+      wer: 0.1667
+    bible_00015:
+      source: bible
+      text: Zɩ Woso a Nyɩ ŋʊa, an hɔ haay sa, an a zar a wɔ ʊ.
+      sbs: 0.732
+      gen_sec: 3.67
+      ref_sec: 3.34
+      cer: 0.0909
+      wer: 0.2667
+    bible_00016:
+      source: bible
+      text: 'Pol n a hɩ, a ʊ: «Hɔɔzaa bɛɛ m mɔɔ nɩ y, Fɛstus mɩŋŋa, sɩra meerbaa mɔɔ n''a bam, hɔɔntaʊrɛ
+        m.'
+      sbs: 0.7733
+      gen_sec: 7.17
+      ref_sec: 6.98
+      cer: 0.0923
+      wer: 0.2381
+    bible_00017:
+      source: bible
+      text: 'A n a nyɩ bɔ ʊ, a ʊ: «Kʊ m a ba lɔ m a jɩ ma, kʊ gʊaa ba ʊ an n''a jɩ dɩndam mɔɔ nɩ?» A n
+        Filipi bir, a ʊ, an bɩ nyɩnta a jɩr ʊ.'
+      sbs: 0.7548
+      gen_sec: 8.45
+      ref_sec: 8.04
+      cer: 0.1266
+      wer: 0.2564
+    bible_00018:
+      source: bible
+      text: Dɔ k'a mɛ bɩ, dʊdɔkənno wɔɔ a dɔmazannɔ nyɔɔ kʊ ŋ n'aa a hɩ lɔnnɔcɛ dɔmazaa bɩ m, kan wɔ saa
+        gʊɔɔ wɔɔ ma.
+      sbs: 0.7448
+      gen_sec: 8.11
+      ref_sec: 6.82
+      cer: 0.0779
+      wer: 0.25
+    bible_00019:
+      source: bible
+      text: K'ɩ ʊ k'ɩ zoro tɔ da zombaa daahan ci b'ʊ, a a ga m, kʊ zoro bɩ do dɔɔraa m busɔrdɩ ku, bɩ
+        nyɩnta a ʊ, gʊaa deem taan… lʊ sɔ.
+      sbs: 0.7692
+      gen_sec: 9.39
+      ref_sec: 8.66
+      cer: 0.1744
+      wer: 0.4516
+    bible_00020:
+      source: bible
+      text: K'a wɔɔ bʊmbɔ jɩnnɔ wɔ ʊ an nya, a zaa kam wɔɔ ʊ kʊ ʊ a zi ba kan heerkoodəbaa kɩ,
+      sbs: 0.7273
+      gen_sec: 5.97
+      ref_sec: 4.98
+      cer: 0.2034
+      wer: 0.4762
+    bible_00021:
+      source: bible
+      text: Mɔɔ laafɩɩ to awɔɔ m, m nɩ m laafɩɩ karɛ awɔɔ ʊ. Mɔɔ bɩr a karɛ amba durnya n'a kam bɩ nɩ
+        y. A b'a ka a heer n a zar gɛɛ, a da n bɔ ʊ y.
+      sbs: 0.7696
+      gen_sec: 9.56
+      ref_sec: 9.02
+      cer: 0.1087
+      wer: 0.3421
+    bible_00022:
+      source: bible
+      text: Ʊ b'ʊ gʊ ʊ sokʊmarɔ tarɛ ma y, ʊ bɩ yɩ am gʊɔɔ gɔsɩnnɔ kʊ ŋ minkə yarlɛ n nɔ wɔɔ nɩ y. Bɩ,
+        an ta ʊ bɩ, ʊ bɩr kʊ heer yom, ʊ bɩr a barɛ ncɩnaaʊ, bala, awɔɔ dɔ a ʊ, Zuuba dɔmɩm y'a zɔm.
+      sbs: 0.7318
+      gen_sec: 13.57
+      ref_sec: 14.28
+      cer: 0.1905
+      wer: 0.4894
+    bible_00023:
+      source: bible
+      text: Wɔɔ kʊ wɔɔ m Zɩɩfʊrɔ, kan do vantɔɔ gʊɔɔ kʊ ŋ nɩ zum zɩɩfʊrɔ wɔɔ lɛrɔ wɔɔ rɔ wɔɔ kɩ, Krɛtɩ
+        zannɔ kan Araabɩrɔ kɩ, wɔɔ y'a mam, ŋn'a lɛ bɔm Woso zibəə mɩŋŋa b'ʊ, wɔɔ do lemim m.»
+      sbs: 0.7576
+      gen_sec: 13.74
+      ref_sec: 12.44
+      cer: 0.1085
+      wer: 0.359
+    bible_00024:
+      source: bible
+      text: Yeezuu n a gɔdarkʊra busu a zim, an bɔ, an ta bɩncɛ kʊ n n'a birm Minkorgo, n n'a hɩm ma ebree
+        lemim m Golgotaa b'ʊ.
+      sbs: 0.6315
+      gen_sec: 8.79
+      ref_sec: 8.78
+      cer: 0.2262
+      wer: 0.5385
+    bible_00025:
+      source: bible
+      text: Gʊaa k'a n'a bʊnyaa bam bɩ, Zuuba y'a zi bʊnyaa bɩ yawʊra bam nɩ, a bɩr gʊɔɔ jirə bɔrɛ y.
+      sbs: 0.7829
+      gen_sec: 6.57
+      ref_sec: 7.86
+      cer: 0.1406
+      wer: 0.4
+    bible_00026:
+      source: bible
+      text: Kʊ ŋ bʊr dʊdɔ bɩ ma bɩ, gʊɔɔ kʊ ŋ nɩ mim kam la rɔ wɔɔ, ŋ n mim sɩ gurezaa yɩ, ŋn'a ka ra,
+        amba mɔɔ m hɔɔn da ma bɩ nɩ y.
+      sbs: 0.7312
+      gen_sec: 8.96
+      ref_sec: 8.22
+      cer: 0.1341
+      wer: 0.2941
+    bible_00027:
+      source: bible
+      text: Cir Agripaa bɩ minno nɔɔn duro dɔ mɩŋŋa haay, bɩ y'a ka, mɔɔ m dam ma, m meer ba a lɛɛ kan
+        heerkoodəbaa kɩ. Mɔɔ si mɔɔ ʊ, hɔsɩ n ba a mɩm ma sɛɛrɛ y. Bala, minno nɔɔn duro n ba gʊrga k'a
+        nyaakʊm da ʊ y.
+      sbs: 0.7692
+      gen_sec: 15.61
+      ref_sec: 14.9
+      cer: 0.1103
+      wer: 0.3958
+    bible_00028:
+      source: bible
+      text: Woso a ba wɔɔ m mɩŋŋa, a zibəə naa do da wɔɔ wɔ ʊ, bɩ y'a ka wɔɔ bɩr ʊ heer zaar barɛ y.
+      sbs: 0.7822
+      gen_sec: 6.49
+      ref_sec: 6.56
+      cer: 0.0984
+      wer: 0.375
+    bible_00029:
+      source: bible
+      text: Yeezuu k'a taa bɩ yɔɔ an a mɩm bɩ gʊm bɩ, a ba a ʊ *sabaa hinni ʊ.
+      sbs: 0.7244
+      gen_sec: 4.69
+      ref_sec: 4.7
+      cer: 0.0889
+      wer: 0.3889
+    bible_00030:
+      source: bible
+      text: Bɩ, k'a lee ku Galilee ʊ bɩ, Galilee zannɔ wɔɔ a si mɩŋŋa. Nyɩnta ŋ y'a ʊ, ŋnɩ ta Zerizalɛm
+        ʊ cibsa bɩ minto. Ŋ mɩŋŋɔɔ hɔ kʊ Yeezuu a ba haay bɩ yɩ sɔ.
+      sbs: 0.7579
+      gen_sec: 12.2
+      ref_sec: 14.48
+      cer: 0.0917
+      wer: 0.2286
+    bible_00031:
+      source: bible
+      text: Bɩ kʊ zɩɩfʊrɔ wɔɔ n'a bankarɛ *sabaa k'a n'a bam k'a sɩŋŋɩda sa minto bɩ, bɩ yaa bɩ do k'an
+        jɩnjɛɛm sɔ bɩ, ŋ Yeezuu bir ʊ.
+      sbs: 0.7337
+      gen_sec: 9.3
+      ref_sec: 11.28
+      cer: 0.0575
+      wer: 0.2593
+    bible_00032:
+      source: bible
+      text: 'A bɩ busoo ŋʊa y, k''a zerga hɔ k''awɔɔ n ta m bɩ rɛ, bala, Woso a hɩ, a ʊ:'
+      sbs: 0.7149
+      gen_sec: 5.21
+      ref_sec: 4.52
+      cer: 0.1277
+      wer: 0.2
+    bible_00033:
+      source: bible
+      text: Meerbaa naa do ba ɩbɩɩ nawʊm kan ŋ kɩ, kʊ ŋ n'a da ma, ŋnɩ heer hu yɩ, kʊ ŋʊarɛ n nyɩnta ŋ
+        heer ʊ, kʊ ŋ nɩ hɔɔndarɛ mɩŋŋa yɩ, ŋnɩ sɩra ka paan….
+      sbs: 0.7638
+      gen_sec: 11.86
+      ref_sec: 10.08
+      cer: 0.1765
+      wer: 0.3714
+    bible_00034:
+      source: bible
+      text: '*Farizɛɛnrɔ wɔɔ n''a hɩm kʊ m, ŋ ʊ: «Awɔɔ yɩ, a dɔ a ʊ, a b''a dam ma, a hɔsɩ ba y. K''a
+        dɩga gʊɔɔ haay kʊ ŋ nɩ zure a jɛ ʊ!»'
+      sbs: 0.6769
+      gen_sec: 8.62
+      ref_sec: 8.36
+      cer: 0.0909
+      wer: 0.2727
+    bible_00035:
+      source: bible
+      text: Cɛ bɩ ba ŋ y'a ʊ pɛɛra m, a nɔ n hɩɩya, lɛɛkarɛ hɔ bɩ bir ŋ nawʊm lɛɛ k'an jɩnjɛɛm Woso ma.
+        Lɛɛ bɩ do ŋ fɩtɩrɛ bɩ kan mɔrcɩntarahɔ bɩ kɩ, bur kʊ ŋ n'a kam Woso ʊ bɩ kɩ kuntə ʊ.
+      sbs: 0.7068
+      gen_sec: 13.48
+      ref_sec: 11.76
+      cer: 0.144
+      wer: 0.4318
+    bible_00036:
+      source: bible
+      text: Bɩ kur bɩ, a dʊdɔkənno ka ŋ ʊ an ta, an wosolɛsinnɩsorazaa Sanwɛl ku.
+      sbs: 0.7647
+      gen_sec: 5.63
+      ref_sec: 6.3
+      cer: 0.1509
+      wer: 0.5
+    bible_00037:
+      source: bible
+      text: Ba naa do n nawʊm, huure jɛzaa bɩ hɛrɛ ma, ʊ lʊr ʊ n nawʊm lɛɛm-lɛɛm, am mɩm nɩfɩ zɛrɛ m.
+        Bala, kʊ n bɩ huure bɩ hɛ, gʊɔɔ kʊ ŋ gɩnga rɔ wɔɔ y'a mɩm bɔŋ ʊ mɛ k'a bɩ vɔnm dɔ m, wɔɔ n'ʊ lʊr.
+      sbs: 0.8142
+      gen_sec: 13.82
+      ref_sec: 14.82
+      cer: 0.3101
+      wer: 0.6809
+    bible_00038:
+      source: bible
+      text: 'Hɔbɩrɛ bɩ dɔmɩm k''a ku bɩ, a a zibəənyɩ nyɔɔ gʊɔɔ k''a ŋ bir hɔbɩrɛ bɩ ma rɔ wɔɔ zi, a ʊ:
+        K''a bʊr kɛɛrɛ, n hɔ haay banka, an nya.'
+      sbs: 0.7848
+      gen_sec: 9.47
+      ref_sec: 9.18
+      cer: 0.1011
+      wer: 0.3226
+    bible_00039:
+      source: bible
+      text: «Mɔɔ heer nyɔɔ, cir Agripaa, kʊ mɔɔ zaa yɩ kʊ m meer ba ɩbɩɩ taa her, kʊ m m gumə mim dɩnda,
+        mim haay kʊ zɩɩfʊrɔ mɔɔ a ka wɔɔ ra bɩ minto.
+      sbs: 0.7665
+      gen_sec: 10.5
+      ref_sec: 9.02
+      cer: 0.14
+      wer: 0.4848
+    bible_00040:
+      source: bible
+      text: 'Farizɛɛnrɔ kʊ ŋ nyɩnta kan kɩ rɔ wɔɔ kʊ ŋ naa ma bɩ, ŋ y''a hɩ, ŋ ʊ: «A hɩ ɩbɩɩ ʊ, bʊʊrɔ
+        m wɔɔ m sɔ gɛ?»'
+      sbs: 0.7743
+      gen_sec: 7.59
+      ref_sec: 7.0
+      cer: 0.1176
+      wer: 0.2143
+    bible_00041:
+      source: bible
+      text: K'a mɔɔ mim si a ʊ, mɔɔ ɩ kan Zɩ kɩ, Zɩ nɩ kan mɔɔ kɩ, bɩ, k'awɔɔ n mɔɔ meerbaa bɩ si, k'a
+        si zibəəro nɔɔn duro minto.
+      sbs: 0.7631
+      gen_sec: 8.62
+      ref_sec: 8.98
+      cer: 0.1235
+      wer: 0.3448
+    bible_00042:
+      source: bible
+      text: Gɛɛ dɩga awɔɔ nawʊm hɔ kʊ gʊɔɔ n'a yɩrɛ a mɩm m bɩ ma bala ra? Ncɩnaaʊ bɩ, kʊ gʊaa ʊ Krista
+        hɔ n a mɩ fasɩ, k'an a hɔɔn da an a dɔ sɔ a ʊ, Krista y'a so wɔɔ ʊ, amba a a so a zaa ʊ bɩ m.
+      sbs: 0.8041
+      gen_sec: 13.14
+      ref_sec: 13.58
+      cer: 0.1508
+      wer: 0.3725
+    bible_00043:
+      source: bible
+      text: Pol kan Silas kɩ ta ŋn'aa lee ku Derbe ʊ, ŋnɩ cem ŋnɩ ta Listɩr ʊ. Karɩndanyɩ deem n nɩ b'ʊ,
+        a tɔ m Timote, a da bɩ zɩɩfʊ m, an a ba sɩrakarɛzaa, a zɩ bɩ grɛkkɩ m.
+      sbs: 0.7761
+      gen_sec: 12.54
+      ref_sec: 11.76
+      cer: 0.0862
+      wer: 0.2821
+    bible_00044:
+      source: bible
+      text: Bɩ minto bɩ, mɔɔ y'a yɛrɛ awɔɔ han k'a hɔ bɩ, awɔɔ laafɩɩ minto m. Bala, minkə deem taan…
+        bɩ nyaanɩm gʊaa mim ʊ naa ʊ y.»
+      sbs: 0.7665
+      gen_sec: 9.3
+      ref_sec: 8.58
+      cer: 0.0581
+      wer: 0.1852
+    bible_00045:
+      source: bible
+      text: Sɩmɔɔn k'a yɩ kristazibəəzannɔ wɔɔ n'awɔɔ kam gʊɔɔ wɔɔ mim la, ŋnɩ Sɛnt-Ɛspri sim bɩ, a a
+        cɩnta k'a busoo ka ŋ ʊ.
+      sbs: 0.7086
+      gen_sec: 8.96
+      ref_sec: 6.48
+      cer: 0.0714
+      wer: 0.3478
+    bible_00046:
+      source: bible
+      text: Mɔɔ y'awɔɔ woo… ŋʊam Yeezuu Krista nɔ ʊ.
+      sbs: 0.6809
+      gen_sec: 3.41
+      ref_sec: 7.44
+      cer: 0.1
+      wer: 0.625
+    bible_00047:
+      source: bible
+      text: Sɩra m, mɔɔ ba b'ʊ kan awɔɔ kɩ y, bɩ mɔɔ heer ɩ kan awɔɔ kɩ, m nɩ m heer nyɔɔm k'awɔɔ nɩ jɩnɩm
+        kan kʊ kɩ kɔɔkɔɔ a sɩra ka Krista ʊ nɔ ʊ bɩ tɔ ma.
+      sbs: 0.7517
+      gen_sec: 10.5
+      ref_sec: 10.44
+      cer: 0.0784
+      wer: 0.2895
+    bible_00048:
+      source: bible
+      text: Ŋ y'a tam wɔɔ m toore, kʊ wɔɔ bɩ lemim nyɩnta pa da do vantɔɔ gʊɔɔ m kʊ ŋ n bʊmbɔrɛ yɩ y,
+        a ba kʊ ŋ nawʊrɛ ncɩnaaʊ naa, a mimbʊnyaa ŋn'a dam la tee… bɩ naa haay jɛ ʊ, Woso a nɔmaa kərgu
+        ŋ la.
+      sbs: 0.745
+      gen_sec: 15.18
+      ref_sec: 14.14
+      cer: 0.2117
+      wer: 0.5106
+    bible_00049:
+      source: bible
+      text: Bala, gʊaa k'a nɩ hoonsire kʊ Woso n'a kam bɩ yɩm bɩ, a zaa zibəə nya an nɩ hoon sim, amba
+        Woso mɩŋŋa a zi ba, an a nya an hoon si bɩ m.
+      sbs: 0.7129
+      gen_sec: 10.15
+      ref_sec: 9.04
+      cer: 0.1979
+      wer: 0.5
+    bible_00050:
+      source: bible
+      text: Ler k'a bɔ Abraham m, kan a yaŋŋɔɔ kɩ m
+      sbs: 0.7258
+      gen_sec: 3.07
+      ref_sec: 3.06
+      cer: 0.0714
+      wer: 0.2
+    bible_00051:
+      source: bible
+      text: 'Filipi n aa Natanayɛl yɩ, an a hɩ m, a ʊ: «Gʊaa kʊ n y''a mim dɩnda *Moyiisi ciro nɔ ʊ kan
+        *wosolɛsinnɩsorazannɔ wɔɔ hɔɔ kɩ m bɩ, wɔɔ yɩ. Zozɛf nyɩ Yeezuu, Nazarɛtɩ gʊaa bɩ m.»'
+      sbs: 0.7096
+      gen_sec: 13.57
+      ref_sec: 12.5
+      cer: 0.0551
+      wer: 0.1892
+    bible_00052:
+      source: bible
+      text: Yeezuu gasʊ farizɛɛnrɔ jɩtaarɛ deem har ʊ, *sabaa hinni ʊ, k'a hɔbɩrɛ bɩ. Farizɛɛnrɔ wɔɔ nɩ
+        dundom zi.
+      sbs: 0.7343
+      gen_sec: 8.28
+      ref_sec: 5.14
+      cer: 0.1013
+      wer: 0.3333
+    bible_00053:
+      source: bible
+      text: Gʊaa ɩ nyɩnta Sezaree ʊ, a tɔ m Kɔrnɛy. Sʊrdaa zɔrɔ lɛɛzaa m. Sʊrdaarɔ zɔrsɔddɩ zɛkʊra kʊ
+        n n'a birm «Italik» bɩ barla an ta ʊ.
+      sbs: 0.7275
+      gen_sec: 9.81
+      ref_sec: 8.62
+      cer: 0.2737
+      wer: 0.6923
+    bible_00054:
+      source: bible
+      text: Bɩ, kʊ Woso n a cicirzɛrɛ kan a laafɩɩ kɩ, a ŋʊarɛ kɩ ka awɔɔ ʊ gʊta.
+      sbs: 0.7726
+      gen_sec: 5.55
+      ref_sec: 5.76
+      cer: 0.08
+      wer: 0.2353
+    bible_00055:
+      source: bible
+      text: A n ŋ gaa, an ta ŋ nɩ a cɛ ʊ, an hɔbɩrɛ ka ŋ ʊ, an n'a heer nyɔɔm kan a har gʊɔɔ wɔɔ kɩ, k'a
+        sɩra ka Woso ʊ bɩ tɔ ma.
+      sbs: 0.7567
+      gen_sec: 8.45
+      ref_sec: 7.36
+      cer: 0.0779
+      wer: 0.2647
+    bible_00056:
+      source: bible
+      text: N kara awɔɔ lɛ n taa? Awɔɔ lɛ n taa kʊ mɔɔ n bʊr a zi bara m m wɔ ʊ kʊ m nyaa ba kan a kɩ
+        gɛɛ, kʊ m bʊr a zi ŋʊarɛ m kan nyɩntabaa kɩ nɩ?
+      sbs: 0.7744
+      gen_sec: 9.81
+      ref_sec: 11.16
+      cer: 0.1474
+      wer: 0.325
+    bible_00057:
+      source: bible
+      text: 'Pɩyɛɛr kan Zaan kɩ n dɩga a sɩɩ… ŋn''a hɩ m, ŋ ʊ: «Dɩga wɔɔ ma!»'
+      sbs: 0.6859
+      gen_sec: 4.78
+      ref_sec: 4.98
+      cer: 0.3415
+      wer: 0.4375
+    bible_00058:
+      source: bible
+      text: Kʊ sɩra *Ɛspri bɩ bɩ bʊr, a y'awɔɔ dam sɩra haay zaa ra, bala, a bɛɛ n n'a mɩŋŋa meer barɛ
+        y, bɩ, a hɔ k'a n'a mam bɩ hɩrɛ, a hɔ k'a nɩ zɛm bɩ dɩndarɛ awɔɔ m.
+      sbs: 0.7795
+      gen_sec: 11.61
+      ref_sec: 12.16
+      cer: 0.0561
+      wer: 0.1538
+    bible_00059:
+      source: bible
+      text: 'Lɛ kʊ mɔɔ n''a karɛ ɩbɩɩ ʊ bɩ ba n nɩ: Zu hɔ kʊ mɔɔ hɩ ɩbɩɩ m haay b''ʊ, ɩ nyasʊ m kʊ dintim
+        b''a nɔ ma y, kʊ minsi bɩ nyɩnta ɩ gʊr zi sɔ y, kʊ wɔɔ Zuuba Yeezuu Krista n tolle ba an a bɔ
+        an bʊr.'
+      sbs: 0.7508
+      gen_sec: 13.9
+      ref_sec: 13.34
+      cer: 0.0827
+      wer: 0.2745
+    bible_00060:
+      source: bible
+      text: A n kɔɔlʊʊ bɩ gaa an cenim, wɔɔ b'ʊ dam ma, ʊ a bɔ y. Wɔɔ n a to an a gaa, an nɩ tam nɩ, kʊ
+        lɛɛ ka m, ʊ n a dɔ y.
+      sbs: 0.7286
+      gen_sec: 7.77
+      ref_sec: 10.82
+      cer: 0.169
+      wer: 0.3143
+    bible_00061:
+      source: bible
+      text: Awɔɔ dɔ a ʊ, mɩsɩrbaa k'a nyɔɔdʊ ba ʊ, awɔɔ zɩrɔ n a to awɔɔ m bɩ, Woso awɔɔ yɔ b'ʊ. Bɩ, hɔ
+        k'a n'a zaar bam, gɛɛ wanzurfu gɛɛ sarma bɛɛ a a sa, an awɔɔ yɔ nɩ y.
+      sbs: 0.7633
+      gen_sec: 11.69
+      ref_sec: 12.56
+      cer: 0.0727
+      wer: 0.175
+    bible_00062:
+      source: bible
+      text: Bɩ, wɔɔ lɛ taa k'awɔɔ gʊaa biyəə n gɔɔta an bɩr a yoŋ ʊ ncɩnaaʊ tee…, k'an ta an dɔmɩnnɔ nyarɛ
+        ku, kʊ hɔ k'awɔɔ ta a heer lɛ bɩ n yɩ fasɩ-fasɩ.
+      sbs: 0.6955
+      gen_sec: 11.09
+      ref_sec: 8.4
+      cer: 0.0882
+      wer: 0.3333
+    bible_00063:
+      source: bible
+      text: Bɩ, Zuuba kʊ n y'a hɩ ma bɩ, Sɛnt-Ɛspri m, bɩ lɛɛ kʊ Zuuba Ɛspri n ta ʊ bɩ, soamɩŋŋaʊ ɩ lɛɛ
+        bɩ do ʊ.
+      sbs: 0.7861
+      gen_sec: 7.59
+      ref_sec: 8.22
+      cer: 0.1594
+      wer: 0.44
+    bible_00064:
+      source: bible
+      text: Kʊ wɔɔ ʊ zɛ kʊ ra kan Krista kɩ ʊ sɩra ka ʊ bɩ, wɔɔ ɩ lɛ m k'ʊ zɔ Woso ma kan heerkoodəbaa
+        kɩ.
+      sbs: 0.7662
+      gen_sec: 6.83
+      ref_sec: 6.48
+      cer: 0.1045
+      wer: 0.32
+    bible_00065:
+      source: bible
+      text: Lemim kʊ malɛɛkarɔ nyɩnta ŋnɩ b'a pa da bɩ, a a zi ba fasɩ, gʊɔɔ kʊ ŋ n yɛ ma y, ŋnɩ bɩsɩ
+        ka ma rɔ wɔɔ, brɔɔ a bɩsɩ bɩ karɛ fɩr yɩ amba a a ga m bɩ m.
+      sbs: 0.7633
+      gen_sec: 11.09
+      ref_sec: 9.36
+      cer: 0.0769
+      wer: 0.1951
+    bible_00066:
+      source: bible
+      text: K'awɔɔ n gʊɔɔ bʊnyaarɔ wɔɔ, awɔɔ hɔ mɩŋŋa ka a nyɩnɔ ʊ dɔ. Bɩ Zɩ Woso k'a nɩ arzana ʊ bɩ,
+        a bɩ Sɛnt-Ɛspri kam gʊɔɔ kʊ ŋ n'a yɛm han rɔ wɔɔ ʊ an lɛ da ra?»
+      sbs: 0.758
+      gen_sec: 11.43
+      ref_sec: 9.52
+      cer: 0.1019
+      wer: 0.3158
+    bible_00067:
+      source: bible
+      text: Yeezuu Krista mɩŋŋa ɩ ga wɔɔ tɔ ma, k'an bɩr yɩrɛ ɩ ʊ, kʊ wɔɔ gɔɔta ʊ m mɩsɩr, gɛɛ gɩnga wɔɔ
+        ʊ, kʊ wɔɔ m mɩsɩrbaa ba kan kɩ a zɛrɛ hinni ʊ.
+      sbs: 0.7667
+      gen_sec: 10.58
+      ref_sec: 9.56
+      cer: 0.13
+      wer: 0.3529
+    bible_00068:
+      source: bible
+      text: bala, lʊ kʊ n kaanm m bɩ nyɩnɔ yɩm gʊta,
+      sbs: 0.6517
+      gen_sec: 3.07
+      ref_sec: 3.12
+      cer: 0.2069
+      wer: 0.8
+    bible_00069:
+      source: bible
+      text: Lɛɛkarɛ gʊaasɩbabaa bɩ nɔ ʊ bɩ, lɛrɔ nyɩnta ʊ ŋn'ɩ yaa bɩ darɛ zaarɔ hɩnkam, gʊɔɔ wɔɔ cɛ dɔ
+        sɔ k'a bɩr yaa bɩ daŋ ʊ.
+      sbs: 0.7292
+      gen_sec: 9.05
+      ref_sec: 8.38
+      cer: 0.093
+      wer: 0.3846
+    bible_00070:
+      source: bible
+      text: A nyɩnta wɔɔ bire ʊ, an a hɔ jirle hɔ yɩ, wɔɔ zibəə bɩ nɔ ʊ.
+      sbs: 0.7415
+      gen_sec: 4.44
+      ref_sec: 3.76
+      cer: 0.0714
+      wer: 0.1875
+    bible_00071:
+      source: bible
+      text: Dɔ k'a mɛ bɩ, zɩɩfʊrɔ wɔɔ a dɩnda ŋn'a zɛ kan kʊ kɩ, ŋn'a wer si k'a bɩ hɔ bɩ, a hɔ mi k'a
+        n Pol zɛ gər y.
+      sbs: 0.7562
+      gen_sec: 7.42
+      ref_sec: 8.46
+      cer: 0.058
+      wer: 0.2069
+    bible_00072:
+      source: bible
+      text: a lɛ baa kʊ n n gʊaa kasɛtɩ ka ʊ y. Bala, a hɔ k'a nɩ gʊaa heer ʊ bɩ dɔ.
+      sbs: 0.722
+      gen_sec: 5.03
+      ref_sec: 7.48
+      cer: 0.1875
+      wer: 0.4286
+    bible_00073:
+      source: bible
+      text: Lɛɛm bɩ, gʊaa b'a waa, an a wʊtarahɔ bɩ sa, an nɩ tarɛ.
+      sbs: 0.6896
+      gen_sec: 4.1
+      ref_sec: 4.78
+      cer: 0.1316
+      wer: 0.3846
+    bible_00074:
+      source: bible
+      text: 'Zinə n a hɩ ŋ nɩ, a ʊ: «Mɔɔ Yeezuu dɔ, kʊ nka m Pol m, mɔɔ dɔ. B''awɔɔ, nkɔɔ n''awɔɔ nɩ?»'
+      sbs: 0.7522
+      gen_sec: 6.23
+      ref_sec: 8.54
+      cer: 0.0909
+      wer: 0.3182
+    bible_00075:
+      source: bible
+      text: 'Bɩ y''a ka, mɔɔ n a hɩ awɔɔ m, mɔɔ ʊ, awɔɔ gɩngarɛ a mimbʊnyaarɔ nɔ ʊ. K''awɔɔ n a si, a
+        ʊ: A n ta ʊ bɩ m mɔɔ m,'
+      sbs: 0.7398
+      gen_sec: 7.68
+      ref_sec: 8.0
+      cer: 0.0845
+      wer: 0.2581
+    bible_00076:
+      source: bible
+      text: Bɩ kɛɛrɛ naa, wɔɔ bʊmbɔrɛzaa Krista Yeezuu k'a bʊr bɩ, barka bɩ do a hɩnka garga ra. Bala,
+        a zɛ paŋŋa zaar ba, an mɩsɩrbaa k'a nyarɛ ba ʊ hɩnka lemim nyɩnta bɩ m.
+      sbs: 0.7862
+      gen_sec: 12.71
+      ref_sec: 11.38
+      cer: 0.0744
+      wer: 0.1765
+    bible_00077:
+      source: bible
+      text: Gʊɔɔ kʊ ŋ nɩ yaa bɩ do dam Woso m nɔ wɔɔ, kʊ yaa bɩ do darɛ ɩ wɔ ʊ, an ŋ mimbʊnyaarɔ gʊ ŋ
+        ma fasɩ, ŋ b'a yarɛ ŋn'a heer kɔ ŋ ʊ a mimbʊnyaa ba y, bɩ mannɩrɔ wɔɔ barɛ nyam sɔ.
+      sbs: 0.6995
+      gen_sec: 13.14
+      ref_sec: 11.82
+      cer: 0.1148
+      wer: 0.3111
+    bible_00078:
+      source: bible
+      text: Bɩ, Woso zɛm bɩ ŋ da lɛ ʊ, ŋn'a zi bʊnyaarɔ wɔɔ mim nyɩ bɔ ʊ, Woso mɩŋŋa a banka an nya, k'a
+        gʊɔɔ mɩsɩɩrɔ kan gəəno kɩ dʊdɔ ka.
+      sbs: 0.7553
+      gen_sec: 9.9
+      ref_sec: 8.78
+      cer: 0.1429
+      wer: 0.5667
+    bible_00079:
+      source: bible
+      text: Jaa kʊ cɛdonno a bɔ ʊ ŋn'a zo bɩ, bɩ y'a ba cɛ bɩ jaa wɩsɩ.
+      sbs: 0.7463
+      gen_sec: 4.44
+      ref_sec: 3.52
+      cer: 0.175
+      wer: 0.375
+    bible_00080:
+      source: bible
+      text: Mɔɔ naa nyasʊ m heer ʊ kɔɔkɔɔ hɔɔ, m a cɩnta kʊ m lɛɛ ka m bɔ awɔɔ zi b'ʊ, m awɔɔ heernyɔɔ
+        da ra gallɛm hɩɩya.
+      sbs: 0.7875
+      gen_sec: 8.28
+      ref_sec: 7.18
+      cer: 0.2
+      wer: 0.5185
+    bible_00081:
+      source: bible
+      text: Kʊ Yeezuu meer bɩ ba ncɩnaaʊ bɩ, a a hʊr kan a *karɩndanyɩnɔ wɔɔ kɩ, an bra Sedrɔn bɔrkɔ bɩ
+        ma. Gɔsɩra nɩ b'ʊ, an gasʊ ʊ kan a karɩndanyɩnɔ wɔɔ kɩ.
+      sbs: 0.7437
+      gen_sec: 11.43
+      ref_sec: 11.34
+      cer: 0.1101
+      wer: 0.3438
+    bible_00082:
+      source: bible
+      text: Kʊ lʊ lɛ baa k'a hɔ ka a mim la, k'a n'a minkə zɩnzɛra. Bɩ k'a ɩ yɩrɛ ɩ ʊ, nyannɩ m kʊ lʊ
+        n a minkə zɩnzɛra gɛɛ an a mim bɔ, k'a maam, k'an hɔ ka a mim la.
+      sbs: 0.7889
+      gen_sec: 10.75
+      ref_sec: 12.18
+      cer: 0.1553
+      wer: 0.4146
+    bible_00083:
+      source: bible
+      text: 'Yeezuu k''a a dɔ a ʊ, karɩndanyɩnɔ wɔɔ lɛ taa k''a a lar bɩ, a a hɩ ŋ nɩ, a ʊ: «Laaka awɔɔ
+        n''a dam kʊ han k''a mɔɔ mim bɩ jɩ dɔ ra? A gɔɔta poore awɔɔ b''a yarɛ a mɔɔ yɩ a mɩm ʊ y, poore
+        awɔɔ mɔɔ yɩrɛ.'
+      sbs: 0.7292
+      gen_sec: 14.24
+      ref_sec: 14.04
+      cer: 0.0896
+      wer: 0.1961
+    bible_00084:
+      source: bible
+      text: Gʊaa k'a nɩ mɔɔ lɛrɔ wɔɔ m, an nɩ zure ŋ ʊ bɩ, a zaa ɩ mɔɔ ŋʊam. Gʊaa k'a nɩ mɔɔ ŋʊarɛ, mɔɔ
+        Zɩ bɩ y'a ŋʊam sɔ, kʊ mɔɔ nɩ, mɔɔ y'a ŋʊarɛ, m m hɩnka m.»
+      sbs: 0.7847
+      gen_sec: 11.09
+      ref_sec: 11.16
+      cer: 0.1111
+      wer: 0.2564
+    bible_00085:
+      source: bible
+      text: Bɩ, kʊ Krista nɩ, a m Woso Nyɩ an nɩ dɩgarɛ a Zɩ bɩ har bɩ nyasʊm ma, taalɛra nɔ ʊ. A har
+        bɩ, wɔɔ m, kʊ wɔɔ gɔɔta sɩrakarɛ nɔ ʊ, ʊ n'ʊ heer nyɔɔm hɔ kʊ wɔɔ ta ʊ heer lɛ bɩ nɔ ʊ.
+      sbs: 0.7279
+      gen_sec: 12.97
+      ref_sec: 13.06
+      cer: 0.122
+      wer: 0.3478
+    bible_00086:
+      source: bible
+      text: Awɔɔ, Gʊaa mɩŋŋa k'an tɩrga bɩ, awɔɔ kaanm bɩ m, a yɛ kʊ n nɩ wɔ saa gərzer bɩ ma.
+      sbs: 0.7587
+      gen_sec: 6.31
+      ref_sec: 5.7
+      cer: 0.0517
+      wer: 0.35
+    bible_00087:
+      source: bible
+      text: Zɩɩfʊrɔ wɔɔ mannɩbər jɩtaarɛ bɩ, gasʊ a tɩr a ʊ Woso taʊrɛ bɩncɛ ʊ b'ʊ gallɛm deem dɔɔraa
+        biyəə nɔ ʊ, hɔbɩsɩ ma m. Bɩ kʊ Krista nɩ, a n gasʊ Woso zi k'a mɩŋŋa ba mannɩ gallɛm hɔka y. A
+        mɩŋŋa ka a ʊ vugur.
+      sbs: 0.7105
+      gen_sec: 16.21
+      ref_sec: 14.1
+      cer: 0.1722
+      wer: 0.4783
+    bible_00088:
+      source: bible
+      text: Baa malɛɛkarɔ mɩŋŋɔɔ kʊ ŋ lɛ da ŋʊaarhɔdɩndarɛzannɔ wɔɔ m a paŋŋa kan a lɛbɔʊrɛ kɩ nɔ ʊ bɩ,
+        ŋ bɩr malɛɛkarɔ vantɔɔ wɔɔ dʊdɔ yarlɛ y, bɩ ŋ bɩr ŋ sʊnsɔ wʊm Zuuba lɛɛ y.
+      sbs: 0.729
+      gen_sec: 13.82
+      ref_sec: 11.26
+      cer: 0.1094
+      wer: 0.3333
+    bible_00089:
+      source: bible
+      text: 'Yeezuu n a nyɩ bɔ nʊ, a ʊ: «Kʊ gʊaa ɩ mɔɔ ŋʊarɛ, a zum mɔɔ lemim ʊ, bɩ mɔɔ Zɩ y''a ŋʊarɛ.
+        Wɔɔ zɛm zi, ʊ bɩ gɔɔta kan kɩ.'
+      sbs: 0.8022
+      gen_sec: 8.79
+      ref_sec: 9.02
+      cer: 0.1375
+      wer: 0.3871
+    bible_00090:
+      source: bible
+      text: ŋ lɛ baa k'a a bɔ a taam k'a zu mɔɔ ʊ, kʊ mɔɔ n ŋ waa y.
+      sbs: 0.7494
+      gen_sec: 3.84
+      ref_sec: 3.3
+      cer: 0.1429
+      wer: 0.2778
+    bible_00091:
+      source: bible
+      text: K'a Zɩ Woso barka da kan heernyɔɔ kɩ, a ɩ zaa ka k'awɔɔ n hɔjirle yɩ kan a gʊɔɔ wɔɔ kɩ lɛɛgure
+        nɔ ʊ.
+      sbs: 0.7821
+      gen_sec: 7.42
+      ref_sec: 7.8
+      cer: 0.0685
+      wer: 0.1667
+    bible_00092:
+      source: bible
+      text: Woso mindɔrɛ wɔɔ n'a dɩndam, hɔ k'a n dɔ biisi m, n n a nyaakʊm da, Woso mɩŋŋa ɩ nyɩnta an
+        a cɩnta, bɩ ma bɩ durnya ba ʊ y, kʊ wɔɔ n bɩ nyɩnta a lɛbɔʊrɛ nɔ ʊ.
+      sbs: 0.7779
+      gen_sec: 11.95
+      ref_sec: 12.64
+      cer: 0.0982
+      wer: 0.3077
+    bible_00093:
+      source: bible
+      text: Bɩ, lʊ naa do, gəəno mɩmbɔʊrɛ dɔmɩm ʊ, nka hɔ m lʊ bɩ nɩ? Kʊ ŋ haay lʊ bɩ si bɩ?»
+      sbs: 0.7817
+      gen_sec: 5.97
+      ref_sec: 5.98
+      cer: 0.2182
+      wer: 0.5238
+    bible_00094:
+      source: bible
+      text: Naa tɔ ma m, kʊ wɔɔ Zuuba nyi ba m dɔ bɩ, wɔɔ n'ʊ kam ma kʊ gʊɔɔ n sɩra ka wɔɔ meerbaa ʊ,
+        bɩ Woso wɔɔ dɔ mɩŋŋa, mɔɔ y'a gɩngam sɔ m ʊ, awɔɔ mɔɔ dɔ sɔ mɩŋŋa a heerlɔ ʊ
+      sbs: 0.8081
+      gen_sec: 12.46
+      ref_sec: 13.38
+      cer: 0.0855
+      wer: 0.3256
+    bible_00095:
+      source: bible
+      text: Yeezuu Krista ɩ bʊr durnya ʊ, an a hɩnka hi m kan ma kɩ. Hi bɛɛ m bala y, hi m kan ma kɩ.
+        Bɩ, Sɛnt-Ɛspri n'a kasɛtɩ kam, bala, Sɛnt-Ɛspri m sɩra.
+      sbs: 0.767
+      gen_sec: 11.09
+      ref_sec: 12.04
+      cer: 0.0588
+      wer: 0.303
+    bible_00096:
+      source: bible
+      text: 'Tara lɛɛzaa bɩ n ci bɩ karɩnda ba, an laaka da kʊ Pol bɩ, a to a ʊ gʊrga kara ʊ gɛ. K''a
+        a dɔ a ʊ, a to a ʊ Silisii ʊ bɩ, a a hɩ m, a ʊ:'
+      sbs: 0.7526
+      gen_sec: 9.47
+      ref_sec: 8.66
+      cer: 0.1136
+      wer: 0.25
+    bible_00097:
+      source: bible
+      text: 'Yeezuu bueerehɩɩyɔɔ wɔɔ bir, an a hɩ ŋ nɩ, a ʊ: «Ba wɔɔ nɩ tam Zerizalɛm ʊ na, bɩ, hɔ haay
+        kʊ wosolɛsinnɩsorazannɔ wɔɔ a gʊrsɩra ba Gʊaanyɩ bɩ minto bɩ kʊ yɩm.'
+      sbs: 0.7625
+      gen_sec: 12.54
+      ref_sec: 9.44
+      cer: 0.1
+      wer: 0.303
+    bible_00098:
+      source: bible
+      text: «K'a bʊr a dɩga gʊaa k'a hɔ kʊ mɔɔ ba haay bɩ hɩ mɔɔ m. *Krista bɛɛ m barɛm na?»
+      sbs: 0.6866
+      gen_sec: 5.63
+      ref_sec: 6.42
+      cer: 0.0741
+      wer: 0.3
+    bible_00099:
+      source: bible
+      text: A yɛ mɔɔ nawʊm han, a lɛbɔʊrɛ gʊtabaa tɔ ma bɩ, k'a n'awɔɔ paŋŋa da ra Sɛnt-Ɛspri m, k'a a
+        da ma a bɩr paŋŋa m a heer nɔ ʊ.
+      sbs: 0.7781
+      gen_sec: 9.39
+      ref_sec: 8.74
+      cer: 0.1047
+      wer: 0.3
+    bible_00100:
+      source: bible
+      text: Bɩ, Woso k'a Zuuba Yeezuu mɩm bɔ ʊ bɩ, a wɔɔ mɩm bɔŋ ʊ sɔ a paŋŋa bɩ m.
+      sbs: 0.7975
+      gen_sec: 5.38
+      ref_sec: 4.86
+      cer: 0.102
+      wer: 0.3684
+    bible_00101:
+      source: bible
+      text: Gʊaa ɩ nyɩnta ʊ, an nɩ yaaba m. A tɔ m Lazaar. Betanii gʊaa m. Maarii kan a cɛmba Martɩ kɩ
+        kʊ m bɩ.
+      sbs: 0.7295
+      gen_sec: 7.59
+      ref_sec: 8.24
+      cer: 0.0986
+      wer: 0.2917
+    bible_00102:
+      source: bible
+      text: A bɩ yɩ hɔɔnwarzannɔ a mɩsɩrbaa barɛ nɔ ʊ y, bɩ k'a a ka ma a hɔ kʊ Zuuba lɛ n taa k'awɔɔ
+        n a ba bɩ dɔ.
+      sbs: 0.7417
+      gen_sec: 7.34
+      ref_sec: 6.8
+      cer: 0.0833
+      wer: 0.3571
+    bible_00103:
+      source: bible
+      text: Zuuba malɛɛka n a hɩnka ŋ nɩ. Zuuba lɛɛgure n yɔ ŋ nɩ. Nyibəə gʊta n ŋ nyasʊ.
+      sbs: 0.7318
+      gen_sec: 6.23
+      ref_sec: 4.56
+      cer: 0.0877
+      wer: 0.2778
+    bible_00104:
+      source: bible
+      text: Kʊ Demetrus nɩ, gʊaa haay y'a kasɛtɩ mɩŋŋa karɛ. Sɩra mɩŋŋa y'a kasɛtɩ kam. Wɔɔ y'a kasɛtɩ
+        kam, b'ɩbɩɩ dɔ, ɩ ʊ, wɔɔ kasɛtɩ bɩ, sɩra m.
+      sbs: 0.7467
+      gen_sec: 10.67
+      ref_sec: 11.0
+      cer: 0.0625
+      wer: 0.2593
+    bible_00105:
+      source: bible
+      text: Bɩ minto y'a ka, wɔɔ n nɩ Ziidi kan Silas kɩ nyɔɔrɛ awɔɔ ma, kʊ ŋ nɩ bɩ minno nɔɔn duro hɩ
+        awɔɔ m a lɛ m.
+      sbs: 0.7169
+      gen_sec: 7.77
+      ref_sec: 6.36
+      cer: 0.0533
+      wer: 0.2222
+    bible_00106:
+      source: bible
+      text: 'Sʊrdaa tisi lɛɛzaa bɩ n a gaa a wɔ ma, an bɔ m toore ma, an a lar, a ʊ: «Bɔ ɩbɩɩ ʊ k''ɩ hɩ
+        mɔɔ nɩ?» Nyukumbueere bɩ n a hɩ m, a ʊ:'
+      sbs: 0.7538
+      gen_sec: 9.05
+      ref_sec: 6.96
+      cer: 0.1647
+      wer: 0.3143
+    bible_00107:
+      source: bible
+      text: Gʊaa k'a sɩra ba kan hɔ poore kɩ, a sɩra barɛ a gʊta m sɔ. Bɩ gʊaa k'a n sɩra ba hɔ poore
+        m, a bɩ sɩra bam hɔ gʊta m sɔ y.
+      sbs: 0.7738
+      gen_sec: 8.7
+      ref_sec: 7.54
+      cer: 0.131
+      wer: 0.2424
+    bible_00108:
+      source: bible
+      text: Gʊɔɔ k'awɔɔ n'a hɔɔn darɛ ŋ ma a ʊ, zibəəzannɔ kʊ ŋ lɛ da rɔ nɩ ŋ mɩ rɔ wɔɔ, mɔɔ y'a gɩngam
+        m ʊ ŋ n lɛ da mɔɔ nɩ y.
+      sbs: 0.7906
+      gen_sec: 8.36
+      ref_sec: 8.02
+      cer: 0.1154
+      wer: 0.375
+    bible_00109:
+      source: bible
+      text: Bala, k'a mɩŋŋa n tɩrga, an nɩ ŋ kʊ b'ʊ bɩ, a yɩ ŋ zibəə bʊnyaarɔ wɔɔ yɩm, an nɩ ŋ mim mam,
+        naa n a ka k'an tɩrga bɩ, a heer nɩ kɔm, gʊɔɔ wɔɔ zibəə bʊnyaarɔ wɔɔ tɔ ma.
+      sbs: 0.771
+      gen_sec: 12.71
+      ref_sec: 13.4
+      cer: 0.0948
+      wer: 0.3171
+    bible_00110:
+      source: bible
+      text: Bɩ, dɔmɩm kʊ Lɔttɩ bɔ ʊ Sodɔm ʊ bɩ, Woso a ka sɛ n a to brama, an ba am la hɔ bɩ m, an ŋ zɩnzɛ
+        haay.
+      sbs: 0.7915
+      gen_sec: 7.34
+      ref_sec: 7.04
+      cer: 0.1176
+      wer: 0.3214
+    bible_00111:
+      source: bible
+      text: 'Yeezuu n a hɩ m, a ʊ: «Sɩra ka mɔɔ ʊ, lʊ, wakatɩ ɩ zɛm, awɔɔ b''a yarɛ a Zɩ Woso da ʊ ci
+        naa do mim ʊ, bɩ Zerizalɛm nɩ y.'
+      sbs: 0.7836
+      gen_sec: 8.7
+      ref_sec: 9.84
+      cer: 0.125
+      wer: 0.2812
+    bible_00112:
+      source: bible
+      text: Her-her naa, bɔ a ʊ kʊ ʊ, ɩ ʊ, dɩga wɔɔ nawʊm jɛtɩga ʊ,
+      sbs: 0.7484
+      gen_sec: 4.1
+      ref_sec: 4.26
+      cer: 0.2703
+      wer: 0.5714
+    bible_00113:
+      source: bible
+      text: Pɩlatɩ k'a naa ma bɩ, a a ka, ŋnɩ bɔ Yeezuu m. Pɩlatɩ n nyɩnta dʊdɔkarɛ gɔ bɩ ra, bɩncɛ kʊ
+        n'a birm *ebree lemim m Gabata b'ʊ.
+      sbs: 0.6701
+      gen_sec: 9.64
+      ref_sec: 9.26
+      cer: 0.1556
+      wer: 0.3929
+    bible_00114:
+      source: bible
+      text: A a hɩnka Sefas m, bɩ jɛ ʊ an a hɩnka bueerehɩɩyɔɔ k'a ŋ bɔ ʊ rɔ wɔɔ m.
+      sbs: 0.7878
+      gen_sec: 5.21
+      ref_sec: 4.9
+      cer: 0.12
+      wer: 0.3158
+    bible_00115:
+      source: bible
+      text: 'A n a hɩ ŋ nɩ, a ʊ: «Hɔbɩrɛ niŋŋə n ta ʊ mɔɔ nɩ m ga m, m a bɩ, b''awɔɔ n a dɔ y.»'
+      sbs: 0.7185
+      gen_sec: 5.55
+      ref_sec: 5.48
+      cer: 0.1458
+      wer: 0.1923
+    bible_00116:
+      source: bible
+      text: A yom zi bʊnyaa do haay ma, an gʊɔɔ kʊ ŋ nɩ nyaanɩm nɔ wɔɔ nyʊnnyɔɔ, brɔɔ nyaanɩm, bala, sɩra
+        k'a n'a dam ma an ŋ bʊmbɔ bɩ, ŋ n a ŋʊa, bɩ, ŋ n yɛ ma y.
+      sbs: 0.7877
+      gen_sec: 11.61
+      ref_sec: 11.8
+      cer: 0.1058
+      wer: 0.4737
+    bible_00117:
+      source: bible
+      text: Dɔmɩm bɩ do ʊ bɩ, Maarii wuti zɔɔ-zɔɔ, an zaa sa, an bɔ kʊrɔ kʊ ciro n ta ʊ rɔ wɔɔ ʊ, an ta
+        Zidee kʊ deem nɔ ʊ.
+      sbs: 0.7628
+      gen_sec: 8.28
+      ref_sec: 8.74
+      cer: 0.1688
+      wer: 0.4138
+    bible_00118:
+      source: bible
+      text: K'a meer naa do ba an a nya bɩ, nyaa wuti farizɛɛnrɔ wɔɔ bire ʊ kan sadisɛɛnrɔ wɔɔ kɩ. Zamaa
+        bɩ n a gʊngʊ.
+      sbs: 0.6788
+      gen_sec: 8.11
+      ref_sec: 6.04
+      cer: 0.1772
+      wer: 0.3333
+    bible_00119:
+      source: bible
+      text: Sɩrakarɛ tɔ ma m, Rahab n ga kan bɩsɩkawosomazannɔ wɔɔ kɩ y, a yɛ an dundolɛɛzizannɔ wɔɔ si
+        a har ʊ an a mɩŋŋa ba ŋ nɩ.
+      sbs: 0.7142
+      gen_sec: 9.47
+      ref_sec: 8.58
+      cer: 0.1333
+      wer: 0.3704
+    bible_00120:
+      source: bible
+      text: Bala, biisi bɩ, awɔɔ nyaam am seero hɔ bɩ m, bɩ kɛɛrɛ naa, awɔɔ a bɔ a bʊr a dundor bɩ zi,
+        an nɩ dɔrɛ awɔɔ ma sɔ.
+      sbs: 0.7787
+      gen_sec: 8.45
+      ref_sec: 10.78
+      cer: 0.0875
+      wer: 0.1429
+    bible_00121:
+      source: bible
+      text: an n'a som kʊ ma kʊ Krista deem taan… n yɩ ŋ soʊrezaa.
+      sbs: 0.6877
+      gen_sec: 4.35
+      ref_sec: 3.62
+      cer: 0.2821
+      wer: 0.7692
+    bible_00122:
+      source: bible
+      text: Bɩ y'a ka, hinni kʊ wɔɔ naa ma ʊ bɩ tɛkka ma, wɔɔ ɩ yaa darɛ awɔɔ tɔ ma dɔmɩm haay. A yɛ wɔɔ
+        nawʊm Woso han, k'an a ka k'awɔɔ n a hɔɔnhɔ dɔ mɩŋŋa, a bɩr Sɛnt-Ɛspri mindɔrɛ m kan a hɔdɔrɛ
+        kɩ m.
+      sbs: 0.7567
+      gen_sec: 14.67
+      ref_sec: 14.06
+      cer: 0.0584
+      wer: 0.1739
+    bible_00123:
+      source: bible
+      text: K'awɔɔ nyɩ da gʊta, bɩ n nɩ nyɩntam mɔɔ Zɩ lɛbɔʊrɛ, b'awɔɔ gɔɔtam mɔɔ karɩndanyɩnɔ.»
+      sbs: 0.7244
+      gen_sec: 6.57
+      ref_sec: 5.0
+      cer: 0.0938
+      wer: 0.4
+    bible_00124:
+      source: bible
+      text: 'Yeezuu hɔbɔkʊrɛnoom da gʊɔɔ kʊ ŋ n''a hɔɔn darɛ ŋ ʊ, gʊɔɔ mɩŋŋɔɔ n''a mɩ, ŋnɩ bɔkarɛ, ŋn''a
+        muno bɔŋ ʊ rɔ wɔɔ m, a ʊ:'
+      sbs: 0.697
+      gen_sec: 9.22
+      ref_sec: 6.96
+      cer: 0.1481
+      wer: 0.4231
+    bible_00125:
+      source: bible
+      text: Gʊaa k'a cɛ dɔ b'ɩ daʊrɛ yɩm an lɛ da cɛ bɩ mɩŋŋa m. Ncɩnaaʊ bɩ, Yeezuu a ga lɛbɔʊrɛ gʊta
+        m an lɛ da Moyiisi lɛbɔʊrɛ ra.
+      sbs: 0.7452
+      gen_sec: 9.47
+      ref_sec: 8.2
+      cer: 0.1023
+      wer: 0.3571
+    bible_00126:
+      source: bible
+      text: kʊ Zuuba dɔmɩm gʊta kan a cirbəə kɩ bɩ n bɔkarɛ, an lee ku.
+      sbs: 0.7424
+      gen_sec: 4.61
+      ref_sec: 4.08
+      cer: 0.1591
+      wer: 0.4286
+    bible_00127:
+      source: bible
+      text: Sɩmɔɔn Pɩyɛɛr k'a zu a jɛ ʊ bɩ, a lee ku sɔ. A n gasʊ yaa bɩ nɔ ʊ, an pɛɛrarɔ wɔɔ yɩ, ŋn'ɩ
+        kuntəm b'ʊ,
+      sbs: 0.7373
+      gen_sec: 7.42
+      ref_sec: 8.06
+      cer: 0.1594
+      wer: 0.5769
+    bible_00128:
+      source: bible
+      text: K'a dɩga a zɩɩfʊrɔ wɔɔ heer nyɔɔ mim naa do ma bɩ, a a ya, an a ka, ŋnɩ Pɩyɛɛr nyasʊ. Nyɩnta
+        a ʊ, bur kʊ n n nyʊnyɔɔ da ma *cibsa dɔmɩm ʊ.
+      sbs: 0.7358
+      gen_sec: 10.5
+      ref_sec: 8.06
+      cer: 0.1546
+      wer: 0.4412
+    bible_00129:
+      source: bible
+      text: A n bɔkarɛ biisi bɩ, mɔɔ nyɩnta n meerbaa bʊnyaa ba ma, m fɩr ka a gʊɔɔ ma, m a sʊnsɔ wʊ.
+        Bɩ, a mɔɔ cicir zɛ, bala, badɔ ɩ mɔɔ da naa haay barɛ ma, kʊ mɔɔ n sɩra ka bɩ tɔ ma.
+      sbs: 0.806
+      gen_sec: 13.14
+      ref_sec: 13.94
+      cer: 0.0902
+      wer: 0.25
+    bible_00130:
+      source: bible
+      text: 'A mɩŋŋa wosolɛsinnɩsorazannɔ n''a kasɛtɩ kam, ŋ ʊ: Gʊaa haay k''a sɩra ka ʊ bɩ y''a mimbʊnyaarɔ
+        sugur yɩrɛ, a tɔ ma.»'
+      sbs: 0.7267
+      gen_sec: 9.05
+      ref_sec: 8.5
+      cer: 0.0471
+      wer: 0.3182
+    bible_00131:
+      source: bible
+      text: Gʊaa niŋŋə haay kʊ Woso a yɩ bɩ bɩr mimbʊnyaa bam dʊntɔ y, a mɩsɩrbaa hɔdo bɩ y'a nɔ ʊ, a
+        b'a dam ma, an mimbʊnyaa ba dʊntɔ y, bala Woso y'a yɩ.
+      sbs: 0.7347
+      gen_sec: 11.01
+      ref_sec: 9.78
+      cer: 0.1154
+      wer: 0.303
+    bible_00132:
+      source: bible
+      text: Mɔɔ yɩ m hɔɔn dam mɔɔ ʊ, her-her dɔmɩm naa kɔrɛ minto bɩ, a mɩŋŋa kʊ baza n gɔɔta maam.
+      sbs: 0.799
+      gen_sec: 6.91
+      ref_sec: 5.92
+      cer: 0.0938
+      wer: 0.35
+    bible_00133:
+      source: bible
+      text: 'A n a hɩ, a ʊ: «A bir awɔɔ ʊ ka?» Ŋ n a nyɩ bɔ nʊ, ŋ ʊ: «Zuuba, bʊr ɩ dɩga a.»'
+      sbs: 0.6668
+      gen_sec: 5.21
+      ref_sec: 7.62
+      cer: 0.1591
+      wer: 0.4167
+    bible_00134:
+      source: bible
+      text: A n bɔkarɛ, Woso y'a deem taan… nɩ lɛ bɩ kam, a y'a deem taan… m dʊdɔkər sɔ. A n n'a dam ma
+        an gʊɔɔ bʊmbɔ, an n'a dam ma an ŋ zaar ba sɔ. Nka n'ɩbɩɩ m, ɩ n'ɩ mim dʊdɔ karɛ?
+      sbs: 0.7589
+      gen_sec: 12.71
+      ref_sec: 11.48
+      cer: 0.0522
+      wer: 0.186
+    bible_00135:
+      source: bible
+      text: Gʊaa haay a dɔ, a ʊ, Ziida do gʊaa m, Moyiisi n do naa do mim hɩ mannɩbənno wɔɔ mim bɩncɛ
+        ʊ y.
+      sbs: 0.7088
+      gen_sec: 7.17
+      ref_sec: 6.14
+      cer: 0.0882
+      wer: 0.2609
+    bible_00136:
+      source: bible
+      text: «M gʊaasɩbɔɔ, mɔɔ dɔ mɔɔ ʊ tarɛ naa do hɔ zarm gʊta, a nyaanɩm gʊɔɔ gʊta m, kɔɔlʊʊ bɩ bɛɛ
+        bala kan mɔr bɩ kɩ y, wɔɔ mɩŋŋɔɔ kɩ sɔ.»
+      sbs: 0.7561
+      gen_sec: 9.98
+      ref_sec: 10.06
+      cer: 0.1596
+      wer: 0.4
+    bible_00137:
+      source: bible
+      text: K'a dɩga kɔɔlʊʊ gʊtɔɔ wɔɔ ma sɔ, kʊ ŋ bɩ to ŋnɩ gʊta maam-maam, hɩnhɛr gʊtɔɔ nɩ ŋ nyɔɔtam
+        bɩ, ŋ hɔ poore n ta ʊ, an a ka ŋn'ɩ tam lɛɛ haay k'a brarɛzaa bɩ lɛ n taa b'ʊ.
+      sbs: 0.7418
+      gen_sec: 12.89
+      ref_sec: 10.22
+      cer: 0.1513
+      wer: 0.275
+    bible_00138:
+      source: bible
+      text: K'a ŋ da ʊ gʊta kan ŋʊarɛ kɩ, ŋ zibəə bɩ minto. Awɔɔ haay, k'a bɩr laafɩɩ kan kʊ kɩ.
+      sbs: 0.7931
+      gen_sec: 6.49
+      ref_sec: 6.14
+      cer: 0.1356
+      wer: 0.45
+    bible_00139:
+      source: bible
+      text: Mɔɔ dɔ *Abraham yaŋŋɔɔ n'awɔɔ m. Kʊ mɔɔ lemim bɩ bɩr gasʊrɛ awɔɔ ʊ bɩ, bɩ y'a ka, awɔɔ n'a
+        kam mɔɔ meeyaa ma.
+      sbs: 0.7654
+      gen_sec: 8.36
+      ref_sec: 7.66
+      cer: 0.0641
+      wer: 0.1667
+    bible_00140:
+      source: bible
+      text: Wɔɔ n'ʊ ka ma fɩɩgaa kʊ gʊɔɔ m wɔɔ da ʊ y, wɔɔ n'ʊ ka ma awɔɔ zi, wɔɔ n'ʊ ka ma gʊɔɔ vantɔɔ
+        zi sɔ y.
+      sbs: 0.8156
+      gen_sec: 7.0
+      ref_sec: 7.36
+      cer: 0.1765
+      wer: 0.5185
+    bible_00141:
+      source: bible
+      text: Sɩra m, Sɛnt-Ɛspri n zer ŋ gʊaa deem taan… ra cɩna y. Batɛm ŋ y'a si Zuuba Yeezuu tɔ ma bala.
+      sbs: 0.6604
+      gen_sec: 7.59
+      ref_sec: 5.62
+      cer: 0.0448
+      wer: 0.1905
+    bible_00142:
+      source: bible
+      text: Bala, kʊ mannɩbərbaa b'a lʊr, pakra m kʊ lɛ k'a nyɩnta ʊ bɩ n lʊr sɔ.
+      sbs: 0.6613
+      gen_sec: 5.12
+      ref_sec: 4.46
+      cer: 0.1429
+      wer: 0.4375
+    bible_00143:
+      source: bible
+      text: Mɔɔ mɩsɩrbaa k'a nyɩnta hɔ niŋŋə, m nyɩbaa ma, kan nyɩnta kʊ mɔɔ ʊ hɔ niŋŋə, m dogʊɔɔ bire
+        ʊ Zerizalɛm ʊ bɩ kɩ, zɩɩfʊrɔ wɔɔ haay a dɔ.
+      sbs: 0.7894
+      gen_sec: 10.75
+      ref_sec: 8.5
+      cer: 0.13
+      wer: 0.4483
+    bible_00144:
+      source: bible
+      text: jaandənno kɩ, kan gʊɔɔ yaarɔ wʊta kan kʊ kɩ zannɔ kɩ, kan gʊɔɔ kʊna ŋnɩ ŋ hɛɛ zannɔ kɩ, ŋʊaarzannɔ
+        kɩ, kan ŋʊaarkasɛtɩzannɔ kɩ. Lɛ bɩ ka n y'a ʊ sɔ mim haay k'a nɩ hɔdɩndarɛ mɩŋŋa bɩ zarm tɔ ma.
+      sbs: 0.7421
+      gen_sec: 15.87
+      ref_sec: 14.06
+      cer: 0.137
+      wer: 0.4878
+    bible_00145:
+      source: bible
+      text: Pol dɔɔraa ba b'ʊ deem kan a kur kɩ, an nɩ Woso lemim dɩndarɛ ŋ bire ʊ.
+      sbs: 0.7021
+      gen_sec: 5.38
+      ref_sec: 3.64
+      cer: 0.1346
+      wer: 0.3529
+    bible_00146:
+      source: bible
+      text: Kʊ Woso gʊaa mɩsɩrbaa n bankarɛ yɩ mɩŋŋa, k'a n a da ma an zi mɩŋŋa do haay ba.
+      sbs: 0.7687
+      gen_sec: 6.31
+      ref_sec: 7.14
+      cer: 0.1207
+      wer: 0.3684
+    bible_00147:
+      source: bible
+      text: Hɔsɩ ba ʊ, an nɩ wɔŋ ʊ an a nyaakʊm da Woso lɛɛ y. Hɔ k'a nɩ durnya ʊ haay dɩgɩ, an garga
+        ra, Woso mɩm ʊ. Bɩ, a mɩŋŋa, ʊ woo… n nɩ zɛm bɩ jɩm a taa, an wɔɔ lɩnlar mim kʊ wɔɔ ba haay ma.
+      sbs: 0.6988
+      gen_sec: 14.08
+      ref_sec: 12.84
+      cer: 0.0945
+      wer: 0.2292
+    bible_00148:
+      source: bible
+      text: Biisi bɩ, amba nyɩ k'a yɩ am gʊaa haay hɔ bɩ m bɩ nɩ fɩr kam nyɩ kʊ Woso Ɛspri a ka an yɩ
+        bɩ ma bɩ, her sɔ naa, a maam sɔ.
+      sbs: 0.7517
+      gen_sec: 8.79
+      ref_sec: 9.56
+      cer: 0.0706
+      wer: 0.2121
+    bible_00149:
+      source: bible
+      text: Zambʊzannɔ ra, awɔɔ ba lɔ a brama kan tara kɩ minno dɔ, a bɔkarɛ a n dɔmɩm k'an ta ʊ dɩɩtaa
+        naa mim dɔ?»
+      sbs: 0.7729
+      gen_sec: 7.77
+      ref_sec: 6.46
+      cer: 0.0921
+      wer: 0.25
+    bible_00150:
+      source: bible
+      text: Woso k'a heerlɔ wɔɔ dɔ bɩ, a kasɛtɩ ka ŋ ʊ, an Sɛnt-Ɛspri bɩ ka ŋ ʊ, amba a a ka wɔɔ ʊ bɩ
+        m.
+      sbs: 0.7948
+      gen_sec: 6.83
+      ref_sec: 6.84
+      cer: 0.0968
+      wer: 0.28
+    bible_00151:
+      source: bible
+      text: Meerbaarɔ nɔɔn duro bʊraama ka gʊɔɔ wɔɔ ʊ. B'a n nyɩnta naanaa k'a gʊɔɔ wɔɔ da jɩm ʊ kʊ ŋ
+        bɩ mannɩ bɩ ba y.
+      sbs: 0.6872
+      gen_sec: 8.11
+      ref_sec: 5.5
+      cer: 0.1139
+      wer: 0.52
+    bible_00152:
+      source: bible
+      text: 'Bɩ n a nyɩ bɔ ʊ, a ʊ: Karɩnsaamba, ɩ ɩ ya, ɩ to dɔɔraa deem, kʊ m yaa hɔn, m a bɩr ma, kʊ
+        m buundi da ma.'
+      sbs: 0.7737
+      gen_sec: 7.59
+      ref_sec: 7.32
+      cer: 0.1014
+      wer: 0.2069
+    bible_00153:
+      source: bible
+      text: '*Sabaa hinni ʊ, wɔɔ bɔ tara nɔ ʊ, ʊ ta bɔrkɔ lɛ ra. Bɩncɛ bɩ do ʊ bɩ, wɔɔ ʊ hɔɔn da, ʊ ʊ,
+        yaadarɛ bɩncɛ nyɩntam b''ʊ. Kʊ wɔɔ nyɩnta bɩ, wɔɔ Yeezuu mim dɩnda kan lannɔ kʊ ŋ y''a so kʊ ma
+        b''ʊ rɔ wɔɔ kɩ.'
+      sbs: 0.7559
+      gen_sec: 15.1
+      ref_sec: 14.68
+      cer: 0.1232
+      wer: 0.3542
+    bible_00154:
+      source: bible
+      text: B'awɔɔ, m gʊaasɩbɔɔ ŋʊarɛ nɔ ʊ, k'a meerbaarɔ kʊ wɔɔ Zuuba Yeezuu Krista zibəəzannɔ wɔɔ lɛɛ
+        ka ŋnɩ ŋ ba kan awɔɔ kɩ rɔ wɔɔ tɔ da a nɔ ʊ.
+      sbs: 0.7634
+      gen_sec: 10.67
+      ref_sec: 9.24
+      cer: 0.1176
+      wer: 0.4
+    bible_00155:
+      source: bible
+      text: Naa y'a hɩnkarɛ a ʊ, Yeezuu n mannɩbər jɩtaarɛ kʊ wɔɔ ʊ ga m ʊ a yɩ. A tɩrga fasɩ, kʊrɔma
+        sɩ kan mimbʊnyaa sɩ kɩ ba a gʊr zi y. A mɩsɩrbaa y'a hɔ kan mimbʊnyaabənno hɔ kɩ, Woso a busu,
+        an nɩ hɔ haay burə ʊ.
+      sbs: 0.7308
+      gen_sec: 15.7
+      ref_sec: 14.18
+      cer: 0.1333
+      wer: 0.4167
+    bible_00156:
+      source: bible
+      text: Sɩra m, hɔ k'an tɩrga bɩ Woso n n'a bam, a y'awɔɔ zɩm bɔm gʊɔɔ kʊ ŋ nɩ fɩr karɛ awɔɔ ma rɔ
+        wɔɔ ma, an fɩryɩrɛ ka ŋ ʊ.
+      sbs: 0.7915
+      gen_sec: 8.62
+      ref_sec: 7.9
+      cer: 0.0494
+      wer: 0.2
+    bible_00157:
+      source: bible
+      text: Gʊaa k'a kaanm mɔɔ m, a n mɔɔ lemim bɩ si, a zaa dʊdɔkər ta ʊ. Lemim kʊ mɔɔ hɩ bɩ y'a dʊdɔ
+        kam durnya nyarɛ hinni ʊ.
+      sbs: 0.7261
+      gen_sec: 8.62
+      ref_sec: 7.12
+      cer: 0.1446
+      wer: 0.4643
+    bible_00158:
+      source: bible
+      text: 'Gʊaa k''awɔɔ bir bɩ, a b''a ka, an b''a hɩ awɔɔ gʊaa hɩɩya bɩ m, a ʊ: toore ka ɩ mim b''ʊ
+        y. Ɩbɩɩ zɛm bɩ wuti kan nyannɩ kɩ, ɩ ta jɛ bɩncɛ ʊ.'
+      sbs: 0.7912
+      gen_sec: 9.9
+      ref_sec: 8.76
+      cer: 0.1413
+      wer: 0.3429
+    bible_00159:
+      source: bible
+      text: Wɔɔ danyɩ vanta wɔɔ n'a nyɔɔm kan kɩ, kristagʊɔɔ sokʊmarɔ wɔɔ haay y'a lɛ bɔŋ ʊ, k'a nɩ lemim
+        nyɩnta pa dam mɩŋŋa bɩ tɔ ma.
+      sbs: 0.7706
+      gen_sec: 9.64
+      ref_sec: 7.78
+      cer: 0.087
+      wer: 0.3462
+    bible_00160:
+      source: bible
+      text: Hɔ haay k'awɔɔ n n'a yɛm mɔɔ tɔ ma, mɔɔ y'a barɛ, kʊ Zɩ m lɛbɔʊrɛ yɩ Nyɩ bɩ zi.
+      sbs: 0.7497
+      gen_sec: 5.63
+      ref_sec: 4.62
+      cer: 0.0741
+      wer: 0.2
+    bible_00161:
+      source: bible
+      text: Kʊ wɔɔ tɩr sarbɩr da sisiro lɛ ʊ kʊ ŋ nɩ zu wɔɔ ʊ bɩ, wɔɔ y'ʊ so ŋ mɛ b'ʊ jilli sɔ ŋn'ɩ wɔɔ
+        hɔɔnhɔ bam.
+      sbs: 0.7245
+      gen_sec: 7.59
+      ref_sec: 6.2
+      cer: 0.1944
+      wer: 0.4444
+    bible_00162:
+      source: bible
+      text: Ŋ y'a dɔ kɛɛrɛ, ŋ ʊ, hɔ haay k'ɩbɩɩ ka mɔɔ ʊ bɩ, a to a ʊ ɩbɩɩ zi.
+      sbs: 0.7352
+      gen_sec: 4.69
+      ref_sec: 3.94
+      cer: 0.1905
+      wer: 0.4211
+    bible_00163:
+      source: bible
+      text: Gʊaa deem ɩ nyɩnta ʊ, Woso n a nyɔɔ. A tɔ m Zaan.
+      sbs: 0.7362
+      gen_sec: 3.67
+      ref_sec: 3.76
+      cer: 0.1471
+      wer: 0.3077
+    bible_00164:
+      source: bible
+      text: Awɔɔ n a dɔ a ʊ, awɔɔ mɛrɔ wɔɔ Krista mɛ vəŋŋəro m na? Mɔɔ yɛrɛ m Krista mɛ vəŋŋə sa m a ba
+        lʊmɩŋŋahɛɛrɛzaa mɛ vəŋŋə ra? Ayy…, fɩɩga!
+      sbs: 0.7915
+      gen_sec: 11.26
+      ref_sec: 10.36
+      cer: 0.1327
+      wer: 0.2667
+    bible_00165:
+      source: bible
+      text: Bala, kʊ mɔɔ m, lemim nyɩnta bɩ pa darɛ bɩ, lɛbɔ a mɩŋŋa ʊ hɔ bɛɛ y. Pakra m kʊ mɔɔ n a pa
+        da, bɩ, kʊ mɔɔ n a pa da, kʊ kʊsɩ n m yɩ.
+      sbs: 0.8068
+      gen_sec: 9.64
+      ref_sec: 11.22
+      cer: 0.1136
+      wer: 0.2973
+    bible_00166:
+      source: bible
+      text: Kʊ mɔɔ nɩ, mɔɔ nyɩnta m a si mɩŋŋa mɔɔ ʊ lɛ m, kʊ m yar ba kan Nazarɛtɩ Yeezuu bɩ tɔ bɩ kɩ,
+        paŋŋa do haay m.
+      sbs: 0.8018
+      gen_sec: 8.36
+      ref_sec: 7.8
+      cer: 0.0779
+      wer: 0.2857
+    bible_00167:
+      source: bible
+      text: Gʊaa k'an Woso gʊaa bɩ, Woso lemim an n'a tʊr kam ma. Kʊ Woso gʊɔɔ bɛɛ n'awɔɔ m bɩ y'a ka,
+        awɔɔ bɩr a tʊr kam mɔɔ ma y.»
+      sbs: 0.7607
+      gen_sec: 8.62
+      ref_sec: 7.02
+      cer: 0.0723
+      wer: 0.2759
+    bible_00168:
+      source: bible
+      text: Bɩ tɔ ma m, awɔɔ n'a heer nyɔɔm gʊta, baa kʊ pakra m k'awɔɔ n fɩr yɩ dɩɩtaa, makrarɔ y'a hʊnhɔ
+        kʊ ŋ n'awɔɔ heer zarm dɔmɩm poorero nɔɔn duro nɔ ʊ.
+      sbs: 0.7098
+      gen_sec: 11.09
+      ref_sec: 9.56
+      cer: 0.0467
+      wer: 0.2812
+    bible_00169:
+      source: bible
+      text: Bɩ y'a ka mɔɔ n a yɛ kʊ m awɔɔ yɩ, kʊ m sʊʊra ba kan awɔɔ kɩ. Kʊ sɩra nɩ, Israyɛl taaheerlɛ
+        minto y'a ka, mɔɔ nɩ baŋŋarɔ nɔɔn duro m.»
+      sbs: 0.7335
+      gen_sec: 10.07
+      ref_sec: 9.36
+      cer: 0.0526
+      wer: 0.1562
+    bible_00170:
+      source: bible
+      text: 'A n a hɩ, a ʊ: «Ma naa do n''a kam Woso nɩ gʊaasɩbabaa darɛ awɔɔ ma. Woso lɛ taa k''awɔɔ
+        n ta a lɛ ra gʊaasɩbabaa bɩ nɔ ʊ.»'
+      sbs: 0.6935
+      gen_sec: 8.7
+      ref_sec: 7.42
+      cer: 0.0595
+      wer: 0.4333
+    bible_00171:
+      source: bible
+      text: Awɔɔ lɛ taa k'a a dɔ a ʊ, Krista a meerbaa da mɔɔ lɛ ʊ mɔɔ n'a bam, gɛɛ lɔ? K'a maam awɔɔ
+        y'a dɔrɛ. Paŋŋawarzaa bɛɛ m Krista m awɔɔ gʊr zi y. A y'a paŋŋa bɩ hɩnkarɛ awɔɔ bire ʊ.
+      sbs: 0.7937
+      gen_sec: 13.31
+      ref_sec: 14.68
+      cer: 0.12
+      wer: 0.381
+    bible_00172:
+      source: bible
+      text: K'a heer zaar ba a kʊrɔmarɔ wɔɔ tɔ ma! K'a zɛ heerzar ba a nyi ka! K'a yaawʊrɛ to a nyi ka,
+        k'a a heernyɔɔ bɩ to, a a heer zar!
+      sbs: 0.791
+      gen_sec: 9.22
+      ref_sec: 10.04
+      cer: 0.0795
+      wer: 0.4516
+    bible_00173:
+      source: bible
+      text: Mɔɔ zoo mɩŋŋa ba, mɔɔ brasire a tɛkka ku, mɔɔ nyasʊ sɩrakarɛ m.
+      sbs: 0.7548
+      gen_sec: 5.21
+      ref_sec: 4.94
+      cer: 0.125
+      wer: 0.3846
+    bible_00174:
+      source: bible
+      text: 'Yeezuu n a nyɩ bɔ ʊ, a ʊ: «Mɔɔ pa da gʊaa haay m, mɔɔ hɔ dɩnda gʊɔɔ m dɔmɩm haay *sokʊmacɛrɔ
+        ʊ kan *Wosocɛ ʊ kɩ, bɩncɛ kʊ zɩɩfʊrɔ haay n''a som kʊ ma ʊ, bɩ mɔɔ n hɔsɩ nyaakʊm da, m a hɩ y.'
+      sbs: 0.7635
+      gen_sec: 14.17
+      ref_sec: 12.8
+      cer: 0.1298
+      wer: 0.4565
+    bible_00175:
+      source: bible
+      text: Bɩ Woso barka ka wɔɔ gʊaa biyəə ʊ, Krista n a jir a hɔɔnhɔ ma.
+      sbs: 0.7554
+      gen_sec: 4.69
+      ref_sec: 4.12
+      cer: 0.087
+      wer: 0.3333
+    bible_00176:
+      source: bible
+      text: K'a jɩm kɔɔkɔɔ a yaa ka a nɔ ʊ, a a mɩsɩrbaa bɩ dɔ ra am cɛ hɔ bɩ m. A nyasʊ a sɩrakarɛ bɩ
+        m kɔɔkɔɔ, amba n y'a dɩnda awɔɔ n bɩ m, a bɩr yaa dam Woso m barka kan a heer kɩ haay.
+      sbs: 0.806
+      gen_sec: 12.89
+      ref_sec: 14.36
+      cer: 0.0806
+      wer: 0.1915
+    bible_00177:
+      source: bible
+      text: Kʊ ŋ kɔɔlʊʊ poore bɩ gaa ŋn'a da kɔɔlʊʊ b'ʊ an nya bɩ, ŋ bar sunso kɔɔlʊʊ gʊta b'ʊ kɛɛrɛ.
+      sbs: 0.7198
+      gen_sec: 6.91
+      ref_sec: 5.9
+      cer: 0.2154
+      wer: 0.55
+    bible_00178:
+      source: bible
+      text: 'Bɩ y''a ka, hɔ kʊ bɔɔr naa do a hɩ bɩ sɩra m, a ʊ: gʊaa deem ɩ hɔ duure, gʊaa vanta n nɩ
+        zɛm b''a da.'
+      sbs: 0.7816
+      gen_sec: 7.0
+      ref_sec: 6.98
+      cer: 0.1212
+      wer: 0.3333
+    bible_00179:
+      source: bible
+      text: Bɩ, kʊ m zaa k'an mɩŋŋa an cem haay bɩ hɩnka a m kɛɛrɛ.
+      sbs: 0.7542
+      gen_sec: 4.35
+      ref_sec: 5.44
+      cer: 0.0513
+      wer: 0.1429
+    bible_00180:
+      source: bible
+      text: 'Ŋ n a hɩ Galilee kʊ Bɛtsayɩdaa gʊaa Filipi m, ŋ ʊ: «Wɔɔ harzaa, wɔɔ lɛ n taa k''ʊ Yeezuu
+        yɩ.»'
+      sbs: 0.7253
+      gen_sec: 7.0
+      ref_sec: 6.78
+      cer: 0.1077
+      wer: 0.2857
+    bible_00181:
+      source: bible
+      text: Bɩ jɛ ʊ, lɛsarɛ dɔmɩm ʊ, Galilee gʊaa Zidas a hɩnka wɔɔ m. Gʊɔɔ gʊta nɩ zure a jɛ ʊ. Bɩ mɩŋŋa
+        ga sɔ, gʊɔɔ kʊ ŋ nɩ zure a jɛ ʊ rɔ wɔɔ n hɩsɩga da.
+      sbs: 0.7418
+      gen_sec: 11.09
+      ref_sec: 10.22
+      cer: 0.1165
+      wer: 0.3243
+    bible_00182:
+      source: bible
+      text: Sɩra nɔ ʊ, lɛɛ kʊ jɩmbaa n ta ʊ, gʊɔɔ n'a hɔɔn darɛ a mɩŋŋɔɔ ma con bɩ, lɛɛ bɩ do ʊ bɩ, hɔ
+        haay woo… yɩm bʊrga, ziro bʊnyaarɔ n nyɩnta ʊ sɔ.
+      sbs: 0.7421
+      gen_sec: 10.84
+      ref_sec: 8.7
+      cer: 0.1616
+      wer: 0.5
+    bible_00183:
+      source: bible
+      text: A n bɔkarɛ gʊɔɔ wɩsɩrɔ m Woso mɩm ʊ, durnya naa do gʊɔɔ wɔɔ n a ga m kʊ gʊɔɔ nɔɔn duro n nyɩnta
+        kan ŋ kɩ y. Ŋ sɩrakarɛ tɔ ma m, ŋ ba lɛɛ nɩ y, ŋn'ɩ poo sam kan ciro gaa kɩ, ŋn'ɩ wʊtam yaarɔ
+        ʊ kan ciro yaarɔ kɩ ʊ.
+      sbs: 0.7285
+      gen_sec: 16.46
+      ref_sec: 14.5
+      cer: 0.0993
+      wer: 0.2407
+    bible_00184:
+      source: bible
+      text: A n lɛ ka sʊrdaa zɔrɔ lɛɛzaa b'ʊ, a ʊ, an dɔ Pol ma, b'a b'a du y. A b'a ta a gʊaasɩba sɩ
+        m tolle, a nyasʊm minto y.
+      sbs: 0.7547
+      gen_sec: 8.19
+      ref_sec: 7.54
+      cer: 0.1429
+      wer: 0.3333
+    bible_00185:
+      source: bible
+      text: Ɩ tɔ ʊ ɩ bʊr, kʊ nyɛɛm dɔmɩm n bɔkarɛ an a ku. Ebulus kan Pudɛns kɩ, Linus kɩ, Klodɩya kan
+        danyɩnɔ kʊ ŋ nɩ naa ʊ haay rɔ wɔɔ k'ɩ yaa darɛ ɩ m.
+      sbs: 0.7635
+      gen_sec: 10.67
+      ref_sec: 10.52
+      cer: 0.1078
+      wer: 0.3143
+    bible_00186:
+      source: bible
+      text: A ŋʊa mɔɔ nawʊm paan… kʊ m bɩr awɔɔ bire ʊ b'ʊ dɩɩtaa, kʊ m m meerbaa bɩ lʊr m a ba, bala,
+        mɔɔ n a dɔ kʊ mɔɔ meer bɩ bam kan awɔɔ kɩ lʊnlɔ y.
+      sbs: 0.7711
+      gen_sec: 10.58
+      ref_sec: 10.32
+      cer: 0.1313
+      wer: 0.3514
+    bible_00187:
+      source: bible
+      text: A n lɛ da haay bɩ, k'a bɩr kʊ ŋʊam paan…, bala, ŋʊarɛ ɩ hɔ kam mimbʊnyaa yɔɔgʊ ra.
+      sbs: 0.7259
+      gen_sec: 6.57
+      ref_sec: 5.98
+      cer: 0.1724
+      wer: 0.3684
+    bible_00188:
+      source: bible
+      text: Gʊaa k'a nɩ koor bam biisi bɩ, an a wɔ bɔ koorbaa b'ʊ k'an zi ba an a lɛɛmaa hɔ yɩ, maam bɩ,
+        a y'a dam ma an hɔ yɩ, an n'a dam gʊaa k'a lɛ n taa daahan ma han.
+      sbs: 0.7549
+      gen_sec: 11.18
+      ref_sec: 11.18
+      cer: 0.0833
+      wer: 0.3171
+    bible_00189:
+      source: bible
+      text: 'Bala, n y''a da lɛrɔ wɔɔ duro ʊ, n ʊ: «Ɩ bɩ hɔ du der k''a nɩ hɔyaa zɔm bɩ lɛ ma y.» A hɩ
+        awɔɔ ʊ, Woso bɩ kɔ a nawʊm dono ma,'
+      sbs: 0.8056
+      gen_sec: 8.45
+      ref_sec: 8.96
+      cer: 0.1625
+      wer: 0.4118
+    bible_00190:
+      source: bible
+      text: K'a yɛ fɩr k'awɔɔ n'a yɩm bɩ ma, ɩ ʊ, hʊnhʊrlɛ m. Bala, awɔɔ fɩr bɩ yɩrɛ y'a hɩnkarɛ a ʊ,
+        Woso ɩ dɩgarɛ awɔɔ ma a nyɩnɔ. Nyɩ ka n ta ʊ, a zɩ bɩr a hʊnhʊrlɛ?
+      sbs: 0.7233
+      gen_sec: 11.35
+      ref_sec: 10.58
+      cer: 0.0935
+      wer: 0.2105
+    bible_00191:
+      source: bible
+      text: 'Bɩ kʊ wɔɔ ʊ: «Mimbʊnyaa ba wɔɔ ma y», bra wɔɔ n''a barɛ ʊ mɩŋŋɔɔ m, sɩra bɩ wɔɔ nɔ ʊ y.'
+      sbs: 0.7473
+      gen_sec: 6.31
+      ref_sec: 6.54
+      cer: 0.1034
+      wer: 0.3636
+    bible_00192:
+      source: bible
+      text: Karɩndanyɩnɔ wɔɔ n lɛɛ ka ŋnɩ hɔ k'a nɩ zɛm naa jɩ dɔ hɔɔ y. Bɩ, kʊ ŋ Yeezuu lɛbɔʊrɛ yɩ bɩ,
+        ŋ hɔ kʊ ŋ y'a gʊrsɩra ba a minto bɩ tɔ da a nɔ ʊ, bɩ naa ba ŋ y'a ʊ a minto.
+      sbs: 0.717
+      gen_sec: 12.46
+      ref_sec: 12.46
+      cer: 0.069
+      wer: 0.2
+    bible_00193:
+      source: bible
+      text: Wɔɔ kan kʊ bɩ danyɩnɔ wɔɔ kɩ, wɔɔ yɛ Pol han k'a bɩ ta Zerizalɛm ʊ b'ʊ y.
+      sbs: 0.6881
+      gen_sec: 5.29
+      ref_sec: 4.06
+      cer: 0.0769
+      wer: 0.3889
+    bible_00194:
+      source: bible
+      text: 'Wosocikarɩnsaambɔɔ gɔsɩnnɔ meerbaa bɩ si, ŋ ʊ: «Karɩnsaamba, ɩ meer ba mɩŋŋa.»'
+      sbs: 0.7268
+      gen_sec: 6.83
+      ref_sec: 4.98
+      cer: 0.0492
+      wer: 0.3333
+    bible_00195:
+      source: bible
+      text: K'a dundo a zi, a jɩm kɔɔkɔɔ sɩrakarɛ nɔ ʊ, a bɩr heer koodə m, a bɩr paŋŋa m.
+      sbs: 0.7301
+      gen_sec: 5.97
+      ref_sec: 5.92
+      cer: 0.0364
+      wer: 0.1579
+    bible_00196:
+      source: bible
+      text: Naa minto m, wɔɔ nɩ yɛm kɔrɛ ma, ʊ n'ʊ yoŋ ʊ, bala, Woso k'a m mɩsɩr bɩ wɔɔ ta ʊ heer lɛ.
+        A m gʊaa haay bʊmbɔrɛzaa, bɩ gʊɔɔ kʊ ŋ sɩra ka rɔ wɔɔ an nɩ ŋ bʊmbɔm.
+      sbs: 0.7865
+      gen_sec: 11.95
+      ref_sec: 12.02
+      cer: 0.1441
+      wer: 0.4
+    bible_00197:
+      source: bible
+      text: Dɔmɩm biyəə, amba Wosocɛ ʊ gɛɛ har ʊ, ŋ bɩr Yeezuu Krista lemim nyɩnta bɩ dɩndarɛ kan a padarɛ
+        kɩ tore y.
+      sbs: 0.7476
+      gen_sec: 8.45
+      ref_sec: 9.8
+      cer: 0.0494
+      wer: 0.1364
+    bible_00198:
+      source: bible
+      text: Naa tɔ ma bɩ, kʊ wɔɔ ɩ hɔbɩrɛ m kan huu kɩ m, naa a ga m, an wɔɔ bɔ.
+      sbs: 0.7954
+      gen_sec: 4.78
+      ref_sec: 4.86
+      cer: 0.0444
+      wer: 0.1
+    bible_00199:
+      source: bible
+      text: 'Pɩyɛɛr n zer, an gʊɔɔ wɔɔ zɛ ʊ, an a hɩ, a ʊ: «Mɔɔ ba n nɩ. Mɔɔ awɔɔ n''a karɛ m ma bɩ. Bɔ
+        minto y''a ka awɔɔ n bʊr naa ʊ?»'
+      sbs: 0.7875
+      gen_sec: 8.36
+      ref_sec: 9.62
+      cer: 0.1026
+      wer: 0.2727
 - model: ghananlpcommunity/ghana-tts-72k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   mode: ref
@@ -17787,4 +19565,4 @@ benchmarks:
       ref_sec: 9.62
       cer: 0.4359
       wer: 0.7576
-updated: '2026-10-01'
+updated: '2026-10-09'

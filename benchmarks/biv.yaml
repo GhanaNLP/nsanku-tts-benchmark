@@ -1754,6 +1754,1749 @@ benchmarks:
       ref_sec: 5.96
       cer: 0.16
       wer: 0.25
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7503
+  num_scored: 200
+  cer: 0.1097
+  wer: 0.2484
+  accuracy: 0.8903
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8203
+  score: 0.8203
+  per_source:
+    bible:
+      sbs: 0.7503
+      cer: 0.1097
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Lɛ ɩn nyɛ lɛ ɩka, ala ɩ waa kul sɩrɛ ɛ, tɩ na wʊ jãnɛ, wʊn ɩn bɔɔsʊ̃n sʊɔ. N tɩɛr ɩka n mɩ
+        tara na a Nãaŋmɩn Sɩɛ.
+      sbs: 0.7818
+      gen_sec: 8.87
+      ref_sec: 11.92
+      cer: 0.1266
+      wer: 0.2759
+    bible_00001:
+      source: bible
+      text: Ban wa tɩ nyɛ wʊ a manyal gɔ̃ɔn, ba sʊʊr wʊ naa, “Wiwile, dabor fʊ wa ka?”
+      sbs: 0.7611
+      gen_sec: 5.63
+      ref_sec: 5.5
+      cer: 0.1373
+      wer: 0.4118
+    bible_00002:
+      source: bible
+      text: N bɔ̃ɔn naa fʊn wõnõ a n sʊɔrfʊ, tɩchɛ n 'yɛr naa ka a na sʊ̃ʊ a nɩbɛ banyãna na ara a ka,
+        a ba sɔɔ de ɩka, fʊ̃ʊ lɛ tʊ̃ ma.”
+      sbs: 0.764
+      gen_sec: 9.47
+      ref_sec: 7.26
+      cer: 0.0964
+      wer: 0.1562
+    bible_00003:
+      source: bible
+      text: Daba kɔ̃ɔ dɔ̃ɔ be be ban bʊɔlɔ Simon na wʊ ma tʊ̃nɔ̃ tãsɔɔ tʊ̃mɔ̃ ka a 'maa a Samariya nɩbɛ
+        nɛɛ, na wʊ ma wile a wʊ mãɛ ɩka nɩkpɛ̃ɛ lɛ wʊ ɩ.
+      sbs: 0.7705
+      gen_sec: 11.01
+      ref_sec: 10.22
+      cer: 0.1531
+      wer: 0.4242
+    bible_00004:
+      source: bible
+      text: Tɩchɛ ban wa tɩ ta a pɔɔfʊ die pɔ baa nyɛ nɩrɛ jaa ɛ. A ba lɩɛb chen tɩ mana kʊrɔ ba,
+      sbs: 0.7543
+      gen_sec: 6.49
+      ref_sec: 6.18
+      cer: 0.0323
+      wer: 0.0909
+    bible_00005:
+      source: bible
+      text: Ɩn lɩɛb kul a n sãa sɛ̃ naa tɩ 'yɛr wʊ, n maal dɛɛr Nãaŋmɩn sɛ̃ nɩ a fʊ sɛ̃.
+      sbs: 0.7503
+      gen_sec: 5.97
+      ref_sec: 4.48
+      cer: 0.098
+      wer: 0.2
+    bible_00006:
+      source: bible
+      text: Nãaŋmɩn da yɩn da tuo, yɩ ta ɩ nɩrɛ jaa gbãgbaa ɛ.
+      sbs: 0.7836
+      gen_sec: 4.18
+      ref_sec: 3.52
+      cer: 0.0541
+      wer: 0.0833
+    bible_00007:
+      source: bible
+      text: An ɩ a Sãa nʊ̃ yɩ naa bojũu yɩ nʊ̃ ma naa na yɩ sɔɔ de ɩka a Nãaŋmɩn sɛ̃ lɛ n yi.
+      sbs: 0.7385
+      gen_sec: 6.31
+      ref_sec: 5.48
+      cer: 0.0909
+      wer: 0.1739
+    bible_00008:
+      source: bible
+      text: Bojũu sɩ bɔ̃ɔn naa ɩka a 'lɔ na sãɩ a sɩ Soro Yesu Kɩrɩsɩto a kũu pɔ, mɩ na sãɩ sɩ naa nɩ
+        a Yesu 'matãan a yɩn a sɩ wa ara a wʊ niem.
+      sbs: 0.7634
+      gen_sec: 10.33
+      ref_sec: 9.54
+      cer: 0.0532
+      wer: 0.1429
+    bible_00009:
+      source: bible
+      text: Bala jaa na turo a Nãaŋmɩn nɛɛ wʊn bin, ba ben a wʊ 'yɔ̃ɔ, ka wʊ mɩ be a ba 'yɔ̃ɔ. Sɩ bɔ̃ɔn
+        naa ɩka wʊ ben a sɩ 'yɔ̃ɔ, a Sɩɛ 'lɔ wʊn de kʊ sɩ jũu.
+      sbs: 0.7831
+      gen_sec: 10.92
+      ref_sec: 12.4
+      cer: 0.1146
+      wer: 0.2632
+    bible_00010:
+      source: bible
+      text: Bala jaa na dɩɛl a nɛbinãa tufʊ ben pɔ 'yɔ̃ɔfʊ pɔ, bojũu a sɛb a Nãaŋmɩn gãn pɔ ɩka, “Pɔ 'yɔ̃ɔfʊ
+        turo na a nɩrɛ 'lɔ na ba turo a yelsɩ a jaa a nɛbinãa gãn pɔ ɛ.”
+      sbs: 0.761
+      gen_sec: 12.71
+      ref_sec: 12.48
+      cer: 0.0526
+      wer: 0.1316
+    bible_00011:
+      source: bible
+      text: A mɔ̃tɔ̃ɔ ba lɛ chaar go ɛ, ka a fɔbaa 'lɔ ban lũ var a Nãaŋmɩn puorfʊ yir die pɔ 'mar ayi.
+      sbs: 0.7114
+      gen_sec: 7.17
+      ref_sec: 6.64
+      cer: 0.1406
+      wer: 0.2727
+    bible_00012:
+      source: bible
+      text: A Yesu 'yɛr kʊ ba, “Yɩ wa suor nɛɛ.” Tɩ a poturbo ãsʊɔ jaa ba 'la sʊʊr wʊ ɩka, “An lɛ fʊ ɩ?”
+        Ba jaa bɔ̃ɔn naa ɩka a Soro lɛ.
+      sbs: 0.7309
+      gen_sec: 8.96
+      ref_sec: 9.6
+      cer: 0.1098
+      wer: 0.2581
+    bible_00013:
+      source: bible
+      text: A lɔ̃ɔfʊ na wa põ jãtaa, Yesu don kpɛ a Juu nɩbɛ puorfʊ jie na wʊ tɩ piel wile.
+      sbs: 0.705
+      gen_sec: 6.31
+      ref_sec: 4.94
+      cer: 0.1724
+      wer: 0.3684
+    bible_00014:
+      source: bible
+      text: Yesu tʊ̃n nɛ'maa tʊ̃ yɔɔ a wʊ poturbo niem, ban ba sɛb 'yɔ̃ɔ a gãn nyã pɔ ɛ.
+      sbs: 0.734
+      gen_sec: 5.97
+      ref_sec: 4.4
+      cer: 0.1346
+      wer: 0.2778
+    bible_00015:
+      source: bible
+      text: Ka Faraseemɩne sʊʊr a daba lɛ wʊn ɩrɛ wa nyɛrɛ. Ka wʊ 'yɛr, “Tãn lɛ wʊ bɛ ma a nɩbie ka n
+        pɛɛ be nyɛrɛ.”
+      sbs: 0.755
+      gen_sec: 7.85
+      ref_sec: 8.2
+      cer: 0.0946
+      wer: 0.28
+    bible_00016:
+      source: bible
+      text: A lɛ jũu, yɩ de a Nãaŋmɩn tãjɛbonsɩ a jaa su, ka a bɩbir bier 'lɔ wa vɩɛ, ka yɩ ba gbɛr, na
+        yɩ tʊ̃ɔ jɛb a jɛɛr baar tɩ na yɩ chɛnɛ ara.
+      sbs: 0.7979
+      gen_sec: 10.58
+      ref_sec: 10.48
+      cer: 0.1053
+      wer: 0.1765
+    bible_00017:
+      source: bible
+      text: Yɩ gu yɩ mãɛ na yɩ 'yɔ̃ɔnɔ̃ jũmɔ̃, a yɩ dɔ̃sʊɔ tɩɩ kaara naa jukpɛ̃ɛ kaar, na uoro yʊɔrɔ na
+        wʊ pãa kaara bʊɔrɔ nɩrɛ ɩka wʊ nyɔɔ 'wɔb.
+      sbs: 0.7499
+      gen_sec: 10.75
+      ref_sec: 10.44
+      cer: 0.1368
+      wer: 0.3448
+    bible_00018:
+      source: bible
+      text: Nɩrɛ ãsʊɔ na bɔ̃ɔ a Mosesɩ Nɛɛ bʊɔrɔ naa ɩka wʊ bɛɛr a Yesu kaa na wʊ ir sʊʊr, “Wiwile, ŋmɩnɛ
+        lɛ ɩn ɩ naa nyɛ nyɛvʊr kpo kpo?”
+      sbs: 0.7544
+      gen_sec: 9.9
+      ref_sec: 10.46
+      cer: 0.1304
+      wer: 0.2759
+    bible_00019:
+      source: bible
+      text: Nãaŋmɩn lɛ kaa ir ɩka wʊ vɛ̃ ka a wʊ nɩbɛ bɔ̃ɔn sɩrɛ jaa a lɛ wʊ tara a tɩɛr kʊ a nɩbɛ ba
+        jaa, ɩka a Kɩrɩsɩto ben a yɩ pɔ, na ɩ a tɩɩr tɩɛrtɔ jie.
+      sbs: 0.7904
+      gen_sec: 11.26
+      ref_sec: 10.88
+      cer: 0.0577
+      wer: 0.1579
+    bible_00020:
+      source: bible
+      text: Tɩchɛ bon jaa wa yi chãa pɔ, fʊ ma nyɛn wʊn chaar.
+      sbs: 0.7621
+      gen_sec: 4.01
+      ref_sec: 3.62
+      cer: 0.1081
+      wer: 0.3333
+    bible_00021:
+      source: bible
+      text: A lɛ jũu n sʊɔrɔ yɩ naa ɩka yɩ de wʊ na yɩ wiil a yɩ nʊ̃fʊ kʊ wʊ.
+      sbs: 0.7485
+      gen_sec: 4.86
+      ref_sec: 4.42
+      cer: 0.2
+      wer: 0.2632
+    bible_00022:
+      source: bible
+      text: A Yesu mɩ 'yɛr kʊ ba, “N mɩ kʊ̃ 'yɛr kʊ yɩ a jie ɩn nyɛ a sɔr maala nɩ a anyãna ɛ.”
+      sbs: 0.7523
+      gen_sec: 5.89
+      ref_sec: 5.08
+      cer: 0.1111
+      wer: 0.2609
+    bible_00023:
+      source: bible
+      text: '''Lɔ na kʊrɔ a nɩrɛ nyɛvʊr ɩ naa Nãaŋmɩn Sɩɛ. Nɩrɛ mãɛ fɔ̃ɔ kʊ̃ tʊ̃ɔ maal bon jaa ɛ. A ''yɛr
+        ala ɩn ''yɛr yɩ, ɩ naa Nãaŋmɩn Sɩɛ ''yɛr, naa ɩ Nyɛvʊr.'
+      sbs: 0.7404
+      gen_sec: 11.43
+      ref_sec: 9.08
+      cer: 0.08
+      wer: 0.2121
+    bible_00024:
+      source: bible
+      text: A ber wa po naa tɩ baa di bon jaa ɛ, ka a Pɔɔl ir ara a ba sãlsɔɔ tɩ 'yɛr kʊ ba, “Nɩbɛ, yɩn
+        ta sɔɔ tu a n nɛɛ ka sɩ ta chɛnɛ be a be Kɩrete a wõm nyãna kʊ̃ naa pɔɔ sɩ ɛ, ka a bonsɩ be wɛ
+        ɛ.
+      sbs: 0.7347
+      gen_sec: 14.16
+      ref_sec: 14.94
+      cer: 0.1318
+      wer: 0.2453
+    bible_00025:
+      source: bible
+      text: Ka a malaka 'yɛr kʊ wʊ, “Maa lɛ a Gabɩrɛl na ma ara a Nãaŋmɩn niem, 'lɔ lɛ tʊ̃ ma nɩ a 'yɛr
+        nyã ɩka n wa 'yɛr a 'yɛr nʊ̃ɔ nyã kʊ fʊ.
+      sbs: 0.7207
+      gen_sec: 9.81
+      ref_sec: 9.98
+      cer: 0.1136
+      wer: 0.2353
+    bible_00026:
+      source: bible
+      text: A sɔ̃ɔ 'lɔ na dɔ̃ɔ po, Nãaŋmɩn tun a wʊ 'yɛ'yɛrbɛ sɛ̃ na wʊ 'yɛr 'yɛr dẽdẽme kʊ a sɩ sãamɩne
+        sɔɩ yɔɔ jaa pɔ,
+      sbs: 0.7777
+      gen_sec: 8.45
+      ref_sec: 7.96
+      cer: 0.1216
+      wer: 0.28
+    bible_00027:
+      source: bible
+      text: A anyãna lɛ a da-abbaa 'lɔ̃nɔ̃ dɔ̃ɔ kara a Nãaŋmɩn gãn pɔ, “Ba nyɔɔ wʊn chiine fɩka pɛr na
+        tɩ kʊ, Wʊ ɩn jaa gbul fɩka pele ban põnõ a kɔɔl na waa haa nɛɛ ɛ.
+      sbs: 0.7355
+      gen_sec: 12.63
+      ref_sec: 12.26
+      cer: 0.1071
+      wer: 0.3056
+    bible_00028:
+      source: bible
+      text: A Kɩrɩsɩto lɛ sɩ mʊɔlɔ, na sɩ kpãana nɩrɛ jaa wile nɩ nɩrɛ jaa nɩ yɛ̃ jaa bʊrɔ, ka sɩ na de
+        nɩrɛ jaa kʊ wʊ ka wʊ ɩ chɛchɛ.
+      sbs: 0.7776
+      gen_sec: 9.47
+      ref_sec: 9.4
+      cer: 0.0674
+      wer: 0.2
+    bible_00029:
+      source: bible
+      text: Sɩn mãɛ wõn a kɔkɔr nyãna na yi a saaju wa, an ɩ sɩn nɩ 'lɔ jaa lɛ dɔ̃ɔ be a tɔ̃chɛchɛ par.
+      sbs: 0.75
+      gen_sec: 7.17
+      ref_sec: 6.84
+      cer: 0.0156
+      wer: 0.0435
+    bible_00030:
+      source: bible
+      text: Sɩ bɔ̃ɔn nara ɩka sɩ nʊ̃ naa a sɩ taaba. A wiil ɩka sɩ yin kũu pɔ, tɩ kpɛ nyɛvʊr na ba tara
+        baarfʊ pɔ. Nɩrɛ 'lɔ na ba nʊ̃ a wʊ yɛbɛ ɛ, wʊ chɛnɛ na be kũu pɔ.
+      sbs: 0.7697
+      gen_sec: 12.03
+      ref_sec: 11.02
+      cer: 0.1009
+      wer: 0.225
+    bible_00031:
+      source: bible
+      text: Yɩ tɩɛr kaa a lɛ daar yɩn dɔ̃ɔ be be, tɩ wa nyɛ a chãa, a lɛ yɩn ba gbɛr tuor a dɔɔyɛ yɔɔ
+        ala.
+      sbs: 0.7696
+      gen_sec: 7.17
+      ref_sec: 6.34
+      cer: 0.0303
+      wer: 0.08
+    bible_00032:
+      source: bible
+      text: N ba tɩɛr yele jaa ɩn ɩ bɔr ɛ, tɩchɛ a ba wiil ɩka n ba tara yele ɛ. A sɩ Soro lɛ na tɔɔr
+        a n 'yɛr.
+      sbs: 0.7799
+      gen_sec: 7.17
+      ref_sec: 7.84
+      cer: 0.1176
+      wer: 0.1429
+    bible_00033:
+      source: bible
+      text: “Ka a yɛ̃ wa wʊ ka wʊ 'yɛr, ‘N sãa tara na tʊ̃tʊ̃nbɔ a ŋmɩnɛ a ba ma di bʊ̃diir faa, tɩchɛ
+        ka a maa wa kpire nɩ kɔ̃ ka?
+      sbs: 0.7752
+      gen_sec: 8.96
+      ref_sec: 7.32
+      cer: 0.1013
+      wer: 0.2
+    bible_00034:
+      source: bible
+      text: Ɩ̃n wa wõ a fʊ puorfʊ a bie na gã a n pʊɔm ɔɔn lɩɛb nɩ pʊpɛl.
+      sbs: 0.6813
+      gen_sec: 4.69
+      ref_sec: 5.1
+      cer: 0.2558
+      wer: 0.4706
+    bible_00035:
+      source: bible
+      text: Ka n haa 'yɛr, ‘Kai, n Soro bon jaa na ɩ dɛɛr na ba vɩɛlɛ ɛ, ba kpɛ n nɛɛ pɔ jaa ɛ.’
+      sbs: 0.751
+      gen_sec: 5.97
+      ref_sec: 6.96
+      cer: 0.1091
+      wer: 0.1304
+    bible_00036:
+      source: bible
+      text: Ka ba lɛ sʊʊr wʊ ɩka 'lɔ lɛ ɩ a Elaija bɩɩ? Ka wʊ 'yɛr, “N ba ɩ wʊ ɛ.” Ka ba lɛ sʊʊr wʊ ka
+        'lɔ lɛ a Nãaŋmɩn 'yɛ'yɛrɛ ɔ? Ka wʊ ɩka, “Kai.”
+      sbs: 0.7077
+      gen_sec: 9.64
+      ref_sec: 11.24
+      cer: 0.1379
+      wer: 0.3056
+    bible_00037:
+      source: bible
+      text: Nɩbɛ bamɩne yeldɛbɛ gãn chãa pɔ, na a dɔ̃ɔ ba nie chen a 'yɛr tɔɔrfʊ jie, tɩchɛ ka bamɩne
+        yeldɛbɛ ma tu ba chen a be.
+      sbs: 0.7941
+      gen_sec: 9.39
+      ref_sec: 7.86
+      cer: 0.069
+      wer: 0.1154
+    bible_00038:
+      source: bible
+      text: Ka a bie sãa tɩɛr tɔ an ɩ a mɔ̃tɔ̃ɔ vɩr naa a jãa, a Yesu na 'yɛr, “A fʊ bie sa naa.” A daba
+        naa bala ba jaa na be a wʊ yir sɔɔn de a Yesu.
+      sbs: 0.7645
+      gen_sec: 10.24
+      ref_sec: 10.26
+      cer: 0.0538
+      wer: 0.1579
+    bible_00039:
+      source: bible
+      text: Be lɛ a Simon Pita na tara sʊɔ na wʊ vʊ̃ɔ chɛn a bɔɔrlo nɩkpɛ̃ɛ gbãgbaa nũsʊ̃ɔ toor ŋmaa.
+        A gbãgbaa yuor din Malkusɩ.
+      sbs: 0.6705
+      gen_sec: 9.9
+      ref_sec: 8.86
+      cer: 0.1236
+      wer: 0.4167
+    bible_00040:
+      source: bible
+      text: Yaa bɔ̃ɔ ɩka sɩn lɛ na tɔɔr a malakasɩ gba 'yɛr ɛ? Wa 'yɛrɛ nɩ a sɩ mãɛ yelbil?
+      sbs: 0.7419
+      gen_sec: 6.06
+      ref_sec: 5.26
+      cer: 0.0893
+      wer: 0.1053
+    bible_00041:
+      source: bible
+      text: Pilate na bʊɔrɔ ɩka wʊ bar a Yesu wʊ lɛ 'yɛr kʊ a nɩbɛ go.
+      sbs: 0.6749
+      gen_sec: 4.35
+      ref_sec: 4.34
+      cer: 0.2619
+      wer: 0.5333
+    bible_00042:
+      source: bible
+      text: bojũu sɩ wõn a yɩ sɔɔfʊ yɩn tara a Yesu Kɩrɩsɩto 'yɔ̃ɔ nɩ a nʊ̃fʊ 'lɔ yɩn tara kʊ a Nãaŋmɩn
+        nɩbɛ ba jaa.
+      sbs: 0.7671
+      gen_sec: 8.36
+      ref_sec: 7.46
+      cer: 0.0526
+      wer: 0.125
+    bible_00043:
+      source: bible
+      text: Ka a daba 'yɛr, “A anyãna a jaa lɛ n turo a n bile sɔ̃ɔ wa tãn dɩna.”
+      sbs: 0.6952
+      gen_sec: 5.12
+      ref_sec: 4.76
+      cer: 0.1957
+      wer: 0.3333
+    bible_00044:
+      source: bible
+      text: Yesu na 'yɛr a nɩtɔ̃ baar a wʊ pʊɔ sɔ̃ɔ naa ka wʊ 'yɛr kʊ ba, “Yelmãɛ lɛ n 'yɛrɛ kʊrɔ yɩ,
+        a yɩ ãsʊɔ na tɩ gar 'yɔ̃ɔ ma.”
+      sbs: 0.7661
+      gen_sec: 8.79
+      ref_sec: 7.76
+      cer: 0.1139
+      wer: 0.2667
+    bible_00045:
+      source: bible
+      text: Yelmãɛ lɛ n 'yɛrɛ kʊrɔ yɩ, nɩrɛ 'lɔ na sɔɔ de ma tara na nyɛvʊr 'lɔ na ba tara baarfʊ ɛ, Nãaŋmɩn
+        sɛ̃.
+      sbs: 0.7491
+      gen_sec: 8.02
+      ref_sec: 5.46
+      cer: 0.0556
+      wer: 0.1739
+    bible_00046:
+      source: bible
+      text: Yɩn, yɩ chiine a lɔ̃ɔ di jie. Maa ba chiine a lɔ̃ɔ di jie sɛrɛ ɛ, bojũu n bɩbir ba vɩɛ ɛ.”
+      sbs: 0.7976
+      gen_sec: 7.0
+      ref_sec: 5.52
+      cer: 0.2097
+      wer: 0.3182
+    bible_00047:
+      source: bible
+      text: Nãaŋmɩn nyã na ɩ a sɩ Soro Yesu Sãa, 'lɔ lɛ a pɛɛfʊ wʊ ta bɩbir jaa, bɔ̃ɔn naa ɩka n ba ŋmara
+        jirsɩ ɛ.
+      sbs: 0.7761
+      gen_sec: 8.28
+      ref_sec: 9.5
+      cer: 0.0959
+      wer: 0.24
+    bible_00048:
+      source: bible
+      text: Ka n nyɛ a sɩ Soro na 'yɛrɛ 'yɛr kʊrɔ ma. Wʊ 'yɛr naa, ‘Pɔɔ fɔɔ na fʊ yi ka a Jerusalɛm ajienaa,
+        bojũu nɩrɛ jaa kʊ̃ sɔɔ a lɛ fʊn na 'yɛr a n 'yɛr ɛ.’
+      sbs: 0.806
+      gen_sec: 10.84
+      ref_sec: 10.88
+      cer: 0.0792
+      wer: 0.2432
+    bible_00049:
+      source: bible
+      text: Ajienaa, wʊ piel 'yɛrɛ a Nãaŋmɩn 'yɛr be a ba lɔ̃ɔfʊ jiir, na wʊ 'yɛrɛ ɩka a Yesu ɩ naa Nãaŋmɩn
+        Bie.
+      sbs: 0.7917
+      gen_sec: 8.11
+      ref_sec: 7.66
+      cer: 0.0694
+      wer: 0.1818
+    bible_00050:
+      source: bible
+      text: '''lɔ lɛ so a tɩɩr a pupuorbiir pɔ, nɩ a Yesu Kɩrɩsɩto ''yɔ̃ɔ, bɩbir jaa. A ɩ a lɛ.'
+      sbs: 0.8121
+      gen_sec: 6.06
+      ref_sec: 8.04
+      cer: 0.0364
+      wer: 0.0526
+    bible_00051:
+      source: bible
+      text: Ala ɩ ãsʊɔ jaa baa nʊ̃ a sɩ Soro ɛ, pɔ'yɔ̃ɔfʊ ben a wʊ sɛ̃. Pa sɩ Soro, wa.
+      sbs: 0.7779
+      gen_sec: 5.72
+      ref_sec: 6.08
+      cer: 0.2041
+      wer: 0.3158
+    bible_00052:
+      source: bible
+      text: A nɩ mɩ go, a lɛ wʊn waara nɩ a wʊ Bidadɔ̃ɔ ka a wɛr pɔ, wʊ 'yɛr naa, “Vɛ̃ ka a Nãaŋmɩn malakasɩ
+        ba jaa gbur dumo puor wʊ.”
+      sbs: 0.7607
+      gen_sec: 9.39
+      ref_sec: 8.36
+      cer: 0.1059
+      wer: 0.3
+    bible_00053:
+      source: bible
+      text: A 'yɛr ɩn yelmãɛ ɩka, nɩrɛ 'lɔ na bʊɔrɔ ɩka wʊ ɩ a pupuorbiir nɩdiere, wʊ bʊɔrɔ na tʊ̃sʊ̃.
+      sbs: 0.7928
+      gen_sec: 7.17
+      ref_sec: 6.92
+      cer: 0.1385
+      wer: 0.4211
+    bible_00054:
+      source: bible
+      text: Bojũu a Sãa tara na kpɛ̃ɔ kʊrɔ nyɛvʊr. Wʊ den a kpɛ̃ɔ 'lɔ kʊ a Bie ka wʊ mɩ tara nyɛvʊr.
+      sbs: 0.7495
+      gen_sec: 7.0
+      ref_sec: 5.72
+      cer: 0.127
+      wer: 0.3333
+    bible_00055:
+      source: bible
+      text: “Lɛ a Sãa na nʊ̃ ma, lɛ mɩ lɛ n nʊ̃ yɩ. Yɩ ara a n nʊ̃fʊ pɔ.
+      sbs: 0.7587
+      gen_sec: 4.35
+      ref_sec: 4.2
+      cer: 0.1667
+      wer: 0.1667
+    bible_00056:
+      source: bible
+      text: “Yɩn nyɛn jãnsɩ a mɔ̃tɔ̃ɔ pɔ, ŋmɛra pɔ nɩ a ŋmɛrbie pɔ. Tuo na pɔɔn nɩbʊrɔ jaa na be ka wɛr
+        ju, ka dãbãɛ kpɛ a nɩbɛ, a man kpɛ̃ɛ kʊ̃ɔ na kara na a ɔɔrɔ.
+      sbs: 0.7906
+      gen_sec: 12.2
+      ref_sec: 11.14
+      cer: 0.1028
+      wer: 0.25
+    bible_00057:
+      source: bible
+      text: “Yɩ tʊ̃n nɩbɛ a Jɔɔn sɛ̃ ka wʊ tɩ 'yɛr ba a yelmãɛ.
+      sbs: 0.7532
+      gen_sec: 3.84
+      ref_sec: 3.06
+      cer: 0.0882
+      wer: 0.2308
+    bible_00058:
+      source: bible
+      text: Sɩ nyɛn a gboro ãsʊɔ na chiine a Fonisiya ka sɩ kpɛ chiine.
+      sbs: 0.7561
+      gen_sec: 4.86
+      ref_sec: 4.38
+      cer: 0.0652
+      wer: 0.1538
+    bible_00059:
+      source: bible
+      text: Ka a Pilate sʊʊr a Yesu, “Fʊ̃ʊ lɛ ɩ a Juu nɩbɛ nãa ɔ?” Ka a Yesu 'yɛr, “Ɔ̃ɔ, fʊ̃ʊ baa 'yɛr.”
+      sbs: 0.7026
+      gen_sec: 6.66
+      ref_sec: 8.1
+      cer: 0.1579
+      wer: 0.2273
+    bible_00060:
+      source: bible
+      text: Yɩ pãa lɩɛb a yɩ tɩɛr, na yɩ lɩɛb wa a Nãaŋmɩn sɛ̃, ka wʊ fɩɛl a yɩ yeldɛbɛ bar. A ãkpɛ̃ɔ
+        paalaa yɩn na nyɛ na yin a sɩ Soro sɛ̃,
+      sbs: 0.7671
+      gen_sec: 10.33
+      ref_sec: 9.36
+      cer: 0.0659
+      wer: 0.125
+    bible_00061:
+      source: bible
+      text: A lɛ wʊn chɛnɛ chɛlɛ ba be a Atensɩ, suur wa tɩ kpɛ wʊ naa a lɛ wʊn nyɛ a tẽe na sɛɛn a tɩbɛ.
+      sbs: 0.7575
+      gen_sec: 7.08
+      ref_sec: 6.56
+      cer: 0.1045
+      wer: 0.2
+    bible_00062:
+      source: bible
+      text: A Yesu 'yɛr kʊ ba, “Ala ɩ ba bar a gɔ̃n, kʊsɩbɛ na pɔɔrɔ naa gɔ̃mɔ̃.”
+      sbs: 0.7553
+      gen_sec: 5.12
+      ref_sec: 4.38
+      cer: 0.1333
+      wer: 0.25
+    bible_00063:
+      source: bible
+      text: Ba man kʊ ba ɩka fʊ̃ʊ lɛ wile a Juu nɩbɛ bala na kpɩɛrɛ a bala na ba ɩ a Juu nɩbɛ pɔ, ka ba
+        taa turo a Mosesɩ ɛ, na fʊ lɛ wile ɩka ba taa ŋmara a ba bibiir yɔɩ ɛ, na ba taa ɩrɛ a lɛ a Juu
+        nɩbɛ na ma ɩrɛ ɛ.
+      sbs: 0.7457
+      gen_sec: 15.44
+      ref_sec: 14.0
+      cer: 0.0483
+      wer: 0.1071
+    bible_00064:
+      source: bible
+      text: Ka a Pita bʊɔl wʊ, “Ainɩyas, Yesu yuor pɔ, sa. Ir saaju na fʊ pilʊ̃ a fʊ bʊ̃gãnaa.” Ajienaa
+        lɛ a Ainɩyas ir saaju.
+      sbs: 0.75
+      gen_sec: 9.13
+      ref_sec: 10.42
+      cer: 0.284
+      wer: 0.6667
+    bible_00065:
+      source: bible
+      text: Tɩchɛ n ba tɩɛr ɩka n ɩn pʊʊr a nɩtʊ̃n kpãɛn bala jie ɛ.
+      sbs: 0.7496
+      gen_sec: 4.44
+      ref_sec: 4.84
+      cer: 0.1463
+      wer: 0.2143
+    bible_00066:
+      source: bible
+      text: A sɔ̃ɔ 'lɔ̃nɔ̃ lɛ a Sɔɔl chɛnɛ pʊrɔ a sɩ Soro poturbo ju, na wʊ bʊɔrɔ ɩka wʊ kʊ ba. Wʊ chen
+        naa a Juu nɩbɛ bɔɔrlo nɩkpɛ̃ɛ sɛ̃,
+      sbs: 0.7651
+      gen_sec: 9.81
+      ref_sec: 8.2
+      cer: 0.0674
+      wer: 0.2069
+    bible_00067:
+      source: bible
+      text: Sɔ̃ɔ jaa lɛ sɩ ma tɩɛr a yɩ sɔɔfʊ tʊ̃mɔ̃, a yɩ nʊ̃fʊ tʊ̃mɔ̃ nɩ a kãnyir yɩn tara chɛlɛ a sɩ
+        Soro Yesu Kɩrɩsɩto nɩ a sɩ Sãa Nãaŋmɩn.
+      sbs: 0.803
+      gen_sec: 10.75
+      ref_sec: 9.12
+      cer: 0.0638
+      wer: 0.1667
+    bible_00068:
+      source: bible
+      text: “A Sʊ̃nɔ̃ na wa na, a 'lɔ na yi a Sãa sɛ̃. A yelmãɛ Sɩɛ 'lɔ wʊ yin a Sãa sɛ̃, wʊn 'yɛr yɩ
+        naa a n 'yɛr.
+      sbs: 0.7497
+      gen_sec: 7.51
+      ref_sec: 7.36
+      cer: 0.0952
+      wer: 0.1786
+    bible_00069:
+      source: bible
+      text: N 'yɛrɛ na a nɩtɔ̃ kʊrɔ yɩ ka nɩrɛ jaa taa wa bɛl yɩ nɩ nɛchɩrɛ 'yɛr na nyɛtãan yelmãɛ ɛ.
+      sbs: 0.7874
+      gen_sec: 7.0
+      ref_sec: 6.46
+      cer: 0.0923
+      wer: 0.1905
+    bible_00070:
+      source: bible
+      text: Wʊ tɩ jɛ̃n a be a ba 'mataa tʊ̃nɔ̃ bojũu ba jaa bɔ̃ɔn a gãma tʊ̃mɔ̃.
+      sbs: 0.7303
+      gen_sec: 5.46
+      ref_sec: 4.32
+      cer: 0.1333
+      wer: 0.3125
+    bible_00071:
+      source: bible
+      text: A ba ɩ fuol nɩ yɛ̃ 'yɛr lɛ sɩ de 'yɛr kʊ yɩ a kpɛ̃ɔ nɩ a sɩ Soro Yesu Kɩrɩsɩto waa ɛ, tɩchɛ
+        sɩn mãɛ lɛ nyɛ a wʊ kpɛ̃ɛ nɩ nɩbir.
+      sbs: 0.7293
+      gen_sec: 9.47
+      ref_sec: 10.1
+      cer: 0.0795
+      wer: 0.1515
+    bible_00072:
+      source: bible
+      text: Yɩn 'lɔ ba wa a tɔ̃ɔ nyã par yɩn na tʊ̃ɔ sɩɩr ɛ, a 'lɔ na ma dɔ̃ɔ lɩrɛ a bũu, bɩɩ ka a jie
+        ma sɔb lii ka a sajakpuro furo,
+      sbs: 0.7536
+      gen_sec: 9.22
+      ref_sec: 9.04
+      cer: 0.1446
+      wer: 0.2188
+    bible_00073:
+      source: bible
+      text: Yelmãɛ lɛ n 'yɛrɛ kʊrɔ yɩ, nɩrɛ 'lɔ jaa na sɔɔ de ma, wʊn tʊ̃nɔ̃ naa a tʊ̃mɔ̃ ala ɩn tʊ̃nɔ̃.
+        Wʊn tʊ̃n tʊ̃bɛrɛ gar anyãna, bojũu n chiine naa a Sãa sɛ̃.
+      sbs: 0.7423
+      gen_sec: 12.2
+      ref_sec: 9.76
+      cer: 0.1262
+      wer: 0.3939
+    bible_00074:
+      source: bible
+      text: Josua bidaba, Eliyeja bidaba, Jorim bidaba, Matatɩ bidaba, Levi bidaba,
+      sbs: 0.7469
+      gen_sec: 6.23
+      ref_sec: 8.42
+      cer: 0.1754
+      wer: 1.7
+    bible_00075:
+      source: bible
+      text: Bɩbir jaa lɛ ba ma be a be a Nãaŋmɩn puorfʊ yir bɛchaar pɔ wile a nɩbɛ na ba mɩ yʊɔrɔ a yie
+        ba gala ɛ, na ba wile a nɩbɛ tɩ 'yɛrɛ a 'yɛr nʊ̃ɔ ɩka a Yesu lɛ ɩ a Nɩ-iraa.
+      sbs: 0.759
+      gen_sec: 12.71
+      ref_sec: 14.16
+      cer: 0.0583
+      wer: 0.1163
+    bible_00076:
+      source: bible
+      text: Ta 'yɛr 'yɛrbikpãɛn kʊ danyɔ̃n ɛ, tɩchɛ 'yɛr baalʊ̃ʊ kʊ wʊ fʊ sãa tɔ sʊɔ kaar, 'yɛr kʊ pɔlbil
+        a fʊ yɛɛr kaar.
+      sbs: 0.7796
+      gen_sec: 8.62
+      ref_sec: 8.2
+      cer: 0.1795
+      wer: 0.4783
+    bible_00077:
+      source: bible
+      text: nɩtãa lɛ wʊn dɔ̃ɔ tu a wʊ 'yɛ'yɛrbɛ chɛchɛ bala sɛ̃ a kõr jaa ka ba 'yɛr,
+      sbs: 0.7391
+      gen_sec: 5.63
+      ref_sec: 5.26
+      cer: 0.098
+      wer: 0.2941
+    bible_00078:
+      source: bible
+      text: Wʊ wa naa a wʊ mãɛ paal pɔ, tɩchɛ a wʊ mãɛ nɩbɛ ba de wʊ ɛ.
+      sbs: 0.7738
+      gen_sec: 4.52
+      ref_sec: 4.52
+      cer: 0.1951
+      wer: 0.4118
+    bible_00079:
+      source: bible
+      text: Yesu 'yɛr a nɩtɔ̃ ka a lɛ wʊn dɔ̃ɔ 'yɛr ɩ yelmãɛ ɩka, “A bala fʊn kʊ ma, n ba vɛ̃ ka ãsʊɔ
+        jaa bɔr ɛ.”
+      sbs: 0.6937
+      gen_sec: 7.51
+      ref_sec: 6.56
+      cer: 0.1061
+      wer: 0.2308
+    bible_00080:
+      source: bible
+      text: Bojũu a bonsɩ anyã sɩn nyɛ ɩ naa a ãgãn nyã vɔlaa nɩ a nɩbie vɔlaa bɩɩ tara jã jɩɩr nɩ bʊ̃tarsɩ.
+        A nyãna a jaa wʊn na ɩrɛ ba yi a Sãa Nãaŋmɩn sɛ̃ ɛ, tɩchɛ a yi naa dɔ̃dɔ̃mɔ̃sɩ sɛ̃.
+      sbs: 0.7486
+      gen_sec: 15.1
+      ref_sec: 13.14
+      cer: 0.0846
+      wer: 0.2143
+    bible_00081:
+      source: bible
+      text: Yɩ bɔ̃ɔnɔ̃ sʊ̃, ka a lɛ a Nãaŋmɩn 'yɛ'yɛrbɛ na dɔ̃ɔ 'yɛr taa wa a yɩ sɛ̃ ɛ.
+      sbs: 0.7798
+      gen_sec: 5.72
+      ref_sec: 5.18
+      cer: 0.0833
+      wer: 0.2222
+    bible_00082:
+      source: bible
+      text: Yɩ nyɛn a Faraseemɩne nɩ a nɩbɛrɛ ka ba sɔɔ de wʊ?
+      sbs: 0.7358
+      gen_sec: 3.93
+      ref_sec: 3.66
+      cer: 0.4211
+      wer: 0.5
+    bible_00083:
+      source: bible
+      text: “Pɛɛfʊ wʊ ta a Isɩral Nãaŋmɩn, bojũu wʊ wa naa wa faa a wʊ nɩbɛ.
+      sbs: 0.7216
+      gen_sec: 5.21
+      ref_sec: 5.34
+      cer: 0.1277
+      wer: 0.2667
+    bible_00084:
+      source: bible
+      text: Ban wa wõ a anyãna, ba suur ir naa ka ba bʊɔrɔ a ba kʊfʊ.
+      sbs: 0.7061
+      gen_sec: 4.52
+      ref_sec: 4.16
+      cer: 0.0976
+      wer: 0.2
+    bible_00085:
+      source: bible
+      text: Ka a Yesu 'yɛr kʊ ba, “Ala ɩ Nãaŋmɩn lɛ ta ɩ a yɩ Sãa, yɩn taa nʊ̃ ma naa. Nãaŋmɩn sɛ̃ lɛ
+        n yi naa be be ka a pʊ̃pãanyã. N ba waan a n mãɛ yuor ɛ, 'lɔ lɛ tʊ̃ ma.
+      sbs: 0.775
+      gen_sec: 12.54
+      ref_sec: 11.16
+      cer: 0.1038
+      wer: 0.2326
+    bible_00086:
+      source: bible
+      text: Wɛr na wa chaar, wʊ den a kpãna libikue ayi kʊ a nɩrɛ 'lɔ na kaara a sãanba tɩ 'yɛr, ‘Kaara
+        wʊ, maa wa lɩɛb gɔr, ala ba wa ta ɛ, ɩn lɛ yab kʊ fʊ.’ ”
+      sbs: 0.7992
+      gen_sec: 11.01
+      ref_sec: 9.7
+      cer: 0.1089
+      wer: 0.2778
+    bible_00087:
+      source: bible
+      text: Yɩ vɛ̃ ka a yɩ nɩbɛrɛ bamɩne pʊɔ ma a sɩ 'mataa chen, ala ɩ wʊ maal yeldɛɛr a yɩ 'yɛr n kaa.”
+      sbs: 0.7619
+      gen_sec: 6.83
+      ref_sec: 6.92
+      cer: 0.0308
+      wer: 0.087
+    bible_00088:
+      source: bible
+      text: Wʊ bʊɔrɔ naa ɩka wʊ nyɛ Yesu nɩ nɩbir, tɩchɛ ka a nɩbɛ waa, a wʊ kʊ̃ tʊ̃ɔ nyɛ wʊ ɛ, bojũu
+        nɩŋmaa lɛ wʊ ɩ.
+      sbs: 0.6431
+      gen_sec: 8.28
+      ref_sec: 9.2
+      cer: 0.1351
+      wer: 0.3462
+    bible_00089:
+      source: bible
+      text: A 'yɛr nʊ̃ɔ nyã lɛ a Nãaŋmɩn tɩr kʊ a Isɩral nɩbɛ nɩ a nyã'maar 'yɛr na tu a Yesu Kɩrɩsɩto
+        na ɩ a bon jaa Soro sɛ̃.
+      sbs: 0.7551
+      gen_sec: 8.96
+      ref_sec: 7.82
+      cer: 0.0854
+      wer: 0.2143
+    bible_00090:
+      source: bible
+      text: Pʊ̃pãanyã yɩ bɔ̃ɔn naa a bon 'lɔ na pii wʊ a sɔr a wʊ kʊ̃ tʊ̃ɔ yɩ chãa pɔ ɛ, a wʊ sɔ̃ɔ baa
+        wa ta ɛ.
+      sbs: 0.7885
+      gen_sec: 7.59
+      ref_sec: 7.7
+      cer: 0.1231
+      wer: 0.2963
+    bible_00091:
+      source: bible
+      text: Ala ɩ ãsʊɔ jaa ba be a n 'yɔ̃ɔ ɛ, wʊ nyɛntãan a wile ban lɔb bar ka wʊ ko. Ba ma wob a wilbie
+        anyãna lɔb 'yɔ̃ɔ bũu pɔ ka a di.
+      sbs: 0.7207
+      gen_sec: 9.73
+      ref_sec: 7.38
+      cer: 0.0805
+      wer: 0.2121
+    bible_00092:
+      source: bible
+      text: Be lɛ a Natanɩɛl sʊʊr wʊ, “Yelsʊ̃ na tʊ̃ɔ yi a Najaretɩ tẽe ɔ?” Ka a Filip 'yɛr, “Wa kaa.”
+      sbs: 0.7287
+      gen_sec: 6.74
+      ref_sec: 7.54
+      cer: 0.1833
+      wer: 0.35
+    bible_00093:
+      source: bible
+      text: A ba lɛ fɛr ɩka, sɩ lɛ sɛb kʊ yɩ a lɛ yɩn na nʊ̃ taa ɛ, bojũu yɩn mãɛ jaa bɔ̃ɔn naa ɩka, Nãaŋmɩn
+        'yɛr naa ɩka, yɩ nʊ̃ taa.
+      sbs: 0.7829
+      gen_sec: 9.64
+      ref_sec: 9.26
+      cer: 0.0723
+      wer: 0.1935
+    bible_00094:
+      source: bible
+      text: Ban wa tɩ be a Babilon tẽe pɔ, Jekoniya lɛ ɩ a Sealtɩɛl sãa, ka Sealtɩɛl ɩ Jerubabel sãa,
+      sbs: 0.7308
+      gen_sec: 7.51
+      ref_sec: 7.8
+      cer: 0.0882
+      wer: 0.1579
+    bible_00095:
+      source: bible
+      text: A Nãaŋmɩn 'lɔ na dɔ̃ɔ 'yɛr, “Vɛ̃ ka a chãa chaar libe pɔ,”
+      sbs: 0.8106
+      gen_sec: 4.52
+      ref_sec: 8.24
+      cer: 0.0263
+      wer: 0.0769
+    bible_00096:
+      source: bible
+      text: Bo lɛ so ka a lɛ ɩn 'yɛr ba chaar kʊ yɩ ɛ? Bojũu yaa tʊ̃ɔ wõ a lɛ ɩn 'yɛr ɛ.
+      sbs: 0.7407
+      gen_sec: 5.55
+      ref_sec: 4.26
+      cer: 0.1
+      wer: 0.1818
+    bible_00097:
+      source: bible
+      text: Ala ɩ a pɔɔ kʊ̃ pɔɔ a ju ɛ, wʊ ŋma a ju, ala ɩ a mɩ ɩn vã pɔɔ na põ jukpãakpol wʊ ma pɔɔ a
+        ju.
+      sbs: 0.7718
+      gen_sec: 7.17
+      ref_sec: 8.02
+      cer: 0.1429
+      wer: 0.2143
+    bible_00098:
+      source: bible
+      text: Be lɛ a Mosesɩ Nɛɛ wiwiilbe, nɩ a Faraseemɩne wa 'mataa waan pɔɔ ban nyɔɔ na gãn daba. Ba
+        vɛ̃n ka a pɔɔ ir ara a ba jaa niem,
+      sbs: 0.6813
+      gen_sec: 9.81
+      ref_sec: 8.16
+      cer: 0.0326
+      wer: 0.1724
+    bible_00099:
+      source: bible
+      text: Ba sʊʊr ba naa, “A yɩ bie lɛ a nyã ɔ? A nyã lɛ yɩ dɔɔ ka wʊ ɩ a jɔ̃ɔ? Ka ŋmɩnɛ wʊ ɩrɛ wa nyɛrɛ?”
+      sbs: 0.7526
+      gen_sec: 7.17
+      ref_sec: 7.18
+      cer: 0.1111
+      wer: 0.2222
+    bible_00100:
+      source: bible
+      text: Nɩtãa lɛ a Sãa na ɩ a nyɛvʊr sʊɔ na tʊ̃ ma ka n be be a Sãa jũu, nɩrɛ 'lɔ mɩ na 'wɔb ma mɩ
+        na ben be a maa jũu.
+      sbs: 0.7233
+      gen_sec: 8.36
+      ref_sec: 7.58
+      cer: 0.04
+      wer: 0.0938
+    bible_00101:
+      source: bible
+      text: Yesu gba, wʊn tʊ̃ a nɛ'maa tʊ̃mɔ̃ a ba sɛ̃, tɩ baa chɛnɛ sɔɔ de wʊ ɛ.
+      sbs: 0.7638
+      gen_sec: 5.21
+      ref_sec: 4.06
+      cer: 0.1111
+      wer: 0.2941
+    bible_00102:
+      source: bible
+      text: Nɩbɛrɛ, yɩ ma kʊrɔ a yɩ gbãgbaar a lɛ na tor na a sɛɛn, bojũu yɩ bɔ̃ɔn naa ɩka yɩ mɩ tara
+        na nɩkpɛ̃ɛ na be a saaju.
+      sbs: 0.7891
+      gen_sec: 9.13
+      ref_sec: 8.9
+      cer: 0.0602
+      wer: 0.1786
+    bible_00103:
+      source: bible
+      text: Pilate lɩɛb kpɛ tɩ bʊɔl a Yesu sʊʊr, “Fʊ̃ʊ lɛ ɩ a Juu nɩbɛ nãa bɩɩ?”
+      sbs: 0.7515
+      gen_sec: 5.21
+      ref_sec: 4.86
+      cer: 0.2708
+      wer: 0.375
+    bible_00104:
+      source: bible
+      text: A anyãna ɩ naa nɩtɔ̃nɔ̃ gbɛɛ ata tɩ lɛ tɔɔ a jaa don be a saaju go.
+      sbs: 0.751
+      gen_sec: 5.21
+      ref_sec: 5.42
+      cer: 0.0833
+      wer: 0.1176
+    bible_00105:
+      source: bible
+      text: Yesu na dɔ̃ɔ wile ba a Juu nɩbɛ lɔ̃ɔfʊ yir a Kapenahum ala lɛ wʊ 'yɛr a nyãna.
+      sbs: 0.7375
+      gen_sec: 6.14
+      ref_sec: 5.78
+      cer: 0.0351
+      wer: 0.1111
+    bible_00106:
+      source: bible
+      text: Tɩchɛ a maa torfʊ sʊɔ 'lɔ, na kpɩɛrɛ naa nɩ sɔɔfʊ. 'Lɔ wa lɩɛb puor 'lɔ, n pʊɔ kʊ̃ pɛl wʊ
+        ɛ.”
+      sbs: 0.7028
+      gen_sec: 6.83
+      ref_sec: 5.96
+      cer: 0.127
+      wer: 0.3636
+    bible_00107:
+      source: bible
+      text: A ba mɛ bʊtɩɩ a daar 'lɔ̃nɔ̃ ka wʊ nyɛtãan nele, na ba waan bomo wa lon bɔɔr a jie na ba dãɛn
+        'yɔ̃ɔn a ba nũu bʊ̃maalaa nyãna.
+      sbs: 0.7655
+      gen_sec: 10.07
+      ref_sec: 8.26
+      cer: 0.2111
+      wer: 0.4483
+    bible_00108:
+      source: bible
+      text: Tɩchɛ a sɩ ãsʊɔ jaa nyɛn a wãɛfʊ kʊfʊ dẽdẽme nɩtãa lɛ a Kɩrɩsɩto na põ.
+      sbs: 0.7438
+      gen_sec: 6.23
+      ref_sec: 4.94
+      cer: 0.1455
+      wer: 0.25
+    bible_00109:
+      source: bible
+      text: Bojũu wʊ dɔ̃ɔ kaara niem ɩka wʊ nyɛ yir par ban sʊ̃ɔ, ka a Nãaŋmɩn mãɛ ɩ a mɩmɩɛrɛ.
+      sbs: 0.7633
+      gen_sec: 7.0
+      ref_sec: 5.84
+      cer: 0.1148
+      wer: 0.3158
+    bible_00110:
+      source: bible
+      text: Nãaŋmɩn 'yɛ'yɛrbɛ ba ɩ ayi bɩɩ ata na ba 'yɛrɛ, tɩchɛ ka a bala na chɛ jʊrɔ kaara a lɛ ban
+        'yɛrɛ.
+      sbs: 0.7363
+      gen_sec: 7.51
+      ref_sec: 6.44
+      cer: 0.1
+      wer: 0.4091
+    bible_00111:
+      source: bible
+      text: Filip nɩ Batolomi, Tomasɩ nɩ Matiu na ɩ a lõpodiere. Jemesɩ na ɩ Alfayasɩ bidaba nɩ Tadius.
+      sbs: 0.7358
+      gen_sec: 7.68
+      ref_sec: 8.82
+      cer: 0.1111
+      wer: 0.1765
+    bible_00112:
+      source: bible
+      text: Maa Pɔɔl na ɩ a Yesu Kɩrɩsɩto nɩtʊ̃nãa tu a Nãaŋmɩn bɔfʊ pɔ, nɩ a nɛɛ wʊn tɩr kʊ sɩ a nyɛvʊr
+        nyã na be a Yesu Kɩrɩsɩto 'yɔ̃ɔ,
+      sbs: 0.7591
+      gen_sec: 10.07
+      ref_sec: 9.04
+      cer: 0.0761
+      wer: 0.2759
+    bible_00113:
+      source: bible
+      text: A sɛb a Nãaŋmɩn gãn pɔ ɩka, “Nyɛ, n bin a kʊsɩr be a Jiyon tẽe pɔ, a kʊsɩr vɩla 'lɔ ɩn kaa
+        ir ka wʊ ɩ a kʊsɩr ju, ka nɩrɛ 'lɔ jaa na sɔɔ de wʊ, vã kʊ̃ di wʊ ɛ.”
+      sbs: 0.7235
+      gen_sec: 12.03
+      ref_sec: 11.96
+      cer: 0.1308
+      wer: 0.2558
+    bible_00114:
+      source: bible
+      text: A Simon mɩ sɔɔ naa ka ba so wʊ a Nãaŋmɩn kʊ̃ɔ a wʊ turo a Filip yʊɔrɔ, a nɛ'maa tʊ̃yɔɔ wʊn
+        nyɛ wʊn tʊ̃.
+      sbs: 0.7346
+      gen_sec: 8.11
+      ref_sec: 7.66
+      cer: 0.137
+      wer: 0.4
+    bible_00115:
+      source: bible
+      text: Ka Tomasɩ sʊʊr wʊ, “N Soro, sɩn ba bɔ̃ɔ a jie fʊn chiine ɛ, ŋmɩnɛ sɩn ɩrɛ wa bɔ̃ɔ a sɔr?”
+      sbs: 0.7411
+      gen_sec: 6.83
+      ref_sec: 6.54
+      cer: 0.1148
+      wer: 0.1905
+    bible_00116:
+      source: bible
+      text: Nɩrɛ jaa wa sʊɔr fʊ bon de kʊ wʊ, nɩrɛ wa de a fʊ bon taa lɛ wa sʊrɔ wʊ go ɛ.
+      sbs: 0.7725
+      gen_sec: 5.63
+      ref_sec: 5.14
+      cer: 0.2593
+      wer: 0.5
+    bible_00117:
+      source: bible
+      text: Ka a yele nyãna yaar a Jopa wʊ jaa ka a nɩbɛ yɔɔ jie wa sɔɔ a sɩ Soro.
+      sbs: 0.7295
+      gen_sec: 5.38
+      ref_sec: 4.36
+      cer: 0.098
+      wer: 0.2105
+    bible_00118:
+      source: bible
+      text: A lõpodierbe nɩ a tʊ̃dɛtʊ̃nbɔ lɔ̃ɔn taa na chɛl a Yesu 'yɛr.
+      sbs: 0.6835
+      gen_sec: 4.95
+      ref_sec: 4.84
+      cer: 0.1591
+      wer: 0.1667
+    bible_00119:
+      source: bible
+      text: Tɩchɛ, yɩn 'lɔ wa naa a Jiyon Tɔ̃ɔ par na ɩ a saaju Jerusalɛm, be lɛ a Nãaŋmɩn nɩbir nyã kpɩɛrɛ.
+        Yɩ wa lɔ̃ɔn naa a malakasɩ turo turo na lɔ̃ɔ taa nɩ pʊpɛl,
+      sbs: 0.7815
+      gen_sec: 12.54
+      ref_sec: 11.06
+      cer: 0.0175
+      wer: 0.1176
+    bible_00120:
+      source: bible
+      text: Fʊ̃ʊ wa maal a bier nyã tɔ kʊ a fʊ yɛɛr, fʊ 'yɔ̃ɔn a ba tɩɛrsɩ baal, Yesu Kɩrɩsɩto mãɛ lɛ
+        fʊ maal a bier a lɛ nɛ.
+      sbs: 0.7684
+      gen_sec: 8.79
+      ref_sec: 8.12
+      cer: 0.1875
+      wer: 0.3929
+    bible_00121:
+      source: bible
+      text: Be a Yesu 'yɛr kʊ ba, “N be naa yɩ sɛ̃ bãlãa, tɩ naa pãa lɛ lɩɛb chen a 'lɔ na tʊ̃ ma sɛ̃.
+      sbs: 0.6802
+      gen_sec: 6.74
+      ref_sec: 5.68
+      cer: 0.0862
+      wer: 0.1667
+    bible_00122:
+      source: bible
+      text: Nãaŋmɩn guor yelvɩɛl na gar a anyã na wʊ gun sɩ, ka wʊ na de sɩ 'matãan ba maal yele a jaa
+        ka a jãtaa.
+      sbs: 0.7828
+      gen_sec: 8.28
+      ref_sec: 10.42
+      cer: 0.0667
+      wer: 0.24
+    bible_00123:
+      source: bible
+      text: Be lɛ wʊ nyɛ Yesu na tala, ka wʊ 'yɛr, “Yɩ nyɛ a Nãaŋmɩn Pɛraabile.”
+      sbs: 0.7046
+      gen_sec: 5.38
+      ref_sec: 4.46
+      cer: 0.0833
+      wer: 0.2
+    bible_00124:
+      source: bible
+      text: Ba ma dãn tiitasɩ ayi kobsɩ ayi. Tɩchɛ ãsʊɔ kʊ lo tẽe ɛ, ala baa ɩ a yɩ Sãa Nãaŋmɩn bɔfʊ lɛ
+        ɛ.
+      sbs: 0.7874
+      gen_sec: 7.85
+      ref_sec: 7.52
+      cer: 0.1159
+      wer: 0.2609
+    bible_00125:
+      source: bible
+      text: tɩchɛ dãbãɛ tɛɛ lɛ sɩ chɛlɛ nɩ a 'yɛr tɔɔrfʊ, nɩ a bũu dagel 'lɔ na wa di a Nãaŋmɩn dɔ̃dẽme.
+      sbs: 0.761
+      gen_sec: 7.68
+      ref_sec: 5.78
+      cer: 0.0896
+      wer: 0.2381
+    bible_00126:
+      source: bible
+      text: A lɛ nɩrɛ 'lɔ jaa na tara Yesu nɩ nɛbʊ̃'yen, wʊ maa lɛ chɛnɛ ɩrɛ yeldɛɛr go ɛ, tɩchɛ a nɩnyɩnɛ
+        wa chɛnɛ ɩrɛ yeldɛɛr, waa bɔ̃ɔ a Yesu nɩ a nɩnyɩnɛ wʊn ɩ ɛ.
+      sbs: 0.7583
+      gen_sec: 11.95
+      ref_sec: 10.04
+      cer: 0.0804
+      wer: 0.1714
+    bible_00127:
+      source: bible
+      text: Ba 'yɛr kʊ yɩ ɩka, “A ber baaraa sɔ̃ɔ, nɩlaarba na turo a ba ãgãn vɔlaa na wa naa.”
+      sbs: 0.7949
+      gen_sec: 6.49
+      ref_sec: 6.02
+      cer: 0.0517
+      wer: 0.1579
+    bible_00128:
+      source: bible
+      text: Be lɛ ba tãn tãn taa na ba ŋma dẽdẽme, ka a Banabasɩ de a Jɔɔn Maakɩ na wʊ kpɛ̃n a gboro chiin
+        be a Sipurusɩ.
+      sbs: 0.7568
+      gen_sec: 8.96
+      ref_sec: 7.54
+      cer: 0.0617
+      wer: 0.1538
+    bible_00129:
+      source: bible
+      text: Bojũu nɩrɛ jaa bɔ̃ɔn naa ɩka a sɩ Soro ɩn a Juda bal nɩrɛ, ka a bala nyã pɔ, Mosesɩ mɩ ba
+        pʊr a yuor ɩka nɩrɛ na yin a bala nyã pɔ tɩ ɩ a bɔɔrloro ɛ.
+      sbs: 0.7862
+      gen_sec: 11.61
+      ref_sec: 12.36
+      cer: 0.037
+      wer: 0.0789
+    bible_00130:
+      source: bible
+      text: A anyãna lɛ sɩ 'yɛrɛ, a ba ɩ nɩrɛ 'yɛrbie sɩn jãn ɛ, tɩchɛ 'yɛrbie ala sɩn jãn a Nãaŋmɩn Sɩɛ
+        sɛ̃ na sɩ wile nɩ a Nãaŋmɩn Sɩɛ yelmãɛ nɩ a Sɩɛ 'yɛrbie.
+      sbs: 0.7705
+      gen_sec: 12.12
+      ref_sec: 10.5
+      cer: 0.0278
+      wer: 0.1176
+    bible_00131:
+      source: bible
+      text: Daar kɔ̃ɔ a sɩdɛɛr sʊʊr ba naa, “N bɔ̃ɔn Yesu naa bɔ̃ɔ Pɔɔl, tɩchɛ a yɩn mɩ ba boo yɩ ɩ?”
+      sbs: 0.7487
+      gen_sec: 6.74
+      ref_sec: 7.38
+      cer: 0.082
+      wer: 0.1429
+    bible_00132:
+      source: bible
+      text: A nɩbɛrɛ tu naa a lɛ a Gamaliel na 'yɛr, tɩ na ba bʊɔl a nɩtʊ̃nsɩ fɔb ba tɩ kpãkpãan ba ɩka
+        ba taa lɛ ɩrɛ wa 'yɛrɛ 'yɛr pʊrɔ nɩ a Yesu yuor go ɛ, tɩ bar ba a ba chen.
+      sbs: 0.7472
+      gen_sec: 12.54
+      ref_sec: 11.34
+      cer: 0.0424
+      wer: 0.119
+    bible_00133:
+      source: bible
+      text: A wʊ 'yɛr kʊ ba, “Yelmãɛ lɛ n 'yɛrɛ kʊrɔ yɩ ɩka, ba maa de Nãaŋmɩn 'yɛ'yɛrɛ a wʊ mãɛ tẽe pɔ
+        ɛ.
+      sbs: 0.8042
+      gen_sec: 7.25
+      ref_sec: 6.14
+      cer: 0.1406
+      wer: 0.3478
+    bible_00134:
+      source: bible
+      text: A nʊ̃fʊ nɩ nyã ɩka sɩ turo a lɛ a Nãaŋmɩn na bin a wʊ nɛɛ kʊ sɩ. Wʊ 'yɛr ɩka sɩ nʊ̃ taa nɩtãa
+        lɛ sɩn wõ yi a pielfʊ, sɩ ɩrɛ a lɛ nɛ.
+      sbs: 0.7153
+      gen_sec: 10.24
+      ref_sec: 9.42
+      cer: 0.1099
+      wer: 0.1944
+    bible_00135:
+      source: bible
+      text: Ka n wõ kɔkɔr na 'yɛr, ‘Pita ir na fʊ kʊ 'wɔb.’
+      sbs: 0.7184
+      gen_sec: 3.33
+      ref_sec: 4.18
+      cer: 0.1667
+      wer: 0.3333
+    bible_00136:
+      source: bible
+      text: Tɩ na wʊ nyɔɔ a daba nũsʊ̃ɔ sʊ̃ʊ wʊ ka wʊ ir ka a ɩ a gbɛpɛlɛ nɩ a nakɔɔtɩɛ kpɛ̃mɛ naa.
+      sbs: 0.7108
+      gen_sec: 6.74
+      ref_sec: 6.34
+      cer: 0.1452
+      wer: 0.2727
+    bible_00137:
+      source: bible
+      text: Tɩchɛ a Faraseemɩne nɩ a Mosesɩ Nɛɛ wiwiilbe hũhũnõ nɩ a yele nyã sʊrɔ a Yesu poturbo, “Bo
+        lɛ so ka yɩ 'mataa dire nɩ a lõpodierbe nɩ a tʊ̃dɛbɛ tʊ̃nbɔ?”
+      sbs: 0.6849
+      gen_sec: 12.54
+      ref_sec: 12.38
+      cer: 0.1304
+      wer: 0.2903
+    bible_00138:
+      source: bible
+      text: An yi a dɩna nɩbɛ anũu na kpɩɛrɛ yir na ŋman jiir ayi. Ka ata jɛɛrɛ nɩ a ayi ka ayi mɩ jɛɛrɛ
+        nɩ a ata.
+      sbs: 0.7573
+      gen_sec: 8.02
+      ref_sec: 7.66
+      cer: 0.04
+      wer: 0.1538
+    bible_00139:
+      source: bible
+      text: A wʊ yele na ɩn nʊ̃ɔ kpɛ fʊ ka fʊ chɩlɛ ka nɩyɔɔ mɩ chɩlɛ a wʊ dɔɔfʊ jũu.
+      sbs: 0.7428
+      gen_sec: 5.63
+      ref_sec: 6.42
+      cer: 0.1509
+      wer: 0.3684
+    bible_00140:
+      source: bible
+      text: Ala ɩ nɩrɛ den sɛlma, kpãna, kʊsɩr kpãɛn, daar, mʊɔr bɩɩ kakɩɛ,
+      sbs: 0.7665
+      gen_sec: 5.46
+      ref_sec: 6.36
+      cer: 0.1702
+      wer: 0.4167
+    bible_00141:
+      source: bible
+      text: “Ala ɩ a yɩ ãsʊɔ tara na piir kɔbaa ka a bʊ̃'yen wa bɔr, a ba ɩ wʊn bar a kɔbaa forbir ala
+        a pɛchiin baa pɔ, tɩ yʊɔrɔ bʊɔrɔ a bʊ̃'yen 'lɔ tɩ tãn a sɔ̃ɔ 'lɔ jaa wʊn wa tɩ nyɛ wʊ bɩɩ?
+      sbs: 0.7251
+      gen_sec: 13.57
+      ref_sec: 10.48
+      cer: 0.1032
+      wer: 0.2444
+    bible_00142:
+      source: bible
+      text: Be a Sisariya, daba kɔ̃ɔ dɔ̃ɔ be be a ba bʊɔlɔ wʊ Konɩlɩyɔs, wʊ be naa a sojasɩ gbul 'lɔ pɔ
+        a Itali nɩbɛ na bʊɔlɔ a sojasɩ kɔbaa nɩkpɛ̃ɛ.
+      sbs: 0.7639
+      gen_sec: 10.84
+      ref_sec: 10.02
+      cer: 0.1386
+      wer: 0.3
+    bible_00143:
+      source: bible
+      text: Yesu dʊɔn kaa nyɛ a tara dẽme na 'yɔ̃ɔnɔ̃ a ba libie be a Nãaŋmɩn puorfʊ yir.
+      sbs: 0.737
+      gen_sec: 6.31
+      ref_sec: 5.2
+      cer: 0.0877
+      wer: 0.2941
+    bible_00144:
+      source: bible
+      text: Tɩchɛ lɛ a nɩtʊ̃nsɩ, Banabasɩ nɩ a Pɔɔl na wa wõ a lɛ, ba tɔɔn a ba fuusɩ chɩɛr tɩ jo kpɛ
+        be a nɩyɔɔ bala pɔ tɩ tãna,
+      sbs: 0.7143
+      gen_sec: 9.22
+      ref_sec: 9.1
+      cer: 0.0706
+      wer: 0.1724
+    bible_00145:
+      source: bible
+      text: “Saa kpãkpãan yɩ jaa 'yɛr ɩka, yɩ taa lɛ ɩrɛ wa pʊrɔ a yuor nyãna wile nɩ nɩrɛ jaa go ɛ? Tɩchɛ
+        a yɩ chɛnɛ tɔr tɩ sɛɛ a Jerusalɛm nɩ a yɩ wiilfʊ nyãna, na yɩ bʊɔrɔ ɩka yɩ de a daba nyãna jãɩ
+        yele dɔɔl sɩ.”
+      sbs: 0.7015
+      gen_sec: 16.46
+      ref_sec: 13.9
+      cer: 0.0533
+      wer: 0.1875
+    bible_00146:
+      source: bible
+      text: Filip chen tɩ 'yɛr kʊ Andiru ka ba 'mataa chen tɩ 'yɛr a Yesu.
+      sbs: 0.7254
+      gen_sec: 4.61
+      ref_sec: 4.1
+      cer: 0.0222
+      wer: 0.2143
+    bible_00147:
+      source: bible
+      text: A kʊ̃ɔ nyã nyɛtãan fɩka a Nãaŋmɩn kʊ̃ɔ sofʊ na faa yɩ mɩ a pʊ̃pãanyã, a ba ɩ ãgãn dɛɛr pɛɛ
+        barfʊ lɛ ɛ, tɩchɛ a nɛɛ yɩn tɩr kʊ Nãaŋmɩn nɩ pʊtɩvɩla. Yɩ nyɛn faafʊ tu a Kɩrɩsɩto kũu irfʊ pɔ.
+      sbs: 0.7071
+      gen_sec: 16.12
+      ref_sec: 13.08
+      cer: 0.1511
+      wer: 0.3333
+    bible_00148:
+      source: bible
+      text: Ka a sɩ pãa na 'la 'yɛr ɩka, “A n Soro lɛ ɩ a n sʊ̃nɔ̃, ka n kʊ̃ joro dãbãɛ ɛ. Bo lɛ nɩrɛ
+        na ɩ ma?”
+      sbs: 0.7408
+      gen_sec: 7.17
+      ref_sec: 8.14
+      cer: 0.1311
+      wer: 0.2143
+    bible_00149:
+      source: bible
+      text: Bojũu ãgãn bʊ̃'yen lɛ be be, nɩ a Sɩɛ bʊ̃'yen, nɩtãa lɛ a Nãaŋmɩn na bʊɔl yɩ, ka yɩ tara tɩɛrtɔ
+        jie bʊ̃'yen.
+      sbs: 0.8038
+      gen_sec: 8.96
+      ref_sec: 7.76
+      cer: 0.0658
+      wer: 0.2174
+    bible_00150:
+      source: bible
+      text: An chɛnɛ ɩ mɔ̃tɔ̃ɔ, sɩn tʊ̃ naa a 'lɔ na tʊ̃ ma tʊ̃mɔ̃. Wɛr na sɔb naa ka nɩrɛ kʊ̃ lɛ tʊ̃ɔ
+        tʊ̃mɔ̃ tʊ̃ ɛ.
+      sbs: 0.7164
+      gen_sec: 8.02
+      ref_sec: 6.32
+      cer: 0.1538
+      wer: 0.4
+    bible_00151:
+      source: bible
+      text: Tɩchɛ Yesu bɔ̃ɔn a lɛ ban tɩɛrɛ na wʊ 'yɛr kʊ a daba 'lɔ nũu na kpi, “Ir ara ka nɩrɛ jaa nyɛ
+        fʊ.” Ka a daba ir ara.
+      sbs: 0.6886
+      gen_sec: 8.45
+      ref_sec: 8.04
+      cer: 0.0886
+      wer: 0.1724
+    bible_00152:
+      source: bible
+      text: Ka a nɩyɔɔ bala 'yɛr, “Sɩ wõn yi a Nɛɛ pɔ ɩka, a Nɩ-iraa naa 'lɔ na ben be kpo kpo, tɩ ŋmɩnɛ
+        a ɩ a fʊ 'yɛr ɩka ban 'mɔɔn a Nɩsaal Bie a saaju? An lɛ a Nɩsaal Bie 'lɔ?”
+      sbs: 0.7723
+      gen_sec: 12.2
+      ref_sec: 13.52
+      cer: 0.0531
+      wer: 0.1429
+    bible_00153:
+      source: bible
+      text: ba bɔ̃ɔ wʊ naa an ɩ 'lɔ lɛ ma jãnɛ sʊɔrɔ libie be a Nãaŋmɩn puorfʊ yir dɔ̃dɔr 'lɔ ban bʊɔlɔ
+        a, Vɩla. Ka a ɩ ba chĩcham naa 'maa ba nɛɛ a lɛ na ɩ.
+      sbs: 0.7157
+      gen_sec: 11.26
+      ref_sec: 12.1
+      cer: 0.098
+      wer: 0.2222
+    bible_00154:
+      source: bible
+      text: Ba ŋman a mibe ala na nyɔɔr a nɛbinyɔɔrsɩ ala bar, na ba mɩ lɛ for a vuulsɩ ala na ma dɛnɛ
+        a gboro tɩ pãa yɛr a fɔbaa bar a gboro niem ka a sɛsɛbɛ pãa tɔɔrɔ ba chiine a bire pɔ.
+      sbs: 0.7218
+      gen_sec: 13.99
+      ref_sec: 12.66
+      cer: 0.0902
+      wer: 0.1628
+    bible_00155:
+      source: bible
+      text: A lɛ jũu, n bʊɔrɔ naa ɩka yɩ bɔ̃ɔ ɩka a Nãaŋmɩn den a wʊ faafʊ 'yɛr tɩ kʊ a bala na ba ɩ a
+        Juu nɩbɛ ɛ na chɛlɛ naa.”
+      sbs: 0.7928
+      gen_sec: 8.79
+      ref_sec: 8.66
+      cer: 0.0494
+      wer: 0.129
+    bible_00156:
+      source: bible
+      text: Bojũu, lɛ a Jona na dɔ̃ɔ ɩ jãnɛ kʊ a Ninive dẽme, lɛ mɩ lɛ a maa Nɩsaal Bie na ɩ a jãnɛ kʊ
+        a dɩna nɩbɛ.
+      sbs: 0.756
+      gen_sec: 8.19
+      ref_sec: 6.98
+      cer: 0.0959
+      wer: 0.1852
+    bible_00157:
+      source: bible
+      text: A sɔ̃ɔ 'lɔ̃nɔ̃ lɛ a pɔɔfʊ die guguro de ba yin a tãsɔɔ 'lɔ̃nɔ̃ na wʊ tɩ pɛɛ a ba natɩɛ tɩchɛ
+        a ba mɩ tɔ̃ɔ so a 'lɔ nɩ a wʊ yir dẽme ba jaa a Nãaŋmɩn kʊ̃ɔ.
+      sbs: 0.7705
+      gen_sec: 11.86
+      ref_sec: 10.6
+      cer: 0.0667
+      wer: 0.1795
+    bible_00158:
+      source: bible
+      text: Bojũu saa waan bon jaa a wɛr nyã pɔ ɛ, na sɩ kʊ̃ lɛ de bon jaa yin a wɛr pɔ ɛ.
+      sbs: 0.7806
+      gen_sec: 5.97
+      ref_sec: 5.78
+      cer: 0.0741
+      wer: 0.1818
+    bible_00159:
+      source: bible
+      text: Ka a Juu nɩrɛ ãsʊɔ yuor na di Apolosɩ yin be a Aleksandiriya na wʊ wa a Efesus tẽe pɔ. Wʊ
+        ɩ naa nɩrɛ na jãn na wʊ bɔ̃ɔ a Nãaŋmɩn gãma tɩ bɔ̃ɔ 'yɛr sʊ̃.
+      sbs: 0.7684
+      gen_sec: 12.2
+      ref_sec: 13.08
+      cer: 0.0727
+      wer: 0.1944
+    bible_00160:
+      source: bible
+      text: Yɩ tɩɛr kaa a Isɩral nɩbɛ pɔ. A ba ɩ a bala na ma di a Nãaŋmɩn bɔɔrlo bomo ma pʊɔn a bɔɔr
+        lofʊ jie ɛ?
+      sbs: 0.7771
+      gen_sec: 7.85
+      ref_sec: 6.98
+      cer: 0.0811
+      wer: 0.1923
+    bible_00161:
+      source: bible
+      text: Nɩrɛ 'lɔ jaa na sɔɔ a Nãaŋmɩn Bie, a dãasɩɛ nyã be naa a wʊ nyãa pɔ. Nɩrɛ nyã jaa na ba wa
+        sɔɔ Nãaŋmɩn ɛ, wʊ bʊɔl wʊn jir ŋmara bojũu waa sɔɔ a dãasɩɛ wʊn di a wʊ Bie 'yɔ̃ɔ ɛ.
+      sbs: 0.7569
+      gen_sec: 14.34
+      ref_sec: 11.26
+      cer: 0.0714
+      wer: 0.186
+    bible_00162:
+      source: bible
+      text: Nɩrɛ 'lɔ jaa na chɛnɛ ɩrɛ yeldɛɛr, a nɩnyɩnɛ sɔ̃ɔnɔ̃ naa a Nãaŋmɩn nɛbinsɩ ala wʊn bin, bojũu
+        waa tara Nãaŋmɩn nɩ nɛbʊ̃'yen ɛ.
+      sbs: 0.7364
+      gen_sec: 10.75
+      ref_sec: 7.98
+      cer: 0.0737
+      wer: 0.1667
+    bible_00163:
+      source: bible
+      text: Lɛ lɛ ba wob a ala na chɛ 'yɔ̃ɔ pɛr pie nɩ ayi a chi paanʊ̃ɔ anũu ala.
+      sbs: 0.6856
+      gen_sec: 5.38
+      ref_sec: 5.12
+      cer: 0.1837
+      wer: 0.3889
+    bible_00164:
+      source: bible
+      text: A sojasɩ na wa kpa a Yesu baar, ba põn a wʊ fuusɩ jiir anaar ka ãsʊɔ jaa 'mɔɔ wʊ bon. A wa
+        chɛn a fuu wõo 'lɔ na ba tara nɛɛ ɛ, bʊ̃bʊ̃'yen lɛ ba wob yin a saaju tɩ baar a gbɛɛ pɔ.
+      sbs: 0.7515
+      gen_sec: 13.65
+      ref_sec: 13.28
+      cer: 0.1111
+      wer: 0.2222
+    bible_00165:
+      source: bible
+      text: An wa ta a pʊ̃pãanyã, yaa de a n yuor sʊɔr bon gba ɛ. Yɩ sʊɔr, yɩn nyɛ naa, ka yɩ pʊpɛl na
+        sɛɛ.
+      sbs: 0.776
+      gen_sec: 7.51
+      ref_sec: 6.98
+      cer: 0.1061
+      wer: 0.2083
+    bible_00166:
+      source: bible
+      text: Ka wʊ 'yɛr, “Yɩ nyɛ ka, n nyɛ naa saaju na yuo ka a Nɩsaal Bie ara a Nãaŋmɩn nũsʊ̃ɔ jie.”
+      sbs: 0.7085
+      gen_sec: 7.0
+      ref_sec: 5.98
+      cer: 0.0806
+      wer: 0.1429
+    bible_00167:
+      source: bible
+      text: Ka a Tomasɩ 'yɛr, “N Soro nɩ n Nãaŋmɩn.”
+      sbs: 0.7388
+      gen_sec: 3.07
+      ref_sec: 3.46
+      cer: 0.1852
+      wer: 0.3333
+    bible_00168:
+      source: bible
+      text: Ala ɩ a pɔɔkɔnyɩnɛ tara na bibiir bɩɩ yɔ̃n, bala lɛ a sɛɛ ɩka ba turo a Nãaŋmɩn nɛɛ, na ba
+        kaara a ba dɔɔrbɔ a yie pɔ fɩka a lɛ a ba dɔɔrbɔ na dɔ̃ɔ kaa ba. Lɛ lɛ pɛlɛ a Nãaŋmɩn pʊɔ.
+      sbs: 0.7916
+      gen_sec: 14.34
+      ref_sec: 14.58
+      cer: 0.0455
+      wer: 0.1364
+    bible_00169:
+      source: bible
+      text: A 'lɔ na de nie wa 'yɛr naa, ‘Nɩkpɛ̃ɛ, a fʊ libir dɔɔn pie dɔɔl.’
+      sbs: 0.7482
+      gen_sec: 4.69
+      ref_sec: 4.72
+      cer: 0.186
+      wer: 0.3333
+    bible_00170:
+      source: bible
+      text: A lɛ jũu, yɩ ta ɩ jɔlɔ ɛ, tɩchɛ yɩ bɔ̃ɔ a ala a sɩ Soro na bʊɔrɔ.
+      sbs: 0.7714
+      gen_sec: 4.95
+      ref_sec: 4.8
+      cer: 0.0682
+      wer: 0.1111
+    bible_00171:
+      source: bible
+      text: Jɔɔn kpãa ban nɩ yelyɔɔ na wʊ 'yɛr a Nãaŋmɩn 'yɛr kʊ ba.
+      sbs: 0.7645
+      gen_sec: 4.52
+      ref_sec: 3.36
+      cer: 0.0732
+      wer: 0.2308
+    bible_00172:
+      source: bible
+      text: A wiilfʊ anyã yire na a dãnfʊ Nãaŋmɩn na ɩ a tɩɩr sʊɔ 'yɛr nʊ̃ɔ wʊn de kʊ ma sɛ̃.
+      sbs: 0.7679
+      gen_sec: 6.57
+      ref_sec: 6.0
+      cer: 0.1897
+      wer: 0.4
+    bible_00173:
+      source: bible
+      text: na yɩ bɔ̃ɔ a nʊ̃fʊ na gar a bɔ̃ɔfʊsɩ a jaa, a yɩ pãa be a lɛ a Nãaŋmɩn na be.
+      sbs: 0.7711
+      gen_sec: 6.06
+      ref_sec: 5.54
+      cer: 0.0577
+      wer: 0.0952
+    bible_00174:
+      source: bible
+      text: Lɛ nɩ wʊ ju lɛ a yɩn mɩ, yɩ pʊʊr na sɔ̃ɔ naa a pʊ̃pãanyã, tɩchɛ ɩn lɛ wa nyɛ yɩn go ka yɩ
+        pʊʊl pɛl, ka a nɩrɛ jaa kʊ̃ tʊ̃ɔ faa wʊ ɛ.
+      sbs: 0.7765
+      gen_sec: 10.07
+      ref_sec: 9.54
+      cer: 0.1111
+      wer: 0.2
+    bible_00175:
+      source: bible
+      text: A anyãna lɛ wʊ tɩɛr a kõr jaa na wʊ wa de a Yesu Kɩrɩsɩto a sɩ Soro na wʊ maal a wɛr.
+      sbs: 0.7681
+      gen_sec: 6.57
+      ref_sec: 6.8
+      cer: 0.0968
+      wer: 0.2174
+    bible_00176:
+      source: bible
+      text: Ka a paal nɩkpɛ̃ɛ kar a gãn tɩ na wʊ sʊʊr a Pɔɔl a tẽbuor wʊn yi, wʊn wa bɔ̃ɔn ɩka a Sɩlɩsɩya
+        lɛ wʊ yi.
+      sbs: 0.7453
+      gen_sec: 8.11
+      ref_sec: 7.28
+      cer: 0.1486
+      wer: 0.3077
+    bible_00177:
+      source: bible
+      text: ɩka yɩ ta vɛ̃ ka a sɔb yɩ nɩbir a nɩbɛ bamɩne na 'yɛrɛ ɩka sɩn lɛ 'yɛr bɩɩ, sɛb ɩka a Yesu
+        wan baar.
+      sbs: 0.7548
+      gen_sec: 7.51
+      ref_sec: 8.56
+      cer: 0.0423
+      wer: 0.12
+    bible_00178:
+      source: bible
+      text: a nɩbɛ banyãna lɛ sɔɔ kũu a sɩ Soro Yesu Kɩrɩsɩto yuor jũu.
+      sbs: 0.671
+      gen_sec: 5.03
+      ref_sec: 3.12
+      cer: 0.1522
+      wer: 0.2308
+    bible_00179:
+      source: bible
+      text: A n 'yɛr ɩn kʊrɔ yɩ nɩ nyã. Yɩ nʊ̃ taa nɩtãa lɛ ɩn nʊ̃ yɩ.
+      sbs: 0.7267
+      gen_sec: 4.44
+      ref_sec: 3.82
+      cer: 0.0789
+      wer: 0.4375
+    bible_00180:
+      source: bible
+      text: A 'yɛr wa ɩ naa nɩrɛ na wʊ jãnɛ a sɩ sɛ̃. Sɩ nyɛ naa a wʊ tɩɩr, a tɩɩr nyã na ɩ a Sãa Bidabʊ̃'yen
+        tɛɛ. 'Lɔ lɛ yi a Sãa sɛ̃ wa, na wʊ tara wãɛfʊ nɩ yelmãɛ.
+      sbs: 0.7623
+      gen_sec: 11.95
+      ref_sec: 10.98
+      cer: 0.1058
+      wer: 0.25
+    bible_00181:
+      source: bible
+      text: Ka n sʊʊr, ‘Soro, an lɛ fʊ ɩ?’ Ka a kɔkɔr 'yɛr, ‘Maa lɛ a Yesu na yi a Najaretɩ a 'lɔ fʊn
+        gere.’
+      sbs: 0.7777
+      gen_sec: 6.74
+      ref_sec: 8.62
+      cer: 0.1129
+      wer: 0.2083
+    bible_00182:
+      source: bible
+      text: Be lɛ a Yesu pãa sʊʊr ba, “Ɩn dɔ̃ɔ tʊ̃ yɩ a nũjaala, yaa tara libie ɛ, bɩɩ wʊɔ nɩ nafɔɔr ɛ,
+        yɩ dɔ̃ɔ bɔ bon faa bɩɩ?” A ba 'yɛr ɩka baa bɔ bon jaa faa ɛ.
+      sbs: 0.7941
+      gen_sec: 11.52
+      ref_sec: 11.8
+      cer: 0.1068
+      wer: 0.1842
+    bible_00183:
+      source: bible
+      text: Maa bɔfʊ lɛ ɩka yɩ ta tara yele jaa tɩɛr ɛ. An ɩ daba baa tara pɔɔ ɛ, a sɩ Soro yele lɛ wʊ
+        ma tɩɛrɛ, lɛ wʊn na ɩ pɛl a sɩ Soro pʊɔ.
+      sbs: 0.7876
+      gen_sec: 9.81
+      ref_sec: 9.88
+      cer: 0.0968
+      wer: 0.2
+    bible_00184:
+      source: bible
+      text: A nɩbɛ na wõ a nɩtɔ̃, ka a ŋmara ba a nyãn, ka ba sʊʊr a Pita nɩ a nɩtʊ̃nsɩ, “N yɛɛr, ŋmɩnɛ
+        sɩn ɩ?”
+      sbs: 0.753
+      gen_sec: 7.77
+      ref_sec: 8.12
+      cer: 0.1212
+      wer: 0.16
+    bible_00185:
+      source: bible
+      text: A wʊ mãɛ lɛ tuo a sɩ yeldɛbɛ a wʊ ãgãn pɔ a daa ju, ka sɩ mɩ na kpi kʊ yelbier tɩ be be kʊ
+        yeltorsɩ. A wʊ fɛlɛ ala jũu lɛ sãa sɩ.
+      sbs: 0.7448
+      gen_sec: 10.07
+      ref_sec: 10.56
+      cer: 0.1196
+      wer: 0.2571
+    bible_00186:
+      source: bible
+      text: Ɩn wiil ban yelfɛrsɩ na yi saaju ka a jãnsɩ mɩ be ka a tẽe, jãɩ, bũu nɩ jʊʊr na den jie wʊ
+        jaa.
+      sbs: 0.7428
+      gen_sec: 7.68
+      ref_sec: 8.86
+      cer: 0.1159
+      wer: 0.2083
+    bible_00187:
+      source: bible
+      text: Ka wʊ sʊʊr ba, “Ŋmɩnɛ a yɩ gã guro? Yɩ ir sʊɔrɔ Nãaŋmɩn na yɩ taa lo a bɛɛr kaa pɔ ɛ.”
+      sbs: 0.7513
+      gen_sec: 6.74
+      ref_sec: 6.04
+      cer: 0.1667
+      wer: 0.2727
+    bible_00188:
+      source: bible
+      text: Ka wʊ dɔɔ a pɔɔsarbie ka wʊ ɩ dabile a wʊ vil wʊ a fɔbaa gaal a dʊ̃n mʊɔr 'wɔfʊ jie bojũu
+        baa nyɛ jie na kpɛ a sãanba kpɛfʊ jie ɛ.
+      sbs: 0.7427
+      gen_sec: 10.07
+      ref_sec: 11.58
+      cer: 0.1354
+      wer: 0.375
+    bible_00189:
+      source: bible
+      text: An ɩ maa lɛ ɩ a Nãaŋmɩn nɩbɛ ba jaa bɩr baaraa tɩchɛ ka a wãɛfʊ nyã kʊ ma sɔr ɩka n mʊɔl a
+        Kɩrɩsɩto 'yɛr nʊ̃ɔ kʊ a bala na ba ɩ a Juu nɩbɛ ɛ, nɩrɛ na kʊ̃ tʊ̃ɔ bɔ̃ɔ ɛ,
+      sbs: 0.7847
+      gen_sec: 12.89
+      ref_sec: 13.54
+      cer: 0.0855
+      wer: 0.186
+    bible_00190:
+      source: bible
+      text: Yesu na wa 'yɛr ɩka, “Maa lɛ.” Ba lɩɛb puor lo lo tẽe.
+      sbs: 0.7021
+      gen_sec: 4.01
+      ref_sec: 3.36
+      cer: 0.1389
+      wer: 0.3077
+    bible_00191:
+      source: bible
+      text: N nyɛ naa a n nɩbɛ be a Ijipitɩ pɔ ban gere, n wõ naa ba hʊ̃ʊnfʊ naa suu ɩka n wa faa ba.
+        Wa, ka n tʊ̃ fʊ a be a Ijipitɩ.’
+      sbs: 0.7749
+      gen_sec: 9.13
+      ref_sec: 9.58
+      cer: 0.1566
+      wer: 0.2121
+    bible_00192:
+      source: bible
+      text: Jɔɔn 'lɔ, kʊ̃ɔ lɛ wʊ de son a nɩbɛ, tɩchɛ yɩn 'lɔ, a kʊ̃ lɛ kor ɛ, Nãaŋmɩn na so yɩ naa nɩ
+        a wʊ Sɩɛ.”
+      sbs: 0.8019
+      gen_sec: 7.59
+      ref_sec: 6.5
+      cer: 0.1212
+      wer: 0.3077
+    bible_00193:
+      source: bible
+      text: A anyã lɛ ba ta bʊɔrɔ a wʊ nyɔɔfʊ, tɩchɛ nɩrɛ jaa ba lɩɛb wʊ nũu sɩɩr wʊ ɛ, bojũu a wʊ bɩbir
+        ba vɩɛ ɛ.
+      sbs: 0.6562
+      gen_sec: 8.11
+      ref_sec: 6.46
+      cer: 0.1486
+      wer: 0.3462
+    bible_00194:
+      source: bible
+      text: Hɛrɔd nɩ a wʊ sojasɩ maal a Yesu dɛɛr na ba ɩrɛ wʊ laara. Ba su wʊ naa a nãa fuu tɩ lɩɛb wʊ
+        chiin a Pilate sɛ̃.
+      sbs: 0.6814
+      gen_sec: 8.62
+      ref_sec: 8.62
+      cer: 0.0988
+      wer: 0.25
+    bible_00195:
+      source: bible
+      text: Fʊ̃ʊ mɩ, bɔ̃ɔ a wʊ yele sʊ̃, bojũu wʊ chɩrɛ naa a lɛ sɩn 'yɛrɛ.
+      sbs: 0.7915
+      gen_sec: 4.95
+      ref_sec: 5.02
+      cer: 0.119
+      wer: 0.2667
+    bible_00196:
+      source: bible
+      text: A yɩ sãakpãmɩne dɔ̃ɔ di a maana a mɔgɔ̃ɔ pɔ tɩ chɛnɛ kpi.
+      sbs: 0.7121
+      gen_sec: 4.69
+      ref_sec: 3.2
+      cer: 0.0714
+      wer: 0.3846
+    bible_00197:
+      source: bible
+      text: Bojũu sɔ̃ɔ waara ka nɩbɛ kʊ̃ lɛ chɛlɛ a wiilfʊ ala na tor ɛ, tɩchɛ ka a ba tobo jɔ̃ɔnɔ̃ ba
+        'yɛryor wõfʊ 'yɔ̃ɔ, ka ba bʊɔl wiwiilyɔɔ lɔ̃ɔtaar ka ba wile ba lɛ ban bʊɔrɔ.
+      sbs: 0.7929
+      gen_sec: 13.48
+      ref_sec: 14.32
+      cer: 0.123
+      wer: 0.4167
+    bible_00198:
+      source: bible
+      text: Tɩ pãa 'yɛr kʊ a Tomasɩ, “Tur a fʊ nubir a ka, nyɛ a n nuur na fʊ tur a fʊ nũu su a n lõboor
+        bɔɔ pɔ, na fʊ bar a baal tɩ sɔɔ de.”
+      sbs: 0.7526
+      gen_sec: 9.47
+      ref_sec: 9.06
+      cer: 0.092
+      wer: 0.1944
+    bible_00199:
+      source: bible
+      text: Ka a daba 'yɛr, “A 'maa man nɛɛ yɩn ba bɔ̃ɔ jie wʊn yi ɛ, tɩ yuo ma a nɩbie.
+      sbs: 0.6978
+      gen_sec: 5.46
+      ref_sec: 5.96
+      cer: 0.12
+      wer: 0.2
 - model: ghananlpcommunity/ghana-tts-36k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: ref
@@ -17440,4 +19183,4 @@ benchmarks:
       ref_sec: 5.96
       cer: 0.46
       wer: 0.75
-updated: '2026-10-01'
+updated: '2026-10-09'

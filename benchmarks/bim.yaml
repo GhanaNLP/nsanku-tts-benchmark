@@ -1738,6 +1738,1733 @@ benchmarks:
       ref_sec: 7.08
       cer: 0.0152
       wer: 0.0556
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7287
+  num_scored: 200
+  cer: 0.0747
+  wer: 0.2542
+  accuracy: 0.9253
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.827
+  score: 0.827
+  per_source:
+    bible:
+      sbs: 0.7287
+      cer: 0.0747
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Bi din baar naasubure, ki be tiŋ na kur po. Li naasuut din yab ki gar naasuut nba kur mi baar,
+        ki bia yab gar naasuut nba kur saa mi baara.
+      sbs: 0.7519
+      gen_sec: 11.26
+      ref_sec: 11.18
+      cer: 0.0286
+      wer: 0.0645
+    bible_00001:
+      source: bible
+      text: Yii mei Yennu batnba nan binba kur tee yikoo damm na paak, a tii be nan laafia nan parmaasir,
+        kii tee yentina, kii be soonna.
+      sbs: 0.7801
+      gen_sec: 10.33
+      ref_sec: 9.98
+      cer: 0.0309
+      wer: 0.2
+    bible_00002:
+      source: bible
+      text: Ŋaan i ki sikin i mɔŋ nan dinna. I ki turin baakir, koo ki wei sennii nba kur ki n tur yimm
+        nan i yeejamm na.
+      sbs: 0.7101
+      gen_sec: 8.79
+      ref_sec: 8.96
+      cer: 0.0
+      wer: 0.0
+    bible_00003:
+      source: bible
+      text: Wunba dɔŋ pot u punn ŋaan tan teen Masiaweirɔ, ŋaant ki wun dian nna; wunba mun ki pot ŋaan
+        teen Masiaweirɔ, wuu kii loon u ji daa porii u punni.
+      sbs: 0.7294
+      gen_sec: 12.29
+      ref_sec: 11.44
+      cer: 0.0893
+      wer: 0.3
+    bible_00004:
+      source: bible
+      text: Tingbouŋ, gbiintir. N baat nan boontue niib na paak, ki li sii tee bi biit tubdatu, kimaan
+        bi yêt n tumiiue, ki bia ki gaar n maan.
+      sbs: 0.7264
+      gen_sec: 10.84
+      ref_sec: 12.36
+      cer: 0.0505
+      wer: 0.1481
+    bible_00005:
+      source: bible
+      text: Li-i tee ki i lakin leeb ki di, li ki tee ti Yomdaanɔ jeet kaa ki i dii.
+      sbs: 0.7484
+      gen_sec: 5.63
+      ref_sec: 5.46
+      cer: 0.0192
+      wer: 0.1667
+    bible_00006:
+      source: bible
+      text: Li tee yoo kur mɔlor nyinne ki tur yimm Israel teeb nan min, kimaan min Yennu-e nan sanpaak
+        nan tiŋ, daa ŋanloob na ni, ŋaan nyik toonn ki foi daaŋanlore daar.”
+      sbs: 0.7243
+      gen_sec: 13.65
+      ref_sec: 13.22
+      cer: 0.0242
+      wer: 0.0645
+    bible_00007:
+      source: bible
+      text: Yoo nba ki n loo dindouŋ ni na, ki Yennu maan ŋamm baar n boor.
+      sbs: 0.7039
+      gen_sec: 5.21
+      ref_sec: 4.38
+      cer: 0.0851
+      wer: 0.1333
+    bible_00008:
+      source: bible
+      text: ki Netanel, wunba tee Suar bija na tee Isakar booru ni tɔɔndaanɔ,
+      sbs: 0.7076
+      gen_sec: 5.55
+      ref_sec: 5.9
+      cer: 0.0962
+      wer: 0.25
+    bible_00009:
+      source: bible
+      text: Neria bija Baruk-o beta a fan pak linba na ki jiin ti po, a Babilonia teeb na n la nyannu
+        ti paak, ki kpit, koo ki soorit ki saan nant Babilonia.”
+      sbs: 0.7407
+      gen_sec: 11.78
+      ref_sec: 13.14
+      cer: 0.0273
+      wer: 0.129
+    bible_00010:
+      source: bible
+      text: Daanɔ nba yêen Yennu Bija Yiisa, ti Baa Yennu ki be nanɔ, ŋaan wunba piak ki yeen a u teen
+        yada nan Yiisa tee Yennu Bijae, ti Baa Yennu be nanɔ.
+      sbs: 0.7183
+      gen_sec: 11.78
+      ref_sec: 12.58
+      cer: 0.0091
+      wer: 0.0323
+    bible_00011:
+      source: bible
+      text: Li paak, wunba biir Yennu diiuk, Yennu mun saa biir li yɔɔwa. Kimaan Yennu diiuk tee diyeeŋe;
+        ki yimme tee diiuk maŋ.
+      sbs: 0.7241
+      gen_sec: 10.07
+      ref_sec: 8.54
+      cer: 0.044
+      wer: 0.0909
+    bible_00012:
+      source: bible
+      text: Baa lek yeen a, “Nan Yennu nba be na,”
+      sbs: 0.7119
+      gen_sec: 2.82
+      ref_sec: 3.4
+      cer: 0.1154
+      wer: 0.3333
+    bible_00013:
+      source: bible
+      text: Ii tuu taan leeb ki jiant min Yennu daaŋanlore daar, ŋaan daa tuun i mɔŋ toona.
+      sbs: 0.7239
+      gen_sec: 6.83
+      ref_sec: 6.4
+      cer: 0.0968
+      wer: 0.3125
+    bible_00014:
+      source: bible
+      text: N kan fit jii niib na kur jika n kuukɔɔ, li saa yabit ki paakima.
+      sbs: 0.7107
+      gen_sec: 5.21
+      ref_sec: 6.16
+      cer: 0.102
+      wer: 0.2667
+    bible_00015:
+      source: bible
+      text: “N saa te ki niib nba nami na-ii tiinin jaŋmaanii. N saa baar nan ŋmatir, niib nba ki i kɔn
+        namm na sinsuuk ni, ki bia te ki i datai kur n chiar ŋaan nyiki.
+      sbs: 0.7376
+      gen_sec: 12.71
+      ref_sec: 14.3
+      cer: 0.069
+      wer: 0.2
+    bible_00016:
+      source: bible
+      text: Ki Moses jii sɔn na ki mii mii niib na paak ŋaan yet a, “Linba nae tee sɔn nba gbeen mɔlor
+        nba ki Yennu lor nani, yoo nba ki u turi u sennii na.”
+      sbs: 0.742
+      gen_sec: 11.35
+      ref_sec: 12.72
+      cer: 0.0561
+      wer: 0.2059
+    bible_00017:
+      source: bible
+      text: nan Hesbonn, nan Jaser doi, nan li bonkobit kpinkpaar boa.
+      sbs: 0.7369
+      gen_sec: 5.03
+      ref_sec: 7.0
+      cer: 0.0435
+      wer: 0.2
+    bible_00018:
+      source: bible
+      text: Ki ti mɔŋ mɔŋ mun bann Yennu nba loont biaŋinba, ki bia teen yada nan u set loont.
+      sbs: 0.6963
+      gen_sec: 7.0
+      ref_sec: 6.72
+      cer: 0.0952
+      wer: 0.1667
+    bible_00019:
+      source: bible
+      text: Li poor po, ki u kpakir Sedekaya maŋ ninbina, ŋaan te ki bi baanɔ jarit, a bin saan nanɔ Babilonia.
+      sbs: 0.6956
+      gen_sec: 8.36
+      ref_sec: 8.54
+      cer: 0.0263
+      wer: 0.15
+    bible_00020:
+      source: bible
+      text: I poŋ mi nan binba tuun Yenjiantu ŋasaakak ni na, bi jeet nyi bi toonn maŋ nie; ki binba mann
+        mannu ki teen Yennu ki ŋamii binbintir na mun gaan bi yar leŋe.
+      sbs: 0.6838
+      gen_sec: 13.31
+      ref_sec: 12.36
+      cer: 0.0656
+      wer: 0.2121
+    bible_00021:
+      source: bible
+      text: li doi nan niib nba be leŋ na. Niib saa mɔ boi sommir po.
+      sbs: 0.6929
+      gen_sec: 4.61
+      ref_sec: 5.28
+      cer: 0.119
+      wer: 0.2857
+    bible_00022:
+      source: bible
+      text: Ii tuu tiar daar na ni, ki di jaamm, ki lii tiani min Yabint Yennu nba tun linba. Ii di jaamm
+        maŋ binn kur.”
+      sbs: 0.7572
+      gen_sec: 8.7
+      ref_sec: 8.76
+      cer: 0.0625
+      wer: 0.1667
+    bible_00023:
+      source: bible
+      text: Ki bi piin ki somm nan biaŋinba ki Yennu wann Moses na.
+      sbs: 0.721
+      gen_sec: 4.61
+      ref_sec: 3.9
+      cer: 0.0465
+      wer: 0.1667
+    bible_00024:
+      source: bible
+      text: Parbiir nba kaa paak baar Gasa teeb paaka,
+      sbs: 0.7308
+      gen_sec: 3.58
+      ref_sec: 3.1
+      cer: 0.0588
+      wer: 0.25
+    bible_00025:
+      source: bible
+      text: Bii tuun toonŋana, ki bi toonŋana maŋ-ii yab; ki bi nii-ii yaa nan piinii turu.
+      sbs: 0.719
+      gen_sec: 7.0
+      ref_sec: 5.16
+      cer: 0.0167
+      wer: 0.0667
+    bible_00026:
+      source: bible
+      text: Tɔn, li-i tee ki i di, amii ki i nyu bonnyunyuut, amii ki i tuun linba kur, yii tee man linba
+        sa tur Yennu baakir.
+      sbs: 0.7686
+      gen_sec: 9.22
+      ref_sec: 8.48
+      cer: 0.0238
+      wer: 0.08
+    bible_00027:
+      source: bible
+      text: Ki Yennu yet a, “N saa te ki n baakir ŋant na n gar a boor, ŋaan ki man wanna n sann. Min
+        Yennu sii mɔk ninbatinu niib nba ki n gannib na paak,
+      sbs: 0.758
+      gen_sec: 11.35
+      ref_sec: 12.68
+      cer: 0.019
+      wer: 0.1176
+    bible_00028:
+      source: bible
+      text: Lanne tee n nyɔɔti? N nyɔɔt tee maa mɔɔntir barŋanii maŋ yann nae, ki ki jii yaak nba ki n
+        mɔk barŋanii toona ni na ki gaan siari.
+      sbs: 0.6827
+      gen_sec: 10.84
+      ref_sec: 9.14
+      cer: 0.05
+      wer: 0.2143
+    bible_00029:
+      source: bible
+      text: Jeyel-e din sibir Gibeonn doo ki kar leŋ, ki u ŋaapoo sann tee Maaka,
+      sbs: 0.7524
+      gen_sec: 5.89
+      ref_sec: 6.28
+      cer: 0.1509
+      wer: 0.2857
+    bible_00030:
+      source: bible
+      text: Mi-i mei Yennu maboorganu ni, n seeke mei, ŋaan n yan kaa leŋi.
+      sbs: 0.6713
+      gen_sec: 5.38
+      ref_sec: 4.96
+      cer: 0.1064
+      wer: 0.5385
+    bible_00031:
+      source: bible
+      text: ŋɔɔe tee n baa Yennu, ki n saa yin yaŋ ki jiin u yabint po.
+      sbs: 0.7861
+      gen_sec: 4.78
+      ref_sec: 4.84
+      cer: 0.0
+      wer: 0.0
+    bible_00032:
+      source: bible
+      text: Li din tee waat yooe, ki kpanbar na kar u waat naakuuk ni ki kpia muu.
+      sbs: 0.7563
+      gen_sec: 5.63
+      ref_sec: 5.42
+      cer: 0.0755
+      wer: 0.3125
+    bible_00033:
+      source: bible
+      text: N naa waas, n mɔk parpeenn nan ya tian linba ki n wanni na kur, ki bia tee nnee.
+      sbs: 0.7393
+      gen_sec: 6.31
+      ref_sec: 5.38
+      cer: 0.0508
+      wer: 0.1579
+    bible_00034:
+      source: bible
+      text: Juda booru ni niib nba din kar Jerusalem din tee kobii ŋanloob nan piinyiae.
+      sbs: 0.754
+      gen_sec: 6.57
+      ref_sec: 6.5
+      cer: 0.0806
+      wer: 0.2857
+    bible_00035:
+      source: bible
+      text: “I yonbaa po terik sii tee Sinsuuk ni mɔkgbeŋir nae.
+      sbs: 0.6952
+      gen_sec: 4.35
+      ref_sec: 3.8
+      cer: 0.0732
+      wer: 0.5
+    bible_00036:
+      source: bible
+      text: Li-i tee Yennu loomm nan i di fara toonŋana paak, li chee nan i di fara toonbiit paak;
+      sbs: 0.7321
+      gen_sec: 7.17
+      ref_sec: 7.76
+      cer: 0.0303
+      wer: 0.0556
+    bible_00037:
+      source: bible
+      text: “A yet Aarɔnn nan u bonjai ki bin paan bi nii pejaleek nba kii turin na yur paak.
+      sbs: 0.7146
+      gen_sec: 6.49
+      ref_sec: 7.12
+      cer: 0.0484
+      wer: 0.2222
+    bible_00038:
+      source: bible
+      text: I yenɔ-i mɔk maan nan u lɔɔ nba waa Masia, ŋaan ki ki jiir ki saan nann Masiaweira boor ki
+        bi saa ŋammir, ŋaan jiir ki saan nann binba ki waa Masia na buut bunu boor, li sii mɔk fei hei.
+      sbs: 0.7263
+      gen_sec: 15.52
+      ref_sec: 12.82
+      cer: 0.0922
+      wer: 0.2439
+    bible_00039:
+      source: bible
+      text: Laa nyii sian yoowa, bi naakuuk ni niibe din guu Kpanbar Tammɔkɔɔkir nba be yondo po na. Bi
+        din tuu tee tammɔguurae, ki be tammɔi nba saa Liifai teeb kaaŋ na ni.
+      sbs: 0.7834
+      gen_sec: 13.48
+      ref_sec: 14.66
+      cer: 0.0794
+      wer: 0.2812
+    bible_00040:
+      source: bible
+      text: U ki mɔk nyatuku; u ki loon u mɔŋ nyɔɔt kuukɔɔ kaa; u ki dont wutoor yann yanni; u bia ki
+        dia bonbiir nba ki bi tumɔ.
+      sbs: 0.7038
+      gen_sec: 9.47
+      ref_sec: 8.84
+      cer: 0.069
+      wer: 0.2222
+    bible_00041:
+      source: bible
+      text: Linba na kur tun ki turib ki li tee kpaanii ki tur leeb, ki li sɔb Yennu gbouŋ ni ki tee kpaanii
+        ki tur timm nba be yoo nba ki dunia loon gbennu na.
+      sbs: 0.7586
+      gen_sec: 11.86
+      ref_sec: 11.1
+      cer: 0.0265
+      wer: 0.0294
+    bible_00042:
+      source: bible
+      text: Sɔɔ kur nba be durinya na ni saa bui bonchiann.
+      sbs: 0.6774
+      gen_sec: 3.84
+      ref_sec: 3.8
+      cer: 0.2432
+      wer: 0.9
+    bible_00043:
+      source: bible
+      text: Ki nyun na jen ki piin taantorit na nan li ŋmakit-teeb na, nan Ijipt tɔbfaara nba bo waa beer
+        Israel teeb ki sik mɔkgbeŋir ni na, nan bi yenɔkɔɔwa din ki tinni.
+      sbs: 0.7709
+      gen_sec: 13.48
+      ref_sec: 13.28
+      cer: 0.072
+      wer: 0.4062
+    bible_00044:
+      source: bible
+      text: Mine tee a yeejamm Yennu, Abraham nan Aisak nan Jakɔb Yennu.” Ki Moses dɔkin u numpo, kimaan
+        u tiin jaŋmaanii nan wun la Yennu.
+      sbs: 0.7795
+      gen_sec: 10.67
+      ref_sec: 10.82
+      cer: 0.0101
+      wer: 0.0833
+    bible_00045:
+      source: bible
+      text: ki kpanbara bonchiann teen siir nan tɔb.
+      sbs: 0.6752
+      gen_sec: 3.5
+      ref_sec: 3.34
+      cer: 0.1515
+      wer: 0.4286
+    bible_00046:
+      source: bible
+      text: Ŋaan li-i tee ki i bu n buut nan nisaarii nba tuu bu bi leeb buut na, n baka kaa; n ki bu
+        n mɔŋ buut gbaa.
+      sbs: 0.7132
+      gen_sec: 8.36
+      ref_sec: 8.5
+      cer: 0.0395
+      wer: 0.1852
+    bible_00047:
+      source: bible
+      text: Ki Sebulunn yent ni, ki bi nyinn Rimono nan Tabor.
+      sbs: 0.7241
+      gen_sec: 4.18
+      ref_sec: 5.34
+      cer: 0.1026
+      wer: 0.3
+    bible_00048:
+      source: bible
+      text: Jehoyachinn din mɔk yaak ki liatir u dansarik liant na, ŋaan lia taŋant, ki bia fit lakin
+        kaar nan kpanbar na ki di jeet, u manfoor ni kur.
+      sbs: 0.7044
+      gen_sec: 11.69
+      ref_sec: 11.78
+      cer: 0.037
+      wer: 0.0714
+    bible_00049:
+      source: bible
+      text: Mi-i bo-i gann toonn maŋ n tiauŋue, n bo sa la nyɔɔt, ŋaan min-i kaa gann n mɔŋi, li tee Yennue
+        guunin toonn maŋ.
+      sbs: 0.7316
+      gen_sec: 9.73
+      ref_sec: 9.48
+      cer: 0.0361
+      wer: 0.25
+    bible_00050:
+      source: bible
+      text: Yennu naan ki tee mɔb ni, li tee paŋe.
+      sbs: 0.7312
+      gen_sec: 3.16
+      ref_sec: 4.0
+      cer: 0.1429
+      wer: 0.4444
+    bible_00051:
+      source: bible
+      text: A niib nba mɔk garuk na saa gbiat baa, ki sɔɔ kan sommib ki bin fiiri. N saa joo a doi muu,
+        ki linba kur be ki kpia saa biir.”
+      sbs: 0.73
+      gen_sec: 9.81
+      ref_sec: 10.56
+      cer: 0.0109
+      wer: 0.0667
+    bible_00052:
+      source: bible
+      text: Ki bi soorin, ki pirimin ŋmiit, ki sikinin kpanbar ŋaasaakɔɔ Malkia bunbunn ni, ki li be kpanbar
+        ŋaadindouŋ ni. Nyun din kaa bunbunn na ni, see bakir kɔɔ, ki n sik fer leŋ.
+      sbs: 0.7383
+      gen_sec: 14.85
+      ref_sec: 13.9
+      cer: 0.0451
+      wer: 0.303
+    bible_00053:
+      source: bible
+      text: Ki Yennu yet Moses a, “Saant ki saa la kpanbar na. N teen ŋɔɔ nan u saakab na kur tubkangbatae,
+        a lin te ki man fit tun bakitnauŋ toona na bi boor ni,
+      sbs: 0.7305
+      gen_sec: 12.2
+      ref_sec: 12.86
+      cer: 0.0354
+      wer: 0.1515
+    bible_00054:
+      source: bible
+      text: Jerusalem mɔ ki loon wamaasin wun foont,
+      sbs: 0.671
+      gen_sec: 3.5
+      ref_sec: 3.34
+      cer: 0.5758
+      wer: 0.8571
+    bible_00055:
+      source: bible
+      text: Yaa lek mɔk barii nan i naa waas na gbaa, ŋaan li tee biite. A naa bik-i tun biira koo ki
+        ŋmaba, ki a kurint sikin, li ki sɔ-ɔ?
+      sbs: 0.7187
+      gen_sec: 10.33
+      ref_sec: 9.36
+      cer: 0.0652
+      wer: 0.2069
+    bible_00056:
+      source: bible
+      text: Yennu-e tur yonnu ki li teent yentu daar ni,
+      sbs: 0.6696
+      gen_sec: 3.67
+      ref_sec: 3.64
+      cer: 0.1471
+      wer: 0.2222
+    bible_00057:
+      source: bible
+      text: Ti kur kaa bia mɔk yikoo ki sa te ki baatib paaki, amii ki pak barganii, amii ki kpint barganii.
+      sbs: 0.6991
+      gen_sec: 7.85
+      ref_sec: 7.4
+      cer: 0.0946
+      wer: 0.35
+    bible_00058:
+      source: bible
+      text: Bi din tun guu Yenjiantu Ŋasaakak nae yonnu nan nyiɔk, kimaan li din tee bi toonne. Ŋamme
+        din dia Jiantu Ŋasaakak na peenii, ki tuu loot sanyiɔk ni kur.
+      sbs: 0.7603
+      gen_sec: 13.06
+      ref_sec: 13.22
+      cer: 0.0167
+      wer: 0.069
+    bible_00059:
+      source: bible
+      text: kimaan Yennu ki yiinit a tii tee kpir kpir; ŋaan kii tee soonna.
+      sbs: 0.7206
+      gen_sec: 5.38
+      ref_sec: 5.28
+      cer: 0.08
+      wer: 0.2308
+    bible_00060:
+      source: bible
+      text: ŋaan lon parmaasir sɔnu kii waa-r,
+      sbs: 0.6567
+      gen_sec: 3.07
+      ref_sec: 3.2
+      cer: 0.0741
+      wer: 0.5
+    bible_00061:
+      source: bible
+      text: ki jii salinŋana ki teen li biitir, ki li fɔkint tee taabatii ŋantaa nan bonjinn, ki yarin
+        taabatii ŋanlee nan bonjinn,
+      sbs: 0.7606
+      gen_sec: 10.5
+      ref_sec: 9.76
+      cer: 0.0208
+      wer: 0.1429
+    bible_00062:
+      source: bible
+      text: Bi din saan tɔbe ki kɔn nan Hagar teeb nba tee Jetur booru nan Nafis booru nan Nodab booru
+        na.
+      sbs: 0.7721
+      gen_sec: 7.68
+      ref_sec: 10.12
+      cer: 0.0676
+      wer: 0.25
+    bible_00063:
+      source: bible
+      text: Barŋanii na paake ki n tee linba na kur, a n tan la li nyɔɔt.
+      sbs: 0.6665
+      gen_sec: 4.86
+      ref_sec: 3.88
+      cer: 0.0
+      wer: 0.0
+    bible_00064:
+      source: bible
+      text: Yaa set loon Seyeeŋ piinii na, yii loon piinii nba saa somm Masiaweira na.
+      sbs: 0.7069
+      gen_sec: 6.31
+      ref_sec: 6.82
+      cer: 0.1864
+      wer: 0.6429
+    bible_00065:
+      source: bible
+      text: Ki Moses donn u nuu ki tokin sanpaak, ki bunbɔnchiɔŋ baar Ijipt, daa ŋantaa.
+      sbs: 0.7574
+      gen_sec: 6.66
+      ref_sec: 6.0
+      cer: 0.0167
+      wer: 0.2143
+    bible_00066:
+      source: bible
+      text: Tɔn, ki niib na ki tuun siar daaŋanlore daar kur.
+      sbs: 0.699
+      gen_sec: 4.18
+      ref_sec: 3.98
+      cer: 0.0526
+      wer: 0.2
+    bible_00067:
+      source: bible
+      text: Yennu nba yiini na sa sak tun nna, kimaan u tee barmɔnii daanɔe.
+      sbs: 0.7495
+      gen_sec: 5.29
+      ref_sec: 4.82
+      cer: 0.02
+      wer: 0.0769
+    bible_00068:
+      source: bible
+      text: “Ii tuu di jaangbeŋa ŋantaa binn nɔɔk ni ki turin baakir.
+      sbs: 0.7296
+      gen_sec: 4.86
+      ref_sec: 8.98
+      cer: 0.1333
+      wer: 0.3636
+    bible_00069:
+      source: bible
+      text: Wunba jii u mɔŋ ki taan nan poochonchonn, ŋɔɔ nan li daanɔ ŋarin taan gbananyennkɔɔe na. Li
+        sɔb Yennu gbouŋ ni a, “Jɔɔ nan u poo saa taan ki tee gbananyennkɔɔe.”
+      sbs: 0.7002
+      gen_sec: 13.65
+      ref_sec: 13.4
+      cer: 0.144
+      wer: 0.1935
+    bible_00070:
+      source: bible
+      text: 'Tɔn, barii nba ki ti din gbat ŋɔɔ Yiisa Masia boor ki mɔɔntir teeni na, li tee nnae: Yabint
+        Yennu tee yentue, ki bunbɔnn kaa u ni.'
+      sbs: 0.7155
+      gen_sec: 10.75
+      ref_sec: 11.0
+      cer: 0.0404
+      wer: 0.1111
+    bible_00071:
+      source: bible
+      text: Sanyiɔk ni, i won saa la yabint Yennu yentsaakar. U gbat yaa nyiirɔ biaŋinbawa. Nn, i nyiir
+        ŋɔɔe, kimaan timm kpan tee u masɔkinteebe.
+      sbs: 0.7668
+      gen_sec: 11.61
+      ref_sec: 12.88
+      cer: 0.0381
+      wer: 0.3333
+    bible_00072:
+      source: bible
+      text: Niib na kur nan bi saakab din sak nan bin ŋaa bi daaba na, ki bia ji daa ban jikitib ki tee
+        daaba. Ki bi set din ŋaab,
+      sbs: 0.7341
+      gen_sec: 9.56
+      ref_sec: 10.54
+      cer: 0.0227
+      wer: 0.0357
+    bible_00073:
+      source: bible
+      text: Jab-i pɔɔr daan tilɔɔna, bi tuu nyik yenn-nbae tiinii na paak, ki li-i tee fat-teeb baar nyiɔk,
+        bi tuu jii linba ki bi loon na kɔɔe.
+      sbs: 0.7164
+      gen_sec: 11.01
+      ref_sec: 11.0
+      cer: 0.1212
+      wer: 0.3462
+    bible_00074:
+      source: bible
+      text: ŋaan mi-i be Masiaweira sinsuuk ni, n sii loon man pak mɔbona ŋanŋmu nba mɔk paake ki lin
+        somm leeb na, ki gar man pak mɔbona tusir maboorganu ni.
+      sbs: 0.669
+      gen_sec: 12.37
+      ref_sec: 12.02
+      cer: 0.0877
+      wer: 0.1034
+    bible_00075:
+      source: bible
+      text: 'U bia din mar bonjai banŋmu ki pukin: Ŋamme tee Hasuba nan Ohel nan Berekia nan Hasadia nan
+        Jusab Hesed.'
+      sbs: 0.782
+      gen_sec: 8.87
+      ref_sec: 11.88
+      cer: 0.0482
+      wer: 0.25
+    bible_00076:
+      source: bible
+      text: Wunba faa tinpanii ŋaan ki faa nan ninmɔnn faanu, ŋmee sa teen siir nan tabu?
+      sbs: 0.755
+      gen_sec: 6.66
+      ref_sec: 7.1
+      cer: 0.0656
+      wer: 0.4
+    bible_00077:
+      source: bible
+      text: N bik Timoti, n jikit kpaanii maŋ ki tee a nuu ni. Kpaanii maŋ tee kaman nan mɔbona nba ki
+        sɔkiniinba din poŋ pak a po sianyoo nba gar na. Jiin barii maŋ ki teenn jatiat ki kɔn kunkɔnŋann,
+      sbs: 0.7104
+      gen_sec: 16.12
+      ref_sec: 11.9
+      cer: 0.0753
+      wer: 0.2564
+    bible_00078:
+      source: bible
+      text: nan bonchonchona paak, nan binba mɔk niauŋ ki dɔɔ nan bi jaleeb, nan binba jaan niib, nan
+        binba tee faak damm, nan binba tee faak siara na, nan linba kur ki waa barmɔnii wannu paake;
+      sbs: 0.7622
+      gen_sec: 15.27
+      ref_sec: 14.48
+      cer: 0.0634
+      wer: 0.1429
+    bible_00079:
+      source: bible
+      text: Ŋaan poo-i teen Yisa yada, kii loon niib, kii tee popeendaanɔ, kii be soonna, Yennu sa tinnɔ
+        u maaru niwa.
+      sbs: 0.7628
+      gen_sec: 9.05
+      ref_sec: 10.8
+      cer: 0.0494
+      wer: 0.2
+    bible_00080:
+      source: bible
+      text: nan Hesronn nan Karmi naakuut.
+      sbs: 0.7283
+      gen_sec: 2.65
+      ref_sec: 3.28
+      cer: 0.2
+      wer: 1.2
+    bible_00081:
+      source: bible
+      text: Bona bonchiann be sanpaapo nan tingbouŋ na ni, ki bi yib yennii nan yomdamm, ŋaan bi sɔɔ ki
+        tee Yennu koo Yomdaanɔ.
+      sbs: 0.7123
+      gen_sec: 9.81
+      ref_sec: 11.24
+      cer: 0.0
+      wer: 0.0909
+    bible_00082:
+      source: bible
+      text: Ki tubir mun-i yet a waa ki tee ninbinn na, li paak, u ki tee gbanant bɔkiri, ŋann kaa saa
+        te ki u ki tee gbananti.
+      sbs: 0.6734
+      gen_sec: 9.3
+      ref_sec: 9.52
+      cer: 0.0706
+      wer: 0.2308
+    bible_00083:
+      source: bible
+      text: Ŋaan wunba kɔɔn u sarkpeŋ, li ŋan; wunba mun ki kɔɔn u sarkpeŋ, u tun linba ŋan ki gar wunba
+        kɔɔn nawa.
+      sbs: 0.748
+      gen_sec: 8.87
+      ref_sec: 9.32
+      cer: 0.0256
+      wer: 0.0909
+    bible_00084:
+      source: bible
+      text: Tɔn, yada, nan dindann, nan lomm, li bona ŋantaa na be; ŋaan lomme gar li kur.
+      sbs: 0.7194
+      gen_sec: 6.66
+      ref_sec: 9.4
+      cer: 0.0877
+      wer: 0.25
+    bible_00085:
+      source: bible
+      text: Ti kur kaa tee toomiinba, koo sɔkiniinba, koo wannteebi. Ti kur kaa sii mɔk yiikoo ki saa
+        tun bakitnauŋ toona.
+      sbs: 0.6541
+      gen_sec: 9.47
+      ref_sec: 8.16
+      cer: 0.0
+      wer: 0.0
+    bible_00086:
+      source: bible
+      text: Ki Moses yet kpanbar na a, “Yennu yet a, ‘Tansuunii, n saa lin Ijipt kur po,
+      sbs: 0.7727
+      gen_sec: 6.06
+      ref_sec: 6.74
+      cer: 0.0182
+      wer: 0.125
+    bible_00087:
+      source: bible
+      text: Ki linba na want nan ti bia want ti mɔŋee? Li daa tee talase nan sɔɔ-n sɔb ti siara gbant
+        ki turii? amii ti gaar ti siara gbant i boor ni-ii? kaman nan nisiab nba tuun biaŋinba na. Aaii.
+      sbs: 0.7267
+      gen_sec: 16.12
+      ref_sec: 14.14
+      cer: 0.0851
+      wer: 0.3077
+    bible_00088:
+      source: bible
+      text: Niib nba din sint jen bi dandoo ni na din tee Israel nileeb nan mannteeb nan Liifai teeb nan
+        Jiantu Ŋasaakak ni toontunnae.
+      sbs: 0.7946
+      gen_sec: 10.5
+      ref_sec: 11.72
+      cer: 0.14
+      wer: 0.4348
+    bible_00089:
+      source: bible
+      text: Ki bi fiir kunkoouk na paak ki saan Matana,
+      sbs: 0.6978
+      gen_sec: 3.58
+      ref_sec: 3.14
+      cer: 0.0588
+      wer: 0.3333
+    bible_00090:
+      source: bible
+      text: a wun kan Liifai booru naakuuk naakuuk nan ŋaak ŋaak, ki kan ki sɔb bonjak nba kur dii ŋmaarik
+        koo ki gar nna sann,
+      sbs: 0.7125
+      gen_sec: 9.73
+      ref_sec: 11.38
+      cer: 0.0333
+      wer: 0.125
+    bible_00091:
+      source: bible
+      text: ki teen guunu ki lii kpakii nan niibifoouk fɔkint na, ki lintir. Ki salima nba ŋan bonkokitir-ii
+        kook li yur paak,
+      sbs: 0.7302
+      gen_sec: 9.73
+      ref_sec: 10.3
+      cer: 0.0444
+      wer: 0.2381
+    bible_00092:
+      source: bible
+      text: Li poorpo ki niib na fiir Haserof, ki saan ŋamm chaan bi kaaŋ Parann kunkoouk paak.
+      sbs: 0.7708
+      gen_sec: 7.17
+      ref_sec: 10.16
+      cer: 0.0606
+      wer: 0.125
+    bible_00093:
+      source: bible
+      text: ŋaan yi tuu mintaa ki bikin bonsiar kur, ki gaar linba ŋan,
+      sbs: 0.7541
+      gen_sec: 5.12
+      ref_sec: 4.1
+      cer: 0.0652
+      wer: 0.1667
+    bible_00094:
+      source: bible
+      text: Maa baar i boor yoo nba, n din chɔke, ki jaŋmaanii nan jijekit soorin.
+      sbs: 0.7097
+      gen_sec: 5.89
+      ref_sec: 5.4
+      cer: 0.0
+      wer: 0.1429
+    bible_00095:
+      source: bible
+      text: A niipoouk turu na lek ŋan, ŋaan li ki mɔk sommir ki teen sɔɔ.
+      sbs: 0.6531
+      gen_sec: 5.21
+      ref_sec: 4.14
+      cer: 0.0851
+      wer: 0.1429
+    bible_00096:
+      source: bible
+      text: Ki Gaad booru nan Rubenn booru jiin a, “Chanbaa, ti tee a toontunna ki saa tun nan Yennu nba
+        wann biaŋinba nawa.
+      sbs: 0.7415
+      gen_sec: 9.3
+      ref_sec: 10.62
+      cer: 0.0115
+      wer: 0.0455
+    bible_00097:
+      source: bible
+      text: ŋamme tee binba kur nyii Kret mɔkgbiɔŋ po na.
+      sbs: 0.7004
+      gen_sec: 4.01
+      ref_sec: 3.72
+      cer: 0.2222
+      wer: 0.8889
+    bible_00098:
+      source: bible
+      text: Linba na saa tun ki turib, kimaan bi ki sak mɔmaan nba ki n teen n toontunna nba tee sɔkiniinba,
+        ki bi teemm yoo kur na. Bi yêt gbiintue.
+      sbs: 0.726
+      gen_sec: 11.18
+      ref_sec: 11.06
+      cer: 0.0095
+      wer: 0.0345
+    bible_00099:
+      source: bible
+      text: ki tabin yenɔ lakir na biitir kpin-yeŋ, ki tabin lɔɔ kpinleek po. Ŋammit bona banlee maŋ ki
+        bii taab ki kpab nan biitir na, kii tee bonyenn,
+      sbs: 0.7621
+      gen_sec: 12.03
+      ref_sec: 13.66
+      cer: 0.055
+      wer: 0.1481
+    bible_00100:
+      source: bible
+      text: Ti mi nan sennu maŋ ŋan, li-i tee ki sɔɔ diar ki tuun kaman nan la want a tii tuun nann biaŋinba
+        na.
+      sbs: 0.7393
+      gen_sec: 8.28
+      ref_sec: 8.3
+      cer: 0.0533
+      wer: 0.2174
+    bible_00101:
+      source: bible
+      text: I sak Yennu mɔb man, ki ji daa waa loonbiit nba ki i din waa yoo nba ki i din ki mi Yisa Masia
+        na.
+      sbs: 0.7069
+      gen_sec: 7.59
+      ref_sec: 8.4
+      cer: 0.0278
+      wer: 0.08
+    bible_00102:
+      source: bible
+      text: Ki bi pakɔ a, “Karin kok paak ki karin gbouŋ maŋ ki turit.” Ki Baruk karin.
+      sbs: 0.7209
+      gen_sec: 6.14
+      ref_sec: 5.8
+      cer: 0.1273
+      wer: 0.5
+    bible_00103:
+      source: bible
+      text: Ŋanne ki Rehoboam saan Sekem, siaminba ki Israel teeb nba be gaŋ po na tikir a bin dinnɔ naan.
+      sbs: 0.7466
+      gen_sec: 8.02
+      ref_sec: 9.72
+      cer: 0.0135
+      wer: 0.0526
+    bible_00104:
+      source: bible
+      text: N saa te ki tiŋ na n mɔkit nan laa din tee na. Min Yennu-e pak na.”
+      sbs: 0.7153
+      gen_sec: 5.21
+      ref_sec: 5.82
+      cer: 0.0426
+      wer: 0.1176
+    bible_00105:
+      source: bible
+      text: Ki n sɔb n sann ki te niib dii siara, ki n loon gbouŋ na. N din bikin likirii na churu paake.
+      sbs: 0.7294
+      gen_sec: 7.51
+      ref_sec: 7.74
+      cer: 0.0145
+      wer: 0.0455
+    bible_00106:
+      source: bible
+      text: Ki Nebusaradann nan saakayudamm nba tee Nebusasbann nan Nergal Sareser nan Babilonia kpanbar
+        saakaleeb na
+      sbs: 0.7264
+      gen_sec: 9.3
+      ref_sec: 11.86
+      cer: 0.0769
+      wer: 0.6
+    bible_00107:
+      source: bible
+      text: Ŋmaarii piik nan ŋanlee ni tee Heldai yar, ki u nyii Netofa, (u din tee Otniel yaaboonne),
+        ki u koonn mun tee jab tusaa piinlee nan ŋanna.
+      sbs: 0.7599
+      gen_sec: 11.78
+      ref_sec: 13.6
+      cer: 0.0755
+      wer: 0.2222
+    bible_00108:
+      source: bible
+      text: Ŋaant ki bont kura-n tun bonŋann ki wei leer paak.
+      sbs: 0.6832
+      gen_sec: 4.35
+      ref_sec: 6.36
+      cer: 0.0
+      wer: 0.2
+    bible_00109:
+      source: bible
+      text: Ŋaan ti ki jii yaak na ki tun nann toonni. Ti di farae bonsiar kur ni, kimaan ti ki loon ki
+        tin te ki Masia barŋanii na n jir poori.
+      sbs: 0.701
+      gen_sec: 10.75
+      ref_sec: 10.64
+      cer: 0.04
+      wer: 0.1
+    bible_00110:
+      source: bible
+      text: Ŋaan bi-i kii fit so bi mɔŋi, ŋann bin kɔɔn poob, ki poob mun n kun jab; li sɔ nan yaa sii
+        mɔk li niɔŋ ŋaan kan fit kpeeniri.
+      sbs: 0.6931
+      gen_sec: 10.5
+      ref_sec: 10.42
+      cer: 0.087
+      wer: 0.3103
+    bible_00111:
+      source: bible
+      text: ki yet a, “Dont Yabint Yennu nyannu dɔk na sanpaapo. Yennu saa tukin ki kɔn nan Amalek teeb
+        na yaayoo siiyoo.”
+      sbs: 0.7208
+      gen_sec: 9.05
+      ref_sec: 11.64
+      cer: 0.0588
+      wer: 0.4762
+    bible_00112:
+      source: bible
+      text: N walonkai, tii loon ti leeb man, kimaan lomm tee Yennu yare, ki binba mɔk lomm, ŋamme tee
+        Yennu waas ki bia miu.
+      sbs: 0.7266
+      gen_sec: 9.47
+      ref_sec: 10.52
+      cer: 0.0698
+      wer: 0.2609
+    bible_00113:
+      source: bible
+      text: “Mine tee Yennu nba tee nisaarii kur Yomdaanɔ, siar kaa ki paar n boori.
+      sbs: 0.743
+      gen_sec: 5.89
+      ref_sec: 5.34
+      cer: 0.0
+      wer: 0.1429
+    bible_00114:
+      source: bible
+      text: “Ii gbiint linba kur ki min Yennu piaki na. I daa mei yenbis, i poŋ daa puur bi sana kaawa.
+      sbs: 0.7429
+      gen_sec: 7.34
+      ref_sec: 7.82
+      cer: 0.0588
+      wer: 0.15
+    bible_00115:
+      source: bible
+      text: Sanpagbouŋ na din tun be-e bi tɔɔnn yonnu ni, ki mutootir na mun be nyiɔk.
+      sbs: 0.7079
+      gen_sec: 6.23
+      ref_sec: 8.28
+      cer: 0.1579
+      wer: 0.5333
+    bible_00116:
+      source: bible
+      text: n be jɔkunkonn na paak ki bariib.
+      sbs: 0.6895
+      gen_sec: 2.73
+      ref_sec: 3.2
+      cer: 0.2308
+      wer: 0.5714
+    bible_00117:
+      source: bible
+      text: Min ki sak ki poosɔɔ-n wann jab, amii wuu mɔk yaak ki gar jabi; poo-ii be soonna;
+      sbs: 0.7323
+      gen_sec: 6.66
+      ref_sec: 6.3
+      cer: 0.1
+      wer: 0.4706
+    bible_00118:
+      source: bible
+      text: Rubenn nan Gaad booru din mɔk bonkobit bonchiann, ki bi la nan Jaser nan Gilead tiŋ ŋan nan
+        bonkobit joonn,
+      sbs: 0.7678
+      gen_sec: 9.22
+      ref_sec: 9.56
+      cer: 0.0581
+      wer: 0.25
+    bible_00119:
+      source: bible
+      text: ki teen salima banii ŋanlee ki gaan parbiir paak chabir na tiŋ po kpinii, ki lii bɔɔk liatjak
+        na.
+      sbs: 0.7655
+      gen_sec: 8.28
+      ref_sec: 8.18
+      cer: 0.0779
+      wer: 0.2632
+    bible_00120:
+      source: bible
+      text: Ki Yennu ŋamm yet Aarɔnn a, “I kan ban la tiŋ faar koo ki la tor Israel teeb boori. Mine tee
+        i tor nan i faar Israel teeb boor.”
+      sbs: 0.7739
+      gen_sec: 10.24
+      ref_sec: 10.88
+      cer: 0.0421
+      wer: 0.1379
+    bible_00121:
+      source: bible
+      text: Li-i tee nantaar, nantatinna kur tuu tiine, ŋaan yenɔkɔɔe tuu tan di ki gaar piinii. Li paak,
+        yabit ki tin di ki gaar piinii maŋ.
+      sbs: 0.7227
+      gen_sec: 11.01
+      ref_sec: 11.62
+      cer: 0.0808
+      wer: 0.24
+    bible_00122:
+      source: bible
+      text: ki jiib ki mann maruŋ ki pukin sinsinn daar piinii maruŋ na kur po.
+      sbs: 0.7024
+      gen_sec: 5.72
+      ref_sec: 4.4
+      cer: 0.0566
+      wer: 0.1429
+    bible_00123:
+      source: bible
+      text: “I la min Yennu nba tun linba ki tur Ijipt teeb, ki baar nani nna na, nan biaŋinba ki baakir
+        tuu jii u waas ki saan namm na.
+      sbs: 0.7494
+      gen_sec: 9.98
+      ref_sec: 9.5
+      cer: 0.0323
+      wer: 0.1429
+    bible_00124:
+      source: bible
+      text: ki Ahira, wunba tee Enann bija na tee Naftali booru ni tɔɔndaanɔ.
+      sbs: 0.7086
+      gen_sec: 5.55
+      ref_sec: 5.46
+      cer: 0.1154
+      wer: 0.75
+    bible_00125:
+      source: bible
+      text: Israel teeb nba din nyii Ijipt bina ŋanlee ni, ŋmaarii ŋanlee, dapiinlee daar, ki sanpagbouŋ
+        na dɔkit Yennu lanbouŋ na paak,
+      sbs: 0.7757
+      gen_sec: 11.18
+      ref_sec: 14.36
+      cer: 0.08
+      wer: 0.381
+    bible_00126:
+      source: bible
+      text: nan bonnunubit nba ki bi yi kasia na, ki li kpaiu-ii tee nan sinpeenii bɔrik-gbina ŋantaa
+        na, kii tee nan baa bikii biaŋinba Yennu lanbouŋ ni na, ki jii olif tiinii kpan
+      sbs: 0.7707
+      gen_sec: 14.51
+      ref_sec: 13.76
+      cer: 0.0451
+      wer: 0.0938
+    bible_00127:
+      source: bible
+      text: Jatuk na, linba ki a bur, li kan fit pia li yoo; see ki li kpo daanna ki tan fit lian pia.
+      sbs: 0.6891
+      gen_sec: 7.08
+      ref_sec: 7.98
+      cer: 0.0615
+      wer: 0.1818
+    bible_00128:
+      source: bible
+      text: Naakuut na jab taan ki tee tusaa piinna nan kobii ŋanŋmu.
+      sbs: 0.7806
+      gen_sec: 5.03
+      ref_sec: 4.74
+      cer: 0.087
+      wer: 0.5455
+    bible_00129:
+      source: bible
+      text: U lu taanii nan taanjakira, mɔkgbeŋir niwa.
+      sbs: 0.6625
+      gen_sec: 3.84
+      ref_sec: 3.02
+      cer: 0.2286
+      wer: 0.8571
+    bible_00130:
+      source: bible
+      text: Taa loon ti naa waas na, ŋanne want nan ti nyii kuun paŋ ni, ki be manfoor nba kaa gbennu
+        ni. Ŋaan daanɔ nba ki mɔk li lonbooru, ŋɔɔ ŋarin biar be kuun paŋ nie.
+      sbs: 0.7006
+      gen_sec: 13.57
+      ref_sec: 13.08
+      cer: 0.0165
+      wer: 0.0857
+    bible_00131:
+      source: bible
+      text: Yoo nba ki Sipor bija Balak, wunba tee Moab kpanbar na gbat linba ki Israel teeb tun ki tur
+        Amor teeb, nan biaŋinba ki Israel teeb yabint tee na,
+      sbs: 0.7557
+      gen_sec: 12.12
+      ref_sec: 11.48
+      cer: 0.0965
+      wer: 0.2414
+    bible_00132:
+      source: bible
+      text: Bi din nyii Elim, ki saan chaan bi kaaŋ ki kpian Mɔkmuŋ,
+      sbs: 0.7907
+      gen_sec: 4.78
+      ref_sec: 4.6
+      cer: 0.0698
+      wer: 0.4167
+    bible_00133:
+      source: bible
+      text: Yennu din yet Moses a, “Wokitir a nuu ki tokin mɔkgbeŋir na, ki nyun na saa jen ki piin Ijipt
+        teeb na, nan bi taantorit nan li ŋmakit-teeb na.”
+      sbs: 0.7876
+      gen_sec: 11.78
+      ref_sec: 11.94
+      cer: 0.037
+      wer: 0.3793
+    bible_00134:
+      source: bible
+      text: Li poor po ki u tun naasinsiab, ki bi saan mann maruŋ ki joo muu ki tur Yennu, ki bia jii
+        naajai ki mann tur Yennu, ki li tee weinanleeb piinii.
+      sbs: 0.7464
+      gen_sec: 11.78
+      ref_sec: 11.9
+      cer: 0.0364
+      wer: 0.1613
+    bible_00135:
+      source: bible
+      text: Israel teeb-ii dia daar maŋ ki lii tee mɔlor nyinn.
+      sbs: 0.6712
+      gen_sec: 4.35
+      ref_sec: 3.64
+      cer: 0.475
+      wer: 0.8
+    bible_00136:
+      source: bible
+      text: Mi-i jii n mɔkint kur ki tur tatimm, ki lek jii n gbanant chab ki bi joo muu gbaa Masia paak,
+        ŋaan ki ki mɔk lommi, n ki mɔk nyɔɔti.
+      sbs: 0.664
+      gen_sec: 10.67
+      ref_sec: 10.02
+      cer: 0.0204
+      wer: 0.0667
+    bible_00137:
+      source: bible
+      text: Jiin Aarɔnn nan u bija Eleasar ki saan namm Hor jɔɔr paak,
+      sbs: 0.7185
+      gen_sec: 4.78
+      ref_sec: 5.38
+      cer: 0.1087
+      wer: 0.3333
+    bible_00138:
+      source: bible
+      text: Yennu tee kunkɔnkɔnnɔe, u sanne tee Yabint Yennu.
+      sbs: 0.7419
+      gen_sec: 4.27
+      ref_sec: 3.98
+      cer: 0.05
+      wer: 0.125
+    bible_00139:
+      source: bible
+      text: Ki bi kur taan tee jab tusaa kobik nan tusaa ŋanniin nan kobik. Efraim boorue sii waa muntaa.
+      sbs: 0.7885
+      gen_sec: 7.85
+      ref_sec: 8.08
+      cer: 0.0811
+      wer: 0.5556
+    bible_00140:
+      source: bible
+      text: Doi nba na kur tee siaminba ki Joosef, wunba tee Jakɔb bija na yaaboona din kɔɔe.
+      sbs: 0.7439
+      gen_sec: 6.74
+      ref_sec: 7.16
+      cer: 0.0625
+      wer: 0.1875
+    bible_00141:
+      source: bible
+      text: Sɔɔ kur saa fiir, kuun fiiru yoo; Masia-e fiir sinsinn, ki binba tee u niib na mun tan saa
+        fiir, u baaru daar maŋ.
+      sbs: 0.6954
+      gen_sec: 9.47
+      ref_sec: 9.7
+      cer: 0.0471
+      wer: 0.0833
+    bible_00142:
+      source: bible
+      text: ki pɔr taabii na salima, ki ŋamm salima banii ki gaan taabii na paak, ki lii dia dapɔnnkara
+        na, ki bia pɔr salima dapɔnnkara na paak.
+      sbs: 0.7715
+      gen_sec: 11.18
+      ref_sec: 12.68
+      cer: 0.0673
+      wer: 0.1923
+    bible_00143:
+      source: bible
+      text: Fi-i tee nna ki tuun biit ki teen a naa waas, ki biir bi dudukit nba ki chee na, li want nan
+        a tuun biit ki teen Masiae.
+      sbs: 0.7623
+      gen_sec: 9.56
+      ref_sec: 9.72
+      cer: 0.0
+      wer: 0.0714
+    bible_00144:
+      source: bible
+      text: Ŋanne ki naakuut saakab, nan booru na saakab, nan kunkɔnkɔnna saakab, nan saakab nba gorii
+        kpanbar mɔkint na, tur nan bi para kur.
+      sbs: 0.8054
+      gen_sec: 11.18
+      ref_sec: 11.98
+      cer: 0.0194
+      wer: 0.1739
+    bible_00145:
+      source: bible
+      text: Li paak ki bi pur leŋ sann Tabera, kimaan leŋe ki Yennu din te ki muu dii bi boor ni.
+      sbs: 0.7466
+      gen_sec: 7.0
+      ref_sec: 8.8
+      cer: 0.0469
+      wer: 0.15
+    bible_00146:
+      source: bible
+      text: Siab sa jii sarimae, amii nabint, amii tanchincheena, ki maa fiakir maŋ paak; siab mun sa
+        jii daate, amii mɔɔt, amii kakaa, ki chaan fiakir maŋ paak.
+      sbs: 0.7572
+      gen_sec: 12.8
+      ref_sec: 12.86
+      cer: 0.0522
+      wer: 0.1481
+    bible_00147:
+      source: bible
+      text: Ma din beeri Yennu mɔmaan na, Masia nisiab din tuu pan li paak, ŋaan yimme bo sa turin li
+        sommir.
+      sbs: 0.7608
+      gen_sec: 8.11
+      ref_sec: 7.86
+      cer: 0.0667
+      wer: 0.3
+    bible_00148:
+      source: bible
+      text: Li din dii nan bina ŋanŋaa naewa, ki Ijipt kpanbar kpo, ŋaan Israel teeb na din daa be bi
+        daabisin ni, ki mɔ fabin loon sommir, ki bi mɔŋ na doo Yennu boor,
+      sbs: 0.7623
+      gen_sec: 13.14
+      ref_sec: 11.66
+      cer: 0.0336
+      wer: 0.1818
+    bible_00149:
+      source: bible
+      text: Yennu yet a, “Babilonn tee kuume.
+      sbs: 0.6636
+      gen_sec: 2.73
+      ref_sec: 3.02
+      cer: 0.12
+      wer: 0.3333
+    bible_00150:
+      source: bible
+      text: Bonfoor kur mɔk u ninnauŋo, nisaarii gbanant tee yomme, ki bonkobit yar mun tee yomm, ki nɔɔnii
+        yar mun tee yomm, ki janii yar tee yomm.
+      sbs: 0.6527
+      gen_sec: 11.52
+      ref_sec: 10.42
+      cer: 0.0755
+      wer: 0.2692
+    bible_00151:
+      source: bible
+      text: Jonadab yaaboona sak sennu nba ki u senniba, ŋaan yimm ŋarin ki sak n mɔbi.
+      sbs: 0.6904
+      gen_sec: 6.49
+      ref_sec: 5.84
+      cer: 0.0169
+      wer: 0.0667
+    bible_00152:
+      source: bible
+      text: I mi biaŋinba ki ti din kpaani kaman nan waas baa nba tuu kpaamm biaŋinba na,
+      sbs: 0.7434
+      gen_sec: 6.57
+      ref_sec: 4.58
+      cer: 0.1475
+      wer: 0.375
+    bible_00153:
+      source: bible
+      text: I tiŋ ni, poosɔɔ poor kan biir, ki pookanmatir bia sii kaa i tiŋ na ni. N saa turi manfofoouk.
+      sbs: 0.7407
+      gen_sec: 7.85
+      ref_sec: 8.54
+      cer: 0.0563
+      wer: 0.25
+    bible_00154:
+      source: bible
+      text: ki ŋaan ki lii tee i dudukit ki yii be soonna, ki i baka-ii be i mɔŋ toona ni, kii tuun i
+        tiauŋ toona kii di, kaman nan ta poŋ din beti biaŋinba sinsinn na.
+      sbs: 0.7429
+      gen_sec: 13.06
+      ref_sec: 10.4
+      cer: 0.0513
+      wer: 0.3714
+    bible_00155:
+      source: bible
+      text: Fi-i yêt bi chabu, n won saa baar nan naasuut a tiŋ na paak.
+      sbs: 0.7555
+      gen_sec: 4.86
+      ref_sec: 4.58
+      cer: 0.0909
+      wer: 0.1429
+    bible_00156:
+      source: bible
+      text: Ki Yennu yet Moses a, “Dont a nuu ki tokin sanpaak, ki bunbɔnchiɔŋ saa dɔkin Ijipt tiŋ.”
+      sbs: 0.7596
+      gen_sec: 7.34
+      ref_sec: 6.84
+      cer: 0.0299
+      wer: 0.1765
+    bible_00157:
+      source: bible
+      text: ki saa liat Aarɔnn liant leŋ ki lann u bija Eleasar, kimaan Aarɔnn saa kpo leŋe.”
+      sbs: 0.7512
+      gen_sec: 6.83
+      ref_sec: 7.96
+      cer: 0.127
+      wer: 0.4375
+    bible_00158:
+      source: bible
+      text: Gotir man, Yiisa nba din gaar ti paak ki kpo nae wantit lomm nba tee biaŋinba; ki li mun kpaa
+        talase ki tin chibin ti saaŋmanii ti naa waas paak.
+      sbs: 0.6924
+      gen_sec: 12.12
+      ref_sec: 10.96
+      cer: 0.0177
+      wer: 0.1333
+    bible_00159:
+      source: bible
+      text: Hilkia baa din tee Mesulam, ki Mesulam baa tee Sadok, ki Sadok baa tee Merayof, ki Merayof
+        baa tee Ahitub;
+      sbs: 0.7798
+      gen_sec: 8.87
+      ref_sec: 11.56
+      cer: 0.0843
+      wer: 0.25
+    bible_00160:
+      source: bible
+      text: Rubenn booru (Rubenn-e din tee Jakɔb bikperik,) ki bi tee Hanok nan Palu,
+      sbs: 0.7252
+      gen_sec: 6.23
+      ref_sec: 7.54
+      cer: 0.0536
+      wer: 0.3077
+    bible_00161:
+      source: bible
+      text: kimaan i binbeŋ bia daa tee nan tingbouŋ na niib binbeŋ nae; kimaan funfunn nan mɔniɔk-u be
+        i sinsuuk ni, i ki waa tingbouŋ na niib binbeŋ kaa-a?
+      sbs: 0.6856
+      gen_sec: 12.63
+      ref_sec: 12.16
+      cer: 0.0088
+      wer: 0.0357
+    bible_00162:
+      source: bible
+      text: Li poŋ sɔb Yennu gbouŋ ni a “I ber biitdaanɔ na ki nyinnɔ i sinsuuk ni.”
+      sbs: 0.6868
+      gen_sec: 5.8
+      ref_sec: 7.84
+      cer: 0.0556
+      wer: 0.125
+    bible_00163:
+      source: bible
+      text: u daaie; li paak, ii jii i gbanant kii tuun linba sii dont u sann.
+      sbs: 0.7148
+      gen_sec: 5.29
+      ref_sec: 7.08
+      cer: 0.0612
+      wer: 0.2
+    bible_00164:
+      source: bible
+      text: Salinŋana nba saa kur fitsenta nan li bona kur na kpaiu-ii tee nan sinpeenii bɔrik-gbina piik
+        nan ŋanlore kpaiu na.
+      sbs: 0.7094
+      gen_sec: 10.07
+      ref_sec: 11.08
+      cer: 0.0968
+      wer: 0.3
+    bible_00165:
+      source: bible
+      text: Wunba gaa Yennu Bija na paak, ŋɔɔe mun mɔk manfoor maŋ; ŋaan wunba ki gaa Yennu Bija maŋ paaki,
+        u ki mɔk li manfoori.
+      sbs: 0.7438
+      gen_sec: 10.07
+      ref_sec: 9.02
+      cer: 0.0111
+      wer: 0.0417
+    bible_00166:
+      source: bible
+      text: “Li-i tee ki jɔɔ kɔi u bipoo ki bi teenɔ daabir, ŋɔɔ ki tee bin tan ŋaau nan daabjak na kaa.
+      sbs: 0.7501
+      gen_sec: 7.51
+      ref_sec: 7.16
+      cer: 0.0441
+      wer: 0.2381
+    bible_00167:
+      source: bible
+      text: Binba mɔk jab, n teeni sennue, li ki tee min kaa senni, ŋaan ti Yomdaanɔe senn, a poo daa
+        mi nyikit u sɔrɔ.
+      sbs: 0.6856
+      gen_sec: 8.79
+      ref_sec: 9.14
+      cer: 0.075
+      wer: 0.1304
+    bible_00168:
+      source: bible
+      text: ki binba fiar i bona na, siab mun saa fat bi yara.
+      sbs: 0.7104
+      gen_sec: 4.01
+      ref_sec: 3.72
+      cer: 0.1081
+      wer: 0.3333
+    bible_00169:
+      source: bible
+      text: Yennu, a ninbina ki gorii ki loon mamɔmm kaa-a?
+      sbs: 0.7087
+      gen_sec: 4.01
+      ref_sec: 4.06
+      cer: 0.0556
+      wer: 0.2222
+    bible_00170:
+      source: bible
+      text: ki bia soor ŋmipiana ŋanlee na mɔi nba tenn sɔɔn na, ki lor salima bona ŋanlee paak, ki lin
+        fit tur nan liatjak na bɔpiat paak tɔɔnn po,
+      sbs: 0.7558
+      gen_sec: 11.52
+      ref_sec: 12.96
+      cer: 0.1132
+      wer: 0.3214
+    bible_00171:
+      source: bible
+      text: Moses din jii patu na ki donn sanpaapo, ki faa tann na taar munlee. Ki nyunchiɔŋ nyii, ki
+        niib na nan bi bonkobit kur nyuu.
+      sbs: 0.7886
+      gen_sec: 10.24
+      ref_sec: 10.34
+      cer: 0.1263
+      wer: 0.4
+    bible_00172:
+      source: bible
+      text: 'Gersonn yaaboona nba nyii maaru ki tuu maarue na: Gersonn-e din tee Libni baa, ki Libni tee
+        Jahaf baa, ki Jahaf tee Sima baa,'
+      sbs: 0.8018
+      gen_sec: 10.5
+      ref_sec: 13.14
+      cer: 0.0722
+      wer: 0.2083
+    bible_00173:
+      source: bible
+      text: “A bia jii naajiik dafoot ŋanŋmu, ki lin pɔnn lanbouŋ na lokyenn po,
+      sbs: 0.7097
+      gen_sec: 5.89
+      ref_sec: 6.52
+      cer: 0.2264
+      wer: 0.6154
+    bible_00174:
+      source: bible
+      text: Yennu saa kɔn turi, li ki tee yin tun siar kaa.”
+      sbs: 0.7493
+      gen_sec: 3.75
+      ref_sec: 3.56
+      cer: 0.1143
+      wer: 0.4545
+    bible_00175:
+      source: bible
+      text: Jabaabusiar ki be ki saa fit biir Israel maaru,
+      sbs: 0.6943
+      gen_sec: 4.01
+      ref_sec: 4.26
+      cer: 0.3947
+      wer: 0.8889
+    bible_00176:
+      source: bible
+      text: Mɔtana, Yennu, ti teena niipoouk, ki dontir a sann nba tee baakir na.
+      sbs: 0.7416
+      gen_sec: 5.8
+      ref_sec: 6.7
+      cer: 0.0189
+      wer: 0.0769
+    bible_00177:
+      source: bible
+      text: Ŋaan mi-i kii mi maan paak, n tee boorganue ki tur wunba piak nanin na; wunba mun piak ki
+        teenin na tee boorganue n boor.
+      sbs: 0.6944
+      gen_sec: 10.07
+      ref_sec: 9.66
+      cer: 0.0538
+      wer: 0.2
+    bible_00178:
+      source: bible
+      text: I saa lomin, ki lan, kimaan i saa lomin nan i yan kure.
+      sbs: 0.7389
+      gen_sec: 4.35
+      ref_sec: 4.42
+      cer: 0.075
+      wer: 0.2308
+    bible_00179:
+      source: bible
+      text: 'ki yet a: Gbiintir na man, yimm nba kaa yan, ki mɔk ninbina ŋaan ki ki laat, ki mɔk tuba
+        ŋaan ki ki gbia na,'
+      sbs: 0.7313
+      gen_sec: 8.79
+      ref_sec: 8.94
+      cer: 0.0506
+      wer: 0.16
+    bible_00180:
+      source: bible
+      text: Binba yada waar na ki n kpint ki teen kaman nan bi yenɔ na a bin tinn. N lebit n mɔŋ bonsiar
+        kur ni ki tur niib kur ki loon bi siab-n tinn.
+      sbs: 0.7379
+      gen_sec: 11.09
+      ref_sec: 9.98
+      cer: 0.0577
+      wer: 0.1515
+    bible_00181:
+      source: bible
+      text: ŋaan ti jab kur teen siir nan tin saan tɔb, nan Yennu nba wann biaŋinba na. Ti saa poot Jɔɔdann
+        mɔkir ki kɔn nan faa yet na.”
+      sbs: 0.7392
+      gen_sec: 10.24
+      ref_sec: 11.02
+      cer: 0.0526
+      wer: 0.2963
+    bible_00182:
+      source: bible
+      text: Ki nisaarii saa yet a, ‘N gɔɔn ki tan yerik, ki sɔɔ ki n mɔk paŋ.’
+      sbs: 0.7324
+      gen_sec: 5.12
+      ref_sec: 5.96
+      cer: 0.087
+      wer: 0.1875
+    bible_00183:
+      source: bible
+      text: I mi nan Yisa Masia din sik baar tingbouŋ na ni a wun nyinn niib biite; ki biit kaa u ni.
+      sbs: 0.7325
+      gen_sec: 7.17
+      ref_sec: 8.34
+      cer: 0.0448
+      wer: 0.0952
+    bible_00184:
+      source: bible
+      text: A jii a paŋe ki saan namm a kasii tiŋ na ni.
+      sbs: 0.6682
+      gen_sec: 3.58
+      ref_sec: 3.86
+      cer: 0.375
+      wer: 0.6667
+    bible_00185:
+      source: bible
+      text: kimaan i binbeŋ bia daa be kaman nan tingbouŋ na niib binbeŋ nee; kimaan funfunn nan mɔniɔk-i
+        be i sinsuuk ni, i ki waa tingbouŋ na teeb binbeŋ kaa-aa?
+      sbs: 0.7414
+      gen_sec: 13.14
+      ref_sec: 12.18
+      cer: 0.0424
+      wer: 0.2069
+    bible_00186:
+      source: bible
+      text: “Maan nba ki a piak teent Yennu sann ni na, ti kan gbiinti.
+      sbs: 0.7349
+      gen_sec: 4.69
+      ref_sec: 4.86
+      cer: 0.0
+      wer: 0.0
+    bible_00187:
+      source: bible
+      text: Masia-i diŋi kii fiir kuun ni, i yada tee yanne, ki i bia daa be i toonbiit nie.
+      sbs: 0.7304
+      gen_sec: 6.57
+      ref_sec: 6.92
+      cer: 0.0169
+      wer: 0.0556
+    bible_00188:
+      source: bible
+      text: N wann n ninbatinu ki tur niib nba nyii kuun ni kunkoouk paak na. Yoo nba ki Israel teeb ŋakitir
+        ki loon foon na,
+      sbs: 0.7002
+      gen_sec: 9.3
+      ref_sec: 8.64
+      cer: 0.0341
+      wer: 0.1667
+    bible_00189:
+      source: bible
+      text: Li paak, ti ki piak maan nba tee nisaarik yan wannu; ŋaan ti piak linba ki Yennu Seyeeŋ wantit,
+        ki bia want Yennu barmɔnii ki teen niib nba ki Yennu Seyeeŋ be bi ni nae;
+      sbs: 0.7315
+      gen_sec: 14.17
+      ref_sec: 13.9
+      cer: 0.0153
+      wer: 0.0857
+    bible_00190:
+      source: bible
+      text: Ki fei saa soor Moab teeb nan baa jiantir tingbann nba tee Kemos na, nan fei nba din soor
+        Israel teeb, baa din teen bi dindann tingbann nba tee Betel ni na.
+      sbs: 0.738
+      gen_sec: 12.8
+      ref_sec: 14.72
+      cer: 0.1148
+      wer: 0.375
+    bible_00191:
+      source: bible
+      text: Li paak, yi nyinn i binbenkper biit, kii tee nipaamm, kaman nan ya set tee niib nba nyik biit
+        ni biaŋinba na, kimaan Masia nba tee ti marouŋ na gaar ti paak ki kpo.
+      sbs: 0.7642
+      gen_sec: 13.65
+      ref_sec: 14.0
+      cer: 0.0317
+      wer: 0.2353
+    bible_00192:
+      source: bible
+      text: Ahihud, ki u tee Selomi bija
+      sbs: 0.6807
+      gen_sec: 2.3
+      ref_sec: 3.46
+      cer: 0.1818
+      wer: 0.8333
+    bible_00193:
+      source: bible
+      text: Ŋaan u din yêt saakab kpaanii nae, ŋaan saan u leeb nba tee u waakir, ki bia ji tee u ŋmakit
+        teeb na boor,
+      sbs: 0.7556
+      gen_sec: 8.79
+      ref_sec: 10.06
+      cer: 0.025
+      wer: 0.0833
+    bible_00194:
+      source: bible
+      text: ki bi mɔɔntir ki yaa ŋɔɔe tee bi kpanbar.
+      sbs: 0.7331
+      gen_sec: 3.5
+      ref_sec: 3.24
+      cer: 0.5
+      wer: 0.6667
+    bible_00195:
+      source: bible
+      text: Tɔn, kpanbar Defid ji din kpet bonchiann, ki u ŋaatoontunna lek tuu pinɔ chinchena, ŋaan ki
+        waat bia mɔkɔ.
+      sbs: 0.779
+      gen_sec: 9.22
+      ref_sec: 9.7
+      cer: 0.0714
+      wer: 0.2632
+    bible_00196:
+      source: bible
+      text: ki bia sɔb leer boor a “Ti Yomdaanɔ mi nan yan damm dudukit tee yanne.”
+      sbs: 0.6752
+      gen_sec: 5.63
+      ref_sec: 5.62
+      cer: 0.0
+      wer: 0.1333
+    bible_00197:
+      source: bible
+      text: ki Usi tee Serahia baa, ki Serahia tee Merayof baa,
+      sbs: 0.7487
+      gen_sec: 4.27
+      ref_sec: 6.12
+      cer: 0.075
+      wer: 0.5
+    bible_00198:
+      source: bible
+      text: Yennu nba mɔk yan na te ki tingbouŋ na teeb yan kan fit te ki niib-n bannɔ. Li paak, ki u
+        te ki binba teen Yisa yada na tinn; jatii labaar nba ki ti mɔɔntir ki teen niib na paak ki bi
+        tinn.
+      sbs: 0.7394
+      gen_sec: 15.44
+      ref_sec: 13.24
+      cer: 0.0141
+      wer: 0.1628
+    bible_00199:
+      source: bible
+      text: Bi-i tuu kii turi linba kur, ii tuu jii bonŋana nan linba teen kasii ki tur min Yennu.
+      sbs: 0.7376
+      gen_sec: 7.17
+      ref_sec: 7.08
+      cer: 0.0303
+      wer: 0.1667
 - model: ghananlpcommunity/ghana-tts-36k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: ref
@@ -17275,4 +19002,4 @@ benchmarks:
       ref_sec: 7.08
       cer: 0.7727
       wer: 1.3333
-updated: '2026-10-01'
+updated: '2026-10-09'

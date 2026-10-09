@@ -3407,6 +3407,1704 @@ benchmarks:
       ref_sec: 13.46
       cer: 0.1182
       wer: 0.4
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7209
+  num_scored: 200
+  cer: 0.1041
+  wer: 0.3105
+  accuracy: 0.8959
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8084
+  score: 0.8084
+  per_source:
+    bible:
+      sbs: 0.7209
+      cer: 0.1041
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Lɛ loso mlayurɔ ligbã́ kluklu ni litukpo me gagla kakaa.
+      sbs: 0.6912
+      gen_sec: 5.21
+      ref_sec: 3.94
+      cer: 0.2
+      wer: 0.5
+    bible_00001:
+      source: bible
+      text: Pɔ̀ xegi kwitapo isu ya edi kpɛ ɔtɔ ɛ, kutrába Aya yɛ litsixwaxwa nɛ ese e.
+      sbs: 0.7693
+      gen_sec: 7.0
+      ref_sec: 6.24
+      cer: 0.0702
+      wer: 0.25
+    bible_00002:
+      source: bible
+      text: Ní elesi atɔ mɛ ɛ, Nikodemo atrɛ ní Yesu klɔ lɛ asi yɛ sì, “Rabi, kwite si wonu ɔdɔbasɛ
+        gi ádɔ ní Aya kɔ ɛ.
+      sbs: 0.7287
+      gen_sec: 9.3
+      ref_sec: 9.34
+      cer: 0.0897
+      wer: 0.24
+    bible_00003:
+      source: bible
+      text: Lɛ Maria ɛ, yɛ apɔ Yesu gi yɛ onu Kristo e.
+      sbs: 0.7305
+      gen_sec: 3.75
+      ref_sec: 3.16
+      cer: 0.0
+      wer: 0.0
+    bible_00004:
+      source: bible
+      text: “Mose liɛ ke asi Israelbanɛ ma si, ‘Aya aatsisi mlɔ oboedoplɛ, kiliɛ gi atsisi mɛ ɛ, lɛ aaze
+        mlɔ tutɔ mlɔ mɛ tole e.
+      sbs: 0.7593
+      gen_sec: 10.33
+      ref_sec: 9.4
+      cer: 0.0575
+      wer: 0.1667
+    bible_00005:
+      source: bible
+      text: Dɔni níklɔ ʋa ɛ, kwisɛ dzɛ lɛ kwizeku Regio ɔma ʋidi no me.
+      sbs: 0.7164
+      gen_sec: 5.29
+      ref_sec: 6.06
+      cer: 0.2444
+      wer: 0.8462
+    bible_00006:
+      source: bible
+      text: Lɛ ese linu si onugu lo izɛpani eboa la gi alɛ ní ɔna nɔ mɛ ɛ.
+      sbs: 0.696
+      gen_sec: 5.29
+      ref_sec: 5.38
+      cer: 0.1087
+      wer: 0.25
+    bible_00007:
+      source: bible
+      text: Lɛ ɔnɔnɔ ɔ́tani ɔdzi nɔ kukpasi i, sani banɔ akpe alafa tole avitene ni tiene ba gi bebu idɔni
+        kesea aʋa ɛ.
+      sbs: 0.7218
+      gen_sec: 9.64
+      ref_sec: 9.6
+      cer: 0.1446
+      wer: 0.5
+    bible_00008:
+      source: bible
+      text: Aka aŋu mɛ aki ba lɛ ese linu si kuziŋa kúze ba awla a; lɛ bɛkɔ ina gagla si bátrazɛ banama
+        gi bɛmɔ yɛ si ɔlɛ ligbã́ nɛ ɛ, aʋa ɛɛŋa a.
+      sbs: 0.7518
+      gen_sec: 11.95
+      ref_sec: 12.46
+      cer: 0.0505
+      wer: 0.1875
+    bible_00009:
+      source: bible
+      text: Aya yɛ Ɔfuɛfuɛ nɔ ɛba ba petee aʋa, lɛ bekpese Aya liboe le kudo ni aŋu mɛ gagla a.
+      sbs: 0.7143
+      gen_sec: 7.51
+      ref_sec: 7.72
+      cer: 0.1111
+      wer: 0.2632
+    bible_00010:
+      source: bible
+      text: “Xe kelea mɛ banima bɛtrɔ mlɔ ahwafi i, mlaplɛ aŋu si, betu mɛ ahwafi kutrɔ.
+      sbs: 0.7238
+      gen_sec: 7.17
+      ref_sec: 6.38
+      cer: 0.0
+      wer: 0.0
+    bible_00011:
+      source: bible
+      text: Gi Yesu asɛ ní Ɔtsaklɔ ɛ, atrɛ ní Simon kepea mɛ.
+      sbs: 0.7351
+      gen_sec: 4.44
+      ref_sec: 3.62
+      cer: 0.1622
+      wer: 0.4545
+    bible_00012:
+      source: bible
+      text: ” Banama petee gi beze ní kutsatsa ʋidi yo me e, bedu aŋu ní Stefano aʋa lɛ bɛmɔ si yɛ aŋu
+        na mɛ alɛ ŋwisi Aya yɛ ɔxwɛdzɛ anɛ kinɛ ɛ.
+      sbs: 0.7082
+      gen_sec: 12.03
+      ref_sec: 13.32
+      cer: 0.06
+      wer: 0.1333
+    bible_00013:
+      source: bible
+      text: Kɔ Ozimizi ye aaba kɔ ebu eboa la gi bɛkpɛ ní ba ina nɛ mɛ kɔ ɛsɛnɔ ɛ.
+      sbs: 0.7264
+      gen_sec: 5.97
+      ref_sec: 7.18
+      cer: 0.1154
+      wer: 0.2778
+    bible_00014:
+      source: bible
+      text: Kwite si kwisɛ ní kutse su lɛ kwiba ligbã́ nɛ mɛ ɛ, kwite le nite lɛ ese linu si kwidimɛ
+        ni blɔ benemi ba.
+      sbs: 0.7247
+      gen_sec: 9.3
+      ref_sec: 7.62
+      cer: 0.075
+      wer: 0.2083
+    bible_00015:
+      source: bible
+      text: Onyimee eze liya lipoe gblamadza lɛ óze kepe me fɛ ɛ.
+      sbs: 0.7479
+      gen_sec: 4.86
+      ref_sec: 3.98
+      cer: 0.119
+      wer: 0.2727
+    bible_00016:
+      source: bible
+      text: Pɔ̀ tɔ kutsi kude tɔ likíhle eku ní banima mɛ ɛ, mlaki tɔ kukpɛ ɔsã aki banɔ ba ya tɔ bakígu
+        kunugu ikí ɔnɔnɔ ní Yesu linyi ne me tɔ ɔ.
+      sbs: 0.7157
+      gen_sec: 11.78
+      ref_sec: 10.58
+      cer: 0.0588
+      wer: 0.2258
+    bible_00017:
+      source: bible
+      text: Yesu axwa yɛ badɔkpasi liɔfɔ ni tiaʋa ba akpɛ likpɔ lɛ aki ba kigagla si tɔ biakɔ kpikpini
+        ifuɛfuɛ zimizi ne kudo no ani tɔ biakɔ yɔni ɔnyanya kakaa elu.
+      sbs: 0.7213
+      gen_sec: 14.17
+      ref_sec: 10.82
+      cer: 0.0894
+      wer: 0.3
+    bible_00018:
+      source: bible
+      text: Petro ebu le onu si, “Wɔ́ wonu Aya yɛ Kristo ye.
+      sbs: 0.7248
+      gen_sec: 4.1
+      ref_sec: 3.64
+      cer: 0.0882
+      wer: 0.1818
+    bible_00019:
+      source: bible
+      text: Bakpɛ banɔ atsisi ɔha lɔ banɔtsitsi ba, tɔ baxwa Aya ní ba litukpo atɔ basra kumu aki ba
+        ní Ɔkaɛ linyi ne me.
+      sbs: 0.7191
+      gen_sec: 9.98
+      ref_sec: 8.04
+      cer: 0.0588
+      wer: 0.1739
+    bible_00020:
+      source: bible
+      text: Xegi mleti iku kepe atɔ mɛ ɛ, mlapani kepea mɛ benete ba si, ‘Kusuyɔ kí mlɔ!
+      sbs: 0.7324
+      gen_sec: 6.91
+      ref_sec: 6.96
+      cer: 0.0526
+      wer: 0.0625
+    bible_00021:
+      source: bible
+      text: Mlalɛɛ gaglaa ní mlɔ kuziŋaa aʋa, tɔ mletsi kudeonu aki yɛ, lɛ ese linu si mlete si mlɔ benemi
+        baʋaziŋa ba ní kelea mɛ ɛ, bɛɛga kini tilee liɛ ke me.
+      sbs: 0.7525
+      gen_sec: 13.74
+      ref_sec: 10.84
+      cer: 0.0957
+      wer: 0.3226
+    bible_00022:
+      source: bible
+      text: Pɔ̀ ki ɔdzɛɛ xunyɔ ɛ, binu bidɔ gi biipedi i, xegi yɛ siya sɛ sidze gblamadzaa na a?
+      sbs: 0.7661
+      gen_sec: 7.68
+      ref_sec: 6.38
+      cer: 0.0952
+      wer: 0.3333
+    bible_00023:
+      source: bible
+      text: Agi banima bɛmɔ enugutseboe la gi Yesu abitɛ ɛ, bekpese kupani si, “Sugba iliɛ ya onu Aya
+        yɛ Oboedoplɛɛ gi atrába kelea mɛ ɛ!
+      sbs: 0.6961
+      gen_sec: 11.43
+      ref_sec: 11.4
+      cer: 0.0714
+      wer: 0.125
+    bible_00024:
+      source: bible
+      text: Bɛmɔ si líma si behe kutu aki ba a, lɛ ese linu si banima petee bɛzɛkpɔ̀ Aya ní kidiliɛ
+        gi kiba kɛ mɛ su u.
+      sbs: 0.7502
+      gen_sec: 9.3
+      ref_sec: 10.02
+      cer: 0.1
+      wer: 0.16
+    bible_00025:
+      source: bible
+      text: ” Lɛ Paulo eze niklɔ ligɔ tile ni badzidzi tieglo lɛ azɛɛbasɛ Aya liboe le ní ba kusi i.
+      sbs: 0.7392
+      gen_sec: 7.85
+      ref_sec: 7.82
+      cer: 0.1176
+      wer: 0.4444
+    bible_00026:
+      source: bible
+      text: Blɔ pɔ́ kwigleʋe dɔ ní kesea, lɛ menu ole ɔtɔ gi ɛpani ki mɛ ní Hebri se me si, “Saulo,
+        Saulo!
+      sbs: 0.7783
+      gen_sec: 8.19
+      ref_sec: 9.7
+      cer: 0.1324
+      wer: 0.381
+    bible_00027:
+      source: bible
+      text: Lɛ bɛki ɔnyragaɛ onugu si obu onugu me tɔ ɔpani ebusioboe manɔ ní Aya su, lɛ bɛki yɛ kigagla
+        badzidzi avitene ni tiaʋa si ɔbitɛ eboe ala ya.
+      sbs: 0.6943
+      gen_sec: 12.8
+      ref_sec: 13.14
+      cer: 0.1441
+      wer: 0.3929
+    bible_00028:
+      source: bible
+      text: Yesu ete ba begyodi ʋa, lɛ asi ba si,” Kaʋaŋaa kakaa gi kalɛ ɛ, xe kɛyɔ kedu ya ní ka isu
+        ya su i, kiayaʋi.
+      sbs: 0.7019
+      gen_sec: 9.56
+      ref_sec: 9.92
+      cer: 0.0779
+      wer: 0.16
+    bible_00029:
+      source: bible
+      text: Mátrakpɔ̀ mlɔ ní batrɔtrɔ ʋa ya gi bɛtrába mɛ ɛ, lɛ ese linu si mlɔ batsátsa ʋa bizeezizi
+        bidɔ ɛsanɔ si balulɔ bɛ.
+      sbs: 0.76
+      gen_sec: 10.33
+      ref_sec: 9.72
+      cer: 0.1685
+      wer: 0.3478
+    bible_00030:
+      source: bible
+      text: Manyamɔ kini glegle liɛ mɛ gi mɛ benete ba balɛ ní Egipte e.
+      sbs: 0.7057
+      gen_sec: 5.46
+      ref_sec: 4.2
+      cer: 0.234
+      wer: 0.4615
+    bible_00031:
+      source: bible
+      text: Aní si kwilɔ Aya, pɔ̀ yɛ alɔ blɔ, gi akɔ̀ Yebi ye akɔ ní blɔ eboe zimizi na litukpo tɔ gani
+        yɛ aʋa ɛ, biakɔ blɔ eboe zimizi na kɔkyɛ.
+      sbs: 0.7475
+      gen_sec: 11.61
+      ref_sec: 11.12
+      cer: 0.051
+      wer: 0.3667
+    bible_00032:
+      source: bible
+      text: lɛ ba kupedi yo petee ŋwisi siwa sɛ sɛ kufùfù yo kinɛ ɛ.
+      sbs: 0.6698
+      gen_sec: 5.12
+      ref_sec: 4.26
+      cer: 0.3023
+      wer: 0.3077
+    bible_00033:
+      source: bible
+      text: Lɛ azɛɛga Siria ni Kilikia xe azaakpɛ baʋaziŋa ba iha lɛ kigagla ɛ.
+      sbs: 0.7318
+      gen_sec: 6.49
+      ref_sec: 8.44
+      cer: 0.0556
+      wer: 0.3846
+    bible_00034:
+      source: bible
+      text: Lɛ loso e, mlakíxwa litsi ni ɔnɔnɔ ɔ, xe ableke lipoe le liana a; mlepe Ɔkaɛ yɛ kubabaa.
+      sbs: 0.7895
+      gen_sec: 8.28
+      ref_sec: 6.94
+      cer: 0.1493
+      wer: 0.5
+    bible_00035:
+      source: bible
+      text: Bɛɛxwa litsi nì mɛ ni ya kɔkpɛ mɛ kudeonudidi si bekpo ʋa biayɔ lɛ biadzi ligbã a.
+      sbs: 0.7198
+      gen_sec: 7.59
+      ref_sec: 6.4
+      cer: 0.0615
+      wer: 0.2941
+    bible_00036:
+      source: bible
+      text: Ŋwisi kiliɛ gi mekeni edi si miku ɔnɔ kakaa aŋu ní kude kakaa onu u.
+      sbs: 0.7465
+      gen_sec: 6.31
+      ref_sec: 5.74
+      cer: 0.0943
+      wer: 0.2667
+    bible_00037:
+      source: bible
+      text: Kuboeteo klɔ elue kúdɔ lifunu ne e, kelea me kunɛ kunu, kisugya mɛ ni ozimizi ye kunɛ.
+      sbs: 0.7386
+      gen_sec: 7.94
+      ref_sec: 6.96
+      cer: 0.1045
+      wer: 0.4118
+    bible_00038:
+      source: bible
+      text: Ni anukwarɛ mɛ ɛ, Yesu ɔtutɔ ɔ́kpɛ kuni ɔ́ki ɔnɔnɔ ɔ; boŋu i, yɛ badɔkpasi ba bɛzɛɛkpɛ kuni
+        yo.
+      sbs: 0.7205
+      gen_sec: 8.62
+      ref_sec: 7.92
+      cer: 0.0282
+      wer: 0.2105
+    bible_00039:
+      source: bible
+      text: ” Banɔ tiaʋa ba ya gi bɛŋa katsalia ɛ, benu kumu yɔ ise loo olif ye ise tiʋa ni kaniɛ ise
+        tiʋa ɛlɛ gi ilɛɛ ní kesea Ɔkaɛ yɛ aŋu na mɛ ɛ.
+      sbs: 0.7192
+      gen_sec: 11.95
+      ref_sec: 11.78
+      cer: 0.0891
+      wer: 0.3125
+    bible_00040:
+      source: bible
+      text: Lɛ Petro ebu le edo asi Yesu si, “Ɔkaɛ, lipɛ koŋ si kwiba ní ya!
+      sbs: 0.7329
+      gen_sec: 5.63
+      ref_sec: 4.86
+      cer: 0.1087
+      wer: 0.4
+    bible_00041:
+      source: bible
+      text: Xegi nya wɔaya kí banɔ ba ya elu i, lilɛ si wɔado ní kelea lia mɛ petee.
+      sbs: 0.764
+      gen_sec: 6.49
+      ref_sec: 5.44
+      cer: 0.037
+      wer: 0.2353
+    bible_00042:
+      source: bible
+      text: Mlɔ kiboebitɛ kiibasɛ si kelea me banɔ ko mledzi enu u.
+      sbs: 0.7226
+      gen_sec: 5.12
+      ref_sec: 4.58
+      cer: 0.0909
+      wer: 0.3636
+    bible_00043:
+      source: bible
+      text: Nite si bizɛkpɛ ikũ nɛ ní liboe le kɔkpɛ nì lipoe lɛ klɔ gi liabu libi i.
+      sbs: 0.7397
+      gen_sec: 6.49
+      ref_sec: 7.72
+      cer: 0.0357
+      wer: 0.1176
+    bible_00044:
+      source: bible
+      text: Nite ke onyime oxonetee fɛ aazizi gi eekyi awla ní yɛ axwɛ na su u.
+      sbs: 0.6995
+      gen_sec: 6.23
+      ref_sec: 5.58
+      cer: 0.0385
+      wer: 0.1333
+    bible_00045:
+      source: bible
+      text: Ɔfuɛfuɛ ɔtɔ izɛdɔ yɛ aʋa gi izɛki si izɛkpɛ ozi lo, kɔ ekpese kuhe e.
+      sbs: 0.6824
+      gen_sec: 6.23
+      ref_sec: 6.0
+      cer: 0.2075
+      wer: 0.4667
+    bible_00046:
+      source: bible
+      text: Lɛ loso mlekyi ɔna mɛ tɔ mlekyi evu Aya tɔ aakɔ̀ mlɔ eboe zimizi na kyɛ mlɔ.
+      sbs: 0.711
+      gen_sec: 6.66
+      ref_sec: 5.82
+      cer: 0.1207
+      wer: 0.2353
+    bible_00047:
+      source: bible
+      text: Lɛ ese linu si ite si yɛ onu Kristo ye.
+      sbs: 0.7213
+      gen_sec: 3.41
+      ref_sec: 3.68
+      cer: 0.1034
+      wer: 0.3
+    bible_00048:
+      source: bible
+      text: Ní la ya mɛ ɛ, kididɔ kínya ɔʋaziŋaɛ gi onu onyimedze e, loo ɔdzɛnye e.
+      sbs: 0.8003
+      gen_sec: 6.57
+      ref_sec: 6.56
+      cer: 0.1111
+      wer: 0.5333
+    bible_00049:
+      source: bible
+      text: Kude uliɔ klɔ onu gi mlaalɔ mlɔ ahanuglɔ ba ɛ.
+      sbs: 0.622
+      gen_sec: 4.18
+      ref_sec: 3.66
+      cer: 0.1389
+      wer: 0.3
+    bible_00050:
+      source: bible
+      text: Maakpɛ mɛ Ɔfuɛfuɛ nɔ ní yɛ mɛ; aasa kamasa ní mɛ litsi me kutsatsa dradra su u ki banima
+        petee ní kelea mɛ.
+      sbs: 0.6935
+      gen_sec: 9.64
+      ref_sec: 9.9
+      cer: 0.0723
+      wer: 0.2174
+    bible_00051:
+      source: bible
+      text: Pɔ̀ lɛ ɔ́yɔni yɛ ɛ, xegi linu anukwarɛ ɛ, si banɔ bátrayɔ ɛdɔni bekpo ʋa mɛ ɛ.
+      sbs: 0.7706
+      gen_sec: 6.91
+      ref_sec: 5.9
+      cer: 0.1228
+      wer: 0.4706
+    bible_00052:
+      source: bible
+      text: Xegi bɛmani mlɔ ní litsi le me e, mlɔ begyodi ʋa bakípisa ní liboe lɛ gi mlapani su u,
+        aloo ní kiliɛ gi mlaapani lɛ su u.
+      sbs: 0.737
+      gen_sec: 10.92
+      ref_sec: 11.44
+      cer: 0.0652
+      wer: 0.2222
+    bible_00053:
+      source: bible
+      text: Ɔniliɛ klɔ gi ete Aya ɛ, izɛɛta blɔ kutu, ɔniliɛ klɔ gi ónu Aya ɔnɛ ɛ, ɔʋíta blɔ kutu u.
+      sbs: 0.7439
+      gen_sec: 7.85
+      ref_sec: 7.16
+      cer: 0.0769
+      wer: 0.2
+    bible_00054:
+      source: bible
+      text: Lɛ gi Yuda anya eze badɔkpasi liɔfɔ ni tiaʋa ba mɛ tole kyɛ, yɛ atra kpɛ Yesu awla lɛ kede
+        e.
+      sbs: 0.7278
+      gen_sec: 8.28
+      ref_sec: 9.84
+      cer: 0.1408
+      wer: 0.4286
+    bible_00055:
+      source: bible
+      text: “Liboe lɛ ya loso, matrɛ ní Damasko gi mazi kigagla ni ɔsã adɔ ni kusumu yo baka ba klɔ
+        ɔ.
+      sbs: 0.7709
+      gen_sec: 7.94
+      ref_sec: 6.62
+      cer: 0.0588
+      wer: 0.2
+    bible_00056:
+      source: bible
+      text: Lɛ Nikodemo eʋi Yesu si, “Kitɛ mɛ biadzini ɔnɔtsitsi kupɔ na a?
+      sbs: 0.7048
+      gen_sec: 5.8
+      ref_sec: 4.44
+      cer: 0.102
+      wer: 0.5833
+    bible_00057:
+      source: bible
+      text: Mɔka gi yɛ akɔ lɛ aki mɛ ɛ, ekeme asani ba petee, lɛ ɔnɔnɔ ɔ́tratani lɛ kuʋa kuzɛ ní Mɔka
+        awla a.
+      sbs: 0.7227
+      gen_sec: 8.53
+      ref_sec: 9.22
+      cer: 0.0556
+      wer: 0.1364
+    bible_00058:
+      source: bible
+      text: Pɔ̀ kyɛ ɛ, mlápɛ si mlɛba mɔkɔ tɔ mlamɔ ligbã́ nɛ ɛ.
+      sbs: 0.7297
+      gen_sec: 4.44
+      ref_sec: 4.36
+      cer: 0.0541
+      wer: 0.25
+    bible_00059:
+      source: bible
+      text: Lɛ enye kuni akpɛ ni kezi katɔ mɛ ɛ, xe ekpese yɛ badɔkpasi ba kuklikpɔɔ kuplo e, lɛ etsoli
+        ko ni kavlɔa gi asama ní kasaa ɛ.
+      sbs: 0.7195
+      gen_sec: 11.35
+      ref_sec: 9.0
+      cer: 0.1354
+      wer: 0.4815
+    bible_00060:
+      source: bible
+      text: Banama gi bɛziŋa ɛ, ba likpɔkpɛkpɛ lɛ lize ni kugyodi tule ani ɔna tole.
+      sbs: 0.7285
+      gen_sec: 6.83
+      ref_sec: 6.86
+      cer: 0.0
+      wer: 0.0
+    bible_00061:
+      source: bible
+      text: Apaa onetee aase lɛ ese linu si apaa onete ko onu u, lɛ ɔ́kɔ lɛ mɛ ɔki iʋesi le e.
+      sbs: 0.7486
+      gen_sec: 7.0
+      ref_sec: 8.48
+      cer: 0.1667
+      wer: 0.4
+    bible_00062:
+      source: bible
+      text: Aya ko onu ɔniliɛ gi aatani eboe zimizi kukɔ kyɛ ɛ.
+      sbs: 0.7028
+      gen_sec: 4.61
+      ref_sec: 3.54
+      cer: 0.0
+      wer: 0.1818
+    bible_00063:
+      source: bible
+      text: Banɔkpɛkpɛ ba ni ɔsɔli ha lɔ Banɔtsi ba Kutsatsa ní Yerusalem.
+      sbs: 0.6334
+      gen_sec: 5.89
+      ref_sec: 3.8
+      cer: 0.1373
+      wer: 0.3636
+    bible_00064:
+      source: bible
+      text: Linɔkpi le lita liboe lɛ gi Filipo apani kutu mɔmɔmɔ ɔ, gi bezeenu yɛ kupaniɔ ɛ, lɛ bɛmɔ eboe
+        mamɔ edi ala gi abitɛ ɛ.
+      sbs: 0.7554
+      gen_sec: 10.67
+      ref_sec: 11.8
+      cer: 0.011
+      wer: 0.04
+    bible_00065:
+      source: bible
+      text: Lilɛ si babùbɔ isu ya ŋwisi kiliɛ gi ɔsã nɔ ɛpani i.
+      sbs: 0.7286
+      gen_sec: 4.78
+      ref_sec: 4.7
+      cer: 0.125
+      wer: 0.3333
+    bible_00066:
+      source: bible
+      text: Lɛ loso, kunyanyaa liɔ ya gi mátrabitɛ ni Israelbanɛ ma.
+      sbs: 0.6799
+      gen_sec: 5.29
+      ref_sec: 4.9
+      cer: 0.1778
+      wer: 0.6
+    bible_00067:
+      source: bible
+      text: Lɛ ya loso Aya axwa mlɔ, lɛ ese linu si Kristo amɔ ɔzia ní mlɔ onu lɛ aki mlɔ liŋwitsɛ si,
+        tɔ mlaga yɛ kugakli yɔ mɛ.
+      sbs: 0.7334
+      gen_sec: 10.58
+      ref_sec: 10.1
+      cer: 0.0341
+      wer: 0.1481
+    bible_00068:
+      source: bible
+      text: Mleze agbã́ Gbã ní banama gi bázɛ Aya aʋa aŋa ɛ, ba kusi tɔ xegi bedo si mlenu banɔ nyani
+        nyani fɛ ɛ, biamɔ mlɔ eboe gbã na tɔ biakpɔ Aya ní liwe lɛ gi aaba blɔ klɔ aʋa a.
+      sbs: 0.7038
+      gen_sec: 15.27
+      ref_sec: 14.84
+      cer: 0.0547
+      wer: 0.225
+    bible_00069:
+      source: bible
+      text: Pɔ̀ ɔnɔ kakaa gi anada liboe lɛ ya ní Yesu su i, yɛ Ɔfuɛfuɛ nɔ ɔdɔ Aya kɔ ɔ.
+      sbs: 0.7199
+      gen_sec: 6.49
+      ref_sec: 6.44
+      cer: 0.0727
+      wer: 0.1579
+    bible_00070:
+      source: bible
+      text: Ɔfuɛfuɛ nɔ izɛdugu ye gi sigagla mɛ izɛyurɔ awla ní yɛ su u.
+      sbs: 0.6605
+      gen_sec: 5.46
+      ref_sec: 4.16
+      cer: 0.1915
+      wer: 0.4615
+    bible_00071:
+      source: bible
+      text: Kesea aʋa kuseo kwiyeʋi isu, lɛ ese linu si wɔ kusuyeʋi gaglaa kɔ lipoe le lina.
+      sbs: 0.6657
+      gen_sec: 7.34
+      ref_sec: 6.7
+      cer: 0.0476
+      wer: 0.1875
+    bible_00072:
+      source: bible
+      text: Lɛ ayɔ lixu le e, xe ɔlɛɛ ní yɛ ikli lɛ aʋa ɛ, ko lɛ ekpese kuga klanɔ ɛ.
+      sbs: 0.6857
+      gen_sec: 6.49
+      ref_sec: 6.42
+      cer: 0.25
+      wer: 0.5263
+    bible_00073:
+      source: bible
+      text: Ɔnɔha ɔtɔtɔ óze pɔni mɛ ɛ, lɛ ozi loo avitɛ kyɛ bíze niklɔ ɔ.
+      sbs: 0.7368
+      gen_sec: 5.46
+      ref_sec: 5.74
+      cer: 0.1304
+      wer: 0.3571
+    bible_00074:
+      source: bible
+      text: Lɛ xegi ɔdzɛ, odini onyime gi ónu ɔsɔlisɔli i, pɔ̀ adimɛ si yɛ nì ɔdzɛɛ biaze e, lɛ kɔɔ
+        ɔkisɛ ní ɔdzɛɛ su u.
+      sbs: 0.7939
+      gen_sec: 9.64
+      ref_sec: 9.76
+      cer: 0.0875
+      wer: 0.2917
+    bible_00075:
+      source: bible
+      text: Liwe lɛ klɔ elesi la ɛ, Ɔkaɛ alɛ ní Paulo su lɛ asi yɛ si, “Ɔna oze wɔ lipo.
+      sbs: 0.7767
+      gen_sec: 6.49
+      ref_sec: 7.96
+      cer: 0.1111
+      wer: 0.2105
+    bible_00076:
+      source: bible
+      text: Ɔkpɛ gi Felikisi apɛ si yipɛ lipo me ɛki Yudanɛ ma loso e, aki si Paulo awɔ ligba lɛ.
+      sbs: 0.7576
+      gen_sec: 7.59
+      ref_sec: 9.1
+      cer: 0.0615
+      wer: 0.2105
+    bible_00077:
+      source: bible
+      text: Lifu liku ba; lɛ bɛkpɔ̀ Aya xe bɛpani si, “Enugutseboe woli aŋu mɛ kwimɔ nite omono o?
+      sbs: 0.7087
+      gen_sec: 7.94
+      ref_sec: 7.02
+      cer: 0.1231
+      wer: 0.2353
+    bible_00078:
+      source: bible
+      text: Lɛ Ozimizi ye asi yɛ si i, “Xe Aya Yebi wonu i, ki tɔ likla lɛ ya lidzì lìklã.
+      sbs: 0.6955
+      gen_sec: 6.83
+      ref_sec: 6.8
+      cer: 0.0357
+      wer: 0.2105
+    bible_00079:
+      source: bible
+      text: Lɛ gi benu le e, bɛkpɔ̀ Aya, lɛ bɛsi Paulo si, “Onemi, dani wɔɛmɔ ɛ, banɔ akpe akpe ba bɛziŋa
+        ní Yudanɛ ma kusi i, lɛ ba petee bevu Mose Ɔsã nɔ mɛ gaglaa.
+      sbs: 0.6999
+      gen_sec: 13.65
+      ref_sec: 13.86
+      cer: 0.0714
+      wer: 0.3529
+    bible_00080:
+      source: bible
+      text: Sugba ɛ, mɛɛsi mlɔ si, kiditɔ gi kiŋa kedzi i sani Lisɔligba lɛ ni Yerusalem i, kilí ní
+        mlɔ kusi i.
+      sbs: 0.7199
+      gen_sec: 9.05
+      ref_sec: 9.04
+      cer: 0.0533
+      wer: 0.2381
+    bible_00081:
+      source: bible
+      text: “Dike, matraba ŋwisi oze kinɛ ɛ!
+      sbs: 0.6606
+      gen_sec: 3.07
+      ref_sec: 3.02
+      cer: 0.1667
+      wer: 0.8333
+    bible_00082:
+      source: bible
+      text: Maʋíʋi wo si bu ba dɔni kelea mɛ ɛ, pɔ̀ meeʋi wo tɔ zi ba ní ozimizi ye iwla mɛ ɛ.
+      sbs: 0.7025
+      gen_sec: 6.91
+      ref_sec: 7.84
+      cer: 0.1525
+      wer: 0.4286
+    bible_00083:
+      source: bible
+      text: Yudanɛ ma bɛgbani Yesu i manɔ ní Pilato klɔ ɔ.
+      sbs: 0.5568
+      gen_sec: 4.18
+      ref_sec: 3.26
+      cer: 0.1389
+      wer: 0.6
+    bible_00084:
+      source: bible
+      text: Kunɔlɔ ní Kristobanɛ ma kusi.
+      sbs: 0.5941
+      gen_sec: 2.82
+      ref_sec: 4.46
+      cer: 0.25
+      wer: 1.2
+    bible_00085:
+      source: bible
+      text: Lɛ loso mlaki tɔ mlɔ ɔtɔ nɔ bezeze ba bekuni mɛ kude atrɛ ní Kaisarea atɔ bazɛtsà Paulo
+        onu, xe kesetata eboe atɔ alɛ ní mlɔ awla ní yɛ su i.
+      sbs: 0.7545
+      gen_sec: 12.71
+      ref_sec: 12.06
+      cer: 0.0367
+      wer: 0.129
+    bible_00086:
+      source: bible
+      text: ” Lɛ meʋi si, ‘Wɔ wonu Nyaŋwɛ ɛ, Ɔkaɛ?
+      sbs: 0.7517
+      gen_sec: 3.24
+      ref_sec: 3.16
+      cer: 0.04
+      wer: 0.125
+    bible_00087:
+      source: bible
+      text: Liboe lɛ gi aŋwlimi i aki Aya yɛ ɔxwɛdzɛɛ gi eedi Tiatira ɔsɔli ha lɔ aʋa ɛ.
+      sbs: 0.6419
+      gen_sec: 7.0
+      ref_sec: 4.06
+      cer: 0.0169
+      wer: 0.1765
+    bible_00088:
+      source: bible
+      text: “Xe mleku ɔma ɔtɔ lo ɔma sisami ɔtɔ mɛ ɛ, mlapɛ́ ɔnɔ gbã gi adimɛ si yizɛ mlɔ ɛ, atɔ mlatí
+        yɛ klɔ kɔkpɛni mlɔ lisɛpoe le e.
+      sbs: 0.7316
+      gen_sec: 10.75
+      ref_sec: 12.08
+      cer: 0.0659
+      wer: 0.2143
+    bible_00089:
+      source: bible
+      text: Bede klɔʋiklɔʋi ʋa petee bàgyɔ̀ tɔ bede aʋa gi bázrɔ ɛ.
+      sbs: 0.6383
+      gen_sec: 4.95
+      ref_sec: 5.12
+      cer: 0.2326
+      wer: 0.5455
+    bible_00090:
+      source: bible
+      text: Libi woli liabu ki mlɔ xe bekusi mlo o, xe mlɛlɛɛ ní kɔ onu kɔkpɛ liboe zimizi gi mlɛbitɛ
+        ɛ?
+      sbs: 0.7207
+      gen_sec: 8.53
+      ref_sec: 6.76
+      cer: 0.0563
+      wer: 0.2
+    bible_00091:
+      source: bible
+      text: Banɔ ba ya ɛ, béze ní blɔ likpɔkpɛkpɛ lɛ mɛ, lɛ loso bɛyurɔ blɔ, atɛɛsi balɛ ní blɔ likpɔkpɛkpɛ
+        lɛ mɛ ɛ, nya beze ni blo, pɔ̀ bɛsɛ tɔ libasɛ si ba mɛ ɔtɔtɔ ɔ́nyanu blɔ ɔnɛ ɛ.
+      sbs: 0.7469
+      gen_sec: 15.61
+      ref_sec: 13.96
+      cer: 0.1008
+      wer: 0.3421
+    bible_00092:
+      source: bible
+      text: Lɛ kibu kwibù si kuli gagla sani yɛ na a?
+      sbs: 0.7384
+      gen_sec: 3.58
+      ref_sec: 3.08
+      cer: 0.4516
+      wer: 0.4
+    bible_00093:
+      source: bible
+      text: Gi kwiku Yerusalem i, baʋaziŋa ba bɛzi blɔ ni isami.
+      sbs: 0.7583
+      gen_sec: 4.95
+      ref_sec: 4.84
+      cer: 0.0244
+      wer: 0.1
+    bible_00094:
+      source: bible
+      text: Aní mɛ loso mleye baga ʋa xe mlɛki bidɔ pɔʋi pɔʋi ʋɛ ɛ.
+      sbs: 0.68
+      gen_sec: 4.95
+      ref_sec: 4.94
+      cer: 0.3095
+      wer: 0.7692
+    bible_00095:
+      source: bible
+      text: ” Gi betini ba kutapokpaa ɛmanɔ ní oge no e, bɛyurɔ kidɔ kakaa lɛ bekuni Yesu kude e.
+      sbs: 0.749
+      gen_sec: 7.59
+      ref_sec: 7.16
+      cer: 0.1385
+      wer: 0.4118
+    bible_00096:
+      source: bible
+      text: ” Kɔ mléte si kidɔ kakaa gi kiza eku ɔnɔ yɛ onugu lo me, yɛ lipo le me kizɛtrɛ kɔ ɔniɛ azɛɛdzi
+        bɛ na a?
+      sbs: 0.7464
+      gen_sec: 8.87
+      ref_sec: 9.96
+      cer: 0.0789
+      wer: 0.375
+    bible_00097:
+      source: bible
+      text: Lɛ ŋwisi kiliɛ gi kutse kwiba kelea mɛ gani ɔnɔ aʋa ɛ, kuyɔyɔ dɔni bekpo ʋa mɛ kyɛ kwiba gani
+        ɔnɔ aʋa a.
+      sbs: 0.8001
+      gen_sec: 9.39
+      ref_sec: 8.4
+      cer: 0.05
+      wer: 0.1739
+    bible_00098:
+      source: bible
+      text: Ɔnɔ kakaa ní Yerusalem ete si linugutseboe ʋidi lɛ ya gi liba lɛ mɛ gani ba aʋa a, lɛ kútratani
+        lɛ kunada a.
+      sbs: 0.7308
+      gen_sec: 9.73
+      ref_sec: 8.34
+      cer: 0.1071
+      wer: 0.3478
+    bible_00099:
+      source: bible
+      text: Kristo óti iku si yikɔ isu ikɔ tasɛ tasɛ ŋwisi kusumu yo Ɔka ʋidi ye gi izeetiku ní Ɔdradra
+        klɔ tule ní ligɔ kakaa mɛ ɛ, ni ika gi ínu yɛ ɔtutɔ yɛ inɛ ɛ.
+      sbs: 0.7318
+      gen_sec: 13.65
+      ref_sec: 12.94
+      cer: 0.0513
+      wer: 0.2
+    bible_00100:
+      source: bible
+      text: Banama pɔ́ gi bɛba kpɛ ɔtɔ ɛki mɛ ɛ, bezè bedetsa, lɛ iʋesi le ínu kutu iiki ba a.
+      sbs: 0.7496
+      gen_sec: 7.17
+      ref_sec: 7.54
+      cer: 0.1667
+      wer: 0.4211
+    bible_00101:
+      source: bible
+      text: Stefano, onyimee gi Aya akrira glegle e, xe Aya kigaglaɛ kiyi yɛ mɛ ɛ, abitɛ enugutseboe ni
+        eboe gi aʋíba ʋidi ní banima kusi i.
+      sbs: 0.7574
+      gen_sec: 11.95
+      ref_sec: 12.78
+      cer: 0.07
+      wer: 0.24
+    bible_00102:
+      source: bible
+      text: Nite si ayɔ ní ɔdɔŋakplɔ nɔ su, ebu yɛ awu la aʋa liwu le, lɛ akɔ kavlɔa sama yɛ kasaa ɛ.
+      sbs: 0.7406
+      gen_sec: 7.94
+      ref_sec: 7.02
+      cer: 0.0455
+      wer: 0.1429
+    bible_00103:
+      source: bible
+      text: Mɛ baʋia dimɛnɔ ba, mlakízɛ banama petee gi bɛɛpani si Ɔfuɛfuɛ nɔ ɔlɛ ní ba awla ɛ aʋa ɛɛŋa,
+        pɔ̀ mlapami lɛ mɛ tɔ mledi xe Ɔfuɛfuɛ nɔ ɛdɔ ní Aya kɔ ɔ.
+      sbs: 0.721
+      gen_sec: 13.48
+      ref_sec: 12.86
+      cer: 0.0965
+      wer: 0.2424
+    bible_00104:
+      source: bible
+      text: Ifuɛfuɛ zimizi ne fɛ izɛ lɛ aʋa ɛɛŋa lɛ izeesugu ni lifu u.
+      sbs: 0.6941
+      gen_sec: 5.46
+      ref_sec: 4.1
+      cer: 0.087
+      wer: 0.3077
+    bible_00105:
+      source: bible
+      text: 'Ni ya ɛ, mɛɛŋwlimi liboe lɛ ya nì mɛ ɔtutɔ mɛ awla la si: mɛ Paulo maatsa liʋɛɛ nɛ klɔ ki
+        wɔ.'
+      sbs: 0.7887
+      gen_sec: 8.28
+      ref_sec: 7.04
+      cer: 0.1014
+      wer: 0.3636
+    bible_00106:
+      source: bible
+      text: ” Lɛ gi ekyi i, amɔ Yesu gi ɔlɛɛ niklɔ ɔ; pɔ̀ ɔ́mɔ yɛ ogyesi si yɛ onu Yesu u.
+      sbs: 0.7769
+      gen_sec: 6.31
+      ref_sec: 6.5
+      cer: 0.0566
+      wer: 0.1053
+    bible_00107:
+      source: bible
+      text: ŋwisi lɛ inu Aya yɛ isã nɛ na a!
+      sbs: 0.7145
+      gen_sec: 2.82
+      ref_sec: 3.48
+      cer: 0.087
+      wer: 0.2222
+    bible_00108:
+      source: bible
+      text: Ɔnɔ kakaa gi apɛ si yiwa mɛ lixwɛ nɛ ɛ, lilɛ si okuni mɛ kude tɔ mɛ ɔnɔsumu ye aaze ni mɛ
+        su níklɔ gi malɛ ɛ.
+      sbs: 0.7244
+      gen_sec: 9.56
+      ref_sec: 11.16
+      cer: 0.0123
+      wer: 0.1111
+    bible_00109:
+      source: bible
+      text: Ba ya benu ba gɔgɔ ʋa lɛ ese linu si gani ba mɛ ɛ, kɔ Aya yɛ kusuyeʋi gaglaa kɔ onu kwidu
+        i.
+      sbs: 0.7411
+      gen_sec: 7.94
+      ref_sec: 8.26
+      cer: 0.0588
+      wer: 0.2609
+    bible_00110:
+      source: bible
+      text: Kitɛ mɛ mlaatani kudo si medo libusioboe gi mapani si menu Aya Yebi i?
+      sbs: 0.7177
+      gen_sec: 6.49
+      ref_sec: 6.66
+      cer: 0.125
+      wer: 0.5
+    bible_00111:
+      source: bible
+      text: Lɛ loso e benemidzɛ ba bɛtsisi Yesu ole si, “Ɔkaɛ, wɔʋiɛ gi wɔlɔ́ ɛ eetse.
+      sbs: 0.7209
+      gen_sec: 6.57
+      ref_sec: 7.66
+      cer: 0.2364
+      wer: 0.5333
+    bible_00112:
+      source: bible
+      text: -Beʋi bahanuglɔ ba ní kudeo me si, “Nyaŋwɛ atrámli likla nɛ ní ɔdrɔ lɔ onu iiki blɔ abla
+        ɛ?
+      sbs: 0.6781
+      gen_sec: 8.28
+      ref_sec: 10.54
+      cer: 0.0435
+      wer: 0.1579
+    bible_00113:
+      source: bible
+      text: Lɛ banima bɛzɛɛdzɛ Yohanes klɔ gi azaakpɛ kuni aki ba a.
+      sbs: 0.6713
+      gen_sec: 5.21
+      ref_sec: 4.0
+      cer: 0.1333
+      wer: 0.1818
+    bible_00114:
+      source: bible
+      text: Lɛ gi bezese lifu si onitsahu lo iihali aklakpɔ loso e, bepleni igbé tine gi bɛka bala ʋidi
+        lɛ onu i, ní ohu lo kedea lɛ bɛxwa Aya si kelea kati i.
+      sbs: 0.7022
+      gen_sec: 13.31
+      ref_sec: 14.6
+      cer: 0.0354
+      wer: 0.2188
+    bible_00115:
+      source: bible
+      text: Pɔ̀ xe ɔnɔ gi ɔ́ziŋa asɛ ɛ, mlaki tɔ ɔtrɛ.
+      sbs: 0.7011
+      gen_sec: 3.75
+      ref_sec: 3.62
+      cer: 0.0345
+      wer: 0.1
+    bible_00116:
+      source: bible
+      text: Akɔ yɛ opi no ehe badzidziebi ʋa kapɛ tanɛa ní lifune aŋwia ɛkpɛ ní kesea.
+      sbs: 0.6386
+      gen_sec: 6.91
+      ref_sec: 5.48
+      cer: 0.1186
+      wer: 0.5333
+    bible_00117:
+      source: bible
+      text: Mlamɔ si kusuŋwasi ni kulekuku uliɔ gi biita kigũ yɛ ní mlɔ mɛ, bɛkɔ́ bidɔ na a?
+      sbs: 0.7095
+      gen_sec: 7.25
+      ref_sec: 6.12
+      cer: 0.0984
+      wer: 0.4118
+    bible_00118:
+      source: bible
+      text: Mlaamɔ isu ya si mlɛɛta kigũ ni Aya!
+      sbs: 0.7147
+      gen_sec: 3.24
+      ref_sec: 3.12
+      cer: 0.0714
+      wer: 0.25
+    bible_00119:
+      source: bible
+      text: Mlamɔ isami ní lɛ litukpo, Mlɔ banama gi mlalɛ ní lifunu ne e!
+      sbs: 0.6641
+      gen_sec: 5.63
+      ref_sec: 4.26
+      cer: 0.0625
+      wer: 0.2308
+    bible_00120:
+      source: bible
+      text: Bebu le abasɛ gani ba agbã́ gbã na ni ba kiboebitɛ gi bɛbitɛ ní kusububɔ ni kuboete me.
+      sbs: 0.7227
+      gen_sec: 7.85
+      ref_sec: 7.56
+      cer: 0.1471
+      wer: 0.5
+    bible_00121:
+      source: bible
+      text: Atɔ Kaka Aya aaki mlɔ kidɔ kakaa gi mlaaʋi ye ní mɛ linyi ne me e.
+      sbs: 0.6918
+      gen_sec: 5.8
+      ref_sec: 5.74
+      cer: 0.14
+      wer: 0.375
+    bible_00122:
+      source: bible
+      text: Ɔka ɔtɔ eze gi yɛ linyí linu Nikodemo o, ádɔ Farisianɛ ma lihakpɔ lɛ mɛ lɛ eze Yudanɛ ɔka
+        tole.
+      sbs: 0.7213
+      gen_sec: 8.62
+      ref_sec: 7.52
+      cer: 0.0405
+      wer: 0.2
+    bible_00123:
+      source: bible
+      text: Lɛ eʋi ba dzɛ si, “Mlɔ pɔ̀ ɛ, nyaŋwɛ mlɛɛsɛ si menu u?
+      sbs: 0.6954
+      gen_sec: 4.61
+      ref_sec: 12.1
+      cer: 0.1622
+      wer: 0.3077
+    bible_00124:
+      source: bible
+      text: Mléte si xe mlevu kelea mɛ kuʋia ɛ, libasɛ si mlenu ahwafianɛ aki Aya na a?
+      sbs: 0.7157
+      gen_sec: 6.91
+      ref_sec: 6.52
+      cer: 0.069
+      wer: 0.3125
+    bible_00125:
+      source: bible
+      text: Lɛ Paulo asi bewukpɛ ba si, “Gi bekusi blo litsi mɔxwamɔxwa ní ɔma nɔ kusi i, blɔ banama
+        gi kunu Roma banɛ ma ɛ, xe bɛkpɛ blɔ ligba lɛ ɛ, abla kɔ mlábú blo ní kikpokpo me na a?
+      sbs: 0.7752
+      gen_sec: 16.12
+      ref_sec: 14.22
+      cer: 0.053
+      wer: 0.1795
+    bible_00126:
+      source: bible
+      text: Kiliɛ gi bíha kepea mɛ okú i, baguta ba ɔkaɛ atsisi yɛ ole si, “Ɔkaɛ, wukíkpɛ isu kunugu
+        u, mégyeno si wɔatiku mɛ kepea mɛ ɛ.
+      sbs: 0.7177
+      gen_sec: 11.26
+      ref_sec: 11.5
+      cer: 0.1489
+      wer: 0.3462
+    bible_00127:
+      source: bible
+      text: Agi banima bamɔ lipoe ŋa bidɔ lipoe gblamadza ɛ, Paulo ayɔ ɔlɛɛ ní banima aŋu mɛ lɛ apani
+        si, “Benyime, nya mlegbe mɛ liboe le kunu si kukísɛ ní Kreta a.
+      sbs: 0.7183
+      gen_sec: 14.08
+      ref_sec: 12.86
+      cer: 0.0424
+      wer: 0.129
+    bible_00128:
+      source: bible
+      text: Bidɔŋaŋa kuka kutɔ kwize niklɔ gi beku Yesu ní ose lo su u, xe etse e, ɔdrɔ vuvu gi bakpɛ
+        okpo lɔ mɛ oʋídi i, eze kɔ mɛ.
+      sbs: 0.5828
+      gen_sec: 10.92
+      ref_sec: 5.18
+      cer: 0.1011
+      wer: 0.2857
+    bible_00129:
+      source: bible
+      text: Mɛ begyodi ʋa mɛ bɛdra, pɔ̀ aní lɛ libasɛ si mɛ linɛ ligyɔ ɔ.
+      sbs: 0.762
+      gen_sec: 5.29
+      ref_sec: 5.08
+      cer: 0.1333
+      wer: 0.3571
+    bible_00130:
+      source: bible
+      text: Gi kelea kɛti i, Mose edzi atrɛ ní báklɔ lɛ amɔ Israel bebi tiaʋa gi bɛzɛgɔni i, ekeni edi
+        si yikpɛ ba likpɔ.
+      sbs: 0.7588
+      gen_sec: 9.9
+      ref_sec: 9.0
+      cer: 0.1071
+      wer: 0.2609
+    bible_00131:
+      source: bible
+      text: Bédo liboeboe asi ɔnɔnɔ, lɛ ese linu si lifune liku ba.
+      sbs: 0.7081
+      gen_sec: 5.12
+      ref_sec: 4.22
+      cer: 0.093
+      wer: 0.3636
+    bible_00132:
+      source: bible
+      text: Asi blɔ si mleegyo blo edi lɛ mlɛpɛ si mlɛmɔ blɔ ɔ, kiliɛ gi blɔ fɛ kwipɛ si kumɔ mlɔ ɛ.
+      sbs: 0.7745
+      gen_sec: 7.68
+      ref_sec: 6.66
+      cer: 0.0758
+      wer: 0.1429
+    bible_00133:
+      source: bible
+      text: Meedzini Onesimo gi malɔ ɔ ni mɛ ɔna petee tsisi wɔ abla a.
+      sbs: 0.7397
+      gen_sec: 5.29
+      ref_sec: 4.42
+      cer: 0.087
+      wer: 0.3077
+    bible_00134:
+      source: bible
+      text: ” Lɛ baguta ba bɛtsa igbé nɛ gi ivu katapokpaa a, xe kɛwɔli eku ní kuni yo me e.
+      sbs: 0.7006
+      gen_sec: 7.0
+      ref_sec: 5.48
+      cer: 0.1356
+      wer: 0.4444
+    bible_00135:
+      source: bible
+      text: Libi woli lilɛ ki ɔnutɔ xe aamɔ kelea mɛ bidɔ mɛ petee e pɔ̀ xe aalila yɛ esobo la a?
+      sbs: 0.727
+      gen_sec: 7.59
+      ref_sec: 7.72
+      cer: 0.125
+      wer: 0.3
+    bible_00136:
+      source: bible
+      text: Maaba mlɔ klɔ xegi mazɛga Makedonia ɛ, lɛ ese linu si mabitɛ kutrɔtrɔ si mizɛɛga Makedonia.
+      sbs: 0.7853
+      gen_sec: 8.7
+      ref_sec: 7.84
+      cer: 0.027
+      wer: 0.25
+    bible_00137:
+      source: bible
+      text: ” Lɛ petro evu yɛ ɔŋawla lɔ kawlakpɔa lɛ apɔni yɛ xe ayɔ ɛ.
+      sbs: 0.6913
+      gen_sec: 5.29
+      ref_sec: 5.6
+      cer: 0.0682
+      wer: 0.2308
+    bible_00138:
+      source: bible
+      text: Pɔ̀ liboe le liʋívu kese e, lɛ baʋíze gagla ní liboe le me e.
+      sbs: 0.7223
+      gen_sec: 5.29
+      ref_sec: 5.68
+      cer: 0.1556
+      wer: 0.4286
+    bible_00139:
+      source: bible
+      text: Lɛ ya litrɛ ɛki banama gi ba eboe zimizi na atrámani kutse e.
+      sbs: 0.6883
+      gen_sec: 5.55
+      ref_sec: 4.02
+      cer: 0.0417
+      wer: 0.0769
+    bible_00140:
+      source: bible
+      text: Banɔ ba ya bedzi dɔni banima kusi i, xe bɛkɔ ba ŋwisi bidɔkɔkɔ tɔpu ki Aya ni Keʋesibi ya
+        a.
+      sbs: 0.7343
+      gen_sec: 8.53
+      ref_sec: 7.14
+      cer: 0.1268
+      wer: 0.25
+    bible_00141:
+      source: bible
+      text: Mɛ bebi ba, mátraze ní mlɔ su lipoe gblamadza tɔ ɔ.
+      sbs: 0.6669
+      gen_sec: 4.61
+      ref_sec: 13.36
+      cer: 0.2308
+      wer: 0.6364
+    bible_00142:
+      source: bible
+      text: Mlamɔ isami glegle ní liboe lɛ ya mɛ, xegi kɔki lipoe kpekpemi itɔ ɛ, liziã si mleze ní
+        asigaga mɛ kɔkpɛ kukenidi ede ede ala mɛ gi mlɛga kyɛ ɛ.
+      sbs: 0.7287
+      gen_sec: 13.14
+      ref_sec: 11.56
+      cer: 0.0893
+      wer: 0.2333
+    bible_00143:
+      source: bible
+      text: Xe kufekedi uliɔ ya elu kwiba ɔnutɔ aʋa ɛ, ɔkipani si, “Aya eefeke ye edi i.
+      sbs: 0.7383
+      gen_sec: 6.91
+      ref_sec: 6.58
+      cer: 0.1754
+      wer: 0.25
+    bible_00144:
+      source: bible
+      text: Lɛ gi bɛxwa banɔkpɛkpɛ ba ɛmanɔ ɛ, bekusi ba, lɛ bɛkpɛ ɔsã ɛki ba si bakípani ní Yesu linyi
+        ne me liwewe tɔ ɔ; lɛ bɛyurɔ ba ɛ.
+      sbs: 0.7671
+      gen_sec: 11.35
+      ref_sec: 11.38
+      cer: 0.0632
+      wer: 0.25
+    bible_00145:
+      source: bible
+      text: Lipani fɛ si, ‘Biafeke wo ni ba awla la gi.
+      sbs: 0.6774
+      gen_sec: 3.75
+      ref_sec: 3.86
+      cer: 0.1613
+      wer: 0.3
+    bible_00146:
+      source: bible
+      text: Gi bɛzɛpɛ si, beeye ye e, liboe le lizɛna baguta ba ɔka ʋidi ye ní iklɔ si, Yerusalem ɔma
+        zizi nɔ ɛpisa.
+      sbs: 0.6632
+      gen_sec: 9.39
+      ref_sec: 9.08
+      cer: 0.1519
+      wer: 0.4545
+    bible_00147:
+      source: bible
+      text: Banama gi bɛwa axwɛ na ɛki mlɔ ɛ, ba kubemi yo kwiku Aya Ɔka ʋidi ye yɛ kutu yɔ mɛ.
+      sbs: 0.7297
+      gen_sec: 7.34
+      ref_sec: 6.8
+      cer: 0.0645
+      wer: 0.2
+    bible_00148:
+      source: bible
+      text: Bɛkpɛ kifu lɛ bɛzi blɔ petee lɛ ese linu si dzeni ye azɛɛdɔ lɛ kublɔ fɛ kwize e.
+      sbs: 0.708
+      gen_sec: 7.17
+      ref_sec: 6.86
+      cer: 0.1452
+      wer: 0.3889
+    bible_00149:
+      source: bible
+      text: Lɛ loso e, bevu ba lɛ bɛkpɛ ba ligba kɔzɛna ni kele titia mɛ, gi kelea keeblo lɛ loso o.
+      sbs: 0.7493
+      gen_sec: 7.85
+      ref_sec: 8.92
+      cer: 0.1212
+      wer: 0.35
+    bible_00150:
+      source: bible
+      text: “Kaka gi ɔlɛ ní Kude Gyɔgyɔ aʋa a!
+      sbs: 0.6887
+      gen_sec: 2.9
+      ref_sec: 3.2
+      cer: 0.24
+      wer: 0.25
+    bible_00151:
+      source: bible
+      text: Linya ɛli lɛ mɛ si malɛ ní mɛ isuwla mɛ, lɛ ménu ɔnɔnɔ ɔnɛ kyɛ ɛ, pɔ̀ mabitɛ mɛ isu ya si
+        midzi ɔnɔdzidzi kí ɔnɔ kakaa atɔ migbani banɔ glegle mani Yesu klɔ.
+      sbs: 0.7811
+      gen_sec: 13.99
+      ref_sec: 13.56
+      cer: 0.0333
+      wer: 0.2941
+    bible_00152:
+      source: bible
+      text: Lɛ asi ba si, Abla gi mlete me e, mlate Mɔka fɛ, lɛ dɔni abla kɔtsinɔ ɛ mlete ye lɛ mlɛ mɔ
+        yɛ.
+      sbs: 0.7478
+      gen_sec: 8.19
+      ref_sec: 8.44
+      cer: 0.1324
+      wer: 0.4348
+    bible_00153:
+      source: bible
+      text: ” Gi Anania enu liboe le ko e, egleʋe lɛ etse e, niteme si banama gi benu liboe le e, lifu
+        liku ba.
+      sbs: 0.765
+      gen_sec: 8.62
+      ref_sec: 9.58
+      cer: 0.125
+      wer: 0.3182
+    bible_00154:
+      source: bible
+      text: Pɔ̀ amubiatɔ ɛdɔ ní kese gbã aʋa; etsi gi eyo asà la; atɔ ɛkpɛ amubi alafa, atɔ aviteglo
+        lɛ atɔ fɛ ɛkpɛ avitata ɛ.
+      sbs: 0.7134
+      gen_sec: 10.24
+      ref_sec: 13.28
+      cer: 0.1047
+      wer: 0.375
+    bible_00155:
+      source: bible
+      text: Wodi niklɔ ɛxwa litsi nì mɛ ní ɔsã nɔ onu pɔ̀ wɔɛta ɔsã nɔ ese gi wɔki ɔsã si basa mɛ
+        bidɔ ɛ!
+      sbs: 0.7286
+      gen_sec: 8.02
+      ref_sec: 7.16
+      cer: 0.087
+      wer: 0.3478
+    bible_00156:
+      source: bible
+      text: Nite ke ɔnɔ zimizi kyɛ izebu bidɔ zimizi i dɔni yɛ bidɔ zimizi ʋɛ ɔbla klɔ.
+      sbs: 0.7559
+      gen_sec: 6.83
+      ref_sec: 7.12
+      cer: 0.1017
+      wer: 0.3125
+    bible_00157:
+      source: bible
+      text: Ebu le onu si, “Befeke mɛ Ɔkaɛ sɛnɔ, lɛ méte niklɔ gi bɛzɛɛplɛ yɛ ɛ!
+      sbs: 0.7157
+      gen_sec: 5.97
+      ref_sec: 6.16
+      cer: 0.2
+      wer: 0.5333
+    bible_00158:
+      source: bible
+      text: Bebu lɛ onu si, “Aklã tegloele.
+      sbs: 0.6703
+      gen_sec: 2.82
+      ref_sec: 5.28
+      cer: 0.1304
+      wer: 0.5
+    bible_00159:
+      source: bible
+      text: Lɛ loso e, mlazi yɛ ní Ɔkaɛ linyi ne me ni isami, tɔ mlakpɛ kubùbù ní banɔ ba ya elu su.
+      sbs: 0.7859
+      gen_sec: 7.68
+      ref_sec: 7.0
+      cer: 0.0923
+      wer: 0.2857
+    bible_00160:
+      source: bible
+      text: Mɛ bebi dimɛnɔ ba, líma si blɔ kunɔlɔɔ kuze kupani ko o, lilɛ si kuze anukwarɛ kunɔlɔ gi
+        kwibasɛ isu ní axwɛwawa mɛ ɛ.
+      sbs: 0.7376
+      gen_sec: 10.92
+      ref_sec: 8.96
+      cer: 0.0326
+      wer: 0.125
+    bible_00161:
+      source: bible
+      text: Ŋwisi kiliɛ gi bɛŋwlimi kpɛ ni Yesaya oboedoplɛ yɛ keplekpaa mɛ kinɛ si.
+      sbs: 0.7489
+      gen_sec: 7.0
+      ref_sec: 6.34
+      cer: 0.2034
+      wer: 0.3077
+    bible_00162:
+      source: bible
+      text: Atɔ ɛdɔ ni bibu ʋe me lɛ bibu ʋe biyɛ xe biwe amu vuvu na aʋa lɛ etse e.
+      sbs: 0.6955
+      gen_sec: 6.23
+      ref_sec: 7.62
+      cer: 0.2264
+      wer: 0.5789
+    bible_00163:
+      source: bible
+      text: “Mlebu ɔnɔ zimizi ye ní mlɔ kusi.
+      sbs: 0.7244
+      gen_sec: 2.9
+      ref_sec: 4.32
+      cer: 0.08
+      wer: 0.2857
+    bible_00164:
+      source: bible
+      text: Niteme ke banama gi bevu Nikolaitia nɛ ma bidɔbasɛbasɛ mɛ ní awla ɛ, kyɛ bákpasi ní mlɔ
+        kusi.
+      sbs: 0.6745
+      gen_sec: 8.62
+      ref_sec: 8.56
+      cer: 0.0676
+      wer: 0.2778
+    bible_00165:
+      source: bible
+      text: ” Kyɔŋ klɔ ko e, Aya ɔxwɛdzɛɛ aki si Herodes adɔ kunya, lɛ ese linu si ɔ́kɔ kukɔkɔ ɔki Aya
+        a.
+      sbs: 0.6838
+      gen_sec: 8.28
+      ref_sec: 8.64
+      cer: 0.0735
+      wer: 0.25
+    bible_00166:
+      source: bible
+      text: Amɔ kudeonu ni kigagla gi ɛɛkɔ ɛpani iiki ifuɛfuɛ zimizi ne lɛ iido e.
+      sbs: 0.7029
+      gen_sec: 6.49
+      ref_sec: 6.54
+      cer: 0.1071
+      wer: 0.5
+    bible_00167:
+      source: bible
+      text: Mlalɛ ŋwisi ɖebleku ye, gi aŋwi taʋɛ ko o, xe edzì alila kinɛ ɛ.
+      sbs: 0.7668
+      gen_sec: 6.14
+      ref_sec: 5.5
+      cer: 0.0625
+      wer: 0.3571
+    bible_00168:
+      source: bible
+      text: Aya yɛ banɔsumu ko kunu, lɛ gani blɔ aʋa mlɛziŋa a.
+      sbs: 0.7476
+      gen_sec: 4.78
+      ref_sec: 4.04
+      cer: 0.0256
+      wer: 0.0909
+    bible_00169:
+      source: bible
+      text: Mɛ ese kuzezeo kuli i plɔplɔ ɔ, lɛ mɛ lidɔtu le gi maatrɔ wɔ ɛ, líma ɛnyipu.
+      sbs: 0.7414
+      gen_sec: 6.83
+      ref_sec: 9.04
+      cer: 0.193
+      wer: 0.5294
+    bible_00170:
+      source: bible
+      text: si mikɔ liboe gbã nɛ tsini bepiplinete ba.
+      sbs: 0.6739
+      gen_sec: 3.93
+      ref_sec: 3.18
+      cer: 0.1765
+      wer: 0.625
+    bible_00171:
+      source: bible
+      text: Bagutaatɔ kyɛ beʋi ye si, “Blɔ pɔ̀ ɛ, ege lilɛ si kubitɛ ɛ?
+      sbs: 0.7101
+      gen_sec: 5.12
+      ref_sec: 5.28
+      cer: 0.119
+      wer: 0.3846
+    bible_00172:
+      source: bible
+      text: Yesu asi onyimee si, “Ga lɛɛ ní ɔtɔ nɔ ya ní banima aŋu na mɛ.
+      sbs: 0.665
+      gen_sec: 5.46
+      ref_sec: 6.24
+      cer: 0.0889
+      wer: 0.2667
+    bible_00173:
+      source: bible
+      text: Bɛ gbani Paulo mani Okusi ye Agripa ani Bernike aŋu mɛ.
+      sbs: 0.4987
+      gen_sec: 5.21
+      ref_sec: 3.04
+      cer: 0.5227
+      wer: 0.8182
+    bible_00174:
+      source: bible
+      text: Lɛ onyimee yɛ besumubi ba bɛba yɛ klɔ lɛ bɛsi yɛ si, ‘Ɔka, aní amubi gbã woglu ní wɔ ɔnyrɔ
+        nɔ mɛ lò o?
+      sbs: 0.7586
+      gen_sec: 8.87
+      ref_sec: 10.52
+      cer: 0.0933
+      wer: 0.25
+    bible_00175:
+      source: bible
+      text: Pɔ̀ kwipani eboeteboe ki banama gi betsi ní Ɔfuɛfuɛ nɔ mɛ ɛ.
+      sbs: 0.7493
+      gen_sec: 5.46
+      ref_sec: 4.56
+      cer: 0.0213
+      wer: 0.0833
+    bible_00176:
+      source: bible
+      text: “ ‘Babaa, babaa ki ɔma ʋidi no!
+      sbs: 0.6941
+      gen_sec: 2.56
+      ref_sec: 3.2
+      cer: 0.1905
+      wer: 1.0
+    bible_00177:
+      source: bible
+      text: Lɛ ese linu si linu yɛ kupɛ́pɛ si yimɔ mlɔ petee, lɛ liwa axwɛ ní yɛ aʋa si, mlenu si yɛ
+        adɔ kunya a.
+      sbs: 0.7856
+      gen_sec: 8.87
+      ref_sec: 7.76
+      cer: 0.027
+      wer: 0.0833
+    bible_00178:
+      source: bible
+      text: ” Lɛ eʋi adɔ ni Filipo kɔ si omu oku ní kìke yɛ mɛ tɔ oze ní yɛ su u.
+      sbs: 0.7017
+      gen_sec: 5.55
+      ref_sec: 6.24
+      cer: 0.1042
+      wer: 0.2632
+    bible_00179:
+      source: bible
+      text: Aya aakrira ɔnɔ kakaa gi ógbe me ní eboa la gi mɛɛbitɛ loso e!
+      sbs: 0.7334
+      gen_sec: 5.55
+      ref_sec: 6.76
+      cer: 0.0833
+      wer: 0.2143
+    bible_00180:
+      source: bible
+      text: Ogbógboha lɔ, mɛɛŋwlimi iiki mlɔ, lɛ ese linu si mlɛŋa Ozimizi ye aʋa.
+      sbs: 0.7483
+      gen_sec: 6.83
+      ref_sec: 4.92
+      cer: 0.1091
+      wer: 0.4615
+    bible_00181:
+      source: bible
+      text: Pɔ̀ gi Akwila ni Priskila bɛta yɛ kutu i, bɛgbani yɛ tsini ba kepea mɛ lɛ bebu Aya liboe le
+        ese kí yɛ mɔmɔɔmɔ ɔ.
+      sbs: 0.7551
+      gen_sec: 9.9
+      ref_sec: 9.62
+      cer: 0.0588
+      wer: 0.16
+    bible_00182:
+      source: bible
+      text: Lɛ ese linu si dɔni liklã̀ tile lɛ klɔ mɛ ɛ, blɔ banama gi kwisrɛ ɛ, kunu kisugya tile lɛ
+        ese linu si kuzɛɛlɛ liklã̀ tile lɛ klɔ ʋa.
+      sbs: 0.7855
+      gen_sec: 11.61
+      ref_sec: 11.62
+      cer: 0.0606
+      wer: 0.1724
+    bible_00183:
+      source: bible
+      text: Banama petee gi beze ní ɔtsaklɔ ɛ, bezeedi ye lɛ asi ba si, “Liboe lɛ klɔ gi makla a xe mlenu
+        i, liba lɛ mɛ omono.
+      sbs: 0.719
+      gen_sec: 10.07
+      ref_sec: 11.46
+      cer: 0.0952
+      wer: 0.2692
+    bible_00184:
+      source: bible
+      text: Nyaŋwɛ izɛtsa kagyɔ ɔki kelea ya mɛ bekusi ba na a?
+      sbs: 0.708
+      gen_sec: 4.78
+      ref_sec: 4.42
+      cer: 0.05
+      wer: 0.2727
+    bible_00185:
+      source: bible
+      text: “Mɛ menu wain yɛ lihuʋi le, lɛ mlɔ mlenu aya la a.
+      sbs: 0.6882
+      gen_sec: 4.27
+      ref_sec: 4.1
+      cer: 0.1111
+      wer: 0.25
+    bible_00186:
+      source: bible
+      text: ” Lɛ bɛgbani yɛ ɛmani Yesu i.
+      sbs: 0.6656
+      gen_sec: 2.47
+      ref_sec: 13.9
+      cer: 0.0
+      wer: 0.3333
+    bible_00187:
+      source: bible
+      text: Sɛ sinu bidɔ kɔkɔ gi bɛki yɛ si tɔ siwe yɛ litukpo le e.
+      sbs: 0.7341
+      gen_sec: 4.86
+      ref_sec: 4.2
+      cer: 0.119
+      wer: 0.2857
+    bible_00188:
+      source: bible
+      text: Lɛ gi Yohanes yɛ axwɛ na ɛɛtrɛ la ɔgũ kɔ ɛ, azeeʋi banima si, ‘Nyaŋwɛ mlegyo edi si menu
+        u?
+      sbs: 0.7667
+      gen_sec: 8.28
+      ref_sec: 6.84
+      cer: 0.1176
+      wer: 0.45
+    bible_00189:
+      source: bible
+      text: Xe lipoe le lina si Aya yɛ ɔxwɛdzɛ gloele e ome yɛ kakuklui ya ɛ, Aya aagu yɛ eboe kpokpo
+        la ŋwisi kiliɛ gi asi yɛ banɔsumu ba gi benu beboedoplɛ ba ɛ.
+      sbs: 0.6677
+      gen_sec: 13.82
+      ref_sec: 11.28
+      cer: 0.0513
+      wer: 0.1212
+    bible_00190:
+      source: bible
+      text: ” Kusɔliɔ ɔka ʋidi ye Anania asi banama gi bɛlɛɛ ní Paulo su si, basa yɛ bidɔ ní onugu lo
+        aʋa a.
+      sbs: 0.7214
+      gen_sec: 8.36
+      ref_sec: 8.24
+      cer: 0.1111
+      wer: 0.2857
+    bible_00191:
+      source: bible
+      text: Lɛ ese linu si Aya ɛɛmani kukyíkyi ní mlɔ banama gi mlɛziŋa ɛ, mlɔ agbã́ na mɛ.
+      sbs: 0.7793
+      gen_sec: 7.17
+      ref_sec: 6.2
+      cer: 0.0667
+      wer: 0.2353
+    bible_00192:
+      source: bible
+      text: Gi azɛɛga atrɛ ɛ, amɔ ɔbɔgyɔ ɔtɔ, Lewi gi onu Alfeo Yebi i.
+      sbs: 0.7017
+      gen_sec: 5.29
+      ref_sec: 5.68
+      cer: 0.0455
+      wer: 0.1538
+    bible_00193:
+      source: bible
+      text: Ni ewetata kede gi Festo aba eku yɛ kesea mɛ ɛ, ádɔ Kaisarea lɛ emu atrɛ ní Yerusalem i
+        niklɔ kusumu yo baka ʋidi ba ni Yudanɛ ma ɔtɔ nɔ bezeze ba bɛzɛtsà Paulo onu.
+      sbs: 0.7101
+      gen_sec: 15.7
+      ref_sec: 14.84
+      cer: 0.186
+      wer: 0.3143
+    bible_00194:
+      source: bible
+      text: Lɛ Yesu asi ba si, “Kitɛ xe kumɔziŋa ni kesetata kalɛ mlɔ mɛ nite e?
+      sbs: 0.6782
+      gen_sec: 6.23
+      ref_sec: 6.54
+      cer: 0.098
+      wer: 0.4
+    bible_00195:
+      source: bible
+      text: Nyafɛ maaze ní mlɔ su taʋɛ, loo nyafɛ kublɔ lipoe le petee, atɔ mlaatani mɛ kupɔnɔ ní mɛ
+        kude gaga mɛ tsinɔ níklɔ gi matradzɛ ɛ.
+      sbs: 0.786
+      gen_sec: 11.69
+      ref_sec: 10.5
+      cer: 0.07
+      wer: 0.2692
+    bible_00196:
+      source: bible
+      text: “Lipoe lɛ klɔ mɛ bɛpɔ Mose, eze obi gi eyi kuyasɔ ɔ.
+      sbs: 0.7432
+      gen_sec: 4.52
+      ref_sec: 4.2
+      cer: 0.0526
+      wer: 0.25
+    bible_00197:
+      source: bible
+      text: Bali ní kublabla mɛ abla lɛ wɔ liboe le onu kubúbú ko beepe.
+      sbs: 0.6781
+      gen_sec: 5.46
+      ref_sec: 6.52
+      cer: 0.1489
+      wer: 0.2308
+    bible_00198:
+      source: bible
+      text: Pɔ̀ onyime ɔtɔ eze gi bɛzɛxwa si Anania a, yɛ ni yedze Safira bɛda ba bidɔ mɛ.
+      sbs: 0.7563
+      gen_sec: 7.0
+      ref_sec: 7.32
+      cer: 0.0
+      wer: 0.0
+    bible_00199:
+      source: bible
+      text: ” Lɛ Petro ekuni yɛ kude edono ní ligba lɛ mɛ ɛ, óte xe kidiliɛ gi ɔxwɛdzɛɛ ɛɛbitɛ ɛ, kinu
+        kanɔgbagbe me bidɔ ɔ, egyo le edi si kububasɛ yɛ ɛɛmɔ.
+      sbs: 0.776
+      gen_sec: 13.14
+      ref_sec: 13.46
+      cer: 0.0818
+      wer: 0.3333
 - model: ghananlpcommunity/ghana-tts-36k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: ref
@@ -16980,4 +18678,4 @@ benchmarks:
       ref_sec: 13.46
       cer: 0.2636
       wer: 0.7667
-updated: '2026-10-01'
+updated: '2026-10-09'
