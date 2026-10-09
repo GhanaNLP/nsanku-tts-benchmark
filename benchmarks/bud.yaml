@@ -5057,6 +5057,1688 @@ benchmarks:
       ref_sec: 4.42
       cer: 0.225
       wer: 0.7778
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7194
+  num_scored: 200
+  cer: 0.1645
+  wer: 0.5479
+  accuracy: 0.8355
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.7774
+  score: 0.7774
+  per_source:
+    bible:
+      sbs: 0.7194
+      cer: 0.1645
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Mpaan ŋun kɔkɔ māntìi tú-ku dijool yilpuee sá ki tīī Unimbɔti ní.
+      sbs: 0.7059
+      gen_sec: 5.03
+      ref_sec: 4.42
+      cer: 0.2308
+      wer: 0.75
+    bible_00001:
+      source: bible
+      text: ki ŋáań saraawɔkaa a-saraafaŋŋu pu.
+      sbs: 0.7286
+      gen_sec: 3.07
+      ref_sec: 13.2
+      cer: 0.2759
+      wer: 1.2
+    bible_00002:
+      source: bible
+      text: Di sá yii bi dū m-bɔkpaaŋi nì m-marab ki fá kaa tɔ́-ŋi.
+      sbs: 0.7284
+      gen_sec: 4.1
+      ref_sec: 3.98
+      cer: 0.1795
+      wer: 0.5
+    bible_00003:
+      source: bible
+      text: Kii dipandi nín kaa ŋūǹ kí lòoǹ abil di-baba asee dí nīn túkú busubu puee, míǹ mbaantiim ní
+        ni yaa kaa bí man ni, naa ŋūǹ kí lòoǹ abil.
+      sbs: 0.6427
+      gen_sec: 9.98
+      ref_sec: 11.44
+      cer: 0.1845
+      wer: 0.5862
+    bible_00004:
+      source: bible
+      text: ní ki fàtīi fòol̄ u-fooku kun tìì dimaŋfalee.
+      sbs: 0.7472
+      gen_sec: 3.41
+      ref_sec: 4.44
+      cer: 0.2571
+      wer: 0.5
+    bible_00005:
+      source: bible
+      text: U nìn jáń ki fōō u-cee Beeteel nì Yeesana Eefrɔn timmu nì ntimbilimu mun pìl̄-muee.
+      sbs: 0.7063
+      gen_sec: 6.31
+      ref_sec: 6.48
+      cer: 0.1692
+      wer: 0.7333
+    bible_00006:
+      source: bible
+      text: ISIRAYEEL YAB BÍ SIINAAYI TEEKUN.
+      sbs: 0.6365
+      gen_sec: 2.65
+      ref_sec: 4.84
+      cer: 0.4286
+      wer: 1.0
+    bible_00007:
+      source: bible
+      text: Man a-Dindaan Unimbɔti nín bí dimaŋfalin nee, a-naal Soodoom nì ntimbilimu mun māntìi tú-kèe
+        kaa pée ŋá ikpiti kii sii nì ntimbilimu mun māntìi tú-see nín ŋá puee.
+      sbs: 0.7434
+      gen_sec: 12.71
+      ref_sec: 12.24
+      cer: 0.1462
+      wer: 0.6071
+    bible_00008:
+      source: bible
+      text: Kɔŋkɔnnee bibɔtiibi, nín̄ sámaan binib bin cáá iciinee!
+      sbs: 0.7767
+      gen_sec: 4.52
+      ref_sec: 4.68
+      cer: 0.0667
+      wer: 0.5
+    bible_00009:
+      source: bible
+      text: Niinee Mooyiisi ŋmàn̄ Unimbɔti marab ki dūu tīī Leefii yab bisaraaŋaliibi bin tūntí ti-Dindaan
+        poondi dakaauee nì Isirayeel yab tindaŋkpilib kɔkɔ.
+      sbs: 0.7519
+      gen_sec: 11.69
+      ref_sec: 9.32
+      cer: 0.0488
+      wer: 0.2381
+    bible_00010:
+      source: bible
+      text: Dibinluluútiil poonee, ní Yooyadaa dàkā tininjati.
+      sbs: 0.7193
+      gen_sec: 4.1
+      ref_sec: 5.1
+      cer: 0.2791
+      wer: 1.8333
+    bible_00011:
+      source: bible
+      text: Isirayeel samaau kɔkɔ nì binicambi bin kóò bi-kansikinee làá ká bi-kpitii pɔ̄tam, kun puee
+        bi-kɔkɔ di ŋá ikpiti gbanti.
+      sbs: 0.8007
+      gen_sec: 9.3
+      ref_sec: 8.76
+      cer: 0.0737
+      wer: 0.3684
+    bible_00012:
+      source: bible
+      text: Daani naakookunee, Amiisadaayi jipɔɔn Ayeeseer.
+      sbs: 0.7455
+      gen_sec: 3.93
+      ref_sec: 3.28
+      cer: 0.0488
+      wer: 1.2
+    bible_00013:
+      source: bible
+      text: Ní kukúbambaantiiu ja poon ní bi kpáàa kúntì sii nì a-wanti kɔkɔɔɔ!
+      sbs: 0.582
+      gen_sec: 5.12
+      ref_sec: 4.48
+      cer: 0.1296
+      wer: 0.4167
+    bible_00014:
+      source: bible
+      text: Dipɔndi din ni cááyee di sá ní nīn néeń tɔb.
+      sbs: 0.651
+      gen_sec: 3.24
+      ref_sec: 3.04
+      cer: 0.2941
+      wer: 0.6
+    bible_00015:
+      source: bible
+      text: Un di yaa páaǹ u-boonee, bí kpɔ̀-u!
+      sbs: 0.733
+      gen_sec: 2.56
+      ref_sec: 5.16
+      cer: 0.2083
+      wer: 0.5714
+    bible_00016:
+      source: bible
+      text: Unimbɔti gíiǹ u-biki ki tīī-u, kun puee Abraam ŋman nìn pée kūū-kì ní.
+      sbs: 0.6541
+      gen_sec: 5.38
+      ref_sec: 4.94
+      cer: 0.1698
+      wer: 0.5385
+    bible_00017:
+      source: bible
+      text: Di sá yii yilpu nì yilpu fɔ́ŋŋŋ kaa wāā ú ŋmā kí kɔ́.
+      sbs: 0.6854
+      gen_sec: 3.93
+      ref_sec: 3.88
+      cer: 0.1842
+      wer: 0.4615
+    bible_00018:
+      source: bible
+      text: Akasiyasi nìn cáá abin imuŋku ili nì ali ní ki kpántì ubɔti, ní ki kāl̀ Jeerusaleem ki jíń
+        dibeel dibindi diba.
+      sbs: 0.7215
+      gen_sec: 8.36
+      ref_sec: 8.22
+      cer: 0.1477
+      wer: 0.381
+    bible_00019:
+      source: bible
+      text: A nín nìn ŋáań tíǹ gbanti kɔkɔee, a náań nì kinimpulaakpaai páaa ní.
+      sbs: 0.7354
+      gen_sec: 5.21
+      ref_sec: 4.06
+      cer: 0.2407
+      wer: 0.8462
+    bible_00020:
+      source: bible
+      text: Míǹ boonee ní ḿ dāá yàntī án bútí si mun.
+      sbs: 0.6805
+      gen_sec: 2.9
+      ref_sec: 3.0
+      cer: 0.3226
+      wer: 0.9
+    bible_00021:
+      source: bible
+      text: Nì tibɔmɔntiil tin m sòoǹ Yeesu Kriisitoo puee, Unimbɔti cáá mpɔn kí báań-ni inyaan nnimbɔtisan
+        poon.
+      sbs: 0.6673
+      gen_sec: 7.94
+      ref_sec: 7.78
+      cer: 0.1928
+      wer: 0.6875
+    bible_00022:
+      source: bible
+      text: di sá yii u-neeŋkpaandi bí ní ki cá jaanjaan!
+      sbs: 0.7876
+      gen_sec: 3.5
+      ref_sec: 5.12
+      cer: 0.0286
+      wer: 0.1111
+    bible_00023:
+      source: bible
+      text: U làá nīn pée sá ubaanti míǹ ní kí nīn cá jaanjaan man ni-Dindaan nimbiin ki tīī nimbi nì
+        binicambi kɔkɔ.
+      sbs: 0.7332
+      gen_sec: 7.94
+      ref_sec: 6.56
+      cer: 0.1084
+      wer: 0.3333
+    bible_00024:
+      source: bible
+      text: Baa nìn dū ŋyaam ki ŋmītì-si, ní kaa nìn tí dū sata ki bīiǹ-si.
+      sbs: 0.7419
+      gen_sec: 4.69
+      ref_sec: 4.46
+      cer: 0.1957
+      wer: 0.5
+    bible_00025:
+      source: bible
+      text: baa ŋūǹ kí dū u nín sá ukpaan puee kí ŋmàntīǹ tiba.
+      sbs: 0.774
+      gen_sec: 3.84
+      ref_sec: 3.34
+      cer: 0.1282
+      wer: 0.3333
+    bible_00026:
+      source: bible
+      text: Míǹ ní u mun jòoń binib tikpil, ki kpáaǹ man m-ba.
+      sbs: 0.6139
+      gen_sec: 3.58
+      ref_sec: 4.04
+      cer: 0.2162
+      wer: 0.3636
+    bible_00027:
+      source: bible
+      text: Míǹ boonee ní Babiloon bɔtiu Neebukadineesaar mun dɔ́miń ki kɔ́fì bi-kpabiŋ.
+      sbs: 0.7232
+      gen_sec: 5.89
+      ref_sec: 5.22
+      cer: 0.0484
+      wer: 0.3636
+    bible_00028:
+      source: bible
+      text: An nìn sá dibindi din ní Asuur bɔtiu Saargɔn nìn tú u-janjakpiliu u cūtì ki jáń nì Asidoodi
+        tiŋki ki fōō-kèe ní.
+      sbs: 0.7528
+      gen_sec: 8.45
+      ref_sec: 7.3
+      cer: 0.1136
+      wer: 0.4091
+    bible_00029:
+      source: bible
+      text: Bi-kɔkɔ nimbikpeeŋu cɔ́ a-pu nì dimákal.
+      sbs: 0.7712
+      gen_sec: 3.24
+      ref_sec: 3.18
+      cer: 0.1613
+      wer: 0.8333
+    bible_00030:
+      source: bible
+      text: A tīī a-naal nì a-maan ibaamɔn, di sá yii ikpiti in a ŋée nyāŋkì ki jítì bi-yai, ní ki yāntì
+        bi kpántì deedeedambi ki jítiǹ-si.
+      sbs: 0.7502
+      gen_sec: 9.56
+      ref_sec: 9.68
+      cer: 0.1458
+      wer: 0.44
+    bible_00031:
+      source: bible
+      text: Á ŋúb́ tin a cááyee gbīŋgbim ubɔ ń taa fōō a-cee kibeefuulii kin bi tìì bin jáń ki jíńee.
+      sbs: 0.6245
+      gen_sec: 6.74
+      ref_sec: 6.9
+      cer: 0.2941
+      wer: 0.6316
+    bible_00032:
+      source: bible
+      text: Míǹ boonee ní u ŋmàn̄ marabee titaŋkpapilindi tili pu ní ki dūu tīī-mi.
+      sbs: 0.709
+      gen_sec: 5.46
+      ref_sec: 4.5
+      cer: 0.0893
+      wer: 0.5385
+    bible_00033:
+      source: bible
+      text: Niinee ní Juuda yab nì Beenjameen yab dicaŋŋi kpilib nì bisaraaŋaliibi Leefii yab, an dàkà
+        yii bin kɔkɔ Unimbɔti nìn tīī nlandɔkɔee yíkì ki nín jɔ́ḿ Jeerusaleem kí fàtīí mā kunimbɔtidii
+        kun bí niinee.
+      sbs: 0.7694
+      gen_sec: 15.53
+      ref_sec: 13.86
+      cer: 0.0915
+      wer: 0.4118
+    bible_00034:
+      source: bible
+      text: Usiyeel maaliŋunee, Amiinadaab di sá ukpil, u nì u-nabiyaamu binib dilaataal nì binib saalaa
+        nì bili.
+      sbs: 0.7141
+      gen_sec: 7.94
+      ref_sec: 7.8
+      cer: 0.0854
+      wer: 0.3125
+    bible_00035:
+      source: bible
+      text: An dāa bí kii Soodoom nì Goomoora timmu nì ntimu mun nìn māntìi tú-muee nín nìn nāaǹ puee
+        ní, ti-Dindaan di lī míǹ.
+      sbs: 0.7851
+      gen_sec: 8.45
+      ref_sec: 7.96
+      cer: 0.1124
+      wer: 0.3478
+    bible_00036:
+      source: bible
+      text: Ama ŋyunti ŋun ní Oosiyasi ká mpɔn mimmee ní dilambil jítìi kɔ́ ki nāaǹ-u.
+      sbs: 0.7006
+      gen_sec: 5.63
+      ref_sec: 5.76
+      cer: 0.1724
+      wer: 0.4286
+    bible_00037:
+      source: bible
+      text: Ŋma di sá-u kí yūĺ?
+      sbs: 0.579
+      gen_sec: 1.45
+      ref_sec: 4.02
+      cer: 0.3846
+      wer: 0.8
+    bible_00038:
+      source: bible
+      text: Bi nìn ká-u u cūtìi bál̀ Samaarii tiŋkin, ní bi cúú-u ki cáań Jeewuu cee ní úǹ kūū-u.
+      sbs: 0.7474
+      gen_sec: 6.57
+      ref_sec: 6.26
+      cer: 0.1452
+      wer: 0.4444
+    bible_00039:
+      source: bible
+      text: Ŋyunti ŋun bi bíi kūuntí mimmee ní Unimbɔti yāntì Abiiya nì Juuda yab jáń ki pɔ́ɔkiǹ Jeerooboowaam
+        nì Isirayeel yab kɔkɔ.
+      sbs: 0.7355
+      gen_sec: 9.3
+      ref_sec: 7.92
+      cer: 0.1616
+      wer: 0.5238
+    bible_00040:
+      source: bible
+      text: Isirayeel yab kɔkɔ nìn cáá ti-Dindaan Poondi dakaau ki cūnnì Jeerusaleem tiŋkin ki gbáà iwiliili,
+        ki búǹ iyin nì akantán, ki cákafí cancakantib ní ki bɔ̀ɔ́ tibati nì saŋgub an tùm̀ dàii.
+      sbs: 0.7404
+      gen_sec: 14.51
+      ref_sec: 14.34
+      cer: 0.1419
+      wer: 0.5312
+    bible_00041:
+      source: bible
+      text: Ama m lútì-ni ki nyántì duulinya nib kansikin.
+      sbs: 0.6243
+      gen_sec: 3.5
+      ref_sec: 3.98
+      cer: 0.4054
+      wer: 1.375
+    bible_00042:
+      source: bible
+      text: Digbándi boon púee fɔkɔŋŋu nìn sá ndɔŋmantikaayee dijandi.
+      sbs: 0.7374
+      gen_sec: 4.86
+      ref_sec: 3.92
+      cer: 0.08
+      wer: 0.5
+    bible_00043:
+      source: bible
+      text: Paalali jipɔɔn Usaayii di ŋáŋkì diguŋkpindi nyɔkɔpu nì kudifɔkɔu kun lībitì ubɔti diiŋŋi puee
+        ki tin sāā bisarkadambi mɔŋkiŋu.
+      sbs: 0.7689
+      gen_sec: 10.5
+      ref_sec: 11.18
+      cer: 0.0935
+      wer: 0.5263
+    bible_00044:
+      source: bible
+      text: Ŋyunti ŋun a nìn cáá dilambilee, a nìn kpèé a-naal Soodoom fám ní.
+      sbs: 0.7399
+      gen_sec: 5.21
+      ref_sec: 4.12
+      cer: 0.1176
+      wer: 0.4615
+    bible_00045:
+      source: bible
+      text: Lìntīmaan kupicaŋkpuŋu nyɔkɔpu kii iŋɔjaayee.
+      sbs: 0.7332
+      gen_sec: 4.1
+      ref_sec: 3.6
+      cer: 0.2
+      wer: 1.2
+    bible_00046:
+      source: bible
+      text: Tibɔti tin ti-Dindaan sòon̄ Babiloon tiŋki pu ní Amɔtisi jipɔɔn Yeesaya ká dileedakal poonee
+        sèé.
+      sbs: 0.7459
+      gen_sec: 7.59
+      ref_sec: 6.68
+      cer: 0.1125
+      wer: 0.3333
+    bible_00047:
+      source: bible
+      text: An puee ní u nìn tīī-bi mara ki dàkā-bi bi nín làá dāá ŋá u-kpabiŋ puee.
+      sbs: 0.6271
+      gen_sec: 5.38
+      ref_sec: 9.72
+      cer: 0.2453
+      wer: 0.5625
+    bible_00048:
+      source: bible
+      text: Mimmee, tí nyàab̀maan tin làá cáań dipɔɔsɔŋkil ti-kansikinee nì tin làá tūtuǹ ti-nabiyaamu
+        bí báań inyaan nnimbɔtisan poonee.
+      sbs: 0.6502
+      gen_sec: 9.98
+      ref_sec: 9.44
+      cer: 0.1553
+      wer: 0.4444
+    bible_00049:
+      source: bible
+      text: Unimbɔti yaa sòoǹee, an bí kii ditaadundee ní.
+      sbs: 0.7814
+      gen_sec: 3.5
+      ref_sec: 3.34
+      cer: 0.1081
+      wer: 0.375
+    bible_00050:
+      source: bible
+      text: Báà ŋma nyí ni nín tɔ́ ti-Dindaanee, an puee, m-pɔbil sɔ̀m̀ ni-pu.
+      sbs: 0.6413
+      gen_sec: 4.78
+      ref_sec: 5.26
+      cer: 0.1304
+      wer: 0.4167
+    bible_00051:
+      source: bible
+      text: Nì fookii poon ní an nibee kɔkɔ dūu kpíì kaa kpáàa fōō tin Unimbɔti nìn pōoǹee.
+      sbs: 0.6743
+      gen_sec: 5.8
+      ref_sec: 6.24
+      cer: 0.3016
+      wer: 0.5625
+    bible_00052:
+      source: bible
+      text: Bi nìn yōoǹ ti-Dindaan Marau gbɔŋku ní ki yìin̄ Juuda timmu kɔkɔn ki dàkā mu-nib ti-Dindaan
+        marau.
+      sbs: 0.7414
+      gen_sec: 7.51
+      ref_sec: 7.44
+      cer: 0.0909
+      wer: 0.3529
+    bible_00053:
+      source: bible
+      text: Niinee Isirayeel yab dɔ́miń ki māntìi tú Mooyiisi nì Aarɔn.
+      sbs: 0.7476
+      gen_sec: 4.44
+      ref_sec: 3.08
+      cer: 0.1667
+      wer: 0.5
+    bible_00054:
+      source: bible
+      text: Ama u nìn yìiǹ Juuda tiŋki kɔkɔ pu kí yòon̄ Beerseeba kí tin cáá sāā Eefiraayiim jooŋŋi pu.
+      sbs: 0.725
+      gen_sec: 7.0
+      ref_sec: 7.34
+      cer: 0.1389
+      wer: 0.4444
+    bible_00055:
+      source: bible
+      text: Ŋfanee jannaatiliŋ nìn ŋmà ní, ní dijandi diba nìn sá ndɔŋmantikaayee saalaa nì mili pu.
+      sbs: 0.7526
+      gen_sec: 7.08
+      ref_sec: 6.16
+      cer: 0.125
+      wer: 0.6
+    bible_00056:
+      source: bible
+      text: 'Ama Unimbɔti dù iween kí dáaĺ unil tafal kí bíĺ-u u-dooŋu pu: niinee ní nnaanyeem ń yàntī
+        u-wunti jìkì kaa gbèentí.'
+      sbs: 0.7876
+      gen_sec: 8.79
+      ref_sec: 9.84
+      cer: 0.2
+      wer: 0.5714
+    bible_00057:
+      source: bible
+      text: Ní jāam̀ Priisiil nì Akiilasi, m-tɔntɔnjutiibi Yeesu Kriisitoo tundin.
+      sbs: 0.6382
+      gen_sec: 5.55
+      ref_sec: 4.66
+      cer: 0.2069
+      wer: 0.5556
+    bible_00058:
+      source: bible
+      text: Laamii kpaŋki kin u nìn ŋúb́ee dɔŋu nìn gbìfì kii nsataludɔee ní.
+      sbs: 0.7088
+      gen_sec: 5.12
+      ref_sec: 5.88
+      cer: 0.1923
+      wer: 0.5833
+    bible_00059:
+      source: bible
+      text: 'Bi nìn síb́-u, di sá yii bi nìn lī yii: «Joosafaati un nìn nyàab̄ ti-Dindaan nì u-pɔbil kɔkɔee
+        jipɔɔn dee.'
+      sbs: 0.7337
+      gen_sec: 7.68
+      ref_sec: 6.76
+      cer: 0.0897
+      wer: 0.35
+    bible_00060:
+      source: bible
+      text: Un cáá nnyɔkɔ ki cútí ikoobuee yaa yāntì ukoobu péé-u dijulee, u páatì u-nyɔkɔŋuee pu ba?
+      sbs: 0.7887
+      gen_sec: 7.0
+      ref_sec: 7.52
+      cer: 0.1143
+      wer: 0.4375
+    bible_00061:
+      source: bible
+      text: Unimbɔti nìn yōoǹ-u ki cáá-u ki jɔ́miǹ u-cee ubɔ kaa ti ká-u.
+      sbs: 0.6728
+      gen_sec: 4.61
+      ref_sec: 4.34
+      cer: 0.2727
+      wer: 0.75
+    bible_00062:
+      source: bible
+      text: 'U ŋá iwalfi ikpaan: di sá yii u-neeŋkpaandi bí ní ki cá jaanjaan.'
+      sbs: 0.7643
+      gen_sec: 5.12
+      ref_sec: 4.96
+      cer: 0.0
+      wer: 0.0
+    bible_00063:
+      source: bible
+      text: Leefii yab bin kɔkɔ nìn tú dakaayee nì bilaŋgaaliibi nì Keenaniyawuu un nìn sá bin tú dakaayee
+        kpiliuee nìn pēē tiwambaantiil kii ubɔtee ní.
+      sbs: 0.7724
+      gen_sec: 10.75
+      ref_sec: 11.64
+      cer: 0.1983
+      wer: 0.3333
+    bible_00064:
+      source: bible
+      text: Adiin ŋin bi nìn máń ki nákáǹ kunimbɔtidii boon gundi nì adiin ŋin kíǹee kansikin nìn sá kukaluuee
+        fɔkɔŋŋu mmuŋku pu ki māntìi tú.
+      sbs: 0.7534
+      gen_sec: 10.24
+      ref_sec: 10.24
+      cer: 0.1226
+      wer: 0.5417
+    bible_00065:
+      source: bible
+      text: Laakin nìn síb́ gbantee nìn sá ndɔŋmantikaayee mili pu ní.
+      sbs: 0.7022
+      gen_sec: 4.44
+      ref_sec: 3.4
+      cer: 0.1277
+      wer: 0.6
+    bible_00066:
+      source: bible
+      text: I-faati kpá kí yɔ́ĺ jaanjaan ní i làá nīn lòoǹ abil kaa gbèentí.
+      sbs: 0.7086
+      gen_sec: 4.61
+      ref_sec: 4.06
+      cer: 0.1633
+      wer: 0.5385
+    bible_00067:
+      source: bible
+      text: An sɔ́ á taa pōoǹ Unimbɔti ipoon ki jítiǹ á pòon̄-u ní kí taa ŋmā kí ŋá tin a pōoǹee.
+      sbs: 0.7888
+      gen_sec: 5.97
+      ref_sec: 7.2
+      cer: 0.1774
+      wer: 0.4
+    bible_00068:
+      source: bible
+      text: Udaan máaǹ kí nīn nyí bi nín bɔ́ntí satab bí nīn cáá nnyim min máǹee nì nnyim min máǹ cínciŋee
+        nì nnyim min máǹ gùŋgumee, ní kí nīn gíti nyí tikpiŋkpiil bɔti.
+      sbs: 0.7452
+      gen_sec: 12.03
+      ref_sec: 12.68
+      cer: 0.1935
+      wer: 0.625
+    bible_00069:
+      source: bible
+      text: Niinee ní u tùkū-mi yii niin di sá <Circir páaa laŋki>.
+      sbs: 0.7406
+      gen_sec: 4.35
+      ref_sec: 3.9
+      cer: 0.2683
+      wer: 0.4545
+    bible_00070:
+      source: bible
+      text: Neefitalii naakookunee, bijanjakpilib nìn sá binib kutuku, ní bijanjaliibi bin bi nìn kpòotēe
+        nìn sá binib kutukub bita kpá imuŋku ili ki ŋúb́ agbampɔɔ nì ŋkpamu.
+      sbs: 0.7419
+      gen_sec: 12.71
+      ref_sec: 12.12
+      cer: 0.0677
+      wer: 0.3077
+    bible_00071:
+      source: bible
+      text: kí sāǹ u-kpaanti nín ŋmóò pu nyàlibuee nimbiin.
+      sbs: 0.7179
+      gen_sec: 3.75
+      ref_sec: 3.74
+      cer: 0.2895
+      wer: 1.0
+    bible_00072:
+      source: bible
+      text: Binib làá fàtīí kɔ́ ni-timmun, di sá yii bi làá fàtīí mā adiin ŋin nìn lítèe.
+      sbs: 0.7588
+      gen_sec: 5.63
+      ref_sec: 5.28
+      cer: 0.2586
+      wer: 0.5
+    bible_00073:
+      source: bible
+      text: «M làá nyāntí-ni atimbun kansikin, m làá kóoǹní-ni ntimu mun kɔkɔ poon ní ni bée ní kí fàtīí
+        gíiǹní-ni ni-tiŋkin.
+      sbs: 0.751
+      gen_sec: 8.53
+      ref_sec: 8.72
+      cer: 0.2414
+      wer: 0.5
+    bible_00074:
+      source: bible
+      text: A lēē a-wampeeŋkaati tin cáá inyiŋfi tikpilee ki dūu nyɔ̄kɔntì a-waatootipaaŋyi ki ŋá niin
+        a-laakpaatuuŋŋi.
+      sbs: 0.7426
+      gen_sec: 9.05
+      ref_sec: 7.48
+      cer: 0.1364
+      wer: 0.8
+    bible_00075:
+      source: bible
+      text: Oosiyasi nìn cáá abin saalku nì diba ní ki kpántì ubɔti.
+      sbs: 0.6946
+      gen_sec: 4.27
+      ref_sec: 3.44
+      cer: 0.2
+      wer: 0.4545
+    bible_00076:
+      source: bible
+      text: Bi yaa nìn ŋá mimmee, an lēē ikpiti bi-wunti pu bi kpántì circirdambi dee.
+      sbs: 0.6125
+      gen_sec: 5.8
+      ref_sec: 5.28
+      cer: 0.069
+      wer: 0.2143
+    bible_00077:
+      source: bible
+      text: Ti-Dindaan, dū a-ŋal pɔŋŋu kí jà-bi kí nyāntí binib kansikin.
+      sbs: 0.7814
+      gen_sec: 5.03
+      ref_sec: 5.38
+      cer: 0.1064
+      wer: 0.4
+    bible_00078:
+      source: bible
+      text: » M kpēēyee, ki ká utaamu un pīiǹ fùuuyee, ní bi yíì un kā-uee yii Ŋkúm ní Ditaŋkpiil nóó-u.
+      sbs: 0.6361
+      gen_sec: 6.83
+      ref_sec: 9.84
+      cer: 0.2353
+      wer: 0.5
+    bible_00079:
+      source: bible
+      text: man nì ataŋkpiibil di dūu yākatì ki jíń.
+      sbs: 0.7655
+      gen_sec: 3.07
+      ref_sec: 3.28
+      cer: 0.125
+      wer: 0.375
+    bible_00080:
+      source: bible
+      text: 'Dinimbinaamandi din poon kitiŋee làá dāá kɔ́ee làá cúú-bi tifaandi, ní bi dāa yú kudandaŋu
+        ki lì yii: «Ba busuu di jéetì Babiloon kitiŋkpaaŋŋi kin cáá mpɔnee pu nan dee!'
+      sbs: 0.6882
+      gen_sec: 13.23
+      ref_sec: 12.52
+      cer: 0.1642
+      wer: 0.6
+    bible_00081:
+      source: bible
+      text: A yaa kaa fīntèe, m làá dāan̄ ŋyunti ŋun saa nyí yii m làá dāan̄ee ní kí túuǹ-si kii unaayuu
+        nín tūuntí unil puee.
+      sbs: 0.622
+      gen_sec: 8.28
+      ref_sec: 7.82
+      cer: 0.1395
+      wer: 0.25
+    bible_00082:
+      source: bible
+      text: Niinee kudii kun punyɔkɔki túĺ didandi púee dūu pīiǹ.
+      sbs: 0.7135
+      gen_sec: 4.1
+      ref_sec: 3.54
+      cer: 0.4091
+      wer: 1.1111
+    bible_00083:
+      source: bible
+      text: Un di yaa gbēē dinikpil ní baa dū nnyimee ki yɔ́kɔfì udaan puee kɔ́ǹ ti-Dindaan tantiu tijɔkɔndi.
+      sbs: 0.7486
+      gen_sec: 7.17
+      ref_sec: 5.54
+      cer: 0.1169
+      wer: 0.4118
+    bible_00084:
+      source: bible
+      text: Ti yaa báaa, ti bí ki tīī ti-Dindaan ní, ti yaa tí kpíìyaaa, ti kpíì ki tīī ti-Dindaan ní.
+      sbs: 0.639
+      gen_sec: 6.57
+      ref_sec: 5.84
+      cer: 0.1667
+      wer: 0.2632
+    bible_00085:
+      source: bible
+      text: Ikpiti iba kaa dāa kóò niin, nì bitiŋwiiliibi nì binyimɔndambi, see bin baba yiŋŋi bi ŋmàn̄
+        Dipibil gbɔŋku kun sá dimaŋfal gbɔŋkuee nee.
+      sbs: 0.6374
+      gen_sec: 10.92
+      ref_sec: 14.38
+      cer: 0.1273
+      wer: 0.3043
+    bible_00086:
+      source: bible
+      text: Di sá yii Babiloon bɔtiu Neebukadineesaar.
+      sbs: 0.6967
+      gen_sec: 3.33
+      ref_sec: 10.9
+      cer: 0.2222
+      wer: 0.8333
+    bible_00087:
+      source: bible
+      text: » Samaa kɔkɔ nìn nyántì-u dinaapaal kpaanceetiŋu ki yáŋkì-u ataŋkpee ki kūū, kii ti-Dindaan
+        nín nìn tùkū Mooyiisi yii bí ŋá puee.
+      sbs: 0.7618
+      gen_sec: 10.24
+      ref_sec: 7.84
+      cer: 0.1078
+      wer: 0.4286
+    bible_00088:
+      source: bible
+      text: Eesayuu jipɔmbi di sá Eeliifaasi nì Reewuyeel nì Yeewusi nì Yalaam nì Koora.
+      sbs: 0.7217
+      gen_sec: 5.8
+      ref_sec: 7.46
+      cer: 0.0
+      wer: 0.0
+    bible_00089:
+      source: bible
+      text: Boonee ní m ká kutagbɔmpɔŋu nì kitimpɔŋ.
+      sbs: 0.6698
+      gen_sec: 3.24
+      ref_sec: 3.52
+      cer: 0.0606
+      wer: 0.1429
+    bible_00090:
+      source: bible
+      text: Kriisitoo dɔ́miń ki sá-ti usaraaŋakpil un cáań-ti tiŋan tin poon ti bí nee.
+      sbs: 0.6413
+      gen_sec: 5.89
+      ref_sec: 5.26
+      cer: 0.0847
+      wer: 0.3846
+    bible_00091:
+      source: bible
+      text: Sii nì Aarɔn, ní kàaǹ-bi kí nóó nì bi-janjakitiŋi nín bí pu a-ba a-bee.
+      sbs: 0.7616
+      gen_sec: 5.38
+      ref_sec: 4.78
+      cer: 0.1731
+      wer: 0.5
+    bible_00092:
+      source: bible
+      text: Bijanjakpilib nì bikantámbunliibi nìn yú ki kɔ́ĺ-u.
+      sbs: 0.658
+      gen_sec: 4.01
+      ref_sec: 3.2
+      cer: 0.1905
+      wer: 1.0
+    bible_00093:
+      source: bible
+      text: Ní inaakitoon nyánní ŋŋminyiimee poon ki kpátìi gbí kitiŋ pu, ní Unimbɔti tīī-i mpɔn í nīn
+        júntí binib án nīn wàlifī kii inoomee.
+      sbs: 0.6308
+      gen_sec: 10.07
+      ref_sec: 11.82
+      cer: 0.1923
+      wer: 0.6087
+    bible_00094:
+      source: bible
+      text: Sii di nìn tútúǹ Unimbɔti ní u kpátì kutagbɔŋu.
+      sbs: 0.7563
+      gen_sec: 3.58
+      ref_sec: 3.36
+      cer: 0.1842
+      wer: 0.5556
+    bible_00095:
+      source: bible
+      text: » Ní Mooyiisi dū ti-Dindaan nín sòon̄-u puee ki tùkū Isirayeel yab, ní kunaakoou kamaa kpiliu
+        cáań u-kpandɔŋu.
+      sbs: 0.7563
+      gen_sec: 8.45
+      ref_sec: 6.06
+      cer: 0.1512
+      wer: 0.7059
+    bible_00096:
+      source: bible
+      text: Di sá yii Unimbɔti Beel kaa sá tijikaal nì tinyɔkaal bɔti, an sá deedee nì nsɔŋfi nì dipɔɔpindi
+        din u-Fam tììyee ní.
+      sbs: 0.6574
+      gen_sec: 8.79
+      ref_sec: 9.66
+      cer: 0.0978
+      wer: 0.3182
+    bible_00097:
+      source: bible
+      text: Bi nìn gà inyɔŋki laŋyi, ki cákafí cancakantib ní ki bɔ̀ɔ́ saŋgub nì tibati.
+      sbs: 0.7795
+      gen_sec: 6.06
+      ref_sec: 5.64
+      cer: 0.1695
+      wer: 0.6429
+    bible_00098:
+      source: bible
+      text: Ŋwìiń tin lì yii ŋu nyēēyee, an fātìi bɔ̄ntì.
+      sbs: 0.7353
+      gen_sec: 3.41
+      ref_sec: 3.38
+      cer: 0.2059
+      wer: 0.8889
+    bible_00099:
+      source: bible
+      text: Un kaa ŋúb́ u-dicaŋku tiŋanee, m lì ki bántí u-diiku poon nib kíŋŋŋ ní, mimmee udaan fá fookii,
+        ní bin kaa fōō Yeesu ki kííyee sɔ́ǹ-u.
+      sbs: 0.6554
+      gen_sec: 10.41
+      ref_sec: 9.24
+      cer: 0.21
+      wer: 0.5385
+    bible_00100:
+      source: bible
+      text: ti yaa kúuǹ ki yíiń-uee, ú kíí-ti.
+      sbs: 0.7826
+      gen_sec: 2.56
+      ref_sec: 4.5
+      cer: 0.4167
+      wer: 0.7143
+    bible_00101:
+      source: bible
+      text: Ama, ŋkùm yaa cáá a-nannanliu, á tīī-u tijin ú jī.
+      sbs: 0.6618
+      gen_sec: 3.93
+      ref_sec: 4.64
+      cer: 0.3889
+      wer: 1.2
+    bible_00102:
+      source: bible
+      text: Unimbɔti un sá upikpaabaantee di tìì tikɔkɔ.
+      sbs: 0.7655
+      gen_sec: 3.41
+      ref_sec: 3.64
+      cer: 0.1081
+      wer: 0.5714
+    bible_00103:
+      source: bible
+      text: 'Á tùkù-kì yii: <Ni-Dindaan Unimbɔti nín bíi sòoǹ nì Jeerusaleem puee sɔ̀.'
+      sbs: 0.7544
+      gen_sec: 5.55
+      ref_sec: 4.32
+      cer: 0.125
+      wer: 0.5833
+    bible_00104:
+      source: bible
+      text: Isakaar naakookunee, Suwaar jipɔɔn Neetaneeyeel.
+      sbs: 0.7375
+      gen_sec: 4.01
+      ref_sec: 3.12
+      cer: 0.1667
+      wer: 2.0
+    bible_00105:
+      source: bible
+      text: Daafiidi nìn bál̀ kutaŋkpanaakoouee poon, ní Fiiliistii yab gɔminau nìn bí Beetileem tiŋkin.
+      sbs: 0.744
+      gen_sec: 7.34
+      ref_sec: 6.46
+      cer: 0.1558
+      wer: 0.6154
+    bible_00106:
+      source: bible
+      text: 'Mooyiisi sòon̄ Daani naakooku pu yii: «Daani sá kii digbikintipɔmbil.'
+      sbs: 0.7527
+      gen_sec: 5.29
+      ref_sec: 4.38
+      cer: 0.1071
+      wer: 0.6
+    bible_00107:
+      source: bible
+      text: kí já nì Unimbɔti nì ubɔti un u lēēyee.
+      sbs: 0.7193
+      gen_sec: 2.82
+      ref_sec: 3.12
+      cer: 0.3333
+      wer: 0.7778
+    bible_00108:
+      source: bible
+      text: U bí Jisirayeel niinee ní Juuda bɔti Akasiyasi, Jooram jipɔɔn cūtì kí màntì u-pu.
+      sbs: 0.7215
+      gen_sec: 6.31
+      ref_sec: 5.94
+      cer: 0.1231
+      wer: 0.5714
+    bible_00109:
+      source: bible
+      text: M làá nyāntí ni-balilammu kí páań mpaampiin pu.
+      sbs: 0.7698
+      gen_sec: 3.58
+      ref_sec: 3.12
+      cer: 0.1842
+      wer: 0.625
+    bible_00110:
+      source: bible
+      text: Tiwan gbanti kaa wāĺ, kaa gbìl̄, kaa ŋūǹ kí còom̀ mun.
+      sbs: 0.6165
+      gen_sec: 4.01
+      ref_sec: 3.6
+      cer: 0.1282
+      wer: 0.4545
+    bible_00111:
+      source: bible
+      text: Ŋma di nyí tin ŋān̄ ki tīī unil u-maŋfal wiiŋyi in kaa kpáàa náaǹ nee poon?
+      sbs: 0.7691
+      gen_sec: 5.72
+      ref_sec: 5.46
+      cer: 0.2807
+      wer: 0.5625
+    bible_00112:
+      source: bible
+      text: An ŋūǹ kí nīn sá nnikpaakoon bɔti, àá mara bɔti, àá abɔkpaa bɔti, àá akoobil bɔti tiba.
+      sbs: 0.7574
+      gen_sec: 6.57
+      ref_sec: 7.06
+      cer: 0.1343
+      wer: 0.2941
+    bible_00113:
+      source: bible
+      text: Eenɔki fookiiu un u nìn cáá Unimbɔti puee di yì-tì ní waa kpíì.
+      sbs: 0.6755
+      gen_sec: 4.69
+      ref_sec: 5.18
+      cer: 0.1224
+      wer: 0.3077
+    bible_00114:
+      source: bible
+      text: Ŋyunti gbantee, m làá dāá gíí bi-pu diŋuul, kí dū-bi kí fá ní kí fàtī m-boon kí tīī-bi.
+      sbs: 0.7437
+      gen_sec: 6.57
+      ref_sec: 5.62
+      cer: 0.1429
+      wer: 0.3333
+    bible_00115:
+      source: bible
+      text: «Un yaa jáń ki jíńee, ŋkúnliliitiim kaa dāa gíti gbèetī udaan.
+      sbs: 0.5908
+      gen_sec: 4.69
+      ref_sec: 3.64
+      cer: 0.3265
+      wer: 0.7273
+    bible_00116:
+      source: bible
+      text: 'Mooyiisi sòon̄ Jooseefi naakooku pu yii: «Ti-Dindaan ń bìin̄ u-tiŋki pu.'
+      sbs: 0.7556
+      gen_sec: 5.46
+      ref_sec: 4.12
+      cer: 0.1273
+      wer: 0.3636
+    bible_00117:
+      source: bible
+      text: Ŋwiin bí ki dòoń, dijool din pu ti-Dindaan diiku tɔ́kɔ́ee.
+      sbs: 0.7443
+      gen_sec: 4.35
+      ref_sec: 3.54
+      cer: 0.0682
+      wer: 0.3
+    bible_00118:
+      source: bible
+      text: Ŋfamee nín kɔ́ bi-nee ní bi kíĺ ki bíi sòoǹ kii Unimbɔti bɔnaatiliibee.
+      sbs: 0.7244
+      gen_sec: 5.38
+      ref_sec: 4.96
+      cer: 0.0714
+      wer: 0.2308
+    bible_00119:
+      source: bible
+      text: Bi nín sòoǹ miŋyee dàkà ki cántí-ti yii bi bíi nyàab̀ kitiŋ ní kí nīn kóò.
+      sbs: 0.6646
+      gen_sec: 5.55
+      ref_sec: 6.44
+      cer: 0.2857
+      wer: 0.5625
+    bible_00120:
+      source: bible
+      text: Kí kúntée, Manasee naakookun yab nìn cūtìi kútì Daafiidi pu.
+      sbs: 0.7069
+      gen_sec: 4.69
+      ref_sec: 4.44
+      cer: 0.2041
+      wer: 0.7
+    bible_00121:
+      source: bible
+      text: Bisaraaŋaliibi nì Leefii yab nìn nyáń Isirayeel timmu kɔkɔn ki dɔ́miń ki páaǹ Rooboowaam boon.
+      sbs: 0.7381
+      gen_sec: 7.25
+      ref_sec: 6.28
+      cer: 0.1154
+      wer: 0.4
+    bible_00122:
+      source: bible
+      text: » Ní bi nyáń kunimbɔtidiin ki cūtìi pɔ̄fì binib kitiŋin.
+      sbs: 0.7115
+      gen_sec: 4.27
+      ref_sec: 4.5
+      cer: 0.1136
+      wer: 0.3333
+    bible_00123:
+      source: bible
+      text: U nì bijanjakpilib bin kpòotī bijanjaliibi dilaataal dilaataalee nìn ŋá kunyɔɔbaantii.
+      sbs: 0.7243
+      gen_sec: 7.0
+      ref_sec: 6.5
+      cer: 0.0533
+      wer: 0.2727
+    bible_00124:
+      source: bible
+      text: Bi nìn ŋmàn̄ Leefii yab dicaŋŋi kpilib yiŋŋi ki ŋá kugbɔŋu kun poon bi ŋmà tin jītí ŋwiin
+        kamaayee ki tin sāā Eeliyasiib naantiiu Yoowanan yuntiŋu.
+      sbs: 0.7544
+      gen_sec: 12.03
+      ref_sec: 12.1
+      cer: 0.15
+      wer: 0.4231
+    bible_00125:
+      source: bible
+      text: Míǹ boonee ní u jítìi kɔ́ poon poon diiku ki ŋmāntì kipunyɔkɔ jaantalkub ní ki ká kukaluuee
+        fɔkɔŋŋu mili pu, ní kipunyɔkɔ ki-ba waaŋŋu sá kukaluuee fɔkɔŋŋu miluu pu.
+      sbs: 0.765
+      gen_sec: 13.06
+      ref_sec: 11.92
+      cer: 0.0902
+      wer: 0.4483
+    bible_00126:
+      source: bible
+      text: U nìn tīī bijanjakpilib bin kpèé bijanjaliibi dilaataal dilaataalee ŋkpamu nì ubɔti Daafiidi
+        gbampɔɔŋi ŋin bí a-ba a-ba ki nìn bí kunimbɔtidiinee.
+      sbs: 0.7413
+      gen_sec: 11.69
+      ref_sec: 12.08
+      cer: 0.082
+      wer: 0.3182
+    bible_00127:
+      source: bible
+      text: Ŋyunti gbantee, Jeerooboowaam nìn lēē u-janjaliibi biba bi cūtìi bál̀ Juuda yab janjaliibi
+        boon pú kí túuǹ-bi.
+      sbs: 0.7406
+      gen_sec: 8.7
+      ref_sec: 8.84
+      cer: 0.1685
+      wer: 0.7059
+    bible_00128:
+      source: bible
+      text: «Un yaa jáń ki jíńee, m làá yàntī ú dāan̄ kí kàl̄ kí kɔ́ĺ-mi m-beelin, kii ma mun nín jáń
+        ki jíń pu ki dɔ́miń ki kāl̀ m-Baa beelin ki kɔ́ĺ-u puee.
+      sbs: 0.5994
+      gen_sec: 9.81
+      ref_sec: 11.1
+      cer: 0.2277
+      wer: 0.5625
+    bible_00129:
+      source: bible
+      text: Ndɔ ŋun bi nìn dūu ŋmāntèe nìn jítì santimeetab imuŋku ili nì saalaa pu fiii.
+      sbs: 0.7396
+      gen_sec: 5.97
+      ref_sec: 4.72
+      cer: 0.1774
+      wer: 0.6667
+    bible_00130:
+      source: bible
+      text: Kunimbɔtidii boon nì ku-poon, kí yòon̄ kipunyɔkɔ kí cáá sāā poon poon diikuee, bi nìn bɔ́ntì
+        mpaan ŋubɔ kí lēē keerubimbi nì ibafi.
+      sbs: 0.7802
+      gen_sec: 9.98
+      ref_sec: 9.7
+      cer: 0.165
+      wer: 0.6957
+    bible_00131:
+      source: bible
+      text: Juuda yab kɔkɔ nìn bí mmɔnni, kun puee bi nìn pūtì ki pōoǹ nì bi-pɔbiliŋ kɔkɔ ní.
+      sbs: 0.7349
+      gen_sec: 5.97
+      ref_sec: 6.52
+      cer: 0.0968
+      wer: 0.4118
+    bible_00132:
+      source: bible
+      text: Ti-nimbiin niin ní ti-Dindaan dàkā Faaroo nì u-dicaŋku nì u-nib kɔkɔ u-daanti nì u-tuŋkpaaŋŋi,
+        ní ki kɔ́ǹ-bi digìŋ́kpaandin.
+      sbs: 0.7627
+      gen_sec: 10.15
+      ref_sec: 9.14
+      cer: 0.0833
+      wer: 0.3333
+    bible_00133:
+      source: bible
+      text: di sá yii u-neeŋkpaandi bí ní ki cá jaanjaan.
+      sbs: 0.8066
+      gen_sec: 3.5
+      ref_sec: 3.52
+      cer: 0.0
+      wer: 0.0
+    bible_00134:
+      source: bible
+      text: Joosafaati nìn ká tigaajati nì tinyool tikpil.
+      sbs: 0.6696
+      gen_sec: 3.58
+      ref_sec: 3.26
+      cer: 0.1282
+      wer: 0.4286
+    bible_00135:
+      source: bible
+      text: Tin kɔkɔ pée kā unil gbanti naŋki puee, u cáá-tì.
+      sbs: 0.7787
+      gen_sec: 3.84
+      ref_sec: 3.7
+      cer: 0.0541
+      wer: 0.2
+    bible_00136:
+      source: bible
+      text: Ti-Dindaan nyootee nìn dīń ŋwìiń nyalaŋki punyɔkɔki ki kɔ́nní kunimbɔtidiin.
+      sbs: 0.7478
+      gen_sec: 6.23
+      ref_sec: 5.14
+      cer: 0.1406
+      wer: 0.7
+    bible_00137:
+      source: bible
+      text: Bi nìn baasii lēē bíǹ yii bí cù kí kàan̄ Daafiidi dibeel ní.
+      sbs: 0.745
+      gen_sec: 4.35
+      ref_sec: 4.12
+      cer: 0.3043
+      wer: 0.8462
+    bible_00138:
+      source: bible
+      text: » Ama ní un ŋúb́ u-janjawantee fāŋkì ní ki yíì.
+      sbs: 0.7218
+      gen_sec: 3.41
+      ref_sec: 4.1
+      cer: 0.2059
+      wer: 0.4444
+    bible_00139:
+      source: bible
+      text: Tiŋman ni wīikí ní ki cáá sindaariya nabil din Jeerooboowaam mɔ́ɔ́ ki tīī-ni dí nīn sá ni-nimbɔtiuee.
+      sbs: 0.7329
+      gen_sec: 7.77
+      ref_sec: 8.26
+      cer: 0.175
+      wer: 0.7059
+    bible_00140:
+      source: bible
+      text: Yooyariib dicaŋkunee, Mateenayi di nìn sá ukpil.
+      sbs: 0.7787
+      gen_sec: 4.01
+      ref_sec: 3.58
+      cer: 0.1
+      wer: 0.7143
+    bible_00141:
+      source: bible
+      text: Bi bíi tūǹ Unimbɔti tundi ní, ki téekí-si á ŋá tiŋan.
+      sbs: 0.6136
+      gen_sec: 4.1
+      ref_sec: 3.68
+      cer: 0.225
+      wer: 0.4545
+    bible_00142:
+      source: bible
+      text: Unimbɔti gbɔŋku poon lī yii Eenɔki nìn pée fáatì Unimbɔti dooooyee ní ki wāatì u dāa nín yōoǹ-u.
+      sbs: 0.6723
+      gen_sec: 7.25
+      ref_sec: 8.2
+      cer: 0.1818
+      wer: 0.4444
+    bible_00143:
+      source: bible
+      text: Bi nìn cáań-u busubu bun bi yíì seediree dɔi nì kapintab nì bitaŋkpakpitiliibi bí mā-u dibeecindi.
+      sbs: 0.7211
+      gen_sec: 7.85
+      ref_sec: 8.04
+      cer: 0.1125
+      wer: 0.4375
+    bible_00144:
+      source: bible
+      text: Mimmee ti làá nín ŋá mana ní kí ŋmátí dee?
+      sbs: 0.7257
+      gen_sec: 3.16
+      ref_sec: 4.58
+      cer: 0.1562
+      wer: 0.4
+    bible_00145:
+      source: bible
+      text: Ní taa cɔ̄ŋkì ti-Dindaan ni-Nimbɔtiu kii ni nín nìn cɔ́ŋkì-u Maasa puee.
+      sbs: 0.7612
+      gen_sec: 5.72
+      ref_sec: 4.2
+      cer: 0.1091
+      wer: 0.5833
+    bible_00146:
+      source: bible
+      text: Ubɔ kaa nìn gíti kíǹ Akasiyasi dicaŋkun kí ŋmā kí kpántí ubɔti.
+      sbs: 0.7244
+      gen_sec: 5.03
+      ref_sec: 5.36
+      cer: 0.2353
+      wer: 0.75
+    bible_00147:
+      source: bible
+      text: 'Daafiidi nìn fāŋkì ti-Dindaan yaadal wiiŋŋu, ní ki bí yii: «Maa làá ŋmā kí cùnnì ti-Dindaan
+        dakaau m-dumpu!'
+      sbs: 0.7438
+      gen_sec: 8.53
+      ref_sec: 6.62
+      cer: 0.0964
+      wer: 0.3333
+    bible_00148:
+      source: bible
+      text: '- See un kaa cáá u-ŋalii ki tūǹ atuŋkpiti.'
+      sbs: 0.7089
+      gen_sec: 3.33
+      ref_sec: 3.12
+      cer: 0.2903
+      wer: 0.625
+    bible_00149:
+      source: bible
+      text: » Ubɔ yaa dɔ́miń ki tùkū-si yii bin kpòotī Kriisitoo nikitilee ubɔ ŋá tibee, á taa fōō kí
+        kíí, see binib bili kii bita di yaa ká ní ki tùkū-si.
+      sbs: 0.6634
+      gen_sec: 10.33
+      ref_sec: 10.1
+      cer: 0.0841
+      wer: 0.2759
+    bible_00150:
+      source: bible
+      text: M làá lēē ni-pɔbil din pɔ̄ɔ̄ kii ditaŋkpalee ni-ni, ní kí tīī-ni dipɔbil din pɔ̀fì ki gbìl̀
+        tibɔti taapuee.
+      sbs: 0.7332
+      gen_sec: 7.85
+      ref_sec: 6.2
+      cer: 0.0875
+      wer: 0.4737
+    bible_00151:
+      source: bible
+      text: Ti-Dindaan, unil sá ba ní u-bɔti páb́-si míǹ.
+      sbs: 0.7719
+      gen_sec: 3.33
+      ref_sec: 3.2
+      cer: 0.1562
+      wer: 0.875
+    bible_00152:
+      source: bible
+      text: Yoowaneesi u-ba kaa nìn sá ŋwalifi, u nìn dɔ́miń kí lēē ŋwalifee pu seera ní.
+      sbs: 0.6401
+      gen_sec: 5.8
+      ref_sec: 6.24
+      cer: 0.1695
+      wer: 0.4667
+    bible_00153:
+      source: bible
+      text: 'Kutaa wúntèe ní Isirayeel yab kɔkɔ tí bíi wòoǹ Mooyiisi nì Aarɔn yii: «Nimbi di yāntì ti-Dindaan
+        nibul kpíì».'
+      sbs: 0.7372
+      gen_sec: 8.11
+      ref_sec: 6.24
+      cer: 0.1512
+      wer: 0.4737
+    bible_00154:
+      source: bible
+      text: 'Ní ti-Dindaan bí Mooyiisi yii: «Yòon̄ ŋkpandɔ si nì a-maan Aarɔn, kí kpāfì Isirayeel yab,
+        kí sòoǹ nì ditaŋkpal nee bi-nimbiin dí tīī-ni nnyim.'
+      sbs: 0.7656
+      gen_sec: 10.84
+      ref_sec: 9.22
+      cer: 0.1284
+      wer: 0.5
+    bible_00155:
+      source: bible
+      text: Kool-Ooseeya jipɔɔn Saaluum, Miisipa tiŋki bɔtiu di nìn ŋáŋkì Nnyimbul punyɔkɔki.
+      sbs: 0.777
+      gen_sec: 6.74
+      ref_sec: 6.62
+      cer: 0.1618
+      wer: 0.9091
+    bible_00156:
+      source: bible
+      text: Maaki jipɔɔn Geewuyeel, u sá Gaadi naakookun.
+      sbs: 0.7818
+      gen_sec: 3.5
+      ref_sec: 3.08
+      cer: 0.0541
+      wer: 0.8571
+    bible_00157:
+      source: bible
+      text: M nìn gíti ká yii ndibiyaamu mun bi nìn máń ki tú kunimbɔtidiiyee nìn lībitì adiin ŋin kíǹee
+        kɔkɔ.
+      sbs: 0.7503
+      gen_sec: 7.34
+      ref_sec: 7.48
+      cer: 0.1266
+      wer: 0.4211
+    bible_00158:
+      source: bible
+      text: Kuusi di màl̄ Neemiroodi un sá ubaatandaan upeekaa kitiŋ puee.
+      sbs: 0.7151
+      gen_sec: 4.78
+      ref_sec: 5.36
+      cer: 0.2353
+      wer: 0.7
+    bible_00159:
+      source: bible
+      text: Míǹ mbaantiim, bininjab kaa ti là binimpoobi, ní ki kíǹ ki là tɔb ŋmaniŋma tikpil ki dɔ̀ nì
+        tɔb.
+      sbs: 0.6623
+      gen_sec: 7.17
+      ref_sec: 6.34
+      cer: 0.1486
+      wer: 0.3684
+    bible_00160:
+      source: bible
+      text: Bi nìn jáń ki pɔ́ɔkiǹ Juuda yab ní ki kɔ́ kitiŋin ki kóoǹ tigaajawan tin kɔkɔ nìn bí ubɔti
+        dicaŋkunee.
+      sbs: 0.7115
+      gen_sec: 7.68
+      ref_sec: 7.3
+      cer: 0.125
+      wer: 0.4
+    bible_00161:
+      source: bible
+      text: Ŋkúm ní bi dāa néeń, ama ní ŋkúm ń dāá sāǹ kí wàatī-bi.
+      sbs: 0.6643
+      gen_sec: 4.1
+      ref_sec: 5.24
+      cer: 0.125
+      wer: 0.3846
+    bible_00162:
+      source: bible
+      text: Fookii un Unimbɔti nib dooooyee yab nìn cááyee pu ní bi ká disíndi Unimbɔti cee.
+      sbs: 0.6758
+      gen_sec: 6.23
+      ref_sec: 6.08
+      cer: 0.0615
+      wer: 0.2667
+    bible_00163:
+      source: bible
+      text: Ti-Dindaan Unimbɔti, sii un di sá mpɔn ŋun fìil̄-mee.
+      sbs: 0.7291
+      gen_sec: 4.1
+      ref_sec: 3.64
+      cer: 0.0
+      wer: 0.0
+    bible_00164:
+      source: bible
+      text: U yúl̀ bin kpíìyee nì bin dáá wāĺee kansikin, ní ditafadaaldi gbēeǹ.
+      sbs: 0.7276
+      gen_sec: 5.12
+      ref_sec: 4.82
+      cer: 0.1481
+      wer: 0.5833
+    bible_00165:
+      source: bible
+      text: » Ŋyunti ŋun Daafiidi nìn fàtīi gítí Siikilaagi tiŋkinee ní Manasee yab biba nìn cūtìi kútì
+        u-pu.
+      sbs: 0.7179
+      gen_sec: 7.68
+      ref_sec: 7.82
+      cer: 0.1282
+      wer: 0.5625
+    bible_00166:
+      source: bible
+      text: ní ki yaa bɔ́ntì kí já nì saaa, baa làá ŋmā kí ŋá-si tiba.
+      sbs: 0.7807
+      gen_sec: 4.18
+      ref_sec: 3.5
+      cer: 0.1951
+      wer: 0.5
+    bible_00167:
+      source: bible
+      text: Dalba mun ntaayim nìn lítì ki bīī kitiŋ pu ní u kɔ́ mbòó ŋubɔ poon ki kūū gbikinti.
+      sbs: 0.7116
+      gen_sec: 6.06
+      ref_sec: 7.1
+      cer: 0.2656
+      wer: 0.3889
+    bible_00168:
+      source: bible
+      text: a nìn dàkafī yii a tɔ́kɔ́ bin kíǹee kɔkɔ pu.
+      sbs: 0.7297
+      gen_sec: 2.99
+      ref_sec: 3.26
+      cer: 0.1562
+      wer: 0.9
+    bible_00169:
+      source: bible
+      text: Ní jāam̀ Naasiisi dicaŋkun yab bin sá ti-Dindaan yabee.
+      sbs: 0.6249
+      gen_sec: 4.35
+      ref_sec: 3.72
+      cer: 0.0909
+      wer: 0.3333
+    bible_00170:
+      source: bible
+      text: Agbampɔɔ ikuul kupaau di bīī u-boon.
+      sbs: 0.7656
+      gen_sec: 2.82
+      ref_sec: 3.9
+      cer: 0.2069
+      wer: 0.8333
+    bible_00171:
+      source: bible
+      text: Bitaŋkpakpitiliibi bí, bidɔkpitiliibi bí, kapintab bí, ní atuun ŋin kíǹee kɔkɔ tɔntɔnliibi
+        bí ki nyí bi-tuuŋŋi tiŋan pu.
+      sbs: 0.7484
+      gen_sec: 9.81
+      ref_sec: 9.58
+      cer: 0.1327
+      wer: 0.6111
+    bible_00172:
+      source: bible
+      text: U nìn bíi bɔ́ntí kí já nì bi-tiŋyil Raaba kí fōō-kì.
+      sbs: 0.7159
+      gen_sec: 3.84
+      ref_sec: 3.6
+      cer: 0.2632
+      wer: 0.6364
+    bible_00173:
+      source: bible
+      text: Daafiidi nì Isirayeel yab kɔkɔ nìn cūtì kí já nì Jeerusaleem tiŋki.
+      sbs: 0.7625
+      gen_sec: 5.29
+      ref_sec: 4.82
+      cer: 0.1455
+      wer: 0.5
+    bible_00174:
+      source: bible
+      text: Bin kìtī fiinyi subiliŋee yaa láa bāań ni-ceeyee.
+      sbs: 0.727
+      gen_sec: 4.01
+      ref_sec: 3.12
+      cer: 0.325
+      wer: 1.25
+    bible_00175:
+      source: bible
+      text: Míǹ ní m làá ŋá ní Isirayeel yab ń taa ti nín̄ kpākantí-ni ki cá, ní igbukum ń gbèen̄.
+      sbs: 0.7698
+      gen_sec: 6.23
+      ref_sec: 5.66
+      cer: 0.1905
+      wer: 0.5789
+    bible_00176:
+      source: bible
+      text: dijool din kūń isufi nì timool kpée yilpu.
+      sbs: 0.6996
+      gen_sec: 3.16
+      ref_sec: 3.02
+      cer: 0.0882
+      wer: 0.375
+    bible_00177:
+      source: bible
+      text: ní á dāá tāā bi-waapaaŋyi pùb.
+      sbs: 0.7448
+      gen_sec: 2.3
+      ref_sec: 4.56
+      cer: 0.3913
+      wer: 0.8333
+    bible_00178:
+      source: bible
+      text: Bin kóò Yabeesi Galaadi tiŋkinee gbìl̄ Fiiliistii yab nín ŋá Saayuul puee.
+      sbs: 0.7138
+      gen_sec: 5.8
+      ref_sec: 5.14
+      cer: 0.1311
+      wer: 0.4167
+    bible_00179:
+      source: bible
+      text: kitiŋ kin di ŋān̄ Kaaldee yab cee kii dibeedimbilee.
+      sbs: 0.7606
+      gen_sec: 4.18
+      ref_sec: 4.58
+      cer: 0.0952
+      wer: 0.4444
+    bible_00180:
+      source: bible
+      text: áli gba kubuŋu kaa ŋūǹ kí jītí i-kansikin.
+      sbs: 0.7332
+      gen_sec: 3.33
+      ref_sec: 3.08
+      cer: 0.2424
+      wer: 0.75
+    bible_00181:
+      source: bible
+      text: 'Tibɔtee dàkà-ti nsan ŋun Unimbɔti dì ki kpántí unil deedeedaan u-nimbiinee: an sá unil ń
+        fōō kí kíí ní.'
+      sbs: 0.6458
+      gen_sec: 7.85
+      ref_sec: 7.54
+      cer: 0.1728
+      wer: 0.4737
+    bible_00182:
+      source: bible
+      text: Bi dū ŋwìiń nyalaŋki pú punyɔkɔki ki tīī dibɔtibil.
+      sbs: 0.7086
+      gen_sec: 4.1
+      ref_sec: 3.04
+      cer: 0.119
+      wer: 0.5556
+    bible_00183:
+      source: bible
+      text: Bi nìn yíkí ní ki cá kuteeun nì ajoon pu, ki kóò itaŋkpalɔkɔn nì afaginni.
+      sbs: 0.648
+      gen_sec: 5.63
+      ref_sec: 7.14
+      cer: 0.1379
+      wer: 0.4667
+    bible_00184:
+      source: bible
+      text: Bi nìn cáá dipɔbil ní ki nìn sá bin bɔ́ntì kí já nì ubɔti nannanliibi kí mɔ̄tì u-puee.
+      sbs: 0.6992
+      gen_sec: 6.23
+      ref_sec: 7.44
+      cer: 0.0923
+      wer: 0.3889
+    bible_00185:
+      source: bible
+      text: M yíì-ni m-bɔɔbi ní, kun puee m dàkā-ni tin kɔkɔwoooo m gbìl̄ m-Baa ceeyee.
+      sbs: 0.6312
+      gen_sec: 5.63
+      ref_sec: 5.84
+      cer: 0.2545
+      wer: 0.6429
+    bible_00186:
+      source: bible
+      text: Uniniiti di nìn sá Yoowanan, ní uwawati sá Eelsabaadi, ní usaalaati sá Irimeeya ní saalaa
+        nì upeekaa sá Makibanaayi.
+      sbs: 0.7308
+      gen_sec: 8.96
+      ref_sec: 11.46
+      cer: 0.1474
+      wer: 0.5263
+    bible_00187:
+      source: bible
+      text: An sá mara ní m yóoǹ-ni kí nīn pée cáa cá jaanjaan.
+      sbs: 0.7483
+      gen_sec: 3.84
+      ref_sec: 4.02
+      cer: 0.1316
+      wer: 0.5
+    bible_00188:
+      source: bible
+      text: M kpáafí-si Unimbɔti nì Yeesu Kriisitoo nì Unimbɔti tuuŋyi in u lútèe nimbiin, yii á ŋúb́
+        tibɔti tin m sòoǹ nì si nee kí taa nín̄ cáá dinigàntil, kí taa lēē biba ki ŋáań bíǹ tiŋan ki yàntī
+        bin kíǹee.
+      sbs: 0.6638
+      gen_sec: 14.93
+      ref_sec: 14.32
+      cer: 0.1429
+      wer: 0.5
+    bible_00189:
+      source: bible
+      text: An pɔ̄ɔ̄ unil ń kíí kí kpú deedeedaan pu.
+      sbs: 0.6576
+      gen_sec: 2.82
+      ref_sec: 3.76
+      cer: 0.0667
+      wer: 0.2222
+    bible_00190:
+      source: bible
+      text: Míǹ boonee ní u ŋmāntì kunimbɔtidii poon gundi ní ki ká ŋgbifin kukaluuee fɔkɔŋŋu miluu pu.
+      sbs: 0.7538
+      gen_sec: 7.25
+      ref_sec: 5.8
+      cer: 0.1467
+      wer: 0.5625
+    bible_00191:
+      source: bible
+      text: kí dàkà Eefiraati mɔɔl ŋŋal kí kpàtī di-pu.
+      sbs: 0.7514
+      gen_sec: 3.41
+      ref_sec: 3.34
+      cer: 0.1765
+      wer: 0.625
+    bible_00192:
+      source: bible
+      text: 'Di sá yii bi nìn lì yii: <Ti-Dindaan nibul nìn yá, bi yíkì u-tiŋki pu.'
+      sbs: 0.7792
+      gen_sec: 5.21
+      ref_sec: 4.76
+      cer: 0.1
+      wer: 0.2667
+    bible_00193:
+      source: bible
+      text: '>» «Míǹ puee kɔŋkɔnnee, m-jipɔɔn, ti-Dindaan a-Nimbɔtiu ń nīn bí a-cee á ŋmā kí mā-u kudii,
+        kii u nín nìn pōoǹ a-pu puee.'
+      sbs: 0.7507
+      gen_sec: 9.13
+      ref_sec: 8.52
+      cer: 0.1047
+      wer: 0.4091
+    bible_00194:
+      source: bible
+      text: Ní Daafiidi nì Isirayeel yab kɔkɔ nín jɔ́ḿ Baala, an dàkà yii Kiiriyati-Yeeyariim tiŋki kin
+        bí Juuda naakookunee, kí cùú yòon̄ní Unimbɔti Dakaau.
+      sbs: 0.7417
+      gen_sec: 11.26
+      ref_sec: 11.24
+      cer: 0.188
+      wer: 0.7391
+    bible_00195:
+      source: bible
+      text: kii ŋwìiń nín ŋmíntí ŋu-walifiŋu tùm̀ puee.
+      sbs: 0.6893
+      gen_sec: 3.58
+      ref_sec: 3.4
+      cer: 0.4412
+      wer: 1.0
+    bible_00196:
+      source: bible
+      text: Di sá yii m nyí yii m-kúm boonee ni làá dāá kɔ́ ikpitin ní kí dāá fàtī ni-boon kí tīī tibɔti
+        tin m dūu kpáafì-ni nee.
+      sbs: 0.7431
+      gen_sec: 8.28
+      ref_sec: 8.12
+      cer: 0.092
+      wer: 0.3077
+    bible_00197:
+      source: bible
+      text: A nyí an nín ŋá pu kutagbɔŋu dàn̄ yilpueeee?
+      sbs: 0.7778
+      gen_sec: 3.33
+      ref_sec: 3.7
+      cer: 0.2059
+      wer: 0.5556
+    bible_00198:
+      source: bible
+      text: Ŋgan púee, ŋwalifi ŋubɔ nyánní ki jìl̀ kii sindaariyee.
+      sbs: 0.7588
+      gen_sec: 4.44
+      ref_sec: 4.68
+      cer: 0.1591
+      wer: 0.4444
+    bible_00199:
+      source: bible
+      text: An yaa kíǹ m-nannanliibi nín ŋmàn̄ tin kí kɔ̄kɔl̀-mee.
+      sbs: 0.7659
+      gen_sec: 4.01
+      ref_sec: 4.42
+      cer: 0.175
+      wer: 0.7778
 - model: k2-fsa/OmniVoice-ref
   model_url: https://huggingface.co/k2-fsa/OmniVoice
   mode: ref
@@ -16819,4 +18501,4 @@ benchmarks:
       ref_sec: 4.42
       cer: 0.35
       wer: 0.8889
-updated: '2026-10-01'
+updated: '2026-10-09'

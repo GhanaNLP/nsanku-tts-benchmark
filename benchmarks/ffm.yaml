@@ -11,6 +11,1688 @@ judge:
   model: facebook/omniASR-LLM-7B-v2
   cer_on_real_speech: 0.0555
 benchmarks:
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.727
+  num_scored: 200
+  cer: 0.063
+  wer: 0.2427
+  accuracy: 0.937
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.832
+  score: 0.832
+  per_source:
+    bible:
+      sbs: 0.727
+      cer: 0.063
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: 'Yaayaa seettii, wii: —Mi yii Ruuhu hono wuugaandu ana jippoo iwde dow kammu faa hoɗi dow
+        makko.'
+      sbs: 0.7298
+      gen_sec: 6.74
+      ref_sec: 7.36
+      cer: 0.08
+      wer: 0.2353
+    bible_00001:
+      source: bible
+      text: Homo woni duroowo mo yarataa kosam sewre mum?
+      sbs: 0.6959
+      gen_sec: 3.24
+      ref_sec: 3.1
+      cer: 0.0541
+      wer: 0.25
+    bible_00002:
+      source: bible
+      text: 'Jamaa keewɗo filii mo, o haalani ɓe ngol banndol: —Aawoowo yalti sankoyde.'
+      sbs: 0.7539
+      gen_sec: 5.38
+      ref_sec: 5.98
+      cer: 0.0847
+      wer: 0.3333
+    bible_00003:
+      source: bible
+      text: 'Sabi min laatike fijirteeɓe yeeso aduna oo fuu: yeeso malaaikaen e yimɓe fuu.'
+      sbs: 0.7196
+      gen_sec: 5.55
+      ref_sec: 6.18
+      cer: 0.0635
+      wer: 0.1538
+    bible_00004:
+      source: bible
+      text: Oon wakkati fuu, o yamiri hoore Yaayaa taƴoyee ley kasu too.
+      sbs: 0.7201
+      gen_sec: 4.27
+      ref_sec: 4.66
+      cer: 0.0417
+      wer: 0.2727
+    bible_00005:
+      source: bible
+      text: Haala dokke ɗe Ruuhu Ceniiɗo hokkata ɗee, sakiraaɓe, miɗo yiɗi paamon ɗe faa gasa.
+      sbs: 0.7415
+      gen_sec: 5.97
+      ref_sec: 5.6
+      cer: 0.0909
+      wer: 0.2857
+    bible_00006:
+      source: bible
+      text: Taalibbo anndondirɗo e Jottinoowo Sadaka Mawɗo oo, yalti haaldi e debbo doomoowo damal ngal
+        oo, naanni Piyeer.
+      sbs: 0.7575
+      gen_sec: 8.02
+      ref_sec: 7.34
+      cer: 0.022
+      wer: 0.1176
+    bible_00007:
+      source: bible
+      text: 'Gooto e yanooɓe ɗiɗon tontidaaɓe e makko ɓee ana ɲiŋa mo, ana wiya: —Wanaa aan woni Almasiihu
+        naa?'
+      sbs: 0.7366
+      gen_sec: 7.08
+      ref_sec: 6.66
+      cer: 0.0779
+      wer: 0.1111
+    bible_00008:
+      source: bible
+      text: Ɓe njehi, ɓe tawri hono no o wii ɓe nii, ɓe lanndinii hiraande Paska ndee.
+      sbs: 0.7572
+      gen_sec: 5.21
+      ref_sec: 4.84
+      cer: 0.0
+      wer: 0.0
+    bible_00009:
+      source: bible
+      text: Pool ɓami naɓi worɓe ɓee, yaadi e mumen.
+      sbs: 0.7261
+      gen_sec: 2.82
+      ref_sec: 3.44
+      cer: 0.129
+      wer: 0.375
+    bible_00010:
+      source: bible
+      text: Celliniraaɗo haaynde ndee oo, duuɓi muuɗum ana ɓuri capanɗe nay.
+      sbs: 0.7037
+      gen_sec: 4.86
+      ref_sec: 3.96
+      cer: 0.0189
+      wer: 0.1
+    bible_00011:
+      source: bible
+      text: Yimɓe leydi Gerasa fuu ndaardi Iisaa yoppana ɗumen leydi mumen, sabi kulol manngol nanngi
+        ɗumen.
+      sbs: 0.7247
+      gen_sec: 7.0
+      ref_sec: 6.28
+      cer: 0.025
+      wer: 0.1333
+    bible_00012:
+      source: bible
+      text: 'Ɗal min ndarna ɗoo buguuji tati: aan wooturu, Muusaa wooturu, Iliyaasa wooturu.'
+      sbs: 0.7731
+      gen_sec: 5.8
+      ref_sec: 6.24
+      cer: 0.0625
+      wer: 0.25
+    bible_00013:
+      source: bible
+      text: 'Nden Iisaa wari darii hakkunde maɓɓe, wii ɓe: —Onon e jam!'
+      sbs: 0.7811
+      gen_sec: 4.1
+      ref_sec: 3.94
+      cer: 0.0227
+      wer: 0.0909
+    bible_00014:
+      source: bible
+      text: Kaa Iisaa, o waɗi ɗum e juuɗe maɓɓe, faa ɓe ngaɗa ɗum ko weli ɓe.
+      sbs: 0.7312
+      gen_sec: 4.35
+      ref_sec: 4.22
+      cer: 0.0208
+      wer: 0.0667
+    bible_00015:
+      source: bible
+      text: Jamirooje makko nganaa donngal, sabi ko iwi e Laamɗo fuu, jaaloto giɗaaɗe yonki.
+      sbs: 0.7245
+      gen_sec: 5.8
+      ref_sec: 4.88
+      cer: 0.0308
+      wer: 0.0769
+    bible_00016:
+      source: bible
+      text: Ana yiɗaa taalibbo wuurda no moobbo mum wuurdi fuu, maccuɗo duu no kalfaaɗo mum wuurdi.
+      sbs: 0.7057
+      gen_sec: 6.4
+      ref_sec: 4.76
+      cer: 0.0423
+      wer: 0.1333
+    bible_00017:
+      source: bible
+      text: Homo ɓuri teddude, jooɗiiɗo faa ɲaama naa ɓattinoowo ɲaamdu?
+      sbs: 0.7322
+      gen_sec: 4.61
+      ref_sec: 3.44
+      cer: 0.12
+      wer: 0.4444
+    bible_00018:
+      source: bible
+      text: 'Nde Iisaa nani kaa haala ndee, haaynaa e hooreejo sordaasien oo, yeeƴii yimɓe jokkuɓe e mum
+        ɓee, wii: —Miɗo haalana on, mi yiyaali hono ngal goonɗinal e sellude fay e Israaiilanke.'
+      sbs: 0.7341
+      gen_sec: 12.89
+      ref_sec: 12.44
+      cer: 0.021
+      wer: 0.0645
+    bible_00019:
+      source: bible
+      text: 'Nde Iisaa yii inniraaɗo oo ndee, yurmii ɗum, wii: —Pati woy!'
+      sbs: 0.7756
+      gen_sec: 4.27
+      ref_sec: 4.72
+      cer: 0.0222
+      wer: 0.0909
+    bible_00020:
+      source: bible
+      text: Balɗe ɗiɗi caggal mum, kuurtungu waɗi ley ngalluure wiyeteende Kaana ley leydi Galili.
+      sbs: 0.7104
+      gen_sec: 6.4
+      ref_sec: 5.02
+      cer: 0.0278
+      wer: 0.0769
+    bible_00021:
+      source: bible
+      text: Njehee ndoomiroyee yanaande ndee no mbaawru-ɗon fuu!
+      sbs: 0.6933
+      gen_sec: 4.01
+      ref_sec: 3.42
+      cer: 0.0227
+      wer: 0.5714
+    bible_00022:
+      source: bible
+      text: 'Kaa Iisaa wii: —Piyeer, miɗo haalane: fade ndontoori jogginde hannde a wiyan a anndaa kam
+        cili tati.'
+      sbs: 0.7801
+      gen_sec: 7.25
+      ref_sec: 7.18
+      cer: 0.038
+      wer: 0.1765
+    bible_00023:
+      source: bible
+      text: Ɗum saabii homo e mon fuu waaltina hakkille banndum, gooto fuu faaboo goɗɗo banngal goonɗinal,
+        hono no ngollirton nii.
+      sbs: 0.7364
+      gen_sec: 8.62
+      ref_sec: 8.44
+      cer: 0.0206
+      wer: 0.1053
+    bible_00024:
+      source: bible
+      text: Mo goonɗinaali fuu tilike sareede, sabi goonɗinaali Ɓii Laamɗo bajjo oo.
+      sbs: 0.71
+      gen_sec: 5.29
+      ref_sec: 4.02
+      cer: 0.05
+      wer: 0.2727
+    bible_00025:
+      source: bible
+      text: Nguleefi kii yaltini e majje mboddi, ndi soppi junngo makko.
+      sbs: 0.7474
+      gen_sec: 4.35
+      ref_sec: 3.38
+      cer: 0.0612
+      wer: 0.3
+    bible_00026:
+      source: bible
+      text: 'Kaa Pool jippii, hippii e makko, ɓami mo e juuɗe muuɗum, wii: —Mbaaltee!'
+      sbs: 0.7496
+      gen_sec: 5.12
+      ref_sec: 6.02
+      cer: 0.0926
+      wer: 0.3077
+    bible_00027:
+      source: bible
+      text: Ɓee ana ngullana ɗum ɗoo, ɓee too ana ngullana ɗum gaa.
+      sbs: 0.7066
+      gen_sec: 3.84
+      ref_sec: 3.34
+      cer: 0.2558
+      wer: 1.0
+    bible_00028:
+      source: bible
+      text: Walaa ko o wiiri non, sinaa Iisaa yamirii seyɗaani oo yalta e neɗɗo oo.
+      sbs: 0.7465
+      gen_sec: 4.95
+      ref_sec: 5.22
+      cer: 0.0357
+      wer: 0.1429
+    bible_00029:
+      source: bible
+      text: 'Saabe ɗum, miɗo wiya on: ɲannde darngal, jukkungo mon ɓuran ngo Tirus e Sidon ngoo naawde.'
+      sbs: 0.7436
+      gen_sec: 6.49
+      ref_sec: 5.9
+      cer: 0.0704
+      wer: 0.25
+    bible_00030:
+      source: bible
+      text: Ana tilsi pelle-pelle ngaɗa hakkunde mon, yalla hoolniiɓe jaati wonɓe e ley mon ɓee ana annditee.
+      sbs: 0.7299
+      gen_sec: 7.0
+      ref_sec: 6.46
+      cer: 0.0127
+      wer: 0.0625
+    bible_00031:
+      source: bible
+      text: Sabi miɗo nii golla golle e ley wakkati mooɗon.
+      sbs: 0.6754
+      gen_sec: 3.33
+      ref_sec: 14.82
+      cer: 0.0
+      wer: 0.0
+    bible_00032:
+      source: bible
+      text: Laaci maggal wuuwi tatoɓere koode kammu, wedii ɗum e leydi.
+      sbs: 0.734
+      gen_sec: 4.35
+      ref_sec: 3.8
+      cer: 0.0833
+      wer: 0.5
+    bible_00033:
+      source: bible
+      text: On fuu yo on keɓu jam onon yimɓe Iisaa Almasiihu ɓee!
+      sbs: 0.6708
+      gen_sec: 3.67
+      ref_sec: 9.5
+      cer: 0.0
+      wer: 0.0
+    bible_00034:
+      source: bible
+      text: Kaa neɗɗo fuu jiɗɗo Laamɗo, Laamɗo ana anndi ɗum.
+      sbs: 0.7367
+      gen_sec: 3.5
+      ref_sec: 3.16
+      cer: 0.0
+      wer: 0.0
+    bible_00035:
+      source: bible
+      text: 'Ɓe fuu ɓe mbemmbaa, ɓe cikkitii, ɓe mbiyondiri: —Koɗum ɗum foti laataade?'
+      sbs: 0.772
+      gen_sec: 5.38
+      ref_sec: 5.76
+      cer: 0.0
+      wer: 0.0
+    bible_00036:
+      source: bible
+      text: Oɗon njiɗi mi yoppitana on kaananke Yahuudiyankooɓe oo naa?
+      sbs: 0.6209
+      gen_sec: 4.44
+      ref_sec: 3.32
+      cer: 0.04
+      wer: 0.1111
+    bible_00037:
+      source: bible
+      text: Nde ɓe tilinoo ɲaagaade Laamɗo ndee, nokku ɗo ɓe kawritinnoo ɗoo dimmbii.
+      sbs: 0.6999
+      gen_sec: 5.38
+      ref_sec: 4.56
+      cer: 0.0833
+      wer: 0.4167
+    bible_00038:
+      source: bible
+      text: 'Nelaaɓe sappo e ɗiɗon ɓee noddi jamaa goonɗinɓe oo fuu, mbii: —Minen, yoppude konngol Laamɗo,
+        min kiinnoo jakkaade hiraande, sellantaa min.'
+      sbs: 0.7457
+      gen_sec: 10.24
+      ref_sec: 10.8
+      cer: 0.0179
+      wer: 0.0952
+    bible_00039:
+      source: bible
+      text: O waɗi ɗum hakke ɲalaaɗe ɗe jomen annde ɓee ndokki mo taƴoral mum ɗee.
+      sbs: 0.6787
+      gen_sec: 4.95
+      ref_sec: 4.86
+      cer: 0.125
+      wer: 0.2143
+    bible_00040:
+      source: bible
+      text: No anndirten ko woni jilli dee, Almasiihu hokkitirii yonki mum kammari men.
+      sbs: 0.7023
+      gen_sec: 5.46
+      ref_sec: 4.76
+      cer: 0.0161
+      wer: 0.0833
+    bible_00041:
+      source: bible
+      text: Saabe majjum, haala mbonka ɓe kaalata, aduna oo ana hettinanoo ɓe.
+      sbs: 0.7003
+      gen_sec: 4.78
+      ref_sec: 4.14
+      cer: 0.0
+      wer: 0.0
+    bible_00042:
+      source: bible
+      text: 'O jaabii ɓe, o wii: —Onon nee, koɗum waɗi so oɗon luutta yamiroore Laamɗo ndee faa njokkon
+        neesu mooɗon?'
+      sbs: 0.7331
+      gen_sec: 7.42
+      ref_sec: 6.4
+      cer: 0.0
+      wer: 0.0
+    bible_00043:
+      source: bible
+      text: Ɓoornotooɓe kaddule lobbe so nguura nguurndam lobbam ɓee, e cuuɗi kaanankooɓe tawetee.
+      sbs: 0.7395
+      gen_sec: 6.49
+      ref_sec: 5.04
+      cer: 0.1233
+      wer: 0.4167
+    bible_00044:
+      source: bible
+      text: Ɗiin luutti kaɲumen njippinta tikkere Laamɗo e dow saliiɓe goonɗinde mo ɓee.
+      sbs: 0.7002
+      gen_sec: 5.72
+      ref_sec: 4.76
+      cer: 0.1406
+      wer: 0.5
+    bible_00045:
+      source: bible
+      text: 'Sabi ɲalaaɗe ngaran nde yimɓe mbiyata: «Rewɓe rimarɓe e deeɗi ɗi caawaali abada e enɗi ɗi
+        muyninaali, mbelii hoore!'
+      sbs: 0.6881
+      gen_sec: 8.36
+      ref_sec: 8.42
+      cer: 0.0753
+      wer: 0.5263
+    bible_00046:
+      source: bible
+      text: Miin Pool e Timote, maccuɓe Iisaa Almasiihu, mbinndi oo ɓataaki faade e deental goonɗinɓe
+        Iisaa gonngal ngeenndi Filipa.
+      sbs: 0.7393
+      gen_sec: 9.05
+      ref_sec: 8.04
+      cer: 0.03
+      wer: 0.1667
+    bible_00047:
+      source: bible
+      text: Ɓe ngaɗanii kam ko onon on mbaawaa waɗande kam saabe waasude mon taweede.
+      sbs: 0.7211
+      gen_sec: 5.21
+      ref_sec: 4.9
+      cer: 0.0167
+      wer: 0.0769
+    bible_00048:
+      source: bible
+      text: Iisaa yalti, fai waamnde haayre wiyeteende Jaytun no o woowiri nii.
+      sbs: 0.7182
+      gen_sec: 4.86
+      ref_sec: 4.56
+      cer: 0.0727
+      wer: 0.3636
+    bible_00049:
+      source: bible
+      text: Jooni eɗen njeyaa e goongaraajo oo, sabi eɗen ɲiiɓi e Ɓiyiiko Iisaa Almasiihu.
+      sbs: 0.7144
+      gen_sec: 5.8
+      ref_sec: 5.2
+      cer: 0.0938
+      wer: 0.3077
+    bible_00050:
+      source: bible
+      text: Kasen duu, Baabiraaɗo nelɗo kam oo hoore seettantoo kam.
+      sbs: 0.7386
+      gen_sec: 4.1
+      ref_sec: 3.48
+      cer: 0.0435
+      wer: 0.1111
+    bible_00051:
+      source: bible
+      text: O darni koyngal makko ɲaamal dow geeci, o darni nanal dow njoorndi, o eewnii daande toownde
+        no rawaandu ladde uggirta nii.
+      sbs: 0.7365
+      gen_sec: 9.05
+      ref_sec: 8.72
+      cer: 0.0606
+      wer: 0.2857
+    bible_00052:
+      source: bible
+      text: Sabi ɗum gasataa no kasunke neldirtee kaananke mawɗo oo tawee ko nanngiraa koo hollitaaka
+        faa laaɓa.
+      sbs: 0.6855
+      gen_sec: 7.25
+      ref_sec: 9.66
+      cer: 0.0238
+      wer: 0.125
+    bible_00053:
+      source: bible
+      text: Publiyus, hooreejo ruunde ndee oo, ngesa muuɗum ana e sera nokkuure ndee.
+      sbs: 0.7115
+      gen_sec: 5.29
+      ref_sec: 5.22
+      cer: 0.0339
+      wer: 0.0833
+    bible_00054:
+      source: bible
+      text: Yoga e hooreeɓe leydi Asiya, yiɓɓe makko, neli e makko ana ndaarda mo pati o naata boowal
+        too.
+      sbs: 0.7751
+      gen_sec: 6.57
+      ref_sec: 6.1
+      cer: 0.027
+      wer: 0.1111
+    bible_00055:
+      source: bible
+      text: Nde wonnoo jaangol ana heewi, gollooɓe e doomooɓe kuɓɓiino yiite ana ƴuwloo.
+      sbs: 0.7138
+      gen_sec: 5.55
+      ref_sec: 4.7
+      cer: 0.0794
+      wer: 0.25
+    bible_00056:
+      source: bible
+      text: 'Iisaa yeeccitii, yii eɓe njokki e mum, wii ɓe: —Koɗum tewtaton?'
+      sbs: 0.7669
+      gen_sec: 4.78
+      ref_sec: 4.14
+      cer: 0.0625
+      wer: 0.3636
+    bible_00057:
+      source: bible
+      text: Yahuuda nanngu lonngere ndee tan, yalti oon wakkati fuu.
+      sbs: 0.7344
+      gen_sec: 4.1
+      ref_sec: 3.06
+      cer: 0.0
+      wer: 0.0
+    bible_00058:
+      source: bible
+      text: 'Annii ko mbiyan-mi felooɓe kam ɓee: min kaandaa e heɓude ɲaamdu e yardu e ley golle amen
+        naa?'
+      sbs: 0.7477
+      gen_sec: 6.57
+      ref_sec: 5.88
+      cer: 0.0137
+      wer: 0.0556
+    bible_00059:
+      source: bible
+      text: Ɗum hawri e wakkati lanndinal Yahuudiyankooɓe, tawi yanaande ndee ana ɓadii, ɗum waɗi so ɓe
+        ndesi Iisaa ɗon.
+      sbs: 0.7356
+      gen_sec: 7.77
+      ref_sec: 8.26
+      cer: 0.0114
+      wer: 0.0556
+    bible_00060:
+      source: bible
+      text: O yii malaaikaen ɗiɗon ɓe kaddule daneeje ana njooɗii ɗo tew Iisaa oo resanoo ɗoo, gooto ɗo
+        hoore ɗoo, goɗɗo oo to koyɗe too.
+      sbs: 0.7434
+      gen_sec: 8.87
+      ref_sec: 8.62
+      cer: 0.0808
+      wer: 0.25
+    bible_00061:
+      source: bible
+      text: No Joomiraaɗo yaaforii on nii, njaafondiron.
+      sbs: 0.7645
+      gen_sec: 3.41
+      ref_sec: 3.3
+      cer: 0.0811
+      wer: 0.3333
+    bible_00062:
+      source: bible
+      text: Eka ɲeɲaa ɲeɲugol Tooruuji Puneeji.
+      sbs: 0.6998
+      gen_sec: 2.99
+      ref_sec: 3.46
+      cer: 0.3667
+      wer: 1.2
+    bible_00063:
+      source: bible
+      text: Debbo oo dogi yehi ley ladde, nokku ɗo Laamɗo moƴƴinannoo ɗum.
+      sbs: 0.7143
+      gen_sec: 4.44
+      ref_sec: 3.82
+      cer: 0.08
+      wer: 0.3636
+    bible_00064:
+      source: bible
+      text: Oɗon noddira kam «Moobbo» oɗon noddira kam «Kalfaaɗo».
+      sbs: 0.7336
+      gen_sec: 3.67
+      ref_sec: 4.18
+      cer: 0.0238
+      wer: 0.125
+    bible_00065:
+      source: bible
+      text: 'Kaa nde wonnoo omo anndi miilooji maɓɓe, o wii mo junngo mum waati oo: —Imma, dara hakkunde
+        yimɓe!'
+      sbs: 0.7439
+      gen_sec: 6.91
+      ref_sec: 5.94
+      cer: 0.0
+      wer: 0.0
+    bible_00066:
+      source: bible
+      text: O haalanaa inna makko e miɲiraaɓe makko ana ndarii sella ana njiɗi yiide mo.
+      sbs: 0.6845
+      gen_sec: 5.55
+      ref_sec: 4.04
+      cer: 0.0323
+      wer: 0.1429
+    bible_00067:
+      source: bible
+      text: 'Nden binndoowo ngalluure ndee deƴƴini jamaa oo, wii: —Onon Efeesunkooɓe, homo woni mo anndaa
+        ngalluure Efeesu ndee woni hayboore rewrudu Artemis deweteeɗo mawɗo oo, kaɲum e natal muuɗum iwrungal
+        dow kammu ngal?'
+      sbs: 0.729
+      gen_sec: 15.45
+      ref_sec: 14.76
+      cer: 0.0462
+      wer: 0.1875
+    bible_00068:
+      source: bible
+      text: Balɗe seeɗa caggal muuɗum, Agirippa kaananke oo e Barniki ngari Kaysariya jowtude Festus.
+      sbs: 0.7076
+      gen_sec: 6.66
+      ref_sec: 7.32
+      cer: 0.0667
+      wer: 0.3077
+    bible_00069:
+      source: bible
+      text: Nden moƴƴere o hokki en saabe Ɓiyiiko korsuɗo oo.
+      sbs: 0.694
+      gen_sec: 3.5
+      ref_sec: 3.5
+      cer: 0.075
+      wer: 0.2222
+    bible_00070:
+      source: bible
+      text: 'Sabi nii Binndi ɗii mbiiri: «Homo anndi anniya Joomiraaɗo oo?'
+      sbs: 0.7454
+      gen_sec: 4.35
+      ref_sec: 4.2
+      cer: 0.0408
+      wer: 0.1
+    bible_00071:
+      source: bible
+      text: Tama on anndaa daɗondirteeɓe ɓee fuu yo dogooɓe, kaa gooto tan heɓata deesewal?
+      sbs: 0.7622
+      gen_sec: 5.72
+      ref_sec: 5.62
+      cer: 0.0
+      wer: 0.0
+    bible_00072:
+      source: bible
+      text: Njoɓdi am, ɗum woni seyo am ko mbaajotoo-mi Kabaaru Lobbo meere meere koo, tawti e ko mi lamndataako
+        ko waajotooɓe Kabaaru Lobbo oo ɓee poti heɓude.
+      sbs: 0.7532
+      gen_sec: 10.67
+      ref_sec: 11.84
+      cer: 0.0168
+      wer: 0.0769
+    bible_00073:
+      source: bible
+      text: Tama on anndaa halfinaaɓe golle ittirde sadaka ɓee ana keɓa ngeɗu mumen e mayre?
+      sbs: 0.7042
+      gen_sec: 5.72
+      ref_sec: 5.56
+      cer: 0.0152
+      wer: 0.0714
+    bible_00074:
+      source: bible
+      text: Iisaa yalti ana roondii leggal mum bardugal faa yottii nokku biyeteeɗo Laalagal Hoore .
+      sbs: 0.7235
+      gen_sec: 6.31
+      ref_sec: 5.08
+      cer: 0.0411
+      wer: 0.1538
+    bible_00075:
+      source: bible
+      text: Yimɓe wonɓe e aduna oo ɓee fuu cujidanan taktakol ngol, ɗum woni neɗɗo fuu mo innde mum tawaaka
+        ana winndii gila e diidugol aduna oo e ley dewtere nguurndam ndee, dewtere Njawdiri kirsanoondi
+        ndii.
+      sbs: 0.7077
+      gen_sec: 14.25
+      ref_sec: 12.02
+      cer: 0.0311
+      wer: 0.0882
+    bible_00076:
+      source: bible
+      text: Sawru naa jilli e newaare?
+      sbs: 0.6816
+      gen_sec: 1.88
+      ref_sec: 4.46
+      cer: 0.0476
+      wer: 0.6
+    bible_00077:
+      source: bible
+      text: 'Nde ɓadinoo weetude ndee, Pool ndaardi ɓe fuu ɓe ɲaama, wii: —Hannde woni balɗe sappo e nay
+        oɗon kettii on ɲaamaali fay huunde.'
+      sbs: 0.7401
+      gen_sec: 9.22
+      ref_sec: 9.46
+      cer: 0.07
+      wer: 0.2174
+    bible_00078:
+      source: bible
+      text: Sinndo mi gollaalino ɗii golleeji ɗi fay gooto meeɗaali gollude yeeso maɓɓe, ɓe ɲiŋataakeno.
+      sbs: 0.7199
+      gen_sec: 6.91
+      ref_sec: 5.16
+      cer: 0.0519
+      wer: 0.2857
+    bible_00079:
+      source: bible
+      text: Sakiraaɓe am horsuɓe, pati torra ittoowa koro mon naawnoowa hono no yiite nii haayno on, hono
+        no huunde nde haanaa wardi e mon nii.
+      sbs: 0.7367
+      gen_sec: 9.3
+      ref_sec: 10.94
+      cer: 0.0667
+      wer: 0.2083
+    bible_00080:
+      source: bible
+      text: Ɗum metti ɓe sanne, hedde eɓe piya dabare no ɓe kaani waɗude Iisaa.
+      sbs: 0.719
+      gen_sec: 4.69
+      ref_sec: 3.56
+      cer: 0.0377
+      wer: 0.2308
+    bible_00081:
+      source: bible
+      text: Hono non Yaakuuba e Yuhanna ɓiɓɓe Jebede reentuɓe e Simon ɓee duu kaayniraa.
+      sbs: 0.6906
+      gen_sec: 5.46
+      ref_sec: 7.18
+      cer: 0.0635
+      wer: 0.3077
+    bible_00082:
+      source: bible
+      text: Durooɓe ɓee ndogi njantanoyii ngeenndi ndii e seraaji mum ko hewtii ɗumen koo.
+      sbs: 0.6968
+      gen_sec: 5.72
+      ref_sec: 4.68
+      cer: 0.2308
+      wer: 0.6923
+    bible_00083:
+      source: bible
+      text: Daande nde nan-mi ndee ana wai no dillere fiyooɓe kolli mumen nii.
+      sbs: 0.6844
+      gen_sec: 4.69
+      ref_sec: 3.74
+      cer: 0.0566
+      wer: 0.3333
+    bible_00084:
+      source: bible
+      text: Piyeer sunaa sabi jooni woni cilol tataɓol ko Iisaa wii mo «Aɗa yiɗi kam naa?
+      sbs: 0.7223
+      gen_sec: 5.38
+      ref_sec: 5.26
+      cer: 0.1148
+      wer: 0.2667
+    bible_00085:
+      source: bible
+      text: Faa hiiri, gorko arsukunte jeyaaɗo Arimatiya wari.
+      sbs: 0.6967
+      gen_sec: 3.75
+      ref_sec: 3.96
+      cer: 0.0714
+      wer: 0.4286
+    bible_00086:
+      source: bible
+      text: Nde weetunoo ndee, ɓe coynii leydi, kaa ɓe annditaali ndi.
+      sbs: 0.7883
+      gen_sec: 4.27
+      ref_sec: 4.14
+      cer: 0.0435
+      wer: 0.2
+    bible_00087:
+      source: bible
+      text: Aleksandere huncani ɓe junngo faa jinngana yimɓe muuɗum ɓee.
+      sbs: 0.6546
+      gen_sec: 4.52
+      ref_sec: 3.34
+      cer: 0.0
+      wer: 0.0
+    bible_00088:
+      source: bible
+      text: 'Piyeer wii mo: —Kalfaaɗo, mi lanndinike naɓdeede e maa kasu e wardeede e maa!'
+      sbs: 0.7866
+      gen_sec: 5.46
+      ref_sec: 6.06
+      cer: 0.0833
+      wer: 0.3571
+    bible_00089:
+      source: bible
+      text: Saruku ɓii Ragawu, Ragawu ɓii Faleka.
+      sbs: 0.695
+      gen_sec: 2.73
+      ref_sec: 3.52
+      cer: 0.2
+      wer: 0.6667
+    bible_00090:
+      source: bible
+      text: 'O jaabii: —Goonga, Moobbo, aɗa anndi miɗo yiɗu maa.'
+      sbs: 0.751
+      gen_sec: 3.67
+      ref_sec: 4.26
+      cer: 0.0789
+      wer: 0.2222
+    bible_00091:
+      source: bible
+      text: Kaa laatike tilsere ngolliran-moo-mi, mo golle mo kalfinaa-mi.
+      sbs: 0.7075
+      gen_sec: 4.69
+      ref_sec: 4.06
+      cer: 0.04
+      wer: 0.125
+    bible_00092:
+      source: bible
+      text: Ndennoo, ko min njii e ko min nani min kaalanta on onon duu, yalla oɗon ndeentira e amen hono
+        no min ndeentiri e Baabiraaɗo e Ɓiyum Iisaa Almasiihu nii.
+      sbs: 0.7027
+      gen_sec: 10.75
+      ref_sec: 10.44
+      cer: 0.0083
+      wer: 0.0345
+    bible_00093:
+      source: bible
+      text: Fay so yettugol maa ngol ana wooɗi sanne, ngol nafataa joomum.
+      sbs: 0.7192
+      gen_sec: 4.44
+      ref_sec: 4.0
+      cer: 0.04
+      wer: 0.1818
+    bible_00094:
+      source: bible
+      text: 'Ɓii Neɗɗo oo duu warii ana ɲaama, ana yara, yimɓe mbii ɗum: «Ɲaamde e yarde tan woni e hakkille
+        mum, o giɗo duwaaɲeen e luuttooɓe hono mumen!'
+      sbs: 0.7506
+      gen_sec: 10.07
+      ref_sec: 8.66
+      cer: 0.055
+      wer: 0.1852
+    bible_00095:
+      source: bible
+      text: ɗe podannoo-mi Daawuuda ɗee.
+      sbs: 0.679
+      gen_sec: 2.13
+      ref_sec: 3.36
+      cer: 0.3478
+      wer: 1.5
+    bible_00096:
+      source: bible
+      text: Jooni kaa, o waddii fay Yunaninkooɓe e ley Suudu Dewal Mawndu nduu.
+      sbs: 0.7037
+      gen_sec: 4.78
+      ref_sec: 4.48
+      cer: 0.037
+      wer: 0.1667
+    bible_00097:
+      source: bible
+      text: Jamaa garnooɗo ƴeewde oo fuu, nde yiinoo ko waɗi koo ndee, wirfitii terɗe mum ana mbaati.
+      sbs: 0.7337
+      gen_sec: 6.31
+      ref_sec: 6.8
+      cer: 0.0423
+      wer: 0.125
+    bible_00098:
+      source: bible
+      text: O ɓattii Pool, o yamiri Pool nanngee, o wii haɓɓiree calali ɗiɗi, o lamndii kaɲum yo homo
+        e koɗum waɗi?
+      sbs: 0.7409
+      gen_sec: 7.34
+      ref_sec: 6.98
+      cer: 0.0625
+      wer: 0.35
+    bible_00099:
+      source: bible
+      text: Hirudus yiɗi warde mo kaa suusaano yimɓe ɓee, sabi ɓe fuu eɓe njogorinoo Yaayaa yo annabaajo.
+      sbs: 0.7246
+      gen_sec: 6.74
+      ref_sec: 7.68
+      cer: 0.0132
+      wer: 0.0625
+    bible_00100:
+      source: bible
+      text: 'E junngo am jaati mbinndiran-mi ngoo ɗoo jowtaango: miin Pool miɗo jowta on.'
+      sbs: 0.7436
+      gen_sec: 5.46
+      ref_sec: 6.24
+      cer: 0.0656
+      wer: 0.2308
+    bible_00101:
+      source: bible
+      text: Gaɗoowo ko boni fuu, heɓan mbarjaari golle mum bonɗo oo, sabi Laamɗo ɓurdintaa yimɓe.
+      sbs: 0.7764
+      gen_sec: 6.14
+      ref_sec: 7.72
+      cer: 0.1014
+      wer: 0.2857
+    bible_00102:
+      source: bible
+      text: Kaa jaɓɓiiɓe mo so ngoonɗini mo ɓee, o hokkii ɗumen baawɗe laataade ɓiɓɓe Laamɗo.
+      sbs: 0.6952
+      gen_sec: 5.8
+      ref_sec: 4.68
+      cer: 0.1061
+      wer: 0.3571
+    bible_00103:
+      source: bible
+      text: Nde ɓeen ƴeewi kabaaru am ndee, njiɗiino yoppude kam, sabi ɓe tawaali e am fay daliili gooto
+        kaanɗo warde kam.
+      sbs: 0.7396
+      gen_sec: 7.85
+      ref_sec: 6.6
+      cer: 0.0682
+      wer: 0.25
+    bible_00104:
+      source: bible
+      text: So non, pati haaɗu e koyɗe am tan, lootu juuɗe am e hoore am duu.
+      sbs: 0.7277
+      gen_sec: 4.35
+      ref_sec: 5.44
+      cer: 0.0625
+      wer: 0.2
+    bible_00105:
+      source: bible
+      text: Mi winndanii on haala majjum no raɓɓiɗiri, so on njanngii ɗum on anndan no paamir-mi sirri
+        haala Almasiihu oo.
+      sbs: 0.7477
+      gen_sec: 7.94
+      ref_sec: 9.76
+      cer: 0.1124
+      wer: 0.3158
+    bible_00106:
+      source: bible
+      text: Laatee yurmotooɓe, no Baabiraaɗo mon oo laatorii jurmotooɗo nii.
+      sbs: 0.7339
+      gen_sec: 4.78
+      ref_sec: 3.8
+      cer: 0.0741
+      wer: 0.1111
+    bible_00107:
+      source: bible
+      text: Eɗen anndi en keɓii ko nduwi-ɗen koo, nde wonnoo eɗen anndi omo jaabanoo en duwaawu men.
+      sbs: 0.74
+      gen_sec: 6.23
+      ref_sec: 5.24
+      cer: 0.0286
+      wer: 0.125
+    bible_00108:
+      source: bible
+      text: Omo yeewaa on fuu, kasen o wemmbanooma sanne ko nan-ɗon o sellaano koo.
+      sbs: 0.7432
+      gen_sec: 5.03
+      ref_sec: 5.94
+      cer: 0.3929
+      wer: 0.8462
+    bible_00109:
+      source: bible
+      text: O tawi ɗon dooyoore, yimɓe ana mboya, ana conkina semmbe.
+      sbs: 0.7333
+      gen_sec: 4.18
+      ref_sec: 4.28
+      cer: 0.0
+      wer: 0.2
+    bible_00110:
+      source: bible
+      text: O tilaaki haalde, faa Yahuuda, gooto e sappo e ɗiɗon ɓee, yottii ana wondi e yimɓe heewɓe
+        jogiiɓe kaafaaje e cabbi.
+      sbs: 0.7458
+      gen_sec: 8.19
+      ref_sec: 8.7
+      cer: 0.0769
+      wer: 0.1905
+    bible_00111:
+      source: bible
+      text: Heewɓe e yimɓe leydi ndii njehi Urusaliima faa cenna koe mumen gila iidi oo yottaaki.
+      sbs: 0.7152
+      gen_sec: 6.23
+      ref_sec: 5.18
+      cer: 0.0143
+      wer: 0.0667
+    bible_00112:
+      source: bible
+      text: Yamiroore makko yo goonɗinde Iisaa Almasiihu Ɓiyiiko oo, kaɲum e yiɗondirde hono no o yamiri
+        en nii.
+      sbs: 0.7302
+      gen_sec: 7.25
+      ref_sec: 6.22
+      cer: 0.0488
+      wer: 0.2941
+    bible_00113:
+      source: bible
+      text: Haaltude ko Laamɗo loowi e men koo ana timma, ɗemɗe ana timma, anndal ana timma.
+      sbs: 0.764
+      gen_sec: 5.63
+      ref_sec: 5.6
+      cer: 0.0317
+      wer: 0.0667
+    bible_00114:
+      source: bible
+      text: 'Iisaa jokkini hen, wii: —Oɗon njoppa jamirooje Laamɗo ɗee, oɗon njokka neesuuji yimɓe ɗii.'
+      sbs: 0.767
+      gen_sec: 6.74
+      ref_sec: 5.58
+      cer: 0.0972
+      wer: 0.3571
+    bible_00115:
+      source: bible
+      text: Nden ngol ƴoɲɲugol cakitiingol ɓuran aranndeewol ngol bonde.
+      sbs: 0.687
+      gen_sec: 4.78
+      ref_sec: 4.14
+      cer: 0.0962
+      wer: 0.625
+    bible_00116:
+      source: bible
+      text: 'Ɓe njaabii, ɓe mbii: —Won wiyooɓe a Yaayaa mo lootogal batisima, won wiyooɓe a annabi Iliyaasa,
+        won wiyooɓe kasen a annabi Yeremiya naa gooto e annabaaɓe ɓee.'
+      sbs: 0.7614
+      gen_sec: 11.43
+      ref_sec: 11.04
+      cer: 0.0079
+      wer: 0.037
+    bible_00117:
+      source: bible
+      text: Naɓuɓe mo ɓee naataali huɓeere ndee, sabi so ɓe naatii nde, ɓe coɓan, ɓe ɲaamataa ndeendi
+        iidi Paska ndii.
+      sbs: 0.7769
+      gen_sec: 7.68
+      ref_sec: 6.6
+      cer: 0.0714
+      wer: 0.2632
+    bible_00118:
+      source: bible
+      text: So luurral waɗii hakkunde mon, hono joomumen cuusirta wullitaade ooɲiiɓe ɓee njoppa fooccitiiɓe
+        ɓee?
+      sbs: 0.7412
+      gen_sec: 7.85
+      ref_sec: 6.98
+      cer: 0.0471
+      wer: 0.2857
+    bible_00119:
+      source: bible
+      text: Engol tinndina yimɓe aduna moƴƴina tooru nanndundu e taktakol barminiranoongol kaafaawi faa
+        hosi waatude kaa ana wuuri ngol.
+      sbs: 0.6921
+      gen_sec: 9.22
+      ref_sec: 8.14
+      cer: 0.0189
+      wer: 0.2778
+    bible_00120:
+      source: bible
+      text: 'Iisaa jaabii mo: —So neɗɗo ana yiɗi kam, jokkan konngol am, Baabiraaɗo am yiɗan ɗum.'
+      sbs: 0.7659
+      gen_sec: 5.97
+      ref_sec: 5.98
+      cer: 0.0462
+      wer: 0.2
+    bible_00121:
+      source: bible
+      text: Kaa jooni, e haɓɓagol mooɗon e Iisaa Almasiihu, onon woɗɗunooɓe arannde ɓee on ɓattiniraama
+        saabe ƴiiƴam makko ɗam.
+      sbs: 0.752
+      gen_sec: 8.36
+      ref_sec: 8.0
+      cer: 0.0737
+      wer: 0.2222
+    bible_00122:
+      source: bible
+      text: Kaa onon, oɗon anndi mo sabi omo wondi e mon, omo e mon.
+      sbs: 0.7191
+      gen_sec: 3.75
+      ref_sec: 3.7
+      cer: 0.0
+      wer: 0.0
+    bible_00123:
+      source: bible
+      text: —So ɓooyii seeɗa, on njiyataa kam, so ɓooyii seeɗa kasen, njiyon kam.
+      sbs: 0.7562
+      gen_sec: 5.12
+      ref_sec: 4.54
+      cer: 0.0755
+      wer: 0.3333
+    bible_00124:
+      source: bible
+      text: faa terɗe am duu mbaaltoo dow jikke.
+      sbs: 0.7089
+      gen_sec: 2.56
+      ref_sec: 3.06
+      cer: 0.1724
+      wer: 0.2857
+    bible_00125:
+      source: bible
+      text: Ruuhu Ceniiɗo, Balloowo on mo Baabiraaɗo neldirta on saabe am oo, kaɲum anndinta on kulle
+        fuu.
+      sbs: 0.7096
+      gen_sec: 6.91
+      ref_sec: 5.82
+      cer: 0.0395
+      wer: 0.25
+    bible_00126:
+      source: bible
+      text: Mi torrii ɓe cili keewɗi e cuuɗi baajorɗi ɗii fuu, mi tilsinii ɓe mbonkoo Joomiraaɗo.
+      sbs: 0.7234
+      gen_sec: 6.23
+      ref_sec: 5.3
+      cer: 0.058
+      wer: 0.2
+    bible_00127:
+      source: bible
+      text: So ɗum waɗii, wanaa ɓe ɗiɗon fuu, ɓe caaman ley ngaykaare naa?
+      sbs: 0.7118
+      gen_sec: 4.44
+      ref_sec: 3.9
+      cer: 0.0625
+      wer: 0.0833
+    bible_00128:
+      source: bible
+      text: Ɲaagee Laamɗo yalla miɗo waajoroo oon goonga tedduɗo no haaniri nii.
+      sbs: 0.7255
+      gen_sec: 5.03
+      ref_sec: 4.86
+      cer: 0.0175
+      wer: 0.0909
+    bible_00129:
+      source: bible
+      text: «Anndal» nee waddan mawninkinaare, jilli ngoni ko naɓata deental goonɗinɓe ngal yeeso.
+      sbs: 0.7467
+      gen_sec: 6.23
+      ref_sec: 5.48
+      cer: 0.0282
+      wer: 0.1667
+    bible_00130:
+      source: bible
+      text: Caggal ɗeen balɗe, min lanndinii, min ŋabbiti Urusaliima.
+      sbs: 0.6917
+      gen_sec: 4.44
+      ref_sec: 3.44
+      cer: 0.1489
+      wer: 0.375
+    bible_00131:
+      source: bible
+      text: Yahuudiyankooɓe goonɗinɓe wardunooɓe e Piyeer ɓee fuu kaaynaa, no dokkal Ruuhu Ceniiɗo ngal
+        saakorii e yimɓe ɓe nganaa Yahuudiyankooɓe nii.
+      sbs: 0.7145
+      gen_sec: 10.41
+      ref_sec: 10.2
+      cer: 0.0339
+      wer: 0.1
+    bible_00132:
+      source: bible
+      text: 'Eɓe nanndi e sukaaɓe jooɗiiɓe e luumooji, ɓee ɗoo ana mbiya ɓee too: «Min piyanii on cereeli.'
+      sbs: 0.7393
+      gen_sec: 6.57
+      ref_sec: 5.9
+      cer: 0.0685
+      wer: 0.2353
+    bible_00133:
+      source: bible
+      text: No Iisaa selliniri gorko paho mo haala mum laaɓaa.
+      sbs: 0.6366
+      gen_sec: 3.58
+      ref_sec: 8.92
+      cer: 0.2195
+      wer: 0.4444
+    bible_00134:
+      source: bible
+      text: 'Iisaa jaabii ɓe: —Wakkati mo Laamɗo hollata teddeengal Ɓii Neɗɗo oo yottike.'
+      sbs: 0.739
+      gen_sec: 5.55
+      ref_sec: 4.78
+      cer: 0.0161
+      wer: 0.0833
+    bible_00135:
+      source: bible
+      text: Kaa o darii omo tewta memɗo mo oo.
+      sbs: 0.7185
+      gen_sec: 2.3
+      ref_sec: 3.22
+      cer: 0.2692
+      wer: 0.625
+    bible_00136:
+      source: bible
+      text: Wakkati fuu omo soobii e duwaawu saabe mooɗon yalla oɗon ɲiiɓa e ley kiɓɓal, timminon muuyɗe
+        Laamɗo fuu.
+      sbs: 0.7367
+      gen_sec: 7.51
+      ref_sec: 6.9
+      cer: 0.0471
+      wer: 0.1111
+    bible_00137:
+      source: bible
+      text: Oo kabaaru saakii e leydi Yahuudiya e seraaji mum fuu.
+      sbs: 0.7296
+      gen_sec: 3.84
+      ref_sec: 3.72
+      cer: 0.0455
+      wer: 0.1
+    bible_00138:
+      source: bible
+      text: Ɓiraaɗam ndokku-mi on, wanaa ɲaamdu tekkundu, sabi on mbaawanaano ndu.
+      sbs: 0.7633
+      gen_sec: 5.29
+      ref_sec: 5.12
+      cer: 0.1579
+      wer: 0.8
+    bible_00139:
+      source: bible
+      text: 'Iisaa jaabii mo: —So wanaa Laamɗo hokku maa baawɗe, a waawaano e am fay huunde.'
+      sbs: 0.7579
+      gen_sec: 5.55
+      ref_sec: 5.44
+      cer: 0.0164
+      wer: 0.0667
+    bible_00140:
+      source: bible
+      text: 'Piyeer haali, tekkini, wii: —Fay so tilsi mi maaydan e maa, abada mi wiyataa mi anndaa ma.'
+      sbs: 0.7602
+      gen_sec: 6.31
+      ref_sec: 6.46
+      cer: 0.0588
+      wer: 0.1765
+    bible_00141:
+      source: bible
+      text: Oon hokkata terɗe ɗee fuu ko kaajaa, hawrintinira ɗe jokkolɗe e ɗaɗi.
+      sbs: 0.7456
+      gen_sec: 4.95
+      ref_sec: 4.96
+      cer: 0.0357
+      wer: 0.1667
+    bible_00142:
+      source: bible
+      text: 'Caggal ɗum, Iisaa yottodii e maɓɓe nokku biyeteeɗo Gecemane, wii ɓe: —Njooɗee ɗoo, faa mi
+        waɗoya too duwaawu.'
+      sbs: 0.7377
+      gen_sec: 8.11
+      ref_sec: 8.6
+      cer: 0.0233
+      wer: 0.2222
+    bible_00143:
+      source: bible
+      text: Aawdi ndi aaw-ɗaa fuu, sinaa waata so fuɗa.
+      sbs: 0.6972
+      gen_sec: 3.07
+      ref_sec: 3.24
+      cer: 0.0
+      wer: 0.25
+    bible_00144:
+      source: bible
+      text: Nde kiikiiɗe alan warnoo ndee, taalibaaɓe Iisaa coki baafal dow hoore mumen nokku ɗo ɓe kawriti
+        ɗoo, saabe kulol hooreeɓe Yahuudiyankooɓe.
+      sbs: 0.7485
+      gen_sec: 10.24
+      ref_sec: 8.22
+      cer: 0.0261
+      wer: 0.2857
+    bible_00145:
+      source: bible
+      text: Pati ndurdon nde tilsere, ndurdon nde ɓernde laaɓunde no Laamɗo yiɗiri nii.
+      sbs: 0.7232
+      gen_sec: 5.46
+      ref_sec: 5.04
+      cer: 0.129
+      wer: 0.3333
+    bible_00146:
+      source: bible
+      text: Iisaa e hoore mum ana anndi to Laamɗo iwri to Laamɗo hootata.
+      sbs: 0.7221
+      gen_sec: 4.27
+      ref_sec: 3.4
+      cer: 0.0204
+      wer: 0.0833
+    bible_00147:
+      source: bible
+      text: 'O jaabii, o wii: —Miin woni «ooynotooɗo ley ladde jeereende so ana wiya: moƴƴintinee laawol
+        Joomiraaɗo», hono no annabi Esaaya wiiri nii.'
+      sbs: 0.7282
+      gen_sec: 9.81
+      ref_sec: 10.82
+      cer: 0.0278
+      wer: 0.1364
+    bible_00148:
+      source: bible
+      text: Taalibaaɓe ɗiɗon ɓee nani ko o haali koo, njokkitii Iisaa.
+      sbs: 0.7112
+      gen_sec: 4.27
+      ref_sec: 3.26
+      cer: 0.0213
+      wer: 0.1
+    bible_00149:
+      source: bible
+      text: Ngel welan e hunduko maa no njuumri nii, kaa ngel wulnan reedu maa taw.
+      sbs: 0.646
+      gen_sec: 5.03
+      ref_sec: 3.58
+      cer: 0.0179
+      wer: 0.0714
+    bible_00150:
+      source: bible
+      text: Nde o hokkitirnoo hoore makko ndee, nden o wurjini kokowol palaangol ngol, ɗum woni o ittii
+        ngaɲaandi hakkunde leɲi ɗii.
+      sbs: 0.7418
+      gen_sec: 8.87
+      ref_sec: 8.08
+      cer: 0.0816
+      wer: 0.35
+    bible_00151:
+      source: bible
+      text: Joomiraaɗo ana ɓanngina baawɗe mum e makko, omo sellina ɲawuuji.
+      sbs: 0.7198
+      gen_sec: 4.78
+      ref_sec: 3.66
+      cer: 0.0566
+      wer: 0.3
+    bible_00152:
+      source: bible
+      text: Ngol hokkaa baawɗe laamaade suudu baaba fuu e jaaleɲol fuu e ɗemngal fuu e leɲol fuu.
+      sbs: 0.7174
+      gen_sec: 6.14
+      ref_sec: 6.38
+      cer: 0.087
+      wer: 0.25
+    bible_00153:
+      source: bible
+      text: Ɗum waddani mo laataade curoowo hakkunde yimɓe e Laamɗo ley aadi keyri ndii, yalla noddaaɓe
+        ɓee ana keɓa ndonu keddotooɗo faa abada mo Laamɗo fodi oo.
+      sbs: 0.7283
+      gen_sec: 10.84
+      ref_sec: 11.82
+      cer: 0.0488
+      wer: 0.2692
+    bible_00154:
+      source: bible
+      text: laatiinde haayre ɓurnde fuu teentilaade e maadi ndii.
+      sbs: 0.7248
+      gen_sec: 3.93
+      ref_sec: 3.82
+      cer: 0.0444
+      wer: 0.125
+    bible_00155:
+      source: bible
+      text: '» Kaa Iisaa wiyaali mo maayataa, ko o wii dee: «So miɗo muuyani mo nguurndam faa nde ngartu-mi,
+        koɗum hillu maa hen?'
+      sbs: 0.7169
+      gen_sec: 7.94
+      ref_sec: 14.36
+      cer: 0.0114
+      wer: 0.0476
+    bible_00156:
+      source: bible
+      text: Kaa kammari Yahuudiyankooɓe ɓee caliima mi yoppitee, ɗum waddani kam ɲaagaade sariya am ɓettinee
+        naɓee to kaananke Roma mawɗo oo, tawee mi happaali leɲol am ngol fay huunde.
+      sbs: 0.7304
+      gen_sec: 12.8
+      ref_sec: 10.62
+      cer: 0.0839
+      wer: 0.3214
+    bible_00157:
+      source: bible
+      text: 'Iisaa wii ɓe: —Kakkilee, ndeentee e ƴuufinirdi Farisaen e Sadukien ndii.'
+      sbs: 0.7613
+      gen_sec: 5.29
+      ref_sec: 5.0
+      cer: 0.0345
+      wer: 0.0909
+    bible_00158:
+      source: bible
+      text: sabi omo ɲaamo am, pati mi yeryerta.
+      sbs: 0.7368
+      gen_sec: 2.65
+      ref_sec: 3.22
+      cer: 0.0714
+      wer: 0.2857
+    bible_00159:
+      source: bible
+      text: Mo seyɗaani mum ribbaa oo, ndaardi Iisaa acca o jokka e mum.
+      sbs: 0.7514
+      gen_sec: 4.35
+      ref_sec: 3.88
+      cer: 0.0851
+      wer: 0.1667
+    bible_00160:
+      source: bible
+      text: Nde Pool tilinoo haalde ɗum ndee, kaɲum e maɓɓe fuu ɓe ndiccii, ɓe nduwii.
+      sbs: 0.7016
+      gen_sec: 5.46
+      ref_sec: 4.66
+      cer: 0.0862
+      wer: 0.3571
+    bible_00161:
+      source: bible
+      text: Ɓe njokkitii mo, ɓe miili o woyoyan dow yanaande too.
+      sbs: 0.7599
+      gen_sec: 3.84
+      ref_sec: 3.12
+      cer: 0.5
+      wer: 0.8
+    bible_00162:
+      source: bible
+      text: Waajuuji ɗi mbaajii-mi on ɗii fuu, mi waajortaako ɗi hiini hoore am.
+      sbs: 0.7022
+      gen_sec: 4.86
+      ref_sec: 4.02
+      cer: 0.0556
+      wer: 0.25
+    bible_00163:
+      source: bible
+      text: Sabi heewɓe laatike konneeen leggal bardugal Iisaa Almasiihu.
+      sbs: 0.6991
+      gen_sec: 4.61
+      ref_sec: 3.72
+      cer: 0.0377
+      wer: 0.25
+    bible_00164:
+      source: bible
+      text: —Sakiraaɓe e baabiraaɓe, kettinee jooni faa mi fammina on mi waɗaali ko boni.
+      sbs: 0.7125
+      gen_sec: 5.55
+      ref_sec: 4.76
+      cer: 0.0
+      wer: 0.0
+    bible_00165:
+      source: bible
+      text: Ruuhu oo duu hollata ɗum, sabi Ruuhu oo woni goonga.
+      sbs: 0.6596
+      gen_sec: 3.67
+      ref_sec: 3.22
+      cer: 0.0
+      wer: 0.0
+    bible_00166:
+      source: bible
+      text: Pool ana yiɗi naatude hakkunde jamaa oo, kaa taalibaaɓe ɓee kaɗi mo ɗum.
+      sbs: 0.6989
+      gen_sec: 5.12
+      ref_sec: 3.86
+      cer: 0.0345
+      wer: 0.1538
+    bible_00167:
+      source: bible
+      text: Nasuuna ɓii Aminadaabu, Aminadaabu ɓii Adamin.
+      sbs: 0.7104
+      gen_sec: 3.5
+      ref_sec: 3.94
+      cer: 0.1795
+      wer: 1.6667
+    bible_00168:
+      source: bible
+      text: Nde taalibaaɓe ɓee lummbata weendu nduu ndee, njeggiti yooɓaade ɲaamdu.
+      sbs: 0.7273
+      gen_sec: 5.46
+      ref_sec: 4.36
+      cer: 0.0667
+      wer: 0.4
+    bible_00169:
+      source: bible
+      text: Kasen duu so ɓerɗe men pelii en, en mbaaltinan ɗe yeeso Laamɗo, sabi Laamɗo ɓuri ɗe manngu,
+        kanko woni annduɗo huunde fuu.
+      sbs: 0.7398
+      gen_sec: 8.7
+      ref_sec: 7.6
+      cer: 0.0515
+      wer: 0.2273
+    bible_00170:
+      source: bible
+      text: 'O jaabii, o wii: —Miin woni kanko.'
+      sbs: 0.7207
+      gen_sec: 2.39
+      ref_sec: 3.0
+      cer: 0.125
+      wer: 0.4286
+    bible_00171:
+      source: bible
+      text: Kaa ɓe ɓeydii wullude gullaali mawɗi, eɓe mbiya o tontee.
+      sbs: 0.7265
+      gen_sec: 4.1
+      ref_sec: 3.7
+      cer: 0.0217
+      wer: 0.1
+    bible_00172:
+      source: bible
+      text: Ɗee kulle fuu e yuɓɓondirde hono nii, yottinooɓe sadaka ɓee ɲannde fuu ana naata ana njalta
+        to suudu aranndeeru too faa ngolla golle mumen dewal Laamɗo.
+      sbs: 0.7297
+      gen_sec: 11.09
+      ref_sec: 11.28
+      cer: 0.048
+      wer: 0.1538
+    bible_00173:
+      source: bible
+      text: 'Taalibaaɓe makko ɓee lamndii mo: —Koɗum ngol banndol firritata?'
+      sbs: 0.7609
+      gen_sec: 4.69
+      ref_sec: 4.46
+      cer: 0.0385
+      wer: 0.2222
+    bible_00174:
+      source: bible
+      text: So ɗum waɗii, joomum bonnan kesal ngal, tawee fetalaare ittaande hen ndee yaadataa e kiinngal
+        ngal.
+      sbs: 0.647
+      gen_sec: 7.17
+      ref_sec: 3.54
+      cer: 0.0617
+      wer: 0.25
+    bible_00175:
+      source: bible
+      text: Awooɓe yaltuɓe e majji ɓee, ana lalla bubbi mumen.
+      sbs: 0.751
+      gen_sec: 3.58
+      ref_sec: 3.32
+      cer: 0.075
+      wer: 0.2222
+    bible_00176:
+      source: bible
+      text: Nde Apollos wonnoo Korintu ndee, Pool jokki laawol haayre, yehi Efeesu.
+      sbs: 0.7497
+      gen_sec: 5.21
+      ref_sec: 5.86
+      cer: 0.0
+      wer: 0.0
+    bible_00177:
+      source: bible
+      text: Sabi Ɓii Neɗɗo oo wardan e malaaikaen mum e ley teddeengal Baabiraaɗo mum.
+      sbs: 0.6804
+      gen_sec: 5.29
+      ref_sec: 3.86
+      cer: 0.0328
+      wer: 0.1538
+    bible_00178:
+      source: bible
+      text: Min nanii haala makko, min njiirii mo gite amen, min taykike mo, min memirii mo juuɗe amen.
+      sbs: 0.7845
+      gen_sec: 6.49
+      ref_sec: 6.5
+      cer: 0.0563
+      wer: 0.2353
+    bible_00179:
+      source: bible
+      text: Nde ɓe tewti faa ɓe mbara Pool ndee, tawi hooreejo sordaasien oo humpitike Urusaliima fuu
+        ana darorii koyngal gootal.
+      sbs: 0.7124
+      gen_sec: 8.45
+      ref_sec: 6.56
+      cer: 0.0515
+      wer: 0.2105
+    bible_00180:
+      source: bible
+      text: So oɗon miiloo huunde wonnde, Laamɗo ɓannginanan on ɗum.
+      sbs: 0.7286
+      gen_sec: 4.1
+      ref_sec: 3.7
+      cer: 0.1304
+      wer: 0.2222
+    bible_00181:
+      source: bible
+      text: Kaa saakinooɓe ɓee naati e yiilaade ana mbaajoo Kabaaru Lobbo oo.
+      sbs: 0.7235
+      gen_sec: 4.69
+      ref_sec: 3.64
+      cer: 0.0
+      wer: 0.0
+    bible_00182:
+      source: bible
+      text: 'Ɓe mbii: —En kaajaaka seedee hankasen, nde wonnoo o haaldii hunduko makko, en fuu en nanii!'
+      sbs: 0.7158
+      gen_sec: 6.49
+      ref_sec: 8.04
+      cer: 0.0282
+      wer: 0.125
+    bible_00183:
+      source: bible
+      text: Hono non, onon duu, so on njottinirii kabaaru oo ɗemɗe Ruuhu tawa ko famminii fuu walaa hen,
+        hono paamirte-ɗon?
+      sbs: 0.7611
+      gen_sec: 8.02
+      ref_sec: 8.06
+      cer: 0.0455
+      wer: 0.1053
+    bible_00184:
+      source: bible
+      text: Kaa miin, mi jataaki nguurndam am e maayde am fuu so mi heɓii yottinirde golle mo Iisaa Joomiraaɗo
+        halfini kam oo seyo.
+      sbs: 0.7115
+      gen_sec: 8.36
+      ref_sec: 7.86
+      cer: 0.0729
+      wer: 0.2727
+    bible_00185:
+      source: bible
+      text: Saabe ɗum, sakiraaɓe am horsuɓe, ngoɗɗee dewal tooruuji.
+      sbs: 0.7287
+      gen_sec: 4.18
+      ref_sec: 3.72
+      cer: 0.0
+      wer: 0.0
+    bible_00186:
+      source: bible
+      text: 'Ɓe ndarii eɓe ngullanoo mo, eɓe mbiya: —Min tawii oo ana jirkita leɲol amen, ana haɗa ɗum
+        yoɓude kaananke Roma oo lampo, ana wiya hoore mum yo Almasiihu, ɗum woni kaananke.'
+      sbs: 0.726
+      gen_sec: 12.29
+      ref_sec: 11.66
+      cer: 0.0815
+      wer: 0.3226
+    bible_00187:
+      source: bible
+      text: Caggal ɗum, Laamɗo daalii ɓe ley koyɗol pati ɓe mbirfitoo to Hirudus, ɓe kootiri leydi maɓɓe
+        laawol gonngol.
+      sbs: 0.7175
+      gen_sec: 7.85
+      ref_sec: 7.34
+      cer: 0.0341
+      wer: 0.2222
+    bible_00188:
+      source: bible
+      text: E ley ɗum, o daalii ɓe daaloore sattunde pati ɓe kaalana ɗum fay gooto.
+      sbs: 0.7577
+      gen_sec: 4.95
+      ref_sec: 4.4
+      cer: 0.0
+      wer: 0.0
+    bible_00189:
+      source: bible
+      text: Ndennoo, koɗum waɗi so oɗon nguurda no jeyaaɓe e oo ɗoo aduna nii?
+      sbs: 0.7429
+      gen_sec: 4.61
+      ref_sec: 4.38
+      cer: 0.1154
+      wer: 0.4615
+    bible_00190:
+      source: bible
+      text: Won ko njiɗu-mi yamirde on kasen, haala no kawritirton.
+      sbs: 0.7076
+      gen_sec: 4.1
+      ref_sec: 3.94
+      cer: 0.0909
+      wer: 0.4444
+    bible_00191:
+      source: bible
+      text: Hono non, tutuɗo oo e jarnuɗo oo fuu nganaa hen fay huunde, Laamɗo mawninoowo oo tan woni
+        fuu.
+      sbs: 0.732
+      gen_sec: 6.57
+      ref_sec: 6.32
+      cer: 0.0135
+      wer: 0.0556
+    bible_00192:
+      source: bible
+      text: Nden, neɗɗo fuu nodduɗo innde Joomiraaɗo hisinte.
+      sbs: 0.7236
+      gen_sec: 3.67
+      ref_sec: 3.82
+      cer: 0.0244
+      wer: 0.1429
+    bible_00193:
+      source: bible
+      text: Taƴoral, hakkillaaji mon ana ngonnoo e am, kaa on keɓaali yottinde ballal ngal.
+      sbs: 0.7489
+      gen_sec: 5.72
+      ref_sec: 6.88
+      cer: 0.0156
+      wer: 0.0769
+    bible_00194:
+      source: bible
+      text: Kaa Laamɗo wuurtinii mo, itti mo e naawalla maayde, sabi maayde ndee waawaanoo heddoraade
+        mo.
+      sbs: 0.7669
+      gen_sec: 6.74
+      ref_sec: 7.24
+      cer: 0.0263
+      wer: 0.2
+    bible_00195:
+      source: bible
+      text: Sakiraaɓe, miɗen ndaarda on ɓeydon soobe.
+      sbs: 0.7161
+      gen_sec: 3.07
+      ref_sec: 3.06
+      cer: 0.1176
+      wer: 0.6667
+    bible_00196:
+      source: bible
+      text: Nde taalibaaɓe ɓee nani nden daande ndee, ɓe caami ɓe kippii e leydi, ɓe kuli sanne.
+      sbs: 0.7725
+      gen_sec: 5.97
+      ref_sec: 5.04
+      cer: 0.0152
+      wer: 0.0625
+    bible_00197:
+      source: bible
+      text: Fay jooni duu, on mbaawanaa ndu, sabi adunankaaku tan nguurdu-ɗon tafon.
+      sbs: 0.7586
+      gen_sec: 5.29
+      ref_sec: 5.7
+      cer: 0.1379
+      wer: 0.7273
+    bible_00198:
+      source: bible
+      text: 'O wari e amen, o ɓami kumorgol Pool, o haɓɓi juuɗe makko e koyɗe makko, o wii: —Ruuhu Ceniiɗo
+        wii: nii Yahuudiyankooɓe wonɓe Urusaliima ɓee kaɓɓirta jeyɗo ngol kumorgol oo, ngaɗa ɗum e juuɗe
+        heeferɓe.'
+      sbs: 0.7439
+      gen_sec: 14.34
+      ref_sec: 14.42
+      cer: 0.0759
+      wer: 0.2857
+    bible_00199:
+      source: bible
+      text: Sabi mi don-donnaali meere, mi tampaali meere.
+      sbs: 0.7402
+      gen_sec: 3.41
+      ref_sec: 3.04
+      cer: 0.1081
+      wer: 0.4286
 - model: k2-fsa/OmniVoice-ref
   model_url: https://huggingface.co/k2-fsa/OmniVoice
   mode: ref
@@ -15149,4 +16831,4 @@ benchmarks:
       ref_sec: 3.04
       cer: 1.0
       wer: 1.0
-updated: '2026-10-01'
+updated: '2026-10-09'

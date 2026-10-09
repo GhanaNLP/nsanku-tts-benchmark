@@ -1688,6 +1688,1683 @@ benchmarks:
       ref_sec: 4.5
       cer: 0.0
       wer: 0.0
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.6737
+  num_scored: 200
+  cer: 0.1857
+  wer: 0.4124
+  accuracy: 0.8143
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.744
+  score: 0.744
+  per_source:
+    bible:
+      sbs: 0.6737
+      cer: 0.1857
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Halɩ maawobi mamʋ takayɩsɩ pa-maɣmaɣ pɔ-cɔlɔ se mowoni ɖɛ-tɛ ñɩma cɔlɔ Damaasɩ nɛ pɩsɛɣ mankpa
+        patɩŋa nɛ mɔnkɔnɩ-wɛ Yeruusalɛm cɩnɛ nɛ pɔhɔ pa-nɩŋgbaaŋ.
+      sbs: 0.6991
+      gen_sec: 12.03
+      ref_sec: 11.68
+      cer: 0.0726
+      wer: 0.2609
+    bible_00001:
+      source: bible
+      text: Eeheyi-wɛ se ɛ-wayɩ lɛ, nɔɔyʋ kɔŋ, pɛwɛnɩ lidaʋ ɛ-yɔɔ.
+      sbs: 0.691
+      gen_sec: 4.01
+      ref_sec: 6.26
+      cer: 0.075
+      wer: 0.2222
+    bible_00002:
+      source: bible
+      text: 'Pa nɛ mbá paana-ɩ ɛsʋlʋmaɣ yɔ, pana-ɩ ḿbʋ́ lɛ, pɔtɔŋ se: «Pɩtɛkɛ abalʋ ɛnɛ ɛɛcaɣna nɛ ɛsʋlʋmʋʋ
+        yaa we?'
+      sbs: 0.6858
+      gen_sec: 7.42
+      ref_sec: 8.18
+      cer: 0.2368
+      wer: 0.4737
+    bible_00003:
+      source: bible
+      text: Pʋwayɩ lɛ, pata pɩsaʋ cikpeluu ŋgʋ́ kɩwɛɣ mɛlɛ ɛsɩndaa yɔ nɛ pakpazɩ se heɣlim eketi-kʋ nɛ
+        puwoni kidiiliŋ cɔlɔ.
+      sbs: 0.6785
+      gen_sec: 8.45
+      ref_sec: 8.08
+      cer: 0.2222
+      wer: 0.5263
+    bible_00004:
+      source: bible
+      text: Yee ɖɩkpɛzaa se ɖɩtala kɩwɛɛkɩm nabʋyʋ kaʋ yɔ, ɖɩyaɣ Ɛsɔ se cɛtɩyʋ, pɩwɩlɩɣ se ɖɩtasɩ ɛ-tɔm.
+      sbs: 0.7285
+      gen_sec: 6.83
+      ref_sec: 8.3
+      cer: 0.0548
+      wer: 0.1875
+    bible_00005:
+      source: bible
+      text: 'Peeɖe Pɩyɛ pɔzɩ-ɩ se: «Heyi-m nɛ mana se liidiye nɖɩ́ ɩpɛdɩ mɩ-tɛtʋ yɔ, ɖɩtɩŋa yɔ yaa we?'
+      sbs: 0.6747
+      gen_sec: 6.23
+      ref_sec: 6.26
+      cer: 0.1846
+      wer: 0.3529
+    bible_00006:
+      source: bible
+      text: Pʋbʋ wayɩ lɛ, pɔpɔzɩ Ɛsɔ se ɛsɩɩ-wɛ wiyaʋ.
+      sbs: 0.7034
+      gen_sec: 2.99
+      ref_sec: 3.0
+      cer: 0.2188
+      wer: 0.5
+    bible_00007:
+      source: bible
+      text: Ma Pɔɔlɩ weyi pɩkɛdɩnɩ Ɛsɔ nɛ eyele se mɛnkɛ Krɩstʋ Yesu tiyiyu yɔ, ma nɛ taabalʋ Timootee
+        ɖɩmaɣnɩ takayaɣ kanɛ taabalaa Ɛsɔ ñɩma mbá mɩ ɩwɛ Koloosi nɛ ɩtɩŋɩɣ Krɩstʋ nʋmɔʋ ɛzɩ pʋpɔzʋʋ
+        mɩ nɛ ɩ mɩ-kpɛndʋʋ yɔɔ yɔ.
+      sbs: 0.7325
+      gen_sec: 15.27
+      ref_sec: 14.68
+      cer: 0.1302
+      wer: 0.3333
+    bible_00008:
+      source: bible
+      text: Mbʋ́ pʋyɔɔ yɔ, paatasɩɣ tayɩnaʋ pe-lelaa tɔɔnaɣ paa evemiye nɖɩ́.
+      sbs: 0.7126
+      gen_sec: 4.78
+      ref_sec: 4.08
+      cer: 0.1373
+      wer: 0.5
+    bible_00009:
+      source: bible
+      text: Pɩtamʋnɩ se ɖɩwɛɛ ɛzɩ Satanɩ ñɩnʋ Kayɛnɩ weyi ɛkʋ e-neu yɔ.
+      sbs: 0.6979
+      gen_sec: 4.35
+      ref_sec: 4.3
+      cer: 0.234
+      wer: 0.6364
+    bible_00010:
+      source: bible
+      text: » Halʋ ɛnʋ, ɛpɔzɩ-ɩ ḿbʋ́, mbʋ́ pʋyɔɔ yɔ, Samaarɩɩ ñɩma nɛ Yuda ñɩma paacaɣ ɖama.
+      sbs: 0.7323
+      gen_sec: 5.8
+      ref_sec: 5.32
+      cer: 0.0517
+      wer: 0.2143
+    bible_00011:
+      source: bible
+      text: Yesu heyi-wɛ ḿbʋ́ lɛ, pekitini wayɩ wayɩ nɛ pɔtɔlɩ tataa.
+      sbs: 0.6429
+      gen_sec: 4.01
+      ref_sec: 3.48
+      cer: 0.1591
+      wer: 0.4
+    bible_00012:
+      source: bible
+      text: Halɩ Fezuu ŋ́gʋ́ kʋ-yɔɔ ɛtɩŋnaa nɛ ewolo esusi Ɛsɔtɔm ɖɔɖɔ kalɩzasɩ nzɩ́ sɩɩwɛ salaka taa
+        yɔ.
+      sbs: 0.65
+      gen_sec: 6.66
+      ref_sec: 5.66
+      cer: 0.137
+      wer: 0.25
+    bible_00013:
+      source: bible
+      text: Toovenim lɛ, ɖe-liu kɛwɛɛ kpem se ɩtɔɔ kewiyaɣ nɛ ɖɩkɔɔ ɖa nɛ mɩ ɖɩtɔɔ-kɛ.
+      sbs: 0.6546
+      gen_sec: 5.38
+      ref_sec: 5.3
+      cer: 0.4211
+      wer: 0.5714
+    bible_00014:
+      source: bible
+      text: Ɛzɩma pɩlaba nɛ lɛɛlɛɛyɔ ɛnaɣ?
+      sbs: 0.566
+      gen_sec: 2.3
+      ref_sec: 9.56
+      cer: 0.44
+      wer: 1.0
+    bible_00015:
+      source: bible
+      text: » Pɩlabɩ ɛzɩ náyʋ Yereemii maʋ Yesu tɔm Ɛsɔtɔm Takayaɣ taa yɔ.
+      sbs: 0.6482
+      gen_sec: 4.44
+      ref_sec: 4.96
+      cer: 0.0204
+      wer: 0.1818
+    bible_00016:
+      source: bible
+      text: Mansaŋ Ɛsɔ ɛzɩma mbʋ́ eyeba nɛ mɔyɔɔdʋʋ kʋnʋmɩŋ ndɩ ndɩ nɛ pɩkɩlɩ mɩtɩŋa payɩ yɔ.
+      sbs: 0.6557
+      gen_sec: 5.97
+      ref_sec: 5.38
+      cer: 0.1231
+      wer: 0.1333
+    bible_00017:
+      source: bible
+      text: Ŋgʋ́, kʋjɔʋ ŋgʋ́ Fezuu Kiɖeɖeu lakɩ paa weyi se pʋwazɩ ɖatɩŋa payɩ yɔ, ŋ́gʋ́ wɩlɩɣna se kɩwɛ
+        ɛ-cɔlɔ.
+      sbs: 0.6729
+      gen_sec: 7.25
+      ref_sec: 7.24
+      cer: 0.1733
+      wer: 0.2778
+    bible_00018:
+      source: bible
+      text: Ḿbʋ́ eyeki nɛ ɩtɛzɩ pɩʋ nɛ ɩwɛɛ cɩɖɩcɩɖɩ nɛ paanaɣ kawanaɣ nakɛyɛ mɩ-yɔɔ ɖa-Caa Ɛsɔ ɛsɩndaa
+        puwiye nɖɩ́ ɖa-Kɩpaɣlʋ Yesu nɛ ɛ-ñɩma tɩŋa payɩ pɔkɔŋ yɔ.
+      sbs: 0.7
+      gen_sec: 11.35
+      ref_sec: 13.6
+      cer: 0.1624
+      wer: 0.4615
+    bible_00019:
+      source: bible
+      text: Ɛnʋ yekina nɛ ɩɖaŋ se ɩkɔŋ sʋʋ Ɛsɔ koboyaɣ taa.
+      sbs: 0.6864
+      gen_sec: 3.5
+      ref_sec: 3.06
+      cer: 0.3243
+      wer: 0.5
+    bible_00020:
+      source: bible
+      text: Ḿbʋ́ ɖɔɖɔ Leevi liɖe taa tʋ nɔɔyʋ kɛwɛ Ciiprɩ ɛjaɖɛ taa, payaɣ-ɩ se Yozɛɛfʋ.
+      sbs: 0.6885
+      gen_sec: 5.55
+      ref_sec: 5.54
+      cer: 0.0678
+      wer: 0.2143
+    bible_00021:
+      source: bible
+      text: 'Pʋ-yɔɔ Daaviidi tasɩ maʋ ɖoli lɛɛɖɛ se: ‹Ña Kɩpaɣlʋ, ŋŋyeki ña-ñɩnʋ.'
+      sbs: 0.6272
+      gen_sec: 5.55
+      ref_sec: 6.9
+      cer: 0.3654
+      wer: 0.7273
+    bible_00022:
+      source: bible
+      text: Peeɖe ɛha nɔɔ se mbá pasɩm lɩm yaʋ yɔ, pacalɩ falʋʋ pɩ-taa nɛ paya nɛ palɩɩ kidiiliŋ yɔɔ
+        nɛ piyele lɛlaa ñɔñɔkɔyɩnɩ kpoŋgbolonaa yaa mɛlɛ hɔɔlasɩ nɛ patɩŋ pa-wayɩ.
+      sbs: 0.6524
+      gen_sec: 12.2
+      ref_sec: 11.12
+      cer: 0.1145
+      wer: 0.2759
+    bible_00023:
+      source: bible
+      text: Yee kewiyaɣ nakɛyɛ ɛwɛɛ nɛ ka-taa ñɩma youni ɖama yɔ, kaalaɣzɩɣ yɔkʋʋ.
+      sbs: 0.6976
+      gen_sec: 5.38
+      ref_sec: 4.52
+      cer: 0.1429
+      wer: 0.5
+    bible_00024:
+      source: bible
+      text: '» Ɛlɛ́, Yesu heyi-wɛ se: «Yee ḿbʋ́ ɩla mbʋ́ Abraham laba yɔ.'
+      sbs: 0.6598
+      gen_sec: 3.75
+      ref_sec: 14.18
+      cer: 0.075
+      wer: 0.1818
+    bible_00025:
+      source: bible
+      text: 'Ɛlɛ́, mantañɩnɩ se mamanɩ ñɔ-yɔɔ nɛ mala nabʋyʋ: maacɛyɩɣ-ŋ se ŋlabɩ-m mbʋ́ pʋwɛ ɖeu yɔ.'
+      sbs: 0.6652
+      gen_sec: 6.66
+      ref_sec: 6.34
+      cer: 0.197
+      wer: 0.6
+    bible_00026:
+      source: bible
+      text: Ɛlɛ́, weyi ɛkpɛzɩɣ ɛyáa ɛsɩndaa se pɩtɛkɛ mantɩnɩ-ɩ yɔ, mɔnkɔŋ kpɛzʋʋ ɖɔɖɔ Ɛsɔ tiyiyaa ɛsɩndaa
+        se pɩtɛkɛ mantɩnɩ-ɩ.
+      sbs: 0.6895
+      gen_sec: 8.53
+      ref_sec: 6.86
+      cer: 0.0761
+      wer: 0.1667
+    bible_00027:
+      source: bible
+      text: Ɛlɛ́, ɛlakɩ mbá paba ñetisiɣ pa-tɩ yɔ lootiye.
+      sbs: 0.6951
+      gen_sec: 3.33
+      ref_sec: 3.04
+      cer: 0.1714
+      wer: 0.375
+    bible_00028:
+      source: bible
+      text: Piyeba pɩlaʋ kpɛɖɛ.
+      sbs: 0.5875
+      gen_sec: 1.45
+      ref_sec: 3.28
+      cer: 0.4375
+      wer: 1.3333
+    bible_00029:
+      source: bible
+      text: 'Pilaatɩ nɩ ḿbʋ́ lɛ, sɔɔndʋ tɛzɩ-ɩ kpaʋ nɛ ɛpɩsɩ ɛsʋʋ nɛ ɛpɔzɩ Yesu se: «Ñɛ-tɛ le?'
+      sbs: 0.5924
+      gen_sec: 5.63
+      ref_sec: 7.42
+      cer: 0.1695
+      wer: 0.3125
+    bible_00030:
+      source: bible
+      text: 'Toovenim lɛ, meheyiɣ-mɩ se: paa le posusuu Laŋhɛzɩyɛ Tɔm yɔ, pɔkɔŋ kɛdʋʋ mbʋ́ halʋ ɛnɛ ɛlabɩ
+        mɔ-yɔɔ yɔ pʋ-tɔm nɛ ɛyáa ɛtaasɔɔ ɛ-yɔɔ kaʋ.'
+      sbs: 0.7397
+      gen_sec: 9.9
+      ref_sec: 9.3
+      cer: 0.0962
+      wer: 0.25
+    bible_00031:
+      source: bible
+      text: Yuda ñɩma pɔzʋʋ se pala hama lakasɩ nɛ pana nɛ pʋcɔ petisi, Grɛɛkɩ ñɩma ñañɩnɩɣ lɔŋsɩnɖɛ
+        se pʋcɔ.
+      sbs: 0.6332
+      gen_sec: 7.51
+      ref_sec: 6.14
+      cer: 0.1026
+      wer: 0.2778
+    bible_00032:
+      source: bible
+      text: Ḿbʋ́ yebina nɛ ñɔɔsɩ ñawɩɣ nabɛyɛ nɛ sʋlʋm ñakʋʋ lɛlaa.
+      sbs: 0.6591
+      gen_sec: 4.1
+      ref_sec: 3.44
+      cer: 0.3409
+      wer: 0.7
+    bible_00033:
+      source: bible
+      text: Pʋwayɩ lɛ, mana kpɩnɛ naɖɩyɛ, ɖɩlɩɣaɣnɩ teŋgu taa.
+      sbs: 0.7015
+      gen_sec: 3.84
+      ref_sec: 3.86
+      cer: 0.075
+      wer: 0.5
+    bible_00034:
+      source: bible
+      text: Yee ɛha nɔɔyʋ se ɛsɩnɩ lɛlaa yɔ, pʋwɛɛ se ɛsɩnɩ-wɛ nɛ ɖoŋ weyi Ɛsɔ ha-ɩ yɔ.
+      sbs: 0.6824
+      gen_sec: 5.29
+      ref_sec: 4.46
+      cer: 0.0536
+      wer: 0.0625
+    bible_00035:
+      source: bible
+      text: 'Pʋkɔma pɩɖɛɛ Pɔɔlɩ lɛ, ɛpɩsɩnɩ pɛlɛ ɛnʋ ɛ-yɔɔ nɛ eholini eleeu weyi ɛwɛ ɛ-wayɩ yɔ se: «Yesu
+        Krɩstʋ ɖoŋ taa lɛ, meheyiɣ-ŋ se ŋse pɛlɛ ɛnʋ ɛ-wayɩ!'
+      sbs: 0.6974
+      gen_sec: 10.41
+      ref_sec: 10.48
+      cer: 0.156
+      wer: 0.4444
+    bible_00036:
+      source: bible
+      text: Yee mɩ-taa nabɛyɛ ɛyɔɔdʋʋ kʋnʋmɩŋ ndɩ ndɩ yɔ, pɛwɛɛ naalɛ yaa naadozo, pataaɖɛɛ pʋ-yɔɔ.
+      sbs: 0.7036
+      gen_sec: 6.49
+      ref_sec: 7.08
+      cer: 0.1304
+      wer: 0.2857
+    bible_00037:
+      source: bible
+      text: 'Peeɖe ɛ́lɛ́ ñɔpɔzɩ-ɩ se: «Ña lɛ Yuda ñɩma wiyaʋ sɔsɔ naa we?'
+      sbs: 0.6679
+      gen_sec: 4.27
+      ref_sec: 5.24
+      cer: 0.1395
+      wer: 0.5833
+    bible_00038:
+      source: bible
+      text: Mbʋ́ pʋyɔɔ yɔ, ɛ-maɣmaɣ ɛsɔɔlɩ-mɩ se ɩsɔɔlɩ-m nɛ ɩwɛnɩ lidaʋ se ɛ-cɔlɔ malɩnaa.
+      sbs: 0.6816
+      gen_sec: 5.97
+      ref_sec: 5.5
+      cer: 0.1333
+      wer: 0.3077
+    bible_00039:
+      source: bible
+      text: Ɛkɛ Krɩstʋ tʋmlaɖʋ mɩ-cɔlɔ, ɛlakɩ mbʋ́ pʋpɔzʋʋ yɔ.
+      sbs: 0.688
+      gen_sec: 3.67
+      ref_sec: 3.56
+      cer: 0.0769
+      wer: 0.375
+    bible_00040:
+      source: bible
+      text: Nabʋyʋ kɛwɛɛ nɛ pʋcɔ Ɛsɔ la kedeŋa, ɖɩnɩ pʋ-tɔm nɛ ɖɩna-pʋ nɛ ɖɛ-ɛsɛ nɛ ɖɩcɔnɩ-pʋ kpem, ɖitukuni-pʋ
+        nɛ ɖe-nesi.
+      sbs: 0.6888
+      gen_sec: 8.28
+      ref_sec: 7.84
+      cer: 0.1548
+      wer: 0.4211
+    bible_00041:
+      source: bible
+      text: 'Ɛlɛ́, Pɩyɛ heyi-kɛ se: «Mɛnfɛyɩnɩ liidiye yaa sika, ɛlɛ́, mahaɣ-ŋ mbʋ́ mɛwɛna yɔ: Nazarɛɛtɩ
+        tʋ Yesu Krɩstʋ ɖoŋ taa lɛ, kʋyɩ ŋɖɔ!'
+      sbs: 0.6644
+      gen_sec: 9.3
+      ref_sec: 10.0
+      cer: 0.1277
+      wer: 0.2727
+    bible_00042:
+      source: bible
+      text: Ḿbá kɛɖɛnɩ ma nɛ ɩ nɔɔ nɛ powolo paɖaŋ-ɖʋ Trowaasɩ tɛtʋ taa.
+      sbs: 0.6392
+      gen_sec: 4.35
+      ref_sec: 3.48
+      cer: 0.0851
+      wer: 0.1667
+    bible_00043:
+      source: bible
+      text: Mbʋ́ pʋyɔɔ yɔ, ɖɩnawa se ɛyáa kizi ŋgbɛyɛ nɖɩ́ ŋwɛ ɖɩ-taa yɔ ɖɩ-tɔm paa le.
+      sbs: 0.6882
+      gen_sec: 5.29
+      ref_sec: 5.14
+      cer: 0.2182
+      wer: 0.5333
+    bible_00044:
+      source: bible
+      text: '» Halʋ ɛnʋ ecosi-i se: «Kɩpaɣlʋ!'
+      sbs: 0.617
+      gen_sec: 2.3
+      ref_sec: 3.22
+      cer: 0.6364
+      wer: 0.8
+    bible_00045:
+      source: bible
+      text: '» Ḿbʋ́ ɖɔɖɔ pɛtɛm tɔɔnaɣ tɔɔʋ lɛ, ɛkpaɣ sʋlʋm nɛ caɖaɣ nɛ ɛtɔ se: «Sʋlʋm caɖaɣ kanɛ lɛ nɔɔ
+        haʋ kɩfam mbʋ́ pɩtɩŋnɩ man-calɩm yɔɔ nɛ pʋwɛɛ yɔ.'
+      sbs: 0.6727
+      gen_sec: 10.15
+      ref_sec: 10.04
+      cer: 0.1524
+      wer: 0.2222
+    bible_00046:
+      source: bible
+      text: Ŋgʋ́, ma-maɣmaɣ mɛntɛkɛ weyi ɛtasɩ Ɛsɔ paɣtʋ yɔ.
+      sbs: 0.6725
+      gen_sec: 3.75
+      ref_sec: 3.26
+      cer: 0.0811
+      wer: 0.25
+    bible_00047:
+      source: bible
+      text: '› Ɛlɛ́, ecosuu-mɩ se: ‹Mantasɩ ɖenɖe ɩlɩnaa yɔ.'
+      sbs: 0.6581
+      gen_sec: 3.41
+      ref_sec: 12.66
+      cer: 0.3636
+      wer: 0.5714
+    bible_00048:
+      source: bible
+      text: Pɛwɛ ɛzɩ tɩɩnzɩ nzɩ́ sɩɩcakɩ lone kʋɖʋmɖɩyɛ taa yɔ.
+      sbs: 0.6461
+      gen_sec: 3.67
+      ref_sec: 3.1
+      cer: 0.4146
+      wer: 0.6667
+    bible_00049:
+      source: bible
+      text: Mentendiɣ Ɛsɔ se eyele nɛ nɔɔ kʋɖʋmaɣ ŋgá pɩtɩŋnɩ lidaʋ ŋgʋ́ ɖɩwɛnɩ yɔ kʋ-yɔɔ nɛ ɖɩla yɔ,
+        kasɩnɩ-ŋ nɛ ŋtɩlɩ ñɩm kɩbam mbʋ́ pɩtɩŋa payɩ ɖɩwɛnɩ ɖa nɛ Krɩstʋ ɖɛ-kpɛndʋʋ taa yɔ.
+      sbs: 0.67
+      gen_sec: 12.89
+      ref_sec: 11.84
+      cer: 0.1111
+      wer: 0.3125
+    bible_00050:
+      source: bible
+      text: Ɛlɛ́, Ɛsɔ koboyaɣ nɛ e-ɖoŋ peyele nɛ ñɔsɩ nasɩyɩ ñɛyɩ ɖɩɣa ŋ́gá ka-taa.
+      sbs: 0.6581
+      gen_sec: 5.38
+      ref_sec: 4.82
+      cer: 0.3774
+      wer: 0.6154
+    bible_00051:
+      source: bible
+      text: '» Ɛyɔɔdɩ ḿbʋ́ lɛ, ɛtasɩ se: «Đɛ-ɛgbaɣdʋ Lazaarɩ ɖou, ɛlɛ́, mowoki menfezi-i.'
+      sbs: 0.7505
+      gen_sec: 5.38
+      ref_sec: 5.84
+      cer: 0.2963
+      wer: 0.5455
+    bible_00052:
+      source: bible
+      text: Ɛlɛ́, ɩɖʋ mɩ-taa se Krɩstʋ lɛ Kɩpaɣlʋ nɛ ɩɖʋ-ɩ hɩɖɛ.
+      sbs: 0.6598
+      gen_sec: 3.67
+      ref_sec: 3.84
+      cer: 0.2105
+      wer: 0.5
+    bible_00053:
+      source: bible
+      text: Kpaagbaa ḿbʋ́ lɛ, kɔkɔɖɛ naɖɩyɛ lɩɩnɩ ɛsɔdaa ɛzɩ heɣlim sɔsɔm makʋʋ yɔ nɛ ɖisu ɖɩɣa ŋgá
+        ka-taa paawɛɛ yɔ katɩŋa.
+      sbs: 0.6749
+      gen_sec: 8.11
+      ref_sec: 6.38
+      cer: 0.1573
+      wer: 0.35
+    bible_00054:
+      source: bible
+      text: Ɛnʋ lɛ ɖiyiyu weyi ɛcɔŋnɩ mɩ-yɔɔ yɔ.
+      sbs: 0.6845
+      gen_sec: 2.73
+      ref_sec: 3.96
+      cer: 0.1786
+      wer: 0.1429
+    bible_00055:
+      source: bible
+      text: Ɛlɛ́, yee ɖiheyi ɖa-kɩwɛɛkɩm yɔ, Ɛsɔ kpeɣiɣ-ɖʋ-pʋ nɛ ɛñalɩ ɖa-kɩdɛkɛdɩm tɩŋa.
+      sbs: 0.7059
+      gen_sec: 5.89
+      ref_sec: 4.86
+      cer: 0.2203
+      wer: 0.6364
+    bible_00056:
+      source: bible
+      text: Pasʋ pɩlaʋ taa lɛ, pamaɣnɩ evebu nɔɔyʋ caɣ pa-nɩwaŋ yɔɔ.
+      sbs: 0.6502
+      gen_sec: 4.44
+      ref_sec: 3.4
+      cer: 0.2955
+      wer: 0.5
+    bible_00057:
+      source: bible
+      text: 'Đɩsɛ-mɩ: ɖa-Caa Ɛsɔ ɛlabɩ-mɩ lootiye nɛ ɛhɛzɩ mɩ-laŋa!'
+      sbs: 0.6859
+      gen_sec: 4.27
+      ref_sec: 5.16
+      cer: 0.122
+      wer: 0.25
+    bible_00058:
+      source: bible
+      text: Yesu lɩnɩ kpɩyʋʋ taa nɛ etii lɛ, abalʋ nɔɔyʋ tɩlɩʋnɩ pɩlaŋ taa nɛ ewolo ɛ-cɔlɔ.
+      sbs: 0.6836
+      gen_sec: 5.8
+      ref_sec: 5.42
+      cer: 0.2097
+      wer: 0.2667
+    bible_00059:
+      source: bible
+      text: 'Ɛlɛ́, Yuda ñɩma pazɩ kubusi mabʋ se: «Yee ŋyebi abalʋ ɛnʋ yɔ, ŋtɛkɛ Room wiyaʋ sɔsɔ ɛgbaɣdʋ!'
+      sbs: 0.5999
+      gen_sec: 6.74
+      ref_sec: 6.82
+      cer: 0.0857
+      wer: 0.1765
+    bible_00060:
+      source: bible
+      text: 'Pekpeɣlaa lɛ, eheyi-wɛ se: «Man-taabalaa!'
+      sbs: 0.7017
+      gen_sec: 3.07
+      ref_sec: 3.88
+      cer: 0.1935
+      wer: 0.2
+    bible_00061:
+      source: bible
+      text: Nabɛyɛ wokaɣnɩ abalʋ nɔɔyʋ paa ɖooye nɛ pacaɣzɩɣ Ɛsɔ ɖɩɣa nɔnɔɔ ŋgá payaɣ se Nɔnɔɔ Đeu Ñɩŋga
+        yɔ ka-taa se ɛsʋlʋmɩ mbá pasʋʋ yɔ liidiye.
+      sbs: 0.6779
+      gen_sec: 10.24
+      ref_sec: 8.72
+      cer: 0.1743
+      wer: 0.4
+    bible_00062:
+      source: bible
+      text: Pɩlɛdaa lɛ, Yesu nɛ ɛ-tɔmkpɛlɩkɩyaa hiu nɛ naalɛ pacaɣ tɔɔnaɣ ɖɩtɔɔyɛ.
+      sbs: 0.6943
+      gen_sec: 5.46
+      ref_sec: 4.48
+      cer: 0.0175
+      wer: 0.0909
+    bible_00063:
+      source: bible
+      text: Ɩla ḿbʋ́ ɖɔɖɔ awiya nɛ ñʋndɩnaa patɩŋa payɩ pɔ-yɔɔ nɛ ɖɩpɩzɩ ɖɩcaɣ wezuu laŋhɛzɩyɛ taa fɛɛɛ
+        nɛ ɖɩña Ɛsɔ camɩyɛ nɛ ɖɩla mbʋ́ pʋmʋnaa yɔ.
+      sbs: 0.7164
+      gen_sec: 10.07
+      ref_sec: 10.24
+      cer: 0.0748
+      wer: 0.2
+    bible_00064:
+      source: bible
+      text: Đɔɖɔ lɛ, Ɛsɔ weyi efezi Kɩpaɣlʋ nɛ sɩm taa yɔ, ɛkɔŋ-ɖʋ fezuu ɖɔɖɔ nɛ e-ɖoŋ.
+      sbs: 0.7014
+      gen_sec: 5.55
+      ref_sec: 5.76
+      cer: 0.1786
+      wer: 0.2
+    bible_00065:
+      source: bible
+      text: Pʋwayɩ lɛ, Yesu yebi-wɛ peeɖe nɛ ewolo Betaanii nɛ ɛsʋʋ.
+      sbs: 0.6622
+      gen_sec: 4.01
+      ref_sec: 3.96
+      cer: 0.2045
+      wer: 0.3
+    bible_00066:
+      source: bible
+      text: Ɛlɛ́, heɣlim ḿbʋ́ pʋwɛnɩ pɩmakɩ ɖoŋ ḿbʋ́ nɛ ɖɩtɛzɩ lɔʋ liu se ɖɔ-tɔm tɛma.
+      sbs: 0.6395
+      gen_sec: 5.12
+      ref_sec: 4.66
+      cer: 0.2727
+      wer: 0.6429
+    bible_00067:
+      source: bible
+      text: 'Patanɩ-wɛ tɔm hʋyaa sɔsaa cɔlɔ lɛ, cɔjɔnaa ñʋʋdʋ pazɩ-wɛ tɔm pɔzʋʋ se: «Đikizini-mɩ kpem
+        se ɩtaatasɩ wɩlʋʋ nɛ abalʋ ɛnʋ ɛ-nɔɔ lɛ, ɛbɛ ɩlaba yɔ?'
+      sbs: 0.654
+      gen_sec: 10.5
+      ref_sec: 10.16
+      cer: 0.0727
+      wer: 0.12
+    bible_00068:
+      source: bible
+      text: Ɛzɩma kpem ɖɩpɩzɩɣ ɖɩsa Ɛsɔ mɩ-yɔɔ laŋhʋlʋmɩyɛ nɖɩ́ iyeba nɛ ɖɩwɛnɩ ɛ-ɛsɩndaa yɔ ɖɩ-yɔɔ?
+      sbs: 0.6358
+      gen_sec: 6.49
+      ref_sec: 4.62
+      cer: 0.1143
+      wer: 0.4286
+    bible_00069:
+      source: bible
+      text: 'Peeɖe manɩɣ puholuuni ɛsɔdaa ɖoŋ se: «Lɛɛlɛɛyɔ, ñʋʋ yabʋ alɩwaatʋ talaa!'
+      sbs: 0.656
+      gen_sec: 5.46
+      ref_sec: 6.26
+      cer: 0.2759
+      wer: 0.9091
+    bible_00070:
+      source: bible
+      text: 'Ɛlɛ́, Yesu heyi-wɛ se: «Alɩwaatʋ tatalɩda se mowolo peeɖe.'
+      sbs: 0.6762
+      gen_sec: 4.1
+      ref_sec: 4.74
+      cer: 0.1591
+      wer: 0.3333
+    bible_00071:
+      source: bible
+      text: Pɩkɛdaa lɛ, ɛna lelu kʋñɔndʋ nɔɔyʋ woni liidiye pɔɔyɩsɩ cikpesi naalɛ nɛ ɛɖʋ.
+      sbs: 0.7207
+      gen_sec: 5.8
+      ref_sec: 5.28
+      cer: 0.254
+      wer: 0.5385
+    bible_00072:
+      source: bible
+      text: 'Ńdʋ́ lɛ se: «Iheyi Siiyɔɔ ñɩma se: ɩcɔnɩ ɩna, mi-wiyaʋ sɔsɔ kɔŋ!'
+      sbs: 0.7135
+      gen_sec: 4.69
+      ref_sec: 5.68
+      cer: 0.1739
+      wer: 0.5
+    bible_00073:
+      source: bible
+      text: Ńdʋ́ ɖɛ-ɛgbaɣdʋ Epafraasɩ weyi ɖa nɛ ɩ ɖɩlakɩ tʋmɩyɛ yɔ, ɛwɩlɩ-mɩ.
+      sbs: 0.693
+      gen_sec: 4.86
+      ref_sec: 4.12
+      cer: 0.1961
+      wer: 0.5455
+    bible_00074:
+      source: bible
+      text: Mbʋ́ pʋyɔɔ yɔ, Yeruusalɛm ñɩma tɩŋa na keɣlee se ḿbá labɩnɩ hama lakasɩ ńzɩ́.
+      sbs: 0.6549
+      gen_sec: 5.55
+      ref_sec: 5.88
+      cer: 0.1667
+      wer: 0.2857
+    bible_00075:
+      source: bible
+      text: Ɩtɛm naʋ mɩ-maɣmaɣ se Ɛsɔ lɩzɩ-m mɩ-hɛkʋ taa cɩnɛ kajalaɣ alɩwaatʋ taa se mowolo meheyi mbá
+        pɛtɛkɛ Yuda ñɩma yɔ Laŋhɛzɩyɛ Tɔm nɛ pɛwɛnɩ lidaʋ Yesu yɔɔ.
+      sbs: 0.677
+      gen_sec: 11.35
+      ref_sec: 9.8
+      cer: 0.1074
+      wer: 0.2963
+    bible_00076:
+      source: bible
+      text: 'Peeɖe powobi Yohanɛɛsɩ cɔlɔ nɛ pɔpɔzɩ-ɩ se: «Wɩlɩyʋ!'
+      sbs: 0.6717
+      gen_sec: 3.84
+      ref_sec: 4.26
+      cer: 0.1463
+      wer: 0.125
+    bible_00077:
+      source: bible
+      text: Weyi ɛ́lɛ́ lakɩ kɩwɛɛkɩm yɔ, ɛɛɖɔŋ Ɛsɔ paɣtʋ yɔɔ.
+      sbs: 0.6422
+      gen_sec: 3.5
+      ref_sec: 3.04
+      cer: 0.2973
+      wer: 0.5556
+    bible_00078:
+      source: bible
+      text: Ekem eleeu nɔɔyʋ nɛ ɛcɔʋ ɛtɩyɩɣ nɛ eheyiɣ ɛyáa mbʋ́ pʋkɔŋ labʋ yɔ nɛ ɛkɔŋnɩ ɛ-caanaa liidiye
+        sakɩyɛ.
+      sbs: 0.6926
+      gen_sec: 7.42
+      ref_sec: 7.04
+      cer: 0.2375
+      wer: 0.4444
+    bible_00079:
+      source: bible
+      text: Pʋ-yɔɔ lɛ, taabalaa, paa ɖɩnɩɣ siziŋ nɛ ɖɩtɔkɩ kʋñɔmɩŋ yɔ, ɖa-laŋɩyɛ hɛnɩ-mɩ mi-lidaʋ wɛnaʋ
+        yɔɔ.
+      sbs: 0.6872
+      gen_sec: 7.42
+      ref_sec: 6.62
+      cer: 0.1622
+      wer: 0.4667
+    bible_00080:
+      source: bible
+      text: Paa ḿbʋ́ yɔ, ɛnɩwa se pɩwɩɣ Lazaarɩ lɛ, ɛtasɩ caɣʋ kɩyakɩŋ naalɛ ɖenɖe ɛɛwɛɛ yɔ.
+      sbs: 0.7176
+      gen_sec: 5.89
+      ref_sec: 6.08
+      cer: 0.1774
+      wer: 0.3333
+    bible_00081:
+      source: bible
+      text: 'Peeɖe lɔŋsɩnɖaa mbá pɛkɛ Epikuri nɛ Sitoyiisi pa-aŋgba taa ñɩma yɔ, powobi Pɔɔlɩ cɔlɔ nɛ
+        pa nɛ ɩ pɔyɔɔdʋʋ nɛ pa-taa lɛlaa tɔŋ se: «Abalʋ kɔkɔɖɛ yaɖʋ ɛnɛ, se we ɛyɔɔdʋʋ yee?'
+      sbs: 0.6813
+      gen_sec: 12.63
+      ref_sec: 11.6
+      cer: 0.3433
+      wer: 0.5312
+    bible_00082:
+      source: bible
+      text: Pɩlabɩ kɩyakɩŋ kagbaanzɩ lɛ, cɔjɔnaa ñʋʋdʋ Anaanɩyaasɩ nɛ ɛjaɖɛ taa sɔsaa nabɛyɛ nɛ tɔm loluyu
+        Tɛrtuluusi patalɩ Sezaaree wiyaʋ sɔsɔ Feliksɩ tɛ se pakʋyɩ Pɔɔlɩ yɔɔ.
+      sbs: 0.7188
+      gen_sec: 12.29
+      ref_sec: 11.26
+      cer: 0.1168
+      wer: 0.2692
+    bible_00083:
+      source: bible
+      text: Pʋbʋ, sɔɔndʋ ɛɛkpaɣ-mɩ nɛ mi-koyindinaa nabʋyʋ taa.
+      sbs: 0.6536
+      gen_sec: 3.93
+      ref_sec: 3.32
+      cer: 0.0976
+      wer: 0.1429
+    bible_00084:
+      source: bible
+      text: Pɔɔlɩ susaa se pakam Krɩstʋ kaamaŋkaɣ yɔɔ.
+      sbs: 0.6061
+      gen_sec: 3.24
+      ref_sec: 4.3
+      cer: 0.3714
+      wer: 1.0
+    bible_00085:
+      source: bible
+      text: Ɩla ɛzɩ ma yɔ, mbʋ́ pʋyɔɔ yɔ, ma-maɣmaɣ malakɩ ɛzɩ Krɩstʋ yɔ.
+      sbs: 0.6738
+      gen_sec: 4.44
+      ref_sec: 5.26
+      cer: 0.0222
+      wer: 0.25
+    bible_00086:
+      source: bible
+      text: Feliksɩ caɣaɣ se pɩla Yuda ñɩma leleŋ lɛ, eyele Pɔɔlɩ salaka taa ḿbʋ́.
+      sbs: 0.6934
+      gen_sec: 5.38
+      ref_sec: 6.26
+      cer: 0.3455
+      wer: 0.6154
+    bible_00087:
+      source: bible
+      text: Ŋgʋ́, pɩɩwɛɛ se mɩ-ɛsɛ ɛñɩŋ nɛ ɩɖɔɔnɩ weyi ɛlabɩ lakasɩ ńzɩ́ yɔ mɩ-ŋgbɛyɛ taa.
+      sbs: 0.6829
+      gen_sec: 5.8
+      ref_sec: 5.36
+      cer: 0.0678
+      wer: 0.2857
+    bible_00088:
+      source: bible
+      text: Pʋwɛɛ se mowolo palabɩ-m lɩm sɔʋ sɔnzɩ nɛ mentendi Kɩpaɣlʋ nɛ ɛñalɩ-m man-kɩwɛɛkɩm.
+      sbs: 0.6274
+      gen_sec: 6.31
+      ref_sec: 7.28
+      cer: 0.1642
+      wer: 0.3846
+    bible_00089:
+      source: bible
+      text: '» Peeɖe ɛ-tɔmkpɛlɩkɩyaa taa lɛlʋ weyi payaɣ se Andree nɛ ɛkɛ Siimɔɔ Pɩyɛ neu yɔ, eheyi-i
+        se: «Abalɩbɩɣa nakɛyɛ wɛ cɩnɛ, kɛwɛnɩ tindine hɔɔlasɩ kagbaanzɩ nɛ kpakpasɩ naalɛ.'
+      sbs: 0.6651
+      gen_sec: 12.46
+      ref_sec: 11.06
+      cer: 0.0662
+      wer: 0.2222
+    bible_00090:
+      source: bible
+      text: 'Cɔjɔnaa sɔsaa nɛ Ɛsɔ ɖɩɣa yɔɔ ɖaŋɩyaa pana-ɩ lɛ, pamakɩ kobusi se: «Kam-ɩ kaamaŋkaɣ yɔɔ!'
+      sbs: 0.621
+      gen_sec: 6.66
+      ref_sec: 7.66
+      cer: 0.0882
+      wer: 0.4
+    bible_00091:
+      source: bible
+      text: › Yee nɔɔyʋ ɛwɛ ka-taa nɛ ɛñɩnɩɣ laŋhɛzɩyɛ yɔ, mɩ-laŋhɛzɩyɛ tɔm wɛɣ ɛ-cɔlɔ.
+      sbs: 0.6809
+      gen_sec: 5.8
+      ref_sec: 4.24
+      cer: 0.0526
+      wer: 0.1667
+    bible_00092:
+      source: bible
+      text: 'Peeɖe pukuluu ɛ-lɩmaɣza wena awɛ mɛsaɣ tɛɛ yɔ a-yɔɔ nɛ ɛpa ɛ-ɛsɛ nɛ tɛtʋ nɛ ɛsa Ɛsɔ nɛ ɛkaɖɩ
+        kpayɩ se: «Toovenim, Ɛsɔ wɛ mɩ-hɛkʋ taa.'
+      sbs: 0.6734
+      gen_sec: 9.47
+      ref_sec: 11.4
+      cer: 0.16
+      wer: 0.3462
+    bible_00093:
+      source: bible
+      text: Đooo lɛ, ḿbʋ́ ɖɔɖɔ ɩlakaɣ alɩwaatʋ ndʋ́ ɩɩwɛ kɩwɛɛkɩm ḿbʋ́ pɩ-taa yɔ.
+      sbs: 0.7205
+      gen_sec: 4.86
+      ref_sec: 4.08
+      cer: 0.0962
+      wer: 0.25
+    bible_00094:
+      source: bible
+      text: '» Yesu cosi-wɛ nɛ eduuye taa se: «Meheyiɣ-mɩ se: ɩñaɣ pana nɛ ɩtɩŋnɩ ɖɛɛmɛnɖɛɛ taa nɛ ɩsʋʋ
+        nɛ ihiɣ wezuu.'
+      sbs: 0.6522
+      gen_sec: 7.59
+      ref_sec: 7.28
+      cer: 0.3544
+      wer: 0.4737
+    bible_00095:
+      source: bible
+      text: Ɛlɛ́, manɖaŋaa ɖɔɖɔ se paa sɩm yɔ, mansɩ Kɩpaɣlʋ Yesu yɔɔ Yeruusalɛm.
+      sbs: 0.7126
+      gen_sec: 5.12
+      ref_sec: 5.76
+      cer: 0.037
+      wer: 0.25
+    bible_00096:
+      source: bible
+      text: Yee ɖa-maɣmaɣ ɖɩmaɣzaa nɛ ɖɩtɩlɩ ɖa-tɩ nɛ pʋcɔ yɔ, Ɛsɔ ɛɛhʋʋnɩ-ɖʋ.
+      sbs: 0.709
+      gen_sec: 5.21
+      ref_sec: 5.1
+      cer: 0.2157
+      wer: 0.4545
+    bible_00097:
+      source: bible
+      text: Ɛlɛ́, yee nɔɔyʋ ɛɖɔŋ ɖoó taa yɔ, putuuluu-i, mbʋ́ pʋyɔɔ yɔ, ɛfɛyɩnɩ ñalɩmɩyɛ.
+      sbs: 0.6903
+      gen_sec: 5.63
+      ref_sec: 4.74
+      cer: 0.2281
+      wer: 0.3077
+    bible_00098:
+      source: bible
+      text: Ŋgʋ́, lɔŋsɩnɖɛ tɔm ɖisusuu ɛyáa mbá papɩ Ɛsɔ nʋmɔʋ taa siŋŋ yɔ.
+      sbs: 0.657
+      gen_sec: 4.78
+      ref_sec: 4.62
+      cer: 0.0408
+      wer: 0.0833
+    bible_00099:
+      source: bible
+      text: Sɔɔndʋ kpaɣaɣ-wɛ se mɛlɛ ɛtaakɔɔ kuyoni ɛwasɩ nasɩyɩ.
+      sbs: 0.6373
+      gen_sec: 4.1
+      ref_sec: 3.12
+      cer: 0.2045
+      wer: 0.625
+    bible_00100:
+      source: bible
+      text: Mbʋ́ pʋyɔɔ yɔ, Kɩpaɣlʋ cɔŋnɩ mbá patʋʋzɩ ɛ-ɛsɩndaa yɔ pɔ-yɔɔ.
+      sbs: 0.6942
+      gen_sec: 4.69
+      ref_sec: 3.76
+      cer: 0.0426
+      wer: 0.1
+    bible_00101:
+      source: bible
+      text: Yesu tɛm ɛ-tɔmkpɛlɩkɩyaa yɔɔ Ɛsɔ tenduu ḿbʋ́ lɛ, ɛ nɛ wɛ powolo pɛtɛzɩ lɔmʋʋ ŋgʋ́ payaɣ se
+        Sedrɔɔ yɔ nɛ pasʋʋ kaɖaɣ ŋgá kɛwɛ peeɖe yɔ ka-taa.
+      sbs: 0.6929
+      gen_sec: 10.15
+      ref_sec: 8.54
+      cer: 0.1743
+      wer: 0.3704
+    bible_00102:
+      source: bible
+      text: Ɩtɔzɩ se ɛkɔŋ-mɩ hɛyʋʋ ñɩm mbʋ́ ɛñɔɔzaa nɛ ɛɖaŋnɩ ɛ-ñɩma yɔ.
+      sbs: 0.6515
+      gen_sec: 4.69
+      ref_sec: 4.3
+      cer: 0.2609
+      wer: 0.5455
+    bible_00103:
+      source: bible
+      text: Maakpa halaa nɛ abalaa nɛ mɔhɔkɩ-wɛ nɛ manɖʋ salaka.
+      sbs: 0.6712
+      gen_sec: 3.75
+      ref_sec: 4.46
+      cer: 0.381
+      wer: 0.6667
+    bible_00104:
+      source: bible
+      text: Powoba lɛ, ɛlɩzɩ pa-taa ɛyáa hiu nɛ naalɛ se pɛkɛ e-tiyiyaa.
+      sbs: 0.6839
+      gen_sec: 4.35
+      ref_sec: 4.66
+      cer: 0.1087
+      wer: 0.1818
+    bible_00105:
+      source: bible
+      text: Fɛstuusi cosi-wɛ se Pɔɔlɩ wɛ salaka taa Sezaaree.
+      sbs: 0.6778
+      gen_sec: 3.67
+      ref_sec: 3.2
+      cer: 0.4
+      wer: 0.625
+    bible_00106:
+      source: bible
+      text: Pɩkɛdaa lɛ, pɩlabɩ-ɩ liii nɛ ɛlɩɩnɩ ɖɩ-yɔɔ ɖooo ɛsɔdaa kuduyuu naadozo ñɩŋgʋ taa nɛ etii
+        ɛfalɩ tataa.
+      sbs: 0.711
+      gen_sec: 7.51
+      ref_sec: 6.42
+      cer: 0.2099
+      wer: 0.4706
+    bible_00107:
+      source: bible
+      text: 'Alɩwaatʋ talɩɣ lɛ, ɛlabɩ-pʋ: ekpeɣliɣ mbʋ́ pɩtɩŋa payɩ pʋwɛ ɛsɔdaa nɛ tataa yɔ wiyaʋ kʋɖʋm
+        koŋ tɛɛ.'
+      sbs: 0.6919
+      gen_sec: 7.25
+      ref_sec: 8.64
+      cer: 0.0897
+      wer: 0.2941
+    bible_00108:
+      source: bible
+      text: Ɛlɛ́, Room sɔɔja sɔsɔ kizini-wɛ, mbʋ́ pʋyɔɔ yɔ, e-liu wɛɛ se ɛya Pɔɔlɩ ñʋʋ.
+      sbs: 0.6782
+      gen_sec: 5.29
+      ref_sec: 5.08
+      cer: 0.1296
+      wer: 0.2857
+    bible_00109:
+      source: bible
+      text: Pʋ-yɔɔ lɛ, pʋwɛɛ se ɖa ɖɔɖɔ ɖɩsɩ ɖa-taabalaa yɔɔ.
+      sbs: 0.7162
+      gen_sec: 3.5
+      ref_sec: 3.6
+      cer: 0.1351
+      wer: 0.3333
+    bible_00110:
+      source: bible
+      text: Yesu ha tɔɔnaɣ samaɣ sɔsɔɔ nɛ kɔtɔɔ.
+      sbs: 0.5788
+      gen_sec: 2.73
+      ref_sec: 3.58
+      cer: 0.4138
+      wer: 0.5714
+    bible_00111:
+      source: bible
+      text: Ŋgʋ́, Yesu taatɩtalɩda tɛtʋ taa, ɛlɛ́, ɛɛwɛ ɖenɖe Maarta kakatɩ-ɩ yɔ ḿbʋ́.
+      sbs: 0.6857
+      gen_sec: 5.29
+      ref_sec: 5.44
+      cer: 0.2545
+      wer: 0.6667
+    bible_00112:
+      source: bible
+      text: Ɩsɛɛ mbá patɩŋa payɩ pɛkɛ Ɛsɔ ñɩma pa nɛ Krɩstʋ Yesu pɛ-kpɛndʋʋ taa yɔ.
+      sbs: 0.6734
+      gen_sec: 5.21
+      ref_sec: 4.6
+      cer: 0.0714
+      wer: 0.2143
+    bible_00113:
+      source: bible
+      text: Peeɖe Siimɔɔ nɛ ɛ-taabalaa papazɩ-ɩ ñɩnʋʋ.
+      sbs: 0.6277
+      gen_sec: 3.24
+      ref_sec: 5.74
+      cer: 0.5294
+      wer: 1.0
+    bible_00114:
+      source: bible
+      text: 'Ɛɛpɩzɩɣ ɛtasɩ labʋ kɩwɛɛkɩm: ɛ-Caa lɛ Ɛsɔ.'
+      sbs: 0.6833
+      gen_sec: 3.16
+      ref_sec: 3.16
+      cer: 0.0
+      wer: 0.0
+    bible_00115:
+      source: bible
+      text: 'Ɛlɛ́, ɛcaɣ nɛ ɛmaɣzɩ ɛ-taa se: ‹Mala ɛzɩma lee?'
+      sbs: 0.6969
+      gen_sec: 3.5
+      ref_sec: 9.38
+      cer: 0.2121
+      wer: 0.5556
+    bible_00116:
+      source: bible
+      text: Mɛwɛ tanɩm taa yaa mɛwɛnɩ sakɩyɛ yɔ, mansɩm man-tɩ ɖɔkʋʋ.
+      sbs: 0.6899
+      gen_sec: 4.1
+      ref_sec: 4.76
+      cer: 0.0667
+      wer: 0.4
+    bible_00117:
+      source: bible
+      text: Paa sɩm yɔ, mansɩkɩ ñɔ-yɔɔ!
+      sbs: 0.6458
+      gen_sec: 2.05
+      ref_sec: 11.84
+      cer: 0.5
+      wer: 1.0
+    bible_00118:
+      source: bible
+      text: 'Mbʋ́ pʋyɔɔ yɔ, paɖʋ tɩ-taa se: «Nɔ weyi ɛmakɩ mɩla yɔ, paahɔkʋʋ ɛ-nɔɔ se ɛtaatɔɔ.'
+      sbs: 0.6713
+      gen_sec: 5.63
+      ref_sec: 7.34
+      cer: 0.1695
+      wer: 0.4
+    bible_00119:
+      source: bible
+      text: 'Kɩyakʋ ŋgʋ́ Yesu tukaɣ aduwa yɔ, kɩ-ɖanaɣ yɔɔ eheyi ɛ-tɔmkpɛlɩkɩyaa se: «Đɩtɛzɩ teŋgu kidiiliŋ
+        lɛɛkʋ yɔɔ.'
+      sbs: 0.6684
+      gen_sec: 8.02
+      ref_sec: 7.5
+      cer: 0.4819
+      wer: 0.6875
+    bible_00120:
+      source: bible
+      text: Ɛ-taa ɛɛhʋlʋmʋʋnɩ kɩdɛkɛdɩm, ɛlɛ́, toovenim ɛ-taa hʋlʋmʋʋna.
+      sbs: 0.6916
+      gen_sec: 4.61
+      ref_sec: 4.5
+      cer: 0.0417
+      wer: 0.5714
+    bible_00121:
+      source: bible
+      text: Maarkɩ nɛ Aristaarkɩ nɛ Demaasɩ nɛ Luka mbá ma nɛ wɛ ɖɩlakɩ tʋmɩyɛ kʋɖʋmɖɩyɛ yɔ, pɛsɛ-ŋ ɖɔɖɔ.
+      sbs: 0.6811
+      gen_sec: 6.74
+      ref_sec: 8.36
+      cer: 0.0676
+      wer: 0.2941
+    bible_00122:
+      source: bible
+      text: Đa-Caa Ɛsɔ maɣmaɣ nɛ ɖa-Kɩpaɣlʋ Yesu pɔñɔɔzɩ ɖa-nʋmɔʋ nɛ ɖɩpɩzɩ ɖɩtalɩ-mɩ!
+      sbs: 0.6978
+      gen_sec: 5.97
+      ref_sec: 5.52
+      cer: 0.0508
+      wer: 0.2727
+    bible_00123:
+      source: bible
+      text: Yesu laba nɛ lɩm pɩsɩ sʋlʋm Kana tɛtʋ taa.
+      sbs: 0.5854
+      gen_sec: 2.9
+      ref_sec: 5.18
+      cer: 0.1212
+      wer: 0.2222
+    bible_00124:
+      source: bible
+      text: Ɛlɛ́, halʋ ɛnʋ ese nɛ ɛsʋʋ lakʋ taa ɖenɖe Ɛsɔ kɔñɔɔzɩ-ɩ ɖɩjaɣyɛ se pɔcɔnɩ ɛ-yɔɔ kɩyakɩŋ kutoku
+        nɛ nasɩlɛ nɛ nɩɩnʋwa nɛ hiu yɔ.
+      sbs: 0.6689
+      gen_sec: 9.22
+      ref_sec: 8.94
+      cer: 0.2857
+      wer: 0.4167
+    bible_00125:
+      source: bible
+      text: Mbʋ́ pʋyɔɔ yɔ, ḿbʋ́ pʋmʋnaa se pɛhɛyɩ tʋmlaɖʋ ɛ-tʋmɩyɛ yɔɔ.
+      sbs: 0.6987
+      gen_sec: 4.1
+      ref_sec: 3.64
+      cer: 0.1333
+      wer: 0.4
+    bible_00126:
+      source: bible
+      text: Yesu ɖɔɔnɩ aleewaa abalʋ nɔɔyʋ wayɩ.
+      sbs: 0.5896
+      gen_sec: 2.65
+      ref_sec: 4.44
+      cer: 0.2667
+      wer: 0.8333
+    bible_00127:
+      source: bible
+      text: Peeɖe ɖɩɖaŋnɩ Kɩpaɣlʋ Yesu Krɩstʋ se ɛkɔɔ ɛya ɖa-ñʋʋ.
+      sbs: 0.6579
+      gen_sec: 4.1
+      ref_sec: 3.22
+      cer: 0.2093
+      wer: 0.6667
+    bible_00128:
+      source: bible
+      text: Pɩkɛdaa lɛ, Maarɩɩ kpaɣ tɩlaaɖɩ ŋgʋ́ palabɩnɩ naarɩ nɛ petesidi kɩ-taa pʋyʋ yɔ ɛzɩ litri hɔɔlʋʋ
+        yɔ nɛ ɛpɩyɩ Yesu naŋgbanzɩ yɔɔ.
+      sbs: 0.6966
+      gen_sec: 9.39
+      ref_sec: 7.54
+      cer: 0.1961
+      wer: 0.3636
+    bible_00129:
+      source: bible
+      text: Nakʋyʋ wiye Ɛsɔ tiyi abalʋ nɔɔyʋ, payaɣ-ɩ se Yohanɛɛsɩ.
+      sbs: 0.7189
+      gen_sec: 4.1
+      ref_sec: 4.0
+      cer: 0.0682
+      wer: 0.1111
+    bible_00130:
+      source: bible
+      text: Pʋwɛɛ se pʋdʋ ɛha ɛzaɣ́tʋ siɣ́ye nɛ ɛla mbʋ́ pʋwɛ ɖeu yɔ.
+      sbs: 0.6592
+      gen_sec: 3.75
+      ref_sec: 3.48
+      cer: 0.2619
+      wer: 0.4167
+    bible_00131:
+      source: bible
+      text: 'Peeɖe eheyi-wɛ se: «Ma lɛ, mɛnkɛ Yuda tʋ, palʋlɩ-m Taarsɩ Siliisii ɛjaɖɛ taa.'
+      sbs: 0.7174
+      gen_sec: 5.55
+      ref_sec: 9.0
+      cer: 0.1379
+      wer: 0.3846
+    bible_00132:
+      source: bible
+      text: Yee ḿbʋ́ Ɛsɔ ɛsɔɔlɩ-ɖʋ yɔ, pʋwɛɛ se ɖa ɖɔɖɔ ɖɩsɔɔlɩ ɖama.
+      sbs: 0.6785
+      gen_sec: 3.93
+      ref_sec: 4.0
+      cer: 0.1395
+      wer: 0.4545
+    bible_00133:
+      source: bible
+      text: Yohanɛɛsɩ ɛnʋ, esuwaɣ toko ŋgʋ́ palʋnɩ kpaŋnɔ siɣá naalɛ tʋ hʋndʋ yɔ.
+      sbs: 0.6423
+      gen_sec: 5.21
+      ref_sec: 3.92
+      cer: 0.1273
+      wer: 0.4167
+    bible_00134:
+      source: bible
+      text: Pʋcɔ ewolo Galilee lɛ, pɩɩwɛɛ se ɛtɩŋnɩ Samaarɩɩ egeetiye taa.
+      sbs: 0.7035
+      gen_sec: 4.78
+      ref_sec: 4.3
+      cer: 0.098
+      wer: 0.2
+    bible_00135:
+      source: bible
+      text: Halɩ ɖɩɩlaba kʋñɔŋ siŋŋ nɛ pʋcɔ ɖɩlɩzɩ kpɩyʋʋ cikpeluu ŋgʋ́ palɩzɩɣnɩ ɛyáa yɔ.
+      sbs: 0.6372
+      gen_sec: 6.23
+      ref_sec: 4.5
+      cer: 0.2812
+      wer: 0.6154
+    bible_00136:
+      source: bible
+      text: 'Peeɖe pɩɖɩɣzɩ-wɛ yem ɖɩɣ ɖɩɣ nɛ pɔtɔŋ se: «Ɛzɩ ɛyáa panɛ pɛtɛkɛ Galilee ñɩma patɩŋa na?'
+      sbs: 0.6623
+      gen_sec: 6.4
+      ref_sec: 6.44
+      cer: 0.1912
+      wer: 0.375
+    bible_00137:
+      source: bible
+      text: Paa ḿbʋ́ yɔ, mbá panɩ tɔm ńdʋ́ yɔ, pa-taa sakɩyɛ tisi-tʋ nɛ pɔsɔzɩ lɛlaa yɔɔ nɛ pɛtɛzɩ
+        ɖɔʋ.
+      sbs: 0.7022
+      gen_sec: 6.23
+      ref_sec: 6.48
+      cer: 0.1343
+      wer: 0.3889
+    bible_00138:
+      source: bible
+      text: Krɩstʋ ŋgbɛyɛ taa ñɩma mbá Ɛsɔ lɩzɩ Babilooni ɖɔɖɔ ɛzɩ mɩ yɔ nɛ Maarkɩ weyi ɛkɛ man-pɩɣa
+        yɔ, pɛsɛ-mɩ.
+      sbs: 0.6859
+      gen_sec: 7.34
+      ref_sec: 6.44
+      cer: 0.1013
+      wer: 0.3158
+    bible_00139:
+      source: bible
+      text: Yesu na ɛyáa samaɣ ḿbʋ́ lɛ, ɛkpa piyaɣ nakɛyɛ yɔɔ nɛ ɛcaɣ.
+      sbs: 0.6895
+      gen_sec: 4.35
+      ref_sec: 3.32
+      cer: 0.0682
+      wer: 0.25
+    bible_00140:
+      source: bible
+      text: 'Toovenim lɛ, meheyiɣ-ŋ se: paɖʋ-ŋ-kɛ yɔ, ŋwɛɣ peeɖe ḿbʋ́ ka ka nɛ pʋkɔɔ pɩsɩɩnɩ kɩyakʋ ŋgʋ́
+        ŋhɛyɩ ña-kɩmɩyɛ tɩŋa payɩ nɛ pɩtakazɩ paa koba yɔ.'
+      sbs: 0.6706
+      gen_sec: 10.67
+      ref_sec: 9.02
+      cer: 0.1759
+      wer: 0.48
+    bible_00141:
+      source: bible
+      text: Ḿbʋ́ yekina nɛ pɩtɩŋnɩ lidaʋ ŋgʋ́ ɩwɛna yɔ kʋ-yɔɔ nɛ Krɩstʋ wɛɛ mɩ-laŋa taa nɛ ɩtɛzɩ pɩʋ
+        sɔɔlɩm taa siŋŋ.
+      sbs: 0.6923
+      gen_sec: 7.68
+      ref_sec: 6.84
+      cer: 0.1481
+      wer: 0.3
+    bible_00142:
+      source: bible
+      text: 'Paba nɩ ḿbʋ́ lɛ, pa nɛ wɛ pɛkpɛndɩ patɩŋa nɛ pɛsɛɛ Ɛsɔ se: «Caabiyuu!'
+      sbs: 0.6748
+      gen_sec: 4.86
+      ref_sec: 5.58
+      cer: 0.1765
+      wer: 0.5
+    bible_00143:
+      source: bible
+      text: 'Peeɖe palɩzɩ Yesu tiyiyaa ḿbá pɛ-hɛkʋ taa nɛ pɔpɔzɩ-wɛ se: «A-ɖoŋ taa yaa a-hɩɖɛ taa ɩlaba
+        nɛ abalʋ ɛnʋ ɛ-yɔɔ cɛ?'
+      sbs: 0.6852
+      gen_sec: 8.11
+      ref_sec: 8.42
+      cer: 0.0824
+      wer: 0.2381
+    bible_00144:
+      source: bible
+      text: Pɛɖɛɣaɣ lɛ, ŋgbɛyɛ taa ñɩma cɛlɩ-wɛ mbʋ́ pʋpɔzʋʋ-wɛ pa-nʋmɔʋ ɖɔm taa yɔ.
+      sbs: 0.7115
+      gen_sec: 5.55
+      ref_sec: 4.58
+      cer: 0.1636
+      wer: 0.5
+    bible_00145:
+      source: bible
+      text: Pɩkɛdaa lɛ, tɛtʋ tɩñamsɩ siŋŋ nɛ pɩkpɛndɩnɩ salaka kuduyuu nɛ kʋ-nɔnɔsɩ tɩŋa tɩtʋlɩ yem nɛ
+        yoŋgbasɩ nzɩ́ paaɖɩ salaka tɩnaa tɩŋa yɔ sɩtɩcɛbʋ.
+      sbs: 0.6693
+      gen_sec: 10.84
+      ref_sec: 9.76
+      cer: 0.113
+      wer: 0.3478
+    bible_00146:
+      source: bible
+      text: Yee nɔɔyʋ ɛtɔm se ɛwɛ ñalɩmɩyɛ taa nɛ ɛpaɖɩɣ ɛ-taabalaa yɔ, pɩwɩlɩɣ se ɛwɛ cɩkpɛndʋʋ taa
+        tam.
+      sbs: 0.7252
+      gen_sec: 6.83
+      ref_sec: 5.92
+      cer: 0.2162
+      wer: 0.3529
+    bible_00147:
+      source: bible
+      text: E-Fezuu Kiɖeɖeu ŋgʋ́ ɛha-ɖʋ yɔ, ŋ́gʋ́ wɩlɩɣnɩ-ɖʋ se ɖa nɛ ɩ ɖɩwɛ ɖama taa.
+      sbs: 0.6584
+      gen_sec: 5.21
+      ref_sec: 5.4
+      cer: 0.2264
+      wer: 0.3571
+    bible_00148:
+      source: bible
+      text: Tɩ-taa ɩmɩzɩɣ ɖama nɛ paa weyi ekpe ɛ-tɛ nɛ iyele men-ɖeke.
+      sbs: 0.6665
+      gen_sec: 4.27
+      ref_sec: 3.84
+      cer: 0.1778
+      wer: 0.3636
+    bible_00149:
+      source: bible
+      text: Paa ɩtana-ɩ yɔ, ɩwɛnɩ lidaʋ ɛ-yɔɔ nɛ mɩ-laŋa hʋlʋmɩ siŋŋ, pɩfɛyɩ yɔɔdʋʋ.
+      sbs: 0.6746
+      gen_sec: 5.55
+      ref_sec: 5.22
+      cer: 0.1091
+      wer: 0.4167
+    bible_00150:
+      source: bible
+      text: '-Peheyi Farɩsɩ ñɩma se: «Yesu tɔmkpɛlɩkɩyaa kɩlɩ Yohanɛɛsɩ ñɩma ɖɔʋ.'
+      sbs: 0.6619
+      gen_sec: 5.21
+      ref_sec: 6.52
+      cer: 0.2727
+      wer: 0.5
+    bible_00151:
+      source: bible
+      text: '» Lɛlaa se: «Ɛzɩma kɩwɛɛkɩm laɖʋ pɩzɩɣ ɛla hama lakasɩ ḿbʋ́?'
+      sbs: 0.6292
+      gen_sec: 4.01
+      ref_sec: 13.34
+      cer: 0.0444
+      wer: 0.2
+    bible_00152:
+      source: bible
+      text: Panɩ tɔm ńdʋ́ ḿbʋ́ lɛ, pa-taa sɔsaa calɩ lɔyʋʋ kʋɖʋm kʋɖʋm nɛ pɛɖɛɛ patɩŋa payɩ nɛ piyele
+        halʋ ɛnʋ e-ɖeke koŋ Yesu ɛsɩndaa.
+      sbs: 0.7015
+      gen_sec: 8.87
+      ref_sec: 8.74
+      cer: 0.1684
+      wer: 0.3913
+    bible_00153:
+      source: bible
+      text: Mbʋ́ pʋyɔɔ yɔ, ɛjaɖɛ ńɖɩ́ ɖɩ-taa ñɩma laŋa wɛ kpɩzɩŋ nɛ.
+      sbs: 0.6824
+      gen_sec: 4.01
+      ref_sec: 4.28
+      cer: 0.1463
+      wer: 0.5455
+    bible_00154:
+      source: bible
+      text: Yee toovenim se ɛnʋ ɛhanɩ-ŋ-pʋ lɛ, pɩlabɩ ɛzɩma ŋkʋndʋʋnɩ-pʋ ɛzɩ pataha-ŋ-pʋ kɩhaʋ yɔ?
+      sbs: 0.6508
+      gen_sec: 6.66
+      ref_sec: 6.02
+      cer: 0.1045
+      wer: 0.4615
+    bible_00155:
+      source: bible
+      text: Paa ɩtɛm sɩm tɔm ndʋ́ meheyiɣ-mɩ yɔ camɩyɛ yɔ, me-liu wɛɛ se mɔntɔzɩ-mɩ-tʋ.
+      sbs: 0.6702
+      gen_sec: 5.46
+      ref_sec: 5.14
+      cer: 0.0536
+      wer: 0.3077
+    bible_00156:
+      source: bible
+      text: '› Peeɖe mɔnpɔzaa se: ‹Kɩpaɣlʋ!'
+      sbs: 0.6247
+      gen_sec: 2.3
+      ref_sec: 3.9
+      cer: 0.6364
+      wer: 0.75
+    bible_00157:
+      source: bible
+      text: Ŋ́gʋ́ lɛ taŋga nɛ mɩnʋʋ nɛ nɩɩnʋwa nɛ hiu nɛ loɖo.
+      sbs: 0.6342
+      gen_sec: 3.41
+      ref_sec: 5.8
+      cer: 0.2973
+      wer: 0.8182
+    bible_00158:
+      source: bible
+      text: 'Mankʋyʋʋ manpɩsɩ man-caa cɔlɔ nɛ meheyi-i se: caa!'
+      sbs: 0.6564
+      gen_sec: 3.93
+      ref_sec: 3.18
+      cer: 0.0256
+      wer: 0.125
+    bible_00159:
+      source: bible
+      text: Pʋ-yɔɔ lɛ, mɩ nɛ Yesu Krɩstʋ mɩ-kpɛndʋʋ ɛwɛɛ ḿbʋ́ ɛzɩ Fezuu Kiɖeɖeu ŋ́gʋ́ kɩwɩlʋʋ-mɩ yɔ.
+      sbs: 0.6647
+      gen_sec: 6.23
+      ref_sec: 5.18
+      cer: 0.2121
+      wer: 0.2
+    bible_00160:
+      source: bible
+      text: Ñɔ-lɔŋsɩnɖɛ yɔɔ pɩtɩŋnaa nɛ pɛlɛɣzɩ wɛtʋ sakɩyɛ ɛjaɖɛ ɖɩnɛ ɖɩ-taa se piɖeni-ɖɩ.
+      sbs: 0.6875
+      gen_sec: 6.14
+      ref_sec: 4.12
+      cer: 0.1562
+      wer: 0.4167
+    bible_00161:
+      source: bible
+      text: Lɛɛlɛɛyɔ, manawa se mbá mɩ mɩtɩŋa payɩ mɔnkɔm mɩ-hɛkʋ taa nɛ monsusi Ɛsɔ Kewiyaɣ tɔm yɔ,
+        mɩ-taa nɔɔyʋ ɛɛtasɩɣ naʋ mɛ-ɛsɩbiye taa kaʋ.
+      sbs: 0.6843
+      gen_sec: 9.81
+      ref_sec: 12.14
+      cer: 0.1524
+      wer: 0.2609
+    bible_00162:
+      source: bible
+      text: Maapɔzʋʋ nɔɔyʋ se ɛlabɩ-m mbʋ́ pʋmʋnaa se palabɩ-m tɩ-yɔɔ yɔ.
+      sbs: 0.6748
+      gen_sec: 4.44
+      ref_sec: 3.18
+      cer: 0.0
+      wer: 0.0
+    bible_00163:
+      source: bible
+      text: Pɔɔlɩ nɩ ḿbʋ́ lɛ, ɛsʋʋ ɛ-cɔlɔ nɛ ɛtɩnɩ ɛ-yɔɔ nesi nɛ ɛsɛɛ Ɛsɔ nɛ ɛ-yɔɔ cɛ.
+      sbs: 0.7192
+      gen_sec: 5.21
+      ref_sec: 5.78
+      cer: 0.0943
+      wer: 0.3125
+    bible_00164:
+      source: bible
+      text: Ɛ́lɛ́ kɔma lɛ, Feliksɩ heyi-i se ɛkɛdɩ-ɩ Krɩstʋ Yesu yɔɔ lidaʋ wɛnaʋ tɔm.
+      sbs: 0.7189
+      gen_sec: 5.12
+      ref_sec: 5.3
+      cer: 0.1091
+      wer: 0.1538
+    bible_00165:
+      source: bible
+      text: Tasɩ-kʋ yebu pɩnaɣ kanɛ nɛ mohuyi kɩ-tɛɛ nɛ manɖʋ huɖe nɛ mana.
+      sbs: 0.6785
+      gen_sec: 4.61
+      ref_sec: 3.94
+      cer: 0.3061
+      wer: 0.8333
+    bible_00166:
+      source: bible
+      text: Me-liu wɛɛ ɖɔɖɔ se halaa esuu wondu ɛzɩma mbʋ́ pʋmʋnaa yɔ, pataaɖɛlɛsɩ niye, pataakɩlɩ pa-tɩ
+        canʋʋ.
+      sbs: 0.7262
+      gen_sec: 7.25
+      ref_sec: 8.54
+      cer: 0.141
+      wer: 0.4375
+    bible_00167:
+      source: bible
+      text: Pʋwɛɛ kpem se ɖɩlɛɣzɩ ɖɛ-wɛtʋ.
+      sbs: 0.6163
+      gen_sec: 2.22
+      ref_sec: 3.1
+      cer: 0.7917
+      wer: 1.0
+    bible_00168:
+      source: bible
+      text: Đooo lɔŋ, ɩɩkpaɣ alɩwaatʋ siŋŋ nɛ ɩla ɛzɩ mbá paañaŋ Ɛsɔ yɔ palakʋʋ mbʋ́ pe-liu wɛɛ yɔ.
+      sbs: 0.6815
+      gen_sec: 6.57
+      ref_sec: 5.9
+      cer: 0.1642
+      wer: 0.4706
+    bible_00169:
+      source: bible
+      text: Kɩyakʋ kɩhɛzʋʋ talaa lɛ, pasʋʋ Yuda ñɩma Ɛsɔ ɖɩsɛyɛ taa nɛ pacaɣ.
+      sbs: 0.6702
+      gen_sec: 4.95
+      ref_sec: 3.74
+      cer: 0.1154
+      wer: 0.3333
+    bible_00170:
+      source: bible
+      text: 'Peeɖe ɛkʋyaa nɛ ɛpɔzɩ-ɩ se: «Đɔ-kɔɔ, pɛwɛ le tɛ?'
+      sbs: 0.7044
+      gen_sec: 3.33
+      ref_sec: 4.5
+      cer: 0.3235
+      wer: 0.7778
+    bible_00171:
+      source: bible
+      text: Ɛsɔ kɔŋ-m haʋ ɖɔɖɔ koboyaɣ ŋgá ɛkɔŋ lɩzʋʋ nɛ ɛwɩlɩ-ɖʋ yɔ.
+      sbs: 0.699
+      gen_sec: 4.44
+      ref_sec: 4.16
+      cer: 0.2273
+      wer: 0.2727
+    bible_00172:
+      source: bible
+      text: Pʋ-yɔɔ ɖɩlɩzɩɣ kʋ-tɔm ńdʋ́ tɩ-tɔbʋʋ mbá Ɛsɔ ha-wɛ-kʋ yɔ.
+      sbs: 0.6128
+      gen_sec: 4.01
+      ref_sec: 3.14
+      cer: 0.3415
+      wer: 0.7778
+    bible_00173:
+      source: bible
+      text: 'Mbʋ́ pʋwɛɛ yɔ lɛ se: ɩɖɔ camɩyɛ ɛzɩ Krɩstʋ Laŋhɛzɩyɛ Tɔm pɔzʋʋ yɔ.'
+      sbs: 0.6836
+      gen_sec: 4.78
+      ref_sec: 4.66
+      cer: 0.098
+      wer: 0.2308
+    bible_00174:
+      source: bible
+      text: Yee ḿbʋ́ lɛ, ɛzɩma ɖɩɩpɩzɩɣ ɖɩhʋʋ kedeŋa yɔɔ cɩnɛ tɔm yɔ?
+      sbs: 0.6913
+      gen_sec: 4.1
+      ref_sec: 4.32
+      cer: 0.3636
+      wer: 0.5455
+    bible_00175:
+      source: bible
+      text: Nɛ weyi ɛ́lɛ́ woba sukuli yɔ?
+      sbs: 0.5627
+      gen_sec: 1.88
+      ref_sec: 3.92
+      cer: 0.3333
+      wer: 0.6667
+    bible_00176:
+      source: bible
+      text: Ɛlɛ́, Fezuu Kiɖeɖeu tii kɩwɛɛ patɩŋa pɔ-yɔɔ nɛ papazɩ yɔɔdʋʋ kʋnʋmɩŋ ndɩ ndɩ weyi kɩha-wɛ
+        ɖoŋ se pɔyɔɔdɩ yɔ.
+      sbs: 0.6308
+      gen_sec: 7.94
+      ref_sec: 6.76
+      cer: 0.2353
+      wer: 0.2632
+    bible_00177:
+      source: bible
+      text: Patalɩ Room nɛ pɩla kɩyakɩŋ naadozo lɛ, Pɔɔlɩ yaa Yuda ñɩma ñʋndɩnaa mbá pɛwɛ peeɖe yɔ
+        ɛ-tɛ.
+      sbs: 0.6851
+      gen_sec: 6.83
+      ref_sec: 5.76
+      cer: 0.1507
+      wer: 0.4118
+    bible_00178:
+      source: bible
+      text: Lɛɛlɛɛyɔ, manɖʋzʋʋ mɩtɩŋa payɩ Ɛsɔ nɛ e-lootiye tɔm pe-nesi taa.
+      sbs: 0.66
+      gen_sec: 4.86
+      ref_sec: 6.42
+      cer: 0.0196
+      wer: 0.1
+    bible_00179:
+      source: bible
+      text: 'Pɩkɛdaa lɛ, Siimɔɔ Pɩyɛ heyi-wɛ se: «Mowoki mankpa kpakpasɩ.'
+      sbs: 0.7181
+      gen_sec: 4.44
+      ref_sec: 4.62
+      cer: 0.1064
+      wer: 0.3333
+    bible_00180:
+      source: bible
+      text: Tʋma wena ŋlakɩ yɔ, apaɣlaa kpem, pɩfɛyɩ yɔɔdʋʋ!
+      sbs: 0.662
+      gen_sec: 3.67
+      ref_sec: 5.2
+      cer: 0.2105
+      wer: 0.625
+    bible_00181:
+      source: bible
+      text: Ńdʋ́ lɛ se ɖooo lɔŋ Kɩpaɣlʋ yabɩ Izrɛɛlɩ ñɩma ñʋʋ Ejiptɩ ɛjaɖɛ taa.
+      sbs: 0.6496
+      gen_sec: 5.03
+      ref_sec: 5.26
+      cer: 0.3019
+      wer: 0.6923
+    bible_00182:
+      source: bible
+      text: Yee paapɛdɩ-kʋ, kɩtaaɖɛɛ ɛzɩ kɩyakɩŋ nasidozo tʋmɩyɛ liidiye yɔ nɛ patayɩ kʋñɔndɩnaa naa
+        we?
+      sbs: 0.6761
+      gen_sec: 7.0
+      ref_sec: 5.96
+      cer: 0.2368
+      wer: 0.5714
+    bible_00183:
+      source: bible
+      text: Ɛlɛ́, Sɔɔjanaa ñʋʋdʋ Lisiyaasɩ tɩkɔm ɛlɛɣ-ɩ nɛ ɖoŋ ɖe-nesi taa nɛ eheyi-ɖʋ se ɖɩkɔɔ ñɔ-cɔlɔ.
+      sbs: 0.6719
+      gen_sec: 7.0
+      ref_sec: 6.8
+      cer: 0.2113
+      wer: 0.5333
+    bible_00184:
+      source: bible
+      text: Weyi ɛ́lɛ́ tisiɣ se ɛsɩm Ɛsɔ Pɩyalʋ yɔ, ɛsɩm ɖɔɖɔ Caa Ɛsɔ.
+      sbs: 0.6742
+      gen_sec: 3.93
+      ref_sec: 4.66
+      cer: 0.2093
+      wer: 0.3333
+    bible_00185:
+      source: bible
+      text: Mbʋ́ pʋyɔɔ yɔ, weyi ɛtɔkɩ nɛ ɛñɔɔ yem nɛ ɛtamaɣzɩ camɩyɛ se ɛna mbʋ́ Kɩpaɣlʋ tomnaɣ kɛwa
+        yɔ, mbʋ́ ɛtɔkɩ nɛ ɛñɔʋ yɔ, ḿbʋ́ kʋʋnɩ ɛ-maɣmaɣ ɛ-tɔm.
+      sbs: 0.6789
+      gen_sec: 10.41
+      ref_sec: 11.1
+      cer: 0.0943
+      wer: 0.2222
+    bible_00186:
+      source: bible
+      text: '› Meheyiɣ-mɩ se ḿbʋ́ ɖɔɖɔ pʋwɛɛ: yee kɩwɛɛkɩm laɖʋ kʋɖʋm nɔɔyʋ ɛlɛɣzɩ wɛtʋ yɔ, Ɛsɔ tiyiyaa
+        laŋa hʋlʋmʋʋ ɖeu.'
+      sbs: 0.6762
+      gen_sec: 7.77
+      ref_sec: 7.62
+      cer: 0.0714
+      wer: 0.2778
+    bible_00187:
+      source: bible
+      text: Ma lɛ, malakɩ-mɩ lɩm sɔʋ sɔnzɩ, ɛnʋ lɛ, ɛkɔŋ-mɩ labʋ sɔnzɩ nɛ Fezuu Kiɖeɖeu ɖoŋ.
+      sbs: 0.6197
+      gen_sec: 5.89
+      ref_sec: 6.42
+      cer: 0.2
+      wer: 0.3333
+    bible_00188:
+      source: bible
+      text: Ɛlɛ́, ɖɩsɩm se alɩwaatʋ ndʋ́ Yesu Krɩstʋ pɩsɩɣ ɛkɔɔ nɛ pana-ɩ yɔ, ɖɩwɛɣ ɛzɩ ɛwɛʋ yɔ, mbʋ́
+        pʋyɔɔ yɔ, ɖɩnaɣ-ɩ ɛzɩ ɛwɛʋ yɔ.
+      sbs: 0.6838
+      gen_sec: 8.28
+      ref_sec: 10.32
+      cer: 0.1932
+      wer: 0.3478
+    bible_00189:
+      source: bible
+      text: » Peeɖe Zaacee titiba nɛ ɛ nɛ Yesu powolo ɛ-tɛ nɛ ɛmʋ-ɩ nɛ laŋhʋlʋmɩyɛ.
+      sbs: 0.6733
+      gen_sec: 5.12
+      ref_sec: 6.44
+      cer: 0.2593
+      wer: 0.4615
+    bible_00190:
+      source: bible
+      text: 'Piyeki nɛ pɛhɛzɩnɩ pa-tʋma: pɔkɔŋ-wɛ hɛyʋʋ a-yɔɔ.'
+      sbs: 0.6632
+      gen_sec: 3.75
+      ref_sec: 4.24
+      cer: 0.1842
+      wer: 0.5714
+    bible_00191:
+      source: bible
+      text: Ɛsɔ ɛlabɩ-mɩ lootiye!
+      sbs: 0.5863
+      gen_sec: 1.62
+      ref_sec: 6.48
+      cer: 0.2941
+      wer: 1.0
+    bible_00192:
+      source: bible
+      text: 'Pɔɔlɩ tasɩ yɔɔdʋʋ se: «Pʋ-yɔɔ mankpaɣ nʋmɔʋ nɛ mɔnkɔɔ mɔñɔtɩnɩ Damaasɩ.'
+      sbs: 0.6862
+      gen_sec: 5.38
+      ref_sec: 5.66
+      cer: 0.2281
+      wer: 0.4545
+    bible_00193:
+      source: bible
+      text: Ɛsɔ wɩlɩnɩ-ɩ-pʋ se ɛwɩlɩ ɛ-tʋmlaɖaa nɛ pana mbʋ́ pʋkɔŋ labʋ alɩwaatʋ pazɩ taa yɔ nɛ ɛtɩŋnɩ
+        e-tiyiyu yɔɔ nɛ ɛwɩlɩ-pʋ ɛ-tʋmlaɖʋ Yohanɛɛsɩ.
+      sbs: 0.7375
+      gen_sec: 10.07
+      ref_sec: 9.84
+      cer: 0.0374
+      wer: 0.1364
+    bible_00194:
+      source: bible
+      text: Ɩtaapɔzɩ mɩ-tɩ tɔm natʋyʋ pʋ-yɔɔ nɛ pʋkɔɔ piliɣti-mɩ.
+      sbs: 0.6103
+      gen_sec: 3.93
+      ref_sec: 4.82
+      cer: 0.3095
+      wer: 0.875
+    bible_00195:
+      source: bible
+      text: Pɛtɛm-wɛ lɩzʋʋ ḿbʋ́ lɛ, powoni-wɛ tiyiyaa ḿbá pɔ-cɔlɔ nɛ paba sɛɛ pɔ-yɔɔ Ɛsɔ nɛ patɩnɩ
+        pɔ-yɔɔ nesi.
+      sbs: 0.7036
+      gen_sec: 7.17
+      ref_sec: 6.42
+      cer: 0.08
+      wer: 0.2353
+    bible_00196:
+      source: bible
+      text: Ɛlɛ́, paa weyi ɛ-maɣmaɣ ɛ-kalɩzaɣ tɩlɩɣnɩ mbʋ́ pʋwɛ ɛ-taa yɔ.
+      sbs: 0.6877
+      gen_sec: 4.61
+      ref_sec: 4.5
+      cer: 0.1778
+      wer: 0.3
+    bible_00197:
+      source: bible
+      text: 'Peeɖe taabalaa tɔm se: yee ḿbʋ́, Pɔɔlɩ nɛ Barnaabaasɩ nɛ pa-taa nabɛyɛ powolo Yeruusalɛm,
+        Krɩstʋ tiyiyaa nɛ ɛ-ŋgbɛyɛ taa sɔsaa pɔ-cɔlɔ nɛ pana-tʋ.'
+      sbs: 0.757
+      gen_sec: 10.84
+      ref_sec: 8.94
+      cer: 0.0174
+      wer: 0.087
+    bible_00198:
+      source: bible
+      text: Ḿbʋ́ ɖɔɖɔ pʋwɛnɩ weyi Fezuu Kiɖeɖeu yeki nɛ ɛwɛnɩ Ɛsɔ wezuu yɔ.
+      sbs: 0.6476
+      gen_sec: 4.44
+      ref_sec: 3.44
+      cer: 0.32
+      wer: 0.3333
+    bible_00199:
+      source: bible
+      text: Pʋwɛɛ se ɖɩsɔɔlɩ ɖama, mbʋ́ pʋyɔɔ yɔ, Ɛsɔ cɔlɔ sɔɔlɩm lɩɣna.
+      sbs: 0.703
+      gen_sec: 4.35
+      ref_sec: 4.5
+      cer: 0.1739
+      wer: 0.3636
 - model: ghananlpcommunity/ghana-tts-72k-noref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   mode: noref
@@ -16780,4 +18457,4 @@ benchmarks:
       ref_sec: 4.5
       cer: 2.2609
       wer: 1.9091
-updated: '2026-10-02'
+updated: '2026-10-09'

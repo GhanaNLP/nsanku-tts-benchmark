@@ -5105,6 +5105,1704 @@ benchmarks:
       ref_sec: 8.04
       cer: 0.0722
       wer: 0.3462
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7143
+  num_scored: 200
+  cer: 0.0488
+  wer: 0.1668
+  accuracy: 0.9512
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8328
+  score: 0.8328
+  per_source:
+    bible:
+      sbs: 0.7143
+      cer: 0.0488
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Yasum ndɛ ɔsɔfɔnɔkɔɛ̃ aye nɛ Kakɔ Kpalɛwa Flee a kĩ kɛnyɛ lima patampa wĩ a kamɛ, kĩ nnɛ́
+        otidziwa lɛbɔa de, mbom boe Ɔlate a lɛbɔa de.
+      sbs: 0.7457
+      gen_sec: 9.9
+      ref_sec: 10.0
+      cer: 0.0288
+      wer: 0.2963
+    bible_00001:
+      source: bible
+      text: Fɔtsa flee kawũna lɔkɔ fuã, foesũ mipi mi akũ kapi wĩ, mina nɛ kukũmanɛ kamɛ, ayekĩ míapuli
+        mibɔa mpaɛ.
+      sbs: 0.719
+      gen_sec: 8.19
+      ref_sec: 7.38
+      cer: 0.0123
+      wer: 0.1579
+    bible_00002:
+      source: bible
+      text: Badi bɛma be basaɛ, babɛbã bati lɛkɛna be basaɛ, ade badi lɛmɛ lákɔã batsɔ̃ nɛ ode lɛgãkanyakɔ̃
+        a sũ.
+      sbs: 0.7228
+      gen_sec: 7.77
+      ref_sec: 8.12
+      cer: 0.0385
+      wer: 0.2632
+    bible_00003:
+      source: bible
+      text: Kitonɛkĩ ntɛ mideĩ bati mpim ewua kĩ batsa mi fɔtsa nɛ Kristo akũ malo ni, ɔlɛga mɔapɛ mideĩ.
+      sbs: 0.7153
+      gen_sec: 7.25
+      ref_sec: 6.16
+      cer: 0.027
+      wer: 0.1111
+    bible_00004:
+      source: bible
+      text: Lɛmɛ ntɛ mi kamɛ badi deĩ adzuni bɛbã ni, Baguma aakpalɛ foe malo kamɛ ɛtsa mi.
+      sbs: 0.7158
+      gen_sec: 5.89
+      ref_sec: 4.68
+      cer: 0.0161
+      wer: 0.0625
+    bible_00005:
+      source: bible
+      text: “Odi nyɛ odi kĩ yaakɛna sɛmɛ kalɛ ɛkpa obisɛ̃ kĩĩ odu nɛ yĩ dĩ akũ ni, yĩ ɛkɛna ɛkpa.
+      sbs: 0.713
+      gen_sec: 6.49
+      ref_sec: 6.76
+      cer: 0.0317
+      wer: 0.1053
+    bible_00006:
+      source: bible
+      text: Ntɛ bɔnya lɔtɔ bɔnaa boe tɔwɔlɛ kamɛ ni, Baguma lɛláadzɛmɔ boe.
+      sbs: 0.7049
+      gen_sec: 4.69
+      ref_sec: 3.46
+      cer: 0.1176
+      wer: 0.2727
+    bible_00007:
+      source: bible
+      text: Ade oti a kĩ ye kamɛ hũhũ a deĩ a wo nɛ be akũ ebo be a!
+      sbs: 0.6577
+      gen_sec: 4.01
+      ref_sec: 14.42
+      cer: 0.0256
+      wer: 0.1176
+    bible_00008:
+      source: bible
+      text: Kĩ boe kadzakũ wo ɔtɔ a, batɛ badonɛ a mɔ batsɔ̃ mɔ babi flee yi boe osi bɛnawo mpo abuĩ.
+      sbs: 0.7413
+      gen_sec: 6.49
+      ref_sec: 7.74
+      cer: 0.0149
+      wer: 0.05
+    bible_00009:
+      source: bible
+      text: Ade be lɛtásum ɔyaɛ kpa ĩye ye kutidu a kĩ bɛmɛ a, ĩye bɛtɛ ye sɔkpɔ̃na nɛ be nnyɛ ĩye nɛ
+        awɛ a.
+      sbs: 0.7378
+      gen_sec: 6.91
+      ref_sec: 7.6
+      cer: 0.1831
+      wer: 0.3913
+    bible_00010:
+      source: bible
+      text: Lɛtsa a kĩ mi mɔawɛ bati a kĩ bitomɔ mi akɛna a, aakɔ mi kɔtɔ.
+      sbs: 0.7135
+      gen_sec: 4.44
+      ref_sec: 4.44
+      cer: 0.0
+      wer: 0.0
+    bible_00011:
+      source: bible
+      text: Lɛmɛ ode fɔtsa a mɔawɛ kɔ̃ afɔliɛ kĩ ɛnɛnɛ ɛbɛ̃ tite akũ ade bɛkɔa bɛkpalɛ foe akũ.
+      sbs: 0.7469
+      gen_sec: 6.23
+      ref_sec: 5.62
+      cer: 0.0
+      wer: 0.0
+    bible_00012:
+      source: bible
+      text: Ɔsa Onesimo dzakũ nɛ nɔ sɛkɛ̃ nɛ lɔkɔ lukũ kamɛ, ayekĩ yaabuki emuniki ɛya nɛ nɔ sɛkɛ̃ ɛyaadzi
+        flee.
+      sbs: 0.7332
+      gen_sec: 7.59
+      ref_sec: 6.3
+      cer: 0.0
+      wer: 0.1053
+    bible_00013:
+      source: bible
+      text: Nɛ mi mɔa awɛ kamɛ malo ni, bavãlɛvã aanɛ, lɔkɔa bɛkpã batɛ badonɛ pii bɛtsãmɛna fɔvã fɔtsa
+        katsa a osi akũ.
+      sbs: 0.757
+      gen_sec: 8.36
+      ref_sec: 7.44
+      cer: 0.0353
+      wer: 0.0476
+    bible_00014:
+      source: bible
+      text: “Mbi mi fɔlɛtsa kĩĩ ayekĩ kawɔlɛ a kĩ kideĩ nɛ yĩ kamɛ a odu kɛna nɛ mi kamɛ, lɔkɔa mi kawɔlɛ
+        a kɛkpɔla.
+      sbs: 0.6972
+      gen_sec: 7.77
+      ref_sec: 7.2
+      cer: 0.038
+      wer: 0.087
+    bible_00015:
+      source: bible
+      text: Ye babɔanɛ a akpalɛ boe tɔwɔlɛ kamɛ, ɛnyɛ boe tɛmaniɛ kĩ tɛlá nfasɔ ayekĩ bɔ́apuli busum Baguma
+        a kĩ edzi nkpã a.
+      sbs: 0.7548
+      gen_sec: 8.45
+      ref_sec: 6.32
+      cer: 0.0112
+      wer: 0.0455
+    bible_00016:
+      source: bible
+      text: Ɛvɛ Barnaba mɔ Saulo bɛnaa ye awã kitonɛkĩ ɛwɛ kĩ yatse Baguma fɔlɛtsa a.
+      sbs: 0.7231
+      gen_sec: 5.63
+      ref_sec: 5.02
+      cer: 0.0339
+      wer: 0.2143
+    bible_00017:
+      source: bible
+      text: Romafɔ a dzɛmɔ yĩ, ade ke bɛwɛ kĩ bafɔnɛ yĩ awɛ kufɛ a, kitonɛkĩ bɛtámɔ lɛtsa a kĩ de akũ
+        baadza bɛkɔ yĩ wuda kɔtɔ.
+      sbs: 0.7607
+      gen_sec: 8.7
+      ref_sec: 7.66
+      cer: 0.0114
+      wer: 0.08
+    bible_00018:
+      source: bible
+      text: Lɛmɛ nnɛ́ boe Ɔlate kalɛ kĩĩ odi lɛgba kito mi sɛkɛ̃ kɛnaa Makedonia mɔ Akaia flee, mbom mi
+        Baguma katɛkado lɛmɛ gba nɛ kakɔ nyɛ kakɔ.
+      sbs: 0.7457
+      gen_sec: 9.81
+      ref_sec: 9.08
+      cer: 0.0095
+      wer: 0.1154
+    bible_00019:
+      source: bible
+      text: Ade kĩ bɛyaa a, ebi be kĩ, “Nwaɛ̃ amɛ, mi a flee minyina ayekĩ ndzi nɛ mi sɛkɛ̃, kito lɔkɔ
+        a kĩ ĩya nɛ Asia tite akũ a kɛyawo nviã kĩĩ a.
+      sbs: 0.7557
+      gen_sec: 10.15
+      ref_sec: 9.82
+      cer: 0.0306
+      wer: 0.0938
+    bible_00020:
+      source: bible
+      text: Mitɛ kɔbɛ̃ kĩĩ kɔa, foesũ mikɔa mikpa faa.
+      sbs: 0.7177
+      gen_sec: 3.33
+      ref_sec: 3.28
+      cer: 0.0312
+      wer: 0.375
+    bible_00021:
+      source: bible
+      text: Lɛmɛ ntɛ bɛtátɛ mi ni, mifɔ̃ mi lukudɔ kawɔ̃na a kimuniki kɛya nɛ mi sɛkɛ̃.
+      sbs: 0.705
+      gen_sec: 5.46
+      ref_sec: 5.06
+      cer: 0.0357
+      wer: 0.2
+    bible_00022:
+      source: bible
+      text: Bɛtalɛ badi boe, bɛbɛ̃ badi nɛ kayite mɔ ɔsaɛ, bɛkɔ badi mɔ apã.
+      sbs: 0.7611
+      gen_sec: 4.69
+      ref_sec: 3.96
+      cer: 0.125
+      wer: 0.2308
+    bible_00023:
+      source: bible
+      text: Lɛtsa a kĩ lɛya nyɛ kĩ Yohanes Mui Ɔwɔlanɛ a bi Herodes kĩ, “Mose mbla a tákpa osi kĩ akɔã
+        Herodia.
+      sbs: 0.7076
+      gen_sec: 7.42
+      ref_sec: 7.02
+      cer: 0.0
+      wer: 0.0952
+    bible_00024:
+      source: bible
+      text: Mitakɛna adzuma nɛ kɔtɔkase sũ, mbom mifɔ̃ futo mi ɔwɔlɛ faa kamɛ.
+      sbs: 0.6998
+      gen_sec: 4.95
+      ref_sec: 5.52
+      cer: 0.0
+      wer: 0.0
+    bible_00025:
+      source: bible
+      text: Ade kakɔ nyɛ kakɔ kĩ ntsã mmini ni, ndɛ Yudafɔ mɔ Helafɔ flee mɔ ɔsĩ mɔ ɔsĩ kĩ bɛdani be tɔwɔlɛ
+        kamɛ bɛya nɛ Baguma sɛkɛ̃, lɔkɔa bɛtɛ boe Ɔlate Yesu bido.
+      sbs: 0.7527
+      gen_sec: 11.43
+      ref_sec: 11.12
+      cer: 0.0168
+      wer: 0.0938
+    bible_00026:
+      source: bible
+      text: Lɛmɛ kĩ fɔnyɛ fɔlɛtsa kamɛ kanyɛ nɛ buĩ mɔ mi tɛmaniɛ akũ sũ ni, mi mɔawɛ minaasa foe kamɛ
+        mimanɛ foe.
+      sbs: 0.6882
+      gen_sec: 7.68
+      ref_sec: 7.76
+      cer: 0.0125
+      wer: 0.2381
+    bible_00027:
+      source: bible
+      text: Fɔfɔ̃ badi lána kanya, ade badi lɛmɛ awuga bavɛ.
+      sbs: 0.732
+      gen_sec: 3.58
+      ref_sec: 3.04
+      cer: 0.027
+      wer: 0.3333
+    bible_00028:
+      source: bible
+      text: Fɔlɔ evũkɔnɔ a nyɛ kɔtɔbii evũkɔnɔ, awã kĩ otsole a adzi a.
+      sbs: 0.6723
+      gen_sec: 4.61
+      ref_sec: 4.78
+      cer: 0.1957
+      wer: 0.5833
+    bible_00029:
+      source: bible
+      text: Kristo kɔa ye nkpã ɛbɔa afɔliɛ nɛ boe lɔlɔ, foesũ kɛnɛ kĩ boe malo bɔkɔa boe nkpã bɔbɔa afɔliɛ
+        nɛ boe bawaɛ̃ lɔlɔ.
+      sbs: 0.7237
+      gen_sec: 8.53
+      ref_sec: 7.36
+      cer: 0.0674
+      wer: 0.087
+    bible_00030:
+      source: bible
+      text: ” Foesũ bɛnawo nɛ ɔkɔlɔ kamɛ bɛnaa, lɛmɛ lɛnyɛ a flee bɛtányɛ lɛtsama.
+      sbs: 0.6848
+      gen_sec: 5.12
+      ref_sec: 4.74
+      cer: 0.0364
+      wer: 0.1667
+    bible_00031:
+      source: bible
+      text: Finyaakĩĩ Baguma boe Ɔlɛga, mɔ boe Ɔlate Yesu bibinya osi bɛkpa boe lɔkɔa bɔya nɛ mi sɛkɛ̃.
+      sbs: 0.736
+      gen_sec: 6.83
+      ref_sec: 6.94
+      cer: 0.0
+      wer: 0.1176
+    bible_00032:
+      source: bible
+      text: Kɔkɔɛ a ɛnyɛ anɛ nɛ batidziwa flee akũ ɛfɔ̃ bɛkakɛna lɛtsa a kĩ bawɛ a.
+      sbs: 0.7302
+      gen_sec: 5.21
+      ref_sec: 4.3
+      cer: 0.0364
+      wer: 0.0667
+    bible_00033:
+      source: bible
+      text: Ndɛ ayekĩ Baguma Katsɛlɛ Kpalɛwa lɛ a, “Baguma api anyansãfɔ nɛ be mɔawɛ kadikanyi kamɛ.
+      sbs: 0.6885
+      gen_sec: 6.66
+      ref_sec: 6.54
+      cer: 0.0
+      wer: 0.1333
+    bible_00034:
+      source: bible
+      text: Bɛpau bati nviã kĩ batɛ badonɛ a akpa be obu paa.
+      sbs: 0.7095
+      gen_sec: 3.67
+      ref_sec: 3.58
+      cer: 0.0
+      wer: 0.0
+    bible_00035:
+      source: bible
+      text: Lɛmɛ otsole kĩ yabɔa mpaɛ ĩye yalɛ Baguma fɔlɛtsa nɛ asɔli kɔla kamɛ, tásui duku nɛ lɔlɔ ni,
+        edo ɔnyɔ kɔnyɔã.
+      sbs: 0.7273
+      gen_sec: 8.19
+      ref_sec: 8.04
+      cer: 0.0349
+      wer: 0.2381
+    bible_00036:
+      source: bible
+      text: Kɔkɔɛ a Baguma tálɔ fubo ɛkpa bikĩ bidzina basɔfɔ a.
+      sbs: 0.699
+      gen_sec: 3.93
+      ref_sec: 3.14
+      cer: 0.0476
+      wer: 0.1
+    bible_00037:
+      source: bible
+      text: Yesu Lɛ Kɔdzɛla Lɛlalɛde Nɛ Ye Wuda Akũ.
+      sbs: 0.6355
+      gen_sec: 2.99
+      ref_sec: 8.8
+      cer: 0.125
+      wer: 0.375
+    bible_00038:
+      source: bible
+      text: Bɔna nɛ awã fuwi fudi ade foe kamɛ a Baguma onukpɛ̃ ɔnyɛnɛ a kĩ bavɛ Agabo to Yudea ɛya a.
+      sbs: 0.7134
+      gen_sec: 6.49
+      ref_sec: 6.38
+      cer: 0.0435
+      wer: 0.1
+    bible_00039:
+      source: bible
+      text: Kĩ bɛtsã mpo akũ bɛnawo Pafo ɔmatɔ a kamɛ a, bɛtsɛlamɔ Yudani odi kĩ yaveli tɔɔta.
+      sbs: 0.7297
+      gen_sec: 6.31
+      ref_sec: 6.42
+      cer: 0.0462
+      wer: 0.3125
+    bible_00040:
+      source: bible
+      text: Finyaakĩĩ ntsɛ́la kɔlaa ntɛ miadzɛmɔ yĩ, ĩye odi bɛbã adzɛmɔ yĩ.
+      sbs: 0.7307
+      gen_sec: 5.21
+      ref_sec: 4.56
+      cer: 0.0392
+      wer: 0.4545
+    bible_00041:
+      source: bible
+      text: -Kitonɛkĩ fɔnyɛ́ yĩ adzuma kĩ madzɛmɔ bikĩ bɛláa asɔli a kamɛ.
+      sbs: 0.6882
+      gen_sec: 4.86
+      ref_sec: 3.88
+      cer: 0.1224
+      wer: 0.4545
+    bible_00042:
+      source: bible
+      text: Bɛmɔ apaafɔ a bɛnya kɔya, etunɔ kĩ yaase be sika ovoe sɔmɔa sɔmɔa kĩ fɔnyɛ luwi mɔa kɔtɔkase,
+        ade edo be nɛ ye waĩ kɔba a kamɛ a.
+      sbs: 0.7099
+      gen_sec: 9.39
+      ref_sec: 10.24
+      cer: 0.0303
+      wer: 0.25
+    bible_00043:
+      source: bible
+      text: Lɛtsa a kĩ mabi mi nɛ ɔtũ kamɛ a, milɛ de nɛ suwa ketee, ade lɛtsa a kĩ minu nɛ kabɛla kamɛ
+        a, mide ke lɛtsã nɛ kanade.
+      sbs: 0.7149
+      gen_sec: 8.53
+      ref_sec: 9.12
+      cer: 0.0455
+      wer: 0.1429
+    bible_00044:
+      source: bible
+      text: Ade be nyɛ Sopater, Piro obi kĩ eto Beroia, Aristarko mɔ Sekundo kĩ bito Tesalonika.
+      sbs: 0.7026
+      gen_sec: 6.4
+      ref_sec: 8.52
+      cer: 0.0597
+      wer: 0.2
+    bible_00045:
+      source: bible
+      text: Hũhũ kpa nɛ́ nɛ bati pii kamɛ mɔ fɔwɔla kabɔa kĩ, “Nɔ nyɛ Baguma obi a!
+      sbs: 0.7354
+      gen_sec: 5.03
+      ref_sec: 6.0
+      cer: 0.0962
+      wer: 0.25
+    bible_00046:
+      source: bible
+      text: Ntɛ bɔlɛ kĩ tɔkpa lɛláa boe akũ ni, kakɛ bɔakɛ boe akũ, ade ɔnɔkɔali a lɛláa boe kamɛ a.
+      sbs: 0.7363
+      gen_sec: 6.49
+      ref_sec: 5.74
+      cer: 0.0149
+      wer: 0.0526
+    bible_00047:
+      source: bible
+      text: ” Lɛmɛ nnɛ́ lɛtsa nyɛ lɛtsa deĩ nfasɔ lɛkpa boe.
+      sbs: 0.6997
+      gen_sec: 3.33
+      ref_sec: 9.0
+      cer: 0.0
+      wer: 0.0
+    bible_00048:
+      source: bible
+      text: Yesu dzakũ nɛ awã ɛnaa Yudafɔ katsɛnakɔ̃ kadi, awã kĩ onyole odi kĩ ye kɔkpɔ ku lɛmɛ na.
+      sbs: 0.7123
+      gen_sec: 6.74
+      ref_sec: 6.46
+      cer: 0.0441
+      wer: 0.1111
+    bible_00049:
+      source: bible
+      text: Ɛtátsa ntsitsemu adima nɛ bɔmɔ́ be kayite, kitonɛkĩ ɛtɛ be nɛ ayekĩ bɛtɛ bido sũ, ade ɛkɔa
+        be tɔkpa ete be ndɛ boe aye a.
+      sbs: 0.7266
+      gen_sec: 8.79
+      ref_sec: 10.14
+      cer: 0.0538
+      wer: 0.32
+    bible_00050:
+      source: bible
+      text: ade foe pɛpɛɛpɛ Baguma manɛ eyi ɛkpa bati a kĩ bawɛ ye a.
+      sbs: 0.6756
+      gen_sec: 4.1
+      ref_sec: 4.6
+      cer: 0.1364
+      wer: 0.2308
+    bible_00051:
+      source: bible
+      text: Kĩ Yesu nu Yohanes fɔlɛtsa kĩĩ a, ewo nɛ ɔkɔlɔ kamɛ ɛdzaku ɛnaa kakɔ kadi kĩ bati lɛláa.
+      sbs: 0.6927
+      gen_sec: 6.66
+      ref_sec: 6.9
+      cer: 0.058
+      wer: 0.1111
+    bible_00052:
+      source: bible
+      text: Mitana ndɛ Kain aye kĩ ɛnya oti kpa a ode, ɛkɔ ye mɔawɛ ɔwaɛ̃ Abel a.
+      sbs: 0.7131
+      gen_sec: 4.86
+      ref_sec: 5.54
+      cer: 0.1176
+      wer: 0.375
+    bible_00053:
+      source: bible
+      text: Yuda a kĩ ɛnyɛ ye ɛkpa a, nyina awã, kitonɛkĩ lɔkɔlɔkɔ Yesu mɔ ye fɔtsa bakɔlɛnɛ a awɛ katsɛna
+        nɛ awã.
+      sbs: 0.7269
+      gen_sec: 7.68
+      ref_sec: 7.34
+      cer: 0.0127
+      wer: 0.0476
+    bible_00054:
+      source: bible
+      text: Bati pii deĩ kĩ be nkpã kadzi kamɛ a fɔ̃ bɛdani bakesĩnɛ bɛkpa Kristo wuda nɛ asendua akũ
+        a.
+      sbs: 0.7308
+      gen_sec: 7.0
+      ref_sec: 5.98
+      cer: 0.0556
+      wer: 0.2632
+    bible_00055:
+      source: bible
+      text: “Finyaakĩĩ ĩnyina kĩ mi a flee kĩ minu kĩ ntsa mi fɔtsa nɛ Baguma lɛgãkanyakɔ̃ akũ, bɔmɔ́
+        mi bɔlaabuki bɔmɔ́ akũ dadaada.
+      sbs: 0.7519
+      gen_sec: 9.47
+      ref_sec: 8.34
+      cer: 0.0106
+      wer: 0.0455
+    bible_00056:
+      source: bible
+      text: Ade Petro mɔ fɔtsa ɔkɔlɛnɛ kĩ a yidza bɛnaa linikɛ a ɔwɛ̃.
+      sbs: 0.6904
+      gen_sec: 4.27
+      ref_sec: 4.08
+      cer: 0.0444
+      wer: 0.25
+    bible_00057:
+      source: bible
+      text: “Foesũ ɛdzakũ nɛ Kaldea tite akũ ɛnadzi nɛ Haram kɛnawo lɔkɔ a kĩ ɔlɛga ku.
+      sbs: 0.6954
+      gen_sec: 5.72
+      ref_sec: 5.54
+      cer: 0.0678
+      wer: 0.2
+    bible_00058:
+      source: bible
+      text: Nkpã a kĩ midzi tɔ̃ a nyɛ kɔkɔbato kpa kabɔa, sukɛna fɔwɛtsa kpa liti katomɛna, bavɛ kawuga,
+        anya kpa kanya, futo kpa kato, mɔ baviɔ̃ kasum kĩ fɔláa mbla adima kayɔ.
+      sbs: 0.7478
+      gen_sec: 12.29
+      ref_sec: 14.76
+      cer: 0.0945
+      wer: 0.1935
+    bible_00059:
+      source: bible
+      text: Kĩ Paulo lɛ kɔdzɛla gɛlɛɛlɛ sũ tida bɔɛ Eutiko, opopo kĩ ede edzi nɛ nfansili.
+      sbs: 0.7174
+      gen_sec: 5.97
+      ref_sec: 5.5
+      cer: 0.1774
+      wer: 0.4667
+    bible_00060:
+      source: bible
+      text: “Finyaakĩĩ, nkɔa mi mado nɛ Baguma awɛ kĩ ɛdãmɛna mi akũ mɔ ye fɔlɛtsa a kĩ fɔabumɛna bati
+        a, fudo mi katɛkado kɔbɛ̃ ayekĩ fɔ́akɛna mi ode fɔtsa banyanɛ ndɛ bikĩ ɛpau ɛkpa ye akũ a aye.
+      sbs: 0.7579
+      gen_sec: 13.91
+      ref_sec: 13.94
+      cer: 0.0
+      wer: 0.0541
+    bible_00061:
+      source: bible
+      text: Fɔnyɛ boe mbla kĩ odima lɛlá osi kĩ yanya foe, mbɔɛntɛ basɔfɔ odi keĩ.
+      sbs: 0.7278
+      gen_sec: 5.38
+      ref_sec: 4.98
+      cer: 0.0909
+      wer: 0.2857
+    bible_00062:
+      source: bible
+      text: Fɔgã ewua kĩĩ flee deĩ botaɛ mɔapɛ, ade baakɔa be kɔbɛ̃ mɔ otumi bɛkpa ɔyaɛ kpa a.
+      sbs: 0.6916
+      gen_sec: 6.23
+      ref_sec: 7.28
+      cer: 0.0159
+      wer: 0.0588
+    bible_00063:
+      source: bible
+      text: Mabi mi kĩ lɛtsa a kĩ lɛtɛ kɔya lɛba Asɔli Kɔla a deĩ nɛ awĩ.
+      sbs: 0.6945
+      gen_sec: 4.52
+      ref_sec: 4.44
+      cer: 0.0217
+      wer: 0.0667
+    bible_00064:
+      source: bible
+      text: Batɛ badonɛ a kĩ bideĩ nɛ awã a kpã Paulo mɔatsɛ mɔatsɛ bɛnamɛna mpo abuĩ.
+      sbs: 0.6996
+      gen_sec: 5.8
+      ref_sec: 4.86
+      cer: 0.0678
+      wer: 0.1333
+    bible_00065:
+      source: bible
+      text: Batɛ badonɛ a kĩ bideĩ nɛ Asia kamɛkamɛ a awɔ̃na mi.
+      sbs: 0.6848
+      gen_sec: 3.93
+      ref_sec: 3.04
+      cer: 0.1
+      wer: 0.1818
+    bible_00066:
+      source: bible
+      text: Titɔ kĩ boe ndɛ Kristo fɔtɔ banyanɛ aye budeĩ osi kĩ bɔavia fɔtsa butomɛna mi sɛkɛ̃ malo ni,
+        bupi boe akũ nɛ mi kamɛ ndɛ obima kĩ yadãmɛna ye babi akũ aye.
+      sbs: 0.7455
+      gen_sec: 11.69
+      ref_sec: 10.38
+      cer: 0.0413
+      wer: 0.125
+    bible_00067:
+      source: bible
+      text: Bɔtɛ budo kĩ boe tɔwɔlɛ kamɛ kpalɛ, kitonɛkĩ bɔawɛ kĩ bɔakɛna fɔtsa wĩ lɔkɔ nyɛ lɔkɔ.
+      sbs: 0.7077
+      gen_sec: 6.57
+      ref_sec: 4.08
+      cer: 0.0
+      wer: 0.0
+    bible_00068:
+      source: bible
+      text: Nwaɛ̃ amɛ, miawɛ minyina kĩ boe kaya nɛ mi sɛkɛ̃ a tánya kɔa.
+      sbs: 0.695
+      gen_sec: 4.44
+      ref_sec: 4.04
+      cer: 0.0222
+      wer: 0.3077
+    bible_00069:
+      source: bible
+      text: Ntɛ mi kamɛ odi amɔ lubo ni, fɔtanya kĩ ɛnyɛ owudini, ĩye oyekpanɛ, ĩye fɔtsa kpa ɔkɛnanɛ
+        ĩye kĩ edo onukpɛ̃ nɛ bati bɛbã fɔlɛtsa kĩ fɔtsɛ́la ye akũ a kamɛ.
+      sbs: 0.725
+      gen_sec: 11.86
+      ref_sec: 13.52
+      cer: 0.075
+      wer: 0.2258
+    bible_00070:
+      source: bible
+      text: Ade evia be kĩ, “Bapopo, mbɔɛɛ mitányɛ kɔfɔabi kudima?
+      sbs: 0.7274
+      gen_sec: 4.1
+      ref_sec: 4.34
+      cer: 0.1429
+      wer: 0.3333
+    bible_00071:
+      source: bible
+      text: Odi nyɛ odi kĩ ɛnyɛ Baguma obi ni, yaádzi kakɛna tɔkpa, kitonɛkĩ Baguma kutidu a deĩ nɛ ye
+        kamɛ.
+      sbs: 0.7149
+      gen_sec: 7.25
+      ref_sec: 7.36
+      cer: 0.0133
+      wer: 0.0526
+    bible_00072:
+      source: bible
+      text: Kaplɛ mɔapɛ miakɔa kaya funitataɛ nviã, lɛmɛ koe kamɛ kamɔapɛ malo látɔ nɛ tite kĩ fɔnyɛ́
+        mi Ɔlɛga nɛ ode a kawɛ.
+      sbs: 0.6927
+      gen_sec: 8.28
+      ref_sec: 8.72
+      cer: 0.0449
+      wer: 0.2273
+    bible_00073:
+      source: bible
+      text: Lɛmɛ Baguma Hũhũ kpa Stefano nyansã mɔ kadikanyi paa foesũ ntɛ ɛlɛ kɔdzɛla ni, be kamɛ odima
+        lápuli katɛ ye atsindze.
+      sbs: 0.6713
+      gen_sec: 9.05
+      ref_sec: 8.18
+      cer: 0.0526
+      wer: 0.1905
+    bible_00074:
+      source: bible
+      text: Baatomɔ boe bawaɛ̃ nviã Barnaba mɔ Paulo, kĩ bɛkɔa be nkpã bɛkpa boe Ɔlate Yesu Kristo ɔsum
+        a.
+      sbs: 0.7046
+      gen_sec: 7.17
+      ref_sec: 6.76
+      cer: 0.0
+      wer: 0.0
+    bible_00075:
+      source: bible
+      text: Kĩ ɛkanyɛ fɔlɛtsa kamɛ nɛ kadzi wĩ, akũ kapi, mɔ Baguma kadzɛ a kĩ kaaya nɛ kunya kamɛ a akũ
+        ni, libe wo Felike paa.
+      sbs: 0.7087
+      gen_sec: 8.62
+      ref_sec: 9.56
+      cer: 0.0114
+      wer: 0.04
+    bible_00076:
+      source: bible
+      text: Boe kawɛ mɔ ɔsĩ nyɛ kĩ mi kamɛ odi nyɛ odi epi ye mbɔdi kabɔa kamɛ lɔmɔ kɛnaawo kawũna, ayekĩ
+        mi awɛ aata lɛtsa a kĩ de akũ miate anɛ a.
+      sbs: 0.7455
+      gen_sec: 9.98
+      ref_sec: 9.54
+      cer: 0.0288
+      wer: 0.0968
+    bible_00077:
+      source: bible
+      text: Kito lɔkɔ a na, ntomɔ batɛ badonɛ a kĩ bɛtsɛ̃ osi vɔɛ̃ a liti, nwɛ kĩ bɛkɔ be.
+      sbs: 0.7497
+      gen_sec: 5.63
+      ref_sec: 5.68
+      cer: 0.0536
+      wer: 0.1667
+    bible_00078:
+      source: bible
+      text: Ade lɛgã a via ye kĩ, ‘Ɔkɔba, nde ɔkɛna owo nɛ awĩ kĩ ɔtádo obolitsɔ̃ kapi atadiɛ?
+      sbs: 0.7199
+      gen_sec: 6.14
+      ref_sec: 5.86
+      cer: 0.0656
+      wer: 0.2353
+    bible_00079:
+      source: bible
+      text: Ɔyaɛ kpa kĩĩ hɛ bati flee, babisɛ̃ mɔ banɔkɔɛ̃, asikafɔ mɔ ahiãfɔ, basate mɔ akũ akũ badzinɛ,
+        kĩ bite sɔkpɔ̃na nɛ be sɔmɔna kɔkpɔ ĩye nɛ be nnyɛ.
+      sbs: 0.7366
+      gen_sec: 11.18
+      ref_sec: 10.02
+      cer: 0.0909
+      wer: 0.3571
+    bible_00080:
+      source: bible
+      text: Ade ye mɔ kɔbã onyukpɛ̃ ɔdzɔlɛnɛ a abinya kakpa ye, ade baveli a anu ye odo a.
+      sbs: 0.7147
+      gen_sec: 5.63
+      ref_sec: 5.56
+      cer: 0.0339
+      wer: 0.0588
+    bible_00081:
+      source: bible
+      text: Ntɛ babi a yɔɔlɛ a banɛna be, kitonɛkĩ kɔba funitsã kakpɔta lɔkɔ wo ɔtɔ.
+      sbs: 0.7159
+      gen_sec: 5.46
+      ref_sec: 5.8
+      cer: 0.1053
+      wer: 0.2857
+    bible_00082:
+      source: bible
+      text: Ayekĩ Kristo mɔ́ lubo ndɛ otidziwa aye a ni, mi malo miakɔa adzuni mɔapɛ a mido mi akũ kɔbɛ̃,
+        kitonɛkĩ odi nyɛ odi kĩ ɛmɔ lubo nɛ sukɛna kamɛ ni, yafɔ̃ tɔkpa kakɛna.
+      sbs: 0.7279
+      gen_sec: 12.12
+      ref_sec: 13.0
+      cer: 0.0079
+      wer: 0.0909
+    bible_00083:
+      source: bible
+      text: Grikifɔ batsole pii kĩ obu deĩ nɛ be akũ mɔ banyole pii lɛmɛ tɛ bido.
+      sbs: 0.7072
+      gen_sec: 5.12
+      ref_sec: 4.76
+      cer: 0.0185
+      wer: 0.0667
+    bible_00084:
+      source: bible
+      text: Ɛkɛna fukĩĩ nɛ Herodia, ɔwaɛ̃ Filipo ɔtsɔ̃ sũ.
+      sbs: 0.7241
+      gen_sec: 3.75
+      ref_sec: 3.74
+      cer: 0.0571
+      wer: 0.25
+    bible_00085:
+      source: bible
+      text: “Nda, Oti Kpĩĩ, katinya kamɛ bati linyína nɔ lɛmɛ yĩ kɔ̃ ĩnyina nɔ, ade bati kĩĩ lɛmɛ nyina
+        kĩ nɔ lido yĩ a.
+      sbs: 0.6937
+      gen_sec: 8.28
+      ref_sec: 8.58
+      cer: 0.0125
+      wer: 0.0435
+    bible_00086:
+      source: bible
+      text: Foesũ nwaɛ̃ amɛ, fɔnya mi kawɛ mɔ ɔsĩ mɔ ɔsĩ kĩ mianyɛ Baguma onukpɛ̃, lɛmɛ mitasua bikĩ balɛ
+        kɔdzɛla nɛ tide ahɔlɔ ahɔlɔ kamɛ a osi.
+      sbs: 0.7264
+      gen_sec: 10.07
+      ref_sec: 8.08
+      cer: 0.0583
+      wer: 0.1538
+    bible_00087:
+      source: bible
+      text: Owei aapuli ɛnya katinya akũ kɛba oti a kĩ ɛtɛ edo kĩ Yesu nyɛ Baguma Obi a?
+      sbs: 0.7093
+      gen_sec: 5.63
+      ref_sec: 5.16
+      cer: 0.0339
+      wer: 0.0588
+    bible_00088:
+      source: bible
+      text: Lɛmɛ Yerusalem nɛ awĩ bɛdɔɔla yĩ, nkɔlɛ fɔtsa nɛ Gamaliel kayɔ.
+      sbs: 0.7156
+      gen_sec: 4.86
+      ref_sec: 5.02
+      cer: 0.098
+      wer: 0.2727
+    bible_00089:
+      source: bible
+      text: Banɛkunɛ mɔ́ fɔkɔ, bikĩ biveliveli yidza bɛtsɛ̃, bikĩ basɔ fɔsɔ ngbã akũ kpalɛ, batɔsĩnɛ anu
+        fɔkɔ, bɛdzɛla banɔkpa bidzi nkpã, ade bɛlamɛna ahiãfɔ Kalɛ Wĩ a kabi a.
+      sbs: 0.7477
+      gen_sec: 12.89
+      ref_sec: 12.7
+      cer: 0.0233
+      wer: 0.0714
+    bible_00090:
+      source: bible
+      text: Kĩ Pentekoste luwi a wo ɔtɔ a, batɛ badonɛ a flee natsɛna nɛ kakɔ mɔapɛ.
+      sbs: 0.7259
+      gen_sec: 5.21
+      ref_sec: 5.52
+      cer: 0.0179
+      wer: 0.0667
+    bible_00091:
+      source: bible
+      text: Kɔa fɔtsa a kĩ onu kĩ ntsa nɛ adansifɔ pii anɛ kamɛ a kado nɛ bikĩ ɔtɛ odo kĩ baapuli bɛtsa
+        bati bɛbã lɛmɛ a awɛ.
+      sbs: 0.7426
+      gen_sec: 8.28
+      ref_sec: 7.74
+      cer: 0.023
+      wer: 0.0385
+    bible_00092:
+      source: bible
+      text: Odi nyɛ odi kĩ Hũhũ a lɛláa ye kamɛ ni, ɛláapuli ɛtɛ futetsa a kĩ futo Baguma Hũhũ a sɛkɛ̃.
+      sbs: 0.7402
+      gen_sec: 6.91
+      ref_sec: 5.14
+      cer: 0.0435
+      wer: 0.15
+    bible_00093:
+      source: bible
+      text: Lɛmɛ kĩ buwo Mileto a Paulo do batɔ nɛ Efeso batɛ badonɛ banɔkɔɛ̃ a sɛkɛ̃ kĩ bɛyaatsɛlamɔ
+        ye nɛ awã.
+      sbs: 0.7243
+      gen_sec: 7.51
+      ref_sec: 7.64
+      cer: 0.0128
+      wer: 0.05
+    bible_00094:
+      source: bible
+      text: Ye bati abɔɛ ye kanaayi nɛ awã luwi daa ayekĩ yaakawã sika katomɛna bikĩ batɛ̃ nɛ awã a sɛkɛ̃.
+      sbs: 0.7086
+      gen_sec: 7.25
+      ref_sec: 7.06
+      cer: 0.0548
+      wer: 0.2105
+    bible_00095:
+      source: bible
+      text: Awã naa, bɔmɔ́ batɛ badonɛ badi, ade bike boe aduli kĩ budzi nɛ be sɛkɛ̃ ɛkwansieda mɔa.
+      sbs: 0.7265
+      gen_sec: 6.49
+      ref_sec: 5.82
+      cer: 0.0448
+      wer: 0.2941
+    bible_00096:
+      source: bible
+      text: Ntɛ miawɛ kĩ miatɛ be fɔlɛtsa mido kɔ̃ ni, minyi kĩ Yohanes nyɛ Eliya a kĩ bɛlɛ biyi kĩ yaanya
+        lɔtɔ ɛya a.
+      sbs: 0.7103
+      gen_sec: 7.85
+      ref_sec: 8.32
+      cer: 0.0864
+      wer: 0.2174
+    bible_00097:
+      source: bible
+      text: Odi nyɛ odi kĩ yakɛna tuwĩ ni, ɛnyɛ oti kpĩĩ ndɛ ayekĩ Kristo lɛmɛ nyɛ oti kpĩĩ a.
+      sbs: 0.7156
+      gen_sec: 6.4
+      ref_sec: 5.28
+      cer: 0.0
+      wer: 0.0
+    bible_00098:
+      source: bible
+      text: Awã naa, Abraham kɔa kawũ kamɛ fɔtsa a kĩ ɛna a flee katsu kawuade a ɛkpa ye.
+      sbs: 0.7564
+      gen_sec: 5.72
+      ref_sec: 5.84
+      cer: 0.0339
+      wer: 0.1765
+    bible_00099:
+      source: bible
+      text: Adansifɔ nviã kĩĩ nyɛ kugua futse nviã mɔ ɔsɛdza titse nviã a kĩ tɛdzɛ̃ nɛ tite Ɔlate a anɛ
+        kamɛ a.
+      sbs: 0.7182
+      gen_sec: 7.59
+      ref_sec: 6.42
+      cer: 0.039
+      wer: 0.1429
+    bible_00100:
+      source: bible
+      text: Ye lɔlɔ tɔlɔ voe fitaa ndɛ kuveli tɛtsã ĩye ndɛ lɛdãglɛglɛ aye, ade ye banebi ata ndɛ fi luwotu
+        aye a.
+      sbs: 0.7331
+      gen_sec: 7.59
+      ref_sec: 7.64
+      cer: 0.125
+      wer: 0.2381
+    bible_00101:
+      source: bible
+      text: Yĩ bawɛnɛ, mitafɔ̃ ayekĩ bɛlamɔ mi kasɔ kadã, milamɔ lubo kamɔ mɔ kalɔɛ lɛkɛna mi wãwã ndɛ
+        lɛtsa vɔɛ̃ kĩ miádã anɛ kɔlaa.
+      sbs: 0.7225
+      gen_sec: 9.47
+      ref_sec: 9.92
+      cer: 0.0745
+      wer: 0.3913
+    bible_00102:
+      source: bible
+      text: Minyína kĩ ntɛ mibɔɛ katinya kamɛ tɔkɔba ni, mikɛna mi akũ Baguma bakesĩnɛ?
+      sbs: 0.7158
+      gen_sec: 5.89
+      ref_sec: 5.42
+      cer: 0.0492
+      wer: 0.1538
+    bible_00103:
+      source: bible
+      text: Nwaɛ̃ amɛ, nɛ mi kalɛ sũ, nkɔa bɔmɔ Apolo fɔlɛtsa kĩĩ nkpa nfantuhũ nɛ lɛtsa a kĩ matsa a
+        akũ, ayekĩ míanu fɔlɛtsa a kĩ balɛ a kayɔ kĩ, “Mitsã nɛ osi kpĩĩ a akũ.
+      sbs: 0.7497
+      gen_sec: 12.37
+      ref_sec: 13.52
+      cer: 0.0417
+      wer: 0.1429
+    bible_00104:
+      source: bible
+      text: Ɔdetɔ́ kamɛ kamɔanɛ, ɔplala kakpɛnɛ, mɔ fɔwɔla kɔɔba kanɛ kato lɛgãkpo a kamɛ.
+      sbs: 0.7293
+      gen_sec: 5.89
+      ref_sec: 4.62
+      cer: 0.0645
+      wer: 0.2308
+    bible_00105:
+      source: bible
+      text: Ntɛ kutitse a flee nyɛ linebi odi ni, kɔláapuli kunu fɔkɔ.
+      sbs: 0.6663
+      gen_sec: 4.27
+      ref_sec: 11.62
+      cer: 0.0435
+      wer: 0.1818
+    bible_00106:
+      source: bible
+      text: Ye mɔawɛ aflimu kĩ ɛnɔnɛ lɛ kɔdzɛla mɔ oti odo, ade esua onukpɛ̃ ɔnyɛnɛ a fɔbɔdamtsa kakɛna
+        osi a.
+      sbs: 0.7077
+      gen_sec: 7.25
+      ref_sec: 8.46
+      cer: 0.039
+      wer: 0.3158
+    bible_00107:
+      source: bible
+      text: Lɛmɛ ntɛ budeĩ nɛ ɔhaĩ kamɛ ndɛ ayekĩ ye malo edeĩ nɛ ɔhaĩ a kamɛ ni, kekɔ̃ bɔakɛna ɔmɔa mɔ
+        boe akũ akũ, ade ye Obi Yesu babɔanɛ a vɔlɛ tɔkpa tidi nyɛ tidi nɛ boe akũ a.
+      sbs: 0.7127
+      gen_sec: 12.54
+      ref_sec: 13.18
+      cer: 0.0
+      wer: 0.0
+    bible_00108:
+      source: bible
+      text: Odima tápuli ewo nɛ Asɔli Kɔla a kamɛ kɛnawo kĩ lubo kamɔ evũkɔnɔ a kĩ ode fɔtɔ banyanɛ evũkɔnɔ
+        a yamɛna a onukpɛ̃ tsua.
+      sbs: 0.7067
+      gen_sec: 9.05
+      ref_sec: 9.1
+      cer: 0.0316
+      wer: 0.25
+    bible_00109:
+      source: bible
+      text: Ade foesũ boe baviɔ̃ lɛláafɔ̃ edzi nkpã a, titɔ kĩ elo nɛ wuda awɛ kamɛ nɛ mpo kamɛ malo.
+      sbs: 0.7085
+      gen_sec: 6.57
+      ref_sec: 7.18
+      cer: 0.0448
+      wer: 0.2105
+    bible_00110:
+      source: bible
+      text: Odo a lɛ kĩ, “Tsɛlɛ lɛtsa a kĩ ɔmɔ́ a kayi, lɔkɔa kakɔa ovoli a kamɛna tɛsɔli a kĩ tideĩ nɛ
+        tɛmatɔ tɛkpale tɛkpale evũkɔnɔ kĩĩ kamɛ.
+      sbs: 0.6724
+      gen_sec: 9.9
+      ref_sec: 9.22
+      cer: 0.0693
+      wer: 0.1852
+    bible_00111:
+      source: bible
+      text: Finyaa budeĩ kɔnɛte kĩ kɔnɛnɛ kɔbɛ̃, kĩ bɔtsɛ̃ koe akũ bɔafuã Baguma.
+      sbs: 0.7438
+      gen_sec: 5.63
+      ref_sec: 5.56
+      cer: 0.0185
+      wer: 0.0833
+    bible_00112:
+      source: bible
+      text: Kutukpabi, banantsue babɔanɛ mɔ ɔnantsue obi kĩ bipila ye batɔ bakɔa kasã nɛ oti a kĩ efĩĩ
+        deĩ nɛ ye akũ, lɔkɔa ye akũ akpalɛ.
+      sbs: 0.7417
+      gen_sec: 9.81
+      ref_sec: 8.44
+      cer: 0.0404
+      wer: 0.16
+    bible_00113:
+      source: bible
+      text: Bɛtsɛlɛ mbusuo dĩ kĩ lasupa Baguma bite nɛ lɔlɔ lidi nyɛ lidi akũ.
+      sbs: 0.7226
+      gen_sec: 5.03
+      ref_sec: 4.3
+      cer: 0.0189
+      wer: 0.0769
+    bible_00114:
+      source: bible
+      text: Ɛnyɛ oti kpalɛwa kĩ nfumusu adima lɛláa ye akũ, ade tɔkpa tidima lɛláa ye akũ a.
+      sbs: 0.7525
+      gen_sec: 6.06
+      ref_sec: 4.94
+      cer: 0.0317
+      wer: 0.125
+    bible_00115:
+      source: bible
+      text: Ade ɛbɔa fɔwɔla kɔɔba ɛlɛ kĩ, “Yesu, Baguma Nɛ Ode Flee Obi!
+      sbs: 0.6748
+      gen_sec: 4.35
+      ref_sec: 6.26
+      cer: 0.0444
+      wer: 0.0833
+    bible_00116:
+      source: bible
+      text: Do bati bɛnaa Yopa bɛnaakpã odi kĩ bavɛ Simon Petro.
+      sbs: 0.6589
+      gen_sec: 4.01
+      ref_sec: 14.84
+      cer: 0.0
+      wer: 0.0
+    bible_00117:
+      source: bible
+      text: Ade ke bɛbɔa fɔwɔla kɔɔba kĩ, “Bɔtámɔ lɛtsa kpa lidima nɛ ye akũ!
+      sbs: 0.7148
+      gen_sec: 4.78
+      ref_sec: 4.68
+      cer: 0.0
+      wer: 0.0
+    bible_00118:
+      source: bible
+      text: Yĩ malo maawɛ ye kalɛ ade maanyɛ yĩ akũ ntsa ye a.
+      sbs: 0.6319
+      gen_sec: 3.75
+      ref_sec: 8.1
+      cer: 0.0263
+      wer: 0.0833
+    bible_00119:
+      source: bible
+      text: Otsole a lo ɛnaa kɔsa kamɛ, awã kĩ Baguma manɛ eyi ɛkpa ye kĩ bɛdã ye akũ fuwi apim mɔa, ɔha
+        nviã mɔ aduesia.
+      sbs: 0.7502
+      gen_sec: 8.19
+      ref_sec: 7.62
+      cer: 0.0361
+      wer: 0.125
+    bible_00120:
+      source: bible
+      text: Ntɛ mi kamɛ odi kɔna kĩ enyina kadi nɛ katinya kĩĩ kamɛ kamɔ onukpɛ̃ ni, kɛfɛta kĩ ɛdani ɛkɛna
+        odzimbifɔ mbom ayekĩ yaakɛna ɔnyansãni nɛ Baguma anɛ.
+      sbs: 0.7506
+      gen_sec: 11.43
+      ref_sec: 9.68
+      cer: 0.0168
+      wer: 0.2222
+    bible_00121:
+      source: bible
+      text: Ade evia be kĩ, “Kĩ mitɛ mido a ni, mitɛ Hũhũ Kpalɛwa a?
+      sbs: 0.7738
+      gen_sec: 4.18
+      ref_sec: 3.96
+      cer: 0.1
+      wer: 0.2308
+    bible_00122:
+      source: bible
+      text: Kĩ ɛlɛ fukĩĩ eyua a nɛ be anɛ kamɛ naa, Baguma bɔɛ ye ɛnamɛna ode, ade ɛyɛla nɛ luflututu
+        kamɛ a.
+      sbs: 0.7189
+      gen_sec: 7.17
+      ref_sec: 7.24
+      cer: 0.027
+      wer: 0.1429
+    bible_00123:
+      source: bible
+      text: Lɛmɛ kĩ mawɛ nɔ kalɛ sũ ni, nkɔa kudulike makpa nɔ mbom.
+      sbs: 0.7233
+      gen_sec: 4.18
+      ref_sec: 3.54
+      cer: 0.0
+      wer: 0.1667
+    bible_00124:
+      source: bible
+      text: Matsã osi nyɛ osi akũ kakɛna ɔmɔa mɔ odi nyɛ odi ayekĩ maavɛlɛ be kamɛ badi nkpa boe Ɔlate.
+      sbs: 0.7276
+      gen_sec: 6.74
+      ref_sec: 5.66
+      cer: 0.0139
+      wer: 0.0526
+    bible_00125:
+      source: bible
+      text: Minu ayekĩ Hiob do ɔwɔlɛ, mɔ lɛtsa a kĩ Baguma kɛna ɛkpa ye nɛ kawũna kamɛ a.
+      sbs: 0.6923
+      gen_sec: 5.72
+      ref_sec: 5.44
+      cer: 0.0508
+      wer: 0.0588
+    bible_00126:
+      source: bible
+      text: Ntɛ bɛkpã mi bɛnamɛna fɔlɛtsa kadzɛkɔ̃ ni, mitaha akũ nɛ lɛtsa a kĩ míalɛ mɔ ayekĩ míadzɛla
+        a akũ.
+      sbs: 0.7103
+      gen_sec: 7.59
+      ref_sec: 8.3
+      cer: 0.0
+      wer: 0.0
+    bible_00127:
+      source: bible
+      text: Maabɔa mpaɛ nɛ hũhũ kamɛ ade maabɔa mpaɛ lɛmɛ nɛ fɔlɛtsa kĩ manu foe kayɔ kamɛ a.
+      sbs: 0.7438
+      gen_sec: 6.06
+      ref_sec: 4.66
+      cer: 0.0156
+      wer: 0.0588
+    bible_00128:
+      source: bible
+      text: Mɔ be kanɛ nɛ ɔkɔlɔ a kamɛ pɛ bati mɔ Yesu biyi ɔsũ.
+      sbs: 0.6225
+      gen_sec: 3.67
+      ref_sec: 8.1
+      cer: 0.1282
+      wer: 0.3077
+    bible_00129:
+      source: bible
+      text: Kĩ Yesu yidza nɛ mpaɛbɔ kamɛ a, emuniki ɛnaa ye fɔtsa bakɔlɛnɛ a sɛkɛ̃, ɛnamɔ be kĩ bɛwaa
+        tida nɛ ayɔlɔhɔ a kĩ epi be a sũ.
+      sbs: 0.6552
+      gen_sec: 9.05
+      ref_sec: 8.28
+      cer: 0.0753
+      wer: 0.2222
+    bible_00130:
+      source: bible
+      text: Stefano kĩ Baguma kɔbɛ̃ mɔ sɛmɛ kalɛ yi ye kamɛ a, kɛna awãwã mɔ nsɛntsɛlɛni fɔtsa pii nɛ
+        bati a kamɛ.
+      sbs: 0.7318
+      gen_sec: 7.59
+      ref_sec: 7.6
+      cer: 0.0506
+      wer: 0.1905
+    bible_00131:
+      source: bible
+      text: Nɛ kɔkɔ lɔkɔ lidi kamɛ ni, Baguma támɔ mi kɔnya, lɛmɛ finyaa ɛmɔ mi kɔnya.
+      sbs: 0.7317
+      gen_sec: 5.38
+      ref_sec: 5.82
+      cer: 0.0
+      wer: 0.0
+    bible_00132:
+      source: bible
+      text: Bati a kĩ bite be ɔyaɛ kpa sɔkpɔ̃na a, mɔ be a kĩ bisum ye kutidu mɛwa a nɛ́ fɔɔkpa kĩ fɔawo,
+        kĩ fɔakũ lɛmɛ nɛ akũ.
+      sbs: 0.7534
+      gen_sec: 8.36
+      ref_sec: 9.38
+      cer: 0.0476
+      wer: 0.1481
+    bible_00133:
+      source: bible
+      text: Ntɛ mipi yĩ tɛbla a midomɔ akũ ni, míana nɛ yĩ ɔdɔ a kamɛ ndɛ ayekĩ yĩ malo mpi Nda mbla ndomɔ
+        akũ fɔfɔ̃ ye ɔdɔ deĩ nɛ yĩ kamɛ a.
+      sbs: 0.7101
+      gen_sec: 9.56
+      ref_sec: 8.96
+      cer: 0.0729
+      wer: 0.1935
+    bible_00134:
+      source: bible
+      text: Lɛmɛ ntɛ yabɔa mpaɛ ni, kɛnɛ kĩ ɛtɛ edo, kĩ ɛtatɛ atsindze nɛ ye kamɛ.
+      sbs: 0.7312
+      gen_sec: 5.12
+      ref_sec: 5.34
+      cer: 0.0377
+      wer: 0.2
+    bible_00135:
+      source: bible
+      text: Lɛmɛ Baguma amɔ mfumsu nɛ ye bati akũ kĩ ɛlɛ kĩ.
+      sbs: 0.7193
+      gen_sec: 3.67
+      ref_sec: 3.38
+      cer: 0.0541
+      wer: 0.0909
+    bible_00136:
+      source: bible
+      text: Ade bati a dza bɛkadã anɛ kĩ yaawumi ĩye yaaka ɛtɔ deedimɔapɛ eku.
+      sbs: 0.6972
+      gen_sec: 5.03
+      ref_sec: 5.28
+      cer: 0.0755
+      wer: 0.5385
+    bible_00137:
+      source: bible
+      text: Lɛmɛ mɔ ye kalɛ nkaɛ kawũna pɛ, be flee bɔbɔa fɔwɔla kɔɔba kĩ, “Aa!
+      sbs: 0.7027
+      gen_sec: 4.86
+      ref_sec: 12.48
+      cer: 0.08
+      wer: 0.3571
+    bible_00138:
+      source: bible
+      text: ” Abraham kɔna kĩ Baguma aapuli ɛdzɛla Isak etomɛna kanɔkpa malo.
+      sbs: 0.6988
+      gen_sec: 4.86
+      ref_sec: 3.6
+      cer: 0.0
+      wer: 0.0
+    bible_00139:
+      source: bible
+      text: Mbi bikĩ bɛbɔɛ kalɛ nɛ ye akũ a ku kĩ bɛkɔa ke bɛma nɔ.
+      sbs: 0.6992
+      gen_sec: 4.01
+      ref_sec: 3.76
+      cer: 0.3171
+      wer: 0.5714
+    bible_00140:
+      source: bible
+      text: Ntɛ ɔpaani kĩ ɛnyɛ́ baveli ɔkpãnɛ, ade ɛnyɛ́ baveli a ɔlate lɛmɛ mɔ́ kalikii kaya ni, yalo
+        kafɔnɛ baveli a.
+      sbs: 0.7097
+      gen_sec: 7.77
+      ref_sec: 8.06
+      cer: 0.0244
+      wer: 0.1
+    bible_00141:
+      source: bible
+      text: Kĩ fɔtɔ banyanɛ a nu foe a bilo bɛnaa Likaonia tɛmatɔ a kĩ tɛnyɛ Listra mɔ Derbe mɔ tikĩ tideĩ
+        nɛ kayite a kamɛ.
+      sbs: 0.6963
+      gen_sec: 8.28
+      ref_sec: 8.98
+      cer: 0.0227
+      wer: 0.0833
+    bible_00142:
+      source: bible
+      text: Mite anɛ nɛ kalɛ a kĩ mbi mi akũ a kĩ, ‘Ɔsumunɛ lɛbɛ́ ye ɔlate.
+      sbs: 0.7159
+      gen_sec: 4.44
+      ref_sec: 4.74
+      cer: 0.0667
+      wer: 0.0667
+    bible_00143:
+      source: bible
+      text: Kĩ Petro mɔ Yohanes atɛ̃ a, ɛwã be sika.
+      sbs: 0.715
+      gen_sec: 2.99
+      ref_sec: 3.1
+      cer: 0.0
+      wer: 0.0
+    bible_00144:
+      source: bible
+      text: Bɛbɔa mbɔdi bɛwɛ osi kĩ batsã biwo nɛ kɔla a kamɛ bɛkɔa oti a biyi nɛ Yesu anɛ kamɛ.
+      sbs: 0.7258
+      gen_sec: 6.06
+      ref_sec: 5.82
+      cer: 0.0154
+      wer: 0.0526
+    bible_00145:
+      source: bible
+      text: “Foesũ nɛ yĩ, Yakobo, kakɔna onukpɛ̃ ni, kɛtánɛ kĩ bɔaha bikĩ bɛnyɛ́ Yudafɔ a kĩ bɛkɔa be
+        akũ bakpa Baguma a.
+      sbs: 0.7176
+      gen_sec: 8.28
+      ref_sec: 7.66
+      cer: 0.0122
+      wer: 0.0476
+    bible_00146:
+      source: bible
+      text: Nnɛ́ Beelzebul kɔbɛ̃ nnɛɛ, mbom Baguma Hũhũ kɔbɛ̃ nnɛɛ mablɔmɛna hũhũ kpa, kĩ fɔatsa kĩ Baguma
+        lɛgãkanya a ya nɛ mi akũ kɔkɔɛ.
+      sbs: 0.6958
+      gen_sec: 9.9
+      ref_sec: 10.26
+      cer: 0.0612
+      wer: 0.2609
+    bible_00147:
+      source: bible
+      text: Ntɛ sɛmɛ pi otsole ni, yawo ɔblɔ kitonɛkĩ ye lubo kamɔ ɔdɔũ a bɔa.
+      sbs: 0.6364
+      gen_sec: 4.86
+      ref_sec: 10.98
+      cer: 0.1373
+      wer: 0.2143
+    bible_00148:
+      source: bible
+      text: Kɛnɛ kĩ boe flee a kĩ bubo anɛ nɛ Baguma Hũhũ kamɛ a bɔna adzuni kĩĩ odu.
+      sbs: 0.708
+      gen_sec: 5.63
+      ref_sec: 4.6
+      cer: 0.0
+      wer: 0.1176
+    bible_00149:
+      source: bible
+      text: Be kasui nyɛ kĩ baadzi ye osi lɔkɔa ntɛ yatɛ̃ a bɛkɔ ye.
+      sbs: 0.6774
+      gen_sec: 4.01
+      ref_sec: 4.14
+      cer: 0.0476
+      wer: 0.3846
+    bible_00150:
+      source: bible
+      text: Nuwĩ yaapuli ɛkɛna fɔtsa ɛba yĩ fude a, kitonɛkĩ manaa Nda sɛkɛ̃.
+      sbs: 0.6659
+      gen_sec: 5.03
+      ref_sec: 14.92
+      cer: 0.0196
+      wer: 0.0833
+    bible_00151:
+      source: bible
+      text: Ade finyaa ntɛ Levifɔ tɔsɔfɔ kanya a kakpɔla kɛkpɔla ni, kufɛ fɔtásĩ kĩ ɔsɔfɔ bɛbã ndɛ Melkizedek
+        aye ebuki ɛnɛ, kĩ nnɛ́ Aron kasinu a kamɛ eto.
+      sbs: 0.7524
+      gen_sec: 10.84
+      ref_sec: 10.32
+      cer: 0.0877
+      wer: 0.2593
+    bible_00152:
+      source: bible
+      text: Kĩ kade sila kɛdɔ pɛ, batɛ badonɛ a kpã Paulo mɔ Sila bilo bɛnaa Beroia.
+      sbs: 0.73
+      gen_sec: 5.38
+      ref_sec: 5.5
+      cer: 0.125
+      wer: 0.2667
+    bible_00153:
+      source: bible
+      text: ” Ade aye bɛtsɛlɛ nɛ Baguma Onukpɛ̃ Ɔnyɛnɛ Yesaya ovoli a kamɛ kĩ.
+      sbs: 0.7182
+      gen_sec: 4.78
+      ref_sec: 4.42
+      cer: 0.0
+      wer: 0.0
+    bible_00154:
+      source: bible
+      text: Odi nyɛ odi kĩ yakɛna nɛ Nda nɛ ode kawɛ akũ ni, ade ye nyɛ nwaɛ̃nyole, mɔ nwaɛ̃tsole mɔ mma
+        a.
+      sbs: 0.7301
+      gen_sec: 6.83
+      ref_sec: 9.62
+      cer: 0.0714
+      wer: 0.1429
+    bible_00155:
+      source: bible
+      text: Ade ye aanyɛ ɔtũ kamɛ fɔtsa bɛlawa mɔ bati kakɔna a kĩ bɛkɔa bɛkɔla a kanya a.
+      sbs: 0.729
+      gen_sec: 5.72
+      ref_sec: 5.48
+      cer: 0.0492
+      wer: 0.1176
+    bible_00156:
+      source: bible
+      text: ” Hũhũ a bɔɛ oti a emuni nɛ tite nɛ bati a anɛ kamɛ na, ɛnɛ nɛ ye kamɛ, ade lɛtsama tákɛna
+        ye a.
+      sbs: 0.7345
+      gen_sec: 6.57
+      ref_sec: 7.24
+      cer: 0.0435
+      wer: 0.087
+    bible_00157:
+      source: bible
+      text: Foe kayɔ lɛmɛ atsa kĩ bikĩ bɛtɛ Kristo bido fɔmɔ biku ni, bɛtána katɛ.
+      sbs: 0.7253
+      gen_sec: 5.21
+      ref_sec: 4.3
+      cer: 0.0364
+      wer: 0.1429
+    bible_00158:
+      source: bible
+      text: Katɛkado ɛkɔa ɛnanya ɔnɔvɔɛ̃ nɛ tite a kĩ Baguma lɛ eyi yaakpa ye a akũ.
+      sbs: 0.7377
+      gen_sec: 5.38
+      ref_sec: 4.16
+      cer: 0.0179
+      wer: 0.2
+    bible_00159:
+      source: bible
+      text: Baguma Adzuma Bakɛnanɛ Bɔanɛ.
+      sbs: 0.5712
+      gen_sec: 2.3
+      ref_sec: 3.38
+      cer: 0.24
+      wer: 1.0
+    bible_00160:
+      source: bible
+      text: Nɛ Kawɛya Luwi akũ a, ɛnaa Yudafɔ katsɛnakɔ̃ ndɛ ayekĩ yawɛ kakɛna a.
+      sbs: 0.748
+      gen_sec: 5.21
+      ref_sec: 5.98
+      cer: 0.0185
+      wer: 0.0769
+    bible_00161:
+      source: bible
+      text: Nviã kĩĩ badzɛmɔ yĩ kitonɛkĩ ntɛ banɔkpa kabuki kayidza kadzi nkpã a ndo sũ!
+      sbs: 0.7368
+      gen_sec: 6.23
+      ref_sec: 5.24
+      cer: 0.0161
+      wer: 0.0714
+    bible_00162:
+      source: bible
+      text: Ade ke ɛkpa be mbuayɛ kĩ, “Nɔ a kĩ odeĩ tɛtadiɛ tiwo te nviã ni, kɔa amɔa kakpa odi kĩ ɛlá
+        adima.
+      sbs: 0.7195
+      gen_sec: 7.17
+      ref_sec: 12.14
+      cer: 0.0139
+      wer: 0.0455
+    bible_00163:
+      source: bible
+      text: Yudafɔ basɔfɔnɔkɔɛ̃ a kpa yĩ kɔbɛ̃ kĩ mpili bati kpalɛwa pii ndo nɛ kɔla kamɛ nɛ Yerusalem.
+      sbs: 0.7245
+      gen_sec: 6.83
+      ref_sec: 5.78
+      cer: 0.0139
+      wer: 0.0588
+    bible_00164:
+      source: bible
+      text: Nɛ kĩ Baguma mɔ yĩ kɔnya sũ ni, nkɛna adzuma ndɛ kɔla okenɛ wĩ.
+      sbs: 0.723
+      gen_sec: 4.78
+      ref_sec: 3.34
+      cer: 0.0625
+      wer: 0.1429
+    bible_00165:
+      source: bible
+      text: Bɔawɛ Baguma kalɛ kitonɛkĩ ye lɛnya lɔtɔ ɛwɛ boe kalɛ.
+      sbs: 0.6837
+      gen_sec: 4.1
+      ref_sec: 3.9
+      cer: 0.0909
+      wer: 0.2
+    bible_00166:
+      source: bible
+      text: Bavɛ ye Apolo ade bɛma ye nɛ Aleksandria a.
+      sbs: 0.6761
+      gen_sec: 3.07
+      ref_sec: 3.36
+      cer: 0.2353
+      wer: 0.4444
+    bible_00167:
+      source: bible
+      text: Mpi mbla a ndo mɔ akũ mɔ ɔsĩ mɔ ɔsĩ ade foesũ ĩyidza ndza nɛ asɔli a akũ a.
+      sbs: 0.7147
+      gen_sec: 5.63
+      ref_sec: 4.26
+      cer: 0.0
+      wer: 0.0
+    bible_00168:
+      source: bible
+      text: Fɔtsa a kĩ fudeĩ nɛ awã nyɛ sika ngbã atɛnyɛ a kĩ ye akũ bate lifii ɔnyɔ, apam adakã kĩ bidue
+        mɔ sika ngbã.
+      sbs: 0.7451
+      gen_sec: 8.28
+      ref_sec: 8.42
+      cer: 0.0366
+      wer: 0.0833
+    bible_00169:
+      source: bible
+      text: Ɛfɔ̃ fi malo nɛ futo ode fɔyatɔ nɛ tite akũ nɛ bati anɛ.
+      sbs: 0.7077
+      gen_sec: 4.01
+      ref_sec: 3.66
+      cer: 0.3571
+      wer: 0.5385
+    bible_00170:
+      source: bible
+      text: Ye onukpɛ̃ katsua kĩĩ fɔ̃ bati a, banɔkɔɛ̃ a, mɔ mbla batsanɛ a na kalɔkpa paa, ade Yudafɔ
+        mbla batsanɛ a yapi Stefano bɛnamɛna Ɔmaĩ banɔkɔɛ̃ katsɛnakɔ̃ a.
+      sbs: 0.7129
+      gen_sec: 11.69
+      ref_sec: 11.86
+      cer: 0.0168
+      wer: 0.0357
+    bible_00171:
+      source: bible
+      text: Fusĩ kĩ kasɛ̃ kɛna nɛ mi kamɛ ayekĩ bɔ́amɔ yededeede bikĩ badi ɔnɔkɔali nɛ mi kamɛ.
+      sbs: 0.7244
+      gen_sec: 6.31
+      ref_sec: 5.98
+      cer: 0.1538
+      wer: 0.25
+    bible_00172:
+      source: bible
+      text: Lɛmɛ nɛ fuwi lukũ kamɛ ni, Baguma aakɔa Hũhũ Kpalɛwa ɛwɔla mi.
+      sbs: 0.6967
+      gen_sec: 4.78
+      ref_sec: 4.76
+      cer: 0.0
+      wer: 0.0
+    bible_00173:
+      source: bible
+      text: Yaakɔa kɔbɛ̃ a kĩ kɔfɔ̃ yapuli kanya lɛtsa nyɛ lɛtsa akũ a, ɛdani boe sukɛna kĩ sɛlá kɔbɛ̃
+        kĩĩ siketi mɔ ye sukɛna kpalɛwa a.
+      sbs: 0.739
+      gen_sec: 9.47
+      ref_sec: 9.76
+      cer: 0.0208
+      wer: 0.08
+    bible_00174:
+      source: bible
+      text: Ntɛ mi malo mikpa boe katinya kamɛ fɔtsa a ni, miyɛla osi?
+      sbs: 0.7413
+      gen_sec: 4.18
+      ref_sec: 3.5
+      cer: 0.0222
+      wer: 0.0833
+    bible_00175:
+      source: bible
+      text: ” Nɛ kĩ ɛkɔna kĩ Paulo aakpa ye litsedi sũ ni, yado bavɛ ye mɔatsɛ mɔatsɛ bɛmɔ ye balɔmɛna.
+      sbs: 0.7305
+      gen_sec: 6.66
+      ref_sec: 6.2
+      cer: 0.0143
+      wer: 0.0556
+    bible_00176:
+      source: bible
+      text: Ndã be akũ kĩ be kamɛ odima táyɛla, mbɔɛntɛ oti a kĩ kɛnɛ kĩ ɛyɛla a, ayekĩ Katsɛlɛ Kpalɛwa
+        fɔlɛtsa a aaya nɛ foe kamɛ.
+      sbs: 0.7087
+      gen_sec: 9.05
+      ref_sec: 8.04
+      cer: 0.0543
+      wer: 0.16
+    bible_00177:
+      source: bible
+      text: Foesũ mitavila, kitonɛkĩ mitɛ kɔya miba funitataɛ beblebee.
+      sbs: 0.7013
+      gen_sec: 4.78
+      ref_sec: 4.54
+      cer: 0.04
+      wer: 0.25
+    bible_00178:
+      source: bible
+      text: Yesu lɛmɛ via be kĩ, “Nde sũ mi malo miafum Baguma mbla mɔ miakɛna nɛ miawɛ fɔtsa katsa a
+        akũ?
+      sbs: 0.7092
+      gen_sec: 6.83
+      ref_sec: 7.86
+      cer: 0.0
+      wer: 0.1
+    bible_00179:
+      source: bible
+      text: Maasã tɔnɔ nɛ hũhũ kamɛ ade maasã tɔnɔ lɛmɛ mɔ fɔlɛtsa kĩ manu foe kayɔ a kamɛ.
+      sbs: 0.7337
+      gen_sec: 6.06
+      ref_sec: 5.46
+      cer: 0.0
+      wer: 0.0
+    bible_00180:
+      source: bible
+      text: Ade awã ɛkatɛ bati a flee kĩ bɛkaya nɛ ye sɛkɛ̃ a.
+      sbs: 0.6747
+      gen_sec: 3.67
+      ref_sec: 3.32
+      cer: 0.0
+      wer: 0.0
+    bible_00181:
+      source: bible
+      text: Nɛ fuwi fudi liti ni, Paulo bi Barnaba kĩ, “Fɔ̃ bumuniki bɔnaasɛla boe bawaɛ̃ nɛ tɛmatɔ a
+        kĩ bɔtsã te kamɛ bude lɛtsã nɛ boe Ɔlate kalɛ a akũ a, lɔkɔa bɔdã ni nde bidzi.
+      sbs: 0.7444
+      gen_sec: 12.54
+      ref_sec: 11.84
+      cer: 0.0703
+      wer: 0.2857
+    bible_00182:
+      source: bible
+      text: Biyi ye osi bɛnawo ɔkɔlɔ a ɔwɛ̃ nɛ ɔwɔ abuĩ.
+      sbs: 0.6913
+      gen_sec: 3.16
+      ref_sec: 5.02
+      cer: 0.1212
+      wer: 0.6
+    bible_00183:
+      source: bible
+      text: Mɔ nde fɔya mɔ bɔanu kĩ bɛlamɛna kɔdzɛla kalɛ nɛ boe tide kamɛ?
+      sbs: 0.6838
+      gen_sec: 4.61
+      ref_sec: 5.24
+      cer: 0.04
+      wer: 0.1538
+    bible_00184:
+      source: bible
+      text: Lɛmɛ Baguma kã ye anɛ nɛ ye tɔkpa a sũ.
+      sbs: 0.7227
+      gen_sec: 2.82
+      ref_sec: 3.04
+      cer: 0.1724
+      wer: 0.4
+    bible_00185:
+      source: bible
+      text: Awã na bidzi ɔkɔlɔ binyina bɛnaa Kipro tite kĩ mui tsua bisinya te a akũ.
+      sbs: 0.7083
+      gen_sec: 5.55
+      ref_sec: 5.58
+      cer: 0.0517
+      wer: 0.1333
+    bible_00186:
+      source: bible
+      text: Fɔmɔ baabɔa katinya ni, Baguma Kalɛ a deĩ kɔkɔɛ.
+      sbs: 0.731
+      gen_sec: 3.67
+      ref_sec: 3.68
+      cer: 0.0526
+      wer: 0.2222
+    bible_00187:
+      source: bible
+      text: Baguma fɔlɛtsa a nɛ Kristo akũ a sipi nɛ mi kamɛ paa, kĩ foesũ mitɛ hũhũ kamɛ futetsa fudi
+        nyɛ fudi kĩ fusĩ mi, nɛ kĩ midzi miadzɔlɛ boe Ɔlate Yesu Kristo kaya a.
+      sbs: 0.7313
+      gen_sec: 12.2
+      ref_sec: 10.82
+      cer: 0.0317
+      wer: 0.1471
+    bible_00188:
+      source: bible
+      text: Ɔyaɛ kpa a kĩ edzi tɔ̃, lɛmɛ ebuki ɛláa a nyɛ lɛgã lɛlɛ̃de, kĩ lɛnyɛ fɔgã evũkɔnɔ a kamɛ ɔmɔa
+        kĩ laanaa bɛwɔla de.
+      sbs: 0.6925
+      gen_sec: 8.62
+      ref_sec: 9.68
+      cer: 0.0581
+      wer: 0.2083
+    bible_00189:
+      source: bible
+      text: Foesũ ade lɛtsa a kĩ mabi mi nɛ funitsã kĩ bɛkɔa bɛbɔa afɔliɛ bɛkpa baviɔ̃ akũ a.
+      sbs: 0.6961
+      gen_sec: 6.23
+      ref_sec: 4.46
+      cer: 0.0
+      wer: 0.0
+    bible_00190:
+      source: bible
+      text: Lɛmɛ takɔna ablanda nɛ Asɔli Kɔla akũ a, kitonɛkĩ bɛkɔa awã bɛkpa amamufɔ.
+      sbs: 0.6598
+      gen_sec: 5.8
+      ref_sec: 5.3
+      cer: 0.0167
+      wer: 0.0769
+    bible_00191:
+      source: bible
+      text: Paulo nyɛ onukpɛ̃ ɛlɛ kĩ, “Ntáfum Yudafɔ mbla ĩye Yudafɔ Asɔli Kɔla a ĩye Lɛgãnɔkɔɛ̃ Kaisare.
+      sbs: 0.705
+      gen_sec: 7.25
+      ref_sec: 6.76
+      cer: 0.0411
+      wer: 0.1875
+    bible_00192:
+      source: bible
+      text: Ɛláapuli edzi ɛkakɛna tɔkpa kitonɛkĩ Baguma nyɛ ye Ɔlɛga.
+      sbs: 0.6742
+      gen_sec: 4.44
+      ref_sec: 3.94
+      cer: 0.0625
+      wer: 0.2222
+    bible_00193:
+      source: bible
+      text: Paulo Buki Ɛlɛ Kɔdzɛla Nɛ Hũhũ Kpalɛwa Futetsa a Akũ.
+      sbs: 0.5999
+      gen_sec: 4.18
+      ref_sec: 3.52
+      cer: 0.0233
+      wer: 0.1
+    bible_00194:
+      source: bible
+      text: ” Adeke Yesu te awɛ nɛ be akũ ehila be, ade ɛdzakũ nɛ awã a.
+      sbs: 0.7009
+      gen_sec: 4.27
+      ref_sec: 4.5
+      cer: 0.0465
+      wer: 0.2857
+    bible_00195:
+      source: bible
+      text: ” Nnɛ́ kĩ ɛtsɛla ahiãfɔ akũ sũ ɛlɛ fukĩĩ, mbom oyekpanɛ yanɛ.
+      sbs: 0.6945
+      gen_sec: 4.78
+      ref_sec: 4.9
+      cer: 0.0652
+      wer: 0.0909
+    bible_00196:
+      source: bible
+      text: Fɔlɛtsa kĩĩ dani kavɛlɛ nɛ be kamɛ, ade bɛsɛ̃ be akũ a.
+      sbs: 0.7468
+      gen_sec: 4.18
+      ref_sec: 3.58
+      cer: 0.0732
+      wer: 0.0833
+    bible_00197:
+      source: bible
+      text: Ke liti a, kĩ fɔtsa bakɔlɛnɛ a lidede lamɛna kapɔ kabu a, ɔdzɛ yawo nɛ Yudafɔ a kĩ balɛ Tigriki
+        mɔ Yudafɔ mɔawɛ a kayite.
+      sbs: 0.7189
+      gen_sec: 8.79
+      ref_sec: 9.96
+      cer: 0.0106
+      wer: 0.04
+    bible_00198:
+      source: bible
+      text: Ɛnyɛ lubo a kĩ bɛlɛ biyi kĩ Kristo aayamɔ, mɔ ayekĩ yaabuki eyidza edzi nkpã ɛtsa.
+      sbs: 0.7197
+      gen_sec: 6.31
+      ref_sec: 6.5
+      cer: 0.0
+      wer: 0.125
+    bible_00199:
+      source: bible
+      text: Ye mui a kamɛ kpalɛ ndɛ ahuhɔɛ aye, ade bɛkanɛ kato Baguma mɔ Kavelibi a lɛgãkpo a kamɛ, ade
+        batɛ̃ nɛ ɔmatɔ a ɔblɔnu kayite a.
+      sbs: 0.7603
+      gen_sec: 9.13
+      ref_sec: 8.04
+      cer: 0.0515
+      wer: 0.1923
 - model: k2-fsa/OmniVoice-ref
   model_url: https://huggingface.co/k2-fsa/OmniVoice
   mode: ref
@@ -16984,4 +18682,4 @@ benchmarks:
       ref_sec: 8.04
       cer: 0.2165
       wer: 0.7692
-updated: '2026-10-01'
+updated: '2026-10-09'

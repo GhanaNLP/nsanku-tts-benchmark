@@ -3395,6 +3395,1698 @@ benchmarks:
       ref_sec: 10.82
       cer: 0.0694
       wer: 0.2381
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7431
+  num_scored: 200
+  cer: 0.087
+  wer: 0.2592
+  accuracy: 0.913
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.828
+  score: 0.828
+  per_source:
+    bible:
+      sbs: 0.7431
+      cer: 0.087
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Fi dan pai nisa a tiri ku fi teeri gigelika ate fi kan ŋman nye dila.
+      sbs: 0.7717
+      gen_sec: 6.4
+      ref_sec: 7.42
+      cer: 0.0755
+      wer: 0.1875
+    bible_00001:
+      source: bible
+      text: Dila nyiŋ Wen a dan bo ba buusa ayen ba lo ya, ba an ŋman baga a weeni wari ale wa.
+      sbs: 0.6959
+      gen_sec: 7.59
+      ref_sec: 7.08
+      cer: 0.0328
+      wer: 0.0952
+    bible_00002:
+      source: bible
+      text: Yɔgyɔgla de piilim tuini, Naawen a bo le fu.
+      sbs: 0.7661
+      gen_sec: 4.18
+      ref_sec: 3.08
+      cer: 0.0294
+      wer: 0.1111
+    bible_00003:
+      source: bible
+      text: Ba le tɔgri ka, a tiak ziimu gela a sa Aaron ale wa nidoabilisaŋa juga tueŋa kie ale ba juga
+        nandub doataŋa ale ba nandub doataŋa.
+      sbs: 0.8035
+      gen_sec: 12.71
+      ref_sec: 10.44
+      cer: 0.0777
+      wer: 0.4231
+    bible_00004:
+      source: bible
+      text: Ti kan maa nya gebiga yaase kɔmmoa.
+      sbs: 0.6921
+      gen_sec: 3.33
+      ref_sec: 3.34
+      cer: 0.2143
+      wer: 0.4286
+    bible_00005:
+      source: bible
+      text: Waai a dan poom a yaali ayen wa nak nanpaga ale wa, wa kan baga a tulisi wa bunyi tusidi po.
+      sbs: 0.7849
+      gen_sec: 8.36
+      ref_sec: 7.56
+      cer: 0.0143
+      wer: 0.0476
+    bible_00006:
+      source: bible
+      text: Filistia demma yaa wom ayen Izirali demma a tu chaab Mizpa.
+      sbs: 0.7735
+      gen_sec: 5.72
+      ref_sec: 4.22
+      cer: 0.1042
+      wer: 0.1818
+    bible_00007:
+      source: bible
+      text: Num ŋan nyuntisaŋa lɔklɔk ase zom la a nyo nɔiyeŋka dakanni ale Tuka Viuku niŋka, juijui ate
+        mi ale tu fu la.
+      sbs: 0.7823
+      gen_sec: 10.75
+      ref_sec: 11.76
+      cer: 0.0814
+      wer: 0.2273
+    bible_00008:
+      source: bible
+      text: Mi ale wi la, fi tulisi mu kama, fi basi kama ate m tua ale ta suinum pagrik.
+      sbs: 0.7913
+      gen_sec: 7.0
+      ref_sec: 7.24
+      cer: 0.0702
+      wer: 0.1111
+    bible_00009:
+      source: bible
+      text: Ti waba tii meena ale ŋmarisi doa ale ŋa sinsaŋŋa meena la, Kirisitawa ko ŋa meena a basi
+        kama a pai ŋa kpi maŋ Kirisitawa kummu jabarimu nyiŋ.
+      sbs: 0.7163
+      gen_sec: 14.51
+      ref_sec: 11.38
+      cer: 0.0614
+      wer: 0.1786
+    bible_00010:
+      source: bible
+      text: Deevid nuruma ale ga paari du la, ba yaa weeni Nabal Deevid ale weeni ba diila alege a limisi.
+      sbs: 0.7901
+      gen_sec: 8.87
+      ref_sec: 7.68
+      cer: 0.027
+      wer: 0.3158
+    bible_00011:
+      source: bible
+      text: Ase Naawen biisiteerɔ a dan bo ni po, m te pai m dek sak wa kama, m le biisi ale wa gɔdaasima
+        po.
+      sbs: 0.765
+      gen_sec: 8.7
+      ref_sec: 8.88
+      cer: 0.0417
+      wer: 0.1739
+    bible_00012:
+      source: bible
+      text: Ni a nye wieŋa de meena dii nyiŋla, nama dek seba ku ale ka dii yɔgyɔgla de la kama.
+      sbs: 0.6802
+      gen_sec: 7.94
+      ref_sec: 6.64
+      cer: 0.0156
+      wer: 0.1579
+    bible_00013:
+      source: bible
+      text: Ti tiirimu dan ka ti chim Wen biisiteerɔba a weeni wa tuntomika, ti a weeni a magsi chaab
+        ale ti siaka ale soa diila.
+      sbs: 0.6883
+      gen_sec: 10.92
+      ref_sec: 9.74
+      cer: 0.0
+      wer: 0.1667
+    bible_00014:
+      source: bible
+      text: Betel ale Ai tɛŋsaŋa demma a jam ka kobsiye ale pisiye ale bata.
+      sbs: 0.7233
+      gen_sec: 6.31
+      ref_sec: 6.12
+      cer: 0.1176
+      wer: 0.3077
+    bible_00015:
+      source: bible
+      text: Ni ale magsi ni ŋɔbi lammu diila ale nna.
+      sbs: 0.7435
+      gen_sec: 3.93
+      ref_sec: 3.74
+      cer: 0.1875
+      wer: 0.5556
+    bible_00016:
+      source: bible
+      text: Kpagni Nebuzaradan a jam pai ba meena kama a ta ba jam Babilon naawa jigi Aribla.
+      sbs: 0.76
+      gen_sec: 7.68
+      ref_sec: 8.02
+      cer: 0.1385
+      wer: 0.4375
+    bible_00017:
+      source: bible
+      text: Ba jam tu chaab ka Sokoyo ale bo Juda po la.
+      sbs: 0.6907
+      gen_sec: 3.93
+      ref_sec: 3.64
+      cer: 0.1818
+      wer: 0.1818
+    bible_00018:
+      source: bible
+      text: Ba jam dɛ tigini Naawen ti Wenni niŋ ka daa ŋayopɔi a ŋman pa daa ŋayopɔi a vi du ate ŋa meena
+        a chim daa pi ale ŋanaansi.
+      sbs: 0.7707
+      gen_sec: 11.78
+      ref_sec: 12.34
+      cer: 0.1277
+      wer: 0.1786
+    bible_00019:
+      source: bible
+      text: Wa jam ta ka piisa tusa pi ale ŋanaansi ale laalaakomiba tusa ŋayuebi ale lalik kpaansa beŋsa
+        tusidi ale bonsa tusidi.
+      sbs: 0.7557
+      gen_sec: 11.78
+      ref_sec: 14.14
+      cer: 0.0309
+      wer: 0.4762
+    bible_00020:
+      source: bible
+      text: Ba gela a jam a weeni ayen, <<Tama ale ti nidoabilisaŋa ale ti liema a piisi kama, ku a fɛ
+        ayen ti ta ŋanbie a dɛ ate ti vua.
+      sbs: 0.7688
+      gen_sec: 11.52
+      ref_sec: 11.76
+      cer: 0.0761
+      wer: 0.2069
+    bible_00021:
+      source: bible
+      text: Wa jam pai ka ligmɔniŋ a kuri mɛ ŋanta ase ŋanvuta baye la nanlikka noawaaŋa.
+      sbs: 0.7841
+      gen_sec: 7.77
+      ref_sec: 8.14
+      cer: 0.0806
+      wer: 0.2667
+    bible_00022:
+      source: bible
+      text: Yeezu yaa weeni ba ayen, <<Mi Kowa a basi kama ate mi tom tuimaŋsa nna yegayega ate nama nya.
+      sbs: 0.6695
+      gen_sec: 8.87
+      ref_sec: 8.08
+      cer: 0.0141
+      wer: 0.0526
+    bible_00023:
+      source: bible
+      text: Ba chak kama ase wusum doata ale chak diila, a ta kɔrisa, ate waai meena a yaali wa vaanchoa
+        pok.
+      sbs: 0.7453
+      gen_sec: 9.05
+      ref_sec: 8.78
+      cer: 0.0533
+      wer: 0.25
+    bible_00024:
+      source: bible
+      text: Ti wanyi mɛ la abe kan kpi ka tidek nyiŋŋa.
+      sbs: 0.6922
+      gen_sec: 4.18
+      ref_sec: 3.64
+      cer: 0.0606
+      wer: 0.3
+    bible_00025:
+      source: bible
+      text: Ti lalik kpaansaŋa ale dari ŋandobra.
+      sbs: 0.7057
+      gen_sec: 3.93
+      ref_sec: 3.74
+      cer: 0.2258
+      wer: 0.6667
+    bible_00026:
+      source: bible
+      text: Keenan demma ale Perizzi demma mɛ jam maa bo ka tɛŋ kala dila po.
+      sbs: 0.7727
+      gen_sec: 6.14
+      ref_sec: 5.8
+      cer: 0.1569
+      wer: 0.2857
+    bible_00027:
+      source: bible
+      text: Alege Yeezu an jam tulisi ba a yaa le ge a koori tɛŋ a pai wa nandub a ŋmarisi tɛŋ.
+      sbs: 0.6463
+      gen_sec: 7.77
+      ref_sec: 7.38
+      cer: 0.0476
+      wer: 0.15
+    bible_00028:
+      source: bible
+      text: Moosis yaa ta tacheksaŋa meena a nyini Naawen niŋ a jam te Izirali demma meena.
+      sbs: 0.7367
+      gen_sec: 7.77
+      ref_sec: 5.8
+      cer: 0.0156
+      wer: 0.1333
+    bible_00029:
+      source: bible
+      text: Nye ligmɔniŋ baŋsa siye a maŋ nsila siyema ale bo suinum jaligimmu gugottaŋa po a moata garuk
+        genni la.
+      sbs: 0.7744
+      gen_sec: 10.41
+      ref_sec: 11.2
+      cer: 0.1071
+      wer: 0.4737
+    bible_00030:
+      source: bible
+      text: Diipo meena Moosis a dan cheŋ jo viuku po, nuruma meena nyiem jam yiti za kama ba viitaŋa
+        nansuiŋtaŋa noa a nya Moosis ate wa ga jo viuku po.
+      sbs: 0.7717
+      gen_sec: 13.65
+      ref_sec: 13.3
+      cer: 0.018
+      wer: 0.0345
+    bible_00031:
+      source: bible
+      text: Abram le jam bo juijui la a moata ka Mamre, Amori denɔwa tiib kpieŋsaŋa.
+      sbs: 0.7905
+      gen_sec: 7.08
+      ref_sec: 7.3
+      cer: 0.0877
+      wer: 0.2857
+    bible_00032:
+      source: bible
+      text: Dila nyiŋ, ku a fɛ kama ayen ni pai jiirim ale zula ale zaab m dek ale ŋmam ŋmam nyeka ale
+        chichiiba ase gatta la a jo.
+      sbs: 0.7423
+      gen_sec: 11.18
+      ref_sec: 10.92
+      cer: 0.0549
+      wer: 0.2222
+    bible_00033:
+      source: bible
+      text: Ni seba mi ale a cheŋ juijui la kama ale suik kuui ale a cheŋ ku jigini la.
+      sbs: 0.6724
+      gen_sec: 7.0
+      ref_sec: 3.96
+      cer: 0.0351
+      wer: 0.0556
+    bible_00034:
+      source: bible
+      text: Ni teeri dii ate m weeni ni ayen tomteerɔ an baga a zuak a gaam wa nyɔnɔ la.
+      sbs: 0.6885
+      gen_sec: 6.83
+      ref_sec: 5.5
+      cer: 0.0
+      wer: 0.0
+    bible_00035:
+      source: bible
+      text: Alege tama ale ti Naawenni ale ka bunyi la, m ta siaka kama nalimnyiini ayen ni popolaŋa ale
+        mi popolaŋa ka bunyi.
+      sbs: 0.6935
+      gen_sec: 11.09
+      ref_sec: 8.56
+      cer: 0.011
+      wer: 0.0455
+    bible_00036:
+      source: bible
+      text: Fi nak ba, alege ba zɛ ayen ba nyiŋsa a dom.
+      sbs: 0.7981
+      gen_sec: 4.1
+      ref_sec: 3.92
+      cer: 0.25
+      wer: 0.3636
+    bible_00037:
+      source: bible
+      text: Ate wa jam yaali siik daata a pai ligmɔniŋ a taari ti zuk.
+      sbs: 0.7992
+      gen_sec: 5.46
+      ref_sec: 4.32
+      cer: 0.1111
+      wer: 0.3846
+    bible_00038:
+      source: bible
+      text: Ni be da nina kpaam mɛ m jigi a nyo ni ninaŋa po ate ni a nya.
+      sbs: 0.6295
+      gen_sec: 5.46
+      ref_sec: 4.3
+      cer: 0.1111
+      wer: 0.1765
+    bible_00039:
+      source: bible
+      text: Mi yaa wom ale wa a pɛ waai ale boro taam wuu la nyiŋ, a weeni ayen, <<Ku ale paari ka bena
+        ŋata ale geli.
+      sbs: 0.7353
+      gen_sec: 9.81
+      ref_sec: 10.06
+      cer: 0.013
+      wer: 0.04
+    bible_00040:
+      source: bible
+      text: <<A te ŋaaŋbiik sii ale cheen la, juka tiirimu de ale kasim a nye kama Tuka Viuku nansuiŋ
+        Naawen niŋ.
+      sbs: 0.7844
+      gen_sec: 9.98
+      ref_sec: 10.68
+      cer: 0.0641
+      wer: 0.4
+    bible_00041:
+      source: bible
+      text: Alege ku goanti a nye ase ka ba ale ŋmarisi Wen Gbaŋka po dii ayen, <<Waai ale a va sinsaŋŋa
+        ale weeni diila, ale vuuk kama ŋa nyiŋ.
+      sbs: 0.6759
+      gen_sec: 12.97
+      ref_sec: 13.26
+      cer: 0.5
+      wer: 0.5714
+    bible_00042:
+      source: bible
+      text: Arama ale Geba tɛŋsaŋa demma a gum chaab a jam ka kobsiyuebi ale pisiye ale wanyi.
+      sbs: 0.7634
+      gen_sec: 8.02
+      ref_sec: 7.34
+      cer: 0.0909
+      wer: 0.25
+    bible_00043:
+      source: bible
+      text: Nama dek seba ti ale jam sak ni diila kama.
+      sbs: 0.6436
+      gen_sec: 3.93
+      ref_sec: 3.7
+      cer: 0.303
+      wer: 0.6
+    bible_00044:
+      source: bible
+      text: Alege fi le nya nidoabili dii ale wa chim nidoa waai ale ta suiyɔgni ale vuusum la, ate mi
+        ale te wa vuusum a nyini wa dachaasaŋa jigi kauk meena.
+      sbs: 0.7863
+      gen_sec: 13.74
+      ref_sec: 13.0
+      cer: 0.0609
+      wer: 0.1667
+    bible_00045:
+      source: bible
+      text: Ba a weeni ayen, <Suiyɔgni a boro, suiyɔgni a boro,> alege suiyɔgni a ka.
+      sbs: 0.7942
+      gen_sec: 7.0
+      ref_sec: 7.18
+      cer: 0.1111
+      wer: 0.2143
+    bible_00046:
+      source: bible
+      text: Ti dan nye nna meena ku a peenti Wen ti Varibasidɔwa sui kama.
+      sbs: 0.6837
+      gen_sec: 5.8
+      ref_sec: 5.2
+      cer: 0.0816
+      wer: 0.2308
+    bible_00047:
+      source: bible
+      text: '> Fi sui a dan peenti ale mu, sak mu fi suitaŋa ate dila ale basi ate m seba fu abe m diem
+        gum du a nya ŋmanteka a nyini fi jigi.'
+      sbs: 0.7971
+      gen_sec: 11.69
+      ref_sec: 11.56
+      cer: 0.0
+      wer: 0.0968
+    bible_00048:
+      source: bible
+      text: Ni dan nye dila, wa le vari ni Filistia demma jigi basi.
+      sbs: 0.7068
+      gen_sec: 5.21
+      ref_sec: 4.38
+      cer: 0.093
+      wer: 0.25
+    bible_00049:
+      source: bible
+      text: A nyini Koyat ŋaaŋbisaŋa po, jam ka Uriel ale niŋdeerɔ ale suata kook ale pisiye.
+      sbs: 0.7551
+      gen_sec: 8.28
+      ref_sec: 7.54
+      cer: 0.0615
+      wer: 0.2
+    bible_00050:
+      source: bible
+      text: Vuuta titawa ka tintain bibituk ale tintain paasa ale tintain ŋaai ale a nye ase busumbooŋ
+        la.
+      sbs: 0.7993
+      gen_sec: 9.3
+      ref_sec: 9.6
+      cer: 0.0519
+      wer: 0.4706
+    bible_00051:
+      source: bible
+      text: Wa weeni ayen, <<Ni cheŋ a ga dɛ nidek ale a yaali ŋandiin tii ale damasik kaai la abe ni
+        tom gela a te baai ale kan ta jaab la.
+      sbs: 0.775
+      gen_sec: 11.78
+      ref_sec: 12.2
+      cer: 0.0421
+      wer: 0.2667
+    bible_00052:
+      source: bible
+      text: Deevid yaa jam bo tɛŋka ate ba sɛ parisa a gilim la po, dila nyiŋ ka yuei jam le Deevid tɛŋ.
+      sbs: 0.7356
+      gen_sec: 8.7
+      ref_sec: 7.72
+      cer: 0.0286
+      wer: 0.1429
+    bible_00053:
+      source: bible
+      text: Wa jam pai ka siik daata a nye jazaanimu.
+      sbs: 0.7715
+      gen_sec: 3.84
+      ref_sec: 3.78
+      cer: 0.2188
+      wer: 0.5556
+    bible_00054:
+      source: bible
+      text: Ba zɛri nɔiyeŋka ate ba nye ale Wen la kama.
+      sbs: 0.7253
+      gen_sec: 4.18
+      ref_sec: 3.46
+      cer: 0.1765
+      wer: 0.4
+    bible_00055:
+      source: bible
+      text: Wabaata nyama ale maa pulim nuruma po la meena a za ba kpi kama kpaliŋ po, ale baai mɛ ale
+        weeni ayen kaasuŋ a kan paari ba la mɛ la meena.
+      sbs: 0.7686
+      gen_sec: 12.97
+      ref_sec: 13.82
+      cer: 0.0187
+      wer: 0.0645
+    bible_00056:
+      source: bible
+      text: Wen a nya ayen, ku la a nya la a nala, ate wa gaari nyaka legini po.
+      sbs: 0.7726
+      gen_sec: 6.06
+      ref_sec: 5.68
+      cer: 0.0
+      wer: 0.3529
+    bible_00057:
+      source: bible
+      text: A te waai ale dɛ wa nuruma niŋ a ta ba va gɔnni po la.
+      sbs: 0.7729
+      gen_sec: 4.78
+      ref_sec: 4.54
+      cer: 0.0769
+      wer: 0.2667
+    bible_00058:
+      source: bible
+      text: A ta va Weleŋsa Chiika a mooli ale pagrim ayen wa ka Wen Nidoabili wa le yiti kum po la nyiŋ,
+        wala ale Yeezu Kirisita ti Nyɔnɔwa.
+      sbs: 0.6727
+      gen_sec: 12.29
+      ref_sec: 13.76
+      cer: 0.0495
+      wer: 0.1111
+    bible_00059:
+      source: bible
+      text: Ka wana ale ta wari ale mi ayen ku a fɛ ayen m tuni?
+      sbs: 0.7295
+      gen_sec: 4.52
+      ref_sec: 5.04
+      cer: 0.1053
+      wer: 0.2143
+    bible_00060:
+      source: bible
+      text: Ba le daani ni dii nyiŋla ba zɛ waai ale tom mi la.
+      sbs: 0.6868
+      gen_sec: 4.61
+      ref_sec: 3.58
+      cer: 0.0263
+      wer: 0.3846
+    bible_00061:
+      source: bible
+      text: Waai mɛ abe ale a de jenvaata nyiini alege kan de jaab meena la, ku an magsi ayen wa mɛ biisi
+        nwala jigi ase wa a bo wa ka buusa la.
+      sbs: 0.6882
+      gen_sec: 11.86
+      ref_sec: 12.08
+      cer: 0.03
+      wer: 0.0968
+    bible_00062:
+      source: bible
+      text: Varibasika a nyini ka Naawen jigi.
+      sbs: 0.7727
+      gen_sec: 3.33
+      ref_sec: 3.16
+      cer: 0.0
+      wer: 0.0
+    bible_00063:
+      source: bible
+      text: Ku a fɛ ayen ni teeri ayen, nama meena baai ale chim bunyi ale Yeezu Kirisita la, ni ka Wen
+        nidoabilisaŋa ni ale ta siaka la nyiŋ.
+      sbs: 0.6995
+      gen_sec: 12.37
+      ref_sec: 10.24
+      cer: 0.0297
+      wer: 0.1111
+    bible_00064:
+      source: bible
+      text: Pak Wen wa weleŋsa boka jigini po, pak wa wa wenŋmazuk tanjaŋini po.
+      sbs: 0.7687
+      gen_sec: 6.83
+      ref_sec: 5.32
+      cer: 0.0741
+      wer: 0.3846
+    bible_00065:
+      source: bible
+      text: Wom fi tomteerɔwa ale a saalim la ale fi nuruma Izirali ase ba niŋ tuk dela nyiŋ a puusi.
+      sbs: 0.7594
+      gen_sec: 8.53
+      ref_sec: 8.06
+      cer: 0.0286
+      wer: 0.0526
+    bible_00066:
+      source: bible
+      text: Mi a kan baga a ta nuruma de meena m dega, wanni a ŋmasi pagra a gaam mu kama.
+      sbs: 0.7891
+      gen_sec: 7.08
+      ref_sec: 6.14
+      cer: 0.0
+      wer: 0.0
+    bible_00067:
+      source: bible
+      text: Ba an diem miŋ suik kuui ale a nye ate nuruba a chim wayɔrisima nyam m jigi la.
+      sbs: 0.6794
+      gen_sec: 7.34
+      ref_sec: 6.18
+      cer: 0.0656
+      wer: 0.1667
+    bible_00068:
+      source: bible
+      text: Dai yeŋ Jonatan yaa weeni waai ale a yik wa kpaliŋ kɔlimaŋa la ayen, <<Te ti gaam taam Filistia
+        tugurik tɔŋdɔma ale za juijui limisi a nya la.
+      sbs: 0.7918
+      gen_sec: 13.91
+      ref_sec: 12.16
+      cer: 0.1081
+      wer: 0.2857
+    bible_00069:
+      source: bible
+      text: Vuuk kuui ale dɛ niŋka la, ku a magsi ka tintain munta ale tintain ŋaai ale a nye ase dubuulim
+        la ale tintain paata.
+      sbs: 0.8316
+      gen_sec: 11.09
+      ref_sec: 11.12
+      cer: 0.2527
+      wer: 0.4167
+    bible_00070:
+      source: bible
+      text: Ba jam ta ka nuru baai ate Naab Deevid ale wa nuruma a jam lueri ayen ba a maari Livaima kobsiye
+        ale pisiye wa la a jam.
+      sbs: 0.7432
+      gen_sec: 10.92
+      ref_sec: 13.94
+      cer: 0.0215
+      wer: 0.1481
+    bible_00071:
+      source: bible
+      text: Ba kan pai ba a nyo chivie po ase ba nin ta chaab ale ba dachaasaŋa nansuiŋku nɔi ya.
+      sbs: 0.8117
+      gen_sec: 8.02
+      ref_sec: 8.66
+      cer: 0.0606
+      wer: 0.2105
+    bible_00072:
+      source: bible
+      text: Diila m basi kama ate fi chim tɛŋsa yega ko.
+      sbs: 0.739
+      gen_sec: 4.18
+      ref_sec: 3.76
+      cer: 0.0294
+      wer: 0.3
+    bible_00073:
+      source: bible
+      text: Ba giŋgeluŋtaŋa ka pein yaani, ti a biisi ka venta.
+      sbs: 0.7505
+      gen_sec: 5.21
+      ref_sec: 3.82
+      cer: 0.1
+      wer: 0.2
+    bible_00074:
+      source: bible
+      text: Ase Yadadezer nuruma ale ga nya ale Izirali demma a nak yik ba la, ba yaa nye nɔiyeŋ ale Deevid
+        a siak te wa.
+      sbs: 0.7661
+      gen_sec: 10.15
+      ref_sec: 9.54
+      cer: 0.0952
+      wer: 0.3333
+    bible_00075:
+      source: bible
+      text: <<Dila wom mi, nama baai ale a miŋ la.
+      sbs: 0.764
+      gen_sec: 3.58
+      ref_sec: 3.26
+      cer: 0.3846
+      wer: 0.4444
+    bible_00076:
+      source: bible
+      text: Ase Deevid ale ga wom kude la, wa yaa tigsi Izirali meena a lo Jodan Benni a jueli, wa jam
+        ga moata ba kama, a zaani wa kpaliŋ zaaniŋa a tuk ba nyiŋ.
+      sbs: 0.7807
+      gen_sec: 13.99
+      ref_sec: 12.24
+      cer: 0.5752
+      wer: 0.5758
+    bible_00077:
+      source: bible
+      text: Naawen ale nye dii ale nala la wa nimbie po.
+      sbs: 0.766
+      gen_sec: 4.1
+      ref_sec: 3.44
+      cer: 0.0588
+      wer: 0.3
+    bible_00078:
+      source: bible
+      text: Gedor denɔwa Jeroyam nidoabilisaŋa Joela ale Zebadia mɛ jam boro kama.
+      sbs: 0.7353
+      gen_sec: 7.08
+      ref_sec: 7.78
+      cer: 0.1695
+      wer: 0.6364
+    bible_00079:
+      source: bible
+      text: Ba le ta dakanni a jam Izirali tigsika jigini la, Yofni ale Fineyas a maa va jam.
+      sbs: 0.757
+      gen_sec: 7.59
+      ref_sec: 7.28
+      cer: 0.0635
+      wer: 0.4118
+    bible_00080:
+      source: bible
+      text: Viok yaa nyini yeniŋ a gala geŋ a fuk nna balibali ate ba yaa poli ayen nya kude ale deri
+        basi kama ate ba nye ba ale poom a yaali dii ayen ba cheŋ la.
+      sbs: 0.6886
+      gen_sec: 13.99
+      ref_sec: 12.3
+      cer: 0.0172
+      wer: 0.1143
+    bible_00081:
+      source: bible
+      text: Be ka ŋaaŋbiik kala ate Wen nye pumpuulimaŋa a te la.
+      sbs: 0.6646
+      gen_sec: 5.38
+      ref_sec: 4.22
+      cer: 0.1429
+      wer: 0.3636
+    bible_00082:
+      source: bible
+      text: Baai ale a nye ti la ale nye ase ka bɔgtaŋa la, ale baai meena ale ta sebchakka ale ti la.
+      sbs: 0.7944
+      gen_sec: 8.28
+      ref_sec: 7.28
+      cer: 0.0882
+      wer: 0.3333
+    bible_00083:
+      source: bible
+      text: Deevid yaa jam tigsi Izirali demma meena Jerusalem po ayen wa ta Naawen nɔiyeŋka dakanni a
+        jam juijui ate wa gomsi a magsi di la po.
+      sbs: 0.7812
+      gen_sec: 12.63
+      ref_sec: 12.3
+      cer: 0.0377
+      wer: 0.0769
+    bible_00084:
+      source: bible
+      text: Waai karo a nye wamaŋŋa, wanyi mɛ la a ka.
+      sbs: 0.7486
+      gen_sec: 4.1
+      ref_sec: 3.48
+      cer: 0.0645
+      wer: 0.4
+    bible_00085:
+      source: bible
+      text: Legi a karo, birim jigi a karo ate nuru baata a suk.
+      sbs: 0.759
+      gen_sec: 4.78
+      ref_sec: 5.08
+      cer: 0.2308
+      wer: 0.4167
+    bible_00086:
+      source: bible
+      text: Tugurik tɔŋdɔba kobsiyuebi ale jam bo ale wa.
+      sbs: 0.7085
+      gen_sec: 4.52
+      ref_sec: 3.26
+      cer: 0.2162
+      wer: 0.5
+    bible_00087:
+      source: bible
+      text: Dii ale di sak ayen mi ale a tom fu la ale nna.
+      sbs: 0.7724
+      gen_sec: 4.1
+      ref_sec: 4.32
+      cer: 0.0
+      wer: 0.0
+    bible_00088:
+      source: bible
+      text: Pai tana ŋaye ate ŋa yik ŋa a tanla garuk genni ŋmankpalaŋa zuk ase tintain ŋaai ale ŋa chim
+        teerika a te Izirali nidoabilisaŋa.
+      sbs: 0.7923
+      gen_sec: 13.14
+      ref_sec: 12.3
+      cer: 0.0577
+      wer: 0.25
+    bible_00089:
+      source: bible
+      text: Wa jam basi ate suŋsuŋka chimmu a vi zaŋŋa zuk a nyini ka kpeglimka a ga paari kpegli kinkala.
+      sbs: 0.7941
+      gen_sec: 9.3
+      ref_sec: 9.3
+      cer: 0.0133
+      wer: 0.1579
+    bible_00090:
+      source: bible
+      text: Baai ale ta siaka ale Yeezu la, a yaa jam waaŋ chaab Judia ale Samaria tɛŋsaŋa meena po.
+      sbs: 0.7387
+      gen_sec: 8.62
+      ref_sec: 6.88
+      cer: 0.0
+      wer: 0.0
+    bible_00091:
+      source: bible
+      text: Ba pai ka daa ŋata a cheŋ a paari ka.
+      sbs: 0.743
+      gen_sec: 3.5
+      ref_sec: 3.2
+      cer: 0.1111
+      wer: 0.2
+    bible_00092:
+      source: bible
+      text: Ase nuru ale jam weeni Deevid nuruma wie la, wa yaa tom nuruba ayen ba tu ba, ba jam nyo ba
+        ka chivie po nna yegayega.
+      sbs: 0.7784
+      gen_sec: 10.84
+      ref_sec: 9.7
+      cer: 0.0
+      wer: 0.0
+    bible_00093:
+      source: bible
+      text: Yasabia ale Jesaiya ale nyini Merari buuni po la ale wa suataŋa ale wa suataŋa bisaŋa a jam
+        ka nuruba pisiye.
+      sbs: 0.7257
+      gen_sec: 10.75
+      ref_sec: 14.6
+      cer: 0.0795
+      wer: 0.1905
+    bible_00094:
+      source: bible
+      text: Ku be ka Wen tomtomiŋ maŋka de nyiŋ ale soa ate mi Pɔɔl yaa chim tomteerɔ.
+      sbs: 0.6955
+      gen_sec: 7.25
+      ref_sec: 5.6
+      cer: 0.0862
+      wer: 0.1875
+    bible_00095:
+      source: bible
+      text: Filistia demma a jam ta ka ganduok, wa yuei jam le Goliat a nyini Gat.
+      sbs: 0.7585
+      gen_sec: 6.49
+      ref_sec: 6.6
+      cer: 0.1296
+      wer: 0.3333
+    bible_00096:
+      source: bible
+      text: Moosis ale wom nna la, wa yaa suk wa nimbidiaka dii nyiŋla wa jam a chali ka yɔgsum ale wa
+        le nya Wen la.
+      sbs: 0.7587
+      gen_sec: 9.64
+      ref_sec: 8.1
+      cer: 0.0375
+      wer: 0.25
+    bible_00097:
+      source: bible
+      text: <<Cheŋ Niineve tɛŋ kpieŋka a weeni ba wa dii ate m pai te fu ayen fi weeni ba la.
+      sbs: 0.7495
+      gen_sec: 7.68
+      ref_sec: 7.92
+      cer: 0.0667
+      wer: 0.2632
+    bible_00098:
+      source: bible
+      text: Ba jam gu ba kobaŋa ka Jabes tiib kpiemu kiri ale bobi nɔi daa ŋayopɔi.
+      sbs: 0.757
+      gen_sec: 6.83
+      ref_sec: 6.78
+      cer: 0.1964
+      wer: 0.4
+    bible_00099:
+      source: bible
+      text: '>> Ase Izirali tigsuŋku meena ale diem jam za dula la, naawa yaa viriŋ niak ba.'
+      sbs: 0.7553
+      gen_sec: 7.68
+      ref_sec: 6.44
+      cer: 0.0167
+      wer: 0.0667
+    bible_00100:
+      source: bible
+      text: Wa yaa weeni wa chorɔwa Abram ayen, <<Naawen a kasi mu kama ale bisa biam.
+      sbs: 0.7664
+      gen_sec: 7.0
+      ref_sec: 5.68
+      cer: 0.5179
+      wer: 0.6
+    bible_00101:
+      source: bible
+      text: Wa tuesi wa suoku nidoabinni Lɔti ale wa ŋantaŋa meena ale nipooma ale nuru yontaŋa.
+      sbs: 0.816
+      gen_sec: 8.53
+      ref_sec: 8.1
+      cer: 0.0435
+      wer: 0.1333
+    bible_00102:
+      source: bible
+      text: Piilim ka danni ni nye tuilum tigsuŋ ale daa ŋayopɔiwa danni mɛ ni ŋman nye tuilum tigsuŋ.
+      sbs: 0.7956
+      gen_sec: 9.05
+      ref_sec: 8.8
+      cer: 0.1781
+      wer: 0.7647
+    bible_00103:
+      source: bible
+      text: Ba yaa bek Izirali demma a tuesi kpana ale ligmɔniŋ ale gatta.
+      sbs: 0.8123
+      gen_sec: 6.06
+      ref_sec: 4.72
+      cer: 0.02
+      wer: 0.0833
+    bible_00104:
+      source: bible
+      text: Ester an jam basi ate ba seba wa nuruma yaase wa buuni, dii nyiŋla, Mordekai ale weeni wa
+        ayen wa kan basi ate ba seba.
+      sbs: 0.7743
+      gen_sec: 11.18
+      ref_sec: 11.08
+      cer: 0.0435
+      wer: 0.24
+    bible_00105:
+      source: bible
+      text: Ate wa yaa niak Abram ayen, <<Wen Dii Ale Bo Wenŋmazuk La a niak Abram, wa ka waai ale nye
+        wenzuk ale tɛŋ.
+      sbs: 0.7804
+      gen_sec: 9.98
+      ref_sec: 10.1
+      cer: 0.6835
+      wer: 0.6957
+    bible_00106:
+      source: bible
+      text: Nama dek seba Wen ale a yaali diila kama.
+      sbs: 0.6971
+      gen_sec: 3.84
+      ref_sec: 3.42
+      cer: 0.2188
+      wer: 0.7778
+    bible_00107:
+      source: bible
+      text: 'Naawen Dii Ale A Dɛ Tugurik Tɔŋdɔma Niŋ La ale weeni diila ale nna: <<Poli yɔgyɔgla!'
+      sbs: 0.8099
+      gen_sec: 8.28
+      ref_sec: 6.3
+      cer: 0.2615
+      wer: 0.4375
+    bible_00108:
+      source: bible
+      text: Ate Pabiika yaa ŋman foli bobi kaai ale saari bunaansiwa.
+      sbs: 0.6642
+      gen_sec: 5.72
+      ref_sec: 4.7
+      cer: 0.1064
+      wer: 0.4
+    bible_00109:
+      source: bible
+      text: Wa diem ayen wa basi ate ka laata a bo fi nɔi po abe suipeentik nuemka a bo fi nɔngbanvaata
+        po.
+      sbs: 0.8113
+      gen_sec: 8.7
+      ref_sec: 8.7
+      cer: 0.1351
+      wer: 0.3333
+    bible_00110:
+      source: bible
+      text: Fi yik mu kama niŋ ale ŋaaŋ a tara, fi basi ate fi nisa a bo m zuk.
+      sbs: 0.7781
+      gen_sec: 6.14
+      ref_sec: 5.24
+      cer: 0.0417
+      wer: 0.2222
+    bible_00111:
+      source: bible
+      text: Ba jam nak Filistia tugurik tɔŋdɔma dɛ kama, ale tusi ba ta gaam Bet Aven a basi.
+      sbs: 0.7363
+      gen_sec: 7.68
+      ref_sec: 5.56
+      cer: 0.1429
+      wer: 0.3529
+    bible_00112:
+      source: bible
+      text: Te nuru baai ale magsi ni te ba zula la.
+      sbs: 0.6916
+      gen_sec: 3.58
+      ref_sec: 3.22
+      cer: 0.0667
+      wer: 0.1
+    bible_00113:
+      source: bible
+      text: Dila Jeyoiachin yaa yeeri wa likka gattaŋa a dueni nakpiak alege ate wa boka po meena wa a
+        dɛ ale naawa.
+      sbs: 0.7393
+      gen_sec: 9.9
+      ref_sec: 10.74
+      cer: 0.0482
+      wer: 0.1905
+    bible_00114:
+      source: bible
+      text: M le ŋmarisi Wen yuenni ale wa tɛŋka yuenni a dueni ba nyiŋ.
+      sbs: 0.6533
+      gen_sec: 5.89
+      ref_sec: 5.56
+      cer: 0.0
+      wer: 0.0
+    bible_00115:
+      source: bible
+      text: Ate wa yaa weeni Naawa yenni kpaŋŋa ayen ba kan te wa ŋandiinta ale da buui ate ba a chari
+        naawa yenni po la.
+      sbs: 0.7817
+      gen_sec: 10.41
+      ref_sec: 8.42
+      cer: 0.0118
+      wer: 0.0417
+    bible_00116:
+      source: bible
+      text: Ba kisi mu nna la kama ayen dii ate ba ŋmarisi Wen Gbaŋka po la a chim wensie.
+      sbs: 0.6616
+      gen_sec: 7.34
+      ref_sec: 6.74
+      cer: 0.0333
+      wer: 0.2222
+    bible_00117:
+      source: bible
+      text: Nuru waai ale a misi nya buui ale basi ate nuru a nye cheri la, ku a fɛ ate wa mɛ sugri wa
+        gattaŋa.
+      sbs: 0.7662
+      gen_sec: 8.96
+      ref_sec: 7.62
+      cer: 0.0405
+      wer: 0.125
+    bible_00118:
+      source: bible
+      text: Kirisita tigini demma abe a nye tuka ka wala yenni.
+      sbs: 0.6584
+      gen_sec: 4.86
+      ref_sec: 3.82
+      cer: 0.2439
+      wer: 0.5
+    bible_00119:
+      source: bible
+      text: Ba dachaasaŋa ale yik ba ta ga basi badek tɛŋ po ate m le te ba ko ba.
+      sbs: 0.7497
+      gen_sec: 6.4
+      ref_sec: 6.36
+      cer: 0.0192
+      wer: 0.1667
+    bible_00120:
+      source: bible
+      text: Waai abe dan zɛri kpaŋŋa de noa, kula nyɔnɔwa a zɛri ka baai ate Wen lueri zaan du la noa.
+      sbs: 0.6951
+      gen_sec: 8.53
+      ref_sec: 8.52
+      cer: 0.0145
+      wer: 0.05
+    bible_00121:
+      source: bible
+      text: Alege nya, ni a pai ni sebchakka a basi ka pimpaasima wie ŋaai ale kan ta kiri la.
+      sbs: 0.7547
+      gen_sec: 7.68
+      ref_sec: 6.64
+      cer: 0.0794
+      wer: 0.2222
+    bible_00122:
+      source: bible
+      text: Wa ale vari baai ale a silim la gebi kaai ale bo ba noaŋa po la jigi a basi.
+      sbs: 0.7696
+      gen_sec: 6.83
+      ref_sec: 7.22
+      cer: 0.0
+      wer: 0.0
+    bible_00123:
+      source: bible
+      text: Ase ba ale jam paari Kidon ŋanta fɔbika jigini la, Uzzaya yaa laari wa nisaŋa ayen wa yik
+        dakanni, dii nyiŋla lalisaŋa nyiŋsa ale jam a gɔk.
+      sbs: 0.7665
+      gen_sec: 13.91
+      ref_sec: 13.9
+      cer: 0.045
+      wer: 0.3704
+    bible_00124:
+      source: bible
+      text: Ba le ba nam diila a nye se ka nueoŋ ale dom fu ate fi a nam diila.
+      sbs: 0.6586
+      gen_sec: 5.89
+      ref_sec: 5.66
+      cer: 0.102
+      wer: 0.5
+    bible_00125:
+      source: bible
+      text: Nuruma ale jam a paari la, Piita yaa deri basi dɛka ale nuruma dii nyiŋla, wa jam a chali
+        ka yɔgsum ale baai ale jam maa siak ayen baai ale kan daa Juuba la a gebi ba yoaŋa la.
+      sbs: 0.6802
+      gen_sec: 16.55
+      ref_sec: 13.76
+      cer: 0.0296
+      wer: 0.1282
+    bible_00126:
+      source: bible
+      text: Miriam ale Aaron a yaa piilim a biisi Moosis a kaasi Kus tɛŋka liewa ate wa jam faari la nyiŋ.
+      sbs: 0.7625
+      gen_sec: 8.96
+      ref_sec: 8.08
+      cer: 0.027
+      wer: 0.1
+    bible_00127:
+      source: bible
+      text: Yɔgyɔgla de nuruma ale ba pooma a yaa kaari nna tuotuowa a ta chaab ale ba suataŋa Juuma.
+      sbs: 0.7659
+      gen_sec: 8.53
+      ref_sec: 9.54
+      cer: 0.0423
+      wer: 0.0556
+    bible_00128:
+      source: bible
+      text: Ase mi nin basi ate Nabal nuruma wanyi mɛ la a bɛ alege ate vari a veenti.
+      sbs: 0.7402
+      gen_sec: 6.74
+      ref_sec: 5.6
+      cer: 0.0877
+      wer: 0.3529
+    bible_00129:
+      source: bible
+      text: Nama mɛ abe le ta siaka dii ale wa la ale maari ka mi mɛ.
+      sbs: 0.69
+      gen_sec: 4.95
+      ref_sec: 5.84
+      cer: 0.119
+      wer: 0.4667
+    bible_00130:
+      source: bible
+      text: Alege ba an wom ya yaase ba popola a boro, ba goanti va ka badek tuikpanni ale ba popola baataŋa
+        ale a yaali diila.
+      sbs: 0.7526
+      gen_sec: 10.84
+      ref_sec: 9.68
+      cer: 0.0222
+      wer: 0.375
+    bible_00131:
+      source: bible
+      text: Wala ale saafiik kaai ale baga a lak Wen Yammu ale wa sebchakka ale suk juijui la ate ti a
+        nya.
+      sbs: 0.7163
+      gen_sec: 8.7
+      ref_sec: 8.66
+      cer: 0.0405
+      wer: 0.2381
+    bible_00132:
+      source: bible
+      text: '>> Ba jam a wom wa kama nalimnyiini dii nyiŋla, wa wakperikaliisaŋa a jam cha ba beni ka
+        nna yegayega.'
+      sbs: 0.7383
+      gen_sec: 9.9
+      ref_sec: 6.28
+      cer: 0.038
+      wer: 0.1579
+    bible_00133:
+      source: bible
+      text: Pa di a te kaabteerɔwa Eleaza, ni ta di a nyini ni boka jigini a nyini peelim a tɔgri di wa
+        niŋ.
+      sbs: 0.7805
+      gen_sec: 8.87
+      ref_sec: 7.6
+      cer: 0.3425
+      wer: 0.3182
+    bible_00134:
+      source: bible
+      text: Ni da garuk peelita mɛ mi jigi a lik ni chivieŋa.
+      sbs: 0.6474
+      gen_sec: 4.61
+      ref_sec: 3.64
+      cer: 0.0263
+      wer: 0.2727
+    bible_00135:
+      source: bible
+      text: Fi le poom nak gbaŋ a te baai ale kan ta koba la abe fi pai ŋanta a tagri fi doa.
+      sbs: 0.8011
+      gen_sec: 7.34
+      ref_sec: 7.48
+      cer: 0.05
+      wer: 0.2381
+    bible_00136:
+      source: bible
+      text: Wamaŋsaŋa de ka ŋaai ate wa puulim a biisi ŋa dipo ate wa biisiteerɔma a ŋmarisi nyo Wen gbaŋka
+        po la.
+      sbs: 0.6802
+      gen_sec: 10.24
+      ref_sec: 9.04
+      cer: 0.0494
+      wer: 0.2381
+    bible_00137:
+      source: bible
+      text: A nyini wala jigini, Sekania nidoabinni Sɛmaiya ate wa a nya Kori Nansuiŋku la a sɛ.
+      sbs: 0.7225
+      gen_sec: 8.19
+      ref_sec: 9.08
+      cer: 0.0597
+      wer: 0.5
+    bible_00138:
+      source: bible
+      text: Alege tugurik tɔŋdɔma kpagni a kan jam a yaali ayen wa ko Pɔɔl.
+      sbs: 0.6199
+      gen_sec: 6.06
+      ref_sec: 3.5
+      cer: 0.16
+      wer: 0.3846
+    bible_00139:
+      source: bible
+      text: Mi dan cheem nya mi gauŋ, waai a karo a maari mu, waai a karo a lik mu.
+      sbs: 0.7765
+      gen_sec: 6.4
+      ref_sec: 6.08
+      cer: 0.0392
+      wer: 0.0556
+    bible_00140:
+      source: bible
+      text: Mi a chiini ba ase ka mi dachaasa la.
+      sbs: 0.6983
+      gen_sec: 3.33
+      ref_sec: 3.16
+      cer: 0.1071
+      wer: 0.4444
+    bible_00141:
+      source: bible
+      text: Naawen a basi ate bela a kpeeri meena ale basi ate beli naŋsa nyiam a kan chali.
+      sbs: 0.7968
+      gen_sec: 7.59
+      ref_sec: 8.06
+      cer: 0.0
+      wer: 0.0
+    bible_00142:
+      source: bible
+      text: Dii nyiŋla Naawen a weeni Moosis kama ayen, <<Weeni Izirali demma ayen, <Ni ka tukpari nyam.
+      sbs: 0.7878
+      gen_sec: 9.05
+      ref_sec: 7.16
+      cer: 0.0
+      wer: 0.25
+    bible_00143:
+      source: bible
+      text: Naawen a jam te Deevid ka nak dɛka juijui meena ate wa jam cheŋ la.
+      sbs: 0.7766
+      gen_sec: 6.31
+      ref_sec: 5.6
+      cer: 0.0192
+      wer: 0.0667
+    bible_00144:
+      source: bible
+      text: Ba le tɛŋzuk de demma a daa bunyi ase mi ale tɛŋka meena demma ale kan daa bunyi diila.
+      sbs: 0.6919
+      gen_sec: 8.28
+      ref_sec: 6.5
+      cer: 0.0
+      wer: 0.0
+    bible_00145:
+      source: bible
+      text: Wen maarɔ waai ale jam saari bayuebiwa la a yaa peeri wa damuniŋka ate mi yaa wom lueluk ale
+        ku nyini ligmɔniŋ kuŋkuŋku nyiila ŋanaansiwa ale bo Wen niŋ la a jam.
+      sbs: 0.6436
+      gen_sec: 16.8
+      ref_sec: 14.78
+      cer: 0.0462
+      wer: 0.25
+    bible_00146:
+      source: bible
+      text: Daa ŋayopɔi nye biem duisi basika a te kuŋkuŋku a gaari ku.
+      sbs: 0.7703
+      gen_sec: 5.89
+      ref_sec: 5.46
+      cer: 0.1489
+      wer: 0.3333
+    bible_00147:
+      source: bible
+      text: Wa jam pai ka tiita a nye wakperikaliisa nna yegayega ate ŋa cha Samaria demma.
+      sbs: 0.6741
+      gen_sec: 7.68
+      ref_sec: 5.32
+      cer: 0.0625
+      wer: 0.2
+    bible_00148:
+      source: bible
+      text: Filistia tugurik tɔŋdɔma a jam siti ba kama ale pagrim a nak dɛ Izirali demma.
+      sbs: 0.7544
+      gen_sec: 7.59
+      ref_sec: 5.48
+      cer: 0.2381
+      wer: 0.4667
+    bible_00149:
+      source: bible
+      text: Ba seba ayen wa pagrimu a kasim boro ka dila taam wuu.
+      sbs: 0.7018
+      gen_sec: 4.95
+      ref_sec: 5.38
+      cer: 0.0
+      wer: 0.0
+    bible_00150:
+      source: bible
+      text: Dila nyiŋla, diipo ate tama wom ni wie la, tama kasim a puusi Wen a te ni ka dila.
+      sbs: 0.7008
+      gen_sec: 7.59
+      ref_sec: 7.92
+      cer: 0.0164
+      wer: 0.1579
+    bible_00151:
+      source: bible
+      text: Jonatan yaa weeni waai ale a yik wa kpaliŋ kɔlimaŋa la ayen, <<Jam ti ti cheŋ Filistia tugurik
+        tɔŋdɔma baai ale kaa va Naawen la jigini.
+      sbs: 0.7751
+      gen_sec: 13.4
+      ref_sec: 10.96
+      cer: 0.0841
+      wer: 0.2692
+    bible_00152:
+      source: bible
+      text: Sinsaŋŋa a gumdu kama ayen ŋa sak wakaasima ale ka diila, abe ŋa boro a ta ga paari diipo
+        ate Abrayam ŋaaŋbiika ale jam la.
+      sbs: 0.6899
+      gen_sec: 12.29
+      ref_sec: 10.7
+      cer: 0.0103
+      wer: 0.28
+    bible_00153:
+      source: bible
+      text: Pɔɔl yaa te ba sinsaŋŋa de ayen, <<M doaba, mi nya kama ale ti chelimu a zaani dela a cheŋ
+        a kan nala.
+      sbs: 0.6792
+      gen_sec: 9.64
+      ref_sec: 9.98
+      cer: 0.1067
+      wer: 0.1739
+    bible_00154:
+      source: bible
+      text: Simeyon dɔkku tugurik tɔŋdɔma ale gomsi a magsi kpaliŋ la jam ka tusa ŋayopɔi ale kook .
+      sbs: 0.7432
+      gen_sec: 8.7
+      ref_sec: 7.84
+      cer: 0.1831
+      wer: 0.375
+    bible_00155:
+      source: bible
+      text: '>> Sinsaŋŋa de chaab a biisi a magsi chaab ale ka jaabuuri meena wuu ate fi dan ga pai wa
+        tom tuini, wa ŋman ka kiri diila.'
+      sbs: 0.7077
+      gen_sec: 11.69
+      ref_sec: 9.02
+      cer: 0.0323
+      wer: 0.2308
+    bible_00156:
+      source: bible
+      text: Ŋandiinta ale masa ase yesa a nin kan karo, yaase masim a bo jein peeluk po?
+      sbs: 0.7512
+      gen_sec: 7.25
+      ref_sec: 7.6
+      cer: 0.1525
+      wer: 0.5625
+    bible_00157:
+      source: bible
+      text: A nyini Jodan beni kori geŋsa, Aruben dɔkku ale Gad dɔkku ale Manasa dɔkku ale kpesi badek
+        ale kpaliŋ ale kpaliŋ jaab meena la, jam ka tusa kook ale pisiye .
+      sbs: 0.7905
+      gen_sec: 15.19
+      ref_sec: 13.64
+      cer: 0.0242
+      wer: 0.2
+    bible_00158:
+      source: bible
+      text: Ku le nye nɔiyeŋ ale fu ate fi pai ku chim fi yɔma ku nyuvuri po meena?
+      sbs: 0.782
+      gen_sec: 6.49
+      ref_sec: 6.26
+      cer: 0.3889
+      wer: 0.5882
+    bible_00159:
+      source: bible
+      text: Wieŋa de a nyini ka waai ale ka nuru weleŋ ale wensie nyɔnɔ ale ge ta Deevid safiika la.
+      sbs: 0.6715
+      gen_sec: 8.36
+      ref_sec: 7.94
+      cer: 0.2029
+      wer: 0.3684
+    bible_00160:
+      source: bible
+      text: Naawen ale weeni ayen, <<Daaŋa a cheena ate naa kpaarɔwa ale gaam cheerɔwa a taam.
+      sbs: 0.7834
+      gen_sec: 8.02
+      ref_sec: 7.52
+      cer: 0.0469
+      wer: 0.4
+    bible_00161:
+      source: bible
+      text: Deevid ale wa nuruma a jam paari Ziklag ka daa ŋata dai.
+      sbs: 0.7805
+      gen_sec: 5.38
+      ref_sec: 4.94
+      cer: 0.0227
+      wer: 0.0833
+    bible_00162:
+      source: bible
+      text: Fi dan pai ŋa meena a gum chaab, kpana chinaŋa, magsika dobrimu jam ka ligbie tusa ŋaye ale
+        kobsinaansi a ta va Naawen yenni magsika ale ka diila.
+      sbs: 0.7793
+      gen_sec: 14.25
+      ref_sec: 12.18
+      cer: 0.069
+      wer: 0.2857
+    bible_00163:
+      source: bible
+      text: Ase ba le jam paari Eskol Viaka la, ba yaa jam che tiib naŋ ale yɔn fi gilima sagi.
+      sbs: 0.7179
+      gen_sec: 7.68
+      ref_sec: 8.3
+      cer: 0.0952
+      wer: 0.1579
+    bible_00164:
+      source: bible
+      text: M ka Piilimka, m be kasim boro kama taam wuu.
+      sbs: 0.6574
+      gen_sec: 4.18
+      ref_sec: 3.58
+      cer: 0.0
+      wer: 0.2
+    bible_00165:
+      source: bible
+      text: Baai ale velim a te nuruba la kan te ba kali tɛŋka po, kaasuŋ a jam kaasi baai meena ale ka
+        gaasa nyam la.
+      sbs: 0.7818
+      gen_sec: 9.9
+      ref_sec: 10.4
+      cer: 0.0
+      wer: 0.0
+    bible_00166:
+      source: bible
+      text: Ka wana ate mi ale biisi a te abe m te kaamka?
+      sbs: 0.7651
+      gen_sec: 4.1
+      ref_sec: 5.66
+      cer: 0.0
+      wer: 0.0
+    bible_00167:
+      source: bible
+      text: Dila nyiŋ, ni yaa be a nye ase Yeezu Kirisita ale ka diila.
+      sbs: 0.6531
+      gen_sec: 5.55
+      ref_sec: 3.88
+      cer: 0.0222
+      wer: 0.2308
+    bible_00168:
+      source: bible
+      text: Waai mɛ la bi kan ta niiga yaase duŋ buulim a nyini ate ŋa dɛ jaaboa yaase ŋa nyu nyiamoa.
+      sbs: 0.7412
+      gen_sec: 8.62
+      ref_sec: 9.9
+      cer: 0.0714
+      wer: 0.25
+    bible_00169:
+      source: bible
+      text: Alege tama baai ale poom kan pai yua gebika chim wari la, tama ta yiila kama ayen Wen Chiika
+        pagrim nyiŋ ti le chim ka wayɔrisima nyam Wen jigi.
+      sbs: 0.6957
+      gen_sec: 13.65
+      ref_sec: 12.44
+      cer: 0.0088
+      wer: 0.2414
+    bible_00170:
+      source: bible
+      text: Wen yaa wi tɛŋ kosikka ayen tɛŋ alege a wi nya tii ale chuiri dua jigi yeŋ ka la ayen nyakpiem.
+      sbs: 0.7548
+      gen_sec: 9.05
+      ref_sec: 10.4
+      cer: 0.027
+      wer: 0.2857
+    bible_00171:
+      source: bible
+      text: Wa yaa jam tuesi ŋan baai ate ba te wa la a nye bɔgluk ase naabiik la, a salisi ku.
+      sbs: 0.8033
+      gen_sec: 7.59
+      ref_sec: 8.32
+      cer: 0.0484
+      wer: 0.15
+    bible_00172:
+      source: bible
+      text: Dila nyiŋ Naawen a yaa basi ate ba waaŋ chaab tɛŋka meena zuk ate ba basi tɛŋka sɛka.
+      sbs: 0.7973
+      gen_sec: 8.36
+      ref_sec: 7.96
+      cer: 0.0149
+      wer: 0.0556
+    bible_00173:
+      source: bible
+      text: Ka wana ale biak ŋmoruk tanaŋa ale nyini wenŋmazuk la, ase nyaataŋa a nin pagra ase tintain
+        la, ase nyiamu ŋmazukku a nin goa?
+      sbs: 0.7478
+      gen_sec: 12.63
+      ref_sec: 13.88
+      cer: 0.02
+      wer: 0.0833
+    bible_00174:
+      source: bible
+      text: Dila nyiŋ Abram yaa torisi wa viitaŋa a cheŋ moata Mamre ale bo Yebron la tiib kpieŋsaŋa jigini.
+      sbs: 0.7799
+      gen_sec: 9.81
+      ref_sec: 9.5
+      cer: 0.0641
+      wer: 0.3333
+    bible_00175:
+      source: bible
+      text: <<Fi cheŋ nyakpiemu bulisaŋa jigi ya yaase fi cheŋ nyakpiemu tɛŋka zuwa?
+      sbs: 0.7717
+      gen_sec: 7.59
+      ref_sec: 6.0
+      cer: 0.0345
+      wer: 0.1667
+    bible_00176:
+      source: bible
+      text: Kus nidoabilisaŋa jam ka Sɛba ale Yavila ale Sabta ale Araamaya ale Sabteka.
+      sbs: 0.7746
+      gen_sec: 7.59
+      ref_sec: 9.06
+      cer: 0.0476
+      wer: 0.3077
+    bible_00177:
+      source: bible
+      text: 'Nuru baai ate Nebukadnezzar a ji a ta cheŋ la ale nna: Bena ŋayopɔiwa po jam ka Juuma tusa
+        ŋata ale pisiye ale bata .'
+      sbs: 0.7258
+      gen_sec: 11.18
+      ref_sec: 12.82
+      cer: 0.0989
+      wer: 0.2917
+    bible_00178:
+      source: bible
+      text: Ate Moosis yaa siak ayen, <<Nya mi ale nna.
+      sbs: 0.7464
+      gen_sec: 4.1
+      ref_sec: 6.32
+      cer: 0.0323
+      wer: 0.1111
+    bible_00179:
+      source: bible
+      text: Ni kan pai sebchakka a basi pimpaasima wie po a weeni ayen, <<Naawen yenni ale nna, Naawen
+        yenni, Naawen yenni!
+      sbs: 0.7926
+      gen_sec: 10.75
+      ref_sec: 11.1
+      cer: 0.0233
+      wer: 0.15
+    bible_00180:
+      source: bible
+      text: Alege yɔgyɔgla de, wa biika kummu nyiŋ ate Wen yaa dɛ doata ale ni ayen ku basi ate ni chim
+        nuru weleŋsa wa niŋ.
+      sbs: 0.722
+      gen_sec: 10.75
+      ref_sec: 10.0
+      cer: 0.023
+      wer: 0.0833
+    bible_00181:
+      source: bible
+      text: Basi ate ba pai jiam a te Naawen wa ŋmanteka ale wa wakperikaliisaŋa ate wa nye a te nuruba
+        la.
+      sbs: 0.7629
+      gen_sec: 9.05
+      ref_sec: 8.8
+      cer: 0.12
+      wer: 0.45
+    bible_00182:
+      source: bible
+      text: Nɔiyeŋ dakanni a jam Kiriat Jearim a beni kama a paari bena pisiye.
+      sbs: 0.7592
+      gen_sec: 6.49
+      ref_sec: 5.74
+      cer: 0.0741
+      wer: 0.2308
+    bible_00183:
+      source: bible
+      text: M le ta masim ale suipeentik nuemka a jam kpeglimka jigi.
+      sbs: 0.7293
+      gen_sec: 5.46
+      ref_sec: 4.84
+      cer: 0.0
+      wer: 0.1818
+    bible_00184:
+      source: bible
+      text: Wen viuku a bo ka nuruba suŋsuŋ, wa ale bo ale ba, ate ba ale chim wa nuruba, ate Wen dek
+        ale bo ale ba.
+      sbs: 0.6328
+      gen_sec: 9.56
+      ref_sec: 9.26
+      cer: 0.0
+      wer: 0.16
+    bible_00185:
+      source: bible
+      text: <<Pai tintain ŋaai ale gamisi ŋaye a maŋ du a ŋmarisi Izirali nidoabilisaŋa yue ŋa nyiŋ, a
+        ta va ba biamu ale ka diila.
+      sbs: 0.7998
+      gen_sec: 12.03
+      ref_sec: 11.9
+      cer: 0.087
+      wer: 0.5833
+    bible_00186:
+      source: bible
+      text: Dila nyiŋ m le teeri m nisaŋa a nak Ejipiti demma ale wakinkagla ŋaai ate mi ale tom ba suŋsuŋ
+        la.
+      sbs: 0.7969
+      gen_sec: 9.64
+      ref_sec: 8.98
+      cer: 0.026
+      wer: 0.0952
+    bible_00187:
+      source: bible
+      text: Mi ta m fɔbilika meena a jam ka wa jigi, mi weeni wa kama m daanika meena.
+      sbs: 0.8003
+      gen_sec: 6.74
+      ref_sec: 6.44
+      cer: 0.0179
+      wer: 0.1765
+    bible_00188:
+      source: bible
+      text: Waai ale pai wa miŋka a nye wenzukku la.
+      sbs: 0.7246
+      gen_sec: 3.84
+      ref_sec: 3.68
+      cer: 0.0968
+      wer: 0.3333
+    bible_00189:
+      source: bible
+      text: <<Naawen a kasi fu kama ate fi an ko nuru fi abe an namsi waai ya.
+      sbs: 0.7338
+      gen_sec: 5.89
+      ref_sec: 5.96
+      cer: 0.0208
+      wer: 0.1875
+    bible_00190:
+      source: bible
+      text: Nya si zuk a ga paari chiika daa pi ale ŋanaansi dai ku junɔi ate Izirali demma meena ale
+        tɔgri si la.
+      sbs: 0.7977
+      gen_sec: 9.56
+      ref_sec: 9.88
+      cer: 0.025
+      wer: 0.1818
+    bible_00191:
+      source: bible
+      text: Wa nyiŋtuilaŋa ale wa mulaŋa a kasim bo ka mi niŋ.
+      sbs: 0.7684
+      gen_sec: 5.12
+      ref_sec: 5.1
+      cer: 0.0513
+      wer: 0.1818
+    bible_00192:
+      source: bible
+      text: Ni dan a nye dila ba a jɔk ka nyiŋbiiri wie nyeka po.
+      sbs: 0.6769
+      gen_sec: 4.86
+      ref_sec: 3.78
+      cer: 0.05
+      wer: 0.1538
+    bible_00193:
+      source: bible
+      text: Fi jigi ate mi a suk, kan pai mu a te kummoa.
+      sbs: 0.778
+      gen_sec: 3.93
+      ref_sec: 4.52
+      cer: 0.1562
+      wer: 0.1667
+    bible_00194:
+      source: bible
+      text: Bena ŋatawa ate Naab Nebukadnezzar a jam te la a yaa paari, wa yenni kpagni a yaa ta nuru
+        paalukku meena a jam wa jigi.
+      sbs: 0.7769
+      gen_sec: 11.18
+      ref_sec: 10.12
+      cer: 0.0538
+      wer: 0.24
+    bible_00195:
+      source: bible
+      text: Pak Naawen.
+      sbs: 0.6705
+      gen_sec: 1.11
+      ref_sec: 3.18
+      cer: 0.2222
+      wer: 0.5
+    bible_00196:
+      source: bible
+      text: Ayitub nidoabinni Zadok ale Abiata nidoabinni Ayimelek jam le kaabteerɔma.
+      sbs: 0.7446
+      gen_sec: 7.59
+      ref_sec: 7.44
+      cer: 0.1406
+      wer: 1.0
+    bible_00197:
+      source: bible
+      text: Dai dii ale pasaŋ la, ase Filistia demma ale jam ba kɔlim kpiema ŋantaŋa la, ba yaa nya ale
+        Sɔɔl ale wa nidoabilisaŋa a kpi doa Gilboa Guuku zuk.
+      sbs: 0.789
+      gen_sec: 14.08
+      ref_sec: 11.84
+      cer: 0.1579
+      wer: 0.4138
+    bible_00198:
+      source: bible
+      text: Wa jam pai garuk pali sobluk a nye ŋanyiŋta garuk panni kpeglimka, dila degadega ate wa jam
+        nye ndila mɛ.
+      sbs: 0.7964
+      gen_sec: 10.24
+      ref_sec: 10.38
+      cer: 0.1429
+      wer: 0.75
+    bible_00199:
+      source: bible
+      text: A nyini wa mɛ jigini, Yasabia waai ale jam a nya Keila tɛŋka la ale sɛ a magsi wa tɛŋka demma.
+      sbs: 0.7443
+      gen_sec: 8.87
+      ref_sec: 10.82
+      cer: 0.0694
+      wer: 0.2381
 - model: k2-fsa/OmniVoice-ref
   model_url: https://huggingface.co/k2-fsa/OmniVoice
   mode: ref
@@ -16927,4 +18619,4 @@ benchmarks:
       ref_sec: 10.82
       cer: 0.0972
       wer: 0.3333
-updated: '2026-10-01'
+updated: '2026-10-09'
