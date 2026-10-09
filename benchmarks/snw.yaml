@@ -3525,6 +3525,1763 @@ benchmarks:
       ref_sec: 12.8
       cer: 0.0424
       wer: 0.2069
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7338
+  num_scored: 200
+  cer: 0.0693
+  wer: 0.2126
+  accuracy: 0.9307
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8322
+  score: 0.8322
+  per_source:
+    bible:
+      sbs: 0.7338
+      cer: 0.0693
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Ni di osuɔtɔ nwu nkpo lakaalɛ nwɔ alɛ, “Kɔmɛnfiofa?”
+      sbs: 0.7341
+      gen_sec: 4.78
+      ref_sec: 4.32
+      cer: 0.1
+      wer: 0.2222
+    bible_00001:
+      source: bible
+      text: Bitambla lɛsaa le nimakpɔnɔnfɔsa ye ni kuninwii,
+      sbs: 0.7166
+      gen_sec: 4.61
+      ref_sec: 3.8
+      cer: 0.0732
+      wer: 0.2857
+    bible_00002:
+      source: bible
+      text: Bɛɛkpana di Kɔkpana Klekle Kukũ kamɛ alɛ, Saate nwu labu alɛ,
+      sbs: 0.7261
+      gen_sec: 5.72
+      ref_sec: 4.34
+      cer: 0.0
+      wer: 0.0
+    bible_00003:
+      source: bible
+      text: Bitanta diate nkpo okle di kamɛ lee. Nse onwii lee komiɛ alɛ ale ɔnɔɔfo kaamɛ lee yi, ni dikpe
+        ni eele kpɛmblatɛ ɛɛta babule.
+      sbs: 0.774
+      gen_sec: 11.18
+      ref_sec: 11.74
+      cer: 0.0404
+      wer: 0.25
+    bible_00004:
+      source: bible
+      text: Lɛsaa le di Kristo labuɛ aatɛ alɛ abata wo ni ninle nkpa be ninnaa ni kaloo.
+      sbs: 0.7492
+      gen_sec: 6.57
+      ref_sec: 5.86
+      cer: 0.0
+      wer: 0.0
+    bible_00005:
+      source: bible
+      text: Yesu lakaalɛ ma alɛ, “Be lɛsaa di Yaa kafa nwu nkpo ledie?
+      sbs: 0.7324
+      gen_sec: 5.12
+      ref_sec: 3.8
+      cer: 0.0227
+      wer: 0.1667
+    bible_00006:
+      source: bible
+      text: Ninfɛ di Yesu latɔkɔ nwɔ alɛ, “Nkpikiti nkpe atuɛ ya kamɛ mansiɛ nii, bakansiɛ nkpe ayo mante
+        nii. Kafɔɔ ami Otii Obi, nnaa lɛba katɛ ni disi.”
+      sbs: 0.7462
+      gen_sec: 12.63
+      ref_sec: 10.98
+      cer: 0.0091
+      wer: 0.1111
+    bible_00007:
+      source: bible
+      text: Kafɔɔ nse buobuɛ bulɛ ‘otii nfũ kuokye’ yi, buɔyɛkɛ bulɛ batii ba mmle mabla wo lɛsaa, diekye
+        bamuu lɛma beefũ beenu alɛ Yohane yi, Yaa ɔlaa buɛtɛtɛ aale.”
+      sbs: 0.7318
+      gen_sec: 13.82
+      ref_sec: 14.82
+      cer: 0.0909
+      wer: 0.3214
+    bible_00008:
+      source: bible
+      text: Baakpaa okosopo nwu kafɔɔ baasɛnkɛsa ni baasifiko leyo. Nioso otu late ma.
+      sbs: 0.7541
+      gen_sec: 6.91
+      ref_sec: 5.02
+      cer: 0.1148
+      wer: 0.25
+    bible_00009:
+      source: bible
+      text: Di alɛɛ anyɔ kamɛ, aatuo asaa, ni di ɔlaa biene wɔ mmle labiɛ kuakyaka Asia kasɔ kamuu nɛ.
+        Nioso batii ba ninle ni Yuda batii ku mba ninanle ni Yuda batii kafɔɔ baanu ɔlaa nwu.
+      sbs: 0.7304
+      gen_sec: 15.78
+      ref_sec: 12.46
+      cer: 0.0507
+      wer: 0.1429
+    bible_00010:
+      source: bible
+      text: “Ninfɛ di banumbentɛ nwu nkpo latɔkɔ ma alɛ, ‘Oo, nnɔfɔ be bukle ni dilabawo awo ku aye. Nkpo
+        oso bitɔɔkyɛ basunsutɛ nfũ biɛlaaya.’
+      sbs: 0.7435
+      gen_sec: 11.69
+      ref_sec: 10.62
+      cer: 0.0784
+      wer: 0.1739
+    bible_00011:
+      source: bible
+      text: Kafɔɔ obi lɛfɔ wɔ mmle nintɔɔlalaasa fɔ ni asaa ku basanko basɔnɔkpeetɛ lekple ɛɛwa nii, fatoolo
+        nankyue wɔ ninsi ni lɛla fɛɛtɔɔ nnwɔɔ!’
+      sbs: 0.7719
+      gen_sec: 12.37
+      ref_sec: 10.0
+      cer: 0.0721
+      wer: 0.2174
+    bible_00012:
+      source: bible
+      text: Ninfɛ di Yuda wɔ niadiki nwɔ aata ni kafɔɔ lakaalɛ nwɔ alɛ, “Saatuotɛ, nwaa n-ye nlɛ diele
+        ami falaka, sɛɛ ami dile?”
+      sbs: 0.7296
+      gen_sec: 10.5
+      ref_sec: 10.94
+      cer: 0.1348
+      wer: 0.2273
+    bible_00013:
+      source: bible
+      text: Kuntɛ Kristo ditabla okpile kuonwii yi, Yaa lata aabayila siikpile loo kanya aata wo. Alɛ
+        nse buɔbla onwii ku nnwɔɔ yi, ni Yaa kabu wo fɛ babienetɛ di anu nɔɔ.
+      sbs: 0.7379
+      gen_sec: 14.42
+      ref_sec: 14.02
+      cer: 0.0476
+      wer: 0.2667
+    bible_00014:
+      source: bible
+      text: Nfanwu basaanyuntɛ nɔɔfo ku batii nɔɔ lataka baakyɛ Yaa Olekatakɔ baalaamufũ ma baawako. Batayɔ
+        osie baakpaa ma, diekye baatɔɔyɛkɛ alɛ, batii nwu masafɔ ma afuɔ.
+      sbs: 0.761
+      gen_sec: 15.19
+      ref_sec: 12.7
+      cer: 0.0752
+      wer: 0.24
+    bible_00015:
+      source: bible
+      text: Ni baayiisa kudu osie kanya, baakyako awu lɛma ɔbɛbɛɛ, ni baatɔɔsa kɔtɛ kafɔɔ di osi ku ɔblɔ
+        nɛ.
+      sbs: 0.715
+      gen_sec: 8.53
+      ref_sec: 7.62
+      cer: 0.1447
+      wer: 0.3333
+    bible_00016:
+      source: bible
+      text: Nioso Paulo ku Barnaba lakple baasiɛ di Antiokia ninfa, mma ku batii bamba kpinwu baawɛ ninfa
+        baatootuo asaa, baatooyie Saate ɔlaa biene nwu kafɔɔ lɛkya.
+      sbs: 0.7479
+      gen_sec: 14.25
+      ref_sec: 11.42
+      cer: 0.0476
+      wer: 0.16
+    bible_00017:
+      source: bible
+      text: Mma ninle, Simon wɔ aata ni leyooto alɛ, Petro ku obilɛma suɔtɔbi Andrea ku Yakobo ku Yohane
+        ku Filipo ku Bartolomeo,
+      sbs: 0.7422
+      gen_sec: 10.5
+      ref_sec: 10.92
+      cer: 0.0213
+      wer: 0.0476
+    bible_00018:
+      source: bible
+      text: Yuda batii bawo niakye ni Asia kasɔ niawɛ ninfa. Nse mma dikaatɛ alɛ manwa ɔkyɛ lɛfɔ ninfũ,
+        nse ɔlaa owo nkpe ma di suoto nii, mambuɛ.
+      sbs: 0.7546
+      gen_sec: 12.03
+      ref_sec: 12.12
+      cer: 0.0286
+      wer: 0.0769
+    bible_00019:
+      source: bible
+      text: Yɔ asaatuo ya faanu latuo ni di batii kpinwu anu fatuo batii ba feefũ feenu falɛ beelolaa
+        suoto alɛ baatuo ni batii bamba kafɔɔ.
+      sbs: 0.7336
+      gen_sec: 11.61
+      ref_sec: 11.96
+      cer: 0.0288
+      wer: 0.0833
+    bible_00020:
+      source: bible
+      text: Diɛyɔ ni di obe wɔ di Israel batii ladie ni di Babilon kasɔ suoto di sɛlanle kamɛ, diɛlaase
+        ni di obe wɔ baalofo ni Yesu, bawa nɔɔ ayooto ninle n-ya mmle nɛ.
+      sbs: 0.7379
+      gen_sec: 13.65
+      ref_sec: 14.44
+      cer: 0.041
+      wer: 0.0938
+    bible_00021:
+      source: bible
+      text: Ninfɛ di Yesu layɔ kɔnɛɛ aatika di ɔsanko nwu suoto nɛ. Nfanwu, ɔsanko wɔ mmle niataka aayila
+        wlɔlɔ, aakyako Yaa ɔtansa nɛ.
+      sbs: 0.7234
+      gen_sec: 11.26
+      ref_sec: 8.62
+      cer: 0.0306
+      wer: 0.0909
+    bible_00022:
+      source: bible
+      text: Ninfɛ di Petro ladie di oklo nwu kamɛ aakyako ɔkyɛ di ntu osi, aatoofe Yesu nfũ nɛ.
+      sbs: 0.6908
+      gen_sec: 7.51
+      ref_sec: 7.24
+      cer: 0.0462
+      wer: 0.1176
+    bible_00023:
+      source: bible
+      text: Dii tiɛfa, baayɔ oklo akpɛmblasaa awo baayu di ntu kamɛ.
+      sbs: 0.6867
+      gen_sec: 5.12
+      ref_sec: 4.14
+      cer: 0.0222
+      wer: 0.1
+    bible_00024:
+      source: bible
+      text: Nfanwu, ni baadiɛ asawu lɛma baatɛ, baatikanko nwɔ nɛ.
+      sbs: 0.6949
+      gen_sec: 5.21
+      ref_sec: 5.28
+      cer: 0.0
+      wer: 0.0
+    bible_00025:
+      source: bible
+      text: Mumpɛ Yaa sɛfa diisi lee. Obe lele kafɔɔ nse buɔpɛ ɔlaa munta Yaa, munnyuma ye muntikiti lekokoto
+        di bamuu lee disi.
+      sbs: 0.7771
+      gen_sec: 10.41
+      ref_sec: 9.82
+      cer: 0.0323
+      wer: 0.1905
+    bible_00026:
+      source: bible
+      text: Nkpo oso kɔtɔkɔ fɔ nlɛ afɔ ninle Petro di lɛsɔdiki ninle ni difuɔnkpaa. Difuɔnkpaa le mmle
+        suoto kamatofo bafũbanutɛ nii dikudi nɛ. Bia kukpi osie dilɔbafuo ma olenkee.
+      sbs: 0.7073
+      gen_sec: 15.45
+      ref_sec: 13.9
+      cer: 0.1232
+      wer: 0.5
+    bible_00027:
+      source: bible
+      text: Yuda batii tunletɛ onwii lakaalɛ Yesu alɛ, “Saatuotɛ biene, be kabla fiɛ kawɛ nkpa be ninnaa
+        ni kaloo?”
+      sbs: 0.6871
+      gen_sec: 9.22
+      ref_sec: 8.04
+      cer: 0.0494
+      wer: 0.1667
+    bible_00028:
+      source: bible
+      text: Ɔlaa lɛma lakpɛ Yesu nyaami, ni aakpanko ma anu nɛ. Nfanwu ni baakyako ɔnya nɛ. Ninfɛ baatikanko
+        Yesu nɛ.
+      sbs: 0.7184
+      gen_sec: 9.56
+      ref_sec: 12.68
+      cer: 0.0241
+      wer: 0.1053
+    bible_00029:
+      source: bible
+      text: Diabla ni fɛ lebombo ninwii sɛmaa, osuɔtɔ bamba onwii lakple aabuɛ osie kanya aatika difuɔ
+        alɛ, “Ɔlaa ɔnanfi kuonwii nnaa alɛ osuɔtɔ wɔ mmle diele Yesu tikankotɛ, diekye Galilea otii ale!”
+      sbs: 0.7063
+      gen_sec: 17.49
+      ref_sec: 14.1
+      cer: 0.0789
+      wer: 0.1613
+    bible_00030:
+      source: bible
+      text: Lɛyɔ lɛbɔmbɔ lɛta di Yesu Kristo leyooto kamɛ. Diwa kaanya.
+      sbs: 0.6858
+      gen_sec: 5.38
+      ref_sec: 9.7
+      cer: 0.3125
+      wer: 0.4
+    bible_00031:
+      source: bible
+      text: Stefano ladiki kanya alɛ, “Bate nii ku babiloo, binu. Yaa ladiki leklekle nɔɔ aatuo ɔwa loo
+        Abraham di Mesopotamia kasɔ suoto fiɛ aadie aasifi Haran kasɔ suoto aalaasiɛ.
+      sbs: 0.7583
+      gen_sec: 15.36
+      ref_sec: 14.0
+      cer: 0.0365
+      wer: 0.1786
+    bible_00032:
+      source: bible
+      text: Abraham lalofo Isak, ni di Isak kafɔɔ lalofo Yakob wɔ nialofo ni Yuda ku babilɛma nɛ.
+      sbs: 0.7024
+      gen_sec: 7.59
+      ref_sec: 7.68
+      cer: 0.0588
+      wer: 0.3125
+    bible_00033:
+      source: bible
+      text: Nioso di Yaa ladiki Obi nɔɔ kayi, aaka nwɔ ɔkyɛ lee okyesee, mmle okle aakyakaako ye mindiɛ
+        ni sikpile ɔbla.”
+      sbs: 0.7537
+      gen_sec: 9.73
+      ref_sec: 11.7
+      cer: 0.0581
+      wer: 0.2
+    bible_00034:
+      source: bible
+      text: ‘Flabatuna falɛ Klekletɛ lɛfɔ nwu abuu di ɔkya kamɛ.’
+      sbs: 0.7069
+      gen_sec: 4.78
+      ref_sec: 4.92
+      cer: 0.2381
+      wer: 0.3333
+    bible_00035:
+      source: bible
+      text: Diekye fabale nwɔ ɔlaa buɛtɛ di aba aba fantɔkɔ batii bamuu lɛsaa le fɛɛnya ni ku nle feenu
+        nii.
+      sbs: 0.7071
+      gen_sec: 8.53
+      ref_sec: 9.54
+      cer: 0.0779
+      wer: 0.2105
+    bible_00036:
+      source: bible
+      text: Batii ba nikɔbla ni sikpile yi, dikpe ni feediki ma kayi, feesĩ ɔlaa fɛɛta ma di bafũbanutɛ
+        bamuu anu. Ni, dibata batii bule nyɛkɛ okpile ɔbla.
+      sbs: 0.7518
+      gen_sec: 13.06
+      ref_sec: 12.58
+      cer: 0.0442
+      wer: 0.1923
+    bible_00037:
+      source: bible
+      text: Kafɔɔ Yesu labuɛ alɛ, “N-ye nlɛ otii lɛkpankoe, diekye osie owo ledie mi kaamɛ.”
+      sbs: 0.688
+      gen_sec: 7.0
+      ref_sec: 6.6
+      cer: 0.0492
+      wer: 0.2143
+    bible_00038:
+      source: bible
+      text: Diekye fɛ mmle bɛɛbla ɔsanko beekyeko ni osuɔtɔ kamɛ, nkpo oso kafɔɔ di ɔsanko ninlofo osuɔtɔ
+        nɛ. Yaa nfũ di asaa ya mmle amuu lekye.
+      sbs: 0.742
+      gen_sec: 11.95
+      ref_sec: 11.28
+      cer: 0.0283
+      wer: 0.08
+    bible_00039:
+      source: bible
+      text: Nioso aakpee otii lakyɛ aalaabudi Yohane disi di leyo katenkɔ.
+      sbs: 0.708
+      gen_sec: 5.72
+      ref_sec: 5.56
+      cer: 0.1346
+      wer: 0.5
+    bible_00040:
+      source: bible
+      text: Biye kafɔɔ bilɛ nse otii lɛyɔ suoto nɔɔ ɛɛbla onwii ku sɔnɔkpeetɛ owo, atɔɔbla onwii ku nnwɔɔ
+        di suoto sina kamɛ. Kɔkpana Klekle Kukũ lebuɛ alɛ, “Banyɔ lɛma babakple suoto sina sinwii.”
+      sbs: 0.7282
+      gen_sec: 17.23
+      ref_sec: 14.62
+      cer: 0.0608
+      wer: 0.1562
+    bible_00041:
+      source: bible
+      text: Ni di Yesu lakaalɛ ma alɛ, “Biika di Kɔkpana Klekle Kukũ kamɛ binya? Beebuɛ alɛ,
+      sbs: 0.7636
+      gen_sec: 7.17
+      ref_sec: 6.7
+      cer: 0.0
+      wer: 0.0
+    bible_00042:
+      source: bible
+      text: Diawa alɛ ofiɛ lapɛ nwɔ aakpi. Nioso basiɛwo nɔɔ lakpeesa nwɔ ntu, baalolaa nwɔ baatɛ di ayo
+        ya beetofo beetika ni baawo ninwii kamɛ di osi.
+      sbs: 0.7502
+      gen_sec: 12.89
+      ref_sec: 10.44
+      cer: 0.0089
+      wer: 0.0385
+    bible_00043:
+      source: bible
+      text: Ku batii ba beenyinka bɛɛtɛ ni kaasɔ ku dibuo alɛ, baawɛ ɔnyɛɛ ɔtɛ.
+      sbs: 0.7296
+      gen_sec: 5.97
+      ref_sec: 6.2
+      cer: 0.1887
+      wer: 0.6154
+    bible_00044:
+      source: bible
+      text: Babiloo, buomiɛ bulɛ bitofo lɛsaa le di Yaa ntɔɔbla ni di bafũbanutɛ akudi ya amuu ninkpe
+        ni di Makedonia ntɛɛ nwu ta sibualɛ nɔɔ oso.
+      sbs: 0.721
+      gen_sec: 12.2
+      ref_sec: 10.38
+      cer: 0.0185
+      wer: 0.08
+    bible_00045:
+      source: bible
+      text: Abata batii biene nyila di oletanɛɛkyɛ nɔɔ, anta batii kpile kafɔɔ nyila di ɔmɛtukyɛ nɔɔ.
+      sbs: 0.7314
+      gen_sec: 8.11
+      ref_sec: 6.52
+      cer: 0.0274
+      wer: 0.0667
+    bible_00046:
+      source: bible
+      text: otii wɔ nikobuɛ alɛ ɛɛbla ni onwii ku Yaa, dikpe nii ansiɛ nkpa fɛ mmle okle di Yesu Kristo
+        lasiɛ nii.
+      sbs: 0.7677
+      gen_sec: 8.96
+      ref_sec: 9.14
+      cer: 0.0125
+      wer: 0.0476
+    bible_00047:
+      source: bible
+      text: Nse biebuo leyo lewo kamɛ yi, biɛsɛɛsa ma bilɛ, ‘Atoko ɔkyɛ ole ninle ye lele.’
+      sbs: 0.7627
+      gen_sec: 6.83
+      ref_sec: 6.42
+      cer: 0.0833
+      wer: 0.1333
+    bible_00048:
+      source: bible
+      text: Lɛsaa ninwii le niefĩ ni di basaanyuntɛ nwu nkpo suoto diɛta ni Saate lɛma ninle alɛ, bɛɛbla
+        ɔkpɛ lɛma ku otu biene.
+      sbs: 0.7626
+      gen_sec: 10.67
+      ref_sec: 9.38
+      cer: 0.043
+      wer: 0.1364
+    bible_00049:
+      source: bible
+      text: “Di obe wɔ diapɛ ni abombo anaasĩ, osuɔtɔ nwu nkpo lakple aadie aakyɛ lɛkpaka, aalaanya basuɔtɔ
+        bawo n-yɛ ninfa blɔbla lɛsalɛsaa.
+      sbs: 0.7162
+      gen_sec: 11.95
+      ref_sec: 9.14
+      cer: 0.0385
+      wer: 0.1429
+    bible_00050:
+      source: bible
+      text: Bloblo wɔ ninantaka ni, manlɛɛ ni Okpi Diisi Ofe Dii ole bee latɛɛtɛɛ.
+      sbs: 0.72
+      gen_sec: 6.31
+      ref_sec: 4.64
+      cer: 0.125
+      wer: 0.3077
+    bible_00051:
+      source: bible
+      text: Ninfɛ di Yesu latɔkɔ ma alɛ, “Ni aye kafɔɔ batii ba ninoonu sɛlaa kasɔ biekple bile?
+      sbs: 0.7503
+      gen_sec: 7.34
+      ref_sec: 6.34
+      cer: 0.0
+      wer: 0.0
+    bible_00052:
+      source: bible
+      text: Aawɔɔsa nnle nkuɛnsĩ di Kanaan kasɔ suoto, ni aayɔ ma kasɔ aata Israel batii keekple ma kale
+        nɛ.
+      sbs: 0.7455
+      gen_sec: 8.7
+      ref_sec: 8.92
+      cer: 0.0519
+      wer: 0.2222
+    bible_00053:
+      source: bible
+      text: Nioso, Petro ku Yohane latika ma nnɛɛ di suoto, ni baafũ Yaa Ninwuna Klekle nɛ.
+      sbs: 0.6783
+      gen_sec: 7.25
+      ref_sec: 5.28
+      cer: 0.0161
+      wer: 0.0667
+    bible_00054:
+      source: bible
+      text: Yaa wɔ niabuɛ alɛ, “Lɛkpa dikpa ni di ditunu kamɛ” yi, nnwɔɔ kafɔɔ niɛta lɛkpa nɔɔ lɛkpa di
+        situ loo kamɛ nɛ, alɛ aata muntofo Yaa lɛkpa di Kristo anu.
+      sbs: 0.7389
+      gen_sec: 13.14
+      ref_sec: 12.52
+      cer: 0.0345
+      wer: 0.0667
+    bible_00055:
+      source: bible
+      text: Nse batii bamba nkpe osuku manwɛ lɛsaa makyeko ɔkyɛ lee, ni awo bukpe osuku wɔ mmle okle bulenke
+        ma bia.
+      sbs: 0.7493
+      gen_sec: 9.3
+      ref_sec: 10.1
+      cer: 0.012
+      wer: 0.05
+    bible_00056:
+      source: bible
+      text: Di obe wɔ baawa ni nfũ di ɔlaa wɔ mmle oso yi, ntafenko nwu sɛmaa. Kaleesɛ, ni lata baakpaa
+        osuɔtɔ wɔ mmle baawakoe di kakankɔ nɛ.
+      sbs: 0.7508
+      gen_sec: 11.61
+      ref_sec: 12.48
+      cer: 0.0198
+      wer: 0.0769
+    bible_00057:
+      source: bible
+      text: Yesu ku basaateketetɛ nɔɔ lasifi ntɛɛ be niɛtɛɛtɛɛ ni Kaesarea Filipi okpoo. Nfa aakaalɛ ma
+        alɛ, “Owe baatii kobuɛ alɛ ami, Otii Obi nwu, nle?”
+      sbs: 0.6955
+      gen_sec: 12.8
+      ref_sec: 13.6
+      cer: 0.0625
+      wer: 0.16
+    bible_00058:
+      source: bible
+      text: “Kafɔɔ abatɔkɔ ye alɛ, ‘Ninye ye nfũ biekye nii!’
+      sbs: 0.7497
+      gen_sec: 4.18
+      ref_sec: 3.64
+      cer: 0.0
+      wer: 0.0
+    bible_00059:
+      source: bible
+      text: Babiloo, buotikiti ye lekoto bulɛ, biayɔ dibu minta batunletɛ ba nikotuo ye ni asaa ku okyiini
+        bɔɔkpaa ye ni di Yaa sisuku suoto bɔɔka ye ni.
+      sbs: 0.7691
+      gen_sec: 12.63
+      ref_sec: 13.62
+      cer: 0.0708
+      wer: 0.2308
+    bible_00060:
+      source: bible
+      text: N-ye kafɔɔ nlɛ, nse ntoosifi, batii mataka ye di suoto mansamiisa ye, blɔbanya ye nyaami.
+        Fɛ mmle okle di ɔkplɛle ntikanko ni bafoso ansamiisa ma nii.
+      sbs: 0.7502
+      gen_sec: 13.57
+      ref_sec: 12.68
+      cer: 0.042
+      wer: 0.1923
+    bible_00061:
+      source: bible
+      text: Nkpo bate fɛ babisɔ ba ninsi bookpee ni kɔkyɔ di asaa kasunsukɔ nɛ. Bɔɔtɔkɔ dikudi bamba alɛ,
+      sbs: 0.6951
+      gen_sec: 8.36
+      ref_sec: 7.1
+      cer: 0.16
+      wer: 0.3529
+    bible_00062:
+      source: bible
+      text: Nioso obe wɔ buanya bulɛ, bulɔbafuo nwɔ ni disibu okyisa, buadiɛ nwɔ, ni buabuɛ bulɛ, “Yaa
+        dibiesaa diwa kaanya.”
+      sbs: 0.7578
+      gen_sec: 10.33
+      ref_sec: 9.54
+      cer: 0.0682
+      wer: 0.2105
+    bible_00063:
+      source: bible
+      text: Nwaako kɔtɔkɔ ye nlɛ, namasinnyi nta be mmle okle diidii diɛlaase di dii le di ami ku aye
+        bubanyi ni nta fɔle di Teemi sɛka kalekɔ nwu nkpo kamɛ.”
+      sbs: 0.761
+      gen_sec: 12.89
+      ref_sec: 12.66
+      cer: 0.0783
+      wer: 0.4138
+    bible_00064:
+      source: bible
+      text: Bisɛɛsa bawo di Yaa lɛbɔmbɔ kamɛ fɛ mmle diesiɛko ni.
+      sbs: 0.7047
+      gen_sec: 4.78
+      ref_sec: 4.28
+      cer: 0.4419
+      wer: 1.3
+    bible_00065:
+      source: bible
+      text: Suoto siyɔɔ batii ba baatii ntikanko bɔɔnya ni dibuo, ta basi ni nkpa tinini di Yaa anu oso,
+      sbs: 0.7324
+      gen_sec: 8.11
+      ref_sec: 7.44
+      cer: 0.0959
+      wer: 0.2778
+    bible_00066:
+      source: bible
+      text: Bionyuma bilɛ obe wɔ buawɛ ni di ɔkyɛ lee, buatɔkɔ ye bualesa katũ bulɛ ditikanko le mmle
+        okle mawa wo di suoto. Fɛ mmle biye nii, nni nfɛ nikɔwa nɛ.
+      sbs: 0.7533
+      gen_sec: 13.14
+      ref_sec: 12.84
+      cer: 0.0345
+      wer: 0.2333
+    bible_00067:
+      source: bible
+      text: Ninfɛ di Yesu latɔkɔ ma alɛ, “Bitanyɛkɛ. Bitɔɔkyɛ biɛlaatɔkɔ babiloo bilɛ, batɔɔkyɛ Galilea,
+        babanyɛɛ ninfa.”
+      sbs: 0.7728
+      gen_sec: 10.07
+      ref_sec: 10.24
+      cer: 0.0114
+      wer: 0.0667
+    bible_00068:
+      source: bible
+      text: Obe wɔ lakyɛ ni lɛkyɔtɔ, biatɛɛ asaa laklee. Obe wɔ latoofiɛ nii, bianyu mi. Obe wɔ kafɔɔ
+        late ni leeyo, biawa biabanyu mi.’
+      sbs: 0.7926
+      gen_sec: 10.92
+      ref_sec: 11.02
+      cer: 0.0526
+      wer: 0.087
+    bible_00069:
+      source: bible
+      text: “Nni sɛmma, kokpeelebitɛ bulɛ nwu nkpo kafɔɔ lawa, ni baabuɛ alɛ, ‘Ɔnɔɔfo, Ɔnɔɔfo! Sɛkɛtɛ
+        wo buobuo!’
+      sbs: 0.7484
+      gen_sec: 9.13
+      ref_sec: 10.76
+      cer: 0.0909
+      wer: 0.375
+    bible_00070:
+      source: bible
+      text: Nwaako nse ɛɛnyɔɔ yi, abanya suoto lɛyɔɔ di onwii nwu nkpo suoto anlenkee afosi anaasĩ banaasĩ
+        nwu nkpo niebu nii.
+      sbs: 0.7268
+      gen_sec: 10.92
+      ref_sec: 9.38
+      cer: 0.0538
+      wer: 0.15
+    bible_00071:
+      source: bible
+      text: Nle mmle oso, buɔkaalɛ munkyeko Tito nfũ osie kanya bulɛ, sifutulɛ ɔkpɛ wɔ mmle kasɔ atookye
+        ni kaamɛ lee, aabla ankyɛnko sitũ, anyɛntɛ.
+      sbs: 0.7489
+      gen_sec: 12.63
+      ref_sec: 11.86
+      cer: 0.055
+      wer: 0.2174
+    bible_00072:
+      source: bible
+      text: Obe wɔ di Paulo lasiɛ di Atene aasoko ni Silas ku Timoteo yi, diabuo nwɔ suoto obe wɔ aanya
+        alɛ okpoo nwu batii lɛyɔ suoto bɛɛta ni afiɔ ɔtɔ, di okpoo nwu kafɔɔ layii ni ku afiɔsaa.
+      sbs: 0.7259
+      gen_sec: 16.29
+      ref_sec: 14.32
+      cer: 0.0141
+      wer: 0.027
+    bible_00073:
+      source: bible
+      text: “Kafɔɔ Saate nwu latɔkɔ mi alɛ, ‘Taka, faatɔɔkyɛ, diekye makyesee fɔ fanfa di batii ba ninanle
+        ni Yuda batii kamɛ!’ ”
+      sbs: 0.7208
+      gen_sec: 10.24
+      ref_sec: 8.98
+      cer: 0.1011
+      wer: 0.25
+    bible_00074:
+      source: bible
+      text: Banyɔ lɛma baabuo di oklo nwu nkpo kamɛ, ni kɔɔfɛɛfɔ nwu nkpo ladiɛ ɔfɛ nɛ.
+      sbs: 0.6627
+      gen_sec: 6.83
+      ref_sec: 6.16
+      cer: 0.1356
+      wer: 0.2
+    bible_00075:
+      source: bible
+      text: ku Yakobo wɔ ninle Alfeo obi ku Tadeo
+      sbs: 0.6979
+      gen_sec: 3.24
+      ref_sec: 5.24
+      cer: 0.1333
+      wer: 0.25
+    bible_00076:
+      source: bible
+      text: Obe wɔ baasaateketetɛ nwu nkpo lakple baawa nii, baatɔkɔ Yesu asaa ya amuu baabla nii. Ninfɛ
+        di Yesu lakpaa lete lama aasifiko okpoo wɔ bɔɔlɛɛ ni Betsaida nɛ.
+      sbs: 0.7418
+      gen_sec: 14.34
+      ref_sec: 11.92
+      cer: 0.0781
+      wer: 0.1429
+    bible_00077:
+      source: bible
+      text: Ninfɛ di kufiofa tuotɛ ladiki kanya alɛ, “Otii wɔ nianyɔɔ ni nyaami.”
+      sbs: 0.6918
+      gen_sec: 6.06
+      ref_sec: 4.76
+      cer: 0.0741
+      wer: 0.3333
+    bible_00078:
+      source: bible
+      text: Nfa nfɛ di Yesu layɛntɛ ɔlaa nɔɔ obuɛ ɔtɔkɔ ma alɛ, “Nkpo okle di aye kafɔɔ bilaafuo mi basaateketetɛ
+        ole, diediki biediɛ lɛsaa biala biɛtɛ nɛ.
+      sbs: 0.7125
+      gen_sec: 12.71
+      ref_sec: 11.88
+      cer: 0.0439
+      wer: 0.1154
+    bible_00079:
+      source: bible
+      text: Ninfɛ di Yesu latɔkɔ nwɔ alɛ, “Diele nkpo! Kafɔɔ faayɔ fankyɛ nwɔ afosi akuɛnsĩ, sikuɛnsĩ.
+      sbs: 0.7724
+      gen_sec: 8.53
+      ref_sec: 6.86
+      cer: 0.0563
+      wer: 0.2
+    bible_00080:
+      source: bible
+      text: Kafɔɔ aye, bitɔɔyɔ biɛbla bayu kawofakɔ!”
+      sbs: 0.7299
+      gen_sec: 3.75
+      ref_sec: 3.88
+      cer: 0.1818
+      wer: 0.6667
+    bible_00081:
+      source: bible
+      text: Kafɔɔ bakpɛtɛ ɔnɔɔfo wɔ mmle lafũ oklo kanyayilatɛ ku oklo saate kɔka aalenkee nwɔ di Paulo
+        labuɛ nii.
+      sbs: 0.7146
+      gen_sec: 9.47
+      ref_sec: 8.88
+      cer: 0.0833
+      wer: 0.2778
+    bible_00082:
+      source: bible
+      text: Kafɔɔ sɛlaa se nindie sinkye ni otii kanya kamɛ yi, otii otu kamɛ sinkye. Sɛlaa nwu ninle
+        asaa ya ninta alɛ otii nkpɔnɔnfɔ nɛ.
+      sbs: 0.7759
+      gen_sec: 11.26
+      ref_sec: 10.72
+      cer: 0.04
+      wer: 0.1667
+    bible_00083:
+      source: bible
+      text: Nnle mataka baawo suoto, sɛka nlekɔ kafɔɔ mataka baawo suoto. Nsɔ matũkũ di aba aba. Aka siene
+        kafɔɔ makpɛ di aba aba.
+      sbs: 0.7305
+      gen_sec: 10.75
+      ref_sec: 9.36
+      cer: 0.0645
+      wer: 0.2273
+    bible_00084:
+      source: bible
+      text: Babibate, bitankpee babi lee sɛblɔ, alɛ nnɛɛ dilaafee ma.
+      sbs: 0.704
+      gen_sec: 5.29
+      ref_sec: 4.86
+      cer: 0.087
+      wer: 0.4444
+    bible_00085:
+      source: bible
+      text: Kpee okyiini faabla ɔkpɛ fɛ kpɛmblatɛ wɔ nikobuo ni Yaa anu, siinunsɔ dilɔɔkpɛ ni. Faale otii
+        wɔ nintuo ni Yaa ɔlaa nwaa fɛ mmle kute ni.
+      sbs: 0.7485
+      gen_sec: 12.29
+      ref_sec: 11.74
+      cer: 0.055
+      wer: 0.1154
+    bible_00086:
+      source: bible
+      text: Ni nse lɛlɛɛ lekyi kuofuo abi otika kpinwu, ni kulɛ nɛ. Kafɔɔ nse kúofuo abi otika, ni faafuo
+        kũ obudi oyu nfɛ.’ ”
+      sbs: 0.7644
+      gen_sec: 9.98
+      ref_sec: 11.36
+      cer: 0.1279
+      wer: 0.3182
+    bible_00087:
+      source: bible
+      text: Kafɔɔ biotuo bilɛ, nse otii owo nkpe lɛsaa alɛ ɔɔyɔ ankyakaako ote ee ɔya, eebuɛ alɛ, ‘Lɛyɔ
+        lɛsaa le mmle nlɛ kɔta Yaa’ yi,
+      sbs: 0.7834
+      gen_sec: 10.67
+      ref_sec: 14.02
+      cer: 0.117
+      wer: 0.2917
+    bible_00088:
+      source: bible
+      text: “Nse Otii Obi nwu nkpo lɛwa fɛ Ɔka, di Yaa batɔkyɛntɛ lɛmana nwɔ beekyi yi, abasiɛ di lɛkakpomii
+        nɔɔ suoto.
+      sbs: 0.7749
+      gen_sec: 9.64
+      ref_sec: 9.18
+      cer: 0.0
+      wer: 0.0
+    bible_00089:
+      source: bible
+      text: Di Yaa kamɛ sibilɛma lɛbɔmbɔ yi, diefĩ alɛ kakpana lɛsalɛsaa nkyesee ye. Diekye Yaa omu ntootuo
+        ye mmle biabɔmbɔ ni bawo.
+      sbs: 0.7542
+      gen_sec: 11.09
+      ref_sec: 10.88
+      cer: 0.0714
+      wer: 0.2857
+    bible_00090:
+      source: bible
+      text: Diele awo bamu suoto lɛkya buoyie, kafɔɔ Yesu Kristo ɔlaa lɛkya buoyie munta ye bulɛ, nnwɔɔ
+        ninle Saate nwu. Awo yi, bakpɛmblatɛ bule buɔta ye ta Yesu oso.
+      sbs: 0.7835
+      gen_sec: 14.08
+      ref_sec: 13.6
+      cer: 0.0325
+      wer: 0.1429
+    bible_00091:
+      source: bible
+      text: ‘Ami ninle bawa lee Abraham ku Isak ku Yakob Yaa.’ Mose layɛkɛ aakyako otũtũkũ nioso atasinfuo
+        nfa onyu.
+      sbs: 0.715
+      gen_sec: 9.56
+      ref_sec: 9.8
+      cer: 0.1446
+      wer: 0.5
+    bible_00092:
+      source: bible
+      text: Obe wɔ batanyɔɔ nii, baakple baasifi Yerusalem baalaatoowolaa nwɔ.
+      sbs: 0.6797
+      gen_sec: 6.4
+      ref_sec: 4.62
+      cer: 0.1071
+      wer: 0.3333
+    bible_00093:
+      source: bible
+      text: beetufa ye, beebuɛ kafɔɔ alɛ batii kpile bile ta ami, Otii Obi, oso!
+      sbs: 0.7751
+      gen_sec: 6.06
+      ref_sec: 6.34
+      cer: 0.0192
+      wer: 0.0769
+    bible_00094:
+      source: bible
+      text: Ta ninkpo oso, ninu dilabafuo kɔnɛɛ ɔtɔkɔ alɛ, “Noomiɛ fɔ di lɛsalɛsaa nii kamɛ.” Nkpo okle
+        kafɔɔ diisi dilabafuo kɔkpaa ɔtɔkɔ alɛ, “Noomiɛ fɔ di lɛsalɛsaa nii kamɛ nɛ.”
+      sbs: 0.7836
+      gen_sec: 14.85
+      ref_sec: 14.08
+      cer: 0.0379
+      wer: 0.2414
+    bible_00095:
+      source: bible
+      text: Ta mmle okle biefũ nwɔ bienu ni oso, Yaa mata alɛ minwɛ didiki.
+      sbs: 0.721
+      gen_sec: 5.8
+      ref_sec: 5.76
+      cer: 0.0204
+      wer: 0.0769
+    bible_00096:
+      source: bible
+      text: Ni aatɔkɔ Yesu alɛ, “Nse fabapɛ akunkyi kaasɔ fansumu mi yi, kamayɔ asaa ya mmle ammuu nta
+        fɔ.”
+      sbs: 0.6898
+      gen_sec: 8.28
+      ref_sec: 7.42
+      cer: 0.0548
+      wer: 0.1111
+    bible_00097:
+      source: bible
+      text: Nunua, di koto okũ lɛkyɛ ɔyɔ ɔkyakaako bafũbanutɛ bamba yi, fɛ mmle latɔkɔ ni nsiisakɔ be
+        ninkpe ni di Galatia kasɔ suoto yi, ayee bibla nkpo.
+      sbs: 0.7519
+      gen_sec: 12.89
+      ref_sec: 12.66
+      cer: 0.0619
+      wer: 0.2308
+    bible_00098:
+      source: bible
+      text: Lɛyɛntɛle, batii banyɔ banwii ladie,
+      sbs: 0.6943
+      gen_sec: 3.58
+      ref_sec: 3.26
+      cer: 0.3333
+      wer: 0.6
+    bible_00099:
+      source: bible
+      text: Peleg ote niale Eber, Eber ote niale Sala.
+      sbs: 0.661
+      gen_sec: 3.75
+      ref_sec: 3.68
+      cer: 0.0
+      wer: 0.5
+    bible_00100:
+      source: bible
+      text: Nkpo kafɔɔ anan-yɔ kɔsaanwu aatɔɔ nse ɛɛkaalɛ nwɔ kakpaku nɛ.
+      sbs: 0.7467
+      gen_sec: 5.8
+      ref_sec: 4.42
+      cer: 0.08
+      wer: 0.3
+    bible_00101:
+      source: bible
+      text: aye kafɔɔ minle mi babi suɔtɔbi ku babi sankobi.
+      sbs: 0.6819
+      gen_sec: 4.35
+      ref_sec: 3.2
+      cer: 0.5385
+      wer: 0.7778
+    bible_00102:
+      source: bible
+      text: Nkpo oso baakyɛ baalaatikiti ma lekoto, ni baadiki ma leeyo katenkɔ nɛ. Ni baatɔkɔ ma alɛ
+        badie di okpoo nwu, baatɔɔkyɛ kakɔ bamba.
+      sbs: 0.7402
+      gen_sec: 11.95
+      ref_sec: 10.24
+      cer: 0.0762
+      wer: 0.2174
+    bible_00103:
+      source: bible
+      text: Nwaako biye bilɛ aye ninle Yaa ole Katakɔ. Yaa Ninwuna kafɔɔ nsi ye kaamɛ.
+      sbs: 0.7052
+      gen_sec: 6.83
+      ref_sec: 5.6
+      cer: 0.1017
+      wer: 0.2857
+    bible_00104:
+      source: bible
+      text: Diekye diɛkaatɛ alɛ Yaa kpɛmblatɛ lɛlɔ. Diekye dikpe ni anwɛ sifutulɛ anta batii bamuu, anle
+        saatuotɛ biene, anwɛ otu ɔtɛ kaasɔ.
+      sbs: 0.7814
+      gen_sec: 11.95
+      ref_sec: 11.84
+      cer: 0.0481
+      wer: 0.1905
+    bible_00105:
+      source: bible
+      text: Ni di bakpɛtɛ banɔɔfo ɔnɔɔfo nwu latɔkɔ Paulo alɛ, “Amii, Roma otii nle. Kafɔɔ ami koto dikudi
+        lata fiɛ lekple Roma otii!”
+      sbs: 0.7214
+      gen_sec: 10.84
+      ref_sec: 9.76
+      cer: 0.0211
+      wer: 0.0909
+    bible_00106:
+      source: bible
+      text: Bikusɛkusɛsa Ɔka Dawid sɛka kalekɔ ka nikɔwa ni!
+      sbs: 0.63
+      gen_sec: 4.44
+      ref_sec: 4.98
+      cer: 0.075
+      wer: 0.625
+    bible_00107:
+      source: bible
+      text: Obe wɔ baabuo ni okpoo wɔ bɔɔlɛɛ ni Salami, baasifi Yuda batii kasiisakɔ baalaabuɛ Saate ɔlaa
+        nwu. Marko Yohane kafɔɔ latikanko ma fɛ kyakaakotɛ.
+      sbs: 0.7725
+      gen_sec: 13.4
+      ref_sec: 11.24
+      cer: 0.042
+      wer: 0.125
+    bible_00108:
+      source: bible
+      text: Dikpe nii anle otii wɔ nikofuo ni leyo nɔɔ batii onyu nwaa, anta babi nɔɔ mbu nwɔ nii, mankyɔɔ
+        nwɔ ni ɔlaa kotoko.
+      sbs: 0.7366
+      gen_sec: 10.33
+      ref_sec: 10.24
+      cer: 0.0225
+      wer: 0.087
+    bible_00109:
+      source: bible
+      text: Yuda batii komiɛ sɛkpɛ se niɛbla ni ɔkpɛ alɛ bɔɔnya. Hela batii kafɔɔ komiɛ ninumbe.
+      sbs: 0.7118
+      gen_sec: 7.59
+      ref_sec: 6.52
+      cer: 0.0588
+      wer: 0.2
+    bible_00110:
+      source: bible
+      text: Lɛsaa le kafɔɔ niabla ma ni nyaami ninle alɛ, aabuɛ alɛ, blɔbasinkple banyɔɔ. Ninfɛ baatikanko
+        nwɔ baakpaa nwɔ baalaadunko oklo katũ nɛ.
+      sbs: 0.7621
+      gen_sec: 12.8
+      ref_sec: 13.08
+      cer: 0.045
+      wer: 0.2273
+    bible_00111:
+      source: bible
+      text: Nioso aakpee bakyakaakotɛ nɔɔ banyɔ, Timoteo ku Erasto, ni baale nwɔ katũ baasifi Makedonia
+        nɛ. Ni aakple aasiɛ di Asia ninfa obe kɛkɛɛ aakyakaa nɛ.
+      sbs: 0.7629
+      gen_sec: 13.65
+      ref_sec: 13.64
+      cer: 0.0583
+      wer: 0.16
+    bible_00112:
+      source: bible
+      text: Paulo lasiɛ ninfa obe kɛɛkɛ, ni aasifi aalaafe di Galatia ku Frigia nsɔ suoto nɛ. Ni aatookpee
+        bafũbanutɛ ba niawɛ ni ninfa bamuu osie nɛ.
+      sbs: 0.7427
+      gen_sec: 12.46
+      ref_sec: 11.28
+      cer: 0.1171
+      wer: 0.32
+    bible_00113:
+      source: bible
+      text: Nwaako kɔtɔkɔ ye nlɛ Yaa matuna ma wla. Kafɔɔ nse Otii Obi nwu lɛwa, abanya batii ba niefũ
+        beenu ni kaasɔ ka mmle?”
+      sbs: 0.7392
+      gen_sec: 10.33
+      ref_sec: 10.98
+      cer: 0.0674
+      wer: 0.2609
+    bible_00114:
+      source: bible
+      text: Kafɔɔ bita bukpee ma kufiofa alɛ blasinkakatɛ bata otii kuonwii di Yesu leyooto kamɛ mmle
+        okle di ɔlaa wɔ mmle dilaasinkpɛ ni.”
+      sbs: 0.7288
+      gen_sec: 11.52
+      ref_sec: 9.56
+      cer: 0.0
+      wer: 0.0
+    bible_00115:
+      source: bible
+      text: Kafɔɔ kuonwii ditabuɛ alɛ nnwɔɔ niɛkpanko nwɔ. Ninfɛ di Petro lakaalɛ nwɔ alɛ, “Saate, nyu
+        mmle okle baatii nwu lɛmana fɔ kpinkpĩ beekyi ni!”
+      sbs: 0.6648
+      gen_sec: 13.23
+      ref_sec: 10.22
+      cer: 0.0357
+      wer: 0.0833
+    bible_00116:
+      source: bible
+      text: Obe wɔ kafɔɔ aalaabuo ni Kaesarea, aakyɛ Yerusalem, ni aalaasɛɛsa bafũbanutɛ ba ninkpe ni
+        ninfa nɛ. Ni aafe aasifi Antiokia nɛ.
+      sbs: 0.7482
+      gen_sec: 11.69
+      ref_sec: 10.3
+      cer: 0.0485
+      wer: 0.2381
+    bible_00117:
+      source: bible
+      text: Obe wɔ di Yesu layefe osuku oofe nii, batii kpinwu latikanko nwɔ baamana nwɔ kpinkpĩ baakyi.
+      sbs: 0.6796
+      gen_sec: 8.79
+      ref_sec: 6.18
+      cer: 0.0933
+      wer: 0.3125
+    bible_00118:
+      source: bible
+      text: Yuda kafɔɔ ku ɔsɔfɔ nɔɔ Tamai lalofo Peres ku Sera, ni di Sera kafɔɔ lalofo Hesron nɛ. Hesron
+        kafɔɔ lalofo Aram.
+      sbs: 0.7278
+      gen_sec: 9.98
+      ref_sec: 13.12
+      cer: 0.0225
+      wer: 0.0952
+    bible_00119:
+      source: bible
+      text: Yaa komiɛ alɛ biabla suoto klekle, mindie di lɛsɔnɔkpee okpile kamɛ kenke.
+      sbs: 0.7539
+      gen_sec: 6.83
+      ref_sec: 6.5
+      cer: 0.0656
+      wer: 0.1667
+    bible_00120:
+      source: bible
+      text: Obe wɔ di Herode lakpi ni yi, Yaa tɔkyɛntɛ onwii ladiki suoto aatuo Yosef kɔɔlaafɔ kamɛ di
+        Egipte.
+      sbs: 0.7239
+      gen_sec: 8.87
+      ref_sec: 9.34
+      cer: 0.0
+      wer: 0.0
+    bible_00121:
+      source: bible
+      text: Yaa wɔ kafɔɔ ninye ni batii otu kamɛ, ladiki aatuo alɛ aafũ ma, aata ma kafɔɔ Ninwuna nɔɔ
+        fɛ mmle okle aayɔ aata ni awo kafɔɔ.
+      sbs: 0.7445
+      gen_sec: 11.18
+      ref_sec: 12.98
+      cer: 0.0306
+      wer: 0.1154
+    bible_00122:
+      source: bible
+      text: Baabuo Kaesarea kaleesɛ. Di obe nwu kamɛ Kornelio ntoosiisa leyo nɔɔ batii basi basoko Petro
+        ɔwabee.
+      sbs: 0.7374
+      gen_sec: 9.3
+      ref_sec: 9.32
+      cer: 0.1084
+      wer: 0.3125
+    bible_00123:
+      source: bible
+      text: Diekye bakpisɔfɔ bawo ntookple nkpaamaa batikanko Abonsam.
+      sbs: 0.6894
+      gen_sec: 5.63
+      ref_sec: 4.8
+      cer: 0.1373
+      wer: 0.7143
+    bible_00124:
+      source: bible
+      text: Batii kpinwu lakye Yudea kasɔ ku Yerusalem okpoo kplɛ baakyɛ ɔfaafuu baalaanu Yohane ɔlaa.
+        Baadiki sikpile lɛma baabuɛ ni aakpeesa ma Yaa ntu di Yordan okle kamɛ nɛ.
+      sbs: 0.6736
+      gen_sec: 15.1
+      ref_sec: 11.92
+      cer: 0.0074
+      wer: 0.0357
+    bible_00125:
+      source: bible
+      text: Ninfɛ di Yesu lakaalɛ ma alɛ, “Bienyu bilɛ mmle okle beelo ni Galilea batii ba mmle oso, mma
+        ninle bakpileblatɛ balenke Galilea batii bamuu bule?
+      sbs: 0.7329
+      gen_sec: 13.06
+      ref_sec: 10.96
+      cer: 0.0427
+      wer: 0.12
+    bible_00126:
+      source: bible
+      text: Kafɔɔ ntɔɔpɛ ɔlaa lɛta Yaa diisi lɛfɔ Simon, alɛ ofũ onu lɛfɔ dilaayu. Alɛ nse fɛɛpɛ feekple
+        fɛɛwa ɔkyɛ nii, faakpee babilee suɔtɔbi osie.”
+      sbs: 0.7816
+      gen_sec: 12.63
+      ref_sec: 12.5
+      cer: 0.0721
+      wer: 0.2083
+    bible_00127:
+      source: bible
+      text: Akpaa nwɔ awako leyo. Abalɛɛ basiɛwo nɔɔ ku leyo nɔɔ batii ansiisa antɔkɔ ma alɛ, ‘Suoto kɔtɛ
+        sinyɔɔ mi osie kanya, diekye ntɔɔnya foso nii nwu niayu nii. Biwa biɛbanyakoe suoto lɛyɔɔ!’
+      sbs: 0.7348
+      gen_sec: 16.98
+      ref_sec: 14.5
+      cer: 0.0816
+      wer: 0.1562
+    bible_00128:
+      source: bible
+      text: Ninfɛ di basaateketetɛ nɔɔ nwu lakyako bawo ɔkaalɛ alɛ, owe mɔ kaamɛ lɛma nimabla lɛsaa le
+        mmle okle.
+      sbs: 0.7191
+      gen_sec: 9.22
+      ref_sec: 6.86
+      cer: 0.061
+      wer: 0.2222
+    bible_00129:
+      source: bible
+      text: Ayi awo sɛmaa, Yuda batii lalɛɛ bawo baabla disibu alɛ babalo Saulo.
+      sbs: 0.7199
+      gen_sec: 6.14
+      ref_sec: 5.1
+      cer: 0.0364
+      wer: 0.1667
+    bible_00130:
+      source: bible
+      text: Ee bitanka di kasɔ, diekye Yaa nkpaa kasekɔ kale. Bitanka kafɔɔ di Yerusalem, diekye nwu ninle
+        baka Ɔka nwu okpoo kplɛ nɛ.
+      sbs: 0.7857
+      gen_sec: 11.18
+      ref_sec: 9.98
+      cer: 0.0103
+      wer: 0.0455
+    bible_00131:
+      source: bible
+      text: Nioso obe lele manyumasa ye sɛlaa se mmle, kuntɛ nfɛ biye sĩ kofokofoko bikle kafɔɔ nwaako
+        ɔlaa nwu nkpo biefũ ni osie kanya.
+      sbs: 0.7201
+      gen_sec: 11.61
+      ref_sec: 12.3
+      cer: 0.0198
+      wer: 0.1304
+    bible_00132:
+      source: bible
+      text: Yesu layila ni aalɛɛ ma aawako ɔkyɛ nɔɔ, ni aakaalɛ ma alɛ, “Be biomiɛ bilɛ mbla nta ye?”
+      sbs: 0.7187
+      gen_sec: 7.59
+      ref_sec: 7.58
+      cer: 0.0746
+      wer: 0.1667
+    bible_00133:
+      source: bible
+      text: Kafɔɔ biye bilɛ ninkookaa ye lɛsaa lee nimakyakaako ye nii, nle n-ye ni di Yaa suoto, di Yaa
+        ɔlaa obuɛ ku otuo kamɛ, lɛɛkpaka ku ayo le kamɛ.
+      sbs: 0.7524
+      gen_sec: 12.37
+      ref_sec: 14.72
+      cer: 0.0183
+      wer: 0.0714
+    bible_00134:
+      source: bible
+      text: “Nse dibawɛ osie fiɛ baatii biene kamawɛ didiki mɔ,
+      sbs: 0.6879
+      gen_sec: 4.52
+      ref_sec: 4.44
+      cer: 0.2439
+      wer: 0.7778
+    bible_00135:
+      source: bible
+      text: Nunua be feekple fasoko? Taka, faafũ ntu okpeesa amanle nwu. Faalɛɛ nwɔ, aafotofɔ sikpile
+        adiki di suoto.’
+      sbs: 0.7488
+      gen_sec: 9.98
+      ref_sec: 9.68
+      cer: 0.0476
+      wer: 0.1765
+    bible_00136:
+      source: bible
+      text: Afiofa ya mmle anyɔ suoto di Mose kufiofa ku Yaa ɔlaa babuɛtɛtɛ asaa otuo nkyɛ nɛ.”
+      sbs: 0.7046
+      gen_sec: 7.25
+      ref_sec: 6.6
+      cer: 0.0455
+      wer: 0.1875
+    bible_00137:
+      source: bible
+      text: Kananfi labawɛ osie, ta nkpo oso bakpɛtɛ banɔɔfo ɔnɔɔfo nwu layɛkɛ alɛ babananfi Paulo mambɛbɛɛ.
+        Nioso aatɔkɔ bakpɛtɛ nɔɔ alɛ bakyɛ baalaakpaa nwɔ baatii nwu kamɛ basifiko leyo katenkɔ.
+      sbs: 0.6943
+      gen_sec: 17.57
+      ref_sec: 14.66
+      cer: 0.0455
+      wer: 0.2414
+    bible_00138:
+      source: bible
+      text: Usia lalofo Yotam, ni di Yotam lalofo Ahas nɛ, ni di Ahas kafɔɔ kolofo Hiskia nɛ.
+      sbs: 0.7281
+      gen_sec: 7.17
+      ref_sec: 10.52
+      cer: 0.0476
+      wer: 0.125
+    bible_00139:
+      source: bible
+      text: “Bibu ɔlaa wɔ mmle disi binyu. Osuɔtɔ onwii lawɛ babi suɔtɔbi banyɔ banwii. Ni aakyɛ aalaatɔkɔ
+        ɔnɔɔfo le alɛ, ‘Obi, kyɛ falaabla ɔkpɛ koofe nii miɛ.’
+      sbs: 0.751
+      gen_sec: 13.4
+      ref_sec: 12.3
+      cer: 0.0431
+      wer: 0.1923
+    bible_00140:
+      source: bible
+      text: Nse biekpee okyiini di lɛsaa biene ɔbla suoto, owe nimayila ye di suoto?
+      sbs: 0.7272
+      gen_sec: 6.49
+      ref_sec: 6.74
+      cer: 0.0172
+      wer: 0.0769
+    bible_00141:
+      source: bible
+      text: Nkpo oso ayee bisiɛ bitoonyu osuku, diekye ami, Otii Obi nwu, mawa di obe wɔ minoonyu osuku
+        bitɛɛ nii.”
+      sbs: 0.7595
+      gen_sec: 9.22
+      ref_sec: 8.66
+      cer: 0.025
+      wer: 0.0526
+    bible_00142:
+      source: bible
+      text: Nse biemufũ nwu bieklee osie kanya, bibawɛ didiki. Se diele nkpo, ni ofũ onu lee nwu lɛbla
+        kasakasa.
+      sbs: 0.7637
+      gen_sec: 9.47
+      ref_sec: 7.8
+      cer: 0.038
+      wer: 0.2222
+    bible_00143:
+      source: bible
+      text: Nse batii bawo kɔnya wo fɛ afĩi buobuo yi, Yaa wɔ mumbɔmbɔ ni oso dite wo nkpo. Kafɔɔ nse
+        buloobuo afĩi yi, ni aye lɛlɛ oso dite nkpo.
+      sbs: 0.7484
+      gen_sec: 11.86
+      ref_sec: 12.46
+      cer: 0.1262
+      wer: 0.2857
+    bible_00144:
+      source: bible
+      text: Otii wɔ baayɔɔsa ni ofiɛ ntoofũ alenke alɛɛ afosi ana.
+      sbs: 0.6948
+      gen_sec: 4.95
+      ref_sec: 4.02
+      cer: 0.0682
+      wer: 0.2
+    bible_00145:
+      source: bible
+      text: Diekye kayi ka mmle ninumbe nle dibuusaa di Yaa anu. Nioso di Kɔkpana Klekle Kukũ lebuɛ alɛ,
+        “Banumbentɛ bamu disibu di Yaa n-yɔ andiki ma di okũ.”
+      sbs: 0.7109
+      gen_sec: 13.14
+      ref_sec: 11.0
+      cer: 0.0435
+      wer: 0.1111
+    bible_00146:
+      source: bible
+      text: Nkpo oso obe wɔ di Yosef lasɛnkɛ nii, aayɔ Maria aabla ɔsɔfɔ nɔɔ fɛ mmle di Yaa tɔkyɛntɛ nwu
+        nkpo latɔkɔ nwɔ nii.
+      sbs: 0.7285
+      gen_sec: 10.07
+      ref_sec: 11.82
+      cer: 0.0112
+      wer: 0.0435
+    bible_00147:
+      source: bible
+      text: Nkpo oso nunua yi, bitɔɔkyɛ akpaka biɛlaalɛɛ batii lele biɛnya bilɛ bawa ɔsanko ɔyɔ dii kalekɔ
+        nwu.’
+      sbs: 0.7506
+      gen_sec: 9.13
+      ref_sec: 9.82
+      cer: 0.0864
+      wer: 0.4118
+    bible_00148:
+      source: bible
+      text: Ni aayɔ disi nwu nkpo aakpee di bɛɛsi bɛnkɛɛ kamɛ aawako ɔsankobi nwu nkpo nɛ. Ni di ɔsankobi
+        nwu nkpo kafɔɔ layɔ disi nwu aakyɛnko ɔya nɛ.
+      sbs: 0.7284
+      gen_sec: 12.71
+      ref_sec: 12.1
+      cer: 0.2162
+      wer: 0.2963
+    bible_00149:
+      source: bible
+      text: Nse leyo nwu nkpo batii letuna beefũ ye, ni biɛta atoko ɔkyɛ ole lee lɛsɛɛsa dite ninfa. Kafɔɔ
+        nse baatuna bafũ ye, ni biɛta atoko ɔkyɛ ole lee nwu nkpo lɛsɛɛsa dikple diwa ɔkyɛ lee.
+      sbs: 0.7563
+      gen_sec: 16.72
+      ref_sec: 14.7
+      cer: 0.0625
+      wer: 0.1143
+    bible_00150:
+      source: bible
+      text: Ni kɔɔfɛɛfɔ nwu labalɛ oklo nwu nɛ. Ditaba wo buamunikĩisa oklo nwu buakyɔɔ kɔfɛɛfɔ nwu anu.
+        Nioso buata kɔfɛɛfɔ nwu osuku kuatuka wo kuatɔɔkyɛnko.
+      sbs: 0.7129
+      gen_sec: 14.08
+      ref_sec: 12.5
+      cer: 0.2149
+      wer: 0.4167
+    bible_00151:
+      source: bible
+      text: Ɛhɛɛ, ntoonyuma nlɛ lakpeesa Stefana leyo batii kafɔɔ Yaa ntu. Mma nkpo kamaa, noosinyuma
+        nlɛ lakple lakpeesa batii bamba Yaa ntu.
+      sbs: 0.7693
+      gen_sec: 11.95
+      ref_sec: 12.64
+      cer: 0.0283
+      wer: 0.0952
+    bible_00152:
+      source: bible
+      text: Mimbuɛ kafɔɔ bilɛ, ‘Nse minsiɛ nkpa di bawa lee obe kamɛ yi, nse biɛbla onwii ku mma bilo
+        Yaa ɔlaa babuɛtɛtɛ nwu nkpo.’
+      sbs: 0.7637
+      gen_sec: 10.5
+      ref_sec: 10.42
+      cer: 0.0109
+      wer: 0.0435
+    bible_00153:
+      source: bible
+      text: Kafɔɔ baakakatɛ baata ni ninwuna kpile ninwii, ninwuna kpile nwu labuɛ alɛ, “N-ye Yesu, n-ye
+        kafɔɔ Paulo. Aye mɔ, bawe bile?”
+      sbs: 0.7535
+      gen_sec: 11.61
+      ref_sec: 10.52
+      cer: 0.0737
+      wer: 0.2857
+    bible_00154:
+      source: bible
+      text: Aye bitɔkɔ mi, be biakyɛ bialaanya? Yaa ɔlaa buɛtɛtɛ? Nwaako katɔkɔ ye nii, otii wɔ biakyɛ
+        bialaanya ni nlenke bia Yaa ɔlaa buɛtɛtɛ.
+      sbs: 0.7852
+      gen_sec: 12.03
+      ref_sec: 11.82
+      cer: 0.0667
+      wer: 0.2609
+    bible_00155:
+      source: bible
+      text: Ninfɛ baakyako obuɛ kaamɛ lɛma alɛ, “Mmle munan-yɔ bloblo kuonwii bukle ni oso obuɛ ɔlaa wɔ
+        mmle?”
+      sbs: 0.7184
+      gen_sec: 8.79
+      ref_sec: 8.32
+      cer: 0.026
+      wer: 0.0588
+    bible_00156:
+      source: bible
+      text: abawɛ sifutulɛ kafɔɔ anta mba lɛɛkyakaako lefĩ nii.
+      sbs: 0.7164
+      gen_sec: 4.86
+      ref_sec: 5.52
+      cer: 0.0
+      wer: 0.0
+    bible_00157:
+      source: bible
+      text: Nse otii owo diɛyɔ nwu ole di ɔlaa wɔ mmle suoto, ayee bitankyɔɔ nwɔ ɔlaa atoko.
+      sbs: 0.7242
+      gen_sec: 7.25
+      ref_sec: 7.24
+      cer: 0.1111
+      wer: 0.25
+    bible_00158:
+      source: bible
+      text: Obe wɔ baalaabuo ni Yerusalem, bafũbanutɛ ku batɔkyɛntɛ ku banɔɔfo lɛma lafũ ma nwaa. Ninfɛ
+        di Paulo ku Barnaba latɔkɔ ma asaa ya amuu di Yaa labla aafenko ni di suoto lɛma nɛ.
+      sbs: 0.7312
+      gen_sec: 16.12
+      ref_sec: 12.02
+      cer: 0.0142
+      wer: 0.0909
+    bible_00159:
+      source: bible
+      text: Yaa wɔ ninle ni Saate Yesu Teete, nwɔ buɔtansa ni diesifi ni dinnaa ni kaloo, aye alɛ sɛlaa
+        se kobuɛ nii, site nkpo.
+      sbs: 0.7498
+      gen_sec: 10.33
+      ref_sec: 10.52
+      cer: 0.0778
+      wer: 0.2174
+    bible_00160:
+      source: bible
+      text: Ɔlanle faale fiɛ di Yaa lalɛɛfɔ? Diɛbla lɛsalɛsaa. Kafɔɔ nse osuku nkpe fɔ alɛ faadie di sɛlanle
+        nwu kamɛ, ni faablako nwu ɔkpɛ.
+      sbs: 0.7808
+      gen_sec: 11.69
+      ref_sec: 11.42
+      cer: 0.0686
+      wer: 0.3043
+    bible_00161:
+      source: bible
+      text: Nse buoole Yaa afiofa, ni buofũ buonu bulɛ buye nwɔ.
+      sbs: 0.7454
+      gen_sec: 4.86
+      ref_sec: 5.6
+      cer: 0.122
+      wer: 0.5
+    bible_00162:
+      source: bible
+      text: Ninfɛ di Yesu lalɛɛ obisɔ biibii onwii aabayila ma di anu nɛ.
+      sbs: 0.7097
+      gen_sec: 5.55
+      ref_sec: 5.14
+      cer: 0.0204
+      wer: 0.0833
+    bible_00163:
+      source: bible
+      text: Nse ɛɛbla fɔ okpile sikuɛnsĩ, di dii ninwii kamɛ, eekple ɛɛwafɔ ɔkyɛ di sikuɛnsĩ nwu nkpo
+        kamɛ, ɛɛbatikiti fɔ lekoto, faayɔ fakyɛ nwɔ.”
+      sbs: 0.7405
+      gen_sec: 12.71
+      ref_sec: 11.2
+      cer: 0.0467
+      wer: 0.2609
+    bible_00164:
+      source: bible
+      text: Kafɔɔ nwaako ɔlaa kule alɛ Yaa lasɛnkɛsa Kristo aakyeko bakpi kamɛ. Nle mmle ninle lɛtaafuɔ
+        le ninkotuo alɛ batii ba niekpi bate nii, babasɛnkɛsa ma.
+      sbs: 0.7546
+      gen_sec: 13.65
+      ref_sec: 14.16
+      cer: 0.041
+      wer: 0.16
+    bible_00165:
+      source: bible
+      text: Di basa ku basɔfɔ suoto yi, kokpee ma Saate kufiofa ninanle ami omu kufiofa kule ni. Dinaa
+        alɛ ɔsanko lesĩ ɔsa.
+      sbs: 0.7613
+      gen_sec: 9.98
+      ref_sec: 9.76
+      cer: 0.0568
+      wer: 0.2381
+    bible_00166:
+      source: bible
+      text: Diele Beelsebul osie kule. Kafɔɔ Yaa Ninwuna niɛtɛɛ osie kotososa anwuna kpile ndiki baatii
+        kamɛ. Nle mmle kotuo alɛ Yaa sɛka kalekɔ ntɔɔwa ye kamɛ kofokofoko.
+      sbs: 0.7357
+      gen_sec: 14.76
+      ref_sec: 13.2
+      cer: 0.0687
+      wer: 0.1154
+    bible_00167:
+      source: bible
+      text: Nunua, bawe ninle wo osuku onyu, suoto lɛyɔɔ ku lɛkakoto le suoto bubakanta ni se Saate loo
+        Yesu lɛwa? Mma ninle aye nɛ.
+      sbs: 0.7862
+      gen_sec: 10.67
+      ref_sec: 11.52
+      cer: 0.1064
+      wer: 0.2609
+    bible_00168:
+      source: bible
+      text: Kafɔɔ obe wɔ baakyɛ nii, batanya ma! Nioso baakple babatɔkɔ ma alɛ,
+      sbs: 0.7613
+      gen_sec: 6.06
+      ref_sec: 4.9
+      cer: 0.0
+      wer: 0.0
+    bible_00169:
+      source: bible
+      text: Kafɔɔ Farisi batii labuɛ alɛ, “Anwuna kpile ɔka niɛtɔɔ osie nwu akle ootososa anwuna kpile
+        andiki.”
+      sbs: 0.6958
+      gen_sec: 9.22
+      ref_sec: 7.88
+      cer: 0.1625
+      wer: 0.25
+    bible_00170:
+      source: bible
+      text: Di obe nwu nkpo kamɛ kafɔɔ, Petro lakple aayila aatɔɔpɛ ɔpɛ kokloo kɔnɛɛ. Ni baalaasɛkɛtɛ
+        nii nnwɔɔ diale, diabla ma ɔkpɛ osie kanya.
+      sbs: 0.7431
+      gen_sec: 12.29
+      ref_sec: 10.3
+      cer: 0.0374
+      wer: 0.1739
+    bible_00171:
+      source: bible
+      text: Bilolaa binyu, biɛta anu lee ate kesekese, ta bieye dii le diɛ obe nwu mawo nii.
+      sbs: 0.7618
+      gen_sec: 7.17
+      ref_sec: 6.96
+      cer: 0.1129
+      wer: 0.25
+    bible_00172:
+      source: bible
+      text: Ni aadiɛ ma aakyɛ sitũ kɛɛkɛ, ni aapɛ akunkyi aapɛ ɔlaa aata Yaa nɛ.
+      sbs: 0.6971
+      gen_sec: 6.06
+      ref_sec: 5.42
+      cer: 0.1132
+      wer: 0.2143
+    bible_00173:
+      source: bible
+      text: Komiɛ nlɛ kamɛ kakpa ye klekle nlɛ, di lɛkanko di nwu suoto yi, otii biala ɔlaakuu lele atooyibuɛ
+        yi, abata nwu nkuntaa.
+      sbs: 0.7612
+      gen_sec: 10.92
+      ref_sec: 12.04
+      cer: 0.0737
+      wer: 0.4091
+    bible_00174:
+      source: bible
+      text: Kuntɛ bukpe osuku fɛle Kristo batɔkyɛntɛ alɛ abiesaa loo katika ye di suoto yi,
+      sbs: 0.7394
+      gen_sec: 7.17
+      ref_sec: 6.44
+      cer: 0.1692
+      wer: 0.4286
+    bible_00175:
+      source: bible
+      text: Nle mmle sɛmaa, Saate nwu ladiki basuɔtɔ afosi akuɛnsĩ basuɔtɔ banyɔ bamba, aakpee ma banyɔ
+        banyɔ alɛ bakyɛ sekpoo ku nkpayotũ be kamɛ ɔɔwa ni ɔbakyɛ.
+      sbs: 0.7116
+      gen_sec: 13.91
+      ref_sec: 10.58
+      cer: 0.0574
+      wer: 0.1923
+    bible_00176:
+      source: bible
+      text: ‘Bilolaa osuku bitɛ bita Saate nwu ɔwabee.
+      sbs: 0.6946
+      gen_sec: 3.84
+      ref_sec: 4.68
+      cer: 0.1765
+      wer: 0.4286
+    bible_00177:
+      source: bible
+      text: “Lɛ diɛbla fɔɔnya diku biibii le ninsi ni di owo lɛfɔ ninu, kafɔɔ fɔlɔɔnya kawosoku ka ninsi
+        fɔ ni leele kamɛ?
+      sbs: 0.7452
+      gen_sec: 9.64
+      ref_sec: 7.84
+      cer: 0.1379
+      wer: 0.381
+    bible_00178:
+      source: bible
+      text: Ni di ɔnɔɔfo wɔ mmle lakyɛ bakpɛtɛ banɔɔfo ɔnɔɔfo nwu nfũ alaakaalɛ nwɔ alɛ, “Be falɛ fɔɔblaa?
+        Osuɔtɔ wɔ mmle Roma otii ale lo!”
+      sbs: 0.7334
+      gen_sec: 11.52
+      ref_sec: 10.48
+      cer: 0.06
+      wer: 0.25
+    bible_00179:
+      source: bible
+      text: “Basiɛwo, kɔtɔkɔ ye nlɛ, bitanyɛkɛ batii ba ninlo ni suoto sina, ninni kamaa, lɛsalɛsaa nsinnaa
+        ma babakple manfuo ni ɔbla.
+      sbs: 0.7303
+      gen_sec: 11.18
+      ref_sec: 10.22
+      cer: 0.0714
+      wer: 0.25
+    bible_00180:
+      source: bible
+      text: Otii wɔ ninkakatɛ ni di sele ate ate kamɛ yi, apɛ ɔlaa ata Yaa alɛ aatɔɔ lɛtasaa alɛ aayɔ
+        antoodiki sɛlaa se ambuɛ ni kasɔ.
+      sbs: 0.7304
+      gen_sec: 10.75
+      ref_sec: 10.56
+      cer: 0.0515
+      wer: 0.12
+    bible_00181:
+      source: bible
+      text: Nunua Kristo ntoosifi osi asi di Yaa oletanɛɛkyɛ, oole sɛka di Yaa batɔkyɛntɛ ku situmi se
+        ninkpe ni di osi ku basiɛntɛ suoto.
+      sbs: 0.7449
+      gen_sec: 11.26
+      ref_sec: 14.88
+      cer: 0.0686
+      wer: 0.2174
+    bible_00182:
+      source: bible
+      text: Ni baakaalɛ nwɔ alɛ ase ɔka ata ma. Ni di Yaa lata ma Kis obi Saul wɔ niakye ni Benyamin kɔna
+        kamɛ, aale sɛka alɛɛ afosi ana nɛ.
+      sbs: 0.7481
+      gen_sec: 11.09
+      ref_sec: 13.52
+      cer: 0.0612
+      wer: 0.2143
+    bible_00183:
+      source: bible
+      text: Nle mmle oso nnɛɛ diloofee wo kuntɛ suoto loo se mmle sina kɔwɔɔ kɛɛkɛkɛɛkɛ, kafɔɔ buye bulɛ
+        ninwuna loo kamɛ nkpa osiɛ kɔbla lɛfɔle obe lele.
+      sbs: 0.7488
+      gen_sec: 12.8
+      ref_sec: 12.4
+      cer: 0.0783
+      wer: 0.4231
+    bible_00184:
+      source: bible
+      text: Di afa nɔɔ ɔbla labla ma ni ɔkpɛ di obe kpinwu kamɛ oso, mankyɔɔ nwɔ ɔlaa atoko.
+      sbs: 0.7326
+      gen_sec: 7.17
+      ref_sec: 6.0
+      cer: 0.0
+      wer: 0.0
+    bible_00185:
+      source: bible
+      text: Kafɔɔ buɔyɔ nwu bublako ɔkpɛ. Buayɔ lɛsaa biala buatika di suoto buɛɛ, mmle okle di Kristo
+        ɔlaa biene nwu kakyɛ ni sitũ, kundu ni kakɔ biala.
+      sbs: 0.7748
+      gen_sec: 12.89
+      ref_sec: 13.02
+      cer: 0.0536
+      wer: 0.1923
+    bible_00186:
+      source: bible
+      text: Ni di Yesu lakaalɛ ma alɛ, “Bloblo akudi asɛ bikle?”
+      sbs: 0.6833
+      gen_sec: 4.44
+      ref_sec: 4.06
+      cer: 0.0769
+      wer: 0.2
+    bible_00187:
+      source: bible
+      text: Obe wɔ baalɛɛ mi ni lɛka kasale alɛ ndiki ni suoto kanya, kuonwii lɛma ditayila mi kamaa,
+        bamuu lɛma baasĩ mi. Yaa atannanfi ma kootoko, ayɔ akyɛ ma.
+      sbs: 0.7729
+      gen_sec: 13.48
+      ref_sec: 12.7
+      cer: 0.0342
+      wer: 0.1071
+    bible_00188:
+      source: bible
+      text: Nioso bita buyɔ katansa ku dibu buta Yaa kafa ɔka wɔ ninnaa ni kaloo, mananya ni, leete nɔɔ
+        ninle ni ɔka. Diwa kaanya.
+      sbs: 0.7456
+      gen_sec: 10.41
+      ref_sec: 10.52
+      cer: 0.0652
+      wer: 0.2174
+    bible_00189:
+      source: bible
+      text: Afɔ yi, obi nii, kpee osie di onwii loo ɔbla kamɛ ku Yesu Kristo sibualɛ se ɛɛta wo ni kamɛ.
+      sbs: 0.7502
+      gen_sec: 8.02
+      ref_sec: 7.92
+      cer: 0.0143
+      wer: 0.05
+    bible_00190:
+      source: bible
+      text: Diefe ni di ɔlaa biene loo obuɛ kamɛ, ni di Yaa lalɛɛ ye alɛ biawa mimawɛ kalekɔ di Saate
+        Yesu Kristo leyooto kamɛ nɛ.
+      sbs: 0.7657
+      gen_sec: 10.33
+      ref_sec: 12.1
+      cer: 0.0645
+      wer: 0.1667
+    bible_00191:
+      source: bible
+      text: Kainan ote niale Enos, Enos ote niale Set,
+      sbs: 0.6998
+      gen_sec: 3.75
+      ref_sec: 3.36
+      cer: 0.0303
+      wer: 0.125
+    bible_00192:
+      source: bible
+      text: Nni kamaa, Abonsam lakpaa Yesu aasifiko Yerusalem aalaatika nwɔ di Yuda batii Yaa Olekatakɔ
+        lɛkya kapiɔ̃piɔ̃kɔ, ni aatɔkɔ nwɔ alɛ, “Nse Yaa obi fale, faayefe fakye ninfũ fasifi kasɔ.
+      sbs: 0.6876
+      gen_sec: 17.23
+      ref_sec: 13.16
+      cer: 0.0822
+      wer: 0.2414
+    bible_00193:
+      source: bible
+      text: Di Festo lababuo ni sɛka kalekɔ nɔɔ di ayi atiɛ sɛmaa, aadie di Keasarea aakyɛ Yerusalem.
+      sbs: 0.7299
+      gen_sec: 8.02
+      ref_sec: 8.16
+      cer: 0.1528
+      wer: 0.4375
+    bible_00194:
+      source: bible
+      text: Di obe nwu kamɛ yi, Herode wɔ niatoole ni sɛka di Galilea kasɔ suoto lanu Yesu leyooto.
+      sbs: 0.7459
+      gen_sec: 7.77
+      ref_sec: 7.3
+      cer: 0.0
+      wer: 0.0
+    bible_00195:
+      source: bible
+      text: Kafɔɔ kofe nwu nkpo banyuntɛ latɔkɔ bawo alɛ, ‘Nnya kofe saate obi wɔ nimale ni atesaa ninle
+        nwɔ mmle nɛ. Biwa biɛta bulo nwɔ di atesaa nɔɔ nwu nkpo akple wo ale!’
+      sbs: 0.7297
+      gen_sec: 14.59
+      ref_sec: 13.38
+      cer: 0.0472
+      wer: 0.1875
+    bible_00196:
+      source: bible
+      text: Suoto latɔɔyɔɔ ma osie kanya, di lɛsaa nwu labla ma ni ɔkpɛ, batafuo ofũ onu. Ninfɛ di Yesu
+        lakaalɛ ma alɛ, “Lelesaa lewo nkpe ye ninfũ?”
+      sbs: 0.754
+      gen_sec: 12.29
+      ref_sec: 9.66
+      cer: 0.0286
+      wer: 0.0769
+    bible_00197:
+      source: bible
+      text: Kafɔɔ baakple baayiisa kudu baalenkeesa kɔkasale alɛ, “Pɛ nwɔ sibuɛ fakaasa koowoso suoto!
+        Pɛ nwɔ sibuɛ fakaasa koowoso suoto!”
+      sbs: 0.6528
+      gen_sec: 11.86
+      ref_sec: 8.26
+      cer: 0.0481
+      wer: 0.2632
+    bible_00198:
+      source: bible
+      text: Nioso fiɛ di Yesu mawa nii, Ntu Kpeesatɛ Yohane lawa aabatɔkɔ Israel batii bamuu alɛ, bakyi
+        di sikpile lɛma kamɛ, baatika Yaa anu, baakpeesa ma Yaa ntu.
+      sbs: 0.7613
+      gen_sec: 13.65
+      ref_sec: 14.84
+      cer: 0.0
+      wer: 0.0
+    bible_00199:
+      source: bible
+      text: “Ee nse koto fututu lefosi nkpe ɔsanko owo, eeyu kunwii, lɛ ambla? Ansɔ kandiɛ anse, anfiɛ
+        leyo nɔɔ kamɛ anwolaa kũ nwaa ninaase di obe wɔ ɛɛnya kũ nii.
+      sbs: 0.772
+      gen_sec: 13.91
+      ref_sec: 12.8
+      cer: 0.0932
+      wer: 0.3448
 - model: ghananlpcommunity/ghana-tts-36k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: ref
@@ -17581,4 +19338,4 @@ benchmarks:
       ref_sec: 12.8
       cer: 0.2458
       wer: 0.931
-updated: '2026-10-03'
+updated: '2026-10-09'

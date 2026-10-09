@@ -1749,6 +1749,1744 @@ benchmarks:
       ref_sec: 14.84
       cer: 0.0148
       wer: 0.0789
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7337
+  num_scored: 200
+  cer: 0.0536
+  wer: 0.1529
+  accuracy: 0.9464
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.84
+  score: 0.84
+  per_source:
+    bible:
+      sbs: 0.7337
+      cer: 0.0536
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Mu yaa funɛ tum ya kunyan ti tuma awa jɛɛgisi nɛɛ. Hali Ju tim ta funɛ na nyinbaanasa di mu
+        namsi kinkan chen ni mu zi wiu, nannɛ mu funɛ tum.
+      sbs: 0.717
+      gen_sec: 12.12
+      ref_sec: 9.54
+      cer: 0.0459
+      wer: 0.0968
+    bible_00001:
+      source: bible
+      text: O na kinkin naa yogla kpokee a kaali a maga, o la yogli o kina maga a bur kaali baŋyɔɔka ti
+        tiin wati a la yau un.”
+      sbs: 0.7631
+      gen_sec: 9.64
+      ref_sec: 9.76
+      cer: 0.0814
+      wer: 0.1481
+    bible_00002:
+      source: bible
+      text: Koosa fun naami ya di ya la o bara falɛ na. O funɛ kpa o siim weri ti a nyɛ ya di o ya o purigiri
+        bɔɔli di o sir zi ya chenu.
+      sbs: 0.7617
+      gen_sec: 10.07
+      ref_sec: 9.22
+      cer: 0.022
+      wer: 0.0606
+    bible_00003:
+      source: bible
+      text: a dɛu nyinbaan ba duŋduŋ chenani ba zi ya a kpak Yesu a kpu un.
+      sbs: 0.6923
+      gen_sec: 5.55
+      ref_sec: 5.88
+      cer: 0.0
+      wer: 0.0
+    bible_00004:
+      source: bible
+      text: Ma zaami nɛnɛ, amaa ba bambe wa to ma wati.
+      sbs: 0.7431
+      gen_sec: 3.67
+      ref_sec: 3.36
+      cer: 0.0312
+      wer: 0.3
+    bible_00005:
+      source: bible
+      text: Chen saha ti Yesu gantɛl tiŋsi ta fun wa o wati a pɛɛsi un, “Ba naa maga Koosa dɔ, anti ya
+        ba nihɛɛ?”
+      sbs: 0.7412
+      gen_sec: 8.45
+      ref_sec: 8.06
+      cer: 0.027
+      wer: 0.0435
+    bible_00006:
+      source: bible
+      text: Ya kunyan ti fun vɔu di o zi nyɛ ya o mi fali naa vɛ kpak bɔu.
+      sbs: 0.7553
+      gen_sec: 4.95
+      ref_sec: 5.04
+      cer: 0.0667
+      wer: 0.1176
+    bible_00007:
+      source: bible
+      text: Yesu fun ŋɔ ba naa nyɛn doon maga ni, “Ba naa maga nu Koosa laaboor weri ti a tiŋ un, ba waa
+        ya mu numa awa mu niinbisa.”
+      sbs: 0.6912
+      gen_sec: 10.15
+      ref_sec: 8.52
+      cer: 0.0337
+      wer: 0.0714
+    bible_00008:
+      source: bible
+      text: Domi i kpak jirima awa chaani wa kpok kinkan hali saha naa vɛ kpak bɔ. Ami.))’
+      sbs: 0.7239
+      gen_sec: 6.74
+      ref_sec: 6.92
+      cer: 0.1897
+      wer: 0.1875
+    bible_00009:
+      source: bible
+      text: ‘Mu kunyana Koosa funɛ ŋɔ mu kunyan ni,
+      sbs: 0.694
+      gen_sec: 3.41
+      ref_sec: 4.22
+      cer: 0.0667
+      wer: 0.375
+    bible_00010:
+      source: bible
+      text: Ba fun a saksi bun yuga a lagmi dɔŋ ni a nyɛ nara chuŋi a, amaa ba wa fun kpa ba nisa a gbaŋsi
+        bun tima.
+      sbs: 0.7577
+      gen_sec: 8.87
+      ref_sec: 8.22
+      cer: 0.0
+      wer: 0.0769
+    bible_00011:
+      source: bible
+      text: Jɔn fun ŋɔ un, “Mu kunyana, ya funɛ na baal digirɛ ka o kpa i sɔn aa duŋni alizin tagna a
+        li nara ni. O wa fun ya ya nidigi. Chendaha ya fun ŋɔ un di o gil.”
+      sbs: 0.7588
+      gen_sec: 13.14
+      ref_sec: 10.92
+      cer: 0.0088
+      wer: 0.0789
+    bible_00012:
+      source: bible
+      text: Yesu funɛ zim chenani ba ŋɔ dɔŋ niu, o fun jɛɛgi jɛɛgɛ a ŋɔ ba,
+      sbs: 0.7093
+      gen_sec: 5.63
+      ref_sec: 4.76
+      cer: 0.0
+      wer: 0.0
+    bible_00013:
+      source: bible
+      text: a pɔ di ma na Koosa waali tɛɛnɛ nɔ maga sɛria diili a kpak un ma bambe ni di o wa lalaga.
+        Chen wuzu ti din zi wa chɔk buudahau.
+      sbs: 0.7362
+      gen_sec: 10.67
+      ref_sec: 10.68
+      cer: 0.0625
+      wer: 0.1667
+    bible_00014:
+      source: bible
+      text: Ba ya chen, ba zi kotiu a chiŋsi ba kina saha naa la wa nan a koti a kpak Koosa wuti miisa
+        naa o zi kpa nyɛ ba.
+      sbs: 0.6728
+      gen_sec: 9.22
+      ref_sec: 3.18
+      cer: 0.0488
+      wer: 0.1071
+    bible_00015:
+      source: bible
+      text: a tuk min wa vurmsi ni a kpu min. Wuzu butora wuzu Koosa zi lɛli minu a li mu sou ni.”
+      sbs: 0.7454
+      gen_sec: 7.0
+      ref_sec: 6.48
+      cer: 0.0635
+      wer: 0.1905
+    bible_00016:
+      source: bible
+      text: Ba funɛ sɛm peti, Koosa dam kɔkɔɔrsi ta awa sɛria nidiile ta maga funɛ nyini Stivin se ni
+        a na ka o se chi Koosa malaikasi ta digi se.
+      sbs: 0.7337
+      gen_sec: 11.52
+      ref_sec: 13.14
+      cer: 0.0385
+      wer: 0.2069
+    bible_00017:
+      source: bible
+      text: Chenani o fun te ŋɔ ba di o wa zi bu na ba fun chɔk ba tusa kinkan, ka ba gil un o zu arŋ
+        ti.
+      sbs: 0.7289
+      gen_sec: 7.59
+      ref_sec: 9.84
+      cer: 0.0303
+      wer: 0.0385
+    bible_00018:
+      source: bible
+      text: Amaa Yesu funɛ na o titiu a val zɛmɛ ta bambaan ni a kaali.
+      sbs: 0.6771
+      gen_sec: 4.95
+      ref_sec: 4.66
+      cer: 0.0222
+      wer: 0.0714
+    bible_00019:
+      source: bible
+      text: Mu fun ŋɔ Koosa dam kɔkɔɔrsi ta awa tɔhɔn ti nihɛɛti ta di ba lagmi dɔŋ ni a kpa un kaali
+        ba suwachak di mu zim chenani o ya Ju tim ta fiksi un.
+      sbs: 0.7247
+      gen_sec: 12.29
+      ref_sec: 10.32
+      cer: 0.0364
+      wer: 0.0882
+    bible_00020:
+      source: bible
+      text: Chenani ya ya bambi chaanɛ tima a zim Koosa nɛnɛ a kpak kanyita wa nara ni a ya jɛrgɛ tima,
+        a kpak o siim weri ti a li ya bambe ni a la daŋni ya dɔŋtima wa tu bɛgim ni,
+      sbs: 0.7787
+      gen_sec: 14.25
+      ref_sec: 12.28
+      cer: 0.0236
+      wer: 0.1
+    bible_00021:
+      source: bible
+      text: Waa la zi yisi ya a li ya tum tagna ni ya tiŋ un.
+      sbs: 0.6996
+      gen_sec: 4.01
+      ref_sec: 4.48
+      cer: 0.0857
+      wer: 0.2857
+    bible_00022:
+      source: bible
+      text: Doone Yesu fun burgi a ŋɔ zɛmɛ ta ni, “Mu nyan ti funɛ kpa kina magau a nyɛ min. Mu wa mu
+        nyan ti duŋduŋ zim dɔŋa. Mu nyɛ ba naa mu lisi zim o gbanko.
+      sbs: 0.7756
+      gen_sec: 12.8
+      ref_sec: 12.42
+      cer: 0.0273
+      wer: 0.0833
+    bible_00023:
+      source: bible
+      text: Ba fun na paan a du nitumɛ nara balɛ ta ni, domi ba waa ŋɔ zɛmɛ ta ni di Koosa lɛlɛ Yesu a
+        li o sou ni. Nan funɛ biksi ba di Koosa zi wa lɛli narau wuzu digi a li ba sou ni.
+      sbs: 0.7466
+      gen_sec: 14.25
+      ref_sec: 14.82
+      cer: 0.0315
+      wer: 0.1818
+    bible_00024:
+      source: bible
+      text: Agripa fun ŋɔ un, “Mu lisi di sɛm tam nɔ i sɛm min nan i daŋni mu ya Yesu nitiŋirɛ.”
+      sbs: 0.7178
+      gen_sec: 7.17
+      ref_sec: 6.86
+      cer: 0.0492
+      wer: 0.15
+    bible_00025:
+      source: bible
+      text: “Mu bur wa, Koosa koor ti zi wa chi baal naa la saksi di o li o dam ni a gbau. O fun yir o
+        tumtumsa a fun a kpa o kina maga a du ba nisa ni.
+      sbs: 0.7757
+      gen_sec: 11.09
+      ref_sec: 11.02
+      cer: 0.0303
+      wer: 0.0526
+    bible_00026:
+      source: bible
+      text: Ma waa funɛ kpa Yesu laaboor weri ti a wa ŋɔ ba o wɛ, ba naa nyɛn bawu maga ni funɛ nu ma
+        wɛu di ma se su Koosa. Ya wa bur a daŋni ya sɛm kinkan.
+      sbs: 0.7616
+      gen_sec: 12.03
+      ref_sec: 10.22
+      cer: 0.0094
+      wer: 0.0811
+    bible_00027:
+      source: bible
+      text: A wuzu ti Yesu fun li dam ti ni a bu wa bɛɛŋ ti nɔ a wa kani a biksi nara Koosa wɛ.
+      sbs: 0.6817
+      gen_sec: 6.74
+      ref_sec: 8.32
+      cer: 0.0167
+      wer: 0.0435
+    bible_00028:
+      source: bible
+      text: Nibine ka kpa o si a tum tum tagna, o yisi o si ti a yo ta. Nibine naa kpak si bɛgim a kpak
+        Koosa miisa, waa bɔɛɛ wa o kpak se lɛ a la zu din dam ti.”
+      sbs: 0.776
+      gen_sec: 12.03
+      ref_sec: 11.86
+      cer: 0.0374
+      wer: 0.2051
+    bible_00029:
+      source: bible
+      text: Zɛmɛ ta funɛ lisi ba bambe niu a gbaari di Jɔn funɛ ya Kristo naa Koosa fun ŋɔ di o zi tumu.
+      sbs: 0.7326
+      gen_sec: 7.77
+      ref_sec: 7.46
+      cer: 0.0
+      wer: 0.0
+    bible_00030:
+      source: bible
+      text: Hali saha zi wa telu di ma Yesu nitiŋɛ ta bɔnɛ zi wa siu a suni wɛ, chen ni bɔnɛ zi purigiu
+        a la tiŋ ba.
+      sbs: 0.7494
+      gen_sec: 8.79
+      ref_sec: 7.64
+      cer: 0.013
+      wer: 0.1154
+    bible_00031:
+      source: bible
+      text: Naa wɛ Devid fun sɔbi chen awa Yesu ya nibɛgimnɛ. Ya funɛ nau awa ya se ni ka Koosa lɛli un
+        a li o sou ni,
+      sbs: 0.7318
+      gen_sec: 8.79
+      ref_sec: 9.9
+      cer: 0.0759
+      wer: 0.1923
+    bible_00032:
+      source: bible
+      text: Amaa o vɛɛn ya chiksi falirɛ, domi lalaknɔ birsa saha kaalu, ka chaani saha ka wa di o wa
+        chiŋi o bar chiŋi ni. Yesu wa ma tiŋ chiksi fali nɔwa.
+      sbs: 0.7506
+      gen_sec: 12.71
+      ref_sec: 11.62
+      cer: 0.0273
+      wer: 0.129
+    bible_00033:
+      source: bible
+      text: Ba funɛ na namsi kinkan, amaa chenani ba funɛ na namsi, chene ba fun vɛɛn a na tu sɔɔna kinkan.
+        Ba ya fara timwa kinkan, amaa ba funɛ lisiu a li ba kina tam ni a wa nyɛ nara ni.
+      sbs: 0.7497
+      gen_sec: 15.27
+      ref_sec: 14.44
+      cer: 0.0075
+      wer: 0.075
+    bible_00034:
+      source: bible
+      text: Yesu fun ŋɔ ba, “Ma titi nyɛ ba diwe ba di.”
+      sbs: 0.6946
+      gen_sec: 3.58
+      ref_sec: 3.22
+      cer: 0.0
+      wer: 0.0
+    bible_00035:
+      source: bible
+      text: Waa la zi kpa o kpok a nyɛ ma maa tiŋ un nɛnɛ, chen ni o wa bur wa, o wa zi bu na ma galimsa.
+      sbs: 0.7894
+      gen_sec: 7.51
+      ref_sec: 7.02
+      cer: 0.0615
+      wer: 0.0769
+    bible_00036:
+      source: bible
+      text: Ma funɛ li di ma na Koosa witinsi ta digirɛɛ? Mu funɛ ŋɔ mau di ma na nibine naa kaali Koosa
+        witinsi ta magau.
+      sbs: 0.7566
+      gen_sec: 9.56
+      ref_sec: 9.14
+      cer: 0.0471
+      wer: 0.0833
+    bible_00037:
+      source: bible
+      text: Ma funɛ sɔbi tɔnnɛ a pɛɛsi min sela a naa ba yaa kɔrigi a nyɛ vursi ni chen wɛ.
+      sbs: 0.7011
+      gen_sec: 6.57
+      ref_sec: 4.58
+      cer: 0.1
+      wer: 0.2632
+    bible_00038:
+      source: bible
+      text: Koosa dam kɔkɔɔrsi ta awa Farisi tim ta fun gil un a la daŋni ba mo o lo a na chenani o zi
+        sɛm ka ba na nyinbaan a kpu un.
+      sbs: 0.7368
+      gen_sec: 10.07
+      ref_sec: 12.24
+      cer: 0.022
+      wer: 0.0645
+    bible_00039:
+      source: bible
+      text: O zi ŋɔ au di a kpa a nisa a chak hin,
+      sbs: 0.7078
+      gen_sec: 2.99
+      ref_sec: 3.34
+      cer: 0.2308
+      wer: 0.25
+    bible_00040:
+      source: bible
+      text: Amaa ba naa la daŋni ba ya malɛ tima, sintana zi wa zaamsi bau a mo ba lo a li ba womsa awa
+        ba tum tagna daŋni ni, chen ni ba zi wa chɔku kinkan.
+      sbs: 0.7685
+      gen_sec: 12.29
+      ref_sec: 10.98
+      cer: 0.037
+      wer: 0.1714
+    bible_00041:
+      source: bible
+      text: O fun ya chen a kpaksi nyin damata cham ti daŋni o chɛɛsi.
+      sbs: 0.7065
+      gen_sec: 5.03
+      ref_sec: 5.16
+      cer: 0.0444
+      wer: 0.0769
+    bible_00042:
+      source: bible
+      text: Koosa ya nibɛgimnɛ. Yesu Kristo gbanko ya nibɛgimnɛ a fun wa tɛɛnɛ nɔ maga a wa ya nibine,
+        chen ni o zi la mo ninu Koosa wati a nyɛ ya.
+      sbs: 0.7438
+      gen_sec: 11.52
+      ref_sec: 9.16
+      cer: 0.0194
+      wer: 0.0667
+    bible_00043:
+      source: bible
+      text: Yesu nitiŋɛ ba naa nyɛn Azia pulum ni zaami mau. Akwila, Prisila awa Yesu nitiŋɛ ba naa yaa
+        lagmi ba dam ni, ba gbanko zaami mau kinkan ya kunyan Yesu daha.
+      sbs: 0.7414
+      gen_sec: 13.91
+      ref_sec: 12.1
+      cer: 0.0492
+      wer: 0.1613
+    bible_00044:
+      source: bible
+      text: Ma zimu chenani ya kunyan Yesu Kristo funɛ daŋni ya a la suŋi ya kinkan. O funɛ kpa o kidamatiwa
+        a ta, a fun a ya fara tiina ma daha, chen ni ma zi lau a li o kidamati ta ni.
+      sbs: 0.7196
+      gen_sec: 15.01
+      ref_sec: 11.04
+      cer: 0.0308
+      wer: 0.1707
+    bible_00045:
+      source: bible
+      text: Chene ma vɛɛn a mur nara di ma tum tum werewa, amaa ma tusa su wa tum tagna awa nusunsiwa.”
+      sbs: 0.7557
+      gen_sec: 7.68
+      ref_sec: 6.86
+      cer: 0.0145
+      wer: 0.05
+    bible_00046:
+      source: bible
+      text: Mu la sɛm ma nan, mu daŋni mu suŋi mau. Mu wara daŋni mu tɔ ma nyinbaan. Mu daŋni ma ya wi
+        naa deŋlee ka nyɛ ma si sɛri aa kitum ya kunyan ti tuma duŋduŋ.
+      sbs: 0.7634
+      gen_sec: 13.65
+      ref_sec: 10.92
+      cer: 0.0087
+      wer: 0.0833
+    bible_00047:
+      source: bible
+      text: Wuzu digi Farisi tim ta nidigi fun ŋɔ Yesu ni di o wa o dama o wa un di diwe. Yesu fun kaali
+        a la lagmi un ni ba di.
+      sbs: 0.7324
+      gen_sec: 9.56
+      ref_sec: 9.94
+      cer: 0.0235
+      wer: 0.0667
+    bible_00048:
+      source: bible
+      text: Farisi tim ta fun pɛɛsi un, “Chenani i ŋɔ, chen ya wutirɛ, amaa baŋnɛ Mosis funɛ biksi nara
+        saha digi di nar vɛ o haan, o sɔbi tɔn a biksi nara di o vɛ unu?”
+      sbs: 0.7647
+      gen_sec: 13.4
+      ref_sec: 12.52
+      cer: 0.0086
+      wer: 0.0286
+    bible_00049:
+      source: bible
+      text: amaa ba funɛ tɛsiu kinkan a ŋɔ, “Nyɛ ba kpa un a la kpaasi a mari daakakli daha ni o sou.”
+      sbs: 0.6209
+      gen_sec: 7.51
+      ref_sec: 10.66
+      cer: 0.0303
+      wer: 0.0952
+    bible_00050:
+      source: bible
+      text: Nara maga zi ha mau domi maa tiŋ min daha. Nar di kanyita a vusi hali muksi ti wa peti, Koosa
+        zi wa yisi unu a li un ni.
+      sbs: 0.7384
+      gen_sec: 10.07
+      ref_sec: 10.36
+      cer: 0.0225
+      wer: 0.1379
+    bible_00051:
+      source: bible
+      text: ‘Koor Devid walɛ chi damnɛ mu fun sa ka o chel.
+      sbs: 0.6973
+      gen_sec: 3.84
+      ref_sec: 4.6
+      cer: 0.3429
+      wer: 0.4545
+    bible_00052:
+      source: bible
+      text: Kin nama wɛwa ya biksi nara tima. Koosa kpa o siim weri tirɛ a nyɛ ba naa tiŋ o nɔ. O gbanko
+        la biksi ba chen.”
+      sbs: 0.6804
+      gen_sec: 9.3
+      ref_sec: 10.12
+      cer: 0.0244
+      wer: 0.0769
+    bible_00053:
+      source: bible
+      text: O funɛ sou chene, chen ni ba naa la o mi fali ti wa zi bu tiŋ ba titi tutɔ, amaa ba zi tiŋ
+        unu naa funɛ sou a si o sou ni ba daha.
+      sbs: 0.7546
+      gen_sec: 10.67
+      ref_sec: 10.18
+      cer: 0.086
+      wer: 0.1714
+    bible_00054:
+      source: bible
+      text: Ya daŋni ya biksi ma kin naa maga o yarɛ ya fun na a nu, chen ni ya wa ma zi lagmiu a li sɛm
+        nan ni. Ya wa Koosa awa o be Yesu Kristo ya maga kpak nɔ bɛgimnɛ.
+      sbs: 0.7371
+      gen_sec: 13.06
+      ref_sec: 14.02
+      cer: 0.0086
+      wer: 0.025
+    bible_00055:
+      source: bible
+      text: O fun a nyɛ zɛmɛ ta maga kani tɛɛnɛ ni.
+      sbs: 0.689
+      gen_sec: 3.24
+      ref_sec: 3.12
+      cer: 0.1379
+      wer: 0.4
+    bible_00056:
+      source: bible
+      text: Tɔhɔn ti nihɛɛti ta awa zɛmɛ ta funɛ nu ba sɛma, o fun muksi ba kinkan.
+      sbs: 0.7059
+      gen_sec: 6.06
+      ref_sec: 5.84
+      cer: 0.1111
+      wer: 0.25
+    bible_00057:
+      source: bible
+      text: Chenani o daŋni o yisi ya a li ya tum tagna ni chi nha yaa yɛli chene.
+      sbs: 0.691
+      gen_sec: 5.97
+      ref_sec: 7.42
+      cer: 0.3019
+      wer: 0.5294
+    bible_00058:
+      source: bible
+      text: O wara daŋni mu sɔbi ma chenani ma zi daŋni dɔŋa, domi Koosa titi funɛ piin biksi ma nanu.
+      sbs: 0.7107
+      gen_sec: 8.11
+      ref_sec: 5.66
+      cer: 0.0143
+      wer: 0.0526
+    bible_00059:
+      source: bible
+      text: “Saha naa mu fun nyɛn Jɛrusalɛm ni, o funɛ vusiu ka mu la dooni. Ju tim ta bɔnɛ fun lagmi
+        malɛ a du mu nin ni di mu kpa la Jɛrusalɛm. Mu gbanko fun la dooni di mu jɛɛmi Koosa.
+      sbs: 0.7409
+      gen_sec: 14.93
+      ref_sec: 13.18
+      cer: 0.0687
+      wer: 0.15
+    bible_00060:
+      source: bible
+      text: “Mu fun bur kaali Jɛrusalɛm a la zu Koosa bar jɛɛmi dam ti di mu sumi un. Mu sumi ti bambaan
+        ni,
+      sbs: 0.7314
+      gen_sec: 8.02
+      ref_sec: 7.06
+      cer: 0.0694
+      wer: 0.1364
+    bible_00061:
+      source: bible
+      text: Koosa witiina naa ba fun yir Azaaya funɛ sɔbi Jɔn wɛ a li Koosa sɛm tɔn ti ni saha digi. O
+        fun ŋɔ,
+      sbs: 0.7201
+      gen_sec: 8.36
+      ref_sec: 8.22
+      cer: 0.0
+      wer: 0.087
+    bible_00062:
+      source: bible
+      text: Ma nyɛ mu ŋɔ ma tama a gbaari mu titi wɛ ni. Chenani mu zi ŋɔ ma wa zi suŋi ma kinkan, amaa
+        nyinbaan wa to mu zi vɛ sɛm ma. Wuzu digirɛ Koosa fun suŋi min di mu na ya kunyan ti.
+      sbs: 0.7415
+      gen_sec: 15.27
+      ref_sec: 13.4
+      cer: 0.0763
+      wer: 0.186
+    bible_00063:
+      source: bible
+      text: Zɛmɛ ta fun wa lagmi Pailɔt dam til ni. O fun pɛɛsi ba, “Ma daŋni mu yisi Barabasrɛ a nyɛ
+        ma koo mu yisi Yesu naa ba yir Kristo chen a nyɛ maa?”
+      sbs: 0.6888
+      gen_sec: 12.03
+      ref_sec: 12.44
+      cer: 0.0093
+      wer: 0.0303
+    bible_00064:
+      source: bible
+      text: Yaa sumi Koosau saha maga awa ba bambe ni di o nyɛ ya wa na ma bura, chen ni ya zi bukoo gbaari
+        chenani ya fun piin biksi ma chenu a li Yesu nyinbaan tiŋi ti wɛ ni.
+      sbs: 0.7638
+      gen_sec: 13.91
+      ref_sec: 11.4
+      cer: 0.024
+      wer: 0.1842
+    bible_00065:
+      source: bible
+      text: O nyan ti fun ŋɔ un, ‘N be, i waa nyɛn dam nɛɛ saha maga. Kin naa maga n kpak ya i kinawa,
+      sbs: 0.7486
+      gen_sec: 7.34
+      ref_sec: 7.54
+      cer: 0.0159
+      wer: 0.1304
+    bible_00066:
+      source: bible
+      text: Domi ma funɛ kɔɔri vuk na a jɛɛmi a daha,
+      sbs: 0.7079
+      gen_sec: 3.41
+      ref_sec: 3.14
+      cer: 0.1613
+      wer: 0.3
+    bible_00067:
+      source: bible
+      text: Mu sɔbi tɔn nɔwa a nyɛ ma, o wa ya di ma wa zim wuti ti. Ma zim wuti ti nɛnɛ, ma zi zim di
+        nusuna wara li un ni.
+      sbs: 0.7598
+      gen_sec: 8.96
+      ref_sec: 9.6
+      cer: 0.0
+      wer: 0.0
+    bible_00068:
+      source: bible
+      text: Witinsi ta nidamata ba naa vɛ zim Koosa, zi wa wau a mur nara kinkan,
+      sbs: 0.7756
+      gen_sec: 5.97
+      ref_sec: 5.42
+      cer: 0.0189
+      wer: 0.0667
+    bible_00069:
+      source: bible
+      text: Ma sɛm nama biksɛɛ di ma ya ba naa funɛ kpu Koosa witinsi ta chen, bisiwa.
+      sbs: 0.7546
+      gen_sec: 6.4
+      ref_sec: 5.58
+      cer: 0.0526
+      wer: 0.125
+    bible_00070:
+      source: bible
+      text: Ba wa lagmi a di diwe wuzu zen wuzu, ba yaa daŋni ba di nihɛɛta bar diili nee. Ba yaa daŋni
+        ba kani kor were ni a li ba bar lagmi dɛɛni ta ni.
+      sbs: 0.7687
+      gen_sec: 12.03
+      ref_sec: 10.84
+      cer: 0.0472
+      wer: 0.2059
+    bible_00071:
+      source: bible
+      text: Lalaknɔ ma kpak kidamatau. Chendaha o weru di ma lisi a li a ni a suŋi ba naa la daŋni a.
+        Ba kpak kidamata ka ma wa daŋni a, ba zi suŋi mau. Nan ni ma wa chel a li kundɔŋ ni.
+      sbs: 0.7662
+      gen_sec: 15.18
+      ref_sec: 13.92
+      cer: 0.0312
+      wer: 0.2619
+    bible_00072:
+      source: bible
+      text: Saha naa ya fun wa ma wati chen, ma funɛ la ya a duu a nu ya sɛma. Nara maga ŋɔ yau chenani
+        ma gil vuga jirima nyɛɛli a burgi a tiŋ Koosa naa ya wuti tiina awa miisa tiina.
+      sbs: 0.758
+      gen_sec: 14.68
+      ref_sec: 12.38
+      cer: 0.0154
+      wer: 0.05
+    bible_00073:
+      source: bible
+      text: Pɔɔl funɛ sɛm peti, o wa ba fun gbiri tɛɛnɛ ni a sumi Koosa.
+      sbs: 0.6967
+      gen_sec: 5.03
+      ref_sec: 4.36
+      cer: 0.0444
+      wer: 0.1429
+    bible_00074:
+      source: bible
+      text: Nuha para naa n zi kpa a nyɛ ma nan, o wa bɔm. Bun naa n zi kpa a chuk ma nan, a wa yuk.”
+      sbs: 0.7811
+      gen_sec: 6.91
+      ref_sec: 10.84
+      cer: 0.0333
+      wer: 0.08
+    bible_00075:
+      source: bible
+      text: Ba funɛ sɔbi Jɔn wɛu a li Koosa sɛm tɔn ti ni saha digi di Koosa ŋɔ,
+      sbs: 0.7162
+      gen_sec: 5.72
+      ref_sec: 4.26
+      cer: 0.0784
+      wer: 0.2353
+    bible_00076:
+      source: bible
+      text: Ɛlaija awa Mosis fun vaan yɛli a wa li Yesu wati a sɛm sɛma.
+      sbs: 0.6834
+      gen_sec: 5.03
+      ref_sec: 5.14
+      cer: 0.1304
+      wer: 0.2857
+    bible_00077:
+      source: bible
+      text: Mu chɛna, ta tiŋ chenani o tiŋi. Kitum tum were nyinbaan. Naa la tum tum were, Koosa dɔ un.
+        Amaa naa ka la tum tum tagna, Koosa wa dɔ un.
+      sbs: 0.7409
+      gen_sec: 11.95
+      ref_sec: 12.9
+      cer: 0.0594
+      wer: 0.2
+    bible_00078:
+      source: bible
+      text: “Ma koti a kpa kobosa lɛ a yau zimebisa nyuu a li yau ni. Koosa nin nyɛn a maga ni.
+      sbs: 0.748
+      gen_sec: 6.83
+      ref_sec: 5.74
+      cer: 0.0492
+      wer: 0.25
+    bible_00079:
+      source: bible
+      text: Amaa ba fun moori. Yesu fun a tiibi baal ti a nyɛ o kaali.
+      sbs: 0.7221
+      gen_sec: 4.86
+      ref_sec: 4.32
+      cer: 0.0465
+      wer: 0.0714
+    bible_00080:
+      source: bible
+      text: “Maa nu mu sɛm na nɛnɛ. Maa daŋni ma dɔma. Maa tum tum were a nyɛ ba naa ha ma ni.
+      sbs: 0.7684
+      gen_sec: 6.74
+      ref_sec: 5.54
+      cer: 0.0517
+      wer: 0.0952
+    bible_00081:
+      source: bible
+      text: Baal nɔ, n ŋɔ un di Koosa gil o tum tagna a nyɛ un koo n ŋɔ un di o si a val, o leema bɔm?
+      sbs: 0.7401
+      gen_sec: 7.25
+      ref_sec: 7.72
+      cer: 0.0323
+      wer: 0.0385
+    bible_00082:
+      source: bible
+      text: Mu wara daŋni mu nyɛ o bɔm ma wati, a vɛ bɔm ba naa ma suŋi chen wati.
+      sbs: 0.7769
+      gen_sec: 5.97
+      ref_sec: 6.1
+      cer: 0.0392
+      wer: 0.1111
+    bible_00083:
+      source: bible
+      text: “Nibuksi wa to a la zi zim a kaali o nibiksi. Yom wa to a zen a kaali o kunyana.
+      sbs: 0.7407
+      gen_sec: 6.49
+      ref_sec: 7.18
+      cer: 0.0172
+      wer: 0.25
+    bible_00084:
+      source: bible
+      text: Mu kpa mu daŋniu a nyɛ ma maga Yesu Kristo sɔn daha.
+      sbs: 0.7207
+      gen_sec: 4.52
+      ref_sec: 8.54
+      cer: 0.125
+      wer: 0.3333
+    bible_00085:
+      source: bible
+      text: Ba funɛ nyini buudaha ni chene, nara balɛ vaan wa chiŋi ba suwachak ni ka ba kilaarɛ pilimi
+        a la chaani.
+      sbs: 0.7704
+      gen_sec: 9.22
+      ref_sec: 8.1
+      cer: 0.0854
+      wer: 0.2381
+    bible_00086:
+      source: bible
+      text: Ma naa kpak yosa, ma ya nɛnɛ a nyɛ ba. Ma lisi di ma kunyan ti nyɛn a li Koosa tɔhɔn ti ni.
+      sbs: 0.7683
+      gen_sec: 7.51
+      ref_sec: 7.42
+      cer: 0.0303
+      wer: 0.1304
+    bible_00087:
+      source: bible
+      text: Amaa nimurɛ ba naa la tum tum tagna zi wa tumu aa gbaari. Ba wa la mur nara awa ba titi.
+      sbs: 0.7884
+      gen_sec: 7.34
+      ref_sec: 7.22
+      cer: 0.0152
+      wer: 0.0476
+    bible_00088:
+      source: bible
+      text: O fun ŋɔ, “Ya kunyana naa ya Ju tim Koosa,
+      sbs: 0.7198
+      gen_sec: 3.58
+      ref_sec: 3.76
+      cer: 0.2333
+      wer: 0.3
+    bible_00089:
+      source: bible
+      text: Ma Farisi tim ta, ma naa chi nyuluma. Ma te chaksi ma tusa ka nara zi zim di maa tum tum were
+        wutirɛ.
+      sbs: 0.7597
+      gen_sec: 8.53
+      ref_sec: 7.36
+      cer: 0.0395
+      wer: 0.087
+    bible_00090:
+      source: bible
+      text: Yɛrɛ o kaa wa du ma ni? Ma chi hugilsa naa ba vɛ danirɛ. Chendaha nara val a daha ni aa vɛ
+        zimi.”
+      sbs: 0.7592
+      gen_sec: 8.02
+      ref_sec: 6.26
+      cer: 0.0282
+      wer: 0.087
+    bible_00091:
+      source: bible
+      text: Nandigi vɛ nyini o titi walɛ, o wa tiŋ Koosa nɛnɛ. O tum tagna a kaali ba naa vɛ zim Koosa,
+        domi ba waa koti a nyini ba walɛ.
+      sbs: 0.7812
+      gen_sec: 10.67
+      ref_sec: 9.26
+      cer: 0.0108
+      wer: 0.0345
+    bible_00092:
+      source: bible
+      text: Yesu Kristo daŋni yau kinkan. Ya zimu di waa chiŋɛ nara maga bar chiŋɛ ni a sou ba daha. O
+        la daŋni ya chen daha, ya se sɛrɛu di ya tum o tuma.
+      sbs: 0.7631
+      gen_sec: 12.46
+      ref_sec: 9.56
+      cer: 0.0561
+      wer: 0.1818
+    bible_00093:
+      source: bible
+      text: O fun di diwe o kpok bu bur a wa. Doone o fun nyɛn Yesu nitiŋɛ ba naa nyɛn Damaskus ni chen
+        wati wuzu bilɛ.
+      sbs: 0.7349
+      gen_sec: 9.13
+      ref_sec: 8.88
+      cer: 0.037
+      wer: 0.12
+    bible_00094:
+      source: bible
+      text: Nara tima funɛ nu chenani Yesu sɛm o sɛm ta peti, ba fun ŋɔ un, “Wutirɛ ba wa zi tum chen.”
+      sbs: 0.746
+      gen_sec: 7.59
+      ref_sec: 7.6
+      cer: 0.0303
+      wer: 0.0476
+    bible_00095:
+      source: bible
+      text: O fun si a gba aa go Judia pulum a la biksi nara Koosa wɛ a li ba bar lagmi dɛɛni ni.
+      sbs: 0.6876
+      gen_sec: 6.91
+      ref_sec: 8.18
+      cer: 0.0476
+      wer: 0.1818
+    bible_00096:
+      source: bible
+      text: Doone Koosa dam kɔkɔɔrsi ta nihɛɛ ti fun ŋɔ Stivin ni, “Chenani nara nama fiksi hin nan ya
+        wutirɛɛ?”
+      sbs: 0.6891
+      gen_sec: 8.79
+      ref_sec: 6.7
+      cer: 0.0385
+      wer: 0.1053
+    bible_00097:
+      source: bible
+      text: Si a chiŋi. Mu wa i watiu di mu wa lisi hin i ya mu tumtumna. Mu daŋni i la ŋɔ nara niu chenani
+        i wa min pu dɔŋa zinan awa kin nawara mu zi biksi hin.
+      sbs: 0.7532
+      gen_sec: 12.8
+      ref_sec: 12.12
+      cer: 0.009
+      wer: 0.0811
+    bible_00098:
+      source: bible
+      text: Chenani mu daŋni mu ŋɔ ma ya di vursi ta kidigi wa ya kundɔŋ, akoo kikɔɔrɛ ta ba kɔɔri aa
+        nyɛ a chen, a wa ya kundɔŋ.
+      sbs: 0.782
+      gen_sec: 10.33
+      ref_sec: 10.42
+      cer: 0.1023
+      wer: 0.3333
+    bible_00099:
+      source: bible
+      text: A wuzu naa o vɛ lisi di o kunyan ti zi wau, o zi wau.
+      sbs: 0.752
+      gen_sec: 4.18
+      ref_sec: 3.52
+      cer: 0.0
+      wer: 0.0
+    bible_00100:
+      source: bible
+      text: Yesu wa bur wa, ya zi wa ya kina maga petiu.
+      sbs: 0.6873
+      gen_sec: 3.67
+      ref_sec: 3.16
+      cer: 0.1875
+      wer: 0.5455
+    bible_00101:
+      source: bible
+      text: Ba funɛ la pu unu a jɛɛmi un, ba bɔnɛ funɛ beeli di Yesu laata.
+      sbs: 0.7307
+      gen_sec: 5.29
+      ref_sec: 5.86
+      cer: 0.0638
+      wer: 0.1333
+    bible_00102:
+      source: bible
+      text: O funɛ zer boroboro a sumi Koosa a du a chɔksi a bɔni chene, ba fun vaan a zim un ka o nyuksi.
+      sbs: 0.7376
+      gen_sec: 7.77
+      ref_sec: 6.98
+      cer: 0.0286
+      wer: 0.087
+    bible_00103:
+      source: bible
+      text: Ba fun ŋɔ un, “Ya kunyana, nusun tiin ti ha funɛ vɛɛn nyɛn, ya funɛ lisi o wɛu di o ŋɔ ya
+        di wuzu butora wuzu Koosa zi wa lɛli unu a li o sou ni.
+      sbs: 0.7527
+      gen_sec: 12.03
+      ref_sec: 11.76
+      cer: 0.0381
+      wer: 0.2222
+    bible_00104:
+      source: bible
+      text: Ma waa ya ya sɛhɛra tima. Koosa gbanko ya ya sɛhɛra tiina. Ya nyɛni kpa la ma wati funɛ deŋliu
+        a wer kinkan. Nandigi wa fun koti a na ya galimsa.
+      sbs: 0.7453
+      gen_sec: 12.63
+      ref_sec: 9.52
+      cer: 0.027
+      wer: 0.0968
+    bible_00105:
+      source: bible
+      text: Ya tusa sɔɔnɛu kinkan. Ya wa kpak hansura di ya sou. Chen yɛɛ, ya zi la dugli ya kunyan tiu.
+      sbs: 0.7667
+      gen_sec: 7.94
+      ref_sec: 7.4
+      cer: 0.029
+      wer: 0.1
+    bible_00106:
+      source: bible
+      text: Ba fun la gali Paisidia pulum ni a la zu Pamfilia pulum.
+      sbs: 0.6878
+      gen_sec: 4.86
+      ref_sec: 5.34
+      cer: 0.1136
+      wer: 0.3333
+    bible_00107:
+      source: bible
+      text: Lalaknɔ ya chi Adam naa Koosa fun kpa hɛɛra a naamirɛ, amaa ya zi wa chi Kristo naa funɛ li
+        Koosa tɔhɔn ti ni chenu.
+      sbs: 0.747
+      gen_sec: 9.98
+      ref_sec: 8.04
+      cer: 0.0556
+      wer: 0.12
+    bible_00108:
+      source: bible
+      text: Amaa ii kpak o wuti ti nɛnɛ saha maga. I di namsi aa kibiksi Koosa laaboor weri ti wɛ a nyɛ
+        nara ni aa kitum i tuma nɛnɛ a nyɛ un.
+      sbs: 0.773
+      gen_sec: 10.84
+      ref_sec: 10.24
+      cer: 0.0
+      wer: 0.129
+    bible_00109:
+      source: bible
+      text: Koosa fun kpa din a du Sɔdɔm awa Gamɔra nara ba naa funɛ tum tum tagna kinkan saha digi, ni
+        di ba maga siti. O funɛ daŋni o biksi ba naa la tum tum tagniwa chenani o zi wa ya a nyɛ ba.
+      sbs: 0.7117
+      gen_sec: 15.78
+      ref_sec: 13.74
+      cer: 0.036
+      wer: 0.0698
+    bible_00110:
+      source: bible
+      text: Ya fun chausi ba a bu zu arŋ ti ka ba bur kaali dama.
+      sbs: 0.7181
+      gen_sec: 4.44
+      ref_sec: 3.82
+      cer: 0.2564
+      wer: 0.4286
+    bible_00111:
+      source: bible
+      text: Nibiksɛ nama la tiŋ ba titi daŋnɛ aa daŋni sɔna a du ba titi ni. Chendaha mu gbanko daŋni
+        sɔn.
+      sbs: 0.7703
+      gen_sec: 8.53
+      ref_sec: 7.48
+      cer: 0.0411
+      wer: 0.2
+    bible_00112:
+      source: bible
+      text: Ma lisi di mu la tum nan, mu wara daŋni maa? Koosa zimu di mu daŋni mau kinkan.
+      sbs: 0.7637
+      gen_sec: 6.91
+      ref_sec: 6.8
+      cer: 0.0
+      wer: 0.0
+    bible_00113:
+      source: bible
+      text: Koosa malaikasi ta digi zi wa hu kabulu kinkan. Doone mu zi wa tum ba di ba pisi a su tɛɛnɛ
+        nɔ maga a lagmi o nara ba naa Koosa fun lisi di ba tiŋ un chen.”
+      sbs: 0.7771
+      gen_sec: 13.06
+      ref_sec: 12.4
+      cer: 0.0256
+      wer: 0.0811
+    bible_00114:
+      source: bible
+      text: Ba funɛ nu ka o sɛm chen, ba fun ŋɔ dɔŋ ni, “Yɛrɛ ya bukoo o dɛu sɛhɛra tima? O fun chel a
+        li o titi sɛm ni.”
+      sbs: 0.7433
+      gen_sec: 8.87
+      ref_sec: 9.02
+      cer: 0.0263
+      wer: 0.1429
+    bible_00115:
+      source: bible
+      text: Nara balɛ zi wa chɔ dɛ bɛgim niu. Ba zi wa zer digiu a ka digi.
+      sbs: 0.7306
+      gen_sec: 5.21
+      ref_sec: 4.66
+      cer: 0.0435
+      wer: 0.125
+    bible_00116:
+      source: bible
+      text: a sumi Koosa a du a chɔksi a ŋɔ, “Mu bara nɛɛnɛ mu kpa a nyɛ ma. Maa ya chen a kilisi mu wɛ.”
+      sbs: 0.7633
+      gen_sec: 7.51
+      ref_sec: 7.72
+      cer: 0.0
+      wer: 0.0
+    bible_00117:
+      source: bible
+      text: Koosa koor ti chi kiduha naa ba yir ‘mastad’ ba yaa kpa aa du chene. A gantɛl ni a bi a burgi
+        bugila, zimebisa yaa wa du a zaŋa a hulsi ni.”
+      sbs: 0.7581
+      gen_sec: 11.61
+      ref_sec: 10.08
+      cer: 0.0485
+      wer: 0.1875
+    bible_00118:
+      source: bible
+      text: Chen saha tirɛ Koosa siim weri ti fun si o nyan Zɛkaraya ti ni a sɛm a chi Koosa witinsi ta
+        digi.
+      sbs: 0.6711
+      gen_sec: 8.28
+      ref_sec: 7.36
+      cer: 0.04
+      wer: 0.1364
+    bible_00119:
+      source: bible
+      text: Pɔɔl fun waligi ya ni a kaali tɔhɔn naa ba yir Asɔs o duŋduŋ. Ya ka fun zu arŋa a la pu un
+        dooni a chi chenani o fun ŋɔ ya chen.
+      sbs: 0.7068
+      gen_sec: 10.92
+      ref_sec: 10.88
+      cer: 0.0211
+      wer: 0.0312
+    bible_00120:
+      source: bible
+      text: Ba fun si a la ŋɔ Pɔɔl awa Sailas ni di ba gil ba tum tagna a nyɛ ba. Doone sɛria nidiile
+        ta fun te ba suwachak a li dɛ ti ni a sumi ba di ba li ba tɔhɔn ni.
+      sbs: 0.7459
+      gen_sec: 12.8
+      ref_sec: 14.08
+      cer: 0.0435
+      wer: 0.1463
+    bible_00121:
+      source: bible
+      text: Ma ya chen, Koosa zi bu gbaari mau a i a kaali chen, chen ni saha maga ma zi kpaku a mak ma
+        titi ka ma nyɛ nara ni.
+      sbs: 0.7558
+      gen_sec: 9.47
+      ref_sec: 7.76
+      cer: 0.0
+      wer: 0.0
+    bible_00122:
+      source: bible
+      text: Ya kunyan ti funɛ kaali, Pɔɔl fun si a nyɛn doon a biksi nara bun birigi awa pɛnsa nɔra.
+      sbs: 0.7466
+      gen_sec: 7.59
+      ref_sec: 7.32
+      cer: 0.0147
+      wer: 0.0526
+    bible_00123:
+      source: bible
+      text: Wuzu digi Farisi tim ta bɔnɛ fun wa pɛɛsi Yesu, “Saha leemawa Koosa koor ti kaa wa?” O fun
+        ŋɔ ba, “Ma wa kikoti a na un wa ma se ni.
+      sbs: 0.7422
+      gen_sec: 10.84
+      ref_sec: 10.4
+      cer: 0.0421
+      wer: 0.129
+    bible_00124:
+      source: bible
+      text: Ba funɛ sumi Koosa a peti, dɛ naa ba fun lagmi chen, zigsi ka o siim weri ti si ba bambe ni.
+        Ba fun li a ŋɔ nara ni Koosa laaboor weri ti wɛ awa bambi kpoka ni.
+      sbs: 0.7181
+      gen_sec: 13.48
+      ref_sec: 13.78
+      cer: 0.0168
+      wer: 0.0526
+    bible_00125:
+      source: bible
+      text: Mu bi daŋnɛ, chenani ma ya chen, o lawa ma kpak se sɛmu awa tu chaan tima a kpak sɔn weri
+        Koosa suwachak ni ka ma wa un kpak nɔ bɛgim.
+      sbs: 0.757
+      gen_sec: 11.43
+      ref_sec: 12.98
+      cer: 0.0297
+      wer: 0.0968
+    bible_00126:
+      source: bible
+      text: Ba naa yaa kpak un ba bambe ni di ba tum chenani Koosa daŋni di ba tum,
+      sbs: 0.7052
+      gen_sec: 6.06
+      ref_sec: 4.52
+      cer: 0.0556
+      wer: 0.1176
+    bible_00127:
+      source: bible
+      text: Nha funɛ wa dugli cheli, o gantɛl tiŋsa fidalɛ ta fun wa ŋɔ un, “Bar nɔ ya nyabaannɛ. Nyɛ
+        zɛmɛ ta kila ŋmaana awa tɔ wisa a naa go bar nɔ a la yau diwe a di a dɛu bar hiisi.”
+      sbs: 0.689
+      gen_sec: 14.93
+      ref_sec: 14.54
+      cer: 0.0469
+      wer: 0.2195
+    bible_00128:
+      source: bible
+      text: Lanjimasi ta fun bur kaali sɛria nidiile ta wati a la ŋɔ ba chenani Pɔɔl sɛm ba. Sɛria nidiile
+        ta funɛ nu di Pɔɔl awa Sailas ya Roman timwa, hansura fun kpak ba.
+      sbs: 0.7441
+      gen_sec: 14.08
+      ref_sec: 11.94
+      cer: 0.0317
+      wer: 0.1212
+    bible_00129:
+      source: bible
+      text: Bɔnɛ fun ŋɔ di Koosa witiina Ɛlaija funɛ bur wa. Bɔnɛ ka ŋɔ di Koosa witinsi ta digi si o
+        sou ni.
+      sbs: 0.7215
+      gen_sec: 8.45
+      ref_sec: 8.08
+      cer: 0.0676
+      wer: 0.1818
+    bible_00130:
+      source: bible
+      text: “Bugil weri wa kinɔn nɔn tagna. Bugil tagin wa kinɔn nɔn were.
+      sbs: 0.7306
+      gen_sec: 5.38
+      ref_sec: 4.32
+      cer: 0.1042
+      wer: 0.25
+    bible_00131:
+      source: bible
+      text: Mu daŋni Koosarɛ ya mu sɛhɛra tiina ma zim di mu sɛm ta ya wutiu. Mu wa fun wa di mu wa na
+        ma, chen ni ma wa zi nu mu sɛm kpoka.
+      sbs: 0.7522
+      gen_sec: 10.5
+      ref_sec: 11.38
+      cer: 0.0323
+      wer: 0.0606
+    bible_00132:
+      source: bible
+      text: a nyɛ o fun sɛm siimsi naa ba fun tɔ dɛ chen.
+      sbs: 0.6939
+      gen_sec: 3.67
+      ref_sec: 3.2
+      cer: 0.0
+      wer: 0.0
+    bible_00133:
+      source: bible
+      text: O funɛ sou ya daharɛ chen ni o wa bur wa, ka ya maga ha vɛɛn nyɛn akoo a siti, ya zi wa kpak
+        miisau a nyɛn o wati.
+      sbs: 0.7515
+      gen_sec: 9.3
+      ref_sec: 7.92
+      cer: 0.0361
+      wer: 0.1034
+    bible_00134:
+      source: bible
+      text: Farisi tim ta bɔnɛ fun wa di ba wa mo o lo a na o galimsa. Ba fun pɛɛsi un, “Nar duŋni o haan
+        a ta, chen ya chiree?”
+      sbs: 0.7412
+      gen_sec: 9.47
+      ref_sec: 10.66
+      cer: 0.0488
+      wer: 0.1034
+    bible_00135:
+      source: bible
+      text: “Ma sumi Koosa di o nyɛ ma kundɔŋ o zi nyɛ mau. Ma daŋni kundɔŋ, o wati ma zi na unu. Ma yir
+        un o zi wa puk zɔɔnɔu ma zu o wati.
+      sbs: 0.7765
+      gen_sec: 10.67
+      ref_sec: 10.98
+      cer: 0.044
+      wer: 0.1212
+    bible_00136:
+      source: bible
+      text: Ba fun ŋɔ un, “Nandigi wa kpak chen sɔn ti ya lul ni.”
+      sbs: 0.72
+      gen_sec: 4.44
+      ref_sec: 4.64
+      cer: 0.0263
+      wer: 0.0769
+    bible_00137:
+      source: bible
+      text: O fun si a kaali Pailɔt wati a la ŋɔ di o kpa Yesu bara a nyɛ un.
+      sbs: 0.7065
+      gen_sec: 5.29
+      ref_sec: 4.22
+      cer: 0.0
+      wer: 0.0
+    bible_00138:
+      source: bible
+      text: Amaa i yir nara di ba wa di diwe i dam ni, yir fara tima awa gbarɛgɛ awa ba naa la chel chɛra
+        awa nyuluma.
+      sbs: 0.7478
+      gen_sec: 8.87
+      ref_sec: 7.4
+      cer: 0.0625
+      wer: 0.4
+    bible_00139:
+      source: bible
+      text: Doone o fun ŋɔ Yesu ni, “Yesu, i wa di i koor ti, i lisi mu wɛ.”
+      sbs: 0.7153
+      gen_sec: 5.03
+      ref_sec: 7.12
+      cer: 0.0238
+      wer: 0.0588
+    bible_00140:
+      source: bible
+      text: Nitumɛ ba naa funɛ kpalimi Jɛrusalɛm ni chen, funɛ nu chenani Samaria tim ta nidamata se su
+        Koosa laaboor weri ti, ba fun tum Pita awa Jɔn ba wati.
+      sbs: 0.729
+      gen_sec: 12.89
+      ref_sec: 14.02
+      cer: 0.0259
+      wer: 0.1034
+    bible_00141:
+      source: bible
+      text: Ya kpak diwe a di a kpak kilaarɛ a laari, chen la zi puŋ ya.
+      sbs: 0.7167
+      gen_sec: 5.03
+      ref_sec: 3.36
+      cer: 0.0455
+      wer: 0.1333
+    bible_00142:
+      source: bible
+      text: “Hin funɛ ŋɔ di i zi chɔk Koosa bar jɛɛmi dam ti a bur sa un wuzu butora chen niuu? I sir
+        ya Koosa bere, yisi i titi a tu wa daakakli ti ni ya na.”
+      sbs: 0.659
+      gen_sec: 12.03
+      ref_sec: 12.52
+      cer: 0.0654
+      wer: 0.1111
+    bible_00143:
+      source: bible
+      text: O lawa ma zimu nɛnɛ di chenani Koosa witinsi ta fun sɔbi a li Koosa sɛm tɔn ti ni wa fun li
+        ba titi nɛɛ.
+      sbs: 0.735
+      gen_sec: 8.7
+      ref_sec: 8.12
+      cer: 0.038
+      wer: 0.2
+    bible_00144:
+      source: bible
+      text: Nibin bɔnɛ yaa daŋniu di ba mur nara ba tiŋ wu tagna nyinbaan.
+      sbs: 0.7227
+      gen_sec: 5.63
+      ref_sec: 4.24
+      cer: 0.0612
+      wer: 0.2308
+    bible_00145:
+      source: bible
+      text: Taitus funɛ ŋɔ ya chenani ma kpami un, ya tusa fun sɔɔni a kaali chenani a fun te sɔɔni.
+      sbs: 0.6908
+      gen_sec: 7.68
+      ref_sec: 5.22
+      cer: 0.0441
+      wer: 0.1579
+    bible_00146:
+      source: bible
+      text: Ba fun a sɔbi a li Koosa sɛm tɔn ti ni di o ŋɔ,
+      sbs: 0.7092
+      gen_sec: 3.75
+      ref_sec: 3.0
+      cer: 0.0606
+      wer: 0.2143
+    bible_00147:
+      source: bible
+      text: Ma doso a kilisi chenani mu fun kpak un mu bambi ni di mu biksi ma bunsa tora a ta hiisi tama.
+      sbs: 0.7406
+      gen_sec: 7.94
+      ref_sec: 6.66
+      cer: 0.0417
+      wer: 0.0909
+    bible_00148:
+      source: bible
+      text: Pɔɔl fun zaami ba maga a ŋɔ ba chenani maga Koosa fun suŋi un di o tum a nyɛ ba naa vɛ ya
+        Ju tim ni.
+      sbs: 0.7145
+      gen_sec: 8.36
+      ref_sec: 8.14
+      cer: 0.0
+      wer: 0.0
+    bible_00149:
+      source: bible
+      text: Lanjima nihɛɛ funɛ nyɛn dooni. O tumtum naa o daŋni kinkan, funɛ wi a daŋni siwi.
+      sbs: 0.6755
+      gen_sec: 7.34
+      ref_sec: 7.22
+      cer: 0.0159
+      wer: 0.125
+    bible_00150:
+      source: bible
+      text: Ba fun ŋɔ un, “Yaa daŋni i lɛligi ya sewa a nyɛ ya.”
+      sbs: 0.6452
+      gen_sec: 4.35
+      ref_sec: 6.24
+      cer: 0.1111
+      wer: 0.3077
+    bible_00151:
+      source: bible
+      text: nara maga zi wa zimu di Koosa funɛ suŋi min,
+      sbs: 0.7007
+      gen_sec: 3.84
+      ref_sec: 4.28
+      cer: 0.1176
+      wer: 0.2
+    bible_00152:
+      source: bible
+      text: O lawa ma kiya kin maga balimmnɛ.
+      sbs: 0.7025
+      gen_sec: 2.9
+      ref_sec: 5.52
+      cer: 0.2692
+      wer: 1.1429
+    bible_00153:
+      source: bible
+      text: Kristo awa sintana kikoti a ya nɔ bɛgimuu? Nara se su Koosa awa nara se vɛ su Koosa kikoti
+        a ya nɔ bɛgimuu?
+      sbs: 0.737
+      gen_sec: 9.22
+      ref_sec: 8.98
+      cer: 0.0482
+      wer: 0.3478
+    bible_00154:
+      source: bible
+      text: Saha naa Koosa kaabul naa wa tiŋ gantɛl, wa hu, o zi lɛli nisitɛ tau a li ba sou ni. Lalaga
+        a chi se kamsɛɛ, o zi wa chɛrgi ya bara titiu a nyɛ ya bara falɛ a naa vɛ pɔɔli.
+      sbs: 0.7682
+      gen_sec: 14.42
+      ref_sec: 14.12
+      cer: 0.0394
+      wer: 0.2439
+    bible_00155:
+      source: bible
+      text: a tum ba Yesu wati di ba la pɛɛsi un, “Hin ya baal naa ya kunyana fun ŋɔ di i kaa wa chen,
+        akoo yaa nyini nandigi nyinbaan nii?”
+      sbs: 0.7014
+      gen_sec: 10.75
+      ref_sec: 9.52
+      cer: 0.0632
+      wer: 0.1379
+    bible_00156:
+      source: bible
+      text: “Wutirɛ mu ŋɔ ma, kin nawara ma kpa chiŋsi tɛɛnɛ nɔ maga ni di nara tiŋ, a zi chiŋi Koosa
+        tɔha gbanko niu. Kin nawara ma vɛ kpa chiŋsi tɛɛnɛ nɔ maga ni, a wa zi chiŋi dooni.
+      sbs: 0.79
+      gen_sec: 15.27
+      ref_sec: 12.4
+      cer: 0.0385
+      wer: 0.0789
+    bible_00157:
+      source: bible
+      text: O fun ŋɔ un a li o deesi ni, “Naa la daŋni o kpu i be ti chen, sou. Si a zer be ti awa o niina
+        a bur kila Ju tim pulum.”
+      sbs: 0.7104
+      gen_sec: 9.56
+      ref_sec: 12.38
+      cer: 0.0488
+      wer: 0.1818
+    bible_00158:
+      source: bible
+      text: Ma nyini ba sɛma maga a nɛɛ a weru. A were ma kpak a.
+      sbs: 0.7352
+      gen_sec: 4.35
+      ref_sec: 3.4
+      cer: 0.0
+      wer: 0.0
+    bible_00159:
+      source: bible
+      text: Lanjimasi ta nihɛɛ nyuhu tiin ti fun la pɛɛsi Pɔɔl, “O ya wutirɛ i ŋɔ di i ya Roman tim baallɛ
+        nann?”
+      sbs: 0.7038
+      gen_sec: 8.53
+      ref_sec: 6.24
+      cer: 0.0658
+      wer: 0.0909
+    bible_00160:
+      source: bible
+      text: Yesu funɛ wa li arŋ ti ni, o fun na zɛmɛ kinkan ka ba chiŋi dooni. Ba wɛ fun ya un siki ka
+        o tiibi ba wichɔɔrsa.
+      sbs: 0.6474
+      gen_sec: 9.56
+      ref_sec: 10.32
+      cer: 0.0482
+      wer: 0.1481
+    bible_00161:
+      source: bible
+      text: Ba funɛ sɔbi Jɔn wɛu a li Koosa sɛm tɔn ti ni saha digi di Koosa ŋɔ,
+      sbs: 0.7385
+      gen_sec: 5.72
+      ref_sec: 5.42
+      cer: 0.0784
+      wer: 0.2353
+    bible_00162:
+      source: bible
+      text: O wa lawa nibaal ŋɔ di o wa o haan wa zi lagmi chɔ. Nihaan gbanko ta ŋɔ di o wa o baal wa
+        zi lagmi chɔ.
+      sbs: 0.7687
+      gen_sec: 8.53
+      ref_sec: 7.3
+      cer: 0.04
+      wer: 0.1111
+    bible_00163:
+      source: bible
+      text: Pɔɔl funɛ kok o titi chene, Fɛstus fun teŋ o nɔ a tɛsi a ŋɔ, “Pɔɔl, i zima kinkan nyɛ i zu
+        galɛŋa.”
+      sbs: 0.7247
+      gen_sec: 8.45
+      ref_sec: 8.24
+      cer: 0.0986
+      wer: 0.2174
+    bible_00164:
+      source: bible
+      text: Amaa nandigi daŋni o di amɔrɛ, chene ya wa Yesu nitiŋɛ ba naa nyɛn bawu maga ni, yaa tiŋ.
+      sbs: 0.7535
+      gen_sec: 8.02
+      ref_sec: 6.68
+      cer: 0.0882
+      wer: 0.1579
+    bible_00165:
+      source: bible
+      text: Mu zimu di o wa zi vusi ka mu sou a chi chenani ya kunyan Yesu Kristo fun ŋɔ min chen.
+      sbs: 0.7008
+      gen_sec: 7.25
+      ref_sec: 6.9
+      cer: 0.0154
+      wer: 0.0476
+    bible_00166:
+      source: bible
+      text: Yesu funɛ tiibi wichɔɔrsi ta peti, o funɛ burgi a ŋɔ o gantɛl tiŋsi ta ni,
+      sbs: 0.6816
+      gen_sec: 6.57
+      ref_sec: 5.22
+      cer: 0.1228
+      wer: 0.1875
+    bible_00167:
+      source: bible
+      text: Ya kunyan Yesu Kristo kisuŋi ma.
+      sbs: 0.6919
+      gen_sec: 2.99
+      ref_sec: 7.24
+      cer: 0.1154
+      wer: 0.6667
+    bible_00168:
+      source: bible
+      text: Baŋnɛ ma zer ma titi nan? O fu lawa ma tusa chɔku kinkan, ka ma lisi baal naa ya chen a li
+        ma lagmi ti ni.
+      sbs: 0.7262
+      gen_sec: 8.87
+      ref_sec: 7.38
+      cer: 0.0385
+      wer: 0.1538
+    bible_00169:
+      source: bible
+      text: Ba maga funɛ na unu ka o val ni daha ni, hansura fun kpak ba kinkan. Ba fun kpa un a yir lɛlɛ.
+        Chendaha ba funɛ huusi kinkannɛ.
+      sbs: 0.6997
+      gen_sec: 10.84
+      ref_sec: 12.34
+      cer: 0.0208
+      wer: 0.0714
+    bible_00170:
+      source: bible
+      text: Ma watɛɛ Koosa wɛ piilii? Ma duŋduŋ daharɛ nara fun wa biksi ma o wɛɛ?
+      sbs: 0.7175
+      gen_sec: 6.31
+      ref_sec: 5.14
+      cer: 0.0556
+      wer: 0.1333
+    bible_00171:
+      source: bible
+      text: Pɔɔl funɛ sɛm chene, birsa fun vaan wa tɔ Ɛlimas se o daŋni nandigi o kpak o nin a te o suwachak.
+      sbs: 0.7274
+      gen_sec: 8.36
+      ref_sec: 8.58
+      cer: 0.1216
+      wer: 0.3182
+    bible_00172:
+      source: bible
+      text: Stivin fun bukoo ŋɔ ba naa lagmi dɔŋ ni chen ni, “Ma kpak bambi kpokwa a chi ba naa vɛ zim
+        Koosa. Ma gbanko kpak bambi sitɛwa a chi ma nawaalsi ta a vɛ tiŋ Koosa siim weri ti nɔ a chi ba.
+      sbs: 0.7335
+      gen_sec: 16.21
+      ref_sec: 14.22
+      cer: 0.0993
+      wer: 0.1163
+    bible_00173:
+      source: bible
+      text: o fun lisi o tuhu ni, ‘N wa zim chenani mu kaa ya. N wa kpak bar chiŋsi a la zi koti a chiŋsi
+        n kina magau.
+      sbs: 0.7624
+      gen_sec: 8.87
+      ref_sec: 7.5
+      cer: 0.0
+      wer: 0.0
+    bible_00174:
+      source: bible
+      text: Mu daŋni mu ŋɔ nihaana ba naa piin kpak baalasa ba ta vɛ ba baalasi ta. A wa ya mu titi sɛmwa.
+        A ya Koosa sɛmwa.
+      sbs: 0.7779
+      gen_sec: 9.64
+      ref_sec: 10.0
+      cer: 0.0
+      wer: 0.0769
+    bible_00175:
+      source: bible
+      text: Mu wara daŋni tɛɛnɛ nɔ maga kina kimuksi ma tusa kinkan. Nibaal naa vɛ kpak haan, o nyɛ o
+        si sɛri a du ya kunyan ti tum ni, chen ni o tuha zi sɔɔniu.
+      sbs: 0.7768
+      gen_sec: 12.71
+      ref_sec: 10.3
+      cer: 0.0179
+      wer: 0.1176
+    bible_00176:
+      source: bible
+      text: Amaa nihaana ba naa la dɛɛsi bisa, ba kpak nɛnɛ a nyɛ ba se su Koosa kinkan a daŋni dɔŋa aa
+        ya bambi tima, wuzu digi Koosa zi yisi bau a li ba tum tagna ni hali o wa peti.
+      sbs: 0.7634
+      gen_sec: 14.59
+      ref_sec: 14.72
+      cer: 0.0465
+      wer: 0.175
+    bible_00177:
+      source: bible
+      text: O fun ŋɔ ba, “Nha wa chel ka buudaha sɛri, ma zim di doon wa zi mi.
+      sbs: 0.7368
+      gen_sec: 5.55
+      ref_sec: 5.32
+      cer: 0.1277
+      wer: 0.3529
+    bible_00178:
+      source: bible
+      text: Ma se vɛ su a li kin naa Koosa kpa nyɛ ma ma nyɛni nɔ ni, o wa zi bu wa kpa o kin naa nyɛn
+        o tɔhɔn ti ni a du ma nisa ni wuzu digi.
+      sbs: 0.7427
+      gen_sec: 10.33
+      ref_sec: 10.56
+      cer: 0.0645
+      wer: 0.2162
+    bible_00179:
+      source: bible
+      text: Mu funɛ wa sumi i gantɛl tiŋsi tau di ba tiibi un, ba ka wa fun koti a tiibi un.”
+      sbs: 0.6698
+      gen_sec: 6.74
+      ref_sec: 6.86
+      cer: 0.1017
+      wer: 0.15
+    bible_00180:
+      source: bible
+      text: Nibine naa la chɔk Koosa bar nyɛni ti, Koosa zi chɔk o gbankou, domi o bar nyɛni ti ya bar
+        birigirɛ o wati. Ma titi tusa ya Koosa bar nyɛnirɛ.
+      sbs: 0.774
+      gen_sec: 12.29
+      ref_sec: 9.52
+      cer: 0.0367
+      wer: 0.1
+    bible_00181:
+      source: bible
+      text: Chendaha mu yaa chɔu a deŋli a la tel o bɔ. Mu gban chi nara nitukirɛ. Mu wa mou a kru.
+      sbs: 0.7915
+      gen_sec: 7.34
+      ref_sec: 7.82
+      cer: 0.125
+      wer: 0.2857
+    bible_00182:
+      source: bible
+      text: Ba naa funɛ nyɛn dooni chen fun na Yesu a zim un. Ba fun la zu tɔsi naa go dooni a kpa ba
+        wichɔɔrsa a wa o wati.
+      sbs: 0.6566
+      gen_sec: 9.22
+      ref_sec: 10.46
+      cer: 0.0
+      wer: 0.0
+    bible_00183:
+      source: bible
+      text: amaa luhaan nɔ muksi minu kinkan. Chendaha mu zi suŋi unu o di o dɔŋtiin ti a li sɛria bar
+        diili ti ni. N vɛ suŋi un, o zi muksi minu saha maga hali n wa ku.’ ”
+      sbs: 0.7573
+      gen_sec: 13.48
+      ref_sec: 12.76
+      cer: 0.0342
+      wer: 0.1622
+    bible_00184:
+      source: bible
+      text: O wa werwa ya chɔ do a chi ba naa vɛ zim Yesu la chɔ do chen. Ma nyɛ ya si a si chiŋi a ta
+        zɔɔli a chi ba naa nyɔ sin aa dɛɛsi.
+      sbs: 0.7667
+      gen_sec: 10.15
+      ref_sec: 9.68
+      cer: 0.0989
+      wer: 0.2
+    bible_00185:
+      source: bible
+      text: Ba fun gil un a la dɛu nara bɔnɛ a bɔ malɛ a nyɛ ba di ba ŋɔ nara tima ni di ba funɛ nu di
+        Stivin chɔk Koosa awa Mosis sɔnnɛ.
+      sbs: 0.7489
+      gen_sec: 10.33
+      ref_sec: 10.56
+      cer: 0.0108
+      wer: 0.0312
+    bible_00186:
+      source: bible
+      text: Ba naa maga funɛ lagmi dooni fun sumi Koosa a ŋɔ, “Ya kunyana, hin zim chenani nibinsa maga
+        bambe du. Biksi ya naa ya kaa ya lisi a li nara balɛ na tuhu ni,
+      sbs: 0.7547
+      gen_sec: 13.4
+      ref_sec: 12.96
+      cer: 0.0
+      wer: 0.0588
+    bible_00187:
+      source: bible
+      text: Yesu fun zu o dɛ ti a la kpak o nin a suŋi un di o si chiŋi. O funɛ ya chen, o kabilima ti
+        fun peti. O piili a ya diwe di o nyɛ ba.
+      sbs: 0.7282
+      gen_sec: 10.67
+      ref_sec: 11.36
+      cer: 0.0435
+      wer: 0.0833
+    bible_00188:
+      source: bible
+      text: O fun a nyini nibinsa ba naa kanɛ a go un chen, a ŋɔ, “Ma na mu numa awa mu niinbisa nɛɛnɛ.
+      sbs: 0.7595
+      gen_sec: 7.59
+      ref_sec: 8.06
+      cer: 0.0303
+      wer: 0.0909
+    bible_00189:
+      source: bible
+      text: Ba funɛ sɔbi a li Koosa sɛm tɔn ti ni di o ŋɔ,
+      sbs: 0.7261
+      gen_sec: 3.75
+      ref_sec: 3.1
+      cer: 0.0606
+      wer: 0.2308
+    bible_00190:
+      source: bible
+      text: Ma wa zim di nar wa sakaal chɔ, ba bara ya nibɛgimnɛɛ? Koosa sɛm tɔn ti biksi ya nan wɛ, a
+        ŋɔ,
+      sbs: 0.7721
+      gen_sec: 8.02
+      ref_sec: 7.3
+      cer: 0.0435
+      wer: 0.1818
+    bible_00191:
+      source: bible
+      text: Yɛrɛ ma ya a ŋɔ ma dɔŋtim ta ni, ma nyɛ ya lisi danugil ti a ta ma se ni ka ma kpak dagume
+        a li ma se ni?
+      sbs: 0.7309
+      gen_sec: 8.53
+      ref_sec: 8.58
+      cer: 0.0533
+      wer: 0.2069
+    bible_00192:
+      source: bible
+      text: N daŋni ma zimu di n waa nibine be kpak kpok a li tɛɛnɛ nɔ maga ni, chen ni mu zi kotiu a
+        gil nara wu tagna a nyɛ ba.” O fun ŋɔ wichɔɔr ti ni, “Mu sɛm hinu, si chiŋi a la dama.”
+      sbs: 0.7329
+      gen_sec: 14.76
+      ref_sec: 11.98
+      cer: 0.1508
+      wer: 0.25
+    bible_00193:
+      source: bible
+      text: Mu waa, Pɔɔl, awa Sailas wa Timoti zaami mau.
+      sbs: 0.7367
+      gen_sec: 4.01
+      ref_sec: 4.12
+      cer: 0.1765
+      wer: 0.6667
+    bible_00194:
+      source: bible
+      text: Min ya ba sɛhɛra tiina hali ba funɛ kpa ba kina a nyɛu ka a bu vɛ tel ba. Nandigi wa fun muksi
+        ba di ba ya chen.
+      sbs: 0.7566
+      gen_sec: 9.22
+      ref_sec: 8.52
+      cer: 0.0
+      wer: 0.0
+    bible_00195:
+      source: bible
+      text: a la gali Saiprus pulum naa ni go ka o nyɛn ya ningal ni a la tel Taaya a li Siiriya pulum
+        ni. Bun tima arŋ ti fun chuŋi chen funɛ ya doon kinawa. Ya fun gil arŋ ti,
+      sbs: 0.7463
+      gen_sec: 14.08
+      ref_sec: 14.2
+      cer: 0.1048
+      wer: 0.3077
+    bible_00196:
+      source: bible
+      text: O zi wa nyɛ Ju tim nidamata bur wa tiŋ ba kunyana Koosau.
+      sbs: 0.6614
+      gen_sec: 4.95
+      ref_sec: 4.82
+      cer: 0.1818
+      wer: 0.3077
+    bible_00197:
+      source: bible
+      text: Chen ya ma gbanko ma sɛm sɛma a naa ba zi vɛ koti a nuuli, yɛrɛ ba kaa ya zim a muna? O ya
+        di chene, ma chɛɛmi aa du ba nɛɛ.
+      sbs: 0.7981
+      gen_sec: 10.07
+      ref_sec: 10.44
+      cer: 0.0787
+      wer: 0.1562
+    bible_00198:
+      source: bible
+      text: ka ma fun a tiŋ ya awa ya kunyan ti. Domi ma funɛ la nɔɔniu Koosa laaboor weri ti ni, nara
+        funɛ muksi ma kinkan, amaa Koosa siim weri ti funɛ nyɛ ma tusa sɔɔniu kinkan.
+      sbs: 0.7719
+      gen_sec: 14.59
+      ref_sec: 11.22
+      cer: 0.0078
+      wer: 0.0278
+    bible_00199:
+      source: bible
+      text: Ma tiŋ chen nɛnɛ, ya kunyan Yesu sɔn ti zi na jirimau ma daha, ka ma gbanko kaa na jirima,
+        domi ma wa un ya nibɛgimnɛ. Ya Koosa awa ya kunyan Yesu Kristo kisuŋi ma ma nyɛn chen.
+      sbs: 0.7684
+      gen_sec: 15.61
+      ref_sec: 14.84
+      cer: 0.0222
+      wer: 0.1053
 - model: ghananlpcommunity/ghana-tts-36k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: ref
@@ -17390,4 +19128,4 @@ benchmarks:
       ref_sec: 14.84
       cer: 0.0519
       wer: 0.5263
-updated: '2026-10-03'
+updated: '2026-10-09'

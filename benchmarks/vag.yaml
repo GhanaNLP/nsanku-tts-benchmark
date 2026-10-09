@@ -5072,6 +5072,1693 @@ benchmarks:
       ref_sec: 12.96
       cer: 0.082
       wer: 0.2333
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7333
+  num_scored: 200
+  cer: 0.1373
+  wer: 0.4062
+  accuracy: 0.8627
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.798
+  score: 0.798
+  per_source:
+    bible:
+      sbs: 0.7333
+      cer: 0.1373
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Kɔraawiizi kaa ŋɔ, “Gil kunnyinee lii su a nii biini, zumbizi ge ni a dizi su chiŋ, di zaah
+        ra bar.
+      sbs: 0.7636
+      gen_sec: 8.19
+      ref_sec: 8.2
+      cer: 0.0811
+      wer: 0.2857
+    bible_00001:
+      source: bible
+      text: N na suŋŋuubuu ií ni Kɔraawiizi biinanaa la maa wer zum Kristo nɔŋŋaa la, gunla un duwɛɛ,
+        u kanni, u wassi ani u luŋzi maa.
+      sbs: 0.6624
+      gen_sec: 10.67
+      ref_sec: 7.82
+      cer: 0.0737
+      wer: 0.36
+    bible_00002:
+      source: bible
+      text: Anaazu chi a dia biini, anaazu ge chi baŋgia, bɔr la baŋ ɔɔ ra kpu mbusu lizaa sela la.
+      sbs: 0.7551
+      gen_sec: 7.25
+      ref_sec: 7.12
+      cer: 0.1212
+      wer: 0.4737
+    bible_00003:
+      source: bible
+      text: Nabɔma maa dɔɔ u nabɔmaa u ra guuu.
+      sbs: 0.7174
+      gen_sec: 2.82
+      ref_sec: 3.02
+      cer: 0.2222
+      wer: 0.625
+    bible_00004:
+      source: bible
+      text: Di i kuu i duma wia di duu winanaa, i daŋ kum miibɔɔ la n waa tunaa dɔɔwɛ lii Kɔraawiizi Duma
+        la be.
+      sbs: 0.667
+      gen_sec: 8.02
+      ref_sec: 5.3
+      cer: 0.1053
+      wer: 0.2609
+    bible_00005:
+      source: bible
+      text: Harar hinuu Saraa biibaal Ahiam.
+      sbs: 0.7186
+      gen_sec: 2.82
+      ref_sec: 3.44
+      cer: 0.1111
+      wer: 0.6
+    bible_00006:
+      source: bible
+      text: A kora n faa wa du u nonee chigigi, u kpu nabɔnzi la maa n kpu u mɛɛ labuu.
+      sbs: 0.7709
+      gen_sec: 5.8
+      ref_sec: 6.58
+      cer: 0.0727
+      wer: 0.1579
+    bible_00007:
+      source: bible
+      text: Ií kpa dɔnnɔŋŋaa di ra hum dɔŋa, dikuubɛɛwiai, Gbɔgni la maa du widaulikpaŋ biinii.
+      sbs: 0.661
+      gen_sec: 7.51
+      ref_sec: 4.44
+      cer: 0.1493
+      wer: 0.4286
+    bible_00008:
+      source: bible
+      text: Ba faa ma Kɔraawiizi Dia hinnɛ tuŋ, baagu la banna yir Adar la hɔpizaa ahorohiŋ hɔl, Dariɔs
+        kora dii binni anumbɛlhiŋ biini.
+      sbs: 0.7616
+      gen_sec: 10.84
+      ref_sec: 9.88
+      cer: 0.04
+      wer: 0.5909
+    bible_00009:
+      source: bible
+      text: A hɔpizaa anumbɛl hinnɛ guŋ.
+      sbs: 0.7028
+      gen_sec: 2.56
+      ref_sec: 4.08
+      cer: 0.3043
+      wer: 0.8
+    bible_00010:
+      source: bible
+      text: I lɛɛ yaabuu lii tɔɔrɔɔ biini, di gil yaa na bɔchaaŋ.
+      sbs: 0.7352
+      gen_sec: 4.44
+      ref_sec: 4.0
+      cer: 0.1463
+      wer: 0.2727
+    bible_00011:
+      source: bible
+      text: Yaa hummɔɔ saŋa maa di kuuh werge, ya gilɛɛ waa tɔɔri ia dikuu diwee wia.
+      sbs: 0.6387
+      gen_sec: 6.14
+      ref_sec: 3.8
+      cer: 0.1053
+      wer: 0.3333
+    bible_00012:
+      source: bible
+      text: Denii u ŋɔ Taama be, “Kpa a paanuu di zuu n be wa tɛŋ.
+      sbs: 0.7335
+      gen_sec: 4.27
+      ref_sec: 4.48
+      cer: 0.0526
+      wer: 0.1429
+    bible_00013:
+      source: bible
+      text: Koorizeŋ Dariɔs n jaa dau a keŋ widaulii la, denii Muu Yufretis wiicholii paga hɛri hina nabɔma
+        Tatɛnai, Sɛtar Bɔzɛnai ani ba balaa la maa jaa hiŋ u nua la nɛnnɛ.
+      sbs: 0.7443
+      gen_sec: 13.82
+      ref_sec: 14.42
+      cer: 0.062
+      wer: 0.2258
+    bible_00014:
+      source: bible
+      text: Aŋhinabe, Kɔraawiizi baaŋ daŋ sɔɔni, ú suŋ yaa ni, wàá ka kpu yaa.
+      sbs: 0.7716
+      gen_sec: 5.89
+      ref_sec: 5.3
+      cer: 0.08
+      wer: 0.2308
+    bible_00015:
+      source: bible
+      text: Hɔnnaabuu Koorizeŋ Aatazɛgzis faa sɛbi tɛɛ Kɔraawiizi kizeehiŋ Ɛzra, n faa ɛɛ bagli, di zum
+        Kɔraawiizi widaulaa ni u Gbɔgni ŋmɛnizi la uŋ kpawɛɛ tɛɛ Izrɛl hina la.
+      sbs: 0.7572
+      gen_sec: 14.34
+      ref_sec: 10.98
+      cer: 0.1053
+      wer: 0.4643
+    bible_00016:
+      source: bible
+      text: A saŋa hiŋ, di Koori Deevid faa du diikpeg biini, ka Filisti laallɔɔra suge bɛl wa chɔɔ Bɛtlihɛm.
+      sbs: 0.8025
+      gen_sec: 8.36
+      ref_sec: 7.98
+      cer: 0.1299
+      wer: 0.2778
+    bible_00017:
+      source: bible
+      text: Huram faa kaa kuari viini, sɔɔbulzi ani kuna mizaa tassazi.
+      sbs: 0.7693
+      gen_sec: 5.12
+      ref_sec: 6.28
+      cer: 0.1042
+      wer: 0.7
+    bible_00018:
+      source: bible
+      text: Kɔraawiizi kizeehina kalfa ni tokko, faa jaa ba ni di ra huuh bensunozi.
+      sbs: 0.7719
+      gen_sec: 6.14
+      ref_sec: 5.18
+      cer: 0.1379
+      wer: 0.4615
+    bible_00019:
+      source: bible
+      text: Awia, ii gilɛɛ waa kpa ii biihaana di ra tɛɛ ba biibaala gɛɛ di waa kpa ba biihaana di ra
+        tɛɛ ii biibaala.
+      sbs: 0.8071
+      gen_sec: 8.53
+      ref_sec: 8.5
+      cer: 0.0122
+      wer: 0.0435
+    bible_00020:
+      source: bible
+      text: Kɔraawiizi kissi baa di ŋɔ, “Ií lul su a hɛri maa, di ra binni u ni.
+      sbs: 0.7601
+      gen_sec: 5.38
+      ref_sec: 4.88
+      cer: 0.0816
+      wer: 0.3125
+    bible_00021:
+      source: bible
+      text: Denii ba faa bargi Kɔraawiizi kizeehina ni Levi dee la di du sugezi, bá ra hum ba huma Kɔraawiizi
+        Dia la n du Jɛrusalɛm la biini, gunla baŋ sɛbɛɛ Moosis hɔŋ biini la.
+      sbs: 0.7534
+      gen_sec: 13.91
+      ref_sec: 12.76
+      cer: 0.0382
+      wer: 0.2121
+    bible_00022:
+      source: bible
+      text: Ka n na suŋŋi Kɔraawiizii ií wer zumuu nɛnnɛ, di wer dɔɔ Kɔraawiizi himmaa ii biine werge
+        maa di wa tuŋ.
+      sbs: 0.5969
+      gen_sec: 8.87
+      ref_sec: 4.84
+      cer: 0.1098
+      wer: 0.3333
+    bible_00023:
+      source: bible
+      text: Ahitɔfɛl ŋɔ Absalɔm be, “Gil n lizi baala kagboŋa fidaanɛɛ, di duŋŋi Koori Deevid luge hamuŋa
+        naa.
+      sbs: 0.8059
+      gen_sec: 8.79
+      ref_sec: 8.8
+      cer: 0.0641
+      wer: 0.2941
+    bible_00024:
+      source: bible
+      text: Netan biibaal Igal n lii Zoba.
+      sbs: 0.7367
+      gen_sec: 2.56
+      ref_sec: 3.14
+      cer: 0.4167
+      wer: 1.0
+    bible_00025:
+      source: bible
+      text: I ɔɔ vɛɛ banla maa n waa i Gbɔgni ra hiŋ labuu ta.
+      sbs: 0.6908
+      gen_sec: 3.93
+      ref_sec: 3.66
+      cer: 0.2432
+      wer: 0.4615
+    bible_00026:
+      source: bible
+      text: U faa gillɔɔ nɛra la n zum huma nɛnnɛ, kuari kuna la n wette di ra taazi hobee ni bizenaa,
+        di hɔŋzi Jɛrusalɛm diijaŋra ni a koŋlii siraa ni.
+      sbs: 0.7803
+      gen_sec: 11.78
+      ref_sec: 12.6
+      cer: 0.1101
+      wer: 0.2759
+    bible_00027:
+      source: bible
+      text: Ka banla maa n kawɛɛ la waa, bá ra hiŋ gunla Kɔraawiizi n tɛɛ baa la.
+      sbs: 0.7761
+      gen_sec: 5.63
+      ref_sec: 6.12
+      cer: 0.0385
+      wer: 0.1875
+    bible_00028:
+      source: bible
+      text: Awia, n daŋ kpu ia di turgi a kim, ii wia tuŋ hɛri naa biini!
+      sbs: 0.765
+      gen_sec: 4.95
+      ref_sec: 6.16
+      cer: 0.0
+      wer: 0.1333
+    bible_00029:
+      source: bible
+      text: Ba faa bir kpo bol ani baaŋfuuih werge.
+      sbs: 0.7665
+      gen_sec: 3.33
+      ref_sec: 3.1
+      cer: 0.2903
+      wer: 1.0
+    bible_00030:
+      source: bible
+      text: Waabuu ba faa ra tɔgzi werge kaali Laallɔkpega Tokko Ni Kpɔrgɔ la bɛl maa, ka u faa waa Laallɔkpega
+        Bahoro La ni jaawɛ.
+      sbs: 0.7858
+      gen_sec: 9.9
+      ref_sec: 9.6
+      cer: 0.0947
+      wer: 0.3043
+    bible_00031:
+      source: bible
+      text: Ka banla n na tɔɔri ia lawaa, Kɔraawiizi daŋ turgi baa a kim.
+      sbs: 0.6676
+      gen_sec: 5.12
+      ref_sec: 3.42
+      cer: 0.1489
+      wer: 0.3846
+    bible_00032:
+      source: bible
+      text: Ií ɔɔ du a koori be, bɔr la maa unna la.
+      sbs: 0.7722
+      gen_sec: 3.07
+      ref_sec: 3.4
+      cer: 0.2143
+      wer: 0.4545
+    bible_00033:
+      source: bible
+      text: Hɔbaaya, Hakɔz ani Bazilai naanna.
+      sbs: 0.737
+      gen_sec: 3.07
+      ref_sec: 3.54
+      cer: 0.3571
+      wer: 1.0
+    bible_00034:
+      source: bible
+      text: Denii Kɔraawiizi kaa ŋɔ, “Gil kunnyinee maa ni a dizi lii su hɛri, kundɛɛzaa, kuntuuzaa ani
+        pir sela ni a dizi maa.
+      sbs: 0.7669
+      gen_sec: 9.64
+      ref_sec: 9.86
+      cer: 0.0674
+      wer: 0.3182
+    bible_00035:
+      source: bible
+      text: Amɔ, huma la miŋ hummɛ ii be la, pɛɛpɛɛrɛ n humaawaa?
+      sbs: 0.6697
+      gen_sec: 4.44
+      ref_sec: 3.38
+      cer: 0.075
+      wer: 0.2727
+    bible_00036:
+      source: bible
+      text: N faa kaa chaali saliŋhuŋŋa ani saliŋ lii hɛssi la miŋ faa ra di kora a ni la daama kuna dauribɔra.
+      sbs: 0.7488
+      gen_sec: 8.53
+      ref_sec: 10.44
+      cer: 0.0256
+      wer: 0.2857
+    bible_00037:
+      source: bible
+      text: Di Kɔraawiizi tɛɛ nɛr daama, di gil u ra di a suma, a dɛkkɔɔ ú ra tɛu jaaŋ ka ra di kuna
+        la uŋ kuuhwɛ na la.
+      sbs: 0.7534
+      gen_sec: 8.53
+      ref_sec: 8.7
+      cer: 0.1013
+      wer: 0.1852
+    bible_00038:
+      source: bible
+      text: Yaa ni ii maanii niŋ na heezaa u be saŋa la un niŋ gil ya na yaa Dɔɔri Yeesu Kristo la n niŋ
+        lii chiŋ ni u mɛlikakpega ni ninlau ba la.
+      sbs: 0.6388
+      gen_sec: 11.18
+      ref_sec: 7.52
+      cer: 0.0583
+      wer: 0.2188
+    bible_00039:
+      source: bible
+      text: Ɛrɛɛ á du tɛɛ nɛchɔgaa la n kpu nɛr la n waa wiimaa ɛɛwɛ, ka chɔɔ u dia biini, ba ga kpuuwɛi?
+      sbs: 0.8051
+      gen_sec: 7.34
+      ref_sec: 7.5
+      cer: 0.1014
+      wer: 0.2273
+    bible_00040:
+      source: bible
+      text: Ba kaa sɛbi u wiɛɛlaa la maa uŋ kpa u fɔŋŋa ni u zenni ɛɛ, ni gunla maa un lalli Mɔdɛkai chiŋ
+        di tɛu nabɔmuu.
+      sbs: 0.7349
+      gen_sec: 9.13
+      ref_sec: 10.46
+      cer: 0.0843
+      wer: 0.2
+    bible_00041:
+      source: bible
+      text: Ka faa gil ba sii kali Juda ni Jɛrusalɛm hina maa lugɔ bá ba di wa turgi lampoo la Kɔraawiizi
+        balii Moosis n faa dauwɛ hɛribɔduma biini la tɛɛ Kɔraawiizi.
+      sbs: 0.7632
+      gen_sec: 12.8
+      ref_sec: 12.86
+      cer: 0.0484
+      wer: 0.3
+    bible_00042:
+      source: bible
+      text: N hɔpizaa tunnɔɔ, n jinazi maa bir pɛɛ.
+      sbs: 0.7497
+      gen_sec: 3.24
+      ref_sec: 3.1
+      cer: 0.1667
+      wer: 0.5
+    bible_00043:
+      source: bible
+      text: Koori Uzzia binni faa du fidaanumbɛl, ka u di a kora, di so Jɛrusalɛm biini, binni tokkoanɛɛ
+        ni fidaanɛɛ.
+      sbs: 0.7902
+      gen_sec: 8.87
+      ref_sec: 10.28
+      cer: 0.012
+      wer: 0.2632
+    bible_00044:
+      source: bible
+      text: A hɔl bɛl Jonadab pɛɛzuu, “Hiŋ ɛɛ koori biibaal, ka ɛrɛɛ wiarɛ i biini ɔɔ ra chɔgi hɔpizi
+        biimaa kennei?
+      sbs: 0.7829
+      gen_sec: 8.7
+      ref_sec: 9.7
+      cer: 0.1358
+      wer: 0.4
+    bible_00045:
+      source: bible
+      text: Yaa ra ŋɔ nɛra naa benii ani yaa Dɔɔri Yeesu Kristo sɔŋ, dí ba ra hum ba himmaa huma bɔɔiih,
+        di ra di ba himmaa kuuhni biini.
+      sbs: 0.6305
+      gen_sec: 10.33
+      ref_sec: 7.26
+      cer: 0.1146
+      wer: 0.2593
+    bible_00046:
+      source: bible
+      text: Banla maa n ninna hiŋ gunla miŋ baglɛɛ ani banla maa n ɛɛ Kɔraawiizi nɛra di ɛɛ Jus hina himmaa
+        la, Kɔ́raawiizi tɛɛ baa bampirsɔna di suŋ ba ni.
+      sbs: 0.6554
+      gen_sec: 12.03
+      ref_sec: 7.7
+      cer: 0.0265
+      wer: 0.1034
+    bible_00047:
+      source: bible
+      text: Ba nfɛrɛ tɛɛ baa lugɔ guŋ waa deŋlee ka ba ra ɛɛ guŋ, di wer dar Banabas gba, u ni baa maa
+        ra ɛɛ guŋ.
+      sbs: 0.6391
+      gen_sec: 8.28
+      ref_sec: 5.48
+      cer: 0.0811
+      wer: 0.24
+    bible_00048:
+      source: bible
+      text: Di i ra nyiŋŋii, di haa nyiŋŋii, ka i danna hiŋaa.
+      sbs: 0.678
+      gen_sec: 4.61
+      ref_sec: 3.1
+      cer: 0.0811
+      wer: 0.2727
+    bible_00049:
+      source: bible
+      text: Koori Amɔn binni faa du tokko ni anɛɛ, ka u di a kora, di so Jɛrusalɛm biini, binni anɛɛ.
+      sbs: 0.7742
+      gen_sec: 7.25
+      ref_sec: 7.66
+      cer: 0.0448
+      wer: 0.1579
+    bible_00050:
+      source: bible
+      text: Di u gillɔɔ i ɛɛ i dɔŋahina balii, a hum baa di ra hiini baa.
+      sbs: 0.6905
+      gen_sec: 4.86
+      ref_sec: 4.18
+      cer: 0.0667
+      wer: 0.2
+    bible_00051:
+      source: bible
+      text: Di zɛuzi abɛ daazi ni yɔlɔzi dau a ni.
+      sbs: 0.7498
+      gen_sec: 3.07
+      ref_sec: 3.56
+      cer: 0.1379
+      wer: 0.4444
+    bible_00052:
+      source: bible
+      text: Awia, n de dui faa waa kaa wa dɔɔ zɛɛ tɛŋ, dikuubɛɛwiai, wan tɛɛwɛ kummaa, di tɔɔrɔɔ bɛŋ lɛi.
+      sbs: 0.7958
+      gen_sec: 7.85
+      ref_sec: 9.3
+      cer: 0.1429
+      wer: 0.4737
+    bible_00053:
+      source: bible
+      text: A tuna maa, koori wàá wer ɛɛ wiimaa.
+      sbs: 0.7705
+      gen_sec: 2.9
+      ref_sec: 3.04
+      cer: 0.1111
+      wer: 0.5
+    bible_00054:
+      source: bible
+      text: Ka filaŋkeŋ, u ŋɔ ń pilli gunla un dawuu ni u ŋmɛnizi, tɛɛ nɛra bá zum.
+      sbs: 0.58
+      gen_sec: 6.14
+      ref_sec: 3.7
+      cer: 0.1509
+      wer: 0.375
+    bible_00055:
+      source: bible
+      text: Banla ge n faa hiinuu a bola biine, di ra bɔnni a kunaa faa, Ɛdɛn, Miniamin, Jesua, Sɛmaaya,
+        Amaria ani Sɛkania.
+      sbs: 0.7934
+      gen_sec: 9.39
+      ref_sec: 13.18
+      cer: 0.0941
+      wer: 0.381
+    bible_00056:
+      source: bible
+      text: De jaŋzi faa du nogumzi tokko, u wassi ge ɛɛ guŋ.
+      sbs: 0.7798
+      gen_sec: 4.18
+      ref_sec: 4.14
+      cer: 0.1351
+      wer: 0.3636
+    bible_00057:
+      source: bible
+      text: “N Dɔɔri Kɔraawiizi la minna hum, hiihzi lawimbuu werge maa, n ŋmaabi.
+      sbs: 0.7594
+      gen_sec: 5.97
+      ref_sec: 4.54
+      cer: 0.1273
+      wer: 0.5833
+    bible_00058:
+      source: bible
+      text: Denii n jaa wer ŋɔ wia tɛɛ banla n na chagziŋ la.
+      sbs: 0.7263
+      gen_sec: 4.1
+      ref_sec: 3.3
+      cer: 0.1081
+      wer: 0.3333
+    bible_00059:
+      source: bible
+      text: Awia, kunla maa uŋ faa ra nyiŋŋi di ŋɔ koorizeŋ la be, a koori ɔɔ tɛubuu.
+      sbs: 0.766
+      gen_sec: 6.4
+      ref_sec: 5.44
+      cer: 0.0727
+      wer: 0.1875
+    bible_00060:
+      source: bible
+      text: Haali di i laŋŋɔ ga lɔ a laal ni bɔkpega gunla maa gba, ka Kɔraawiizi daŋ kpai du i dɔm la
+        nonee biini, waabuu dɔɔ fɔŋŋa ú hiini gɛɛ ú gil nɛr chol.
+      sbs: 0.7801
+      gen_sec: 12.37
+      ref_sec: 13.2
+      cer: 0.115
+      wer: 0.3333
+    bible_00061:
+      source: bible
+      text: Yáa Mɛɛ Kɔraawiizi ni yaa Dɔɔri Yeesu Kristo hiini ia, di tɛɛ ia bampirsɔna.
+      sbs: 0.6297
+      gen_sec: 6.4
+      ref_sec: 3.34
+      cer: 0.082
+      wer: 0.2857
+    bible_00062:
+      source: bible
+      text: Ka yiryitta tɔ ba see di ra lɔ kuna di ra chɔluu werge maa.
+      sbs: 0.7704
+      gen_sec: 4.69
+      ref_sec: 5.0
+      cer: 0.1556
+      wer: 0.5
+    bible_00063:
+      source: bible
+      text: Di ii wetto, di a lii iawaa be, ií ɛɛ ania gil ii ni nɛr maa wia ɛɛ bɔɔiih.
+      sbs: 0.6802
+      gen_sec: 5.8
+      ref_sec: 6.32
+      cer: 0.1296
+      wer: 0.2632
+    bible_00064:
+      source: bible
+      text: Absalɔm ni Izrɛl hina maa ŋɔ, “Husai baglaa naabuu bɔ Ahitɔfɛl hor la.
+      sbs: 0.7125
+      gen_sec: 5.89
+      ref_sec: 13.06
+      cer: 0.1091
+      wer: 0.3846
+    bible_00065:
+      source: bible
+      text: Koori Jɛhɔram niwizii faa Azaria, Jɛhiɛl, Zɛkaria, Azariahu, Maikil ani Sɛfatia.
+      sbs: 0.7876
+      gen_sec: 7.17
+      ref_sec: 10.6
+      cer: 0.0462
+      wer: 0.3636
+    bible_00066:
+      source: bible
+      text: Ba faa furgi tokorjigzii a diini baŋgizi koŋlaa ni a biine koŋlaa la n du a baambaana la ni.
+      sbs: 0.7491
+      gen_sec: 7.85
+      ref_sec: 6.9
+      cer: 0.137
+      wer: 0.4737
+    bible_00067:
+      source: bible
+      text: Guŋ jaa gil ba nɔŋŋuu werge maa kaali Koori Deevid.
+      sbs: 0.787
+      gen_sec: 4.61
+      ref_sec: 3.36
+      cer: 0.2439
+      wer: 0.7
+    bible_00068:
+      source: bible
+      text: Baal bɛl faa ba n benii Ziklag, di wa ŋɔ, ‘Koori Sɔɔl siuwɔɔ.
+      sbs: 0.7986
+      gen_sec: 4.95
+      ref_sec: 5.46
+      cer: 0.2667
+      wer: 0.6154
+    bible_00069:
+      source: bible
+      text: Denii ba faa kpa a kuŋkɛɛlaa, kuna fizi bɔkpaŋkpaŋa ani kuna la baŋ kpawɛɛ tɛɛ Kɔraawiizi
+        ba biinihuŋŋu ni la.
+      sbs: 0.785
+      gen_sec: 9.9
+      ref_sec: 9.66
+      cer: 0.0449
+      wer: 0.15
+    bible_00070:
+      source: bible
+      text: ” Koori Jɛhɔsafat ŋɔ Izrɛl koori be, “Pɛɛzi Kɔraawiizi na mɔɔ.
+      sbs: 0.7505
+      gen_sec: 5.21
+      ref_sec: 3.92
+      cer: 0.2292
+      wer: 0.6
+    bible_00071:
+      source: bible
+      text: A saliŋ bɛŋ tɔgzi faa du kilozi kalfaanue, , saliŋhuŋŋa ge tɔgzi faa du kilozi kagboŋa anɛɛ
+        ni kalfaanaazu, , ani Kɔraawiizi kizeehina bɔmbɔga ge kalfa, .
+      sbs: 0.7906
+      gen_sec: 13.74
+      ref_sec: 11.92
+      cer: 0.0738
+      wer: 0.625
+    bible_00072:
+      source: bible
+      text: Ka anɛɛ n niŋ wer ma Dia tɛu, dikuubɛɛwiai, chinchiŋ gba himmaa, wàá wer zuu de.
+      sbs: 0.7871
+      gen_sec: 6.83
+      ref_sec: 6.02
+      cer: 0.0328
+      wer: 0.25
+    bible_00073:
+      source: bible
+      text: Ií gil u sɔŋ dɔɔi la lii u bɛmbɛŋ wiɛɛlaa biini, dikuubɛɛwiai, nɛr maa ni u bunnii un niŋ
+        chi.
+      sbs: 0.6932
+      gen_sec: 7.94
+      ref_sec: 5.64
+      cer: 0.0556
+      wer: 0.25
+    bible_00074:
+      source: bible
+      text: Ka filaŋkeŋ, ii banla n faa du bɔɔnɛɛ bɔɔnɛɛ la, Kɔraawiizi kuu ii ni Yeesu Kristo n kpauwɛ
+        la wiarɛ, di kpa ia dugli u be.
+      sbs: 0.6548
+      gen_sec: 10.24
+      ref_sec: 6.06
+      cer: 0.0851
+      wer: 0.2308
+    bible_00075:
+      source: bible
+      text: Kɔraawiizi sogo u koorikarnaniinanii ninɛɛ.
+      sbs: 0.6957
+      gen_sec: 3.93
+      ref_sec: 3.2
+      cer: 0.3684
+      wer: 1.6
+    bible_00076:
+      source: bible
+      text: Kɔraawiizi kaa ŋɔ, “Gil niiri la n du a chiŋ zɛɛ la chaali chɔɔ bɔkpaŋ, ka bɔ́hilii lii.
+      sbs: 0.7746
+      gen_sec: 7.34
+      ref_sec: 6.8
+      cer: 0.1818
+      wer: 0.3333
+    bible_00077:
+      source: bible
+      text: Saŋa bɛl n wa helle, Absalɔm nyiŋŋi torko, zagra ani baala tokkoanɛɛ ni fi, bá ɔɔ tɔ u see
+        di ra chɔ.
+      sbs: 0.7803
+      gen_sec: 8.45
+      ref_sec: 8.66
+      cer: 0.1316
+      wer: 0.4545
+    bible_00078:
+      source: bible
+      text: Kɔraawiizi gillɔɔ koorizeŋ, u zɛɛsogna ani u nabɔnzi nɔŋŋiŋ, dikuu aŋ paruu wia.
+      sbs: 0.768
+      gen_sec: 7.42
+      ref_sec: 7.72
+      cer: 0.2462
+      wer: 0.6923
+    bible_00079:
+      source: bible
+      text: N yau yomkpilaa, ba lul baŋhina ge n dia jaa.
+      sbs: 0.7742
+      gen_sec: 3.75
+      ref_sec: 3.76
+      cer: 0.0882
+      wer: 0.4
+    bible_00080:
+      source: bible
+      text: Koori Deevid jaa gil u ɛɛ u guure nabɔma.
+      sbs: 0.7503
+      gen_sec: 3.33
+      ref_sec: 3.64
+      cer: 0.1875
+      wer: 0.8889
+    bible_00081:
+      source: bible
+      text: Ií gil u na girme dikuu Yeesu hiŋra ni Yeesu Kristo wia, saŋaa saŋa maa.
+      sbs: 0.6571
+      gen_sec: 6.23
+      ref_sec: 4.54
+      cer: 0.0893
+      wer: 0.1333
+    bible_00082:
+      source: bible
+      text: U faa kpa u biibaalaa lizi mbusu, di fuuh baa Bɛn Hinɔm Waluu biini, di ra di hiri, di ra
+        vug, di ɔɔ gil vugra ni ijɔzi ra yir lalaa, u ra pɛɛzi wia.
+      sbs: 0.7718
+      gen_sec: 11.86
+      ref_sec: 11.98
+      cer: 0.1273
+      wer: 0.3824
+    bible_00083:
+      source: bible
+      text: Bɛl maa dɔɔ kuŋ hɔŋ u nyuu, a ge bɛl maa chiŋ laŋaa ɛɛ lugɔ nogumzi anue.
+      sbs: 0.7572
+      gen_sec: 6.23
+      ref_sec: 5.98
+      cer: 0.1636
+      wer: 0.4706
+    bible_00084:
+      source: bible
+      text: Kenne n ɔɔ ra ɛɛ n hɔna maa biini ií wer zum lugɔ n hɔnaa.
+      sbs: 0.6414
+      gen_sec: 4.44
+      ref_sec: 3.36
+      cer: 0.2093
+      wer: 0.5333
+    bible_00085:
+      source: bible
+      text: Yaa waa banla n waa Jus hina ɛɛwɛ, yaa ra yir baa wichɔgɛɛra la ɛɛwɛ.
+      sbs: 0.6131
+      gen_sec: 5.63
+      ref_sec: 3.64
+      cer: 0.0566
+      wer: 0.3333
+    bible_00086:
+      source: bible
+      text: Nunzuma ɔɔ du nɛr la n na nuu wia zɛɛ nfɛrɛ biinii.
+      sbs: 0.7128
+      gen_sec: 4.1
+      ref_sec: 3.74
+      cer: 0.0769
+      wer: 0.25
+    bible_00087:
+      source: bible
+      text: Ka ba faa waa wette bá bagli lugɔ ba domeezi ɛɛ Izrɛl hina naannaa.
+      sbs: 0.7661
+      gen_sec: 5.46
+      ref_sec: 5.42
+      cer: 0.1132
+      wer: 0.2857
+    bible_00088:
+      source: bible
+      text: Ka Kɔraawiizi dɔgtɛɛ bɛl banna yir Ɔdɛd n faa du Samaria, lii di ga chem ba laallɔɔra ni,
+        di ŋɔ ba be, “Kɔraawiizi la ii naabaala n na hum la baaŋ fuuh Juda hina ninɛɛ.
+      sbs: 0.7912
+      gen_sec: 13.82
+      ref_sec: 13.58
+      cer: 0.0775
+      wer: 0.2857
+    bible_00089:
+      source: bible
+      text: U ge gba faa ɛɛ wizenaare, di kpu Moab hina laallɔkpega banɛɛ.
+      sbs: 0.7488
+      gen_sec: 5.21
+      ref_sec: 4.78
+      cer: 0.2449
+      wer: 0.3333
+    bible_00090:
+      source: bible
+      text: Denii Bɛɛrɔf hinuu Rimɔn biibaala Rɛkab ni Baana izi di ra la Isbɔsɛf dia, baŋ ga hel de,
+        di wiizi baŋŋɔ, u chɔɔ di ra heezi.
+      sbs: 0.8037
+      gen_sec: 10.5
+      ref_sec: 12.04
+      cer: 0.1667
+      wer: 0.3077
+    bible_00091:
+      source: bible
+      text: U hiini yaabuu ni winanaa la maa n lii u Dumnanii be, di gil yaa ra di suma u be, dikuu yaa
+        ni Kristo n kpauwɛ wia.
+      sbs: 0.6764
+      gen_sec: 9.13
+      ref_sec: 5.92
+      cer: 0.0349
+      wer: 0.1481
+    bible_00092:
+      source: bible
+      text: Ba nabɔnzi benii n feli la ga bagli ba bɛŋ mɔɔ, ń nuu ba be lugɔ n baglɔɔrɛ nɛnnɛ gɛɛ pɛɛpɛɛrɛ
+        n faa aah siwii ra bagli a wia gunlai?
+      sbs: 0.6843
+      gen_sec: 10.75
+      ref_sec: 9.14
+      cer: 0.1373
+      wer: 0.3667
+    bible_00093:
+      source: bible
+      text: Koori Jɛhɔram kora dii saŋa, Ɛdɔm hina faa vɛɛ Juda hina dɔɔra sɛɛirɛ, ka tɔ ba himmaa koori.
+      sbs: 0.8015
+      gen_sec: 7.85
+      ref_sec: 8.56
+      cer: 0.0959
+      wer: 0.3333
+    bible_00094:
+      source: bible
+      text: A hɔpizaa ni hamuŋzi tokkoanɛɛ la n wa tunnɛ, Kɔraawiizi faa kpa a bipɛntɛnzi anɛɛ la uŋ sɛbi
+        a nuukpaŋ wia a ni labuu tɛŋ.
+      sbs: 0.7325
+      gen_sec: 10.5
+      ref_sec: 10.56
+      cer: 0.1134
+      wer: 0.4
+    bible_00095:
+      source: bible
+      text: Awia, Izrɛl hina waa vɛɛ Koori Deevid, ka ga hiŋ Siiba di ra la.
+      sbs: 0.7985
+      gen_sec: 5.29
+      ref_sec: 6.1
+      cer: 0.0208
+      wer: 0.2143
+    bible_00096:
+      source: bible
+      text: Ee, n na lugɔ nunzumaa bɔ gɛnaa.
+      sbs: 0.7055
+      gen_sec: 2.65
+      ref_sec: 3.46
+      cer: 0.1667
+      wer: 1.0
+    bible_00097:
+      source: bible
+      text: Ba jaa ligzi ba bunni di ra ha a nii biini, ka a gberzeŋ wer du fug di kpa baa la.
+      sbs: 0.7531
+      gen_sec: 6.4
+      ref_sec: 6.96
+      cer: 0.0667
+      wer: 0.2857
+    bible_00098:
+      source: bible
+      text: Di nɛr la hinna nyiŋŋi la haŋ siu, banla maa n kawɛɛ la daŋ chɔ ba waa hiŋii, di birgi i nɛra.
+      sbs: 0.755
+      gen_sec: 7.94
+      ref_sec: 8.44
+      cer: 0.0143
+      wer: 0.0455
+    bible_00099:
+      source: bible
+      text: Di nɛr maa haŋ wa kpa u wia di ra ba koori be ú kuari, Absalɔm ɔɔ yir a hinnɛ di pɛɛzuu,
+        “Lee bolle i liiyɛi?
+      sbs: 0.7802
+      gen_sec: 8.53
+      ref_sec: 7.94
+      cer: 0.125
+      wer: 0.2692
+    bible_00100:
+      source: bible
+      text: N Dɔɔri Kɔraawiizi, n na yiriibuu ni n biini maa.
+      sbs: 0.7254
+      gen_sec: 4.1
+      ref_sec: 3.22
+      cer: 0.0789
+      wer: 0.2
+    bible_00101:
+      source: bible
+      text: U Dumnanii gillɔɔ ii doŋa maa lii ii ni ii ge sɛɛ u wibii.
+      sbs: 0.668
+      gen_sec: 4.69
+      ref_sec: 3.04
+      cer: 0.0682
+      wer: 0.1429
+    bible_00102:
+      source: bible
+      text: Baŋ wa chaali Jɛrusalɛm, ba ni a koori faa ɛɛ nuukpaŋ Kɔraawiizi Dia la biini.
+      sbs: 0.784
+      gen_sec: 6.74
+      ref_sec: 5.98
+      cer: 0.0645
+      wer: 0.2
+    bible_00103:
+      source: bible
+      text: U faa gil ba ma ligee a Dia see, bɛl chi wiifurii nodig wiikakag, bɛl ge chi wiifurii nomɛɛl
+        wiikakag.
+      sbs: 0.761
+      gen_sec: 8.45
+      ref_sec: 9.42
+      cer: 0.125
+      wer: 0.6
+    bible_00104:
+      source: bible
+      text: A saŋa, di Filisti laallɔɔra kaa chaali Lɛhi, bɔr la siga n suwee biini.
+      sbs: 0.8111
+      gen_sec: 6.14
+      ref_sec: 6.88
+      cer: 0.1071
+      wer: 0.2143
+    bible_00105:
+      source: bible
+      text: Denii niinyɔgzi wa lau Koori Deevid werge maa, u ŋɔ, “N bɔra daŋ vii sɔɔni, di nɛbɛl vii la
+        kɔlɔŋ la n dugli Bɛtlihɛm dominuuzeŋ la, di ga ɛɛ nii wa tɛŋ ń nyɔɔ!
+      sbs: 0.7809
+      gen_sec: 13.4
+      ref_sec: 14.4
+      cer: 0.1157
+      wer: 0.2059
+    bible_00106:
+      source: bible
+      text: U ŋɔ, “Laau.
+      sbs: 0.6886
+      gen_sec: 1.02
+      ref_sec: 8.6
+      cer: 0.4286
+      wer: 1.0
+    bible_00107:
+      source: bible
+      text: Ba maanii Kɔraawiizi faa kpa du Koorizeŋ Nɛbukadnɛɛza nonee biini.
+      sbs: 0.7726
+      gen_sec: 5.89
+      ref_sec: 5.04
+      cer: 0.0714
+      wer: 0.3
+    bible_00108:
+      source: bible
+      text: A baal ɔɔ faa ra ɛɛubuu alugɔ u biihaaŋ.
+      sbs: 0.7465
+      gen_sec: 3.33
+      ref_sec: 3.38
+      cer: 0.3226
+      wer: 1.0
+    bible_00109:
+      source: bible
+      text: Di nɛr faa wetto gil u wia deŋli Kɔraawiizi be dikuu Gbɔgni hiŋaa la wia, amɔ, Kristo faa
+        siuwɔɔ pɛɛ.
+      sbs: 0.6543
+      gen_sec: 8.53
+      ref_sec: 7.4
+      cer: 0.0886
+      wer: 0.2
+    bible_00110:
+      source: bible
+      text: “Ba kpegli bolzeŋ la durnya hina maa n na chɔli labuu!
+      sbs: 0.6961
+      gen_sec: 4.44
+      ref_sec: 3.46
+      cer: 0.119
+      wer: 0.2727
+    bible_00111:
+      source: bible
+      text: U wassi faa ɛɛ nogumzi fi, u luŋzi ge ɛɛ nogumzi anue.
+      sbs: 0.7504
+      gen_sec: 4.44
+      ref_sec: 4.24
+      cer: 0.2683
+      wer: 0.8333
+    bible_00112:
+      source: bible
+      text: Ií gilɛɛ ra hum fɔŋŋa ni saŋa la iiŋ wa du nɛra baaŋ dikuu sɔŋ wia, ka ɔɔ ra hum nɛnnɛ gunla
+        Kristo balnanaa n ninna hum, di ra ɛɛ Kɔraawiizi kipar la ani ii biine maa.
+      sbs: 0.6738
+      gen_sec: 14.08
+      ref_sec: 9.42
+      cer: 0.0543
+      wer: 0.2432
+    bible_00113:
+      source: bible
+      text: Ií ɔɔ suŋŋi wiizi di tɛɛ banla n na tɔɔri ia, di gilɛɛ see baa nua.
+      sbs: 0.674
+      gen_sec: 5.46
+      ref_sec: 3.44
+      cer: 0.16
+      wer: 0.25
+    bible_00114:
+      source: bible
+      text: Kɔraawiizi kizeehina la n ɛɛ Aarɔn naanna bɛnnɛ ba sɔ di lizi ba doŋa ha, ba ɛɛ nɛnanaananaa
+        Kɔraawiizi be, bá ra ɛɛ guŋ.
+      sbs: 0.8027
+      gen_sec: 10.24
+      ref_sec: 9.48
+      cer: 0.1263
+      wer: 0.5417
+    bible_00115:
+      source: bible
+      text: Ya gilɛɛ ra nyiŋŋi zenni dɔŋa ni, di ra nuu dɔŋa nuuzi, di ra ɛɛ dɔŋa bɔwii.
+      sbs: 0.7038
+      gen_sec: 6.66
+      ref_sec: 6.2
+      cer: 0.0877
+      wer: 0.2353
+    bible_00116:
+      source: bible
+      text: Saŋa bɛl, bunyinzi ɔɔ nyaa diweere, lɔzi ra kpua, a ra bɛɛli.
+      sbs: 0.7964
+      gen_sec: 5.21
+      ref_sec: 5.74
+      cer: 0.1304
+      wer: 0.3333
+    bible_00117:
+      source: bible
+      text: Ka yaa zummɔ lugɔ nɛr n ɔɔ ra hiŋ Gbɔgni la wia lɛi u wia wer deŋli Kɔraawiizi be.
+      sbs: 0.6178
+      gen_sec: 6.74
+      ref_sec: 4.04
+      cer: 0.1587
+      wer: 0.3158
+    bible_00118:
+      source: bible
+      text: Ií ra chɔli Kɔraawiizi!
+      sbs: 0.6574
+      gen_sec: 2.05
+      ref_sec: 3.28
+      cer: 1.2632
+      wer: 2.0
+    bible_00119:
+      source: bible
+      text: Kuuhni ɛɛ wipɛɛrii.
+      sbs: 0.5907
+      gen_sec: 1.71
+      ref_sec: 14.36
+      cer: 0.5
+      wer: 1.0
+    bible_00120:
+      source: bible
+      text: Ira ni Garɛb n ɛɛ Itri hina.
+      sbs: 0.7115
+      gen_sec: 2.22
+      ref_sec: 3.12
+      cer: 0.0952
+      wer: 0.1429
+    bible_00121:
+      source: bible
+      text: Kɔraawiizi kaa ŋɔ wia Joona be bunɛɛ, di ŋɔ, “Izi la bolzeŋ Ninɛvɛ, di ga lizi n amaniye tɛɛ
+        baa.
+      sbs: 0.7686
+      gen_sec: 8.19
+      ref_sec: 8.2
+      cer: 0.0548
+      wer: 0.3
+    bible_00122:
+      source: bible
+      text: Bɛzai naanna faa du kalfaahoro ni tokko ni ahoro, .
+      sbs: 0.7527
+      gen_sec: 4.27
+      ref_sec: 3.74
+      cer: 0.125
+      wer: 0.7778
+    bible_00123:
+      source: bible
+      text: Kuna duui saŋa n wa helle, Koorizeŋ Nɛbukadnɛɛza hum ba ga lawuu, ka paagi Kɔraawiizi Dia
+        kuna la yoola n kpolle jaa, di ba Babilɔn.
+      sbs: 0.7804
+      gen_sec: 11.26
+      ref_sec: 11.66
+      cer: 0.1346
+      wer: 0.4
+    bible_00124:
+      source: bible
+      text: pir sezenaa maa ni.
+      sbs: 0.5812
+      gen_sec: 1.62
+      ref_sec: 3.54
+      cer: 0.6667
+      wer: 1.0
+    bible_00125:
+      source: bible
+      text: Banla n kaa jaa a Laallɔkpega Tokko Ni Kpɔrgɔ ninɛɛ keŋ.
+      sbs: 0.7299
+      gen_sec: 4.78
+      ref_sec: 3.5
+      cer: 0.2222
+      wer: 0.5455
+    bible_00126:
+      source: bible
+      text: “Di lii n pɔlaa saŋa maa, n dɔma sunnimbuu werge.
+      sbs: 0.717
+      gen_sec: 4.1
+      ref_sec: 3.06
+      cer: 0.1622
+      wer: 0.4
+    bible_00127:
+      source: bible
+      text: Ka ii kpu baabuu gunla n waa dɛkkɛ, haali chiŋ gba nuu gunla iiŋ chuuri baabuu.
+      sbs: 0.7968
+      gen_sec: 6.74
+      ref_sec: 7.58
+      cer: 0.0161
+      wer: 0.0625
+    bible_00128:
+      source: bible
+      text: U faa ma a koŋliire u la chiŋ jaa, di lizi laallɔɔra nabɔnzi ba du a bolkpega la maa n du
+        Juda biine la.
+      sbs: 0.7582
+      gen_sec: 8.45
+      ref_sec: 9.86
+      cer: 0.1013
+      wer: 0.25
+    bible_00129:
+      source: bible
+      text: ” Denii Joab jaa tɛr u nonii lau Amasa taŋhuna lugɔ unna nyiŋŋi ú suuzuu la.
+      sbs: 0.7271
+      gen_sec: 6.4
+      ref_sec: 6.64
+      cer: 0.0339
+      wer: 0.1333
+    bible_00130:
+      source: bible
+      text: A koori himmaa gba, a hɛri kumpattaa ninɛɛ u dɛlli.
+      sbs: 0.7375
+      gen_sec: 4.27
+      ref_sec: 3.86
+      cer: 0.05
+      wer: 0.3
+    bible_00131:
+      source: bible
+      text: Di ii bɛl maa ɛɛ yaara hiŋ, waa sɛɛwɛ ú hum gunla yaa n baglɛɛ la, ii gilɛɛ gil ii nuu kpau.
+      sbs: 0.6674
+      gen_sec: 7.34
+      ref_sec: 6.28
+      cer: 0.0441
+      wer: 0.2273
+    bible_00132:
+      source: bible
+      text: Nɛr la baaŋ n waa fuuh manaŋ, dɔɔ wia zɛɛ zumaarɛ werge.
+      sbs: 0.7762
+      gen_sec: 4.78
+      ref_sec: 3.74
+      cer: 0.1163
+      wer: 0.1667
+    bible_00133:
+      source: bible
+      text: Joab tɔɔh u hia, u looree vir lii chol hɛri, Amasa siu kakpaŋ.
+      sbs: 0.7708
+      gen_sec: 5.21
+      ref_sec: 6.72
+      cer: 0.1064
+      wer: 0.2308
+    bible_00134:
+      source: bible
+      text: U tauduura chignibɔra, u koŋliisaagaa ani u jaŋgal ni anla maa mɛgzaazi faa ɛɛ kpaŋ.
+      sbs: 0.7715
+      gen_sec: 7.42
+      ref_sec: 7.4
+      cer: 0.0735
+      wer: 0.4667
+    bible_00135:
+      source: bible
+      text: Ii gba du denii di ɛɛ dia la Kɔraawiizi n na ma ú ɛɛ u duuribɔr la, dikuu u Duma n du ii ni
+        la wia.
+      sbs: 0.6969
+      gen_sec: 7.51
+      ref_sec: 7.86
+      cer: 0.0694
+      wer: 0.2692
+    bible_00136:
+      source: bible
+      text: Maaka hinuu Ahasbai biibaal Ɛlifɛlɛt.
+      sbs: 0.6738
+      gen_sec: 3.33
+      ref_sec: 4.22
+      cer: 0.1562
+      wer: 1.4
+    bible_00137:
+      source: bible
+      text: Kɔ́raawiizi ga suŋ i ni, di hiinii.
+      sbs: 0.6729
+      gen_sec: 2.9
+      ref_sec: 7.82
+      cer: 0.1538
+      wer: 0.5714
+    bible_00138:
+      source: bible
+      text: Ba faa taambuu n la har, di ra nyiŋŋi bá kpegliŋ.
+      sbs: 0.7899
+      gen_sec: 4.27
+      ref_sec: 4.92
+      cer: 0.0
+      wer: 0.0
+    bible_00139:
+      source: bible
+      text: Bɔr duani, hɔpizi chɔɔzi, di ɛɛ a lugli hɔpizii.
+      sbs: 0.7609
+      gen_sec: 4.1
+      ref_sec: 4.72
+      cer: 0.1622
+      wer: 0.5556
+    bible_00140:
+      source: bible
+      text: Guŋ gil u biibaal kpa Koori Ahab biihaaŋ.
+      sbs: 0.7814
+      gen_sec: 3.67
+      ref_sec: 4.0
+      cer: 0.1818
+      wer: 0.875
+    bible_00141:
+      source: bible
+      text: Denii Kɔraawiizi Kizeehina Maa Nabɔma Jɛhɔyada faa wa bini werge maa, di di binni kalfa ni
+        tokko ni kpɔrgɔ, ka siu.
+      sbs: 0.7853
+      gen_sec: 9.73
+      ref_sec: 9.14
+      cer: 0.0761
+      wer: 0.3333
+    bible_00142:
+      source: bible
+      text: Kaa tɛŋ hɛriŋkpol, daananaa ni algum dolli lii Lɛbanɔn, dikuubɛɛwiai, n zummɔ lugɔ i nɛra
+        du denii, di zum daazi teŋraa nɛnnɛ.
+      sbs: 0.7906
+      gen_sec: 11.01
+      ref_sec: 11.48
+      cer: 0.1
+      wer: 0.4545
+    bible_00143:
+      source: bible
+      text: “Bampirsɔna du i biini.
+      sbs: 0.654
+      gen_sec: 1.88
+      ref_sec: 4.9
+      cer: 0.8333
+      wer: 1.0
+    bible_00144:
+      source: bible
+      text: Ií mau, ú chiŋ laŋaa ɛɛ nogumzi tokkoahoro, ú wassi ge ɛɛ guŋ.
+      sbs: 0.7781
+      gen_sec: 5.38
+      ref_sec: 4.46
+      cer: 0.0851
+      wer: 0.3846
+    bible_00145:
+      source: bible
+      text: Yaa maanii faa ra hiŋ baa, di ra ɛɛ wia la maa yaa bɔrahɔŋ n tɛɛ yaa ŋɔ ya ra ɛɛ la, di ra
+        hiŋ yaa kunnyiŋŋichɔgaa ni yaa nfɛrchɔgaa.
+      sbs: 0.6595
+      gen_sec: 11.26
+      ref_sec: 6.86
+      cer: 0.0792
+      wer: 0.1333
+    bible_00146:
+      source: bible
+      text: Wii la miŋ nawɛɛrɛ keŋ, winanii la nɛr n niŋ wer ɛɛu lugɔ ú ra di, di ra nyɔɔ, di kpa kuna
+        la uŋ kuuhwɛ na la, di ra di u hiŋ, miibɔɔkpurii naa Kɔraawiizi n tɛu naa biini.
+      sbs: 0.7551
+      gen_sec: 14.08
+      ref_sec: 14.08
+      cer: 0.1181
+      wer: 0.2051
+    bible_00147:
+      source: bible
+      text: Ka ba purgi u dia ú birgi hul, dikuu a wichɔgii naa wia.
+      sbs: 0.7627
+      gen_sec: 4.44
+      ref_sec: 4.56
+      cer: 0.0952
+      wer: 0.1538
+    bible_00148:
+      source: bible
+      text: Haali ni zinaa, Ɛdɔm hina waa kaa ra sɛɛ Juda hina dɔɔra.
+      sbs: 0.7454
+      gen_sec: 4.69
+      ref_sec: 4.96
+      cer: 0.1136
+      wer: 0.25
+    bible_00149:
+      source: bible
+      text: ” Denii Kɔraawiizi ta ninzenaa anɛɛ, zeŋhiŋ a chaani hɔpizaa, jigahiŋ ge ra chaani hamuŋa.
+      sbs: 0.7491
+      gen_sec: 8.02
+      ref_sec: 6.62
+      cer: 0.0694
+      wer: 0.5714
+    bible_00150:
+      source: bible
+      text: Gilɛɛ salli i laal zagu ni ú lɛɛi.
+      sbs: 0.7432
+      gen_sec: 2.73
+      ref_sec: 3.88
+      cer: 0.2692
+      wer: 0.625
+    bible_00151:
+      source: bible
+      text: Di kaa chɔgi mbusu lizibɔra la maa uŋ faa mawɛɛ Kɔraawiizi Dia giŋgimii nyuu ni Jɛrusalɛm
+        biini maa la.
+      sbs: 0.7558
+      gen_sec: 8.87
+      ref_sec: 8.36
+      cer: 0.0833
+      wer: 0.2632
+    bible_00152:
+      source: bible
+      text: N na lugɔ banla maa n du durnya naa biini, ra hiŋ a biipɔllii la n niŋ wa kpa koori gawa labuu.
+      sbs: 0.754
+      gen_sec: 7.77
+      ref_sec: 7.72
+      cer: 0.0833
+      wer: 0.1364
+    bible_00153:
+      source: bible
+      text: Ligii maa hora faa ɛɛ kalfaanɛɛ, di ta chɔŋ bɔra anɛɛ di hiŋzi dɔŋa.
+      sbs: 0.774
+      gen_sec: 5.89
+      ref_sec: 5.74
+      cer: 0.1321
+      wer: 0.5
+    bible_00154:
+      source: bible
+      text: Zagra ni kauzi biizi ge faa du kalfaanɛɛ ni tokkoanɛɛ ni anue, .
+      sbs: 0.7382
+      gen_sec: 5.29
+      ref_sec: 5.34
+      cer: 0.12
+      wer: 0.3333
+    bible_00155:
+      source: bible
+      text: Ba bir hattɛ kpu n widaulaa la, ka ŋmɛɛri saliŋ di kuari vug tɛɛ bahinaa.
+      sbs: 0.7368
+      gen_sec: 6.23
+      ref_sec: 5.62
+      cer: 0.1404
+      wer: 0.4
+    bible_00156:
+      source: bible
+      text: Bii la maara n faa vɛɛwɛ ha labuu jaa ɛɛ.
+      sbs: 0.7589
+      gen_sec: 3.24
+      ref_sec: 3.2
+      cer: 0.0
+      wer: 0.4
+    bible_00157:
+      source: bible
+      text: Koori Amɔn faa ra kuari vuga la maa u mɛɛ n faa ra kuari labuu, di ɔɔ lizi mbusuzi di ra tɛɛa.
+      sbs: 0.7743
+      gen_sec: 7.42
+      ref_sec: 8.04
+      cer: 0.0845
+      wer: 0.2273
+    bible_00158:
+      source: bible
+      text: Amnɔn vɛɛ dii, ka ŋɔ, “Gil nɛra la maa n du n be la lii.
+      sbs: 0.7812
+      gen_sec: 4.27
+      ref_sec: 5.64
+      cer: 0.0526
+      wer: 0.1333
+    bible_00159:
+      source: bible
+      text: Kɔraawiizi ɔmaa ra tɛɛ miibɔɔ ni hiŋ dɔɔirɛ.
+      sbs: 0.6614
+      gen_sec: 3.84
+      ref_sec: 3.42
+      cer: 0.6111
+      wer: 0.875
+    bible_00160:
+      source: bible
+      text: Ii daŋ faa nuu gunla Kɔraawiizi n suŋ n ni, di hiiniŋ werge ni u fɔŋŋa ka ń wer hiini ia.
+      sbs: 0.6829
+      gen_sec: 7.51
+      ref_sec: 4.84
+      cer: 0.0896
+      wer: 0.2381
+    bible_00161:
+      source: bible
+      text: Ama, u faa waa lugɔ u naabaal Koori Deevid, dikuubɛɛwiai, u faa ɛɛ wia la n waa deŋleere di
+        zuu Kɔraawiizi ni.
+      sbs: 0.8017
+      gen_sec: 9.22
+      ref_sec: 8.88
+      cer: 0.0941
+      wer: 0.2727
+    bible_00162:
+      source: bible
+      text: Denii Sifas ba Antiɔk, n pɛɛzuu wii bɛl, dikuubɛɛwiai, u hor faa waa sum.
+      sbs: 0.6989
+      gen_sec: 6.14
+      ref_sec: 5.26
+      cer: 0.0893
+      wer: 0.4286
+    bible_00163:
+      source: bible
+      text: Ka Ijip koori faa wiruu, ka gil Juda hina ra turgi lampoo, saliŋhuŋŋa kilozi kagboŋa ahoro
+        ni kalfaanaazu ani saliŋ kilozi tokko ni kpɔrgɔ ni anaazu.
+      sbs: 0.7677
+      gen_sec: 13.23
+      ref_sec: 13.52
+      cer: 0.0496
+      wer: 0.2308
+    bible_00164:
+      source: bible
+      text: u ɔɔ ra fɔrgi Kɔraawiizii dikuu nɛr wia.
+      sbs: 0.7356
+      gen_sec: 3.33
+      ref_sec: 3.2
+      cer: 0.375
+      wer: 0.875
+    bible_00165:
+      source: bible
+      text: Koori Uzzia faa ma diijaŋkpega, Jɛrusalɛm biini, ba ɔɔ so de di ra du tau, a du Sirii Dominua,
+        Waluu Dominua ani bɔr la a koŋlii n gutte.
+      sbs: 0.8021
+      gen_sec: 11.43
+      ref_sec: 13.3
+      cer: 0.1429
+      wer: 0.4643
+    bible_00166:
+      source: bible
+      text: Koori Solomɔn faa gillɔɔ ba ma ligee anɛɛ a Dia see.
+      sbs: 0.7612
+      gen_sec: 4.27
+      ref_sec: 4.94
+      cer: 0.2195
+      wer: 0.6364
+    bible_00167:
+      source: bible
+      text: A diini nabɔnzi la n faa ra binni a laallɔkpega naa ni, faa du baala kagboŋa anɛɛ ni kalfaanumbɛl.
+      sbs: 0.7674
+      gen_sec: 8.28
+      ref_sec: 8.8
+      cer: 0.1026
+      wer: 0.3684
+    bible_00168:
+      source: bible
+      text: N bɔdaabii wiila nyaŋŋɔɔrɛ, màá ka wer chi chiŋ.
+      sbs: 0.6883
+      gen_sec: 4.35
+      ref_sec: 3.78
+      cer: 0.2105
+      wer: 0.8889
+    bible_00169:
+      source: bible
+      text: Nɛr maa gilɛɛ waa zuu Kɔraawiizi Dia la biini, di Kɔraawiizi kizeehina ni Levi dee la n dɔɔ
+        huma a hɔl la bɛŋ lɛi.
+      sbs: 0.769
+      gen_sec: 9.39
+      ref_sec: 9.04
+      cer: 0.1011
+      wer: 0.375
+    bible_00170:
+      source: bible
+      text: Koori Joas faa ɛɛ wideŋlaare Kɔraawiizi be, Kɔraawiizi kizeehiŋ Jɛhɔyada de dui maa biini.
+      sbs: 0.7906
+      gen_sec: 8.02
+      ref_sec: 8.78
+      cer: 0.12
+      wer: 0.7143
+    bible_00171:
+      source: bible
+      text: Kɔraawiizi la minna hum la n du n be wia, n dɔɔ bɔkpegaa di chaali Izrɛl hina sitɔɔra, n ni
+        baa la.
+      sbs: 0.7698
+      gen_sec: 7.94
+      ref_sec: 9.66
+      cer: 0.0933
+      wer: 0.2727
+    bible_00172:
+      source: bible
+      text: A dominua jaŋgal biini faa dɔɔ tɛɛbulzi anaazuu, anɛɛ chi keŋkere naa, anɛɛ ge chi keŋkere
+        naa.
+      sbs: 0.7849
+      gen_sec: 8.36
+      ref_sec: 8.06
+      cer: 0.2105
+      wer: 0.7647
+    bible_00173:
+      source: bible
+      text: Nunzunni gɛɛ gɛnii, ba maa daŋ siu.
+      sbs: 0.7285
+      gen_sec: 3.07
+      ref_sec: 3.48
+      cer: 0.1481
+      wer: 0.2857
+    bible_00174:
+      source: bible
+      text: gbɛlli yaa birgi.
+      sbs: 0.6223
+      gen_sec: 1.54
+      ref_sec: 3.06
+      cer: 0.5
+      wer: 1.0
+    bible_00175:
+      source: bible
+      text: Ka ba ra nyiŋŋi ba teŋri ii ge hɛna nɛ́ra ra chɔli baa dikuu a wia.
+      sbs: 0.6398
+      gen_sec: 5.46
+      ref_sec: 3.28
+      cer: 0.12
+      wer: 0.3125
+    bible_00176:
+      source: bible
+      text: Dikuu iiŋ vɛɛ Kɔraawiizii wia, u ge gba vɛɛ iabuu.
+      sbs: 0.7682
+      gen_sec: 4.27
+      ref_sec: 3.44
+      cer: 0.0513
+      wer: 0.1
+    bible_00177:
+      source: bible
+      text: Wia la Kɔraawiizi n pillɛɛ bagli Pɛtuɛl biibaal Jowɛllɛ keŋ.
+      sbs: 0.6743
+      gen_sec: 5.29
+      ref_sec: 3.72
+      cer: 0.46
+      wer: 0.9
+    bible_00178:
+      source: bible
+      text: Biipɔllii la n ɛɛ nyaari ka zum wiarɛ bɔ koorizɛŋa la n gɛnnɛ, waa baglaa ra nuu.
+      sbs: 0.7437
+      gen_sec: 6.74
+      ref_sec: 7.48
+      cer: 0.0952
+      wer: 0.2941
+    bible_00179:
+      source: bible
+      text: Waabuu ya kpa ra mɛgzi nuukpaŋ la baŋ ɛɛwɛ Bizeŋ Sinaai, bɔr la baŋ faa na Gbɔgni la.
+      sbs: 0.627
+      gen_sec: 7.34
+      ref_sec: 4.54
+      cer: 0.1212
+      wer: 0.3889
+    bible_00180:
+      source: bible
+      text: Banla maa n faa yarduu, ii ni ba maanii niŋ nau di chɔluu a hɔl, dikuubɛɛwiai, yaa n faa bagli
+        ia u wia la, ii faa sɛɛ yaa daansɛɛ la yaa n diwee tɛɛ ia labuu.
+      sbs: 0.6586
+      gen_sec: 12.8
+      ref_sec: 9.72
+      cer: 0.0168
+      wer: 0.1111
+    bible_00181:
+      source: bible
+      text: Baŋ wa chɔgi a maa tuŋ, Izrɛl hina la bir kpo ba bola.
+      sbs: 0.7876
+      gen_sec: 4.44
+      ref_sec: 4.92
+      cer: 0.1
+      wer: 0.2308
+    bible_00182:
+      source: bible
+      text: U ni i huŋhunna ani banla n dɔɔri i mɛɛ Koori Deevid n lizɛɛ la danna hum.
+      sbs: 0.7317
+      gen_sec: 5.97
+      ref_sec: 5.92
+      cer: 0.0351
+      wer: 0.1765
+    bible_00183:
+      source: bible
+      text: A koori ŋɔ, “N daŋ kpa baa di tɛɛ ia.
+      sbs: 0.7113
+      gen_sec: 2.9
+      ref_sec: 11.6
+      cer: 0.08
+      wer: 0.2
+    bible_00184:
+      source: bible
+      text: U faa ɛɛ wichɔgaarɛ di zuu Kɔraawiizi la unna hum la ni.
+      sbs: 0.7606
+      gen_sec: 4.61
+      ref_sec: 3.66
+      cer: 0.0455
+      wer: 0.1667
+    bible_00185:
+      source: bible
+      text: Yaa Dɔɔri la n dɔɔ bampirsɔna werge la, ú tɛɛ ia bampirsɔna saŋa maa wii la maa biini iin
+        duwɛɛ, di ɔɔ du ii maa be.
+      sbs: 0.6752
+      gen_sec: 9.39
+      ref_sec: 6.78
+      cer: 0.1023
+      wer: 0.2308
+    bible_00186:
+      source: bible
+      text: Denii Farisizi nuu lugɔ nɛra ɔɔ ra hiŋ Yeesuu werge di kaali Jɔɔn, di sɛɛ ra tɛu, u ra sɔ
+        baa Kɔraawiizi nii.
+      sbs: 0.7116
+      gen_sec: 8.96
+      ref_sec: 6.1
+      cer: 0.0952
+      wer: 0.2609
+    bible_00187:
+      source: bible
+      text: N na ɛɛ tamiirɛ ani n biini maa lugɔ hiihzi wàá diŋ maa.
+      sbs: 0.6317
+      gen_sec: 4.61
+      ref_sec: 3.14
+      cer: 0.0698
+      wer: 0.2308
+    bible_00188:
+      source: bible
+      text: Ií gil a Jus hina nabɔma ni ba sitɔɔra bir ma Kɔraawiizi Dia hiŋ, di chiŋŋi u zɛɛbinii la
+        ni.
+      sbs: 0.7124
+      gen_sec: 7.85
+      ref_sec: 5.96
+      cer: 0.0972
+      wer: 0.35
+    bible_00189:
+      source: bible
+      text: Haaŋ naa dee dia zuui ra ba siu ninɛɛ.
+      sbs: 0.7408
+      gen_sec: 3.16
+      ref_sec: 3.0
+      cer: 0.1034
+      wer: 0.2222
+    bible_00190:
+      source: bible
+      text: Levi dee kpu Gillikaali pebii, di lizi ba ni banla n bittɛ ba la ni ba lulla la n ɛɛ kizeehina
+        la maa mbusu, tɛɛ Kɔraawiizi.
+      sbs: 0.7508
+      gen_sec: 10.15
+      ref_sec: 10.06
+      cer: 0.0833
+      wer: 0.3462
+    bible_00191:
+      source: bible
+      text: Biizi, ií nuu ra tɛɛ ii maawaa ni ii mɛɛwaa, dikuubɛɛwiai, u guŋ deŋloore yaa Dɔɔri hiŋaa
+        naa biini.
+      sbs: 0.7737
+      gen_sec: 8.7
+      ref_sec: 6.08
+      cer: 0.1282
+      wer: 0.3684
+    bible_00192:
+      source: bible
+      text: Koori Deevid biibaal Absalɔm faa dɔɔ niuhambiere, ba ra yiruu Taama.
+      sbs: 0.7853
+      gen_sec: 5.89
+      ref_sec: 5.66
+      cer: 0.0893
+      wer: 0.4545
+    bible_00193:
+      source: bible
+      text: Tauduura chignibɔra jaŋzi ni a wassi maa faa ɛɛ a daa jaŋzi magaa.
+      sbs: 0.77
+      gen_sec: 5.72
+      ref_sec: 5.2
+      cer: 0.0755
+      wer: 0.4615
+    bible_00194:
+      source: bible
+      text: Ka banla Jems n hummɛ la n wa ballɛ, u bargi u hiŋ banla n waa Jus hina ɛɛwɛ la be.
+      sbs: 0.6688
+      gen_sec: 6.49
+      ref_sec: 4.98
+      cer: 0.0164
+      wer: 0.0476
+    bible_00195:
+      source: bible
+      text: Minna nyiŋ naa, yarda la miŋ yardi Kɔraawiizi Biibaal labuu gillɛ n wer dɔɔ a miibɔɔ.
+      sbs: 0.6266
+      gen_sec: 7.34
+      ref_sec: 4.62
+      cer: 0.1029
+      wer: 0.375
+    bible_00196:
+      source: bible
+      text: Kɔraawiizi faa tɛmbuu bipɛntɛnzi anɛɛ la uŋ kpa u nonibii di sɛbi a ni la.
+      sbs: 0.7443
+      gen_sec: 6.23
+      ref_sec: 5.86
+      cer: 0.1186
+      wer: 0.2667
+    bible_00197:
+      source: bible
+      text: du i ninɛɛ.
+      sbs: 0.6627
+      gen_sec: 1.02
+      ref_sec: 3.12
+      cer: 0.25
+      wer: 0.6667
+    bible_00198:
+      source: bible
+      text: Ií gil ii bɔra sɔɔni ia banla bɔra n sɔɔnɛɛ wia, di kaa gil ii biine chɔgi banla biine n
+        chɔkkɛ wia.
+      sbs: 0.658
+      gen_sec: 8.02
+      ref_sec: 6.3
+      cer: 0.2078
+      wer: 0.4545
+    bible_00199:
+      source: bible
+      text: Ka ba faa ɛɛ Kɔraawiizi dɔgtɛɛzi la chɛɛtɛ, di ra gbɛlli Kɔraawiizi wiŋɔɔlii la, di ra mam
+        baa guŋŋ Kɔraawiizi baaŋ jaa waa fuuh ba ni, waa kaa dɔɔ laafaa.
+      sbs: 0.7902
+      gen_sec: 13.31
+      ref_sec: 12.96
+      cer: 0.1311
+      wer: 0.3667
 - model: facebook/mms-tts-vag
   model_url: https://huggingface.co/facebook/mms-tts-vag
   mode: noref
@@ -16872,4 +18559,4 @@ benchmarks:
       ref_sec: 12.96
       cer: 0.2213
       wer: 0.7333
-updated: '2026-10-03'
+updated: '2026-10-09'
