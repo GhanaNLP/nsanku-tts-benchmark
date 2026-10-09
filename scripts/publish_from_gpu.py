@@ -92,10 +92,19 @@ def cycle(args):
         if not src.exists():
             continue
         dst = bdir / f"{iso}.yaml"
-        dst.write_bytes(src.read_bytes())
-        if complete(dst):
+        candidate = bdir / f".{iso}.candidate.yaml"
+        candidate.write_bytes(src.read_bytes())
+        if complete(candidate):
+            candidate.replace(dst)
             pulled.append(iso)
+        elif dst.exists():
+            # Already published, and the new results (e.g. a model being added) are not
+            # complete yet: keep the last good version rather than dropping the language.
+            candidate.unlink()
+            pulled.append(iso)
+            print(f"  {iso}: new results incomplete; keeping the published version", flush=True)
         else:
+            candidate.unlink()
             print(f"  NOT publishing {iso}: results are incomplete", flush=True)
     for path in bdir.glob("*.yaml"):
         if path.stem not in pulled:
