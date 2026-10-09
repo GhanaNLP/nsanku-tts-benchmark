@@ -18060,6 +18060,1811 @@ benchmarks:
       ref_sec: 16.66
       cer: 0.2381
       wer: 0.8
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.688
+  num_scored: 200
+  cer: 0.1923
+  wer: 0.4753
+  accuracy: 0.8077
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.7478
+  score: 0.7478
+  per_source:
+    bible:
+      sbs: 0.7499
+      cer: 0.1021
+      n: 50
+    jw:
+      sbs: 0.6972
+      cer: 0.4614
+      n: 50
+    unicef:
+      sbs: 0.6358
+      cer: 0.0785
+      n: 50
+    waxal:
+      sbs: 0.6689
+      cer: 0.1271
+      n: 50
+  entries:
+    bible_00000:
+      source: bible
+      text: Mose ɖo nya sia ŋu na Yehowa be, “Ameawo mava Sinai toa dzi o, elabena ède se na wo be womekpɔ
+        mɔ ava o.
+      sbs: 0.798
+      gen_sec: 8.96
+      ref_sec: 9.1
+      cer: 0.0779
+      wer: 0.2917
+    bible_00001:
+      source: bible
+      text: le dowòme.
+      sbs: 0.6549
+      gen_sec: 1.02
+      ref_sec: 3.16
+      cer: 0.25
+      wer: 0.5
+    bible_00002:
+      source: bible
+      text: Esi Sanebalat se be míele glia ɖom la, eku dzi nɛ.
+      sbs: 0.7168
+      gen_sec: 4.44
+      ref_sec: 5.5
+      cer: 0.0263
+      wer: 0.0909
+    bible_00003:
+      source: bible
+      text: ” Nyɔnua kɔ vidzĩa dzoe, eye wòɖakpɔ edzi.
+      sbs: 0.7547
+      gen_sec: 3.84
+      ref_sec: 4.48
+      cer: 0.125
+      wer: 0.5714
+    bible_00004:
+      source: bible
+      text: Fia Dario ɖe gbe be woayi dɔa dzi, eye wowu gbedoxɔa nu.
+      sbs: 0.7604
+      gen_sec: 4.95
+      ref_sec: 6.22
+      cer: 0.1395
+      wer: 0.3333
+    bible_00005:
+      source: bible
+      text: Míawo ɖeɖe míatui na Aƒetɔ, Israel ƒe Mawu la abe ale si Persia-fia Kores ɖoe na mí la ene.
+      sbs: 0.753
+      gen_sec: 8.19
+      ref_sec: 7.74
+      cer: 0.0
+      wer: 0.1053
+    bible_00006:
+      source: bible
+      text: Ale wona gae tso esi wodzɔ le trɔ̃ Baal Berit subɔƒe la me eye fia Abimelek tsɔ ga sia ƒo
+        gbevu aɖewo nu ƒu ɖe eɖokui ŋu.
+      sbs: 0.7511
+      gen_sec: 10.84
+      ref_sec: 10.84
+      cer: 0.0753
+      wer: 0.2593
+    bible_00007:
+      source: bible
+      text: Dzudzɔ de dzi ʋĩi abe dzudzɔti me wòle dodom tso ene; to blibo la le ʋuʋum sesĩe ŋutɔ.
+      sbs: 0.7418
+      gen_sec: 7.85
+      ref_sec: 8.76
+      cer: 0.194
+      wer: 0.6111
+    bible_00008:
+      source: bible
+      text: Eya ta azɔ la miʋu miaƒe nuvɔ̃ me na Aƒetɔ, mia tɔgbuiwo ƒe Mawu la, eye miawɔ eƒe lɔlɔ̃nu.
+      sbs: 0.7605
+      gen_sec: 8.02
+      ref_sec: 9.64
+      cer: 0.0588
+      wer: 0.3158
+    bible_00009:
+      source: bible
+      text: Ewɔ ɖeka kple Ahab to via nyɔnuvi ɖeka ɖeɖe me.
+      sbs: 0.7241
+      gen_sec: 4.18
+      ref_sec: 3.54
+      cer: 0.027
+      wer: 0.3
+    bible_00010:
+      source: bible
+      text: Nuku bubuwo ge ɖe ŋu me, eye ŋu vu tsyɔ wo dzi woku.
+      sbs: 0.7916
+      gen_sec: 4.52
+      ref_sec: 4.04
+      cer: 0.0526
+      wer: 0.1538
+    bible_00011:
+      source: bible
+      text: Ɣe ma ɣi la, Gaal, Ebed ƒe vi, ʋu kple nɔviawo yi Sekem eye wòzu ame ŋkutawo dometɔ ɖeka le
+        dua me.
+      sbs: 0.7631
+      gen_sec: 8.96
+      ref_sec: 8.72
+      cer: 0.0135
+      wer: 0.1818
+    bible_00012:
+      source: bible
+      text: Eɖo Selax tá la ƒe gli si le fia ƒe abɔ kple atrakpui si ɖiɖi tso David ƒe du me, dome la.
+      sbs: 0.7827
+      gen_sec: 7.94
+      ref_sec: 9.14
+      cer: 0.1045
+      wer: 0.4545
+    bible_00013:
+      source: bible
+      text: Vi lae tsɔ eƒe nya ƒe ŋusẽ la lé xexeme blibo la ɖe te.
+      sbs: 0.6923
+      gen_sec: 5.03
+      ref_sec: 6.5
+      cer: 0.1463
+      wer: 0.2857
+    bible_00014:
+      source: bible
+      text: avifafa kple nublanuiɣli ɖi bobobo; Rahel nɔ avi dzi le viawo ta.
+      sbs: 0.7467
+      gen_sec: 5.97
+      ref_sec: 5.52
+      cer: 0.0577
+      wer: 0.25
+    bible_00015:
+      source: bible
+      text: Megblɔ na wo be miɖo to nye gbe, eye miwɔ nu siwo katã megblɔ na mi la.
+      sbs: 0.7283
+      gen_sec: 6.31
+      ref_sec: 5.9
+      cer: 0.0189
+      wer: 0.2353
+    bible_00016:
+      source: bible
+      text: Woatsi ado xoxo abe awu ene.
+      sbs: 0.675
+      gen_sec: 2.73
+      ref_sec: 3.52
+      cer: 0.2273
+      wer: 0.3333
+    bible_00017:
+      source: bible
+      text: Ne èkplɔ mí ɖo la, àkpɔ gome le nu nyui siwo katã Yehowa wɔna na mí la me.
+      sbs: 0.7662
+      gen_sec: 6.49
+      ref_sec: 6.4
+      cer: 0.0909
+      wer: 0.2778
+    bible_00018:
+      source: bible
+      text: Yaala, Darkon, Gidel.
+      sbs: 0.7671
+      gen_sec: 2.05
+      ref_sec: 3.02
+      cer: 0.125
+      wer: 0.6667
+    bible_00019:
+      source: bible
+      text: Migakpa kpeawo kple dɔwɔnu aɖeke o, elabena ne miekpa wo la, womagadze be woawɔ wo ŋu dɔ hena
+        vɔsamlekpuiɖiɖi nam o.
+      sbs: 0.7818
+      gen_sec: 10.75
+      ref_sec: 10.74
+      cer: 0.086
+      wer: 0.4286
+    bible_00020:
+      source: bible
+      text: Kpɔ ɖa, àyɔ dukɔ siwo mènya o la vɛ.
+      sbs: 0.7131
+      gen_sec: 3.16
+      ref_sec: 3.78
+      cer: 0.0769
+      wer: 0.2222
+    bible_00021:
+      source: bible
+      text: Esi nètsrɔ̃ dukɔ geɖewo ta la, wò hã atsrɔ̃.
+      sbs: 0.7184
+      gen_sec: 4.18
+      ref_sec: 4.4
+      cer: 0.2188
+      wer: 0.3333
+    bible_00022:
+      source: bible
+      text: Èlɔ̃ dzɔdzɔenyenye, eye nèlé fu ŋutasesẽ, eya ta Mawu.
+      sbs: 0.7451
+      gen_sec: 5.29
+      ref_sec: 4.72
+      cer: 0.2143
+      wer: 0.8889
+    bible_00023:
+      source: bible
+      text: Ɖewo ge ɖe kpenyigba dzi, afi si anyi mesɔ gbɔ le o.
+      sbs: 0.7551
+      gen_sec: 4.52
+      ref_sec: 4.32
+      cer: 0.0769
+      wer: 0.25
+    bible_00024:
+      source: bible
+      text: Benui, Xenadad vi, dzra akpa si kplɔe ɖo la ɖo.
+      sbs: 0.7559
+      gen_sec: 4.44
+      ref_sec: 4.34
+      cer: 0.1143
+      wer: 0.5
+    bible_00025:
+      source: bible
+      text: Wotsɔa gliɖolawo kple atikpalawo be woaɖɔ Yehowa ƒe gbedoxɔ la ɖo.
+      sbs: 0.7697
+      gen_sec: 6.31
+      ref_sec: 5.48
+      cer: 0.0727
+      wer: 0.2727
+    bible_00026:
+      source: bible
+      text: Eda gbe le dɔlélawo katã ŋu, eye wòde se na wo be womagana amewo nadze si ye o.
+      sbs: 0.7598
+      gen_sec: 7.17
+      ref_sec: 11.8
+      cer: 0.05
+      wer: 0.2778
+    bible_00027:
+      source: bible
+      text: Wosa vɔ geɖe gbe ma gbe kple aseyetsotso gã elabe Mawu na dzidzɔ yɔ ame sia ame ƒe dzime.
+      sbs: 0.7654
+      gen_sec: 7.85
+      ref_sec: 7.4
+      cer: 0.0571
+      wer: 0.3158
+    bible_00028:
+      source: bible
+      text: Egblɔ na wo be, “Enyo, maɖe egɔme na mi.
+      sbs: 0.787
+      gen_sec: 3.41
+      ref_sec: 3.54
+      cer: 0.1071
+      wer: 0.3333
+    bible_00029:
+      source: bible
+      text: Wo katã wole agbagba dzem be woado ŋɔdzi na mí hesusu be, “Woƒe alɔwo ado agblɔ le dɔ la ŋu,
+        eye womate ŋu awu enu o.
+      sbs: 0.7383
+      gen_sec: 10.41
+      ref_sec: 9.52
+      cer: 0.0568
+      wer: 0.1538
+    bible_00030:
+      source: bible
+      text: 'Aƒetɔ gblɔ na Mose kple Aron le Egipte-nyigba dzi be: “Ɣleti sia nanye ɣleti vevitɔ na mi
+        le ƒèa me.'
+      sbs: 0.7239
+      gen_sec: 9.05
+      ref_sec: 6.72
+      cer: 0.039
+      wer: 0.2
+    bible_00031:
+      source: bible
+      text: Yesu gblɔ nɛ be, “Ne èdi be yeazu ame dzɔdzɔe blibo la, yi nàdzra nu sia nu si le asiwò la,
+        eye nàtsɔ ga la na ame dahewo, ekema kesinɔnuwo anɔ dziƒo na wò.
+      sbs: 0.809
+      gen_sec: 13.82
+      ref_sec: 12.94
+      cer: 0.0256
+      wer: 0.1176
+    bible_00032:
+      source: bible
+      text: Esi wònɔ nukua wum la, ɖewo ge ɖe mɔ to, eye xeviwo va fɔ wo mi.
+      sbs: 0.7891
+      gen_sec: 5.63
+      ref_sec: 5.12
+      cer: 0.087
+      wer: 0.3125
+    bible_00033:
+      source: bible
+      text: Aƒetɔ ayra wò dɔwɔwɔwo katã, eye nu ayɔ wò ava taŋ.
+      sbs: 0.7303
+      gen_sec: 4.69
+      ref_sec: 5.1
+      cer: 0.3077
+      wer: 0.4545
+    bible_00034:
+      source: bible
+      text: 'Mema hadzilaawo ɖe akpa eve me: akpa gbãtɔ to ɖusime le glia dzi ɖo ta Akɔligbo la gbɔ.'
+      sbs: 0.7753
+      gen_sec: 7.77
+      ref_sec: 7.02
+      cer: 0.1471
+      wer: 0.3889
+    bible_00035:
+      source: bible
+      text: Aƒetɔ akplɔ ƒoƒoe aƒu wò abe ale si wòwɔ Egiptetɔwo ene.
+      sbs: 0.7167
+      gen_sec: 5.21
+      ref_sec: 6.44
+      cer: 0.2
+      wer: 0.8182
+    bible_00036:
+      source: bible
+      text: Elabe èkɔ amewo ƒe ʋu ɖi.
+      sbs: 0.714
+      gen_sec: 2.22
+      ref_sec: 3.0
+      cer: 0.0526
+      wer: 0.1667
+    bible_00037:
+      source: bible
+      text: Woŋlɔ agbalẽ la kple Aramaik alfabeta ɖe Aramaikgbe me.
+      sbs: 0.6927
+      gen_sec: 5.38
+      ref_sec: 5.04
+      cer: 0.4565
+      wer: 0.7778
+    bible_00038:
+      source: bible
+      text: Benyamin kple Xasub dzra akpa si kplɔ nunɔlaawo tɔ ɖo la ɖo.
+      sbs: 0.7305
+      gen_sec: 5.63
+      ref_sec: 5.64
+      cer: 0.0625
+      wer: 0.25
+    bible_00039:
+      source: bible
+      text: Hlɔ̃wo ƒe tatɔwo akpe eve alafa ade nɔ aʋalɔglo siawo nu.
+      sbs: 0.7525
+      gen_sec: 5.29
+      ref_sec: 5.08
+      cer: 0.2222
+      wer: 0.4545
+    bible_00040:
+      source: bible
+      text: '” Yesu ɖo eŋu be: “Ɖe miexlẽ nu si David wɔ, esime dɔ wu eya kple eŋutimewo kpɔ oa?'
+      sbs: 0.7479
+      gen_sec: 7.59
+      ref_sec: 7.1
+      cer: 0.0667
+      wer: 0.2778
+    bible_00041:
+      source: bible
+      text: Egblɔ nɛ be, “Tso nàkplɔ ɖevi la kple dadaa atrɔ ayi Israelnyigba dzi, elabena ame siwo le
+        ɖevi la ƒe agbe yome tim la ku!
+      sbs: 0.7722
+      gen_sec: 10.75
+      ref_sec: 9.66
+      cer: 0.0319
+      wer: 0.12
+    bible_00042:
+      source: bible
+      text: 'Solomo ƒe dɔlawo ƒe dzidzimeviwoe nye: Sotai, Hasoferet, Peruda.'
+      sbs: 0.7517
+      gen_sec: 5.97
+      ref_sec: 6.2
+      cer: 0.0577
+      wer: 0.2222
+    bible_00043:
+      source: bible
+      text: 'Yoyada kple viawo si ami nɛ, eye wodo ɣli be: “Fia nenɔ agbe tegbee!'
+      sbs: 0.7506
+      gen_sec: 6.14
+      ref_sec: 6.44
+      cer: 0.0784
+      wer: 0.1429
+    bible_00044:
+      source: bible
+      text: Esime Yehu nɔ to hem na Axab ƒe ƒomea la, edo go Yuda-megãwo kple Axazya nɔviŋutsu ƒe viwo,
+        ame siwo subɔa Axazya eye wòwu wo.
+      sbs: 0.7506
+      gen_sec: 12.03
+      ref_sec: 12.92
+      cer: 0.051
+      wer: 0.16
+    bible_00045:
+      source: bible
+      text: Aron nye kɔ kpɔe, eye kpɔ ɖa, Miriam dze anyi.
+      sbs: 0.7534
+      gen_sec: 4.1
+      ref_sec: 4.38
+      cer: 0.0294
+      wer: 0.1
+    bible_00046:
+      source: bible
+      text: Ame siwo wɔ babla ɖe eŋu la woe nye Zabad, ame si dadae nye Simeat, Amon ƒe viwo dometɔ ɖeka
+        kple Yehozabad, Simirit, nyɔnu aɖe si tso Moab.
+      sbs: 0.7951
+      gen_sec: 13.14
+      ref_sec: 12.82
+      cer: 0.0185
+      wer: 0.1071
+    bible_00047:
+      source: bible
+      text: Miklã mia ɖokui ɖa tso anyigba la dzi tɔwo kple mia srɔ̃, dukɔ bubu me nyɔnuawo gbɔ.
+      sbs: 0.7754
+      gen_sec: 7.51
+      ref_sec: 7.14
+      cer: 0.0769
+      wer: 0.2353
+    bible_00048:
+      source: bible
+      text: Eya ta Yerusalemnɔlawo tsɔ Axazya, Yoram ƒe dɔmlɔea ɖo fiae ɖe eteƒe eye Axazya, Yuda-fia
+        Yoram viŋutsu zu fia.
+      sbs: 0.7658
+      gen_sec: 10.58
+      ref_sec: 12.84
+      cer: 0.0449
+      wer: 0.2105
+    bible_00049:
+      source: bible
+      text: Esi wova ɖo toa te la, wokpɔ ameha gã aɖe nɔ afi ma nɔ wo lalam.
+      sbs: 0.7806
+      gen_sec: 5.63
+      ref_sec: 5.48
+      cer: 0.1064
+      wer: 0.4375
+    jw_00000:
+      source: jw
+      text: Nu Si Dea Ame Dzi Ne Ele Subɔsubɔm Le Wo De
+      sbs: 0.6994
+      gen_sec: 3.58
+      ref_sec: 4.01
+      cer: 0.2121
+      wer: 0.6364
+    jw_00001:
+      source: jw
+      text: EWƆ NU ÐE ÐEVI SUE AÐE ŊU AMEŊUBUBUTƆE
+      sbs: 0.7083
+      gen_sec: 3.93
+      ref_sec: 3.99
+      cer: 0.3548
+      wer: 0.875
+    jw_00002:
+      source: jw
+      text: BIBLIA ME MƆFIAMEWO DZI WƆWƆ LE MÍAƑE GBE SIA GBE GBENƆNƆ ME
+      sbs: 0.7217
+      gen_sec: 5.38
+      ref_sec: 5.45
+      cer: 0.0408
+      wer: 0.0833
+    jw_00003:
+      source: jw
+      text: “Nye ɖeka nyemezɔna le gbeadzi o.”—Gisèle
+      sbs: 0.6675
+      gen_sec: 3.58
+      ref_sec: 5.04
+      cer: 0.6875
+      wer: 1.3333
+    jw_00004:
+      source: jw
+      text: Ðe wòsesẽ na wò kpɔ be nàɖo ŋku nu si nèsrɔ̃ dzia? Edzɔna ɖe mí katã dzi ɣeaɖewoɣi. Nu kae
+        akpe ɖe mía ŋu? Eyae nye be míagbugbɔ ato nya veviawo me.
+      sbs: 0.7546
+      gen_sec: 13.57
+      ref_sec: 13.36
+      cer: 0.0625
+      wer: 0.2188
+    jw_00005:
+      source: jw
+      text: b Míetrɔ ŋkɔ aɖewo.
+      sbs: 0.6903
+      gen_sec: 1.88
+      ref_sec: 3.37
+      cer: 0.2
+      wer: 0.75
+    jw_00006:
+      source: jw
+      text: KAKAÐEDZI LE MÍAƑE MƆKPƆKPƆA ŊU!
+      sbs: 0.681
+      gen_sec: 3.16
+      ref_sec: 4.73
+      cer: 0.2963
+      wer: 1.0
+    jw_00007:
+      source: jw
+      text: NE MÍEDA VO GƆ̃ HÃ LA, MÍATE ŊU ‘ATE ÐE MAWU ŊU’
+      sbs: 0.703
+      gen_sec: 4.27
+      ref_sec: 5.49
+      cer: 0.1212
+      wer: 0.25
+    jw_00008:
+      source: jw
+      text: Afɔku kae le nuwo dada ɖe Internet dzi hahoo kadoƒewo?
+      sbs: 0.7028
+      gen_sec: 4.86
+      ref_sec: 4.61
+      cer: 0.1136
+      wer: 0.5
+    jw_00009:
+      source: jw
+      text: Aleke gbɔgbɔ vɔ̃wo kplɔa amewo trana egbea?
+      sbs: 0.7564
+      gen_sec: 4.1
+      ref_sec: 4.35
+      cer: 0.1143
+      wer: 0.2857
+    jw_00010:
+      source: jw
+      text: DZINƆAMEƑO KPENA ÐE MÍA ŊU
+      sbs: 0.6118
+      gen_sec: 2.47
+      ref_sec: 4.01
+      cer: 0.7727
+      wer: 2.0
+    jw_00011:
+      source: jw
+      text: 'Le Gbetakpɔxɔ ƒe tata sia mea, míadzro nyati atɔ̃ siwo de nu wo nɔewo me la me. Woakpe ɖe
+        mía ŋu míakpɔ ŋuɖoɖo na biabia siwo gbɔna:'
+      sbs: 0.6909
+      gen_sec: 12.37
+      ref_sec: 10.88
+      cer: 0.0784
+      wer: 0.2963
+    jw_00012:
+      source: jw
+      text: ŊUSẼ SI WONA ƑOME ƑE TAWO KPLE HAMEMETSITSIWO
+      sbs: 0.7242
+      gen_sec: 4.52
+      ref_sec: 5.59
+      cer: 0.3684
+      wer: 0.625
+    jw_00013:
+      source: jw
+      text: “Medzra ga ɖo ale be nyemava nɔ amewo sinu kpɔm be woana ga kpekpeɖeŋum o.”—Géraldine
+      sbs: 0.7115
+      gen_sec: 7.85
+      ref_sec: 8.02
+      cer: 0.2836
+      wer: 1.0
+    jw_00014:
+      source: jw
+      text: NU SIWO NÀTE ŊU AWƆ BE WÒ KPLE YEHOWA DOME NAGANƆ KPLIKPLIKPLI WU
+      sbs: 0.7465
+      gen_sec: 6.06
+      ref_sec: 5.23
+      cer: 0.3774
+      wer: 0.2308
+    jw_00015:
+      source: jw
+      text: Nu ka tae tafe si Mawu na to Yesu dzi la nye nunana nyuitɔ kekeake si ate ŋu asu mía si?
+      sbs: 0.7172
+      gen_sec: 7.85
+      ref_sec: 7.9
+      cer: 0.0597
+      wer: 0.2381
+    jw_00016:
+      source: jw
+      text: MƆ KAWO DZIE MÍATO ATSƆ ŊUTIKƆKƆE SI YEHOWA DZE NA LA ANƐ?
+      sbs: 0.7043
+      gen_sec: 5.29
+      ref_sec: 6.08
+      cer: 0.0435
+      wer: 0.1667
+    jw_00017:
+      source: jw
+      text: Nu Vɔ̃
+      sbs: 0.5175
+      gen_sec: 1.02
+      ref_sec: 4.55
+      cer: 8.25
+      wer: 4.5
+    jw_00018:
+      source: jw
+      text: AME SIWO NƆ ABOYO ME TSÃ LA TSƆ NYATEƑEA VA KYRGYZSTAN
+      sbs: 0.7636
+      gen_sec: 5.03
+      ref_sec: 5.04
+      cer: 0.1136
+      wer: 0.2727
+    jw_00019:
+      source: jw
+      text: ALE SI MÍAWƆ BE MÍAKPƆTƆ ANƆ ŊUTIFAFA ME
+      sbs: 0.7135
+      gen_sec: 3.84
+      ref_sec: 3.94
+      cer: 0.3333
+      wer: 0.625
+    jw_00020:
+      source: jw
+      text: FIAÐUƑE AKPATAWO TUTU LE CENTRAL AFRICAN REPUBLIC
+      sbs: 0.6297
+      gen_sec: 4.86
+      ref_sec: 4.71
+      cer: 0.4884
+      wer: 1.1429
+    jw_00021:
+      source: jw
+      text: Nu kae míesrɔ̃ tso ale si Kristo kplɔ hamea le ƒe alafa gbãtɔ me la me?
+      sbs: 0.709
+      gen_sec: 6.4
+      ref_sec: 5.98
+      cer: 0.0926
+      wer: 0.0625
+    jw_00023:
+      source: jw
+      text: ALEKE KRISTO KPLƆ HAMEA LE ƑE ALAFA GBÃTƆ ME?
+      sbs: 0.6905
+      gen_sec: 4.18
+      ref_sec: 3.99
+      cer: 0.3611
+      wer: 0.4444
+    jw_00024:
+      source: jw
+      text: Míedaa Akpe Na Yehowa Be Etsɔa Míaƒe Nu Vɔ̃wo Kea Mí
+      sbs: 0.7187
+      gen_sec: 4.61
+      ref_sec: 4.96
+      cer: 0.2195
+      wer: 0.2727
+    jw_00025:
+      source: jw
+      text: ÐE NƆVIŊUTSU ÐE SIA ÐE NYE TA NA NƆVINYƆNU ÐE SIA ÐEA?
+      sbs: 0.6858
+      gen_sec: 5.63
+      ref_sec: 5.64
+      cer: 0.4524
+      wer: 0.8333
+    jw_00026:
+      source: jw
+      text: MÍEXƆ DƆDEASI YEYEWO
+      sbs: 0.6415
+      gen_sec: 2.22
+      ref_sec: 3.48
+      cer: 1.0556
+      wer: 4.3333
+    jw_00027:
+      source: jw
+      text: talento ŋuti lododoa me?
+      sbs: 0.6497
+      gen_sec: 2.39
+      ref_sec: 3.59
+      cer: 0.8
+      wer: 1.75
+    jw_00028:
+      source: jw
+      text: Nu ka tae ‘wònyo be míate ɖe Mawu ŋu’?
+      sbs: 0.6896
+      gen_sec: 3.16
+      ref_sec: 4.62
+      cer: 0.1852
+      wer: 0.2222
+    jw_00029:
+      source: jw
+      text: Aleke Yehowa ɖee fia be yekpɔ ŋudzedze ɖe Maria kple Yesu ŋu?
+      sbs: 0.6924
+      gen_sec: 5.72
+      ref_sec: 5.76
+      cer: 0.0
+      wer: 0.0
+    jw_00030:
+      source: jw
+      text: Ao, naneke mele Biblia me alo ŋutinyagbalẽwo me si ɖee fia be wowɔ nu ma tɔgbi o.
+      sbs: 0.7413
+      gen_sec: 7.51
+      ref_sec: 7.83
+      cer: 0.0317
+      wer: 0.2353
+    jw_00031:
+      source: jw
+      text: NU SI VIDADAWO ATE ŊU ASRƆ̃ TSO MARIA ƑE KPƆÐEŊUA ME
+      sbs: 0.7142
+      gen_sec: 5.03
+      ref_sec: 5.38
+      cer: 0.0488
+      wer: 0.0909
+    jw_00032:
+      source: jw
+      text: NUNANA SIWO KPENA ÐE MÍA ŊU BE MÍADO DZI
+      sbs: 0.6761
+      gen_sec: 3.75
+      ref_sec: 4.06
+      cer: 0.2812
+      wer: 0.5556
+    jw_00033:
+      source: jw
+      text: Aleke míate ŋu ade dzi ƒo na nusrɔ̃viwo be woanɔ kpekpeawo dem?
+      sbs: 0.7161
+      gen_sec: 5.72
+      ref_sec: 5.52
+      cer: 0.06
+      wer: 0.1667
+    jw_00034:
+      source: jw
+      text: NU SI ŊU WÒLE BE NÀBU NE ÈLE NYA ME TSOM LE DƆWƆÐUI ŊU
+      sbs: 0.732
+      gen_sec: 4.95
+      ref_sec: 5.7
+      cer: 0.1463
+      wer: 0.2857
+    jw_00035:
+      source: jw
+      text: Nu ka dzie Yesu ka ɖo ku ɖe gbeƒãɖeɖedɔa ŋu, eye nu kae míate ŋu asrɔ̃ tso egbɔ?
+      sbs: 0.7544
+      gen_sec: 7.17
+      ref_sec: 9.35
+      cer: 0.0333
+      wer: 0.0556
+    jw_00036:
+      source: jw
+      text: ALE SI MÍATSI TSITRE ÐE GBƆGBƆ VƆ̃WO ŊU
+      sbs: 0.6518
+      gen_sec: 3.84
+      ref_sec: 10.75
+      cer: 0.4194
+      wer: 0.875
+    jw_00037:
+      source: jw
+      text: ÐO ŊU ÐE MÍAƑE KPLƆLA LA ŊU LE XƆSE ME
+      sbs: 0.689
+      gen_sec: 3.75
+      ref_sec: 3.99
+      cer: 0.5862
+      wer: 0.7
+    jw_00038:
+      source: jw
+      text: ALEKE NÀÐO WO ŊUI?
+      sbs: 0.7006
+      gen_sec: 1.88
+      ref_sec: 3.22
+      cer: 0.3571
+      wer: 1.25
+    jw_00039:
+      source: jw
+      text: DE BUBU SRƆ̃ÐEÐE ŊU, NE KUXI SESẼWO LI HÃ
+      sbs: 0.6847
+      gen_sec: 4.27
+      ref_sec: 3.99
+      cer: 0.5806
+      wer: 1.2222
+    jw_00040:
+      source: jw
+      text: Na wò nusrɔ̃via nakpɔe be èlɔ̃ Biblia ƒe nufiafiawo
+      sbs: 0.7173
+      gen_sec: 4.69
+      ref_sec: 5.88
+      cer: 0.2195
+      wer: 0.4444
+    jw_00041:
+      source: jw
+      text: “WOWƆ ÐE YEHOWA ƑE NYA LA DZI”
+      sbs: 0.6732
+      gen_sec: 2.39
+      ref_sec: 3.36
+      cer: 0.8636
+      wer: 1.0
+    jw_00042:
+      source: jw
+      text: Yesu Ƒe Nuteƒewɔwɔ Kɔ Yehowa Ƒe Ŋkɔa Ŋu
+      sbs: 0.6956
+      gen_sec: 3.75
+      ref_sec: 3.95
+      cer: 0.1875
+      wer: 0.375
+    jw_00043:
+      source: jw
+      text: Nu kae Ŋkuɖodziwɔnaa fia mí tso Yesu ƒe nɔnɔme ɖedzesi si nye ɖokuibɔbɔ ŋu?
+      sbs: 0.7385
+      gen_sec: 7.17
+      ref_sec: 7.01
+      cer: 0.0492
+      wer: 0.2143
+    jw_00044:
+      source: jw
+      text: Ne èle eŋu bum be yeatrɔ ava mia de la, ekema de dzesi nu si kpe ɖe nɔvi siawo ŋu.
+      sbs: 0.7186
+      gen_sec: 7.51
+      ref_sec: 6.07
+      cer: 0.1148
+      wer: 0.2
+    jw_00045:
+      source: jw
+      text: DƆ KAWOE SUBƆSUBƆDƆWƆLAWO WƆNA?
+      sbs: 0.7037
+      gen_sec: 3.07
+      ref_sec: 3.88
+      cer: 0.2593
+      wer: 1.5
+    jw_00046:
+      source: jw
+      text: NE MÍEFA AVI LE ESI MƆKPƆKPƆ BU ÐE MÍ TA
+      sbs: 0.6748
+      gen_sec: 3.58
+      ref_sec: 4.93
+      cer: 0.4839
+      wer: 0.6
+    jw_00047:
+      source: jw
+      text: Xɔse—Enye Nɔnɔme Nyui Aɖe Si Nana Míesẽa Ŋu
+      sbs: 0.6988
+      gen_sec: 4.44
+      ref_sec: 5.43
+      cer: 0.6857
+      wer: 1.375
+    jw_00048:
+      source: jw
+      text: “EHIÃ BE MIADO DZI”
+      sbs: 0.6266
+      gen_sec: 1.54
+      ref_sec: 3.49
+      cer: 1.0
+      wer: 1.25
+    jw_00049:
+      source: jw
+      text: Mina Mí Katã Míawɔ Ðeka Abe Ale Si Yehowa Kple Yesu Wɔ Ðeka Ene
+      sbs: 0.7404
+      gen_sec: 5.97
+      ref_sec: 9.6
+      cer: 0.06
+      wer: 0.2143
+    jw_00050:
+      source: jw
+      text: Nyati sia akpe ɖe mía ŋu míaɖo ŋku susu siwo tae míetiae be míasubɔ Yehowa la dzi.
+      sbs: 0.7217
+      gen_sec: 7.59
+      ref_sec: 7.21
+      cer: 0.0615
+      wer: 0.1176
+    unicef_00000:
+      source: unicef
+      text: Mevɔ̃na ɣesiaɣi be ame aɖe akpɔ wo le nugoe me. Afikae matsɔ wo ade? Ɣeaɖewoɣi la, mekpɔnɛ
+        wogblẽa wo ɖe anyigba le sukua ƒe nugododeƒewo. Zi geɖe la, ɖeko metsɔa wo ƒua gbe ɖe gbeɖuɖɔ
+        gbogbo si le gota la me. Makpɔ egbɔ be mekpɔ nugoe si sɔ tso fifia dzi.
+      sbs: 0.6602
+      gen_sec: 23.97
+      ref_sec: 24.7
+      cer: 0.0808
+      wer: 0.3333
+    unicef_00001:
+      source: unicef
+      text: Ne míedze ŋudzedzekpɔkpɔ ɖe amewo ŋu ɖe nusi wowɔna alo alesi wowɔa nu ɖe ​​ame bubuwo ŋui
+        ŋu le esi teƒe be míakpɔ ŋudzedze ɖe alesi wodzena ko ŋu. Aɖe vi ne ame tsitsiwo gblɔ na mí be
+        míesɔ gbɔ abe míawo ke ene. Le nyɔnuviwo gome la, nusi wokpɔ mɔ na enye be woadze tugbe ahabɔbɔ
+        wo ɖokui.
+      sbs: 0.6765
+      gen_sec: 27.04
+      ref_sec: 32.38
+      cer: 0.0617
+      wer: 0.3559
+    unicef_00002:
+      source: unicef
+      text: Mesena le ɖokuinye me abe ɖe mele ŋutsu zum ene, gake megasena le ɖokuinye me abe ɖevi ene
+        ɣeaɖewoɣi. Edzɔ dzi nam be teƒe sia le asinye maƒo nu. Ena nyemegasena le ɖokuinye me be nye ɖeka
+        koe li o. Nyabiase aɖe le asinye ku ɖe dzidzenuwo ŋu. Aleke mawɔ atso nya me le wo dometɔ siwo
+        nye tɔnye kple esiwo nye dzinyelawo tɔ ŋu?
+      sbs: 0.6503
+      gen_sec: 30.2
+      ref_sec: 31.49
+      cer: 0.0234
+      wer: 0.1538
+    unicef_00003:
+      source: unicef
+      text: Nyemedi be mawɔ nu ŋudzɔmanɔmanɔtɔe o. Ɣeaɖewoɣi la, mesena le ɖokuinye me be mele geɖe zãm
+        akpa. Ðe esia nyoa? Madze ɖeka tsɔtsɔ kpee ɖe nye akplo me gɔme gbesiagbe. Ke tsilele ya ɖe? Ðe
+        wònyo be woazã adzalẽ le afima? Nukatae tso ŋgɔgbe yi megbe? Nyemenya ema kpɔ o.
+      sbs: 0.6706
+      gen_sec: 25.68
+      ref_sec: 34.88
+      cer: 0.0333
+      wer: 0.36
+    unicef_00004:
+      source: unicef
+      text: Nye menya o. Mebu eŋu be matutu nye agbalea ko, gake mehiãe be maƒo nu kple tɔɖinyeyɔvi siwo
+        le duta. Mehiã kokoko be nàtutu wò agbalea o. Ènya be mɔ aɖewo li siwo dzi nàto akpɔ ɖokuiwò ta
+        evɔ nàgalé wò mo ɖe tea?
+      sbs: 0.6704
+      gen_sec: 19.45
+      ref_sec: 26.69
+      cer: 0.1394
+      wer: 0.4318
+    unicef_00005:
+      source: unicef
+      text: Ŋdɔ na wò, Tasi. Mele nyuie, ɖeko ɖeɖi te ŋunye vie le suku vɔ megbe. Ẽ, danye gblɔe nam vie,
+        gake le nyateƒe me la, ena ŋu kpem.  Ame siwo le nye kɔƒea me gblɔna be enye dzesi be nyɔnuvi
+        le nyɔnu zum, gake wogblɔna hã be ele be nàɣlae.
+      sbs: 0.6473
+      gen_sec: 21.84
+      ref_sec: 30.08
+      cer: 0.0568
+      wer: 0.16
+    unicef_00006:
+      source: unicef
+      text: Nye me di be vinye na tsi abe nye ene, anɔ agbagba dzem anɔ ŋukpem o. Ne me fɔfu la, ɖe ema
+        fia be wo ɖoe be ma nye amedahe tegbea? Ke ŋukpe lae, aleke ma dze ŋgɔ xɔ̃nye wo? Ɖeko mesusu
+        be meyae wu nyuie. Ne ɖe nye me ɖo toe o la anye ne enyo ŋutɔ.
+      sbs: 0.6128
+      gen_sec: 21.92
+      ref_sec: 35.46
+      cer: 0.0659
+      wer: 0.4483
+    unicef_00007:
+      source: unicef
+      text: Mesusu be ame geɖe siwo le afisia menya ema o. Àte ŋu ava ƒo nu kple sɔhɛwo ƒe ƒuƒoƒo si le
+        sɔlemexɔa mea? Woaɖo to wò. Ðeko medi be etsɔme nyui aɖe nanɔ xɔ̃nyewo si. Ðe wòle be míaƒo nu
+        tso gbɔdɔdɔ ƒe dɔlélewo hã ŋua? Nyɔnuvi aɖewo vɔ̃na be yewoabia nya.
+      sbs: 0.6709
+      gen_sec: 24.06
+      ref_sec: 27.52
+      cer: 0.1276
+      wer: 0.4615
+    unicef_00008:
+      source: unicef
+      text: Mezãa internet tsɔ wɔa numekuku tso nyatiwo ŋu na nye dzɔdzɔmeŋutinunya ƒe klass, gake zi
+        geɖe la, menɔa hadomenyatakakadzraɖoƒewo le dze ɖom kple xɔ̃nyewo. Ema ɖi nya sia be esɔ. Smartphone
+        le nye klass ɖesiaɖe si fifia, eye míezãnɛ na nusianu kloe. Le nyateƒe me la, ẽ.
+      sbs: 0.6035
+      gen_sec: 26.36
+      ref_sec: 39.49
+      cer: 0.0833
+      wer: 0.4894
+    unicef_00009:
+      source: unicef
+      text: Menye dzimesesẽ wonye be na di be ya kpɔ wo ŋutɔ ƒe etsɔme ta o. Eƒo nu tso nya sia ŋu na
+        nɔ woa? Nɔnye gblɔ be ye mateŋu atsitre ɖe fofonye ŋu o.Evɔ̃ na na nusi nutoametɔwo agblɔ ne nye
+        me wɔ nusia o. Enya sia nye nya geɖe fuu.
+      sbs: 0.6
+      gen_sec: 20.82
+      ref_sec: 39.04
+      cer: 0.0988
+      wer: 0.5686
+    unicef_00010:
+      source: unicef
+      text: Egblɔ be ɖeɖi te ye ŋu be ye ɖeka yeawɔ nusianu, evɔ wogblɔna nam be manɔ anyi ɖe gota alo
+        asrɔ̃ nu. Egblɔ be nenemae wohe ye le kɔƒea me. Exɔe se be mele be woakpɔ ŋutsu aɖe wòalé saŋku
+        alo aklɔ agba ɖe asi o. Mesusu be ele be woatrɔ asi le wo ŋu.
+      sbs: 0.6864
+      gen_sec: 22.61
+      ref_sec: 35.33
+      cer: 0.0532
+      wer: 0.2364
+    unicef_00011:
+      source: unicef
+      text: Enyo, na míakpɔ alesi esia ayi ɖa. Ele be makpɔ egbɔ be nyeme fonu amemabumabu toe. Ne mate
+        ŋu atrɔ fofonye ƒe susu la, ɖewohĩ mate ŋu atrɔ aƒe bliboa. Makpe asi ɖe dzadzɛnyenyedɔa ŋu gbã,
+        emegbe maƒo nu kplii. Nɔvinyɔnu, ɖe míate ŋu aɖo dze emegbea? Nuka ŋue?
+      sbs: 0.645
+      gen_sec: 24.83
+      ref_sec: 28.29
+      cer: 0.0891
+      wer: 0.3878
+    unicef_00012:
+      source: unicef
+      text: Nyemele mɔ kpɔm be kɔƒe bliboa atrɔ le zã ɖeka me o, gake mate ŋu adze egɔme tso nye ŋutɔ
+        nye ƒomea dzi. Ðeko medi be manya ne èsusu be mate ŋu awɔ tɔtrɔ ŋutɔŋutɔ. Ɣeaɖewoɣi la, kuxiawo
+        lolo na ame ɖeka. Ema wɔnɛ be nyemetsi akogo le esia me boo o.
+      sbs: 0.5848
+      gen_sec: 23.12
+      ref_sec: 32.06
+      cer: 0.0419
+      wer: 0.1538
+    unicef_00013:
+      source: unicef
+      text: Mese alesi wole hehem ɖemegbe la gɔme, gake wò dedienɔnɔ nye nu vevitɔ. Ɣeaɖewoɣi la, ame
+        tsitsiwo ate ŋu akpe ɖe mía ŋu míanɔ te ɖe kuxi siawo nu nyuie wu alesi míate ŋui ne míawo ɖeɖe
+        míele te ɖe wo nu. Èsusu be woakpe ɖe mía ŋua? Fofonye gblɔna nam zi geɖe be manɔ te sesĩe.
+      sbs: 0.6792
+      gen_sec: 26.27
+      ref_sec: 35.84
+      cer: 0.0698
+      wer: 0.3158
+    unicef_00014:
+      source: unicef
+      text: Ðeko medi be mawɔ ɖeka kple nye sukuhatiwo. Ne nyemenya alesi matrɔ ɖoɖo siawo o la, amekae
+        mabia? Mesusu be madze egɔme to nye dɔwɔɖoɖowo me toto zã sia me eye matsi teƒe ƒe dɔwɔƒewo na
+        amesiwo mehiãe o. Mese wò nya, Daɖia.
+      sbs: 0.5796
+      gen_sec: 21.16
+      ref_sec: 29.7
+      cer: 0.0909
+      wer: 0.4186
+    unicef_00015:
+      source: unicef
+      text: Gake ne ɖe mede nu nyaa me la, anye ne woagblɔ nam be nye ŋutɔ nye nyawo nanɔ susu me nam.
+        Alo esi gavloe wue nye be ŋutsua ate ŋu atrɔ eƒe dziku ɖe ŋunye. Edze abe amesiame si le afisia
+        susuna be ne ègblɔ nya siawo la, ɖeko nèle kuxi hem vɛ na ƒomea ene.
+      sbs: 0.6509
+      gen_sec: 23.38
+      ref_sec: 22.14
+      cer: 0.0308
+      wer: 0.2679
+    unicef_00016:
+      source: unicef
+      text: Eyata, ate ŋu anye ɣeyiɣi ɖesiaɖe fifiaa? Metsia dzodzodzoe be wòadzɔ esime mele klass. Ðe
+        esia fia be mele nyɔnu zuma? Ðe wòfia be mate ŋu adzi vi fifiaa? Ema nye susu dziŋɔ aɖe. Nyemesusu
+        be mele klalo na agbanɔamedzi ma ƒomevi haɖe o.
+      sbs: 0.6655
+      gen_sec: 22.44
+      ref_sec: 25.02
+      cer: 0.0802
+      wer: 0.5
+    unicef_00017:
+      source: unicef
+      text: Meka ɖe edzi be esi wòxɔe se be ele be ŋutsuwo nanye mɔ̃ɖaŋudɔwɔlawo, eye ele be nyɔnuwo nanye
+        amesiwo wɔa nu abe awudodo alo atsyɔ̃ɖoɖo ene ta. Ao, mele nenema o. Gake ame sia ame gblɔna be
+        nenemae wowɔa nu le míaƒe nutoa me. Meka ɖe edzi be ɖe wòle be woana nuwo nanɔ ɖoɖo nu?
+      sbs: 0.6483
+      gen_sec: 25.42
+      ref_sec: 30.78
+      cer: 0.0837
+      wer: 0.2321
+    unicef_00018:
+      source: unicef
+      text: Ne ŋutsuvi aɖe dze nyɔnuwo ƒe dɔwo wɔwɔ gɔme la, amewo aƒo nu. Eyata, èle gbɔgblɔm be aƒemedɔwo
+        menye esi ŋutsu menye tae o, ke boŋ esi hadomegbenɔnɔ gblɔe tae? Tasɔsɔmasɔwoe? Èdi be yeagblɔ
+        abe alesi Ama mekpɔa ɣeyiɣi sue aɖe tsɔ srɔ̃a nu wu nye enea? Nyemebu eŋu nenema kpɔ o.
+      sbs: 0.6168
+      gen_sec: 26.36
+      ref_sec: 33.47
+      cer: 0.1055
+      wer: 0.4423
+    unicef_00021:
+      source: unicef
+      text: Na me la, ekuna ɖe ŋusẽdodo ŋu, ɖewohĩ aɖo kpe edzi be míate ŋu akpɔ ga, alo ɣeaɖewoɣi la,
+        ƒuƒoƒoa yome dzedze ko ale be míagadze abe ɖe míegbɔdzɔ ene o. Esesẽ ŋutɔ. Ne ègblɔ be ao la,
+        woyɔa ŋkɔ na wò. Wogblɔna be èle nu wɔm abe ɖe nènyo wu ame bubu ɖesiaɖe ene.
+      sbs: 0.653
+      gen_sec: 24.4
+      ref_sec: 27.2
+      cer: 0.0452
+      wer: 0.2545
+    unicef_00022:
+      source: unicef
+      text: Nuwo abe tɔtrɔ siwo va le nye ŋutilã me, kple nusi mawɔ ne nyɔnuviwo te ɖe ŋunye, alo ne mese
+        le ɖokuinye me be wozi dzinye be mawɔ nusiwo nyemele klalo na o. Mɔ aɖeke meli o, Toɖea. Ðeko
+        fofonye agblɔ be mele bubumademade ame ŋu alo be nyemetsi be maƒo nu tso nyati mawo ŋu o.
+      sbs: 0.6536
+      gen_sec: 25.68
+      ref_sec: 25.15
+      cer: 0.0326
+      wer: 0.2807
+    unicef_00023:
+      source: unicef
+      text: Zi geɖe la, ɖeko mezia ‘ɖo ŋku edzi nam emegbe’ dzi elabena nyemegbɔa dzi ɖi o. Enyo, mate
+        ŋu awɔ ema. Fefe geɖe siwo wowɔna le vome siwo nyemegafona o la le asinye. Lala, aleke wòate ŋu
+        adzɔe? Mesusu be nyatakakadzraɖoƒewo abe Facebook ene le dedie elabena wonye dɔwɔƒe gãwo.
+      sbs: 0.6014
+      gen_sec: 25.76
+      ref_sec: 38.53
+      cer: 0.0922
+      wer: 0.24
+    unicef_00024:
+      source: unicef
+      text: Tɔɖianye, mesusu . Enya mɔ̃ɖaŋununya nyuie ŋutɔ. Ke ne amewo le nya hem le Facebook dzi ya
+        ɖe? Esesẽna ne ame aɖe le nu ƒom na wò amemabumabutɔe. Eyata nyeme ga de nume na woa? Eye màtsi
+        kɔmpiutaa? Mese le ɖokuinye me be mewɔ ŋumaɖɔɖo vie le nye teƒe ƒe dzesiwo ŋu.
+      sbs: 0.6272
+      gen_sec: 24.48
+      ref_sec: 25.09
+      cer: 0.0976
+      wer: 0.3725
+    unicef_00025:
+      source: unicef
+      text: Nyemedi be vinyea natsi abe nye ene, anɔ efukpem ahanɔ ŋu kpem o. Ne mefɔ fu la, ɖe ema fia
+        be woɖoe be mada ahe tegbeea? Gake ŋukpea. Aleke mawɔ adze ŋgɔ xɔ̃nyewo? Ðeko medi be menyae hafi.
+        Ne ɖe nyemeɖo toe o la, anye ne enyo ŋutɔ.
+      sbs: 0.6241
+      gen_sec: 21.41
+      ref_sec: 24.45
+      cer: 0.0739
+      wer: 0.3333
+    unicef_00026:
+      source: unicef
+      text: Mevɔ̃na ɣesiaɣi be ame aɖe akpɔ wo le nugoea me. Afikae wòle be matsɔ wo ada? Ɣeaɖewoɣi la,
+        mekpɔnɛ wogblẽa wo ɖe anyigba le sukua ƒe nugododeƒewo. Zi geɖe la, ɖeko metsɔa wo ƒua gbe ɖe
+        gbeɖuɖɔwo me le gota. Tso fifia dzi la, makpɔ egbɔ be mekpɔa nugoe si sɔ.
+      sbs: 0.7106
+      gen_sec: 24.14
+      ref_sec: 26.11
+      cer: 0.095
+      wer: 0.4314
+    unicef_00027:
+      source: unicef
+      text: Mekpɔa xexeame fifia eye mekpɔa nu geɖe siwo mesɔ o, abe ahedada le míaƒe nutoa me ene, eye
+        medi be maɖɔ wo ɖo. Gake ne medze agbagba be maƒo nu tso nya siawo ŋu na fofonye la, ɖeko wògblɔna
+        nam be nye susu nanɔ nye agbalẽwo ŋu eye madzudzɔ nya dzodzrowo gbɔgblɔ.
+      sbs: 0.6606
+      gen_sec: 24.48
+      ref_sec: 24.13
+      cer: 0.0821
+      wer: 0.2692
+    unicef_00028:
+      source: unicef
+      text: Madze agbagba aƒo nu tso dɔsrɔ̃ƒea ŋu nɛ le dziɖeɖi me. Ðe ŋutinya aɖewo li mate ŋu agblɔ
+        nɛa? Ðewohĩ nyɔnu kpɔdzidzedzewo ƒe ŋutinyawo le míaƒe nutoa mea? Menya nyɔnu aɖe si le atikpadɔ
+        aɖe dzi kpɔm. Wodea bubu eŋu ŋutɔ. Ðewohĩ mate ŋu ayɔ eƒe ŋkɔ.
+      sbs: 0.6221
+      gen_sec: 23.89
+      ref_sec: 32.83
+      cer: 0.0714
+      wer: 0.2766
+    unicef_00029:
+      source: unicef
+      text: Mesusu be nye ɖeka koe se le ɖokuinye me alea. Gake ewɔna nam abe agbanɔamedzi gã aɖe ene.
+        Ke ne medo kpo nu ɖe? Ke ne amewo ƒe nya sɔ eye wometsom ɖe eŋu o ɖe? Susu le nya ma me. Mesusu
+        be ele be nye susu nanɔ sidzedze kple hehexɔxɔa ŋu gbã.
+      sbs: 0.6375
+      gen_sec: 21.92
+      ref_sec: 22.78
+      cer: 0.0707
+      wer: 0.283
+    unicef_00031:
+      source: unicef
+      text: Mamanye ƒonu tso eŋu zi ɖeka, eye vɔvɔ̃ ɖom alegbegbe. Ɖe mate ŋu agblɔ be oa na mamanyea?
+        Mesena le ɖokuinye me be me le gbe yeye aɖe srɔ̃m egbea ene. Nusianu to vovo kuraa tso nusi wo
+        fiam gbɔ. Nukae mawɔ ne me yi aƒeme egbe? Akpenawo, Tasi.
+      sbs: 0.6322
+      gen_sec: 22.52
+      ref_sec: 34.62
+      cer: 0.1189
+      wer: 0.5102
+    unicef_00032:
+      source: unicef
+      text: Esusu be ele be ŋutsua nagblɔ nya mamlɛtɔ ɣesiaɣi. Etena ɖe dzinye elabena edze aɖaŋu ŋutɔ.
+        Eyae kpɔa ƒomea ƒe gazazã dzi ŋutɔŋutɔ, ke hã ewɔa nu abe fofonyee wɔa wo katã ene. Nyemedi be
+        mawɔ srɔ̃ɖeɖe si me woazi ɖoɖoe le nye zɔhɛa ŋu o.
+      sbs: 0.5859
+      gen_sec: 22.78
+      ref_sec: 31.04
+      cer: 0.0538
+      wer: 0.1522
+    unicef_00033:
+      source: unicef
+      text: Mese le  ɖokuinye me be nye  ɖeka koe. Ewɔ nam abe nu geɖe ene be woakpɔ wo katã gbɔ zi  ɖeka.
+        Fifia si menya be mateŋu  aɖe tsi nyɛnyɛ la, ɖe ema fia be elebe ma ɖɔ ŋu  ɖo geɖe wua? Ema ɖi
+        nu kpekpe. Ŋutsuvi koe me ga nye. Eyata, me nye ŋutilame tɔtrɔwo koe ŋutsunyenye nye oa?
+      sbs: 0.5916
+      gen_sec: 25.08
+      ref_sec: 39.17
+      cer: 0.058
+      wer: 0.3559
+    unicef_00035:
+      source: unicef
+      text: Nɔnye fa avi ɣeaɖewoɣi, gake egblɔna be ye mate ŋu atsitre ɖe fofonye  ŋu o elabene eyae nye
+        aƒea ƒe ta. Amesiame le nye kɔƒea gblɔna be ne nye me ɖe srɔ̃ kpuie o la, ma he  ŋukpe ve na nye
+        ƒomea. Wo ƒoa nu tso gɔdzezdze kɔnuwo kple kɔnyinyiwo ŋu.
+      sbs: 0.5913
+      gen_sec: 22.61
+      ref_sec: 32.19
+      cer: 0.1111
+      wer: 0.549
+    unicef_00036:
+      source: unicef
+      text: Ẽ, ŋutsuviawo dometɔ aɖewo ƒe gbe le goglom ɖe edzi eye wole nu wɔm sesĩe wu, evɔ nyɔnuviawo
+        ya le ɖoɖoezizi me eye edze abe wode se geɖe ɖe wo ŋu ene. Danye gblɔna na nɔvinyenyɔnu ɣesiaɣi
+        be nyɔnuvi nyui tsia aƒeme, ekpena ɖe nuɖaɖa ŋu, eye meɖoa nya eŋu o.
+      sbs: 0.6477
+      gen_sec: 24.31
+      ref_sec: 26.43
+      cer: 0.1139
+      wer: 0.2941
+    unicef_00037:
+      source: unicef
+      text: Enyo wu be matsɔ nusianu ade eme eye emegbe mawɔ vodada le esi metɔtɔ ta. Èdi be yeagblɔ abe
+        ne ŋutsuvi tsitsi mawo dze agbagba be yewoana matsɔ nuwo ɖe asi enea? Menya be mesɔ o, gake ɣeaɖewoɣi
+        la, mesena le ɖokuinye me be ele be masɔ ɖe enu hafi woade bubu ŋunye.
+      sbs: 0.5859
+      gen_sec: 24.57
+      ref_sec: 32.26
+      cer: 0.0577
+      wer: 0.2453
+    unicef_00038:
+      source: unicef
+      text: Meva nɔ ekpɔm be menye nye kple nye vevienyenyee nye nya la o. Boŋ be amesiame nate ŋu akpe
+        ɖe wo ŋu. Eye nu si woyɔna be "SGBV" la ɖe? Ðe wòdo ƒo kple nɔnɔme sia si me amewo mesɔ o la?
+        Abe alesi ame aɖe asusu be ŋusẽ le ye si sugbɔ wu ame bubu ŋu le eƒe dzesi (ŋutsu alo nyɔnu) ta
+        ene?
+      sbs: 0.6404
+      gen_sec: 26.19
+      ref_sec: 26.37
+      cer: 0.0751
+      wer: 0.2154
+    unicef_00040:
+      source: unicef
+      text: Azɔ, gblɔe nam, ɖe nèsusu be bubu si sɔ le ŋutsuviawo kple nyɔnuvi siwo le miaƒe sukua me
+        domea? Zi geɖe la, ẽ. Gake ɣeaɖewoɣi la, ŋutsuviawo susuna be yewoate ŋu agblɔ nya sia nya si
+        yewodi na nyɔnuviawo ko, eye ele be nyɔnuviawo naxɔe ko.
+      sbs: 0.653
+      gen_sec: 23.12
+      ref_sec: 21.76
+      cer: 0.0374
+      wer: 0.1522
+    unicef_00041:
+      source: unicef
+      text: Ɣeaɖewoɣi la, wodoa dzɔgbenyui alo teƒeɖoɖo ƒe ŋugbe ne meɖo wo ɖe xɔ̃nyewo. Ɣeaɖewoɣi la,
+        meɖoa wo ɖe edzi elabena nyemedi be manye amesi agbã kɔsɔkɔsɔa o. Tsɔe ƒu gbe ɖe emea? Èdi be
+        yeatutui ɖaa? Nyemebu dɔlékuiwo ƒe anyinɔnɔ le gbedasi bɔbɔe aɖe me ŋu kpɔ o.
+      sbs: 0.69
+      gen_sec: 25.08
+      ref_sec: 33.6
+      cer: 0.0966
+      wer: 0.4583
+    unicef_00042:
+      source: unicef
+      text: Mese le ɖokuinye me be ele be manya nu geɖe tso nye ŋutilã ŋu, gake esesẽna ŋutɔ be makpɔ
+        nyatakaka siwo ŋu kakaɖedzi le evɔ womabu fɔm o. Nenema tututue. Ne mele nyatakakawo dim gɔ̃ hã
+        la, mesena le ɖokuinye me be mele nu gbegblẽ wɔm le alesi amewo ƒoa nu tso eŋu ta.
+      sbs: 0.6803
+      gen_sec: 25.17
+      ref_sec: 33.47
+      cer: 0.0431
+      wer: 0.2407
+    unicef_00043:
+      source: unicef
+      text: Medi be matso nya me le amesi menye kple alesi manɔ agbee ŋu. Ðe wònye nyateƒe ŋutɔŋutɔ be
+        enye nye gomenɔamesiwo dzi dadaa? Tɔgbuinye gblɔ be ne nyemewɔe o la, ŋutsu aɖeke madi be yeaɖem
+        o. Egblɔ be manye ame si woɖe le míaƒe nutoa me.
+      sbs: 0.656
+      gen_sec: 22.27
+      ref_sec: 23.94
+      cer: 0.0645
+      wer: 0.3913
+    unicef_00044:
+      source: unicef
+      text: Ɣeaɖewoɣi la, ewɔna nam be mesɔ o, gake alea tututue nuwo nɔ tso gbaɖegbe ke. Mesusu be ɖeɖi
+        tea eŋu, gake megblɔa nya geɖe o elabena enya be woagbenya ne. Ðewohĩ ele be mí katã míakpɔ gome
+        le aƒemedɔwo me eɖanye ŋutsuvi alo nyɔnuvi o.
+      sbs: 0.6461
+      gen_sec: 22.1
+      ref_sec: 21.95
+      cer: 0.1027
+      wer: 0.4222
+    unicef_00045:
+      source: unicef
+      text: Ne ɖe mia ƒe ŋutilã ŋu koe wo ku ɖo la, ekema dekɔnu ɖesiaɖe awɔ nu ma ke. Gake woa me wɔa
+        esia o. Gake Tasi, ne me gblɔ na fofonye be eƒe sewo nye susu siwo hadomegbenɔnɔ to vɛ ko la asusu
+        be nye mele ame bum o.Ewɔnam abe gbɔdzɔe  ɖe nusi me nya ta.
+      sbs: 0.6234
+      gen_sec: 22.61
+      ref_sec: 38.02
+      cer: 0.0638
+      wer: 0.5714
+    unicef_00046:
+      source: unicef
+      text: Ewor nam be ele be maɣla nye dzimaɖediwo elabena nyemedi be woabum be megbɔdzɔ o. Ena tɔtrɔ
+        siwo va le nye ŋutilã kple susu me la gatɔtɔna ɖe edzi. Ame siwo le nutoa me gblɔna be ɖeko míenye
+        totrititorwo. Wogblɔ be le dzɔdzɔme nu la, ƒewuiviwo nyea nyahelawo alo afɔku nɔa wo me.
+      sbs: 0.5664
+      gen_sec: 25.68
+      ref_sec: 34.62
+      cer: 0.1081
+      wer: 0.4717
+    unicef_00047:
+      source: unicef
+      text: Wogblɔ na wo be woanɔ anyi kpoo ahabɔbɔ wo ɖokui. Le mía gome la, ele be mía ʋanu, mía sẽ
+        ŋu, eye míagaɖe míaƒe vevesesewo afia gbeɖe o. Ðeko wòle abe ɖe wodi be nyɔnuviwo nanye atsyɔ̃ɖonuwo
+        eye ŋutsuviwo nanye asrafowo ene.  Le nyɔnuviwo gome la, enana wometea ŋu ƒoa nu o.
+      sbs: 0.6914
+      gen_sec: 25.34
+      ref_sec: 32.96
+      cer: 0.1549
+      wer: 0.4231
+    unicef_00048:
+      source: unicef
+      text: Menye nyɔnuviawo ɖeɖe ko  ŋuwoe wo ku ɖo o alo? Me  ɖo  ŋku edzi be eyɔ DOVVSU zi mamletɔ.
+        Ke ne wo le nu vevi wɔm ame aɖe xoxo ya ɖe? Mese le ɖokuinyeme be enyo wu ne manya be wonye dɔnyalasiwo
+        ate ŋu akpeɖe ŋunye. Medi be makpɔ egbɔ be nyuietɔ wɔm mele. Akpenawo.
+      sbs: 0.6193
+      gen_sec: 24.06
+      ref_sec: 38.91
+      cer: 0.0743
+      wer: 0.4182
+    unicef_00049:
+      source: unicef
+      text: Ne me bɔbɔnɔanyi esime nɔnye kple nɔvinye nyɔnu le du dzi be yewoa ɖanu adzra nu ɖo la, ewɔ
+        na nam abe ɖe mele wo zãm ene, ne fofonye gblɔ be mɔ nyuietɔ wo nye gɔ̃ hã. Anye be ado dziku.
+        Me lɔ̃a nyabiabia o vevitɔ tso gbɔnye o.
+      sbs: 0.5978
+      gen_sec: 20.13
+      ref_sec: 34.69
+      cer: 0.093
+      wer: 0.3061
+    unicef_00051:
+      source: unicef
+      text: Tasinye gblɔ nam be elebe madzudzɔ aboƒoƒo kple ŋutsuvi siwo le ablɔdzi. Egblɔ be me sɔ be
+        nyɔnuvi sinye nye ƒemetɔ na nɔ du ƒum ƒoxlã nenema o. Ɖevinyenye dzroam vevie. Fifia la elebe
+        ma fɔ kaba ma ku tsi aɖanu hafi ayi suku.
+      sbs: 0.6061
+      gen_sec: 21.07
+      ref_sec: 35.07
+      cer: 0.0503
+      wer: 0.4773
+    unicef_00052:
+      source: unicef
+      text: Ame aɖe gblɔ be nyɔnuvi mate ŋu afɔfu zi gbãtɔ o, alo ne nye be wowɔe le tsitrenu la, ele
+        dedie. Nye me nya nusi dzi maxɔse o. Edze abe xexeame yɔ fuu kple mɔtretrewo Ne me dze agbagba
+        be ma ku nume la, amewo kpɔ nam abe me le nugbegble wɔ.
+      sbs: 0.5859
+      gen_sec: 21.75
+      ref_sec: 33.47
+      cer: 0.0656
+      wer: 0.4615
+    unicef_00053:
+      source: unicef
+      text: Menya be woli, gake amewo wɔa nu ɖe ​​wo ŋu abe ɖe wogblẽa nuteƒekpɔkpɔa me ene. HIV dzena
+        abe nya gã dziŋɔ aɖe ene. Ðe wògakpɔtɔ nye kuxi gã aɖe na amesiwo nye míaƒe ƒemetɔwoa?  Eya ta
+        taɖodzinu lae nye be míaɖo nufitifitiƒe le ƒe 2030 me, alo? Ewɔ nam be mese nya ma le nyadzɔdzɔwo
+        me.
+      sbs: 0.6845
+      gen_sec: 26.19
+      ref_sec: 34.56
+      cer: 0.1041
+      wer: 0.3509
+    unicef_00054:
+      source: unicef
+      text: Ŋdɔ na wò, Daɖia. Mesusu be enyo ŋutɔ. Suku me yɔ fũ, gake nuwo le ɖoɖoezizi me le aƒeme.
+        Èbe nusiwo míekpɔna gbesiagbe enea? Nusiwo ŋu amewo meƒoa nu tsoe gaglãa ŋutɔŋutɔ oa? Mesusu be
+        alesi wònɔna ɣesiaɣie wònye.
+      sbs: 0.6152
+      gen_sec: 21.41
+      ref_sec: 30.98
+      cer: 0.0714
+      wer: 0.7179
+    unicef_00055:
+      source: unicef
+      text: Womekpɔa kayayo nyɔnuvi siwo le alɔ̃ dɔm le ablɔwo dzi alo ŋutsuvi siwo wolé ɖe nuvlowɔwɔ
+        suewo ta o. Magblɔ nɛ be wòawɔ teƒe aɖe si míate ŋu afefefe ahaɖo dze eye womaɖe fu na mí o. Teƒe
+        si míate ŋu asrɔ̃ aɖaŋudɔwo le, ke menye be míawɔ dɔ ɖe gaku ɖeka ko ta o.
+      sbs: 0.5915
+      gen_sec: 24.06
+      ref_sec: 34.43
+      cer: 0.1287
+      wer: 0.2909
+    waxal_00000:
+      source: waxal
+      text: Ɖevi ŋutsuvia lewo kple nyɔnuvia lewo le ʋe ɖum eye wotsɔ enu bla afɔ, eye ame bubuwo hã wokpla
+        eŋu hele ƒoƒom.
+      sbs: 0.6429
+      gen_sec: 10.24
+      ref_sec: 15.92
+      cer: 0.1364
+      wer: 0.5909
+    waxal_00001:
+      source: waxal
+      text: Ame aɖewo wole mɔ zɔm le eŋudzeƒe. Baagi vovovo le wo si. Ɖeviwo kple ametsitsiwo, nyɔnu kple
+        ŋutsu. Ɖevi ɖe kpla bagi ɖe dzime. Eɖewo le bagi tutum.
+      sbs: 0.6983
+      gen_sec: 13.74
+      ref_sec: 15.69
+      cer: 0.1121
+      wer: 0.4286
+    waxal_00002:
+      source: waxal
+      text: Ŋutsu aɖe tsitre eye wòbla ekɔme kple tae eye wòde asi megbe, edo dzi kple anyigba wu eye
+        ɖe nɔ atigo me eye wòdo asi ɖe dzi. Le emegbe la, aflaga si nye USA tɔ la hã le glia ŋuti eye
+        ame bubu hã tsitre ɖe eya ma gbɔ.
+      sbs: 0.7167
+      gen_sec: 19.54
+      ref_sec: 24.52
+      cer: 0.0485
+      wer: 0.3061
+    waxal_00003:
+      source: waxal
+      text: Atiglinyi yi ke woƒe gbɔsusu me sɔgbɔ wole enu ɖum le egbe aɖe dzi eye tɔsisi hã le va to
+        woƒe ŋkume, ke ame aɖewo hã nɔ woƒe ŋu me va to eŋu mɔdodo aɖe dzi le wo megbe.
+      sbs: 0.6678
+      gen_sec: 15.02
+      ref_sec: 17.31
+      cer: 0.0388
+      wer: 0.1026
+    waxal_00004:
+      source: waxal
+      text: Maɖewo le edɔwɔƒeaɖe machino le wógbɔ eye meɖeka bɔbɔ nɔ anyi edó kuku ɣi
+      sbs: 0.6786
+      gen_sec: 6.83
+      ref_sec: 16.56
+      cer: 0.2667
+      wer: 0.7857
+    waxal_00005:
+      source: waxal
+      text: Woɖo agbalẽwo ɖe ati aɖe dzi le xɔme. Fotowo hã le glasi me le atia dzi. Zikpui bɔbɔe lɔbɔ
+        aɖe hã le xɔa me. Suɖui suetɔ aɖe le zikpuia dzi.
+      sbs: 0.6763
+      gen_sec: 12.8
+      ref_sec: 17.6
+      cer: 0.0654
+      wer: 0.1667
+    waxal_00006:
+      source: waxal
+      text: Le xɔme la ŋutsua nɔ anyi ɖe asikpui. Nyɔnua anyigba tutum ye agbalẽ go le afima godzi. Egbewo
+        le nugo me le gbalẽ goa me ye kaɖi hã le teƒea.
+      sbs: 0.6379
+      gen_sec: 13.06
+      ref_sec: 21.41
+      cer: 0.0727
+      wer: 0.3667
+    waxal_00007:
+      source: waxal
+      text: Le xɔ aɖe gbɔ. Xɔ kɔkɔ kple xɔviwo le tɔ gbɔ. Ɖewo le amadede vovovowo me. Ɖewo le dzi, ɖewo
+        le aŋtsiɖiɖi, ɖewo tame le ʋie eye ɖewo tame le vii.
+      sbs: 0.6515
+      gen_sec: 13.06
+      ref_sec: 21.86
+      cer: 0.211
+      wer: 0.7419
+    waxal_00008:
+      source: waxal
+      text: U.S.A tɔwo ƒe ŋɔnudzrɔƒe aɖe, ŋɔnudrɔla nɔ anyi ɖe eƒe zikpui me ale be U.S.A flaga nɔ egbɔ.
+        Ame eve aɖe nɔ kplɔ̃ aɖe ŋuti eye ame ɖeka aɖe hã nɔ kplɔ̃ ɖeka aɖe ŋuti. Ame aɖewo hã wole ŋɔnudrɔƒe
+        la.
+      sbs: 0.6732
+      gen_sec: 18.6
+      ref_sec: 21.13
+      cer: 0.2432
+      wer: 0.3659
+    waxal_00009:
+      source: waxal
+      text: Ɖetugbui aɖe dze klo ɖe anyigba eye kesewo sɔgbɔ va ƒoxlae, kese ɖe tsitre ɖe ɖetugbui dzi,
+        eƒo ɖetugbuia ƒo ɖa ɖe ta kesea ɖe dzo tso adzɔge gbɔna.
+      sbs: 0.6555
+      gen_sec: 13.31
+      ref_sec: 17.72
+      cer: 0.0598
+      wer: 0.3448
+    waxal_00010:
+      source: waxal
+      text: Nyɔnuvi ɖevi sue wɔme atɔ ekpla nyɔnu aɖe. Ŋutsuvi ɖeka le wogbɔ medo fɔkpa o. woƒoƒu eƒe
+        asi ɖe glate ekɔ eƒe afɔ ɖeka do ɖe ŋgɔ.
+      sbs: 0.684
+      gen_sec: 11.86
+      ref_sec: 16.32
+      cer: 0.1881
+      wer: 0.4074
+    waxal_00011:
+      source: waxal
+      text: Nyɔnuvi ene aɖewo woɖu mɔlu le gagbe aɖe me. Nyɔnuvi wo dometɔ etɔ̃ woƒo ɖa ke wo dometɔ kpɔtɔe
+        bla eta eye wodo awu ŋlaya aɖe eye wo katã wo le nu kom.
+      sbs: 0.6997
+      gen_sec: 13.48
+      ref_sec: 21.8
+      cer: 0.1026
+      wer: 0.5455
+    waxal_00012:
+      source: waxal
+      text: Ŋutsu aɖe le klotsi nu hele liasigliŋukaɖi wɔm. Ɖevia ɖe le egbɔ. Ɖewo le atsitre eye ɖewo
+        hã le anyigba henɔ ekpɔm. Ɖevia geɖewo do awu.
+      sbs: 0.613
+      gen_sec: 12.8
+      ref_sec: 16.72
+      cer: 0.0833
+      wer: 0.6154
+    waxal_00013:
+      source: waxal
+      text: Wole kpovitɔ aɖew le ŋgɔ le teƒe yi ke nye lɔri mɔ aɖe dzi yi ke wole ewɔm kple susu be amewo
+        woato teƒe yi ke wole be woato yi ke nye gakpo yi ke wowɔ da ɖi yi ke nye gakpoa dogo ye wole
+        amewo nya le mɔ dzi ta ame geɖee wotsi gakpoa godo le mɔ si dzi mele be woato o la dzi tom.
+      sbs: 0.5862
+      gen_sec: 23.63
+      ref_sec: 26.01
+      cer: 0.1226
+      wer: 0.3433
+    waxal_00014:
+      source: waxal
+      text: Ame geɖewo bɔbɔ nɔ anyi. Ame ɖeka le tsitre nu eye ŋutsu aɖe le eha dzim eye ame siwo bɔbɔ
+        nɔ anyi ɖe kplɔ ŋu le hadzila la kpɔm do ɖa.
+      sbs: 0.6282
+      gen_sec: 11.69
+      ref_sec: 16.36
+      cer: 0.0485
+      wer: 0.129
+    waxal_00015:
+      source: waxal
+      text: Nyɔnu eve aɖe wonɔ anyi ɖe sɔ aɖe dzi eye ŋutsu aɖe le sɔa kplɔm. Nyɔnu ɖeka le wo megbe eye
+        wokɔ asi ka sɔ le. Wole atsaƒu to eye tsi aɖe le wo megbe.
+      sbs: 0.6407
+      gen_sec: 13.06
+      ref_sec: 18.41
+      cer: 0.0526
+      wer: 0.2286
+    waxal_00016:
+      source: waxal
+      text: Amehawo eve nɔ seƒoƒotsi dom ɖe abɔ me, eɖe hã le seƒoƒotsi ɖe asi ke wodo asiwu
+      sbs: 0.6754
+      gen_sec: 7.42
+      ref_sec: 15.76
+      cer: 0.2063
+      wer: 0.5294
+    waxal_00017:
+      source: waxal
+      text: Ŋutsu eve kple nyɔnu ɖeka wolé ati yi titi etɔ̃wo ɖe asi hele asi trɔm le eya ŋuti esime ŋutsu
+        ɖeka nɔ te ɖe wo adzɔge nɔ wo kpɔm, esime woƒe ami… alɔ kpa dzi la woda nugui enewo ɖe alɔ dzi.
+      sbs: 0.6735
+      gen_sec: 17.49
+      ref_sec: 22.56
+      cer: 0.0828
+      wer: 0.2619
+    waxal_00018:
+      source: waxal
+      text: Ŋɔnudrɔ̃xɔme si ame aɖewo le. Ame ve wole anyinɔƒe eye ame oame tɔ̃ wole titrenu. Amea ɖeka
+        le titre ɖe aɖakagome kɔ asi yid zi.
+      sbs: 0.6824
+      gen_sec: 12.03
+      ref_sec: 17.24
+      cer: 0.101
+      wer: 0.76
+    waxal_00019:
+      source: waxal
+      text: Ɖevi aɖewo le sukuxɔme bɔbɔnɔ anyi le nufiala la la dzɔm be wòava ɖafia nu na yewo, ke wo
+        bɔbɔnɔ zikpui dzile nu kpɔm le nufiala la dzɔm, wodo awu vovovowo le sukuxɔ la me, eɖewo hã tsɔ
+        asi da ɖe ekplɔ la dzi.
+      sbs: 0.6938
+      gen_sec: 18.94
+      ref_sec: 19.24
+      cer: 0.0988
+      wer: 0.3409
+    waxal_00020:
+      source: waxal
+      text: Gbegadzivi aɖewo wonye ame atɔ̃. Ame aɖewo sa avɔ ɖe kɔme. Wole sebe ɖe asi. Wole ʋe ɖum.
+        Amewo do afɔkpa. Amewo hã medo afɔkpa o.
+      sbs: 0.7127
+      gen_sec: 11.69
+      ref_sec: 20.15
+      cer: 0.102
+      wer: 0.4231
+    waxal_00021:
+      source: waxal
+      text: Ame ƒuƒoƒo hã ɖe wò do awu amadede vovovowo ele gbadɔ ɖe ƒe ŋkume. Ati hã le teƒea eye amewo
+        le agbawo ɖe asi ɖeka ɖeka ɖeka ɖeka.
+      sbs: 0.6322
+      gen_sec: 11.86
+      ref_sec: 15.76
+      cer: 0.1386
+      wer: 0.3571
+    waxal_00022:
+      source: waxal
+      text: Amewo nɔ anyi ɖe ŋɔnudrɔxɔ me, ame geɖewo do kot. Zikpui ƒuƒlu aɖewo hã le ŋɔnudrɔxɔ me, gbalẽ
+        kpakple pepa vovovo le kplɔ la dzi. Amɛrikatɔwo ƒe flaga le ŋɔnudrɔla la gbɔ.
+      sbs: 0.6732
+      gen_sec: 16.55
+      ref_sec: 16.8
+      cer: 0.1471
+      wer: 0.4688
+    waxal_00023:
+      source: waxal
+      text: kɛtɛkɛ mɔ dzraɖo ɖa ƒɛ lawo amowo lɛ kɛtɛkɛ mɔ kum amɛɖɛwo lɛ ati ɖasi wókatã woɖuɔ kuku eye
+        eʋu aɖe tsɛ lɛ ɛfimi
+      sbs: 0.6692
+      gen_sec: 10.15
+      ref_sec: 16.66
+      cer: 0.2667
+      wer: 0.8333
+    waxal_00024:
+      source: waxal
+      text: Kpovitɔ aɖewo le awu yibɔ me. Ɖeka le kpo ɖe asi. Ŋutsu aɖe do awu dzomafi, do aŋtsiɖiɖi hele
+        anyigba kplɔm kple tsitrexa. Nɔvia ɖeka le xɔ gaɖɔ aɖe me yi hã do aŋtsiɖiɖi wua.
+      sbs: 0.6684
+      gen_sec: 16.63
+      ref_sec: 19.06
+      cer: 0.1324
+      wer: 0.4
+    waxal_00025:
+      source: waxal
+      text: Dunyahelamenɔla ɖewo ƒoƒu ɖe xɔ aɖe me. Wole hatsotso vovovo me le kplɔ lɔbɔlɔbɔ aɖewo ŋu.
+        Eɖewo hã bɔbɔnɔ kplɔwo ŋu le tsitsina.
+      sbs: 0.6551
+      gen_sec: 12.29
+      ref_sec: 15.64
+      cer: 0.1346
+      wer: 0.6087
+    waxal_00026:
+      source: waxal
+      text: Ɖevi eve aɖewo tɔ ɖe gota. Gɔta aɖewo to ɖevia ƒe ŋkume. Tsi le sisim le gɔta me. Eɖi gbogbo
+        aɖe hã le gɔta me. Ame bubu aɖewo hã zɔ to gɔta to.
+      sbs: 0.6885
+      gen_sec: 12.97
+      ref_sec: 17.44
+      cer: 0.0748
+      wer: 0.3333
+    waxal_00027:
+      source: waxal
+      text: Woɖe do aɖe ɖe tome yi ɖe sika kuƒe. Aŋe aɖe tso xixe yi ɖe toa me. Sika dɔwɔlawo dzraɖo ɖe
+        woƒe dɔwɔwuwo me le mɔ aɖe tutum yie ɖe sikakuƒe la.
+      sbs: 0.7104
+      gen_sec: 12.97
+      ref_sec: 15.76
+      cer: 0.1182
+      wer: 0.4375
+    waxal_00028:
+      source: waxal
+      text: Atikutsetste vovovowo woe ya le kusi me. Nyɔnua le kusia do me. Atikutsetse abe mango, kɔɖu,
+        ɖiba, watermelɔn yeya le fiya.
+      sbs: 0.6757
+      gen_sec: 11.61
+      ref_sec: 16.62
+      cer: 0.1753
+      wer: 0.7143
+    waxal_00029:
+      source: waxal
+      text: Asimee nye ya. Ɖetugbi aɖe nɔ nudzadzra gbɔ. Aŋuti le teƒe ma. Tomatosi ele teƒe ma. Pɛya,
+        akɔɖu, ena nyi wole pɛya ɖe asi.
+      sbs: 0.6683
+      gen_sec: 11.52
+      ref_sec: 20.11
+      cer: 0.172
+      wer: 0.9167
+    waxal_00030:
+      source: waxal
+      text: Ame geɖewo le tɔdziŋu sia me, ɖeviwo kple ame tsitsiwo siaa, ɖewo tsi atsitre, ɖewo bɔbɔnɔ
+        anyi, avɔgbadɔ aɖe le wodzi le tɔdziŋu la me wole etɔ la dzi, wokɔ woƒe abɔwo dzi wo dometɔ aɖewo
+        le dzidzɔ kpɔm ŋutɔ, tɔdziŋu la le blɔ.
+      sbs: 0.6749
+      gen_sec: 20.64
+      ref_sec: 17.16
+      cer: 0.1067
+      wer: 0.3636
+    waxal_00031:
+      source: waxal
+      text: Nyɔnu aɖe kple evia wɔme etɔ̃ kɔ kpe ɖe ŋutsu aɖe hã nu wo le seƒoƒowo gbɔ henɔ asi trɔm le
+        wo nu henɔ wogbɔ dzram ɖo le seƒoƒobɔ me.
+      sbs: 0.653
+      gen_sec: 11.86
+      ref_sec: 18.96
+      cer: 0.1275
+      wer: 0.3333
+    waxal_00032:
+      source: waxal
+      text: Amehawo wolɔ ablɔ eye wodo awu yibɔwo kple awu dzɛ̃. Ame aɖewo ɖɔ kuku dzɛ̃wo eye ame aɖewo
+        hã ɖɔ kuku yibɔwo elé nu ŋlɔ ɖe kaklatiwo dzi be woaku nugɔme tso COVID ɔ̃ɛɣ ƒe adzɔgawo ŋuti
+        kple miaƒe adzɔga yiwo woxɔna ɖe miaƒe fonuwo dzi la ta.
+      sbs: 0.6811
+      gen_sec: 22.43
+      ref_sec: 26.04
+      cer: 0.2263
+      wer: 0.5
+    waxal_00033:
+      source: waxal
+      text: Tɔdziŋuwo zãa, wole teƒea ʋe. Aƒewo hã le teƒea, atsiwo hã wole teƒea, amewo le teƒea, wole
+        tɔŋu. tɔdziŋua dzi.
+      sbs: 0.6716
+      gen_sec: 10.5
+      ref_sec: 16.58
+      cer: 0.1647
+      wer: 0.6
+    waxal_00034:
+      source: waxal
+      text: Le xɔ ga me kpukpoe geɖe le fim. Wɔme eve lolo eye ɖeka wɔ kpui. Exɔgame tse tivi ɖe le fi
+        mi. Ekplɔ tse nyakpɔ.
+      sbs: 0.6406
+      gen_sec: 9.98
+      ref_sec: 15.69
+      cer: 0.131
+      wer: 0.56
+    waxal_00035:
+      source: waxal
+      text: Woƒo ŋu eŋu ƒomevi vovovwo ɖe yeƒe gbadza ya. Eŋua ɖewo lɔ ʋi ɖewo hã dze. Ŋutsu aɖe tsitre
+        ɖe ŋuawo gbɔ. Ati yiwo hã le eŋuawo megbe ɖaa.
+      sbs: 0.6757
+      gen_sec: 13.06
+      ref_sec: 20.32
+      cer: 0.0943
+      wer: 0.5172
+    waxal_00036:
+      source: waxal
+      text: exɔ ƒe akpata me sike azikpi kple nukpɔmɔ le ye wótsɔ nutatawo dzra exɔ ƒe gliawó ŋu ɖo anyigbã
+        wowɔ anyigbã kple atsi he ɖó lagbale ɖe anyigbã
+      sbs: 0.687
+      gen_sec: 13.57
+      ref_sec: 16.46
+      cer: 0.1293
+      wer: 0.6429
+    waxal_00037:
+      source: waxal
+      text: Ame aɖe le gbadɔ te wosugbɔ wole deŋu gbadɔ te, ɖeviwo le afi ma, nyɔnu aɖe bla taku ʋi yevu
+        aɖe nɔ wo domii le kplɔ gbɔ le gbalẽ ʋi aɖewo gbɔ.
+      sbs: 0.6525
+      gen_sec: 12.63
+      ref_sec: 17.39
+      cer: 0.1101
+      wer: 0.5
+    waxal_00038:
+      source: waxal
+      text: Nyɔnu ƒome ya tso enuƒleƒe le filin station ƒe ŋudzraƒe. Woƒle enua vɔ heva tɔ ɖe emɔto henɔ
+        emɔ dzim be yewo ava tso mɔ me. Moto hã va nɔ yiyim hafi wo pak eŋuwo hã ɖe afi ma.
+      sbs: 0.6118
+      gen_sec: 15.78
+      ref_sec: 17.2
+      cer: 0.2074
+      wer: 0.4872
+    waxal_00039:
+      source: waxal
+      text: Ɖekakpui eve aɖewo le dɔ wɔm le mɔdɔwɔƒe aɖe yi yɔ fũuu kple gakpowo. Ɖeka bɔbɔ ɖe gakpo aɖe
+        gbɔ le kpɔm ke ɖeka hã le tsitre nu le ɖe kpɔm. Wo katã wodo dɔwɔwuwo eye woɖɔ dɔwɔkuku ʋiwo hã
+      sbs: 0.6386
+      gen_sec: 17.15
+      ref_sec: 20.68
+      cer: 0.2517
+      wer: 0.45
+    waxal_00040:
+      source: waxal
+      text: Ŋutsu woame eve ɖewo tsatsitre, nyɔnu ɖeka ɖe wo dome, wo katã woɖɔ nu emo. Ŋutsu ɖeka aɖe
+        kple bagi ɖe megbe, nyɔnu hã kpla bagi ɖe megbe. Wotsatsitre ɖe ŋutsu aɖe yike do awu blu be ŋgɔ.
+      sbs: 0.6776
+      gen_sec: 17.57
+      ref_sec: 20.44
+      cer: 0.069
+      wer: 0.4211
+    waxal_00041:
+      source: waxal
+      text: Yevunyɔnu aɖe ɖo gaŋkui ele tsitre nu ke ɖevi aɖewo wo ƒoƒu ɖe eŋu enɔ atu wɔm nɛ eye ɖevi
+        ɖeka ya menɔ atu wɔm nɛ o gake ya enɔ tsitre ye medo afɔkpa o.
+      sbs: 0.6883
+      gen_sec: 13.4
+      ref_sec: 16.75
+      cer: 0.1017
+      wer: 0.3429
+    waxal_00042:
+      source: waxal
+      text: Ame aɖewo le woƒe kɔƒeme. Wotsɔ bɛwo kɔtu xɔlae. Eye amea ɖewo bɔbɔ nɔ anyi, ɖewo le atsitrenu
+        eye ɖewo hã wobɔbɔ nɔ anyi ɖe abawo dzi.
+      sbs: 0.6699
+      gen_sec: 12.2
+      ref_sec: 18.04
+      cer: 0.0476
+      wer: 0.3333
+    waxal_00043:
+      source: waxal
+      text: Emɔmemidzraƒe aɖe, eʋu woame eve le afima; ɖeka le gbemumu, ɖeka le ɣie eye ameaɖewo mɔ me
+        tso. Wole bag vovovowo ɖe asi eye mototɔ woameve le afima.
+      sbs: 0.7166
+      gen_sec: 13.74
+      ref_sec: 22.39
+      cer: 0.1197
+      wer: 0.6429
+    waxal_00044:
+      source: waxal
+      text: Ɖevi aɖewo nɔ anyi ɖe antrɔe aɖe dzi, ɖeviawo katã nye ŋutsuviwo, womeve ƒe awu ƒe amadede
+        nye green, ɖeka do nika yellow, gbeɖuɖɔ aɖewo le woƒe ŋku me
+      sbs: 0.6905
+      gen_sec: 13.82
+      ref_sec: 19.95
+      cer: 0.0924
+      wer: 0.4483
+    waxal_00045:
+      source: waxal
+      text: Ame vovovo siawo le tsaɖim. Ɖewo ƒle nu yina aƒeme, bubuwo yina nu ƒlege ke bubuwo hã wole
+        tsaɖim. Dziƒo xɔ ƒo xlã nuto yi ke me wole la.
+      sbs: 0.7147
+      gen_sec: 12.46
+      ref_sec: 16.88
+      cer: 0.0857
+      wer: 0.5172
+    waxal_00046:
+      source: waxal
+      text: Nyɔnu aɖe le nuɖuɖu mam na ɖevi sue aɖewo ke nyɔnua do kuku do awu hee kpakple, ɖeviawo hã
+        kɔ nuɖuɖua le woƒe agba me wokɔ gatsi kɔ da ɖe edzi na wo.
+      sbs: 0.6952
+      gen_sec: 12.97
+      ref_sec: 16.94
+      cer: 0.0696
+      wer: 0.3333
+    waxal_00047:
+      source: waxal
+      text: nyɔŋu aɖe si ƒo ɖa eye wodó awu dzɛ̃ kple atalegbe la tsyɔ anyi ɖe kese aɖewo gbɔ kesea ɖeka
+        líe nyɔŋuɔ ƒe abɔdzi ke kese mamliawo ya le gbɔ kese aɖewo ya wóle adzɔge le nyɔŋua kpɔm
+      sbs: 0.6503
+      gen_sec: 16.46
+      ref_sec: 18.29
+      cer: 0.1469
+      wer: 0.3421
+    waxal_00048:
+      source: waxal
+      text: Ɖevi ŋutsu aɖewo vi aɖewo le totɔ eye ɖewo lé agba amadede dzɛ̃ ɖe asi eye ɖewo lé agba amadede
+        mumu ɖe asi eye eɖewo tsi atsitre bɔbɔ ɖe ekpe dzi le tɔ la me.
+      sbs: 0.6354
+      gen_sec: 14.08
+      ref_sec: 19.88
+      cer: 0.1301
+      wer: 0.3714
+    waxal_00049:
+      source: waxal
+      text: e srɔtɔ wóle fotoɖem wóle tsi gbɔ akrowo le fima aflaga vovovowo le' fima etsi
+      sbs: 0.689
+      gen_sec: 6.91
+      ref_sec: 16.66
+      cer: 0.1429
+      wer: 0.7333
 - model: Google/gemini-3.1-flash-tts-preview
   model_url: https://ai.google.dev/gemini-api/docs/speech-generation
   mode: noref
@@ -34286,4 +36091,4 @@ benchmarks:
       ref_sec: 16.66
       cer: 0.3968
       wer: 1.1333
-updated: '2026-10-01'
+updated: '2026-10-09'

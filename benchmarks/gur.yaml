@@ -6716,6 +6716,1684 @@ benchmarks:
       ref_sec: 4.24
       cer: 0.4211
       wer: 0.8333
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.6559
+  num_scored: 200
+  cer: 0.3358
+  wer: 0.7613
+  accuracy: 0.6642
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.6601
+  score: 0.6601
+  per_source:
+    bible:
+      sbs: 0.7001
+      cer: 0.3282
+      n: 100
+    jw:
+      sbs: 0.6117
+      cer: 0.3435
+      n: 100
+  entries:
+    bible_00000:
+      source: bible
+      text: Yezu en ta bɔna Bɛtani, Simɔn insageŋɔ daana la yire la, ti pɔka waam a zian na, tara lila
+        ti ba dikɛ kugesuma yagum ka, ti kaam daa n kpeem bɔna ka puan.
+      sbs: 0.7587
+      gen_sec: 11.78
+      ref_sec: 11.2
+      cer: 0.6068
+      wer: 0.8485
+    bible_00001:
+      source: bible
+      text: La mam wʋn tõm sɛka tɩ mam Sɔ daan bĩŋe nõorɛ bɔ ya la, tɩ a waam wa bɔna la ya.
+      sbs: 0.6401
+      gen_sec: 5.46
+      ref_sec: 5.24
+      cer: 0.1379
+      wer: 0.4286
+    bible_00002:
+      source: bible
+      text: Wakat-ẽŋa, la wʋn dɛna la toogo bɔ pɔg-sɛba n tarɩ pʋa, la sɛba n tarɩ bilɛɛsɩ tɩ ba mõgra
+        la.
+      sbs: 0.7124
+      gen_sec: 6.91
+      ref_sec: 5.48
+      cer: 0.2
+      wer: 0.6
+    bible_00003:
+      source: bible
+      text: » Tɩ Nawẽnnɛ Sɩa darɛ bɔna la mam botɩ mam yẽ naam bĩmbĩnne n boe Nawẽnnɛ yire, tɩ nẽra
+        zẽa a zuo.
+      sbs: 0.7221
+      gen_sec: 7.68
+      ref_sec: 5.76
+      cer: 0.2838
+      wer: 0.9048
+    bible_00004:
+      source: bible
+      text: Ba wʋn zɛbɛ la Pebila la mɛ, la Pebila la wʋn zɛbɛ yãŋɛ ba mɛ, ẽŋa n de zuudãandõma Zuudãana,
+        la naadõma Naba la ĩyã.
+      sbs: 0.6866
+      gen_sec: 9.13
+      ref_sec: 8.38
+      cer: 0.2472
+      wer: 0.56
+    bible_00005:
+      source: bible
+      text: A ẽŋɛ yel-ɩr-sõŋɔ, dee sike a mẽŋa paalɛ tɩ a tarɩ yɛm.
+      sbs: 0.7254
+      gen_sec: 4.27
+      ref_sec: 3.08
+      cer: 0.325
+      wer: 0.75
+    bible_00006:
+      source: bible
+      text: La ban daa pun ka nyɛ yele seere ti ba wan zeele de zuo ku en la, ba daa kelum yele Palete
+        mɛ ti a bahɛ ti ba ku en.
+      sbs: 0.7531
+      gen_sec: 9.05
+      ref_sec: 8.34
+      cer: 0.5294
+      wer: 0.6667
+    bible_00007:
+      source: bible
+      text: La sãn dɛna Alevi yɩɩsɩ la n toosrɩ pia pʋam ayɩla la, ba de la nẽrsaalba n kiiri, la Amelkisedɛkɩ
+        de la sɛka tɩ Nawẽnnɛ gõŋɔ la yetɩ, a vɔa mɛ.
+      sbs: 0.702
+      gen_sec: 11.35
+      ref_sec: 10.52
+      cer: 0.2273
+      wer: 0.5161
+    bible_00008:
+      source: bible
+      text: Nẽr-sɛka n ka mi Nawẽnnɛ sore yɛla sõŋa la, sãn yẽ fõn tarɩ bãŋrɛ la n zĩ baga kãabgɔ
+        zẽam ɔbra nẽnnɔ, la wʋn pãasɛ ẽ tɩ a mẽ obe la baga nẽnnɔ.
+      sbs: 0.7334
+      gen_sec: 11.18
+      ref_sec: 11.32
+      cer: 0.3241
+      wer: 0.6364
+    bible_00009:
+      source: bible
+      text: Nɛra woo kule la a tiŋa a tiŋa ti ba ta gulehɛ ba yuura.
+      sbs: 0.6945
+      gen_sec: 4.27
+      ref_sec: 5.3
+      cer: 0.2143
+      wer: 0.2857
+    bible_00010:
+      source: bible
+      text: Bɛla tɩ ya wʋn tãagɛ tɔgɛ lerge nẽr-sɛba n wẽerɩ yõogɔ la sɛla n yẽtɩ la nini, dee ka
+        bɩsra ba sũure pʋam na.
+      sbs: 0.7342
+      gen_sec: 8.36
+      ref_sec: 8.24
+      cer: 0.2771
+      wer: 0.625
+    bible_00011:
+      source: bible
+      text: A pɔgesaaren na ti a ele ta paaɛ yuuma ayopɔi ti a sira a ka wa bɔna.
+      sbs: 0.7156
+      gen_sec: 5.21
+      ref_sec: 8.44
+      cer: 0.1923
+      wer: 0.4118
+    bible_00012:
+      source: bible
+      text: Ba daa kpa en mɛ a tɔregɔ puan, gee a voe mɛ Yinɛ paŋa la puan.
+      sbs: 0.6715
+      gen_sec: 4.27
+      ref_sec: 11.3
+      cer: 0.2609
+      wer: 0.625
+    bible_00013:
+      source: bible
+      text: » La ban sẽnnɩ wɛɛsa la, tɩ bãasɩ la basɛ ba, tɩ ba ãna sõŋa.
+      sbs: 0.7182
+      gen_sec: 4.27
+      ref_sec: 9.44
+      cer: 0.1628
+      wer: 0.4286
+    bible_00014:
+      source: bible
+      text: 'Tɩ Azezi yẽ ban bɔ ẽ sɩra la, yele kɔɔrŋɔ la yetɩ: «M bia, keŋe fʋ sũure, fʋ tõon-beero
+        taalɛ ka le bɔna fʋ zuo.'
+      sbs: 0.7326
+      gen_sec: 9.22
+      ref_sec: 8.54
+      cer: 0.1975
+      wer: 0.72
+    bible_00015:
+      source: bible
+      text: Yãma tarɩ la nẽrba n boe ya pʋam dɔla Abalaam zãsŋɔ.
+      sbs: 0.6642
+      gen_sec: 4.1
+      ref_sec: 3.1
+      cer: 0.3415
+      wer: 1.1818
+    bible_00016:
+      source: bible
+      text: 'La ba yetɩ: «Tɩ da kãn ẽŋɛ-ya bɛla kibsa la pʋam, tɩ nẽrba la wʋn gire mɛ.'
+      sbs: 0.7032
+      gen_sec: 5.55
+      ref_sec: 4.44
+      cer: 0.2075
+      wer: 0.7059
+    bible_00017:
+      source: bible
+      text: 'Tɩ Apolɩ tɔgɛ ba yetɔga ayɩla yetɩ: «Nawẽnnɛ Sɩa n yʋʋn botɩ a nõtɔɔsa Aezayi tɔgɛ la ya
+        yaabdõma la de la sɩra.'
+      sbs: 0.7243
+      gen_sec: 8.36
+      ref_sec: 7.46
+      cer: 0.2529
+      wer: 0.7826
+    bible_00018:
+      source: bible
+      text: Tõma nẽra woo tõnnɩ la tõon-sɛka tɩ Zuudãana la bɔ tɔ tɩ tɩ tõm.
+      sbs: 0.7341
+      gen_sec: 4.61
+      ref_sec: 4.26
+      cer: 0.3061
+      wer: 0.9286
+    bible_00019:
+      source: bible
+      text: Gee ya han sina gee iŋɛ bala, yi yeen toe ya mam bala ti n dɛna gɔɔŋɔ, ti mam me taam ŋmɛ
+        nyuɔ fii wa.
+      sbs: 0.7322
+      gen_sec: 7.59
+      ref_sec: 11.48
+      cer: 0.5067
+      wer: 0.84
+    bible_00020:
+      source: bible
+      text: Tõma tɔgrɩ paala la sɩra vẽelga vẽelga, tɩ nẽrba sũure n mi seem na wʋn bãŋɛ tɩ tõma
+        ɩtɩ sɛla n ãn sõŋa Nawẽnnɛ nifum.
+      sbs: 0.7356
+      gen_sec: 9.3
+      ref_sec: 8.76
+      cer: 0.3261
+      wer: 0.76
+    bible_00021:
+      source: bible
+      text: N yeti ya la yelemɛŋerɛ wa, ti ba pun toe ba yɔɔrɛ mɛ.
+      sbs: 0.6757
+      gen_sec: 4.01
+      ref_sec: 4.76
+      cer: 0.475
+      wer: 0.6923
+    bible_00022:
+      source: bible
+      text: '“Bala zuo, ni puuheri ya ŋwana: Tu Sɔ en boi saazuo ha.'
+      sbs: 0.6524
+      gen_sec: 4.35
+      ref_sec: 3.48
+      cer: 0.75
+      wer: 1.0833
+    bible_00023:
+      source: bible
+      text: Nẽr-sɛba n wʋn po vooge pɔspɔsɩ kũm voore la, tarɩ zu-yẽlga, bãma de la Nawẽnnɛ nẽrba.
+      sbs: 0.6639
+      gen_sec: 7.25
+      ref_sec: 5.8
+      cer: 0.2576
+      wer: 0.625
+    bible_00024:
+      source: bible
+      text: Daaberɛe sɛka ti a daana looe en ti a bihera a yire yɛla, bɔɔra daaberɛ sina la ba dia hansɛka.
+      sbs: 0.7352
+      gen_sec: 7.59
+      ref_sec: 9.28
+      cer: 0.3919
+      wer: 0.6
+    bible_00025:
+      source: bible
+      text: La dabs-bãma wakatɛ karẽnbiisi la daan paasrɩ mɛ zɔɔra, tɩ Zifdõma sɛba n tɔgrɩ Grɛkɩ yetɔga
+        la daan yõnna la Zifdõma nẽr-sɛba n tɔgrɩ Ebre yetɔga la yetɩ, ban sõŋrɩ nẽrba la dia daarɛ
+        woo la, ba ka bɔɔrɩ bãma pɔkõpa la wʋ lan masɛ.
+      sbs: 0.7253
+      gen_sec: 17.83
+      ref_sec: 13.46
+      cer: 0.2967
+      wer: 0.6667
+    bible_00026:
+      source: bible
+      text: Sɛla n paasɛ, ba sãn gʋlsɛ ba, ba wʋn lebge la zẽyãgsɩ ɛɛra kaara yiɛ, la, la dagɩ bɛla
+        mãa, ba wʋn lebge la yetɔg-tɔgsrɩba kẽera nẽrba yɛla pʋam, dee tɔgra yetɔg-sɛba n ka narɩ ba
+        tɔgɛ.
+      sbs: 0.7142
+      gen_sec: 14.08
+      ref_sec: 12.22
+      cer: 0.2199
+      wer: 0.5676
+    bible_00027:
+      source: bible
+      text: 'Ẽŋa ĩyã tɩ la gʋlsɛ Nawẽnnɛ gõŋɔ pʋam tɔgɛ yetɩ: ‹Kug-sɛka tɩ yãma mẽtba zagsɛ la.'
+      sbs: 0.6962
+      gen_sec: 6.49
+      ref_sec: 5.46
+      cer: 0.3175
+      wer: 0.75
+    bible_00028:
+      source: bible
+      text: Apolɩ sose yetɩ, ba basɛ tɩ na-keko di a sarɩya.
+      sbs: 0.6101
+      gen_sec: 3.93
+      ref_sec: 4.06
+      cer: 0.3889
+      wer: 1.5
+    bible_00029:
+      source: bible
+      text: ” Ti dunkiima la ihege kabela yɛa, ta paaɛ nyɛ Mɛɛri la Yosefe, gee nyɛ bia la me ti ka gãa
+        duhi dia dɔɔ la puan.
+      sbs: 0.7439
+      gen_sec: 8.96
+      ref_sec: 8.26
+      cer: 0.6429
+      wer: 0.8
+    bible_00030:
+      source: bible
+      text: ” Ti seem ka bɔna tinsuŋan la, bii timpaberɛ wa zuo, bii timpaberɛ wa tiŋa tiŋa ha, wan taam
+        lakɛ gɔŋɔ la bihɛ ku puan.
+      sbs: 0.7459
+      gen_sec: 9.56
+      ref_sec: 7.92
+      cer: 0.5333
+      wer: 0.8333
+    bible_00031:
+      source: bible
+      text: ” Mam ze la Yinɛ nɛŋan, gee ti a tum mam na, ti n tari yelesunɛ wa na bo fum.
+      sbs: 0.7129
+      gen_sec: 5.55
+      ref_sec: 14.94
+      cer: 0.4815
+      wer: 0.6842
+    bible_00032:
+      source: bible
+      text: Mɛta wuu dela a bihɛ suŋa en wan mɛ seem dɔgelɛ de zuo.
+      sbs: 0.6475
+      gen_sec: 4.18
+      ref_sec: 5.58
+      cer: 0.2381
+      wer: 0.6154
+    bible_00033:
+      source: bible
+      text: Pɔɔl tɔgɛ poe a mɛŋa Agiripa nɛŋan.
+      sbs: 0.5802
+      gen_sec: 2.82
+      ref_sec: 4.06
+      cer: 0.3214
+      wer: 0.7143
+    bible_00034:
+      source: bible
+      text: Azezi n de nõor-bĩŋre paalga kãabgɔ kẽema.
+      sbs: 0.5384
+      gen_sec: 3.93
+      ref_sec: 3.24
+      cer: 0.4118
+      wer: 1.2857
+    bible_00035:
+      source: bible
+      text: Nawẽnnɛ Sɩa la bɔɔrɩ nẽra woo la bɔa nẽrba la wuu sõŋrɛ ĩyã.
+      sbs: 0.7124
+      gen_sec: 4.61
+      ref_sec: 3.56
+      cer: 0.4255
+      wer: 0.6923
+    bible_00036:
+      source: bible
+      text: ” Yezu en wum ŋwana la, a yele en yeti, “Yele deyima n kelum pɔɛ hɔ.
+      sbs: 0.7094
+      gen_sec: 5.12
+      ref_sec: 8.2
+      cer: 0.25
+      wer: 0.6
+    bible_00037:
+      source: bible
+      text: Ti Faa Sia la pirɛ ba zaa, ti ba pɔhɛ tɔgera yetɔgesaahi yima yima, wuu Faa Sia n bo ba paŋa
+        seem la.
+      sbs: 0.7479
+      gen_sec: 7.85
+      ref_sec: 9.4
+      cer: 0.4868
+      wer: 0.6087
+    bible_00038:
+      source: bible
+      text: » Bɛla, nẽr-sɛka da wẽ yõogɔ nẽrsaala ĩyã.
+      sbs: 0.6888
+      gen_sec: 3.41
+      ref_sec: 8.98
+      cer: 0.2581
+      wer: 0.7143
+    bible_00039:
+      source: bible
+      text: Ba kɔɔm yele mam mɛ ti galehi en boi ya puan.
+      sbs: 0.7027
+      gen_sec: 3.58
+      ref_sec: 5.8
+      cer: 0.4412
+      wer: 0.6364
+    bible_00040:
+      source: bible
+      text: La Sɩa ẽŋa mẽŋa n bɔɔrɩ nẽra ayɩla bɔa tɩ a bɔɔra Nawẽnnɛ sɩra zozoe, dee bɔɔra ayẽma
+        pãŋa tɩ a botɩ bãadõma yẽta ĩmãasʋm.
+      sbs: 0.7272
+      gen_sec: 9.9
+      ref_sec: 9.02
+      cer: 0.2708
+      wer: 0.96
+    bible_00041:
+      source: bible
+      text: N suurɔ wa, yamam en tari ninkɔɔra seem wa sirum nam Daana Yezu Kiresta, en de suŋa daana?
+      sbs: 0.7219
+      gen_sec: 6.83
+      ref_sec: 10.16
+      cer: 0.1429
+      wer: 0.5
+    bible_00042:
+      source: bible
+      text: La nẽrba basɛba n daan tɔgɛ Wẽnde-kãtɛ la yelle yetɩ, ba dɩkɛ la kug-sõma mẽ ẽ, dee
+        dɩkɛ bɔa tɩ ba bɔ Nawẽnnɛ malgɛ ẽ, tɩ a ãna sõŋa sõŋa.
+      sbs: 0.7155
+      gen_sec: 10.58
+      ref_sec: 7.84
+      cer: 0.301
+      wer: 0.9
+    bible_00043:
+      source: bible
+      text: Ãne n boe yãma pʋam n tã wʋn paasɛ a vɔm woglʋm fẽfẽe ẽn fablɩ la ĩyã?
+      sbs: 0.7032
+      gen_sec: 5.72
+      ref_sec: 5.9
+      cer: 0.3585
+      wer: 0.8235
+    bible_00044:
+      source: bible
+      text: Asɩra, tõma ãn wʋ yũuŋ-yẽlga bɔ Nawẽnnɛ, tõma n mõolɩ Krisi kõa bɔɔra nẽr-sɛba n
+        yẽtɩ fãarɛ, la nẽr-sɛba n sãanɩ la.
+      sbs: 0.7345
+      gen_sec: 9.3
+      ref_sec: 8.38
+      cer: 0.3068
+      wer: 0.9091
+    bible_00045:
+      source: bible
+      text: Nananawa, fum suuɔ Elizabɛte la a kuregerɛ la zaa, tari la puurɛ, ti bia la dɛna budibela,
+        a ŋmarehi siyoobe en ŋwana.
+      sbs: 0.7223
+      gen_sec: 9.9
+      ref_sec: 8.96
+      cer: 0.4239
+      wer: 0.7727
+    bible_00046:
+      source: bible
+      text: Yãma mõrgɛ sẽnna nẽŋa mɛ, ya nãmsrɩ mam yʋʋrɛ la ĩyã mɛ, dee ka basɛ tɩ ya bʋraanɛ
+        booge.
+      sbs: 0.6557
+      gen_sec: 6.91
+      ref_sec: 5.52
+      cer: 0.2941
+      wer: 0.6842
+    bible_00047:
+      source: bible
+      text: Tɩ Pebila la lakɛ bõnɔ bʋyoobɩ dãana n tabɛ la, tɩ tẽŋa mĩim zozoe, tɩ wʋntɛɛŋa lebge
+        lika wʋ tãn-sabga, dee tɩ wõrga lebge mõlga wʋ zɩɩm na.
+      sbs: 0.6805
+      gen_sec: 11.43
+      ref_sec: 8.64
+      cer: 0.2936
+      wer: 0.8571
+    bible_00048:
+      source: bible
+      text: Nãasɛ-ya Nawẽnnɛ.
+      sbs: 0.5794
+      gen_sec: 1.54
+      ref_sec: 3.6
+      cer: 0.4286
+      wer: 3.0
+    bible_00049:
+      source: bible
+      text: Tooro la daan nãmsɛ tõma mɛ zooge gãŋɛ tõma pãŋa, tɩ tõma daan põn ka le tara pʋtẽerɛ
+        tɩ tõma wʋn vɔa.
+      sbs: 0.7253
+      gen_sec: 8.11
+      ref_sec: 6.28
+      cer: 0.2405
+      wer: 0.8182
+    bible_00050:
+      source: bible
+      text: Yezu yi a yia zahereba.
+      sbs: 0.5783
+      gen_sec: 2.05
+      ref_sec: 14.92
+      cer: 0.4444
+      wer: 0.8
+    bible_00051:
+      source: bible
+      text: Ŋwana ti nɛreba kan baŋɛ ya nɔlurɛ la, gee ya Sɔ la en nyɛti sɛla en sugɛ la maa.
+      sbs: 0.6727
+      gen_sec: 5.8
+      ref_sec: 10.62
+      cer: 0.2131
+      wer: 0.6316
+    bible_00052:
+      source: bible
+      text: La mam yetɩ ya mɛ tɩ, baa naba Asalomõ naam n yʋʋn tarɩ pãŋa la, a yʋʋn ka tãagɛ yɛ fuugo
+        n ãn sõŋa wʋ mõ-puugo ayɩla.
+      sbs: 0.7421
+      gen_sec: 8.7
+      ref_sec: 9.3
+      cer: 0.3068
+      wer: 0.6296
+    bible_00053:
+      source: bible
+      text: Lan de seem na, mam wʋn basɛ ba koŋre la taalɛ mɛ.
+      sbs: 0.6205
+      gen_sec: 3.67
+      ref_sec: 3.9
+      cer: 0.4324
+      wer: 0.5
+    bible_00054:
+      source: bible
+      text: Ti Pɔɔl lerege ba yeti, “Ya iti la bem n bala, ya kele mɛ Sagena mam suure?
+      sbs: 0.7078
+      gen_sec: 5.8
+      ref_sec: 5.78
+      cer: 0.3455
+      wer: 0.7647
+    bible_00055:
+      source: bible
+      text: Asɩra, tõma n daan paagɛ Masedʋanɩ na, tõma daan ka yẽ voosgo baa fẽfẽe.
+      sbs: 0.6886
+      gen_sec: 5.72
+      ref_sec: 5.72
+      cer: 0.2857
+      wer: 0.7143
+    bible_00056:
+      source: bible
+      text: Ti Yuuduma la me paahɛ ba nuurɛ yeti, sɛla woo ti ba yele la n kɔɔm bala ti ba tɔgɛ la.
+      sbs: 0.7496
+      gen_sec: 6.23
+      ref_sec: 6.28
+      cer: 0.2923
+      wer: 0.6667
+    bible_00057:
+      source: bible
+      text: Yãma n boorɩ tɩ nẽrba ɩta seem bɔɔra ya la, yãma mẽ ɩta bɛla bɔɔra ba.
+      sbs: 0.7028
+      gen_sec: 5.21
+      ref_sec: 5.16
+      cer: 0.2264
+      wer: 0.625
+    bible_00058:
+      source: bible
+      text: A lebge la zãŋa, a ka le tara yõorɔ, a de la ba lobe ẽ basɛ yẽŋa, tɩ nẽrba nẽ ẽ la
+        nãma.
+      sbs: 0.7563
+      gen_sec: 6.83
+      ref_sec: 6.28
+      cer: 0.2097
+      wer: 0.5652
+    bible_00059:
+      source: bible
+      text: Pɔɔl paalɛ lan iŋɛ en seem.
+      sbs: 0.5592
+      gen_sec: 2.05
+      ref_sec: 3.38
+      cer: 0.4762
+      wer: 0.8333
+    bible_00060:
+      source: bible
+      text: Seere en sɔi la, yia nɔpuulegɔ la yuum han ka tari ni tuure, la ka le pakɛ ni ti ba le ɛɛra
+        nɔpuulegɔ buyi.
+      sbs: 0.7349
+      gen_sec: 8.53
+      ref_sec: 8.82
+      cer: 0.3827
+      wer: 0.7917
+    bible_00061:
+      source: bible
+      text: Tɩ fuugo la n yuli Wẽnde-kãtɛ la pʋam beŋe zẽe-sõŋɔ la ãagɛ pʋsʋka.
+      sbs: 0.6565
+      gen_sec: 5.72
+      ref_sec: 4.96
+      cer: 0.3846
+      wer: 0.9231
+    bible_00062:
+      source: bible
+      text: Mam ka boorɩ tɩ m wen doose bɩsɛ ya dee tole, mam tarɩ pʋtẽerɛ tɩ mam wʋn bɔna ya zẽam yuuge,
+        Zuudãana la sãn bɔ mam sore.
+      sbs: 0.7448
+      gen_sec: 9.22
+      ref_sec: 7.84
+      cer: 0.2043
+      wer: 0.5926
+    bible_00063:
+      source: bible
+      text: » Bɛla tɩ ba wi ba yetɩ, ba da le sakɛ tɩ ba tɔgɛ, dee zãsʋm nẽrba Azezi yɛla.
+      sbs: 0.709
+      gen_sec: 5.63
+      ref_sec: 4.3
+      cer: 0.25
+      wer: 0.7222
+    bible_00064:
+      source: bible
+      text: Bihɛ ya Izirale nɛreba wa, ba sɛba en diti kaabegɔ dia la, dagi la taaba kaabegɔ bimbine la
+        zuo?
+      sbs: 0.7006
+      gen_sec: 7.85
+      ref_sec: 12.9
+      cer: 0.5333
+      wer: 0.8421
+    bible_00065:
+      source: bible
+      text: Seere en sɔi la, la kan taam iŋɛ ti lɔlehi la buuhi ziim taam saalum beem.
+      sbs: 0.7483
+      gen_sec: 6.23
+      ref_sec: 4.74
+      cer: 0.4737
+      wer: 0.875
+    bible_00066:
+      source: bible
+      text: La sɛla tɩ ya dɩkɛ makɛ bɔ nẽrba la, ẽŋa tɩ Nawẽnnɛ wʋn dɩkɛ makɛ bɔ ya.
+      sbs: 0.7467
+      gen_sec: 5.12
+      ref_sec: 4.6
+      cer: 0.2407
+      wer: 0.5294
+    bible_00067:
+      source: bible
+      text: Ti ba bahɛ ti buraahi sina wa zeele tuntuneba la nɛŋan, ti ba puuhɛ, gee dikɛ ba nuuhi pagelɛ
+        ba zuto.
+      sbs: 0.7589
+      gen_sec: 8.11
+      ref_sec: 7.16
+      cer: 0.3544
+      wer: 0.619
+    bible_00068:
+      source: bible
+      text: Ŋwani ti fum nyɛta sɔkɔ la n boi fum mabia niho puan, gee pun ka mina ti dɔɔ boi fum mɛŋa
+        niho puan?
+      sbs: 0.7082
+      gen_sec: 7.85
+      ref_sec: 6.1
+      cer: 0.6316
+      wer: 0.8261
+    bible_00069:
+      source: bible
+      text: Ya han ni lagehɛ taaba na, ya ni ka lagehɛ na ti ya di la Daana dia la.
+      sbs: 0.6869
+      gen_sec: 5.21
+      ref_sec: 6.54
+      cer: 0.2885
+      wer: 0.6111
+    bible_00070:
+      source: bible
+      text: La yʋʋn mẽ de la bɛla la Arahabɩ n de pɔka n ɩtɩ yalsɩ la.
+      sbs: 0.6781
+      gen_sec: 4.01
+      ref_sec: 3.7
+      cer: 0.2791
+      wer: 0.4667
+    bible_00071:
+      source: bible
+      text: La Azezi-krisi lemŋo daarɛ, nẽra woo n tõm seem wʋn puke mɛ peelem pʋam.
+      sbs: 0.715
+      gen_sec: 5.97
+      ref_sec: 5.82
+      cer: 0.2321
+      wer: 0.7857
+    bible_00072:
+      source: bible
+      text: “Ya han luta nuurɛ, da ni zuŋe ya nɛhi wuu birekɔgenduma la, seere en sɔi la, ba ni zuŋe ba
+        nɛhi la bala ti ba paalɛ la nɛreba ti bamam luti la nuurɛ.
+      sbs: 0.7094
+      gen_sec: 11.61
+      ref_sec: 11.84
+      cer: 0.6195
+      wer: 0.8182
+    bible_00073:
+      source: bible
+      text: Bala ti Yinɛ vom la wan vole sɛla n puuri la.
+      sbs: 0.6255
+      gen_sec: 3.24
+      ref_sec: 3.06
+      cer: 0.2647
+      wer: 0.3636
+    bible_00074:
+      source: bible
+      text: Yinɛ dela yelemɛŋerɛ daana, a kan bahɛ ti makerɛ paaɛ ya gaŋɛ ya paŋa tɛka.
+      sbs: 0.728
+      gen_sec: 5.97
+      ref_sec: 12.7
+      cer: 0.2712
+      wer: 0.8667
+    bible_00075:
+      source: bible
+      text: Mam tẽesɛ tɩ Nawẽnnɛ looge tõma sɛba n de a Tõntõnɩba la, tɩ tɩ bɔna la nẽrba la wuu
+        poorʋm, ãna wʋ nẽrba tɩ ba di ba sarɩya yetɩ ba kʋ ba, tɩ dũnia dõma wuu bɩsra dee laara,
+        nẽrsaalba, la malɛkadõma wuu.
+      sbs: 0.75
+      gen_sec: 15.36
+      ref_sec: 13.2
+      cer: 0.2436
+      wer: 0.5116
+    bible_00076:
+      source: bible
+      text: Bɛla yãma botɩ ba kʋ la yõvore dãana, ẽŋa tɩ Nawẽnnɛ vooge.
+      sbs: 0.6854
+      gen_sec: 5.03
+      ref_sec: 3.98
+      cer: 0.2174
+      wer: 0.6667
+    bible_00077:
+      source: bible
+      text: Tɩ mam le yẽ naam bĩmbĩnne kãtɛ n de pɛɛlga, la sɛka n zĩ a zuo.
+      sbs: 0.6874
+      gen_sec: 4.95
+      ref_sec: 3.6
+      cer: 0.2553
+      wer: 0.5
+    bible_00078:
+      source: bible
+      text: Ɩsrayɛlɩ dõma n bɔ Nawẽnnɛ sɩra la ĩyã, tɩ ba yʋʋn sẽŋɛ kaagɛ Zeriko tẽŋa dabsa ayopɔɩ,
+        tɩ a lalsɩ lui.
+      sbs: 0.6923
+      gen_sec: 8.11
+      ref_sec: 6.02
+      cer: 0.225
+      wer: 0.5238
+    bible_00079:
+      source: bible
+      text: Seere en sɔi la bamam woo mi suŋa suŋa ti Yɔn dela nɔtɔgeha.
+      sbs: 0.6769
+      gen_sec: 4.95
+      ref_sec: 5.1
+      cer: 0.1915
+      wer: 0.6923
+    bible_00080:
+      source: bible
+      text: Ba bɩsrɩ tõma wʋ nẽrba n ka tarɩ sɛla, dee tɩ tõma tara sɛla woo.
+      sbs: 0.7355
+      gen_sec: 4.44
+      ref_sec: 4.08
+      cer: 0.2857
+      wer: 0.6
+    bible_00081:
+      source: bible
+      text: A yeti, “Tiŋa kayima puan ti gakera ayima bɔna bini, ka zɔta Yinɛ, bii a dikɛ nɛra yi sɛla.
+      sbs: 0.7234
+      gen_sec: 7.0
+      ref_sec: 6.8
+      cer: 0.3088
+      wer: 0.7895
+    bible_00082:
+      source: bible
+      text: ” Ti ba bahɛ ti nɛreba la gbirege, ta ta kiinduma, la gɔnmiineba la, ti la ka yuue ti ba kaaɛ
+        Siteven mum, nyɔkɛ en, tari en waam kiinduma zian na.
+      sbs: 0.7547
+      gen_sec: 11.43
+      ref_sec: 13.06
+      cer: 0.5636
+      wer: 0.7667
+    bible_00083:
+      source: bible
+      text: Ti bunvɔɔhi sinaahi wa ayima woo tari la kelumpagehi siyoobe, pirɛ la nini ba yiŋa, la ba
+        puan.
+      sbs: 0.7403
+      gen_sec: 8.02
+      ref_sec: 8.68
+      cer: 0.3067
+      wer: 0.8889
+    bible_00084:
+      source: bible
+      text: ” Ti a yele ba yeti, “Mini ya suŋa ti seem da pãahɛ ya.
+      sbs: 0.6914
+      gen_sec: 3.93
+      ref_sec: 6.06
+      cer: 0.3947
+      wer: 0.7692
+    bible_00085:
+      source: bible
+      text: Mam la n zahereba wan di azɔɛtole deeŋo la fum yire.
+      sbs: 0.6645
+      gen_sec: 4.52
+      ref_sec: 4.34
+      cer: 0.3415
+      wer: 0.5455
+    bible_00086:
+      source: bible
+      text: Tu nɔya maam mɛ gee tu suya ka guuhi.
+      sbs: 0.6549
+      gen_sec: 2.56
+      ref_sec: 5.7
+      cer: 0.2143
+      wer: 0.7778
+    bible_00087:
+      source: bible
+      text: Bala zuo, wuu Faa Sia la en yele seem ti.
+      sbs: 0.7227
+      gen_sec: 3.16
+      ref_sec: 4.86
+      cer: 0.3
+      wer: 0.7
+    bible_00088:
+      source: bible
+      text: La mam wʋn weege bɔna la Efɛɛzɩ tẽŋa wã halɩ ka paagɛ Pãntekɔtɩ kibsa daarɛ.
+      sbs: 0.6863
+      gen_sec: 6.14
+      ref_sec: 5.2
+      cer: 0.3115
+      wer: 0.6667
+    bible_00089:
+      source: bible
+      text: Tɩ beere wiige, tɩ tõma paagɛ Rɔdɩ zeele bilam sẽŋɛ Patara.
+      sbs: 0.6788
+      gen_sec: 5.21
+      ref_sec: 3.82
+      cer: 0.234
+      wer: 0.7273
+    bible_00090:
+      source: bible
+      text: Fum suuɔ bii taya han ɛɛra beele, ka tara a nuurɛ dia, ti ya ayima yele en yeti, “Kina la
+        sumaahum.
+      sbs: 0.733
+      gen_sec: 7.51
+      ref_sec: 13.56
+      cer: 0.4324
+      wer: 0.9048
+    bible_00091:
+      source: bible
+      text: Namehegɔ la tuunkãra yuuŋɔ, gɔgara dabeha zoe zoe, kom la konyuuro, saŋa zoe zoe ka tara wan
+        di, ɔɔrɔ la beele puan.
+      sbs: 0.7529
+      gen_sec: 9.3
+      ref_sec: 13.98
+      cer: 0.2111
+      wer: 0.4091
+    bible_00092:
+      source: bible
+      text: Puuhɛ ya ti ya zua wa da ta waam sapɔɔlegɔ saŋa bii voohego dabeherɛ.
+      sbs: 0.6992
+      gen_sec: 5.72
+      ref_sec: 6.0
+      cer: 0.4
+      wer: 0.7143
+    bible_00093:
+      source: bible
+      text: Kiresta kaabɛ la buyina zaa zaa.
+      sbs: 0.596
+      gen_sec: 2.47
+      ref_sec: 4.5
+      cer: 0.3846
+      wer: 1.0
+    bible_00094:
+      source: bible
+      text: ” Bala mɛa ti a dikɛ wula, ban di yuuŋɔ baahɛ la, yeti “Wula wa dela mam ziim la nɔpuulegɔ
+        paalega.
+      sbs: 0.7237
+      gen_sec: 7.34
+      ref_sec: 9.54
+      cer: 0.1757
+      wer: 0.35
+    bible_00095:
+      source: bible
+      text: Pɔkõ-sɛka tɩ ba tã wʋn gʋlsɛ a yʋʋrɛ paasɛ pɔkõpa gõŋɔ pʋam de la pɔkõ-sɛka n paagɛ yʋʋma
+        pisyoobɩ, dee ele sɩra ayɩla mãa.
+      sbs: 0.7231
+      gen_sec: 9.39
+      ref_sec: 8.34
+      cer: 0.3021
+      wer: 0.9583
+    bible_00096:
+      source: bible
+      text: Mam mi ti mam tɔgeri bɔɔra la yɛm duma.
+      sbs: 0.6957
+      gen_sec: 2.99
+      ref_sec: 3.24
+      cer: 0.3667
+      wer: 0.5556
+    bible_00097:
+      source: bible
+      text: A pun zigɛ mɛ ti a galum Puuhegɔ yire la, ti tumam me nyɔkɛ en.
+      sbs: 0.6914
+      gen_sec: 4.78
+      ref_sec: 4.88
+      cer: 0.2128
+      wer: 0.4
+    bible_00098:
+      source: bible
+      text: Tõma ãn wʋ zɔllɔ Krisi ĩyã, la yãma tẽesɛ tɩ yãma de la yɛm dõma Krisi doosgo pʋam.
+      sbs: 0.7442
+      gen_sec: 6.91
+      ref_sec: 4.9
+      cer: 0.3906
+      wer: 0.9444
+    bible_00099:
+      source: bible
+      text: Yelemɛŋerɛ, ba ka naam buraa yehe pɔka puan, gee pɔka ti ba naam yehe buraa puan.
+      sbs: 0.7194
+      gen_sec: 6.4
+      ref_sec: 7.2
+      cer: 0.127
+      wer: 0.6875
+    jw_00000:
+      source: jw
+      text: To wan eŋɛ la wani le tara pupeelum?
+      sbs: 0.5679
+      gen_sec: 3.07
+      ref_sec: 4.24
+      cer: 0.2857
+      wer: 0.5
+    jw_00001:
+      source: jw
+      text: Kɔ’ɛ Ho Puti’irɛ Ti Yehowa Puurɛ Pee
+      sbs: 0.6128
+      gen_sec: 2.9
+      ref_sec: 4.38
+      cer: 0.6429
+      wer: 0.8571
+    jw_00002:
+      source: jw
+      text: Mabiisi La Eŋɛ La Wani?
+      sbs: 0.6363
+      gen_sec: 2.13
+      ref_sec: 5.51
+      cer: 0.3333
+      wer: 0.6
+    jw_00003:
+      source: jw
+      text: Yelese’a Ti Ho Pɔsɛ Zamesɛ Baabule Poan La Wan Ta’an Kelum Soŋɛ Hɔ
+      sbs: 0.6383
+      gen_sec: 5.38
+      ref_sec: 6.97
+      cer: 0.2885
+      wer: 0.6923
+    jw_00004:
+      source: jw
+      text: To wan zamesɛ baŋɛ Kristakɔma n wan eŋɛ se’em ta’an na’asɛ Yehowa ba pɔɣedire daarɛ.
+      sbs: 0.5828
+      gen_sec: 6.91
+      ref_sec: 8.05
+      cer: 0.2424
+      wer: 0.5333
+    jw_00005:
+      source: jw
+      text: PETER N YUUN TUE SE’EM GE KELUM NYƐ KÃ’A
+      sbs: 0.5679
+      gen_sec: 2.99
+      ref_sec: 4.91
+      cer: 0.4333
+      wer: 0.6667
+    jw_00006:
+      source: jw
+      text: To wan eŋɛ la wani ta’an ze’a kankaŋi nana Yehowa lɔɔ, la a pa’alegɔ?
+      sbs: 0.6464
+      gen_sec: 5.38
+      ref_sec: 6.52
+      cer: 0.4706
+      wer: 0.7857
+    jw_00007:
+      source: jw
+      text: TIREGƐ MAALƐ YELE LA
+      sbs: 0.5906
+      gen_sec: 1.79
+      ref_sec: 3.18
+      cer: 0.5294
+      wer: 1.0
+    jw_00008:
+      source: jw
+      text: TI’ISA TAƔESA NAAYINƐ PUTI’IRƐ
+      sbs: 0.6072
+      gen_sec: 2.65
+      ref_sec: 4.53
+      cer: 0.28
+      wer: 1.75
+    jw_00009:
+      source: jw
+      text: SOŊƐ HO BAABULE ZAMESEGƆDAANA TI A TA’AN ŊMIBE YAARƐ POAN
+      sbs: 0.6494
+      gen_sec: 4.95
+      ref_sec: 5.25
+      cer: 0.234
+      wer: 1.0
+    jw_00010:
+      source: jw
+      text: geele na’am mɔɔlegɔ tuuma la se’em?
+      sbs: 0.5336
+      gen_sec: 2.9
+      ref_sec: 4.0
+      cer: 0.4074
+      wer: 0.8333
+    jw_00011:
+      source: jw
+      text: Ho dɛna Kristabia n bi kãsegɛ vo’osum poan vuurɛ?
+      sbs: 0.6428
+      gen_sec: 4.18
+      ref_sec: 4.53
+      cer: 0.1538
+      wer: 0.6667
+    jw_00012:
+      source: jw
+      text: SODENI POAN TI KEENDOMA WAN TA’AN TƆƔESA GIDEON  . . .
+      sbs: 0.7548
+      gen_sec: 4.27
+      ref_sec: 4.5
+      cer: 0.2051
+      wer: 1.125
+    jw_00013:
+      source: jw
+      text: Puliŋa tabelɛ gu mam la mam n tukeri se’em la zuo?
+      sbs: 0.5897
+      gen_sec: 4.01
+      ref_sec: 4.96
+      cer: 0.5
+      wer: 0.8182
+    jw_00014:
+      source: jw
+      text: Soŋɛ Baabule Zamesegɔdoma Ti Ba Kɔ’ɛ Ba Puti’irɛ Pu’usa Yehowa
+      sbs: 0.6225
+      gen_sec: 5.21
+      ref_sec: 5.49
+      cer: 0.44
+      wer: 0.7
+    jw_00015:
+      source: jw
+      text: Sarɔtuni poan ti Nazardoma la yuun eŋɛ pa’alɛ ti ba ãregeri bamea ge me tara sukpe’ene?
+      sbs: 0.615
+      gen_sec: 7.34
+      ref_sec: 8.51
+      cer: 0.3188
+      wer: 1.0625
+    jw_00016:
+      source: jw
+      text: Bisɛ ya vidiyo jw.org poan ge nyaa sɔsɛ ya de yele bii gulesɛ yan zamesɛ sɛla vidiyo la poan.
+      sbs: 0.6578
+      gen_sec: 7.94
+      ref_sec: 9.32
+      cer: 0.3836
+      wer: 0.6316
+    jw_00017:
+      source: jw
+      text: LA SAN NARA TI TO KA’AM NƐRA
+      sbs: 0.5469
+      gen_sec: 1.96
+      ref_sec: 3.56
+      cer: 0.0952
+      wer: 0.2857
+    jw_00018:
+      source: jw
+      text: Malemadoma la n yuun boi Yerusalem pu’usegɔ yire la poan la san ni kaabɛ dusi la ba’asɛ, ba
+        ni ka’ɛ ziim la basɛ la bɛ?
+      sbs: 0.6705
+      gen_sec: 9.22
+      ref_sec: 9.95
+      cer: 0.3111
+      wer: 0.72
+    jw_00019:
+      source: jw
+      text: TON WAN EŊƐ SE’EM KELUM TARA PUPEELUM
+      sbs: 0.6281
+      gen_sec: 3.16
+      ref_sec: 4.17
+      cer: 0.4333
+      wer: 0.8571
+    jw_00020:
+      source: jw
+      text: ANA DU’A DU’A LA HO NƆŊERƐ NAAYINƐ LA
+      sbs: 0.5776
+      gen_sec: 2.65
+      ref_sec: 4.62
+      cer: 0.1429
+      wer: 0.375
+    jw_00021:
+      source: jw
+      text: Ho san basɛ ti ho puti’irɛ bɔna hon nɔŋɛ Yehowa la nɛreba la poan
+      sbs: 0.5802
+      gen_sec: 5.21
+      ref_sec: 6.52
+      cer: 0.2157
+      wer: 0.4286
+    jw_00022:
+      source: jw
+      text: TI’ISA TAƔESA YEHOWA PAŊA LA YELE
+      sbs: 0.5333
+      gen_sec: 3.07
+      ref_sec: 3.92
+      cer: 0.6667
+      wer: 1.6667
+    jw_00023:
+      source: jw
+      text: BA YUUN DITI LA SƐƐRA BƆ’ƆRA YEHOWA
+      sbs: 0.5987
+      gen_sec: 2.73
+      ref_sec: 4.24
+      cer: 0.3214
+      wer: 0.8571
+    jw_00024:
+      source: jw
+      text: Mina ti nɛra ta’an malum yalumfɔɔra bisega ge me bɔkɛ eŋa n nari ti a tiregɛ se’em ta’an basɛ
+        yelebe’o wa.
+      sbs: 0.6197
+      gen_sec: 8.53
+      ref_sec: 8.99
+      cer: 0.358
+      wer: 0.8571
+    jw_00025:
+      source: jw
+      text: TI’ISƐ SOŊA SOŊA
+      sbs: 0.5941
+      gen_sec: 1.62
+      ref_sec: 3.06
+      cer: 0.6154
+      wer: 1.0
+    jw_00026:
+      source: jw
+      text: BAABULE YELESUM
+      sbs: 0.5829
+      gen_sec: 1.45
+      ref_sec: 3.25
+      cer: 0.3571
+      wer: 1.5
+    jw_00027:
+      source: jw
+      text: “Teregɛ Ya Mɛ La Ya Tara Nɔyenɛ La Te Sea La Bɔ’ɔra” La
+      sbs: 0.6078
+      gen_sec: 3.67
+      ref_sec: 11.2
+      cer: 0.375
+      wer: 0.5385
+    jw_00028:
+      source: jw
+      text: To wan eŋɛ la wani basɛ ti la ana saama buɣa buɣa ba san wa’an to zamesegɔ na?
+      sbs: 0.6161
+      gen_sec: 5.97
+      ref_sec: 6.73
+      cer: 0.2034
+      wer: 0.5556
+    jw_00029:
+      source: jw
+      text: maasum tomea gura Tiirɛ Dia la?
+      sbs: 0.5521
+      gen_sec: 2.65
+      ref_sec: 3.78
+      cer: 0.36
+      wer: 0.6667
+    jw_00030:
+      source: jw
+      text: mina ba tɔregɔ beene ge me siregera bamea?
+      sbs: 0.5808
+      gen_sec: 3.75
+      ref_sec: 5.05
+      cer: 0.6176
+      wer: 1.625
+    jw_00031:
+      source: jw
+      text: Zusega la a Yelesum la.
+      sbs: 0.6203
+      gen_sec: 1.88
+      ref_sec: 4.81
+      cer: 0.0556
+      wer: 0.2
+    jw_00032:
+      source: jw
+      text: NYƐTA YA NƐŊA BƆ’ƆRA TAABA
+      sbs: 0.5926
+      gen_sec: 1.88
+      ref_sec: 4.14
+      cer: 0.2857
+      wer: 1.2
+    jw_00033:
+      source: jw
+      text: TON WAN EŊƐ SE’EM KELUM TARA PUPEELUM
+      sbs: 0.6147
+      gen_sec: 3.16
+      ref_sec: 4.24
+      cer: 0.4333
+      wer: 0.8571
+    jw_00034:
+      source: jw
+      text: Israeldoma la n yuun boi pɔɣentia la poan la, ba yuun tari dia pa’asɛ mana la kɔɔresi poan
+        mɛ?
+      sbs: 0.6522
+      gen_sec: 7.51
+      ref_sec: 9.01
+      cer: 0.274
+      wer: 0.4211
+    jw_00035:
+      source: jw
+      text: Yezu yuun soŋɛ nɛreba la wani ti ba baŋɛ ti ba dela tuulum nɛreba bo Naayinɛ?
+      sbs: 0.6263
+      gen_sec: 6.23
+      ref_sec: 11.8
+      cer: 0.4262
+      wer: 0.75
+    jw_00036:
+      source: jw
+      text: DA TƆƔESA NABA YEHOAS
+      sbs: 0.5708
+      gen_sec: 1.88
+      ref_sec: 3.52
+      cer: 0.1111
+      wer: 1.0
+    jw_00037:
+      source: jw
+      text: Mabiisi wan ta’an eŋɛ la bem soŋɛ Kristakɔma sɛba n de nɛreyɔna bɔta ti ba ele bii di pɔɣeba?
+      sbs: 0.6474
+      gen_sec: 7.94
+      ref_sec: 8.22
+      cer: 0.1781
+      wer: 0.5263
+    jw_00038:
+      source: jw
+      text: Ton wan eŋɛ se’em ta’an tɔɣera Baabule yelemɛŋɛrɛ la soŋa ge me tara yelemɛŋɛrɛ.
+      sbs: 0.622
+      gen_sec: 7.0
+      ref_sec: 6.57
+      cer: 0.4531
+      wer: 0.9286
+    jw_00039:
+      source: jw
+      text: HO WAN TA’AN SOŊƐ EN?
+      sbs: 0.5575
+      gen_sec: 1.62
+      ref_sec: 3.49
+      cer: 0.6
+      wer: 1.0
+    jw_00040:
+      source: jw
+      text: HON TƐ̃RI?
+      sbs: 0.6389
+      gen_sec: 1.02
+      ref_sec: 3.04
+      cer: 0.5714
+      wer: 1.0
+    jw_00041:
+      source: jw
+      text: TO KEŊƐ ASIA TA TUM
+      sbs: 0.5314
+      gen_sec: 1.54
+      ref_sec: 4.0
+      cer: 0.6
+      wer: 1.2
+    jw_00042:
+      source: jw
+      text: To wan ta’an zamesɛ la bem yese Samson n yuun eŋɛ sɛla a tuure la poan la?
+      sbs: 0.6467
+      gen_sec: 5.63
+      ref_sec: 6.3
+      cer: 0.1964
+      wer: 0.4706
+    jw_00043:
+      source: jw
+      text: Lua bunɔ la wan basɛ ti to ta nyɛ la bem nyuurɔ beere sa’am?
+      sbs: 0.6662
+      gen_sec: 4.44
+      ref_sec: 7.86
+      cer: 0.4222
+      wer: 0.6429
+    jw_00044:
+      source: jw
+      text: BASƐ TI BAABULE LA KPEMESE HO GIILA
+      sbs: 0.6004
+      gen_sec: 3.16
+      ref_sec: 4.53
+      cer: 0.4828
+      wer: 1.2857
+    jw_00045:
+      source: jw
+      text: BEM N YUUN SOŊƐ PETER TI A KƆ’ƆN TIREGƐ?
+      sbs: 0.6763
+      gen_sec: 3.16
+      ref_sec: 4.36
+      cer: 0.3
+      wer: 0.5556
+    jw_00046:
+      source: jw
+      text: Yehowa Wan Soŋɛ Hɔ Ti Ho Ta’an Ŋmibe Yelese’ere Woo N Paɛ Hɔ
+      sbs: 0.5918
+      gen_sec: 5.12
+      ref_sec: 6.13
+      cer: 0.3043
+      wer: 0.6923
+    jw_00047:
+      source: jw
+      text: Ton wan eŋɛ se’em ta’an ka’am nɛra soŋa.
+      sbs: 0.5849
+      gen_sec: 3.07
+      ref_sec: 4.24
+      cer: 0.3103
+      wer: 0.875
+    jw_00048:
+      source: jw
+      text: Kpɛmesa Ya Taaba Giila Tansugere Zamesegɔ Poan
+      sbs: 0.581
+      gen_sec: 4.1
+      ref_sec: 4.43
+      cer: 0.225
+      wer: 1.5714
+    jw_00049:
+      source: jw
+      text: LA YUUN NARI TI BA GURA
+      sbs: 0.5676
+      gen_sec: 1.71
+      ref_sec: 3.18
+      cer: 0.2222
+      wer: 0.8333
+    jw_00050:
+      source: jw
+      text: Zamesɛ Sɛla Fɔɔra La Poan
+      sbs: 0.6903
+      gen_sec: 1.96
+      ref_sec: 4.29
+      cer: 0.1429
+      wer: 0.4
+    jw_00051:
+      source: jw
+      text: To wan ta’an tara puti’irɛ ti Yehowa san ta gãkera nɛreba beere sa’am, a wan tum sɛla n de
+        tontɔɔ.
+      sbs: 0.6661
+      gen_sec: 7.68
+      ref_sec: 8.08
+      cer: 0.2162
+      wer: 0.5
+    jw_00052:
+      source: jw
+      text: BEM N WAN EŊƐ?
+      sbs: 0.5913
+      gen_sec: 1.19
+      ref_sec: 3.01
+      cer: 0.6
+      wer: 0.5
+    jw_00053:
+      source: jw
+      text: To wan eŋɛ la wani ta’an kpɛmesa taaba giila ta’an ana wuu Nazardoma la?
+      sbs: 0.657
+      gen_sec: 5.55
+      ref_sec: 7.02
+      cer: 0.1786
+      wer: 0.5714
+    jw_00054:
+      source: jw
+      text: to wan eŋɛ la bem ta’an tara inkpeŋere?
+      sbs: 0.574
+      gen_sec: 3.33
+      ref_sec: 4.12
+      cer: 0.3333
+      wer: 0.5
+    jw_00055:
+      source: jw
+      text: SOŊƐ HO BAABULEZAMESEGƆDAANA LA TI A TARA NƆŊERƐ ZO’E ZO’E BƆ’ƆRA YEHOWA
+      sbs: 0.632
+      gen_sec: 6.23
+      ref_sec: 6.4
+      cer: 0.4655
+      wer: 0.9167
+    jw_00056:
+      source: jw
+      text: BENI N SƆI TI LA NARA TI TO VIISA NAAŊƆ LƆƔƆRƆ BISA?
+      sbs: 0.6101
+      gen_sec: 4.27
+      ref_sec: 4.24
+      cer: 0.35
+      wer: 0.75
+    jw_00057:
+      source: jw
+      text: BASƐ TI HO PUTI’IRƐ BƆNA HON NƆŊƐ YEHOWA LA NƐREBA LA POAN
+      sbs: 0.576
+      gen_sec: 4.69
+      ref_sec: 6.49
+      cer: 0.3696
+      wer: 0.6667
+    jw_00058:
+      source: jw
+      text: DA ZƆTA DABEEM TI HO ZUSƐ YEHOWA
+      sbs: 0.617
+      gen_sec: 2.73
+      ref_sec: 4.45
+      cer: 0.3077
+      wer: 1.1429
+    jw_00059:
+      source: jw
+      text: 'b FOOTE LA VUURƐ: Peter la zim lɔberiba basɛba n basɛ ba tuuma ge dɔla Yezu.'
+      sbs: 0.6664
+      gen_sec: 5.89
+      ref_sec: 7.72
+      cer: 0.1525
+      wer: 0.4375
+    jw_00060:
+      source: jw
+      text: Mam tabelɛ zɔɣera ge tukera?
+      sbs: 0.537
+      gen_sec: 2.47
+      ref_sec: 4.17
+      cer: 0.8261
+      wer: 1.4
+    jw_00061:
+      source: jw
+      text: SAAMA SAN WA’AN TO ZAMESEGƆ NA
+      sbs: 0.5966
+      gen_sec: 2.3
+      ref_sec: 3.37
+      cer: 0.4583
+      wer: 1.5
+    jw_00062:
+      source: jw
+      text: To zamesɛ la bem la Yezu n yuun isige Lazarus la?
+      sbs: 0.6028
+      gen_sec: 3.93
+      ref_sec: 4.74
+      cer: 0.2368
+      wer: 0.4545
+    jw_00063:
+      source: jw
+      text: YEHOWA TƐ̃RI TOMAM YELE LA WANI?
+      sbs: 0.6114
+      gen_sec: 2.9
+      ref_sec: 3.78
+      cer: 0.24
+      wer: 0.3333
+    jw_00064:
+      source: jw
+      text: Zamesɛ Yehowa Yɛla Zo’e Zo’e Naaŋɔ Lɔɣɔrɔ Poan
+      sbs: 0.611
+      gen_sec: 4.01
+      ref_sec: 4.38
+      cer: 0.2703
+      wer: 0.75
+    jw_00065:
+      source: jw
+      text: To wan eŋɛ la wani bo Yehowa pɛ̃ka sɛka n nari en?
+      sbs: 0.6024
+      gen_sec: 4.01
+      ref_sec: 4.43
+      cer: 0.3784
+      wer: 0.75
+    jw_00066:
+      source: jw
+      text: HON WAN ZAMESA BAABULE YETƆƔEBIŊ’A SE’EM
+      sbs: 0.5836
+      gen_sec: 3.58
+      ref_sec: 4.5
+      cer: 0.3636
+      wer: 0.6667
+    jw_00067:
+      source: jw
+      text: YELESE’A N PAARI TƆ TI LA NARA TI TO BASƐ TI TO SAKERƐ LA KPE’EM
+      sbs: 0.6663
+      gen_sec: 5.12
+      ref_sec: 5.37
+      cer: 0.25
+      wer: 0.6
+    jw_00068:
+      source: jw
+      text: Soŋɛ Nɛresɛba N Boti Ba Zamesɛ Naayinɛ Yɛla
+      sbs: 0.5807
+      gen_sec: 3.58
+      ref_sec: 4.09
+      cer: 0.2778
+      wer: 0.375
+    jw_00069:
+      source: jw
+      text: TO WAN NYƐ NYUURƆ TO SAN NANA YEHOWA PA’ALEGƆ
+      sbs: 0.5981
+      gen_sec: 3.5
+      ref_sec: 5.0
+      cer: 0.1111
+      wer: 0.3333
+    jw_00070:
+      source: jw
+      text: TI’ISƐ BISƐ HON WAN NYƐ NYUURƆ SE’EM HO SAN DITA SUGERI
+      sbs: 0.6179
+      gen_sec: 4.44
+      ref_sec: 5.03
+      cer: 0.2326
+      wer: 0.5455
+    jw_00071:
+      source: jw
+      text: TON WAN EŊƐ SE’EM TA’AN DEKƐ TOMEA DELUM YEHOWA
+      sbs: 0.6013
+      gen_sec: 4.01
+      ref_sec: 4.5
+      cer: 0.3784
+      wer: 0.5556
+    jw_00072:
+      source: jw
+      text: Ton wan ta’an zamesɛ sɛla malesi sɛba n tari yelemɛŋɛrɛ la zɛ’an.
+      sbs: 0.6069
+      gen_sec: 5.03
+      ref_sec: 5.77
+      cer: 0.4706
+      wer: 1.0
+    jw_00073:
+      source: jw
+      text: YELEDAAŊƆ ASE’A
+      sbs: 0.5749
+      gen_sec: 1.45
+      ref_sec: 3.59
+      cer: 0.6154
+      wer: 1.5
+    jw_00074:
+      source: jw
+      text: Ba ni soke sɛba n yeti ba muse ko’om la bem sokere ge beni n sɔi?
+      sbs: 0.6567
+      gen_sec: 4.95
+      ref_sec: 6.47
+      cer: 0.25
+      wer: 0.5625
+    jw_00075:
+      source: jw
+      text: 'Yele san daana tɔ, Baabule gulesegɔ zo’e zo’e boi mɛ n wan ta’an buɣelɛ to suure. Makerɛ:'
+      sbs: 0.6697
+      gen_sec: 7.34
+      ref_sec: 7.88
+      cer: 0.3582
+      wer: 0.7059
+    jw_00076:
+      source: jw
+      text: LA SAN KPE’EM TI HO ŊMIBE
+      sbs: 0.5479
+      gen_sec: 2.22
+      ref_sec: 3.59
+      cer: 0.3684
+      wer: 0.6667
+    jw_00077:
+      source: jw
+      text: YEHOWA BO’ORI TO LA ‘PAŊA LA KUNKOMA’ASUM TI TO TUNA’
+      sbs: 0.6614
+      gen_sec: 4.27
+      ref_sec: 6.04
+      cer: 0.275
+      wer: 0.7
+    jw_00078:
+      source: jw
+      text: BUNBILIPAALESI—YA WAN TA’AN TARA PUPEELUM YA VOM POAN
+      sbs: 0.5827
+      gen_sec: 4.52
+      ref_sec: 6.59
+      cer: 0.3182
+      wer: 1.0
+    jw_00079:
+      source: jw
+      text: Mam Pu’useri Yehowa La Basɛ Ti Mam Tara La Pupeelum Ge Me Zamesɛ Yɛla Zo’e Zo’e
+      sbs: 0.6272
+      gen_sec: 6.4
+      ref_sec: 7.69
+      cer: 0.4098
+      wer: 0.625
+    jw_00080:
+      source: jw
+      text: VIISƐ BAŊƐ BAABULE YELESE’A N KPE’EM LA
+      sbs: 0.5824
+      gen_sec: 3.41
+      ref_sec: 5.0
+      cer: 0.4839
+      wer: 1.0
+    jw_00081:
+      source: jw
+      text: ZAMESEGƆ YƐLA
+      sbs: 0.5813
+      gen_sec: 1.19
+      ref_sec: 3.3
+      cer: 0.5
+      wer: 1.5
+    jw_00082:
+      source: jw
+      text: To wan zamesɛ baŋɛ Yehowa n yuun eŋɛ se’em buɣelɛ Yudadoma la n yuun de yamesi bɔna Babilon
+        la suure.
+      sbs: 0.631
+      gen_sec: 8.53
+      ref_sec: 8.51
+      cer: 0.3375
+      wer: 0.95
+    jw_00083:
+      source: jw
+      text: La eŋɛ la wani ti mam bɔna Yehowa Sɛɛradoma Tigere Zuo la n boi New York, U.S.A. la tuna ge
+        yuun keŋɛ Europe ta tɔɣera kootin yɛla?
+      sbs: 0.626
+      gen_sec: 10.75
+      ref_sec: 11.92
+      cer: 0.33
+      wer: 0.7037
+    jw_00084:
+      source: jw
+      text: SIREGERA HOMEA GE DA ZƐKERA HOMEA
+      sbs: 0.5234
+      gen_sec: 3.16
+      ref_sec: 4.69
+      cer: 0.5357
+      wer: 1.0
+    jw_00085:
+      source: jw
+      text: SƐLA N SƆI TI LA NARA TI TO ANA DU’A DU’A LA TO MABIISI
+      sbs: 0.5858
+      gen_sec: 4.1
+      ref_sec: 6.11
+      cer: 0.3
+      wer: 0.4286
+    jw_00086:
+      source: jw
+      text: TO BEERE SA’AM PUTI’IRƐ LA
+      sbs: 0.58
+      gen_sec: 2.22
+      ref_sec: 3.35
+      cer: 0.45
+      wer: 1.0
+    jw_00087:
+      source: jw
+      text: 'c FOOTE LA VUURƐ: Mabia Russell la a tadaandoma n tari Baabule zamesegɔ gɔnɔ n yuun puɣum
+        bɔna ba saŋa la.'
+      sbs: 0.675
+      gen_sec: 8.45
+      ref_sec: 9.8
+      cer: 0.1548
+      wer: 0.619
+    jw_00088:
+      source: jw
+      text: a Ba tee yu’ura ase’a mɛ.
+      sbs: 0.6596
+      gen_sec: 1.62
+      ref_sec: 9.18
+      cer: 0.1765
+      wer: 0.5
+    jw_00089:
+      source: jw
+      text: b Ba tee yu’ura ase’a mɛ.
+      sbs: 0.6772
+      gen_sec: 1.62
+      ref_sec: 10.21
+      cer: 0.1176
+      wer: 0.6667
+    jw_00090:
+      source: jw
+      text: To wan ta’an zamesɛ la bem la Elihu n yuun eŋɛ se’em ka’am Yob la?
+      sbs: 0.6202
+      gen_sec: 4.95
+      ref_sec: 6.3
+      cer: 0.2292
+      wer: 0.5333
+    jw_00091:
+      source: jw
+      text: NAAYINƐ ZOOLUM GU’URI TO MƐ
+      sbs: 0.6565
+      gen_sec: 2.22
+      ref_sec: 6.04
+      cer: 0.3636
+      wer: 1.0
+    jw_00092:
+      source: jw
+      text: HON WAN LEBESE LA WANI?
+      sbs: 0.5734
+      gen_sec: 1.96
+      ref_sec: 3.28
+      cer: 0.3889
+      wer: 1.0
+    jw_00093:
+      source: jw
+      text: a Zaseŋɔ wa poan, to wan zamesɛ baŋɛ Peter gɔnɔ la n wan ta’an soŋɛ to se’em ti to ŋmibera.
+        Leyɛ’ɛsa, keendoma wan baŋɛ ban wan eŋɛ se’em ta’an bisera piisi la.
+      sbs: 0.6331
+      gen_sec: 13.14
+      ref_sec: 13.12
+      cer: 0.1583
+      wer: 0.375
+    jw_00094:
+      source: jw
+      text: DA GƐ̃ HO YIREDOMA BASƐ
+      sbs: 0.5016
+      gen_sec: 1.96
+      ref_sec: 3.83
+      cer: 0.3333
+      wer: 0.8
+    jw_00095:
+      source: jw
+      text: HO WAN EŊƐ LA WANI NYƐ PAŊA . . .
+      sbs: 0.7508
+      gen_sec: 2.47
+      ref_sec: 4.02
+      cer: 0.2857
+      wer: 0.5714
+    jw_00096:
+      source: jw
+      text: GE A SAN KELUM BISERA?
+      sbs: 0.6624
+      gen_sec: 1.88
+      ref_sec: 3.52
+      cer: 0.4118
+      wer: 0.6
+    jw_00097:
+      source: jw
+      text: Beni n sɔi ti yɛm bɔna bim ti ho ni ma’ɛ homea bisɛ nɛra saŋa fii poan ge nyaa lɛɣɛ en?
+      sbs: 0.6528
+      gen_sec: 6.83
+      ref_sec: 7.57
+      cer: 0.2462
+      wer: 0.5238
+    jw_00098:
+      source: jw
+      text: LUA BUNƆ LA N BASƐ TI YEHOWA DITA SUGERI BƆ’ƆRA TƆ
+      sbs: 0.5961
+      gen_sec: 3.84
+      ref_sec: 5.51
+      cer: 0.4615
+      wer: 0.9091
+    jw_00099:
+      source: jw
+      text: Ɛ Zɛ’an N Ani Soŋa Zamesɛ
+      sbs: 0.5908
+      gen_sec: 1.88
+      ref_sec: 4.24
+      cer: 0.2105
+      wer: 0.5
 - model: ghananlpcommunity/ghana-tts-36k-noref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-36k
   mode: noref
@@ -16784,4 +18462,4 @@ benchmarks:
       ref_sec: 4.24
       cer: 3.1053
       wer: 4.0
-updated: '2026-10-01'
+updated: '2026-10-09'

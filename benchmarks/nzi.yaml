@@ -1713,6 +1713,1708 @@ benchmarks:
       ref_sec: 3.59
       cer: 0.0909
       wer: 0.4
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.6993
+  num_scored: 200
+  cer: 0.1018
+  wer: 0.3344
+  accuracy: 0.8982
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.7988
+  score: 0.7988
+  per_source:
+    bible:
+      sbs: 0.7168
+      cer: 0.0726
+      n: 100
+    jw:
+      sbs: 0.6818
+      cer: 0.131
+      n: 100
+  entries:
+    bible_00000:
+      source: bible
+      text: Yemɔti memaa bɛva ye bɛzie kɔkpula mekɛ mɔɔ bɛ nee ye kɛhɔ la.
+      sbs: 0.7258
+      gen_sec: 4.18
+      ref_sec: 3.76
+      cer: 0.0408
+      wer: 0.1538
+    bible_00001:
+      source: bible
+      text: Ndɛndɛ ne ala mboaneneavolɛma ne hɔle na bɛhɔnwunle Mɛle nee Dwosefi nee adɔma ne kɛ ɔla mboane
+        adidi ɛlɛka nu.
+      sbs: 0.7209
+      gen_sec: 7.68
+      ref_sec: 7.34
+      cer: 0.044
+      wer: 0.3
+    bible_00002:
+      source: bible
+      text: Ewiade ye anu ɛleka biala mɔɔ menli kɛbɔ Edwɛkpa ne nolo la, bɛkɛha debie mɔɔ raalɛ ye ɛyɛ
+        la bɛkɛva bɛkɛhakye ye.
+      sbs: 0.7266
+      gen_sec: 7.77
+      ref_sec: 6.66
+      cer: 0.022
+      wer: 0.0455
+    bible_00003:
+      source: bible
+      text: Bɛnlea boɛ na awie anva mɛlɛbɛla nee adalɛ nrɛlɛbɛ mɔɔ bɛlua ewiade amaamuo zo bɛhyehyɛ, nee
+        mɔɔ vi awozinli ewiade ye sunsum nu tumima ɛkɛ ne na ɔnvi Kelaese ɛkɛ ne la anyɛ bɛ ngɛkɛlɛ.
+      sbs: 0.7132
+      gen_sec: 12.71
+      ref_sec: 10.14
+      cer: 0.0268
+      wer: 0.1429
+    bible_00004:
+      source: bible
+      text: Menfɛta kɛ ɛkɛvɛlɛ me ɛ ra bɔbɔ; fa me yɛ wɔ ɛkpama ne mɔ anu ko.
+      sbs: 0.7242
+      gen_sec: 4.18
+      ref_sec: 4.84
+      cer: 0.0625
+      wer: 0.375
+    bible_00005:
+      source: bible
+      text: Ɔ ti enrinli le fufule nwohyee kɛ boane ndɛkɛ, nwohyee kɛ ezukɔtweaba, yɛɛ ɔ nye ma sɔ kɛ
+        senle; ɔ gyakɛ anwo ta kɛ ayera mɔɔ bɛdu nu na bɛhwi nwolɛ la, na ɔ ne dielie kɛ azule mɔɔ lua
+        awolɛ zo la.
+      sbs: 0.7131
+      gen_sec: 13.06
+      ref_sec: 13.8
+      cer: 0.1267
+      wer: 0.4884
+    bible_00006:
+      source: bible
+      text: Na saa awie ɛnle asɔne ne anu mɔɔ kɛhola kɛhile mɔɔ bɛlɛka la abo a ɛnee ahenle mɔɔ ka aneɛ
+        ngakyile ne la ɛyɛ koonwu na ɔdendɛ ɔhile ɔ nwo nee Nyamenle.
+      sbs: 0.7055
+      gen_sec: 10.24
+      ref_sec: 7.78
+      cer: 0.0496
+      wer: 0.1562
+    bible_00007:
+      source: bible
+      text: Me afoa nu ɛdeɛ, menleɛnlea edwɛkɛ ne anu la menwu kɛ ɔtɛyɛle debie mɔɔ maa ɔfɛta ewule a.
+      sbs: 0.7137
+      gen_sec: 6.14
+      ref_sec: 5.36
+      cer: 0.0423
+      wer: 0.1111
+    bible_00008:
+      source: bible
+      text: Bɛmaa zɛhae subane ne mɔɔ ɛnee Kelaese Gyisɛse lɛ la ɛvinde bɛ ɛbɛla nu.
+      sbs: 0.7155
+      gen_sec: 4.95
+      ref_sec: 4.0
+      cer: 0.0517
+      wer: 0.1429
+    bible_00009:
+      source: bible
+      text: O me mra ngakula, medi bɛ nwo nyane, na mete ye wɔ me nwonane nu kɛ raalɛ mɔɔ ɛvo awolɛ zo
+        la, na ɔbahɔ zo zɔhane kɔkpula mekɛ mɔɔ bɛkɛnyia Kelaese su ne wɔ bɛ nu la.
+      sbs: 0.7369
+      gen_sec: 10.92
+      ref_sec: 9.24
+      cer: 0.0635
+      wer: 0.1351
+    bible_00010:
+      source: bible
+      text: Zɔhane ati yelɛma ɛha bɛ nwo aze bɔkɔɔ ɛmaa bɛ hu mɔ, kɛmɔ asɔne ne yɛ maa Kelaese la.
+      sbs: 0.7316
+      gen_sec: 5.72
+      ref_sec: 4.34
+      cer: 0.0455
+      wer: 0.1053
+    bible_00011:
+      source: bible
+      text: Na awie biala hɔle ɔ nzi kɛ ɔkɔ yeamaa bɛadia ye wɔ ɔdaye ye abusua sua zo.
+      sbs: 0.7007
+      gen_sec: 4.95
+      ref_sec: 4.62
+      cer: 0.0862
+      wer: 0.2941
+    bible_00012:
+      source: bible
+      text: Kɛkala, saa bɛbɔ ɛbɛla kpalɛ na bɛammaa debie biala anwunlonwunla bɛ a, bɛle ɔ mra mraalɛ.
+      sbs: 0.7465
+      gen_sec: 6.31
+      ref_sec: 6.36
+      cer: 0.0972
+      wer: 0.25
+    bible_00013:
+      source: bible
+      text: Bɛwula Nyamenle konle tɛladeɛ ne mɔ amuala na bɛahola bɛagyinla Abɔnsam agyiba ne mɔ anloa.
+      sbs: 0.7161
+      gen_sec: 6.49
+      ref_sec: 4.98
+      cer: 0.0132
+      wer: 0.0667
+    bible_00014:
+      source: bible
+      text: ” Na bɛgyakyile bɛ asawu ne mɔ ɛkɛ ne na bɛ nee ye hɔle.
+      sbs: 0.6966
+      gen_sec: 3.5
+      ref_sec: 3.38
+      cer: 0.0244
+      wer: 0.0769
+    bible_00015:
+      source: bible
+      text: Mekɛ ne anu, sane nee ɛhɔne rale Yigyibiti nee Keena maanle ne mɔ anu, manle ɔyɛle abodelɛ
+        kpalɛ, mɔɔ ɛnee yɛ nlenya mɔ ɛnnyia aleɛ wɔ ɛleka biala a.
+      sbs: 0.7216
+      gen_sec: 10.15
+      ref_sec: 9.98
+      cer: 0.0684
+      wer: 0.2759
+    bible_00016:
+      source: bible
+      text: Meyɛ ɛhye mɔ amuala wɔ Edwɛkpa ne ati, amaa meanyia nwolɛ nyilalɛ ne bie.
+      sbs: 0.7136
+      gen_sec: 5.03
+      ref_sec: 4.28
+      cer: 0.0172
+      wer: 0.0714
+    bible_00017:
+      source: bible
+      text: Ndɛnebuavolɛ ɛhye ɛnzulo Nyamenle yɛɛ ɔmbu sonla biala.
+      sbs: 0.6841
+      gen_sec: 4.01
+      ref_sec: 3.46
+      cer: 0.0638
+      wer: 0.25
+    bible_00018:
+      source: bible
+      text: Bɛrale la nlɛne nwiɔ ne yiyile tetɛkɛɛ mɔɔ ɛnee asɛɛ bɛwie sia a.
+      sbs: 0.695
+      gen_sec: 4.44
+      ref_sec: 5.0
+      cer: 0.25
+      wer: 0.5385
+    bible_00019:
+      source: bible
+      text: Zɔhane ati bɛboa bɛ nwo ngoko, kɛmɔ kɛkala bɛlɛyɛ ye la na bɛmaa bɛ nwo anwosesebɛ.
+      sbs: 0.7502
+      gen_sec: 5.72
+      ref_sec: 5.44
+      cer: 0.0758
+      wer: 0.1875
+    bible_00020:
+      source: bible
+      text: Nyamenle Edwɛkɛ ne se, “Ɔwɔ kɛ bɛmaa bɛ nwo te, ɔboalekɛ mele nwuanzanwuanza.
+      sbs: 0.7285
+      gen_sec: 5.38
+      ref_sec: 5.54
+      cer: 0.0328
+      wer: 0.1538
+    bible_00021:
+      source: bible
+      text: Zɔhane ati saa ɛbɔ ɛ ti aze ɛmaa me, ɛsonle me a, ye kɔsɔɔti bayɛ wɔ ɛdeɛ.
+      sbs: 0.6713
+      gen_sec: 4.86
+      ref_sec: 6.18
+      cer: 0.0545
+      wer: 0.1765
+    bible_00022:
+      source: bible
+      text: ’ Na ɔbuale ye kɛ, ‘Ɛ diema ne ɛzia ɛra sua nu, na ɛ ze ɛmaa bɛhu ɛnlankɛ ralɛ kyenlera ne
+        mɔɔ ɛwie dɔ la yɛɛ bɛlɛdie bɛ nye a, ɔboalekɛ ɔ sa ɛha ye, ɔ nwo kɔlɔnwo, ɔte kpɔkɛ.
+      sbs: 0.7674
+      gen_sec: 11.26
+      ref_sec: 13.96
+      cer: 0.0625
+      wer: 0.2051
+    bible_00023:
+      source: bible
+      text: Alehyenlɛ nee aledwolɛ muala ɛnee ɔluolua azie ne nee awoka ne mɔ azo ɔteɛdea nuhua na ɔfa
+        awolɛ ɔpepɛ ɔ nwo.
+      sbs: 0.7244
+      gen_sec: 7.42
+      ref_sec: 7.42
+      cer: 0.125
+      wer: 0.2857
+    bible_00024:
+      source: bible
+      text: Kɔ na kɔdɔne ninyɛne mɔɔ ɛlɛ la amuala, na kyɛ ezukoa ne maa ehyianvolɛma na ɛkɛnyia anwonyia
+        wɔ anwuma, na akee bɛla badoa me bo zo.
+      sbs: 0.7466
+      gen_sec: 9.05
+      ref_sec: 10.06
+      cer: 0.0857
+      wer: 0.3846
+    bible_00025:
+      source: bible
+      text: Nrenya ne dwazole na ɔhɔle sua nu.
+      sbs: 0.6476
+      gen_sec: 2.3
+      ref_sec: 7.42
+      cer: 0.3704
+      wer: 0.7143
+    bible_00026:
+      source: bible
+      text: Ɛhye ati, saa yɛlɛ mɔɔ yɛdi nee mɔɔ yɛkeda la a, bɛmaa yɛ nye ɛzɔ yɛ nwo.
+      sbs: 0.7488
+      gen_sec: 4.78
+      ref_sec: 4.38
+      cer: 0.1296
+      wer: 0.3529
+    bible_00027:
+      source: bible
+      text: Noko saa raalɛ ka ɔ nwo aze, ɔbɔ mɔdenle ɔtɛnla diedi, ɛhulolɛ nee anwondelɛ nu a, ɔlua mralɛ
+        ɛwolɛ ti bɛkɛlie ye ngoane.
+      sbs: 0.7493
+      gen_sec: 8.28
+      ref_sec: 9.6
+      cer: 0.0632
+      wer: 0.2609
+    bible_00028:
+      source: bible
+      text: Sitivin buale kɛ, “Mediema mrenya nee egya mɔ, bɛdie me!
+      sbs: 0.7165
+      gen_sec: 3.84
+      ref_sec: 4.36
+      cer: 0.0698
+      wer: 0.3
+    bible_00029:
+      source: bible
+      text: Bɛwa yɛ amonle a, yɛyila bɛ; bɛyɛ yɛ kpɔdekpɔde a, yɛkponle zolɛ.
+      sbs: 0.7656
+      gen_sec: 4.52
+      ref_sec: 4.28
+      cer: 0.1
+      wer: 0.4167
+    bible_00030:
+      source: bible
+      text: Na mendele kɛ ɔle Wulomunli la ati menvale sogyama mengɔnliele ye.
+      sbs: 0.6602
+      gen_sec: 4.69
+      ref_sec: 5.1
+      cer: 0.1091
+      wer: 0.3636
+    bible_00031:
+      source: bible
+      text: Kelaese a gyi yɛ ti mɔɔ yɛ nwonane ye nvɛyeba ne mɔ amuala sosɔ ye na ɔmaa biala yɛ ye gyima
+        kɛmɔ ɔfɛta la, na nwonane ne nyi ɛhulolɛ nu a.
+      sbs: 0.7414
+      gen_sec: 9.13
+      ref_sec: 8.22
+      cer: 0.0561
+      wer: 0.1935
+    bible_00032:
+      source: bible
+      text: Mɛla kilehilevolɛma bie mɔɔ vi Gyɛlusalɛm rale la hanle kɛ, “Mbɔnsam kpanyinli ne mɔɔ bɛfɛlɛ
+        ye Biyɛlezɛbɛle la wɔ ɔ nwo, na yemɔ yɛɛ ɔmaa ye tumi mɔɔ ɔfa ɔtu mbɔnsam a.
+      sbs: 0.6737
+      gen_sec: 11.52
+      ref_sec: 9.9
+      cer: 0.0746
+      wer: 0.125
+    bible_00033:
+      source: bible
+      text: Ɔluakɛ meka meahile bɛ, ɔvi ɛnɛ mɔɔ kɔ la menrɛnlo vanye ma nu nzule bieko kɔkpula kɛ Nyamenle
+        Belemgbunlililɛ ne kɛra la.
+      sbs: 0.7143
+      gen_sec: 8.45
+      ref_sec: 7.62
+      cer: 0.101
+      wer: 0.4545
+    bible_00034:
+      source: bible
+      text: Kɛmɔ ɛnee menli dɔɔnwo anye la Mɛzaya ne ɛralɛ zo la, bɛdwenlenle kɛ bekezɛ yemɔ a le Dwɔn.
+      sbs: 0.7146
+      gen_sec: 6.23
+      ref_sec: 9.36
+      cer: 0.125
+      wer: 0.2778
+    bible_00035:
+      source: bible
+      text: Na Zakeɛse dwazole na ɔhanle ɔhilele Awulae kɛ, “Awulae, mebabu me ninyɛne mɔɔ melɛ la anu
+        nwiɔ na meava ko meamaa ehyianvolɛma, na saa meli awie ndunlumi a, mebadua ye kakɛ mɔnwo nna.
+      sbs: 0.72
+      gen_sec: 12.71
+      ref_sec: 14.62
+      cer: 0.089
+      wer: 0.303
+    bible_00036:
+      source: bible
+      text: Na yɛmɛ, yɛle alehyenlɛ nu amra, yemɔti bɛmaa yɛzie yɛ nye gyɛlɛmgbɛɛnye na yɛva diedi nee
+        ɛhulolɛ yɛyɛ bulalɛ enyinlike yɛbutu yɛ kɛnra azo, na yɛva yɛ ngoane ɛnyianlɛ nwo anyelazo yɛhakyi
+        bulalɛ kyɛlɛ yɛzoa.
+      sbs: 0.7138
+      gen_sec: 14.68
+      ref_sec: 10.98
+      cer: 0.0936
+      wer: 0.4
+    bible_00037:
+      source: bible
+      text: Bɛnwunle amaneɛ wɔ bɛdabɛ bɛ menli asa anu, kɛmɔ Dwuuma yɛle ala la.
+      sbs: 0.7388
+      gen_sec: 4.69
+      ref_sec: 3.94
+      cer: 0.0185
+      wer: 0.0769
+    bible_00038:
+      source: bible
+      text: Ɔdɔle bɛ bolɛ ɛsesebɛ.
+      sbs: 0.6175
+      gen_sec: 1.54
+      ref_sec: 7.3
+      cer: 0.2778
+      wer: 0.75
+    bible_00039:
+      source: bible
+      text: Ɔluakɛ mete wɔ ɛhulolɛ mɔɔ ɛlɛ ye wɔ Nyamenle menli ne anwo nee diedi mɔɔ ɛlɛ ye wɔ Awulae
+        Gyisɛse anu la nganeɛ.
+      sbs: 0.7104
+      gen_sec: 7.59
+      ref_sec: 6.18
+      cer: 0.0111
+      wer: 0.2174
+    bible_00040:
+      source: bible
+      text: Bɛze kɛ mekɛ mɔɔ ɛnee bɛnze Nyamenle la, awie mɔ vale adenle bie azo manle bɛzɔle mmonle mɔɔ
+        ɛndendɛ la.
+      sbs: 0.7098
+      gen_sec: 7.17
+      ref_sec: 5.82
+      cer: 0.0482
+      wer: 0.2
+    bible_00041:
+      source: bible
+      text: Bɛdabɛ mɔɔ bɛha la biala ɛlɛbɔ ye ɛbɛla mɔɔ hyia ye la, na yegyakyi mɔɔ Gyisɛse Kelaese kpondɛ
+        kɛ ɔyɛ la.
+      sbs: 0.7111
+      gen_sec: 7.17
+      ref_sec: 5.54
+      cer: 0.0482
+      wer: 0.1429
+    bible_00042:
+      source: bible
+      text: Yɛmɛ yɛɛ Nyamenle ɛlua ye Sunsum ne azo ɛye fealeranu debie zɛhae ɛhile yɛ a, ɔluakɛ Sunsum
+        ne fedevede ninyɛne kɔsɔɔti anu, bɔbɔ kɛ Nyamenle ngyehyɛlɛ ne kuma ne kuloonwu si de la.
+      sbs: 0.7185
+      gen_sec: 12.54
+      ref_sec: 10.78
+      cer: 0.0959
+      wer: 0.2727
+    bible_00043:
+      source: bible
+      text: Saa bɛyɛ ye zɔhane na bɛanva bɛ rɛle bɛanzɔ awie a, bɛdabɛ mɔɔ bɛwɔ amozi na bɛnle diedima
+        la kɛbu bɛ bie.
+      sbs: 0.7433
+      gen_sec: 7.17
+      ref_sec: 5.92
+      cer: 0.1084
+      wer: 0.3636
+    bible_00044:
+      source: bible
+      text: Bɛzonle Nyamenle mɔɔ bɔle anwuma, azɛlɛ, nyevile, nee azule muala la.
+      sbs: 0.681
+      gen_sec: 4.95
+      ref_sec: 4.36
+      cer: 0.0545
+      wer: 0.0909
+    bible_00045:
+      source: bible
+      text: Bɛdabɛ bɛze amaneɛ mɔɔ yɛnwunle ye nee aholoba mɔɔ bɛbɔle yɛ wɔ Felepae kolaa na yɛara Tɛsalonaeka
+        la.
+      sbs: 0.7053
+      gen_sec: 7.17
+      ref_sec: 5.28
+      cer: 0.0476
+      wer: 0.2778
+    bible_00046:
+      source: bible
+      text: Mɔɔ lumua la zele kɛ, ‘Medɔ me azɛlɛ bie na ɔwɔ kɛ mekɔnea.
+      sbs: 0.7384
+      gen_sec: 3.84
+      ref_sec: 6.94
+      cer: 0.1136
+      wer: 0.2308
+    bible_00047:
+      source: bible
+      text: Nrenya ne mɔɔ ɔlua ɔ nwo zo bɛyɛle nwanwane gyima kpole zɛhae la ɛnee ɛli ɛvolɛ mɔɔ bo abulanla.
+      sbs: 0.7355
+      gen_sec: 6.57
+      ref_sec: 5.52
+      cer: 0.026
+      wer: 0.1579
+    bible_00048:
+      source: bible
+      text: Deɛ mɔɔ yemɔti Nyamenle Ara ne rale la a le kɛ ɔbazɛkye Abɔnsam gyima biala mɔɔ yeli la.
+      sbs: 0.7072
+      gen_sec: 5.97
+      ref_sec: 7.08
+      cer: 0.0429
+      wer: 0.1111
+    bible_00049:
+      source: bible
+      text: Ninyɛne ɛhye mɔ ati Nyamenle ɛya ne bara bɛdabɛ mɔɔ bɛandie ɔ ne la anwo zo.
+      sbs: 0.6839
+      gen_sec: 5.12
+      ref_sec: 3.6
+      cer: 0.0167
+      wer: 0.0625
+    bible_00050:
+      source: bible
+      text: Mekɛ ne anu ɛnee Dwuu mgbanyima ne mɔ ɛlɛkpondɛ ye ɛsesebɛ wɔ ɛvoyia ne abo, na bɛbizale kɛ,
+        “Ɔwɔ nienwu?
+      sbs: 0.6683
+      gen_sec: 7.17
+      ref_sec: 6.88
+      cer: 0.0366
+      wer: 0.2
+    bible_00051:
+      source: bible
+      text: ” Zɔhane ati sogyama ne pɛle nyɛma ne mɔɔ lɛ ɛlɛne ekyi ne la anu na bɛmanle ɔhɔle.
+      sbs: 0.7142
+      gen_sec: 5.46
+      ref_sec: 5.26
+      cer: 0.0781
+      wer: 0.1176
+    bible_00052:
+      source: bible
+      text: ” Aleɛ hyenle nwonlomɔ mangyee ne la, ɛzoanvolɛma ne hɔle Ɛzonlenlɛ Sua ne anu na bɛbɔle ɔ
+        bo kɛ bɛkilehile.
+      sbs: 0.7493
+      gen_sec: 7.34
+      ref_sec: 6.54
+      cer: 0.0581
+      wer: 0.1579
+    bible_00053:
+      source: bible
+      text: Nyamenle tumi ne rale Gyisɛse anwo zo na ɔyɛle wuleravolɛma ayile.
+      sbs: 0.7062
+      gen_sec: 4.69
+      ref_sec: 4.08
+      cer: 0.0727
+      wer: 0.2727
+    bible_00054:
+      source: bible
+      text: ’ Na ɔ ze vɛlɛle ye sonvolɛma ne mɔ na ɔzele bɛ kɛ, ‘Bɛha bɛ nwo na bɛhɔva tɛladeɛ kpalɛ bɛrawula
+        ye.
+      sbs: 0.7129
+      gen_sec: 6.57
+      ref_sec: 7.72
+      cer: 0.1053
+      wer: 0.2381
+    bible_00055:
+      source: bible
+      text: Sonla zɛhae ɛnde ninyɛne ɛhye mɔ abo; bɛle ɔ nye zo ɛzɛlɛ edwɛkɛ, ɔboalekɛ kyesɛ sunsum nu
+        ala na bɛade ɔ bo.
+      sbs: 0.7258
+      gen_sec: 7.34
+      ref_sec: 6.7
+      cer: 0.0941
+      wer: 0.3182
+    bible_00056:
+      source: bible
+      text: Ɛhɛe, yɛɛ eza mebahɔ zolɛ meali fɛlɛko, ɔluakɛ meze kɛ ɔlua bɛmɛ bɛ nzɛlɛlɛ nee Gyisɛse Kelaese
+        Sunsum ne moalɛ zo mebavi efiade ɛke.
+      sbs: 0.6968
+      gen_sec: 9.22
+      ref_sec: 7.92
+      cer: 0.0374
+      wer: 0.2083
+    bible_00057:
+      source: bible
+      text: Ɔluakɛ menea a ɔnwie nrɛlɛbɛ yɛ kɛ melɛ pilizanli melɛkɔ na menlɛ ɔ nwo ɛzonledonlɛ kpalɛ
+        biala a.
+      sbs: 0.7097
+      gen_sec: 6.83
+      ref_sec: 9.32
+      cer: 0.175
+      wer: 0.5
+    bible_00058:
+      source: bible
+      text: Awuke biala mɔɔ bɛkɛwolo nu la, bɛlumua bɛze kɛ, ‘Nyamenle anzonudwolɛ ɛha awuke ye anu amra.
+      sbs: 0.7122
+      gen_sec: 6.49
+      ref_sec: 6.48
+      cer: 0.0946
+      wer: 0.25
+    bible_00059:
+      source: bible
+      text: Na ɛnee yɛ anyelazo, yɛ anyelielɛ anzɛɛ abɔtile mɔɔ yɛfa yɛtu yɛ nloa anu wɔ mekɛ mɔɔ yɛ Awulae
+        kɛra la a le boni?
+      sbs: 0.7343
+      gen_sec: 7.59
+      ref_sec: 6.02
+      cer: 0.1011
+      wer: 0.5
+    bible_00060:
+      source: bible
+      text: Ɛhye ati bɛzɔ bɛ nwo kpalɛ na bɛyɛ bɛ nye gyɛlɛmgbɛɛnye, na bɛahola bɛayɛ nzɛlɛlɛ.
+      sbs: 0.7416
+      gen_sec: 5.72
+      ref_sec: 5.16
+      cer: 0.0606
+      wer: 0.2
+    bible_00061:
+      source: bible
+      text: Dasevolɛma ne mɔ yeyele bɛ adɛladeɛ manle kpavolɛ bie mɔɔ bɛfɛlɛ ye Sɔɔlo la lɛle.
+      sbs: 0.7222
+      gen_sec: 5.72
+      ref_sec: 6.26
+      cer: 0.0299
+      wer: 0.0667
+    bible_00062:
+      source: bible
+      text: 'Gyisɛse buale bɛ kɛ, “Meka nɔhalɛ ne meahile bɛ: Bɛlile kpanwo ne na bɛ ko yile la ati yɛɛ
+        bɛlɛkpondɛ me bo zo a, na tɛ kɛ asɛɛ bɛdele me nwanwane gyima mgbole mɔɔ menyɛle la abo la ati
+        ɔ.'
+      sbs: 0.7209
+      gen_sec: 12.46
+      ref_sec: 13.08
+      cer: 0.0278
+      wer: 0.175
+    bible_00063:
+      source: bible
+      text: Medi me nwo daselɛ yɛɛ Selɛ ne mɔɔ zoanle me la di me nwo daselɛ.
+      sbs: 0.7128
+      gen_sec: 4.27
+      ref_sec: 3.52
+      cer: 0.02
+      wer: 0.0667
+    bible_00064:
+      source: bible
+      text: Na ɔzɛlɛle kɛ, “Egya!
+      sbs: 0.6333
+      gen_sec: 1.37
+      ref_sec: 6.26
+      cer: 0.2667
+      wer: 0.5
+    bible_00065:
+      source: bible
+      text: Nyamenle kpɔmanvolɛma mɔɔ hanle ɛlolɛ ɛhye mɔɔ le bɛ ɛdeɛ la anwo edwɛkɛ dole ɛkɛ ne la nleɛnleanle
+        nu, na bɛkpondɛle ngoanelielɛ ɛhye mɔɔ Nyamenle bava amaa bɛ la anu.
+      sbs: 0.7176
+      gen_sec: 11.69
+      ref_sec: 11.24
+      cer: 0.0511
+      wer: 0.1667
+    bible_00066:
+      source: bible
+      text: Dahuu yɛte Gyisɛse ewule ne nyane wɔ yɛ sonlabaka ye anu, amaa menli anwu ye ngoane ne noko
+        wɔ yɛ sonlabaka ye anu.
+      sbs: 0.7349
+      gen_sec: 7.77
+      ref_sec: 6.78
+      cer: 0.033
+      wer: 0.1304
+    bible_00067:
+      source: bible
+      text: Mekɛ mɔɔ bɛkɛyia nu la saa awie mɔ baha aneɛ ngakyile a, bɛmaa menli nwiɔ anzɛɛ yebo zolɛ
+        la, menli nsa ɛdendɛ.
+      sbs: 0.7329
+      gen_sec: 7.51
+      ref_sec: 7.2
+      cer: 0.0575
+      wer: 0.2273
+    bible_00068:
+      source: bible
+      text: Gyisɛse vi ɛkɛ ne la ɔ nee ye ɛdoavolɛma ne ziale rale ye sua zo.
+      sbs: 0.7317
+      gen_sec: 4.27
+      ref_sec: 4.18
+      cer: 0.06
+      wer: 0.1333
+    bible_00069:
+      source: bible
+      text: Nɔhalɛ, meka meahile bɛ kɛ bɛnyia bɛ ahatualɛ bɛwie.
+      sbs: 0.7181
+      gen_sec: 3.67
+      ref_sec: 3.04
+      cer: 0.0952
+      wer: 0.3333
+    bible_00070:
+      source: bible
+      text: Ɔluakɛ Abɔnsam ɛdwu ɛra bɛ nwo lɔ, na ɛya kpole wɔ ye nuhua, ɔboalekɛ ɔze kɛ ye mekɛ ɛha ekyi
+        bie ala.
+      sbs: 0.7029
+      gen_sec: 6.83
+      ref_sec: 8.62
+      cer: 0.0769
+      wer: 0.2273
+    bible_00071:
+      source: bible
+      text: Ɔluakɛ, tɛ menli a yɛ nee bɛ ɛlɛko a; sunsum nu tumivolɛma, ewiade arelemgbunli anzɛɛ maanlebuvoma,
+        ewiade amra mɔɔ sie ɛnɛ mekɛ ye awozinli nu amra, yɛɛ sunsum nu anwuma ɛlɔnema amumuyɛ yɛɛ yɛ
+        nee bɛ ɛlɛko a.
+      sbs: 0.7319
+      gen_sec: 14.42
+      ref_sec: 12.44
+      cer: 0.1446
+      wer: 0.3684
+    bible_00072:
+      source: bible
+      text: Aleɛ muanle nwolɛ la, Gyisɛse nee ye ɛdoavolɛma bulu nee nwiɔ ne rale.
+      sbs: 0.7105
+      gen_sec: 4.86
+      ref_sec: 3.8
+      cer: 0.0179
+      wer: 0.0769
+    bible_00073:
+      source: bible
+      text: “Saa ɛ diema fo wɔ a, tea ye, na saa ɔnu ɔ nwo a, fa ye ɛtane kyɛ ye.
+      sbs: 0.767
+      gen_sec: 4.18
+      ref_sec: 4.88
+      cer: 0.0435
+      wer: 0.2105
+    bible_00074:
+      source: bible
+      text: Saa bɛte konle nee nzakadolɛ nganeɛ a, bɛmmasulo; ɔwɔ kɛ ninyɛne ɛhye mɔ dumua sisi, na bɛngile
+        kɛ awieleɛ ne ɛbikye.
+      sbs: 0.737
+      gen_sec: 8.11
+      ref_sec: 7.5
+      cer: 0.043
+      wer: 0.2381
+    bible_00075:
+      source: bible
+      text: Gyisɛse wule manle yɛ amaa ɔba a, saa yɛwu o, yɛde ngoane nu o, yɛ nee ye adɛnla.
+      sbs: 0.7576
+      gen_sec: 5.38
+      ref_sec: 5.08
+      cer: 0.1333
+      wer: 0.4444
+    bible_00076:
+      source: bible
+      text: Bɛdwenle ninyɛne mɔɔ wɔ anwuma lɔ la anwo na bɛgyakyi mɔɔ wɔ azɛlɛ ye azo la.
+      sbs: 0.6984
+      gen_sec: 5.21
+      ref_sec: 4.0
+      cer: 0.0
+      wer: 0.0
+    bible_00077:
+      source: bible
+      text: Melɛsiane ye meamaa yeara ɛ nwo lɔ bieko, na fa ye kɛ medame ɔ.
+      sbs: 0.7039
+      gen_sec: 4.18
+      ref_sec: 3.68
+      cer: 0.0625
+      wer: 0.1429
+    bible_00078:
+      source: bible
+      text: Nyamenle kpɔmanvolɛma alane ɛhye mɔ le ɛtane ewiade ye ɛdeɛ, yemɔti bɛka ewiade ye edwɛkɛ,
+        yɛɛ ɛtane ewiade ye tie bɛ.
+      sbs: 0.7367
+      gen_sec: 8.19
+      ref_sec: 9.34
+      cer: 0.0
+      wer: 0.0
+    bible_00079:
+      source: bible
+      text: Na bɛ nee kpavolɛ ne hɔle sua nu arɛlekyekyelɛ nu mɔɔ ɛnee ɔte kpɔkɛ bɔkɔɔ a.
+      sbs: 0.6963
+      gen_sec: 5.21
+      ref_sec: 4.7
+      cer: 0.0656
+      wer: 0.125
+    bible_00080:
+      source: bible
+      text: Yɛze kɛ Nyamenle mɔɔ dwazole Awulae Gyisɛse rale ngoane nu la badwazo yɛ aboka Gyisɛse anwo,
+        na yeava yɛ nee bɛ yeahɔ ɔ nyunlu ɛkɛ.
+      sbs: 0.7006
+      gen_sec: 8.96
+      ref_sec: 8.2
+      cer: 0.0762
+      wer: 0.24
+    bible_00081:
+      source: bible
+      text: Saa menle bɛ nwo lɔ wɔ nwonane nu bɔbɔ a, me nee bɛ wɔ lɔ wɔ sunsum nu, na melua Awulae Gyisɛse
+        duma nu mebua sonla zɔhane mɔɔ ɛbɔ munzule ɛbɛla ɛhye la ndɛne kɛ asɛɛ me nee bɛ a wɔ lɔ la.
+      sbs: 0.7294
+      gen_sec: 12.29
+      ref_sec: 11.0
+      cer: 0.0699
+      wer: 0.2093
+    bible_00082:
+      source: bible
+      text: Ɔbɔle nolo ɔhilele menli ne kɛ, “Sonla ne mɔɔ li me nzi ɛlɛba la lɛ tumi tɛla me.
+      sbs: 0.7194
+      gen_sec: 5.29
+      ref_sec: 4.7
+      cer: 0.082
+      wer: 0.2778
+    bible_00083:
+      source: bible
+      text: Ɔluakɛ Nyamenle su ne de Kelaese sonlabaka ne nu, na kɛmɔ yemɔ a ɔbo sunsum nu arelemgbunli
+        nee tumivolɛma anwo zo la, bɛ nee ye ɛyɛ ko na bɛli munli.
+      sbs: 0.7159
+      gen_sec: 10.15
+      ref_sec: 8.38
+      cer: 0.0339
+      wer: 0.1333
+    bible_00084:
+      source: bible
+      text: Tumi ɛhye mɔɔ ɛlɛdi gyima wɔ yɛmɛ mɔɔ yɛdie ye yɛdi la anu la, yemɔ ala a le anwosesebɛ bedevinli
+        ne mɔɔ Nyamenle vale dwazole Kelaese vile ewule nu, na ɔvale ye ɔdɛnlanle ɔ sa fema zo wɔ anwuma
+        la.
+      sbs: 0.7119
+      gen_sec: 13.4
+      ref_sec: 11.98
+      cer: 0.0192
+      wer: 0.1
+    bible_00085:
+      source: bible
+      text: Gyisɛse kile kɛ Nyamenle anyunlunyia ne wienyi kpole si de la.
+      sbs: 0.6982
+      gen_sec: 4.35
+      ref_sec: 3.34
+      cer: 0.0392
+      wer: 0.1818
+    bible_00086:
+      source: bible
+      text: 'Ngakyile mɔɔ wɔ bɛdabɛ mɔɔ bɛle Nyamenle amra nee bɛdabɛ mɔɔ bɛle Abɔnsam amra la avinli
+        la ɛne: awie biala mɔɔ ɛmbɔ ɛbɛla kpalɛ anzɛɛ ɛngulo ɔ diema la ɛnle Nyamenle ara.'
+      sbs: 0.7305
+      gen_sec: 11.78
+      ref_sec: 13.68
+      cer: 0.0435
+      wer: 0.125
+    bible_00087:
+      source: bible
+      text: Sɛlɛvolɛ Kpanyinli ne nee ɔ sa zo ne mɔ manle bɛvɛlɛle mgbanyima ayia, na bɛdule menli kɛ
+        bɛhɔye ɛzoanvolɛma ne wɔ efiade ne bɛrɛla.
+      sbs: 0.7401
+      gen_sec: 9.13
+      ref_sec: 8.94
+      cer: 0.0374
+      wer: 0.2083
+    bible_00088:
+      source: bible
+      text: Ninyɛne nwiɔ ɛhye yɛɛ ɔwɔ kɛ bɛyɛ a, yɛɛ eza ɔnle kɛ bɛbu bɛ nye bɛgua alumua ɛdeɛ ne mɔ azo.
+      sbs: 0.7417
+      gen_sec: 6.14
+      ref_sec: 6.8
+      cer: 0.0423
+      wer: 0.0952
+    bible_00089:
+      source: bible
+      text: Na Gyisɛse buale bɛ kɛ, “Asoo bɛtɛkengale mɔɔ Devidi yɛle wɔ mekɛ mɔɔ ɛhɔne hunle ye nee ye
+        menli ne mɔ la?
+      sbs: 0.6755
+      gen_sec: 7.17
+      ref_sec: 6.34
+      cer: 0.1205
+      wer: 0.1818
+    bible_00090:
+      source: bible
+      text: Raalɛ mɔɔ bɛtɛgyale ye la dwenledwenle Awulae gyima ne anwo, ɔluakɛ ɔkpondɛ kɛ ɔtu ye sonlabaka
+        ne nee ye ɛkɛla ne ɔmaa Nyamenle; na awuvolɛ raalɛ dwenledwenle ewiade ninyɛne nwo, ɔluakɛ ɔkpondɛ
+        kɛ ɔmaa ɔ hu anye die.
+      sbs: 0.7167
+      gen_sec: 15.1
+      ref_sec: 12.04
+      cer: 0.0795
+      wer: 0.2632
+    bible_00091:
+      source: bible
+      text: Boni a ye ɛhanlɛ ɛnyɛ se a, kɛ ɛse awie kɛ, ‘Bɛva wɔ ɛtane ne mɔ bɛhyɛ wɔ’, anzɛɛ ‘Dwazo na
+        tia?
+      sbs: 0.7167
+      gen_sec: 6.06
+      ref_sec: 7.22
+      cer: 0.0735
+      wer: 0.2727
+    bible_00092:
+      source: bible
+      text: Bɛnlea boɛ wɔ nindavoma anwo; menli ɛhye mɔ ɛhakyi ahwea mɔɔ nganlɛ ala a bɛkulo kɛ bɛbɔ bɛ
+        nwo a.
+      sbs: 0.7149
+      gen_sec: 6.66
+      ref_sec: 5.28
+      cer: 0.039
+      wer: 0.1
+    bible_00093:
+      source: bible
+      text: Na saa Nyamenle ɛtɛdwazole Kelaese a, ɛnee bɛ diedi ne le mgbane na bɛtɛte bɛ ɛtane ne mɔ
+        anu; yɛɛ bɛdabɛ mɔɔ bɛdie Kelaese bɛdi na bɛwu la ɛminli.
+      sbs: 0.739
+      gen_sec: 9.98
+      ref_sec: 8.32
+      cer: 0.0948
+      wer: 0.2414
+    bible_00094:
+      source: bible
+      text: Bɛ nee me badɛnla me ɛkponle nwo, bɛali debie na bɛanlo wɔ me Belemgbunlililɛ ne anu, na bɛbadɛnlɛdɛnla
+        arelemgbunli mbia zo bɛabua mbusua bulu nee nwiɔ ne ndɛne.
+      sbs: 0.7189
+      gen_sec: 11.35
+      ref_sec: 10.22
+      cer: 0.053
+      wer: 0.2143
+    bible_00095:
+      source: bible
+      text: Na ɔzele bɛ kɛ, “Saa nrenya bɔ ɔ ye ewole na ɔgya fofolɛ a, ɛnee yeyɛ ɛtane.
+      sbs: 0.7686
+      gen_sec: 4.95
+      ref_sec: 5.5
+      cer: 0.1071
+      wer: 0.2941
+    bible_00096:
+      source: bible
+      text: Yemɔti bɛvɛlɛle bɛ na bɛduale bɛ kɛ bɛmmatendɛ menli nu anzɛɛ bɛmmabɔ Gyisɛse duma bɛkilehile
+        menli.
+      sbs: 0.7305
+      gen_sec: 7.17
+      ref_sec: 7.08
+      cer: 0.0238
+      wer: 0.0625
+    bible_00097:
+      source: bible
+      text: Yɛdayɛ noko yɛle bɛtɛɛ wɔ Kelaese ati, na ɔlua Nyamenle tumi ne azo yɛ nee ye badɛnla na yɛ
+        nee bɛ ali.
+      sbs: 0.7237
+      gen_sec: 6.91
+      ref_sec: 6.28
+      cer: 0.0375
+      wer: 0.0909
+    bible_00098:
+      source: bible
+      text: ’ Atɔfolɛ nrenya ne a le mɔɔ gya atɔfolɛ ne la, saa atɔfolɛ nrenya ne agɔnwo ne mɔɔ gyi ahane
+        la te atɔfolɛ nrenya ne ane a, ɔ nye die.
+      sbs: 0.6746
+      gen_sec: 8.79
+      ref_sec: 7.92
+      cer: 0.1078
+      wer: 0.4828
+    bible_00099:
+      source: bible
+      text: Belemgbunli Hɛlɔdo dele ɛhye mɔ anwo bie, ɔluakɛ Gyisɛse nganeɛ ɛdwu ɛleka biala, na menli
+        ɛlɛkeha kɛ, “Dwɔn Sɔnevolɛ ne ɛzia ɛra ngoane nu bieko, yemɔti a ɔkola ɔyɛ nwanwane ninyɛne ɛhye
+        mɔ a.
+      sbs: 0.7193
+      gen_sec: 13.4
+      ref_sec: 14.32
+      cer: 0.0195
+      wer: 0.0588
+    jw_00000:
+      source: jw
+      text: Bɛde ɔ bo kɛ nlanwonvoninli ɛnleanlɛ kola ka awie anwo na bɛdwenle mɔɔ ɔwɔ kɛ ɔyɛ amaa yeagyakyi
+        la anwo.
+      sbs: 0.6772
+      gen_sec: 7.17
+      ref_sec: 8.82
+      cer: 0.0471
+      wer: 0.25
+    jw_00001:
+      source: jw
+      text: ‘Tɛnlabelɛ boni mɔ a bahola azɔ anwodozo kpole mɔɔ melɛ wɔ Gyihova anu la anlea a?’
+      sbs: 0.6577
+      gen_sec: 5.55
+      ref_sec: 6.11
+      cer: 0.0769
+      wer: 0.25
+    jw_00002:
+      source: jw
+      text: GYISƐSE HANLE EDWƐKƐ ZƆHANE BIE WƆ MEKƐ GYƐNE NU
+      sbs: 0.68
+      gen_sec: 3.33
+      ref_sec: 4.12
+      cer: 0.05
+      wer: 0.1111
+    jw_00003:
+      source: jw
+      text: Moalɛ Maa Mraalɛ Mɔɔ Bɛyɛ Bɛ Basabasa La
+      sbs: 0.6717
+      gen_sec: 2.73
+      ref_sec: 13.48
+      cer: 0.2727
+      wer: 0.875
+    jw_00004:
+      source: jw
+      text: ADESOA MƆƆ ƆWƆ KƐ ‘YƐFUANDI BƐ YƐGUA’
+      sbs: 0.639
+      gen_sec: 2.39
+      ref_sec: 3.33
+      cer: 0.1379
+      wer: 0.2857
+    jw_00005:
+      source: jw
+      text: Bɛdimoa Bɛsiezie Bɛ Nwo A, Ɔbahola Yeaboa Bɛ Abusua Ne
+      sbs: 0.7056
+      gen_sec: 3.75
+      ref_sec: 13.0
+      cer: 0.0909
+      wer: 0.4
+    jw_00006:
+      source: jw
+      text: Asoo Mɔɔ Mebiza La Kile Kɛ Mebu Gyihova?
+      sbs: 0.6623
+      gen_sec: 2.73
+      ref_sec: 3.76
+      cer: 0.0312
+      wer: 0.125
+    jw_00007:
+      source: jw
+      text: KƐZI YƐKILE KƐ GYIHOVA DUMA NE ANWO HYIA YƐ LA
+      sbs: 0.6852
+      gen_sec: 3.07
+      ref_sec: 3.83
+      cer: 0.027
+      wer: 0.1
+    jw_00008:
+      source: jw
+      text: Duzu A Ɔwɔ Kɛ Ɛyɛ Na Wɔanyia Dahuu Ngoane A?
+      sbs: 0.6869
+      gen_sec: 2.9
+      ref_sec: 4.14
+      cer: 0.0588
+      wer: 0.2
+    jw_00009:
+      source: jw
+      text: Kpondɛ “Life Stories of Jehovah’s Witnesses” wɔ Watchtower ONLINE LIBRARY ™ anzɛɛ Watchtower
+        Library ne anu.
+      sbs: 0.636
+      gen_sec: 7.42
+      ref_sec: 13.3
+      cer: 0.1364
+      wer: 0.4
+    jw_00010:
+      source: jw
+      text: Ndenle mɔɔ Gyihova dua zo ka kile yɛ kɛ ɔ nye die yɛ nwo la bie mɔ a le boni?
+      sbs: 0.6774
+      gen_sec: 4.86
+      ref_sec: 5.37
+      cer: 0.1053
+      wer: 0.25
+    jw_00011:
+      source: jw
+      text: KƐ ƆKƐYƐ NA BƐAWULA GYIHOVA ANYUNLUNYIA Ɛ?
+      sbs: 0.6334
+      gen_sec: 2.99
+      ref_sec: 3.54
+      cer: 0.0857
+      wer: 0.2857
+    jw_00012:
+      source: jw
+      text: KƐZI YƐBAZUKOA YƐ ƐSƆFO KPANYINLI NE ƐNƐ LA
+      sbs: 0.6886
+      gen_sec: 2.99
+      ref_sec: 3.33
+      cer: 0.1389
+      wer: 0.625
+    jw_00013:
+      source: jw
+      text: NEA ADWENLE MƆƆ ƐFA ƐNO NEE DODO MƆƆ ƐNO LA
+      sbs: 0.6666
+      gen_sec: 2.82
+      ref_sec: 4.76
+      cer: 0.0
+      wer: 0.0
+    jw_00014:
+      source: jw
+      text: YƐKA EDWƐKƐ NE ƆLUAKƐ YƐKULO MENLI
+      sbs: 0.7124
+      gen_sec: 2.39
+      ref_sec: 3.9
+      cer: 0.0
+      wer: 0.0
+    jw_00015:
+      source: jw
+      text: Nyia Wɔ Baebolo Ɛgengalɛ Ne Azo Nvasoɛ Kpalɛ
+      sbs: 0.6365
+      gen_sec: 3.07
+      ref_sec: 3.76
+      cer: 0.0541
+      wer: 0.125
+    jw_00016:
+      source: jw
+      text: NDENLE GYƐNE MƆƆ YƐBALUA ZO YƐAMAA YƐ NWO ANWOSESEBƐ
+      sbs: 0.6482
+      gen_sec: 3.67
+      ref_sec: 5.39
+      cer: 0.0909
+      wer: 0.4444
+    jw_00017:
+      source: jw
+      text: Die To Nu Kɛ Tɛ Debie Biala A Ɛze A
+      sbs: 0.6964
+      gen_sec: 2.13
+      ref_sec: 3.54
+      cer: 0.1923
+      wer: 0.6
+    jw_00018:
+      source: jw
+      text: Saa yɛlɛyia ezukoa nwo ngyegyelɛ a, kɛzi yɛbahile kɛ yɛfa yɛ nwo yɛto Gyihova anwo zo ɛ?
+      sbs: 0.7039
+      gen_sec: 6.06
+      ref_sec: 6.85
+      cer: 0.0857
+      wer: 0.2941
+    jw_00019:
+      source: jw
+      text: Kɛzi Gyihova nɔhalɛ ɛtanefakyɛ ne boa wɔ ɛ?
+      sbs: 0.7112
+      gen_sec: 2.99
+      ref_sec: 4.38
+      cer: 0.0857
+      wer: 0.625
+    jw_00020:
+      source: jw
+      text: Kɛzi ɛlɔlɛ maa bɛnwu Gyisɛse nɔhalɛ ɛdoavolɛma ɛ?
+      sbs: 0.6869
+      gen_sec: 3.5
+      ref_sec: 4.84
+      cer: 0.1463
+      wer: 0.625
+    jw_00021:
+      source: jw
+      text: yɛ hu anzɛɛ yɛ ye baye yɛ rɛle ado yɛ sa nu la ɛ?
+      sbs: 0.7016
+      gen_sec: 2.99
+      ref_sec: 5.0
+      cer: 0.0571
+      wer: 0.3571
+    jw_00022:
+      source: jw
+      text: Yɛlɛto aleɛ wɔ Waiswa abusua ne sua nu ɛkɛ
+      sbs: 0.6544
+      gen_sec: 2.82
+      ref_sec: 6.9
+      cer: 0.2353
+      wer: 0.4444
+    jw_00023:
+      source: jw
+      text: SAA YƐYE NYAMENLE DUMA NE AYƐLƐ A, KƐZI . . .
+      sbs: 0.7337
+      gen_sec: 2.9
+      ref_sec: 3.85
+      cer: 0.129
+      wer: 0.375
+    jw_00024:
+      source: jw
+      text: Sukoa kɛzi Gyisɛse maanle bɛnwunle Gyihova duma ne nee adenle mɔɔ ɔluale zo ɔdele duma zɔhane
+        anwo la anwo debie.
+      sbs: 0.6945
+      gen_sec: 7.85
+      ref_sec: 8.58
+      cer: 0.0538
+      wer: 0.15
+    jw_00025:
+      source: jw
+      text: GYIHOVA ANYE SƆ NƆHALƐLILƐ MƆƆ ƐLƐFA WƆAZONLE YE LA
+      sbs: 0.6897
+      gen_sec: 3.58
+      ref_sec: 4.31
+      cer: 0.1395
+      wer: 0.5556
+    jw_00026:
+      source: jw
+      text: Saa ɛlɛ gyimalilɛ mɔɔ le kpuya nee mualɛ la a, bɔ mɔdenle kɛ ɛbamaa menli dɔɔnwo amaa mualɛ.
+        Kɛ ɔkɛyɛ na wɔahola wɔayɛ ɛhye ɛ?
+      sbs: 0.7112
+      gen_sec: 8.53
+      ref_sec: 11.27
+      cer: 0.0404
+      wer: 0.16
+    jw_00027:
+      source: jw
+      text: KƆ ZO NYIA DWOBU BULUKU NE AZO NVASOƐ
+      sbs: 0.6512
+      gen_sec: 2.47
+      ref_sec: 3.16
+      cer: 0.0667
+      wer: 0.375
+    jw_00028:
+      source: jw
+      text: Duzu “nzuzulɛ” a Gyihova bava awula maanle maanle ne mɔ ahonle nu kenlensa ye ala a?
+      sbs: 0.6738
+      gen_sec: 5.63
+      ref_sec: 6.4
+      cer: 0.1061
+      wer: 0.25
+    jw_00029:
+      source: jw
+      text: Kɛzi Gyihova hilele alimoa Kilisienema adenle ɛ?
+      sbs: 0.6526
+      gen_sec: 3.5
+      ref_sec: 4.14
+      cer: 0.1463
+      wer: 1.0
+    jw_00030:
+      source: jw
+      text: Mekɛ mɔɔ bɛlɛkilehile kɛzi bɛholale bɛgyinlanle tɛnlabelɛ mɔɔ anu yɛ se la anloa la, bɛhanle
+        kɛ Gyihova zɔle bɛ kɛ “kolonvia amolɛ.” Duzu a ɛnee bɛlɛkile a?
+      sbs: 0.6928
+      gen_sec: 10.75
+      ref_sec: 10.09
+      cer: 0.064
+      wer: 0.2593
+    jw_00031:
+      source: jw
+      text: Saa yɛdi Gyihova adehilelɛ zo ɛnɛ a, kɛzi ɔboa yɛ ɛ?
+      sbs: 0.6922
+      gen_sec: 3.5
+      ref_sec: 5.44
+      cer: 0.1
+      wer: 0.3636
+    jw_00032:
+      source: jw
+      text: Duzu a ɛnee Gyisɛse lɛ ɛhulolɛ kɛ ɔbayɛ ɔlua Gyihova duma ne ati a, na duzu ati ɔ?
+      sbs: 0.7227
+      gen_sec: 5.46
+      ref_sec: 6.59
+      cer: 0.0476
+      wer: 0.1667
+    jw_00033:
+      source: jw
+      text: Bɛmaa yɛ gyimalilɛ fofolɛ wɔ Myanmar
+      sbs: 0.6664
+      gen_sec: 2.56
+      ref_sec: 5.03
+      cer: 0.5484
+      wer: 1.0
+    jw_00034:
+      source: jw
+      text: NYAMENLE EDWƐKƐ NE ƐGENGALƐ MAA YƐ NYE DIE
+      sbs: 0.6811
+      gen_sec: 2.9
+      ref_sec: 3.95
+      cer: 0.5714
+      wer: 0.875
+    jw_00035:
+      source: jw
+      text: YƐBOALE YƐ MEDIEMA MƆƆ WƆ RWANDA LA
+      sbs: 0.707
+      gen_sec: 2.39
+      ref_sec: 3.73
+      cer: 0.1724
+      wer: 0.7143
+    jw_00036:
+      source: jw
+      text: ‘Ndonwo boni a mebahola meava meahilehile nɔhalɛ ɛhye anu meahile awie a?’
+      sbs: 0.6911
+      gen_sec: 5.12
+      ref_sec: 6.54
+      cer: 0.0333
+      wer: 0.0833
+    jw_00037:
+      source: jw
+      text: Ninyɛne titili boni mɔ a maa Kilisienema atɔfolɛlielɛ wula Gyihova anyunlunyia a?
+      sbs: 0.6173
+      gen_sec: 5.89
+      ref_sec: 6.42
+      cer: 0.0725
+      wer: 0.5
+    jw_00038:
+      source: jw
+      text: MMAMAA Ɛ SA NU TO WƆ WƆ MBUSUAFOƆ ANWO
+      sbs: 0.698
+      gen_sec: 2.47
+      ref_sec: 3.85
+      cer: 0.1
+      wer: 0.4444
+    jw_00039:
+      source: jw
+      text: Bɛmaa raalɛ ne anwosesebɛ kɛ ɔnwu ɔ nwo kɛ mɔɔ Gyihova nwu ye la na ɔhɔ zo ɔyɛ sunsum nu ninyɛne
+        le kɛ bɛtianwo debiezukoalɛ nee asɔneyɛlɛ.
+      sbs: 0.6974
+      gen_sec: 9.47
+      ref_sec: 11.15
+      cer: 0.0357
+      wer: 0.2963
+    jw_00040:
+      source: jw
+      text: Deɛmɔti Bɛlɛkpɔ Wɔ A Ɛ Nye Bahola Alie La
+      sbs: 0.6861
+      gen_sec: 2.73
+      ref_sec: 4.04
+      cer: 0.2121
+      wer: 0.8889
+    jw_00041:
+      source: jw
+      text: BOA Ɛ RA MAA ƆHOLA ƆHILEHILE YE DIEDI NE ANU
+      sbs: 0.6688
+      gen_sec: 2.9
+      ref_sec: 4.53
+      cer: 0.0857
+      wer: 0.7
+    jw_00042:
+      source: jw
+      text: Sukoa kɛzi yɛbahola yɛamia anwodozo mɔɔ yɛlɛ wɔ Gyihova anu la anu na yɛali ninyɛne mɔɔ ka
+        yɛ ɛzulolɛ la azo la anwo debie.
+      sbs: 0.7119
+      gen_sec: 8.36
+      ref_sec: 8.53
+      cer: 0.0707
+      wer: 0.2917
+    jw_00043:
+      source: jw
+      text: “Saa ninyɛnebɔlɛ le nɔhalɛ a, ɛnee nwane a bɔle Bɔvolɛ ne a?”
+      sbs: 0.7201
+      gen_sec: 4.01
+      ref_sec: 5.29
+      cer: 0.0217
+      wer: 0.1667
+    jw_00044:
+      source: jw
+      text: yeayɛ nzenzaleɛ na yeava Gyihova ɛzonlenlɛ yealimoa ɛ?
+      sbs: 0.6653
+      gen_sec: 3.93
+      ref_sec: 4.38
+      cer: 0.2391
+      wer: 0.75
+    jw_00045:
+      source: jw
+      text: Ndenle nsa mɔɔ yɛbahola yɛalua zo yɛanyia anyuhɔlɛ wɔ yɛ ngilehilelɛ nu wɔ daselɛlilɛ nu la.
+      sbs: 0.6603
+      gen_sec: 6.49
+      ref_sec: 7.41
+      cer: 0.0526
+      wer: 0.25
+    jw_00046:
+      source: jw
+      text: DEƐMƆTI ƆFƐTA KƐ YƐSONLE GYIHOVA LA
+      sbs: 0.6505
+      gen_sec: 2.47
+      ref_sec: 3.35
+      cer: 0.1333
+      wer: 0.5
+    jw_00047:
+      source: jw
+      text: Edwɛkɛ ɛhye bamaa yɛanwu kɛ Gyihova ze nyane mɔɔ yɛlɛdi la na ɔbamaa yɛ sa aha mɔɔ yɛhyia
+        nwo amaa yɛ rɛle akyekye la.
+      sbs: 0.6997
+      gen_sec: 7.94
+      ref_sec: 9.11
+      cer: 0.1064
+      wer: 0.3333
+    jw_00048:
+      source: jw
+      text: Kɛzi yɛbahile kɛ yɛkulo yɛ mediema ɛ?
+      sbs: 0.7183
+      gen_sec: 2.56
+      ref_sec: 3.47
+      cer: 0.0333
+      wer: 0.1429
+    jw_00049:
+      source: jw
+      text: KƐZI GYIHOVA KILE YƐ ADENLE ƐNƐ LA
+      sbs: 0.6426
+      gen_sec: 2.3
+      ref_sec: 3.92
+      cer: 0.4643
+      wer: 1.0
+    jw_00050:
+      source: jw
+      text: ‘ƆYELE MENLI BIE ƆMAANLE YE DUMA’
+      sbs: 0.6691
+      gen_sec: 2.13
+      ref_sec: 3.25
+      cer: 0.1154
+      wer: 0.3333
+    jw_00051:
+      source: jw
+      text: Zɔhane a wɔ tɛnlabelɛ ne de ɔ? Saa ɔle zɔ a, duzu a baboa wɔ yeamaa wɔanwu kɛ ɔwɔ kɛ ɛkɔ zo
+        ɛka kale anzɛɛ ɛgyakyi a?
+      sbs: 0.7211
+      gen_sec: 7.59
+      ref_sec: 10.64
+      cer: 0.0682
+      wer: 0.1852
+    jw_00052:
+      source: jw
+      text: SIEZIE Ɛ NWO KPALƐ MAA DASELƐLILƐ
+      sbs: 0.6697
+      gen_sec: 2.3
+      ref_sec: 3.3
+      cer: 0.2143
+      wer: 0.5
+    jw_00053:
+      source: jw
+      text: Kɛzi Ɛbaziezie Ɛ Nwo Wɔamaa Ɛzɔnenlɛ La
+      sbs: 0.6776
+      gen_sec: 2.73
+      ref_sec: 3.78
+      cer: 0.0909
+      wer: 0.2857
+    jw_00054:
+      source: jw
+      text: Yɛ debie mɔɔ ɔbahakye wɔ la. Ɛbahola wɔasɛte alarm wɔ wɔ fonu ne azo amaa mekɛ dwu a yeazu
+        yeahakye wɔ yeamaa wɔagenga Baebolo ne.
+      sbs: 0.7425
+      gen_sec: 8.87
+      ref_sec: 11.37
+      cer: 0.125
+      wer: 0.56
+    jw_00055:
+      source: jw
+      text: KƐZI GYIHOVA KA KILE YƐ KƐ Ɔ NYE DIE YƐ NWO Ɛ?
+      sbs: 0.6889
+      gen_sec: 2.9
+      ref_sec: 3.92
+      cer: 0.2941
+      wer: 0.6667
+    jw_00056:
+      source: jw
+      text: Kɛzi nwunu bahola aboa yɛ yeamaa yɛavi mɛlɛbɛnwoaze nu yɛabua awie mɔ ɛ?
+      sbs: 0.6932
+      gen_sec: 5.03
+      ref_sec: 5.89
+      cer: 0.1525
+      wer: 0.6154
+    jw_00057:
+      source: jw
+      text: 'Saa ɛlɛyɛ ɛkpɔnedeɛ ne anwo neɛnleanu a, ɛbahola wɔakpondɛ edwɛkɛ mɔɔ bua kpuya ɛhye mɔ la:'
+      sbs: 0.6911
+      gen_sec: 6.4
+      ref_sec: 6.25
+      cer: 0.0946
+      wer: 0.25
+    jw_00058:
+      source: jw
+      text: Saa ɔba ye wɔ kpɔkɛdelɛ nwo edwɛkɛ nu a, kɛ ɔkɛyɛ na yɛahile kɛ yɛlɛ ndelebɛbo ɛ?
+      sbs: 0.6623
+      gen_sec: 5.46
+      ref_sec: 6.59
+      cer: 0.0476
+      wer: 0.2941
+    jw_00059:
+      source: jw
+      text: ME NEE ME YE VALE YƐ NWO DOLE GYIHOVA ANWO ZO
+      sbs: 0.6917
+      gen_sec: 2.9
+      ref_sec: 4.12
+      cer: 0.1714
+      wer: 0.3636
+    jw_00060:
+      source: jw
+      text: Neazo boni a Gyisɛse yɛle maanle yɛ wɔ mekɛ mɔɔ ɛnee menli ne kulo kɛ bɛsie ye belemgbunli
+        la ɛ?
+      sbs: 0.6979
+      gen_sec: 6.49
+      ref_sec: 7.76
+      cer: 0.0789
+      wer: 0.25
+    jw_00061:
+      source: jw
+      text: KƐZI BULALƐ NEE NDƐTƐLƐ EGYAKƐ TABOA NE ANWO EDWƐKƐ NE FALE Ɛ NWO Ɛ?
+      sbs: 0.7147
+      gen_sec: 4.61
+      ref_sec: 7.57
+      cer: 0.1667
+      wer: 0.6429
+    jw_00062:
+      source: jw
+      text: Menwu Ye Kɛ Nɔhavoma Kpazi
+      sbs: 0.6395
+      gen_sec: 1.79
+      ref_sec: 4.26
+      cer: 0.0
+      wer: 0.8
+    jw_00063:
+      source: jw
+      text: Gage Fleegle nee ɔ ye, Nadia
+      sbs: 0.6279
+      gen_sec: 1.88
+      ref_sec: 5.96
+      cer: 0.5455
+      wer: 1.0
+    jw_00064:
+      source: jw
+      text: SAA BƐSƆ WƆ MƐLƐBƐNWOAZE BƐNEA A
+      sbs: 0.6712
+      gen_sec: 2.22
+      ref_sec: 3.66
+      cer: 0.4074
+      wer: 0.8333
+    jw_00065:
+      source: jw
+      text: Sukoa Debie Fi “Arɛlekyekyelɛ Muala Nyamenle Ne” Ɛkɛ
+      sbs: 0.7068
+      gen_sec: 3.58
+      ref_sec: 4.74
+      cer: 0.0465
+      wer: 0.125
+    jw_00066:
+      source: jw
+      text: KƐZI ƐTANE MƆƆ WƆ YƐ NWO LA BAHOLA AMAA YƐADE NGANEƐ LA
+      sbs: 0.7042
+      gen_sec: 3.67
+      ref_sec: 4.17
+      cer: 0.0455
+      wer: 0.5
+    jw_00067:
+      source: jw
+      text: Debie Mɔɔ Ɛbahola Wɔava Wɔayɛ Neɛnleanu La
+      sbs: 0.6625
+      gen_sec: 2.99
+      ref_sec: 4.31
+      cer: 0.1944
+      wer: 0.7143
+    jw_00068:
+      source: jw
+      text: Kɛ ɔkɛyɛ na wɔahola wɔahile kɛ ɛfa ɔ nwo ɛto Gyihova anwo zo kɛ mɔɔ Samesɛn yɛle la ɛ?
+      sbs: 0.654
+      gen_sec: 5.72
+      ref_sec: 6.76
+      cer: 0.0299
+      wer: 0.1053
+    jw_00069:
+      source: jw
+      text: KƐZI NWUNU KOLA BOA YƐ ƆMAA YƐBƐLƐ YƐ NWO AZE LA
+      sbs: 0.6792
+      gen_sec: 3.16
+      ref_sec: 3.83
+      cer: 0.1842
+      wer: 0.9091
+    jw_00070:
+      source: jw
+      text: Duzu a baboa wɔ amaa wɔanyɛ ɛtane kpole a?
+      sbs: 0.676
+      gen_sec: 2.82
+      ref_sec: 3.95
+      cer: 0.0606
+      wer: 0.5556
+    jw_00071:
+      source: jw
+      text: Kɛ Ɔkɛyɛ Na Wɔayɛ Agɔnwolɛ Kpalɛ La
+      sbs: 0.6749
+      gen_sec: 2.39
+      ref_sec: 3.23
+      cer: 0.1034
+      wer: 0.4286
+    jw_00072:
+      source: jw
+      text: Saa yɛbɛlɛ yɛ nwo aze a, duzu a yɛbalie yɛado nu a?
+      sbs: 0.7073
+      gen_sec: 3.33
+      ref_sec: 4.53
+      cer: 0.1053
+      wer: 0.25
+    jw_00073:
+      source: jw
+      text: Kɛ ɔkɛyɛ na yɛakyekye awie mɔ arɛle ɛ?
+      sbs: 0.6801
+      gen_sec: 2.56
+      ref_sec: 3.42
+      cer: 0.1667
+      wer: 0.375
+    jw_00074:
+      source: jw
+      text: SAA AWIE YE WƆ MAA A
+      sbs: 0.7067
+      gen_sec: 1.19
+      ref_sec: 3.25
+      cer: 0.1333
+      wer: 0.3333
+    jw_00075:
+      source: jw
+      text: Diedi nee gyima nwo debie boni a yɛsukoa yɛfi Gyemise ɛkɛ a?
+      sbs: 0.6889
+      gen_sec: 4.1
+      ref_sec: 5.96
+      cer: 0.125
+      wer: 0.5
+    jw_00076:
+      source: jw
+      text: Tɛnlabelɛ boni mɔ a kola sɛkye mediema mɔɔ bɛyɛ mrelera la anyelielɛ a?
+      sbs: 0.6818
+      gen_sec: 4.95
+      ref_sec: 5.39
+      cer: 0.1897
+      wer: 0.5385
+    jw_00077:
+      source: jw
+      text: MEKƐ MƆƆ BƐBAHA EDWƐKƐ ANZƐƐ BƐBAYƐ DEBIE MƆƆ YƐ NYANE LA
+      sbs: 0.6775
+      gen_sec: 3.93
+      ref_sec: 6.42
+      cer: 0.1277
+      wer: 0.3636
+    jw_00078:
+      source: jw
+      text: Gyihova Ɛtanefakyɛ Ne​—Kɛzi Ɛbahola Wɔazukoa Ɛ?
+      sbs: 0.6581
+      gen_sec: 3.41
+      ref_sec: 4.31
+      cer: 0.1026
+      wer: 1.3333
+    jw_00079:
+      source: jw
+      text: KƐ ƆKƐYƐ NA YƐAKYEKYE AWIE MƆ ARƐLE LA
+      sbs: 0.6756
+      gen_sec: 2.56
+      ref_sec: 3.56
+      cer: 0.1613
+      wer: 0.375
+    jw_00080:
+      source: jw
+      text: Yɛbanlea nzuzulɛ bie mɔ mɔɔ baboa yɛ yeamaa yɛabikye yɛ mediema diedima kpalɛ nee nyilalɛ
+        mɔɔ saa yɛyɛ ye zɔ a yɛbanyia la.
+      sbs: 0.7056
+      gen_sec: 8.45
+      ref_sec: 8.7
+      cer: 0.05
+      wer: 0.2174
+    jw_00081:
+      source: jw
+      text: Duzu a baboa yeamaa bɛ atɔfolɛlielɛ ne ayɛ anyelielɛ na yeawula Gyihova anyunlunyia a?
+      sbs: 0.6621
+      gen_sec: 6.14
+      ref_sec: 5.92
+      cer: 0.0833
+      wer: 0.4286
+    jw_00082:
+      source: jw
+      text: ɛtwe adwenle ɛkɔ Gyihova anwo zo ɛ?
+      sbs: 0.6664
+      gen_sec: 2.39
+      ref_sec: 6.68
+      cer: 0.3214
+      wer: 0.8571
+    jw_00083:
+      source: jw
+      text: Mia Diedi Mɔɔ Ɛlɛ Wɔ Gyihova Ɛwɔkɛ Mɔɔ Fale Ewiade Fofolɛ Ne Anwo La Anu
+      sbs: 0.6992
+      gen_sec: 4.86
+      ref_sec: 6.08
+      cer: 0.0862
+      wer: 0.2667
+    jw_00084:
+      source: jw
+      text: KƐZI ƐBAYE Ɔ NLOA Ɛ?
+      sbs: 0.6337
+      gen_sec: 1.28
+      ref_sec: 3.06
+      cer: 0.4
+      wer: 1.0
+    jw_00085:
+      source: jw
+      text: Kɛzi ɛnee “Nwuanzanwuanza Adenle” ne fale tete Dwuuma ne anwo ɛ?
+      sbs: 0.7044
+      gen_sec: 4.35
+      ref_sec: 5.99
+      cer: 0.0
+      wer: 0.0
+    jw_00086:
+      source: jw
+      text: yɛnyia anyelazo kɛ yɛbali munli kenle bie ɛ?
+      sbs: 0.716
+      gen_sec: 3.07
+      ref_sec: 4.76
+      cer: 0.0556
+      wer: 0.25
+    jw_00087:
+      source: jw
+      text: Ɔnva nwo ɛvolɛ mɔɔ wɔnyia la ɛbahola wɔava daselɛlilɛ ehwili ne wɔali gyima ɔ?
+      sbs: 0.6571
+      gen_sec: 5.46
+      ref_sec: 10.4
+      cer: 0.1406
+      wer: 0.3571
+    jw_00088:
+      source: jw
+      text: Nɔhalɛ nee tenleneyɛlɛ nwo ɛlɔlɛ
+      sbs: 0.6616
+      gen_sec: 2.3
+      ref_sec: 3.73
+      cer: 0.1786
+      wer: 1.0
+    jw_00089:
+      source: jw
+      text: Gyihova anye sɔ biala mɔɔ ɛkola ɛyɛ ɛmaa ye la
+      sbs: 0.6752
+      gen_sec: 3.07
+      ref_sec: 4.5
+      cer: 0.0541
+      wer: 0.3
+    jw_00090:
+      source: jw
+      text: Duzu ati a yɛbikye yɛ mediema a ɔle kpalɛ ɔmaa yɛ a?
+      sbs: 0.6896
+      gen_sec: 3.41
+      ref_sec: 3.47
+      cer: 0.025
+      wer: 0.0833
+    jw_00091:
+      source: jw
+      text: SAA WƆ SINLIDƆLƐ MAA Ɛ SA NU TO A
+      sbs: 0.6179
+      gen_sec: 2.05
+      ref_sec: 3.56
+      cer: 0.28
+      wer: 0.6667
+    jw_00092:
+      source: jw
+      text: KƐ ƆKƐYƐ NA YƐAHƆ ZO YƐAZƆ NƆHALƐ NE ANU LA
+      sbs: 0.686
+      gen_sec: 2.82
+      ref_sec: 4.24
+      cer: 0.2059
+      wer: 0.7
+    jw_00093:
+      source: jw
+      text: DUZU A BABOA YƐ YEAMAA YƐALIE YƐALI KƐ GYIHOVA ƐVA YƐ ƐTANE ƐHYƐ YƐ A?
+      sbs: 0.7105
+      gen_sec: 4.69
+      ref_sec: 6.11
+      cer: 0.1636
+      wer: 0.4
+    jw_00094:
+      source: jw
+      text: Duzu ati a ɛnee ɛkpɔnedeɛ ne hyia a? Duzu ati a Gyihova anva Adam nee Yive ɛtane angyɛ bɛ
+        ɛkɛ ne ala a?
+      sbs: 0.7182
+      gen_sec: 6.83
+      ref_sec: 8.1
+      cer: 0.0633
+      wer: 0.1739
+    jw_00095:
+      source: jw
+      text: Kɛzi Sɔɔlo mɔɔ vi Taasɛse nee Kɔnileɛse lile ngyegyelɛ mɔɔ anrɛɛ ɔnrɛmaa bɛnrɛfɛta kɛ bɛbazɔne
+        bɛ la azo ɛ?
+      sbs: 0.7211
+      gen_sec: 7.42
+      ref_sec: 10.55
+      cer: 0.1136
+      wer: 0.4211
+    jw_00096:
+      source: jw
+      text: KƐZI GYIHOVA HILELE YIZILAYƐ MAANLE NE ADENLE LA
+      sbs: 0.6546
+      gen_sec: 3.41
+      ref_sec: 4.26
+      cer: 0.122
+      wer: 0.625
+    jw_00097:
+      source: jw
+      text: Ɛlɔlɛ mɔɔ yɛlɛ yɛmaa Gyihova nee ye duma ne la
+      sbs: 0.6575
+      gen_sec: 3.07
+      ref_sec: 4.93
+      cer: 0.1351
+      wer: 0.5
+    jw_00098:
+      source: jw
+      text: Mɔɔ tɔ zo nsa, saa Asomasi nee Wulutu wo ngakula bieko a, ɔwɔ kɛ bɛ nee ɔ mra gyɛne kyɛ ye
+        agyapadeɛ ne.
+      sbs: 0.6792
+      gen_sec: 6.91
+      ref_sec: 8.12
+      cer: 0.0886
+      wer: 0.2609
+    jw_00099:
+      source: jw
+      text: DUZU A YƐBAHOLA YƐAYƐ AMAA . . .
+      sbs: 0.7565
+      gen_sec: 2.05
+      ref_sec: 3.59
+      cer: 0.1364
+      wer: 0.2
 - model: ghananlpcommunity/ghana-tts-72k-ref
   model_url: https://huggingface.co/ghananlpcommunity/ghana-tts-72k
   mode: ref
@@ -18728,4 +20430,4 @@ benchmarks:
       ref_sec: 3.59
       cer: 2.5909
       wer: 5.2
-updated: '2026-10-01'
+updated: '2026-10-09'

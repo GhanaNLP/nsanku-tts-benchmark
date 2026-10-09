@@ -13147,6 +13147,1648 @@ benchmarks:
       ref_sec: 4.5
       cer: 0.0909
       wer: 0.3333
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.665
+  num_scored: 200
+  cer: 0.3276
+  wer: 0.7232
+  accuracy: 0.6724
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.6687
+  score: 0.6687
+  per_source:
+    bible:
+      sbs: 0.7297
+      cer: 0.1362
+      n: 100
+    finance:
+      sbs: 0.6004
+      cer: 0.5191
+      n: 100
+  entries:
+    bible_00000:
+      source: bible
+      text: Esiane mʼankasa mʼanuonyam ne mʼakoa Dawid nti.
+      sbs: 0.6978
+      gen_sec: 3.33
+      ref_sec: 3.12
+      cer: 0.275
+      wer: 1.1429
+    bible_00001:
+      source: bible
+      text: ” Ɔyɛɛ saa de adagyaw a nʼanan nso sisi fam dii akɔneaba.
+      sbs: 0.6877
+      gen_sec: 3.84
+      ref_sec: 3.96
+      cer: 0.0909
+      wer: 0.4545
+    bible_00002:
+      source: bible
+      text: Munnue, mo a mode nnaadaa nhoma twetwe bɔne.
+      sbs: 0.7536
+      gen_sec: 3.41
+      ref_sec: 3.4
+      cer: 0.0857
+      wer: 0.25
+    bible_00003:
+      source: bible
+      text: Mommma mo werɛ mmfi sɛ mobɛyɛ mo ho mo ho papa aboaboa mo ho mo ho, efisɛ ɛno ne afɔrebɔ a
+        ɛsɔ Onyankopɔn ani.
+      sbs: 0.7281
+      gen_sec: 7.77
+      ref_sec: 6.24
+      cer: 0.1059
+      wer: 0.3333
+    bible_00004:
+      source: bible
+      text: Eye, na afei ananafo ano ne kasa foforo.
+      sbs: 0.7069
+      gen_sec: 2.9
+      ref_sec: 3.3
+      cer: 0.1613
+      wer: 0.5
+    bible_00005:
+      source: bible
+      text: Eyi di ho adanse sɛ na ɔyɛ onipa kɛse a Agya Abraham mpo tumi ma no nʼasade mu nkyɛmu du mu
+        baako.
+      sbs: 0.7572
+      gen_sec: 6.66
+      ref_sec: 6.02
+      cer: 0.0395
+      wer: 0.1818
+    bible_00006:
+      source: bible
+      text: Nkɔmhyɛ A Etia Arabia.
+      sbs: 0.6886
+      gen_sec: 1.62
+      ref_sec: 4.44
+      cer: 0.0556
+      wer: 0.25
+    bible_00007:
+      source: bible
+      text: na wɔde wɔn anofafa hyɛ me anuonyam.
+      sbs: 0.659
+      gen_sec: 2.65
+      ref_sec: 12.08
+      cer: 0.1379
+      wer: 0.4286
+    bible_00008:
+      source: bible
+      text: Yuda rehwe ase; wɔn nsɛm ne nneyɛe tia Awurade.
+      sbs: 0.7466
+      gen_sec: 3.41
+      ref_sec: 3.76
+      cer: 0.0811
+      wer: 0.3333
+    bible_00009:
+      source: bible
+      text: Afei nguan bɛkɔ adidi te sɛnea wɔwɔ wɔn adidibea; nguantenmma bedidi wɔ asikafo amamfo so.
+      sbs: 0.757
+      gen_sec: 6.74
+      ref_sec: 6.78
+      cer: 0.1351
+      wer: 0.4
+    bible_00010:
+      source: bible
+      text: Monnka Hebri na nnipa a wɔwɔ ɔfasu no so no bɛte ase.
+      sbs: 0.7093
+      gen_sec: 3.75
+      ref_sec: 3.86
+      cer: 0.0976
+      wer: 0.5
+    bible_00011:
+      source: bible
+      text: abɛpete trenee agu wo so.
+      sbs: 0.6221
+      gen_sec: 1.88
+      ref_sec: 10.02
+      cer: 0.2
+      wer: 0.6
+    bible_00012:
+      source: bible
+      text: fii nʼakyirikyiri ntwea so, na mefrɛɛ wo.
+      sbs: 0.7861
+      gen_sec: 3.07
+      ref_sec: 3.06
+      cer: 0.0909
+      wer: 0.4286
+    bible_00013:
+      source: bible
+      text: Ɔde dua no mu fa sɔ ogya; so na ɔnoa nʼaduan.
+      sbs: 0.7454
+      gen_sec: 2.9
+      ref_sec: 3.3
+      cer: 0.0909
+      wer: 0.2727
+    bible_00014:
+      source: bible
+      text: “Nanso Israelfo bɛyɛ sɛ mpoano nwea a wontumi nkan wɔn.
+      sbs: 0.7169
+      gen_sec: 4.01
+      ref_sec: 3.14
+      cer: 0.1364
+      wer: 0.6
+    bible_00015:
+      source: bible
+      text: Wɔyɛɛ afoforo bi nso ayayade sɛ anka wɔmpa Onyankopɔn na wonnyaa wɔn.
+      sbs: 0.6809
+      gen_sec: 5.12
+      ref_sec: 4.3
+      cer: 0.0351
+      wer: 0.1667
+    bible_00016:
+      source: bible
+      text: Muntwa nkɔ Tarsis; muntwa adwo, mo a mowɔ supɔw no so.
+      sbs: 0.735
+      gen_sec: 4.01
+      ref_sec: 4.0
+      cer: 0.3659
+      wer: 0.7273
+    bible_00017:
+      source: bible
+      text: Memaa wɔn aduan no, wodi mee; wɔmee no, wɔyɛɛ ahantan; na wɔn werɛ fii me.
+      sbs: 0.779
+      gen_sec: 5.38
+      ref_sec: 4.96
+      cer: 0.2364
+      wer: 0.6
+    bible_00018:
+      source: bible
+      text: oguamanfo a wɔnnkae wo; bɔ sankuten no yiye, to nnwom bebree.
+      sbs: 0.7748
+      gen_sec: 4.52
+      ref_sec: 4.96
+      cer: 0.1875
+      wer: 0.6364
+    bible_00019:
+      source: bible
+      text: ” Nanso na ɔhene no redwene sɛ, ne bere so de, obenya asomdwoe ne bammɔ.
+      sbs: 0.7628
+      gen_sec: 4.86
+      ref_sec: 6.7
+      cer: 0.1481
+      wer: 0.3571
+    bible_00020:
+      source: bible
+      text: a ɛrentwa mu da.
+      sbs: 0.6662
+      gen_sec: 1.19
+      ref_sec: 3.18
+      cer: 0.0833
+      wer: 0.75
+    bible_00021:
+      source: bible
+      text: ” Ɛnyɛ ɔno na ɔhene Hesekia atutu nʼabosonnan ne afɔremuka nyinaa, ahyɛ Yudafo sɛ wɔnsom wɔ
+        afɔremuka a ɛwɔ Yerusalem ha nko ara so no?
+      sbs: 0.7357
+      gen_sec: 9.73
+      ref_sec: 10.62
+      cer: 0.0741
+      wer: 0.3333
+    bible_00022:
+      source: bible
+      text: ahemfo somfo no; “Ahene behu wo na wɔasɔre.
+      sbs: 0.7387
+      gen_sec: 3.07
+      ref_sec: 3.72
+      cer: 0.0303
+      wer: 0.625
+    bible_00023:
+      source: bible
+      text: 'Wɔka kyerɛɛ no se, “Sɛnea ɔhene Hesekia ka ni: Saa da yi yɛ ɔhaw, animka ne animguase da.'
+      sbs: 0.7246
+      gen_sec: 6.31
+      ref_sec: 6.78
+      cer: 0.0896
+      wer: 0.6111
+    bible_00024:
+      source: bible
+      text: “Mommoaboa mo ho ano na mommra; munhyia mu, mo aguanfo a mufi amanaman so.
+      sbs: 0.7652
+      gen_sec: 5.38
+      ref_sec: 5.46
+      cer: 0.1404
+      wer: 0.6429
+    bible_00025:
+      source: bible
+      text: Mɛma Kores so wɔ me trenee mu; meteɛteɛ nʼakwan nyinaa.
+      sbs: 0.7514
+      gen_sec: 4.01
+      ref_sec: 4.06
+      cer: 0.25
+      wer: 0.5
+    bible_00026:
+      source: bible
+      text: ɔfasu tenten bi a ahyɛ kam na akyea.
+      sbs: 0.6821
+      gen_sec: 2.56
+      ref_sec: 3.42
+      cer: 0.1786
+      wer: 0.75
+    bible_00027:
+      source: bible
+      text: Afoforo bi nso wɔ hɔ a wama wɔn kwan sɛ wonnya ɔhome no.
+      sbs: 0.7203
+      gen_sec: 3.93
+      ref_sec: 10.4
+      cer: 0.093
+      wer: 0.2308
+    bible_00028:
+      source: bible
+      text: Hesekia buae se, “Wohuu biribiara a ɛwɔ mʼahemfi ha.
+      sbs: 0.7631
+      gen_sec: 3.75
+      ref_sec: 3.68
+      cer: 0.0976
+      wer: 0.3333
+    bible_00029:
+      source: bible
+      text: Momma yɛntwe yɛn ho mfi akwanside nyinaa ne bɔne a akyekyere yɛn denneennen no nyinaa ho na
+        yɛnyere yɛn ho wɔ mmirikakansi a ɛda yɛn anim no mu.
+      sbs: 0.7226
+      gen_sec: 10.5
+      ref_sec: 8.38
+      cer: 0.1034
+      wer: 0.2143
+    bible_00030:
+      source: bible
+      text: na wɔkari dwetɛ wɔ nsania so; wɔbɔ sika dwumfo paa, ma ɔde yɛ onyame bi.
+      sbs: 0.7653
+      gen_sec: 4.95
+      ref_sec: 5.64
+      cer: 0.2727
+      wer: 0.6
+    bible_00031:
+      source: bible
+      text: Asomdwoe kwan no, wonnim; atɛntrenee nni wɔn akwan so.
+      sbs: 0.7589
+      gen_sec: 4.01
+      ref_sec: 4.32
+      cer: 0.1163
+      wer: 0.3333
+    bible_00032:
+      source: bible
+      text: nnyigyei no maa mʼano poo biribiri; ɔporɔw hyɛn me nnompe mu.
+      sbs: 0.7047
+      gen_sec: 4.35
+      ref_sec: 3.58
+      cer: 0.3061
+      wer: 0.7273
+    bible_00033:
+      source: bible
+      text: '“Montwiw mmɛn me na muntie eyi: “Efi nkaebɔ a edi kan no, menkasaa wɔ kokoa mu; bere biara
+        a ebesi no, na mewɔ hɔ.'
+      sbs: 0.7734
+      gen_sec: 8.02
+      ref_sec: 8.74
+      cer: 0.2619
+      wer: 0.5833
+    bible_00034:
+      source: bible
+      text: 'Esiane saa nti, bere a Kristo rebɛba wiase no, ɔka kyerɛɛ Onyankopɔn se: “Wompɛ afɔrebɔ ne
+        ayɛyɛde.'
+      sbs: 0.7586
+      gen_sec: 7.34
+      ref_sec: 5.98
+      cer: 0.1538
+      wer: 0.4118
+    bible_00035:
+      source: bible
+      text: na odi maa mmaratofo.
+      sbs: 0.6901
+      gen_sec: 1.54
+      ref_sec: 3.46
+      cer: 0.1765
+      wer: 0.75
+    bible_00036:
+      source: bible
+      text: Ma wonhu wo mmɔdemmɔ wɔ wo nkurɔfo ho na ɛnhyɛ wɔn aniwu; ma ogya a wɔasɔ ama wʼatamfo no
+        nhyew wɔn.
+      sbs: 0.7661
+      gen_sec: 6.91
+      ref_sec: 7.52
+      cer: 0.1923
+      wer: 0.5714
+    bible_00037:
+      source: bible
+      text: Wɔn a wɔyɛ ahoni nyinaa bɛfɛre na wɔn anim agu ase; wɔbɛbɔ mu akɔ animguase mu.
+      sbs: 0.7743
+      gen_sec: 5.72
+      ref_sec: 5.82
+      cer: 0.1129
+      wer: 0.4375
+    bible_00038:
+      source: bible
+      text: Efisɛ mo, moapirim mo koma; moasisiw mo aso.
+      sbs: 0.7502
+      gen_sec: 3.24
+      ref_sec: 3.66
+      cer: 0.2059
+      wer: 1.125
+    bible_00039:
+      source: bible
+      text: Saa bere no, wɔde akyɛde bɛbrɛ Asafo Awurade.
+      sbs: 0.7442
+      gen_sec: 3.33
+      ref_sec: 3.3
+      cer: 0.1389
+      wer: 0.375
+    bible_00040:
+      source: bible
+      text: sɛnea Salman sɛee Bet Arbel ɔko da no.
+      sbs: 0.6635
+      gen_sec: 2.73
+      ref_sec: 5.14
+      cer: 0.1333
+      wer: 0.75
+    bible_00041:
+      source: bible
+      text: Munyi sikanibere mfi mo abrabɔ mu, na momma mo ani nsɔ nea mo nsa ka.
+      sbs: 0.6986
+      gen_sec: 4.86
+      ref_sec: 4.0
+      cer: 0.1698
+      wer: 0.5333
+    bible_00042:
+      source: bible
+      text: Awurade na ose.
+      sbs: 0.6326
+      gen_sec: 1.11
+      ref_sec: 3.5
+      cer: 0.1667
+      wer: 0.3333
+    bible_00043:
+      source: bible
+      text: ” Enti, ɔwaree Diblaim babea Gomer, na onyinsɛn woo ɔbabarima maa no.
+      sbs: 0.7635
+      gen_sec: 5.03
+      ref_sec: 4.14
+      cer: 0.2407
+      wer: 0.5455
+    bible_00044:
+      source: bible
+      text: Awurade nsa bɛda saa bepɔw yi so; nanso obetiatia Moab so.
+      sbs: 0.769
+      gen_sec: 4.27
+      ref_sec: 4.38
+      cer: 0.087
+      wer: 0.1818
+    bible_00045:
+      source: bible
+      text: ne nkataso a ɛkata aman nyinaa so no; Ɔbɛmene owu afebɔɔ.
+      sbs: 0.7653
+      gen_sec: 4.18
+      ref_sec: 4.64
+      cer: 0.0444
+      wer: 0.1818
+    bible_00046:
+      source: bible
+      text: ne wʼakofo bebrebe no so.
+      sbs: 0.7051
+      gen_sec: 1.79
+      ref_sec: 14.58
+      cer: 0.3
+      wer: 0.8
+    bible_00047:
+      source: bible
+      text: Ampa ara aman no te sɛ nsu sope wɔ bokiti mu; wɔde wɔn toto mfutuma a egu nsania so ho; ɔkari
+        nsupɔw te sɛnea ɛyɛ mfutuma muhumuhu.
+      sbs: 0.7296
+      gen_sec: 9.39
+      ref_sec: 10.46
+      cer: 0.098
+      wer: 0.6296
+    bible_00048:
+      source: bible
+      text: Sɛ wubenya apɔnkɔsotefo mpenu, afi wo asraafo mu a, ɔbɛma wɔn apɔnkɔ mpenu ama wɔatenatena
+        wɔn so.
+      sbs: 0.7426
+      gen_sec: 7.34
+      ref_sec: 7.82
+      cer: 0.1013
+      wer: 0.6471
+    bible_00049:
+      source: bible
+      text: Ne nne wosow asase saa bere no, nanso mprempren wahyɛ bɔ se, “Ɛnyɛ asase nko na mɛsan awosow
+        no, na mɛwosow ɔsoro nso bio saa ara.
+      sbs: 0.7821
+      gen_sec: 9.3
+      ref_sec: 8.54
+      cer: 0.13
+      wer: 0.3462
+    bible_00050:
+      source: bible
+      text: sɛnea Melkisedek asɔfokwan nhyehyɛe te no.
+      sbs: 0.6723
+      gen_sec: 3.24
+      ref_sec: 10.08
+      cer: 0.1389
+      wer: 0.8333
+    bible_00051:
+      source: bible
+      text: 'nea ɔte ase daa a ne din yɛ kronkron no se: “Mete beae a ɛkorɔn na ɛyɛ kronkron.'
+      sbs: 0.7272
+      gen_sec: 5.55
+      ref_sec: 5.6
+      cer: 0.0833
+      wer: 0.3889
+    bible_00052:
+      source: bible
+      text: obesiesie nnuan pa ne nsa a adi nna; nam pa ne nsa pa ama nnipa nyinaa.
+      sbs: 0.7209
+      gen_sec: 4.95
+      ref_sec: 5.54
+      cer: 0.0926
+      wer: 0.5
+    bible_00053:
+      source: bible
+      text: “Nanso mo mmuada da no, moyɛ nea mopɛ.
+      sbs: 0.734
+      gen_sec: 2.65
+      ref_sec: 3.5
+      cer: 0.0714
+      wer: 0.375
+    bible_00054:
+      source: bible
+      text: mo a mowɔ asase ano nyinaa; efisɛ mene Onyankopɔn, na obiara nni hɔ.
+      sbs: 0.7681
+      gen_sec: 4.95
+      ref_sec: 6.02
+      cer: 0.1321
+      wer: 0.4615
+    bible_00055:
+      source: bible
+      text: nea menwen no na meyɛɛ no.
+      sbs: 0.6587
+      gen_sec: 1.88
+      ref_sec: 9.44
+      cer: 0.25
+      wer: 0.3333
+    bible_00056:
+      source: bible
+      text: na wasisi ahemfi akɛseakɛse; Yuda abɔ nkurow bebree ho ban.
+      sbs: 0.7142
+      gen_sec: 4.44
+      ref_sec: 3.22
+      cer: 0.1042
+      wer: 0.4
+    bible_00057:
+      source: bible
+      text: Momma yɛmfa yɛn ani nto Yesu a yɛn gyidi mfiase ne nʼawie gyina ne so no so.
+      sbs: 0.7063
+      gen_sec: 5.03
+      ref_sec: 4.12
+      cer: 0.0508
+      wer: 0.2941
+    bible_00058:
+      source: bible
+      text: Obi nnim Melkisedek agya, ne na, ne ne mpanyimfo ho asɛm.
+      sbs: 0.7737
+      gen_sec: 4.1
+      ref_sec: 3.66
+      cer: 0.1136
+      wer: 0.3636
+    bible_00059:
+      source: bible
+      text: Mete sɛ dua a nʼahaban mpo; sɛ wobɛsow aba a, egyina me so.
+      sbs: 0.7713
+      gen_sec: 4.01
+      ref_sec: 3.5
+      cer: 0.1364
+      wer: 0.4615
+    bible_00060:
+      source: bible
+      text: Ma nweatam ne so nkurow mma wɔn nne so; ma atenae a Kedar te so no nsɛpɛw wɔn ho.
+      sbs: 0.7625
+      gen_sec: 5.63
+      ref_sec: 5.76
+      cer: 0.1475
+      wer: 0.4211
+    bible_00061:
+      source: bible
+      text: Na Misraimfo yi yɛ nnipa kɛkɛ, wɔnyɛ Onyankopɔn.
+      sbs: 0.7608
+      gen_sec: 3.67
+      ref_sec: 3.5
+      cer: 0.0256
+      wer: 0.125
+    bible_00062:
+      source: bible
+      text: Woka se wowɔ akodi ho nyansa ne nʼahoɔden, nanso woka nsɛm hunu.
+      sbs: 0.7342
+      gen_sec: 4.61
+      ref_sec: 4.68
+      cer: 0.1765
+      wer: 0.5833
+    bible_00063:
+      source: bible
+      text: Monhwɛ yiye na mo mu bi anyɛ sɛ afifide a ɛyɛ nwen a enyin ma ne bɔnwoma no haw afoforo.
+      sbs: 0.6967
+      gen_sec: 6.14
+      ref_sec: 5.54
+      cer: 0.1471
+      wer: 0.55
+    bible_00064:
+      source: bible
+      text: na ɔde kyerɛwdua sensan; na ɔde pɛe yiyi ho.
+      sbs: 0.7132
+      gen_sec: 3.16
+      ref_sec: 3.12
+      cer: 0.1765
+      wer: 0.5556
+    bible_00065:
+      source: bible
+      text: ” Efisɛ, “me fi abubu.
+      sbs: 0.6509
+      gen_sec: 1.37
+      ref_sec: 13.02
+      cer: 0.2857
+      wer: 0.75
+    bible_00066:
+      source: bible
+      text: Lebanon bɛhwe ase wɔ Ɔkɛse no anim.
+      sbs: 0.6791
+      gen_sec: 2.56
+      ref_sec: 4.72
+      cer: 0.0714
+      wer: 0.2857
+    bible_00067:
+      source: bible
+      text: Ɔde mogya a ɔde bɔ ɔno ankasa ne ne nkurɔfo mfomso ho afɔre ka ne ho kɔ.
+      sbs: 0.6899
+      gen_sec: 4.86
+      ref_sec: 4.04
+      cer: 0.0727
+      wer: 0.2941
+    bible_00068:
+      source: bible
+      text: wɔn a wɔne no ayɛ dɔm benya so akatua; nsupɔw no nso obetua wɔn ka sɛnea ɛfata wɔn.
+      sbs: 0.7598
+      gen_sec: 5.89
+      ref_sec: 6.34
+      cer: 0.1094
+      wer: 0.3333
+    bible_00069:
+      source: bible
+      text: Gyidi yɛ ahotoso a yɛwɔ wɔ nneɛma a yɛn ani da so ne awerehyɛmu a yɛwɔ wɔ nneɛma a yɛn ani
+        nhu mu.
+      sbs: 0.7584
+      gen_sec: 6.66
+      ref_sec: 5.94
+      cer: 0.1467
+      wer: 0.7391
+    bible_00070:
+      source: bible
+      text: Yɛn agyanom a wɔwɔ asase so ha twee yɛn aso sɛnea wɔpɛ wɔ bere tiaa bi.
+      sbs: 0.7025
+      gen_sec: 4.86
+      ref_sec: 3.56
+      cer: 0.0909
+      wer: 0.3125
+    bible_00071:
+      source: bible
+      text: 'Wɔde adaeso a ɛyɛ nwonwa akyerɛ me: Ɔfatwafo di huammɔ, ɔfomfo fa asade.'
+      sbs: 0.75
+      gen_sec: 5.46
+      ref_sec: 6.26
+      cer: 0.0702
+      wer: 0.3077
+    bible_00072:
+      source: bible
+      text: 'saa ara na mʼasɛm a efi mʼanom no te: Ɛrensan mma me nkyɛn kwa.'
+      sbs: 0.7365
+      gen_sec: 4.27
+      ref_sec: 4.04
+      cer: 0.1458
+      wer: 0.3571
+    bible_00073:
+      source: bible
+      text: ‘Me ne no, obiara nni hɔ ka me ho.
+      sbs: 0.7233
+      gen_sec: 2.22
+      ref_sec: 13.94
+      cer: 0.0435
+      wer: 0.1111
+    bible_00074:
+      source: bible
+      text: Saa nantwi ba yi, odwumfo bi na osenii; ɛnyɛ Onyankopɔn!
+      sbs: 0.7722
+      gen_sec: 4.18
+      ref_sec: 3.16
+      cer: 0.1136
+      wer: 0.3
+    bible_00075:
+      source: bible
+      text: na sɛ onyan a ɔte sɛ ɔkɔm de no no; sɛnea obi a osukɔm de no so dae sɛ ɔrenom nsu.
+      sbs: 0.7346
+      gen_sec: 5.55
+      ref_sec: 5.86
+      cer: 0.1
+      wer: 0.2381
+    bible_00076:
+      source: bible
+      text: Minni aduan anaa ntama wɔ me fi; mfa me nyɛ nnipa no so kannifo.
+      sbs: 0.7346
+      gen_sec: 4.52
+      ref_sec: 13.5
+      cer: 0.4082
+      wer: 0.8571
+    bible_00077:
+      source: bible
+      text: Ɛbɛyɛ hintabea ne onwini wɔ awia anoden mu, na osu ne ahum mu nso, ɛbɛyɛ guankɔbea ne hintabea.
+      sbs: 0.7521
+      gen_sec: 6.91
+      ref_sec: 9.48
+      cer: 0.0933
+      wer: 0.4444
+    bible_00078:
+      source: bible
+      text: Hena na nʼani afura sɛ nea ɔde ne werɛ ahyɛ me mu.
+      sbs: 0.7183
+      gen_sec: 3.33
+      ref_sec: 3.02
+      cer: 0.1316
+      wer: 0.5
+    bible_00079:
+      source: bible
+      text: na wɔagya mo kwan asomdwoe mu; mmepɔw ne nkoko.
+      sbs: 0.7289
+      gen_sec: 3.24
+      ref_sec: 3.32
+      cer: 0.1622
+      wer: 0.5556
+    bible_00080:
+      source: bible
+      text: “nea ɔka fa Yerusalem ho se, ‘Wɔbɛtena mu,’.
+      sbs: 0.7606
+      gen_sec: 2.99
+      ref_sec: 3.22
+      cer: 0.0645
+      wer: 0.25
+    bible_00081:
+      source: bible
+      text: Nnome nka wɔn!
+      sbs: 0.6552
+      gen_sec: 1.02
+      ref_sec: 3.34
+      cer: 0.0
+      wer: 0.6667
+    bible_00082:
+      source: bible
+      text: a worentumi mfa mpata nyi mfi hɔ; atoyerɛnkyɛm a ɛnnaa ne ho adi nkyerɛɛ wo.
+      sbs: 0.7324
+      gen_sec: 5.55
+      ref_sec: 5.42
+      cer: 0.0833
+      wer: 0.4667
+    bible_00083:
+      source: bible
+      text: mefow wɔn ademude; mebrɛɛ wɔn ahemfo ase te sɛ ɔbran.
+      sbs: 0.7538
+      gen_sec: 3.93
+      ref_sec: 3.78
+      cer: 0.1905
+      wer: 0.5
+    bible_00084:
+      source: bible
+      text: Wɔn nsusuwii bɔne no dɛɛdɛɛ anadwo mu nyinaa; anɔpa, ɛdɛw te sɛ ogyatannaa.
+      sbs: 0.7319
+      gen_sec: 5.46
+      ref_sec: 3.82
+      cer: 0.1833
+      wer: 0.5385
+    bible_00085:
+      source: bible
+      text: “Me de, eyi yɛ me ne wɔn apam,” sɛnea Awurade se ni.
+      sbs: 0.7713
+      gen_sec: 3.41
+      ref_sec: 3.7
+      cer: 0.1111
+      wer: 0.5
+    bible_00086:
+      source: bible
+      text: Oguadini de asisi nsania yɛ nʼadwuma; nʼani gye asisi ho.
+      sbs: 0.6937
+      gen_sec: 3.93
+      ref_sec: 3.36
+      cer: 0.1739
+      wer: 0.8
+    bible_00087:
+      source: bible
+      text: twa ɔdɔ aba a ɛtena hɔ daa.
+      sbs: 0.6765
+      gen_sec: 1.88
+      ref_sec: 4.24
+      cer: 0.2
+      wer: 0.7143
+    bible_00088:
+      source: bible
+      text: Na Serafim a wɔn mu biara wɔ ntaban asia wɔ nʼatifi.
+      sbs: 0.6607
+      gen_sec: 3.67
+      ref_sec: 3.32
+      cer: 0.2195
+      wer: 0.7273
+    bible_00089:
+      source: bible
+      text: na yɛn trenee nneyɛe nyinaa te sɛ ntamagow fi; yɛn nyinaa akisa te sɛ ahaban.
+      sbs: 0.7359
+      gen_sec: 5.63
+      ref_sec: 5.44
+      cer: 0.0984
+      wer: 0.4
+    bible_00090:
+      source: bible
+      text: na wɔn a wɔte so nyinaa wuwu; wuram mmoa, wim nnomaa.
+      sbs: 0.7586
+      gen_sec: 3.84
+      ref_sec: 3.16
+      cer: 0.05
+      wer: 0.1818
+    bible_00091:
+      source: bible
+      text: mɛyɛ mmepɔw tamaa; mebubu kɔbere mfrafrae apon agu.
+      sbs: 0.7384
+      gen_sec: 3.93
+      ref_sec: 4.02
+      cer: 0.2619
+      wer: 0.875
+    bible_00092:
+      source: bible
+      text: Saa da no, Awurade bɛma ne nsa so ne mprenu so de agye ne nkurɔfo a wɔaka afi Asiria, Misraim
+        anafo fam, Misraim atifi fam, Kus, Elam, Babilonia, Hamat ne Po so asupɔw.
+      sbs: 0.7584
+      gen_sec: 12.03
+      ref_sec: 14.64
+      cer: 0.0625
+      wer: 0.3333
+    bible_00093:
+      source: bible
+      text: Wakasa akyerɛ me, na ɔno ankasa na wayɛ eyi.
+      sbs: 0.7428
+      gen_sec: 3.16
+      ref_sec: 3.14
+      cer: 0.0588
+      wer: 0.1111
+    bible_00094:
+      source: bible
+      text: 'Saa adehu yi baa afe a ɔhene Ahas wui no: Munnni ahurusi, mo Filistifo.'
+      sbs: 0.7775
+      gen_sec: 5.12
+      ref_sec: 5.54
+      cer: 0.1455
+      wer: 0.4286
+    bible_00095:
+      source: bible
+      text: Wɔde nnwonto bɛhyɛn Sion; anigye a ɛnsa da bɛyɛ wɔn abotiri.
+      sbs: 0.7455
+      gen_sec: 4.35
+      ref_sec: 4.14
+      cer: 0.0625
+      wer: 0.2727
+    bible_00096:
+      source: bible
+      text: Esiane sɛ ɛsɛ sɛ wobu wɔn adwuma ho akontaa nti, wɔhwɛ mo kra so a wɔnhome koraa.
+      sbs: 0.7439
+      gen_sec: 5.72
+      ref_sec: 6.02
+      cer: 0.0952
+      wer: 0.4118
+    bible_00097:
+      source: bible
+      text: Ne werɛ remfi adwuma a moyɛe anaa ɔdɔ a modaa no adi maa no ne mmoa a mode boaa mo mfɛfo Kristofo
+        na mugu so de boa wɔn no.
+      sbs: 0.739
+      gen_sec: 8.36
+      ref_sec: 7.64
+      cer: 0.0957
+      wer: 0.3448
+    bible_00098:
+      source: bible
+      text: Gyidi nti na bere a Onyankopɔn ka kyerɛɛ Abraham se ɔnkɔ asase a wahyɛ ho bɔ sɛ ɔde bɛma no
+        no so no, otiei na ɔkɔe.
+      sbs: 0.7275
+      gen_sec: 8.02
+      ref_sec: 8.3
+      cer: 0.1236
+      wer: 0.3462
+    bible_00099:
+      source: bible
+      text: Na Awurade ka kyerɛɛ Hosea se, “To ne din Lo-ruhama efisɛ, merenna me dɔ adi nkyerɛ Israelfo
+        bio, na meremfa wɔn ho nkyɛ wɔn koraa.
+      sbs: 0.7555
+      gen_sec: 9.47
+      ref_sec: 7.62
+      cer: 0.1386
+      wer: 0.4
+    finance_00000:
+      source: finance
+      text: Me ho ye paa ara
+      sbs: 0.5884
+      gen_sec: 1.02
+      ref_sec: 6.81
+      cer: 0.5
+      wer: 0.8
+    finance_00001:
+      source: finance
+      text: Yaw ne Ama
+      sbs: 0.5533
+      gen_sec: 1.02
+      ref_sec: 5.29
+      cer: 0.125
+      wer: 0.3333
+    finance_00003:
+      source: finance
+      text: Okuu adubɔfo
+      sbs: 0.6438
+      gen_sec: 1.02
+      ref_sec: 2.22
+      cer: 0.2727
+      wer: 1.0
+    finance_00004:
+      source: finance
+      text: Ma ɛtwee aboa bi
+      sbs: 0.6554
+      gen_sec: 1.19
+      ref_sec: 4.08
+      cer: 0.2308
+      wer: 0.75
+    finance_00005:
+      source: finance
+      text: Mefi Ghana
+      sbs: 0.5526
+      gen_sec: 1.02
+      ref_sec: 5.31
+      cer: 0.2222
+      wer: 1.0
+    finance_00006:
+      source: finance
+      text: Dɛɛbi dɛɛbi me pɛsɛ me tɔ
+      sbs: 0.5843
+      gen_sec: 1.79
+      ref_sec: 7.27
+      cer: 0.5
+      wer: 1.1667
+    finance_00007:
+      source: finance
+      text: Number bɛn na wo pɛse wo tɔ gu su
+      sbs: 0.6187
+      gen_sec: 2.22
+      ref_sec: 5.28
+      cer: 0.44
+      wer: 0.7778
+    finance_00008:
+      source: finance
+      text: Nokware di tuo
+      sbs: 0.5782
+      gen_sec: 1.02
+      ref_sec: 5.37
+      cer: 0.75
+      wer: 1.0
+    finance_00009:
+      source: finance
+      text: ɔkɔtɔ nnwo anomaa
+      sbs: 0.5811
+      gen_sec: 1.28
+      ref_sec: 7.72
+      cer: 0.3333
+      wer: 1.0
+    finance_00011:
+      source: finance
+      text: Sɔ kanea no
+      sbs: 0.6353
+      gen_sec: 1.02
+      ref_sec: 2.49
+      cer: 0.0
+      wer: 0.0
+    finance_00012:
+      source: finance
+      text: Wɔ ńkwankyɛn
+      sbs: 0.6029
+      gen_sec: 1.02
+      ref_sec: 5.35
+      cer: 0.8182
+      wer: 2.0
+    finance_00013:
+      source: finance
+      text: Tuu no
+      sbs: 0.6312
+      gen_sec: 1.02
+      ref_sec: 1.51
+      cer: 1.4
+      wer: 1.0
+    finance_00017:
+      source: finance
+      text: Wofi he
+      sbs: 0.5534
+      gen_sec: 1.02
+      ref_sec: 5.5
+      cer: 1.3333
+      wer: 1.5
+    finance_00018:
+      source: finance
+      text: Abofra yi
+      sbs: 0.6363
+      gen_sec: 1.02
+      ref_sec: 6.66
+      cer: 0.125
+      wer: 0.5
+    finance_00019:
+      source: finance
+      text: Saa ɔkɔre no
+      sbs: 0.6601
+      gen_sec: 1.02
+      ref_sec: 3.45
+      cer: 0.2
+      wer: 0.6667
+    finance_00020:
+      source: finance
+      text: Esian sɛ
+      sbs: 0.574
+      gen_sec: 1.02
+      ref_sec: 5.44
+      cer: 0.5714
+      wer: 1.5
+    finance_00021:
+      source: finance
+      text: To so ma me
+      sbs: 0.5982
+      gen_sec: 1.02
+      ref_sec: 4.77
+      cer: 0.75
+      wer: 0.5
+    finance_00022:
+      source: finance
+      text: Gyeene abiɛsa
+      sbs: 0.6167
+      gen_sec: 1.02
+      ref_sec: 4.44
+      cer: 0.25
+      wer: 1.0
+    finance_00023:
+      source: finance
+      text: Me nsa aka
+      sbs: 0.4931
+      gen_sec: 1.02
+      ref_sec: 2.45
+      cer: 0.75
+      wer: 1.0
+    finance_00024:
+      source: finance
+      text: Meredwen wo ho
+      sbs: 0.5525
+      gen_sec: 1.02
+      ref_sec: 7.0
+      cer: 0.8333
+      wer: 1.0
+    finance_00026:
+      source: finance
+      text: Mepaw’ kyɛw yiw  (spoken - informal)
+      sbs: 0.6574
+      gen_sec: 2.56
+      ref_sec: 1.84
+      cer: 0.4615
+      wer: 1.2
+    finance_00027:
+      source: finance
+      text: Tu amirika
+      sbs: 0.6392
+      gen_sec: 1.02
+      ref_sec: 1.64
+      cer: 1.0
+      wer: 2.0
+    finance_00028:
+      source: finance
+      text: Mepawokyɛw ma sesa madwene
+      sbs: 0.5213
+      gen_sec: 1.96
+      ref_sec: 8.7
+      cer: 0.2174
+      wer: 1.5
+    finance_00029:
+      source: finance
+      text: Woka brɔfo
+      sbs: 0.642
+      gen_sec: 1.02
+      ref_sec: 3.89
+      cer: 0.6667
+      wer: 2.0
+    finance_00030:
+      source: finance
+      text: Medɔ wo
+      sbs: 0.6779
+      gen_sec: 1.02
+      ref_sec: 3.86
+      cer: 1.0
+      wer: 1.0
+    finance_00031:
+      source: finance
+      text: Ɛsoe pɛ
+      sbs: 0.5868
+      gen_sec: 1.02
+      ref_sec: 5.44
+      cer: 1.6667
+      wer: 1.5
+    finance_00033:
+      source: finance
+      text: Ɛsow aba pii
+      sbs: 0.6088
+      gen_sec: 1.02
+      ref_sec: 5.84
+      cer: 0.1
+      wer: 0.3333
+    finance_00034:
+      source: finance
+      text: Woforo dua pa a na ye pia wo
+      sbs: 0.537
+      gen_sec: 1.88
+      ref_sec: 7.92
+      cer: 0.1429
+      wer: 0.75
+    finance_00035:
+      source: finance
+      text: Fa to hɔ
+      sbs: 0.5161
+      gen_sec: 1.02
+      ref_sec: 6.46
+      cer: 1.0
+      wer: 1.0
+    finance_00036:
+      source: finance
+      text: Bra ha
+      sbs: 0.6495
+      gen_sec: 1.02
+      ref_sec: 6.43
+      cer: 1.0
+      wer: 1.0
+    finance_00037:
+      source: finance
+      text: Merehwehwɛ Yaw
+      sbs: 0.6053
+      gen_sec: 1.11
+      ref_sec: 7.12
+      cer: 0.2308
+      wer: 1.0
+    finance_00038:
+      source: finance
+      text: To so ma me
+      sbs: 0.6073
+      gen_sec: 1.02
+      ref_sec: 5.58
+      cer: 0.75
+      wer: 0.5
+    finance_00039:
+      source: finance
+      text: Abofra yi
+      sbs: 0.6107
+      gen_sec: 1.02
+      ref_sec: 5.89
+      cer: 0.125
+      wer: 0.5
+    finance_00040:
+      source: finance
+      text: Nokware di tuo
+      sbs: 0.6029
+      gen_sec: 1.02
+      ref_sec: 3.0
+      cer: 0.75
+      wer: 1.0
+    finance_00041:
+      source: finance
+      text: ɔkɔm de me
+      sbs: 0.6281
+      gen_sec: 1.02
+      ref_sec: 1.92
+      cer: 0.25
+      wer: 1.0
+    finance_00042:
+      source: finance
+      text: Tow nnwom
+      sbs: 0.6013
+      gen_sec: 1.02
+      ref_sec: 5.0
+      cer: 0.375
+      wer: 1.0
+    finance_00043:
+      source: finance
+      text: ɛno akyi no
+      sbs: 0.677
+      gen_sec: 1.02
+      ref_sec: 1.62
+      cer: 0.6667
+      wer: 1.0
+    finance_00044:
+      source: finance
+      text: Emu biara
+      sbs: 0.6011
+      gen_sec: 1.02
+      ref_sec: 4.39
+      cer: 0.125
+      wer: 0.5
+    finance_00045:
+      source: finance
+      text: Kyerɛw ma me
+      sbs: 0.6115
+      gen_sec: 1.02
+      ref_sec: 4.87
+      cer: 0.7
+      wer: 0.6667
+    finance_00046:
+      source: finance
+      text: Sɔ kanea no
+      sbs: 0.6782
+      gen_sec: 1.02
+      ref_sec: 4.74
+      cer: 0.0
+      wer: 0.0
+    finance_00047:
+      source: finance
+      text: Woadi Ńkɔmmɔ mprɛnsa
+      sbs: 0.5758
+      gen_sec: 1.54
+      ref_sec: 4.88
+      cer: 0.4444
+      wer: 1.0
+    finance_00048:
+      source: finance
+      text: Wo pɛsɛ wo yɛ dɛn ɛnɛ
+      sbs: 0.5775
+      gen_sec: 1.37
+      ref_sec: 8.44
+      cer: 0.375
+      wer: 1.0
+    finance_00049:
+      source: finance
+      text: Mepawokyɛw Yiw
+      sbs: 0.6312
+      gen_sec: 1.11
+      ref_sec: 3.94
+      cer: 0.1538
+      wer: 2.0
+    finance_00050:
+      source: finance
+      text: Me ho ye paa
+      sbs: 0.6345
+      gen_sec: 1.02
+      ref_sec: 5.98
+      cer: 0.5556
+      wer: 1.0
+    finance_00051:
+      source: finance
+      text: Tew so ma me
+      sbs: 0.6642
+      gen_sec: 1.02
+      ref_sec: 2.99
+      cer: 0.2222
+      wer: 0.25
+    finance_00052:
+      source: finance
+      text: Me ho ye paa ara
+      sbs: 0.6226
+      gen_sec: 1.02
+      ref_sec: 2.22
+      cer: 0.5
+      wer: 0.8
+    finance_00053:
+      source: finance
+      text: Network bɛn
+      sbs: 0.5904
+      gen_sec: 1.02
+      ref_sec: 7.6
+      cer: 1.0
+      wer: 1.0
+    finance_00054:
+      source: finance
+      text: Me nsa aka
+      sbs: 0.5879
+      gen_sec: 1.02
+      ref_sec: 7.53
+      cer: 0.75
+      wer: 1.0
+    finance_00055:
+      source: finance
+      text: Fa to hɔ
+      sbs: 0.5627
+      gen_sec: 1.02
+      ref_sec: 5.4
+      cer: 1.0
+      wer: 1.0
+    finance_00056:
+      source: finance
+      text: Mepawokyɛw Yiw
+      sbs: 0.6103
+      gen_sec: 1.11
+      ref_sec: 7.2
+      cer: 0.1538
+      wer: 2.0
+    finance_00059:
+      source: finance
+      text: Kɔɔ dua bi akyi
+      sbs: 0.5859
+      gen_sec: 1.02
+      ref_sec: 6.5
+      cer: 0.5
+      wer: 1.0
+    finance_00060:
+      source: finance
+      text: Yaw ne Ama
+      sbs: 0.5839
+      gen_sec: 1.02
+      ref_sec: 5.69
+      cer: 0.125
+      wer: 0.3333
+    finance_00061:
+      source: finance
+      text: Kyerɛw ma me
+      sbs: 0.626
+      gen_sec: 1.02
+      ref_sec: 5.14
+      cer: 0.7
+      wer: 0.6667
+    finance_00062:
+      source: finance
+      text: Mefi Ghana
+      sbs: 0.5297
+      gen_sec: 1.02
+      ref_sec: 7.7
+      cer: 0.2222
+      wer: 1.0
+    finance_00063:
+      source: finance
+      text: Kɔɔ dua bi akyi
+      sbs: 0.6139
+      gen_sec: 1.02
+      ref_sec: 5.45
+      cer: 0.5
+      wer: 1.0
+    finance_00064:
+      source: finance
+      text: Mepaw’ kyɛw Yiw
+      sbs: 0.6385
+      gen_sec: 1.02
+      ref_sec: 2.34
+      cer: 0.1667
+      wer: 1.0
+    finance_00065:
+      source: finance
+      text: Ma me bi
+      sbs: 0.5702
+      gen_sec: 1.02
+      ref_sec: 2.83
+      cer: 1.3333
+      wer: 1.0
+    finance_00066:
+      source: finance
+      text: Me nsa aka
+      sbs: 0.5867
+      gen_sec: 1.02
+      ref_sec: 4.43
+      cer: 0.75
+      wer: 1.0
+    finance_00067:
+      source: finance
+      text: Tenten no
+      sbs: 0.5745
+      gen_sec: 1.02
+      ref_sec: 4.72
+      cer: 0.875
+      wer: 1.5
+    finance_00068:
+      source: finance
+      text: Woretɔ agu number bɛn so
+      sbs: 0.5205
+      gen_sec: 1.79
+      ref_sec: 5.1
+      cer: 0.35
+      wer: 1.0
+    finance_00069:
+      source: finance
+      text: To so ma me
+      sbs: 0.5852
+      gen_sec: 1.02
+      ref_sec: 6.07
+      cer: 0.75
+      wer: 0.5
+    finance_00070:
+      source: finance
+      text: Wofi he
+      sbs: 0.6008
+      gen_sec: 1.02
+      ref_sec: 1.98
+      cer: 1.3333
+      wer: 1.5
+    finance_00074:
+      source: finance
+      text: Wo pɛsɛ wo yɛ dɛn ɛnɛ
+      sbs: 0.5771
+      gen_sec: 1.37
+      ref_sec: 6.97
+      cer: 0.375
+      wer: 1.0
+    finance_00075:
+      source: finance
+      text: Tenten no
+      sbs: 0.6162
+      gen_sec: 1.02
+      ref_sec: 2.12
+      cer: 0.875
+      wer: 1.5
+    finance_00076:
+      source: finance
+      text: Na biribiara dwoi
+      sbs: 0.6421
+      gen_sec: 1.19
+      ref_sec: 1.72
+      cer: 0.4
+      wer: 1.0
+    finance_00077:
+      source: finance
+      text: Nnipa yɛ bad (informal) Nnipa nnye (formal)
+      sbs: 0.542
+      gen_sec: 3.24
+      ref_sec: 6.44
+      cer: 0.2727
+      wer: 0.4286
+    finance_00078:
+      source: finance
+      text: Ɔmee ne Ɔfe
+      sbs: 0.623
+      gen_sec: 1.02
+      ref_sec: 5.4
+      cer: 0.6667
+      wer: 1.0
+    finance_00079:
+      source: finance
+      text: Meda wo ase
+      sbs: 0.6168
+      gen_sec: 1.02
+      ref_sec: 5.41
+      cer: 0.2222
+      wer: 0.3333
+    finance_00080:
+      source: finance
+      text: Mefi Ghana
+      sbs: 0.5714
+      gen_sec: 1.02
+      ref_sec: 5.31
+      cer: 0.2222
+      wer: 1.0
+    finance_00081:
+      source: finance
+      text: Sɔ kanea no
+      sbs: 0.6581
+      gen_sec: 1.02
+      ref_sec: 4.73
+      cer: 0.0
+      wer: 0.0
+    finance_00082:
+      source: finance
+      text: Woadi Ńkɔmmɔ mprɛnsa
+      sbs: 0.5769
+      gen_sec: 1.54
+      ref_sec: 6.35
+      cer: 0.4444
+      wer: 1.0
+    finance_00083:
+      source: finance
+      text: Wɔ nnwomkoro kuw bi mu
+      sbs: 0.5932
+      gen_sec: 1.54
+      ref_sec: 5.52
+      cer: 0.2778
+      wer: 0.4
+    finance_00084:
+      source: finance
+      text: Ma ɛtwee aboa bi
+      sbs: 0.6531
+      gen_sec: 1.19
+      ref_sec: 1.82
+      cer: 0.2308
+      wer: 0.75
+    finance_00085:
+      source: finance
+      text: Tikoro nnkɔ agyina
+      sbs: 0.5851
+      gen_sec: 1.28
+      ref_sec: 4.59
+      cer: 0.375
+      wer: 1.3333
+    finance_00086:
+      source: finance
+      text: Mehu mayɛ ewie
+      sbs: 0.5896
+      gen_sec: 1.02
+      ref_sec: 5.92
+      cer: 0.3333
+      wer: 1.3333
+    finance_00087:
+      source: finance
+      text: Na biribiara dwoi
+      sbs: 0.4799
+      gen_sec: 1.19
+      ref_sec: 1.79
+      cer: 0.4
+      wer: 1.0
+    finance_00088:
+      source: finance
+      text: Abofra no to nwom
+      sbs: 0.5848
+      gen_sec: 1.19
+      ref_sec: 6.42
+      cer: 0.2857
+      wer: 0.75
+    finance_00089:
+      source: finance
+      text: Ɔbebue n'ani ɔkyena
+      sbs: 0.5589
+      gen_sec: 1.37
+      ref_sec: 2.66
+      cer: 0.125
+      wer: 1.0
+    finance_00090:
+      source: finance
+      text: Tew so ma me
+      sbs: 0.6158
+      gen_sec: 1.02
+      ref_sec: 6.64
+      cer: 0.2222
+      wer: 0.25
+    finance_00091:
+      source: finance
+      text: Wofi he
+      sbs: 0.5548
+      gen_sec: 1.02
+      ref_sec: 5.73
+      cer: 1.3333
+      wer: 1.5
+    finance_00092:
+      source: finance
+      text: ɔkɔtɔ nnwo anomaa
+      sbs: 0.5676
+      gen_sec: 1.28
+      ref_sec: 7.39
+      cer: 0.3333
+      wer: 1.0
+    finance_00093:
+      source: finance
+      text: Wofi he
+      sbs: 0.5752
+      gen_sec: 1.02
+      ref_sec: 4.36
+      cer: 1.3333
+      wer: 1.5
+    finance_00094:
+      source: finance
+      text: Medɔ wo
+      sbs: 0.674
+      gen_sec: 1.02
+      ref_sec: 7.66
+      cer: 1.0
+      wer: 1.0
+    finance_00095:
+      source: finance
+      text: A ohuu wɔ nkran
+      sbs: 0.5864
+      gen_sec: 1.02
+      ref_sec: 5.4
+      cer: 0.1667
+      wer: 0.5
+    finance_00096:
+      source: finance
+      text: Ye be hyia bio
+      sbs: 0.611
+      gen_sec: 1.02
+      ref_sec: 5.41
+      cer: 0.3636
+      wer: 0.75
+    finance_00097:
+      source: finance
+      text: Mame bebree
+      sbs: 0.6356
+      gen_sec: 1.02
+      ref_sec: 3.77
+      cer: 0.0
+      wer: 1.0
+    finance_00098:
+      source: finance
+      text: Hyɛ n'anim tee
+      sbs: 0.5998
+      gen_sec: 1.02
+      ref_sec: 3.57
+      cer: 0.6364
+      wer: 1.6667
+    finance_00099:
+      source: finance
+      text: Woforo dua pa a na ye pia wo
+      sbs: 0.6162
+      gen_sec: 1.88
+      ref_sec: 7.31
+      cer: 0.1429
+      wer: 0.75
+    finance_00100:
+      source: finance
+      text: Apoobɔ nnye
+      sbs: 0.5712
+      gen_sec: 1.02
+      ref_sec: 5.99
+      cer: 0.1
+      wer: 0.5
+    finance_00101:
+      source: finance
+      text: Hena akonwa
+      sbs: 0.6632
+      gen_sec: 1.02
+      ref_sec: 1.9
+      cer: 0.1
+      wer: 0.5
+    finance_00102:
+      source: finance
+      text: Wo se dɛn
+      sbs: 0.5682
+      gen_sec: 1.02
+      ref_sec: 6.27
+      cer: 1.0
+      wer: 1.3333
+    finance_00103:
+      source: finance
+      text: Saa ɔkɔre no
+      sbs: 0.6144
+      gen_sec: 1.02
+      ref_sec: 6.7
+      cer: 0.2
+      wer: 0.6667
+    finance_00104:
+      source: finance
+      text: Ebi deda ebi akyi
+      sbs: 0.5639
+      gen_sec: 1.19
+      ref_sec: 6.35
+      cer: 0.3571
+      wer: 0.75
+    finance_00105:
+      source: finance
+      text: Wɔ ńkwankyɛn
+      sbs: 0.6274
+      gen_sec: 1.02
+      ref_sec: 2.54
+      cer: 0.8182
+      wer: 2.0
+    finance_00106:
+      source: finance
+      text: Wɔ ńkwankyɛn
+      sbs: 0.6372
+      gen_sec: 1.02
+      ref_sec: 3.82
+      cer: 0.8182
+      wer: 2.0
+    finance_00107:
+      source: finance
+      text: Dum kanea no
+      sbs: 0.5997
+      gen_sec: 1.02
+      ref_sec: 6.7
+      cer: 0.2
+      wer: 0.6667
+    finance_00108:
+      source: finance
+      text: Yɛ wɔ
+      sbs: 0.6283
+      gen_sec: 1.02
+      ref_sec: 1.54
+      cer: 0.75
+      wer: 1.0
+    finance_00109:
+      source: finance
+      text: Bra ha
+      sbs: 0.6238
+      gen_sec: 1.02
+      ref_sec: 2.63
+      cer: 1.0
+      wer: 1.0
+    finance_00110:
+      source: finance
+      text: Kɔɔ dua bi akyi
+      sbs: 0.617
+      gen_sec: 1.02
+      ref_sec: 1.88
+      cer: 0.5
+      wer: 1.0
+    finance_00111:
+      source: finance
+      text: Hyɛ n'anim tee
+      sbs: 0.581
+      gen_sec: 1.02
+      ref_sec: 4.5
+      cer: 0.6364
+      wer: 1.6667
 - model: Google/gemini-3.1-flash-tts-preview-universal
   model_url: https://ai.google.dev/gemini-api/docs/speech-generation
   mode: noref
@@ -31125,4 +32767,4 @@ benchmarks:
       ref_sec: 4.5
       cer: 4.2727
       wer: 5.0
-updated: '2026-10-01'
+updated: '2026-10-09'

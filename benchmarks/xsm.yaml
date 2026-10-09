@@ -1670,6 +1670,1665 @@ benchmarks:
       ref_sec: 13.78
       cer: 0.0377
       wer: 0.2188
+- model: ghanaopenai/ghana-audiodit
+  model_url: https://huggingface.co/ghanaopenai/ghana-audiodit
+  mode: noref
+  owner: ghanaopenai
+  architecture: LongCat-AudioDiT 1.4B (flow-matching DiT)
+  model_class: non-llm
+  params: 1.4B
+  uses_reference: false
+  sbs: 0.7471
+  num_scored: 200
+  cer: 0.1445
+  wer: 0.3389
+  accuracy: 0.8555
+  cer_num_scored: 200
+  failed: 0
+  composite: 0.8013
+  score: 0.8013
+  per_source:
+    bible:
+      sbs: 0.7471
+      cer: 0.1445
+      n: 200
+  entries:
+    bible_00000:
+      source: bible
+      text: Tega kam maama koge mo ye ka ta leere.
+      sbs: 0.7427
+      gen_sec: 3.24
+      ref_sec: 3.16
+      cer: 0.2759
+      wer: 0.6667
+    bible_00001:
+      source: bible
+      text: Ko nam bá dáane se abam tiini á keeri.
+      sbs: 0.7857
+      gen_sec: 3.24
+      ref_sec: 3.1
+      cer: 0.2069
+      wer: 0.4444
+    bible_00002:
+      source: bible
+      text: pa se ba teene dem zwɛ de daare di-dwonnu yerane.
+      sbs: 0.7654
+      gen_sec: 4.35
+      ref_sec: 5.34
+      cer: 0.0789
+      wer: 0.3
+    bible_00003:
+      source: bible
+      text: Konto mo wó pa se á jwoori á na yazura ye á daare á lɔre kolo ŋwaane o na tiini o pa ko zo
+        á yera to.
+      sbs: 0.7708
+      gen_sec: 8.19
+      ref_sec: 8.04
+      cer: 0.0676
+      wer: 0.1852
+    bible_00004:
+      source: bible
+      text: Abam wó kwei gare-fefale mo á ma ke Aron gare-dedɔrɔ kom de o yuu gare-yi dem.
+      sbs: 0.714
+      gen_sec: 6.83
+      ref_sec: 4.68
+      cer: 0.0847
+      wer: 0.1875
+    bible_00005:
+      source: bible
+      text: amo Wɛ wó pa ba na amo verem dem.
+      sbs: 0.765
+      gen_sec: 2.65
+      ref_sec: 5.24
+      cer: 0.0
+      wer: 0.0
+    bible_00006:
+      source: bible
+      text: Dɩ́ ko-biǝ-ba, abam daa ba taá lagɩ sɩ dɩ́ pʋpʋnɩ dɩ́ ta dɩ́ brɩ abam maŋa kalʋ wǝǝnu tɩntʋ
+        na wʋ́ kɩ tɩn.
+      sbs: 0.7172
+      gen_sec: 8.7
+      ref_sec: 8.28
+      cer: 0.3333
+      wer: 0.7826
+    bible_00007:
+      source: bible
+      text: Abam dwi dem wone, bu-kwe sem de á vara maama wone cheeri-bia bam ye amo nyem mo.
+      sbs: 0.7292
+      gen_sec: 7.0
+      ref_sec: 6.08
+      cer: 0.0164
+      wer: 0.0588
+    bible_00008:
+      source: bible
+      text: Asiria pɛ wom ma toŋe o dedɛɛra bam yiga tu se o zege Lakisi ne o nwoŋi de jar-keira kɔgɔ
+        dedɛ o vo Jerusalem o gware Hezekia.
+      sbs: 0.7977
+      gen_sec: 11.09
+      ref_sec: 14.42
+      cer: 0.0612
+      wer: 0.2963
+    bible_00009:
+      source: bible
+      text: Muni delo na daare to se á bibili-de memene ye á laam ma nuga á taare-te.
+      sbs: 0.7383
+      gen_sec: 6.23
+      ref_sec: 6.1
+      cer: 0.1455
+      wer: 0.625
+    bible_00010:
+      source: bible
+      text: Konto ŋwaane, á wó bwoŋi á chorro Isarele tiina bam we, ‘A nɔɔna’, de ‘A bu-swonnu’.
+      sbs: 0.7953
+      gen_sec: 7.25
+      ref_sec: 7.56
+      cer: 0.0333
+      wer: 0.125
+    bible_00011:
+      source: bible
+      text: Dɩ́ dɛɛn tu dɩ́ tɩtɩ mʋ nɩ biǝ te, yɩ dɩ́ laan nii abam lanyɩranɩ nɩ kaanɩ na jɩgɩ o biǝ o
+        nii te tɩn.
+      sbs: 0.7375
+      gen_sec: 8.11
+      ref_sec: 8.82
+      cer: 0.3562
+      wer: 0.76
+    bible_00012:
+      source: bible
+      text: ” Tontoŋeno wom ma leiri‑o o we, “Nii, Wɛ tontoŋeno dedoa wo teo konto ne.
+      sbs: 0.7698
+      gen_sec: 6.49
+      ref_sec: 5.1
+      cer: 0.1111
+      wer: 0.3571
+    bible_00013:
+      source: bible
+      text: jejegero tem na wó taa daga dedɛ to ŋwaane.
+      sbs: 0.7224
+      gen_sec: 3.84
+      ref_sec: 3.56
+      cer: 0.0588
+      wer: 0.2222
+    bible_00014:
+      source: bible
+      text: Isarele tiina bam ná yeini ba ja pɛɛra ba jeeri se ba pa-ne, ye tusim ná wora ba totoŋa yam
+        ne, amo wó da Aron ŋwaane a yage a ma chɛ-ba, pa se a sɛ a jwoŋi ba pɛɛra yam konto.
+      sbs: 0.7199
+      gen_sec: 15.27
+      ref_sec: 12.12
+      cer: 0.0462
+      wer: 0.1463
+    bible_00015:
+      source: bible
+      text: Ba na jege dam ba ke tei to yɔɔre ko ba tɔge chwoŋa.
+      sbs: 0.7846
+      gen_sec: 4.44
+      ref_sec: 4.64
+      cer: 0.0513
+      wer: 0.0769
+    bible_00016:
+      source: bible
+      text: 'Amo nɔɔna bam tusi belei mo ba daŋe ba yuu ne: Amo mo ye buli-yi delo na na pae ŋwea to.'
+      sbs: 0.7973
+      gen_sec: 7.59
+      ref_sec: 10.2
+      cer: 0.0154
+      wer: 0.1905
+    bible_00017:
+      source: bible
+      text: Á laam ma‑á wó boŋe wonnu telo ya na pɛ abam foone to boboŋa.
+      sbs: 0.7703
+      gen_sec: 5.38
+      ref_sec: 5.74
+      cer: 0.1522
+      wer: 0.3571
+    bible_00018:
+      source: bible
+      text: Á ná ke konto, amo de wó zeili Amori tiina bam, de Kanaan tiina bam, de Hiti tiina bam, de
+        Pɛrizi tiina bam, de Hivi tiina bam dedaane Jebusi tiina bam maama se ba nwoŋi ba daare tega kam
+        ba pa abam.
+      sbs: 0.7208
+      gen_sec: 17.49
+      ref_sec: 12.18
+      cer: 0.0263
+      wer: 0.0952
+    bible_00019:
+      source: bible
+      text: Ba ta ma lɛɛre ba mɔ kɔɔra se ba ke ba na ba wone.
+      sbs: 0.7897
+      gen_sec: 4.01
+      ref_sec: 5.48
+      cer: 0.1111
+      wer: 0.1429
+    bible_00020:
+      source: bible
+      text: Jeeli-na ko di-dedwaaro tem ni.
+      sbs: 0.7576
+      gen_sec: 2.9
+      ref_sec: 3.12
+      cer: 0.2083
+      wer: 0.6
+    bible_00021:
+      source: bible
+      text: O ta ma ke takworru dedɛ ko wone.
+      sbs: 0.7878
+      gen_sec: 2.82
+      ref_sec: 3.1
+      cer: 0.12
+      wer: 0.375
+    bible_00022:
+      source: bible
+      text: Wolo na ke o tɔge Wɛ nia yam to.
+      sbs: 0.719
+      gen_sec: 2.56
+      ref_sec: 3.02
+      cer: 0.0435
+      wer: 0.2222
+    bible_00023:
+      source: bible
+      text: Amo wó tɔge chega, de swono, de ŋwaŋa baŋa ne mo a ke konto.
+      sbs: 0.7705
+      gen_sec: 5.38
+      ref_sec: 4.02
+      cer: 0.0455
+      wer: 0.1429
+    bible_00024:
+      source: bible
+      text: Amo wó kwaane a zamese dende.
+      sbs: 0.709
+      gen_sec: 2.56
+      ref_sec: 3.1
+      cer: 0.1739
+      wer: 0.5
+    bible_00025:
+      source: bible
+      text: 'Naamatia tu Zofara ma ta o we: “Nmo taane dem yɔɔre.'
+      sbs: 0.765
+      gen_sec: 4.44
+      ref_sec: 5.5
+      cer: 0.2308
+      wer: 0.4545
+    bible_00026:
+      source: bible
+      text: nam lɔre we Wɛ yei nɔɔna maama bochara na ye tei to.
+      sbs: 0.7784
+      gen_sec: 4.44
+      ref_sec: 3.9
+      cer: 0.05
+      wer: 0.0833
+    bible_00027:
+      source: bible
+      text: Banto jigi ne ga-punnu de ga-lɛɛro mo nmo yiga ne.
+      sbs: 0.7903
+      gen_sec: 4.44
+      ref_sec: 5.5
+      cer: 0.1316
+      wer: 0.6
+    bible_00028:
+      source: bible
+      text: banto wó chɔɔle ba to se wone.
+      sbs: 0.7692
+      gen_sec: 2.56
+      ref_sec: 5.52
+      cer: 0.0
+      wer: 0.0
+    bible_00029:
+      source: bible
+      text: Filisi tiina bam na vere Wɛ ni-gwonim dakaa kam Isarele tiina bam jeŋa ne to, ka déem maŋe
+        ba tei ne chane serepɛ mo.
+      sbs: 0.7668
+      gen_sec: 10.41
+      ref_sec: 8.04
+      cer: 0.0659
+      wer: 0.1667
+    bible_00030:
+      source: bible
+      text: “Pa se ba kwei golesaa dɛ ba ma ke dakaa kalo talwoŋ-ywoŋa na wó taa zwɛ de baŋa ne to.
+      sbs: 0.6975
+      gen_sec: 7.59
+      ref_sec: 5.12
+      cer: 0.1385
+      wer: 0.35
+    bible_00031:
+      source: bible
+      text: O ma daare o pa se o nɔɔna toŋe zɛɛra mo ba pa‑o.
+      sbs: 0.7839
+      gen_sec: 4.1
+      ref_sec: 4.5
+      cer: 0.0286
+      wer: 0.0769
+    bible_00032:
+      source: bible
+      text: Ko nye de kunkwoŋo kolo na tui zezeŋa ne.
+      sbs: 0.7664
+      gen_sec: 3.75
+      ref_sec: 4.24
+      cer: 0.1562
+      wer: 0.2222
+    bible_00033:
+      source: bible
+      text: Basan de Kamele jei sem teeni vɔɔro ma siiri.
+      sbs: 0.6801
+      gen_sec: 4.01
+      ref_sec: 6.02
+      cer: 0.5
+      wer: 0.7778
+    bible_00034:
+      source: bible
+      text: gare o ná gwooni‑m nɔn-yerro yiga ne.
+      sbs: 0.7422
+      gen_sec: 3.33
+      ref_sec: 3.52
+      cer: 0.25
+      wer: 0.5714
+    bible_00035:
+      source: bible
+      text: o nye de nywoŋo na ŋuuri se ko zi nɔne to mo.
+      sbs: 0.7699
+      gen_sec: 3.84
+      ref_sec: 3.58
+      cer: 0.1818
+      wer: 0.4167
+    bible_00036:
+      source: bible
+      text: de tabolo kom, de ko dɛ selo ba na wó taa maa zeŋe-ko to, de ko yera zela yam maama, de bworobworo
+        kolo na tigi da Wɛ ŋwaane to.
+      sbs: 0.7323
+      gen_sec: 11.09
+      ref_sec: 10.08
+      cer: 0.0316
+      wer: 0.1034
+    bible_00037:
+      source: bible
+      text: Samuwel nii Isarele tiina bam baŋa ne.
+      sbs: 0.7256
+      gen_sec: 3.58
+      ref_sec: 3.3
+      cer: 0.129
+      wer: 0.2857
+    bible_00038:
+      source: bible
+      text: Na ná tera, te wó kwaare lela mo.
+      sbs: 0.7263
+      gen_sec: 2.82
+      ref_sec: 3.08
+      cer: 0.375
+      wer: 0.625
+    bible_00039:
+      source: bible
+      text: se á le á jejegero wone á ma.
+      sbs: 0.7241
+      gen_sec: 2.39
+      ref_sec: 3.22
+      cer: 0.2381
+      wer: 0.625
+    bible_00040:
+      source: bible
+      text: Ba ná maŋe ba tɔge kabwoŋa kikia ba jwona kaanem jei sem ne mo de, ba dwi dem bá puli.
+      sbs: 0.7963
+      gen_sec: 7.42
+      ref_sec: 7.48
+      cer: 0.0154
+      wer: 0.05
+    bible_00041:
+      source: bible
+      text: Tetɔgɔ kodwoŋi kom wo mɔɔro tem ma pɔ, te yɔɔre te wo maŋe de dim!
+      sbs: 0.7536
+      gen_sec: 5.8
+      ref_sec: 5.9
+      cer: 0.2
+      wer: 0.4
+    bible_00042:
+      source: bible
+      text: ye á gane-ne mo!
+      sbs: 0.6879
+      gen_sec: 1.37
+      ref_sec: 3.44
+      cer: 0.1818
+      wer: 1.0
+    bible_00043:
+      source: bible
+      text: O ná tage de abam we, Baŋa Wɛ wó jwoŋi abam o yage, ye o che se Asiria teo pɛ yé di á teo
+        kom, nam yé sɛ-na.
+      sbs: 0.8062
+      gen_sec: 8.96
+      ref_sec: 12.8
+      cer: 0.1053
+      wer: 0.2857
+    bible_00044:
+      source: bible
+      text: Dé ŋwea da yam ba dáane ye ya jia.
+      sbs: 0.7757
+      gen_sec: 2.9
+      ref_sec: 3.68
+      cer: 0.12
+      wer: 0.3333
+    bible_00045:
+      source: bible
+      text: 'Baŋa Wɛ ma ta o we: Sa-dɛɛra de sa-bwona mo pɛ se.'
+      sbs: 0.7764
+      gen_sec: 4.35
+      ref_sec: 6.06
+      cer: 0.1429
+      wer: 0.25
+    bible_00046:
+      source: bible
+      text: Kʋntʋ ŋwaanɩ mʋ dɩ́ ta yǝni dɩ́ tiini dɩ́ tʋŋɩ wɩa dɩ tɩtɩɩ maama sɩ dɩ́ ma na dɩ́ ni-wʋdiu.
+      sbs: 0.7023
+      gen_sec: 7.59
+      ref_sec: 6.1
+      cer: 0.3333
+      wer: 0.8
+    bible_00047:
+      source: bible
+      text: A nam ta bá na yi-pore-nyem á wone.
+      sbs: 0.7585
+      gen_sec: 2.99
+      ref_sec: 3.46
+      cer: 0.44
+      wer: 0.875
+    bible_00048:
+      source: bible
+      text: 'Dedɛɛro wom ma tɔɔle o yage de Judah tiina taane dem o we: “Abam maama cheigi-na Asiria teo
+        pa-faro wom kwora kam.'
+      sbs: 0.8132
+      gen_sec: 9.98
+      ref_sec: 10.34
+      cer: 0.0227
+      wer: 0.2273
+    bible_00049:
+      source: bible
+      text: Abam na tage amo yera taane tei to wo yɔɔre chwoŋa se ko yi Job na tage tei to.
+      sbs: 0.7786
+      gen_sec: 6.74
+      ref_sec: 5.92
+      cer: 0.1
+      wer: 0.1579
+    bible_00050:
+      source: bible
+      text: A wó waare‑o de o na zwɛ talwoŋ-ywoŋa o ke kaanem o pa Baal jwona yam ya zula da yam ne to
+        ŋwaane.
+      sbs: 0.7697
+      gen_sec: 8.53
+      ref_sec: 8.34
+      cer: 0.0685
+      wer: 0.2174
+    bible_00051:
+      source: bible
+      text: DƖ nan pɛ DƖ cullu tɩm balʋ maama na cɔgɩ zaasɩm dɩlʋ na yɩ cɩga yɩ dɩ tɔgɩ Wɛ kwǝr-ywǝŋǝ
+        kam na brɩ te tɩn dɩ mʋ.
+      sbs: 0.7213
+      gen_sec: 9.98
+      ref_sec: 9.06
+      cer: 0.3605
+      wer: 0.8519
+    bible_00052:
+      source: bible
+      text: Baŋa Wɛ mo o yere, de na maŋe de zula!
+      sbs: 0.7374
+      gen_sec: 3.33
+      ref_sec: 4.28
+      cer: 0.037
+      wer: 0.1
+    bible_00053:
+      source: bible
+      text: Pa-na se ya ba ya jwoŋi abam ya yage á cham maŋa ne!
+      sbs: 0.7847
+      gen_sec: 4.52
+      ref_sec: 4.8
+      cer: 0.1316
+      wer: 0.2308
+    bible_00054:
+      source: bible
+      text: Zamese a ŋwea na ye tei to, se n lɔre veiŋa.
+      sbs: 0.7917
+      gen_sec: 3.84
+      ref_sec: 3.86
+      cer: 0.0312
+      wer: 0.1818
+    bible_00055:
+      source: bible
+      text: A laam wó kwei-ko a ma a waare Edom tiina bam mo.
+      sbs: 0.8001
+      gen_sec: 4.1
+      ref_sec: 5.3
+      cer: 0.1111
+      wer: 0.4167
+    bible_00056:
+      source: bible
+      text: Kokuri, á wo sɛ se a korese abam.
+      sbs: 0.7799
+      gen_sec: 2.82
+      ref_sec: 3.7
+      cer: 0.2917
+      wer: 0.625
+    bible_00057:
+      source: bible
+      text: ” Ko dɛ konto baŋa ne mo, ye Isarele tiina bam wane Filisi tiina bam.
+      sbs: 0.7697
+      gen_sec: 5.97
+      ref_sec: 4.5
+      cer: 0.1346
+      wer: 0.2857
+    bible_00058:
+      source: bible
+      text: konto mo wolo ná beeri o tete seinim, ko ba woli‑o.
+      sbs: 0.7857
+      gen_sec: 4.44
+      ref_sec: 3.66
+      cer: 0.1316
+      wer: 0.1818
+    bible_00059:
+      source: bible
+      text: n vere balo na sale nmo yera ne to.
+      sbs: 0.7652
+      gen_sec: 2.9
+      ref_sec: 3.04
+      cer: 0.0769
+      wer: 0.3333
+    bible_00060:
+      source: bible
+      text: Nmo nam yɔɔre n kɔre foone de-ba mo.
+      sbs: 0.7415
+      gen_sec: 3.07
+      ref_sec: 3.04
+      cer: 0.1852
+      wer: 0.5
+    bible_00061:
+      source: bible
+      text: ne Wɛ zeiŋi mini mo o yuu ne to.
+      sbs: 0.7484
+      gen_sec: 2.65
+      ref_sec: 3.04
+      cer: 0.0
+      wer: 0.2222
+    bible_00062:
+      source: bible
+      text: Nam yé pa-na se Atɔgebabaŋa wodiu maŋe á tei ne ko poore tega.
+      sbs: 0.6848
+      gen_sec: 5.63
+      ref_sec: 4.56
+      cer: 0.125
+      wer: 0.4615
+    bible_00063:
+      source: bible
+      text: Mini maa wó ja ba tega kam maama.
+      sbs: 0.7595
+      gen_sec: 2.82
+      ref_sec: 3.18
+      cer: 0.16
+      wer: 0.25
+    bible_00064:
+      source: bible
+      text: Yi-pore-nyem ná kwoni‑m o zege de swa taane.
+      sbs: 0.7558
+      gen_sec: 4.01
+      ref_sec: 4.74
+      cer: 0.303
+      wer: 0.625
+    bible_00065:
+      source: bible
+      text: Se maa wó zege ba teiŋa ne se yi ba chwoa mo.
+      sbs: 0.7264
+      gen_sec: 3.75
+      ref_sec: 3.44
+      cer: 0.0606
+      wer: 0.25
+    bible_00066:
+      source: bible
+      text: Abam wó nii á na pɛ wom na jei de nenɔŋ-fɔrɔ.
+      sbs: 0.777
+      gen_sec: 3.84
+      ref_sec: 4.68
+      cer: 0.2424
+      wer: 0.2727
+    bible_00067:
+      source: bible
+      text: ye a ná lage se a pa Isarele tiina bam na yazura.
+      sbs: 0.7394
+      gen_sec: 4.1
+      ref_sec: 3.2
+      cer: 0.0811
+      wer: 0.25
+    bible_00068:
+      source: bible
+      text: Pa se nmo na yɔɔre n swoi nɔɔna tei to taa bere jaja.
+      sbs: 0.7564
+      gen_sec: 4.44
+      ref_sec: 5.16
+      cer: 0.3
+      wer: 0.3846
+    bible_00069:
+      source: bible
+      text: Kaana bam badwonna de ma kwei boŋo koro ba ma ŋo gare-ŋone.
+      sbs: 0.6957
+      gen_sec: 5.55
+      ref_sec: 4.68
+      cer: 0.1522
+      wer: 0.3333
+    bible_00070:
+      source: bible
+      text: Ywoni delo na ba ti to mo wó taa ye ba nyem.
+      sbs: 0.7376
+      gen_sec: 3.58
+      ref_sec: 4.12
+      cer: 0.0625
+      wer: 0.1667
+    bible_00071:
+      source: bible
+      text: Isarele tiina bam déem jwoori ba na ba tega kam ni maama mo.
+      sbs: 0.7361
+      gen_sec: 5.21
+      ref_sec: 3.98
+      cer: 0.3404
+      wer: 0.3846
+    bible_00072:
+      source: bible
+      text: Kaanem tiina de ba totoŋa yam taane.
+      sbs: 0.68
+      gen_sec: 3.33
+      ref_sec: 3.72
+      cer: 0.2069
+      wer: 0.2857
+    bible_00073:
+      source: bible
+      text: Ko ya ná wae se Wɛ ke amo na lwoori‑o kolo to o pa-ne na!
+      sbs: 0.7595
+      gen_sec: 4.61
+      ref_sec: 4.1
+      cer: 0.025
+      wer: 0.0667
+    bible_00074:
+      source: bible
+      text: 'Paŋwa Tu Baŋa Wɛ wom nam na tage tei to mo tento: “Jerusalem tiina bam, yé cheigi-na sampwori
+        sento na pworisi tei de abam to.'
+      sbs: 0.8257
+      gen_sec: 11.18
+      ref_sec: 9.62
+      cer: 0.1134
+      wer: 0.32
+    bible_00075:
+      source: bible
+      text: Amo wó kwei dento mo a pa‑o, se o bere debam chwoŋa kalo dé na wó da to.
+      sbs: 0.7991
+      gen_sec: 6.06
+      ref_sec: 6.84
+      cer: 0.1346
+      wer: 0.3333
+    bible_00076:
+      source: bible
+      text: Balo na ve Wɛ nia yam to bere we ba seini puseŋ-nyena mo.
+      sbs: 0.7355
+      gen_sec: 4.95
+      ref_sec: 4.12
+      cer: 0.1628
+      wer: 0.3846
+    bible_00077:
+      source: bible
+      text: Filisi tiina bam déem ma ni we Isarele tiina bam jeeri daane Mizipa ne.
+      sbs: 0.6176
+      gen_sec: 6.23
+      ref_sec: 3.62
+      cer: 0.0175
+      wer: 0.0714
+    bible_00078:
+      source: bible
+      text: Amo laam wó jwoori a tete jeiga kam a daare-ba.
+      sbs: 0.7549
+      gen_sec: 4.1
+      ref_sec: 4.7
+      cer: 0.0
+      wer: 0.2
+    bible_00079:
+      source: bible
+      text: ye memaaro de taa bage sɔɔ ba yage de wopwolo.
+      sbs: 0.7279
+      gen_sec: 4.01
+      ref_sec: 4.34
+      cer: 0.3611
+      wer: 0.6
+    bible_00080:
+      source: bible
+      text: Chwo-veila daa ba tɔge pempala yam ne ba via.
+      sbs: 0.7513
+      gen_sec: 4.01
+      ref_sec: 3.88
+      cer: 0.0571
+      wer: 0.1111
+    bible_00081:
+      source: bible
+      text: Isarele jar-keira bam duri Filisi tiina bam yiga ne se ba lu.
+      sbs: 0.7601
+      gen_sec: 5.38
+      ref_sec: 4.1
+      cer: 0.125
+      wer: 0.3333
+    bible_00082:
+      source: bible
+      text: Konto, á wó wane á maŋe á bere.
+      sbs: 0.7778
+      gen_sec: 2.65
+      ref_sec: 3.08
+      cer: 0.0909
+      wer: 0.25
+    bible_00083:
+      source: bible
+      text: Moses na zege da ye Wɛ maa beene to, mo Wɛ déem bwoŋi o tete yere dem chekke o we, ‘Taa Wuu
+        Tu Baŋa Wɛ’.
+      sbs: 0.7426
+      gen_sec: 8.7
+      ref_sec: 8.48
+      cer: 0.04
+      wer: 0.16
+    bible_00084:
+      source: bible
+      text: Yé cheigi-na pɛ Hezekia taane dem, de o na gane abam ye o we, Baŋa Wɛ wó jwoŋi abam o yage
+        to.
+      sbs: 0.8145
+      gen_sec: 8.11
+      ref_sec: 8.78
+      cer: 0.058
+      wer: 0.1818
+    bible_00085:
+      source: bible
+      text: Jei selo maama nywoŋ-kuri ya na tigi da to.
+      sbs: 0.719
+      gen_sec: 3.84
+      ref_sec: 3.7
+      cer: 0.4848
+      wer: 0.7778
+    bible_00086:
+      source: bible
+      text: ko wó taa gara á ná kwei vara á zwɛ se á zuli-ne.
+      sbs: 0.7548
+      gen_sec: 4.01
+      ref_sec: 4.32
+      cer: 0.4286
+      wer: 0.6154
+    bible_00087:
+      source: bible
+      text: Balo na tiini ba ye bembɛ ba wone to ma zaŋe tete ne ba vo ba yi Bɛte-San se tega laam poore.
+      sbs: 0.78
+      gen_sec: 7.94
+      ref_sec: 7.36
+      cer: 0.0571
+      wer: 0.1818
+    bible_00088:
+      source: bible
+      text: Baŋa Wɛ ta ma ta de amo o we, “N kaane wom ye ka-bworo ye baaro wodwoŋi mo swoi‑o.
+      sbs: 0.7736
+      gen_sec: 7.0
+      ref_sec: 6.64
+      cer: 0.2203
+      wer: 0.3158
+    bible_00089:
+      source: bible
+      text: Bɛŋwaanɩ abam tɩtɩ maŋɩ á ye lanyɩranɩ nɩ dɩ́ Yuutu wʋm dɛ dɩm lagɩ dɩ ba dɩ darɩ nɔɔna mʋ,
+        nɩ ŋwɩɩnʋ na yǝni o ba tɩtɩɩ nɩ te tɩn.
+      sbs: 0.7205
+      gen_sec: 11.26
+      ref_sec: 9.64
+      cer: 0.3333
+      wer: 0.8
+    bible_00090:
+      source: bible
+      text: Nmo yerane mo ye Wɛ, ye n tei tega baŋa paare dim jei maama.
+      sbs: 0.7765
+      gen_sec: 5.21
+      ref_sec: 4.94
+      cer: 0.0889
+      wer: 0.1429
+    bible_00091:
+      source: bible
+      text: Nam ta de Isarele tiina bam we, ‘Amo swolim nuga kanto mo á wó ta‑á ma á turi amo kaanem tiina
+        se á pwɛ-ba amo ŋwaane se ko taa vei wuu.
+      sbs: 0.7448
+      gen_sec: 11.52
+      ref_sec: 10.86
+      cer: 0.0891
+      wer: 0.2581
+    bible_00092:
+      source: bible
+      text: Amo wó pa se Isarele tiina bam bochara zuri.
+      sbs: 0.7371
+      gen_sec: 3.84
+      ref_sec: 3.84
+      cer: 0.0
+      wer: 0.0
+    bible_00093:
+      source: bible
+      text: Kʋntʋ ŋwaanɩ, á taá kwe daanɩ sɩ kʋ pa á bɩcara taa tigi jǝgǝ dɩdʋa, sɩ á fɔgɩ á zǝni
+        daanɩ dɩ baarɩ nɩ á na maŋɩ á kɩ te tɩn.
+      sbs: 0.6987
+      gen_sec: 10.75
+      ref_sec: 9.24
+      cer: 0.3763
+      wer: 0.9032
+    bible_00094:
+      source: bible
+      text: Yimera bu Pasura déem mo ye kaanem tu wolo na nii Baŋa Wɛ wara-jei sem totoŋa yam baŋa ne
+        to.
+      sbs: 0.7986
+      gen_sec: 8.36
+      ref_sec: 8.32
+      cer: 0.0139
+      wer: 0.1
+    bible_00095:
+      source: bible
+      text: 'Suuhi tu Bilidad ma leiri o we: “Nmo lage n ŋɔɔne tento.'
+      sbs: 0.7814
+      gen_sec: 4.86
+      ref_sec: 4.72
+      cer: 0.1667
+      wer: 0.1667
+    bible_00096:
+      source: bible
+      text: Nɔɔno wom ya kaare o gwaaro, ye kasolo taare o yuu maama, o wo na chɔge to ŋwaane.
+      sbs: 0.7713
+      gen_sec: 7.17
+      ref_sec: 6.66
+      cer: 0.0323
+      wer: 0.1667
+    bible_00097:
+      source: bible
+      text: Tega ná poore, nɔn-ŋona wó di dam ba baŋa ne.
+      sbs: 0.7651
+      gen_sec: 4.1
+      ref_sec: 3.46
+      cer: 0.3636
+      wer: 0.4
+    bible_00098:
+      source: bible
+      text: A lwoori‑m se n saare a wɛleera yam n yage.
+      sbs: 0.7563
+      gen_sec: 3.67
+      ref_sec: 3.74
+      cer: 0.0312
+      wer: 0.1
+    bible_00099:
+      source: bible
+      text: se ba jwoori ba yiri jena yalo.
+      sbs: 0.7495
+      gen_sec: 2.65
+      ref_sec: 3.52
+      cer: 0.25
+      wer: 0.2857
+    bible_00100:
+      source: bible
+      text: Kokuri to, á wo tage amo yera taane se ko yɔɔre chwoŋa se ko maŋe de a tontoŋeno Job na tage
+        tei to.
+      sbs: 0.7818
+      gen_sec: 8.79
+      ref_sec: 7.5
+      cer: 0.1053
+      wer: 0.1739
+    bible_00101:
+      source: bible
+      text: Tega daa na poore to, mo ba nɛ we jwoni dem daa ta to Baŋa Wɛ ni-gwonim dakaa kam yiga ne.
+      sbs: 0.7833
+      gen_sec: 7.68
+      ref_sec: 6.56
+      cer: 0.1045
+      wer: 0.2381
+    bible_00102:
+      source: bible
+      text: Nam maŋe-na te maama se te dunni taa tɔge wara-jei sem maŋem chekke.
+      sbs: 0.6782
+      gen_sec: 6.23
+      ref_sec: 4.4
+      cer: 0.0566
+      wer: 0.3077
+    bible_00103:
+      source: bible
+      text: O ma tiini o kwe ye o laam te o tete toone.
+      sbs: 0.7347
+      gen_sec: 3.41
+      ref_sec: 5.96
+      cer: 0.0645
+      wer: 0.1667
+    bible_00104:
+      source: bible
+      text: Ba de maa wó leiri ba we, “Nmo ye debam Tu Wɛ wom mo.
+      sbs: 0.7875
+      gen_sec: 4.18
+      ref_sec: 5.86
+      cer: 0.0811
+      wer: 0.1429
+    bible_00105:
+      source: bible
+      text: Tento mo jworru telo na boŋe.
+      sbs: 0.7142
+      gen_sec: 2.65
+      ref_sec: 3.34
+      cer: 0.1304
+      wer: 0.3333
+    bible_00106:
+      source: bible
+      text: Bebare nyem ni taane nye de wodi-ywoŋo na duri solololo ko tu nabiinu kana ne to mo.
+      sbs: 0.7627
+      gen_sec: 7.42
+      ref_sec: 6.14
+      cer: 0.1212
+      wer: 0.6471
+    bible_00107:
+      source: bible
+      text: Amʋ Pooli dɩdaanɩ Silasɩ dɩ Timoti mʋ pʋpʋnɩ tɔnɔ kʋntʋ sɩ dɩ́ pa abam Wɛ nɔɔna balʋ na wʋ
+        Tesaloniki nɩ yɩ á yɩ dɩ́ Ko Baŋa-Wɛ dɩ dɩ́ Yuutu Zezi Krisi nɔɔna tɩn.
+      sbs: 0.731
+      gen_sec: 13.74
+      ref_sec: 12.92
+      cer: 0.2419
+      wer: 0.7353
+    bible_00108:
+      source: bible
+      text: Kʋntʋ tɩn, dɩ́ Yuutu Zezi Krisi na tuǝ, á bá ta jɩgɩ digiru Wɛ yigǝ nɩ dɩ fɩnfɩɩn dɩ.
+      sbs: 0.7227
+      gen_sec: 7.17
+      ref_sec: 6.66
+      cer: 0.3968
+      wer: 0.8947
+    bible_00109:
+      source: bible
+      text: Abam balo yiga na tere amo wone to.
+      sbs: 0.7451
+      gen_sec: 2.99
+      ref_sec: 3.4
+      cer: 0.1111
+      wer: 0.25
+    bible_00110:
+      source: bible
+      text: Samuwel bia bam nam wo tɔge ba kwo wom nɛ-bwora kam.
+      sbs: 0.7404
+      gen_sec: 4.52
+      ref_sec: 3.46
+      cer: 0.1
+      wer: 0.3636
+    bible_00111:
+      source: bible
+      text: O jege taane de abam balo na zoore tega kanto wone to.
+      sbs: 0.7401
+      gen_sec: 4.61
+      ref_sec: 3.08
+      cer: 0.0
+      wer: 0.0
+    bible_00112:
+      source: bible
+      text: ye ba daa lɛɛne ba duri ba vo Asiria tiina bam de tei.
+      sbs: 0.7706
+      gen_sec: 4.52
+      ref_sec: 3.42
+      cer: 0.0732
+      wer: 0.1538
+    bible_00113:
+      source: bible
+      text: de gare-jale delo na chege Wɛ di-yun-gala kam to.
+      sbs: 0.6559
+      gen_sec: 4.44
+      ref_sec: 3.12
+      cer: 0.5676
+      wer: 0.7778
+    bible_00114:
+      source: bible
+      text: Ba ma ke lu-nyenno wonnu finna se te teili ywoa yam.
+      sbs: 0.5791
+      gen_sec: 4.52
+      ref_sec: 3.1
+      cer: 0.175
+      wer: 0.6364
+    bible_00115:
+      source: bible
+      text: Ba déem lɛɛre ba di wodi-fɔrɔ mo ye ba nyɔa, ba daare ba zaŋe ba kwɛɛre yɔɔ yɔɔ.
+      sbs: 0.6999
+      gen_sec: 6.91
+      ref_sec: 5.66
+      cer: 0.1833
+      wer: 0.2778
+    bible_00116:
+      source: bible
+      text: O ná maŋe o chem taane dim baŋa ne, o ta wo sii.
+      sbs: 0.7468
+      gen_sec: 4.1
+      ref_sec: 3.8
+      cer: 0.1176
+      wer: 0.2308
+    bible_00117:
+      source: bible
+      text: 'Wɛ na lagɩ sɩ á taá yɩ te tɩn mʋ tɩntʋ: DƖ lagɩ sɩ á taá jɩgɩ wʋ-poŋo mʋ DƖ yigǝ nɩ,
+        sɩ á yɩ taá boorǝ.'
+      sbs: 0.7421
+      gen_sec: 8.45
+      ref_sec: 8.4
+      cer: 0.4521
+      wer: 0.963
+    bible_00118:
+      source: bible
+      text: ba pɛ se o nakwa bam nyɔ sana mo ba su.
+      sbs: 0.7429
+      gen_sec: 3.07
+      ref_sec: 3.02
+      cer: 0.1786
+      wer: 0.2727
+    bible_00119:
+      source: bible
+      text: Amo wó zo Efrayim tiina bam de Judah tiina bam wo.
+      sbs: 0.7517
+      gen_sec: 4.35
+      ref_sec: 3.5
+      cer: 0.1026
+      wer: 0.1818
+    bible_00120:
+      source: bible
+      text: Isarele tiina bam, á yeini á zo tolo wone.
+      sbs: 0.7601
+      gen_sec: 3.67
+      ref_sec: 3.0
+      cer: 0.0625
+      wer: 0.2222
+    bible_00121:
+      source: bible
+      text: de paara yalo na wó chwi ya ja vwei dem de konkɔlɔ kom zela yam to, de ya ŋone sem.
+      sbs: 0.7068
+      gen_sec: 7.0
+      ref_sec: 6.28
+      cer: 0.0645
+      wer: 0.25
+    bible_00122:
+      source: bible
+      text: Ba ma vo ba tei ba vwoa Ebeneza seeni, ye Filisi tiina bam vo ba tei ba vwoa Afeka seeni.
+      sbs: 0.786
+      gen_sec: 7.59
+      ref_sec: 7.9
+      cer: 0.1912
+      wer: 0.3
+    bible_00123:
+      source: bible
+      text: ye ya su de ŋɔna yalo na kuuri to.
+      sbs: 0.7738
+      gen_sec: 2.9
+      ref_sec: 3.86
+      cer: 0.04
+      wer: 0.1111
+    bible_00124:
+      source: bible
+      text: Abam ná vei Ejipti tiina tei mo se ba woli abam.
+      sbs: 0.7213
+      gen_sec: 4.1
+      ref_sec: 3.04
+      cer: 0.0541
+      wer: 0.1818
+    bible_00125:
+      source: bible
+      text: 'Wɛ tage o we: “Amo nɔɔna Isarele tiina bam.'
+      sbs: 0.7827
+      gen_sec: 3.67
+      ref_sec: 3.64
+      cer: 0.0625
+      wer: 0.1111
+    bible_00126:
+      source: bible
+      text: Pa se talwoŋa kam konto tiini ka taa ye ka yera ka pa-ne.
+      sbs: 0.6612
+      gen_sec: 4.95
+      ref_sec: 3.34
+      cer: 0.0465
+      wer: 0.2308
+    bible_00127:
+      source: bible
+      text: Ba toŋe nɔɔna pa ba zege Babilon ne ba ba.
+      sbs: 0.7836
+      gen_sec: 3.67
+      ref_sec: 3.04
+      cer: 0.125
+      wer: 0.2
+    bible_00128:
+      source: bible
+      text: nɔɔno ná tu o peene a momwa se a te.
+      sbs: 0.722
+      gen_sec: 2.9
+      ref_sec: 3.02
+      cer: 0.1154
+      wer: 0.4
+    bible_00129:
+      source: bible
+      text: 'Job ma leiri o we: “Ko ná ye amo ban-wira kam.'
+      sbs: 0.7738
+      gen_sec: 3.75
+      ref_sec: 3.86
+      cer: 0.125
+      wer: 0.1818
+    bible_00130:
+      source: bible
+      text: Abam zem nɔɔna bam, cheigi-na Baŋa Wɛ taane dem.
+      sbs: 0.8044
+      gen_sec: 4.44
+      ref_sec: 3.86
+      cer: 0.0
+      wer: 0.0
+    bible_00131:
+      source: bible
+      text: Gare-ŋone sem nyenyero maa ye nazwon-pupwia, de nasoŋ-pupwia, de nasoŋo chwɛ-chwɛ.
+      sbs: 0.7043
+      gen_sec: 8.11
+      ref_sec: 5.34
+      cer: 0.2923
+      wer: 1.1818
+    bible_00132:
+      source: bible
+      text: Ba maama dedoa dedoa ma pa‑o lu-nyenno sabu-dala, de sabu-seŋa jafole.
+      sbs: 0.7799
+      gen_sec: 6.57
+      ref_sec: 6.48
+      cer: 0.1111
+      wer: 0.2727
+    bible_00133:
+      source: bible
+      text: A ná tu a jeini nmo jazem seeni.
+      sbs: 0.7181
+      gen_sec: 2.65
+      ref_sec: 3.04
+      cer: 0.125
+      wer: 0.375
+    bible_00134:
+      source: bible
+      text: O na nigi we Hezekia weele o zaŋe to, mo o toŋe nɔɔna o tei ne de twanno de pɛɛra.
+      sbs: 0.7905
+      gen_sec: 7.0
+      ref_sec: 7.74
+      cer: 0.1311
+      wer: 0.25
+    bible_00135:
+      source: bible
+      text: ba boboŋa na jaane se ba zuli jwona to ŋwaane.
+      sbs: 0.7819
+      gen_sec: 4.18
+      ref_sec: 3.08
+      cer: 0.0
+      wer: 0.0
+    bible_00136:
+      source: bible
+      text: Kʋntʋ ma pa ba daa warɩ ba da Wɛ cwǝŋǝ kam.
+      sbs: 0.7588
+      gen_sec: 3.75
+      ref_sec: 3.24
+      cer: 0.2812
+      wer: 0.4545
+    bible_00137:
+      source: bible
+      text: O ma pa se a na mɔɔro tetwaro telei, te na zege Baŋa Wɛ diga kam yiga ne.
+      sbs: 0.7791
+      gen_sec: 6.14
+      ref_sec: 7.44
+      cer: 0.0926
+      wer: 0.2778
+    bible_00138:
+      source: bible
+      text: Abam lage á kwei á je sem á vɔ á yum ne mo.
+      sbs: 0.71
+      gen_sec: 3.33
+      ref_sec: 4.66
+      cer: 0.4333
+      wer: 0.4615
+    bible_00139:
+      source: bible
+      text: Nam pa-na se de nia yana yam maama taa mae daane, se á piri-de kuni belei.
+      sbs: 0.7227
+      gen_sec: 6.4
+      ref_sec: 5.72
+      cer: 0.0364
+      wer: 0.25
+    bible_00140:
+      source: bible
+      text: Nam yé ke-na ni-sɛɛm dedaane nɔɔna balo na zoore tega kam konto ne to.
+      sbs: 0.6571
+      gen_sec: 6.14
+      ref_sec: 3.68
+      cer: 0.0926
+      wer: 0.2857
+    bible_00141:
+      source: bible
+      text: Ba maa sɛ se nɔɔna yeigi-ba de sabu, ye ba daare ba kweele chega kam ba yage tega ne de ba
+        na bore nɔɔna taana tei to.
+      sbs: 0.7799
+      gen_sec: 9.98
+      ref_sec: 9.24
+      cer: 0.0562
+      wer: 0.1852
+    bible_00142:
+      source: bible
+      text: Ne baŋa seeni vio kom na tui de doa tei to.
+      sbs: 0.7718
+      gen_sec: 3.67
+      ref_sec: 3.08
+      cer: 0.0
+      wer: 0.1818
+    bible_00143:
+      source: bible
+      text: Ko daare wolo na ke o wo-dedoa de Baŋa Wɛ to wó di ywoni.
+      sbs: 0.771
+      gen_sec: 4.86
+      ref_sec: 4.38
+      cer: 0.0476
+      wer: 0.1429
+    bible_00144:
+      source: bible
+      text: Amo wó waare-ba pa se ba na chɔgem.
+      sbs: 0.7514
+      gen_sec: 2.99
+      ref_sec: 3.4
+      cer: 0.0
+      wer: 0.0
+    bible_00145:
+      source: bible
+      text: Abam ga boŋe we amo de abam maama ye bedwe mo.
+      sbs: 0.7684
+      gen_sec: 4.01
+      ref_sec: 3.82
+      cer: 0.1429
+      wer: 0.3636
+    bible_00146:
+      source: bible
+      text: pa se ka keeri wo-chechɔgɔ ŋwaane.
+      sbs: 0.7402
+      gen_sec: 3.24
+      ref_sec: 3.14
+      cer: 0.1481
+      wer: 0.6667
+    bible_00147:
+      source: bible
+      text: konto tu jei mo ye lwia ba jege‑o.
+      sbs: 0.7363
+      gen_sec: 2.9
+      ref_sec: 3.46
+      cer: 0.08
+      wer: 0.125
+    bible_00148:
+      source: bible
+      text: Yɩ zaŋɩ n pa nɔɔn-nɔɔnʋ gooni-m n na yɩ bu tɩn ŋwaanɩ.
+      sbs: 0.6481
+      gen_sec: 4.86
+      ref_sec: 3.14
+      cer: 0.3
+      wer: 0.8333
+    bible_00149:
+      source: bible
+      text: 'Konto ŋwaane, Baŋa Wɛ na tage kolo Josia bu Jehoyakim na ye Judah teo pɛ to seeni to mo tento:
+        “O ná tega, nɔɔn-nɔɔno bá keeri o lua.'
+      sbs: 0.7958
+      gen_sec: 11.61
+      ref_sec: 13.3
+      cer: 0.07
+      wer: 0.25
+    bible_00150:
+      source: bible
+      text: Ba maa swoi se ba taa pini ba yeilla bam.
+      sbs: 0.7345
+      gen_sec: 3.41
+      ref_sec: 3.54
+      cer: 0.2581
+      wer: 0.5
+    bible_00151:
+      source: bible
+      text: Gare-jala fuga kam maama déem mae daane mo.
+      sbs: 0.6633
+      gen_sec: 3.84
+      ref_sec: 3.36
+      cer: 0.2059
+      wer: 0.5
+    bible_00152:
+      source: bible
+      text: sɩ nɔɔn-nɔɔnʋ yɩ ma lwarɩm o joori o ma o ŋwɩ o doŋ lwarɩm.
+      sbs: 0.7122
+      gen_sec: 5.21
+      ref_sec: 3.84
+      cer: 0.25
+      wer: 0.6429
+    bible_00153:
+      source: bible
+      text: Á ta maa pae ko ye amo tusim ŋwaane mo a nɛ a chaveera.
+      sbs: 0.7741
+      gen_sec: 4.61
+      ref_sec: 4.8
+      cer: 0.0488
+      wer: 0.1429
+    bible_00154:
+      source: bible
+      text: Baŋa Wɛ na tage konto to, a ma kwei lu-nyenno sabu-dala fuga-yanu, de chaara ywollu tenu,
+        se a ŋwe a ma jwoori a jwoŋi‑o.
+      sbs: 0.7713
+      gen_sec: 10.92
+      ref_sec: 10.22
+      cer: 0.0667
+      wer: 0.1667
+    bible_00155:
+      source: bible
+      text: Ni-som nyem nye de o chege kalanchogo mo o tiŋi.
+      sbs: 0.7245
+      gen_sec: 4.35
+      ref_sec: 3.74
+      cer: 0.1351
+      wer: 0.3
+    bible_00156:
+      source: bible
+      text: N ná nɛ-ko, nmo wó ta‑n jege jwa lanyerane.
+      sbs: 0.7812
+      gen_sec: 3.75
+      ref_sec: 3.96
+      cer: 0.0645
+      wer: 0.2222
+    bible_00157:
+      source: bible
+      text: 'Job ma leiri o we: “Abam lage se á tɔge.'
+      sbs: 0.7273
+      gen_sec: 3.24
+      ref_sec: 3.38
+      cer: 0.1071
+      wer: 0.2
+    bible_00158:
+      source: bible
+      text: Wɛ sɩɩnɩ DƖ tʋŋɩ-nɩ mʋ sɩ a taa brɩ dwi-gɛ tiinǝ, sɩ ba sɛ DƖ cɩga kam ba kɩ ba wʋ-dɩdʋa dɩ
+        DƖ.
+      sbs: 0.7358
+      gen_sec: 8.11
+      ref_sec: 7.14
+      cer: 0.3529
+      wer: 0.8261
+    bible_00159:
+      source: bible
+      text: Wolo de maa na toŋe o pae o tu de chega to wó jwoŋi zula.
+      sbs: 0.7839
+      gen_sec: 4.86
+      ref_sec: 4.66
+      cer: 0.0476
+      wer: 0.1333
+    bible_00160:
+      source: bible
+      text: Gwoni-na ba Asera nyenyego dɛ sem á de tega ne.
+      sbs: 0.672
+      gen_sec: 4.1
+      ref_sec: 3.2
+      cer: 0.3889
+      wer: 0.4
+    bible_00161:
+      source: bible
+      text: Amo yera de daa bá taa sae.
+      sbs: 0.7589
+      gen_sec: 2.22
+      ref_sec: 3.16
+      cer: 0.05
+      wer: 0.1429
+    bible_00162:
+      source: bible
+      text: Bene maama wone se abam baara bam jeeri amo yiga ne kuni betɔ, se ba zuli-ne.
+      sbs: 0.713
+      gen_sec: 6.74
+      ref_sec: 5.64
+      cer: 0.0339
+      wer: 0.125
+    bible_00163:
+      source: bible
+      text: Ka ná jaane wolo, ka zaga ne basankwea mo ye ka vea de nye de anakɔbayi vea.
+      sbs: 0.7792
+      gen_sec: 6.49
+      ref_sec: 8.12
+      cer: 0.1379
+      wer: 0.6471
+    bible_00164:
+      source: bible
+      text: Ba ma daare ba gɔgere nyenyero gare-jale dem yera ne.
+      sbs: 0.6986
+      gen_sec: 4.78
+      ref_sec: 3.54
+      cer: 0.1429
+      wer: 0.3
+    bible_00165:
+      source: bible
+      text: Baŋa Wɛ ma leiri o we, “Nam sɛ ba taane dem n daare n tiŋi pɛ n pa-ba.
+      sbs: 0.7742
+      gen_sec: 5.8
+      ref_sec: 5.36
+      cer: 0.0204
+      wer: 0.1667
+    bible_00166:
+      source: bible
+      text: Nam beeri-na nabɛ serepɛ, de pi-bale serepɛ á ja á vo Job tei se á kwei-te á ke zwɛɛm kaanem
+        á tete ŋwaane.
+      sbs: 0.7672
+      gen_sec: 9.3
+      ref_sec: 10.52
+      cer: 0.1375
+      wer: 0.3478
+    bible_00167:
+      source: bible
+      text: Bɛ mo ye á lage á vo Asiria.
+      sbs: 0.6672
+      gen_sec: 2.22
+      ref_sec: 3.32
+      cer: 0.2
+      wer: 0.5
+    bible_00168:
+      source: bible
+      text: Nii-na lɛɛro telo á na ke bwollu tem tega ne to.
+      sbs: 0.7529
+      gen_sec: 4.1
+      ref_sec: 4.52
+      cer: 0.1667
+      wer: 0.3636
+    bible_00169:
+      source: bible
+      text: O déem zei kandwa-pelɛ selei selo Wɛ ni-gwonim dem botara na popone ya baŋa ne, yiga de kwaga
+        to mo.
+      sbs: 0.6911
+      gen_sec: 8.87
+      ref_sec: 7.18
+      cer: 0.0649
+      wer: 0.15
+    bible_00170:
+      source: bible
+      text: Bɛŋwaanɩ Wɛ taanɩ dɩm dɩ dɩbam Wɛ-loro kʋm mʋ kwɛ woŋo maama kʋ pa kʋ lana Wɛ yigǝ nɩ.
+      sbs: 0.6866
+      gen_sec: 7.59
+      ref_sec: 6.44
+      cer: 0.1818
+      wer: 0.6842
+    bible_00171:
+      source: bible
+      text: Chwo-fara wó peini se nɔɔna taa tɔge da ba via.
+      sbs: 0.7467
+      gen_sec: 4.1
+      ref_sec: 4.3
+      cer: 0.25
+      wer: 0.5
+    bible_00172:
+      source: bible
+      text: ba laam wó seene ba yia ba beeri amo jeiga.
+      sbs: 0.754
+      gen_sec: 3.67
+      ref_sec: 4.84
+      cer: 0.0
+      wer: 0.0
+    bible_00173:
+      source: bible
+      text: Á nan yɩ pa boorim wʋbʋŋa wanɩ abam, nɩ nɔɔna balʋ na yǝri Wɛ tɩn.
+      sbs: 0.6861
+      gen_sec: 5.72
+      ref_sec: 4.42
+      cer: 0.34
+      wer: 0.6667
+    bible_00174:
+      source: bible
+      text: ye nɔɔna nae á na biini á tete tei to.
+      sbs: 0.7797
+      gen_sec: 3.07
+      ref_sec: 3.26
+      cer: 0.2143
+      wer: 0.6
+    bible_00175:
+      source: bible
+      text: Dɩ́ Ko Wɛ dɩ dɩ́ Yuutu Zezi Krisi wʋ́ pa nmʋ yazurǝ dɩ yu-yoŋo, yɩ o daarɩ o duri nmʋ ŋwaŋa.
+      sbs: 0.7229
+      gen_sec: 7.77
+      ref_sec: 6.18
+      cer: 0.2879
+      wer: 0.7143
+    bible_00176:
+      source: bible
+      text: Amo Baŋa Wɛ nam wó vere-ba toone jeŋa ne a yage na?
+      sbs: 0.7584
+      gen_sec: 4.52
+      ref_sec: 3.22
+      cer: 0.0
+      wer: 0.0
+    bible_00177:
+      source: bible
+      text: Kago-vara, de zuna, de naneo wo ywona yam maama de lage te te.
+      sbs: 0.8028
+      gen_sec: 5.38
+      ref_sec: 4.78
+      cer: 0.0652
+      wer: 0.4615
+    bible_00178:
+      source: bible
+      text: Ko ye kwɛɛra sɔɔ mo.
+      sbs: 0.6941
+      gen_sec: 1.71
+      ref_sec: 9.16
+      cer: 0.2667
+      wer: 0.4
+    bible_00179:
+      source: bible
+      text: de ni-wɛɛle delo n na jege n ke de amo to ni ne.
+      sbs: 0.7579
+      gen_sec: 3.84
+      ref_sec: 5.06
+      cer: 0.0882
+      wer: 0.1538
+    bible_00180:
+      source: bible
+      text: Wɛ tontoŋeno David déem pane leiŋa kanto maŋa kalo Baŋa Wɛ na jwoŋi‑o o yage Pɛ Sɔɔl de o
+        dona bam maama jeŋa ne to.
+      sbs: 0.7578
+      gen_sec: 10.58
+      ref_sec: 8.4
+      cer: 0.0
+      wer: 0.0
+    bible_00181:
+      source: bible
+      text: Á na lage á ke konto, nɔɔno maama jege se o kwei sabu o tiŋi o tete ŋwea ŋwaane mo.
+      sbs: 0.6809
+      gen_sec: 7.25
+      ref_sec: 4.72
+      cer: 0.0645
+      wer: 0.15
+    bible_00182:
+      source: bible
+      text: ye ba wolowolo wo lwoori wolim amo tei ne.
+      sbs: 0.7683
+      gen_sec: 3.67
+      ref_sec: 3.14
+      cer: 0.1818
+      wer: 0.2222
+    bible_00183:
+      source: bible
+      text: Nan dɩ kʋ dɩ, dɩ́ Yuutu Zezi mʋ kɩ-nɩ yu-yoŋo zanzan kʋ ja gaalɩ, yɩ o daarɩ o pa a taa jɩgɩ
+        wʋ-dɩdʋa dɩd-o dɩ sono, a na ŋwɩ dɩd-o tɩn ŋwaanɩ.
+      sbs: 0.7384
+      gen_sec: 12.37
+      ref_sec: 12.44
+      cer: 0.3235
+      wer: 0.8438
+    bible_00184:
+      source: bible
+      text: A maa wó taa zoore de Isarele tiina bam, se a taa ye ba Wɛ.
+      sbs: 0.733
+      gen_sec: 4.86
+      ref_sec: 3.82
+      cer: 0.1628
+      wer: 0.4
+    bible_00185:
+      source: bible
+      text: Nam leeni-na leiŋa á pa Baŋa Wɛ!
+      sbs: 0.7442
+      gen_sec: 2.99
+      ref_sec: 3.04
+      cer: 0.3333
+      wer: 0.7143
+    bible_00186:
+      source: bible
+      text: ye ba pa se ko ba jege kuri.
+      sbs: 0.7395
+      gen_sec: 2.22
+      ref_sec: 3.28
+      cer: 0.2
+      wer: 0.125
+    bible_00187:
+      source: bible
+      text: Ta pa se dé taa ye nmo tete nyɔn-mage nɔɔna, se n ta‑n tei debam.
+      sbs: 0.7192
+      gen_sec: 5.55
+      ref_sec: 4.16
+      cer: 0.1064
+      wer: 0.4667
+    bible_00188:
+      source: bible
+      text: Dáane mo nmo wó te, se ba daare ba ke‑m da.
+      sbs: 0.7589
+      gen_sec: 3.58
+      ref_sec: 4.44
+      cer: 0.1333
+      wer: 0.2727
+    bible_00189:
+      source: bible
+      text: N jege se n ke konto maama mo n tiŋi Aron de o bia bam ba kaanem totoŋa yam ŋwaane.
+      sbs: 0.7073
+      gen_sec: 7.25
+      ref_sec: 5.18
+      cer: 0.0
+      wer: 0.0
+    bible_00190:
+      source: bible
+      text: Judah tiina bam de dwi-gɛ tiina balo maama na gilimi-ba to maa wó taa wo Babilon teo pɛ dam
+        kuri ne bena fuserepɛ.
+      sbs: 0.7753
+      gen_sec: 9.98
+      ref_sec: 10.4
+      cer: 0.0787
+      wer: 0.3478
+    bible_00191:
+      source: bible
+      text: Ta n kwaanɩ n karɩmɩ Wɛ taanɩ dɩm dɩ nɔɔna bam, sɩ n daarɩ n brɩ-ba Wɛ cɩga kam, sɩ kʋ taa
+        ve maŋa kam a na wʋ́ ba tɩn.
+      sbs: 0.7143
+      gen_sec: 9.9
+      ref_sec: 8.4
+      cer: 0.2353
+      wer: 0.6333
+    bible_00192:
+      source: bible
+      text: O ta maa nɔne naneo na-ŋone sem baŋa ne o via.
+      sbs: 0.7534
+      gen_sec: 4.1
+      ref_sec: 3.64
+      cer: 0.0294
+      wer: 0.2727
+    bible_00193:
+      source: bible
+      text: Asedodi tiina bam na maane kolo na jege ko ke to, ba ma laare ba we, “Ko ye Isarele tiina
+        Wɛ dem mo wora o waare debam, dedaane dé wɛ Dagon.
+      sbs: 0.7741
+      gen_sec: 11.78
+      ref_sec: 12.92
+      cer: 0.0952
+      wer: 0.1935
+    bible_00194:
+      source: bible
+      text: te bá wane abam yera te titigi te gɔ á yera digiru tem.
+      sbs: 0.7897
+      gen_sec: 4.61
+      ref_sec: 5.88
+      cer: 0.1667
+      wer: 0.4615
+    bible_00195:
+      source: bible
+      text: Dɩ́ ko-biǝ-ba, abam na nɛ yaara yalʋ tɩn, Zezi kɔgɔ kʋlʋ na wʋ Zude tɩɩnɩ dɩm nɩ tɩn dɩ nɛ
+        yaara yantʋ doŋ mʋ.
+      sbs: 0.6977
+      gen_sec: 9.39
+      ref_sec: 8.68
+      cer: 0.3457
+      wer: 0.7917
+    bible_00196:
+      source: bible
+      text: Chega tiina kɔre nɔn-balwaaro na wo mɛ to mo.
+      sbs: 0.7615
+      gen_sec: 4.01
+      ref_sec: 3.78
+      cer: 0.3143
+      wer: 0.3333
+    bible_00197:
+      source: bible
+      text: ” Nɔɔno wom ma ke lela o vo o yi Eli tei o ta o bere‑o kolo na ke to.
+      sbs: 0.7393
+      gen_sec: 5.29
+      ref_sec: 4.4
+      cer: 0.0638
+      wer: 0.1053
+    bible_00198:
+      source: bible
+      text: O nam wó pa se Zion tiina bam taa tɔge chega de nɔn-ŋonne kikia yerane.
+      sbs: 0.7698
+      gen_sec: 6.23
+      ref_sec: 7.34
+      cer: 0.0364
+      wer: 0.2
+    bible_00199:
+      source: bible
+      text: Dɛ delo, Baŋa Wɛ daa wó duri dé ŋwaŋa se o ke wo-kenkagele ne o na ke tei faŋa to, se o zeili
+        Nebukadeneza se o jwoori o viiri o daare debam.
+      sbs: 0.7903
+      gen_sec: 12.37
+      ref_sec: 13.78
+      cer: 0.0472
+      wer: 0.1562
 - model: facebook/mms-tts-xsm
   model_url: https://huggingface.co/facebook/mms-tts-xsm
   mode: noref
@@ -18222,4 +19881,4 @@ benchmarks:
       cer: 1.0
       wer: 1.0
       failed: clip longer than the judge limit (39s)
-updated: '2026-10-01'
+updated: '2026-10-09'
