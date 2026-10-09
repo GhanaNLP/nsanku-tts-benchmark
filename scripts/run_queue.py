@@ -28,7 +28,7 @@ sys.path.insert(0, str(ROOT))
 from benchmark import yamlio  # noqa: E402
 
 
-def complete(iso):
+def complete(iso, only_model=None):
     path = ROOT / "benchmarks" / f"{iso}.yaml"
     try:
         doc = yamlio.load(path.read_text(encoding="utf-8")) or {}
@@ -37,6 +37,8 @@ def complete(iso):
     rows = doc.get("benchmarks") or []
     if not rows or not all("composite" in b and not b.get("partial") for b in rows):
         return False
+    if only_model and not any(b.get("model", "").startswith(only_model) for b in rows):
+        return False                     # the model's row is not in the results yet
     total = doc.get("num_samples") or 200
     shares = sorted((b.get("failed") or 0) / total for b in rows)
     return shares[len(shares) // 2] < 0.5
@@ -47,11 +49,12 @@ def main():
     ap.add_argument("isos", nargs="*", help="languages, in the order to run them")
     ap.add_argument("--remaining", action="store_true", help="every language not yet complete")
     ap.add_argument("--repairs", type=int, default=2, help="extra attempts for a language that ends incomplete")
+    ap.add_argument("--only-model", default=None, help="add just this registered model to each language")
     args = ap.parse_args()
 
     from benchmark.config import all_isos
 
-    isos = args.isos or ([i for i in all_isos() if not complete(i)] if args.remaining else [])
+    isos = args.isos or ([i for i in all_isos() if not complete(i, args.only_model)] if args.remaining else [])
     if not isos:
         ap.error("give languages, or --remaining")
     print(f"{time.strftime('%F %T')} queue: {' '.join(isos)}", flush=True)
@@ -59,8 +62,9 @@ def main():
     for iso in isos:
         for attempt in range(1 + args.repairs):
             print(f"{time.strftime('%F %T')} === {iso} (attempt {attempt + 1})", flush=True)
-            subprocess.run([sys.executable, "-u", "scripts/run_benchmark.py", "--iso", iso], cwd=ROOT)
-            if complete(iso):
+            subprocess.run([sys.executable, "-u", "scripts/run_benchmark.py", "--iso", iso]
+                           + (["--only-model", args.only_model] if args.only_model else []), cwd=ROOT)
+            if complete(iso, args.only_model):
                 print(f"{time.strftime('%F %T')} === {iso} complete", flush=True)
                 break
             print(f"{time.strftime('%F %T')} === {iso} incomplete; "

@@ -20,7 +20,7 @@
 #   scripts/h200_run.sh verify python scripts/verify_scorer.py
 set -euo pipefail
 
-STAGE="${1:?usage: h200_run.sh <synth|omni|asr|score|verify|shell> [cmd...]}"
+STAGE="${1:?usage: h200_run.sh <synth|omni|asr|score|audiodit|verify|shell> [cmd...]}"
 shift || true
 
 REPO="${NSANKU_REPO:-/mnt/volume_d2wey28/projects/nsanku-tts-benchmark}"
@@ -32,6 +32,19 @@ TMP="${NSANKU_TMP:-/mnt/volume_d2wey28/tmp}"
 # `asr` image is deliberately not used here: it is the fairseq2/omnilingual ASR
 # judge and ships no transformers, so it cannot load WavLM at all.
 SCORE_IMAGE="${NSANKU_SCORE_IMAGE:-nsanku-score:latest}"
+
+# `audiodit` is not a container: ghana-audiodit needs transformers>=5.3 on torch 2.9, which no
+# existing image has, so it runs on the host in the model project's own venv, against a
+# checkout of its package pinned to the matching release (set below; override with env vars).
+if [ "$STAGE" = "audiodit" ]; then
+  PROJECTS="$(dirname "$REPO")"
+  AUDIODIT_PY="${NSANKU_AUDIODIT_PY:-$PROJECTS/longcat-audiodit-ghana/.venv/bin/python}"
+  shift_args=("$@"); [ "${shift_args[0]}" = "python" ] && shift_args=("${shift_args[@]:1}")
+  cd "$REPO"
+  exec env PYTHONPATH="$REPO" PYTHONUTF8=1 HF_HOME="$HF_CACHE" TMPDIR="$TMP" \
+    AUDIODIT_PACKAGE_DIR="${AUDIODIT_PACKAGE_DIR:-$PROJECTS/ghana-audiodit-pinned}" \
+    "$AUDIODIT_PY" -u "${shift_args[@]}"
+fi
 
 case "$STAGE" in
   synth|shell) IMAGE="$IMAGES:tts" ;;

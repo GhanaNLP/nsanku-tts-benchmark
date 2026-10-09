@@ -166,11 +166,11 @@ def synthesize_language(iso, model_filter=None, device="cuda", force=False, samp
         # "...-preview-universal"); otherwise it is a substring filter.
         exact = [m for m in models if m["name"].lower() == model_filter.lower()]
         models = exact or [m for m in models if model_filter.lower() in m["name"].lower()]
-    if stack == "omni":
-        models = [m for m in models if m.get("stack") == "omni"]
+    if stack in ("omni", "audiodit"):
+        models = [m for m in models if m.get("stack") == stack]
     elif stack == "tts":
-        # Everything that runs in the standard image; OmniVoice needs its own.
-        models = [m for m in models if m.get("stack") != "omni"]
+        # Everything that runs in the standard image; OmniVoice and AudioDiT need their own.
+        models = [m for m in models if m.get("stack") not in ("omni", "audiodit")]
     if not models:
         print(f"  No TTS models for {iso}")
         return []
@@ -712,7 +712,7 @@ def main():
              "environment); the H200 runner uses separate images per stage.")
     parser.add_argument("--iso", action="append", help="limit to these languages")
     parser.add_argument("--model", help="substring filter on model name")
-    parser.add_argument("--stack", choices=["tts", "omni"],
+    parser.add_argument("--stack", choices=["tts", "omni", "audiodit"],
                         help="synthesize only the models that run in this image")
     parser.add_argument("--limit", type=int, help="samples per language")
     parser.add_argument("--device", default="cuda")

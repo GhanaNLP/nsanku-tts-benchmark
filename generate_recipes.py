@@ -103,6 +103,9 @@ BLURBS = {
                "LENGTH_SCALE above 1.0 slows the speech down. SPEAKER_ID picks the voice.",
     "sparktts": "Spark-TTS voice cloning mode using a reference clip for voice prompting.",
     "sparktts-noref": "Spark-TTS controllable attribute mode (without reference audio).",
+    "audiodit": "AudioDiT flow-matching text-to-speech for Ghanaian languages.\n"
+                "STEPS is diffusion steps (16 default); CFG_STRENGTH is guidance (4.0 default);\n"
+                "SEED selects the voice identity.",
 }
 
 BODIES = {
@@ -124,6 +127,7 @@ BODIES = {
     "nanotwi": "NOISE_SCALE = 1.0\nLENGTH_SCALE = 1.0\nSPEAKER_ID = 0\n",
     "sparktts": "REFERENCE_TEXT = None\nREFERENCE_CLIP = None\nGENDER = 'female'\nPITCH = 'moderate'\nSPEED = 'moderate'\n",
     "sparktts-noref": "GENDER = 'female'\nPITCH = 'moderate'\nSPEED = 'moderate'\n",
+    "audiodit": "STEPS = 16\nCFG_STRENGTH = 4.0\nSEED = 42\nSPEED = 1.0\n",
 }
 
 
@@ -147,6 +151,8 @@ def kind_for(model_id, meta):
         return "ipa_voxcpm" if "voxcpm" in lower else "ipa"
     if meta.get("runner") == "cosyvoice" or "cosyvoice" in lower:
         return "cosyvoice"
+    if meta.get("runner") == "audiodit" or "audiodit" in lower:
+        return "audiodit"
     if "khaya" in lower:
         return "khaya"
     if "nano-twi" in lower:

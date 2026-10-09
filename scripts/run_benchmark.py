@@ -33,7 +33,7 @@ from benchmark.config import ISO_TO_NAME, SPEECH_EVAL_SOURCES
 # jobs, and a stage that loads a model onto a full card dies with CUDA OOM.
 # Measured: a VoxCPM/MMS synthesis process holds ~5 GB, WavLM scoring ~3 GB, the 7B ASR
 # judge ~20 GB. A stage with nothing left to do still waits, so keep the small ones small.
-NEED_FREE_GB = {"synth": 8, "omni": 8, "asr": 22, "score": 6}
+NEED_FREE_GB = {"synth": 8, "omni": 8, "asr": 22, "score": 6, "audiodit": 8}
 ATTEMPTS = 3
 RETRY_WAIT_S = 300
 
@@ -109,7 +109,32 @@ def run_cmd(cmd, desc="", stage=None):
     return False
 
 
-def benchmark_language(iso, limit=None):
+def model_stages(iso, model, limit_args):
+    """Stages that add ONE already-registered model to a language that is otherwise done.
+
+    The other models' clips and scores are cached, so the judge and scorer only do the new
+    model's work; assemble then rewrites the language's results with it included.
+    """
+    sys.path.insert(0, str(REPO))
+    from benchmark.evaluate import load_tts_models
+
+    meta = next((m for m in load_tts_models(iso) if m["name"] == model or m.get("model_id") == model), None)
+    if meta is None:
+        return None                      # not registered for this language: nothing to do
+    stack = meta.get("stack") or "tts"
+    image = {"audiodit": "audiodit", "omni": "omni"}.get(stack, "synth")
+    py = ["python", "-m", "benchmark.evaluate"]
+    synth_stack = {"synth": "tts"}.get(image, image)
+    return [
+        (image, py + ["synthesize", "--iso", iso, "--stack", synth_stack, "--model", meta["name"]] + limit_args,
+         f"{meta['name']} synthesis for {iso}"),
+        ("asr", py + ["score-cer", "--iso", iso] + limit_args, f"CER for {iso}"),
+        ("score", py + ["score-sbs", "--iso", iso] + limit_args, f"SpeechBERTScore for {iso}"),
+        ("score", py + ["assemble", "--iso", iso], f"Assemble {iso}"),
+    ]
+
+
+def benchmark_language(iso, limit=None, only_model=None):
     """Run every stage for one language. Returns the stages that failed for good."""
     lang_name = ISO_TO_NAME.get(iso, iso)
     print(f"\n{'#' * 70}")
@@ -127,6 +152,11 @@ def benchmark_language(iso, limit=None):
         ("score", py + ["score-sbs", "--iso", iso] + limit_args, f"SpeechBERTScore for {iso}"),
         ("score", py + ["assemble", "--iso", iso], f"Assemble {iso}"),
     ]
+    if only_model:
+        stages = model_stages(iso, only_model, limit_args)
+        if stages is None:
+            print(f"  {only_model} is not registered for {iso}; nothing to do")
+            return []
     failed = []
     for image, cmd, desc in stages:
         if not run_cmd(run + [image] + cmd, desc, stage=image):
@@ -139,6 +169,8 @@ def main():
     parser.add_argument("--iso", default=None, help="Single language ISO to run (e.g. twi_asante)")
     parser.add_argument("--all-languages", action="store_true", help="Run all 12 benchmark languages")
     parser.add_argument("--limit", type=int, default=None, help="Sample limit per model (default: all 200)")
+    parser.add_argument("--only-model", default=None,
+                        help="add just this registered model to the language(s); other models are left as they are")
     args = parser.parse_args()
 
     if not args.iso and not args.all_languages:
@@ -150,7 +182,7 @@ def main():
     incomplete = {}
     for i, iso in enumerate(languages, 1):
         print(f"\n[{i}/{len(languages)}] Starting {iso}...")
-        failed = benchmark_language(iso, limit=args.limit)
+        failed = benchmark_language(iso, limit=args.limit, only_model=args.only_model)
         if failed:
             incomplete[iso] = failed
 

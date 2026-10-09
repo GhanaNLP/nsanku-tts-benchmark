@@ -121,6 +121,8 @@ def load_tts_model(model_id, device="cuda", subset=None, iso=None, **kwargs):
         return KhayaTTSWrapper(model_id, device="cpu", meta=meta, **kwargs)
     if "gemini" in lower and "tts" in lower:
         return GeminiTTSWrapper(model_id, device="cpu", meta=meta, **kwargs)
+    if meta.get("runner") == "audiodit" or "audiodit" in lower:
+        return AudioDiTWrapper(model_id, device=device, meta=meta, iso=iso, **kwargs)
 
     if "kokoro" in lower or "sherpa" in lower:
         raise UnsupportedModel(f"{model_id}: Kokoro/sherpa models not yet supported")
@@ -1406,6 +1408,113 @@ class GeminiTTSWrapper(BaseTTSModel):
         data = resp.json()["candidates"][0]["content"]["parts"][0]["inlineData"]["data"]
         pcm = np.frombuffer(base64.b64decode(data), dtype=np.int16).astype(np.float32) / 32768.0
         return _wav_bytes(pcm, sample_rate=24000)
+
+
+AUDIODIT_LANG_MAP = {
+    "ada": "Dangme_ada",
+    "dag": "Dagbani_dag",
+    "dga": "Dagaare_dga",
+    "ewe": "Ewe_ewe",
+    "fat": "Fante_fat",
+    "gjn": "Gonja_gjn",
+    "gur": "Ninkare_gur",
+    "nzi": "Nzema_nzi",
+    "twi_akuapem": "Akuapem_Twi_twi",
+    "twi_asante": "Asante_Twi_twi",
+    "xsm": "Kasem_xsm",
+    "acd": "Gikyode_acd",
+    "akp": "Siwu_akp",
+    "any": "Anyin_any",
+    "avn": "Avatime_avn",
+    "bib": "Bissa_bib",
+    "bim": "Bimoba_bim",
+    "biv": "Birifor_Southern_biv",
+    "bov": "Tuwuli_bov",
+    "bud": "Bassar_Ntcham_bud",
+    "bwu": "Buli_bwu",
+    "ffm": "Fulfulde_Maasina_ffm",
+    "hau": "Hausa_hau",
+    "kbp": "Kabiye_kbp",
+    "kdh": "Tem_kdh",
+    "kma": "Konni_kma",
+    "kus": "Kusaal_kus",
+    "lef": "Lelemi_lef",
+    "lip": "Sekpele_lip",
+    "maw": "Mampruli_maw",
+    "mzw": "Deg_mzw",
+    "naw": "Nawuri_naw",
+    "ncu": "Chumburung_ncu",
+    "nko": "Nkonya_nko",
+    "ntr": "Ntrubo_ntr",
+    "sfw": "Sehwi_sfw",
+    "sig": "Paasaal_sig",
+    "sil": "Sisaala_Tumulung_sil",
+    "snw": "Selee_snw",
+    "tpm": "Tampulma_tpm",
+    "vag": "Vagla_vag",
+    "xon": "Konkomba_xon",
+}
+
+
+class AudioDiTWrapper(BaseTTSModel):
+    """ghanaopenai/ghana-audiodit: flow-matching AudioDiT (1.42 B) for 43 Ghanaian languages.
+
+    The weights run *locally*, through the model's own package (``ghana_audiodit``), at a
+    pinned revision: the registry entry's ``revision`` is the Hugging Face commit, and
+    AUDIODIT_PACKAGE_DIR points at a checkout of the package at the matching release. There
+    is deliberately no hosted-endpoint fallback: a benchmark has to measure known weights,
+    and a silent fallback to a public demo server would measure something else (and send it
+    thousands of requests).
+
+    No reference audio: the voice comes from the random starting noise, so a fixed SEED
+    gives every sentence the same voice. The package converts normal spelling to the
+    africa-g2p universal spelling the model was trained on, so sentences go in as written.
+    Output is 24 kHz mono.
+    """
+
+    def __init__(self, model_id="ghanaopenai/ghana-audiodit", device="cuda", meta=None,
+                 iso=None, **kwargs):
+        super().__init__(model_id, device)
+        import sys
+
+        self.meta = meta or {}
+        self.iso = iso
+        pkg = os.environ.get("AUDIODIT_PACKAGE_DIR")
+        if pkg and pkg not in sys.path:
+            sys.path.insert(0, pkg)
+        try:
+            from ghana_audiodit import GhanaTTS
+        except ImportError as e:
+            raise UnsupportedModel(
+                f"{model_id}: needs the ghana_audiodit package (transformers>=5.3, africa-g2p, "
+                f"pyspellchecker); set AUDIODIT_PACKAGE_DIR to a checkout of it ({e})"
+            )
+        self.revision = self.meta.get("revision")
+        if not self.revision:
+            raise UnsupportedModel(f"{model_id}: the registry entry must pin a `revision`")
+        self.tts = GhanaTTS.from_pretrained(model_id, revision=self.revision,
+                                            device=device if str(device).startswith("cuda") else None)
+        self.sample_rate = self.tts.sample_rate
+        # Every language we map must be one the model really has.
+        unknown = sorted(k for k in AUDIODIT_LANG_MAP.values() if k not in self.tts.languages)
+        if unknown:
+            raise RuntimeError(f"language keys not in the model: {unknown}")
+        logger.info("Loaded AudioDiT %s @ %s", model_id, self.revision[:8])
+
+    def synthesize(self, text, lang=None, **kwargs):
+        iso = self.iso or lang
+        key = AUDIODIT_LANG_MAP.get(iso)
+        if key is None:
+            raise UnsupportedModel(f"{self.model_id}: does not support {iso!r}")
+        out = self.tts.synthesize(
+            text,
+            language=key,
+            seed=int(_knob(self.meta, "SEED", 42)),
+            steps=int(_knob(self.meta, "STEPS", 16)),
+            cfg_strength=float(_knob(self.meta, "CFG_STRENGTH", 4.0)),
+            speed=float(_knob(self.meta, "SPEED", 1.0)),
+        )
+        return _wav_bytes(out.audio, sample_rate=out.sample_rate)
 
 
 def _check_wrappers():

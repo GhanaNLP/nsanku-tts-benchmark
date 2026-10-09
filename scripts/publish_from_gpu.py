@@ -34,7 +34,7 @@ sys.path.insert(0, str(ROOT))
 from scripts.sync_results import _previous_samples, _sample_signature, complete  # noqa: E402
 
 PROJECTS = Path("/mnt/volume_d2wey28/projects")
-LOGS = ["full_A.log", "full_B.log", "claim_*.log", "repair_[a-z]*.log", "queue.log"]
+LOGS = ["full_A.log", "full_B.log", "claim_*.log", "repair_[a-z]*.log", "queue*.log"]
 GIT_USER = ("nsanku benchmark bot", "noreply@ghananlp.org")
 
 
