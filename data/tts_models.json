@@ -1320,7 +1320,7 @@
     ],
     "input_type": "orthographic",
     "sample_rate": 48000,
-    "license": "apache-2.0",
+    "license": "cc-by-nc-4.0",
     "url": "https://huggingface.co/ghanaopenai/voxcpm2-ghana",
     "notes": "Full fine-tune of openbmb/VoxCPM2 on the University of Ghana subsets of Google WAXAL (Akan, Ewe, Dagbani, Dagaare, Ikposo; 384 h), release step 7,000. Run through voxcpm directly (not the voxcpm_ghana package, so no built-in speakers): -ref is prompted with another row of the same language, -noref uses the model's default voice.",
     "revision": "d2cf3e09e1b90a6ba84acf3dd713ea91542ff210"
