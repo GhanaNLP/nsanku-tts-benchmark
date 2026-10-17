@@ -117,6 +117,7 @@ The registry is `data/tts_models.json`; each model's per-language settings are i
 | `FarmerlineML/voxcpm2-akan-sft` | VoxCPM2 (2B) | 2 languages |
 | `FarmerlineML/voxcpm2-dagbani-sft` | VoxCPM2 (2B) | 1 language |
 | `FarmerlineML/voxcpm2-ewe-sft` | VoxCPM2 (2B) | 1 language |
+| `ghanaopenai/voxcpm2-ghana` | VoxCPM2 (2B) | 7 languages |
 | `ghananlpcommunity/F5-TTS-OpenBible-Twi-Asante` | F5-TTS (DiT + Vocos) | 1 language |
 | `ghananlpcommunity/F5-TTS-OpenBible-Twi-Akuapem` | F5-TTS (DiT + Vocos) | 1 language |
 | `ghananlpcommunity/F5-TTS-OpenBible-Ewe` | F5-TTS (DiT + Vocos) | 1 language |

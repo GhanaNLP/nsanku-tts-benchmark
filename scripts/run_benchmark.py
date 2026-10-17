@@ -118,16 +118,19 @@ def model_stages(iso, model, limit_args):
     sys.path.insert(0, str(REPO))
     from benchmark.evaluate import load_tts_models
 
-    meta = next((m for m in load_tts_models(iso) if m["name"] == model or m.get("model_id") == model), None)
-    if meta is None:
+    metas = [m for m in load_tts_models(iso) if m["name"] == model or m.get("model_id") == model]
+    if not metas:
         return None                      # not registered for this language: nothing to do
+    meta = metas[0]
     stack = meta.get("stack") or "tts"
     image = {"audiodit": "audiodit", "omni": "omni"}.get(stack, "synth")
     py = ["python", "-m", "benchmark.evaluate"]
     synth_stack = {"synth": "tts"}.get(image, image)
+    # A model id with -ref/-noref variants matches all of them: the filter is exact on a
+    # variant name, otherwise a substring of it.
     return [
-        (image, py + ["synthesize", "--iso", iso, "--stack", synth_stack, "--model", meta["name"]] + limit_args,
-         f"{meta['name']} synthesis for {iso}"),
+        (image, py + ["synthesize", "--iso", iso, "--stack", synth_stack, "--model", model] + limit_args,
+         f"{model} synthesis for {iso}"),
         ("asr", py + ["score-cer", "--iso", iso] + limit_args, f"CER for {iso}"),
         ("score", py + ["score-sbs", "--iso", iso] + limit_args, f"SpeechBERTScore for {iso}"),
         ("score", py + ["assemble", "--iso", iso], f"Assemble {iso}"),

@@ -171,7 +171,7 @@ class UnsupportedModel(Exception):
     pass
 
 
-def _local_snapshot(model_id, token=None):
+def _local_snapshot(model_id, token=None, revision=None):
     """Download a model, skipping training-only files.
 
     VoxCPM repos ship the optimizer state beside the weights — 18 GB of it for
@@ -184,6 +184,7 @@ def _local_snapshot(model_id, token=None):
         model_id,
         ignore_patterns=["optimizer.pth", "optimizer*.pt", "*.ckpt", "samples/*"],
         token=token or None,
+        revision=revision,
     )
 
 
@@ -422,10 +423,12 @@ class VoxCPMWrapper(BaseTTSModel):
 
 
 class VoxCPM2Wrapper(BaseTTSModel):
-    """VoxCPM2 (2B) SFT models — FarmerlineML voxcpm2-{akan,dagbani,ewe}-sft.
+    """VoxCPM2 (2B) SFT models — FarmerlineML voxcpm2-{akan,dagbani,ewe}-sft,
+    ghanaopenai/voxcpm2-ghana.
 
     Orthographic input, 48 kHz output.  Voice-anchored: best results use a
     reference clip; if none ships in the repo we run on the model's default.
+    A registry ``revision`` pins the Hugging Face commit.
     """
 
     SAMPLE_RATE = 48000
@@ -447,7 +450,7 @@ class VoxCPM2Wrapper(BaseTTSModel):
         from .config import HF_TOKEN
 
         self.model = VoxCPM.from_pretrained(
-            _local_snapshot(self.model_id, HF_TOKEN),
+            _local_snapshot(self.model_id, HF_TOKEN, self.meta.get("revision")),
             load_denoiser=False,
             device=self.device,
             optimize=_knob(self.meta, "OPTIMIZE", False),
